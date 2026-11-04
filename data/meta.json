@@ -1,0 +1,12 @@
+{
+  "dataMode": "beispieldaten",
+  "lastUpdated": "2026-11-04T18:00:00+01:00",
+  "pricesUpdated": null,
+  "timezone": "Europe/Berlin",
+  "owner": "Justy",
+  "researchVoice": "Karl",
+  "disclaimer": "Keine Anlageberatung. Nur Recherche und Bildung.",
+  "fx": null,
+  "priceStatus": {},
+  "notes": "Seed mit Beispieldaten. Der Kurs-Workflow überschreibt Marktfelder in prices.json, alerts.json und die Preisfelder in meta.json. Recherchetexte bleiben stehen, bis der Assistent sie ersetzt und dataMode auf live setzt."
+}

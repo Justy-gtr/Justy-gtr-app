@@ -1,0 +1,303 @@
+{
+  "example": true,
+  "scenarios": [
+    {
+      "id": "starship_fail",
+      "title": "Starship-Start misslingt",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "summary": "Beispiel: In den Platzhalter-Fällen gab SPCX am Tag etwas ab, TSLA fast nicht.",
+      "medianMovePct": -2.2,
+      "reactions": [
+        {
+          "date": "2025-03-06",
+          "symbol": "SPCX",
+          "movePct": -3.1,
+          "note": "Beispielreaktion, kein historischer Kurs.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-fail-1"
+            }
+          ]
+        },
+        {
+          "date": "2025-08-26",
+          "symbol": "SPCX",
+          "movePct": -1.4,
+          "note": "Beispielreaktion.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-fail-2"
+            }
+          ]
+        },
+        {
+          "date": "2025-03-06",
+          "symbol": "TSLA",
+          "movePct": -0.4,
+          "note": "Beispielreaktion.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-fail-3"
+            }
+          ]
+        }
+      ],
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Szenario",
+          "url": "https://example.com/beispieldaten/starship-fail"
+        }
+      ]
+    },
+    {
+      "id": "starship_success",
+      "title": "Starship-Start gelingt",
+      "tickers": [
+        "SPCX"
+      ],
+      "summary": "Beispiel: Ein gelungener Test hob den Platzhalter-Kurs nur wenig. Das Geschäft war schon bekannt.",
+      "medianMovePct": 1.1,
+      "reactions": [
+        {
+          "date": "2025-05-12",
+          "symbol": "SPCX",
+          "movePct": 1.6,
+          "note": "Beispielreaktion.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-ok-1"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-13",
+          "symbol": "SPCX",
+          "movePct": 0.6,
+          "note": "Beispielreaktion.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-ok-2"
+            }
+          ]
+        }
+      ],
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Szenario",
+          "url": "https://example.com/beispieldaten/starship-success"
+        }
+      ]
+    },
+    {
+      "id": "earnings_beat",
+      "title": "Zahlen besser als gedacht",
+      "tickers": [
+        "TSLA",
+        "SPCX"
+      ],
+      "summary": "Beispiel: Ein Schlag ins Kontor nach oben. Im Seed stärker bei Tesla als bei SpaceX.",
+      "medianMovePct": 4.5,
+      "reactions": [
+        {
+          "date": "2026-01-28",
+          "symbol": "TSLA",
+          "movePct": 6.2,
+          "note": "Beispielreaktion.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-beat-1"
+            }
+          ]
+        },
+        {
+          "date": "2026-04-22",
+          "symbol": "TSLA",
+          "movePct": 3.1,
+          "note": "Beispielreaktion.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-beat-2"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-12",
+          "symbol": "SPCX",
+          "movePct": 4.4,
+          "note": "Beispielreaktion.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-beat-3"
+            }
+          ]
+        }
+      ],
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Szenario",
+          "url": "https://example.com/beispieldaten/earnings-beat"
+        }
+      ]
+    },
+    {
+      "id": "earnings_miss",
+      "title": "Zahlen schwächer als gedacht",
+      "tickers": [
+        "TSLA",
+        "SPCX"
+      ],
+      "summary": "Beispiel: Verfehlt die Firma den eigenen Ausblick, war der Platzhalter-Kurs am selben Tag klar rot.",
+      "medianMovePct": -5.0,
+      "reactions": [
+        {
+          "date": "2025-10-22",
+          "symbol": "TSLA",
+          "movePct": -6.8,
+          "note": "Beispielreaktion.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-miss-1"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-29",
+          "symbol": "TSLA",
+          "movePct": -3.9,
+          "note": "Beispielreaktion.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-miss-2"
+            }
+          ]
+        }
+      ],
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Szenario",
+          "url": "https://example.com/beispieldaten/earnings-miss"
+        }
+      ]
+    },
+    {
+      "id": "rate_hike",
+      "title": "Zinsen höher als erwartet",
+      "tickers": [
+        "TSLA",
+        "SPCX",
+        "RKLB"
+      ],
+      "summary": "Beispiel: Teureres Geld drückt im Seed alle drei Wachstumswerte, Tesla am deutlichsten.",
+      "medianMovePct": -2.4,
+      "reactions": [
+        {
+          "date": "2025-12-18",
+          "symbol": "TSLA",
+          "movePct": -3.2,
+          "note": "Beispielreaktion.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-hike-1"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-18",
+          "symbol": "SPCX",
+          "movePct": -1.8,
+          "note": "Beispielreaktion.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-hike-2"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-18",
+          "symbol": "RKLB",
+          "movePct": -2.4,
+          "note": "Beispielreaktion.",
+          "sources": [
+            {
+              "title": "Beispieldaten Reaktion",
+              "url": "https://example.com/beispieldaten/sc-hike-3"
+            }
+          ]
+        }
+      ],
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Szenario",
+          "url": "https://example.com/beispieldaten/rate-hike"
+        }
+      ]
+    }
+  ],
+  "recoveries": [
+    {
+      "id": "rec-tsla",
+      "symbol": "TSLA",
+      "dropPct": -28,
+      "period": "Beispiel 2022, verkürzt",
+      "monthsToRecover": 18,
+      "recoveryNote": "Beispiel: Nach einem tiefen Rücksetzer brauchte der Platzhalter über ein Jahr, bis der alte Stand wieder da war. Das muss sich nicht wiederholen.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Erholung",
+          "url": "https://example.com/beispieldaten/rec-tsla"
+        }
+      ]
+    },
+    {
+      "id": "rec-rklb",
+      "symbol": "RKLB",
+      "dropPct": -35,
+      "period": "Beispiel 2024",
+      "monthsToRecover": 11,
+      "recoveryNote": "Beispiel: Der kleinere Vergleichswert fiel härter und holte im Seed schneller einen Teil auf, blieb aber schwankend.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Erholung",
+          "url": "https://example.com/beispieldaten/rec-rklb"
+        }
+      ]
+    },
+    {
+      "id": "rec-spcx",
+      "symbol": "SPCX",
+      "dropPct": -15,
+      "period": "Beispiel nach Börsengang",
+      "monthsToRecover": 4,
+      "recoveryNote": "Beispiel: Ein früher Rücksetzer nach dem 12. Juni 2026. Kurze Reihe, wenig Aussage.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Erholung",
+          "url": "https://example.com/beispieldaten/rec-spcx"
+        }
+      ]
+    }
+  ]
+}

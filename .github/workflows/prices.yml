@@ -1,0 +1,71 @@
+name: Kurse
+
+# GitHub-Cron läuft in UTC und kennt keine Sommerzeit.
+# Der Laufplan deckt deshalb beide Versätze ab (MEZ = UTC+1, MESZ = UTC+2).
+# scripts/schedule.mjs lässt den Abruf nur durch, wenn in Europe/Berlin
+# gerade eines der festen Fenster ist oder die US-Sitzung läuft
+# (Mo–Fr 15:30–22:00 Berlin, alle 15 Minuten).
+on:
+  schedule:
+    - cron: "*/15 3-21 * * 1-5"
+    - cron: "0 3,4,11,12,13,14,15,16,17,18,19,20,21 * * 0,6"
+    - cron: "30 4,5,6,7,8,9,10 * * 0,6"
+  workflow_dispatch:
+
+concurrency:
+  group: kurse
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+      sha: ${{ steps.commit.outputs.sha }}
+    steps:
+      - name: Stand holen
+        uses: actions/checkout@v4
+
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Zeitfenster Europe/Berlin
+        id: gate
+        run: node scripts/schedule.mjs
+
+      - name: Kurse laden
+        if: steps.gate.outputs.run == 'true'
+        run: node scripts/fetch-prices.mjs
+
+      - name: Nur bei Änderung committen
+        id: commit
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/prices.json data/alerts.json data/meta.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "sha=" >> "$GITHUB_OUTPUT"
+            echo "Keine Kursänderung."
+            exit 0
+          fi
+          git commit -m "Kurse aktualisiert"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: update
+    if: needs.update.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/pages.yml
+    with:
+      ref: ${{ needs.update.outputs.sha }}

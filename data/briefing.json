@@ -1,0 +1,19 @@
+{
+  "example": true,
+  "date": "2026-11-04",
+  "title": "Morgen-Briefing",
+  "greeting": "Guten Morgen, Justy.",
+  "summary": "Beispiel: SpaceX bleibt der Fokus, Tesla liefert die Vergleichszahl aus der Fabrik, Rocket Lab den kleineren Raketenwert. Heute steht im Seed keine echte Nachricht.",
+  "bullets": [
+    "SPCX, TSLA und RKLB sind mit Beispielkursen gefüllt, damit die Karten sichtbar sind.",
+    "Nächster Platzhalter im Kalender: Zoll-Schlagzeile am 8. November, Tesla-Lieferzahlen am 12.",
+    "Der Starship-Countdown läuft auf den 9. Dezember 2026, ebenfalls ein Beispiel."
+  ],
+  "audioUrl": null,
+  "sources": [
+    {
+      "title": "Beispieldaten Briefing",
+      "url": "https://example.com/beispieldaten/briefing"
+    }
+  ]
+}

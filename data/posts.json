@@ -1,0 +1,144 @@
+{
+  "example": true,
+  "asOf": "2026-11-04T18:00:00+01:00",
+  "sentiment": {
+    "SPCX": {
+      "score": 0.35,
+      "label": "leicht zuversichtlich",
+      "summary": "Beispiel: Die wenigen Seed-Posts klingen bei SpaceX freundlicher als bei Tesla. Kein echtes Stimmungsbild.",
+      "sources": [
+        {
+          "title": "Beispieldaten Stimmung",
+          "url": "https://example.com/beispieldaten/sentiment-spcx"
+        }
+      ]
+    },
+    "TSLA": {
+      "score": -0.15,
+      "label": "verhalten",
+      "summary": "Beispiel: Tesla wirkt im Seed gemischt, weil ein Post Preise und einer Robotaxi nennt.",
+      "sources": [
+        {
+          "title": "Beispieldaten Stimmung",
+          "url": "https://example.com/beispieldaten/sentiment-tsla"
+        }
+      ]
+    }
+  },
+  "posts": [
+    {
+      "id": "post-musk-1",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-04T09:10:00+01:00",
+      "summaryDe": "Beispiel: Kurzer Hinweis, Starship solle bald wieder fliegen. Ohne neues Datum.",
+      "originalText": "Example placeholder, not a real post.",
+      "url": "https://example.com/beispieldaten/post-musk-1",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Post",
+          "url": "https://example.com/beispieldaten/post-musk-1"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-1",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-03T21:40:00+01:00",
+      "summaryDe": "Beispiel: Offizieller Account meldet einen weiteren Starlink-Start. Zahlen dazu stehen nicht im Seed.",
+      "originalText": "Example placeholder, not a real post.",
+      "url": "https://example.com/beispieldaten/post-spacex-1",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Post",
+          "url": "https://example.com/beispieldaten/post-spacex-1"
+        }
+      ]
+    },
+    {
+      "id": "post-tesla-1",
+      "account": "@Tesla",
+      "displayName": "Tesla",
+      "postedAt": "2026-11-02T16:05:00+01:00",
+      "summaryDe": "Beispiel: Hinweis auf eine neue Software für Fahrassistenz, ohne Reichweiten-Angabe.",
+      "originalText": "Example placeholder, not a real post.",
+      "url": "https://example.com/beispieldaten/post-tesla-1",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Post",
+          "url": "https://example.com/beispieldaten/post-tesla-1"
+        }
+      ]
+    },
+    {
+      "id": "post-optimus-1",
+      "account": "@Tesla_Optimus",
+      "displayName": "Tesla Optimus",
+      "postedAt": "2026-11-01T12:20:00+01:00",
+      "summaryDe": "Beispiel: Ein Clip zeigt den Roboter beim Greifen. Keine Stückzahl.",
+      "originalText": "Example placeholder, not a real post.",
+      "url": "https://example.com/beispieldaten/post-optimus-1",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Post",
+          "url": "https://example.com/beispieldaten/post-optimus-1"
+        }
+      ]
+    },
+    {
+      "id": "post-xai-1",
+      "account": "@xai",
+      "displayName": "xAI",
+      "postedAt": "2026-10-30T18:00:00+01:00",
+      "summaryDe": "Beispiel: xAI schreibt von mehr Rechenleistung. Ohne Angabe, wer dafür zahlt.",
+      "originalText": "Example placeholder, not a real post.",
+      "url": "https://example.com/beispieldaten/post-xai-1",
+      "tickers": [],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "neutral",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Post",
+          "url": "https://example.com/beispieldaten/post-xai-1"
+        }
+      ]
+    }
+  ]
+}

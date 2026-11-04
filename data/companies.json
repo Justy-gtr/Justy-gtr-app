@@ -1,0 +1,232 @@
+{
+  "example": true,
+  "companies": [
+    {
+      "id": "spacex",
+      "name": "SpaceX",
+      "symbol": "SPCX",
+      "listed": true,
+      "role": "Fokus",
+      "tagline": "Raketen, Starlink, Starship. Börsengang 12. Juni 2026, 135 US-Dollar, Nasdaq.",
+      "priceDrivers": [
+        "Starlink-Anschlüsse",
+        "Startkadenz",
+        "Starship-Nutzlast",
+        "Staatsaufträge"
+      ],
+      "firstPrinciples": [
+        {
+          "title": "Masse in den Orbit",
+          "text": "Beispiel: Euro pro Kilogramm und Flüge pro Booster. Alles andere ist Beiwerk."
+        },
+        {
+          "title": "Wiederkehrender Umsatz",
+          "text": "Beispiel: Starlink zählt, wenn Menschen monatlich zahlen."
+        },
+        {
+          "title": "Starship als Kostenkurve",
+          "text": "Beispiel: Ein gelungener Flug ändert wenig, eine verlässliche Kadenz ändert die Kosten."
+        }
+      ],
+      "counterArgument": "Beispiel: Der Börsenpreis kann die Physik überholen. Dünner Handel nach dem IPO verstärkt das.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Unternehmen",
+          "url": "https://example.com/beispieldaten/spacex"
+        }
+      ]
+    },
+    {
+      "id": "tesla",
+      "name": "Tesla",
+      "symbol": "TSLA",
+      "listed": true,
+      "role": "Tesla",
+      "tagline": "Autos, Energie, Software, Optimus.",
+      "priceDrivers": [
+        "Auslieferungen",
+        "Auto-Marge",
+        "Speicher",
+        "Regulierung der Fahrassistenz"
+      ],
+      "firstPrinciples": [
+        {
+          "title": "Gebaute Autos",
+          "text": "Beispiel: Stückzahl mal Preis minus die Kosten der Fabrik."
+        },
+        {
+          "title": "Energie",
+          "text": "Beispiel: Speicher, der am Netz hängt und bezahlt wird."
+        },
+        {
+          "title": "Software und Roboter",
+          "text": "Beispiel: Erst Umsatz, wenn jemand dafür zahlt. Bis dahin eine Option, kein Fakt."
+        }
+      ],
+      "counterArgument": "Beispiel: Der Kurs hängt oft an der Geschichte von morgen, nicht an den Autos von diesem Quartal.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Unternehmen",
+          "url": "https://example.com/beispieldaten/tesla"
+        }
+      ]
+    },
+    {
+      "id": "rocketlab",
+      "name": "Rocket Lab",
+      "symbol": "RKLB",
+      "listed": true,
+      "role": "Vergleich",
+      "tagline": "Kleinerer Raketenanbieter als Maßstab neben SpaceX.",
+      "priceDrivers": [
+        "Electron-Starts",
+        "Neutron",
+        "Komponenten für fremde Missionen"
+      ],
+      "firstPrinciples": [
+        {
+          "title": "Starts, die ankommen",
+          "text": "Beispiel: Kadenz und Zuverlässigkeit, nicht die Folie."
+        },
+        {
+          "title": "Das nächste Fahrzeug",
+          "text": "Beispiel: Neutron muss fliegen, bevor es den Vergleich trägt."
+        }
+      ],
+      "counterArgument": "Beispiel: Weniger Flüge, weniger Puffer. Ein Fehler wiegt schwerer.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Unternehmen",
+          "url": "https://example.com/beispieldaten/rocketlab"
+        }
+      ]
+    },
+    {
+      "id": "neuralink",
+      "name": "Neuralink",
+      "symbol": null,
+      "listed": false,
+      "role": "Kosmos",
+      "tagline": "Implantate. Nicht börsennotiert. Kann die Stimmung im Musk-Umfeld bewegen.",
+      "priceDrivers": [
+        "Studien",
+        "Zulassung",
+        "Schlagzeilen zu Musk"
+      ],
+      "firstPrinciples": [
+        {
+          "title": "Stabile Signale",
+          "text": "Beispiel: Wie viele Implantate liefern über Monate brauchbare Daten?"
+        },
+        {
+          "title": "Aufsicht",
+          "text": "Beispiel: Ohne Zulassung bleibt es ein Versuch, kein Produkt."
+        }
+      ],
+      "counterArgument": "Beispiel: Medizin ist langsam. Ein Video ist kein Umsatz und kein Kurshebel für SPCX.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Unternehmen",
+          "url": "https://example.com/beispieldaten/neuralink"
+        }
+      ]
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "symbol": null,
+      "listed": false,
+      "role": "Kosmos",
+      "tagline": "Modelle und Rechenzentren. Nicht börsennotiert.",
+      "priceDrivers": [
+        "Rechenleistung",
+        "zahlende Nutzung",
+        "Kapitalrunden"
+      ],
+      "firstPrinciples": [
+        {
+          "title": "Rechnen und Strom",
+          "text": "Beispiel: Chips, Megawatt, Auslastung."
+        },
+        {
+          "title": "Jemand zahlt",
+          "text": "Beispiel: Nutzung, die eine Rechnung hat, nicht nur einen Demo-Tag."
+        }
+      ],
+      "counterArgument": "Beispiel: Kapitalrunden sagen wenig darüber, ob Tesla oder SpaceX davon profitieren.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Unternehmen",
+          "url": "https://example.com/beispieldaten/xai"
+        }
+      ]
+    },
+    {
+      "id": "terafab",
+      "name": "Terafab",
+      "symbol": null,
+      "listed": false,
+      "role": "Kosmos",
+      "tagline": "Geplante Chipfertigung im Musk-Umfeld. Beispiel, kein bestätigtes Listing.",
+      "priceDrivers": [
+        "Bau",
+        "Ausbeute",
+        "Abnehmer im eigenen Kosmos"
+      ],
+      "firstPrinciples": [
+        {
+          "title": "Wafer, die funktionieren",
+          "text": "Beispiel: Ausbeute und Ausschuss, nicht die Ankündigung."
+        },
+        {
+          "title": "Strom und Zeit",
+          "text": "Beispiel: Eine Fabrik zählt erst, wenn sie liefert."
+        }
+      ],
+      "counterArgument": "Beispiel: Chipfabriken werden teuer und spät. Bis dahin ist es eine Geschichte.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Unternehmen",
+          "url": "https://example.com/beispieldaten/terafab"
+        }
+      ]
+    },
+    {
+      "id": "boring",
+      "name": "The Boring Company",
+      "symbol": null,
+      "listed": false,
+      "role": "Kosmos",
+      "tagline": "Tunnel. Nicht börsennotiert.",
+      "priceDrivers": [
+        "Genehmigte Strecken",
+        "Meter pro Tag",
+        "Aufträge von Städten"
+      ],
+      "firstPrinciples": [
+        {
+          "title": "Meter unter der Stadt",
+          "text": "Beispiel: Gebaute Tunnel, nicht Renderings."
+        },
+        {
+          "title": "Genehmigung",
+          "text": "Beispiel: Ohne Erlaubnis der Stadt bleibt die Maschine stehen."
+        }
+      ],
+      "counterArgument": "Beispiel: Tunnelprojekte hängen an Politik und haften selten am SpaceX-Kurs.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Unternehmen",
+          "url": "https://example.com/beispieldaten/boring"
+        }
+      ]
+    }
+  ]
+}

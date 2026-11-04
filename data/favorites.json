@@ -1,0 +1,92 @@
+{
+  "example": true,
+  "asOf": "2026-11-04",
+  "owner": "Karl",
+  "favorites": [
+    {
+      "id": "fav-spcx",
+      "rank": 1,
+      "symbol": "SPCX",
+      "name": "SpaceX",
+      "score": 8,
+      "reason": "Beispiel: Startkadenz plus Starlink als zahlendes Geschäft, nicht nur als Raketenbild.",
+      "horizon": "langfrist",
+      "counterArgument": "Beispiel: Nach dem Börsengang am 12. Juni 2026 kann der Kurs der Story vorauslaufen.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Favorit",
+          "url": "https://example.com/beispieldaten/fav-spcx"
+        }
+      ]
+    },
+    {
+      "id": "fav-tsla",
+      "rank": 2,
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "score": 7,
+      "reason": "Beispiel: Autos tragen den Umsatz, Energie und Optimus sind der optionale Teil.",
+      "horizon": "langfrist",
+      "counterArgument": "Beispiel: Wenn die Marge fällt, hilft eine schöne Roboter-Demo wenig.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Favorit",
+          "url": "https://example.com/beispieldaten/fav-tsla"
+        }
+      ]
+    },
+    {
+      "id": "fav-starlink",
+      "rank": 3,
+      "symbol": "SPCX",
+      "name": "Starlink-Wachstum",
+      "score": 8,
+      "reason": "Beispiel: Mehr zahlende Anschlüsse sind ein klarerer Treiber als ein einzelner Testflug.",
+      "horizon": "12-24 Monate",
+      "counterArgument": "Beispiel: Konkurrenz und teure Satelliten können das Wachstum auffressen.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Favorit",
+          "url": "https://example.com/beispieldaten/fav-starlink"
+        }
+      ]
+    },
+    {
+      "id": "fav-optimus",
+      "rank": 4,
+      "symbol": "TSLA",
+      "name": "Optimus",
+      "score": 5,
+      "reason": "Beispiel: Erst interessant, wenn Einheiten echte Schichten arbeiten. Bis dahin ein Zuschlag, kein Kern.",
+      "horizon": "langfrist",
+      "counterArgument": "Beispiel: Der Markt kann den Roboter einpreisen, lange bevor er Umsatz macht.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Favorit",
+          "url": "https://example.com/beispieldaten/fav-optimus"
+        }
+      ]
+    },
+    {
+      "id": "fav-rklb",
+      "rank": 5,
+      "symbol": "RKLB",
+      "name": "Rocket Lab",
+      "score": 6,
+      "reason": "Beispiel: Vergleich zu SpaceX. Kleiner, fokussierter, abhängiger vom nächsten Fahrzeug.",
+      "horizon": "langfrist",
+      "counterArgument": "Beispiel: Ein Fehlstart oder eine Verzögerung bei Neutron wiegt hier schwerer.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Favorit",
+          "url": "https://example.com/beispieldaten/fav-rklb"
+        }
+      ]
+    }
+  ]
+}

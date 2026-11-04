@@ -1,0 +1,77 @@
+{
+  "example": true,
+  "promises": [
+    {
+      "id": "prm-starship-kadenz",
+      "who": "Elon Musk",
+      "company": "SpaceX",
+      "promise": "Beispiel: Starship soll in dichter Folge fliegen, nicht nur zu Demonstrationen.",
+      "promisedOn": "2024-04-01",
+      "targetDate": "2026-12-31",
+      "status": "offen",
+      "delay": null,
+      "note": "Beispieldaten. Kein wörtliches Zitat.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Versprechen",
+          "url": "https://example.com/beispieldaten/prm-starship-kadenz"
+        }
+      ]
+    },
+    {
+      "id": "prm-robotaxi",
+      "who": "Elon Musk",
+      "company": "Tesla",
+      "promise": "Beispiel: Robotaxis sollten ohne Aufsicht unterwegs sein.",
+      "promisedOn": "2024-10-10",
+      "targetDate": "2026-06-30",
+      "status": "verzoegert",
+      "delay": "Beispiel: Zieltermin im Seed bereits überschritten, Status deshalb verzögert.",
+      "note": "Beispieldaten. Kein wörtliches Zitat.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Versprechen",
+          "url": "https://example.com/beispieldaten/prm-robotaxi"
+        }
+      ]
+    },
+    {
+      "id": "prm-optimus",
+      "who": "Elon Musk",
+      "company": "Tesla",
+      "promise": "Beispiel: Optimus sollte in eigener Fabrik einfache Arbeit übernehmen.",
+      "promisedOn": "2025-01-15",
+      "targetDate": "2027-12-31",
+      "status": "offen",
+      "delay": null,
+      "note": "Beispieldaten.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Versprechen",
+          "url": "https://example.com/beispieldaten/prm-optimus"
+        }
+      ]
+    },
+    {
+      "id": "prm-mars",
+      "who": "Elon Musk",
+      "company": "SpaceX",
+      "promise": "Beispiel: Ein unbemanntes Mars-Fenster wurde früh genannt und später geschoben.",
+      "promisedOn": "2016-09-27",
+      "targetDate": "2026-12-31",
+      "status": "verzoegert",
+      "delay": "Beispiel: Mehrfach verschoben. Der Eintrag zeigt nur das Muster, keine historische Recherche.",
+      "note": "Beispieldaten.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Versprechen",
+          "url": "https://example.com/beispieldaten/prm-mars"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "example": true,
+  "nextLaunch": {
+    "name": "Starship-Testflug (Beispiel)",
+    "target": "2026-12-09T14:00:00+01:00",
+    "livestreamUrl": "https://example.com/beispieldaten/starship-livestream",
+    "status": "geplant",
+    "note": "Beispieldaten. Der Countdown läuft auf diesen Platzhalter.",
+    "example": true,
+    "sources": [
+      {
+        "title": "Beispieldaten Start",
+        "url": "https://example.com/beispieldaten/next-launch"
+      }
+    ]
+  },
+  "series": [
+    {
+      "id": "starship_launches",
+      "label": "Starship-Starts",
+      "unit": "Starts",
+      "company": "SpaceX",
+      "example": true,
+      "points": [
+        {
+          "date": "2023",
+          "value": 2
+        },
+        {
+          "date": "2024",
+          "value": 4
+        },
+        {
+          "date": "2025",
+          "value": 7
+        },
+        {
+          "date": "2026",
+          "value": 9
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beispieldaten Produktion",
+          "url": "https://example.com/beispieldaten/starship-launches"
+        }
+      ]
+    },
+    {
+      "id": "starlink_users",
+      "label": "Starlink-Anschlüsse",
+      "unit": "Mio.",
+      "company": "SpaceX",
+      "example": true,
+      "points": [
+        {
+          "date": "2023",
+          "value": 2.2
+        },
+        {
+          "date": "2024",
+          "value": 4.0
+        },
+        {
+          "date": "2025",
+          "value": 6.5
+        },
+        {
+          "date": "2026",
+          "value": 8.0
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beispieldaten Produktion",
+          "url": "https://example.com/beispieldaten/starlink-users"
+        }
+      ]
+    },
+    {
+      "id": "tesla_deliveries",
+      "label": "Tesla-Auslieferungen",
+      "unit": "Mio. Fahrzeuge",
+      "company": "Tesla",
+      "example": true,
+      "points": [
+        {
+          "date": "2022",
+          "value": 1.31
+        },
+        {
+          "date": "2023",
+          "value": 1.81
+        },
+        {
+          "date": "2024",
+          "value": 1.79
+        },
+        {
+          "date": "2025",
+          "value": 1.85
+        },
+        {
+          "date": "2026",
+          "value": 1.9
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beispieldaten Produktion",
+          "url": "https://example.com/beispieldaten/tesla-deliveries"
+        }
+      ]
+    },
+    {
+      "id": "optimus_units",
+      "label": "Optimus-Einheiten",
+      "unit": "Stück",
+      "company": "Tesla",
+      "example": true,
+      "points": [
+        {
+          "date": "2024",
+          "value": 0
+        },
+        {
+          "date": "2025",
+          "value": 20
+        },
+        {
+          "date": "2026",
+          "value": 80
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beispieldaten Produktion",
+          "url": "https://example.com/beispieldaten/optimus-units"
+        }
+      ]
+    }
+  ]
+}

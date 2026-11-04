@@ -1,0 +1,100 @@
+const CACHE = "jgtr-v1";
+const CORE = [
+  "",
+  "index.html",
+  "css/app.css",
+  "manifest.webmanifest",
+  "js/app.js",
+  "js/logic.js",
+  "js/data.js",
+  "js/chart.js",
+  "js/nav.js",
+  "js/views.js",
+  "js/eggs.js",
+  "js/motion.js",
+  "icons/logo.svg",
+  "icons/favicon.svg",
+  "icons/apple-touch-icon.png",
+  "icons/icon-192.png",
+  "icons/icon-512.png",
+  "icons/icon-maskable-512.png",
+  "data/meta.json",
+  "data/prices.json",
+  "data/calendar.json",
+  "data/posts.json",
+  "data/favorites.json",
+  "data/crowd.json",
+  "data/promises.json",
+  "data/production.json",
+  "data/insiders.json",
+  "data/briefing.json",
+  "data/weekly.json",
+  "data/daily_question.json",
+  "data/glossary.json",
+  "data/track_record.json",
+  "data/alerts.json",
+  "data/scenarios.json",
+  "data/companies.json"
+];
+
+self.addEventListener("install", (event) => {
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE);
+    await Promise.all(CORE.map(async (path) => {
+      try {
+        await cache.add(new URL(path, self.registration.scope));
+      } catch {
+        /* Eine fehlende Datei soll die ganze App nicht offline unbrauchbar machen. */
+      }
+    }));
+    await self.skipWaiting();
+  })());
+});
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    await Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key)));
+    await self.clients.claim();
+  })());
+});
+
+self.addEventListener("fetch", (event) => {
+  const request = event.request;
+  if (request.method !== "GET") return;
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) return;
+  if (request.destination === "audio" || request.destination === "video") return;
+  if (url.pathname.includes("/data/")) {
+    event.respondWith(networkFirst(request));
+    return;
+  }
+  event.respondWith(cacheFirst(request));
+});
+
+async function networkFirst(request) {
+  const cache = await caches.open(CACHE);
+  try {
+    const response = await fetch(request);
+    if (response.ok) cache.put(request, response.clone());
+    return response;
+  } catch {
+    const cached = await cache.match(request);
+    if (cached) return cached;
+    return new Response("offline", { status: 504, headers: { "Content-Type": "text/plain; charset=utf-8" } });
+  }
+}
+
+async function cacheFirst(request) {
+  const cache = await caches.open(CACHE);
+  const cached = await cache.match(request);
+  if (cached) return cached;
+  try {
+    const response = await fetch(request);
+    if (response.ok) cache.put(request, response.clone());
+    return response;
+  } catch {
+    const fallback = await cache.match(new URL("./", self.registration.scope));
+    return fallback || new Response("offline", { status: 504 });
+  }
+}

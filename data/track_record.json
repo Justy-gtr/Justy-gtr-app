@@ -1,0 +1,63 @@
+{
+  "example": true,
+  "asOf": "2026-11-04",
+  "picks": [
+    {
+      "id": "tr-1",
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "pickedOn": "2026-06-01",
+      "horizonEnd": "2026-09-01",
+      "thesis": "Beispiel: Energiegeschäft sollte den Sommer tragen.",
+      "score": 7,
+      "entryPriceEur": 230,
+      "result": "treffer",
+      "outcomeNote": "Beispiel: These im Seed als getroffen markiert.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Treffer",
+          "url": "https://example.com/beispieldaten/tr-1"
+        }
+      ]
+    },
+    {
+      "id": "tr-2",
+      "symbol": "RKLB",
+      "name": "Rocket Lab",
+      "pickedOn": "2026-07-01",
+      "horizonEnd": "2026-10-01",
+      "thesis": "Beispiel: Neutron-Fortschritt sollte den Vergleichswert heben.",
+      "score": 6,
+      "entryPriceEur": 24,
+      "result": "daneben",
+      "outcomeNote": "Beispiel: These im Seed als daneben markiert.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Treffer",
+          "url": "https://example.com/beispieldaten/tr-2"
+        }
+      ]
+    },
+    {
+      "id": "tr-3",
+      "symbol": "SPCX",
+      "name": "SpaceX",
+      "pickedOn": "2026-06-15",
+      "horizonEnd": "2027-06-15",
+      "thesis": "Beispiel: Nach dem Börsengang am 12. Juni 2026 zu 135 US-Dollar zählt ein Jahr Starlink und Starship.",
+      "score": 8,
+      "entryPriceEur": 120,
+      "result": "offen",
+      "outcomeNote": "Beispiel: Horizont läuft noch.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Treffer",
+          "url": "https://example.com/beispieldaten/tr-3"
+        }
+      ]
+    }
+  ]
+}
