@@ -1,23 +1,75 @@
 {
-  "example": true,
+  "example": false,
   "thresholdPct": 2,
-  "notes": "Der Kurs-Workflow ersetzt example-Einträge, sobald echte Kurse da sind. notified darf der Assistent auf true setzen, ohne die anderen Felder zu löschen.",
+  "notes": "Bewegung von mindestens 2 Prozent am Tag in Euro. notified setzt der Assistent auf true, wenn er Bescheid gegeben hat.",
   "alerts": [
     {
-      "id": "TSLA-2026-11-01",
-      "symbol": "TSLA",
-      "name": "Tesla",
-      "changePct": -2.4,
-      "priceEur": 240.0,
+      "id": "SPCX-2026-11-04",
+      "symbol": "SPCX",
+      "name": "SpaceX",
+      "changePct": -6.41,
+      "priceEur": 120.98,
       "thresholdPct": 2,
       "direction": "down",
-      "timestamp": "2026-11-01T16:00:00+01:00",
+      "timestamp": "2026-11-04T21:25:22.584Z",
       "notified": false,
-      "example": true,
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Alert",
-          "url": "https://example.com/beispieldaten/alert-tsla"
+          "title": "Yahoo Finance SPCX",
+          "url": "https://finance.yahoo.com/quote/SPCX"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-2026-11-04",
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "changePct": -4.89,
+      "priceEur": 342.15,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-04T21:25:22.584Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance TL0.DE",
+          "url": "https://finance.yahoo.com/quote/TL0.DE"
+        },
+        {
+          "title": "Yahoo Finance TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA"
+        }
+      ]
+    },
+    {
+      "id": "RKLB-2026-11-04",
+      "symbol": "RKLB",
+      "name": "Rocket Lab",
+      "changePct": -12.26,
+      "priceEur": 46.5,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-04T21:25:22.584Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance 6RJ0.F",
+          "url": "https://finance.yahoo.com/quote/6RJ0.F"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance RKLB",
+          "url": "https://finance.yahoo.com/quote/RKLB"
         }
       ]
     }
