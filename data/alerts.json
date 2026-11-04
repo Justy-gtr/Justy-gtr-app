@@ -1,0 +1,25 @@
+{
+  "example": true,
+  "thresholdPct": 2,
+  "notes": "Der Kurs-Workflow ersetzt example-Einträge, sobald echte Kurse da sind. notified darf der Assistent auf true setzen, ohne die anderen Felder zu löschen.",
+  "alerts": [
+    {
+      "id": "TSLA-2026-11-01",
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "changePct": -2.4,
+      "priceEur": 240.0,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-01T16:00:00+01:00",
+      "notified": false,
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Alert",
+          "url": "https://example.com/beispieldaten/alert-tsla"
+        }
+      ]
+    }
+  ]
+}

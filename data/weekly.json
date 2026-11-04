@@ -1,0 +1,26 @@
+{
+  "example": true,
+  "weekOf": "2026-11-02",
+  "title": "Wochenrückblick",
+  "summary": "Beispiel: Eine ruhige Seed-Woche. Die Kurse sind erfunden, die Themen sind die, die später echt gepflegt werden.",
+  "highlights": [
+    {
+      "title": "SpaceX",
+      "text": "Beispiel: Fokus auf Startkadenz und Starlink, ohne neue Zahl."
+    },
+    {
+      "title": "Tesla",
+      "text": "Beispiel: Leichtes Minus im Seed, Robotaxi weiter als Versprechen markiert."
+    },
+    {
+      "title": "Umfeld",
+      "text": "Beispiel: Fed-Termin steht als externer Preistreiber im Kalender."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Beispieldaten Woche",
+      "url": "https://example.com/beispieldaten/weekly"
+    }
+  ]
+}

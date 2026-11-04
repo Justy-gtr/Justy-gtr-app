@@ -1,0 +1,10 @@
+{
+  "name": "justy-gtr",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test scripts/*.test.mjs",
+    "validate": "node scripts/validate-data.mjs",
+    "prices": "node scripts/fetch-prices.mjs --dry-run"
+  }
+}

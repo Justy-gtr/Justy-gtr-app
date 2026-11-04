@@ -1,0 +1,122 @@
+{
+  "example": true,
+  "terms": [
+    {
+      "id": "kgv",
+      "term": "KGV",
+      "short": "Kurs-Gewinn-Verhältnis",
+      "explanation": "Preis der Aktie geteilt durch den Gewinn je Aktie. Ein hohes KGV heißt: der Markt zahlt viel für jeden Euro Gewinn. Es sagt nicht, ob der Gewinn bleibt.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Kurs-Gewinn-Verhältnis",
+          "url": "https://de.wikipedia.org/wiki/Kurs-Gewinn-Verh%C3%A4ltnis"
+        }
+      ]
+    },
+    {
+      "id": "kuv",
+      "term": "KUV",
+      "short": "Kurs-Umsatz-Verhältnis",
+      "explanation": "Börsenwert geteilt durch den Umsatz. Hilft, wenn ein Unternehmen noch wenig Gewinn ausweist, etwa nach einem Börsengang. Umsatz ist nicht dasselbe wie Geld, das übrig bleibt.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Kurs-Umsatz-Verhältnis",
+          "url": "https://de.wikipedia.org/wiki/Kurs-Umsatz-Verh%C3%A4ltnis"
+        }
+      ]
+    },
+    {
+      "id": "kursziel",
+      "term": "Kursziel",
+      "short": "Geschätzter Preis einer Analyse",
+      "explanation": "Eine Bank oder ein Researcher nennt einen Preis, den die Aktie in einem Zeitraum erreichen könnte. Das ist eine Meinung mit Annahmen, kein Versprechen und kein Mittelwert der Zukunft.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Glossar",
+          "url": "https://example.com/beispieldaten/kursziel"
+        }
+      ]
+    },
+    {
+      "id": "marktkapitalisierung",
+      "term": "Marktkapitalisierung",
+      "short": "Börsenwert",
+      "explanation": "Aktienkurs mal Anzahl der Aktien. Was die Börse dem Unternehmen heute insgesamt zuschreibt, nicht was die Fabrik oder die Raketen beim Verkauf bringen würden.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Marktkapitalisierung",
+          "url": "https://de.wikipedia.org/wiki/Marktkapitalisierung"
+        }
+      ]
+    },
+    {
+      "id": "volatilitaet",
+      "term": "Volatilität",
+      "short": "Wie stark der Kurs schwankt",
+      "explanation": "Hohe Volatilität heißt große Bewegungen in kurzer Zeit. Ein Rücksetzer von zwei Prozent ist bei manchen Werten Alltag, bei anderen schon ein Ereignis.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Volatilität",
+          "url": "https://de.wikipedia.org/wiki/Volatilit%C3%A4t"
+        }
+      ]
+    },
+    {
+      "id": "free-cashflow",
+      "term": "Free Cashflow",
+      "short": "Geld nach den nötigen Ausgaben",
+      "explanation": "Was übrig bleibt, nachdem das Unternehmen seine laufenden Kosten und nötigen Investitionen bezahlt hat. Näher am Geld auf dem Konto als der ausgewiesene Gewinn.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Free Cashflow",
+          "url": "https://de.wikipedia.org/wiki/Cashflow#Free_Cashflow"
+        }
+      ]
+    },
+    {
+      "id": "leerverkauf",
+      "term": "Leerverkauf",
+      "short": "Wette auf fallende Kurse",
+      "explanation": "Jemand verkauft geliehene Aktien und hofft, sie billiger zurückzukaufen. Viele Leerverkäufe können Stürze verstärken, aber auch scharfe Gegenbewegungen, wenn alle gleichzeitig zurückkaufen.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Leerverkauf",
+          "url": "https://de.wikipedia.org/wiki/Leerverkauf"
+        }
+      ]
+    },
+    {
+      "id": "guidance",
+      "term": "Guidance",
+      "short": "Ausblick des Unternehmens",
+      "explanation": "Was das Unternehmen selbst für Umsatz, Stückzahlen oder Gewinn erwartet. Der Kurs reagiert oft stärker auf die Änderung dieses Ausblicks als auf das letzte Quartal.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Glossar",
+          "url": "https://example.com/beispieldaten/guidance"
+        }
+      ]
+    },
+    {
+      "id": "ipo",
+      "term": "IPO",
+      "short": "Börsengang",
+      "explanation": "Das Unternehmen verkauft zum ersten Mal Aktien an einer Börse. SpaceX ist im Seed mit dem Börsengang am 12. Juni 2026 zu 135 US-Dollar hinterlegt. Die ersten Monate können dünn und sprunghaft sein.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Börsengang",
+          "url": "https://de.wikipedia.org/wiki/B%C3%B6rsengang"
+        }
+      ]
+    }
+  ]
+}

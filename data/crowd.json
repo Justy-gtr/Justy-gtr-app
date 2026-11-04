@@ -1,0 +1,137 @@
+{
+  "example": true,
+  "asOf": "2026-11-04",
+  "investors": [
+    {
+      "id": "inv-orbit",
+      "name": "Ada Orbit",
+      "handle": "@adaorbit",
+      "hitRatePct": 58,
+      "hitRateHistory": [
+        {
+          "date": "2026-06",
+          "hitRatePct": 49
+        },
+        {
+          "date": "2026-08",
+          "hitRatePct": 53
+        },
+        {
+          "date": "2026-10",
+          "hitRatePct": 58
+        }
+      ],
+      "tickers": [
+        {
+          "symbol": "SPCX",
+          "mentions": 14,
+          "stance": "kauf"
+        },
+        {
+          "symbol": "RKLB",
+          "mentions": 6,
+          "stance": "beobachten"
+        }
+      ],
+      "note": "Beispielperson, kein echtes Konto.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Schwarm",
+          "url": "https://example.com/beispieldaten/inv-orbit"
+        }
+      ]
+    },
+    {
+      "id": "inv-volt",
+      "name": "Ben Volt",
+      "handle": "@benvolt",
+      "hitRatePct": 51,
+      "hitRateHistory": [
+        {
+          "date": "2026-06",
+          "hitRatePct": 55
+        },
+        {
+          "date": "2026-08",
+          "hitRatePct": 52
+        },
+        {
+          "date": "2026-10",
+          "hitRatePct": 51
+        }
+      ],
+      "tickers": [
+        {
+          "symbol": "TSLA",
+          "mentions": 19,
+          "stance": "kauf"
+        },
+        {
+          "symbol": "SPCX",
+          "mentions": 4,
+          "stance": "halten"
+        }
+      ],
+      "note": "Beispielperson, kein echtes Konto.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Schwarm",
+          "url": "https://example.com/beispieldaten/inv-volt"
+        }
+      ]
+    },
+    {
+      "id": "inv-nora",
+      "name": "Nora Kurz",
+      "handle": "@norakurz",
+      "hitRatePct": 47,
+      "hitRateHistory": [
+        {
+          "date": "2026-06",
+          "hitRatePct": 44
+        },
+        {
+          "date": "2026-08",
+          "hitRatePct": 46
+        },
+        {
+          "date": "2026-10",
+          "hitRatePct": 47
+        }
+      ],
+      "tickers": [
+        {
+          "symbol": "TSLA",
+          "mentions": 9,
+          "stance": "verkauf"
+        },
+        {
+          "symbol": "RKLB",
+          "mentions": 7,
+          "stance": "kauf"
+        }
+      ],
+      "note": "Beispielperson, kein echtes Konto.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Schwarm",
+          "url": "https://example.com/beispieldaten/inv-nora"
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "swarmHitRatePct": 52,
+    "karlHitRatePct": 62,
+    "summary": "Beispiel: Im Seed liegt Karl vor dem Schwarm. Das ist eine Illustration, keine Rangliste.",
+    "sources": [
+      {
+        "title": "Beispieldaten Vergleich",
+        "url": "https://example.com/beispieldaten/schwarm-karl"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "example": true,
+  "trades": [
+    {
+      "id": "ins-1",
+      "person": "Beispiel Person A",
+      "role": "Director",
+      "symbol": "TSLA",
+      "company": "Tesla",
+      "side": "kauf",
+      "shares": 2000,
+      "priceUsd": 240,
+      "date": "2026-10-20",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Insider",
+          "url": "https://example.com/beispieldaten/ins-1"
+        }
+      ]
+    },
+    {
+      "id": "ins-2",
+      "person": "Beispiel Person B",
+      "role": "Officer",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "kauf",
+      "shares": 15000,
+      "priceUsd": 18,
+      "date": "2026-09-12",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Insider",
+          "url": "https://example.com/beispieldaten/ins-2"
+        }
+      ]
+    },
+    {
+      "id": "ins-3",
+      "person": "Beispiel Person C",
+      "role": "Director",
+      "symbol": "TSLA",
+      "company": "Tesla",
+      "side": "verkauf",
+      "shares": 5000,
+      "priceUsd": 260,
+      "date": "2026-08-02",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Insider",
+          "url": "https://example.com/beispieldaten/ins-3"
+        }
+      ]
+    }
+  ]
+}

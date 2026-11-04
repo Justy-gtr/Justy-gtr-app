@@ -1,0 +1,169 @@
+{
+  "example": true,
+  "events": [
+    {
+      "id": "evt-tesla-lieferungen",
+      "title": "Tesla-Lieferzahlen (Beispiel)",
+      "date": "2026-11-12",
+      "time": "15:30",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "lieferungen",
+      "company": "Tesla",
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 85,
+      "impact": "hoch",
+      "reasoning": "Beispiel: Lieferzahlen bewegen TSLA oft stärker als einzelne Posts. Der Termin ist ein Platzhalter, keine bestätigte Uhrzeit.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Kalender",
+          "url": "https://example.com/beispieldaten/evt-tesla-lieferungen"
+        }
+      ]
+    },
+    {
+      "id": "evt-starship",
+      "title": "Starship-Testflug (Beispiel)",
+      "date": "2026-12-09",
+      "time": "14:00",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "start",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 55,
+      "impact": "hoch",
+      "reasoning": "Beispiel: Ein Test kann klappen und den Kurs trotzdem kaum bewegen, oder er rutscht. Die Wahrscheinlichkeit im Seed ist erfunden.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Kalender",
+          "url": "https://example.com/beispieldaten/evt-starship"
+        }
+      ]
+    },
+    {
+      "id": "evt-spcx-zahlen",
+      "title": "SpaceX-Geschäftszahlen (Beispiel)",
+      "date": "2027-02-04",
+      "time": "22:00",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "earnings",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 60,
+      "impact": "hoch",
+      "reasoning": "Beispiel: Nach dem Börsengang am 12. Juni 2026 wären Quartalszahlen ein eigener Preistreiber. Datum hier nur zur Ansicht.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Kalender",
+          "url": "https://example.com/beispieldaten/evt-spcx-zahlen"
+        }
+      ]
+    },
+    {
+      "id": "evt-fed",
+      "title": "Fed-Zinsentscheid (Beispiel)",
+      "date": "2026-11-18",
+      "time": "20:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "zins",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 90,
+      "impact": "hoch",
+      "reasoning": "Beispiel: Zinsen ändern, wie teuer Wachstum in der Ferne bewertet wird. Trifft Tesla oft direkt, SpaceX über die Stimmung zu Wachstumswerten.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Kalender",
+          "url": "https://example.com/beispieldaten/evt-fed"
+        }
+      ]
+    },
+    {
+      "id": "evt-zoll",
+      "title": "Zoll-Schlagzeile USA–China (Beispiel)",
+      "date": "2026-11-08",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "zoll",
+      "company": null,
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 35,
+      "impact": "mittel",
+      "reasoning": "Beispiel: Zölle können Teile, Preise und Nachfrage treffen. Ob an diesem Tag etwas kommt, ist im Seed offen gelassen.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Kalender",
+          "url": "https://example.com/beispieldaten/evt-zoll"
+        }
+      ]
+    },
+    {
+      "id": "evt-gericht",
+      "title": "Anhörung Regulierung Autopilot (Beispiel)",
+      "date": "2026-11-20",
+      "time": "16:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "gericht",
+      "company": null,
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 40,
+      "impact": "mittel",
+      "reasoning": "Beispiel: Ein Gerichtstermin kann die Stimmung zu Fahrassistenz drehen, auch wenn das Urteil später kommt.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Kalender",
+          "url": "https://example.com/beispieldaten/evt-gericht"
+        }
+      ]
+    },
+    {
+      "id": "evt-wahl",
+      "title": "Wahltermin mit Wirkung auf Aufträge (Beispiel)",
+      "date": "2026-11-03",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "wahl",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "probabilityPct": 70,
+      "impact": "mittel",
+      "reasoning": "Beispiel: Staatsaufträge und Förderung hängen an Mehrheiten. Der Eintrag zeigt nur die Kategorie.",
+      "example": true,
+      "sources": [
+        {
+          "title": "Beispieldaten Kalender",
+          "url": "https://example.com/beispieldaten/evt-wahl"
+        }
+      ]
+    }
+  ]
+}
