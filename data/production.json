@@ -1,26 +1,39 @@
 {
-  "example": true,
+  "example": false,
+  "asOf": "2026-11-04",
   "nextLaunch": {
-    "name": "Starship-Testflug (Beispiel)",
-    "target": "2026-12-09T14:00:00+01:00",
-    "livestreamUrl": "https://example.com/beispieldaten/starship-livestream",
-    "status": "geplant",
-    "note": "Beispieldaten. Der Countdown läuft auf diesen Platzhalter.",
-    "example": true,
+    "name": "Starship Flight 15 (Booster 22 / Ship 42) – erster Fang beider Stufen geplant",
+    "target": "2026-11-12T00:00:00+01:00",
+    "livestreamUrl": "https://x.com/SpaceX",
+    "status": "geplant, frühestens – nicht offiziell bestätigt",
+    "note": "Der 12. November ist ein „No earlier than“-Datum aus einer FAA-Planungsfolie, keine Uhrzeit und keine offizielle SpaceX-Ankündigung. Die FAA-Lizenz ist noch nicht veröffentlicht. Musk sagt „im November“. Der Countdown zeigt deshalb nur den frühesten Tag.",
+    "example": false,
     "sources": [
       {
-        "title": "Beispieldaten Start",
-        "url": "https://example.com/beispieldaten/next-launch"
+        "title": "The Space Road: Wann startet Starship Flight 15?",
+        "url": "https://thespaceroad.com/articles/when-is-starship-flight-15/"
+      },
+      {
+        "title": "Next Spaceflight: Starship Flight 15",
+        "url": "https://www.nextspaceflight.com/starship/"
+      },
+      {
+        "title": "Ars Technica: SpaceX will bei Flight 15 beide Stufen fangen",
+        "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
+      },
+      {
+        "title": "@SpaceX auf X: Ship 42 Static Fires abgeschlossen",
+        "url": "https://x.com/SpaceX/status/2115476295169814978"
       }
     ]
   },
   "series": [
     {
       "id": "starship_launches",
-      "label": "Starship-Starts",
+      "label": "Starship-Starts pro Jahr",
       "unit": "Starts",
       "company": "SpaceX",
-      "example": true,
+      "example": false,
       "points": [
         {
           "date": "2023",
@@ -32,112 +45,144 @@
         },
         {
           "date": "2025",
-          "value": 7
+          "value": 5
         },
         {
           "date": "2026",
-          "value": 9
+          "value": 3
         }
       ],
+      "note": "2026 bis einschließlich 04.11.: Flight 12 (22.05.), 13 (24.07.), 14 (28.09.).",
       "sources": [
         {
-          "title": "Beispieldaten Produktion",
-          "url": "https://example.com/beispieldaten/starship-launches"
+          "title": "Wikipedia: List of Starship launches",
+          "url": "https://en.wikipedia.org/wiki/List_of_Starship_launches"
+        },
+        {
+          "title": "KeepTrack: Starship-Flugliste",
+          "url": "https://keeptrack.space/deep-dive/starship-launch-tracker"
+        },
+        {
+          "title": "Spaceflight Now: Starship Flight 13 (24.07.2026)",
+          "url": "https://spaceflightnow.com/2026/07/25/super-heavy-starship-rocket-chalks-up-mostly-successful-test-flight/"
+        },
+        {
+          "title": "Spaceflight Now: Starship Flight 14 erreicht den Orbit (28.09.2026)",
+          "url": "https://spaceflightnow.com/2026/09/28/starship-returns-to-earth-rocket-splashes-down-north-of-hawaii-after-three-hour-flight/"
         }
       ]
     },
     {
       "id": "starlink_users",
-      "label": "Starlink-Anschlüsse",
+      "label": "Starlink-Privatkunden",
       "unit": "Mio.",
       "company": "SpaceX",
-      "example": true,
+      "example": false,
       "points": [
         {
-          "date": "2023",
-          "value": 2.2
+          "date": "2025-09-30",
+          "value": 7.2
         },
         {
-          "date": "2024",
-          "value": 4.0
+          "date": "2026-06-30",
+          "value": 12.0
         },
         {
-          "date": "2025",
-          "value": 6.5
-        },
-        {
-          "date": "2026",
-          "value": 8.0
+          "date": "2026-09-30",
+          "value": 13.6
         }
       ],
+      "note": "Abonnenten im Endkundengeschäft laut SpaceX-Quartalsbericht. Umsatz je Kunde im Q3: 69 US-Dollar (Vorjahr 83).",
       "sources": [
         {
-          "title": "Beispieldaten Produktion",
-          "url": "https://example.com/beispieldaten/starlink-users"
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
         }
       ]
     },
     {
       "id": "tesla_deliveries",
-      "label": "Tesla-Auslieferungen",
-      "unit": "Mio. Fahrzeuge",
+      "label": "Tesla-Auslieferungen pro Quartal",
+      "unit": "Fahrzeuge",
       "company": "Tesla",
-      "example": true,
+      "example": false,
       "points": [
         {
-          "date": "2022",
-          "value": 1.31
+          "date": "2024-12-31",
+          "value": 495570
         },
         {
-          "date": "2023",
-          "value": 1.81
+          "date": "2025-03-31",
+          "value": 336681
         },
         {
-          "date": "2024",
-          "value": 1.79
+          "date": "2025-06-30",
+          "value": 384000
         },
         {
-          "date": "2025",
-          "value": 1.85
+          "date": "2025-09-30",
+          "value": 497099
         },
         {
-          "date": "2026",
-          "value": 1.9
+          "date": "2025-12-31",
+          "value": 418227
+        },
+        {
+          "date": "2026-03-31",
+          "value": 358023
+        },
+        {
+          "date": "2026-06-30",
+          "value": 480126
+        },
+        {
+          "date": "2026-09-30",
+          "value": 486532
         }
       ],
       "sources": [
         {
-          "title": "Beispieldaten Produktion",
-          "url": "https://example.com/beispieldaten/tesla-deliveries"
+          "title": "TradingCalendar: Tesla-Auslieferungen je Quartal",
+          "url": "https://www.tradingcalendar.com/tesla-deliveries-production"
+        },
+        {
+          "title": "Tesla IR: Produktion und Auslieferungen Q3 2026",
+          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+        },
+        {
+          "title": "CNBC: Tesla Q2-2026-Zahlen",
+          "url": "https://www.cnbc.com/2026/07/22/tesla-tsla-q2-2026-earnings-report.html"
         }
       ]
     },
     {
-      "id": "optimus_units",
-      "label": "Optimus-Einheiten",
-      "unit": "Stück",
-      "company": "Tesla",
-      "example": true,
+      "id": "spacex_launches_2026",
+      "label": "SpaceX-Starts 2026 (kumuliert)",
+      "unit": "Starts",
+      "company": "SpaceX",
+      "example": false,
       "points": [
         {
-          "date": "2024",
-          "value": 0
+          "date": "2026-03-31",
+          "value": 40
         },
         {
-          "date": "2025",
-          "value": 20
+          "date": "2026-06-30",
+          "value": 78
         },
         {
-          "date": "2026",
-          "value": 80
+          "date": "2026-09-30",
+          "value": 113
         }
       ],
+      "note": "Alle Raketen (Falcon und Starship). Im gleichen Zeitraum 2025 waren es 128 – die Kadenz ist also gesunken.",
       "sources": [
         {
-          "title": "Beispieldaten Produktion",
-          "url": "https://example.com/beispieldaten/optimus-units"
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
         }
       ]
     }
-  ]
+  ],
+  "notes": "Für Optimus (Serie optimus_units) veröffentlicht Tesla keine Stückzahlen; die Serie bleibt deshalb leer, statt Zahlen zu schätzen."
 }

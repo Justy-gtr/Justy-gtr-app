@@ -1,26 +1,70 @@
 {
-  "example": true,
+  "example": false,
   "weekOf": "2026-11-02",
   "title": "Wochenrückblick",
-  "summary": "Beispiel: Eine ruhige Seed-Woche. Die Kurse sind erfunden, die Themen sind die, die später echt gepflegt werden.",
+  "summary": "Eine Woche mit zwei Gesichtern: Bis Dienstag erholte sich SPCX (Dienstag +3,6 % auf 141,31 $), am Mittwoch kostete das Wahlergebnis alle drei Werte rund 3,5 bis 4 %. Operativ lief es bei SpaceX und Rocket Lab ruhig und planmäßig; bei Tesla gab es diese Woche kaum Neues jenseits der FSD-Zulassung in den Niederlanden unter neuem Namen. Stand Mittwochabend, die Woche ist noch nicht vorbei.",
   "highlights": [
     {
       "title": "SpaceX",
-      "text": "Beispiel: Fokus auf Startkadenz und Starlink, ohne neue Zahl."
+      "text": "Starlink Mobile kooperiert mit Qualcomm für ein US-weites Netz aus Satelliten und Bodenstationen ab 2027; frühe Starlink-Kunden bekommen eine neue Antenne gratis. Flight 15 wartet auf die FAA-Lizenz."
     },
     {
       "title": "Tesla",
-      "text": "Beispiel: Leichtes Minus im Seed, Robotaxi weiter als Versprechen markiert."
+      "text": "Die niederländische Behörde RDW hat FSD unter dem neuen Namen „Tesla Assisted Driving“ mit engerem Tempo-Spielraum (+10 %) bestätigt. Die EU-weite Abstimmung bleibt frühestens im Dezember. Aktie am Mittwoch −3,3 %."
     },
     {
-      "title": "Umfeld",
-      "text": "Beispiel: Fed-Termin steht als externer Preistreiber im Kalender."
+      "title": "Rocket Lab",
+      "text": "Electron brachte erneut einen QPS-Radarsatelliten ins All, der für Viasat gebaute Satellit Maxwell ist gesund. Der Finanzchef und eine Aufsichtsrätin verkauften Aktien nach festen Plänen. Zahlen kommen am 9.11."
+    },
+    {
+      "title": "Politik",
+      "text": "Demokraten gewinnen beide Kammern des Kongresses und die wichtigsten Rennen in Texas, wo mehrere seiner Firmen sitzen. Musk war laut einer Analyse mit über 400 Mio. US-Dollar der größte Spender dieser Wahl, vor allem für Republikaner."
+    },
+    {
+      "title": "Neuralink",
+      "text": "Musk sagt, Blindsight sei technisch fertig und warte auf die Zulassung. Ein Datum gibt es nicht."
     }
   ],
   "sources": [
     {
-      "title": "Beispieldaten Woche",
-      "url": "https://example.com/beispieldaten/weekly"
+      "title": "Yahoo Finance: SPCX historische Kurse",
+      "url": "https://finance.yahoo.com/quote/SPCX/history/"
+    },
+    {
+      "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
+      "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+    },
+    {
+      "title": "CNBC: SpaceX und Tesla fallen nach Demokraten-Sieg (04.11.2026)",
+      "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html"
+    },
+    {
+      "title": "@Starlink auf X: Qualcomm-Partnerschaft",
+      "url": "https://x.com/Starlink/status/2117973275414532165"
+    },
+    {
+      "title": "RDW: Änderungen an Teslas Fahrassistenz genehmigt",
+      "url": "https://www.rdw.nl/en/news/2026/rdw-approves-changes-to-tesla-driver-assistance-system"
+    },
+    {
+      "title": "Electrek: Tesla senkt Tempo-Spielraum in Europa auf 10 %",
+      "url": "https://electrek.co/2026/11/03/tesla-assisted-driving-rdw-speed-cap-10-percent-europe/"
+    },
+    {
+      "title": "@RocketLab auf X: QPS-SAR",
+      "url": "https://x.com/RocketLab/status/2117350920757588325"
+    },
+    {
+      "title": "@RocketLab auf X: Maxwell",
+      "url": "https://x.com/RocketLab/status/2117715361714016621"
+    },
+    {
+      "title": "SEC Form 4: Adam Spice (RKLB), 02.11.2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000144/edgardoc.xml"
+    },
+    {
+      "title": "@elonmusk auf X: Blindsight",
+      "url": "https://x.com/elonmusk/status/2116019939056513218"
     }
   ]
 }

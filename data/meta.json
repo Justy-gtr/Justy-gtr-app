@@ -1,6 +1,6 @@
 {
-  "dataMode": "beispieldaten",
-  "lastUpdated": "2026-11-04T18:00:00+01:00",
+  "dataMode": "live",
+  "lastUpdated": "2026-11-04T22:22:35+01:00",
   "pricesUpdated": null,
   "timezone": "Europe/Berlin",
   "owner": "Justy",
@@ -8,5 +8,5 @@
   "disclaimer": "Keine Anlageberatung. Nur Recherche und Bildung.",
   "fx": null,
   "priceStatus": {},
-  "notes": "Seed mit Beispieldaten. Der Kurs-Workflow überschreibt Marktfelder in prices.json, alerts.json und die Preisfelder in meta.json. Recherchetexte bleiben stehen, bis der Assistent sie ersetzt und dataMode auf live setzt."
+  "notes": "Recherche-Daten echt, Stand 04.11.2026 abends (Berlin). Kurse in prices.json stammen noch aus dem Seed, bis der Kurs-Workflow das nächste Mal läuft (nächster planmäßiger Lauf: Donnerstag, 05:00 Uhr)."
 }

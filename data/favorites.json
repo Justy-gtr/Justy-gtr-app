@@ -1,5 +1,5 @@
 {
-  "example": true,
+  "example": false,
   "asOf": "2026-11-04",
   "owner": "Karl",
   "favorites": [
@@ -8,85 +8,137 @@
       "rank": 1,
       "symbol": "SPCX",
       "name": "SpaceX",
-      "score": 8,
-      "reason": "Beispiel: Startkadenz plus Starlink als zahlendes Geschäft, nicht nur als Raketenbild.",
-      "horizon": "langfrist",
-      "counterArgument": "Beispiel: Nach dem Börsengang am 12. Juni 2026 kann der Kurs der Story vorauslaufen.",
-      "example": true,
-      "sources": [
-        {
-          "title": "Beispieldaten Favorit",
-          "url": "https://example.com/beispieldaten/fav-spcx"
-        }
-      ]
-    },
-    {
-      "id": "fav-tsla",
-      "rank": 2,
-      "symbol": "TSLA",
-      "name": "Tesla",
       "score": 7,
-      "reason": "Beispiel: Autos tragen den Umsatz, Energie und Optimus sind der optionale Teil.",
+      "reason": "SpaceX wächst im Q3 um 161 % auf 14,6 Mrd. US-Dollar Umsatz und verdient dabei Geld, aber nach der Midterm-Wahl und vor der Lock-up-Freigabe am 8. Dezember ist der Kurs anfällig.",
       "horizon": "langfrist",
-      "counterArgument": "Beispiel: Wenn die Marge fällt, hilft eine schöne Roboter-Demo wenig.",
-      "example": true,
+      "counterArgument": "Die Bewertung von rund 1,9 Billionen US-Dollar setzt voraus, dass die KI-Sparte (SI) ihre riesigen Investitionen zurückverdient: allein im Q3 flossen 16,4 Mrd. US-Dollar Investitionen in SI, mehr als der gesamte Quartalsumsatz. Dazu kommen frei werdende Aktien und ein Kongress, der Musk jetzt genauer prüfen will.",
       "sources": [
         {
-          "title": "Beispieldaten Favorit",
-          "url": "https://example.com/beispieldaten/fav-tsla"
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        },
+        {
+          "title": "Motley Fool: Why SpaceX Stock Is Down Today (04.11.2026)",
+          "url": "https://www.fool.com/investing/2026/11/04/why-spacex-stock-is-down-today/"
+        },
+        {
+          "title": "StockCar: SPCX-Lockup-Kalender (aus dem 424B4-Prospekt)",
+          "url": "https://www.stockcar.app/insights/spacex-lockup-schedule"
+        },
+        {
+          "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
+          "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
         }
-      ]
+      ],
+      "example": false
     },
     {
       "id": "fav-starlink",
-      "rank": 3,
+      "rank": 2,
       "symbol": "SPCX",
-      "name": "Starlink-Wachstum",
+      "name": "Starlink (Teil von SpaceX)",
       "score": 8,
-      "reason": "Beispiel: Mehr zahlende Anschlüsse sind ein klarerer Treiber als ein einzelner Testflug.",
-      "horizon": "12-24 Monate",
-      "counterArgument": "Beispiel: Konkurrenz und teure Satelliten können das Wachstum auffressen.",
-      "example": true,
+      "reason": "Starlink kam im Q3 auf 13,6 Mio. Privatkunden (Vorjahr 7,2 Mio.) und mit Starlink Mobile plus Qualcomm-Deal kommt ein zweites Wachstumsfeld dazu.",
+      "horizon": "langfrist",
+      "counterArgument": "Der Umsatz je Kunde ist von 83 auf 69 US-Dollar gefallen, weil das Wachstum aus günstigeren Märkten kommt; dazu kosten Gratis-Antennen für Altkunden und das 800-MHz-Spektrum Geld. Mehr Kunden heißt nicht automatisch mehr Gewinn.",
       "sources": [
         {
-          "title": "Beispieldaten Favorit",
-          "url": "https://example.com/beispieldaten/fav-starlink"
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        },
+        {
+          "title": "@Starlink auf X: Qualcomm-Partnerschaft",
+          "url": "https://x.com/Starlink/status/2117973275414532165"
+        },
+        {
+          "title": "@elonmusk auf X: neue Antenne für frühe Kunden",
+          "url": "https://x.com/elonmusk/status/2117995905525907769"
         }
-      ]
+      ],
+      "example": false
     },
     {
-      "id": "fav-optimus",
-      "rank": 4,
+      "id": "fav-tsla",
+      "rank": 3,
       "symbol": "TSLA",
-      "name": "Optimus",
+      "name": "Tesla",
       "score": 5,
-      "reason": "Beispiel: Erst interessant, wenn Einheiten echte Schichten arbeiten. Bis dahin ein Zuschlag, kein Kern.",
+      "reason": "Tesla liefert wieder mehr aus als erwartet und das Robotaxi wächst, aber die Aktie ist seit Jahresbeginn rund 14 % im Minus und der Großteil des Werts hängt an Versprechen für 2027.",
       "horizon": "langfrist",
-      "counterArgument": "Beispiel: Der Markt kann den Roboter einpreisen, lange bevor er Umsatz macht.",
-      "example": true,
+      "counterArgument": "Das Autogeschäft schrumpft im Jahresvergleich (Q3: −2 %), unbeaufsichtigtes FSD für Kundenautos ist erst für etwa Q2 2027 angepeilt und Tesla hat bei solchen Terminen oft verfehlt – siehe die Robotaxi-Million für 2020.",
       "sources": [
         {
-          "title": "Beispieldaten Favorit",
-          "url": "https://example.com/beispieldaten/fav-optimus"
+          "title": "Tesla IR: Produktion und Auslieferungen Q3 2026",
+          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+        },
+        {
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+        },
+        {
+          "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
+          "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+        },
+        {
+          "title": "CNBC (22.04.2019): Musk kündigt Robotaxis für 2020 an",
+          "url": "https://www.cnbc.com/2019/04/22/elon-musk-says-tesla-robotaxis-will-hit-the-market-next-year.html"
         }
-      ]
+      ],
+      "example": false
+    },
+    {
+      "id": "fav-tesla-energie",
+      "rank": 4,
+      "symbol": "TSLA",
+      "name": "Tesla Energie (Speicher)",
+      "score": 7,
+      "reason": "Die Speichersparte lieferte im Q3 13,7 GWh aus und ihre Marge sprang auf 33,1 %; KI-Rechenzentren brauchen genau diese Batterien.",
+      "horizon": "langfrist",
+      "counterArgument": "Der Margensprung kam laut Call teils aus Einmaleffekten (Zollrückerstattungen, Gewährleistung), ist also nicht einfach fortzuschreiben, und der Bereich ist im Vergleich zum Autogeschäft noch klein.",
+      "sources": [
+        {
+          "title": "Tesla IR: Produktion und Auslieferungen Q3 2026",
+          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+        },
+        {
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+        },
+        {
+          "title": "@elonmusk auf X: Engpässe bei Batterien",
+          "url": "https://x.com/elonmusk/status/2117649850644705591"
+        }
+      ],
+      "example": false
     },
     {
       "id": "fav-rklb",
       "rank": 5,
       "symbol": "RKLB",
       "name": "Rocket Lab",
-      "score": 6,
-      "reason": "Beispiel: Vergleich zu SpaceX. Kleiner, fokussierter, abhängiger vom nächsten Fahrzeug.",
-      "horizon": "langfrist",
-      "counterArgument": "Beispiel: Ein Fehlstart oder eine Verzögerung bei Neutron wiegt hier schwerer.",
-      "example": true,
+      "score": 5,
+      "reason": "Rocket Lab hat einen Rekord-Auftragsbestand von 2,36 Mrd. US-Dollar und liefert bei Electron und Satelliten zuverlässig, aber die große Rakete Neutron rutscht ins Jahr 2027.",
+      "horizon": "mittelfrist",
+      "counterArgument": "Ohne Neutron bleibt Rocket Lab ein kleiner Anbieter neben SpaceX, die Aktie liegt rund 65 % unter dem Hoch vom Mai und das Management verkauft laufend Aktien – Käufe von Insidern habe ich keine gefunden.",
       "sources": [
         {
-          "title": "Beispieldaten Favorit",
-          "url": "https://example.com/beispieldaten/fav-rklb"
+          "title": "Rocket Lab: Ergebnisse Q2 2026",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts"
+        },
+        {
+          "title": "Rocket Lab: Neutron-Update, Erststart jetzt 2027",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+        },
+        {
+          "title": "Yahoo Finance: RKLB historische Kurse",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        },
+        {
+          "title": "SEC: Form 4 Adam Spice, 02.11.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000144/edgardoc.xml"
         }
-      ]
+      ],
+      "example": false
     }
   ]
 }

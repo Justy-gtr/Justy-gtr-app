@@ -1,303 +1,491 @@
 {
-  "example": true,
+  "example": false,
   "scenarios": [
+    {
+      "id": "starship_success",
+      "title": "Starship-Testflug gelingt weitgehend",
+      "tickers": [
+        "SPCX"
+      ],
+      "summary": "Bisher zwei Fälle seit dem Börsengang – und beide Male schloss SPCX am Reaktionstag im Minus. Typisches „Sell the news“: Der Erfolg war erwartet. Zwei Fälle sind keine Statistik.",
+      "medianMovePct": -1.76,
+      "reactions": [
+        {
+          "date": "2026-07-27",
+          "symbol": "SPCX",
+          "movePct": -1.36,
+          "note": "Flight 13 startete am Freitag, 24.07., nach US-Börsenschluss; erster Handelstag danach.",
+          "sources": [
+            {
+              "title": "Spaceflight Now: Starship Flight 13 (24.07.2026)",
+              "url": "https://spaceflightnow.com/2026/07/25/super-heavy-starship-rocket-chalks-up-mostly-successful-test-flight/"
+            },
+            {
+              "title": "Yahoo Finance: SPCX historische Kurse",
+              "url": "https://finance.yahoo.com/quote/SPCX/history/"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-28",
+          "symbol": "SPCX",
+          "movePct": -2.16,
+          "note": "Flight 14 (erster Orbit) startete am Montag während der Handelszeit.",
+          "sources": [
+            {
+              "title": "Spaceflight Now: Starship Flight 14 erreicht den Orbit (28.09.2026)",
+              "url": "https://spaceflightnow.com/2026/09/28/starship-returns-to-earth-rocket-splashes-down-north-of-hawaii-after-three-hour-flight/"
+            },
+            {
+              "title": "Yahoo Finance: SPCX historische Kurse",
+              "url": "https://finance.yahoo.com/quote/SPCX/history/"
+            }
+          ]
+        }
+      ],
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: SPCX historische Kurse",
+          "url": "https://finance.yahoo.com/quote/SPCX/history/"
+        },
+        {
+          "title": "Wikipedia: List of Starship launches",
+          "url": "https://en.wikipedia.org/wiki/List_of_Starship_launches"
+        }
+      ]
+    },
     {
       "id": "starship_fail",
       "title": "Starship-Start misslingt",
       "tickers": [
+        "SPCX"
+      ],
+      "summary": "Seit dem Börsengang gab es keinen klar gescheiterten Starship-Flug, daher keine echte SPCX-Reaktion. Als Anhaltspunkt bleibt nur der Fall oben: selbst Erfolge drückten den Kurs leicht. Ein Fehlschlag beim Turmfang dürfte stärker wirken – das ist eine Vermutung, keine Messung.",
+      "medianMovePct": -2.16,
+      "reactions": [
+        {
+          "date": "2026-09-28",
+          "symbol": "SPCX",
+          "movePct": -2.16,
+          "note": "Ersatzwert: Flight 14 mit vorzeitig abgeschaltetem Raptor-Triebwerk, sonst Erfolg. Kein echter Fehlschlag.",
+          "sources": [
+            {
+              "title": "Spaceflight Now: Starship Flight 14 erreicht den Orbit (28.09.2026)",
+              "url": "https://spaceflightnow.com/2026/09/28/starship-returns-to-earth-rocket-splashes-down-north-of-hawaii-after-three-hour-flight/"
+            },
+            {
+              "title": "Yahoo Finance: SPCX historische Kurse",
+              "url": "https://finance.yahoo.com/quote/SPCX/history/"
+            }
+          ]
+        }
+      ],
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: SPCX historische Kurse",
+          "url": "https://finance.yahoo.com/quote/SPCX/history/"
+        },
+        {
+          "title": "Spaceflight Now: Starship Flight 14 erreicht den Orbit (28.09.2026)",
+          "url": "https://spaceflightnow.com/2026/09/28/starship-returns-to-earth-rocket-splashes-down-north-of-hawaii-after-three-hour-flight/"
+        }
+      ]
+    },
+    {
+      "id": "earnings",
+      "title": "Quartalszahlen",
+      "tickers": [
         "SPCX",
-        "TSLA"
-      ],
-      "summary": "Beispiel: In den Platzhalter-Fällen gab SPCX am Tag etwas ab, TSLA fast nicht.",
-      "medianMovePct": -2.2,
-      "reactions": [
-        {
-          "date": "2025-03-06",
-          "symbol": "SPCX",
-          "movePct": -3.1,
-          "note": "Beispielreaktion, kein historischer Kurs.",
-          "sources": [
-            {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-fail-1"
-            }
-          ]
-        },
-        {
-          "date": "2025-08-26",
-          "symbol": "SPCX",
-          "movePct": -1.4,
-          "note": "Beispielreaktion.",
-          "sources": [
-            {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-fail-2"
-            }
-          ]
-        },
-        {
-          "date": "2025-03-06",
-          "symbol": "TSLA",
-          "movePct": -0.4,
-          "note": "Beispielreaktion.",
-          "sources": [
-            {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-fail-3"
-            }
-          ]
-        }
-      ],
-      "example": true,
-      "sources": [
-        {
-          "title": "Beispieldaten Szenario",
-          "url": "https://example.com/beispieldaten/starship-fail"
-        }
-      ]
-    },
-    {
-      "id": "starship_success",
-      "title": "Starship-Start gelingt",
-      "tickers": [
-        "SPCX"
-      ],
-      "summary": "Beispiel: Ein gelungener Test hob den Platzhalter-Kurs nur wenig. Das Geschäft war schon bekannt.",
-      "medianMovePct": 1.1,
-      "reactions": [
-        {
-          "date": "2025-05-12",
-          "symbol": "SPCX",
-          "movePct": 1.6,
-          "note": "Beispielreaktion.",
-          "sources": [
-            {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-ok-1"
-            }
-          ]
-        },
-        {
-          "date": "2025-10-13",
-          "symbol": "SPCX",
-          "movePct": 0.6,
-          "note": "Beispielreaktion.",
-          "sources": [
-            {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-ok-2"
-            }
-          ]
-        }
-      ],
-      "example": true,
-      "sources": [
-        {
-          "title": "Beispieldaten Szenario",
-          "url": "https://example.com/beispieldaten/starship-success"
-        }
-      ]
-    },
-    {
-      "id": "earnings_beat",
-      "title": "Zahlen besser als gedacht",
-      "tickers": [
         "TSLA",
-        "SPCX"
-      ],
-      "summary": "Beispiel: Ein Schlag ins Kontor nach oben. Im Seed stärker bei Tesla als bei SpaceX.",
-      "medianMovePct": 4.5,
-      "reactions": [
-        {
-          "date": "2026-01-28",
-          "symbol": "TSLA",
-          "movePct": 6.2,
-          "note": "Beispielreaktion.",
-          "sources": [
-            {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-beat-1"
-            }
-          ]
-        },
-        {
-          "date": "2026-04-22",
-          "symbol": "TSLA",
-          "movePct": 3.1,
-          "note": "Beispielreaktion.",
-          "sources": [
-            {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-beat-2"
-            }
-          ]
-        },
-        {
-          "date": "2026-08-12",
-          "symbol": "SPCX",
-          "movePct": 4.4,
-          "note": "Beispielreaktion.",
-          "sources": [
-            {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-beat-3"
-            }
-          ]
-        }
-      ],
-      "example": true,
-      "sources": [
-        {
-          "title": "Beispieldaten Szenario",
-          "url": "https://example.com/beispieldaten/earnings-beat"
-        }
-      ]
-    },
-    {
-      "id": "earnings_miss",
-      "title": "Zahlen schwächer als gedacht",
-      "tickers": [
-        "TSLA",
-        "SPCX"
-      ],
-      "summary": "Beispiel: Verfehlt die Firma den eigenen Ausblick, war der Platzhalter-Kurs am selben Tag klar rot.",
-      "medianMovePct": -5.0,
-      "reactions": [
-        {
-          "date": "2025-10-22",
-          "symbol": "TSLA",
-          "movePct": -6.8,
-          "note": "Beispielreaktion.",
-          "sources": [
-            {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-miss-1"
-            }
-          ]
-        },
-        {
-          "date": "2026-01-29",
-          "symbol": "TSLA",
-          "movePct": -3.9,
-          "note": "Beispielreaktion.",
-          "sources": [
-            {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-miss-2"
-            }
-          ]
-        }
-      ],
-      "example": true,
-      "sources": [
-        {
-          "title": "Beispieldaten Szenario",
-          "url": "https://example.com/beispieldaten/earnings-miss"
-        }
-      ]
-    },
-    {
-      "id": "rate_hike",
-      "title": "Zinsen höher als erwartet",
-      "tickers": [
-        "TSLA",
-        "SPCX",
         "RKLB"
       ],
-      "summary": "Beispiel: Teureres Geld drückt im Seed alle drei Wachstumswerte, Tesla am deutlichsten.",
-      "medianMovePct": -2.4,
+      "summary": "Die Reaktion hängt an der Erwartung, nicht am Wachstum: SPCX sprang nach den ersten Quartalszahlen, Tesla fiel nach beiden letzten Berichten, Rocket Lab blieb im Q2 fast unverändert.",
+      "medianMovePct": -1.56,
       "reactions": [
         {
-          "date": "2025-12-18",
-          "symbol": "TSLA",
-          "movePct": -3.2,
-          "note": "Beispielreaktion.",
-          "sources": [
-            {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-hike-1"
-            }
-          ]
-        },
-        {
-          "date": "2025-12-18",
+          "date": "2026-10-21",
           "symbol": "SPCX",
-          "movePct": -1.8,
-          "note": "Beispielreaktion.",
+          "movePct": 7.79,
+          "note": "Erster Handelstag nach den Q3-Zahlen (20.10. nach Börsenschluss).",
           "sources": [
             {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-hike-2"
+              "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+              "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+            },
+            {
+              "title": "Yahoo Finance: SPCX historische Kurse",
+              "url": "https://finance.yahoo.com/quote/SPCX/history/"
             }
           ]
         },
         {
-          "date": "2025-12-18",
-          "symbol": "RKLB",
-          "movePct": -2.4,
-          "note": "Beispielreaktion.",
+          "date": "2026-07-23",
+          "symbol": "TSLA",
+          "movePct": -14.52,
+          "note": "Nach Q2: Gewinn je Aktie 33 Cent statt erwarteter rund 51 Cent, negativer Free Cashflow.",
           "sources": [
             {
-              "title": "Beispieldaten Reaktion",
-              "url": "https://example.com/beispieldaten/sc-hike-3"
+              "title": "CNBC: Tesla Q2-2026-Zahlen",
+              "url": "https://www.cnbc.com/2026/07/22/tesla-tsla-q2-2026-earnings-report.html"
+            },
+            {
+              "title": "Investopedia: Tesla-Aktie fällt nach Gewinnverfehlung",
+              "url": "https://www.investopedia.com/tesla-stock-tumbles-after-big-earnings-miss-tsla-12025127"
+            },
+            {
+              "title": "Yahoo Finance: TSLA historische Kurse",
+              "url": "https://finance.yahoo.com/quote/TSLA/history/"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-22",
+          "symbol": "TSLA",
+          "movePct": -3.08,
+          "note": "Nach Q3 (21.10.).",
+          "sources": [
+            {
+              "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+              "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+            },
+            {
+              "title": "Yahoo Finance: TSLA historische Kurse",
+              "url": "https://finance.yahoo.com/quote/TSLA/history/"
+            }
+          ]
+        },
+        {
+          "date": "2026-08-11",
+          "symbol": "RKLB",
+          "movePct": -0.04,
+          "note": "Nach Q2 (10.08.): Rekord-Auftragsbestand.",
+          "sources": [
+            {
+              "title": "Rocket Lab: Ergebnisse Q2 2026",
+              "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts"
+            },
+            {
+              "title": "Yahoo Finance: RKLB historische Kurse",
+              "url": "https://finance.yahoo.com/quote/RKLB/history/"
             }
           ]
         }
       ],
-      "example": true,
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Szenario",
-          "url": "https://example.com/beispieldaten/rate-hike"
+          "title": "Yahoo Finance: SPCX historische Kurse",
+          "url": "https://finance.yahoo.com/quote/SPCX/history/"
+        },
+        {
+          "title": "Yahoo Finance: TSLA historische Kurse",
+          "url": "https://finance.yahoo.com/quote/TSLA/history/"
+        },
+        {
+          "title": "Yahoo Finance: RKLB historische Kurse",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        }
+      ]
+    },
+    {
+      "id": "tesla_deliveries",
+      "title": "Tesla-Auslieferungszahlen",
+      "tickers": [
+        "TSLA"
+      ],
+      "summary": "Zweimal über der Erwartung, zweimal verschiedene Richtung. Die Stückzahl allein sagt den Kurs nicht voraus.",
+      "medianMovePct": -1.42,
+      "reactions": [
+        {
+          "date": "2026-07-02",
+          "symbol": "TSLA",
+          "movePct": -7.49,
+          "note": "Q2: 480.126 Auslieferungen, deutlich über der Schätzung – Aktie trotzdem tief im Minus.",
+          "sources": [
+            {
+              "title": "Motley Fool: Tesla schlägt Auslieferungsschätzung und fällt trotzdem",
+              "url": "https://www.fool.com/investing/2026/07/03/tesla-beat-delivery-estimates-by-74000-vehicles-an/"
+            },
+            {
+              "title": "Yahoo Finance: TSLA historische Kurse",
+              "url": "https://finance.yahoo.com/quote/TSLA/history/"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-02",
+          "symbol": "TSLA",
+          "movePct": 4.65,
+          "note": "Q3: 486.532 Auslieferungen, über der Schätzung von rund 461.000.",
+          "sources": [
+            {
+              "title": "CNBC: Tesla Q3-2026-Auslieferungen",
+              "url": "https://www.cnbc.com/2026/10/02/tesla-tsla-q3-2026-vehicle-delivery-production.html"
+            },
+            {
+              "title": "Yahoo Finance: TSLA historische Kurse",
+              "url": "https://finance.yahoo.com/quote/TSLA/history/"
+            }
+          ]
+        }
+      ],
+      "example": false,
+      "sources": [
+        {
+          "title": "TradingCalendar: Tesla-Auslieferungen je Quartal",
+          "url": "https://www.tradingcalendar.com/tesla-deliveries-production"
+        },
+        {
+          "title": "Yahoo Finance: TSLA historische Kurse",
+          "url": "https://finance.yahoo.com/quote/TSLA/history/"
+        }
+      ]
+    },
+    {
+      "id": "lockup",
+      "title": "Lock-up-Freigabe (SPCX)",
+      "tickers": [
+        "SPCX"
+      ],
+      "summary": "Ein Fall: Am Tag der Freigabe von bis zu 1,3 Mrd. Aktien nach den Q3-Zahlen fiel SPCX deutlich. Der Tag davor war ein Sprung von 7,8 %, ein Teil ist also Gewinnmitnahme. Nächste Freigabe: 8. Dezember.",
+      "medianMovePct": -9.14,
+      "reactions": [
+        {
+          "date": "2026-10-22",
+          "symbol": "SPCX",
+          "movePct": -9.14,
+          "note": "Freigabe nach Q3-Zahlen; vermischt mit Gegenbewegung nach dem Zahlen-Sprung.",
+          "sources": [
+            {
+              "title": "StockCar: SPCX-Lockup-Kalender (aus dem 424B4-Prospekt)",
+              "url": "https://www.stockcar.app/insights/spacex-lockup-schedule"
+            },
+            {
+              "title": "Yahoo Finance: SPCX historische Kurse",
+              "url": "https://finance.yahoo.com/quote/SPCX/history/"
+            }
+          ]
+        }
+      ],
+      "example": false,
+      "sources": [
+        {
+          "title": "StockCar: SPCX-Lockup-Kalender (aus dem 424B4-Prospekt)",
+          "url": "https://www.stockcar.app/insights/spacex-lockup-schedule"
+        }
+      ]
+    },
+    {
+      "id": "politics",
+      "title": "US-Wahl gegen Musk",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "summary": "Nach dem Sieg der Demokraten bei den Midterms fielen alle drei Werte um rund 3,5 bis 4 %. Rocket Lab ist kein Musk-Unternehmen, fiel aber ähnlich – ein Teil war also allgemeine Raumfahrt- und Wachstumsschwäche.",
+      "medianMovePct": -3.78,
+      "reactions": [
+        {
+          "date": "2026-11-04",
+          "symbol": "SPCX",
+          "movePct": -3.81,
+          "note": "Schlusskurs; zeitweise über 5 % im Minus.",
+          "sources": [
+            {
+              "title": "Motley Fool: Why SpaceX Stock Is Down Today (04.11.2026)",
+              "url": "https://www.fool.com/investing/2026/11/04/why-spacex-stock-is-down-today/"
+            },
+            {
+              "title": "Yahoo Finance: SPCX historische Kurse",
+              "url": "https://finance.yahoo.com/quote/SPCX/history/"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "symbol": "TSLA",
+          "movePct": -3.34,
+          "note": "Tesla seit Jahresbeginn rund 14 % im Minus.",
+          "sources": [
+            {
+              "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
+              "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+            },
+            {
+              "title": "Yahoo Finance: TSLA historische Kurse",
+              "url": "https://finance.yahoo.com/quote/TSLA/history/"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "symbol": "RKLB",
+          "movePct": -3.78,
+          "note": "Kein direkter Musk-Bezug.",
+          "sources": [
+            {
+              "title": "Yahoo Finance: RKLB historische Kurse",
+              "url": "https://finance.yahoo.com/quote/RKLB/history/"
+            }
+          ]
+        }
+      ],
+      "example": false,
+      "sources": [
+        {
+          "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
+          "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+        },
+        {
+          "title": "CNBC: SpaceX und Tesla fallen nach Demokraten-Sieg (04.11.2026)",
+          "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html"
+        }
+      ]
+    },
+    {
+      "id": "delay",
+      "title": "Verschiebung eines Großprojekts",
+      "tickers": [
+        "RKLB"
+      ],
+      "summary": "Ein Fall: Rocket Labs Neutron-Verschiebung auf 2027 kostete am Folgetag 6,6 %.",
+      "medianMovePct": -6.64,
+      "reactions": [
+        {
+          "date": "2026-10-15",
+          "symbol": "RKLB",
+          "movePct": -6.64,
+          "note": "Bekanntgabe am 14.10. nach Börsenschluss.",
+          "sources": [
+            {
+              "title": "Rocket Lab: Neutron-Update, Erststart jetzt 2027",
+              "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+            },
+            {
+              "title": "Yahoo Finance: RKLB historische Kurse",
+              "url": "https://finance.yahoo.com/quote/RKLB/history/"
+            }
+          ]
+        }
+      ],
+      "example": false,
+      "sources": [
+        {
+          "title": "Rocket Lab: Neutron-Update, Erststart jetzt 2027",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
         }
       ]
     }
   ],
   "recoveries": [
     {
-      "id": "rec-tsla",
+      "id": "rec-tsla-2020",
       "symbol": "TSLA",
-      "dropPct": -28,
-      "period": "Beispiel 2022, verkürzt",
-      "monthsToRecover": 18,
-      "recoveryNote": "Beispiel: Nach einem tiefen Rücksetzer brauchte der Platzhalter über ein Jahr, bis der alte Stand wieder da war. Das muss sich nicht wiederholen.",
-      "example": true,
+      "dropPct": -60.6,
+      "period": "Feb.–März 2020",
+      "monthsToRecover": 3,
+      "recoveryNote": "Vom Tief am 18.03.2020 dauerte es knapp drei Monate bis zum alten Schlusskurs-Hoch (08.06.2020). Schlusskurse, splitbereinigt. Keine Prognose.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Erholung",
-          "url": "https://example.com/beispieldaten/rec-tsla"
+          "title": "Yahoo Finance: TSLA historische Kurse",
+          "url": "https://finance.yahoo.com/quote/TSLA/history/"
         }
       ]
     },
     {
-      "id": "rec-rklb",
+      "id": "rec-tsla-2021",
+      "symbol": "TSLA",
+      "dropPct": -73.6,
+      "period": "Nov. 2021 – Jan. 2023",
+      "monthsToRecover": 23,
+      "recoveryNote": "Tief am 03.01.2023, altes Hoch erst am 11.12.2024 wieder erreicht. Keine Prognose.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: TSLA historische Kurse",
+          "url": "https://finance.yahoo.com/quote/TSLA/history/"
+        }
+      ]
+    },
+    {
+      "id": "rec-tsla-2025",
+      "symbol": "TSLA",
+      "dropPct": -53.8,
+      "period": "Dez. 2024 – Apr. 2025",
+      "monthsToRecover": 8,
+      "recoveryNote": "Tief am 08.04.2025, altes Hoch am 16.12.2025 wieder erreicht. Keine Prognose.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: TSLA historische Kurse",
+          "url": "https://finance.yahoo.com/quote/TSLA/history/"
+        }
+      ]
+    },
+    {
+      "id": "rec-tsla-2026",
+      "symbol": "TSLA",
+      "dropPct": -39.1,
+      "period": "seit Dez. 2025 (läuft)",
+      "monthsToRecover": null,
+      "recoveryNote": "Hoch 489,88 $ am 16.12.2025, Tief 298,32 $ am 29.07.2026. Noch nicht erholt (Schluss 04.11.: 385,19 $).",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: TSLA historische Kurse",
+          "url": "https://finance.yahoo.com/quote/TSLA/history/"
+        }
+      ]
+    },
+    {
+      "id": "rec-rklb-2025",
       "symbol": "RKLB",
-      "dropPct": -35,
-      "period": "Beispiel 2024",
-      "monthsToRecover": 11,
-      "recoveryNote": "Beispiel: Der kleinere Vergleichswert fiel härter und holte im Seed schneller einen Teil auf, blieb aber schwankend.",
-      "example": true,
+      "dropPct": -48.1,
+      "period": "Jan.–Apr. 2025",
+      "monthsToRecover": 3,
+      "recoveryNote": "Tief am 04.04.2025, altes Hoch am 23.06.2025 wieder erreicht (knapp drei Monate). Keine Prognose.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Erholung",
-          "url": "https://example.com/beispieldaten/rec-rklb"
+          "title": "Yahoo Finance: RKLB historische Kurse",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
         }
       ]
     },
     {
-      "id": "rec-spcx",
-      "symbol": "SPCX",
-      "dropPct": -15,
-      "period": "Beispiel nach Börsengang",
-      "monthsToRecover": 4,
-      "recoveryNote": "Beispiel: Ein früher Rücksetzer nach dem 12. Juni 2026. Kurze Reihe, wenig Aussage.",
-      "example": true,
+      "id": "rec-rklb-2026",
+      "symbol": "RKLB",
+      "dropPct": -66.2,
+      "period": "seit Mai 2026 (läuft)",
+      "monthsToRecover": null,
+      "recoveryNote": "Hoch 150,23 $ am 27.05.2026, Tief 50,84 $ am 16.10.2026. Noch nicht erholt (Schluss 04.11.: 52,37 $).",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Erholung",
-          "url": "https://example.com/beispieldaten/rec-spcx"
+          "title": "Yahoo Finance: RKLB historische Kurse",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        }
+      ]
+    },
+    {
+      "id": "rec-spcx-2026",
+      "symbol": "SPCX",
+      "dropPct": -48.8,
+      "period": "seit Juni 2026 (läuft)",
+      "monthsToRecover": null,
+      "recoveryNote": "Hoch 211,39 $ am 16.06.2026 kurz nach dem Börsengang, Tief 108,27 $ am 05.08.2026. Noch nicht erholt (Schluss 04.11.: 135,92 $). Ausgabepreis war 135 $.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: SPCX historische Kurse",
+          "url": "https://finance.yahoo.com/quote/SPCX/history/"
         }
       ]
     }
-  ]
+  ],
+  "notes": "Kursbewegungen = Veränderung des Schlusskurses in US-Dollar gegenüber dem Vortag (Yahoo Finance). In Euro weicht es um die Wechselkursbewegung ab."
 }

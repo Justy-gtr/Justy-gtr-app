@@ -1,75 +1,311 @@
 {
-  "example": true,
+  "example": false,
   "promises": [
     {
-      "id": "prm-starship-kadenz",
+      "id": "prm-flight15-fang",
       "who": "Elon Musk",
       "company": "SpaceX",
-      "promise": "Beispiel: Starship soll in dichter Folge fliegen, nicht nur zu Demonstrationen.",
-      "promisedOn": "2024-04-01",
+      "promise": "Starship Flight 15 soll im November starten und dabei erstmals Booster und Schiff mit dem Turm fangen; ein Erfolg sei eher wahrscheinlich als nicht.",
+      "promisedOn": "2026-10-20",
+      "targetDate": "2026-11-30",
+      "status": "offen",
+      "delay": null,
+      "note": "Beide Stufen sind getestet, die FAA-Lizenz steht aus. Ein früheres Ziel im Oktober wurde schon verpasst.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Ars Technica: SpaceX will bei Flight 15 beide Stufen fangen",
+          "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
+        },
+        {
+          "title": "The Space Road: Wann startet Starship Flight 15?",
+          "url": "https://thespaceroad.com/articles/when-is-starship-flight-15/"
+        },
+        {
+          "title": "@elonmusk auf X: Ship 42 als erster Turmfang",
+          "url": "https://x.com/elonmusk/status/2115634093949911506"
+        }
+      ]
+    },
+    {
+      "id": "prm-starship-woechentlich",
+      "who": "Elon Musk",
+      "company": "SpaceX",
+      "promise": "Starship soll in der ersten Hälfte 2027 wöchentlich und in der zweiten Hälfte 2027 zweimal pro Woche fliegen.",
+      "promisedOn": "2026-10-20",
+      "targetDate": "2027-06-30",
+      "status": "offen",
+      "delay": null,
+      "note": "Genehmigt sind ab Starbase derzeit bis zu 25 Starts pro Jahr; das Verfahren für bis zu 100 (später 456) läuft gerade erst an. 2026 gab es bisher drei Starship-Flüge.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Ars Technica: SpaceX will bei Flight 15 beide Stufen fangen",
+          "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
+        },
+        {
+          "title": "FAA: SpaceX Starship Super Heavy Projekt Boca Chica",
+          "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
+        },
+        {
+          "title": "Wikipedia: List of Starship launches",
+          "url": "https://en.wikipedia.org/wiki/List_of_Starship_launches"
+        }
+      ]
+    },
+    {
+      "id": "prm-mars-2026",
+      "who": "Elon Musk",
+      "company": "SpaceX",
+      "promise": "Starship sollte Ende 2026 mit Optimus an Bord Richtung Mars starten (Aussage vom März 2025).",
+      "promisedOn": "2025-03-15",
+      "targetDate": "2026-12-31",
+      "status": "verzoegert",
+      "delay": "SpaceX hat im Februar 2026 den Fokus auf den Mond gelegt; die Mars-Seite nennt Frachtflüge jetzt frühestens 2028.",
+      "note": "Das Startfenster Ende 2026 wird nicht genutzt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X, 15.03.2025",
+          "url": "https://x.com/elonmusk/status/1900774290682683612"
+        },
+        {
+          "title": "Space.com: Warum SpaceX vom Mars auf den Mond umschwenkt",
+          "url": "https://www.space.com/astronomy/moon/a-city-on-the-moon-why-spacex-shifted-its-focus-away-from-mars"
+        },
+        {
+          "title": "SpaceX: Mission Mars",
+          "url": "https://www.spacex.com/mars"
+        }
+      ]
+    },
+    {
+      "id": "prm-ship-refly",
+      "who": "Gwynne Shotwell",
+      "company": "SpaceX",
+      "promise": "Ein gefangenes Starship soll Anfang 2027 erneut fliegen; ebenfalls Anfang 2027 ist ein Test zur Treibstoffübergabe im Orbit geplant.",
+      "promisedOn": "2026-10-20",
+      "targetDate": "2027-03-31",
+      "status": "offen",
+      "delay": null,
+      "note": "Setzt einen erfolgreichen Schiffsfang bei Flight 15 voraus.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Ars Technica: SpaceX will bei Flight 15 beide Stufen fangen",
+          "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
+        }
+      ]
+    },
+    {
+      "id": "prm-cybercab-dallas",
+      "who": "Tesla",
+      "company": "Tesla",
+      "promise": "Cybercab-Fahrten in Dallas ab November 2026.",
+      "promisedOn": "2026-10-21",
+      "targetDate": "2026-11-30",
+      "status": "offen",
+      "delay": null,
+      "note": "In Austin fahren laut Tesla bereits über 300 Cybercabs.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+        },
+        {
+          "title": "Motley Fool: Tesla Q3 2026 Earnings Call Transcript",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript/"
+        }
+      ]
+    },
+    {
+      "id": "prm-cybercab-kunden",
+      "who": "Tesla",
+      "company": "Tesla",
+      "promise": "Erste Cybercab-Auslieferungen an Kunden bis Ende 2026, danach schrittweiser Hochlauf.",
+      "promisedOn": "2026-10-21",
       "targetDate": "2026-12-31",
       "status": "offen",
       "delay": null,
-      "note": "Beispieldaten. Kein wörtliches Zitat.",
-      "example": true,
+      "note": "",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Versprechen",
-          "url": "https://example.com/beispieldaten/prm-starship-kadenz"
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
         }
       ]
     },
     {
-      "id": "prm-robotaxi",
-      "who": "Elon Musk",
+      "id": "prm-fsd-unbeaufsichtigt",
+      "who": "Ashok Elluswamy (Tesla)",
       "company": "Tesla",
-      "promise": "Beispiel: Robotaxis sollten ohne Aufsicht unterwegs sein.",
-      "promisedOn": "2024-10-10",
-      "targetDate": "2026-06-30",
-      "status": "verzoegert",
-      "delay": "Beispiel: Zieltermin im Seed bereits überschritten, Status deshalb verzögert.",
-      "note": "Beispieldaten. Kein wörtliches Zitat.",
-      "example": true,
+      "promise": "Unbeaufsichtigtes FSD für Kundenfahrzeuge etwa im zweiten Quartal 2027; ab dann auch spürbarer finanzieller Effekt des Robotaxi-Geschäfts.",
+      "promisedOn": "2026-10-21",
+      "targetDate": "2027-06-30",
+      "status": "offen",
+      "delay": null,
+      "note": "Tesla hat ähnliche Ziele seit Jahren verschoben – siehe den Eintrag zur Robotaxi-Million für 2020.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Versprechen",
-          "url": "https://example.com/beispieldaten/prm-robotaxi"
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
         }
       ]
     },
     {
-      "id": "prm-optimus",
+      "id": "prm-fsd-eu",
+      "who": "Tesla Europe",
+      "company": "Tesla",
+      "promise": "Tesla Europe stellte am 1. September 2026 auf X eine EU-weite Abstimmung über FSD (Supervised) für den 6. Oktober 2026 in Aussicht.",
+      "promisedOn": "2026-09-01",
+      "targetDate": "2026-10-06",
+      "status": "verfehlt",
+      "delay": "Am 6. Oktober stand nur eine Diskussion auf der Tagesordnung, keine Abstimmung. Frühester neuer Termin: Dezember 2026; Musk wäre überrascht, wenn es später als Q1 2027 wird.",
+      "note": "Schon vorher gerissen: Niederlande-Zulassung „Februar 2026“ (kam am 10. April) und Musks „EU-weit bis Sommer 2026“.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Electrek: EU-Abstimmung zu Tesla FSD frühestens im Dezember",
+          "url": "https://electrek.co/2026/09/25/eu-delays-tesla-fsd-vote-december-tcmv-agenda/"
+        },
+        {
+          "title": "RDW: Änderungen an Teslas Fahrassistenz genehmigt",
+          "url": "https://www.rdw.nl/en/news/2026/rdw-approves-changes-to-tesla-driver-assistance-system"
+        },
+        {
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+        }
+      ]
+    },
+    {
+      "id": "prm-robotaxi-2020",
       "who": "Elon Musk",
       "company": "Tesla",
-      "promise": "Beispiel: Optimus sollte in eigener Fabrik einfache Arbeit übernehmen.",
-      "promisedOn": "2025-01-15",
+      "promise": "Über eine Million Tesla-Robotaxis sollten 2020 auf der Straße sein (Aussage vom April 2019).",
+      "promisedOn": "2019-04-22",
+      "targetDate": "2020-12-31",
+      "status": "verfehlt",
+      "delay": "Auch sechs Jahre später fahren Robotaxis nur in einigen US-Städten und in kleiner Zahl.",
+      "note": "Wichtig als Maßstab für heutige Termine.",
+      "example": false,
+      "sources": [
+        {
+          "title": "CNBC (22.04.2019): Musk kündigt Robotaxis für 2020 an",
+          "url": "https://www.cnbc.com/2019/04/22/elon-musk-says-tesla-robotaxis-will-hit-the-market-next-year.html"
+        },
+        {
+          "title": "The Drive: Tesla verspricht eine Million Robotaxis bis 2020",
+          "url": "https://www.thedrive.com/tech/27605/tesla-network-promises-one-million-robotaxis-on-the-road-by-2020"
+        }
+      ]
+    },
+    {
+      "id": "prm-optimus-20k",
+      "who": "Tesla",
+      "company": "Tesla",
+      "promise": "Optimus wird auf einer Fremont-Linie (ausgelegt auf 1 Mio. pro Jahr) gebaut; bis etwa 20.000 Stück pro Woche dauere es mindestens ein Jahr, externe Auslieferungen etwa Ende 2027.",
+      "promisedOn": "2026-10-21",
       "targetDate": "2027-12-31",
       "status": "offen",
       "delay": null,
-      "note": "Beispieldaten.",
-      "example": true,
+      "note": "Echte Stückzahlen veröffentlicht Tesla bisher nicht.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Versprechen",
-          "url": "https://example.com/beispieldaten/prm-optimus"
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
         }
       ]
     },
     {
-      "id": "prm-mars",
-      "who": "Elon Musk",
-      "company": "SpaceX",
-      "promise": "Beispiel: Ein unbemanntes Mars-Fenster wurde früh genannt und später geschoben.",
-      "promisedOn": "2016-09-27",
-      "targetDate": "2026-12-31",
-      "status": "verzoegert",
-      "delay": "Beispiel: Mehrfach verschoben. Der Eintrag zeigt nur das Muster, keine historische Recherche.",
-      "note": "Beispieldaten.",
-      "example": true,
+      "id": "prm-terafab",
+      "who": "Tesla",
+      "company": "Tesla",
+      "promise": "Terafab soll in der ersten Hälfte 2027 in Betrieb gehen und etwa Mai/Juni 2027 einen ersten Testchip liefern; Volumen etwa ab Q3 2028.",
+      "promisedOn": "2026-10-21",
+      "targetDate": "2027-06-30",
+      "status": "offen",
+      "delay": null,
+      "note": "Wie sich Tesla und SpaceX die Kosten teilen, ist noch offen.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Versprechen",
-          "url": "https://example.com/beispieldaten/prm-mars"
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+        }
+      ]
+    },
+    {
+      "id": "prm-grok5",
+      "who": "Elon Musk",
+      "company": "SpaceX (SI, ehemals xAI)",
+      "promise": "Grok 5 soll vor Ende 2026 erscheinen.",
+      "promisedOn": "2026-08-04",
+      "targetDate": "2026-12-31",
+      "status": "offen",
+      "delay": null,
+      "note": "Aktuell ist Grok 4.7; Prognosemärkte sahen zuletzt nur etwa 12 % für 2026.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Unloc: Grok 5 – Stand und Aussagen zum Termin",
+          "url": "https://unloc.tools/resource/grok-5"
+        },
+        {
+          "title": "SpaceX SI Docs: Release Notes",
+          "url": "https://docs.x.ai/developers/release-notes"
+        }
+      ]
+    },
+    {
+      "id": "prm-neutron-2026",
+      "who": "Rocket Lab",
+      "company": "Rocket Lab",
+      "promise": "Neutron sollte nach der Vorstellung 2021 im Jahr 2024 erstmals fliegen; zuletzt war Ende 2026 das Ziel.",
+      "promisedOn": "2021-03-01",
+      "targetDate": "2026-12-31",
+      "status": "verzoegert",
+      "delay": "Mehrfach verschoben: 2025, Anfang 2026, Ende 2026 und am 13./14.10.2026 auf 2027. Ein neues Datum will Rocket Lab erst nach Tests im ersten Quartal 2027 nennen.",
+      "note": "Ankündigung im März 2021. Die Aktie fiel nach der jüngsten Verschiebung am Folgetag um 6,6 %.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Space.com: Rocket Lab verschiebt Neutron auf 2027",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/rocket-lab-pushes-1st-launch-of-next-gen-neutron-rocket-to-2027"
+        },
+        {
+          "title": "Rocket Lab: Neutron-Update, Erststart jetzt 2027",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+        }
+      ]
+    },
+    {
+      "id": "prm-music-city-loop",
+      "who": "Tennessee (Gouverneur Bill Lee) und The Boring Company",
+      "company": "The Boring Company",
+      "promise": "Der erste Abschnitt des Music City Loop in Nashville sollte „schon im Herbst 2026“ fahren (Ankündigung 28. Juli 2025).",
+      "promisedOn": "2025-07-28",
+      "targetDate": "2026-11-30",
+      "status": "verzoegert",
+      "delay": "Im Februar 2026 auf „Ende 2026“ verschoben; die aktuellen Projektunterlagen nennen kein Eröffnungsdatum mehr.",
+      "note": "Gebohrt wird laut Boring Company in Nashville bereits.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Loop Nashville: Eröffnungstermin des Music City Loop unklar",
+          "url": "https://loopnashville.com/music-city-loop-opening-date-timeline-2026-2027"
+        },
+        {
+          "title": "The Boring Company: Music City Loop",
+          "url": "https://boringcompany.com/projects/music-city-loop"
+        },
+        {
+          "title": "@boringcompany auf X: Fernsteuerung der Bohrmaschinen",
+          "url": "https://x.com/boringcompany/status/2115587065282982342"
         }
       ]
     }

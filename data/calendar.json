@@ -1,34 +1,11 @@
 {
-  "example": true,
+  "example": false,
   "events": [
     {
-      "id": "evt-tesla-lieferungen",
-      "title": "Tesla-Lieferzahlen (Beispiel)",
+      "id": "evt-starship-flight15",
+      "title": "Starship Flight 15: erster Versuch, Booster und Schiff zu fangen (frühestens 12. Nov.)",
       "date": "2026-11-12",
-      "time": "15:30",
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "lieferungen",
-      "company": "Tesla",
-      "tickers": [
-        "TSLA"
-      ],
-      "probabilityPct": 85,
-      "impact": "hoch",
-      "reasoning": "Beispiel: Lieferzahlen bewegen TSLA oft stärker als einzelne Posts. Der Termin ist ein Platzhalter, keine bestätigte Uhrzeit.",
-      "example": true,
-      "sources": [
-        {
-          "title": "Beispieldaten Kalender",
-          "url": "https://example.com/beispieldaten/evt-tesla-lieferungen"
-        }
-      ]
-    },
-    {
-      "id": "evt-starship",
-      "title": "Starship-Testflug (Beispiel)",
-      "date": "2026-12-09",
-      "time": "14:00",
+      "time": null,
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -36,132 +13,715 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 55,
+      "probabilityPct": 45,
       "impact": "hoch",
-      "reasoning": "Beispiel: Ein Test kann klappen und den Kurs trotzdem kaum bewegen, oder er rutscht. Die Wahrscheinlichkeit im Seed ist erfunden.",
-      "example": true,
+      "reasoning": "Beide Stufen haben ihre Static Fires hinter sich (Booster 22 am 25.10., Ship 42 am 27.10.). Musk sagte am 20.10. im Q3-Webcast, Flight 15 komme „nächsten Monat“, und nannte einen Erfolg der beiden Fänge „eher wahrscheinlich als nicht“. Ein offizielles Datum gibt es nicht: der 12.11. stammt nur von einer FAA-Planungsfolie, und die FAA-Lizenz mit Rückkehr über Land und Turmfang ist noch nicht veröffentlicht. Ein früheres Ziel (19.10.) ist schon gerissen. Meine 45 % gelten für einen Start bis 30. November; bis Jahresende sehe ich etwa 75 %. Vorsicht beim Kurs: Nach Flight 13 und Flight 14 schloss SPCX am Reaktionstag jeweils im Minus (−1,4 % und −2,2 %), obwohl beide Flüge weitgehend gelangen.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Kalender",
-          "url": "https://example.com/beispieldaten/evt-starship"
+          "title": "The Space Road: Wann startet Starship Flight 15?",
+          "url": "https://thespaceroad.com/articles/when-is-starship-flight-15/"
+        },
+        {
+          "title": "Ars Technica: SpaceX will bei Flight 15 beide Stufen fangen",
+          "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
+        },
+        {
+          "title": "Space.com: Ship 42 Static Fire vor Flight 15",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-starship-upper-stage-ahead-of-landmark-flight-15-test-launch-video"
+        },
+        {
+          "title": "Next Spaceflight: Starship Flight 15",
+          "url": "https://www.nextspaceflight.com/starship/"
+        },
+        {
+          "title": "FAA: SpaceX Starship Super Heavy Projekt Boca Chica",
+          "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
+        },
+        {
+          "title": "Yahoo Finance: SPCX historische Kurse",
+          "url": "https://finance.yahoo.com/quote/SPCX/history/"
         }
       ]
     },
     {
-      "id": "evt-spcx-zahlen",
-      "title": "SpaceX-Geschäftszahlen (Beispiel)",
-      "date": "2027-02-04",
-      "time": "22:00",
+      "id": "evt-spcx-lockup-180",
+      "title": "SPCX: Ende der 180-Tage-Haltefrist (bis zu 797,6 Mio. Aktien frei)",
+      "date": "2026-12-08",
+      "time": null,
       "timezone": "Europe/Berlin",
       "kind": "company",
-      "category": "earnings",
+      "category": "lockup",
       "company": "SpaceX",
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 60,
+      "probabilityPct": 95,
       "impact": "hoch",
-      "reasoning": "Beispiel: Nach dem Börsengang am 12. Juni 2026 wären Quartalszahlen ein eigener Preistreiber. Datum hier nur zur Ansicht.",
-      "example": true,
+      "reasoning": "Das Datum folgt aus der Lock-up-Tabelle im Börsenprospekt (180 Tage ab 11.06.2026), deshalb hohe Sicherheit. Bis zu 797,6 Mio. zusätzliche Aktien werden verkaufbar – bei einem Streubesitz, der zum Börsengang nur rund 4,3 % betrug, ist das spürbares Angebot. Am Tag der letzten großen Freigabe nach den Q3-Zahlen (22.10.) fiel SPCX um 9,1 %, wobei dort auch die Gegenbewegung nach dem Zahlen-Sprung mitspielte. Musks rund 6,4 Mrd. Aktien bleiben bis 12.06.2027 gesperrt.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Kalender",
-          "url": "https://example.com/beispieldaten/evt-spcx-zahlen"
+          "title": "StockCar: SPCX-Lockup-Kalender (aus dem 424B4-Prospekt)",
+          "url": "https://www.stockcar.app/insights/spacex-lockup-schedule"
+        },
+        {
+          "title": "StockAnalysis: SPCX Kurshistorie",
+          "url": "https://stockanalysis.com/stocks/spcx/history/"
         }
       ]
     },
     {
-      "id": "evt-fed",
-      "title": "Fed-Zinsentscheid (Beispiel)",
-      "date": "2026-11-18",
-      "time": "20:00",
+      "id": "evt-starship-florida",
+      "title": "Erster Starship-Start aus Florida (SpaceX: „Ende 2026 oder Anfang 2027“)",
+      "date": "2027-01-31",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "start",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 15,
+      "impact": "mittel",
+      "reasoning": "Spaceflight Now berichtet, SpaceX plane den ersten Starship-Start aus Florida für Ende dieses oder Anfang nächsten Jahres; drei Rampen sind dort im Bau. Ich setze nur 15 % für einen Start bis Ende Januar, weil Flight 15 in Texas noch aussteht und neue Rampen fast immer länger brauchen als angekündigt. Das Datum hier ist das Ende meines Betrachtungsfensters, kein angekündigter Termin.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Spaceflight Now: Starship Flight 14 erreicht den Orbit (28.09.2026)",
+          "url": "https://spaceflightnow.com/2026/09/28/starship-returns-to-earth-rocket-splashes-down-north-of-hawaii-after-three-hour-flight/"
+        }
+      ]
+    },
+    {
+      "id": "evt-grok5",
+      "title": "SpaceX SI: Grok 5 (Musk: „vor Jahresende“)",
+      "date": "2026-12-31",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "produkt",
+      "company": "SpaceX (SI, ehemals xAI)",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 15,
+      "impact": "mittel",
+      "reasoning": "Musk sagte am 4. August, Grok 5 solle vor Ende 2026 kommen. Aktuell ist Grok 4.7 (21.09.) das neueste Modell, die offiziellen Release Notes nennen kein Grok 5, und laut Bericht stehen 4.8 und 4.9 davor in der Reihe. Prognosemärkte lagen zuletzt bei rund 12 % für eine Veröffentlichung bis 31.12. Ich liege mit 15 % ähnlich. Für SPCX zählt das, weil das SI-Segment im Q3 mit 7,56 Mrd. US-Dollar mehr als die Hälfte des Umsatzes brachte.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Unloc: Grok 5 – Stand und Aussagen zum Termin",
+          "url": "https://unloc.tools/resource/grok-5"
+        },
+        {
+          "title": "SpaceX SI Docs: Release Notes",
+          "url": "https://docs.x.ai/developers/release-notes"
+        },
+        {
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        }
+      ]
+    },
+    {
+      "id": "evt-tesla-hv-2026",
+      "title": "Tesla-Hauptversammlung 2026 (Austin und online)",
+      "date": "2026-12-03",
+      "time": "22:00",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "hauptversammlung",
+      "company": "Tesla",
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 97,
+      "impact": "mittel",
+      "reasoning": "Termin offiziell: 3. Dezember, 15:00 Uhr Central Time. Auf dem Stimmzettel stehen die Wiederwahl von Musk, Denholm und Straubel, ein nicht bindendes Votum zur Vergütung 2025 und der Abschlussprüfer PwC. Kursrelevanter als die Abstimmungen sind meist Produkt-Updates auf der Bühne (Cybercab, Optimus, FSD). Nach dem Midterm-Ergebnis könnte auch die Frage nach einer Verbindung Tesla–SpaceX aufkommen.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Tesla: Hauptversammlung 2026 (votetesla.com)",
+          "url": "https://www.votetesla.com/annual-meeting-details/"
+        },
+        {
+          "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
+          "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+        }
+      ]
+    },
+    {
+      "id": "evt-cybercab-dallas",
+      "title": "Tesla: Cybercab-Fahrten in Dallas (Ziel: November)",
+      "date": "2026-11-30",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "robotaxi",
+      "company": "Tesla",
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 55,
+      "impact": "mittel",
+      "reasoning": "Im Q3-Call kündigte Tesla Cybercab-Fahrten in Dallas für „nächsten Monat“ an; in Austin fahren bereits über 300 Cybercabs. Das Datum hier ist das Monatsende als Frist, kein angekündigter Tag. Ich setze 55 %, weil Tesla bei Robotaxi-Terminen oft rutscht, der Schritt von Austin nach Dallas aber klein ist. Politisches Risiko: Nach dem Midterm-Ergebnis in Texas erwarten Beobachter mehr Aufsicht über autonome Fahrdienste.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+        },
+        {
+          "title": "Motley Fool: Tesla Q3 2026 Earnings Call Transcript",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript/"
+        },
+        {
+          "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
+          "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+        }
+      ]
+    },
+    {
+      "id": "evt-optimus-video",
+      "title": "Tesla: Optimus-Video mit nicht vorprogrammierten Aufgaben (angekündigt für „ein, zwei Monate“)",
+      "date": "2026-12-21",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "optimus",
+      "company": "Tesla",
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 50,
+      "impact": "niedrig",
+      "reasoning": "Im Q3-Call (21.10.) hieß es, ein solches Video könne in den nächsten ein bis zwei Monaten kommen. Der 21.12. ist das Ende dieser Spanne, kein festes Datum. Kursrelevant ist ein Video selten; wichtiger ist, ob die Fremont-Linie wie angekündigt hochfährt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+        }
+      ]
+    },
+    {
+      "id": "evt-cybercab-kunden",
+      "title": "Tesla: erste Cybercab-Auslieferungen an Kunden (Ziel: Ende 2026)",
+      "date": "2026-12-31",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "robotaxi",
+      "company": "Tesla",
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 35,
+      "impact": "mittel",
+      "reasoning": "Tesla will die ersten Cybercabs bis Ende 2026 an Kunden ausliefern, klein anfangen und dann hochfahren. Bisher ging jedes gebaute Cybercab in die eigene Robotaxi-Flotte. Ich setze nur 35 %, weil Tesla solche Jahresend-Ziele häufig verfehlt und die Auslieferung an Kunden neue Regulierungs- und Haftungsfragen aufwirft.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+        }
+      ]
+    },
+    {
+      "id": "evt-tesla-q4-auslieferungen",
+      "title": "Tesla: Auslieferungen Q4 2026",
+      "date": "2027-01-02",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "lieferungen",
+      "company": "Tesla",
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 80,
+      "impact": "hoch",
+      "reasoning": "Tesla hat in den letzten zwölf Quartalen die Zahlen jeweils am zweiten Tag des Folgequartals veröffentlicht. Der 2. Januar 2027 ist ein Samstag, daher nur 80 % für genau diesen Tag. Zum Vergleich: Q3 brachte 486.532 Auslieferungen und die Aktie stieg am Tag um 4,7 %; im Q2 fiel sie trotz deutlichem Übertreffen der Schätzung um 7,5 %. Die Reaktion hängt also an Marge und Erwartung, nicht nur an der Stückzahl.",
+      "example": false,
+      "sources": [
+        {
+          "title": "TradingCalendar: Tesla-Auslieferungen je Quartal",
+          "url": "https://www.tradingcalendar.com/tesla-deliveries-production"
+        },
+        {
+          "title": "Tesla IR: Produktion und Auslieferungen Q3 2026",
+          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+        },
+        {
+          "title": "CNBC: Tesla Q3-2026-Auslieferungen",
+          "url": "https://www.cnbc.com/2026/10/02/tesla-tsla-q3-2026-vehicle-delivery-production.html"
+        },
+        {
+          "title": "Motley Fool: Tesla schlägt Auslieferungsschätzung und fällt trotzdem",
+          "url": "https://www.fool.com/investing/2026/07/03/tesla-beat-delivery-estimates-by-74000-vehicles-an/"
+        },
+        {
+          "title": "Yahoo Finance: TSLA historische Kurse",
+          "url": "https://finance.yahoo.com/quote/TSLA/history/"
+        }
+      ]
+    },
+    {
+      "id": "evt-escapade-tmi",
+      "title": "Rocket Lab / NASA ESCAPADE: Mars-Einschussmanöver (Blue am 7.11., Gold am 9.11.)",
+      "date": "2026-11-07",
+      "time": "10:51",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "mission",
+      "company": "Rocket Lab",
+      "tickers": [
+        "RKLB"
+      ],
+      "probabilityPct": 85,
+      "impact": "niedrig",
+      "reasoning": "Die beiden von Rocket Lab gebauten Sonden zünden bei einem Vorbeiflug an der Erde ihre Triebwerke Richtung Mars (Blue ab 4:51 Uhr EST am 7.11., Gold ab 5:51 Uhr EST am 9.11.). Ein Gelingen ist gute Werbung für das Raumfahrzeug-Geschäft, bewegt den Kurs aber kaum; ein Fehlschlag wäre ein Imageschaden kurz vor den Q3-Zahlen.",
+      "example": false,
+      "sources": [
+        {
+          "title": "NASA: ESCAPADE-Zwillinge schwingen an der Erde vorbei Richtung Mars",
+          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+        },
+        {
+          "title": "Rocket Lab auf X: ESCAPADE vor dem Manöver",
+          "url": "https://x.com/RocketLab/status/2117448175271501907"
+        }
+      ]
+    },
+    {
+      "id": "evt-rklb-q3",
+      "title": "Rocket Lab: Q3-2026-Zahlen und Call",
+      "date": "2026-11-09",
+      "time": "23:00",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "earnings",
+      "company": "Rocket Lab",
+      "tickers": [
+        "RKLB"
+      ],
+      "probabilityPct": 97,
+      "impact": "hoch",
+      "reasoning": "Offiziell angekündigt: Veröffentlichung nach US-Börsenschluss am Montag, 9.11., Call um 17:00 Uhr ET (23:00 Uhr bei uns). Im Fokus: Auftragsbestand (Q2: Rekord 2,36 Mrd. US-Dollar), Marge und der neue Neutron-Fahrplan, nachdem der Erststart am 14.10. auf 2027 verschoben wurde (Aktie am Folgetag −6,6 %). Nach den Q2-Zahlen bewegte sich der Kurs am Folgetag kaum (−0,04 %), nachbörslich lag er zeitweise 7 % im Minus.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Rocket Lab: Termin der Q3-2026-Zahlen (GlobeNewswire)",
+          "url": "https://www.globenewswire.com/news-release/2026/10/20/3385004/0/en/rocket-lab-announces-date-of-third-quarter-2026-financial-results.html"
+        },
+        {
+          "title": "Rocket Lab IR: Q3-2026-Call",
+          "url": "https://investors.rocketlabcorp.com/events/event-details/third-quarter-2026-financial-results-update-and-conference-call"
+        },
+        {
+          "title": "Rocket Lab: Neutron-Update, Erststart jetzt 2027",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+        },
+        {
+          "title": "Rocket Lab: Ergebnisse Q2 2026",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts"
+        },
+        {
+          "title": "Yahoo Finance: RKLB historische Kurse",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        }
+      ]
+    },
+    {
+      "id": "evt-us-jobs-okt",
+      "title": "USA: Arbeitsmarktbericht Oktober",
+      "date": "2026-11-06",
+      "time": "14:30",
       "timezone": "Europe/Berlin",
       "kind": "external",
-      "category": "zins",
+      "category": "makro",
       "company": null,
       "tickers": [
         "SPCX",
         "TSLA",
         "RKLB"
       ],
-      "probabilityPct": 90,
-      "impact": "hoch",
-      "reasoning": "Beispiel: Zinsen ändern, wie teuer Wachstum in der Ferne bewertet wird. Trifft Tesla oft direkt, SpaceX über die Stimmung zu Wachstumswerten.",
-      "example": true,
+      "probabilityPct": 95,
+      "impact": "mittel",
+      "reasoning": "Termin vom Bureau of Labor Statistics. Starke oder schwache Zahlen verschieben die Zinserwartung vor der Fed-Sitzung am 9.12.; wachstumsstarke, teure Aktien wie SPCX, TSLA und RKLB reagieren darauf meist stärker als der Gesamtmarkt.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Kalender",
-          "url": "https://example.com/beispieldaten/evt-fed"
+          "title": "BLS: Termine Arbeitsmarktbericht",
+          "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
         }
       ]
     },
     {
-      "id": "evt-zoll",
-      "title": "Zoll-Schlagzeile USA–China (Beispiel)",
-      "date": "2026-11-08",
-      "time": null,
+      "id": "evt-us-cpi-okt",
+      "title": "USA: Verbraucherpreise (CPI) Oktober",
+      "date": "2026-11-10",
+      "time": "14:30",
       "timezone": "Europe/Berlin",
       "kind": "external",
-      "category": "zoll",
+      "category": "makro",
       "company": null,
       "tickers": [
-        "TSLA"
+        "SPCX",
+        "TSLA",
+        "RKLB"
       ],
-      "probabilityPct": 35,
+      "probabilityPct": 95,
       "impact": "mittel",
-      "reasoning": "Beispiel: Zölle können Teile, Preise und Nachfrage treffen. Ob an diesem Tag etwas kommt, ist im Seed offen gelassen.",
-      "example": true,
+      "reasoning": "Offizieller BLS-Termin. Die Inflationszahl ist neben dem Arbeitsmarkt der wichtigste Datenpunkt vor der Dezember-Sitzung der Fed. Ölpreis und Zölle sind dabei die Treiber, die man im Blick behalten sollte.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Kalender",
-          "url": "https://example.com/beispieldaten/evt-zoll"
+          "title": "BLS: Termine Verbraucherpreisindex",
+          "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
         }
       ]
     },
     {
-      "id": "evt-gericht",
-      "title": "Anhörung Regulierung Autopilot (Beispiel)",
-      "date": "2026-11-20",
-      "time": "16:00",
+      "id": "evt-nvda-q3",
+      "title": "NVIDIA: Zahlen Q3 (Geschäftsjahr 2027)",
+      "date": "2026-11-17",
+      "time": "23:00",
       "timezone": "Europe/Berlin",
       "kind": "external",
-      "category": "gericht",
-      "company": null,
-      "tickers": [
-        "TSLA"
-      ],
-      "probabilityPct": 40,
-      "impact": "mittel",
-      "reasoning": "Beispiel: Ein Gerichtstermin kann die Stimmung zu Fahrassistenz drehen, auch wenn das Urteil später kommt.",
-      "example": true,
-      "sources": [
-        {
-          "title": "Beispieldaten Kalender",
-          "url": "https://example.com/beispieldaten/evt-gericht"
-        }
-      ]
-    },
-    {
-      "id": "evt-wahl",
-      "title": "Wahltermin mit Wirkung auf Aufträge (Beispiel)",
-      "date": "2026-11-03",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "wahl",
-      "company": null,
+      "category": "earnings",
+      "company": "NVIDIA",
       "tickers": [
         "SPCX",
         "TSLA"
       ],
-      "probabilityPct": 70,
+      "probabilityPct": 97,
       "impact": "mittel",
-      "reasoning": "Beispiel: Staatsaufträge und Förderung hängen an Mehrheiten. Der Eintrag zeigt nur die Kategorie.",
-      "example": true,
+      "reasoning": "Offiziell: nach US-Börsenschluss, Call um 14:00 Uhr Pacific. Für uns relevant, weil SpaceX mit dem SI-Segment (Rechenzentren, Grok, Cursor) inzwischen ein großer KI-Infrastruktur-Käufer ist und Tesla für Training ebenfalls. Die Nasdaq-100 war Ende Oktober in eine Korrektur gerutscht, weil Zweifel an den KI-Investitionen wuchsen.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Kalender",
-          "url": "https://example.com/beispieldaten/evt-wahl"
+          "title": "NVIDIA: Termin Q3-Zahlen Geschäftsjahr 2027",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx"
+        },
+        {
+          "title": "CNBC: SpaceX und Tesla fallen nach Demokraten-Sieg (04.11.2026)",
+          "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html"
+        },
+        {
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        }
+      ]
+    },
+    {
+      "id": "evt-faa-starbase-anhoerung",
+      "title": "FAA: Online-Anhörungen zu bis zu 100 (später 456) Starship-Starts pro Jahr ab Starbase",
+      "date": "2026-11-17",
+      "time": "20:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "regulierung",
+      "company": "FAA",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 90,
+      "impact": "niedrig",
+      "reasoning": "Die FAA hat die Anhörungen am 17., 18. und 19. November komplett online verlegt und die Kommentarfrist bis 7. Dezember verlängert. Das ist der Start eines langen Umweltverfahrens (Programmatic EIS), keine Genehmigung. Kurzfristig kaum kursrelevant, langfristig entscheidet es über die Startkadenz, die Musk für 2027 verspricht.",
+      "example": false,
+      "sources": [
+        {
+          "title": "FAA: SpaceX Starship Super Heavy Projekt Boca Chica",
+          "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
+        }
+      ]
+    },
+    {
+      "id": "evt-us-jobs-nov",
+      "title": "USA: Arbeitsmarktbericht November",
+      "date": "2026-12-04",
+      "time": "14:30",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "makro",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 95,
+      "impact": "mittel",
+      "reasoning": "Offizieller BLS-Termin, fünf Tage vor der Fed-Entscheidung.",
+      "example": false,
+      "sources": [
+        {
+          "title": "BLS: Termine Arbeitsmarktbericht",
+          "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
+        }
+      ]
+    },
+    {
+      "id": "evt-fomc-dez",
+      "title": "Fed: Zinsentscheid mit Projektionen",
+      "date": "2026-12-09",
+      "time": "20:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "zinsen",
+      "company": "Federal Reserve",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 98,
+      "impact": "hoch",
+      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Federal Reserve: FOMC-Sitzungskalender",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "id": "evt-us-cpi-nov",
+      "title": "USA: Verbraucherpreise (CPI) November",
+      "date": "2026-12-10",
+      "time": "14:30",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "makro",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 95,
+      "impact": "mittel",
+      "reasoning": "Offizieller BLS-Termin, einen Tag nach der Fed.",
+      "example": false,
+      "sources": [
+        {
+          "title": "BLS: Termine Verbraucherpreisindex",
+          "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+        }
+      ]
+    },
+    {
+      "id": "evt-us-shutdown-risiko",
+      "title": "USA: Übergangshaushalt läuft am 11. Dezember aus (Risiko Regierungsstillstand)",
+      "date": "2026-12-11",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "politik",
+      "company": "US-Kongress",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 25,
+      "impact": "mittel",
+      "reasoning": "Die Regierung ist per Übergangsgesetz nur bis 11. Dezember finanziert. Die 25 % sind meine Schätzung, dass es tatsächlich zu einem Stillstand kommt: Der alte Kongress sitzt noch bis Januar, die Demokraten haben nach ihrem Sieg wenig Grund zu Zugeständnissen, aber kurze Übergangslösungen sind die Regel. Ein Stillstand würde Behörden bremsen, die für uns zählen: FAA-Lizenzen (Starship), SEC und Konjunkturdaten.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Congress.gov (CRS): Übergangshaushalt FY2027 bis 11. Dezember",
+          "url": "https://www.congress.gov/crs-product/R49353"
+        },
+        {
+          "title": "Holland & Knight: Fristen des Kongresses zum Jahresende",
+          "url": "https://www.hklaw.com/en/insights/publications/2026/10/beyond-the-midterms-congress-faces-converging-year-end-deadlines"
+        }
+      ]
+    },
+    {
+      "id": "evt-ezb-dez",
+      "title": "EZB: Zinsentscheid",
+      "date": "2026-12-17",
+      "time": "14:15",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "zinsen",
+      "company": "EZB",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 98,
+      "impact": "niedrig",
+      "reasoning": "Für die Firmen selbst nebensächlich, für dich als Euro-Anleger nicht: Der Euro-Dollar-Kurs verändert den Euro-Wert deiner US-Aktien bei Trade Republic, auch wenn der Dollar-Kurs gleich bleibt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "EZB: Sitzungskalender des EZB-Rats",
+          "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+        }
+      ]
+    },
+    {
+      "id": "evt-eu-tcmv-fsd",
+      "title": "EU-Fahrzeugausschuss (TCMV): mögliche Abstimmung über Teslas „Assisted Driving“ (Dezember, Datum offen)",
+      "date": "2026-12-31",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "regulierung",
+      "company": "EU-Kommission",
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 20,
+      "impact": "mittel",
+      "reasoning": "Die nächste TCMV-Sitzung ist für Dezember angekündigt, ein Datum und eine Abstimmung auf der Tagesordnung gibt es noch nicht. Für eine EU-weite Zulassung braucht es 15 von 27 Staaten mit 65 % der Bevölkerung; Frankreich lehnt bisher ab, Deutschland, Italien und Spanien haben nicht anerkannt. Tesla hat das System umbenannt und den Tempo-Spielraum auf 10 % gesenkt, um Bedenken auszuräumen. Meine 20 % gelten für eine Zustimmung bis Jahresende.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Electrek: EU-Abstimmung zu Tesla FSD frühestens im Dezember",
+          "url": "https://electrek.co/2026/09/25/eu-delays-tesla-fsd-vote-december-tcmv-agenda/"
+        },
+        {
+          "title": "RDW: Änderungen an Teslas Fahrassistenz genehmigt",
+          "url": "https://www.rdw.nl/en/news/2026/rdw-approves-changes-to-tesla-driver-assistance-system"
+        },
+        {
+          "title": "Electrek: Tesla senkt Tempo-Spielraum in Europa auf 10 %",
+          "url": "https://electrek.co/2026/11/03/tesla-assisted-driving-rdw-speed-cap-10-percent-europe/"
+        }
+      ]
+    },
+    {
+      "id": "evt-neuer-kongress",
+      "title": "Neuer US-Kongress mit demokratischen Mehrheiten tritt zusammen",
+      "date": "2027-01-03",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "politik",
+      "company": "US-Kongress",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "probabilityPct": 90,
+      "impact": "mittel",
+      "reasoning": "Nach der Verfassung beginnt die neue Legislatur am 3. Januar, sofern der Kongress per Gesetz keinen anderen Tag festlegt. Demokraten haben angekündigt, Musks Rolle als Regierungsauftragnehmer prüfen zu wollen; Beobachter sehen auch Hürden für eine mögliche Verbindung von Tesla und SpaceX.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
+          "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+        },
+        {
+          "title": "US-Verfassung, 20. Zusatzartikel",
+          "url": "https://constitution.congress.gov/constitution/amendment-20/"
+        }
+      ]
+    },
+    {
+      "id": "evt-us-jobs-dez",
+      "title": "USA: Arbeitsmarktbericht Dezember",
+      "date": "2027-01-08",
+      "time": "14:30",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "makro",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 95,
+      "impact": "niedrig",
+      "reasoning": "Offizieller BLS-Termin.",
+      "example": false,
+      "sources": [
+        {
+          "title": "BLS: Termine Arbeitsmarktbericht",
+          "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
+        }
+      ]
+    },
+    {
+      "id": "evt-us-cpi-dez",
+      "title": "USA: Verbraucherpreise (CPI) Dezember",
+      "date": "2027-01-13",
+      "time": "14:30",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "makro",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 95,
+      "impact": "niedrig",
+      "reasoning": "Offizieller BLS-Termin.",
+      "example": false,
+      "sources": [
+        {
+          "title": "BLS: Termine Verbraucherpreisindex",
+          "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+        }
+      ]
+    },
+    {
+      "id": "evt-fomc-jan",
+      "title": "Fed: Zinsentscheid",
+      "date": "2027-01-27",
+      "time": "20:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "zinsen",
+      "company": "Federal Reserve",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 95,
+      "impact": "mittel",
+      "reasoning": "Sitzung am 26./27. Januar laut Fed-Kalender. In dieselben Wochen fallen voraussichtlich die Q4-Zahlen von Tesla und SpaceX; deren Termine sind noch nicht veröffentlicht und stehen deshalb nicht im Kalender.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Federal Reserve: FOMC-Sitzungskalender",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "id": "evt-s232-robotik",
+      "title": "Zölle: Zwischenbericht zu den Section-232-Verhandlungen über Robotik und Industriemaschinen",
+      "date": "2027-04-26",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "zoelle",
+      "company": "US-Regierung",
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 85,
+      "impact": "niedrig",
+      "reasoning": "Die Untersuchung endete ohne Zölle; stattdessen sollen Verhandlungen laufen, mit Bericht nach 180 Tagen. Danach sind Zölle, Quoten oder Gebühren möglich. Für Tesla zählt das bei Maschinen für Optimus- und Cybercab-Linien. Liegt außerhalb der drei Monate, steht hier als Frühwarnung.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Trade Law Counsel: Section-232-Verhandlungen zu Robotik, keine Zölle",
+          "url": "https://www.tradelawcounsel.com/insights-news/2026/11/2/president-directs-section-232-negotiations-on-robotics-and-industrial-machinery-imports-no-tariffs-imposed"
         }
       ]
     }

@@ -1,136 +1,202 @@
 {
-  "example": true,
+  "example": false,
   "asOf": "2026-11-04",
   "investors": [
     {
-      "id": "inv-orbit",
-      "name": "Ada Orbit",
-      "handle": "@adaorbit",
-      "hitRatePct": 58,
-      "hitRateHistory": [
-        {
-          "date": "2026-06",
-          "hitRatePct": 49
-        },
-        {
-          "date": "2026-08",
-          "hitRatePct": 53
-        },
-        {
-          "date": "2026-10",
-          "hitRatePct": 58
-        }
-      ],
+      "id": "inv-sawyermerritt",
+      "name": "Sawyer Merritt",
+      "handle": "@SawyerMerritt",
+      "hitRatePct": null,
+      "hitRateHistory": [],
       "tickers": [
         {
+          "symbol": "TSLA",
+          "mentions": 39,
+          "stance": "halten"
+        },
+        {
           "symbol": "SPCX",
-          "mentions": 14,
-          "stance": "kauf"
+          "mentions": 28,
+          "stance": "halten"
         },
         {
           "symbol": "RKLB",
-          "mentions": 6,
+          "mentions": 0,
           "stance": "beobachten"
         }
       ],
-      "note": "Beispielperson, kein echtes Konto.",
-      "example": true,
+      "note": "Bezeichnet sich im Profil selbst als TSLA- und SPCX-Investor, postet vor allem Neuigkeiten, selten Kursziele. Haltung daher „halten“ aus seiner eigenen Angabe, nicht aus einer Empfehlung. Trefferquote: unbekannt, Tracking gestartet am 04.11.2026. Zählung: Posts der letzten 7 Tage (28.10.–04.11.2026, 22:07 Uhr) über die X-Suche mit Stichworten, nicht mit Cashtags. Grobe Größe, keine exakte Statistik.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Schwarm",
-          "url": "https://example.com/beispieldaten/inv-orbit"
+          "title": "@SawyerMerritt auf X",
+          "url": "https://x.com/SawyerMerritt"
         }
       ]
     },
     {
-      "id": "inv-volt",
-      "name": "Ben Volt",
-      "handle": "@benvolt",
-      "hitRatePct": 51,
-      "hitRateHistory": [
-        {
-          "date": "2026-06",
-          "hitRatePct": 55
-        },
-        {
-          "date": "2026-08",
-          "hitRatePct": 52
-        },
-        {
-          "date": "2026-10",
-          "hitRatePct": 51
-        }
-      ],
+      "id": "inv-garyblack",
+      "name": "Gary Black (The Future Fund)",
+      "handle": "@garyblack00",
+      "hitRatePct": null,
+      "hitRateHistory": [],
       "tickers": [
         {
           "symbol": "TSLA",
-          "mentions": 19,
-          "stance": "kauf"
+          "mentions": 23,
+          "stance": "beobachten"
         },
         {
           "symbol": "SPCX",
-          "mentions": 4,
-          "stance": "halten"
+          "mentions": 12,
+          "stance": "beobachten"
         }
       ],
-      "note": "Beispielperson, kein echtes Konto.",
-      "example": true,
+      "note": "Fondsmanager, mag Teslas Geschäft, hält die Bewertung aber für zu hoch und sieht einen Aufschlag für eine Fusion Tesla–SpaceX skeptisch. Trefferquote: unbekannt, Tracking gestartet am 04.11.2026. Zählung: Posts der letzten 7 Tage (28.10.–04.11.2026, 22:07 Uhr) über die X-Suche mit Stichworten, nicht mit Cashtags. Grobe Größe, keine exakte Statistik.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Schwarm",
-          "url": "https://example.com/beispieldaten/inv-volt"
+          "title": "@garyblack00 auf X: Geschäft ja, Bewertung nein",
+          "url": "https://x.com/garyblack00/status/2117562102982299798"
+        },
+        {
+          "title": "@garyblack00 auf X: zur Fusionsfantasie",
+          "url": "https://x.com/garyblack00/status/2117276050333831442"
+        },
+        {
+          "title": "@garyblack00 auf X",
+          "url": "https://x.com/garyblack00/status/2117993682938871954"
         }
       ]
     },
     {
-      "id": "inv-nora",
-      "name": "Nora Kurz",
-      "handle": "@norakurz",
-      "hitRatePct": 47,
-      "hitRateHistory": [
+      "id": "inv-farzyness",
+      "name": "Farzad",
+      "handle": "@farzyness",
+      "hitRatePct": null,
+      "hitRateHistory": [],
+      "tickers": [
         {
-          "date": "2026-06",
-          "hitRatePct": 44
+          "symbol": "SPCX",
+          "mentions": 38,
+          "stance": "kauf"
         },
         {
-          "date": "2026-08",
-          "hitRatePct": 46
-        },
-        {
-          "date": "2026-10",
-          "hitRatePct": 47
+          "symbol": "TSLA",
+          "mentions": 32,
+          "stance": "halten"
         }
       ],
+      "note": "Klar optimistisch zu SpaceX („Kernkompetenz: riesige Engpässe umgehen“) und hält Tesla und SpaceX für zu wertvoll für die USA, als dass Politik ihnen schaden könne. Haltung abgeleitet aus seinen Posts, keine ausdrückliche Kaufempfehlung. Trefferquote: unbekannt, Tracking gestartet am 04.11.2026. Zählung: Posts der letzten 7 Tage (28.10.–04.11.2026, 22:07 Uhr) über die X-Suche mit Stichworten, nicht mit Cashtags. Grobe Größe, keine exakte Statistik.",
+      "example": false,
+      "sources": [
+        {
+          "title": "@farzyness auf X: SpaceX und Engpässe",
+          "url": "https://x.com/farzyness/status/2117695437666918727"
+        },
+        {
+          "title": "@farzyness auf X: zu wertvoll für Amerika",
+          "url": "https://x.com/farzyness/status/2118007062630375513"
+        }
+      ]
+    },
+    {
+      "id": "inv-cathiewood",
+      "name": "Cathie Wood (ARK Invest)",
+      "handle": "@CathieDWood",
+      "hitRatePct": null,
+      "hitRateHistory": [],
       "tickers": [
         {
           "symbol": "TSLA",
-          "mentions": 9,
-          "stance": "verkauf"
+          "mentions": 0,
+          "stance": "beobachten"
         },
         {
-          "symbol": "RKLB",
-          "mentions": 7,
-          "stance": "kauf"
+          "symbol": "SPCX",
+          "mentions": 0,
+          "stance": "beobachten"
         }
       ],
-      "note": "Beispielperson, kein echtes Konto.",
-      "example": true,
+      "note": "Bekannte Tesla-Optimistin, hat in den letzten 7 Tagen auf X aber nur 2 Posts abgesetzt, keiner zu Tesla oder SpaceX. Ohne aktuelle Aussage keine Haltung, daher „beobachten“. Trefferquote: unbekannt, Tracking gestartet am 04.11.2026. Zählung: Posts der letzten 7 Tage (28.10.–04.11.2026, 22:07 Uhr) über die X-Suche mit Stichworten, nicht mit Cashtags. Grobe Größe, keine exakte Statistik.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Schwarm",
-          "url": "https://example.com/beispieldaten/inv-nora"
+          "title": "@CathieDWood auf X",
+          "url": "https://x.com/CathieDWood"
+        }
+      ]
+    },
+    {
+      "id": "inv-gerberkawasaki",
+      "name": "Ross Gerber (Gerber Kawasaki)",
+      "handle": "@GerberKawasaki",
+      "hitRatePct": null,
+      "hitRateHistory": [],
+      "tickers": [
+        {
+          "symbol": "TSLA",
+          "mentions": 0,
+          "stance": "beobachten"
+        },
+        {
+          "symbol": "SPCX",
+          "mentions": 0,
+          "stance": "beobachten"
+        }
+      ],
+      "note": "Früher lautstark zu Tesla, in den letzten 7 Tagen rund 50 Posts, aber keiner zu Tesla oder SpaceX. Keine aktuelle Haltung ablesbar. Trefferquote: unbekannt, Tracking gestartet am 04.11.2026. Zählung: Posts der letzten 7 Tage (28.10.–04.11.2026, 22:07 Uhr) über die X-Suche mit Stichworten, nicht mit Cashtags. Grobe Größe, keine exakte Statistik.",
+      "example": false,
+      "sources": [
+        {
+          "title": "@GerberKawasaki auf X",
+          "url": "https://x.com/GerberKawasaki"
+        }
+      ]
+    },
+    {
+      "id": "inv-troyteslike",
+      "name": "Troy Teslike",
+      "handle": "@TroyTeslike",
+      "hitRatePct": null,
+      "hitRateHistory": [],
+      "tickers": [
+        {
+          "symbol": "TSLA",
+          "mentions": 0,
+          "stance": "beobachten"
+        }
+      ],
+      "note": "Bekannt für eigene Tesla-Auslieferungsschätzungen. In den letzten 7 Tagen keine Posts. Sobald er eine Q4-Schätzung veröffentlicht, lässt sie sich am 2. Januar mit Teslas echter Zahl vergleichen – das wäre die erste messbare Trefferquote. Tracking gestartet am 04.11.2026. Zählung: Posts der letzten 7 Tage (28.10.–04.11.2026, 22:07 Uhr) über die X-Suche mit Stichworten, nicht mit Cashtags. Grobe Größe, keine exakte Statistik.",
+      "example": false,
+      "sources": [
+        {
+          "title": "@TroyTeslike auf X",
+          "url": "https://x.com/TroyTeslike"
+        },
+        {
+          "title": "TradingCalendar: Tesla-Auslieferungen je Quartal",
+          "url": "https://www.tradingcalendar.com/tesla-deliveries-production"
         }
       ]
     }
   ],
   "comparison": {
-    "swarmHitRatePct": 52,
-    "karlHitRatePct": 62,
-    "summary": "Beispiel: Im Seed liegt Karl vor dem Schwarm. Das ist eine Illustration, keine Rangliste.",
+    "swarmHitRatePct": null,
+    "karlHitRatePct": null,
+    "summary": "Noch kein Vergleich möglich: Für keinen dieser Investoren gibt es eine nachprüfbare Trefferquote, und Karls Bilanz startet heute bei null. Beides wird ab dem 04.11.2026 mitgeschrieben, statt Zahlen zu erfinden.",
     "sources": [
       {
-        "title": "Beispieldaten Vergleich",
-        "url": "https://example.com/beispieldaten/schwarm-karl"
+        "title": "@SawyerMerritt auf X",
+        "url": "https://x.com/SawyerMerritt"
+      },
+      {
+        "title": "@garyblack00 auf X",
+        "url": "https://x.com/garyblack00"
+      },
+      {
+        "title": "@farzyness auf X",
+        "url": "https://x.com/farzyness"
       }
     ]
   }

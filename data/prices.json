@@ -19,7 +19,7 @@
       "venue": "Nasdaq",
       "currency": "EUR",
       "example": true,
-      "narrativeExample": true,
+      "narrativeExample": false,
       "stale": false,
       "priceEur": 128.4,
       "priceUsd": null,
@@ -409,23 +409,35 @@
         ]
       },
       "recordHighEur": 128.4,
-      "why": "Beispiel: Der Seed zeigt eine kleine Plus-Bewegung, damit die Karte nicht leer ist. Eine echte Einordnung ersetzt diesen Satz.",
+      "why": "Am 4. November fiel SPCX um 3,8 %, weil die Demokraten Kongress und Texas gewonnen haben und Anleger mehr Druck auf Musks Firmen erwarten; der Qualcomm-Deal für Starlink Mobile federte ab.",
       "whySources": [
         {
-          "title": "Beispieldaten zur Kursbewegung",
-          "url": "https://example.com/beispieldaten/why-spcx"
-        }
-      ],
-      "longTermOutlook": "Beispiel: Langfrist zählt, ob Starlink zahlt und Starship regelmäßig Nutzlast trägt. Keine Prognose.",
-      "counterArgument": "Beispiel: Ein teurer Testflug oder dünner Handel nach dem Börsengang kann den Kurs stärker bewegen als das Geschäft.",
-      "firstPrinciples": [
-        {
-          "title": "Nutzlast pro Euro",
-          "text": "Beispiel: Was kostet ein Kilo im Orbit, und wie oft fliegt dieselbe Stufe?"
+          "title": "Motley Fool: Why SpaceX Stock Is Down Today (04.11.2026)",
+          "url": "https://www.fool.com/investing/2026/11/04/why-spacex-stock-is-down-today/"
         },
         {
-          "title": "Zahlende Terminals",
-          "text": "Beispiel: Starlink zählt an Anschlüssen und Umsatz, nicht an Schlagzeilen."
+          "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
+          "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+        },
+        {
+          "title": "Yahoo Finance: SPCX historische Kurse",
+          "url": "https://finance.yahoo.com/quote/SPCX/history/"
+        }
+      ],
+      "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
+      "counterArgument": "Bei rund 1,9 Billionen US-Dollar Börsenwert ist sehr viel Erfolg eingepreist, und am 8. Dezember werden bis zu 797,6 Mio. Aktien verkaufbar.",
+      "firstPrinciples": [
+        {
+          "title": "Masse in den Orbit",
+          "text": "Wer Kilo für Kilo am billigsten ins All bringt, kann Dienste bauen, die anderen zu teuer sind. Wiederverwendbarkeit ist der Hebel: Eine Rakete, die wie ein Flugzeug wieder fliegt, kostet pro Start nur noch Treibstoff und Wartung."
+        },
+        {
+          "title": "Starlink zahlt die Rechnung",
+          "text": "Das Verbindungs-Segment brachte im Q3 5,2 Mrd. US-Dollar Umsatz. Weil SpaceX die eigenen Satelliten selbst startet, sind die Kosten pro Satellit niedriger als bei jedem Konkurrenten."
+        },
+        {
+          "title": "KI braucht Strom und Platz",
+          "text": "Das SI-Segment (Grok, Cursor, Rechenzentren) ist inzwischen der größte Umsatzblock, verschlingt aber auch die meisten Investitionen. Die These hinter „Rechenzentren im All“: Energie und Kühlung im Orbit statt in Texas."
         }
       ],
       "sources": [
@@ -442,7 +454,7 @@
       "venue": "Nasdaq",
       "currency": "EUR",
       "example": true,
-      "narrativeExample": true,
+      "narrativeExample": false,
       "stale": false,
       "priceEur": 248.1,
       "priceUsd": null,
@@ -832,23 +844,31 @@
         ]
       },
       "recordHighEur": 248.1,
-      "why": "Beispiel: Leichtes Minus im Seed, ohne echte Nachricht dahinter.",
+      "why": "Tesla fiel am 4. November um 3,3 % – das Wahlergebnis erhöht nach Einschätzung von Beobachtern die Hürden für Musks Firmen; seit Jahresbeginn liegt die Aktie rund 14 % im Minus.",
       "whySources": [
         {
-          "title": "Beispieldaten zur Kursbewegung",
-          "url": "https://example.com/beispieldaten/why-tsla"
-        }
-      ],
-      "longTermOutlook": "Beispiel: Über Jahre entscheiden Auslieferungen, Marge und ob Energie und Roboter mehr sind als ein Versprechen.",
-      "counterArgument": "Beispiel: Preissenkungen können Stückzahlen heben und trotzdem die Marge drücken.",
-      "firstPrinciples": [
-        {
-          "title": "Auslieferungen und Marge",
-          "text": "Beispiel: Autos, die gebaut, verkauft und bezahlt sind."
+          "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
+          "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
         },
         {
-          "title": "Speicher",
-          "text": "Beispiel: Megawattstunden, die am Netz hängen."
+          "title": "Yahoo Finance: TSLA historische Kurse",
+          "url": "https://finance.yahoo.com/quote/TSLA/history/"
+        }
+      ],
+      "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
+      "counterArgument": "Das Autogeschäft schrumpft, und Teslas große Termine haben sich in der Vergangenheit oft um Jahre verschoben.",
+      "firstPrinciples": [
+        {
+          "title": "Autonomie als Software-Marge",
+          "text": "Ein Auto, das selbst fährt, verdient auch, während der Besitzer schläft. FSD hat laut Tesla über 1,7 Mio. zahlende Kunden; jeder weitere kostet kaum zusätzlich."
+        },
+        {
+          "title": "Batterien sind der Engpass",
+          "text": "Speicher für Netze und Rechenzentren wächst schneller als das Auto. Wer Zellen und Wechselrichter günstig baut, verdient an der KI-Welle mit, ohne selbst KI zu verkaufen."
+        },
+        {
+          "title": "Roboter in Stückzahl",
+          "text": "Optimus lohnt sich nur bei Millionen Stück. Tesla baut dafür eine Linie in Fremont, die auf 1 Mio. pro Jahr ausgelegt ist – heute existieren aber nur frühe Einheiten."
         }
       ],
       "sources": [
@@ -865,7 +885,7 @@
       "venue": "Nasdaq",
       "currency": "EUR",
       "example": true,
-      "narrativeExample": true,
+      "narrativeExample": false,
       "stale": false,
       "priceEur": 22.4,
       "priceUsd": null,
@@ -1255,23 +1275,31 @@
         ]
       },
       "recordHighEur": 22.4,
-      "why": "Beispiel: Kleines Plus als Platzhalter für den Vergleichswert neben SpaceX.",
+      "why": "Rocket Lab fiel am 4. November um 3,8 % im Sog der Raumfahrt- und Musk-Werte; seit der Neutron-Verschiebung auf 2027 liegt die Aktie nahe ihrem Tief.",
       "whySources": [
         {
-          "title": "Beispieldaten zur Kursbewegung",
-          "url": "https://example.com/beispieldaten/why-rklb"
-        }
-      ],
-      "longTermOutlook": "Beispiel: Zum Vergleich zählt, ob Neutron fliegt und die kleine Rakete zuverlässig startet.",
-      "counterArgument": "Beispiel: Ein einzelner Fehlstart trifft einen kleineren Anbieter härter als einen großen.",
-      "firstPrinciples": [
-        {
-          "title": "Kadenz",
-          "text": "Beispiel: Wie viele Electron-Flüge kommen wirklich an?"
+          "title": "Yahoo Finance: RKLB historische Kurse",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
         },
         {
-          "title": "Nächste Stufe",
-          "text": "Beispiel: Neutron ist erst dann ein Treiber, wenn sie Nutzlast trägt."
+          "title": "Rocket Lab: Neutron-Update, Erststart jetzt 2027",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+        }
+      ],
+      "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
+      "counterArgument": "Ohne Neutron bleibt Rocket Lab ein kleiner Anbieter neben SpaceX, und Insider verkaufen laufend Aktien.",
+      "firstPrinciples": [
+        {
+          "title": "Zweitanbieter mit Nische",
+          "text": "Kunden wollen nicht nur von SpaceX abhängen. Electron ist für kleine Satelliten zuverlässig und häufig gebucht."
+        },
+        {
+          "title": "Vom Raketen- zum Raumfahrzeug-Haus",
+          "text": "Ein großer Teil des Umsatzes kommt aus Satelliten und Bauteilen – etwa den ESCAPADE-Sonden für NASA oder dem Viasat-Satelliten Maxwell."
+        },
+        {
+          "title": "Neutron entscheidet die Größe",
+          "text": "Erst mit einer mittelgroßen, wiederverwendbaren Rakete kann Rocket Lab um große Aufträge wie Konstellationen mitbieten. Die ist auf 2027 verschoben."
         }
       ],
       "sources": [

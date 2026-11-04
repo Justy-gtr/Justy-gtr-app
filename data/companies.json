@@ -1,5 +1,5 @@
 {
-  "example": true,
+  "example": false,
   "companies": [
     {
       "id": "spacex",
@@ -7,33 +7,42 @@
       "symbol": "SPCX",
       "listed": true,
       "role": "Fokus",
-      "tagline": "Raketen, Starlink, Starship. Börsengang 12. Juni 2026, 135 US-Dollar, Nasdaq.",
+      "tagline": "Raketen, Starlink und seit 2026 ein großes KI-Geschäft (SI, ehemals xAI) unter einem Dach.",
       "priceDrivers": [
-        "Starlink-Anschlüsse",
-        "Startkadenz",
-        "Starship-Nutzlast",
-        "Staatsaufträge"
+        "Starlink-Kunden und Umsatz je Kunde",
+        "Starship-Fortschritt (Turmfang, Kadenz)",
+        "KI-Umsatz vs. Investitionen",
+        "Lock-up-Freigaben",
+        "Politik und Regierungsaufträge"
       ],
       "firstPrinciples": [
         {
           "title": "Masse in den Orbit",
-          "text": "Beispiel: Euro pro Kilogramm und Flüge pro Booster. Alles andere ist Beiwerk."
+          "text": "Wer Kilo für Kilo am billigsten ins All bringt, kann Dienste bauen, die anderen zu teuer sind. Wiederverwendbarkeit ist der Hebel: Eine Rakete, die wie ein Flugzeug wieder fliegt, kostet pro Start nur noch Treibstoff und Wartung."
         },
         {
-          "title": "Wiederkehrender Umsatz",
-          "text": "Beispiel: Starlink zählt, wenn Menschen monatlich zahlen."
+          "title": "Starlink zahlt die Rechnung",
+          "text": "Das Verbindungs-Segment brachte im Q3 5,2 Mrd. US-Dollar Umsatz. Weil SpaceX die eigenen Satelliten selbst startet, sind die Kosten pro Satellit niedriger als bei jedem Konkurrenten."
         },
         {
-          "title": "Starship als Kostenkurve",
-          "text": "Beispiel: Ein gelungener Flug ändert wenig, eine verlässliche Kadenz ändert die Kosten."
+          "title": "KI braucht Strom und Platz",
+          "text": "Das SI-Segment (Grok, Cursor, Rechenzentren) ist inzwischen der größte Umsatzblock, verschlingt aber auch die meisten Investitionen. Die These hinter „Rechenzentren im All“: Energie und Kühlung im Orbit statt in Texas."
         }
       ],
-      "counterArgument": "Beispiel: Der Börsenpreis kann die Physik überholen. Dünner Handel nach dem IPO verstärkt das.",
-      "example": true,
+      "counterArgument": "Der Börsenwert rechnet mit Erfolgen auf allen drei Feldern gleichzeitig. Im Q3 flossen allein 16,4 Mrd. US-Dollar in das KI-Segment; wenn dort das Wachstum stockt oder die Politik Rechenzentren bremst, trägt Starlink allein die Bewertung nicht.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Unternehmen",
-          "url": "https://example.com/beispieldaten/spacex"
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        },
+        {
+          "title": "Motley Fool: Why SpaceX Stock Is Down Today (04.11.2026)",
+          "url": "https://www.fool.com/investing/2026/11/04/why-spacex-stock-is-down-today/"
+        },
+        {
+          "title": "CNBC: SpaceX und Tesla fallen nach Demokraten-Sieg (04.11.2026)",
+          "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html"
         }
       ]
     },
@@ -43,33 +52,42 @@
       "symbol": "TSLA",
       "listed": true,
       "role": "Tesla",
-      "tagline": "Autos, Energie, Software, Optimus.",
+      "tagline": "Autos, Speicher, Robotaxi und Optimus – die Bewertung hängt vor allem an Software und Robotern.",
       "priceDrivers": [
-        "Auslieferungen",
-        "Auto-Marge",
-        "Speicher",
-        "Regulierung der Fahrassistenz"
+        "Quartalsauslieferungen",
+        "FSD-Zulassungen (USA, EU)",
+        "Robotaxi-Ausbau",
+        "Marge im Auto- und Energiegeschäft",
+        "Optimus-Hochlauf"
       ],
       "firstPrinciples": [
         {
-          "title": "Gebaute Autos",
-          "text": "Beispiel: Stückzahl mal Preis minus die Kosten der Fabrik."
+          "title": "Autonomie als Software-Marge",
+          "text": "Ein Auto, das selbst fährt, verdient auch, während der Besitzer schläft. FSD hat laut Tesla über 1,7 Mio. zahlende Kunden; jeder weitere kostet kaum zusätzlich."
         },
         {
-          "title": "Energie",
-          "text": "Beispiel: Speicher, der am Netz hängt und bezahlt wird."
+          "title": "Batterien sind der Engpass",
+          "text": "Speicher für Netze und Rechenzentren wächst schneller als das Auto. Wer Zellen und Wechselrichter günstig baut, verdient an der KI-Welle mit, ohne selbst KI zu verkaufen."
         },
         {
-          "title": "Software und Roboter",
-          "text": "Beispiel: Erst Umsatz, wenn jemand dafür zahlt. Bis dahin eine Option, kein Fakt."
+          "title": "Roboter in Stückzahl",
+          "text": "Optimus lohnt sich nur bei Millionen Stück. Tesla baut dafür eine Linie in Fremont, die auf 1 Mio. pro Jahr ausgelegt ist – heute existieren aber nur frühe Einheiten."
         }
       ],
-      "counterArgument": "Beispiel: Der Kurs hängt oft an der Geschichte von morgen, nicht an den Autos von diesem Quartal.",
-      "example": true,
+      "counterArgument": "Das Kerngeschäft Auto schrumpft im Jahresvergleich, und die großen Versprechen (unbeaufsichtigtes FSD, Optimus in Masse, Cybercab für Kunden) liegen alle in 2027 oder später. Tesla hat solche Termine schon oft verfehlt.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Unternehmen",
-          "url": "https://example.com/beispieldaten/tesla"
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+        },
+        {
+          "title": "Tesla IR: Produktion und Auslieferungen Q3 2026",
+          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+        },
+        {
+          "title": "CNBC (22.04.2019): Musk kündigt Robotaxis für 2020 an",
+          "url": "https://www.cnbc.com/2019/04/22/elon-musk-says-tesla-robotaxis-will-hit-the-market-next-year.html"
         }
       ]
     },
@@ -79,28 +97,41 @@
       "symbol": "RKLB",
       "listed": true,
       "role": "Vergleich",
-      "tagline": "Kleinerer Raketenanbieter als Maßstab neben SpaceX.",
+      "tagline": "Kleine Rakete Electron, Satellitenbau und die verspätete Neutron – der Vergleichswert zu SpaceX.",
       "priceDrivers": [
-        "Electron-Starts",
-        "Neutron",
-        "Komponenten für fremde Missionen"
+        "Neutron-Fahrplan",
+        "Auftragsbestand",
+        "Electron-Kadenz",
+        "Insider-Verkäufe"
       ],
       "firstPrinciples": [
         {
-          "title": "Starts, die ankommen",
-          "text": "Beispiel: Kadenz und Zuverlässigkeit, nicht die Folie."
+          "title": "Zweitanbieter mit Nische",
+          "text": "Kunden wollen nicht nur von SpaceX abhängen. Electron ist für kleine Satelliten zuverlässig und häufig gebucht."
         },
         {
-          "title": "Das nächste Fahrzeug",
-          "text": "Beispiel: Neutron muss fliegen, bevor es den Vergleich trägt."
+          "title": "Vom Raketen- zum Raumfahrzeug-Haus",
+          "text": "Ein großer Teil des Umsatzes kommt aus Satelliten und Bauteilen – etwa den ESCAPADE-Sonden für NASA oder dem Viasat-Satelliten Maxwell."
+        },
+        {
+          "title": "Neutron entscheidet die Größe",
+          "text": "Erst mit einer mittelgroßen, wiederverwendbaren Rakete kann Rocket Lab um große Aufträge wie Konstellationen mitbieten. Die ist auf 2027 verschoben."
         }
       ],
-      "counterArgument": "Beispiel: Weniger Flüge, weniger Puffer. Ein Fehler wiegt schwerer.",
-      "example": true,
+      "counterArgument": "Gegen SpaceX' Kostenvorteil bleibt Rocket Lab klein. Ohne Neutron wächst der Umsatz vor allem über Satellitenbau, und das Management verkauft seit Monaten Aktien.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Unternehmen",
-          "url": "https://example.com/beispieldaten/rocketlab"
+          "title": "Rocket Lab: Ergebnisse Q2 2026",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts"
+        },
+        {
+          "title": "Rocket Lab: Neutron-Update, Erststart jetzt 2027",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+        },
+        {
+          "title": "NASA: ESCAPADE-Zwillinge schwingen an der Erde vorbei Richtung Mars",
+          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
         }
       ]
     },
@@ -110,59 +141,75 @@
       "symbol": null,
       "listed": false,
       "role": "Kosmos",
-      "tagline": "Implantate. Nicht börsennotiert. Kann die Stimmung im Musk-Umfeld bewegen.",
+      "tagline": "Gehirn-Implantate: Telepathy steuert Computer, Blindsight soll Blinden Sehen ermöglichen.",
       "priceDrivers": [
-        "Studien",
-        "Zulassung",
-        "Schlagzeilen zu Musk"
+        "Zulassungen (FDA)",
+        "Studienergebnisse",
+        "Finanzierungsrunden"
       ],
       "firstPrinciples": [
         {
-          "title": "Stabile Signale",
-          "text": "Beispiel: Wie viele Implantate liefern über Monate brauchbare Daten?"
+          "title": "Bandbreite zwischen Mensch und Computer",
+          "text": "Die These: Wer direkt Signale aus dem Gehirn liest, kommuniziert schneller als mit Tippen. In der VOICE-Studie erreichte ein Teilnehmer rund 75 Wörter pro Minute."
         },
         {
-          "title": "Aufsicht",
-          "text": "Beispiel: Ohne Zulassung bleibt es ein Versuch, kein Produkt."
+          "title": "Medizin zuerst",
+          "text": "Der Weg führt über schwer kranke Patienten, weil dort der Nutzen das Risiko einer Operation rechtfertigt."
         }
       ],
-      "counterArgument": "Beispiel: Medizin ist langsam. Ein Video ist kein Umsatz und kein Kurshebel für SPCX.",
-      "example": true,
+      "counterArgument": "Alle Geräte sind noch in Studien. Zwischen „technisch fertig“ und einer Zulassung liegen oft Jahre, und für Anleger gibt es keine handelbare Aktie.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Unternehmen",
-          "url": "https://example.com/beispieldaten/neuralink"
+          "title": "@elonmusk auf X: Blindsight",
+          "url": "https://x.com/elonmusk/status/2116019939056513218"
+        },
+        {
+          "title": "Neurofounders: Neuralink VOICE-Studie, 75 Wörter pro Minute",
+          "url": "https://www.neurofounders.co/articles/neuralink-shares-speech-decoding-data-in-voice-trial"
+        },
+        {
+          "title": "@neuralink auf X: Bloom",
+          "url": "https://x.com/neuralink/status/2115878440402325727"
         }
       ]
     },
     {
       "id": "xai",
-      "name": "xAI",
+      "name": "xAI / SpaceX SI",
       "symbol": null,
       "listed": false,
       "role": "Kosmos",
-      "tagline": "Modelle und Rechenzentren. Nicht börsennotiert.",
+      "tagline": "Grok und KI-Rechenzentren – heute das SI-Segment von SpaceX, kein eigenes Börsenkürzel.",
       "priceDrivers": [
-        "Rechenleistung",
-        "zahlende Nutzung",
-        "Kapitalrunden"
+        "Grok-Modelle (Grok 5 offen)",
+        "Rechenzentrums-Kapazität",
+        "Umsatz mit Cursor und Grok Bot"
       ],
       "firstPrinciples": [
         {
-          "title": "Rechnen und Strom",
-          "text": "Beispiel: Chips, Megawatt, Auslastung."
+          "title": "Rechenleistung ist der Rohstoff",
+          "text": "Wer am meisten Chips mit Strom versorgt, trainiert die größten Modelle. SpaceX nennt 1,7 GW installierte Kapazität."
         },
         {
-          "title": "Jemand zahlt",
-          "text": "Beispiel: Nutzung, die eine Rechnung hat, nicht nur einen Demo-Tag."
+          "title": "Verteilung über eigene Kanäle",
+          "text": "X, Starlink und Tesla bieten Grok direkt Kunden an – ein Vertriebsweg, den reine KI-Labore nicht haben."
         }
       ],
-      "counterArgument": "Beispiel: Kapitalrunden sagen wenig darüber, ob Tesla oder SpaceX davon profitieren.",
-      "example": true,
+      "counterArgument": "Das Segment kostet derzeit weit mehr, als es einbringt, und die Konkurrenz bei KI-Modellen ist enorm. Grok 5 ist trotz Ankündigung noch nicht erschienen.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Unternehmen",
-          "url": "https://example.com/beispieldaten/xai"
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        },
+        {
+          "title": "Unloc: Grok 5 – Stand und Aussagen zum Termin",
+          "url": "https://unloc.tools/resource/grok-5"
+        },
+        {
+          "title": "SpaceX SI Docs: Release Notes",
+          "url": "https://docs.x.ai/developers/release-notes"
         }
       ]
     },
@@ -172,28 +219,24 @@
       "symbol": null,
       "listed": false,
       "role": "Kosmos",
-      "tagline": "Geplante Chipfertigung im Musk-Umfeld. Beispiel, kein bestätigtes Listing.",
+      "tagline": "Geplante Chipfabrik von Tesla (Kostenaufteilung mit SpaceX offen), Inbetriebnahme ab 2027.",
       "priceDrivers": [
-        "Bau",
-        "Ausbeute",
-        "Abnehmer im eigenen Kosmos"
+        "Baufortschritt",
+        "Erster Testchip (Ziel Mai/Juni 2027)",
+        "Kostenaufteilung Tesla–SpaceX"
       ],
       "firstPrinciples": [
         {
-          "title": "Wafer, die funktionieren",
-          "text": "Beispiel: Ausbeute und Ausschuss, nicht die Ankündigung."
-        },
-        {
-          "title": "Strom und Zeit",
-          "text": "Beispiel: Eine Fabrik zählt erst, wenn sie liefert."
+          "title": "Chips selbst bauen",
+          "text": "Wer KI-Chips selbst fertigt, hängt nicht an Lieferengpässen anderer. Tesla nennt langfristig über 100 Mrd. US-Dollar Investitionen."
         }
       ],
-      "counterArgument": "Beispiel: Chipfabriken werden teuer und spät. Bis dahin ist es eine Geschichte.",
-      "example": true,
+      "counterArgument": "Chipfabriken gehören zu den schwierigsten Industrieprojekten überhaupt; Termine und Kosten laufen dort fast immer aus dem Ruder. Volumen erst ab etwa Q3 2028.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Unternehmen",
-          "url": "https://example.com/beispieldaten/terafab"
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
         }
       ]
     },
@@ -203,28 +246,32 @@
       "symbol": null,
       "listed": false,
       "role": "Kosmos",
-      "tagline": "Tunnel. Nicht börsennotiert.",
+      "tagline": "Tunnelbau für Verkehr: Loop in Las Vegas, Bau in Nashville, Inbetriebnahme in San Antonio.",
       "priceDrivers": [
-        "Genehmigte Strecken",
-        "Meter pro Tag",
-        "Aufträge von Städten"
+        "Projekt-Eröffnungen",
+        "Bohrgeschwindigkeit",
+        "Neue Städte-Verträge"
       ],
       "firstPrinciples": [
         {
-          "title": "Meter unter der Stadt",
-          "text": "Beispiel: Gebaute Tunnel, nicht Renderings."
-        },
-        {
-          "title": "Genehmigung",
-          "text": "Beispiel: Ohne Erlaubnis der Stadt bleibt die Maschine stehen."
+          "title": "Tunnel billiger machen",
+          "text": "Die These: Wenn Tunnel ein Zehntel kosten, lohnen sie sich für Autos und Fracht. Dafür steuert die Firma Bohrmaschinen inzwischen zentral aus der Ferne."
         }
       ],
-      "counterArgument": "Beispiel: Tunnelprojekte hängen an Politik und haften selten am SpaceX-Kurs.",
-      "example": true,
+      "counterArgument": "Viele angekündigte Projekte wurden nie gebaut oder verspätet; in Nashville gibt es aktuell kein veröffentlichtes Eröffnungsdatum mehr.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Unternehmen",
-          "url": "https://example.com/beispieldaten/boring"
+          "title": "@boringcompany auf X: Fernsteuerung",
+          "url": "https://x.com/boringcompany/status/2115587065282982342"
+        },
+        {
+          "title": "Loop Nashville: Eröffnungstermin des Music City Loop unklar",
+          "url": "https://loopnashville.com/music-city-loop-opening-date-timeline-2026-2027"
+        },
+        {
+          "title": "The Boring Company: Music City Loop",
+          "url": "https://boringcompany.com/projects/music-city-loop"
         }
       ]
     }

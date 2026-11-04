@@ -1,50 +1,27 @@
 {
-  "example": true,
+  "example": false,
   "current": {
-    "id": "2026-11-04",
-    "date": "2026-11-04",
-    "question": "Schließt TSLA heute im Plus?",
+    "id": "2026-11-05",
+    "date": "2026-11-05",
+    "question": "Schließt SPCX am Donnerstag, 5. November, höher als am Mittwoch (135,92 $)?",
     "karlAnswer": "nein",
-    "karlReason": "Beispiel: Karl tippt auf ein Minus, weil der Seed-Kurs schon leicht rot ist. Kein echter Schlusskurs.",
+    "karlReason": "Knapp „nein“, etwa 45 zu 55: Nach dem Midterm-Ergebnis liegt politischer Druck auf allen Musk-Werten, und vor der Lock-up-Freigabe am 8. Dezember fehlt der Grund für eine schnelle Erholung – der Qualcomm-Deal hat den Fall am Mittwoch nur abgefedert.",
     "outcome": null,
-    "resolvesAt": "2026-11-04T22:00:00+01:00",
+    "resolvesAt": "2026-11-05T22:00:00+01:00",
     "sources": [
       {
-        "title": "Beispieldaten Tagesfrage",
-        "url": "https://example.com/beispieldaten/q-2026-11-04"
+        "title": "Yahoo Finance: SPCX historische Kurse",
+        "url": "https://finance.yahoo.com/quote/SPCX/history/"
+      },
+      {
+        "title": "Motley Fool: Why SpaceX Stock Is Down Today (04.11.2026)",
+        "url": "https://www.fool.com/investing/2026/11/04/why-spacex-stock-is-down-today/"
+      },
+      {
+        "title": "StockCar: SPCX-Lockup-Kalender (aus dem 424B4-Prospekt)",
+        "url": "https://www.stockcar.app/insights/spacex-lockup-schedule"
       }
     ]
   },
-  "history": [
-    {
-      "id": "2026-11-03",
-      "date": "2026-11-03",
-      "question": "Beispiel: Lag der Schwarm bei SPCX gestern über 50 % Trefferquote?",
-      "karlAnswer": "ja",
-      "karlReason": "Beispiel: Im Seed lag der Schwarm knapp darüber.",
-      "outcome": "ja",
-      "resolvesAt": "2026-11-03T22:00:00+01:00",
-      "sources": [
-        {
-          "title": "Beispieldaten Tagesfrage",
-          "url": "https://example.com/beispieldaten/q-2026-11-03"
-        }
-      ]
-    },
-    {
-      "id": "2026-10-28",
-      "date": "2026-10-28",
-      "question": "Beispiel: Hat der Seed-Kurs von RKLB die Woche im Plus beendet?",
-      "karlAnswer": "ja",
-      "karlReason": "Beispiel: Karl lag daneben.",
-      "outcome": "nein",
-      "resolvesAt": "2026-10-28T22:00:00+01:00",
-      "sources": [
-        {
-          "title": "Beispieldaten Tagesfrage",
-          "url": "https://example.com/beispieldaten/q-2026-10-28"
-        }
-      ]
-    }
-  ]
+  "history": []
 }

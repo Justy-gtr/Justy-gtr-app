@@ -1,57 +1,365 @@
 {
-  "example": true,
+  "example": false,
+  "asOf": "2026-11-04",
+  "notes": "Alle Einträge aus SEC-Form-4-Meldungen (Code S = Verkauf am Markt). Zusammengefasst je Person und Tag, Preis = gewichteter Durchschnitt. Seit Juni 2026 habe ich bei TSLA, SPCX und RKLB keinen einzigen Insider-Kauf am Markt gefunden. Viele Verkäufe laufen über vorab festgelegte 10b5-1-Pläne oder decken Steuern – das ist weniger aussagekräftig als ein spontaner Verkauf. Nicht aufgeführt: Musks Optionsausübung bei Tesla am 16.06.2026 mit Einbehalt von Aktien für Steuern (kein Marktverkauf).",
   "trades": [
     {
-      "id": "ins-1",
-      "person": "Beispiel Person A",
-      "role": "Director",
-      "symbol": "TSLA",
-      "company": "Tesla",
-      "side": "kauf",
-      "shares": 2000,
-      "priceUsd": 240,
-      "date": "2026-10-20",
-      "example": true,
-      "sources": [
-        {
-          "title": "Beispieldaten Insider",
-          "url": "https://example.com/beispieldaten/ins-1"
-        }
-      ]
-    },
-    {
-      "id": "ins-2",
-      "person": "Beispiel Person B",
-      "role": "Officer",
+      "id": "ins-rklb-armagno-2026-11-02",
+      "person": "Nina Armagno",
+      "role": "Aufsichtsrätin (Director) – Verkauf nach 10b5-1-Plan vom 19.09.2025",
       "symbol": "RKLB",
       "company": "Rocket Lab",
-      "side": "kauf",
-      "shares": 15000,
-      "priceUsd": 18,
-      "date": "2026-09-12",
-      "example": true,
+      "side": "verkauf",
+      "shares": 10926,
+      "priceUsd": 52.78,
+      "date": "2026-11-02",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Insider",
-          "url": "https://example.com/beispieldaten/ins-2"
+          "title": "SEC Form 4: Nina Armagno (RKLB), Handel am 02.11.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000145/edgardoc.xml"
         }
       ]
     },
     {
-      "id": "ins-3",
-      "person": "Beispiel Person C",
-      "role": "Director",
+      "id": "ins-rklb-spice-2026-11-02",
+      "person": "Adam Spice",
+      "role": "Finanzchef (CFO) – nach Optionsausübung zu 1,09 $, 10b5-1-Plan vom 03.06.2026",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 140157,
+      "priceUsd": 52.79,
+      "date": "2026-11-02",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Adam Spice (RKLB), Handel am 02.11.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000144/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-spice-2026-10-01",
+      "person": "Adam Spice",
+      "role": "Finanzchef (CFO) – nach Optionsausübung zu 1,09 $, 10b5-1-Plan",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 140157,
+      "priceUsd": 70.82,
+      "date": "2026-10-01",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Adam Spice (RKLB), Handel am 01.10.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000143/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-spcx-shotwell-2026-09-22",
+      "person": "Gwynne Shotwell",
+      "role": "Präsidentin und COO, Board-Mitglied – nach Optionsausübung, 10b5-1-Plan vom 23.06.2026",
+      "symbol": "SPCX",
+      "company": "SpaceX",
+      "side": "verkauf",
+      "shares": 342170,
+      "priceUsd": 153.57,
+      "date": "2026-09-22",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Gwynne Shotwell (SPCX), Handel am 22.09.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026063378/wk-form4_1790280657.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-tsla-taneja-2026-09-08",
+      "person": "Vaibhav Taneja",
+      "role": "Finanzchef (CFO) – nach Ausübung von Aktienzuteilungen",
       "symbol": "TSLA",
       "company": "Tesla",
       "side": "verkauf",
-      "shares": 5000,
-      "priceUsd": 260,
-      "date": "2026-08-02",
-      "example": true,
+      "shares": 2605.75,
+      "priceUsd": 360.13,
+      "date": "2026-09-08",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Insider",
-          "url": "https://example.com/beispieldaten/ins-3"
+          "title": "SEC Form 4: Vaibhav Taneja (TSLA), Handel am 08.09.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926106432/tm2625055d1_4seq1.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-spice-2026-09-02",
+      "person": "Adam Spice",
+      "role": "Finanzchef (CFO) – nach Optionsausübung zu 1,09 $, 10b5-1-Plan",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 140157,
+      "priceUsd": 62.63,
+      "date": "2026-09-02",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Adam Spice (RKLB), Handel am 02.09.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000136/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-klein-2026-08-27",
+      "person": "Frank Klein",
+      "role": "Betriebschef (COO)",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 35558,
+      "priceUsd": 66.61,
+      "date": "2026-08-27",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Frank Klein (RKLB), Handel am 27.08.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000133/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-kampani-2026-08-27",
+      "person": "Arjun Kampani",
+      "role": "Chefjurist (General Counsel)",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 6034,
+      "priceUsd": 66.65,
+      "date": "2026-08-27",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Arjun Kampani (RKLB), Handel am 27.08.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000132/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-spice-2026-08-24",
+      "person": "Adam Spice",
+      "role": "Finanzchef (CFO) – Verkauf zur Deckung von Steuern auf Aktienzuteilung",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 9677,
+      "priceUsd": 69.63,
+      "date": "2026-08-24",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Adam Spice (RKLB), Handel am 24.08.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000129/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-klein-2026-08-24",
+      "person": "Frank Klein",
+      "role": "Betriebschef (COO) – Verkauf zur Deckung von Steuern auf Aktienzuteilung",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 45692,
+      "priceUsd": 69.63,
+      "date": "2026-08-24",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Frank Klein (RKLB), Handel am 24.08.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000127/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-kampani-2026-08-24",
+      "person": "Arjun Kampani",
+      "role": "Chefjurist (General Counsel) – Verkauf zur Deckung von Steuern",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 7754,
+      "priceUsd": 69.63,
+      "date": "2026-08-24",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Arjun Kampani (RKLB), Handel am 24.08.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000126/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-clevenger-2026-08-24",
+      "person": "Marvin Bradford Clevenger",
+      "role": "Präsident Rocket Lab USA – Verkauf zur Deckung von Steuern",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 15051,
+      "priceUsd": 69.63,
+      "date": "2026-08-24",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Marvin Bradford Clevenger (RKLB), Handel am 24.08.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000125/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-beck-2026-07-08",
+      "person": "Peter Beck",
+      "role": "Gründer und CEO – Verkauf über Equatorial Trust, 10b5-1-Plan vom 27.03.2026",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 990960,
+      "priceUsd": 82.86,
+      "date": "2026-07-08",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Peter Beck (RKLB), Handel am 08.07.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000109/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-beck-2026-07-07",
+      "person": "Peter Beck",
+      "role": "Gründer und CEO – Verkauf über Equatorial Trust, 10b5-1-Plan vom 27.03.2026",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 1298622,
+      "priceUsd": 84.92,
+      "date": "2026-07-07",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Peter Beck (RKLB), Handel am 07.07.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000109/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-beck-2026-07-06",
+      "person": "Peter Beck",
+      "role": "Gründer und CEO – Verkauf über Equatorial Trust, 10b5-1-Plan vom 27.03.2026",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 986197,
+      "priceUsd": 95.33,
+      "date": "2026-07-06",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Peter Beck (RKLB), Handel am 06.07.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000109/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-kampani-2026-06-18",
+      "person": "Arjun Kampani",
+      "role": "Chefjurist (General Counsel)",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 88000,
+      "priceUsd": 107.98,
+      "date": "2026-06-18",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Arjun Kampani (RKLB), Handel am 18.06.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000105/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-tsla-taneja-2026-06-08",
+      "person": "Vaibhav Taneja",
+      "role": "Finanzchef (CFO) – nach Ausübung von Aktienzuteilungen",
+      "symbol": "TSLA",
+      "company": "Tesla",
+      "side": "verkauf",
+      "shares": 2605.5,
+      "priceUsd": 402.2,
+      "date": "2026-06-08",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Vaibhav Taneja (TSLA), Handel am 08.06.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926071970/tm2617365-1_4seq1.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-slusky-2026-06-02",
+      "person": "Alexander Slusky",
+      "role": "Aufsichtsrat (Director)",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 40000,
+      "priceUsd": 123.6,
+      "date": "2026-06-02",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Alexander Slusky (RKLB), Handel am 02.06.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000095/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-slusky-2026-05-28",
+      "person": "Alexander Slusky",
+      "role": "Aufsichtsrat (Director)",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 60000,
+      "priceUsd": 149.4,
+      "date": "2026-05-28",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Alexander Slusky (RKLB), Handel am 28.05.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000082/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-spcx-musk-2026-04-02",
+      "person": "Elon Musk",
+      "role": "CEO, CTO und Chairman – Verkauf vor dem Börsengang, erst nach dem IPO gemeldet",
+      "symbol": "SPCX",
+      "company": "SpaceX",
+      "side": "verkauf",
+      "shares": 11390,
+      "priceUsd": 105.32,
+      "date": "2026-04-02",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Elon Musk (SPCX), Handel am 02.04.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044069/wk-form4_1781740812.xml"
         }
       ]
     }

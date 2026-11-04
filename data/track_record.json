@@ -1,61 +1,140 @@
 {
-  "example": true,
+  "example": false,
   "asOf": "2026-11-04",
+  "notes": "Neu gestartet am 04.11.2026 – keine rückwirkende Bilanz. Starlink und Tesla Energie werden über die SPCX- bzw. TSLA-Aktie gemessen.",
   "picks": [
     {
-      "id": "tr-1",
-      "symbol": "TSLA",
-      "name": "Tesla",
-      "pickedOn": "2026-06-01",
-      "horizonEnd": "2026-09-01",
-      "thesis": "Beispiel: Energiegeschäft sollte den Sommer tragen.",
-      "score": 7,
-      "entryPriceEur": 230,
-      "result": "treffer",
-      "outcomeNote": "Beispiel: These im Seed als getroffen markiert.",
-      "example": true,
-      "sources": [
-        {
-          "title": "Beispieldaten Treffer",
-          "url": "https://example.com/beispieldaten/tr-1"
-        }
-      ]
-    },
-    {
-      "id": "tr-2",
-      "symbol": "RKLB",
-      "name": "Rocket Lab",
-      "pickedOn": "2026-07-01",
-      "horizonEnd": "2026-10-01",
-      "thesis": "Beispiel: Neutron-Fortschritt sollte den Vergleichswert heben.",
-      "score": 6,
-      "entryPriceEur": 24,
-      "result": "daneben",
-      "outcomeNote": "Beispiel: These im Seed als daneben markiert.",
-      "example": true,
-      "sources": [
-        {
-          "title": "Beispieldaten Treffer",
-          "url": "https://example.com/beispieldaten/tr-2"
-        }
-      ]
-    },
-    {
-      "id": "tr-3",
+      "id": "tr-2026-11-04-spcx",
       "symbol": "SPCX",
       "name": "SpaceX",
-      "pickedOn": "2026-06-15",
-      "horizonEnd": "2027-06-15",
-      "thesis": "Beispiel: Nach dem Börsengang am 12. Juni 2026 zu 135 US-Dollar zählt ein Jahr Starlink und Starship.",
-      "score": 8,
-      "entryPriceEur": 120,
+      "pickedOn": "2026-11-04",
+      "horizonEnd": "2027-05-04",
+      "thesis": "SpaceX wächst im Q3 um 161 % auf 14,6 Mrd. US-Dollar Umsatz und verdient dabei Geld, aber nach der Midterm-Wahl und vor der Lock-up-Freigabe am 8. Dezember ist der Kurs anfällig.",
+      "score": 7,
+      "entryPriceEur": 121.01,
       "result": "offen",
-      "outcomeNote": "Beispiel: Horizont läuft noch.",
-      "example": true,
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg: Schlusskurs 04.11.2026: 135,92 $ ÷ EURUSD 1,1232. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro über dem Einstieg liegt.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Treffer",
-          "url": "https://example.com/beispieldaten/tr-3"
+          "title": "Yahoo Finance: SPCX historische Kurse",
+          "url": "https://finance.yahoo.com/quote/SPCX/history/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/history/"
+        },
+        {
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        }
+      ]
+    },
+    {
+      "id": "tr-2026-11-04-starlink",
+      "symbol": "SPCX",
+      "name": "Starlink (Teil von SpaceX)",
+      "pickedOn": "2026-11-04",
+      "horizonEnd": "2027-05-04",
+      "thesis": "Starlink kam im Q3 auf 13,6 Mio. Privatkunden (Vorjahr 7,2 Mio.) und mit Starlink Mobile plus Qualcomm-Deal kommt ein zweites Wachstumsfeld dazu.",
+      "score": 8,
+      "entryPriceEur": 121.01,
+      "result": "offen",
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg: Schlusskurs 04.11.2026: 135,92 $ ÷ EURUSD 1,1232. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro über dem Einstieg liegt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: SPCX historische Kurse",
+          "url": "https://finance.yahoo.com/quote/SPCX/history/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/history/"
+        },
+        {
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        }
+      ]
+    },
+    {
+      "id": "tr-2026-11-04-tsla",
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "pickedOn": "2026-11-04",
+      "horizonEnd": "2027-05-04",
+      "thesis": "Tesla liefert wieder mehr aus als erwartet und das Robotaxi wächst, aber die Aktie ist seit Jahresbeginn rund 14 % im Minus und der Großteil des Werts hängt an Versprechen für 2027.",
+      "score": 5,
+      "entryPriceEur": 342.15,
+      "result": "offen",
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg: Xetra-Schlusskurs TL0.DE am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro über dem Einstieg liegt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: TL0.DE historische Kurse",
+          "url": "https://finance.yahoo.com/quote/TL0.DE/history/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/history/"
+        },
+        {
+          "title": "Tesla IR: Produktion und Auslieferungen Q3 2026",
+          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+        }
+      ]
+    },
+    {
+      "id": "tr-2026-11-04-tesla-energie",
+      "symbol": "TSLA",
+      "name": "Tesla Energie (Speicher)",
+      "pickedOn": "2026-11-04",
+      "horizonEnd": "2027-05-04",
+      "thesis": "Die Speichersparte lieferte im Q3 13,7 GWh aus und ihre Marge sprang auf 33,1 %; KI-Rechenzentren brauchen genau diese Batterien.",
+      "score": 7,
+      "entryPriceEur": 342.15,
+      "result": "offen",
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg: Xetra-Schlusskurs TL0.DE am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro über dem Einstieg liegt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: TL0.DE historische Kurse",
+          "url": "https://finance.yahoo.com/quote/TL0.DE/history/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/history/"
+        },
+        {
+          "title": "Tesla IR: Produktion und Auslieferungen Q3 2026",
+          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+        }
+      ]
+    },
+    {
+      "id": "tr-2026-11-04-rklb",
+      "symbol": "RKLB",
+      "name": "Rocket Lab",
+      "pickedOn": "2026-11-04",
+      "horizonEnd": "2027-05-04",
+      "thesis": "Rocket Lab hat einen Rekord-Auftragsbestand von 2,36 Mrd. US-Dollar und liefert bei Electron und Satelliten zuverlässig, aber die große Rakete Neutron rutscht ins Jahr 2027.",
+      "score": 5,
+      "entryPriceEur": 46.63,
+      "result": "offen",
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg: Schlusskurs 04.11.2026: 52,37 $ ÷ EURUSD 1,1232. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro über dem Einstieg liegt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: RKLB historische Kurse",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/history/"
+        },
+        {
+          "title": "Rocket Lab: Ergebnisse Q2 2026",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts"
         }
       ]
     }

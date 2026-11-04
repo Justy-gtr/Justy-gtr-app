@@ -1,19 +1,58 @@
 {
-  "example": true,
-  "date": "2026-11-04",
+  "example": false,
+  "date": "2026-11-05",
   "title": "Morgen-Briefing",
   "greeting": "Guten Morgen, Justy.",
-  "summary": "Beispiel: SpaceX bleibt der Fokus, Tesla liefert die Vergleichszahl aus der Fabrik, Rocket Lab den kleineren Raketenwert. Heute steht im Seed keine echte Nachricht.",
+  "summary": "Der Tag nach der Wahl hat Spuren hinterlassen: SPCX schloss am Mittwoch 3,8 % tiefer bei 135,92 $, Tesla 3,3 % tiefer bei 385,19 $, Rocket Lab 3,8 % tiefer. Die Demokraten haben Kongress und die Wahlen in Texas gewonnen, wo Musk viel Geld investiert hatte und wo die neue Gouverneurin einen Baustopp für Rechenzentren will. Gegengewicht bei SpaceX: Starlink Mobile baut ab 2027 mit Qualcomm-Chips ein eigenes 5G-Netz in den USA. Heute stehen keine Firmentermine an; morgen um 14:30 Uhr kommt der US-Arbeitsmarktbericht.",
   "bullets": [
-    "SPCX, TSLA und RKLB sind mit Beispielkursen gefüllt, damit die Karten sichtbar sind.",
-    "Nächster Platzhalter im Kalender: Zoll-Schlagzeile am 8. November, Tesla-Lieferzahlen am 12.",
-    "Der Starship-Countdown läuft auf den 9. Dezember 2026, ebenfalls ein Beispiel."
+    "SPCX: −3,8 % auf 135,92 $ (zeitweise über −5 %) – knapp über dem Ausgabepreis von 135 $.",
+    "Politik: Einige Demokraten wollen Musk als Regierungsauftragnehmer prüfen; Beobachter sehen auch Hürden für eine Fusion Tesla–SpaceX.",
+    "Starlink Mobile + Qualcomm: 5G-Basisstationen ab 2027, Musk: „endlich ein Netz mit gutem Empfang überall“.",
+    "Starship Flight 15: Booster und Schiff sind getestet, frühestens 12. November, offiziell bestätigt ist nichts.",
+    "Rocket Lab: Finanzchef Adam Spice hat am 2.11. wieder 140.157 Aktien verkauft (10b5-1-Plan). Zahlen am Montagabend um 23:00 Uhr.",
+    "Freitag 14:30 Uhr: US-Arbeitsmarkt; Samstag 10:51 Uhr: Mars-Manöver der von Rocket Lab gebauten ESCAPADE-Sonde Blue."
   ],
   "audioUrl": null,
   "sources": [
     {
-      "title": "Beispieldaten Briefing",
-      "url": "https://example.com/beispieldaten/briefing"
+      "title": "Yahoo Finance: SPCX historische Kurse",
+      "url": "https://finance.yahoo.com/quote/SPCX/history/"
+    },
+    {
+      "title": "Motley Fool: Why SpaceX Stock Is Down Today (04.11.2026)",
+      "url": "https://www.fool.com/investing/2026/11/04/why-spacex-stock-is-down-today/"
+    },
+    {
+      "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
+      "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+    },
+    {
+      "title": "CNBC: SpaceX und Tesla fallen nach Demokraten-Sieg (04.11.2026)",
+      "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html"
+    },
+    {
+      "title": "@Starlink auf X: Qualcomm-Partnerschaft",
+      "url": "https://x.com/Starlink/status/2117973275414532165"
+    },
+    {
+      "title": "The Space Road: Wann startet Starship Flight 15?",
+      "url": "https://thespaceroad.com/articles/when-is-starship-flight-15/"
+    },
+    {
+      "title": "SEC Form 4: Adam Spice (RKLB), 02.11.2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000144/edgardoc.xml"
+    },
+    {
+      "title": "Rocket Lab: Termin der Q3-2026-Zahlen (GlobeNewswire)",
+      "url": "https://www.globenewswire.com/news-release/2026/10/20/3385004/0/en/rocket-lab-announces-date-of-third-quarter-2026-financial-results.html"
+    },
+    {
+      "title": "BLS: Termine Arbeitsmarktbericht",
+      "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
+    },
+    {
+      "title": "NASA: ESCAPADE-Zwillinge schwingen an der Erde vorbei Richtung Mars",
+      "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
     }
   ]
 }

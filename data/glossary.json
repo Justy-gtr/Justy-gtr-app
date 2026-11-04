@@ -1,16 +1,20 @@
 {
-  "example": true,
+  "example": false,
   "terms": [
     {
       "id": "kgv",
       "term": "KGV",
       "short": "Kurs-Gewinn-Verhältnis",
-      "explanation": "Preis der Aktie geteilt durch den Gewinn je Aktie. Ein hohes KGV heißt: der Markt zahlt viel für jeden Euro Gewinn. Es sagt nicht, ob der Gewinn bleibt.",
-      "example": true,
+      "explanation": "Aktienkurs geteilt durch den Gewinn je Aktie. Es sagt, wie viele Jahresgewinne du heute bezahlst. Bei SpaceX ist es hoch: rund 0,35 $ Gewinn je Aktie im Q3 stehen einem Kurs um 136 $ gegenüber.",
+      "example": false,
       "sources": [
         {
-          "title": "Kurs-Gewinn-Verhältnis",
+          "title": "Wikipedia: Kurs-Gewinn-Verhältnis",
           "url": "https://de.wikipedia.org/wiki/Kurs-Gewinn-Verh%C3%A4ltnis"
+        },
+        {
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
         }
       ]
     },
@@ -18,11 +22,11 @@
       "id": "kuv",
       "term": "KUV",
       "short": "Kurs-Umsatz-Verhältnis",
-      "explanation": "Börsenwert geteilt durch den Umsatz. Hilft, wenn ein Unternehmen noch wenig Gewinn ausweist, etwa nach einem Börsengang. Umsatz ist nicht dasselbe wie Geld, das übrig bleibt.",
-      "example": true,
+      "explanation": "Börsenwert geteilt durch den Umsatz. Hilfreich bei Firmen, deren Gewinn stark schwankt oder durch hohe Investitionen gedrückt wird.",
+      "example": false,
       "sources": [
         {
-          "title": "Kurs-Umsatz-Verhältnis",
+          "title": "Wikipedia: Kurs-Umsatz-Verhältnis",
           "url": "https://de.wikipedia.org/wiki/Kurs-Umsatz-Verh%C3%A4ltnis"
         }
       ]
@@ -30,13 +34,13 @@
     {
       "id": "kursziel",
       "term": "Kursziel",
-      "short": "Geschätzter Preis einer Analyse",
-      "explanation": "Eine Bank oder ein Researcher nennt einen Preis, den die Aktie in einem Zeitraum erreichen könnte. Das ist eine Meinung mit Annahmen, kein Versprechen und kein Mittelwert der Zukunft.",
-      "example": true,
+      "short": "Erwarteter Kurs eines Analysten",
+      "explanation": "Der Preis, den ein Analyst in meist zwölf Monaten für angemessen hält. Kursziele werden oft dem Kurs hinterhergeschoben und sind keine Zusage.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Glossar",
-          "url": "https://example.com/beispieldaten/kursziel"
+          "title": "Wikipedia: Kursziel",
+          "url": "https://de.wikipedia.org/wiki/Kursziel"
         }
       ]
     },
@@ -44,38 +48,54 @@
       "id": "marktkapitalisierung",
       "term": "Marktkapitalisierung",
       "short": "Börsenwert",
-      "explanation": "Aktienkurs mal Anzahl der Aktien. Was die Börse dem Unternehmen heute insgesamt zuschreibt, nicht was die Fabrik oder die Raketen beim Verkauf bringen würden.",
-      "example": true,
+      "explanation": "Aktienkurs mal Zahl aller Aktien. SpaceX kommt so auf rund 1,9 Billionen US-Dollar – obwohl nur ein kleiner Teil der Aktien frei gehandelt wird.",
+      "example": false,
       "sources": [
         {
-          "title": "Marktkapitalisierung",
+          "title": "Wikipedia: Marktkapitalisierung",
           "url": "https://de.wikipedia.org/wiki/Marktkapitalisierung"
+        },
+        {
+          "title": "Motley Fool: Why SpaceX Stock Is Down Today (04.11.2026)",
+          "url": "https://www.fool.com/investing/2026/11/04/why-spacex-stock-is-down-today/"
         }
       ]
     },
     {
       "id": "volatilitaet",
       "term": "Volatilität",
-      "short": "Wie stark der Kurs schwankt",
-      "explanation": "Hohe Volatilität heißt große Bewegungen in kurzer Zeit. Ein Rücksetzer von zwei Prozent ist bei manchen Werten Alltag, bei anderen schon ein Ereignis.",
-      "example": true,
+      "short": "Schwankungsbreite",
+      "explanation": "Wie stark ein Kurs schwankt. SPCX fiel nach dem Börsengang in sieben Wochen um fast die Hälfte – das ist hohe Volatilität, kein Urteil über das Geschäft.",
+      "example": false,
       "sources": [
         {
-          "title": "Volatilität",
+          "title": "Wikipedia: Volatilität",
           "url": "https://de.wikipedia.org/wiki/Volatilit%C3%A4t"
+        },
+        {
+          "title": "Yahoo Finance: SPCX historische Kurse",
+          "url": "https://finance.yahoo.com/quote/SPCX/history/"
         }
       ]
     },
     {
       "id": "free-cashflow",
       "term": "Free Cashflow",
-      "short": "Geld nach den nötigen Ausgaben",
-      "explanation": "Was übrig bleibt, nachdem das Unternehmen seine laufenden Kosten und nötigen Investitionen bezahlt hat. Näher am Geld auf dem Konto als der ausgewiesene Gewinn.",
-      "example": true,
+      "short": "Geld, das nach Investitionen übrig bleibt",
+      "explanation": "Mittelzufluss aus dem Geschäft minus Investitionen. Tesla hatte im Q2 einen negativen Free Cashflow, im Q3 laut eigener Angabe über 1,5 Mrd. US-Dollar.",
+      "example": false,
       "sources": [
         {
-          "title": "Free Cashflow",
-          "url": "https://de.wikipedia.org/wiki/Cashflow#Free_Cashflow"
+          "title": "Investopedia: Free Cash Flow",
+          "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+        },
+        {
+          "title": "Wikipedia: Cashflow",
+          "url": "https://de.wikipedia.org/wiki/Cashflow"
+        },
+        {
+          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
+          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
         }
       ]
     },
@@ -83,11 +103,11 @@
       "id": "leerverkauf",
       "term": "Leerverkauf",
       "short": "Wette auf fallende Kurse",
-      "explanation": "Jemand verkauft geliehene Aktien und hofft, sie billiger zurückzukaufen. Viele Leerverkäufe können Stürze verstärken, aber auch scharfe Gegenbewegungen, wenn alle gleichzeitig zurückkaufen.",
-      "example": true,
+      "explanation": "Man verkauft geliehene Aktien und hofft, sie später billiger zurückzukaufen. Steigt der Kurs, ist der mögliche Verlust theoretisch unbegrenzt.",
+      "example": false,
       "sources": [
         {
-          "title": "Leerverkauf",
+          "title": "Wikipedia: Leerverkauf",
           "url": "https://de.wikipedia.org/wiki/Leerverkauf"
         }
       ]
@@ -96,12 +116,12 @@
       "id": "guidance",
       "term": "Guidance",
       "short": "Ausblick des Unternehmens",
-      "explanation": "Was das Unternehmen selbst für Umsatz, Stückzahlen oder Gewinn erwartet. Der Kurs reagiert oft stärker auf die Änderung dieses Ausblicks als auf das letzte Quartal.",
-      "example": true,
+      "explanation": "Was ein Unternehmen selbst für die nächsten Quartale erwartet. Oft bewegt die Guidance den Kurs stärker als die gerade gemeldeten Zahlen.",
+      "example": false,
       "sources": [
         {
-          "title": "Beispieldaten Glossar",
-          "url": "https://example.com/beispieldaten/guidance"
+          "title": "Investopedia: Guidance",
+          "url": "https://www.investopedia.com/terms/g/guidance.asp"
         }
       ]
     },
@@ -109,12 +129,229 @@
       "id": "ipo",
       "term": "IPO",
       "short": "Börsengang",
-      "explanation": "Das Unternehmen verkauft zum ersten Mal Aktien an einer Börse. SpaceX ist im Seed mit dem Börsengang am 12. Juni 2026 zu 135 US-Dollar hinterlegt. Die ersten Monate können dünn und sprunghaft sein.",
-      "example": true,
+      "explanation": "Erstes öffentliches Angebot von Aktien. SpaceX ging am 12. Juni 2026 zum Ausgabepreis von 135 $ an die Nasdaq.",
+      "example": false,
       "sources": [
         {
-          "title": "Börsengang",
+          "title": "Wikipedia: Börsengang",
           "url": "https://de.wikipedia.org/wiki/B%C3%B6rsengang"
+        },
+        {
+          "title": "StockCar: SPCX-Lockup-Kalender (aus dem 424B4-Prospekt)",
+          "url": "https://www.stockcar.app/insights/spacex-lockup-schedule"
+        }
+      ]
+    },
+    {
+      "id": "lockup",
+      "term": "Lock-up",
+      "short": "Haltefrist nach dem Börsengang",
+      "explanation": "Bestehende Aktionäre dürfen eine Zeit lang nicht verkaufen. Wenn die Frist endet, kommen viele Aktien auf einmal auf den Markt – bei SPCX das nächste Mal am 8. Dezember 2026.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Wikipedia: Lock-up-Periode",
+          "url": "https://de.wikipedia.org/wiki/Lock-up-Periode"
+        },
+        {
+          "title": "Investopedia: Lockup Period",
+          "url": "https://www.investopedia.com/terms/l/lockup-period.asp"
+        },
+        {
+          "title": "StockCar: SPCX-Lockup-Kalender (aus dem 424B4-Prospekt)",
+          "url": "https://www.stockcar.app/insights/spacex-lockup-schedule"
+        }
+      ]
+    },
+    {
+      "id": "streubesitz",
+      "term": "Streubesitz (Free Float)",
+      "short": "Frei handelbare Aktien",
+      "explanation": "Der Anteil der Aktien, der wirklich an der Börse gehandelt wird. Bei SpaceX waren es zum Start nur rund 4,3 % – deshalb können Freigaben den Kurs stark bewegen.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Wikipedia: Streubesitz",
+          "url": "https://de.wikipedia.org/wiki/Streubesitz"
+        },
+        {
+          "title": "Investopedia: Floating Stock",
+          "url": "https://www.investopedia.com/terms/f/floating-stock.asp"
+        }
+      ]
+    },
+    {
+      "id": "form-4",
+      "term": "Form 4",
+      "short": "Meldung von Insider-Geschäften",
+      "explanation": "In den USA müssen Vorstände, Aufsichtsräte und Großaktionäre Käufe und Verkäufe binnen zwei Geschäftstagen bei der SEC melden. Daraus stammt die Insider-Liste in dieser App.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Investor.gov: Form 4",
+          "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/form-4"
+        }
+      ]
+    },
+    {
+      "id": "10b5-1",
+      "term": "10b5-1-Plan",
+      "short": "Vorab festgelegter Verkaufsplan",
+      "explanation": "Ein Insider legt im Voraus fest, wann und wie viel er verkauft. Solche Verkäufe sagen wenig über die aktuelle Meinung zur Firma, weil sie Monate vorher geplant wurden.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Investor.gov: Rule 10b5-1",
+          "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/rule-10b5-1"
+        }
+      ]
+    },
+    {
+      "id": "ebitda",
+      "term": "EBITDA",
+      "short": "Gewinn vor Zinsen, Steuern und Abschreibungen",
+      "explanation": "Eine Gewinnzahl ohne Abschreibungen. Bei SpaceX ist sie mit 8,8 Mrd. US-Dollar im Q3 viel höher als der Betriebsgewinn von 2,8 Mrd., weil die riesigen Investitionen in Rechenzentren und Satelliten über Abschreibungen laufen.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Wikipedia: EBITDA",
+          "url": "https://de.wikipedia.org/wiki/EBITDA"
+        },
+        {
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        }
+      ]
+    },
+    {
+      "id": "capex",
+      "term": "Capex",
+      "short": "Investitionsausgaben",
+      "explanation": "Geld für Fabriken, Raketen, Satelliten und Rechenzentren. SpaceX gab im Q3 19,6 Mrd. US-Dollar aus, davon 16,4 Mrd. für das KI-Segment.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Wikipedia: Investitionsausgaben",
+          "url": "https://de.wikipedia.org/wiki/Investitionsausgaben"
+        },
+        {
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        }
+      ]
+    },
+    {
+      "id": "arpu",
+      "term": "ARPU",
+      "short": "Umsatz je Kunde",
+      "explanation": "Durchschnittlicher Monatsumsatz pro Kunde. Bei Starlink sank er von 83 $ auf 69 $, weil neue Kunden aus günstigeren Ländern und Tarifen kommen.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Investopedia: ARPU",
+          "url": "https://www.investopedia.com/terms/a/arpu.asp"
+        },
+        {
+          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        }
+      ]
+    },
+    {
+      "id": "auftragsbestand",
+      "term": "Auftragsbestand (Backlog)",
+      "short": "Gebuchte, noch nicht erledigte Aufträge",
+      "explanation": "Umsatz, der vertraglich zugesagt, aber noch nicht geliefert ist. Bei Rocket Lab ein Rekord von 2,36 Mrd. US-Dollar zum Q2.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Wikipedia: Auftragsbestand",
+          "url": "https://de.wikipedia.org/wiki/Auftragsbestand"
+        },
+        {
+          "title": "Rocket Lab: Ergebnisse Q2 2026",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts"
+        }
+      ]
+    },
+    {
+      "id": "fomc",
+      "term": "FOMC",
+      "short": "Zinsausschuss der US-Notenbank",
+      "explanation": "Das Gremium der Fed, das acht Mal im Jahr über den Leitzins entscheidet. Nächste Entscheidung: 9. Dezember 2026, 20:00 Uhr bei uns.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Federal Reserve: FOMC",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomc.htm"
+        },
+        {
+          "title": "Federal Reserve: FOMC-Sitzungskalender",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        }
+      ]
+    },
+    {
+      "id": "cpi",
+      "term": "CPI",
+      "short": "US-Verbraucherpreisindex",
+      "explanation": "Misst die Inflation in den USA. Höhere Inflation bedeutet meist länger hohe Zinsen – schlecht für teure Wachstumsaktien.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Wikipedia: Verbraucherpreisindex",
+          "url": "https://de.wikipedia.org/wiki/Verbraucherpreisindex"
+        },
+        {
+          "title": "BLS: Termine Verbraucherpreisindex",
+          "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+        }
+      ]
+    },
+    {
+      "id": "wechselkurs",
+      "term": "EUR/USD",
+      "short": "Wechselkurs Euro zu Dollar",
+      "explanation": "Deine US-Aktien notieren in Dollar. Steigt der Euro, sinkt ihr Wert in Euro – auch wenn sich der Dollar-Kurs nicht bewegt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Wikipedia: Wechselkurs",
+          "url": "https://de.wikipedia.org/wiki/Wechselkurs"
+        }
+      ]
+    },
+    {
+      "id": "turmfang",
+      "term": "Turmfang",
+      "short": "Landung im Startturm",
+      "explanation": "SpaceX fängt die Raketenstufe mit zwei Armen am Startturm, statt sie auf Beinen landen zu lassen. Beim Booster gelang das schon, beim Schiff soll Flight 15 der erste Versuch werden.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Wikipedia: Super Heavy",
+          "url": "https://de.wikipedia.org/wiki/Super_Heavy"
+        },
+        {
+          "title": "Ars Technica: SpaceX will bei Flight 15 beide Stufen fangen",
+          "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
+        }
+      ]
+    },
+    {
+      "id": "bci",
+      "term": "Gehirn-Computer-Schnittstelle",
+      "short": "Brain-Computer-Interface, z. B. Neuralink",
+      "explanation": "Ein Implantat liest Signale aus dem Gehirn und steuert damit Computer oder Sprachausgabe. Neuralinks Geräte sind noch in klinischen Studien, nicht regulär zugelassen.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Wikipedia: Gehirn-Computer-Schnittstelle",
+          "url": "https://de.wikipedia.org/wiki/Gehirn-Computer-Schnittstelle"
+        },
+        {
+          "title": "Neurofounders: Neuralink VOICE-Studie, 75 Wörter pro Minute",
+          "url": "https://www.neurofounders.co/articles/neuralink-shares-speech-decoding-data-in-voice-trial"
         }
       ]
     }
