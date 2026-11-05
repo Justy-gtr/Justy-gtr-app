@@ -1,35 +1,23 @@
 {
   "example": false,
-  "asOf": "2026-11-05T08:36:54+01:00",
+  "asOf": "2026-11-05T09:40:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.35,
       "label": "zuversichtlich in den Posts, Kurs unter Druck",
-      "summary": "Die offiziellen Konten und Musk posten fast nur Gutes: Starship-Tests abgeschlossen, Qualcomm-Deal für Starlink Mobile, Grok Bot. Der Markt sieht es anders: SPCX schloss am 4.11. 3,8 % tiefer (zeitweise über 5 %), weil die Demokraten Kongress und Texas gewannen. Mein Wert gewichtet die Posts, nicht den Kurs. Nachbörslich ging es am Abend weiter auf 134,08 US-Dollar (−1,4 %): Laut Bloomberg bieten Goldman Sachs und Apollo Teile der 40-Mrd.-Chip-Finanzierung an, und Senator Ted Cruz warnte, die Demokraten würden Musk mit Vorladungen ins Visier nehmen.",
+      "summary": "Weiter Grok-Bot-Werbung von Musk am Morgen des 5.11. (Zahnarzt-Anruf, „jeder nutzt Grok Bot“) plus sarkastische Reaktion auf den KI-Pausen-Vorstoß einer Demokratin. Die offiziellen SpaceX-/Starlink-Konten blieben seit dem 8:30-Check still. Der Kurs bleibt unter Midterm-/Lock-up-Druck; Posts allein sind positiv-neutral, keine neue operative News.",
       "sources": [
         {
-          "title": "@Starlink auf X",
-          "url": "https://x.com/Starlink/status/2117973275414532165"
+          "title": "@elonmusk auf X (Grok Bot Zahnarzt)",
+          "url": "https://x.com/elonmusk/status/2118251808179323102"
         },
         {
-          "title": "@SpaceX auf X",
-          "url": "https://x.com/SpaceX/status/2115476295169814978"
+          "title": "@elonmusk auf X (Brave New World)",
+          "url": "https://x.com/elonmusk/status/2118248670915404057"
         },
         {
           "title": "Motley Fool: Why SpaceX Stock Is Down Today (04.11.2026)",
           "url": "https://www.fool.com/investing/2026/11/04/why-spacex-stock-is-down-today/"
-        },
-        {
-          "title": "Yahoo Finance: SPCX historische Kurse",
-          "url": "https://finance.yahoo.com/quote/SPCX/history/"
-        },
-        {
-          "title": "Stocktwits: SPCX rutscht nachbörslich, Chip-Finanzierung am Markt (04.11.2026)",
-          "url": "https://stocktwits.com/news-articles/markets/equity/spcx-spacex-40b-chip-financing-market-texas-senator-democrats-go-after-elon-musk/cNG1bF6R9Ed"
-        },
-        {
-          "title": "CNBC: SPCX Kurs und nachbörslicher Handel",
-          "url": "https://www.cnbc.com/quotes/SPCX"
         }
       ]
     },
@@ -54,6 +42,87 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2118251808179323102",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T08:59:20+01:00",
+      "summaryDe": "Musk wirbt weiter für Grok Bot: Es könne den Zahnarzt anrufen. Er zitiert einen Nutzer, dem der Bot prüft, ob die Praxis seine Versicherung nimmt. Reine Produktwerbung.",
+      "originalText": "Grok @Bot can call your dentist on the phone! (zitiert @ArthurMacwaters: Grok Bot rufe für ihn den Zahnarzt an und prüfe die Versicherung)",
+      "url": "https://x.com/elonmusk/status/2118251808179323102",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX (SI, ehemals xAI)"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118251808179323102"
+        },
+        {
+          "title": "Zitierter Beitrag von @ArthurMacwaters",
+          "url": "https://x.com/ArthurMacwaters/status/2118098432141431019"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118250472373129319",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T08:54:02+01:00",
+      "summaryDe": "Musk: „Jeder nutzt Grok Bot.“ Er zitiert einen Nutzer, der mit seinem Team ein „GrokPuck“ (Grok Bot in der Tasche) gebastelt hat. Wieder Werbung, keine Unternehmensneuigkeit.",
+      "originalText": "Everyone is using Grok @Bot (zitiert @minliangtan: Been using Grok Bot… Got my team to hack together a GrokPuck)",
+      "url": "https://x.com/elonmusk/status/2118250472373129319",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX (SI, ehemals xAI)"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118250472373129319"
+        },
+        {
+          "title": "Zitierter Beitrag von @minliangtan",
+          "url": "https://x.com/minliangtan/status/2118213415944724730"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118248670915404057",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T08:46:52+01:00",
+      "summaryDe": "Musk antwortet „It’s a Brave New World“ auf die Forderung der Demokratin Yassamin Ansari, fortgeschrittene KI zu pausieren und künstliche Superintelligenz zu verbieten. Politische Reaktion, kein Produkt-Update.",
+      "originalText": "It’s a Brave New World (zitiert @RepYassAnsari: Pause on advanced AI, regulation, ban on artificial superintelligence)",
+      "url": "https://x.com/elonmusk/status/2118248670915404057",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX (SI, ehemals xAI)"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118248670915404057"
+        },
+        {
+          "title": "Zitierter Beitrag von @RepYassAnsari",
+          "url": "https://x.com/RepYassAnsari/status/2118054336077127797"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118214299391057973",
       "account": "@elonmusk",
