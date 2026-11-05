@@ -668,6 +668,7 @@ body.detail-open .pager { overflow: hidden; }
 }
 .verdict.is-agree { color: #c8ffe8; background: rgba(61, 196, 154, .16); }
 .verdict.is-against { color: #ffe0bf; background: rgba(232, 146, 58, .2); }
+.verdict.is-mixed { color: #e4e8f0; background: rgba(255, 255, 255, .08); }
 .opinion-reason { margin-top: 12px; }
 .quote-head { margin-bottom: 2px; }
 .fold {
