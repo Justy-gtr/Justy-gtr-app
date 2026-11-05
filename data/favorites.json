@@ -2,8 +2,8 @@
   "example": false,
   "asOf": "2026-11-05",
   "owner": "Karl",
-  "title": "Karls Top 5",
-  "note": "Fünf Aktien aus dem ganzen Markt, nicht nur aus dem Musk-Umfeld. Kurse in Euro. Die älteren Themen Starlink und Tesla Energie bleiben im Treffer-Check, sie sind keine eigenen Aktien.",
+  "title": "Karls Top 10",
+  "note": "Zehn Aktien aus dem ganzen Markt, nicht nur aus dem Musk-Umfeld. Kurse in Euro. Tesla und Rocket Lab stehen mit dabei, weil sie schon in der Bilanz sind. Die älteren Themen Starlink und Tesla Energie bleiben im Treffer-Check, sie sind keine eigenen Aktien.",
   "favorites": [
     {
       "id": "fav-tsm",
@@ -170,6 +170,154 @@
         {
           "title": "KI-Aktien nach dem Wahlergebnis unter Druck (Economic Times, 05.11.2026)",
           "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-retreat-as-democratic-sweep-puts-data-centre-boom-in-focus/articleshow/135551445.cms"
+        }
+      ]
+    },
+    {
+      "id": "fav-tsla",
+      "rank": 6,
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "score": 5,
+      "karlStance": "vorsichtig",
+      "swarmStance": "halten",
+      "againstCrowd": true,
+      "horizon": "langfrist",
+      "priceEur": 342.15,
+      "priceAsOf": "2026-11-05",
+      "priceVenue": "Xetra",
+      "swarmNote": "Sawyer nennt sich Investor, Farzad bleibt bei halten. Gary findet die Bewertung zu hoch. Kein lautes Kaufsignal.",
+      "reason": "Tesla liefert, der Speicher wächst. An der Xetra steht die Aktie bei 342,15 €. Der Großteil des Werts hängt an Versprechen für 2027. Karl bleibt vorsichtig.",
+      "counterArgument": "Das Autogeschäft schrumpft im Jahresvergleich, und die großen Versprechen liegen in 2027 oder später. Tesla hat solche Termine schon oft verfehlt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: TL0.DE",
+          "url": "https://finance.yahoo.com/quote/TL0.DE"
+        },
+        {
+          "title": "Tesla IR: Produktion und Auslieferungen Q3 2026",
+          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+        },
+        {
+          "title": "@garyblack00 auf X: Geschäft ja, Bewertung nein",
+          "url": "https://x.com/garyblack00/status/2117562102982299798"
+        }
+      ]
+    },
+    {
+      "id": "fav-rklb",
+      "rank": 7,
+      "symbol": "RKLB",
+      "name": "Rocket Lab",
+      "score": 5,
+      "karlStance": "halten",
+      "swarmStance": "kaum",
+      "againstCrowd": true,
+      "horizon": "langfrist",
+      "priceEur": 46.5,
+      "priceAsOf": "2026-11-05",
+      "priceVenue": "Frankfurt",
+      "swarmNote": "In den geführten Konten kommt Rocket Lab kaum vor. Sawyer hat sie auf der Liste, ohne Posts.",
+      "reason": "Rekord-Auftragsbestand, Electron läuft, Neutron rutscht auf 2027. In Frankfurt: 46,50 €. Karl hält die 5, der Schwarm redet nicht darüber.",
+      "counterArgument": "Ohne Neutron bleibt Rocket Lab klein gegen SpaceX. Das Management verkauft seit Monaten Aktien.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: 6RJ0.F",
+          "url": "https://finance.yahoo.com/quote/6RJ0.F"
+        },
+        {
+          "title": "Rocket Lab: Ergebnisse Q2 2026",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts"
+        },
+        {
+          "title": "Rocket Lab: Neutron-Update, Erststart jetzt 2027",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+        }
+      ]
+    },
+    {
+      "id": "fav-asml",
+      "rank": 8,
+      "symbol": "ASML",
+      "name": "ASML",
+      "score": 6,
+      "karlStance": "halten",
+      "swarmStance": "kauf",
+      "againstCrowd": false,
+      "horizon": "langfrist",
+      "priceEur": 1311.4,
+      "priceAsOf": "2026-11-05",
+      "priceVenue": "Euronext Amsterdam",
+      "swarmNote": "Der Schwarm kauft die KI-Kette. ASML gehört dazu, leiser als Nvidia.",
+      "reason": "ASML baut die Maschinen, ohne die TSMC keine Chips belichtet. Der Schwarm kauft diese Kette. Karl gibt eine 6: das Geschäft ist echt, 1.311,40 € an der Euronext sind es auch.",
+      "counterArgument": "Exportregeln und eine Pause im Fabrikbau treffen ASML früher als die Software-Namen. Der Kurs lässt wenig Luft.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: ASML.AS",
+          "url": "https://finance.yahoo.com/quote/ASML.AS"
+        },
+        {
+          "title": "ASML Investor Relations",
+          "url": "https://www.asml.com/en/investors"
+        }
+      ]
+    },
+    {
+      "id": "fav-sap",
+      "rank": 9,
+      "symbol": "SAP",
+      "name": "SAP",
+      "score": 6,
+      "karlStance": "halten",
+      "swarmStance": "kaum",
+      "againstCrowd": true,
+      "horizon": "langfrist",
+      "priceEur": 219.35,
+      "priceAsOf": "2026-11-05",
+      "priceVenue": "Xetra",
+      "swarmNote": "In den geführten X-Konten kommt SAP nicht vor. Der Schwarm bleibt bei den KI-Namen.",
+      "reason": "SAP verkauft Unternehmenssoftware und notiert in Euro. An der Xetra: 219,35 €. Der Schwarm redet über Chips, nicht über SAP. Karl hält sie als Gegengewicht.",
+      "counterArgument": "Die Cloud-Umstellung ist langsam und schon im Kurs. Wenn die KI-Welle weiterläuft, bleibt SAP der ruhige Teil.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: SAP.DE",
+          "url": "https://finance.yahoo.com/quote/SAP.DE"
+        },
+        {
+          "title": "SAP Investor Relations",
+          "url": "https://www.sap.com/investors/de.html"
+        }
+      ]
+    },
+    {
+      "id": "fav-msft",
+      "rank": 10,
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "score": 5,
+      "karlStance": "vorsichtig",
+      "swarmStance": "kauf",
+      "againstCrowd": true,
+      "horizon": "langfrist",
+      "priceEur": 496.6,
+      "priceAsOf": "2026-11-05",
+      "priceVenue": "Xetra",
+      "swarmNote": "Der Schwarm stellt Microsoft neben Nvidia, weil dort die Rechenzentren laufen.",
+      "reason": "Microsoft vermietet die Rechner, auf denen die KI läuft. Der Schwarm kauft den Namen mit. An der Xetra (MSF): 496,60 €. Karl jagt ihn nicht.",
+      "counterArgument": "Die Ausgaben für Rechenzentren können die Marge drücken, bevor die Mieten das wieder hereinholen.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: MSF.DE",
+          "url": "https://finance.yahoo.com/quote/MSF.DE"
+        },
+        {
+          "title": "Microsoft Investor Relations",
+          "url": "https://www.microsoft.com/en-us/investor"
         }
       ]
     }
