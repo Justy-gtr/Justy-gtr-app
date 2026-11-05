@@ -39,7 +39,8 @@ function nightDrive() {
   const root = document.getElementById("egg-root");
   if (!root) return;
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  root.innerHTML = `<div class="night-drive" role="presentation">
+  root.innerHTML = `<div class="night-drive" role="dialog" aria-label="Nachtfahrt">
+    <button type="button" class="close-btn drive-close">Schließen</button>
     ${reduced ? "" : Array.from({ length: 14 }, (_, index) => `<span class="streak" style="top:${8 + index * 6}%;animation-delay:${index * 0.08}s"></span>`).join("")}
     <div class="drive-copy"><p>GT-R</p><h2>Nachtfahrt. Die Sterne bleiben auf der Spur.</h2></div>
   </div>`;

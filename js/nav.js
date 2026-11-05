@@ -30,6 +30,7 @@ export function initNav(pager, { onPage } = {}) {
   }
 
   function paint({ immediate = false } = {}) {
+    try {
     if (!stack.length) {
       root.innerHTML = "";
       document.body.classList.remove("detail-open");
@@ -38,8 +39,14 @@ export function initNav(pager, { onPage } = {}) {
     document.body.classList.add("detail-open");
     root.innerHTML = stack.map((item, index) => `
       <section class="detail${index === stack.length - 1 ? " top" : ""}" data-kind="${esc(item.kind)}" role="dialog" aria-modal="true" aria-label="${esc(item.title)}" tabindex="-1">
-        <p class="sr-only">Zum Schließen vom linken Bildschirmrand nach rechts wischen.</p>
-        <header class="detail-head"><p class="eyebrow">Detail</p><h2>${esc(item.title)}</h2></header>
+        <header class="detail-head">
+          <button type="button" class="close-btn" data-action="close">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M15 5 8 12l7 7"/></svg>
+            <span>Schließen</span>
+          </button>
+          <p class="eyebrow">Detail</p>
+          <h2>${esc(item.title)}</h2>
+        </header>
         <div class="detail-body">${item.html}</div>
       </section>
     `).join("");
@@ -47,7 +54,14 @@ export function initNav(pager, { onPage } = {}) {
     if (immediate) top?.classList.add("open");
     else requestAnimationFrame(() => top?.classList.add("open"));
     if (top) bindEdge(top);
-    top?.focus?.();
+    top?.focus?.({ preventScroll: true });
+    } catch (error) {
+      stack.length = 0;
+      closing = false;
+      root.innerHTML = "";
+      document.body.classList.remove("detail-open");
+      console.error(error);
+    }
   }
 
   function bindEdge(el) {
