@@ -43,10 +43,10 @@ function pill(on) {
   return on ? `<span class="pill">Beispiel</span>` : "";
 }
 
-function sourcesBlock(sources) {
+function sourcesBlock(sources, { labeled = true } = {}) {
   const list = (sources || []).map((source) => ({ title: source?.title, href: safeUrl(source?.url) })).filter((source) => source.href);
   if (!list.length) return "";
-  return `<div class="sources"><p class="sources-label">Quellen</p><ul>${list.map((source) => `<li><a href="${esc(source.href)}" target="_blank" data-external="true">${esc(source.title || "Quelle")}</a></li>`).join("")}</ul></div>`;
+  return `<div class="sources">${labeled ? `<p class="sources-label">Quellen</p>` : ""}<ul>${list.map((source) => `<li><a href="${esc(source.href)}" target="_blank" data-external="true">${esc(source.title || "Quelle")}</a></li>`).join("")}</ul></div>`;
 }
 
 function externalAnchor(href, label) {
@@ -203,39 +203,84 @@ function quoteRow(ticker, live) {
   </div>`;
 }
 
-const STANCE = {
-  kauf: "Kauf",
-  halten: "Halten",
-  verkauf: "Verkauf",
-  vorsichtig: "Vorsichtig",
-  kaum: "Kaum genannt",
-  beobachten: "Kaum genannt"
-};
+function opinionWord(value) {
+  switch (String(value || "")) {
+    case "kauf": return "optimistisch";
+    case "halten": return "neutral";
+    case "vorsichtig":
+    case "verkauf": return "vorsichtig";
+    case "kaum": return "redet kaum darüber";
+    case "beobachten": return "keine klare Meinung";
+    default: return value || "offen";
+  }
+}
+
+function opinionTone(value) {
+  const word = String(value || "");
+  if (word === "kauf") return "up";
+  if (word === "vorsichtig" || word === "verkauf") return "warn";
+  return "flat";
+}
+
+function opinionIcon(tone) {
+  if (tone === "up") {
+    return `<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 2.2 12.8 9H9.4v4.6H6.6V9H3.2z"/></svg>`;
+  }
+  if (tone === "warn") {
+    return `<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 1.6 15 14.4H1L8 1.6zm0 4.4.05 4.2h-.1L8 6zm0 6.1a.85.85 0 1 1 0 1.7.85.85 0 0 1 0-1.7z"/></svg>`;
+  }
+  return `<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M2.8 7.2h10.4v1.6H2.8z"/></svg>`;
+}
 
 function stanceLabel(value) {
-  return STANCE[value] || value || "—";
+  return opinionWord(value);
+}
+
+function opinionChip(who, stance) {
+  const tone = opinionTone(stance);
+  return `<span class="opin opin-${tone}"><span class="opin-icon">${opinionIcon(tone)}</span><span class="opin-text">${esc(who)} ${esc(opinionWord(stance))}</span></span>`;
+}
+
+function verdictBadge(item) {
+  const against = item?.againstCrowd === true;
+  return `<span class="verdict ${against ? "is-against" : "is-agree"}">${against ? "Karl dagegen" : "Einig"}</span>`;
+}
+
+const SCHWARM_LEGEND = "Schwarm = Meinung der X-Investoren, die Karl verfolgt. Keine echten Käufe.";
+
+function opinionCard(item, extra = "") {
+  return `<article class="opinion-card">
+    <div class="opinion-top">
+      <div class="opinion-who">
+        <strong>${esc(item.symbol || "")}</strong>
+        <span>${esc(item.name || "")}</span>
+      </div>
+      <div class="opinion-end">
+        <span class="opinion-price">${item.priceEur == null ? "" : esc(formatEUR(item.priceEur))}</span>
+        ${verdictBadge(item)}
+      </div>
+    </div>
+    <div class="opinion-chips">
+      ${opinionChip("Schwarm", item.swarmStance)}
+      ${opinionChip("Karl", item.karlStance)}
+    </div>
+    ${extra}
+  </article>`;
 }
 
 function topFive(favorites, ui) {
   if (!favorites.length) return "";
-  const against = favorites.filter((favorite) => favorite.againstCrowd).map((favorite) => favorite.symbol);
-  return `<section class="card top5" aria-label="Karls Top 5">
-    <div class="row between">
+  return `<section class="top5" aria-label="Karls Top 5">
+    <div class="row between top5-head">
       <h2>Karls Top 5</h2>
-      <button type="button" class="text-btn" data-action="page" data-page="schwarm">Schwarm gegen Karl</button>
+      <button type="button" class="text-btn" data-action="page" data-page="schwarm">Zum Vergleich</button>
     </div>
-    <p class="muted">Fünf Aktien aus dem ganzen Markt, Kurse in Euro. ${against.length ? `Gegen den Schwarm: ${esc(against.join(", "))}.` : ""}</p>
-    ${favorites.map((favorite) => `<article class="top-row">
-      <div class="row between">
-        <strong>${esc(String(favorite.rank || ""))} · ${esc(favorite.symbol)}</strong>
-        <span class="fav-px">${favorite.priceEur == null ? "" : esc(formatEUR(favorite.priceEur))}</span>
-      </div>
-      <p class="muted">${esc(favorite.name)} · ${esc(String(favorite.score))}/10 · ${esc(favorite.priceVenue || "Euro")}${favorite.againstCrowd ? " · dagegen" : ""}</p>
-      <p class="stance-line"><span>Schwarm ${esc(stanceLabel(favorite.swarmStance))}</span><span>Karl ${esc(stanceLabel(favorite.karlStance))}</span></p>
-      <p>${esc(favorite.reason)}</p>
+    <p class="legend">${esc(SCHWARM_LEGEND)}</p>
+    ${favorites.map((favorite) => opinionCard(favorite, `
+      <p class="opinion-reason">${esc(favorite.reason || "")}</p>
       <button type="button" class="text-btn" data-action="gegenteil" data-id="${esc(favorite.id)}" aria-expanded="${ui.revealed[favorite.id] ? "true" : "false"}">Gegenteil</button>
       ${ui.revealed[favorite.id] ? `<p class="counter">${esc(favorite.counterArgument || "Dazu liegt noch kein Gegenargument vor.")}</p>` : ""}
-    </article>`).join("")}
+    `)).join("")}
   </section>`;
 }
 
@@ -325,21 +370,20 @@ function renderSchwarm(data) {
     <header class="page-head">
       <p class="eyebrow">Ganzer Markt</p>
       <h2>Schwarm gegen Karl</h2>
-      <p class="lede">Karl setzt auf fünf Aktien, nicht nur auf Tesla und SpaceX. Die laute Richtung steht daneben.</p>
     </header>
-    <article class="card compare">
-      <p class="kicker">Richtung, nicht eine erfundene Quote</p>
-      ${(comparison.picks || []).map((pick) => `
-        <div class="versus-row">
-          <strong>${esc(pick.symbol)}</strong>
-          <span>${pick.priceEur == null ? "" : esc(formatEUR(pick.priceEur))}</span>
-          <span>Schwarm ${esc(stanceLabel(pick.swarmStance))}</span>
-          <span class="gold">Karl ${esc(stanceLabel(pick.karlStance))}${pick.againstCrowd ? " · dagegen" : ""}</span>
-        </div>`).join("")}
-      <p>${esc(comparison.summary || "")}</p>
-      ${comparison.swarmHitRatePct == null ? `<p class="muted">Trefferquote Schwarm und Karl: noch offen.</p>` : `<div class="versus"><div><span class="big">${esc(formatNumber(comparison.swarmHitRatePct, 0))} %</span><span class="muted">Schwarm</span></div><div><span class="big gold">${esc(formatNumber(comparison.karlHitRatePct, 0))} %</span><span class="muted">Karl</span></div></div>`}
-      ${sourcesBlock(comparison.sources)}
-    </article>
+    <p class="legend">${esc(SCHWARM_LEGEND)}</p>
+    <div class="opinion-list">${(comparison.picks || []).map((pick) => opinionCard(pick)).join("")}</div>
+    <details class="fold">
+      <summary>Erklärung</summary>
+      <div class="fold-body">
+        <p>${esc(comparison.summary || "Karl und der Schwarm werden an derselben Aktie verglichen. Der Schwarm ist eine Meinung, kein Depot.")}</p>
+        ${comparison.swarmHitRatePct == null ? `<p class="muted">Eine Trefferquote gibt es noch nicht.</p>` : `<div class="versus"><div><span class="big">${esc(formatNumber(comparison.swarmHitRatePct, 0))} %</span><span class="muted">Schwarm</span></div><div><span class="big gold">${esc(formatNumber(comparison.karlHitRatePct, 0))} %</span><span class="muted">Karl</span></div></div>`}
+      </div>
+    </details>
+    <details class="fold">
+      <summary>Quellen</summary>
+      <div class="fold-body">${sourcesBlock(comparison.sources, { labeled: false }) || `<p class="empty">Keine Quellen hinterlegt.</p>`}</div>
+    </details>
     <div class="stack">${investors.map((investor) => `
       <button type="button" class="card linkish" data-action="open-investor" data-id="${esc(investor.id)}">
         <span class="row between"><strong>${esc(investor.name)}</strong>${pill(investor.example)}</span>
