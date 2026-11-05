@@ -618,20 +618,57 @@ body.detail-open .pager { overflow: hidden; }
 }
 .next-title { font-size: 22px; line-height: 1.2; letter-spacing: -0.03em; font-weight: 640; }
 .note-card h2 { font-size: 22px; margin: 2px 0 6px; }
+.top5, .opinion-list { display: flex; flex-direction: column; gap: 14px; }
+.top5-head { align-items: baseline; }
 .top5 h2 { margin: 0; font-size: 22px; }
-.top-row { padding: 12px 0; border-top: 1px solid var(--line); }
-.top-row .fav-px { font-variant-numeric: tabular-nums; font-weight: 650; }
-.stance-line { display: flex; gap: 12px; color: var(--muted); font-size: 13px; }
-.versus-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 12px;
-  align-items: baseline;
-  padding: 10px 0;
-  border-top: 1px solid var(--line);
-  font-size: 14px;
+.legend { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.35; }
+.opinion-card {
+  border-radius: 22px;
+  padding: 16px 16px 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.12);
 }
-.versus-row strong { min-width: 4.2rem; }
+.opinion-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: center;
+}
+.opinion-who strong { display: block; font-size: 20px; letter-spacing: -0.03em; line-height: 1.1; }
+.opinion-who span { display: block; margin-top: 2px; color: var(--muted); font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.opinion-end { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.opinion-price { font-size: 17px; font-weight: 650; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; white-space: nowrap; }
+.opinion-chips { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 14px; }
+.opin {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  max-width: 100%;
+  padding: 0 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1;
+}
+.opin-icon { display: inline-flex; flex: 0 0 auto; }
+.opin-up { color: #c8ffe8; background: rgba(61, 196, 154, .18); }
+.opin-flat { color: #e4e8f0; background: rgba(255, 255, 255, .08); }
+.opin-warn { color: #ffe0bf; background: rgba(232, 146, 58, .2); }
+.verdict {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+.verdict.is-agree { color: #c8ffe8; background: rgba(61, 196, 154, .16); }
+.verdict.is-against { color: #ffe0bf; background: rgba(232, 146, 58, .2); }
+.opinion-reason { margin-top: 12px; }
 .quote-head { margin-bottom: 2px; }
 .fold {
   border-radius: 22px;
