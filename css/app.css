@@ -372,8 +372,16 @@ button.card { border-radius: 24px; }
 .switch[aria-checked="true"] .knob::after { transform: translateX(16px); background: var(--gold); }
 
 .chart-wrap { padding: 10px 8px 8px; }
-.chart { width: 100%; height: 210px; display: block; }
+.chart { width: 100%; height: 260px; display: block; }
 .chart.mini { height: 64px; }
+.chart-price { touch-action: none; cursor: crosshair; }
+.scrub {
+  margin: 0 0 8px;
+  min-height: 1.3em;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
 
 .menu { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .menu .card { min-height: 96px; }
