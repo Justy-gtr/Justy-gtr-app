@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { berlinParts, shouldRun } from "./schedule.mjs";
 import { fxFor, mergeTicker, meaningful, updateAlerts, usdToEur } from "./market.mjs";
-import { bigDrop, scoreboard, seriesFor, trackSummary } from "../js/logic.js";
+import { bigDrop, headlineEvent, isInAppUrl, scoreboard, seriesFor, trackSummary } from "../js/logic.js";
 
 test("Dollar wird durch EURUSD geteilt, nicht multipliziert", () => {
   assert.equal(usdToEur(112.32, 1.1232), 100);
@@ -154,6 +154,26 @@ test("Punkte gibt es nur, wenn Justy und Karl dieselbe Frage beantwortet haben",
   assert.deepEqual(empty, { justy: 0, karl: 0, decided: 0 });
   const scored = scoreboard(file, { answers: { b: { answer: "ja" }, c: { answer: "nein" } } });
   assert.deepEqual(scored, { justy: 2, karl: 1, decided: 2 });
+});
+
+test("Der nächste Termin ist der früheste, bei gleichem Tag der wichtigere", () => {
+  const events = [
+    { id: "late", date: "2026-12-01", impact: "hoch" },
+    { id: "soon-low", date: "2026-11-08", impact: "niedrig" },
+    { id: "soon-high", date: "2026-11-08", impact: "hoch" },
+    { id: "past", date: "2026-11-01", impact: "hoch" }
+  ];
+  const pick = headlineEvent(events, new Date(2026, 10, 4));
+  assert.equal(pick.id, "soon-high");
+});
+
+test("Nur die App-Adresse bleibt im Fenster", () => {
+  const origin = "https://justy-gtr.github.io";
+  const base = "/Justy-gtr-app";
+  assert.equal(isInAppUrl(new URL("https://justy-gtr.github.io/Justy-gtr-app/"), origin, base), true);
+  assert.equal(isInAppUrl(new URL("https://justy-gtr.github.io/Justy-gtr-app/index.html"), origin, base), true);
+  assert.equal(isInAppUrl(new URL("https://x.com/SpaceX"), origin, base), false);
+  assert.equal(isInAppUrl(new URL("https://justy-gtr.github.io/Justy-gtr-app/data/prices.json"), origin, base), false);
 });
 
 test("Trefferquote rechnet nur entschiedene Ideen", () => {

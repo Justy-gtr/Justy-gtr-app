@@ -245,13 +245,31 @@ export function trackSummary(picks) {
 }
 
 export function upcomingEvents(events, now = new Date(), count = 3) {
-  const sorted = [...(events || [])].sort((a, b) => String(a.date).localeCompare(String(b.date)));
+  const sorted = [...(events || [])].sort((a, b) => String(a.date).localeCompare(String(b.date)) || impactRank(b) - impactRank(a));
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
   const future = sorted.filter((event) => {
     const date = parseDay(event.date);
     return date && date.getTime() >= today;
   });
   return (future.length ? future : sorted).slice(0, count);
+}
+
+const IMPACT = { hoch: 3, mittel: 2, niedrig: 1 };
+
+function impactRank(event) {
+  return IMPACT[event?.impact] || 0;
+}
+
+/** Soonest upcoming event. Same day: higher impact first. */
+export function headlineEvent(events, now = new Date()) {
+  return upcomingEvents(events, now, 1)[0] || null;
+}
+
+export function isInAppUrl(url, origin = location.origin, base = "") {
+  if (!url || url.origin !== origin) return false;
+  const path = url.pathname.replace(/\/$/, "");
+  const root = String(base || "").replace(/\/$/, "");
+  return path === root || path === `${root}/index.html`;
 }
 
 export function methodLabel(ticker) {

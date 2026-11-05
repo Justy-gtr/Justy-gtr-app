@@ -1,10 +1,10 @@
 import { drawCharts } from "./chart.js";
 import { loadData } from "./data.js";
 import { initEggs } from "./eggs.js";
-import { appBase, loadStore, saveStore } from "./logic.js";
+import { appBase, isInAppUrl, loadStore, saveStore } from "./logic.js";
 import { playLiftoff, tickCountdown } from "./motion.js";
 import { initNav } from "./nav.js";
-import { detailContent, glossaryList, renderShell } from "./views.js";
+import { detailContent, errorDetail, glossaryList, renderShell } from "./views.js";
 
 const ui = {
   page: "heute",
@@ -51,12 +51,17 @@ function restoreScroll(map) {
 
 function render() {
   const scrolls = captureScroll();
-  renderShell(context());
+  try {
+    renderShell(context());
+  } catch (error) {
+    const home = document.getElementById("page-heute");
+    if (home) home.innerHTML = `<article class="card error-card"><h2>Startseite gerade nicht da.</h2><p class="muted">${error.message}</p></article>`;
+  }
   restoreScroll(scrolls);
   requestAnimationFrame(() => {
-    drawCharts(data, ui);
+    try { drawCharts(data, ui); } catch { /* Chart bleibt leer, die Seite nicht. */ }
     tickCountdown();
-    eggs.afterRender(data);
+    try { eggs.afterRender(data); } catch { /* Überraschung ist Beiwerk. */ }
   });
 }
 
@@ -70,12 +75,63 @@ function toast(message) {
 }
 
 function openDetail(action, dataset, replace = false) {
-  const detail = detailContent(action, dataset, context());
-  if (!detail) return;
-  if (replace && nav.topKind() === detail.kind) nav.replace(detail.kind, detail.title, detail.html);
-  else nav.open(detail.kind, detail.title, detail.html);
-  requestAnimationFrame(() => drawCharts(data, ui));
+  let detail;
+  try {
+    detail = detailContent(action, dataset, context());
+  } catch (error) {
+    detail = errorDetail(error);
+  }
+  if (!detail) detail = errorDetail(new Error("Diese Ansicht gibt es nicht."));
+  if (!detail.html || !String(detail.html).trim()) {
+    detail = { ...detail, html: `<p class="empty">Hier liegt gerade nichts.</p>` };
+  }
+  try {
+    if (replace && nav.topKind() === detail.kind) nav.replace(detail.kind, detail.title || "Ansicht", detail.html);
+    else nav.open(detail.kind || "detail", detail.title || "Ansicht", detail.html);
+  } catch {
+    nav.closeAll();
+    toast("Die Ansicht ließ sich nicht öffnen.");
+    return;
+  }
+  requestAnimationFrame(() => {
+    try { drawCharts(data, ui); } catch { /* Ein Chart darf die Ansicht nicht leer lassen. */ }
+  });
 }
+
+function openExternal(href) {
+  const opened = window.open(href, "_blank");
+  if (opened) {
+    try { opened.opener = null; } catch { /* iOS lässt das oft nicht zu. */ }
+    return;
+  }
+  const sheet = document.getElementById("link-sheet");
+  const label = document.getElementById("link-sheet-url");
+  if (label) label.textContent = href;
+  if (sheet) {
+    sheet.hidden = false;
+    sheet.dataset.href = href;
+  }
+}
+
+document.addEventListener("click", (event) => {
+  const anchor = event.target.closest("a[href]");
+  if (!anchor) return;
+  let url;
+  try {
+    url = new URL(anchor.href, location.href);
+  } catch {
+    event.preventDefault();
+    return;
+  }
+  if (url.protocol !== "http:" && url.protocol !== "https:") {
+    event.preventDefault();
+    return;
+  }
+  if (isInAppUrl(url, location.origin, appBase())) return;
+  event.preventDefault();
+  event.stopPropagation();
+  openExternal(url.href);
+}, true);
 
 document.body.addEventListener("click", (event) => {
   const el = event.target.closest("[data-action]");
@@ -151,6 +207,20 @@ document.body.addEventListener("click", (event) => {
     refresh(true);
     return;
   }
+  if (action === "close") {
+    nav.close();
+    return;
+  }
+  if (action === "dismiss-link") {
+    const sheet = document.getElementById("link-sheet");
+    if (sheet) sheet.hidden = true;
+    return;
+  }
+  if (action === "open-link-again") {
+    const href = document.getElementById("link-sheet")?.dataset.href;
+    if (href) window.open(href, "_blank");
+    return;
+  }
   openDetail(action, el.dataset);
 });
 
@@ -196,6 +266,14 @@ async function boot() {
     if (document.visibilityState === "visible" && hiddenAt.t && Date.now() - hiddenAt.t > 120000) refresh(false);
   });
   if ("serviceWorker" in navigator) {
+    let reloaded = false;
+    if (navigator.serviceWorker.controller) {
+      navigator.serviceWorker.addEventListener("controllerchange", () => {
+        if (reloaded) return;
+        reloaded = true;
+        location.reload();
+      });
+    }
     const base = appBase();
     navigator.serviceWorker.register(`${base}/sw.js`, { scope: `${base}/` }).catch(() => {});
   }

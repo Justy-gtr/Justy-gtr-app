@@ -1,4 +1,4 @@
-const CACHE = "jgtr-v2";
+const CACHE = "jgtr-v3";
 const CORE = [
   "",
   "index.html",
@@ -65,12 +65,41 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
   if (request.destination === "audio" || request.destination === "video") return;
+  if (request.mode === "navigate") {
+    event.respondWith(navigate(request));
+    return;
+  }
   if (url.pathname.includes("/data/")) {
     event.respondWith(networkFirst(request));
     return;
   }
   event.respondWith(cacheFirst(request));
 });
+
+function shellUrl() {
+  return new URL("index.html", self.registration.scope);
+}
+
+function isAppShell(url) {
+  const base = new URL(self.registration.scope).pathname.replace(/\/$/, "");
+  const path = url.pathname.replace(/\/$/, "");
+  return path === base || path === `${base}/index.html`;
+}
+
+async function navigate(request) {
+  const cache = await caches.open(CACHE);
+  const shell = await cache.match(shellUrl());
+  const url = new URL(request.url);
+  try {
+    const response = await fetch(request);
+    if (response.ok && isAppShell(url)) return response;
+    if (shell) return shell;
+    return response;
+  } catch {
+    if (shell) return shell;
+    return new Response("offline", { status: 504, headers: { "Content-Type": "text/plain; charset=utf-8" } });
+  }
+}
 
 async function networkFirst(request) {
   const cache = await caches.open(CACHE);
@@ -94,7 +123,6 @@ async function cacheFirst(request) {
     if (response.ok) cache.put(request, response.clone());
     return response;
   } catch {
-    const fallback = await cache.match(new URL("./", self.registration.scope));
-    return fallback || new Response("offline", { status: 504 });
+    return new Response("offline", { status: 504, headers: { "Content-Type": "text/plain; charset=utf-8" } });
   }
 }

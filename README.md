@@ -20,13 +20,13 @@ Beim ersten Öffnen erinnert die Startseite daran. Die App merkt sich das Wegkli
 
 Die sechs Bereiche liegen nebeneinander: Heute, Kalender, Posts, Schwarm, Charts, Mehr. Waagerecht wischen wechselt den Bereich, die Leiste unten springt direkt hin.
 
-Eine Karte öffnet die Detailansicht. Zurück geht es mit einem Wisch vom linken Bildschirmrand nach rechts. Es gibt dafür keinen Zurück-Knopf. Mit der Tastatur schließt Escape die Ansicht, die Pfeiltasten wechseln den Bereich.
+Eine Karte öffnet die Detailansicht. Oben links steht **Schließen**, zusätzlich geht ein Wisch vom linken Rand zurück. Externe Links, zum Beispiel Posts auf X und Quellen, öffnen Safari und ersetzen die App nicht. Mit der Tastatur schließt Escape die Ansicht, die Pfeiltasten wechseln den Bereich.
 
 Auf dem iPhone im Vollbild nutzt die App die sicheren Ränder und scrollt nur innen, damit die Seite nicht am Gummiband des Browsers hängt.
 
 ## Was die Bereiche zeigen
 
-- **Heute:** Kurse von SPCX, TSLA und RKLB in Euro, Karls fünf Favoriten, die nächsten Termine, der Starship-Countdown, Kosmos, Briefing und Tagesfrage.
+- **Heute:** Begrüßung, die drei Kurse in Euro, der nächste Termin und Karls wichtigste Notiz. Der Rest liegt in kurzen aufklappbaren Blöcken.
 - **Kalender:** Umschalter Unternehmen / Extern. Jeder Termin hat Datum, Wahrscheinlichkeitsbalken, Begründung und Quellen.
 - **Posts:** Kurzfassungen auf Deutsch, Link zum Original, Stimmungsbogen für SpaceX und Tesla.
 - **Schwarm:** Genannte Ticker, Erwähnungen, Trefferquote, Vergleich Schwarm gegen Karl.

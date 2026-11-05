@@ -8,15 +8,14 @@ import {
   formatStamp,
   freshPrices,
   greeting,
+  headlineEvent,
   isStandalone,
   methodLabel,
-  questionsOf,
   rangeChange,
   safeUrl,
   scoreboard,
   seriesFor,
   trackSummary,
-  upcomingEvents,
   bigDrop
 } from "./logic.js";
 
@@ -47,7 +46,25 @@ function pill(on) {
 function sourcesBlock(sources) {
   const list = (sources || []).map((source) => ({ title: source?.title, href: safeUrl(source?.url) })).filter((source) => source.href);
   if (!list.length) return "";
-  return `<div class="sources"><p class="sources-label">Quellen</p><ul>${list.map((source) => `<li><a href="${esc(source.href)}" target="_blank" rel="noopener noreferrer">${esc(source.title || "Quelle")}</a></li>`).join("")}</ul></div>`;
+  return `<div class="sources"><p class="sources-label">Quellen</p><ul>${list.map((source) => `<li><a href="${esc(source.href)}" target="_blank" data-external="true">${esc(source.title || "Quelle")}</a></li>`).join("")}</ul></div>`;
+}
+
+function externalAnchor(href, label) {
+  const safe = safeUrl(href);
+  if (!safe) return "";
+  return `<a class="text-btn" href="${esc(safe)}" target="_blank" data-external="true">${esc(label)}</a>`;
+}
+
+function pageError(error) {
+  return `<article class="card error-card"><h2>Diese Seite lässt sich gerade nicht zeigen.</h2><p>Unten bleiben die anderen Bereiche erreichbar.</p><p class="muted">${esc(error?.message || "")}</p></article>`;
+}
+
+export function errorDetail(error) {
+  return {
+    kind: "error",
+    title: "Etwas ist schiefgegangen",
+    html: `<article class="card error-card"><p>Diese Ansicht konnte nicht geladen werden. Schließen bringt dich zurück.</p><p class="muted">${esc(error?.message || "")}</p></article>`
+  };
 }
 
 function prose(text) {
@@ -97,12 +114,23 @@ function gauge(title, block) {
 
 export function renderShell(ctx) {
   const { data, ui, store } = ctx;
-  document.getElementById("page-heute").innerHTML = renderHeute(data, ui, store);
-  document.getElementById("page-kalender").innerHTML = renderKalender(data, ui);
-  document.getElementById("page-posts").innerHTML = renderPosts(data, ui);
-  document.getElementById("page-schwarm").innerHTML = renderSchwarm(data);
-  document.getElementById("page-charts").innerHTML = renderChartsPage(data, ui);
-  document.getElementById("page-mehr").innerHTML = renderMehr(data);
+  const pages = [
+    ["page-heute", () => renderHeute(data, ui, store)],
+    ["page-kalender", () => renderKalender(data, ui)],
+    ["page-posts", () => renderPosts(data, ui)],
+    ["page-schwarm", () => renderSchwarm(data)],
+    ["page-charts", () => renderChartsPage(data, ui)],
+    ["page-mehr", () => renderMehr(data)]
+  ];
+  for (const [id, build] of pages) {
+    const node = document.getElementById(id);
+    if (!node) continue;
+    try {
+      node.innerHTML = build();
+    } catch (error) {
+      node.innerHTML = pageError(error);
+    }
+  }
   const mode = document.getElementById("mode-pill");
   if (mode) mode.hidden = data.meta?.dataMode === "live";
   const stand = document.getElementById("stand");
@@ -116,82 +144,77 @@ export function renderShell(ctx) {
 function renderHeute(data, ui, store) {
   const tickers = data.prices?.tickers || [];
   const calm = bigDrop(data);
-  const events = upcomingEvents(data.calendar?.events || []);
+  const next = headlineEvent(data.calendar?.events || []);
+  const favorites = [...(data.favorites?.favorites || [])].sort((a, b) => (a.rank || 99) - (b.rank || 99));
+  const top = favorites[0];
+  const rest = favorites.slice(1);
   const launch = data.production?.nextLaunch;
   const question = data.daily_question?.current;
-  const answer = question ? store.answers?.[question.id] : null;
-  const board = scoreboard(data.daily_question, store);
   const live = freshPrices(data.meta);
-  const alerts = (data.alerts?.alerts || []).slice(0, 2);
+  const alerts = data.alerts?.alerts || [];
   const install = !store.installHidden && !isStandalone();
+  const today = new Intl.DateTimeFormat("de-DE", { weekday: "long", day: "numeric", month: "long" }).format(new Date());
+  const dropped = calm.tickers.map((ticker) => ticker.symbol).join(", ");
   return `
-    <header class="page-head">
+    <header class="page-head home-head">
       <p class="eyebrow">Heute</p>
       <h1>${esc(greeting())}, Justy</h1>
-      <p class="lede">${esc(data.briefing?.summary || "Dein Cockpit für SpaceX, Tesla und das, was die Kurse bewegt.")}</p>
+      <p class="dateline">${esc(today)}</p>
     </header>
-    ${data.meta?.dataMode !== "live" ? `<p class="banner">Beispieldaten. Die Karten sind gefüllt, die echten Notizen kommen später.</p>` : ""}
-    ${install ? `<div class="card install"><p>In Safari auf Teilen tippen, dann „Zum Home-Bildschirm“.</p><button type="button" data-action="dismiss-install">Verstanden</button></div>` : ""}
-    ${calm.active ? `<button type="button" class="banner banner-calm" data-action="open-calm">Ruhe-Modus. ${esc(calm.tickers.map((ticker) => ticker.symbol).join(", ") || "Ein Kurs")} gibt deutlich nach. Historische Erholungen ansehen.</button>` : ""}
-    <section class="stack" aria-label="Kurse">
-      ${tickers.map((ticker) => priceCard(ticker, live)).join("")}
+    ${install ? `<p class="install-line"><span>In Safari auf Teilen tippen, dann „Zum Home-Bildschirm“.</span><button type="button" data-action="dismiss-install">OK</button></p>` : ""}
+    ${calm.active ? `<button type="button" class="banner banner-calm" data-action="open-calm">Ruhe-Modus · ${esc(dropped || "Ein Kurs")}</button>` : ""}
+    <section class="card quote-card" aria-label="Kurse in Euro">
+      ${tickers.map((ticker) => quoteRow(ticker, live)).join("") || `<p class="empty">Keine Kurse.</p>`}
     </section>
-    ${alerts.length ? `<section><div class="row between"><h2>Bewegung ab 2 %</h2></div>${alerts.map((alert) => `
-      <button type="button" class="card linkish" data-action="open-alerts">
-        <span class="row between"><strong>${esc(alert.symbol)}</strong>${pill(alert.example)}<span class="${tone(alert.changePct)}">${arrow(alert.changePct)} ${esc(formatPct(alert.changePct))}</span></span>
+    ${next ? `<button type="button" class="card next-card" data-action="open-event" data-id="${esc(next.id)}">
+      <span class="kicker">Als Nächstes</span>
+      <span class="next-title">${esc(next.title)}</span>
+      <span class="muted">${esc(formatDay(next.date))}${next.time ? ` · ${esc(next.time)}` : ""} · ${esc(String(next.probabilityPct ?? "—"))} %</span>
+    </button>` : ""}
+    ${top ? favoriteNote(top, ui, true) : ""}
+    ${rest.length ? `<details class="fold"><summary>Karls weitere Notizen <span class="muted">${rest.length}</span></summary><div class="fold-body">${rest.map((favorite) => favoriteNote(favorite, ui, false)).join("")}</div></details>` : ""}
+    ${launch ? `<details class="fold"><summary><span>Starship</span><span class="count-num summary-count" id="count-num" data-target="${esc(launch.target || "")}">—</span></summary><div class="fold-body">${launchBody(launch)}</div></details>` : ""}
+    ${alerts.length ? `<details class="fold"><summary>Bewegungen ab 2 % <span class="muted">${alerts.length}</span></summary><div class="fold-body">${alerts.slice(0, 6).map((alert) => `
+      <button type="button" class="mini-note" data-action="open-alerts">
+        <span class="row between"><strong>${esc(alert.symbol)}</strong><span class="${tone(alert.changePct)}">${esc(formatPct(alert.changePct))}</span></span>
         <span class="muted">${esc(formatStamp(alert.timestamp))}${alert.notified ? " · gemeldet" : ""}</span>
-      </button>`).join("")}</section>` : ""}
-    <section>
-      <div class="row between"><h2>Karls 5 Favoriten</h2><span class="muted">${esc(data.favorites?.asOf || "")}</span></div>
-      ${(data.favorites?.favorites || []).map((favorite) => `
-        <article class="card fav">
-          <div class="row between">
-            <div><p class="kicker">${esc(favorite.symbol || "Thema")} · ${esc(String(favorite.rank || ""))}</p><h3>${esc(favorite.name)}</h3></div>
-            ${pill(favorite.example)}
-          </div>
-          <div class="row score-row">${scoreMeter(favorite.score)}<strong>${esc(String(favorite.score))}/10</strong></div>
-          <p>${esc(favorite.reason)}</p>
-          <button type="button" class="text-btn" data-action="gegenteil" data-id="${esc(favorite.id)}" aria-expanded="${ui.revealed[favorite.id] ? "true" : "false"}">Gegenteil</button>
-          ${ui.revealed[favorite.id] ? `<p class="counter">${esc(favorite.counterArgument || "Dazu liegt noch kein Gegenargument vor.")}</p>` : ""}
-        </article>`).join("")}
-    </section>
-    <section>
-      <div class="row between"><h2>Nächste Termine</h2><button type="button" class="text-btn" data-action="page" data-page="kalender">Kalender</button></div>
-      ${events.map((event) => eventRow(event)).join("") || `<p class="empty">Keine Termine.</p>`}
-    </section>
-    <section>${launchCard(launch)}</section>
-    <section>
-      <h2>Kosmos</h2>
-      <div class="chips">${(data.companies?.companies || []).map((company) => `
-        <button type="button" class="chip" data-action="open-company" data-id="${esc(company.id)}">${esc(company.name)}</button>`).join("")}</div>
-    </section>
-    <section class="split">
-      <button type="button" class="card linkish" data-action="open-briefing"><p class="kicker">Morgen</p><h3>Briefing</h3><p>${esc(data.briefing?.greeting || "")}</p></button>
-      <button type="button" class="card linkish" data-action="open-question"><p class="kicker">Tagesfrage</p><h3>${esc(question?.question || "Noch keine Frage")}</h3><p class="muted">Justy ${board.justy} · Karl ${board.karl}</p>${answer ? `<p>Deine Antwort: ${esc(answer.answer)}</p>` : ""}</button>
-    </section>
+      </button>`).join("")}</div></details>` : ""}
+    <details class="fold"><summary>Kosmos</summary><div class="fold-body chips">${(data.companies?.companies || []).map((company) => `
+      <button type="button" class="chip" data-action="open-company" data-id="${esc(company.id)}">${esc(company.name)}</button>`).join("")}</div></details>
+    <div class="jump-list">
+      <button type="button" data-action="open-briefing"><span>Morgen-Briefing</span><span aria-hidden="true">›</span></button>
+      <button type="button" data-action="open-question"><span>${esc(question?.question || "Tagesfrage")}</span><span aria-hidden="true">›</span></button>
+      <button type="button" data-action="page" data-page="kalender"><span>Ganzer Kalender</span><span aria-hidden="true">›</span></button>
+    </div>
   `;
 }
 
-function priceCard(ticker, live) {
+function quoteRow(ticker, live) {
   const fresh = live && ticker.example !== true;
-  return `<article class="card price-card${ticker.example ? "" : " is-live-card"}" data-symbol-card="${esc(ticker.symbol)}">
-    <div class="row between">
-      <div>
-        <p class="kicker">${esc(ticker.role || ticker.venue || "")} ${fresh ? `<span class="live-dot" title="Frische Kurse"></span>` : ""}</p>
-        <h3>${esc(ticker.symbol)}</h3>
-        <p class="muted">${esc(ticker.name)}</p>
-      </div>
-      ${sparkline(ticker.sparkline)}
-    </div>
-    <button type="button" class="price-hit" data-action="open-company" data-symbol="${esc(ticker.symbol)}">
-      <span class="price-value">${esc(formatEUR(ticker.priceEur))}</span>
-      <span class="price-change ${tone(ticker.changePct)}">${arrow(ticker.changePct)} ${esc(formatPct(ticker.changePct))}</span>
-    </button>
-    <div class="row between">
-      <span class="muted">${esc(methodLabel(ticker))}${ticker.stale ? " · verzögert" : ""}</span>
-      <span class="row gap">${pill(ticker.example)}<button type="button" class="text-btn" data-action="explain" data-symbol="${esc(ticker.symbol)}">Warum?</button></span>
-    </div>
-  </article>`;
+  return `<div class="quote" data-symbol-card="${esc(ticker.symbol)}">
+    <button type="button" class="quote-hit" data-action="open-company" data-symbol="${esc(ticker.symbol)}" aria-label="${esc(ticker.name || ticker.symbol)} öffnen"></button>
+    <span class="q-name">
+      <strong>${esc(ticker.symbol)}${fresh ? `<span class="live-dot" title="Frische Kurse"></span>` : ""}</strong>
+      <span class="q-sub"><span>${esc(ticker.name || "")}</span><button type="button" class="why-link" data-action="explain" data-symbol="${esc(ticker.symbol)}">Warum?</button></span>
+    </span>
+    ${sparkline(ticker.sparkline)}
+    <span class="q-px">
+      <strong>${esc(formatEUR(ticker.priceEur))}</strong>
+      <span class="${tone(ticker.changePct)}">${arrow(ticker.changePct)} ${esc(formatPct(ticker.changePct))}</span>
+    </span>
+  </div>`;
+}
+
+function favoriteNote(favorite, ui, lead) {
+  const tag = lead ? "article" : "div";
+  const heading = lead ? "h2" : "h3";
+  return `<${tag} class="${lead ? "card note-card" : "mini-note"}">
+    <p class="kicker">${lead ? "Karl" : esc(favorite.symbol || "Notiz")} · ${esc(String(favorite.score))}/10</p>
+    <${heading}>${esc(favorite.name)}</${heading}>
+    <p>${esc(favorite.reason)}</p>
+    <button type="button" class="text-btn" data-action="gegenteil" data-id="${esc(favorite.id)}" aria-expanded="${ui.revealed[favorite.id] ? "true" : "false"}">Gegenteil</button>
+    ${ui.revealed[favorite.id] ? `<p class="counter">${esc(favorite.counterArgument || "Dazu liegt noch kein Gegenargument vor.")}</p>` : ""}
+  </${tag}>`;
 }
 
 function eventRow(event) {
@@ -202,24 +225,21 @@ function eventRow(event) {
   </button>`;
 }
 
-function launchCard(launch) {
-  if (!launch) return "";
-  const href = safeUrl(launch.livestreamUrl);
-  return `<article class="card countdown" id="launch-card">
+function launchBody(launch) {
+  return `<div class="launch-body" id="launch-card">
     <div class="row between">
       <div>
-        <p class="kicker">Starship</p>
-        <h2>${esc(launch.name || "Nächster Start")}</h2>
-        <p class="muted">${esc(launch.status || "")} ${pill(launch.example)}</p>
+        <h3>${esc(launch.name || "Nächster Start")}</h3>
+        <p class="muted">${esc(launch.status || "")}</p>
       </div>
       <button type="button" class="rocket-btn" data-action="liftoff" aria-label="Startanimation abspielen">
         <span class="rocket" id="rocket">${rocketSvg()}</span>
       </button>
     </div>
-    <p class="count-num" id="count-num" data-target="${esc(launch.target || "")}">—</p>
-    ${href ? `<a class="text-btn" href="${esc(href)}" target="_blank" rel="noopener noreferrer">Livestream</a>` : ""}
-    <p class="muted">Tippen auf die Rakete spielt den Start. Bei null startet sie von selbst.</p>
-  </article>`;
+    ${launch.note ? `<p>${esc(launch.note)}</p>` : ""}
+    ${externalAnchor(launch.livestreamUrl, "Livestream")}
+    <p class="muted">Tippen auf die Rakete spielt den Start.</p>
+  </div>`;
 }
 
 function rocketSvg() {
@@ -439,7 +459,6 @@ function eventDetail(data, id) {
 function postDetail(data, id) {
   const post = (data.posts?.posts || []).find((item) => item.id === id);
   if (!post) return { kind: "post", title: "Post", html: `<p class="empty">Post nicht gefunden.</p>` };
-  const href = safeUrl(post.url);
   return {
     kind: "post",
     title: post.displayName || post.account,
@@ -448,7 +467,7 @@ function postDetail(data, id) {
       ${pill(post.example)}
       <div class="prose">${prose(post.summaryDe)}</div>
       ${post.originalText ? `<p class="muted">${esc(post.originalText)}</p>` : ""}
-      ${href ? `<a class="text-btn" href="${esc(href)}" target="_blank" rel="noopener noreferrer">Original öffnen</a>` : ""}
+      ${externalAnchor(post.url, "Original öffnen")}
       ${sourcesBlock(post.sources)}
     `
   };

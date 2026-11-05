@@ -4,7 +4,7 @@ Drei kleine Dinge für Justy. Sie sind in der Oberfläche nicht erklärt.
 
 ## Nachtfahrt
 
-Das Zeichen oben links fünfmal kurz hintereinander tippen. Es wird dunkel, Lichtstreifen ziehen vorbei, und eine Zeile bleibt kurz stehen: „Nachtfahrt. Die Sterne bleiben auf der Spur.“ Ein leises Motorgeräusch, wenn das iPhone Ton erlaubt. Bei reduziertem Bewegungssinn nur die Zeile, ohne Streifen und ohne Ton. Tippen beendet es früher.
+Das Zeichen oben links fünfmal kurz hintereinander tippen. Es wird dunkel, Lichtstreifen ziehen vorbei, und eine Zeile bleibt kurz stehen: „Nachtfahrt. Die Sterne bleiben auf der Spur.“ Ein leises Motorgeräusch, wenn das iPhone Ton erlaubt. Bei reduziertem Bewegungssinn nur die Zeile, ohne Streifen und ohne Ton. Oben links steht Schließen, Tippen auf die Fläche beendet sie ebenfalls.
 
 ## Neuer Höchststand
 
