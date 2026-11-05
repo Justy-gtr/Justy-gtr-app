@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { berlinParts, shouldRun } from "./schedule.mjs";
 import { fxFor, mergeTicker, meaningful, updateAlerts, usdToEur } from "./market.mjs";
-import { bigDrop, buildFeed, formatEventClock, formatFeedTime, headlineEvent, isInAppUrl, maxPoints, opinionWord, scoreboard, seriesFor, trackSummary, verdictForStances, zonedWallTime } from "../js/logic.js";
+import { bigDrop, buildFeed, buildMarketTimeline, formatEventClock, formatFeedTime, headlineEvent, isInAppUrl, maxPoints, opinionWord, scoreboard, seriesFor, trackSummary, verdictForStances, zonedWallTime } from "../js/logic.js";
 import fs from "node:fs";
 
 test("Dollar wird durch EURUSD geteilt, nicht multipliziert", () => {
@@ -216,6 +216,61 @@ test("Der Feed mischt Post, Termin, Kurs und Briefing, neueste zuerst", () => {
   }, now);
   assert.deepEqual([...new Set(real.map((item) => item.kind))].sort(), ["alert", "briefing", "event", "post"]);
   assert.match(real.find((item) => item.kind === "post").timeLabel, /^heute \d{2}:\d{2}$/);
+});
+
+test("Markt heute mischt Börsenzeiten in Berlin mit Zahlen und Politik", () => {
+  const now = new Date("2026-11-05T11:00:00Z");
+  const rows = buildMarketTimeline({
+    calendar: { events: [
+      { id: "earn", title: "Quartalszahlen SpaceX", date: "2026-11-05", time: "16:00", timezone: "Europe/Berlin", category: "earnings" },
+      { id: "pol", title: "politische Entscheidung", date: "2026-11-05", time: "18:30", timezone: "Europe/Berlin", category: "politik" },
+      { id: "ny", title: "Fed-Rede", date: "2026-11-05", time: "10:00", timezone: "America/New_York", category: "zinsen" },
+      { id: "jobs", title: "Arbeitsmarkt", date: "2026-11-06", time: "14:30", timezone: "Europe/Berlin", category: "makro" },
+      { id: "launch", title: "Start", date: "2026-11-05", time: "12:00", timezone: "Europe/Berlin", category: "start" }
+    ] }
+  }, now);
+  const byTitle = (title) => rows.find((row) => row.title === title);
+  assert.equal(byTitle("Tokio auf").timeLabel, "01:00");
+  assert.equal(byTitle("Tokio zu").status, "");
+  assert.equal(byTitle("Xetra auf").timeLabel, "09:00");
+  assert.equal(byTitle("Xetra auf").status, "offen");
+  assert.equal(byTitle("NYSE / Nasdaq auf").timeLabel, "15:30");
+  assert.equal(byTitle("NYSE / Nasdaq zu").timeLabel, "22:00");
+  assert.equal(byTitle("Xetra zu").status, "");
+  assert.equal(byTitle("Quartalszahlen SpaceX").label, "Zahlen");
+  assert.equal(byTitle("politische Entscheidung").label, "Politik");
+  assert.equal(byTitle("Fed-Rede").timeLabel, "16:00");
+  assert.equal(byTitle("Fed-Rede").label, "Politik");
+  assert.equal(rows.some((row) => row.title === "Start" || row.title === "Arbeitsmarkt"), false);
+  const index = (title) => rows.findIndex((row) => row.title === title);
+  assert.ok(index("NYSE / Nasdaq auf") < index("Quartalszahlen SpaceX"));
+  assert.ok(index("Quartalszahlen SpaceX") < index("politische Entscheidung"));
+  assert.equal(rows.some((row) => row.timeLabel.startsWith("morgen")), false);
+
+  const gap = buildMarketTimeline({ calendar: { events: [] } }, new Date("2026-10-28T11:00:00Z"));
+  assert.equal(gap.find((row) => row.title === "NYSE / Nasdaq auf").timeLabel, "14:30");
+  const summer = buildMarketTimeline({ calendar: { events: [] } }, new Date("2026-07-15T10:00:00Z"));
+  assert.equal(summer.find((row) => row.title === "NYSE / Nasdaq auf").timeLabel, "15:30");
+
+  const soon = buildMarketTimeline({ calendar: { events: [] } }, new Date("2026-11-05T14:00:00Z"));
+  assert.equal(soon.find((row) => row.title === "NYSE / Nasdaq auf").status, "bald");
+
+  const evening = buildMarketTimeline({ calendar: { events: [] } }, new Date("2026-11-05T21:30:00Z"));
+  assert.equal(evening.find((row) => row.title === "Xetra auf" && row.timeLabel === "09:00").status, "");
+  assert.equal(evening.some((row) => row.title === "NYSE / Nasdaq zu"), true);
+  assert.equal(evening.some((row) => row.title === "Xetra auf" && row.timeLabel === "morgen 09:00"), true);
+  assert.equal(evening.some((row) => row.title.startsWith("NYSE") && row.timeLabel.startsWith("morgen")), false);
+
+  const real = buildMarketTimeline({
+    calendar: JSON.parse(fs.readFileSync("data/calendar.json", "utf8"))
+  }, new Date("2026-11-06T07:00:00Z"));
+  assert.equal(real.some((row) => row.label === "Politik" && row.timeLabel === "14:30" && row.title.includes("Arbeitsmarkt")), true);
+  assert.equal(real.some((row) => row.label === "Zahlen"), false);
+
+  const saturday = buildMarketTimeline({ calendar: { events: [] } }, new Date("2026-11-07T10:00:00Z"));
+  assert.equal(saturday.length, 1);
+  assert.equal(saturday[0].title, "Wochenende");
+  assert.equal(saturday[0].status, "zu");
 });
 
 test("Max zeigt die längste Reihe und behält den feineren Tag", () => {
