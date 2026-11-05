@@ -77,8 +77,8 @@
       "id": "SPCX-2026-11-05",
       "symbol": "SPCX",
       "name": "SpaceX",
-      "changePct": -12.18,
-      "priceEur": 112.55,
+      "changePct": -13.11,
+      "priceEur": 111.4,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-05T05:40:37.340Z",
@@ -121,8 +121,8 @@
       "id": "RKLB-2026-11-05",
       "symbol": "RKLB",
       "name": "Rocket Lab",
-      "changePct": -15.85,
-      "priceEur": 41.4,
+      "changePct": -15.04,
+      "priceEur": 41.8,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-05T05:40:37.340Z",
@@ -132,10 +132,6 @@
         {
           "title": "Yahoo Finance 6RJ0.F",
           "url": "https://finance.yahoo.com/quote/6RJ0.F"
-        },
-        {
-          "title": "Yahoo Finance EURUSD=X",
-          "url": "https://finance.yahoo.com/quote/EURUSD=X"
         },
         {
           "title": "Yahoo Finance RKLB",
