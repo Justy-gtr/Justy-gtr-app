@@ -759,6 +759,37 @@
           "url": "https://www.tradelawcounsel.com/insights-news/2026/11/2/president-directs-section-232-negotiations-on-robotics-and-industrial-machinery-imports-no-tariffs-imposed"
         }
       ]
+    },
+    {
+      "id": "evt-cochise-rechenzentrum",
+      "title": "Arizona: Anhörung zum geplanten SpaceX-Rechenzentrum (6 Gigawatt) in Cochise County",
+      "date": "2026-12-10",
+      "time": "00:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "regulierung",
+      "company": "Cochise County",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 80,
+      "impact": "mittel",
+      "reasoning": "Am 4.11. hat sich SpaceX als Firma hinter dem Antrag (eingereicht über Tombstone Resources) für einen KI-Rechenzentrums-Campus auf rund 300 Hektar nahe Willcox bekannt, bis zu 6 Gigawatt Strom. Die Planungskommission des Bezirks entscheidet in einer öffentlichen Anhörung am 9.12. um 16 Uhr Ortszeit (in Berlin Mitternacht zum 10.12.). Viel Widerstand vor Ort, daher ist eine Verschiebung möglich. Ein Ja zeigt, dass SpaceX seine KI-Rechenleistung schnell ausbauen kann.",
+      "example": false,
+      "sources": [
+        {
+          "title": "KVOA: SpaceX hosts rowdy meeting on proposed Cochise Co. data center campus",
+          "url": "https://www.kvoa.com/news/cochisecounty/spacex-hosts-rowdy-meeting-on-proposed-cochise-co-data-center-campus/article_3a9de0c9-74e8-4f46-a00e-083a8cfda0d3.html"
+        },
+        {
+          "title": "KOLD: SpaceX hosts community meeting about proposed data center",
+          "url": "https://www.kold.com/2026/11/05/spacex-may-be-behind-proposed-data-center-cochise-county/"
+        },
+        {
+          "title": "KJZZ: Largest data center proposal in Arizona heads to Cochise County",
+          "url": "https://www.kjzz.org/text/business/2026-11-03/largest-data-center-proposal-in-arizona-heads-to-cochise-county-1st-community-meeting-scheduled"
+        }
+      ]
     }
   ]
 }

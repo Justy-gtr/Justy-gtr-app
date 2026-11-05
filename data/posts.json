@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-05T15:15:00+01:00",
+  "asOf": "2026-11-05T16:10:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.35,
@@ -828,6 +828,38 @@
         {
           "title": "@RocketLab auf X",
           "url": "https://x.com/RocketLab/status/2117350920757588325"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118348502879330382",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T15:23:34+01:00",
+      "summaryDe": "Musk teilt einen Beitrag von @wholemars: Im Rückblick sei es ein Fehler gewesen, dass SpaceX der Ukraine zu Kriegsbeginn Tausende Starlink-Schüsseln und Gratis-Dienst geschenkt habe. Heute werde SpaceX kritisiert, wenn es militärische Nutzung nicht unterstütze. Reaktion auf Selenskyjs Kritik an Musk und passend zur Senats-Prüfung der Starshield-Drosselung.",
+      "originalText": "RT @wholemars: In hindsight, it was a mistake for SpaceX to send them thousands of free Starlink dishes and millions of dollars a month in…",
+      "url": "https://x.com/elonmusk/status/2118348502879330382",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "negativ",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (Repost)",
+          "url": "https://x.com/elonmusk/status/2118348502879330382"
+        },
+        {
+          "title": "Original von @wholemars",
+          "url": "https://x.com/wholemars/status/2118301931852738730"
+        },
+        {
+          "title": "X-News: Selenskyj kritisiert Musk",
+          "url": "https://x.com/i/trending/2118271016786948172"
         }
       ]
     }
