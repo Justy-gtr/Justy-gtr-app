@@ -1,5 +1,5 @@
-wrote 6 alerts
-false,
+{
+  "example": false,
   "thresholdPct": 2,
   "notes": "Bewegung von mindestens 2 Prozent am Tag in Euro. notified setzt der Assistent auf true, wenn er Bescheid gegeben hat.",
   "alerts": [
