@@ -51,8 +51,8 @@ Der Workflow **Kurse** läuft über GitHub Actions, ohne API-Schlüssel.
 
 Zeiten in Europe/Berlin, auch über die Sommerzeit hinweg:
 
-- fest: 05:00, 06:30, 08:30, 09:30, 11:30, 13:00, 14:00, 15:00, 16:00, 18:00, 20:00, 22:00
-- zusätzlich montags bis freitags von 15:30 bis 22:00 alle 15 Minuten
+- montags bis freitags von 05:00 bis 22:15, auch wenn der Cron später startet
+- samstags und sonntags nur 05:00, 06:30, 08:30, 09:30, 11:30, 13:00, 14:00, 15:00, 16:00, 18:00, 20:00, 22:00, mit 45 Minuten Spielraum danach
 
 GitHub plant nur in UTC. Der Laufplan deckt deshalb MEZ und MESZ ab, und `scripts/schedule.mjs` lässt den Abruf nur im passenden Berliner Fenster zu. Von Hand starten geht über „Run workflow“ und ignoriert das Fenster.
 

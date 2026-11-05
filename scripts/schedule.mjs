@@ -1,7 +1,9 @@
 import fs from "node:fs";
 import { pathToFileURL } from "node:url";
 
-/** Fixed local times in Europe/Berlin, plus the weekday US cash window. */
+/** Feste Uhrzeiten Europe/Berlin. Am Wochenende zählt ein Lauf,
+ *  wenn er höchstens SLOT_TOLERANCE_MIN nach so einem Slot startet.
+ *  Werktags entscheidet das Band in shouldRun, nicht diese Liste. */
 export const FIXED_SLOTS = [
   [5, 0],
   [6, 30],
@@ -17,9 +19,11 @@ export const FIXED_SLOTS = [
   [22, 0]
 ];
 
-const SLOT_TOLERANCE_MIN = 14;
-const US_START = 15 * 60 + 30;
-const US_END = 22 * 60 + SLOT_TOLERANCE_MIN;
+/** GitHub startet den Cron oft später als geplant. 45 Minuten reichen,
+ *  damit ein verspäteter Wochenend-Lauf noch zählt. */
+const SLOT_TOLERANCE_MIN = 45;
+const WEEKDAY_START = 5 * 60;
+const WEEKDAY_END = 22 * 60 + 15;
 
 export function berlinParts(date = new Date()) {
   const fmt = new Intl.DateTimeFormat("en-GB", {
@@ -46,15 +50,17 @@ export function berlinParts(date = new Date()) {
 }
 
 /**
- * Cron is UTC and cannot express Europe/Berlin across DST.
- * The workflow therefore runs on a UTC grid, and this gate keeps only
- * the Berlin slots Justy asked for.
+ * Cron ist UTC und kann Europe/Berlin über die Sommerzeit nicht ausdrücken.
+ * Der Workflow läuft deshalb auf einem UTC-Gitter, und dieses Tor entscheidet.
+ * Mo–Fr: jeder Start zwischen 05:00 und 22:15 Berlin zählt, auch wenn der
+ * Cron später als der 15-Minuten-Takt kommt. Sa/So: nur die festen Slots,
+ * mit 45 Minuten Toleranz danach.
  */
 export function shouldRun(parts, { force = false } = {}) {
   if (force) return true;
   const minutes = parts.hour * 60 + parts.minute;
   const weekday = parts.weekday;
-  if (weekday >= 0 && weekday <= 4 && minutes >= US_START && minutes <= US_END) return true;
+  if (weekday >= 0 && weekday <= 4) return minutes >= WEEKDAY_START && minutes <= WEEKDAY_END;
   return FIXED_SLOTS.some(([hour, minute]) => {
     const delta = minutes - (hour * 60 + minute);
     return delta >= 0 && delta <= SLOT_TOLERANCE_MIN;

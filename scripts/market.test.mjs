@@ -80,17 +80,21 @@ test("Zeitstempel allein gelten nicht als Änderung", () => {
   assert.notEqual(meaningful(left), meaningful(right));
 });
 
-test("Berlin-Fenster: feste Slots, US-Sitzung, Wochenende, Sommer- und Winterzeit", () => {
+test("Berlin-Fenster: Werktag durchgehend, Wochenende mit Toleranz, Sommer- und Winterzeit", () => {
   assert.equal(shouldRun({ weekday: 3, hour: 5, minute: 0 }), true);
-  assert.equal(shouldRun({ weekday: 3, hour: 5, minute: 10 }), true);
-  assert.equal(shouldRun({ weekday: 3, hour: 5, minute: 20 }), false);
-  assert.equal(shouldRun({ weekday: 3, hour: 15, minute: 15 }), false);
-  assert.equal(shouldRun({ weekday: 3, hour: 15, minute: 30 }), true);
-  assert.equal(shouldRun({ weekday: 3, hour: 21, minute: 45 }), true);
-  assert.equal(shouldRun({ weekday: 3, hour: 22, minute: 10 }), true);
-  assert.equal(shouldRun({ weekday: 3, hour: 22, minute: 20 }), false);
+  assert.equal(shouldRun({ weekday: 3, hour: 5, minute: 20 }), true);
+  assert.equal(shouldRun({ weekday: 3, hour: 7, minute: 41 }), true);
+  assert.equal(shouldRun({ weekday: 3, hour: 15, minute: 15 }), true);
+  assert.equal(shouldRun({ weekday: 3, hour: 22, minute: 15 }), true);
+  assert.equal(shouldRun({ weekday: 3, hour: 4, minute: 59 }), false);
+  assert.equal(shouldRun({ weekday: 3, hour: 22, minute: 16 }), false);
+  assert.equal(shouldRun({ weekday: 5, hour: 6, minute: 30 }), true);
+  assert.equal(shouldRun({ weekday: 5, hour: 7, minute: 15 }), true);
+  assert.equal(shouldRun({ weekday: 5, hour: 7, minute: 16 }), false);
+  assert.equal(shouldRun({ weekday: 5, hour: 7, minute: 41 }), false);
   assert.equal(shouldRun({ weekday: 5, hour: 16, minute: 0 }), true);
-  assert.equal(shouldRun({ weekday: 5, hour: 16, minute: 15 }), false);
+  assert.equal(shouldRun({ weekday: 5, hour: 16, minute: 45 }), true);
+  assert.equal(shouldRun({ weekday: 5, hour: 16, minute: 46 }), false);
   assert.equal(shouldRun({ weekday: 6, hour: 18, minute: 0 }), true);
   assert.equal(shouldRun({ weekday: 0, hour: 4, minute: 0 }), false);
   assert.equal(shouldRun({ weekday: 0, hour: 4, minute: 0 }, { force: true }), true);

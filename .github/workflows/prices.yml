@@ -2,9 +2,9 @@ name: Kurse
 
 # GitHub-Cron läuft in UTC und kennt keine Sommerzeit.
 # Der Laufplan deckt deshalb beide Versätze ab (MEZ = UTC+1, MESZ = UTC+2).
-# scripts/schedule.mjs lässt den Abruf nur durch, wenn in Europe/Berlin
-# gerade eines der festen Fenster ist oder die US-Sitzung läuft
-# (Mo–Fr 15:30–22:00 Berlin, alle 15 Minuten).
+# scripts/schedule.mjs lässt den Abruf durch, wenn es in Europe/Berlin
+# Mo–Fr zwischen 05:00 und 22:15 ist (auch bei verspätetem Cron)
+# oder am Wochenende höchstens 45 Minuten nach einem festen Slot.
 on:
   schedule:
     - cron: "*/15 3-21 * * 1-5"
