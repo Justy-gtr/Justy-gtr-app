@@ -726,10 +726,10 @@ body.detail-open .pager { overflow: hidden; }
 .feed-time { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .top5-compact .legend { font-size: 13px; margin: 2px 0 4px; }
 .top-line {
-  display: grid;
-  grid-template-columns: 4.2rem minmax(0, 1fr) auto auto;
-  gap: 8px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
   width: 100%;
   min-height: 44px;
   padding: 8px 0;
@@ -739,6 +739,18 @@ body.detail-open .pager { overflow: hidden; }
   color: inherit;
   text-align: left;
 }
+.top-main {
+  display: grid;
+  grid-template-columns: 4.2rem minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: baseline;
+}
+.top-says { display: flex; flex-wrap: wrap; gap: 2px 12px; }
+.say { font-size: 13px; color: var(--muted); }
+.say-word { font-weight: 650; }
+.say-word.is-up { color: var(--up); }
+.say-word.is-warn { color: #ffb067; }
+.say-word.is-flat { color: #e4e8f0; }
 .top-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--muted); font-size: 14px; }
 .top-px { font-variant-numeric: tabular-nums; font-weight: 650; white-space: nowrap; font-size: 14px; }
 .top-line .verdict { font-size: 11px; }

@@ -295,28 +295,27 @@ function opinionCard(item, extra = "") {
   </article>`;
 }
 
-function topCue(item) {
-  const verdict = verdictForStances(item?.swarmStance, item?.karlStance);
-  if (verdict.kind === "agree") return { text: "Einig", kind: "is-agree" };
-  if (verdict.kind === "against") return { text: "dagegen", kind: "is-against" };
-  return { text: "anders", kind: "is-mixed" };
+function say(who, stance) {
+  const tone = opinionTone(stance);
+  return `<span class="say"><span class="say-who">${esc(who)}</span> <span class="say-word is-${tone}">${esc(opinionWord(stance))}</span></span>`;
 }
 
 function topFive(favorites) {
   if (!favorites.length) return "";
-  return `<section class="card quote-card top5-compact" aria-label="Karls Top 5">
+  return `<section class="card quote-card top5-compact" aria-label="Karls Top 10">
     <div class="row between quote-head">
-      <span class="kicker">Karls Top 5</span>
+      <span class="kicker">Karls Top 10</span>
       <button type="button" class="text-btn" data-action="page" data-page="schwarm">Vergleich</button>
     </div>
     <p class="legend">Schwarm = Meinung auf X, keine Käufe.</p>
     ${favorites.map((favorite) => {
-      const cue = topCue(favorite);
       return `<button type="button" class="top-line" data-action="open-favorite" data-id="${esc(favorite.id)}">
-        <strong>${esc(favorite.symbol)}</strong>
-        <span class="top-name">${esc(favorite.name || "")}</span>
-        <span class="top-px">${favorite.priceEur == null ? "" : esc(formatEUR(favorite.priceEur))}</span>
-        <span class="verdict ${cue.kind}">${esc(cue.text)}</span>
+        <span class="top-main">
+          <strong>${esc(favorite.symbol)}</strong>
+          <span class="top-name">${esc(favorite.name || "")}</span>
+          <span class="top-px">${favorite.priceEur == null ? "" : esc(formatEUR(favorite.priceEur))}</span>
+        </span>
+        <span class="top-says">${say("Schwarm", favorite.swarmStance)}${say("Karl", favorite.karlStance)}</span>
       </button>`;
     }).join("")}
   </section>`;
@@ -409,13 +408,15 @@ function renderPosts(data, ui) {
 function renderSchwarm(data) {
   const comparison = data.crowd?.comparison || {};
   const investors = data.crowd?.investors || [];
+  const picks = [...(data.favorites?.favorites || [])].sort((a, b) => (a.rank || 99) - (b.rank || 99));
+  const cards = picks.length ? picks : (comparison.picks || []);
   return `
     <header class="page-head">
-      <p class="eyebrow">Ganzer Markt</p>
+      <p class="eyebrow">Karls Top 10</p>
       <h2>Schwarm gegen Karl</h2>
     </header>
     <p class="legend">${esc(SCHWARM_LEGEND)}</p>
-    <div class="opinion-list">${(comparison.picks || []).map((pick) => opinionCard(pick)).join("")}</div>
+    <div class="opinion-list">${cards.map((pick) => opinionCard(pick)).join("")}</div>
     <details class="fold">
       <summary>Erklärung</summary>
       <div class="fold-body">

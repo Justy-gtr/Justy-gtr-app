@@ -620,6 +620,13 @@ export function methodLabel(ticker) {
 }
 
 /** Same words the Schwarm/Karl chips show. The badge must use this, not againstCrowd. */
+export function compactStances(item) {
+  return {
+    swarm: opinionWord(item?.swarmStance),
+    karl: opinionWord(item?.karlStance)
+  };
+}
+
 export function opinionWord(value) {
   switch (String(value || "")) {
     case "kauf": return "optimistisch";

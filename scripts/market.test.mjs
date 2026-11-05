@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { berlinParts, shouldRun } from "./schedule.mjs";
 import { fxFor, mergeTicker, meaningful, updateAlerts, usdToEur } from "./market.mjs";
-import { bigDrop, buildFeed, buildMarketTimeline, formatEventClock, formatFeedTime, headlineEvent, isInAppUrl, maxPoints, opinionWord, scoreboard, seriesFor, trackSummary, verdictForStances, zonedWallTime } from "../js/logic.js";
+import { bigDrop, buildFeed, buildMarketTimeline, compactStances, formatEventClock, formatFeedTime, headlineEvent, isInAppUrl, maxPoints, opinionWord, scoreboard, seriesFor, trackSummary, verdictForStances, zonedWallTime } from "../js/logic.js";
 import fs from "node:fs";
 
 test("Dollar wird durch EURUSD geteilt, nicht multipliziert", () => {
@@ -287,6 +287,26 @@ test("Max zeigt die längste Reihe und behält den feineren Tag", () => {
   assert.equal(series.range, "Max");
   assert.equal(series.points.at(-1).eur, 2);
   assert.equal(seriesFor(ticker, "1M", false).points.length, 2);
+});
+
+test("Halten heißt neutral, und beide Seiten bleiben lesbar", () => {
+  assert.equal(opinionWord("halten"), "neutral");
+  const mixed = compactStances({ swarmStance: "kauf", karlStance: "halten" });
+  assert.equal(mixed.swarm, "optimistisch");
+  assert.equal(mixed.karl, "neutral");
+  const quiet = compactStances({ swarmStance: "kaum", karlStance: "halten" });
+  assert.equal(quiet.swarm, "redet kaum darüber");
+  assert.equal(quiet.karl, "neutral");
+  assert.equal(JSON.stringify(mixed).includes("anders"), false);
+  assert.equal(JSON.stringify(quiet).includes("anders"), false);
+  const favorites = JSON.parse(fs.readFileSync("data/favorites.json", "utf8")).favorites;
+  assert.equal(favorites.length, 10);
+  for (const favorite of favorites) {
+    const words = compactStances(favorite);
+    assert.ok(words.swarm && words.karl);
+    assert.equal(`${words.swarm} ${words.karl}`.includes("anders"), false);
+    assert.equal(favorite.priceEur > 0, true);
+  }
 });
 
 test("Das Abzeichen sagt dasselbe wie die beiden Chips", () => {
