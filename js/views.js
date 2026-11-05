@@ -10,6 +10,8 @@ import {
   greeting,
   headlineEvent,
   isStandalone,
+  opinionWord,
+  verdictForStances,
   methodLabel,
   rangeChange,
   safeUrl,
@@ -203,18 +205,6 @@ function quoteRow(ticker, live) {
   </div>`;
 }
 
-function opinionWord(value) {
-  switch (String(value || "")) {
-    case "kauf": return "optimistisch";
-    case "halten": return "neutral";
-    case "vorsichtig":
-    case "verkauf": return "vorsichtig";
-    case "kaum": return "redet kaum darüber";
-    case "beobachten": return "keine klare Meinung";
-    default: return value || "offen";
-  }
-}
-
 function opinionTone(value) {
   const word = String(value || "");
   if (word === "kauf") return "up";
@@ -242,8 +232,9 @@ function opinionChip(who, stance) {
 }
 
 function verdictBadge(item) {
-  const against = item?.againstCrowd === true;
-  return `<span class="verdict ${against ? "is-against" : "is-agree"}">${against ? "Karl dagegen" : "Einig"}</span>`;
+  const verdict = verdictForStances(item?.swarmStance, item?.karlStance);
+  const kind = verdict.kind === "against" ? "is-against" : verdict.kind === "agree" ? "is-agree" : "is-mixed";
+  return `<span class="verdict ${kind}">${esc(verdict.label)}</span>`;
 }
 
 const SCHWARM_LEGEND = "Schwarm = Meinung der X-Investoren, die Karl verfolgt. Keine echten Käufe.";

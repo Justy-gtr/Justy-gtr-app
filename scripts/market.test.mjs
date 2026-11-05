@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { berlinParts, shouldRun } from "./schedule.mjs";
 import { fxFor, mergeTicker, meaningful, updateAlerts, usdToEur } from "./market.mjs";
-import { bigDrop, headlineEvent, isInAppUrl, scoreboard, seriesFor, trackSummary } from "../js/logic.js";
+import { bigDrop, headlineEvent, isInAppUrl, opinionWord, scoreboard, seriesFor, trackSummary, verdictForStances } from "../js/logic.js";
 
 test("Dollar wird durch EURUSD geteilt, nicht multipliziert", () => {
   assert.equal(usdToEur(112.32, 1.1232), 100);
@@ -174,6 +174,22 @@ test("Nur die App-Adresse bleibt im Fenster", () => {
   assert.equal(isInAppUrl(new URL("https://justy-gtr.github.io/Justy-gtr-app/index.html"), origin, base), true);
   assert.equal(isInAppUrl(new URL("https://x.com/SpaceX"), origin, base), false);
   assert.equal(isInAppUrl(new URL("https://justy-gtr.github.io/Justy-gtr-app/data/prices.json"), origin, base), false);
+});
+
+test("Das Abzeichen sagt dasselbe wie die beiden Chips", () => {
+  assert.equal(opinionWord("kauf"), "optimistisch");
+  assert.equal(opinionWord("halten"), "neutral");
+  assert.equal(opinionWord("kaum"), "redet kaum darüber");
+  assert.equal(opinionWord("vorsichtig"), "vorsichtig");
+
+  assert.deepEqual(verdictForStances("kauf", "halten"), { label: "Nicht gleich", kind: "mixed" });
+  assert.deepEqual(verdictForStances("kaum", "halten"), { label: "Nicht gleich", kind: "mixed" });
+  assert.deepEqual(verdictForStances("kauf", "vorsichtig"), { label: "Karl dagegen", kind: "against" });
+  assert.deepEqual(verdictForStances("vorsichtig", "kauf"), { label: "Karl dagegen", kind: "against" });
+  assert.deepEqual(verdictForStances("kauf", "kauf"), { label: "Einig", kind: "agree" });
+  assert.deepEqual(verdictForStances("halten", "halten"), { label: "Einig", kind: "agree" });
+  assert.equal(verdictForStances("kauf", "halten").label === "Einig", false);
+  assert.equal(verdictForStances("kaum", "halten").label === "Karl dagegen", false);
 });
 
 test("Trefferquote rechnet nur entschiedene Ideen", () => {

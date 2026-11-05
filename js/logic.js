@@ -281,6 +281,35 @@ export function methodLabel(ticker) {
   return ticker?.venue || "";
 }
 
+/** Same words the Schwarm/Karl chips show. The badge must use this, not againstCrowd. */
+export function opinionWord(value) {
+  switch (String(value || "")) {
+    case "kauf": return "optimistisch";
+    case "halten": return "neutral";
+    case "vorsichtig":
+    case "verkauf": return "vorsichtig";
+    case "kaum": return "redet kaum darüber";
+    case "beobachten": return "keine klare Meinung";
+    default: return value || "offen";
+  }
+}
+
+/**
+ * Badge from the two chip labels.
+ * Einig only when both chips say the same thing.
+ * Karl dagegen only when one side is optimistisch and the other vorsichtig.
+ * Anything else, including neutral next to a different chip, is Nicht gleich.
+ */
+export function verdictForStances(swarmStance, karlStance) {
+  const swarm = opinionWord(swarmStance);
+  const karl = opinionWord(karlStance);
+  if (swarm === karl) return { label: "Einig", kind: "agree" };
+  const opposed = (swarm === "optimistisch" && karl === "vorsichtig")
+    || (swarm === "vorsichtig" && karl === "optimistisch");
+  if (opposed) return { label: "Karl dagegen", kind: "against" };
+  return { label: "Nicht gleich", kind: "mixed" };
+}
+
 export function freshPrices(meta, now = Date.now()) {
   if (!meta?.pricesUpdated) return false;
   const then = new Date(meta.pricesUpdated).getTime();
