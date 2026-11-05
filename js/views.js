@@ -9,7 +9,9 @@ import {
   freshPrices,
   greeting,
   buildFeed,
+  buildMarketTimeline,
   formatEventClock,
+  sessionBlurb,
   headlineEvent,
   isStandalone,
   opinionWord,
@@ -166,6 +168,7 @@ function renderHeute(data, ui, store) {
     ${install ? `<p class="install-line"><span>In Safari auf Teilen tippen, dann „Zum Home-Bildschirm“.</span><button type="button" data-action="dismiss-install">OK</button></p>` : ""}
     ${calm.active ? `<button type="button" class="banner banner-calm" data-action="open-calm">Ruhe-Modus · ${esc(dropped || "Ein Kurs")}</button>` : ""}
     ${feedBlock(data)}
+    ${marketBlock(data)}
     ${topFive(favorites, ui)}
     <section class="card quote-card is-tight" aria-label="Kurse in Euro">
       <div class="row between quote-head"><span class="kicker">Kurse in Euro</span><span class="muted">Xetra, sonst umgerechnet</span></div>
@@ -202,6 +205,23 @@ function feedBlock(data) {
       <span class="feed-title">${esc(item.title)}</span>
       <span class="feed-time">${esc(item.timeLabel)}</span>
     </button>`).join("")}
+  </section>`;
+}
+
+function marketBlock(data) {
+  const items = buildMarketTimeline(data);
+  if (!items.length) return "";
+  return `<section class="card market-day" aria-label="Markt heute">
+    <p class="kicker">Markt heute</p>
+    ${items.map((item) => {
+      const state = item.status === "offen" ? "is-open" : item.status === "bald" ? "is-soon" : "";
+      return `<button type="button" class="market-row" data-action="${esc(item.action)}" ${item.target ? `data-id="${esc(item.target)}"` : ""}>
+        <span class="market-time">${esc(item.timeLabel)}</span>
+        <span class="market-kind">${esc(item.label)}</span>
+        <span class="market-title">${esc(item.title)}</span>
+        <span class="market-state ${state}">${item.status ? esc(item.status) : ""}</span>
+      </button>`;
+    }).join("")}
   </section>`;
 }
 
@@ -300,6 +320,11 @@ function topFive(favorites) {
       </button>`;
     }).join("")}
   </section>`;
+}
+
+function sessionDetail(id) {
+  const title = id === "nyse" ? "NYSE / Nasdaq" : id === "tokyo" ? "Tokio" : id === "xetra" ? "Xetra" : "Börse";
+  return { kind: "session", title, html: `<p>${esc(sessionBlurb(id))}</p>` };
 }
 
 function eventRow(event) {
@@ -472,6 +497,7 @@ export function detailContent(action, dataset, ctx) {
   if (action === "open-favorite") return favoriteDetail(data, dataset.id, ui);
   if (action === "explain") return explainDetail(data, dataset.symbol);
   if (action === "open-event") return eventDetail(data, dataset.id);
+  if (action === "open-session") return sessionDetail(dataset.id);
   if (action === "open-post") return postDetail(data, dataset.id);
   if (action === "open-investor") return investorDetail(data, dataset.id);
   if (action === "open-insiders") return insidersDetail(data);

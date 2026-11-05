@@ -685,6 +685,27 @@ body.detail-open .pager { overflow: hidden; }
 }
 .quote.is-tight .q-name strong,
 .quote.is-tight .q-px strong { font-size: 15px; }
+.market-day { padding-bottom: 6px; }
+.market-row {
+  display: grid;
+  grid-template-columns: auto 4.4rem minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 7px 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  color: inherit;
+  text-align: left;
+}
+.market-time { font-size: 14px; font-weight: 650; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.market-kind { color: var(--gold); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.market-title { font-size: 14px; line-height: 1.25; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.market-state { font-size: 12px; color: var(--muted); min-width: 2.2rem; text-align: right; }
+.market-state.is-open { color: var(--up); }
+.market-state.is-soon { color: var(--gold-2); }
 .feed { padding-bottom: 6px; }
 .feed-row {
   display: grid;

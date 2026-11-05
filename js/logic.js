@@ -168,6 +168,151 @@ export function formatEventClock(event, now = new Date()) {
   return at ? formatFeedTime(at, now) : event.time;
 }
 
+const VENUES = [
+  { id: "tokyo", zone: "Asia/Tokyo", open: "09:00", close: "15:00", openTitle: "Tokio auf", closeTitle: "Tokio zu" },
+  { id: "xetra", zone: "Europe/Berlin", open: "09:00", close: "17:30", openTitle: "Xetra auf", closeTitle: "Xetra zu" },
+  { id: "nyse", zone: "America/New_York", open: "09:30", close: "16:00", openTitle: "NYSE / Nasdaq auf", closeTitle: "NYSE / Nasdaq zu" }
+];
+
+const MARKET_LABEL = {
+  earnings: "Zahlen",
+  politik: "Politik",
+  zinsen: "Politik",
+  regulierung: "Politik",
+  makro: "Politik"
+};
+
+export function sessionBlurb(id) {
+  switch (id) {
+    case "xetra": return "Xetra handelt werktags von 9:00 bis 17:30 Uhr Berliner Zeit.";
+    case "nyse": return "NYSE und Nasdaq: 9:30 bis 16:00 Uhr New York. Die Uhr hier ist Berlin.";
+    case "tokyo": return "Tokio handelt werktags von 9:00 bis 15:00 Uhr japanischer Zeit. Die Uhr hier ist Berlin.";
+    default: return "Samstag und Sonntag bleiben Xetra, New York und Tokio zu.";
+  }
+}
+
+function berlinClock(date) {
+  return new Intl.DateTimeFormat("de-DE", {
+    timeZone: "Europe/Berlin",
+    hour: "2-digit",
+    minute: "2-digit"
+  }).format(date);
+}
+
+function berlinHour(date) {
+  const hour = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/Berlin",
+    hour: "2-digit",
+    hourCycle: "h23"
+  }).format(date);
+  return Number(hour) % 24;
+}
+
+function addBerlinDays(dateStr, days) {
+  let cursor = zonedWallTime(dateStr, "12:00", "Europe/Berlin");
+  for (let step = 0; step < days; step += 1) cursor = new Date(cursor.getTime() + 86400000);
+  return berlinDate(cursor);
+}
+
+function isWeekend(dateStr) {
+  const noon = zonedWallTime(dateStr, "12:00", "Europe/Berlin");
+  const day = new Intl.DateTimeFormat("en-US", { timeZone: "Europe/Berlin", weekday: "short" }).format(noon);
+  return day === "Sat" || day === "Sun";
+}
+
+function nextTradingDay(dateStr) {
+  let day = addBerlinDays(dateStr, 1);
+  for (let guard = 0; guard < 6 && isWeekend(day); guard += 1) day = addBerlinDays(day, 1);
+  return day;
+}
+
+function timeLabelFor(instant, now) {
+  const clock = berlinClock(instant);
+  const day = berlinDate(instant);
+  if (day === berlinDate(now)) return clock;
+  if (day === addBerlinDays(berlinDate(now), 1)) return `morgen ${clock}`;
+  const weekday = new Intl.DateTimeFormat("de-DE", { timeZone: "Europe/Berlin", weekday: "short" }).format(instant);
+  return `${weekday} ${clock}`;
+}
+
+function markerStatus(now, openAt, closeAt, role) {
+  const t = now.getTime();
+  if (role === "open") {
+    if (t >= closeAt.getTime()) return "";
+    if (t >= openAt.getTime()) return "offen";
+    if (openAt.getTime() - t <= 90 * 60 * 1000) return "bald";
+    return "";
+  }
+  return "";
+}
+
+function venueMarkers(dateStr, now, { earlyOnly = false } = {}) {
+  if (isWeekend(dateStr)) return [];
+  const rows = [];
+  for (const venue of VENUES) {
+    const openAt = zonedWallTime(dateStr, venue.open, venue.zone);
+    const closeAt = zonedWallTime(dateStr, venue.close, venue.zone);
+    if (!openAt || !closeAt) continue;
+    const bounds = [
+      { at: openAt, role: "open", title: venue.openTitle },
+      { at: closeAt, role: "close", title: venue.closeTitle }
+    ];
+    for (const bound of bounds) {
+      if (berlinDate(bound.at) !== dateStr) continue;
+      if (earlyOnly && berlinHour(bound.at) >= 10) continue;
+      rows.push({
+        id: `${venue.id}-${bound.role}-${dateStr}`,
+        at: bound.at.getTime(),
+        timeLabel: timeLabelFor(bound.at, now),
+        label: "Börse",
+        title: bound.title,
+        status: markerStatus(now, openAt, closeAt, bound.role),
+        action: "open-session",
+        target: venue.id
+      });
+    }
+  }
+  return rows;
+}
+
+export function buildMarketTimeline(data, now = new Date()) {
+  const today = berlinDate(now);
+  const sessions = venueMarkers(today, now);
+  const events = (data?.calendar?.events || []).flatMap((event) => {
+    const label = MARKET_LABEL[event?.category];
+    if (!label || !event.time) return [];
+    const at = zonedWallTime(event.date, event.time, event.timezone || "Europe/Berlin");
+    if (!at || berlinDate(at) !== today) return [];
+    return [{
+      id: `mkt-${event.id}`,
+      at: at.getTime(),
+      timeLabel: timeLabelFor(at, now),
+      label,
+      title: clip(event.title, 48),
+      status: "",
+      action: "open-event",
+      target: event.id
+    }];
+  });
+  let rows = [...sessions, ...events];
+  const nyClose = sessions.find((row) => row.target === "nyse" && row.title.endsWith("zu"));
+  const evening = (nyClose && now.getTime() >= nyClose.at) || (isWeekend(today) && berlinHour(now) >= 18);
+  if (evening) rows = rows.concat(venueMarkers(nextTradingDay(today), now, { earlyOnly: true }));
+  if (!rows.length) {
+    return [{
+      id: "markets-closed",
+      at: now.getTime(),
+      timeLabel: "—",
+      label: "Börse",
+      title: "Wochenende",
+      status: "zu",
+      action: "open-session",
+      target: "weekend"
+    }];
+  }
+  return rows.sort((a, b) => a.at - b.at || a.title.localeCompare(b.title, "de"));
+}
+
 export function buildFeed(data, now = new Date(), limit = 12) {
   const nowMs = now.getTime();
   const items = [];
