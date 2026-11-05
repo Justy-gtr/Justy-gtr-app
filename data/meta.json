@@ -1,16 +1,16 @@
 {
   "dataMode": "live",
-  "lastUpdated": "2026-11-05T18:00:00+01:00",
-  "pricesUpdated": "2026-11-05T16:24:01.135Z",
+  "lastUpdated": "2026-11-05T17:21:44.666Z",
+  "pricesUpdated": "2026-11-05T17:21:44.666Z",
   "timezone": "Europe/Berlin",
   "owner": "Justy",
   "researchVoice": "Karl",
   "disclaimer": "Keine Anlageberatung. Nur Recherche und Bildung.",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1227,
+    "rate": 1.1237,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-05T16:24:01.135Z",
+    "asOf": "2026-11-05T17:21:44.666Z",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
