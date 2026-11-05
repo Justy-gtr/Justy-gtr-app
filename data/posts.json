@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-05T09:40:00+01:00",
+  "asOf": "2026-11-05T11:35:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.35,
@@ -42,6 +42,34 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2118253972163301458",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T09:07:56+01:00",
+      "summaryDe": "Musk teilt den Beitrag eines Qualcomm-Managers: SpaceX nutzt Qualcomms Dragonwing-Plattform für das landesweite 5G-Netz von Starlink Mobile. Wiederholung der Meldung vom 4.11., nichts Neues.",
+      "originalText": "RT @durga_malladi: A big step for 5G networks. @SpaceX selected @Qualcomm #Dragonwing to accelerate @Starlink Mobile's nationwide 5G network …",
+      "url": "https://x.com/elonmusk/status/2118253972163301458",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (Repost)",
+          "url": "https://x.com/elonmusk/status/2118253972163301458"
+        },
+        {
+          "title": "Original von @durga_malladi (Qualcomm)",
+          "url": "https://x.com/durga_malladi/status/2118038626705829969"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118251808179323102",
       "account": "@elonmusk",
