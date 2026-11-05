@@ -381,12 +381,16 @@
       ],
       "probabilityPct": 95,
       "impact": "mittel",
-      "reasoning": "Termin vom Bureau of Labor Statistics. Starke oder schwache Zahlen verschieben die Zinserwartung vor der Fed-Sitzung am 9.12.; wachstumsstarke, teure Aktien wie SPCX, TSLA und RKLB reagieren darauf meist stärker als der Gesamtmarkt.",
+      "reasoning": "Der BLS-Bericht erscheint Freitag 6.11. um 14:30 Uhr Berlin. Konsens laut FactSet/Morningstar: etwa +65.000 Nonfarm-Payrolls (nach schwachen +29.000 im September), Arbeitslosenquote unverändert bei 4,2 %, Stundenlöhne +0,3 % zum Vormonat. Stärkere Löhne oder deutlich mehr Jobs könnten die Chance auf eine weitere Fed-Anhebung im Dezember stützen und Wachstumsaktien belasten; eine schwache Zahl würde Tech eher entlasten.",
       "example": false,
       "sources": [
         {
           "title": "BLS: Termine Arbeitsmarktbericht",
           "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
+        },
+        {
+          "title": "Morningstar: Erwartungen Oktober-Jobsbericht (Konsens ~65k)",
+          "url": "https://www.morningstar.com/economy/october-jobs-report-seen-showing-resilient-labor-market"
         }
       ]
     },
@@ -809,28 +813,24 @@
       ],
       "probabilityPct": 100,
       "impact": "hoch",
-      "reasoning": "Der Midterm-Sieg der Demokraten ist eingetreten (daher 100 %); offen bleibt, wie stark Kongress und Landesparlamente – vor allem Texas, Ohio, Michigan und Georgia – KI-Rechenzentren bremsen. Goldman Sachs schätzt, dass rund 45 % der geplanten US-Rechenzentrumskapazität kurzfristig von Moratorien betroffen sein könnten. Musk-Firmen mit Sitz in Texas trifft das besonders: Eine Fusion von SpaceX und Tesla wird schwieriger, Terafab und KI-Rechenleistung tragen mehr Risiko. Dazu kamen schwache Zahlen von Qualcomm (rund −9 %) und Arm (rund −15 %), die Chip- und Speicherwerte mitrissen; der Nasdaq steht an oder in einer Korrektur. Achten auf: neue Gesetzentwürfe zu Rechenzentren und Aussagen der neuen Gouverneure.",
+      "reasoning": "Der Midterm-Sieg der Demokraten ist eingetreten (daher 100 %); am 5.11. setzte sich der Tech-Ausverkauf fort: Laut BBC und Yahoo Finance fielen SpaceX und Tesla im US-Handel zeitweise um etwa 9–11 %, getrieben von Sorgen vor KI-Rechenzentrums-Moratorien – besonders Texas mit Gouverneurin Gina Hinojosa – und einer schwierigeren SpaceX-Tesla-Fusion. Goldman Sachs schätzt, dass rund 45 % der geplanten US-Rechenzentrumskapazität kurzfristig von Moratorien betroffen sein könnten. Dazu kamen schwache Chip-Zahlen (Qualcomm, Arm), die den Nasdaq in oder nahe einer Korrektur hielten. Achten auf: neue Gesetzentwürfe zu Rechenzentren und erste Schritte der neuen Gouverneure.",
       "example": false,
       "sources": [
+        {
+          "title": "BBC: SpaceX und Tech-Aktien fallen nach Midterms (05.11.2026)",
+          "url": "https://www.bbc.com/news/articles/cmn04705rd8jo"
+        },
+        {
+          "title": "Yahoo Finance: SpaceX/Tesla – Fusion und KI-Ausbau unter Druck (05.11.2026)",
+          "url": "https://finance.yahoo.com/markets/article/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-ai-buildout-153753814.html"
+        },
         {
           "title": "NBC News: Tech-Aktien fallen nach Midterms und KI-Sorgen (05.11.2026)",
           "url": "https://www.nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650"
         },
         {
-          "title": "Yahoo Finance: Futures nach den Midterms, Qualcomm und Arm (05.11.2026)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-futures-steady-midterm-105838388.html"
-        },
-        {
-          "title": "Yahoo Finance: SpaceX und Tesla fallen, Demokraten-Sieg erschwert Fusion (05.11.2026)",
-          "url": "https://sg.finance.yahoo.com/news/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-153032713.html"
-        },
-        {
           "title": "AP: Börsen nach Midterms und KI-Sorgen (05.11.2026)",
           "url": "https://apnews.com/article/stocks-markets-ai-midterm-oil-trump-7ee9c212805aa5e70cf34d25aab7a36e"
-        },
-        {
-          "title": "tagesschau: Reaktionen von Big Tech auf die Midterms",
-          "url": "https://www.tagesschau.de/wirtschaft/digitales/midterms-bigtech-reaktionen-100.html"
         }
       ]
     }

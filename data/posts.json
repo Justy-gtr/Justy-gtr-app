@@ -1,47 +1,131 @@
 {
   "example": false,
-  "asOf": "2026-11-05T18:00:00+01:00",
+  "asOf": "2026-11-05T20:10:00+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.4,
-      "label": "positiv in den Posts, Kurs weiter unter Druck",
-      "summary": "Am Nachmittag des 5.11. wirbt Musk erneut für Starlink (Klinik auf indonesischen Inseln, Airlines/United) und teilt nochmals den Qualcomm-CEO zur SpaceX-Partnerschaft. Offizielle SpaceX-/Starlink-Konten seit dem Qualcomm-Deal vom 4.11. ohne neue operative Posts. Der Kurs bleibt unter Midterm-/KI-Rechenzentrums-Druck; die neuen Posts sind positiv-PR, keine Kurswende.",
+      "score": 0.35,
+      "label": "leicht positiv in den Posts, Kurs weiter unter Druck",
+      "summary": "Am Abend des 5.11. kommentiert Musk Midterm-Exit-Polls und wirbt indirekt mit der Culture-/Compute-Vision; am Nachmittag weiter Starlink-PR und Qualcomm. Offizielle SpaceX-/Starlink-Konten ohne neue operative Posts seit dem Qualcomm-Deal. Der SPCX-Kurs bleibt unter Midterm-/KI-Rechenzentrums-Druck – die Posts sind Narrative, keine Kurswende.",
       "sources": [
+        {
+          "title": "@elonmusk auf X (Midterm Exit Poll)",
+          "url": "https://x.com/elonmusk/status/2118400203158163638"
+        },
+        {
+          "title": "@elonmusk auf X (Culture / Compute)",
+          "url": "https://x.com/elonmusk/status/2118390792490541103"
+        },
         {
           "title": "@elonmusk auf X (Starlink rettet Leben)",
           "url": "https://x.com/elonmusk/status/2118381856454524939"
-        },
-        {
-          "title": "@elonmusk auf X (Starlink Airlines)",
-          "url": "https://x.com/elonmusk/status/2118379126004535334"
-        },
-        {
-          "title": "@elonmusk auf X (Qualcomm-CEO Repost)",
-          "url": "https://x.com/elonmusk/status/2118380646460797238"
         }
       ]
     },
     "TSLA": {
-      "score": -0.15,
-      "label": "verhalten",
-      "summary": "Keine neuen Tesla-Posts seit dem Cybertruck-Aufruf am frühen 5.11. Fokus der Musk-Posts am Nachmittag lag auf Starlink und Politik; Kurs weiter unter Midterm-/Regulierungsdruck.",
+      "score": 0.25,
+      "label": "verhalten positiv in den Posts, Kurs stark im Minus",
+      "summary": "Musk repostet Teslaconomics („durch jeden Storm halten“ mit $TSLA) und bleibt politisch bei den Midterm-Themen. Offizielles @Tesla ohne neue Posts. Der Kurs fällt weiter wegen Texas-KI-Moratoriums-Sorgen und erschwerter Fusion – Bullen-PR ohne Trendwende.",
       "sources": [
         {
-          "title": "@Tesla auf X",
-          "url": "https://x.com/Tesla/status/2117674414125002877"
+          "title": "@elonmusk Repost Teslaconomics $TSLA",
+          "url": "https://x.com/elonmusk/status/2118389073283060085"
         },
         {
-          "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
-          "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+          "title": "@elonmusk Midterm Exit Poll",
+          "url": "https://x.com/elonmusk/status/2118400203158163638"
         },
         {
-          "title": "Yahoo Finance: TSLA historische Kurse",
-          "url": "https://finance.yahoo.com/quote/TSLA/history/"
+          "title": "Yahoo Finance: SpaceX/Tesla nach Demokraten-Sieg",
+          "url": "https://finance.yahoo.com/markets/article/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-ai-buildout-153753814.html"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2118400203158163638",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T18:49:01+01:00",
+      "summaryDe": "Musk kommentiert „Interesting“ zu einer CNN-Exit-Poll-Grafik: Lebenshaltungskosten, Korruption und Iran hätten Republikaner bei den Midterms am meisten geschadet; nur Einwanderung half der GOP.",
+      "originalText": "Interesting",
+      "url": "https://x.com/elonmusk/status/2118400203158163638",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118400203158163638"
+        },
+        {
+          "title": "Original: CNN-Exit-Poll-Quadranten zu Midterm-Themen",
+          "url": "https://x.com/i/status/2118200971050233952"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118390792490541103",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T18:11:37+01:00",
+      "summaryDe": "Musk: Iain Banks’ Culture-Romane hätten „arguably the best vision for the future“ – eine Zivilisation mit Rechenleistungs-Überfluss, in der viele Lebensstile parallel existieren können.",
+      "originalText": "Banks arguably has the best vision for the future",
+      "url": "https://x.com/elonmusk/status/2118390792490541103",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI",
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118390792490541103"
+        },
+        {
+          "title": "Original zu Iain Banks Culture / Compute Abundance",
+          "url": "https://x.com/i/status/2118033835074183455"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118389073283060085",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T18:04:47+01:00",
+      "summaryDe": "Musk teilt einen Teslaconomics-Beitrag: In jedem Kurssturm brauche man nur eine Anlageregel – und verweist dabei auf Tesla ($TSLA).",
+      "originalText": "RT @Teslaconomics: The only investment advice you need to live by to get through any storm that comes your way $TSLA",
+      "url": "https://x.com/elonmusk/status/2118389073283060085",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (Repost)",
+          "url": "https://x.com/elonmusk/status/2118389073283060085"
+        },
+        {
+          "title": "Original @Teslaconomics",
+          "url": "https://x.com/Teslaconomics/status/2118357376525119788"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118379126004535334",
       "account": "@elonmusk",
