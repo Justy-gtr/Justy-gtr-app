@@ -1,7 +1,7 @@
 {
   "example": false,
-  "asOf": "2026-11-04",
-  "notes": "Neu gestartet am 04.11.2026 – keine rückwirkende Bilanz. Starlink und Tesla Energie werden über die SPCX- bzw. TSLA-Aktie gemessen.",
+  "asOf": "2026-11-05",
+  "notes": "Gestartet am 04.11.2026, am 05.11. um vier Aktien aus dem breiteren Markt ergänzt. Starlink und Tesla Energie bleiben als Themen auf der jeweiligen Aktie. Alle Einstiege in Euro.",
   "picks": [
     {
       "id": "tr-2026-11-04-spcx",
@@ -13,7 +13,7 @@
       "score": 7,
       "entryPriceEur": 121.01,
       "result": "offen",
-      "outcomeNote": "Startpunkt der Bilanz. Einstieg: Schlusskurs 04.11.2026: 135,92 $ ÷ EURUSD 1,1232. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro über dem Einstieg liegt.",
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg 120,99 € am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
       "example": false,
       "sources": [
         {
@@ -40,7 +40,7 @@
       "score": 8,
       "entryPriceEur": 121.01,
       "result": "offen",
-      "outcomeNote": "Startpunkt der Bilanz. Einstieg: Schlusskurs 04.11.2026: 135,92 $ ÷ EURUSD 1,1232. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro über dem Einstieg liegt.",
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg 120,99 € am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
       "example": false,
       "sources": [
         {
@@ -121,7 +121,7 @@
       "score": 5,
       "entryPriceEur": 46.63,
       "result": "offen",
-      "outcomeNote": "Startpunkt der Bilanz. Einstieg: Schlusskurs 04.11.2026: 52,37 $ ÷ EURUSD 1,1232. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro über dem Einstieg liegt.",
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg 46,63 € am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
       "example": false,
       "sources": [
         {
@@ -135,6 +135,114 @@
         {
           "title": "Rocket Lab: Ergebnisse Q2 2026",
           "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts"
+        }
+      ]
+    },
+    {
+      "id": "tr-2026-11-05-tsm",
+      "symbol": "TSM",
+      "name": "TSMC",
+      "pickedOn": "2026-11-05",
+      "horizonEnd": "2027-05-05",
+      "thesis": "TSMC fertigt die Chips, die Nvidia verkauft. Karl setzt die 7 auf die Fabrik, nicht auf die lauteste Marke.",
+      "score": 7,
+      "entryPriceEur": 352.25,
+      "result": "offen",
+      "outcomeNote": "Startpunkt. Einstieg 352,25 € am 05.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: TSM",
+          "url": "https://finance.yahoo.com/quote/TSM"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "KI-Aktien nach dem Wahlergebnis unter Druck (Economic Times, 05.11.2026)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-retreat-as-democratic-sweep-puts-data-centre-boom-in-focus/articleshow/135551445.cms"
+        }
+      ]
+    },
+    {
+      "id": "tr-2026-11-05-hen3",
+      "symbol": "HEN3",
+      "name": "Henkel Vorzüge",
+      "pickedOn": "2026-11-05",
+      "horizonEnd": "2027-05-05",
+      "thesis": "Henkel notiert in Euro und kam am 4. November auf 82,42 €, während die Chipwerte fielen. Der Schwarm nennt die Aktie kaum.",
+      "score": 6,
+      "entryPriceEur": 82.42,
+      "result": "offen",
+      "outcomeNote": "Startpunkt. Einstieg 82,42 € am 05.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: HEN3.DE",
+          "url": "https://finance.yahoo.com/quote/HEN3.DE"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "KI-Aktien nach dem Wahlergebnis unter Druck (Economic Times, 05.11.2026)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-retreat-as-democratic-sweep-puts-data-centre-boom-in-focus/articleshow/135551445.cms"
+        }
+      ]
+    },
+    {
+      "id": "tr-2026-11-05-nvda",
+      "symbol": "NVDA",
+      "name": "Nvidia",
+      "pickedOn": "2026-11-05",
+      "horizonEnd": "2027-05-05",
+      "thesis": "Nvidia bleibt die Mautstelle der KI, der Schwarm ist auf der Kaufseite. Karl bleibt bei 5. Einstieg ist der Xetra-Kurs.",
+      "score": 5,
+      "entryPriceEur": 180.56,
+      "result": "offen",
+      "outcomeNote": "Startpunkt. Einstieg 180,56 € am 05.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: NVD.DE",
+          "url": "https://finance.yahoo.com/quote/NVD.DE"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "KI-Aktien nach dem Wahlergebnis unter Druck (Economic Times, 05.11.2026)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-retreat-as-democratic-sweep-puts-data-centre-boom-in-focus/articleshow/135551445.cms"
+        }
+      ]
+    },
+    {
+      "id": "tr-2026-11-05-avgo",
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "pickedOn": "2026-11-05",
+      "horizonEnd": "2027-05-05",
+      "thesis": "Broadcom hängt an wenigen großen KI-Kunden. Karl bleibt bei 5. Einstieg ist der Xetra-Kurs.",
+      "score": 5,
+      "entryPriceEur": 291.15,
+      "result": "offen",
+      "outcomeNote": "Startpunkt. Einstieg 291,15 € am 05.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance: 1YD.DE",
+          "url": "https://finance.yahoo.com/quote/1YD.DE"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "KI-Aktien nach dem Wahlergebnis unter Druck (Economic Times, 05.11.2026)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-retreat-as-democratic-sweep-puts-data-centre-boom-in-focus/articleshow/135551445.cms"
         }
       ]
     }

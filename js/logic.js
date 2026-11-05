@@ -277,7 +277,7 @@ export function methodLabel(ticker) {
   if (ticker?.eurMethod === "direct_eur") {
     return ticker.eurVenue ? `${ticker.eurVenue} · Euro` : "Euro-Kurs";
   }
-  if (ticker?.eurMethod === "usd_div_eurusd") return "Nasdaq · Dollar in Euro";
+  if (ticker?.eurMethod === "usd_div_eurusd") return "in Euro gerechnet";
   return ticker?.venue || "";
 }
 

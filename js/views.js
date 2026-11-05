@@ -146,8 +146,6 @@ function renderHeute(data, ui, store) {
   const calm = bigDrop(data);
   const next = headlineEvent(data.calendar?.events || []);
   const favorites = [...(data.favorites?.favorites || [])].sort((a, b) => (a.rank || 99) - (b.rank || 99));
-  const top = favorites[0];
-  const rest = favorites.slice(1);
   const launch = data.production?.nextLaunch;
   const question = data.daily_question?.current;
   const live = freshPrices(data.meta);
@@ -164,19 +162,19 @@ function renderHeute(data, ui, store) {
     ${install ? `<p class="install-line"><span>In Safari auf Teilen tippen, dann „Zum Home-Bildschirm“.</span><button type="button" data-action="dismiss-install">OK</button></p>` : ""}
     ${calm.active ? `<button type="button" class="banner banner-calm" data-action="open-calm">Ruhe-Modus · ${esc(dropped || "Ein Kurs")}</button>` : ""}
     <section class="card quote-card" aria-label="Kurse in Euro">
+      <div class="row between quote-head"><span class="kicker">Kurse in Euro</span><span class="muted">Xetra, sonst umgerechnet</span></div>
       ${tickers.map((ticker) => quoteRow(ticker, live)).join("") || `<p class="empty">Keine Kurse.</p>`}
     </section>
+    ${topFive(favorites, ui)}
     ${next ? `<button type="button" class="card next-card" data-action="open-event" data-id="${esc(next.id)}">
       <span class="kicker">Als Nächstes</span>
       <span class="next-title">${esc(next.title)}</span>
       <span class="muted">${esc(formatDay(next.date))}${next.time ? ` · ${esc(next.time)}` : ""} · ${esc(String(next.probabilityPct ?? "—"))} %</span>
     </button>` : ""}
-    ${top ? favoriteNote(top, ui, true) : ""}
-    ${rest.length ? `<details class="fold"><summary>Karls weitere Notizen <span class="muted">${rest.length}</span></summary><div class="fold-body">${rest.map((favorite) => favoriteNote(favorite, ui, false)).join("")}</div></details>` : ""}
     ${launch ? `<details class="fold"><summary><span>Starship</span><span class="count-num summary-count" id="count-num" data-target="${esc(launch.target || "")}">—</span></summary><div class="fold-body">${launchBody(launch)}</div></details>` : ""}
     ${alerts.length ? `<details class="fold"><summary>Bewegungen ab 2 % <span class="muted">${alerts.length}</span></summary><div class="fold-body">${alerts.slice(0, 6).map((alert) => `
       <button type="button" class="mini-note" data-action="open-alerts">
-        <span class="row between"><strong>${esc(alert.symbol)}</strong><span class="${tone(alert.changePct)}">${esc(formatPct(alert.changePct))}</span></span>
+        <span class="row between"><strong>${esc(alert.symbol)}</strong><span>${esc(formatEUR(alert.priceEur))} <span class="${tone(alert.changePct)}">${esc(formatPct(alert.changePct))}</span></span></span>
         <span class="muted">${esc(formatStamp(alert.timestamp))}${alert.notified ? " · gemeldet" : ""}</span>
       </button>`).join("")}</div></details>` : ""}
     <details class="fold"><summary>Kosmos</summary><div class="fold-body chips">${(data.companies?.companies || []).map((company) => `
@@ -205,16 +203,40 @@ function quoteRow(ticker, live) {
   </div>`;
 }
 
-function favoriteNote(favorite, ui, lead) {
-  const tag = lead ? "article" : "div";
-  const heading = lead ? "h2" : "h3";
-  return `<${tag} class="${lead ? "card note-card" : "mini-note"}">
-    <p class="kicker">${lead ? "Karl" : esc(favorite.symbol || "Notiz")} · ${esc(String(favorite.score))}/10</p>
-    <${heading}>${esc(favorite.name)}</${heading}>
-    <p>${esc(favorite.reason)}</p>
-    <button type="button" class="text-btn" data-action="gegenteil" data-id="${esc(favorite.id)}" aria-expanded="${ui.revealed[favorite.id] ? "true" : "false"}">Gegenteil</button>
-    ${ui.revealed[favorite.id] ? `<p class="counter">${esc(favorite.counterArgument || "Dazu liegt noch kein Gegenargument vor.")}</p>` : ""}
-  </${tag}>`;
+const STANCE = {
+  kauf: "Kauf",
+  halten: "Halten",
+  verkauf: "Verkauf",
+  vorsichtig: "Vorsichtig",
+  kaum: "Kaum genannt",
+  beobachten: "Kaum genannt"
+};
+
+function stanceLabel(value) {
+  return STANCE[value] || value || "—";
+}
+
+function topFive(favorites, ui) {
+  if (!favorites.length) return "";
+  const against = favorites.filter((favorite) => favorite.againstCrowd).map((favorite) => favorite.symbol);
+  return `<section class="card top5" aria-label="Karls Top 5">
+    <div class="row between">
+      <h2>Karls Top 5</h2>
+      <button type="button" class="text-btn" data-action="page" data-page="schwarm">Schwarm gegen Karl</button>
+    </div>
+    <p class="muted">Fünf Aktien aus dem ganzen Markt, Kurse in Euro. ${against.length ? `Gegen den Schwarm: ${esc(against.join(", "))}.` : ""}</p>
+    ${favorites.map((favorite) => `<article class="top-row">
+      <div class="row between">
+        <strong>${esc(String(favorite.rank || ""))} · ${esc(favorite.symbol)}</strong>
+        <span class="fav-px">${favorite.priceEur == null ? "" : esc(formatEUR(favorite.priceEur))}</span>
+      </div>
+      <p class="muted">${esc(favorite.name)} · ${esc(String(favorite.score))}/10 · ${esc(favorite.priceVenue || "Euro")}${favorite.againstCrowd ? " · dagegen" : ""}</p>
+      <p class="stance-line"><span>Schwarm ${esc(stanceLabel(favorite.swarmStance))}</span><span>Karl ${esc(stanceLabel(favorite.karlStance))}</span></p>
+      <p>${esc(favorite.reason)}</p>
+      <button type="button" class="text-btn" data-action="gegenteil" data-id="${esc(favorite.id)}" aria-expanded="${ui.revealed[favorite.id] ? "true" : "false"}">Gegenteil</button>
+      ${ui.revealed[favorite.id] ? `<p class="counter">${esc(favorite.counterArgument || "Dazu liegt noch kein Gegenargument vor.")}</p>` : ""}
+    </article>`).join("")}
+  </section>`;
 }
 
 function eventRow(event) {
@@ -301,24 +323,28 @@ function renderSchwarm(data) {
   const investors = data.crowd?.investors || [];
   return `
     <header class="page-head">
-      <p class="eyebrow">Schwarmwissen</p>
-      <h2>Was andere gerade nennen</h2>
-      <p class="lede">Erwähnungen, Richtung, Trefferquote. Alles nur so gut wie die Quellen.</p>
+      <p class="eyebrow">Ganzer Markt</p>
+      <h2>Schwarm gegen Karl</h2>
+      <p class="lede">Karl setzt auf fünf Aktien, nicht nur auf Tesla und SpaceX. Die laute Richtung steht daneben.</p>
     </header>
     <article class="card compare">
-      <p class="kicker">Schwarm gegen Karl</p>
-      <div class="versus">
-        <div><span class="big">${esc(formatNumber(comparison.swarmHitRatePct, 0))} %</span><span class="muted">Schwarm</span></div>
-        <div><span class="big gold">${esc(formatNumber(comparison.karlHitRatePct, 0))} %</span><span class="muted">Karl</span></div>
-      </div>
+      <p class="kicker">Richtung, nicht eine erfundene Quote</p>
+      ${(comparison.picks || []).map((pick) => `
+        <div class="versus-row">
+          <strong>${esc(pick.symbol)}</strong>
+          <span>${pick.priceEur == null ? "" : esc(formatEUR(pick.priceEur))}</span>
+          <span>Schwarm ${esc(stanceLabel(pick.swarmStance))}</span>
+          <span class="gold">Karl ${esc(stanceLabel(pick.karlStance))}${pick.againstCrowd ? " · dagegen" : ""}</span>
+        </div>`).join("")}
       <p>${esc(comparison.summary || "")}</p>
+      ${comparison.swarmHitRatePct == null ? `<p class="muted">Trefferquote Schwarm und Karl: noch offen.</p>` : `<div class="versus"><div><span class="big">${esc(formatNumber(comparison.swarmHitRatePct, 0))} %</span><span class="muted">Schwarm</span></div><div><span class="big gold">${esc(formatNumber(comparison.karlHitRatePct, 0))} %</span><span class="muted">Karl</span></div></div>`}
       ${sourcesBlock(comparison.sources)}
     </article>
     <div class="stack">${investors.map((investor) => `
       <button type="button" class="card linkish" data-action="open-investor" data-id="${esc(investor.id)}">
         <span class="row between"><strong>${esc(investor.name)}</strong>${pill(investor.example)}</span>
-        <span class="muted">${esc(investor.handle)} · Treffer ${esc(formatNumber(investor.hitRatePct, 0))} %</span>
-        <span class="mention-row">${(investor.tickers || []).map((ticker) => `<em>${esc(ticker.symbol)} ${esc(String(ticker.mentions))}× ${esc(ticker.stance)}</em>`).join("")}</span>
+        <span class="muted">${esc(investor.handle)} · ${investor.hitRatePct == null ? "Treffer noch offen" : `Treffer ${esc(formatNumber(investor.hitRatePct, 0))} %`}</span>
+        <span class="mention-row">${(investor.tickers || []).map((ticker) => `<em>${esc(ticker.symbol)} ${ticker.mentions == null ? "" : `${esc(String(ticker.mentions))}× `}${esc(stanceLabel(ticker.stance))}</em>`).join("")}</span>
         <canvas class="chart mini" data-chart="hit" data-investor="${esc(investor.id)}"></canvas>
       </button>`).join("")}</div>
   `;
@@ -331,10 +357,10 @@ function renderChartsPage(data, ui) {
   const ranges = ui.langfrist ? ["6M", "1J", "5J"] : ["Tag", "1M", "6M", "1J", "5J"];
   return `
     <header class="page-head">
-      <p class="eyebrow">Charts</p>
+      <p class="eyebrow">Kurs in Euro</p>
       <h2>${esc(ticker?.name || "Kurs")}</h2>
       <p class="price-value">${esc(formatEUR(ticker?.priceEur))} <span class="${tone(change)}">${esc(formatPct(change))}</span></p>
-      <p class="muted">Spanne ${esc(range)} · ${esc(methodLabel(ticker || {}))}</p>
+      <p class="muted">${esc(methodLabel(ticker || {}))} · Spanne ${esc(range)}</p>
     </header>
     <div class="chips">${(data.prices?.tickers || []).map((item) => `
       <button type="button" class="chip" data-action="chart-symbol" data-symbol="${esc(item.symbol)}" aria-pressed="${item.symbol === ticker?.symbol}">${esc(item.symbol)}</button>`).join("")}</div>
@@ -481,16 +507,23 @@ function investorDetail(data, id) {
     kind: "investor",
     title: investor.name,
     html: `
-      <p class="muted">${esc(investor.handle)} · Trefferquote ${esc(formatNumber(investor.hitRatePct, 0))} %</p>
+      <p class="muted">${esc(investor.handle)} · ${investor.hitRatePct == null ? "Trefferquote noch offen" : `Trefferquote ${esc(formatNumber(investor.hitRatePct, 0))} %`}</p>
       ${pill(investor.example)}
       <p>${esc(investor.note || "")}</p>
       <canvas class="chart" data-chart="hit" data-investor="${esc(investor.id)}"></canvas>
       <h3>Erwähnungen</h3>
       ${(investor.tickers || []).map((ticker) => `
-        <div class="mention"><span>${esc(ticker.symbol)} · ${esc(ticker.stance)}</span><div class="prob"><span style="width:${Math.round((ticker.mentions / max) * 100)}%"></span></div><b>${esc(String(ticker.mentions))}</b></div>`).join("")}
+        <div class="mention"><span>${esc(ticker.symbol)} · ${esc(stanceLabel(ticker.stance))}</span>${ticker.mentions == null ? "" : `<div class="prob"><span style="width:${Math.round((ticker.mentions / max) * 100)}%"></span></div><b>${esc(String(ticker.mentions))}</b>`}</div>`).join("")}
       ${sourcesBlock(investor.sources)}
     `
   };
+}
+
+function insiderEuro(trade, data) {
+  if (trade.priceEur != null) return formatEUR(trade.priceEur);
+  const rate = data?.prices?.fx?.rate || data?.meta?.fx?.rate;
+  if (trade.priceUsd == null || !rate) return "";
+  return formatEUR(Number(trade.priceUsd) / Number(rate));
 }
 
 function insidersDetail(data) {
@@ -502,7 +535,7 @@ function insidersDetail(data) {
       <article class="card ${trade.side === "kauf" ? "buy" : ""}">
         <div class="row between"><strong>${esc(trade.person)}</strong>${pill(trade.example)}</div>
         <p>${esc(trade.role || "")} · ${esc(trade.symbol)} · ${esc(trade.side === "kauf" ? "Kauf" : "Verkauf")}</p>
-        <p class="muted">${esc(formatDay(trade.date))} · ${esc(formatNumber(trade.shares))} Stück${trade.priceUsd != null ? ` · ${esc(formatNumber(trade.priceUsd, 2))} USD` : ""}</p>
+        <p class="muted">${esc(formatDay(trade.date))} · ${esc(formatNumber(trade.shares))} Stück${insiderEuro(trade, data) ? ` · ${esc(insiderEuro(trade, data))}` : ""}</p>
         ${sourcesBlock(trade.sources)}
       </article>`).join("") || `<p class="empty">Keine Meldungen.</p>`
   };
@@ -523,7 +556,8 @@ function trackDetail(data) {
       ${picks.map((pick) => `
         <article class="card">
           <div class="row between"><strong>${esc(pick.name || pick.symbol)}</strong><span class="status st-${esc(pick.result)}">${esc(pick.result)}</span></div>
-          <p class="muted">${esc(formatDay(pick.pickedOn))} bis ${esc(formatDay(pick.horizonEnd))} · Wert ${esc(String(pick.score ?? ""))}</p>
+          <p class="price-value">${esc(formatEUR(pick.entryPriceEur))}</p>
+          <p class="muted">Einstieg in Euro · ${esc(formatDay(pick.pickedOn))} bis ${esc(formatDay(pick.horizonEnd))} · Wert ${esc(String(pick.score ?? ""))}</p>
           <p>${esc(pick.thesis || "")}</p>
           <p class="muted">${esc(pick.outcomeNote || "")}</p>
           ${pill(pick.example)}

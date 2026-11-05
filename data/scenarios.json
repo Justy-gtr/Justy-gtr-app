@@ -432,7 +432,7 @@
       "dropPct": -39.1,
       "period": "seit Dez. 2025 (läuft)",
       "monthsToRecover": null,
-      "recoveryNote": "Hoch 489,88 $ am 16.12.2025, Tief 298,32 $ am 29.07.2026. Noch nicht erholt (Schluss 04.11.: 385,19 $).",
+      "recoveryNote": "Hoch 436,15 € am 16.12.2025, Tief 265,60 € am 29.07.2026. Noch nicht erholt (Schluss 04.11.: 342,94 €). In Euro gerechnet, ein Kurs für die ganze Reihe.",
       "example": false,
       "sources": [
         {
@@ -462,7 +462,7 @@
       "dropPct": -66.2,
       "period": "seit Mai 2026 (läuft)",
       "monthsToRecover": null,
-      "recoveryNote": "Hoch 150,23 $ am 27.05.2026, Tief 50,84 $ am 16.10.2026. Noch nicht erholt (Schluss 04.11.: 52,37 $).",
+      "recoveryNote": "Hoch 133,75 € am 27.05.2026, Tief 45,26 € am 16.10.2026. Noch nicht erholt (Schluss 04.11.: 46,63 €). In Euro gerechnet.",
       "example": false,
       "sources": [
         {
@@ -477,7 +477,7 @@
       "dropPct": -48.8,
       "period": "seit Juni 2026 (läuft)",
       "monthsToRecover": null,
-      "recoveryNote": "Hoch 211,39 $ am 16.06.2026 kurz nach dem Börsengang, Tief 108,27 $ am 05.08.2026. Noch nicht erholt (Schluss 04.11.: 135,92 $). Ausgabepreis war 135 $.",
+      "recoveryNote": "Hoch 188,20 € am 16.06.2026 kurz nach dem Börsengang, Tief 96,39 € am 05.08.2026. Noch nicht erholt (Schluss 04.11.: 120,99 €). Ausgabepreis war 120,19 €.",
       "example": false,
       "sources": [
         {
@@ -487,5 +487,5 @@
       ]
     }
   ],
-  "notes": "Kursbewegungen = Veränderung des Schlusskurses in US-Dollar gegenüber dem Vortag (Yahoo Finance). In Euro weicht es um die Wechselkursbewegung ab."
+  "notes": "Kursstände in Euro, umgerechnet mit 1,1232 Dollar je Euro. Die prozentuale Bewegung ist die des Schlusskurses."
 }

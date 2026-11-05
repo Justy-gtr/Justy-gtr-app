@@ -207,7 +207,7 @@ Karls fünf Favoriten. Die Startseite zeigt die Liste in `rank`-Reihenfolge.
 }
 ```
 
-`score` ist eine ganze Zahl von 1 bis 10. Fünf Einträge sind vorgesehen. `counterArgument` erscheint über den Knopf „Gegenteil“.
+`score` ist eine ganze Zahl von 1 bis 10. Fünf Einträge sind Karls Top 5 über den ganzen Markt, nicht nur SpaceX und Tesla. `counterArgument` erscheint über den Knopf „Gegenteil“. Optional: `karlStance`, `swarmStance` (`kauf`, `halten`, `verkauf`, `vorsichtig`, `kaum`), `againstCrowd`, `priceEur`, `priceVenue`, `priceAsOf`, `swarmNote`. Angezeigte Kurse sind Euro.
 
 ## `crowd.json`
 

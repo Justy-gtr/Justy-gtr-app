@@ -5,7 +5,7 @@
       "id": "kgv",
       "term": "KGV",
       "short": "Kurs-Gewinn-Verhältnis",
-      "explanation": "Aktienkurs geteilt durch den Gewinn je Aktie. Es sagt, wie viele Jahresgewinne du heute bezahlst. Bei SpaceX ist es hoch: rund 0,35 $ Gewinn je Aktie im Q3 stehen einem Kurs um 136 $ gegenüber.",
+      "explanation": "Aktienkurs geteilt durch den Gewinn je Aktie. Es sagt, wie viele Jahresgewinne du heute bezahlst. Bei SpaceX ist es hoch: rund 0,31 € Gewinn je Aktie im Q3 stehen einem Kurs um 121 € gegenüber.",
       "example": false,
       "sources": [
         {
@@ -129,7 +129,7 @@
       "id": "ipo",
       "term": "IPO",
       "short": "Börsengang",
-      "explanation": "Erstes öffentliches Angebot von Aktien. SpaceX ging am 12. Juni 2026 zum Ausgabepreis von 135 $ an die Nasdaq.",
+      "explanation": "Erstes öffentliches Angebot von Aktien. SpaceX ging am 12. Juni 2026 zum Ausgabepreis von 120,19 € an die Nasdaq, in Euro gerechnet.",
       "example": false,
       "sources": [
         {
@@ -244,7 +244,7 @@
       "id": "arpu",
       "term": "ARPU",
       "short": "Umsatz je Kunde",
-      "explanation": "Durchschnittlicher Monatsumsatz pro Kunde. Bei Starlink sank er von 83 $ auf 69 $, weil neue Kunden aus günstigeren Ländern und Tarifen kommen.",
+      "explanation": "Durchschnittlicher Monatsumsatz pro Kunde. Bei Starlink sank er von etwa 74 € auf 61 €, weil neue Kunden aus günstigeren Ländern und Tarifen kommen.",
       "example": false,
       "sources": [
         {
