@@ -335,6 +335,37 @@
       ]
     },
     {
+      "id": "evt-electron-mountain-god",
+      "title": "Rocket Lab: Electron-Start „The Mountain God Rises“ für iQPS (frühestens 14. Nov.)",
+      "date": "2026-11-14",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "start",
+      "company": "Rocket Lab",
+      "tickers": [
+        "RKLB"
+      ],
+      "probabilityPct": 70,
+      "impact": "niedrig",
+      "reasoning": "Rocket Lab führt den Start auf der eigenen Missionsliste mit „frühestens 14. November“; er bringt den Radarsatelliten QPS-SAR-19 „Yamatsumi-II“ in den Orbit. Der letzte Start am 3.11. war der 99. Electron-Flug, dieser wäre also voraussichtlich der 100., sofern kein anderer Start dazwischenkommt. Meine 70 % gelten für einen Start bis 20. November: Electron startet zuverlässig, verschiebt aber oft um ein paar Tage wegen Wetter. Ein Bericht nannte den 10. November, die offizielle Seite sagt 14. November. Kurs: Routinestarts bewegen RKLB kaum; wichtiger sind die Q3-Zahlen am 9.11.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Rocket Lab: Startliste (The Mountain God Rises, NET 14.11.2026)",
+          "url": "https://rocketlabcorp.com/missions/launches/"
+        },
+        {
+          "title": "Rocket Lab: 99. Electron-Mission erfolgreich (02.11.2026)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/mission-success-rocket-lab-launches-99th-electron-mission"
+        },
+        {
+          "title": "Tech Times: iQPS-Satellit, Yamatsumi-II folgt",
+          "url": "https://www.techtimes.com/articles/330031/20261104/rocket-lab-launches-iqps-radar-satellite-already-occupied-orbit-first-time.htm"
+        }
+      ]
+    },
+    {
       "id": "evt-us-jobs-okt",
       "title": "USA: Arbeitsmarktbericht Oktober",
       "date": "2026-11-06",
