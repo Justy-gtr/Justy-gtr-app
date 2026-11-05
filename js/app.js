@@ -180,6 +180,7 @@ document.body.addEventListener("click", (event) => {
     ui.revealed[id] = !ui.revealed[id];
     render();
     if (id.startsWith("co-") && nav.topKind() === "company") openDetail("open-company", { id: id.slice(3) }, true);
+    if (nav.topKind() === "favorite") openDetail("open-favorite", { id }, true);
     const favoriteCount = Object.entries(ui.revealed).filter(([key, on]) => on && key.startsWith("fav-")).length;
     if (favoriteCount >= 5 && !ui.eggCounters) {
       ui.eggCounters = true;

@@ -89,6 +89,182 @@ export function formatStamp(value) {
   }).format(date);
 }
 
+/** Wall clock in a named zone → instant. Used so feed times are never left in US time. */
+export function zonedWallTime(dateStr, timeStr, timeZone = "Europe/Berlin") {
+  const dateMatch = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(dateStr || ""));
+  const clockMatch = /^(\d{1,2}):(\d{2})/.exec(String(timeStr || ""));
+  if (!dateMatch || !clockMatch) return null;
+  const year = Number(dateMatch[1]);
+  const month = Number(dateMatch[2]);
+  const day = Number(dateMatch[3]);
+  const hour = Number(clockMatch[1]);
+  const minute = Number(clockMatch[2]);
+  const desired = Date.UTC(year, month - 1, day, hour, minute);
+  const zoned = (ms) => {
+    const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+      timeZone,
+      hourCycle: "h23",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit"
+    }).formatToParts(new Date(ms)).map((part) => [part.type, part.value]));
+    return Date.UTC(
+      Number(parts.year),
+      Number(parts.month) - 1,
+      Number(parts.day),
+      Number(parts.hour) % 24,
+      Number(parts.minute)
+    );
+  };
+  let utc = desired;
+  for (let step = 0; step < 3; step += 1) {
+    const delta = zoned(utc) - desired;
+    if (delta === 0) break;
+    utc -= delta;
+  }
+  return new Date(utc);
+}
+
+export function formatFeedTime(value, now = new Date(), { withClock = true } = {}) {
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  const zone = "Europe/Berlin";
+  const day = berlinDate(date);
+  const today = berlinDate(now);
+  const yesterday = berlinDate(new Date(now.getTime() - 86400000));
+  const clock = new Intl.DateTimeFormat("de-DE", {
+    timeZone: zone,
+    hour: "2-digit",
+    minute: "2-digit"
+  }).format(date);
+  if (!withClock) {
+    if (day === today) return "heute";
+    if (day === yesterday) return "gestern";
+    return new Intl.DateTimeFormat("de-DE", { timeZone: zone, day: "numeric", month: "short" }).format(date);
+  }
+  if (day === today) return `heute ${clock}`;
+  if (day === yesterday) return `gestern ${clock}`;
+  const short = new Intl.DateTimeFormat("de-DE", { timeZone: zone, day: "numeric", month: "short" }).format(date);
+  return `${short} · ${clock}`;
+}
+
+function clip(text, max = 88) {
+  const clean = String(text || "").replace(/\s+/g, " ").trim();
+  if (clean.length <= max) return clean;
+  return `${clean.slice(0, max - 1).trim()}…`;
+}
+
+function eventInstant(event) {
+  if (event?.time) return zonedWallTime(event.date, event.time, event.timezone || "Europe/Berlin");
+  return parseDay(event?.date);
+}
+
+export function formatEventClock(event, now = new Date()) {
+  if (!event) return "";
+  if (!event.time) return formatFeedTime(parseDay(event.date), now, { withClock: false });
+  const at = zonedWallTime(event.date, event.time, event.timezone || "Europe/Berlin");
+  return at ? formatFeedTime(at, now) : event.time;
+}
+
+export function buildFeed(data, now = new Date(), limit = 12) {
+  const nowMs = now.getTime();
+  const items = [];
+  const posts = [...(data?.posts?.posts || [])]
+    .filter((post) => post?.postedAt)
+    .sort((a, b) => String(b.postedAt).localeCompare(String(a.postedAt)))
+    .slice(0, 3);
+  for (const post of posts) {
+    const at = new Date(post.postedAt);
+    if (Number.isNaN(at.getTime())) continue;
+    if (nowMs - at.getTime() > 5 * 86400000) continue;
+    items.push({
+      id: `post-${post.id}`,
+      kind: "post",
+      label: "Post",
+      title: clip(post.summaryDe || post.displayName || post.account),
+      at: at.getTime(),
+      withClock: true,
+      action: "open-post",
+      target: post.id
+    });
+  }
+
+  const seenAlert = new Set();
+  const alerts = [...(data?.alerts?.alerts || [])]
+    .filter((alert) => alert && Math.abs(Number(alert.changePct)) >= 2 && alert.timestamp)
+    .sort((a, b) => String(b.timestamp).localeCompare(String(a.timestamp)));
+  for (const alert of alerts) {
+    if (seenAlert.has(alert.symbol)) continue;
+    const at = new Date(alert.timestamp);
+    if (Number.isNaN(at.getTime())) continue;
+    if (nowMs - at.getTime() > 3 * 86400000) continue;
+    seenAlert.add(alert.symbol);
+    const price = alert.priceEur == null ? "" : ` auf ${new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR" }).format(alert.priceEur)}`;
+    const pct = new Intl.NumberFormat("de-DE", { signDisplay: "exceptZero", minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(Number(alert.changePct));
+    items.push({
+      id: `alert-${alert.id}`,
+      kind: "alert",
+      label: "Kurs",
+      title: clip(`${alert.symbol} ${pct} %${price}`),
+      at: at.getTime(),
+      withClock: true,
+      action: "open-alerts",
+      target: ""
+    });
+    if (seenAlert.size >= 3) break;
+  }
+
+  const briefing = data?.briefing;
+  if (briefing?.date && Array.isArray(briefing.bullets)) {
+    const at = zonedWallTime(briefing.date, "07:00", "Europe/Berlin");
+    if (at && Math.abs(nowMs - at.getTime()) < 2 * 86400000) {
+      briefing.bullets.slice(0, 3).forEach((bullet, index) => {
+        items.push({
+          id: `brief-${briefing.date}-${index}`,
+          kind: "briefing",
+          label: "Briefing",
+          title: clip(bullet),
+          at: at.getTime(),
+          tie: index,
+          withClock: true,
+          action: "open-briefing",
+          target: ""
+        });
+      });
+    }
+  }
+
+  const horizon = 7 * 86400000;
+  const recent = 36 * 3600000;
+  const events = (data?.calendar?.events || [])
+    .map((event) => ({ event, at: eventInstant(event) }))
+    .filter((item) => item.at && item.at.getTime() >= nowMs - recent && item.at.getTime() <= nowMs + horizon)
+    .sort((a, b) => a.at - b.at)
+    .slice(0, 4);
+  for (const { event, at } of events) {
+    items.push({
+      id: `event-${event.id}`,
+      kind: "event",
+      label: "Termin",
+      title: clip(event.title),
+      at: at.getTime(),
+      withClock: Boolean(event.time),
+      action: "open-event",
+      target: event.id
+    });
+  }
+
+  const past = items.filter((item) => item.at <= nowMs).sort((a, b) => b.at - a.at || (a.tie || 0) - (b.tie || 0));
+  const future = items.filter((item) => item.at > nowMs).sort((a, b) => a.at - b.at).slice(0, 3);
+  const room = Math.max(limit - future.length, 0);
+  return [...past.slice(0, room), ...future].map((item) => ({
+    ...item,
+    timeLabel: formatFeedTime(item.at, now, { withClock: item.withClock })
+  }));
+}
+
 export function greeting(date = new Date()) {
   const hour = date.getHours();
   if (hour < 5) return "Gute Nacht";

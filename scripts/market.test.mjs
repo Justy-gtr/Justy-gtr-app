@@ -2,7 +2,8 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { berlinParts, shouldRun } from "./schedule.mjs";
 import { fxFor, mergeTicker, meaningful, updateAlerts, usdToEur } from "./market.mjs";
-import { bigDrop, headlineEvent, isInAppUrl, maxPoints, opinionWord, scoreboard, seriesFor, trackSummary, verdictForStances } from "../js/logic.js";
+import { bigDrop, buildFeed, formatEventClock, formatFeedTime, headlineEvent, isInAppUrl, maxPoints, opinionWord, scoreboard, seriesFor, trackSummary, verdictForStances, zonedWallTime } from "../js/logic.js";
+import fs from "node:fs";
 
 test("Dollar wird durch EURUSD geteilt, nicht multipliziert", () => {
   assert.equal(usdToEur(112.32, 1.1232), 100);
@@ -174,6 +175,47 @@ test("Nur die App-Adresse bleibt im Fenster", () => {
   assert.equal(isInAppUrl(new URL("https://justy-gtr.github.io/Justy-gtr-app/index.html"), origin, base), true);
   assert.equal(isInAppUrl(new URL("https://x.com/SpaceX"), origin, base), false);
   assert.equal(isInAppUrl(new URL("https://justy-gtr.github.io/Justy-gtr-app/data/prices.json"), origin, base), false);
+});
+
+test("Zeiten landen in Europe/Berlin, auch aus US-Zeit", () => {
+  const berlin = zonedWallTime("2026-11-06", "14:30", "Europe/Berlin");
+  assert.equal(formatFeedTime(berlin, new Date("2026-11-06T12:00:00+01:00")), "heute 14:30");
+  const ny = zonedWallTime("2026-11-06", "14:30", "America/New_York");
+  assert.equal(formatFeedTime(ny, new Date("2026-11-06T18:00:00+01:00")), "heute 20:30");
+  assert.equal(formatEventClock({ date: "2026-11-06", time: "14:30", timezone: "America/New_York" }, new Date("2026-11-05T10:00:00+01:00")), "6. Nov. · 20:30");
+  const morning = new Date("2026-11-05T07:59:20Z");
+  assert.equal(formatFeedTime(morning, new Date("2026-11-05T10:00:00+01:00")), "heute 08:59");
+});
+
+test("Der Feed mischt Post, Termin, Kurs und Briefing, neueste zuerst", () => {
+  const now = new Date("2026-11-05T10:00:00+01:00");
+  const feed = buildFeed({
+    posts: { posts: [
+      { id: "p1", postedAt: "2026-11-05T08:59:20+01:00", summaryDe: "Musk am Morgen", account: "@elonmusk" },
+      { id: "old", postedAt: "2026-10-01T08:00:00+01:00", summaryDe: "zu alt" }
+    ] },
+    alerts: { alerts: [{ id: "a1", symbol: "TSLA", changePct: -4.9, priceEur: 342.15, timestamp: "2026-11-04T21:25:22.584Z" }] },
+    briefing: { date: "2026-11-05", bullets: ["Erster Punkt", "Zweiter Punkt"] },
+    calendar: { events: [
+      { id: "soon", title: "Arbeitsmarkt", date: "2026-11-06", time: "14:30", timezone: "Europe/Berlin" },
+      { id: "far", title: "Viel später", date: "2027-06-01", time: "10:00", timezone: "Europe/Berlin" }
+    ] }
+  }, now);
+  assert.equal(feed.some((item) => item.kind === "post" && item.timeLabel === "heute 08:59"), true);
+  assert.equal(feed.filter((item) => item.kind === "briefing").every((item) => item.timeLabel === "heute 07:00"), true);
+  assert.equal(feed.some((item) => item.kind === "alert"), true);
+  assert.equal(feed.some((item) => item.kind === "briefing"), true);
+  assert.equal(feed.some((item) => item.kind === "event" && item.title.startsWith("Arbeitsmarkt")), true);
+  assert.equal(feed.some((item) => item.title === "zu alt" || item.title === "Viel später"), false);
+  assert.ok(feed.findIndex((item) => item.kind === "post") < feed.findIndex((item) => item.kind === "event"));
+  const real = buildFeed({
+    posts: JSON.parse(fs.readFileSync("data/posts.json", "utf8")),
+    alerts: JSON.parse(fs.readFileSync("data/alerts.json", "utf8")),
+    briefing: JSON.parse(fs.readFileSync("data/briefing.json", "utf8")),
+    calendar: JSON.parse(fs.readFileSync("data/calendar.json", "utf8"))
+  }, now);
+  assert.deepEqual([...new Set(real.map((item) => item.kind))].sort(), ["alert", "briefing", "event", "post"]);
+  assert.match(real.find((item) => item.kind === "post").timeLabel, /^heute \d{2}:\d{2}$/);
 });
 
 test("Max zeigt die längste Reihe und behält den feineren Tag", () => {
