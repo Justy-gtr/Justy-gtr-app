@@ -8,6 +8,8 @@ import {
   formatStamp,
   freshPrices,
   greeting,
+  buildFeed,
+  formatEventClock,
   headlineEvent,
   isStandalone,
   opinionWord,
@@ -163,15 +165,16 @@ function renderHeute(data, ui, store) {
     </header>
     ${install ? `<p class="install-line"><span>In Safari auf Teilen tippen, dann „Zum Home-Bildschirm“.</span><button type="button" data-action="dismiss-install">OK</button></p>` : ""}
     ${calm.active ? `<button type="button" class="banner banner-calm" data-action="open-calm">Ruhe-Modus · ${esc(dropped || "Ein Kurs")}</button>` : ""}
-    <section class="card quote-card" aria-label="Kurse in Euro">
-      <div class="row between quote-head"><span class="kicker">Kurse in Euro</span><span class="muted">Xetra, sonst umgerechnet</span></div>
-      ${tickers.map((ticker) => quoteRow(ticker, live)).join("") || `<p class="empty">Keine Kurse.</p>`}
-    </section>
+    ${feedBlock(data)}
     ${topFive(favorites, ui)}
+    <section class="card quote-card is-tight" aria-label="Kurse in Euro">
+      <div class="row between quote-head"><span class="kicker">Kurse in Euro</span><span class="muted">Xetra, sonst umgerechnet</span></div>
+      ${tickers.map((ticker) => quoteRow(ticker, live, true)).join("") || `<p class="empty">Keine Kurse.</p>`}
+    </section>
     ${next ? `<button type="button" class="card next-card" data-action="open-event" data-id="${esc(next.id)}">
       <span class="kicker">Als Nächstes</span>
       <span class="next-title">${esc(next.title)}</span>
-      <span class="muted">${esc(formatDay(next.date))}${next.time ? ` · ${esc(next.time)}` : ""} · ${esc(String(next.probabilityPct ?? "—"))} %</span>
+      <span class="muted">${esc(formatEventClock(next))} · ${esc(String(next.probabilityPct ?? "—"))} %</span>
     </button>` : ""}
     ${launch ? `<details class="fold"><summary><span>Starship</span><span class="count-num summary-count" id="count-num" data-target="${esc(launch.target || "")}">—</span></summary><div class="fold-body">${launchBody(launch)}</div></details>` : ""}
     ${alerts.length ? `<details class="fold"><summary>Bewegungen ab 2 % <span class="muted">${alerts.length}</span></summary><div class="fold-body">${alerts.slice(0, 6).map((alert) => `
@@ -189,15 +192,28 @@ function renderHeute(data, ui, store) {
   `;
 }
 
-function quoteRow(ticker, live) {
+function feedBlock(data) {
+  const items = buildFeed(data);
+  if (!items.length) return "";
+  return `<section class="card feed" aria-label="Neues">
+    <p class="kicker">Neues</p>
+    ${items.map((item) => `<button type="button" class="feed-row" data-action="${esc(item.action)}" ${item.target ? `data-id="${esc(item.target)}"` : ""}>
+      <span class="feed-kind">${esc(item.label)}</span>
+      <span class="feed-title">${esc(item.title)}</span>
+      <span class="feed-time">${esc(item.timeLabel)}</span>
+    </button>`).join("")}
+  </section>`;
+}
+
+function quoteRow(ticker, live, tight = false) {
   const fresh = live && ticker.example !== true;
-  return `<div class="quote" data-symbol-card="${esc(ticker.symbol)}">
+  return `<div class="quote${tight ? " is-tight" : ""}" data-symbol-card="${esc(ticker.symbol)}">
     <button type="button" class="quote-hit" data-action="open-company" data-symbol="${esc(ticker.symbol)}" aria-label="${esc(ticker.name || ticker.symbol)} öffnen"></button>
     <span class="q-name">
       <strong>${esc(ticker.symbol)}${fresh ? `<span class="live-dot" title="Frische Kurse"></span>` : ""}</strong>
       <span class="q-sub"><span>${esc(ticker.name || "")}</span><button type="button" class="why-link" data-action="explain" data-symbol="${esc(ticker.symbol)}">Warum?</button></span>
     </span>
-    ${sparkline(ticker.sparkline)}
+    ${tight ? "" : sparkline(ticker.sparkline)}
     <span class="q-px">
       <strong>${esc(formatEUR(ticker.priceEur))}</strong>
       <span class="${tone(ticker.changePct)}">${arrow(ticker.changePct)} ${esc(formatPct(ticker.changePct))}</span>
@@ -259,26 +275,37 @@ function opinionCard(item, extra = "") {
   </article>`;
 }
 
-function topFive(favorites, ui) {
+function topCue(item) {
+  const verdict = verdictForStances(item?.swarmStance, item?.karlStance);
+  if (verdict.kind === "agree") return { text: "Einig", kind: "is-agree" };
+  if (verdict.kind === "against") return { text: "dagegen", kind: "is-against" };
+  return { text: "anders", kind: "is-mixed" };
+}
+
+function topFive(favorites) {
   if (!favorites.length) return "";
-  return `<section class="top5" aria-label="Karls Top 5">
-    <div class="row between top5-head">
-      <h2>Karls Top 5</h2>
-      <button type="button" class="text-btn" data-action="page" data-page="schwarm">Zum Vergleich</button>
+  return `<section class="card quote-card top5-compact" aria-label="Karls Top 5">
+    <div class="row between quote-head">
+      <span class="kicker">Karls Top 5</span>
+      <button type="button" class="text-btn" data-action="page" data-page="schwarm">Vergleich</button>
     </div>
-    <p class="legend">${esc(SCHWARM_LEGEND)}</p>
-    ${favorites.map((favorite) => opinionCard(favorite, `
-      <p class="opinion-reason">${esc(favorite.reason || "")}</p>
-      <button type="button" class="text-btn" data-action="gegenteil" data-id="${esc(favorite.id)}" aria-expanded="${ui.revealed[favorite.id] ? "true" : "false"}">Gegenteil</button>
-      ${ui.revealed[favorite.id] ? `<p class="counter">${esc(favorite.counterArgument || "Dazu liegt noch kein Gegenargument vor.")}</p>` : ""}
-    `)).join("")}
+    <p class="legend">Schwarm = Meinung auf X, keine Käufe.</p>
+    ${favorites.map((favorite) => {
+      const cue = topCue(favorite);
+      return `<button type="button" class="top-line" data-action="open-favorite" data-id="${esc(favorite.id)}">
+        <strong>${esc(favorite.symbol)}</strong>
+        <span class="top-name">${esc(favorite.name || "")}</span>
+        <span class="top-px">${favorite.priceEur == null ? "" : esc(formatEUR(favorite.priceEur))}</span>
+        <span class="verdict ${cue.kind}">${esc(cue.text)}</span>
+      </button>`;
+    }).join("")}
   </section>`;
 }
 
 function eventRow(event) {
   return `<button type="button" class="card linkish event-row" data-action="open-event" data-id="${esc(event.id)}">
     <span class="row between"><strong>${esc(event.title)}</strong>${pill(event.example)}</span>
-    <span class="muted">${esc(formatDay(event.date))}${event.time ? ` · ${esc(event.time)}` : ""} · ${esc(event.kind === "external" ? "Extern" : "Unternehmen")}</span>
+    <span class="muted">${esc(formatEventClock(event))} · ${esc(event.kind === "external" ? "Extern" : "Unternehmen")}</span>
     ${prob(event.probabilityPct)}
   </button>`;
 }
@@ -442,6 +469,7 @@ function renderMehr() {
 export function detailContent(action, dataset, ctx) {
   const { data, ui, store } = ctx;
   if (action === "open-company") return companyDetail(data, dataset.symbol || dataset.id, ui);
+  if (action === "open-favorite") return favoriteDetail(data, dataset.id, ui);
   if (action === "explain") return explainDetail(data, dataset.symbol);
   if (action === "open-event") return eventDetail(data, dataset.id);
   if (action === "open-post") return postDetail(data, dataset.id);
@@ -459,6 +487,27 @@ export function detailContent(action, dataset, ctx) {
   if (action === "open-weekly") return weeklyDetail(data.weekly);
   if (action === "open-alerts") return alertsDetail(data);
   return null;
+}
+
+function favoriteDetail(data, id, ui) {
+  const favorite = (data.favorites?.favorites || []).find((item) => item.id === id);
+  if (!favorite) return { kind: "favorite", title: "Favorit", html: `<p class="empty">Nicht gefunden.</p>` };
+  return {
+    kind: "favorite",
+    title: favorite.name || favorite.symbol,
+    html: `
+      <p class="kicker">${esc(favorite.symbol)} · ${esc(String(favorite.score))}/10 · ${favorite.priceEur == null ? "" : esc(formatEUR(favorite.priceEur))}</p>
+      <div class="opinion-chips">
+        ${opinionChip("Schwarm", favorite.swarmStance)}
+        ${opinionChip("Karl", favorite.karlStance)}
+      </div>
+      ${verdictBadge(favorite)}
+      <p>${esc(favorite.reason || "")}</p>
+      <button type="button" class="text-btn" data-action="gegenteil" data-id="${esc(favorite.id)}" aria-expanded="${ui?.revealed?.[favorite.id] ? "true" : "false"}">Gegenteil</button>
+      ${ui?.revealed?.[favorite.id] ? `<p class="counter">${esc(favorite.counterArgument || "Dazu liegt noch kein Gegenargument vor.")}</p>` : ""}
+      ${sourcesBlock(favorite.sources)}
+    `
+  };
 }
 
 function companyDetail(data, key, ui) {
@@ -508,7 +557,7 @@ function eventDetail(data, id) {
     kind: "event",
     title: event.title,
     html: `
-      <p class="muted">${esc(formatDay(event.date))}${event.time ? ` · ${esc(event.time)} ${esc(event.timezone || "")}` : ""}</p>
+      <p class="muted">${esc(formatEventClock(event))}</p>
       <p class="kicker">${esc(event.kind === "external" ? "Extern" : "Unternehmen")} · ${esc(event.category || "")} · Wirkung ${esc(event.impact || "")}</p>
       ${pill(event.example)}
       <h3>Wahrscheinlichkeit</h3>
