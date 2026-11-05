@@ -1,6 +1,6 @@
 {
   "dataMode": "live",
-  "lastUpdated": "2026-11-04T21:25:22.584Z",
+  "lastUpdated": "2026-11-05T01:30:00+01:00",
   "pricesUpdated": "2026-11-04T21:25:22.584Z",
   "timezone": "Europe/Berlin",
   "owner": "Justy",
@@ -45,5 +45,5 @@
       "error": null
     }
   },
-  "notes": "Recherche-Daten echt, Stand 04.11.2026 abends (Berlin). Kurse in prices.json stammen noch aus dem Seed, bis der Kurs-Workflow das nächste Mal läuft (nächster planmäßiger Lauf: Donnerstag, 05:00 Uhr)."
+  "notes": "Recherche echt. Kurse der drei Fokuswerte in Euro. Am 05.11.2026 ist Karls Top 5 auf den ganzen Markt gezogen (TSM, SPCX, Henkel, Nvidia, Broadcom), alle angezeigten Aktienkurse in Euro."
 }

@@ -618,6 +618,21 @@ body.detail-open .pager { overflow: hidden; }
 }
 .next-title { font-size: 22px; line-height: 1.2; letter-spacing: -0.03em; font-weight: 640; }
 .note-card h2 { font-size: 22px; margin: 2px 0 6px; }
+.top5 h2 { margin: 0; font-size: 22px; }
+.top-row { padding: 12px 0; border-top: 1px solid var(--line); }
+.top-row .fav-px { font-variant-numeric: tabular-nums; font-weight: 650; }
+.stance-line { display: flex; gap: 12px; color: var(--muted); font-size: 13px; }
+.versus-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  align-items: baseline;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+.versus-row strong { min-width: 4.2rem; }
+.quote-head { margin-bottom: 2px; }
 .fold {
   border-radius: 22px;
   background: var(--card);

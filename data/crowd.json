@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-04",
+  "asOf": "2026-11-05",
   "investors": [
     {
       "id": "inv-sawyermerritt",
@@ -179,24 +179,126 @@
           "url": "https://www.tradingcalendar.com/tesla-deliveries-production"
         }
       ]
+    },
+    {
+      "id": "inv-chip-lage",
+      "name": "Chip-Lage nach der Wahl",
+      "handle": "Meldungen, nicht ein Konto",
+      "hitRatePct": null,
+      "hitRateHistory": [],
+      "tickers": [
+        {
+          "symbol": "NVDA",
+          "mentions": null,
+          "stance": "kauf"
+        },
+        {
+          "symbol": "AVGO",
+          "mentions": null,
+          "stance": "kauf"
+        },
+        {
+          "symbol": "TSM",
+          "mentions": null,
+          "stance": "kauf"
+        },
+        {
+          "symbol": "HEN3",
+          "mentions": null,
+          "stance": "kaum"
+        }
+      ],
+      "note": "Keine Person und keine gezählten Posts. Am 4. November fielen KI- und Chipwerte, während der breite Markt stieg. Die Lage beschreibt die Kaufseite, auf der der Schwarm bei diesen Namen vorher stand. Henkel kommt in dieser Diskussion nicht vor.",
+      "example": false,
+      "sources": [
+        {
+          "title": "KI-Aktien nach dem Wahlergebnis unter Druck (Economic Times, 05.11.2026)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-retreat-as-democratic-sweep-puts-data-centre-boom-in-focus/articleshow/135551445.cms"
+        },
+        {
+          "title": "Warum Nvidia am Wahltag fiel (Invezz, 04.11.2026)",
+          "url": "https://invezz.com/en-ae/news/2026/11/04/why-is-nvidia-stock-falling-while-broader-markets-rally-on-democratic-midterm-win/"
+        }
+      ]
     }
   ],
   "comparison": {
     "swarmHitRatePct": null,
     "karlHitRatePct": null,
-    "summary": "Noch kein Vergleich möglich: Für keinen dieser Investoren gibt es eine nachprüfbare Trefferquote, und Karls Bilanz startet heute bei null. Beides wird ab dem 04.11.2026 mitgeschrieben, statt Zahlen zu erfinden.",
+    "summary": "Trefferquoten gibt es noch nicht. Sie laufen seit dem 4. November und stehen auf null, statt dass jemand eine Quote erfindet. Vergleichen lässt sich die Richtung über den ganzen Markt: der Schwarm ist bei Nvidia und Broadcom auf der Kaufseite, Karl nicht. Henkel nennt der Schwarm kaum, Karl hält die Aktie. Bei TSMC und SpaceX ist die Richtung ähnlich, Karl ist nur leiser.",
+    "picks": [
+      {
+        "symbol": "TSM",
+        "name": "TSMC",
+        "karlScore": 7,
+        "karlStance": "halten",
+        "swarmStance": "kauf",
+        "againstCrowd": false,
+        "priceEur": 352.25,
+        "priceVenue": "Nasdaq in Euro",
+        "note": "Der Schwarm kauft die KI-Namen als Paket. TSMC ist dabei, aber leiser als Nvidia."
+      },
+      {
+        "symbol": "SPCX",
+        "name": "SpaceX",
+        "karlScore": 7,
+        "karlStance": "halten",
+        "swarmStance": "kauf",
+        "againstCrowd": false,
+        "priceEur": 120.98,
+        "priceVenue": "in Euro gerechnet",
+        "note": "Farzad ist klar auf der Kaufseite, Sawyer nennt sich Investor. Die laute Richtung bleibt positiv. Karl gibt eine 7 und keine 9."
+      },
+      {
+        "symbol": "HEN3",
+        "name": "Henkel Vorzüge",
+        "karlScore": 6,
+        "karlStance": "halten",
+        "swarmStance": "kaum",
+        "againstCrowd": true,
+        "priceEur": 82.42,
+        "priceVenue": "Xetra",
+        "note": "In den geführten X-Konten kommt Henkel nicht vor. Der Schwarm ist bei den KI-Namen, nicht bei Waschmittel und Kleber."
+      },
+      {
+        "symbol": "NVDA",
+        "name": "Nvidia",
+        "karlScore": 5,
+        "karlStance": "vorsichtig",
+        "swarmStance": "kauf",
+        "againstCrowd": true,
+        "priceEur": 180.56,
+        "priceVenue": "Xetra",
+        "note": "Die laute Mehrheit behandelt Nvidia weiter als den Kern der KI-Welle und liegt auf der Kaufseite."
+      },
+      {
+        "symbol": "AVGO",
+        "name": "Broadcom",
+        "karlScore": 5,
+        "karlStance": "vorsichtig",
+        "swarmStance": "kauf",
+        "againstCrowd": true,
+        "priceEur": 291.15,
+        "priceVenue": "Xetra",
+        "note": "Der Schwarm stellt Broadcom neben Nvidia, als zweite KI-Aktie."
+      }
+    ],
     "sources": [
       {
-        "title": "@SawyerMerritt auf X",
-        "url": "https://x.com/SawyerMerritt"
+        "title": "KI-Aktien nach dem Wahlergebnis unter Druck (Economic Times, 05.11.2026)",
+        "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-retreat-as-democratic-sweep-puts-data-centre-boom-in-focus/articleshow/135551445.cms"
       },
       {
-        "title": "@garyblack00 auf X",
-        "url": "https://x.com/garyblack00"
+        "title": "Warum Nvidia am Wahltag fiel (Invezz, 04.11.2026)",
+        "url": "https://invezz.com/en-ae/news/2026/11/04/why-is-nvidia-stock-falling-while-broader-markets-rally-on-democratic-midterm-win/"
       },
       {
-        "title": "@farzyness auf X",
-        "url": "https://x.com/farzyness"
+        "title": "@farzyness auf X: SpaceX und Engpässe",
+        "url": "https://x.com/farzyness/status/2117695437666918727"
+      },
+      {
+        "title": "@garyblack00 auf X: Geschäft ja, Bewertung nein",
+        "url": "https://x.com/garyblack00/status/2117562102982299798"
       }
     ]
   }

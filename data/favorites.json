@@ -1,11 +1,49 @@
 {
   "example": false,
-  "asOf": "2026-11-04",
+  "asOf": "2026-11-05",
   "owner": "Karl",
+  "title": "Karls Top 5",
+  "note": "Fünf Aktien aus dem ganzen Markt, nicht nur aus dem Musk-Umfeld. Kurse in Euro. Die älteren Themen Starlink und Tesla Energie bleiben im Treffer-Check, sie sind keine eigenen Aktien.",
   "favorites": [
     {
-      "id": "fav-spcx",
+      "id": "fav-tsm",
       "rank": 1,
+      "symbol": "TSM",
+      "name": "TSMC",
+      "score": 7,
+      "karlStance": "halten",
+      "swarmStance": "kauf",
+      "againstCrowd": false,
+      "horizon": "langfrist",
+      "priceEur": 352.25,
+      "priceAsOf": "2026-11-04",
+      "priceVenue": "Nasdaq in Euro",
+      "swarmNote": "Der Schwarm kauft die KI-Namen als Paket. TSMC ist dabei, aber leiser als Nvidia.",
+      "reason": "TSMC fertigt die Chips, die Nvidia verkauft. Der Schwarm redet lauter über die Marke. Karl setzt die 7 auf die Fabrik.",
+      "counterArgument": "Ein Streit zwischen den USA und China trifft die Fabrik in Taiwan härter als den Designer. Es gibt kein Xetra-Listing, 352,25 € sind der Dollar-Schluss geteilt durch 1,1235.",
+      "example": false,
+      "sources": [
+        {
+          "title": "TSMC Investor Relations",
+          "url": "https://investor.tsmc.com/english"
+        },
+        {
+          "title": "Yahoo Finance: TSM",
+          "url": "https://finance.yahoo.com/quote/TSM"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "KI-Aktien nach dem Wahlergebnis unter Druck (Economic Times, 05.11.2026)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-retreat-as-democratic-sweep-puts-data-centre-boom-in-focus/articleshow/135551445.cms"
+        }
+      ]
+    },
+    {
+      "id": "fav-spcx",
+      "rank": 2,
       "symbol": "SPCX",
       "name": "SpaceX",
       "score": 7,
@@ -30,115 +68,110 @@
           "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
         }
       ],
-      "example": false
+      "example": false,
+      "karlStance": "halten",
+      "swarmStance": "kauf",
+      "againstCrowd": false,
+      "swarmNote": "Farzad ist klar auf der Kaufseite, Sawyer nennt sich Investor. Die laute Richtung bleibt positiv. Karl gibt eine 7 und keine 9.",
+      "priceEur": 120.98,
+      "priceAsOf": "2026-11-04",
+      "priceVenue": "in Euro gerechnet"
     },
     {
-      "id": "fav-starlink",
-      "rank": 2,
-      "symbol": "SPCX",
-      "name": "Starlink (Teil von SpaceX)",
-      "score": 8,
-      "reason": "Starlink kam im Q3 auf 13,6 Mio. Privatkunden (Vorjahr 7,2 Mio.) und mit Starlink Mobile plus Qualcomm-Deal kommt ein zweites Wachstumsfeld dazu.",
-      "horizon": "langfrist",
-      "counterArgument": "Der Umsatz je Kunde ist von 83 auf 69 US-Dollar gefallen, weil das Wachstum aus günstigeren Märkten kommt; dazu kosten Gratis-Antennen für Altkunden und das 800-MHz-Spektrum Geld. Mehr Kunden heißt nicht automatisch mehr Gewinn.",
-      "sources": [
-        {
-          "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
-          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
-        },
-        {
-          "title": "@Starlink auf X: Qualcomm-Partnerschaft",
-          "url": "https://x.com/Starlink/status/2117973275414532165"
-        },
-        {
-          "title": "@elonmusk auf X: neue Antenne für frühe Kunden",
-          "url": "https://x.com/elonmusk/status/2117995905525907769"
-        }
-      ],
-      "example": false
-    },
-    {
-      "id": "fav-tsla",
+      "id": "fav-hen3",
       "rank": 3,
-      "symbol": "TSLA",
-      "name": "Tesla",
-      "score": 5,
-      "reason": "Tesla liefert wieder mehr aus als erwartet und das Robotaxi wächst, aber die Aktie ist seit Jahresbeginn rund 14 % im Minus und der Großteil des Werts hängt an Versprechen für 2027.",
+      "symbol": "HEN3",
+      "name": "Henkel Vorzüge",
+      "score": 6,
+      "karlStance": "halten",
+      "swarmStance": "kaum",
+      "againstCrowd": true,
       "horizon": "langfrist",
-      "counterArgument": "Das Autogeschäft schrumpft im Jahresvergleich (Q3: −2 %), unbeaufsichtigtes FSD für Kundenautos ist erst für etwa Q2 2027 angepeilt und Tesla hat bei solchen Terminen oft verfehlt – siehe die Robotaxi-Million für 2020.",
+      "priceEur": 82.42,
+      "priceAsOf": "2026-11-04",
+      "priceVenue": "Xetra",
+      "swarmNote": "In den geführten X-Konten kommt Henkel nicht vor. Der Schwarm ist bei den KI-Namen, nicht bei Waschmittel und Kleber.",
+      "reason": "Henkel macht Kleber, Waschmittel und Kosmetik und notiert in Euro. Am 4. November stand die Vorzugsaktie bei 82,42 €, während die Chipwerte fielen. Der Schwarm nennt sie nicht.",
+      "counterArgument": "Defensiv heißt langsam. Wenn die KI-Welle weiterläuft, bleibt Henkel der langweilige Teil des Depots und kein Kurstreiber.",
+      "example": false,
       "sources": [
         {
-          "title": "Tesla IR: Produktion und Auslieferungen Q3 2026",
-          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+          "title": "Yahoo Finance: HEN3.DE",
+          "url": "https://finance.yahoo.com/quote/HEN3.DE"
         },
         {
-          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
-          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+          "title": "Henkel Investor Relations",
+          "url": "https://www.henkel.de/investoren"
         },
         {
-          "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
-          "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
-        },
-        {
-          "title": "CNBC (22.04.2019): Musk kündigt Robotaxis für 2020 an",
-          "url": "https://www.cnbc.com/2019/04/22/elon-musk-says-tesla-robotaxis-will-hit-the-market-next-year.html"
+          "title": "KI-Aktien nach dem Wahlergebnis unter Druck (Economic Times, 05.11.2026)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-retreat-as-democratic-sweep-puts-data-centre-boom-in-focus/articleshow/135551445.cms"
         }
-      ],
-      "example": false
+      ]
     },
     {
-      "id": "fav-tesla-energie",
+      "id": "fav-nvda",
       "rank": 4,
-      "symbol": "TSLA",
-      "name": "Tesla Energie (Speicher)",
-      "score": 7,
-      "reason": "Die Speichersparte lieferte im Q3 13,7 GWh aus und ihre Marge sprang auf 33,1 %; KI-Rechenzentren brauchen genau diese Batterien.",
+      "symbol": "NVDA",
+      "name": "Nvidia",
+      "score": 5,
+      "karlStance": "vorsichtig",
+      "swarmStance": "kauf",
+      "againstCrowd": true,
       "horizon": "langfrist",
-      "counterArgument": "Der Margensprung kam laut Call teils aus Einmaleffekten (Zollrückerstattungen, Gewährleistung), ist also nicht einfach fortzuschreiben, und der Bereich ist im Vergleich zum Autogeschäft noch klein.",
+      "priceEur": 180.56,
+      "priceAsOf": "2026-11-04",
+      "priceVenue": "Xetra",
+      "swarmNote": "Die laute Mehrheit behandelt Nvidia weiter als den Kern der KI-Welle und liegt auf der Kaufseite.",
+      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl am 4. November stehen Rechenzentren politisch unter Druck. An der Xetra kostet die Aktie 180,56 €. Karl jagt den Namen nicht.",
+      "counterArgument": "Die Aufträge können die Politik überholen. Wer zu früh aussteigt, verpasst die nächste Welle.",
+      "example": false,
       "sources": [
         {
-          "title": "Tesla IR: Produktion und Auslieferungen Q3 2026",
-          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+          "title": "Yahoo Finance: NVD.DE",
+          "url": "https://finance.yahoo.com/quote/NVD.DE"
         },
         {
-          "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
-          "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+          "title": "Warum Nvidia am Wahltag fiel (Invezz, 04.11.2026)",
+          "url": "https://invezz.com/en-ae/news/2026/11/04/why-is-nvidia-stock-falling-while-broader-markets-rally-on-democratic-midterm-win/"
         },
         {
-          "title": "@elonmusk auf X: Engpässe bei Batterien",
-          "url": "https://x.com/elonmusk/status/2117649850644705591"
+          "title": "KI-Aktien nach dem Wahlergebnis unter Druck (Economic Times, 05.11.2026)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-retreat-as-democratic-sweep-puts-data-centre-boom-in-focus/articleshow/135551445.cms"
         }
-      ],
-      "example": false
+      ]
     },
     {
-      "id": "fav-rklb",
+      "id": "fav-avgo",
       "rank": 5,
-      "symbol": "RKLB",
-      "name": "Rocket Lab",
+      "symbol": "AVGO",
+      "name": "Broadcom",
       "score": 5,
-      "reason": "Rocket Lab hat einen Rekord-Auftragsbestand von 2,36 Mrd. US-Dollar und liefert bei Electron und Satelliten zuverlässig, aber die große Rakete Neutron rutscht ins Jahr 2027.",
-      "horizon": "mittelfrist",
-      "counterArgument": "Ohne Neutron bleibt Rocket Lab ein kleiner Anbieter neben SpaceX, die Aktie liegt rund 65 % unter dem Hoch vom Mai und das Management verkauft laufend Aktien – Käufe von Insidern habe ich keine gefunden.",
+      "karlStance": "vorsichtig",
+      "swarmStance": "kauf",
+      "againstCrowd": true,
+      "horizon": "langfrist",
+      "priceEur": 291.15,
+      "priceAsOf": "2026-11-04",
+      "priceVenue": "Xetra",
+      "swarmNote": "Der Schwarm stellt Broadcom neben Nvidia, als zweite KI-Aktie.",
+      "reason": "Broadcom baut maßgeschneiderte KI-Chips für wenige sehr große Kunden. Der Schwarm stellt die Aktie neben Nvidia. Karl bleibt bei 5, weil ein Kunde, der selbst fertigt, die Geschichte dreht. Xetra: 291,15 €.",
+      "counterArgument": "Solange die großen Besteller nicht abspringen, bleibt der Umsatz sichtbar und die Aktie kann mit der KI-Welle weiterlaufen.",
+      "example": false,
       "sources": [
         {
-          "title": "Rocket Lab: Ergebnisse Q2 2026",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts"
+          "title": "Yahoo Finance: 1YD.DE",
+          "url": "https://finance.yahoo.com/quote/1YD.DE"
         },
         {
-          "title": "Rocket Lab: Neutron-Update, Erststart jetzt 2027",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+          "title": "Broadcom Investor Relations",
+          "url": "https://investors.broadcom.com/"
         },
         {
-          "title": "Yahoo Finance: RKLB historische Kurse",
-          "url": "https://finance.yahoo.com/quote/RKLB/history/"
-        },
-        {
-          "title": "SEC: Form 4 Adam Spice, 02.11.2026",
-          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000144/edgardoc.xml"
+          "title": "KI-Aktien nach dem Wahlergebnis unter Druck (Economic Times, 05.11.2026)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-retreat-as-democratic-sweep-puts-data-centre-boom-in-focus/articleshow/135551445.cms"
         }
-      ],
-      "example": false
+      ]
     }
   ]
 }
