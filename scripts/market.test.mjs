@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { berlinParts, shouldRun } from "./schedule.mjs";
 import { fxFor, mergeTicker, meaningful, updateAlerts, usdToEur } from "./market.mjs";
-import { bigDrop, headlineEvent, isInAppUrl, opinionWord, scoreboard, seriesFor, trackSummary, verdictForStances } from "../js/logic.js";
+import { bigDrop, headlineEvent, isInAppUrl, maxPoints, opinionWord, scoreboard, seriesFor, trackSummary, verdictForStances } from "../js/logic.js";
 
 test("Dollar wird durch EURUSD geteilt, nicht multipliziert", () => {
   assert.equal(usdToEur(112.32, 1.1232), 100);
@@ -174,6 +174,22 @@ test("Nur die App-Adresse bleibt im Fenster", () => {
   assert.equal(isInAppUrl(new URL("https://justy-gtr.github.io/Justy-gtr-app/index.html"), origin, base), true);
   assert.equal(isInAppUrl(new URL("https://x.com/SpaceX"), origin, base), false);
   assert.equal(isInAppUrl(new URL("https://justy-gtr.github.io/Justy-gtr-app/data/prices.json"), origin, base), false);
+});
+
+test("Max zeigt die längste Reihe und behält den feineren Tag", () => {
+  const ticker = {
+    history: {
+      "1M": [{ t: "2026-10-01", eur: 1 }, { t: "2026-10-02", eur: 2 }],
+      "5Y": [{ t: "2022-01-03", eur: 0.5 }, { t: "2026-10-01T00:00:00.000Z", eur: 9 }]
+    }
+  };
+  const merged = maxPoints(ticker.history);
+  assert.equal(merged[0].t, "2022-01-03");
+  assert.equal(merged.find((point) => point.t === "2026-10-01").eur, 1);
+  const series = seriesFor(ticker, "Max", false);
+  assert.equal(series.range, "Max");
+  assert.equal(series.points.at(-1).eur, 2);
+  assert.equal(seriesFor(ticker, "1M", false).points.length, 2);
 });
 
 test("Das Abzeichen sagt dasselbe wie die beiden Chips", () => {

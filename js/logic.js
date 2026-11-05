@@ -175,12 +175,29 @@ const RANGE_KEY = {
   "5J": "5Y"
 };
 
+/** Longest history: weekly first, then daily series overwrite the same day. */
+export function maxPoints(history) {
+  const byDay = new Map();
+  for (const key of ["5Y", "1Y", "6M", "1M"]) {
+    for (const point of history?.[key] || []) {
+      if (!point || point.eur == null || !point.t) continue;
+      byDay.set(String(point.t).slice(0, 10), point);
+    }
+  }
+  return [...byDay.values()].sort((a, b) => String(a.t).localeCompare(String(b.t)));
+}
+
 export function seriesFor(ticker, range, langfrist) {
   const effective = langfrist && (range === "Tag" || range === "1M") ? "1J" : range;
-  const key = RANGE_KEY[effective] || "1M";
-  let points = (ticker?.history?.[key] || []).filter((point) => point && point.eur != null);
+  let points;
+  if (effective === "Max") {
+    points = maxPoints(ticker?.history);
+  } else {
+    const key = RANGE_KEY[effective] || "1M";
+    points = (ticker?.history?.[key] || []).filter((point) => point && point.eur != null);
+  }
   if (langfrist) {
-    points = movingAverage(weeklyCloses(points), effective === "5J" ? 4 : 3);
+    points = movingAverage(weeklyCloses(points), effective === "5J" || effective === "Max" ? 4 : 3);
   }
   return { points, range: effective };
 }

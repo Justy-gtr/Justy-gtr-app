@@ -389,7 +389,7 @@ function renderChartsPage(data, ui) {
   const ticker = tickerBy(data, ui.chartSymbol) || data.prices?.tickers?.[0];
   const { points, range } = seriesFor(ticker, ui.chartRange, ui.langfrist);
   const change = rangeChange(points);
-  const ranges = ui.langfrist ? ["6M", "1J", "5J"] : ["Tag", "1M", "6M", "1J", "5J"];
+  const ranges = ui.langfrist ? ["6M", "1J", "5J", "Max"] : ["Tag", "1M", "6M", "1J", "5J", "Max"];
   return `
     <header class="page-head">
       <p class="eyebrow">Kurs in Euro</p>
@@ -404,7 +404,10 @@ function renderChartsPage(data, ui) {
     <button type="button" class="switch" data-action="langfrist" role="switch" aria-checked="${ui.langfrist ? "true" : "false"}">
       <span>Langfrist-Brille</span><span class="knob"></span>
     </button>
-    <div class="card chart-wrap"><canvas class="chart" data-chart="price" data-symbol="${esc(ticker?.symbol || "")}"></canvas></div>
+    <div class="card chart-wrap">
+      <p class="scrub" hidden></p>
+      <canvas class="chart chart-price" data-chart="price" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kurschart in Euro. Ziehen zeigt Kurs und Zeitpunkt."></canvas>
+    </div>
     ${ui.langfrist ? `<article class="card"><p class="kicker">Langfrist</p><p>${esc(ticker?.longTermOutlook || "Noch kein Langfrist-Text.")}</p>${ticker?.narrativeExample ? pill(true) : ""}</article>` : ""}
     <button type="button" class="text-btn" data-action="explain" data-symbol="${esc(ticker?.symbol || "")}">Warum diese Bewegung?</button>
   `;
