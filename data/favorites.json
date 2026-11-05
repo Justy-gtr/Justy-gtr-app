@@ -250,7 +250,7 @@
       "priceEur": 1311.4,
       "priceAsOf": "2026-11-05",
       "priceVenue": "Euronext Amsterdam",
-      "swarmNote": "Der Schwarm kauft die KI-Kette. ASML gehört dazu, leiser als Nvidia.",
+      "swarmNote": "Der Schwarm kauft die KI-Kette. ASML gehört dazu, leiser als Nvidia. Neu: Nach den Midterms drücken Sorgen vor KI-Rechenzentrums-Stopps und schwache Chip-Zahlen die ganze KI-Kette.",
       "reason": "ASML baut die Maschinen, ohne die TSMC keine Chips belichtet. Der Schwarm kauft diese Kette. Karl gibt eine 6: das Geschäft ist echt, 1.311,40 € an der Euronext sind es auch.",
       "counterArgument": "Exportregeln und eine Pause im Fabrikbau treffen ASML früher als die Software-Namen. Der Kurs lässt wenig Luft.",
       "example": false,
@@ -262,6 +262,10 @@
         {
           "title": "ASML Investor Relations",
           "url": "https://www.asml.com/en/investors"
+        },
+        {
+          "title": "NBC News: Tech-Aktien fallen nach Midterms und KI-Sorgen (05.11.2026)",
+          "url": "https://www.nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650"
         }
       ]
     },
@@ -306,7 +310,7 @@
       "priceEur": 496.6,
       "priceAsOf": "2026-11-05",
       "priceVenue": "Xetra",
-      "swarmNote": "Der Schwarm stellt Microsoft neben Nvidia, weil dort die Rechenzentren laufen.",
+      "swarmNote": "Der Schwarm stellt Microsoft neben Nvidia, weil dort die Rechenzentren laufen. Neu: Mögliche Moratorien für KI-Rechenzentren nach den Midterms sind ein direktes Risiko für den Ausbau.",
       "reason": "Microsoft vermietet die Rechner, auf denen die KI läuft. Der Schwarm kauft den Namen mit. An der Xetra (MSF): 496,60 €. Karl jagt ihn nicht.",
       "counterArgument": "Die Ausgaben für Rechenzentren können die Marge drücken, bevor die Mieten das wieder hereinholen.",
       "example": false,
@@ -318,6 +322,10 @@
         {
           "title": "Microsoft Investor Relations",
           "url": "https://www.microsoft.com/en-us/investor"
+        },
+        {
+          "title": "NBC News: Tech-Aktien fallen nach Midterms und KI-Sorgen (05.11.2026)",
+          "url": "https://www.nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650"
         }
       ]
     }

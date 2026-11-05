@@ -790,6 +790,49 @@
           "url": "https://www.kjzz.org/text/business/2026-11-03/largest-data-center-proposal-in-arizona-heads-to-cochise-county-1st-community-meeting-scheduled"
         }
       ]
+    },
+    {
+      "id": "evt-midterms-ki-rechenzentren",
+      "title": "Nach dem Demokraten-Sieg: Risiko für KI-Rechenzentren und Chip-Schwäche",
+      "date": "2026-11-05",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "regulierung",
+      "company": "US-Politik / Chipbranche",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB",
+        "ASML",
+        "MSFT"
+      ],
+      "probabilityPct": 100,
+      "impact": "hoch",
+      "reasoning": "Der Midterm-Sieg der Demokraten ist eingetreten (daher 100 %); offen bleibt, wie stark Kongress und Landesparlamente – vor allem Texas, Ohio, Michigan und Georgia – KI-Rechenzentren bremsen. Goldman Sachs schätzt, dass rund 45 % der geplanten US-Rechenzentrumskapazität kurzfristig von Moratorien betroffen sein könnten. Musk-Firmen mit Sitz in Texas trifft das besonders: Eine Fusion von SpaceX und Tesla wird schwieriger, Terafab und KI-Rechenleistung tragen mehr Risiko. Dazu kamen schwache Zahlen von Qualcomm (rund −9 %) und Arm (rund −15 %), die Chip- und Speicherwerte mitrissen; der Nasdaq steht an oder in einer Korrektur. Achten auf: neue Gesetzentwürfe zu Rechenzentren und Aussagen der neuen Gouverneure.",
+      "example": false,
+      "sources": [
+        {
+          "title": "NBC News: Tech-Aktien fallen nach Midterms und KI-Sorgen (05.11.2026)",
+          "url": "https://www.nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650"
+        },
+        {
+          "title": "Yahoo Finance: Futures nach den Midterms, Qualcomm und Arm (05.11.2026)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-futures-steady-midterm-105838388.html"
+        },
+        {
+          "title": "Yahoo Finance: SpaceX und Tesla fallen, Demokraten-Sieg erschwert Fusion (05.11.2026)",
+          "url": "https://sg.finance.yahoo.com/news/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-153032713.html"
+        },
+        {
+          "title": "AP: Börsen nach Midterms und KI-Sorgen (05.11.2026)",
+          "url": "https://apnews.com/article/stocks-markets-ai-midterm-oil-trump-7ee9c212805aa5e70cf34d25aab7a36e"
+        },
+        {
+          "title": "tagesschau: Reaktionen von Big Tech auf die Midterms",
+          "url": "https://www.tagesschau.de/wirtschaft/digitales/midterms-bigtech-reaktionen-100.html"
+        }
+      ]
     }
   ]
 }

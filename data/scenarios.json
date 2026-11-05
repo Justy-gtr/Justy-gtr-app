@@ -378,6 +378,62 @@
           "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
         }
       ]
+    },
+    {
+      "id": "midterms_ki_chips",
+      "title": "Midterms plus Chip-Enttäuschung: Tech-Ausverkauf",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "summary": "Am 05.11.2026 trafen Sorgen vor KI-Regulierung nach dem Demokraten-Sieg auf schwache Chip-Zahlen. Qualcomm und Arm fielen zweistellig oder fast, Musk-Werte wurden wegen Texas und der erschwerten SpaceX-Tesla-Fusion zusätzlich getroffen, Rocket Lab fiel im Sog mit. Muster: Politik- und Zinsangst wirkt über den ganzen Wachstumssektor, nicht nur über das betroffene Unternehmen.",
+      "medianMovePct": -12,
+      "reactions": [
+        {
+          "date": "2026-11-05",
+          "symbol": "QCOM",
+          "movePct": -9,
+          "note": "Auslöser zur Eröffnung, schwacher Ausblick.",
+          "sources": [
+            {
+              "title": "Yahoo Finance: Futures nach den Midterms, Qualcomm und Arm (05.11.2026)",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-futures-steady-midterm-105838388.html"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-05",
+          "symbol": "ARM",
+          "movePct": -15,
+          "note": "Auslöser zur Eröffnung.",
+          "sources": [
+            {
+              "title": "Yahoo Finance: Futures nach den Midterms, Qualcomm und Arm (05.11.2026)",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-futures-steady-midterm-105838388.html"
+            }
+          ]
+        }
+      ],
+      "example": false,
+      "sources": [
+        {
+          "title": "NBC News: Tech-Aktien fallen nach Midterms und KI-Sorgen (05.11.2026)",
+          "url": "https://www.nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650"
+        },
+        {
+          "title": "Yahoo Finance: Futures nach den Midterms, Qualcomm und Arm (05.11.2026)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-futures-steady-midterm-105838388.html"
+        },
+        {
+          "title": "Yahoo Finance: SpaceX und Tesla fallen, Demokraten-Sieg erschwert Fusion (05.11.2026)",
+          "url": "https://sg.finance.yahoo.com/news/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-153032713.html"
+        },
+        {
+          "title": "AP: Börsen nach Midterms und KI-Sorgen (05.11.2026)",
+          "url": "https://apnews.com/article/stocks-markets-ai-midterm-oil-trump-7ee9c212805aa5e70cf34d25aab7a36e"
+        }
+      ]
     }
   ],
   "recoveries": [
