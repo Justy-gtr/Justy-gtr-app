@@ -1,30 +1,30 @@
 {
   "example": false,
-  "asOf": "2026-11-05T16:10:00+01:00",
+  "asOf": "2026-11-05T18:00:00+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.35,
-      "label": "zuversichtlich in den Posts, Kurs unter Druck",
-      "summary": "Weiter Grok-Bot-Werbung von Musk am Morgen des 5.11. (Zahnarzt-Anruf, „jeder nutzt Grok Bot“) plus sarkastische Reaktion auf den KI-Pausen-Vorstoß einer Demokratin. Die offiziellen SpaceX-/Starlink-Konten blieben seit dem 8:30-Check still. Der Kurs bleibt unter Midterm-/Lock-up-Druck; Posts allein sind positiv-neutral, keine neue operative News.",
+      "score": 0.4,
+      "label": "positiv in den Posts, Kurs weiter unter Druck",
+      "summary": "Am Nachmittag des 5.11. wirbt Musk erneut für Starlink (Klinik auf indonesischen Inseln, Airlines/United) und teilt nochmals den Qualcomm-CEO zur SpaceX-Partnerschaft. Offizielle SpaceX-/Starlink-Konten seit dem Qualcomm-Deal vom 4.11. ohne neue operative Posts. Der Kurs bleibt unter Midterm-/KI-Rechenzentrums-Druck; die neuen Posts sind positiv-PR, keine Kurswende.",
       "sources": [
         {
-          "title": "@elonmusk auf X (Grok Bot Zahnarzt)",
-          "url": "https://x.com/elonmusk/status/2118251808179323102"
+          "title": "@elonmusk auf X (Starlink rettet Leben)",
+          "url": "https://x.com/elonmusk/status/2118381856454524939"
         },
         {
-          "title": "@elonmusk auf X (Brave New World)",
-          "url": "https://x.com/elonmusk/status/2118248670915404057"
+          "title": "@elonmusk auf X (Starlink Airlines)",
+          "url": "https://x.com/elonmusk/status/2118379126004535334"
         },
         {
-          "title": "Motley Fool: Why SpaceX Stock Is Down Today (04.11.2026)",
-          "url": "https://www.fool.com/investing/2026/11/04/why-spacex-stock-is-down-today/"
+          "title": "@elonmusk auf X (Qualcomm-CEO Repost)",
+          "url": "https://x.com/elonmusk/status/2118380646460797238"
         }
       ]
     },
     "TSLA": {
-      "score": 0.1,
+      "score": -0.15,
       "label": "verhalten",
-      "summary": "Tesla postet vor allem FSD-Werbung, Musk wenig Neues zu Tesla. Gleichzeitig fiel die Aktie am 4.11. um 3,3 % und liegt 2026 rund 14 % im Minus. Kaum Substanz in den Posts, deshalb nur leicht positiv.",
+      "summary": "Keine neuen Tesla-Posts seit dem Cybertruck-Aufruf am frühen 5.11. Fokus der Musk-Posts am Nachmittag lag auf Starlink und Politik; Kurs weiter unter Midterm-/Regulierungsdruck.",
       "sources": [
         {
           "title": "@Tesla auf X",
@@ -42,6 +42,113 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2118379126004535334",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T17:25:15+01:00",
+      "summaryDe": "Musk bestätigt „True“ zu einem Beitrag: Starlink werde für Airlines zum Gamechanger (höhere Kundenzufriedenheit und Loyalität); United wird als Beispiel genannt.",
+      "originalText": "True",
+      "url": "https://x.com/elonmusk/status/2118379126004535334",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118379126004535334"
+        },
+        {
+          "title": "Original von @XFreeze (Starlink Airlines)",
+          "url": "https://x.com/xfreeze/status/2118378758147297681"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118380646460797238",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T17:31:18+01:00",
+      "summaryDe": "Musk teilt erneut den Qualcomm-CEO Cristiano Amon zur Partnerschaft mit SpaceX: „großartige Partnerschaft“ für nächste Infrastruktur-Generation und US-Technologieführerschaft – Wiederholung der Dragonwing-/Starlink-Mobile-Meldung.",
+      "originalText": "RT @cb_doge: Qualcomm CEO Cristiano Amon on partnership with @SpaceX\n\n“It’s a great partnership with SpaceX for next-generation infrastruct…",
+      "url": "https://x.com/elonmusk/status/2118380646460797238",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (Repost)",
+          "url": "https://x.com/elonmusk/status/2118380646460797238"
+        },
+        {
+          "title": "Original von @cb_doge (Qualcomm CEO)",
+          "url": "https://x.com/cb_doge/status/2118363397775561023"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118380771853705309",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T17:31:48+01:00",
+      "summaryDe": "Musk kommentiert „Interesting“ zu einer Wahlgrafik: Junge Männer und Frauen mit Kindern hätten bei den Midterms deutlich weiter rechts gewählt als Gleichaltrige ohne Kinder.",
+      "originalText": "Interesting",
+      "url": "https://x.com/elonmusk/status/2118380771853705309",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118380771853705309"
+        },
+        {
+          "title": "Original von @Smirkley",
+          "url": "https://x.com/smirkley/status/2118356806720266556"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118381856454524939",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T17:36:06+01:00",
+      "summaryDe": "Musk: „Starlink rettet Leben.“ Er zitiert einen Bericht, wonach Starlink eine Klinik auf den abgelegenen Pangkep-Inseln (Indonesien) mit schnellem Internet versorgt – für Patientenüberweisungen und Koordination zwischen Inseln.",
+      "originalText": "Starlink saves lives",
+      "url": "https://x.com/elonmusk/status/2118381856454524939",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118381856454524939"
+        },
+        {
+          "title": "Original von @cb_doge (Starlink Klinik Indonesien)",
+          "url": "https://x.com/cb_doge/status/2118335164019548524"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118253972163301458",
       "account": "@elonmusk",
