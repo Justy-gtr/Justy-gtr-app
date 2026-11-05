@@ -1,47 +1,211 @@
 {
   "example": false,
-  "asOf": "2026-11-05T20:10:00+01:00",
+  "asOf": "2026-11-05T22:06:13+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.35,
       "label": "leicht positiv in den Posts, Kurs weiter unter Druck",
-      "summary": "Am Abend des 5.11. kommentiert Musk Midterm-Exit-Polls und wirbt indirekt mit der Culture-/Compute-Vision; am Nachmittag weiter Starlink-PR und Qualcomm. Offizielle SpaceX-/Starlink-Konten ohne neue operative Posts seit dem Qualcomm-Deal. Der SPCX-Kurs bleibt unter Midterm-/KI-Rechenzentrums-Druck – die Posts sind Narrative, keine Kurswende.",
+      "summary": "Am Abend teilt Musk Gutes zum Rechenzentrum in Arizona und findet Hinojosas Texas-Aussage „interessant“: Genehmigte Rechenzentren dürfen fertig werden. Offizielle SpaceX-Konten ohne neue Posts. Der Kurs schloss trotzdem rund 9 % tiefer.",
       "sources": [
         {
-          "title": "@elonmusk auf X (Midterm Exit Poll)",
-          "url": "https://x.com/elonmusk/status/2118400203158163638"
+          "title": "@elonmusk auf X (Texas-Rechenzentren)",
+          "url": "https://x.com/elonmusk/status/2118431051253239889"
         },
         {
-          "title": "@elonmusk auf X (Culture / Compute)",
-          "url": "https://x.com/elonmusk/status/2118390792490541103"
+          "title": "@elonmusk auf X (Cochise)",
+          "url": "https://x.com/elonmusk/status/2118430590609612989"
         },
         {
-          "title": "@elonmusk auf X (Starlink rettet Leben)",
-          "url": "https://x.com/elonmusk/status/2118381856454524939"
+          "title": "Yahoo Finance: Börse am 05.11.2026 (Nasdaq −5 %, Chip-Ausverkauf)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
         }
       ]
     },
     "TSLA": {
       "score": 0.25,
       "label": "verhalten positiv in den Posts, Kurs stark im Minus",
-      "summary": "Musk repostet Teslaconomics („durch jeden Storm halten“ mit $TSLA) und bleibt politisch bei den Midterm-Themen. Offizielles @Tesla ohne neue Posts. Der Kurs fällt weiter wegen Texas-KI-Moratoriums-Sorgen und erschwerter Fusion – Bullen-PR ohne Trendwende.",
+      "summary": "Musk reagiert gelassen auf die Wahl („Nett von ihm“ zu Talarico) und staunt über den Rekord-Verlust an der Börse („Wow“). Offizielles @Tesla ohne neue Posts. Der Kurs schloss in New York fast 11 % tiefer.",
       "sources": [
         {
-          "title": "@elonmusk Repost Teslaconomics $TSLA",
-          "url": "https://x.com/elonmusk/status/2118389073283060085"
+          "title": "@elonmusk auf X (Talarico)",
+          "url": "https://x.com/elonmusk/status/2118433402940772528"
         },
         {
-          "title": "@elonmusk Midterm Exit Poll",
-          "url": "https://x.com/elonmusk/status/2118400203158163638"
+          "title": "@elonmusk auf X (Wow)",
+          "url": "https://x.com/elonmusk/status/2118430822198063520"
         },
         {
-          "title": "Yahoo Finance: SpaceX/Tesla nach Demokraten-Sieg",
-          "url": "https://finance.yahoo.com/markets/article/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-ai-buildout-153753814.html"
+          "title": "Yahoo Finance: Börse am 05.11.2026 (Nasdaq −5 %, Chip-Ausverkauf)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2118449282231799974",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T22:04:02+01:00",
+      "summaryDe": "Musk teilt einen Beitrag zu Grok Build: Das neue Update macht Abläufe mit mehreren KI-Agenten verlässlicher und leichter zu steuern.",
+      "originalText": "RT @XFreeze",
+      "url": "https://x.com/elonmusk/status/2118449282231799974",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118449282231799974"
+        },
+        {
+          "title": "Original: @XFreeze zu Grok Build",
+          "url": "https://x.com/XFreeze/status/2118176199746965741"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118433402940772528",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T21:00:56+01:00",
+      "summaryDe": "Musk: „Nett von ihm, das zu sagen.“ Er antwortet auf einen Beitrag, laut dem der Texas-Wahlsieger James Talarico ihn einen „großen Innovator“ nannte und mit ihm an Technologie arbeiten will.",
+      "originalText": "Nice of him to say that",
+      "url": "https://x.com/elonmusk/status/2118433402940772528",
+      "tickers": [
+        "TSLA",
+        "SPCX"
+      ],
+      "companies": [
+        "Tesla",
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118433402940772528"
+        },
+        {
+          "title": "Original: @KGurrisi79348",
+          "url": "https://x.com/i/status/2118310993180660207"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118431051253239889",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T20:51:35+01:00",
+      "summaryDe": "Musk kommentiert „Interesting“: Texas’ neue Gouverneurin Gina Hinojosa will laut Investor Gavin Baker alle schon genehmigten Rechenzentren fertig bauen lassen. Strengere Regeln gelten erst für neue Projekte.",
+      "originalText": "Interesting",
+      "url": "https://x.com/elonmusk/status/2118431051253239889",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118431051253239889"
+        },
+        {
+          "title": "Gavin Baker auf X: Hinojosa zu Rechenzentren in Texas",
+          "url": "https://x.com/GavinSBaker/status/2118420042283102604"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118430822198063520",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T20:50:41+01:00",
+      "summaryDe": "Musk antwortet „Wow“ auf einen Beitrag, laut dem der US-Aktienmarkt heute 2,8 Billionen Dollar Wert verloren hat – mehr als an jedem anderen Tag.",
+      "originalText": "Wow",
+      "url": "https://x.com/elonmusk/status/2118430822198063520",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118430822198063520"
+        },
+        {
+          "title": "Original: @macropaperr",
+          "url": "https://x.com/i/status/2118399188195234249"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118430590609612989",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T20:49:45+01:00",
+      "summaryDe": "Musk teilt einen Beitrag zum geplanten SpaceX-Rechenzentrum in Cochise (Arizona): Laut SpaceX-Manager Riley Trettel bis zu 40 % niedrigere Stromrechnungen für Anwohner, 1.000 feste Jobs, kein Industriewasser.",
+      "originalText": "RT @xdNiBoR",
+      "url": "https://x.com/elonmusk/status/2118430590609612989",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118430590609612989"
+        },
+        {
+          "title": "Original: @xdNiBoR zum Cochise-Treffen",
+          "url": "https://x.com/xdNiBoR/status/2118412345789579392"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118424403998552293",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T20:25:10+01:00",
+      "summaryDe": "Musk teilt einen Beitrag: Weniger Staatsausgaben und Regeln, wie bei DOGE, seien die Lösung gegen hohe Lebenshaltungskosten.",
+      "originalText": "RT @KanekoaTheGreat",
+      "url": "https://x.com/elonmusk/status/2118424403998552293",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118424403998552293"
+        },
+        {
+          "title": "Original: @KanekoaTheGreat",
+          "url": "https://x.com/KanekoaTheGreat/status/2118417820434497681"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118400203158163638",
       "account": "@elonmusk",

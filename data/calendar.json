@@ -813,24 +813,51 @@
       ],
       "probabilityPct": 100,
       "impact": "hoch",
-      "reasoning": "Der Midterm-Sieg der Demokraten ist eingetreten (daher 100 %); am 5.11. setzte sich der Tech-Ausverkauf fort: Laut BBC und Yahoo Finance fielen SpaceX und Tesla im US-Handel zeitweise um etwa 9–11 %, getrieben von Sorgen vor KI-Rechenzentrums-Moratorien – besonders Texas mit Gouverneurin Gina Hinojosa – und einer schwierigeren SpaceX-Tesla-Fusion. Goldman Sachs schätzt, dass rund 45 % der geplanten US-Rechenzentrumskapazität kurzfristig von Moratorien betroffen sein könnten. Dazu kamen schwache Chip-Zahlen (Qualcomm, Arm), die den Nasdaq in oder nahe einer Korrektur hielten. Achten auf: neue Gesetzentwürfe zu Rechenzentren und erste Schritte der neuen Gouverneure.",
+      "reasoning": "Der Midterm-Sieg der Demokraten ist eingetreten (daher 100 %). Am 5.11. fiel der Nasdaq um 5,5 % in die Korrektur, der Chip-Index um 12 %. Gründe: Sorge vor Bremsen für KI-Rechenzentren und schwache Zahlen von Qualcomm und Arm. SpaceX schloss rund 9 % tiefer, Tesla fast 11 %. Etwas Entwarnung: Texas’ neue Gouverneurin Hinojosa will schon genehmigte Rechenzentren fertig bauen lassen; strengere Regeln nur für neue. Achten auf: erste Gesetzentwürfe.",
       "example": false,
       "sources": [
         {
-          "title": "BBC: SpaceX und Tech-Aktien fallen nach Midterms (05.11.2026)",
-          "url": "https://www.bbc.com/news/articles/cmn04705rd8jo"
+          "title": "InvestmentNews: Nasdaq in der Korrektur nach den Midterms (05.11.2026)",
+          "url": "https://www.investmentnews.com/equities/nasdaq-enters-correction-as-ai-stocks-sink-after-midterm-elections/268903"
         },
         {
-          "title": "Yahoo Finance: SpaceX/Tesla – Fusion und KI-Ausbau unter Druck (05.11.2026)",
-          "url": "https://finance.yahoo.com/markets/article/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-ai-buildout-153753814.html"
+          "title": "Yahoo Finance: Börse am 05.11.2026 (Nasdaq −5 %, Chip-Ausverkauf)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
         },
         {
           "title": "NBC News: Tech-Aktien fallen nach Midterms und KI-Sorgen (05.11.2026)",
           "url": "https://www.nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650"
         },
         {
-          "title": "AP: Börsen nach Midterms und KI-Sorgen (05.11.2026)",
-          "url": "https://apnews.com/article/stocks-markets-ai-midterm-oil-trump-7ee9c212805aa5e70cf34d25aab7a36e"
+          "title": "Gavin Baker auf X: Hinojosa zu Rechenzentren in Texas",
+          "url": "https://x.com/GavinSBaker/status/2118420042283102604"
+        },
+        {
+          "title": "BBC: SpaceX und Tech-Aktien fallen nach Midterms (05.11.2026)",
+          "url": "https://www.bbc.com/news/articles/cmn04705rd8jo"
+        }
+      ]
+    },
+    {
+      "id": "evt-falcon9-ussf432",
+      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force",
+      "date": "2026-11-07",
+      "time": "01:46",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "start",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 80,
+      "impact": "niedrig",
+      "reasoning": "Start aus Vandenberg im Vier-Stunden-Fenster ab 16:46 Uhr Ortszeit am 6.11. (in Berlin 01:46 Uhr am 7.11.), Ersatztermin einen Tag später. Falcon 9 startet sehr verlässlich; Verschiebungen kommen meist durch Wetter oder Technik. Routine, bewegt den Kurs kaum.",
+      "example": false,
+      "sources": [
+        {
+          "title": "The Grid Fin: This Week in SpaceX (USSF-432)",
+          "url": "https://thegridfin.com/this-week-in-spacex-nov-1-2026/"
         }
       ]
     }
