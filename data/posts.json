@@ -1,16 +1,12 @@
 {
   "example": false,
-  "asOf": "2026-11-06T05:10:00+01:00",
+  "asOf": "2026-11-06T06:32:42+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.2,
-      "label": "ruhig vor Jobsbericht und Falcon-Start",
-      "summary": "Über Nacht nur ein kleiner Musk-Repost zu X-Bot-Werbung. Offizielles @SpaceX ohne neue Posts. Heute zählen der US-Jobsbericht (14:30) und der Falcon-9-Start USSF-432 (Fenster ab 01:46 Berlin am Samstag).",
+      "score": 0.15,
+      "label": "vorsichtig vor Jobs und Falcon-Start",
+      "summary": "Über Nacht kein neues SpaceX-Posting. Fokus liegt auf dem US-Jobsbericht um 14:30 Berlin und dem Falcon-9-Start USSF-432 (Fenster ab 01:46 Berlin Samstag). Nach dem schweren Tech-Ausverkauf vom Donnerstag halten sich die Futures leicht erholt.",
       "sources": [
-        {
-          "title": "@elonmusk auf X (@bot-Werbung)",
-          "url": "https://x.com/elonmusk/status/2118449567981310309"
-        },
         {
           "title": "SpaceX: USSF-432",
           "url": "https://www.spacex.com/launches/ussf432"
@@ -18,41 +14,84 @@
         {
           "title": "CNBC: Vorschau Oktober-Jobsbericht",
           "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
+        },
+        {
+          "title": "Investing.com: Futures nach AI-Rout leicht im Plus",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-ai-rout-batters-wall-st-payrolls-data-in-focus-5006240"
         }
       ]
     },
     "TSLA": {
-      "score": 0.1,
-      "label": "ruhig, Kursdruck vom Vortag unverändert",
-      "summary": "Keine neuen Musk- oder Tesla-Posts mit Kursrelevanz über Nacht. Der Midterm-/Chip-Ausverkauf vom Donnerstag bleibt der dominante Treiber; heute der Jobsbericht als nächster Makro-Katalysator.",
+      "score": 0.2,
+      "label": "leicht positiv durch Giga-Berlin-News, Kursdruck bleibt",
+      "summary": "Musk teilt früh morgens den Hinweis auf 100-%-Abwasser-Recycling in Giga Berlin. Operativ positiv, aber der Kursdruck kommt weiter von Midterms und dem Chip-Ausverkauf — heute zählt vor allem der Jobsbericht.",
       "sources": [
         {
-          "title": "Reuters/Investing: Nasdaq tief nach Midterm-KI-Sorgen",
-          "url": "https://www.investing.com/news/stock-market-news/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-on-chip-weakness-5003237"
+          "title": "@elonmusk RT Giga-Berlin Abwasser",
+          "url": "https://x.com/elonmusk/status/2118565802429632576"
         },
         {
           "title": "CNBC: Vorschau Oktober-Jobsbericht",
           "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
+        },
+        {
+          "title": "CNA/Reuters: Tesla und SpaceX nach Midterms unter Druck",
+          "url": "https://www.channelnewsasia.com/business/spacex-tesla-extend-losses-midterm-results-cloud-data-center-merger-outlook-6528816"
         }
       ]
     },
     "RKLB": {
-      "score": 0.45,
-      "label": "positiv operativ, Kurs folgt dem Sektor",
-      "summary": "Rocket Lab meldet den baldigen Mars-Einschuss der ESCAPADE-Sonden und nennt Fenster und Ziel für den 100. Electron-Flug am 14.11. Operativ stark – der Kurs hängt weiter am Tech-Sektor.",
+      "score": 0.25,
+      "label": "positiv vor ESCAPADE-Manöver und Q3",
+      "summary": "Rocket Lab hat über Nacht ESCAPADE (Blue/Gold Richtung Mars) und den 100. Electron-Flug für den 14.11. bekräftigt. Nächste Kurshebel: ESCAPADE-Manöver Samstag und Q3-Zahlen Montag Abend.",
       "sources": [
         {
-          "title": "@RocketLab auf X (ESCAPADE)",
+          "title": "@RocketLab: See you soon, Mars",
           "url": "https://x.com/RocketLab/status/2118544706066055248"
         },
         {
-          "title": "@RocketLab auf X (100. Electron)",
+          "title": "@RocketLab: 100. Electron 14.11.",
           "url": "https://x.com/RocketLab/status/2118521208639746494"
+        },
+        {
+          "title": "NASA ESCAPADE Blog",
+          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2118565802429632576",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T05:47:03+01:00",
+      "summaryDe": "Musk teilt einen Beitrag von André Thierig (Giga Berlin): Seit zwei Jahren recycelt die Fabrik 100 % des Prozessabwassers — Zero Liquid Discharge — und hat 465 Millionen Liter wieder in die Produktion gegeben. Das sei in der Autobranche einzigartig und ein Nachhaltigkeitsversprechen an die Region.",
+      "originalText": "RT @AndrThie: This is a bigger deal than people might think! 100% process waste water recycling means ZERO liquid discharge. Our waste water treatment facility is not just advanced but unique in automotive industry!",
+      "url": "https://x.com/elonmusk/status/2118565802429632576",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk RT @AndrThie: Giga-Berlin Abwasser-Recycling",
+          "url": "https://x.com/elonmusk/status/2118565802429632576"
+        },
+        {
+          "title": "@AndrThie Originalpost",
+          "url": "https://x.com/AndrThie/status/2118476679593312316"
+        },
+        {
+          "title": "@gigafactories: 2 Jahre 100 % Prozesswasser-Recycling Giga Berlin",
+          "url": "https://x.com/gigafactories/status/2118381463389307149"
+        }
+      ]
+    },
     {
       "id": "post-rklb-2118521208639746494",
       "account": "@RocketLab",
@@ -1312,5 +1351,5 @@
       ]
     }
   ],
-  "notes": "Das Konto @xai ist leer und verweist auf @SpaceXAI; dieses Konto ließ sich über die X-Schnittstelle nicht finden. KI-Neuigkeiten kommen derzeit über @elonmusk und @SpaceX."
+  "notes": "06.11. 6:30: neuer Musk-RT zu Giga-Berlin Abwasser-Recycling; Sentiment vor Jobsbericht und USSF-432 aktualisiert."
 }

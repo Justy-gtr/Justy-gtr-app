@@ -381,7 +381,7 @@
       ],
       "probabilityPct": 95,
       "impact": "hoch",
-      "reasoning": "Der BLS-Bericht erscheint Freitag 6.11. um 14:30 Uhr Berlin. Dow-Jones-Konsens laut CNBC: etwa +59.000 Nonfarm-Payrolls (nach schwachen +29.000 im September), Arbeitslosenquote unverändert bei 4,2 %, Lohnwachstum rund 2,9 % zum Vorjahr. Nach dem Tech-Ausverkauf vom Donnerstag gilt der Bericht als nächster Katalysator: eine „Goldilocks“-Zahl (mäßig, stabile Quote, zahme Löhne) könnte Wachstumsaktien entlasten; ein heißer Lohn- oder Payroll-Schub würde Fed-Zinsängste neu befeuern.",
+      "reasoning": "Der BLS-Bericht erscheint heute Freitag 6.11. um 14:30 Uhr Berlin. Dow-Jones-Konsens laut CNBC: etwa +59.000 Nonfarm-Payrolls (nach +29.000 im September), Arbeitslosenquote unverändert 4,2 %, Löhne rund +0,3 % zum Vormonat / ~2,9 % zum Vorjahr. Nach dem Tech-Ausverkauf vom Donnerstag (Nasdaq −5,5 %, Chips −12 %) und leicht erholten Nasdaq-Futures über Nacht gilt der Bericht als nächster Katalysator: eine mäßige „Goldilocks“-Zahl könnte Wachstumswerte entlasten; heiße Löhne würden Fed-Zinsängste neu befeuern.",
       "example": false,
       "sources": [
         {
@@ -393,8 +393,8 @@
           "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
         },
         {
-          "title": "NBC News: Oktober-Jobsbericht, KI und Feiertagseinstellungen",
-          "url": "https://www.nbcnews.com/business/economy/october-jobs-report-ai-holiday-hiring-rcna607614"
+          "title": "Investing.com: Futures vor Payrolls leicht im Plus",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-ai-rout-batters-wall-st-payrolls-data-in-focus-5006240"
         }
       ]
     },
@@ -844,7 +844,7 @@
     },
     {
       "id": "evt-falcon9-ussf432",
-      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force (Fenster ab heute Abend PT)",
+      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force (Fenster heute Abend PT)",
       "date": "2026-11-07",
       "time": "01:46",
       "timezone": "Europe/Berlin",
@@ -854,9 +854,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 85,
+      "probabilityPct": 88,
       "impact": "niedrig",
-      "reasoning": "SpaceX zielt auf Freitag 6.11., Vier-Stunden-Fenster ab 16:46 Uhr Ortszeit Vandenberg (in Berlin 01:46 Uhr am 7.11.), Ersatztermin Samstag. Erste Stufe landet auf dem Drohnenschiff Of Course I Still Love You; Live-Webcast ca. 10 Minuten vor dem Start. Falcon 9 startet sehr verlässlich – ich hebe auf 85 %, weil der Termin jetzt offiziell für heute bestätigt ist. Routine-Militärmission, Kurswirkung gering.",
+      "reasoning": "SpaceX bestätigt weiter Freitag 6.11.: Vier-Stunden-Fenster ab 16:46 Uhr Ortszeit Vandenberg (in Berlin 01:46 Uhr am 7.11.), Ersatztermin Samstag 7.11. ab 16:32 PT. Erste Stufe landet auf Of Course I Still Love You; Live-Webcast ca. 10 Minuten vor dem Start. Ich hebe auf 88 %, weil der Starttag offiziell steht und keine Verschiebung gemeldet ist. Routine-Militärmission, Kurswirkung gering.",
       "example": false,
       "sources": [
         {
