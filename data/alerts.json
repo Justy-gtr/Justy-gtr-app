@@ -144,7 +144,7 @@
       "symbol": "SPCX",
       "name": "SpaceX",
       "changePct": -14.08,
-      "priceEur": 110.37,
+      "priceEur": 110.36,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-06T04:39:46.685Z",
@@ -178,6 +178,10 @@
           "url": "https://finance.yahoo.com/quote/TL0.DE"
         },
         {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
           "title": "Yahoo Finance TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA"
         }
@@ -198,6 +202,10 @@
         {
           "title": "Yahoo Finance 6RJ0.F",
           "url": "https://finance.yahoo.com/quote/6RJ0.F"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
         },
         {
           "title": "Yahoo Finance RKLB",
