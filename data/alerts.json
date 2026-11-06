@@ -212,6 +212,32 @@
           "url": "https://finance.yahoo.com/quote/RKLB"
         }
       ]
+    },
+    {
+      "id": "TSLA-2026-11-07",
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "changePct": -9.8,
+      "priceEur": 323.7,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-06T23:08:29.968Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance TL0.DE",
+          "url": "https://finance.yahoo.com/quote/TL0.DE"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA"
+        }
+      ]
     }
   ]
 }
