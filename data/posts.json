@@ -1,66 +1,236 @@
 {
   "example": false,
-  "asOf": "2026-11-06T06:32:42+01:00",
+  "asOf": "2026-11-06T08:48:44+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.15,
-      "label": "vorsichtig vor Jobs und Falcon-Start",
-      "summary": "Über Nacht kein neues SpaceX-Posting. Fokus liegt auf dem US-Jobsbericht um 14:30 Berlin und dem Falcon-9-Start USSF-432 (Fenster ab 01:46 Berlin Samstag). Nach dem schweren Tech-Ausverkauf vom Donnerstag halten sich die Futures leicht erholt.",
+      "score": 0.05,
+      "label": "gemischt vor Jobs und Falcon-Start",
+      "summary": "Musk betont erneut volle Starship-Wiederverwendung; SoftBank-Turbinen-Ausfall und Kreditdruck bei Rechenzentren belasten die KI-Infrastruktur-Story. Heute zählen USSF-432 (Fenster ab 01:46 Berlin Samstag) und der Jobsbericht um 14:30.",
       "sources": [
         {
           "title": "SpaceX: USSF-432",
           "url": "https://www.spacex.com/launches/ussf432"
         },
         {
-          "title": "CNBC: Vorschau Oktober-Jobsbericht",
-          "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
+          "title": "@elonmusk SoftBank-Turbinen",
+          "url": "https://x.com/elonmusk/status/2118590598324318415"
         },
         {
-          "title": "Investing.com: Futures nach AI-Rout leicht im Plus",
-          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-ai-rout-batters-wall-st-payrolls-data-in-focus-5006240"
+          "title": "Reuters: Jobs-Konsens ~65k",
+          "url": "https://www.investing.com/news/economic-indicators/us-job-growth-expected-to-pick-up-in-october-with-moderation-in-wage-gains-5006475"
         }
       ]
     },
     "TSLA": {
-      "score": 0.2,
-      "label": "leicht positiv durch Giga-Berlin-News, Kursdruck bleibt",
-      "summary": "Musk teilt früh morgens den Hinweis auf 100-%-Abwasser-Recycling in Giga Berlin. Operativ positiv, aber der Kursdruck kommt weiter von Midterms und dem Chip-Ausverkauf — heute zählt vor allem der Jobsbericht.",
+      "score": 0.25,
+      "label": "operativ zuversichtlich, Kurs weiter unter Midterm-Druck",
+      "summary": "Musk kündigt an, Cybertruck in Texas Mitte 2027 runterzufahren zugunsten von Cybercab; dazu starke Korea- und Kalifornien-Verkaufssignale. Der Kurs steht weiter unter dem Midterm-/KI-Ausverkauf; heute 14:30 Jobsbericht.",
       "sources": [
         {
-          "title": "@elonmusk RT Giga-Berlin Abwasser",
-          "url": "https://x.com/elonmusk/status/2118565802429632576"
+          "title": "@elonmusk Cybertruck/Cybercab",
+          "url": "https://x.com/elonmusk/status/2118591788701421573"
         },
         {
-          "title": "CNBC: Vorschau Oktober-Jobsbericht",
-          "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
+          "title": "@elonmusk Tesla Korea",
+          "url": "https://x.com/elonmusk/status/2118588019230056525"
         },
         {
-          "title": "CNA/Reuters: Tesla und SpaceX nach Midterms unter Druck",
-          "url": "https://www.channelnewsasia.com/business/spacex-tesla-extend-losses-midterm-results-cloud-data-center-merger-outlook-6528816"
+          "title": "CNA/Reuters: Cybertruck wind-down",
+          "url": "https://www.channelnewsasia.com/business/tesla-wind-down-cybertruck-production-texas-gigafactory-next-year-musk-says-6530476"
         }
       ]
     },
     "RKLB": {
-      "score": 0.25,
-      "label": "positiv vor ESCAPADE-Manöver und Q3",
-      "summary": "Rocket Lab hat über Nacht ESCAPADE (Blue/Gold Richtung Mars) und den 100. Electron-Flug für den 14.11. bekräftigt. Nächste Kurshebel: ESCAPADE-Manöver Samstag und Q3-Zahlen Montag Abend.",
+      "score": 0.2,
+      "label": "operativ stark vor ESCAPADE und Q3",
+      "summary": "Keine neuen Rocket-Lab-Posts seit dem 6:30-Update. ESCAPADE-Mars-Einschuss am 7.11. und Q3-Zahlen am 9.11. bleiben die nächsten Katalysatoren; Kurs folgt dem Tech-Markt vor den Payrolls.",
       "sources": [
         {
-          "title": "@RocketLab: See you soon, Mars",
+          "title": "@RocketLab ESCAPADE",
           "url": "https://x.com/RocketLab/status/2118544706066055248"
         },
         {
-          "title": "@RocketLab: 100. Electron 14.11.",
+          "title": "@RocketLab Electron 100",
           "url": "https://x.com/RocketLab/status/2118521208639746494"
-        },
-        {
-          "title": "NASA ESCAPADE Blog",
-          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-starlink-2118509068897972432",
+      "account": "@Starlink",
+      "displayName": "Starlink",
+      "postedAt": "2026-11-06T02:01:36+01:00",
+      "summaryDe": "Starlink zeigt Gaming im Flugzeug mit schneller, latenzarmer Verbindung und zitiert United Airlines.",
+      "originalText": "Game in-flight with Starlink’s high-speed, low-latency internet 🛰️✈️",
+      "url": "https://x.com/Starlink/status/2118509068897972432",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Starlink: Gaming im Flug",
+          "url": "https://x.com/Starlink/status/2118509068897972432"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118589046289244437",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T07:19:24+01:00",
+      "summaryDe": "Musk teilt erneut, warum Starship voll wiederverwendbar sein muss: ohne schnelle Wiederverwendung keine echte Mehrplaneten-Zivilisation.",
+      "originalText": "RT @teslaownersSV: Elon Musk on why Starship has to be fully reusable: \"Nobody's ever made a fully reusable orbital rocket.\"",
+      "url": "https://x.com/elonmusk/status/2118589046289244437",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk RT: Starship volle Wiederverwendung",
+          "url": "https://x.com/elonmusk/status/2118589046289244437"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118589343061491737",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T07:20:35+01:00",
+      "summaryDe": "Musk bestätigt „Yup“ zu einem Clip, in dem er den Aktienmarkt mit Buffetts Haus-Analogie vergleicht: täglich gerufene Kauf-/Verkaufspreise, mal mit und mal ohne Medikamente.",
+      "originalText": "Yup",
+      "url": "https://x.com/elonmusk/status/2118589343061491737",
+      "tickers": [
+        "TSLA",
+        "SPCX"
+      ],
+      "companies": [
+        "Tesla",
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk „Yup“ zur Markt-Analogie",
+          "url": "https://x.com/elonmusk/status/2118589343061491737"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118588019230056525",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T07:15:19+01:00",
+      "summaryDe": "Musk teilt „Tesla Korea“: Tesla bleibt den neunten Monat in Folge Nr. 1 bei Importautos in Südkorea; Oktober-Zulassungen +110,7 % zum Vorjahr.",
+      "originalText": "🇰🇷 Tesla Korea 🇰🇷",
+      "url": "https://x.com/elonmusk/status/2118588019230056525",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Tesla Korea",
+          "url": "https://x.com/elonmusk/status/2118588019230056525"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118591262890848688",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T07:28:13+01:00",
+      "summaryDe": "Musk kommentiert „Not bad“ zu einem Beitrag, wonach Tesla in Kalifornien mehr verkauft als die nächsten zwölf EV-Hersteller zusammen.",
+      "originalText": "Not bad",
+      "url": "https://x.com/elonmusk/status/2118591262890848688",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk „Not bad“ zu Kalifornien-Verkäufen",
+          "url": "https://x.com/elonmusk/status/2118591262890848688"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118590598324318415",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T07:25:34+01:00",
+      "summaryDe": "Musk schreibt, SoftBank falle bei Turbinen-Bestellungen aus — Kontext: Berichte über einen Notverkauf von rund 500 Mio. $ Rechenzentrums-Krediten inkl. Stargate New Mexico nach den Midterms.",
+      "originalText": "@KatieMiller SoftBank is defaulting on their turbine orders",
+      "url": "https://x.com/elonmusk/status/2118590598324318415",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "xAI"
+      ],
+      "sentiment": "negativ",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk Antwort SoftBank-Turbinen",
+          "url": "https://x.com/elonmusk/status/2118590598324318415"
+        },
+        {
+          "title": "Bloomberg via X: ~500 Mio. $ Rechenzentrums-Kredite im Angebot",
+          "url": "https://x.com/KatieMiller/status/2118503491022757918"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118591788701421573",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T07:30:18+01:00",
+      "summaryDe": "Musk: Tesla fährt die Cybertruck-Produktion in der Gigafactory Texas etwa Mitte nächsten Jahres herunter, um Platz für mehr Cybercab-Produktion zu schaffen.",
+      "originalText": "Tesla will be winding down production of the Cybertruck at Gigafactory Texas around the middle of next year to make room for increased Cybercab production",
+      "url": "https://x.com/elonmusk/status/2118591788701421573",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118591788701421573"
+        },
+        {
+          "title": "Reuters/CNA: Cybertruck-Produktion wird heruntergefahren",
+          "url": "https://www.channelnewsasia.com/business/tesla-wind-down-cybertruck-production-texas-gigafactory-next-year-musk-says-6530476"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118565802429632576",
       "account": "@elonmusk",

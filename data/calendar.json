@@ -3,8 +3,8 @@
   "events": [
     {
       "id": "evt-starship-flight15",
-      "title": "Starship Flight 15: erster Versuch, Booster und Schiff zu fangen (frühestens 12. Nov.)",
-      "date": "2026-11-12",
+      "title": "Starship Flight 15: erster Versuch, Booster und Schiff zu fangen (Ziel 13. Nov.)",
+      "date": "2026-11-13",
       "time": null,
       "timezone": "Europe/Berlin",
       "kind": "company",
@@ -13,34 +13,30 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 45,
+      "probabilityPct": 50,
       "impact": "hoch",
-      "reasoning": "Beide Stufen haben ihre Static Fires hinter sich (Booster 22 am 25.10., Ship 42 am 27.10.). Musk sagte am 20.10. im Q3-Webcast, Flight 15 komme „nächsten Monat“, und nannte einen Erfolg der beiden Fänge „eher wahrscheinlich als nicht“. Ein offizielles Datum gibt es nicht: der 12.11. stammt nur von einer FAA-Planungsfolie, und die FAA-Lizenz mit Rückkehr über Land und Turmfang ist noch nicht veröffentlicht. Ein früheres Ziel (19.10.) ist schon gerissen. Meine 45 % gelten für einen Start bis 30. November; bis Jahresende sehe ich etwa 75 %. Vorsicht beim Kurs: Nach Flight 13 und Flight 14 schloss SPCX am Reaktionstag jeweils im Minus (−1,4 % und −2,2 %), obwohl beide Flüge weitgehend gelangen.",
+      "reasoning": "SpaceX-Launch-VP Kiko Dontchev nannte am 5.11. beim UP.Summit Freitag 13. November als Zieltermin (Eric Berger). Zuvor zeigte eine CADENA/FAA-Folie NET 12.11.; der 13.11. ist damit die aktuelle Zielmarke, aber weiter „no earlier than“. Beide Static Fires sind durch (Booster 22, Ship 42). Die FAA-Lizenz mit Rückkehr über Land und Turmfang ist noch nicht veröffentlicht. Meine 50 % gelten für einen Start bis 30. November; bis Jahresende sehe ich etwa 75 %. Kursrisiko: Nach Flight 13/14 schloss SPCX am Reaktionstag jeweils im Minus, obwohl die Flüge weitgehend gelangten.",
       "example": false,
       "sources": [
         {
-          "title": "The Space Road: Wann startet Starship Flight 15?",
-          "url": "https://thespaceroad.com/articles/when-is-starship-flight-15/"
+          "title": "Teslarati: Flight 15 Ziel 13. November (Dontchev/Berger)",
+          "url": "https://www.teslarati.com/spacex-starship-catch-nov-13/"
         },
         {
-          "title": "Ars Technica: SpaceX will bei Flight 15 beide Stufen fangen",
+          "title": "TeslaNorth: Starship Flight 15 Targets Nov. 13",
+          "url": "https://teslanorth.com/2026/11/05/starship-flight-15-nov-13/"
+        },
+        {
+          "title": "Starbase Events: Flight 15 NET 13. November",
+          "url": "https://www.starbaseevents.com/flights/15"
+        },
+        {
+          "title": "Ars Technica / SpaceX Q3: beide Stufen fangen",
           "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
         },
         {
-          "title": "Space.com: Ship 42 Static Fire vor Flight 15",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-starship-upper-stage-ahead-of-landmark-flight-15-test-launch-video"
-        },
-        {
-          "title": "Next Spaceflight: Starship Flight 15",
-          "url": "https://www.nextspaceflight.com/starship/"
-        },
-        {
-          "title": "FAA: SpaceX Starship Super Heavy Projekt Boca Chica",
+          "title": "FAA: SpaceX Starship Super Heavy Boca Chica",
           "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
-        },
-        {
-          "title": "Yahoo Finance: SPCX historische Kurse",
-          "url": "https://finance.yahoo.com/quote/SPCX/history/"
         }
       ]
     },
@@ -166,7 +162,7 @@
       ],
       "probabilityPct": 55,
       "impact": "mittel",
-      "reasoning": "Im Q3-Call kündigte Tesla Cybercab-Fahrten in Dallas für „nächsten Monat“ an; in Austin fahren bereits über 300 Cybercabs. Das Datum hier ist das Monatsende als Frist, kein angekündigter Tag. Ich setze 55 %, weil Tesla bei Robotaxi-Terminen oft rutscht, der Schritt von Austin nach Dallas aber klein ist. Politisches Risiko: Nach dem Midterm-Ergebnis in Texas erwarten Beobachter mehr Aufsicht über autonome Fahrdienste.",
+      "reasoning": "Im Q3-Call kündigte Tesla Cybercab-Fahrten in Dallas für „nächsten Monat“ an; in Austin fahren bereits über 300 Cybercabs. Musk bekräftigte am 6.11. die Kapazitätsverschiebung Richtung Cybercab (Cybertruck in Texas Mitte 2027 runter). Das Datum hier ist das Monatsende als Frist, kein angekündigter Tag. Ich bleibe bei 55 %, weil Tesla bei Robotaxi-Terminen oft rutscht, der Schritt Austin→Dallas aber klein ist. Politisches Risiko: nach den Midterms in Texas mehr Aufsicht über autonome Fahrdienste möglich.",
       "example": false,
       "sources": [
         {
@@ -180,6 +176,10 @@
         {
           "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
           "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+        },
+        {
+          "title": "@elonmusk: Cybertruck/Cybercab Kapazität",
+          "url": "https://x.com/elonmusk/status/2118591788701421573"
         }
       ]
     },
@@ -218,11 +218,19 @@
       "tickers": [
         "TSLA"
       ],
-      "probabilityPct": 35,
+      "probabilityPct": 38,
       "impact": "mittel",
-      "reasoning": "Tesla will die ersten Cybercabs bis Ende 2026 an Kunden ausliefern, klein anfangen und dann hochfahren. Bisher ging jedes gebaute Cybercab in die eigene Robotaxi-Flotte. Ich setze nur 35 %, weil Tesla solche Jahresend-Ziele häufig verfehlt und die Auslieferung an Kunden neue Regulierungs- und Haftungsfragen aufwirft.",
+      "reasoning": "Tesla will die ersten Cybercabs bis Ende 2026 an Kunden ausliefern. Musk sagte am 6.11., die Cybertruck-Produktion in Giga Texas werde Mitte nächsten Jahres heruntergefahren, um Platz für mehr Cybercab-Produktion zu schaffen — das stärkt die Kapazitätsstory für 2027, ändert aber wenig am engen Jahresend-Fenster 2026. Ich setze 38 % (+3), weil Kundenauslieferung weiter neue Regulierungs- und Haftungsfragen aufwirft und Tesla Jahresend-Ziele häufig verfehlt.",
       "example": false,
       "sources": [
+        {
+          "title": "@elonmusk: Cybertruck wind-down für Cybercab",
+          "url": "https://x.com/elonmusk/status/2118591788701421573"
+        },
+        {
+          "title": "Reuters/CNA: Tesla fährt Cybertruck-Produktion herunter",
+          "url": "https://www.channelnewsasia.com/business/tesla-wind-down-cybertruck-production-texas-gigafactory-next-year-musk-says-6530476"
+        },
         {
           "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
           "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
@@ -381,7 +389,7 @@
       ],
       "probabilityPct": 95,
       "impact": "hoch",
-      "reasoning": "Der BLS-Bericht erscheint heute Freitag 6.11. um 14:30 Uhr Berlin. Dow-Jones-Konsens laut CNBC: etwa +59.000 Nonfarm-Payrolls (nach +29.000 im September), Arbeitslosenquote unverändert 4,2 %, Löhne rund +0,3 % zum Vormonat / ~2,9 % zum Vorjahr. Nach dem Tech-Ausverkauf vom Donnerstag (Nasdaq −5,5 %, Chips −12 %) und leicht erholten Nasdaq-Futures über Nacht gilt der Bericht als nächster Katalysator: eine mäßige „Goldilocks“-Zahl könnte Wachstumswerte entlasten; heiße Löhne würden Fed-Zinsängste neu befeuern.",
+      "reasoning": "Der BLS-Bericht erscheint heute Freitag 6.11. um 14:30 Uhr Berlin. Reuters-Konsens: etwa +65.000 Nonfarm-Payrolls (nach +29.000 im September), Arbeitslosenquote unverändert 4,2 %, Löhne rund +0,3 % zum Vormonat / ~2,9 % zum Vorjahr (erstmals unter 3 % YoY seit 2021). Nach dem Tech-Ausverkauf vom Donnerstag (Nasdaq −5,5 %, Chips −12 %) und gemischten Futures gilt der Bericht als nächster Katalysator: eine mäßige „Goldilocks“-Zahl könnte Wachstumswerte entlasten; heiße Löhne würden Fed-Zinsängste neu befeuern.",
       "example": false,
       "sources": [
         {
@@ -389,11 +397,15 @@
           "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
         },
         {
-          "title": "CNBC: Vorschau Oktober-Jobsbericht (Konsens ~59k)",
+          "title": "Reuters/Investing: Konsens ~65k Payrolls Oktober",
+          "url": "https://www.investing.com/news/economic-indicators/us-job-growth-expected-to-pick-up-in-october-with-moderation-in-wage-gains-5006475"
+        },
+        {
+          "title": "CNBC: Vorschau Oktober-Jobsbericht",
           "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
         },
         {
-          "title": "Investing.com: Futures vor Payrolls leicht im Plus",
+          "title": "Investing.com: Futures vor Payrolls",
           "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-ai-rout-batters-wall-st-payrolls-data-in-focus-5006240"
         }
       ]
@@ -854,9 +866,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 88,
+      "probabilityPct": 90,
       "impact": "niedrig",
-      "reasoning": "SpaceX bestätigt weiter Freitag 6.11.: Vier-Stunden-Fenster ab 16:46 Uhr Ortszeit Vandenberg (in Berlin 01:46 Uhr am 7.11.), Ersatztermin Samstag 7.11. ab 16:32 PT. Erste Stufe landet auf Of Course I Still Love You; Live-Webcast ca. 10 Minuten vor dem Start. Ich hebe auf 88 %, weil der Starttag offiziell steht und keine Verschiebung gemeldet ist. Routine-Militärmission, Kurswirkung gering.",
+      "reasoning": "SpaceX bestätigt weiter Freitag 6.11.: Vier-Stunden-Fenster ab 16:46 Uhr Ortszeit Vandenberg (in Berlin 01:46 Uhr am 7.11.), Ersatztermin Samstag 7.11. ab 16:32 PT. Erste Stufe landet auf Of Course I Still Love You; Live-Webcast ca. 10 Minuten vor dem Start. Ich hebe auf 90 %, weil Starttag und Mission-Seite live sind und kein Scrub gemeldet ist. Routine-Militärmission, Kurswirkung gering.",
       "example": false,
       "sources": [
         {
