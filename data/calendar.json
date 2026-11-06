@@ -389,20 +389,24 @@
       ],
       "probabilityPct": 95,
       "impact": "hoch",
-      "reasoning": "Der BLS-Bericht erscheint heute Freitag 6.11. um 14:30 Uhr Berlin. Reuters-Konsens: etwa +65.000 Nonfarm-Payrolls (nach +29.000 im September), Arbeitslosenquote unverändert 4,2 %, Löhne rund +0,3 % zum Vormonat / ~2,9 % zum Vorjahr. Dow-Jones-Konsens teils niedriger (~59k). Nach dem Tech-Ausverkauf vom Donnerstag (Nasdaq −5,5 %) und gemischten Futures (Nasdaq-Futures leicht im Plus, Dow schwächer) gilt der Bericht als nächster Katalysator.",
+      "reasoning": "Der BLS-Bericht erscheint heute Freitag 6.11. um 14:30 Uhr Berlin (noch nicht veröffentlicht Stand 11:30). Reuters-Konsens: etwa +65.000 Nonfarm-Payrolls (nach +29.000 im September), Arbeitslosenquote unverändert 4,2 %, Löhne rund +0,3 % zum Vormonat / ~2,9 % zum Vorjahr. Dow-Jones-Konsens teils niedriger (~59k). Nach dem Tech-Ausverkauf vom Donnerstag erholen sich Nasdaq-Futures früh Freitag (~+1,5 %); der Bericht bleibt der nächste Katalysator.",
       "example": false,
       "sources": [
+        {
+          "title": "BLS CES: Next Release 6.11. 8:30 ET",
+          "url": "https://www.bls.gov/ces/"
+        },
         {
           "title": "Reuters/Investing: Jobs-Konsens ~65k",
           "url": "https://www.investing.com/news/economic-indicators/us-job-growth-expected-to-pick-up-in-october-with-moderation-in-wage-gains-5006475"
         },
         {
-          "title": "CNBC: Oktober-Jobs Preview (~59k Dow Jones)",
+          "title": "CNBC: Oktober-Jobs Preview (~59k)",
           "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
         },
         {
-          "title": "FXStreet: Futures vor Payrolls",
-          "url": "https://www.fxstreet.com/news/can-the-october-jobs-report-revive-market-sentiment-after-the-us-stock-selloff-202611060537"
+          "title": "Investing/Reuters: Nasdaq-Futures rebound",
+          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-rise-after-steep-ai-selloff-as-chip-stocks-stabilize-5007026"
         }
       ]
     },
@@ -852,7 +856,7 @@
     },
     {
       "id": "evt-falcon9-ussf432",
-      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force (Fenster heute Abend PT)",
+      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force (Fenster ab 01:46 Berlin)",
       "date": "2026-11-07",
       "time": "01:46",
       "timezone": "Europe/Berlin",
@@ -862,9 +866,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 92,
+      "probabilityPct": 94,
       "impact": "niedrig",
-      "reasoning": "SpaceX bestätigt weiter Freitag 6.11.: Vier-Stunden-Fenster ab 16:46 Uhr Ortszeit Vandenberg (in Berlin 01:46 Uhr am 7.11.), Ersatztermin Samstag 7.11. ab 16:32 PT. Erste Stufe landet auf Of Course I Still Love You; Live-Webcast ca. 10 Minuten vor dem Start. Am Vormittag Berlin kein Scrub gemeldet — ich setze 92 %. Routine-Militärmission, Kurswirkung gering.",
+      "reasoning": "SpaceX-Seite bestätigt Freitag 6.11.: Vier-Stunden-Fenster ab 16:46 Uhr Ortszeit Vandenberg (in Berlin 01:46 Uhr am 7.11.), Ersatztermin Samstag 7.11. ab 16:32 PT. Live-Webcast ca. 10 Minuten vor dem Start; Booster B1095 (8. Flug) landet auf Of Course I Still Love You. Bis 11:30 Berlin kein Scrub gemeldet — ich setze 94 % (+2). Routine-Militärmission, Kurswirkung gering.",
       "example": false,
       "sources": [
         {

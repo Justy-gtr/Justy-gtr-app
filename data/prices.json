@@ -1376,19 +1376,23 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "SpaceX blieb nach dem Midterm-/KI-Ausverkauf (Donnerstag ~−9 % auf 123,62 $) unter Druck; SoftBank-Ausfall bei Turbinen-Bestellungen belastet die Rechenzentrums-Story. Gegenwind politisch: Texas-Gouverneurin-elect Hinojosa stoppt vorerst Landentscheidungen bei Boca Chica. Positiv: Musk bestätigt Terafab-Tempo. Heute zählen USSF-432 (Fenster ab 01:46 Berlin Samstag) und der Jobsbericht um 14:30 Berlin.",
+      "why": "Nach dem Midterm-/KI-Ausverkauf (Donnerstag ~−9 % auf 123,62 $) zeigte SPCX im Nachhandel eine Erholung (~+2,5 % auf etwa 126,70 $). Musk bekräftigt die These, KI-Rechenzentren im All seien in 2–3 Jahren am günstigsten; Terafab bleibt „moving fast“. Politisch weiter Gegenwind (Boca Chica / Texas). Heute zählen Jobsbericht 14:30 Berlin und USSF-432 (Fenster ab 01:46 Berlin Samstag).",
       "whySources": [
+        {
+          "title": "@elonmusk: Yes (KI-Rechenzentren im All)",
+          "url": "https://x.com/elonmusk/status/2118638089677803638"
+        },
         {
           "title": "@elonmusk: Terafab is moving fast",
           "url": "https://x.com/elonmusk/status/2118620772268990966"
         },
         {
-          "title": "@elonmusk: SoftBank-Turbinen",
-          "url": "https://x.com/elonmusk/status/2118590598324318415"
+          "title": "Public.com: SPCX After-Hours ~126,70 $",
+          "url": "https://public.com/stocks/spcx/after-hours"
         },
         {
-          "title": "Click2Houston: Hinojosa Boca Chica",
-          "url": "https://www.click2houston.com/news/texas/2026/11/05/hinojosa-asks-texas-parks-and-wildlife-to-hold-off-on-boca-chica-land-action-amid-spacex-concerns/"
+          "title": "Investing/Reuters: Nasdaq-Futures rebound",
+          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-rise-after-steep-ai-selloff-as-chip-stocks-stabilize-5007026"
         },
         {
           "title": "SpaceX: USSF-432",
@@ -4302,19 +4306,19 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Nach dem Midterm-/KI-Ausverkauf (−11 % am Donnerstag auf 343,69 $) kommen operative Pluszeichen: Cybertruck-Produktion in Giga Texas Mitte 2027 runter für mehr Cybercab, und Musk bestätigt „Terafab is moving fast“. Futures gemischt; kursseitig zählt zuerst der Jobsbericht um 14:30 Berlin.",
+      "why": "Nach dem Midterm-/KI-Ausverkauf (−11 % am Donnerstag auf 343,69 $) helfen operative Pluszeichen (Cybertruck in Giga Texas Mitte 2027 runter für mehr Cybercab; Terafab schnell). Nasdaq-Futures erholen sich früh Freitag nach dem Chip-Ausverkauf; kursseitig zählt zuerst der Jobsbericht um 14:30 Berlin.",
       "whySources": [
-        {
-          "title": "@elonmusk: Terafab is moving fast",
-          "url": "https://x.com/elonmusk/status/2118620772268990966"
-        },
         {
           "title": "@elonmusk: Cybertruck wind-down für Cybercab",
           "url": "https://x.com/elonmusk/status/2118591788701421573"
         },
         {
-          "title": "FXStreet: Futures vor Payrolls",
-          "url": "https://www.fxstreet.com/news/dow-jones-futures-fall-following-steep-wall-street-sell-off-nfp-data-awaited-202611060720"
+          "title": "@elonmusk: Terafab is moving fast",
+          "url": "https://x.com/elonmusk/status/2118620772268990966"
+        },
+        {
+          "title": "Investing/Reuters: Nasdaq-Futures rebound",
+          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-rise-after-steep-ai-selloff-as-chip-stocks-stabilize-5007026"
         },
         {
           "title": "Yahoo Finance: TSLA",
@@ -6664,15 +6668,15 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Rocket Lab folgt dem Tech-Sentiment nach dem Donnerstags-Ausverkauf (~−12 %), ohne eigene Fehlermeldung. Operativ: ESCAPADE-Mars-Einschuss Samstag und Q3-Zahlen Montag. Heute hängt der Kurs am breiten Markt vor dem US-Jobsbericht um 14:30 Berlin.",
+      "why": "Rocket Lab folgt dem Tech-Sentiment nach dem Donnerstags-Ausverkauf (~−12 %), ohne eigene Fehlermeldung. Operativ: ESCAPADE-Mars-Einschuss Samstag und Q3-Zahlen Montag. Nasdaq-Futures im Plus vor dem US-Jobsbericht um 14:30 Berlin — davon hängt der Kurs heute vor allem ab.",
       "whySources": [
         {
           "title": "@RocketLab: ESCAPADE Richtung Mars",
           "url": "https://x.com/RocketLab/status/2118544706066055248"
         },
         {
-          "title": "FXStreet: Futures vor Payrolls",
-          "url": "https://www.fxstreet.com/news/dow-jones-futures-fall-following-steep-wall-street-sell-off-nfp-data-awaited-202611060720"
+          "title": "Investing/Reuters: Nasdaq-Futures rebound",
+          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-rise-after-steep-ai-selloff-as-chip-stocks-stabilize-5007026"
         },
         {
           "title": "Yahoo Finance: RKLB",
