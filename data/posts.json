@@ -1,19 +1,19 @@
 {
   "example": false,
-  "asOf": "2026-11-06T08:48:44+01:00",
+  "asOf": "2026-11-06T09:34:51+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.05,
-      "label": "gemischt vor Jobs und Falcon-Start",
-      "summary": "Musk betont erneut volle Starship-Wiederverwendung; SoftBank-Turbinen-Ausfall und Kreditdruck bei Rechenzentren belasten die KI-Infrastruktur-Story. Heute zählen USSF-432 (Fenster ab 01:46 Berlin Samstag) und der Jobsbericht um 14:30.",
+      "score": 0.08,
+      "label": "leicht zuversichtlich vor Falcon und Jobs",
+      "summary": "Musk bestätigt Terafab-Tempo; SoftBank-Turbinen bleiben Gegenwind für die Rechenzentrums-Story. Operativ: USSF-432 Fenster ab 01:46 Berlin Samstag und Jobsbericht 14:30.",
       "sources": [
+        {
+          "title": "@elonmusk: Terafab is moving fast",
+          "url": "https://x.com/elonmusk/status/2118620772268990966"
+        },
         {
           "title": "SpaceX: USSF-432",
           "url": "https://www.spacex.com/launches/ussf432"
-        },
-        {
-          "title": "@elonmusk SoftBank-Turbinen",
-          "url": "https://x.com/elonmusk/status/2118590598324318415"
         },
         {
           "title": "Reuters: Jobs-Konsens ~65k",
@@ -22,41 +22,100 @@
       ]
     },
     "TSLA": {
-      "score": 0.25,
-      "label": "operativ zuversichtlich, Kurs weiter unter Midterm-Druck",
-      "summary": "Musk kündigt an, Cybertruck in Texas Mitte 2027 runterzufahren zugunsten von Cybercab; dazu starke Korea- und Kalifornien-Verkaufssignale. Der Kurs steht weiter unter dem Midterm-/KI-Ausverkauf; heute 14:30 Jobsbericht.",
+      "score": 0.12,
+      "label": "operativ positiv, Kurs vor Jobs nervös",
+      "summary": "Cybertruck→Cybercab und Terafab-Tempo stützen die Langfrist-Story; nach dem Midterm-/KI-Ausverkauf zählt kurzfristig der Jobsbericht.",
       "sources": [
         {
-          "title": "@elonmusk Cybertruck/Cybercab",
+          "title": "@elonmusk: Terafab is moving fast",
+          "url": "https://x.com/elonmusk/status/2118620772268990966"
+        },
+        {
+          "title": "@elonmusk: Cybertruck wind-down",
           "url": "https://x.com/elonmusk/status/2118591788701421573"
         },
         {
-          "title": "@elonmusk Tesla Korea",
-          "url": "https://x.com/elonmusk/status/2118588019230056525"
-        },
-        {
-          "title": "CNA/Reuters: Cybertruck wind-down",
-          "url": "https://www.channelnewsasia.com/business/tesla-wind-down-cybertruck-production-texas-gigafactory-next-year-musk-says-6530476"
+          "title": "FXStreet: Futures vor Payrolls",
+          "url": "https://www.fxstreet.com/news/dow-jones-futures-fall-following-steep-wall-street-sell-off-nfp-data-awaited-202611060720"
         }
       ]
     },
     "RKLB": {
-      "score": 0.2,
-      "label": "operativ stark vor ESCAPADE und Q3",
-      "summary": "Keine neuen Rocket-Lab-Posts seit dem 6:30-Update. ESCAPADE-Mars-Einschuss am 7.11. und Q3-Zahlen am 9.11. bleiben die nächsten Katalysatoren; Kurs folgt dem Tech-Markt vor den Payrolls.",
+      "score": 0.05,
+      "label": "operativ stark, Markt folgt Tech",
+      "summary": "ESCAPADE-Mars-Einschuss und Q3-Zahlen stehen; der Kurs hängt weiter am breiten Tech-Sentiment vor den US-Jobs.",
       "sources": [
         {
-          "title": "@RocketLab ESCAPADE",
+          "title": "@RocketLab: ESCAPADE",
           "url": "https://x.com/RocketLab/status/2118544706066055248"
         },
         {
-          "title": "@RocketLab Electron 100",
-          "url": "https://x.com/RocketLab/status/2118521208639746494"
+          "title": "FXStreet: Futures vor Payrolls",
+          "url": "https://www.fxstreet.com/news/dow-jones-futures-fall-following-steep-wall-street-sell-off-nfp-data-awaited-202611060720"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2118596790958322075",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T07:50:11+01:00",
+      "summaryDe": "Musk reagiert mit „😬“ auf Jim Cramers Aussage, der KI-Aktienausverkauf sei kein neuer Dotcom-Crash — ironischer Kommentar zur Marktstimmung.",
+      "originalText": "😬",
+      "url": "https://x.com/elonmusk/status/2118596790958322075",
+      "tickers": [
+        "TSLA",
+        "SPCX"
+      ],
+      "companies": [
+        "Tesla",
+        "SpaceX"
+      ],
+      "sentiment": "negativ",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: 😬",
+          "url": "https://x.com/elonmusk/status/2118596790958322075"
+        },
+        {
+          "title": "Polymarket: Cramer zu KI-Ausverkauf",
+          "url": "https://x.com/Polymarket/status/2118513920839430202"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118620772268990966",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T09:25:28+01:00",
+      "summaryDe": "Musk: „Terafab is moving fast“ — bestätigt den schnellen Aufbau der Chip-Forschungsfabrik an der Gigafactory Texas (Stahlbau in Tagen, Rund-um-die-Uhr-Arbeit).",
+      "originalText": "Terafab is moving fast",
+      "url": "https://x.com/elonmusk/status/2118620772268990966",
+      "tickers": [
+        "TSLA",
+        "SPCX"
+      ],
+      "companies": [
+        "Tesla",
+        "SpaceX",
+        "Terafab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Terafab is moving fast",
+          "url": "https://x.com/elonmusk/status/2118620772268990966"
+        },
+        {
+          "title": "@herbertong: Tesla chip effort / Fab Lab Giga Texas",
+          "url": "https://x.com/herbertong/status/2118522505648628207"
+        }
+      ]
+    },
     {
       "id": "post-starlink-2118509068897972432",
       "account": "@Starlink",

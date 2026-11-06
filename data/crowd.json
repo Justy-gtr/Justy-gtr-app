@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-05",
+  "asOf": "2026-11-06",
   "investors": [
     {
       "id": "inv-sawyermerritt",
@@ -225,7 +225,7 @@
   "comparison": {
     "swarmHitRatePct": null,
     "karlHitRatePct": null,
-    "summary": "Trefferquoten gibt es noch nicht. Sie laufen seit dem 4. November und stehen auf null, statt dass jemand eine Quote erfindet. Vergleichen lässt sich die Richtung über den ganzen Markt: der Schwarm ist bei Nvidia und Broadcom auf der Kaufseite, Karl nicht. Henkel nennt der Schwarm kaum, Karl hält die Aktie. Bei TSMC und SpaceX ist die Richtung ähnlich, Karl ist nur leiser.",
+    "summary": "Trefferquoten laufen seit dem 4. November und stehen noch auf null. Nach dem Midterm-/KI-Ausverkauf kaufen Teile des Schwarms den Dip in TSLA/SPCX; Karl bleibt selektiv und hält TSMC/Henkel gegen den lauten Chip-Hype.",
     "picks": [
       {
         "symbol": "TSM",

@@ -389,24 +389,20 @@
       ],
       "probabilityPct": 95,
       "impact": "hoch",
-      "reasoning": "Der BLS-Bericht erscheint heute Freitag 6.11. um 14:30 Uhr Berlin. Reuters-Konsens: etwa +65.000 Nonfarm-Payrolls (nach +29.000 im September), Arbeitslosenquote unverändert 4,2 %, Löhne rund +0,3 % zum Vormonat / ~2,9 % zum Vorjahr (erstmals unter 3 % YoY seit 2021). Nach dem Tech-Ausverkauf vom Donnerstag (Nasdaq −5,5 %, Chips −12 %) und gemischten Futures gilt der Bericht als nächster Katalysator: eine mäßige „Goldilocks“-Zahl könnte Wachstumswerte entlasten; heiße Löhne würden Fed-Zinsängste neu befeuern.",
+      "reasoning": "Der BLS-Bericht erscheint heute Freitag 6.11. um 14:30 Uhr Berlin. Reuters-Konsens: etwa +65.000 Nonfarm-Payrolls (nach +29.000 im September), Arbeitslosenquote unverändert 4,2 %, Löhne rund +0,3 % zum Vormonat / ~2,9 % zum Vorjahr. Dow-Jones-Konsens teils niedriger (~59k). Nach dem Tech-Ausverkauf vom Donnerstag (Nasdaq −5,5 %) und gemischten Futures (Nasdaq-Futures leicht im Plus, Dow schwächer) gilt der Bericht als nächster Katalysator.",
       "example": false,
       "sources": [
         {
-          "title": "BLS: Termine Arbeitsmarktbericht",
-          "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
-        },
-        {
-          "title": "Reuters/Investing: Konsens ~65k Payrolls Oktober",
+          "title": "Reuters/Investing: Jobs-Konsens ~65k",
           "url": "https://www.investing.com/news/economic-indicators/us-job-growth-expected-to-pick-up-in-october-with-moderation-in-wage-gains-5006475"
         },
         {
-          "title": "CNBC: Vorschau Oktober-Jobsbericht",
+          "title": "CNBC: Oktober-Jobs Preview (~59k Dow Jones)",
           "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
         },
         {
-          "title": "Investing.com: Futures vor Payrolls",
-          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-ai-rout-batters-wall-st-payrolls-data-in-focus-5006240"
+          "title": "FXStreet: Futures vor Payrolls",
+          "url": "https://www.fxstreet.com/news/can-the-october-jobs-report-revive-market-sentiment-after-the-us-stock-selloff-202611060537"
         }
       ]
     },
@@ -866,9 +862,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 90,
+      "probabilityPct": 92,
       "impact": "niedrig",
-      "reasoning": "SpaceX bestätigt weiter Freitag 6.11.: Vier-Stunden-Fenster ab 16:46 Uhr Ortszeit Vandenberg (in Berlin 01:46 Uhr am 7.11.), Ersatztermin Samstag 7.11. ab 16:32 PT. Erste Stufe landet auf Of Course I Still Love You; Live-Webcast ca. 10 Minuten vor dem Start. Ich hebe auf 90 %, weil Starttag und Mission-Seite live sind und kein Scrub gemeldet ist. Routine-Militärmission, Kurswirkung gering.",
+      "reasoning": "SpaceX bestätigt weiter Freitag 6.11.: Vier-Stunden-Fenster ab 16:46 Uhr Ortszeit Vandenberg (in Berlin 01:46 Uhr am 7.11.), Ersatztermin Samstag 7.11. ab 16:32 PT. Erste Stufe landet auf Of Course I Still Love You; Live-Webcast ca. 10 Minuten vor dem Start. Am Vormittag Berlin kein Scrub gemeldet — ich setze 92 %. Routine-Militärmission, Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -932,6 +928,33 @@
         {
           "title": "Next Spaceflight: USSF-317",
           "url": "https://nextspaceflight.com/launches/details/8335/"
+        }
+      ]
+    },
+    {
+      "id": "evt-tx-boca-chica-land",
+      "title": "Texas: Gouverneurin-elect Hinojosa stoppt vorerst Boca-Chica-Landverkauf nahe Starbase",
+      "date": "2027-01-19",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "politik",
+      "company": "Texas",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 70,
+      "impact": "mittel",
+      "reasoning": "Am 5.11. bat die gewählte Gouverneurin Gina Hinojosa Texas Parks and Wildlife, während der Transition keine Entscheidung über rund 1.300 Acres öffentliches Land bei Boca Chica (nahe SpaceX-Starbase) zu treffen; der Punkt war bereits von der finalen Agenda genommen. Amtseinführung 19.01.2027. Kein abgeschlossener Verkauf — eher regulatorisches/politisches Risiko für künftige Flächenexpansion. 70 %: Pause hält bis zur Amtsübernahme wahrscheinlich, danach offen.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Click2Houston: Hinojosa bittet um Pause bei Boca-Chica-Land",
+          "url": "https://www.click2houston.com/news/texas/2026/11/05/hinojosa-asks-texas-parks-and-wildlife-to-hold-off-on-boca-chica-land-action-amid-spacex-concerns/"
+        },
+        {
+          "title": "Texas Tribune: Boca Chica / SpaceX-Landdiskussion",
+          "url": "https://www.texastribune.org/2026/10/31/texas-elon-musk-spacex-boca-chica-state-park-sale/"
         }
       ]
     }

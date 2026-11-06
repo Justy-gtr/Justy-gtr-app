@@ -2489,19 +2489,23 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "SpaceX schloss Donnerstag rund 9 % tiefer bei 123,62 $ unter Midterm-/KI-Druck. Heute zusätzlich Gegenwind für die Rechenzentrums-Story: Musk sagt SoftBank falle bei Turbinen-Bestellungen aus, während Kredite für KI-Standorte unter Druck stehen. Operativ: Falcon USSF-432 heute Abend PT; Kurshebel bleibt der Jobsbericht um 14:30 Berlin.",
+      "why": "SpaceX blieb nach dem Midterm-/KI-Ausverkauf (Donnerstag ~−9 % auf 123,62 $) unter Druck; SoftBank-Ausfall bei Turbinen-Bestellungen belastet die Rechenzentrums-Story. Gegenwind politisch: Texas-Gouverneurin-elect Hinojosa stoppt vorerst Landentscheidungen bei Boca Chica. Positiv: Musk bestätigt Terafab-Tempo. Heute zählen USSF-432 (Fenster ab 01:46 Berlin Samstag) und der Jobsbericht um 14:30 Berlin.",
       "whySources": [
+        {
+          "title": "@elonmusk: Terafab is moving fast",
+          "url": "https://x.com/elonmusk/status/2118620772268990966"
+        },
         {
           "title": "@elonmusk: SoftBank-Turbinen",
           "url": "https://x.com/elonmusk/status/2118590598324318415"
         },
         {
-          "title": "SpaceX: USSF-432",
-          "url": "https://www.spacex.com/launches/ussf432"
+          "title": "Click2Houston: Hinojosa Boca Chica",
+          "url": "https://www.click2houston.com/news/texas/2026/11/05/hinojosa-asks-texas-parks-and-wildlife-to-hold-off-on-boca-chica-land-action-amid-spacex-concerns/"
         },
         {
-          "title": "Investing.com: Futures vor Payrolls",
-          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-ai-rout-batters-wall-st-payrolls-data-in-focus-5006240"
+          "title": "SpaceX: USSF-432",
+          "url": "https://www.spacex.com/launches/ussf432"
         },
         {
           "title": "Yahoo Finance: SPCX",
@@ -6326,19 +6330,19 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Nach dem Midterm-/KI-Ausverkauf (−11 % am Donnerstag auf 343,69 $) setzt Musk heute früh ein operatives Signal: Cybertruck-Produktion in Giga Texas Mitte 2027 runter, Platz für mehr Cybercab. Korea- und Kalifornien-Verkaufszahlen stützen die Marke; kursseitig zählt zuerst der Jobsbericht um 14:30 Berlin.",
+      "why": "Nach dem Midterm-/KI-Ausverkauf (−11 % am Donnerstag auf 343,69 $) kommen operative Pluszeichen: Cybertruck-Produktion in Giga Texas Mitte 2027 runter für mehr Cybercab, und Musk bestätigt „Terafab is moving fast“. Futures gemischt; kursseitig zählt zuerst der Jobsbericht um 14:30 Berlin.",
       "whySources": [
+        {
+          "title": "@elonmusk: Terafab is moving fast",
+          "url": "https://x.com/elonmusk/status/2118620772268990966"
+        },
         {
           "title": "@elonmusk: Cybertruck wind-down für Cybercab",
           "url": "https://x.com/elonmusk/status/2118591788701421573"
         },
         {
-          "title": "Reuters/CNA: Tesla fährt Cybertruck-Produktion herunter",
-          "url": "https://www.channelnewsasia.com/business/tesla-wind-down-cybertruck-production-texas-gigafactory-next-year-musk-says-6530476"
-        },
-        {
-          "title": "Investing.com: Futures vor Payrolls",
-          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-ai-rout-batters-wall-st-payrolls-data-in-focus-5006240"
+          "title": "FXStreet: Futures vor Payrolls",
+          "url": "https://www.fxstreet.com/news/dow-jones-futures-fall-following-steep-wall-street-sell-off-nfp-data-awaited-202611060720"
         },
         {
           "title": "Yahoo Finance: TSLA",
@@ -9765,15 +9769,15 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Rocket Lab schloss Donnerstag rund 12 % tiefer im Tech-Ausverkauf ohne eigene Fehlermeldung. Operativ unverändert stark: ESCAPADE-Mars-Einschuss Samstag und Q3-Zahlen Montag. Heute folgt der Kurs dem breiten Markt vor dem US-Jobsbericht um 14:30 Berlin.",
+      "why": "Rocket Lab folgt dem Tech-Sentiment nach dem Donnerstags-Ausverkauf (~−12 %), ohne eigene Fehlermeldung. Operativ: ESCAPADE-Mars-Einschuss Samstag und Q3-Zahlen Montag. Heute hängt der Kurs am breiten Markt vor dem US-Jobsbericht um 14:30 Berlin.",
       "whySources": [
         {
           "title": "@RocketLab: ESCAPADE Richtung Mars",
           "url": "https://x.com/RocketLab/status/2118544706066055248"
         },
         {
-          "title": "Investing.com: Futures vor Payrolls",
-          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-ai-rout-batters-wall-st-payrolls-data-in-focus-5006240"
+          "title": "FXStreet: Futures vor Payrolls",
+          "url": "https://www.fxstreet.com/news/dow-jones-futures-fall-following-steep-wall-street-sell-off-nfp-data-awaited-202611060720"
         },
         {
           "title": "Yahoo Finance: RKLB",
