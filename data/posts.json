@@ -1,51 +1,178 @@
 {
   "example": false,
-  "asOf": "2026-11-06T15:11:14+01:00",
+  "asOf": "2026-11-06T17:02:24+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.22,
-      "label": "Rebound nach Jobs, Starlink Indien positiv",
-      "summary": "Nach dem starken Jobsbericht (+165k) halten SPCX den US-Vormarkt-Rebound (~129,8 $ vs. Do-Schluss 123,62 $). Zusätzlich begrüßen indische Regierungsquellen Starlink ausdrücklich; Spektrum/Security stehen noch aus. Heute Abend Baron-Chat, nachts USSF-432.",
+      "score": 0.35,
+      "label": "Rebound + Starship-Catch-Bestätigung",
+      "summary": "SPCX erholt sich freitags im US-Handel (~+6 % vs. Do-Schluss 123,62 $). Musk bestätigt den Doppel-Fangversuch auf dem kommenden Starship-Flug; heute Abend Baron-Chat, nachts USSF-432. Midterm-/Regulierungsrisiko bleibt.",
       "sources": [
         {
-          "title": "Yahoo Finance: SPCX Chart",
+          "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "CNBC: Jobs +165k",
-          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+          "title": "Motley Fool: Why SpaceX popped Friday",
+          "url": "https://www.fool.com/investing/2026/11/06/why-spacex-stock-popped-on-friday/"
         },
         {
-          "title": "@elonmusk RT Starlink India",
-          "url": "https://x.com/elonmusk/status/2118686601379545217"
-        },
-        {
-          "title": "SpaceX: USSF-432",
-          "url": "https://www.spacex.com/launches/ussf432"
+          "title": "@elonmusk: dual catch",
+          "url": "https://x.com/elonmusk/status/2118732082843435305"
         }
       ]
     },
     "TSLA": {
-      "score": 0.1,
-      "label": "leichte Erholung, Fokus Baron-Abend",
-      "summary": "TSLA hält im US-Vormarkt die Gegenbewegung (~351 $ vs. Do 343,69 $) trotz starkem Jobsbericht und höherer Dez-Zinswette. Operativ Cybercab/Terafab-Narrative; nächster Impuls Baron-Chat 19:10 Berlin.",
+      "score": 0.2,
+      "label": "Erholung nach Midterm-Sell-off",
+      "summary": "TSLA holt im US-Handel auf (~+4–5 % vs. Do). Model-Y-Absatz-PR und Argentinien-Start später im Monat; Baron-Chat heute Abend kann Autonomie/Fusion-Themen setzen. Regulierungsängste nach Demokraten-Sieg bleiben der Gegenwind.",
       "sources": [
         {
-          "title": "Yahoo Finance: TSLA Chart",
+          "title": "Yahoo Finance: TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "CNBC: Jobs +165k / FedWatch ~77 %",
-          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+          "title": "Yahoo AlphaCheck: tech rebound, Tesla bounce",
+          "url": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html"
         },
         {
-          "title": "TeslaNorth: Baron Fireside",
-          "url": "https://teslanorth.com/2026/10/28/elon-baron-conference-2026/"
+          "title": "@Tesla: Argentina later this month",
+          "url": "https://x.com/Tesla/status/2118720752379899907"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-tesla-2118720752379899907",
+      "account": "@Tesla",
+      "displayName": "Tesla",
+      "postedAt": "2026-11-06T16:02:45+01:00",
+      "summaryDe": "Tesla: Markteintritt in Argentinien später im November (laut Tesla Latinoamérica ab 20.11.).",
+      "originalText": "Launching in Argentina later this month",
+      "url": "https://x.com/Tesla/status/2118720752379899907",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@Tesla: Launching in Argentina",
+          "url": "https://x.com/Tesla/status/2118720752379899907"
+        },
+        {
+          "title": "@Tesla_LatAm: Llegamos a Argentina el 20 de Noviembre",
+          "url": "https://x.com/Tesla_LatAm/status/2118674774440435905"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118732812161519852",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T16:50:41+01:00",
+      "summaryDe": "Musk: „Tesla Model Y is the best-selling car of any kind on Earth“ — teilt Bericht, wonach das Model Y in Australien 2026 YTD den Toyota RAV4 überholt (39.035 vs. 35.927).",
+      "originalText": "Tesla Model Y is the best-selling car of any kind on Earth",
+      "url": "https://x.com/elonmusk/status/2118732812161519852",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Model Y best-selling",
+          "url": "https://x.com/elonmusk/status/2118732812161519852"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118732296446673209",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T16:48:38+01:00",
+      "summaryDe": "Musk: „Ron Baron understands“ — reagiert auf Clip, in dem Ron Baron Rechenzentren im All und mehr US-Strom/Chips backed und Starts 2027/28 erwartet.",
+      "originalText": "Ron Baron understands",
+      "url": "https://x.com/elonmusk/status/2118732296446673209",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Ron Baron understands",
+          "url": "https://x.com/elonmusk/status/2118732296446673209"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2118719281038770389",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-06T15:56:55+01:00",
+      "summaryDe": "SpaceX veröffentlicht „Go For Orbit“: Rückblick auf Tests und Entwicklung vor dem ersten orbitalen Starship-Flug mit fortgeschrittenen Starlink-Satelliten.",
+      "originalText": "More than a dozen flight tests and years of development… all come down to this: the first orbital Starship launch carrying advanced Starlink satellites bound for space. Watch “Go For Orbit”…",
+      "url": "https://x.com/SpaceX/status/2118719281038770389",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX: Go For Orbit",
+          "url": "https://x.com/SpaceX/status/2118719281038770389"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118732082843435305",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T16:47:47+01:00",
+      "summaryDe": "Musk: SpaceX versucht auf dem kommenden Flug, Super-Heavy-Booster und Starship zu fangen. Bei Erfolg erstmals alle Teile einer Orbitalrakete intakt zurück — laut Musk der kritische Durchbruch für Multiplaneten-Leben. Zitat zu SpaceX „Go For Orbit“.",
+      "originalText": "SpaceX will attempt to catch both the Super Heavy booster and Starship on the upcoming flight. If both are successful, it will mark the first time that all parts of an orbital rocket return to Earth intact. This is the critical breakthrough needed to make life multiplanetary.",
+      "url": "https://x.com/elonmusk/status/2118732082843435305",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": true,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: dual catch upcoming flight",
+          "url": "https://x.com/elonmusk/status/2118732082843435305"
+        },
+        {
+          "title": "@SpaceX: Go For Orbit",
+          "url": "https://x.com/SpaceX/status/2118719281038770389"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118686601379545217",
       "account": "@elonmusk",

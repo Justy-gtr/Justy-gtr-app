@@ -5,25 +5,21 @@
     "date": "2026-11-06",
     "question": "Schließt SPCX am Freitag, 6. November, höher als am Donnerstag (110,16 €)?",
     "karlAnswer": "ja",
-    "karlReason": "Knapp „ja“, etwa 52 zu 48: Nach dem schwersten Chip-Tag seit 2020 kommt oft eine Gegenbewegung, und Texas will genehmigte Rechenzentren fertig bauen lassen. Risiko: der Arbeitsmarktbericht um 14:30 Uhr.",
+    "karlReason": "Klarer „ja“, etwa 70 zu 30: SPCX handelt freitags im US-Cash um ~131 $ (Do-Schluss 123,62 $; Frage-Referenz 110,16 €). Jobsbericht ist raus, Tech reboundet. Risiko bis 22:00 Berlin: scharfer Nachmittag-Ausverkauf oder Nachhandel — Outcome erst dann.",
     "outcome": null,
     "resolvesAt": "2026-11-06T22:00:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: SPCX historische Kurse",
+        "title": "Yahoo Finance: SPCX Chart/Historie",
         "url": "https://finance.yahoo.com/quote/SPCX/history/"
       },
       {
-        "title": "NBC News: Tech-Aktien fallen nach Midterms und KI-Sorgen (05.11.2026)",
-        "url": "https://www.nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650"
+        "title": "Motley Fool: SPCX rebound Friday",
+        "url": "https://www.fool.com/investing/2026/11/06/why-spacex-stock-popped-on-friday/"
       },
       {
-        "title": "Gavin Baker auf X: Hinojosa zu Rechenzentren in Texas",
-        "url": "https://x.com/GavinSBaker/status/2118420042283102604"
-      },
-      {
-        "title": "BLS: Termine Arbeitsmarktbericht",
-        "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
+        "title": "CNBC: Jobs +165k",
+        "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
       }
     ]
   },
