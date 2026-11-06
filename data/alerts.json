@@ -138,6 +138,72 @@
           "url": "https://finance.yahoo.com/quote/RKLB"
         }
       ]
+    },
+    {
+      "id": "SPCX-2026-11-06",
+      "symbol": "SPCX",
+      "name": "SpaceX",
+      "changePct": -14.08,
+      "priceEur": 110.37,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-06T04:39:46.685Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance SPCX",
+          "url": "https://finance.yahoo.com/quote/SPCX"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-2026-11-06",
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "changePct": -13.98,
+      "priceEur": 312.2,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-06T04:39:46.685Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance TL0.DE",
+          "url": "https://finance.yahoo.com/quote/TL0.DE"
+        },
+        {
+          "title": "Yahoo Finance TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA"
+        }
+      ]
+    },
+    {
+      "id": "RKLB-2026-11-06",
+      "symbol": "RKLB",
+      "name": "Rocket Lab",
+      "changePct": -15.04,
+      "priceEur": 41.8,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-06T04:39:46.685Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance 6RJ0.F",
+          "url": "https://finance.yahoo.com/quote/6RJ0.F"
+        },
+        {
+          "title": "Yahoo Finance RKLB",
+          "url": "https://finance.yahoo.com/quote/RKLB"
+        }
+      ]
     }
   ]
 }
