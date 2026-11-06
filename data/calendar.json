@@ -860,7 +860,7 @@
     },
     {
       "id": "evt-falcon9-ussf432",
-      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force (Fenster ab ~01:48 Berlin)",
+      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force (~01:48 Berlin)",
       "date": "2026-11-07",
       "time": "01:48",
       "timezone": "Europe/Berlin",
@@ -872,20 +872,20 @@
       ],
       "probabilityPct": 98,
       "impact": "niedrig",
-      "reasoning": "SpaceX bestätigt weiter: Vier-Stunden-Fenster ab 16:46 PT Vandenberg SLC-4E (in Berlin ~01:46–01:48 Uhr am 7.11.). Ersatztermin Samstag 7.11. ab 16:32 PT. Booster B1095 (8. Flug) landet auf Of Course I Still Love You. Next Spaceflight/Launch Library melden GO für ~00:48 UTC. Stand 18:15 Berlin kein Scrub auf der Mission-Seite — 98 % (vorher 97). Routine-Militärmission, Kurswirkung gering.",
+      "reasoning": "Next Spaceflight/RocketRune: GO für Samstag 7.11. ~00:48:42 UTC (01:48 Berlin) von Vandenberg SLC-4E; Booster B1095 (8. Flug), Landung Of Course I Still Love You. SpaceX-Mission-Seite nennt noch das Freitag-Fenster ab 16:46 PT mit Backup Samstag — Trackers haben auf den präzisen Samstag-Slot aktualisiert. Stand 20:00 Berlin kein Scrub gemeldet — 98 %. Routine-Militärmission, Kurswirkung gering.",
       "example": false,
       "sources": [
-        {
-          "title": "SpaceX: USSF-432 Mission",
-          "url": "https://www.spacex.com/launches/ussf432"
-        },
         {
           "title": "Next Spaceflight: USSF-432",
           "url": "https://nextspaceflight.com/launches/details/8444/"
         },
         {
-          "title": "Orbital Radar: USSF-432 countdown",
-          "url": "https://orbitalradar.com/launch/falcon-9-ussf-432"
+          "title": "SpaceX: USSF-432 Mission",
+          "url": "https://www.spacex.com/launches/ussf432"
+        },
+        {
+          "title": "RocketRune: USSF-432",
+          "url": "https://www.rocketrune.com/launches/ussf-432"
         }
       ]
     },
@@ -983,22 +983,22 @@
         "TSLA",
         "SPCX"
       ],
-      "probabilityPct": 98,
+      "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Baron Capital listet den virtuellen Fireside-Chat mit Elon Musk heute 13:10 ET (19:10 Berlin) fest auf der Agenda der 33. Annual Baron Investment Conference (Lincoln Center). Musk kommentierte zuvor auf X „Ron Baron understands“ zu Barons These über Rechenzentren im All. Zugang vor allem für Baron-Kunden; öffentlicher YouTube-Stream nicht angekündigt. 98 %: Termin und Agenda fest, Start in unter einer Stunde; Restausfallrisiko gering. Kurswirkung eher über nachlaufende Zitate.",
+      "reasoning": "Baron Capital hat den virtuellen Fireside-Chat mit Elon Musk am 6.11. ab 13:10 ET (19:10 Berlin) per X-Broadcast gestartet (@BaronCapital). Clips aus dem Gespräch kursieren (u. a. Musk im Airstream vor Ort am GW-Kraftwerk, Hands-on auf dem Gelände). 100 %: Termin hat stattgefunden. Öffentlicher Voll-Transcript noch ausstehend; Kurswirkung über nachlaufende Zitate.",
       "example": false,
       "sources": [
         {
-          "title": "Baron Capital: Conference 2026 agenda",
+          "title": "@BaronCapital: Fireside Chat Stream",
+          "url": "https://x.com/BaronCapital/status/2118765607122260177"
+        },
+        {
+          "title": "Baron Conference 2026 Agenda",
           "url": "https://www.baroncapitalgroup.com/conference-2026"
         },
         {
-          "title": "TeslaNorth: Musk×Baron 6.11. 13:10 ET",
-          "url": "https://teslanorth.com/2026/10/28/elon-baron-conference-2026/"
-        },
-        {
-          "title": "@elonmusk: Ron Baron understands",
-          "url": "https://x.com/elonmusk/status/2118732296446673209"
+          "title": "Clip: Musk Airstream / Kraftwerk",
+          "url": "https://x.com/KanekoaTheGreat/status/2118778153711935662"
         }
       ]
     },

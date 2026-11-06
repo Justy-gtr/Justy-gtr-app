@@ -5,21 +5,21 @@
     "date": "2026-11-06",
     "question": "Schließt SPCX am Freitag, 6. November, höher als am Donnerstag (110,16 €)?",
     "karlAnswer": "ja",
-    "karlReason": "Klarer „ja“, etwa 75 zu 25: SPCX handelt freitags im US-Cash um ~132 $ (~118–119 € bei EURUSD ~1,115; Do-Schluss 123,62 $ / Frage-Referenz 110,16 €). Jobsbericht, Tech-Rebound und FAA-News stützen. Risiko bis 22:00 Berlin: scharfer Nachmittag-Ausverkauf oder Nachhandel — Outcome erst dann.",
+    "karlReason": "Weiter „ja“, etwa 80 zu 20: SPCX handelt freitags im US-Cash um ~133–134 $ (~+8 % vs. Do 123,62 $; Frage-Referenz 110,16 €). Jobs, Tech-Rebound, FAA-News, Musk-Umsatz-Claim und Baron-Chat stützen. Outcome erst nach 22:00 Berlin / US-Schluss.",
     "outcome": null,
     "resolvesAt": "2026-11-06T22:00:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: SPCX Chart/Historie",
-        "url": "https://finance.yahoo.com/quote/SPCX/history/"
+        "title": "Yahoo Finance: SPCX",
+        "url": "https://finance.yahoo.com/quote/SPCX/"
       },
       {
         "title": "Investing.com: Why SPCX rallying Friday",
         "url": "https://www.investing.com/news/stock-market-news/why-is-space-exploration-technologies-stock-rallying-today-93CH-5008756"
       },
       {
-        "title": "CNBC: Jobs +165k",
-        "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+        "title": "@elonmusk: revenue vs NASA budget",
+        "url": "https://x.com/elonmusk/status/2118761981037723848"
       }
     ]
   },

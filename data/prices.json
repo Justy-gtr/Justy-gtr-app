@@ -4706,19 +4706,23 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Freitag-Rebound hält an: SPCX ~+7 % im US-Handel (ca. 132 $ vs. Do 123,62 $). Treiber sind Tech-/KI-Dip-Kauf nach Midterm-Ausverkauf, starker Jobsbericht, FAA-Vorschläge zur Lizenz-Straffung und Musks Doppel-Fang-Zusage — politisches Aufsichtsrisiko bleibt.",
+      "why": "Freitag-Rebound hält (~+8 % US auf ~133–134 $ vs. Do 123,62 $): Tech-/KI-Dip-Kauf, Jobsbericht, FAA-Lizenz-Vorschläge, Musks Doppel-Fang-Zusage; abends zusätzlich Umsatz-Claim vs. NASA-Budget und Baron-Fireside. Midterm-Aufsichtsrisiko bleibt.",
       "whySources": [
         {
-          "title": "Investing.com: Why SPCX rallying Friday",
-          "url": "https://www.investing.com/news/stock-market-news/why-is-space-exploration-technologies-stock-rallying-today-93CH-5008756"
+          "title": "Yahoo Finance: SPCX (~+8 %)",
+          "url": "https://finance.yahoo.com/quote/SPCX/"
+        },
+        {
+          "title": "@elonmusk: revenue vs NASA budget",
+          "url": "https://x.com/elonmusk/status/2118761981037723848"
+        },
+        {
+          "title": "@BaronCapital Fireside Chat",
+          "url": "https://x.com/BaronCapital/status/2118765607122260177"
         },
         {
           "title": "FAA: commercial space streamlining 05.11.",
           "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-supercharges-american-dominance-commercial"
-        },
-        {
-          "title": "Yahoo Finance: SPCX",
-          "url": "https://finance.yahoo.com/quote/SPCX/"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -9499,15 +9503,19 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Gegenbewegung nach dem Midterm-Crash: TSLA ~+4–5 % im US-Handel (ca. 359 $ vs. Do ~344 $), mitgezogen vom Chip-/Nasdaq-Rebound. Musk betont null Tesla-Staatsaufträge; Model-Y- und FSD-PR stützen — Regulierungs- und Texas-Risiken bleiben.",
+      "why": "Teil-Erholung nach Midterm-Crash (~+4–5 % US): laut Investing.com vor allem Cybercab-Kapazität statt Cybertruck (Texas Mitte 2027) plus Nasdaq-Rebound; Baron-Chat und Null-Staatsaufträge stützen — Regulierungs- und Texas-Risiken bleiben.",
       "whySources": [
         {
-          "title": "Yahoo AlphaCheck: semiconductors lead, Tesla jumps",
-          "url": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html"
+          "title": "Investing.com: Why Tesla rallying (Cybercab)",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-tesla-stock-rallying-today-93CH-5008775"
         },
         {
-          "title": "@elonmusk: Tesla has no government contracts",
-          "url": "https://x.com/elonmusk/status/2118737725964837353"
+          "title": "@elonmusk: Cybertruck wind-down / Cybercab",
+          "url": "https://x.com/elonmusk/status/2118591788701421573"
+        },
+        {
+          "title": "@BaronCapital Fireside Chat",
+          "url": "https://x.com/BaronCapital/status/2118765607122260177"
         },
         {
           "title": "Yahoo Finance: TSLA",
@@ -12646,15 +12654,15 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Rocket Lab erholt sich stark mit dem Space-/Defense-Rebound (US ~+11 % vs. Do) ohne neue Fehlermeldung; Q3-Zahlen Montag und ESCAPADE-TMI (ab 7.11.) im Fokus, Neutron-Verzögerung weiter Nebenfaktor.",
+      "why": "Rocket Lab erholt sich mit dem Space-/Defense-Rebound ohne neue Fehlermeldung; ESCAPADE-TMI ab 7.11. und Electron-100. („The Mountain God Rises“) NET 14.11.; Q3-Zahlen Montag im Fokus.",
       "whySources": [
         {
           "title": "Benzinga: RKLB pulls out of nosedive Friday",
           "url": "https://www.benzinga.com/trading-ideas/movers/26/11/62973089/rocket-lab-stock-pulls-out-of-a-nosedive-friday-whats-going-on"
         },
         {
-          "title": "24/7 Wall St.: space/tech rebound",
-          "url": "https://247wallst.com/investing/2026/11/06/spacex-rises-4-as-tech-stocks-rebound-from-post-election-rout-ast-spacemobile-sinks-8-rocket-lab-gains-2/"
+          "title": "@RocketLab: Electron 100th NET 14.11.",
+          "url": "https://x.com/RocketLab/status/2118521208639746494"
         },
         {
           "title": "Yahoo Finance: RKLB",

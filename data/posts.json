@@ -1,47 +1,132 @@
 {
   "example": false,
-  "asOf": "2026-11-06T18:27:34+01:00",
+  "asOf": "2026-11-06T20:10:17+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.4,
-      "label": "Starker Freitag-Rebound",
-      "summary": "SPCX handelt freitags im US-Cash um ~132 $ (~+7 % vs. Do 123,62 $). Treiber: Tech-/KI-Dip-Kauf, Jobsbericht, FAA-Lizenz-Vorschläge und Musks Doppel-Fang-Zusage. Midterm-Regulierungsrisiko und Lock-up 8.12. bleiben.",
+      "score": 0.45,
+      "label": "zuversichtlich (Freitag)",
+      "summary": "SPCX im US-Handel weiter stark (~133–134 $, ca. +8 % vs. Do 123,62 $). Zusätzlich: Musk-Claim Q4-Umsatz > NASA-Jahresbudget und Baron-Fireside live. Midterm-Aufsicht und Lock-up 8.12. bleiben Gegenwind.",
       "sources": [
         {
           "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Investing.com: Why SPCX rallying Friday",
-          "url": "https://www.investing.com/news/stock-market-news/why-is-space-exploration-technologies-stock-rallying-today-93CH-5008756"
+          "title": "@elonmusk: revenue vs NASA budget",
+          "url": "https://x.com/elonmusk/status/2118761981037723848"
         },
         {
-          "title": "FAA: commercial space streamlining 05.11.",
-          "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-supercharges-american-dominance-commercial"
+          "title": "@BaronCapital Fireside Chat",
+          "url": "https://x.com/BaronCapital/status/2118765607122260177"
         }
       ]
     },
     "TSLA": {
       "score": 0.25,
-      "label": "Erholung, Politik-Risiko bleibt",
-      "summary": "TSLA holt im US-Handel auf (~+4,5 % vs. Do ~344 $). Model-Y-Absatz-PR, FSD-Senioren-Story und Musks Hinweis auf null Tesla-Staatsaufträge; Baron-Chat 19:10. Demokraten-Mehrheit und Texas-Rechenzentrums-Risiko bleiben Gegenwind.",
+      "label": "leichte Erholung",
+      "summary": "TSLA erholt sich im US-Handel (~+4–5 %) nach Midterm-Crash; Treiber laut Investing.com vor allem Cybercab-Kapazität statt Cybertruck plus Nasdaq-Rebound. Baron-Chat und Null-Staatsaufträge-Narrative stützen — Regulierungsrisiko bleibt.",
       "sources": [
+        {
+          "title": "Investing.com: Why Tesla rallying",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-tesla-stock-rallying-today-93CH-5008775"
+        },
         {
           "title": "Yahoo Finance: TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "Yahoo AlphaCheck: tech rebound",
-          "url": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html"
+          "title": "@BaronCapital Fireside Chat",
+          "url": "https://x.com/BaronCapital/status/2118765607122260177"
+        }
+      ]
+    },
+    "RKLB": {
+      "score": 0.35,
+      "label": "Space-Rebound",
+      "summary": "RKLB partizipiert am Freitag-Space-Rebound; ESCAPADE-TMI ab 7.11. und Electron-100. Start 14.11. im Fokus. Q3-Zahlen Montag.",
+      "sources": [
+        {
+          "title": "Yahoo Finance: RKLB",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "@elonmusk: no Tesla gov contracts",
-          "url": "https://x.com/elonmusk/status/2118737725964837353"
+          "title": "@RocketLab: Electron 100th",
+          "url": "https://x.com/RocketLab/status/2118521208639746494"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-baron-2118765607122260177",
+      "account": "@BaronCapital",
+      "displayName": "Baron Capital",
+      "postedAt": "2026-11-06T19:01:00+01:00",
+      "summaryDe": "WICHTIG: Baron Capital streamt den Fireside-Chat Ron Baron × Elon Musk (33. Annual Baron Investment Conference). Clips: Musk lebt vor Ort im Airstream neben dem GW-Kraftwerk, das SpaceX in ~1 Jahr gebaut habe; Hands-on auf dem Gelände. Investor-Event, Zugang vor allem für Baron-Kunden.",
+      "originalText": "Fireside Chat: Ron Baron and Elon Musk",
+      "url": "https://x.com/BaronCapital/status/2118765607122260177",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": true,
+      "example": false,
+      "sources": [
+        {
+          "title": "@BaronCapital: Fireside Chat Stream",
+          "url": "https://x.com/BaronCapital/status/2118765607122260177"
+        },
+        {
+          "title": "Baron Conference 2026 Agenda",
+          "url": "https://www.baroncapitalgroup.com/conference-2026"
+        },
+        {
+          "title": "Clip: Musk Airstream / GW-Kraftwerk (Baron-Chat)",
+          "url": "https://x.com/KanekoaTheGreat/status/2118778153711935662"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118761981037723848",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T18:46:35+01:00",
+      "summaryDe": "WICHTIG: Musk behauptet, der SpaceX-Umsatz allein in diesem Quartal werde deutlich über dem gesamten NASA-Jahresbudget liegen. Q3 lag bei 14,6 Mrd. $; NASA FY2026 ~24,4 Mrd. $ — die Aussage zielt auf Q4 und ist noch unbestätigt. Kontext: Abwehr der These, SpaceX sei NASA-subventioniert.",
+      "originalText": "SpaceX revenue this quarter alone will be substantially higher than NASA’s entire annual budget!",
+      "url": "https://x.com/elonmusk/status/2118761981037723848",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": true,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118761981037723848"
+        },
+        {
+          "title": "SpaceX Q3 2026 SEC Exhibit 99.1 (14,6 Mrd. $ Umsatz)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        },
+        {
+          "title": "NASA FY2026 Spending Plan (~24,4 Mrd. $)",
+          "url": "https://www.nasa.gov/wp-content/uploads/2026/07/nasa-fy2026-spending-plan-for-appropriations-provided-by-pl11974.pdf"
+        },
+        {
+          "title": "Basenor: Einordnung Claim vs. NASA-Budget",
+          "url": "https://www.basenor.com/blogs/news/spacex-one-quarter-revenue-vs-nasas-entire-annual-budget"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118739484271579249",
       "account": "@elonmusk",
