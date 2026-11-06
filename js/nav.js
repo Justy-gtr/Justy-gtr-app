@@ -155,7 +155,10 @@ export function initNav(pager, { onPage } = {}) {
     const width = pager.clientWidth || 1;
     const index = Math.min(PAGES.length - 1, Math.max(0, Math.round(pager.scrollLeft / width)));
     const id = PAGES[index];
-    if (id !== current) setActive(id);
+    if (id !== current) {
+      setActive(id);
+      onPage?.(id);
+    }
   }, { passive: true });
 
   document.addEventListener("keydown", (event) => {

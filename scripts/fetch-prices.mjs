@@ -11,7 +11,8 @@ import {
   resolveOvernight,
   roundTo,
   sessionEnded,
-  stitchIntraday,
+  chooseIntraday,
+  keepRecentSession,
   tagSessions,
   updateAlerts,
   usClockSession,
@@ -51,8 +52,10 @@ const TICKERS = [
   }
 ];
 
+const INTRADAY_INTERVAL = "1m";
+const INTRADAY_RANGE = "1d";
+
 const RANGES = [
-  ["intraday", "5m", "1d"],
   ["1M", "1d", "1mo"],
   ["6M", "1d", "6mo"],
   ["1Y", "1d", "1y"],
@@ -178,6 +181,13 @@ function convertPoints(points, fx, spot) {
   });
 }
 
+function sampleSpark(points, count = 32) {
+  const list = points || [];
+  if (list.length <= count) return list.map((point) => point.eur);
+  const last = count - 1;
+  return Array.from({ length: count }, (_, index) => list[Math.round((index * (list.length - 1)) / last)].eur);
+}
+
 function directPoints(points) {
   return points.map((point) => {
     const row = { t: point.t, eur: roundTo(point.close, 2) };
@@ -230,18 +240,18 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
   let euIntra = null;
   if (useEur && eurSymbol) {
     try {
-      euIntra = await fetchChart(eurSymbol, "5m", "1d");
+      euIntra = await fetchChart(eurSymbol, INTRADAY_INTERVAL, INTRADAY_RANGE);
     } catch (error) {
       console.log(`::warning::Intraday ${eurSymbol}: ${error.message}`);
     }
   }
   let usdIntra = null;
   try {
-    usdIntra = await fetchChart(spec.usdSymbol, "5m", "1d", { includePrePost: true });
+    usdIntra = await fetchChart(spec.usdSymbol, INTRADAY_INTERVAL, INTRADAY_RANGE, { includePrePost: true });
   } catch (error) {
     console.log(`::warning::Intraday ${spec.usdSymbol}: ${error.message}`);
     try {
-      usdIntra = await fetchChart(spec.usdSymbol, "5m", "1d");
+      usdIntra = await fetchChart(spec.usdSymbol, INTRADAY_INTERVAL, INTRADAY_RANGE);
     } catch (fallbackError) {
       console.log(`::warning::Intraday ${spec.usdSymbol}: ${fallbackError.message}`);
     }
@@ -253,13 +263,9 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
   const euIntraday = euIntra
     ? directPoints(euIntra.points).map((point) => ({ ...point, session: "regular" }))
     : [];
-  if (euIntraday.length >= 20) {
-    history.intraday = stitchIntraday(euIntraday, usdIntraday);
-    intradayMethod = history.intraday.length > euIntraday.length ? "direct_eur_plus_us" : "direct_eur";
-  } else if (usdIntraday.length) {
-    history.intraday = usdIntraday;
-    intradayMethod = "usd_div_eurusd";
-  }
+  const chosen = chooseIntraday(euIntraday, usdIntraday, method);
+  history.intraday = keepRecentSession(chosen.points);
+  intradayMethod = chosen.method;
 
   const nowSec = Math.floor(now.getTime() / 1000);
   // fulldayPrice is not the last print: it keeps moving after the last candle. Unused.
@@ -279,7 +285,6 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
   const overnight = resolveOvernight(toEurQuote(computedUsd, fx.rate), previous, { regularLive });
 
   for (const [key, interval, range] of RANGES) {
-    if (key === "intraday") continue;
     if (useEur) {
       const chart = await fetchChart(eurSymbol, interval, range);
       history[key] = directPoints(chart.points);
@@ -294,7 +299,8 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
     last.eur = roundTo(spotEur, 2);
   }
 
-  const sparkline = (history.intraday.length ? history.intraday : history["1M"]).slice(-32).map((point) => point.eur);
+  const sparkSource = history.intraday.length ? history.intraday : history["1M"];
+  const sparkline = sampleSpark(sparkSource);
   const highs = [spotEur, ...history["5Y"].map((point) => point.eur), ...history["1Y"].map((point) => point.eur)]
     .filter((value) => value != null);
   const sources = [quoteLink(useEur ? eurSymbol : spec.usdSymbol)];

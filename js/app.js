@@ -1,7 +1,7 @@
 import { drawCharts } from "./chart.js";
 import { loadData } from "./data.js";
 import { initEggs } from "./eggs.js";
-import { appBase, isInAppUrl, loadStore, saveStore } from "./logic.js";
+import { appBase, isInAppUrl, loadStore, marketWatch, saveStore } from "./logic.js";
 import { playLiftoff, tickCountdown } from "./motion.js";
 import { initNav } from "./nav.js";
 import { detailContent, errorDetail, glossaryList, renderShell } from "./views.js";
@@ -11,8 +11,9 @@ const ui = {
   calKind: "company",
   postFilter: "alle",
   chartSymbol: "SPCX",
-  chartRange: "1M",
+  chartRange: "1 Min",
   langfrist: false,
+  live: false,
   scenarioId: "starship_fail",
   revealed: {},
   glossaryQuery: "",
@@ -23,10 +24,80 @@ let data = null;
 let store = loadStore();
 store.answers = store.answers || {};
 
+const LIVE_MS = 60_000;
+let lastLiveAttempt = 0;
+let liveInflight = false;
+
+function paintLiveFlag() {
+  document.querySelectorAll("[data-live-flag]").forEach((node) => {
+    node.hidden = !ui.live;
+  });
+}
+
+function priceStamp(prices) {
+  return (prices?.tickers || []).map((ticker) => {
+    const last = ticker.history?.intraday?.at?.(-1);
+    return [
+      ticker.symbol,
+      ticker.priceEur,
+      ticker.changePct,
+      ticker.dayHighEur,
+      ticker.dayLowEur,
+      ticker.overnightPhase,
+      ticker.overnightEur,
+      ticker.overnightHighEur,
+      ticker.overnightLowEur,
+      ticker.history?.intraday?.length || 0,
+      last?.t || "",
+      last?.eur ?? ""
+    ].join(":");
+  }).join("|");
+}
+
+async function pullPrices() {
+  if (!data || liveInflight) return;
+  if (document.visibilityState === "hidden") return;
+  if (ui.page !== "charts" && ui.page !== "heute") return;
+  if (!marketWatch()) {
+    if (ui.live) {
+      ui.live = false;
+      paintLiveFlag();
+    }
+    return;
+  }
+  if (Date.now() - lastLiveAttempt < LIVE_MS - 1000) return;
+  lastLiveAttempt = Date.now();
+  liveInflight = true;
+  try {
+    const response = await fetch(`${appBase()}/data/prices.json?t=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error(String(response.status));
+    if (response.headers.get("X-JGTR-Cache") === "hit") {
+      ui.live = false;
+      paintLiveFlag();
+      return;
+    }
+    const next = await response.json();
+    if (!next || !Array.isArray(next.tickers)) throw new Error("leer");
+    const changed = priceStamp(next) !== priceStamp(data.prices);
+    data.prices = next;
+    if (data.meta && next.asOf) data.meta.pricesUpdated = next.asOf;
+    const then = Date.parse(next.asOf || "");
+    ui.live = next.example !== true && Number.isFinite(then) && Date.now() - then < 15 * 60 * 1000;
+    if (changed) render();
+    else paintLiveFlag();
+  } catch {
+    ui.live = false;
+    paintLiveFlag();
+  } finally {
+    liveInflight = false;
+  }
+}
+
 const pager = document.getElementById("pager");
 const nav = initNav(pager, {
   onPage(id) {
     ui.page = id;
+    pullPrices();
   }
 });
 const eggs = initEggs(toast);
@@ -171,7 +242,7 @@ document.body.addEventListener("click", (event) => {
   }
   if (action === "langfrist") {
     ui.langfrist = !ui.langfrist;
-    if (ui.langfrist && (ui.chartRange === "Tag" || ui.chartRange === "1M")) ui.chartRange = "1J";
+    if (ui.langfrist && (ui.chartRange === "Tag" || ui.chartRange === "1 Min" || ui.chartRange === "5 Min" || ui.chartRange === "1M")) ui.chartRange = "1J";
     render();
     return;
   }
@@ -265,7 +336,10 @@ async function boot() {
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "hidden") hiddenAt.t = Date.now();
     if (document.visibilityState === "visible" && hiddenAt.t && Date.now() - hiddenAt.t > 120000) refresh(false);
+    if (document.visibilityState === "visible") pullPrices();
   });
+  pullPrices();
+  window.setInterval(pullPrices, 15000);
   if ("serviceWorker" in navigator) {
     let reloaded = false;
     if (navigator.serviceWorker.controller) {
