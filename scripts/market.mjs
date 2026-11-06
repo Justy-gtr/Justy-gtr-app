@@ -113,3 +113,194 @@ export function meaningful(value) {
     return item;
   });
 }
+
+const WEEKDAYS = { Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4, Sat: 5, Sun: 6 };
+
+function zonedParts(date, timeZone) {
+  const fmt = new Intl.DateTimeFormat("en-GB", {
+    timeZone,
+    weekday: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  });
+  const parts = Object.fromEntries(fmt.formatToParts(date).map((part) => [part.type, part.value]));
+  return {
+    year: parts.year,
+    month: parts.month,
+    day: parts.day,
+    date: `${parts.year}-${parts.month}-${parts.day}`,
+    hour: Number(parts.hour),
+    minute: Number(parts.minute),
+    weekday: WEEKDAYS[parts.weekday]
+  };
+}
+
+export function nyParts(date = new Date()) {
+  return zonedParts(date, "America/New_York");
+}
+
+/** US cash session by the New York clock. Half-open: 04:00 pre, 09:30 regular, 16:00 post, 20:00 closed. */
+export function usClockSession(epochMs) {
+  const parts = nyParts(new Date(epochMs));
+  if (parts.weekday == null || parts.weekday > 4) return null;
+  const minutes = parts.hour * 60 + parts.minute;
+  if (minutes >= 4 * 60 && minutes < 9 * 60 + 30) return "pre";
+  if (minutes >= 9 * 60 + 30 && minutes < 16 * 60) return "regular";
+  if (minutes >= 16 * 60 && minutes < 20 * 60) return "post";
+  return null;
+}
+
+/**
+ * True while US pre-market, regular, or after-hours can still print,
+ * plus a short buffer so a late cron still catches the last after-hours trade.
+ */
+export function usSessionActive(date = new Date(), bufferMin = 30) {
+  const parts = nyParts(date);
+  if (parts.weekday == null || parts.weekday > 4) return false;
+  const minutes = parts.hour * 60 + parts.minute;
+  return minutes >= 4 * 60 && minutes <= 20 * 60 + bufferMin;
+}
+
+export function normalizePeriods(meta) {
+  const buckets = { pre: [], regular: [], post: [] };
+  const push = (key, period) => {
+    if (!period || period.start == null || period.end == null) return;
+    const start = Number(period.start);
+    const end = Number(period.end);
+    if (!Number.isFinite(start) || !Number.isFinite(end) || end <= start) return;
+    const list = buckets[key];
+    if (list.some((item) => item.start === start && item.end === end)) return;
+    list.push({ start, end });
+  };
+  const trading = meta?.tradingPeriods;
+  if (Array.isArray(trading)) {
+    for (const day of trading) {
+      const list = Array.isArray(day) ? day : [day];
+      for (const period of list) push("regular", period);
+    }
+  } else if (trading && typeof trading === "object") {
+    for (const key of ["pre", "regular", "post"]) {
+      for (const day of trading[key] || []) {
+        const list = Array.isArray(day) ? day : [day];
+        for (const period of list) push(key, period);
+      }
+    }
+  }
+  const current = meta?.currentTradingPeriod;
+  if (current && typeof current === "object") {
+    for (const key of ["pre", "regular", "post"]) push(key, current[key]);
+  }
+  return buckets;
+}
+
+export function sessionFor(epochSec, periods, { clock = false } = {}) {
+  if (periods) {
+    for (const key of ["pre", "regular", "post"]) {
+      for (const period of periods[key] || []) {
+        if (period && epochSec >= period.start && epochSec < period.end) return key;
+      }
+    }
+  }
+  if (clock) return usClockSession(epochSec * 1000);
+  return null;
+}
+
+export function tagSessions(points, periods, options) {
+  return (points || []).map((point) => {
+    const epoch = Math.floor(Date.parse(point?.t) / 1000);
+    const session = Number.isFinite(epoch) ? sessionFor(epoch, periods, options) : null;
+    return session ? { ...point, session } : { ...point };
+  });
+}
+
+function rangeOf(rows) {
+  const highs = [];
+  const lows = [];
+  for (const row of rows) {
+    const high = row.high ?? row.close;
+    const low = row.low ?? row.close;
+    if (high != null && !Number.isNaN(Number(high))) highs.push(Number(high));
+    if (low != null && !Number.isNaN(Number(low))) lows.push(Number(low));
+  }
+  const last = rows[rows.length - 1];
+  return {
+    price: last.close ?? null,
+    high: highs.length ? Math.max(...highs) : null,
+    low: lows.length ? Math.min(...lows) : null,
+    asOf: last.t
+  };
+}
+
+/**
+ * Overnight last from real pre/post prints. No official overnight high/low
+ * exists on this source, so the range is the min/max of those candles.
+ * During the regular US session this returns null: the regular price stands alone.
+ */
+export function extendedQuote(points, periods, nowMs, { clock = true } = {}) {
+  const nowSec = Math.floor(nowMs / 1000);
+  const tagged = tagSessions(points, periods, { clock }).filter((point) => point.session && point.close != null);
+  const groups = {
+    pre: tagged.filter((point) => point.session === "pre"),
+    post: tagged.filter((point) => point.session === "post"),
+    regular: tagged.filter((point) => point.session === "regular")
+  };
+  const nowPhase = sessionFor(nowSec, periods, { clock });
+  if (nowPhase === "pre") {
+    return groups.pre.length ? { phase: "vorboerse", ...rangeOf(groups.pre) } : null;
+  }
+  if (nowPhase === "post") {
+    return groups.post.length ? { phase: "nachhandel", ...rangeOf(groups.post) } : null;
+  }
+  if (nowPhase === "regular") return null;
+  if (groups.post.length) return { phase: "nachhandel", ...rangeOf(groups.post) };
+  if (groups.pre.length && !groups.regular.length) return { phase: "vorboerse", ...rangeOf(groups.pre) };
+  return null;
+}
+
+export function emptyOvernight() {
+  return { phase: null, eur: null, high: null, low: null, asOf: null };
+}
+
+/** Keep the last overnight print when a later fetch has no new extended candles yet. */
+export function resolveOvernight(computed, previous, { regularLive = false } = {}) {
+  if (computed && computed.phase && computed.eur != null) {
+    return {
+      phase: computed.phase,
+      eur: computed.eur,
+      high: computed.high ?? null,
+      low: computed.low ?? null,
+      asOf: computed.asOf ?? null
+    };
+  }
+  if (!regularLive && previous?.overnightEur != null && previous.overnightPhase) {
+    return {
+      phase: previous.overnightPhase,
+      eur: previous.overnightEur,
+      high: previous.overnightHighEur ?? null,
+      low: previous.overnightLowEur ?? null,
+      asOf: previous.overnightAsOf ?? null
+    };
+  }
+  return emptyOvernight();
+}
+
+export function stitchIntraday(primary, extra) {
+  const base = primary || [];
+  if (!extra?.length) return base;
+  if (!base.length) return extra;
+  const last = Date.parse(base[base.length - 1].t);
+  if (!Number.isFinite(last)) return base.concat(extra);
+  return base.concat(extra.filter((point) => Date.parse(point.t) > last));
+}
+
+/** True once every regular window that has started is over. */
+export function sessionEnded(periods, nowSec) {
+  const regular = (periods?.regular || []).filter((period) => period && period.end > period.start);
+  const started = regular.filter((period) => nowSec >= period.start);
+  if (!started.length) return false;
+  return started.every((period) => nowSec >= period.end);
+}

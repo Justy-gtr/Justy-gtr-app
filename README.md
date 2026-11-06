@@ -52,6 +52,7 @@ Der Workflow **Kurse** läuft über GitHub Actions, ohne API-Schlüssel.
 Zeiten in Europe/Berlin, auch über die Sommerzeit hinweg:
 
 - montags bis freitags von 05:00 bis 22:15, auch wenn der Cron später startet
+- zusätzlich, solange in New York Vorbörse, Handel oder Nachhandel läuft (04:00–20:00 Uhr New York, plus 30 Minuten), auch nach 22:15 Berlin und in den Freitagabend hinein
 - samstags und sonntags nur 05:00, 06:30, 08:30, 09:30, 11:30, 13:00, 14:00, 15:00, 16:00, 18:00, 20:00, 22:00, mit 45 Minuten Spielraum danach
 
 GitHub plant nur in UTC. Der Laufplan deckt deshalb MEZ und MESZ ab, und `scripts/schedule.mjs` lässt den Abruf nur im passenden Berliner Fenster zu. Von Hand starten geht über „Run workflow“ und ignoriert das Fenster.
@@ -62,7 +63,7 @@ Quellen, kostenlos über die Chart-Schnittstelle von Yahoo Finance:
 - **RKLB:** Frankfurt `6RJ0.F` in Euro. Ein Xetra-Listing war nicht zuverlässig zu finden. Ist die Intraday-Reihe dort zu dünn, kommt der Tagesverlauf von der Nasdaq und wird umgerechnet.
 - **SPCX:** kein brauchbares Euro-Listing. Nasdaq-Kurs in US-Dollar, geteilt durch EURUSD (`EURUSD=X`, US-Dollar je ein Euro).
 
-Jedes Papier merkt sich in `eurMethod`, ob der Euro-Kurs direkt von einem deutschen Platz kommt oder umgerechnet ist. Bewegt sich der Euro-Kurs am Tag um mindestens 2 Prozent, schreibt der Workflow einen Eintrag in `data/alerts.json` mit Zeitstempel und `notified: false`. Dasselbe Papier am selben Berliner Tag wird nicht doppelt angelegt; `notified` bleibt, wie es ist. Gibt es nichts Neues, gibt es auch keinen Commit. Schlägt der Abruf fehl, bleiben die letzten Dateien stehen und der Lauf endet mit einer Warnung statt die Daten zu leeren.
+Jedes Papier merkt sich in `eurMethod`, ob der Euro-Kurs direkt von einem deutschen Platz kommt oder umgerechnet ist. Nach Xetra- oder Frankfurt-Schluss hängt der Tagesverlauf die Nasdaq an, inklusive Vorbörse und Nachbörse. Der reguläre Schluss bleibt der große Kurs. Daneben stehen Hoch und Tief, und wenn es Drucke gibt, ein zweiter Kurs: Vorbörse, US-Handel oder Nachhandel. Die Nasdaq-Notiz wird mit demselben EURUSD-Kurs in Euro gerechnet. Yahoo liefert dafür keinen eigenen Overnight-Schluss und kein amtliches Hoch/Tief; genommen wird der letzte Kerzenschluss und die Spanne dieser Kerzen. Bewegt sich der Euro-Kurs am Tag um mindestens 2 Prozent, schreibt der Workflow einen Eintrag in `data/alerts.json` mit Zeitstempel und `notified: false`. Dasselbe Papier am selben Berliner Tag wird nicht doppelt angelegt; `notified` bleibt, wie es ist. Gibt es nichts Neues, gibt es auch keinen Commit. Schlägt der Abruf fehl, bleiben die letzten Dateien stehen und der Lauf endet mit einer Warnung statt die Daten zu leeren.
 
 ## Lokal ansehen
 

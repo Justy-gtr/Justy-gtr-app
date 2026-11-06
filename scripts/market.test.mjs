@@ -1,7 +1,19 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { berlinParts, shouldRun } from "./schedule.mjs";
-import { fxFor, mergeTicker, meaningful, updateAlerts, usdToEur } from "./market.mjs";
+import {
+  extendedQuote,
+  fxFor,
+  mergeTicker,
+  meaningful,
+  resolveOvernight,
+  sessionEnded,
+  stitchIntraday,
+  updateAlerts,
+  usClockSession,
+  usSessionActive,
+  usdToEur
+} from "./market.mjs";
 import { bigDrop, buildFeed, buildMarketTimeline, compactStances, formatEventClock, formatFeedTime, headlineEvent, isInAppUrl, maxPoints, opinionWord, scoreboard, seriesFor, trackSummary, verdictForStances, zonedWallTime } from "../js/logic.js";
 import fs from "node:fs";
 
@@ -113,6 +125,96 @@ test("Berlin-Fenster: Werktag durchgehend, Wochenende mit Toleranz, Sommer- und 
   assert.equal(summerSession.hour, 15);
   assert.equal(summerSession.minute, 30);
   assert.equal(shouldRun(summerSession), true);
+
+  assert.equal(shouldRun({ weekday: 3, hour: 22, minute: 16 }), false);
+  assert.equal(shouldRun({ weekday: 3, hour: 22, minute: 16 }, { usOpen: true }), true);
+  assert.equal(shouldRun({ weekday: 5, hour: 1, minute: 10 }, { usOpen: true }), true);
+  assert.equal(shouldRun({ weekday: 6, hour: 3, minute: 0 }), false);
+});
+
+test("US-Fenster: Vorbörse bis Nachhandel, nicht die leere Nacht", () => {
+  assert.equal(usSessionActive(new Date("2026-11-06T00:30:00Z")), true);
+  assert.equal(usSessionActive(new Date("2026-11-06T04:23:00Z")), false);
+  assert.equal(usSessionActive(new Date("2026-11-06T10:00:00Z")), true);
+  assert.equal(usSessionActive(new Date("2026-11-07T01:30:00Z")), true);
+  assert.equal(usSessionActive(new Date("2026-11-07T01:31:00Z")), false);
+  assert.equal(usSessionActive(new Date("2026-07-15T23:30:00Z")), true);
+  assert.equal(usSessionActive(new Date("2026-07-16T00:45:00Z")), false);
+  assert.equal(usSessionActive(new Date("2026-11-08T15:00:00Z")), false);
+  assert.equal(usClockSession(Date.parse("2026-11-05T21:30:00.000Z")), "post");
+  assert.equal(usClockSession(Date.parse("2026-11-05T14:30:00.000Z")), "regular");
+  assert.equal(usClockSession(Date.parse("2026-11-05T10:00:00.000Z")), "pre");
+  assert.equal(usClockSession(Date.parse("2026-11-06T02:00:00.000Z")), null);
+});
+
+test("Nachthandel aus echten Kerzen, nicht aus dem regulären Tag", () => {
+  const periods = {
+    pre: [{ start: 1000, end: 2000 }],
+    regular: [{ start: 2000, end: 3000 }],
+    post: [{ start: 3000, end: 4000 }]
+  };
+  const points = [
+    { t: new Date(1500 * 1000).toISOString(), close: 10, high: 11, low: 9 },
+    { t: new Date(2500 * 1000).toISOString(), close: 12, high: 13, low: 11 },
+    { t: new Date(3500 * 1000).toISOString(), close: 14, high: 16, low: 13 },
+    { t: new Date(3800 * 1000).toISOString(), close: 15, high: 15.5, low: 14.5 }
+  ];
+  const closed = extendedQuote(points, periods, 4500 * 1000, { clock: false });
+  assert.equal(closed.phase, "nachhandel");
+  assert.equal(closed.price, 15);
+  assert.equal(closed.high, 16);
+  assert.equal(closed.low, 13);
+  assert.equal(extendedQuote(points, periods, 2500 * 1000, { clock: false }), null);
+  const pre = extendedQuote(points, periods, 1600 * 1000, { clock: false });
+  assert.equal(pre.phase, "vorboerse");
+  assert.equal(pre.price, 10);
+  assert.equal(pre.high, 11);
+  assert.equal(pre.low, 9);
+  assert.equal(extendedQuote(points, periods, 3200 * 1000, { clock: false }).phase, "nachhandel");
+});
+
+test("Tagesverlauf hängt nur Punkte nach dem Euro-Schluss an", () => {
+  const primary = [
+    { t: "2026-11-05T16:25:00.000Z", eur: 300, session: "regular" },
+    { t: "2026-11-05T16:30:00.000Z", eur: 301, session: "regular" }
+  ];
+  const extra = [
+    { t: "2026-11-05T16:30:00.000Z", eur: 299, session: "regular" },
+    { t: "2026-11-05T18:00:00.000Z", eur: 310, session: "regular" },
+    { t: "2026-11-05T21:05:00.000Z", eur: 312, session: "post" }
+  ];
+  const stitched = stitchIntraday(primary, extra);
+  assert.equal(stitched.length, 4);
+  assert.equal(stitched[2].eur, 310);
+  assert.equal(stitched[3].session, "post");
+  assert.equal(sessionEnded({ regular: [{ start: 100, end: 200 }] }, 250), true);
+  assert.equal(sessionEnded({ regular: [{ start: 100, end: 200 }] }, 150), false);
+});
+
+test("Letzter Nachthandel bleibt, solange die reguläre US-Sitzung nicht läuft", () => {
+  const previous = {
+    overnightPhase: "nachhandel",
+    overnightEur: 112.4,
+    overnightHighEur: 113.1,
+    overnightLowEur: 110.2,
+    overnightAsOf: "2026-11-06T00:59:00.000Z"
+  };
+  const kept = resolveOvernight(null, previous, { regularLive: false });
+  assert.equal(kept.phase, "nachhandel");
+  assert.equal(kept.eur, 112.4);
+  assert.equal(kept.high, 113.1);
+  const cleared = resolveOvernight(null, previous, { regularLive: true });
+  assert.equal(cleared.eur, null);
+  assert.equal(cleared.phase, null);
+  const fresh = resolveOvernight({
+    phase: "vorboerse",
+    eur: 114,
+    high: 115,
+    low: 113,
+    asOf: "2026-11-06T10:00:00.000Z"
+  }, previous, { regularLive: false });
+  assert.equal(fresh.phase, "vorboerse");
+  assert.equal(fresh.eur, 114);
 });
 
 test("Langfrist-Brille glättet und blendet den Tag aus", () => {
