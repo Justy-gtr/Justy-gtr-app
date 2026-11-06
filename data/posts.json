@@ -1,47 +1,150 @@
 {
   "example": false,
-  "asOf": "2026-11-06T17:02:24+01:00",
+  "asOf": "2026-11-06T18:27:34+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.35,
-      "label": "Rebound + Starship-Catch-Bestätigung",
-      "summary": "SPCX erholt sich freitags im US-Handel (~+6 % vs. Do-Schluss 123,62 $). Musk bestätigt den Doppel-Fangversuch auf dem kommenden Starship-Flug; heute Abend Baron-Chat, nachts USSF-432. Midterm-/Regulierungsrisiko bleibt.",
+      "score": 0.4,
+      "label": "Starker Freitag-Rebound",
+      "summary": "SPCX handelt freitags im US-Cash um ~132 $ (~+7 % vs. Do 123,62 $). Treiber: Tech-/KI-Dip-Kauf, Jobsbericht, FAA-Lizenz-Vorschläge und Musks Doppel-Fang-Zusage. Midterm-Regulierungsrisiko und Lock-up 8.12. bleiben.",
       "sources": [
         {
           "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Motley Fool: Why SpaceX popped Friday",
-          "url": "https://www.fool.com/investing/2026/11/06/why-spacex-stock-popped-on-friday/"
+          "title": "Investing.com: Why SPCX rallying Friday",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-space-exploration-technologies-stock-rallying-today-93CH-5008756"
         },
         {
-          "title": "@elonmusk: dual catch",
-          "url": "https://x.com/elonmusk/status/2118732082843435305"
+          "title": "FAA: commercial space streamlining 05.11.",
+          "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-supercharges-american-dominance-commercial"
         }
       ]
     },
     "TSLA": {
-      "score": 0.2,
-      "label": "Erholung nach Midterm-Sell-off",
-      "summary": "TSLA holt im US-Handel auf (~+4–5 % vs. Do). Model-Y-Absatz-PR und Argentinien-Start später im Monat; Baron-Chat heute Abend kann Autonomie/Fusion-Themen setzen. Regulierungsängste nach Demokraten-Sieg bleiben der Gegenwind.",
+      "score": 0.25,
+      "label": "Erholung, Politik-Risiko bleibt",
+      "summary": "TSLA holt im US-Handel auf (~+4,5 % vs. Do ~344 $). Model-Y-Absatz-PR, FSD-Senioren-Story und Musks Hinweis auf null Tesla-Staatsaufträge; Baron-Chat 19:10. Demokraten-Mehrheit und Texas-Rechenzentrums-Risiko bleiben Gegenwind.",
       "sources": [
         {
           "title": "Yahoo Finance: TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "Yahoo AlphaCheck: tech rebound, Tesla bounce",
+          "title": "Yahoo AlphaCheck: tech rebound",
           "url": "https://finance.yahoo.com/markets/article/semiconductor-stocks-lead-tech-rebound-spacex-and-tesla-jump-alphacheck-150906077.html"
         },
         {
-          "title": "@Tesla: Argentina later this month",
-          "url": "https://x.com/Tesla/status/2118720752379899907"
+          "title": "@elonmusk: no Tesla gov contracts",
+          "url": "https://x.com/elonmusk/status/2118737725964837353"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2118739484271579249",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T17:17:11+01:00",
+      "summaryDe": "Musk retweetet: Tesla bleibt in Südkorea im Oktober 2026 zum neunten Monat in Folge die meistverkaufte Importmarke (9.165 Neuzulassungen, vor Mercedes und BMW).",
+      "originalText": "RT @XFreeze: Tesla remains South Korea's #1 best-selling imported car brand for the NINTH consecutive month 🇰🇷 October 2026 registrations: Tesla 9,165; Mercedes-Benz 6,744; BMW 5,633",
+      "url": "https://x.com/elonmusk/status/2118739484271579249",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk RT: Tesla #1 import Korea Oct 2026",
+          "url": "https://x.com/elonmusk/status/2118739484271579249"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118739371939803498",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T17:16:45+01:00",
+      "summaryDe": "Musk: „Tesla self-driving gives mobility to seniors“ — teilt Bericht über einen 98-jährigen Model-Y-Fahrer, der FSD als entspannter empfindet und damit nach Colorado fuhr.",
+      "originalText": "Tesla self-driving gives mobility to seniors",
+      "url": "https://x.com/elonmusk/status/2118739371939803498",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: FSD mobility for seniors",
+          "url": "https://x.com/elonmusk/status/2118739371939803498"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118737725964837353",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T17:10:12+01:00",
+      "summaryDe": "Musk antwortet auf Kritik an Staatsaufträgen: Tesla habe keine Regierungsverträge; Trump habe Bundes-EV-Förderung beendet. SpaceX-Verträge seien zugleich bestes Produkt und niedrigster Preis; Regierungsumsatz unter 10 % des SpaceX-Umsatzes dieses Jahr. Klarstellung nach Midterm-Debatte um Musk-Firmen.",
+      "originalText": "Exactly 😂\n\nTesla has no government contracts and President Trump ended federal incentives for electric vehicles.\n\nSpaceX contracts with the government are BOTH the best product AND the lowest price! Moreover government revenue will be less than 10% of SpaceX revenue this",
+      "url": "https://x.com/elonmusk/status/2118737725964837353",
+      "tickers": [
+        "TSLA",
+        "SPCX"
+      ],
+      "companies": [
+        "Tesla",
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": true,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Tesla/SpaceX government contracts",
+          "url": "https://x.com/elonmusk/status/2118737725964837353"
+        },
+        {
+          "title": "Quoted: cancel federal contracts offer draft",
+          "url": "https://x.com/i/status/2118718688748777545"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118736224110444999",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T17:04:14+01:00",
+      "summaryDe": "Musk: „Starlink saves lives“ — teilt Bericht, wonach Starlink eine SOS-Meldung einer havarierten estnischen Yacht im Atlantik ermöglichte; spanische Küstenwache rettete sechs Personen.",
+      "originalText": "Starlink saves lives",
+      "url": "https://x.com/elonmusk/status/2118736224110444999",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Starlink saves lives",
+          "url": "https://x.com/elonmusk/status/2118736224110444999"
+        }
+      ]
+    },
     {
       "id": "post-tesla-2118720752379899907",
       "account": "@Tesla",
@@ -1808,5 +1911,5 @@
       ]
     }
   ],
-  "notes": "06.11. 11:30: drei neue Musk-Posts (KI-Rechenzentren im All „Yes“, Starlink-Bildung Indonesien, Seldon/Psychohistory). USSF-432 weiter Fenster ab 01:46 Berlin; Jobsbericht 14:30 noch ausstehend."
+  "notes": "06.11. 18:00: 4 neue Musk-Posts nach 16:00 — wichtig: Klarstellung zu Tesla-/SpaceX-Staatsaufträgen nach Midterm-Kritik; FSD für Senioren; Starlink rettet Yacht-Crew; Tesla Import-Nr.1 Südkorea. SPCX US ~+7 %, TSLA ~+4,5 %, RKLB ~+11 %. Baron-Chat 19:10, USSF-432 Fenster ~01:48 Berlin."
 }

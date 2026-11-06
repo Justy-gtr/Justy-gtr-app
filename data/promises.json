@@ -10,7 +10,7 @@
       "targetDate": "2026-11-30",
       "status": "offen",
       "delay": null,
-      "note": "Beide Stufen sind getestet, die FAA-Lizenz steht aus. Ein früheres Ziel im Oktober wurde schon verpasst.",
+      "note": "Beide Stufen getestet; FAA-Lizenz ausstehend. Am 6.11. bestätigte Musk auf X ausdrücklich den Doppel-Fangversuch auf dem kommenden Flug. Zieltag laut Launch-VP weiter ~13. November.",
       "example": false,
       "sources": [
         {
@@ -24,6 +24,10 @@
         {
           "title": "@elonmusk auf X: Ship 42 als erster Turmfang",
           "url": "https://x.com/elonmusk/status/2115634093949911506"
+        },
+        {
+          "title": "@elonmusk: catch booster and Starship upcoming flight",
+          "url": "https://x.com/elonmusk/status/2118732082843435305"
         }
       ]
     },

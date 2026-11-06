@@ -870,9 +870,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 97,
+      "probabilityPct": 98,
       "impact": "niedrig",
-      "reasoning": "SpaceX bestätigt weiter Freitag 6.11.: Vier-Stunden-Fenster ab 16:46 PT Vandenberg (in Berlin ~01:46–01:48 Uhr am 7.11.). Ersatztermin Samstag 7.11. ab 16:32 PT. Booster B1095 (8. Flug) landet auf Of Course I Still Love You. Stand 16:50 Berlin kein Scrub auf der Mission-Seite — 97 % (vorher 96). Routine-Militärmission, Kurswirkung gering.",
+      "reasoning": "SpaceX bestätigt weiter: Vier-Stunden-Fenster ab 16:46 PT Vandenberg SLC-4E (in Berlin ~01:46–01:48 Uhr am 7.11.). Ersatztermin Samstag 7.11. ab 16:32 PT. Booster B1095 (8. Flug) landet auf Of Course I Still Love You. Next Spaceflight/Launch Library melden GO für ~00:48 UTC. Stand 18:15 Berlin kein Scrub auf der Mission-Seite — 98 % (vorher 97). Routine-Militärmission, Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -881,7 +881,11 @@
         },
         {
           "title": "Next Spaceflight: USSF-432",
-          "url": "https://www.nextspaceflight.com/launches/details/8444/"
+          "url": "https://nextspaceflight.com/launches/details/8444/"
+        },
+        {
+          "title": "Orbital Radar: USSF-432 countdown",
+          "url": "https://orbitalradar.com/launch/falcon-9-ussf-432"
         }
       ]
     },
@@ -979,22 +983,54 @@
         "TSLA",
         "SPCX"
       ],
-      "probabilityPct": 96,
+      "probabilityPct": 98,
       "impact": "mittel",
-      "reasoning": "Baron Capital listet den virtuellen Fireside-Chat mit Elon Musk heute 13:10 ET (19:10 Berlin) fest auf der Agenda der 33. Annual Baron Investment Conference (Lincoln Center). Musk kommentierte kurz vorher auf X „Ron Baron understands“ zu Barons These über Rechenzentren im All. Zugang vor allem für Baron-Kunden; öffentlicher Livestream nicht angekündigt. 96 %: Termin und Agenda fest, Start in ~2 Stunden; Restausfallrisiko gering. Kurswirkung eher über nachlaufende Zitate.",
+      "reasoning": "Baron Capital listet den virtuellen Fireside-Chat mit Elon Musk heute 13:10 ET (19:10 Berlin) fest auf der Agenda der 33. Annual Baron Investment Conference (Lincoln Center). Musk kommentierte zuvor auf X „Ron Baron understands“ zu Barons These über Rechenzentren im All. Zugang vor allem für Baron-Kunden; öffentlicher YouTube-Stream nicht angekündigt. 98 %: Termin und Agenda fest, Start in unter einer Stunde; Restausfallrisiko gering. Kurswirkung eher über nachlaufende Zitate.",
       "example": false,
       "sources": [
         {
-          "title": "Baron Capital: Conference 2026 Agenda (Fireside 13:10 ET)",
+          "title": "Baron Capital: Conference 2026 agenda",
           "url": "https://www.baroncapitalgroup.com/conference-2026"
         },
         {
-          "title": "TeslaNorth: Musk bei Baron Conference 6.11.",
+          "title": "TeslaNorth: Musk×Baron 6.11. 13:10 ET",
           "url": "https://teslanorth.com/2026/10/28/elon-baron-conference-2026/"
         },
         {
           "title": "@elonmusk: Ron Baron understands",
           "url": "https://x.com/elonmusk/status/2118732296446673209"
+        }
+      ]
+    },
+    {
+      "id": "evt-faa-lizenz-streamline-2026",
+      "title": "FAA: Vorschläge zur Straffung der Start-/Wiedereintritts-Lizenzierung (Überarbeitung 2027)",
+      "date": "2026-11-05",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "regulierung",
+      "company": "FAA",
+      "tickers": [
+        "SPCX",
+        "RKLB"
+      ],
+      "probabilityPct": 100,
+      "impact": "mittel",
+      "reasoning": "Am 5.11. kündigte Verkehrsminister Duffy vier FAA-Maßnahmen an: drei vorgeschlagene Regeln zu Flugabbruch und Wiedereintrittsrisiko plus eine Final Rule mit technischen Korrekturen; umfassende Lizenz-Reform für 2027 geplant; Personalaufbau im Office of Commercial Space Transportation. Für SpaceX (und Rocket Lab) potenziell kürzere Genehmigungswege bei weiterem Sicherheitsstandard. 100 %: öffentlich angekündigt. Wird freitags als positiver SPCX-Treiber mitgezählt; Demokraten-Mehrheit bleibt politischer Gegenwind.",
+      "example": false,
+      "sources": [
+        {
+          "title": "FAA: Duffy commercial space actions 05.11.2026",
+          "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-supercharges-american-dominance-commercial"
+        },
+        {
+          "title": "Reuters via Investing: FAA streamline boost for SpaceX",
+          "url": "https://www.investing.com/news/stock-market-news/us-proposes-space-launch-rule-changes-in-potential-boost-for-spacex-5005351"
+        },
+        {
+          "title": "Investing.com: Why SPCX rallying Friday",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-space-exploration-technologies-stock-rallying-today-93CH-5008756"
         }
       ]
     }
