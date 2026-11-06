@@ -1,16 +1,16 @@
 {
   "dataMode": "live",
-  "lastUpdated": "2026-11-06T20:16:23.301Z",
-  "pricesUpdated": "2026-11-06T20:16:23.301Z",
+  "lastUpdated": "2026-11-06T21:05:44.182Z",
+  "pricesUpdated": "2026-11-06T21:05:44.182Z",
   "timezone": "Europe/Berlin",
   "owner": "Justy",
   "researchVoice": "Karl",
   "disclaimer": "Keine Anlageberatung. Nur Recherche und Bildung.",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1141,
+    "rate": 1.1146,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-06T20:16:23.301Z",
+    "asOf": "2026-11-06T21:05:44.182Z",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -24,7 +24,7 @@
       "venue": null,
       "symbol": "SPCX",
       "intradayMethod": "usd_div_eurusd",
-      "overnight": null,
+      "overnight": "nachhandel",
       "error": null
     },
     "TSLA": {
@@ -34,7 +34,7 @@
       "venue": "Xetra",
       "symbol": "TL0.DE",
       "intradayMethod": "direct_eur_plus_us",
-      "overnight": "us",
+      "overnight": "nachhandel",
       "error": null
     },
     "RKLB": {
@@ -44,7 +44,7 @@
       "venue": "Frankfurt",
       "symbol": "6RJ0.F",
       "intradayMethod": "direct_eur_plus_us",
-      "overnight": null,
+      "overnight": "nachhandel",
       "error": null
     }
   },
