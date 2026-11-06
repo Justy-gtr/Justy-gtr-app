@@ -1,29 +1,53 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-06",
-    "date": "2026-11-06",
-    "question": "Schließt SPCX am Freitag, 6. November, höher als am Donnerstag (110,16 €)?",
+    "id": "2026-11-07",
+    "date": "2026-11-07",
+    "question": "Bringt SpaceX den Falcon-9-Start USSF-432 in der Nacht auf Samstag erfolgreich in den Orbit (Nutzlast getrennt)?",
     "karlAnswer": "ja",
-    "karlReason": "Weiter „ja“, etwa 80 zu 20: SPCX handelt freitags im US-Cash um ~133–134 $ (~+8 % vs. Do 123,62 $; Frage-Referenz 110,16 €). Jobs, Tech-Rebound, FAA-News, Musk-Umsatz-Claim und Baron-Chat stützen. Outcome erst nach 22:00 Berlin / US-Schluss.",
+    "karlReason": "Knapp „ja“, etwa 85 zu 15: Next Spaceflight/Space Launch Live melden GO für ~01:48 Berlin von Vandenberg; Booster B1095 (8. Flug), Drohnenschiff bereit. SpaceX-Mission-Seite nennt dasselbe Fenster (Fr 16:48 PT = Sa 01:48 Berlin). Scrub-Risiko Wetter/Range bleibt.",
     "outcome": null,
-    "resolvesAt": "2026-11-06T22:00:00+01:00",
+    "resolvesAt": "2026-11-07T04:30:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: SPCX",
-        "url": "https://finance.yahoo.com/quote/SPCX/"
+        "title": "Next Spaceflight: USSF-432",
+        "url": "https://nextspaceflight.com/launches/details/8444/"
       },
       {
-        "title": "Investing.com: Why SPCX rallying Friday",
-        "url": "https://www.investing.com/news/stock-market-news/why-is-space-exploration-technologies-stock-rallying-today-93CH-5008756"
+        "title": "SpaceX: USSF-432 Mission",
+        "url": "https://www.spacex.com/launches/ussf432"
       },
       {
-        "title": "@elonmusk: revenue vs NASA budget",
-        "url": "https://x.com/elonmusk/status/2118761981037723848"
+        "title": "Space Launch Live: USSF-432 GO",
+        "url": "https://spacelaunchlive.com/launches/falcon-9-block-5-ussf-432/"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-06",
+      "date": "2026-11-06",
+      "question": "Schließt SPCX am Freitag, 6. November, höher als am Donnerstag (110,16 €)?",
+      "karlAnswer": "ja",
+      "karlReason": "Weiter „ja“, etwa 80 zu 20: SPCX handelt freitags im US-Cash um ~133–134 $ (~+8 % vs. Do 123,62 $; Frage-Referenz 110,16 €). Jobs, Tech-Rebound, FAA-News, Musk-Umsatz-Claim und Baron-Chat stützen. Outcome erst nach 22:00 Berlin / US-Schluss.",
+      "outcome": "ja",
+      "resolvesAt": "2026-11-06T22:00:00+01:00",
+      "sources": [
+        {
+          "title": "Yahoo Finance: SPCX",
+          "url": "https://finance.yahoo.com/quote/SPCX/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
+        },
+        {
+          "title": "Yahoo Finance: SPCX history",
+          "url": "https://finance.yahoo.com/quote/SPCX/history/"
+        }
+      ],
+      "outcomeNote": "SPCX schloss Freitag bei 134.27 $ (rund 120.46 € bei EURUSD 1.1146), klar über der Referenz 110,16 € (Do-Schluss). Karl lag richtig."
+    },
     {
       "id": "2026-11-05",
       "date": "2026-11-05",

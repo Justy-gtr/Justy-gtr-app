@@ -5697,23 +5697,23 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Freitag-Rebound hält (~+8 % US auf ~133–134 $ vs. Do 123,62 $): Tech-/KI-Dip-Kauf, Jobsbericht, FAA-Lizenz-Vorschläge, Musks Doppel-Fang-Zusage; abends zusätzlich Umsatz-Claim vs. NASA-Budget und Baron-Fireside. Midterm-Aufsichtsrisiko bleibt.",
+      "why": "Freitag-Schluss ~134 $ (~+8,6 % vs. Do 123,62 $): Tech-Dip-Kauf, Jobs, FAA-Signale, Doppel-Fang-Zusage; abends Baron-Nachlauf mit Musk-Ziel >100 Mrd. $ annualisiert im Dezember. Midterm-Aufsicht und Lock-up 8.12. bleiben.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX (~+8 %)",
+          "title": "Yahoo Finance: SPCX Freitag-Schluss",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "@elonmusk: revenue vs NASA budget",
-          "url": "https://x.com/elonmusk/status/2118761981037723848"
+          "title": "@elonmusk RT: $100B annualized trajectory",
+          "url": "https://x.com/elonmusk/status/2118789262393090314"
         },
         {
           "title": "@BaronCapital Fireside Chat",
           "url": "https://x.com/BaronCapital/status/2118765607122260177"
         },
         {
-          "title": "FAA: commercial space streamlining 05.11.",
-          "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-supercharges-american-dominance-commercial"
+          "title": "Stockbabie: Musk revenue targets Baron",
+          "url": "https://stockbabie.com/news/20261106-elon-musk-says-spacex-q4-revenue-should-rise-about-70-from-q3-spacex-o"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -11490,23 +11490,23 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Teil-Erholung nach Midterm-Crash (~+4–5 % US): laut Investing.com vor allem Cybercab-Kapazität statt Cybertruck (Texas Mitte 2027) plus Nasdaq-Rebound; Baron-Chat und Null-Staatsaufträge stützen — Regulierungs- und Texas-Risiken bleiben.",
+      "why": "US-Schluss ~358 $ (~+4 % vs. Do): Cybercab-Kapazität statt Cybertruck, Nasdaq-Rebound und Baron-Chat tragen; Argentinien-Start noch im November angekündigt. Xetra bleibt tief unter der Vorwoche — Regulierungs- und Texas-Risiken.",
       "whySources": [
+        {
+          "title": "Yahoo Finance: TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
+        },
         {
           "title": "Investing.com: Why Tesla rallying (Cybercab)",
           "url": "https://www.investing.com/news/stock-market-news/why-is-tesla-stock-rallying-today-93CH-5008775"
         },
         {
-          "title": "@elonmusk: Cybertruck wind-down / Cybercab",
-          "url": "https://x.com/elonmusk/status/2118591788701421573"
+          "title": "@elonmusk: Tesla Argentina",
+          "url": "https://x.com/elonmusk/status/2118787365426893002"
         },
         {
           "title": "@BaronCapital Fireside Chat",
           "url": "https://x.com/BaronCapital/status/2118765607122260177"
-        },
-        {
-          "title": "Yahoo Finance: TSLA",
-          "url": "https://finance.yahoo.com/quote/TSLA/"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -14759,8 +14759,16 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Rocket Lab erholt sich mit dem Space-/Defense-Rebound ohne neue Fehlermeldung; ESCAPADE-TMI ab 7.11. und Electron-100. („The Mountain God Rises“) NET 14.11.; Q3-Zahlen Montag im Fokus.",
+      "why": "US-Schluss ~53,07 $ (~+15 % vs. Do 45,99 $) mit Space-/Defense-Rebound; Neutron-Forward-Dome gebaut, ESCAPADE-TMI ab 7.11., Electron-100 NET 14.11. — Q3-Zahlen Montag entscheiden mit.",
       "whySources": [
+        {
+          "title": "Yahoo Finance: RKLB Freitag-Schluss",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "title": "@RocketLab: Neutron Forward Dome cured",
+          "url": "https://x.com/RocketLab/status/2118804214831042777"
+        },
         {
           "title": "Benzinga: RKLB pulls out of nosedive Friday",
           "url": "https://www.benzinga.com/trading-ideas/movers/26/11/62973089/rocket-lab-stock-pulls-out-of-a-nosedive-friday-whats-going-on"
@@ -14768,10 +14776,6 @@
         {
           "title": "@RocketLab: Electron 100th NET 14.11.",
           "url": "https://x.com/RocketLab/status/2118521208639746494"
-        },
-        {
-          "title": "Yahoo Finance: RKLB",
-          "url": "https://finance.yahoo.com/quote/RKLB/"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",

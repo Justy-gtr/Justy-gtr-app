@@ -47,7 +47,7 @@
       "symbol": "SPCX",
       "name": "SpaceX",
       "score": 7,
-      "reason": "SpaceX wächst im Q3 um 161 % auf 14,6 Mrd. US-Dollar Umsatz und verdient dabei Geld, aber nach der Midterm-Wahl und vor der Lock-up-Freigabe am 8. Dezember ist der Kurs anfällig.",
+      "reason": "SpaceX wächst stark (Q3 +161 % Umsatz) und verdient Geld; Freitag-Schluss ~134 $ nach Dip, plus Musk-Zielkurve >100 Mrd. $ annualisiert. Gegenwind: Midterm-Aufsicht und Lock-up 8.12.",
       "horizon": "langfrist",
       "counterArgument": "Die Bewertung von rund 1,9 Billionen US-Dollar setzt voraus, dass die KI-Sparte (SI) ihre riesigen Investitionen zurückverdient: allein im Q3 flossen 16,4 Mrd. US-Dollar Investitionen in SI, mehr als der gesamte Quartalsumsatz. Dazu kommen frei werdende Aktien und ein Kongress, der Musk jetzt genauer prüfen will.",
       "sources": [
@@ -66,6 +66,10 @@
         {
           "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
           "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+        },
+        {
+          "title": "@elonmusk: $100B trajectory",
+          "url": "https://x.com/elonmusk/status/2118789262393090314"
         }
       ],
       "example": false,
@@ -219,7 +223,7 @@
       "priceAsOf": "2026-11-05",
       "priceVenue": "Frankfurt",
       "swarmNote": "In den geführten Konten kommt Rocket Lab kaum vor. Sawyer hat sie auf der Liste, ohne Posts.",
-      "reason": "Rekord-Auftragsbestand, Electron läuft, Neutron rutscht auf 2027. In Frankfurt: 46,50 €. Karl hält die 5, der Schwarm redet nicht darüber.",
+      "reason": "Rekord-Auftragsbestand, Electron läuft, Neutron-Dome frisch gebaut — Freitag US ~+15 %. Neutron weiter 2027. Q3-Zahlen Montag.",
       "counterArgument": "Ohne Neutron bleibt Rocket Lab klein gegen SpaceX. Das Management verkauft seit Monaten Aktien.",
       "example": false,
       "sources": [

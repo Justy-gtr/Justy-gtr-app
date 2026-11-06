@@ -13,9 +13,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 53,
+      "probabilityPct": 55,
       "impact": "hoch",
-      "reasoning": "SpaceX-Launch-VP Kiko Dontchev nannte am 5.11. Freitag 13. November als Ziel (Eric Berger/Teslarati). Am 6.11. bestätigte Musk auf X ausdrücklich: SpaceX versuche auf dem kommenden Flug, Booster und Starship zu fangen — bei Erfolg erstmals alle Teile einer Orbitalrakete intakt zurück. SpaceX veröffentlichte dazu „Go For Orbit“. Beide Static Fires (Booster 22, Ship 42) sind durch. Die FAA-Lizenz mit Rückkehr über Land/Turmfang fehlt weiter. 53 % für Start bis 30. November (vorher 50); bis Jahresende weiter ~75 %. Kursrisiko: nach Flight 13/14 schloss SPCX am Reaktionstag oft im Minus.",
+      "reasoning": "SpaceX-Launch-VP Kiko Dontchev nannte am 5.11. Freitag 13. November als Ziel (Teslarati). Am 6.11. bestätigte Musk mehrfach (u. a. Baron-Chat / abendliche RTs): Versuch, Booster und Ship 42 per Turm zu fangen — „more likely than not“ laut Zusammenfassungen. Beide Static Fires sind durch; FAA-Lizenz für Land-Rückkehr fehlt weiter. 55 % für Start bis 30. November (vorher 53); bis Jahresende weiter ~75 %. Kursrisiko: nach Flight-14-Fehlschlag hoch bei erneutem Misserfolg.",
       "example": false,
       "sources": [
         {
@@ -45,6 +45,14 @@
         {
           "title": "FAA: SpaceX Starship Super Heavy Boca Chica",
           "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
+        },
+        {
+          "title": "@elonmusk RT: Ship 42 tower catch ~1 week",
+          "url": "https://x.com/elonmusk/status/2118811477427855594"
+        },
+        {
+          "title": "X News: Catch both on Flight 15",
+          "url": "https://x.com/i/trending/2118767669113680291"
         }
       ]
     },
@@ -872,7 +880,7 @@
       ],
       "probabilityPct": 98,
       "impact": "niedrig",
-      "reasoning": "Next Spaceflight/RocketRune: GO für Samstag 7.11. ~00:48:42 UTC (01:48 Berlin) von Vandenberg SLC-4E; Booster B1095 (8. Flug), Landung Of Course I Still Love You. SpaceX-Mission-Seite nennt noch das Freitag-Fenster ab 16:46 PT mit Backup Samstag — Trackers haben auf den präzisen Samstag-Slot aktualisiert. Stand 20:00 Berlin kein Scrub gemeldet — 98 %. Routine-Militärmission, Kurswirkung gering.",
+      "reasoning": "Next Spaceflight/Space Launch Live: GO für Samstag 7.11. ~00:48 UTC (01:48 Berlin) von Vandenberg SLC-4E; Booster B1095 (8. Flug), Landung Of Course I Still Love You. SpaceX-Mission-Seite nennt Freitag 16:48 PT (= dasselbe UTC-Fenster) mit Backup Samstag. Stand 22:00 Berlin kein Scrub — 98 %. Routine-Militärmission, Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -1031,6 +1039,37 @@
         {
           "title": "Investing.com: Why SPCX rallying Friday",
           "url": "https://www.investing.com/news/stock-market-news/why-is-space-exploration-technologies-stock-rallying-today-93CH-5008756"
+        }
+      ]
+    },
+    {
+      "id": "evt-tesla-argentina-nov",
+      "title": "Tesla: Marktstart Argentinien (angekündigt ab ~20. November)",
+      "date": "2026-11-20",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "produkt",
+      "company": "Tesla",
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 80,
+      "impact": "niedrig",
+      "reasoning": "Tesla LatAm nannte den 20. November; offizieller @Tesla-Post und Musk-Reaktion am 6.11. bestätigen „later this month“. 80 % für einen sichtbaren Start bis Monatsende — lokale Zulassung/Logistik kann rutschen. Kurswirkung gering.",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Tesla: Launching in Argentina later this month",
+          "url": "https://x.com/Tesla/status/2118720752379899907"
+        },
+        {
+          "title": "@elonmusk: Tesla Argentina",
+          "url": "https://x.com/elonmusk/status/2118787365426893002"
+        },
+        {
+          "title": "@Tesla_LatAm: 20 de Noviembre",
+          "url": "https://x.com/Tesla_LatAm/status/2118674774440435905"
         }
       ]
     }
