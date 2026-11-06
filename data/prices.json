@@ -3095,31 +3095,27 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Nach dem Midterm-/KI-Ausverkauf (Donnerstag −9,05 % auf 123,62 $) erholt sich SPCX im US-Vorbörse um etwa +4,7 % auf rund 129,4 $. Treiber: breitere Tech-Gegenbewegung nach dem Chip-Ausverkauf plus operative Narrative (KI-Rechenzentren im All, Terafab). Heute zählen Jobsbericht 14:30 Berlin, Baron-Chat 19:10 und USSF-432 (Fenster ab 01:46 Berlin Samstag).",
+      "why": "Starker Jobsbericht (+165k vs. ~59–65k, ALQ 4,1 %) hob die CME-Chance auf eine Dezember-Zinserhöhung auf ~77 %; die Sofortreaktion an den Futures blieb laut CNBC gemischt. SPCX hält im US-Vormarkt die Gegenbewegung nach dem Donnerstags-Ausverkauf (~129,8 $ vs. Do-Schluss 123,62 $). Zusätzlich begrüßen indische Regierungsquellen Starlink ausdrücklich (Lizenz da, Spektrum/Security offen). Heute Abend Baron-Chat, nachts USSF-432.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX Pre-Market ~+4,7 %",
+          "title": "CNBC: Jobs +165k, FedWatch ~77 %",
+          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+        },
+        {
+          "title": "BLS: Employment Situation October 2026",
+          "url": "https://www.bls.gov/news.release/empsit.htm"
+        },
+        {
+          "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Coinpedia: SPCX Premarket Rebound",
-          "url": "https://coinpedia.org/crypto-live-news/spacex-stock-premarket-today-spcx-jumps-4-7-after-thursdays-crash/"
+          "title": "@elonmusk RT: Starlink India welcome",
+          "url": "https://x.com/elonmusk/status/2118686601379545217"
         },
         {
-          "title": "@elonmusk: Yes (KI-Rechenzentren im All)",
-          "url": "https://x.com/elonmusk/status/2118638089677803638"
-        },
-        {
-          "title": "SpaceX: USSF-432",
-          "url": "https://www.spacex.com/launches/ussf432"
-        },
-        {
-          "title": "TeslaNorth: Baron Fireside 6.11.",
-          "url": "https://teslanorth.com/2026/10/28/elon-baron-conference-2026/"
-        },
-        {
-          "title": "BLS Jobs Schedule 6.11.",
-          "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
+          "title": "Tribune/ANI: India welcomes satcom",
+          "url": "https://www.tribuneindia.com/news/business/india-welcomes-all-satcom-players-starlink-last-to-submit-compliance-documents-govt-sources-amid-musks-allegations-of-market-entry-barriers/"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -6833,10 +6829,14 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Nach dem Midterm-/KI-Ausverkauf (−10,77 % am Donnerstag auf 343,69 $) notiert TSLA im US-Vorbörse etwa +1,8 % bei rund 349,7 $. Operative Pluszeichen (Cybertruck Mitte 2027 runter für Cybercab; Terafab schnell) treffen auf eine vorsichtige Tech-Erholung; nächste Impulse Jobs 14:30 und Baron-Chat 19:10 Berlin.",
+      "why": "Nach dem Midterm-/KI-Ausverkauf hält TSLA im US-Vormarkt eine leichte Erholung (~351 $ vs. Do-Schluss 343,69 $). Der starke Jobsbericht (+165k) und höhere Dezember-Zinswetten dämpfen den Rebound, ohne ihn zu kippen. Operativ zählen Cybercab-/Terafab-Narrative; nächster Termin Baron-Fireside 19:10 Berlin.",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA Pre-Market ~+1,8 %",
+          "title": "CNBC: Jobs +165k, Futures gemischt",
+          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+        },
+        {
+          "title": "Yahoo Finance: TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
@@ -6844,16 +6844,8 @@
           "url": "https://x.com/elonmusk/status/2118591788701421573"
         },
         {
-          "title": "@elonmusk: Terafab is moving fast",
-          "url": "https://x.com/elonmusk/status/2118620772268990966"
-        },
-        {
           "title": "TeslaNorth: Baron Fireside 6.11.",
           "url": "https://teslanorth.com/2026/10/28/elon-baron-conference-2026/"
-        },
-        {
-          "title": "BLS Jobs Schedule 6.11.",
-          "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -10582,19 +10574,19 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Rocket Lab folgt dem Tech-Rebound: nach ~−12 % am Donnerstag (Schluss 45,99 $) ~+5,6 % im US-Vorbörse auf rund 48,6 $, ohne eigene Fehlermeldung. Operativ ESCAPADE-Mars-Einschuss Samstag und Q3-Zahlen Montag; heute hängt der Kurs vor allem am Makro (Jobs 14:30 Berlin).",
+      "why": "Rocket Lab folgt dem Tech-Rebound ohne eigene Fehlermeldung: im US-Vormarkt ~48,6 $ nach Do-Schluss 45,99 $. Der starke Jobsbericht (+165k) und höhere Fed-Zinswetten sind der Makro-Gegenwind; operativ zählen ESCAPADE-Mars-Einschuss Samstag und Q3-Zahlen Montag.",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB Pre-Market ~+5,6 %",
+          "title": "CNBC: Jobs +165k",
+          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+        },
+        {
+          "title": "Yahoo Finance: RKLB",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "@RocketLab: ESCAPADE Richtung Mars",
-          "url": "https://x.com/RocketLab/status/2118544706066055248"
-        },
-        {
-          "title": "BLS Jobs Schedule 6.11.",
-          "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
+          "title": "BLS: Employment Situation October 2026",
+          "url": "https://www.bls.gov/news.release/empsit.htm"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",

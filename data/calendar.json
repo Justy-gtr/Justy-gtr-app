@@ -375,7 +375,7 @@
     },
     {
       "id": "evt-us-jobs-okt",
-      "title": "USA: Arbeitsmarktbericht Oktober",
+      "title": "USA: Arbeitsmarktbericht Oktober (veröffentlicht)",
       "date": "2026-11-06",
       "time": "14:30",
       "timezone": "Europe/Berlin",
@@ -387,26 +387,22 @@
         "TSLA",
         "RKLB"
       ],
-      "probabilityPct": 95,
+      "probabilityPct": 100,
       "impact": "hoch",
-      "reasoning": "Der BLS-Bericht erscheint heute Freitag 6.11. um 14:30 Uhr Berlin — Stand 13:00 noch nicht veröffentlicht. Reuters-Konsens: etwa +65.000 Nonfarm-Payrolls (nach +29.000 im September), Arbeitslosenquote unverändert 4,2 %, Löhne rund +0,3 % zum Vormonat / ~2,9 % zum Vorjahr. Dow-Jones-Konsens teils niedriger (~59k). Vorher: SPCX/TSLA/RKLB erholen sich im US-Vorbörse (~+5 % / ~+2 % / ~+6 %) nach dem Donnerstags-Ausverkauf; der Bericht bleibt der nächste Makro-Katalysator.",
+      "reasoning": "Veröffentlicht 6.11. 14:30 Berlin: +165.000 Nonfarm-Payrolls (Konsens ~59–65k), Arbeitslosenquote 4,1 % (Konsens 4,2 %), Löhne +0,4 % MoM / +3,1 % YoY. August auf 186k und September auf 60k nach oben revidiert. Breites Wachstum (Professional Services +70k, Health Care +42k). Starker Bericht: CME FedWatch erhöhte die Chance auf eine 25-bp-Zinsanhebung im Dezember auf rund 77 %. Laut CNBC blieb die Sofortreaktion an den Futures gemischt, Treasuries höher.",
       "example": false,
       "sources": [
         {
-          "title": "BLS: November 2026 Release Schedule (Employment Situation 6.11. 8:30 ET)",
-          "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
+          "title": "BLS: Employment Situation October 2026",
+          "url": "https://www.bls.gov/news.release/empsit.htm"
         },
         {
-          "title": "Reuters/Investing: Jobs-Konsens ~65k",
-          "url": "https://www.investing.com/news/economic-indicators/us-job-growth-expected-to-pick-up-in-october-with-moderation-in-wage-gains-5006475"
+          "title": "CNBC: +165k Jobs, Arbeitslosigkeit 4,1 %",
+          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
         },
         {
-          "title": "CNBC: Oktober-Jobs Preview (~59k)",
-          "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
-        },
-        {
-          "title": "Yahoo Finance: SPCX Pre-Market ~+4,7 %",
-          "url": "https://finance.yahoo.com/quote/SPCX/"
+          "title": "AP: Überraschend starke Payrolls",
+          "url": "https://apnews.com/article/jobs-inflation-paycheck-salary-employment-746ee02db33d0372980f815ada33d8d3"
         }
       ]
     },
@@ -856,9 +852,9 @@
     },
     {
       "id": "evt-falcon9-ussf432",
-      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force (Fenster ab 01:46 Berlin)",
+      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force (Fenster ab ~01:48 Berlin)",
       "date": "2026-11-07",
-      "time": "01:46",
+      "time": "01:48",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -866,9 +862,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 95,
+      "probabilityPct": 96,
       "impact": "niedrig",
-      "reasoning": "SpaceX-Seite bestätigt weiter Freitag 6.11.: Vier-Stunden-Fenster ab 16:46 Uhr Ortszeit Vandenberg (in Berlin 01:46 Uhr am 7.11.), Ersatztermin Samstag 7.11. ab 16:32 PT. Live-Webcast ca. 10 Minuten vor dem Start; Booster B1095 (8. Flug) landet auf Of Course I Still Love You. Stand 13:00 Berlin kein Scrub gemeldet — ich setze 95 % (vorher 94). Routine-Militärmission, Kurswirkung gering.",
+      "reasoning": "SpaceX bestätigt weiter Freitag 6.11.: Vier-Stunden-Fenster ab 16:46 PT Vandenberg (in Berlin ~01:46–01:48 Uhr am 7.11.; Tracking-Quellen nennen ~00:48 UTC). Ersatztermin Samstag 7.11. ab 16:32 PT. Booster B1095 (8. Flug) landet auf Of Course I Still Love You. Stand 15:00 Berlin kein Scrub — 96 % (vorher 95). Routine-Militärmission, Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -878,6 +874,10 @@
         {
           "title": "Next Spaceflight: USSF-432",
           "url": "https://www.nextspaceflight.com/launches/details/8444/"
+        },
+        {
+          "title": "RocketRune: USSF-432 Timing",
+          "url": "https://www.rocketrune.com/launches/ussf-432"
         }
       ]
     },
@@ -975,9 +975,9 @@
         "TSLA",
         "SPCX"
       ],
-      "probabilityPct": 92,
+      "probabilityPct": 93,
       "impact": "mittel",
-      "reasoning": "Baron Capital bestätigt den virtuellen Fireside-Chat mit Elon Musk heute 13:10 ET (19:10 Berlin) auf der 33. Annual Baron Investment Conference (Lincoln Center). Zugang vor allem für Baron-Kunden/Aktionäre; öffentlicher Livestream nicht angekündigt, Zitate/Clips laufen danach typischerweise auf X. Themenrahmen „what's next“ — Autonomie, KI, Starship, mögliche Tesla–SpaceX-Kombi. 92 %: Termin fest, Restausfallrisiko gering; Kurswirkung eher über nachlaufende Zitate als live.",
+      "reasoning": "Baron Capital bestätigt den virtuellen Fireside-Chat mit Elon Musk heute 13:10 ET (19:10 Berlin) auf der 33. Annual Baron Investment Conference (Lincoln Center). Zugang vor allem für Baron-Kunden/Aktionäre; öffentlicher Livestream nicht angekündigt, Zitate/Clips laufen danach typischerweise auf X. Themenrahmen „what's next“ — Autonomie, KI, Starship, mögliche Tesla–SpaceX-Kombi. 93 %: Termin fest, Restausfallrisiko gering; Kurswirkung eher über nachlaufende Zitate als live.",
       "example": false,
       "sources": [
         {
