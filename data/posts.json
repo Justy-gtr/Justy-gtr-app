@@ -1,57 +1,57 @@
 {
   "example": false,
-  "asOf": "2026-11-06T11:37:26+01:00",
+  "asOf": "2026-11-06T13:11:52+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.12,
-      "label": "leicht zuversichtlich vor Falcon und Jobs",
-      "summary": "Musk bekräftigt KI-Rechenzentren im All in 2–3 Jahren und Starlink-Bildung; Terafab bleibt „moving fast“. Operativ: USSF-432 Fenster ab 01:46 Berlin und Jobsbericht 14:30. Nasdaq-Futures erholen sich nach dem KI-Ausverkauf.",
+      "score": 0.18,
+      "label": "Erholung vor Jobs und Falcon",
+      "summary": "US-Vorbörse SPCX ~+4,7 % nach dem Midterm-/KI-Ausverkauf. Operativ: USSF-432 Fenster ab 01:46 Berlin, Musk bei Baron 19:10 Berlin, Jobsbericht 14:30. Narrative KI im All / Terafab unverändert positiv.",
       "sources": [
         {
-          "title": "@elonmusk: Yes (KI im All)",
-          "url": "https://x.com/elonmusk/status/2118638089677803638"
+          "title": "Yahoo Finance: SPCX Pre-Market",
+          "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
           "title": "SpaceX: USSF-432",
           "url": "https://www.spacex.com/launches/ussf432"
         },
         {
-          "title": "Investing/Reuters: Nasdaq-Futures nach KI-Ausverkauf",
-          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-rise-after-steep-ai-selloff-as-chip-stocks-stabilize-5007026"
+          "title": "TeslaNorth: Baron Fireside",
+          "url": "https://teslanorth.com/2026/10/28/elon-baron-conference-2026/"
         }
       ]
     },
     "TSLA": {
-      "score": 0.1,
-      "label": "verhalten positiv operativ, Kurs vor Jobs",
-      "summary": "Operativ: Cybertruck-Kapazität in Texas Mitte 2027 zugunsten Cybercab, Terafab schnell. Kursseitig weiter Midterm-/KI-Druck; nächster Katalysator Jobsbericht 14:30 Berlin.",
+      "score": 0.12,
+      "label": "leichte Vorbörsen-Erholung, Fokus Jobs/Baron",
+      "summary": "TSLA ~+1,8 % im US-Vorbörse nach −11 % am Donnerstag. Operativ Cybercab/Terafab; heute Jobs 14:30 und Baron-Chat 19:10 Berlin. Politischer Midterm-Druck bleibt.",
       "sources": [
+        {
+          "title": "Yahoo Finance: TSLA Pre-Market",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
+        },
+        {
+          "title": "TeslaNorth: Baron Fireside",
+          "url": "https://teslanorth.com/2026/10/28/elon-baron-conference-2026/"
+        },
         {
           "title": "@elonmusk: Cybertruck wind-down",
           "url": "https://x.com/elonmusk/status/2118591788701421573"
-        },
-        {
-          "title": "@elonmusk: Terafab is moving fast",
-          "url": "https://x.com/elonmusk/status/2118620772268990966"
-        },
-        {
-          "title": "Investing/Reuters: Futures vor Payrolls",
-          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-rise-after-steep-ai-selloff-as-chip-stocks-stabilize-5007026"
         }
       ]
     },
     "RKLB": {
-      "score": 0.05,
-      "label": "neutral bis leicht positiv operativ",
-      "summary": "ESCAPADE-Mars-Einschuss Samstag und Electron-100 am 14.11. stehen; Kurs folgt dem Tech-Sentiment vor dem Jobsbericht.",
+      "score": 0.15,
+      "label": "Tech-Rebound vor ESCAPADE und Q3",
+      "summary": "RKLB ~+5,6 % im US-Vorbörse nach ~−12 % am Donnerstag, ohne eigene Fehlermeldung. ESCAPADE-TMI Samstag, Q3-Zahlen Montag; heute vor allem Makro (Jobs).",
       "sources": [
         {
-          "title": "@RocketLab: See you soon, Mars",
-          "url": "https://x.com/RocketLab/status/2118544706066055248"
+          "title": "Yahoo Finance: RKLB Pre-Market",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "@RocketLab: Electron 100th",
-          "url": "https://x.com/RocketLab/status/2118521208639746494"
+          "title": "@RocketLab: ESCAPADE",
+          "url": "https://x.com/RocketLab/status/2118544706066055248"
         }
       ]
     }

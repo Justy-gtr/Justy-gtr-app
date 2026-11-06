@@ -1535,31 +1535,31 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Nach dem Midterm-/KI-Ausverkauf (Donnerstag ~−9 % auf 123,62 $) zeigte SPCX im Nachhandel eine Erholung (~+2,5 % auf etwa 126,70 $). Musk bekräftigt die These, KI-Rechenzentren im All seien in 2–3 Jahren am günstigsten; Terafab bleibt „moving fast“. Politisch weiter Gegenwind (Boca Chica / Texas). Heute zählen Jobsbericht 14:30 Berlin und USSF-432 (Fenster ab 01:46 Berlin Samstag).",
+      "why": "Nach dem Midterm-/KI-Ausverkauf (Donnerstag −9,05 % auf 123,62 $) erholt sich SPCX im US-Vorbörse um etwa +4,7 % auf rund 129,4 $. Treiber: breitere Tech-Gegenbewegung nach dem Chip-Ausverkauf plus operative Narrative (KI-Rechenzentren im All, Terafab). Heute zählen Jobsbericht 14:30 Berlin, Baron-Chat 19:10 und USSF-432 (Fenster ab 01:46 Berlin Samstag).",
       "whySources": [
+        {
+          "title": "Yahoo Finance: SPCX Pre-Market ~+4,7 %",
+          "url": "https://finance.yahoo.com/quote/SPCX/"
+        },
+        {
+          "title": "Coinpedia: SPCX Premarket Rebound",
+          "url": "https://coinpedia.org/crypto-live-news/spacex-stock-premarket-today-spcx-jumps-4-7-after-thursdays-crash/"
+        },
         {
           "title": "@elonmusk: Yes (KI-Rechenzentren im All)",
           "url": "https://x.com/elonmusk/status/2118638089677803638"
-        },
-        {
-          "title": "@elonmusk: Terafab is moving fast",
-          "url": "https://x.com/elonmusk/status/2118620772268990966"
-        },
-        {
-          "title": "Public.com: SPCX After-Hours ~126,70 $",
-          "url": "https://public.com/stocks/spcx/after-hours"
-        },
-        {
-          "title": "Investing/Reuters: Nasdaq-Futures rebound",
-          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-rise-after-steep-ai-selloff-as-chip-stocks-stabilize-5007026"
         },
         {
           "title": "SpaceX: USSF-432",
           "url": "https://www.spacex.com/launches/ussf432"
         },
         {
-          "title": "Yahoo Finance: SPCX",
-          "url": "https://finance.yahoo.com/quote/SPCX/"
+          "title": "TeslaNorth: Baron Fireside 6.11.",
+          "url": "https://teslanorth.com/2026/10/28/elon-baron-conference-2026/"
+        },
+        {
+          "title": "BLS Jobs Schedule 6.11.",
+          "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -4571,8 +4571,12 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Nach dem Midterm-/KI-Ausverkauf (−11 % am Donnerstag auf 343,69 $) helfen operative Pluszeichen (Cybertruck in Giga Texas Mitte 2027 runter für mehr Cybercab; Terafab schnell). Nasdaq-Futures erholen sich früh Freitag nach dem Chip-Ausverkauf; kursseitig zählt zuerst der Jobsbericht um 14:30 Berlin.",
+      "why": "Nach dem Midterm-/KI-Ausverkauf (−10,77 % am Donnerstag auf 343,69 $) notiert TSLA im US-Vorbörse etwa +1,8 % bei rund 349,7 $. Operative Pluszeichen (Cybertruck Mitte 2027 runter für Cybercab; Terafab schnell) treffen auf eine vorsichtige Tech-Erholung; nächste Impulse Jobs 14:30 und Baron-Chat 19:10 Berlin.",
       "whySources": [
+        {
+          "title": "Yahoo Finance: TSLA Pre-Market ~+1,8 %",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
+        },
         {
           "title": "@elonmusk: Cybertruck wind-down für Cybercab",
           "url": "https://x.com/elonmusk/status/2118591788701421573"
@@ -4582,12 +4586,12 @@
           "url": "https://x.com/elonmusk/status/2118620772268990966"
         },
         {
-          "title": "Investing/Reuters: Nasdaq-Futures rebound",
-          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-rise-after-steep-ai-selloff-as-chip-stocks-stabilize-5007026"
+          "title": "TeslaNorth: Baron Fireside 6.11.",
+          "url": "https://teslanorth.com/2026/10/28/elon-baron-conference-2026/"
         },
         {
-          "title": "Yahoo Finance: TSLA",
-          "url": "https://finance.yahoo.com/quote/TSLA/"
+          "title": "BLS Jobs Schedule 6.11.",
+          "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -7092,19 +7096,19 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Rocket Lab folgt dem Tech-Sentiment nach dem Donnerstags-Ausverkauf (~−12 %), ohne eigene Fehlermeldung. Operativ: ESCAPADE-Mars-Einschuss Samstag und Q3-Zahlen Montag. Nasdaq-Futures im Plus vor dem US-Jobsbericht um 14:30 Berlin — davon hängt der Kurs heute vor allem ab.",
+      "why": "Rocket Lab folgt dem Tech-Rebound: nach ~−12 % am Donnerstag (Schluss 45,99 $) ~+5,6 % im US-Vorbörse auf rund 48,6 $, ohne eigene Fehlermeldung. Operativ ESCAPADE-Mars-Einschuss Samstag und Q3-Zahlen Montag; heute hängt der Kurs vor allem am Makro (Jobs 14:30 Berlin).",
       "whySources": [
+        {
+          "title": "Yahoo Finance: RKLB Pre-Market ~+5,6 %",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
         {
           "title": "@RocketLab: ESCAPADE Richtung Mars",
           "url": "https://x.com/RocketLab/status/2118544706066055248"
         },
         {
-          "title": "Investing/Reuters: Nasdaq-Futures rebound",
-          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-rise-after-steep-ai-selloff-as-chip-stocks-stabilize-5007026"
-        },
-        {
-          "title": "Yahoo Finance: RKLB",
-          "url": "https://finance.yahoo.com/quote/RKLB/"
+          "title": "BLS Jobs Schedule 6.11.",
+          "url": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
