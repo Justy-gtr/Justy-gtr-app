@@ -30,7 +30,7 @@ Auf dem iPhone im Vollbild nutzt die App die sicheren Ränder und scrollt nur in
 - **Kalender:** Umschalter Unternehmen / Extern. Jeder Termin hat Datum, Wahrscheinlichkeitsbalken, Begründung und Quellen.
 - **Posts:** Kurzfassungen auf Deutsch, Link zum Original, Stimmungsbogen für SpaceX und Tesla.
 - **Schwarm:** Genannte Ticker, Erwähnungen, Trefferquote, Vergleich Schwarm gegen Karl.
-- **Charts:** Zeiträume und die Langfrist-Brille, die kurze Schwankungen glättet.
+- **Charts:** 1 Min und 5 Min für den Tag, dazu 1M, 6M, 1J, 5J, Max und die Langfrist-Brille. 5 Min ist dieselbe Minutenreihe, nur gröber.
 - **Mehr:** Insider, Treffer-Check, Versprechen, Was-wäre-wenn, Ruhe-Modus, Produktion, erste Prinzipien, Glossar, Tagesfrage, Briefing, Wochenrückblick, Meldungen.
 
 „Warum?“ an einem Kurs öffnet die kurze Einordnung. „Gegenteil“ zeigt das stärkste Gegenargument. Die Tagesfrage liegt auf diesem iPhone; Justy und Karl bekommen nur Punkte, wenn beide geantwortet haben und ein Ergebnis hinterlegt ist.
@@ -55,7 +55,9 @@ Zeiten in Europe/Berlin, auch über die Sommerzeit hinweg:
 - zusätzlich, solange in New York Vorbörse, Handel oder Nachhandel läuft (04:00–20:00 Uhr New York, plus 30 Minuten), auch nach 22:15 Berlin und in den Freitagabend hinein
 - samstags und sonntags nur 05:00, 06:30, 08:30, 09:30, 11:30, 13:00, 14:00, 15:00, 16:00, 18:00, 20:00, 22:00, mit 45 Minuten Spielraum danach
 
-GitHub plant nur in UTC. Der Laufplan deckt deshalb MEZ und MESZ ab, und `scripts/schedule.mjs` lässt den Abruf nur im passenden Berliner Fenster zu. Von Hand starten geht über „Run workflow“ und ignoriert das Fenster.
+GitHub plant nur in UTC. Der Laufplan deckt deshalb MEZ und MESZ ab, und `scripts/schedule.mjs` lässt den Abruf nur im passenden Berliner Fenster zu. Werktags startet der Cron alle fünf Minuten. Jede Minute wäre zu viel für die Git-Historie. Samstag und Sonntag bleiben bei den festen Zeiten. Von Hand starten geht über „Run workflow“ und ignoriert das Fenster.
+
+Das iPhone kann die Yahoo-Schnittstelle nicht selbst lesen, weil die Antwort kein CORS-Freigabe-Feld schickt. Die App bleibt bei `prices.json`. Liegt Heute oder Charts offen und der Handel läuft, holt sie diese Datei etwa einmal pro Minute neu. Ein stilles **Live** erscheint, wenn der gespeicherte Stand jünger als 15 Minuten ist. Kommt nichts Neues an, bleibt die letzte Linie stehen. Der große Kurs ist weiter der reguläre Schluss, nicht der letzte Minutenpunkt.
 
 Quellen, kostenlos über die Chart-Schnittstelle von Yahoo Finance:
 

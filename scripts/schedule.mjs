@@ -54,7 +54,7 @@ export function berlinParts(date = new Date()) {
  * Cron ist UTC und kann Europe/Berlin über die Sommerzeit nicht ausdrücken.
  * Der Workflow läuft deshalb auf einem UTC-Gitter, und dieses Tor entscheidet.
  * Mo–Fr: jeder Start zwischen 05:00 und 22:15 Berlin zählt, auch wenn der
- * Cron später als der 15-Minuten-Takt kommt. Zusätzlich, solange in New York
+ * Cron später als der 5-Minuten-Takt kommt. Zusätzlich, solange in New York
  * Vorbörse, Regulärhandel oder Nachhandel läuft (plus 30 Minuten Puffer).
  * Sa/So: nur die festen Slots, mit 45 Minuten Toleranz danach.
  */

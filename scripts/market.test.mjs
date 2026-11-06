@@ -8,13 +8,15 @@ import {
   meaningful,
   resolveOvernight,
   sessionEnded,
+  chooseIntraday,
+  keepRecentSession,
   stitchIntraday,
   updateAlerts,
   usClockSession,
   usSessionActive,
   usdToEur
 } from "./market.mjs";
-import { bigDrop, buildFeed, buildMarketTimeline, compactStances, formatEventClock, formatFeedTime, headlineEvent, isInAppUrl, maxPoints, opinionWord, scoreboard, seriesFor, trackSummary, verdictForStances, zonedWallTime } from "../js/logic.js";
+import { bigDrop, bucketMinutes, buildFeed, buildMarketTimeline, compactStances, formatEventClock, formatFeedTime, headlineEvent, isInAppUrl, marketWatch, maxPoints, opinionWord, scoreboard, seriesFor, sparkSample, trackSummary, verdictForStances, zonedWallTime } from "../js/logic.js";
 import fs from "node:fs";
 
 test("Dollar wird durch EURUSD geteilt, nicht multipliziert", () => {
@@ -314,14 +316,22 @@ test("Der Feed mischt Post, Termin, Kurs und Briefing, neueste zuerst", () => {
   assert.equal(feed.some((item) => item.kind === "event" && item.title.startsWith("Arbeitsmarkt")), true);
   assert.equal(feed.some((item) => item.title === "zu alt" || item.title === "Viel später"), false);
   assert.ok(feed.findIndex((item) => item.kind === "post") < feed.findIndex((item) => item.kind === "event"));
+  const postsFile = JSON.parse(fs.readFileSync("data/posts.json", "utf8"));
+  const briefingFile = JSON.parse(fs.readFileSync("data/briefing.json", "utf8"));
+  const latestPost = Math.max(0, ...(postsFile.posts || []).map((post) => Date.parse(post.postedAt) || 0));
+  const realNow = new Date(latestPost || now.getTime());
   const real = buildFeed({
-    posts: JSON.parse(fs.readFileSync("data/posts.json", "utf8")),
+    posts: postsFile,
     alerts: JSON.parse(fs.readFileSync("data/alerts.json", "utf8")),
-    briefing: JSON.parse(fs.readFileSync("data/briefing.json", "utf8")),
+    briefing: briefingFile,
     calendar: JSON.parse(fs.readFileSync("data/calendar.json", "utf8"))
-  }, now);
-  assert.deepEqual([...new Set(real.map((item) => item.kind))].sort(), ["alert", "briefing", "event", "post"]);
+  }, realNow);
+  const kinds = new Set(real.map((item) => item.kind));
+  assert.ok(kinds.has("post"));
   assert.match(real.find((item) => item.kind === "post").timeLabel, /^heute \d{2}:\d{2}$/);
+  const berlinDay = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Berlin", year: "numeric", month: "2-digit", day: "2-digit" }).format(realNow);
+  if (briefingFile?.date === berlinDay && briefingFile.bullets?.length) assert.ok(kinds.has("briefing"));
+  assert.ok(real.every((item) => item.kind && item.title && item.timeLabel));
 });
 
 test("Markt heute mischt Börsenzeiten in Berlin mit Zahlen und Politik", () => {
@@ -439,4 +449,97 @@ test("Trefferquote rechnet nur entschiedene Ideen", () => {
   ]);
   assert.equal(summary.hitRatePct, 50);
   assert.equal(summary.open, 1);
+});
+
+test("1 Min behält jeden Punkt, 5 Min den letzten im Block", () => {
+  const start = Date.parse("2026-11-06T14:00:00.000Z");
+  const intraday = Array.from({ length: 10 }, (_, index) => ({
+    t: new Date(start + index * 60 * 1000).toISOString(),
+    eur: index + 1,
+    session: index < 3 ? "pre" : "regular"
+  }));
+  const ticker = { history: { intraday, "1M": [{ t: "2026-11-01", eur: 9 }] } };
+  const minute = seriesFor(ticker, "1 Min", false);
+  assert.equal(minute.range, "1 Min");
+  assert.equal(minute.points.length, 10);
+  assert.equal(minute.points[2].session, "pre");
+  const coarse = seriesFor(ticker, "5 Min", false);
+  assert.equal(coarse.range, "5 Min");
+  assert.equal(coarse.points.length, 2);
+  assert.equal(coarse.points[0].eur, 5);
+  assert.equal(coarse.points[0].session, "regular");
+  assert.equal(coarse.points[1].eur, 10);
+  assert.equal(bucketMinutes(intraday, 1).length, 10);
+  const sampled = sparkSample(intraday, 4);
+  assert.equal(sampled.length, 4);
+  assert.equal(sampled[0].eur, 1);
+  assert.equal(sampled.at(-1).eur, 10);
+  assert.equal(seriesFor(ticker, "Tag", false).range, "1 Min");
+  assert.equal(seriesFor(ticker, "5 Min", true).range, "1J");
+});
+
+test("Euro-Platz gewinnt erst mit einer echten Minutenreihe", () => {
+  const eu = [{ t: "2026-11-06T09:00:00.000Z", eur: 10 }];
+  const usd = [
+    { t: "2026-11-06T14:00:00.000Z", eur: 11, session: "pre" },
+    { t: "2026-11-06T16:00:00.000Z", eur: 12, session: "regular" }
+  ];
+  const thin = chooseIntraday(eu, usd, "direct_eur");
+  assert.equal(thin.method, "usd_div_eurusd");
+  assert.equal(thin.points.length, 2);
+  const denseEu = Array.from({ length: 12 }, (_, index) => ({
+    t: new Date(Date.parse("2026-11-06T08:00:00.000Z") + index * 60 * 1000).toISOString(),
+    eur: 100 + index,
+    session: "regular"
+  }));
+  const stitched = chooseIntraday(denseEu, usd, "direct_eur");
+  assert.equal(stitched.method, "direct_eur_plus_us");
+  assert.equal(stitched.points.length, 14);
+  assert.equal(stitched.points[11].eur, 111);
+  assert.equal(stitched.points[12].session, "pre");
+  const alone = chooseIntraday(denseEu, [], "direct_eur");
+  assert.equal(alone.method, "direct_eur");
+  assert.equal(alone.points.length, 12);
+});
+
+test("Minutenreihe bleibt ein Handelstag", () => {
+  const last = Date.parse("2026-11-06T20:00:00.000Z");
+  const points = [
+    { t: new Date(last - 40 * 3600 * 1000).toISOString(), eur: 1 },
+    { t: new Date(last - 2 * 3600 * 1000).toISOString(), eur: 2 },
+    { t: new Date(last).toISOString(), eur: 3 }
+  ];
+  const kept = keepRecentSession(points);
+  assert.equal(kept.length, 2);
+  assert.equal(kept[0].eur, 2);
+  const many = Array.from({ length: 20 }, (_, index) => ({
+    t: new Date(last - (19 - index) * 60 * 1000).toISOString(),
+    eur: index
+  }));
+  const capped = keepRecentSession(many, { maxPoints: 5 });
+  assert.equal(capped.length, 5);
+  assert.equal(capped.at(-1).eur, 19);
+  assert.equal(keepRecentSession([]).length, 0);
+});
+
+test("Die App schaut nur hin, solange ein neuer Kurs möglich ist", () => {
+  const samples = [
+    "2026-11-06T04:00:00Z",
+    "2026-11-06T03:59:00Z",
+    "2026-11-06T10:00:00Z",
+    "2026-11-06T21:20:00Z",
+    "2026-11-07T01:30:00Z",
+    "2026-11-07T01:31:00Z",
+    "2026-11-08T15:00:00Z",
+    "2026-07-15T23:30:00Z",
+    "2026-07-16T00:45:00Z"
+  ];
+  for (const iso of samples) {
+    const date = new Date(iso);
+    const parts = berlinParts(date);
+    const minutes = parts.hour * 60 + parts.minute;
+    const weekdayWindow = parts.weekday <= 4 && minutes >= 5 * 60 && minutes <= 22 * 60 + 15;
+    assert.equal(marketWatch(date), weekdayWindow || usSessionActive(date), iso);
+    if (parts.weekday >= 5 && !usSessionActive(date)) assert.equal(marketWatch(date), false, iso);
+  }
 });

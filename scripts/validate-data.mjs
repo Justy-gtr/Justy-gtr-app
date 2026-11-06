@@ -81,7 +81,16 @@ if (prices) {
     if (typeof ticker.overnightHighEur === "number" && typeof ticker.overnightLowEur === "number" && ticker.overnightHighEur < ticker.overnightLowEur) {
       fail(`${label} overnight high < low`);
     }
-    for (const point of ticker.history?.intraday || []) {
+    const intraday = ticker.history?.intraday || [];
+    if (intraday.length > 1600) fail(`${label}.history.intraday zu lang`);
+    if (intraday.length >= 2) {
+      const start = Date.parse(intraday[0].t);
+      const end = Date.parse(intraday.at(-1).t);
+      if (Number.isFinite(start) && Number.isFinite(end) && end - start > 36 * 3600 * 1000) {
+        fail(`${label}.history.intraday länger als ein Handelstag`);
+      }
+    }
+    for (const point of intraday) {
       if (point?.session != null && !["pre", "regular", "post"].includes(point.session)) {
         fail(`${label}.history.intraday.session`);
       }

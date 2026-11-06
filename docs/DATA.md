@@ -86,7 +86,7 @@ Ticker-Felder:
 | `eurVenue`, `eurSymbol` | z. B. `Xetra` / `TL0.DE`, `Frankfurt` / `6RJ0.F`, sonst `null` |
 | `usdSymbol`, `intradayMethod`, `fxRate` | Referenz und wie der Tagesverlauf entstand. `intradayMethod` zusätzlich `direct_eur_plus_us`, wenn nach dem Euro-Schluss Nasdaq-Punkte angehängt sind |
 | `sparkline` | Liste der letzten Euro-Kurse, kurz |
-| `history.intraday`, `history.1M`, `history.6M`, `history.1Y`, `history.5Y` | Listen aus `{ "t": "<ISO oder Tag>", "eur": 1.23 }`. Intraday darf `session` (`pre`, `regular`, `post`) und bei Dollar-Umrechnung `usd` tragen. `5Y` ist Wochenstufe für die Langfrist-Brille |
+| `history.intraday`, `history.1M`, `history.6M`, `history.1Y`, `history.5Y` | Listen aus `{ "t": "<ISO oder Tag>", "eur": 1.23 }`. `intraday` ist die 1-Minuten-Reihe des laufenden Handelstags, höchstens etwa 30 Stunden und 1400 Punkte, nicht mehrere Tage. Die App leitet „5 Min“ daraus ab, indem sie den letzten Druck jedes 5-Minuten-Blocks nimmt. Intraday darf `session` (`pre`, `regular`, `post`) und bei Dollar-Umrechnung `usd` tragen. `5Y` ist Wochenstufe für die Langfrist-Brille |
 | `recordHighEur` | Höchststand in Euro |
 | `why` | ein kurzer deutscher Satz, warum der Kurs sich bewegt |
 | `whySources` | Quellen nur für diesen Satz |

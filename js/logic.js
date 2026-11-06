@@ -490,11 +490,41 @@ export function movingAverage(points, window = 4) {
 
 const RANGE_KEY = {
   Tag: "intraday",
+  "1 Min": "intraday",
+  "5 Min": "intraday",
   "1M": "1M",
   "6M": "6M",
   "1J": "1Y",
   "5J": "5Y"
 };
+
+const DAY_RANGES = new Set(["Tag", "1 Min", "5 Min"]);
+
+/** Last print of each N-minute bucket. One-minute series stays as it is. */
+export function bucketMinutes(points, minutes = 5) {
+  const list = (points || []).filter((point) => point && point.eur != null && point.t);
+  if (!minutes || minutes <= 1 || list.length < 2) return list;
+  const size = minutes * 60 * 1000;
+  const buckets = new Map();
+  for (const point of list) {
+    const time = Date.parse(point.t);
+    if (!Number.isFinite(time)) continue;
+    buckets.set(Math.floor(time / size), point);
+  }
+  return [...buckets.entries()].sort((a, b) => a[0] - b[0]).map((entry) => entry[1]);
+}
+
+/** Evenly spaced points so a spark still shows the whole session. */
+export function sparkSample(points, count = 32) {
+  const list = (points || []).filter((point) => point && point.eur != null);
+  if (list.length <= count) return list;
+  const last = count - 1;
+  const sampled = [];
+  for (let index = 0; index < count; index += 1) {
+    sampled.push(list[Math.round((index * (list.length - 1)) / last)]);
+  }
+  return sampled;
+}
 
 /** Longest history: weekly first, then daily series overwrite the same day. */
 export function maxPoints(history) {
@@ -509,10 +539,15 @@ export function maxPoints(history) {
 }
 
 export function seriesFor(ticker, range, langfrist) {
-  const effective = langfrist && (range === "Tag" || range === "1M") ? "1J" : range;
+  const asked = range === "Tag" ? "1 Min" : range;
+  const effective = langfrist && (DAY_RANGES.has(range) || asked === "1M") ? "1J" : asked;
   let points;
   if (effective === "Max") {
     points = maxPoints(ticker?.history);
+  } else if (effective === "5 Min") {
+    points = bucketMinutes(ticker?.history?.intraday, 5);
+  } else if (effective === "1 Min") {
+    points = (ticker?.history?.intraday || []).filter((point) => point && point.eur != null);
   } else {
     const key = RANGE_KEY[effective] || "1M";
     points = (ticker?.history?.[key] || []).filter((point) => point && point.eur != null);
@@ -662,6 +697,41 @@ export function verdictForStances(swarmStance, karlStance) {
     || (swarm === "vorsichtig" && karl === "optimistisch");
   if (opposed) return { label: "Karl dagegen", kind: "against" };
   return { label: "Nicht gleich", kind: "mixed" };
+}
+
+const WEEKDAY_INDEX = { Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4, Sat: 5, Sun: 6 };
+
+function zonedClock(date, timeZone) {
+  const fmt = new Intl.DateTimeFormat("en-GB", {
+    timeZone,
+    weekday: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23"
+  });
+  const parts = Object.fromEntries(fmt.formatToParts(date).map((part) => [part.type, part.value]));
+  return {
+    hour: Number(parts.hour),
+    minute: Number(parts.minute),
+    weekday: WEEKDAY_INDEX[parts.weekday]
+  };
+}
+
+/**
+ * Poll while a new snapshot can exist: Berlin weekday 05:00–22:15,
+ * or the US pre/regular/post session plus the same 30-minute buffer as the workflow.
+ * Weekend slots do not keep the chart polling through a closed market.
+ */
+export function marketWatch(date = new Date()) {
+  const berlin = zonedClock(date, "Europe/Berlin");
+  if (berlin.weekday >= 0 && berlin.weekday <= 4) {
+    const minutes = berlin.hour * 60 + berlin.minute;
+    if (minutes >= 5 * 60 && minutes <= 22 * 60 + 15) return true;
+  }
+  const ny = zonedClock(date, "America/New_York");
+  if (ny.weekday == null || ny.weekday > 4) return false;
+  const minutes = ny.hour * 60 + ny.minute;
+  return minutes >= 4 * 60 && minutes <= 20 * 60 + 30;
 }
 
 export function freshPrices(meta, now = Date.now()) {

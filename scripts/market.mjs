@@ -297,6 +297,35 @@ export function stitchIntraday(primary, extra) {
   return base.concat(extra.filter((point) => Date.parse(point.t) > last));
 }
 
+/**
+ * Euro venue wins once it has a real one-minute series.
+ * A handful of prints stays on the Nasdaq path.
+ */
+export function chooseIntraday(euPoints, usdPoints, fallbackMethod, minEu = 12) {
+  const eu = euPoints || [];
+  const usd = usdPoints || [];
+  if (eu.length >= minEu) {
+    const points = stitchIntraday(eu, usd);
+    return { points, method: points.length > eu.length ? "direct_eur_plus_us" : "direct_eur" };
+  }
+  if (usd.length) return { points: usd, method: "usd_div_eurusd" };
+  return { points: [], method: fallbackMethod };
+}
+
+/** One trading day of minute bars. Drops an older session and a runaway series. */
+export function keepRecentSession(points, { hours = 30, maxPoints = 1400 } = {}) {
+  const list = (points || []).filter((point) => point && point.t);
+  if (!list.length) return [];
+  const last = Date.parse(list[list.length - 1].t);
+  const cutoff = Number.isFinite(last) ? last - hours * 3600 * 1000 : -Infinity;
+  const recent = list.filter((point) => {
+    const time = Date.parse(point.t);
+    return Number.isFinite(time) && time >= cutoff;
+  });
+  if (recent.length > maxPoints) return recent.slice(-maxPoints);
+  return recent;
+}
+
 /** True once every regular window that has started is over. */
 export function sessionEnded(periods, nowSec) {
   const regular = (periods?.regular || []).filter((period) => period && period.end > period.start);

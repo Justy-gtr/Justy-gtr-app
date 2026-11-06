@@ -8,6 +8,7 @@ import {
   formatStamp,
   freshPrices,
   greeting,
+  sparkSample,
   buildFeed,
   buildMarketTimeline,
   formatEventClock,
@@ -248,7 +249,7 @@ function priceFacts(ticker) {
 
 function quoteRow(ticker, live, tight = false) {
   const fresh = live && ticker.example !== true;
-  const sparkSource = ticker.history?.intraday?.length ? ticker.history.intraday.slice(-32) : ticker.sparkline;
+  const sparkSource = ticker.history?.intraday?.length ? sparkSample(ticker.history.intraday) : ticker.sparkline;
   return `<div class="quote${tight ? " is-tight" : ""}" data-symbol-card="${esc(ticker.symbol)}">
     <button type="button" class="quote-hit" data-action="open-company" data-symbol="${esc(ticker.symbol)}" aria-label="${esc(ticker.name || ticker.symbol)} öffnen"></button>
     <span class="q-name">
@@ -465,19 +466,19 @@ function renderChartsPage(data, ui) {
   const ticker = tickerBy(data, ui.chartSymbol) || data.prices?.tickers?.[0];
   const { points, range } = seriesFor(ticker, ui.chartRange, ui.langfrist);
   const change = rangeChange(points);
-  const ranges = ui.langfrist ? ["6M", "1J", "5J", "Max"] : ["Tag", "1M", "6M", "1J", "5J", "Max"];
+  const ranges = ui.langfrist ? ["6M", "1J", "5J", "Max"] : ["1 Min", "5 Min", "1M", "6M", "1J", "5J", "Max"];
   return `
     <header class="page-head">
       <p class="eyebrow">Kurs in Euro</p>
       <h2>${esc(ticker?.name || "Kurs")}</h2>
       <p class="price-value">${esc(formatEUR(ticker?.priceEur))} <span class="${tone(change)}">${esc(formatPct(change))}</span></p>
       ${priceFacts(ticker)}
-      <p class="muted">${esc(methodLabel(ticker || {}))} · Spanne ${esc(range)}</p>
+      <p class="muted chart-note"><span class="live-flag" data-live-flag ${ui.live ? "" : "hidden"}><span class="live-dot" aria-hidden="true"></span>Live</span><span>${esc(methodLabel(ticker || {}))} · Spanne ${esc(range)}</span></p>
     </header>
     <div class="chips">${(data.prices?.tickers || []).map((item) => `
       <button type="button" class="chip" data-action="chart-symbol" data-symbol="${esc(item.symbol)}" aria-pressed="${item.symbol === ticker?.symbol}">${esc(item.symbol)}</button>`).join("")}</div>
     <div class="chips">${ranges.map((item) => `
-      <button type="button" class="chip" data-action="chart-range" data-range="${item}" aria-pressed="${item === range}">${esc(item === "Tag" ? "Tag" : item)}</button>`).join("")}</div>
+      <button type="button" class="chip" data-action="chart-range" data-range="${item}" aria-pressed="${item === range}">${esc(item)}</button>`).join("")}</div>
     <button type="button" class="switch" data-action="langfrist" role="switch" aria-checked="${ui.langfrist ? "true" : "false"}">
       <span>Langfrist-Brille</span><span class="knob"></span>
     </button>

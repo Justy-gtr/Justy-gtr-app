@@ -1,4 +1,4 @@
-const CACHE = "jgtr-v11";
+const CACHE = "jgtr-v12";
 const CORE = [
   "",
   "index.html",
@@ -101,15 +101,26 @@ async function navigate(request) {
   }
 }
 
+function dataCacheKey(request) {
+  const url = new URL(request.url);
+  url.search = "";
+  return new Request(url.href, { method: "GET" });
+}
+
 async function networkFirst(request) {
   const cache = await caches.open(CACHE);
+  const key = dataCacheKey(request);
   try {
     const response = await fetch(request);
-    if (response.ok) cache.put(request, response.clone());
+    if (response.ok) cache.put(key, response.clone());
     return response;
   } catch {
-    const cached = await cache.match(request);
-    if (cached) return cached;
+    const cached = await cache.match(key);
+    if (cached) {
+      const headers = new Headers(cached.headers);
+      headers.set("X-JGTR-Cache", "hit");
+      return new Response(cached.body, { status: cached.status, statusText: cached.statusText, headers });
+    }
     return new Response("offline", { status: 504, headers: { "Content-Type": "text/plain; charset=utf-8" } });
   }
 }
