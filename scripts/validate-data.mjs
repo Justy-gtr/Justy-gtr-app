@@ -69,6 +69,23 @@ if (prices) {
     for (const range of ["intraday", "1M", "6M", "1Y"]) {
       if (!Array.isArray(ticker.history?.[range])) fail(`${label}.history.${range}`);
     }
+    for (const key of ["dayHighEur", "dayLowEur", "overnightEur", "overnightHighEur", "overnightLowEur"]) {
+      if (ticker[key] != null && typeof ticker[key] !== "number") fail(`${label}.${key}`);
+    }
+    if (typeof ticker.dayHighEur === "number" && typeof ticker.dayLowEur === "number" && ticker.dayHighEur < ticker.dayLowEur) {
+      fail(`${label} day high < low`);
+    }
+    const phases = ["nachhandel", "vorboerse", "us"];
+    if (ticker.overnightPhase != null && !phases.includes(ticker.overnightPhase)) fail(`${label}.overnightPhase`);
+    if (ticker.overnightEur != null && !phases.includes(ticker.overnightPhase)) fail(`${label}.overnightPhase`);
+    if (typeof ticker.overnightHighEur === "number" && typeof ticker.overnightLowEur === "number" && ticker.overnightHighEur < ticker.overnightLowEur) {
+      fail(`${label} overnight high < low`);
+    }
+    for (const point of ticker.history?.intraday || []) {
+      if (point?.session != null && !["pre", "regular", "post"].includes(point.session)) {
+        fail(`${label}.history.intraday.session`);
+      }
+    }
     sourcesOk(ticker.sources, label);
   }
 }

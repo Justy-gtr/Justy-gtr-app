@@ -17,6 +17,7 @@ import {
   opinionWord,
   verdictForStances,
   methodLabel,
+  OVERNIGHT_LABEL,
   rangeChange,
   safeUrl,
   scoreboard,
@@ -225,19 +226,41 @@ function marketBlock(data) {
   </section>`;
 }
 
+function rangeText(high, low) {
+  const bits = [];
+  if (high != null) bits.push(`Hoch ${formatEUR(high)}`);
+  if (low != null) bits.push(`Tief ${formatEUR(low)}`);
+  return bits.join(" · ");
+}
+
+function priceFacts(ticker) {
+  if (!ticker) return "";
+  const day = rangeText(ticker.dayHighEur, ticker.dayLowEur);
+  const phase = OVERNIGHT_LABEL[ticker.overnightPhase];
+  const extPrice = Boolean(phase) && ticker.overnightEur != null;
+  const extRange = rangeText(ticker.overnightHighEur, ticker.overnightLowEur);
+  if (!day && !extPrice) return "";
+  return `<div class="q-facts">
+    ${day ? `<p class="day-range">${esc(day)}</p>` : ""}
+    ${extPrice ? `<p class="q-ext"><span class="q-ext-name">${esc(phase)}</span> <strong>${esc(formatEUR(ticker.overnightEur))}</strong>${extRange ? ` <span class="ext-range">${esc(extRange)}</span>` : ""}</p>` : ""}
+  </div>`;
+}
+
 function quoteRow(ticker, live, tight = false) {
   const fresh = live && ticker.example !== true;
+  const sparkSource = ticker.history?.intraday?.length ? ticker.history.intraday.slice(-32) : ticker.sparkline;
   return `<div class="quote${tight ? " is-tight" : ""}" data-symbol-card="${esc(ticker.symbol)}">
     <button type="button" class="quote-hit" data-action="open-company" data-symbol="${esc(ticker.symbol)}" aria-label="${esc(ticker.name || ticker.symbol)} öffnen"></button>
     <span class="q-name">
       <strong>${esc(ticker.symbol)}${fresh ? `<span class="live-dot" title="Frische Kurse"></span>` : ""}</strong>
       <span class="q-sub"><span>${esc(ticker.name || "")}</span><button type="button" class="why-link" data-action="explain" data-symbol="${esc(ticker.symbol)}">Warum?</button></span>
     </span>
-    ${tight ? "" : sparkline(ticker.sparkline)}
+    ${tight ? "" : sparkline(sparkSource)}
     <span class="q-px">
       <strong>${esc(formatEUR(ticker.priceEur))}</strong>
       <span class="${tone(ticker.changePct)}">${arrow(ticker.changePct)} ${esc(formatPct(ticker.changePct))}</span>
     </span>
+    ${priceFacts(ticker)}
   </div>`;
 }
 
@@ -448,6 +471,7 @@ function renderChartsPage(data, ui) {
       <p class="eyebrow">Kurs in Euro</p>
       <h2>${esc(ticker?.name || "Kurs")}</h2>
       <p class="price-value">${esc(formatEUR(ticker?.priceEur))} <span class="${tone(change)}">${esc(formatPct(change))}</span></p>
+      ${priceFacts(ticker)}
       <p class="muted">${esc(methodLabel(ticker || {}))} · Spanne ${esc(range)}</p>
     </header>
     <div class="chips">${(data.prices?.tickers || []).map((item) => `
@@ -547,7 +571,7 @@ function companyDetail(data, key, ui) {
     title: company?.name || "Unternehmen",
     html: `
       <p class="kicker">${esc(company?.role || "")} ${company?.listed ? "· börsennotiert" : "· nicht gelistet"}</p>
-      ${ticker ? `<p class="price-value">${esc(formatEUR(ticker.priceEur))} <span class="${tone(ticker.changePct)}">${esc(formatPct(ticker.changePct))}</span></p><p class="muted">${esc(methodLabel(ticker))}</p>` : ""}
+      ${ticker ? `<p class="price-value">${esc(formatEUR(ticker.priceEur))} <span class="${tone(ticker.changePct)}">${esc(formatPct(ticker.changePct))}</span></p>${priceFacts(ticker)}<p class="muted">${esc(methodLabel(ticker))}</p>` : ""}
       <p>${esc(company?.tagline || "")}</p>
       ${pill(company?.example)}
       <div class="chips">${(company?.priceDrivers || []).map((driver) => `<span class="chip quiet">${esc(driver)}</span>`).join("")}</div>

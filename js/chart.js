@@ -9,21 +9,53 @@ function hexAlpha(hex, alpha) {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
+function sparkPoints(values) {
+  return (values || []).map((value) => {
+    if (typeof value === "number" && !Number.isNaN(value)) return { eur: value, session: null };
+    if (value && typeof value.eur === "number" && !Number.isNaN(value.eur)) {
+      return { eur: value.eur, session: value.session || null };
+    }
+    return null;
+  }).filter(Boolean);
+}
+
+function isExtendedSession(session) {
+  return session === "pre" || session === "post";
+}
+
 export function sparkline(values, color) {
-  const nums = (values || []).filter((value) => typeof value === "number" && !Number.isNaN(value));
+  const nums = sparkPoints(values);
   if (nums.length < 2) return "";
   const width = 96;
   const height = 36;
-  const min = Math.min(...nums);
-  const max = Math.max(...nums);
+  const min = Math.min(...nums.map((point) => point.eur));
+  const max = Math.max(...nums.map((point) => point.eur));
   const span = max - min || 1;
-  const d = nums.map((value, index) => {
+  const coords = nums.map((point, index) => {
     const x = (index / (nums.length - 1)) * width;
-    const y = height - ((value - min) / span) * (height - 6) - 3;
-    return `${index ? "L" : "M"}${x.toFixed(1)} ${y.toFixed(1)}`;
-  }).join(" ");
-  const stroke = color || (nums.at(-1) >= nums[0] ? "#7ddec0" : "#ff8b98");
-  return `<svg class="spark" viewBox="0 0 ${width} ${height}" aria-hidden="true"><path d="${d}" fill="none" stroke="${stroke}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    const y = height - ((point.eur - min) / span) * (height - 6) - 3;
+    return { x, y, session: point.session };
+  });
+  const d = coords.map((coord, index) => `${index ? "L" : "M"}${coord.x.toFixed(1)} ${coord.y.toFixed(1)}`).join(" ");
+  const stroke = color || (nums.at(-1).eur >= nums[0].eur ? "#7ddec0" : "#ff8b98");
+  let extended = "";
+  let open = false;
+  const parts = [];
+  for (let index = 1; index < coords.length; index += 1) {
+    const hot = isExtendedSession(coords[index - 1].session) || isExtendedSession(coords[index].session);
+    if (!hot) {
+      open = false;
+      continue;
+    }
+    const from = coords[index - 1];
+    const to = coords[index];
+    parts.push(`${open ? "L" : "M"}${from.x.toFixed(1)} ${from.y.toFixed(1)} L${to.x.toFixed(1)} ${to.y.toFixed(1)}`);
+    open = true;
+  }
+  if (parts.length) {
+    extended = `<path d="${parts.join(" ")}" fill="none" stroke="#e4b15a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  }
+  return `<svg class="spark" viewBox="0 0 ${width} ${height}" aria-hidden="true"><path d="${d}" fill="none" stroke="${stroke}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>${extended}</svg>`;
 }
 
 const euroAxis = new Intl.NumberFormat("de-DE", {
@@ -142,13 +174,15 @@ function paintChart(canvas, state, hover) {
   ctx.lineCap = "round";
   ctx.setLineDash([]);
   ctx.stroke();
+  strokeWhere(ctx, coords, (left, right) => isExtendedPoint(left) || isExtendedPoint(right), "#e4b15a");
   const focus = hover || coords.at(-1);
+  const extendedEnd = !hover && isExtendedPoint(focus.point);
   ctx.beginPath();
   ctx.arc(focus.x, focus.y, 3.5, 0, Math.PI * 2);
-  ctx.fillStyle = "#f4f1ea";
+  ctx.fillStyle = extendedEnd ? "#e4b15a" : "#f4f1ea";
   ctx.fill();
   ctx.lineWidth = 2;
-  ctx.strokeStyle = color;
+  ctx.strokeStyle = extendedEnd ? "#e4b15a" : color;
   ctx.stroke();
   if (hover) {
     ctx.setLineDash([3, 3]);
@@ -162,11 +196,44 @@ function paintChart(canvas, state, hover) {
   }
 }
 
+function isExtendedPoint(point) {
+  return point?.session === "pre" || point?.session === "post";
+}
+
+function strokeWhere(ctx, coords, accept, color) {
+  ctx.beginPath();
+  let open = false;
+  for (let index = 1; index < coords.length; index += 1) {
+    if (!accept(coords[index - 1].point, coords[index].point)) {
+      open = false;
+      continue;
+    }
+    if (!open) {
+      ctx.moveTo(coords[index - 1].x, coords[index - 1].y);
+      open = true;
+    }
+    ctx.lineTo(coords[index].x, coords[index].y);
+  }
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 2.25;
+  ctx.lineJoin = "round";
+  ctx.lineCap = "round";
+  ctx.setLineDash([]);
+  ctx.stroke();
+}
+
+function sessionScrub(point) {
+  if (point?.session === "pre") return "Vorbörse";
+  if (point?.session === "post") return "Nachhandel";
+  return "";
+}
+
 function showScrub(canvas, coord, spanMs) {
   const scrub = canvas.parentElement?.querySelector(".scrub");
   if (!scrub || !coord) return;
+  const phase = sessionScrub(coord.point);
   scrub.hidden = false;
-  scrub.textContent = `${formatScrubWhen(coord.point.t, spanMs)} · ${formatEuroAxis(Number(coord.point.eur))}`;
+  scrub.textContent = `${formatScrubWhen(coord.point.t, spanMs)} · ${formatEuroAxis(Number(coord.point.eur))}${phase ? ` · ${phase}` : ""}`;
 }
 
 function hideScrub(canvas) {

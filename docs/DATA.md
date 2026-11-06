@@ -49,7 +49,7 @@ Der Kurs-Workflow ändert `dataMode` nicht.
 }
 ```
 
-`priceStatus` je Symbol: `ok`, `stale`, `method` (`direct_eur` oder `usd_div_eurusd`), `venue`, `symbol`, `intradayMethod`, `error`.
+`priceStatus` je Symbol: `ok`, `stale`, `method` (`direct_eur` oder `usd_div_eurusd`), `venue`, `symbol`, `intradayMethod`, `overnight` (`nachhandel`, `vorboerse`, `us` oder leer), `error`.
 
 ## `prices.json`
 
@@ -77,12 +77,16 @@ Ticker-Felder:
 | `symbol`, `name`, `role`, `venue` | `role` ist `Fokus`, `Tesla` oder `Vergleich` |
 | `currency` | immer `EUR` für den angezeigten Kurs |
 | `priceEur`, `priceUsd`, `previousCloseEur`, `changeEur`, `changePct` | `changePct` ist die Tagesveränderung in Euro |
-| `dayHighEur`, `dayLowEur` | Tagespanne |
+| `dayHighEur`, `dayLowEur` | Hoch und Tief der regulären Sitzung, die `priceEur` liefert (Xetra, Frankfurt oder Nasdaq). Nicht der Nachthandel |
+| `overnightPhase` | optional: `nachhandel` (US-Nachbörse), `vorboerse` (US-Vorbörse) oder `us` (Nasdaq-Regulärhandel, nachdem der Euro-Platz zu ist). Fehlt oder `null`, wenn keine zweite Notiz da ist |
+| `overnightEur` | letzter Druck dieser Phase in Euro. Der reguläre Schluss in `priceEur` bleibt stehen |
+| `overnightHighEur`, `overnightLowEur` | Hoch und Tief derselben Phase. Bei `nachhandel` und `vorboerse` das Min/Max der geladenen Kerzen, weil die Quelle kein amtliches Overnight-Hoch/Tief liefert. Bei `us` das amtliche `regularMarketDayHigh` / `Low` der Nasdaq, umgerechnet |
+| `overnightAsOf` | Zeit des letzten Drucks, ISO-8601 |
 | `eurMethod` | `direct_eur` (deutscher Handelsplatz) oder `usd_div_eurusd` (Nasdaq geteilt durch EURUSD). Im Seed: `example` |
 | `eurVenue`, `eurSymbol` | z. B. `Xetra` / `TL0.DE`, `Frankfurt` / `6RJ0.F`, sonst `null` |
-| `usdSymbol`, `intradayMethod`, `fxRate` | Referenz und wie der Tagesverlauf entstand |
+| `usdSymbol`, `intradayMethod`, `fxRate` | Referenz und wie der Tagesverlauf entstand. `intradayMethod` zusätzlich `direct_eur_plus_us`, wenn nach dem Euro-Schluss Nasdaq-Punkte angehängt sind |
 | `sparkline` | Liste der letzten Euro-Kurse, kurz |
-| `history.intraday`, `history.1M`, `history.6M`, `history.1Y`, `history.5Y` | Listen aus `{ "t": "<ISO oder Tag>", "eur": 1.23 }`. `5Y` ist Wochenstufe für die Langfrist-Brille |
+| `history.intraday`, `history.1M`, `history.6M`, `history.1Y`, `history.5Y` | Listen aus `{ "t": "<ISO oder Tag>", "eur": 1.23 }`. Intraday darf `session` (`pre`, `regular`, `post`) und bei Dollar-Umrechnung `usd` tragen. `5Y` ist Wochenstufe für die Langfrist-Brille |
 | `recordHighEur` | Höchststand in Euro |
 | `why` | ein kurzer deutscher Satz, warum der Kurs sich bewegt |
 | `whySources` | Quellen nur für diesen Satz |

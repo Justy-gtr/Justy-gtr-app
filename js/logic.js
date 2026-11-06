@@ -612,12 +612,21 @@ export function isInAppUrl(url, origin = location.origin, base = "") {
 
 export function methodLabel(ticker) {
   if (ticker?.example || ticker?.eurMethod === "example") return "Beispielkurs";
+  if (ticker?.intradayMethod === "direct_eur_plus_us" && ticker?.eurVenue) {
+    return `${ticker.eurVenue} · danach Nasdaq`;
+  }
   if (ticker?.eurMethod === "direct_eur") {
     return ticker.eurVenue ? `${ticker.eurVenue} · Euro` : "Euro-Kurs";
   }
   if (ticker?.eurMethod === "usd_div_eurusd") return "in Euro gerechnet";
   return ticker?.venue || "";
 }
+
+export const OVERNIGHT_LABEL = {
+  nachhandel: "Nachhandel",
+  vorboerse: "Vorbörse",
+  us: "US-Handel"
+};
 
 /** Same words the Schwarm/Karl chips show. The badge must use this, not againstCrowd. */
 export function compactStances(item) {

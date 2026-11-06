@@ -605,6 +605,32 @@ body.detail-open .pager { overflow: hidden; }
 .q-px strong { font-size: 17px; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
 .q-px > span { font-size: 13px; }
 .quote .spark { width: 72px; height: 28px; }
+.q-facts {
+  grid-column: 1 / -1;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 1.35;
+  font-variant-numeric: tabular-nums;
+}
+.q-facts p { margin: 0; }
+.day-range, .ext-range { color: var(--muted); }
+.q-ext {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 8px;
+  align-items: baseline;
+  color: var(--ink);
+}
+.q-ext-name { color: var(--gold-2); }
+.q-ext strong { font-weight: 650; letter-spacing: -0.02em; }
+.q-ext .ext-range { flex-basis: 100%; }
+.page-head .q-facts { margin-top: 8px; }
 .why-link {
   position: relative;
   z-index: 2;
