@@ -280,18 +280,18 @@
       "tickers": [
         "RKLB"
       ],
-      "probabilityPct": 85,
+      "probabilityPct": 90,
       "impact": "niedrig",
-      "reasoning": "Die beiden von Rocket Lab gebauten Sonden zünden bei einem Vorbeiflug an der Erde ihre Triebwerke Richtung Mars (Blue ab 4:51 Uhr EST am 7.11., Gold ab 5:51 Uhr EST am 9.11.). Ein Gelingen ist gute Werbung für das Raumfahrzeug-Geschäft, bewegt den Kurs aber kaum; ein Fehlschlag wäre ein Imageschaden kurz vor den Q3-Zahlen.",
+      "reasoning": "Rocket Lab schreibt am frühen 6.11.: Blue und Gold stehen kurz vor dem Trans-Mars-Injection-Manöver (Blue ab 4:51 Uhr EST am 7.11., Gold ab 5:51 Uhr EST am 9.11.). Ich setze 90 %, weil das Unternehmen den Manöver-Start jetzt aktiv ankündigt. Gelingen ist gute Werbung fürs Raumfahrzeug-Geschäft, Kurswirkung gering; ein Fehlschlag wäre Imageschaden vor den Q3-Zahlen am 9.11.",
       "example": false,
       "sources": [
         {
-          "title": "NASA: ESCAPADE-Zwillinge schwingen an der Erde vorbei Richtung Mars",
-          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+          "title": "@RocketLab auf X: See you soon, Mars",
+          "url": "https://x.com/RocketLab/status/2118544706066055248"
         },
         {
-          "title": "Rocket Lab auf X: ESCAPADE vor dem Manöver",
-          "url": "https://x.com/RocketLab/status/2117448175271501907"
+          "title": "NASA: ESCAPADE-Zwillinge Richtung Mars",
+          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
         }
       ]
     },
@@ -336,9 +336,9 @@
     },
     {
       "id": "evt-electron-mountain-god",
-      "title": "Rocket Lab: Electron-Start „The Mountain God Rises“ für iQPS (frühestens 14. Nov.)",
+      "title": "Rocket Lab: 100. Electron-Start „The Mountain God Rises“ für iQPS (Fenster ab 06:30 Berlin)",
       "date": "2026-11-14",
-      "time": null,
+      "time": "06:30",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -346,22 +346,22 @@
       "tickers": [
         "RKLB"
       ],
-      "probabilityPct": 70,
+      "probabilityPct": 75,
       "impact": "niedrig",
-      "reasoning": "Rocket Lab führt den Start auf der eigenen Missionsliste mit „frühestens 14. November“; er bringt den Radarsatelliten QPS-SAR-19 „Yamatsumi-II“ in den Orbit. Der letzte Start am 3.11. war der 99. Electron-Flug, dieser wäre also voraussichtlich der 100., sofern kein anderer Start dazwischenkommt. Meine 70 % gelten für einen Start bis 20. November: Electron startet zuverlässig, verschiebt aber oft um ein paar Tage wegen Wetter. Ein Bericht nannte den 10. November, die offizielle Seite sagt 14. November. Kurs: Routinestarts bewegen RKLB kaum; wichtiger sind die Q3-Zahlen am 9.11.",
+      "reasoning": "Rocket Lab bestätigt auf X den 100. Electron-Flug: QPS-SAR-Satellit, Launch Complex 1 Neuseeland, Fenster ab 05:30 UTC am 14.11. (06:30 Berlin). Meine 75 % gelten für einen Start bis 20. November – Electron ist zuverlässig, Wetter verschiebt oft. Kurswirkung gering; wichtiger bleiben die Q3-Zahlen am 9.11.",
       "example": false,
       "sources": [
         {
-          "title": "Rocket Lab: Startliste (The Mountain God Rises, NET 14.11.2026)",
+          "title": "@RocketLab auf X: 100. Electron, Fenster 14.11.",
+          "url": "https://x.com/RocketLab/status/2118521208639746494"
+        },
+        {
+          "title": "Rocket Lab: Startliste",
           "url": "https://rocketlabcorp.com/missions/launches/"
         },
         {
-          "title": "Rocket Lab: 99. Electron-Mission erfolgreich (02.11.2026)",
+          "title": "Rocket Lab: 99. Electron erfolgreich",
           "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/mission-success-rocket-lab-launches-99th-electron-mission"
-        },
-        {
-          "title": "Tech Times: iQPS-Satellit, Yamatsumi-II folgt",
-          "url": "https://www.techtimes.com/articles/330031/20261104/rocket-lab-launches-iqps-radar-satellite-already-occupied-orbit-first-time.htm"
         }
       ]
     },
@@ -380,8 +380,8 @@
         "RKLB"
       ],
       "probabilityPct": 95,
-      "impact": "mittel",
-      "reasoning": "Der BLS-Bericht erscheint Freitag 6.11. um 14:30 Uhr Berlin. Konsens laut FactSet/Morningstar: etwa +65.000 Nonfarm-Payrolls (nach schwachen +29.000 im September), Arbeitslosenquote unverändert bei 4,2 %, Stundenlöhne +0,3 % zum Vormonat. Stärkere Löhne oder deutlich mehr Jobs könnten die Chance auf eine weitere Fed-Anhebung im Dezember stützen und Wachstumsaktien belasten; eine schwache Zahl würde Tech eher entlasten.",
+      "impact": "hoch",
+      "reasoning": "Der BLS-Bericht erscheint Freitag 6.11. um 14:30 Uhr Berlin. Dow-Jones-Konsens laut CNBC: etwa +59.000 Nonfarm-Payrolls (nach schwachen +29.000 im September), Arbeitslosenquote unverändert bei 4,2 %, Lohnwachstum rund 2,9 % zum Vorjahr. Nach dem Tech-Ausverkauf vom Donnerstag gilt der Bericht als nächster Katalysator: eine „Goldilocks“-Zahl (mäßig, stabile Quote, zahme Löhne) könnte Wachstumsaktien entlasten; ein heißer Lohn- oder Payroll-Schub würde Fed-Zinsängste neu befeuern.",
       "example": false,
       "sources": [
         {
@@ -389,8 +389,12 @@
           "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
         },
         {
-          "title": "Morningstar: Erwartungen Oktober-Jobsbericht (Konsens ~65k)",
-          "url": "https://www.morningstar.com/economy/october-jobs-report-seen-showing-resilient-labor-market"
+          "title": "CNBC: Vorschau Oktober-Jobsbericht (Konsens ~59k)",
+          "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
+        },
+        {
+          "title": "NBC News: Oktober-Jobsbericht, KI und Feiertagseinstellungen",
+          "url": "https://www.nbcnews.com/business/economy/october-jobs-report-ai-holiday-hiring-rcna607614"
         }
       ]
     },
@@ -840,7 +844,7 @@
     },
     {
       "id": "evt-falcon9-ussf432",
-      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force",
+      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force (Fenster ab heute Abend PT)",
       "date": "2026-11-07",
       "time": "01:46",
       "timezone": "Europe/Berlin",
@@ -850,14 +854,72 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 80,
+      "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "Start aus Vandenberg im Vier-Stunden-Fenster ab 16:46 Uhr Ortszeit am 6.11. (in Berlin 01:46 Uhr am 7.11.), Ersatztermin einen Tag später. Falcon 9 startet sehr verlässlich; Verschiebungen kommen meist durch Wetter oder Technik. Routine, bewegt den Kurs kaum.",
+      "reasoning": "SpaceX zielt auf Freitag 6.11., Vier-Stunden-Fenster ab 16:46 Uhr Ortszeit Vandenberg (in Berlin 01:46 Uhr am 7.11.), Ersatztermin Samstag. Erste Stufe landet auf dem Drohnenschiff Of Course I Still Love You; Live-Webcast ca. 10 Minuten vor dem Start. Falcon 9 startet sehr verlässlich – ich hebe auf 85 %, weil der Termin jetzt offiziell für heute bestätigt ist. Routine-Militärmission, Kurswirkung gering.",
       "example": false,
       "sources": [
         {
-          "title": "The Grid Fin: This Week in SpaceX (USSF-432)",
-          "url": "https://thegridfin.com/this-week-in-spacex-nov-1-2026/"
+          "title": "SpaceX: USSF-432 Mission",
+          "url": "https://www.spacex.com/launches/ussf432"
+        },
+        {
+          "title": "Next Spaceflight: USSF-432",
+          "url": "https://www.nextspaceflight.com/launches/details/8444/"
+        }
+      ]
+    },
+    {
+      "id": "evt-falcon9-ussf627",
+      "title": "SpaceX: Falcon-9-Start USSF-627 für die Space Force",
+      "date": "2026-11-10",
+      "time": "04:03",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "start",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 80,
+      "impact": "niedrig",
+      "reasoning": "SpaceX zielt auf Montag 9.11., Vier-Stunden-Fenster ab 19:03 Uhr Ortszeit Vandenberg (in Berlin 04:03 Uhr am 10.11.), Ersatzdienstag. Klassifizierte Space-Force-Mission, Booster-Landung auf Of Course I Still Love You. Falcon-9-Routine, Kurswirkung gering.",
+      "example": false,
+      "sources": [
+        {
+          "title": "SpaceX: USSF-627 Mission",
+          "url": "https://www.spacex.com/launches/ussf627"
+        },
+        {
+          "title": "Next Spaceflight: USSF-627",
+          "url": "https://nextspaceflight.com/launches/details/8446/"
+        }
+      ]
+    },
+    {
+      "id": "evt-falcon9-ussf317",
+      "title": "SpaceX: Falcon-9-Start USSF-317 für die Space Force",
+      "date": "2026-11-13",
+      "time": "05:23",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "start",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 75,
+      "impact": "niedrig",
+      "reasoning": "SpaceX zielt auf Donnerstag 12.11., Vier-Stunden-Fenster ab 20:23 Uhr Ortszeit Vandenberg (in Berlin 05:23 Uhr am 13.11.), Ersatzfreitag. Dritter Space-Force-Start innerhalb einer Woche von derselben Rampe – deshalb etwas niedrigere Wahrscheinlichkeit wegen Turnaround-Risiko. Kurswirkung gering.",
+      "example": false,
+      "sources": [
+        {
+          "title": "SpaceX: USSF-317 Mission",
+          "url": "https://www.spacex.com/launches/ussf317"
+        },
+        {
+          "title": "Next Spaceflight: USSF-317",
+          "url": "https://nextspaceflight.com/launches/details/8335/"
         }
       ]
     }

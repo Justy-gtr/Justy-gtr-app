@@ -1,47 +1,140 @@
 {
   "example": false,
-  "asOf": "2026-11-05T22:06:13+01:00",
+  "asOf": "2026-11-06T05:10:00+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.35,
-      "label": "leicht positiv in den Posts, Kurs weiter unter Druck",
-      "summary": "Am Abend teilt Musk Gutes zum Rechenzentrum in Arizona und findet Hinojosas Texas-Aussage „interessant“: Genehmigte Rechenzentren dürfen fertig werden. Offizielle SpaceX-Konten ohne neue Posts. Der Kurs schloss trotzdem rund 9 % tiefer.",
+      "score": 0.2,
+      "label": "ruhig vor Jobsbericht und Falcon-Start",
+      "summary": "Über Nacht nur ein kleiner Musk-Repost zu X-Bot-Werbung. Offizielles @SpaceX ohne neue Posts. Heute zählen der US-Jobsbericht (14:30) und der Falcon-9-Start USSF-432 (Fenster ab 01:46 Berlin am Samstag).",
       "sources": [
         {
-          "title": "@elonmusk auf X (Texas-Rechenzentren)",
-          "url": "https://x.com/elonmusk/status/2118431051253239889"
+          "title": "@elonmusk auf X (@bot-Werbung)",
+          "url": "https://x.com/elonmusk/status/2118449567981310309"
         },
         {
-          "title": "@elonmusk auf X (Cochise)",
-          "url": "https://x.com/elonmusk/status/2118430590609612989"
+          "title": "SpaceX: USSF-432",
+          "url": "https://www.spacex.com/launches/ussf432"
         },
         {
-          "title": "Yahoo Finance: Börse am 05.11.2026 (Nasdaq −5 %, Chip-Ausverkauf)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
+          "title": "CNBC: Vorschau Oktober-Jobsbericht",
+          "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
         }
       ]
     },
     "TSLA": {
-      "score": 0.25,
-      "label": "verhalten positiv in den Posts, Kurs stark im Minus",
-      "summary": "Musk reagiert gelassen auf die Wahl („Nett von ihm“ zu Talarico) und staunt über den Rekord-Verlust an der Börse („Wow“). Offizielles @Tesla ohne neue Posts. Der Kurs schloss in New York fast 11 % tiefer.",
+      "score": 0.1,
+      "label": "ruhig, Kursdruck vom Vortag unverändert",
+      "summary": "Keine neuen Musk- oder Tesla-Posts mit Kursrelevanz über Nacht. Der Midterm-/Chip-Ausverkauf vom Donnerstag bleibt der dominante Treiber; heute der Jobsbericht als nächster Makro-Katalysator.",
       "sources": [
         {
-          "title": "@elonmusk auf X (Talarico)",
-          "url": "https://x.com/elonmusk/status/2118433402940772528"
+          "title": "Reuters/Investing: Nasdaq tief nach Midterm-KI-Sorgen",
+          "url": "https://www.investing.com/news/stock-market-news/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-on-chip-weakness-5003237"
         },
         {
-          "title": "@elonmusk auf X (Wow)",
-          "url": "https://x.com/elonmusk/status/2118430822198063520"
+          "title": "CNBC: Vorschau Oktober-Jobsbericht",
+          "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
+        }
+      ]
+    },
+    "RKLB": {
+      "score": 0.45,
+      "label": "positiv operativ, Kurs folgt dem Sektor",
+      "summary": "Rocket Lab meldet den baldigen Mars-Einschuss der ESCAPADE-Sonden und nennt Fenster und Ziel für den 100. Electron-Flug am 14.11. Operativ stark – der Kurs hängt weiter am Tech-Sektor.",
+      "sources": [
+        {
+          "title": "@RocketLab auf X (ESCAPADE)",
+          "url": "https://x.com/RocketLab/status/2118544706066055248"
         },
         {
-          "title": "Yahoo Finance: Börse am 05.11.2026 (Nasdaq −5 %, Chip-Ausverkauf)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
+          "title": "@RocketLab auf X (100. Electron)",
+          "url": "https://x.com/RocketLab/status/2118521208639746494"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-rklb-2118521208639746494",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-06T02:49:51+01:00",
+      "summaryDe": "Rocket Lab kündigt den 100. Electron-Flug an: „The Mountain God Rises“ mit einem QPS-SAR-Satelliten, frühestens Samstag 14. November, Fenster ab 06:30 Uhr Berlin (05:30 UTC) von Launch Complex 1 in Neuseeland.",
+      "originalText": "Electron's 100th mission. It's almost time. \"The Mountain God Rises\" will carry a QPS-SAR satellite… no earlier than Saturday Nov 14.",
+      "url": "https://x.com/RocketLab/status/2118521208639746494",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (100. Electron)",
+          "url": "https://x.com/RocketLab/status/2118521208639746494"
+        },
+        {
+          "title": "Rocket Lab: Startliste",
+          "url": "https://rocketlabcorp.com/missions/launches/"
+        }
+      ]
+    },
+    {
+      "id": "post-rklb-2118544706066055248",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-06T04:23:13+01:00",
+      "summaryDe": "Rocket Lab: Die ESCAPADE-Zwillinge Blue und Gold stehen kurz vor dem Mars-Einschussmanöver. Seit dem Start vor zwölf Monaten fliegen die für NASA und UC Berkeley gebauten Sonden im All.",
+      "originalText": "See you soon, Mars. Our twin spacecraft – Blue & Gold – are about to execute a trans-Mars Injection maneuver…",
+      "url": "https://x.com/RocketLab/status/2118544706066055248",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (ESCAPADE TMI)",
+          "url": "https://x.com/RocketLab/status/2118544706066055248"
+        },
+        {
+          "title": "NASA: ESCAPADE-Zwillinge Richtung Mars",
+          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118449567981310309",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T22:05:10+01:00",
+      "summaryDe": "Musk teilt einen Beitrag: Ein YouTube-Kanal lässt den X-Bot (@bot) Werbepartner suchen und E-Mails sortieren – das ändere das Geschäftsmodell und könne die Einnahmen stark steigern.",
+      "originalText": "RT @DrKnowItAll16: So for my YouTube channel, having @bot take charge of ad integrations is beginning to pay off…",
+      "url": "https://x.com/elonmusk/status/2118449567981310309",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI",
+        "X"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118449567981310309"
+        },
+        {
+          "title": "Original: @DrKnowItAll16 zu @bot und Werbe-Partnern",
+          "url": "https://x.com/DrKnowItAll16/status/2118341564262973607"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118449282231799974",
       "account": "@elonmusk",
