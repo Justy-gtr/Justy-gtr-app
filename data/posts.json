@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-07T06:30:00+01:00",
+  "asOf": "2026-11-07T08:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.55,
@@ -61,6 +61,62 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2118949190713889136",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T07:10:29+01:00",
+      "summaryDe": "Musk: Der Cybertruck wird noch etwa 8 bis 9 Monate gebaut, dann konzentriert sich Tesla auf mehr Cybercabs. Bestätigt den Plan vom 6.11.",
+      "originalText": "We are still building Cybertruck for another 8 or 9 months btw, but then Tesla needs to focus on scaling Cybercab. There will never be another vehicle like it.",
+      "url": "https://x.com/elonmusk/status/2118949190713889136",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Cybertruck noch 8–9 Monate",
+          "url": "https://x.com/elonmusk/status/2118949190713889136"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118882656230518829",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T02:46:06+01:00",
+      "summaryDe": "Musk zum Rücktritt von Google-Manager Don Harrison aus dem SpaceX-Aufsichtsgremium: zu viele Interessenkonflikte mit Alphabet. Laut Pflichtmeldung kein Streit; Google bleibt Partner und größter institutioneller Aktionär.",
+      "originalText": "Don has been a great board member. Very much appreciate his contributions. At this point, there are simply too many conflicts of interest with Alphabet, so he decided to step down.",
+      "url": "https://x.com/elonmusk/status/2118882656230518829",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Don Harrison",
+          "url": "https://x.com/elonmusk/status/2118882656230518829"
+        },
+        {
+          "title": "CNBC: SpaceX says Google exec Don Harrison has resigned from its board",
+          "url": "https://www.cnbc.com/2026/11/06/tesdonald-harrison.html"
+        },
+        {
+          "title": "SPCX 8-K (StockTitan)",
+          "url": "https://www.stocktitan.net/sec-filings/SPCX/8-k-space-exploration-technologies-corp-reports-material-event-f0d24a0a9064.html"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118935230182805688",
       "account": "@elonmusk",
