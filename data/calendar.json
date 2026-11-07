@@ -5,7 +5,7 @@
       "id": "evt-starship-flight15",
       "title": "Starship Flight 15: erster Versuch, Booster und Schiff zu fangen (Ziel 13. Nov.)",
       "date": "2026-11-13",
-      "time": null,
+      "time": "23:45",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -15,7 +15,7 @@
       ],
       "probabilityPct": 65,
       "impact": "hoch",
-      "reasoning": "SpaceX bestätigt offiziell: Flight 15 zielt auf frühestens Freitag 13.11., vorbehaltlich Zulassung; Blog „Returning Starship to the Launch Site“ beschreibt erstmals den Ship-Catch-Ablauf (Orbit ~21 h, Deorbit, Bellyflop, Chopsticks an Pad 2). Dontchev/Teslarati hatten 13.11. schon genannt; FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin. Musk „more likely than not“ für Ship-Catch. Daher 60→65 % (Δ +5): offizielle SpaceX-Zielangabe + detaillierter Catch-Plan. Lizenzänderung und Fang-Risiko bleiben. Impact hoch für SPCX.",
+      "reasoning": "SpaceX bestätigt offiziell: Flight 15 zielt auf frühestens Freitag 13.11., vorbehaltlich Zulassung; Berichte/Sawyer nennen ~17:45 ET / 16:45 CT (= 23:45 Berlin). Blog „Returning Starship to the Launch Site“ beschreibt Ship-Catch (Orbit ~21 h, Deorbit, Bellyflop, Chopsticks Pad 2) plus fünf Contingency-Splashdowns. FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin. Musk „more likely than not“ für Ship-Catch. 65 % unverändert: offizielle Zielangabe + Catch-Plan; Lizenz und Fang-Risiko bleiben. Impact hoch für SPCX.",
       "example": false,
       "sources": [
         {
@@ -57,6 +57,10 @@
         {
           "title": "The Space Road: Flight 15 NET 13. Nov.",
           "url": "https://thespaceroad.com/launches/starship-flight-15/"
+        },
+        {
+          "title": "@XFreeze: fünf Contingency-Landeoptionen Flight 15",
+          "url": "https://x.com/XFreeze/status/2119123323225612354"
         }
       ]
     },
@@ -310,7 +314,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 18:00 Berlin: gut sieben Stunden nach dem Burn weiter keine offizielle Meldung von NASA-Blog, @NASA, @NASASolarSystem, @RocketLab oder @escapade_mars — weder Erfolg noch Panne. NASA selbst schreibt, die Bahnqualität werde erst mehrere Tage nach dem Burn beurteilt. Das Schweigen allein ist daher kein Beleg für einen Fehlschlag. 85 % bleiben; Tagesfrage outcome null bis zur offiziellen Meldung. Kurswirkung gering.",
+      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 20:00 Berlin: knapp neun Stunden nach dem Burn weiter keine offizielle Meldung von NASA-Blog, @NASA, @NASASolarSystem, @RocketLab oder @escapade_mars — weder Erfolg noch Panne. Space Tap (Update 7.11.) wartet ebenfalls auf Bestätigung. NASA: Bahnqualität erst mehrere Tage danach. Wahrscheinlichkeit unverändert 85 % (kein neuer Beleg für Erfolg oder Fehlschlag). Gold-Fenster 9.11. bleibt. Impact mittel für RKLB.",
       "example": false,
       "sources": [
         {
@@ -332,6 +336,10 @@
         {
           "title": "@NASASolarSystem: Flyby #1 (Vorabend)",
           "url": "https://x.com/NASASolarSystem/status/2118761571996586015"
+        },
+        {
+          "title": "The Space Tap: ESCAPADE — outcome not yet confirmed (7.11.)",
+          "url": "https://thespacetap.com/nasa-escapade-earth-flyby-slingshot-mars-nov-7-9/"
         }
       ]
     },
@@ -1076,7 +1084,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "Tesla LatAm und Berichte (Infobae/Clarín/La Nación): Ausstellung Unicenter Martínez ab 20.11.; Model 3/Y erwartet, Verkauf/Testfahrten eher 2027. 85 % für sichtbaren Start am/um den 20.11. Kurswirkung gering.",
+      "reasoning": "Tesla LatAm und Berichte (Infobae/TN 7.11.): Ausstellung Unicenter Martínez ab 20.11.; Model 3/Y erwartet, Verkauf/Testfahrten eher 2027. 85 % für sichtbaren Start am/um den 20.11. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -1090,6 +1098,10 @@
         {
           "title": "LA NACION: Tesla bestätigt 20. November",
           "url": "https://www.lanacion.com.ar/autos/tesla-confirmo-la-fecha-en-la-que-llegara-a-la-argentina-nid06112026/"
+        },
+        {
+          "title": "TN: Tesla Argentinien 20.11. Unicenter",
+          "url": "https://tn.com.ar/autos/novedades/2026/11/07/tesla-anuncio-la-fecha-de-su-llegada-a-la-argentina-donde-se-podran-ver-y-probar-sus-autos/"
         }
       ]
     }

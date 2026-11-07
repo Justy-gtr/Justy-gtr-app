@@ -7089,7 +7089,7 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Freitag-Schluss ~134 $ (~+8,6 % vs. Do): Tech-Dip-Rebound, Jobs, FAA, Baron/>100-Mrd.-Narrativ. USSF-432 über Nacht erfolgreich. Samstag: SpaceX bestätigt Flight 15 NET 13.11. mit erstem Ship-Catch-Plan (Blog + X). Wochenende ruhig — Montag USSF-627 und CPI im Blick.",
+      "why": "Freitag-Schluss ~134 $ (~+8,6 % vs. Do): Tech-Dip-Rebound, Jobs, FAA, Baron/>100-Mrd.-Narrativ. Samstag: Flight 15 NET 13.11. + Ship-Catch-Blog; Musk zu Flugmanövern und Alphabet-Nachkauf (SEC). Wochenende ruhig — Montag USSF-627 und CPI im Blick.",
       "whySources": [
         {
           "title": "Yahoo Finance: SPCX",
@@ -7104,8 +7104,8 @@
           "url": "https://www.spacex.com/updates/"
         },
         {
-          "title": "@SpaceX: USSF-432 to orbit",
-          "url": "https://x.com/SpaceX/status/2118953789357281607"
+          "title": "@elonmusk: Interesting (Alphabet/SPCX)",
+          "url": "https://x.com/elonmusk/status/2119135865662300669"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -14088,19 +14088,23 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "US-Schluss Freitag ~358 $ (~+4 %): Cybercab-Narrativ, Rebound, Baron-Chat. Marktstart Argentinien 20.11. bestätigt. Wochenende ruhig; keine neuen Tesla-Unternehmensposts. Xetra ~324 € unter Vorwoche.",
+      "why": "US-Schluss Freitag ~358 $ (~+4 %): Cybercab-Narrativ, Rebound, Baron-Chat. Samstagabend: Musk meldet großen Cybertruck-Auftragsstau und Extra-Schicht vor Cybercab-Umbau (Juni/Juli 2027). Argentinien 20.11. bestätigt. Wochenende ohne Börsenhandel.",
       "whySources": [
         {
           "title": "Yahoo Finance: TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
+          "title": "@elonmusk: Cybertruck backlog / extra shift",
+          "url": "https://x.com/elonmusk/status/2119130949434888330"
+        },
+        {
           "title": "@Tesla: Argentina later this month",
           "url": "https://x.com/Tesla/status/2118720752379899907"
         },
         {
-          "title": "Infobae: Tesla Argentinien 20.11.",
-          "url": "https://www.infobae.com/economia/2026/11/06/tesla-confirmo-su-llegada-a-la-argentina-para-los-proximos-dias-los-detalles-del-desembarco-de-los-autos-electricos-de-elon-musk/"
+          "title": "TN: Tesla Argentinien 20.11.",
+          "url": "https://tn.com.ar/autos/novedades/2026/11/07/tesla-anuncio-la-fecha-de-su-llegada-a-la-argentina-donde-se-podran-ver-y-probar-sus-autos/"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -18451,7 +18455,7 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "US-Schluss Freitag ~53 $ (~+15 %): Space-/Defense-Rebound, Neutron-Dome. ESCAPADE-Blue-TMI-Zeit (~10:51 Berlin) seit ~7 h vorbei — Stand 18:00 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA: Bahncheck erst in mehreren Tagen). Q3 Montag, Electron-100 NET 14.11.",
+      "why": "US-Schluss Freitag ~53 $ (~+15 %): Space-/Defense-Rebound, Neutron-Dome. ESCAPADE-Blue-TMI-Zeit (~10:51 Berlin) seit ~9 h vorbei — Stand 20:00 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA: Bahncheck erst in mehreren Tagen). Q3 Montag, Electron-100 NET 14.11.",
       "whySources": [
         {
           "title": "Yahoo Finance: RKLB",
@@ -18466,8 +18470,8 @@
           "url": "https://science.nasa.gov/blogs/escapade/"
         },
         {
-          "title": "NASA: ESCAPADE Twin Spacecraft (2.11.)",
-          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+          "title": "The Space Tap: outcome not confirmed",
+          "url": "https://thespacetap.com/nasa-escapade-earth-flyby-slingshot-mars-nov-7-9/"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",

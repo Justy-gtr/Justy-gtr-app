@@ -5,9 +5,9 @@
     "date": "2026-11-07",
     "question": "Gelingt ESCAPADE-Sonde Blue heute das Trans-Mars-Injection-Manöver (TMI-Burn ~10:51 Berlin) laut NASA/Rocket Lab?",
     "karlAnswer": "ja",
-    "karlReason": "Knapp „ja“, etwa 80 zu 20 vor dem Burn. NASA/Rocket Lab hielten Blue für Samstag 4:51 EST / 10:51 Berlin fest. Stand 18:00 Berlin: gut sieben Stunden nach dem Burn gibt es weiter keine offizielle Meldung von NASA, Rocket Lab oder @escapade_mars — weder Erfolg noch Fehlschlag. NASA schreibt, die Bahnqualität werde erst mehrere Tage danach beurteilt. Darum bleibt die Frage offen (outcome null); nächster Check 20:00. Gold folgt am 9.11.",
+    "karlReason": "Knapp „ja“, etwa 80 zu 20 vor dem Burn. NASA/Rocket Lab hielten Blue für Samstag 4:51 EST / 10:51 Berlin fest. Stand 20:00 Berlin: knapp neun Stunden nach dem Burn weiter keine offizielle Meldung von NASA-Blog, @NASA, @RocketLab oder @escapade_mars — weder Erfolg noch Fehlschlag. Space-Tap und NASA-Blog (letzter Eintrag 2.11.) warten weiter auf Bestätigung; NASA schreibt, die Bahnqualität werde erst mehrere Tage danach beurteilt. Darum bleibt die Frage offen (outcome null); nächster Check 22:00. Gold folgt am 9.11.",
     "outcome": null,
-    "resolvesAt": "2026-11-07T20:00:00+01:00",
+    "resolvesAt": "2026-11-07T22:00:00+01:00",
     "sources": [
       {
         "title": "NASA: ESCAPADE Twin Spacecraft",
@@ -24,6 +24,10 @@
       {
         "title": "NASA ESCAPADE Blog-Archiv",
         "url": "https://science.nasa.gov/blogs/escapade/"
+      },
+      {
+        "title": "The Space Tap: ESCAPADE flyby — outcome not yet confirmed",
+        "url": "https://thespacetap.com/nasa-escapade-earth-flyby-slingshot-mars-nov-7-9/"
       }
     ]
   },

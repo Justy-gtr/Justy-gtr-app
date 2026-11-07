@@ -1,15 +1,19 @@
 {
   "example": false,
-  "asOf": "2026-11-07T18:00:00+01:00",
+  "asOf": "2026-11-07T20:10:00+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.35,
+      "score": 0.38,
       "label": "zuversichtlich",
-      "summary": "SpaceX bestätigt Flight 15 NET 13.11. mit Ship-Catch-Plan; USSF-432 erfolgreich. Wochenende ohne Kurs — Montag USSF-627 und CPI im Blick.",
+      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan und Contingency-Optionen; Musk zu Flugmanövern und Alphabet-Nachkauf. Wochenende ohne Kurs — Montag USSF-627 und CPI.",
       "sources": [
         {
           "title": "@SpaceX: Flight 15 catch",
           "url": "https://x.com/SpaceX/status/2119093662957060389"
+        },
+        {
+          "title": "@elonmusk: Starship flight maneuvers",
+          "url": "https://x.com/elonmusk/status/2119114815931039992"
         },
         {
           "title": "SpaceX Updates: Returning Starship",
@@ -18,45 +22,142 @@
       ]
     },
     "TSLA": {
-      "score": 0.25,
+      "score": 0.15,
       "label": "leicht zuversichtlich",
-      "summary": "Freitag-Rebound (~+4 % US) hält als Narrative; über Nacht Neuralink-Geh-/Hand-Vision und Terafab-Recruiting. Xetra bleibt unter Vorwoche — Regulierung und Texas-Risiken. Wochenende ruhig bis Montag CPI.",
+      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. Wochenende ruhig.",
       "sources": [
         {
-          "title": "@elonmusk: Neuralink walk",
-          "url": "https://x.com/elonmusk/status/2118884500201787770"
+          "title": "@elonmusk: Cybertruck backlog",
+          "url": "https://x.com/elonmusk/status/2119130949434888330"
         },
         {
-          "title": "@elonmusk: Terafab",
-          "url": "https://x.com/elonmusk/status/2118854441063600539"
-        },
-        {
-          "title": "Yahoo Finance: TSLA",
-          "url": "https://finance.yahoo.com/quote/TSLA/"
+          "title": "@Tesla: Argentina later this month",
+          "url": "https://x.com/Tesla/status/2118720752379899907"
         }
       ]
     },
     "RKLB": {
-      "score": 0.35,
-      "label": "zuversichtlich vor ESCAPADE/Q3",
-      "summary": "Freitag ~+15 % US mit Space-Rebound. Heute ~10:51 Berlin: ESCAPADE-Blue-TMI (noch ausstehend); Gold am 9.11.; Q3-Zahlen Montagabend. Electron-100 NET 14.11.",
+      "score": 0.05,
+      "label": "abwartend",
+      "summary": "ESCAPADE-Blue-TMI-Zeit vorbei, Stand 20:00 weiter keine offizielle NASA/Rocket-Lab-Bestätigung. Q3 Montag, Electron-100 NET 14.11.",
       "sources": [
         {
-          "title": "@RocketLab: ESCAPADE",
+          "title": "NASA ESCAPADE Blog",
+          "url": "https://science.nasa.gov/blogs/escapade/"
+        },
+        {
+          "title": "@RocketLab: ESCAPADE (Vorabend)",
           "url": "https://x.com/RocketLab/status/2118834083279306990"
         },
         {
-          "title": "NASA ESCAPADE blog",
-          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
-        },
-        {
-          "title": "Yahoo Finance: RKLB",
-          "url": "https://finance.yahoo.com/quote/RKLB/"
+          "title": "The Space Tap: outcome not confirmed",
+          "url": "https://thespacetap.com/nasa-escapade-earth-flyby-slingshot-mars-nov-7-9/"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2119130949434888330",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T19:12:44+01:00",
+      "summaryDe": "Musk: Der Cybertruck-Auftragsstau ist deutlich größer als die Produktion bis zur Linien-Umstellung auf Cybercab (ca. Juni/Juli 2027). Extra-Schicht soll alle Bestellungen rechtzeitig abarbeiten.",
+      "originalText": "The Tesla Cybertruck order backlog is currently far more than we can make before dismantling the line for Cybercab expansion around June/July next year. \n\nWe will add an extra shift to try to get all orders done in time.",
+      "url": "https://x.com/elonmusk/status/2119130949434888330",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Cybertruck backlog / extra shift",
+          "url": "https://x.com/elonmusk/status/2119130949434888330"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119114815931039992",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T18:08:38+01:00",
+      "summaryDe": "Musk teilt Visualisierung zu Starship-Flugmanövern — Kontext Flight 15 und Rückkehr zum Startplatz.",
+      "originalText": "Starship flight maneuvers",
+      "url": "https://x.com/elonmusk/status/2119114815931039992",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Starship flight maneuvers",
+          "url": "https://x.com/elonmusk/status/2119114815931039992"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119131060806074732",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T19:13:11+01:00",
+      "summaryDe": "Musk: „Starlink rettet Leben“ — Bezug auf Hilfseinsatz mit Starlink nach Erdbeben in Indonesien.",
+      "originalText": "Starlink saves lives",
+      "url": "https://x.com/elonmusk/status/2119131060806074732",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Starlink saves lives",
+          "url": "https://x.com/elonmusk/status/2119131060806074732"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119135865662300669",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T19:32:16+01:00",
+      "summaryDe": "Musk kommentiert Bericht, Alphabet habe im Q3 weitere ~3,85 Mio. SpaceX-Aktien gekauft (SEC); Portfolio stark auf SPCX konzentriert — „Interesting“.",
+      "originalText": "Interesting",
+      "url": "https://x.com/elonmusk/status/2119135865662300669",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Interesting (Alphabet/SPCX)",
+          "url": "https://x.com/elonmusk/status/2119135865662300669"
+        },
+        {
+          "title": "@cb_doge: Alphabet +3.85M SpaceX shares Q3",
+          "url": "https://x.com/cb_doge/status/2119087204446400776"
+        }
+      ]
+    },
     {
       "id": "post-spacex-2119093662957060389",
       "account": "@SpaceX",
