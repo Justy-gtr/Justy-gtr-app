@@ -13,9 +13,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 58,
+      "probabilityPct": 60,
       "impact": "hoch",
-      "reasoning": "Ziel Freitag 13.11. (Dontchev/Teslarati). Erster Doppel-Fang Booster+Schiff geplant; Musk „more likely than not“ für Ship-Catch. Stand 13:00 Berlin 7.11.: FAA-Lizenz für Flight 15 öffentlich noch nicht gelistet — Hardware (B22/S42) static-fired, Termin weiter NET. 58 %: Termin + Lizenz + Fang-Risiko. Impact hoch für SPCX-Narrativ.",
+      "reasoning": "Ziel Freitag 13.11. (Dontchev/Teslarati). Erster Doppel-Fang Booster+Schiff geplant; Musk „more likely than not“ für Ship-Catch. Neu am 7.11.: Die FAA hat einen Luftraum-Hinweis (NOTAM) für den Wiedereintritt veröffentlicht — ab 13.11. 23:53 Berlin, Ersatztage bis 19.11. Das stützt den Termin. Die Startlizenz für Flight 15 ist öffentlich aber noch nicht gelistet. Daher leicht rauf auf 60 %: Termin + Lizenz + Fang-Risiko. Impact hoch für SPCX-Narrativ.",
       "example": false,
       "sources": [
         {
@@ -37,6 +37,14 @@
         {
           "title": "@elonmusk: 5 years ago Mechazilla ship catch",
           "url": "https://x.com/elonmusk/status/2118935230182805688"
+        },
+        {
+          "title": "@XSpacelover: Wiedereintritts-NOTAM ab 13.11. 22:53 UTC",
+          "url": "https://x.com/XSpacelover/status/2119068536391790851"
+        },
+        {
+          "title": "The Space Road: Flight 15 NET 13. Nov.",
+          "url": "https://thespaceroad.com/launches/starship-flight-15/"
         }
       ]
     },
@@ -290,7 +298,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 14:00 Berlin: über drei Stunden nach dem Burn noch keine Meldung von NASA-Blog, @NASA, @RocketLab oder @escapade_mars — weder Erfolg noch Panne. Längeres Schweigen ist ein kleines Warnzeichen (im Dez. 2025 gab es bei einer Sonde schon einmal zu wenig Schub), daher leicht runter auf 85 %. Tagesfrage löst um 16:00. Kurswirkung gering; Gelingen wäre gute Werbung vor Rocket Labs Q3 am 9.11.",
+      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 16:00 Berlin: gut fünf Stunden nach dem Burn noch keine Meldung von NASA-Blog, @NASA, @RocketLab oder @escapade_mars — weder Erfolg noch Panne. Am Wochenende kommen Meldungen oft später; das Schweigen allein ist kein Beleg für ein Problem. Daher bleibt es bei 85 %. Tagesfrage bleibt offen, bis es eine offizielle Meldung gibt. Kurswirkung gering; Gelingen wäre gute Werbung vor Rocket Labs Q3 am 9.11.",
       "example": false,
       "sources": [
         {
