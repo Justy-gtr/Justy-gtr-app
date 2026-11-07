@@ -288,9 +288,9 @@
       "tickers": [
         "RKLB"
       ],
-      "probabilityPct": 90,
+      "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 13:00 Berlin: Burn-Zeit seit über zwei Stunden vorbei, aber weder NASA-Blog noch @RocketLab/@escapade_mars/@NASA haben Erfolg oder Panne gemeldet. Deshalb bleibt es ehrlich bei 90 %, Tagesfrage löst erst um 16:00. Kurswirkung gering; Gelingen wäre gute Werbung vor Rocket Labs Q3 am 9.11.",
+      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 14:00 Berlin: über drei Stunden nach dem Burn noch keine Meldung von NASA-Blog, @NASA, @RocketLab oder @escapade_mars — weder Erfolg noch Panne. Längeres Schweigen ist ein kleines Warnzeichen (im Dez. 2025 gab es bei einer Sonde schon einmal zu wenig Schub), daher leicht runter auf 85 %. Tagesfrage löst um 16:00. Kurswirkung gering; Gelingen wäre gute Werbung vor Rocket Labs Q3 am 9.11.",
       "example": false,
       "sources": [
         {
