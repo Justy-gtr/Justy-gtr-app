@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-07T08:30:00+01:00",
+  "asOf": "2026-11-07T09:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.55,
@@ -61,6 +61,34 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2118967587069673914",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T08:23:35+01:00",
+      "summaryDe": "Musk stellt klar: Ein angebliches Zitat von ihm, Binance bremse mit 80 % Marktanteil den Krypto-Markt, ist erfunden. Binance-Gründer CZ hatte den Beitrag schon als Falschmeldung bezeichnet.",
+      "originalText": "Yeah, I never wrote anything like that. This is made up.",
+      "url": "https://x.com/elonmusk/status/2118967587069673914",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: This is made up",
+          "url": "https://x.com/elonmusk/status/2118967587069673914"
+        },
+        {
+          "title": "@cz_binance: false info",
+          "url": "https://x.com/cz_binance/status/2118954119134359767"
+        },
+        {
+          "title": "Angebliches Zitat (@MartiniGuyYT)",
+          "url": "https://x.com/MartiniGuyYT/status/2118935710875168879"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118949190713889136",
       "account": "@elonmusk",
