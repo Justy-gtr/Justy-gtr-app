@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-07T09:30:00+01:00",
+  "asOf": "2026-11-07T13:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.55,
@@ -61,6 +61,34 @@
     }
   },
   "posts": [
+    {
+      "id": "post-spacex-2118953789357281607",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-07T07:28:46+01:00",
+      "summaryDe": "SpaceX bestätigt: Falcon 9 hat USSF-432 von Pad 4E in Kalifornien in die Umlaufbahn gebracht — offizielle Nachbestätigung nach Liftoff und Booster-Landung.",
+      "originalText": "Falcon 9 launches USSF-432 to orbit from pad 4E in California",
+      "url": "https://x.com/SpaceX/status/2118953789357281607",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX: USSF-432 to orbit",
+          "url": "https://x.com/SpaceX/status/2118953789357281607"
+        },
+        {
+          "title": "SpaceX: USSF-432 Mission",
+          "url": "https://www.spacex.com/launches/ussf432"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118967587069673914",
       "account": "@elonmusk",

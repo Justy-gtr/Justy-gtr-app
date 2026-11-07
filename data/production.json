@@ -6,7 +6,7 @@
     "target": "2026-11-13T00:00:00+01:00",
     "livestreamUrl": "https://x.com/SpaceX",
     "status": "geplant, Zieltermin SpaceX-Launch-VP – nicht fest",
-    "note": "Kiko Dontchev (SpaceX VP Launch) nannte am 5.11. Freitag 13. November als Ziel. Musk und Launch-Direktorin Diez bekräftigen Doppel-Fang; heute früh erinnerte Musk an die 5-Jahre-Mechazilla-Vision. USSF-432 (Nacht auf Samstag) erfolgreich — nächster SpaceX-Fokus Flight 15 und USSF-627 (Mo/Di).",
+    "note": "Kiko Dontchev (SpaceX VP Launch) nannte am 5.11. Freitag 13. November als Ziel. Musk/Diez bekräftigen Doppel-Fang; FAA-Lizenz öffentlich noch nicht gelistet. USSF-432 erfolgreich. ESCAPADE-Blue-TMI-Zeit vorbei, Bestätigung NASA/Rocket Lab Stand 13:00 ausstehend. Nächster Falcon: USSF-627 Mo/Di.",
     "example": false,
     "sources": [
       {
@@ -26,8 +26,8 @@
         "url": "https://www.spacex.com/launches/ussf627"
       },
       {
-        "title": "@SpaceX: Ship 42 Static Fires",
-        "url": "https://x.com/SpaceX/status/2115476295169814978"
+        "title": "NASA ESCAPADE blog",
+        "url": "https://science.nasa.gov/blogs/escapade/"
       }
     ]
   },

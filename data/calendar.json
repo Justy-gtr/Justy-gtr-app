@@ -15,7 +15,7 @@
       ],
       "probabilityPct": 58,
       "impact": "hoch",
-      "reasoning": "SpaceX-Launch-VP Kiko Dontchev nannte am 5.11. Freitag 13. November als Ziel (Teslarati). Am 6./7.11. bekräftigte Musk den Doppel-Fang (Booster + Ship 42); SpaceX-Launch-Direktorin Shana Diez beschrieb Flight 15 als Wendepunkt — Musk retweetete. Heute früh (06:15 Berlin) zitierte Musk seinen Post von vor fünf Jahren: Mechazilla fängt auch das Schiff. Beide Static Fires durch; FAA-Lizenz für Land-Rückkehr fehlt weiter. 58 % für Start bis 30. November (unverändert seit 05:00); bis Jahresende ~75 %. Kursrisiko hoch bei erneutem Misserfolg.",
+      "reasoning": "Ziel Freitag 13.11. (Dontchev/Teslarati). Erster Doppel-Fang Booster+Schiff geplant; Musk „more likely than not“ für Ship-Catch. Stand 13:00 Berlin 7.11.: FAA-Lizenz für Flight 15 öffentlich noch nicht gelistet — Hardware (B22/S42) static-fired, Termin weiter NET. 58 %: Termin + Lizenz + Fang-Risiko. Impact hoch für SPCX-Narrativ.",
       "example": false,
       "sources": [
         {
@@ -290,7 +290,7 @@
       ],
       "probabilityPct": 90,
       "impact": "niedrig",
-      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 11:45 Berlin: Die Burn-Zeit ist vorbei, aber NASA und Rocket Lab haben das Ergebnis noch nicht gemeldet – weder Erfolg noch Panne. Deshalb bleibt es bei 90 %, bis eine offizielle Bestätigung da ist. Kurswirkung gering; Gelingen wäre gute Werbung vor Rocket Labs Q3-Zahlen am 9.11.",
+      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 13:00 Berlin: Burn-Zeit seit über zwei Stunden vorbei, aber weder NASA-Blog noch @RocketLab/@escapade_mars/@NASA haben Erfolg oder Panne gemeldet. Deshalb bleibt es ehrlich bei 90 %, Tagesfrage löst erst um 16:00. Kurswirkung gering; Gelingen wäre gute Werbung vor Rocket Labs Q3 am 9.11.",
       "example": false,
       "sources": [
         {
@@ -903,7 +903,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "SpaceX zielt weiter auf Montag 9.11., Vier-Stunden-Fenster ab 19:03 Uhr Ortszeit Vandenberg (in Berlin 04:03 Uhr am 10.11.), Ersatzdienstag. Nach erfolgreichem USSF-432 von derselben Rampe etwas höhere Zuversicht (85 %, vorher 80). Klassifizierte Space-Force-Mission, Landung OCISLY. Kurswirkung gering.",
+      "reasoning": "SpaceX-Seite bestätigt weiter Montag 9.11., Vier-Stunden-Fenster ab 19:03 PT Vandenberg (= 04:03 Berlin am 10.11.), Backup Di 10.11. 18:49 PT. Nach erfolgreichem USSF-432 von derselben Rampe 85 %. Klassifizierte Space-Force-Mission, Landung OCISLY. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -1036,7 +1036,7 @@
     },
     {
       "id": "evt-tesla-argentina-nov",
-      "title": "Tesla: Marktstart Argentinien (angekündigt ab ~20. November)",
+      "title": "Tesla: Marktstart Argentinien (20. November, Unicenter)",
       "date": "2026-11-20",
       "time": null,
       "timezone": "Europe/Berlin",
@@ -1046,9 +1046,9 @@
       "tickers": [
         "TSLA"
       ],
-      "probabilityPct": 80,
+      "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "Tesla LatAm nannte den 20. November; offizieller @Tesla-Post und Musk-Reaktion am 6.11. bestätigen „later this month“. 80 % für einen sichtbaren Start bis Monatsende — lokale Zulassung/Logistik kann rutschen. Kurswirkung gering.",
+      "reasoning": "Tesla LatAm und Berichte (Infobae/Clarín/La Nación): Ausstellung Unicenter Martínez ab 20.11.; Model 3/Y erwartet, Verkauf/Testfahrten eher 2027. 85 % für sichtbaren Start am/um den 20.11. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -1056,12 +1056,12 @@
           "url": "https://x.com/Tesla/status/2118720752379899907"
         },
         {
-          "title": "@elonmusk: Tesla Argentina",
-          "url": "https://x.com/elonmusk/status/2118787365426893002"
+          "title": "Infobae: Tesla Argentinien 20. November",
+          "url": "https://www.infobae.com/economia/2026/11/06/tesla-confirmo-su-llegada-a-la-argentina-para-los-proximos-dias-los-detalles-del-desembarco-de-los-autos-electricos-de-elon-musk/"
         },
         {
-          "title": "@Tesla_LatAm: 20 de Noviembre",
-          "url": "https://x.com/Tesla_LatAm/status/2118674774440435905"
+          "title": "LA NACION: Tesla bestätigt 20. November",
+          "url": "https://www.lanacion.com.ar/autos/tesla-confirmo-la-fecha-en-la-que-llegara-a-la-argentina-nid06112026/"
         }
       ]
     }
