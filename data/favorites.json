@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-07",
   "owner": "Karl",
   "title": "Karls Top 10",
   "note": "Zehn Aktien aus dem ganzen Markt, nicht nur aus dem Musk-Umfeld. Kurse in Euro. Tesla und Rocket Lab stehen mit dabei, weil sie schon in der Bilanz sind. Die älteren Themen Starlink und Tesla Energie bleiben im Treffer-Check, sie sind keine eigenen Aktien.",
@@ -47,7 +47,7 @@
       "symbol": "SPCX",
       "name": "SpaceX",
       "score": 7,
-      "reason": "SpaceX wächst stark (Q3 +161 % Umsatz) und verdient Geld; Freitag-Schluss ~134 $ nach Dip, plus Musk-Zielkurve >100 Mrd. $ annualisiert. Gegenwind: Midterm-Aufsicht und Lock-up 8.12.",
+      "reason": "SpaceX wächst stark (Q3 +161 % Umsatz) und verdient Geld; Freitag-Rebound plus erfolgreicher USSF-432-Nachtstart. Vor dem Lock-up 8.12. und Midterm-Aufsicht bleibt der Kurs anfällig — deshalb Halten, nicht Nachkaufen.",
       "horizon": "langfrist",
       "counterArgument": "Die Bewertung von rund 1,9 Billionen US-Dollar setzt voraus, dass die KI-Sparte (SI) ihre riesigen Investitionen zurückverdient: allein im Q3 flossen 16,4 Mrd. US-Dollar Investitionen in SI, mehr als der gesamte Quartalsumsatz. Dazu kommen frei werdende Aktien und ein Kongress, der Musk jetzt genauer prüfen will.",
       "sources": [
@@ -223,7 +223,7 @@
       "priceAsOf": "2026-11-05",
       "priceVenue": "Frankfurt",
       "swarmNote": "In den geführten Konten kommt Rocket Lab kaum vor. Sawyer hat sie auf der Liste, ohne Posts.",
-      "reason": "Rekord-Auftragsbestand, Electron läuft, Neutron-Dome frisch gebaut — Freitag US ~+15 %. Neutron weiter 2027. Q3-Zahlen Montag.",
+      "reason": "Rekord-Auftragsbestand, Electron läuft, Neutron-Dome frisch gebaut; ESCAPADE-Blue-TMI heute und Q3-Zahlen Montag sind die nächsten Checks. Freitag ~+15 % US — nach dem Dip selektiv halten.",
       "counterArgument": "Ohne Neutron bleibt Rocket Lab klein gegen SpaceX. Das Management verkauft seit Monaten Aktien.",
       "example": false,
       "sources": [

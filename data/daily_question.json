@@ -1,29 +1,57 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-07",
+    "id": "2026-11-07-escapade",
     "date": "2026-11-07",
-    "question": "Bringt SpaceX den Falcon-9-Start USSF-432 in der Nacht auf Samstag erfolgreich in den Orbit (Nutzlast getrennt)?",
+    "question": "Gelingt ESCAPADE-Sonde Blue heute das Trans-Mars-Injection-Manöver (TMI-Burn ~10:51 Berlin) laut NASA/Rocket Lab?",
     "karlAnswer": "ja",
-    "karlReason": "Knapp „ja“, etwa 85 zu 15: Next Spaceflight/Space Launch Live melden GO für ~01:48 Berlin von Vandenberg; Booster B1095 (8. Flug), Drohnenschiff bereit. SpaceX-Mission-Seite nennt dasselbe Fenster (Fr 16:48 PT = Sa 01:48 Berlin). Scrub-Risiko Wetter/Range bleibt.",
+    "karlReason": "Knapp „ja“, etwa 80 zu 20: NASA und Rocket Lab halten Blue für Samstag ~4:51 EST / ~10:51 Berlin fest; Zwillinge fliegen seit ~1 Jahr. Restrisiko: Triebwerks-/Navigationsfehler beim Powered Flyby. Gold folgt am 9.11.",
     "outcome": null,
-    "resolvesAt": "2026-11-07T04:30:00+01:00",
+    "resolvesAt": "2026-11-07T16:00:00+01:00",
     "sources": [
       {
-        "title": "Next Spaceflight: USSF-432",
-        "url": "https://nextspaceflight.com/launches/details/8444/"
+        "title": "NASA: ESCAPADE Twin Spacecraft",
+        "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
       },
       {
-        "title": "SpaceX: USSF-432 Mission",
-        "url": "https://www.spacex.com/launches/ussf432"
+        "title": "@RocketLab: ESCAPADE TMI",
+        "url": "https://x.com/RocketLab/status/2118834083279306990"
       },
       {
-        "title": "Space Launch Live: USSF-432 GO",
-        "url": "https://spacelaunchlive.com/launches/falcon-9-block-5-ussf-432/"
+        "title": "Rocket Lab: ESCAPADE Mission",
+        "url": "https://rocketlabcorp.com/missions/escapade/"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-07",
+      "date": "2026-11-07",
+      "question": "Bringt SpaceX den Falcon-9-Start USSF-432 in der Nacht auf Samstag erfolgreich in den Orbit (Nutzlast getrennt)?",
+      "karlAnswer": "ja",
+      "karlReason": "Knapp „ja“, etwa 85 zu 15: Next Spaceflight/Space Launch Live melden GO für ~01:48 Berlin von Vandenberg; Booster B1095 (8. Flug), Drohnenschiff bereit. SpaceX-Mission-Seite nennt dasselbe Fenster (Fr 16:48 PT = Sa 01:48 Berlin). Scrub-Risiko Wetter/Range bleibt.",
+      "outcome": "ja",
+      "resolvesAt": "2026-11-07T04:30:00+01:00",
+      "sources": [
+        {
+          "title": "SpaceX: USSF-432 Mission",
+          "url": "https://www.spacex.com/launches/ussf432"
+        },
+        {
+          "title": "@SpaceX: Liftoff",
+          "url": "https://x.com/SpaceX/status/2118868469655433435"
+        },
+        {
+          "title": "@SpaceX: OCISLY landing",
+          "url": "https://x.com/SpaceX/status/2118870818021097862"
+        },
+        {
+          "title": "Space.com: USSF-432",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-classified-mission-space-force-ussf-432"
+        }
+      ],
+      "outcomeNote": "USSF-432 startete planmäßig ~01:48 Berlin (16:48 PT 6.11.); Booster B1095 landete auf OCISLY. SpaceX-Mission-Seite und offizielle Posts bestätigen Start und Landung; Nutzlast klassifiziert. Karl lag richtig."
+    },
     {
       "id": "2026-11-06",
       "date": "2026-11-06",

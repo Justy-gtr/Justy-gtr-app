@@ -13,9 +13,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 55,
+      "probabilityPct": 58,
       "impact": "hoch",
-      "reasoning": "SpaceX-Launch-VP Kiko Dontchev nannte am 5.11. Freitag 13. November als Ziel (Teslarati). Am 6.11. bestätigte Musk mehrfach (u. a. Baron-Chat / abendliche RTs): Versuch, Booster und Ship 42 per Turm zu fangen — „more likely than not“ laut Zusammenfassungen. Beide Static Fires sind durch; FAA-Lizenz für Land-Rückkehr fehlt weiter. 55 % für Start bis 30. November (vorher 53); bis Jahresende weiter ~75 %. Kursrisiko: nach Flight-14-Fehlschlag hoch bei erneutem Misserfolg.",
+      "reasoning": "SpaceX-Launch-VP Kiko Dontchev nannte am 5.11. Freitag 13. November als Ziel (Teslarati). Am 6./7.11. bekräftigte Musk den Doppel-Fang (Booster + Ship 42); SpaceX-Launch-Direktorin Shana Diez beschrieb Flight 15 als Wendepunkt („one step away … double catch“) — Musk retweetete. Beide Static Fires durch; FAA-Lizenz für Land-Rückkehr fehlt weiter. 58 % für Start bis 30. November (vorher 55); bis Jahresende ~75 %. Kursrisiko hoch bei erneutem Misserfolg nach Flight 14.",
       "example": false,
       "sources": [
         {
@@ -23,36 +23,16 @@
           "url": "https://x.com/elonmusk/status/2118732082843435305"
         },
         {
+          "title": "@elonmusk RT Shana Diez: double catch Flight 15",
+          "url": "https://x.com/elonmusk/status/2118913260112273674"
+        },
+        {
           "title": "@SpaceX: Go For Orbit",
           "url": "https://x.com/SpaceX/status/2118719281038770389"
         },
         {
-          "title": "Teslarati: Flight 15 Ziel 13. November (Dontchev/Berger)",
+          "title": "Teslarati: Flight 15 Ziel 13. November",
           "url": "https://www.teslarati.com/spacex-starship-catch-nov-13/"
-        },
-        {
-          "title": "TeslaNorth: Starship Flight 15 Targets Nov. 13",
-          "url": "https://teslanorth.com/2026/11/05/starship-flight-15-nov-13/"
-        },
-        {
-          "title": "Starbase Events: Flight 15 NET 13. November",
-          "url": "https://www.starbaseevents.com/flights/15"
-        },
-        {
-          "title": "Ars Technica / SpaceX Q3: beide Stufen fangen",
-          "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
-        },
-        {
-          "title": "FAA: SpaceX Starship Super Heavy Boca Chica",
-          "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
-        },
-        {
-          "title": "@elonmusk RT: Ship 42 tower catch ~1 week",
-          "url": "https://x.com/elonmusk/status/2118811477427855594"
-        },
-        {
-          "title": "X News: Catch both on Flight 15",
-          "url": "https://x.com/i/trending/2118767669113680291"
         }
       ]
     },
@@ -306,16 +286,20 @@
       ],
       "probabilityPct": 90,
       "impact": "niedrig",
-      "reasoning": "Rocket Lab schreibt am frühen 6.11.: Blue und Gold stehen kurz vor dem Trans-Mars-Injection-Manöver (Blue ab 4:51 Uhr EST am 7.11., Gold ab 5:51 Uhr EST am 9.11.). Ich setze 90 %, weil das Unternehmen den Manöver-Start jetzt aktiv ankündigt. Gelingen ist gute Werbung fürs Raumfahrzeug-Geschäft, Kurswirkung gering; ein Fehlschlag wäre Imageschaden vor den Q3-Zahlen am 9.11.",
+      "reasoning": "NASA: Blue-TMI ~5:00 EST / Burn-Beginn 4:51 EST am 7.11. (= ~10:51 Berlin); Gold am 9.11. ~6:00 EST. Rocket Lab postete am 6.11. erneut zur bevorstehenden Trans-Mars-Injection. Stand 05:15 Berlin: Blue-Burn noch ausstehend (~in 6 Std.). 90 %: Unternehmen und NASA halten den Plan; Gelingen ist gute Werbung vor Q3 am 9.11., Kurswirkung gering.",
       "example": false,
       "sources": [
         {
-          "title": "@RocketLab auf X: See you soon, Mars",
-          "url": "https://x.com/RocketLab/status/2118544706066055248"
+          "title": "NASA: ESCAPADE Twin Spacecraft to Mars",
+          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
         },
         {
-          "title": "NASA: ESCAPADE-Zwillinge Richtung Mars",
-          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+          "title": "@RocketLab: ESCAPADE epic interplanetary",
+          "url": "https://x.com/RocketLab/status/2118834083279306990"
+        },
+        {
+          "title": "@RocketLab: See you soon, Mars",
+          "url": "https://x.com/RocketLab/status/2118544706066055248"
         }
       ]
     },
@@ -868,7 +852,7 @@
     },
     {
       "id": "evt-falcon9-ussf432",
-      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force (~01:48 Berlin)",
+      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force — erfolgreich",
       "date": "2026-11-07",
       "time": "01:48",
       "timezone": "Europe/Berlin",
@@ -878,22 +862,26 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 98,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "Next Spaceflight/Space Launch Live: GO für Samstag 7.11. ~00:48 UTC (01:48 Berlin) von Vandenberg SLC-4E; Booster B1095 (8. Flug), Landung Of Course I Still Love You. SpaceX-Mission-Seite nennt Freitag 16:48 PT (= dasselbe UTC-Fenster) mit Backup Samstag. Stand 22:00 Berlin kein Scrub — 98 %. Routine-Militärmission, Kurswirkung gering.",
+      "reasoning": "Erfolgreich: SpaceX meldet Start Freitag 6.11. 16:48 PT (Samstag 01:48 Berlin) von Vandenberg SLC-4E; Booster B1095 (8. Flug) landete auf Of Course I Still Love You. Mission-Seite und Space.com/Vandenberg bestätigen Start und Landung; Nutzlast klassifiziert (Webcast nach ~10 Min beendet). 100 %: Termin erledigt. Kurswirkung gering (Routine-Militärflug).",
       "example": false,
       "sources": [
         {
-          "title": "Next Spaceflight: USSF-432",
-          "url": "https://nextspaceflight.com/launches/details/8444/"
-        },
-        {
-          "title": "SpaceX: USSF-432 Mission",
+          "title": "SpaceX: USSF-432 Mission (gestartet)",
           "url": "https://www.spacex.com/launches/ussf432"
         },
         {
-          "title": "RocketRune: USSF-432",
-          "url": "https://www.rocketrune.com/launches/ussf-432"
+          "title": "@SpaceX: Liftoff USSF-432",
+          "url": "https://x.com/SpaceX/status/2118868469655433435"
+        },
+        {
+          "title": "@SpaceX: Booster-Landung OCISLY",
+          "url": "https://x.com/SpaceX/status/2118870818021097862"
+        },
+        {
+          "title": "Space.com: USSF-432 classified launch",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-classified-mission-space-force-ussf-432"
         }
       ]
     },
@@ -909,9 +897,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 80,
+      "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "SpaceX zielt auf Montag 9.11., Vier-Stunden-Fenster ab 19:03 Uhr Ortszeit Vandenberg (in Berlin 04:03 Uhr am 10.11.), Ersatzdienstag. Klassifizierte Space-Force-Mission, Booster-Landung auf Of Course I Still Love You. Falcon-9-Routine, Kurswirkung gering.",
+      "reasoning": "SpaceX zielt weiter auf Montag 9.11., Vier-Stunden-Fenster ab 19:03 Uhr Ortszeit Vandenberg (in Berlin 04:03 Uhr am 10.11.), Ersatzdienstag. Nach erfolgreichem USSF-432 von derselben Rampe etwas höhere Zuversicht (85 %, vorher 80). Klassifizierte Space-Force-Mission, Landung OCISLY. Kurswirkung gering.",
       "example": false,
       "sources": [
         {

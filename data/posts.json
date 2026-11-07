@@ -1,66 +1,318 @@
 {
   "example": false,
-  "asOf": "2026-11-06T22:06:46+01:00",
+  "asOf": "2026-11-07T05:15:00+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.5,
-      "label": "zuversichtlich (Freitag-Schluss)",
-      "summary": "SPCX schließt Freitag bei ~134.27 $ (~120.46 €, ca. +8,6 % vs. Do 123,62 $). Abendlicher Baron-Nachlauf: Musk-Zielkurve >100 Mrd. $ annualisiert im Dezember. Midterm-Aufsicht und Lock-up 8.12. bleiben Gegenwind.",
+      "score": 0.55,
+      "label": "zuversichtlich (Wochenende nach Start)",
+      "summary": "USSF-432 erfolgreich (Start + OCISLY-Landung ~01:48 Berlin). Musk bekräftigt Flight-15-Doppel-Fang und Raptor-4-Ideen; Freitag-Schluss ~134 $ bleibt Referenz bis Montag. Lock-up 8.12. und Midterm-Aufsicht Gegenwind.",
       "sources": [
+        {
+          "title": "SpaceX: USSF-432",
+          "url": "https://www.spacex.com/launches/ussf432"
+        },
+        {
+          "title": "@SpaceX: Liftoff",
+          "url": "https://x.com/SpaceX/status/2118868469655433435"
+        },
         {
           "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
-        },
-        {
-          "title": "@elonmusk RT: $100B annualized trajectory",
-          "url": "https://x.com/elonmusk/status/2118789262393090314"
-        },
-        {
-          "title": "@BaronCapital Fireside Chat",
-          "url": "https://x.com/BaronCapital/status/2118765607122260177"
         }
       ]
     },
     "TSLA": {
       "score": 0.25,
-      "label": "leichte Erholung",
-      "summary": "TSLA schließt US-Cash ~358 $ (~+4 % vs. Do 343,69 $) nach Midterm-Crash; Treiber Cybercab-Kapazität, Nasdaq-Rebound, Baron-Chat. Argentinien-Start noch im November angekündigt — Regulierungsrisiko bleibt.",
+      "label": "leicht zuversichtlich",
+      "summary": "Freitag-Rebound (~+4 % US) hält als Narrative; über Nacht Terafab-Recruiting und Neuralink-Geh-/Hand-Vision von Musk. Xetra bleibt weit unter der Vorwoche — Regulierung und Texas-Risiken.",
       "sources": [
+        {
+          "title": "@elonmusk: Neuralink walk",
+          "url": "https://x.com/elonmusk/status/2118884500201787770"
+        },
+        {
+          "title": "@elonmusk: Terafab",
+          "url": "https://x.com/elonmusk/status/2118854441063600539"
+        },
         {
           "title": "Yahoo Finance: TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA/"
-        },
-        {
-          "title": "@elonmusk: Tesla Argentina",
-          "url": "https://x.com/elonmusk/status/2118787365426893002"
-        },
-        {
-          "title": "@BaronCapital Fireside Chat",
-          "url": "https://x.com/BaronCapital/status/2118765607122260177"
         }
       ]
     },
     "RKLB": {
-      "score": 0.4,
-      "label": "starker Freitag",
-      "summary": "RKLB schließt US ~53,07 $ (~+15 % vs. Do 45,99 $) mit dem Space-Rebound; Neutron-Forward-Dome gebaut, ESCAPADE-TMI ab 7.11., Electron-100 am 14.11. Q3-Zahlen Montag im Fokus.",
+      "score": 0.35,
+      "label": "zuversichtlich vor ESCAPADE/Q3",
+      "summary": "Freitag ~+15 % US mit Space-Rebound; ESCAPADE-Blue-TMI heute ~10:51 Berlin noch ausstehend, Gold am 9.11.; Q3-Zahlen Montag. Neutron-Dome gebaut, Electron-100 NET 14.11.",
       "sources": [
+        {
+          "title": "@RocketLab: ESCAPADE",
+          "url": "https://x.com/RocketLab/status/2118834083279306990"
+        },
         {
           "title": "Yahoo Finance: RKLB",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "@RocketLab: Neutron Forward Dome",
-          "url": "https://x.com/RocketLab/status/2118804214831042777"
-        },
-        {
-          "title": "@RocketLab: Electron 100th",
-          "url": "https://x.com/RocketLab/status/2118521208639746494"
+          "title": "NASA ESCAPADE blog",
+          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-rklb-2118834083279306990",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-06T23:33:06+01:00",
+      "summaryDe": "Rocket Lab: ESCAPADE-Zwillinge Blue & Gold stehen kurz vor dem Triebwerkszündungs-Manöver Richtung Mars — vier Jahre Arbeit für NASA/UC Berkeley.",
+      "originalText": "ESCAPADE is an epic interplanetary mission… Our twin spacecraft – Blue & Gold – are about to fire their engines…",
+      "url": "https://x.com/RocketLab/status/2118834083279306990",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: ESCAPADE TMI incoming",
+          "url": "https://x.com/RocketLab/status/2118834083279306990"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118881284743483488",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T02:40:39+01:00",
+      "summaryDe": "Musk: „Super intelligence leads to abundance“ — teilt Bericht zu möglichen Steuersenkungen durch SpaceX-Rechenzentrum in Arizona (Cochise County).",
+      "originalText": "Super intelligence leads to abundance",
+      "url": "https://x.com/elonmusk/status/2118881284743483488",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "xAI"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Super intelligence abundance",
+          "url": "https://x.com/elonmusk/status/2118881284743483488"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118913260112273674",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T04:47:43+01:00",
+      "summaryDe": "Musk retweetet SpaceX-Launch-Direktorin Shana Diez: Flight 15 als Wendepunkt — erster Versuch Doppel-Fang; Erfolg nicht garantiert, aber nah an der vollen Mission.",
+      "originalText": "RT @ShanaDiez: It’s time to put all the pieces together… We are one step away from the full mission, and that step is the double catch. We will try for the first time on flight 15.",
+      "url": "https://x.com/elonmusk/status/2118913260112273674",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk RT Shana Diez Flight 15",
+          "url": "https://x.com/elonmusk/status/2118913260112273674"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118854441063600539",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T00:53:59+01:00",
+      "summaryDe": "Musk wirbt für Terafab: wer radikal neue Chip-Designs schnell iterieren will, soll zum Terafab-Projekt kommen (Link Terafab.ai).",
+      "originalText": "If you want to iterate fast with radically new chip designs, join the Terafab project!",
+      "url": "https://x.com/elonmusk/status/2118854441063600539",
+      "tickers": [
+        "TSLA",
+        "SPCX"
+      ],
+      "companies": [
+        "Tesla",
+        "xAI",
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: join Terafab",
+          "url": "https://x.com/elonmusk/status/2118854441063600539"
+        },
+        {
+          "title": "Terafab.ai",
+          "url": "https://Terafab.ai"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2118870818021097862",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-07T01:59:04+01:00",
+      "summaryDe": "SpaceX: Falcon-9-Erststufe landet auf dem Drohnenschiff Of Course I Still Love You (USSF-432).",
+      "originalText": "Falcon 9’s first stage lands on the Of Course I Still Love You droneship",
+      "url": "https://x.com/SpaceX/status/2118870818021097862",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX: OCISLY landing",
+          "url": "https://x.com/SpaceX/status/2118870818021097862"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2118868469655433435",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-07T01:49:44+01:00",
+      "summaryDe": "SpaceX: „Liftoff!“ — Falcon 9 startet USSF-432 von Pad 4E in Kalifornien.",
+      "originalText": "Liftoff!",
+      "url": "https://x.com/SpaceX/status/2118868469655433435",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX: Liftoff USSF-432",
+          "url": "https://x.com/SpaceX/status/2118868469655433435"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118872598058860671",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T02:06:08+01:00",
+      "summaryDe": "Musk zitiert die Booster-Landung von USSF-432: „Of course I Still Love You“ — Drohnenschiff-Landung bestätigt.",
+      "originalText": "Of course I Still Love You",
+      "url": "https://x.com/elonmusk/status/2118872598058860671",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: OCISLY",
+          "url": "https://x.com/elonmusk/status/2118872598058860671"
+        },
+        {
+          "title": "@SpaceX: first stage lands OCISLY",
+          "url": "https://x.com/SpaceX/status/2118870818021097862"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118875601654436061",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T02:18:04+01:00",
+      "summaryDe": "Musk: „Starship is the most powerful moving object of any kind made by humans“ — teilt Video zum Fahrzeug.",
+      "originalText": "Starship is the most powerful moving object of any kind made by humans",
+      "url": "https://x.com/elonmusk/status/2118875601654436061",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Starship most powerful",
+          "url": "https://x.com/elonmusk/status/2118875601654436061"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118880932014997910",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T02:39:15+01:00",
+      "summaryDe": "Musk: verlockend, einen 500-Tonnen-Schub Raptor 4 statt 250-t Raptor 3 für den äußeren Ring des Starship-Boosters zu bauen.",
+      "originalText": "It is so tempting to make a 500 ton thrust Raptor 4 in place of the 250 ton Raptor 3 for the outer ring of the Starship booster",
+      "url": "https://x.com/elonmusk/status/2118880932014997910",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Raptor 4 temptation",
+          "url": "https://x.com/elonmusk/status/2118880932014997910"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118884500201787770",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T02:53:26+01:00",
+      "summaryDe": "WICHTIG: Musk schreibt, Neuralink werde in den kommenden Jahren Menschen wieder gehen und die Hände nutzen lassen — Vision über heutige Fähigkeiten hinaus (Zitat zu Noland Arbaugh).",
+      "originalText": "In the coming years, @Neuralink will enable people to walk and use their hands again",
+      "url": "https://x.com/elonmusk/status/2118884500201787770",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Neuralink"
+      ],
+      "sentiment": "positiv",
+      "important": true,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Neuralink walk & hands",
+          "url": "https://x.com/elonmusk/status/2118884500201787770"
+        }
+      ]
+    },
     {
       "id": "post-musk-2118810958730862759",
       "account": "@elonmusk",
