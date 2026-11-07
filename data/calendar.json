@@ -15,7 +15,7 @@
       ],
       "probabilityPct": 58,
       "impact": "hoch",
-      "reasoning": "SpaceX-Launch-VP Kiko Dontchev nannte am 5.11. Freitag 13. November als Ziel (Teslarati). Am 6./7.11. bekräftigte Musk den Doppel-Fang (Booster + Ship 42); SpaceX-Launch-Direktorin Shana Diez beschrieb Flight 15 als Wendepunkt („one step away … double catch“) — Musk retweetete. Beide Static Fires durch; FAA-Lizenz für Land-Rückkehr fehlt weiter. 58 % für Start bis 30. November (vorher 55); bis Jahresende ~75 %. Kursrisiko hoch bei erneutem Misserfolg nach Flight 14.",
+      "reasoning": "SpaceX-Launch-VP Kiko Dontchev nannte am 5.11. Freitag 13. November als Ziel (Teslarati). Am 6./7.11. bekräftigte Musk den Doppel-Fang (Booster + Ship 42); SpaceX-Launch-Direktorin Shana Diez beschrieb Flight 15 als Wendepunkt — Musk retweetete. Heute früh (06:15 Berlin) zitierte Musk seinen Post von vor fünf Jahren: Mechazilla fängt auch das Schiff. Beide Static Fires durch; FAA-Lizenz für Land-Rückkehr fehlt weiter. 58 % für Start bis 30. November (unverändert seit 05:00); bis Jahresende ~75 %. Kursrisiko hoch bei erneutem Misserfolg.",
       "example": false,
       "sources": [
         {
@@ -33,6 +33,10 @@
         {
           "title": "Teslarati: Flight 15 Ziel 13. November",
           "url": "https://www.teslarati.com/spacex-starship-catch-nov-13/"
+        },
+        {
+          "title": "@elonmusk: 5 years ago Mechazilla ship catch",
+          "url": "https://x.com/elonmusk/status/2118935230182805688"
         }
       ]
     },
@@ -286,7 +290,7 @@
       ],
       "probabilityPct": 90,
       "impact": "niedrig",
-      "reasoning": "NASA: Blue-TMI ~5:00 EST / Burn-Beginn 4:51 EST am 7.11. (= ~10:51 Berlin); Gold am 9.11. ~6:00 EST. Rocket Lab postete am 6.11. erneut zur bevorstehenden Trans-Mars-Injection. Stand 05:15 Berlin: Blue-Burn noch ausstehend (~in 6 Std.). 90 %: Unternehmen und NASA halten den Plan; Gelingen ist gute Werbung vor Q3 am 9.11., Kurswirkung gering.",
+      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= ~10:51 Berlin); Gold am 9.11. ~5:51 EST. Rocket Lab postete am 6.11. zur bevorstehenden Trans-Mars-Injection. Stand 06:30 Berlin: Blue-Burn noch ausstehend (~in 4 Std.). 90 %: Unternehmen und NASA halten den Plan; Gelingen ist gute Werbung vor Q3 am 9.11., Kurswirkung gering.",
       "example": false,
       "sources": [
         {

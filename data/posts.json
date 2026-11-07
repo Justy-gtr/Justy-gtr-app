@@ -1,19 +1,19 @@
 {
   "example": false,
-  "asOf": "2026-11-07T05:15:00+01:00",
+  "asOf": "2026-11-07T06:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.55,
       "label": "zuversichtlich (Wochenende nach Start)",
-      "summary": "USSF-432 erfolgreich (Start + OCISLY-Landung ~01:48 Berlin). Musk bekräftigt Flight-15-Doppel-Fang und Raptor-4-Ideen; Freitag-Schluss ~134 $ bleibt Referenz bis Montag. Lock-up 8.12. und Midterm-Aufsicht Gegenwind.",
+      "summary": "USSF-432 erfolgreich (Start + OCISLY ~01:48 Berlin). Musk erinnert heute früh an die 5-Jahre-alte Mechazilla-Schiff-Fang-Vision vor Flight 15. Freitag-Schluss ~134 $ bleibt Referenz bis Montag; Lock-up 8.12. und Midterm-Aufsicht Gegenwind.",
       "sources": [
         {
           "title": "SpaceX: USSF-432",
           "url": "https://www.spacex.com/launches/ussf432"
         },
         {
-          "title": "@SpaceX: Liftoff",
-          "url": "https://x.com/SpaceX/status/2118868469655433435"
+          "title": "@elonmusk: 5 years ago Mechazilla",
+          "url": "https://x.com/elonmusk/status/2118935230182805688"
         },
         {
           "title": "Yahoo Finance: SPCX",
@@ -24,7 +24,7 @@
     "TSLA": {
       "score": 0.25,
       "label": "leicht zuversichtlich",
-      "summary": "Freitag-Rebound (~+4 % US) hält als Narrative; über Nacht Terafab-Recruiting und Neuralink-Geh-/Hand-Vision von Musk. Xetra bleibt weit unter der Vorwoche — Regulierung und Texas-Risiken.",
+      "summary": "Freitag-Rebound (~+4 % US) hält als Narrative; über Nacht Neuralink-Geh-/Hand-Vision und Terafab-Recruiting. Xetra bleibt unter Vorwoche — Regulierung und Texas-Risiken. Wochenende ruhig bis Montag CPI.",
       "sources": [
         {
           "title": "@elonmusk: Neuralink walk",
@@ -43,24 +43,52 @@
     "RKLB": {
       "score": 0.35,
       "label": "zuversichtlich vor ESCAPADE/Q3",
-      "summary": "Freitag ~+15 % US mit Space-Rebound; ESCAPADE-Blue-TMI heute ~10:51 Berlin noch ausstehend, Gold am 9.11.; Q3-Zahlen Montag. Neutron-Dome gebaut, Electron-100 NET 14.11.",
+      "summary": "Freitag ~+15 % US mit Space-Rebound. Heute ~10:51 Berlin: ESCAPADE-Blue-TMI (noch ausstehend); Gold am 9.11.; Q3-Zahlen Montagabend. Electron-100 NET 14.11.",
       "sources": [
         {
           "title": "@RocketLab: ESCAPADE",
           "url": "https://x.com/RocketLab/status/2118834083279306990"
         },
         {
-          "title": "Yahoo Finance: RKLB",
-          "url": "https://finance.yahoo.com/quote/RKLB/"
-        },
-        {
           "title": "NASA ESCAPADE blog",
           "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+        },
+        {
+          "title": "Yahoo Finance: RKLB",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2118935230182805688",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T06:15:01+01:00",
+      "summaryDe": "Musk zitiert seinen eigenen Post von vor fünf Jahren: Schon 2021 sagte er, Mechazilla werde auch das Schiff fangen — ohne Landebeine. Passt zur Flight-15-Erzählung (Doppel-Fang).",
+      "originalText": "5 years ago — And ship will be caught by Mechazilla too. As with booster, no landing legs. Those are only needed for moon & Mars until there is local infrastructure.",
+      "url": "https://x.com/elonmusk/status/2118935230182805688",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: 5 years ago Mechazilla ship catch",
+          "url": "https://x.com/elonmusk/status/2118935230182805688"
+        },
+        {
+          "title": "Original 2021 quote (quoted)",
+          "url": "https://x.com/elonmusk/status/1426199109585756163"
+        }
+      ]
+    },
     {
       "id": "post-rklb-2118834083279306990",
       "account": "@RocketLab",

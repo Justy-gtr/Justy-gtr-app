@@ -1,46 +1,51 @@
 {
   "example": false,
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "title": "Morgen-Briefing",
   "greeting": "Guten Morgen, Justy.",
-  "summary": "Guten Morgen. Gestern hat der US-Markt heftig verkauft: Nasdaq minus etwa fünf Komma fünf Prozent, Chipwerte rund zwölf Prozent — SPCX schloss bei 123,62 Dollar, Tesla bei 343,69 Dollar. Grund bleiben die Midterms und die Angst vor Bremsen für KI-Rechenzentren. Über Nacht erholen sich die Nasdaq-Futures leicht. Heute zählt um 14:30 Uhr Berlin der US-Arbeitsmarktbericht, Konsens etwa plus 59.000 Jobs. Abends startet SpaceX Falcon 9 USSF-432 von Vandenberg, Fenster ab 01:46 Uhr Berliner Zeit Samstag.",
+  "summary": "Guten Morgen. Über Nacht hat SpaceX geliefert: Falcon 9 USSF-432 startete planmäßig gegen 01:48 Berliner Zeit von Vandenberg, Booster landete auf Of Course I Still Love You — die Tagesfrage dazu war „ja“, Karl lag richtig. Heute vormittag zählt ESCAPADE: Rocket-Lab-Sonde Blue soll um etwa 10:51 Berlin ihr Mars-Einschussmanöver zünden; das ist die neue Tagesfrage (Karl tippt knapp ja). Freitag hatte der US-Markt stark reboundiert (SPCX ~+9 %, Tesla ~+4 %, RKLB ~+15 %), nachdem der Jobsbericht mit +165.000 Stellen deutlich über Konsens kam. Wichtiger Post über Nacht: Musk sagt, Neuralink werde Menschen wieder gehen und Hände nutzen lassen. Börsen zu — nächste Kurshebel Montag: CPI, USSF-627 und Rocket-Lab-Zahlen.",
   "bullets": [
-    "SPCX: Donnerstag −9 % auf 123,62 $ (rund 110 € Schluss), nachbörslich etwas höher.",
-    "Tesla: Donnerstag −10,8 % auf 343,69 $; Xetra-Schluss 312,20 €.",
-    "RKLB: Donnerstag etwa −12 %, mit dem Chip-Ausverkauf — keine eigene schlechte Nachricht.",
-    "Musk heute früh: teilt Giga-Berlin-News zu 100-%-Abwasser-Recycling — operativ positiv, kein Kurshebel.",
-    "Heute 14:30: US-Jobsbericht (Konsens ~59k, Quote 4,2 %).",
-    "Heute Nacht / Samstag früh: Falcon 9 USSF-432; Samstag ESCAPADE Blue-Manöver; Montag Rocket-Lab-Zahlen."
+    "USSF-432: Erfolg ~01:48 Berlin (Start + OCISLY-Landung) — Kalender 100 %, Tagesfrage ja.",
+    "Heute ~10:51: ESCAPADE Blue TMI; Tagesfrage offen; Gold folgt am 9.11.",
+    "Wichtiger Post: Musk/Neuralink — Gehen und Hände in den kommenden Jahren.",
+    "Flight 15 weiter ~58 % (Ziel ~13.11., Doppel-Fang); Musk erinnerte heute an die 5-Jahre-Mechazilla-Vision.",
+    "Freitag-Kurse: SPCX ~134 $ / ~120 €, TSLA ~358 $ / Xetra ~324 €, RKLB ~53 $ — Wochenende ruhig.",
+    "Jobs Freitag: +165k (Konsens ~59k), Quote 4,1 % — starker Bericht vor CPI Montag 14:30 Berlin.",
+    "Nächste Termine: Mo CPI + RKLB-Q3 abends; Di früh USSF-627; Fr Flight-15-Fenster."
   ],
   "audioUrl": null,
   "sources": [
-    {
-      "title": "Investing.com: Futures nach AI-Rout; Payrolls im Fokus",
-      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-ai-rout-batters-wall-st-payrolls-data-in-focus-5006240"
-    },
-    {
-      "title": "CNBC: Vorschau Oktober-Jobsbericht (Konsens ~59k)",
-      "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html"
-    },
-    {
-      "title": "CNA/Reuters: SpaceX und Tesla nach Midterms unter Druck",
-      "url": "https://www.channelnewsasia.com/business/spacex-tesla-extend-losses-midterm-results-cloud-data-center-merger-outlook-6528816"
-    },
     {
       "title": "SpaceX: USSF-432 Mission",
       "url": "https://www.spacex.com/launches/ussf432"
     },
     {
-      "title": "@elonmusk RT Giga-Berlin Abwasser-Recycling",
-      "url": "https://x.com/elonmusk/status/2118565802429632576"
+      "title": "@SpaceX: Liftoff",
+      "url": "https://x.com/SpaceX/status/2118868469655433435"
     },
     {
-      "title": "@RocketLab: ESCAPADE Richtung Mars",
-      "url": "https://x.com/RocketLab/status/2118544706066055248"
+      "title": "@SpaceX: OCISLY landing",
+      "url": "https://x.com/SpaceX/status/2118870818021097862"
     },
     {
-      "title": "BLS: Termine Arbeitsmarktbericht",
-      "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
+      "title": "NASA: ESCAPADE powered flyby",
+      "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+    },
+    {
+      "title": "@RocketLab: ESCAPADE TMI",
+      "url": "https://x.com/RocketLab/status/2118834083279306990"
+    },
+    {
+      "title": "@elonmusk: Neuralink walk & hands",
+      "url": "https://x.com/elonmusk/status/2118884500201787770"
+    },
+    {
+      "title": "@elonmusk: 5 years ago Mechazilla",
+      "url": "https://x.com/elonmusk/status/2118935230182805688"
+    },
+    {
+      "title": "CNBC: October jobs +165k",
+      "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
     },
     {
       "title": "Yahoo Finance: SPCX",
@@ -49,6 +54,14 @@
     {
       "title": "Yahoo Finance: TSLA",
       "url": "https://finance.yahoo.com/quote/TSLA/"
+    },
+    {
+      "title": "Yahoo Finance: RKLB",
+      "url": "https://finance.yahoo.com/quote/RKLB/"
+    },
+    {
+      "title": "BLS: CPI schedule",
+      "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
     }
   ]
 }
