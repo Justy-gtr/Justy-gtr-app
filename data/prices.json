@@ -7089,23 +7089,23 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Freitag-Schluss ~134 $ (~+8,6 % vs. Do): Tech-Dip-Rebound, Jobs, FAA, Baron/>100-Mrd.-Narrativ. USSF-432 über Nacht erfolgreich; Board-Abgang Harrison ohne Streit-Signal. Wochenende ruhig — Montag USSF-627-Fenster und CPI im Blick.",
+      "why": "Freitag-Schluss ~134 $ (~+8,6 % vs. Do): Tech-Dip-Rebound, Jobs, FAA, Baron/>100-Mrd.-Narrativ. USSF-432 über Nacht erfolgreich. Samstag: SpaceX bestätigt Flight 15 NET 13.11. mit erstem Ship-Catch-Plan (Blog + X). Wochenende ruhig — Montag USSF-627 und CPI im Blick.",
       "whySources": [
         {
           "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
+          "title": "@SpaceX: Flight 15 catch / NET 13.11.",
+          "url": "https://x.com/SpaceX/status/2119093662957060389"
+        },
+        {
+          "title": "SpaceX Updates: Returning Starship to the Launch Site",
+          "url": "https://www.spacex.com/updates/"
+        },
+        {
           "title": "@SpaceX: USSF-432 to orbit",
           "url": "https://x.com/SpaceX/status/2118953789357281607"
-        },
-        {
-          "title": "SpaceX: USSF-432 Mission",
-          "url": "https://www.spacex.com/launches/ussf432"
-        },
-        {
-          "title": "SpaceX: USSF-627 Mission",
-          "url": "https://www.spacex.com/launches/ussf627"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -14088,15 +14088,11 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "US-Schluss Freitag ~358 $ (~+4 %): Cybercab-Narrativ, Rebound, Baron-Chat. Über Nacht Neuralink-Geh-/Hand-Vision; Marktstart Argentinien 20.11. bestätigt. Wochenende ruhig; Xetra ~324 € unter Vorwoche.",
+      "why": "US-Schluss Freitag ~358 $ (~+4 %): Cybercab-Narrativ, Rebound, Baron-Chat. Marktstart Argentinien 20.11. bestätigt. Wochenende ruhig; keine neuen Tesla-Unternehmensposts. Xetra ~324 € unter Vorwoche.",
       "whySources": [
         {
           "title": "Yahoo Finance: TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA/"
-        },
-        {
-          "title": "@elonmusk: Neuralink walk",
-          "url": "https://x.com/elonmusk/status/2118884500201787770"
         },
         {
           "title": "@Tesla: Argentina later this month",
@@ -18455,23 +18451,23 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "US-Schluss Freitag ~53 $ (~+15 %): Space-/Defense-Rebound, Neutron-Dome. ESCAPADE-Blue-TMI-Zeit (~10:51 Berlin) vorbei — offizielle NASA/Rocket-Lab-Bestätigung Stand 14:00 weiter ausstehend; Q3 Montag, Electron-100 NET 14.11.",
+      "why": "US-Schluss Freitag ~53 $ (~+15 %): Space-/Defense-Rebound, Neutron-Dome. ESCAPADE-Blue-TMI-Zeit (~10:51 Berlin) seit ~7 h vorbei — Stand 18:00 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA: Bahncheck erst in mehreren Tagen). Q3 Montag, Electron-100 NET 14.11.",
       "whySources": [
         {
           "title": "Yahoo Finance: RKLB",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "@RocketLab: ESCAPADE",
+          "title": "@RocketLab: ESCAPADE (Vorabend)",
           "url": "https://x.com/RocketLab/status/2118834083279306990"
         },
         {
-          "title": "NASA ESCAPADE blog (noch ohne Post-Burn-Update)",
+          "title": "NASA ESCAPADE Blog (kein Post-Burn-Update)",
           "url": "https://science.nasa.gov/blogs/escapade/"
         },
         {
-          "title": "@RocketLab: Neutron Forward Dome",
-          "url": "https://x.com/RocketLab/status/2118804214831042777"
+          "title": "NASA: ESCAPADE Twin Spacecraft (2.11.)",
+          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",

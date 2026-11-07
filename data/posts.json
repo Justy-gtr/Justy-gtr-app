@@ -1,23 +1,19 @@
 {
   "example": false,
-  "asOf": "2026-11-07T14:00:00+01:00",
+  "asOf": "2026-11-07T18:00:00+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.55,
-      "label": "zuversichtlich (Wochenende nach Start)",
-      "summary": "USSF-432 erfolgreich (Start + OCISLY ~01:48 Berlin). Musk erinnert heute früh an die 5-Jahre-alte Mechazilla-Schiff-Fang-Vision vor Flight 15. Freitag-Schluss ~134 $ bleibt Referenz bis Montag; Lock-up 8.12. und Midterm-Aufsicht Gegenwind.",
+      "score": 0.35,
+      "label": "zuversichtlich",
+      "summary": "SpaceX bestätigt Flight 15 NET 13.11. mit Ship-Catch-Plan; USSF-432 erfolgreich. Wochenende ohne Kurs — Montag USSF-627 und CPI im Blick.",
       "sources": [
         {
-          "title": "SpaceX: USSF-432",
-          "url": "https://www.spacex.com/launches/ussf432"
+          "title": "@SpaceX: Flight 15 catch",
+          "url": "https://x.com/SpaceX/status/2119093662957060389"
         },
         {
-          "title": "@elonmusk: 5 years ago Mechazilla",
-          "url": "https://x.com/elonmusk/status/2118935230182805688"
-        },
-        {
-          "title": "Yahoo Finance: SPCX",
-          "url": "https://finance.yahoo.com/quote/SPCX/"
+          "title": "SpaceX Updates: Returning Starship",
+          "url": "https://www.spacex.com/updates/"
         }
       ]
     },
@@ -61,6 +57,52 @@
     }
   },
   "posts": [
+    {
+      "id": "post-spacex-2119093662957060389",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-07T16:44:34+01:00",
+      "summaryDe": "SpaceX: Starship bereitet sich auf den Fang vor — Flight 15 zielt auf frühestens Freitag, 13. November, vorbehaltlich behördlicher Freigabe. Offizielle Bestätigung des Doppel-Fang-Ziels.",
+      "originalText": "Starship is preparing for catch\n \nFlight 15 is targeting to launch as early as Friday, November 13, pending regulatory approval",
+      "url": "https://x.com/SpaceX/status/2119093662957060389",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X",
+          "url": "https://x.com/SpaceX/status/2119093662957060389"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119111269718364631",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T17:54:32+01:00",
+      "summaryDe": "Musk kommentiert den SpaceX-Flight-15-Post: „Eine riesige Rakete aus dem Weltraum auffangen“ — verweist auf den geplanten Ship-Catch am Tower.",
+      "originalText": "Catching a giant rocket falling from space",
+      "url": "https://x.com/elonmusk/status/2119111269718364631",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2119111269718364631"
+        }
+      ]
+    },
     {
       "id": "post-spacex-2118953789357281607",
       "account": "@SpaceX",

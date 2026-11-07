@@ -13,11 +13,23 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 60,
+      "probabilityPct": 65,
       "impact": "hoch",
-      "reasoning": "Ziel Freitag 13.11. (Dontchev/Teslarati). Erster Doppel-Fang Booster+Schiff geplant; Musk „more likely than not“ für Ship-Catch. Neu am 7.11.: Die FAA hat einen Luftraum-Hinweis (NOTAM) für den Wiedereintritt veröffentlicht — ab 13.11. 23:53 Berlin, Ersatztage bis 19.11. Das stützt den Termin. Die Startlizenz für Flight 15 ist öffentlich aber noch nicht gelistet. Daher leicht rauf auf 60 %: Termin + Lizenz + Fang-Risiko. Impact hoch für SPCX-Narrativ.",
+      "reasoning": "SpaceX bestätigt offiziell: Flight 15 zielt auf frühestens Freitag 13.11., vorbehaltlich Zulassung; Blog „Returning Starship to the Launch Site“ beschreibt erstmals den Ship-Catch-Ablauf (Orbit ~21 h, Deorbit, Bellyflop, Chopsticks an Pad 2). Dontchev/Teslarati hatten 13.11. schon genannt; FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin. Musk „more likely than not“ für Ship-Catch. Daher 60→65 % (Δ +5): offizielle SpaceX-Zielangabe + detaillierter Catch-Plan. Lizenzänderung und Fang-Risiko bleiben. Impact hoch für SPCX.",
       "example": false,
       "sources": [
+        {
+          "title": "@elonmusk: Catching a giant rocket falling from space",
+          "url": "https://x.com/elonmusk/status/2119111269718364631"
+        },
+        {
+          "title": "SpaceX Updates: Returning Starship to the Launch Site (7.11.2026)",
+          "url": "https://www.spacex.com/updates/"
+        },
+        {
+          "title": "@SpaceX: Starship preparing for catch / Flight 15 NET 13.11.",
+          "url": "https://x.com/SpaceX/status/2119093662957060389"
+        },
         {
           "title": "@elonmusk: dual catch on upcoming flight",
           "url": "https://x.com/elonmusk/status/2118732082843435305"
@@ -298,7 +310,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 16:00 Berlin: gut fünf Stunden nach dem Burn noch keine Meldung von NASA-Blog, @NASA, @RocketLab oder @escapade_mars — weder Erfolg noch Panne. Am Wochenende kommen Meldungen oft später; das Schweigen allein ist kein Beleg für ein Problem. Daher bleibt es bei 85 %. Tagesfrage bleibt offen, bis es eine offizielle Meldung gibt. Kurswirkung gering; Gelingen wäre gute Werbung vor Rocket Labs Q3 am 9.11.",
+      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 18:00 Berlin: gut sieben Stunden nach dem Burn weiter keine offizielle Meldung von NASA-Blog, @NASA, @NASASolarSystem, @RocketLab oder @escapade_mars — weder Erfolg noch Panne. NASA selbst schreibt, die Bahnqualität werde erst mehrere Tage nach dem Burn beurteilt. Das Schweigen allein ist daher kein Beleg für einen Fehlschlag. 85 % bleiben; Tagesfrage outcome null bis zur offiziellen Meldung. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -312,6 +324,14 @@
         {
           "title": "@RocketLab: See you soon, Mars",
           "url": "https://x.com/RocketLab/status/2118544706066055248"
+        },
+        {
+          "title": "NASA ESCAPADE Blog-Archiv (kein Post-Burn-Update)",
+          "url": "https://science.nasa.gov/blogs/escapade/"
+        },
+        {
+          "title": "@NASASolarSystem: Flyby #1 (Vorabend)",
+          "url": "https://x.com/NASASolarSystem/status/2118761571996586015"
         }
       ]
     },
