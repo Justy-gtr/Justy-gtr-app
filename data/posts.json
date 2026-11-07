@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-07T20:10:00+01:00",
+  "asOf": "2026-11-07T22:10:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -57,6 +57,80 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2119152839813456261",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T20:39:43+01:00",
+      "summaryDe": "Musk: Effizienz-Verbesserungen sollen einen 40-kWh-Akku für den Cybercab ermöglichen. Eine Farbvariante soll „Liquid Silver“ werden.",
+      "originalText": "There are efficiency improvements coming that will allow for a 40kWh Cybercab pack. We will make this in liquid silver, so the colors are not too monotonous.",
+      "url": "https://x.com/elonmusk/status/2119152839813456261",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: 40kWh Cybercab pack",
+          "url": "https://x.com/elonmusk/status/2119152839813456261"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119146526899396725",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T20:14:38+01:00",
+      "summaryDe": "Musk: Das Model Y sei das meistverkaufte Auto der Welt; Platz 2 und 3 seien deutlich billiger. (Musks Aussage, ohne eigene Zahlen.)",
+      "originalText": "Most people don’t know that the best-selling car in the world is the Tesla Model Y. And the second and third best-selling cars are much cheaper.",
+      "url": "https://x.com/elonmusk/status/2119146526899396725",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Model Y best-selling car",
+          "url": "https://x.com/elonmusk/status/2119146526899396725"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119134648693322158",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T19:27:26+01:00",
+      "summaryDe": "Musk zum WSJ-Bericht: SpaceX und Tesla seien in Texas gewachsen, weil dort keine „erdrückende“ Landesregierung herrsche; er wolle nah an den Fabriken sein. Kontext: neue demokratische Gouverneurin Hinojosa.",
+      "originalText": "SpaceX and Tesla have prospered in Texas, because we were not constantly operating under an oppressive and extractive state government. And I need to be close to the factories, so that I can walk the floor in person.",
+      "url": "https://x.com/elonmusk/status/2119134648693322158",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: SpaceX and Tesla prospered in Texas",
+          "url": "https://x.com/elonmusk/status/2119134648693322158"
+        }
+      ]
+    },
     {
       "id": "post-musk-2119130949434888330",
       "account": "@elonmusk",
@@ -2694,5 +2768,5 @@
       ]
     }
   ],
-  "notes": "06.11. 18:00: 4 neue Musk-Posts nach 16:00 — wichtig: Klarstellung zu Tesla-/SpaceX-Staatsaufträgen nach Midterm-Kritik; FSD für Senioren; Starlink rettet Yacht-Crew; Tesla Import-Nr.1 Südkorea. SPCX US ~+7 %, TSLA ~+4,5 %, RKLB ~+11 %. Baron-Chat 19:10, USSF-432 Fenster ~01:48 Berlin."
+  "notes": "07.11. 22:00: 3 neue Musk-Posts (Cybercab-Akku 40 kWh, Model Y Bestseller, Texas-Standort nach Wahl). Nichts Wichtiges. ESCAPADE-Blue weiter ohne offizielle Bestätigung."
 }

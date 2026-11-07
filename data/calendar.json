@@ -15,9 +15,13 @@
       ],
       "probabilityPct": 65,
       "impact": "hoch",
-      "reasoning": "SpaceX bestätigt offiziell: Flight 15 zielt auf frühestens Freitag 13.11., vorbehaltlich Zulassung; Berichte/Sawyer nennen ~17:45 ET / 16:45 CT (= 23:45 Berlin). Blog „Returning Starship to the Launch Site“ beschreibt Ship-Catch (Orbit ~21 h, Deorbit, Bellyflop, Chopsticks Pad 2) plus fünf Contingency-Splashdowns. FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin. Musk „more likely than not“ für Ship-Catch. 65 % unverändert: offizielle Zielangabe + Catch-Plan; Lizenz und Fang-Risiko bleiben. Impact hoch für SPCX.",
+      "reasoning": "SpaceX bestätigt offiziell: Flight 15 zielt auf frühestens Freitag 13.11., vorbehaltlich Zulassung; Offizielle Missionsseite: Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), 75 Minuten. Blog „Returning Starship to the Launch Site“ beschreibt Ship-Catch (Orbit ~21 h, Deorbit, Bellyflop, Chopsticks Pad 2) plus fünf Contingency-Splashdowns. FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin. Musk „more likely than not“ für Ship-Catch. 65 % unverändert: offizielle Zielangabe + Catch-Plan; Lizenz und Fang-Risiko bleiben. Impact hoch für SPCX.",
       "example": false,
       "sources": [
+        {
+          "title": "SpaceX: Starship Flight 15 (Missionsseite)",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
+        },
         {
           "title": "@elonmusk: Catching a giant rocket falling from space",
           "url": "https://x.com/elonmusk/status/2119111269718364631"
@@ -314,7 +318,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 20:00 Berlin: knapp neun Stunden nach dem Burn weiter keine offizielle Meldung von NASA-Blog, @NASA, @NASASolarSystem, @RocketLab oder @escapade_mars — weder Erfolg noch Panne. Space Tap (Update 7.11.) wartet ebenfalls auf Bestätigung. NASA: Bahnqualität erst mehrere Tage danach. Wahrscheinlichkeit unverändert 85 % (kein neuer Beleg für Erfolg oder Fehlschlag). Gold-Fenster 9.11. bleibt. Impact mittel für RKLB.",
+      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 22:00 Berlin: elf Stunden nach dem Burn weiter keine offizielle Meldung von NASA-Blog (letzter Eintrag 2.11.), @NASA, @RocketLab oder @escapade_mars. Starlust meldet zwar „erfolgreich“, stützt sich aber nur auf NASAs Vorab-Text – keine echte Bestätigung. NASA: Bahnqualität erst mehrere Tage danach. 85 % unverändert. Nächster Check 06:30. Gold-Fenster 9.11. bleibt.",
       "example": false,
       "sources": [
         {
@@ -340,6 +344,10 @@
         {
           "title": "The Space Tap: ESCAPADE — outcome not yet confirmed (7.11.)",
           "url": "https://thespacetap.com/nasa-escapade-earth-flyby-slingshot-mars-nov-7-9/"
+        },
+        {
+          "title": "Starlust: Blue „erfolgreich“ (nicht offiziell, 7.11.)",
+          "url": "https://starlust.org/nasas-first-escapade-orbiter-swings-past-earth-on-trip-to-mars-second-set-to-fly-by-on-november-9/"
         }
       ]
     },
