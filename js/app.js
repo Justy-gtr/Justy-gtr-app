@@ -1,7 +1,7 @@
 import { drawCharts } from "./chart.js";
 import { loadData } from "./data.js";
 import { initEggs } from "./eggs.js";
-import { appBase, isInAppUrl, loadStore, marketWatch, saveStore } from "./logic.js";
+import { appBase, isInAppUrl, loadStore, markTabSeen, marketWatch, saveStore, unreadTabs } from "./logic.js";
 import { playLiftoff, tickCountdown } from "./motion.js";
 import { initNav } from "./nav.js";
 import { detailContent, errorDetail, glossaryList, renderShell } from "./views.js";
@@ -93,9 +93,35 @@ async function pullPrices() {
 }
 
 const pager = document.getElementById("pager");
+function paintDots() {
+  const unread = data ? unreadTabs(data, store) : {};
+  document.querySelectorAll(".tab").forEach((button) => {
+    const on = (unread[button.dataset.page] || []).length > 0;
+    const dot = button.querySelector(".tab-dot");
+    if (dot) dot.hidden = !on;
+    button.classList.toggle("has-dot", on);
+  });
+}
+
+function notePage(id) {
+  if (!data || !id) return;
+  if (markTabSeen(store, data, id)) saveStore(store);
+  paintDots();
+}
+
+let settleTimer = 0;
+function settlePage(id) {
+  window.clearTimeout(settleTimer);
+  // A swipe slides across the tabs in between. Only the one it stops on is opened.
+  settleTimer = window.setTimeout(() => {
+    if (ui.page === id) notePage(id);
+  }, 180);
+}
+
 const nav = initNav(pager, {
   onPage(id) {
     ui.page = id;
+    settlePage(id);
     pullPrices();
   }
 });
@@ -128,6 +154,7 @@ function render() {
     if (home) home.innerHTML = `<article class="card error-card"><h2>Startseite gerade nicht da.</h2><p class="muted">${error.message}</p></article>`;
   }
   restoreScroll(scrolls);
+  notePage(ui.page);
   requestAnimationFrame(() => {
     try { drawCharts(data, ui); } catch { /* Chart bleibt leer, die Seite nicht. */ }
     tickCountdown();
