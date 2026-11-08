@@ -60,7 +60,7 @@ export function failedTicker(prev, symbol, name, message) {
     fetchError: message,
     priceEur: null,
     changePct: null,
-    history: { intraday: [], "1M": [], "6M": [], "1Y": [], "5Y": [] },
+    history: { intraday: [], "4H": [], "1M": [], "6M": [], "1Y": [], "5Y": [] },
     sparkline: [],
     sources: []
   };
@@ -105,6 +105,45 @@ export function updateAlerts(previous, tickers, nowIso, berlinDay) {
       return Number.isNaN(then) || then >= cutoff;
     })
   };
+}
+
+/**
+ * Group already-euro bars into N-hour candles.
+ * Open is the first bar, close the last, high and low the extremes. Nothing is filled in.
+ */
+export function aggregateBars(bars, hours) {
+  const size = hours * 3600 * 1000;
+  const map = new Map();
+  for (const bar of bars || []) {
+    const close = Number(bar?.close ?? bar?.eur);
+    const time = Date.parse(bar?.t);
+    if (!Number.isFinite(close) || !Number.isFinite(time)) continue;
+    const open = Number.isFinite(Number(bar.open)) ? Number(bar.open) : close;
+    const high = Number.isFinite(Number(bar.high)) ? Number(bar.high) : Math.max(open, close);
+    const low = Number.isFinite(Number(bar.low)) ? Number(bar.low) : Math.min(open, close);
+    const key = Math.floor(time / size) * size;
+    const slot = map.get(key);
+    if (!slot) {
+      map.set(key, {
+        t: new Date(key).toISOString(),
+        open,
+        high: Math.max(high, open, close),
+        low: Math.min(low, open, close),
+        close
+      });
+    } else {
+      slot.high = Math.max(slot.high, high, close);
+      slot.low = Math.min(slot.low, low, close);
+      slot.close = close;
+    }
+  }
+  return [...map.values()].map((bar) => ({
+    t: bar.t,
+    eur: roundTo(bar.close, 2),
+    open: roundTo(bar.open, 2),
+    high: roundTo(Math.max(bar.high, bar.open, bar.close), 2),
+    low: roundTo(Math.min(bar.low, bar.open, bar.close), 2)
+  }));
 }
 
 export function meaningful(value) {

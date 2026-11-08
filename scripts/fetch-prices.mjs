@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import {
+  aggregateBars,
   extendedQuote,
   failedTicker,
   fxFor,
@@ -111,6 +112,7 @@ function normalizeChart(result) {
   const timestamps = result.timestamp || [];
   const quote = result.indicators?.quote?.[0] || {};
   const closes = quote.close || [];
+  const opens = quote.open || [];
   const highs = quote.high || [];
   const lows = quote.low || [];
   const points = [];
@@ -120,6 +122,7 @@ function normalizeChart(result) {
     points.push({
       t: new Date(timestamps[index] * 1000).toISOString(),
       close: Number(close),
+      open: numberOrNull(opens[index]),
       high: numberOrNull(highs[index]),
       low: numberOrNull(lows[index])
     });
@@ -188,6 +191,52 @@ function sampleSpark(points, count = 32) {
   return Array.from({ length: count }, (_, index) => list[Math.round((index * (list.length - 1)) / last)].eur);
 }
 
+function eurBars(points, { fx, spot, direct }) {
+  const rows = [];
+  for (const point of points || []) {
+    if (point?.close == null || Number.isNaN(Number(point.close))) continue;
+    const rate = direct ? null : fxFor(fx?.daily, point.t, spot);
+    if (!direct && !rate) continue;
+    const conv = (value) => {
+      if (value == null || Number.isNaN(Number(value))) return null;
+      return roundTo(direct ? Number(value) : usdToEur(value, rate), 2);
+    };
+    const close = conv(point.close);
+    if (close == null) continue;
+    const open = conv(point.open) ?? close;
+    const high = roundTo(Math.max(conv(point.high) ?? close, open, close), 2);
+    const low = roundTo(Math.min(conv(point.low) ?? close, open, close), 2);
+    const row = { t: point.t, eur: close, open, high, low };
+    if (!direct) row.usd = roundTo(point.close, 2);
+    if (point.session) row.session = point.session;
+    rows.push(row);
+  }
+  return rows;
+}
+
+async function loadFourHour(symbol, options) {
+  let lastError = null;
+  for (const range of ["1y", "6mo", "3mo"]) {
+    try {
+      const chart = await fetchChart(symbol, "60m", range);
+      const bars = eurBars(chart.points, options).map((bar) => ({
+        t: bar.t,
+        open: bar.open,
+        high: bar.high,
+        low: bar.low,
+        close: bar.eur
+      }));
+      const candles = aggregateBars(bars, 4);
+      if (candles.length < 2) continue;
+      const span = Date.parse(candles.at(-1).t) - Date.parse(candles[0].t);
+      if (span > 36 * 3600 * 1000) return candles;
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError || new Error("4H leer");
+}
+
 function directPoints(points) {
   return points.map((point) => {
     const row = { t: point.t, eur: roundTo(point.close, 2) };
@@ -234,7 +283,7 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
     : roundTo(usdToEur(prevUsd, fx.rate), 2);
   const changePct = spotEur != null && prevEur ? roundTo(((spotEur - prevEur) / prevEur) * 100, 2) : null;
 
-  const history = { intraday: [], "1M": [], "6M": [], "1Y": [], "5Y": [] };
+  const history = { intraday: [], "4H": [], "1M": [], "6M": [], "1Y": [], "5Y": [] };
   let intradayMethod = method;
 
   let euIntra = null;
@@ -284,19 +333,24 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
   }
   const overnight = resolveOvernight(toEurQuote(computedUsd, fx.rate), previous, { regularLive });
 
+  const barOptions = { fx, spot: fx.rate, direct: useEur };
   for (const [key, interval, range] of RANGES) {
-    if (useEur) {
-      const chart = await fetchChart(eurSymbol, interval, range);
-      history[key] = directPoints(chart.points);
-    } else {
-      const chart = await fetchChart(spec.usdSymbol, interval, range);
-      history[key] = convertPoints(chart.points, fx, fx.rate);
-    }
+    const chart = await fetchChart(useEur ? eurSymbol : spec.usdSymbol, interval, range);
+    history[key] = eurBars(chart.points, barOptions);
+  }
+
+  try {
+    history["4H"] = await loadFourHour(useEur ? eurSymbol : spec.usdSymbol, barOptions);
+  } catch (error) {
+    console.log(`::warning::4H ${spec.symbol}: ${error.message}`);
+    history["4H"] = previous?.history?.["4H"] || [];
   }
 
   if (history["1M"].length && spotEur != null) {
     const last = history["1M"][history["1M"].length - 1];
     last.eur = roundTo(spotEur, 2);
+    if (typeof last.high === "number") last.high = roundTo(Math.max(last.high, last.open ?? last.eur, last.eur), 2);
+    if (typeof last.low === "number") last.low = roundTo(Math.min(last.low, last.open ?? last.eur, last.eur), 2);
   }
 
   const sparkSource = history.intraday.length ? history.intraday : history["1M"];
@@ -445,7 +499,8 @@ async function main() {
         overnightHighEur: ticker.overnightHighEur,
         overnightLowEur: ticker.overnightLowEur,
         points: ticker.history["1M"].length,
-        intraday: ticker.history.intraday.length
+        intraday: ticker.history.intraday.length,
+        fourH: ticker.history["4H"]?.length || 0
       })),
       alerts: nextAlerts.alerts.map((alert) => ({ id: alert.id, changePct: alert.changePct, notified: alert.notified }))
     }, null, 2));

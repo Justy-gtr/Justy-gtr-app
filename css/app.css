@@ -351,33 +351,45 @@ button.card { border-radius: 24px; }
 
 .switch {
   width: 100%;
-  min-height: 52px;
+  min-height: 64px;
   border-radius: 16px;
   border: 1px solid var(--line) !important;
   background: rgba(255,255,255,.04);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 14px;
+  gap: 12px;
+  padding: 10px 14px;
+  text-align: left;
 }
+.switch:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .knob {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: #8d93a3;
+  flex: 0 0 auto;
+  width: 48px;
+  height: 28px;
+  border-radius: 999px;
+  background: #2a3142;
+  border: 1px solid rgba(255,255,255,.16);
   position: relative;
 }
 .knob::after {
   content: "";
   position: absolute;
-  inset: 0 auto 0 0;
+  top: 2px;
+  left: 2px;
   width: 22px;
-  border-radius: inherit;
+  height: 22px;
+  border-radius: 50%;
   background: #d5d8e0;
-  transition: transform .2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  transition: transform .2s ease, background .2s ease;
 }
 .switch[aria-checked="true"] { border-color: rgba(228,177,90,.55) !important; }
-.switch[aria-checked="true"] .knob::after { transform: translateX(16px); background: var(--gold); }
+.switch[aria-checked="true"] .knob {
+  background: rgba(228,177,90,.35);
+  border-color: rgba(228,177,90,.65);
+}
+.switch[aria-checked="true"] .knob::after { transform: translateX(22px); background: var(--gold); }
 
 .chart-wrap { padding: 10px 8px 8px; }
 .chart { width: 100%; height: 260px; display: block; }
@@ -396,8 +408,15 @@ button.card { border-radius: 24px; }
   -webkit-user-drag: none;
 }
 .scrub {
+  display: block;
+  box-sizing: border-box;
   margin: 0 0 8px;
-  min-height: 1.3em;
+  height: 1.4em;
+  min-height: 1.4em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1.4;
   font-size: 15px;
   font-variant-numeric: tabular-nums;
   color: var(--ink);
@@ -444,9 +463,10 @@ button.card { border-radius: 24px; }
   padding-top: 6px;
 }
 .dock-note { margin-top: 16px; text-transform: none; letter-spacing: 0; font-size: 13px; color: var(--muted); }
-.tabbar { display: grid; grid-template-columns: repeat(6, 1fr); }
+.tabbar { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
 .tab {
   min-height: 52px;
+  min-width: 0;
   border: 0;
   background: transparent;
   color: #9aa3b5;
@@ -455,10 +475,12 @@ button.card { border-radius: 24px; }
   align-items: center;
   justify-content: center;
   gap: 2px;
-  font-size: 10px;
-  letter-spacing: 0.01em;
+  padding: 0 1px;
+  font-size: 9px;
+  letter-spacing: 0;
 }
-.tab svg { width: 20px; height: 20px; }
+.tab span { display: block; max-width: 100%; white-space: nowrap; }
+.tab svg { width: 18px; height: 18px; }
 .tab[aria-current="page"] { color: var(--gold-2); }
 .tab-icon { position: relative; width: 20px; height: 20px; display: grid; }
 .tab-dot {

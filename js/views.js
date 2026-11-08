@@ -1,4 +1,5 @@
 import { chartAnalysis } from "./analysis.js";
+import { musterCard, rangeBoard } from "./analyse-view.js";
 import { sparkline } from "./chart.js";
 import {
   esc,
@@ -512,10 +513,9 @@ function renderSchwarm(data) {
 
 function renderChartsPage(data, ui) {
   const ticker = tickerBy(data, ui.chartSymbol) || data.prices?.tickers?.[0];
-  const { points, range } = seriesFor(ticker, ui.chartRange);
+  const { points, range } = seriesFor(ticker, ui.chartRange, ui.langfrist);
   const change = rangeChange(points);
-  const ranges = ["1 Min", "5 Min", "1W", "1M", "6M", "1J", "5J", "Max"];
-  const analysis = chartAnalysis(ticker, range);
+  const analysis = chartAnalysis(ticker, ui.chartRange, ui.langfrist);
   return `
     <header class="page-head">
       <p class="eyebrow">Kurs in Euro</p>
@@ -526,39 +526,22 @@ function renderChartsPage(data, ui) {
     </header>
     <div class="chips">${(data.prices?.tickers || []).map((item) => `
       <button type="button" class="chip" data-action="chart-symbol" data-symbol="${esc(item.symbol)}" aria-pressed="${item.symbol === ticker?.symbol}">${esc(item.symbol)}</button>`).join("")}</div>
-    <div class="chips">${ranges.map((item) => `
-      <button type="button" class="chip" data-action="chart-range" data-range="${item}" aria-pressed="${item === range}">${esc(item)}</button>`).join("")}</div>
+    ${rangeBoard(range, "chart-range")}
+    <button type="button" class="switch" data-action="langfrist" role="switch" aria-checked="${ui.langfrist ? "true" : "false"}">
+      <span class="switch-copy">
+        <strong>Langfrist-Brille</strong>
+        <span>Glättet und zeigt die längere Bewegung, nicht den lauten Tag.</span>
+      </span>
+      <span class="knob" aria-hidden="true"></span>
+    </button>
     <div class="card chart-wrap">
-      <p class="scrub" hidden></p>
+      <p class="scrub"></p>
       <canvas class="chart chart-price" data-chart="price" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kurschart in Euro. Ziehen zeigt Zeitpunkt, Kurs und Veränderung."></canvas>
     </div>
-    ${analysisCard(analysis)}
+    ${musterCard(analysis)}
+    ${ui.langfrist ? `<article class="card"><p class="kicker">Langfrist</p><p>${esc(ticker?.longTermOutlook || "Noch kein Langfrist-Text.")}</p>${ticker?.narrativeExample ? pill(true) : ""}</article>` : ""}
     <button type="button" class="text-btn" data-action="explain" data-symbol="${esc(ticker?.symbol || "")}">Warum diese Bewegung?</button>
   `;
-}
-
-function analysisCard(analysis) {
-  const outcome = analysis?.outcome || {};
-  const up = outcome.pct?.up ?? 0;
-  const down = outcome.pct?.down ?? 0;
-  const figures = outcome.show ? `<div class="versus"><div><span class="big up">${up} %</span><span class="muted">danach hoch</span></div><div><span class="big down">${down} %</span><span class="muted">danach runter</span></div></div>` : "";
-  const levels = (analysis?.levels || []).map((level) => `
-    <div class="level-block">
-      <p class="level-head"><strong><i class="swatch ${level.kind === "resistance" ? "resist" : level.kind}" aria-hidden="true"></i>${esc(level.title)}</strong>${level.eur == null ? "" : `<span class="level-price">${esc(formatEUR(level.eur))}</span>`}</p>
-      ${level.show ? `<p class="level-kicker">${esc(level.kicker)}</p>` : ""}
-      <p class="level-stat">${esc(level.sentence)}</p>
-    </div>`).join("");
-  const legend = (analysis?.legend || []).map((item) => `<span><i class="swatch ${item.kind === "resistance" ? "resist" : item.kind}" aria-hidden="true"></i>${esc(item.label)}</span>`).join("");
-  return `
-    <article class="card analysis" aria-label="Kursbild">
-      <p class="kicker">Muster</p>
-      <h3>${esc(analysis?.title || "Keine klare Form")}</h3>
-      ${figures}
-      <p class="analysis-note">${esc(outcome.sentence || "")}</p>
-      ${outcome.detail ? `<p class="analysis-note">${esc(outcome.detail)}</p>` : ""}
-      ${levels}
-      ${legend ? `<p class="chart-legend">${legend}</p>` : ""}
-    </article>`;
 }
 
 function renderMehr() {
