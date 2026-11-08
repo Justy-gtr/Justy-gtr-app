@@ -1,37 +1,69 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-07-escapade",
-    "date": "2026-11-07",
-    "question": "Gelingt ESCAPADE-Sonde Blue heute das Trans-Mars-Injection-Manöver (TMI-Burn ~10:51 Berlin) laut NASA/Rocket Lab?",
+    "id": "2026-11-08-ussf627",
+    "date": "2026-11-08",
+    "question": "Bringt SpaceX USSF-627 im ersten Startfenster (Di 10.11., ab 04:03 Berlin) erfolgreich ins All?",
     "karlAnswer": "ja",
-    "karlReason": "Knapp „ja“, etwa 80 zu 20 vor dem Burn. NASA/Rocket Lab hielten Blue für Samstag 4:51 EST / 10:51 Berlin fest. Stand So 05:00 Berlin: rund 18 Stunden nach dem Burn weiter keine offizielle Meldung von NASA-Blog, @NASA, @RocketLab oder @escapade_mars — weder Erfolg noch Fehlschlag. Starlust schreibt „erfolgreich“, aber ohne offizielle Quelle. Darum bleibt die Frage offen (outcome null); nächster Check So 06:30. Gold folgt am 9.11.",
+    "karlReason": "Eher „ja“, etwa 80 zu 20. SpaceX nennt Mo 9.11. 19:03 PT (= Di 04:03 Berlin), vier Stunden Fenster, Backup einen Tag später. Derselbe Startplatz brachte USSF-432 am Samstag planmäßig hoch. Risiko: Wetter oder Technik verschieben auf den Backup-Termin.",
     "outcome": null,
-    "resolvesAt": "2026-11-08T06:30:00+01:00",
+    "resolvesAt": "2026-11-10T08:30:00+01:00",
     "sources": [
       {
-        "title": "NASA: ESCAPADE Twin Spacecraft",
-        "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+        "title": "SpaceX: USSF-627 Mission",
+        "url": "https://www.spacex.com/launches/ussf627"
       },
       {
-        "title": "@RocketLab: ESCAPADE TMI",
-        "url": "https://x.com/RocketLab/status/2118834083279306990"
+        "title": "SpaceX: Startliste",
+        "url": "https://www.spacex.com/launches/"
       },
       {
-        "title": "Rocket Lab: ESCAPADE Mission",
-        "url": "https://rocketlabcorp.com/missions/escapade/"
+        "title": "Next Spaceflight: USSF-627",
+        "url": "https://nextspaceflight.com/launches/details/8446/"
       },
       {
-        "title": "NASA ESCAPADE Blog-Archiv",
-        "url": "https://science.nasa.gov/blogs/escapade/"
-      },
-      {
-        "title": "The Space Tap: ESCAPADE flyby — outcome not yet confirmed",
-        "url": "https://thespacetap.com/nasa-escapade-earth-flyby-slingshot-mars-nov-7-9/"
+        "title": "SpaceX: USSF-432 Mission (Sa erfolgreich)",
+        "url": "https://www.spacex.com/launches/ussf432"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-07-escapade",
+      "date": "2026-11-07",
+      "question": "Gelingt ESCAPADE-Sonde Blue heute das Trans-Mars-Injection-Manöver (TMI-Burn ~10:51 Berlin) laut NASA/Rocket Lab?",
+      "karlAnswer": "ja",
+      "karlReason": "Knapp „ja“, etwa 80 zu 20 vor dem Burn. NASA/Rocket Lab hielten Blue für Samstag 4:51 EST / 10:51 Berlin fest. Frist So 06:30 Berlin: rund 20 Stunden nach dem Burn weiter keine offizielle Meldung von NASA-Blog, @NASA, @RocketLab oder @escapade_mars — weder Erfolg noch Fehlschlag. Darum nicht gewertet: kein „ja“, kein „nein“, keine Punkte. Wird nachgetragen, sobald NASA oder Rocket Lab sich äußern.",
+      "outcome": null,
+      "resolvesAt": "2026-11-08T06:30:00+01:00",
+      "sources": [
+        {
+          "title": "NASA: ESCAPADE Twin Spacecraft",
+          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+        },
+        {
+          "title": "@RocketLab: ESCAPADE TMI",
+          "url": "https://x.com/RocketLab/status/2118834083279306990"
+        },
+        {
+          "title": "Rocket Lab: ESCAPADE Mission",
+          "url": "https://rocketlabcorp.com/missions/escapade/"
+        },
+        {
+          "title": "NASA ESCAPADE Blog-Archiv (Stand 8.11. 06:40: kein Post-Burn-Update)",
+          "url": "https://science.nasa.gov/blogs/escapade/"
+        },
+        {
+          "title": "The Space Tap: ESCAPADE flyby — outcome not yet confirmed",
+          "url": "https://thespacetap.com/nasa-escapade-earth-flyby-slingshot-mars-nov-7-9/"
+        },
+        {
+          "title": "@jeff_on_orbit: Blue-Burn „nicht bestätigt“ (8.11.)",
+          "url": "https://x.com/jeff_on_orbit/status/2119246722589204875"
+        }
+      ],
+      "outcomeNote": "Nicht gewertet. Bis zur Frist (8.11. 06:30 Berlin) keine offizielle Bestätigung von NASA, Rocket Lab, Blue Origin oder UC Berkeley. Starlust schrieb „erfolgreich“, stützt sich aber nur auf NASAs Vorab-Text. Ergebnis bleibt leer, bis eine offizielle Quelle da ist."
+    },
     {
       "id": "2026-11-07",
       "date": "2026-11-07",

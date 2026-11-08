@@ -306,9 +306,9 @@
     },
     {
       "id": "evt-escapade-tmi",
-      "title": "Rocket Lab / NASA ESCAPADE: Mars-Einschussmanöver (Blue am 7.11., Gold am 9.11.)",
-      "date": "2026-11-07",
-      "time": "10:51",
+      "title": "Rocket Lab / NASA ESCAPADE: Mars-Einschussmanöver (Blue 7.11. unbestätigt, Gold am 9.11.)",
+      "date": "2026-11-09",
+      "time": "11:51",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "mission",
@@ -318,7 +318,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand So 05:00 Berlin: rund 18 Stunden nach dem Burn weiter keine offizielle Meldung von NASA-Blog (letzter Eintrag 2.11.), @NASA, @RocketLab oder @escapade_mars. Starlust meldet „erfolgreich“, stützt sich aber nur auf NASAs Vorab-Text; andere Beobachter (z. B. @jeff_on_orbit, 8.11.) schreiben ausdrücklich „nicht bestätigt“. NASA: Bahnqualität erst mehrere Tage danach. 85 % unverändert. Entscheidung um 06:30. Gold-Fenster 9.11. bleibt.",
+      "reasoning": "NASA: Gold-Burn Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten. Blue sollte am 7.11. um 10:51 Berlin zünden. Stand So 06:40 Berlin: rund 20 Stunden danach weiter keine offizielle Meldung von NASA-Blog (letzter Eintrag 2.11.), @NASA, @RocketLab oder @escapade_mars. Starlust meldet „erfolgreich“, aber ohne eigene Quelle; @jeff_on_orbit schreibt „nicht bestätigt“. Keine Hinweise auf ein Problem, aber auch keine Bestätigung. 85 % unverändert. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -334,7 +334,7 @@
           "url": "https://x.com/RocketLab/status/2118544706066055248"
         },
         {
-          "title": "NASA ESCAPADE Blog-Archiv (kein Post-Burn-Update)",
+          "title": "NASA ESCAPADE Blog-Archiv (Stand 8.11. 06:40: kein Post-Burn-Update)",
           "url": "https://science.nasa.gov/blogs/escapade/"
         },
         {
@@ -951,7 +951,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "SpaceX-Seite bestätigt weiter Montag 9.11., Vier-Stunden-Fenster ab 19:03 PT Vandenberg (= 04:03 Berlin am 10.11.), Backup Di 10.11. 18:49 PT. Nach erfolgreichem USSF-432 von derselben Rampe 85 %. Klassifizierte Space-Force-Mission, Landung OCISLY. Kurswirkung gering.",
+      "reasoning": "SpaceX-Seite (Stand 8.11.) bestätigt weiter Montag 9.11., Vier-Stunden-Fenster ab 19:03 PT Vandenberg (= Di 10.11. 04:03 Berlin), Backup Di 10.11. 18:49 PT. Nach erfolgreichem USSF-432 von derselben Rampe 85 %. Klassifizierte Space-Force-Mission, Landung OCISLY. Kurswirkung gering. Tagesfrage vom 8.11.",
       "example": false,
       "sources": [
         {
