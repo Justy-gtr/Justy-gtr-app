@@ -1,11 +1,11 @@
 {
   "example": false,
-  "asOf": "2026-11-08T14:15:00+01:00",
+  "asOf": "2026-11-08T15:10:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
       "label": "zuversichtlich",
-      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan. So 14:15: sechs neue Musk-Posts zu Grok-Bot, Starship-Zeitlupe, Starlink-Wettbewerb, einem Hassabis-KI-Zitat und der 10.000-Starts-Grafik — keiner wesentlich. Wochenende ohne Kurs — Di früh USSF-627, Di 14:30 CPI.",
+      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan. So 15:10: drei neue Musk-Posts seit 14:15 (Grok-Bot-Fixes unterwegs, „Yup“ zu einer älteren These über orbitale KI-Umsätze, Anekdote zu lokalen Modellen) — keiner wesentlich. Wochenende ohne Kurs — Di früh USSF-627, Di 14:30 CPI.",
       "sources": [
         {
           "title": "@SpaceX: Flight 15 catch",
@@ -24,7 +24,7 @@
     "TSLA": {
       "score": 0.15,
       "label": "leicht zuversichtlich",
-      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. So 14:15: keine neuen Tesla-Posts. Wochenende ruhig.",
+      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. So 15:10: keine neuen Tesla-Posts. Wochenende ruhig.",
       "sources": [
         {
           "title": "@elonmusk: Cybertruck backlog",
@@ -39,7 +39,7 @@
     "RKLB": {
       "score": 0.05,
       "label": "abwartend",
-      "summary": "ESCAPADE-Blue-TMI seit ~27 h vorbei — Stand So 14:15 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
+      "summary": "ESCAPADE-Blue-TMI seit ~28 h vorbei — Stand So 15:10 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
       "sources": [
         {
           "title": "NASA ESCAPADE Blog",
@@ -57,6 +57,86 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2119425068979937378",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T14:41:28+01:00",
+      "summaryDe": "Musk teilt mit „Many such stories“ eine Anekdote: Jemand fand das 200-Dollar-KI-Abo zu teuer, kaufte zwei Mac Studios für lokale Modelle und stellte fest, dass sie schlechter liefen als das Abo.",
+      "originalText": "Many such stories",
+      "url": "https://x.com/elonmusk/status/2119425068979937378",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Many such stories (lokale Modelle vs. Abo)",
+          "url": "https://x.com/elonmusk/status/2119425068979937378"
+        },
+        {
+          "title": "@AndyL5cc: 200-Dollar-Abo vs. zwei Mac Studios",
+          "url": "https://x.com/AndyL5cc/status/2119247317975060982"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119420033113739525",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T14:21:27+01:00",
+      "summaryDe": "Musk bestätigt mit „Yup“ eine Darstellung zu orbitaler KI-Rechenleistung: Bei 100 GW pro Jahr (zu 10 Dollar je Watt) würde SpaceX jedes Jahr eine Billion Dollar Umsatz dazugewinnen, bei höherem Preis 3–5 Billionen — weil die Satelliten weiterliefen. Das wiederholt eine frühere These, keine neue Zahl.",
+      "originalText": "Yup",
+      "url": "https://x.com/elonmusk/status/2119420033113739525",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Yup (orbitale KI-Umsatzthese)",
+          "url": "https://x.com/elonmusk/status/2119420033113739525"
+        },
+        {
+          "title": "@niccruzpatane: 100 GW / 1 Bio. $ pro Jahr",
+          "url": "https://x.com/niccruzpatane/status/2119152965101781174"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119419126045454531",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T14:17:51+01:00",
+      "summaryDe": "Musk: Korrekturen für Grok-Bot sind unterwegs — bessere Token-Effizienz und klügeres Verhalten.",
+      "originalText": "Grok Bot fixes for improved token efficiency and smarter behavior are underway",
+      "url": "https://x.com/elonmusk/status/2119419126045454531",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Grok Bot fixes underway",
+          "url": "https://x.com/elonmusk/status/2119419126045454531"
+        }
+      ]
+    },
     {
       "id": "post-musk-2119415029812609301",
       "account": "@elonmusk",
