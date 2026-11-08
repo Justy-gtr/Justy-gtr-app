@@ -390,6 +390,23 @@ button.card { border-radius: 24px; }
   font-variant-numeric: tabular-nums;
   color: var(--ink);
 }
+.analysis h3 { font-size: 22px; letter-spacing: -0.03em; margin: 0; }
+.analysis .versus { margin-top: 2px; }
+.analysis .versus .big { font-size: 28px; }
+.analysis-note { color: var(--ink); font-size: 15px; line-height: 1.35; }
+.analysis-note + .analysis-note { color: var(--muted); font-size: 13px; }
+.level-block { padding-top: 10px; border-top: 1px solid var(--line); }
+.level-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.level-head strong { display: inline-flex; align-items: center; gap: 8px; font-size: 16px; letter-spacing: -0.02em; }
+.level-price { font-variant-numeric: tabular-nums; color: var(--gold-2); font-weight: 650; }
+.level-kicker { color: var(--muted); font-size: 13px; }
+.level-stat { font-size: 16px; line-height: 1.35; font-variant-numeric: tabular-nums; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 8px 14px; margin: 0; color: var(--muted); font-size: 13px; }
+.chart-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.swatch { display: inline-block; width: 18px; height: 3px; border-radius: 2px; background: currentColor; font-style: normal; }
+.swatch.trend { color: #e4b15a; background: #e4b15a; }
+.swatch.support { color: #3ddea0; background: #3ddea0; }
+.swatch.resist { color: #ff5d6c; background: #ff5d6c; }
 
 .menu { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .menu .card { min-height: 96px; }

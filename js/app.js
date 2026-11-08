@@ -12,7 +12,6 @@ const ui = {
   postFilter: "alle",
   chartSymbol: "SPCX",
   chartRange: "1 Min",
-  langfrist: false,
   live: false,
   scenarioId: "starship_fail",
   revealed: {},
@@ -237,12 +236,6 @@ document.body.addEventListener("click", (event) => {
   }
   if (action === "chart-range") {
     ui.chartRange = el.dataset.range;
-    render();
-    return;
-  }
-  if (action === "langfrist") {
-    ui.langfrist = !ui.langfrist;
-    if (ui.langfrist && (ui.chartRange === "Tag" || ui.chartRange === "1 Min" || ui.chartRange === "5 Min" || ui.chartRange === "1M")) ui.chartRange = "1J";
     render();
     return;
   }

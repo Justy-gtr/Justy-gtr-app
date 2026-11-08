@@ -1,3 +1,4 @@
+import { chartAnalysis } from "./analysis.js";
 import { seriesFor } from "./logic.js";
 
 function hexAlpha(hex, alpha) {
@@ -174,6 +175,7 @@ function paintChart(canvas, state, hover) {
   ctx.lineCap = "round";
   ctx.setLineDash([]);
   ctx.stroke();
+  paintGuides(ctx, layout, state.lines);
   strokeWhere(ctx, coords, (left, right) => isExtendedPoint(left) || isExtendedPoint(right), "#e4b15a");
   const focus = hover || coords.at(-1);
   const extendedEnd = !hover && isExtendedPoint(focus.point);
@@ -194,6 +196,38 @@ function paintChart(canvas, state, hover) {
     ctx.stroke();
     ctx.setLineDash([]);
   }
+}
+
+function guideY(layout, price) {
+  const span = layout.max - layout.min || 1;
+  const y = layout.padT + (1 - (price - layout.min) / span) * layout.plotH;
+  return Math.min(layout.padT + layout.plotH, Math.max(layout.padT, y));
+}
+
+function paintGuides(ctx, layout, lines) {
+  if (!lines?.length || !layout?.coords?.length) return;
+  const { coords } = layout;
+  const right = coords.at(-1).x;
+  for (const line of lines) {
+    const y0 = guideY(layout, line.eur0);
+    const y1 = guideY(layout, line.eur1);
+    ctx.beginPath();
+    ctx.lineWidth = 1.5;
+    ctx.lineCap = "butt";
+    if (line.kind === "trend") {
+      ctx.setLineDash([7, 5]);
+      ctx.strokeStyle = "#e4b15a";
+      ctx.moveTo(coords[0].x, y0);
+      ctx.lineTo(right, y1);
+    } else {
+      ctx.setLineDash([2, 4]);
+      ctx.strokeStyle = line.kind === "support" ? "#3ddea0" : "#ff5d6c";
+      ctx.moveTo(layout.padL, y0);
+      ctx.lineTo(right, y0);
+    }
+    ctx.stroke();
+  }
+  ctx.setLineDash([]);
 }
 
 function isExtendedPoint(point) {
@@ -283,7 +317,7 @@ function bindScrub(canvas) {
   canvas.addEventListener("pointercancel", end);
 }
 
-export function drawLineChart(canvas, points, { color = "#e4b15a", axes = false, scrub = false } = {}) {
+export function drawLineChart(canvas, points, { color = "#e4b15a", axes = false, scrub = false, lines = [] } = {}) {
   if (!canvas) return;
   const width = canvas.clientWidth || 320;
   const height = canvas.clientHeight || 180;
@@ -303,7 +337,7 @@ export function drawLineChart(canvas, points, { color = "#e4b15a", axes = false,
     return;
   }
   const layout = chartLayout(width, height, usable, axes);
-  const state = { color, width, height, layout, axes };
+  const state = { color, width, height, layout, axes, lines: lines || [] };
   canvas._chartState = state;
   paintChart(canvas, state, null);
   if (scrub) bindScrub(canvas);
@@ -315,12 +349,13 @@ export function drawCharts(data, ui) {
     const kind = canvas.dataset.chart;
     if (kind === "price") {
       const ticker = (data.prices?.tickers || []).find((item) => item.symbol === (canvas.dataset.symbol || ui.chartSymbol));
-      const { points } = seriesFor(ticker, ui.chartRange, ui.langfrist);
+      const { points } = seriesFor(ticker, ui.chartRange);
       const first = Number(points[0]?.eur);
       const last = Number(points.at(-1)?.eur);
       const falling = points.length > 1 && last < first;
-      const color = ui.langfrist ? "#e4b15a" : (falling ? "#ff5d6c" : "#3ddea0");
-      drawLineChart(canvas, points, { color, axes: true, scrub: true });
+      const color = falling ? "#ff5d6c" : "#3ddea0";
+      const lines = chartAnalysis(ticker, ui.chartRange).lines;
+      drawLineChart(canvas, points, { color, axes: true, scrub: true, lines });
     } else if (kind === "prod") {
       const series = (data.production?.series || []).find((item) => item.id === canvas.dataset.series);
       drawLineChart(canvas, (series?.points || []).map((point) => ({ t: point.date, eur: point.value })), { color: "#e4b15a" });

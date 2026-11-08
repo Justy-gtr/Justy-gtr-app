@@ -30,7 +30,7 @@ Auf dem iPhone im Vollbild nutzt die App die sicheren Ränder und scrollt nur in
 - **Kalender:** Umschalter Unternehmen / Extern. Jeder Termin hat Datum, Wahrscheinlichkeitsbalken, Begründung und Quellen.
 - **Posts:** Kurzfassungen auf Deutsch, Link zum Original, Stimmungsbogen für SpaceX und Tesla.
 - **Schwarm:** Karl sagt je Aktie, ob er zuversichtlicher oder skeptischer ist als der Schwarm, mit kurzem Einwand. Darunter Ticker, Erwähnungen und die Trefferquote, sobald sie vorliegt. Keine Kauf- oder Verkaufstipps.
-- **Charts:** 1 Min und 5 Min für den Tag, dazu 1M, 6M, 1J, 5J, Max und die Langfrist-Brille. 5 Min ist dieselbe Minutenreihe, nur gröber.
+- **Charts:** 1 Min und 5 Min für den Tag, dazu 1W, 1M, 6M, 1J, 5J und Max. 5 Min ist dieselbe Minutenreihe, nur gröber. 1W sind die letzten sieben Tage aus der Monatsreihe. Unter dem Chart stehen sichtbare Linien und, wenn die Reihe reicht, wie oft es danach hoch oder runter ging. Keine Kauf- oder Verkaufstipps.
 - **Mehr:** Insider, Treffer-Check, Versprechen, Was-wäre-wenn, Ruhe-Modus, Produktion, erste Prinzipien, Glossar, Tagesfrage, Briefing, Wochenrückblick, Meldungen.
 
 „Warum?“ an einem Kurs öffnet die kurze Einordnung. „Gegenteil“ zeigt das stärkste Gegenargument. Die Tagesfrage liegt auf diesem iPhone; Justy und Karl bekommen nur Punkte, wenn beide geantwortet haben und ein Ergebnis hinterlegt ist.
