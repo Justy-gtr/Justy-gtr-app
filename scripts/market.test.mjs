@@ -16,7 +16,7 @@ import {
   usSessionActive,
   usdToEur
 } from "./market.mjs";
-import { bigDrop, bucketMinutes, buildFeed, buildMarketTimeline, compactStances, formatEventClock, formatFeedTime, headlineEvent, isInAppUrl, marketWatch, maxPoints, opinionWord, scoreboard, seriesFor, sparkSample, trackSummary, verdictForStances, zonedWallTime } from "../js/logic.js";
+import { bigDrop, bucketMinutes, buildFeed, buildMarketTimeline, compactStances, formatEventClock, formatFeedTime, headlineEvent, isInAppUrl, karlVoiceIssues, marketWatch, maxPoints, opinionWord, scoreboard, seriesFor, sparkSample, trackSummary, verdictForStances, vsSwarmVerdict, zonedWallTime } from "../js/logic.js";
 import fs from "node:fs";
 
 test("Dollar wird durch EURUSD geteilt, nicht multipliziert", () => {
@@ -439,6 +439,50 @@ test("Das Abzeichen sagt dasselbe wie die beiden Chips", () => {
   assert.deepEqual(verdictForStances("halten", "halten"), { label: "Einig", kind: "agree" });
   assert.equal(verdictForStances("kauf", "halten").label === "Einig", false);
   assert.equal(verdictForStances("kaum", "halten").label === "Karl dagegen", false);
+});
+
+test("Karl gegen den Schwarm ist ein klares Urteil", () => {
+  assert.deepEqual(vsSwarmVerdict({ vsSwarm: "zuversichtlicher" }), {
+    key: "zuversichtlicher",
+    label: "Karl zuversichtlicher",
+    kind: "warm"
+  });
+  assert.deepEqual(vsSwarmVerdict({ vsSwarm: "skeptischer" }), {
+    key: "skeptischer",
+    label: "Karl skeptischer",
+    kind: "cool"
+  });
+  assert.equal(vsSwarmVerdict({ karlStance: "halten", swarmStance: "kaum" }).key, "zuversichtlicher");
+  assert.equal(vsSwarmVerdict({ karlStance: "vorsichtig", swarmStance: "kauf" }).key, "skeptischer");
+  assert.equal(vsSwarmVerdict({ karlStance: "halten", swarmStance: "kauf" }).key, "skeptischer");
+  assert.equal(vsSwarmVerdict({ karlStance: "halten", swarmStance: "halten" }).key, "skeptischer");
+
+  const favorites = JSON.parse(fs.readFileSync("data/favorites.json", "utf8")).favorites;
+  const warm = favorites.filter((item) => item.vsSwarm === "zuversichtlicher").map((item) => item.symbol).sort();
+  assert.deepEqual(warm, ["HEN3", "RKLB", "SAP"]);
+  for (const favorite of favorites) {
+    assert.equal(vsSwarmVerdict(favorite).key, favorite.vsSwarm);
+    assert.ok(favorite.karlTake.length > 20 && favorite.karlTake.length < 180);
+    assert.ok(favorite.karlCounter.length > 10 && favorite.karlCounter.length < 180);
+    assert.deepEqual(karlVoiceIssues(favorite.karlTake), []);
+    assert.deepEqual(karlVoiceIssues(favorite.karlCounter), []);
+    assert.equal(/\b(kaufen|verkaufen)\b/i.test(`${favorite.karlTake} ${favorite.karlCounter}`), false);
+  }
+
+  const comparison = JSON.parse(fs.readFileSync("data/crowd.json", "utf8")).comparison;
+  assert.equal(comparison.swarmHitRatePct, null);
+  assert.equal(comparison.karlHitRatePct, null);
+  assert.deepEqual(karlVoiceIssues(comparison.summary), []);
+  assert.equal(/zuversichtlicher/i.test(comparison.summary), true);
+  assert.equal(/skeptischer/i.test(comparison.summary), true);
+  const bySymbol = Object.fromEntries(favorites.map((item) => [item.symbol, item]));
+  for (const pick of comparison.picks) {
+    const favorite = bySymbol[pick.symbol];
+    assert.equal(pick.vsSwarm, favorite.vsSwarm);
+    assert.equal(pick.karlTake, favorite.karlTake);
+    assert.equal(pick.karlCounter, favorite.karlCounter);
+    assert.deepEqual(karlVoiceIssues(pick.karlTake), []);
+  }
 });
 
 test("Trefferquote rechnet nur entschiedene Ideen", () => {

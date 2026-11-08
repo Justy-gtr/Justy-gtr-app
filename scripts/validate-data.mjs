@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { karlVoiceIssues } from "../js/logic.js";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const dataDir = path.join(root, "data");
@@ -122,15 +123,30 @@ if (posts) {
   }
 }
 
+const VS_SWARM = new Set(["zuversichtlicher", "skeptischer"]);
+
+function voiceOk(item, label) {
+  if (!VS_SWARM.has(item?.vsSwarm)) fail(`${label}.vsSwarm`);
+  if (!item?.karlTake) fail(`${label}.karlTake`);
+  if (!item?.karlCounter) fail(`${label}.karlCounter`);
+  for (const issue of karlVoiceIssues(item?.karlTake)) fail(`${label}.karlTake ${issue}`);
+  for (const issue of karlVoiceIssues(item?.karlCounter)) fail(`${label}.karlCounter ${issue}`);
+}
+
 for (const favorite of loaded["favorites.json"]?.favorites || []) {
   const label = `favorites.${favorite.id}`;
   if (typeof favorite.score !== "number") fail(`${label}.score`);
   if (!favorite.reason) fail(`${label}.reason`);
+  voiceOk(favorite, label);
   sourcesOk(favorite.sources, label);
 }
 
 const crowd = loaded["crowd.json"];
 if (!crowd?.comparison?.summary) fail("crowd.comparison");
+for (const issue of karlVoiceIssues(crowd?.comparison?.summary)) fail(`crowd.comparison.summary ${issue}`);
+for (const pick of crowd?.comparison?.picks || []) {
+  voiceOk(pick, `crowd.pick.${pick.symbol}`);
+}
 for (const investor of crowd?.investors || []) {
   sourcesOk(investor.sources, `crowd.${investor.id}`);
   if (!Array.isArray(investor.tickers)) fail(`crowd.${investor.id}.tickers`);

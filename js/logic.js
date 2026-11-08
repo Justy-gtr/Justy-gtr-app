@@ -699,6 +699,48 @@ export function verdictForStances(swarmStance, karlStance) {
   return { label: "Nicht gleich", kind: "mixed" };
 }
 
+/**
+ * Headline on Schwarm gegen Karl.
+ * Explicit `vsSwarm` wins. Otherwise heat: vorsichtig < kaum < halten < kauf.
+ * Karl warmer than the swarm → zuversichtlicher, otherwise skeptischer.
+ * Equal heat stays skeptischer so the page does not fall back to "neutral".
+ */
+const SWARM_HEAT = {
+  verkauf: 0,
+  vorsichtig: 0,
+  kaum: 1,
+  beobachten: 1,
+  halten: 2,
+  kauf: 3
+};
+
+export function vsSwarmVerdict(item) {
+  const raw = String(item?.vsSwarm || "");
+  const key = raw === "zuversichtlicher" || raw === "skeptischer" ? raw : inferVsSwarm(item);
+  if (key === "zuversichtlicher") {
+    return { key, label: "Karl zuversichtlicher", kind: "warm" };
+  }
+  return { key: "skeptischer", label: "Karl skeptischer", kind: "cool" };
+}
+
+function inferVsSwarm(item) {
+  const karl = SWARM_HEAT[String(item?.karlStance || "")] ?? 2;
+  const swarm = SWARM_HEAT[String(item?.swarmStance || "")] ?? 2;
+  return karl > swarm ? "zuversichtlicher" : "skeptischer";
+}
+
+const KARL_HEDGE = /keine\s+prognose|\bunklar\b|\bvielleicht\b|\babwarten\b|\bmal sehen\b|\bkommt darauf an\b|\beher\b/i;
+const KARL_TIP = /\b(kaufen|verkaufen|kaufe|verkaufe)\b/i;
+
+/** Flags hedge words and buy/sell tips in Karl's comparison lines. */
+export function karlVoiceIssues(text) {
+  const value = String(text || "");
+  const issues = [];
+  if (KARL_HEDGE.test(value)) issues.push("weich");
+  if (KARL_TIP.test(value)) issues.push("tipp");
+  return issues;
+}
+
 const WEEKDAY_INDEX = { Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4, Sat: 5, Sun: 6 };
 
 function zonedClock(date, timeZone) {

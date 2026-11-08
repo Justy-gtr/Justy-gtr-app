@@ -201,6 +201,9 @@ Karls fünf Favoriten. Die Startseite zeigt die Liste in `rank`-Reihenfolge.
       "symbol": "SPCX",
       "name": "SpaceX",
       "score": 8,
+      "vsSwarm": "skeptischer",
+      "karlTake": "Kurzes Urteil: wo Karl kühler oder fester ist als der Schwarm.",
+      "karlCounter": "Ein kurzer Einwand, nicht die Überschrift.",
       "reason": "Ein Satz.",
       "horizon": "langfrist",
       "counterArgument": "Das stärkste Gegenargument.",
@@ -211,7 +214,19 @@ Karls fünf Favoriten. Die Startseite zeigt die Liste in `rank`-Reihenfolge.
 }
 ```
 
-`score` ist eine ganze Zahl von 1 bis 10. Fünf Einträge sind Karls Top 5 über den ganzen Markt, nicht nur SpaceX und Tesla. `counterArgument` erscheint über den Knopf „Gegenteil“. Optional: `karlStance`, `swarmStance` (`kauf`, `halten`, `verkauf`, `vorsichtig`, `kaum`), `againstCrowd`, `priceEur`, `priceVenue`, `priceAsOf`, `swarmNote`. Angezeigte Kurse sind Euro.
+`score` ist eine ganze Zahl von 1 bis 10. Zehn Einträge sind Karls Top 10 über den ganzen Markt, nicht nur SpaceX und Tesla. `counterArgument` erscheint über den Knopf „Gegenteil“, wenn der Text länger oder anders ist als `karlCounter`. Optional: `karlStance`, `swarmStance` (`kauf`, `halten`, `verkauf`, `vorsichtig`, `kaum`), `againstCrowd`, `priceEur`, `priceVenue`, `priceAsOf`, `swarmNote`. Angezeigte Kurse sind Euro.
+
+Pflicht auf jedem Favoriten, sobald der Vergleich mit dem Schwarm steht:
+
+| Feld | Werte |
+| --- | --- |
+| `vsSwarm` | `zuversichtlicher` oder `skeptischer`. Kein dritter Wert. |
+| `karlTake` | Ein oder zwei kurze Sätze. Das Urteil zuerst: wo Karl dem Schwarm mehr traut oder weniger, und warum. |
+| `karlCounter` | Ein kurzer Satz dagegen. Er steht unter dem Urteil, nicht davor. |
+
+`vsSwarm` ist Karls Temperatur **gegen den Schwarm**, nicht die Note allein. Wärme der Rohwerte: `vorsichtig` kälter als `kaum`, `kaum` kälter als `halten`, `halten` kälter als `kauf`. Ist Karl wärmer, steht `zuversichtlicher`. Ist er kälter oder gleich warm, steht `skeptischer`. Die App leitet dasselbe ab, wenn das Feld fehlt. Geschrieben wird es trotzdem.
+
+Stimme: klare Sätze, wenig Wörter, Deutsch. Die erste Zeile ist das Urteil. Nicht einleiten mit „keine Prognose“, „unklar“, „vielleicht“, „eher“, „abwarten“. Die Wörter „kaufen“ und „verkaufen“ nie als Empfehlung, auch nicht verpackt. `karlStance` bleibt der Rohwert. Die Seite zeigt daraus nicht „neutral“ als Überschrift, sondern `vsSwarm` und die Zahl.
 
 ## `crowd.json`
 
@@ -235,13 +250,17 @@ Karls fünf Favoriten. Die Startseite zeigt die Liste in `rank`-Reihenfolge.
   "comparison": {
     "swarmHitRatePct": 52,
     "karlHitRatePct": 62,
-    "summary": "Ein Satz zum Vergleich Schwarm gegen Karl.",
+    "summary": "Erst wo Karl zuversichtlicher ist, dann wo er skeptischer ist.",
     "sources": [{ "title": "…", "url": "https://…" }]
   }
 }
 ```
 
-`stance`: `kauf`, `halten`, `verkauf` oder `beobachten`. Die Trefferquoten im Vergleich nicht in der App neu rechnen lassen, wenn eine eigene Gewichtung gemeint ist. Die App zeigt die hinterlegten Zahlen.
+`stance`: `kauf`, `halten`, `verkauf` oder `beobachten`. Die Trefferquoten im Vergleich nicht in der App neu rechnen lassen und keine Quote erfinden, solange `swarmHitRatePct` oder `karlHitRatePct` null ist. Die App zeigt die hinterlegten Zahlen.
+
+`comparison.summary` sind zwei kurze Sätze: erst wo Karl zuversichtlicher ist als der Schwarm, dann wo er skeptischer ist. Dieselbe Stimme wie `karlTake`. Kein Nachrichtenprotokoll, kein „abwarten“, keine erfundenen Treffer.
+
+`comparison.picks` trägt dieselben Felder `vsSwarm`, `karlTake`, `karlCounter` wie die Favoriten. Die Seite nimmt die Favoriten, sobald welche da sind, und sonst die Picks. Die Sätze müssen übereinstimmen.
 
 ## `promises.json`
 

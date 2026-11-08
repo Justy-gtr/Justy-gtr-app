@@ -16,7 +16,7 @@ import {
   headlineEvent,
   isStandalone,
   opinionWord,
-  verdictForStances,
+  vsSwarmVerdict,
   methodLabel,
   OVERNIGHT_LABEL,
   rangeChange,
@@ -291,16 +291,35 @@ function opinionChip(who, stance) {
   return `<span class="opin opin-${tone}"><span class="opin-icon">${opinionIcon(tone)}</span><span class="opin-text">${esc(who)} ${esc(opinionWord(stance))}</span></span>`;
 }
 
-function verdictBadge(item) {
-  const verdict = verdictForStances(item?.swarmStance, item?.karlStance);
-  const kind = verdict.kind === "against" ? "is-against" : verdict.kind === "agree" ? "is-agree" : "is-mixed";
-  return `<span class="verdict ${kind}">${esc(verdict.label)}</span>`;
+const SCHWARM_LEGEND = "Schwarm = Meinung auf X, keine Käufe. Das Urteil gilt gegen den Schwarm, nicht als Tipp.";
+
+function karlScoreChip(item, verdict) {
+  const tone = verdict.kind === "warm" ? "up" : "warn";
+  const score = item.score ?? item.karlScore;
+  const text = score == null ? verdict.label : `${score}/10`;
+  return `<span class="opin opin-${tone}"><span class="opin-text">Karl ${esc(String(text))}</span></span>`;
 }
 
-const SCHWARM_LEGEND = "Schwarm = Meinung der X-Investoren, die Karl verfolgt. Keine echten Käufe.";
+function comparisonCopy(item) {
+  const verdict = vsSwarmVerdict(item);
+  const take = item.karlTake || item.note || item.reason || "";
+  const counter = item.karlCounter || "";
+  return { verdict, take, counter };
+}
 
-function opinionCard(item, extra = "") {
-  return `<article class="opinion-card">
+function takeBlock(item, verdict) {
+  const { take, counter } = comparisonCopy(item);
+  return `${take ? `<p class="karl-take">${esc(take)}</p>` : ""}
+    ${counter ? `<p class="karl-counter"><span>Dagegen</span> ${esc(counter)}</p>` : ""}
+    <div class="opinion-chips">
+      ${opinionChip("Schwarm", item.swarmStance)}
+      ${karlScoreChip(item, verdict)}
+    </div>`;
+}
+
+function opinionCard(item) {
+  const verdict = vsSwarmVerdict(item);
+  return `<article class="opinion-card is-${verdict.kind}">
     <div class="opinion-top">
       <div class="opinion-who">
         <strong>${esc(item.symbol || "")}</strong>
@@ -308,20 +327,31 @@ function opinionCard(item, extra = "") {
       </div>
       <div class="opinion-end">
         <span class="opinion-price">${item.priceEur == null ? "" : esc(formatEUR(item.priceEur))}</span>
-        ${verdictBadge(item)}
+        <span class="verdict is-${verdict.kind}">${esc(verdict.label)}</span>
       </div>
     </div>
-    <div class="opinion-chips">
-      ${opinionChip("Schwarm", item.swarmStance)}
-      ${opinionChip("Karl", item.karlStance)}
-    </div>
-    ${extra}
+    ${takeBlock(item, verdict)}
   </article>`;
+}
+
+function stanceGroup(title, items) {
+  if (!items.length) return "";
+  return `<section class="stance-group" aria-label="${esc(title)}">
+    <div class="stance-head"><h3>${esc(title)}</h3><span class="summary-count">${items.length}</span></div>
+    <div class="opinion-list">${items.map((item) => opinionCard(item)).join("")}</div>
+  </section>`;
 }
 
 function say(who, stance) {
   const tone = opinionTone(stance);
   return `<span class="say"><span class="say-who">${esc(who)}</span> <span class="say-word is-${tone}">${esc(opinionWord(stance))}</span></span>`;
+}
+
+function sayKarl(item) {
+  const verdict = vsSwarmVerdict(item);
+  const tone = verdict.kind === "warm" ? "up" : "warn";
+  const word = verdict.key === "zuversichtlicher" ? "zuversichtlicher" : "skeptischer";
+  return `<span class="say"><span class="say-who">Karl</span> <span class="say-word is-${tone}">${esc(word)}</span></span>`;
 }
 
 function topFive(favorites) {
@@ -339,7 +369,7 @@ function topFive(favorites) {
           <span class="top-name">${esc(favorite.name || "")}</span>
           <span class="top-px">${favorite.priceEur == null ? "" : esc(formatEUR(favorite.priceEur))}</span>
         </span>
-        <span class="top-says">${say("Schwarm", favorite.swarmStance)}${say("Karl", favorite.karlStance)}</span>
+        <span class="top-says">${say("Schwarm", favorite.swarmStance)}${sayKarl(favorite)}</span>
       </button>`;
     }).join("")}
   </section>`;
@@ -434,18 +464,21 @@ function renderSchwarm(data) {
   const investors = data.crowd?.investors || [];
   const picks = [...(data.favorites?.favorites || [])].sort((a, b) => (a.rank || 99) - (b.rank || 99));
   const cards = picks.length ? picks : (comparison.picks || []);
+  const warm = cards.filter((item) => vsSwarmVerdict(item).key === "zuversichtlicher");
+  const cool = cards.filter((item) => vsSwarmVerdict(item).key !== "zuversichtlicher");
   return `
     <header class="page-head">
       <p class="eyebrow">Karls Top 10</p>
       <h2>Schwarm gegen Karl</h2>
+      <p class="karl-lead">${esc(comparison.summary || "Karl sagt, wo er dem Schwarm mehr traut und wo weniger.")}</p>
     </header>
     <p class="legend">${esc(SCHWARM_LEGEND)}</p>
-    <div class="opinion-list">${cards.map((pick) => opinionCard(pick)).join("")}</div>
+    ${stanceGroup("Zuversichtlicher als der Schwarm", warm)}
+    ${stanceGroup("Skeptischer als der Schwarm", cool)}
     <details class="fold">
-      <summary>Erklärung</summary>
+      <summary>Treffer</summary>
       <div class="fold-body">
-        <p>${esc(comparison.summary || "Karl und der Schwarm werden an derselben Aktie verglichen. Der Schwarm ist eine Meinung, kein Depot.")}</p>
-        ${comparison.swarmHitRatePct == null ? `<p class="muted">Eine Trefferquote gibt es noch nicht.</p>` : `<div class="versus"><div><span class="big">${esc(formatNumber(comparison.swarmHitRatePct, 0))} %</span><span class="muted">Schwarm</span></div><div><span class="big gold">${esc(formatNumber(comparison.karlHitRatePct, 0))} %</span><span class="muted">Karl</span></div></div>`}
+        ${comparison.swarmHitRatePct == null ? `<p class="muted">Trefferquoten stehen noch aus. Es wird keine Quote erfunden.</p>` : `<div class="versus"><div><span class="big">${esc(formatNumber(comparison.swarmHitRatePct, 0))} %</span><span class="muted">Schwarm</span></div><div><span class="big gold">${esc(formatNumber(comparison.karlHitRatePct, 0))} %</span><span class="muted">Karl</span></div></div>`}
       </div>
     </details>
     <details class="fold">
@@ -549,14 +582,11 @@ function favoriteDetail(data, id, ui) {
     title: favorite.name || favorite.symbol,
     html: `
       <p class="kicker">${esc(favorite.symbol)} · ${esc(String(favorite.score))}/10 · ${favorite.priceEur == null ? "" : esc(formatEUR(favorite.priceEur))}</p>
-      <div class="opinion-chips">
-        ${opinionChip("Schwarm", favorite.swarmStance)}
-        ${opinionChip("Karl", favorite.karlStance)}
-      </div>
-      ${verdictBadge(favorite)}
-      <p>${esc(favorite.reason || "")}</p>
-      <button type="button" class="text-btn" data-action="gegenteil" data-id="${esc(favorite.id)}" aria-expanded="${ui?.revealed?.[favorite.id] ? "true" : "false"}">Gegenteil</button>
-      ${ui?.revealed?.[favorite.id] ? `<p class="counter">${esc(favorite.counterArgument || "Dazu liegt noch kein Gegenargument vor.")}</p>` : ""}
+      <span class="verdict is-${vsSwarmVerdict(favorite).kind}">${esc(vsSwarmVerdict(favorite).label)}</span>
+      ${takeBlock(favorite, vsSwarmVerdict(favorite))}
+      ${favorite.reason && favorite.reason !== favorite.karlTake ? `<p>${esc(favorite.reason)}</p>` : ""}
+      ${favorite.counterArgument && favorite.counterArgument !== favorite.karlCounter ? `<button type="button" class="text-btn" data-action="gegenteil" data-id="${esc(favorite.id)}" aria-expanded="${ui?.revealed?.[favorite.id] ? "true" : "false"}">Gegenteil</button>
+      ${ui?.revealed?.[favorite.id] ? `<p class="counter">${esc(favorite.counterArgument)}</p>` : ""}` : ""}
       ${sourcesBlock(favorite.sources)}
     `
   };
