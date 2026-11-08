@@ -3,6 +3,7 @@ import fs from "node:fs";
 import test from "node:test";
 import {
   MIN_CASES,
+  N_LEGEND,
   analysisText,
   analyzePoints,
   chartAnalysis,
@@ -23,6 +24,28 @@ function bars(values, start = Date.parse("2026-01-01T00:00:00Z")) {
     eur
   }));
 }
+
+test("Ab sieben Fällen stehen Prozente, darunter nicht", () => {
+  assert.equal(MIN_CASES, 7);
+  assert.match(N_LEGEND, /dieser Aktie/);
+  assert.match(N_LEGEND, /nicht den ganzen Markt/);
+  assert.equal(/\b(kaufen|verkaufen)\b/i.test(N_LEGEND), false);
+  const spec = { swing: 2, window: 10, horizonMs: 7 * DAY, flatPct: 0.001, after: "eine Woche später", touchLook: 8, touchGap: 2, touchMargin: 0.01 };
+  const run = (length) => {
+    const points = bars(Array.from({ length }, (_, index) => 50 + index));
+    return analyzePoints(points.slice(-10), points, spec, "6M");
+  };
+  const seven = run(59);
+  const six = run(52);
+  assert.equal(seven.outcome.n, 7);
+  assert.equal(seven.outcome.show, true);
+  assert.equal((seven.outcome.pct.up || 0) + (seven.outcome.pct.down || 0) + (seven.outcome.pct.flat || 0), 100);
+  assert.match(seven.outcome.sentence, /%/);
+  assert.equal(six.outcome.show, false);
+  assert.ok(six.outcome.n < MIN_CASES);
+  assert.equal(/%/.test(six.outcome.sentence), false);
+  assert.match(six.outcome.sentence, /n =/);
+});
 
 test("Prozentwerte summieren sich auf 100", () => {
   assert.deepEqual(splitPercent({ up: 2, down: 1 }), { up: 67, down: 33 });
@@ -82,7 +105,7 @@ test("Stütz-Berührungen: gleiche Strecke für Abpraller und Bruch", () => {
 
 test("Echte Reihen erfinden keine Prozentzahl und keinen Rat", () => {
   const prices = JSON.parse(fs.readFileSync("data/prices.json", "utf8"));
-  const ranges = ["1 Min", "5 Min", "1W", "1M", "6M", "1J", "5J", "Max"];
+  const ranges = ["5 Min", "15 Min", "4 Std", "1T", "3T", "1W", "1M", "6M", "1J", "Max"];
   for (const ticker of prices.tickers) {
     for (const range of ranges) {
       const result = chartAnalysis(ticker, range);

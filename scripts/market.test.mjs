@@ -230,7 +230,30 @@ test("1W nimmt die letzten sieben Tage, der Tag bleibt der Tag", () => {
   assert.equal(week.points.length, 7);
   assert.equal(week.points.at(-1).eur, 21);
   assert.equal(week.points[0].eur, 15);
-  assert.equal(seriesFor(ticker, "5 Min", true).range, "5 Min");
+  assert.equal(seriesFor(ticker, "5 Min", false).range, "5 Min");
+});
+
+test("Langfrist-Brille glättet und springt von kurzen Spannen auf 1J", () => {
+  const ticker = {
+    history: {
+      intraday: [{ t: "2026-11-04T10:00:00Z", eur: 1 }, { t: "2026-11-04T11:00:00Z", eur: 3 }],
+      "1M": [{ t: "2026-11-01", eur: 10 }, { t: "2026-11-02", eur: 12 }],
+      "1Y": [
+        { t: "2026-01-02", eur: 10 },
+        { t: "2026-01-03", eur: 14 },
+        { t: "2026-01-09", eur: 12 },
+        { t: "2026-01-10", eur: 16 }
+      ]
+    }
+  };
+  const smoothed = seriesFor(ticker, "Tag", true);
+  assert.equal(smoothed.range, "1J");
+  assert.ok(smoothed.points.length >= 2);
+  assert.ok(smoothed.points.every((point) => point.eur >= 10 && point.eur <= 16));
+  assert.equal(seriesFor(ticker, "5 Min", true).range, "1J");
+  assert.equal(seriesFor(ticker, "1W", true).range, "1J");
+  assert.equal(seriesFor(ticker, "1M", true).range, "1J");
+  assert.equal(seriesFor(ticker, "6M", true).range, "6M");
 });
 
 test("Ruhe-Modus ignoriert Beispieldaten", () => {

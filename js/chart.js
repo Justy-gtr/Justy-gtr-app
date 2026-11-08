@@ -284,7 +284,7 @@ function showScrub(canvas, coord, layout) {
 function hideScrub(canvas) {
   const scrub = canvas.parentElement?.querySelector(".scrub");
   if (!scrub) return;
-  scrub.hidden = true;
+  scrub.hidden = false;
   scrub.textContent = "";
 }
 
@@ -380,7 +380,8 @@ export function drawLineChart(canvas, points, { color = "#e4b15a", axes = false,
   ctx.font = "13px -apple-system, BlinkMacSystemFont, sans-serif";
   if (usable.length < 2) {
     ctx.fillStyle = "#b7c0d0";
-    ctx.fillText("Noch keine Reihe.", 12, height / 2);
+    const note = usable.length === 1 ? `Ein Punkt · ${formatEuroAxis(Number(usable[0].eur))}` : "Noch keine Reihe.";
+    ctx.fillText(note, 12, height / 2);
     canvas._chartState = null;
     return;
   }
@@ -397,12 +398,12 @@ export function drawCharts(data, ui) {
     const kind = canvas.dataset.chart;
     if (kind === "price") {
       const ticker = (data.prices?.tickers || []).find((item) => item.symbol === (canvas.dataset.symbol || ui.chartSymbol));
-      const { points } = seriesFor(ticker, ui.chartRange);
+      const { points } = seriesFor(ticker, ui.chartRange, ui.langfrist);
       const first = Number(points[0]?.eur);
       const last = Number(points.at(-1)?.eur);
       const falling = points.length > 1 && last < first;
-      const color = falling ? "#ff5d6c" : "#3ddea0";
-      const lines = chartAnalysis(ticker, ui.chartRange).lines;
+      const color = ui.langfrist ? "#e4b15a" : (falling ? "#ff5d6c" : "#3ddea0");
+      const lines = chartAnalysis(ticker, ui.chartRange, ui.langfrist).lines;
       drawLineChart(canvas, points, { color, axes: true, scrub: true, lines });
     } else if (kind === "prod") {
       const series = (data.production?.series || []).find((item) => item.id === canvas.dataset.series);

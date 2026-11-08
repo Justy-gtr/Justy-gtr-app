@@ -1,6 +1,6 @@
 import { esc } from "./logic.js";
 
-const PAGES = ["heute", "kalender", "posts", "schwarm", "charts", "mehr"];
+const PAGES = ["heute", "kalender", "posts", "schwarm", "charts", "analyse", "mehr"];
 
 export function initNav(pager, { onPage } = {}) {
   const root = document.getElementById("detail-root");

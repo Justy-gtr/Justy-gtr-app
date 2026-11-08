@@ -1,7 +1,10 @@
-import { bucketMinutes, maxPoints, seriesFor } from "./logic.js";
+import { bucketMinutes, fourHourPoints, maxPoints, seriesFor } from "./logic.js";
 
-/** Enough separate cases before a percentage is shown. Below this, the number would look sharper than the history is. */
-export const MIN_CASES = 8;
+/** From 7 separate cases a percentage is shown. Below that, the number would look sharper than the history is. */
+export const MIN_CASES = 7;
+
+/** One sentence wherever a Muster card prints n, including when no percentage is shown. */
+export const N_LEGEND = "n zählt nur vergleichbare Stellen dieser Aktie, nicht den ganzen Markt.";
 
 const TITLES = {
   steigend: "Steigende Linie",
@@ -17,6 +20,10 @@ const TITLES = {
 const SPEC = {
   "1 Min": { swing: 8, window: 45, horizonMs: 15 * 60 * 1000, flatPct: 0.0004, after: "15 Minuten später", touchLook: 30, touchGap: 6, touchMargin: 0.0015 },
   "5 Min": { swing: 4, window: 12, horizonMs: 30 * 60 * 1000, flatPct: 0.0004, after: "30 Minuten später", touchLook: 12, touchGap: 3, touchMargin: 0.002 },
+  "15 Min": { swing: 2, window: 12, horizonMs: 60 * 60 * 1000, flatPct: 0.0006, after: "eine Stunde später", touchLook: 8, touchGap: 2, touchMargin: 0.0025 },
+  "4 Std": { swing: 2, window: 24, horizonMs: 86400000, flatPct: 0.001, after: "ein Tag später", touchLook: 10, touchGap: 3, touchMargin: 0.006 },
+  "1T": { swing: 1, window: 6, horizonMs: 86400000, flatPct: 0.0015, after: "ein Tag später", touchLook: 4, touchGap: 1, touchMargin: 0.008 },
+  "3T": { swing: 1, window: 6, horizonMs: 3 * 86400000, flatPct: 0.0015, after: "drei Tage später", touchLook: 4, touchGap: 1, touchMargin: 0.008 },
   "1W": { swing: 1, window: 7, horizonMs: 7 * 86400000, flatPct: 0.0015, after: "eine Woche später", touchLook: 8, touchGap: 2, touchMargin: 0.01 },
   "1M": { swing: 2, window: 21, horizonMs: 7 * 86400000, flatPct: 0.0015, after: "eine Woche später", touchLook: 12, touchGap: 3, touchMargin: 0.008 },
   "6M": { swing: 3, window: 21, horizonMs: 7 * 86400000, flatPct: 0.0015, after: "eine Woche später", touchLook: 12, touchGap: 3, touchMargin: 0.008 },
@@ -37,6 +44,8 @@ export function historyPoints(ticker, range) {
   const history = ticker?.history || {};
   if (range === "1 Min" || range === "Tag") return usable(history.intraday);
   if (range === "5 Min") return bucketMinutes(usable(history.intraday), 5);
+  if (range === "15 Min") return bucketMinutes(usable(history.intraday), 15);
+  if (range === "4 Std") return fourHourPoints(history);
   if (range === "5J") return usable(history["5Y"]);
   if (range === "Max") return maxPoints(history);
   const year = usable(history["1Y"]);
@@ -474,7 +483,8 @@ function chooseTouch(stats) {
 function detailFor(range, usedWindow, visibleLength, spec) {
   let where = "in der Tagesreihe";
   const shorter = usedWindow + 2 < visibleLength;
-  if (range === "1 Min" || range === "5 Min") where = shorter ? "ähnliche Stücke in dieser Minutenreihe" : "in dieser Minutenreihe";
+  if (range === "1 Min" || range === "5 Min" || range === "15 Min") where = shorter ? "ähnliche Stücke in dieser Minutenreihe" : "in dieser Minutenreihe";
+  else if (range === "4 Std") where = shorter ? "ähnliche Stücke in der 4-Stunden-Reihe" : "in der 4-Stunden-Reihe";
   else if (range === "1W") where = "ähnliche Wochen in der Tagesreihe";
   else if (range === "1M") where = "ähnliche Monate in der Tagesreihe";
   else if (range === "5J") where = shorter ? "ähnliche Stücke in der Wochenreihe" : "in der Wochenreihe";
@@ -556,10 +566,15 @@ export function analyzePoints(visible, history, spec, range) {
   };
 }
 
-export function chartAnalysis(ticker, range) {
-  const { points, range: shown } = seriesFor(ticker, range);
+export function chartAnalysis(ticker, range, langfrist = false) {
+  const { points, range: shown } = seriesFor(ticker, range, langfrist);
   const spec = SPEC[shown] || SPEC["1M"];
-  return analyzePoints(points, historyPoints(ticker, shown), spec, shown);
+  const history = langfrist ? points : historyPoints(ticker, shown);
+  return analyzePoints(points, history, spec, shown);
+}
+
+export function analysisShowsN(result) {
+  return /n\s*=/.test(analysisText(result));
 }
 
 export function analysisText(result) {

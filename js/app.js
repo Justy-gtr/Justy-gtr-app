@@ -1,3 +1,5 @@
+import { renderAnalyse } from "./analyse-view.js";
+import { drawCandles } from "./candle-chart.js";
 import { drawCharts } from "./chart.js";
 import { loadData } from "./data.js";
 import { initEggs } from "./eggs.js";
@@ -11,7 +13,10 @@ const ui = {
   calKind: "company",
   postFilter: "alle",
   chartSymbol: "SPCX",
-  chartRange: "1 Min",
+  chartRange: "5 Min",
+  langfrist: false,
+  analyseSymbol: "SPCX",
+  analyseRange: "15 Min",
   live: false,
   scenarioId: "starship_fail",
   revealed: {},
@@ -47,6 +52,7 @@ function priceStamp(prices) {
       ticker.overnightHighEur,
       ticker.overnightLowEur,
       ticker.history?.intraday?.length || 0,
+      ticker.history?.["4H"]?.length || 0,
       last?.t || "",
       last?.eur ?? ""
     ].join(":");
@@ -56,7 +62,7 @@ function priceStamp(prices) {
 async function pullPrices() {
   if (!data || liveInflight) return;
   if (document.visibilityState === "hidden") return;
-  if (ui.page !== "charts" && ui.page !== "heute") return;
+  if (ui.page !== "charts" && ui.page !== "heute" && ui.page !== "analyse") return;
   if (!marketWatch()) {
     if (ui.live) {
       ui.live = false;
@@ -153,10 +159,18 @@ function render() {
     const home = document.getElementById("page-heute");
     if (home) home.innerHTML = `<article class="card error-card"><h2>Startseite gerade nicht da.</h2><p class="muted">${error.message}</p></article>`;
   }
+  try {
+    const analyse = document.getElementById("page-analyse");
+    if (analyse) analyse.innerHTML = renderAnalyse(data, ui);
+  } catch (error) {
+    const analyse = document.getElementById("page-analyse");
+    if (analyse) analyse.innerHTML = `<article class="card error-card"><h2>Chartanalyse gerade nicht da.</h2><p class="muted">${error.message}</p></article>`;
+  }
   restoreScroll(scrolls);
   notePage(ui.page);
   requestAnimationFrame(() => {
     try { drawCharts(data, ui); } catch { /* Chart bleibt leer, die Seite nicht. */ }
+    try { drawCandles(data, ui); } catch { /* Kerzen bleiben leer, die Seite nicht. */ }
     tickCountdown();
     try { eggs.afterRender(data); } catch { /* Überraschung ist Beiwerk. */ }
   });
@@ -262,7 +276,25 @@ document.body.addEventListener("click", (event) => {
     return;
   }
   if (action === "chart-range") {
-    ui.chartRange = el.dataset.range;
+    const next = el.dataset.range;
+    const short = ["Tag", "1 Min", "5 Min", "15 Min", "4 Std", "1T", "3T", "1W", "1M"];
+    ui.chartRange = ui.langfrist && short.includes(next) ? "1J" : next;
+    render();
+    return;
+  }
+  if (action === "langfrist") {
+    ui.langfrist = !ui.langfrist;
+    if (ui.langfrist && ["Tag", "1 Min", "5 Min", "15 Min", "4 Std", "1T", "3T", "1W", "1M"].includes(ui.chartRange)) ui.chartRange = "1J";
+    render();
+    return;
+  }
+  if (action === "analyse-symbol") {
+    ui.analyseSymbol = el.dataset.symbol;
+    render();
+    return;
+  }
+  if (action === "analyse-range") {
+    ui.analyseRange = el.dataset.range;
     render();
     return;
   }

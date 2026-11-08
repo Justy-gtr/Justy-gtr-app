@@ -529,22 +529,79 @@ export function maxPoints(history) {
   return [...byDay.values()].sort((a, b) => String(a.t).localeCompare(String(b.t)));
 }
 
-export function seriesFor(ticker, range) {
-  const effective = range === "Tag" ? "1 Min" : range;
+/** Last close of each ISO week. The Langfrist-Brille draws this, not the noisy day. */
+export function weeklyCloses(points) {
+  const buckets = new Map();
+  for (const point of points || []) {
+    if (!point || point.eur == null || !point.t) continue;
+    const date = new Date(point.t);
+    if (Number.isNaN(date.getTime())) continue;
+    buckets.set(isoWeekKey(date), point);
+  }
+  return [...buckets.values()];
+}
+
+function isoWeekKey(date) {
+  const copy = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  const day = copy.getUTCDay() || 7;
+  copy.setUTCDate(copy.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(copy.getUTCFullYear(), 0, 1));
+  const week = Math.ceil(((copy - yearStart) / 86400000 + 1) / 7);
+  return `${copy.getUTCFullYear()}-W${String(week).padStart(2, "0")}`;
+}
+
+export function movingAverage(points, window = 4) {
+  return (points || []).map((point, index) => {
+    const slice = points.slice(Math.max(0, index - window + 1), index + 1);
+    const avg = slice.reduce((sum, item) => sum + Number(item.eur), 0) / slice.length;
+    return { t: point.t, eur: avg };
+  });
+}
+
+const DAY_RANGES = new Set(["Tag", "1 Min", "5 Min", "15 Min", "4 Std", "1T", "3T", "1W", "1M"]);
+
+/** 4h closes only when the stored series covers more than one session. */
+export function fourHourPoints(history) {
+  const rows = (history?.["4H"] || []).filter((point) => point && point.eur != null && point.t);
+  if (rows.length < 2) return [];
+  const span = Date.parse(rows.at(-1).t) - Date.parse(rows[0].t);
+  if (!Number.isFinite(span) || span <= 36 * 3600 * 1000) return [];
+  return rows.map((point) => ({ t: point.t, eur: Number(point.eur), session: point.session || null }));
+}
+
+function recentDaily(ticker) {
+  const month = (ticker?.history?.["1M"] || []).filter((point) => point && point.eur != null && point.t);
+  if (month.length >= 3) return month;
+  return (ticker?.history?.["6M"] || []).filter((point) => point && point.eur != null && point.t);
+}
+
+export function seriesFor(ticker, range, langfrist = false) {
+  const asked = range === "Tag" ? "1 Min" : range;
+  const jump = DAY_RANGES.has(range) || DAY_RANGES.has(asked);
+  const effective = langfrist && jump ? "1J" : asked;
   let points;
   if (effective === "Max") {
     points = maxPoints(ticker?.history);
   } else if (effective === "5 Min") {
     points = bucketMinutes(ticker?.history?.intraday, 5);
+  } else if (effective === "15 Min") {
+    points = bucketMinutes(ticker?.history?.intraday, 15);
+  } else if (effective === "4 Std") {
+    points = fourHourPoints(ticker?.history);
   } else if (effective === "1 Min") {
     points = (ticker?.history?.intraday || []).filter((point) => point && point.eur != null);
+  } else if (effective === "1T") {
+    points = recentDaily(ticker).slice(-1);
+  } else if (effective === "3T") {
+    points = recentDaily(ticker).slice(-3);
   } else if (effective === "1W") {
-    const month = (ticker?.history?.["1M"] || []).filter((point) => point && point.eur != null);
-    const source = month.length >= 5 ? month : (ticker?.history?.["6M"] || []).filter((point) => point && point.eur != null);
-    points = source.slice(-7);
+    points = recentDaily(ticker).slice(-7);
   } else {
     const key = RANGE_KEY[effective] || "1M";
     points = (ticker?.history?.[key] || []).filter((point) => point && point.eur != null);
+  }
+  if (langfrist) {
+    points = movingAverage(weeklyCloses(points), effective === "5J" || effective === "Max" ? 4 : 3);
   }
   return { points, range: effective };
 }

@@ -1,14 +1,19 @@
-const CACHE = "jgtr-v17";
+const CACHE = "jgtr-v18";
 const CORE = [
   "",
   "index.html",
   "css/app.css",
+  "css/analyse.css",
   "manifest.webmanifest",
   "js/app.js",
   "js/logic.js",
   "js/data.js",
   "js/chart.js",
   "js/analysis.js",
+  "js/candles.js",
+  "js/analyse.js",
+  "js/candle-chart.js",
+  "js/analyse-view.js",
   "js/nav.js",
   "js/views.js",
   "js/eggs.js",

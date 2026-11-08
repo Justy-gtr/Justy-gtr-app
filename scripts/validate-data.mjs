@@ -28,6 +28,23 @@ function isUrl(value) {
   return typeof value === "string" && /^https?:\/\//.test(value);
 }
 
+function barOk(point, label) {
+  if (!point || typeof point.eur !== "number" || !point.t) {
+    fail(`${label} punkt`);
+    return;
+  }
+  for (const key of ["open", "high", "low"]) {
+    if (point[key] != null && typeof point[key] !== "number") fail(`${label}.${key}`);
+  }
+  const close = point.eur;
+  const open = typeof point.open === "number" ? point.open : close;
+  if (typeof point.high === "number" && typeof point.low === "number" && point.high < point.low) {
+    fail(`${label} high < low`);
+  }
+  if (typeof point.high === "number" && point.high + 0.02 < Math.max(open, close)) fail(`${label} high < body`);
+  if (typeof point.low === "number" && point.low - 0.02 > Math.min(open, close)) fail(`${label} low > body`);
+}
+
 function sourcesOk(sources, label) {
   if (!Array.isArray(sources) || sources.length === 0) {
     fail(`${label}: sources fehlt`);
@@ -69,6 +86,23 @@ if (prices) {
     }
     for (const range of ["intraday", "1M", "6M", "1Y"]) {
       if (!Array.isArray(ticker.history?.[range])) fail(`${label}.history.${range}`);
+    }
+    const four = ticker.history?.["4H"];
+    if (four != null) {
+      if (!Array.isArray(four)) fail(`${label}.history.4H`);
+      if (four.length > 2500) fail(`${label}.history.4H zu lang`);
+      for (const point of four) barOk(point, `${label}.history.4H`);
+      if (four.length >= 2) {
+        const span = Date.parse(four.at(-1).t) - Date.parse(four[0].t);
+        if (Number.isFinite(span) && span <= 36 * 3600 * 1000) fail(`${label}.history.4H nur eine Sitzung`);
+      }
+    }
+    for (const range of ["1M", "6M", "1Y", "5Y"]) {
+      for (const point of ticker.history?.[range] || []) {
+        if (point && (point.open != null || point.high != null || point.low != null)) {
+          barOk(point, `${label}.history.${range}`);
+        }
+      }
     }
     for (const key of ["dayHighEur", "dayLowEur", "overnightEur", "overnightHighEur", "overnightLowEur"]) {
       if (ticker[key] != null && typeof ticker[key] !== "number") fail(`${label}.${key}`);
