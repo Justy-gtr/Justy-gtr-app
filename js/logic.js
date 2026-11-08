@@ -56,6 +56,27 @@ export function formatPct(value) {
   return `${body} %`;
 }
 
+function roundHalfAway(value, digits) {
+  const factor = 10 ** digits;
+  const sign = value < 0 ? -1 : 1;
+  return (sign * Math.round(Math.abs(value) * factor)) / factor;
+}
+
+/**
+ * Percent of a hovered price versus the first visible point of the range.
+ * Two German decimals, with a sign. Zero stays `0,00 %`.
+ * @returns {{ text: string, direction: "up" | "down" | "flat" } | null}
+ */
+export function scrubDelta(startEur, pointEur) {
+  const start = Number(startEur);
+  const point = Number(pointEur);
+  if (!Number.isFinite(start) || start === 0 || !Number.isFinite(point)) return null;
+  const rounded = roundHalfAway(((point - start) / start) * 100, 2);
+  if (rounded > 0) return { text: `+${formatNumber(rounded, 2)} %`, direction: "up" };
+  if (rounded < 0) return { text: `−${formatNumber(Math.abs(rounded), 2)} %`, direction: "down" };
+  return { text: "0,00 %", direction: "flat" };
+}
+
 export function parseDay(value) {
   if (!value) return null;
   if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {

@@ -1,5 +1,5 @@
 import { chartAnalysis } from "./analysis.js";
-import { seriesFor } from "./logic.js";
+import { scrubDelta, seriesFor } from "./logic.js";
 
 function hexAlpha(hex, alpha) {
   const value = hex.replace("#", "");
@@ -262,12 +262,23 @@ function sessionScrub(point) {
   return "";
 }
 
-function showScrub(canvas, coord, spanMs) {
+function showScrub(canvas, coord, layout) {
   const scrub = canvas.parentElement?.querySelector(".scrub");
   if (!scrub || !coord) return;
   const phase = sessionScrub(coord.point);
+  const when = formatScrubWhen(coord.point.t, layout?.spanMs || 0);
+  const price = formatEuroAxis(Number(coord.point.eur));
+  const change = scrubDelta(layout?.coords?.[0]?.point?.eur, coord.point.eur);
   scrub.hidden = false;
-  scrub.textContent = `${formatScrubWhen(coord.point.t, spanMs)} · ${formatEuroAxis(Number(coord.point.eur))}${phase ? ` · ${phase}` : ""}`;
+  scrub.replaceChildren(document.createTextNode(`${when} · ${price}`));
+  if (change) {
+    scrub.append(document.createTextNode(" · "));
+    const pct = document.createElement("span");
+    if (change.direction !== "flat") pct.className = change.direction;
+    pct.textContent = change.text;
+    scrub.append(pct);
+  }
+  if (phase) scrub.append(document.createTextNode(` · ${phase}`));
 }
 
 function hideScrub(canvas) {
@@ -304,7 +315,7 @@ function bindScrub(canvas) {
       }
     }
     paintChart(canvas, state, nearest);
-    showScrub(canvas, nearest, state.layout.spanMs);
+    showScrub(canvas, nearest, state.layout);
   };
   const end = () => {
     if (!active) return;

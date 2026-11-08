@@ -516,7 +516,7 @@ function renderChartsPage(data, ui) {
       <button type="button" class="chip" data-action="chart-range" data-range="${item}" aria-pressed="${item === range}">${esc(item)}</button>`).join("")}</div>
     <div class="card chart-wrap">
       <p class="scrub" hidden></p>
-      <canvas class="chart chart-price" data-chart="price" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kurschart in Euro. Ziehen zeigt Kurs und Zeitpunkt."></canvas>
+      <canvas class="chart chart-price" data-chart="price" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kurschart in Euro. Ziehen zeigt Zeitpunkt, Kurs und Veränderung."></canvas>
     </div>
     ${analysisCard(analysis)}
     <button type="button" class="text-btn" data-action="explain" data-symbol="${esc(ticker?.symbol || "")}">Warum diese Bewegung?</button>
