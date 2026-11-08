@@ -1,11 +1,11 @@
 {
   "example": false,
-  "asOf": "2026-11-08T06:40:00+01:00",
+  "asOf": "2026-11-08T08:40:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
       "label": "zuversichtlich",
-      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan und Contingency-Optionen; Musk zu Flugmanövern und Alphabet-Nachkauf. Wochenende ohne Kurs — Montag USSF-627 und CPI.",
+      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan; Musk bekräftigt Mars-Ziel (Clip 2006) und teilt Starlink für Kliniken in Chile. Wochenende ohne Kurs — Di früh USSF-627, Di 14:30 CPI.",
       "sources": [
         {
           "title": "@SpaceX: Flight 15 catch",
@@ -39,7 +39,7 @@
     "RKLB": {
       "score": 0.05,
       "label": "abwartend",
-      "summary": "ESCAPADE-Blue-TMI seit ~18 h vorbei — Stand So 05:00 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (nur Drittseiten). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
+      "summary": "ESCAPADE-Blue-TMI seit ~22 h vorbei — Stand So 08:40 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
       "sources": [
         {
           "title": "NASA ESCAPADE Blog",
@@ -57,6 +57,117 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2119307649183535402",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T06:54:53+01:00",
+      "summaryDe": "Musk zur Frage, was man tut, wenn das Grok-Bot-Kontingent leer ist: Ob es nicht mit einem Klick einfach sei, die Nutzung zu erhöhen?",
+      "originalText": "Is it not one-click-easy to increase usage?",
+      "url": "https://x.com/elonmusk/status/2119307649183535402",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Grok-Bot-Nutzung erhöhen",
+          "url": "https://x.com/elonmusk/status/2119307649183535402"
+        },
+        {
+          "title": "@Texas_Twins_Dad: Grok Bot usage",
+          "url": "https://x.com/Texas_Twins_Dad/status/2119143831396340137"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119305975987650786",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T06:48:14+01:00",
+      "summaryDe": "Musk teilt einen Kommentar zu Terafab: Die geplanten Chips sollen KI und Roboter unterstützen, damit das Nötige günstiger wird — Bezug zu Musks „Abundance“-Idee.",
+      "originalText": "RT @EvaFox: When Elon Musk talks about abundance, I think about people having more room to breathe because the things they need become less…",
+      "url": "https://x.com/elonmusk/status/2119305975987650786",
+      "tickers": [],
+      "companies": [
+        "Terafab"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk RT @EvaFox (Terafab/Abundance)",
+          "url": "https://x.com/elonmusk/status/2119305975987650786"
+        },
+        {
+          "title": "@EvaFox: Terafab und Abundance",
+          "url": "https://x.com/EvaFox/status/2119063349186970048"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119305634688520262",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T06:46:52+01:00",
+      "summaryDe": "Musk bestätigt mit „Yes“ einen Clip von der Mars Society 2006: Lange vor Starship sei das Ziel immer der Mars gewesen.",
+      "originalText": "Yes",
+      "url": "https://x.com/elonmusk/status/2119305634688520262",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Yes (Mars Society 2006)",
+          "url": "https://x.com/elonmusk/status/2119305634688520262"
+        },
+        {
+          "title": "Zitierter Clip: Mars Society 2006",
+          "url": "https://x.com/i/status/2119223625396203785"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119302996224082049",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T06:36:23+01:00",
+      "summaryDe": "Musk teilt Meldung: Die Stadtverwaltung von La Serena (Chile) bringt Starlink in ländliche Kliniken, damit Teams in Notfällen an Patientendaten und das Digital Hospital kommen.",
+      "originalText": "RT @cb_doge: BREAKING: The local government of La Serena, Chile, is bringing @Starlink to rural clinics to help them stay connected during…",
+      "url": "https://x.com/elonmusk/status/2119302996224082049",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk RT @cb_doge (Starlink Chile)",
+          "url": "https://x.com/elonmusk/status/2119302996224082049"
+        },
+        {
+          "title": "@cb_doge: Starlink für Kliniken in La Serena",
+          "url": "https://x.com/cb_doge/status/2119293271180734870"
+        }
+      ]
+    },
     {
       "id": "post-boring-2119181957770928180",
       "account": "@boringcompany",
