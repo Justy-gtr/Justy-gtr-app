@@ -243,11 +243,20 @@ function hideScrub(canvas) {
   scrub.textContent = "";
 }
 
+function clearChartSelection() {
+  const selection = window.getSelection?.();
+  if (!selection || selection.isCollapsed) return;
+  selection.removeAllRanges();
+}
+
 function bindScrub(canvas) {
   if (canvas.dataset.scrubBound) return;
   canvas.dataset.scrubBound = "1";
+  const wrap = canvas.closest(".chart-wrap") || canvas;
+  wrap.addEventListener("selectstart", (event) => event.preventDefault());
   let active = false;
   const place = (clientX) => {
+    clearChartSelection();
     const state = canvas._chartState;
     if (!state?.layout?.coords?.length) return;
     const x = clientX - canvas.getBoundingClientRect().left;
@@ -263,24 +272,52 @@ function bindScrub(canvas) {
     paintChart(canvas, state, nearest);
     showScrub(canvas, nearest, state.layout.spanMs);
   };
+  const end = () => {
+    if (!active) return;
+    active = false;
+    clearChartSelection();
+    const state = canvas._chartState;
+    if (state) paintChart(canvas, state, null);
+    hideScrub(canvas);
+  };
+  const touchPoint = (event) => event.touches[0] || event.changedTouches[0];
   canvas.addEventListener("pointerdown", (event) => {
+    if (event.pointerType === "touch") return;
     active = true;
     canvas.setPointerCapture?.(event.pointerId);
     place(event.clientX);
   });
   canvas.addEventListener("pointermove", (event) => {
-    if (!active) return;
+    if (event.pointerType === "touch" || !active) return;
     place(event.clientX);
   });
-  const end = () => {
+  canvas.addEventListener("pointerup", (event) => {
+    if (event.pointerType === "touch") return;
+    end();
+  });
+  canvas.addEventListener("pointercancel", (event) => {
+    if (event.pointerType === "touch") return;
+    end();
+  });
+  /* iOS legt sonst beim Ziehen eine blaue Auswahl über die Zeichenfläche. */
+  canvas.addEventListener("touchstart", (event) => {
+    if (event.cancelable) event.preventDefault();
+    const touch = touchPoint(event);
+    if (!touch) return;
+    active = true;
+    place(touch.clientX);
+  }, { passive: false });
+  canvas.addEventListener("touchmove", (event) => {
+    if (event.cancelable) event.preventDefault();
+    clearChartSelection();
     if (!active) return;
-    active = false;
-    const state = canvas._chartState;
-    if (state) paintChart(canvas, state, null);
-    hideScrub(canvas);
-  };
-  canvas.addEventListener("pointerup", end);
-  canvas.addEventListener("pointercancel", end);
+    const touch = touchPoint(event);
+    if (touch) place(touch.clientX);
+  }, { passive: false });
+  canvas.addEventListener("touchend", (event) => {
+    if (event.touches.length === 0) end();
+  });
+  canvas.addEventListener("touchcancel", end);
 }
 
 export function drawLineChart(canvas, points, { color = "#e4b15a", axes = false, scrub = false } = {}) {
