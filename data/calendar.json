@@ -318,7 +318,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand 22:00 Berlin: elf Stunden nach dem Burn weiter keine offizielle Meldung von NASA-Blog (letzter Eintrag 2.11.), @NASA, @RocketLab oder @escapade_mars. Starlust meldet zwar „erfolgreich“, stützt sich aber nur auf NASAs Vorab-Text – keine echte Bestätigung. NASA: Bahnqualität erst mehrere Tage danach. 85 % unverändert. Nächster Check 06:30. Gold-Fenster 9.11. bleibt.",
+      "reasoning": "NASA: Blue-TMI Burn-Beginn 4:51 EST am 7.11. (= 10:51 Berlin), etwa 9 Minuten; Gold am 9.11. ~5:51 EST (11:51 Berlin). Stand So 05:00 Berlin: rund 18 Stunden nach dem Burn weiter keine offizielle Meldung von NASA-Blog (letzter Eintrag 2.11.), @NASA, @RocketLab oder @escapade_mars. Starlust meldet „erfolgreich“, stützt sich aber nur auf NASAs Vorab-Text; andere Beobachter (z. B. @jeff_on_orbit, 8.11.) schreiben ausdrücklich „nicht bestätigt“. NASA: Bahnqualität erst mehrere Tage danach. 85 % unverändert. Entscheidung um 06:30. Gold-Fenster 9.11. bleibt.",
       "example": false,
       "sources": [
         {
@@ -348,6 +348,10 @@
         {
           "title": "Starlust: Blue „erfolgreich“ (nicht offiziell, 7.11.)",
           "url": "https://starlust.org/nasas-first-escapade-orbiter-swings-past-earth-on-trip-to-mars-second-set-to-fly-by-on-november-9/"
+        },
+        {
+          "title": "@jeff_on_orbit: Blue-Burn „nicht bestätigt“ (8.11.)",
+          "url": "https://x.com/jeff_on_orbit/status/2119246722589204875"
         }
       ]
     },

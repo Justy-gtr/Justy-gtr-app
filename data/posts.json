@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-07T22:10:00+01:00",
+  "asOf": "2026-11-08T05:10:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -39,7 +39,7 @@
     "RKLB": {
       "score": 0.05,
       "label": "abwartend",
-      "summary": "ESCAPADE-Blue-TMI-Zeit vorbei, Stand 20:00 weiter keine offizielle NASA/Rocket-Lab-Bestätigung. Q3 Montag, Electron-100 NET 14.11.",
+      "summary": "ESCAPADE-Blue-TMI seit ~18 h vorbei — Stand So 05:00 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (nur Drittseiten). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
       "sources": [
         {
           "title": "NASA ESCAPADE Blog",
@@ -57,6 +57,31 @@
     }
   },
   "posts": [
+    {
+      "id": "post-boring-2119181957770928180",
+      "account": "@boringcompany",
+      "displayName": "The Boring Company",
+      "postedAt": "2026-11-07T22:35:25+01:00",
+      "summaryDe": "Boring Company: Der Vegas Loop hat während der SEMA Show 2026 insgesamt 127.566 Fahrgäste zwischen 14 Stationen befördert.",
+      "originalText": "Vegas Loop transported 127,566 passengers between 14 stations during SEMA Show 2026",
+      "url": "https://x.com/boringcompany/status/2119181957770928180",
+      "tickers": [],
+      "companies": [
+        "The Boring Company"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@boringcompany auf X",
+          "url": "https://x.com/boringcompany/status/2119181957770928180"
+        },
+        {
+          "title": "@vegasloop: SEMA Show 2026",
+          "url": "https://x.com/vegasloop/status/2119181425802911833"
+        }
+      ]
+    },
     {
       "id": "post-musk-2119152839813456261",
       "account": "@elonmusk",
