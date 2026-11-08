@@ -22,6 +22,7 @@ import {
   OVERNIGHT_LABEL,
   rangeChange,
   safeUrl,
+  pendingDailyQuestion,
   scoreboard,
   seriesFor,
   trackSummary,
@@ -156,13 +157,13 @@ function renderHeute(data, ui, store) {
   const next = headlineEvent(data.calendar?.events || []);
   const favorites = [...(data.favorites?.favorites || [])].sort((a, b) => (a.rank || 99) - (b.rank || 99));
   const launch = data.production?.nextLaunch;
-  const question = data.daily_question?.current;
   const live = freshPrices(data.meta);
   const alerts = data.alerts?.alerts || [];
   const install = !store.installHidden && !isStandalone();
   const today = new Intl.DateTimeFormat("de-DE", { weekday: "long", day: "numeric", month: "long" }).format(new Date());
   const dropped = calm.tickers.map((ticker) => ticker.symbol).join(", ");
   return `
+    ${dailyWager(data, store)}
     <header class="page-head home-head">
       <p class="eyebrow">Heute</p>
       <h1>${esc(greeting())}, Justy</h1>
@@ -192,10 +193,23 @@ function renderHeute(data, ui, store) {
       <button type="button" class="chip" data-action="open-company" data-id="${esc(company.id)}">${esc(company.name)}</button>`).join("")}</div></details>
     <div class="jump-list">
       <button type="button" data-action="open-briefing"><span>Morgen-Briefing</span><span aria-hidden="true">›</span></button>
-      <button type="button" data-action="open-question"><span>${esc(question?.question || "Tagesfrage")}</span><span aria-hidden="true">›</span></button>
+      <button type="button" data-action="open-question"><span>Tagesfrage</span><span aria-hidden="true">›</span></button>
       <button type="button" data-action="page" data-page="kalender"><span>Ganzer Kalender</span><span aria-hidden="true">›</span></button>
     </div>
   `;
+}
+
+export function dailyWager(data, store) {
+  const question = pendingDailyQuestion(data, store);
+  if (!question) return "";
+  return `<section class="wager" aria-label="Tagesfrage">
+    <p class="wager-label">Tagesfrage</p>
+    <p class="wager-text">${esc(question.question)}</p>
+    <div class="wager-choice">
+      <button type="button" data-action="answer" data-qid="${esc(question.id)}" data-value="ja">Ja</button>
+      <button type="button" data-action="answer" data-qid="${esc(question.id)}" data-value="nein">Nein</button>
+    </div>
+  </section>`;
 }
 
 function feedBlock(data) {

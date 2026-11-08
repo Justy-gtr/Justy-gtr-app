@@ -594,6 +594,118 @@ export function scoreboard(file, store) {
   return { justy, karl, decided };
 }
 
+/**
+ * Open Tagesfrage until this phone has answered Ja or Nein.
+ * The question id decides, not the morning: an answered question stays hidden
+ * if it is still current the next day. A new id shows again.
+ * A question that already has an outcome is no longer a wager.
+ */
+export function pendingDailyQuestion(data, store) {
+  const question = data?.daily_question?.current;
+  if (!question?.id || !String(question.question || "").trim()) return null;
+  if (question.outcome === "ja" || question.outcome === "nein") return null;
+  const answer = store?.answers?.[question.id]?.answer;
+  if (answer === "ja" || answer === "nein") return null;
+  return question;
+}
+
+const TAB_IDS = ["heute", "kalender", "posts", "schwarm", "charts", "mehr"];
+
+function uniqSorted(list) {
+  return [...new Set(list.filter(Boolean))].sort();
+}
+
+function heuteSignals(data, store) {
+  const question = pendingDailyQuestion(data, store);
+  return question ? [`frage\u001f${question.id}`] : [];
+}
+
+/** Row the calendar list actually shows. The long note is not a new item. */
+function calendarSignals(data) {
+  return uniqSorted((data?.calendar?.events || []).map((event) => {
+    if (!event?.id) return "";
+    return [
+      "termin",
+      event.id,
+      event.date || "",
+      event.time || "",
+      event.probabilityPct ?? "",
+      event.title || ""
+    ].join("\u001f");
+  }));
+}
+
+function postSignals(data) {
+  return uniqSorted((data?.posts?.posts || []).map((post) => (post?.id ? `post\u001f${post.id}` : "")));
+}
+
+function schwarmSignals(data) {
+  const favorites = data?.favorites?.favorites || [];
+  const picks = favorites.length ? favorites : (data?.crowd?.comparison?.picks || []);
+  const voices = picks.map((item) => {
+    const id = item?.id || item?.symbol;
+    if (!id) return "";
+    return [
+      "stimme",
+      id,
+      item.score ?? item.karlScore ?? "",
+      item.vsSwarm || "",
+      item.swarmStance || "",
+      item.karlStance || "",
+      item.karlTake || ""
+    ].join("\u001f");
+  });
+  const investors = (data?.crowd?.investors || []).map((investor) => {
+    if (!investor?.id) return "";
+    const ticks = (investor.tickers || [])
+      .map((ticker) => [ticker.symbol || "", ticker.mentions ?? "", ticker.stance || ""].join(":"))
+      .join(",");
+    return ["investor", investor.id, investor.hitRatePct ?? "", ticks].join("\u001f");
+  });
+  const comparison = data?.crowd?.comparison || {};
+  const summary = comparison.summary
+    ? ["text", comparison.summary, comparison.swarmHitRatePct ?? "", comparison.karlHitRatePct ?? ""].join("\u001f")
+    : "";
+  return uniqSorted([...voices, ...investors, summary]);
+}
+
+/**
+ * What can light a tab dot. Charts stay empty: a moving price is not new content.
+ */
+export function tabSignals(data, store) {
+  return {
+    heute: heuteSignals(data, store),
+    kalender: calendarSignals(data),
+    posts: postSignals(data),
+    schwarm: schwarmSignals(data),
+    charts: [],
+    mehr: []
+  };
+}
+
+/** Signals in the tab that were not stored the last time it was opened. */
+export function unreadTabs(data, store) {
+  const signals = tabSignals(data, store);
+  const seen = store?.seen && typeof store.seen === "object" ? store.seen : {};
+  const unread = {};
+  for (const tab of TAB_IDS) {
+    const known = new Set(Array.isArray(seen[tab]) ? seen[tab] : []);
+    unread[tab] = (signals[tab] || []).filter((item) => !known.has(item));
+  }
+  return unread;
+}
+
+/** Remember the tab's current items. Returns true when the stored list changed. */
+export function markTabSeen(store, data, tab) {
+  const items = tabSignals(data, store)[tab];
+  if (!items || !store || typeof store !== "object") return false;
+  if (!store.seen || typeof store.seen !== "object") store.seen = {};
+  const prev = store.seen[tab];
+  if (Array.isArray(prev) && prev.length === items.length && prev.every((item, index) => item === items[index])) return false;
+  store.seen[tab] = items.slice();
+  return true;
+}
+
 export function trackSummary(picks) {
   const list = picks || [];
   const hits = list.filter((pick) => pick.result === "treffer").length;

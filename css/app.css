@@ -460,6 +460,19 @@ button.card { border-radius: 24px; }
 }
 .tab svg { width: 20px; height: 20px; }
 .tab[aria-current="page"] { color: var(--gold-2); }
+.tab-icon { position: relative; width: 20px; height: 20px; display: grid; }
+.tab-dot {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ff3b30;
+  box-shadow: 0 0 0 1.5px #08090e;
+  pointer-events: none;
+}
+.tab-dot[hidden] { display: none; }
 
 #detail-root, #egg-root { position: absolute; inset: 0; z-index: 40; pointer-events: none; }
 #egg-root { z-index: 70; }
@@ -613,6 +626,17 @@ body.detail-open .pager { overflow: hidden; }
 :focus-visible { outline: 2px solid var(--ice); outline-offset: 3px; }
 
 #page-heute > * + * { margin-top: 22px; }
+.wager { display: flex; flex-direction: column; gap: 8px; }
+.wager-label { margin: 0; color: var(--muted); font-size: 13px; }
+.wager-text { margin: 0; font-size: 17px; line-height: 1.3; letter-spacing: -0.02em; }
+.wager-choice { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.wager-choice button {
+  min-height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: transparent;
+}
+.wager-choice button:active { background: rgba(255, 255, 255, 0.08); }
 .home-head h1 { margin: 2px 0 0; }
 .dateline { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
 .install-line {
