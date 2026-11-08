@@ -1,11 +1,11 @@
 {
   "example": false,
-  "asOf": "2026-11-08T20:15:00+01:00",
+  "asOf": "2026-11-08T22:10:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
       "label": "zuversichtlich",
-      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan. So 20:15: drei neue Musk-Retweets (Sacks zu Zwischenwahlen, Chappelle/Kirk, politischer Kommentar) — nichts zur Flight-15-Lizenz. Wochenende ohne Kurs — Di früh USSF-627, Di 14:30 CPI.",
+      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan, FAA-Lizenz weiter offen. So 22:10: keine neuen Musk- oder SpaceX-Posts seit 18:36. Wochenende ohne Kurs — Di früh USSF-627, Di 14:30 CPI.",
       "sources": [
         {
           "title": "@SpaceX: Flight 15 catch",
@@ -24,7 +24,7 @@
     "TSLA": {
       "score": 0.15,
       "label": "leicht zuversichtlich",
-      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. So 20:15: keine neuen Tesla-Posts; Musk retweetet politisch (Zwischenwahlen, Kulturdebatte). Wochenende ruhig.",
+      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. So 22:10: @Tesla zeigt FSD-Supervised-Video (Notbremsung bei Spurwechsel eines SUV) — Werbung, nichts Neues. Wochenende ruhig.",
       "sources": [
         {
           "title": "@elonmusk: Cybertruck backlog",
@@ -37,13 +37,17 @@
         {
           "title": "@elonmusk: Gene Wu is the Beria of Texas",
           "url": "https://x.com/elonmusk/status/2119476153828192703"
+        },
+        {
+          "title": "@Tesla: FSD Supervised is looking out for you",
+          "url": "https://x.com/Tesla/status/2119533178704863309"
         }
       ]
     },
     "RKLB": {
       "score": 0.05,
       "label": "abwartend",
-      "summary": "ESCAPADE-Blue-TMI seit ~33 h vorbei — Stand So 20:15 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.; @NASA/@RocketLab/@escapade_mars still). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
+      "summary": "ESCAPADE-Blue-TMI seit ~35 h vorbei — Stand So 22:10 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.; @NASA/@RocketLab/@escapade_mars still). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
       "sources": [
         {
           "title": "NASA ESCAPADE Blog",
@@ -61,6 +65,34 @@
     }
   },
   "posts": [
+    {
+      "id": "post-tesla-2119533178704863309",
+      "account": "@Tesla",
+      "displayName": "Tesla",
+      "postedAt": "2026-11-08T21:51:03+01:00",
+      "summaryDe": "Tesla zitiert ein Fahrervideo: Ein SUV wechselte ohne Schulterblick auf seine Spur, FSD (Supervised) bremste hart, hielt an und fuhr danach ruhig weiter. Tesla: „FSD Supervised passt auf dich auf.“ Werbe-Clip, keine neue Zahl.",
+      "originalText": "FSD Supervised is looking out for you",
+      "url": "https://x.com/Tesla/status/2119533178704863309",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@Tesla: FSD Supervised is looking out for you",
+          "url": "https://x.com/Tesla/status/2119533178704863309"
+        },
+        {
+          "title": "@thekrishna: SUV merged right into me (FSD-Video)",
+          "url": "https://x.com/thekrishna/status/2119465139124810227"
+        }
+      ]
+    },
     {
       "id": "post-musk-2119484265671110904",
       "account": "@elonmusk",
@@ -3372,5 +3404,5 @@
       ]
     }
   ],
-  "notes": "08.11. 14:00: 6 neue Musk-Posts (Grok-Bot-Limits, Raptor-Zeitlupe, Starlink-Ad-Contest, Hassabis-Zitat, 10.000-Starts-Grafik). Nichts Wichtiges. ESCAPADE-Blue weiter ohne offizielle Bestätigung."
+  "notes": "08.11. 22:00: 1 neuer offizieller Post (@Tesla FSD-Supervised-Video), keine neuen Musk-Posts seit 18:36. Nichts Wichtiges. ESCAPADE-Blue weiter ohne offizielle Bestätigung."
 }
