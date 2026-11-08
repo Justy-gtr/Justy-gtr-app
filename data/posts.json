@@ -1,11 +1,11 @@
 {
   "example": false,
-  "asOf": "2026-11-08T13:10:00+01:00",
+  "asOf": "2026-11-08T14:15:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
       "label": "zuversichtlich",
-      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan; Musk bekräftigt Mars-Ziel (Clip 2006) und teilt Starlink für Kliniken in Chile. Seit 06:55 (Stand 13:10) keine neuen Posts. Wochenende ohne Kurs — Di früh USSF-627, Di 14:30 CPI.",
+      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan. So 14:15: sechs neue Musk-Posts zu Grok-Bot, Starship-Zeitlupe, Starlink-Wettbewerb, einem Hassabis-KI-Zitat und der 10.000-Starts-Grafik — keiner wesentlich. Wochenende ohne Kurs — Di früh USSF-627, Di 14:30 CPI.",
       "sources": [
         {
           "title": "@SpaceX: Flight 15 catch",
@@ -24,7 +24,7 @@
     "TSLA": {
       "score": 0.15,
       "label": "leicht zuversichtlich",
-      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. Seit 06:55 (Stand 13:10) keine neuen Posts. Wochenende ruhig.",
+      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. So 14:15: keine neuen Tesla-Posts. Wochenende ruhig.",
       "sources": [
         {
           "title": "@elonmusk: Cybertruck backlog",
@@ -39,7 +39,7 @@
     "RKLB": {
       "score": 0.05,
       "label": "abwartend",
-      "summary": "ESCAPADE-Blue-TMI seit ~26 h vorbei — Stand So 13:10 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
+      "summary": "ESCAPADE-Blue-TMI seit ~27 h vorbei — Stand So 14:15 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
       "sources": [
         {
           "title": "NASA ESCAPADE Blog",
@@ -57,6 +57,174 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2119415029812609301",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T14:01:34+01:00",
+      "summaryDe": "Musk zur Grok-Bot-Nutzung: Er wolle sich das heute ansehen. Ein Nutzer schrieb, ein 200-Dollar-Plan halte diese Woche unter mittlerer Last nur 14 Stunden statt einer Woche.",
+      "originalText": "I will dig into this today",
+      "url": "https://x.com/elonmusk/status/2119415029812609301",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: I will dig into this today (Grok-Bot)",
+          "url": "https://x.com/elonmusk/status/2119415029812609301"
+        },
+        {
+          "title": "@dneighbors: 200-Dollar-Plan nur 14 Stunden",
+          "url": "https://x.com/dneighbors/status/2119326243091079173"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119414305686761847",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T13:58:41+01:00",
+      "summaryDe": "Musk teilt ein Zeitlupen-Video: Super-Heavy-Raptor-Triebwerke beim Abheben vom Starttisch, mit Hochgeschwindigkeitskamera gefilmt.",
+      "originalText": "RT @teslaownersSV: Super Heavy’s Raptor engines lifting the booster off the pad.\n\nFilmed with a high-speed camera so you can see the detail…",
+      "url": "https://x.com/elonmusk/status/2119414305686761847",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk RT @teslaownersSV (Raptor-Zeitlupe)",
+          "url": "https://x.com/elonmusk/status/2119414305686761847"
+        },
+        {
+          "title": "@teslaownersSV: Super Heavy Raptor slow motion",
+          "url": "https://x.com/teslaownersSV/status/2119120008211292352"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119414103709978703",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T13:57:53+01:00",
+      "summaryDe": "Musk teilt einen Aufruf zum Starlink-Werbewettbewerb: Wer einen Spot mit Claudia-Cameo macht und gewinnt, bekommt zusätzlich 5000 Dollar in X Money.",
+      "originalText": "RT @anabology: If one of y'all makes a Starlink ad with a Claudia cameo that wins this contest...\n\nI will personally give you $5000 in @XMo…",
+      "url": "https://x.com/elonmusk/status/2119414103709978703",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "Starlink"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk RT @anabology (Starlink-Ad-Contest)",
+          "url": "https://x.com/elonmusk/status/2119414103709978703"
+        },
+        {
+          "title": "@anabology: 5000 Dollar für Starlink-Ad mit Claudia",
+          "url": "https://x.com/anabology/status/2119308146053116250"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119406729074979035",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T13:28:35+01:00",
+      "summaryDe": "Musk fragt zu Grok-Bot, ob man einfach auf eine Abrechnung pro Token umstellen könne. Ein Nutzer stoße schon nach wenigen Tagen an das Ultra-Limit.",
+      "originalText": "Does it offer an easy way to shift to per token pricing?",
+      "url": "https://x.com/elonmusk/status/2119406729074979035",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: per-token pricing (Grok-Bot)",
+          "url": "https://x.com/elonmusk/status/2119406729074979035"
+        },
+        {
+          "title": "@teslaownersSV: Ultra-Limit nach wenigen Tagen",
+          "url": "https://x.com/teslaownersSV/status/2119304013040726128"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119406464372789396",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T13:27:32+01:00",
+      "summaryDe": "Musk markiert als „Interesting“ ein Zitat von DeepMind-Chef Demis Hassabis: Wer KI wirklich verstehe, werde ganze Start-up-Teams schlagen; in fünf Jahren führten solche Leute Firmen mit einem Zehntel der Belegschaft.",
+      "originalText": "Interesting",
+      "url": "https://x.com/elonmusk/status/2119406464372789396",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Interesting (Hassabis/KI-Produktivität)",
+          "url": "https://x.com/elonmusk/status/2119406464372789396"
+        },
+        {
+          "title": "@RoundtableSpace: Hassabis-Zitat zu KI und Headcount",
+          "url": "https://x.com/RoundtableSpace/status/2119093769991774480"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119406258902224899",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T13:26:43+01:00",
+      "summaryDe": "Musk teilt eine Grafik: alle bisherigen US-Raketenstarts im Vergleich zum SpaceX-Ziel von 10.000 Starship-Starts im Jahr 2030.",
+      "originalText": "RT @ApoStructura: This is how every US launch ever looks like vs SpaceX’s 2030 launch target for Starship (10,000): https://t.co/Breuz9VnJl",
+      "url": "https://x.com/elonmusk/status/2119406258902224899",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk RT @ApoStructura (10.000 Starts 2030)",
+          "url": "https://x.com/elonmusk/status/2119406258902224899"
+        },
+        {
+          "title": "@ApoStructura: US-Starts vs Starship-Ziel 2030",
+          "url": "https://x.com/ApoStructura/status/2119167754955612456"
+        }
+      ]
+    },
     {
       "id": "post-musk-2119307649183535402",
       "account": "@elonmusk",
@@ -2904,5 +3072,5 @@
       ]
     }
   ],
-  "notes": "07.11. 22:00: 3 neue Musk-Posts (Cybercab-Akku 40 kWh, Model Y Bestseller, Texas-Standort nach Wahl). Nichts Wichtiges. ESCAPADE-Blue weiter ohne offizielle Bestätigung."
+  "notes": "08.11. 14:00: 6 neue Musk-Posts (Grok-Bot-Limits, Raptor-Zeitlupe, Starlink-Ad-Contest, Hassabis-Zitat, 10.000-Starts-Grafik). Nichts Wichtiges. ESCAPADE-Blue weiter ohne offizielle Bestätigung."
 }
