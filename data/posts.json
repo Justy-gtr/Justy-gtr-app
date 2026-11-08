@@ -1,11 +1,11 @@
 {
   "example": false,
-  "asOf": "2026-11-08T15:10:00+01:00",
+  "asOf": "2026-11-08T16:15:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
       "label": "zuversichtlich",
-      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan. So 15:10: drei neue Musk-Posts seit 14:15 (Grok-Bot-Fixes unterwegs, „Yup“ zu einer älteren These über orbitale KI-Umsätze, Anekdote zu lokalen Modellen) — keiner wesentlich. Wochenende ohne Kurs — Di früh USSF-627, Di 14:30 CPI.",
+      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan. So 16:15: keine neuen Musk-Posts seit 15:10. Wochenende ohne Kurs — Di früh USSF-627, Di 14:30 CPI.",
       "sources": [
         {
           "title": "@SpaceX: Flight 15 catch",
@@ -24,7 +24,7 @@
     "TSLA": {
       "score": 0.15,
       "label": "leicht zuversichtlich",
-      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. So 15:10: keine neuen Tesla-Posts. Wochenende ruhig.",
+      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. So 16:15: keine neuen Tesla-Posts. Wochenende ruhig.",
       "sources": [
         {
           "title": "@elonmusk: Cybertruck backlog",
@@ -39,7 +39,7 @@
     "RKLB": {
       "score": 0.05,
       "label": "abwartend",
-      "summary": "ESCAPADE-Blue-TMI seit ~28 h vorbei — Stand So 15:10 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
+      "summary": "ESCAPADE-Blue-TMI seit ~29 h vorbei — Stand So 16:15 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
       "sources": [
         {
           "title": "NASA ESCAPADE Blog",
