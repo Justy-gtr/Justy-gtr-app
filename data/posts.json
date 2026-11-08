@@ -1,19 +1,19 @@
 {
   "example": false,
-  "asOf": "2026-11-08T16:15:00+01:00",
+  "asOf": "2026-11-08T18:20:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
       "label": "zuversichtlich",
-      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan. So 16:15: keine neuen Musk-Posts seit 15:10. Wochenende ohne Kurs — Di früh USSF-627, Di 14:30 CPI.",
+      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan. So 18:20: neue Musk-Posts (Larry-Page-These zu orbitaler Rechenleistung, Starlink-Rettung, politische Texas-Äußerung) — nichts zur Flight-15-Lizenz. Wochenende ohne Kurs — Di früh USSF-627, Di 14:30 CPI.",
       "sources": [
         {
           "title": "@SpaceX: Flight 15 catch",
           "url": "https://x.com/SpaceX/status/2119093662957060389"
         },
         {
-          "title": "@elonmusk: Starship flight maneuvers",
-          "url": "https://x.com/elonmusk/status/2119114815931039992"
+          "title": "@elonmusk: Larry Page orbital compute prediction",
+          "url": "https://x.com/elonmusk/status/2119469436092760547"
         },
         {
           "title": "SpaceX Updates: Returning Starship",
@@ -24,7 +24,7 @@
     "TSLA": {
       "score": 0.15,
       "label": "leicht zuversichtlich",
-      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. So 16:15: keine neuen Tesla-Posts. Wochenende ruhig.",
+      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. So 18:20: keine neuen Tesla-Posts; Musk antwortet politisch zu einer angekündigten Untersuchung in Texas. Wochenende ruhig.",
       "sources": [
         {
           "title": "@elonmusk: Cybertruck backlog",
@@ -33,13 +33,17 @@
         {
           "title": "@Tesla: Argentina later this month",
           "url": "https://x.com/Tesla/status/2118720752379899907"
+        },
+        {
+          "title": "@elonmusk: Gene Wu is the Beria of Texas",
+          "url": "https://x.com/elonmusk/status/2119476153828192703"
         }
       ]
     },
     "RKLB": {
       "score": 0.05,
       "label": "abwartend",
-      "summary": "ESCAPADE-Blue-TMI seit ~29 h vorbei — Stand So 16:15 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
+      "summary": "ESCAPADE-Blue-TMI seit ~31 h vorbei — Stand So 18:20 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.; @escapade_mars still). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
       "sources": [
         {
           "title": "NASA ESCAPADE Blog",
@@ -57,6 +61,146 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2119476153828192703",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T18:04:27+01:00",
+      "summaryDe": "Musk nennt den texanischen Abgeordneten Gene Wu den „Beria von Texas“, nachdem Wu gesagt haben soll, die neue demokratische Mehrheit in Texas wolle Musk untersuchen und strafrechtlich verfolgen.",
+      "originalText": "@WesternLensman Gene Wu is the Beria of Texas",
+      "url": "https://x.com/elonmusk/status/2119476153828192703",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Gene Wu is the Beria of Texas",
+          "url": "https://x.com/elonmusk/status/2119476153828192703"
+        },
+        {
+          "title": "@WesternLensman: Gene Wu über Untersuchung/Strafverfolgung",
+          "url": "https://x.com/WesternLensman/status/2119442739192291384"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119475574427328934",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T18:02:09+01:00",
+      "summaryDe": "Musk bestätigt mit „Exactly“ den Kommentar, Spenden an Republikaner und die Zusammenarbeit mit Trump seien für die neue Mehrheit in Texas bereits die „Verbrechen“.",
+      "originalText": "@WesternLensman @shoveitjack Exactly",
+      "url": "https://x.com/elonmusk/status/2119475574427328934",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Exactly (Texas-Untersuchung)",
+          "url": "https://x.com/elonmusk/status/2119475574427328934"
+        },
+        {
+          "title": "@WesternLensman: Donating to R's and working with Trump",
+          "url": "https://x.com/WesternLensman/status/2119453666428297460"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119469436092760547",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T17:37:46+01:00",
+      "summaryDe": "Musk teilt eine Wiedergabe von Larry Page: 99,999 Prozent der Rechenleistung würden irgendwann im Orbit entstehen. Musk schreibt, Page habe schon oft richtig gelegen, und das sei eine dieser Vorhersagen. Keine neue eigene Zahl.",
+      "originalText": "Larry Page has made many accurate predictions and this is one of them",
+      "url": "https://x.com/elonmusk/status/2119469436092760547",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Larry Page orbital compute prediction",
+          "url": "https://x.com/elonmusk/status/2119469436092760547"
+        },
+        {
+          "title": "@hosun_chung: Larry Page five-nines orbital compute",
+          "url": "https://x.com/hosun_chung/status/2119198237047590971"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119450646143537211",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T16:23:06+01:00",
+      "summaryDe": "Musk tadelt Dave Chappelle scharf („Shame, shame, shame“): Chappelle habe nach der Ermordung von Charlie Kirk darüber Witze gemacht — nachdem Kirk ihm früher auf der Bühne beigestanden habe.",
+      "originalText": "Shame, shame, shame on Chappelle",
+      "url": "https://x.com/elonmusk/status/2119450646143537211",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Shame, shame, shame on Chappelle",
+          "url": "https://x.com/elonmusk/status/2119450646143537211"
+        },
+        {
+          "title": "@bennyjohnson: Chappelle / Charlie Kirk",
+          "url": "https://x.com/bennyjohnson/status/2119439465097691511"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119450198007337418",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T16:21:19+01:00",
+      "summaryDe": "Musk schreibt „Starlink saves lives“ zu einem Bericht, wonach Starlink fünf in den schneebedeckten Bergen Kasachstans gestrandete Menschen erreichte und den Kontakt zu den Rettern hielt.",
+      "originalText": "Starlink saves lives",
+      "url": "https://x.com/elonmusk/status/2119450198007337418",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Starlink saves lives",
+          "url": "https://x.com/elonmusk/status/2119450198007337418"
+        },
+        {
+          "title": "@cb_doge: Starlink-Rettung Kasachstan",
+          "url": "https://x.com/cb_doge/status/2119430733525815742"
+        }
+      ]
+    },
     {
       "id": "post-musk-2119425068979937378",
       "account": "@elonmusk",

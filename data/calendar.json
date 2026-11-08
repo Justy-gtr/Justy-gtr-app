@@ -15,7 +15,7 @@
       ],
       "probabilityPct": 65,
       "impact": "hoch",
-      "reasoning": "Stand So 16:15: SpaceX-Missionsseite unverändert. Flight 15 zielt auf frühestens Freitag 13.11., vorbehaltlich Zulassung; Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), 75 Minuten. Blog „Returning Starship to the Launch Site“ beschreibt Ship-Catch (Orbit ~21 h, Deorbit, Bellyflop, Chopsticks Pad 2) plus fünf Contingency-Splashdowns. FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin. Musk „more likely than not“ für Ship-Catch. 65 % unverändert: offizielle Zielangabe + Catch-Plan; Lizenz und Fang-Risiko bleiben. Impact hoch für SPCX.",
+      "reasoning": "Stand So 18:20: SpaceX-Missionsseite unverändert. Flight 15 zielt auf frühestens Freitag 13.11., vorbehaltlich Zulassung; Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), 75 Minuten. Blog „Returning Starship to the Launch Site“ beschreibt Ship-Catch (Orbit ~21 h, Deorbit, Bellyflop, Chopsticks Pad 2) plus fünf Contingency-Splashdowns. FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin. Musk „more likely than not“ für Ship-Catch. 65 % unverändert: offizielle Zielangabe + Catch-Plan; Lizenz und Fang-Risiko bleiben. Impact hoch für SPCX.",
       "example": false,
       "sources": [
         {
@@ -318,7 +318,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Gold-Burn Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten. Blue sollte am 7.11. um 10:51 Berlin zünden. Stand So 16:15 Berlin: rund 29 Stunden danach weiter keine offizielle Meldung von NASA-Blog (letzter Eintrag 2.11.), @NASA, @RocketLab oder @escapade_mars. Starlust meldet „erfolgreich“, aber ohne eigene Quelle; @jeff_on_orbit schreibt „nicht bestätigt“. The Space Tap hält den Blue-Ausgang weiter für unbestätigt. Keine Hinweise auf ein Problem, aber auch keine Bestätigung. 85 % unverändert. Kurswirkung gering.",
+      "reasoning": "NASA: Gold-Burn Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten. Blue sollte am 7.11. um 10:51 Berlin zünden. Stand So 18:20 Berlin: rund 31 Stunden danach weiter keine offizielle Meldung von NASA-Blog (letzter Eintrag 2.11.), @NASA, @RocketLab oder @escapade_mars. Starlust meldet „erfolgreich“, aber ohne eigene Quelle; @jeff_on_orbit schreibt „nicht bestätigt“. The Space Tap hält den Blue-Ausgang weiter für unbestätigt. Keine Hinweise auf ein Problem, aber auch keine Bestätigung. 85 % unverändert. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -334,7 +334,7 @@
           "url": "https://x.com/RocketLab/status/2118544706066055248"
         },
         {
-          "title": "NASA ESCAPADE Blog-Archiv (Stand 8.11. 16:15: kein Post-Burn-Update)",
+          "title": "NASA ESCAPADE Blog-Archiv (Stand 8.11. 18:20: kein Post-Burn-Update)",
           "url": "https://science.nasa.gov/blogs/escapade/"
         },
         {
@@ -951,7 +951,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "SpaceX-Seite (Stand So 16:15) bestätigt weiter Montag 9.11., Vier-Stunden-Fenster ab 19:03 PT Vandenberg (= Di 10.11. 04:03 Berlin), Backup Di 10.11. 18:49 PT. Nach erfolgreichem USSF-432 von derselben Rampe 85 %. Klassifizierte Space-Force-Mission, Landung OCISLY. Kurswirkung gering. Tagesfrage vom 8.11.",
+      "reasoning": "SpaceX-Seite (Stand So 18:20) bestätigt weiter Montag 9.11., Vier-Stunden-Fenster ab 19:03 PT Vandenberg (= Di 10.11. 04:03 Berlin), Backup Di 10.11. 18:49 PT. Nach erfolgreichem USSF-432 von derselben Rampe 85 %. Klassifizierte Space-Force-Mission, Landung OCISLY. Kurswirkung gering. Tagesfrage vom 8.11.",
       "example": false,
       "sources": [
         {
