@@ -14096,7 +14096,7 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "US-Schluss Freitag ~358 $ (~+4 %): Cybercab-Narrativ, Rebound, Baron-Chat. Samstagabend: Musk meldet großen Cybertruck-Auftragsstau und Extra-Schicht vor Cybercab-Umbau (Juni/Juli 2027). Argentinien 20.11. bestätigt. Wochenende ohne Börsenhandel.",
+      "why": "US-Schluss Freitag ~358 $ (~+4 %): Cybercab-Narrativ, Rebound, Baron-Chat. Samstagabend: Musk meldet großen Cybertruck-Auftragsstau und Extra-Schicht vor Cybercab-Umbau (Juni/Juli 2027). Argentinien 20.11. bestätigt. Wochenende ohne Börsenhandel. Der ausgewiesene Wert von etwa −9,8 % (Xetra ~324 € gegen einen Vergleich nahe 359 €) sieht nach einem Datenfehler aus, nicht nach einem echten Absturz.",
       "whySources": [
         {
           "title": "Yahoo Finance: TSLA",
@@ -14113,6 +14113,10 @@
         {
           "title": "TN: Tesla Argentinien 20.11.",
           "url": "https://tn.com.ar/autos/novedades/2026/11/07/tesla-anuncio-la-fecha-de-su-llegada-a-la-argentina-donde-se-podran-ver-y-probar-sus-autos/"
+        },
+        {
+          "title": "Yahoo Finance: TL0.DE",
+          "url": "https://finance.yahoo.com/quote/TL0.DE"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -18463,7 +18467,7 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "US-Schluss Freitag ~53 $ (~+15 %): Space-/Defense-Rebound, Neutron-Dome. ESCAPADE Blue (7.11.): bis So 09:40 weiter keine offizielle NASA/Rocket-Lab-Bestätigung; Gold-Burn Mo 11:51 Berlin. Wochenende ohne Handel; Q3-Zahlen Mo 23:00 Berlin, Electron-100 NET 14.11.",
+      "why": "US-Schluss Freitag ~53 $ (~+15 %): Space-/Defense-Rebound, Neutron-Dome. ESCAPADE Blue (7.11.): bis So 11:40 weiter keine offizielle NASA/Rocket-Lab-Bestätigung; Gold-Burn Mo 11:51 Berlin. Wochenende ohne Handel; Q3-Zahlen Mo 23:00 Berlin, Electron-100 NET 14.11.",
       "whySources": [
         {
           "title": "Yahoo Finance: RKLB",
