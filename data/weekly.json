@@ -1,28 +1,44 @@
 {
   "example": false,
   "weekOf": "2026-11-02",
-  "title": "Wochenrückblick",
-  "summary": "Eine Woche mit zwei Gesichtern: Bis Dienstag erholte sich SPCX (Dienstag +3,6 % auf 125,81 €), am Mittwoch kostete das Wahlergebnis alle drei Werte rund 3,5 bis 4 %. Operativ lief es bei SpaceX und Rocket Lab ruhig und planmäßig; bei Tesla gab es diese Woche kaum Neues jenseits der FSD-Zulassung in den Niederlanden unter neuem Namen. Stand Mittwochabend, die Woche ist noch nicht vorbei.",
+  "title": "Wochenrückblick KW 45",
+  "summary": "Woche 2.–8. November, Kurse Freitag gegen Freitag in Euro.\nSPCX: ±0 % (−0,2 %). Mittwoch und Donnerstag tief, Freitag zurück.\nTSLA: −9,8 % auf Xetra (323,70 €). Das ist echt, kein Datenfehler.\nRKLB: −3,8 % in Frankfurt (47,35 €).\nGrund: Nach der Wahl am Dienstag fielen Tech-Werte. Freitag kam eine Erholung.",
   "highlights": [
     {
-      "title": "SpaceX",
-      "text": "Starlink Mobile kooperiert mit Qualcomm für ein US-weites Netz aus Satelliten und Bodenstationen ab 2027; frühe Starlink-Kunden bekommen eine neue Antenne gratis. Flight 15 wartet auf die FAA-Lizenz."
+      "title": "📈 Kurse",
+      "text": "SPCX 120,70 € → 120,51 € (−0,2 %). TSLA Xetra 358,85 € → 323,70 € (−9,8 %), in Dollar −10,4 %. RKLB Frankfurt 49,20 € → 47,35 € (−3,8 %). Hinweis: Am Wochenende zeigt die App bei TSLA −9,8 % als Tagesminus. Das ist in Wahrheit das Wochenminus."
     },
     {
-      "title": "Tesla",
-      "text": "Die niederländische Behörde RDW hat FSD unter dem neuen Namen „Tesla Assisted Driving“ mit engerem Tempo-Spielraum (+10 %) bestätigt. Die EU-weite Abstimmung bleibt frühestens im Dezember. Aktie am Mittwoch −3,3 %."
+      "title": "🚀 SpaceX",
+      "text": "USSF-432 gestartet, Booster gelandet (Sa 01:48). Flight 15 offiziell: frühestens Fr 13.11., erster Fang von Booster und Schiff. Die Zulassung fehlt noch."
     },
     {
-      "title": "Rocket Lab",
-      "text": "Electron brachte erneut einen QPS-Radarsatelliten ins All, der für Viasat gebaute Satellit Maxwell ist gesund. Der Finanzchef und eine Aufsichtsrätin verkauften Aktien nach festen Plänen. Zahlen kommen am 9.11."
+      "title": "🔴 ESCAPADE (Rocket Lab / NASA)",
+      "text": "Blue sollte am Sa 07.11. zünden. NASA und Rocket Lab haben es bis So 18 Uhr nicht bestätigt. Darum noch nicht gewertet. Gold zündet Mo 09.11. um 11:51."
     },
     {
-      "title": "Politik",
-      "text": "Demokraten gewinnen beide Kammern des Kongresses und die wichtigsten Rennen in Texas, wo mehrere seiner Firmen sitzen. Musk war laut einer Analyse mit über 400 Mio. US-Dollar der größte Spender dieser Wahl, vor allem für Republikaner."
+      "title": "🚗 Tesla",
+      "text": "Start in Argentinien am 20.11. bestätigt. Musk: Cybertruck läuft noch 8–9 Monate, dann mehr Cybercab. Niederlande: FSD heißt jetzt „Tesla Assisted Driving“."
     },
     {
-      "title": "Neuralink",
-      "text": "Musk sagt, Blindsight sei technisch fertig und warte auf die Zulassung. Ein Datum gibt es nicht."
+      "title": "🗣️ Wichtigste Posts",
+      "text": "Musk (Fr): SpaceX bald über 100 Mrd. $ Jahresumsatz, über 500 Mrd. bis Ende 2027. Das ist sein Ziel, keine Zahl aus einem Bericht. Musk (Fr): Flight 15 versucht, beide Teile zu fangen. @Starlink (Mi): Mobilfunknetz mit Qualcomm ab 2027."
+    },
+    {
+      "title": "🎯 Karl: Trefferbilanz",
+      "text": "Termine mit Prozent: 3 von 3 eingetroffen (Arbeitsmarkt 95 %, Baron-Gespräch 92 %, USSF-432 80 %). Brier-Wert 0,016 (0 = perfekt). Tagesfrage: 3 von 3 richtig, Brier 0,088. ESCAPADE und USSF-627 sind noch offen. Die 9 Aktien-Tipps laufen bis Mai 2027 und sind alle noch offen."
+    },
+    {
+      "title": "👥 Schwarm gegen Karl",
+      "text": "Noch keine Wertung. Beide Quoten stehen auf null, die Tipps sind erst eine Woche alt. Zwischenstand seit Einstieg: Henkel +1,0 % (nur Karl). Nvidia −6,0 % und Broadcom −8,2 % (der Schwarm kauft, Karl ist vorsichtig). Nur eine Momentaufnahme."
+    },
+    {
+      "title": "❓ Tagesfrage",
+      "text": "Karl lag 3-mal richtig: SPCX Do (nein), SPCX Fr (ja), USSF-432 (ja). ESCAPADE ist nicht gewertet. Offen bis Di 08:30: Startet USSF-627 im ersten Fenster? Karl sagt ja. Deine Punkte zählt nur dein iPhone."
+    },
+    {
+      "title": "📅 Nächste Woche",
+      "text": "Mo 11:51 ESCAPADE Gold (85 %). Mo 23:00 Rocket-Lab-Zahlen (97 %). Di 04:03 USSF-627 (85 %). Di 14:30 US-Inflation (95 %). Fr 05:23 USSF-317 (75 %). Fr 23:45 Starship Flight 15 (65 %). Sa 06:30 100. Electron-Start (75 %)."
     }
   ],
   "sources": [
@@ -31,40 +47,88 @@
       "url": "https://finance.yahoo.com/quote/SPCX/history/"
     },
     {
-      "title": "Investopedia: Tesla und SpaceX fallen nach den Midterms",
-      "url": "https://www.investopedia.com/shares-of-elon-musk-s-tesla-spacex-fall-after-midterms-spcx-tsla-12236008"
+      "title": "Yahoo Finance: TL0.DE (Tesla Xetra)",
+      "url": "https://finance.yahoo.com/quote/TL0.DE/history/"
     },
     {
-      "title": "CNBC: SpaceX und Tesla fallen nach Demokraten-Sieg (04.11.2026)",
-      "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html"
+      "title": "Yahoo Finance: 6RJ0.F (Rocket Lab Frankfurt)",
+      "url": "https://finance.yahoo.com/quote/6RJ0.F/history/"
     },
     {
-      "title": "@Starlink auf X: Qualcomm-Partnerschaft",
-      "url": "https://x.com/Starlink/status/2117973275414532165"
+      "title": "Yahoo Finance: EURUSD",
+      "url": "https://finance.yahoo.com/quote/EURUSD=X/history/"
     },
     {
-      "title": "RDW: Änderungen an Teslas Fahrassistenz genehmigt",
+      "title": "PYE Markets: Wochenbilanz 06.11.2026 (Tesla −10,40 %)",
+      "url": "https://proveyouredge.com/articles/week-in-review-2026-11-07"
+    },
+    {
+      "title": "SpaceX: USSF-432 Mission",
+      "url": "https://www.spacex.com/launches/ussf432"
+    },
+    {
+      "title": "@SpaceX: Flight 15 frühestens 13.11.",
+      "url": "https://x.com/SpaceX/status/2119093662957060389"
+    },
+    {
+      "title": "SpaceX: Starship Flight 15",
+      "url": "https://www.spacex.com/launches/starship-flight-15"
+    },
+    {
+      "title": "NASA: ESCAPADE-Blog (kein Update nach dem Blue-Burn)",
+      "url": "https://science.nasa.gov/blogs/escapade/"
+    },
+    {
+      "title": "NASA: ESCAPADE Burn-Zeiten",
+      "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+    },
+    {
+      "title": "@Tesla: Start in Argentinien",
+      "url": "https://x.com/Tesla/status/2118720752379899907"
+    },
+    {
+      "title": "LA NACION: Tesla bestätigt 20. November",
+      "url": "https://www.lanacion.com.ar/autos/tesla-confirmo-la-fecha-en-la-que-llegara-a-la-argentina-nid06112026/"
+    },
+    {
+      "title": "RDW: Teslas Fahrassistenz genehmigt",
       "url": "https://www.rdw.nl/en/news/2026/rdw-approves-changes-to-tesla-driver-assistance-system"
     },
     {
-      "title": "Electrek: Tesla senkt Tempo-Spielraum in Europa auf 10 %",
-      "url": "https://electrek.co/2026/11/03/tesla-assisted-driving-rdw-speed-cap-10-percent-europe/"
+      "title": "@elonmusk: SpaceX >100 Mrd. $ (Baron-Gespräch)",
+      "url": "https://x.com/elonmusk/status/2118789262393090314"
     },
     {
-      "title": "@RocketLab auf X: QPS-SAR",
-      "url": "https://x.com/RocketLab/status/2117350920757588325"
+      "title": "@elonmusk: Booster und Schiff fangen",
+      "url": "https://x.com/elonmusk/status/2118732082843435305"
     },
     {
-      "title": "@RocketLab auf X: Maxwell",
-      "url": "https://x.com/RocketLab/status/2117715361714016621"
+      "title": "@Starlink: Qualcomm-Partnerschaft",
+      "url": "https://x.com/Starlink/status/2117973275414532165"
     },
     {
-      "title": "SEC Form 4: Adam Spice (RKLB), 02.11.2026",
-      "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000144/edgardoc.xml"
+      "title": "BLS: Arbeitsmarktbericht Oktober 2026",
+      "url": "https://www.bls.gov/news.release/empsit.htm"
     },
     {
-      "title": "@elonmusk auf X: Blindsight",
-      "url": "https://x.com/elonmusk/status/2116019939056513218"
+      "title": "Rocket Lab: Termin Q3-Zahlen",
+      "url": "https://www.globenewswire.com/news-release/2026/10/20/3385004/0/en/rocket-lab-announces-date-of-third-quarter-2026-financial-results.html"
+    },
+    {
+      "title": "SpaceX: USSF-627 Mission",
+      "url": "https://www.spacex.com/launches/ussf627"
+    },
+    {
+      "title": "SpaceX: USSF-317 Mission",
+      "url": "https://www.spacex.com/launches/ussf317"
+    },
+    {
+      "title": "BLS: CPI-Termine",
+      "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+    },
+    {
+      "title": "@RocketLab: 100. Electron am 14.11.",
+      "url": "https://x.com/RocketLab/status/2118521208639746494"
     }
   ]
 }

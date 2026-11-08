@@ -1,7 +1,7 @@
 {
   "example": false,
   "asOf": "2026-11-08",
-  "notes": "Gestartet am 04.11.2026, am 05.11. um vier Aktien aus dem breiteren Markt ergänzt. Starlink und Tesla Energie bleiben als Themen auf der jeweiligen Aktie. Alle Einstiege in Euro. Tagesfrage 06.11. (SPCX über Do-Schluss): Outcome ja — Karl richtig. Tagesfrage 07.11. (USSF-432 Orbit): Outcome ja — Karl richtig. Tagesfrage ESCAPADE Blue TMI: bis Frist 08.11. 06:30 keine offizielle Bestätigung — nicht gewertet (outcome null), wird bei offizieller Meldung nachgetragen. Neue Tagesfrage 08.11.: USSF-627 im ersten Fenster.",
+  "notes": "Gestartet am 04.11.2026, am 05.11. um vier Aktien aus dem breiteren Markt ergänzt. Starlink und Tesla Energie bleiben als Themen auf der jeweiligen Aktie. Alle Einstiege in Euro. Tagesfrage 06.11. (SPCX über Do-Schluss): Outcome ja — Karl richtig. Tagesfrage 07.11. (USSF-432 Orbit): Outcome ja — Karl richtig. Tagesfrage ESCAPADE Blue TMI: bis Frist 08.11. 06:30 keine offizielle Bestätigung — nicht gewertet (outcome null), wird bei offizieller Meldung nachgetragen. Neue Tagesfrage 08.11.: USSF-627 im ersten Fenster. Wochenbilanz KW 45 (08.11.): Kalender-Prozente 3 von 3 eingetroffen (Arbeitsmarkt Okt. 95 %, Baron-Gespräch 92 %, USSF-432 80 %; erster Wert je Termin), Brier 0,016. Tagesfrage Karl 3 von 3 richtig (05.11., 06.11., 07.11.), Brier 0,088. ESCAPADE Blue weiter unbestätigt, nicht gewertet. Alle 9 Aktien-Tipps offen bis Mai 2027.",
   "picks": [
     {
       "id": "tr-2026-11-04-spcx",
@@ -13,7 +13,7 @@
       "score": 7,
       "entryPriceEur": 121.01,
       "result": "offen",
-      "outcomeNote": "Startpunkt der Bilanz. Einstieg 120,99 € am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg 120,99 € am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt. Zwischenstand KW 45: Freitag 06.11. 120,51 € (−0,4 % seit Einstieg). Noch nicht gewertet.",
       "example": false,
       "sources": [
         {
@@ -40,7 +40,7 @@
       "score": 8,
       "entryPriceEur": 121.01,
       "result": "offen",
-      "outcomeNote": "Startpunkt der Bilanz. Einstieg 120,99 € am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg 120,99 € am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt. Zwischenstand KW 45: Freitag 06.11. 120,51 € (−0,4 % seit Einstieg). Noch nicht gewertet.",
       "example": false,
       "sources": [
         {
@@ -67,7 +67,7 @@
       "score": 5,
       "entryPriceEur": 342.15,
       "result": "offen",
-      "outcomeNote": "Startpunkt der Bilanz. Einstieg: Xetra-Schlusskurs TL0.DE am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro über dem Einstieg liegt.",
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg: Xetra-Schlusskurs TL0.DE am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro über dem Einstieg liegt. Zwischenstand KW 45: Freitag 06.11. 323,70 € (−5,4 % seit Einstieg). Noch nicht gewertet.",
       "example": false,
       "sources": [
         {
@@ -94,7 +94,7 @@
       "score": 7,
       "entryPriceEur": 342.15,
       "result": "offen",
-      "outcomeNote": "Startpunkt der Bilanz. Einstieg: Xetra-Schlusskurs TL0.DE am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro über dem Einstieg liegt.",
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg: Xetra-Schlusskurs TL0.DE am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro über dem Einstieg liegt. Zwischenstand KW 45: Freitag 06.11. 323,70 € (−5,4 % seit Einstieg). Noch nicht gewertet.",
       "example": false,
       "sources": [
         {
@@ -121,7 +121,7 @@
       "score": 5,
       "entryPriceEur": 46.63,
       "result": "offen",
-      "outcomeNote": "Startpunkt der Bilanz. Einstieg 46,63 € am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
+      "outcomeNote": "Startpunkt der Bilanz. Einstieg 46,63 € am 04.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt. Zwischenstand KW 45: Freitag 06.11. 47,35 € (+1,5 % seit Einstieg). Noch nicht gewertet.",
       "example": false,
       "sources": [
         {
@@ -148,7 +148,7 @@
       "score": 7,
       "entryPriceEur": 352.25,
       "result": "offen",
-      "outcomeNote": "Startpunkt. Einstieg 352,25 € am 05.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
+      "outcomeNote": "Startpunkt. Einstieg 352,25 € am 05.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt. Zwischenstand KW 45: Freitag 06.11. 336,96 € (−4,3 % seit Einstieg). Noch nicht gewertet.",
       "example": false,
       "sources": [
         {
@@ -175,7 +175,7 @@
       "score": 6,
       "entryPriceEur": 82.42,
       "result": "offen",
-      "outcomeNote": "Startpunkt. Einstieg 82,42 € am 05.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
+      "outcomeNote": "Startpunkt. Einstieg 82,42 € am 05.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt. Zwischenstand KW 45: Freitag 06.11. 83,22 € (+1,0 % seit Einstieg). Noch nicht gewertet.",
       "example": false,
       "sources": [
         {
@@ -202,7 +202,7 @@
       "score": 5,
       "entryPriceEur": 180.56,
       "result": "offen",
-      "outcomeNote": "Startpunkt. Einstieg 180,56 € am 05.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
+      "outcomeNote": "Startpunkt. Einstieg 180,56 € am 05.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt. Zwischenstand KW 45: Freitag 06.11. 169,76 € (−6,0 % seit Einstieg). Noch nicht gewertet.",
       "example": false,
       "sources": [
         {
@@ -229,7 +229,7 @@
       "score": 5,
       "entryPriceEur": 291.15,
       "result": "offen",
-      "outcomeNote": "Startpunkt. Einstieg 291,15 € am 05.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt.",
+      "outcomeNote": "Startpunkt. Einstieg 291,15 € am 05.11.2026. Ausgewertet wird nach sechs Monaten, ob der Kurs in Euro darüber liegt. Zwischenstand KW 45: Freitag 06.11. 267,30 € (−8,2 % seit Einstieg). Noch nicht gewertet.",
       "example": false,
       "sources": [
         {
