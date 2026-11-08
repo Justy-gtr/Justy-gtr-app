@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-08T08:40:00+01:00",
+  "asOf": "2026-11-08T09:40:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -39,7 +39,7 @@
     "RKLB": {
       "score": 0.05,
       "label": "abwartend",
-      "summary": "ESCAPADE-Blue-TMI seit ~22 h vorbei — Stand So 08:40 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
+      "summary": "ESCAPADE-Blue-TMI seit ~23 h vorbei — Stand So 09:40 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
       "sources": [
         {
           "title": "NASA ESCAPADE Blog",
