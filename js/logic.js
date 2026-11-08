@@ -460,34 +460,6 @@ export function saveStore(store) {
   localStorage.setItem(STORE_KEY, JSON.stringify(store));
 }
 
-export function weeklyCloses(points) {
-  const buckets = new Map();
-  for (const point of points || []) {
-    if (!point || point.eur == null || !point.t) continue;
-    const date = new Date(point.t);
-    if (Number.isNaN(date.getTime())) continue;
-    buckets.set(isoWeekKey(date), point);
-  }
-  return [...buckets.values()];
-}
-
-function isoWeekKey(date) {
-  const copy = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
-  const day = copy.getUTCDay() || 7;
-  copy.setUTCDate(copy.getUTCDate() + 4 - day);
-  const yearStart = new Date(Date.UTC(copy.getUTCFullYear(), 0, 1));
-  const week = Math.ceil(((copy - yearStart) / 86400000 + 1) / 7);
-  return `${copy.getUTCFullYear()}-W${String(week).padStart(2, "0")}`;
-}
-
-export function movingAverage(points, window = 4) {
-  return (points || []).map((point, index) => {
-    const slice = points.slice(Math.max(0, index - window + 1), index + 1);
-    const avg = slice.reduce((sum, item) => sum + Number(item.eur), 0) / slice.length;
-    return { t: point.t, eur: avg };
-  });
-}
-
 const RANGE_KEY = {
   Tag: "intraday",
   "1 Min": "intraday",
@@ -497,8 +469,6 @@ const RANGE_KEY = {
   "1J": "1Y",
   "5J": "5Y"
 };
-
-const DAY_RANGES = new Set(["Tag", "1 Min", "5 Min"]);
 
 /** Last print of each N-minute bucket. One-minute series stays as it is. */
 export function bucketMinutes(points, minutes = 5) {
@@ -538,9 +508,8 @@ export function maxPoints(history) {
   return [...byDay.values()].sort((a, b) => String(a.t).localeCompare(String(b.t)));
 }
 
-export function seriesFor(ticker, range, langfrist) {
-  const asked = range === "Tag" ? "1 Min" : range;
-  const effective = langfrist && (DAY_RANGES.has(range) || asked === "1M") ? "1J" : asked;
+export function seriesFor(ticker, range) {
+  const effective = range === "Tag" ? "1 Min" : range;
   let points;
   if (effective === "Max") {
     points = maxPoints(ticker?.history);
@@ -548,12 +517,13 @@ export function seriesFor(ticker, range, langfrist) {
     points = bucketMinutes(ticker?.history?.intraday, 5);
   } else if (effective === "1 Min") {
     points = (ticker?.history?.intraday || []).filter((point) => point && point.eur != null);
+  } else if (effective === "1W") {
+    const month = (ticker?.history?.["1M"] || []).filter((point) => point && point.eur != null);
+    const source = month.length >= 5 ? month : (ticker?.history?.["6M"] || []).filter((point) => point && point.eur != null);
+    points = source.slice(-7);
   } else {
     const key = RANGE_KEY[effective] || "1M";
     points = (ticker?.history?.[key] || []).filter((point) => point && point.eur != null);
-  }
-  if (langfrist) {
-    points = movingAverage(weeklyCloses(points), effective === "5J" || effective === "Max" ? 4 : 3);
   }
   return { points, range: effective };
 }

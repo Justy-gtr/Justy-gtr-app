@@ -219,23 +219,18 @@ test("Letzter Nachthandel bleibt, solange die reguläre US-Sitzung nicht läuft"
   assert.equal(fresh.eur, 114);
 });
 
-test("Langfrist-Brille glättet und blendet den Tag aus", () => {
-  const ticker = {
-    history: {
-      intraday: [{ t: "2026-11-04T10:00:00Z", eur: 1 }, { t: "2026-11-04T11:00:00Z", eur: 3 }],
-      "1M": [{ t: "2026-11-01", eur: 10 }, { t: "2026-11-02", eur: 12 }],
-      "1Y": [
-        { t: "2026-01-02", eur: 10 },
-        { t: "2026-01-03", eur: 14 },
-        { t: "2026-01-09", eur: 12 },
-        { t: "2026-01-10", eur: 16 }
-      ]
-    }
-  };
-  const smoothed = seriesFor(ticker, "Tag", true);
-  assert.equal(smoothed.range, "1J");
-  assert.ok(smoothed.points.length >= 2);
-  assert.ok(smoothed.points.every((point) => point.eur >= 10 && point.eur <= 16));
+test("1W nimmt die letzten sieben Tage, der Tag bleibt der Tag", () => {
+  const month = Array.from({ length: 12 }, (_, index) => ({
+    t: `2026-10-${String(index + 1).padStart(2, "0")}`,
+    eur: 10 + index
+  }));
+  const ticker = { history: { "1M": month, intraday: [{ t: "2026-11-04T10:00:00Z", eur: 1 }] } };
+  const week = seriesFor(ticker, "1W");
+  assert.equal(week.range, "1W");
+  assert.equal(week.points.length, 7);
+  assert.equal(week.points.at(-1).eur, 21);
+  assert.equal(week.points[0].eur, 15);
+  assert.equal(seriesFor(ticker, "5 Min", true).range, "5 Min");
 });
 
 test("Ruhe-Modus ignoriert Beispieldaten", () => {
@@ -519,7 +514,7 @@ test("1 Min behält jeden Punkt, 5 Min den letzten im Block", () => {
   assert.equal(sampled[0].eur, 1);
   assert.equal(sampled.at(-1).eur, 10);
   assert.equal(seriesFor(ticker, "Tag", false).range, "1 Min");
-  assert.equal(seriesFor(ticker, "5 Min", true).range, "1J");
+  assert.equal(seriesFor(ticker, "5 Min").range, "5 Min");
 });
 
 test("Euro-Platz gewinnt erst mit einer echten Minutenreihe", () => {
