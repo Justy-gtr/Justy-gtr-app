@@ -225,7 +225,7 @@
   "comparison": {
     "swarmHitRatePct": null,
     "karlHitRatePct": null,
-    "summary": "Trefferquoten laufen seit dem 4. November und stehen noch auf null. Freitag kaufte der Schwarm den Dip (SPCX ~+8,6 %, RKLB ~+15 % US). So 20:15: drei neue Musk-Retweets (Zwischenwahlen, Chappelle/Kirk, politischer Kommentar), keine neuen Amts-Posts. ESCAPADE-Blue-TMI weiter ohne offizielle Meldung (Gold-Burn Mo 11:51). Karl bleibt selektiv bei TSMC/Henkel und wartet Lock-up 8.12. sowie RKLB-Q3 ab.",
+    "summary": "Karl ist zuversichtlicher bei Henkel, Rocket Lab und SAP: der Schwarm redet dort kaum, er setzt trotzdem eine Zahl. Skeptischer ist er bei TSMC, SpaceX, Nvidia, Broadcom, Tesla, ASML und Microsoft: der Schwarm ist heißer als seine Zahl.",
     "picks": [
       {
         "symbol": "TSM",
@@ -234,9 +234,12 @@
         "karlStance": "halten",
         "swarmStance": "kauf",
         "againstCrowd": false,
+        "vsSwarm": "skeptischer",
+        "karlTake": "Der Schwarm packt TSMC ins KI-Paket. Karl setzt die 7 nur auf die Fabrik, nicht auf die laute Marke.",
+        "karlCounter": "Die Fabrik bleibt der Engpass. Der Schwarm sitzt damit trotzdem am richtigen Glied.",
         "priceEur": 352.25,
         "priceVenue": "Nasdaq in Euro",
-        "note": "Der Schwarm kauft die KI-Namen als Paket. TSMC ist dabei, aber leiser als Nvidia."
+        "note": "Der Schwarm packt TSMC ins KI-Paket. Karl setzt die 7 nur auf die Fabrik, nicht auf die laute Marke."
       },
       {
         "symbol": "SPCX",
@@ -245,9 +248,12 @@
         "karlStance": "halten",
         "swarmStance": "kauf",
         "againstCrowd": false,
+        "vsSwarm": "skeptischer",
+        "karlTake": "Der Schwarm ist laut optimistisch. Karl bleibt bei 7: starkes Geschäft, voller Preis.",
+        "karlCounter": "Das Q3-Wachstum lag bei plus 161 Prozent Umsatz. Der Schwarm gewichtet die Stärke höher als den Preis.",
         "priceEur": 120.98,
         "priceVenue": "in Euro gerechnet",
-        "note": "Farzad ist klar auf der Kaufseite, Sawyer nennt sich Investor. Die laute Richtung bleibt positiv. Karl gibt eine 7 und keine 9."
+        "note": "Der Schwarm ist laut optimistisch. Karl bleibt bei 7: starkes Geschäft, voller Preis."
       },
       {
         "symbol": "HEN3",
@@ -256,9 +262,12 @@
         "karlStance": "halten",
         "swarmStance": "kaum",
         "againstCrowd": true,
+        "vsSwarm": "zuversichtlicher",
+        "karlTake": "Der Schwarm nennt Henkel nicht. Karl setzt eine 6 auf Kleber, Waschmittel und den Euro.",
+        "karlCounter": "Läuft die KI-Welle weiter, bleibt Henkel langsam und kein Treiber.",
         "priceEur": 82.42,
         "priceVenue": "Xetra",
-        "note": "In den geführten X-Konten kommt Henkel nicht vor. Der Schwarm ist bei den KI-Namen, nicht bei Waschmittel und Kleber."
+        "note": "Der Schwarm nennt Henkel nicht. Karl setzt eine 6 auf Kleber, Waschmittel und den Euro."
       },
       {
         "symbol": "NVDA",
@@ -267,9 +276,12 @@
         "karlStance": "vorsichtig",
         "swarmStance": "kauf",
         "againstCrowd": true,
+        "vsSwarm": "skeptischer",
+        "karlTake": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Rechenzentren stehen politisch unter Druck.",
+        "karlCounter": "Die Aufträge können die Politik überholen.",
         "priceEur": 180.56,
         "priceVenue": "Xetra",
-        "note": "Die laute Mehrheit behandelt Nvidia weiter als den Kern der KI-Welle und liegt auf der Kaufseite."
+        "note": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Rechenzentren stehen politisch unter Druck."
       },
       {
         "symbol": "AVGO",
@@ -278,9 +290,12 @@
         "karlStance": "vorsichtig",
         "swarmStance": "kauf",
         "againstCrowd": true,
+        "vsSwarm": "skeptischer",
+        "karlTake": "Der Schwarm stellt Broadcom neben Nvidia. Karl bleibt bei 5: wenige Großkunden, und einer kann selbst fertigen.",
+        "karlCounter": "Springen die Großkunden nicht ab, bleibt der Umsatz sichtbar.",
         "priceEur": 291.15,
         "priceVenue": "Xetra",
-        "note": "Der Schwarm stellt Broadcom neben Nvidia, als zweite KI-Aktie."
+        "note": "Der Schwarm stellt Broadcom neben Nvidia. Karl bleibt bei 5: wenige Großkunden, und einer kann selbst fertigen."
       }
     ],
     "sources": [
