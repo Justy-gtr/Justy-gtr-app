@@ -1,4 +1,4 @@
-import { analyseChart } from "./analyse.js";
+import { analyseChart, levelMarkLabel } from "./analyse.js";
 import { candleColor, scrubLabel } from "./candles.js";
 import { chartAxisLabels, guideLabelsToDraw, guideStyle } from "./logic.js";
 
@@ -113,7 +113,8 @@ function paintCandles(canvas, state, hover) {
     const body = Math.max(1, bottom - top);
     ctx.fillRect(x - bodyW / 2, top, bodyW, body);
   });
-  paintLines(ctx, layout, lines, candles);
+  const captions = paintLines(ctx, layout, lines, candles);
+  paintTouchMarks(ctx, layout, lines, captions);
   const marked = (lines || []).find((line) => line.kind === "mark");
   if (marked) {
     const candle = candles[marked.index];
@@ -162,17 +163,102 @@ function paintLines(ctx, layout, lines, candles) {
       ctx.lineTo(xOf(layout, line.i1 ?? layout.count - 1), y1);
     }
     ctx.stroke();
-    if (line.kind !== "pattern") pending.push({ y: endY, text: style.label, color: style.color });
+    if (line.kind !== "pattern") {
+      const counted = line.kind === "support" || line.kind === "resistance" ? levelMarkLabel(line.kind, line) : style.label;
+      pending.push({ y: endY, text: counted, fallback: style.label, color: style.color, kind: line.kind });
+    }
   }
   ctx.setLineDash([]);
   ctx.font = "10px -apple-system, BlinkMacSystemFont, sans-serif";
   ctx.textAlign = "right";
   ctx.textBaseline = "middle";
+  const captions = [];
+  const right = layout.padL + layout.plotW - 2;
   for (const label of guideLabelsToDraw(pending, priceY)) {
     const y = Math.max(layout.padT + 7, Math.min(label.y, layout.padT + layout.plotH - 7));
+    const full = label.text;
+    const text = ctx.measureText(full).width <= layout.plotW * 0.55 ? full : (label.fallback || full);
+    const width = ctx.measureText(text).width;
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = "rgba(7, 8, 13, 0.88)";
+    ctx.strokeText(text, right, y);
     ctx.fillStyle = label.color;
-    ctx.fillText(label.text, layout.padL + layout.plotW - 2, y);
+    ctx.fillText(text, right, y);
+    captions.push({ kind: label.kind, left: right - width - 2, right: right + 2, top: y - 7, bottom: y + 7 });
   }
+  return captions;
+}
+
+function paintTouchMarks(ctx, layout, lines, captions) {
+  ctx.setLineDash([]);
+  for (const line of lines || []) {
+    if (line.kind !== "support" && line.kind !== "resistance") continue;
+    if (line.eur0 == null) continue;
+    const style = guideStyle(line.kind);
+    if (!style) continue;
+    const y = yOf(layout, line.eur0);
+    const caption = (captions || []).find((item) => item.kind === line.kind);
+    for (const touch of line.touches || []) {
+      if (!Number.isFinite(touch?.index) || touch.index < 0 || touch.index >= layout.count) continue;
+      const x = xOf(layout, touch.index);
+      const covered = caption && x >= caption.left - 6 && x <= caption.right + 4 && y >= caption.top - 4 && y <= caption.bottom + 4;
+      const shift = covered ? (line.kind === "resistance" ? 11 : -11) : 0;
+      paintTouchMark(ctx, x, y + shift, line.kind, touch.outcome, style.color);
+    }
+  }
+}
+
+function paintTouchMark(ctx, x, y, kind, outcome, color) {
+  ctx.save();
+  ctx.lineJoin = "round";
+  ctx.lineCap = "round";
+  if (outcome === "open") {
+    ctx.globalAlpha = 0.4;
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.arc(x, y, 2.2, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.restore();
+    return;
+  }
+  if (outcome === "bounce") {
+    const height = 5;
+    const width = 5;
+    ctx.beginPath();
+    if (kind === "resistance") {
+      ctx.moveTo(x, y + height);
+      ctx.lineTo(x + width / 2, y);
+      ctx.lineTo(x - width / 2, y);
+    } else {
+      ctx.moveTo(x, y - height);
+      ctx.lineTo(x + width / 2, y);
+      ctx.lineTo(x - width / 2, y);
+    }
+    ctx.closePath();
+    ctx.strokeStyle = "rgba(7, 8, 13, 0.9)";
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    ctx.fillStyle = color;
+    ctx.fill();
+    ctx.restore();
+    return;
+  }
+  if (outcome === "broke") {
+    const size = 3;
+    ctx.beginPath();
+    ctx.moveTo(x - size, y - size);
+    ctx.lineTo(x + size, y + size);
+    ctx.moveTo(x + size, y - size);
+    ctx.lineTo(x - size, y + size);
+    ctx.lineWidth = 2.4;
+    ctx.strokeStyle = "rgba(7, 8, 13, 0.9)";
+    ctx.stroke();
+    ctx.lineWidth = 1.25;
+    ctx.strokeStyle = color;
+    ctx.stroke();
+  }
+  ctx.restore();
 }
 
 function showScrub(canvas, candle, firstClose, candles) {

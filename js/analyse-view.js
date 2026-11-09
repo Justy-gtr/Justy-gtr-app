@@ -41,16 +41,23 @@ export function musterCard(analysis) {
 export function guideLegend(lines) {
   const order = ["trend", "support", "resistance", "pattern"];
   const seen = new Set();
+  let marks = false;
   for (const line of lines || []) {
     if (line?.kind && line.kind !== "mark" && guideStyle(line.kind)) seen.add(line.kind);
+    if ((line?.kind === "support" || line?.kind === "resistance") && Array.isArray(line.touches)) marks = true;
   }
   const kinds = order.filter((kind) => seen.has(kind));
-  if (!kinds.length) return "";
-  return `<p class="chart-legend guide-legend">${kinds.map((kind) => {
+  if (!kinds.length && !marks) return "";
+  const items = kinds.map((kind) => {
     const style = guideStyle(kind);
     const cls = kind === "resistance" ? "resist" : kind;
     return `<span><i class="swatch ${cls}" aria-hidden="true"></i>${esc(style.label)}</span>`;
-  }).join("")}</p>`;
+  });
+  if (marks) {
+    items.push(`<span class="mark-key">▲ abgeprallt</span>`);
+    items.push(`<span class="mark-key">× durchgebrochen</span>`);
+  }
+  return `<p class="chart-legend guide-legend">${items.join("")}</p>`;
 }
 
 export function rangeBoard(active, action) {

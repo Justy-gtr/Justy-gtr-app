@@ -1,6 +1,6 @@
 import { MIN_CASES, N_LEGEND, analyzePoints, countRetests, splitPercent } from "./analysis.js";
 import { candlesFor, rangeLabel } from "./candles.js";
-import { formatEUR, maxPoints } from "./logic.js";
+import { formatEUR, guideStyle, maxPoints } from "./logic.js";
 
 const DAY = 86400000;
 
@@ -22,9 +22,9 @@ const TITLES = {
   fallend: "Fallende Linie",
   doppelboden: "Doppelter Boden",
   doppeltop: "Doppeltes Hoch",
-  "ueber-deckel": "Über dem Deckel",
+  "ueber-deckel": "Über dem Widerstand",
   "unter-stuetze": "Unter der Stütze",
-  band: "Zwischen Stütze und Deckel",
+  band: "Zwischen Stütze und Widerstand",
   unklar: "Keine klare Form",
   "kopf-schulter": "Kopf-Schulter",
   "inverse-kopf-schulter": "Umgekehrte Kopf-Schulter",
@@ -448,12 +448,13 @@ export function countLevelBounces(candles, level, side, options = {}) {
   const cap = Math.abs(price) * (options.tolCap ?? 0.008);
   const tolerance = Math.min(cap, Math.max(floor, atr * (options.atrFrac ?? 0.25)));
   const amount = tolerance * 2;
-  const empty = { bounce: 0, broke: 0, open: 0, n: 0, tolerance, amount, look };
+  const empty = { bounce: 0, broke: 0, open: 0, n: 0, tolerance, amount, look, touches: [] };
   if (!Number.isFinite(price) || !(tolerance > 0) || series.length < 2) return empty;
   const held = heldSide(side);
   let bounce = 0;
   let broke = 0;
   let open = 0;
+  const touches = [];
   let index = 0;
   while (index < series.length) {
     if (!candleMeets(series[index], price, tolerance)) {
@@ -466,13 +467,14 @@ export function countLevelBounces(candles, level, side, options = {}) {
     const fromHeld = previous != null && (held === "low" ? previous > price + tolerance : previous < price - tolerance);
     if (fromHeld) {
       const outcome = reactionOf(series, index, end, price, held, amount, look);
+      touches.push({ index, outcome });
       if (outcome === "bounce") bounce += 1;
       else if (outcome === "broke") broke += 1;
       else open += 1;
     }
     index = end + 1;
   }
-  return { bounce, broke, open, n: bounce + broke, tolerance, amount, look };
+  return { bounce, broke, open, n: bounce + broke, tolerance, amount, look, touches };
 }
 
 function candleMeets(candle, level, tolerance) {
@@ -531,6 +533,16 @@ export function describeLevelBounces(stats, side, range) {
   };
 }
 
+/** Caption beside a drawn line, e.g. "Widerstand 3/3" (abgeprallt / abgeschlossene Berührungen). */
+export function levelMarkLabel(kind, stats) {
+  const name = guideStyle(kind)?.label || "";
+  if (kind !== "support" && kind !== "resistance") return "";
+  const n = Number(stats?.n) || 0;
+  const bounce = Number(stats?.bounce) || 0;
+  if (n <= 0) return name;
+  return `${name} ${bounce}/${n}`;
+}
+
 function annotateBounce(level, candles, range) {
   if (!level || (level.kind !== "support" && level.kind !== "resistance") || level.eur == null) return level;
   const side = level.kind === "resistance" ? "high" : "low";
@@ -541,6 +553,21 @@ function annotateBounce(level, candles, range) {
 
 function withBounces(levels, candles, range) {
   return (levels || []).map((level) => annotateBounce(level, candles, range));
+}
+
+/** Same touch list as the sentence, indexed into the candles on the chart. */
+function stampTouches(lines, levels) {
+  return (lines || []).map((line) => {
+    if (line.kind !== "support" && line.kind !== "resistance") return line;
+    const level = (levels || []).find((item) => item.kind === line.kind);
+    const stats = level?.bounce;
+    return {
+      ...line,
+      touches: stats?.touches || [],
+      bounce: stats?.bounce || 0,
+      n: stats?.n || 0
+    };
+  });
 }
 
 function levelsFrom(shape, history, spec) {
@@ -589,24 +616,26 @@ export function analyseCandles(visible, history, range) {
     const outcome = outcomeCopy(shape.id, share, detailFor(range, spec));
     const mark = namedCandle(candles);
     const legend = [{ kind: "pattern", label: shape.legend || TITLES[shape.id] }];
+    const levels = withBounces(levelsFrom(shape, past, spec), candles, range);
     return {
       title: TITLES[shape.id] || TITLES.unklar,
       patternId: shape.id,
-      lines: shape.lines,
+      lines: stampTouches(shape.lines, levels),
       legend,
       outcome: { ...outcome, show: share.show, n: share.n, pct: share.pct },
-      levels: withBounces(levelsFrom(shape, past, spec), past, range),
+      levels,
       mark: !mark || mark.id === shape.id ? null : mark.id
     };
   }
   const base = analyzePoints(closes(candles), closes(past), spec, range);
   const candle = base.patternId === "unklar" && !base.lines.length ? namedCandle(candles) : null;
   if (!candle) {
+    const levels = withBounces((base.levels || []).map(withPrice), candles, range);
     return {
       ...base,
       title: TITLES[base.patternId] || base.title,
-      lines: base.lines || [],
-      levels: withBounces((base.levels || []).map(withPrice), past, range)
+      lines: stampTouches(base.lines || [], levels),
+      levels
     };
   }
     const share = pack(countNamed(past, candle.id, spec));

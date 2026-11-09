@@ -121,8 +121,11 @@ test("Echte Reihen erfinden keine Prozentzahl und keinen Rat", () => {
         assert.match(result.outcome.sentence, /keine Prozentzahl/i);
         assert.equal(/%/.test(result.outcome.sentence), false);
       }
+      assert.equal(text.includes("Deckel"), false, `${ticker.symbol} ${range}`);
       for (const level of result.levels) {
         assert.ok(["support", "resistance", "trend"].includes(level.kind));
+        assert.equal(String(level.title || "").includes("Deckel"), false);
+        if (level.kind === "resistance") assert.match(level.title, /Widerstand/);
         if (level.show) {
           assert.ok(level.n >= MIN_CASES);
           assert.equal((level.pct.bounce || 0) + (level.pct.broke || 0), 100);
