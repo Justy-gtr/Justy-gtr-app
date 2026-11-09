@@ -18,7 +18,8 @@ export const FILES = [
   "track_record",
   "alerts",
   "scenarios",
-  "companies"
+  "companies",
+  "moonshots"
 ];
 
 export async function loadData() {

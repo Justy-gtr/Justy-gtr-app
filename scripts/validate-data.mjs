@@ -69,7 +69,7 @@ const files = [
   "meta.json", "prices.json", "calendar.json", "posts.json", "favorites.json", "crowd.json",
   "promises.json", "production.json", "insiders.json", "briefing.json", "weekly.json",
   "daily_question.json", "glossary.json", "track_record.json", "alerts.json",
-  "scenarios.json", "companies.json", "seasonality.json"
+  "scenarios.json", "companies.json", "seasonality.json", "moonshots.json"
 ];
 const loaded = Object.fromEntries(files.map((name) => [name, read(name)]));
 
@@ -335,6 +335,68 @@ if (seasonality) {
     const notes = new Set([EARLY_NOTE_DE, EARLY_NOTE_US, EARLY_NOTE_MIX]);
     if (pack.earlyNote != null && !notes.has(pack.earlyNote)) fail(`seasonality.${symbol}.earlyNote`);
   }
+}
+
+function walkStrings(value, visit) {
+  if (typeof value === "string") visit(value);
+  else if (Array.isArray(value)) value.forEach((item) => walkStrings(item, visit));
+  else if (value && typeof value === "object") Object.values(value).forEach((item) => walkStrings(item, visit));
+}
+
+function sideRow(block, label, withSides) {
+  if (!block || !Number.isInteger(block.n) || block.n < 0) {
+    fail(`${label}.n`);
+    return;
+  }
+  if (block.showPct !== (block.n >= 7)) fail(`${label}.showPct`);
+  if (!withSides) {
+    if (!Number.isInteger(block.wide) || block.wide < 0 || block.wide > block.n) fail(`${label}.wide`);
+    if (block.n >= 7 && (!Number.isInteger(block.sharePct) || block.sharePct < 0 || block.sharePct > 100)) {
+      fail(`${label}.sharePct`);
+    }
+    return;
+  }
+  if (!Number.isInteger(block.up) || block.up < 0 || block.up > block.n) fail(`${label}.up`);
+  if (!Number.isInteger(block.down) || block.down < 0 || block.down > block.n) fail(`${label}.down`);
+  if (block.up + block.down > block.n) fail(`${label} up+down`);
+}
+
+const moon = loaded["moonshots.json"];
+const ADVICE = /\b(kaufen|verkaufen)\b|empfehlung|wird steigen/i;
+if (!moon || moon.example === true) fail("moonshots.example");
+if (moon?.disclaimer !== "Keine Anlageberatung. Hebel kann Totalverlust bedeuten. Vergangenheit, keine Vorhersage.") {
+  fail("moonshots.disclaimer");
+}
+if (!Array.isArray(moon?.candidates) || moon.candidates.length !== 3) fail("moonshots.candidates");
+if (typeof moon?.fx?.rate !== "number") fail("moonshots.fx");
+const seenSymbols = new Set();
+for (const item of moon?.candidates || []) {
+  const label = `moonshots.${item?.symbol || "?"}`;
+  if (["TSLA", "RKLB", "SPCX"].includes(item?.symbol)) fail(`${label} schon in der App`);
+  if (seenSymbols.has(item?.symbol)) fail(`${label} doppelt`);
+  seenSymbols.add(item?.symbol);
+  if (!item?.name || !item?.id) fail(`${label}.name`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(item?.catalyst?.date || "")) fail(`${label}.catalyst.date`);
+  if (item?.catalyst?.timezone !== "Europe/Berlin") fail(`${label}.catalyst.timezone`);
+  if (!Array.isArray(item?.for) || item.for.length < 2 || item.for.length > 3) fail(`${label}.for`);
+  if (!Array.isArray(item?.against) || item.against.length < 2 || item.against.length > 3) fail(`${label}.against`);
+  if (item?.leverage?.available !== true) fail(`${label}.leverage`);
+  if (!/^[A-Z]{2}[A-Z0-9]{10}$/.test(item?.leverage?.isin || "")) fail(`${label}.isin`);
+  if (typeof item?.priceEur !== "number" || typeof item?.changePct !== "number") fail(`${label}.priceEur`);
+  if (!Array.isArray(item?.sparkline) || item.sparkline.length < 2) fail(`${label}.sparkline`);
+  sourcesOk(item?.sources, label);
+  if (!isUrl(item?.marketSource?.url)) fail(`${label}.marketSource`);
+  sideRow(item?.history?.catalyst, `${label}.catalyst`, true);
+  sideRow(item?.history?.days, `${label}.days`, false);
+  if (!Array.isArray(item?.history?.moves) || item.history.moves.length !== item.history.catalyst.n) {
+    fail(`${label}.moves`);
+  }
+  for (const move of item?.history?.moves || []) {
+    if (typeof move?.pct !== "number" || !/^\d{4}-\d{2}-\d{2}$/.test(move?.date || "")) fail(`${label}.move`);
+  }
+  walkStrings(item, (text) => {
+    if (ADVICE.test(text)) fail(`${label} verbotenes Wort`);
+  });
 }
 
 const iconFiles = [

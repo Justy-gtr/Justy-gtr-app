@@ -115,20 +115,24 @@ test("Echte Daten: Charts bleiben ohne Punkt, wenn sich nur der Kurs bewegt", ()
     calendar: read("calendar"),
     crowd: read("crowd"),
     favorites: read("favorites"),
-    prices: read("prices")
+    prices: read("prices"),
+    moonshots: read("moonshots")
   };
   const store = { answers: {} };
   const before = tabSignals(data, store);
   assert.equal(before.charts.length, 0);
-  assert.equal(before.mehr.length, 0);
+  assert.ok(before.mehr.length >= 1);
   assert.equal(before.heute.length, 1);
   assert.ok(before.posts.length > 0);
   assert.ok(before.kalender.length > 0);
   assert.ok(before.schwarm.length > 0);
   data.prices.tickers[0].priceEur = 1;
   data.prices.tickers[0].changePct = -3;
+  data.moonshots.candidates[0].priceEur = 1;
+  data.moonshots.candidates[0].changePct = -4;
   const after = tabSignals(data, store);
   assert.deepEqual(after.charts, []);
+  assert.deepEqual(after.mehr, before.mehr);
   assert.deepEqual(after.posts, before.posts);
   assert.deepEqual(after.kalender, before.kalender);
   assert.deepEqual(after.schwarm, before.schwarm);

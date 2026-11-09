@@ -456,6 +456,13 @@ button.card { border-radius: 24px; }
 .guide-legend { margin: 2px 10px 0; font-size: 11px; gap: 6px 12px; }
 .guide-legend .swatch { width: 7px; height: 7px; border-radius: 50%; }
 
+.moon-price { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.moon-price .price-value { font-size: 28px; }
+.moon h3 { font-size: 22px; letter-spacing: -0.03em; }
+.moon-points { margin: 0; padding-left: 1.15em; }
+.moon-points li { margin: 3px 0; }
+.moon-stat { font-variant-numeric: tabular-nums; }
+.moon-isin { overflow-wrap: anywhere; }
 .menu { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .menu .card { min-height: 96px; }
 .menu span { color: var(--muted); font-size: 13px; }

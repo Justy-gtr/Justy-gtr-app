@@ -1,0 +1,569 @@
+{
+  "example": false,
+  "disclaimer": "Keine Anlageberatung. Hebel kann Totalverlust bedeuten. Vergangenheit, keine Vorhersage.",
+  "asOf": "2026-11-06T22:00:01+01:00",
+  "fx": {
+    "pair": "EURUSD",
+    "rate": 1.1199,
+    "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
+    "asOf": "2026-11-09T14:20:31+01:00",
+    "source": {
+      "title": "Yahoo Finance EURUSD=X",
+      "url": "https://finance.yahoo.com/quote/EURUSD=X"
+    }
+  },
+  "candidates": [
+    {
+      "id": "nvda-2026-11-17",
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "usdSymbol": "NVDA",
+      "for": [
+        "Zahlen am 17. Nov. 2026, etwa 22:20 Uhr Berlin. Gespräch um 23:00.",
+        "Am 26. Aug. Umsatz 96,2 Mrd. USD, davon 89,0 Mrd. im Rechenzentrum.",
+        "Eigene Spanne für dieses Quartal: 108 Mrd. USD, plus oder minus 2 %. China-Rechenzentren sind nicht drin."
+      ],
+      "against": [
+        "Die Spanne liegt etwa 12 % über den 96,2 Mrd. des letzten Quartals.",
+        "Marge im Ausblick 74 %, nach 75 % im letzten Quartal.",
+        "Nach Zahlen lief der Kurs in beide Richtungen. Die Zählung steht unten."
+      ],
+      "catalyst": {
+        "label": "Zahlen zum 3. Quartal FY2027",
+        "date": "2026-11-17",
+        "time": "22:20",
+        "timezone": "Europe/Berlin",
+        "detail": "Zahlen etwa 22:20, Gespräch 23:00 Berliner Zeit."
+      },
+      "pastCatalysts": {
+        "kind": "earnings_after_close",
+        "dates": [
+          "2024-11-20",
+          "2025-02-26",
+          "2025-05-28",
+          "2025-08-27",
+          "2025-11-19",
+          "2026-02-25",
+          "2026-05-20",
+          "2026-08-26"
+        ]
+      },
+      "history": {
+        "catalystLabel": "Nach Zahlen",
+        "daysLabel": "Große Tage",
+        "note": "Schluss am Zahlentag bis zum nächsten Handelstag.",
+        "from": "2024-09-27",
+        "to": "2026-11-06",
+        "catalyst": {
+          "n": 8,
+          "up": 1,
+          "down": 2,
+          "showPct": true
+        },
+        "days": {
+          "n": 529,
+          "wide": 27,
+          "sharePct": 5,
+          "showPct": true
+        },
+        "moves": [
+          {
+            "date": "2024-11-20",
+            "base": "2024-11-20",
+            "reaction": "2024-11-21",
+            "pct": 0.53
+          },
+          {
+            "date": "2025-02-26",
+            "base": "2025-02-26",
+            "reaction": "2025-02-27",
+            "pct": -8.48
+          },
+          {
+            "date": "2025-05-28",
+            "base": "2025-05-28",
+            "reaction": "2025-05-29",
+            "pct": 3.25
+          },
+          {
+            "date": "2025-08-27",
+            "base": "2025-08-27",
+            "reaction": "2025-08-28",
+            "pct": -0.79
+          },
+          {
+            "date": "2025-11-19",
+            "base": "2025-11-19",
+            "reaction": "2025-11-20",
+            "pct": -3.15
+          },
+          {
+            "date": "2026-02-25",
+            "base": "2026-02-25",
+            "reaction": "2026-02-26",
+            "pct": -5.46
+          },
+          {
+            "date": "2026-05-20",
+            "base": "2026-05-20",
+            "reaction": "2026-05-21",
+            "pct": -1.77
+          },
+          {
+            "date": "2026-08-26",
+            "base": "2026-08-26",
+            "reaction": "2026-08-27",
+            "pct": 8.74
+          }
+        ]
+      },
+      "leverage": {
+        "available": true,
+        "kind": "Knock-out",
+        "issuer": "HSBC",
+        "isin": "DE000HT5H997",
+        "underlyingIsin": "US67066G1040",
+        "checked": "2026-11-09",
+        "how": "HSBC-Basisinformationsblatt vom 9. Nov. 2026. Trade Republic listet auf der Derivate-Seite Knock-outs, Optionsscheine und Faktor-Zertifikate zur Basiswert-ISIN US67066G1040."
+      },
+      "sources": [
+        {
+          "title": "NVIDIA: Gespräch zu den Zahlen am 17. Nov.",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx"
+        },
+        {
+          "title": "NVIDIA: Zahlen zum 2. Quartal FY2027",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+        },
+        {
+          "title": "NVIDIA: Zahlen am 20. Nov. 2024",
+          "url": "https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2025/"
+        },
+        {
+          "title": "Wall Street Horizon: letzte Zahlentermine",
+          "url": "https://www.wallstreethorizon.com/nvidia-earnings-calendar"
+        },
+        {
+          "title": "Historische Zahlentermine NVIDIA",
+          "url": "https://www.historicalearnings.com/nvda.html"
+        },
+        {
+          "title": "HSBC-Basisinformationsblatt DE000HT5H997",
+          "url": "https://kid.hsbc-zertifikate.de/DE/DE000HT5H997.pdf"
+        },
+        {
+          "title": "Trade Republic: Derivate",
+          "url": "https://app.traderepublic.com/browse/derivative"
+        },
+        {
+          "title": "Trade Republic: Emittenten der Derivate",
+          "url": "https://support.traderepublic.com/de-de/87"
+        }
+      ],
+      "priceUsd": 186.64,
+      "priceEur": 166.22,
+      "previousCloseUsd": 181.6,
+      "changePct": 2.78,
+      "eurMethod": "usd_div_eurusd",
+      "sparkline": [
+        212.59,
+        212,
+        205.55,
+        204.48,
+        202.79,
+        203.95,
+        197.68,
+        193.73,
+        190.96,
+        193.56,
+        192.82,
+        197.58,
+        189.11,
+        188,
+        192.56,
+        195.05,
+        193.52,
+        191.52,
+        183,
+        181.11,
+        184.68,
+        178.57,
+        161.64,
+        166.22
+      ],
+      "asOf": "2026-11-06T22:00:00+01:00",
+      "marketSource": {
+        "title": "Yahoo Finance NVDA",
+        "url": "https://finance.yahoo.com/quote/NVDA"
+      }
+    },
+    {
+      "id": "ttwo-2026-11-19",
+      "symbol": "TTWO",
+      "name": "Take-Two",
+      "usdSymbol": "TTWO",
+      "for": [
+        "Start am 19. Nov. 2026, PS5 und Xbox, 79,99 USD.",
+        "Vorbestellungen seit dem 25. Juni 2026.",
+        "Rockstar nennt den Termin auf der eigenen Seite."
+      ],
+      "against": [
+        "Der Termin rutschte schon einmal: vom 26. Mai 2026 auf den 19. Nov.",
+        "Reuters schrieb am 6. Nov. 2025 von mehr als 7 % im Nachhandel.",
+        "Die Zählung unten ist nach Zahlen. Der nächste Termin ist ein Start."
+      ],
+      "catalyst": {
+        "label": "Start von Grand Theft Auto VI",
+        "date": "2026-11-19",
+        "time": null,
+        "timezone": "Europe/Berlin",
+        "detail": "PS5 und Xbox Series X|S. Uhrzeit hat Rockstar nicht genannt."
+      },
+      "pastCatalysts": {
+        "kind": "earnings_after_close",
+        "dates": [
+          "2024-11-06",
+          "2025-02-06",
+          "2025-05-15",
+          "2025-08-07",
+          "2025-11-06",
+          "2026-02-03",
+          "2026-05-21",
+          "2026-08-07"
+        ]
+      },
+      "history": {
+        "catalystLabel": "Nach Zahlen",
+        "daysLabel": "Große Tage",
+        "note": "Schluss am Zahlentag bis zum nächsten Handelstag. Der nächste Termin ist ein Start, kein Zahlentag.",
+        "from": "2024-09-27",
+        "to": "2026-11-06",
+        "catalyst": {
+          "n": 8,
+          "up": 2,
+          "down": 2,
+          "showPct": true
+        },
+        "days": {
+          "n": 529,
+          "wide": 15,
+          "sharePct": 3,
+          "showPct": true
+        },
+        "moves": [
+          {
+            "date": "2024-11-06",
+            "base": "2024-11-06",
+            "reaction": "2024-11-07",
+            "pct": 7.53
+          },
+          {
+            "date": "2025-02-06",
+            "base": "2025-02-06",
+            "reaction": "2025-02-07",
+            "pct": 14.03
+          },
+          {
+            "date": "2025-05-15",
+            "base": "2025-05-15",
+            "reaction": "2025-05-16",
+            "pct": -2.41
+          },
+          {
+            "date": "2025-08-07",
+            "base": "2025-08-07",
+            "reaction": "2025-08-08",
+            "pct": -4.03
+          },
+          {
+            "date": "2025-11-06",
+            "base": "2025-11-06",
+            "reaction": "2025-11-07",
+            "pct": -8.08
+          },
+          {
+            "date": "2026-02-03",
+            "base": "2026-02-03",
+            "reaction": "2026-02-04",
+            "pct": -5.38
+          },
+          {
+            "date": "2026-05-21",
+            "base": "2026-05-21",
+            "reaction": "2026-05-22",
+            "pct": -4.42
+          },
+          {
+            "date": "2026-08-07",
+            "base": "2026-08-07",
+            "reaction": "2026-08-10",
+            "pct": 2.87
+          }
+        ]
+      },
+      "leverage": {
+        "available": true,
+        "kind": "Knock-out",
+        "issuer": "HSBC",
+        "isin": "DE000HF0H8S6",
+        "underlyingIsin": "US8740541094",
+        "checked": "2026-11-09",
+        "how": "HSBC-Basisinformationsblatt vom 9. Nov. 2026 auf Take-Two-Aktien. Trade Republic listet auf der Derivate-Seite Knock-outs, Optionsscheine und Faktor-Zertifikate zur Basiswert-ISIN US8740541094."
+      },
+      "sources": [
+        {
+          "title": "Rockstar: Start am 19. Nov. 2026",
+          "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026"
+        },
+        {
+          "title": "Take-Two: Vorbestellungen ab 25. Juni",
+          "url": "https://taketwointeractivesoftwareinc.gcs-web.com/news-releases/news-release-details/rockstar-games-announces-pre-orders-grand-theft-auto-vi/"
+        },
+        {
+          "title": "Reuters: zweite Verschiebung, 6. Nov. 2025",
+          "url": "https://www.reuters.com/business/media-telecom/take-two-interactive-further-delays-gta-vi-november-next-year-2025-11-06/"
+        },
+        {
+          "title": "Take-Two: alte Zahlentermine",
+          "url": "https://take2-games.com/ir/quarterly-earnings"
+        },
+        {
+          "title": "Nasdaq: letzte Zahlentermine TTWO",
+          "url": "https://api.nasdaq.com/api/company/TTWO/earnings-surprise"
+        },
+        {
+          "title": "HSBC-Basisinformationsblatt DE000HF0H8S6",
+          "url": "https://kid.hsbc-zertifikate.de/DE/DE000HF0H8S6.pdf"
+        },
+        {
+          "title": "Trade Republic: Derivate",
+          "url": "https://app.traderepublic.com/browse/derivative"
+        },
+        {
+          "title": "Trade Republic: Emittenten der Derivate",
+          "url": "https://support.traderepublic.com/de-de/87"
+        }
+      ],
+      "priceUsd": 214.87,
+      "priceEur": 191.37,
+      "previousCloseUsd": 213.36,
+      "changePct": 0.71,
+      "eurMethod": "usd_div_eurusd",
+      "sparkline": [
+        179.97,
+        182.13,
+        186.72,
+        190.35,
+        187.11,
+        178.79,
+        179.75,
+        186.73,
+        183.07,
+        182.71,
+        184.11,
+        183.5,
+        185.19,
+        181.52,
+        181.28,
+        180.14,
+        175.47,
+        173.35,
+        170.06,
+        172.18,
+        174.22,
+        186.4,
+        189.91,
+        191.37
+      ],
+      "asOf": "2026-11-06T22:00:01+01:00",
+      "marketSource": {
+        "title": "Yahoo Finance TTWO",
+        "url": "https://finance.yahoo.com/quote/TTWO"
+      }
+    },
+    {
+      "id": "mrvl-2026-12-01",
+      "symbol": "MRVL",
+      "name": "Marvell",
+      "usdSymbol": "MRVL",
+      "for": [
+        "Zahlen am 1. Dez. 2026, 22:30 Uhr Berlin.",
+        "Am 2. Nov. fester Tausch: 4,5 Marvell-Aktien je Lumentum-Aktie.",
+        "Marvell-Seite behält etwa 67 %. Abschluss geplant im 1. Halbjahr 2028."
+      ],
+      "against": [
+        "Ohne die Stimmen beider Seiten und ohne Kartellfreigabe kein Abschluss.",
+        "Die Lumentum-Seite bekommt etwa 33 %, in neuen Marvell-Aktien.",
+        "Der Aufschlag lag am 28. Okt. schon bei etwa 23,9 % gegen die Schlüsse davor."
+      ],
+      "catalyst": {
+        "label": "Zahlen zum 3. Quartal FY2027",
+        "date": "2026-12-01",
+        "time": "22:30",
+        "timezone": "Europe/Berlin",
+        "detail": "Gespräch 13:30 Uhr Pacific, das ist 22:30 Berliner Zeit."
+      },
+      "pastCatalysts": {
+        "kind": "earnings_after_close",
+        "dates": [
+          "2024-12-03",
+          "2025-03-05",
+          "2025-05-29",
+          "2025-08-28",
+          "2025-12-02",
+          "2026-03-05",
+          "2026-05-27",
+          "2026-08-27"
+        ]
+      },
+      "history": {
+        "catalystLabel": "Nach Zahlen",
+        "daysLabel": "Große Tage",
+        "note": "Schluss am Zahlentag bis zum nächsten Handelstag.",
+        "from": "2024-09-27",
+        "to": "2026-11-06",
+        "catalyst": {
+          "n": 8,
+          "up": 3,
+          "down": 4,
+          "showPct": true
+        },
+        "days": {
+          "n": 529,
+          "wide": 108,
+          "sharePct": 20,
+          "showPct": true
+        },
+        "moves": [
+          {
+            "date": "2024-12-03",
+            "base": "2024-12-03",
+            "reaction": "2024-12-04",
+            "pct": 23.19
+          },
+          {
+            "date": "2025-03-05",
+            "base": "2025-03-05",
+            "reaction": "2025-03-06",
+            "pct": -19.81
+          },
+          {
+            "date": "2025-05-29",
+            "base": "2025-05-29",
+            "reaction": "2025-05-30",
+            "pct": -5.55
+          },
+          {
+            "date": "2025-08-28",
+            "base": "2025-08-28",
+            "reaction": "2025-08-29",
+            "pct": -18.59
+          },
+          {
+            "date": "2025-12-02",
+            "base": "2025-12-02",
+            "reaction": "2025-12-03",
+            "pct": 7.87
+          },
+          {
+            "date": "2026-03-05",
+            "base": "2026-03-05",
+            "reaction": "2026-03-06",
+            "pct": 18.35
+          },
+          {
+            "date": "2026-05-27",
+            "base": "2026-05-27",
+            "reaction": "2026-05-28",
+            "pct": 3.09
+          },
+          {
+            "date": "2026-08-27",
+            "base": "2026-08-27",
+            "reaction": "2026-08-28",
+            "pct": -10.28
+          }
+        ]
+      },
+      "leverage": {
+        "available": true,
+        "kind": "Knock-out",
+        "issuer": "HSBC",
+        "isin": "DE000HM4DE28",
+        "underlyingIsin": "US5738741041",
+        "checked": "2026-11-09",
+        "how": "HSBC-Basisinformationsblatt vom 9. Nov. 2026 auf Marvell-Technology-Aktien. Trade Republic listet auf der Derivate-Seite Knock-outs, Optionsscheine und Faktor-Zertifikate zur Basiswert-ISIN US5738741041."
+      },
+      "sources": [
+        {
+          "title": "Marvell: Gespräch am 1. Dez. 2026",
+          "url": "https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results"
+        },
+        {
+          "title": "Marvell und Lumentum: Tausch 4,5 zu 1",
+          "url": "https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity"
+        },
+        {
+          "title": "Marvell: Zahlen am 2. Dez. 2025",
+          "url": "https://investor.marvell.com/news-events/ir-calendar/detail/20251202-q3-2026-marvell-technology-inc-earnings-conference-call"
+        },
+        {
+          "title": "Marvell: Zahlen am 5. März 2026",
+          "url": "https://investor.marvell.com/news-events/press-releases/detail/1006/marvell-technology-inc-announces-conference-call-to-review-fourth-fiscal-quarter-and-fiscal-year-2026-financial-results"
+        },
+        {
+          "title": "Historische Zahlentermine Marvell",
+          "url": "https://www.historicalearnings.com/mrvl.html"
+        },
+        {
+          "title": "HSBC-Basisinformationsblatt DE000HM4DE28",
+          "url": "https://kid.hsbc-zertifikate.de/DE/DE000HM4DE28.pdf"
+        },
+        {
+          "title": "Trade Republic: Derivate",
+          "url": "https://app.traderepublic.com/browse/derivative"
+        },
+        {
+          "title": "Trade Republic: Emittenten der Derivate",
+          "url": "https://support.traderepublic.com/de-de/87"
+        }
+      ],
+      "priceUsd": 141.2,
+      "priceEur": 125.75,
+      "previousCloseUsd": 133.55,
+      "changePct": 5.73,
+      "eurMethod": "usd_div_eurusd",
+      "sparkline": [
+        255.04,
+        254.15,
+        244.95,
+        245.5,
+        238.22,
+        239.84,
+        219.1,
+        215.14,
+        203.18,
+        211.39,
+        214.15,
+        217.86,
+        199.15,
+        203.64,
+        208.41,
+        217.98,
+        226.11,
+        195.72,
+        175.63,
+        153.64,
+        153.65,
+        142.59,
+        118.87,
+        125.75
+      ],
+      "asOf": "2026-11-06T22:00:01+01:00",
+      "marketSource": {
+        "title": "Yahoo Finance MRVL",
+        "url": "https://finance.yahoo.com/quote/MRVL"
+      }
+    }
+  ]
+}

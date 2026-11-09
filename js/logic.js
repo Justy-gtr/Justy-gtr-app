@@ -56,6 +56,18 @@ export function formatPct(value) {
   return `${body} %`;
 }
 
+/** Prozent erst ab sieben Fällen. Darunter nur n, wie bei der Saisonalität. */
+export function historySentence(label, stats, threshold = 5) {
+  const n = Number(stats?.n);
+  if (!Number.isInteger(n) || n < 7) {
+    return `${label}: n = ${Number.isInteger(n) && n > 0 ? n : 0}, keine Prozentzahl.`;
+  }
+  if (stats.up != null && stats.down != null) {
+    return `${label}: ${stats.up} von ${n} Mal ≥ +${threshold} %, ${stats.down} von ${n} Mal ≤ −${threshold} %. n = ${n}.`;
+  }
+  return `${label}: ${stats.sharePct} % der Tage mit Bewegung von mindestens ${threshold} %. n = ${n}.`;
+}
+
 function roundHalfAway(value, digits) {
   const factor = 10 ** digits;
   const sign = value < 0 ? -1 : 1;
@@ -1028,8 +1040,24 @@ function schwarmSignals(data) {
   return uniqSorted([...voices, ...investors, summary]);
 }
 
+/** Moonshot-Kandidaten. Der Kurs zählt nicht: der ändert sich jeden Handelstag. */
+function mehrSignals(data) {
+  return uniqSorted((data?.moonshots?.candidates || []).map((item) => {
+    if (!item?.id) return "";
+    return [
+      "moonshot",
+      item.id,
+      item.catalyst?.date || "",
+      item.catalyst?.label || "",
+      (item.for || []).join("|"),
+      (item.against || []).join("|")
+    ].join("\u001f");
+  }));
+}
+
 /**
  * What can light a tab dot. Charts stay empty: a moving price is not new content.
+ * Mehr lights when a Moonshot text or its date is new.
  */
 export function tabSignals(data, store) {
   return {
@@ -1038,7 +1066,7 @@ export function tabSignals(data, store) {
     posts: postSignals(data),
     schwarm: schwarmSignals(data),
     charts: [],
-    mehr: []
+    mehr: mehrSignals(data)
   };
 }
 
