@@ -64,15 +64,49 @@
   text-overflow: clip;
 }
 .n-legend { color: var(--muted); font-size: 13px; }
-.analysis .level-head .swatch {
-  width: 16px;
-  height: 3px;
-  border-radius: 2px;
+.guide-legend .swatch.trend,
+.guide-legend .swatch.support,
+.guide-legend .swatch.resist,
+.analysis .swatch.trend,
+.analysis .swatch.support,
+.analysis .swatch.resist,
+.analysis .level-head .swatch.trend,
+.analysis .level-head .swatch.support,
+.analysis .level-head .swatch.resist {
+  width: 18px;
+  height: 8px;
+  border-radius: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 18px 2px;
 }
-.analysis .level-head .swatch.support { background: #5dbebf; color: #5dbebf; }
-.analysis .level-head .swatch.resist { background: #e7a29a; color: #e7a29a; }
+.guide-legend .swatch.trend,
+.analysis .swatch.trend,
+.analysis .level-head .swatch.trend {
+  color: #b4b6f2;
+  background-image: repeating-linear-gradient(90deg, #b4b6f2 0 4px, transparent 4px 7px);
+}
+.guide-legend .swatch.support,
+.analysis .swatch.support,
+.analysis .level-head .swatch.support {
+  color: #5dbebf;
+  background-image: repeating-linear-gradient(90deg, #5dbebf 0 3px, transparent 3px 6px);
+}
+.analysis .level-head .swatch.resist,
+.guide-legend .swatch.resist,
+.analysis .swatch.resist {
+  color: #e7a29a;
+  background-image: repeating-linear-gradient(90deg, #e7a29a 0 3px, transparent 3px 6px);
+}
 .guide-legend .mark-key { white-space: nowrap; letter-spacing: -0.01em; }
+.guide-legend .mark-break {
+  flex-basis: 100%;
+  white-space: normal;
+  line-height: 1.35;
+}
 .bounce-count { margin-top: 4px; }
+.bounce-plain { margin: 8px 0 0; color: var(--muted); font-size: 13px; line-height: 1.35; }
 .bounce-note { margin: 2px 0 0; color: var(--muted); font-size: 13px; line-height: 1.35; }
 .season-head {
   display: flex;
