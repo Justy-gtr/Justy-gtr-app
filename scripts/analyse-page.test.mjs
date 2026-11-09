@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
-import { BOUNCE_FEW, BOUNCE_LOOK, N_LEGEND, analyseCandles, analyseChart, analyseText, countLevelBounces, describeLevelBounces, detectShape } from "../js/analyse.js";
-import { musterCard, rangeBoard, renderAnalyse } from "../js/analyse-view.js";
+import { BOUNCE_FEW, BOUNCE_LOOK, N_LEGEND, analyseCandles, analyseChart, analyseText, countLevelBounces, describeLevelBounces, detectShape, levelMarkLabel } from "../js/analyse.js";
+import { guideLegend, musterCard, rangeBoard, renderAnalyse } from "../js/analyse-view.js";
 import { MIN_CASES, analysisText, chartAnalysis } from "../js/analysis.js";
 import { ANALYSE_RANGES, bucketCandles, candleColor, candlesFor, formatMove, isUsefulFourHour, scrubLabel } from "../js/candles.js";
 import { chartAxisLabels, guideLabelsToDraw, scrubDelta, seriesFor, VISIBLE_BARS } from "../js/logic.js";
@@ -414,6 +414,19 @@ test("Berührungen einer Linie: Nachbarn sind ein Fall, Abpraller und Bruch brau
   assert.equal(stats.broke, 1);
   assert.equal(stats.open, 1);
   assert.equal(stats.n, 3);
+  assert.deepEqual(stats.touches, [
+    { index: 40, outcome: "bounce" },
+    { index: 45, outcome: "broke" },
+    { index: 52, outcome: "open" },
+    { index: 61, outcome: "bounce" }
+  ]);
+  assert.equal(stats.touches.filter((touch) => touch.outcome === "bounce").length, stats.bounce);
+  assert.equal(stats.touches.filter((touch) => touch.outcome === "broke").length, stats.broke);
+  assert.equal(stats.touches.filter((touch) => touch.outcome === "open").length, stats.open);
+  assert.equal(levelMarkLabel("resistance", { bounce: 3, n: 3 }), "Widerstand 3/3");
+  assert.equal(levelMarkLabel("support", { bounce: 1, broke: 1, n: 2 }), "Unterstützung 1/2");
+  assert.equal(levelMarkLabel("support", { bounce: 0, n: 0 }), "Unterstützung");
+  assert.equal(levelMarkLabel("trend", { bounce: 4, n: 4 }), "");
 
   const onTime = [flat(0, 103), wick(1, 100, 100.2, 100.1)];
   for (let index = 0; index < BOUNCE_LOOK - 1; index += 1) onTime.push(flat(index + 2, 100.45));
@@ -472,7 +485,7 @@ test("Die Musterkarte zeigt die Abpraller direkt an der Stütze", () => {
       bounceDetail: "Berührung: der Kurs kommt der Linie bis auf etwa 0,3 % nahe. 5-Minuten-Reihe."
     }, {
       kind: "resistance",
-      title: "Nächster Deckel",
+      title: "Nächster Widerstand",
       eur: 126.95,
       sentence: "Zu wenig ähnliche Berührungen (n = 1). Keine Prozentzahl.",
       bounceSentence: "Abgeprallt nach unten in 1 von 1 Fall · durchgebrochen 0 (n = 1). Wenige Fälle.",
@@ -481,6 +494,10 @@ test("Die Musterkarte zeigt die Abpraller direkt an der Stütze", () => {
   };
   const html = musterCard(analysis);
   assert.match(html, /Nächste Stütze/);
+  assert.match(html, /Nächster Widerstand/);
+  assert.match(html, /swatch support/);
+  assert.match(html, /swatch resist/);
+  assert.equal(html.includes("Deckel"), false);
   assert.match(html, /Abgeprallt in 2 von 2 Fällen · durchgebrochen 0 \(n = 2\)\. Wenige Fälle\./);
   assert.match(html, /Abgeprallt nach unten in 1 von 1 Fall/);
   assert.match(html, /bounce-note/);
@@ -500,6 +517,62 @@ test("Die Musterkarte zeigt die Abpraller direkt an der Stütze", () => {
     else assert.equal(level.bounceSentence.includes("Wenige Fälle"), false);
   }
   assert.equal(ADVICE.test(analyseText(result)), false);
+  assert.equal(page.includes("Deckel"), false);
+  assert.match(page, /Nächster Widerstand/);
+  assert.match(page, /▲ abgeprallt/);
+  assert.match(page, /× durchgebrochen/);
+});
+
+test("Markierungen auf der Kerze sind genau die gezählten Berührungen", () => {
+  const prices = JSON.parse(fs.readFileSync("data/prices.json", "utf8"));
+  const bare = guideLegend([{ kind: "trend" }, { kind: "support" }, { kind: "resistance" }]);
+  assert.match(bare, /Unterstützung/);
+  assert.match(bare, /Widerstand/);
+  assert.equal(bare.includes("abgeprallt"), false);
+  const marked = guideLegend([{ kind: "support", touches: [{ index: 2, outcome: "bounce" }] }]);
+  assert.match(marked, /▲ abgeprallt/);
+  assert.match(marked, /× durchgebrochen/);
+  for (const ticker of prices.tickers) {
+    for (const range of ANALYSE_RANGES) {
+      const result = analyseChart(ticker, range);
+      const text = analyseText(result);
+      assert.equal(text.includes("Deckel"), false, `${ticker.symbol} ${range}`);
+      assert.equal(ADVICE.test(text), false, `${ticker.symbol} ${range}`);
+      assert.equal(text.includes("Keine Anlageberatung"), false);
+      const legend = guideLegend(result.lines);
+      const hasMarks = (result.lines || []).some((line) => Array.isArray(line.touches));
+      if (hasMarks) {
+        assert.match(legend, /▲ abgeprallt/);
+        assert.match(legend, /× durchgebrochen/);
+      } else {
+        assert.equal(legend.includes("abgeprallt"), false, `${ticker.symbol} ${range}`);
+      }
+      for (const level of result.levels || []) {
+        if (level.kind !== "support" && level.kind !== "resistance") continue;
+        assert.equal(String(level.title).includes("Deckel"), false);
+        if (level.kind === "resistance") assert.equal(level.title, "Nächster Widerstand");
+        const line = (result.lines || []).find((item) => item.kind === level.kind);
+        assert.ok(line, `${ticker.symbol} ${range} ${level.kind}`);
+        const side = level.kind === "resistance" ? "high" : "low";
+        const again = countLevelBounces(result.candles, level.eur, side);
+        assert.deepEqual(line.touches, again.touches, `${ticker.symbol} ${range} ${level.kind}`);
+        assert.equal(level.bounce.bounce, again.bounce);
+        assert.equal(level.bounce.broke, again.broke);
+        assert.equal(level.bounce.open, again.open);
+        assert.equal(level.bounce.n, again.n);
+        assert.equal(line.bounce, again.bounce);
+        assert.equal(line.n, again.n);
+        assert.equal(line.touches.filter((touch) => touch.outcome === "bounce").length, level.bounce.bounce);
+        assert.equal(line.touches.filter((touch) => touch.outcome === "broke").length, level.bounce.broke);
+        assert.equal(line.touches.filter((touch) => touch.outcome === "open").length, level.bounce.open);
+        if (again.n > 0) assert.equal(levelMarkLabel(level.kind, line), `${level.kind === "resistance" ? "Widerstand" : "Unterstützung"} ${again.bounce}/${again.n}`);
+        for (const touch of line.touches) {
+          assert.ok(touch.index >= 0 && touch.index < result.candles.length, `${ticker.symbol} ${range} ${touch.index}`);
+          assert.ok(["bounce", "broke", "open"].includes(touch.outcome));
+        }
+      }
+    }
+  }
 });
 
 test("Achse nennt die Uhrzeit und das Datum nur am Tageswechsel", () => {

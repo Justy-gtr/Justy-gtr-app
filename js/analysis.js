@@ -11,9 +11,9 @@ const TITLES = {
   fallend: "Fallende Linie",
   doppelboden: "Doppelter Boden",
   doppeltop: "Doppeltes Hoch",
-  "ueber-deckel": "Über dem Deckel",
+  "ueber-deckel": "Über dem Widerstand",
   "unter-stuetze": "Unter der Stütze",
-  band: "Zwischen Stütze und Deckel",
+  band: "Zwischen Stütze und Widerstand",
   unklar: "Keine klare Form"
 };
 
@@ -543,7 +543,7 @@ export function analyzePoints(visible, history, spec, range) {
     const touch = chooseTouch(countRetests(source, "high", spec, resistance.eur0));
     levels.push({
       kind: "resistance",
-      title: "Nächster Deckel",
+      title: "Nächster Widerstand",
       kicker: "Wenn der Kurs ihn erreicht",
       eur: resistance.eur0,
       ...touch,

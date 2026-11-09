@@ -1,4 +1,4 @@
-const CACHE = "jgtr-v28";
+const CACHE = "jgtr-v29";
 const CORE = [
   "",
   "index.html",
