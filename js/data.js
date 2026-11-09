@@ -3,6 +3,7 @@ import { appBase } from "./logic.js";
 export const FILES = [
   "meta",
   "prices",
+  "seasonality",
   "calendar",
   "posts",
   "favorites",

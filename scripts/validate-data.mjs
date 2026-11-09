@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { karlVoiceIssues } from "../js/logic.js";
+import { HOUR_SLOTS, WEEKDAY_LABELS } from "../js/seasonality.js";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const dataDir = path.join(root, "data");
@@ -62,7 +63,7 @@ const files = [
   "meta.json", "prices.json", "calendar.json", "posts.json", "favorites.json", "crowd.json",
   "promises.json", "production.json", "insiders.json", "briefing.json", "weekly.json",
   "daily_question.json", "glossary.json", "track_record.json", "alerts.json",
-  "scenarios.json", "companies.json"
+  "scenarios.json", "companies.json", "seasonality.json"
 ];
 const loaded = Object.fromEntries(files.map((name) => [name, read(name)]));
 
@@ -265,6 +266,71 @@ for (const company of loaded["companies.json"]?.companies || []) {
     fail(`companies.${company.id}.firstPrinciples`);
   }
   sourcesOk(company.sources, `companies.${company.id}`);
+}
+
+function countRow(row, label, withMedian) {
+  if (!row || !Number.isInteger(row.n) || row.n < 0) {
+    fail(`${label}.n`);
+    return;
+  }
+  if (!Number.isInteger(row.up) || row.up < 0 || row.up > row.n) fail(`${label}.up`);
+  if (row.n === 0) {
+    if (row.avg != null) fail(`${label}.avg`);
+  } else if (typeof row.avg !== "number" || Number.isNaN(row.avg)) fail(`${label}.avg`);
+  if (!withMedian) return;
+  if (row.n === 0) {
+    if (row.med != null) fail(`${label}.med`);
+  } else if (typeof row.med !== "number" || Number.isNaN(row.med)) fail(`${label}.med`);
+}
+
+function cellRow(cell, label) {
+  if (!cell || !Number.isInteger(cell.n) || cell.n < 0) {
+    fail(`${label}.n`);
+    return;
+  }
+  if (cell.n === 0) {
+    if (cell.avg != null) fail(`${label}.avg`);
+  } else if (typeof cell.avg !== "number" || Number.isNaN(cell.avg)) fail(`${label}.avg`);
+}
+
+const seasonality = loaded["seasonality.json"];
+if (seasonality) {
+  if (seasonality.timezone !== "Europe/Berlin") fail("seasonality.timezone");
+  if (!seasonality.asOf || Number.isNaN(Date.parse(seasonality.asOf))) fail("seasonality.asOf");
+  if (!Array.isArray(seasonality.hourSlots) || seasonality.hourSlots.join("|") !== HOUR_SLOTS.join("|")) {
+    fail("seasonality.hourSlots");
+  }
+  if (!Array.isArray(seasonality.weekdays) || seasonality.weekdays.join("|") !== WEEKDAY_LABELS.join("|")) {
+    fail("seasonality.weekdays");
+  }
+  sourcesOk(seasonality.sources, "seasonality");
+  for (const symbol of ["SPCX", "TSLA", "RKLB"]) {
+    const pack = seasonality.symbols?.[symbol];
+    if (!pack?.name) fail(`seasonality.${symbol}`);
+    for (const key of ["all", "year"]) {
+      const windowStats = pack?.ranges?.[key];
+      const label = `seasonality.${symbol}.${key}`;
+      if (!windowStats) {
+        fail(label);
+        continue;
+      }
+      if (windowStats.from && !/^\d{4}-\d{2}-\d{2}$/.test(windowStats.from)) fail(`${label}.from`);
+      if (windowStats.to && !/^\d{4}-\d{2}-\d{2}$/.test(windowStats.to)) fail(`${label}.to`);
+      if (!Array.isArray(windowStats.days) || windowStats.days.length !== 5) fail(`${label}.days`);
+      (windowStats.days || []).forEach((row, index) => countRow(row, `${label}.days.${index}`, true));
+      if (!Array.isArray(windowStats.hours) || windowStats.hours.length !== 7) fail(`${label}.hours`);
+      (windowStats.hours || []).forEach((row, index) => countRow(row, `${label}.hours.${index}`, false));
+      if (!Array.isArray(windowStats.grid) || windowStats.grid.length !== 5) fail(`${label}.grid`);
+      (windowStats.grid || []).forEach((row, rowIndex) => {
+        if (!Array.isArray(row) || row.length !== 7) fail(`${label}.grid.${rowIndex}`);
+        (row || []).forEach((cell, index) => cellRow(cell, `${label}.grid.${rowIndex}.${index}`));
+      });
+      if (windowStats.pre != null) {
+        countRow(windowStats.pre, `${label}.pre`, false);
+        if ((windowStats.pre?.n || 0) < 7) fail(`${label}.pre unter 7`);
+      }
+    }
+  }
 }
 
 const iconFiles = [

@@ -2,6 +2,7 @@ import { N_LEGEND, analyseChart, analyseText } from "./analyse.js";
 import { ANALYSE_RANGES, rangeAria, rangeLabel } from "./candles.js";
 import { analysisShowsN } from "./analysis.js";
 import { esc, formatEUR, formatPct, methodLabel, rangeChange } from "./logic.js";
+import { renderSeasonalityCard } from "./seasonality.js";
 
 function tone(value) {
   if (value > 0) return "up";
@@ -63,6 +64,7 @@ export function renderAnalyse(data, ui) {
       <canvas class="chart chart-price chart-candles" data-chart="candles" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kerzenchart in Euro. Ziehen zeigt Kurs, Zeit und Veränderung."></canvas>
     </div>
     ${musterCard(result)}
+    ${renderSeasonalityCard(data?.seasonality, ticker, ui?.analyseSeason)}
     <button type="button" class="text-btn" data-action="explain" data-symbol="${esc(ticker?.symbol || "")}">Warum diese Bewegung?</button>
   `;
 }
