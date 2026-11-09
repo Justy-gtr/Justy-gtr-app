@@ -35,7 +35,10 @@ export const TICKERS = [
     venue: "Nasdaq",
     role: "Fokus",
     usdSymbol: "SPCX",
-    eurSymbols: []
+    eurSymbols: [],
+    // Frankfurt handelt die Aktie ab 8 Uhr. Xetra (SPX.DE) erst ab 9 und ohne 15:00.
+    // Nur die Heatmap nutzt das. Der Tageskurs bleibt der US-Dollar-Kurs.
+    earlySymbols: ["SPX.F", "SPX.DE"]
   },
   {
     symbol: "TSLA",

@@ -32,6 +32,8 @@ jobs:
     steps:
       - name: Stand holen
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
 
       - name: Node
         uses: actions/setup-node@v4
@@ -68,7 +70,14 @@ jobs:
             exit 0
           fi
           git commit -m "Kurse aktualisiert"
-          git push
+          # GitHub lehnt den Push manchmal kurz ab (commit_refs_rules).
+          # Bis zu vier Versuche, dazwischen 5/15/30 s. Bei einem Konflikt in data/
+          # bleibt die frisch erzeugte Fassung; sonst werden die Kurse neu geholt.
+          export JGTR_REGENERATE="node scripts/fetch-prices.mjs && node scripts/fetch-seasonality.mjs --force && node scripts/fetch-moonshots.mjs"
+          if ! node scripts/push-main.mjs; then
+            echo "Push nach 4 Versuchen gescheitert."
+            exit 1
+          fi
           echo "changed=true" >> "$GITHUB_OUTPUT"
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 

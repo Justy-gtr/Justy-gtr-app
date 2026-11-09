@@ -28,7 +28,8 @@ import {
   seriesFor,
   trackSummary,
   bigDrop,
-  historySentence
+  historySentence,
+  sessionPhrase
 } from "./logic.js";
 
 const STATUS = {
@@ -607,25 +608,63 @@ function catalystWhen(catalyst) {
 function moonshotsDetail(data) {
   const file = data?.moonshots;
   const list = file?.candidates || [];
+  const near = file?.nearTerm;
+  const nearList = near?.candidates || [];
   const fx = file?.fx?.source;
+  const head = nearList.length === 3 ? "Drei Kandidaten" : "Kandidaten";
   return {
     kind: "moonshots",
     title: "Moonshots",
     html: `
       <p class="lede">Kandidaten mit Kurstreibern. Fakten und alte Tage.</p>
       <p class="muted">n ist die Zahl der Termine oder Tage. Unter 7 keine Prozentzahl.</p>
-      ${list.map((item) => moonshotCard(item)).join("") || `<p class="empty">Noch keine Kandidaten.</p>`}
-      ${fx ? sourcesBlock([fx]) : ""}
+      <section class="moon-block" id="kurzfristig">
+        <p class="kicker">Kurzfristig</p>
+        <h3>Heute und die nächsten Tage</h3>
+        <p>${esc(`${head} mit Termin in den nächsten Handelstagen. Vergangenheit, keine Vorhersage.`)}</p>
+        <p class="muted">${esc(near?.note || "Noch kein Fenster.")}</p>
+        ${nearList.map((item) => moonshotCard(item, { short: true })).join("") || `<p class="empty">Im Fenster liegt kein Termin aus dem Universum.</p>`}
+      </section>
+      <section class="moon-block">
+        <p class="kicker">Weiter vorn</p>
+        <h3>Die drei Kandidaten</h3>
+        ${list.map((item) => moonshotCard(item)).join("") || `<p class="empty">Noch keine Kandidaten.</p>`}
+      </section>
+      ${sourcesBlock([fx, ...(near?.sources || [])].filter(Boolean))}
     `
   };
 }
 
-function moonshotCard(item) {
+function nearWhen(catalyst) {
+  const head = catalystWhen({ ...catalyst, time: null });
+  const phrase = sessionPhrase(catalyst?.date, catalyst?.session);
+  if (!phrase) return head;
+  return phrase.clock ? `${head}, ${phrase.word}, ${phrase.clock}` : `${head}, ${phrase.word}`;
+}
+
+function impliedLine(implied) {
+  if (typeof implied?.pct !== "number") return "";
+  const until = implied.expiry ? ` bis ${formatDay(implied.expiry)} ${String(implied.expiry).slice(0, 4)}` : "";
+  return `<p class="muted">${esc(`Am Optionsmarkt liegt die Spanne${until} bei etwa ${formatNumber(implied.pct, 1)} %.`)}</p>`;
+}
+
+function moonshotCard(item, { short = false } = {}) {
   const history = item.history || {};
   const points = [
-    ["for", "Was dafür spricht", item.for],
-    ["against", "Was dagegen spricht", item.against]
+    ["for", short ? "Dafür" : "Was dafür spricht", item.for],
+    ["against", short ? "Dagegen" : "Was dagegen spricht", item.against]
   ];
+  const leverage = item.leverage?.isin
+    ? `<p class="moon-isin">${short ? "Beispiel-Knock-out" : "Mit Hebel bei Trade Republic: ja"} (ISIN ${esc(item.leverage.isin)})</p>
+      <p class="muted">${esc(item.leverage?.how || "")}</p>`
+    : (short ? `<p class="muted">Im Universum der Werte mit verbreiteten Knock-outs bei Trade Republic. Keine Beispiel-ISIN hinterlegt.</p>` : "");
+  const stats = short
+    ? `<p class="moon-stat">${esc(historySentence(history.catalystLabel || "Am Folgetag", history.catalyst))}</p>
+      ${history.note ? `<p class="muted">${esc(history.note)}</p>` : ""}
+      ${impliedLine(item.implied)}`
+    : `<p class="moon-stat">${esc(historySentence(history.catalystLabel || "Nach Zahlen", history.catalyst))}</p>
+      <p class="moon-stat">${esc(historySentence(history.daysLabel || "Große Tage", history.days))}</p>
+      ${history.note ? `<p class="muted">${esc(history.note)}</p>` : ""}`;
   return `
     <article class="card moon">
       <div class="moon-price">
@@ -638,17 +677,14 @@ function moonshotCard(item) {
       </div>
       <p class="muted">${esc(methodLabel({ eurMethod: item.eurMethod }))}</p>
       <p><strong>${esc(item.catalyst?.label || "Termin")}</strong></p>
-      <p>${esc(catalystWhen(item.catalyst))}</p>
+      <p>${esc(short ? nearWhen(item.catalyst) : catalystWhen(item.catalyst))}</p>
       ${item.catalyst?.detail ? `<p class="muted">${esc(item.catalyst.detail)}</p>` : ""}
-      ${points.map(([key, title, lines]) => `
+      ${points.map(([, title, lines]) => `
         <p class="kicker">${esc(title)}</p>
         <ul class="moon-points">${(lines || []).map((line) => `<li>${esc(line)}</li>`).join("")}</ul>
       `).join("")}
-      <p class="moon-stat">${esc(historySentence(history.catalystLabel || "Nach Zahlen", history.catalyst))}</p>
-      <p class="moon-stat">${esc(historySentence(history.daysLabel || "Große Tage", history.days))}</p>
-      ${history.note ? `<p class="muted">${esc(history.note)}</p>` : ""}
-      <p class="moon-isin">Mit Hebel bei Trade Republic: ja (ISIN ${esc(item.leverage?.isin || "—")})</p>
-      <p class="muted">${esc(item.leverage?.how || "")}</p>
+      ${stats}
+      ${leverage}
       <p class="muted">Stand ${esc(formatStamp(item.asOf))}</p>
       <details class="fold">
         <summary>Quellen</summary>

@@ -164,14 +164,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15px;
+  height: 18px;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.05);
-  color: var(--muted);
-  font-size: 11px;
+  color: #f4f1ea;
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: -0.05em;
   line-height: 1;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+}
+.clock-cell.is-ink {
+  color: #14160f;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.45);
 }
 .clock-cell.is-quiet, .clock-sum.is-quiet { background: rgba(255, 255, 255, 0.04); }
+.clock-cell.is-quiet {
+  color: var(--muted);
+  text-shadow: none;
+  font-weight: 500;
+  font-size: 11px;
+}
 .clock-sum {
   display: flex;
   align-items: center;

@@ -89,7 +89,7 @@ function quoteSource(symbol) {
   };
 }
 
-async function loadFx() {
+export async function loadFx() {
   const daily = await fetchChart("EURUSD=X", "1d", "5y");
   if (!daily.price) throw new Error("EURUSD ohne Kurs");
   return {
@@ -108,58 +108,67 @@ function eurAt(usd, fx, iso) {
   return roundTo(usdToEur(usd, rate), 2);
 }
 
+export function applyQuote(candidate, chart, fx, { recomputeHistory = true } = {}) {
+  const symbol = candidate.usdSymbol || candidate.symbol;
+  if (chart.currency && chart.currency !== "USD") {
+    throw new Error(`${symbol} nicht in USD (${chart.currency})`);
+  }
+  const windowBars = barsInWindow(sessionBars(chart.points));
+  if (windowBars.length < 100) throw new Error(`${symbol} zu wenig Tage (${windowBars.length})`);
+  const jumps = [];
+  for (let index = 1; index < windowBars.length; index += 1) {
+    const raw = ((windowBars[index].close - windowBars[index - 1].close) / windowBars[index - 1].close) * 100;
+    if (Math.abs(raw) >= 50) jumps.push(`${windowBars[index].date} ${raw.toFixed(1)}%`);
+  }
+  if (jumps.length) throw new Error(`${symbol} Sprung wie ein Split: ${jumps.join(", ")}`);
+  const last = windowBars.at(-1);
+  const asOf = chart.regularTime
+    ? isoBerlin(new Date(chart.regularTime * 1000))
+    : isoBerlin(new Date(last.t));
+  const priceDate = chart.regularTime ? nyDate(new Date(chart.regularTime * 1000).toISOString()) : last.date;
+  const live = priceDate > last.date;
+  const priceUsd = chart.price ?? last.close;
+  // chartPreviousClose ist der Schluss vor der ganzen Spanne, nicht der Vortag.
+  const prevUsd = live ? last.close : windowBars.at(-2)?.close;
+  if (!(priceUsd > 0) || !(prevUsd > 0)) throw new Error(`${symbol} ohne Kurs`);
+  const spark = windowBars.slice(-24).map((bar) => eurAt(bar.close, fx, bar.t));
+  if (live) spark.push(eurAt(priceUsd, fx, new Date(chart.regularTime * 1000).toISOString()));
+  const patch = {
+    priceUsd: roundTo(priceUsd, 2),
+    priceEur: eurAt(priceUsd, fx, asOf),
+    previousCloseUsd: roundTo(prevUsd, 2),
+    changePct: roundTo(((priceUsd - prevUsd) / prevUsd) * 100, 2),
+    eurMethod: "usd_div_eurusd",
+    sparkline: spark.filter((value) => value != null),
+    asOf,
+    marketSource: quoteSource(symbol)
+  };
+  if (recomputeHistory) {
+    const catalyst = catalystMoves(windowBars, candidate.pastCatalysts?.dates || []);
+    const days = wideDays(windowBars);
+    const { moves, ...catalystStats } = catalyst;
+    patch.history = {
+      from: windowBars[0].date,
+      to: windowBars.at(-1).date,
+      catalyst: catalystStats,
+      days,
+      moves
+    };
+  }
+  return { quote: mergeCandidate(candidate, patch), windowBars, asOf };
+}
+
 export async function refreshMoonshots(file = readFile()) {
   const fx = await loadFx();
   const candidates = [];
   for (const candidate of file.candidates || []) {
     const symbol = candidate.usdSymbol || candidate.symbol;
     const chart = await fetchChart(symbol, "1d", "5y");
-    if (chart.currency && chart.currency !== "USD") {
-      throw new Error(`${symbol} nicht in USD (${chart.currency})`);
-    }
-    const all = sessionBars(chart.points);
-    const windowBars = barsInWindow(all);
-    if (windowBars.length < 100) throw new Error(`${symbol} zu wenig Tage (${windowBars.length})`);
-    const jumps = [];
-    for (let index = 1; index < windowBars.length; index += 1) {
-      const raw = ((windowBars[index].close - windowBars[index - 1].close) / windowBars[index - 1].close) * 100;
-      if (Math.abs(raw) >= 50) jumps.push(`${windowBars[index].date} ${raw.toFixed(1)}%`);
-    }
-    if (jumps.length) throw new Error(`${symbol} Sprung wie ein Split: ${jumps.join(", ")}`);
-    const dates = candidate.pastCatalysts?.dates || [];
-    const catalyst = catalystMoves(windowBars, dates);
-    const days = wideDays(windowBars);
-    const last = windowBars.at(-1);
-    const asOf = chart.regularTime
-      ? isoBerlin(new Date(chart.regularTime * 1000))
-      : isoBerlin(new Date(last.t));
-    const priceDate = chart.regularTime ? nyDate(new Date(chart.regularTime * 1000).toISOString()) : last.date;
-    const live = priceDate > last.date;
-    const priceUsd = chart.price ?? last.close;
-    // chartPreviousClose ist der Schluss vor der ganzen Spanne, nicht der Vortag.
-    const prevUsd = live ? last.close : windowBars.at(-2)?.close;
-    if (!(priceUsd > 0) || !(prevUsd > 0)) throw new Error(`${symbol} ohne Kurs`);
-    const spark = windowBars.slice(-24).map((bar) => eurAt(bar.close, fx, bar.t));
-    if (live) spark.push(eurAt(priceUsd, fx, new Date(chart.regularTime * 1000).toISOString()));
-    const { moves, ...catalystStats } = catalyst;
-    candidates.push(mergeCandidate(candidate, {
-      priceUsd: roundTo(priceUsd, 2),
-      priceEur: eurAt(priceUsd, fx, asOf),
-      previousCloseUsd: roundTo(prevUsd, 2),
-      changePct: roundTo(((priceUsd - prevUsd) / prevUsd) * 100, 2),
-      eurMethod: "usd_div_eurusd",
-      sparkline: spark.filter((value) => value != null),
-      asOf,
-      marketSource: quoteSource(symbol),
-      history: {
-        from: windowBars[0].date,
-        to: windowBars.at(-1).date,
-        catalyst: catalystStats,
-        days,
-        moves
-      }
-    }));
-    console.log(`${symbol} ${catalystStats.up}/${catalystStats.n} hoch, ${catalystStats.down}/${catalystStats.n} runter, Tage ${days.sharePct}% n=${days.n}`);
+    const { quote, windowBars } = applyQuote(candidate, chart, fx);
+    const days = quote.history?.days;
+    const stats = quote.history?.catalyst;
+    candidates.push(quote);
+    console.log(`${symbol} ${stats?.up}/${stats?.n} hoch, ${stats?.down}/${stats?.n} runter, Tage ${days?.sharePct}% n=${days?.n} (${windowBars.length} Tage)`);
   }
   return {
     ...file,
@@ -182,7 +191,13 @@ function isMain() {
 }
 
 if (isMain()) {
-  refreshMoonshots().then((next) => {
+  refreshMoonshots().then(async (next) => {
+    try {
+      const { refreshNearTerm } = await import("./fetch-near-term.mjs");
+      next = await refreshNearTerm(next, { force: process.argv.includes("--force-near") });
+    } catch (error) {
+      console.log(`::warning::Kurzfristig: ${error.stack || error.message}`);
+    }
     writeFile(next);
     console.log("data/moonshots.json geschrieben.");
   }).catch((error) => {

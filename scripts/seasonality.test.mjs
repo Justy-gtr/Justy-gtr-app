@@ -130,6 +130,7 @@ test("Berliner Stunden bleiben bei Sommer- und Winterzeit auf der echten Uhr", (
     { t: "2026-03-09T13:30:00.000Z", open: 100, close: 110 }
   ]);
   assert.equal(grid[0][cash].n, 1);
+  assert.equal(grid[0][cash].up, 1);
   assert.equal(grid.flat().reduce((sum, cell) => sum + cell.n, 0), 1);
 
   assert.equal(isUsEarlyBar("2026-01-05T13:00:00.000Z", 60), true);
@@ -191,7 +192,7 @@ test("Unter sieben Fällen gibt es keine Prozentzahl", () => {
   ];
   const hours = HOUR_SLOTS.map((_, index) => ({ n: index === 0 ? 6 : 20, up: 12, avg: index === 2 ? -0.2 : 0.15 }));
   const grid = Array.from({ length: 5 }, () => HOUR_SLOTS.map((_, index) => (
-    index === 0 ? { n: 4, avg: 3 } : { n: 8, avg: 0.05 }
+    index === 0 ? { n: 4, up: 3, avg: 3 } : { n: 8, up: 4, avg: 0.05 }
   )));
   const seasonality = {
     symbols: {
@@ -238,6 +239,9 @@ test("Unter sieben Fällen gibt es keine Prozentzahl", () => {
   assert.match(html, /data-hour="08"/);
   assert.match(html, /data-hour="15:00"/);
   assert.match(html, /data-hour="15:30"/);
+  assert.match(html, /Zahl: Anteil steigender Stunden/);
+  assert.match(html, /clock-cell[^>]*>50%</);
+  assert.match(html, /clock-cell is-quiet[^>]*>–</);
   assert.equal(html.includes("Vorbörse 10:00"), false);
   assert.match(html, /–/);
   assert.match(html, new RegExp(SEASON_N_LEGEND.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
@@ -329,7 +333,8 @@ test("Die Karte steht unter dem Muster und die Spanne lässt sie in Ruhe", () =>
   assert.equal(spcx.includes("TSLA"), false);
   assert.match(tsla, /vor 15:30: Handel in Deutschland/);
   assert.match(rklb, /vor 15:30: Handel in Deutschland/);
-  assert.match(spcx, /vor 15:30: US-Vorbörse/);
+  assert.match(spcx, /vor 15:30: Handel in Deutschland/);
+  assert.match(JSON.stringify(seasonality.sources), /quote\/SPX\.F/);
   assert.equal(tsla.includes("Vorbörse 10:00"), false);
   assert.equal(spcx.includes("Vorbörse 10:00"), false);
   const slot = (symbol, label) => seasonality.symbols[symbol].ranges.all.hours[HOUR_SLOTS.indexOf(label)];
@@ -337,8 +342,8 @@ test("Die Karte steht unter dem Muster und die Spanne lässt sie in Ruhe", () =>
   assert.ok(slot("TSLA", "15:00").n >= MIN_CASES);
   assert.ok(slot("TSLA", "15:30").n >= MIN_CASES);
   assert.ok(slot("RKLB", "08").n >= MIN_CASES);
-  assert.ok(slot("SPCX", "08").n < MIN_CASES);
-  assert.ok(slot("SPCX", "09").n < MIN_CASES);
+  assert.ok(slot("SPCX", "08").n >= MIN_CASES);
+  assert.ok(slot("SPCX", "09").n >= MIN_CASES);
   assert.ok(slot("SPCX", "10").n >= MIN_CASES);
   assert.ok(slot("SPCX", "15:00").n >= MIN_CASES);
   assert.match(spcx, /data-hour="08"/);

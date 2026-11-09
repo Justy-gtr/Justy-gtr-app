@@ -475,6 +475,8 @@ button.card { border-radius: 24px; }
 .moon-points li { margin: 3px 0; }
 .moon-stat { font-variant-numeric: tabular-nums; }
 .moon-isin { overflow-wrap: anywhere; }
+.moon-block > * + * { margin-top: 12px; }
+.moon-block h3 { font-size: 22px; letter-spacing: -0.03em; margin: 2px 0 0; }
 .menu { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .menu .card { min-height: 96px; }
 .menu span { color: var(--muted); font-size: 13px; }

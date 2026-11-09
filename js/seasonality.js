@@ -315,9 +315,10 @@ export function aggregateGrid(bars, range = null) {
     buckets[weekday - 1][HOUR_SLOTS.indexOf(slot)].push(move);
   }
   return buckets.map((row) => row.map((values) => {
-    if (!values.length) return { n: 0, avg: null };
+    if (!values.length) return { n: 0, up: 0, avg: null };
     return {
       n: values.length,
+      up: values.filter((value) => value > 0).length,
       avg: round2(values.reduce((sum, value) => sum + value, 0) / values.length)
     };
   }));
@@ -492,12 +493,16 @@ function clockBlock(hours, grid) {
     const spoken = slotSpoken(slot);
     const dayCells = cells.map((row, dayIndex) => {
       const cell = row[slotIndex];
-      const show = (cell?.n || 0) >= MIN_CASES && Number.isFinite(cell?.avg);
-      const style = show ? heatStyle(cell.avg, scale) : "";
-      const aria = show
-        ? `${WEEKDAY_NAMES[dayIndex]} ${spoken}, im Schnitt ${formatSignedPct(cell.avg)}, n = ${cell.n}`
-        : `${WEEKDAY_NAMES[dayIndex]} ${spoken}, n = ${cell?.n || 0}, keine Prozentzahl`;
-      return `<span class="clock-cell${show ? "" : " is-quiet"}" style="${style}" role="img" aria-label="${esc(aria)}">${show ? "" : "–"}</span>`;
+      const share = upPercent(cell);
+      const colored = share != null && Number.isFinite(cell?.avg) && scale > 0;
+      const amount = colored ? Math.min(1, Math.abs(cell.avg) / scale) : 0;
+      const style = colored ? heatStyle(cell.avg, scale) : "";
+      const text = share == null ? "–" : `${share}%`;
+      const aria = share == null
+        ? `${WEEKDAY_NAMES[dayIndex]} ${spoken}, n = ${cell?.n || 0}, keine Prozentzahl`
+        : `${WEEKDAY_NAMES[dayIndex]} ${spoken}, ${share} % der Stunden gestiegen, im Schnitt ${formatSignedPct(cell.avg)}, n = ${cell.n}`;
+      const ink = amount >= 0.55 ? " is-ink" : "";
+      return `<span class="clock-cell${share == null ? " is-quiet" : ink}" style="${style}" role="img" aria-label="${esc(aria)}">${text}</span>`;
     }).join("");
     const summary = rows[slotIndex];
     const share = upPercent(summary);

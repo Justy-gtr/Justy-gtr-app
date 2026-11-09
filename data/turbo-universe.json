@@ -1,0 +1,686 @@
+{
+  "asOf": "2026-10-22",
+  "note": "Auswahl-Universum für den Bereich Kurzfristig. Grundlage ist der Nasdaq-100 zum 22. Oktober 2026 (Wikipedia, 101 Papiere, beide Alphabet-Klassen) plus bekannte liquide Momentum-Werte. Das sind Namen, zu denen bei Trade Republic verbreitet Knock-outs (Turbos) von Emittenten wie HSBC und Société Générale gelistet sind. Die Liste sagt nicht, dass gerade jedes Papier ein offenes Produkt hat. Eine Beispiel-ISIN steht nur am Kandidaten, wenn eine öffentliche Emittentenliste sie hergibt. TSLA, RKLB und SPCX fehlen: sie sind die Fokus-Werte der App.",
+  "exclude": [
+    "TSLA",
+    "RKLB",
+    "SPCX"
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia: List of NASDAQ-100 companies",
+      "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
+    },
+    {
+      "title": "Trade Republic: Emittenten der Derivate",
+      "url": "https://support.traderepublic.com/de-de/87"
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "underlyingIsin": "US0378331005",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "ABNB",
+      "name": "Airbnb",
+      "underlyingIsin": "US0090661010",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "ADBE",
+      "name": "Adobe Inc.",
+      "underlyingIsin": "US00724F1012",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "ADI",
+      "name": "Analog Devices",
+      "underlyingIsin": "US0326541051",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "ADP",
+      "name": "Automatic Data Processing",
+      "underlyingIsin": "US0530151036",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "ADSK",
+      "name": "Autodesk",
+      "underlyingIsin": "US0527691069",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "AEP",
+      "name": "American Electric Power",
+      "underlyingIsin": "US0255371017",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "AFRM",
+      "name": "Affirm",
+      "group": "momentum"
+    },
+    {
+      "symbol": "ALAB",
+      "name": "Astera Labs",
+      "underlyingIsin": "US04626A1034",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
+      "underlyingIsin": "US02043Q1076",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "AMAT",
+      "name": "Applied Materials",
+      "underlyingIsin": "US0382221051",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices",
+      "underlyingIsin": "US0079031078",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "AMGN",
+      "name": "Amgen",
+      "underlyingIsin": "US0311621009",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "underlyingIsin": "US0231351067",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "APP",
+      "name": "AppLovin",
+      "underlyingIsin": "US03831W1080",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "ARM",
+      "name": "Arm Holdings",
+      "underlyingIsin": "US0420682058",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML Holding",
+      "underlyingIsin": "USN070592100",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "underlyingIsin": "US11135F1012",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "AXON",
+      "name": "Axon Enterprise",
+      "underlyingIsin": "US05464C1018",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "BKNG",
+      "name": "Booking Holdings",
+      "underlyingIsin": "US09857L1089",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "BKR",
+      "name": "Baker Hughes",
+      "underlyingIsin": "US05722G1004",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "CCEP",
+      "name": "Coca-Cola Europacific Partners",
+      "underlyingIsin": "GB00BDCPN049",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "CDNS",
+      "name": "Cadence Design Systems",
+      "underlyingIsin": "US1273871087",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "CEG",
+      "name": "Constellation Energy",
+      "underlyingIsin": "US21037T1097",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "CMCSA",
+      "name": "Comcast",
+      "underlyingIsin": "US20030N1019",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "COIN",
+      "name": "Coinbase",
+      "group": "momentum"
+    },
+    {
+      "symbol": "COST",
+      "name": "Costco",
+      "underlyingIsin": "US22160K1051",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "CPRT",
+      "name": "Copart",
+      "underlyingIsin": "US2172041061",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "underlyingIsin": "US22788C1053",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "CRWV",
+      "name": "CoreWeave",
+      "underlyingIsin": "US21873S1087",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "CSCO",
+      "name": "Cisco",
+      "underlyingIsin": "US17275R1023",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "CSX",
+      "name": "CSX Corporation",
+      "underlyingIsin": "US1264081035",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "CTAS",
+      "name": "Cintas",
+      "underlyingIsin": "US1729081059",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "CVNA",
+      "name": "Carvana",
+      "group": "momentum"
+    },
+    {
+      "symbol": "DASH",
+      "name": "DoorDash",
+      "underlyingIsin": "US25809K1051",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "DDOG",
+      "name": "Datadog",
+      "underlyingIsin": "US23804L1035",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "DKNG",
+      "name": "DraftKings",
+      "group": "momentum"
+    },
+    {
+      "symbol": "DXCM",
+      "name": "DexCom",
+      "underlyingIsin": "US2521311074",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "EXC",
+      "name": "Exelon",
+      "underlyingIsin": "US30161N1019",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "FANG",
+      "name": "Diamondback Energy",
+      "underlyingIsin": "US25278X1090",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "FAST",
+      "name": "Fastenal",
+      "underlyingIsin": "US3119001044",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "FER",
+      "name": "Ferrovial",
+      "underlyingIsin": "NL0015001FS8",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "FTNT",
+      "name": "Fortinet",
+      "underlyingIsin": "US34959E1091",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "GEHC",
+      "name": "GE HealthCare",
+      "underlyingIsin": "US36266G1076",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "GILD",
+      "name": "Gilead Sciences",
+      "underlyingIsin": "US3755581036",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "GOOG",
+      "name": "Alphabet Inc. (Class C)",
+      "underlyingIsin": "US02079K1079",
+      "group": "nasdaq100",
+      "family": "ALPHABET"
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc. (Class A)",
+      "underlyingIsin": "US02079K3059",
+      "group": "nasdaq100",
+      "family": "ALPHABET"
+    },
+    {
+      "symbol": "HIMS",
+      "name": "Hims & Hers",
+      "group": "momentum"
+    },
+    {
+      "symbol": "HON",
+      "name": "Honeywell Technologies",
+      "underlyingIsin": "US4385162056",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "HONA",
+      "name": "Honeywell Aerospace",
+      "underlyingIsin": "US43849R1059",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "HOOD",
+      "name": "Robinhood",
+      "group": "momentum"
+    },
+    {
+      "symbol": "IDXX",
+      "name": "Idexx Laboratories",
+      "underlyingIsin": "US45168D1046",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "INTC",
+      "name": "Intel",
+      "underlyingIsin": "US4581401001",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "INTU",
+      "name": "Intuit",
+      "underlyingIsin": "US4612021034",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "IONQ",
+      "name": "IonQ",
+      "group": "momentum"
+    },
+    {
+      "symbol": "ISRG",
+      "name": "Intuitive Surgical",
+      "underlyingIsin": "US46120E6023",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "KDP",
+      "name": "Keurig Dr Pepper",
+      "underlyingIsin": "US49271V1008",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "KLAC",
+      "name": "KLA Corporation",
+      "underlyingIsin": "US4824801009",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "LIN",
+      "name": "Linde plc",
+      "underlyingIsin": "IE000S9YS762",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "LITE",
+      "name": "Lumentum",
+      "underlyingIsin": "US55024U1097",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "LRCX",
+      "name": "Lam Research",
+      "underlyingIsin": "US5128073062",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "MAR",
+      "name": "Marriott International",
+      "underlyingIsin": "US5719032022",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "MARA",
+      "name": "MARA Holdings",
+      "group": "momentum"
+    },
+    {
+      "symbol": "MCHP",
+      "name": "Microchip Technology",
+      "underlyingIsin": "US5950171042",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "MDLZ",
+      "name": "Mondelez International",
+      "underlyingIsin": "US6092071058",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "MELI",
+      "name": "Mercado Libre",
+      "underlyingIsin": "US58733R1023",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms",
+      "underlyingIsin": "US30303M1027",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "MNST",
+      "name": "Monster Beverage",
+      "underlyingIsin": "US61174X1090",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "MPWR",
+      "name": "Monolithic Power Systems",
+      "underlyingIsin": "US6098391054",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "MRNA",
+      "name": "Moderna",
+      "underlyingIsin": "US60770K1079",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "underlyingIsin": "US5738741041",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "underlyingIsin": "US5949181045",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "MSTR",
+      "name": "MicroStrategy",
+      "underlyingIsin": "US5949724083",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron Technology",
+      "underlyingIsin": "US5951121038",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "NBIS",
+      "name": "Nebius Group",
+      "underlyingIsin": "NL0009805522",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "NET",
+      "name": "Cloudflare",
+      "group": "momentum"
+    },
+    {
+      "symbol": "NFLX",
+      "name": "Netflix, Inc.",
+      "underlyingIsin": "US64110L1061",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "NVDA",
+      "name": "Nvidia",
+      "underlyingIsin": "US67066G1040",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "NXPI",
+      "name": "NXP Semiconductors",
+      "underlyingIsin": "NL0009538784",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "ODFL",
+      "name": "Old Dominion Freight Line",
+      "underlyingIsin": "US6795801009",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "ORLY",
+      "name": "O'Reilly Automotive",
+      "underlyingIsin": "US67103H1077",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks",
+      "underlyingIsin": "US6974351057",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "PAYX",
+      "name": "Paychex",
+      "underlyingIsin": "US7043261079",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "PCAR",
+      "name": "Paccar",
+      "underlyingIsin": "US6937181088",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "PDD",
+      "name": "PDD Holdings",
+      "underlyingIsin": "US7223041028",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "PEP",
+      "name": "PepsiCo",
+      "underlyingIsin": "US7134481081",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir Technologies",
+      "underlyingIsin": "US69608A1088",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "PYPL",
+      "name": "PayPal",
+      "underlyingIsin": "US70450Y1038",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "QCOM",
+      "name": "Qualcomm",
+      "underlyingIsin": "US7475251036",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "RDDT",
+      "name": "Reddit",
+      "group": "momentum"
+    },
+    {
+      "symbol": "REGN",
+      "name": "Regeneron Pharmaceuticals",
+      "underlyingIsin": "US75886F1075",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "RIOT",
+      "name": "Riot Platforms",
+      "group": "momentum"
+    },
+    {
+      "symbol": "RIVN",
+      "name": "Rivian",
+      "group": "momentum"
+    },
+    {
+      "symbol": "ROP",
+      "name": "Roper Technologies",
+      "underlyingIsin": "US7766961061",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "ROST",
+      "name": "Ross Stores",
+      "underlyingIsin": "US7782961038",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "SBUX",
+      "name": "Starbucks",
+      "underlyingIsin": "US8552441094",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "SHOP",
+      "name": "Shopify",
+      "underlyingIsin": "CA82509L1076",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "SMCI",
+      "name": "Super Micro Computer",
+      "group": "momentum"
+    },
+    {
+      "symbol": "SNDK",
+      "name": "Sandisk",
+      "underlyingIsin": "US80004C2008",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "SNOW",
+      "name": "Snowflake",
+      "group": "momentum"
+    },
+    {
+      "symbol": "SNPS",
+      "name": "Synopsys",
+      "underlyingIsin": "US8716071076",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "SOFI",
+      "name": "SoFi",
+      "group": "momentum"
+    },
+    {
+      "symbol": "STX",
+      "name": "Seagate Technology",
+      "underlyingIsin": "IE00BKVD2N49",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "TER",
+      "name": "Teradyne",
+      "underlyingIsin": "US8807701029",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "TMUS",
+      "name": "T-Mobile US",
+      "underlyingIsin": "US8725901040",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "TRI",
+      "name": "Thomson Reuters",
+      "underlyingIsin": "CA8849038812",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "TTWO",
+      "name": "Take-Two Interactive",
+      "underlyingIsin": "US8740541094",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "TXN",
+      "name": "Texas Instruments",
+      "underlyingIsin": "US8825081040",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "underlyingIsin": "US92532F1003",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "WDAY",
+      "name": "Workday, Inc.",
+      "underlyingIsin": "US98138H1014",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "WDC",
+      "name": "Western Digital",
+      "underlyingIsin": "US9581021055",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "WMT",
+      "name": "Walmart",
+      "underlyingIsin": "US9311421039",
+      "group": "nasdaq100"
+    },
+    {
+      "symbol": "XEL",
+      "name": "Xcel Energy",
+      "underlyingIsin": "US98389B1008",
+      "group": "nasdaq100"
+    }
+  ]
+}
