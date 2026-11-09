@@ -29,7 +29,9 @@ import {
   trackSummary,
   bigDrop,
   historySentence,
-  sessionPhrase
+  sessionPhrase,
+  berlinClockText,
+  usSessionWord
 } from "./logic.js";
 
 const STATUS = {
@@ -163,14 +165,22 @@ function renderHeute(data, ui, store) {
   const live = freshPrices(data.meta);
   const alerts = data.alerts?.alerts || [];
   const install = !store.installHidden && !isStandalone();
-  const today = new Intl.DateTimeFormat("de-DE", { weekday: "long", day: "numeric", month: "long" }).format(new Date());
+  const now = new Date();
+  const today = new Intl.DateTimeFormat("de-DE", { weekday: "long", day: "numeric", month: "long" }).format(now);
+  const clock = berlinClockText(now);
   const dropped = calm.tickers.map((ticker) => ticker.symbol).join(", ");
   return `
     ${dailyWager(data, store)}
     <header class="page-head home-head">
       <p class="eyebrow">Heute</p>
       <h1>${esc(greeting())}, Justy</h1>
-      <p class="dateline">${esc(today)}</p>
+      <div class="home-meta">
+        <p class="dateline">${esc(today)}</p>
+        <div class="home-clock">
+          <time id="home-clock" datetime="${esc(now.toISOString())}">${esc(clock)}</time>
+          <p id="home-session" class="home-session">US ${esc(usSessionWord(now))}</p>
+        </div>
+      </div>
     </header>
     ${install ? `<p class="install-line"><span>In Safari auf Teilen tippen, dann „Zum Home-Bildschirm“.</span><button type="button" data-action="dismiss-install">OK</button></p>` : ""}
     ${calm.active ? `<button type="button" class="banner banner-calm" data-action="open-calm">Ruhe-Modus · ${esc(dropped || "Ein Kurs")}</button>` : ""}

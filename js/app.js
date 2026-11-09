@@ -4,7 +4,7 @@ import { drawCharts } from "./chart.js";
 import { loadData } from "./data.js";
 import { initEggs } from "./eggs.js";
 import { initKnockout } from "./knockout-ui.js";
-import { appBase, isInAppUrl, loadStore, markTabSeen, marketWatch, saveStore, unreadTabs } from "./logic.js";
+import { appBase, berlinClockText, isInAppUrl, loadStore, markTabSeen, marketWatch, saveStore, unreadTabs, usSessionWord } from "./logic.js";
 import { playLiftoff, tickCountdown } from "./motion.js";
 import { initNav } from "./nav.js";
 import { initPull } from "./pull.js";
@@ -173,6 +173,7 @@ function render() {
   restoreScroll(scrolls);
   nav.align();
   notePage(ui.page);
+  paintClock();
   requestAnimationFrame(() => {
     try { drawCharts(data, ui); } catch { /* Chart bleibt leer, die Seite nicht. */ }
     try { drawCandles(data, ui); } catch { /* Kerzen bleiben leer, die Seite nicht. */ }
@@ -395,16 +396,38 @@ async function refresh(manual) {
   }
 }
 
-function tickClock() {
+let clockTimer = 0;
+
+function paintClock(date = new Date()) {
+  const text = berlinClockText(date);
+  const iso = date.toISOString();
   const clock = document.getElementById("clock");
-  if (!clock) return;
-  clock.textContent = new Intl.DateTimeFormat("de-DE", { hour: "2-digit", minute: "2-digit" }).format(new Date());
-  clock.dateTime = new Date().toISOString();
+  const minutes = text.slice(0, 5);
+  if (clock && clock.textContent !== minutes) {
+    clock.textContent = minutes;
+    clock.dateTime = iso;
+  }
+  const home = document.getElementById("home-clock");
+  if (home && home.textContent !== text) {
+    home.textContent = text;
+    home.dateTime = iso;
+  }
+  const session = document.getElementById("home-session");
+  if (session) {
+    const label = `US ${usSessionWord(date)}`;
+    if (session.textContent !== label) session.textContent = label;
+  }
+}
+
+function armClock() {
+  window.clearTimeout(clockTimer);
+  if (document.hidden) return;
+  paintClock();
+  clockTimer = window.setTimeout(armClock, 1000 - (Date.now() % 1000));
 }
 
 async function boot() {
-  tickClock();
-  window.setInterval(tickClock, 15000);
+  armClock();
   window.setInterval(tickCountdown, 1000);
   try {
     data = await loadData();
@@ -416,9 +439,14 @@ async function boot() {
   requestAnimationFrame(() => document.body.classList.add("booted"));
   const hiddenAt = { t: 0 };
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "hidden") hiddenAt.t = Date.now();
-    if (document.visibilityState === "visible" && hiddenAt.t && Date.now() - hiddenAt.t > 120000) refresh(false);
-    if (document.visibilityState === "visible") pullPrices();
+    if (document.hidden) {
+      hiddenAt.t = Date.now();
+      window.clearTimeout(clockTimer);
+      return;
+    }
+    armClock();
+    if (hiddenAt.t && Date.now() - hiddenAt.t > 120000) refresh(false);
+    pullPrices();
   });
   pullPrices();
   window.setInterval(pullPrices, 15000);

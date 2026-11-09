@@ -1274,14 +1274,35 @@ function zonedClock(date, timeZone) {
     weekday: "short",
     hour: "2-digit",
     minute: "2-digit",
+    second: "2-digit",
     hourCycle: "h23"
   });
   const parts = Object.fromEntries(fmt.formatToParts(date).map((part) => [part.type, part.value]));
+  const hour = parts.hour === "24" ? 0 : Number(parts.hour);
   return {
-    hour: Number(parts.hour),
+    hour,
     minute: Number(parts.minute),
+    second: Number(parts.second),
     weekday: WEEKDAY_INDEX[parts.weekday]
   };
+}
+
+/** HH:MM:SS in Europe/Berlin. Digits only, so the width stays put. */
+export function berlinClockText(date = new Date()) {
+  const clock = zonedClock(date, "Europe/Berlin");
+  const pad = (value) => String(value).padStart(2, "0");
+  return `${pad(clock.hour)}:${pad(clock.minute)}:${pad(clock.second)}`;
+}
+
+/** US cash session from the New York clock. No network. */
+export function usSessionWord(date = new Date()) {
+  const ny = zonedClock(date, "America/New_York");
+  if (ny.weekday == null || ny.weekday > 4) return "geschlossen";
+  const minutes = ny.hour * 60 + ny.minute;
+  if (minutes >= 4 * 60 && minutes < 9 * 60 + 30) return "vorbörslich";
+  if (minutes >= 9 * 60 + 30 && minutes < 16 * 60) return "offen";
+  if (minutes >= 16 * 60 && minutes < 20 * 60) return "nachbörslich";
+  return "geschlossen";
 }
 
 /**
