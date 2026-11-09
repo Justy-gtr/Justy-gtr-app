@@ -2,6 +2,7 @@ import { BOUNCE_PLAIN, BREAK_LEGEND, N_LEGEND, analyseChart, analyseText } from 
 import { ANALYSE_RANGES, rangeAria, rangeLabel } from "./candles.js";
 import { analysisShowsN } from "./analysis.js";
 import { esc, formatEUR, formatPct, guideStyle, methodLabel, rangeChange } from "./logic.js";
+import { dayPathsFor, renderDayPaths } from "./daypath.js";
 import { renderSeasonalityCard } from "./seasonality.js";
 
 function tone(value) {
@@ -93,5 +94,6 @@ export function renderAnalyse(data, ui) {
     ${musterCard(result)}
     ${renderSeasonalityCard(data?.seasonality, ticker, ui?.analyseSeason)}
     <button type="button" class="text-btn" data-action="explain" data-symbol="${esc(ticker?.symbol || "")}">Warum diese Bewegung?</button>
+    ${renderDayPaths(dayPathsFor(ticker, data?.seasonality))}
   `;
 }

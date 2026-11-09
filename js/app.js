@@ -1,5 +1,6 @@
 import { renderAnalyse } from "./analyse-view.js";
 import { drawCandles } from "./candle-chart.js";
+import { drawDayPaths } from "./daypath.js";
 import { drawCharts } from "./chart.js";
 import { loadData } from "./data.js";
 import { initEggs } from "./eggs.js";
@@ -178,6 +179,7 @@ function render() {
   requestAnimationFrame(() => {
     try { drawCharts(data, ui); } catch { /* Chart bleibt leer, die Seite nicht. */ }
     try { drawCandles(data, ui); } catch { /* Kerzen bleiben leer, die Seite nicht. */ }
+    try { drawDayPaths(data, ui); } catch { /* Tagesverlauf bleibt leer, die Seite nicht. */ }
     tickCountdown();
     try { eggs.afterRender(data); } catch { /* Überraschung ist Beiwerk. */ }
     try { knockout.sync(); } catch { /* Rechner bleibt zu, die Seite nicht. */ }

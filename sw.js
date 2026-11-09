@@ -14,6 +14,7 @@ const CORE = [
   "js/analyse.js",
   "js/candle-chart.js",
   "js/analyse-view.js",
+  "js/daypath.js",
   "js/seasonality.js",
   "js/nav.js",
   "js/views.js",

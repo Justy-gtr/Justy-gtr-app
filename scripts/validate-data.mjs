@@ -345,6 +345,15 @@ if (seasonality) {
     }
     const notes = new Set([EARLY_NOTE_DE, EARLY_NOTE_US, EARLY_NOTE_MIX]);
     if (pack.earlyNote != null && !notes.has(pack.earlyNote)) fail(`seasonality.${symbol}.earlyNote`);
+    if (pack.dayPaths) {
+      const paths = pack.dayPaths;
+      const label = `seasonality.${symbol}.dayPaths`;
+      if (!Array.isArray(paths.days) || paths.days.length !== 5) fail(`${label}.days`);
+      (paths.days || []).forEach((day, index) => {
+        if (!day || !Number.isInteger(day.n) || day.n < 0) fail(`${label}.days.${index}.n`);
+        if (!Array.isArray(day.points)) fail(`${label}.days.${index}.points`);
+      });
+    }
   }
 }
 
