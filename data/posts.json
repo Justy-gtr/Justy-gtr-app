@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-09T09:40:00+01:00",
+  "asOf": "2026-11-09T12:10:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -28,23 +28,23 @@
     "TSLA": {
       "score": 0.15,
       "label": "leicht zuversichtlich",
-      "summary": "Robotaxi startet heute in San Antonio (8. Stadt laut Tesla Magazine). Musk: Cybertruck-Nachfrage größer als Produktion, Linie schließt in ~8 Monaten für Cybercab, viele Anzahlungen gehen zurück. Argentinien 20.11. bestätigt. US-Futures leicht im Plus.",
+      "summary": "Robotaxi wächst: größeres Austin-Gebiet seit 12:00 live, San Antonio laut Tesla ab heute 5 Uhr Ortszeit. Musk: Cybertruck-Linie wird in ~8 Monaten für Cybercab umgebaut, weil eine Großserien-Fabrik „wahnsinnig schwer“ sei. Nasdaq-Futures etwa unverändert, Nvidia vorbörslich ~−4 %.",
       "sources": [
         {
-          "title": "@robotaxi: San Antonio",
+          "title": "@robotaxi: Bigger Austin service area",
+          "url": "https://x.com/robotaxi/status/2119746828191027346"
+        },
+        {
+          "title": "@robotaxi: Robotaxi available in San Antonio",
           "url": "https://x.com/robotaxi/status/2119678179963187564"
         },
         {
-          "title": "@elonmusk: Cybertruck order rate",
-          "url": "https://x.com/elonmusk/status/2119691615774146614"
+          "title": "@elonmusk: insanely hard to build a high-volume factory",
+          "url": "https://x.com/elonmusk/status/2119721986406699185"
         },
         {
-          "title": "@Tesla: Argentina later this month",
-          "url": "https://x.com/Tesla/status/2118720752379899907"
-        },
-        {
-          "title": "CNBC TV18: Nasdaq-Futures drehen ins Plus (9.11.)",
-          "url": "https://www.cnbctv18.com/market/dow-jones-nasdaq-snp-500-nvidia-ceo-jensen-huang-investigation-impact-key-wall-street-triggers-this-week-20029944.htm"
+          "title": "Yahoo Finance: Stock market today (9.11.)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
         }
       ]
     },
@@ -69,6 +69,402 @@
     }
   },
   "posts": [
+    {
+      "id": "post-robotaxi-2119746828191027346",
+      "account": "@robotaxi",
+      "displayName": "Robotaxi",
+      "postedAt": "2026-11-09T12:00:01+01:00",
+      "summaryDe": "Tesla-Robotaxi: Ein größeres Fahrgebiet in Austin ist ab sofort live. Die Karte zeigt die Erweiterung nach Osten (Richtung Manor/Pflugerville), Südosten und Südwesten (Richtung Buda/Lakeway). Fläche nennt Tesla nicht. Gleichzeitig ist der angekündigte Start in San Antonio (5 Uhr Ortszeit = 12:00 Berlin) erreicht.",
+      "originalText": "Bigger Austin service area now live",
+      "url": "https://x.com/robotaxi/status/2119746828191027346",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": true,
+      "example": false,
+      "sources": [
+        {
+          "title": "@robotaxi: Bigger Austin service area now live",
+          "url": "https://x.com/robotaxi/status/2119746828191027346"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119743188978245667",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:45:33+01:00",
+      "summaryDe": "Musk teilt einen spanischen Beitrag: Polens Regierung habe das Facebook-Profil des Schützen von Krakau löschen lassen. Politik, kein Firmenbezug.",
+      "originalText": "RT @hermanntertsch: El gobierno de Donald Tusk ordenó borrar de inmediato el facebook del asesino…",
+      "url": "https://x.com/elonmusk/status/2119743188978245667",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @hermanntertsch: El gobierno de Donald Tusk ord",
+          "url": "https://x.com/elonmusk/status/2119743188978245667"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119742635128840506",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:43:21+01:00",
+      "summaryDe": "Musk teilt einen Beitrag über Bevölkerungsanteile in Europa. Politik, kein Firmenbezug.",
+      "originalText": "RT @RealTrouble_Man: Arabs won't be a minority in Arabia…",
+      "url": "https://x.com/elonmusk/status/2119742635128840506",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @RealTrouble_Man: Arabs won't be a minority in ",
+          "url": "https://x.com/elonmusk/status/2119742635128840506"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119742500042948847",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:42:49+01:00",
+      "summaryDe": "Musk teilt eine Frage an Grok, warum Medien den Schützen von Krakau „rechtsextrem“ nennen. Politik, kein Firmenbezug.",
+      "originalText": "RT @TheGNPE: Hey @grok why are Polish officials and UK media calling the shooter \"far right\"…",
+      "url": "https://x.com/elonmusk/status/2119742500042948847",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @TheGNPE: Hey @grok why are Polish officials an",
+          "url": "https://x.com/elonmusk/status/2119742500042948847"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119742268265640376",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:41:54+01:00",
+      "summaryDe": "Musk nennt einen langen Text von Regisseur Uwe Boll zu Krakau, Medien und Migration „aufschlussreich“. Politik, kein Firmenbezug.",
+      "originalText": "Insightful",
+      "url": "https://x.com/elonmusk/status/2119742268265640376",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Insightful",
+          "url": "https://x.com/elonmusk/status/2119742268265640376"
+        },
+        {
+          "title": "@BollFILMS: The Lonely Wolf Killer in Polen",
+          "url": "https://x.com/BollFILMS/status/2119736520223453329"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119735254366007616",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:14:02+01:00",
+      "summaryDe": "Musk teilt einen Beitrag, der den Schützen von Krakau als linksextrem beschreibt. Politik, kein Firmenbezug.",
+      "originalText": "RT @GabeZZOZZ: Turns out the Krakow shooter is a pro-abortion, pro-LGBT leftist extremist…",
+      "url": "https://x.com/elonmusk/status/2119735254366007616",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @GabeZZOZZ: Turns out the Krakow shooter is a p",
+          "url": "https://x.com/elonmusk/status/2119735254366007616"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119734624536674678",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:11:31+01:00",
+      "summaryDe": "Musk teilt einen Bericht über ein Opfer von Grooming-Banden in Großbritannien. Politik, kein Firmenbezug.",
+      "originalText": "RT @toadmeister: A grooming gang survivor raped by at least 50 men was handed back to her abusers by police…",
+      "url": "https://x.com/elonmusk/status/2119734624536674678",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @toadmeister: A grooming gang survivor raped by",
+          "url": "https://x.com/elonmusk/status/2119734624536674678"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119734509998641200",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:11:04+01:00",
+      "summaryDe": "Auf den Kommentar „Er kümmert sich wirklich“ zu seinem Grok-Reparatur-Post antwortet Musk: „Ja.“ Nichts Neues.",
+      "originalText": "@ns123abc Yes",
+      "url": "https://x.com/elonmusk/status/2119734509998641200",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @ns123abc Yes",
+          "url": "https://x.com/elonmusk/status/2119734509998641200"
+        },
+        {
+          "title": "@ns123abc: He genuinely cares",
+          "url": "https://x.com/ns123abc/status/2119711872303653007"
+        },
+        {
+          "title": "@elonmusk: Grok fixes overnight",
+          "url": "https://x.com/elonmusk/status/2119617455102333206"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119734344705249677",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:10:25+01:00",
+      "summaryDe": "Musk teilt ein Bild ohne Text von @TheJadeWarwick. Kein Firmenbezug.",
+      "originalText": "RT @TheJadeWarwick: (Bild)",
+      "url": "https://x.com/elonmusk/status/2119734344705249677",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @TheJadeWarwick: (Bild)",
+          "url": "https://x.com/elonmusk/status/2119734344705249677"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119734126282694758",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:09:33+01:00",
+      "summaryDe": "Musk teilt einen japanischen Witz-Beitrag: Nvidias Chef sei auf eine Spionin hereingefallen, Musk dagegen zeige Frauen wirklich nur Raketenbilder. Spaß, keine Nachricht.",
+      "originalText": "RT @pondebekkio: NVIDIAの革ジャンが中華4000年の歴史から繰り出されるハニートラップにやられた今…",
+      "url": "https://x.com/elonmusk/status/2119734126282694758",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @pondebekkio: NVIDIAの革ジャンが中華4000年の歴史から繰り出されるハニー",
+          "url": "https://x.com/elonmusk/status/2119734126282694758"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119733718856388951",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:07:55+01:00",
+      "summaryDe": "Musk teilt eine Behauptung über die politische Haltung eines Schützen. Politik, kein Firmenbezug.",
+      "originalText": "RT @WallStreetMav: The shooter was a gay communist.",
+      "url": "https://x.com/elonmusk/status/2119733718856388951",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @WallStreetMav: The shooter was a gay communist",
+          "url": "https://x.com/elonmusk/status/2119733718856388951"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119733594830848493",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:07:26+01:00",
+      "summaryDe": "Musk teilt erneut Kritik an Dave Chappelle wegen Witzen über den ermordeten Charlie Kirk. Politik, kein Firmenbezug.",
+      "originalText": "RT @mattvanswol: Dear @DaveChappelle, You're not the \"free speech\" guy…",
+      "url": "https://x.com/elonmusk/status/2119733594830848493",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @mattvanswol: Dear @DaveChappelle, You're not t",
+          "url": "https://x.com/elonmusk/status/2119733594830848493"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119732823569604963",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:04:22+01:00",
+      "summaryDe": "Musk teilt einen Beitrag über britische Behörden und Opferfamilien. Politik, kein Firmenbezug.",
+      "originalText": "RT @NiohBerg: Did you know? When a British person is murdered or raped by an imported foreigner…",
+      "url": "https://x.com/elonmusk/status/2119732823569604963",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @NiohBerg: Did you know? When a British person ",
+          "url": "https://x.com/elonmusk/status/2119732823569604963"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119732549010464959",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T11:03:17+01:00",
+      "summaryDe": "Musk teilt eine Frage zum Urteil gegen Russell Brand und zu den Epstein-Akten. Politik, kein Firmenbezug.",
+      "originalText": "RT @DavidWolfe: If Russell Brand is facing prison for rape allegations dating back 20 years…",
+      "url": "https://x.com/elonmusk/status/2119732549010464959",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @DavidWolfe: If Russell Brand is facing prison ",
+          "url": "https://x.com/elonmusk/status/2119732549010464959"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119726846912942305",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T10:40:37+01:00",
+      "summaryDe": "Musk antwortet auf ein Vergleichsbild zu seinem Chappelle-Post: „Großer Unterschied.“ Kein Firmenbezug.",
+      "originalText": "@DefiantLs Big difference",
+      "url": "https://x.com/elonmusk/status/2119726846912942305",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @DefiantLs Big difference",
+          "url": "https://x.com/elonmusk/status/2119726846912942305"
+        },
+        {
+          "title": "@DefiantLs: The difference",
+          "url": "https://x.com/DefiantLs/status/2119687643353301220"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119726824662122530",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T10:40:32+01:00",
+      "summaryDe": "Musk teilt dasselbe Vergleichsbild von @DefiantLs. Kein Firmenbezug.",
+      "originalText": "RT @DefiantLs: @elonmusk The difference.",
+      "url": "https://x.com/elonmusk/status/2119726824662122530",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @DefiantLs: @elonmusk The difference.",
+          "url": "https://x.com/elonmusk/status/2119726824662122530"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119721986406699185",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T10:21:18+01:00",
+      "summaryDe": "Auf die Frage, warum Tesla nicht einfach mehr Fabrikfläche baut, statt die Cybertruck-Linie für den Cybercab umzubauen: Eine Fabrik für hohe Stückzahlen zu bauen sei „wahnsinnig schwer“, Prototypen seien dagegen trivial. Erklärung, keine neue Zahl.",
+      "originalText": "@OwenSparks It is insanely fucking hard to build a high-volume factory. That’s why. Prototypes are trivial by comparison.",
+      "url": "https://x.com/elonmusk/status/2119721986406699185",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @OwenSparks It is insanely fucking hard to build a",
+          "url": "https://x.com/elonmusk/status/2119721986406699185"
+        },
+        {
+          "title": "@OwenSparks: Why not just build more factory space?",
+          "url": "https://x.com/OwenSparks/status/2119696021991432450"
+        },
+        {
+          "title": "@elonmusk: Cybertruck line",
+          "url": "https://x.com/elonmusk/status/2119691615774146614"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119721189413372375",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T10:18:08+01:00",
+      "summaryDe": "Musk teilt einen Gedanken von Peter Hague: Ein Land könne einen großen Vorsprung aus kurzfristigen Gründen verspielen. Allgemein, kein Firmenbezug.",
+      "originalText": "RT @peterrhague: It’s a metaphor I keep coming back to; a nation can have a decisive lead and then simply throw it away…",
+      "url": "https://x.com/elonmusk/status/2119721189413372375",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @peterrhague: It’s a metaphor I keep coming bac",
+          "url": "https://x.com/elonmusk/status/2119721189413372375"
+        }
+      ]
+    },
     {
       "id": "post-musk-2119692756914483352",
       "account": "@elonmusk",
@@ -4191,5 +4587,5 @@
       ]
     }
   ],
-  "notes": "09.11. 08:45: Tesla-Robotaxi-Konto kündigt San Antonio an (wichtig, Start heute 5 Uhr Ortszeit = 12:00 Berlin). Musk: Cybertruck-Linie schließt in ~8 Monaten, viele Anzahlungen gehen zurück; dazu Politik-Retweets, Starlink Fidschi. Keine neuen Posts von SpaceX, Tesla, Starlink, Rocket Lab, Neuralink, xAI, Boring. ESCAPADE-Blue weiter ohne offizielle Bestätigung; Gold heute 11:51."
+  "notes": "09.11. 11:30: 17 neue Musk-Posts seit 08:25 (fast nur Politik-Retweets; zum Cybercab-Umbau: „eine Fabrik für hohe Stückzahlen ist wahnsinnig schwer, Prototypen trivial“). Wichtig: @robotaxi meldet um 12:00 ein größeres Fahrgebiet in Austin. Keine neuen Posts von SpaceX, Tesla, Starlink, Rocket Lab, Neuralink, xAI, Boring. ESCAPADE: weder Blue- noch Gold-Burn offiziell bestätigt (Stand 12:05)."
 }

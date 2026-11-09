@@ -4182,31 +4182,27 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Kein US-Handel seit Freitag (Schluss ~134 $, ~+8,6 %). Mo früh: Nasdaq-Futures erst im Plus, dann leicht im Minus (~−0,3 bis −0,5 %) wegen der Untersuchung gegen Nvidia-Chef Huang. Neu: SpaceX plant in Starbase Gaskraftwerk und Supercomputer (~24 Mrd. $), Anhörung 9.12. Heute 18:00 Trump–Katar, Di 04:03 USSF-627, Di 14:30 CPI.",
+      "why": "Kein US-Handel seit Freitag (Schluss 134,27 $, +8,6 % zum Donnerstag). Die angezeigten −0,3 % vergleichen mit einem falschen Schlusskurs, nicht mit Freitag. Mo: Nasdaq-Futures etwa unverändert, Nvidia vorbörslich ~−4 % wegen der Huang-Untersuchung. Heute 18:00 Trump–Katar, Di 04:03 USSF-627, Di 14:30 CPI.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX",
-          "url": "https://finance.yahoo.com/quote/SPCX/"
+          "title": "Yahoo Finance SPCX: Tagesschlusskurse",
+          "url": "https://finance.yahoo.com/quote/SPCX/history/"
         },
         {
-          "title": "Investing.com: Nasdaq-100-Futures (9.11. 07:40)",
-          "url": "https://uk.investing.com/indices/nq-100-futures-historical-data"
+          "title": "Yahoo Finance: Stock market today (9.11.)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
         },
         {
-          "title": "CNBC TV18: Nasdaq-Futures drehen wegen Nvidia ins Minus (9.11.)",
-          "url": "https://www.cnbctv18.com/market/dow-jones-nasdaq-snp-500-nvidia-ceo-jensen-huang-investigation-impact-key-wall-street-triggers-this-week-20029944.htm"
+          "title": "Globe and Mail/Reuters: Nasdaq-Futures flach, Nvidia −4 %",
+          "url": "https://www.theglobeandmail.com/investing/markets/inside-the-market/market-news/article-premarket-stocks-edge-up-but-nvidia-woes-pose-a-fresh-test-oil-falls/"
         },
         {
-          "title": "The 956 Report: Starbase-Supercomputer",
-          "url": "https://www.the956report.com/post/spacex-wants-a-tax-break-for-a-24-billion-gas-plant-and-super-compute-facility-in-starbase"
-        },
-        {
-          "title": "FXStreet/Reuters: Treffen 17:00 GMT im Weißen Haus",
+          "title": "FXStreet/Reuters: Trump trifft Katars Premier",
           "url": "https://www.fxstreet.com/news/us-president-donald-trump-will-meet-qatars-prime-minister-on-monday-202611090430"
         },
         {
-          "title": "SpaceX: Startliste",
-          "url": "https://www.spacex.com/launches/"
+          "title": "SpaceX: USSF-627",
+          "url": "https://www.spacex.com/launches/ussf627"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -14607,27 +14603,23 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Die angezeigten etwa −9,8 % sind die Wochenbewegung, kein neuer Absturz. Xetra früh ~320 € (~−1 % zum Freitag), Nasdaq-Futures leicht im Minus wegen Nvidia. Robotaxi startet heute 12:00 Berlin in San Antonio; Musk: Cybertruck-Linie schließt in ~8 Monaten für Cybercab.",
+      "why": "Die angezeigten etwa −12 % sind der Abstand zum Schluss vom 2.11. (367 €), kein Absturz heute. Zum Freitag (323,70 €) liegt Xetra bei ~321 € (~−1 %). Nasdaq-Futures etwa unverändert. Robotaxi: größeres Austin-Gebiet seit 12:00 live, San Antonio laut Tesla ab heute.",
       "whySources": [
         {
-          "title": "Yahoo Finance: TL0.DE",
-          "url": "https://finance.yahoo.com/quote/TL0.DE/"
+          "title": "Yahoo Finance TL0.DE: Tagesschlusskurse",
+          "url": "https://finance.yahoo.com/quote/TL0.DE/history/"
         },
         {
-          "title": "Investing.com: Nasdaq-100-Futures (9.11. 07:40)",
-          "url": "https://uk.investing.com/indices/nq-100-futures-historical-data"
+          "title": "Yahoo Finance: Stock market today (9.11.)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
         },
         {
-          "title": "CNBC TV18: Nasdaq-Futures drehen wegen Nvidia ins Minus (9.11.)",
-          "url": "https://www.cnbctv18.com/market/dow-jones-nasdaq-snp-500-nvidia-ceo-jensen-huang-investigation-impact-key-wall-street-triggers-this-week-20029944.htm"
+          "title": "@robotaxi: Bigger Austin service area now live",
+          "url": "https://x.com/robotaxi/status/2119746828191027346"
         },
         {
-          "title": "@robotaxi: San Antonio",
+          "title": "@robotaxi: Robotaxi available in San Antonio",
           "url": "https://x.com/robotaxi/status/2119678179963187564"
-        },
-        {
-          "title": "@elonmusk: Cybertruck order rate",
-          "url": "https://x.com/elonmusk/status/2119691615774146614"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -25269,19 +25261,15 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Kein US-Handel seit Freitag (Schluss ~53 $, ~+15 %). Frankfurt früh ~46,2 € (~−2,4 %) bei dünnem Handel; keine eigene Nachricht gefunden, Nasdaq-Futures leicht im Minus. Heute: ESCAPADE-Gold-Burn 11:51, Q3-Zahlen 23:00. Blue-Burn vom 7.11. weiter nicht offiziell bestätigt (Stand 09:40).",
+      "why": "Die angezeigten −6,3 % sind der Abstand zum Schluss vom 2.11. (49,80 €). Zum Freitag (47,35 €) liegt Frankfurt bei 46,65 € (~−1,5 %), dünner Handel, keine eigene Nachricht. Heute 23:00 Q3-Zahlen: Konsens ~257 Mio. $ Umsatz, Marge laut Prognose 29–31 %. ESCAPADE: Gold-Burn um 11:51 geplant, Bestätigung fehlt noch.",
       "whySources": [
         {
-          "title": "Yahoo Finance: 6RJ0.F",
-          "url": "https://finance.yahoo.com/quote/6RJ0.F/"
+          "title": "Yahoo Finance 6RJ0.F: Tagesschlusskurse",
+          "url": "https://finance.yahoo.com/quote/6RJ0.F/history/"
         },
         {
-          "title": "Investing.com: Nasdaq-100-Futures (9.11. 07:40)",
-          "url": "https://uk.investing.com/indices/nq-100-futures-historical-data"
-        },
-        {
-          "title": "@NASASolarSystem: Flyby #2 is tonight",
-          "url": "https://x.com/NASASolarSystem/status/2119494168728789467"
+          "title": "EBC: RKLB Q3-Vorschau",
+          "url": "https://www.ebc.com/forex/rocket-lab-rklb-q3-2026-earnings-preview"
         },
         {
           "title": "NASA ESCAPADE Blog",
