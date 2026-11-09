@@ -27,7 +27,8 @@ import {
   scoreboard,
   seriesFor,
   trackSummary,
-  bigDrop
+  bigDrop,
+  historySentence
 } from "./logic.js";
 
 const STATUS = {
@@ -547,6 +548,7 @@ function renderChartsPage(data, ui) {
 
 function renderMehr() {
   const items = [
+    ["open-moonshots", "Moonshots", "Kandidaten mit Kurstreibern"],
     ["open-insiders", "Insider-Käufe", "Wer kauft eigene Aktien"],
     ["open-track", "Treffer-Check", "Karls alte Favoriten"],
     ["open-promises", "Versprechen", "Gesagt, Ziel, Verzug"],
@@ -592,7 +594,69 @@ export function detailContent(action, dataset, ctx) {
   if (action === "open-briefing") return briefingDetail(data.briefing, "Morgen-Briefing");
   if (action === "open-weekly") return weeklyDetail(data.weekly);
   if (action === "open-alerts") return alertsDetail(data);
+  if (action === "open-moonshots") return moonshotsDetail(data);
   return null;
+}
+
+function catalystWhen(catalyst) {
+  const day = formatDay(catalyst?.date);
+  const year = String(catalyst?.date || "").slice(0, 4);
+  const clock = catalyst?.time ? `, ${catalyst.time} Uhr Berlin` : "";
+  return [day, year].filter(Boolean).join(" ") + clock;
+}
+
+function moonshotsDetail(data) {
+  const file = data?.moonshots;
+  const list = file?.candidates || [];
+  const fx = file?.fx?.source;
+  return {
+    kind: "moonshots",
+    title: "Moonshots",
+    html: `
+      <p class="banner">${esc(file?.disclaimer || "Keine Anlageberatung. Hebel kann Totalverlust bedeuten. Vergangenheit, keine Vorhersage.")}</p>
+      <p class="lede">Kandidaten mit Kurstreibern. Fakten und alte Tage.</p>
+      <p class="muted">n ist die Zahl der Termine oder Tage. Unter 7 keine Prozentzahl.</p>
+      ${list.map((item) => moonshotCard(item)).join("") || `<p class="empty">Noch keine Kandidaten.</p>`}
+      ${fx ? sourcesBlock([fx]) : ""}
+    `
+  };
+}
+
+function moonshotCard(item) {
+  const history = item.history || {};
+  const points = [
+    ["for", "Was dafür spricht", item.for],
+    ["against", "Was dagegen spricht", item.against]
+  ];
+  return `
+    <article class="card moon">
+      <div class="moon-price">
+        <div>
+          <p class="kicker">${esc(item.symbol)}</p>
+          <h3>${esc(item.name)}</h3>
+          <p class="price-value">${esc(formatEUR(item.priceEur))} <span class="${tone(item.changePct)}">${esc(formatPct(item.changePct))}</span></p>
+        </div>
+        ${sparkline(item.sparkline)}
+      </div>
+      <p class="muted">${esc(methodLabel({ eurMethod: item.eurMethod }))}</p>
+      <p><strong>${esc(item.catalyst?.label || "Termin")}</strong></p>
+      <p>${esc(catalystWhen(item.catalyst))}</p>
+      ${item.catalyst?.detail ? `<p class="muted">${esc(item.catalyst.detail)}</p>` : ""}
+      ${points.map(([key, title, lines]) => `
+        <p class="kicker">${esc(title)}</p>
+        <ul class="moon-points">${(lines || []).map((line) => `<li>${esc(line)}</li>`).join("")}</ul>
+      `).join("")}
+      <p class="moon-stat">${esc(historySentence(history.catalystLabel || "Nach Zahlen", history.catalyst))}</p>
+      <p class="moon-stat">${esc(historySentence(history.daysLabel || "Große Tage", history.days))}</p>
+      ${history.note ? `<p class="muted">${esc(history.note)}</p>` : ""}
+      <p class="moon-isin">Mit Hebel bei Trade Republic: ja (ISIN ${esc(item.leverage?.isin || "—")})</p>
+      <p class="muted">${esc(item.leverage?.how || "")}</p>
+      <p class="muted">Stand ${esc(formatStamp(item.asOf))}</p>
+      <details class="fold">
+        <summary>Quellen</summary>
+        <div class="fold-body">${sourcesBlock([...(item.sources || []), item.marketSource].filter(Boolean), { labeled: false }) || `<p class="empty">Keine Quellen.</p>`}</div>
+      </details>
+    </article>`;
 }
 
 function favoriteDetail(data, id, ui) {

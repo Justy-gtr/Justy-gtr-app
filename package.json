@@ -6,6 +6,7 @@
     "test": "node --test scripts/*.test.mjs",
     "validate": "node scripts/validate-data.mjs",
     "prices": "node scripts/fetch-prices.mjs --dry-run",
+    "moonshots": "node scripts/fetch-moonshots.mjs",
     "seasonality": "node scripts/fetch-seasonality.mjs"
   }
 }

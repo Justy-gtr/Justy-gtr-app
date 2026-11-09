@@ -50,13 +50,17 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: node scripts/fetch-seasonality.mjs
 
+      - name: Moonshots
+        if: steps.gate.outputs.run == 'true'
+        run: node scripts/fetch-moonshots.mjs
+
       - name: Nur bei Änderung committen
         id: commit
         if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/prices.json data/alerts.json data/meta.json data/seasonality.json
+          git add data/prices.json data/alerts.json data/meta.json data/seasonality.json data/moonshots.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "sha=" >> "$GITHUB_OUTPUT"

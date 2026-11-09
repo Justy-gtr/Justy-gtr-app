@@ -27,6 +27,7 @@ Der Kurs-Workflow ändert `dataMode` nicht.
 | `prices.json` | `why`, `whySources`, `longTermOutlook`, `counterArgument`, `firstPrinciples`, `notes`, `narrativeExample` | alle Kurs-, Historien- und Quellenfelder der Börse, `asOf`, `fx`, `example: false` nach erfolgreichem Abruf |
 | `alerts.json` | nur `notified` auf `true` setzen | Einträge anlegen und Kursfelder aktualisieren, `example`-Alerts nach einem erfolgreichen Lauf entfernen |
 | `seasonality.json` | fasst sie nicht an | Wochentag und Uhrzeit je Aktie, einmal je Berliner Tag, ohne Rohkurse |
+| `moonshots.json` | Texte, Termin, Quellen, `pastCatalysts`, Hebel-ISIN | `priceEur`, `changePct`, `sparkline`, `asOf`, `fx`, die Zählung in `history` |
 | alle anderen | vollständig | fasst sie nicht an |
 
 `narrativeExample`: `true`, solange `why` und der Langfrist-Text noch aus dem Seed stammen. Der Workflow übernimmt den Text und lässt die Flagge auf `true`, bis der Assistent sie auf `false` setzt. Dann bleibt sie `false`.
@@ -515,6 +516,12 @@ Feste Ids: `spacex`, `tesla`, `rocketlab`, `neuralink`, `xai`, `terafab`, `borin
 Eigene Historie je Aktie: wie oft Schluss zu Schluss an einem Wochentag stieg, und wie sich die Stunden in Berliner Zeit verhalten. Keine Rohkurse. Der Kurs-Workflow schreibt die Datei höchstens einmal je Berliner Tag neu (`scripts/fetch-seasonality.mjs`). Die Analyse-Spanne ändert diese Karte nicht.
 
 `ranges.all` ist bis zu zwei Jahre, `ranges.year` die letzten 365 Tage bis zum letzten Tageskurs. `days` ist Mo–Fr mit `n`, `up`, `avg`, `med` (Prozent, Schluss zu Schluss). `hours` und `grid` sind die Berliner Slots `08`–`14` (volle Stunde), `15:00` (nur bis 15:30) und danach `15:30`–`21:30` der US-Sitzung. Die Uhrzeit kommt vom echten Zeitstempel, damit die Sommerzeit nicht verrutscht. Vor 15:30 zählt der deutsche Yahoo-Kurs mit den meisten Stunden (Tesla `TL0.DE`/`TL0.F`, Rocket Lab `6RJ0.F`/`6RJ0.MU`), sonst die US-Vorbörse, die etwa um 10:00 beginnt. SpaceX hat keinen deutschen Kurs. Beides wird nicht in derselben Stunde gemischt. `earlyNote` sagt auf der Karte, welche Quelle die frühen Stunden trägt. Prozent zeigt die App erst ab sieben Fällen.
+
+## `moonshots.json`
+
+Drei Kandidaten mit einem datierten Termin, erreichbar unter Mehr. Keine Anlageberatung: die Sätze enthalten nicht „kaufen“, „verkaufen“, „Empfehlung“ oder „wird steigen“.
+
+Der Assistent pflegt Name, `for`, `against`, `catalyst`, `pastCatalysts.dates`, `leverage` und `sources`. `scripts/fetch-moonshots.mjs` im Kurs-Workflow schreibt Kurs, Sparkline, `fx` und die Zählung. Die Zählung nimmt gut zwei Jahre Yahoo-Tagesschluss. `history.catalyst` ist der nächste Handelstag nach einem Termin nach US-Schluss, Schluss zu Schluss. `history.days` ist der Anteil der Tage mit einer Bewegung von mindestens 5 Prozent. Prozent erst ab `n` von 7. Die drei Fokus-Ticker SPCX, TSLA und RKLB kommen hier nicht vor.
 
 ## Prüfung
 
