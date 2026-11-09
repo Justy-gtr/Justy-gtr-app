@@ -1,5 +1,5 @@
 import { chartAnalysis } from "./analysis.js";
-import { guideLegend, musterCard, rangeBoard } from "./analyse-view.js";
+import { musterCard } from "./analyse-view.js";
 import { sparkline } from "./chart.js";
 import {
   esc,
@@ -21,6 +21,8 @@ import {
   vsSwarmVerdict,
   methodLabel,
   OVERNIGHT_LABEL,
+  CHART_RANGES,
+  instrumentSeries,
   rangeChange,
   safeUrl,
   pendingDailyQuestion,
@@ -523,22 +525,44 @@ function renderSchwarm(data) {
   `;
 }
 
-function renderChartsPage(data, ui) {
+function instrumentMove(change) {
+  if (change == null || Number.isNaN(Number(change))) return `<span class="flat">—</span>`;
+  const body = new Intl.NumberFormat("de-DE", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  }).format(Math.abs(Number(change)));
+  if (change > 0) return `<span class="up">▲ ${esc(body)} %</span>`;
+  if (change < 0) return `<span class="down">▼ ${esc(body)} %</span>`;
+  return `<span class="flat">${esc(body)} %</span>`;
+}
+
+export function renderChartsPage(data, ui) {
   const ticker = tickerBy(data, ui.chartSymbol) || data.prices?.tickers?.[0];
-  const { points, range } = seriesFor(ticker, ui.chartRange, ui.langfrist);
-  const change = rangeChange(points);
-  const analysis = chartAnalysis(ticker, ui.chartRange, ui.langfrist);
+  const active = CHART_RANGES.includes(ui.chartRange) ? ui.chartRange : "1T";
+  const shown = ui.langfrist ? seriesFor(ticker, active, true) : instrumentSeries(ticker, active);
+  const change = rangeChange(shown.points);
+  const analysis = chartAnalysis(ticker, active, ui.langfrist);
+  const lit = CHART_RANGES.includes(shown.range) ? shown.range : active;
   return `
-    <header class="page-head">
-      <p class="eyebrow">Kurs in Euro</p>
-      <h2>${esc(ticker?.name || "Kurs")}</h2>
-      <p class="price-value">${esc(formatEUR(ticker?.priceEur))} <span class="${tone(change)}">${esc(formatPct(change))}</span></p>
-      ${priceFacts(ticker)}
-      <p class="muted chart-note"><span class="live-flag" data-live-flag ${ui.live ? "" : "hidden"}><span class="live-dot" aria-hidden="true"></span>Live</span><span>${esc(methodLabel(ticker || {}))} · Spanne ${esc(range)}</span></p>
-    </header>
-    <div class="chips">${(data.prices?.tickers || []).map((item) => `
-      <button type="button" class="chip" data-action="chart-symbol" data-symbol="${esc(item.symbol)}" aria-pressed="${item.symbol === ticker?.symbol}">${esc(item.symbol)}</button>`).join("")}</div>
-    ${rangeBoard(range, "chart-range")}
+    <div class="instrument">
+      <div class="chips">${(data.prices?.tickers || []).map((item) => `
+        <button type="button" class="chip" data-action="chart-symbol" data-symbol="${esc(item.symbol)}" aria-pressed="${item.symbol === ticker?.symbol}">${esc(item.symbol)}</button>`).join("")}</div>
+      <header class="instrument-head">
+        <div class="instrument-id">
+          <img class="instrument-logo" src="icons/logo.svg" width="28" height="28" alt="">
+          <h2>${esc(ticker?.name || "Kurs")}</h2>
+          <span class="live-flag" data-live-flag ${ui.live ? "" : "hidden"}><span class="live-dot" aria-hidden="true"></span>Live</span>
+        </div>
+        <p class="instrument-price">${esc(formatEUR(ticker?.priceEur))} ${instrumentMove(change)}</p>
+      </header>
+      <div class="instrument-ranges" role="group" aria-label="Zeitraum">${CHART_RANGES.map((item) => `
+        <button type="button" data-action="chart-range" data-range="${esc(item)}" aria-pressed="${item === lit ? "true" : "false"}">${esc(item)}</button>`).join("")}</div>
+      <div class="chart-wrap instrument-chart">
+        <p class="scrub"></p>
+        <canvas class="chart chart-price" data-chart="price" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kurslinie in Euro. Ziehen zeigt Datum, Uhrzeit, Kurs und Veränderung."></canvas>
+      </div>
+      <p class="muted chart-note">${esc(methodLabel(ticker || {}))}</p>
+    </div>
     <button type="button" class="switch" data-action="langfrist" role="switch" aria-checked="${ui.langfrist ? "true" : "false"}">
       <span class="switch-copy">
         <strong>Langfrist-Brille</strong>
@@ -546,11 +570,6 @@ function renderChartsPage(data, ui) {
       </span>
       <span class="knob" aria-hidden="true"></span>
     </button>
-    <div class="card chart-wrap">
-      <p class="scrub"></p>
-      <canvas class="chart chart-price" data-chart="price" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kurschart in Euro. Ziehen zeigt Zeitpunkt, Kurs und Veränderung."></canvas>
-      ${guideLegend(analysis.lines)}
-    </div>
     ${musterCard(analysis)}
     ${ui.langfrist ? `<article class="card"><p class="kicker">Langfrist</p><p>${esc(ticker?.longTermOutlook || "Noch kein Langfrist-Text.")}</p>${ticker?.narrativeExample ? pill(true) : ""}</article>` : ""}
     <button type="button" class="text-btn" data-action="explain" data-symbol="${esc(ticker?.symbol || "")}">Warum diese Bewegung?</button>

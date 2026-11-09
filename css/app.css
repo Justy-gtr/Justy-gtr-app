@@ -411,6 +411,84 @@ button.card { border-radius: 24px; }
   border-left: 0;
   border-right: 0;
 }
+body[data-page="charts"] {
+  background: #000;
+}
+body[data-page="charts"]::before {
+  opacity: 0;
+}
+body[data-page="charts"] .app,
+#page-charts {
+  background: #000;
+}
+.instrument { color: #f4f6f8; }
+.instrument-head { padding: 2px 2px 0; }
+.instrument-id {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.instrument-id h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+.instrument-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  flex: none;
+}
+.instrument-id .live-flag { margin-left: auto; }
+.instrument-price {
+  margin: 6px 0 0;
+  font-size: 34px;
+  line-height: 1.05;
+  font-weight: 720;
+  letter-spacing: -0.045em;
+  font-variant-numeric: tabular-nums;
+}
+.instrument-price .up,
+.instrument-price .down,
+.instrument-price .flat {
+  font-size: 16px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  margin-left: 8px;
+}
+.instrument-price .up { color: #3ddc84; }
+.instrument-price .down { color: #ff5d6c; }
+.instrument-ranges {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 4px 6px 0;
+}
+.instrument-ranges button {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  color: #8d95a8;
+  font-size: 15px;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  min-height: 36px;
+  padding: 0;
+}
+.instrument-ranges button[aria-pressed="true"] {
+  color: #3ddc84;
+}
+.instrument-chart {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.instrument-chart .chart-price {
+  height: min(420px, 50dvh);
+  background: transparent;
+}
 .chart { width: 100%; height: 260px; display: block; }
 .chart.chart-price { height: min(340px, 42dvh); }
 .chart.mini { height: 64px; }

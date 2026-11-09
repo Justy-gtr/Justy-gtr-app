@@ -1,11 +1,13 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
-import { BOUNCE_FEW, BOUNCE_LOOK, BOUNCE_PLAIN, BREAK_LEGEND, N_LEGEND, analyseCandles, analyseChart, analyseText, countLevelBounces, describeLevelBounces, detectShape, levelMarkLabel, numberLevelMarks } from "../js/analyse.js";
+import { BOUNCE_FEW, BOUNCE_LOOK, BOUNCE_PLAIN, BREAK_LEGEND, N_LEGEND, analyseCandles, analyseChart, analyseText, countLevelBounces, describeLevelBounces, detectShape, levelMarkLabel, levelPriceTag, levelSideName, numberLevelMarks } from "../js/analyse.js";
 import { guideLegend, musterCard, rangeBoard, renderAnalyse } from "../js/analyse-view.js";
 import { MIN_CASES, analysisText, chartAnalysis } from "../js/analysis.js";
+import { nameAnchorX, pickNameY, settlePriceTags, visibleGridLabels } from "../js/candle-chart.js";
 import { ANALYSE_RANGES, bucketCandles, candleColor, candlesFor, formatMove, isUsefulFourHour, scrubLabel } from "../js/candles.js";
-import { chartAxisLabels, formatEUR, guideLabelsToDraw, scrubDelta, seriesFor, VISIBLE_BARS } from "../js/logic.js";
+import { chartAxisLabels, formatEUR, guideLabelsToDraw, HOURLY_BAR_CAP, instrumentAxisLabels, instrumentSeries, scrubDelta, seriesFor, tradingSessionCount, VISIBLE_BARS } from "../js/logic.js";
+import { renderChartsPage } from "../js/views.js";
 import { aggregateBars } from "./market.mjs";
 
 const ADVICE = /\b(kaufen|verkaufen|kauft|verkauft|kauf|verkauf|long|short|empfehl\w*|signal|tipp)\b/i;
@@ -35,7 +37,7 @@ function extraHigh(values, index) {
 }
 
 test("Chartanalyse hat genau diese Spannen und keine 1 Min", () => {
-  assert.deepEqual(ANALYSE_RANGES, ["5 Min", "15 Min", "4 Std", "1T", "3T", "1W", "1M", "6M", "1J", "Max"]);
+  assert.deepEqual(ANALYSE_RANGES, ["5 Min", "15 Min", "4 Std", "1T", "1 Std", "1W", "1M", "6M", "1J", "Max"]);
   assert.equal(ANALYSE_RANGES.includes("1 Min"), false);
   assert.equal(ANALYSE_RANGES.includes("10 Min"), false);
 });
@@ -55,13 +57,16 @@ test("15-Minuten-Kerzen nehmen nur Drucke aus dem Block", () => {
   assert.equal(bars[0].low, 100);
 });
 
-test("1T ist ein Tag, 3T sind drei Tageskurse, 4 Std wird nicht aus einer Sitzung gebaut", () => {
+test("1T ist ein Tag, 1 Std nimmt Stunden und nicht drei Tageskurse, 4 Std wird nicht aus einer Sitzung gebaut", () => {
   const daily = Array.from({ length: 10 }, (_, index) => ({ t: `2026-10-${String(index + 1).padStart(2, "0")}`, eur: 10 + index }));
   const ticker = { history: { "1M": daily, intraday: daily.map((point) => ({ ...point, t: `${point.t}T14:00:00Z` })) } };
   assert.equal(candlesFor(ticker, "1T").candles.length, 1);
   assert.equal(candlesFor(ticker, "1T").candles[0].eur, 19);
-  const three = candlesFor(ticker, "3T").candles;
-  assert.deepEqual(three.map((candle) => candle.eur), [17, 18, 19]);
+  const hours = candlesFor(ticker, "1 Std").candles;
+  assert.equal(hours.at(-1).eur, 19);
+  assert.ok(hours.length > 3);
+  assert.ok(hours.length <= 10);
+  assert.notDeepEqual(hours.map((candle) => candle.eur), [17, 18, 19]);
   const missing = candlesFor(ticker, "4 Std");
   assert.equal(missing.missing, true);
   assert.equal(missing.candles.length, 0);
@@ -140,7 +145,7 @@ test("n erklärt die eigene Aktie, auch unter sieben Fällen", () => {
   assert.match(html, /dieser Aktie/);
   assert.match(html, /nicht den ganzen Markt/);
   assert.equal(/\b(kaufen|verkaufen)\b/i.test(html), false);
-  const quiet = analyseCandles(pathCandles([1, 2, 3]), pathCandles([1, 2, 3]), "3T");
+  const quiet = analyseCandles(pathCandles([1, 2, 3]), pathCandles([1, 2, 3]), "1 Std");
   assert.equal(musterCard(quiet).includes(N_LEGEND), false);
 });
 
@@ -170,7 +175,10 @@ test("Linie und Kerzen nutzen dieselbe Spannenleiste", () => {
   assert.equal(day.points.at(-1).eur, 129);
   assert.ok(day.points.length > 1);
   assert.equal(day.points.every((point) => point.t.startsWith("2026-11-06")), true);
-  assert.equal(seriesFor(ticker, "3T").points.length, 3);
+  const hourLine = seriesFor(ticker, "1 Std");
+  assert.equal(hourLine.range, "1 Std");
+  assert.equal(hourLine.points.at(-1).eur, 129);
+  assert.equal(hourLine.points.every((point) => point.t.startsWith("2026-11-06")), true);
   assert.equal(seriesFor(ticker, "4 Std").points.length, 0);
   const long = {
     history: {
@@ -590,6 +598,11 @@ test("Markierungen auf der Kerze sind genau die gezählten Berührungen", () => 
         const caption = levelMarkLabel(level.kind, line);
         if (again.n > 0) assert.equal(caption, `${numbered} ${formatEUR(level.eur)} · ${again.bounce}/${again.n}`);
         else if (level.eur != null) assert.equal(caption, `${numbered} ${formatEUR(level.eur)}`);
+        assert.equal(levelPriceTag(line.eur ?? line.eur0), formatEUR(level.eur));
+        const sideName = levelSideName(level.kind, line);
+        assert.equal(sideName.includes("€"), false);
+        assert.equal(sideName.includes(formatEUR(level.eur)), false);
+        if (again.n > 0) assert.match(sideName, new RegExp(`${numbered.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")} · ${again.bounce}/${again.n}`));
         for (const touch of line.touches) {
           assert.ok(touch.index >= 0 && touch.index < result.candles.length, `${ticker.symbol} ${range} ${touch.index}`);
           assert.ok(["bounce", "broke", "open"].includes(touch.outcome));
@@ -621,8 +634,8 @@ test("Nummern und Striche kommen aus der Fixture, nicht aus dem Tageskurs", () =
   assert.match(css, /\.guide-legend \.swatch\.trend/);
   assert.equal(css.includes("kaufen"), false);
   const sw = fs.readFileSync("sw.js", "utf8");
-  assert.match(sw, /jgtr-v30/);
-  assert.equal(sw.includes("jgtr-v29"), false);
+  assert.match(sw, /jgtr-v31/);
+  assert.equal(sw.includes("jgtr-v30"), false);
 });
 
 test("Achse nennt die Uhrzeit und das Datum nur am Tageswechsel", () => {
@@ -664,4 +677,174 @@ test("Achse nennt die Uhrzeit und das Datum nur am Tageswechsel", () => {
   assert.ok(Math.abs(nudged[1].y - nudged[0].y) >= 14);
   assert.ok(nudged.every((label) => label.y >= 8 && label.y <= 90));
   assert.ok(nudged.every((label) => Math.abs(label.y - 70) >= 12));
+});
+
+function hourBar(day, hour, eur, session) {
+  return {
+    t: `${day}T${String(hour).padStart(2, "0")}:00:00.000Z`,
+    eur,
+    open: eur - 0.3,
+    high: eur + 0.5,
+    low: eur - 0.5,
+    session
+  };
+}
+
+function hourSessions() {
+  const days = ["2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13"];
+  const hours = [9, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+  const bars = [];
+  days.forEach((day, dayIndex) => {
+    hours.forEach((hour, hourIndex) => {
+      const session = hour < 13 ? "pre" : hour >= 21 ? "post" : "regular";
+      bars.push(hourBar(day, hour, 100 + dayIndex + hourIndex * 0.05, session));
+    });
+  });
+  return bars;
+}
+
+test("1 Std zeigt Stundenkerzen über mehrere Handelstage, mit Vor- und Nachbörse", () => {
+  const bars = hourSessions();
+  const ticker = { symbol: "SPCX", name: "SpaceX", priceEur: 110, history: { "1H": bars, intraday: [], "5m": [], "1M": [], "4H": [] } };
+  const packed = candlesFor(ticker, "1 Std");
+  assert.equal(packed.range, "1 Std");
+  assert.equal(packed.missing, false);
+  assert.ok(packed.candles.length >= 40, `nur ${packed.candles.length}`);
+  assert.ok(packed.candles.length <= HOURLY_BAR_CAP);
+  const sessions = tradingSessionCount(packed.candles);
+  assert.ok(sessions >= 5 && sessions <= 10, `Sitzungen ${sessions}`);
+  assert.equal(packed.candles.some((candle) => candle.session === "pre"), true);
+  assert.equal(packed.candles.some((candle) => candle.session === "post"), true);
+  assert.equal(packed.history.length, bars.length);
+  let hourGaps = 0;
+  for (let index = 1; index < packed.candles.length; index += 1) {
+    if (Date.parse(packed.candles[index].t) - Date.parse(packed.candles[index - 1].t) === 60 * 60 * 1000) hourGaps += 1;
+  }
+  assert.ok(hourGaps >= 20);
+  const result = analyseChart(ticker, "1 Std");
+  assert.equal(result.candles.length, packed.candles.length);
+  assert.equal(result.missing, false);
+  const text = analyseText(result);
+  assert.equal(ADVICE.test(text), false);
+  assert.equal(text.includes("Keine Anlageberatung"), false);
+  const stats = countLevelBounces(result.candles, result.candles[0].low, "low");
+  const copy = describeLevelBounces(stats, "low", "1 Std");
+  assert.equal(typeof copy.sentence, "string");
+  assert.match(copy.detail, /Stundenreihe/);
+  assert.equal(ADVICE.test(`${copy.sentence} ${copy.detail}`), false);
+  for (const level of result.levels || []) {
+    if (level.kind !== "support" && level.kind !== "resistance") continue;
+    assert.equal(levelPriceTag(level.eur), formatEUR(level.eur));
+    assert.equal(typeof level.bounce?.n, "number");
+  }
+});
+
+test("1W und 1M haben mehr lesbare Kerzen als die Tagesreihe", () => {
+  const bars = hourSessions();
+  const four = [];
+  for (let day = 0; day < 24; day += 1) {
+    for (const hour of [13, 17, 21]) {
+      const eur = 80 + day * 0.4;
+      four.push({
+        t: new Date(Date.UTC(2026, 9, 8 + day, hour)).toISOString(),
+        eur,
+        open: eur - 0.4,
+        high: eur + 0.6,
+        low: eur - 0.6
+      });
+    }
+  }
+  const daily = Array.from({ length: 22 }, (_, index) => ({
+    t: new Date(Date.UTC(2026, 9, 8 + index, 14)).toISOString(),
+    eur: 70 + index,
+    open: 70 + index,
+    high: 71 + index,
+    low: 69 + index
+  }));
+  const ticker = { history: { "1H": bars, "4H": four, "1M": daily, intraday: [], "5m": [] } };
+  const week = candlesFor(ticker, "1W");
+  assert.ok(week.candles.length > 7, `Woche ${week.candles.length}`);
+  assert.ok(week.candles.length <= HOURLY_BAR_CAP);
+  assert.equal(tradingSessionCount(week.candles), 5);
+  const month = candlesFor(ticker, "1M");
+  assert.ok(month.candles.length > daily.length, `Monat ${month.candles.length} gegen ${daily.length}`);
+  assert.ok(month.candles.length <= HOURLY_BAR_CAP);
+  assert.ok(month.history.length >= month.candles.length);
+  for (const range of ["1W", "1M"]) {
+    const text = analyseText(analyseChart(ticker, range));
+    assert.equal(ADVICE.test(text), false, range);
+    assert.equal(text.includes("Keine Anlageberatung"), false);
+  }
+});
+
+test("Linienname links, Preisplakette rechts, Karte zeigt denselben Euro", () => {
+  assert.equal(levelSideName("resistance", { bounce: 1, n: 1, levelTotal: 1, levelIndex: 1 }), "Widerstand · 1/1");
+  assert.equal(levelSideName("support", { bounce: 0, n: 0, levelTotal: 1 }), "Unterstützung");
+  assert.equal(levelSideName("resistance", { bounce: 3, n: 4, levelTotal: 2, levelIndex: 2 }), "Widerstand 2 · 3/4");
+  assert.equal(levelSideName("trend", { bounce: 4, n: 4 }), "Trend");
+  assert.equal(levelPriceTag(126.94), formatEUR(126.94));
+  assert.equal(levelSideName("resistance", { bounce: 1, n: 1, eur: 126.94 }).includes("€"), false);
+  assert.equal(pickNameY(100, [], { min: 0, max: 200 }), 89);
+  assert.equal(pickNameY(100, [89], { min: 0, max: 200 }), 111);
+  const settled = settlePriceTags([{ y: 100, text: "a" }, { y: 104, text: "b" }], { min: 0, max: 300 });
+  assert.ok(Math.abs(settled[0].y - settled[1].y) >= 18);
+  const kept = visibleGridLabels([{ y: 10 }, { y: 100 }, { y: 180 }], settled, 14);
+  assert.equal(kept.some((label) => Math.abs(label.y - settled[0].y) < 14), false);
+  assert.equal(kept.some((label) => label.y === 10), true);
+  const layout = { padL: 8, plotW: 300, count: 40 };
+  assert.ok(nameAnchorX(layout, 0) < 40);
+  assert.ok(nameAnchorX(layout, 39) <= 8 + 300 * 0.4);
+  const analysis = {
+    title: "Zwischen Stütze und Widerstand",
+    levels: [{ kind: "resistance", title: "Nächster Widerstand", eur: 126.94, sentence: "Zu wenig ähnliche Berührungen (n = 1). Keine Prozentzahl." }]
+  };
+  const html = musterCard(analysis);
+  assert.match(html, new RegExp(formatEUR(126.94).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  assert.equal(levelPriceTag(126.94), formatEUR(126.94));
+  assert.equal(html.includes("Keine Anlageberatung"), false);
+});
+
+test("Charts-Seite ist die Kurslinie mit 1T bis Max", () => {
+  const intraday = Array.from({ length: 20 }, (_, index) => ({
+    t: new Date(Date.parse("2026-11-09T14:30:00.000Z") + index * 60 * 1000).toISOString(),
+    eur: 120 + index * 0.1
+  }));
+  const year = Array.from({ length: 8 }, (_, index) => ({ t: `2026-0${index + 1}-02`, eur: 90 + index }));
+  const data = {
+    prices: {
+      tickers: [{
+        symbol: "SPCX",
+        name: "SpaceX",
+        priceEur: 125.9,
+        eurMethod: "usd_div_eurusd",
+        history: { intraday, "1H": hourSessions(), "1M": year, "1Y": year, "6M": year, "4H": [], "5m": intraday }
+      }]
+    }
+  };
+  const html = renderChartsPage(data, { chartSymbol: "SPCX", chartRange: "1W", langfrist: false, live: false });
+  assert.match(html, /SpaceX/);
+  assert.match(html, /125,90/);
+  assert.match(html, /▲|▼/);
+  const ranges = [...html.matchAll(/data-range="([^"]+)"/g)].map((match) => match[1]);
+  assert.deepEqual(ranges, ["1T", "1W", "1M", "1J", "Max"]);
+  assert.match(html, /data-range="1W"[^>]*aria-pressed="true"|aria-pressed="true"[^>]*data-range="1W"/);
+  assert.match(html, /<p class="scrub"><\/p>/);
+  assert.match(html, /instrument-logo/);
+  assert.equal(html.includes("Handeln"), false);
+  assert.equal(html.includes("Sparplan"), false);
+  assert.equal(html.includes("5 Min"), false);
+  assert.equal(html.includes("data-range=\"1 Std\""), false);
+  assert.equal(ADVICE.test(html), false);
+  assert.equal(/\bEmpfehlung\b/.test(html), false);
+  assert.equal(html.includes("Keine Anlageberatung"), false);
+  const week = instrumentSeries(data.prices.tickers[0], "1W");
+  assert.ok(week.points.length > 7);
+  const day = instrumentAxisLabels(intraday);
+  assert.ok(day.every((label) => /^\d{2}:\d{2}$/.test(label.text)));
+  const labels = instrumentAxisLabels(week.points);
+  assert.ok(labels.length >= 2);
+  assert.ok(labels.every((label) => !/^\d{2}:\d{2}$/.test(label.text)));
+  for (let index = 1; index < labels.length; index += 1) {
+    assert.ok(labels[index].index - labels[index - 1].index >= 2);
+  }
 });

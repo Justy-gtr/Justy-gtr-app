@@ -1,4 +1,4 @@
-import { bucketMinutes, fourHourPoints, maxPoints, rangeMinutePoints, seriesFor, sessionMinutePack } from "./logic.js";
+import { bucketMinutes, fourHourPoints, hourlyPoints, maxPoints, rangeMinutePoints, seriesFor, sessionMinutePack } from "./logic.js";
 
 /** From 7 separate cases a percentage is shown. Below that, the number would look sharper than the history is. */
 export const MIN_CASES = 7;
@@ -23,7 +23,7 @@ const SPEC = {
   "15 Min": { swing: 2, window: 12, horizonMs: 60 * 60 * 1000, flatPct: 0.0006, after: "eine Stunde später", touchLook: 8, touchGap: 2, touchMargin: 0.0025 },
   "4 Std": { swing: 2, window: 24, horizonMs: 86400000, flatPct: 0.001, after: "ein Tag später", touchLook: 10, touchGap: 3, touchMargin: 0.006 },
   "1T": { swing: 1, window: 6, horizonMs: 86400000, flatPct: 0.0015, after: "ein Tag später", touchLook: 4, touchGap: 1, touchMargin: 0.008 },
-  "3T": { swing: 1, window: 6, horizonMs: 3 * 86400000, flatPct: 0.0015, after: "drei Tage später", touchLook: 4, touchGap: 1, touchMargin: 0.008 },
+  "1 Std": { swing: 2, window: 16, horizonMs: 4 * 60 * 60 * 1000, flatPct: 0.001, after: "vier Stunden später", touchLook: 8, touchGap: 2, touchMargin: 0.004 },
   "1W": { swing: 1, window: 7, horizonMs: 7 * 86400000, flatPct: 0.0015, after: "eine Woche später", touchLook: 8, touchGap: 2, touchMargin: 0.01 },
   "1M": { swing: 2, window: 21, horizonMs: 7 * 86400000, flatPct: 0.0015, after: "eine Woche später", touchLook: 12, touchGap: 3, touchMargin: 0.008 },
   "6M": { swing: 3, window: 21, horizonMs: 7 * 86400000, flatPct: 0.0015, after: "eine Woche später", touchLook: 12, touchGap: 3, touchMargin: 0.008 },
@@ -46,6 +46,7 @@ export function historyPoints(ticker, range) {
   if (range === "5 Min") return rangeMinutePoints(ticker, 5, false);
   if (range === "15 Min") return rangeMinutePoints(ticker, 15, false);
   if (range === "4 Std") return fourHourPoints(history);
+  if (range === "1 Std") return usable(hourlyPoints(ticker));
   if (range === "1T" || range === "3T") {
     const pack = sessionMinutePack(ticker, range === "1T" ? 1 : 3);
     if (pack) {
@@ -493,6 +494,7 @@ function detailFor(range, usedWindow, visibleLength, spec) {
   if (range === "1 Min" || range === "5 Min" || range === "15 Min" || range === "1T" || range === "3T") {
     where = shorter ? "ähnliche Stücke in dieser Minutenreihe" : "in dieser Minutenreihe";
   }
+  else if (range === "1 Std") where = shorter ? "ähnliche Stücke in der Stundenreihe" : "in der Stundenreihe";
   else if (range === "4 Std") where = shorter ? "ähnliche Stücke in der 4-Stunden-Reihe" : "in der 4-Stunden-Reihe";
   else if (range === "1W") where = "ähnliche Wochen in der Tagesreihe";
   else if (range === "1M") where = "ähnliche Monate in der Tagesreihe";

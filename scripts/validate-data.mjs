@@ -104,6 +104,16 @@ if (prices) {
         if (Number.isFinite(span) && span > 10 * 86400000) fail(`${label}.history.5m länger als zehn Tage`);
       }
     }
+    const hour = ticker.history?.["1H"];
+    if (hour != null) {
+      if (!Array.isArray(hour)) fail(`${label}.history.1H`);
+      if (hour.length > 400) fail(`${label}.history.1H zu lang`);
+      for (const point of hour) barOk(point, `${label}.history.1H`);
+      if (hour.length >= 2) {
+        const span = Date.parse(hour.at(-1).t) - Date.parse(hour[0].t);
+        if (Number.isFinite(span) && span > 24 * 86400000) fail(`${label}.history.1H länger als 24 Tage`);
+      }
+    }
     const four = ticker.history?.["4H"];
     if (four != null) {
       if (!Array.isArray(four)) fail(`${label}.history.4H`);

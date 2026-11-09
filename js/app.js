@@ -4,7 +4,7 @@ import { drawCharts } from "./chart.js";
 import { loadData } from "./data.js";
 import { initEggs } from "./eggs.js";
 import { initKnockout } from "./knockout-ui.js";
-import { appBase, berlinClockText, isInAppUrl, loadStore, markTabSeen, marketWatch, saveStore, unreadTabs, usSessionWord } from "./logic.js";
+import { appBase, berlinClockText, CHART_RANGES, isInAppUrl, loadStore, markTabSeen, marketWatch, saveStore, unreadTabs, usSessionWord } from "./logic.js";
 import { playLiftoff, tickCountdown } from "./motion.js";
 import { initNav } from "./nav.js";
 import { initPull } from "./pull.js";
@@ -15,7 +15,7 @@ const ui = {
   calKind: "company",
   postFilter: "alle",
   chartSymbol: "SPCX",
-  chartRange: "5 Min",
+  chartRange: "1T",
   langfrist: false,
   analyseSymbol: "SPCX",
   analyseRange: "15 Min",
@@ -157,6 +157,7 @@ function restoreScroll(map) {
 
 function render() {
   const scrolls = captureScroll();
+  document.body.dataset.page = ui.page || "";
   try {
     renderShell(context());
   } catch (error) {
@@ -284,14 +285,15 @@ document.body.addEventListener("click", (event) => {
   }
   if (action === "chart-range") {
     const next = el.dataset.range;
-    const short = ["Tag", "1 Min", "5 Min", "15 Min", "4 Std", "1T", "3T", "1W", "1M"];
+    if (!CHART_RANGES.includes(next)) return;
+    const short = ["1T", "1W", "1M"];
     ui.chartRange = ui.langfrist && short.includes(next) ? "1J" : next;
     render();
     return;
   }
   if (action === "langfrist") {
     ui.langfrist = !ui.langfrist;
-    if (ui.langfrist && ["Tag", "1 Min", "5 Min", "15 Min", "4 Std", "1T", "3T", "1W", "1M"].includes(ui.chartRange)) ui.chartRange = "1J";
+    if (ui.langfrist && ["1T", "1W", "1M"].includes(ui.chartRange)) ui.chartRange = "1J";
     render();
     return;
   }

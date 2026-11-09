@@ -1,4 +1,4 @@
-import { analyseChart, levelMarkLabel } from "./analyse.js";
+import { analyseChart, levelPriceTag, levelSideName } from "./analyse.js";
 import { candleColor, scrubLabel } from "./candles.js";
 import { chartAxisLabels, guideLabelsToDraw, guideStyle } from "./logic.js";
 
@@ -60,6 +60,66 @@ function xOf(layout, index) {
   return layout.padL + (clamped + 0.5) * slot;
 }
 
+/** Left end of a line name. A trend that starts late still stays off the newest candles. */
+export function nameAnchorX(layout, index = 0) {
+  const count = Math.max(1, layout?.count || 1);
+  const plotW = layout?.plotW || 1;
+  const padL = layout?.padL || 0;
+  const slot = plotW / count;
+  const x = padL + (Math.max(0, index) + 0.5) * slot;
+  const limit = padL + plotW * 0.4;
+  return Math.min(Math.max(padL + 4, x), limit);
+}
+
+/**
+ * Name sits just off the line, in the clearer gap.
+ * `obstacles` are y positions already taken (other names, nearby wicks).
+ */
+export function pickNameY(anchorY, obstacles, bounds = {}) {
+  const minY = Number.isFinite(bounds.min) ? bounds.min : anchorY - 48;
+  const maxY = Number.isFinite(bounds.max) ? bounds.max : anchorY + 48;
+  const gap = Number.isFinite(bounds.gap) ? bounds.gap : 12;
+  const taken = (obstacles || []).map((item) => (typeof item === "number" ? item : Number(item?.y))).filter((y) => Number.isFinite(y));
+  const blocked = (y) => y < minY || y > maxY || taken.some((other) => Math.abs(other - y) < gap);
+  for (const delta of [-11, 11, -20, 20, -4, 4, 0]) {
+    const y = anchorY + delta;
+    if (!blocked(y)) return y;
+  }
+  const span = Math.max(1, maxY - minY);
+  for (let step = 1; step <= span; step += 1) {
+    if (!blocked(anchorY - step)) return Math.max(minY, Math.min(maxY, anchorY - step));
+    if (!blocked(anchorY + step)) return Math.max(minY, Math.min(maxY, anchorY + step));
+  }
+  return Math.max(minY, Math.min(maxY, anchorY));
+}
+
+/** Price pills keep their line height unless two would sit on top of each other. */
+export function settlePriceTags(tags, bounds = {}) {
+  const list = tags || [];
+  if (!list.length) return [];
+  const home = list.reduce((sum, tag) => sum + Number(tag.y || 0), 0) / list.length;
+  return guideLabelsToDraw(list, home, 18, {
+    min: Number.isFinite(bounds.min) ? bounds.min : -100000,
+    max: Number.isFinite(bounds.max) ? bounds.max : 100000
+  });
+}
+
+/** A grid price that would collide with a pill is left off the axis. The grid line stays. */
+export function visibleGridLabels(labels, tags, gap = 14) {
+  return (labels || []).filter((label) => (tags || []).every((tag) => Math.abs(label.y - tag.y) >= gap));
+}
+
+function roundRect(ctx, x, y, width, height, radius) {
+  const r = Math.min(radius, width / 2, height / 2);
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + width, y, x + width, y + height, r);
+  ctx.arcTo(x + width, y + height, x, y + height, r);
+  ctx.arcTo(x, y + height, x, y, r);
+  ctx.arcTo(x, y, x + width, y, r);
+  ctx.closePath();
+}
+
 function paintCandles(canvas, state, hover) {
   const { width, height, candles, lines, layout } = state;
   const ctx = canvas.getContext("2d");
@@ -73,6 +133,7 @@ function paintCandles(canvas, state, hover) {
   ctx.strokeStyle = "rgba(255,255,255,.16)";
   ctx.lineWidth = 1;
   const ticks = 4;
+  const gridLabels = [];
   for (let index = 0; index < ticks; index += 1) {
     const value = layout.max - ((layout.max - layout.min) * index) / (ticks - 1);
     const y = layout.padT + (layout.plotH * index) / (ticks - 1);
@@ -82,9 +143,7 @@ function paintCandles(canvas, state, hover) {
     ctx.lineTo(width - layout.padR + 4, y);
     ctx.stroke();
     ctx.setLineDash([]);
-    ctx.textAlign = "right";
-    ctx.textBaseline = "middle";
-    ctx.fillText(formatEuroAxis(value), width - 4, y);
+    gridLabels.push({ y, text: formatEuroAxis(value) });
   }
   const marks = chartAxisLabels(candles);
   marks.forEach((mark, index) => {
@@ -97,7 +156,7 @@ function paintCandles(canvas, state, hover) {
     ctx.fillText(mark.text, labelX, height - 4);
   });
   const slot = layout.plotW / candles.length;
-  const bodyW = Math.max(3, Math.min(14, slot * 0.72));
+  const bodyW = Math.max(slot < 4.8 ? 2 : 3, Math.min(14, slot * 0.72));
   candles.forEach((candle, index) => {
     const x = xOf(layout, index);
     const color = candleColor(candle);
@@ -113,7 +172,7 @@ function paintCandles(canvas, state, hover) {
     const body = Math.max(1, bottom - top);
     ctx.fillRect(x - bodyW / 2, top, bodyW, body);
   });
-  const captions = paintLines(ctx, layout, lines, candles);
+  const captions = paintLines(ctx, layout, lines, candles, gridLabels, width);
   paintTouchMarks(ctx, layout, lines, captions);
   const marked = (lines || []).find((line) => line.kind === "mark");
   if (marked) {
@@ -138,18 +197,48 @@ function paintCandles(canvas, state, hover) {
   }
 }
 
-function fitCaption(ctx, label, maxWidth) {
-  const options = [label.text, label.priced, label.bare].filter((text, index, list) => text && list.indexOf(text) === index);
-  for (const text of options) {
-    if (ctx.measureText(text).width <= maxWidth) return text;
-  }
-  return options.at(-1) || "";
+function paintPriceTag(ctx, right, y, text, color) {
+  ctx.font = "700 11px -apple-system, BlinkMacSystemFont, sans-serif";
+  const width = Math.ceil(ctx.measureText(text).width) + 10;
+  const height = 16;
+  const x = right - width;
+  const top = y - height / 2;
+  roundRect(ctx, x, top, width, height, 5);
+  ctx.fillStyle = color;
+  ctx.fill();
+  ctx.fillStyle = "#141820";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(text, x + width / 2, y + 0.5);
+  return { left: x, right, top, bottom: top + height, y };
 }
 
-function paintLines(ctx, layout, lines, candles) {
-  const pending = [];
-  const last = candles?.at?.(-1);
-  const priceY = yOf(layout, last?.close ?? last?.eur ?? layout.min);
+function paintLineName(ctx, x, y, text, color) {
+  ctx.font = "600 10px -apple-system, BlinkMacSystemFont, sans-serif";
+  ctx.textAlign = "left";
+  ctx.textBaseline = "middle";
+  ctx.lineWidth = 3;
+  ctx.strokeStyle = "rgba(7, 8, 13, 0.88)";
+  ctx.strokeText(text, x, y);
+  ctx.fillStyle = color;
+  ctx.fillText(text, x, y);
+  const width = ctx.measureText(text).width;
+  return { left: x, right: x + width, top: y - 7, bottom: y + 7, y };
+}
+
+function nearbyWicks(layout, candles, x, width) {
+  const ys = [];
+  for (let index = 0; index < candles.length; index += 1) {
+    const candleX = xOf(layout, index);
+    if (candleX < x - 4 || candleX > x + width + 8) continue;
+    ys.push(yOf(layout, candles[index].high), yOf(layout, candles[index].low));
+  }
+  return ys;
+}
+
+function paintLines(ctx, layout, lines, candles, gridLabels, width) {
+  const pendingTags = [];
+  const pendingNames = [];
   ctx.lineCap = "butt";
   ctx.lineWidth = 1;
   for (const line of lines || []) {
@@ -161,53 +250,60 @@ function paintLines(ctx, layout, lines, candles) {
     ctx.beginPath();
     ctx.setLineDash(style.dash);
     ctx.strokeStyle = style.color;
-    let endY = y0;
     if (line.kind === "support" || line.kind === "resistance") {
       ctx.moveTo(layout.padL, y0);
       ctx.lineTo(layout.padL + layout.plotW, y0);
     } else {
-      endY = y1;
       ctx.moveTo(xOf(layout, line.i0 || 0), y0);
       ctx.lineTo(xOf(layout, line.i1 ?? layout.count - 1), y1);
     }
     ctx.stroke();
-    if (line.kind !== "pattern") {
-      const counted = line.kind === "support" || line.kind === "resistance";
-      const full = counted ? levelMarkLabel(line.kind, line) : style.label;
-      const priced = counted ? levelMarkLabel(line.kind, { ...line, n: 0, bounce: 0 }) : style.label;
-      pending.push({ y: endY, text: full, priced, bare: style.label, color: style.color, kind: line.kind });
+    if (line.kind === "pattern") continue;
+    const name = levelSideName(line.kind, line);
+    if (name) {
+      const anchorX = line.kind === "trend" ? nameAnchorX(layout, line.i0 || 0) : layout.padL + 4;
+      pendingNames.push({
+        y: line.kind === "trend" ? y0 : y0,
+        anchorY: y0,
+        x: anchorX,
+        text: name,
+        color: style.color,
+        kind: line.kind
+      });
+    }
+    if (line.kind === "support" || line.kind === "resistance") {
+      const price = levelPriceTag(line.eur ?? line.eur0);
+      if (price) pendingTags.push({ y: y0, text: price, color: style.color, kind: line.kind });
     }
   }
   ctx.setLineDash([]);
-  const width = layout.padL + layout.plotW + layout.padR;
-  ctx.font = "11px -apple-system, BlinkMacSystemFont, sans-serif";
-  let axisWidth = 0;
-  const ticks = 4;
-  for (let index = 0; index < ticks; index += 1) {
-    const value = layout.max - ((layout.max - layout.min) * index) / (ticks - 1);
-    axisWidth = Math.max(axisWidth, ctx.measureText(formatEuroAxis(value)).width);
+
+  const bounds = { min: layout.padT + 9, max: layout.padT + layout.plotH - 9 };
+  const tags = settlePriceTags(pendingTags, bounds);
+  const drawnTags = [];
+  for (const tag of tags) {
+    drawnTags.push(paintPriceTag(ctx, width - 4, tag.y, tag.text, tag.color));
   }
-  const axisLeft = width - 4 - axisWidth;
-  const right = Math.min(layout.padL + layout.plotW - 4, axisLeft - 6);
-  const maxText = Math.max(24, right - layout.padL - 4);
-  ctx.font = "10px -apple-system, BlinkMacSystemFont, sans-serif";
+
+  ctx.font = "11px -apple-system, BlinkMacSystemFont, sans-serif";
+  ctx.fillStyle = "#9aa3b5";
   ctx.textAlign = "right";
   ctx.textBaseline = "middle";
+  for (const label of visibleGridLabels(gridLabels, tags, 14)) {
+    ctx.fillText(label.text, width - 4, label.y);
+  }
+
+  ctx.font = "600 10px -apple-system, BlinkMacSystemFont, sans-serif";
   const captions = [];
-  const placed = guideLabelsToDraw(pending, priceY, 16, {
-    min: layout.padT + 7,
-    max: layout.padT + layout.plotH - 7
-  });
-  for (const label of placed) {
-    const y = label.y;
-    const text = fitCaption(ctx, label, maxText);
-    const textWidth = ctx.measureText(text).width;
-    ctx.lineWidth = 2;
-    ctx.strokeStyle = "rgba(7, 8, 13, 0.88)";
-    ctx.strokeText(text, right, y);
-    ctx.fillStyle = label.color;
-    ctx.fillText(text, right, y);
-    captions.push({ kind: label.kind, y, left: right - textWidth - 2, right: right + 2, top: y - 7, bottom: y + 7 });
+  const taken = [];
+  const ordered = [...pendingNames].sort((a, b) => a.anchorY - b.anchorY);
+  for (const name of ordered) {
+    const textWidth = ctx.measureText(name.text).width;
+    const wicks = nearbyWicks(layout, candles, name.x, textWidth);
+    const y = pickNameY(name.anchorY, taken.concat(wicks), { ...bounds, gap: 12 });
+    const box = paintLineName(ctx, name.x, y, name.text, name.color);
+    captions.push({ ...box, kind: name.kind });
+    taken.push(y);
   }
   return captions;
 }
