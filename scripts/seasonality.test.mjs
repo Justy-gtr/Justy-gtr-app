@@ -4,17 +4,22 @@ import test from "node:test";
 import { renderAnalyse } from "../js/analyse-view.js";
 import { MIN_CASES } from "../js/analysis.js";
 import {
+  EARLY_NOTE_DE,
+  EARLY_NOTE_MIX,
+  EARLY_NOTE_US,
   HOUR_SLOTS,
   SEASON_N_LEGEND,
+  acceptBar,
   aggregateGrid,
   aggregateHours,
-  aggregatePremarket,
   aggregateWeekdays,
   berlinClock,
   buildWindows,
+  chooseEarlyBars,
   hourSlot,
-  isPremarketHour,
+  isUsEarlyBar,
   keepSettledDaily,
+  keepSettledHours,
   renderSeasonalityCard,
   seasonalityHeadline,
   upPercent
@@ -84,6 +89,10 @@ test("Ein Zeitstempel nimmt den Handelstag in New York, nicht Mitternacht in Ber
 });
 
 test("Berliner Stunden bleiben bei Sommer- und Winterzeit auf der echten Uhr", () => {
+  assert.equal(HOUR_SLOTS[0], "08");
+  assert.equal(HOUR_SLOTS.includes("15:00"), true);
+  assert.equal(HOUR_SLOTS.at(-1), "21:30");
+  const cash = HOUR_SLOTS.indexOf("15:30");
   assert.equal(hourSlot("2026-01-05T14:30:00.000Z"), "15:30");
   assert.equal(hourSlot("2026-01-05T20:30:00.000Z"), "21:30");
   assert.equal(hourSlot("2026-07-06T13:30:00.000Z"), "15:30");
@@ -95,56 +104,83 @@ test("Berliner Stunden bleiben bei Sommer- und Winterzeit auf der echten Uhr", (
   assert.equal(berlinClock("2026-10-26T13:30:00.000Z").hour, 14);
   assert.equal(hourSlot("2026-10-26T13:30:00.000Z"), null);
   assert.equal(hourSlot("2026-11-06T21:00:00.000Z"), null);
+  assert.equal(hourSlot("2026-01-05T07:00:00.000Z"), "08");
+  assert.equal(hourSlot("2026-07-06T06:00:00.000Z"), "08");
+  assert.equal(hourSlot("2026-01-05T14:00:00.000Z"), null);
+  assert.equal(hourSlot("2026-01-05T14:00:00.000Z", 30), "15:00");
 
   const hours = aggregateHours([
     { t: "2026-01-05T14:30:00.000Z", open: 100, close: 101 },
     { t: "2026-07-06T13:30:00.000Z", open: 100, close: 102 },
     { t: "2026-03-09T13:30:00.000Z", open: 100, close: 110 },
-    { t: "2026-11-06T21:00:00.000Z", open: 100, close: 100 }
+    { t: "2026-11-06T21:00:00.000Z", open: 100, close: 100 },
+    { t: "2026-01-05T07:00:00.000Z", open: 100, close: 101, durationMin: 60 },
+    { t: "2026-01-05T14:00:00.000Z", open: 100, close: 110, durationMin: 60 },
+    { t: "2026-01-05T14:00:00.000Z", open: 100, close: 103, durationMin: 30 }
   ]);
-  assert.deepEqual(HOUR_SLOTS[0], "15:30");
-  assert.equal(hours[0].n, 2);
-  assert.equal(hours[0].up, 2);
-  assert.equal(hours.reduce((sum, row) => sum + row.n, 0), 2);
+  assert.equal(hours[cash].n, 2);
+  assert.equal(hours[cash].up, 2);
+  assert.equal(hours[HOUR_SLOTS.indexOf("08")].n, 1);
+  assert.equal(hours[HOUR_SLOTS.indexOf("15:00")].n, 1);
+  assert.equal(hours[HOUR_SLOTS.indexOf("15:00")].avg, 3);
+  assert.equal(hours.reduce((sum, row) => sum + row.n, 0), 4);
 
   const grid = aggregateGrid([
     { t: "2026-01-05T14:30:00.000Z", open: 100, close: 101 },
     { t: "2026-03-09T13:30:00.000Z", open: 100, close: 110 }
   ]);
-  assert.equal(grid[0][0].n, 1);
+  assert.equal(grid[0][cash].n, 1);
   assert.equal(grid.flat().reduce((sum, cell) => sum + cell.n, 0), 1);
 
-  assert.equal(isPremarketHour("2026-01-05T13:00:00.000Z"), true);
-  assert.equal(isPremarketHour("2026-07-06T12:00:00.000Z"), true);
-  assert.equal(isPremarketHour("2026-01-05T14:00:00.000Z"), false);
-  assert.equal(isPremarketHour("2026-03-09T13:00:00.000Z"), false);
-  const preBars = [
-    { t: "2026-01-05T09:00:00.000Z", open: 100, close: 101 },
-    { t: "2026-01-05T10:00:00.000Z", open: 100, close: 101 },
-    { t: "2026-01-05T11:00:00.000Z", open: 100, close: 99 },
-    { t: "2026-01-05T12:00:00.000Z", open: 100, close: 101 },
-    { t: "2026-01-05T13:00:00.000Z", open: 100, close: 101 },
-    { t: "2026-01-05T14:00:00.000Z", open: 100, close: 130 },
-    { t: "2026-01-05T14:30:00.000Z", open: 100, close: 140 }
-  ];
-  for (const hour of [9, 10, 11, 12, 13]) {
-    preBars.push({ t: `2026-01-06T${String(hour).padStart(2, "0")}:00:00.000Z`, open: 100, close: 101 });
+  assert.equal(isUsEarlyBar("2026-01-05T13:00:00.000Z", 60), true);
+  assert.equal(isUsEarlyBar("2026-07-06T12:00:00.000Z", 60), true);
+  assert.equal(isUsEarlyBar("2026-01-05T14:00:00.000Z", 60), false);
+  assert.equal(isUsEarlyBar("2026-01-05T14:00:00.000Z", 30), true);
+  assert.equal(isUsEarlyBar("2026-03-09T13:00:00.000Z", 60), false);
+  assert.equal(acceptBar("2026-03-09T13:00:00.000Z", 60, "de"), "14");
+  assert.equal(acceptBar("2026-03-09T13:00:00.000Z", 60, "us"), null);
+  assert.equal(acceptBar("2026-01-05T14:30:00.000Z", 60, "de"), null);
+  assert.equal(acceptBar("2026-01-05T14:30:00.000Z", 60, "us"), "15:30");
+});
+
+test("Frühe Stunden nehmen eine Quelle und mischen sie nicht", () => {
+  const de = [];
+  const us = [];
+  for (let day = 5; day <= 14; day += 1) {
+    const stamp = `2026-01-${String(day).padStart(2, "0")}`;
+    de.push({ t: `${stamp}T07:00:00.000Z`, open: 100, close: 101, durationMin: 60 });
+    us.push({ t: `${stamp}T09:00:00.000Z`, open: 100, close: 99, durationMin: 60 });
+    us.push({ t: `${stamp}T14:00:00.000Z`, open: 100, close: 101, durationMin: 30 });
   }
-  const pre = aggregatePremarket(preBars);
-  assert.equal(pre.n, 10);
-  assert.equal(pre.up, 9);
+  for (let day = 5; day <= 8; day += 1) {
+    de.push({ t: `2026-01-${String(day).padStart(2, "0")}T14:00:00.000Z`, open: 50, close: 55, durationMin: 30 });
+  }
+  const picked = chooseEarlyBars(de, us);
+  assert.equal(picked.note, EARLY_NOTE_MIX);
+  const hours = aggregateHours(picked.bars);
+  assert.equal(hours[HOUR_SLOTS.indexOf("08")].n, 8);
+  assert.equal(hours[HOUR_SLOTS.indexOf("08")].avg, 1);
+  assert.equal(hours[HOUR_SLOTS.indexOf("10")].n, 8);
+  assert.equal(hours[HOUR_SLOTS.indexOf("10")].avg, -1);
+  assert.equal(hours[HOUR_SLOTS.indexOf("15:00")].avg, 1);
+  assert.equal(hours[HOUR_SLOTS.indexOf("15:00")].n, 8);
+  const onlyDe = chooseEarlyBars(de, []);
+  assert.equal(onlyDe.note, EARLY_NOTE_DE);
+  const onlyUs = chooseEarlyBars([], us);
+  assert.equal(onlyUs.note, EARLY_NOTE_US);
 });
 
 test("Unter sieben Fällen gibt es keine Prozentzahl", () => {
   assert.equal(MIN_CASES, 7);
   assert.equal(upPercent({ n: 6, up: 6 }), null);
   assert.equal(upPercent({ n: 7, up: 6 }), 86);
-  const thin = aggregatePremarket([
-    { t: "2026-01-05T09:00:00.000Z", open: 10, close: 11 },
-    { t: "2026-01-05T10:00:00.000Z", open: 10, close: 11 },
-    { t: "2026-01-05T11:00:00.000Z", open: 10, close: 11 }
-  ]);
-  assert.equal(thin, null);
+  const thin = chooseEarlyBars([
+    { t: "2026-01-05T07:00:00.000Z", open: 10, close: 11, durationMin: 60 },
+    { t: "2026-01-06T07:00:00.000Z", open: 10, close: 11, durationMin: 60 },
+    { t: "2026-01-07T07:00:00.000Z", open: 10, close: 11, durationMin: 60 }
+  ], []);
+  assert.equal(thin.note, EARLY_NOTE_DE);
+  assert.equal(aggregateHours(thin.bars)[0].n, 3);
 
   const days = [
     { n: 6, up: 6, avg: 2, med: 2 },
@@ -161,29 +197,29 @@ test("Unter sieben Fällen gibt es keine Prozentzahl", () => {
     symbols: {
       TSLA: {
         name: "Tesla",
+        earlyNote: EARLY_NOTE_DE,
         ranges: {
-          all: { from: "2025-01-02", to: "2026-11-06", days, hours, grid, pre: { n: 30, up: 14, avg: -0.04 } },
-          year: { from: "2025-11-06", to: "2026-11-06", days, hours, grid, pre: null }
+          all: { from: "2025-01-02", to: "2026-11-06", days, hours, grid },
+          year: { from: "2025-11-06", to: "2026-11-06", days, hours, grid }
         }
       },
       SPCX: {
         name: "SpaceX",
+        earlyNote: EARLY_NOTE_US,
         ranges: {
           all: {
             from: "2026-06-12",
             to: "2026-11-06",
             days: days.map(() => ({ n: 12, up: 3, avg: -0.8, med: -0.5 })),
             hours,
-            grid,
-            pre: null
+            grid
           },
           year: {
             from: "2026-06-12",
             to: "2026-11-06",
             days: days.map(() => ({ n: 12, up: 3, avg: -0.8, med: -0.5 })),
             hours,
-            grid,
-            pre: null
+            grid
           }
         }
       }
@@ -198,6 +234,12 @@ test("Unter sieben Fällen gibt es keine Prozentzahl", () => {
   assert.match(rowText(html, "Di"), /80 % der Tage gestiegen/);
   assert.match(html, /n = 6, keine Prozentzahl/);
   assert.match(html, /Vergangenheit, keine Vorhersage/);
+  assert.match(html, new RegExp(EARLY_NOTE_DE));
+  assert.match(html, /data-hour="08"/);
+  assert.match(html, /data-hour="15:00"/);
+  assert.match(html, /data-hour="15:30"/);
+  assert.equal(html.includes("Vorbörse 10:00"), false);
+  assert.match(html, /–/);
   assert.match(html, new RegExp(SEASON_N_LEGEND.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   assert.match(html, /dieser Aktie/);
   assert.equal(ADVICE.test(html), false);
@@ -282,6 +324,23 @@ test("Die Karte steht unter dem Muster und die Spanne lässt sie in Ruhe", () =>
   }
   const tsla = renderSeasonalityCard(seasonality, { symbol: "TSLA" }, "all");
   const spcx = renderSeasonalityCard(seasonality, { symbol: "SPCX" }, "all");
+  const rklb = renderSeasonalityCard(seasonality, { symbol: "RKLB" }, "all");
   assert.match(tsla, /TSLA/);
   assert.equal(spcx.includes("TSLA"), false);
+  assert.match(tsla, /vor 15:30: Handel in Deutschland/);
+  assert.match(rklb, /vor 15:30: Handel in Deutschland/);
+  assert.match(spcx, /vor 15:30: US-Vorbörse/);
+  assert.equal(tsla.includes("Vorbörse 10:00"), false);
+  assert.equal(spcx.includes("Vorbörse 10:00"), false);
+  const slot = (symbol, label) => seasonality.symbols[symbol].ranges.all.hours[HOUR_SLOTS.indexOf(label)];
+  assert.ok(slot("TSLA", "08").n >= MIN_CASES);
+  assert.ok(slot("TSLA", "15:00").n >= MIN_CASES);
+  assert.ok(slot("TSLA", "15:30").n >= MIN_CASES);
+  assert.ok(slot("RKLB", "08").n >= MIN_CASES);
+  assert.ok(slot("SPCX", "08").n < MIN_CASES);
+  assert.ok(slot("SPCX", "09").n < MIN_CASES);
+  assert.ok(slot("SPCX", "10").n >= MIN_CASES);
+  assert.ok(slot("SPCX", "15:00").n >= MIN_CASES);
+  assert.match(spcx, /data-hour="08"/);
+  assert.match(spcx, /–/);
 });
