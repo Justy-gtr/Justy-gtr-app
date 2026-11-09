@@ -1,4 +1,4 @@
-import { N_LEGEND, analyseChart, analyseText } from "./analyse.js";
+import { BOUNCE_PLAIN, BREAK_LEGEND, N_LEGEND, analyseChart, analyseText } from "./analyse.js";
 import { ANALYSE_RANGES, rangeAria, rangeLabel } from "./candles.js";
 import { analysisShowsN } from "./analysis.js";
 import { esc, formatEUR, formatPct, guideStyle, methodLabel, rangeChange } from "./logic.js";
@@ -24,6 +24,7 @@ export function musterCard(analysis) {
       ${level.bounceDetail ? `<p class="bounce-note">${esc(level.bounceDetail)}</p>` : ""}
     </div>`).join("");
   const legend = (analysis?.legend || []).map((item) => `<span><i class="swatch ${item.kind === "resistance" ? "resist" : item.kind}" aria-hidden="true"></i>${esc(item.label)}</span>`).join("");
+  const explains = (analysis?.levels || []).some((level) => level.kind === "support" || level.kind === "resistance");
   const counted = analysisShowsN(analysis) || /n\s*=/.test(analyseText(analysis));
   return `
     <article class="card analysis" aria-label="Kursbild">
@@ -33,6 +34,7 @@ export function musterCard(analysis) {
       <p class="analysis-note">${esc(outcome.sentence || "")}</p>
       ${outcome.detail ? `<p class="analysis-note">${esc(outcome.detail)}</p>` : ""}
       ${levels}
+      ${explains ? `<p class="bounce-plain">${esc(BOUNCE_PLAIN)}</p>` : ""}
       ${legend ? `<p class="chart-legend">${legend}</p>` : ""}
       ${counted ? `<p class="analysis-note n-legend">${esc(N_LEGEND)}</p>` : ""}
     </article>`;
@@ -55,7 +57,7 @@ export function guideLegend(lines) {
   });
   if (marks) {
     items.push(`<span class="mark-key">▲ abgeprallt</span>`);
-    items.push(`<span class="mark-key">× durchgebrochen</span>`);
+    items.push(`<span class="mark-key mark-break">× ${esc(BREAK_LEGEND)}</span>`);
   }
   return `<p class="chart-legend guide-legend">${items.join("")}</p>`;
 }

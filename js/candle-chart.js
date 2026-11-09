@@ -138,6 +138,14 @@ function paintCandles(canvas, state, hover) {
   }
 }
 
+function fitCaption(ctx, label, maxWidth) {
+  const options = [label.text, label.priced, label.bare].filter((text, index, list) => text && list.indexOf(text) === index);
+  for (const text of options) {
+    if (ctx.measureText(text).width <= maxWidth) return text;
+  }
+  return options.at(-1) || "";
+}
+
 function paintLines(ctx, layout, lines, candles) {
   const pending = [];
   const last = candles?.at?.(-1);
@@ -164,27 +172,42 @@ function paintLines(ctx, layout, lines, candles) {
     }
     ctx.stroke();
     if (line.kind !== "pattern") {
-      const counted = line.kind === "support" || line.kind === "resistance" ? levelMarkLabel(line.kind, line) : style.label;
-      pending.push({ y: endY, text: counted, fallback: style.label, color: style.color, kind: line.kind });
+      const counted = line.kind === "support" || line.kind === "resistance";
+      const full = counted ? levelMarkLabel(line.kind, line) : style.label;
+      const priced = counted ? levelMarkLabel(line.kind, { ...line, n: 0, bounce: 0 }) : style.label;
+      pending.push({ y: endY, text: full, priced, bare: style.label, color: style.color, kind: line.kind });
     }
   }
   ctx.setLineDash([]);
+  const width = layout.padL + layout.plotW + layout.padR;
+  ctx.font = "11px -apple-system, BlinkMacSystemFont, sans-serif";
+  let axisWidth = 0;
+  const ticks = 4;
+  for (let index = 0; index < ticks; index += 1) {
+    const value = layout.max - ((layout.max - layout.min) * index) / (ticks - 1);
+    axisWidth = Math.max(axisWidth, ctx.measureText(formatEuroAxis(value)).width);
+  }
+  const axisLeft = width - 4 - axisWidth;
+  const right = Math.min(layout.padL + layout.plotW - 4, axisLeft - 6);
+  const maxText = Math.max(24, right - layout.padL - 4);
   ctx.font = "10px -apple-system, BlinkMacSystemFont, sans-serif";
   ctx.textAlign = "right";
   ctx.textBaseline = "middle";
   const captions = [];
-  const right = layout.padL + layout.plotW - 2;
-  for (const label of guideLabelsToDraw(pending, priceY)) {
-    const y = Math.max(layout.padT + 7, Math.min(label.y, layout.padT + layout.plotH - 7));
-    const full = label.text;
-    const text = ctx.measureText(full).width <= layout.plotW * 0.55 ? full : (label.fallback || full);
-    const width = ctx.measureText(text).width;
-    ctx.lineWidth = 3;
+  const placed = guideLabelsToDraw(pending, priceY, 16, {
+    min: layout.padT + 7,
+    max: layout.padT + layout.plotH - 7
+  });
+  for (const label of placed) {
+    const y = label.y;
+    const text = fitCaption(ctx, label, maxText);
+    const textWidth = ctx.measureText(text).width;
+    ctx.lineWidth = 2;
     ctx.strokeStyle = "rgba(7, 8, 13, 0.88)";
     ctx.strokeText(text, right, y);
     ctx.fillStyle = label.color;
     ctx.fillText(text, right, y);
-    captions.push({ kind: label.kind, left: right - width - 2, right: right + 2, top: y - 7, bottom: y + 7 });
+    captions.push({ kind: label.kind, y, left: right - textWidth - 2, right: right + 2, top: y - 7, bottom: y + 7 });
   }
   return captions;
 }
@@ -197,7 +220,9 @@ function paintTouchMarks(ctx, layout, lines, captions) {
     const style = guideStyle(line.kind);
     if (!style) continue;
     const y = yOf(layout, line.eur0);
-    const caption = (captions || []).find((item) => item.kind === line.kind);
+    const caption = (captions || [])
+      .filter((item) => item.kind === line.kind)
+      .sort((a, b) => Math.abs(a.y - y) - Math.abs(b.y - y))[0];
     for (const touch of line.touches || []) {
       if (!Number.isFinite(touch?.index) || touch.index < 0 || touch.index >= layout.count) continue;
       const x = xOf(layout, touch.index);

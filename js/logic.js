@@ -787,15 +787,50 @@ export function guideStyle(kind) {
   return GUIDE[kind] || null;
 }
 
-/** When two captions sit on the same height, the one closer to the price stays. */
-export function guideLabelsToDraw(labels, priceY, gap = 14) {
-  const sorted = [...(labels || [])].sort((a, b) => Math.abs(a.y - priceY) - Math.abs(b.y - priceY));
-  const kept = [];
-  for (const label of sorted) {
-    if (kept.some((other) => Math.abs(other.y - label.y) < gap)) continue;
-    kept.push(label);
+function clampGuideY(y, minY, maxY) {
+  return Math.max(minY, Math.min(maxY, y));
+}
+
+function guideYBlocked(y, obstacles) {
+  return obstacles.some((item) => Math.abs(item.y - y) < item.gap);
+}
+
+function nearestFreeGuideY(home, obstacles, minY, maxY) {
+  const y = clampGuideY(home, minY, maxY);
+  if (!guideYBlocked(y, obstacles)) return y;
+  const span = Number.isFinite(maxY - minY) ? maxY - minY : 480;
+  for (let step = 1; step <= span + 1; step += 1) {
+    const down = y + step;
+    const up = y - step;
+    if (down <= maxY && !guideYBlocked(down, obstacles)) return down;
+    if (up >= minY && !guideYBlocked(up, obstacles)) return up;
   }
-  return kept;
+  return y;
+}
+
+/**
+ * Every caption stays. The one nearer the price keeps its height.
+ * Others move until they clear each other and, when given, the axis prices.
+ */
+export function guideLabelsToDraw(labels, priceY, gap = 14, bounds = null) {
+  const minY = Number.isFinite(bounds?.min) ? bounds.min : -100000;
+  const maxY = Number.isFinite(bounds?.max) ? bounds.max : 100000;
+  const avoidGap = Number.isFinite(bounds?.avoidGap) ? bounds.avoidGap : Math.max(11, gap - 2);
+  const avoid = (bounds?.avoid || [])
+    .filter((y) => Number.isFinite(y))
+    .map((y) => ({ y, gap: avoidGap }));
+  const items = (labels || []).map((label, index) => ({
+    ...label,
+    index,
+    y: clampGuideY(Number(label.y) || 0, minY, maxY)
+  }));
+  const order = [...items].sort((a, b) => Math.abs(a.y - priceY) - Math.abs(b.y - priceY) || a.index - b.index);
+  const placed = [...avoid];
+  for (const label of order) {
+    label.y = nearestFreeGuideY(label.y, placed, minY, maxY);
+    placed.push({ y: label.y, gap });
+  }
+  return items.sort((a, b) => a.index - b.index);
 }
 
 function berlinAxisParts(iso) {

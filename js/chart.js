@@ -176,7 +176,7 @@ function guideY(layout, price) {
 function paintGuides(ctx, layout, lines) {
   if (!lines?.length || !layout?.coords?.length) return;
   const { coords } = layout;
-  const right = layout.padL + layout.plotW;
+  const plotRight = layout.padL + layout.plotW;
   const pending = [];
   const priceY = coords.at(-1).y;
   ctx.lineWidth = 1;
@@ -197,19 +197,35 @@ function paintGuides(ctx, layout, lines) {
       ctx.lineTo(coords.at(-1).x, y1);
     } else {
       ctx.moveTo(layout.padL, y0);
-      ctx.lineTo(right, y0);
+      ctx.lineTo(plotRight, y0);
     }
     ctx.stroke();
     if (line.kind !== "pattern") pending.push({ y: endY, text: style.label, color: style.color });
   }
   ctx.setLineDash([]);
+  const width = layout.padL + layout.plotW + layout.padR;
+  const hasAxis = layout.padR > 20;
+  let right = plotRight - 2;
+  if (hasAxis) {
+    ctx.font = "11px -apple-system, BlinkMacSystemFont, sans-serif";
+    let axisWidth = 0;
+    const ticks = 4;
+    for (let index = 0; index < ticks; index += 1) {
+      const value = layout.max - ((layout.max - layout.min) * index) / (ticks - 1);
+      axisWidth = Math.max(axisWidth, ctx.measureText(formatEuroAxis(value)).width);
+    }
+    right = Math.min(plotRight - 4, width - 4 - axisWidth - 6);
+  }
   ctx.font = "10px -apple-system, BlinkMacSystemFont, sans-serif";
   ctx.textAlign = "right";
   ctx.textBaseline = "middle";
-  for (const label of guideLabelsToDraw(pending, priceY)) {
-    const y = Math.max(layout.padT + 7, Math.min(label.y, layout.padT + layout.plotH - 7));
+  const placed = guideLabelsToDraw(pending, priceY, 16, {
+    min: layout.padT + 7,
+    max: layout.padT + layout.plotH - 7
+  });
+  for (const label of placed) {
     ctx.fillStyle = label.color;
-    ctx.fillText(label.text, right - 2, y);
+    ctx.fillText(label.text, right, label.y);
   }
 }
 

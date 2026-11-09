@@ -1,0 +1,18 @@
+{
+  "support": { "kind": "support", "eur": 125.62, "bounce": 1, "n": 1, "levelIndex": 1, "levelTotal": 1 },
+  "resistance": { "kind": "resistance", "eur": 126.95, "bounce": 3, "n": 3, "levelIndex": 1, "levelTotal": 1 },
+  "numbered": [
+    { "kind": "resistance", "eur": 126.95, "bounce": 3, "n": 3, "levelIndex": 1, "levelTotal": 2 },
+    { "kind": "resistance", "eur": 130.1, "bounce": 1, "n": 2, "levelIndex": 2, "levelTotal": 2 }
+  ],
+  "lines": [
+    { "kind": "resistance", "eur0": 130.1, "eur": 130.1 },
+    { "kind": "support", "eur0": 120, "eur": 120 },
+    { "kind": "resistance", "eur0": 126.95, "eur": 126.95 }
+  ],
+  "levels": [
+    { "kind": "support", "title": "Nächste Stütze", "eur": 120 },
+    { "kind": "resistance", "title": "Nächster Widerstand", "eur": 126.95 },
+    { "kind": "resistance", "title": "Nächster Widerstand", "eur": 130.1 }
+  ]
+}

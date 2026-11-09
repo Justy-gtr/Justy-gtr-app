@@ -39,6 +39,12 @@ const TITLES = {
 /** Closes examined after a touch. The same distance counts as a bounce or a break. */
 export const BOUNCE_LOOK = 6;
 
+/** One line under the level rows. Direction is part of the sentence, not a footnote. */
+export const BOUNCE_PLAIN = "Abgeprallt: Kurs dreht an der Linie um. Durchgebrochen: Kurs geht durch die Linie – an der Stütze nach unten, am Widerstand nach oben.";
+
+/** Legend under the chart, after the ×. */
+export const BREAK_LEGEND = "durchgebrochen (Stütze nach unten, Widerstand nach oben)";
+
 /** Finished touches below this still show the counts, with a short note. */
 export const BOUNCE_FEW = 5;
 
@@ -526,21 +532,107 @@ export function describeLevelBounces(stats, side, range) {
   const detail = `Berührung: der Kurs kommt der Linie bis auf etwa 0,3 % nahe, bei großen Kerzen etwas mehr. Kerzen direkt nacheinander zählen als eine. Abgeprallt: innerhalb von ${look} Kerzen nach der Berührung liegt der Schluss wieder ${back}. Durchgebrochen: der Schluss liegt ${through}. Beides zählt gleich weit. ${seriesName(range)}.`;
   if (!n) return { sentence: `Keine abgeschlossene Berührung (n = 0).${few}`, detail };
   const lead = heldHigh ? "Abgeprallt nach unten" : "Abgeprallt";
+  const brokeWord = heldHigh ? "durchgebrochen nach oben" : "durchgebrochen nach unten";
   const cases = n === 1 ? "1 Fall" : `${n} Fällen`;
   return {
-    sentence: `${lead} in ${bounce} von ${cases} · durchgebrochen ${broke} (n = ${n}).${few}`,
+    sentence: `${lead} in ${bounce} von ${cases} · ${brokeWord} ${broke} (n = ${n}).${few}`,
     detail
   };
 }
 
-/** Caption beside a drawn line, e.g. "Widerstand 3/3" (abgeprallt / abgeschlossene Berührungen). */
+/**
+ * Caption beside a drawn horizontal line.
+ * One line: "Widerstand 126,95 € · 3/3".
+ * Several of the same kind: "Widerstand 1 126,95 € · 3/3".
+ */
 export function levelMarkLabel(kind, stats) {
   const name = guideStyle(kind)?.label || "";
   if (kind !== "support" && kind !== "resistance") return "";
+  const total = Number(stats?.levelTotal) || 1;
+  const index = Number(stats?.levelIndex) || 0;
+  const title = total > 1 && index > 0 ? `${name} ${index}` : name;
+  const raw = stats?.eur ?? stats?.eur0;
+  const price = raw == null || !Number.isFinite(Number(raw)) ? "" : formatEUR(raw);
   const n = Number(stats?.n) || 0;
   const bounce = Number(stats?.bounce) || 0;
-  if (n <= 0) return name;
-  return `${name} ${bounce}/${n}`;
+  if (!price && n <= 0) return title;
+  if (!price) return `${title} ${bounce}/${n}`;
+  if (n <= 0) return `${title} ${price}`;
+  return `${title} ${price} · ${bounce}/${n}`;
+}
+
+/**
+ * Number support and resistance the same way on the chart and in the card.
+ * The card order is 1, 2, … and the line with the same price gets that number.
+ */
+export function numberLevelMarks(lines, levels) {
+  const kinds = ["support", "resistance"];
+  const levelCount = { support: 0, resistance: 0 };
+  const lineCount = { support: 0, resistance: 0 };
+  for (const level of levels || []) {
+    if (levelCount[level?.kind] != null) levelCount[level.kind] += 1;
+  }
+  for (const line of lines || []) {
+    if (lineCount[line?.kind] != null) lineCount[line.kind] += 1;
+  }
+  const totalOf = (kind) => Math.max(levelCount[kind] || 0, lineCount[kind] || 0);
+  const seen = { support: 0, resistance: 0 };
+  const nextLevels = (levels || []).map((level) => {
+    if (!kinds.includes(level?.kind)) return level;
+    seen[level.kind] += 1;
+    const levelIndex = seen[level.kind];
+    const levelTotal = totalOf(level.kind);
+    const base = { ...level, levelIndex, levelTotal };
+    if (levelTotal < 2) return base;
+    const name = guideStyle(level.kind)?.label || level.title;
+    return { ...base, title: `${name} ${levelIndex}` };
+  });
+  const pools = {
+    support: nextLevels.filter((level) => level.kind === "support"),
+    resistance: nextLevels.filter((level) => level.kind === "resistance")
+  };
+  const used = new Set();
+  const taken = { support: new Set(), resistance: new Set() };
+  const claim = (kind, preferred) => {
+    const total = totalOf(kind);
+    if (preferred > 0 && preferred <= total && !taken[kind].has(preferred)) {
+      taken[kind].add(preferred);
+      return preferred;
+    }
+    for (let index = 1; index <= Math.max(total, 1); index += 1) {
+      if (!taken[kind].has(index)) {
+        taken[kind].add(index);
+        return index;
+      }
+    }
+    return preferred || 1;
+  };
+  const nextLines = (lines || []).map((line) => {
+    if (!kinds.includes(line?.kind)) return line;
+    const pool = pools[line.kind];
+    let match = null;
+    let best = Infinity;
+    for (const level of pool) {
+      if (used.has(level)) continue;
+      const lineEur = Number(line.eur ?? line.eur0);
+      const levelEur = Number(level.eur);
+      const diff = Number.isFinite(lineEur) && Number.isFinite(levelEur) ? Math.abs(lineEur - levelEur) : 0;
+      if (diff < best) {
+        best = diff;
+        match = level;
+      }
+    }
+    if (match) used.add(match);
+    const levelTotal = totalOf(line.kind);
+    const levelIndex = claim(line.kind, match?.levelIndex || 0);
+    return {
+      ...line,
+      eur: match?.eur ?? line.eur ?? line.eur0,
+      levelIndex,
+      levelTotal
+    };
+  });
+  return { lines: nextLines, levels: nextLevels };
 }
 
 function annotateBounce(level, candles, range) {
@@ -555,17 +647,35 @@ function withBounces(levels, candles, range) {
   return (levels || []).map((level) => annotateBounce(level, candles, range));
 }
 
+function pairLevels(lines, levels) {
+  return numberLevelMarks(stampTouches(lines, levels), levels);
+}
+
 /** Same touch list as the sentence, indexed into the candles on the chart. */
 function stampTouches(lines, levels) {
+  const used = new Set();
   return (lines || []).map((line) => {
     if (line.kind !== "support" && line.kind !== "resistance") return line;
-    const level = (levels || []).find((item) => item.kind === line.kind);
+    let level = null;
+    let best = Infinity;
+    for (const item of levels || []) {
+      if (used.has(item) || item.kind !== line.kind) continue;
+      const lineEur = Number(line.eur ?? line.eur0);
+      const levelEur = Number(item.eur);
+      const diff = Number.isFinite(lineEur) && Number.isFinite(levelEur) ? Math.abs(lineEur - levelEur) : 0;
+      if (diff < best) {
+        best = diff;
+        level = item;
+      }
+    }
+    if (level) used.add(level);
     const stats = level?.bounce;
     return {
       ...line,
       touches: stats?.touches || [],
       bounce: stats?.bounce || 0,
-      n: stats?.n || 0
+      n: stats?.n || 0,
+      eur: level?.eur ?? line.eur ?? line.eur0
     };
   });
 }
@@ -617,13 +727,14 @@ export function analyseCandles(visible, history, range) {
     const mark = namedCandle(candles);
     const legend = [{ kind: "pattern", label: shape.legend || TITLES[shape.id] }];
     const levels = withBounces(levelsFrom(shape, past, spec), candles, range);
+    const paired = pairLevels(shape.lines, levels);
     return {
       title: TITLES[shape.id] || TITLES.unklar,
       patternId: shape.id,
-      lines: stampTouches(shape.lines, levels),
+      lines: paired.lines,
       legend,
       outcome: { ...outcome, show: share.show, n: share.n, pct: share.pct },
-      levels,
+      levels: paired.levels,
       mark: !mark || mark.id === shape.id ? null : mark.id
     };
   }
@@ -631,11 +742,12 @@ export function analyseCandles(visible, history, range) {
   const candle = base.patternId === "unklar" && !base.lines.length ? namedCandle(candles) : null;
   if (!candle) {
     const levels = withBounces((base.levels || []).map(withPrice), candles, range);
+    const paired = pairLevels(base.lines || [], levels);
     return {
       ...base,
       title: TITLES[base.patternId] || base.title,
-      lines: stampTouches(base.lines || [], levels),
-      levels
+      lines: paired.lines,
+      levels: paired.levels
     };
   }
     const share = pack(countNamed(past, candle.id, spec));
