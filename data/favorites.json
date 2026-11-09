@@ -252,7 +252,7 @@
       "priceAsOf": "2026-11-05",
       "priceVenue": "Frankfurt",
       "swarmNote": "In den geführten Konten kommt Rocket Lab kaum vor. Sawyer hat sie auf der Liste, ohne Posts.",
-      "reason": "Rekord-Auftragsbestand, Electron läuft, Neutron-Dome frisch gebaut; ESCAPADE-Blue-TMI (7.11.) weiter ohne offizielle NASA/Rocket-Lab-Bestätigung, Gold-Burn morgen ~11:51 Berlin. Q3-Zahlen Montag sind der nächste Check. Freitag ~+15 % US — nach dem Dip selektiv halten.",
+      "reason": "Rekord-Auftragsbestand, Electron läuft, Neutron-Dome frisch gebaut; NASA bestätigt beide ESCAPADE-Mars-Manöver (7. und 9.11.) der von Rocket Lab gebauten Sonden. Q3-Zahlen heute 23:00 sind der nächste Check. Nach +15 % am Freitag am Montag bis 18:05 noch einmal ~+10 % in den USA.",
       "counterArgument": "Ohne Neutron bleibt Rocket Lab klein gegen SpaceX. Das Management verkauft seit Monaten Aktien.",
       "example": false,
       "sources": [
@@ -267,6 +267,14 @@
         {
           "title": "Rocket Lab: Neutron-Update, Erststart jetzt 2027",
           "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
+        },
+        {
+          "title": "NASA: ESCAPADE schließt beide Swing-by-Manöver ab, Kurs Mars (9.11.)",
+          "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/"
+        },
+        {
+          "title": "Yahoo Finance: SpaceX, Rocket Lab steigen (9.11.)",
+          "url": "https://finance.yahoo.com/markets/article/spacex-rocket-lab-blast-higher-as-nasa-hands-out-10-billion-in-moon-base-awards-164320855.html"
         }
       ]
     },

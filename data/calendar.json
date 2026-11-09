@@ -353,7 +353,7 @@
     },
     {
       "id": "evt-escapade-tmi",
-      "title": "Rocket Lab / NASA ESCAPADE: Mars-Einschussmanöver (Blue 7.11. unbestätigt, Gold am 9.11.)",
+      "title": "Rocket Lab / NASA ESCAPADE: Mars-Einschussmanöver — beide gelungen (NASA bestätigt)",
       "date": "2026-11-09",
       "time": "11:51",
       "timezone": "Europe/Berlin",
@@ -363,11 +363,15 @@
       "tickers": [
         "RKLB"
       ],
-      "probabilityPct": 85,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten über Südaustralien. Stand 16:05 weiter keine offizielle Bestätigung, weder für Gold noch für Blue (7.11.): NASA-Blog letzter Eintrag 2.11., keine neuen Posts von NASA oder @RocketLab. Starlust schreibt zwar, Blue sei „laut NASA“ erfolgreich, nennt aber keine NASA-Quelle. AMSAT-DL meldet, Gold sei in unter 7000 km vorbeigeflogen; Leonard David berichtet von Funkkontakt (DSN Madrid). Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering; heute 23:00 bei den Q3-Zahlen dürfte Rocket Lab den Stand nennen.",
+      "reasoning": "NASA bestätigt am 9.11.: Beide ESCAPADE-Sonden haben ihren angetriebenen Vorbeiflug an der Erde mit etwa 9-minütigem Trans-Mars-Burn geschafft — die erste am Sa 7.11. um 5 Uhr EST (11:00 Berlin) in rund 1.000 Meilen Höhe, die zweite am Mo 9.11. um 6 Uhr EST (12:00 Berlin) in rund 650 Meilen Höhe. NASA: „zweimal, fehlerfrei, in zwei Tagen“. Ankunft am Mars am 7. und 9.9.2027. Darum 85 → 100 %. Rocket Lab hat die Sonden gebaut; Kurswirkung gering, die Q3-Zahlen heute 23:00 wiegen schwerer.",
       "example": false,
       "sources": [
+        {
+          "title": "NASA: ESCAPADE schließt beide Swing-by-Manöver ab, Kurs Mars (9.11.)",
+          "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/"
+        },
         {
           "title": "NASA: ESCAPADE Twin Spacecraft to Mars",
           "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
@@ -436,7 +440,7 @@
       ],
       "probabilityPct": 97,
       "impact": "hoch",
-      "reasoning": "Offiziell angekündigt: Veröffentlichung nach US-Börsenschluss am Montag, 9.11., Call um 17:00 Uhr ET (23:00 Uhr bei uns). Messlatte: eigene Prognose 250–265 Mio. $ Umsatz, Konsens etwa 257 Mio. $ (+66 % zum Vorjahr), Bruttomarge laut Prognose 29–31 % (Q2: 36,1 %), bereinigtes EBITDA −17 bis −23 Mio. $. Im Fokus: Auftragsbestand, Q4-Ausblick und der Neutron-Fahrplan, nachdem der Erststart am 14.10. auf 2027 verschoben wurde (Aktie am Folgetag −6,6 %). Nach den Q2-Zahlen bewegte sich der Kurs am Folgetag kaum (−0,04 %), nachbörslich lag er zeitweise 7 % im Minus. Optionen preisen laut TipRanks eine Bewegung von rund 15 % in beide Richtungen ein; die letzten vier Reaktionen lagen im Schnitt bei knapp 10 %. Vorbörslich Mo leicht im Plus (~+1,4 %) nach +15 % am Freitag.",
+      "reasoning": "Offiziell angekündigt: Veröffentlichung nach US-Börsenschluss am Montag, 9.11., Call um 17:00 Uhr ET (23:00 Uhr bei uns). Messlatte: eigene Prognose 250–265 Mio. $ Umsatz, Konsens etwa 257 Mio. $ (+66 % zum Vorjahr), Bruttomarge laut Prognose 29–31 % (Q2: 36,1 %), bereinigtes EBITDA −17 bis −23 Mio. $. Im Fokus: Auftragsbestand, Q4-Ausblick und der Neutron-Fahrplan, nachdem der Erststart am 14.10. auf 2027 verschoben wurde (Aktie am Folgetag −6,6 %). Nach den Q2-Zahlen bewegte sich der Kurs am Folgetag kaum (−0,04 %), nachbörslich lag er zeitweise 7 % im Minus. Optionen preisen laut TipRanks eine Bewegung von rund 15 % in beide Richtungen ein; die letzten vier Reaktionen lagen im Schnitt bei knapp 10 %. Am Mo bis 18:05 ~+10,5 % auf ~58,7 $ nach +15 % am Freitag; laut Yahoo Finance auf Kurs für fast 30 % in zwei Tagen, den drittbesten Lauf seit zwei Jahren. Die Messlatte steigt damit. Positiv vorab: NASA bestätigt beide ESCAPADE-Manöver der von Rocket Lab gebauten Sonden.",
       "example": false,
       "sources": [
         {
@@ -470,6 +474,14 @@
         {
           "title": "TipRanks: Optionen erwarten ~15 % Bewegung (RKLB Q3)",
           "url": "http://www.tipranks.com/news/rocket-lab-stock-price-forecast-what-options-traders-and-financial-analysts-expect-ahead-of-q3-earnings"
+        },
+        {
+          "title": "Yahoo Finance: SpaceX, Rocket Lab steigen nach NASA-Mondaufträgen (9.11.)",
+          "url": "https://finance.yahoo.com/markets/article/spacex-rocket-lab-blast-higher-as-nasa-hands-out-10-billion-in-moon-base-awards-164320855.html"
+        },
+        {
+          "title": "24/7 Wall St.: Rocket Lab +9 % vor Zahlen, SpaceX +6 % (9.11.)",
+          "url": "https://247wallst.com/investing/2026/11/09/rocket-lab-jumps-9-ahead-of-earnings-ast-spacemobile-surges-11-on-japan-satellite-venture-with-rakuten-spacex-rises-6/"
         }
       ]
     },
@@ -1215,7 +1227,7 @@
       ],
       "probabilityPct": 50,
       "impact": "mittel",
-      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nach dem US-Start lag Nvidia zeitweise fast 7 % im Minus, um 16:05 bei ~178,5 $ (−4,4 %), während Broadcom, AMD und die Nasdaq stiegen. Bis 16:05 keine Antwort Huangs auf die Briefing-Bitte; Nvidia: Huang führe „ohne Unterbrechung“ weiter. Mit der neuen demokratischen Mehrheit droht zusätzlich mehr Aufsicht (CNBC). Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen.",
+      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nach dem US-Start lag Nvidia zeitweise bis zu 8 % im Minus, um 18:05 bei ~177,2 $ (−5,0 %), während Broadcom, AMD und die Nasdaq (~+2,5 %) stiegen. Bis 18:05 keine öffentliche Antwort Huangs auf die Briefing-Bitte. Der künftige Mehrheitsführer Jeffries erwartet, dass die Affäre am Mo in einem vertraulichen Briefing mit dem Weißen Haus zur Sprache kommt (CNBC); Nvidia: Huang führe „ohne Unterbrechung“ weiter. Mit der neuen demokratischen Mehrheit droht zusätzlich mehr Aufsicht (CNBC). Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen.",
       "example": false,
       "sources": [
         {
@@ -1284,7 +1296,7 @@
       ],
       "probabilityPct": 90,
       "impact": "mittel",
-      "reasoning": "Laut Weißem-Haus-Plan (Reuters) trifft Trump heute um 17:00 GMT (= 18:00 Berlin) Katars Premier Al Thani, den wichtigsten Vermittler mit Iran; vorher spricht Vize Vance mit ihm. Auf dem Tisch: ein Zwei-Tage-Plan (Blockade lockern, IAEA-Inspektoren, dann Hormus öffnen). Die 90 % gelten dafür, dass das Treffen stattfindet — nicht für einen Durchbruch: Rubio nennt Irans Forderungen „unrealistisch“. Trump sagte, neue Angriffe seien „highly unlikely“, solange die Gespräche vorankommen. Öl (Brent ~98 $) schwankt auf solche Nachrichten; das färbt auf die Börsenstimmung ab.",
+      "reasoning": "Laut Weißem-Haus-Plan (Reuters) trifft Trump heute um 17:00 GMT (= 18:00 Berlin) Katars Premier Al Thani, den wichtigsten Vermittler mit Iran; vorher spricht Vize Vance mit ihm. Auf dem Tisch: ein Zwei-Tage-Plan (Blockade lockern, IAEA-Inspektoren, dann Hormus öffnen). Die 90 % gelten dafür, dass das Treffen stattfindet — nicht für einen Durchbruch: Rubio nennt Irans Forderungen „unrealistisch“. Trump sagte, neue Angriffe seien „highly unlikely“, solange die Gespräche vorankommen. Öl (Brent ~98 $) schwankt auf solche Nachrichten; das färbt auf die Börsenstimmung ab. Stand 18:05: kein offizielles Ergebnis oder Readout des Weißen Hauses. Brent lag am Mo bei rund 95 $ (Yahoo Finance).",
       "example": false,
       "sources": [
         {
@@ -1306,6 +1318,10 @@
         {
           "title": "Investing.com: Öl macht Verluste wett (9.11.)",
           "url": "https://za.investing.com/news/commodities-news/oil-prices-dip-as-trump-says-new-iran-attacks-unlikely-if-talks-progress-4560249"
+        },
+        {
+          "title": "Yahoo Finance: Börse heute, Nasdaq +2,6 % trotz Nvidia (9.11.)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
         }
       ]
     },
@@ -1337,6 +1353,37 @@
         {
           "title": "CoinDesk: SpaceX plant 24-Mrd.-$-Supercomputer (9.11.)",
           "url": "https://www.coindesk.com/markets/2026/11/09/spacex-proposes-a-usd24-billion-texas-supercomputer-worth-17-times-its-bitcoin-pile"
+        }
+      ]
+    },
+    {
+      "id": "evt-russell-rebalance-dez",
+      "title": "Russell-Indexanpassung: SpaceX im Russell 1000 Growth (Goldman: >10 Mrd. $ passive Käufe)",
+      "date": "2026-12-11",
+      "time": "22:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "index",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 85,
+      "impact": "mittel",
+      "reasoning": "FTSE Russell setzt die Indexanpassung nach US-Börsenschluss am 11.12. um. Goldman-Stratege Ben Snider schätzt (6.11.), dass dabei mehr als 10 Mrd. $ passive Käufe von SpaceX-Aktien anfallen könnten. Die 85 % gelten für den Termin mit SpaceX-Aufnahme; die Summe ist nur eine Schätzung. Gegenkraft: drei Tage vorher (8.12.) endet die 180-Tage-Haltefrist.",
+      "example": false,
+      "sources": [
+        {
+          "title": "GuruFocus: Goldman zu SpaceX und Russell-Rebalancing",
+          "url": "https://www.gurufocus.com/news/9184634/goldman-sachs-delivers-surprising-take-on-spacex-stock"
+        },
+        {
+          "title": "24/7 Wall St.: Rocket Lab +9 % vor Zahlen, SpaceX +6 % (9.11.)",
+          "url": "https://247wallst.com/investing/2026/11/09/rocket-lab-jumps-9-ahead-of-earnings-ast-spacemobile-surges-11-on-japan-satellite-venture-with-rakuten-spacex-rises-6/"
+        },
+        {
+          "title": "LSEG: Russell Reconstitution",
+          "url": "https://www.lseg.com/en/ftse-russell/russell-reconstitution"
         }
       ]
     }

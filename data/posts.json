@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-09T16:10:00+01:00",
+  "asOf": "2026-11-09T18:15:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -49,26 +49,277 @@
       ]
     },
     "RKLB": {
-      "score": 0.05,
-      "label": "abwartend",
-      "summary": "ESCAPADE-Blue (7.11.) weiter ohne offizielle Bestätigung. @NASASolarSystem: „Flyby #2 is tonight“ — Gold-Burn heute 11:51. Q3-Zahlen heute 23:00, Electron-100 NET 14.11.",
+      "score": 0.3,
+      "label": "zuversichtlich",
+      "summary": "NASA bestätigt am 9.11.: beide ESCAPADE-Sonden (von Rocket Lab gebaut) haben ihr Mars-Manöver „fehlerfrei“ geschafft. Aktie ~+10 % vor den Q3-Zahlen heute 23:00, Electron-100 NET 14.11.",
       "sources": [
         {
-          "title": "@NASASolarSystem: Flyby #2 is tonight",
-          "url": "https://x.com/NASASolarSystem/status/2119494168728789467"
+          "title": "NASA: ESCAPADE schließt beide Swing-by-Manöver ab, Kurs Mars (9.11.)",
+          "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/"
         },
         {
-          "title": "NASA ESCAPADE Blog",
-          "url": "https://science.nasa.gov/blogs/escapade/"
-        },
-        {
-          "title": "The Space Tap: outcome not confirmed",
-          "url": "https://thespacetap.com/nasa-escapade-earth-flyby-slingshot-mars-nov-7-9/"
+          "title": "Yahoo Finance: SpaceX, Rocket Lab steigen (9.11.)",
+          "url": "https://finance.yahoo.com/markets/article/spacex-rocket-lab-blast-higher-as-nasa-hands-out-10-billion-in-moon-base-awards-164320855.html"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2119824096100040918",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T17:07:03+01:00",
+      "summaryDe": "Musk teilt einen Clip zu Batteriekosten: Eine Batterie kostete 600 $ je kWh, die Rohstoffe laut Musk nur etwa 80 $ — Denken in ersten Prinzipien statt in Analogien.",
+      "originalText": "RT @0xMiraxq: A battery cost $600 per kilowatt-hour. The materials it’s made of, according to Elon Musk, cost about $80.",
+      "url": "https://x.com/elonmusk/status/2119824096100040918",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT Batteriekosten",
+          "url": "https://x.com/elonmusk/status/2119824096100040918"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119823862934482991",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T17:06:08+01:00",
+      "summaryDe": "Musk teilt einen Beitrag von Katie Miller: Seine Firmen hätten fast 160.000 direkte Beschäftigte, stützten fast 870.000 Jobs und hätten in fünf Jahren 338 Mrd. $ in die US-Wirtschaft gebracht. Zahlen von Miller, nicht geprüft.",
+      "originalText": "RT @KatieMiller: Elon has nearly 160,000 direct employees throughout his companies and supports almost 870,000 jobs.",
+      "url": "https://x.com/elonmusk/status/2119823862934482991",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT Katie Miller Jobs",
+          "url": "https://x.com/elonmusk/status/2119823862934482991"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119823743212257504",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T17:05:39+01:00",
+      "summaryDe": "Musk teilt einen Clip: Ron Baron nennt ihn den „größten Jobschaffer“ der USA und einen „Menschen, wie es ihn einmal im Leben gibt“.",
+      "originalText": "RT @ResisttheMS: Ron Baron describes Elon Musk as \"the biggest job creator in the\" US and a \"once in a lifetime person.\"",
+      "url": "https://x.com/elonmusk/status/2119823743212257504",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT Ron Baron",
+          "url": "https://x.com/elonmusk/status/2119823743212257504"
+        }
+      ]
+    },
+    {
+      "id": "post-starlink-2119818965266612643",
+      "account": "@Starlink",
+      "displayName": "Starlink",
+      "postedAt": "2026-11-09T16:46:40+01:00",
+      "summaryDe": "Starlink: Schnelles Internet jetzt an Bord von Brussels Airlines. Musk teilt den Post.",
+      "originalText": "Starlink is now delivering fast, reliable internet onboard @FlyingBrussels 🛰️✈️",
+      "url": "https://x.com/Starlink/status/2119818965266612643",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@Starlink: Brussels Airlines",
+          "url": "https://x.com/Starlink/status/2119818965266612643"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119817540432244779",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T16:41:00+01:00",
+      "summaryDe": "Musk: „Grok kann unglaubliche Dinge“ — er zitiert einen Nutzer, dem Grok angeblich in einem Scheidungsverfahren geholfen hat. Anekdote, nicht geprüft.",
+      "originalText": "Grok @Bot can do incredible things",
+      "url": "https://x.com/elonmusk/status/2119817540432244779",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI",
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Grok can do incredible things",
+          "url": "https://x.com/elonmusk/status/2119817540432244779"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119816030579286326",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T16:35:00+01:00",
+      "summaryDe": "Musk teilt einen Beitrag über einen WSJ-Bericht: Texas-Demokraten wollten SpaceX und Tesla nach ihrem Wahlsieg die Sonderbehandlung entziehen. Musk hält dagegen, der Erfolg komme aus Freiheit, nicht aus Gefälligkeiten. Politisches Risiko für Starbase und Giga Texas.",
+      "originalText": "RT @NathanielSami: Musk to Texas Democrats: Our Success Came From Freedom, Not Your Favors",
+      "url": "https://x.com/elonmusk/status/2119816030579286326",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT Texas-Demokraten / WSJ",
+          "url": "https://x.com/elonmusk/status/2119816030579286326"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119813673728548907",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T16:25:38+01:00",
+      "summaryDe": "Musk teilt eine Geschichte: Starlink half einer eingeschneiten Familie bei Bariloche (Argentinien), Hilfe zu rufen.",
+      "originalText": "RT @cb_doge: Starlink helped save a family trapped by snowstorm in a remote area of Argentina.",
+      "url": "https://x.com/elonmusk/status/2119813673728548907",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT Starlink Argentinien",
+          "url": "https://x.com/elonmusk/status/2119813673728548907"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119812607117062451",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T16:21:24+01:00",
+      "summaryDe": "Musk zitiert einen Bericht, Tesla habe mit dem Bau der 10-Mrd.-$-Solarfabrik bei Houston begonnen (Fertigstellung 2028, Betrieb ab Q1 2029), und schreibt nur „Project Crystal Sun“. Tesla selbst hat den Baustart nicht offiziell gemeldet; der Bericht stützt sich auf Drohnenbilder (Tesla Mag).",
+      "originalText": "Project Crystal Sun",
+      "url": "https://x.com/elonmusk/status/2119812607117062451",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Project Crystal Sun",
+          "url": "https://x.com/elonmusk/status/2119812607117062451"
+        },
+        {
+          "title": "Tesla Mag: Project Crystal Sun – Baustart gemeldet (9.11.)",
+          "url": "https://www.tesla-mag.com/project-crystal-sun-chantier-usine-solaire-tesla/"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119812349658079420",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T16:20:23+01:00",
+      "summaryDe": "Auf einen Bericht, Tesla habe den LPDDR6-Speicher des AI6-Chips für Optimus von 216 auf 144 GB gekürzt, antwortet Musk: Die Speicherbandbreite sei gleich geblieben.",
+      "originalText": "@herbertong Memory bandwidth was held constant though",
+      "url": "https://x.com/elonmusk/status/2119812349658079420",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Memory bandwidth held constant",
+          "url": "https://x.com/elonmusk/status/2119812349658079420"
+        },
+        {
+          "title": "@herbertong: Bericht zu AI6-Speicher",
+          "url": "https://x.com/herbertong/status/2119790863660257461"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119811718721503550",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T16:17:52+01:00",
+      "summaryDe": "Musk teilt eine Geschichte: Starlink half fünf Menschen, die in Kasachstans verschneiten Bergen ohne Mobilfunk festsaßen.",
+      "originalText": "RT @cb_doge: Starlink helped save five people stranded in Kazakhstan’s snowy mountains.",
+      "url": "https://x.com/elonmusk/status/2119811718721503550",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT Starlink Kasachstan",
+          "url": "https://x.com/elonmusk/status/2119811718721503550"
+        }
+      ]
+    },
     {
       "id": "post-musk-2119799146211393960",
       "account": "@elonmusk",
@@ -4667,5 +4918,5 @@
       ]
     }
   ],
-  "notes": "09.11. 16:10: seit 12:00 rund 9 neue Musk-Posts (15:18–15:35), meist Politik-Retweets (Krakau, Chappelle); firmenbezogen nur Retweets zu Grok-App-Nutzerzahlen (Similarweb, 93,4 Mio. MAU), Starlink bei Brussels Airlines und dem Robotaxi-Austin-Post. Keine neuen Posts von SpaceX, Tesla, Starlink, Rocket Lab, Neuralink, xAI, Boring. ESCAPADE weiter ohne offizielle Bestätigung (Stand 16:05)."
+  "notes": "09.11. 18:15: seit 16:10 rund 15 neue Musk-Posts, viele Politik-Retweets. Firmenbezogen: „Project Crystal Sun“ (Bericht über Baustart der Tesla-Solarfabrik bei Houston, von Tesla nicht offiziell bestätigt), Antwort zum AI6-Speicher, Grok-Anekdote, Retweet zu Texas-Demokraten/WSJ, Starlink-Rettungsgeschichten. @Starlink: Brussels Airlines. Keine neuen Posts von SpaceX, Tesla, Rocket Lab, Neuralink, xAI, Boring. NASA bestätigt beide ESCAPADE-Manöver."
 }

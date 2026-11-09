@@ -34,9 +34,13 @@
       "question": "Gelingt ESCAPADE-Sonde Blue heute das Trans-Mars-Injection-Manöver (TMI-Burn ~10:51 Berlin) laut NASA/Rocket Lab?",
       "karlAnswer": "ja",
       "karlReason": "Knapp „ja“, etwa 80 zu 20 vor dem Burn. NASA/Rocket Lab hielten Blue für Samstag 4:51 EST / 10:51 Berlin fest. Frist So 06:30 Berlin: rund 20 Stunden nach dem Burn weiter keine offizielle Meldung von NASA-Blog, @NASA, @RocketLab oder @escapade_mars — weder Erfolg noch Fehlschlag. Darum nicht gewertet: kein „ja“, kein „nein“, keine Punkte. Wird nachgetragen, sobald NASA oder Rocket Lab sich äußern.",
-      "outcome": null,
+      "outcome": "ja",
       "resolvesAt": "2026-11-08T06:30:00+01:00",
       "sources": [
+        {
+          "title": "NASA: ESCAPADE schließt beide Swing-by-Manöver ab, Kurs Mars (9.11.)",
+          "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/"
+        },
         {
           "title": "NASA: ESCAPADE Twin Spacecraft",
           "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
@@ -62,7 +66,7 @@
           "url": "https://x.com/jeff_on_orbit/status/2119246722589204875"
         }
       ],
-      "outcomeNote": "Nicht gewertet. Bis zur Frist (8.11. 06:30 Berlin) keine offizielle Bestätigung von NASA, Rocket Lab, Blue Origin oder UC Berkeley. Starlust schrieb „erfolgreich“, stützt sich aber nur auf NASAs Vorab-Text. Ergebnis bleibt leer, bis eine offizielle Quelle da ist."
+      "outcomeNote": "Nachgetragen am 9.11.: NASA bestätigt, dass die erste Sonde ihren Trans-Mars-Burn am 7.11. um 5 Uhr EST (11:00 Berlin) abgeschlossen hat. Ergebnis „ja“ — Karl lag richtig. Zur Frist (8.11. 06:30) war das noch nicht offiziell; die Wertung folgt der späteren NASA-Meldung."
     },
     {
       "id": "2026-11-07",
