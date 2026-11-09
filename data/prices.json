@@ -12636,8 +12636,16 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Zweiter starker Tag: SPCX ~+5,3 % auf ~141,3 $ (Stand 20:05) nach +8,6 % am Freitag; laut Yahoo Finance über 100 Mrd. $ mehr Börsenwert an einem Tag. Treiber: breite Erholung von Chips und KI-Werten nach dem Ausverkauf der Vorwoche (Nasdaq ~+2,5 %, Öl fällt), Stifel bestätigt „Kaufen“ mit 190 $, dazu NASAs neue Mond-Lieferaufträge (CLPS 2, bis 10 Mrd. $, SpaceX unter acht Firmen). Bremse: Haltefrist-Ende am 8.12. Neu: Nikkei meldet Eilbestellungen der Tesla-SpaceX-Chipfabrik Terafab bei japanischen Ausrüstern.",
+      "why": "Schluss +5,8 % auf 142,07 $ nach +8,6 % am Freitag (Yahoo Finance). Treiber: breite Erholung von Chips und KI-Werten nach dem Ausverkauf der Vorwoche – Nasdaq +2,7 %, Halbleiter-Index ~+7 %, Öl deutlich billiger (Reuters) –, dazu NASAs neue Mond-Lieferaufträge (CLPS 2, SpaceX unter acht Firmen) und Stifel mit Ziel 190 $. Bremse: Haltefrist-Ende am 8.12.",
       "whySources": [
+        {
+          "title": "Yahoo Finance: SPCX",
+          "url": "https://finance.yahoo.com/quote/SPCX/"
+        },
+        {
+          "title": "Reuters/StreetInsider: Wall St steigt, Öl fällt, Nvidia schwach (9.11.)",
+          "url": "https://www.streetinsider.com/General+News/Wall+St+rallies+after+last+week%27s+AI+rout%3B+Nvidia+falls/27310155.html"
+        },
         {
           "title": "Yahoo Finance: SpaceX, Rocket Lab steigen nach NASA-Mondaufträgen (9.11.)",
           "url": "https://finance.yahoo.com/markets/article/spacex-rocket-lab-blast-higher-as-nasa-hands-out-10-billion-in-moon-base-awards-164320855.html"
@@ -12647,16 +12655,8 @@
           "url": "https://247wallst.com/investing/2026/11/09/rocket-lab-jumps-9-ahead-of-earnings-ast-spacemobile-surges-11-on-japan-satellite-venture-with-rakuten-spacex-rises-6/"
         },
         {
-          "title": "Barchart: Indizes deutlich höher, Chips und Mag 7 steigen, Öl fällt (9.11.)",
-          "url": "https://www.barchart.com/story/news/8737959/stock-indexes-sharply-higher-as-tech-stocks-rally-and-crude-oil-falls"
-        },
-        {
           "title": "NASA: Aufträge für Mondbasis-Transporte (CLPS 2, 7.11.)",
           "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/"
-        },
-        {
-          "title": "Financial News nach Nikkei: Terafab-Eilaufträge in Japan (9.11.)",
-          "url": "https://en.fnnews.com/news/202611090902383508"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -28090,8 +28090,16 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "~+5,5 % auf ~377,9 $ (Stand 20:05). Treiber: Musk will die Cybertruck-Fertigung in Texas Mitte 2027 beenden und die Fläche fürs Cybercab nutzen – Anleger lesen das als Fokus aufs Robotaxi (Investing.com). Dazu Robotaxi in San Antonio (achte US-Stadt), größeres Austin-Gebiet und die breite Tech-Erholung (Mag 7 im Plus). Gegenwind: Verkäufe in China im Oktober auf Vier-Jahres-Tief (IBD).",
+      "why": "Schluss +5,5 % auf 378,05 $ (Yahoo Finance). Treiber: Musk will die Cybertruck-Fertigung in Texas Mitte 2027 beenden und die Fläche fürs Cybercab nutzen – Anleger lesen das als Fokus aufs Robotaxi (Investing.com). Dazu Robotaxi in San Antonio und die breite Erholung: Nicht-Basiskonsum und Industrie je etwa +4 %, Nasdaq +2,7 % (Reuters). Gegenwind: China-Verkäufe im Oktober auf Vier-Jahres-Tief (IBD).",
       "whySources": [
+        {
+          "title": "Yahoo Finance: TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
+        },
+        {
+          "title": "Reuters/StreetInsider: Wall St steigt, Öl fällt, Nvidia schwach (9.11.)",
+          "url": "https://www.streetinsider.com/General+News/Wall+St+rallies+after+last+week%27s+AI+rout%3B+Nvidia+falls/27310155.html"
+        },
         {
           "title": "Investing.com: Warum Tesla heute steigt",
           "url": "https://www.investing.com/news/stock-market-news/why-is-tesla-stock-rallying-today-93CH-5012599"
@@ -28103,10 +28111,6 @@
         {
           "title": "IBD: China-Verkäufe schwach, Robotaxi San Antonio (9.11.)",
           "url": "https://www.investors.com/news/tesla-elon-musk-robotaxi-china/"
-        },
-        {
-          "title": "Barchart: Indizes deutlich höher, Chips und Mag 7 steigen, Öl fällt (9.11.)",
-          "url": "https://www.barchart.com/story/news/8737959/stock-indexes-sharply-higher-as-tech-stocks-rally-and-crude-oil-falls"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -40382,19 +40386,23 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Vor den Zahlen heute 23:00 stark gefragt: RKLB ~+10,3 % auf ~58,5 $ (Stand 20:05) nach +15 % am Freitag – fast 30 % in zwei Tagen (Yahoo Finance). Treiber: Positionierung vor Q3 (Prognose 250–265 Mio. $ Umsatz, Auftragsbestand 2,36 Mrd. $) und die Erholung der ganzen Raumfahrt-Branche. NASA bestätigt beide ESCAPADE-Manöver der von Rocket Lab gebauten Sonden. Risiko: Neutron erst 2027.",
+      "why": "Schluss +10,9 % auf 58,86 $ nach +15 % am Freitag (Yahoo Finance). Treiber: Positionierung vor den Q3-Zahlen und Erholung der Raumfahrt-Werte. Die Zahlen um 22:05: Rekordumsatz 267,8 Mio. $ (+73 %, über Prognose und Konsens), Auftragsbestand ~3,57 Mrd. $ (+52 %), Q4-Ausblick 270–290 Mio. $. Dagegen: Verlust je Aktie −0,12 $ statt −0,07 $ (Einmalkosten). Nachbörslich zunächst bis ~−7 % auf ~54,8 $ (22:13), Call um 23:00.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SpaceX, Rocket Lab steigen nach NASA-Mondaufträgen (9.11.)",
-          "url": "https://finance.yahoo.com/markets/article/spacex-rocket-lab-blast-higher-as-nasa-hands-out-10-billion-in-moon-base-awards-164320855.html"
+          "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+        },
+        {
+          "title": "24/7 Wall St.: RKLB Q3 – Umsatz über, EPS unter Erwartung (9.11.)",
+          "url": "https://247wallst.com/investing/2026/11/09/live-will-rocket-lab-smash-q3-earnings-tonight-after-jumping-10-intraday/"
+        },
+        {
+          "title": "Yahoo Finance: RKLB (inkl. Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
           "title": "24/7 Wall St.: Rocket Lab +9 % vor Zahlen, SpaceX +6 % (9.11.)",
           "url": "https://247wallst.com/investing/2026/11/09/rocket-lab-jumps-9-ahead-of-earnings-ast-spacemobile-surges-11-on-japan-satellite-venture-with-rakuten-spacex-rises-6/"
-        },
-        {
-          "title": "NASA: ESCAPADE schließt beide Swing-by-Manöver ab, Kurs Mars (9.11.)",
-          "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",

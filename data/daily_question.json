@@ -1,33 +1,57 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-08-ussf627",
-    "date": "2026-11-08",
-    "question": "Bringt SpaceX USSF-627 im ersten Startfenster (Di 10.11., ab 04:03 Berlin) erfolgreich ins All?",
-    "karlAnswer": "ja",
-    "karlReason": "Eher „ja“, etwa 80 zu 20. SpaceX nennt Mo 9.11. 19:03 PT (= Di 04:03 Berlin), vier Stunden Fenster, Backup einen Tag später. Derselbe Startplatz brachte USSF-432 am Samstag planmäßig hoch. Risiko: Wetter oder Technik verschieben auf den Backup-Termin.",
+    "id": "2026-11-09-rklb",
+    "date": "2026-11-09",
+    "question": "Schließt RKLB am Dienstag, 10. November, an der Nasdaq höher als am Montag (58,86 $)?",
+    "karlAnswer": "nein",
+    "karlReason": "Knapp „nein“, etwa 45 zu 55. Umsatz, Auftragsbestand und Q4-Ausblick sind stark, aber fast 30 % in zwei Tagen haben viel vorweggenommen, der Verlust je Aktie lag mit −0,12 $ unter der Erwartung, und nachbörslich stand die Aktie um 22:13 rund 7 % tiefer. Der Call um 23:00 kann das drehen.",
     "outcome": null,
-    "resolvesAt": "2026-11-10T08:30:00+01:00",
+    "resolvesAt": "2026-11-10T22:15:00+01:00",
     "sources": [
       {
-        "title": "SpaceX: USSF-627 Mission",
-        "url": "https://www.spacex.com/launches/ussf627"
+        "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
+        "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
       },
       {
-        "title": "SpaceX: Startliste",
-        "url": "https://www.spacex.com/launches/"
+        "title": "24/7 Wall St.: RKLB Q3 – Umsatz über, EPS unter Erwartung (9.11.)",
+        "url": "https://247wallst.com/investing/2026/11/09/live-will-rocket-lab-smash-q3-earnings-tonight-after-jumping-10-intraday/"
       },
       {
-        "title": "Next Spaceflight: USSF-627",
-        "url": "https://nextspaceflight.com/launches/details/8446/"
-      },
-      {
-        "title": "SpaceX: USSF-432 Mission (Sa erfolgreich)",
-        "url": "https://www.spacex.com/launches/ussf432"
+        "title": "Yahoo Finance: RKLB (inkl. Nachbörse)",
+        "url": "https://finance.yahoo.com/quote/RKLB/"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-08-ussf627",
+      "date": "2026-11-08",
+      "question": "Bringt SpaceX USSF-627 im ersten Startfenster (Di 10.11., ab 04:03 Berlin) erfolgreich ins All?",
+      "karlAnswer": "ja",
+      "karlReason": "Eher „ja“, etwa 80 zu 20. SpaceX nennt Mo 9.11. 19:03 PT (= Di 04:03 Berlin), vier Stunden Fenster, Backup einen Tag später. Derselbe Startplatz brachte USSF-432 am Samstag planmäßig hoch. Risiko: Wetter oder Technik verschieben auf den Backup-Termin.",
+      "outcome": "nein",
+      "resolvesAt": "2026-11-10T08:30:00+01:00",
+      "sources": [
+        {
+          "title": "SpaceX: USSF-627 Mission (jetzt Di 10.11. 18:49 PT)",
+          "url": "https://www.spacex.com/launches/ussf627"
+        },
+        {
+          "title": "SpaceX: Startliste",
+          "url": "https://www.spacex.com/launches/"
+        },
+        {
+          "title": "Next Spaceflight: USSF-627",
+          "url": "https://nextspaceflight.com/launches/details/8446/"
+        },
+        {
+          "title": "SpaceX: USSF-432 Mission (Sa erfolgreich)",
+          "url": "https://www.spacex.com/launches/ussf432"
+        }
+      ],
+      "outcomeNote": "SpaceX hat USSF-627 vor dem Fenster auf Di 10.11. 18:49 PT verschoben (bei uns Mi 11.11. ab 03:49). Im ersten Fenster (Di 04:03–08:03) findet damit kein Start statt. Karl lag mit „ja“ daneben."
+    },
     {
       "id": "2026-11-07-escapade",
       "date": "2026-11-07",

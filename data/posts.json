@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-09T20:10:00+01:00",
+  "asOf": "2026-11-09T22:15:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -65,6 +65,34 @@
     }
   },
   "posts": [
+    {
+      "id": "post-rocketlab-2119878450614026452",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-09T20:43:02+01:00",
+      "summaryDe": "Rocket Lab lädt zum Q3-Call um 17:00 Uhr ET ein (23:00 bei uns). Die Zahlen kamen um 22:05: Rekordumsatz 267,8 Mio. $, Auftragsbestand ~3,57 Mrd. $, Q4-Prognose 270–290 Mio. $; Verlust je Aktie −0,12 $.",
+      "originalText": "Tune in to our Q3 2026 financial results at 5:00 pm ET today.",
+      "url": "https://x.com/RocketLab/status/2119878450614026452",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: Q3-Call",
+          "url": "https://x.com/RocketLab/status/2119878450614026452"
+        },
+        {
+          "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2119824096100040918",
       "account": "@elonmusk",

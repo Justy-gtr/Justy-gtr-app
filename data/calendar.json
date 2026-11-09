@@ -428,7 +428,7 @@
     },
     {
       "id": "evt-rklb-q3",
-      "title": "Rocket Lab: Q3-2026-Zahlen und Call",
+      "title": "Rocket Lab: Q3-2026-Zahlen und Call — veröffentlicht",
       "date": "2026-11-09",
       "time": "23:00",
       "timezone": "Europe/Berlin",
@@ -438,11 +438,23 @@
       "tickers": [
         "RKLB"
       ],
-      "probabilityPct": 97,
+      "probabilityPct": 100,
       "impact": "hoch",
-      "reasoning": "Offiziell angekündigt: Veröffentlichung nach US-Börsenschluss am Montag, 9.11., Call um 17:00 Uhr ET (23:00 Uhr bei uns). Messlatte: eigene Prognose 250–265 Mio. $ Umsatz, Konsens etwa 257 Mio. $ (+66 % zum Vorjahr), Bruttomarge laut Prognose 29–31 % (Q2: 36,1 %), bereinigtes EBITDA −17 bis −23 Mio. $. Im Fokus: Auftragsbestand, Q4-Ausblick und der Neutron-Fahrplan, nachdem der Erststart am 14.10. auf 2027 verschoben wurde (Aktie am Folgetag −6,6 %). Nach den Q2-Zahlen bewegte sich der Kurs am Folgetag kaum (−0,04 %), nachbörslich lag er zeitweise 7 % im Minus. Optionen preisen laut TipRanks eine Bewegung von rund 15 % in beide Richtungen ein; die letzten vier Reaktionen lagen im Schnitt bei knapp 10 %. Am Mo um 20:05 ~+10,3 % auf ~58,5 $ (Zahlen noch nicht veröffentlicht, kommen nach US-Börsenschluss 22:00) nach +15 % am Freitag; laut Yahoo Finance auf Kurs für fast 30 % in zwei Tagen, den drittbesten Lauf seit zwei Jahren. Die Messlatte steigt damit. Positiv vorab: NASA bestätigt beide ESCAPADE-Manöver der von Rocket Lab gebauten Sonden.",
+      "reasoning": "Veröffentlicht am Mo 9.11. um 22:05 (Call 23:00). Umsatz Rekord 267,8 Mio. $ (+73 % zum Vorjahr), über der eigenen Spanne 250–265 Mio. $ und dem Konsens von etwa 257 Mio. $. Verlust je Aktie −0,12 $ statt erwarteter −0,07 $; darin stecken ein Einmalverlust von 27,3 Mio. $ aus der Ablösung von Wandelanleihen und 21,3 Mio. $ Transaktionskosten (Iridium). Bereinigtes EBITDA −18,0 Mio. $ (Prognose −17 bis −23), GAAP-Bruttomarge rund 33,6 % (Prognose 29–31 %), erstmals positiver operativer Cashflow (7,2 Mio. $). Auftragsbestand rund 3,57 Mrd. $ (+52 % seit Ende Q2), davon fast 1 Mrd. $ neue Startaufträge; Neutron hat jetzt 16 Missionen im Bestand, Grundpreis teils 70 Mio. $, Erststart weiter frühestens 2027. Q4-Ausblick: Umsatz 270–290 Mio. $ (Konsens vorher ~265 Mio. $), GAAP-Bruttomarge 34–36 %. Aktie schloss am Mo bei 58,86 $ (+10,9 %); nachbörslich zunächst schwankend zwischen etwa 54,7 und 60,1 $, um 22:13 bei ~54,8 $ (−7 %). Der Call um 23:00 kann das noch drehen.",
       "example": false,
       "sources": [
+        {
+          "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+        },
+        {
+          "title": "24/7 Wall St.: RKLB Q3 – Umsatz über, EPS unter Erwartung (9.11.)",
+          "url": "https://247wallst.com/investing/2026/11/09/live-will-rocket-lab-smash-q3-earnings-tonight-after-jumping-10-intraday/"
+        },
+        {
+          "title": "Yahoo Finance: RKLB (inkl. Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
         {
           "title": "Rocket Lab: Termin der Q3-2026-Zahlen (GlobeNewswire)",
           "url": "https://www.globenewswire.com/news-release/2026/10/20/3385004/0/en/rocket-lab-announces-date-of-third-quarter-2026-financial-results.html"
@@ -565,12 +577,16 @@
       ],
       "probabilityPct": 95,
       "impact": "mittel",
-      "reasoning": "Offizieller BLS-Termin. Die Inflationszahl ist neben dem Arbeitsmarkt der wichtigste Datenpunkt vor der Dezember-Sitzung der Fed. Ölpreis und Zölle sind dabei die Treiber, die man im Blick behalten sollte.",
+      "reasoning": "Offizieller BLS-Termin. Die Inflationszahl ist neben dem Arbeitsmarkt der wichtigste Datenpunkt vor der Dezember-Sitzung der Fed. Ölpreis und Zölle sind dabei die Treiber, die man im Blick behalten sollte. Stand 9.11.: Am Terminmarkt liegt die Wahrscheinlichkeit einer Zinserhöhung im Dezember laut CME FedWatch über 80 % (Reuters). Ein heißer CPI würde das festigen und trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst; der Ölpreis fiel am Montag deutlich.",
       "example": false,
       "sources": [
         {
           "title": "BLS: Termine Verbraucherpreisindex",
           "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+        },
+        {
+          "title": "Reuters/StreetInsider: Wall St steigt, Öl fällt, Nvidia schwach (9.11.)",
+          "url": "https://www.streetinsider.com/General+News/Wall+St+rallies+after+last+week%27s+AI+rout%3B+Nvidia+falls/27310155.html"
         }
       ]
     },
@@ -670,12 +686,16 @@
       ],
       "probabilityPct": 98,
       "impact": "hoch",
-      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen.",
+      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen. Stand 9.11.: Der Markt preist laut CME FedWatch mit über 80 % eine Zinserhöhung ein (Reuters), gestützt vom starken Oktober-Arbeitsmarkt.",
       "example": false,
       "sources": [
         {
           "title": "Federal Reserve: FOMC-Sitzungskalender",
           "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "title": "Reuters/StreetInsider: Wall St steigt, Öl fällt, Nvidia schwach (9.11.)",
+          "url": "https://www.streetinsider.com/General+News/Wall+St+rallies+after+last+week%27s+AI+rout%3B+Nvidia+falls/27310155.html"
         }
       ]
     },
@@ -1030,9 +1050,9 @@
     },
     {
       "id": "evt-falcon9-ussf627",
-      "title": "SpaceX: Falcon-9-Start USSF-627 für die Space Force",
-      "date": "2026-11-10",
-      "time": "04:03",
+      "title": "SpaceX: Falcon-9-Start USSF-627 für die Space Force (verschoben auf Mi 03:49)",
+      "date": "2026-11-11",
+      "time": "03:49",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -1040,22 +1060,22 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 85,
+      "probabilityPct": 80,
       "impact": "niedrig",
-      "reasoning": "Launch Library 2 (Stand Mo 18:13): „Go for Launch“, Fenster Di 10.11. 04:03–08:03 Berlin (19:03 PT Mo, Vandenberg), geplanter Zeitpunkt etwa 05:59; Backup Di 10.11. 18:49 PT. Nach erfolgreichem USSF-432 von derselben Rampe 85 %. Kurswirkung gering. Tagesfrage vom 8.11.",
+      "reasoning": "Verschoben: SpaceX zielt jetzt auf Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Das ursprüngliche Fenster in der Nacht auf Dienstag (04:03–08:03) entfällt damit. Einen Grund nennt SpaceX auf der Missionsseite nicht. Launch Library zeigte um 22:08 noch den alten Termin; die SpaceX-Seite ist maßgeblich. 80 % (vorher 85) für einen Start im neuen Fenster: eine Verschiebung ohne Begründung, sonst Routine von derselben Rampe wie USSF-432. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
-          "title": "SpaceX: USSF-627 Mission",
+          "title": "SpaceX: USSF-627 Mission (jetzt Di 10.11. 18:49 PT)",
           "url": "https://www.spacex.com/launches/ussf627"
+        },
+        {
+          "title": "Launch Library 2: USSF-627",
+          "url": "https://ll.thespacedevs.com/2.2.0/launch/upcoming/?search=USSF-627"
         },
         {
           "title": "Next Spaceflight: USSF-627",
           "url": "https://nextspaceflight.com/launches/details/8446/"
-        },
-        {
-          "title": "Launch Library 2: SpaceX upcoming",
-          "url": "https://ll.thespacedevs.com/2.2.0/launch/upcoming/?search=SpaceX"
         }
       ]
     },
@@ -1227,9 +1247,17 @@
       ],
       "probabilityPct": 50,
       "impact": "mittel",
-      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nach dem US-Start lag Nvidia zeitweise bis zu 8 % im Minus, um 18:05 bei ~177,2 $ (−5,0 %), während Broadcom, AMD und die Nasdaq (~+2,5 %) stiegen. Stand 20:05: Nvidia ~176,8 $ (−5,3 %), weiter keine öffentliche Antwort Huangs auf die Briefing-Bitte; Nvidia hatte schon auf frühere Nachfragen nicht gesagt, ob er kommt (CNBC). Der künftige Mehrheitsführer Jeffries erwartet, dass die Affäre am Mo in einem vertraulichen Briefing mit dem Weißen Haus zur Sprache kommt (CNBC); Nvidia: Huang führe „ohne Unterbrechung“ weiter. Mit der neuen demokratischen Mehrheit droht zusätzlich mehr Aufsicht (CNBC). Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen.",
+      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nach dem US-Start lag Nvidia zeitweise bis zu 8 % im Minus, um 18:05 bei ~177,2 $ (−5,0 %), während Broadcom, AMD und die Nasdaq (~+2,5 %) stiegen. Stand 20:05: Nvidia ~176,8 $ (−5,3 %), weiter keine öffentliche Antwort Huangs auf die Briefing-Bitte; Nvidia hatte schon auf frühere Nachfragen nicht gesagt, ob er kommt (CNBC). Der künftige Mehrheitsführer Jeffries erwartet, dass die Affäre am Mo in einem vertraulichen Briefing mit dem Weißen Haus zur Sprache kommt (CNBC); Nvidia: Huang führe „ohne Unterbrechung“ weiter. Mit der neuen demokratischen Mehrheit droht zusätzlich mehr Aufsicht (CNBC). Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen. Stand 22:00: Nvidia schloss bei 178,67 $ (−4,3 %) – einziger Verlierer im Halbleiter-Index, der etwa 7 % stieg (Reuters). Die drei republikanischen Ausschuss-Chefs haben ihre Bitte um ein vertrauliches Briefing am 18.11. am Montagabend erneut öffentlich gemacht (The Verge); eine Zusage Huangs gibt es weiter nicht. Daher bleibt es bei 50 %.",
       "example": false,
       "sources": [
+        {
+          "title": "The Verge: Republikaner erneuern Bitte um Huang-Briefing (9.11.)",
+          "url": "https://www.theverge.com/policy/1030258/republicans-reshare-request-for-a-closed-door-briefing-with-jensen-huang-next-week"
+        },
+        {
+          "title": "Reuters/StreetInsider: Wall St steigt, Öl fällt, Nvidia schwach (9.11.)",
+          "url": "https://www.streetinsider.com/General+News/Wall+St+rallies+after+last+week%27s+AI+rout%3B+Nvidia+falls/27310155.html"
+        },
         {
           "title": "CNBC: Huang soll Kongress briefen, Nvidia lässt Teilnahme offen (5.11.)",
           "url": "https://www.cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html"
