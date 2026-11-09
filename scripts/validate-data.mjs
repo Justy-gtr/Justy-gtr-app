@@ -87,6 +87,16 @@ if (prices) {
     for (const range of ["intraday", "1M", "6M", "1Y"]) {
       if (!Array.isArray(ticker.history?.[range])) fail(`${label}.history.${range}`);
     }
+    const five = ticker.history?.["5m"];
+    if (five != null) {
+      if (!Array.isArray(five)) fail(`${label}.history.5m`);
+      if (five.length > 1000) fail(`${label}.history.5m zu lang`);
+      for (const point of five) barOk(point, `${label}.history.5m`);
+      if (five.length >= 2) {
+        const span = Date.parse(five.at(-1).t) - Date.parse(five[0].t);
+        if (Number.isFinite(span) && span > 10 * 86400000) fail(`${label}.history.5m länger als zehn Tage`);
+      }
+    }
     const four = ticker.history?.["4H"];
     if (four != null) {
       if (!Array.isArray(four)) fail(`${label}.history.4H`);

@@ -3,9 +3,9 @@ import fs from "node:fs";
 import test from "node:test";
 import { N_LEGEND, analyseCandles, analyseChart, analyseText, detectShape } from "../js/analyse.js";
 import { musterCard, rangeBoard, renderAnalyse } from "../js/analyse-view.js";
-import { MIN_CASES } from "../js/analysis.js";
+import { MIN_CASES, analysisText, chartAnalysis } from "../js/analysis.js";
 import { ANALYSE_RANGES, bucketCandles, candlesFor, formatMove, isUsefulFourHour, scrubLabel } from "../js/candles.js";
-import { seriesFor } from "../js/logic.js";
+import { scrubDelta, seriesFor } from "../js/logic.js";
 import { aggregateBars } from "./market.mjs";
 
 const ADVICE = /\b(kaufen|verkaufen|kauft|verkauft|kauf|verkauf|long|short|empfehl\w*|signal|tipp)\b/i;
@@ -248,4 +248,87 @@ test("Echte Reihen bleiben bei der eigenen Historie und erfinden kein Prozent", 
       }
     }
   }
+});
+
+function sessionBars(day, price) {
+  const start = Date.parse(`${day}T14:30:00.000Z`);
+  return Array.from({ length: 78 }, (_, index) => {
+    const t = new Date(start + index * 5 * 60 * 1000).toISOString();
+    return { t, eur: price, open: price, high: price + 0.4, low: price - 0.4 };
+  });
+}
+
+test("Kurzer Montagmorgen behält 15-Minuten-Kerzen aus der 5-Minuten-Historie", () => {
+  const start = Date.parse("2026-11-09T09:00:00.000Z");
+  const intraday = Array.from({ length: 40 }, (_, index) => ({
+    t: new Date(start + index * 60 * 1000).toISOString(),
+    eur: 110 + index,
+    session: "pre"
+  }));
+  const thursday = sessionBars("2026-11-05", 80);
+  thursday[0] = { t: thursday[0].t, eur: 11, open: 10, high: 12, low: 9 };
+  thursday[1] = { t: thursday[1].t, eur: 14, open: 11, high: 15, low: 10 };
+  thursday[2] = { t: thursday[2].t, eur: 15, open: 14, high: 16, low: 13 };
+  const stale = Array.from({ length: 8 }, (_, index) => {
+    const t = new Date(start + index * 5 * 60 * 1000).toISOString();
+    return { t, eur: 999, open: 999, high: 999, low: 999 };
+  });
+  const history = {
+    intraday,
+    "5m": [
+      ...sessionBars("2026-11-04", 50),
+      ...thursday,
+      ...sessionBars("2026-11-06", 100),
+      ...stale
+    ]
+  };
+  const ticker = { symbol: "TSLA", name: "Tesla", priceEur: 149, history };
+
+  const quarter = candlesFor(ticker, "15 Min");
+  assert.ok(quarter.candles.length >= 20, `nur ${quarter.candles.length} Kerzen`);
+  assert.equal(quarter.candles.length, seriesFor(ticker, "15 Min").points.length);
+  assert.equal(quarter.candles[0].t.slice(0, 10), "2026-11-05");
+  assert.equal(quarter.candles[0].open, 10);
+  assert.equal(quarter.candles[0].high, 16);
+  assert.equal(quarter.candles[0].low, 9);
+  assert.equal(quarter.candles[0].close, 15);
+  assert.ok(quarter.history.length > quarter.candles.length);
+  assert.equal(quarter.history[0].t.slice(0, 10), "2026-11-04");
+  assert.equal(quarter.candles.some((candle) => candle.high === 999 || candle.close === 999), false);
+  assert.equal(quarter.candles.at(-1).close, 149);
+  const span = Date.parse(quarter.candles.at(-1).t) - Date.parse(quarter.candles[0].t);
+  assert.ok(span > 24 * 60 * 60 * 1000);
+  const label = scrubLabel(quarter.candles.at(-1), quarter.candles[0].close, span);
+  assert.match(label, new RegExp(scrubDelta(quarter.candles[0].close, quarter.candles.at(-1).close).text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  assert.equal(label.includes(scrubDelta(50, 149).text), false);
+
+  const five = candlesFor(ticker, "5 Min");
+  assert.ok(five.candles.length >= 20);
+  assert.equal(five.candles.length, seriesFor(ticker, "5 Min").points.length);
+  assert.equal(five.candles[0].t.slice(0, 10), "2026-11-06");
+  assert.equal(five.candles[0].close, 100);
+  assert.equal(seriesFor(ticker, "5 Min").points[0].eur, 100);
+
+  const result = analyseChart(ticker, "15 Min");
+  assert.equal(result.candles.length, quarter.candles.length);
+  assert.equal(result.outcome.sentence.includes("Zu wenig Punkte für eine Linie"), false);
+  assert.equal(/\b(kaufen|verkaufen)\b/i.test(analyseText(result)), false);
+  if (result.outcome.show) {
+    assert.ok(result.outcome.n >= MIN_CASES);
+    const pct = result.outcome.pct || {};
+    assert.equal((pct.up || 0) + (pct.down || 0) + (pct.flat || 0), 100);
+  }
+  const line = chartAnalysis(ticker, "5 Min");
+  assert.equal(/\b(kaufen|verkaufen)\b/i.test(analysisText(line)), false);
+  if (line.outcome.show) assert.ok(line.outcome.n >= MIN_CASES);
+
+  const html = renderAnalyse({ prices: { tickers: [ticker] } }, { analyseSymbol: "TSLA", analyseRange: "15 Min" });
+  assert.match(html, /<p class="scrub"><\/p>/);
+  assert.equal(/\b(kaufen|verkaufen)\b/i.test(html), false);
+
+  const bare = { history: { intraday } };
+  assert.equal(candlesFor(bare, "15 Min").candles.length, 3);
+  assert.equal(seriesFor(bare, "5 Min").points.length, 8);
+  assert.equal(candlesFor({ history: { intraday, "5m": [] } }, "15 Min").candles.length, 3);
+  assert.equal(candlesFor({ history: { intraday, "5m": [intraday[0]] } }, "15 Min").candles.length, 3);
 });

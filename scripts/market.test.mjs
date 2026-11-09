@@ -10,6 +10,8 @@ import {
   sessionEnded,
   chooseIntraday,
   keepRecentSession,
+  keepTradingDays,
+  previousSessionClose,
   stitchIntraday,
   updateAlerts,
   usClockSession,
@@ -66,6 +68,66 @@ test("Ein gesetztes narrativeExample false bleibt false", () => {
   assert.equal(merged.narrativeExample, false);
   assert.equal(merged.why, "echt");
   assert.equal(merged.recordHighEur, 12);
+});
+
+test("Vortag ist der Schluss vor der letzten Sitzung, nicht der 5-Tage-Anfang", () => {
+  const monday = {
+    price: 320.9,
+    chartPreviousClose: 367,
+    points: [
+      { t: "2026-11-03T08:00:00.000Z", close: 355.85 },
+      { t: "2026-11-04T08:00:00.000Z", close: 342.15 },
+      { t: "2026-11-05T08:00:00.000Z", close: 312.2 },
+      { t: "2026-11-06T08:00:00.000Z", close: 323.7 },
+      { t: "2026-11-09T08:00:00.000Z", close: 320.9 }
+    ]
+  };
+  assert.equal(previousSessionClose(monday), 323.7);
+  assert.notEqual(previousSessionClose(monday), monday.chartPreviousClose);
+  const mondayPct = ((monday.price - 323.7) / 323.7) * 100;
+  assert.ok(mondayPct < -0.5 && mondayPct > -1.5);
+
+  const beforeOpen = {
+    price: 134.27,
+    chartPreviousClose: 134.72,
+    points: [
+      { t: "2026-11-02T14:30:00.000Z", close: 136.37 },
+      { t: "2026-11-03T14:30:00.000Z", close: 141.31 },
+      { t: "2026-11-04T14:30:00.000Z", close: 135.92 },
+      { t: "2026-11-05T14:30:00.000Z", close: 123.62 },
+      { t: "2026-11-06T14:30:00.000Z", close: 134.27 }
+    ]
+  };
+  assert.equal(previousSessionClose(beforeOpen), 123.62);
+  const fridayPct = ((beforeOpen.price - 123.62) / 123.62) * 100;
+  assert.ok(fridayPct > 8 && fridayPct < 9);
+  const rate = 1.119;
+  const priceEur = usdToEur(beforeOpen.price, rate);
+  const prevEur = usdToEur(previousSessionClose(beforeOpen), rate);
+  assert.ok(Math.abs(((priceEur - prevEur) / prevEur) * 100 - fridayPct) < 1e-9);
+
+  assert.equal(previousSessionClose({
+    chartPreviousClose: 323.7,
+    metaPrevious: 367,
+    points: [{ t: "2026-11-09T08:00:00.000Z", close: 320.9 }]
+  }), 323.7);
+});
+
+test("Ein Tagesalarm unter zwei Prozent wird zurückgenommen", () => {
+  const prior = updateAlerts({ alerts: [] }, [
+    { symbol: "TSLA", name: "Tesla", example: false, changePct: -12.6, priceEur: 320.7, sources: [] }
+  ], "2026-11-09T08:00:00.000Z", "2026-11-09");
+  const older = {
+    ...prior.alerts[0],
+    id: "TSLA-2026-11-06",
+    timestamp: "2026-11-06T21:00:00.000Z",
+    changePct: -9.8
+  };
+  const next = updateAlerts({ alerts: [...prior.alerts, older] }, [
+    { symbol: "TSLA", name: "Tesla", example: false, changePct: -0.87, priceEur: 320.9, sources: [] }
+  ], "2026-11-09T11:00:00.000Z", "2026-11-09");
+  assert.equal(next.alerts.some((alert) => alert.id === "TSLA-2026-11-09"), false);
+  assert.equal(next.alerts.some((alert) => alert.id === "TSLA-2026-11-06"), true);
 });
 
 test("Alerts behalten notified und feuern ab zwei Prozent", () => {
@@ -511,6 +573,18 @@ test("Trefferquote rechnet nur entschiedene Ideen", () => {
   ]);
   assert.equal(summary.hitRatePct, 50);
   assert.equal(summary.open, 1);
+});
+
+test("5-Minuten-Abruf behält nur die letzten Handelstage", () => {
+  const points = [
+    { t: "2026-11-04T15:00:00.000Z", eur: 1 },
+    { t: "2026-11-05T15:00:00.000Z", eur: 2 },
+    { t: "2026-11-06T15:00:00.000Z", eur: 3 },
+    { t: "2026-11-06T20:00:00.000Z", eur: 4 },
+    { t: "2026-11-09T14:00:00.000Z", eur: 5 }
+  ];
+  assert.deepEqual(keepTradingDays(points, 3).map((point) => point.eur), [2, 3, 4, 5]);
+  assert.equal(keepTradingDays(points, 3).some((point) => point.eur === 1), false);
 });
 
 test("1 Min behält jeden Punkt, 5 Min den letzten im Block", () => {
