@@ -15,7 +15,7 @@ import {
   chooseIntraday,
   keepRecentSession,
   keepTradingDays,
-  previousSessionClose,
+  sessionBaseline,
   tagSessions,
   updateAlerts,
   usClockSession,
@@ -317,7 +317,7 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
   const spotUsd = usd.price;
   const spotEur = useEur ? eurChart.price : roundTo(usdToEur(spotUsd, fx.rate), 2);
   const priceChart = useEur ? eurChart : usd;
-  const prevRaw = previousSessionClose(priceChart);
+  const prevRaw = sessionBaseline(priceChart);
   const prevEur = prevRaw == null
     ? null
     : (useEur ? roundTo(prevRaw, 2) : roundTo(usdToEur(prevRaw, fx.rate), 2));

@@ -34,11 +34,16 @@
         <strong>Justy GT-R <span id="mode-pill" class="pill" hidden>Beispiel</span></strong>
         <span id="stand">Recherche</span>
       </div>
-      <button class="icon-btn" type="button" data-action="refresh" aria-label="Daten aktualisieren">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M19 12a7 7 0 1 1-2-4.9M19 5v4h-4"/></svg>
+      <button class="icon-btn" type="button" data-action="open-ko" aria-label="Knock-out-Rechner">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="5" y="3.2" width="14" height="17.6" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M8 7.2h8M8.2 12h.01M12 12h.01M15.8 12h.01M8.2 16.2h.01M12 16.2h.01M15.8 16.2h.01"/></svg>
       </button>
       <time id="clock"></time>
     </header>
+    <div id="pull-ind" class="pull-ind" hidden>
+      <span class="pull-chip" id="pull-chip">
+        <svg class="pull-arrow" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 14l6-6 6 6"/></svg>
+      </span>
+    </div>
     <div class="pager" id="pager">
       <section class="page" id="page-heute" aria-label="Startseite"><p class="empty">Cockpit wird geladen …</p></section>
       <section class="page" id="page-kalender" aria-label="Kalender"></section>
@@ -62,6 +67,52 @@
     </footer>
     <div id="detail-root"></div>
     <div id="egg-root"></div>
+    <div id="ko-sheet" class="ko-sheet" hidden>
+      <button type="button" class="ko-backdrop" data-action="close-ko" aria-label="Schließen"></button>
+      <div class="ko-card" role="dialog" aria-modal="true" aria-labelledby="ko-title">
+        <div class="ko-head row between">
+          <h2 id="ko-title">Knock-out</h2>
+          <button type="button" class="icon-btn" data-action="close-ko" aria-label="Schließen">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+        <div class="ko-body">
+          <p class="kicker">Basiswert</p>
+          <div class="chips" id="ko-symbols"></div>
+          <p class="ko-price" id="ko-price"></p>
+          <p class="kicker">Typ</p>
+          <div class="segment" id="ko-side">
+            <button type="button" data-action="ko-side" data-side="long" aria-selected="true">Long</button>
+            <button type="button" data-action="ko-side" data-side="short">Short</button>
+          </div>
+          <label class="ko-field" for="ko-barrier">Knock-out-Schwelle in $
+            <input id="ko-barrier" inputmode="decimal" autocomplete="off" placeholder="136,2">
+          </label>
+          <div id="ko-out" class="ko-out" aria-live="polite"></div>
+          <p class="ko-hint">Der Knock-out greift auch außerhalb der US-Börsenzeit. Keine Anlageberatung.</p>
+          <label class="ko-field" for="ko-ratio">Bezugsverhältnis
+            <input id="ko-ratio" inputmode="decimal" autocomplete="off" placeholder="0,1">
+          </label>
+          <div class="ko-qty-head row between">
+            <p class="kicker">Anzahl / Einsatz</p>
+            <div class="segment ko-mode">
+              <button type="button" data-action="ko-mode" data-mode="anzahl" aria-selected="true">Stück</button>
+              <button type="button" data-action="ko-mode" data-mode="einsatz">€</button>
+            </div>
+          </div>
+          <label class="ko-field" for="ko-qty"><span class="sr-only">Anzahl oder Einsatz</span>
+            <input id="ko-qty" inputmode="decimal" autocomplete="off" placeholder="Stück">
+          </label>
+          <p class="ko-move" id="ko-move"></p>
+          <p class="kicker">Gespeichert</p>
+          <label class="ko-field" for="ko-name">Name
+            <input id="ko-name" maxlength="40" autocomplete="off" placeholder="z. B. SPCX Long">
+          </label>
+          <button type="button" class="ko-save" data-action="save-ko">Merken</button>
+          <div id="ko-saved"></div>
+        </div>
+      </div>
+    </div>
     <div id="link-sheet" class="link-sheet" hidden>
       <div class="card">
         <h2>In Safari öffnen</h2>
