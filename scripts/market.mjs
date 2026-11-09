@@ -66,25 +66,119 @@ export function failedTicker(prev, symbol, name, message) {
   };
 }
 
+export function impliedChangePct(priceEur, previousCloseEur) {
+  const price = Number(priceEur);
+  const prev = Number(previousCloseEur);
+  if (!Number.isFinite(price) || !Number.isFinite(prev) || prev === 0) return null;
+  return ((price - prev) / prev) * 100;
+}
+
+function berlinDayOf(date) {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Europe/Berlin",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).format(date);
+}
+
+function dailyBars(ticker) {
+  return (ticker?.history?.["1M"] || [])
+    .filter((bar) => bar && bar.t && Number.isFinite(Number(bar.eur)))
+    .slice()
+    .sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
+}
+
+/** Last session close from daily history. The final bar counts as today when it is today or still the live print. */
+export function priorCloseFromHistory(ticker, now = new Date()) {
+  const bars = dailyBars(ticker);
+  if (bars.length < 2) return null;
+  const last = bars[bars.length - 1];
+  const prev = bars[bars.length - 2];
+  const today = berlinDayOf(now instanceof Date ? now : new Date(now));
+  const price = Number(ticker.priceEur);
+  const lastEur = Number(last.eur);
+  const lastIsSpot = String(last.t).slice(0, 10) === today
+    || (Number.isFinite(price) && price !== 0 && Math.abs(lastEur - price) / Math.abs(price) < 0.01);
+  return lastIsSpot ? Number(prev.eur) : lastEur;
+}
+
+/**
+ * Percent that may open an alert.
+ * Rejects a stale changePct that still uses the close before the 5-day window
+ * (that made the weekly move look like the day) when the last session says otherwise.
+ */
+export function trustedChange(ticker, now = new Date()) {
+  if (!ticker || ticker.example === true || ticker.stale) return null;
+  if (typeof ticker.changePct !== "number" || Number.isNaN(ticker.changePct)) return null;
+  const historyPrior = priorCloseFromHistory(ticker, now);
+  const statedPrior = Number(ticker.previousCloseEur);
+  if (historyPrior != null && Number.isFinite(statedPrior) && historyPrior !== 0) {
+    if (Math.abs(historyPrior - statedPrior) / Math.abs(historyPrior) > 0.03) return null;
+  }
+  if (Number.isFinite(statedPrior) && ticker.priceEur != null) {
+    const implied = impliedChangePct(ticker.priceEur, statedPrior);
+    if (implied == null || Math.abs(implied - ticker.changePct) > 0.35) return null;
+  } else if (historyPrior != null && ticker.priceEur != null) {
+    const implied = impliedChangePct(ticker.priceEur, historyPrior);
+    if (implied == null || Math.abs(implied - ticker.changePct) > 0.6) return null;
+  }
+  return ticker.changePct;
+}
+
+function alertSessionIndex(bars, alert) {
+  const day = String(alert?.timestamp || "").slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) return -1;
+  const exact = bars.findIndex((bar) => String(bar.t).slice(0, 10) === day);
+  if (exact >= 0) return exact;
+  let chosen = -1;
+  for (let index = 0; index < bars.length; index += 1) {
+    if (String(bars[index].t).slice(0, 10) <= day) chosen = index;
+  }
+  if (chosen < 0) return -1;
+  if (Math.abs(Number(bars[chosen].eur) - Number(alert.priceEur)) > 0.5) return -1;
+  return chosen;
+}
+
+/**
+ * True when a stored percent is the old 5-day-window close, not that session.
+ * A few points of gap are normal (intraday print versus the daily close).
+ * The false TSLA print was the whole week, more than 8 points off the session.
+ */
+export function staleSessionAlert(alert, ticker) {
+  if (!alert || alert.example === true || typeof alert.changePct !== "number" || alert.priceEur == null) return false;
+  const bars = dailyBars(ticker);
+  const index = alertSessionIndex(bars, alert);
+  if (index < 1) return false;
+  if (Math.abs(Number(bars[index].eur) - Number(alert.priceEur)) > 0.05) return false;
+  const implied = impliedChangePct(alert.priceEur, bars[index - 1].eur);
+  if (implied == null) return false;
+  return Math.abs(implied - Number(alert.changePct)) > 8;
+}
+
 export function updateAlerts(previous, tickers, nowIso, berlinDay) {
-  const bySymbol = new Map((tickers || []).filter((ticker) => ticker?.symbol).map((ticker) => [ticker.symbol, ticker]));
+  const now = nowIso ? new Date(nowIso) : new Date();
+  const list = tickers || [];
+  const bySymbol = new Map(list.filter((ticker) => ticker?.symbol).map((ticker) => [ticker.symbol, ticker]));
   const kept = (previous?.alerts || []).filter((alert) => {
     if (!alert || alert.example === true) return false;
-    if (alert.id !== `${alert.symbol}-${berlinDay}`) return true;
     const ticker = bySymbol.get(alert.symbol);
+    if (ticker && !ticker.stale && ticker.example !== true && staleSessionAlert(alert, ticker)) return false;
+    if (alert.id !== `${alert.symbol}-${berlinDay}`) return true;
     if (!ticker || ticker.example === true || ticker.stale) return true;
-    if (typeof ticker.changePct !== "number") return true;
-    return Math.abs(ticker.changePct) >= 2;
+    const change = trustedChange(ticker, now);
+    if (change == null) return false;
+    return Math.abs(change) >= 2;
   });
-  for (const ticker of tickers) {
-    if (ticker.example === true || ticker.stale) continue;
-    if (typeof ticker.changePct !== "number" || Math.abs(ticker.changePct) < 2) continue;
+  for (const ticker of list) {
+    const change = trustedChange(ticker, now);
+    if (change == null || Math.abs(change) < 2) continue;
     const id = `${ticker.symbol}-${berlinDay}`;
     const existing = kept.find((alert) => alert.id === id);
     if (existing) {
-      existing.changePct = roundTo(ticker.changePct, 2);
+      existing.changePct = roundTo(change, 2);
       existing.priceEur = roundTo(ticker.priceEur, 2);
-      existing.direction = ticker.changePct >= 0 ? "up" : "down";
+      existing.direction = change >= 0 ? "up" : "down";
       existing.sources = ticker.sources || existing.sources || [];
       if (typeof existing.notified !== "boolean") existing.notified = false;
     } else {
@@ -92,10 +186,10 @@ export function updateAlerts(previous, tickers, nowIso, berlinDay) {
         id,
         symbol: ticker.symbol,
         name: ticker.name,
-        changePct: roundTo(ticker.changePct, 2),
+        changePct: roundTo(change, 2),
         priceEur: roundTo(ticker.priceEur, 2),
         thresholdPct: 2,
-        direction: ticker.changePct >= 0 ? "up" : "down",
+        direction: change >= 0 ? "up" : "down",
         timestamp: nowIso,
         notified: false,
         example: false,
@@ -231,6 +325,17 @@ export function previousSessionClose(chart) {
   const metaPrev = Number(chart?.metaPrevious);
   if (Number.isFinite(metaPrev)) return metaPrev;
   return null;
+}
+
+/**
+ * Previous close for the daily percent on a multi-day chart.
+ * A single bar is not used: its chartPreviousClose is the close before the range,
+ * which turned the weekly move into a fake day.
+ */
+export function sessionBaseline(chart) {
+  const bars = (chart?.points || []).filter((point) => point && point.t && Number.isFinite(Number(point.close)));
+  if (bars.length < 2) return null;
+  return previousSessionClose(chart);
 }
 
 /** US cash session by the New York clock. Half-open: 04:00 pre, 09:30 regular, 16:00 post, 20:00 closed. */

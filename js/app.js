@@ -3,9 +3,11 @@ import { drawCandles } from "./candle-chart.js";
 import { drawCharts } from "./chart.js";
 import { loadData } from "./data.js";
 import { initEggs } from "./eggs.js";
+import { initKnockout } from "./knockout-ui.js";
 import { appBase, isInAppUrl, loadStore, markTabSeen, marketWatch, saveStore, unreadTabs } from "./logic.js";
 import { playLiftoff, tickCountdown } from "./motion.js";
 import { initNav } from "./nav.js";
+import { initPull } from "./pull.js";
 import { detailContent, errorDetail, glossaryList, renderShell } from "./views.js";
 
 const ui = {
@@ -99,6 +101,7 @@ async function pullPrices() {
   }
 }
 
+const knockout = initKnockout({ getData: () => data });
 const pager = document.getElementById("pager");
 function paintDots() {
   const unread = data ? unreadTabs(data, store) : {};
@@ -174,6 +177,7 @@ function render() {
     try { drawCandles(data, ui); } catch { /* Kerzen bleiben leer, die Seite nicht. */ }
     tickCountdown();
     try { eggs.afterRender(data); } catch { /* Überraschung ist Beiwerk. */ }
+    try { knockout.sync(); } catch { /* Rechner bleibt zu, die Seite nicht. */ }
   });
 }
 
@@ -337,6 +341,10 @@ document.body.addEventListener("click", (event) => {
     refresh(true);
     return;
   }
+  if (action === "open-ko") {
+    knockout.open();
+    return;
+  }
   if (action === "close") {
     nav.close();
     return;
@@ -359,6 +367,20 @@ document.body.addEventListener("input", (event) => {
   ui.glossaryQuery = event.target.value;
   const list = document.getElementById("glossary-list");
   if (list) list.innerHTML = glossaryList(data, ui.glossaryQuery);
+});
+
+initPull({
+  getScroller(target) {
+    if (!(target instanceof Element)) return null;
+    if (knockout.isOpen()) return null;
+    const link = document.getElementById("link-sheet");
+    if (link && !link.hidden && target.closest("#link-sheet")) return null;
+    if (target.closest("canvas, .chart-wrap, .dock, input, textarea, select, a")) return null;
+    const detail = document.querySelector("#detail-root .detail.top:not(.closing)");
+    if (detail) return detail.contains(target) ? detail : null;
+    return target.closest(".page");
+  },
+  refresh: () => refresh(true)
 });
 
 async function refresh(manual) {

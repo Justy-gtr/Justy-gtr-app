@@ -12,7 +12,10 @@ import {
   keepRecentSession,
   keepTradingDays,
   previousSessionClose,
+  sessionBaseline,
+  staleSessionAlert,
   stitchIntraday,
+  trustedChange,
   updateAlerts,
   usClockSession,
   usSessionActive,
@@ -128,6 +131,90 @@ test("Ein Tagesalarm unter zwei Prozent wird zurückgenommen", () => {
   ], "2026-11-09T11:00:00.000Z", "2026-11-09");
   assert.equal(next.alerts.some((alert) => alert.id === "TSLA-2026-11-09"), false);
   assert.equal(next.alerts.some((alert) => alert.id === "TSLA-2026-11-06"), true);
+});
+
+test("Ein einzelner 5-Tage-Balken ist kein Vortag", () => {
+  assert.equal(sessionBaseline({
+    chartPreviousClose: 358.85,
+    metaPrevious: 367,
+    points: [{ t: "2026-11-06T08:00:00.000Z", close: 323.7 }]
+  }), null);
+  assert.equal(sessionBaseline({
+    points: [
+      { t: "2026-11-05T08:00:00.000Z", close: 312.2 },
+      { t: "2026-11-06T08:00:00.000Z", close: 323.7 }
+    ]
+  }), 312.2);
+});
+
+test("Der Wochenwert −9,8 % wird nicht erneut als Tagesalarm geschrieben", () => {
+  const ticker = {
+    symbol: "TSLA",
+    name: "Tesla",
+    example: false,
+    stale: false,
+    priceEur: 323.7,
+    previousCloseEur: 358.85,
+    changePct: -9.8,
+    sources: [],
+    history: {
+      "1M": [
+        { t: "2026-11-05T07:00:00.000Z", eur: 312.2 },
+        { t: "2026-11-06T07:00:00.000Z", eur: 323.7 }
+      ]
+    }
+  };
+  assert.equal(trustedChange(ticker, new Date("2026-11-08T04:41:33.807Z")), null);
+  const created = updateAlerts({ alerts: [] }, [ticker], "2026-11-08T04:41:33.807Z", "2026-11-08");
+  assert.equal(created.alerts.length, 0);
+  const stale = {
+    id: "TSLA-2026-11-08",
+    symbol: "TSLA",
+    name: "Tesla",
+    changePct: -9.8,
+    priceEur: 323.7,
+    timestamp: "2026-11-08T04:41:33.807Z",
+    example: false,
+    direction: "down"
+  };
+  assert.equal(staleSessionAlert(stale, ticker), true);
+  const kept = updateAlerts({ alerts: [stale] }, [ticker], "2026-11-09T12:00:00.000Z", "2026-11-09");
+  assert.equal(kept.alerts.some((alert) => alert.changePct === -9.8), false);
+  const coherent = {
+    ...ticker,
+    priceEur: 342.15,
+    previousCloseEur: 355.85,
+    changePct: -3.85,
+    history: {
+      "1M": [
+        { t: "2026-11-03T07:00:00.000Z", eur: 355.85 },
+        { t: "2026-11-04T07:00:00.000Z", eur: 342.15 }
+      ]
+    }
+  };
+  const real = updateAlerts({ alerts: [] }, [coherent], "2026-11-04T21:25:22.584Z", "2026-11-04");
+  assert.equal(real.alerts.length, 1);
+  assert.equal(real.alerts[0].changePct, -3.85);
+  const near = {
+    symbol: "SPCX",
+    example: false,
+    priceEur: 121.28,
+    previousCloseEur: 126.26,
+    changePct: -4.18,
+    history: {
+      "1M": [
+        { t: "2026-11-03T07:00:00.000Z", eur: 126.26 },
+        { t: "2026-11-04T07:00:00.000Z", eur: 121.28 }
+      ]
+    }
+  };
+  assert.equal(staleSessionAlert({
+    symbol: "SPCX",
+    changePct: -6.41,
+    priceEur: 120.98,
+    timestamp: "2026-11-04T21:25:22.584Z",
+    example: false
+  }, near), false);
 });
 
 test("Alerts behalten notified und feuern ab zwei Prozent", () => {
@@ -412,6 +499,14 @@ test("Der Feed mischt Post, Termin, Kurs und Briefing, neueste zuerst", () => {
   const berlinDay = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Berlin", year: "numeric", month: "2-digit", day: "2-digit" }).format(realNow);
   if (briefingFile?.date === berlinDay && briefingFile.bullets?.length) assert.ok(kinds.has("briefing"));
   assert.ok(real.every((item) => item.kind && item.title && item.timeLabel));
+  const alertsFile = JSON.parse(fs.readFileSync("data/alerts.json", "utf8"));
+  assert.equal(alertsFile.alerts.some((alert) => alert.symbol === "TSLA" && alert.changePct === -9.8 && alert.priceEur === 323.7), false);
+  const monday = buildFeed({
+    alerts: alertsFile,
+    posts: { posts: [] },
+    calendar: { events: [] }
+  }, new Date("2026-11-09T13:00:00+01:00"));
+  assert.equal(monday.some((item) => item.kind === "alert" && /TSLA/.test(item.title) && /9,8/.test(item.title)), false);
 });
 
 test("Markt heute mischt Börsenzeiten in Berlin mit Zahlen und Politik", () => {
