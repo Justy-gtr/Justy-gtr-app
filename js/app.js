@@ -171,6 +171,7 @@ function render() {
     if (analyse) analyse.innerHTML = `<article class="card error-card"><h2>Chartanalyse gerade nicht da.</h2><p class="muted">${error.message}</p></article>`;
   }
   restoreScroll(scrolls);
+  nav.align();
   notePage(ui.page);
   requestAnimationFrame(() => {
     try { drawCharts(data, ui); } catch { /* Chart bleibt leer, die Seite nicht. */ }
@@ -380,7 +381,8 @@ initPull({
     if (detail) return detail.contains(target) ? detail : null;
     return target.closest(".page");
   },
-  refresh: () => refresh(true)
+  refresh: () => refresh(true),
+  roots: [pager, document.getElementById("detail-root")]
 });
 
 async function refresh(manual) {

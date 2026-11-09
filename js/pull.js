@@ -16,7 +16,7 @@ export function pullDecision({ scrollTop = 0, dx = 0, dy = 0, locked = null } = 
   return { locked: "v", pulling: distance > 0, distance, trigger: distance >= PULL_THRESHOLD };
 }
 
-export function initPull({ getScroller, refresh }) {
+export function initPull({ getScroller, refresh, roots }) {
   const ind = document.getElementById("pull-ind");
   const chip = document.getElementById("pull-chip");
   let tracking = null;
@@ -37,15 +37,15 @@ export function initPull({ getScroller, refresh }) {
     if (arrow && !spinning) arrow.style.transform = `rotate(${armed ? 0 : 180}deg)`;
   }
 
-  document.addEventListener("touchstart", (event) => {
+  function onStart(event) {
     if (busy || event.touches.length !== 1) return;
     const scroller = getScroller(event.target);
     if (!scroller || scroller.scrollTop > 1) return;
     const touch = event.touches[0];
     tracking = { scroller, x: touch.clientX, y: touch.clientY, locked: null, armed: false };
-  }, { passive: true });
+  }
 
-  document.addEventListener("touchmove", (event) => {
+  function onMove(event) {
     if (!tracking || event.touches.length !== 1) return;
     const touch = event.touches[0];
     const decision = pullDecision({
@@ -65,7 +65,7 @@ export function initPull({ getScroller, refresh }) {
       if (decision.pulling && event.cancelable) event.preventDefault();
       paint(decision.distance, decision.trigger, false);
     }
-  }, { passive: false });
+  }
 
   async function finish(commit) {
     const armed = Boolean(tracking?.armed);
@@ -84,6 +84,11 @@ export function initPull({ getScroller, refresh }) {
     }
   }
 
-  document.addEventListener("touchend", () => { finish(true); });
-  document.addEventListener("touchcancel", () => { finish(false); });
+  for (const root of roots || []) {
+    if (!root) continue;
+    root.addEventListener("touchstart", onStart, { passive: true, capture: true });
+    root.addEventListener("touchmove", onMove, { passive: false, capture: true });
+    root.addEventListener("touchend", () => { finish(true); });
+    root.addEventListener("touchcancel", () => { finish(false); });
+  }
 }

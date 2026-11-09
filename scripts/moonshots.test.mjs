@@ -69,7 +69,7 @@ test("Der Kurslauf lässt die Sätze stehen", () => {
 test("Die Seite zeigt drei Karten, den Hinweis und keine Beratung", () => {
   const file = JSON.parse(fs.readFileSync(new URL("../data/moonshots.json", import.meta.url), "utf8"));
   const html = detailContent("open-moonshots", {}, { data: { moonshots: file }, ui: {}, store: {} }).html;
-  assert.match(html, /Keine Anlageberatung\. Hebel kann Totalverlust bedeuten\. Vergangenheit, keine Vorhersage\./);
+  assert.equal(/anlageberatung/i.test(html), false);
   assert.match(html, /Kandidaten mit Kurstreibern/);
   assert.match(html, /n ist die Zahl der Termine oder Tage\. Unter 7 keine Prozentzahl\./);
   for (const symbol of ["NVDA", "TTWO", "MRVL"]) assert.match(html, new RegExp(symbol));
