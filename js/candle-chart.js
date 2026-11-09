@@ -1,5 +1,6 @@
 import { analyseChart } from "./analyse.js";
-import { scrubLabel } from "./candles.js";
+import { candleColor, scrubLabel } from "./candles.js";
+import { chartAxisLabels, guideLabelsToDraw, guideStyle } from "./logic.js";
 
 const euroAxis = new Intl.NumberFormat("de-DE", {
   minimumFractionDigits: 2,
@@ -8,19 +9,6 @@ const euroAxis = new Intl.NumberFormat("de-DE", {
 
 function formatEuroAxis(value) {
   return `${euroAxis.format(value)} €`;
-}
-
-function formatAxisDate(iso, spanMs) {
-  const date = new Date(iso);
-  if (Number.isNaN(date.getTime())) return String(iso).slice(0, 10);
-  const zone = "Europe/Berlin";
-  if (spanMs < 36 * 3600 * 1000) {
-    return new Intl.DateTimeFormat("de-DE", { timeZone: zone, hour: "2-digit", minute: "2-digit" }).format(date);
-  }
-  if (spanMs < 400 * 86400000) {
-    return new Intl.DateTimeFormat("de-DE", { timeZone: zone, day: "numeric", month: "short" }).format(date);
-  }
-  return new Intl.DateTimeFormat("de-DE", { timeZone: zone, month: "short", year: "2-digit" }).format(date);
 }
 
 function layoutOf(width, height, candles, lines) {
@@ -40,7 +28,7 @@ function layoutOf(width, height, candles, lines) {
   min -= pad;
   max += pad;
   const padL = 8;
-  const padR = 78;
+  const padR = 62;
   const padT = 16;
   const padB = 28;
   const plotW = Math.max(1, width - padL - padR);
@@ -98,24 +86,21 @@ function paintCandles(canvas, state, hover) {
     ctx.textBaseline = "middle";
     ctx.fillText(formatEuroAxis(value), width - 4, y);
   }
-  const marks = [0, 0.33, 0.66, 1].map((ratio) => Math.round(ratio * (candles.length - 1)));
-  marks.forEach((index, mark) => {
-    const candle = candles[index];
-    const x = xOf(layout, index);
+  const marks = chartAxisLabels(candles);
+  marks.forEach((mark, index) => {
+    const x = xOf(layout, mark.index);
     ctx.textBaseline = "bottom";
-    if (mark === 0) ctx.textAlign = "left";
-    else if (mark === marks.length - 1) ctx.textAlign = "right";
+    if (index === 0) ctx.textAlign = "left";
+    else if (index === marks.length - 1) ctx.textAlign = "right";
     else ctx.textAlign = "center";
-    const labelX = mark === marks.length - 1 ? Math.min(x, width - layout.padR) : x;
-    ctx.fillText(formatAxisDate(candle.t, layout.spanMs), labelX, height - 4);
+    const labelX = index === marks.length - 1 ? Math.min(x, width - layout.padR) : x;
+    ctx.fillText(mark.text, labelX, height - 4);
   });
   const slot = layout.plotW / candles.length;
-  const bodyW = Math.max(1.5, Math.min(14, slot * 0.62));
+  const bodyW = Math.max(3, Math.min(14, slot * 0.72));
   candles.forEach((candle, index) => {
     const x = xOf(layout, index);
-    const up = candle.close >= candle.open;
-    const extended = candle.session === "pre" || candle.session === "post";
-    const color = extended ? "#e4b15a" : (up ? "#3ddea0" : "#ff5d6c");
+    const color = candleColor(candle);
     ctx.strokeStyle = color;
     ctx.fillStyle = color;
     ctx.lineWidth = hover === index ? 2 : 1;
@@ -128,14 +113,14 @@ function paintCandles(canvas, state, hover) {
     const body = Math.max(1, bottom - top);
     ctx.fillRect(x - bodyW / 2, top, bodyW, body);
   });
-  paintLines(ctx, layout, lines);
+  paintLines(ctx, layout, lines, candles);
   const marked = (lines || []).find((line) => line.kind === "mark");
   if (marked) {
     const candle = candles[marked.index];
     if (candle) {
       const x = xOf(layout, marked.index);
-      ctx.strokeStyle = "#9fdfff";
-      ctx.lineWidth = 1.5;
+      ctx.strokeStyle = "rgba(232, 234, 240, 0.7)";
+      ctx.lineWidth = 1;
       ctx.strokeRect(x - bodyW / 2 - 2, yOf(layout, candle.high) - 3, bodyW + 4, yOf(layout, candle.low) - yOf(layout, candle.high) + 6);
     }
   }
@@ -152,33 +137,42 @@ function paintCandles(canvas, state, hover) {
   }
 }
 
-function paintLines(ctx, layout, lines) {
-  ctx.lineWidth = 1.5;
+function paintLines(ctx, layout, lines, candles) {
+  const pending = [];
+  const last = candles?.at?.(-1);
+  const priceY = yOf(layout, last?.close ?? last?.eur ?? layout.min);
   ctx.lineCap = "butt";
+  ctx.lineWidth = 1;
   for (const line of lines || []) {
     if (line.kind === "mark" || line.eur0 == null) continue;
+    const style = guideStyle(line.kind);
+    if (!style) continue;
     const y0 = yOf(layout, line.eur0);
     const y1 = yOf(layout, line.eur1 ?? line.eur0);
     ctx.beginPath();
+    ctx.setLineDash(style.dash);
+    ctx.strokeStyle = style.color;
+    let endY = y0;
     if (line.kind === "support" || line.kind === "resistance") {
-      ctx.setLineDash([2, 4]);
-      ctx.strokeStyle = line.kind === "support" ? "#3ddea0" : "#ff5d6c";
       ctx.moveTo(layout.padL, y0);
       ctx.lineTo(layout.padL + layout.plotW, y0);
-    } else if (line.kind === "trend") {
-      ctx.setLineDash([7, 5]);
-      ctx.strokeStyle = "#e4b15a";
-      ctx.moveTo(xOf(layout, line.i0 || 0), y0);
-      ctx.lineTo(xOf(layout, line.i1 ?? layout.count - 1), y1);
     } else {
-      ctx.setLineDash([5, 4]);
-      ctx.strokeStyle = "#9fdfff";
+      endY = y1;
       ctx.moveTo(xOf(layout, line.i0 || 0), y0);
       ctx.lineTo(xOf(layout, line.i1 ?? layout.count - 1), y1);
     }
     ctx.stroke();
+    if (line.kind !== "pattern") pending.push({ y: endY, text: style.label, color: style.color });
   }
   ctx.setLineDash([]);
+  ctx.font = "10px -apple-system, BlinkMacSystemFont, sans-serif";
+  ctx.textAlign = "right";
+  ctx.textBaseline = "middle";
+  for (const label of guideLabelsToDraw(pending, priceY)) {
+    const y = Math.max(layout.padT + 7, Math.min(label.y, layout.padT + layout.plotH - 7));
+    ctx.fillStyle = label.color;
+    ctx.fillText(label.text, layout.padL + layout.plotW - 2, y);
+  }
 }
 
 function showScrub(canvas, candle, firstClose, candles) {

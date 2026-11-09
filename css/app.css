@@ -391,8 +391,16 @@ button.card { border-radius: 24px; }
 }
 .switch[aria-checked="true"] .knob::after { transform: translateX(22px); background: var(--gold); }
 
-.chart-wrap { padding: 10px 8px 8px; }
+.chart-wrap {
+  margin-left: -16px;
+  margin-right: -16px;
+  padding: 6px 2px 6px;
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+}
 .chart { width: 100%; height: 260px; display: block; }
+.chart.chart-price { height: min(340px, 42dvh); }
 .chart.mini { height: 64px; }
 .chart-wrap,
 .chart-price,
@@ -407,6 +415,7 @@ button.card { border-radius: 24px; }
   cursor: crosshair;
   -webkit-user-drag: none;
 }
+.chart-wrap .scrub { margin-left: 10px; margin-right: 10px; }
 .scrub {
   display: block;
   box-sizing: border-box;
@@ -440,6 +449,12 @@ button.card { border-radius: 24px; }
 .swatch.trend { color: #e4b15a; background: #e4b15a; }
 .swatch.support { color: #3ddea0; background: #3ddea0; }
 .swatch.resist { color: #ff5d6c; background: #ff5d6c; }
+.analysis .swatch.trend, .guide-legend .swatch.trend { color: #b4b6f2; background: #b4b6f2; }
+.analysis .swatch.support, .guide-legend .swatch.support { color: #5dbebf; background: #5dbebf; }
+.analysis .swatch.resist, .guide-legend .swatch.resist { color: #e7a29a; background: #e7a29a; }
+.analysis .swatch.pattern, .guide-legend .swatch.pattern { color: rgba(232, 234, 240, 0.8); background: rgba(232, 234, 240, 0.8); }
+.guide-legend { margin: 2px 10px 0; font-size: 11px; gap: 6px 12px; }
+.guide-legend .swatch { width: 7px; height: 7px; border-radius: 50%; }
 
 .menu { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .menu .card { min-height: 96px; }

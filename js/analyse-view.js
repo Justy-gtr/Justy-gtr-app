@@ -1,7 +1,7 @@
 import { N_LEGEND, analyseChart, analyseText } from "./analyse.js";
 import { ANALYSE_RANGES, rangeAria, rangeLabel } from "./candles.js";
 import { analysisShowsN } from "./analysis.js";
-import { esc, formatEUR, formatPct, methodLabel, rangeChange } from "./logic.js";
+import { esc, formatEUR, formatPct, guideStyle, methodLabel, rangeChange } from "./logic.js";
 import { renderSeasonalityCard } from "./seasonality.js";
 
 function tone(value) {
@@ -36,6 +36,21 @@ export function musterCard(analysis) {
     </article>`;
 }
 
+export function guideLegend(lines) {
+  const order = ["trend", "support", "resistance", "pattern"];
+  const seen = new Set();
+  for (const line of lines || []) {
+    if (line?.kind && line.kind !== "mark" && guideStyle(line.kind)) seen.add(line.kind);
+  }
+  const kinds = order.filter((kind) => seen.has(kind));
+  if (!kinds.length) return "";
+  return `<p class="chart-legend guide-legend">${kinds.map((kind) => {
+    const style = guideStyle(kind);
+    const cls = kind === "resistance" ? "resist" : kind;
+    return `<span><i class="swatch ${cls}" aria-hidden="true"></i>${esc(style.label)}</span>`;
+  }).join("")}</p>`;
+}
+
 export function rangeBoard(active, action) {
   const rows = [ANALYSE_RANGES.slice(0, 5), ANALYSE_RANGES.slice(5)];
   return `<div class="range-board" role="group" aria-label="Zeitraum">${rows.map((row) => `
@@ -62,6 +77,7 @@ export function renderAnalyse(data, ui) {
     <div class="card chart-wrap candle-wrap">
       <p class="scrub"></p>
       <canvas class="chart chart-price chart-candles" data-chart="candles" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kerzenchart in Euro. Ziehen zeigt Kurs, Zeit und Veränderung."></canvas>
+      ${guideLegend(result.lines)}
     </div>
     ${musterCard(result)}
     ${renderSeasonalityCard(data?.seasonality, ticker, ui?.analyseSeason)}

@@ -1,4 +1,4 @@
-import { formatScrubWhen, limitTradingSessions, maxPoints, minuteSource, minuteWindow, scrubDelta, seriesIsSubDaily, sessionMinutePack } from "./logic.js";
+import { formatScrubWhen, limitTradingSessions, maxPoints, minuteSource, minuteWindow, scrubDelta, seriesIsSubDaily, sessionMinutePack, trimVisibleBars, VISIBLE_BARS } from "./logic.js";
 
 /** Chartanalyse ranges, in Robin's order. No 1-minute button. */
 export const ANALYSE_RANGES = ["5 Min", "15 Min", "4 Std", "1T", "3T", "1W", "1M", "6M", "1J", "Max"];
@@ -29,7 +29,8 @@ const RANGE_ARIA = {
   "Max": "Maximal"
 };
 
-const VISIBLE_4H = 120;
+const VISIBLE_4H = VISIBLE_BARS;
+const SIX_HOURS = 6 * 60 * 60 * 1000;
 
 export function rangeLabel(range) {
   return RANGE_LABEL[range] || range;
@@ -37,6 +38,13 @@ export function rangeLabel(range) {
 
 export function rangeAria(range) {
   return RANGE_ARIA[range] || range;
+}
+
+/** Up is green, down is red. Pre-market and the live tail use the same two colors. */
+export function candleColor(candle) {
+  const close = Number(candle?.close ?? candle?.eur);
+  const open = Number.isFinite(Number(candle?.open)) ? Number(candle.open) : close;
+  return close >= open ? "#3ddea0" : "#ff5d6c";
 }
 
 export function candleOf(point) {
@@ -102,15 +110,22 @@ function dailyPoints(ticker) {
 function minuteCandles(ticker, minutes) {
   const { points, extended } = minuteSource(ticker);
   const all = bucketCandles(points, minutes);
-  if (!extended) return { candles: all };
-  return { candles: limitTradingSessions(all, minuteWindow(minutes)), history: all };
+  const span = minutes <= 5 ? SIX_HOURS : 0;
+  const windowed = extended ? limitTradingSessions(all, minuteWindow(minutes)) : all;
+  const candles = trimVisibleBars(windowed, { max: VISIBLE_BARS, maxSpanMs: span });
+  if (!extended) return { candles };
+  return { candles, history: all };
 }
 
 /** 5-minute candles of the last N sessions. Null when the minute series is missing. */
 function sessionCandles(ticker, sessions, range) {
   const pack = sessionMinutePack(ticker, sessions);
   if (!pack) return null;
-  const candles = bucketCandles(pack.points, 5);
+  const built = bucketCandles(pack.points, 5);
+  const candles = trimVisibleBars(built, {
+    max: VISIBLE_BARS,
+    maxSpanMs: sessions === 1 ? SIX_HOURS : 0
+  });
   if (candles.length < 2) return null;
   return {
     candles,

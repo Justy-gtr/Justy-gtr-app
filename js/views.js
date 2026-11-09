@@ -1,5 +1,5 @@
 import { chartAnalysis } from "./analysis.js";
-import { musterCard, rangeBoard } from "./analyse-view.js";
+import { guideLegend, musterCard, rangeBoard } from "./analyse-view.js";
 import { sparkline } from "./chart.js";
 import {
   esc,
@@ -537,6 +537,7 @@ function renderChartsPage(data, ui) {
     <div class="card chart-wrap">
       <p class="scrub"></p>
       <canvas class="chart chart-price" data-chart="price" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kurschart in Euro. Ziehen zeigt Zeitpunkt, Kurs und Veränderung."></canvas>
+      ${guideLegend(analysis.lines)}
     </div>
     ${musterCard(analysis)}
     ${ui.langfrist ? `<article class="card"><p class="kicker">Langfrist</p><p>${esc(ticker?.longTermOutlook || "Noch kein Langfrist-Text.")}</p>${ticker?.narrativeExample ? pill(true) : ""}</article>` : ""}

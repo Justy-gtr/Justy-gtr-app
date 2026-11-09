@@ -562,9 +562,9 @@ export function analyzePoints(visible, history, spec, range) {
     });
   }
   const legend = [];
-  if (trend) legend.push({ kind: "trend", label: "Linie" });
-  if (support) legend.push({ kind: "support", label: "Stütze" });
-  if (resistance) legend.push({ kind: "resistance", label: "Deckel" });
+  if (trend) legend.push({ kind: "trend", label: "Trend" });
+  if (support) legend.push({ kind: "support", label: "Unterstützung" });
+  if (resistance) legend.push({ kind: "resistance", label: "Widerstand" });
   return {
     title: TITLES[found.id] || TITLES.unklar,
     patternId: found.id,
