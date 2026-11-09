@@ -318,7 +318,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten. @NASASolarSystem schrieb am So „Flyby #2 is tonight“ — der Termin steht. Blue (7.11.) ist auch nach rund 42 Stunden nicht offiziell bestätigt: NASA-Blog letzter Eintrag 2.11., @RocketLab und @escapade_mars still. Starlust schreibt „erfolgreich“, stützt sich aber auf NASAs Vorab-Text. Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering.",
+      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten. @NASASolarSystem schrieb am So „Flyby #2 is tonight“ — der Termin steht. Blue (7.11.) ist auch nach rund 50 Stunden nicht offiziell bestätigt: NASA-Blog letzter Eintrag 2.11. (Stand Mo 06:40), @RocketLab still. Starlust schreibt „erfolgreich“, stützt sich aber auf NASAs Vorab-Text. Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -350,7 +350,7 @@
           "url": "https://x.com/jeff_on_orbit/status/2119246722589204875"
         },
         {
-          "title": "NASA ESCAPADE Blog-Archiv (Stand 9.11. 05:10: kein Post-Burn-Update)",
+          "title": "NASA ESCAPADE Blog-Archiv (Stand 9.11. 06:40: kein Post-Burn-Update)",
           "url": "https://science.nasa.gov/blogs/escapade/"
         },
         {
@@ -1158,6 +1158,47 @@
         {
           "title": "The Star/Reuters: Nvidia falls about 3% (9.11.)",
           "url": "https://www.thestar.com.my/tech/tech-news/2026/11/09/nvidia-falls-about-3-in-after-hours-and-perpetual-futures-trade"
+        }
+      ]
+    },
+    {
+      "id": "evt-trump-katar-iran",
+      "title": "USA/Iran: Trump trifft Katars Premier zu Waffenruhe und Atomgesprächen",
+      "date": "2026-11-09",
+      "time": "18:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "politik",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 90,
+      "impact": "mittel",
+      "reasoning": "Laut Weißem-Haus-Plan (Reuters) trifft Trump heute um 17:00 GMT (= 18:00 Berlin) Katars Premier Al Thani, den wichtigsten Vermittler mit Iran; vorher spricht Vize Vance mit ihm. Auf dem Tisch: ein Zwei-Tage-Plan (Blockade lockern, IAEA-Inspektoren, dann Hormus öffnen). Die 90 % gelten dafür, dass das Treffen stattfindet — nicht für einen Durchbruch: Rubio nennt Irans Forderungen „unrealistisch“. Trump sagte, neue Angriffe seien „highly unlikely“, solange die Gespräche vorankommen. Öl (Brent ~98 $) schwankt auf solche Nachrichten; das färbt auf die Börsenstimmung ab.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Axios: Trump trifft Katars Premier zu Iran (9.11.)",
+          "url": "https://www.axios.com/2026/11/09/trump-qatar-prime-minister-iran-war-mediation"
+        },
+        {
+          "title": "FXStreet/Reuters: Treffen 17:00 GMT im Weißen Haus",
+          "url": "https://www.fxstreet.com/news/us-president-donald-trump-will-meet-qatars-prime-minister-on-monday-202611090430"
+        },
+        {
+          "title": "Khaleej Times/Reuters: Rubio sieht keinen Durchbruch",
+          "url": "https://www.khaleejtimes.com/world/mena/trump-qatar-pm-advance-iran-talks-challenges"
+        },
+        {
+          "title": "CNBC: Öl fällt nach Trump-Aussage (9.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/oil-falls-as-trump-says-new-iran-attacks-unlikely.html"
+        },
+        {
+          "title": "Investing.com: Öl macht Verluste wett (9.11.)",
+          "url": "https://za.investing.com/news/commodities-news/oil-prices-dip-as-trump-says-new-iran-attacks-unlikely-if-talks-progress-4560249"
         }
       ]
     }

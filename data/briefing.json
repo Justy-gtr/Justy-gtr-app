@@ -1,61 +1,53 @@
 {
   "example": false,
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "title": "Morgen-Briefing",
   "greeting": "Guten Morgen, Justy.",
-  "summary": "Ruhiger Sonntag, die Börsen sind zu. Die ESCAPADE-Frage von gestern wird nicht gewertet: Bis 06:30 gab es keine offizielle Meldung von NASA oder Rocket Lab, ob die Sonde Blue ihr Mars-Manöver geschafft hat. Neue Tagesfrage: Bringt SpaceX die Mission USSF-627 am Dienstag ab 04:03 ins All? Karl sagt eher ja, etwa 80 zu 20. Über Nacht gab es keine wichtigen Posts von Musk oder den Firmen. Diese Woche zählen: Montag 23:00 Rocket-Lab-Zahlen, Dienstag 14:30 US-Inflation, Freitag Starship Flight 15 (65 %).",
+  "summary": "Heute ist ein voller Montag. Um 11:51 feuert die zweite ESCAPADE-Sonde (Gold) ihr Triebwerk Richtung Mars. Zur ersten Sonde (Blue) gibt es noch keine offizielle Bestätigung. Um 18:00 trifft Trump den Premier von Katar wegen Iran — das kann Öl und Börsenstimmung bewegen. Um 23:00 legt Rocket Lab seine Zahlen vor. Über Nacht keine wichtigen Posts.",
   "bullets": [
-    "ESCAPADE Blue: keine offizielle Bestätigung, Frage nicht gewertet. Gold folgt Mo 11:51.",
-    "Tagesfrage: USSF-627 im ersten Fenster (Di ab 04:03)? Karl: ja.",
-    "Keine wichtigen Posts seit gestern Abend.",
-    "Freitag-Schluss: SPCX ~134 $, TSLA ~358 $, RKLB ~53 $.",
-    "Woche: Mo RKLB-Zahlen, Di CPI, Fr Flight 15."
+    "11:51 ESCAPADE Gold: Mars-Manöver (85 %). Blue weiter unbestätigt.",
+    "18:00 Trump trifft Katars Premier: Iran-Waffenruhe im Gespräch.",
+    "23:00 Rocket Lab: Zahlen fürs 3. Quartal.",
+    "Di 04:03 SpaceX USSF-627 (85 %, Tagesfrage). Di 14:30 US-Inflation.",
+    "US-Futures leicht im Plus, Öl etwas schwächer. Keine wichtigen Posts."
   ],
   "audioUrl": null,
   "sources": [
-    {
-      "title": "NASA ESCAPADE Blog-Archiv (kein Post-Burn-Update)",
-      "url": "https://science.nasa.gov/blogs/escapade/"
-    },
     {
       "title": "NASA: ESCAPADE Twin Spacecraft to Mars",
       "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
     },
     {
-      "title": "@jeff_on_orbit: Blue-Burn „nicht bestätigt“",
-      "url": "https://x.com/jeff_on_orbit/status/2119246722589204875"
+      "title": "NASA ESCAPADE Blog-Archiv (kein Post-Burn-Update)",
+      "url": "https://science.nasa.gov/blogs/escapade/"
     },
     {
-      "title": "SpaceX: USSF-627 Mission",
-      "url": "https://www.spacex.com/launches/ussf627"
+      "title": "Axios: Trump trifft Katars Premier zu Iran (9.11.)",
+      "url": "https://www.axios.com/2026/11/09/trump-qatar-prime-minister-iran-war-mediation"
     },
     {
-      "title": "SpaceX: Startliste (Flight 15 13.11.)",
-      "url": "https://www.spacex.com/launches/"
-    },
-    {
-      "title": "@SpaceX: Flight 15 NET 13.11.",
-      "url": "https://x.com/SpaceX/status/2119093662957060389"
+      "title": "FXStreet/Reuters: Treffen 17:00 GMT im Weißen Haus",
+      "url": "https://www.fxstreet.com/news/us-president-donald-trump-will-meet-qatars-prime-minister-on-monday-202611090430"
     },
     {
       "title": "Rocket Lab IR: Q3-2026-Call",
       "url": "https://investors.rocketlabcorp.com/events/event-details/third-quarter-2026-financial-results-update-and-conference-call"
     },
     {
+      "title": "SpaceX: USSF-627 Mission",
+      "url": "https://www.spacex.com/launches/ussf627"
+    },
+    {
       "title": "BLS: CPI schedule",
       "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
     },
     {
-      "title": "Yahoo Finance: SPCX",
-      "url": "https://finance.yahoo.com/quote/SPCX/"
+      "title": "Yahoo Finance: US-Futures erholen sich (9.11.)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-034814953.html"
     },
     {
-      "title": "Yahoo Finance: TSLA",
-      "url": "https://finance.yahoo.com/quote/TSLA/"
-    },
-    {
-      "title": "Yahoo Finance: RKLB",
-      "url": "https://finance.yahoo.com/quote/RKLB/"
+      "title": "CNBC: Öl fällt nach Trump-Aussage (9.11.)",
+      "url": "https://www.cnbc.com/2026/11/09/oil-falls-as-trump-says-new-iran-attacks-unlikely.html"
     }
   ]
 }

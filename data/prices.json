@@ -9324,23 +9324,23 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Kein Handel seit Freitag (Schluss ~134 $, ~+8,6 %). Mo früh: Nvidia nachbörslich ~−3 % wegen Untersuchung gegen den Chef, Nasdaq-Futures aber leicht im Plus. Musk nachts: billige Rechenleistung würde SpaceX-Umsatz drücken. Di 04:03 USSF-627, Di 14:30 CPI, Fr Flight 15.",
+      "why": "Kein Handel seit Freitag (Schluss ~134 $, ~+8,6 %). Mo früh: US-Futures im Plus (Nasdaq ~+0,6 %), obwohl Nvidia wegen der Untersuchung gegen den Chef nachbörslich ~−3 % lag. Heute 18:00 Trump–Katar zu Iran. Di 04:03 USSF-627, Di 14:30 CPI, Fr Flight 15.",
       "whySources": [
         {
           "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
+          "title": "Yahoo Finance: US-Futures erholen sich (9.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-034814953.html"
+        },
+        {
           "title": "The Star/Reuters: Nvidia falls about 3% (9.11.)",
           "url": "https://www.thestar.com.my/tech/tech-news/2026/11/09/nvidia-falls-about-3-in-after-hours-and-perpetual-futures-trade"
         },
         {
-          "title": "CNBC TV18: Nasdaq-Futures drehen ins Plus (9.11.)",
-          "url": "https://www.cnbctv18.com/market/dow-jones-nasdaq-snp-500-nvidia-ceo-jensen-huang-investigation-impact-key-wall-street-triggers-this-week-20029944.htm"
-        },
-        {
-          "title": "@elonmusk: It works both ways",
-          "url": "https://x.com/elonmusk/status/2119610442867749040"
+          "title": "FXStreet/Reuters: Treffen 17:00 GMT im Weißen Haus",
+          "url": "https://www.fxstreet.com/news/us-president-donald-trump-will-meet-qatars-prime-minister-on-monday-202611090430"
         },
         {
           "title": "SpaceX: Startliste",
@@ -23612,7 +23612,7 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Die angezeigten etwa −9,8 % sind die Wochenbewegung, kein neuer Absturz. Freitag-Schluss ~358 $ (~+4 %). Mo früh: Nasdaq-Futures leicht im Plus, Nvidia-Sorge belastet Tech nur wenig. Keine neue Tesla-Nachricht über Nacht.",
+      "why": "Die angezeigten etwa −9,8 % sind die Wochenbewegung, kein neuer Absturz. Freitag-Schluss ~358 $ (~+4,6 %). Mo früh: US-Futures im Plus, Öl etwas schwächer nach Trumps Iran-Aussagen. Keine neue Tesla-Nachricht über Nacht.",
       "whySources": [
         {
           "title": "Yahoo Finance: TSLA",
@@ -23623,8 +23623,12 @@
           "url": "https://finance.yahoo.com/quote/TL0.DE"
         },
         {
-          "title": "CNBC TV18: Nasdaq-Futures drehen ins Plus (9.11.)",
-          "url": "https://www.cnbctv18.com/market/dow-jones-nasdaq-snp-500-nvidia-ceo-jensen-huang-investigation-impact-key-wall-street-triggers-this-week-20029944.htm"
+          "title": "Yahoo Finance: US-Futures erholen sich (9.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-034814953.html"
+        },
+        {
+          "title": "CNBC: Öl fällt nach Trump-Aussage (9.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/oil-falls-as-trump-says-new-iran-attacks-unlikely.html"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -36054,7 +36058,7 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Kein Handel seit Freitag (Schluss ~53 $, ~+15 %: Space-/Defense-Erholung). Heute: ESCAPADE-Gold-Burn 11:51, Q3-Zahlen 23:00 Berlin. Blue-Burn vom 7.11. weiter nicht offiziell bestätigt.",
+      "why": "Kein Handel seit Freitag (Schluss ~53 $, ~+15 %: Space-/Defense-Erholung). Heute: ESCAPADE-Gold-Burn 11:51, Q3-Zahlen 23:00 Berlin. Blue-Burn vom 7.11. weiter nicht offiziell bestätigt (Stand 06:40).",
       "whySources": [
         {
           "title": "Yahoo Finance: RKLB",
