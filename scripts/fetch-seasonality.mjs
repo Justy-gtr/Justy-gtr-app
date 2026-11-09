@@ -17,7 +17,7 @@ import {
   slotIsEarly
 } from "../js/seasonality.js";
 import { MIN_CASES } from "../js/analysis.js";
-import { weekdayPathsMerged } from "../js/daypath.js";
+import { DAYPATH_SCHEMA, mergeIntradayPaths } from "../js/daypath.js";
 import { fetchChart, TICKERS } from "./fetch-prices.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
@@ -97,24 +97,89 @@ function pointsOf(chart) {
   })).filter((point) => point.t && Number.isFinite(point.eur) && point.eur > 0);
 }
 
-/** Long intraday path. German morning when it exists, otherwise the US series. Percent, so each listing stays in its own price. */
-async function loadDayPaths(spec) {
-  const symbols = spec.earlySymbols?.length ? spec.earlySymbols : (spec.eurSymbols || []);
-  let german = [];
-  for (const symbol of symbols) {
-    const hourly = await tryChart(symbol, "60m", "2y");
-    const half = await tryChart(symbol, "30m", "60d");
-    const rows = [
-      ...(hourly?.currency === "EUR" ? pointsOf(hourly) : []),
-      ...(half?.currency === "EUR" ? pointsOf(half) : [])
-    ];
-    if (!rows.length) continue;
-    german = rows;
-    break;
+const DAY_VENUES = [
+  [".F", "Frankfurt"],
+  [".DE", "Xetra"],
+  [".SG", "Stuttgart"],
+  [".MU", "München"]
+];
+
+/** Frankfurt first, then Xetra, Stuttgart and Munich fill the gaps Yahoo actually has. */
+export function dayPathVenues(spec) {
+  const stems = [];
+  for (const symbol of [...(spec.earlySymbols || []), ...(spec.eurSymbols || [])]) {
+    const stem = String(symbol || "").replace(/\.[A-Za-z0-9]+$/, "");
+    if (stem && !stems.includes(stem)) stems.push(stem);
   }
-  const usHourly = await tryChart(spec.usdSymbol, "60m", "2y", { includePrePost: true });
-  const usHalf = await tryChart(spec.usdSymbol, "30m", "60d", { includePrePost: true });
-  return weekdayPathsMerged(german, [...pointsOf(usHourly), ...pointsOf(usHalf)]);
+  const venues = [];
+  for (const stem of stems) {
+    for (const [suffix, label] of DAY_VENUES) {
+      venues.push({ symbol: `${stem}${suffix}`, label });
+    }
+  }
+  return venues;
+}
+
+async function loadEurPoints(symbol) {
+  const hourly = await tryChart(symbol, "60m", "2y");
+  const half = await tryChart(symbol, "30m", "60d");
+  const rows = [];
+  for (const chart of [hourly, half]) {
+    if (chart?.currency === "EUR") rows.push(...pointsOf(chart));
+  }
+  return rows;
+}
+
+async function loadUsPoints(symbol) {
+  const hourly = await tryChart(symbol, "60m", "2y", { includePrePost: true });
+  const half = await tryChart(symbol, "30m", "60d", { includePrePost: true });
+  return [...pointsOf(hourly), ...pointsOf(half)];
+}
+
+/**
+ * Longest free intraday path. 60m goes back about two years, 30m about 60 days.
+ * Each listing stays in its own price; the merge uses percent changes.
+ */
+async function loadDayPaths(spec) {
+  const series = [];
+  const used = [];
+  for (const venue of dayPathVenues(spec)) {
+    const points = await loadEurPoints(venue.symbol);
+    if (!points.length) continue;
+    series.push({ id: venue.symbol, label: venue.label, points });
+    used.push(venue.symbol);
+  }
+  const usPoints = await loadUsPoints(spec.usdSymbol);
+  if (usPoints.length) {
+    series.push({ id: spec.usdSymbol, label: "US", points: usPoints });
+  }
+  const paths = mergeIntradayPaths(series);
+  const days = (paths.days || []).map((day) => {
+    const filled = (day.points || []).filter((point) => point.avg != null).length;
+    return `${day.name} n=${day.n} Felder=${filled}`;
+  }).join(" | ");
+  const empty = (paths.coverage || []).filter((row) => row.n === 0).map((row) => row.slot);
+  console.log(`${spec.symbol} Tagesverlauf: ${days}`);
+  console.log(`${spec.symbol} leere Körbe: ${empty.length ? empty.join(", ") : "keine"}`);
+  return { paths, symbols: used };
+}
+
+export function dayPathsStale(previous) {
+  for (const spec of TICKERS) {
+    const paths = previous?.symbols?.[spec.symbol]?.dayPaths;
+    if (!paths || paths.schema !== DAYPATH_SCHEMA || !Array.isArray(paths.days) || paths.days.length !== 5) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/** Skip only when today is already written and dayPaths is on the current schema. */
+export function shouldSkipSeasonality(previous, now = new Date(), force = false) {
+  if (force) return false;
+  if (dayPathsStale(previous)) return false;
+  if (!previous?.asOf) return false;
+  return berlinDay(previous.asOf) === berlinDay(now);
 }
 
 async function loadSymbol(spec, now) {
@@ -123,13 +188,17 @@ async function loadSymbol(spec, now) {
   const regular = collectSlotBars(barsOf(hours), 60, "us").filter((bar) => !slotIsEarly(bar.slot));
   const early = await loadEarly(spec);
   let dayPaths = null;
+  let daySymbols = [];
   try {
-    dayPaths = await loadDayPaths(spec);
+    const loadedPaths = await loadDayPaths(spec);
+    dayPaths = loadedPaths.paths;
+    daySymbols = loadedPaths.symbols;
   } catch (error) {
     console.log(`::warning::Tagesverlauf ${spec.symbol}: ${error.message}`);
   }
   return {
     germanSymbol: early.symbol,
+    daySymbols,
     pack: {
       name: spec.name,
       earlyNote: early.note,
@@ -145,12 +214,14 @@ async function loadSymbol(spec, now) {
 export async function buildSeasonality(previous, now = new Date()) {
   const symbols = {};
   const germanSymbols = [];
+  const daySymbols = [];
   let fresh = 0;
   for (const spec of TICKERS) {
     try {
       const loaded = await loadSymbol(spec, now);
       symbols[spec.symbol] = loaded.pack;
       if (loaded.germanSymbol) germanSymbols.push(loaded.germanSymbol);
+      for (const symbol of loaded.daySymbols || []) daySymbols.push(symbol);
       fresh += 1;
       const note = loaded.pack.earlyNote || "keine frühen Stunden";
       console.log(`${spec.symbol}: ${seasonalityHeadline(spec.symbol, symbols[spec.symbol].ranges.all)} | ${note}${loaded.germanSymbol ? ` (${loaded.germanSymbol})` : ""}`);
@@ -165,9 +236,25 @@ export async function buildSeasonality(previous, now = new Date()) {
   if (!fresh) return null;
   for (const spec of TICKERS) {
     if (!symbols[spec.symbol]) return null;
+    const paths = symbols[spec.symbol].dayPaths;
+    if (!paths || paths.schema !== DAYPATH_SCHEMA) {
+      const kept = previous?.symbols?.[spec.symbol]?.dayPaths;
+      if (kept?.schema === DAYPATH_SCHEMA) {
+        symbols[spec.symbol].dayPaths = kept;
+        console.log(`${spec.symbol}: letzter Tagesverlauf behalten`);
+      } else {
+        console.log(`::warning::${spec.symbol}: Tagesverlauf fehlt. Datei bleibt.`);
+        return null;
+      }
+    }
   }
-  const sources = TICKERS.map((spec) => quoteSource(spec.usdSymbol));
-  for (const symbol of germanSymbols) sources.push(quoteSource(symbol));
+  const sources = [];
+  const seenSources = new Set();
+  for (const symbol of [...TICKERS.map((spec) => spec.usdSymbol), ...germanSymbols, ...daySymbols]) {
+    if (!symbol || seenSources.has(symbol)) continue;
+    seenSources.add(symbol);
+    sources.push(quoteSource(symbol));
+  }
   return {
     asOf: now.toISOString(),
     timezone: "Europe/Berlin",
@@ -189,10 +276,12 @@ async function main() {
   const force = process.argv.includes("--force");
   const now = new Date();
   const previous = readPrevious();
-  const today = berlinDay(now);
-  if (!force && previous?.asOf && berlinDay(previous.asOf) === today) {
+  if (shouldSkipSeasonality(previous, now, force)) {
     console.log("Saisonalität ist für heute schon geschrieben.");
     return;
+  }
+  if (!force && dayPathsStale(previous)) {
+    console.log("Tagesverlauf fehlt oder die Fassung ist alt. Neu rechnen.");
   }
   let next;
   try {

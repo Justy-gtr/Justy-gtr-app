@@ -61,10 +61,27 @@
   font-size: 12px;
   font-variant-numeric: tabular-nums;
 }
+.daypath .scrub,
+.daypath-scrub {
+  height: calc(1.35em * 2);
+  min-height: calc(1.35em * 2);
+  margin: 2px 0 0;
+  white-space: pre-line;
+  overflow: hidden;
+  line-height: 1.35;
+  font-size: 13px;
+}
 .daypath-chart {
   width: 100%;
   height: 72px;
   display: block;
+  touch-action: none;
+  cursor: crosshair;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .tabbar { grid-template-columns: repeat(7, minmax(0, 1fr)); }
 .tab {
