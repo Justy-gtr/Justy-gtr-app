@@ -2,6 +2,17 @@ import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import {
+  ALPACA_SOURCE,
+  MIN_FIVE_BARS,
+  MIN_HOUR_BARS,
+  MIN_MINUTE_BARS,
+  extendedPrint,
+  loadPricePack,
+  marketLink,
+  minutePoints,
+  standingQuote
+} from "./alpaca.mjs";
+import {
   aggregateBars,
   extendedQuote,
   failedTicker,
@@ -278,39 +289,56 @@ async function loadHourly(symbol, options) {
   return trimmed;
 }
 
+function fromAlpacaBars(points, minIn, keepDays, minOut, options) {
+  if (!Array.isArray(points) || points.length < minIn) return null;
+  const tagged = tagSessions(points, null, { clock: true });
+  const bars = eurBars(tagged, options).map(slimEurBar);
+  const trimmed = keepTradingDays(bars, keepDays);
+  if (trimmed.length < minOut) return null;
+  return trimmed;
+}
+
 /** Same venue as the live minute series, so the join does not jump. EUR conversion matches the 4h bars. */
-async function loadFiveMinuteHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx }) {
+async function loadFiveMinuteHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx, usPack }) {
   const preferEur = Boolean(useEur && eurSymbol && intradayMethod !== "usd_div_eurusd");
   const usdOptions = { fx, spot: fx.rate, direct: false };
   const attempts = preferEur
-    ? [[eurSymbol, barOptions], [spec.usdSymbol, usdOptions]]
-    : [[spec.usdSymbol, usdOptions]];
-  if (!preferEur && useEur && eurSymbol) attempts.push([eurSymbol, barOptions]);
-  for (const [symbol, options] of attempts) {
+    ? [["eur", eurSymbol, barOptions], ["usd", spec.usdSymbol, usdOptions]]
+    : [["usd", spec.usdSymbol, usdOptions]];
+  if (!preferEur && useEur && eurSymbol) attempts.push(["eur", eurSymbol, barOptions]);
+  for (const [kind, symbol, options] of attempts) {
+    if (kind === "usd") {
+      const iex = fromAlpacaBars(usPack?.five?.[spec.usdSymbol], MIN_FIVE_BARS, 3, 2, options);
+      if (iex) return { bars: iex, iex: true };
+    }
     try {
-      return await loadFiveMinute(symbol, options);
+      return { bars: await loadFiveMinute(symbol, options), iex: false };
     } catch (error) {
       console.log(`::warning::5m ${symbol}: ${error.message}`);
     }
   }
-  return null;
+  return { bars: null, iex: false };
 }
 
-async function loadHourlyHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx }) {
+async function loadHourlyHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx, usPack }) {
   const preferEur = Boolean(useEur && eurSymbol && intradayMethod !== "usd_div_eurusd");
   const usdOptions = { fx, spot: fx.rate, direct: false };
   const attempts = preferEur
-    ? [[eurSymbol, barOptions], [spec.usdSymbol, usdOptions]]
-    : [[spec.usdSymbol, usdOptions]];
-  if (!preferEur && useEur && eurSymbol) attempts.push([eurSymbol, barOptions]);
-  for (const [symbol, options] of attempts) {
+    ? [["eur", eurSymbol, barOptions], ["usd", spec.usdSymbol, usdOptions]]
+    : [["usd", spec.usdSymbol, usdOptions]];
+  if (!preferEur && useEur && eurSymbol) attempts.push(["eur", eurSymbol, barOptions]);
+  for (const [kind, symbol, options] of attempts) {
+    if (kind === "usd") {
+      const iex = fromAlpacaBars(usPack?.hour?.[spec.usdSymbol], MIN_HOUR_BARS, 10, 8, options);
+      if (iex) return { bars: iex, iex: true };
+    }
     try {
-      return await loadHourly(symbol, options);
+      return { bars: await loadHourly(symbol, options), iex: false };
     } catch (error) {
       console.log(`::warning::1H ${symbol}: ${error.message}`);
     }
   }
-  return null;
+  return { bars: null, iex: false };
 }
 
 function directPoints(points) {
@@ -332,7 +360,7 @@ function toEurQuote(quote, rate) {
   };
 }
 
-async function loadTicker(spec, fx, previous, now = new Date()) {
+async function loadTicker(spec, fx, previous, now = new Date(), usPack = null) {
   let eurChart = null;
   let eurSymbol = null;
   for (const candidate of spec.eurSymbols) {
@@ -348,7 +376,9 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
     }
   }
 
-  const usd = await fetchChart(spec.usdSymbol, "1d", "5d");
+  const iexChart = standingQuote(spec.usdSymbol, usPack, now);
+  const quoteFromAlpaca = Boolean(iexChart && iexChart.price != null);
+  const usd = quoteFromAlpaca ? iexChart : await fetchChart(spec.usdSymbol, "1d", "5d");
   const useEur = Boolean(eurSymbol);
   const method = useEur ? "direct_eur" : "usd_div_eurusd";
   const spotUsd = usd.price;
@@ -371,15 +401,25 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
       console.log(`::warning::Intraday ${eurSymbol}: ${error.message}`);
     }
   }
+  const iexMinutes = minutePoints(spec.usdSymbol, usPack);
+  let barsFromAlpaca = false;
   let usdIntra = null;
-  try {
-    usdIntra = await fetchChart(spec.usdSymbol, INTRADAY_INTERVAL, INTRADAY_RANGE, { includePrePost: true });
-  } catch (error) {
-    console.log(`::warning::Intraday ${spec.usdSymbol}: ${error.message}`);
+  if (iexMinutes.length >= MIN_MINUTE_BARS) {
+    usdIntra = { points: iexMinutes, periods: null };
+    barsFromAlpaca = true;
+  } else {
+    if (usPack && iexMinutes.length) {
+      console.log(`Alpaca ${spec.symbol} 1m: ${iexMinutes.length} Punkte, Yahoo bleibt.`);
+    }
     try {
-      usdIntra = await fetchChart(spec.usdSymbol, INTRADAY_INTERVAL, INTRADAY_RANGE);
-    } catch (fallbackError) {
-      console.log(`::warning::Intraday ${spec.usdSymbol}: ${fallbackError.message}`);
+      usdIntra = await fetchChart(spec.usdSymbol, INTRADAY_INTERVAL, INTRADAY_RANGE, { includePrePost: true });
+    } catch (error) {
+      console.log(`::warning::Intraday ${spec.usdSymbol}: ${error.message}`);
+      try {
+        usdIntra = await fetchChart(spec.usdSymbol, INTRADAY_INTERVAL, INTRADAY_RANGE);
+      } catch (fallbackError) {
+        console.log(`::warning::Intraday ${spec.usdSymbol}: ${fallbackError.message}`);
+      }
     }
   }
 
@@ -398,6 +438,9 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
   let computedUsd = usdIntra
     ? extendedQuote(usdIntra.points, usdIntra.periods, now.getTime(), { clock: true })
     : null;
+  if (!computedUsd && usPack?.snapshots?.[spec.usdSymbol]) {
+    computedUsd = extendedPrint(usPack.snapshots[spec.usdSymbol], now);
+  }
   const regularLive = usClockSession(now.getTime()) === "regular";
   if (!computedUsd && useEur && regularLive && sessionEnded((euIntra || eurChart)?.periods, nowSec) && usd.price != null) {
     computedUsd = {
@@ -423,11 +466,13 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
     history["4H"] = previous?.history?.["4H"] || [];
   }
 
-  const five = await loadFiveMinuteHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx });
-  history["5m"] = five || previous?.history?.["5m"] || [];
+  const five = await loadFiveMinuteHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx, usPack });
+  history["5m"] = five.bars || previous?.history?.["5m"] || [];
+  if (five.iex) barsFromAlpaca = true;
 
-  const hourly = await loadHourlyHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx });
-  history["1H"] = hourly || previous?.history?.["1H"] || [];
+  const hourly = await loadHourlyHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx, usPack });
+  history["1H"] = hourly.bars || previous?.history?.["1H"] || [];
+  if (hourly.iex) barsFromAlpaca = true;
 
   if (history["1M"].length && spotEur != null) {
     const last = history["1M"][history["1M"].length - 1];
@@ -440,7 +485,10 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
   const sparkline = sampleSpark(sparkSource);
   const highs = [spotEur, ...history["5Y"].map((point) => point.eur), ...history["1Y"].map((point) => point.eur)]
     .filter((value) => value != null);
-  const sources = [quoteLink(useEur ? eurSymbol : spec.usdSymbol)];
+  const source = quoteFromAlpaca || barsFromAlpaca ? ALPACA_SOURCE : "yahoo";
+  const sources = [];
+  if (source === ALPACA_SOURCE) sources.push(marketLink(spec.usdSymbol));
+  sources.push(quoteLink(useEur ? eurSymbol : spec.usdSymbol));
   const needsFx = !useEur || intradayMethod !== "direct_eur" || overnight.eur != null;
   if (needsFx) sources.push(fx.source);
   if (useEur) sources.push(quoteLink(spec.usdSymbol));
@@ -470,6 +518,7 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
     eurVenue: useEur ? venueFor(eurSymbol) : null,
     eurSymbol: eurSymbol,
     usdSymbol: spec.usdSymbol,
+    source,
     intradayMethod,
     fxRate: fx.rate,
     sparkline,
@@ -479,17 +528,20 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
   };
 }
 
-export async function buildPrices(previous, now = new Date()) {
+export async function buildPrices(previous, now = new Date(), usPack) {
   const fx = await loadFx();
+  const pack = usPack === undefined
+    ? await loadPricePack(TICKERS.map((spec) => spec.usdSymbol), { now })
+    : usPack;
   const prevTickers = new Map((previous?.tickers || []).map((ticker) => [ticker.symbol, ticker]));
   const tickers = [];
   let okCount = 0;
   for (const spec of TICKERS) {
     try {
-      const fresh = await loadTicker(spec, fx, prevTickers.get(spec.symbol), now);
+      const fresh = await loadTicker(spec, fx, prevTickers.get(spec.symbol), now, pack);
       tickers.push(mergeTicker(prevTickers.get(spec.symbol), fresh));
       okCount += 1;
-      console.log(`${spec.symbol} ${fresh.priceEur} EUR ${fresh.changePct}% via ${fresh.eurMethod} ${fresh.eurSymbol || fresh.usdSymbol} overnight=${fresh.overnightPhase || "-"} ${fresh.overnightEur ?? "-"} 5m=${fresh.history["5m"]?.length || 0} 1H=${fresh.history["1H"]?.length || 0}`);
+      console.log(`${spec.symbol} ${fresh.priceEur} EUR ${fresh.changePct}% via ${fresh.eurMethod} ${fresh.eurSymbol || fresh.usdSymbol} quelle=${fresh.source} overnight=${fresh.overnightPhase || "-"} ${fresh.overnightEur ?? "-"} 5m=${fresh.history["5m"]?.length || 0} 1H=${fresh.history["1H"]?.length || 0}`);
     } catch (error) {
       console.log(`::warning::${spec.symbol}: ${error.message}`);
       tickers.push(failedTicker(prevTickers.get(spec.symbol), spec.symbol, spec.name, error.message));
@@ -546,6 +598,7 @@ async function main() {
         symbol: ticker.eurSymbol || ticker.usdSymbol || null,
         intradayMethod: ticker.intradayMethod || null,
         overnight: ticker.overnightPhase || null,
+        source: ticker.source || null,
         error: ticker.fetchError || null
       }
     ]))
@@ -577,6 +630,7 @@ async function main() {
         dayLowEur: ticker.dayLowEur,
         eurMethod: ticker.eurMethod,
         eurVenue: ticker.eurVenue,
+        source: ticker.source,
         overnightPhase: ticker.overnightPhase,
         overnightEur: ticker.overnightEur,
         overnightHighEur: ticker.overnightHighEur,

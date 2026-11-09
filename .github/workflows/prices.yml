@@ -8,6 +8,8 @@ name: Kurse
 # Mo–Fr zwischen 05:00 und 22:15 ist (auch bei verspätetem Cron),
 # solange in New York Vorbörse, Handel oder Nachhandel läuft,
 # oder am Wochenende höchstens 45 Minuten nach einem festen Slot.
+# Alpaca Marktdaten (IEX) für US-Kurse und Kerzen, wenn die Secrets gesetzt sind.
+# Leer heißt: die bisherigen Quellen. Keine Handelsaufträge.
 on:
   schedule:
     - cron: "*/5 3-21 * * 1-5"
@@ -46,19 +48,31 @@ jobs:
 
       - name: Kurse laden
         if: steps.gate.outputs.run == 'true'
+        env:
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
         run: node scripts/fetch-prices.mjs
 
       - name: Wochentag und Uhrzeit
         if: steps.gate.outputs.run == 'true'
+        env:
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
         run: node scripts/fetch-seasonality.mjs
 
       - name: Moonshots
         if: steps.gate.outputs.run == 'true'
+        env:
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
         run: node scripts/fetch-moonshots.mjs
 
       - name: Nur bei Änderung committen
         id: commit
         if: steps.gate.outputs.run == 'true'
+        env:
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -18,6 +18,7 @@ import {
 } from "../js/seasonality.js";
 import { MIN_CASES } from "../js/analysis.js";
 import { DAYPATH_SCHEMA, mergeIntradayPaths } from "../js/daypath.js";
+import { IEX_LABEL, alpacaConfigured, loadPathPack, marketLink, pathPoints } from "./alpaca.mjs";
 import { fetchChart, TICKERS } from "./fetch-prices.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
@@ -140,7 +141,7 @@ async function loadUsPoints(symbol) {
  * Longest free intraday path. 60m goes back about two years, 30m about 60 days.
  * Each listing stays in its own price; the merge uses percent changes.
  */
-async function loadDayPaths(spec) {
+async function loadDayPaths(spec, iexPoints = []) {
   const series = [];
   const used = [];
   for (const venue of dayPathVenues(spec)) {
@@ -152,6 +153,9 @@ async function loadDayPaths(spec) {
   const usPoints = await loadUsPoints(spec.usdSymbol);
   if (usPoints.length) {
     series.push({ id: spec.usdSymbol, label: "US", points: usPoints });
+  }
+  if (iexPoints.length) {
+    series.push({ id: `${spec.usdSymbol}:iex`, label: IEX_LABEL, points: iexPoints });
   }
   const paths = mergeIntradayPaths(series);
   const days = (paths.days || []).map((day) => {
@@ -174,15 +178,19 @@ export function dayPathsStale(previous) {
   return false;
 }
 
-/** Skip only when today is already written and dayPaths is on the current schema. */
-export function shouldSkipSeasonality(previous, now = new Date(), force = false) {
+/**
+ * Skip only when today is already written and dayPaths is on the current schema.
+ * With Alpaca keys, the first run of the Berlin day still rebuilds until usFeed is set.
+ */
+export function shouldSkipSeasonality(previous, now = new Date(), force = false, alpacaReady = alpacaConfigured()) {
   if (force) return false;
   if (dayPathsStale(previous)) return false;
+  if (alpacaReady && previous?.usFeed !== "alpaca-iex" && previous?.usFeed !== "yahoo") return false;
   if (!previous?.asOf) return false;
   return berlinDay(previous.asOf) === berlinDay(now);
 }
 
-async function loadSymbol(spec, now) {
+async function loadSymbol(spec, now, iexPack) {
   const daily = await fetchChart(spec.usdSymbol, "1d", "2y");
   const hours = await fetchChart(spec.usdSymbol, "60m", "2y", { includePrePost: false });
   const regular = collectSlotBars(barsOf(hours), 60, "us").filter((bar) => !slotIsEarly(bar.slot));
@@ -190,7 +198,7 @@ async function loadSymbol(spec, now) {
   let dayPaths = null;
   let daySymbols = [];
   try {
-    const loadedPaths = await loadDayPaths(spec);
+    const loadedPaths = await loadDayPaths(spec, pathPoints(spec.usdSymbol, iexPack));
     dayPaths = loadedPaths.paths;
     daySymbols = loadedPaths.symbols;
   } catch (error) {
@@ -212,13 +220,14 @@ async function loadSymbol(spec, now) {
 }
 
 export async function buildSeasonality(previous, now = new Date()) {
+  const iexPack = await loadPathPack(TICKERS.map((spec) => spec.usdSymbol), { now });
   const symbols = {};
   const germanSymbols = [];
   const daySymbols = [];
   let fresh = 0;
   for (const spec of TICKERS) {
     try {
-      const loaded = await loadSymbol(spec, now);
+      const loaded = await loadSymbol(spec, now, iexPack);
       symbols[spec.symbol] = loaded.pack;
       if (loaded.germanSymbol) germanSymbols.push(loaded.germanSymbol);
       for (const symbol of loaded.daySymbols || []) daySymbols.push(symbol);
@@ -255,7 +264,16 @@ export async function buildSeasonality(previous, now = new Date()) {
     seenSources.add(symbol);
     sources.push(quoteSource(symbol));
   }
-  return {
+  if (iexPack) {
+    for (const spec of TICKERS) {
+      if (!pathPoints(spec.usdSymbol, iexPack).length) continue;
+      const link = marketLink(spec.usdSymbol);
+      if (seenSources.has(link.url)) continue;
+      seenSources.add(link.url);
+      sources.push(link);
+    }
+  }
+  const doc = {
     asOf: now.toISOString(),
     timezone: "Europe/Berlin",
     session: "08:00-22:00",
@@ -264,6 +282,9 @@ export async function buildSeasonality(previous, now = new Date()) {
     sources,
     symbols
   };
+  if (iexPack) doc.usFeed = "alpaca-iex";
+  else if (alpacaConfigured()) doc.usFeed = "yahoo";
+  return doc;
 }
 
 function payload(doc) {

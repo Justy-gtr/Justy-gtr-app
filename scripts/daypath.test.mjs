@@ -226,16 +226,19 @@ test("Ohne dayPaths oder bei neuer Fassung wird neu gerechnet", () => {
       RKLB: { dayPaths }
     }
   };
-  assert.equal(shouldSkipSeasonality(current, now, false), true);
-  assert.equal(shouldSkipSeasonality(current, now, true), false);
-  assert.equal(shouldSkipSeasonality({ ...current, asOf: "2026-11-08T18:00:00.000Z" }, now, false), false);
+  assert.equal(shouldSkipSeasonality(current, now, false, false), true);
+  assert.equal(shouldSkipSeasonality(current, now, true, false), false);
+  assert.equal(shouldSkipSeasonality({ ...current, asOf: "2026-11-08T18:00:00.000Z" }, now, false, false), false);
+  assert.equal(shouldSkipSeasonality(current, now, false, true), false);
+  assert.equal(shouldSkipSeasonality({ ...current, usFeed: "alpaca-iex" }, now, false, true), true);
+  assert.equal(shouldSkipSeasonality({ ...current, usFeed: "yahoo" }, now, false, true), true);
   const missing = structuredClone(current);
   delete missing.symbols.SPCX.dayPaths;
   assert.equal(dayPathsStale(missing), true);
-  assert.equal(shouldSkipSeasonality(missing, now, false), false);
+  assert.equal(shouldSkipSeasonality(missing, now, false, false), false);
   const old = structuredClone(current);
   old.symbols.TSLA.dayPaths = { schema: DAYPATH_SCHEMA - 1, days: [{}, {}, {}, {}, {}] };
-  assert.equal(shouldSkipSeasonality(old, now, false), false);
+  assert.equal(shouldSkipSeasonality(old, now, false, false), false);
   assert.deepEqual(dayPathVenues({ earlySymbols: ["SPX.F", "SPX.DE"], eurSymbols: [] }).map((venue) => venue.symbol), [
     "SPX.F", "SPX.DE", "SPX.SG", "SPX.MU"
   ]);
