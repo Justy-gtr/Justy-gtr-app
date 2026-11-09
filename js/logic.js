@@ -669,7 +669,13 @@ export function movingAverage(points, window = 4) {
   });
 }
 
-const DAY_RANGES = new Set(["Tag", "1 Min", "5 Min", "15 Min", "4 Std", "1T", "3T", "1W", "1M"]);
+const DAY_RANGES = new Set(["Tag", "1 Min", "5 Min", "15 Min", "4 Std", "1T", "1 Std", "3T", "1W", "1M"]);
+
+/** Charts tab spans. Plain text, same order as the instrument page. */
+export const CHART_RANGES = ["1T", "1W", "1M", "1J", "Max"];
+
+/** Hourly candles stay readable on a phone: about eight sessions, never a hairline. */
+export const HOURLY_BAR_CAP = 84;
 
 /** 4h closes only when the stored series covers more than one session. */
 export function fourHourPoints(history) {
@@ -684,6 +690,80 @@ function recentDaily(ticker) {
   const month = (ticker?.history?.["1M"] || []).filter((point) => point && point.eur != null && point.t);
   if (month.length >= 3) return month;
   return (ticker?.history?.["6M"] || []).filter((point) => point && point.eur != null && point.t);
+}
+
+/** One OHLC bar per clock hour. Open is the first print, close the last. Empty hours stay empty. */
+export function aggregateHourPoints(points) {
+  const size = 60 * 60 * 1000;
+  const map = new Map();
+  for (const point of points || []) {
+    const row = asPricePoint(point);
+    if (!row) continue;
+    const time = Date.parse(row.t);
+    const key = Math.floor(time / size) * size;
+    const close = row.eur;
+    const open = row.open ?? close;
+    const high = row.high ?? Math.max(open, close);
+    const low = row.low ?? Math.min(open, close);
+    const slot = map.get(key);
+    if (!slot) {
+      const next = {
+        t: new Date(key).toISOString(),
+        eur: close,
+        open,
+        high: Math.max(high, open, close),
+        low: Math.min(low, open, close)
+      };
+      if (row.session) next.session = row.session;
+      map.set(key, next);
+      continue;
+    }
+    slot.high = Math.max(slot.high, high, close);
+    slot.low = Math.min(slot.low, low, close);
+    slot.eur = close;
+    if (row.session) slot.session = row.session;
+  }
+  return [...map.entries()].sort((a, b) => a[0] - b[0]).map((entry) => entry[1]);
+}
+
+/** Stored 60-minute bars, including pre/post when the file has them. Otherwise the minute series, folded into hours. */
+export function hourlyPoints(ticker) {
+  const stored = [];
+  for (const point of ticker?.history?.["1H"] || []) {
+    const row = asPricePoint(point);
+    if (row) stored.push(row);
+  }
+  stored.sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
+  if (stored.length >= 2) return stored;
+  return aggregateHourPoints(minuteSource(ticker).points);
+}
+
+export function tradingSessionCount(points) {
+  const seen = new Set();
+  for (const point of points || []) {
+    const key = newYorkDay(point?.t);
+    if (key) seen.add(key);
+  }
+  return seen.size;
+}
+
+/**
+ * Keep the newest sessions, dropping whole sessions from the left once the bar cap is hit.
+ * A short series is kept as it is. Nothing is invented for a missing day.
+ */
+export function fitSessionBars(points, { prefer = 8, maxBars = HOURLY_BAR_CAP } = {}) {
+  const list = (points || []).filter((point) => point && point.t && Number.isFinite(Date.parse(point.t)));
+  if (list.length < 2) return list;
+  let count = Math.max(1, Number(prefer) || 1);
+  let windowed = limitTradingSessions(list, count);
+  while (windowed.length > maxBars && count > 1) {
+    count -= 1;
+    const next = limitTradingSessions(list, count);
+    if (next.length >= windowed.length) break;
+    windowed = next;
+  }
+  if (windowed.length > maxBars) return windowed.slice(-maxBars);
+  return windowed;
 }
 
 const FIVE_MS = 5 * 60 * 1000;
@@ -909,6 +989,67 @@ export function chartAxisLabels(points) {
   return labels;
 }
 
+function berlinDateLabel(iso) {
+  return new Date(iso).toLocaleDateString("de-DE", {
+    timeZone: "Europe/Berlin",
+    day: "numeric",
+    month: "short"
+  });
+}
+
+/** Bottom axis for the instrument line: clock on a single day, dates once the span covers more. */
+export function instrumentAxisLabels(points) {
+  const list = (points || []).filter((point) => point && point.t);
+  const count = list.length;
+  if (!count) return [];
+  const sub = seriesIsSubDaily(list);
+  const span = Math.abs(Date.parse(list.at(-1).t) - Date.parse(list[0].t)) || 0;
+  const indexes = [];
+  const push = (index) => {
+    if (index >= 0 && index < count && !indexes.includes(index)) indexes.push(index);
+  };
+  if (sub && span < 22 * 60 * 60 * 1000) {
+    for (const ratio of [0, 0.33, 0.66, 1]) push(Math.round(ratio * (count - 1)));
+    return indexes.map((index) => {
+      const parts = berlinAxisParts(list[index].t);
+      return parts ? { index, text: `${parts.hour}:${parts.minute}` } : null;
+    }).filter(Boolean);
+  }
+  const seen = new Set();
+  const dayIndexes = [];
+  for (let index = 0; index < count; index += 1) {
+    const day = berlinDayKey(list[index].t);
+    if (!day || seen.has(day)) continue;
+    seen.add(day);
+    dayIndexes.push(index);
+  }
+  let chosen = dayIndexes;
+  if (dayIndexes.length > 5) {
+    chosen = [];
+    for (const ratio of [0, 0.25, 0.5, 0.75, 1]) {
+      const index = dayIndexes[Math.round(ratio * (dayIndexes.length - 1))];
+      if (!chosen.includes(index)) chosen.push(index);
+    }
+  }
+  const minGap = Math.max(2, Math.round(count * 0.12));
+  const spaced = [];
+  for (const index of chosen) {
+    if (spaced.length && index - spaced.at(-1) < minGap) {
+      if (index === chosen.at(-1)) spaced[spaced.length - 1] = index;
+      continue;
+    }
+    spaced.push(index);
+  }
+  chosen = spaced;
+  const labels = [];
+  for (const index of chosen) {
+    const text = berlinDateLabel(list[index].t);
+    if (!text || (labels.length && labels.at(-1).text === text)) continue;
+    labels.push({ index, text });
+  }
+  return labels;
+}
+
 function storedFiveCount(ticker) {
   return (ticker?.history?.["5m"] || []).filter((point) => point && point.eur != null && point.t).length;
 }
@@ -948,7 +1089,7 @@ export function rangeMinutePoints(ticker, minutes, windowed = false) {
 }
 
 export function seriesFor(ticker, range, langfrist = false) {
-  const asked = range === "Tag" ? "1 Min" : range;
+  const asked = range === "Tag" ? "1 Min" : range === "3T" ? "1 Std" : range;
   const jump = DAY_RANGES.has(range) || DAY_RANGES.has(asked);
   const effective = langfrist && jump ? "1J" : asked;
   let points;
@@ -968,10 +1109,12 @@ export function seriesFor(ticker, range, langfrist = false) {
     points = bars
       ? trimVisibleBars(bars, { max: VISIBLE_BARS, maxSpanMs: SIX_HOURS })
       : recentDaily(ticker).slice(-1);
-  } else if (effective === "3T") {
-    const pack = sessionMinutePack(ticker, 3);
-    const bars = pack && fiveMinuteCloses(pack.points);
-    points = bars ? trimVisibleBars(bars, { max: VISIBLE_BARS }) : recentDaily(ticker).slice(-3);
+  } else if (effective === "1 Std") {
+    points = fitSessionBars(hourlyPoints(ticker), { prefer: 8, maxBars: HOURLY_BAR_CAP }).map((point) => ({
+      t: point.t,
+      eur: Number(point.eur),
+      session: point.session || null
+    }));
   } else if (effective === "1W") {
     points = recentDaily(ticker).slice(-7);
   } else {
@@ -982,6 +1125,38 @@ export function seriesFor(ticker, range, langfrist = false) {
     points = movingAverage(weeklyCloses(points), effective === "5J" || effective === "Max" ? 4 : 3);
   }
   return { points, range: effective };
+}
+
+function closePoint(point) {
+  return { t: point.t, eur: Number(point.eur), session: point.session || null };
+}
+
+/** Line behind the Charts tab. Finer than a handful of daily closes, still one color. */
+export function instrumentSeries(ticker, range) {
+  const asked = CHART_RANGES.includes(range) ? range : "1T";
+  if (asked === "1T") {
+    const pack = sessionMinutePack(ticker, 1);
+    if (pack?.points?.length >= 2) return { points: pack.points.map(closePoint), range: asked };
+    return { points: recentDaily(ticker).slice(-1).map(closePoint), range: asked };
+  }
+  if (asked === "1W") {
+    const week = fitSessionBars(limitTradingSessions(hourlyPoints(ticker), 5), { prefer: 5, maxBars: HOURLY_BAR_CAP });
+    if (week.length >= 8) return { points: week.map(closePoint), range: asked };
+    return { points: recentDaily(ticker).slice(-7).map(closePoint), range: asked };
+  }
+  if (asked === "1M") {
+    const rows = fourHourPoints(ticker?.history);
+    if (rows.length >= 2) {
+      const end = Date.parse(rows.at(-1).t);
+      const month = rows.filter((point) => Date.parse(point.t) >= end - 32 * 86400000);
+      if (month.length >= 8) return { points: month.map(closePoint), range: asked };
+    }
+    const month = (ticker?.history?.["1M"] || []).filter((point) => point && point.eur != null && point.t);
+    return { points: month.map(closePoint), range: asked };
+  }
+  if (asked === "Max") return { points: maxPoints(ticker?.history).map(closePoint), range: "Max" };
+  const year = (ticker?.history?.["1Y"] || []).filter((point) => point && point.eur != null && point.t);
+  return { points: year.map(closePoint), range: "1J" };
 }
 
 export function rangeChange(points) {

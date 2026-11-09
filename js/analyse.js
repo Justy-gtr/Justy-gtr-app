@@ -9,7 +9,7 @@ const SPEC = {
   "15 Min": { window: 12, horizonMs: 60 * 60 * 1000, flatPct: 0.0006, after: "eine Stunde später", touchLook: 8, touchGap: 2, touchMargin: 0.0025 },
   "4 Std": { window: 24, horizonMs: DAY, flatPct: 0.001, after: "ein Tag später", touchLook: 10, touchGap: 3, touchMargin: 0.006 },
   "1T": { window: 6, horizonMs: DAY, flatPct: 0.0015, after: "ein Tag später", touchLook: 4, touchGap: 1, touchMargin: 0.008 },
-  "3T": { window: 6, horizonMs: 3 * DAY, flatPct: 0.0015, after: "drei Tage später", touchLook: 4, touchGap: 1, touchMargin: 0.008 },
+  "1 Std": { window: 16, horizonMs: 4 * 60 * 60 * 1000, flatPct: 0.001, after: "vier Stunden später", touchLook: 8, touchGap: 2, touchMargin: 0.004 },
   "1W": { window: 7, horizonMs: 7 * DAY, flatPct: 0.0015, after: "eine Woche später", touchLook: 8, touchGap: 2, touchMargin: 0.01 },
   "1M": { window: 21, horizonMs: 7 * DAY, flatPct: 0.0015, after: "eine Woche später", touchLook: 12, touchGap: 3, touchMargin: 0.008 },
   "6M": { window: 21, horizonMs: 7 * DAY, flatPct: 0.0015, after: "eine Woche später", touchLook: 12, touchGap: 3, touchMargin: 0.008 },
@@ -387,7 +387,9 @@ function detailFor(range, spec) {
     "15 Min": "in dieser Minutenreihe",
     "4 Std": "in der 4-Stunden-Reihe",
     "1T": "in dieser Minutenreihe",
-    "3T": "in dieser Minutenreihe",
+    "1 Std": "in der Stundenreihe",
+    "1W": "in der engeren Reihe",
+    "1M": "in der engeren Reihe",
     "Max": "in der langen Reihe"
   }[range] || "in der Tagesreihe";
   const after = spec.after.charAt(0).toUpperCase() + spec.after.slice(1);
@@ -510,7 +512,7 @@ function seriesName(range) {
     "15 Min": "15-Minuten-Reihe",
     "4 Std": "4-Stunden-Reihe",
     "1T": "Tagesreihe",
-    "3T": "Reihe der drei Handelstage",
+    "1 Std": "Stundenreihe",
     "1W": "Wochenreihe",
     "1M": "Monatsreihe",
     "6M": "Reihe der sechs Monate",
@@ -545,6 +547,30 @@ export function describeLevelBounces(stats, side, range) {
  * One line: "Widerstand 126,95 € · 3/3".
  * Several of the same kind: "Widerstand 1 126,95 € · 3/3".
  */
+/**
+ * Name at the left end of a guide line. The euro price is not in this string.
+ * Several lines of one kind are numbered. A finished touch count hangs on with a dot.
+ */
+export function levelSideName(kind, stats) {
+  const style = guideStyle(kind);
+  if (!style || kind === "pattern" || kind === "mark") return "";
+  if (kind === "trend") return style.label;
+  const total = Number(stats?.levelTotal) || 1;
+  const index = Number(stats?.levelIndex) || 0;
+  const title = total > 1 && index > 0 ? `${style.label} ${index}` : style.label;
+  const n = Number(stats?.n) || 0;
+  const bounce = Number(stats?.bounce) || 0;
+  if (n > 0) return `${title} · ${bounce}/${n}`;
+  return title;
+}
+
+/** Price pill on the right axis. Same formatting as the value in the Muster card. */
+export function levelPriceTag(eur) {
+  const value = Number(eur);
+  if (!Number.isFinite(value)) return "";
+  return formatEUR(value);
+}
+
 export function levelMarkLabel(kind, stats) {
   const name = guideStyle(kind)?.label || "";
   if (kind !== "support" && kind !== "resistance") return "";

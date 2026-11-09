@@ -1,4 +1,4 @@
-const CACHE = "jgtr-v30";
+const CACHE = "jgtr-v31";
 const CORE = [
   "",
   "index.html",
@@ -14,6 +14,7 @@ const CORE = [
   "js/analyse.js",
   "js/candle-chart.js",
   "js/analyse-view.js",
+  "js/daypath.js",
   "js/seasonality.js",
   "js/nav.js",
   "js/views.js",

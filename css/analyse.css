@@ -29,6 +29,43 @@
   margin: 0;
   font-size: 13px;
 }
+.daypaths h3 {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+}
+.daypath-lead {
+  margin: 4px 0 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+.daypath + .daypath { margin-top: 8px; }
+.daypath-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.daypath-head strong { font-size: 14px; letter-spacing: -0.02em; }
+.daypath-head .path-end {
+  font-variant-numeric: tabular-nums;
+  font-weight: 680;
+  font-size: 14px;
+}
+.daypath-head .path-end.up { color: #3ddc84; }
+.daypath-head .path-end.down { color: #ff5d6c; }
+.daypath-head .path-end.flat { color: var(--muted); }
+.daypath-head .path-n {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.daypath-chart {
+  width: 100%;
+  height: 72px;
+  display: block;
+}
 .tabbar { grid-template-columns: repeat(7, minmax(0, 1fr)); }
 .tab {
   font-size: 9px;

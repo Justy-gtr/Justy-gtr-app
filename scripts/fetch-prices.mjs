@@ -244,13 +244,15 @@ async function loadFourHour(symbol, options) {
 }
 
 function slimEurBar(bar) {
-  return {
+  const row = {
     t: bar.t,
     eur: bar.eur,
     open: bar.open,
     high: bar.high,
     low: bar.low
   };
+  if (bar.session) row.session = bar.session;
+  return row;
 }
 
 async function loadFiveMinute(symbol, options) {
@@ -258,6 +260,21 @@ async function loadFiveMinute(symbol, options) {
   const bars = eurBars(chart.points, options).map(slimEurBar);
   const trimmed = keepTradingDays(bars, 3);
   if (trimmed.length < 2) throw new Error("5m zu kurz");
+  return trimmed;
+}
+
+/** About ten sessions of 60-minute bars. Pre and post stay in when the source has them. */
+async function loadHourly(symbol, options) {
+  let chart;
+  try {
+    chart = await fetchChart(symbol, "60m", "1mo", { includePrePost: true });
+  } catch (error) {
+    chart = await fetchChart(symbol, "60m", "1mo");
+  }
+  const tagged = tagSessions(chart.points, chart.periods, { clock: true });
+  const bars = eurBars(tagged, options).map(slimEurBar);
+  const trimmed = keepTradingDays(bars, 10);
+  if (trimmed.length < 8) throw new Error("1H zu kurz");
   return trimmed;
 }
 
@@ -274,6 +291,23 @@ async function loadFiveMinuteHistory(spec, { useEur, eurSymbol, intradayMethod, 
       return await loadFiveMinute(symbol, options);
     } catch (error) {
       console.log(`::warning::5m ${symbol}: ${error.message}`);
+    }
+  }
+  return null;
+}
+
+async function loadHourlyHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx }) {
+  const preferEur = Boolean(useEur && eurSymbol && intradayMethod !== "usd_div_eurusd");
+  const usdOptions = { fx, spot: fx.rate, direct: false };
+  const attempts = preferEur
+    ? [[eurSymbol, barOptions], [spec.usdSymbol, usdOptions]]
+    : [[spec.usdSymbol, usdOptions]];
+  if (!preferEur && useEur && eurSymbol) attempts.push([eurSymbol, barOptions]);
+  for (const [symbol, options] of attempts) {
+    try {
+      return await loadHourly(symbol, options);
+    } catch (error) {
+      console.log(`::warning::1H ${symbol}: ${error.message}`);
     }
   }
   return null;
@@ -326,7 +360,7 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
     : (useEur ? roundTo(prevRaw, 2) : roundTo(usdToEur(prevRaw, fx.rate), 2));
   const changePct = spotEur != null && prevEur ? roundTo(((spotEur - prevEur) / prevEur) * 100, 2) : null;
 
-  const history = { intraday: [], "5m": [], "4H": [], "1M": [], "6M": [], "1Y": [], "5Y": [] };
+  const history = { intraday: [], "5m": [], "1H": [], "4H": [], "1M": [], "6M": [], "1Y": [], "5Y": [] };
   let intradayMethod = method;
 
   let euIntra = null;
@@ -392,6 +426,9 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
   const five = await loadFiveMinuteHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx });
   history["5m"] = five || previous?.history?.["5m"] || [];
 
+  const hourly = await loadHourlyHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx });
+  history["1H"] = hourly || previous?.history?.["1H"] || [];
+
   if (history["1M"].length && spotEur != null) {
     const last = history["1M"][history["1M"].length - 1];
     last.eur = roundTo(spotEur, 2);
@@ -452,7 +489,7 @@ export async function buildPrices(previous, now = new Date()) {
       const fresh = await loadTicker(spec, fx, prevTickers.get(spec.symbol), now);
       tickers.push(mergeTicker(prevTickers.get(spec.symbol), fresh));
       okCount += 1;
-      console.log(`${spec.symbol} ${fresh.priceEur} EUR ${fresh.changePct}% via ${fresh.eurMethod} ${fresh.eurSymbol || fresh.usdSymbol} overnight=${fresh.overnightPhase || "-"} ${fresh.overnightEur ?? "-"} 5m=${fresh.history["5m"]?.length || 0}`);
+      console.log(`${spec.symbol} ${fresh.priceEur} EUR ${fresh.changePct}% via ${fresh.eurMethod} ${fresh.eurSymbol || fresh.usdSymbol} overnight=${fresh.overnightPhase || "-"} ${fresh.overnightEur ?? "-"} 5m=${fresh.history["5m"]?.length || 0} 1H=${fresh.history["1H"]?.length || 0}`);
     } catch (error) {
       console.log(`::warning::${spec.symbol}: ${error.message}`);
       tickers.push(failedTicker(prevTickers.get(spec.symbol), spec.symbol, spec.name, error.message));
@@ -547,6 +584,7 @@ async function main() {
         points: ticker.history["1M"].length,
         intraday: ticker.history.intraday.length,
         fiveM: ticker.history["5m"]?.length || 0,
+        oneH: ticker.history["1H"]?.length || 0,
         fourH: ticker.history["4H"]?.length || 0
       })),
       alerts: nextAlerts.alerts.map((alert) => ({ id: alert.id, changePct: alert.changePct, notified: alert.notified }))

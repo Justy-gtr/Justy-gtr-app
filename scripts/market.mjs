@@ -60,7 +60,7 @@ export function failedTicker(prev, symbol, name, message) {
     fetchError: message,
     priceEur: null,
     changePct: null,
-    history: { intraday: [], "5m": [], "4H": [], "1M": [], "6M": [], "1Y": [], "5Y": [] },
+    history: { intraday: [], "5m": [], "1H": [], "4H": [], "1M": [], "6M": [], "1Y": [], "5Y": [] },
     sparkline: [],
     sources: []
   };

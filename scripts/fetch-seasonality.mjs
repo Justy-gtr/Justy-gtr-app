@@ -17,6 +17,7 @@ import {
   slotIsEarly
 } from "../js/seasonality.js";
 import { MIN_CASES } from "../js/analysis.js";
+import { weekdayPathsMerged } from "../js/daypath.js";
 import { fetchChart, TICKERS } from "./fetch-prices.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
@@ -89,16 +90,50 @@ async function loadEarly(spec) {
   return { ...early, symbol: usesGerman ? best?.symbol || null : null };
 }
 
+function pointsOf(chart) {
+  return (chart?.points || []).map((point) => ({
+    t: point.t,
+    eur: Number(point.close)
+  })).filter((point) => point.t && Number.isFinite(point.eur) && point.eur > 0);
+}
+
+/** Long intraday path. German morning when it exists, otherwise the US series. Percent, so each listing stays in its own price. */
+async function loadDayPaths(spec) {
+  const symbols = spec.earlySymbols?.length ? spec.earlySymbols : (spec.eurSymbols || []);
+  let german = [];
+  for (const symbol of symbols) {
+    const hourly = await tryChart(symbol, "60m", "2y");
+    const half = await tryChart(symbol, "30m", "60d");
+    const rows = [
+      ...(hourly?.currency === "EUR" ? pointsOf(hourly) : []),
+      ...(half?.currency === "EUR" ? pointsOf(half) : [])
+    ];
+    if (!rows.length) continue;
+    german = rows;
+    break;
+  }
+  const usHourly = await tryChart(spec.usdSymbol, "60m", "2y", { includePrePost: true });
+  const usHalf = await tryChart(spec.usdSymbol, "30m", "60d", { includePrePost: true });
+  return weekdayPathsMerged(german, [...pointsOf(usHourly), ...pointsOf(usHalf)]);
+}
+
 async function loadSymbol(spec, now) {
   const daily = await fetchChart(spec.usdSymbol, "1d", "2y");
   const hours = await fetchChart(spec.usdSymbol, "60m", "2y", { includePrePost: false });
   const regular = collectSlotBars(barsOf(hours), 60, "us").filter((bar) => !slotIsEarly(bar.slot));
   const early = await loadEarly(spec);
+  let dayPaths = null;
+  try {
+    dayPaths = await loadDayPaths(spec);
+  } catch (error) {
+    console.log(`::warning::Tagesverlauf ${spec.symbol}: ${error.message}`);
+  }
   return {
     germanSymbol: early.symbol,
     pack: {
       name: spec.name,
       earlyNote: early.note,
+      dayPaths,
       ranges: buildWindows(
         keepSettledDaily(barsOf(daily), now),
         keepSettledHours([...regular, ...early.bars], now)

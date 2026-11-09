@@ -100,10 +100,11 @@ test("1T nimmt die letzte Sitzung aus 5m und dem Minutenkurs", () => {
   assert.equal(candles.candles.at(-1).close, 215);
   assert.match(scrubLabel(candles.candles[0], candles.candles[0].close, candles.candles), /Mo 09\.11\. · 15:30–15:35/);
 
-  const three = seriesFor(ticker, "3T");
-  assert.ok(three.points.length > points.length);
-  assert.equal(three.points.some((point) => point.eur === 50), true);
-  assert.equal(seriesIsSubDaily(three.points), true);
+  const hours = seriesFor(ticker, "1 Std");
+  assert.equal(hours.range, "1 Std");
+  assert.ok(hours.points.some((point) => point.t.startsWith("2026-11-06")));
+  assert.ok(hours.points.some((point) => point.t.startsWith("2026-11-09")));
+  assert.equal(seriesIsSubDaily(hours.points), true);
 
   const dailyOnly = {
     history: {
@@ -115,9 +116,9 @@ test("1T nimmt die letzte Sitzung aus 5m und dem Minutenkurs", () => {
       intraday: [{ t: "2026-11-09T14:30:00.000Z", eur: 9 }]
     }
   };
-  assert.equal(seriesFor(dailyOnly, "3T").points.length, 3);
-  assert.equal(seriesFor(dailyOnly, "3T").points.at(-1).eur, 6);
+  assert.equal(seriesFor(dailyOnly, "1 Std").points.length, 1);
+  assert.equal(seriesFor(dailyOnly, "1 Std").points[0].eur, 9);
   assert.equal(seriesFor(dailyOnly, "1T").points.length, 1);
   assert.equal(seriesFor(dailyOnly, "1T").points[0].eur, 6);
-  assert.equal(/\d{2}:\d{2}/.test(formatScrubWhen(dailyOnly.history["1M"][2].t, seriesFor(dailyOnly, "3T").points)), false);
+  assert.equal(/\d{2}:\d{2}/.test(formatScrubWhen(dailyOnly.history["1M"][2].t, seriesFor(dailyOnly, "1 Std").points)), false);
 });

@@ -105,7 +105,7 @@ test("Stütz-Berührungen: gleiche Strecke für Abpraller und Bruch", () => {
 
 test("Echte Reihen erfinden keine Prozentzahl und keinen Rat", () => {
   const prices = JSON.parse(fs.readFileSync("data/prices.json", "utf8"));
-  const ranges = ["5 Min", "15 Min", "4 Std", "1T", "3T", "1W", "1M", "6M", "1J", "Max"];
+  const ranges = ["5 Min", "15 Min", "4 Std", "1T", "1 Std", "1W", "1M", "6M", "1J", "Max"];
   for (const ticker of prices.tickers) {
     for (const range of ranges) {
       const result = chartAnalysis(ticker, range);

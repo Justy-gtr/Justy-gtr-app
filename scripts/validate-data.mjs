@@ -104,6 +104,16 @@ if (prices) {
         if (Number.isFinite(span) && span > 10 * 86400000) fail(`${label}.history.5m länger als zehn Tage`);
       }
     }
+    const hour = ticker.history?.["1H"];
+    if (hour != null) {
+      if (!Array.isArray(hour)) fail(`${label}.history.1H`);
+      if (hour.length > 400) fail(`${label}.history.1H zu lang`);
+      for (const point of hour) barOk(point, `${label}.history.1H`);
+      if (hour.length >= 2) {
+        const span = Date.parse(hour.at(-1).t) - Date.parse(hour[0].t);
+        if (Number.isFinite(span) && span > 24 * 86400000) fail(`${label}.history.1H länger als 24 Tage`);
+      }
+    }
     const four = ticker.history?.["4H"];
     if (four != null) {
       if (!Array.isArray(four)) fail(`${label}.history.4H`);
@@ -335,6 +345,15 @@ if (seasonality) {
     }
     const notes = new Set([EARLY_NOTE_DE, EARLY_NOTE_US, EARLY_NOTE_MIX]);
     if (pack.earlyNote != null && !notes.has(pack.earlyNote)) fail(`seasonality.${symbol}.earlyNote`);
+    if (pack.dayPaths) {
+      const paths = pack.dayPaths;
+      const label = `seasonality.${symbol}.dayPaths`;
+      if (!Array.isArray(paths.days) || paths.days.length !== 5) fail(`${label}.days`);
+      (paths.days || []).forEach((day, index) => {
+        if (!day || !Number.isInteger(day.n) || day.n < 0) fail(`${label}.days.${index}.n`);
+        if (!Array.isArray(day.points)) fail(`${label}.days.${index}.points`);
+      });
+    }
   }
 }
 

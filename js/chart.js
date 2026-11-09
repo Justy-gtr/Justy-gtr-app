@@ -1,5 +1,4 @@
-import { chartAnalysis } from "./analysis.js";
-import { chartAxisLabels, formatScrubWhen, guideLabelsToDraw, guideStyle, scrubDelta, seriesFor } from "./logic.js";
+import { chartAxisLabels, formatScrubWhen, guideLabelsToDraw, guideStyle, instrumentAxisLabels, instrumentSeries, scrubDelta, seriesFor } from "./logic.js";
 
 function hexAlpha(hex, alpha) {
   const value = hex.replace("#", "");
@@ -87,6 +86,75 @@ function chartLayout(width, height, points, axes) {
   const first = new Date(points[0].t).getTime();
   const last = new Date(points.at(-1).t).getTime();
   return { padL, padR, padT, padB, min, max, plotW, plotH, coords, spanMs: Math.abs(last - first) || 0 };
+}
+
+function paintInstrument(canvas, state, hover) {
+  const { color, width, height, layout } = state;
+  const ctx = canvas.getContext("2d");
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = Math.round(width * dpr);
+  canvas.height = Math.round(height * dpr);
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, width, height);
+  const { coords, min, max, padT, padB, padL, plotW, plotH } = layout;
+  const baseline = coords[0].y;
+  ctx.save();
+  ctx.strokeStyle = "rgba(255,255,255,.28)";
+  ctx.lineWidth = 1;
+  ctx.setLineDash([1.5, 3]);
+  ctx.beginPath();
+  ctx.moveTo(padL, baseline);
+  ctx.lineTo(padL + plotW, baseline);
+  ctx.stroke();
+  ctx.restore();
+
+  ctx.beginPath();
+  coords.forEach((coord, index) => (index ? ctx.lineTo(coord.x, coord.y) : ctx.moveTo(coord.x, coord.y)));
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 2.25;
+  ctx.lineJoin = "round";
+  ctx.lineCap = "round";
+  ctx.setLineDash([]);
+  ctx.stroke();
+
+  ctx.font = "10px -apple-system, BlinkMacSystemFont, sans-serif";
+  ctx.fillStyle = "#8b93a6";
+  ctx.textAlign = "right";
+  ctx.textBaseline = "middle";
+  const ticks = 4;
+  for (let index = 0; index < ticks; index += 1) {
+    const value = max - ((max - min) * index) / (ticks - 1);
+    const y = padT + (plotH * index) / (ticks - 1);
+    ctx.fillText(formatEuroAxis(value), width - 2, y);
+  }
+  const marks = instrumentAxisLabels(coords.map((coord) => coord.point));
+  ctx.textBaseline = "bottom";
+  ctx.fillStyle = "#8b93a6";
+  marks.forEach((mark, index) => {
+    const coord = coords[mark.index];
+    if (!coord) return;
+    if (index === 0) ctx.textAlign = "left";
+    else if (index === marks.length - 1) ctx.textAlign = "right";
+    else ctx.textAlign = "center";
+    const x = index === marks.length - 1 ? Math.min(coord.x, padL + plotW) : Math.max(coord.x, padL);
+    ctx.fillText(mark.text, x, height - 2);
+  });
+
+  const focus = hover || coords.at(-1);
+  ctx.beginPath();
+  ctx.arc(focus.x, focus.y, hover ? 4 : 3, 0, Math.PI * 2);
+  ctx.fillStyle = color;
+  ctx.fill();
+  if (hover) {
+    ctx.setLineDash([2, 3]);
+    ctx.strokeStyle = "rgba(244,241,234,.45)";
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(hover.x, padT);
+    ctx.lineTo(hover.x, height - padB);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
 }
 
 function paintChart(canvas, state, hover) {
@@ -288,7 +356,8 @@ function bindScrub(canvas) {
         nearest = coord;
       }
     }
-    paintChart(canvas, state, nearest);
+    if (state.instrument) paintInstrument(canvas, state, nearest);
+    else paintChart(canvas, state, nearest);
     showScrub(canvas, nearest, state.layout);
   };
   const end = () => {
@@ -296,7 +365,10 @@ function bindScrub(canvas) {
     active = false;
     clearChartSelection();
     const state = canvas._chartState;
-    if (state) paintChart(canvas, state, null);
+    if (state) {
+      if (state.instrument) paintInstrument(canvas, state, null);
+      else paintChart(canvas, state, null);
+    }
     hideScrub(canvas);
   };
   const touchPoint = (event) => event.touches[0] || event.changedTouches[0];
@@ -339,7 +411,7 @@ function bindScrub(canvas) {
   canvas.addEventListener("touchcancel", end);
 }
 
-export function drawLineChart(canvas, points, { color = "#e4b15a", axes = false, scrub = false, lines = [] } = {}) {
+export function drawLineChart(canvas, points, { color = "#e4b15a", axes = false, scrub = false, lines = [], instrument = false } = {}) {
   if (!canvas) return;
   const width = canvas.clientWidth || 320;
   const height = canvas.clientHeight || 180;
@@ -359,10 +431,11 @@ export function drawLineChart(canvas, points, { color = "#e4b15a", axes = false,
     canvas._chartState = null;
     return;
   }
-  const layout = chartLayout(width, height, usable, axes);
-  const state = { color, width, height, layout, axes, lines: lines || [] };
+  const layout = chartLayout(width, height, usable, axes || instrument);
+  const state = { color, width, height, layout, axes: axes || instrument, lines: instrument ? [] : (lines || []), instrument };
   canvas._chartState = state;
-  paintChart(canvas, state, null);
+  if (instrument) paintInstrument(canvas, state, null);
+  else paintChart(canvas, state, null);
   if (scrub) bindScrub(canvas);
   else hideScrub(canvas);
 }
@@ -372,13 +445,15 @@ export function drawCharts(data, ui) {
     const kind = canvas.dataset.chart;
     if (kind === "price") {
       const ticker = (data.prices?.tickers || []).find((item) => item.symbol === (canvas.dataset.symbol || ui.chartSymbol));
-      const { points } = seriesFor(ticker, ui.chartRange, ui.langfrist);
+      const picked = ui.langfrist
+        ? seriesFor(ticker, ui.chartRange, true)
+        : instrumentSeries(ticker, ui.chartRange);
+      const points = picked.points || [];
       const first = Number(points[0]?.eur);
       const last = Number(points.at(-1)?.eur);
       const falling = points.length > 1 && last < first;
-      const color = ui.langfrist ? "#e4b15a" : (falling ? "#ff5d6c" : "#3ddea0");
-      const lines = chartAnalysis(ticker, ui.chartRange, ui.langfrist).lines;
-      drawLineChart(canvas, points, { color, axes: true, scrub: true, lines });
+      const color = falling ? "#ff5d6c" : "#3ddc84";
+      drawLineChart(canvas, points, { color, axes: true, scrub: true, instrument: true });
     } else if (kind === "prod") {
       const series = (data.production?.series || []).find((item) => item.id === canvas.dataset.series);
       drawLineChart(canvas, (series?.points || []).map((point) => ({ t: point.date, eur: point.value })), { color: "#e4b15a" });
