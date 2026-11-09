@@ -4,9 +4,9 @@
   "asOf": "2026-11-09T18:39:56+01:00",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.121,
+    "rate": 1.1206,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-09T18:39:31+01:00",
+    "asOf": "2026-11-09T18:53:32+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -565,5 +565,477 @@
         "url": "https://finance.yahoo.com/quote/MRVL"
       }
     }
-  ]
+  ],
+  "nearTerm": {
+    "pickedOn": "2026-11-09",
+    "window": 3,
+    "expanded": false,
+    "from": "2026-11-09",
+    "to": "2026-11-12",
+    "includesToday": true,
+    "note": "Fenster: heute und die nächsten 3 Handelstage, bis 12. November 2026.",
+    "tradingDays": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "asOf": "2026-11-09T18:54:00+01:00",
+    "sources": [
+      {
+        "title": "Nasdaq: Zahlentermine",
+        "url": "https://www.nasdaq.com/market-activity/earnings"
+      },
+      {
+        "title": "Wikipedia: List of NASDAQ-100 companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "mara-2026-11-09",
+        "symbol": "MARA",
+        "name": "MARA Holdings",
+        "usdSymbol": "MARA",
+        "daysAway": 0,
+        "for": [
+          "Der Termin liegt heute.",
+          "In 8 früheren Quartalen lag die Bewegung am Folgetag 3 Mal bei mindestens +5 %."
+        ],
+        "against": [
+          "In denselben 8 Quartalen lag die Bewegung am Folgetag 3 Mal bei mindestens −5 %.",
+          "Das sind frühere Termine. Keine Vorhersage."
+        ],
+        "catalyst": {
+          "label": "Zahlen",
+          "date": "2026-11-09",
+          "time": null,
+          "timezone": "Europe/Berlin",
+          "session": "amc",
+          "detail": "Nasdaq: nachbörslich. Die Uhr ist der US-Schluss in Berliner Zeit."
+        },
+        "pastCatalysts": {
+          "kind": "earnings_after_close",
+          "dates": [
+            "2024-11-12",
+            "2025-02-26",
+            "2025-05-08",
+            "2025-07-29",
+            "2025-11-04",
+            "2026-02-26",
+            "2026-05-11",
+            "2026-08-06"
+          ]
+        },
+        "history": {
+          "catalystLabel": "Am Folgetag",
+          "note": "Schluss am Zahlentag bis zum nächsten Handelstag.",
+          "from": "2024-09-30",
+          "to": "2026-11-09",
+          "catalyst": {
+            "n": 8,
+            "up": 3,
+            "down": 3,
+            "showPct": true
+          },
+          "moves": [
+            {
+              "date": "2024-11-12",
+              "base": "2024-11-12",
+              "reaction": "2024-11-13",
+              "pct": -13.99
+            },
+            {
+              "date": "2025-02-26",
+              "base": "2025-02-26",
+              "reaction": "2025-02-27",
+              "pct": 5.46
+            },
+            {
+              "date": "2025-05-08",
+              "base": "2025-05-08",
+              "reaction": "2025-05-09",
+              "pct": 10.29
+            },
+            {
+              "date": "2025-07-29",
+              "base": "2025-07-29",
+              "reaction": "2025-07-30",
+              "pct": -0.36
+            },
+            {
+              "date": "2025-11-04",
+              "base": "2025-11-04",
+              "reaction": "2025-11-05",
+              "pct": 3.07
+            },
+            {
+              "date": "2026-02-26",
+              "base": "2026-02-26",
+              "reaction": "2026-02-27",
+              "pct": 5.8
+            },
+            {
+              "date": "2026-05-11",
+              "base": "2026-05-11",
+              "reaction": "2026-05-12",
+              "pct": -5
+            },
+            {
+              "date": "2026-08-06",
+              "base": "2026-08-06",
+              "reaction": "2026-08-07",
+              "pct": -5.26
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Nasdaq: Zahlentermine am 9. November 2026",
+            "url": "https://www.nasdaq.com/market-activity/earnings"
+          },
+          {
+            "title": "Historische Zahlentermine MARA",
+            "url": "https://www.historicalearnings.com/mara.html"
+          },
+          {
+            "title": "Universum mit verbreiteten Knock-outs",
+            "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
+          }
+        ],
+        "priceUsd": 6.54,
+        "priceEur": 5.84,
+        "previousCloseUsd": 6.35,
+        "changePct": 2.99,
+        "eurMethod": "usd_div_eurusd",
+        "sparkline": [
+          9.25,
+          8.84,
+          8.61,
+          8.46,
+          8.13,
+          7.35,
+          7.43,
+          6.72,
+          6.58,
+          6.66,
+          6.93,
+          6.46,
+          6.26,
+          6.1,
+          6.35,
+          6.6,
+          6.43,
+          6.05,
+          5.76,
+          6.4,
+          6.13,
+          5.23,
+          5.66,
+          5.84
+        ],
+        "asOf": "2026-11-09T18:54:00+01:00",
+        "marketSource": {
+          "title": "Yahoo Finance MARA",
+          "url": "https://finance.yahoo.com/quote/MARA"
+        }
+      },
+      {
+        "id": "hims-2026-11-09",
+        "symbol": "HIMS",
+        "name": "Hims & Hers",
+        "usdSymbol": "HIMS",
+        "daysAway": 0,
+        "for": [
+          "Der Termin liegt heute.",
+          "In 8 früheren Quartalen lag die Bewegung am Folgetag 1 Mal bei mindestens +5 %."
+        ],
+        "against": [
+          "In denselben 8 Quartalen lag die Bewegung am Folgetag 3 Mal bei mindestens −5 %.",
+          "Das sind frühere Termine. Keine Vorhersage."
+        ],
+        "catalyst": {
+          "label": "Zahlen",
+          "date": "2026-11-09",
+          "time": null,
+          "timezone": "Europe/Berlin",
+          "session": "amc",
+          "detail": "Nasdaq: nachbörslich. Die Uhr ist der US-Schluss in Berliner Zeit."
+        },
+        "pastCatalysts": {
+          "kind": "earnings_after_close",
+          "dates": [
+            "2024-11-04",
+            "2025-02-24",
+            "2025-05-05",
+            "2025-08-04",
+            "2025-11-03",
+            "2026-02-23",
+            "2026-05-11",
+            "2026-08-10"
+          ]
+        },
+        "history": {
+          "catalystLabel": "Am Folgetag",
+          "note": "Schluss am Zahlentag bis zum nächsten Handelstag.",
+          "from": "2024-09-30",
+          "to": "2026-11-09",
+          "catalyst": {
+            "n": 8,
+            "up": 1,
+            "down": 3,
+            "showPct": true
+          },
+          "moves": [
+            {
+              "date": "2024-11-04",
+              "base": "2024-11-04",
+              "reaction": "2024-11-05",
+              "pct": -0.58
+            },
+            {
+              "date": "2025-02-24",
+              "base": "2025-02-24",
+              "reaction": "2025-02-25",
+              "pct": -22.32
+            },
+            {
+              "date": "2025-05-05",
+              "base": "2025-05-05",
+              "reaction": "2025-05-06",
+              "pct": 18.12
+            },
+            {
+              "date": "2025-08-04",
+              "base": "2025-08-04",
+              "reaction": "2025-08-05",
+              "pct": -12.36
+            },
+            {
+              "date": "2025-11-03",
+              "base": "2025-11-03",
+              "reaction": "2025-11-04",
+              "pct": -3.6
+            },
+            {
+              "date": "2026-02-23",
+              "base": "2026-02-23",
+              "reaction": "2026-02-24",
+              "pct": -0.32
+            },
+            {
+              "date": "2026-05-11",
+              "base": "2026-05-11",
+              "reaction": "2026-05-12",
+              "pct": -14.1
+            },
+            {
+              "date": "2026-08-10",
+              "base": "2026-08-10",
+              "reaction": "2026-08-11",
+              "pct": -3.97
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Nasdaq: Zahlentermine am 9. November 2026",
+            "url": "https://www.nasdaq.com/market-activity/earnings"
+          },
+          {
+            "title": "Historische Zahlentermine HIMS",
+            "url": "https://www.historicalearnings.com/hims.html"
+          },
+          {
+            "title": "Universum mit verbreiteten Knock-outs",
+            "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
+          }
+        ],
+        "priceUsd": 23.61,
+        "priceEur": 21.07,
+        "previousCloseUsd": 26,
+        "changePct": -9.2,
+        "eurMethod": "usd_div_eurusd",
+        "sparkline": [
+          26.37,
+          25.02,
+          27.58,
+          27.45,
+          26.52,
+          24.76,
+          26.2,
+          25.03,
+          25.1,
+          26.02,
+          26,
+          25.96,
+          24.69,
+          24.6,
+          24.99,
+          26.34,
+          26.6,
+          24.75,
+          22.62,
+          22.96,
+          23.79,
+          21.42,
+          23.16,
+          21.07
+        ],
+        "asOf": "2026-11-09T18:53:57+01:00",
+        "marketSource": {
+          "title": "Yahoo Finance HIMS",
+          "url": "https://finance.yahoo.com/quote/HIMS"
+        }
+      },
+      {
+        "id": "ceg-2026-11-09",
+        "symbol": "CEG",
+        "name": "Constellation Energy",
+        "usdSymbol": "CEG",
+        "daysAway": 0,
+        "for": [
+          "Der Termin liegt heute.",
+          "In 8 früheren Quartalen lag die Bewegung am Zahlentag 2 Mal bei mindestens +5 %."
+        ],
+        "against": [
+          "In denselben 8 Quartalen lag die Bewegung am Zahlentag 1 Mal bei mindestens −5 %.",
+          "Das sind frühere Termine. Keine Vorhersage."
+        ],
+        "catalyst": {
+          "label": "Zahlen",
+          "date": "2026-11-09",
+          "time": null,
+          "timezone": "Europe/Berlin",
+          "session": "bmo",
+          "detail": "Nasdaq: vorbörslich. Die Uhr ist die US-Eröffnung in Berliner Zeit."
+        },
+        "pastCatalysts": {
+          "kind": "earnings_before_open",
+          "dates": [
+            "2024-11-04",
+            "2025-02-18",
+            "2025-05-06",
+            "2025-08-07",
+            "2025-11-07",
+            "2026-02-24",
+            "2026-05-11",
+            "2026-08-06"
+          ]
+        },
+        "history": {
+          "catalystLabel": "Am Zahlentag",
+          "note": "Schluss am Vortag bis zum Schluss am Zahlentag. Frühere Termine sind wie der nächste vor der Eröffnung gezählt.",
+          "from": "2024-09-30",
+          "to": "2026-11-09",
+          "catalyst": {
+            "n": 8,
+            "up": 2,
+            "down": 1,
+            "showPct": true
+          },
+          "moves": [
+            {
+              "date": "2024-11-04",
+              "base": "2024-11-01",
+              "reaction": "2024-11-04",
+              "pct": -12.46
+            },
+            {
+              "date": "2025-02-18",
+              "base": "2025-02-14",
+              "reaction": "2025-02-18",
+              "pct": 2.62
+            },
+            {
+              "date": "2025-05-06",
+              "base": "2025-05-05",
+              "reaction": "2025-05-06",
+              "pct": 10.29
+            },
+            {
+              "date": "2025-08-07",
+              "base": "2025-08-06",
+              "reaction": "2025-08-07",
+              "pct": -0.61
+            },
+            {
+              "date": "2025-11-07",
+              "base": "2025-11-06",
+              "reaction": "2025-11-07",
+              "pct": 2.02
+            },
+            {
+              "date": "2026-02-24",
+              "base": "2026-02-23",
+              "reaction": "2026-02-24",
+              "pct": 6.41
+            },
+            {
+              "date": "2026-05-11",
+              "base": "2026-05-08",
+              "reaction": "2026-05-11",
+              "pct": -1.3
+            },
+            {
+              "date": "2026-08-06",
+              "base": "2026-08-05",
+              "reaction": "2026-08-06",
+              "pct": -1.52
+            }
+          ]
+        },
+        "sources": [
+          {
+            "title": "Nasdaq: Zahlentermine am 9. November 2026",
+            "url": "https://www.nasdaq.com/market-activity/earnings"
+          },
+          {
+            "title": "Historische Zahlentermine CEG",
+            "url": "https://www.historicalearnings.com/ceg.html"
+          },
+          {
+            "title": "Universum mit verbreiteten Knock-outs",
+            "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
+          }
+        ],
+        "priceUsd": 273.94,
+        "priceEur": 244.46,
+        "previousCloseUsd": 249.95,
+        "changePct": 9.6,
+        "eurMethod": "usd_div_eurusd",
+        "sparkline": [
+          267.46,
+          254.23,
+          265.82,
+          263.34,
+          263.99,
+          249.7,
+          245.25,
+          242.01,
+          234.66,
+          230.56,
+          240.99,
+          227.43,
+          225.86,
+          225.08,
+          231.77,
+          231.88,
+          237.17,
+          234.63,
+          230.58,
+          235.35,
+          219.25,
+          213.31,
+          222.61,
+          244.46
+        ],
+        "asOf": "2026-11-09T18:53:50+01:00",
+        "marketSource": {
+          "title": "Yahoo Finance CEG",
+          "url": "https://finance.yahoo.com/quote/CEG"
+        }
+      }
+    ]
+  }
 }

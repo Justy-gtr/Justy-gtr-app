@@ -65,7 +65,8 @@ function earlyScore(bars) {
 
 async function loadEarly(spec) {
   const german = [];
-  for (const symbol of spec.eurSymbols) {
+  const symbols = spec.earlySymbols?.length ? spec.earlySymbols : spec.eurSymbols;
+  for (const symbol of symbols) {
     const hourly = await tryChart(symbol, "60m", "2y");
     const half = await tryChart(symbol, "30m", "60d");
     const bars = [

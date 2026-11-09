@@ -56,6 +56,35 @@ export function formatPct(value) {
   return `${body} %`;
 }
 
+/**
+ * Vorbörslich oder nachbörslich als Berliner Uhr.
+ * Vorbörse endet mit der US-Eröffnung 9:30 New York, Nachbörse beginnt mit dem US-Schluss 16:00.
+ * Die Differenz zu Berlin schwankt in den Wochen, in denen nur eine Seite Sommerzeit hat.
+ */
+export function sessionPhrase(date, session) {
+  if (session === "bmo") {
+    const open = zonedWallTime(date, "09:30", "America/New_York");
+    return open ? { word: "vorbörslich", clock: `vor ${berlinHm(open)} Uhr Berlin` } : { word: "vorbörslich", clock: "" };
+  }
+  if (session === "amc") {
+    const close = zonedWallTime(date, "16:00", "America/New_York");
+    return close ? { word: "nachbörslich", clock: `nach ${berlinHm(close)} Uhr Berlin` } : { word: "nachbörslich", clock: "" };
+  }
+  return null;
+}
+
+function berlinHm(date) {
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/Berlin",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23"
+  }).formatToParts(date);
+  const get = (type) => parts.find((part) => part.type === type)?.value || "";
+  const hour = get("hour") === "24" ? "00" : get("hour");
+  return `${hour}:${get("minute")}`;
+}
+
 /** Prozent erst ab sieben Fällen. Darunter nur n, wie bei der Saisonalität. */
 export function historySentence(label, stats, threshold = 5) {
   const n = Number(stats?.n);
@@ -1040,24 +1069,30 @@ function schwarmSignals(data) {
   return uniqSorted([...voices, ...investors, summary]);
 }
 
-/** Moonshot-Kandidaten. Der Kurs zählt nicht: der ändert sich jeden Handelstag. */
+function moonSignal(prefix, item) {
+  if (!item?.id && !item?.symbol) return "";
+  return [
+    prefix,
+    item.id || "",
+    item.symbol || "",
+    item.catalyst?.date || "",
+    item.catalyst?.session || "",
+    item.catalyst?.label || "",
+    (item.for || []).join("|"),
+    (item.against || []).join("|")
+  ].join("\u001f");
+}
+
+/** Feste Moonshots und die kurzfristige Auswahl. Der Kurs zählt nicht: der ändert sich jeden Handelstag. */
 function mehrSignals(data) {
-  return uniqSorted((data?.moonshots?.candidates || []).map((item) => {
-    if (!item?.id) return "";
-    return [
-      "moonshot",
-      item.id,
-      item.catalyst?.date || "",
-      item.catalyst?.label || "",
-      (item.for || []).join("|"),
-      (item.against || []).join("|")
-    ].join("\u001f");
-  }));
+  const long = (data?.moonshots?.candidates || []).map((item) => moonSignal("moonshot", item));
+  const near = (data?.moonshots?.nearTerm?.candidates || []).map((item) => moonSignal("kurzfristig", item));
+  return uniqSorted([...long, ...near]);
 }
 
 /**
  * What can light a tab dot. Charts stay empty: a moving price is not new content.
- * Mehr lights when a Moonshot text or its date is new.
+ * Mehr lights when a Moonshot text, its date, or the short-term set is new.
  */
 export function tabSignals(data, store) {
   return {
@@ -1239,14 +1274,35 @@ function zonedClock(date, timeZone) {
     weekday: "short",
     hour: "2-digit",
     minute: "2-digit",
+    second: "2-digit",
     hourCycle: "h23"
   });
   const parts = Object.fromEntries(fmt.formatToParts(date).map((part) => [part.type, part.value]));
+  const hour = parts.hour === "24" ? 0 : Number(parts.hour);
   return {
-    hour: Number(parts.hour),
+    hour,
     minute: Number(parts.minute),
+    second: Number(parts.second),
     weekday: WEEKDAY_INDEX[parts.weekday]
   };
+}
+
+/** HH:MM:SS in Europe/Berlin. Digits only, so the width stays put. */
+export function berlinClockText(date = new Date()) {
+  const clock = zonedClock(date, "Europe/Berlin");
+  const pad = (value) => String(value).padStart(2, "0");
+  return `${pad(clock.hour)}:${pad(clock.minute)}:${pad(clock.second)}`;
+}
+
+/** US cash session from the New York clock. No network. */
+export function usSessionWord(date = new Date()) {
+  const ny = zonedClock(date, "America/New_York");
+  if (ny.weekday == null || ny.weekday > 4) return "geschlossen";
+  const minutes = ny.hour * 60 + ny.minute;
+  if (minutes >= 4 * 60 && minutes < 9 * 60 + 30) return "vorbörslich";
+  if (minutes >= 9 * 60 + 30 && minutes < 16 * 60) return "offen";
+  if (minutes >= 16 * 60 && minutes < 20 * 60) return "nachbörslich";
+  return "geschlossen";
 }
 
 /**

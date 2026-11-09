@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
-import { historySentence } from "../js/logic.js";
+import { historySentence, sessionPhrase, tabSignals, unreadTabs, markTabSeen } from "../js/logic.js";
 import { detailContent } from "../js/views.js";
 import { mergeCandidate } from "./fetch-moonshots.mjs";
 import { barsInWindow, catalystMoves, wideDays } from "./moonshot-stats.mjs";
@@ -66,6 +66,24 @@ test("Der Kurslauf lässt die Sätze stehen", () => {
   assert.equal(next.leverage.isin, "DE000HT5H997");
 });
 
+test("Ein neuer kurzfristiger Name zündet den Punkt, der Kurs nicht", () => {
+  const data = {
+    moonshots: {
+      candidates: [{ id: "nvda-1", symbol: "NVDA", catalyst: { date: "2026-11-17", label: "Zahlen" }, for: ["a"], against: ["b"], priceEur: 10 }],
+      nearTerm: { candidates: [{ id: "aaa-2026-11-10", symbol: "AAA", catalyst: { date: "2026-11-10", session: "amc", label: "Zahlen" }, for: ["nah"], against: ["alt"], priceEur: 20 }] }
+    }
+  };
+  const before = tabSignals(data, {}).mehr;
+  data.moonshots.nearTerm.candidates[0].priceEur = 1;
+  data.moonshots.candidates[0].priceEur = 2;
+  assert.deepEqual(tabSignals(data, {}).mehr, before);
+  data.moonshots.nearTerm.candidates[0].id = "bbb-2026-11-11";
+  assert.notDeepEqual(tabSignals(data, {}).mehr, before);
+  const store = {};
+  markTabSeen(store, data, "mehr");
+  assert.deepEqual(unreadTabs(data, store).mehr, []);
+});
+
 test("Die Seite zeigt drei Karten, den Hinweis und keine Beratung", () => {
   const file = JSON.parse(fs.readFileSync(new URL("../data/moonshots.json", import.meta.url), "utf8"));
   const html = detailContent("open-moonshots", {}, { data: { moonshots: file }, ui: {}, store: {} }).html;
@@ -81,6 +99,18 @@ test("Die Seite zeigt drei Karten, den Hinweis und keine Beratung", () => {
   assert.match(html, /Nach Zahlen: 1 von 8 Mal/);
   assert.match(html, /n = 8/);
   assert.equal(ADVICE.test(html), false);
+  assert.match(html, /Kurzfristig/);
+  assert.match(html, /Heute und die nächsten Tage/);
+  assert.match(html, /Vergangenheit, keine Vorhersage/);
+  assert.match(html, /Die drei Kandidaten/);
+  for (const item of file.nearTerm?.candidates || []) {
+    assert.match(html, new RegExp(item.symbol));
+    const phrase = sessionPhrase(item.catalyst.date, item.catalyst.session);
+    if (phrase?.word) assert.match(html, new RegExp(phrase.word));
+    if (phrase?.clock) assert.match(html, new RegExp(phrase.clock.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+    const line = historySentence(item.history.catalystLabel, item.history.catalyst);
+    assert.match(html, new RegExp(line.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
   assert.match(html, /17\. November 2026, 22:20 Uhr Berlin/);
   assert.match(html, /19\. November 2026/);
   assert.match(html, /1\. Dezember 2026, 22:30 Uhr Berlin/);

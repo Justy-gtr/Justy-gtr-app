@@ -77,14 +77,13 @@ test("Ein neuerer 5-Minuten-Punkt schlägt den Schluss, Dollar wird abgeleitet",
 });
 
 test("Hinter der Schwelle nur, wenn der letzte Kurs wirklich dahinter liegt", () => {
-  const prices = JSON.parse(fs.readFileSync(new URL("../data/prices.json", import.meta.url), "utf8"));
-  const spcx = prices.tickers.find((item) => item.symbol === "SPCX");
-  const quote = latestQuote(spcx, prices.fx.rate);
+  const spcx = JSON.parse(fs.readFileSync(new URL("./fixtures/spcx-quote.json", import.meta.url), "utf8"));
+  const quote = latestQuote(spcx, spcx.fxRate);
   assert.equal(quote.at, spcx.history.intraday.at(-1).t);
   assert.notEqual(quote.usd, spcx.priceUsd);
   assert.ok(quote.usd > 136.2);
-  assert.match(quote.label, /^vorbörslich \d{2}:\d{2}$/);
-  const alive = knockOut({ priceEur: quote.eur, rate: prices.fx.rate, barrier: "136,2", side: "long" });
+  assert.equal(quote.label, "vorbörslich 13:42");
+  const alive = knockOut({ priceEur: quote.eur, rate: spcx.fxRate, barrier: "136,2", side: "long" });
   assert.equal(alive.behind, false);
   assert.equal(warningText(alive), "Sehr nah an der Schwelle");
   const through = knockOut({ priceEur: 120, rate: 1.1191, barrier: "136,2", side: "long" });

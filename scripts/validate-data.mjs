@@ -69,7 +69,7 @@ const files = [
   "meta.json", "prices.json", "calendar.json", "posts.json", "favorites.json", "crowd.json",
   "promises.json", "production.json", "insiders.json", "briefing.json", "weekly.json",
   "daily_question.json", "glossary.json", "track_record.json", "alerts.json",
-  "scenarios.json", "companies.json", "seasonality.json", "moonshots.json"
+  "scenarios.json", "companies.json", "seasonality.json", "moonshots.json", "turbo-universe.json"
 ];
 const loaded = Object.fromEntries(files.map((name) => [name, read(name)]));
 
@@ -294,6 +294,7 @@ function cellRow(cell, label) {
     fail(`${label}.n`);
     return;
   }
+  if (!Number.isInteger(cell.up) || cell.up < 0 || cell.up > cell.n) fail(`${label}.up`);
   if (cell.n === 0) {
     if (cell.avg != null) fail(`${label}.avg`);
   } else if (typeof cell.avg !== "number" || Number.isNaN(cell.avg)) fail(`${label}.avg`);
@@ -397,6 +398,52 @@ for (const item of moon?.candidates || []) {
   walkStrings(item, (text) => {
     if (ADVICE.test(text)) fail(`${label} verbotenes Wort`);
   });
+}
+
+const near = moon?.nearTerm;
+if (!near || typeof near.note !== "string" || !near.note.trim()) fail("moonshots.nearTerm");
+if (near && near.window !== 3 && near.window !== 5) fail("moonshots.nearTerm.window");
+if (near && near.expanded !== (near.window === 5)) fail("moonshots.nearTerm.expanded");
+if (near?.expanded && !/5 Handelstage/.test(near.note)) fail("moonshots.nearTerm.note");
+if (near && !near.expanded && !/3 Handelstage/.test(near.note)) fail("moonshots.nearTerm.note");
+if (!/^\d{4}-\d{2}-\d{2}$/.test(near?.pickedOn || "")) fail("moonshots.nearTerm.pickedOn");
+if (!Array.isArray(near?.candidates) || near.candidates.length > 3) fail("moonshots.nearTerm.candidates");
+const nearSymbols = new Set();
+for (const item of near?.candidates || []) {
+  const label = `near.${item?.symbol || "?"}`;
+  if (["TSLA", "RKLB", "SPCX"].includes(item?.symbol)) fail(`${label} schon in der App`);
+  if (seenSymbols.has(item?.symbol) || nearSymbols.has(item?.symbol)) fail(`${label} doppelt`);
+  nearSymbols.add(item?.symbol);
+  if (!item?.name || !item?.id) fail(`${label}.name`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(item?.catalyst?.date || "")) fail(`${label}.date`);
+  if (item?.catalyst?.timezone !== "Europe/Berlin") fail(`${label}.timezone`);
+  if (!["bmo", "amc", "na"].includes(item?.catalyst?.session)) fail(`${label}.session`);
+  if (!Array.isArray(item?.for) || item.for.length < 2 || item.for.length > 3) fail(`${label}.for`);
+  if (!Array.isArray(item?.against) || item.against.length < 2 || item.against.length > 3) fail(`${label}.against`);
+  if (item?.leverage?.isin && !/^[A-Z]{2}[A-Z0-9]{10}$/.test(item.leverage.isin)) fail(`${label}.isin`);
+  if (typeof item?.priceEur !== "number" || typeof item?.changePct !== "number") fail(`${label}.price`);
+  sourcesOk(item?.sources, label);
+  sideRow(item?.history?.catalyst, `${label}.catalyst`, true);
+  if (!Array.isArray(item?.history?.moves) || item.history.moves.length !== item.history.catalyst.n) fail(`${label}.moves`);
+  walkStrings(item, (text) => {
+    if (ADVICE.test(text)) fail(`${label} verbotenes Wort`);
+    if (/anlageberatung/i.test(text)) fail(`${label} anlageberatung`);
+  });
+}
+if (near) sourcesOk(near.sources, "moonshots.nearTerm");
+
+const universe = loaded["turbo-universe.json"];
+if (!universe?.note || !/Knock-out|Turbos/.test(universe.note)) fail("universe.note");
+if (!Array.isArray(universe?.symbols) || universe.symbols.length < 100) fail("universe.symbols");
+sourcesOk(universe?.sources, "universe");
+const universeSymbols = new Set();
+for (const item of universe?.symbols || []) {
+  if (!/^[A-Z][A-Z0-9.]{0,7}$/.test(item?.symbol || "")) fail(`universe.${item?.symbol || "?"}`);
+  if (!item?.name) fail(`universe.${item?.symbol}.name`);
+  if (["TSLA", "RKLB", "SPCX"].includes(item?.symbol)) fail(`universe.${item.symbol} fokus`);
+  if (universeSymbols.has(item?.symbol)) fail(`universe.${item.symbol} doppelt`);
+  universeSymbols.add(item?.symbol);
+  if (item.underlyingIsin && !/^[A-Z]{2}[A-Z0-9]{10}$/.test(item.underlyingIsin)) fail(`universe.${item.symbol}.isin`);
 }
 
 const iconFiles = [

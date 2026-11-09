@@ -475,6 +475,8 @@ button.card { border-radius: 24px; }
 .moon-points li { margin: 3px 0; }
 .moon-stat { font-variant-numeric: tabular-nums; }
 .moon-isin { overflow-wrap: anywhere; }
+.moon-block > * + * { margin-top: 12px; }
+.moon-block h3 { font-size: 22px; letter-spacing: -0.03em; margin: 2px 0 0; }
 .menu { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .menu .card { min-height: 96px; }
 .menu span { color: var(--muted); font-size: 13px; }
@@ -695,7 +697,33 @@ body.detail-open .pager { overflow: hidden; }
 }
 .wager-choice button:active { background: rgba(255, 255, 255, 0.08); }
 .home-head h1 { margin: 2px 0 0; }
-.dateline { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+.home-meta {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 8px;
+}
+.dateline { margin: 0; color: var(--muted); font-size: 15px; }
+.home-clock { text-align: right; flex: 0 0 auto; }
+.home-clock time {
+  display: block;
+  min-width: 7.4em;
+  font-size: 22px;
+  font-weight: 620;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  color: var(--gold-2);
+}
+.home-session {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+}
 .install-line {
   display: flex;
   justify-content: space-between;

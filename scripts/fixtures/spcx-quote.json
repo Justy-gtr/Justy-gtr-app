@@ -1,0 +1,16 @@
+{
+  "symbol": "SPCX",
+  "priceEur": 119.98,
+  "priceUsd": 134.27,
+  "fxRate": 1.1191,
+  "history": {
+    "intraday": [
+      {
+        "t": "2026-11-09T12:42:19.000Z",
+        "eur": 122.44,
+        "usd": 137.1,
+        "session": "pre"
+      }
+    ]
+  }
+}
