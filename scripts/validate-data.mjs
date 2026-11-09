@@ -229,6 +229,12 @@ sourcesOk(production?.nextLaunch?.sources, "production.nextLaunch");
 for (const series of production?.series || []) {
   if (!Array.isArray(series.points) || !series.points.length) fail(`production.${series.id}`);
   sourcesOk(series.sources, `production.${series.id}`);
+  for (const [index, step] of (series.plan || []).entries()) {
+    const label = `production.${series.id}.plan[${index}]`;
+    if (!step?.date || typeof step.value !== "number") fail(label);
+    sourcesOk(step.source ? [step.source] : [], label);
+  }
+  if (series.benchmark && typeof series.benchmark.value !== "number") fail(`production.${series.id}.benchmark`);
 }
 
 for (const trade of loaded["insiders.json"]?.trades || []) {
@@ -245,6 +251,25 @@ const weekly = loaded["weekly.json"];
 if (weekly) {
   if (!weekly.summary) fail("weekly.summary");
   sourcesOk(weekly.sources, "weekly");
+  if (weekly.sessions) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(weekly.sessions.start || "")) fail("weekly.sessions.start");
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(weekly.sessions.end || "")) fail("weekly.sessions.end");
+  }
+  for (const row of weekly.symbols || []) {
+    const label = `weekly.${row?.symbol || "?"}`;
+    if (!row?.symbol) fail(`${label}.symbol`);
+    if (typeof row.startEur !== "number" || typeof row.endEur !== "number") fail(`${label}.eur`);
+    if (!Array.isArray(row.closes) || row.closes.length < 2) fail(`${label}.closes`);
+    for (const point of row.closes || []) {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(point?.t || "") || typeof point.eur !== "number") fail(`${label}.closes`);
+    }
+  }
+  for (const [index, event] of (weekly.events || []).entries()) {
+    if (!event?.text) fail(`weekly.events[${index}]`);
+  }
+  for (const [index, item] of (weekly.upcoming || []).entries()) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(item?.date || "") || !item?.title) fail(`weekly.upcoming[${index}]`);
+  }
 }
 
 const question = loaded["daily_question.json"];

@@ -297,8 +297,13 @@ Stimme: klare Sätze, wenig Wörter, Deutsch. Die erste Zeile ist das Urteil. Ni
 ```json
 {
   "example": true,
+  "asOf": "2026-11-07",
+  "lede": "Was die Firmen wirklich schaffen – nicht der Kurs.",
   "nextLaunch": {
     "name": "Starship-Testflug",
+    "headline": "Starship Flight 15",
+    "shortNote": "Erster Fang von Booster und Schiff",
+    "statusNote": "Zulassung steht noch aus",
     "target": "2026-12-09T14:00:00+01:00",
     "livestreamUrl": "https://…",
     "status": "geplant",
@@ -310,17 +315,41 @@ Stimme: klare Sätze, wenig Wörter, Deutsch. Die erste Zeile ist das Urteil. Ni
     {
       "id": "starship_launches",
       "label": "Starship-Starts",
+      "shortLabel": "",
       "unit": "Starts",
       "company": "SpaceX",
+      "order": 3,
+      "accent": "gold",
+      "caption": "Flight 12–14 bisher",
       "example": false,
       "points": [{ "date": "2025", "value": 7 }],
+      "plan": [
+        {
+          "date": "2026",
+          "value": 25,
+          "source": { "title": "FAA: bis zu 25 Starts pro Jahr", "url": "https://…" }
+        }
+      ],
+      "benchmark": { "value": 128, "label": "Vorjahr gleiche Zeit", "note": "kumuliert bis Ende Q3" },
       "sources": [{ "title": "…", "url": "https://…" }]
     }
   ]
 }
 ```
 
-Feste Serien-Ids, damit die Charts stabil bleiben: `starship_launches`, `starlink_users`, `tesla_deliveries`, `optimus_units`. Weitere Serien sind erlaubt. `nextLaunch.target` treibt den Countdown. Bei `livestreamUrl: null` gibt es keinen Link.
+Feste Serien-Ids, damit die Charts stabil bleiben: `starship_launches`, `starlink_users`, `tesla_deliveries`, `optimus_units`. Weitere Serien sind erlaubt. `nextLaunch.target` treibt den Countdown (Tage, Stunden, Minuten, Europe/Berlin). Bei `livestreamUrl: null` gibt es keinen Link.
+
+`lede` ist der eine Satz unter der Überschrift. Fehlt er, zeigt die App den festen Satz über Firmen statt Kurs.
+
+`headline`, `shortNote` und `statusNote` sind optional und nur für die Karte. Fehlen sie, nimmt die App `name`, lässt die Kurzzeile weg und zeigt nur `status`. Die lange `note` bleibt hinter „Quellen“.
+
+`order` sortiert die Kacheln. `company` gruppiert sie unter einer kleinen Überschrift. `shortLabel` ersetzt `label` in der Kachel, wenn gesetzt. `accent` färbt die Ist-Linie: `up`, `down`, `ice`, `gold`. Ohne `accent` entscheidet das Vorzeichen vom ersten zum letzten Punkt.
+
+Die Zeile unter der Zahl rechnet die App. Ein `benchmark` (Vergleichszahl, die kein Punkt der Reihe ist) gewinnt. Sonst, wenn alle `date` Jahre sind: die Folge `2023–2026: 2 · 4 · 5 · 3`, plus `caption`. Sonst, wenn die letzten beiden Abstände Quartale sind (80–100 Tage): `zum Vorquartal`. Sonst der Punkt etwa ein Jahr vor dem letzten (`zum Vorjahr`). Sonst der vorherige Punkt. Große Zahlen (ab 1.000) ohne Einheit, ein laufendes Jahr als `3 in 2026`.
+
+`plan` ist optional und rückwärtskompatibel. Jeder Eintrag ist `{ "date", "value", "source": { "title", "url" } }`. `date` ist ein Jahr (`2026`) oder ein Tag (`2026-09-30`) und soll zu einem Punkt der Reihe passen, damit die gestrichelte Linie auf derselben Zeitachse liegt. Nur ein offizieller Plan: Aussage des Unternehmens, von Musk, oder einer Behörde. Eine Analysten- oder Konsensschätzung ist kein Plan. Tesla nennt keine offizielle Quartals-Auslieferungszahl, deshalb hat `tesla_deliveries` kein `plan`. Starship 2026 trägt die 25 nur, weil `promises.json` die FAA-Genehmigung „bis zu 25 Starts pro Jahr ab Starbase“ mit der FAA-Seite belegt. Eine Reihe ohne `plan` bekommt keine Plan-Linie und keinen Satz darunter. Der Satz nennt den Plan zum letzten Ist-Punkt. Ein noch laufendes Jahr heißt `bisher`, ein abgeschlossenes Quartal `Ist`. Liegt der Plan weit außerhalb der Ist-Spanne, bleibt die Ist-Form lesbar und die Plan-Linie sitzt am Rand, mit der Zahl daneben. Quellen der Plan-Punkte liegen zusätzlich in `source`, die der Reihe weiter in `sources`.
+
+`benchmark` ist ebenfalls optional: `{ "value", "label", "note" }`. Die 128 bei den SpaceX-Starts 2026 stehen so, weil sie im Hinweistext der Reihe stehen und kein Punkt der Kurve sind.
 
 ## `insiders.json`
 
@@ -364,18 +393,49 @@ Feste Serien-Ids, damit die Charts stabil bleiben: `starship_launches`, `starlin
 
 `audioUrl` ist eine `https`-Adresse oder `null`. Nur wenn eine Adresse da ist, zeigt die App einen Player. Die Datei selbst wird nicht von der App erzeugt.
 
-Wochenrückblick:
+Wochenrückblick, geschrieben jeden Sonntag. `summary`, `highlights` und `sources` bleiben. Die Karten lesen die strukturierten Felder. Fehlen sie, zeigt die App nur den langen Text.
 
 ```json
 {
   "example": true,
   "weekOf": "2026-11-02",
-  "title": "Wochenrückblick",
-  "summary": "…",
+  "title": "Wochenrückblick KW 45",
+  "lede": "Ein oder zwei Sätze. Datum, Freitag gegen Freitag, was die Woche trug.",
+  "sessions": { "start": "2026-11-02", "end": "2026-11-06" },
+  "symbols": [
+    {
+      "symbol": "SPCX",
+      "startEur": 120.47,
+      "endEur": 119.58,
+      "changePct": -0.7,
+      "closes": [{ "t": "2026-11-02", "eur": 122.23 }]
+    }
+  ],
+  "events": [
+    { "icon": "rocket", "text": "Ein kurzer Satz.", "meta": "Sa · SpaceX" }
+  ],
+  "upcoming": [
+    { "date": "2026-11-09", "time": "11:51", "title": "ESCAPADE Gold", "probabilityPct": 85 }
+  ],
+  "summary": "Der lange Text, mehrere Absätze durch Zeilenumbrüche.",
   "highlights": [{ "title": "SpaceX", "text": "…" }],
   "sources": [{ "title": "…", "url": "https://…" }]
 }
 ```
+
+`lede` sind ein bis zwei Sätze über den Karten. `summary` und `highlights` liegen hinter „Mehr lesen“.
+
+`sessions.start` und `sessions.end` sind der erste und der letzte New Yorker Handelstag der Woche, `YYYY-MM-DD`. Die App zeichnet daraus die Kurve.
+
+`symbols` hält die drei Papiere in dieser Reihenfolge. `startEur` ist der Schluss des Freitags vor `weekOf`, `endEur` der Schluss des Freitags in der Woche, beides in Euro aus `prices.json` (`history.1M`, letzter Druck des New Yorker Tags). `closes` sind die fünf Tagesschlüsse Montag bis Freitag, `{ "t": "YYYY-MM-DD", "eur" }`. `changePct` ist die gerundete Bewegung und nur zur Kontrolle. Die App rechnet `(endEur − startEur) / startEur` selbst.
+
+Die Fünf-Tage-Linie nimmt die Stundenkerzen `history.1H`, je New Yorker Handelstag. Fehlt `1H` an einem Tag oder hat der Tag dort weniger als zwei Punkte, gilt der Reihe nach `5m`, `4H`, `intraday`, `1M`, `6M`, `1Y`. Tage ohne Druck bleiben leer, es wird nichts aufgefüllt. Ohne `prices.json` zeichnet die App die `closes`. Senkrechte Striche trennen die Tage, darunter steht Mo–Fr.
+
+`events` ist die kurze Chronik. `text` ist eine Zeile, `meta` die kleine zweite Zeile. `icon` ist `rocket`, `orbit`, `alert`, `car` oder `target`. Unbekannt wird ein Punkt.
+
+`upcoming` ist der Blick auf die folgende Woche, so wie er am Sonntag stand. Nicht aus dem späteren Kalender überschreiben: Wahrscheinlichkeiten ändern sich, der Rückblick bleibt der Stand vom Sonntag. Jeder Eintrag hat `date`, `title`, optional `time` (`HH:MM` Berlin) und `probabilityPct`. Fehlt `upcoming`, nimmt die App Termine aus `calendar.json` von `weekOf` plus sieben Tage, sieben Tage lang, höchstens acht.
+
+`sources` bleibt die eine Liste der Woche, hinter „Quellen“.
 
 ## `daily_question.json`
 

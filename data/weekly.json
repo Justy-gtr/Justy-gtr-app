@@ -2,6 +2,65 @@
   "example": false,
   "weekOf": "2026-11-02",
   "title": "Wochenrückblick KW 45",
+  "lede": "2.–8. November. Freitag gegen Freitag in Euro. Tech fiel nach der Wahl, Freitag kam eine Erholung.",
+  "sessions": { "start": "2026-11-02", "end": "2026-11-06" },
+  "symbols": [
+    {
+      "symbol": "SPCX",
+      "startEur": 120.47,
+      "endEur": 119.58,
+      "changePct": -0.7,
+      "closes": [
+        { "t": "2026-11-02", "eur": 122.23 },
+        { "t": "2026-11-03", "eur": 126.26 },
+        { "t": "2026-11-04", "eur": 121.28 },
+        { "t": "2026-11-05", "eur": 110.03 },
+        { "t": "2026-11-06", "eur": 119.58 }
+      ]
+    },
+    {
+      "symbol": "TSLA",
+      "startEur": 358.85,
+      "endEur": 323.7,
+      "changePct": -9.8,
+      "closes": [
+        { "t": "2026-11-02", "eur": 367 },
+        { "t": "2026-11-03", "eur": 355.85 },
+        { "t": "2026-11-04", "eur": 342.15 },
+        { "t": "2026-11-05", "eur": 312.2 },
+        { "t": "2026-11-06", "eur": 323.7 }
+      ]
+    },
+    {
+      "symbol": "RKLB",
+      "startEur": 49.2,
+      "endEur": 47.35,
+      "changePct": -3.8,
+      "closes": [
+        { "t": "2026-11-02", "eur": 46.95 },
+        { "t": "2026-11-03", "eur": 49.8 },
+        { "t": "2026-11-04", "eur": 46.5 },
+        { "t": "2026-11-05", "eur": 41.8 },
+        { "t": "2026-11-06", "eur": 47.35 }
+      ]
+    }
+  ],
+  "events": [
+    { "icon": "rocket", "text": "USSF-432 gestartet, Booster gelandet", "meta": "Sa · SpaceX" },
+    { "icon": "orbit", "text": "Flight 15: frühestens Fr 13.11., erster Doppel-Fang", "meta": "Offizielle Zielmarke" },
+    { "icon": "alert", "text": "ESCAPADE Blue-Burn noch nicht bestätigt", "meta": "Sa 07.11. · Rocket Lab / NASA" },
+    { "icon": "car", "text": "Tesla-Start Argentinien am 20.11. bestätigt", "meta": "Tesla" },
+    { "icon": "target", "text": "Karl: 3 von 3 Terminen getroffen (Brier 0,016)", "meta": "Trefferbilanz" }
+  ],
+  "upcoming": [
+    { "date": "2026-11-09", "time": "11:51", "title": "ESCAPADE Gold", "probabilityPct": 85 },
+    { "date": "2026-11-09", "time": "23:00", "title": "Rocket-Lab-Zahlen", "probabilityPct": 97 },
+    { "date": "2026-11-10", "time": "04:03", "title": "USSF-627", "probabilityPct": 85 },
+    { "date": "2026-11-10", "time": "14:30", "title": "US-Inflation", "probabilityPct": 95 },
+    { "date": "2026-11-13", "time": "05:23", "title": "USSF-317", "probabilityPct": 75 },
+    { "date": "2026-11-13", "time": "23:45", "title": "Starship Flight 15", "probabilityPct": 65 },
+    { "date": "2026-11-14", "time": "06:30", "title": "100. Electron-Start", "probabilityPct": 75 }
+  ],
   "summary": "Woche 2.–8. November, Kurse Freitag gegen Freitag in Euro.\nSPCX: ±0 % (−0,2 %). Mittwoch und Donnerstag tief, Freitag zurück.\nTSLA: −9,8 % auf Xetra (323,70 €). Das ist echt, kein Datenfehler.\nRKLB: −3,8 % in Frankfurt (47,35 €).\nGrund: Nach der Wahl am Dienstag fielen Tech-Werte. Freitag kam eine Erholung.",
   "highlights": [
     {

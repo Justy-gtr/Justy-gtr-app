@@ -14,25 +14,52 @@ export function playLiftoff() {
   whoosh();
 }
 
-export function tickCountdown() {
-  const el = document.getElementById("count-num");
-  if (!el) return;
-  const target = el.dataset.target;
+function writeParts(el, parts) {
+  for (const key of ["days", "hours", "minutes"]) {
+    const node = el.querySelector(`[data-part="${key}"]`);
+    if (node) node.textContent = parts ? String(parts[key]) : "—";
+  }
+}
+
+function paintCountdown(el) {
+  const target = el.dataset.target || "";
   const time = new Date(target).getTime();
+  const legacy = el.id === "count-num";
   if (Number.isNaN(time)) {
-    el.textContent = "Kein Fenster";
+    if (legacy) el.textContent = "Kein Fenster";
+    else writeParts(el, null);
     return;
   }
   const diff = time - Date.now();
   if (diff <= 0) {
-    el.textContent = "Fenster offen";
+    if (legacy) el.textContent = "Fenster offen";
+    else writeParts(el, { days: 0, hours: 0, minutes: 0 });
     if (firedFor !== target) {
       firedFor = target;
       playLiftoff();
     }
     return;
   }
-  el.textContent = formatDuration(diff);
+  if (legacy) {
+    el.textContent = formatDuration(diff);
+    return;
+  }
+  const total = Math.floor(diff / 1000);
+  writeParts(el, {
+    days: Math.floor(total / 86400),
+    hours: Math.floor((total % 86400) / 3600),
+    minutes: Math.floor((total % 3600) / 60)
+  });
+}
+
+export function tickCountdown() {
+  const nodes = document.querySelectorAll("[data-countdown], #count-num");
+  const seen = new Set();
+  nodes.forEach((el) => {
+    if (seen.has(el)) return;
+    seen.add(el);
+    paintCountdown(el);
+  });
 }
 
 function whoosh() {

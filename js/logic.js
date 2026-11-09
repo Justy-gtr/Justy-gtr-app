@@ -56,6 +56,182 @@ export function formatPct(value) {
   return `${body} %`;
 }
 
+/** Signed percent with a chosen number of decimals. The minus is the typographic minus. */
+export function signedPct(value, digits = 1) {
+  if (value == null || Number.isNaN(Number(value))) return "—";
+  const number = Number(value);
+  const places = Math.max(0, Number(digits) || 0);
+  const body = new Intl.NumberFormat("de-DE", {
+    minimumFractionDigits: places,
+    maximumFractionDigits: places
+  }).format(Math.abs(number));
+  if (number > 0) return `+${body} %`;
+  if (number < 0) return `−${body} %`;
+  return `${body} %`;
+}
+
+/** Whole numbers stay whole. Smaller values keep one decimal, German grouping. */
+export function compactNumber(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "—";
+  const digits = Math.abs(number) >= 100 || Number.isInteger(number) ? 0 : 1;
+  return formatNumber(number, digits);
+}
+
+export const TILE_COLORS = {
+  up: "#7ddec0",
+  down: "#ff8b98",
+  ice: "#9fdfff",
+  gold: "#e4b15a"
+};
+
+export function seriesAccent(series) {
+  if (series?.accent && TILE_COLORS[series.accent]) return series.accent;
+  const points = series?.points || [];
+  const first = Number(points[0]?.value);
+  const last = Number(points.at(-1)?.value);
+  if (Number.isFinite(first) && Number.isFinite(last) && last < first) return "down";
+  if (Number.isFinite(first) && Number.isFinite(last) && last > first) return "up";
+  return "gold";
+}
+
+/** "Fr 13.11. · 23:45 Berlin" from an ISO instant. */
+export function formatLaunchWhen(iso) {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return "";
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("de-DE", {
+    timeZone: "Europe/Berlin",
+    weekday: "short",
+    day: "2-digit",
+    month: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23"
+  }).formatToParts(date).map((part) => [part.type, part.value]));
+  const weekday = String(parts.weekday || "").replace(".", "");
+  return `${weekday} ${parts.day}.${parts.month}. · ${parts.hour}:${parts.minute} Berlin`;
+}
+
+function isoDayMs(value) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(value || ""));
+  if (!match) return null;
+  return Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+}
+
+function daysBetween(earlier, later) {
+  const left = isoDayMs(earlier);
+  const right = isoDayMs(later);
+  if (left == null || right == null) return null;
+  return Math.round((right - left) / 86400000);
+}
+
+function quarterName(date) {
+  const month = Number(String(date).slice(5, 7));
+  if (!month) return "";
+  return `Q${Math.ceil(month / 3)}`;
+}
+
+function yearAgoPoint(points) {
+  const last = points.at(-1);
+  let best = null;
+  let bestGap = Infinity;
+  for (const point of points.slice(0, -1)) {
+    const span = daysBetween(point.date, last.date);
+    if (span == null || span < 350 || span > 380) continue;
+    const gap = Math.abs(span - 365);
+    if (gap < bestGap) {
+      best = point;
+      bestGap = gap;
+    }
+  }
+  return best;
+}
+
+/** Big figure on a production tile. A partial current year reads "3 in 2026". */
+export function productionValue(series, asOf = "") {
+  const last = series?.points?.at(-1);
+  if (!last || last.value == null) return { text: "—", unit: "" };
+  const year = /^\d{4}$/.test(String(last.date)) ? String(last.date) : "";
+  if (year && year === String(asOf).slice(0, 4)) return { text: compactNumber(last.value), unit: `in ${year}` };
+  const big = Math.abs(Number(last.value)) >= 1000;
+  return { text: compactNumber(last.value), unit: big ? "" : (series.unit || "") };
+}
+
+/**
+ * One line under the figure, from the series itself.
+ * Benchmark, else a yearly sequence, else quarter-on-quarter when the series runs in quarters,
+ * else a year-ago point, else the previous point.
+ */
+export function productionCaption(series) {
+  const points = (series?.points || []).filter((point) => point && point.value != null && point.date);
+  if (!points.length) return series?.caption || "";
+  const last = points.at(-1);
+  if (series?.benchmark && series.benchmark.value != null && series.benchmark.label) {
+    const bits = [];
+    if (series.benchmark.note) bits.push(series.benchmark.note);
+    bits.push(`${series.benchmark.label} ${compactNumber(series.benchmark.value)}`);
+    return bits.join(" · ");
+  }
+  if (points.length >= 2 && points.every((point) => /^\d{4}$/.test(String(point.date)))) {
+    const seq = `${points[0].date}–${last.date}: ${points.map((point) => formatNumber(point.value, 0)).join(" · ")}`;
+    return series?.caption ? `${seq} · ${series.caption}` : seq;
+  }
+  const prev = points.at(-2);
+  const before = points.at(-3);
+  const lastSpan = prev ? daysBetween(prev.date, last.date) : null;
+  const priorSpan = prev && before ? daysBetween(before.date, prev.date) : null;
+  const quarterly = lastSpan != null && priorSpan != null && lastSpan >= 80 && lastSpan <= 100 && priorSpan >= 80 && priorSpan <= 100;
+  if (quarterly && prev && Number(prev.value)) {
+    const pct = ((Number(last.value) - Number(prev.value)) / Number(prev.value)) * 100;
+    const digits = Math.abs(pct) >= 10 ? 0 : 1;
+    const quarter = quarterName(prev.date);
+    return `${signedPct(pct, digits)} zum Vorquartal · ${quarter ? `${quarter} war ` : ""}${compactNumber(prev.value)}`;
+  }
+  const ago = points.length >= 2 ? yearAgoPoint(points) : null;
+  if (ago && ago.value) {
+    const pct = ((Number(last.value) - Number(ago.value)) / Number(ago.value)) * 100;
+    const digits = Math.abs(pct) >= 10 ? 0 : 1;
+    const unit = series?.unit ? ` ${series.unit}` : "";
+    return `${signedPct(pct, digits)} zum Vorjahr · ${compactNumber(ago.value)} → ${compactNumber(last.value)}${unit}`;
+  }
+  if (!prev || !Number(prev.value)) return series?.caption || series?.note || "";
+  const pct = ((Number(last.value) - Number(prev.value)) / Number(prev.value)) * 100;
+  const digits = Math.abs(pct) >= 10 ? 0 : 1;
+  const unit = series?.unit ? ` ${series.unit}` : "";
+  return `${signedPct(pct, digits)} zum vorherigen Stand · ${compactNumber(prev.value)} → ${compactNumber(last.value)}${unit}`;
+}
+
+/** "Plan 2026: 25 · bisher 3" for the plan point that lines up with the latest actual. */
+export function planGap(series, asOf = "") {
+  const plans = (series?.plan || []).filter((point) => point && typeof point.value === "number" && point.date);
+  const last = series?.points?.at(-1);
+  if (!plans.length || !last || last.value == null) return "";
+  const match = [...plans].reverse().find((point) => String(point.date) <= String(last.date)) || plans.at(-1);
+  const period = /^\d{4}$/.test(String(match.date))
+    ? String(match.date)
+    : `${quarterName(match.date)} ${String(match.date).slice(0, 4)}`.trim();
+  const partial = /^\d{4}$/.test(String(match.date)) && String(asOf).slice(0, 4) === String(match.date);
+  const verb = partial ? "bisher" : "Ist";
+  return `Plan ${period}: ${compactNumber(match.value)} · ${verb} ${compactNumber(last.value)}`;
+}
+
+export function priceMove(start, end) {
+  const from = Number(start);
+  const to = Number(end);
+  if (!Number.isFinite(from) || !Number.isFinite(to) || from === 0) return null;
+  return ((to - from) / from) * 100;
+}
+
+const WEEKDAY_SHORT = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+
+/** Weekday of a calendar date, not of an instant. "Mo" … "So". */
+export function weekdayShort(isoDate) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(isoDate || ""));
+  if (!match) return "";
+  const date = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]), 12));
+  return WEEKDAY_SHORT[date.getUTCDay()] || "";
+}
+
 /**
  * Vorbörslich oder nachbörslich als Berliner Uhr.
  * Vorbörse endet mit der US-Eröffnung 9:30 New York, Nachbörse beginnt mit dem US-Schluss 16:00.
@@ -777,6 +953,50 @@ function newYorkDay(iso) {
     month: "2-digit",
     day: "2-digit"
   }).format(date);
+}
+
+const WEEK_SERIES = ["1H", "5m", "4H", "intraday", "1M", "6M", "1Y"];
+
+/**
+ * Hourly bars for each New York session in [start, end].
+ * If that day has no 1H series, the next stored series with at least two prints is used.
+ * Nothing is invented for a missing day.
+ */
+export function weekCurve(history, range = {}) {
+  const start = String(range.start || "");
+  const end = String(range.end || "");
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(start) || !/^\d{4}-\d{2}-\d{2}$/.test(end) || start > end) return [];
+  const days = [];
+  const cursor = new Date(`${start}T12:00:00Z`);
+  const last = new Date(`${end}T12:00:00Z`);
+  while (cursor.getTime() <= last.getTime() && days.length < 12) {
+    const iso = cursor.toISOString().slice(0, 10);
+    const weekday = cursor.getUTCDay();
+    if (weekday !== 0 && weekday !== 6) days.push(iso);
+    cursor.setUTCDate(cursor.getUTCDate() + 1);
+  }
+  const points = [];
+  for (const day of days) {
+    let chosen = [];
+    let fallback = [];
+    for (const key of WEEK_SERIES) {
+      const rows = [];
+      for (const point of history?.[key] || []) {
+        if (!point?.t || newYorkDay(point.t) !== day) continue;
+        const eur = Number(point.eur);
+        if (!Number.isFinite(eur)) continue;
+        rows.push({ t: point.t, eur, day });
+      }
+      rows.sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
+      if (rows.length >= 2) {
+        chosen = rows;
+        break;
+      }
+      if (!fallback.length && rows.length) fallback = rows;
+    }
+    points.push(...(chosen.length ? chosen : fallback));
+  }
+  return points;
 }
 
 function asPricePoint(point) {

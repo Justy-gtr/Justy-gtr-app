@@ -216,6 +216,7 @@ function openDetail(action, dataset, replace = false) {
   }
   requestAnimationFrame(() => {
     try { drawCharts(data, ui); } catch { /* Ein Chart darf die Ansicht nicht leer lassen. */ }
+    tickCountdown();
   });
 }
 

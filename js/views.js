@@ -8,9 +8,18 @@ import {
   formatNumber,
   formatPct,
   formatStamp,
+  formatLaunchWhen,
   freshPrices,
   greeting,
   sparkSample,
+  productionCaption,
+  productionValue,
+  planGap,
+  seriesAccent,
+  TILE_COLORS,
+  priceMove,
+  signedPct,
+  weekdayShort,
   buildFeed,
   buildMarketTimeline,
   formatEventClock,
@@ -64,6 +73,25 @@ function sourcesBlock(sources, { labeled = true } = {}) {
   const list = (sources || []).map((source) => ({ title: source?.title, href: safeUrl(source?.url) })).filter((source) => source.href);
   if (!list.length) return "";
   return `<div class="sources">${labeled ? `<p class="sources-label">Quellen</p>` : ""}<ul>${list.map((source) => `<li><a href="${esc(source.href)}" target="_blank" data-external="true">${esc(source.title || "Quelle")}</a></li>`).join("")}</ul></div>`;
+}
+
+function sourcesToggle(sources, note) {
+  const links = sourcesBlock(sources, { labeled: false });
+  const extra = note ? `<p>${esc(note)}</p>` : "";
+  if (!links && !extra) return "";
+  return `<details class="quellen"><summary>Quellen</summary><div class="quellen-body">${extra}${links}</div></details>`;
+}
+
+function tileIcon(name) {
+  const common = `viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"`;
+  const paths = {
+    rocket: `<path d="M12 3c3 3.2 4.5 7 4.5 11.2 0 2.2-.8 4-1.8 5.3H9.3c-1-1.3-1.8-3.1-1.8-5.3C7.5 10 9 6.2 12 3z"/><path d="M9.5 19.5h5L16 22H8z"/><circle cx="12" cy="11" r="1.4" fill="currentColor" stroke="none"/>`,
+    orbit: `<circle cx="12" cy="12" r="3"/><path d="M5 14c1.8-4 4.2-6.5 7-7.2 3.2-.8 6.2.4 8.2 3.2"/><path d="M19 10c-1.8 4-4.2 6.5-7 7.2-3.2.8-6.2-.4-8.2-3.2"/>`,
+    alert: `<circle cx="12" cy="12" r="7"/><path d="M12 8.5v4"/><path d="M12 15.5h.01"/>`,
+    car: `<path d="M4 14.5 6 9.5h12l2 5"/><path d="M4 14.5h16v3.2H4z"/><circle cx="7.5" cy="17.7" r="1.2" fill="currentColor" stroke="none"/><circle cx="16.5" cy="17.7" r="1.2" fill="currentColor" stroke="none"/>`,
+    target: `<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21"/>`
+  };
+  return `<svg ${common}>${paths[name] || `<circle cx="12" cy="12" r="3" fill="currentColor" stroke="none"/>`}</svg>`;
 }
 
 function externalAnchor(href, label) {
@@ -621,7 +649,7 @@ export function detailContent(action, dataset, ctx) {
   if (action === "open-glossary") return glossaryDetail(data, ui);
   if (action === "open-question") return questionDetail(data, store);
   if (action === "open-briefing") return briefingDetail(data.briefing, "Morgen-Briefing");
-  if (action === "open-weekly") return weeklyDetail(data.weekly);
+  if (action === "open-weekly") return weeklyDetail(data);
   if (action === "open-alerts") return alertsDetail(data);
   if (action === "open-moonshots") return moonshotsDetail(data);
   return null;
@@ -948,18 +976,87 @@ function calmDetail(data) {
   };
 }
 
+function standLine(iso) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || ""));
+  if (!match) return "";
+  return `${Number(match[3])}.${match[2]}.${match[1]}`;
+}
+
+function productionGroups(series) {
+  const ordered = [...(series || [])].sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
+  const groups = [];
+  for (const item of ordered) {
+    const name = item.company || "Weitere";
+    let group = groups.find((entry) => entry.name === name);
+    if (!group) {
+      group = { name, items: [] };
+      groups.push(group);
+    }
+    group.items.push(item);
+  }
+  return groups;
+}
+
+function productionTile(series, asOf) {
+  const figure = productionValue(series, asOf);
+  const caption = productionCaption(series);
+  const gap = planGap(series, asOf);
+  const accent = seriesAccent(series);
+  const color = TILE_COLORS[accent] || TILE_COLORS.gold;
+  const changeClass = caption.startsWith("+") ? "up" : caption.startsWith("−") || caption.startsWith("-") ? "down" : "muted";
+  const hasPlan = (series.plan || []).some((point) => point && typeof point.value === "number");
+  const label = series.shortLabel || series.label || "";
+  return `<article class="card metric">
+    <p class="metric-label">${esc(label)} ${pill(series.example)}</p>
+    <p class="metric-value">${esc(figure.text)}${figure.unit ? ` <small>${esc(figure.unit)}</small>` : ""}</p>
+    <div class="metric-chart">
+      <canvas class="tile-spark" data-chart="prod" data-series="${esc(series.id)}" aria-label="${esc(label)} im Verlauf"></canvas>
+      ${hasPlan ? `<p class="spark-legend"><span class="swatch" style="color:${esc(color)}"></span>Ist <span class="swatch swatch-plan"></span>Plan</p>` : ""}
+    </div>
+    ${caption ? `<p class="metric-change ${changeClass}">${esc(caption)}</p>` : ""}
+    ${gap ? `<p class="metric-gap">${esc(gap)}</p>` : ""}
+    ${sourcesToggle(series.sources, series.note)}
+  </article>`;
+}
+
+function launchCard(launch) {
+  if (!launch) return "";
+  const title = launch.headline || launch.name || "Nächster Start";
+  const when = formatLaunchWhen(launch.target);
+  const status = [launch.status ? `Status: ${launch.status}` : "", launch.statusNote || ""].filter(Boolean).join(" · ");
+  const longNote = launch.note && launch.note !== launch.shortNote ? launch.note : "";
+  return `<article class="card launch-card">
+    <p class="kicker">Nächster Start</p>
+    <h3>${esc(title)} ${pill(launch.example)}</h3>
+    ${launch.shortNote ? `<p class="launch-note">${esc(launch.shortNote)}</p>` : ""}
+    ${when ? `<p class="launch-when">${esc(when)}</p>` : ""}
+    <div class="count-grid" data-countdown data-target="${esc(launch.target || "")}">
+      <div class="count-cell"><strong data-part="days">—</strong><span>Tage</span></div>
+      <div class="count-cell"><strong data-part="hours">—</strong><span>Std</span></div>
+      <div class="count-cell"><strong data-part="minutes">—</strong><span>Min</span></div>
+    </div>
+    ${status ? `<p class="muted launch-status">${esc(status)}</p>` : ""}
+    ${sourcesToggle(launch.sources, longNote)}
+  </article>`;
+}
+
 function productionDetail(data) {
+  const file = data.production || {};
+  const asOf = file.asOf || "";
+  const stand = standLine(asOf);
+  const groups = productionGroups(file.series);
   return {
     kind: "production",
     title: "Produktion",
-    html: (data.production?.series || []).map((series) => `
-      <article class="card">
-        <div class="row between"><h3>${esc(series.label)}</h3>${pill(series.example)}</div>
-        <p class="muted">${esc(series.company || "")} · ${esc(series.unit || "")}</p>
-        <canvas class="chart" data-chart="prod" data-series="${esc(series.id)}"></canvas>
-        <p class="muted">Zuletzt ${esc(formatNumber(series.points?.at(-1)?.value, 1))} ${esc(series.unit || "")}</p>
-        ${sourcesBlock(series.sources)}
-      </article>`).join("")
+    html: `
+      <p class="lede">${esc(file.lede || "Was die Firmen wirklich schaffen – nicht der Kurs.")}</p>
+      ${launchCard(file.nextLaunch)}
+      ${groups.map((group) => `
+        <h3 class="company-head">${esc(group.name)}</h3>
+        ${group.items.map((series) => productionTile(series, asOf)).join("")}
+      `).join("")}
+      ${stand ? `<p class="muted stand-line">Stand der Daten: ${esc(stand)}</p>` : ""}
+    `
   };
 }
 
@@ -1060,16 +1157,109 @@ function briefingDetail(briefing, title) {
   };
 }
 
-function weeklyDetail(weekly) {
-  if (!weekly) return { kind: "weekly", title: "Wochenrückblick", html: `<p class="empty">Noch kein Rückblick.</p>` };
+function addDays(iso, days) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || ""));
+  if (!match) return "";
+  const date = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]) + days, 12));
+  return date.toISOString().slice(0, 10);
+}
+
+function weekSymbols(weekly) {
+  return (weekly?.symbols || []).filter((item) => item && item.symbol);
+}
+
+function weekBar(symbol, maxAbs) {
+  const move = priceMove(symbol.startEur, symbol.endEur);
+  const width = move == null || !maxAbs ? 0 : Math.max(6, Math.round((Math.abs(move) / maxAbs) * 100));
+  const klass = move == null ? "flat" : move < 0 ? "down" : move > 0 ? "up" : "flat";
+  return `<div class="week-row">
+    <span class="week-sym">${esc(symbol.symbol)}</span>
+    <span class="week-track"><span class="week-fill ${klass}" style="width:${width}%"></span></span>
+    <span class="${klass}">${esc(move == null ? "—" : signedPct(move, Math.abs(move) >= 10 ? 0 : 1))}</span>
+  </div>`;
+}
+
+function weekSession(symbol) {
+  const move = priceMove(symbol.startEur, symbol.endEur);
+  const klass = move == null ? "flat" : move < 0 ? "down" : move > 0 ? "up" : "flat";
+  const from = symbol.startEur == null ? "—" : formatEUR(symbol.startEur);
+  const to = symbol.endEur == null ? "—" : formatEUR(symbol.endEur);
+  return `<div class="session-block">
+    <div class="row between"><strong>${esc(symbol.symbol)}</strong><span class="${klass}">${esc(move == null ? "—" : signedPct(move, Math.abs(move) >= 10 ? 0 : 1))}</span></div>
+    <p class="muted">${esc(from)} → ${esc(to)}</p>
+    <canvas class="week-spark" data-chart="week" data-symbol="${esc(symbol.symbol)}" aria-label="Fünf Handelstage ${esc(symbol.symbol)}"></canvas>
+  </div>`;
+}
+
+function weekEvents(weekly) {
+  return (weekly?.events || []).filter((item) => item && item.text);
+}
+
+function weekUpcoming(weekly, calendar) {
+  if (Array.isArray(weekly?.upcoming) && weekly.upcoming.length) return weekly.upcoming;
+  const start = addDays(weekly?.weekOf, 7);
+  const end = addDays(start, 6);
+  if (!start) return [];
+  return (calendar?.events || [])
+    .filter((event) => event?.date >= start && event?.date <= end)
+    .sort((a, b) => String(a.date).localeCompare(String(b.date)) || String(a.time || "").localeCompare(String(b.time || "")))
+    .slice(0, 8);
+}
+
+function upcomingChip(item) {
+  const day = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(item.date || ""));
+  const label = day ? `${weekdayShort(item.date).toUpperCase()} ${day[3]}.${day[2]}.` : "";
+  const clock = [item.time, item.probabilityPct == null ? "" : `${item.probabilityPct} %`].filter(Boolean).join(" · ");
+  return `<article class="next-chip">
+    <p class="kicker">${esc(label)}</p>
+    <strong>${esc(item.title || "")}</strong>
+    ${clock ? `<p class="muted">${esc(clock)}</p>` : ""}
+  </article>`;
+}
+
+function weeklyDetail(data) {
+  const weekly = data?.weekly || data;
+  if (!weekly || !weekly.summary && !weekSymbols(weekly).length) {
+    return { kind: "weekly", title: "Wochenrückblick", html: `<p class="empty">Noch kein Rückblick.</p>` };
+  }
+  const symbols = weekSymbols(weekly);
+  const moves = symbols.map((item) => priceMove(item.startEur, item.endEur)).filter((value) => value != null);
+  const maxAbs = moves.reduce((max, value) => Math.max(max, Math.abs(value)), 0);
+  const lede = weekly.lede || "";
+  const events = weekEvents(weekly);
+  const upcoming = weekUpcoming(weekly, data?.calendar);
   return {
     kind: "weekly",
     title: weekly.title || "Wochenrückblick",
     html: `
-      <p class="muted">Woche vom ${esc(formatDay(weekly.weekOf))} ${pill(weekly.example)}</p>
-      <div class="prose">${prose(weekly.summary)}</div>
-      ${(weekly.highlights || []).map((item) => `<article class="card"><h3>${esc(item.title)}</h3><p>${esc(item.text)}</p></article>`).join("")}
-      ${sourcesBlock(weekly.sources)}
+      ${lede ? `<p class="lede">${esc(lede)}</p>` : `<p class="muted">Woche vom ${esc(formatDay(weekly.weekOf))} ${pill(weekly.example)}</p>`}
+      ${symbols.length ? `<article class="card week-card">
+        <p class="kicker">Woche in %</p>
+        ${symbols.map((item) => weekBar(item, maxAbs)).join("")}
+      </article>
+      <article class="card week-card">
+        <p class="kicker">5 Handelstage</p>
+        ${symbols.map((item) => weekSession(item)).join("")}
+      </article>` : ""}
+      ${events.length ? `<article class="card">
+        <p class="kicker">Was passiert ist</p>
+        <ol class="timeline">${events.map((item) => `<li>
+          <span class="ticon ticon-${esc(item.icon || "dot")}">${tileIcon(item.icon)}</span>
+          <span><span class="time-line">${esc(item.text)}</span>${item.meta ? `<span class="muted">${esc(item.meta)}</span>` : ""}</span>
+        </li>`).join("")}</ol>
+      </article>` : ""}
+      ${upcoming.length ? `<article class="card">
+        <p class="kicker">Nächste Woche</p>
+        <div class="next-strip">${upcoming.map((item) => upcomingChip(item)).join("")}</div>
+      </article>` : ""}
+      <details class="text-toggle">
+        <summary>Mehr lesen</summary>
+        <div class="toggle-body">
+          <div class="prose">${prose(weekly.summary)}</div>
+          ${(weekly.highlights || []).map((item) => `<article class="card inner-card"><h3>${esc(item.title)}</h3><p>${esc(item.text)}</p></article>`).join("")}
+        </div>
+      </details>
+      ${sourcesToggle(weekly.sources)}
     `
   };
 }
