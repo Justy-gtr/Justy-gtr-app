@@ -191,14 +191,18 @@
       "id": "SPCX-2026-11-09",
       "symbol": "SPCX",
       "name": "SpaceX",
-      "changePct": 5.8,
-      "priceEur": 126.54,
+      "changePct": 5.92,
+      "priceEur": 126.59,
       "thresholdPct": 2,
       "direction": "up",
       "timestamp": "2026-11-09T11:11:05.882Z",
       "notified": true,
       "example": false,
       "sources": [
+        {
+          "title": "Alpaca Markets IEX SPCX",
+          "url": "https://data.alpaca.markets/v2/stocks/SPCX/snapshot?feed=iex"
+        },
         {
           "title": "Yahoo Finance SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX"
@@ -221,6 +225,10 @@
       "notified": true,
       "example": false,
       "sources": [
+        {
+          "title": "Alpaca Markets IEX TSLA",
+          "url": "https://data.alpaca.markets/v2/stocks/TSLA/snapshot?feed=iex"
+        },
         {
           "title": "Yahoo Finance TL0.DE",
           "url": "https://finance.yahoo.com/quote/TL0.DE"
@@ -247,6 +255,10 @@
       "notified": true,
       "example": false,
       "sources": [
+        {
+          "title": "Alpaca Markets IEX RKLB",
+          "url": "https://data.alpaca.markets/v2/stocks/RKLB/snapshot?feed=iex"
+        },
         {
           "title": "Yahoo Finance 6RJ0.F",
           "url": "https://finance.yahoo.com/quote/6RJ0.F"
