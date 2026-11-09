@@ -251,14 +251,19 @@ test("Berlin-Fenster: Werktag durchgehend, Wochenende mit Toleranz, Sommer- und 
   assert.equal(shouldRun({ weekday: 3, hour: 22, minute: 15 }), true);
   assert.equal(shouldRun({ weekday: 3, hour: 4, minute: 59 }), false);
   assert.equal(shouldRun({ weekday: 3, hour: 22, minute: 16 }), false);
-  assert.equal(shouldRun({ weekday: 5, hour: 6, minute: 30 }), true);
-  assert.equal(shouldRun({ weekday: 5, hour: 7, minute: 15 }), true);
-  assert.equal(shouldRun({ weekday: 5, hour: 7, minute: 16 }), false);
-  assert.equal(shouldRun({ weekday: 5, hour: 7, minute: 41 }), false);
-  assert.equal(shouldRun({ weekday: 5, hour: 16, minute: 0 }), true);
-  assert.equal(shouldRun({ weekday: 5, hour: 16, minute: 45 }), true);
-  assert.equal(shouldRun({ weekday: 5, hour: 16, minute: 46 }), false);
-  assert.equal(shouldRun({ weekday: 6, hour: 18, minute: 0 }), true);
+  assert.equal(shouldRun({ weekday: 5, hour: 9, minute: 0 }), true);
+  assert.equal(shouldRun({ weekday: 5, hour: 9, minute: 45 }), true);
+  assert.equal(shouldRun({ weekday: 5, hour: 9, minute: 46 }), false);
+  assert.equal(shouldRun({ weekday: 5, hour: 8, minute: 59 }), false);
+  assert.equal(shouldRun({ weekday: 5, hour: 14, minute: 0 }), true);
+  assert.equal(shouldRun({ weekday: 5, hour: 14, minute: 45 }), true);
+  assert.equal(shouldRun({ weekday: 5, hour: 14, minute: 46 }), false);
+  assert.equal(shouldRun({ weekday: 6, hour: 20, minute: 0 }), true);
+  assert.equal(shouldRun({ weekday: 6, hour: 20, minute: 45 }), true);
+  assert.equal(shouldRun({ weekday: 6, hour: 20, minute: 46 }), false);
+  assert.equal(shouldRun({ weekday: 5, hour: 6, minute: 30 }), false);
+  assert.equal(shouldRun({ weekday: 5, hour: 16, minute: 0 }), false);
+  assert.equal(shouldRun({ weekday: 6, hour: 18, minute: 0 }), false);
   assert.equal(shouldRun({ weekday: 0, hour: 4, minute: 0 }), false);
   assert.equal(shouldRun({ weekday: 0, hour: 4, minute: 0 }, { force: true }), true);
 
@@ -279,7 +284,8 @@ test("Berlin-Fenster: Werktag durchgehend, Wochenende mit Toleranz, Sommer- und 
 
   assert.equal(shouldRun({ weekday: 3, hour: 22, minute: 16 }), false);
   assert.equal(shouldRun({ weekday: 3, hour: 22, minute: 16 }, { usOpen: true }), true);
-  assert.equal(shouldRun({ weekday: 5, hour: 1, minute: 10 }, { usOpen: true }), true);
+  assert.equal(shouldRun({ weekday: 5, hour: 1, minute: 10 }, { usOpen: true }), false);
+  assert.equal(shouldRun({ weekday: 5, hour: 9, minute: 10 }, { usOpen: true }), true);
   assert.equal(shouldRun({ weekday: 6, hour: 3, minute: 0 }), false);
 });
 

@@ -54,7 +54,7 @@ Zeiten in Europe/Berlin, auch über die Sommerzeit hinweg:
 
 - montags bis freitags von 05:00 bis 22:15, auch wenn der Cron später startet
 - zusätzlich, solange in New York Vorbörse, Handel oder Nachhandel läuft (04:00–20:00 Uhr New York, plus 30 Minuten), auch nach 22:15 Berlin und in den Freitagabend hinein
-- samstags und sonntags nur 05:00, 06:30, 08:30, 09:30, 11:30, 13:00, 14:00, 15:00, 16:00, 18:00, 20:00, 22:00, mit 45 Minuten Spielraum danach
+- samstags und sonntags nur 09:00, 14:00 und 20:00, mit 45 Minuten Spielraum danach
 
 GitHub plant nur in UTC. Der Laufplan deckt deshalb MEZ und MESZ ab, und `scripts/schedule.mjs` lässt den Abruf nur im passenden Berliner Fenster zu. Werktags startet der Cron alle fünf Minuten. Jede Minute wäre zu viel für die Git-Historie. Samstag und Sonntag bleiben bei den festen Zeiten. Von Hand starten geht über „Run workflow“ und ignoriert das Fenster.
 

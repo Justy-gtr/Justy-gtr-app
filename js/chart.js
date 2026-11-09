@@ -1,4 +1,4 @@
-import { chartAxisLabels, formatScrubWhen, guideLabelsToDraw, guideStyle, instrumentAxisLabels, instrumentSeries, scrubDelta, seriesFor } from "./logic.js";
+import { chartAxisLabels, compactNumber, formatScrubWhen, guideLabelsToDraw, guideStyle, instrumentAxisLabels, instrumentSeries, priceMove, scrubDelta, seriesAccent, seriesFor, TILE_COLORS, weekCurve, weekdayShort } from "./logic.js";
 
 function hexAlpha(hex, alpha) {
   const value = hex.replace("#", "");
@@ -440,6 +440,195 @@ export function drawLineChart(canvas, points, { color = "#e4b15a", axes = false,
   else hideScrub(canvas);
 }
 
+function prepareCanvas(canvas, fallbackW, fallbackH) {
+  const width = canvas.clientWidth || fallbackW;
+  const height = canvas.clientHeight || fallbackH;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return null;
+  const dpr = Math.min(Math.max(window.devicePixelRatio || 1, 1), 3);
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  canvas.width = Math.max(1, Math.round(width * dpr));
+  canvas.height = Math.max(1, Math.round(height * dpr));
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, width, height);
+  ctx.imageSmoothingEnabled = false;
+  return { ctx, width, height };
+}
+
+function yOn(value, lo, hi, top, bottom) {
+  const span = hi - lo || 1;
+  return bottom - ((value - lo) / span) * (bottom - top);
+}
+
+function strokePath(ctx, coords, color, dash) {
+  if (coords.length < 2) return;
+  ctx.beginPath();
+  coords.forEach((point, index) => (index ? ctx.lineTo(point.x, point.y) : ctx.moveTo(point.x, point.y)));
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1.5;
+  ctx.lineJoin = "bevel";
+  ctx.lineCap = "butt";
+  ctx.setLineDash(dash || []);
+  ctx.stroke();
+  ctx.setLineDash([]);
+}
+
+/** Production tile: every point, dots, first/last labels, optional plan overlay. Straight segments. */
+export function drawTileSpark(canvas, series) {
+  const prepared = prepareCanvas(canvas, 156, 56);
+  if (!prepared) return;
+  const { ctx, width, height } = prepared;
+  const actual = (series?.points || []).filter((point) => point && Number.isFinite(Number(point.value)));
+  ctx.font = "10px -apple-system, BlinkMacSystemFont, sans-serif";
+  if (actual.length < 2) {
+    ctx.fillStyle = "#b7c0d0";
+    ctx.fillText("Noch keine Reihe.", 4, height / 2);
+    return;
+  }
+  const plans = (series?.plan || []).filter((point) => point && Number.isFinite(Number(point.value)));
+  const actualVals = actual.map((point) => Number(point.value));
+  const aMin = Math.min(...actualVals);
+  const aMax = Math.max(...actualVals);
+  const aSpan = aMax - aMin || Math.abs(aMax) || 1;
+  const planVals = plans.map((point) => Number(point.value));
+  const planFits = planVals.length > 0 && planVals.every((value) => value <= aMax + aSpan && value >= aMin - aSpan);
+  const scaleVals = planFits ? actualVals.concat(planVals) : actualVals;
+  let lo = Math.min(...scaleVals);
+  let hi = Math.max(...scaleVals);
+  const pad = (hi - lo || 1) * 0.18;
+  lo -= pad;
+  hi += pad;
+  const top = 13;
+  const bottom = height - 8;
+  const left = 4;
+  const right = width - 4;
+  const xAt = (index) => left + (index / (actual.length - 1)) * (right - left);
+  const coords = actual.map((point, index) => ({
+    x: xAt(index),
+    y: yOn(Number(point.value), lo, hi, top, bottom),
+    value: Number(point.value)
+  }));
+  const baseY = coords[0].y;
+  ctx.beginPath();
+  ctx.moveTo(left, baseY);
+  ctx.lineTo(right, baseY);
+  ctx.strokeStyle = "rgba(255,255,255,.2)";
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  if (plans.length) {
+    ctx.beginPath();
+    ctx.strokeStyle = "#9fdfff";
+    ctx.lineWidth = 1.5;
+    ctx.setLineDash([3, 2.5]);
+    ctx.lineJoin = "bevel";
+    ctx.lineCap = "butt";
+    if (planFits && plans.length >= 2) {
+      const planCoords = plans.map((point) => {
+        const index = actual.findIndex((item) => String(item.date) === String(point.date));
+        if (index < 0) return null;
+        return { x: xAt(index), y: yOn(Number(point.value), lo, hi, top, bottom) };
+      }).filter(Boolean);
+      planCoords.forEach((point, index) => (index ? ctx.lineTo(point.x, point.y) : ctx.moveTo(point.x, point.y)));
+    } else if (planFits) {
+      const y = yOn(Number(plans[0].value), lo, hi, top, bottom);
+      ctx.moveTo(left, y);
+      ctx.lineTo(right, y);
+    } else {
+      const above = Number(plans.at(-1).value) > aMax;
+      const y = above ? top : bottom;
+      ctx.moveTo(left, y);
+      ctx.lineTo(right, y);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = "#9fdfff";
+      ctx.textAlign = "right";
+      ctx.textBaseline = "top";
+      ctx.fillText(compactNumber(plans.at(-1).value), right, top + 1);
+    }
+    if (planFits) ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  const color = TILE_COLORS[seriesAccent(series)] || TILE_COLORS.gold;
+  strokePath(ctx, coords, color);
+  for (const point of coords) {
+    ctx.beginPath();
+    ctx.arc(point.x, point.y, 2.2, 0, Math.PI * 2);
+    ctx.fillStyle = color;
+    ctx.fill();
+  }
+  ctx.fillStyle = "rgba(244,241,234,.9)";
+  ctx.textBaseline = "bottom";
+  const first = coords[0];
+  const last = coords.at(-1);
+  ctx.textAlign = "left";
+  ctx.fillText(compactNumber(first.value), Math.min(first.x + 4, right - 36), Math.max(12, first.y - 1));
+  ctx.textAlign = "right";
+  ctx.fillText(compactNumber(last.value), Math.max(last.x - 4, left + 36), Math.max(12, last.y - 1));
+}
+
+/** Week path: straight segments through the finest prints, faint day lines, Mo–Fr. */
+export function drawWeekSpark(canvas, points, color) {
+  const prepared = prepareCanvas(canvas, 320, 72);
+  if (!prepared) return;
+  const { ctx, width, height } = prepared;
+  const rows = (points || []).filter((point) => point?.t && Number.isFinite(Number(point.eur)));
+  ctx.font = "10px -apple-system, BlinkMacSystemFont, sans-serif";
+  if (rows.length < 2) {
+    ctx.fillStyle = "#b7c0d0";
+    ctx.fillText("Keine Woche.", 4, 28);
+    return;
+  }
+  const times = rows.map((point) => Date.parse(point.t));
+  const t0 = times[0];
+  const spanT = (times.at(-1) - t0) || 1;
+  const vals = rows.map((point) => Number(point.eur));
+  let lo = Math.min(...vals);
+  let hi = Math.max(...vals);
+  const pad = (hi - lo || 1) * 0.16;
+  lo -= pad;
+  hi += pad;
+  const top = 6;
+  const bottom = height - 16;
+  const left = 2;
+  const right = width - 2;
+  const coords = rows.map((point, index) => ({
+    x: left + ((times[index] - t0) / spanT) * (right - left),
+    y: yOn(Number(point.eur), lo, hi, top, bottom),
+    day: point.day
+  }));
+  ctx.beginPath();
+  ctx.moveTo(left, coords[0].y);
+  ctx.lineTo(right, coords[0].y);
+  ctx.strokeStyle = "rgba(255,255,255,.18)";
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  const days = [];
+  for (const point of coords) {
+    const group = days.at(-1);
+    if (!group || group.day !== point.day) days.push({ day: point.day, x0: point.x, x1: point.x });
+    else group.x1 = point.x;
+  }
+  ctx.strokeStyle = "rgba(255,255,255,.16)";
+  ctx.lineWidth = 1;
+  ctx.fillStyle = "#b7c0d0";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "bottom";
+  days.forEach((day, index) => {
+    if (index > 0) {
+      ctx.beginPath();
+      ctx.moveTo(day.x0, top);
+      ctx.lineTo(day.x0, bottom);
+      ctx.stroke();
+    }
+    const mid = (day.x0 + Math.max(day.x1, day.x0 + 8)) / 2;
+    ctx.fillText(weekdayShort(day.day), mid, height - 1);
+  });
+  strokePath(ctx, coords, color || "#e4b15a");
+}
+
 export function drawCharts(data, ui) {
   document.querySelectorAll("canvas[data-chart]").forEach((canvas) => {
     const kind = canvas.dataset.chart;
@@ -456,7 +645,21 @@ export function drawCharts(data, ui) {
       drawLineChart(canvas, points, { color, axes: true, scrub: true, instrument: true });
     } else if (kind === "prod") {
       const series = (data.production?.series || []).find((item) => item.id === canvas.dataset.series);
-      drawLineChart(canvas, (series?.points || []).map((point) => ({ t: point.date, eur: point.value })), { color: "#e4b15a" });
+      drawTileSpark(canvas, series);
+    } else if (kind === "week") {
+      const symbol = canvas.dataset.symbol;
+      const weekly = data.weekly || {};
+      const row = (weekly.symbols || []).find((item) => item.symbol === symbol);
+      const ticker = (data.prices?.tickers || []).find((item) => item.symbol === symbol);
+      let points = weekCurve(ticker?.history, weekly.sessions || {});
+      if (points.length < 2 && row?.closes?.length) {
+        points = row.closes
+          .filter((point) => point?.t && point.eur != null)
+          .map((point) => ({ t: `${point.t}T16:00:00.000Z`, eur: Number(point.eur), day: String(point.t).slice(0, 10) }));
+      }
+      const move = priceMove(row?.startEur, row?.endEur);
+      const color = move == null ? "#e4b15a" : move < 0 ? "#ff8b98" : move > 0 ? "#7ddec0" : "#b7c0d0";
+      drawWeekSpark(canvas, points, color);
     } else if (kind === "hit") {
       const investor = (data.crowd?.investors || []).find((item) => item.id === canvas.dataset.investor);
       drawLineChart(canvas, (investor?.hitRateHistory || []).map((point) => ({ t: point.date, eur: point.hitRatePct })), { color: "#9fdfff" });

@@ -1,8 +1,12 @@
 {
   "example": false,
   "asOf": "2026-11-07",
+  "lede": "Was die Firmen wirklich schaffen – nicht der Kurs.",
   "nextLaunch": {
     "name": "Starship Flight 15 (Doppel-Fang Booster+Schiff)",
+    "headline": "Starship Flight 15",
+    "shortNote": "Erster Fang von Booster und Schiff",
+    "statusNote": "Zulassung steht noch aus",
     "target": "2026-11-13T23:45:00+01:00",
     "livestreamUrl": "https://x.com/SpaceX",
     "status": "geplant",
@@ -53,6 +57,19 @@
         }
       ],
       "note": "2026 bis einschließlich 04.11.: Flight 12 (22.05.), 13 (24.07.), 14 (28.09.).",
+      "caption": "Flight 12–14 bisher",
+      "accent": "gold",
+      "order": 3,
+      "plan": [
+        {
+          "date": "2026",
+          "value": 25,
+          "source": {
+            "title": "FAA: bis zu 25 Starship-Starts pro Jahr ab Starbase",
+            "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
+          }
+        }
+      ],
       "sources": [
         {
           "title": "Wikipedia: List of Starship launches",
@@ -93,6 +110,8 @@
         }
       ],
       "note": "Abonnenten im Endkundengeschäft laut SpaceX-Quartalsbericht. Umsatz je Kunde im Q3: 69 US-Dollar (Vorjahr 83).",
+      "accent": "up",
+      "order": 1,
       "sources": [
         {
           "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",
@@ -103,8 +122,11 @@
     {
       "id": "tesla_deliveries",
       "label": "Tesla-Auslieferungen pro Quartal",
+      "shortLabel": "Auslieferungen Q3 2026",
       "unit": "Fahrzeuge",
       "company": "Tesla",
+      "accent": "up",
+      "order": 4,
       "example": false,
       "points": [
         {
@@ -176,6 +198,14 @@
         }
       ],
       "note": "Alle Raketen (Falcon und Starship). Im gleichen Zeitraum 2025 waren es 128 – die Kadenz ist also gesunken.",
+      "shortLabel": "SpaceX-Starts 2026",
+      "accent": "ice",
+      "order": 2,
+      "benchmark": {
+        "value": 128,
+        "label": "Vorjahr gleiche Zeit",
+        "note": "kumuliert bis Ende Q3"
+      },
       "sources": [
         {
           "title": "SpaceX: Ergebnisse Q3 2026 (SEC, Exhibit 99.1)",

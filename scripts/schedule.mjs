@@ -2,22 +2,13 @@ import fs from "node:fs";
 import { pathToFileURL } from "node:url";
 import { usSessionActive } from "./market.mjs";
 
-/** Feste Uhrzeiten Europe/Berlin. Am Wochenende zählt ein Lauf,
- *  wenn er höchstens SLOT_TOLERANCE_MIN nach so einem Slot startet.
+/** Feste Uhrzeiten Europe/Berlin, nur Samstag und Sonntag.
+ *  Ein Lauf zählt, wenn er höchstens SLOT_TOLERANCE_MIN nach so einem Slot startet.
  *  Werktags entscheidet das Band in shouldRun, nicht diese Liste. */
 export const FIXED_SLOTS = [
-  [5, 0],
-  [6, 30],
-  [8, 30],
-  [9, 30],
-  [11, 30],
-  [13, 0],
+  [9, 0],
   [14, 0],
-  [15, 0],
-  [16, 0],
-  [18, 0],
-  [20, 0],
-  [22, 0]
+  [20, 0]
 ];
 
 /** GitHub startet den Cron oft später als geplant. 45 Minuten reichen,
@@ -56,19 +47,22 @@ export function berlinParts(date = new Date()) {
  * Mo–Fr: jeder Start zwischen 05:00 und 22:15 Berlin zählt, auch wenn der
  * Cron später als der 5-Minuten-Takt kommt. Zusätzlich, solange in New York
  * Vorbörse, Regulärhandel oder Nachhandel läuft (plus 30 Minuten Puffer).
- * Sa/So: nur die festen Slots, mit 45 Minuten Toleranz danach.
+ * Sa/So: nur 09:00, 14:00 und 20:00, mit 45 Minuten Toleranz danach.
+ * Ein offener US-Handel öffnet das Wochenende nicht zusätzlich.
  */
 export function shouldRun(parts, { force = false, usOpen = false } = {}) {
   if (force) return true;
   const minutes = parts.hour * 60 + parts.minute;
   const weekday = parts.weekday;
-  if (weekday >= 0 && weekday <= 4 && minutes >= WEEKDAY_START && minutes <= WEEKDAY_END) return true;
+  if (weekday === 5 || weekday === 6) {
+    return FIXED_SLOTS.some(([hour, minute]) => {
+      const delta = minutes - (hour * 60 + minute);
+      return delta >= 0 && delta <= SLOT_TOLERANCE_MIN;
+    });
+  }
+  if (minutes >= WEEKDAY_START && minutes <= WEEKDAY_END) return true;
   if (usOpen) return true;
-  if (weekday >= 0 && weekday <= 4) return false;
-  return FIXED_SLOTS.some(([hour, minute]) => {
-    const delta = minutes - (hour * 60 + minute);
-    return delta >= 0 && delta <= SLOT_TOLERANCE_MIN;
-  });
+  return false;
 }
 
 function isMain() {
