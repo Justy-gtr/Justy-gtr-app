@@ -178,7 +178,7 @@
     },
     {
       "id": "evt-robotaxi-san-antonio",
-      "title": "Tesla: Robotaxi startet in San Antonio",
+      "title": "Tesla: Robotaxi startet in San Antonio — gestartet",
       "date": "2026-11-09",
       "time": "12:00",
       "timezone": "Europe/Berlin",
@@ -188,13 +188,13 @@
       "tickers": [
         "TSLA"
       ],
-      "probabilityPct": 90,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "Tesla schrieb „ab morgen, 5 Uhr“ und auf Nachfrage „Monday“ — also heute 5:00 Uhr Texas-Zeit (= 12:00 Berlin). Die Zeit ist erreicht; eine eigene Bestätigung erster Fahrten fehlt noch (Stand 12:05). EVwire und RuntimeWire lesen den Start als Di 10.11.; das Datum kann sich also um einen Tag verschieben. Laut EVwire-Kartenauswertung etwa 275 Quadratmeilen, das größte Startgebiet bisher. Um 12:00 meldete @robotaxi zusätzlich ein größeres Fahrgebiet in Austin. 90 % unverändert. Kurswirkung eher gering, aber Teil der Robotaxi-Geschichte; in San Antonio fährt Waymo bereits.",
+      "reasoning": "Eingetreten: Tesla (@robotaxi) nannte „ab morgen, 5 Uhr“ und auf Nachfrage „Monday“; TechCrunch, Tesla Oracle und Stocktwits melden den Start am Mo 9.11. um 5:00 Uhr Ortszeit (12:00 Berlin). San Antonio ist damit die achte Robotaxi-Stadt. Die Startzone soll laut Sawyer Merritt rund 275 Quadratmeilen groß sein (seine Zählung, nicht von Tesla). Tesla nennt weder Preise noch Flottengröße oder ob Sicherheitsfahrer an Bord sind. Am selben Tag schrieb @robotaxi um 12:00: größeres Fahrgebiet in Austin live; Robotaxi Tracker misst dort jetzt 435 statt 272 Quadratmeilen. Kurswirkung eher klein, es stützt aber die Robotaxi-Geschichte.",
       "example": false,
       "sources": [
         {
-          "title": "@robotaxi: Robotaxi available in San Antonio",
+          "title": "@robotaxi: Robotaxi available in San Antonio starting tomorrow, 5am",
           "url": "https://x.com/robotaxi/status/2119678179963187564"
         },
         {
@@ -202,20 +202,24 @@
           "url": "https://x.com/robotaxi/status/2119680468392276192"
         },
         {
-          "title": "RuntimeWire: Start 10.11. 5 Uhr",
-          "url": "https://runtimewire.com/article/tesla-robotaxi-san-antonio-november-10"
+          "title": "TechCrunch: Tesla expands robotaxi service to San Antonio",
+          "url": "https://techcrunch.com/2026/11/09/tesla-expands-robotaxi-service-to-san-antonio/"
         },
         {
-          "title": "Austin American-Statesman: Robotaxi bald in San Antonio",
-          "url": "https://www.statesman.com/business/article/tesla-robotaxi-service-san-antonio-22495640.php"
+          "title": "Tesla Oracle: Robotaxi in San Antonio gestartet (9.11.)",
+          "url": "https://www.teslaoracle.com/2026/11/09/after-fort-worth-tesla-launches-robotaxi-service-in-san-antonio-texas-today-nov-9-now-available-in-8-cities/"
         },
         {
-          "title": "EVwire: San Antonio, ~275 Quadratmeilen (9.11.)",
-          "url": "https://evwire.com/p/tesla-robotaxi-san-antonio-launch-geofence-details"
+          "title": "Stocktwits: Robotaxi Makes San Antonio Debut",
+          "url": "https://stocktwits.com/news-articles/markets/equity/elon-musk-says-tesla-will-refund-deposits-to-lot-of-people-as-cybertruck-production-winds-down/cNGr7JrR9en"
         },
         {
           "title": "@robotaxi: Bigger Austin service area now live",
           "url": "https://x.com/robotaxi/status/2119746828191027346"
+        },
+        {
+          "title": "Robotaxi Tracker: Austin 272 → 435 Quadratmeilen",
+          "url": "https://robotracker.app/updates?city_id=1"
         }
       ]
     },
@@ -361,7 +365,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten über Südaustralien. Die Burn-Zeit ist vorbei, eine Bestätigung fehlt noch (Stand 12:05): NASA-Blog letzter Eintrag 2.11., keine Posts von NASA, @RocketLab oder @escapade_mars. Auch Blue (7.11.) ist nach rund 55 Stunden nicht offiziell bestätigt. NASA sagte vorab, die Auswertung der Bahnen dauere einige Tage. Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering; heute 23:00 kommen ohnehin die Q3-Zahlen.",
+      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten über Südaustralien. Die Burn-Zeit ist seit über einer Stunde vorbei, eine Bestätigung fehlt weiter (Stand 13:15): NASA-Blog letzter Eintrag 2.11., keine Posts von NASA, @RocketLab oder @escapade_mars seit dem Morgen. Auch Blue (7.11.) ist nach rund 57 Stunden nicht offiziell bestätigt; Orbinauts schreibt, NASA habe sich zu Blue noch nicht geäußert. NASA sagte vorab, die Auswertung der Bahnen dauere einige Tage. Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering; heute 23:00 kommen ohnehin die Q3-Zahlen, dort dürfte Rocket Lab den Stand nennen.",
       "example": false,
       "sources": [
         {
@@ -385,6 +389,10 @@
           "url": "https://thespacetap.com/nasa-escapade-earth-flyby-slingshot-mars-nov-7-9/"
         },
         {
+          "title": "Orbinauts: Gold feuert am 9.11., Blue noch ohne NASA-Ergebnis",
+          "url": "https://orbinauts.com/news/nasas-escapade-gold-short-of-thrust-last-december-fires-its-engine-past-earth-on-9-november-to-head-for-mars/"
+        },
+        {
           "title": "Starlust: Blue „erfolgreich“ (nicht offiziell, 7.11.)",
           "url": "https://starlust.org/nasas-first-escapade-orbiter-swings-past-earth-on-trip-to-mars-second-set-to-fly-by-on-november-9/"
         },
@@ -397,7 +405,7 @@
           "url": "https://x.com/NASASolarSystem/status/2119494168728789467"
         },
         {
-          "title": "NASA ESCAPADE Blog-Archiv (Stand 9.11. 12:05: kein Post-Burn-Update)",
+          "title": "NASA ESCAPADE Blog-Archiv (Stand 9.11. 13:15: kein Post-Burn-Update)",
           "url": "https://science.nasa.gov/blogs/escapade/"
         },
         {

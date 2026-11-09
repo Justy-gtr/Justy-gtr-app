@@ -7331,27 +7331,19 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Kein US-Handel seit Freitag (Schluss 134,27 $, +8,6 % zum Donnerstag). Die angezeigten −0,3 % vergleichen mit einem falschen Schlusskurs, nicht mit Freitag. Mo: Nasdaq-Futures etwa unverändert, Nvidia vorbörslich ~−4 % wegen der Huang-Untersuchung. Heute 18:00 Trump–Katar, Di 04:03 USSF-627, Di 14:30 CPI.",
+      "why": "Der Kurs zeigt noch Freitag: +8,6 % auf 134,27 $, nachdem Musk sagte, Staatsaufträge fielen im 4. Quartal unter 10 % des Umsatzes, und ~70 % Umsatzplus zum Vorquartal nannte. Vorbörslich Mo ~+1 % (≈135,60 $, nahe Ausgabepreis 135 $). Bremse: Cramer warnt vor neuen frei handelbaren Aktien (8.12. Haltefrist-Ende).",
       "whySources": [
+        {
+          "title": "TipRanks: Why SpaceX Stock Jumped 8% (6.11.)",
+          "url": "https://www.tipranks.com/news/why-spacex-stock-spcx-jumped-8-today-november-6-2026"
+        },
+        {
+          "title": "Coinpedia: SPCX vorbörslich +0,99 % (9.11.)",
+          "url": "https://coinpedia.org/crypto-live-news/spacex-stock-premarket-today-spcx-rises-near-ipo-price-as-cramer-flags-unlock-risk/"
+        },
         {
           "title": "Yahoo Finance SPCX: Tagesschlusskurse",
           "url": "https://finance.yahoo.com/quote/SPCX/history/"
-        },
-        {
-          "title": "Yahoo Finance: Stock market today (9.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
-        },
-        {
-          "title": "Globe and Mail/Reuters: Nasdaq-Futures flach, Nvidia −4 %",
-          "url": "https://www.theglobeandmail.com/investing/markets/inside-the-market/market-news/article-premarket-stocks-edge-up-but-nvidia-woes-pose-a-fresh-test-oil-falls/"
-        },
-        {
-          "title": "FXStreet/Reuters: Trump trifft Katars Premier",
-          "url": "https://www.fxstreet.com/news/us-president-donald-trump-will-meet-qatars-prime-minister-on-monday-202611090430"
-        },
-        {
-          "title": "SpaceX: USSF-627",
-          "url": "https://www.spacex.com/launches/ussf627"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -19380,23 +19372,23 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Die angezeigten etwa −12 % sind der Abstand zum Schluss vom 2.11. (367 €), kein Absturz heute. Zum Freitag (323,70 €) liegt Xetra bei ~321 € (~−1 %). Nasdaq-Futures etwa unverändert. Robotaxi: größeres Austin-Gebiet seit 12:00 live, San Antonio laut Tesla ab heute.",
+      "why": "Ruhiger Tag: Xetra ~−0,7 % zum Freitag, vorbörslich in den USA ~+0,2 %. Im Blick: Musks Plan, die Cybertruck-Linie um Mitte 2027 für mehr Cybercabs abzubauen, und Robotaxi seit heute in San Antonio plus größeres Austin-Gebiet. Nasdaq-Futures leicht im Plus, Nvidia vorbörslich ~−4 % (Huang-Untersuchung).",
       "whySources": [
         {
-          "title": "Yahoo Finance TL0.DE: Tagesschlusskurse",
-          "url": "https://finance.yahoo.com/quote/TL0.DE/history/"
+          "title": "Yahoo Finance/Stocktwits: Futures, TSLA vorbörslich +0,2 % (9.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-rise-dow-114052138.html"
         },
         {
-          "title": "Yahoo Finance: Stock market today (9.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
+          "title": "TechCrunch: Tesla expands robotaxi service to San Antonio",
+          "url": "https://techcrunch.com/2026/11/09/tesla-expands-robotaxi-service-to-san-antonio/"
         },
         {
           "title": "@robotaxi: Bigger Austin service area now live",
           "url": "https://x.com/robotaxi/status/2119746828191027346"
         },
         {
-          "title": "@robotaxi: Robotaxi available in San Antonio",
-          "url": "https://x.com/robotaxi/status/2119678179963187564"
+          "title": "Investing.com/Reuters: Futures steigen, Nvidia belastet",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-rise-after-rough-week-but-nvidia-unsettles-investors-5011103"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -33032,7 +33024,7 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Die angezeigten −6,3 % sind der Abstand zum Schluss vom 2.11. (49,80 €). Zum Freitag (47,35 €) liegt Frankfurt bei 46,65 € (~−1,5 %), dünner Handel, keine eigene Nachricht. Heute 23:00 Q3-Zahlen: Konsens ~257 Mio. $ Umsatz, Marge laut Prognose 29–31 %. ESCAPADE: Gold-Burn um 11:51 geplant, Bestätigung fehlt noch.",
+      "why": "Kaum Bewegung vor den Zahlen: Frankfurt ~−1,5 % zum Freitag bei dünnem Handel, keine eigene Nachricht. Heute 23:00 Q3-Zahlen (Konsens ~257 Mio. $ Umsatz, Marge laut Prognose 29–31 %). ESCAPADE: Gold-Burn war für 11:51 geplant, eine offizielle Bestätigung fehlt noch (Stand 13:15).",
       "whySources": [
         {
           "title": "Yahoo Finance 6RJ0.F: Tagesschlusskurse",
@@ -33041,6 +33033,10 @@
         {
           "title": "EBC: RKLB Q3-Vorschau",
           "url": "https://www.ebc.com/forex/rocket-lab-rklb-q3-2026-earnings-preview"
+        },
+        {
+          "title": "Yahoo Finance/Stocktwits: RKLB berichtet heute (9.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-rise-dow-114052138.html"
         },
         {
           "title": "NASA ESCAPADE Blog",
