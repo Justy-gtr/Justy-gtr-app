@@ -1236,6 +1236,37 @@
           "url": "https://za.investing.com/news/commodities-news/oil-prices-dip-as-trump-says-new-iran-attacks-unlikely-if-talks-progress-4560249"
         }
       ]
+    },
+    {
+      "id": "evt-starbase-rechenzentrum",
+      "title": "Starbase: Anhörung zu Steuernachlass für SpaceX-Gaskraftwerk und Supercomputer (24 Mrd. $)",
+      "date": "2026-12-10",
+      "time": "02:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "regulierung",
+      "company": "City of Starbase",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 90,
+      "impact": "niedrig",
+      "reasoning": "Die Stadt Starbase hat am 6.11. eine Anhörung für Mi 9.12. um 19 Uhr Ortszeit angekündigt (in Berlin 10.12., 2 Uhr). SpaceX will auf rund 444 Acres bei Brownsville ein Gaskraftwerk und eine „super-compute facility“ bauen, erste Phasen etwa 24 Mrd. $. Die Kommission berät einen Steuernachlass (Chapter 312) und eine Fördervereinbarung (Chapter 380); beschlossen ist nichts. 90 %, weil der Termin amtlich und gesetzlich vorgeschrieben ist und die Stadt SpaceX nahesteht. Kurswirkung gering, zeigt aber das Tempo beim Ausbau der KI-Rechenleistung.",
+      "example": false,
+      "sources": [
+        {
+          "title": "The 956 Report: SpaceX will Steuernachlass für 24-Mrd.-$-Projekt",
+          "url": "https://www.the956report.com/post/spacex-wants-a-tax-break-for-a-24-billion-gas-plant-and-super-compute-facility-in-starbase"
+        },
+        {
+          "title": "RGV Business Journal: SpaceX seeks economic incentives",
+          "url": "https://www.rgvbusinessjournal.com/news/08/11/2026/spacex-seeks-economic-incentives-for-24b-starbase-data-center-and-power-plant/"
+        },
+        {
+          "title": "CoinDesk: SpaceX plant 24-Mrd.-$-Supercomputer (9.11.)",
+          "url": "https://www.coindesk.com/markets/2026/11/09/spacex-proposes-a-usd24-billion-texas-supercomputer-worth-17-times-its-bitcoin-pile"
+        }
+      ]
     }
   ]
 }

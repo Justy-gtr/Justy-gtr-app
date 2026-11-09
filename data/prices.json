@@ -9324,19 +9324,23 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Kein Handel seit Freitag (Schluss ~134 $, ~+8,6 %). Mo früh: US-Futures im Plus (Nasdaq ~+0,6 %), obwohl Nvidia wegen der Untersuchung gegen den Chef nachbörslich ~−3 % lag. Heute 18:00 Trump–Katar zu Iran. Di 04:03 USSF-627, Di 14:30 CPI, Fr Flight 15.",
+      "why": "Kein US-Handel seit Freitag (Schluss ~134 $, ~+8,6 %). Mo früh: Nasdaq-Futures erst im Plus, dann leicht im Minus (~−0,3 bis −0,5 %) wegen der Untersuchung gegen Nvidia-Chef Huang. Neu: SpaceX plant in Starbase Gaskraftwerk und Supercomputer (~24 Mrd. $), Anhörung 9.12. Heute 18:00 Trump–Katar, Di 04:03 USSF-627, Di 14:30 CPI.",
       "whySources": [
         {
           "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Yahoo Finance: US-Futures erholen sich (9.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-034814953.html"
+          "title": "Investing.com: Nasdaq-100-Futures (9.11. 07:40)",
+          "url": "https://uk.investing.com/indices/nq-100-futures-historical-data"
         },
         {
-          "title": "The Star/Reuters: Nvidia falls about 3% (9.11.)",
-          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/09/nvidia-falls-about-3-in-after-hours-and-perpetual-futures-trade"
+          "title": "CNBC TV18: Nasdaq-Futures drehen wegen Nvidia ins Minus (9.11.)",
+          "url": "https://www.cnbctv18.com/market/dow-jones-nasdaq-snp-500-nvidia-ceo-jensen-huang-investigation-impact-key-wall-street-triggers-this-week-20029944.htm"
+        },
+        {
+          "title": "The 956 Report: Starbase-Supercomputer",
+          "url": "https://www.the956report.com/post/spacex-wants-a-tax-break-for-a-24-billion-gas-plant-and-super-compute-facility-in-starbase"
         },
         {
           "title": "FXStreet/Reuters: Treffen 17:00 GMT im Weißen Haus",
@@ -23612,11 +23616,19 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Die angezeigten etwa −9,8 % sind die Wochenbewegung, kein neuer Absturz. Freitag-Schluss ~358 $ (~+4,6 %). Mo früh: US-Futures im Plus. Neu: Robotaxi startet heute in San Antonio; Musk sagt, die Cybertruck-Linie schließt in ~8 Monaten für Cybercab.",
+      "why": "Die angezeigten etwa −9,8 % sind die Wochenbewegung, kein neuer Absturz. Xetra früh ~320 € (~−1 % zum Freitag), Nasdaq-Futures leicht im Minus wegen Nvidia. Robotaxi startet heute 12:00 Berlin in San Antonio; Musk: Cybertruck-Linie schließt in ~8 Monaten für Cybercab.",
       "whySources": [
         {
-          "title": "Yahoo Finance: US-Futures erholen sich (9.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-034814953.html"
+          "title": "Yahoo Finance: TL0.DE",
+          "url": "https://finance.yahoo.com/quote/TL0.DE/"
+        },
+        {
+          "title": "Investing.com: Nasdaq-100-Futures (9.11. 07:40)",
+          "url": "https://uk.investing.com/indices/nq-100-futures-historical-data"
+        },
+        {
+          "title": "CNBC TV18: Nasdaq-Futures drehen wegen Nvidia ins Minus (9.11.)",
+          "url": "https://www.cnbctv18.com/market/dow-jones-nasdaq-snp-500-nvidia-ceo-jensen-huang-investigation-impact-key-wall-street-triggers-this-week-20029944.htm"
         },
         {
           "title": "@robotaxi: San Antonio",
@@ -39047,11 +39059,15 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Kein Handel seit Freitag (Schluss ~53 $, ~+15 %: Space-/Defense-Erholung). Heute: ESCAPADE-Gold-Burn 11:51, Q3-Zahlen 23:00 Berlin. Blue-Burn vom 7.11. weiter nicht offiziell bestätigt (Stand 08:40).",
+      "why": "Kein US-Handel seit Freitag (Schluss ~53 $, ~+15 %). Frankfurt früh ~46,2 € (~−2,4 %) bei dünnem Handel; keine eigene Nachricht gefunden, Nasdaq-Futures leicht im Minus. Heute: ESCAPADE-Gold-Burn 11:51, Q3-Zahlen 23:00. Blue-Burn vom 7.11. weiter nicht offiziell bestätigt (Stand 09:40).",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB",
-          "url": "https://finance.yahoo.com/quote/RKLB/"
+          "title": "Yahoo Finance: 6RJ0.F",
+          "url": "https://finance.yahoo.com/quote/6RJ0.F/"
+        },
+        {
+          "title": "Investing.com: Nasdaq-100-Futures (9.11. 07:40)",
+          "url": "https://uk.investing.com/indices/nq-100-futures-historical-data"
         },
         {
           "title": "@NASASolarSystem: Flyby #2 is tonight",
