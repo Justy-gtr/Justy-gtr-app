@@ -1,12 +1,12 @@
 {
   "example": false,
   "disclaimer": "Keine Anlageberatung. Hebel kann Totalverlust bedeuten. Vergangenheit, keine Vorhersage.",
-  "asOf": "2026-11-09T21:51:03+01:00",
+  "asOf": "2026-11-09T22:00:00+01:00",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1223,
+    "rate": 1.1225,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-09T21:50:30+01:00",
+    "asOf": "2026-11-09T22:39:31+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -160,10 +160,10 @@
           "url": "https://support.traderepublic.com/de-de/87"
         }
       ],
-      "priceUsd": 178.38,
-      "priceEur": 158.93,
+      "priceUsd": 178.67,
+      "priceEur": 159.18,
       "previousCloseUsd": 186.64,
-      "changePct": -4.43,
+      "changePct": -4.27,
       "eurMethod": "usd_div_eurusd",
       "sparkline": [
         212,
@@ -189,9 +189,9 @@
         178.57,
         161.64,
         166.22,
-        158.93
+        159.18
       ],
-      "asOf": "2026-11-09T21:51:02+01:00",
+      "asOf": "2026-11-09T22:00:00+01:00",
       "marketSource": {
         "title": "Yahoo Finance NVDA",
         "url": "https://finance.yahoo.com/quote/NVDA"
@@ -344,10 +344,10 @@
           "url": "https://support.traderepublic.com/de-de/87"
         }
       ],
-      "priceUsd": 208.01,
-      "priceEur": 185.34,
+      "priceUsd": 207.4,
+      "priceEur": 184.77,
       "previousCloseUsd": 214.87,
-      "changePct": -3.19,
+      "changePct": -3.48,
       "eurMethod": "usd_div_eurusd",
       "sparkline": [
         182.13,
@@ -373,9 +373,9 @@
         186.4,
         189.91,
         191.37,
-        185.34
+        184.77
       ],
-      "asOf": "2026-11-09T21:51:00+01:00",
+      "asOf": "2026-11-09T22:00:00+01:00",
       "marketSource": {
         "title": "Yahoo Finance TTWO",
         "url": "https://finance.yahoo.com/quote/TTWO"
@@ -528,10 +528,10 @@
           "url": "https://support.traderepublic.com/de-de/87"
         }
       ],
-      "priceUsd": 153.88,
-      "priceEur": 137.11,
+      "priceUsd": 154.6,
+      "priceEur": 137.73,
       "previousCloseUsd": 141.2,
-      "changePct": 8.98,
+      "changePct": 9.49,
       "eurMethod": "usd_div_eurusd",
       "sparkline": [
         254.15,
@@ -557,9 +557,9 @@
         142.59,
         118.87,
         125.75,
-        137.11
+        137.73
       ],
-      "asOf": "2026-11-09T21:51:03+01:00",
+      "asOf": "2026-11-09T22:00:00+01:00",
       "marketSource": {
         "title": "Yahoo Finance MRVL",
         "url": "https://finance.yahoo.com/quote/MRVL"
@@ -580,7 +580,7 @@
       "2026-11-11",
       "2026-11-12"
     ],
-    "asOf": "2026-11-09T21:51:03+01:00",
+    "asOf": "2026-11-09T22:00:03+01:00",
     "sources": [
       {
         "title": "Nasdaq: Zahlentermine",
@@ -703,10 +703,10 @@
             "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
           }
         ],
-        "priceUsd": 6.58,
-        "priceEur": 5.86,
+        "priceUsd": 6.64,
+        "priceEur": 5.92,
         "previousCloseUsd": 6.35,
-        "changePct": 3.54,
+        "changePct": 4.57,
         "eurMethod": "usd_div_eurusd",
         "sparkline": [
           9.25,
@@ -732,9 +732,9 @@
           6.13,
           5.23,
           5.66,
-          5.86
+          5.92
         ],
-        "asOf": "2026-11-09T21:51:03+01:00",
+        "asOf": "2026-11-09T22:00:01+01:00",
         "marketSource": {
           "title": "Yahoo Finance MARA",
           "url": "https://finance.yahoo.com/quote/MARA"
@@ -851,10 +851,10 @@
             "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
           }
         ],
-        "priceUsd": 22.91,
-        "priceEur": 20.41,
+        "priceUsd": 22.94,
+        "priceEur": 20.44,
         "previousCloseUsd": 26,
-        "changePct": -11.9,
+        "changePct": -11.77,
         "eurMethod": "usd_div_eurusd",
         "sparkline": [
           26.37,
@@ -880,9 +880,9 @@
           23.79,
           21.42,
           23.16,
-          20.41
+          20.44
         ],
-        "asOf": "2026-11-09T21:51:03+01:00",
+        "asOf": "2026-11-09T22:00:03+01:00",
         "marketSource": {
           "title": "Yahoo Finance HIMS",
           "url": "https://finance.yahoo.com/quote/HIMS"
@@ -999,10 +999,10 @@
             "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
           }
         ],
-        "priceUsd": 275.02,
-        "priceEur": 245.05,
+        "priceUsd": 276.09,
+        "priceEur": 245.97,
         "previousCloseUsd": 249.95,
-        "changePct": 10.03,
+        "changePct": 10.46,
         "eurMethod": "usd_div_eurusd",
         "sparkline": [
           267.46,
@@ -1028,9 +1028,9 @@
           219.25,
           213.31,
           222.61,
-          245.05
+          245.97
         ],
-        "asOf": "2026-11-09T21:51:03+01:00",
+        "asOf": "2026-11-09T22:00:01+01:00",
         "marketSource": {
           "title": "Yahoo Finance CEG",
           "url": "https://finance.yahoo.com/quote/CEG"
