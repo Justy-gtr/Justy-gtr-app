@@ -15,7 +15,7 @@
       ],
       "probabilityPct": 65,
       "impact": "hoch",
-      "reasoning": "Stand So 22:10: SpaceX-Missionsseite unverändert. Flight 15 zielt auf frühestens Freitag 13.11., vorbehaltlich Zulassung; Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), 75 Minuten. Blog „Returning Starship to the Launch Site“ beschreibt Ship-Catch (Orbit ~21 h, Deorbit, Bellyflop, Chopsticks Pad 2) plus fünf Contingency-Splashdowns. FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin. Musk „more likely than not“ für Ship-Catch. 65 % unverändert: offizielle Zielangabe + Catch-Plan; Lizenz und Fang-Risiko bleiben. Impact hoch für SPCX.",
+      "reasoning": "Stand Mo 05:10: SpaceX-Missionsseite unverändert, FAA-Lizenz weiter nicht gelistet. Flight 15 zielt auf frühestens Freitag 13.11., vorbehaltlich Zulassung; Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), 75 Minuten. Blog „Returning Starship to the Launch Site“ beschreibt Ship-Catch (Orbit ~21 h, Deorbit, Bellyflop, Chopsticks Pad 2) plus fünf Contingency-Splashdowns. FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin. Musk „more likely than not“ für Ship-Catch. 65 % unverändert: offizielle Zielangabe + Catch-Plan; Lizenz und Fang-Risiko bleiben. Impact hoch für SPCX.",
       "example": false,
       "sources": [
         {
@@ -318,7 +318,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Gold-Burn Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten. Blue sollte am 7.11. um 10:51 Berlin zünden. Stand So 22:10 Berlin: rund 35 Stunden danach weiter keine offizielle Meldung von NASA-Blog (letzter Eintrag 2.11.), @NASA, @RocketLab oder @escapade_mars. Starlust und einzelne X-Konten schreiben „erfolgreich“ bzw. „completed“, stützen sich aber auf NASAs Vorab-Text; The Space Tap hält den Blue-Ausgang weiter für unbestätigt. Keine Hinweise auf ein Problem, aber auch keine Bestätigung. 85 % unverändert. Kurswirkung gering.",
+      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten. @NASASolarSystem schrieb am So „Flyby #2 is tonight“ — der Termin steht. Blue (7.11.) ist auch nach rund 42 Stunden nicht offiziell bestätigt: NASA-Blog letzter Eintrag 2.11., @RocketLab und @escapade_mars still. Starlust schreibt „erfolgreich“, stützt sich aber auf NASAs Vorab-Text. Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -332,10 +332,6 @@
         {
           "title": "@RocketLab: See you soon, Mars",
           "url": "https://x.com/RocketLab/status/2118544706066055248"
-        },
-        {
-          "title": "NASA ESCAPADE Blog-Archiv (Stand 8.11. 18:20: kein Post-Burn-Update)",
-          "url": "https://science.nasa.gov/blogs/escapade/"
         },
         {
           "title": "@NASASolarSystem: Flyby #1 (Vorabend)",
@@ -352,6 +348,14 @@
         {
           "title": "@jeff_on_orbit: Blue-Burn „nicht bestätigt“ (8.11.)",
           "url": "https://x.com/jeff_on_orbit/status/2119246722589204875"
+        },
+        {
+          "title": "NASA ESCAPADE Blog-Archiv (Stand 9.11. 05:10: kein Post-Burn-Update)",
+          "url": "https://science.nasa.gov/blogs/escapade/"
+        },
+        {
+          "title": "@NASASolarSystem: Flyby #2 is tonight",
+          "url": "https://x.com/NASASolarSystem/status/2119494168728789467"
         }
       ]
     },
@@ -951,7 +955,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "SpaceX-Seite (Stand So 22:10) bestätigt weiter Montag 9.11., Vier-Stunden-Fenster ab 19:03 PT Vandenberg (= Di 10.11. 04:03 Berlin), Backup Di 10.11. 18:49 PT. Nach erfolgreichem USSF-432 von derselben Rampe 85 %. Klassifizierte Space-Force-Mission, Landung OCISLY. Kurswirkung gering. Tagesfrage vom 8.11.",
+      "reasoning": "SpaceX-Seite (Stand Mo 05:10) unverändert: Mo 9.11., Vier-Stunden-Fenster ab 19:03 PT Vandenberg (= Di 10.11. 04:03 Berlin), Backup Di 10.11. 18:49 PT. Launch Library: Status „Go“. Nach erfolgreichem USSF-432 von derselben Rampe 85 %. Kurswirkung gering. Tagesfrage vom 8.11.",
       "example": false,
       "sources": [
         {
@@ -961,6 +965,10 @@
         {
           "title": "Next Spaceflight: USSF-627",
           "url": "https://nextspaceflight.com/launches/details/8446/"
+        },
+        {
+          "title": "Launch Library 2: SpaceX upcoming",
+          "url": "https://ll.thespacedevs.com/2.2.0/launch/upcoming/?search=SpaceX"
         }
       ]
     },
@@ -1114,6 +1122,42 @@
         {
           "title": "TN: Tesla Argentinien 20.11. Unicenter",
           "url": "https://tn.com.ar/autos/novedades/2026/11/07/tesla-anuncio-la-fecha-de-su-llegada-a-la-argentina-donde-se-podran-ver-y-probar-sus-autos/"
+        }
+      ]
+    },
+    {
+      "id": "evt-nvda-huang-briefing",
+      "title": "Nvidia: Untersuchung zu CEO Huang, Kongress bittet um Briefing (18.11.)",
+      "date": "2026-11-18",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "regulierung",
+      "company": "NVIDIA",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "probabilityPct": 50,
+      "impact": "mittel",
+      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11. — eine Bitte, keine Vorladung, daher 50 %. Nachbörslich fiel Nvidia am Mo früh um etwa 3 %. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen.",
+      "example": false,
+      "sources": [
+        {
+          "title": "NVIDIA: Statement from the Board (8.11.2026)",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+        },
+        {
+          "title": "CNBC: Nvidia investigates Huang relationship (8.11.)",
+          "url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html"
+        },
+        {
+          "title": "Wall Street Observer: Briefing-Bitte 18.11., NVDA −3,8 % über Nacht",
+          "url": "https://wallstreetobserver.com/articles/nvidia-board-investigation-huang"
+        },
+        {
+          "title": "The Star/Reuters: Nvidia falls about 3% (9.11.)",
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/09/nvidia-falls-about-3-in-after-hours-and-perpetual-futures-trade"
         }
       ]
     }

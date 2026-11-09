@@ -1,30 +1,34 @@
 {
   "example": false,
-  "asOf": "2026-11-08T22:10:00+01:00",
+  "asOf": "2026-11-09T05:15:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
       "label": "zuversichtlich",
-      "summary": "Flight 15 NET 13.11. mit Ship-Catch-Plan, FAA-Lizenz weiter offen. So 22:10: keine neuen Musk- oder SpaceX-Posts seit 18:36. Wochenende ohne Kurs — Di früh USSF-627, Di 14:30 CPI.",
+      "summary": "Flight 15 NET Fr 13.11. mit Fang-Versuch, FAA-Lizenz weiter offen. Musk nachts: Grok-Fixes über Nacht; billige Rechenleistung würde SpaceX-Umsatz drücken. Mo früh: Nvidia nachbörslich ~−3 % wegen CEO-Untersuchung, Nasdaq-Futures leicht im Plus. Di 04:03 USSF-627, Di 14:30 CPI.",
       "sources": [
         {
           "title": "@SpaceX: Flight 15 catch",
           "url": "https://x.com/SpaceX/status/2119093662957060389"
         },
         {
-          "title": "@elonmusk: Larry Page orbital compute prediction",
-          "url": "https://x.com/elonmusk/status/2119469436092760547"
+          "title": "@elonmusk: It works both ways",
+          "url": "https://x.com/elonmusk/status/2119610442867749040"
         },
         {
-          "title": "SpaceX Updates: Returning Starship",
-          "url": "https://www.spacex.com/updates/"
+          "title": "@elonmusk: Grok fixes overnight",
+          "url": "https://x.com/elonmusk/status/2119617455102333206"
+        },
+        {
+          "title": "The Star/Reuters: Nvidia falls about 3% (9.11.)",
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/09/nvidia-falls-about-3-in-after-hours-and-perpetual-futures-trade"
         }
       ]
     },
     "TSLA": {
       "score": 0.15,
       "label": "leicht zuversichtlich",
-      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. So 22:10: @Tesla zeigt FSD-Supervised-Video (Notbremsung bei Spurwechsel eines SUV) — Werbung, nichts Neues. Wochenende ruhig.",
+      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. Nacht ohne Tesla-Posts, Musk vor allem Politik. Mo früh: Nasdaq-Futures leicht im Plus trotz Nvidia-Sorge.",
       "sources": [
         {
           "title": "@elonmusk: Cybertruck backlog",
@@ -35,27 +39,23 @@
           "url": "https://x.com/Tesla/status/2118720752379899907"
         },
         {
-          "title": "@elonmusk: Gene Wu is the Beria of Texas",
-          "url": "https://x.com/elonmusk/status/2119476153828192703"
-        },
-        {
-          "title": "@Tesla: FSD Supervised is looking out for you",
-          "url": "https://x.com/Tesla/status/2119533178704863309"
+          "title": "CNBC TV18: Nasdaq-Futures drehen ins Plus (9.11.)",
+          "url": "https://www.cnbctv18.com/market/dow-jones-nasdaq-snp-500-nvidia-ceo-jensen-huang-investigation-impact-key-wall-street-triggers-this-week-20029944.htm"
         }
       ]
     },
     "RKLB": {
       "score": 0.05,
       "label": "abwartend",
-      "summary": "ESCAPADE-Blue-TMI seit ~35 h vorbei — Stand So 22:10 weiter keine offizielle NASA/Rocket-Lab-Bestätigung (NASA-Blog letzter Eintrag 2.11.; @NASA/@RocketLab/@escapade_mars still). Q3 Montag 23:00, Gold-TMI Mo ~11:51, Electron-100 NET 14.11.",
+      "summary": "ESCAPADE-Blue (7.11.) weiter ohne offizielle Bestätigung. @NASASolarSystem: „Flyby #2 is tonight“ — Gold-Burn heute 11:51. Q3-Zahlen heute 23:00, Electron-100 NET 14.11.",
       "sources": [
+        {
+          "title": "@NASASolarSystem: Flyby #2 is tonight",
+          "url": "https://x.com/NASASolarSystem/status/2119494168728789467"
+        },
         {
           "title": "NASA ESCAPADE Blog",
           "url": "https://science.nasa.gov/blogs/escapade/"
-        },
-        {
-          "title": "@RocketLab: ESCAPADE (Vorabend)",
-          "url": "https://x.com/RocketLab/status/2118834083279306990"
         },
         {
           "title": "The Space Tap: outcome not confirmed",
@@ -65,6 +65,525 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2119637191504581036",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T04:44:22+01:00",
+      "summaryDe": "Musk zitiert einen Spott, er arbeite ständig als Kundenservice für seine Firmen, und antwortet: „Mir ist es wichtig.“",
+      "originalText": "I care",
+      "url": "https://x.com/elonmusk/status/2119637191504581036",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: I care",
+          "url": "https://x.com/elonmusk/status/2119637191504581036"
+        },
+        {
+          "title": "@IterIntellectus: customer service agent",
+          "url": "https://x.com/IterIntellectus/status/2119623933725131163"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119637037342974065",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T04:43:45+01:00",
+      "summaryDe": "Musk stimmt Yishan zu: KI-Modelle könnten zwar viel Code schreiben, aber noch kein gutes Spiel mit echtem Spielspaß bauen.",
+      "originalText": "@yishan True",
+      "url": "https://x.com/elonmusk/status/2119637037342974065",
+      "tickers": [],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @yishan True",
+          "url": "https://x.com/elonmusk/status/2119637037342974065"
+        },
+        {
+          "title": "@yishan: AAA game",
+          "url": "https://x.com/yishan/status/2119594442541993996"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119636611633721811",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T04:42:03+01:00",
+      "summaryDe": "Musk zu einem Zuschauerbericht über Chappelles Show im Madison Square Garden: „Chappelle ist einfach nicht mehr lustig.“ Politik, kein Firmenbezug.",
+      "originalText": "Chappelle is just not funny anymore",
+      "url": "https://x.com/elonmusk/status/2119636611633721811",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Chappelle is just not funny anymore",
+          "url": "https://x.com/elonmusk/status/2119636611633721811"
+        },
+        {
+          "title": "@drjohnny__: Chappelle show at MSG",
+          "url": "https://x.com/drjohnny__/status/2119620420123136001"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119636345274651017",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T04:41:00+01:00",
+      "summaryDe": "Musk stimmt einem Beitrag über junge weiße Männer am Arbeitsmarkt zu („Yeah“). Gesellschaft, kein Firmenbezug.",
+      "originalText": "@FischerKing64 Yeah",
+      "url": "https://x.com/elonmusk/status/2119636345274651017",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @FischerKing64 Yeah",
+          "url": "https://x.com/elonmusk/status/2119636345274651017"
+        },
+        {
+          "title": "@FischerKing64: millennial white men",
+          "url": "https://x.com/FischerKing64/status/2119301652285207013"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119631955855606244",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T04:23:33+01:00",
+      "summaryDe": "Musk teilt einen Beitrag zum Urteil gegen Russell Brand (Aussage seiner Ex-Freundin). Kein Firmenbezug.",
+      "originalText": "RT @adamgolding: Russell Brand’s ex-girlfriend Samantha Pressdee has fiercely spoken out against the verdict.",
+      "url": "https://x.com/elonmusk/status/2119631955855606244",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @adamgolding: Russell Brand’s ex-girlfriend Sam",
+          "url": "https://x.com/elonmusk/status/2119631955855606244"
+        },
+        {
+          "title": "@adamgolding: Russell Brand verdict",
+          "url": "https://x.com/adamgolding/status/2119292198709543352"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119631609963917822",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T04:22:11+01:00",
+      "summaryDe": "Musk stimmt zu: Verglichen mit Super-KI seien Menschen erstaunlich robust.",
+      "originalText": "@as400495 True",
+      "url": "https://x.com/elonmusk/status/2119631609963917822",
+      "tickers": [],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @as400495 True",
+          "url": "https://x.com/elonmusk/status/2119631609963917822"
+        },
+        {
+          "title": "@as400495: robustness of humans",
+          "url": "https://x.com/as400495/status/2119582311687553208"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119631405252751657",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T04:21:22+01:00",
+      "summaryDe": "Musk lacht über ein Doppelgänger-Foto („💯😂“). Spaß, kein Inhalt.",
+      "originalText": "@AdamLowisz 💯😂",
+      "url": "https://x.com/elonmusk/status/2119631405252751657",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @AdamLowisz 💯😂",
+          "url": "https://x.com/elonmusk/status/2119631405252751657"
+        },
+        {
+          "title": "@AdamLowisz: Chinese double",
+          "url": "https://x.com/AdamLowisz/status/2119630026115072430"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119630588240105547",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T04:18:07+01:00",
+      "summaryDe": "Musk erklärt, warum Starship 33 Triebwerke hat: Ein paar dürfen ausfallen, und noch größere Teile wären teurer zu bauen und zu transportieren. Erklärung, nichts Neues.",
+      "originalText": "@iam_smx 33 engines means we can lose a few and still complete the mission. Also, beyond a certain physical size, parts fabrication and transport become much more expensive.",
+      "url": "https://x.com/elonmusk/status/2119630588240105547",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @iam_smx 33 engines means we can lose a few and st",
+          "url": "https://x.com/elonmusk/status/2119630588240105547"
+        },
+        {
+          "title": "@iam_smx: Why 33 engines",
+          "url": "https://x.com/iam_smx/status/2119427913124602273"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119630004862751205",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T04:15:48+01:00",
+      "summaryDe": "Musk antwortet auf einen Witz über die japanische X-Version: „Auch super.“",
+      "originalText": "@PlanetOfMemes Also great",
+      "url": "https://x.com/elonmusk/status/2119630004862751205",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @PlanetOfMemes Also great",
+          "url": "https://x.com/elonmusk/status/2119630004862751205"
+        },
+        {
+          "title": "@PlanetOfMemes: Japanese X",
+          "url": "https://x.com/PlanetOfMemes/status/2119629538980250040"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119629886377607546",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T04:15:20+01:00",
+      "summaryDe": "Musk zitiert Qualcomm-Chef Amon zur 5G-Partnerschaft mit SpaceX (Starlink Mobile) und schreibt, er freue sich auf die Arbeit mit Qualcomm. Wiederholung der Meldung vom 4.11., nichts Neues.",
+      "originalText": "Excited to be working with @Qualcomm on breakthrough technologies for 5G & beyond",
+      "url": "https://x.com/elonmusk/status/2119629886377607546",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Excited to be working with @Qualcomm on breakthrou",
+          "url": "https://x.com/elonmusk/status/2119629886377607546"
+        },
+        {
+          "title": "@cb_doge: Qualcomm CEO on SpaceX partnership",
+          "url": "https://x.com/cb_doge/status/2119576261031043136"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119629310969467053",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T04:13:03+01:00",
+      "summaryDe": "Musk lobt die chinesischsprachige X-Gemeinde („牛逼“ = „spitze“). Kein Firmenbezug.",
+      "originalText": "Chinese 𝕏 is 牛逼",
+      "url": "https://x.com/elonmusk/status/2119629310969467053",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Chinese 𝕏 is 牛逼",
+          "url": "https://x.com/elonmusk/status/2119629310969467053"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119628426571338063",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T04:09:32+01:00",
+      "summaryDe": "Musk stimmt einem politischen Beitrag zu („Yeah“): Die Linke solle aufhören, Mord zu feiern. Politik, kein Firmenbezug.",
+      "originalText": "Yeah",
+      "url": "https://x.com/elonmusk/status/2119628426571338063",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Yeah",
+          "url": "https://x.com/elonmusk/status/2119628426571338063"
+        },
+        {
+          "title": "@BillyM2k: celebrating murder",
+          "url": "https://x.com/BillyM2k/status/2119622814374527205"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119624561100755305",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T03:54:10+01:00",
+      "summaryDe": "Musk nennt Dave Chappelle „grausam“ wegen eines Witzes über den ermordeten Charlie Kirk. Politik, kein Firmenbezug.",
+      "originalText": "Dave Chappelle is cruel",
+      "url": "https://x.com/elonmusk/status/2119624561100755305",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Dave Chappelle is cruel",
+          "url": "https://x.com/elonmusk/status/2119624561100755305"
+        },
+        {
+          "title": "@ClownWorld: Chappelle MSG footage",
+          "url": "https://x.com/ClownWorld/status/2119594672972779899"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119617455102333206",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T03:25:56+01:00",
+      "summaryDe": "Musk: Runde mit dem Grok-Team, Fehler werden über Nacht behoben, ab morgen soll Grok deutlich besser laufen. Wer dann noch Probleme sieht, soll antworten. Produktpflege, keine Zahl.",
+      "originalText": "Just did a round table review with the Grok engineering team. Fixes are being implemented overnight and you should notice a dramatic improvement by tomorrow.",
+      "url": "https://x.com/elonmusk/status/2119617455102333206",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI",
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Just did a round table review with the Grok engine",
+          "url": "https://x.com/elonmusk/status/2119617455102333206"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119610442867749040",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T02:58:04+01:00",
+      "summaryDe": "Zu Chamaths These, SpaceX könne Anthropic Rechenleistung bei Knappheit teurer verkaufen: Musk sagt, das gelte in beide Richtungen. Wird Rechenleistung reichlich und billig, sinke SpaceX’ Umsatz. Ehrlicher Hinweis auf ein Risiko, keine neue Zahl.",
+      "originalText": "@rohanpaul_ai It works both ways, of course. If compute becomes plentiful and cheap, SpaceX revenue will drop. No crying in the casino for either party.",
+      "url": "https://x.com/elonmusk/status/2119610442867749040",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @rohanpaul_ai It works both ways, of course. If co",
+          "url": "https://x.com/elonmusk/status/2119610442867749040"
+        },
+        {
+          "title": "@rohanpaul_ai: Chamath on SpaceX–Anthropic compute deal",
+          "url": "https://x.com/rohanpaul_ai/status/2119409905434268064"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119592143778173200",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T01:45:21+01:00",
+      "summaryDe": "Musk teilt Seth Dillons Kritik an Chappelles Witzen über Charlie Kirk. Politik, kein Firmenbezug.",
+      "originalText": "RT @SethDillon: Charlie was murdered in the middle of a debate with people who hate him…",
+      "url": "https://x.com/elonmusk/status/2119592143778173200",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @SethDillon: Charlie was murdered in the middle",
+          "url": "https://x.com/elonmusk/status/2119592143778173200"
+        },
+        {
+          "title": "@SethDillon: Chappelle/Kirk",
+          "url": "https://x.com/SethDillon/status/2119563450846245307"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119588563264078038",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T01:31:08+01:00",
+      "summaryDe": "Musk teilt eine Grok-Antwort zu Zahlen über den Sklavenhandel. Geschichte/Politik, kein Firmenbezug.",
+      "originalText": "RT @grok: @elonmusk @VladTheInflator Mostly accurate per historical records.",
+      "url": "https://x.com/elonmusk/status/2119588563264078038",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @grok: @elonmusk @VladTheInflator Mostly accura",
+          "url": "https://x.com/elonmusk/status/2119588563264078038"
+        },
+        {
+          "title": "@grok: Mostly accurate",
+          "url": "https://x.com/grok/status/2119562531903590703"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119578315619254275",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T00:50:24+01:00",
+      "summaryDe": "Musk stimmt Shaun Maguire zu: Nvidia-Chef Jensen Huang habe etwas „unglaublich Dummes“ getan (Affäre mit mutmaßlicher chinesischer Spionin), sei aber für Amerikas KI unersetzlich. Nvidias Verwaltungsrat hat am Sonntag eine Untersuchung gestartet.",
+      "originalText": "I agree",
+      "url": "https://x.com/elonmusk/status/2119578315619254275",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: I agree",
+          "url": "https://x.com/elonmusk/status/2119578315619254275"
+        },
+        {
+          "title": "@shaunmmaguire: Jensen is irreplaceable",
+          "url": "https://x.com/shaunmmaguire/status/2119560017624158265"
+        },
+        {
+          "title": "NVIDIA: Statement from the Board (8.11.2026)",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119562350831587502",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T23:46:58+01:00",
+      "summaryDe": "Musk fragt Grok, ob ein Bild-Beitrag zur Geschichte stimmt („@grok is this true?“). Kein Firmenbezug.",
+      "originalText": "@VladTheInflator @grok is this true?",
+      "url": "https://x.com/elonmusk/status/2119562350831587502",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @VladTheInflator @grok is this true?",
+          "url": "https://x.com/elonmusk/status/2119562350831587502"
+        },
+        {
+          "title": "@VladTheInflator: Bild-Beitrag",
+          "url": "https://x.com/VladTheInflator/status/2119199347351122185"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119554927337017525",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-08T23:17:28+01:00",
+      "summaryDe": "Musk nennt einen Bericht „interessant“: Tausende marschieren in New York gegen die Demokraten-Führung Schumer und Jeffries. Politik, kein Firmenbezug.",
+      "originalText": "Interesting",
+      "url": "https://x.com/elonmusk/status/2119554927337017525",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Interesting",
+          "url": "https://x.com/elonmusk/status/2119554927337017525"
+        },
+        {
+          "title": "@MarioNawfal: No Schumer, No Jeffries",
+          "url": "https://x.com/MarioNawfal/status/2119180592483127504"
+        }
+      ]
+    },
+    {
+      "id": "post-boringcompany-2119531885814513936",
+      "account": "@boringcompany",
+      "displayName": "The Boring Company",
+      "postedAt": "2026-11-08T21:45:55+01:00",
+      "summaryDe": "Boring teilt einen Dank von Morgan’s Wonderland (Freizeitpark für Menschen mit Behinderung), das im Stadtrat von San Antonio geehrt wurde. Kein Projekt-Update.",
+      "originalText": "RT @MorgansOrg: Honored to be recognized at San Antonio City Council!",
+      "url": "https://x.com/boringcompany/status/2119531885814513936",
+      "tickers": [],
+      "companies": [
+        "Boring"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@boringcompany: RT @MorgansOrg: Honored to be recognized at San An",
+          "url": "https://x.com/boringcompany/status/2119531885814513936"
+        }
+      ]
+    },
     {
       "id": "post-tesla-2119533178704863309",
       "account": "@Tesla",
@@ -3404,5 +3923,5 @@
       ]
     }
   ],
-  "notes": "08.11. 22:00: 1 neuer offizieller Post (@Tesla FSD-Supervised-Video), keine neuen Musk-Posts seit 18:36. Nichts Wichtiges. ESCAPADE-Blue weiter ohne offizielle Bestätigung."
+  "notes": "09.11. 05:00: 20 neue Musk-Posts seit 08.11. 23:17 (vor allem Politik/Chappelle; Grok-Fixes über Nacht; SpaceX-Rechenleistung „geht in beide Richtungen“; Qualcomm-5G-Wiederholung; Zustimmung zu Kritik an Nvidia-Chef Huang) und 1 nachgetragener Boring-Retweet. Nichts Wichtiges. Keine neuen Posts von SpaceX, Tesla, Starlink, Rocket Lab, Neuralink, xAI. ESCAPADE-Blue weiter ohne offizielle Bestätigung; NASA bewirbt Flyby 2 für heute."
 }

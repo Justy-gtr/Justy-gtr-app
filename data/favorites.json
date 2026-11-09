@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-08",
+  "asOf": "2026-11-09",
   "owner": "Karl",
   "title": "Karls Top 10",
   "note": "Zehn Aktien aus dem ganzen Markt, nicht nur aus dem Musk-Umfeld. Kurse in Euro. Tesla und Rocket Lab stehen mit dabei, weil sie schon in der Bilanz sind. Die älteren Themen Starlink und Tesla Energie bleiben im Treffer-Check, sie sind keine eigenen Aktien.",
@@ -132,14 +132,14 @@
       "swarmStance": "kauf",
       "againstCrowd": true,
       "vsSwarm": "skeptischer",
-      "karlTake": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Rechenzentren stehen politisch unter Druck.",
+      "karlTake": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Politik drückt, und jetzt prüft der Verwaltungsrat den Chef.",
       "karlCounter": "Die Aufträge können die Politik überholen.",
       "horizon": "langfrist",
       "priceEur": 180.56,
       "priceAsOf": "2026-11-04",
       "priceVenue": "Xetra",
       "swarmNote": "Die laute Mehrheit behandelt Nvidia weiter als den Kern der KI-Welle und liegt auf der Kaufseite.",
-      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl am 4. November stehen Rechenzentren politisch unter Druck. An der Xetra kostet die Aktie 180,56 €. Karl jagt den Namen nicht.",
+      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl stehen Rechenzentren politisch unter Druck. Seit 8.11. prüft der Verwaltungsrat, ob Chef Huang Ziel chinesischer Spionage war; nachbörslich fiel die Aktie um etwa 3 %. Karl jagt den Namen nicht.",
       "counterArgument": "Die Aufträge können die Politik überholen. Wer zu früh aussteigt, verpasst die nächste Welle.",
       "example": false,
       "sources": [
@@ -154,6 +154,14 @@
         {
           "title": "KI-Aktien nach dem Wahlergebnis unter Druck (Economic Times, 05.11.2026)",
           "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-retreat-as-democratic-sweep-puts-data-centre-boom-in-focus/articleshow/135551445.cms"
+        },
+        {
+          "title": "NVIDIA: Statement from the Board (8.11.2026)",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+        },
+        {
+          "title": "The Star/Reuters: Nvidia falls about 3% (9.11.)",
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/09/nvidia-falls-about-3-in-after-hours-and-perpetual-futures-trade"
         }
       ]
     },
