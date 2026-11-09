@@ -1,8 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
+import { loadQuotePack, marketLink, standingQuote } from "./alpaca.mjs";
 import { fetchChart } from "./fetch-prices.mjs";
-import { fxFor, roundTo, usdToEur } from "./market.mjs";
+import { fxFor, roundTo, sessionBaseline, usdToEur } from "./market.mjs";
 import { barsInWindow, catalystMoves, wideDays } from "./moonshot-stats.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
@@ -158,13 +159,41 @@ export function applyQuote(candidate, chart, fx, { recomputeHistory = true } = {
   return { quote: mergeCandidate(candidate, patch), windowBars, asOf };
 }
 
+/** Live US quote from IEX. The multi-year count stays on the daily series already applied. */
+export function applyLiveUsd(quote, chart, fx) {
+  if (!quote || !chart || chart.source !== "alpaca-iex" || !(chart.price > 0)) return quote;
+  const priceUsd = roundTo(chart.price, 2);
+  if (quote.priceUsd > 0 && Math.abs(priceUsd - quote.priceUsd) / quote.priceUsd > 0.15) return quote;
+  const prevFromIex = chart.previousClose ?? sessionBaseline(chart);
+  const prevUsd = prevFromIex > 0 ? roundTo(prevFromIex, 2) : quote.previousCloseUsd;
+  const asOf = chart.regularTime ? isoBerlin(new Date(chart.regularTime * 1000)) : quote.asOf;
+  const priceEur = eurAt(priceUsd, fx, asOf);
+  const spark = Array.isArray(quote.sparkline) ? quote.sparkline.slice() : [];
+  if (priceEur != null && spark.length) spark[spark.length - 1] = priceEur;
+  return {
+    ...quote,
+    priceUsd,
+    priceEur: priceEur ?? quote.priceEur,
+    previousCloseUsd: prevUsd,
+    changePct: prevUsd > 0 ? roundTo(((priceUsd - prevUsd) / prevUsd) * 100, 2) : quote.changePct,
+    asOf,
+    source: "alpaca-iex",
+    sparkline: spark,
+    marketSource: marketLink(chart.symbol || quote.symbol)
+  };
+}
+
 export async function refreshMoonshots(file = readFile()) {
   const fx = await loadFx();
+  const symbols = (file.candidates || []).map((candidate) => candidate.usdSymbol || candidate.symbol);
+  const quotePack = await loadQuotePack(symbols);
   const candidates = [];
   for (const candidate of file.candidates || []) {
     const symbol = candidate.usdSymbol || candidate.symbol;
     const chart = await fetchChart(symbol, "1d", "5y");
-    const { quote, windowBars } = applyQuote(candidate, chart, fx);
+    const applied = applyQuote(candidate, chart, fx);
+    const quote = applyLiveUsd(applied.quote, standingQuote(symbol, quotePack), fx);
+    const { windowBars } = applied;
     const days = quote.history?.days;
     const stats = quote.history?.catalyst;
     candidates.push(quote);

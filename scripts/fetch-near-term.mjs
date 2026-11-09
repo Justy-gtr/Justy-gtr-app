@@ -1,8 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
+import { loadQuotePack, standingQuote } from "./alpaca.mjs";
 import { fetchChart } from "./fetch-prices.mjs";
-import { applyQuote, isoBerlin, loadFx } from "./fetch-moonshots.mjs";
+import { applyLiveUsd, applyQuote, isoBerlin, loadFx } from "./fetch-moonshots.mjs";
 import {
   FOCUS_SYMBOLS,
   NEAR_LIMIT,
@@ -193,11 +194,15 @@ function withStats(candidate, chart, fx, today, includesToday) {
 }
 
 async function reprice(file, near, fx, today) {
+  const symbols = (near.candidates || []).map((candidate) => candidate.usdSymbol || candidate.symbol);
+  const quotePack = await loadQuotePack(symbols);
   const candidates = [];
   for (const candidate of near.candidates || []) {
     try {
-      const chart = await fetchChart(candidate.usdSymbol || candidate.symbol, "1d", "5y");
-      candidates.push(withStats(candidate, chart, fx, today, near.includesToday === true));
+      const symbol = candidate.usdSymbol || candidate.symbol;
+      const chart = await fetchChart(symbol, "1d", "5y");
+      const card = withStats(candidate, chart, fx, today, near.includesToday === true);
+      candidates.push(applyLiveUsd(card, standingQuote(symbol, quotePack), fx));
     } catch (error) {
       console.log(`::warning::${candidate.symbol} Kurs: ${error.message}`);
       candidates.push(candidate);
@@ -307,13 +312,14 @@ export async function refreshNearTerm(file, { now = new Date(), force = false } 
     impliedBySymbol
   });
   const chosen = [];
+  const quotePack = await loadQuotePack(picked.ranked.map((item) => item.symbol));
   for (const item of picked.ranked) {
     if (chosen.length >= NEAR_LIMIT) break;
     const chart = charts.get(item.symbol);
     if (!chart) continue;
     try {
       const card = withStats(buildCandidate(item, picked.includesToday), chart, fx, today, picked.includesToday);
-      chosen.push(card);
+      chosen.push(applyLiveUsd(card, standingQuote(item.symbol, quotePack), fx));
       const stats = card.history.catalyst;
       console.log(`${item.symbol} ${item.date} ${item.session} score ${nearScore(item).toFixed(2)} ${stats.up}/${stats.n} hoch, ${stats.down}/${stats.n} runter`);
     } catch (error) {

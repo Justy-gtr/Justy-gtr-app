@@ -141,6 +141,7 @@ if (prices) {
     const phases = ["nachhandel", "vorboerse", "us"];
     if (ticker.overnightPhase != null && !phases.includes(ticker.overnightPhase)) fail(`${label}.overnightPhase`);
     if (ticker.overnightEur != null && !phases.includes(ticker.overnightPhase)) fail(`${label}.overnightPhase`);
+    if (ticker.source != null && !["alpaca-iex", "yahoo"].includes(ticker.source)) fail(`${label}.source`);
     if (typeof ticker.overnightHighEur === "number" && typeof ticker.overnightLowEur === "number" && ticker.overnightHighEur < ticker.overnightLowEur) {
       fail(`${label} overnight high < low`);
     }
@@ -314,6 +315,7 @@ function cellRow(cell, label) {
 const seasonality = loaded["seasonality.json"];
 if (seasonality) {
   if (seasonality.timezone !== "Europe/Berlin") fail("seasonality.timezone");
+  if (seasonality.usFeed != null && !["alpaca-iex", "yahoo"].includes(seasonality.usFeed)) fail("seasonality.usFeed");
   if (!seasonality.asOf || Number.isNaN(Date.parse(seasonality.asOf))) fail("seasonality.asOf");
   if (!Array.isArray(seasonality.hourSlots) || seasonality.hourSlots.join("|") !== HOUR_SLOTS.join("|")) {
     fail("seasonality.hourSlots");

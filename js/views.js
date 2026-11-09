@@ -1075,7 +1075,13 @@ function weeklyDetail(weekly) {
 }
 
 function alertsDetail(data) {
-  const alerts = data.alerts?.alerts || [];
+  const alerts = (data.alerts?.alerts || []).slice().sort((a, b) => {
+    const left = Date.parse(a?.timestamp || "");
+    const right = Date.parse(b?.timestamp || "");
+    const aTime = Number.isFinite(left) ? left : Number.NEGATIVE_INFINITY;
+    const bTime = Number.isFinite(right) ? right : Number.NEGATIVE_INFINITY;
+    return bTime - aTime;
+  });
   return {
     kind: "alerts",
     title: "Meldungen",
