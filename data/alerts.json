@@ -191,8 +191,8 @@
       "id": "SPCX-2026-11-09",
       "symbol": "SPCX",
       "name": "SpaceX",
-      "changePct": 8.61,
-      "priceEur": 119.84,
+      "changePct": 6.32,
+      "priceEur": 127.44,
       "thresholdPct": 2,
       "direction": "up",
       "timestamp": "2026-11-09T11:11:05.882Z",
@@ -206,6 +206,32 @@
         {
           "title": "Yahoo Finance EURUSD=X",
           "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-2026-11-09",
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "changePct": 3.18,
+      "priceEur": 334,
+      "thresholdPct": 2,
+      "direction": "up",
+      "timestamp": "2026-11-09T14:56:49.473Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance TL0.DE",
+          "url": "https://finance.yahoo.com/quote/TL0.DE"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA"
         }
       ]
     }
