@@ -36,6 +36,12 @@ const TITLES = {
   "umfassend-runter": "Umfassende Abwärtskerze"
 };
 
+/** Closes examined after a touch. The same distance counts as a bounce or a break. */
+export const BOUNCE_LOOK = 6;
+
+/** Finished touches below this still show the counts, with a short note. */
+export const BOUNCE_FEW = 5;
+
 export { N_LEGEND };
 
 function closes(candles) {
@@ -399,6 +405,144 @@ function withPrice(level) {
   return { ...level, kicker: `Wenn der Kurs ${formatEUR(level.eur)} erreicht` };
 }
 
+function averageTrueRange(candles) {
+  if (!candles?.length) return 0;
+  let sum = 0;
+  let count = 0;
+  for (let index = 0; index < candles.length; index += 1) {
+    const high = Number(candles[index].high);
+    const low = Number(candles[index].low);
+    const previous = index ? Number(candles[index - 1].close ?? candles[index - 1].eur) : high;
+    if (![high, low, previous].every(Number.isFinite)) continue;
+    sum += Math.max(high - low, Math.abs(high - previous), Math.abs(low - previous));
+    count += 1;
+  }
+  return count ? sum / count : 0;
+}
+
+function closeOf(candle) {
+  const close = Number(candle?.close ?? candle?.eur);
+  return Number.isFinite(close) ? close : null;
+}
+
+function heldSide(side) {
+  return side === "high" || side === "resistance" ? "high" : "low";
+}
+
+/**
+ * One visit to the drawn level.
+ * A candle touches when its range meets the band (about 0.3 % of the price,
+ * widened by a quarter of the average true range, and never more than 0.8 %).
+ * Candles that sit in the band one after another are a single touch.
+ * The visit counts only when the previous close was on the held side.
+ * Bounce and break use the same larger distance (twice the band). The first
+ * such close, during the touch or within `look` candles after it, decides.
+ * Anything else stays open and is not counted.
+ */
+export function countLevelBounces(candles, level, side, options = {}) {
+  const series = candles || [];
+  const price = Number(level);
+  const look = options.look || BOUNCE_LOOK;
+  const atr = averageTrueRange(series);
+  const floor = Math.abs(price) * (options.tolPct ?? 0.003);
+  const cap = Math.abs(price) * (options.tolCap ?? 0.008);
+  const tolerance = Math.min(cap, Math.max(floor, atr * (options.atrFrac ?? 0.25)));
+  const amount = tolerance * 2;
+  const empty = { bounce: 0, broke: 0, open: 0, n: 0, tolerance, amount, look };
+  if (!Number.isFinite(price) || !(tolerance > 0) || series.length < 2) return empty;
+  const held = heldSide(side);
+  let bounce = 0;
+  let broke = 0;
+  let open = 0;
+  let index = 0;
+  while (index < series.length) {
+    if (!candleMeets(series[index], price, tolerance)) {
+      index += 1;
+      continue;
+    }
+    let end = index;
+    while (end + 1 < series.length && candleMeets(series[end + 1], price, tolerance)) end += 1;
+    const previous = index > 0 ? closeOf(series[index - 1]) : null;
+    const fromHeld = previous != null && (held === "low" ? previous > price + tolerance : previous < price - tolerance);
+    if (fromHeld) {
+      const outcome = reactionOf(series, index, end, price, held, amount, look);
+      if (outcome === "bounce") bounce += 1;
+      else if (outcome === "broke") broke += 1;
+      else open += 1;
+    }
+    index = end + 1;
+  }
+  return { bounce, broke, open, n: bounce + broke, tolerance, amount, look };
+}
+
+function candleMeets(candle, level, tolerance) {
+  const high = Number(candle?.high ?? candle?.close ?? candle?.eur);
+  const low = Number(candle?.low ?? candle?.close ?? candle?.eur);
+  if (!Number.isFinite(high) || !Number.isFinite(low)) return false;
+  return low <= level + tolerance && high >= level - tolerance;
+}
+
+function reactionOf(series, start, end, level, side, amount, look) {
+  const last = Math.min(series.length - 1, end + look);
+  for (let cursor = start; cursor <= last; cursor += 1) {
+    const close = closeOf(series[cursor]);
+    if (close == null) continue;
+    if (side === "low") {
+      if (close >= level + amount) return "bounce";
+      if (close <= level - amount) return "broke";
+    } else if (close <= level - amount) return "bounce";
+    else if (close >= level + amount) return "broke";
+  }
+  return "open";
+}
+
+function seriesName(range) {
+  return {
+    "5 Min": "5-Minuten-Reihe",
+    "15 Min": "15-Minuten-Reihe",
+    "4 Std": "4-Stunden-Reihe",
+    "1T": "Tagesreihe",
+    "3T": "Reihe der drei Handelstage",
+    "1W": "Wochenreihe",
+    "1M": "Monatsreihe",
+    "6M": "Reihe der sechs Monate",
+    "1J": "Jahresreihe",
+    "Max": "lange Reihe"
+  }[range] || "geladene Reihe";
+}
+
+/** Plain description of one level's finished touches. Counts stay visible below five cases. */
+export function describeLevelBounces(stats, side, range) {
+  const heldHigh = heldSide(side) === "high";
+  const n = stats?.n || 0;
+  const bounce = stats?.bounce || 0;
+  const broke = stats?.broke || 0;
+  const look = stats?.look || BOUNCE_LOOK;
+  const few = n < BOUNCE_FEW ? " Wenige Fälle." : "";
+  const back = heldHigh ? "deutlich unter der Linie" : "deutlich über der Linie";
+  const through = heldHigh ? "deutlich über ihr" : "deutlich unter ihr";
+  const detail = `Berührung: der Kurs kommt der Linie bis auf etwa 0,3 % nahe, bei großen Kerzen etwas mehr. Kerzen direkt nacheinander zählen als eine. Abgeprallt: innerhalb von ${look} Kerzen nach der Berührung liegt der Schluss wieder ${back}. Durchgebrochen: der Schluss liegt ${through}. Beides zählt gleich weit. ${seriesName(range)}.`;
+  if (!n) return { sentence: `Keine abgeschlossene Berührung (n = 0).${few}`, detail };
+  const lead = heldHigh ? "Abgeprallt nach unten" : "Abgeprallt";
+  const cases = n === 1 ? "1 Fall" : `${n} Fällen`;
+  return {
+    sentence: `${lead} in ${bounce} von ${cases} · durchgebrochen ${broke} (n = ${n}).${few}`,
+    detail
+  };
+}
+
+function annotateBounce(level, candles, range) {
+  if (!level || (level.kind !== "support" && level.kind !== "resistance") || level.eur == null) return level;
+  const side = level.kind === "resistance" ? "high" : "low";
+  const stats = countLevelBounces(candles, level.eur, side);
+  const copy = describeLevelBounces(stats, side, range);
+  return { ...level, bounce: stats, bounceSentence: copy.sentence, bounceDetail: copy.detail };
+}
+
+function withBounces(levels, candles, range) {
+  return (levels || []).map((level) => annotateBounce(level, candles, range));
+}
+
 function levelsFrom(shape, history, spec) {
   return (shape.levels || []).map((level) => {
     const touch = chooseTouch(countRetests(closes(history), level.side, spec, level.eur));
@@ -434,6 +578,7 @@ function longerDaily(ticker) {
 
 export function analyseCandles(visible, history, range) {
   const candles = visible || [];
+  const past = history?.length ? history : candles;
   const spec = SPEC[range] || SPEC["1M"];
   if (candles.length < 6) {
     return emptyResult("Zu wenig Punkte für eine Linie. Keine Prozentzahl.");
@@ -450,21 +595,21 @@ export function analyseCandles(visible, history, range) {
       lines: shape.lines,
       legend,
       outcome: { ...outcome, show: share.show, n: share.n, pct: share.pct },
-      levels: levelsFrom(shape, history?.length ? history : candles, spec),
+      levels: withBounces(levelsFrom(shape, past, spec), past, range),
       mark: !mark || mark.id === shape.id ? null : mark.id
     };
   }
-  const base = analyzePoints(closes(candles), closes(history?.length ? history : candles), spec, range);
+  const base = analyzePoints(closes(candles), closes(past), spec, range);
   const candle = base.patternId === "unklar" && !base.lines.length ? namedCandle(candles) : null;
   if (!candle) {
     return {
       ...base,
       title: TITLES[base.patternId] || base.title,
       lines: base.lines || [],
-      levels: (base.levels || []).map(withPrice)
+      levels: withBounces((base.levels || []).map(withPrice), past, range)
     };
   }
-    const share = pack(countNamed(history?.length ? history : candles, candle.id, spec));
+    const share = pack(countNamed(past, candle.id, spec));
   const outcome = outcomeCopy(candle.id, share, detailFor(range, spec));
   return {
     title: TITLES[candle.id],
@@ -501,7 +646,7 @@ export function analyseText(result) {
     result.title,
     result.outcome?.sentence,
     result.outcome?.detail,
-    ...(result.levels || []).flatMap((level) => [level.title, level.kicker, level.sentence]),
+    ...(result.levels || []).flatMap((level) => [level.title, level.kicker, level.sentence, level.bounceSentence, level.bounceDetail]),
     ...(result.legend || []).map((item) => item.label),
     result.outcome && /n\s*=/.test(`${result.outcome.sentence} ${(result.levels || []).map((level) => level.sentence).join(" ")}`) ? N_LEGEND : ""
   ].filter(Boolean).join("\n");

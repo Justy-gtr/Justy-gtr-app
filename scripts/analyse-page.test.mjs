@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
-import { N_LEGEND, analyseCandles, analyseChart, analyseText, detectShape } from "../js/analyse.js";
+import { BOUNCE_FEW, BOUNCE_LOOK, N_LEGEND, analyseCandles, analyseChart, analyseText, countLevelBounces, describeLevelBounces, detectShape } from "../js/analyse.js";
 import { musterCard, rangeBoard, renderAnalyse } from "../js/analyse-view.js";
 import { MIN_CASES, analysisText, chartAnalysis } from "../js/analysis.js";
 import { ANALYSE_RANGES, bucketCandles, candleColor, candlesFor, formatMove, isUsefulFourHour, scrubLabel } from "../js/candles.js";
@@ -361,6 +361,145 @@ test("5 Min bleibt die letzte Sitzung und höchstens sechs Stunden, Kerzen bleib
   assert.equal(candleColor({ open: 10, close: 12, session: "pre" }), "#3ddea0");
   assert.equal(candleColor({ open: 12, close: 9, session: "post" }), "#ff5d6c");
   assert.equal(candleColor({ open: 10, close: 12, session: "pre" }).includes("e4b15a"), false);
+});
+
+function flat(index, close) {
+  return {
+    t: new Date(Date.parse("2026-01-05T14:30:00Z") + index * 5 * 60 * 1000).toISOString(),
+    open: close,
+    high: close,
+    low: close,
+    close,
+    eur: close
+  };
+}
+
+function wick(index, low, high, close) {
+  return { ...flat(index, close), low, high, open: close };
+}
+
+test("Berührungen einer Linie: Nachbarn sind ein Fall, Abpraller und Bruch brauchen denselben Abstand", () => {
+  assert.equal(BOUNCE_LOOK, 6);
+  assert.equal(BOUNCE_FEW, 5);
+  const level = 100;
+  let cursor = 0;
+  const series = [];
+  const push = (candle) => {
+    series.push({ ...candle, t: flat(cursor, candle.close).t });
+    cursor += 1;
+  };
+  for (let index = 0; index < 40; index += 1) push(flat(0, 103));
+  push(wick(0, 100, 100.2, 100.1));
+  push(wick(0, 99.95, 100.15, 100.05));
+  push(wick(0, 100, 100.12, 100.08));
+  push(flat(0, 101.2));
+  push(flat(0, 103));
+  push(wick(0, 100, 100.2, 100.1));
+  push(flat(0, 99));
+  push(flat(0, 103));
+  push(flat(0, 99));
+  push(wick(0, 99.9, 100.2, 100.1));
+  push(flat(0, 101.2));
+  push(flat(0, 103));
+  push(wick(0, 100, 100.2, 100.1));
+  for (let index = 0; index < BOUNCE_LOOK; index += 1) push(flat(0, 100.45));
+  push(flat(0, 99));
+  push(flat(0, 103));
+  push(wick(0, 99.5, 101.2, 101.2));
+
+  const stats = countLevelBounces(series, level, "low");
+  assert.ok(Math.abs(stats.tolerance - level * 0.003) < 1e-6, `Toleranz ${stats.tolerance}`);
+  assert.ok(Math.abs(stats.amount - stats.tolerance * 2) < 1e-9);
+  assert.equal(stats.bounce, 2);
+  assert.equal(stats.broke, 1);
+  assert.equal(stats.open, 1);
+  assert.equal(stats.n, 3);
+
+  const onTime = [flat(0, 103), wick(1, 100, 100.2, 100.1)];
+  for (let index = 0; index < BOUNCE_LOOK - 1; index += 1) onTime.push(flat(index + 2, 100.45));
+  onTime.push(flat(BOUNCE_LOOK + 1, 99));
+  const brokeLate = countLevelBounces(onTime, level, "low");
+  assert.equal(brokeLate.broke, 1);
+  assert.equal(brokeLate.n, 1);
+
+  const quiet = Array.from({ length: 12 }, (_, index) => flat(index, 50));
+  const tight = countLevelBounces(quiet, 50, "low");
+  assert.ok(Math.abs(tight.tolerance - 50 * 0.003) < 1e-9);
+  const wild = Array.from({ length: 30 }, (_, index) => wick(index, 10, 200, index % 2 ? 180 : 20));
+  const wide = countLevelBounces(wild, 100, "support");
+  assert.ok(Math.abs(wide.tolerance - 100 * 0.008) < 1e-9);
+
+  const many = { bounce: 7, broke: 3, open: 1, n: 10, look: BOUNCE_LOOK };
+  const supportCopy = describeLevelBounces(many, "low", "5 Min");
+  assert.equal(supportCopy.sentence, "Abgeprallt in 7 von 10 Fällen · durchgebrochen 3 (n = 10).");
+  assert.equal(supportCopy.sentence.includes("Wenige Fälle"), false);
+  assert.match(supportCopy.detail, /0,3 %/);
+  assert.match(supportCopy.detail, /nacheinander/);
+  assert.match(supportCopy.detail, /6 Kerzen/);
+  assert.match(supportCopy.detail, /5-Minuten-Reihe/);
+  assert.match(supportCopy.detail, /deutlich über der Linie/);
+  assert.match(supportCopy.detail, /gleich weit/);
+  const resistCopy = describeLevelBounces({ bounce: 4, broke: 5, n: 9, look: 6 }, "high", "1M");
+  assert.equal(resistCopy.sentence, "Abgeprallt nach unten in 4 von 9 Fällen · durchgebrochen 5 (n = 9).");
+  assert.match(resistCopy.detail, /deutlich unter der Linie/);
+  assert.match(resistCopy.detail, /Monatsreihe/);
+  const few = describeLevelBounces({ bounce: 2, broke: 1, n: 3, look: 6 }, "low", "15 Min");
+  assert.match(few.sentence, /Abgeprallt in 2 von 3 Fällen · durchgebrochen 1 \(n = 3\)\./);
+  assert.match(few.sentence, /Wenige Fälle/);
+  const one = describeLevelBounces({ bounce: 1, broke: 0, n: 1, look: 6 }, "high", "5 Min");
+  assert.equal(one.sentence, "Abgeprallt nach unten in 1 von 1 Fall · durchgebrochen 0 (n = 1). Wenige Fälle.");
+  const none = describeLevelBounces({ bounce: 0, broke: 0, n: 0, look: 6 }, "high", "4 Std");
+  assert.match(none.sentence, /n = 0/);
+  assert.match(none.sentence, /Wenige Fälle/);
+  const text = `${supportCopy.sentence} ${supportCopy.detail} ${resistCopy.sentence} ${resistCopy.detail} ${few.sentence} ${one.sentence}`;
+  assert.equal(ADVICE.test(text), false);
+  assert.equal(/\b(kaufen|verkaufen|empfehl\w*)\b/i.test(text), false);
+  assert.equal(text.includes("Keine Anlageberatung"), false);
+});
+
+test("Die Musterkarte zeigt die Abpraller direkt an der Stütze", () => {
+  const analysis = {
+    title: "Steigende Linie",
+    patternId: "steigend",
+    outcome: { show: false, n: 2, sentence: "Nach diesem Muster zu wenig gleiche Stellen (n = 2). Keine Prozentzahl.", detail: "" },
+    levels: [{
+      kind: "support",
+      title: "Nächste Stütze",
+      eur: 125.62,
+      kicker: "Wenn der Kurs 125,62 € erreicht",
+      sentence: "Zu wenig ähnliche Berührungen (n = 2). Keine Prozentzahl.",
+      bounceSentence: "Abgeprallt in 2 von 2 Fällen · durchgebrochen 0 (n = 2). Wenige Fälle.",
+      bounceDetail: "Berührung: der Kurs kommt der Linie bis auf etwa 0,3 % nahe. 5-Minuten-Reihe."
+    }, {
+      kind: "resistance",
+      title: "Nächster Deckel",
+      eur: 126.95,
+      sentence: "Zu wenig ähnliche Berührungen (n = 1). Keine Prozentzahl.",
+      bounceSentence: "Abgeprallt nach unten in 1 von 1 Fall · durchgebrochen 0 (n = 1). Wenige Fälle.",
+      bounceDetail: "Berührung: der Kurs kommt der Linie bis auf etwa 0,3 % nahe. 5-Minuten-Reihe."
+    }]
+  };
+  const html = musterCard(analysis);
+  assert.match(html, /Nächste Stütze/);
+  assert.match(html, /Abgeprallt in 2 von 2 Fällen · durchgebrochen 0 \(n = 2\)\. Wenige Fälle\./);
+  assert.match(html, /Abgeprallt nach unten in 1 von 1 Fall/);
+  assert.match(html, /bounce-note/);
+  assert.equal(/\b(kaufen|verkaufen|empfehl\w*)\b/i.test(html), false);
+  assert.equal(html.includes("Keine Anlageberatung"), false);
+  const prices = JSON.parse(fs.readFileSync("data/prices.json", "utf8"));
+  const page = renderAnalyse({ prices }, { analyseSymbol: "SPCX", analyseRange: "5 Min" });
+  assert.match(page, /<p class="scrub"><\/p>/);
+  assert.equal(/\b(kaufen|verkaufen|empfehl\w*)\b/i.test(page), false);
+  assert.equal(page.includes("Keine Anlageberatung"), false);
+  const result = analyseChart(prices.tickers.find((item) => item.symbol === "SPCX"), "5 Min");
+  for (const level of result.levels || []) {
+    if (level.kind !== "support" && level.kind !== "resistance") continue;
+    assert.match(level.bounceSentence, /n =/);
+    assert.equal(level.bounce.n, level.bounce.bounce + level.bounce.broke);
+    if (level.bounce.n < BOUNCE_FEW) assert.match(level.bounceSentence, /Wenige Fälle/);
+    else assert.equal(level.bounceSentence.includes("Wenige Fälle"), false);
+  }
+  assert.equal(ADVICE.test(analyseText(result)), false);
 });
 
 test("Achse nennt die Uhrzeit und das Datum nur am Tageswechsel", () => {
