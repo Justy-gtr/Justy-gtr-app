@@ -1,4 +1,4 @@
-const CACHE = "jgtr-v21";
+const CACHE = "jgtr-v23";
 const CORE = [
   "",
   "index.html",
@@ -42,7 +42,8 @@ const CORE = [
   "data/track_record.json",
   "data/alerts.json",
   "data/scenarios.json",
-  "data/companies.json"
+  "data/companies.json",
+  "data/moonshots.json"
 ];
 
 self.addEventListener("install", (event) => {

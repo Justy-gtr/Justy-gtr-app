@@ -53,6 +53,7 @@ jobs:
             ./ _site/
           test -f _site/index.html
           test -f _site/data/prices.json
+          test -f _site/data/moonshots.json
           test -f _site/sw.js
 
       - name: Pages konfigurieren
