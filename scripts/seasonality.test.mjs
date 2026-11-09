@@ -22,6 +22,7 @@ import {
   keepSettledHours,
   renderSeasonalityCard,
   seasonalityHeadline,
+  summarizeWeek,
   upPercent
 } from "../js/seasonality.js";
 
@@ -31,6 +32,16 @@ function rowText(html, weekday) {
   const start = html.indexOf(`data-weekday="${weekday}"`);
   const end = html.indexOf("wd-row", start + 10);
   return html.slice(start, end === -1 ? html.length : end);
+}
+
+function tagRow(html) {
+  const start = html.indexOf("clock-split is-day");
+  const end = html.indexOf("</div>", start);
+  return html.slice(start, end === -1 ? html.length : end);
+}
+
+function tagCells(html) {
+  return [...tagRow(html).matchAll(/class="clock-(?:cell|sum) is-day[^"]*"[^>]*>([^<]*)</g)].map((match) => match[1]);
 }
 
 test("Wochentage zählen nur die eigenen Schlüsse, Wochenende und Lücken bleiben draußen", () => {
@@ -240,8 +251,16 @@ test("Unter sieben Fällen gibt es keine Prozentzahl", () => {
   assert.match(html, /data-hour="15:00"/);
   assert.match(html, /data-hour="15:30"/);
   assert.match(html, /Zahl: Anteil steigender Stunden/);
+  assert.match(html, /Tag: Anteil steigender Tage/);
+  assert.equal(/Keine Anlageberatung/.test(html), false);
   assert.match(html, /clock-cell[^>]*>50%</);
   assert.match(html, /clock-cell is-quiet[^>]*>–</);
+  assert.ok(html.indexOf('data-hour="21:30"') < html.indexOf('data-row="tag"'));
+  assert.ok(html.indexOf('data-row="tag"') < html.indexOf("chart-legend"));
+  assert.deepEqual(tagCells(html), ["–", "80%", "20%", "50%", "60%", "59 %"]);
+  assert.match(tagRow(html), /clock-name is-day/);
+  assert.match(tagRow(html), /background:rgba\(125, 222, 192/);
+  assert.match(tagRow(html), /background:rgba\(255, 139, 152/);
   assert.equal(html.includes("Vorbörse 10:00"), false);
   assert.match(html, /–/);
   assert.match(html, new RegExp(SEASON_N_LEGEND.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
@@ -268,6 +287,56 @@ test("Unter sieben Fällen gibt es keine Prozentzahl", () => {
   });
   assert.equal(quiet, "Kaum Unterschied zwischen den Tagen.");
   assert.equal(ADVICE.test(quiet), false);
+});
+
+test("Die Tag-Zeile zählt steigende Tage im selben Zeitraum wie die Balken", () => {
+  assert.deepEqual(summarizeWeek([
+    { n: 10, up: 6, avg: 1.5 },
+    { n: 10, up: 4, avg: -0.5 }
+  ]), { n: 20, up: 10, avg: 0.5 });
+  assert.deepEqual(summarizeWeek([
+    { n: 6, up: 6, avg: 2 },
+    { n: 0, up: 0, avg: null },
+    { n: 4, up: 9, avg: 1 }
+  ]), { n: 6, up: 6, avg: 2 });
+  assert.equal(upPercent(summarizeWeek([
+    { n: 6, up: 6, avg: 2, med: 2 },
+    { n: 10, up: 8, avg: 0.4, med: 0.2 },
+    { n: 10, up: 2, avg: -0.5, med: -0.4 },
+    { n: 10, up: 5, avg: 0.1, med: 0 },
+    { n: 10, up: 6, avg: 0.2, med: 0.1 }
+  ])), 59);
+
+  const hours = HOUR_SLOTS.map(() => ({ n: 0, up: 0, avg: null }));
+  const grid = Array.from({ length: 5 }, () => HOUR_SLOTS.map(() => ({ n: 0, up: 0, avg: null })));
+  const allDays = [0, 1, 2, 3, 4].map(() => ({ n: 10, up: 8, avg: 1, med: 1 }));
+  const yearDays = [
+    { n: 8, up: 2, avg: -1, med: -1 },
+    { n: 8, up: 2, avg: -1, med: -1 },
+    { n: 8, up: 2, avg: -1, med: -1 },
+    { n: 8, up: 2, avg: -1, med: -1 },
+    { n: 5, up: 5, avg: 3, med: 3 }
+  ];
+  const pack = {
+    symbols: {
+      SPCX: {
+        name: "SpaceX",
+        ranges: {
+          all: { from: "2024-01-02", to: "2026-11-06", days: allDays, hours, grid },
+          year: { from: "2025-11-06", to: "2026-11-06", days: yearDays, hours, grid }
+        }
+      }
+    }
+  };
+  const all = renderSeasonalityCard(pack, { symbol: "SPCX" }, "all");
+  const year = renderSeasonalityCard(pack, { symbol: "SPCX" }, "year");
+  assert.deepEqual(tagCells(all), ["80%", "80%", "80%", "80%", "80%", "80 %"]);
+  assert.deepEqual(tagCells(year), ["25%", "25%", "25%", "25%", "–", "35 %"]);
+  assert.match(all, /Tag: Anteil steigender Tage/);
+  assert.match(tagRow(all), /ganzer Tag, Schluss zu Schluss, 80 % der Tage gestiegen/);
+  assert.match(year, /data-season="year"/);
+  assert.equal(/Keine Anlageberatung/.test(all + year), false);
+  assert.equal(ADVICE.test(all + year), false);
 });
 
 test("Ein Jahr schneidet alte Tage ab und mischt keine zweite Aktie hinein", () => {
@@ -322,8 +391,18 @@ test("Die Karte steht unter dem Muster und die Spanne lässt sie in Ruhe", () =>
       assert.equal(/Kaufsignal/i.test(line), false);
       const view = renderSeasonalityCard(seasonality, { symbol, name: pack.name }, key);
       assert.equal(ADVICE.test(view), false, symbol);
+      assert.equal(/Keine Anlageberatung/.test(view), false, symbol);
       assert.match(view, /Vergangenheit, keine Vorhersage/);
       assert.match(view, /nicht den ganzen Markt/);
+      assert.match(view, /Tag: Anteil steigender Tage/);
+      assert.ok(view.indexOf('data-hour="21:30"') < view.indexOf('data-row="tag"'), symbol);
+      const expected = pack.ranges[key].days.map((row) => {
+        const share = upPercent(row);
+        return share == null ? "–" : `${share}%`;
+      });
+      const weekShare = upPercent(summarizeWeek(pack.ranges[key].days));
+      expected.push(weekShare == null ? "–" : `${weekShare} %`);
+      assert.deepEqual(tagCells(view), expected, `${symbol} ${key}`);
     }
   }
   const tsla = renderSeasonalityCard(seasonality, { symbol: "TSLA" }, "all");

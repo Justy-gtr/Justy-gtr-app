@@ -281,6 +281,23 @@ export function aggregateWeekdays(points, range = null) {
   return buckets.map((values) => summarize(values, true));
 }
 
+/** Mo–Fr zusammen, Schluss zu Schluss. Dieselben Tageszeilen wie die Balken. */
+export function summarizeWeek(days) {
+  let n = 0;
+  let up = 0;
+  let weighted = 0;
+  let avgKnown = true;
+  for (const row of days || []) {
+    if (!row || !Number.isInteger(row.n) || row.n <= 0) continue;
+    if (!Number.isInteger(row.up) || row.up < 0 || row.up > row.n) continue;
+    n += row.n;
+    up += row.up;
+    if (Number.isFinite(row.avg)) weighted += row.avg * row.n;
+    else avgKnown = false;
+  }
+  return { n, up, avg: n && avgKnown ? round2(weighted / n) : null };
+}
+
 function dedupedBars(bars, range) {
   const seen = new Map();
   for (const bar of bars || []) {
@@ -474,7 +491,7 @@ function slotSpoken(label) {
   return `${clockMinutes(meta.start)} bis ${clockMinutes(meta.start + meta.duration)}`;
 }
 
-function clockBlock(hours, grid) {
+function clockBlock(hours, grid, days) {
   const rows = HOUR_SLOTS.map((_, index) => hours[index] || { n: 0, up: 0, avg: null });
   const cells = Array.from({ length: 5 }, (_, day) => (
     HOUR_SLOTS.map((_, index) => grid?.[day]?.[index] || { n: 0, avg: null })
@@ -517,11 +534,42 @@ function clockBlock(hours, grid) {
       : "";
     return `${split}<span class="clock-name" data-hour="${esc(slot)}">${esc(slotFace(slot))}</span>${dayCells}<span class="clock-sum${share == null ? " is-quiet" : ""}" style="${style}" role="img" aria-label="${esc(aria)}">${text}</span>`;
   }).join("");
+  const dayRows = WEEKDAY_LABELS.map((_, index) => days?.[index] || { n: 0, up: 0, avg: null });
+  const week = summarizeWeek(days);
+  const dayAvgs = dayRows.map((row) => shownAverage(row)).filter((value) => value != null);
+  const weekAvgShown = shownAverage(week);
+  if (weekAvgShown != null) dayAvgs.push(weekAvgShown);
+  const dayScale = dayAvgs.reduce((max, value) => Math.max(max, Math.abs(value)), 0);
+  const dayCells = dayRows.map((row, dayIndex) => {
+    const share = upPercent(row);
+    const avg = shownAverage(row);
+    const colored = share != null && avg != null && dayScale > 0;
+    const amount = colored ? Math.min(1, Math.abs(avg) / dayScale) : 0;
+    const style = colored ? heatStyle(avg, dayScale) : "";
+    const text = share == null ? "–" : `${share}%`;
+    const name = WEEKDAY_NAMES[dayIndex];
+    const aria = share == null
+      ? `${name}, ganzer Tag, Schluss zu Schluss, n = ${row?.n || 0}, keine Prozentzahl`
+      : `${name}, ganzer Tag, Schluss zu Schluss, ${share} % der Tage gestiegen, im Schnitt ${formatSignedPct(avg)}, n = ${row.n}`;
+    const ink = amount >= 0.55 ? " is-ink" : "";
+    return `<span class="clock-cell is-day${share == null ? " is-quiet" : ink}" style="${style}" role="img" aria-label="${esc(aria)}">${text}</span>`;
+  }).join("");
+  const weekShare = upPercent(week);
+  const weekAvg = weekAvgShown;
+  const weekColored = weekShare != null && weekAvg != null && dayScale > 0;
+  const weekAmount = weekColored ? Math.min(1, Math.abs(weekAvg) / dayScale) : 0;
+  const weekStyle = weekColored ? heatStyle(weekAvg, dayScale) : "";
+  const weekText = weekShare == null ? "–" : `${weekShare} %`;
+  const weekAria = weekShare == null
+    ? `Ganzer Tag, alle Wochentage dieser Aktie, Schluss zu Schluss, n = ${week.n || 0}, keine Prozentzahl`
+    : `Ganzer Tag, alle Wochentage dieser Aktie, Schluss zu Schluss, ${weekShare} % der Tage gestiegen, im Schnitt ${formatSignedPct(weekAvg)}, n = ${week.n}`;
+  const dayLine = `<span class="clock-split is-day"></span><span class="clock-name is-day" data-row="tag">Tag</span>${dayCells}<span class="clock-sum is-day${weekShare == null ? " is-quiet" : ""}${weekAmount >= 0.55 ? " is-ink" : ""}" style="${weekStyle}" role="img" aria-label="${esc(weekAria)}">${weekText}</span>`;
   return `<div class="clock">
     <span class="clock-name"></span>${heads}
     ${body}
+    ${dayLine}
   </div>
-  <p class="chart-legend"><span><i class="swatch support" aria-hidden="true"></i>gestiegen</span><span><i class="swatch resist" aria-hidden="true"></i>gefallen</span><span>Farbe: mittlere Bewegung. Zahl: Anteil steigender Stunden. Woche: Mo–Fr dieser Aktie.</span></p>`;
+  <p class="chart-legend"><span><i class="swatch support" aria-hidden="true"></i>gestiegen</span><span><i class="swatch resist" aria-hidden="true"></i>gefallen</span><span>Farbe: mittlere Bewegung. Zahl: Anteil steigender Stunden. Woche: Mo–Fr dieser Aktie. Tag: Anteil steigender Tage.</span></p>`;
 }
 
 function earlyLine(note) {
@@ -561,7 +609,7 @@ export function renderSeasonalityCard(seasonality, ticker, season) {
     <p class="season-kicker">Tage, Schluss zu Schluss</p>
     <div class="wd-list">${weekdayRows(stats.days || [])}</div>
     <p class="season-kicker">Uhrzeit, Berlin</p>
-    ${clockBlock(stats.hours || [], stats.grid || [])}
+    ${clockBlock(stats.hours || [], stats.grid || [], stats.days || [])}
     ${earlyLine(pack.earlyNote)}
     <p class="season-note">${esc(PAST_NOTE)}</p>
     <p class="analysis-note n-legend">${esc(SEASON_N_LEGEND)}</p>
