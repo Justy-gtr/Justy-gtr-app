@@ -2,23 +2,42 @@ import { esc } from "./logic.js";
 
 const PAGES = ["heute", "kalender", "posts", "schwarm", "charts", "analyse", "mehr"];
 
+/** Page slot from the pager's own width. offsetLeft follows the wrong box once overlays sit beside the scroller. */
+export function pagerIndex(scrollLeft, width, count = PAGES.length) {
+  const size = Number(width) || 1;
+  const index = Math.round(Number(scrollLeft) / size);
+  return Math.min(count - 1, Math.max(0, index));
+}
+
+export function pagerLeft(index, width) {
+  return Math.max(0, Number(index) || 0) * (Number(width) || 0);
+}
+
 export function initNav(pager, { onPage } = {}) {
   const root = document.getElementById("detail-root");
   const stack = [];
   let closing = false;
   let current = "heute";
+  let lockUntil = 0;
 
   function indexOf(id) {
-    return Math.max(0, PAGES.indexOf(id));
+    const index = PAGES.indexOf(id);
+    return index < 0 ? 0 : index;
   }
 
-  function go(id, { smooth = true } = {}) {
-    const page = document.getElementById(`page-${id}`);
-    if (!page || !pager) return;
+  function go(id, { smooth = false } = {}) {
+    if (!pager || !PAGES.includes(id)) return;
     current = id;
-    pager.scrollTo({ left: page.offsetLeft, behavior: smooth ? "smooth" : "auto" });
+    const left = pagerLeft(indexOf(id), pager.clientWidth);
+    lockUntil = Date.now() + (smooth ? 700 : 80);
+    pager.scrollTo({ left, behavior: smooth ? "smooth" : "auto" });
     setActive(id);
     onPage?.(id);
+  }
+
+  function align() {
+    if (!pager) return;
+    pager.scrollLeft = pagerLeft(indexOf(current), pager.clientWidth);
   }
 
   function setActive(id) {
@@ -152,10 +171,10 @@ export function initNav(pager, { onPage } = {}) {
   }
 
   pager?.addEventListener("scroll", () => {
-    const width = pager.clientWidth || 1;
-    const index = Math.min(PAGES.length - 1, Math.max(0, Math.round(pager.scrollLeft / width)));
-    const id = PAGES[index];
+    if (Date.now() < lockUntil) return;
+    const id = PAGES[pagerIndex(pager.scrollLeft, pager.clientWidth)];
     if (id !== current) {
+      current = id;
       setActive(id);
       onPage?.(id);
     }
@@ -180,6 +199,7 @@ export function initNav(pager, { onPage } = {}) {
     close,
     closeAll,
     topKind: () => stack.at(-1)?.kind || null,
-    setActive
+    setActive,
+    align
   };
 }

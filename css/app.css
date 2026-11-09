@@ -65,15 +65,22 @@ img { display: block; }
 
 .app {
   width: min(100%, 480px);
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  max-height: 100%;
   position: relative;
   overflow: hidden;
+}
+.frame {
+  height: 100%;
+  min-height: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
   padding-top: var(--safe-t);
 }
 
 .topbar {
+  flex-shrink: 0;
   display: grid;
   grid-template-columns: auto 1fr auto auto;
   gap: 10px;
@@ -106,6 +113,8 @@ img { display: block; }
 .pager {
   flex: 1;
   min-height: 0;
+  min-width: 0;
+  width: 100%;
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
@@ -116,6 +125,9 @@ img { display: block; }
 .pager::-webkit-scrollbar { display: none; }
 .page {
   flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -469,6 +481,7 @@ button.card { border-radius: 24px; }
 .split { display: grid; gap: 10px; }
 
 .dock {
+  flex-shrink: 0;
   background: rgba(8, 9, 14, 0.9);
   border-top: 1px solid var(--line);
   backdrop-filter: blur(18px);
@@ -948,7 +961,7 @@ body.detail-open .pager { overflow: hidden; }
   height: 0;
   pointer-events: none;
 }
-.pull-ind[hidden] { display: none; }
+.pull-ind[hidden] { display: none !important; }
 .pull-chip {
   width: 32px;
   height: 32px;
@@ -973,7 +986,7 @@ body.detail-open .pager { overflow: hidden; }
   align-items: flex-end;
   pointer-events: auto;
 }
-.ko-sheet[hidden] { display: none; }
+.ko-sheet[hidden] { display: none !important; }
 .ko-backdrop {
   position: absolute;
   inset: 0;
@@ -1099,7 +1112,7 @@ body.detail-open .pager { overflow: hidden; }
   background: rgba(0, 0, 0, .55);
   pointer-events: auto;
 }
-.link-sheet[hidden] { display: none; }
+.link-sheet[hidden] { display: none !important; }
 .link-sheet .card { width: 100%; }
 .link-sheet .muted { overflow-wrap: anywhere; }
 .error-card { border-color: rgba(159, 223, 255, .4); }

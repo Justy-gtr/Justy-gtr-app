@@ -151,7 +151,8 @@ test("Ohne Kurs oder ohne Wechselkurs gibt es keine Schwelle", () => {
 });
 
 test("Hinweis bleibt der eine Satz und enthält keine Anlageberatung", () => {
-  assert.equal(KNOCK_HINT, "Der Knock-out greift auch außerhalb der US-Börsenzeit. Keine Anlageberatung.");
+  assert.equal(KNOCK_HINT, "Der Knock-out greift auch außerhalb der US-Börsenzeit.");
+  assert.equal(/anlageberatung/i.test(KNOCK_HINT), false);
   assert.equal(ADVICE.test(KNOCK_HINT), false);
 });
 

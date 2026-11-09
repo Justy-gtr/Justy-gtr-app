@@ -569,7 +569,6 @@ function renderMehr() {
     </header>
     <div class="menu">${items.map(([action, title, text]) => `
       <button type="button" class="card linkish" data-action="${action}"><strong>${esc(title)}</strong><span>${esc(text)}</span></button>`).join("")}</div>
-    <p class="disclaimer dock-note">Keine Anlageberatung. Nur Recherche und Bildung für Justy.</p>
   `;
 }
 
@@ -613,7 +612,6 @@ function moonshotsDetail(data) {
     kind: "moonshots",
     title: "Moonshots",
     html: `
-      <p class="banner">${esc(file?.disclaimer || "Keine Anlageberatung. Hebel kann Totalverlust bedeuten. Vergangenheit, keine Vorhersage.")}</p>
       <p class="lede">Kandidaten mit Kurstreibern. Fakten und alte Tage.</p>
       <p class="muted">n ist die Zahl der Termine oder Tage. Unter 7 keine Prozentzahl.</p>
       ${list.map((item) => moonshotCard(item)).join("") || `<p class="empty">Noch keine Kandidaten.</p>`}
@@ -708,7 +706,7 @@ function explainDetail(data, symbol) {
     kind: "explain",
     title: ticker ? `Warum ${ticker.symbol}?` : "Einordnung",
     html: `
-      <p class="kicker">Kurz, keine Anlageberatung</p>
+      <p class="kicker">Kurz</p>
       ${ticker ? `<p class="price-value">${esc(formatEUR(ticker.priceEur))} <span class="${tone(ticker.changePct)}">${esc(formatPct(ticker.changePct))}</span></p>` : ""}
       <div class="prose">${prose(ticker?.why || "Noch keine kurze Einordnung hinterlegt.")}</div>
       ${ticker?.narrativeExample || ticker?.example ? pill(true) : ""}
@@ -858,7 +856,7 @@ function scenarioDetail(data, ui) {
             <p class="muted">${esc(reaction.note || "")}</p>`).join("")}
           ${sourcesBlock(current.sources)}
         </article>` : `<p class="empty">Keine Szenarien.</p>`}
-      <p class="disclaimer">Keine Anlageberatung. Vergangene Fälle müssen sich nicht wiederholen.</p>
+      <p class="muted">Vergangene Fälle müssen sich nicht wiederholen.</p>
     `
   };
 }
@@ -881,7 +879,6 @@ function calmDetail(data) {
           <p>${esc(item.recoveryNote || "")}</p>
           ${sourcesBlock(item.sources)}
         </article>`).join("")}
-      <p class="disclaimer">Keine Anlageberatung.</p>
     `
   };
 }

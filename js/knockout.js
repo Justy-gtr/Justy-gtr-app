@@ -1,6 +1,6 @@
 import { formatEUR } from "./logic.js";
 
-export const KNOCK_HINT = "Der Knock-out greift auch außerhalb der US-Börsenzeit. Keine Anlageberatung.";
+export const KNOCK_HINT = "Der Knock-out greift auch außerhalb der US-Börsenzeit.";
 export const KO_STORAGE_KEY = "jgtr-ko";
 export const KO_SAVED_LIMIT = 6;
 
