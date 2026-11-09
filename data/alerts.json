@@ -218,7 +218,7 @@
       "thresholdPct": 2,
       "direction": "up",
       "timestamp": "2026-11-09T14:56:49.473Z",
-      "notified": false,
+      "notified": true,
       "example": false,
       "sources": [
         {
