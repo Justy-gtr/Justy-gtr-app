@@ -1,4 +1,4 @@
-const CACHE = "jgtr-v19";
+const CACHE = "jgtr-v20";
 const CORE = [
   "",
   "index.html",
@@ -14,6 +14,7 @@ const CORE = [
   "js/analyse.js",
   "js/candle-chart.js",
   "js/analyse-view.js",
+  "js/seasonality.js",
   "js/nav.js",
   "js/views.js",
   "js/eggs.js",
@@ -26,6 +27,7 @@ const CORE = [
   "icons/icon-maskable-512.png",
   "data/meta.json",
   "data/prices.json",
+  "data/seasonality.json",
   "data/calendar.json",
   "data/posts.json",
   "data/favorites.json",

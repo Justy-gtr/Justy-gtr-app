@@ -17,6 +17,7 @@ const ui = {
   langfrist: false,
   analyseSymbol: "SPCX",
   analyseRange: "15 Min",
+  analyseSeason: "all",
   live: false,
   scenarioId: "starship_fail",
   revealed: {},
@@ -295,6 +296,11 @@ document.body.addEventListener("click", (event) => {
   }
   if (action === "analyse-range") {
     ui.analyseRange = el.dataset.range;
+    render();
+    return;
+  }
+  if (action === "analyse-season") {
+    ui.analyseSeason = el.dataset.season === "year" ? "year" : "all";
     render();
     return;
   }

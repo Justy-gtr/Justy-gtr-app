@@ -1,0 +1,287 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import test from "node:test";
+import { renderAnalyse } from "../js/analyse-view.js";
+import { MIN_CASES } from "../js/analysis.js";
+import {
+  HOUR_SLOTS,
+  SEASON_N_LEGEND,
+  aggregateGrid,
+  aggregateHours,
+  aggregatePremarket,
+  aggregateWeekdays,
+  berlinClock,
+  buildWindows,
+  hourSlot,
+  isPremarketHour,
+  keepSettledDaily,
+  renderSeasonalityCard,
+  seasonalityHeadline,
+  upPercent
+} from "../js/seasonality.js";
+
+const ADVICE = /\b(kaufen|verkaufen|kauft|verkauft|kaufsignal|verkaufssignal|kaufempfehlung)\b/i;
+
+function rowText(html, weekday) {
+  const start = html.indexOf(`data-weekday="${weekday}"`);
+  const end = html.indexOf("wd-row", start + 10);
+  return html.slice(start, end === -1 ? html.length : end);
+}
+
+test("Wochentage zählen nur die eigenen Schlüsse, Wochenende und Lücken bleiben draußen", () => {
+  const days = aggregateWeekdays([
+    { t: "2026-01-02", close: 100 },
+    { t: "2026-01-05", close: 110 },
+    { t: "2026-01-06", close: 110 },
+    { t: "2026-01-07", close: 99 },
+    { t: "2026-01-08", close: 100 },
+    { t: "2026-01-09", close: 90 },
+    { t: "2026-01-10", close: 50 },
+    { t: "2026-02-20", close: 10 }
+  ]);
+  assert.equal(days.length, 5);
+  assert.equal(days[0].n, 1);
+  assert.equal(days[0].up, 1);
+  assert.equal(days[0].avg, 10);
+  assert.equal(days[0].med, 10);
+  assert.equal(days[1].n, 1);
+  assert.equal(days[1].up, 0);
+  assert.equal(days[1].avg, 0);
+  assert.equal(days[2].up, 0);
+  assert.equal(days[2].avg, -10);
+  assert.equal(days[3].up, 1);
+  assert.equal(days[3].avg, 1.01);
+  assert.equal(days[4].n, 1);
+  assert.equal(days[4].up, 0);
+  assert.equal(days[4].avg, -10);
+
+  const paired = aggregateWeekdays([
+    { t: "2026-01-02", close: 100 },
+    { t: "2026-01-05", close: 110 },
+    { t: "2026-01-09", close: 110 },
+    { t: "2026-01-12", close: 107.8 }
+  ]);
+  assert.equal(paired[0].n, 2);
+  assert.equal(paired[0].up, 1);
+  assert.equal(paired[0].med, 4);
+
+  const own = aggregateWeekdays([{ t: "2026-01-02", close: 100 }, { t: "2026-01-05", close: 110 }]);
+  const other = aggregateWeekdays([{ t: "2026-01-02", close: 100 }, { t: "2026-01-05", close: 90 }]);
+  assert.equal(own[0].up, 1);
+  assert.equal(other[0].up, 0);
+  assert.notEqual(own[0].avg, other[0].avg);
+});
+
+test("Ein Zeitstempel nimmt den Handelstag in New York, nicht Mitternacht in Berlin", () => {
+  const days = aggregateWeekdays([
+    { t: "2026-01-02T14:30:00.000Z", close: 100 },
+    { t: "2026-01-05T00:00:00.000Z", close: 150 },
+    { t: "2026-01-05T14:30:00.000Z", close: 110 }
+  ]);
+  assert.equal(days[0].n, 1);
+  assert.equal(days[0].avg, 10);
+  assert.equal(days[0].up, 1);
+});
+
+test("Berliner Stunden bleiben bei Sommer- und Winterzeit auf der echten Uhr", () => {
+  assert.equal(hourSlot("2026-01-05T14:30:00.000Z"), "15:30");
+  assert.equal(hourSlot("2026-01-05T20:30:00.000Z"), "21:30");
+  assert.equal(hourSlot("2026-07-06T13:30:00.000Z"), "15:30");
+  assert.equal(hourSlot("2026-07-06T19:30:00.000Z"), "21:30");
+  assert.equal(berlinClock("2026-03-09T13:30:00.000Z").hour, 14);
+  assert.equal(berlinClock("2026-03-09T13:30:00.000Z").minute, 30);
+  assert.equal(hourSlot("2026-03-09T13:30:00.000Z"), null);
+  assert.equal(hourSlot("2026-03-09T14:30:00.000Z"), "15:30");
+  assert.equal(berlinClock("2026-10-26T13:30:00.000Z").hour, 14);
+  assert.equal(hourSlot("2026-10-26T13:30:00.000Z"), null);
+  assert.equal(hourSlot("2026-11-06T21:00:00.000Z"), null);
+
+  const hours = aggregateHours([
+    { t: "2026-01-05T14:30:00.000Z", open: 100, close: 101 },
+    { t: "2026-07-06T13:30:00.000Z", open: 100, close: 102 },
+    { t: "2026-03-09T13:30:00.000Z", open: 100, close: 110 },
+    { t: "2026-11-06T21:00:00.000Z", open: 100, close: 100 }
+  ]);
+  assert.deepEqual(HOUR_SLOTS[0], "15:30");
+  assert.equal(hours[0].n, 2);
+  assert.equal(hours[0].up, 2);
+  assert.equal(hours.reduce((sum, row) => sum + row.n, 0), 2);
+
+  const grid = aggregateGrid([
+    { t: "2026-01-05T14:30:00.000Z", open: 100, close: 101 },
+    { t: "2026-03-09T13:30:00.000Z", open: 100, close: 110 }
+  ]);
+  assert.equal(grid[0][0].n, 1);
+  assert.equal(grid.flat().reduce((sum, cell) => sum + cell.n, 0), 1);
+
+  assert.equal(isPremarketHour("2026-01-05T13:00:00.000Z"), true);
+  assert.equal(isPremarketHour("2026-07-06T12:00:00.000Z"), true);
+  assert.equal(isPremarketHour("2026-01-05T14:00:00.000Z"), false);
+  assert.equal(isPremarketHour("2026-03-09T13:00:00.000Z"), false);
+  const preBars = [
+    { t: "2026-01-05T09:00:00.000Z", open: 100, close: 101 },
+    { t: "2026-01-05T10:00:00.000Z", open: 100, close: 101 },
+    { t: "2026-01-05T11:00:00.000Z", open: 100, close: 99 },
+    { t: "2026-01-05T12:00:00.000Z", open: 100, close: 101 },
+    { t: "2026-01-05T13:00:00.000Z", open: 100, close: 101 },
+    { t: "2026-01-05T14:00:00.000Z", open: 100, close: 130 },
+    { t: "2026-01-05T14:30:00.000Z", open: 100, close: 140 }
+  ];
+  for (const hour of [9, 10, 11, 12, 13]) {
+    preBars.push({ t: `2026-01-06T${String(hour).padStart(2, "0")}:00:00.000Z`, open: 100, close: 101 });
+  }
+  const pre = aggregatePremarket(preBars);
+  assert.equal(pre.n, 10);
+  assert.equal(pre.up, 9);
+});
+
+test("Unter sieben Fällen gibt es keine Prozentzahl", () => {
+  assert.equal(MIN_CASES, 7);
+  assert.equal(upPercent({ n: 6, up: 6 }), null);
+  assert.equal(upPercent({ n: 7, up: 6 }), 86);
+  const thin = aggregatePremarket([
+    { t: "2026-01-05T09:00:00.000Z", open: 10, close: 11 },
+    { t: "2026-01-05T10:00:00.000Z", open: 10, close: 11 },
+    { t: "2026-01-05T11:00:00.000Z", open: 10, close: 11 }
+  ]);
+  assert.equal(thin, null);
+
+  const days = [
+    { n: 6, up: 6, avg: 2, med: 2 },
+    { n: 10, up: 8, avg: 0.4, med: 0.2 },
+    { n: 10, up: 2, avg: -0.5, med: -0.4 },
+    { n: 10, up: 5, avg: 0.1, med: 0 },
+    { n: 10, up: 6, avg: 0.2, med: 0.1 }
+  ];
+  const hours = HOUR_SLOTS.map((_, index) => ({ n: index === 0 ? 6 : 20, up: 12, avg: index === 2 ? -0.2 : 0.15 }));
+  const grid = Array.from({ length: 5 }, () => HOUR_SLOTS.map((_, index) => (
+    index === 0 ? { n: 4, avg: 3 } : { n: 8, avg: 0.05 }
+  )));
+  const seasonality = {
+    symbols: {
+      TSLA: {
+        name: "Tesla",
+        ranges: {
+          all: { from: "2025-01-02", to: "2026-11-06", days, hours, grid, pre: { n: 30, up: 14, avg: -0.04 } },
+          year: { from: "2025-11-06", to: "2026-11-06", days, hours, grid, pre: null }
+        }
+      },
+      SPCX: {
+        name: "SpaceX",
+        ranges: {
+          all: {
+            from: "2026-06-12",
+            to: "2026-11-06",
+            days: days.map(() => ({ n: 12, up: 3, avg: -0.8, med: -0.5 })),
+            hours,
+            grid,
+            pre: null
+          },
+          year: {
+            from: "2026-06-12",
+            to: "2026-11-06",
+            days: days.map(() => ({ n: 12, up: 3, avg: -0.8, med: -0.5 })),
+            hours,
+            grid,
+            pre: null
+          }
+        }
+      }
+    }
+  };
+  const html = renderSeasonalityCard(seasonality, { symbol: "TSLA", name: "Tesla" }, "all");
+  assert.match(html, /Wochentag &amp; Uhrzeit/);
+  assert.match(html, /Dienstags stieg TSLA am häufigsten \(80 %, n = 10\)/);
+  assert.match(html, /Mittwochs am seltensten \(20 %, n = 10\)/);
+  assert.match(rowText(html, "Mo"), /keine Prozentzahl/);
+  assert.equal(/%/.test(rowText(html, "Mo")), false);
+  assert.match(rowText(html, "Di"), /80 % der Tage gestiegen/);
+  assert.match(html, /n = 6, keine Prozentzahl/);
+  assert.match(html, /Vergangenheit, keine Vorhersage/);
+  assert.match(html, new RegExp(SEASON_N_LEGEND.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  assert.match(html, /dieser Aktie/);
+  assert.equal(ADVICE.test(html), false);
+  assert.match(html, /season-card" aria-label="Wochentag und Uhrzeit" data-season="all"/);
+  assert.match(html, /aria-pressed="true">Alles/);
+  const year = renderSeasonalityCard(seasonality, { symbol: "TSLA" }, "year");
+  assert.match(year, /data-season="year"/);
+  assert.match(year, /1 Jahr/);
+  const spcx = renderSeasonalityCard(seasonality, { symbol: "SPCX", name: "SpaceX" }, "all");
+  assert.match(spcx, /Kaum Unterschied zwischen den Tagen/);
+  assert.equal(spcx.includes("TSLA"), false);
+  assert.equal(spcx.includes("1 Jahr"), false);
+  assert.equal(ADVICE.test(spcx), false);
+  const quiet = seasonalityHeadline("TSLA", {
+    days: [
+      { n: 100, up: 50, avg: 0.1 },
+      { n: 100, up: 51, avg: 0.1 },
+      { n: 100, up: 49, avg: 0 },
+      { n: 100, up: 50, avg: 0 },
+      { n: 100, up: 52, avg: 0.2 }
+    ]
+  });
+  assert.equal(quiet, "Kaum Unterschied zwischen den Tagen.");
+  assert.equal(ADVICE.test(quiet), false);
+});
+
+test("Ein Jahr schneidet alte Tage ab und mischt keine zweite Aktie hinein", () => {
+  const daily = [
+    { t: "2024-11-01", close: 100 },
+    { t: "2024-11-04", close: 200 },
+    { t: "2026-06-01", close: 200 },
+    { t: "2026-06-02", close: 210 }
+  ];
+  const windows = buildWindows(daily, [], []);
+  assert.equal(windows.all.days[0].n, 1);
+  assert.equal(windows.all.days[0].avg, 100);
+  assert.equal(windows.year.days[0].n, 0);
+  assert.equal(windows.year.days[1].n, 1);
+  assert.equal(windows.year.from, "2026-06-01");
+});
+
+test("Die offene New-York-Sitzung zählt noch nicht als Tag", () => {
+  const now = new Date("2026-11-09T15:00:00.000Z");
+  const kept = keepSettledDaily([
+    { t: "2026-11-06T14:30:00.000Z", close: 10 },
+    { t: "2026-11-09T14:30:00.000Z", close: 12 }
+  ], now);
+  assert.equal(kept.length, 1);
+  assert.equal(kept[0].close, 10);
+  const later = keepSettledDaily([
+    { t: "2026-11-09T14:30:00.000Z", close: 12 }
+  ], new Date("2026-11-09T21:30:00.000Z"));
+  assert.equal(later.length, 1);
+});
+
+test("Die Karte steht unter dem Muster und die Spanne lässt sie in Ruhe", () => {
+  const prices = JSON.parse(fs.readFileSync("data/prices.json", "utf8"));
+  const seasonality = JSON.parse(fs.readFileSync("data/seasonality.json", "utf8"));
+  const ui = { analyseSymbol: "TSLA", analyseRange: "15 Min", analyseSeason: "all", live: false };
+  const html = renderAnalyse({ prices, seasonality }, ui);
+  const other = renderAnalyse({ prices, seasonality }, { ...ui, analyseRange: "1J" });
+  const card = (value) => value.slice(value.indexOf("season-card"), value.indexOf("Warum diese Bewegung"));
+  assert.ok(html.indexOf("Muster") < html.indexOf("Wochentag"));
+  assert.ok(html.indexOf("Wochentag") < html.indexOf("Warum diese Bewegung"));
+  assert.equal(card(html), card(other));
+  assert.match(html, /<p class="scrub"><\/p>/);
+  assert.equal(ADVICE.test(html), false);
+  assert.equal(/\b(kaufen|verkaufen)\b/i.test(html), false);
+  assert.equal(/Kaufsignal/i.test(fs.readFileSync("data/seasonality.json", "utf8")), false);
+  assert.equal(ADVICE.test(fs.readFileSync("js/seasonality.js", "utf8")), false);
+  for (const symbol of ["SPCX", "TSLA", "RKLB"]) {
+    const pack = seasonality.symbols[symbol];
+    for (const key of ["all", "year"]) {
+      const line = seasonalityHeadline(symbol, pack.ranges[key]);
+      assert.equal(ADVICE.test(line), false, line);
+      assert.equal(/Kaufsignal/i.test(line), false);
+      const view = renderSeasonalityCard(seasonality, { symbol, name: pack.name }, key);
+      assert.equal(ADVICE.test(view), false, symbol);
+      assert.match(view, /Vergangenheit, keine Vorhersage/);
+      assert.match(view, /nicht den ganzen Markt/);
+    }
+  }
+  const tsla = renderSeasonalityCard(seasonality, { symbol: "TSLA" }, "all");
+  const spcx = renderSeasonalityCard(seasonality, { symbol: "SPCX" }, "all");
+  assert.match(tsla, /TSLA/);
+  assert.equal(spcx.includes("TSLA"), false);
+});

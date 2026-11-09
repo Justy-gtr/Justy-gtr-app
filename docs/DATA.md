@@ -26,6 +26,7 @@ Der Kurs-Workflow ändert `dataMode` nicht.
 | `meta.json` | `dataMode`, `disclaimer`, `notes`, `owner`, `researchVoice` | `pricesUpdated`, `lastUpdated` (nur wenn Kurse sich ändern), `fx`, `priceStatus` |
 | `prices.json` | `why`, `whySources`, `longTermOutlook`, `counterArgument`, `firstPrinciples`, `notes`, `narrativeExample` | alle Kurs-, Historien- und Quellenfelder der Börse, `asOf`, `fx`, `example: false` nach erfolgreichem Abruf |
 | `alerts.json` | nur `notified` auf `true` setzen | Einträge anlegen und Kursfelder aktualisieren, `example`-Alerts nach einem erfolgreichen Lauf entfernen |
+| `seasonality.json` | fasst sie nicht an | Wochentag und Uhrzeit je Aktie, einmal je Berliner Tag, ohne Rohkurse |
 | alle anderen | vollständig | fasst sie nicht an |
 
 `narrativeExample`: `true`, solange `why` und der Langfrist-Text noch aus dem Seed stammen. Der Workflow übernimmt den Text und lässt die Flagge auf `true`, bis der Assistent sie auf `false` setzt. Dann bleibt sie `false`.
@@ -508,6 +509,12 @@ Erste Prinzipien und der Kosmos ohne Börsenkürzel. Die App bevorzugt diese Dat
 ```
 
 Feste Ids: `spacex`, `tesla`, `rocketlab`, `neuralink`, `xai`, `terafab`, `boring`. Ohne Listing ist `symbol` `null` und `listed` `false`.
+
+## `seasonality.json`
+
+Eigene Historie je Aktie: wie oft Schluss zu Schluss an einem Wochentag stieg, und wie sich die Stunden der US-Sitzung in Berliner Zeit verhalten. Keine Rohkurse. Der Kurs-Workflow schreibt die Datei höchstens einmal je Berliner Tag neu (`scripts/fetch-seasonality.mjs`). Die Analyse-Spanne ändert diese Karte nicht.
+
+`ranges.all` ist bis zu zwei Jahre, `ranges.year` die letzten 365 Tage bis zum letzten Tageskurs. `days` ist Mo–Fr mit `n`, `up`, `avg`, `med` (Prozent, Schluss zu Schluss). `hours` und `grid` sind die Berliner Slots `15:30`–`21:30` der regulären Sitzung; die Uhrzeit kommt vom echten Zeitstempel, damit die Sommerzeit nicht verrutscht. `pre` ist die Vorbörse 10:00–15:00 oder `null`. Prozent zeigt die App erst ab sieben Fällen.
 
 ## Prüfung
 

@@ -28,7 +28,7 @@ const DATA = path.join(ROOT, "data");
 const HOSTS = ["https://query1.finance.yahoo.com", "https://query2.finance.yahoo.com"];
 const UA = "Mozilla/5.0 (compatible; JustyGTR/1.0; +https://github.com/Justy-gtr/Justy-gtr-app)";
 
-const TICKERS = [
+export const TICKERS = [
   {
     symbol: "SPCX",
     name: "SpaceX",
@@ -75,7 +75,7 @@ function writeJson(name, value) {
   fs.writeFileSync(path.join(DATA, name), `${JSON.stringify(value, null, 2)}\n`);
 }
 
-async function fetchChart(symbol, interval, range, { includePrePost = false } = {}) {
+export async function fetchChart(symbol, interval, range, { includePrePost = false } = {}) {
   let lastError = null;
   for (const host of HOSTS) {
     const url = new URL(`/v8/finance/chart/${encodeURIComponent(symbol)}`, host);
