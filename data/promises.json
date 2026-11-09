@@ -256,7 +256,7 @@
       "targetDate": "2027-06-30",
       "status": "offen",
       "delay": null,
-      "note": "Musk am 6.11.2026: „Terafab is moving fast“ (Quote zu Bericht über Fab-Lab-Stahlbau an Giga Texas). Weiter Ziel: erster Testchip etwa Mai/Juni 2027; Volumenproduktion aspirativ Q3/Q4 2028.",
+      "note": "Musk am 6.11.2026: „Terafab is moving fast“ (Quote zu Bericht über Fab-Lab-Stahlbau an Giga Texas). Weiter Ziel: erster Testchip etwa Mai/Juni 2027; Volumenproduktion aspirativ Q3/Q4 2028. Nikkei (9.11.): Terafab-Einkäufer waren Anfang November in Japan und baten einige Ausrüster um Lieferung „in wenigen Monaten“ — ein Hersteller nennt das „unvernünftig“, will es aber versuchen; laut Nikkei plant Terafab ab 2032 eine Million Wafer pro Monat, davon etwa 700.000 Speicher. Welche Firmen und Maschinen, ist nicht öffentlich. Tesla und SpaceX haben sich nicht geäußert.",
       "example": false,
       "sources": [
         {
@@ -266,6 +266,14 @@
         {
           "title": "@elonmusk: Terafab is moving fast",
           "url": "https://x.com/elonmusk/status/2118620772268990966"
+        },
+        {
+          "title": "Financial News (fnnews) nach Nikkei: Terafab-Eilaufträge in Japan (9.11.)",
+          "url": "https://en.fnnews.com/news/202611090902383508"
+        },
+        {
+          "title": "Teslant nach Nikkei: Terafab plant 1 Mio. Wafer/Monat ab 2032",
+          "url": "https://teslant.com/en/rumors/terafab-japan-equipment-orders-700000-memory-wafers-2032-2026-11"
         }
       ]
     },
