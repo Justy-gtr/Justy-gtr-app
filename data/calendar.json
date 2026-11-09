@@ -365,7 +365,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten über Südaustralien. Die Burn-Zeit ist seit über einer Stunde vorbei, eine Bestätigung fehlt weiter (Stand 13:15): NASA-Blog letzter Eintrag 2.11., keine Posts von NASA, @RocketLab oder @escapade_mars seit dem Morgen. Auch Blue (7.11.) ist nach rund 57 Stunden nicht offiziell bestätigt; Orbinauts schreibt, NASA habe sich zu Blue noch nicht geäußert. NASA sagte vorab, die Auswertung der Bahnen dauere einige Tage. Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering; heute 23:00 kommen ohnehin die Q3-Zahlen, dort dürfte Rocket Lab den Stand nennen.",
+      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten über Südaustralien. Stand 14:10 weiter keine offizielle Bestätigung, weder für Gold noch für Blue (7.11.): NASA-Blog letzter Eintrag 2.11., keine Posts von NASA oder @RocketLab seit dem Morgen. Leonard David berichtet, das Deep Space Network (Madrid, DSS-65) habe Funkkontakt zu Gold; NASA wolle beide Flybys voraussichtlich heute melden. Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering; heute 23:00 kommen ohnehin die Q3-Zahlen, dort dürfte Rocket Lab den Stand nennen.",
       "example": false,
       "sources": [
         {
@@ -405,12 +405,16 @@
           "url": "https://x.com/NASASolarSystem/status/2119494168728789467"
         },
         {
-          "title": "NASA ESCAPADE Blog-Archiv (Stand 9.11. 13:15: kein Post-Burn-Update)",
+          "title": "NASA ESCAPADE Blog-Archiv (Stand 9.11. 14:10: kein Post-Burn-Update)",
           "url": "https://science.nasa.gov/blogs/escapade/"
         },
         {
           "title": "Space Exploration .IN: Blue-Ergebnis nicht verifiziert (8.11.)",
           "url": "https://www.spaceexploration.in/news/escapade-earth-flyby-preparations"
+        },
+        {
+          "title": "Leonard David: DSN Madrid hat Kontakt zu Gold, NASA-Meldung erwartet (9.11.)",
+          "url": "https://www.leonarddavid.com/escapade-probes-gravity-assist-to-the-red-planet/"
         }
       ]
     },
@@ -428,7 +432,7 @@
       ],
       "probabilityPct": 97,
       "impact": "hoch",
-      "reasoning": "Offiziell angekündigt: Veröffentlichung nach US-Börsenschluss am Montag, 9.11., Call um 17:00 Uhr ET (23:00 Uhr bei uns). Messlatte: eigene Prognose 250–265 Mio. $ Umsatz, Konsens etwa 257 Mio. $ (+66 % zum Vorjahr), Bruttomarge laut Prognose 29–31 % (Q2: 36,1 %), bereinigtes EBITDA −17 bis −23 Mio. $. Im Fokus: Auftragsbestand, Q4-Ausblick und der Neutron-Fahrplan, nachdem der Erststart am 14.10. auf 2027 verschoben wurde (Aktie am Folgetag −6,6 %). Nach den Q2-Zahlen bewegte sich der Kurs am Folgetag kaum (−0,04 %), nachbörslich lag er zeitweise 7 % im Minus.",
+      "reasoning": "Offiziell angekündigt: Veröffentlichung nach US-Börsenschluss am Montag, 9.11., Call um 17:00 Uhr ET (23:00 Uhr bei uns). Messlatte: eigene Prognose 250–265 Mio. $ Umsatz, Konsens etwa 257 Mio. $ (+66 % zum Vorjahr), Bruttomarge laut Prognose 29–31 % (Q2: 36,1 %), bereinigtes EBITDA −17 bis −23 Mio. $. Im Fokus: Auftragsbestand, Q4-Ausblick und der Neutron-Fahrplan, nachdem der Erststart am 14.10. auf 2027 verschoben wurde (Aktie am Folgetag −6,6 %). Nach den Q2-Zahlen bewegte sich der Kurs am Folgetag kaum (−0,04 %), nachbörslich lag er zeitweise 7 % im Minus. Optionen preisen laut TipRanks eine Bewegung von rund 15 % in beide Richtungen ein; die letzten vier Reaktionen lagen im Schnitt bei knapp 10 %. Vorbörslich Mo leicht im Plus (~+1,4 %) nach +15 % am Freitag.",
       "example": false,
       "sources": [
         {
@@ -458,6 +462,10 @@
         {
           "title": "MarketBeat: RKLB Q3 Konsens",
           "url": "https://www.marketbeat.com/earnings/reports/2026-11-9-rocketlab-stock/"
+        },
+        {
+          "title": "TipRanks: Optionen erwarten ~15 % Bewegung (RKLB Q3)",
+          "url": "http://www.tipranks.com/news/rocket-lab-stock-price-forecast-what-options-traders-and-financial-analysts-expect-ahead-of-q3-earnings"
         }
       ]
     },
@@ -1203,7 +1211,7 @@
       ],
       "probabilityPct": 50,
       "impact": "mittel",
-      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“ und will, dass er Chef bleibt. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11. — eine Bitte, keine Vorladung, daher 50 %. Nvidia lag am Mo vorbörslich etwa 4 % im Minus. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen.",
+      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“ und will, dass er Chef bleibt. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11. — eine Bitte, keine Vorladung, daher 50 %. Nvidia lag am Mo vorbörslich etwa 5 % im Minus (Stand 14:10), andere Chipwerte wie Intel, Marvell und Arm rund 1 %; der übrige Tech-Sektor steht im Plus. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen.",
       "example": false,
       "sources": [
         {
@@ -1229,6 +1237,10 @@
         {
           "title": "Yahoo Finance: Nvidia vorbörslich −4 % (9.11.)",
           "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
+        },
+        {
+          "title": "CNBC: Nvidia vorbörslich −5 % (9.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
         }
       ]
     },
