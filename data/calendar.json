@@ -365,7 +365,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten über Südaustralien. Stand 14:10 weiter keine offizielle Bestätigung, weder für Gold noch für Blue (7.11.): NASA-Blog letzter Eintrag 2.11., keine Posts von NASA oder @RocketLab seit dem Morgen. Leonard David berichtet, das Deep Space Network (Madrid, DSS-65) habe Funkkontakt zu Gold; NASA wolle beide Flybys voraussichtlich heute melden. Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering; heute 23:00 kommen ohnehin die Q3-Zahlen, dort dürfte Rocket Lab den Stand nennen.",
+      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten über Südaustralien. Stand 15:10 weiter keine offizielle Bestätigung, weder für Gold noch für Blue (7.11.): NASA-Blog letzter Eintrag 2.11., keine Posts von NASA oder @RocketLab seit dem Morgen. AMSAT-DL meldet, Gold sei heute in unter 7000 km vorbeigeflogen — das zeigt den Vorbeiflug, nicht den Erfolg des Burns. Leonard David berichtet, das Deep Space Network (Madrid, DSS-65) habe Funkkontakt zu Gold; NASA wolle beide Flybys voraussichtlich heute melden. Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering; heute 23:00 kommen ohnehin die Q3-Zahlen, dort dürfte Rocket Lab den Stand nennen.",
       "example": false,
       "sources": [
         {
@@ -415,6 +415,10 @@
         {
           "title": "Leonard David: DSN Madrid hat Kontakt zu Gold, NASA-Meldung erwartet (9.11.)",
           "url": "https://www.leonarddavid.com/escapade-probes-gravity-assist-to-the-red-planet/"
+        },
+        {
+          "title": "@amsatdl: Gold-Vorbeiflug unter 7000 km (9.11.)",
+          "url": "https://x.com/amsatdl/status/2119781346617041031"
         }
       ]
     },
@@ -1211,7 +1215,7 @@
       ],
       "probabilityPct": 50,
       "impact": "mittel",
-      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“ und will, dass er Chef bleibt. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11. — eine Bitte, keine Vorladung, daher 50 %. Nvidia lag am Mo vorbörslich etwa 5 % im Minus (Stand 14:10), andere Chipwerte wie Intel, Marvell und Arm rund 1 %; der übrige Tech-Sektor steht im Plus. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen.",
+      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nvidia lag am Mo vorbörslich zuletzt etwa 6 % im Minus (Stand 15:10), Nasdaq-100-Futures dagegen im Plus. Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen.",
       "example": false,
       "sources": [
         {
@@ -1241,6 +1245,18 @@
         {
           "title": "CNBC: Nvidia vorbörslich −5 % (9.11.)",
           "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
+        },
+        {
+          "title": "House Foreign Affairs: Bitte um Huang-Briefing, Antwort bis 11.11.",
+          "url": "https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-request-jensen-huang-brief-congress-on-link-to-chinese-intelligence-asset"
+        },
+        {
+          "title": "CNBC: Analysten zu Huang-Belastung, Baird zu H200 (9.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/nvidia-stock-faces-huang-investigation-overhang-analysts.html"
+        },
+        {
+          "title": "Yahoo Finance: NVDA vorbörslich",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         }
       ]
     },
