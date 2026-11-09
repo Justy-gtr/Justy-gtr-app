@@ -374,6 +374,8 @@ function detailFor(range, spec) {
     "5 Min": "in dieser Minutenreihe",
     "15 Min": "in dieser Minutenreihe",
     "4 Std": "in der 4-Stunden-Reihe",
+    "1T": "in dieser Minutenreihe",
+    "3T": "in dieser Minutenreihe",
     "Max": "in der langen Reihe"
   }[range] || "in der Tagesreihe";
   const after = spec.after.charAt(0).toUpperCase() + spec.after.slice(1);

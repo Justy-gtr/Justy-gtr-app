@@ -1,4 +1,4 @@
-import { limitTradingSessions, maxPoints, minuteSource, minuteWindow, scrubDelta } from "./logic.js";
+import { formatScrubWhen, limitTradingSessions, maxPoints, minuteSource, minuteWindow, scrubDelta, seriesIsSubDaily, sessionMinutePack, trimVisibleBars, VISIBLE_BARS } from "./logic.js";
 
 /** Chartanalyse ranges, in Robin's order. No 1-minute button. */
 export const ANALYSE_RANGES = ["5 Min", "15 Min", "4 Std", "1T", "3T", "1W", "1M", "6M", "1J", "Max"];
@@ -7,8 +7,8 @@ const RANGE_LABEL = {
   "5 Min": "5-Minuten-Kerzen",
   "15 Min": "15-Minuten-Kerzen",
   "4 Std": "4-Stunden-Kerzen",
-  "1T": "Eine Tageskerze",
-  "3T": "Drei Tageskerzen",
+  "1T": "Ein Handelstag",
+  "3T": "Drei Handelstage",
   "1W": "Sieben Tage",
   "1M": "Ein Monat, Tageskerzen",
   "6M": "Sechs Monate, Tageskerzen",
@@ -29,7 +29,8 @@ const RANGE_ARIA = {
   "Max": "Maximal"
 };
 
-const VISIBLE_4H = 120;
+const VISIBLE_4H = VISIBLE_BARS;
+const SIX_HOURS = 6 * 60 * 60 * 1000;
 
 export function rangeLabel(range) {
   return RANGE_LABEL[range] || range;
@@ -37,6 +38,13 @@ export function rangeLabel(range) {
 
 export function rangeAria(range) {
   return RANGE_ARIA[range] || range;
+}
+
+/** Up is green, down is red. Pre-market and the live tail use the same two colors. */
+export function candleColor(candle) {
+  const close = Number(candle?.close ?? candle?.eur);
+  const open = Number.isFinite(Number(candle?.open)) ? Number(candle.open) : close;
+  return close >= open ? "#3ddea0" : "#ff5d6c";
 }
 
 export function candleOf(point) {
@@ -102,8 +110,29 @@ function dailyPoints(ticker) {
 function minuteCandles(ticker, minutes) {
   const { points, extended } = minuteSource(ticker);
   const all = bucketCandles(points, minutes);
-  if (!extended) return { candles: all };
-  return { candles: limitTradingSessions(all, minuteWindow(minutes)), history: all };
+  const span = minutes <= 5 ? SIX_HOURS : 0;
+  const windowed = extended ? limitTradingSessions(all, minuteWindow(minutes)) : all;
+  const candles = trimVisibleBars(windowed, { max: VISIBLE_BARS, maxSpanMs: span });
+  if (!extended) return { candles };
+  return { candles, history: all };
+}
+
+/** 5-minute candles of the last N sessions. Null when the minute series is missing. */
+function sessionCandles(ticker, sessions, range) {
+  const pack = sessionMinutePack(ticker, sessions);
+  if (!pack) return null;
+  const built = bucketCandles(pack.points, 5);
+  const candles = trimVisibleBars(built, {
+    max: VISIBLE_BARS,
+    maxSpanMs: sessions === 1 ? SIX_HOURS : 0
+  });
+  if (candles.length < 2) return null;
+  return {
+    candles,
+    history: bucketCandles(pack.history, 5),
+    range,
+    missing: false
+  };
 }
 
 export function candlesFor(ticker, range) {
@@ -119,8 +148,15 @@ export function candlesFor(ticker, range) {
     return { candles: all.slice(-VISIBLE_4H), history: all, range: asked, missing: false };
   }
   let points;
-  if (asked === "1T") points = dailyPoints(ticker).slice(-1);
-  else if (asked === "3T") points = dailyPoints(ticker).slice(-3);
+  if (asked === "1T") {
+    const packed = sessionCandles(ticker, 1, asked);
+    if (packed) return packed;
+    points = dailyPoints(ticker).slice(-1);
+  } else if (asked === "3T") {
+    const packed = sessionCandles(ticker, 3, asked);
+    if (packed) return packed;
+    points = dailyPoints(ticker).slice(-3);
+  }
   else if (asked === "1W") points = dailyPoints(ticker).slice(-7);
   else if (asked === "1M") points = ticker?.history?.["1M"] || [];
   else if (asked === "6M") points = ticker?.history?.["6M"] || [];
@@ -148,31 +184,36 @@ function euroNumber(value) {
   }).format(Number(value));
 }
 
-function scrubWhen(iso, spanMs) {
-  const date = new Date(iso);
-  if (Number.isNaN(date.getTime())) return String(iso || "").slice(0, 16);
-  const zone = "Europe/Berlin";
-  const day = new Intl.DateTimeFormat("de-DE", {
-    timeZone: zone,
-    day: "numeric",
-    month: "short",
-    year: "numeric"
-  }).format(date);
-  if (spanMs < 36 * 3600 * 1000) {
-    const time = new Intl.DateTimeFormat("de-DE", {
-      timeZone: zone,
-      hour: "2-digit",
-      minute: "2-digit"
-    }).format(date);
-    return `${day}, ${time}`;
+function scrubSeries(candle, pointsOrSpan) {
+  if (Array.isArray(pointsOrSpan)) return pointsOrSpan;
+  const span = Number(pointsOrSpan);
+  const start = Date.parse(candle?.t);
+  if (!Number.isFinite(span) || span <= 0 || !Number.isFinite(start)) return [candle];
+  return [candle, { t: new Date(start + span).toISOString() }];
+}
+
+/** Bucket width from the usual gap, ignoring the overnight jump. */
+function candleEndIso(candle, candles) {
+  if (!seriesIsSubDaily(candles)) return null;
+  const times = candles.map((item) => Date.parse(item?.t)).filter((time) => Number.isFinite(time)).sort((a, b) => a - b);
+  const gaps = [];
+  for (let index = 1; index < times.length; index += 1) {
+    const gap = times[index] - times[index - 1];
+    if (gap >= 60 * 1000 && gap < 18 * 60 * 60 * 1000) gaps.push(gap);
   }
-  return day;
+  if (!gaps.length) return null;
+  gaps.sort((a, b) => a - b);
+  const start = Date.parse(candle.t);
+  if (!Number.isFinite(start)) return null;
+  return new Date(start + gaps[Math.floor((gaps.length - 1) / 2)]).toISOString();
 }
 
 /** Date, euro OHLC when the candle has a real range, and the move versus the first visible candle. */
-export function scrubLabel(candle, firstClose, spanMs) {
+export function scrubLabel(candle, firstClose, pointsOrSpan) {
   if (!candle) return "";
-  const when = scrubWhen(candle.t, spanMs);
+  const series = scrubSeries(candle, pointsOrSpan);
+  const end = Array.isArray(pointsOrSpan) ? candleEndIso(candle, series) : null;
+  const when = formatScrubWhen(candle.t, series, end);
   const percent = scrubDelta(firstClose, candle.close)?.text || "—";
   const flat = candle.high === candle.low && candle.open === candle.close;
   const price = flat

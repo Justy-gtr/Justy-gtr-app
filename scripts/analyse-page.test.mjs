@@ -4,8 +4,8 @@ import test from "node:test";
 import { N_LEGEND, analyseCandles, analyseChart, analyseText, detectShape } from "../js/analyse.js";
 import { musterCard, rangeBoard, renderAnalyse } from "../js/analyse-view.js";
 import { MIN_CASES, analysisText, chartAnalysis } from "../js/analysis.js";
-import { ANALYSE_RANGES, bucketCandles, candlesFor, formatMove, isUsefulFourHour, scrubLabel } from "../js/candles.js";
-import { scrubDelta, seriesFor } from "../js/logic.js";
+import { ANALYSE_RANGES, bucketCandles, candleColor, candlesFor, formatMove, isUsefulFourHour, scrubLabel } from "../js/candles.js";
+import { chartAxisLabels, guideLabelsToDraw, scrubDelta, seriesFor, VISIBLE_BARS } from "../js/logic.js";
 import { aggregateBars } from "./market.mjs";
 
 const ADVICE = /\b(kaufen|verkaufen|kauft|verkauft|kauf|verkauf|long|short|empfehl\w*|signal|tipp)\b/i;
@@ -166,7 +166,10 @@ test("Linie und Kerzen nutzen dieselbe Spannenleiste", () => {
   }));
   const ticker = { history: { intraday, "1M": daily, "1Y": daily, "4H": [] } };
   assert.equal(seriesFor(ticker, "15 Min").points.length, 2);
-  assert.equal(seriesFor(ticker, "1T").points.at(-1).eur, 19);
+  const day = seriesFor(ticker, "1T");
+  assert.equal(day.points.at(-1).eur, 129);
+  assert.ok(day.points.length > 1);
+  assert.equal(day.points.every((point) => point.t.startsWith("2026-11-06")), true);
   assert.equal(seriesFor(ticker, "3T").points.length, 3);
   assert.equal(seriesFor(ticker, "4 Std").points.length, 0);
   const long = {
@@ -286,28 +289,33 @@ test("Kurzer Montagmorgen behält 15-Minuten-Kerzen aus der 5-Minuten-Historie",
 
   const quarter = candlesFor(ticker, "15 Min");
   assert.ok(quarter.candles.length >= 20, `nur ${quarter.candles.length} Kerzen`);
+  assert.ok(quarter.candles.length <= VISIBLE_BARS);
   assert.equal(quarter.candles.length, seriesFor(ticker, "15 Min").points.length);
-  assert.equal(quarter.candles[0].t.slice(0, 10), "2026-11-05");
-  assert.equal(quarter.candles[0].open, 10);
-  assert.equal(quarter.candles[0].high, 16);
-  assert.equal(quarter.candles[0].low, 9);
-  assert.equal(quarter.candles[0].close, 15);
+  assert.equal(quarter.candles[0].t.slice(0, 10), "2026-11-06");
+  const thursdayBar = quarter.history.find((candle) => candle.t.startsWith("2026-11-05"));
+  assert.equal(thursdayBar.open, 10);
+  assert.equal(thursdayBar.high, 16);
+  assert.equal(thursdayBar.low, 9);
+  assert.equal(thursdayBar.close, 15);
   assert.ok(quarter.history.length > quarter.candles.length);
   assert.equal(quarter.history[0].t.slice(0, 10), "2026-11-04");
   assert.equal(quarter.candles.some((candle) => candle.high === 999 || candle.close === 999), false);
   assert.equal(quarter.candles.at(-1).close, 149);
   const span = Date.parse(quarter.candles.at(-1).t) - Date.parse(quarter.candles[0].t);
   assert.ok(span > 24 * 60 * 60 * 1000);
-  const label = scrubLabel(quarter.candles.at(-1), quarter.candles[0].close, span);
+  const label = scrubLabel(quarter.candles.at(-1), quarter.candles[0].close, quarter.candles);
+  assert.match(label, /\d{2}:\d{2}/);
   assert.match(label, new RegExp(scrubDelta(quarter.candles[0].close, quarter.candles.at(-1).close).text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   assert.equal(label.includes(scrubDelta(50, 149).text), false);
 
   const five = candlesFor(ticker, "5 Min");
-  assert.ok(five.candles.length >= 20);
+  assert.ok(five.candles.length >= 2);
+  assert.ok(five.candles.length <= VISIBLE_BARS);
   assert.equal(five.candles.length, seriesFor(ticker, "5 Min").points.length);
-  assert.equal(five.candles[0].t.slice(0, 10), "2026-11-06");
-  assert.equal(five.candles[0].close, 100);
-  assert.equal(seriesFor(ticker, "5 Min").points[0].eur, 100);
+  assert.equal(five.candles.every((candle) => candle.t.startsWith("2026-11-09")), true);
+  assert.equal(five.candles[0].close, 114);
+  assert.equal(seriesFor(ticker, "5 Min").points[0].eur, 114);
+  assert.ok(five.history.length > five.candles.length);
 
   const result = analyseChart(ticker, "15 Min");
   assert.equal(result.candles.length, quarter.candles.length);
@@ -331,4 +339,56 @@ test("Kurzer Montagmorgen behält 15-Minuten-Kerzen aus der 5-Minuten-Historie",
   assert.equal(seriesFor(bare, "5 Min").points.length, 8);
   assert.equal(candlesFor({ history: { intraday, "5m": [] } }, "15 Min").candles.length, 3);
   assert.equal(candlesFor({ history: { intraday, "5m": [intraday[0]] } }, "15 Min").candles.length, 3);
+});
+
+test("5 Min bleibt die letzte Sitzung und höchstens sechs Stunden, Kerzen bleiben grün oder rot", () => {
+  const start = Date.parse("2026-11-06T08:00:00.000Z");
+  const bars = Array.from({ length: 168 }, (_, index) => ({
+    t: new Date(start + index * 5 * 60 * 1000).toISOString(),
+    eur: 20 + index,
+    open: 20 + index,
+    high: 21 + index,
+    low: 19 + index,
+    session: index > 140 ? "pre" : "regular"
+  }));
+  const ticker = { history: { "5m": bars, intraday: [] } };
+  const five = candlesFor(ticker, "5 Min");
+  const span = Date.parse(five.candles.at(-1).t) - Date.parse(five.candles[0].t);
+  assert.ok(span <= 6 * 60 * 60 * 1000 + 5 * 60 * 1000);
+  assert.ok(five.candles.length <= VISIBLE_BARS);
+  assert.equal(five.candles.at(-1).t, bars.at(-1).t);
+  assert.ok(five.history.length > five.candles.length);
+  assert.equal(candleColor({ open: 10, close: 12, session: "pre" }), "#3ddea0");
+  assert.equal(candleColor({ open: 12, close: 9, session: "post" }), "#ff5d6c");
+  assert.equal(candleColor({ open: 10, close: 12, session: "pre" }).includes("e4b15a"), false);
+});
+
+test("Achse nennt die Uhrzeit und das Datum nur am Tageswechsel", () => {
+  const friday = Array.from({ length: 16 }, (_, index) => ({
+    t: new Date(Date.parse("2026-11-06T15:00:00.000Z") + index * 15 * 60 * 1000).toISOString(),
+    eur: index
+  }));
+  const monday = Array.from({ length: 16 }, (_, index) => ({
+    t: new Date(Date.parse("2026-11-09T14:30:00.000Z") + index * 15 * 60 * 1000).toISOString(),
+    eur: 50 + index
+  }));
+  const wide = chartAxisLabels(friday.concat(monday));
+  const texts = wide.map((label) => label.text);
+  assert.equal(new Set(texts).size, texts.length);
+  assert.ok(texts.some((text) => /^\d{2}:\d{2}$/.test(text)));
+  assert.ok(texts.some((text) => text === "Fr 6.11." || text === "Mo 9.11."));
+  const one = chartAxisLabels(monday);
+  assert.equal(one[0].text, "Mo 9.11.");
+  assert.ok(one.slice(1).every((label) => /^\d{2}:\d{2}$/.test(label.text)));
+  assert.equal(one.some((label) => label.text === "Mo 9.11." && one.filter((item) => item.text === "Mo 9.11.").length > 1), false);
+  const daily = Array.from({ length: 12 }, (_, index) => ({ t: `2026-10-${String(index + 1).padStart(2, "0")}`, eur: index }));
+  const days = chartAxisLabels(daily);
+  assert.ok(days.every((label) => !/\d{2}:\d{2}/.test(label.text)));
+  assert.equal(new Set(days.map((label) => label.text)).size, days.length);
+  const kept = guideLabelsToDraw([
+    { y: 10, text: "Unterstützung" },
+    { y: 16, text: "Widerstand" },
+    { y: 48, text: "Trend" }
+  ], 12);
+  assert.deepEqual(kept.map((label) => label.text), ["Unterstützung", "Trend"]);
 });

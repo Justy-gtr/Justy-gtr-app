@@ -77,6 +77,76 @@ export function scrubDelta(startEur, pointEur) {
   return { text: "0,00 %", direction: "flat" };
 }
 
+/** Gaps at least this long are a new day, not a finer bar. */
+const SUB_DAY_MS = 18 * 60 * 60 * 1000;
+
+function sortedTimes(points) {
+  const times = [];
+  for (const point of points || []) {
+    const time = Date.parse(point?.t);
+    if (Number.isFinite(time)) times.push(time);
+  }
+  times.sort((a, b) => a - b);
+  return times;
+}
+
+/** True when typical spacing is finer than one bar per day. A lone point is not enough. */
+export function seriesIsSubDaily(points) {
+  const times = sortedTimes(points);
+  if (times.length < 2) return false;
+  const gaps = [];
+  for (let index = 1; index < times.length; index += 1) {
+    const gap = times[index] - times[index - 1];
+    if (gap > 0) gaps.push(gap);
+  }
+  if (!gaps.length) return false;
+  gaps.sort((a, b) => a - b);
+  return gaps[Math.floor((gaps.length - 1) / 2)] < SUB_DAY_MS;
+}
+
+function berlinClockParts(date) {
+  const fmt = new Intl.DateTimeFormat("de-DE", {
+    timeZone: "Europe/Berlin",
+    weekday: "short",
+    day: "2-digit",
+    month: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23"
+  });
+  return Object.fromEntries(fmt.formatToParts(date).map((part) => [part.type, part.value]));
+}
+
+/**
+ * Scrub date in Europe/Berlin.
+ * Sub-daily series show weekday, date and 24h time (`Mo 09.11. · 15:45`).
+ * Daily series stay a date, with no clock.
+ * `endIso` appends a candle close, e.g. `15:45–16:00`.
+ */
+export function formatScrubWhen(iso, series, endIso = null) {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return String(iso || "").slice(0, 16);
+  if (!seriesIsSubDaily(series)) {
+    return date.toLocaleDateString("de-DE", {
+      timeZone: "Europe/Berlin",
+      day: "numeric",
+      month: "short",
+      year: "numeric"
+    });
+  }
+  const parts = berlinClockParts(date);
+  const weekday = String(parts.weekday || "").replace(/\.$/, "");
+  let time = `${parts.hour}:${parts.minute}`;
+  if (endIso) {
+    const end = new Date(endIso);
+    if (!Number.isNaN(end.getTime()) && end.getTime() > date.getTime()) {
+      const endParts = berlinClockParts(end);
+      time = `${time}–${endParts.hour}:${endParts.minute}`;
+    }
+  }
+  return `${weekday} ${parts.day}.${parts.month}. · ${time}`;
+}
+
 export function parseDay(value) {
   if (!value) return null;
   if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
@@ -641,16 +711,164 @@ export function limitTradingSessions(points, sessions) {
   return ordered.filter((point) => keep.has(newYorkDay(point.t)));
 }
 
-/** 5 Min keeps about two sessions, 15 Min about three. */
+/** Phone charts stay readable: about 60–80 bars, each a few pixels wide. */
+export const VISIBLE_BARS = 68;
+const SIX_HOURS = 6 * 60 * 60 * 1000;
+
+/** 5 Min is the latest session. 15 Min is the last two. */
 export function minuteWindow(minutes) {
-  return Number(minutes) >= 15 ? 3 : 2;
+  return Number(minutes) >= 15 ? 2 : 1;
+}
+
+/**
+ * Drop older bars from the left.
+ * `maxSpanMs` keeps the tail of a long session (5 Min: last six hours).
+ */
+export function trimVisibleBars(points, { max = VISIBLE_BARS, maxSpanMs = 0 } = {}) {
+  let list = (points || []).filter((point) => point && point.t && Number.isFinite(Date.parse(point.t)));
+  if (maxSpanMs > 0 && list.length) {
+    const end = Date.parse(list.at(-1).t);
+    const cut = list.filter((point) => Date.parse(point.t) >= end - maxSpanMs);
+    if (cut.length >= 2) list = cut;
+  }
+  if (max > 0 && list.length > max) list = list.slice(-max);
+  return list;
+}
+
+const GUIDE = {
+  support: { color: "#5dbebf", label: "Unterstützung", dash: [3, 3] },
+  resistance: { color: "#e7a29a", label: "Widerstand", dash: [3, 3] },
+  trend: { color: "#b4b6f2", label: "Trend", dash: [4, 3] },
+  pattern: { color: "rgba(232, 234, 240, 0.55)", label: "Muster", dash: [3, 3] }
+};
+
+export function guideStyle(kind) {
+  return GUIDE[kind] || null;
+}
+
+/** When two captions sit on the same height, the one closer to the price stays. */
+export function guideLabelsToDraw(labels, priceY, gap = 14) {
+  const sorted = [...(labels || [])].sort((a, b) => Math.abs(a.y - priceY) - Math.abs(b.y - priceY));
+  const kept = [];
+  for (const label of sorted) {
+    if (kept.some((other) => Math.abs(other.y - label.y) < gap)) continue;
+    kept.push(label);
+  }
+  return kept;
+}
+
+function berlinAxisParts(iso) {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return null;
+  const fmt = new Intl.DateTimeFormat("de-DE", {
+    timeZone: "Europe/Berlin",
+    weekday: "short",
+    day: "numeric",
+    month: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23"
+  });
+  return Object.fromEntries(fmt.formatToParts(date).map((part) => [part.type, part.value]));
+}
+
+function berlinDayKey(iso) {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return "";
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Europe/Berlin",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).format(date);
+}
+
+/**
+ * Four axis captions. Intraday uses Berlin HH:MM, and a short date only when the day changes.
+ * The same caption is never repeated.
+ */
+export function chartAxisLabels(points) {
+  const list = (points || []).filter((point) => point && point.t);
+  const count = list.length;
+  if (!count) return [];
+  const sub = seriesIsSubDaily(list);
+  const indexes = [];
+  const seen = new Set();
+  for (const ratio of [0, 0.33, 0.66, 1]) {
+    const index = Math.round(ratio * (count - 1));
+    if (seen.has(index)) continue;
+    seen.add(index);
+    indexes.push(index);
+  }
+  const span = Math.abs(Date.parse(list.at(-1).t) - Date.parse(list[0].t)) || 0;
+  let previousDay = "";
+  const labels = [];
+  for (const index of indexes) {
+    const iso = list[index].t;
+    const parts = berlinAxisParts(iso);
+    if (!parts) continue;
+    const day = berlinDayKey(iso);
+    const freshDay = !previousDay || day !== previousDay;
+    let text;
+    if (sub) {
+      const weekday = String(parts.weekday || "").replace(/\.$/, "");
+      text = freshDay ? `${weekday} ${parts.day}.${parts.month}.` : `${parts.hour}:${parts.minute}`;
+    } else if (span < 400 * 86400000) {
+      text = new Date(iso).toLocaleDateString("de-DE", {
+        timeZone: "Europe/Berlin",
+        day: "numeric",
+        month: "short"
+      });
+    } else {
+      text = new Date(iso).toLocaleDateString("de-DE", {
+        timeZone: "Europe/Berlin",
+        month: "short",
+        year: "2-digit"
+      });
+    }
+    previousDay = day || previousDay;
+    if (!text || (labels.length && labels.at(-1).text === text)) continue;
+    labels.push({ index, text });
+  }
+  return labels;
+}
+
+function storedFiveCount(ticker) {
+  return (ticker?.history?.["5m"] || []).filter((point) => point && point.eur != null && point.t).length;
+}
+
+/**
+ * Last N New York sessions of stored 5-minute bars merged with today's 1-minute prints.
+ * One session can be today's intraday alone. More than one session needs history["5m"].
+ * Returns null when that series is not there, so the caller can keep daily closes.
+ */
+export function sessionMinutePack(ticker, sessions) {
+  const count = Number(sessions);
+  if (!Number.isFinite(count) || count < 1) return null;
+  if (count > 1 && storedFiveCount(ticker) < 2) return null;
+  const { points, extended } = minuteSource(ticker);
+  if (points.length < 2) return null;
+  const visible = limitTradingSessions(points, count);
+  if (visible.length < 2) return null;
+  return {
+    points: visible,
+    history: extended ? points : visible,
+    extended
+  };
+}
+
+function fiveMinuteCloses(points) {
+  const bars = bucketMinutes(points, 5);
+  return bars.length >= 2 ? bars : null;
 }
 
 export function rangeMinutePoints(ticker, minutes, windowed = false) {
   const { points, extended } = minuteSource(ticker);
   const bars = bucketMinutes(points, minutes);
-  if (!extended || !windowed) return bars;
-  return limitTradingSessions(bars, minuteWindow(minutes));
+  if (!windowed) return bars;
+  const limited = extended ? limitTradingSessions(bars, minuteWindow(minutes)) : bars;
+  const span = Number(minutes) <= 5 ? SIX_HOURS : 0;
+  return trimVisibleBars(limited, { max: VISIBLE_BARS, maxSpanMs: span });
 }
 
 export function seriesFor(ticker, range, langfrist = false) {
@@ -669,9 +887,15 @@ export function seriesFor(ticker, range, langfrist = false) {
   } else if (effective === "1 Min") {
     points = (ticker?.history?.intraday || []).filter((point) => point && point.eur != null);
   } else if (effective === "1T") {
-    points = recentDaily(ticker).slice(-1);
+    const pack = sessionMinutePack(ticker, 1);
+    const bars = pack && fiveMinuteCloses(pack.points);
+    points = bars
+      ? trimVisibleBars(bars, { max: VISIBLE_BARS, maxSpanMs: SIX_HOURS })
+      : recentDaily(ticker).slice(-1);
   } else if (effective === "3T") {
-    points = recentDaily(ticker).slice(-3);
+    const pack = sessionMinutePack(ticker, 3);
+    const bars = pack && fiveMinuteCloses(pack.points);
+    points = bars ? trimVisibleBars(bars, { max: VISIBLE_BARS }) : recentDaily(ticker).slice(-3);
   } else if (effective === "1W") {
     points = recentDaily(ticker).slice(-7);
   } else {

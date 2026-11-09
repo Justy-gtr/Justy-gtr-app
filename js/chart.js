@@ -1,5 +1,5 @@
 import { chartAnalysis } from "./analysis.js";
-import { scrubDelta, seriesFor } from "./logic.js";
+import { chartAxisLabels, formatScrubWhen, guideLabelsToDraw, guideStyle, scrubDelta, seriesFor } from "./logic.js";
 
 function hexAlpha(hex, alpha) {
   const value = hex.replace("#", "");
@@ -68,39 +68,9 @@ function formatEuroAxis(value) {
   return `${euroAxis.format(value)} €`;
 }
 
-function formatAxisDate(iso, spanMs) {
-  const date = new Date(iso);
-  if (Number.isNaN(date.getTime())) return String(iso).slice(0, 10);
-  const zone = "Europe/Berlin";
-  if (spanMs < 36 * 3600 * 1000) {
-    return new Intl.DateTimeFormat("de-DE", { timeZone: zone, hour: "2-digit", minute: "2-digit" }).format(date);
-  }
-  if (spanMs < 400 * 86400000) {
-    return new Intl.DateTimeFormat("de-DE", { timeZone: zone, day: "numeric", month: "short" }).format(date);
-  }
-  return new Intl.DateTimeFormat("de-DE", { timeZone: zone, month: "short", year: "2-digit" }).format(date);
-}
-
-function formatScrubWhen(iso, spanMs) {
-  const date = new Date(iso);
-  if (Number.isNaN(date.getTime())) return String(iso).slice(0, 16);
-  const zone = "Europe/Berlin";
-  const day = new Intl.DateTimeFormat("de-DE", {
-    timeZone: zone,
-    day: "numeric",
-    month: "short",
-    year: "numeric"
-  }).format(date);
-  if (spanMs < 36 * 3600 * 1000) {
-    const time = new Intl.DateTimeFormat("de-DE", { timeZone: zone, hour: "2-digit", minute: "2-digit" }).format(date);
-    return `${day}, ${time}`;
-  }
-  return day;
-}
-
 function chartLayout(width, height, points, axes) {
   const padL = 8;
-  const padR = axes ? 78 : 8;
+  const padR = axes ? 62 : 8;
   const padT = 16;
   const padB = axes ? 28 : 16;
   const values = points.map((point) => Number(point.eur));
@@ -147,14 +117,15 @@ function paintChart(canvas, state, hover) {
       ctx.textBaseline = "middle";
       ctx.fillText(formatEuroAxis(value), width - 4, y);
     }
-    const marks = [0, 0.33, 0.66, 1].map((ratio) => coords[Math.round(ratio * (coords.length - 1))]);
+    const marks = chartAxisLabels(coords.map((coord) => coord.point));
     marks.forEach((mark, index) => {
+      const coord = coords[mark.index];
       ctx.textBaseline = "bottom";
       if (index === 0) ctx.textAlign = "left";
       else if (index === marks.length - 1) ctx.textAlign = "right";
       else ctx.textAlign = "center";
-      const x = index === marks.length - 1 ? Math.min(mark.x, width - layout.padR) : mark.x;
-      ctx.fillText(formatAxisDate(mark.point.t, layout.spanMs), x, height - 4);
+      const x = index === marks.length - 1 ? Math.min(coord.x, width - layout.padR) : coord.x;
+      ctx.fillText(mark.text, x, height - 4);
     });
   }
   const gradient = ctx.createLinearGradient(0, padT, 0, height - padB);
@@ -176,15 +147,13 @@ function paintChart(canvas, state, hover) {
   ctx.setLineDash([]);
   ctx.stroke();
   paintGuides(ctx, layout, state.lines);
-  strokeWhere(ctx, coords, (left, right) => isExtendedPoint(left) || isExtendedPoint(right), "#e4b15a");
   const focus = hover || coords.at(-1);
-  const extendedEnd = !hover && isExtendedPoint(focus.point);
   ctx.beginPath();
   ctx.arc(focus.x, focus.y, 3.5, 0, Math.PI * 2);
-  ctx.fillStyle = extendedEnd ? "#e4b15a" : "#f4f1ea";
+  ctx.fillStyle = "#f4f1ea";
   ctx.fill();
   ctx.lineWidth = 2;
-  ctx.strokeStyle = extendedEnd ? "#e4b15a" : color;
+  ctx.strokeStyle = color;
   ctx.stroke();
   if (hover) {
     ctx.setLineDash([3, 3]);
@@ -207,53 +176,41 @@ function guideY(layout, price) {
 function paintGuides(ctx, layout, lines) {
   if (!lines?.length || !layout?.coords?.length) return;
   const { coords } = layout;
-  const right = coords.at(-1).x;
+  const right = layout.padL + layout.plotW;
+  const pending = [];
+  const priceY = coords.at(-1).y;
+  ctx.lineWidth = 1;
+  ctx.lineCap = "butt";
   for (const line of lines) {
+    if (line.eur0 == null) continue;
+    const style = guideStyle(line.kind);
+    if (!style) continue;
     const y0 = guideY(layout, line.eur0);
-    const y1 = guideY(layout, line.eur1);
+    const y1 = guideY(layout, line.eur1 ?? line.eur0);
     ctx.beginPath();
-    ctx.lineWidth = 1.5;
-    ctx.lineCap = "butt";
-    if (line.kind === "trend") {
-      ctx.setLineDash([7, 5]);
-      ctx.strokeStyle = "#e4b15a";
+    ctx.setLineDash(style.dash);
+    ctx.strokeStyle = style.color;
+    let endY = y0;
+    if (line.kind === "trend" || line.kind === "pattern") {
+      endY = y1;
       ctx.moveTo(coords[0].x, y0);
-      ctx.lineTo(right, y1);
+      ctx.lineTo(coords.at(-1).x, y1);
     } else {
-      ctx.setLineDash([2, 4]);
-      ctx.strokeStyle = line.kind === "support" ? "#3ddea0" : "#ff5d6c";
       ctx.moveTo(layout.padL, y0);
       ctx.lineTo(right, y0);
     }
     ctx.stroke();
+    if (line.kind !== "pattern") pending.push({ y: endY, text: style.label, color: style.color });
   }
   ctx.setLineDash([]);
-}
-
-function isExtendedPoint(point) {
-  return point?.session === "pre" || point?.session === "post";
-}
-
-function strokeWhere(ctx, coords, accept, color) {
-  ctx.beginPath();
-  let open = false;
-  for (let index = 1; index < coords.length; index += 1) {
-    if (!accept(coords[index - 1].point, coords[index].point)) {
-      open = false;
-      continue;
-    }
-    if (!open) {
-      ctx.moveTo(coords[index - 1].x, coords[index - 1].y);
-      open = true;
-    }
-    ctx.lineTo(coords[index].x, coords[index].y);
+  ctx.font = "10px -apple-system, BlinkMacSystemFont, sans-serif";
+  ctx.textAlign = "right";
+  ctx.textBaseline = "middle";
+  for (const label of guideLabelsToDraw(pending, priceY)) {
+    const y = Math.max(layout.padT + 7, Math.min(label.y, layout.padT + layout.plotH - 7));
+    ctx.fillStyle = label.color;
+    ctx.fillText(label.text, right - 2, y);
   }
-  ctx.strokeStyle = color;
-  ctx.lineWidth = 2.25;
-  ctx.lineJoin = "round";
-  ctx.lineCap = "round";
-  ctx.setLineDash([]);
-  ctx.stroke();
 }
 
 function sessionScrub(point) {
@@ -266,7 +223,8 @@ function showScrub(canvas, coord, layout) {
   const scrub = canvas.parentElement?.querySelector(".scrub");
   if (!scrub || !coord) return;
   const phase = sessionScrub(coord.point);
-  const when = formatScrubWhen(coord.point.t, layout?.spanMs || 0);
+  const points = (layout?.coords || []).map((item) => item.point);
+  const when = formatScrubWhen(coord.point.t, points);
   const price = formatEuroAxis(Number(coord.point.eur));
   const change = scrubDelta(layout?.coords?.[0]?.point?.eur, coord.point.eur);
   scrub.hidden = false;
