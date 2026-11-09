@@ -140,36 +140,47 @@
 }
 .clock {
   display: grid;
-  grid-template-columns: 36px repeat(7, minmax(0, 1fr));
-  gap: 3px;
+  grid-template-columns: 46px repeat(6, minmax(0, 1fr));
+  gap: 2px;
   align-items: center;
 }
 .clock-hour {
-  font-size: 9px;
+  font-size: 11px;
   line-height: 1.1;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
   text-align: center;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
-.clock-name { white-space: nowrap; }
+.clock-name { white-space: nowrap; letter-spacing: -0.03em; }
+.clock-split {
+  grid-column: 1 / -1;
+  height: 1px;
+  margin: 3px 0 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
 .clock-cell {
-  display: block;
-  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.05);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1;
 }
 .clock-cell.is-quiet, .clock-sum.is-quiet { background: rgba(255, 255, 255, 0.04); }
 .clock-sum {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 28px;
+  min-height: 20px;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.05);
   font-size: 10px;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   font-variant-numeric: tabular-nums;
 }
 .season-pre { margin: 0; font-size: 12px; color: var(--muted); }

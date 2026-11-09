@@ -5,7 +5,34 @@ export { MIN_CASES };
 
 export const WEEKDAY_LABELS = ["Mo", "Di", "Mi", "Do", "Fr"];
 export const WEEKDAY_NAMES = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"];
-export const HOUR_SLOTS = ["15:30", "16:30", "17:30", "18:30", "19:30", "20:30", "21:30"];
+
+/**
+ * Berlin wall-clock buckets from 08:00 through the US cash session.
+ * 08–14 are full hours. 15:00 is only the half hour before the US open.
+ * From 15:30 the buckets stay the cash-session hours, one per clock hour.
+ */
+export const HOUR_SLOT_META = [
+  { label: "08", start: 8 * 60, duration: 60, early: true },
+  { label: "09", start: 9 * 60, duration: 60, early: true },
+  { label: "10", start: 10 * 60, duration: 60, early: true },
+  { label: "11", start: 11 * 60, duration: 60, early: true },
+  { label: "12", start: 12 * 60, duration: 60, early: true },
+  { label: "13", start: 13 * 60, duration: 60, early: true },
+  { label: "14", start: 14 * 60, duration: 60, early: true },
+  { label: "15:00", start: 15 * 60, duration: 30, early: true },
+  { label: "15:30", start: 15 * 60 + 30, duration: 60, early: false },
+  { label: "16:30", start: 16 * 60 + 30, duration: 60, early: false },
+  { label: "17:30", start: 17 * 60 + 30, duration: 60, early: false },
+  { label: "18:30", start: 18 * 60 + 30, duration: 60, early: false },
+  { label: "19:30", start: 19 * 60 + 30, duration: 60, early: false },
+  { label: "20:30", start: 20 * 60 + 30, duration: 60, early: false },
+  { label: "21:30", start: 21 * 60 + 30, duration: 60, early: false }
+];
+export const HOUR_SLOTS = HOUR_SLOT_META.map((slot) => slot.label);
+
+export const EARLY_NOTE_DE = "vor 15:30: Handel in Deutschland";
+export const EARLY_NOTE_US = "vor 15:30: US-Vorbörse";
+export const EARLY_NOTE_MIX = "vor 15:30: Handel in Deutschland, sonst US-Vorbörse";
 
 /** Same idea as the Muster card: n is this stock's own comparable cases, not the market. */
 export const SEASON_N_LEGEND = "n zählt vergleichbare Tage und Stunden dieser Aktie, nicht den ganzen Markt.";
@@ -87,31 +114,113 @@ function inRange(date, range) {
   return true;
 }
 
-/**
- * US regular session in Berlin, one slot per clock hour starting at :30.
- * Returns null outside 15:30–21:30, so a daylight-saving mismatch (14:30) stays out
- * instead of being painted onto the wrong hour.
- */
-export function hourSlot(instant) {
-  const clock = berlinClock(instant);
-  if (!clock || clock.minute !== 30) return null;
-  const label = `${String(clock.hour).padStart(2, "0")}:${String(clock.minute).padStart(2, "0")}`;
-  return HOUR_SLOTS.includes(label) ? label : null;
+function slotMeta(label) {
+  return HOUR_SLOT_META.find((slot) => slot.label === label) || null;
+}
+
+export function slotIsEarly(label) {
+  return Boolean(slotMeta(label)?.early);
 }
 
 /**
- * Full pre-market hours from 10:00 Berlin up to, not including, the cash open.
- * A bar that runs across 09:30 New York is left out.
+ * Berlin clock bucket for one bar.
+ * A bar counts only when it starts and ends on that bucket, so a 15:00–16:00
+ * bar is not the 15:00 half hour, and a daylight-saving open at 14:30
+ * is not painted onto 15:30. Duration defaults to a full hour.
  */
-export function isPremarketHour(instant) {
+export function hourSlot(instant, durationMin = 60) {
   const clock = berlinClock(instant);
-  if (!clock || clock.minute !== 0) return false;
-  const startMinute = clock.hour * 60 + clock.minute;
-  if (startMinute < 10 * 60 || startMinute >= 15 * 60) return false;
-  const end = new Date(new Date(instant).getTime() + 60 * 60 * 1000);
-  const endNy = nyClock(end);
-  if (!endNy) return false;
-  return endNy.hour * 60 + endNy.minute <= 9 * 60 + 30;
+  if (!clock) return null;
+  const duration = Number(durationMin);
+  if (!Number.isFinite(duration) || duration <= 0) return null;
+  const start = clock.hour * 60 + clock.minute;
+  const match = HOUR_SLOT_META.find((slot) => slot.start === start && slot.duration === duration);
+  return match ? match.label : null;
+}
+
+/**
+ * US bar in the early window only when the whole bar stays in pre-market:
+ * from 04:00 New York up to the 09:30 cash open. A bar that crosses the open stays out.
+ */
+export function isUsEarlyBar(instant, durationMin = 60) {
+  if (!slotIsEarly(hourSlot(instant, durationMin))) return false;
+  const start = nyClock(instant);
+  const endMs = Date.parse(instant) + Number(durationMin) * 60 * 1000;
+  const end = Number.isFinite(endMs) ? nyClock(endMs) : null;
+  if (!start || !end || start.date !== end.date) return false;
+  const startMin = start.hour * 60 + start.minute;
+  const endMin = end.hour * 60 + end.minute;
+  return startMin >= 4 * 60 && endMin <= 9 * 60 + 30;
+}
+
+/** German bars only fill the early buckets. US bars fill cash hours, and early hours when they stay pre-market. */
+export function acceptBar(instant, durationMin, market) {
+  const slot = hourSlot(instant, durationMin);
+  if (!slot) return null;
+  if (market === "de") return slotIsEarly(slot) ? slot : null;
+  if (market === "us") {
+    if (!slotIsEarly(slot)) return slot;
+    return isUsEarlyBar(instant, durationMin) ? slot : null;
+  }
+  return null;
+}
+
+export function collectSlotBars(points, durationMin, market) {
+  const bars = [];
+  for (const point of points || []) {
+    const slot = acceptBar(point?.t, durationMin, market);
+    if (!slot) continue;
+    const open = Number(point.open);
+    const close = Number(point.close ?? point.eur);
+    if (!Number.isFinite(open) || !Number.isFinite(close)) continue;
+    bars.push({ t: point.t, open, close, durationMin, slot });
+  }
+  return bars;
+}
+
+function barsForSlot(bars, label) {
+  return (bars || []).filter((bar) => hourSlot(bar?.t, bar?.durationMin ?? 60) === label);
+}
+
+/**
+ * One source per early bucket. A German hour with enough cases wins.
+ * Otherwise the US pre-market hour is used when it has more cases.
+ * The two are not mixed in the same bucket.
+ */
+export function chooseEarlyBars(deBars, usBars) {
+  const chosen = [];
+  const origins = new Set();
+  for (const label of HOUR_SLOTS) {
+    if (!slotIsEarly(label)) continue;
+    const de = barsForSlot(deBars, label);
+    const us = barsForSlot(usBars, label);
+    const index = HOUR_SLOTS.indexOf(label);
+    const deN = aggregateHours(de)[index].n;
+    const usN = aggregateHours(us)[index].n;
+    let pick = null;
+    let origin = null;
+    if (deN >= MIN_CASES || (usN < MIN_CASES && deN >= usN && deN > 0)) {
+      pick = de;
+      origin = "de";
+    } else if (usN > 0) {
+      pick = us;
+      origin = "us";
+    }
+    if (!pick) continue;
+    origins.add(origin);
+    chosen.push(...pick);
+  }
+  return { bars: chosen, note: earlyNoteFor(origins) };
+}
+
+export function earlyNoteFor(origins) {
+  const list = origins instanceof Set ? [...origins] : origins || [];
+  const hasDe = list.includes("de");
+  const hasUs = list.includes("us");
+  if (hasDe && hasUs) return EARLY_NOTE_MIX;
+  if (hasDe) return EARLY_NOTE_DE;
+  if (hasUs) return EARLY_NOTE_US;
+  return null;
 }
 
 export function hourMove(bar) {
@@ -182,13 +291,14 @@ function dedupedBars(bars, range) {
   return [...seen.values()];
 }
 
-/** One stock's regular-session hours, bucketed by Berlin clock time. */
+/** One stock's hours, bucketed by Berlin clock time. */
 export function aggregateHours(bars, range = null) {
   const buckets = HOUR_SLOTS.map(() => []);
-  for (const { bar } of dedupedBars(bars, range)) {
-    const slot = hourSlot(bar.t);
+  for (const { bar, clock } of dedupedBars(bars, range)) {
+    const weekday = weekdayFromDate(clock.date);
+    const slot = hourSlot(bar.t, bar.durationMin ?? 60);
     const move = round2(hourMove(bar));
-    if (!slot || move == null) continue;
+    if (weekday < 1 || weekday > 5 || !slot || move == null) continue;
     buckets[HOUR_SLOTS.indexOf(slot)].push(move);
   }
   return buckets.map((values) => summarize(values, false));
@@ -198,7 +308,7 @@ export function aggregateHours(bars, range = null) {
 export function aggregateGrid(bars, range = null) {
   const buckets = Array.from({ length: 5 }, () => HOUR_SLOTS.map(() => []));
   for (const { bar, clock } of dedupedBars(bars, range)) {
-    const slot = hourSlot(bar.t);
+    const slot = hourSlot(bar.t, bar.durationMin ?? 60);
     const weekday = weekdayFromDate(clock.date);
     const move = round2(hourMove(bar));
     if (!slot || weekday < 1 || weekday > 5 || move == null) continue;
@@ -213,20 +323,6 @@ export function aggregateGrid(bars, range = null) {
   }));
 }
 
-export function aggregatePremarket(bars, range = null) {
-  const values = [];
-  const hours = new Set();
-  for (const { bar, clock } of dedupedBars(bars, range)) {
-    if (!isPremarketHour(bar.t)) continue;
-    const move = round2(hourMove(bar));
-    if (move == null) continue;
-    values.push(move);
-    hours.add(clock.hour);
-  }
-  if (values.length < MIN_CASES || hours.size < 3) return null;
-  return summarize(values, false);
-}
-
 function spanOf(points, range) {
   const dates = [];
   for (const point of normalizeDaily(points)) {
@@ -235,24 +331,23 @@ function spanOf(points, range) {
   return { from: dates[0] || null, to: dates.at(-1) || null };
 }
 
-export function buildWindow(dailyPoints, hourBars, preBars, range = null) {
+export function buildWindow(dailyPoints, hourBars, range = null) {
   const span = spanOf(dailyPoints, range);
   return {
     from: span.from,
     to: span.to,
     days: aggregateWeekdays(dailyPoints, range),
     hours: aggregateHours(hourBars, range),
-    grid: aggregateGrid(hourBars, range),
-    pre: aggregatePremarket(preBars, range)
+    grid: aggregateGrid(hourBars, range)
   };
 }
 
-export function buildWindows(dailyPoints, hourBars, preBars) {
+export function buildWindows(dailyPoints, hourBars) {
   const end = spanOf(dailyPoints, null).to;
   const year = end ? { from: addDays(end, -365), to: end } : null;
   return {
-    all: buildWindow(dailyPoints, hourBars, preBars, null),
-    year: buildWindow(dailyPoints, hourBars, preBars, year)
+    all: buildWindow(dailyPoints, hourBars, null),
+    year: buildWindow(dailyPoints, hourBars, year)
   };
 }
 
@@ -359,53 +454,74 @@ function weekdayRows(days) {
   }).join("");
 }
 
+function clockMinutes(minuteOfDay) {
+  const hour = Math.floor(minuteOfDay / 60);
+  const minute = minuteOfDay % 60;
+  return `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
+}
+
+function slotFace(label) {
+  const meta = slotMeta(label);
+  if (meta?.early && meta.duration === 60) return clockMinutes(meta.start).slice(0, 2);
+  return label;
+}
+
+function slotSpoken(label) {
+  const meta = slotMeta(label);
+  if (!meta) return label;
+  if (!meta.early) return `${label} Uhr`;
+  return `${clockMinutes(meta.start)} bis ${clockMinutes(meta.start + meta.duration)}`;
+}
+
 function clockBlock(hours, grid) {
+  const rows = HOUR_SLOTS.map((_, index) => hours[index] || { n: 0, up: 0, avg: null });
+  const cells = Array.from({ length: 5 }, (_, day) => (
+    HOUR_SLOTS.map((_, index) => grid?.[day]?.[index] || { n: 0, avg: null })
+  ));
   const avgs = [];
-  hours.forEach((row) => {
+  rows.forEach((row) => {
     const avg = shownAverage(row);
     if (avg != null) avgs.push(avg);
   });
-  grid.forEach((row) => row.forEach((cell) => {
+  cells.forEach((row) => row.forEach((cell) => {
     if ((cell?.n || 0) >= MIN_CASES && Number.isFinite(cell.avg)) avgs.push(cell.avg);
   }));
   const scale = avgs.reduce((max, value) => Math.max(max, Math.abs(value)), 0);
-  const heads = HOUR_SLOTS.map((slot) => `<span class="clock-hour">${slot}</span>`).join("");
-  const body = grid.map((row, index) => {
-    const cells = row.map((cell, slotIndex) => {
-      const slot = HOUR_SLOTS[slotIndex];
+  const heads = [...WEEKDAY_LABELS, "Woche"].map((label) => `<span class="clock-hour">${label}</span>`).join("");
+  const body = HOUR_SLOTS.map((slot, slotIndex) => {
+    const spoken = slotSpoken(slot);
+    const dayCells = cells.map((row, dayIndex) => {
+      const cell = row[slotIndex];
       const show = (cell?.n || 0) >= MIN_CASES && Number.isFinite(cell?.avg);
       const style = show ? heatStyle(cell.avg, scale) : "";
       const aria = show
-        ? `${WEEKDAY_NAMES[index]} ${slot}, im Schnitt ${formatSignedPct(cell.avg)}, n = ${cell.n}`
-        : `${WEEKDAY_NAMES[index]} ${slot}, n = ${cell?.n || 0}, keine Prozentzahl`;
-      return `<span class="clock-cell${show ? "" : " is-quiet"}" style="${style}" role="img" aria-label="${esc(aria)}"></span>`;
+        ? `${WEEKDAY_NAMES[dayIndex]} ${spoken}, im Schnitt ${formatSignedPct(cell.avg)}, n = ${cell.n}`
+        : `${WEEKDAY_NAMES[dayIndex]} ${spoken}, n = ${cell?.n || 0}, keine Prozentzahl`;
+      return `<span class="clock-cell${show ? "" : " is-quiet"}" style="${style}" role="img" aria-label="${esc(aria)}">${show ? "" : "–"}</span>`;
     }).join("");
-    return `<span class="clock-name">${WEEKDAY_LABELS[index]}</span>${cells}`;
-  }).join("");
-  const summary = hours.map((row, index) => {
-    const share = upPercent(row);
-    const avg = shownAverage(row);
-    const slot = HOUR_SLOTS[index];
+    const summary = rows[slotIndex];
+    const share = upPercent(summary);
+    const avg = shownAverage(summary);
     const style = share == null ? "" : heatStyle(avg, scale);
     const text = share == null ? "–" : `${share} %`;
     const aria = share == null
-      ? `${slot} Uhr Berlin, alle Wochentage dieser Aktie, n = ${row?.n || 0}, keine Prozentzahl`
-      : `${slot} Uhr Berlin, alle Wochentage dieser Aktie, ${share} % der Stunden gestiegen, im Schnitt ${formatSignedPct(avg)}, n = ${row.n}`;
-    return `<span class="clock-sum${share == null ? " is-quiet" : ""}" style="${style}" role="img" aria-label="${esc(aria)}">${text}</span>`;
+      ? `${spoken} Berlin, alle Wochentage dieser Aktie, n = ${summary?.n || 0}, keine Prozentzahl`
+      : `${spoken} Berlin, alle Wochentage dieser Aktie, ${share} % der Stunden gestiegen, im Schnitt ${formatSignedPct(avg)}, n = ${summary.n}`;
+    const split = slotIndex > 0 && !slotIsEarly(slot) && slotIsEarly(HOUR_SLOTS[slotIndex - 1])
+      ? `<span class="clock-split"></span>`
+      : "";
+    return `${split}<span class="clock-name" data-hour="${esc(slot)}">${esc(slotFace(slot))}</span>${dayCells}<span class="clock-sum${share == null ? " is-quiet" : ""}" style="${style}" role="img" aria-label="${esc(aria)}">${text}</span>`;
   }).join("");
   return `<div class="clock">
     <span class="clock-name"></span>${heads}
     ${body}
-    <span class="clock-name">Woche</span>${summary}
   </div>
   <p class="chart-legend"><span><i class="swatch support" aria-hidden="true"></i>gestiegen</span><span><i class="swatch resist" aria-hidden="true"></i>gefallen</span><span>Farbe: mittlere Bewegung. Zahl: Anteil steigender Stunden. Woche: Mo–Fr dieser Aktie.</span></p>`;
 }
 
-function premarketLine(pre) {
-  const share = upPercent(pre);
-  const avg = shownAverage(pre);
-  if (share == null || !pre) return "";
-  return `<p class="season-pre">Vorbörse 10:00–15:00 · ${share} % der Stunden gestiegen · ${esc(formatSignedPct(avg))} · n = ${pre.n}</p>`;
+function earlyLine(note) {
+  if (!note) return "";
+  return `<p class="season-pre">${esc(note)}</p>`;
 }
 
 function rangesMatch(pack) {
@@ -441,7 +557,7 @@ export function renderSeasonalityCard(seasonality, ticker, season) {
     <div class="wd-list">${weekdayRows(stats.days || [])}</div>
     <p class="season-kicker">Uhrzeit, Berlin</p>
     ${clockBlock(stats.hours || [], stats.grid || [])}
-    ${premarketLine(stats.pre)}
+    ${earlyLine(pack.earlyNote)}
     <p class="season-note">${esc(PAST_NOTE)}</p>
     <p class="analysis-note n-legend">${esc(SEASON_N_LEGEND)}</p>
   </article>`;
@@ -460,11 +576,12 @@ export function keepSettledDaily(points, now = new Date()) {
   });
 }
 
-/** Drop an hour bar that has not finished. */
+/** Drop a bar that has not finished. A half-hour bar is done after 30 minutes. */
 export function keepSettledHours(bars, now = new Date()) {
-  const limit = now.getTime() - 60 * 60 * 1000;
+  const nowMs = now.getTime();
   return (bars || []).filter((bar) => {
     const time = Date.parse(bar?.t);
-    return Number.isFinite(time) && time <= limit;
+    const minutes = Number(bar?.durationMin) > 0 ? Number(bar.durationMin) : 60;
+    return Number.isFinite(time) && time + minutes * 60 * 1000 <= nowMs;
   });
 }

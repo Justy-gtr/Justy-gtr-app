@@ -2,14 +2,21 @@ import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import {
+  EARLY_NOTE_DE,
+  EARLY_NOTE_MIX,
   HOUR_SLOTS,
   WEEKDAY_LABELS,
+  aggregateHours,
   berlinDay,
   buildWindows,
+  chooseEarlyBars,
+  collectSlotBars,
   keepSettledDaily,
   keepSettledHours,
-  seasonalityHeadline
+  seasonalityHeadline,
+  slotIsEarly
 } from "../js/seasonality.js";
+import { MIN_CASES } from "../js/analysis.js";
 import { fetchChart, TICKERS } from "./fetch-prices.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
@@ -35,34 +42,82 @@ function quoteSource(symbol) {
   };
 }
 
+async function tryChart(symbol, interval, range, options) {
+  try {
+    return await fetchChart(symbol, interval, range, options);
+  } catch (error) {
+    console.log(`::warning::${symbol} ${interval}: ${error.message}`);
+    return null;
+  }
+}
+
+function earlyScore(bars) {
+  const hours = aggregateHours(bars);
+  let slots = 0;
+  let total = 0;
+  HOUR_SLOTS.forEach((label, index) => {
+    if (!slotIsEarly(label)) return;
+    total += hours[index].n;
+    if (hours[index].n >= MIN_CASES) slots += 1;
+  });
+  return { slots, total };
+}
+
+async function loadEarly(spec) {
+  const german = [];
+  for (const symbol of spec.eurSymbols) {
+    const hourly = await tryChart(symbol, "60m", "2y");
+    const half = await tryChart(symbol, "30m", "60d");
+    const bars = [
+      ...collectSlotBars(hourly?.points, 60, "de"),
+      ...collectSlotBars(half?.points, 30, "de")
+    ];
+    if (!bars.length) continue;
+    german.push({ symbol, bars, ...earlyScore(bars) });
+  }
+  german.sort((a, b) => b.slots - a.slots || b.total - a.total || a.symbol.localeCompare(b.symbol));
+  const best = german[0] || null;
+  const usHourly = await tryChart(spec.usdSymbol, "60m", "2y", { includePrePost: true });
+  const usHalf = await tryChart(spec.usdSymbol, "30m", "60d", { includePrePost: true });
+  const usBars = [
+    ...collectSlotBars(usHourly?.points, 60, "us"),
+    ...collectSlotBars(usHalf?.points, 30, "us")
+  ].filter((bar) => slotIsEarly(bar.slot));
+  const early = chooseEarlyBars(best?.bars || [], usBars);
+  const usesGerman = early.note === EARLY_NOTE_DE || early.note === EARLY_NOTE_MIX;
+  return { ...early, symbol: usesGerman ? best?.symbol || null : null };
+}
+
 async function loadSymbol(spec, now) {
   const daily = await fetchChart(spec.usdSymbol, "1d", "2y");
   const hours = await fetchChart(spec.usdSymbol, "60m", "2y", { includePrePost: false });
-  let pre = [];
-  try {
-    const extended = await fetchChart(spec.usdSymbol, "60m", "2y", { includePrePost: true });
-    pre = barsOf(extended);
-  } catch (error) {
-    console.log(`::warning::Vorbörse ${spec.symbol}: ${error.message}`);
-  }
+  const regular = collectSlotBars(barsOf(hours), 60, "us").filter((bar) => !slotIsEarly(bar.slot));
+  const early = await loadEarly(spec);
   return {
-    name: spec.name,
-    ranges: buildWindows(
-      keepSettledDaily(barsOf(daily), now),
-      keepSettledHours(barsOf(hours), now),
-      keepSettledHours(pre, now)
-    )
+    germanSymbol: early.symbol,
+    pack: {
+      name: spec.name,
+      earlyNote: early.note,
+      ranges: buildWindows(
+        keepSettledDaily(barsOf(daily), now),
+        keepSettledHours([...regular, ...early.bars], now)
+      )
+    }
   };
 }
 
 export async function buildSeasonality(previous, now = new Date()) {
   const symbols = {};
+  const germanSymbols = [];
   let fresh = 0;
   for (const spec of TICKERS) {
     try {
-      symbols[spec.symbol] = await loadSymbol(spec, now);
+      const loaded = await loadSymbol(spec, now);
+      symbols[spec.symbol] = loaded.pack;
+      if (loaded.germanSymbol) germanSymbols.push(loaded.germanSymbol);
       fresh += 1;
-      console.log(`${spec.symbol}: ${seasonalityHeadline(spec.symbol, symbols[spec.symbol].ranges.all)}`);
+      const note = loaded.pack.earlyNote || "keine frühen Stunden";
+      console.log(`${spec.symbol}: ${seasonalityHeadline(spec.symbol, symbols[spec.symbol].ranges.all)} | ${note}${loaded.germanSymbol ? ` (${loaded.germanSymbol})` : ""}`);
     } catch (error) {
       console.log(`::warning::Saison ${spec.symbol}: ${error.message}`);
       if (previous?.symbols?.[spec.symbol]) {
@@ -75,14 +130,15 @@ export async function buildSeasonality(previous, now = new Date()) {
   for (const spec of TICKERS) {
     if (!symbols[spec.symbol]) return null;
   }
+  const sources = TICKERS.map((spec) => quoteSource(spec.usdSymbol));
+  for (const symbol of germanSymbols) sources.push(quoteSource(symbol));
   return {
     asOf: now.toISOString(),
     timezone: "Europe/Berlin",
-    session: "15:30-22:00",
-    premarket: "10:00-15:00",
+    session: "08:00-22:00",
     hourSlots: HOUR_SLOTS,
     weekdays: WEEKDAY_LABELS,
-    sources: TICKERS.map((spec) => quoteSource(spec.usdSymbol)),
+    sources,
     symbols
   };
 }
