@@ -575,6 +575,84 @@ function recentDaily(ticker) {
   return (ticker?.history?.["6M"] || []).filter((point) => point && point.eur != null && point.t);
 }
 
+const FIVE_MS = 5 * 60 * 1000;
+
+function newYorkDay(iso) {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return "";
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/New_York",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).format(date);
+}
+
+function asPricePoint(point) {
+  const time = Date.parse(point?.t);
+  const eur = Number(point?.eur ?? point?.close);
+  if (!Number.isFinite(time) || !Number.isFinite(eur)) return null;
+  const row = { t: point.t, eur };
+  if (point.session) row.session = point.session;
+  for (const key of ["open", "high", "low"]) {
+    const value = Number(point[key]);
+    if (Number.isFinite(value)) row[key] = value;
+  }
+  return row;
+}
+
+/** Stored 5-minute bars, with today's 1-minute prints replacing the overlapping tail. */
+export function minuteSource(ticker) {
+  const intraday = [];
+  for (const point of ticker?.history?.intraday || []) {
+    const row = asPricePoint(point);
+    if (row) intraday.push(row);
+  }
+  const stored = [];
+  for (const point of ticker?.history?.["5m"] || []) {
+    const row = asPricePoint(point);
+    if (row) stored.push(row);
+  }
+  if (stored.length < 2) return { points: intraday, extended: false };
+  let liveStart = Infinity;
+  for (const point of intraday) liveStart = Math.min(liveStart, Date.parse(point.t));
+  const cutoff = Number.isFinite(liveStart) ? liveStart - FIVE_MS : Infinity;
+  const older = stored.filter((point) => Date.parse(point.t) < cutoff);
+  const points = older.concat(intraday).sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
+  return { points, extended: true };
+}
+
+/** Last N New York dates in the series. Does not invent bars for missing sessions. */
+export function limitTradingSessions(points, sessions) {
+  const list = (points || []).filter((point) => point && point.t && Number.isFinite(Date.parse(point.t)));
+  const count = Number(sessions);
+  if (!Number.isFinite(count) || count < 1) return list;
+  const ordered = list.length > 1 ? [...list].sort((a, b) => Date.parse(a.t) - Date.parse(b.t)) : list;
+  const keys = [];
+  const seen = new Set();
+  for (const point of ordered) {
+    const key = newYorkDay(point.t);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    keys.push(key);
+  }
+  if (keys.length <= count) return ordered;
+  const keep = new Set(keys.slice(-count));
+  return ordered.filter((point) => keep.has(newYorkDay(point.t)));
+}
+
+/** 5 Min keeps about two sessions, 15 Min about three. */
+export function minuteWindow(minutes) {
+  return Number(minutes) >= 15 ? 3 : 2;
+}
+
+export function rangeMinutePoints(ticker, minutes, windowed = false) {
+  const { points, extended } = minuteSource(ticker);
+  const bars = bucketMinutes(points, minutes);
+  if (!extended || !windowed) return bars;
+  return limitTradingSessions(bars, minuteWindow(minutes));
+}
+
 export function seriesFor(ticker, range, langfrist = false) {
   const asked = range === "Tag" ? "1 Min" : range;
   const jump = DAY_RANGES.has(range) || DAY_RANGES.has(asked);
@@ -583,9 +661,9 @@ export function seriesFor(ticker, range, langfrist = false) {
   if (effective === "Max") {
     points = maxPoints(ticker?.history);
   } else if (effective === "5 Min") {
-    points = bucketMinutes(ticker?.history?.intraday, 5);
+    points = rangeMinutePoints(ticker, 5, true);
   } else if (effective === "15 Min") {
-    points = bucketMinutes(ticker?.history?.intraday, 15);
+    points = rangeMinutePoints(ticker, 15, true);
   } else if (effective === "4 Std") {
     points = fourHourPoints(ticker?.history);
   } else if (effective === "1 Min") {

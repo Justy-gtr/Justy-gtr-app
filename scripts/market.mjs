@@ -60,14 +60,22 @@ export function failedTicker(prev, symbol, name, message) {
     fetchError: message,
     priceEur: null,
     changePct: null,
-    history: { intraday: [], "4H": [], "1M": [], "6M": [], "1Y": [], "5Y": [] },
+    history: { intraday: [], "5m": [], "4H": [], "1M": [], "6M": [], "1Y": [], "5Y": [] },
     sparkline: [],
     sources: []
   };
 }
 
 export function updateAlerts(previous, tickers, nowIso, berlinDay) {
-  const kept = (previous?.alerts || []).filter((alert) => alert && alert.example !== true);
+  const bySymbol = new Map((tickers || []).filter((ticker) => ticker?.symbol).map((ticker) => [ticker.symbol, ticker]));
+  const kept = (previous?.alerts || []).filter((alert) => {
+    if (!alert || alert.example === true) return false;
+    if (alert.id !== `${alert.symbol}-${berlinDay}`) return true;
+    const ticker = bySymbol.get(alert.symbol);
+    if (!ticker || ticker.example === true || ticker.stale) return true;
+    if (typeof ticker.changePct !== "number") return true;
+    return Math.abs(ticker.changePct) >= 2;
+  });
   for (const ticker of tickers) {
     if (ticker.example === true || ticker.stale) continue;
     if (typeof ticker.changePct !== "number" || Math.abs(ticker.changePct) < 2) continue;
@@ -180,6 +188,49 @@ function zonedParts(date, timeZone) {
 
 export function nyParts(date = new Date()) {
   return zonedParts(date, "America/New_York");
+}
+
+/** Last N New York dates present in the series. Weekends only count when a print exists. */
+export function keepTradingDays(points, days = 3) {
+  const list = (points || []).filter((point) => point && point.t);
+  const count = Number(days);
+  if (!Number.isFinite(count) || count < 1) return list;
+  const keys = [];
+  const seen = new Set();
+  for (const point of list) {
+    const time = Date.parse(point.t);
+    if (!Number.isFinite(time)) continue;
+    const key = nyParts(new Date(time)).date;
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    keys.push(key);
+  }
+  if (keys.length <= count) return list;
+  const keep = new Set(keys.slice(-count));
+  return list.filter((point) => {
+    const time = Date.parse(point.t);
+    return Number.isFinite(time) && keep.has(nyParts(new Date(time)).date);
+  });
+}
+
+/**
+ * Close that the daily percent should use.
+ * A 5-day chart's chartPreviousClose is the close before that window, not the last session.
+ * With two or more daily bars, the previous close is the bar before the last one:
+ * today's session uses yesterday, and a weekend or a not-yet-open session uses the
+ * prior close of that finished session. One bar falls back to the 1-day chart previous close.
+ */
+export function previousSessionClose(chart) {
+  const bars = (chart?.points || [])
+    .filter((point) => point && point.t && Number.isFinite(Number(point.close)))
+    .slice()
+    .sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
+  if (bars.length >= 2) return Number(bars[bars.length - 2].close);
+  const chartPrev = Number(chart?.chartPreviousClose);
+  if (Number.isFinite(chartPrev)) return chartPrev;
+  const metaPrev = Number(chart?.metaPrevious);
+  if (Number.isFinite(metaPrev)) return metaPrev;
+  return null;
 }
 
 /** US cash session by the New York clock. Half-open: 04:00 pre, 09:30 regular, 16:00 post, 20:00 closed. */

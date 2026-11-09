@@ -14,6 +14,8 @@ import {
   sessionEnded,
   chooseIntraday,
   keepRecentSession,
+  keepTradingDays,
+  previousSessionClose,
   tagSessions,
   updateAlerts,
   usClockSession,
@@ -130,7 +132,8 @@ function normalizeChart(result) {
   return {
     currency: meta.currency || null,
     price: numberOrNull(meta.regularMarketPrice),
-    previousClose: numberOrNull(meta.chartPreviousClose ?? meta.previousClose),
+    chartPreviousClose: numberOrNull(meta.chartPreviousClose),
+    metaPrevious: numberOrNull(meta.previousClose),
     dayHigh: numberOrNull(meta.regularMarketDayHigh),
     dayLow: numberOrNull(meta.regularMarketDayLow),
     regularTime: numberOrNull(meta.regularMarketTime),
@@ -237,6 +240,42 @@ async function loadFourHour(symbol, options) {
   throw lastError || new Error("4H leer");
 }
 
+function slimEurBar(bar) {
+  return {
+    t: bar.t,
+    eur: bar.eur,
+    open: bar.open,
+    high: bar.high,
+    low: bar.low
+  };
+}
+
+async function loadFiveMinute(symbol, options) {
+  const chart = await fetchChart(symbol, "5m", "5d", { includePrePost: true });
+  const bars = eurBars(chart.points, options).map(slimEurBar);
+  const trimmed = keepTradingDays(bars, 3);
+  if (trimmed.length < 2) throw new Error("5m zu kurz");
+  return trimmed;
+}
+
+/** Same venue as the live minute series, so the join does not jump. EUR conversion matches the 4h bars. */
+async function loadFiveMinuteHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx }) {
+  const preferEur = Boolean(useEur && eurSymbol && intradayMethod !== "usd_div_eurusd");
+  const usdOptions = { fx, spot: fx.rate, direct: false };
+  const attempts = preferEur
+    ? [[eurSymbol, barOptions], [spec.usdSymbol, usdOptions]]
+    : [[spec.usdSymbol, usdOptions]];
+  if (!preferEur && useEur && eurSymbol) attempts.push([eurSymbol, barOptions]);
+  for (const [symbol, options] of attempts) {
+    try {
+      return await loadFiveMinute(symbol, options);
+    } catch (error) {
+      console.log(`::warning::5m ${symbol}: ${error.message}`);
+    }
+  }
+  return null;
+}
+
 function directPoints(points) {
   return points.map((point) => {
     const row = { t: point.t, eur: roundTo(point.close, 2) };
@@ -277,13 +316,14 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
   const method = useEur ? "direct_eur" : "usd_div_eurusd";
   const spotUsd = usd.price;
   const spotEur = useEur ? eurChart.price : roundTo(usdToEur(spotUsd, fx.rate), 2);
-  const prevUsd = usd.previousClose;
-  const prevEur = useEur
-    ? roundTo(eurChart.previousClose, 2)
-    : roundTo(usdToEur(prevUsd, fx.rate), 2);
+  const priceChart = useEur ? eurChart : usd;
+  const prevRaw = previousSessionClose(priceChart);
+  const prevEur = prevRaw == null
+    ? null
+    : (useEur ? roundTo(prevRaw, 2) : roundTo(usdToEur(prevRaw, fx.rate), 2));
   const changePct = spotEur != null && prevEur ? roundTo(((spotEur - prevEur) / prevEur) * 100, 2) : null;
 
-  const history = { intraday: [], "4H": [], "1M": [], "6M": [], "1Y": [], "5Y": [] };
+  const history = { intraday: [], "5m": [], "4H": [], "1M": [], "6M": [], "1Y": [], "5Y": [] };
   let intradayMethod = method;
 
   let euIntra = null;
@@ -346,6 +386,9 @@ async function loadTicker(spec, fx, previous, now = new Date()) {
     history["4H"] = previous?.history?.["4H"] || [];
   }
 
+  const five = await loadFiveMinuteHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx });
+  history["5m"] = five || previous?.history?.["5m"] || [];
+
   if (history["1M"].length && spotEur != null) {
     const last = history["1M"][history["1M"].length - 1];
     last.eur = roundTo(spotEur, 2);
@@ -406,7 +449,7 @@ export async function buildPrices(previous, now = new Date()) {
       const fresh = await loadTicker(spec, fx, prevTickers.get(spec.symbol), now);
       tickers.push(mergeTicker(prevTickers.get(spec.symbol), fresh));
       okCount += 1;
-      console.log(`${spec.symbol} ${fresh.priceEur} EUR ${fresh.changePct}% via ${fresh.eurMethod} ${fresh.eurSymbol || fresh.usdSymbol} overnight=${fresh.overnightPhase || "-"} ${fresh.overnightEur ?? "-"}`);
+      console.log(`${spec.symbol} ${fresh.priceEur} EUR ${fresh.changePct}% via ${fresh.eurMethod} ${fresh.eurSymbol || fresh.usdSymbol} overnight=${fresh.overnightPhase || "-"} ${fresh.overnightEur ?? "-"} 5m=${fresh.history["5m"]?.length || 0}`);
     } catch (error) {
       console.log(`::warning::${spec.symbol}: ${error.message}`);
       tickers.push(failedTicker(prevTickers.get(spec.symbol), spec.symbol, spec.name, error.message));
@@ -500,6 +543,7 @@ async function main() {
         overnightLowEur: ticker.overnightLowEur,
         points: ticker.history["1M"].length,
         intraday: ticker.history.intraday.length,
+        fiveM: ticker.history["5m"]?.length || 0,
         fourH: ticker.history["4H"]?.length || 0
       })),
       alerts: nextAlerts.alerts.map((alert) => ({ id: alert.id, changePct: alert.changePct, notified: alert.notified }))

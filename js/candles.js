@@ -1,4 +1,4 @@
-import { maxPoints, scrubDelta } from "./logic.js";
+import { limitTradingSessions, maxPoints, minuteSource, minuteWindow, scrubDelta } from "./logic.js";
 
 /** Chartanalyse ranges, in Robin's order. No 1-minute button. */
 export const ANALYSE_RANGES = ["5 Min", "15 Min", "4 Std", "1T", "3T", "1W", "1M", "6M", "1J", "Max"];
@@ -99,13 +99,18 @@ function dailyPoints(ticker) {
   return (ticker?.history?.["6M"] || []).filter((point) => point && point.eur != null && point.t);
 }
 
+function minuteCandles(ticker, minutes) {
+  const { points, extended } = minuteSource(ticker);
+  const all = bucketCandles(points, minutes);
+  if (!extended) return { candles: all };
+  return { candles: limitTradingSessions(all, minuteWindow(minutes)), history: all };
+}
+
 export function candlesFor(ticker, range) {
   const asked = ANALYSE_RANGES.includes(range) ? range : "15 Min";
-  if (asked === "5 Min") {
-    return { candles: bucketCandles(ticker?.history?.intraday, 5), range: asked, missing: false };
-  }
-  if (asked === "15 Min") {
-    return { candles: bucketCandles(ticker?.history?.intraday, 15), range: asked, missing: false };
+  if (asked === "5 Min" || asked === "15 Min") {
+    const packed = minuteCandles(ticker, asked === "5 Min" ? 5 : 15);
+    return { candles: packed.candles, history: packed.history, range: asked, missing: false };
   }
   if (asked === "4 Std") {
     const series = ticker?.history?.["4H"];

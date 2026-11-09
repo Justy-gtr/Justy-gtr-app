@@ -1,4 +1,4 @@
-import { bucketMinutes, fourHourPoints, maxPoints, seriesFor } from "./logic.js";
+import { fourHourPoints, maxPoints, rangeMinutePoints, seriesFor } from "./logic.js";
 
 /** From 7 separate cases a percentage is shown. Below that, the number would look sharper than the history is. */
 export const MIN_CASES = 7;
@@ -39,12 +39,12 @@ function usable(points) {
   });
 }
 
-/** Longest series of the same kind as the selected range. Minute charts only have the one session. */
+/** Longest series of the same kind as the selected range. Minute charts use 5m history when it is there. */
 export function historyPoints(ticker, range) {
   const history = ticker?.history || {};
   if (range === "1 Min" || range === "Tag") return usable(history.intraday);
-  if (range === "5 Min") return bucketMinutes(usable(history.intraday), 5);
-  if (range === "15 Min") return bucketMinutes(usable(history.intraday), 15);
+  if (range === "5 Min") return rangeMinutePoints(ticker, 5, false);
+  if (range === "15 Min") return rangeMinutePoints(ticker, 15, false);
   if (range === "4 Std") return fourHourPoints(history);
   if (range === "5J") return usable(history["5Y"]);
   if (range === "Max") return maxPoints(history);
