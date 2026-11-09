@@ -8,7 +8,6 @@ import {
   dayPathsFor,
   formatPathPct,
   renderDayPaths,
-  usCashOpen,
   weekdayPaths,
   weekdayPathsMerged
 } from "../js/daypath.js";
@@ -28,29 +27,25 @@ function at(day, clock, eur) {
   return { t: new Date(utc).toISOString(), eur };
 }
 
-test("08:00 ist die Basis, der Wochentag mischt sich nicht", () => {
-  assert.equal(berlinClock(usCashOpen("2026-11-09")).hour, 15);
-  assert.equal(berlinClock(usCashOpen("2026-11-09")).minute, 30);
-  assert.equal(berlinClock(usCashOpen("2026-03-16")).hour, 14);
-  assert.equal(berlinClock(usCashOpen("2026-03-16")).minute, 30);
-  assert.deepEqual(DAYPATH_AXIS, ["08:00", "15:30", "22:00"]);
-  assert.equal(DAYPATH_SLOTS[0], "08:00");
-  assert.equal(DAYPATH_SLOTS.at(-1), "22:00");
+test("07:00 ist die Basis, der Wochentag mischt sich nicht", () => {
+  assert.deepEqual(DAYPATH_AXIS, ["07:00", "15:30", "23:00"]);
+  assert.equal(DAYPATH_SLOTS[0], "07:00");
+  assert.equal(DAYPATH_SLOTS.at(-1), "23:00");
   assert.equal(DAYPATH_SLOTS.includes("15:30"), true);
 
   const monday = [
-    at("2026-11-02", "08:00", 100),
+    at("2026-11-02", "07:00", 100),
     at("2026-11-02", "15:30", 110),
-    at("2026-11-02", "22:00", 120)
+    at("2026-11-02", "23:00", 120)
   ];
   const mondayLater = [
-    at("2026-11-09", "08:00", 200),
+    at("2026-11-09", "07:00", 200),
     at("2026-11-09", "15:30", 200),
-    at("2026-11-09", "22:00", 180)
+    at("2026-11-09", "23:00", 180)
   ];
   const friday = [
-    at("2026-11-06", "08:00", 50),
-    at("2026-11-06", "22:00", 60)
+    at("2026-11-06", "07:00", 50),
+    at("2026-11-06", "23:00", 60)
   ];
   const paths = weekdayPaths([...monday, ...mondayLater, ...friday]);
   const montag = paths.days[0];
@@ -59,9 +54,9 @@ test("08:00 ist die Basis, der Wochentag mischt sich nicht", () => {
   assert.equal(montag.n, 2);
   assert.equal(freitag.n, 1);
   assert.equal(paths.days[1].n, 0);
-  const open = DAYPATH_SLOTS.indexOf("08:00");
+  const open = DAYPATH_SLOTS.indexOf("07:00");
   const cash = DAYPATH_SLOTS.indexOf("15:30");
-  const close = DAYPATH_SLOTS.indexOf("22:00");
+  const close = DAYPATH_SLOTS.indexOf("23:00");
   assert.equal(montag.points[open].avg, 0);
   assert.equal(montag.points[cash].avg, 5);
   assert.equal(montag.points[close].avg, 5);
@@ -71,31 +66,32 @@ test("08:00 ist die Basis, der Wochentag mischt sich nicht", () => {
   assert.equal(freitag.points[close].spread, null);
 });
 
-test("Ohne frühen Kurs ist die US-Eröffnung die Null, ein später Einzelpunkt zählt nicht", () => {
+test("Fehlende frühe und späte Stunden bleiben leer", () => {
   const winter = [
     { t: "2026-11-09T14:30:00.000Z", eur: 100 },
-    { t: "2026-11-09T16:00:00.000Z", eur: 110 }
+    { t: "2026-11-09T16:00:00.000Z", eur: 110 },
+    { t: "2026-11-09T22:00:00.000Z", eur: 103 }
   ];
   const paths = weekdayPaths(winter);
   const day = paths.days[0];
   assert.equal(day.n, 1);
-  assert.equal(day.points[DAYPATH_SLOTS.indexOf("08:00")].avg, null);
+  assert.equal(day.points[DAYPATH_SLOTS.indexOf("07:00")].avg, null);
   assert.equal(day.points[DAYPATH_SLOTS.indexOf("15:30")].avg, 0);
-  assert.equal(day.end, 10);
+  assert.equal(day.points[DAYPATH_SLOTS.indexOf("23:00")].avg, 3);
+  assert.equal(day.end, 3);
 
-  const gap = [{ t: "2026-03-16T13:30:00.000Z", eur: 80 }, { t: "2026-03-16T15:00:00.000Z", eur: 88 }];
-  const shifted = weekdayPaths(gap);
-  assert.equal(shifted.days[0].n, 1);
-  assert.equal(shifted.days[0].points[DAYPATH_SLOTS.indexOf("14:30")].avg, 0);
-  assert.equal(shifted.days[0].end, 10);
-
-  const late = [{ t: "2026-11-09T18:00:00.000Z", eur: 90 }];
-  assert.equal(weekdayPaths(late).days[0].n, 0);
+  const before = [{ t: "2026-11-09T05:30:00.000Z", eur: 90 }];
+  const after = [{ t: "2026-11-09T22:30:00.000Z", eur: 90 }];
+  assert.equal(weekdayPaths(before).days[0].n, 0);
+  assert.equal(weekdayPaths(after).days[0].n, 0);
+  assert.equal(berlinClock(before[0].t).hour, 6);
+  assert.equal(berlinClock(after[0].t).hour, 23);
+  assert.equal(berlinClock(after[0].t).minute, 30);
 });
 
 test("Frankfurt am Morgen, die US-Reihe danach, ohne Sprung", () => {
   const german = [
-    at("2026-11-09", "08:00", 100),
+    at("2026-11-09", "07:00", 100),
     at("2026-11-09", "15:00", 110)
   ];
   const us = [
@@ -104,7 +100,7 @@ test("Frankfurt am Morgen, die US-Reihe danach, ohne Sprung", () => {
   ];
   const day = weekdayPathsMerged(german, us).days[0];
   assert.equal(day.n, 1);
-  assert.equal(day.points[DAYPATH_SLOTS.indexOf("08:00")].avg, 0);
+  assert.equal(day.points[DAYPATH_SLOTS.indexOf("07:00")].avg, 0);
   assert.equal(day.points[DAYPATH_SLOTS.indexOf("15:00")].avg, 10);
   assert.equal(day.end, 21);
 });
@@ -120,8 +116,8 @@ test("Die Karte bleibt beschreibend und nutzt die gespeicherten Tage, wenn es me
   assert.equal(local.days[0].n, 1);
   const stored = weekdayPaths([
     ...bars,
-    at("2026-11-02", "08:00", 10),
-    at("2026-11-02", "22:00", 12)
+    at("2026-11-02", "07:00", 10),
+    at("2026-11-02", "23:00", 12)
   ]);
   const picked = dayPathsFor(ticker, { symbols: { SPCX: { dayPaths: stored } } });
   assert.equal(picked.days[0].n, 2);
@@ -132,7 +128,10 @@ test("Die Karte bleibt beschreibend und nutzt die gespeicherten Tage, wenn es me
   assert.match(html, /Mittwoch/);
   assert.match(html, /Donnerstag/);
   assert.match(html, /Freitag/);
-  assert.match(html, /08:00/);
+  assert.match(html, /07:00/);
+  assert.match(html, /23:00/);
+  assert.equal(html.includes("08:00"), false);
+  assert.equal(html.includes("22:00"), false);
   assert.match(html, /n = 2 Tage/);
   assert.match(html, /n = 0 Tage/);
   assert.equal(ADVICE.test(html), false);

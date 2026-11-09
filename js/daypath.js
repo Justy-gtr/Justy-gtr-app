@@ -1,10 +1,10 @@
 import { berlinClock } from "./seasonality.js";
 import { esc, zonedWallTime } from "./logic.js";
 
-/** 30-minute buckets from 08:00 through 22:00 Berlin. */
+/** 30-minute buckets from 07:00 through 23:00 Berlin. */
 export const DAYPATH_STEP = 30;
-export const DAYPATH_START = 8 * 60;
-export const DAYPATH_END = 22 * 60;
+export const DAYPATH_START = 7 * 60;
+export const DAYPATH_END = 23 * 60;
 
 const WEEKDAYS = [
   { index: 0, name: "Montag" },
@@ -25,7 +25,7 @@ for (let minute = DAYPATH_START; minute <= DAYPATH_END; minute += DAYPATH_STEP) 
   DAYPATH_SLOTS.push(clockLabel(minute));
 }
 
-export const DAYPATH_AXIS = ["08:00", "15:30", "22:00"];
+export const DAYPATH_AXIS = ["07:00", "15:30", "23:00"];
 
 function round2(value) {
   if (!Number.isFinite(value)) return null;
@@ -87,9 +87,8 @@ function groupDays(points) {
 
 /**
  * One weekday path from prints already in one currency.
- * The baseline is the first print from 08:00 Berlin.
- * If that print is missing, the baseline is the US cash open.
- * A day with neither is left out.
+ * The baseline is the first print from 07:00 Berlin onward, Frankfurt or pre-market when it is there.
+ * Buckets without a print stay empty. Nothing is carried forward to 23:00.
  */
 export function weekdayPaths(points) {
   const slotCount = DAYPATH_SLOTS.length;
@@ -98,14 +97,7 @@ export function weekdayPaths(points) {
   for (const [date, prints] of groupDays(points)) {
     const weekday = weekdayIndex(date);
     if (weekday < 0 || prints.length < 1) continue;
-    const openMs = usCashOpen(date);
-    const early = prints.filter((print) => openMs == null || print.t < openMs);
-    const opened = prints.filter((print) => {
-      if (openMs == null) return false;
-      return print.t >= openMs && print.t <= openMs + 45 * 60 * 1000;
-    });
-    const base = early[0] || opened[0];
-    if (!base) continue;
+    const base = prints[0];
     counted[weekday] += 1;
     const buckets = Array.from({ length: slotCount }, () => null);
     for (const print of prints) {
@@ -229,7 +221,7 @@ export function renderDayPaths(paths) {
   return `
     <section class="daypaths" aria-label="Durchschnittlicher Tagesverlauf">
       <h3>Durchschnittlicher Tagesverlauf</h3>
-      <p class="daypath-lead">Mittlerer Verlauf seit dem ersten Kurs ab 08:00 Uhr Berlin. Liegt da keiner, zählt die US-Eröffnung. Bis 22:00 Uhr.</p>
+      <p class="daypath-lead">Mittlerer Verlauf seit dem ersten Kurs ab 07:00 Uhr Berlin. Bis 23:00 Uhr. Stunden ohne Kurs bleiben leer.</p>
       ${rows}
     </section>`;
 }
@@ -280,26 +272,46 @@ function paintDayPath(canvas, day, slots) {
   ctx.setLineDash([]);
   const up = Number(day?.end) > 0;
   const color = up ? "#3ddc84" : "#ff5d6c";
-  const band = points.map((point, index) => {
-    if (!Number.isFinite(point?.avg) || !Number.isFinite(point?.spread)) return null;
-    return { x: xOf(index), high: yOf(point.avg + point.spread), low: yOf(point.avg - point.spread) };
-  }).filter(Boolean);
-  if (band.length > 1) {
+  const runs = [];
+  let run = [];
+  points.forEach((point, index) => {
+    if (!Number.isFinite(point?.avg)) {
+      if (run.length) runs.push(run);
+      run = [];
+      return;
+    }
+    run.push({
+      x: xOf(index),
+      y: yOf(point.avg),
+      high: Number.isFinite(point.spread) ? yOf(point.avg + point.spread) : null,
+      low: Number.isFinite(point.spread) ? yOf(point.avg - point.spread) : null
+    });
+  });
+  if (run.length) runs.push(run);
+  ctx.fillStyle = up ? "rgba(61,220,132,.16)" : "rgba(255,93,108,.16)";
+  for (const segment of runs) {
+    const band = segment.filter((item) => item.high != null && item.low != null);
+    if (band.length < 2) continue;
     ctx.beginPath();
     band.forEach((item, index) => (index ? ctx.lineTo(item.x, item.high) : ctx.moveTo(item.x, item.high)));
     for (let index = band.length - 1; index >= 0; index -= 1) ctx.lineTo(band[index].x, band[index].low);
     ctx.closePath();
-    ctx.fillStyle = up ? "rgba(61,220,132,.16)" : "rgba(255,93,108,.16)";
     ctx.fill();
   }
-  const line = points.map((point, index) => (Number.isFinite(point?.avg) ? { x: xOf(index), y: yOf(point.avg) } : null)).filter(Boolean);
-  if (line.length > 1) {
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1.75;
+  ctx.lineJoin = "round";
+  ctx.lineCap = "round";
+  ctx.fillStyle = color;
+  for (const segment of runs) {
+    if (segment.length === 1) {
+      ctx.beginPath();
+      ctx.arc(segment[0].x, segment[0].y, 1.6, 0, Math.PI * 2);
+      ctx.fill();
+      continue;
+    }
     ctx.beginPath();
-    line.forEach((item, index) => (index ? ctx.lineTo(item.x, item.y) : ctx.moveTo(item.x, item.y)));
-    ctx.strokeStyle = color;
-    ctx.lineWidth = 1.75;
-    ctx.lineJoin = "round";
-    ctx.lineCap = "round";
+    segment.forEach((item, index) => (index ? ctx.lineTo(item.x, item.y) : ctx.moveTo(item.x, item.y)));
     ctx.stroke();
   }
   ctx.font = "10px -apple-system, BlinkMacSystemFont, sans-serif";
