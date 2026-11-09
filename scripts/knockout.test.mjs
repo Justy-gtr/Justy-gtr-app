@@ -1,8 +1,10 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
 import test from "node:test";
 import {
   KNOCK_HINT,
   knockOut,
+  latestQuote,
   moveSentence,
   parseDecimal,
   readKnockStore,
@@ -37,6 +39,57 @@ test("Schwelle in Dollar wird mit dem App-Kurs nach Euro gerechnet", () => {
   assert.equal(result.band, "nah");
   assert.equal(warningText(result), "Sehr nah an der Schwelle · Kurs ist hinter der Schwelle");
   assert.equal(result.move, null);
+});
+
+test("Vorbörse, Nachbörse und Schluss tragen Uhrzeit", () => {
+  const pre = latestQuote({
+    priceEur: 119.98,
+    priceUsd: 134.27,
+    history: { intraday: [{ t: "2026-11-09T12:42:19.000Z", eur: 122.44, session: "pre" }] }
+  }, 1.1191);
+  assert.equal(pre.eur, 122.44);
+  assert.ok(Math.abs(pre.usd - 122.44 * 1.1191) < 1e-9);
+  assert.equal(pre.label, "vorbörslich 13:42");
+  const post = latestQuote({
+    history: { intraday: [{ t: "2026-11-06T22:30:00.000Z", eur: 121, usd: 135, session: "post" }] }
+  }, 1.1);
+  assert.equal(post.usd, 135);
+  assert.equal(post.label, "nachbörslich 23:30");
+  const close = latestQuote({
+    history: { intraday: [{ t: "2026-11-06T21:00:00.000Z", eur: 119.98, usd: 134.27, session: "regular" }] }
+  }, 1.1191);
+  assert.equal(close.label, "Schluss Fr 22:00");
+});
+
+test("Ein neuerer 5-Minuten-Punkt schlägt den Schluss, Dollar wird abgeleitet", () => {
+  const quote = latestQuote({
+    priceEur: 119.98,
+    priceUsd: 134.27,
+    history: {
+      intraday: [{ t: "2026-11-06T21:00:00.000Z", eur: 119.98, usd: 134.27, session: "regular" }],
+      "5m": [{ t: "2026-11-09T12:42:19.000Z", eur: 122.44 }]
+    }
+  }, 1.1191);
+  assert.equal(quote.eur, 122.44);
+  assert.ok(Math.abs(quote.usd - 122.44 * 1.1191) < 1e-9);
+  assert.equal(quote.session, "pre");
+  assert.equal(quote.label, "vorbörslich 13:42");
+});
+
+test("Hinter der Schwelle nur, wenn der letzte Kurs wirklich dahinter liegt", () => {
+  const prices = JSON.parse(fs.readFileSync(new URL("../data/prices.json", import.meta.url), "utf8"));
+  const spcx = prices.tickers.find((item) => item.symbol === "SPCX");
+  const quote = latestQuote(spcx, prices.fx.rate);
+  assert.equal(quote.at, spcx.history.intraday.at(-1).t);
+  assert.notEqual(quote.usd, spcx.priceUsd);
+  assert.ok(quote.usd > 136.2);
+  assert.match(quote.label, /^vorbörslich \d{2}:\d{2}$/);
+  const alive = knockOut({ priceEur: quote.eur, rate: prices.fx.rate, barrier: "136,2", side: "long" });
+  assert.equal(alive.behind, false);
+  assert.equal(warningText(alive), "Sehr nah an der Schwelle");
+  const through = knockOut({ priceEur: 120, rate: 1.1191, barrier: "136,2", side: "long" });
+  assert.equal(through.behind, true);
+  assert.match(warningText(through), /Kurs ist hinter der Schwelle/);
 });
 
 test("Abstand färbt sich an 15 und an 5 Prozent", () => {

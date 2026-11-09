@@ -1005,6 +1005,14 @@ body.detail-open .pager { overflow: hidden; }
   letter-spacing: -0.03em;
   font-variant-numeric: tabular-nums;
 }
+.ko-when {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
 .ko-field {
   display: flex;
   flex-direction: column;

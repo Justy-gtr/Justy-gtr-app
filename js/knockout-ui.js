@@ -2,6 +2,7 @@ import { esc, formatEUR, formatNumber, formatStamp } from "./logic.js";
 import {
   emptyDraft,
   knockOut,
+  latestQuote,
   moveSentence,
   parseDecimal,
   readKnockStore,
@@ -39,21 +40,27 @@ function leverageText(value) {
   return formatNumber(value, value >= 20 ? 0 : 1);
 }
 
-function priceLine(ticker) {
-  if (!ticker || ticker.priceEur == null) return "Kurs fehlt";
-  const usd = ticker.priceUsd == null ? "" : ` · ${formatNumber(ticker.priceUsd, 2)} $`;
-  return `${formatEUR(ticker.priceEur)}${usd}`;
+function quoteFor(data, symbol) {
+  const ticker = tickerOf(data, symbol);
+  const rate = rateOf(data, ticker);
+  return { ticker, rate, quote: latestQuote(ticker, rate) };
+}
+
+function priceLine(quote) {
+  if (!quote || quote.eur == null) return "Kurs fehlt";
+  const usd = quote.usd == null ? "" : ` · ${formatNumber(quote.usd, 2)} $`;
+  const when = quote.label ? `<span class="ko-when">${esc(quote.label)}</span>` : "";
+  return `${formatEUR(quote.eur)}${usd}${when}`;
 }
 
 function outputHtml(data, draft) {
-  const ticker = tickerOf(data, draft.symbol);
+  const { quote, rate } = quoteFor(data, draft.symbol);
   const fx = data?.prices?.fx;
-  const rate = rateOf(data, ticker);
   if (parseDecimal(draft.barrier) == null) return `<p class="muted">Schwelle fehlt.</p>`;
-  if (!ticker || ticker.priceEur == null) return `<p class="muted">Kurs fehlt.</p>`;
+  if (!quote || quote.eur == null) return `<p class="muted">Kurs fehlt.</p>`;
   if (rate == null) return `<p class="muted">Kurs USD/EUR fehlt.</p>`;
   const result = knockOut({
-    priceEur: ticker.priceEur,
+    priceEur: quote.eur,
     rate,
     barrier: draft.barrier,
     side: draft.side,
@@ -76,10 +83,10 @@ function outputHtml(data, draft) {
 function savedHtml(data, saved) {
   if (!saved.length) return `<p class="muted">Noch keiner.</p>`;
   return saved.map((item) => {
-    const ticker = tickerOf(data, item.symbol);
+    const { quote, rate } = quoteFor(data, item.symbol);
     const result = knockOut({
-      priceEur: ticker?.priceEur,
-      rate: rateOf(data, ticker),
+      priceEur: quote?.eur,
+      rate,
       barrier: item.barrier,
       side: item.side
     });
@@ -134,7 +141,7 @@ export function initKnockout({ getData } = {}) {
       `).join("");
     }
     const price = document.getElementById("ko-price");
-    if (price) price.textContent = priceLine(tickerOf(data, draft.symbol));
+    if (price) price.innerHTML = priceLine(quoteFor(data, draft.symbol).quote);
     sheet.querySelectorAll("[data-action='ko-side']").forEach((button) => {
       button.setAttribute("aria-selected", button.dataset.side === draft.side ? "true" : "false");
     });
@@ -146,10 +153,10 @@ export function initKnockout({ getData } = {}) {
     if (out) out.innerHTML = outputHtml(data, draft);
     const move = document.getElementById("ko-move");
     if (move) {
-      const ticker = tickerOf(data, draft.symbol);
+      const { quote, rate } = quoteFor(data, draft.symbol);
       const result = knockOut({
-        priceEur: ticker?.priceEur,
-        rate: rateOf(data, ticker),
+        priceEur: quote?.eur,
+        rate,
         barrier: draft.barrier,
         side: draft.side,
         ratio: draft.ratio,
