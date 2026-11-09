@@ -1,7 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 import { karlVoiceIssues } from "../js/logic.js";
-import { HOUR_SLOTS, WEEKDAY_LABELS } from "../js/seasonality.js";
+import {
+  EARLY_NOTE_DE,
+  EARLY_NOTE_MIX,
+  EARLY_NOTE_US,
+  HOUR_SLOTS,
+  WEEKDAY_LABELS
+} from "../js/seasonality.js";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const dataDir = path.join(root, "data");
@@ -318,18 +324,16 @@ if (seasonality) {
       if (windowStats.to && !/^\d{4}-\d{2}-\d{2}$/.test(windowStats.to)) fail(`${label}.to`);
       if (!Array.isArray(windowStats.days) || windowStats.days.length !== 5) fail(`${label}.days`);
       (windowStats.days || []).forEach((row, index) => countRow(row, `${label}.days.${index}`, true));
-      if (!Array.isArray(windowStats.hours) || windowStats.hours.length !== 7) fail(`${label}.hours`);
+      if (!Array.isArray(windowStats.hours) || windowStats.hours.length !== HOUR_SLOTS.length) fail(`${label}.hours`);
       (windowStats.hours || []).forEach((row, index) => countRow(row, `${label}.hours.${index}`, false));
       if (!Array.isArray(windowStats.grid) || windowStats.grid.length !== 5) fail(`${label}.grid`);
       (windowStats.grid || []).forEach((row, rowIndex) => {
-        if (!Array.isArray(row) || row.length !== 7) fail(`${label}.grid.${rowIndex}`);
+        if (!Array.isArray(row) || row.length !== HOUR_SLOTS.length) fail(`${label}.grid.${rowIndex}`);
         (row || []).forEach((cell, index) => cellRow(cell, `${label}.grid.${rowIndex}.${index}`));
       });
-      if (windowStats.pre != null) {
-        countRow(windowStats.pre, `${label}.pre`, false);
-        if ((windowStats.pre?.n || 0) < 7) fail(`${label}.pre unter 7`);
-      }
     }
+    const notes = new Set([EARLY_NOTE_DE, EARLY_NOTE_US, EARLY_NOTE_MIX]);
+    if (pack.earlyNote != null && !notes.has(pack.earlyNote)) fail(`seasonality.${symbol}.earlyNote`);
   }
 }
 
