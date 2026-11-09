@@ -20,6 +20,8 @@ export function musterCard(analysis) {
       <p class="level-head"><strong><i class="swatch ${level.kind === "resistance" ? "resist" : level.kind}" aria-hidden="true"></i>${esc(level.title)}</strong>${level.eur == null ? "" : `<span class="level-price">${esc(formatEUR(level.eur))}</span>`}</p>
       ${level.kicker ? `<p class="level-kicker">${esc(level.kicker)}</p>` : ""}
       <p class="level-stat">${esc(level.sentence)}</p>
+      ${level.bounceSentence ? `<p class="level-stat bounce-count">${esc(level.bounceSentence)}</p>` : ""}
+      ${level.bounceDetail ? `<p class="bounce-note">${esc(level.bounceDetail)}</p>` : ""}
     </div>`).join("");
   const legend = (analysis?.legend || []).map((item) => `<span><i class="swatch ${item.kind === "resistance" ? "resist" : item.kind}" aria-hidden="true"></i>${esc(item.label)}</span>`).join("");
   const counted = analysisShowsN(analysis) || /n\s*=/.test(analyseText(analysis));
