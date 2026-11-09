@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-11-09T04:58:18.906Z",
+  "asOf": "2026-11-09T06:04:36.273Z",
   "example": false,
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1162,
+    "rate": 1.1163,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-09T04:58:18.906Z",
+    "asOf": "2026-11-09T06:04:36.273Z",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -21,19 +21,19 @@
       "example": false,
       "narrativeExample": false,
       "stale": false,
-      "priceEur": 120.29,
+      "priceEur": 120.28,
       "priceUsd": 134.27,
-      "previousCloseEur": 120.7,
-      "changeEur": -0.41,
-      "changePct": -0.34,
-      "dayHighEur": 121.23,
-      "dayLowEur": 115.19,
+      "previousCloseEur": 120.68,
+      "changeEur": -0.4,
+      "changePct": -0.33,
+      "dayHighEur": 121.22,
+      "dayLowEur": 115.18,
       "eurMethod": "usd_div_eurusd",
       "eurVenue": null,
       "eurSymbol": null,
       "usdSymbol": "SPCX",
       "intradayMethod": "usd_div_eurusd",
-      "fxRate": 1.1162,
+      "fxRate": 1.1163,
       "sparkline": [
         113.21,
         115.16,
@@ -7477,7 +7477,7 @@
           },
           {
             "t": "2026-11-06T14:30:00.000Z",
-            "eur": 120.29,
+            "eur": 120.28,
             "open": 116.62,
             "high": 120.52,
             "low": 114.51,
@@ -9375,9 +9375,9 @@
       ],
       "fetchError": null,
       "overnightPhase": "nachhandel",
-      "overnightEur": 121.52,
-      "overnightHighEur": 121.8,
-      "overnightLowEur": 120.19,
+      "overnightEur": 121.51,
+      "overnightHighEur": 121.79,
+      "overnightLowEur": 120.18,
       "overnightAsOf": "2026-11-07T00:59:55.000Z"
     },
     {
@@ -9401,7 +9401,7 @@
       "eurSymbol": "TL0.DE",
       "usdSymbol": "TSLA",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1162,
+      "fxRate": 1.1163,
       "sparkline": [
         309.95,
         311,
@@ -23663,9 +23663,9 @@
       ],
       "fetchError": null,
       "overnightPhase": "nachhandel",
-      "overnightEur": 321.99,
-      "overnightHighEur": 322.32,
-      "overnightLowEur": 319.93,
+      "overnightEur": 321.96,
+      "overnightHighEur": 322.29,
+      "overnightLowEur": 319.91,
       "overnightAsOf": "2026-11-07T00:59:48.000Z"
     },
     {
@@ -23689,7 +23689,7 @@
       "eurSymbol": "6RJ0.F",
       "usdSymbol": "RKLB",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1162,
+      "fxRate": 1.1163,
       "sparkline": [
         42.5,
         44.9,
@@ -36106,8 +36106,8 @@
       "fetchError": null,
       "overnightPhase": "nachhandel",
       "overnightEur": 47.99,
-      "overnightHighEur": 48.24,
-      "overnightLowEur": 47.46,
+      "overnightHighEur": 48.23,
+      "overnightLowEur": 47.45,
       "overnightAsOf": "2026-11-07T00:59:43.000Z"
     }
   ]
