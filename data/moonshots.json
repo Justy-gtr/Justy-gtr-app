@@ -1,12 +1,12 @@
 {
   "example": false,
   "disclaimer": "Keine Anlageberatung. Hebel kann Totalverlust bedeuten. Vergangenheit, keine Vorhersage.",
-  "asOf": "2026-11-09T16:59:23+01:00",
+  "asOf": "2026-11-09T18:39:56+01:00",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1198,
+    "rate": 1.121,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-09T16:58:29+01:00",
+    "asOf": "2026-11-09T18:39:31+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -160,10 +160,10 @@
           "url": "https://support.traderepublic.com/de-de/87"
         }
       ],
-      "priceUsd": 179.66,
-      "priceEur": 160.43,
+      "priceUsd": 177.99,
+      "priceEur": 158.78,
       "previousCloseUsd": 186.64,
-      "changePct": -3.74,
+      "changePct": -4.63,
       "eurMethod": "usd_div_eurusd",
       "sparkline": [
         212,
@@ -189,9 +189,9 @@
         178.57,
         161.64,
         166.22,
-        160.43
+        158.78
       ],
-      "asOf": "2026-11-09T16:59:23+01:00",
+      "asOf": "2026-11-09T18:39:56+01:00",
       "marketSource": {
         "title": "Yahoo Finance NVDA",
         "url": "https://finance.yahoo.com/quote/NVDA"
@@ -344,10 +344,10 @@
           "url": "https://support.traderepublic.com/de-de/87"
         }
       ],
-      "priceUsd": 213.96,
-      "priceEur": 191.07,
+      "priceUsd": 212.86,
+      "priceEur": 189.89,
       "previousCloseUsd": 214.87,
-      "changePct": -0.42,
+      "changePct": -0.94,
       "eurMethod": "usd_div_eurusd",
       "sparkline": [
         182.13,
@@ -373,9 +373,9 @@
         186.4,
         189.91,
         191.37,
-        191.07
+        189.89
       ],
-      "asOf": "2026-11-09T16:59:22+01:00",
+      "asOf": "2026-11-09T18:39:51+01:00",
       "marketSource": {
         "title": "Yahoo Finance TTWO",
         "url": "https://finance.yahoo.com/quote/TTWO"
@@ -528,10 +528,10 @@
           "url": "https://support.traderepublic.com/de-de/87"
         }
       ],
-      "priceUsd": 157.64,
-      "priceEur": 140.77,
+      "priceUsd": 154.54,
+      "priceEur": 137.86,
       "previousCloseUsd": 141.2,
-      "changePct": 11.64,
+      "changePct": 9.44,
       "eurMethod": "usd_div_eurusd",
       "sparkline": [
         254.15,
@@ -557,9 +557,9 @@
         142.59,
         118.87,
         125.75,
-        140.77
+        137.86
       ],
-      "asOf": "2026-11-09T16:59:22+01:00",
+      "asOf": "2026-11-09T18:39:54+01:00",
       "marketSource": {
         "title": "Yahoo Finance MRVL",
         "url": "https://finance.yahoo.com/quote/MRVL"
