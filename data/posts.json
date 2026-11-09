@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-09T06:39:22+01:00",
+  "asOf": "2026-11-09T08:45:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -28,11 +28,15 @@
     "TSLA": {
       "score": 0.15,
       "label": "leicht zuversichtlich",
-      "summary": "Musk: Cybertruck-Auftragsstau, Extra-Schicht vor Cybercab-Umbau Mitte 2027. Argentinien 20.11. bestätigt. Nacht ohne Tesla-Posts, Musk vor allem Politik. Mo früh: Nasdaq-Futures leicht im Plus trotz Nvidia-Sorge.",
+      "summary": "Robotaxi startet heute in San Antonio (8. Stadt laut Tesla Magazine). Musk: Cybertruck-Nachfrage größer als Produktion, Linie schließt in ~8 Monaten für Cybercab, viele Anzahlungen gehen zurück. Argentinien 20.11. bestätigt. US-Futures leicht im Plus.",
       "sources": [
         {
-          "title": "@elonmusk: Cybertruck backlog",
-          "url": "https://x.com/elonmusk/status/2119130949434888330"
+          "title": "@robotaxi: San Antonio",
+          "url": "https://x.com/robotaxi/status/2119678179963187564"
+        },
+        {
+          "title": "@elonmusk: Cybertruck order rate",
+          "url": "https://x.com/elonmusk/status/2119691615774146614"
         },
         {
           "title": "@Tesla: Argentina later this month",
@@ -65,6 +69,270 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2119692756914483352",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T08:25:09+01:00",
+      "summaryDe": "Musk antwortet dem britischen Ex-Abgeordneten Andrew Bridgen, der beim Urteil gegen Russell Brand eine Zwei-Klassen-Justiz vermutet: „Ungerecht.“ Politik, kein Firmenbezug.",
+      "originalText": "@ABridgen Unjust",
+      "url": "https://x.com/elonmusk/status/2119692756914483352",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @ABridgen Unjust",
+          "url": "https://x.com/elonmusk/status/2119692756914483352"
+        },
+        {
+          "title": "@ABridgen: two tier justice Russell Brand",
+          "url": "https://x.com/ABridgen/status/2119382151011471466"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119692253233103264",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T08:23:09+01:00",
+      "summaryDe": "Musk antwortet mit 🙏 auf einen Post, dem Schreiber sei egal, mit wem Firmenchefs Affären haben — Kontext ist die Debatte um Nvidia-Chef Huang. Kein Firmenbezug.",
+      "originalText": "@dogeofficialceo 🙏",
+      "url": "https://x.com/elonmusk/status/2119692253233103264",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @dogeofficialceo 🙏",
+          "url": "https://x.com/elonmusk/status/2119692253233103264"
+        },
+        {
+          "title": "@dogeofficialceo: CEOs",
+          "url": "https://x.com/dogeofficialceo/status/2119638258686869535"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119691615774146614",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T08:20:37+01:00",
+      "summaryDe": "Musk: Es gibt mehr Cybertruck-Bestellungen, als Tesla bauen kann. Die Linie schließt in etwa 8 Monaten; viele Kunden bekommen ihre Anzahlung zurück. Der Cybertruck sei nicht unrentabel, das sei falsch berichtet. Bestätigt den Plan, Platz für Cybercab zu machen.",
+      "originalText": "The Cybertruck order rate far exceeds our production rate. We will try to make as many as possible before shutting down the line in about 8 months, but will have to return deposits for a lot of people.\n\nThis is not a case of Cybertruck being unprofitable, as has been misreported",
+      "url": "https://x.com/elonmusk/status/2119691615774146614",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: The Cybertruck order rate far exceeds our production rate. W",
+          "url": "https://x.com/elonmusk/status/2119691615774146614"
+        },
+        {
+          "title": "Zitierter Post (Cybertruck: Get it while you can)",
+          "url": "https://x.com/i/status/2119460358826176575"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119689039209250947",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T08:10:23+01:00",
+      "summaryDe": "Musk teilt einen Post, der britischen Behörden vorwirft, Russell Brand zu verfolgen, aber nicht die Missbrauchs-Banden. Politik, kein Firmenbezug.",
+      "originalText": "RT @GuntherEagleman: The UK went after Russell Brand but not migrant rape gangs. Why.",
+      "url": "https://x.com/elonmusk/status/2119689039209250947",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @GuntherEagleman: The UK went after Russell Brand but not",
+          "url": "https://x.com/elonmusk/status/2119689039209250947"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119686351474078187",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T07:59:42+01:00",
+      "summaryDe": "Musk teilt die Ankündigung des Tesla-Robotaxi-Kontos: Robotaxi startet in San Antonio (Texas).",
+      "originalText": "RT @robotaxi: Robotaxi available in San Antonio starting tomorrow, 5am",
+      "url": "https://x.com/elonmusk/status/2119686351474078187",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @robotaxi: Robotaxi available in San Antonio starting tom",
+          "url": "https://x.com/elonmusk/status/2119686351474078187"
+        },
+        {
+          "title": "@robotaxi: San Antonio",
+          "url": "https://x.com/robotaxi/status/2119678179963187564"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119686284360749218",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T07:59:26+01:00",
+      "summaryDe": "Musk teilt: Starlink hat das abgelegene Dorf Naigani auf der Fidschi-Insel Batiki erstmals mit verlässlichem Internet verbunden.",
+      "originalText": "RT @cb_doge: Starlink connected a remote village in Fiji to the world. 🇫🇯",
+      "url": "https://x.com/elonmusk/status/2119686284360749218",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @cb_doge: Starlink connected a remote village in Fiji to ",
+          "url": "https://x.com/elonmusk/status/2119686284360749218"
+        },
+        {
+          "title": "@cb_doge: Starlink Fiji",
+          "url": "https://x.com/cb_doge/status/2119685184820056238"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119683889136349651",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T07:49:55+01:00",
+      "summaryDe": "Musk teilt einen Post von John Stossel: Die US-Regierung habe mit Milliarden nur 400 E-Autos in fünf Jahren gebaut, Tesla im selben Zeitraum 35.000. Die Zahlen stammen von Stossel und sind hier nicht geprüft.",
+      "originalText": "RT @JohnStossel: The US Government spent billions building electric vehicle. They built 400 over five years. How many did @ElonMusk's @Tesla build in the same timeframe?",
+      "url": "https://x.com/elonmusk/status/2119683889136349651",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @JohnStossel: The US Government spent billions building e",
+          "url": "https://x.com/elonmusk/status/2119683889136349651"
+        },
+        {
+          "title": "@JohnStossel: 400 vs 35,000",
+          "url": "https://x.com/JohnStossel/status/2119570662180466875"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119682340960039293",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T07:43:46+01:00",
+      "summaryDe": "Musk teilt einen Clip, in dem er sagt: Die Erde kann Asteroiden heute nicht abwehren; mit Starship habe man erstmals eine gewisse Möglichkeit dazu.",
+      "originalText": "RT @XFreeze: Elon Musk explains one of the most terrifying existential threats humanity faces: a massive comet striking Earth",
+      "url": "https://x.com/elonmusk/status/2119682340960039293",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @XFreeze: Elon Musk explains one of the most terrifying e",
+          "url": "https://x.com/elonmusk/status/2119682340960039293"
+        },
+        {
+          "title": "@XFreeze: Clip Asteroidenabwehr",
+          "url": "https://x.com/XFreeze/status/2119659029089931643"
+        }
+      ]
+    },
+    {
+      "id": "post-robotaxi-2119680995956060472",
+      "account": "@robotaxi",
+      "displayName": "Tesla Robotaxi",
+      "postedAt": "2026-11-09T07:38:25+01:00",
+      "summaryDe": "Das Robotaxi-Konto schreibt nur „Computer, expand“ — Anspielung auf die Ausweitung des Dienstes, ohne Details.",
+      "originalText": "Computer, expand",
+      "url": "https://x.com/robotaxi/status/2119680995956060472",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@robotaxi: Computer, expand",
+          "url": "https://x.com/robotaxi/status/2119680995956060472"
+        }
+      ]
+    },
+    {
+      "id": "post-robotaxi-2119678179963187564",
+      "account": "@robotaxi",
+      "displayName": "Tesla Robotaxi",
+      "postedAt": "2026-11-09T07:27:14+01:00",
+      "summaryDe": "WICHTIG: Tesla startet Robotaxi in San Antonio (Texas) — ab 5 Uhr Ortszeit. Auf Nachfrage präzisiert das Konto „Monday“, also heute um 12:00 Berlin. Neue Stadt; dort fährt seit 14.10. auch Waymo für alle. Gebiet, Flottengröße und Preise nannte Tesla nicht.",
+      "originalText": "Robotaxi available in San Antonio starting tomorrow, 5am",
+      "url": "https://x.com/robotaxi/status/2119678179963187564",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": true,
+      "example": false,
+      "sources": [
+        {
+          "title": "@robotaxi: Robotaxi available in San Antonio",
+          "url": "https://x.com/robotaxi/status/2119678179963187564"
+        },
+        {
+          "title": "@robotaxi: „Monday“ (Antwort)",
+          "url": "https://x.com/robotaxi/status/2119680468392276192"
+        },
+        {
+          "title": "RuntimeWire: Robotaxi San Antonio (9.11.)",
+          "url": "https://runtimewire.com/article/tesla-robotaxi-san-antonio-november-10"
+        }
+      ]
+    },
     {
       "id": "post-musk-2119637191504581036",
       "account": "@elonmusk",
@@ -3923,5 +4191,5 @@
       ]
     }
   ],
-  "notes": "09.11. 06:40: Seit dem 05:00-Lauf keine neuen Posts von Musk (letzter 04:44) oder den Firmenkonten (SpaceX, Tesla, Starlink, Rocket Lab, Neuralink, xAI, Boring). Vorher: 20 Musk-Posts über Nacht, nichts Wichtiges. ESCAPADE-Blue weiter ohne offizielle Bestätigung; Gold heute 11:51."
+  "notes": "09.11. 08:45: Tesla-Robotaxi-Konto kündigt San Antonio an (wichtig, Start heute 5 Uhr Ortszeit = 12:00 Berlin). Musk: Cybertruck-Linie schließt in ~8 Monaten, viele Anzahlungen gehen zurück; dazu Politik-Retweets, Starlink Fidschi. Keine neuen Posts von SpaceX, Tesla, Starlink, Rocket Lab, Neuralink, xAI, Boring. ESCAPADE-Blue weiter ohne offizielle Bestätigung; Gold heute 11:51."
 }

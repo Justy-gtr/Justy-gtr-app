@@ -177,6 +177,41 @@
       ]
     },
     {
+      "id": "evt-robotaxi-san-antonio",
+      "title": "Tesla: Robotaxi startet in San Antonio",
+      "date": "2026-11-09",
+      "time": "12:00",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "robotaxi",
+      "company": "Tesla",
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 90,
+      "impact": "niedrig",
+      "reasoning": "Das offizielle Tesla-Robotaxi-Konto schrieb um 00:27 Ortszeit „ab morgen, 5 Uhr“ und antwortete auf Nachfrage „Monday“ — also heute 5:00 Uhr Texas-Zeit (= 12:00 Berlin). RuntimeWire las „morgen“ als Di 10.11.; das Datum kann sich also um einen Tag verschieben. Ladeplätze am Flughafen und an der Josephine Street sind laut Austin American-Statesman vorbereitet. 90 %, weil Tesla selbst den Start nennt. Gebiet, Flotte und Preise sind offen. Kurswirkung eher gering, aber Teil der Robotaxi-Geschichte; in San Antonio fährt Waymo bereits für alle.",
+      "example": false,
+      "sources": [
+        {
+          "title": "@robotaxi: Robotaxi available in San Antonio",
+          "url": "https://x.com/robotaxi/status/2119678179963187564"
+        },
+        {
+          "title": "@robotaxi: „Monday“",
+          "url": "https://x.com/robotaxi/status/2119680468392276192"
+        },
+        {
+          "title": "RuntimeWire: Start 10.11. 5 Uhr",
+          "url": "https://runtimewire.com/article/tesla-robotaxi-san-antonio-november-10"
+        },
+        {
+          "title": "Austin American-Statesman: Robotaxi bald in San Antonio",
+          "url": "https://www.statesman.com/business/article/tesla-robotaxi-service-san-antonio-22495640.php"
+        }
+      ]
+    },
+    {
       "id": "evt-cybercab-dallas",
       "title": "Tesla: Cybercab-Fahrten in Dallas (Ziel: November)",
       "date": "2026-11-30",
@@ -318,7 +353,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten. @NASASolarSystem schrieb am So „Flyby #2 is tonight“ — der Termin steht. Blue (7.11.) ist auch nach rund 50 Stunden nicht offiziell bestätigt: NASA-Blog letzter Eintrag 2.11. (Stand Mo 06:40), @RocketLab still. Starlust schreibt „erfolgreich“, stützt sich aber auf NASAs Vorab-Text. Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering.",
+      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten. @NASASolarSystem schrieb am So „Flyby #2 is tonight“ — der Termin steht. Blue (7.11.) ist auch nach rund 50 Stunden nicht offiziell bestätigt: NASA-Blog letzter Eintrag 2.11. (Stand Mo 08:40), @RocketLab still. Starlust schreibt „erfolgreich“, stützt sich aber auf NASAs Vorab-Text. Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering.",
       "example": false,
       "sources": [
         {

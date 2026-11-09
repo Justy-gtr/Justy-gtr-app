@@ -23612,23 +23612,19 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Die angezeigten etwa −9,8 % sind die Wochenbewegung, kein neuer Absturz. Freitag-Schluss ~358 $ (~+4,6 %). Mo früh: US-Futures im Plus, Öl etwas schwächer nach Trumps Iran-Aussagen. Keine neue Tesla-Nachricht über Nacht.",
+      "why": "Die angezeigten etwa −9,8 % sind die Wochenbewegung, kein neuer Absturz. Freitag-Schluss ~358 $ (~+4,6 %). Mo früh: US-Futures im Plus. Neu: Robotaxi startet heute in San Antonio; Musk sagt, die Cybertruck-Linie schließt in ~8 Monaten für Cybercab.",
       "whySources": [
-        {
-          "title": "Yahoo Finance: TSLA",
-          "url": "https://finance.yahoo.com/quote/TSLA/"
-        },
-        {
-          "title": "Yahoo Finance: TL0.DE",
-          "url": "https://finance.yahoo.com/quote/TL0.DE"
-        },
         {
           "title": "Yahoo Finance: US-Futures erholen sich (9.11.)",
           "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-034814953.html"
         },
         {
-          "title": "CNBC: Öl fällt nach Trump-Aussage (9.11.)",
-          "url": "https://www.cnbc.com/2026/11/09/oil-falls-as-trump-says-new-iran-attacks-unlikely.html"
+          "title": "@robotaxi: San Antonio",
+          "url": "https://x.com/robotaxi/status/2119678179963187564"
+        },
+        {
+          "title": "@elonmusk: Cybertruck order rate",
+          "url": "https://x.com/elonmusk/status/2119691615774146614"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -39051,7 +39047,7 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Kein Handel seit Freitag (Schluss ~53 $, ~+15 %: Space-/Defense-Erholung). Heute: ESCAPADE-Gold-Burn 11:51, Q3-Zahlen 23:00 Berlin. Blue-Burn vom 7.11. weiter nicht offiziell bestätigt (Stand 06:40).",
+      "why": "Kein Handel seit Freitag (Schluss ~53 $, ~+15 %: Space-/Defense-Erholung). Heute: ESCAPADE-Gold-Burn 11:51, Q3-Zahlen 23:00 Berlin. Blue-Burn vom 7.11. weiter nicht offiziell bestätigt (Stand 08:40).",
       "whySources": [
         {
           "title": "Yahoo Finance: RKLB",
