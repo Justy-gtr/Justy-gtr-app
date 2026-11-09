@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { karlVoiceIssues } from "../js/logic.js";
+import { DAYPATH_SCHEMA, DAYPATH_SLOTS } from "../js/daypath.js";
 import {
   EARLY_NOTE_DE,
   EARLY_NOTE_MIX,
@@ -345,15 +346,33 @@ if (seasonality) {
     }
     const notes = new Set([EARLY_NOTE_DE, EARLY_NOTE_US, EARLY_NOTE_MIX]);
     if (pack.earlyNote != null && !notes.has(pack.earlyNote)) fail(`seasonality.${symbol}.earlyNote`);
-    if (pack.dayPaths) {
-      const paths = pack.dayPaths;
-      const label = `seasonality.${symbol}.dayPaths`;
-      if (!Array.isArray(paths.days) || paths.days.length !== 5) fail(`${label}.days`);
-      (paths.days || []).forEach((day, index) => {
-        if (!day || !Number.isInteger(day.n) || day.n < 0) fail(`${label}.days.${index}.n`);
-        if (!Array.isArray(day.points)) fail(`${label}.days.${index}.points`);
+    const paths = pack.dayPaths;
+    const label = `seasonality.${symbol}.dayPaths`;
+    if (!paths || paths.schema !== DAYPATH_SCHEMA) fail(`${label}.schema`);
+    if (!Array.isArray(paths?.slots) || paths.slots.join("|") !== DAYPATH_SLOTS.join("|")) fail(`${label}.slots`);
+    if (!Array.isArray(paths?.days) || paths.days.length !== 5) fail(`${label}.days`);
+    if (!Array.isArray(paths?.coverage) || paths.coverage.length !== DAYPATH_SLOTS.length) fail(`${label}.coverage`);
+    (paths?.coverage || []).forEach((row, index) => {
+      if (row?.slot !== DAYPATH_SLOTS[index]) fail(`${label}.coverage.${index}.slot`);
+      if (!Number.isInteger(row?.n) || row.n < 0) fail(`${label}.coverage.${index}.n`);
+      if (typeof row?.where !== "string" || !row.where.trim()) fail(`${label}.coverage.${index}.where`);
+    });
+    (paths?.days || []).forEach((day, index) => {
+      if (!day || !Number.isInteger(day.n) || day.n < 0) fail(`${label}.days.${index}.n`);
+      if (!Array.isArray(day.points) || day.points.length !== DAYPATH_SLOTS.length) {
+        fail(`${label}.days.${index}.points`);
+        return;
+      }
+      day.points.forEach((point, pointIndex) => {
+        const pointLabel = `${label}.days.${index}.points.${pointIndex}`;
+        if (!point || !Number.isInteger(point.n) || point.n < 0) fail(`${pointLabel}.n`);
+        if (point.n === 0) {
+          if (point.avg != null) fail(`${pointLabel}.avg`);
+        } else if (typeof point.avg !== "number" || typeof point.min !== "number" || typeof point.max !== "number") {
+          fail(`${pointLabel}.avg`);
+        }
       });
-    }
+    });
   }
 }
 

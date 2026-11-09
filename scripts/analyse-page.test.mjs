@@ -634,7 +634,8 @@ test("Nummern und Striche kommen aus der Fixture, nicht aus dem Tageskurs", () =
   assert.match(css, /\.guide-legend \.swatch\.trend/);
   assert.equal(css.includes("kaufen"), false);
   const sw = fs.readFileSync("sw.js", "utf8");
-  assert.match(sw, /jgtr-v31/);
+  assert.match(sw, /jgtr-v32/);
+  assert.equal(sw.includes("jgtr-v31"), false);
   assert.equal(sw.includes("jgtr-v30"), false);
 });
 
