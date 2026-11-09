@@ -365,7 +365,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten über Südaustralien. Stand 15:10 weiter keine offizielle Bestätigung, weder für Gold noch für Blue (7.11.): NASA-Blog letzter Eintrag 2.11., keine Posts von NASA oder @RocketLab seit dem Morgen. AMSAT-DL meldet, Gold sei heute in unter 7000 km vorbeigeflogen — das zeigt den Vorbeiflug, nicht den Erfolg des Burns. Leonard David berichtet, das Deep Space Network (Madrid, DSS-65) habe Funkkontakt zu Gold; NASA wolle beide Flybys voraussichtlich heute melden. Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering; heute 23:00 kommen ohnehin die Q3-Zahlen, dort dürfte Rocket Lab den Stand nennen.",
+      "reasoning": "NASA: Gold-Burn heute Mo 9.11. ab 5:51 EST (= 11:51 Berlin), etwa 9 Minuten über Südaustralien. Stand 16:05 weiter keine offizielle Bestätigung, weder für Gold noch für Blue (7.11.): NASA-Blog letzter Eintrag 2.11., keine neuen Posts von NASA oder @RocketLab. Starlust schreibt zwar, Blue sei „laut NASA“ erfolgreich, nennt aber keine NASA-Quelle. AMSAT-DL meldet, Gold sei in unter 7000 km vorbeigeflogen; Leonard David berichtet von Funkkontakt (DSN Madrid). Kein Hinweis auf ein Problem. 85 % unverändert. Kurswirkung gering; heute 23:00 bei den Q3-Zahlen dürfte Rocket Lab den Stand nennen.",
       "example": false,
       "sources": [
         {
@@ -1215,9 +1215,17 @@
       ],
       "probabilityPct": 50,
       "impact": "mittel",
-      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nvidia lag am Mo vorbörslich zuletzt etwa 6 % im Minus (Stand 15:10), Nasdaq-100-Futures dagegen im Plus. Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen.",
+      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nach dem US-Start lag Nvidia zeitweise fast 7 % im Minus, um 16:05 bei ~178,5 $ (−4,4 %), während Broadcom, AMD und die Nasdaq stiegen. Bis 16:05 keine Antwort Huangs auf die Briefing-Bitte; Nvidia: Huang führe „ohne Unterbrechung“ weiter. Mit der neuen demokratischen Mehrheit droht zusätzlich mehr Aufsicht (CNBC). Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen.",
       "example": false,
       "sources": [
+        {
+          "title": "CNBC: Huang und die neue Kongress-Aufsicht (9.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-affair-congress-scrutiny.html"
+        },
+        {
+          "title": "JBizNews: Nvidia −6,7 % zum Start, Chips steigen (9.11.)",
+          "url": "https://jbiznews.com/stocks-jump-at-the-open-as-bargain-hunters-return-nvidia-sinks-nearly-7-after-board-probe-of-ceo/"
+        },
         {
           "title": "NVIDIA: Statement from the Board (8.11.2026)",
           "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"

@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-09T15:15:00+01:00",
+  "asOf": "2026-11-09T16:10:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -69,6 +69,86 @@
     }
   },
   "posts": [
+    {
+      "id": "post-musk-2119799146211393960",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T15:27:55+01:00",
+      "summaryDe": "Musk teilt den @robotaxi-Post von 12:00: größeres Fahrgebiet in Austin ist live.",
+      "originalText": "RT @robotaxi: Bigger Austin service area now live",
+      "url": "https://x.com/elonmusk/status/2119799146211393960",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT Robotaxi Austin",
+          "url": "https://x.com/elonmusk/status/2119799146211393960"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119797712795390353",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T15:22:13+01:00",
+      "summaryDe": "Musk teilt eine Zahl von @cb_doge: Die Grok-App kam im Oktober laut Similarweb auf 93,4 Mio. monatlich aktive Nutzer und 12,7 Mio. Downloads, beides mehr als im Vormonat (Fan-Konto, keine Firmenzahl).",
+      "originalText": "RT @cb_doge: Another great month for the Grok app. 🚀 • 93,386,567 monthly active users • 12,731,752 downloads",
+      "url": "https://x.com/elonmusk/status/2119797712795390353",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT Grok-App Oktober",
+          "url": "https://x.com/elonmusk/status/2119797712795390353"
+        },
+        {
+          "title": "@cb_doge: Grok-App 93,4 Mio. MAU",
+          "url": "https://x.com/cb_doge/status/2119762211044544945"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119796701179613656",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T15:18:12+01:00",
+      "summaryDe": "Musk teilt ein Video: Brussels Airlines hat Starlink an Bord; Flug SN2257 nach Kopenhagen war heute der erste mit Starlink, die Pressemitteilung ging laut Beitrag aus 12.000 m Höhe raus.",
+      "originalText": "RT @cb_doge: BREAKING: Brussels Airlines just released a new footage of @Starlink being installed on its aircraft. Flight SN2257 to Copenhagen was its first flight with Starlink today.",
+      "url": "https://x.com/elonmusk/status/2119796701179613656",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT Brussels Airlines Starlink",
+          "url": "https://x.com/elonmusk/status/2119796701179613656"
+        },
+        {
+          "title": "@cb_doge: Brussels Airlines Starlink",
+          "url": "https://x.com/cb_doge/status/2119779356113580221"
+        }
+      ]
+    },
     {
       "id": "post-robotaxi-2119746828191027346",
       "account": "@robotaxi",
@@ -4587,5 +4667,5 @@
       ]
     }
   ],
-  "notes": "09.11. 11:30: 17 neue Musk-Posts seit 08:25 (fast nur Politik-Retweets; zum Cybercab-Umbau: „eine Fabrik für hohe Stückzahlen ist wahnsinnig schwer, Prototypen trivial“). Wichtig: @robotaxi meldet um 12:00 ein größeres Fahrgebiet in Austin. Keine neuen Posts von SpaceX, Tesla, Starlink, Rocket Lab, Neuralink, xAI, Boring. ESCAPADE: weder Blue- noch Gold-Burn offiziell bestätigt (Stand 12:05)."
+  "notes": "09.11. 16:10: seit 12:00 rund 9 neue Musk-Posts (15:18–15:35), meist Politik-Retweets (Krakau, Chappelle); firmenbezogen nur Retweets zu Grok-App-Nutzerzahlen (Similarweb, 93,4 Mio. MAU), Starlink bei Brussels Airlines und dem Robotaxi-Austin-Post. Keine neuen Posts von SpaceX, Tesla, Starlink, Rocket Lab, Neuralink, xAI, Boring. ESCAPADE weiter ohne offizielle Bestätigung (Stand 16:05)."
 }
