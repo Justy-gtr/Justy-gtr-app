@@ -1,4 +1,4 @@
-import { fourHourPoints, maxPoints, rangeMinutePoints, seriesFor } from "./logic.js";
+import { bucketMinutes, fourHourPoints, maxPoints, rangeMinutePoints, seriesFor, sessionMinutePack } from "./logic.js";
 
 /** From 7 separate cases a percentage is shown. Below that, the number would look sharper than the history is. */
 export const MIN_CASES = 7;
@@ -46,6 +46,13 @@ export function historyPoints(ticker, range) {
   if (range === "5 Min") return rangeMinutePoints(ticker, 5, false);
   if (range === "15 Min") return rangeMinutePoints(ticker, 15, false);
   if (range === "4 Std") return fourHourPoints(history);
+  if (range === "1T" || range === "3T") {
+    const pack = sessionMinutePack(ticker, range === "1T" ? 1 : 3);
+    if (pack) {
+      const bars = bucketMinutes(pack.history, 5);
+      if (bars.length >= 2) return bars;
+    }
+  }
   if (range === "5J") return usable(history["5Y"]);
   if (range === "Max") return maxPoints(history);
   const year = usable(history["1Y"]);
@@ -483,7 +490,9 @@ function chooseTouch(stats) {
 function detailFor(range, usedWindow, visibleLength, spec) {
   let where = "in der Tagesreihe";
   const shorter = usedWindow + 2 < visibleLength;
-  if (range === "1 Min" || range === "5 Min" || range === "15 Min") where = shorter ? "ähnliche Stücke in dieser Minutenreihe" : "in dieser Minutenreihe";
+  if (range === "1 Min" || range === "5 Min" || range === "15 Min" || range === "1T" || range === "3T") {
+    where = shorter ? "ähnliche Stücke in dieser Minutenreihe" : "in dieser Minutenreihe";
+  }
   else if (range === "4 Std") where = shorter ? "ähnliche Stücke in der 4-Stunden-Reihe" : "in der 4-Stunden-Reihe";
   else if (range === "1W") where = "ähnliche Wochen in der Tagesreihe";
   else if (range === "1M") where = "ähnliche Monate in der Tagesreihe";

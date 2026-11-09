@@ -166,7 +166,10 @@ test("Linie und Kerzen nutzen dieselbe Spannenleiste", () => {
   }));
   const ticker = { history: { intraday, "1M": daily, "1Y": daily, "4H": [] } };
   assert.equal(seriesFor(ticker, "15 Min").points.length, 2);
-  assert.equal(seriesFor(ticker, "1T").points.at(-1).eur, 19);
+  const day = seriesFor(ticker, "1T");
+  assert.equal(day.points.at(-1).eur, 129);
+  assert.ok(day.points.length > 1);
+  assert.equal(day.points.every((point) => point.t.startsWith("2026-11-06")), true);
   assert.equal(seriesFor(ticker, "3T").points.length, 3);
   assert.equal(seriesFor(ticker, "4 Std").points.length, 0);
   const long = {
@@ -298,7 +301,8 @@ test("Kurzer Montagmorgen behält 15-Minuten-Kerzen aus der 5-Minuten-Historie",
   assert.equal(quarter.candles.at(-1).close, 149);
   const span = Date.parse(quarter.candles.at(-1).t) - Date.parse(quarter.candles[0].t);
   assert.ok(span > 24 * 60 * 60 * 1000);
-  const label = scrubLabel(quarter.candles.at(-1), quarter.candles[0].close, span);
+  const label = scrubLabel(quarter.candles.at(-1), quarter.candles[0].close, quarter.candles);
+  assert.match(label, /\d{2}:\d{2}/);
   assert.match(label, new RegExp(scrubDelta(quarter.candles[0].close, quarter.candles.at(-1).close).text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   assert.equal(label.includes(scrubDelta(50, 149).text), false);
 

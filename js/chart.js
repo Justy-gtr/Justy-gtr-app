@@ -1,5 +1,5 @@
 import { chartAnalysis } from "./analysis.js";
-import { scrubDelta, seriesFor } from "./logic.js";
+import { formatScrubWhen, scrubDelta, seriesFor } from "./logic.js";
 
 function hexAlpha(hex, alpha) {
   const value = hex.replace("#", "");
@@ -79,23 +79,6 @@ function formatAxisDate(iso, spanMs) {
     return new Intl.DateTimeFormat("de-DE", { timeZone: zone, day: "numeric", month: "short" }).format(date);
   }
   return new Intl.DateTimeFormat("de-DE", { timeZone: zone, month: "short", year: "2-digit" }).format(date);
-}
-
-function formatScrubWhen(iso, spanMs) {
-  const date = new Date(iso);
-  if (Number.isNaN(date.getTime())) return String(iso).slice(0, 16);
-  const zone = "Europe/Berlin";
-  const day = new Intl.DateTimeFormat("de-DE", {
-    timeZone: zone,
-    day: "numeric",
-    month: "short",
-    year: "numeric"
-  }).format(date);
-  if (spanMs < 36 * 3600 * 1000) {
-    const time = new Intl.DateTimeFormat("de-DE", { timeZone: zone, hour: "2-digit", minute: "2-digit" }).format(date);
-    return `${day}, ${time}`;
-  }
-  return day;
 }
 
 function chartLayout(width, height, points, axes) {
@@ -266,7 +249,8 @@ function showScrub(canvas, coord, layout) {
   const scrub = canvas.parentElement?.querySelector(".scrub");
   if (!scrub || !coord) return;
   const phase = sessionScrub(coord.point);
-  const when = formatScrubWhen(coord.point.t, layout?.spanMs || 0);
+  const points = (layout?.coords || []).map((item) => item.point);
+  const when = formatScrubWhen(coord.point.t, points);
   const price = formatEuroAxis(Number(coord.point.eur));
   const change = scrubDelta(layout?.coords?.[0]?.point?.eur, coord.point.eur);
   scrub.hidden = false;

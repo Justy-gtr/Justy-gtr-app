@@ -77,6 +77,76 @@ export function scrubDelta(startEur, pointEur) {
   return { text: "0,00 %", direction: "flat" };
 }
 
+/** Gaps at least this long are a new day, not a finer bar. */
+const SUB_DAY_MS = 18 * 60 * 60 * 1000;
+
+function sortedTimes(points) {
+  const times = [];
+  for (const point of points || []) {
+    const time = Date.parse(point?.t);
+    if (Number.isFinite(time)) times.push(time);
+  }
+  times.sort((a, b) => a - b);
+  return times;
+}
+
+/** True when typical spacing is finer than one bar per day. A lone point is not enough. */
+export function seriesIsSubDaily(points) {
+  const times = sortedTimes(points);
+  if (times.length < 2) return false;
+  const gaps = [];
+  for (let index = 1; index < times.length; index += 1) {
+    const gap = times[index] - times[index - 1];
+    if (gap > 0) gaps.push(gap);
+  }
+  if (!gaps.length) return false;
+  gaps.sort((a, b) => a - b);
+  return gaps[Math.floor((gaps.length - 1) / 2)] < SUB_DAY_MS;
+}
+
+function berlinClockParts(date) {
+  const fmt = new Intl.DateTimeFormat("de-DE", {
+    timeZone: "Europe/Berlin",
+    weekday: "short",
+    day: "2-digit",
+    month: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23"
+  });
+  return Object.fromEntries(fmt.formatToParts(date).map((part) => [part.type, part.value]));
+}
+
+/**
+ * Scrub date in Europe/Berlin.
+ * Sub-daily series show weekday, date and 24h time (`Mo 09.11. · 15:45`).
+ * Daily series stay a date, with no clock.
+ * `endIso` appends a candle close, e.g. `15:45–16:00`.
+ */
+export function formatScrubWhen(iso, series, endIso = null) {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return String(iso || "").slice(0, 16);
+  if (!seriesIsSubDaily(series)) {
+    return date.toLocaleDateString("de-DE", {
+      timeZone: "Europe/Berlin",
+      day: "numeric",
+      month: "short",
+      year: "numeric"
+    });
+  }
+  const parts = berlinClockParts(date);
+  const weekday = String(parts.weekday || "").replace(/\.$/, "");
+  let time = `${parts.hour}:${parts.minute}`;
+  if (endIso) {
+    const end = new Date(endIso);
+    if (!Number.isNaN(end.getTime()) && end.getTime() > date.getTime()) {
+      const endParts = berlinClockParts(end);
+      time = `${time}–${endParts.hour}:${endParts.minute}`;
+    }
+  }
+  return `${weekday} ${parts.day}.${parts.month}. · ${time}`;
+}
+
 export function parseDay(value) {
   if (!value) return null;
   if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
@@ -646,6 +716,35 @@ export function minuteWindow(minutes) {
   return Number(minutes) >= 15 ? 3 : 2;
 }
 
+function storedFiveCount(ticker) {
+  return (ticker?.history?.["5m"] || []).filter((point) => point && point.eur != null && point.t).length;
+}
+
+/**
+ * Last N New York sessions of stored 5-minute bars merged with today's 1-minute prints.
+ * One session can be today's intraday alone. More than one session needs history["5m"].
+ * Returns null when that series is not there, so the caller can keep daily closes.
+ */
+export function sessionMinutePack(ticker, sessions) {
+  const count = Number(sessions);
+  if (!Number.isFinite(count) || count < 1) return null;
+  if (count > 1 && storedFiveCount(ticker) < 2) return null;
+  const { points, extended } = minuteSource(ticker);
+  if (points.length < 2) return null;
+  const visible = limitTradingSessions(points, count);
+  if (visible.length < 2) return null;
+  return {
+    points: visible,
+    history: extended ? points : visible,
+    extended
+  };
+}
+
+function fiveMinuteCloses(points) {
+  const bars = bucketMinutes(points, 5);
+  return bars.length >= 2 ? bars : null;
+}
+
 export function rangeMinutePoints(ticker, minutes, windowed = false) {
   const { points, extended } = minuteSource(ticker);
   const bars = bucketMinutes(points, minutes);
@@ -669,9 +768,11 @@ export function seriesFor(ticker, range, langfrist = false) {
   } else if (effective === "1 Min") {
     points = (ticker?.history?.intraday || []).filter((point) => point && point.eur != null);
   } else if (effective === "1T") {
-    points = recentDaily(ticker).slice(-1);
+    const pack = sessionMinutePack(ticker, 1);
+    points = (pack && fiveMinuteCloses(pack.points)) || recentDaily(ticker).slice(-1);
   } else if (effective === "3T") {
-    points = recentDaily(ticker).slice(-3);
+    const pack = sessionMinutePack(ticker, 3);
+    points = (pack && fiveMinuteCloses(pack.points)) || recentDaily(ticker).slice(-3);
   } else if (effective === "1W") {
     points = recentDaily(ticker).slice(-7);
   } else {

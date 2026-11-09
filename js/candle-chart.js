@@ -181,11 +181,11 @@ function paintLines(ctx, layout, lines) {
   ctx.setLineDash([]);
 }
 
-function showScrub(canvas, candle, firstClose, spanMs) {
+function showScrub(canvas, candle, firstClose, candles) {
   const scrub = canvas.parentElement?.querySelector(".scrub");
   if (!scrub) return;
   scrub.hidden = false;
-  scrub.textContent = scrubLabel(candle, firstClose, spanMs);
+  scrub.textContent = scrubLabel(candle, firstClose, candles);
 }
 
 function hideScrub(canvas) {
@@ -222,7 +222,7 @@ function bindScrub(canvas) {
       }
     });
     paintCandles(canvas, state, nearest);
-    showScrub(canvas, state.candles[nearest], state.candles[0].close, state.layout.spanMs);
+    showScrub(canvas, state.candles[nearest], state.candles[0].close, state.candles);
   };
   const end = () => {
     if (!active) return;
