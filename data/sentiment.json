@@ -1,38 +1,38 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T10:22:00+01:00",
+  "updatedAt": "2026-11-10T10:33:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 60,
       "postsCount": 20,
-      "reason": "Flug 15 am Freitag (13.11.) mit erstem Doppel-Fang ist Hauptthema; dazu +5,8 % am Montag und laut Reuters ein 24-Mrd.-$-Kraftwerk mit Rechenzentrum in Texas.",
+      "reason": "Flug 15 am Freitag (13.11.) mit erstem Doppel-Fang bleibt Hauptthema; dazu +5,8 % am Montag, Stifel zu KI-Rechenzentren und die fast fertige Starship-Rampe in Florida.",
       "sources": [
         {
-          "title": "Starship Flug 15: Doppel-Fang am 13.11. geplant",
-          "url": "https://x.com/dogeofficialceo/status/2120063925131628916"
+          "title": "Starship Flug 15: Doppel-Fang geplant, SPCX fast +6 %",
+          "url": "https://x.com/joehansen/status/2120086309934944535"
         },
         {
-          "title": "SPCX schließt Montag bei 142,07 $ (+5,8 %)",
-          "url": "https://x.com/kongbaest/status/2120067427929305340"
+          "title": "Stifel: SpaceX könnte KI-Rechenzentren übernehmen",
+          "url": "https://x.com/Linnazhan/status/2120074733630943335"
         },
         {
-          "title": "Reuters: SpaceX plant 24-Mrd.-$-Kraftwerk und Rechenzentrum in Texas",
-          "url": "https://x.com/ReutersCommods/status/2120074693071745517"
+          "title": "Starship-Rampe auf Pad 39A fast fertig",
+          "url": "https://x.com/DanielBechler2/status/2120071504222367898"
         }
       ],
-      "updatedAt": "2026-11-10T10:22:00+01:00"
+      "updatedAt": "2026-11-10T10:33:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 15,
       "postsCount": 20,
-      "reason": "Erholung um 5,5 % und zurück über der 50-Tage-Linie; Robotaxi und Solarprojekt in Texas sind Thema. Kritik am Cybertruck-Aus bis Mitte 2027.",
+      "reason": "Nach +5,5 % am Montag vorbörslich leicht im Minus; Robotaxi, FSD-Rabatt bei Lemonade und Solarprojekt in Texas sind Thema. Kritik am Cybertruck-Aus bis Mitte 2027.",
       "sources": [
         {
-          "title": "TSLA +5,5 %, 50-Tage-Linie zurückerobert",
-          "url": "https://x.com/FelixR229/status/2120067886962065465"
+          "title": "TSLA +5,5 %, vorbörslich -0,6 %, Lemonade-FSD-Rabatt",
+          "url": "https://x.com/TessSwiftAI/status/2120086341891313723"
         },
         {
           "title": "Cybertruck-Produktion endet Mitte 2027",
@@ -43,28 +43,28 @@
           "url": "https://x.com/TeslaOptimusHub/status/2120070890150904019"
         }
       ],
-      "updatedAt": "2026-11-10T10:22:00+01:00"
+      "updatedAt": "2026-11-10T10:33:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": -10,
+      "score": -5,
       "postsCount": 20,
-      "reason": "Rekordumsatz in Q3 (+73 %) und Auftragsbestand 3,6 Mrd. $ werden gelobt, doch höherer Verlust drückt den Kurs nachbörslich um 6–8 %. Barclays senkt Kursziel auf 82 $.",
+      "reason": "Rekordumsatz (+73 %), 3,6 Mrd. $ Auftragsbestand und teurere Neutron-Starts (70 Mio. $) werden gelobt, doch der höhere Verlust drückt den Kurs nachbörslich.",
       "sources": [
         {
-          "title": "Q3: Umsatz +73 %, Verlust größer als erwartet",
-          "url": "https://x.com/stock_duty/status/2120065649158308046"
+          "title": "Q3: Rekordumsatz, Kurs nachbörslich im Minus",
+          "url": "https://x.com/LukasKiemer/status/2120086723354939642"
         },
         {
           "title": "Rekord-Quartal, Neutron mit 16 Buchungen",
           "url": "https://x.com/Neil_Shares/status/2120065120978214946"
         },
         {
-          "title": "Analysten: KeyBanc 100 $, Barclays senkt auf 82 $",
-          "url": "https://x.com/sellsidesheriff/status/2120072102124367959"
+          "title": "Neutron-Preis steigt auf 70 Mio. $",
+          "url": "https://x.com/Bettybronxton/status/2120080128927572407"
         }
       ],
-      "updatedAt": "2026-11-10T10:22:00+01:00"
+      "updatedAt": "2026-11-10T10:33:00+01:00"
     }
   }
 }
