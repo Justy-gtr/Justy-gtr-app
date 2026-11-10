@@ -1,12 +1,12 @@
 {
   "example": false,
   "disclaimer": "Keine Anlageberatung. Hebel kann Totalverlust bedeuten. Vergangenheit, keine Vorhersage.",
-  "asOf": "2026-11-10T16:32:26+01:00",
+  "asOf": "2026-11-10T17:28:15+01:00",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1178,
+    "rate": 1.1151,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-10T16:31:33+01:00",
+    "asOf": "2026-11-10T17:27:34+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -62,7 +62,7 @@
         },
         "days": {
           "n": 529,
-          "wide": 27,
+          "wide": 28,
           "sharePct": 5,
           "showPct": true
         },
@@ -160,10 +160,10 @@
           "url": "https://support.traderepublic.com/de-de/87"
         }
       ],
-      "priceUsd": 171.7,
-      "priceEur": 153.6,
+      "priceUsd": 168.47,
+      "priceEur": 151.08,
       "previousCloseUsd": 178.64,
-      "changePct": -3.88,
+      "changePct": -5.69,
       "eurMethod": "usd_div_eurusd",
       "sparkline": [
         205.55,
@@ -189,9 +189,9 @@
         161.64,
         166.22,
         160.28,
-        153.6
+        151.08
       ],
-      "asOf": "2026-11-10T16:32:26+01:00",
+      "asOf": "2026-11-10T17:28:15+01:00",
       "marketSource": {
         "title": "Alpaca Markets IEX NVDA",
         "url": "https://data.alpaca.markets/v2/stocks/NVDA/snapshot?feed=iex"
@@ -345,10 +345,10 @@
           "url": "https://support.traderepublic.com/de-de/87"
         }
       ],
-      "priceUsd": 225.15,
-      "priceEur": 201.42,
+      "priceUsd": 220.43,
+      "priceEur": 197.68,
       "previousCloseUsd": 207.74,
-      "changePct": 8.38,
+      "changePct": 6.11,
       "eurMethod": "usd_div_eurusd",
       "sparkline": [
         186.72,
@@ -374,9 +374,9 @@
         189.91,
         191.37,
         186.05,
-        201.42
+        197.68
       ],
-      "asOf": "2026-11-10T16:32:22+01:00",
+      "asOf": "2026-11-10T17:27:39+01:00",
       "marketSource": {
         "title": "Alpaca Markets IEX TTWO",
         "url": "https://data.alpaca.markets/v2/stocks/TTWO/snapshot?feed=iex"
@@ -530,10 +530,10 @@
           "url": "https://support.traderepublic.com/de-de/87"
         }
       ],
-      "priceUsd": 156.79,
-      "priceEur": 140.26,
+      "priceUsd": 154.31,
+      "priceEur": 138.39,
       "previousCloseUsd": 154.58,
-      "changePct": 1.43,
+      "changePct": -0.17,
       "eurMethod": "usd_div_eurusd",
       "sparkline": [
         244.95,
@@ -559,9 +559,9 @@
         118.87,
         125.75,
         138.69,
-        140.26
+        138.39
       ],
-      "asOf": "2026-11-10T16:32:19+01:00",
+      "asOf": "2026-11-10T17:28:06+01:00",
       "marketSource": {
         "title": "Alpaca Markets IEX MRVL",
         "url": "https://data.alpaca.markets/v2/stocks/MRVL/snapshot?feed=iex"
@@ -583,7 +583,7 @@
       "2026-11-11",
       "2026-11-12"
     ],
-    "asOf": "2026-11-10T16:32:28+01:00",
+    "asOf": "2026-11-10T17:28:21+01:00",
     "sources": [
       {
         "title": "Nasdaq: Zahlentermine",
@@ -706,10 +706,10 @@
             "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
           }
         ],
-        "priceUsd": 7.52,
-        "priceEur": 6.73,
+        "priceUsd": 7.21,
+        "priceEur": 6.47,
         "previousCloseUsd": 6.64,
-        "changePct": 13.25,
+        "changePct": 8.58,
         "eurMethod": "usd_div_eurusd",
         "sparkline": [
           8.84,
@@ -735,9 +735,9 @@
           5.23,
           5.66,
           5.96,
-          6.73
+          6.47
         ],
-        "asOf": "2026-11-10T16:32:22+01:00",
+        "asOf": "2026-11-10T17:28:20+01:00",
         "marketSource": {
           "title": "Alpaca Markets IEX MARA",
           "url": "https://data.alpaca.markets/v2/stocks/MARA/snapshot?feed=iex"
@@ -855,10 +855,10 @@
             "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
           }
         ],
-        "priceUsd": 19.92,
-        "priceEur": 17.82,
+        "priceUsd": 19.04,
+        "priceEur": 17.08,
         "previousCloseUsd": 22.94,
-        "changePct": -13.16,
+        "changePct": -17,
         "eurMethod": "usd_div_eurusd",
         "sparkline": [
           25.02,
@@ -884,9 +884,9 @@
           21.42,
           23.16,
           20.58,
-          17.82
+          17.08
         ],
-        "asOf": "2026-11-10T16:32:28+01:00",
+        "asOf": "2026-11-10T17:28:21+01:00",
         "marketSource": {
           "title": "Alpaca Markets IEX HIMS",
           "url": "https://data.alpaca.markets/v2/stocks/HIMS/snapshot?feed=iex"
@@ -1004,10 +1004,10 @@
             "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
           }
         ],
-        "priceUsd": 267.67,
-        "priceEur": 239.46,
+        "priceUsd": 266.45,
+        "priceEur": 238.95,
         "previousCloseUsd": 276.21,
-        "changePct": -3.09,
+        "changePct": -3.53,
         "eurMethod": "usd_div_eurusd",
         "sparkline": [
           254.23,
@@ -1033,9 +1033,9 @@
           213.31,
           222.61,
           247.67,
-          239.46
+          238.95
         ],
-        "asOf": "2026-11-10T16:32:08+01:00",
+        "asOf": "2026-11-10T17:27:33+01:00",
         "marketSource": {
           "title": "Alpaca Markets IEX CEG",
           "url": "https://data.alpaca.markets/v2/stocks/CEG/snapshot?feed=iex"
