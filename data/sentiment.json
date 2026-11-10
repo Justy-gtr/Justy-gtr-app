@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T12:18:00+01:00",
+  "updatedAt": "2026-11-10T13:34:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,28 +22,28 @@
           "url": "https://x.com/DanielBechler2/status/2120071504222367898"
         }
       ],
-      "updatedAt": "2026-11-10T12:18:00+01:00"
+      "updatedAt": "2026-11-10T13:34:00+01:00"
     },
     "TSLA": {
-      "mood": "gut",
-      "score": 10,
+      "mood": "gemischt",
+      "score": 0,
       "postsCount": 20,
-      "reason": "Robotaxi startet in San Antonio, der 8. US-Stadt, nach +5,5 % am Montag. Dämpfer: Einzelhandelsverkauf in China im Oktober so niedrig wie seit 4 Jahren nicht.",
+      "reason": "Robotaxi in San Antonio wird gefeiert. Dagegen: Jefferies senkt Kursziel auf 375 $, schwache China-Verkäufe und Streit mit Texas' neuer Gouverneurin um Steuervorteile.",
       "sources": [
+        {
+          "title": "Jefferies senkt Kursziel auf 375 $",
+          "url": "https://x.com/TeslaDailyPulse/status/2120129819073491330"
+        },
         {
           "title": "Robotaxi jetzt auch in San Antonio",
           "url": "https://x.com/wealthleee/status/2120101661972508995"
         },
         {
-          "title": "China: nur 8.817 Tesla im Oktober verkauft",
-          "url": "https://x.com/CNEVhome/status/2120100654366838897"
-        },
-        {
-          "title": "Cyberbeast-Lieferung erst März bis Juni 2027",
-          "url": "https://x.com/x_invest1/status/2120099302139633997"
+          "title": "Texas: Streit um Steuervorteile und Rechenzentren",
+          "url": "https://x.com/BreakoutFlow/status/2120130635679318245"
         }
       ],
-      "updatedAt": "2026-11-10T12:18:00+01:00"
+      "updatedAt": "2026-11-10T13:34:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/pipmoment/status/2120103153777418700"
         }
       ],
-      "updatedAt": "2026-11-10T12:18:00+01:00"
+      "updatedAt": "2026-11-10T13:34:00+01:00"
     }
   }
 }
