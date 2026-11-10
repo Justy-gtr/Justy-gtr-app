@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T15:35:00+01:00",
+  "updatedAt": "2026-11-10T15:40:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,34 +22,34 @@
           "url": "https://x.com/ATAFIN/status/2120157972391133319"
         }
       ],
-      "updatedAt": "2026-11-10T15:35:00+01:00"
+      "updatedAt": "2026-11-10T15:40:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 0,
       "postsCount": 14,
-      "reason": "Heiße US-Inflation drückt Tesla vorbörslich um rund 7 $. Dagegen Freude über die neue Solarfabrik bei Houston, ARKs Kursziel 4.400 $ und Tesla Assisted Driving in Europa.",
+      "reason": "Tesla startet nach der heißen US-Inflation rund 1,6 % im Minus und prallt an 378 $ ab. Dagegen Freude über die Solarfabrik bei Houston und Musks geplante China-Reise mit Trump.",
       "sources": [
         {
-          "title": "CPI heiß, Tesla vorbörslich -7 $",
-          "url": "https://x.com/DRJBori63/status/2120148561853591904"
+          "title": "Tesla eröffnet -1,57 %",
+          "url": "https://x.com/stocksnipa/status/2120163045200544088"
+        },
+        {
+          "title": "Abprall an 378 $, Verkäufer im Vorteil",
+          "url": "https://x.com/Options_Master1/status/2120164008124911880"
         },
         {
           "title": "10-Mrd.-$-Solarfabrik bei Houston",
           "url": "https://x.com/NestorLRamos/status/2120149674241703941"
-        },
-        {
-          "title": "Tesla Assisted Driving in Europa",
-          "url": "https://x.com/sebaonwheels/status/2120150735262200038"
         }
       ],
-      "updatedAt": "2026-11-10T15:35:00+01:00"
+      "updatedAt": "2026-11-10T15:40:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": 0,
       "postsCount": 15,
-      "reason": "Rekordumsatz, 3,6 Mrd. $ Auftragsbestand und ESCAPADE auf Marskurs. Aber Neutron-Sorgen, Piper senkt Kursziel auf 58 $ und vorbörslich rund -9 %.",
+      "reason": "Rekordumsatz, Auftragsbestand +52 % auf 3,6 Mrd. $ und höhere Neutron-Preise. Aber Neutron erst 2027, Piper senkt Kursziel auf 58 $ und die Aktie liegt rund 9 % im Minus.",
       "sources": [
         {
           "title": "Piper Sandler senkt Kursziel auf 58 $",
@@ -60,11 +60,11 @@
           "url": "https://x.com/Bearlovesbull/status/2120153319385526466"
         },
         {
-          "title": "Rekordumsatz, aber Neutron-Unsicherheit",
-          "url": "https://x.com/Alpha_Bronze/status/2120154518176280862"
+          "title": "Auftragsbestand +52 % in einem Quartal",
+          "url": "https://x.com/xandiito/status/2120162651674480866"
         }
       ],
-      "updatedAt": "2026-11-10T15:35:00+01:00"
+      "updatedAt": "2026-11-10T15:40:00+01:00"
     }
   }
 }
