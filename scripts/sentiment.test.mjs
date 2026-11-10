@@ -156,6 +156,16 @@ test("Kartenblatt nennt Satz, Zahl, Beiträge und Quelle, ohne Rat", () => {
   assert.match(empty, /is-leer/);
   assert.equal(empty.includes("is-gut"), false);
   assert.equal(BANNED.test(empty), false);
+  const missing = renderMoodLamp({ symbols: { SPCX: freshEntry() } }, "MRVL", now, "analyse");
+  assert.match(missing, /is-leer/);
+  assert.match(missing, /is-empty/);
+  assert.match(missing, /#6b7280/);
+  assert.match(missing, /noch keine Daten/);
+  assert.equal(missing.includes("is-gut"), false);
+  assert.equal(BANNED.test(missing), false);
+  assert.equal(renderMoodLamp(null, "MRVL", now, "analyse").includes("is-leer"), true);
+  const file = JSON.parse(fs.readFileSync("data/sentiment.json", "utf8"));
+  assert.equal(file.symbols.MRVL, undefined);
   const hostile = renderMoodLamp({
     symbols: {
       SPCX: freshEntry({ sources: [{ title: "böse", url: "javascript:alert(1)" }] })
@@ -201,7 +211,7 @@ test("Charts und Analyse setzen die Lampe links über die Fläche, die Lesezeile
   assert.match(css, /prefers-reduced-motion:\s*no-preference[\s\S]*mood-pulse/);
   assert.match(css, /prefers-reduced-motion:\s*reduce[\s\S]*animation:\s*none !important/);
   const sw = fs.readFileSync("sw.js", "utf8");
-  assert.match(sw, /jgtr-v35/);
+  assert.match(sw, /jgtr-v36/);
   assert.match(sw, /data\/sentiment\.json/);
   assert.match(sw, /js\/sentiment\.js/);
   assert.match(sw, /pathname\.includes\("\/data\/"\)/);

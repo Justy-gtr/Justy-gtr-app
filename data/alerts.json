@@ -247,18 +247,14 @@
       "id": "SPCX-2026-11-10",
       "symbol": "SPCX",
       "name": "SpaceX",
-      "changePct": 5.93,
-      "priceEur": 126.52,
+      "changePct": 5.81,
+      "priceEur": 126.39,
       "thresholdPct": 2,
       "direction": "up",
       "timestamp": "2026-11-09T23:16:20.872Z",
       "notified": false,
       "example": false,
       "sources": [
-        {
-          "title": "Alpaca Markets IEX SPCX",
-          "url": "https://data.alpaca.markets/v2/stocks/SPCX/snapshot?feed=iex"
-        },
         {
           "title": "Yahoo Finance SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX"
@@ -282,10 +278,6 @@
       "example": false,
       "sources": [
         {
-          "title": "Alpaca Markets IEX TSLA",
-          "url": "https://data.alpaca.markets/v2/stocks/TSLA/snapshot?feed=iex"
-        },
-        {
           "title": "Yahoo Finance TL0.DE",
           "url": "https://finance.yahoo.com/quote/TL0.DE"
         },
@@ -300,32 +292,28 @@
       ]
     },
     {
-      "id": "RKLB-2026-11-10",
-      "symbol": "RKLB",
-      "name": "Rocket Lab",
-      "changePct": 22.01,
-      "priceEur": 51,
+      "id": "MRVL-2026-11-10",
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "changePct": 7.71,
+      "priceEur": 136.84,
       "thresholdPct": 2,
       "direction": "up",
-      "timestamp": "2026-11-09T23:16:20.872Z",
+      "timestamp": "2026-11-10T07:46:24.684Z",
       "notified": false,
       "example": false,
       "sources": [
         {
-          "title": "Alpaca Markets IEX RKLB",
-          "url": "https://data.alpaca.markets/v2/stocks/RKLB/snapshot?feed=iex"
-        },
-        {
-          "title": "Yahoo Finance 6RJ0.F",
-          "url": "https://finance.yahoo.com/quote/6RJ0.F"
+          "title": "Yahoo Finance 9MW.DE",
+          "url": "https://finance.yahoo.com/quote/9MW.DE"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
           "url": "https://finance.yahoo.com/quote/EURUSD=X"
         },
         {
-          "title": "Yahoo Finance RKLB",
-          "url": "https://finance.yahoo.com/quote/RKLB"
+          "title": "Yahoo Finance MRVL",
+          "url": "https://finance.yahoo.com/quote/MRVL"
         }
       ]
     }

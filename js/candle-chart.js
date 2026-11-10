@@ -11,7 +11,49 @@ function formatEuroAxis(value) {
   return `${euroAxis.format(value)} €`;
 }
 
-function layoutOf(width, height, candles, lines) {
+/** Empty strip between the newest candle and the price gutter. */
+export const GUTTER_GAP = 10;
+/** Inset of a price tag from the canvas edge. */
+export const GUTTER_EDGE = 6;
+/** Horizontal padding inside a price pill, added to the measured text. */
+export const TAG_HPAD = 10;
+
+/** Width of the price gutter so the widest tag fits without entering the plot. */
+export function gutterWidth(textWidths, { extra = TAG_HPAD + GUTTER_EDGE, min = 78 } = {}) {
+  const widest = (textWidths || []).reduce((max, value) => Math.max(max, Number(value) || 0), 0);
+  return Math.ceil(Math.max(min, widest + extra));
+}
+
+/** Left edge of the price gutter. Candles stay to the left of this. */
+export function gutterStart(layout) {
+  return (layout?.padL || 0) + (layout?.plotW || 0);
+}
+
+/**
+ * Pill rectangle inside the gutter. `gutterRight` is the right inset of the canvas.
+ * The box never starts left of the gutter.
+ */
+export function tagBox(gutterLeft, gutterRight, textWidth, pillPad = TAG_HPAD) {
+  const span = Math.max(0, gutterRight - gutterLeft);
+  const width = Math.min(Math.ceil(Number(textWidth) || 0) + pillPad, span);
+  const left = Math.max(gutterLeft, gutterRight - width);
+  return { left, right: left + width, width };
+}
+
+export function candleBodyWidth(slot) {
+  return Math.max(slot < 4.8 ? 2 : 3, Math.min(14, slot * 0.72));
+}
+
+/** Center of a candle. The scale stops `gap` px before the gutter. */
+export function candleX(layout, index) {
+  const count = Math.max(1, layout?.count || 1);
+  const inner = Math.max(1, (layout?.plotW || 1) - (layout?.gap || 0));
+  const slot = inner / count;
+  const clamped = Math.max(0, Math.min(count - 1, index));
+  return (layout?.padL || 0) + (clamped + 0.5) * slot;
+}
+
+function layoutOf(width, height, candles, lines, padR = 78) {
   let min = Math.min(...candles.map((candle) => candle.low));
   let max = Math.max(...candles.map((candle) => candle.high));
   for (const line of lines || []) {
@@ -28,10 +70,10 @@ function layoutOf(width, height, candles, lines) {
   min -= pad;
   max += pad;
   const padL = 8;
-  const padR = 62;
+  const right = Math.max(78, padR);
   const padT = 16;
   const padB = 28;
-  const plotW = Math.max(1, width - padL - padR);
+  const plotW = Math.max(1, width - padL - right);
   const plotH = Math.max(1, height - padT - padB);
   const first = new Date(candles[0].t).getTime();
   const last = new Date(candles.at(-1).t).getTime();
@@ -39,11 +81,12 @@ function layoutOf(width, height, candles, lines) {
     min,
     max,
     padL,
-    padR,
+    padR: right,
     padT,
     padB,
     plotW,
     plotH,
+    gap: GUTTER_GAP,
     count: candles.length,
     spanMs: Math.abs(last - first) || 0
   };
@@ -55,9 +98,7 @@ function yOf(layout, price) {
 }
 
 function xOf(layout, index) {
-  const slot = layout.plotW / layout.count;
-  const clamped = Math.max(0, Math.min(layout.count - 1, index));
-  return layout.padL + (clamped + 0.5) * slot;
+  return candleX(layout, index);
 }
 
 /** Left end of a line name. A trend that starts late still stays off the newest candles. */
@@ -120,14 +161,36 @@ function roundRect(ctx, x, y, width, height, radius) {
   ctx.closePath();
 }
 
+function priceGutter(ctx, candles, lines) {
+  ctx.font = "700 11px -apple-system, BlinkMacSystemFont, sans-serif";
+  const texts = [];
+  const last = candles.at(-1);
+  if (last && Number.isFinite(Number(last.close))) texts.push(formatEuroAxis(last.close));
+  let low = Math.min(...candles.map((candle) => candle.low));
+  let high = Math.max(...candles.map((candle) => candle.high));
+  for (const line of lines || []) {
+    if (line?.eur0 != null) {
+      low = Math.min(low, line.eur0);
+      high = Math.max(high, line.eur0);
+    }
+    if (line?.kind !== "support" && line?.kind !== "resistance") continue;
+    const price = levelPriceTag(line.eur ?? line.eur0);
+    if (price) texts.push(price);
+  }
+  texts.push(formatEuroAxis(low), formatEuroAxis(high));
+  return gutterWidth(texts.filter(Boolean).map((text) => ctx.measureText(text).width));
+}
+
 function paintCandles(canvas, state, hover) {
-  const { width, height, candles, lines, layout } = state;
+  const { width, height, candles, lines } = state;
   const ctx = canvas.getContext("2d");
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
   canvas.width = Math.round(width * dpr);
   canvas.height = Math.round(height * dpr);
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ctx.clearRect(0, 0, width, height);
+  const layout = layoutOf(width, height, candles, lines, priceGutter(ctx, candles, lines));
+  state.layout = layout;
   ctx.font = "11px -apple-system, BlinkMacSystemFont, sans-serif";
   ctx.fillStyle = "#9aa3b5";
   ctx.strokeStyle = "rgba(255,255,255,.16)";
@@ -140,7 +203,7 @@ function paintCandles(canvas, state, hover) {
     ctx.setLineDash([2, 4]);
     ctx.beginPath();
     ctx.moveTo(layout.padL, y);
-    ctx.lineTo(width - layout.padR + 4, y);
+    ctx.lineTo(gutterStart(layout) - layout.gap, y);
     ctx.stroke();
     ctx.setLineDash([]);
     gridLabels.push({ y, text: formatEuroAxis(value) });
@@ -152,13 +215,14 @@ function paintCandles(canvas, state, hover) {
     if (index === 0) ctx.textAlign = "left";
     else if (index === marks.length - 1) ctx.textAlign = "right";
     else ctx.textAlign = "center";
-    const labelX = index === marks.length - 1 ? Math.min(x, width - layout.padR) : x;
+    const labelX = index === marks.length - 1 ? Math.min(x, gutterStart(layout) - layout.gap) : x;
     ctx.fillText(mark.text, labelX, height - 4);
   });
-  const slot = layout.plotW / candles.length;
-  const bodyW = Math.max(slot < 4.8 ? 2 : 3, Math.min(14, slot * 0.72));
+  const slot = (layout.plotW - layout.gap) / candles.length;
+  const bodyW = candleBodyWidth(slot);
+  const candleLimit = gutterStart(layout) - layout.gap;
   candles.forEach((candle, index) => {
-    const x = xOf(layout, index);
+    const x = Math.min(xOf(layout, index), candleLimit - bodyW / 2);
     const color = candleColor(candle);
     ctx.strokeStyle = color;
     ctx.fillStyle = color;
@@ -170,7 +234,9 @@ function paintCandles(canvas, state, hover) {
     const top = yOf(layout, Math.max(candle.open, candle.close));
     const bottom = yOf(layout, Math.min(candle.open, candle.close));
     const body = Math.max(1, bottom - top);
-    ctx.fillRect(x - bodyW / 2, top, bodyW, body);
+    const bodyLeft = Math.min(x - bodyW / 2, candleLimit - 1);
+    const bodyRight = Math.min(x + bodyW / 2, candleLimit);
+    ctx.fillRect(bodyLeft, top, Math.max(1, bodyRight - bodyLeft), body);
   });
   const captions = paintLines(ctx, layout, lines, candles, gridLabels, width);
   paintTouchMarks(ctx, layout, lines, captions);
@@ -197,20 +263,19 @@ function paintCandles(canvas, state, hover) {
   }
 }
 
-function paintPriceTag(ctx, right, y, text, color) {
+function paintPriceTag(ctx, gutterLeft, gutterRight, y, text, color) {
   ctx.font = "700 11px -apple-system, BlinkMacSystemFont, sans-serif";
-  const width = Math.ceil(ctx.measureText(text).width) + 10;
+  const box = tagBox(gutterLeft, gutterRight, ctx.measureText(text).width);
   const height = 16;
-  const x = right - width;
   const top = y - height / 2;
-  roundRect(ctx, x, top, width, height, 5);
+  roundRect(ctx, box.left, top, box.width, height, 5);
   ctx.fillStyle = color;
   ctx.fill();
   ctx.fillStyle = "#141820";
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
-  ctx.fillText(text, x + width / 2, y + 0.5);
-  return { left: x, right, top, bottom: top + height, y };
+  ctx.fillText(text, box.left + box.width / 2, y + 0.5);
+  return { left: box.left, right: box.right, top, bottom: top + height, y };
 }
 
 function paintLineName(ctx, x, y, text, color) {
@@ -252,7 +317,7 @@ function paintLines(ctx, layout, lines, candles, gridLabels, width) {
     ctx.strokeStyle = style.color;
     if (line.kind === "support" || line.kind === "resistance") {
       ctx.moveTo(layout.padL, y0);
-      ctx.lineTo(layout.padL + layout.plotW, y0);
+      ctx.lineTo(gutterStart(layout) - layout.gap, y0);
     } else {
       ctx.moveTo(xOf(layout, line.i0 || 0), y0);
       ctx.lineTo(xOf(layout, line.i1 ?? layout.count - 1), y1);
@@ -276,13 +341,24 @@ function paintLines(ctx, layout, lines, candles, gridLabels, width) {
       if (price) pendingTags.push({ y: y0, text: price, color: style.color, kind: line.kind });
     }
   }
+  const lastCandle = candles?.at?.(-1);
+  if (lastCandle && Number.isFinite(Number(lastCandle.close))) {
+    pendingTags.push({
+      y: yOf(layout, lastCandle.close),
+      text: formatEuroAxis(lastCandle.close),
+      color: candleColor(lastCandle),
+      kind: "last"
+    });
+  }
   ctx.setLineDash([]);
 
   const bounds = { min: layout.padT + 9, max: layout.padT + layout.plotH - 9 };
   const tags = settlePriceTags(pendingTags, bounds);
+  const gutterLeft = gutterStart(layout);
+  const gutterRight = width - GUTTER_EDGE;
   const drawnTags = [];
   for (const tag of tags) {
-    drawnTags.push(paintPriceTag(ctx, width - 4, tag.y, tag.text, tag.color));
+    drawnTags.push(paintPriceTag(ctx, gutterLeft, gutterRight, tag.y, tag.text, tag.color));
   }
 
   ctx.font = "11px -apple-system, BlinkMacSystemFont, sans-serif";
@@ -290,7 +366,9 @@ function paintLines(ctx, layout, lines, candles, gridLabels, width) {
   ctx.textAlign = "right";
   ctx.textBaseline = "middle";
   for (const label of visibleGridLabels(gridLabels, tags, 14)) {
-    ctx.fillText(label.text, width - 4, label.y);
+    const labelWidth = ctx.measureText(label.text).width;
+    const box = tagBox(gutterLeft, gutterRight, labelWidth, 0);
+    ctx.fillText(label.text, box.right, label.y);
   }
 
   ctx.font = "600 10px -apple-system, BlinkMacSystemFont, sans-serif";
@@ -511,7 +589,8 @@ export function drawCandles(data, ui) {
     }
     const width = canvas.clientWidth || 320;
     const height = canvas.clientHeight || 260;
-    const state = { width, height, candles, lines: result.lines || [], layout: layoutOf(width, height, candles, result.lines) };
+    const lines = result.lines || [];
+    const state = { width, height, candles, lines, layout: null };
     canvas._candleState = state;
     paintCandles(canvas, state, null);
     bindScrub(canvas);

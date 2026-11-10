@@ -1,3 +1,4 @@
+import { GUTTER_EDGE, GUTTER_GAP, gutterStart, gutterWidth, tagBox } from "./candle-chart.js";
 import { chartAxisLabels, compactNumber, formatScrubWhen, guideLabelsToDraw, guideStyle, instrumentAxisLabels, instrumentSeries, priceMove, scrubDelta, seriesAccent, TILE_COLORS, weekCurve, weekdayShort } from "./logic.js";
 
 function hexAlpha(hex, alpha) {
@@ -74,25 +75,27 @@ function formatEuroAxis(value) {
   return `${euroAxis.format(value)} €`;
 }
 
-function chartLayout(width, height, points, axes) {
+function chartLayout(width, height, points, axes, padR = 78) {
   const padL = 8;
-  const padR = axes ? 62 : 8;
+  const right = axes ? Math.max(78, padR) : 8;
+  const gap = axes ? GUTTER_GAP : 0;
   const padT = 16;
   const padB = axes ? 28 : 16;
   const values = points.map((point) => Number(point.eur));
   const min = Math.min(...values);
   const max = Math.max(...values);
   const span = max - min || 1;
-  const plotW = Math.max(1, width - padL - padR);
+  const plotW = Math.max(1, width - padL - right);
   const plotH = Math.max(1, height - padT - padB);
+  const inner = Math.max(1, plotW - gap);
   const coords = points.map((point, index) => ({
-    x: padL + (points.length === 1 ? plotW / 2 : (index / (points.length - 1)) * plotW),
+    x: padL + (points.length === 1 ? inner / 2 : (index / (points.length - 1)) * inner),
     y: padT + (1 - (Number(point.eur) - min) / span) * plotH,
     point
   }));
   const first = new Date(points[0].t).getTime();
   const last = new Date(points.at(-1).t).getTime();
-  return { padL, padR, padT, padB, min, max, plotW, plotH, coords, spanMs: Math.abs(last - first) || 0 };
+  return { padL, padR: right, padT, padB, min, max, plotW, plotH, gap, coords, spanMs: Math.abs(last - first) || 0 };
 }
 
 function paintInstrument(canvas, state, hover) {
@@ -111,7 +114,7 @@ function paintInstrument(canvas, state, hover) {
   ctx.setLineDash([1.5, 3]);
   ctx.beginPath();
   ctx.moveTo(padL, baseline);
-  ctx.lineTo(padL + plotW, baseline);
+  ctx.lineTo(coords.at(-1).x, baseline);
   ctx.stroke();
   ctx.restore();
 
@@ -129,10 +132,14 @@ function paintInstrument(canvas, state, hover) {
   ctx.textAlign = "right";
   ctx.textBaseline = "middle";
   const ticks = 4;
+  const gutterLeft = gutterStart(layout);
+  const gutterRight = width - GUTTER_EDGE;
   for (let index = 0; index < ticks; index += 1) {
     const value = max - ((max - min) * index) / (ticks - 1);
     const y = padT + (plotH * index) / (ticks - 1);
-    ctx.fillText(formatEuroAxis(value), width - 2, y);
+    const text = formatEuroAxis(value);
+    const box = tagBox(gutterLeft, gutterRight, ctx.measureText(text).width, 0);
+    ctx.fillText(text, box.right, y);
   }
   const marks = instrumentAxisLabels(coords.map((coord) => coord.point));
   ctx.textBaseline = "bottom";
@@ -143,7 +150,7 @@ function paintInstrument(canvas, state, hover) {
     if (index === 0) ctx.textAlign = "left";
     else if (index === marks.length - 1) ctx.textAlign = "right";
     else ctx.textAlign = "center";
-    const x = index === marks.length - 1 ? Math.min(coord.x, padL + plotW) : Math.max(coord.x, padL);
+    const x = index === marks.length - 1 ? Math.min(coord.x, gutterLeft - (layout.gap || 0)) : Math.max(coord.x, padL);
     ctx.fillText(mark.text, x, height - 2);
   });
 
@@ -185,12 +192,14 @@ function paintChart(canvas, state, hover) {
       ctx.setLineDash([2, 4]);
       ctx.beginPath();
       ctx.moveTo(padL, y);
-      ctx.lineTo(width - layout.padR + 4, y);
+      ctx.lineTo(gutterStart(layout), y);
       ctx.stroke();
       ctx.setLineDash([]);
       ctx.textAlign = "right";
       ctx.textBaseline = "middle";
-      ctx.fillText(formatEuroAxis(value), width - 4, y);
+      const text = formatEuroAxis(value);
+      const box = tagBox(gutterStart(layout), width - GUTTER_EDGE, ctx.measureText(text).width, 0);
+      ctx.fillText(text, box.right, y);
     }
     const marks = chartAxisLabels(coords.map((coord) => coord.point));
     marks.forEach((mark, index) => {
@@ -251,7 +260,6 @@ function guideY(layout, price) {
 function paintGuides(ctx, layout, lines) {
   if (!lines?.length || !layout?.coords?.length) return;
   const { coords } = layout;
-  const plotRight = layout.padL + layout.plotW;
   const pending = [];
   const priceY = coords.at(-1).y;
   ctx.lineWidth = 1;
@@ -272,27 +280,14 @@ function paintGuides(ctx, layout, lines) {
       ctx.lineTo(coords.at(-1).x, y1);
     } else {
       ctx.moveTo(layout.padL, y0);
-      ctx.lineTo(plotRight, y0);
+      ctx.lineTo(coords.at(-1).x, y0);
     }
     ctx.stroke();
     if (line.kind !== "pattern") pending.push({ y: endY, text: style.label, color: style.color });
   }
   ctx.setLineDash([]);
-  const width = layout.padL + layout.plotW + layout.padR;
-  const hasAxis = layout.padR > 20;
-  let right = plotRight - 2;
-  if (hasAxis) {
-    ctx.font = "11px -apple-system, BlinkMacSystemFont, sans-serif";
-    let axisWidth = 0;
-    const ticks = 4;
-    for (let index = 0; index < ticks; index += 1) {
-      const value = layout.max - ((layout.max - layout.min) * index) / (ticks - 1);
-      axisWidth = Math.max(axisWidth, ctx.measureText(formatEuroAxis(value)).width);
-    }
-    right = Math.min(plotRight - 4, width - 4 - axisWidth - 6);
-  }
   ctx.font = "10px -apple-system, BlinkMacSystemFont, sans-serif";
-  ctx.textAlign = "right";
+  ctx.textAlign = "left";
   ctx.textBaseline = "middle";
   const placed = guideLabelsToDraw(pending, priceY, 16, {
     min: layout.padT + 7,
@@ -300,7 +295,7 @@ function paintGuides(ctx, layout, lines) {
   });
   for (const label of placed) {
     ctx.fillStyle = label.color;
-    ctx.fillText(label.text, right, label.y);
+    ctx.fillText(label.text, layout.padL + 4, label.y);
   }
 }
 
@@ -445,7 +440,20 @@ export function drawLineChart(canvas, points, { color = "#e4b15a", axes = false,
     canvas._chartState = null;
     return;
   }
-  const layout = chartLayout(width, height, usable, axes || instrument);
+  let padR = 78;
+  if (axes || instrument) {
+    ctx.font = instrument ? "10px -apple-system, BlinkMacSystemFont, sans-serif" : "11px -apple-system, BlinkMacSystemFont, sans-serif";
+    const values = usable.map((point) => Number(point.eur));
+    const lo = Math.min(...values);
+    const hi = Math.max(...values);
+    const widths = [];
+    for (let index = 0; index < 4; index += 1) {
+      const value = hi - ((hi - lo) * index) / 3;
+      widths.push(ctx.measureText(formatEuroAxis(value)).width);
+    }
+    padR = gutterWidth(widths, { extra: GUTTER_EDGE + 4, min: 78 });
+  }
+  const layout = chartLayout(width, height, usable, axes || instrument, padR);
   const state = { color, width, height, layout, axes: axes || instrument, lines: instrument ? [] : (lines || []), instrument };
   canvas._chartState = state;
   if (instrument) paintInstrument(canvas, state, null);
