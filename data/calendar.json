@@ -15,9 +15,17 @@
       ],
       "probabilityPct": 65,
       "impact": "hoch",
-      "reasoning": "Stand Mo 05:10: SpaceX-Missionsseite unverändert, FAA-Lizenz weiter nicht gelistet. Flight 15 zielt auf frühestens Freitag 13.11., vorbehaltlich Zulassung; Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), 75 Minuten. Blog „Returning Starship to the Launch Site“ beschreibt Ship-Catch (Orbit ~21 h, Deorbit, Bellyflop, Chopsticks Pad 2) plus fünf Contingency-Splashdowns. FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin. Musk „more likely than not“ für Ship-Catch. 65 % unverändert: offizielle Zielangabe + Catch-Plan; Lizenz und Fang-Risiko bleiben. Impact hoch für SPCX.",
+      "reasoning": "Stand Di 05:20: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt (SpaceWireDaily, SpaceX-Missionsseite). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX.",
       "example": false,
       "sources": [
+        {
+          "title": "Space.com: Flight 15 am 13. November mit Doppel-Fang (9.11.)",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-launch-epic-double-catch-starship-flight-15-test-mission-on-nov-13"
+        },
+        {
+          "title": "SpaceWireDaily: Flight 15 wartet auf die FAA",
+          "url": "https://spacewiredaily.com/article/2026-11-06-starship-flight-15-a-dual-catch-attempt-"
+        },
         {
           "title": "SpaceX: Starship Flight 15 (Missionsseite)",
           "url": "https://www.spacex.com/launches/starship-flight-15"
@@ -440,12 +448,24 @@
       ],
       "probabilityPct": 100,
       "impact": "hoch",
-      "reasoning": "Veröffentlicht am Mo 9.11. um 22:05 (Call 23:00). Umsatz Rekord 267,8 Mio. $ (+73 % zum Vorjahr), über der eigenen Spanne 250–265 Mio. $ und dem Konsens von etwa 257 Mio. $. Verlust je Aktie −0,12 $ statt erwarteter −0,07 $; darin stecken ein Einmalverlust von 27,3 Mio. $ aus der Ablösung von Wandelanleihen und 21,3 Mio. $ Transaktionskosten (Iridium). Bereinigtes EBITDA −18,0 Mio. $ (Prognose −17 bis −23), GAAP-Bruttomarge rund 33,6 % (Prognose 29–31 %), erstmals positiver operativer Cashflow (7,2 Mio. $). Auftragsbestand rund 3,57 Mrd. $ (+52 % seit Ende Q2), davon fast 1 Mrd. $ neue Startaufträge; Neutron hat jetzt 16 Missionen im Bestand, Grundpreis teils 70 Mio. $, Erststart weiter frühestens 2027. Q4-Ausblick: Umsatz 270–290 Mio. $ (Konsens vorher ~265 Mio. $), GAAP-Bruttomarge 34–36 %. Aktie schloss am Mo bei 58,86 $ (+10,9 %); nachbörslich zunächst schwankend zwischen etwa 54,7 und 60,1 $, um 22:13 bei ~54,8 $ (−7 %). Der Call um 23:00 kann das noch drehen.",
+      "reasoning": "Veröffentlicht am Mo 9.11. um 22:05 (Call 23:00). Umsatz Rekord 267,8 Mio. $ (+73 % zum Vorjahr), über der eigenen Spanne 250–265 Mio. $ und dem Konsens von etwa 257 Mio. $. Verlust je Aktie −0,12 $ statt erwarteter −0,07 $; darin stecken ein Einmalverlust von 27,3 Mio. $ aus der Ablösung von Wandelanleihen und 21,3 Mio. $ Transaktionskosten (Iridium). Bereinigtes EBITDA −18,0 Mio. $ (Prognose −17 bis −23), GAAP-Bruttomarge rund 33,6 % (Prognose 29–31 %), erstmals positiver operativer Cashflow (7,2 Mio. $). Auftragsbestand rund 3,57 Mrd. $ (+52 % seit Ende Q2), davon fast 1 Mrd. $ neue Startaufträge; Neutron hat jetzt 16 Missionen im Bestand, Grundpreis teils 70 Mio. $, Erststart weiter frühestens 2027. Q4-Ausblick: Umsatz 270–290 Mio. $ (Konsens vorher ~265 Mio. $), GAAP-Bruttomarge 34–36 %. Aktie schloss am Mo bei 58,86 $ (+10,9 %); nachbörslich zunächst schwankend zwischen etwa 54,7 und 60,1 $, nach dem Call bei 55,02 $ (−6,5 %, Investing.com). Im Call: acht Neutron-Aufträge über 515 Mio. $ (u. a. ICEYE, Muon Space, Starcloud), nächste freie Neutron-Plätze in den 2030ern; bereinigtes EBITDA soll binnen sechs Monaten nach dem ersten erfolgreichen Neutron-Flug positiv werden. Piper Sandler senkt das Kursziel von 83 auf 58 $.",
       "example": false,
       "sources": [
         {
           "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
           "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+        },
+        {
+          "title": "Rocket Lab: Neutron-Aufträge über 515 Mio. $ (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation"
+        },
+        {
+          "title": "Investing.com: RKLB nachbörslich −6,5 % auf 55,02 $ (Call-Transkript)",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-rocket-lab-beats-revenue-in-q3-2026-stock-swings-lower-after-hours-93CH-5013696"
+        },
+        {
+          "title": "Rallies: Piper Sandler senkt RKLB-Kursziel auf 58 $ (10.11.)",
+          "url": "https://rallies.ai/news/rocket-lab-corp-piper-sandler-cuts-target-price-to-58-from-83-009ff33228067663"
         },
         {
           "title": "24/7 Wall St.: RKLB Q3 – Umsatz über, EPS unter Erwartung (9.11.)",
@@ -511,7 +531,7 @@
       ],
       "probabilityPct": 75,
       "impact": "niedrig",
-      "reasoning": "Rocket Lab bestätigt auf X den 100. Electron-Flug: QPS-SAR-Satellit, Launch Complex 1 Neuseeland, Fenster ab 05:30 UTC am 14.11. (06:30 Berlin). Meine 75 % gelten für einen Start bis 20. November – Electron ist zuverlässig, Wetter verschiebt oft. Kurswirkung gering; wichtiger bleiben die Q3-Zahlen am 9.11.",
+      "reasoning": "Rocket Lab bestätigt auf X den 100. Electron-Flug: QPS-SAR-Satellit, Launch Complex 1 Neuseeland, Fenster ab 05:30 UTC am 14.11. (06:30 Berlin). Meine 75 % gelten für einen Start bis 20. November – Electron ist zuverlässig, Wetter verschiebt oft. Kurswirkung gering; wichtiger bleiben die Q3-Zahlen am 9.11. Im Q3-Call am 9.11. sagte Beck, der 100. Electron-Start komme in etwa einer Woche (MarketBeat/Yahoo).",
       "example": false,
       "sources": [
         {
@@ -525,6 +545,10 @@
         {
           "title": "Rocket Lab: 99. Electron erfolgreich",
           "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/mission-success-rocket-lab-launches-99th-electron-mission"
+        },
+        {
+          "title": "Yahoo/MarketBeat: Rocket Lab Q3-Call (10.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/rocket-lab-q3-earnings-call-031435942.html"
         }
       ]
     },
@@ -577,7 +601,7 @@
       ],
       "probabilityPct": 95,
       "impact": "mittel",
-      "reasoning": "Offizieller BLS-Termin. Die Inflationszahl ist neben dem Arbeitsmarkt der wichtigste Datenpunkt vor der Dezember-Sitzung der Fed. Ölpreis und Zölle sind dabei die Treiber, die man im Blick behalten sollte. Stand 9.11.: Am Terminmarkt liegt die Wahrscheinlichkeit einer Zinserhöhung im Dezember laut CME FedWatch über 80 % (Reuters). Ein heißer CPI würde das festigen und trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst; der Ölpreis fiel am Montag deutlich.",
+      "reasoning": "Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kern +0,2 % (September +0,6 % / +0,3 %). Wegen des Shutdowns 2025 gibt es keine Jahresrate. Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst.",
       "example": false,
       "sources": [
         {
@@ -585,8 +609,12 @@
           "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
         },
         {
-          "title": "Reuters/StreetInsider: Wall St steigt, Öl fällt, Nvidia schwach (9.11.)",
-          "url": "https://www.streetinsider.com/General+News/Wall+St+rallies+after+last+week%27s+AI+rout%3B+Nvidia+falls/27310155.html"
+          "title": "CNBC: Was der Oktober-CPI zeigen soll (9.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html"
+        },
+        {
+          "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
         }
       ]
     },
@@ -1062,7 +1090,7 @@
       ],
       "probabilityPct": 80,
       "impact": "niedrig",
-      "reasoning": "Verschoben: SpaceX zielt jetzt auf Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Das ursprüngliche Fenster in der Nacht auf Dienstag (04:03–08:03) entfällt damit. Einen Grund nennt SpaceX auf der Missionsseite nicht. Launch Library zeigte um 22:08 noch den alten Termin; die SpaceX-Seite ist maßgeblich. 80 % (vorher 85) für einen Start im neuen Fenster: eine Verschiebung ohne Begründung, sonst Routine von derselben Rampe wie USSF-432. Kurswirkung gering.",
+      "reasoning": "Stand Di 05:20: SpaceX-Missionsseite bestätigt Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Siebter Flug der Erststufe, Landung auf der Drohnenschiff „Of Course I Still Love You“. 80 % unverändert für einen Start im Fenster: Routine von derselben Rampe, die erste Verschiebung kam ohne Begründung. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -1416,6 +1444,134 @@
         {
           "title": "LSEG: Russell Reconstitution",
           "url": "https://www.lseg.com/en/ftse-russell/russell-reconstitution"
+        }
+      ]
+    },
+    {
+      "id": "evt-softbank-q2-fy26",
+      "title": "SoftBank Group: Zahlen Q2 (Tokio)",
+      "date": "2026-11-10",
+      "time": "07:30",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "earnings",
+      "company": "SoftBank Group",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 97,
+      "impact": "niedrig",
+      "reasoning": "Offizieller Termin: Veröffentlichung 15:30 Uhr Tokio (07:30 Berlin), Pressekonferenz 16:30 Uhr Tokio. Die Aktie stieg am Vormittag um rund 13–15 % und hob den Nikkei allein um gut 400 Punkte; der Index lag mittags 2,9 % höher bei 60.476 (Nikkei, CNBC). SoftBank ist einer der großen KI-Investoren. Die Zahlen sind ein Stimmungstest für KI-Werte vor der US-Eröffnung, also indirekt auch für SpaceX mit xAI. 97 %: fester Termin.",
+      "example": false,
+      "sources": [
+        {
+          "title": "SoftBank Group: Earnings Results Q2 FY2026",
+          "url": "https://group.softbank/en/event/earnings_2026q2"
+        },
+        {
+          "title": "Nikkei: Nikkei 225 wieder über 60.000 (10.11.)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL100E50Q6A111C2000000/"
+        },
+        {
+          "title": "CNBC: SoftBank +13 %, Asiens Tech-Werte folgen der Wall Street (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/ai-softbank-sk-hynix-samsung-wall-street-tech-stocks.html"
+        }
+      ]
+    },
+    {
+      "id": "evt-anthropic-ipo",
+      "title": "Anthropic: Börsengang an der Nasdaq (Ziel: Woche ab 16. November)",
+      "date": "2026-11-16",
+      "end": "2026-11-20",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "index",
+      "company": "Anthropic",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 50,
+      "impact": "mittel",
+      "reasoning": "Anthropic will unter dem Kürzel ANT an die Nasdaq. Laut The Information soll die Roadshow diese Woche starten, Ziel ist die Woche ab 16.11.; die FT berichtet von 80–100 Mrd. $ Erlös. Bestätigt hat Anthropic weder Termin noch Preisspanne. Nachts schickte die Firma Banken eine Unterlage mit 70–80 $ je Aktie und zog sie als „ungenau“ zurück (Reuters via Bloomberg Law). Investoren diskutieren laut Bloomberg 1,1–1,3 Billionen $ Bewertung statt früher bis zu 2 Billionen. Für SPCX zählt der Börsengang doppelt: als direkter KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. Musk lästerte nachts über Anthropic. 50 %, dass der Handel in dieser Woche beginnt: Zeitplan nur aus Berichten, Preisspanne fehlt noch.",
+      "example": false,
+      "sources": [
+        {
+          "title": "FinanceFeeds: Anthropic-Roadshow ohne Preisspanne (9.11.)",
+          "url": "https://financefeeds.com/anthropic-ipo-date-roadshow-week-arrives-with-no-price-range-on-file/"
+        },
+        {
+          "title": "Bloomberg Law: Anthropic zieht Unterlage mit IPO-Ziel zurück (10.11.)",
+          "url": "https://news.bloomberglaw.com/capital-markets/anthropic-seeks-to-raise-69-3-billion-via-its-ipo-reuters-says"
+        },
+        {
+          "title": "Reuters/TradingView: Roadshow nächste Woche (The Information)",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46N49G:0-anthropic-to-proceed-with-ipo-roadshow-next-week-the-information/"
+        },
+        {
+          "title": "@elonmusk: The most entertaining outcome",
+          "url": "https://x.com/elonmusk/status/2119989362725396589"
+        }
+      ]
+    },
+    {
+      "id": "evt-us-ppi-okt",
+      "title": "USA: Erzeugerpreise (PPI) Oktober",
+      "date": "2026-11-13",
+      "time": "14:30",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "makro",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 95,
+      "impact": "niedrig",
+      "reasoning": "Offizieller BLS-Termin, 8:30 Uhr ET. Nach dem CPI am Dienstag der zweite Inflationswert vor der Fed-Sitzung im Dezember, für die der Markt eine Zinserhöhung erwartet. Bewegt meist weniger als der CPI. 95 %: fester Termin.",
+      "example": false,
+      "sources": [
+        {
+          "title": "BLS: Termine Erzeugerpreisindex",
+          "url": "https://www.bls.gov/schedule/news_release/ppi.htm"
+        },
+        {
+          "title": "APS Morning Brief: Wirtschaftskalender (9.11.)",
+          "url": "https://apsmorningbrief.beehiiv.com/p/nvidia-s-board-opens-a-probe-china-s-factory-prices-jump-and-us-inflation-lands-tuesday"
+        }
+      ]
+    },
+    {
+      "id": "evt-china-zollpause-jan",
+      "title": "China/USA: Aussetzung der 24-%-Zusatzzölle läuft aus",
+      "date": "2027-01-10",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "zoelle",
+      "company": "China / US-Regierung",
+      "tickers": [
+        "TSLA",
+        "SPCX"
+      ],
+      "probabilityPct": 80,
+      "impact": "mittel",
+      "reasoning": "China setzt den Zusatzzoll von 24 % auf US-Waren ab 10.11., 13:01 Uhr Peking, für weitere zwei Monate aus, 10 % bleiben. Das setzt die Absprache des Treffens beider Präsidenten in Washington um (Xinhua). Die USA verlängerten parallel die Aussetzung von Section-301-Maßnahmen gegen Chinas Schifffahrt bis Januar. Um den 10. Januar steht also die nächste Entscheidung an. Peking warnt, dass die USA die gekippten IEEPA-Zölle durch Section-301-Zölle ersetzen wollen. Für Tesla zählt China als Absatz- und Lieferkettenmarkt. 80 %, dass der Termin als Entscheidungspunkt kommt: Das genaue Datum folgt aus „zwei Monaten“ und ist nicht amtlich benannt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Xinhua/gov.cn: China verlängert Aussetzung der 24-%-Zölle (9.11.)",
+          "url": "https://english.www.gov.cn/news/202611/09/content_WS6af18d6bc6d00ca5f9a0e308.html"
+        },
+        {
+          "title": "Bloomberg Law: China Extends Pause on 24% US Tariffs",
+          "url": "https://news.bloomberglaw.com/international-trade/china-extends-pause-on-24-us-tariffs-for-two-months-1"
+        },
+        {
+          "title": "ISS: USA verlängern Aussetzung der Hafengebühren bis Januar 2027",
+          "url": "https://www.iss-shipping.com/u-s-extends-suspension-of-port-fees-until-january-2027/"
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-10",
   "owner": "Karl",
   "title": "Karls Top 10",
   "note": "Zehn Aktien aus dem ganzen Markt, nicht nur aus dem Musk-Umfeld. Kurse in Euro. Tesla und Rocket Lab stehen mit dabei, weil sie schon in der Bilanz sind. Die älteren Themen Starlink und Tesla Energie bleiben im Treffer-Check, sie sind keine eigenen Aktien.",
@@ -252,13 +252,25 @@
       "priceAsOf": "2026-11-05",
       "priceVenue": "Frankfurt",
       "swarmNote": "In den geführten Konten kommt Rocket Lab kaum vor. Sawyer hat sie auf der Liste, ohne Posts.",
-      "reason": "Q3 am 9.11.: Rekordumsatz 267,8 Mio. $ (+73 %), Auftragsbestand ~3,57 Mrd. $ (+52 % in einem Quartal), Q4-Ausblick 270–290 Mio. $, erstmals positiver operativer Cashflow. Neutron hat 16 Missionen im Bestand, fliegt aber frühestens 2027. Verlust je Aktie −0,12 $ (Einmalkosten). Vor den Zahlen +15 % (Fr) und +10,9 % (Mo).",
+      "reason": "Q3 am 9.11.: Rekordumsatz 267,8 Mio. $ (+73 %), Auftragsbestand ~3,6 Mrd. $ (+52 % in einem Quartal), Q4-Ausblick 270–290 Mio. $, erstmals positiver operativer Cashflow. Acht neue Neutron-Aufträge über 515 Mio. $, Grundpreis 70 statt 55 Mio. $, 16 Missionen gebucht, Erststart frühestens 2027. Verlust je Aktie −0,12 $; nachbörslich −6,5 % auf 55,02 $, Piper Sandler senkt das Ziel auf 58 $.",
       "counterArgument": "Ohne Neutron bleibt Rocket Lab klein gegen SpaceX. Das Management verkauft seit Monaten Aktien.",
       "example": false,
       "sources": [
         {
           "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
           "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+        },
+        {
+          "title": "Rocket Lab: Neutron-Aufträge über 515 Mio. $ (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation"
+        },
+        {
+          "title": "Investing.com: RKLB nachbörslich −6,5 % auf 55,02 $ (Call-Transkript)",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-rocket-lab-beats-revenue-in-q3-2026-stock-swings-lower-after-hours-93CH-5013696"
+        },
+        {
+          "title": "Rallies: Piper Sandler senkt RKLB-Kursziel auf 58 $ (10.11.)",
+          "url": "https://rallies.ai/news/rocket-lab-corp-piper-sandler-cuts-target-price-to-58-from-83-009ff33228067663"
         },
         {
           "title": "Yahoo Finance: 6RJ0.F",

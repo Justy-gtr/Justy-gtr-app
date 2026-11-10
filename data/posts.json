@@ -1,70 +1,713 @@
 {
   "example": false,
-  "asOf": "2026-11-09T22:15:00+01:00",
+  "asOf": "2026-11-10T05:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
       "label": "zuversichtlich",
-      "summary": "Flight 15 NET Fr 13.11. mit Fang-Versuch, FAA-Lizenz weiter offen. Musk nachts: Grok-Fixes über Nacht; billige Rechenleistung würde SpaceX-Umsatz drücken. Mo früh: Nvidia nachbörslich ~−3 % wegen CEO-Untersuchung, Nasdaq-Futures leicht im Plus. Di 04:03 USSF-627, Di 14:30 CPI.",
+      "summary": "Flight 15 NET Fr 13.11., FAA-Lizenz weiter offen. Musk nachts: Grok-Fremdkörper-Erkennung bei SpaceX (99,9 %), Memphis-Steuern 54 Mio. $, Starlink Vietnam. Anthropic-Börsengang rückt näher (Ziel Woche ab 16.11.). Di früh: Nasdaq-Futures +0,2 %, Nikkei +2,9 %. Mi 03:49 USSF-627, Di 14:30 CPI.",
       "sources": [
         {
           "title": "@SpaceX: Flight 15 catch",
           "url": "https://x.com/SpaceX/status/2119093662957060389"
         },
         {
-          "title": "@elonmusk: It works both ways",
-          "url": "https://x.com/elonmusk/status/2119610442867749040"
+          "title": "@elonmusk: Grok",
+          "url": "https://x.com/elonmusk/status/2119989523748905221"
         },
         {
-          "title": "@elonmusk: Grok fixes overnight",
-          "url": "https://x.com/elonmusk/status/2119617455102333206"
+          "title": "@elonmusk: Memphis taxes",
+          "url": "https://x.com/elonmusk/status/2119993726898774521"
         },
         {
-          "title": "The Star/Reuters: Nvidia falls about 3% (9.11.)",
-          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/09/nvidia-falls-about-3-in-after-hours-and-perpetual-futures-trade"
+          "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
+        },
+        {
+          "title": "Nikkei: Nikkei 225 wieder über 60.000 (10.11.)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL100E50Q6A111C2000000/"
+        },
+        {
+          "title": "FinanceFeeds: Anthropic-Roadshow ohne Preisspanne (9.11.)",
+          "url": "https://financefeeds.com/anthropic-ipo-date-roadshow-week-arrives-with-no-price-range-on-file/"
         }
       ]
     },
     "TSLA": {
       "score": 0.15,
       "label": "leicht zuversichtlich",
-      "summary": "Robotaxi wächst: größeres Austin-Gebiet seit 12:00 live, San Antonio laut Tesla ab heute 5 Uhr Ortszeit. Musk: Cybertruck-Linie wird in ~8 Monaten für Cybercab umgebaut, weil eine Großserien-Fabrik „wahnsinnig schwer“ sei. Nasdaq-Futures etwa unverändert, Nvidia vorbörslich ~−4 %.",
+      "summary": "Nach +5,5 % am Montag ruhige Nacht: @robotaxi wirbt bei der CoRL in Austin, Musk teilt Jay Lenos FSD-Test und Moravys „meistverkaufte Luxusmarke“. Di früh: Nasdaq-Futures +0,2 %, CPI 14:30 entscheidet über den Ton.",
       "sources": [
         {
-          "title": "@robotaxi: Bigger Austin service area",
-          "url": "https://x.com/robotaxi/status/2119746828191027346"
+          "title": "@robotaxi: Cybercab is peak me time",
+          "url": "https://x.com/robotaxi/status/2119942065572458737"
         },
         {
-          "title": "@robotaxi: Robotaxi available in San Antonio",
-          "url": "https://x.com/robotaxi/status/2119678179963187564"
+          "title": "@elonmusk: Jay Leno FSD",
+          "url": "https://x.com/elonmusk/status/2119989055392002456"
         },
         {
-          "title": "@elonmusk: insanely hard to build a high-volume factory",
-          "url": "https://x.com/elonmusk/status/2119721986406699185"
+          "title": "@elonmusk: Lars Moravy",
+          "url": "https://x.com/elonmusk/status/2119912356377694591"
         },
         {
-          "title": "Yahoo Finance: Stock market today (9.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
+          "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
         }
       ]
     },
     "RKLB": {
-      "score": 0.3,
-      "label": "zuversichtlich",
-      "summary": "NASA bestätigt am 9.11.: beide ESCAPADE-Sonden (von Rocket Lab gebaut) haben ihr Mars-Manöver „fehlerfrei“ geschafft. Aktie ~+10 % vor den Q3-Zahlen heute 23:00, Electron-100 NET 14.11.",
+      "score": 0.1,
+      "label": "gemischt",
+      "summary": "Q3: Rekordumsatz, Auftragsbestand ~3,6 Mrd. $, acht Neutron-Aufträge über 515 Mio. $ zu höherem Preis. Dagegen Verlust je Aktie −0,12 $, mehr Ausgaben, Neutron erst 2027: nachbörslich −6,5 % auf 55,02 $. Piper Sandler senkt Kursziel auf 58 $. Electron-100 laut Beck in etwa einer Woche.",
       "sources": [
         {
-          "title": "NASA: ESCAPADE schließt beide Swing-by-Manöver ab, Kurs Mars (9.11.)",
-          "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/"
+          "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
         },
         {
-          "title": "Yahoo Finance: SpaceX, Rocket Lab steigen (9.11.)",
-          "url": "https://finance.yahoo.com/markets/article/spacex-rocket-lab-blast-higher-as-nasa-hands-out-10-billion-in-moon-base-awards-164320855.html"
+          "title": "Rocket Lab: Neutron-Aufträge über 515 Mio. $ (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation"
+        },
+        {
+          "title": "Investing.com: RKLB nachbörslich −6,5 % auf 55,02 $ (Call-Transkript)",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-rocket-lab-beats-revenue-in-q3-2026-stock-swings-lower-after-hours-93CH-5013696"
+        },
+        {
+          "title": "Rallies: Piper Sandler senkt RKLB-Kursziel auf 58 $ (10.11.)",
+          "url": "https://rallies.ai/news/rocket-lab-corp-piper-sandler-cuts-target-price-to-58-from-83-009ff33228067663"
+        },
+        {
+          "title": "@RocketLab: A blowout quarter",
+          "url": "https://x.com/RocketLab/status/2119944830449275258"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2119996001490768028",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:30:09+01:00",
+      "summaryDe": "Musk teilt Megyn Kellys Kritik am Urteil gegen Russell Brand. Politik, kein Firmenbezug.",
+      "originalText": "RT @MegynKellyShow: .@MegynKelly on the absolute double standard in the Russell Brand sentencing",
+      "url": "https://x.com/elonmusk/status/2119996001490768028",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @MegynKellyShow: .@MegynKelly on the absolute d",
+          "url": "https://x.com/elonmusk/status/2119996001490768028"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119994779312521291",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:25:17+01:00",
+      "summaryDe": "Musk reagiert mit „Wow“ auf einen Vergleich des Brand-Urteils mit einem anderen Strafverfahren in Großbritannien. Politik, kein Firmenbezug.",
+      "originalText": "@FNSWAYOFFICIAL Wow",
+      "url": "https://x.com/elonmusk/status/2119994779312521291",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @FNSWAYOFFICIAL Wow",
+          "url": "https://x.com/elonmusk/status/2119994779312521291"
+        },
+        {
+          "title": "@FNSWAYOFFICIAL: Russell Brand receiving 10.5 years",
+          "url": "https://x.com/FNSWAYOFFICIAL/status/2119887268815200402"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119993726898774521",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:21:06+01:00",
+      "summaryDe": "Musk teilt: Laut dem Bürgermeister von Memphis haben sich die Steuern aus dem SpaceX-Rechenzentrum auf 54 Mio. $ mehr als verdoppelt (Vorjahr 25 Mio. $). Lokale Einordnung, keine Firmenzahl.",
+      "originalText": "RT @firesidealpha: JUST IN: Memphis Mayor reveals SpaceX data center taxes more than doubled to $54 million",
+      "url": "https://x.com/elonmusk/status/2119993726898774521",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @firesidealpha: JUST IN: Memphis Mayor reveals ",
+          "url": "https://x.com/elonmusk/status/2119993726898774521"
+        },
+        {
+          "title": "@firesidealpha: Memphis data center taxes $54M",
+          "url": "https://x.com/firesidealpha/status/2119934910723174807"
+        },
+        {
+          "title": "@KatieMiller: Memphis Mayor Paul Young",
+          "url": "https://x.com/KatieMiller/status/2119964121860821488"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119992481156829218",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:16:09+01:00",
+      "summaryDe": "Musk teilt einen Beitrag gegen Zuwanderung nach Deutschland („Wir schaffen das“). Politik, kein Firmenbezug.",
+      "originalText": "RT @ricwe123: The Germans are learning what mass immigration really means.",
+      "url": "https://x.com/elonmusk/status/2119992481156829218",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @ricwe123: The Germans are learning what mass i",
+          "url": "https://x.com/elonmusk/status/2119992481156829218"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119991850820051347",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:13:39+01:00",
+      "summaryDe": "Musk teilt Joe Lonsdales Kritik an der britischen Justiz. Politik, kein Firmenbezug.",
+      "originalText": "RT @JTLonsdale: The UK “justice system” is an utter joke.",
+      "url": "https://x.com/elonmusk/status/2119991850820051347",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @JTLonsdale: The UK “justice system” is an utte",
+          "url": "https://x.com/elonmusk/status/2119991850820051347"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119991792842260619",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:13:25+01:00",
+      "summaryDe": "Musk teilt einen weiteren Beitrag gegen das Brand-Urteil (10 Jahre, 6 Monate). Politik, kein Firmenbezug.",
+      "originalText": "RT @TheJadeWarwick: UK judge gives Russel Brand 10 years 6 months",
+      "url": "https://x.com/elonmusk/status/2119991792842260619",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @TheJadeWarwick: UK judge gives Russel Brand 10",
+          "url": "https://x.com/elonmusk/status/2119991792842260619"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119991750769197295",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:13:15+01:00",
+      "summaryDe": "Musk teilt eine Geschichte zu den Anfängen von SpaceX: Erst ein Gewächshaus-Experiment für den Mars, dann die Einsicht, dass die Raketenkosten das Problem sind. Nichts Neues.",
+      "originalText": "RT @EvaFox: Most people assume SpaceX began because Elon Musk wanted to build rockets",
+      "url": "https://x.com/elonmusk/status/2119991750769197295",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @EvaFox: Most people assume SpaceX began becaus",
+          "url": "https://x.com/elonmusk/status/2119991750769197295"
+        },
+        {
+          "title": "@EvaFox: How SpaceX began",
+          "url": "https://x.com/EvaFox/status/2119916944245629157"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119991448741573066",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:12:03+01:00",
+      "summaryDe": "Musk nennt einen Bericht über Missbrauchsfälle in Telford „schrecklich“. Politik, kein Firmenbezug.",
+      "originalText": "@CompositeGuy_ Horrific",
+      "url": "https://x.com/elonmusk/status/2119991448741573066",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @CompositeGuy_ Horrific",
+          "url": "https://x.com/elonmusk/status/2119991448741573066"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119989523748905221",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:04:24+01:00",
+      "summaryDe": "Musk zitiert mit „Grok“ SpaceX-Launchchef Kiko Dontchev: Grok erkennt Fremdkörper in Raketenteilen auf Endoskop-Videos zu 99,9 %, Menschen zu etwa 94 %. Aussage von der UP.Summit, keine geprüfte Zahl.",
+      "originalText": "Grok",
+      "url": "https://x.com/elonmusk/status/2119989523748905221",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "xAI"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Grok",
+          "url": "https://x.com/elonmusk/status/2119989523748905221"
+        },
+        {
+          "title": "@SawyerMerritt: SpaceX VP of Launch on Grok FOD detection",
+          "url": "https://x.com/SawyerMerritt/status/2119857279361073655"
+        },
+        {
+          "title": "Off Planet News: SpaceX-Launchchef zu Grok und Infrastruktur (10.11.)",
+          "url": "https://offplanetnews.com/2026/11/10/spacex-now-an-infrastructure-company-official-says/"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119989362725396589",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:03:46+01:00",
+      "summaryDe": "Zu James Doumas Sorge, Anthropic könnte ausgerechnet die gefürchtete Super-KI bauen, schreibt Musk: „Das unterhaltsamste Ergebnis ist das wahrscheinlichste, vor allem wenn es ironisch ist.“ Spitze gegen einen KI-Konkurrenten, keine Zahl.",
+      "originalText": "The most entertaining outcome is the most likely, especially if ironic",
+      "url": "https://x.com/elonmusk/status/2119989362725396589",
+      "tickers": [],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: The most entertaining outcome is the most likely, ",
+          "url": "https://x.com/elonmusk/status/2119989362725396589"
+        },
+        {
+          "title": "@jamesdouma: Anthropic irony",
+          "url": "https://x.com/jamesdouma/status/2119985655157755945"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119989132395188656",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:02:51+01:00",
+      "summaryDe": "Musk antwortet „!!“ auf einen Beitrag über Medienberichte zu einer Gewalttat. Politik, kein Firmenbezug.",
+      "originalText": "@EndWokeness !!",
+      "url": "https://x.com/elonmusk/status/2119989132395188656",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @EndWokeness !!",
+          "url": "https://x.com/elonmusk/status/2119989132395188656"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119989055392002456",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:02:32+01:00",
+      "summaryDe": "Musk teilt: Jay Leno testet in seiner Sendung erstmals Teslas FSD (Supervised); das Model Y L fährt für einen Rettungswagen selbst rechts ran. Werbewirkung, keine Zahl.",
+      "originalText": "RT @SawyerMerritt: Jay Leno just tried @Tesla's FSD (Supervised) for the first time.",
+      "url": "https://x.com/elonmusk/status/2119989055392002456",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @SawyerMerritt: Jay Leno just tried @Tesla's FS",
+          "url": "https://x.com/elonmusk/status/2119989055392002456"
+        },
+        {
+          "title": "@SawyerMerritt: Jay Leno tries FSD",
+          "url": "https://x.com/SawyerMerritt/status/2119849526760747146"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119989015957078096",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T04:02:23+01:00",
+      "summaryDe": "Musk teilt: Die Wochen-Limits für alle Grok-Bot-Nutzer wurden zurückgesetzt. Produktpflege.",
+      "originalText": "RT @bot: We've reset weekly limits for all Grok Bot users.",
+      "url": "https://x.com/elonmusk/status/2119989015957078096",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @bot: We've reset weekly limits for all Grok Bo",
+          "url": "https://x.com/elonmusk/status/2119989015957078096"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119986275306586386",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T03:51:30+01:00",
+      "summaryDe": "Musk teilt: Starlink verbindet laut Vietnams Wissenschaftsministerium 196 Orte ohne Mobilfunk (154 Dörfer, 42 öffentliche Einrichtungen), Teil einer Zusage über 1.000 Geräte.",
+      "originalText": "RT @cb_doge: BREAKING: Starlink brings high-speed internet to 196 locations in Vietnam",
+      "url": "https://x.com/elonmusk/status/2119986275306586386",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @cb_doge: BREAKING: Starlink brings high-speed ",
+          "url": "https://x.com/elonmusk/status/2119986275306586386"
+        },
+        {
+          "title": "@cb_doge: Starlink in Vietnam",
+          "url": "https://x.com/cb_doge/status/2119876821542150551"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119973828545901028",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T03:02:02+01:00",
+      "summaryDe": "Musk teilt Katie Miller: Der Bürgermeister von Memphis bestätigt 54 Mio. $ Steuern aus den Rechenzentren in diesem Jahr (Vorjahr rund 25 Mio. $).",
+      "originalText": "RT @KatieMiller: Memphis Mayor Paul Young confirming @elonmusk’s statement",
+      "url": "https://x.com/elonmusk/status/2119973828545901028",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @KatieMiller: Memphis Mayor Paul Young confirmi",
+          "url": "https://x.com/elonmusk/status/2119973828545901028"
+        },
+        {
+          "title": "@KatieMiller: Memphis Mayor Paul Young",
+          "url": "https://x.com/KatieMiller/status/2119964121860821488"
+        }
+      ]
+    },
+    {
+      "id": "post-robotaxi-2119964617099391253",
+      "account": "@robotaxi",
+      "displayName": "Robotaxi",
+      "postedAt": "2026-11-10T02:25:26+01:00",
+      "summaryDe": "@robotaxi teilt einen Robotik-Forscher, der Teilnehmer der Konferenz CoRL in Austin zu Probefahrten einlädt. Werbung, keine Zahl.",
+      "originalText": "RT @pduan: Three years ago at a CoRL workshop, someone made the point that if Tesla couldn’t solve self-driving, there was little hope for robotics.",
+      "url": "https://x.com/robotaxi/status/2119964617099391253",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@robotaxi: RT @pduan: Three years ago at a CoRL workshop, som",
+          "url": "https://x.com/robotaxi/status/2119964617099391253"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2119944830449275258",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-10T01:06:48+01:00",
+      "summaryDe": "Rocket Lab feiert ein „Rekordquartal“: Umsatz 267,8 Mio. $ (+73 %), Auftragsbestand rund 3,6 Mrd. $, erstmals positiver operativer Cashflow. Nachbörslich fiel die Aktie trotzdem um 6,5 % auf 55,02 $.",
+      "originalText": "A blowout quarter 🚀🛰️Today we reported $RKLB Q3 2026 financial results and the numbers speak for themselves.",
+      "url": "https://x.com/RocketLab/status/2119944830449275258",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: A blowout quarter 🚀🛰️Today we reported $RKLB Q3 20",
+          "url": "https://x.com/RocketLab/status/2119944830449275258"
+        },
+        {
+          "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+        },
+        {
+          "title": "Investing.com: RKLB nachbörslich −6,5 % auf 55,02 $ (Call-Transkript)",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-rocket-lab-beats-revenue-in-q3-2026-stock-swings-lower-after-hours-93CH-5013696"
+        }
+      ]
+    },
+    {
+      "id": "post-robotaxi-2119942065572458737",
+      "account": "@robotaxi",
+      "displayName": "Robotaxi",
+      "postedAt": "2026-11-10T00:55:49+01:00",
+      "summaryDe": "@robotaxi zitiert eine Kundin, die in Austin mit einem Cybercab zum Mittagessen gefahren ist: „Cybercab ist Zeit für mich.“ Werbung, keine Zahl.",
+      "originalText": "Cybercab is peak me time",
+      "url": "https://x.com/robotaxi/status/2119942065572458737",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@robotaxi: Cybercab is peak me time",
+          "url": "https://x.com/robotaxi/status/2119942065572458737"
+        }
+      ]
+    },
+    {
+      "id": "post-robotaxi-2119926668081201455",
+      "account": "@robotaxi",
+      "displayName": "Robotaxi",
+      "postedAt": "2026-11-09T23:54:38+01:00",
+      "summaryDe": "@robotaxi teilt den Hinweis an CoRL-Besucher, in Austin die Robotaxi-App für Cybercab-Fahrten zu laden.",
+      "originalText": "RT @micoolcho: PSA: For those coming into Austin for CoRL & never tried Cybercab b4, definitely download the Robotaxi app!",
+      "url": "https://x.com/robotaxi/status/2119926668081201455",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@robotaxi: RT @micoolcho: PSA: For those coming into Austin f",
+          "url": "https://x.com/robotaxi/status/2119926668081201455"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2119925297860735347",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-09T23:49:11+01:00",
+      "summaryDe": "Rocket Lab: „Die Nachfrage nach Neutron war nie höher.“ Acht Neutron-Starts für fünf Konstellationsbetreiber (u. a. ICEYE, Muon Space, Starcloud) über mehr als 515 Mio. $; der Grundpreis steigt von 55 auf 70 Mio. $. 16 Missionen gebucht, nächste freie Plätze in den 2030ern. Erststart frühestens 2027.",
+      "originalText": "Demand for Neutron has never been higher.",
+      "url": "https://x.com/RocketLab/status/2119925297860735347",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: Demand for Neutron has never been higher.",
+          "url": "https://x.com/RocketLab/status/2119925297860735347"
+        },
+        {
+          "title": "Rocket Lab: Neutron-Aufträge über 515 Mio. $ (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation"
+        },
+        {
+          "title": "@RocketLab: Full details",
+          "url": "https://x.com/RocketLab/status/2119925301472043485"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119912356377694591",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T22:57:46+01:00",
+      "summaryDe": "Musk teilt: Tesla-Ingenieurchef Lars Moravy sagt bei Jay Leno, Tesla sei die meistverkaufte Luxusmarke der Welt; über 10 Mio. gebaute Autos (seit Juli 2026). Keine neue Zahl.",
+      "originalText": "RT @XFreeze: Tesla VP of Vehicle Engineering Lars Moravy just put Tesla's extraordinary manufacturing scale into perspective",
+      "url": "https://x.com/elonmusk/status/2119912356377694591",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @XFreeze: Tesla VP of Vehicle Engineering Lars ",
+          "url": "https://x.com/elonmusk/status/2119912356377694591"
+        },
+        {
+          "title": "@XFreeze: Lars Moravy with Jay Leno",
+          "url": "https://x.com/XFreeze/status/2119885768097513664"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119911064737550415",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T22:52:38+01:00",
+      "summaryDe": "Musk: „Das System scheint für die Menschen nicht zu funktionieren.“ Antwort auf einen politischen Beitrag, kein Firmenbezug.",
+      "originalText": "@cfdownes_ System sure doesn’t seem to be working for the people",
+      "url": "https://x.com/elonmusk/status/2119911064737550415",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @cfdownes_ System sure doesn’t seem to be working ",
+          "url": "https://x.com/elonmusk/status/2119911064737550415"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119909709197279420",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T22:47:15+01:00",
+      "summaryDe": "Musk: „Gwynne ist großartig“ – zu einem Clip, in dem SpaceX-Präsidentin Gwynne Shotwell über 24 Jahre mit ihm spricht.",
+      "originalText": "Gwynne is great",
+      "url": "https://x.com/elonmusk/status/2119909709197279420",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Gwynne is great",
+          "url": "https://x.com/elonmusk/status/2119909709197279420"
+        },
+        {
+          "title": "@teslaownersSV: Gwynne Shotwell clip",
+          "url": "https://x.com/teslaownersSV/status/2119859960217743791"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119900637240664414",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T22:11:12+01:00",
+      "summaryDe": "Musk lacht über ein Gerücht, China habe es vor Nvidia-Chef Huang erst bei ihm versucht. Witz, kein Inhalt.",
+      "originalText": "@Le_Crapaud47 😂",
+      "url": "https://x.com/elonmusk/status/2119900637240664414",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @Le_Crapaud47 😂",
+          "url": "https://x.com/elonmusk/status/2119900637240664414"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119899623620067374",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T22:07:10+01:00",
+      "summaryDe": "Musk nennt zwei Studien zum Abnehmmittel Retatrutid gegen Kniearthrose „interessant“. Kein Firmenbezug.",
+      "originalText": "@EricTopol @NEJM Interesting",
+      "url": "https://x.com/elonmusk/status/2119899623620067374",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: @EricTopol @NEJM Interesting",
+          "url": "https://x.com/elonmusk/status/2119899623620067374"
+        }
+      ]
+    },
     {
       "id": "post-rocketlab-2119878450614026452",
       "account": "@RocketLab",
@@ -166,6 +809,48 @@
         {
           "title": "@elonmusk: RT Ron Baron",
           "url": "https://x.com/elonmusk/status/2119823743212257504"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119823433085358186",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T17:04:25+01:00",
+      "summaryDe": "Musk teilt einen X-Mitarbeiter: Er sammle Nutzer-Rückmeldungen gebündelt über @bot für das Team. Produktpflege.",
+      "originalText": "RT @mattyp: I responded to hundreds of you and will continue to monitor comments",
+      "url": "https://x.com/elonmusk/status/2119823433085358186",
+      "tickers": [],
+      "companies": [
+        "X"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @mattyp: I responded to hundreds of you and wil",
+          "url": "https://x.com/elonmusk/status/2119823433085358186"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2119823115836678650",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-09T17:03:09+01:00",
+      "summaryDe": "Musk teilt Kritik am Brand-Urteil („keine DNA, keine Videos“). Politik, kein Firmenbezug.",
+      "originalText": "RT @TheJadeWarwick: No DNA. No CCTV. No forensic evidence.",
+      "url": "https://x.com/elonmusk/status/2119823115836678650",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: RT @TheJadeWarwick: No DNA. No CCTV. No forensic e",
+          "url": "https://x.com/elonmusk/status/2119823115836678650"
         }
       ]
     },
@@ -1586,28 +2271,6 @@
       ]
     },
     {
-      "id": "post-boringcompany-2119531885814513936",
-      "account": "@boringcompany",
-      "displayName": "The Boring Company",
-      "postedAt": "2026-11-08T21:45:55+01:00",
-      "summaryDe": "Boring teilt einen Dank von Morgan’s Wonderland (Freizeitpark für Menschen mit Behinderung), das im Stadtrat von San Antonio geehrt wurde. Kein Projekt-Update.",
-      "originalText": "RT @MorgansOrg: Honored to be recognized at San Antonio City Council!",
-      "url": "https://x.com/boringcompany/status/2119531885814513936",
-      "tickers": [],
-      "companies": [
-        "Boring"
-      ],
-      "sentiment": "positiv",
-      "important": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "@boringcompany: RT @MorgansOrg: Honored to be recognized at San An",
-          "url": "https://x.com/boringcompany/status/2119531885814513936"
-        }
-      ]
-    },
-    {
       "id": "post-tesla-2119533178704863309",
       "account": "@Tesla",
       "displayName": "Tesla",
@@ -1632,6 +2295,28 @@
         {
           "title": "@thekrishna: SUV merged right into me (FSD-Video)",
           "url": "https://x.com/thekrishna/status/2119465139124810227"
+        }
+      ]
+    },
+    {
+      "id": "post-boringcompany-2119531885814513936",
+      "account": "@boringcompany",
+      "displayName": "The Boring Company",
+      "postedAt": "2026-11-08T21:45:55+01:00",
+      "summaryDe": "Boring teilt einen Dank von Morgan’s Wonderland (Freizeitpark für Menschen mit Behinderung), das im Stadtrat von San Antonio geehrt wurde. Kein Projekt-Update.",
+      "originalText": "RT @MorgansOrg: Honored to be recognized at San Antonio City Council!",
+      "url": "https://x.com/boringcompany/status/2119531885814513936",
+      "tickers": [],
+      "companies": [
+        "Boring"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@boringcompany: RT @MorgansOrg: Honored to be recognized at San An",
+          "url": "https://x.com/boringcompany/status/2119531885814513936"
         }
       ]
     },
@@ -2284,6 +2969,34 @@
       ]
     },
     {
+      "id": "post-musk-2119135865662300669",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T19:32:16+01:00",
+      "summaryDe": "Musk kommentiert Bericht, Alphabet habe im Q3 weitere ~3,85 Mio. SpaceX-Aktien gekauft (SEC); Portfolio stark auf SPCX konzentriert — „Interesting“.",
+      "originalText": "Interesting",
+      "url": "https://x.com/elonmusk/status/2119135865662300669",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Interesting (Alphabet/SPCX)",
+          "url": "https://x.com/elonmusk/status/2119135865662300669"
+        },
+        {
+          "title": "@cb_doge: Alphabet +3.85M SpaceX shares Q3",
+          "url": "https://x.com/cb_doge/status/2119087204446400776"
+        }
+      ]
+    },
+    {
       "id": "post-musk-2119134648693322158",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
@@ -2306,6 +3019,31 @@
         {
           "title": "@elonmusk: SpaceX and Tesla prospered in Texas",
           "url": "https://x.com/elonmusk/status/2119134648693322158"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2119131060806074732",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T19:13:11+01:00",
+      "summaryDe": "Musk: „Starlink rettet Leben“ — Bezug auf Hilfseinsatz mit Starlink nach Erdbeben in Indonesien.",
+      "originalText": "Starlink saves lives",
+      "url": "https://x.com/elonmusk/status/2119131060806074732",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Starlink saves lives",
+          "url": "https://x.com/elonmusk/status/2119131060806074732"
         }
       ]
     },
@@ -2358,82 +3096,6 @@
       ]
     },
     {
-      "id": "post-musk-2119131060806074732",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-07T19:13:11+01:00",
-      "summaryDe": "Musk: „Starlink rettet Leben“ — Bezug auf Hilfseinsatz mit Starlink nach Erdbeben in Indonesien.",
-      "originalText": "Starlink saves lives",
-      "url": "https://x.com/elonmusk/status/2119131060806074732",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX",
-        "Starlink"
-      ],
-      "sentiment": "positiv",
-      "important": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk: Starlink saves lives",
-          "url": "https://x.com/elonmusk/status/2119131060806074732"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2119135865662300669",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-07T19:32:16+01:00",
-      "summaryDe": "Musk kommentiert Bericht, Alphabet habe im Q3 weitere ~3,85 Mio. SpaceX-Aktien gekauft (SEC); Portfolio stark auf SPCX konzentriert — „Interesting“.",
-      "originalText": "Interesting",
-      "url": "https://x.com/elonmusk/status/2119135865662300669",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX"
-      ],
-      "sentiment": "positiv",
-      "important": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk: Interesting (Alphabet/SPCX)",
-          "url": "https://x.com/elonmusk/status/2119135865662300669"
-        },
-        {
-          "title": "@cb_doge: Alphabet +3.85M SpaceX shares Q3",
-          "url": "https://x.com/cb_doge/status/2119087204446400776"
-        }
-      ]
-    },
-    {
-      "id": "post-spacex-2119093662957060389",
-      "account": "@SpaceX",
-      "displayName": "SpaceX",
-      "postedAt": "2026-11-07T16:44:34+01:00",
-      "summaryDe": "SpaceX: Starship bereitet sich auf den Fang vor — Flight 15 zielt auf frühestens Freitag, 13. November, vorbehaltlich behördlicher Freigabe. Offizielle Bestätigung des Doppel-Fang-Ziels.",
-      "originalText": "Starship is preparing for catch\n \nFlight 15 is targeting to launch as early as Friday, November 13, pending regulatory approval",
-      "url": "https://x.com/SpaceX/status/2119093662957060389",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@SpaceX auf X",
-          "url": "https://x.com/SpaceX/status/2119093662957060389"
-        }
-      ]
-    },
-    {
       "id": "post-musk-2119111269718364631",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
@@ -2457,13 +3119,13 @@
       ]
     },
     {
-      "id": "post-spacex-2118953789357281607",
+      "id": "post-spacex-2119093662957060389",
       "account": "@SpaceX",
       "displayName": "SpaceX",
-      "postedAt": "2026-11-07T07:28:46+01:00",
-      "summaryDe": "SpaceX bestätigt: Falcon 9 hat USSF-432 von Pad 4E in Kalifornien in die Umlaufbahn gebracht — offizielle Nachbestätigung nach Liftoff und Booster-Landung.",
-      "originalText": "Falcon 9 launches USSF-432 to orbit from pad 4E in California",
-      "url": "https://x.com/SpaceX/status/2118953789357281607",
+      "postedAt": "2026-11-07T16:44:34+01:00",
+      "summaryDe": "SpaceX: Starship bereitet sich auf den Fang vor — Flight 15 zielt auf frühestens Freitag, 13. November, vorbehaltlich behördlicher Freigabe. Offizielle Bestätigung des Doppel-Fang-Ziels.",
+      "originalText": "Starship is preparing for catch\n \nFlight 15 is targeting to launch as early as Friday, November 13, pending regulatory approval",
+      "url": "https://x.com/SpaceX/status/2119093662957060389",
       "tickers": [
         "SPCX"
       ],
@@ -2471,16 +3133,11 @@
         "SpaceX"
       ],
       "sentiment": "positiv",
-      "important": false,
       "example": false,
       "sources": [
         {
-          "title": "@SpaceX: USSF-432 to orbit",
-          "url": "https://x.com/SpaceX/status/2118953789357281607"
-        },
-        {
-          "title": "SpaceX: USSF-432 Mission",
-          "url": "https://www.spacex.com/launches/ussf432"
+          "title": "@SpaceX auf X",
+          "url": "https://x.com/SpaceX/status/2119093662957060389"
         }
       ]
     },
@@ -2513,6 +3170,34 @@
       ]
     },
     {
+      "id": "post-spacex-2118953789357281607",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-07T07:28:46+01:00",
+      "summaryDe": "SpaceX bestätigt: Falcon 9 hat USSF-432 von Pad 4E in Kalifornien in die Umlaufbahn gebracht — offizielle Nachbestätigung nach Liftoff und Booster-Landung.",
+      "originalText": "Falcon 9 launches USSF-432 to orbit from pad 4E in California",
+      "url": "https://x.com/SpaceX/status/2118953789357281607",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX: USSF-432 to orbit",
+          "url": "https://x.com/SpaceX/status/2118953789357281607"
+        },
+        {
+          "title": "SpaceX: USSF-432 Mission",
+          "url": "https://www.spacex.com/launches/ussf432"
+        }
+      ]
+    },
+    {
       "id": "post-musk-2118949190713889136",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
@@ -2533,6 +3218,82 @@
         {
           "title": "@elonmusk: Cybertruck noch 8–9 Monate",
           "url": "https://x.com/elonmusk/status/2118949190713889136"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118935230182805688",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T06:15:01+01:00",
+      "summaryDe": "Musk zitiert seinen eigenen Post von vor fünf Jahren: Schon 2021 sagte er, Mechazilla werde auch das Schiff fangen — ohne Landebeine. Passt zur Flight-15-Erzählung (Doppel-Fang).",
+      "originalText": "5 years ago — And ship will be caught by Mechazilla too. As with booster, no landing legs. Those are only needed for moon & Mars until there is local infrastructure.",
+      "url": "https://x.com/elonmusk/status/2118935230182805688",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: 5 years ago Mechazilla ship catch",
+          "url": "https://x.com/elonmusk/status/2118935230182805688"
+        },
+        {
+          "title": "Original 2021 quote (quoted)",
+          "url": "https://x.com/elonmusk/status/1426199109585756163"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118913260112273674",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T04:47:43+01:00",
+      "summaryDe": "Musk retweetet SpaceX-Launch-Direktorin Shana Diez: Flight 15 als Wendepunkt — erster Versuch Doppel-Fang; Erfolg nicht garantiert, aber nah an der vollen Mission.",
+      "originalText": "RT @ShanaDiez: It’s time to put all the pieces together… We are one step away from the full mission, and that step is the double catch. We will try for the first time on flight 15.",
+      "url": "https://x.com/elonmusk/status/2118913260112273674",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk RT Shana Diez Flight 15",
+          "url": "https://x.com/elonmusk/status/2118913260112273674"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118884500201787770",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T02:53:26+01:00",
+      "summaryDe": "WICHTIG: Musk schreibt, Neuralink werde in den kommenden Jahren Menschen wieder gehen und die Hände nutzen lassen — Vision über heutige Fähigkeiten hinaus (Zitat zu Noland Arbaugh).",
+      "originalText": "In the coming years, @Neuralink will enable people to walk and use their hands again",
+      "url": "https://x.com/elonmusk/status/2118884500201787770",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Neuralink"
+      ],
+      "sentiment": "positiv",
+      "important": true,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Neuralink walk & hands",
+          "url": "https://x.com/elonmusk/status/2118884500201787770"
         }
       ]
     },
@@ -2569,58 +3330,6 @@
       ]
     },
     {
-      "id": "post-musk-2118935230182805688",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-07T06:15:01+01:00",
-      "summaryDe": "Musk zitiert seinen eigenen Post von vor fünf Jahren: Schon 2021 sagte er, Mechazilla werde auch das Schiff fangen — ohne Landebeine. Passt zur Flight-15-Erzählung (Doppel-Fang).",
-      "originalText": "5 years ago — And ship will be caught by Mechazilla too. As with booster, no landing legs. Those are only needed for moon & Mars until there is local infrastructure.",
-      "url": "https://x.com/elonmusk/status/2118935230182805688",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX"
-      ],
-      "sentiment": "positiv",
-      "important": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk: 5 years ago Mechazilla ship catch",
-          "url": "https://x.com/elonmusk/status/2118935230182805688"
-        },
-        {
-          "title": "Original 2021 quote (quoted)",
-          "url": "https://x.com/elonmusk/status/1426199109585756163"
-        }
-      ]
-    },
-    {
-      "id": "post-rklb-2118834083279306990",
-      "account": "@RocketLab",
-      "displayName": "Rocket Lab",
-      "postedAt": "2026-11-06T23:33:06+01:00",
-      "summaryDe": "Rocket Lab: ESCAPADE-Zwillinge Blue & Gold stehen kurz vor dem Triebwerkszündungs-Manöver Richtung Mars — vier Jahre Arbeit für NASA/UC Berkeley.",
-      "originalText": "ESCAPADE is an epic interplanetary mission… Our twin spacecraft – Blue & Gold – are about to fire their engines…",
-      "url": "https://x.com/RocketLab/status/2118834083279306990",
-      "tickers": [
-        "RKLB"
-      ],
-      "companies": [
-        "Rocket Lab"
-      ],
-      "sentiment": "positiv",
-      "important": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "@RocketLab: ESCAPADE TMI incoming",
-          "url": "https://x.com/RocketLab/status/2118834083279306990"
-        }
-      ]
-    },
-    {
       "id": "post-musk-2118881284743483488",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
@@ -2646,13 +3355,13 @@
       ]
     },
     {
-      "id": "post-musk-2118913260112273674",
+      "id": "post-musk-2118880932014997910",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-07T04:47:43+01:00",
-      "summaryDe": "Musk retweetet SpaceX-Launch-Direktorin Shana Diez: Flight 15 als Wendepunkt — erster Versuch Doppel-Fang; Erfolg nicht garantiert, aber nah an der vollen Mission.",
-      "originalText": "RT @ShanaDiez: It’s time to put all the pieces together… We are one step away from the full mission, and that step is the double catch. We will try for the first time on flight 15.",
-      "url": "https://x.com/elonmusk/status/2118913260112273674",
+      "postedAt": "2026-11-07T02:39:15+01:00",
+      "summaryDe": "Musk: verlockend, einen 500-Tonnen-Schub Raptor 4 statt 250-t Raptor 3 für den äußeren Ring des Starship-Boosters zu bauen.",
+      "originalText": "It is so tempting to make a 500 ton thrust Raptor 4 in place of the 250 ton Raptor 3 for the outer ring of the Starship booster",
+      "url": "https://x.com/elonmusk/status/2118880932014997910",
       "tickers": [
         "SPCX"
       ],
@@ -2664,26 +3373,23 @@
       "example": false,
       "sources": [
         {
-          "title": "@elonmusk RT Shana Diez Flight 15",
-          "url": "https://x.com/elonmusk/status/2118913260112273674"
+          "title": "@elonmusk: Raptor 4 temptation",
+          "url": "https://x.com/elonmusk/status/2118880932014997910"
         }
       ]
     },
     {
-      "id": "post-musk-2118854441063600539",
+      "id": "post-musk-2118875601654436061",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-07T00:53:59+01:00",
-      "summaryDe": "Musk wirbt für Terafab: wer radikal neue Chip-Designs schnell iterieren will, soll zum Terafab-Projekt kommen (Link Terafab.ai).",
-      "originalText": "If you want to iterate fast with radically new chip designs, join the Terafab project!",
-      "url": "https://x.com/elonmusk/status/2118854441063600539",
+      "postedAt": "2026-11-07T02:18:04+01:00",
+      "summaryDe": "Musk: „Starship is the most powerful moving object of any kind made by humans“ — teilt Video zum Fahrzeug.",
+      "originalText": "Starship is the most powerful moving object of any kind made by humans",
+      "url": "https://x.com/elonmusk/status/2118875601654436061",
       "tickers": [
-        "TSLA",
         "SPCX"
       ],
       "companies": [
-        "Tesla",
-        "xAI",
         "SpaceX"
       ],
       "sentiment": "positiv",
@@ -2691,12 +3397,36 @@
       "example": false,
       "sources": [
         {
-          "title": "@elonmusk: join Terafab",
-          "url": "https://x.com/elonmusk/status/2118854441063600539"
+          "title": "@elonmusk: Starship most powerful",
+          "url": "https://x.com/elonmusk/status/2118875601654436061"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118872598058860671",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-07T02:06:08+01:00",
+      "summaryDe": "Musk zitiert die Booster-Landung von USSF-432: „Of course I Still Love You“ — Drohnenschiff-Landung bestätigt.",
+      "originalText": "Of course I Still Love You",
+      "url": "https://x.com/elonmusk/status/2118872598058860671",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: OCISLY",
+          "url": "https://x.com/elonmusk/status/2118872598058860671"
         },
         {
-          "title": "Terafab.ai",
-          "url": "https://Terafab.ai"
+          "title": "@SpaceX: first stage lands OCISLY",
+          "url": "https://x.com/SpaceX/status/2118870818021097862"
         }
       ]
     },
@@ -2749,17 +3479,20 @@
       ]
     },
     {
-      "id": "post-musk-2118872598058860671",
+      "id": "post-musk-2118854441063600539",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-07T02:06:08+01:00",
-      "summaryDe": "Musk zitiert die Booster-Landung von USSF-432: „Of course I Still Love You“ — Drohnenschiff-Landung bestätigt.",
-      "originalText": "Of course I Still Love You",
-      "url": "https://x.com/elonmusk/status/2118872598058860671",
+      "postedAt": "2026-11-07T00:53:59+01:00",
+      "summaryDe": "Musk wirbt für Terafab: wer radikal neue Chip-Designs schnell iterieren will, soll zum Terafab-Projekt kommen (Link Terafab.ai).",
+      "originalText": "If you want to iterate fast with radically new chip designs, join the Terafab project!",
+      "url": "https://x.com/elonmusk/status/2118854441063600539",
       "tickers": [
+        "TSLA",
         "SPCX"
       ],
       "companies": [
+        "Tesla",
+        "xAI",
         "SpaceX"
       ],
       "sentiment": "positiv",
@@ -2767,23 +3500,47 @@
       "example": false,
       "sources": [
         {
-          "title": "@elonmusk: OCISLY",
-          "url": "https://x.com/elonmusk/status/2118872598058860671"
+          "title": "@elonmusk: join Terafab",
+          "url": "https://x.com/elonmusk/status/2118854441063600539"
         },
         {
-          "title": "@SpaceX: first stage lands OCISLY",
-          "url": "https://x.com/SpaceX/status/2118870818021097862"
+          "title": "Terafab.ai",
+          "url": "https://Terafab.ai"
         }
       ]
     },
     {
-      "id": "post-musk-2118875601654436061",
+      "id": "post-rklb-2118834083279306990",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-06T23:33:06+01:00",
+      "summaryDe": "Rocket Lab: ESCAPADE-Zwillinge Blue & Gold stehen kurz vor dem Triebwerkszündungs-Manöver Richtung Mars — vier Jahre Arbeit für NASA/UC Berkeley.",
+      "originalText": "ESCAPADE is an epic interplanetary mission… Our twin spacecraft – Blue & Gold – are about to fire their engines…",
+      "url": "https://x.com/RocketLab/status/2118834083279306990",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: ESCAPADE TMI incoming",
+          "url": "https://x.com/RocketLab/status/2118834083279306990"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118811477427855594",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-07T02:18:04+01:00",
-      "summaryDe": "Musk: „Starship is the most powerful moving object of any kind made by humans“ — teilt Video zum Fahrzeug.",
-      "originalText": "Starship is the most powerful moving object of any kind made by humans",
-      "url": "https://x.com/elonmusk/status/2118875601654436061",
+      "postedAt": "2026-11-06T22:03:16+01:00",
+      "summaryDe": "Musk bestätigt erneut per RT: SpaceX bereitet den ersten Turmfang der Starship-Oberstufe (Ship 42) in etwa einer Woche vor — passt zu Flight 15 / Doppel-Fang-Ziel.",
+      "originalText": "RT @XFreeze: Elon Musk just confirmed that SpaceX is preparing to attempt the FIRST-EVER tower catch of a Starship upper stage with Ship 42…",
+      "url": "https://x.com/elonmusk/status/2118811477427855594",
       "tickers": [
         "SPCX"
       ],
@@ -2795,56 +3552,8 @@
       "example": false,
       "sources": [
         {
-          "title": "@elonmusk: Starship most powerful",
-          "url": "https://x.com/elonmusk/status/2118875601654436061"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2118880932014997910",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-07T02:39:15+01:00",
-      "summaryDe": "Musk: verlockend, einen 500-Tonnen-Schub Raptor 4 statt 250-t Raptor 3 für den äußeren Ring des Starship-Boosters zu bauen.",
-      "originalText": "It is so tempting to make a 500 ton thrust Raptor 4 in place of the 250 ton Raptor 3 for the outer ring of the Starship booster",
-      "url": "https://x.com/elonmusk/status/2118880932014997910",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX"
-      ],
-      "sentiment": "positiv",
-      "important": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk: Raptor 4 temptation",
-          "url": "https://x.com/elonmusk/status/2118880932014997910"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2118884500201787770",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-07T02:53:26+01:00",
-      "summaryDe": "WICHTIG: Musk schreibt, Neuralink werde in den kommenden Jahren Menschen wieder gehen und die Hände nutzen lassen — Vision über heutige Fähigkeiten hinaus (Zitat zu Noland Arbaugh).",
-      "originalText": "In the coming years, @Neuralink will enable people to walk and use their hands again",
-      "url": "https://x.com/elonmusk/status/2118884500201787770",
-      "tickers": [
-        "TSLA"
-      ],
-      "companies": [
-        "Neuralink"
-      ],
-      "sentiment": "positiv",
-      "important": true,
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk: Neuralink walk & hands",
-          "url": "https://x.com/elonmusk/status/2118884500201787770"
+          "title": "@elonmusk RT: Ship 42 tower catch ~1 week",
+          "url": "https://x.com/elonmusk/status/2118811477427855594"
         }
       ]
     },
@@ -2875,30 +3584,6 @@
       ]
     },
     {
-      "id": "post-musk-2118811477427855594",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-06T22:03:16+01:00",
-      "summaryDe": "Musk bestätigt erneut per RT: SpaceX bereitet den ersten Turmfang der Starship-Oberstufe (Ship 42) in etwa einer Woche vor — passt zu Flight 15 / Doppel-Fang-Ziel.",
-      "originalText": "RT @XFreeze: Elon Musk just confirmed that SpaceX is preparing to attempt the FIRST-EVER tower catch of a Starship upper stage with Ship 42…",
-      "url": "https://x.com/elonmusk/status/2118811477427855594",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX"
-      ],
-      "sentiment": "positiv",
-      "important": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk RT: Ship 42 tower catch ~1 week",
-          "url": "https://x.com/elonmusk/status/2118811477427855594"
-        }
-      ]
-    },
-    {
       "id": "post-rklb-2118804214831042777",
       "account": "@RocketLab",
       "displayName": "Rocket Lab",
@@ -2919,59 +3604,6 @@
         {
           "title": "@RocketLab: Neutron Forward Dome cured",
           "url": "https://x.com/RocketLab/status/2118804214831042777"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2118787365426893002",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-06T20:27:27+01:00",
-      "summaryDe": "Musk feiert Tesla Argentinien: Start noch in diesem Monat (laut Tesla LatAm ab 20. November). Offizieller Tesla-Account hatte zuvor „Launching in Argentina later this month“ gepostet.",
-      "originalText": "🇦🇷 🇦🇷 Tesla Argentina!! 🇦🇷 🇦🇷",
-      "url": "https://x.com/elonmusk/status/2118787365426893002",
-      "tickers": [
-        "TSLA"
-      ],
-      "companies": [
-        "Tesla"
-      ],
-      "sentiment": "positiv",
-      "important": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk: Tesla Argentina",
-          "url": "https://x.com/elonmusk/status/2118787365426893002"
-        },
-        {
-          "title": "@Tesla: Launching in Argentina later this month",
-          "url": "https://x.com/Tesla/status/2118720752379899907"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2118788513365954734",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-06T20:32:01+01:00",
-      "summaryDe": "Musk zu Starlink V4: ~100 Laser je Satellit, jeweils >10 Tb/s; mit >100.000 Satelliten sollen Unterseekabel schlagbar sein — Lichtgeschwindigkeit im All ~40 % schneller, direkter Pfad.",
-      "originalText": "~100 lasers per satellite, each operating above 10 Tb/s, with over 100k satellites should be able to outcompete undersea cables.",
-      "url": "https://x.com/elonmusk/status/2118788513365954734",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX",
-        "Starlink"
-      ],
-      "sentiment": "positiv",
-      "important": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk: Starlink lasers vs cables",
-          "url": "https://x.com/elonmusk/status/2118788513365954734"
         }
       ]
     },
@@ -3004,6 +3636,59 @@
         {
           "title": "24/7 Wall St.: Musk ARR guess vs analysts",
           "url": "https://247wallst.com/investing/2026/11/06/musk-says-spacex-will-hit-a-revenue-number-that-not-one-of-its-37-analysts-believes/"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118788513365954734",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T20:32:01+01:00",
+      "summaryDe": "Musk zu Starlink V4: ~100 Laser je Satellit, jeweils >10 Tb/s; mit >100.000 Satelliten sollen Unterseekabel schlagbar sein — Lichtgeschwindigkeit im All ~40 % schneller, direkter Pfad.",
+      "originalText": "~100 lasers per satellite, each operating above 10 Tb/s, with over 100k satellites should be able to outcompete undersea cables.",
+      "url": "https://x.com/elonmusk/status/2118788513365954734",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Starlink lasers vs cables",
+          "url": "https://x.com/elonmusk/status/2118788513365954734"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118787365426893002",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T20:27:27+01:00",
+      "summaryDe": "Musk feiert Tesla Argentinien: Start noch in diesem Monat (laut Tesla LatAm ab 20. November). Offizieller Tesla-Account hatte zuvor „Launching in Argentina later this month“ gepostet.",
+      "originalText": "🇦🇷 🇦🇷 Tesla Argentina!! 🇦🇷 🇦🇷",
+      "url": "https://x.com/elonmusk/status/2118787365426893002",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Tesla Argentina",
+          "url": "https://x.com/elonmusk/status/2118787365426893002"
+        },
+        {
+          "title": "@Tesla: Launching in Argentina later this month",
+          "url": "https://x.com/Tesla/status/2118720752379899907"
         }
       ]
     },
@@ -3181,34 +3866,6 @@
       ]
     },
     {
-      "id": "post-tesla-2118720752379899907",
-      "account": "@Tesla",
-      "displayName": "Tesla",
-      "postedAt": "2026-11-06T16:02:45+01:00",
-      "summaryDe": "Tesla: Markteintritt in Argentinien später im November (laut Tesla Latinoamérica ab 20.11.).",
-      "originalText": "Launching in Argentina later this month",
-      "url": "https://x.com/Tesla/status/2118720752379899907",
-      "tickers": [
-        "TSLA"
-      ],
-      "companies": [
-        "Tesla"
-      ],
-      "sentiment": "positiv",
-      "important": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "@Tesla: Launching in Argentina",
-          "url": "https://x.com/Tesla/status/2118720752379899907"
-        },
-        {
-          "title": "@Tesla_LatAm: Llegamos a Argentina el 20 de Noviembre",
-          "url": "https://x.com/Tesla_LatAm/status/2118674774440435905"
-        }
-      ]
-    },
-    {
       "id": "post-musk-2118732812161519852",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
@@ -3259,31 +3916,6 @@
       ]
     },
     {
-      "id": "post-spacex-2118719281038770389",
-      "account": "@SpaceX",
-      "displayName": "SpaceX",
-      "postedAt": "2026-11-06T15:56:55+01:00",
-      "summaryDe": "SpaceX veröffentlicht „Go For Orbit“: Rückblick auf Tests und Entwicklung vor dem ersten orbitalen Starship-Flug mit fortgeschrittenen Starlink-Satelliten.",
-      "originalText": "More than a dozen flight tests and years of development… all come down to this: the first orbital Starship launch carrying advanced Starlink satellites bound for space. Watch “Go For Orbit”…",
-      "url": "https://x.com/SpaceX/status/2118719281038770389",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX",
-        "Starlink"
-      ],
-      "sentiment": "positiv",
-      "important": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "@SpaceX: Go For Orbit",
-          "url": "https://x.com/SpaceX/status/2118719281038770389"
-        }
-      ]
-    },
-    {
       "id": "post-musk-2118732082843435305",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
@@ -3305,6 +3937,59 @@
           "title": "@elonmusk: dual catch upcoming flight",
           "url": "https://x.com/elonmusk/status/2118732082843435305"
         },
+        {
+          "title": "@SpaceX: Go For Orbit",
+          "url": "https://x.com/SpaceX/status/2118719281038770389"
+        }
+      ]
+    },
+    {
+      "id": "post-tesla-2118720752379899907",
+      "account": "@Tesla",
+      "displayName": "Tesla",
+      "postedAt": "2026-11-06T16:02:45+01:00",
+      "summaryDe": "Tesla: Markteintritt in Argentinien später im November (laut Tesla Latinoamérica ab 20.11.).",
+      "originalText": "Launching in Argentina later this month",
+      "url": "https://x.com/Tesla/status/2118720752379899907",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@Tesla: Launching in Argentina",
+          "url": "https://x.com/Tesla/status/2118720752379899907"
+        },
+        {
+          "title": "@Tesla_LatAm: Llegamos a Argentina el 20 de Noviembre",
+          "url": "https://x.com/Tesla_LatAm/status/2118674774440435905"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2118719281038770389",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-06T15:56:55+01:00",
+      "summaryDe": "SpaceX veröffentlicht „Go For Orbit“: Rückblick auf Tests und Entwicklung vor dem ersten orbitalen Starship-Flug mit fortgeschrittenen Starlink-Satelliten.",
+      "originalText": "More than a dozen flight tests and years of development… all come down to this: the first orbital Starship launch carrying advanced Starlink satellites bound for space. Watch “Go For Orbit”…",
+      "url": "https://x.com/SpaceX/status/2118719281038770389",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
         {
           "title": "@SpaceX: Go For Orbit",
           "url": "https://x.com/SpaceX/status/2118719281038770389"
@@ -3345,25 +4030,30 @@
       ]
     },
     {
-      "id": "post-musk-2118629153390158000",
+      "id": "post-musk-2118638089677803638",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-06T09:58:47+01:00",
-      "summaryDe": "Musk kommentiert mit „Seldon, Psychohistory“ einen Clip zu Zivilisations-Lebenszyklen — Anspielung auf Asimovs Foundation, ohne neue Produkt- oder Terminfakten.",
-      "originalText": "Seldon, Psychohistory",
-      "url": "https://x.com/elonmusk/status/2118629153390158000",
-      "tickers": [],
-      "companies": [],
-      "sentiment": "neutral",
+      "postedAt": "2026-11-06T10:34:17+01:00",
+      "summaryDe": "Musk bestätigt mit „Yes“ die These, dass solarbetriebene KI-Rechenzentren im All in etwa 2–3 Jahren der günstigste Ort für Superintelligenz sein können.",
+      "originalText": "Yes",
+      "url": "https://x.com/elonmusk/status/2118638089677803638",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "xAI"
+      ],
+      "sentiment": "positiv",
       "example": false,
       "sources": [
         {
-          "title": "@elonmusk: Seldon, Psychohistory",
-          "url": "https://x.com/elonmusk/status/2118629153390158000"
+          "title": "@elonmusk: Yes (KI-Rechenzentren im All)",
+          "url": "https://x.com/elonmusk/status/2118638089677803638"
         },
         {
-          "title": "Zitierter Clip: Zivilisations-Lebenszyklus",
-          "url": "https://x.com/i/status/2118626440778244164"
+          "title": "Zitierter Clip: niedrigste KI-Kosten im All in 2–3 Jahren",
+          "url": "https://x.com/i/status/2118447208542662763"
         }
       ]
     },
@@ -3396,59 +4086,25 @@
       ]
     },
     {
-      "id": "post-musk-2118638089677803638",
+      "id": "post-musk-2118629153390158000",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-06T10:34:17+01:00",
-      "summaryDe": "Musk bestätigt mit „Yes“ die These, dass solarbetriebene KI-Rechenzentren im All in etwa 2–3 Jahren der günstigste Ort für Superintelligenz sein können.",
-      "originalText": "Yes",
-      "url": "https://x.com/elonmusk/status/2118638089677803638",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX",
-        "xAI"
-      ],
-      "sentiment": "positiv",
+      "postedAt": "2026-11-06T09:58:47+01:00",
+      "summaryDe": "Musk kommentiert mit „Seldon, Psychohistory“ einen Clip zu Zivilisations-Lebenszyklen — Anspielung auf Asimovs Foundation, ohne neue Produkt- oder Terminfakten.",
+      "originalText": "Seldon, Psychohistory",
+      "url": "https://x.com/elonmusk/status/2118629153390158000",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
       "example": false,
       "sources": [
         {
-          "title": "@elonmusk: Yes (KI-Rechenzentren im All)",
-          "url": "https://x.com/elonmusk/status/2118638089677803638"
+          "title": "@elonmusk: Seldon, Psychohistory",
+          "url": "https://x.com/elonmusk/status/2118629153390158000"
         },
         {
-          "title": "Zitierter Clip: niedrigste KI-Kosten im All in 2–3 Jahren",
-          "url": "https://x.com/i/status/2118447208542662763"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2118596790958322075",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-06T07:50:11+01:00",
-      "summaryDe": "Musk reagiert mit „😬“ auf Jim Cramers Aussage, der KI-Aktienausverkauf sei kein neuer Dotcom-Crash — ironischer Kommentar zur Marktstimmung.",
-      "originalText": "😬",
-      "url": "https://x.com/elonmusk/status/2118596790958322075",
-      "tickers": [
-        "TSLA",
-        "SPCX"
-      ],
-      "companies": [
-        "Tesla",
-        "SpaceX"
-      ],
-      "sentiment": "negativ",
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk: 😬",
-          "url": "https://x.com/elonmusk/status/2118596790958322075"
-        },
-        {
-          "title": "Polymarket: Cramer zu KI-Ausverkauf",
-          "url": "https://x.com/Polymarket/status/2118513920839430202"
+          "title": "Zitierter Clip: Zivilisations-Lebenszyklus",
+          "url": "https://x.com/i/status/2118626440778244164"
         }
       ]
     },
@@ -3483,60 +4139,13 @@
       ]
     },
     {
-      "id": "post-starlink-2118509068897972432",
-      "account": "@Starlink",
-      "displayName": "Starlink",
-      "postedAt": "2026-11-06T02:01:36+01:00",
-      "summaryDe": "Starlink zeigt Gaming im Flugzeug mit schneller, latenzarmer Verbindung und zitiert United Airlines.",
-      "originalText": "Game in-flight with Starlink’s high-speed, low-latency internet 🛰️✈️",
-      "url": "https://x.com/Starlink/status/2118509068897972432",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX",
-        "Starlink"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@Starlink: Gaming im Flug",
-          "url": "https://x.com/Starlink/status/2118509068897972432"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2118589046289244437",
+      "id": "post-musk-2118596790958322075",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-06T07:19:24+01:00",
-      "summaryDe": "Musk teilt erneut, warum Starship voll wiederverwendbar sein muss: ohne schnelle Wiederverwendung keine echte Mehrplaneten-Zivilisation.",
-      "originalText": "RT @teslaownersSV: Elon Musk on why Starship has to be fully reusable: \"Nobody's ever made a fully reusable orbital rocket.\"",
-      "url": "https://x.com/elonmusk/status/2118589046289244437",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk RT: Starship volle Wiederverwendung",
-          "url": "https://x.com/elonmusk/status/2118589046289244437"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2118589343061491737",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-06T07:20:35+01:00",
-      "summaryDe": "Musk bestätigt „Yup“ zu einem Clip, in dem er den Aktienmarkt mit Buffetts Haus-Analogie vergleicht: täglich gerufene Kauf-/Verkaufspreise, mal mit und mal ohne Medikamente.",
-      "originalText": "Yup",
-      "url": "https://x.com/elonmusk/status/2118589343061491737",
+      "postedAt": "2026-11-06T07:50:11+01:00",
+      "summaryDe": "Musk reagiert mit „😬“ auf Jim Cramers Aussage, der KI-Aktienausverkauf sei kein neuer Dotcom-Crash — ironischer Kommentar zur Marktstimmung.",
+      "originalText": "😬",
+      "url": "https://x.com/elonmusk/status/2118596790958322075",
       "tickers": [
         "TSLA",
         "SPCX"
@@ -3545,23 +4154,27 @@
         "Tesla",
         "SpaceX"
       ],
-      "sentiment": "neutral",
+      "sentiment": "negativ",
       "example": false,
       "sources": [
         {
-          "title": "@elonmusk „Yup“ zur Markt-Analogie",
-          "url": "https://x.com/elonmusk/status/2118589343061491737"
+          "title": "@elonmusk: 😬",
+          "url": "https://x.com/elonmusk/status/2118596790958322075"
+        },
+        {
+          "title": "Polymarket: Cramer zu KI-Ausverkauf",
+          "url": "https://x.com/Polymarket/status/2118513920839430202"
         }
       ]
     },
     {
-      "id": "post-musk-2118588019230056525",
+      "id": "post-musk-2118591788701421573",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-06T07:15:19+01:00",
-      "summaryDe": "Musk teilt „Tesla Korea“: Tesla bleibt den neunten Monat in Folge Nr. 1 bei Importautos in Südkorea; Oktober-Zulassungen +110,7 % zum Vorjahr.",
-      "originalText": "🇰🇷 Tesla Korea 🇰🇷",
-      "url": "https://x.com/elonmusk/status/2118588019230056525",
+      "postedAt": "2026-11-06T07:30:18+01:00",
+      "summaryDe": "Musk: Tesla fährt die Cybertruck-Produktion in der Gigafactory Texas etwa Mitte nächsten Jahres herunter, um Platz für mehr Cybercab-Produktion zu schaffen.",
+      "originalText": "Tesla will be winding down production of the Cybertruck at Gigafactory Texas around the middle of next year to make room for increased Cybercab production",
+      "url": "https://x.com/elonmusk/status/2118591788701421573",
       "tickers": [
         "TSLA"
       ],
@@ -3572,8 +4185,12 @@
       "example": false,
       "sources": [
         {
-          "title": "@elonmusk: Tesla Korea",
-          "url": "https://x.com/elonmusk/status/2118588019230056525"
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118591788701421573"
+        },
+        {
+          "title": "Reuters/CNA: Cybertruck-Produktion wird heruntergefahren",
+          "url": "https://www.channelnewsasia.com/business/tesla-wind-down-cybertruck-production-texas-gigafactory-next-year-musk-says-6530476"
         }
       ]
     },
@@ -3630,13 +4247,61 @@
       ]
     },
     {
-      "id": "post-musk-2118591788701421573",
+      "id": "post-musk-2118589343061491737",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-06T07:30:18+01:00",
-      "summaryDe": "Musk: Tesla fährt die Cybertruck-Produktion in der Gigafactory Texas etwa Mitte nächsten Jahres herunter, um Platz für mehr Cybercab-Produktion zu schaffen.",
-      "originalText": "Tesla will be winding down production of the Cybertruck at Gigafactory Texas around the middle of next year to make room for increased Cybercab production",
-      "url": "https://x.com/elonmusk/status/2118591788701421573",
+      "postedAt": "2026-11-06T07:20:35+01:00",
+      "summaryDe": "Musk bestätigt „Yup“ zu einem Clip, in dem er den Aktienmarkt mit Buffetts Haus-Analogie vergleicht: täglich gerufene Kauf-/Verkaufspreise, mal mit und mal ohne Medikamente.",
+      "originalText": "Yup",
+      "url": "https://x.com/elonmusk/status/2118589343061491737",
+      "tickers": [
+        "TSLA",
+        "SPCX"
+      ],
+      "companies": [
+        "Tesla",
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk „Yup“ zur Markt-Analogie",
+          "url": "https://x.com/elonmusk/status/2118589343061491737"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118589046289244437",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T07:19:24+01:00",
+      "summaryDe": "Musk teilt erneut, warum Starship voll wiederverwendbar sein muss: ohne schnelle Wiederverwendung keine echte Mehrplaneten-Zivilisation.",
+      "originalText": "RT @teslaownersSV: Elon Musk on why Starship has to be fully reusable: \"Nobody's ever made a fully reusable orbital rocket.\"",
+      "url": "https://x.com/elonmusk/status/2118589046289244437",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk RT: Starship volle Wiederverwendung",
+          "url": "https://x.com/elonmusk/status/2118589046289244437"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118588019230056525",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-06T07:15:19+01:00",
+      "summaryDe": "Musk teilt „Tesla Korea“: Tesla bleibt den neunten Monat in Folge Nr. 1 bei Importautos in Südkorea; Oktober-Zulassungen +110,7 % zum Vorjahr.",
+      "originalText": "🇰🇷 Tesla Korea 🇰🇷",
+      "url": "https://x.com/elonmusk/status/2118588019230056525",
       "tickers": [
         "TSLA"
       ],
@@ -3647,12 +4312,8 @@
       "example": false,
       "sources": [
         {
-          "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2118591788701421573"
-        },
-        {
-          "title": "Reuters/CNA: Cybertruck-Produktion wird heruntergefahren",
-          "url": "https://www.channelnewsasia.com/business/tesla-wind-down-cybertruck-production-texas-gigafactory-next-year-musk-says-6530476"
+          "title": "@elonmusk: Tesla Korea",
+          "url": "https://x.com/elonmusk/status/2118588019230056525"
         }
       ]
     },
@@ -3688,6 +4349,33 @@
       ]
     },
     {
+      "id": "post-rklb-2118544706066055248",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-06T04:23:13+01:00",
+      "summaryDe": "Rocket Lab: Die ESCAPADE-Zwillinge Blue und Gold stehen kurz vor dem Mars-Einschussmanöver. Seit dem Start vor zwölf Monaten fliegen die für NASA und UC Berkeley gebauten Sonden im All.",
+      "originalText": "See you soon, Mars. Our twin spacecraft – Blue & Gold – are about to execute a trans-Mars Injection maneuver…",
+      "url": "https://x.com/RocketLab/status/2118544706066055248",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (ESCAPADE TMI)",
+          "url": "https://x.com/RocketLab/status/2118544706066055248"
+        },
+        {
+          "title": "NASA: ESCAPADE-Zwillinge Richtung Mars",
+          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+        }
+      ]
+    },
+    {
       "id": "post-rklb-2118521208639746494",
       "account": "@RocketLab",
       "displayName": "Rocket Lab",
@@ -3715,29 +4403,26 @@
       ]
     },
     {
-      "id": "post-rklb-2118544706066055248",
-      "account": "@RocketLab",
-      "displayName": "Rocket Lab",
-      "postedAt": "2026-11-06T04:23:13+01:00",
-      "summaryDe": "Rocket Lab: Die ESCAPADE-Zwillinge Blue und Gold stehen kurz vor dem Mars-Einschussmanöver. Seit dem Start vor zwölf Monaten fliegen die für NASA und UC Berkeley gebauten Sonden im All.",
-      "originalText": "See you soon, Mars. Our twin spacecraft – Blue & Gold – are about to execute a trans-Mars Injection maneuver…",
-      "url": "https://x.com/RocketLab/status/2118544706066055248",
+      "id": "post-starlink-2118509068897972432",
+      "account": "@Starlink",
+      "displayName": "Starlink",
+      "postedAt": "2026-11-06T02:01:36+01:00",
+      "summaryDe": "Starlink zeigt Gaming im Flugzeug mit schneller, latenzarmer Verbindung und zitiert United Airlines.",
+      "originalText": "Game in-flight with Starlink’s high-speed, low-latency internet 🛰️✈️",
+      "url": "https://x.com/Starlink/status/2118509068897972432",
       "tickers": [
-        "RKLB"
+        "SPCX"
       ],
       "companies": [
-        "Rocket Lab"
+        "SpaceX",
+        "Starlink"
       ],
       "sentiment": "positiv",
       "example": false,
       "sources": [
         {
-          "title": "@RocketLab auf X (ESCAPADE TMI)",
-          "url": "https://x.com/RocketLab/status/2118544706066055248"
-        },
-        {
-          "title": "NASA: ESCAPADE-Zwillinge Richtung Mars",
-          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+          "title": "@Starlink: Gaming im Flug",
+          "url": "https://x.com/Starlink/status/2118509068897972432"
         }
       ]
     },
@@ -4018,13 +4703,13 @@
       ]
     },
     {
-      "id": "post-musk-2118379126004535334",
+      "id": "post-musk-2118381856454524939",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-05T17:25:15+01:00",
-      "summaryDe": "Musk bestätigt „True“ zu einem Beitrag: Starlink werde für Airlines zum Gamechanger (höhere Kundenzufriedenheit und Loyalität); United wird als Beispiel genannt.",
-      "originalText": "True",
-      "url": "https://x.com/elonmusk/status/2118379126004535334",
+      "postedAt": "2026-11-05T17:36:06+01:00",
+      "summaryDe": "Musk: „Starlink rettet Leben.“ Er zitiert einen Bericht, wonach Starlink eine Klinik auf den abgelegenen Pangkep-Inseln (Indonesien) mit schnellem Internet versorgt – für Patientenüberweisungen und Koordination zwischen Inseln.",
+      "originalText": "Starlink saves lives",
+      "url": "https://x.com/elonmusk/status/2118381856454524939",
       "tickers": [
         "SPCX"
       ],
@@ -4037,11 +4722,34 @@
       "sources": [
         {
           "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2118379126004535334"
+          "url": "https://x.com/elonmusk/status/2118381856454524939"
         },
         {
-          "title": "Original von @XFreeze (Starlink Airlines)",
-          "url": "https://x.com/xfreeze/status/2118378758147297681"
+          "title": "Original von @cb_doge (Starlink Klinik Indonesien)",
+          "url": "https://x.com/cb_doge/status/2118335164019548524"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118380771853705309",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T17:31:48+01:00",
+      "summaryDe": "Musk kommentiert „Interesting“ zu einer Wahlgrafik: Junge Männer und Frauen mit Kindern hätten bei den Midterms deutlich weiter rechts gewählt als Gleichaltrige ohne Kinder.",
+      "originalText": "Interesting",
+      "url": "https://x.com/elonmusk/status/2118380771853705309",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2118380771853705309"
+        },
+        {
+          "title": "Original von @Smirkley",
+          "url": "https://x.com/smirkley/status/2118356806720266556"
         }
       ]
     },
@@ -4074,36 +4782,13 @@
       ]
     },
     {
-      "id": "post-musk-2118380771853705309",
+      "id": "post-musk-2118379126004535334",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-05T17:31:48+01:00",
-      "summaryDe": "Musk kommentiert „Interesting“ zu einer Wahlgrafik: Junge Männer und Frauen mit Kindern hätten bei den Midterms deutlich weiter rechts gewählt als Gleichaltrige ohne Kinder.",
-      "originalText": "Interesting",
-      "url": "https://x.com/elonmusk/status/2118380771853705309",
-      "tickers": [],
-      "companies": [],
-      "sentiment": "neutral",
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2118380771853705309"
-        },
-        {
-          "title": "Original von @Smirkley",
-          "url": "https://x.com/smirkley/status/2118356806720266556"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2118381856454524939",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-05T17:36:06+01:00",
-      "summaryDe": "Musk: „Starlink rettet Leben.“ Er zitiert einen Bericht, wonach Starlink eine Klinik auf den abgelegenen Pangkep-Inseln (Indonesien) mit schnellem Internet versorgt – für Patientenüberweisungen und Koordination zwischen Inseln.",
-      "originalText": "Starlink saves lives",
-      "url": "https://x.com/elonmusk/status/2118381856454524939",
+      "postedAt": "2026-11-05T17:25:15+01:00",
+      "summaryDe": "Musk bestätigt „True“ zu einem Beitrag: Starlink werde für Airlines zum Gamechanger (höhere Kundenzufriedenheit und Loyalität); United wird als Beispiel genannt.",
+      "originalText": "True",
+      "url": "https://x.com/elonmusk/status/2118379126004535334",
       "tickers": [
         "SPCX"
       ],
@@ -4116,11 +4801,43 @@
       "sources": [
         {
           "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2118381856454524939"
+          "url": "https://x.com/elonmusk/status/2118379126004535334"
         },
         {
-          "title": "Original von @cb_doge (Starlink Klinik Indonesien)",
-          "url": "https://x.com/cb_doge/status/2118335164019548524"
+          "title": "Original von @XFreeze (Starlink Airlines)",
+          "url": "https://x.com/xfreeze/status/2118378758147297681"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2118348502879330382",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-05T15:23:34+01:00",
+      "summaryDe": "Musk teilt einen Beitrag von @wholemars: Im Rückblick sei es ein Fehler gewesen, dass SpaceX der Ukraine zu Kriegsbeginn Tausende Starlink-Schüsseln und Gratis-Dienst geschenkt habe. Heute werde SpaceX kritisiert, wenn es militärische Nutzung nicht unterstütze. Reaktion auf Selenskyjs Kritik an Musk und passend zur Senats-Prüfung der Starshield-Drosselung.",
+      "originalText": "RT @wholemars: In hindsight, it was a mistake for SpaceX to send them thousands of free Starlink dishes and millions of dollars a month in…",
+      "url": "https://x.com/elonmusk/status/2118348502879330382",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "negativ",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (Repost)",
+          "url": "https://x.com/elonmusk/status/2118348502879330382"
+        },
+        {
+          "title": "Original von @wholemars",
+          "url": "https://x.com/wholemars/status/2118301931852738730"
+        },
+        {
+          "title": "X-News: Selenskyj kritisiert Musk",
+          "url": "https://x.com/i/trending/2118271016786948172"
         }
       ]
     },
@@ -4334,29 +5051,6 @@
       ]
     },
     {
-      "id": "post-musk-2117995339320070525",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-04T16:00:14+01:00",
-      "summaryDe": "Musk: Grok Bot soll Kaufideen recherchieren, eine Auswahl vorlegen, bestellen, Lieferungen verfolgen und Ungewolltes zurückschicken. Produktwerbung für das SI-Segment, keine Zahlen.",
-      "originalText": "Grok @Bot will research purchase ideas, bring back a selection, order them, track the purchases and return anything you don’t want",
-      "url": "https://x.com/elonmusk/status/2117995339320070525",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX (SI, ehemals xAI)"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2117995339320070525"
-        }
-      ]
-    },
-    {
       "id": "post-musk-2117996293188718856",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
@@ -4377,54 +5071,6 @@
         {
           "title": "@elonmusk auf X",
           "url": "https://x.com/elonmusk/status/2117996293188718856"
-        }
-      ]
-    },
-    {
-      "id": "post-starlink-2117973275414532165",
-      "account": "@Starlink",
-      "displayName": "Starlink",
-      "postedAt": "2026-11-04T14:32:33+01:00",
-      "summaryDe": "Starlink Mobile baut ein landesweites US-Netz aus Satelliten und Bodenstationen; die 5G-Basisstationen nutzen Qualcomm-Chips, Ausbau ab 2027.",
-      "originalText": "Starlink Mobile is building the first fully-integrated US nationwide satellite and terrestrial network that will keep people connected on their phones no matter where they are. Our 5G base stations will leverage @Qualcomm chips to accelerate deployment, starting in 2027",
-      "url": "https://x.com/Starlink/status/2117973275414532165",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX",
-        "Starlink"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@Starlink auf X",
-          "url": "https://x.com/Starlink/status/2117973275414532165"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2117989292144525474",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-04T15:36:12+01:00",
-      "summaryDe": "Musk lobt Qualcomms Technik – Reaktion auf die Partnerschaft für Starlink Mobile.",
-      "originalText": "Qualcomm’s technology is excellent",
-      "url": "https://x.com/elonmusk/status/2117989292144525474",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX",
-        "Starlink"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2117989292144525474"
         }
       ]
     },
@@ -4453,25 +5099,73 @@
       ]
     },
     {
-      "id": "post-musk-2117862462976594112",
+      "id": "post-musk-2117995339320070525",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-04T07:12:13+01:00",
-      "summaryDe": "Am Wahlmorgen: Rechenzentren im All sähen „gerade ziemlich attraktiv“ aus. Vermutlich eine Anspielung auf den Wahlsieg von Gina Hinojosa in Texas, die einen Baustopp für Rechenzentren will (meine Deutung).",
-      "originalText": "Data centers in space looking pretty appealing right now",
-      "url": "https://x.com/elonmusk/status/2117862462976594112",
+      "postedAt": "2026-11-04T16:00:14+01:00",
+      "summaryDe": "Musk: Grok Bot soll Kaufideen recherchieren, eine Auswahl vorlegen, bestellen, Lieferungen verfolgen und Ungewolltes zurückschicken. Produktwerbung für das SI-Segment, keine Zahlen.",
+      "originalText": "Grok @Bot will research purchase ideas, bring back a selection, order them, track the purchases and return anything you don’t want",
+      "url": "https://x.com/elonmusk/status/2117995339320070525",
       "tickers": [
         "SPCX"
       ],
       "companies": [
-        "SpaceX"
+        "SpaceX (SI, ehemals xAI)"
       ],
-      "sentiment": "neutral",
+      "sentiment": "positiv",
       "example": false,
       "sources": [
         {
           "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2117862462976594112"
+          "url": "https://x.com/elonmusk/status/2117995339320070525"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2117989292144525474",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-04T15:36:12+01:00",
+      "summaryDe": "Musk lobt Qualcomms Technik – Reaktion auf die Partnerschaft für Starlink Mobile.",
+      "originalText": "Qualcomm’s technology is excellent",
+      "url": "https://x.com/elonmusk/status/2117989292144525474",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2117989292144525474"
+        }
+      ]
+    },
+    {
+      "id": "post-starlink-2117973275414532165",
+      "account": "@Starlink",
+      "displayName": "Starlink",
+      "postedAt": "2026-11-04T14:32:33+01:00",
+      "summaryDe": "Starlink Mobile baut ein landesweites US-Netz aus Satelliten und Bodenstationen; die 5G-Basisstationen nutzen Qualcomm-Chips, Ausbau ab 2027.",
+      "originalText": "Starlink Mobile is building the first fully-integrated US nationwide satellite and terrestrial network that will keep people connected on their phones no matter where they are. Our 5G base stations will leverage @Qualcomm chips to accelerate deployment, starting in 2027",
+      "url": "https://x.com/Starlink/status/2117973275414532165",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Starlink auf X",
+          "url": "https://x.com/Starlink/status/2117973275414532165"
         }
       ]
     },
@@ -4501,235 +5195,48 @@
       ]
     },
     {
-      "id": "post-musk-2117649850644705591",
+      "id": "post-musk-2117862462976594112",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-11-03T17:07:23+01:00",
-      "summaryDe": "Musk ergänzt einen Beitrag, wonach KI bald an Stromgrenzen stößt: Engpässe gebe es auch bei Elektrik, Kühlung, Netzwerk und Batterien. Passt zu Teslas Speichergeschäft und SpaceX' Rechenzentren.",
-      "originalText": "And electrical equipment, cooling, networking and batteries",
-      "url": "https://x.com/elonmusk/status/2117649850644705591",
+      "postedAt": "2026-11-04T07:12:13+01:00",
+      "summaryDe": "Am Wahlmorgen: Rechenzentren im All sähen „gerade ziemlich attraktiv“ aus. Vermutlich eine Anspielung auf den Wahlsieg von Gina Hinojosa in Texas, die einen Baustopp für Rechenzentren will (meine Deutung).",
+      "originalText": "Data centers in space looking pretty appealing right now",
+      "url": "https://x.com/elonmusk/status/2117862462976594112",
       "tickers": [
-        "SPCX",
-        "TSLA"
+        "SPCX"
       ],
       "companies": [
-        "SpaceX",
-        "Tesla"
+        "SpaceX"
       ],
       "sentiment": "neutral",
       "example": false,
       "sources": [
         {
           "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2117649850644705591"
+          "url": "https://x.com/elonmusk/status/2117862462976594112"
         }
       ]
     },
     {
-      "id": "post-musk-2117650707398664501",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-03T17:10:47+01:00",
-      "summaryDe": "Musk teilt, dass Starlink Fluggesellschaften Kunden bringe (etwa ZIPAIR).",
-      "originalText": "Starlink grows customers for airlines",
-      "url": "https://x.com/elonmusk/status/2117650707398664501",
+      "id": "post-rklb-2117715361714016621",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-03T21:27:42+01:00",
+      "summaryDe": "Erstes Bild von Maxwell, dem für Viasat gebauten Satelliten: gesund und schneller als geplant in der Inbetriebnahme.",
+      "originalText": "Maxwell is healthy and moving through commissioning ahead of schedule.",
+      "url": "https://x.com/RocketLab/status/2117715361714016621",
       "tickers": [
-        "SPCX"
+        "RKLB"
       ],
       "companies": [
-        "SpaceX",
-        "Starlink"
+        "Rocket Lab"
       ],
       "sentiment": "positiv",
       "example": false,
       "sources": [
         {
-          "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2117650707398664501"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2117651007538884899",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-03T17:11:58+01:00",
-      "summaryDe": "Musk wirbt für Grok Bot, das KI-Assistenzprodukt aus SpaceX' SI-Segment: man solle es wie einen fähigen Kollegen behandeln.",
-      "originalText": "Grok @Bot is like hiring a super competent employee. Treat Bot like you would a colleague.",
-      "url": "https://x.com/elonmusk/status/2117651007538884899",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2117651007538884899"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2116019939056513218",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-10-30T05:10:41+01:00",
-      "summaryDe": "Neuralinks zweites Produkt heißt Blindsight und soll auch von Geburt an Blinden Sehen ermöglichen. Laut Musk technisch fertig, es fehle nur die Zulassung.",
-      "originalText": "Our second product is called Blindsight and it will, as the name suggests, enable even those who are completely blind or have never seen to see. It is ready from an engineering standpoint. Just waiting on regulatory approval.",
-      "url": "https://x.com/elonmusk/status/2116019939056513218",
-      "tickers": [],
-      "companies": [
-        "Neuralink"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2116019939056513218"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2115634093949911506",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-10-29T03:37:29+01:00",
-      "summaryDe": "Musk: Ship 42 werde das erste Starship sein, das der Turm fängt.",
-      "originalText": "As the prophecy foretold, Starship 42 will be the first tower catch",
-      "url": "https://x.com/elonmusk/status/2115634093949911506",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2115634093949911506"
-        }
-      ]
-    },
-    {
-      "id": "post-musk-2115324467295756543",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-10-28T07:07:08+01:00",
-      "summaryDe": "Musk: 10.000 Starship-Starts pro Jahr allein vom geplanten Starbase in Louisiana. Ein Fernziel, keine Planung mit Datum.",
-      "originalText": "10k Starship launches/year is just from Starbase Louisiana",
-      "url": "https://x.com/elonmusk/status/2115324467295756543",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2115324467295756543"
-        }
-      ]
-    },
-    {
-      "id": "post-spacex-2115476295169814978",
-      "account": "@SpaceX",
-      "displayName": "SpaceX",
-      "postedAt": "2026-10-28T17:10:27+01:00",
-      "summaryDe": "Ship 42 hat alle Static Fires für Flight 15 hinter sich: sechs Triebwerke über die volle Dauer plus eine einzelne Zündung als Probe für das Bremsmanöver.",
-      "originalText": "Ship 42 static fires complete. The Starship preparing for Flight 15 performed a full duration, six-engine static fire, and fired a single Raptor engine to simulate a deorbit burn",
-      "url": "https://x.com/SpaceX/status/2115476295169814978",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@SpaceX auf X",
-          "url": "https://x.com/SpaceX/status/2115476295169814978"
-        }
-      ]
-    },
-    {
-      "id": "post-spacex-2114444137067844004",
-      "account": "@SpaceX",
-      "displayName": "SpaceX",
-      "postedAt": "2026-10-25T20:49:01+01:00",
-      "summaryDe": "Der Super-Heavy-Booster für Flight 15 hat alle 33 Triebwerke über die volle Dauer gezündet.",
-      "originalText": "Full duration 33-engine static fire for the Super Heavy booster preparing for Flight 15",
-      "url": "https://x.com/SpaceX/status/2114444137067844004",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@SpaceX auf X",
-          "url": "https://x.com/SpaceX/status/2114444137067844004"
-        }
-      ]
-    },
-    {
-      "id": "post-spacex-2116401549828391177",
-      "account": "@SpaceX",
-      "displayName": "SpaceX",
-      "postedAt": "2026-10-31T06:27:04+01:00",
-      "summaryDe": "Routine: Falcon 9 bringt 27 Starlink-Satelliten von Kalifornien aus in den Orbit.",
-      "originalText": "Falcon 9 launches 27 @Starlink satellites from California",
-      "url": "https://x.com/SpaceX/status/2116401549828391177",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX",
-        "Starlink"
-      ],
-      "sentiment": "neutral",
-      "example": false,
-      "sources": [
-        {
-          "title": "@SpaceX auf X",
-          "url": "https://x.com/SpaceX/status/2116401549828391177"
-        }
-      ]
-    },
-    {
-      "id": "post-starlink-2114747196226859108",
-      "account": "@Starlink",
-      "displayName": "Starlink",
-      "postedAt": "2026-10-26T16:53:16+01:00",
-      "summaryDe": "Starlink Mobile ist mit Vivo in Brasilien gestartet: 50 Mio. Kunden können in Funklöchern Apps und Nachrichten nutzen, 7 Mio. Telefone sind schon verbunden.",
-      "originalText": "Starlink Mobile is now live in Brazil with @vivobr! 50M customers can use apps and messaging in cellular dead zones — with 7M phones already connected.",
-      "url": "https://x.com/Starlink/status/2114747196226859108",
-      "tickers": [
-        "SPCX"
-      ],
-      "companies": [
-        "SpaceX",
-        "Starlink"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@Starlink auf X",
-          "url": "https://x.com/Starlink/status/2114747196226859108"
+          "title": "@RocketLab auf X",
+          "url": "https://x.com/RocketLab/status/2117715361714016621"
         }
       ]
     },
@@ -4780,67 +5287,74 @@
       ]
     },
     {
-      "id": "post-musk-2116287873918140737",
+      "id": "post-musk-2117651007538884899",
       "account": "@elonmusk",
       "displayName": "Elon Musk",
-      "postedAt": "2026-10-30T22:55:22+01:00",
-      "summaryDe": "Musk teilt, dass Ex-F1-Weltmeister Nico Rosberg Teslas Selbstfahr-Software mag.",
-      "originalText": "Even F1 champions love Tesla self-driving",
-      "url": "https://x.com/elonmusk/status/2116287873918140737",
+      "postedAt": "2026-11-03T17:11:58+01:00",
+      "summaryDe": "Musk wirbt für Grok Bot, das KI-Assistenzprodukt aus SpaceX' SI-Segment: man solle es wie einen fähigen Kollegen behandeln.",
+      "originalText": "Grok @Bot is like hiring a super competent employee. Treat Bot like you would a colleague.",
+      "url": "https://x.com/elonmusk/status/2117651007538884899",
       "tickers": [
-        "TSLA"
+        "SPCX"
       ],
       "companies": [
-        "Tesla"
+        "SpaceX"
       ],
       "sentiment": "positiv",
       "example": false,
       "sources": [
         {
           "title": "@elonmusk auf X",
-          "url": "https://x.com/elonmusk/status/2116287873918140737"
+          "url": "https://x.com/elonmusk/status/2117651007538884899"
         }
       ]
     },
     {
-      "id": "post-neuralink-2115878440402325727",
-      "account": "@neuralink",
-      "displayName": "Neuralink",
-      "postedAt": "2026-10-29T19:48:25+01:00",
-      "summaryDe": "Aus dem Neuralink-Hackathon: Die App Bloom speist per Gehirn-Implantat erzeugte Sprache direkt in iPhone-Telefonate ein.",
-      "originalText": "We integrated Bloom with iPhone calling so BCI speech is injected directly into the call’s mic stream, giving the other person clear, consistent audio.",
-      "url": "https://x.com/neuralink/status/2115878440402325727",
-      "tickers": [],
+      "id": "post-musk-2117650707398664501",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-03T17:10:47+01:00",
+      "summaryDe": "Musk teilt, dass Starlink Fluggesellschaften Kunden bringe (etwa ZIPAIR).",
+      "originalText": "Starlink grows customers for airlines",
+      "url": "https://x.com/elonmusk/status/2117650707398664501",
+      "tickers": [
+        "SPCX"
+      ],
       "companies": [
-        "Neuralink"
+        "SpaceX",
+        "Starlink"
       ],
       "sentiment": "positiv",
       "example": false,
       "sources": [
         {
-          "title": "@neuralink auf X",
-          "url": "https://x.com/neuralink/status/2115878440402325727"
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2117650707398664501"
         }
       ]
     },
     {
-      "id": "post-boring-2115587065282982342",
-      "account": "@boringcompany",
-      "displayName": "The Boring Company",
-      "postedAt": "2026-10-29T00:30:36+01:00",
-      "summaryDe": "Boring Company steuert Bohrmaschinen aus der Zentrale in Texas: Tunnelbau in Las Vegas und Nashville, in San Antonio Inbetriebnahme, dort wird noch nicht gebohrt.",
-      "originalText": "Today, the team is remotely controlling machines in Vegas (tunneling), Nashville (tunneling), and San Antonio (commissioning; not yet tunneling).",
-      "url": "https://x.com/boringcompany/status/2115587065282982342",
-      "tickers": [],
+      "id": "post-musk-2117649850644705591",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-03T17:07:23+01:00",
+      "summaryDe": "Musk ergänzt einen Beitrag, wonach KI bald an Stromgrenzen stößt: Engpässe gebe es auch bei Elektrik, Kühlung, Netzwerk und Batterien. Passt zu Teslas Speichergeschäft und SpaceX' Rechenzentren.",
+      "originalText": "And electrical equipment, cooling, networking and batteries",
+      "url": "https://x.com/elonmusk/status/2117649850644705591",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
       "companies": [
-        "The Boring Company"
+        "SpaceX",
+        "Tesla"
       ],
       "sentiment": "neutral",
       "example": false,
       "sources": [
         {
-          "title": "@boringcompany auf X",
-          "url": "https://x.com/boringcompany/status/2115587065282982342"
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2117649850644705591"
         }
       ]
     },
@@ -4868,29 +5382,6 @@
       ]
     },
     {
-      "id": "post-rklb-2117715361714016621",
-      "account": "@RocketLab",
-      "displayName": "Rocket Lab",
-      "postedAt": "2026-11-03T21:27:42+01:00",
-      "summaryDe": "Erstes Bild von Maxwell, dem für Viasat gebauten Satelliten: gesund und schneller als geplant in der Inbetriebnahme.",
-      "originalText": "Maxwell is healthy and moving through commissioning ahead of schedule.",
-      "url": "https://x.com/RocketLab/status/2117715361714016621",
-      "tickers": [
-        "RKLB"
-      ],
-      "companies": [
-        "Rocket Lab"
-      ],
-      "sentiment": "positiv",
-      "example": false,
-      "sources": [
-        {
-          "title": "@RocketLab auf X",
-          "url": "https://x.com/RocketLab/status/2117715361714016621"
-        }
-      ]
-    },
-    {
       "id": "post-rklb-2117350920757588325",
       "account": "@RocketLab",
       "displayName": "Rocket Lab",
@@ -4914,13 +5405,13 @@
       ]
     },
     {
-      "id": "post-musk-2118348502879330382",
-      "account": "@elonmusk",
-      "displayName": "Elon Musk",
-      "postedAt": "2026-11-05T15:23:34+01:00",
-      "summaryDe": "Musk teilt einen Beitrag von @wholemars: Im Rückblick sei es ein Fehler gewesen, dass SpaceX der Ukraine zu Kriegsbeginn Tausende Starlink-Schüsseln und Gratis-Dienst geschenkt habe. Heute werde SpaceX kritisiert, wenn es militärische Nutzung nicht unterstütze. Reaktion auf Selenskyjs Kritik an Musk und passend zur Senats-Prüfung der Starshield-Drosselung.",
-      "originalText": "RT @wholemars: In hindsight, it was a mistake for SpaceX to send them thousands of free Starlink dishes and millions of dollars a month in…",
-      "url": "https://x.com/elonmusk/status/2118348502879330382",
+      "id": "post-spacex-2116401549828391177",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-10-31T06:27:04+01:00",
+      "summaryDe": "Routine: Falcon 9 bringt 27 Starlink-Satelliten von Kalifornien aus in den Orbit.",
+      "originalText": "Falcon 9 launches 27 @Starlink satellites from California",
+      "url": "https://x.com/SpaceX/status/2116401549828391177",
       "tickers": [
         "SPCX"
       ],
@@ -4928,23 +5419,217 @@
         "SpaceX",
         "Starlink"
       ],
-      "sentiment": "negativ",
+      "sentiment": "neutral",
       "example": false,
       "sources": [
         {
-          "title": "@elonmusk auf X (Repost)",
-          "url": "https://x.com/elonmusk/status/2118348502879330382"
-        },
+          "title": "@SpaceX auf X",
+          "url": "https://x.com/SpaceX/status/2116401549828391177"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2116287873918140737",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-10-30T22:55:22+01:00",
+      "summaryDe": "Musk teilt, dass Ex-F1-Weltmeister Nico Rosberg Teslas Selbstfahr-Software mag.",
+      "originalText": "Even F1 champions love Tesla self-driving",
+      "url": "https://x.com/elonmusk/status/2116287873918140737",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
         {
-          "title": "Original von @wholemars",
-          "url": "https://x.com/wholemars/status/2118301931852738730"
-        },
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2116287873918140737"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2116019939056513218",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-10-30T05:10:41+01:00",
+      "summaryDe": "Neuralinks zweites Produkt heißt Blindsight und soll auch von Geburt an Blinden Sehen ermöglichen. Laut Musk technisch fertig, es fehle nur die Zulassung.",
+      "originalText": "Our second product is called Blindsight and it will, as the name suggests, enable even those who are completely blind or have never seen to see. It is ready from an engineering standpoint. Just waiting on regulatory approval.",
+      "url": "https://x.com/elonmusk/status/2116019939056513218",
+      "tickers": [],
+      "companies": [
+        "Neuralink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
         {
-          "title": "X-News: Selenskyj kritisiert Musk",
-          "url": "https://x.com/i/trending/2118271016786948172"
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2116019939056513218"
+        }
+      ]
+    },
+    {
+      "id": "post-neuralink-2115878440402325727",
+      "account": "@neuralink",
+      "displayName": "Neuralink",
+      "postedAt": "2026-10-29T19:48:25+01:00",
+      "summaryDe": "Aus dem Neuralink-Hackathon: Die App Bloom speist per Gehirn-Implantat erzeugte Sprache direkt in iPhone-Telefonate ein.",
+      "originalText": "We integrated Bloom with iPhone calling so BCI speech is injected directly into the call’s mic stream, giving the other person clear, consistent audio.",
+      "url": "https://x.com/neuralink/status/2115878440402325727",
+      "tickers": [],
+      "companies": [
+        "Neuralink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@neuralink auf X",
+          "url": "https://x.com/neuralink/status/2115878440402325727"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2115634093949911506",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-10-29T03:37:29+01:00",
+      "summaryDe": "Musk: Ship 42 werde das erste Starship sein, das der Turm fängt.",
+      "originalText": "As the prophecy foretold, Starship 42 will be the first tower catch",
+      "url": "https://x.com/elonmusk/status/2115634093949911506",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2115634093949911506"
+        }
+      ]
+    },
+    {
+      "id": "post-boring-2115587065282982342",
+      "account": "@boringcompany",
+      "displayName": "The Boring Company",
+      "postedAt": "2026-10-29T00:30:36+01:00",
+      "summaryDe": "Boring Company steuert Bohrmaschinen aus der Zentrale in Texas: Tunnelbau in Las Vegas und Nashville, in San Antonio Inbetriebnahme, dort wird noch nicht gebohrt.",
+      "originalText": "Today, the team is remotely controlling machines in Vegas (tunneling), Nashville (tunneling), and San Antonio (commissioning; not yet tunneling).",
+      "url": "https://x.com/boringcompany/status/2115587065282982342",
+      "tickers": [],
+      "companies": [
+        "The Boring Company"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@boringcompany auf X",
+          "url": "https://x.com/boringcompany/status/2115587065282982342"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2115476295169814978",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-10-28T17:10:27+01:00",
+      "summaryDe": "Ship 42 hat alle Static Fires für Flight 15 hinter sich: sechs Triebwerke über die volle Dauer plus eine einzelne Zündung als Probe für das Bremsmanöver.",
+      "originalText": "Ship 42 static fires complete. The Starship preparing for Flight 15 performed a full duration, six-engine static fire, and fired a single Raptor engine to simulate a deorbit burn",
+      "url": "https://x.com/SpaceX/status/2115476295169814978",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X",
+          "url": "https://x.com/SpaceX/status/2115476295169814978"
+        }
+      ]
+    },
+    {
+      "id": "post-musk-2115324467295756543",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-10-28T07:07:08+01:00",
+      "summaryDe": "Musk: 10.000 Starship-Starts pro Jahr allein vom geplanten Starbase in Louisiana. Ein Fernziel, keine Planung mit Datum.",
+      "originalText": "10k Starship launches/year is just from Starbase Louisiana",
+      "url": "https://x.com/elonmusk/status/2115324467295756543",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X",
+          "url": "https://x.com/elonmusk/status/2115324467295756543"
+        }
+      ]
+    },
+    {
+      "id": "post-starlink-2114747196226859108",
+      "account": "@Starlink",
+      "displayName": "Starlink",
+      "postedAt": "2026-10-26T16:53:16+01:00",
+      "summaryDe": "Starlink Mobile ist mit Vivo in Brasilien gestartet: 50 Mio. Kunden können in Funklöchern Apps und Nachrichten nutzen, 7 Mio. Telefone sind schon verbunden.",
+      "originalText": "Starlink Mobile is now live in Brazil with @vivobr! 50M customers can use apps and messaging in cellular dead zones — with 7M phones already connected.",
+      "url": "https://x.com/Starlink/status/2114747196226859108",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Starlink auf X",
+          "url": "https://x.com/Starlink/status/2114747196226859108"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2114444137067844004",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-10-25T20:49:01+01:00",
+      "summaryDe": "Der Super-Heavy-Booster für Flight 15 hat alle 33 Triebwerke über die volle Dauer gezündet.",
+      "originalText": "Full duration 33-engine static fire for the Super Heavy booster preparing for Flight 15",
+      "url": "https://x.com/SpaceX/status/2114444137067844004",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X",
+          "url": "https://x.com/SpaceX/status/2114444137067844004"
         }
       ]
     }
   ],
-  "notes": "09.11. 18:15: seit 16:10 rund 15 neue Musk-Posts, viele Politik-Retweets. Firmenbezogen: „Project Crystal Sun“ (Bericht über Baustart der Tesla-Solarfabrik bei Houston, von Tesla nicht offiziell bestätigt), Antwort zum AI6-Speicher, Grok-Anekdote, Retweet zu Texas-Demokraten/WSJ, Starlink-Rettungsgeschichten. @Starlink: Brussels Airlines. Keine neuen Posts von SpaceX, Tesla, Rocket Lab, Neuralink, xAI, Boring. NASA bestätigt beide ESCAPADE-Manöver."
+  "notes": "10.11. 05:30: 22 neue Musk-Posts seit 09.11. 17:03, überwiegend Politik (Urteil gegen Russell Brand, Großbritannien). Firmenbezogen: Grok findet laut SpaceX-Launchchef Fremdkörper zu 99,9 %, Memphis-Steuern aus dem SpaceX-Rechenzentrum 54 Mio. $, Starlink in Vietnam, Jay Leno testet FSD, Lob für Shotwell, Spitze gegen Anthropic. @RocketLab: Rekordquartal und Neutron-Aufträge über 515 Mio. $. @robotaxi: drei Werbe-Posts zur CoRL in Austin. Keine neuen Posts von SpaceX, Tesla, Starlink, xAI, Neuralink, Boring. Nichts Wichtiges."
 }

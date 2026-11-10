@@ -8852,7 +8852,7 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Schluss +5,8 % auf 142,07 $ nach +8,6 % am Freitag (Yahoo Finance). Treiber: breite Erholung von Chips und KI-Werten nach dem Ausverkauf der Vorwoche – Nasdaq +2,7 %, Halbleiter-Index ~+7 %, Öl deutlich billiger (Reuters) –, dazu NASAs neue Mond-Lieferaufträge (CLPS 2, SpaceX unter acht Firmen) und Stifel mit Ziel 190 $. Bremse: Haltefrist-Ende am 8.12.",
+      "why": "Schluss +5,8 % auf 142,07 $ nach +8,6 % am Freitag (Yahoo Finance). Treiber: breite Erholung von Chips und KI-Werten nach dem Ausverkauf der Vorwoche – Nasdaq +2,7 %, Halbleiter-Index ~+7 %, Öl deutlich billiger (Reuters) –, dazu NASAs neue Mond-Lieferaufträge (CLPS 2, SpaceX unter acht Firmen) und Stifel mit Ziel 190 $. Bremse: Haltefrist-Ende am 8.12. Di früh: Nasdaq-Futures +0,2 %, Nikkei +2,9 % mit Chipwerten (Investing.com, Nikkei).",
       "whySources": [
         {
           "title": "Yahoo Finance: SPCX",
@@ -8873,6 +8873,14 @@
         {
           "title": "NASA: Aufträge für Mondbasis-Transporte (CLPS 2, 7.11.)",
           "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/"
+        },
+        {
+          "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
+        },
+        {
+          "title": "Nikkei: Nikkei 225 wieder über 60.000 (10.11.)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL100E50Q6A111C2000000/"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -24320,7 +24328,7 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Schluss +5,5 % auf 378,05 $ (Yahoo Finance). Treiber: Musk will die Cybertruck-Fertigung in Texas Mitte 2027 beenden und die Fläche fürs Cybercab nutzen – Anleger lesen das als Fokus aufs Robotaxi (Investing.com). Dazu Robotaxi in San Antonio und die breite Erholung: Nicht-Basiskonsum und Industrie je etwa +4 %, Nasdaq +2,7 % (Reuters). Gegenwind: China-Verkäufe im Oktober auf Vier-Jahres-Tief (IBD).",
+      "why": "Schluss +5,5 % auf 378,05 $ (Yahoo Finance). Treiber: Musk will die Cybertruck-Fertigung in Texas Mitte 2027 beenden und die Fläche fürs Cybercab nutzen – Anleger lesen das als Fokus aufs Robotaxi (Investing.com). Dazu Robotaxi in San Antonio und die breite Erholung: Nicht-Basiskonsum und Industrie je etwa +4 %, Nasdaq +2,7 % (Reuters). Gegenwind: China-Verkäufe im Oktober auf Vier-Jahres-Tief (IBD). Di früh: Nasdaq-Futures +0,2 % vor dem CPI um 14:30 (Investing.com).",
       "whySources": [
         {
           "title": "Yahoo Finance: TSLA",
@@ -24341,6 +24349,10 @@
         {
           "title": "IBD: China-Verkäufe schwach, Robotaxi San Antonio (9.11.)",
           "url": "https://www.investors.com/news/tesla-elon-musk-robotaxi-china/"
+        },
+        {
+          "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -36546,23 +36558,27 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Schluss +10,9 % auf 58,86 $ nach +15 % am Freitag (Yahoo Finance). Treiber: Positionierung vor den Q3-Zahlen und Erholung der Raumfahrt-Werte. Die Zahlen um 22:05: Rekordumsatz 267,8 Mio. $ (+73 %, über Prognose und Konsens), Auftragsbestand ~3,57 Mrd. $ (+52 %), Q4-Ausblick 270–290 Mio. $. Dagegen: Verlust je Aktie −0,12 $ statt −0,07 $ (Einmalkosten). Nachbörslich zunächst bis ~−7 % auf ~54,8 $ (22:13), Call um 23:00.",
+      "why": "Schluss Mo +10,9 % auf 58,86 $ (Yahoo Finance). Nach den Q3-Zahlen nachbörslich −6,5 % auf 55,02 $ (Investing.com): Rekordumsatz 267,8 Mio. $ und Auftragsbestand ~3,6 Mrd. $, dazu acht Neutron-Aufträge über 515 Mio. $ zu einem Grundpreis von 70 statt 55 Mio. $ (Rocket Lab). Dagegen: Verlust je Aktie −0,12 $ statt −0,07 $, höhere Ausgaben, Neutron erst 2027. Piper Sandler senkt das Kursziel von 83 auf 58 $.",
       "whySources": [
+        {
+          "title": "Yahoo Finance: RKLB",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "title": "Investing.com: RKLB nachbörslich −6,5 % auf 55,02 $ (Call-Transkript)",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-rocket-lab-beats-revenue-in-q3-2026-stock-swings-lower-after-hours-93CH-5013696"
+        },
         {
           "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
           "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
         },
         {
-          "title": "24/7 Wall St.: RKLB Q3 – Umsatz über, EPS unter Erwartung (9.11.)",
-          "url": "https://247wallst.com/investing/2026/11/09/live-will-rocket-lab-smash-q3-earnings-tonight-after-jumping-10-intraday/"
+          "title": "Rocket Lab: Neutron-Aufträge über 515 Mio. $ (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation"
         },
         {
-          "title": "Yahoo Finance: RKLB (inkl. Nachbörse)",
-          "url": "https://finance.yahoo.com/quote/RKLB/"
-        },
-        {
-          "title": "24/7 Wall St.: Rocket Lab +9 % vor Zahlen, SpaceX +6 % (9.11.)",
-          "url": "https://247wallst.com/investing/2026/11/09/rocket-lab-jumps-9-ahead-of-earnings-ast-spacemobile-surges-11-on-japan-satellite-venture-with-rakuten-spacex-rises-6/"
+          "title": "Rallies: Piper Sandler senkt RKLB-Kursziel auf 58 $ (10.11.)",
+          "url": "https://rallies.ai/news/rocket-lab-corp-piper-sandler-cuts-target-price-to-58-from-83-009ff33228067663"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
