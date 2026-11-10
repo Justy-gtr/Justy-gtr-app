@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T09:25:00+01:00",
+  "updatedAt": "2026-11-10T09:31:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 60,
       "postsCount": 20,
-      "reason": "Vorfreude auf Starship-Flug 15 am Freitag mit Doppel-Fang; dazu +5,8 % am Montag, NASA-Mondaufträge und Starlink bei Lufthansa. FAA-Freigabe fehlt noch.",
+      "reason": "Flug 15 am Freitag (13.11.) mit erstem Doppel-Fang ist Hauptthema; viele freuen sich über +5,8 % am Montag, Kurs über dem IPO-Preis. FAA-Freigabe fehlt noch.",
       "sources": [
         {
-          "title": "Booster B22 rollt zur Rampe für Flug 15",
-          "url": "https://x.com/DimaZeniuk/status/2120050024188887378"
+          "title": "Starship Flug 15: Doppel-Fang am 13.11. geplant",
+          "url": "https://x.com/dogeofficialceo/status/2120063925131628916"
         },
         {
-          "title": "Brussels Airlines (Lufthansa) fliegt erstmals mit Starlink",
-          "url": "https://x.com/spcxGOD/status/2120056614560395370"
+          "title": "SPCX schließt Montag bei 142,07 $ (+5,8 %)",
+          "url": "https://x.com/kongbaest/status/2120067427929305340"
         },
         {
-          "title": "SPCX +5,8 %: NASA-Mond-Pool CLPS 2, Flug 15 frühestens 13.11.",
-          "url": "https://x.com/AsLongAslCan/status/2120054632156176394"
+          "title": "Startvorbereitung Starship Flug 15 (Update)",
+          "url": "https://x.com/CenapKoehler/status/2120071243973922923"
         }
       ],
-      "updatedAt": "2026-11-10T09:25:00+01:00"
+      "updatedAt": "2026-11-10T09:31:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 20,
+      "score": 15,
       "postsCount": 20,
-      "reason": "Robotaxi-Ausbau (+5,5 % am Montag), FSD heißt jetzt TAD, Solarfabrik bei Houston; deutsche Posts vergleichen mit Xpeng, Kritik an 0 % Umsatzwachstum.",
+      "reason": "Erholung um 5,5 % und zurück über der 50-Tage-Linie; Robotaxi und Solarprojekt in Texas sind Thema. Kritik am Cybertruck-Aus bis Mitte 2027.",
       "sources": [
         {
-          "title": "TSLA +5,5 % am Montag nach Robotaxi-Ausbau",
-          "url": "https://x.com/ankushtasildar/status/2120043217290949016"
+          "title": "TSLA +5,5 %, 50-Tage-Linie zurückerobert",
+          "url": "https://x.com/FelixR229/status/2120067886962065465"
         },
         {
-          "title": "Software-Update: Aus FSD wird Tesla Assisted Driving",
-          "url": "https://x.com/EFIEBER_ANDRE/status/2120053864715911510"
+          "title": "Cybertruck-Produktion endet Mitte 2027",
+          "url": "https://x.com/TheXNote/status/2120066545015549959"
         },
         {
-          "title": "Q3-Umsatzwachstum: Tesla bei 0 %",
-          "url": "https://x.com/AnessHusseinAli/status/2120043528029876440"
+          "title": "Erdarbeiten für Project Crystal Sun in Texas",
+          "url": "https://x.com/TeslaOptimusHub/status/2120070890150904019"
         }
       ],
-      "updatedAt": "2026-11-10T09:25:00+01:00"
+      "updatedAt": "2026-11-10T09:31:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": -15,
+      "score": -10,
       "postsCount": 20,
-      "reason": "Q3: Umsatz besser, aber höherer Verlust; vorbörslich etwa 7 % im Minus, Piper Sandler senkt Kursziel auf 58 $. Starke Neutron-Buchungen, Start aber erst 2027.",
+      "reason": "Rekordumsatz in Q3 (+73 %) und Auftragsbestand 3,6 Mrd. $ werden gelobt, doch höherer Verlust drückt den Kurs nachbörslich um 6–8 %.",
       "sources": [
         {
-          "title": "Rocket Lab Q3: Umsatz geschlagen, Gewinn verfehlt",
-          "url": "https://x.com/iothomehacking/status/2120049551163728096"
+          "title": "Q3: Umsatz +73 %, Verlust größer als erwartet",
+          "url": "https://x.com/stock_duty/status/2120065649158308046"
         },
         {
-          "title": "RKLB seit Börsenschluss rund −7,4 %",
-          "url": "https://x.com/perpequities/status/2120048839034114400"
+          "title": "Rekord-Quartal, Neutron mit 16 Buchungen",
+          "url": "https://x.com/Neil_Shares/status/2120065120978214946"
         },
         {
-          "title": "Neutron-Deals 515 Mio. $, Erststart frühestens 2027",
-          "url": "https://x.com/happypepi_slav/status/2120055356537676210"
+          "title": "RKLB nachbörslich rund −8 %",
+          "url": "https://x.com/nm_0125/status/2120068512198889870"
         }
       ],
-      "updatedAt": "2026-11-10T09:25:00+01:00"
+      "updatedAt": "2026-11-10T09:31:00+01:00"
     }
   }
 }
