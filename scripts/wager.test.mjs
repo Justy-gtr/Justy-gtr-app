@@ -76,11 +76,10 @@ test("Neue Posts, geänderte Termine und Schwarm-Einträge setzen einen Punkt", 
     prices: { tickers: [{ symbol: "SPCX", priceEur: 120, changePct: 1.2 }] }
   };
   const store = {};
-  for (const tab of ["posts", "kalender", "schwarm", "charts", "mehr"]) markTabSeen(store, data, tab);
+  for (const tab of ["posts", "kalender", "schwarm", "mehr"]) markTabSeen(store, data, tab);
   assert.deepEqual(unreadTabs(data, store).posts, []);
   assert.deepEqual(unreadTabs(data, store).kalender, []);
   assert.deepEqual(unreadTabs(data, store).schwarm, []);
-  assert.deepEqual(unreadTabs(data, store).charts, []);
   assert.deepEqual(unreadTabs(data, store).mehr, []);
 
   data.posts.posts.push({ id: "post-neu" });
@@ -99,7 +98,7 @@ test("Neue Posts, geänderte Termine und Schwarm-Einträge setzen einen Punkt", 
   data.prices.tickers[0].priceEur = 4;
   data.prices.tickers[0].changePct = -6;
   assert.deepEqual(unreadTabs(data, store).schwarm, []);
-  assert.deepEqual(tabSignals(data, store).charts, []);
+  assert.equal(Object.hasOwn(tabSignals(data, store), "charts"), false);
   data.crowd.investors[0].tickers[0].mentions = 8;
   assert.equal(unreadTabs(data, store).schwarm.length, 1);
   markTabSeen(store, data, "schwarm");
@@ -120,7 +119,7 @@ test("Echte Daten: Charts bleiben ohne Punkt, wenn sich nur der Kurs bewegt", ()
   };
   const store = { answers: {} };
   const before = tabSignals(data, store);
-  assert.equal(before.charts.length, 0);
+  assert.equal(Object.hasOwn(before, "charts"), false);
   assert.ok(before.mehr.length >= 1);
   assert.equal(before.heute.length, 1);
   assert.ok(before.posts.length > 0);
@@ -131,10 +130,10 @@ test("Echte Daten: Charts bleiben ohne Punkt, wenn sich nur der Kurs bewegt", ()
   data.moonshots.candidates[0].priceEur = 1;
   data.moonshots.candidates[0].changePct = -4;
   const after = tabSignals(data, store);
-  assert.deepEqual(after.charts, []);
+  assert.equal(Object.hasOwn(after, "charts"), false);
   assert.deepEqual(after.mehr, before.mehr);
   assert.deepEqual(after.posts, before.posts);
   assert.deepEqual(after.kalender, before.kalender);
   assert.deepEqual(after.schwarm, before.schwarm);
-  assert.equal(unreadTabs(data, {}).charts.length, 0);
+  assert.equal(unreadTabs(data, {}).analyse, undefined);
 });

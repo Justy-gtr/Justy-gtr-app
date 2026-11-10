@@ -70,7 +70,8 @@ const files = [
   "meta.json", "prices.json", "calendar.json", "posts.json", "favorites.json", "crowd.json",
   "promises.json", "production.json", "insiders.json", "briefing.json", "weekly.json",
   "daily_question.json", "glossary.json", "track_record.json", "alerts.json",
-  "scenarios.json", "companies.json", "seasonality.json", "moonshots.json", "turbo-universe.json"
+  "scenarios.json", "companies.json", "seasonality.json", "moonshots.json", "turbo-universe.json",
+  "sentiment.json", "germany.json", "de-turbos.json"
 ];
 const loaded = Object.fromEntries(files.map((name) => [name, read(name)]));
 
@@ -509,6 +510,103 @@ for (const item of universe?.symbols || []) {
   if (universeSymbols.has(item?.symbol)) fail(`universe.${item.symbol} doppelt`);
   universeSymbols.add(item?.symbol);
   if (item.underlyingIsin && !/^[A-Z]{2}[A-Z0-9]{10}$/.test(item.underlyingIsin)) fail(`universe.${item.symbol}.isin`);
+}
+
+const MOODS = new Set(["gut", "gemischt", "schlecht"]);
+const MOOD_BANNED = /kaufen|verkaufen|empfehlung|kaufsignal|anlageberatung/i;
+
+function isoStamp(value) {
+  return typeof value === "string" && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(value) && Number.isFinite(Date.parse(value));
+}
+
+const sentiment = loaded["sentiment.json"];
+if (sentiment) {
+  if (sentiment.example !== false) fail("sentiment.example");
+  if (sentiment.schema !== 1) fail("sentiment.schema");
+  if (!isoStamp(sentiment.updatedAt)) fail("sentiment.updatedAt");
+  for (const symbol of ["SPCX", "TSLA", "RKLB"]) {
+    const row = sentiment.symbols?.[symbol];
+    const label = `sentiment.${symbol}`;
+    if (!row) {
+      fail(`${label} fehlt`);
+      continue;
+    }
+    const empty = row.mood == null || row.mood === "";
+    if (!empty && !MOODS.has(row.mood)) fail(`${label}.mood`);
+    if (!Number.isInteger(row.score) || row.score < -100 || row.score > 100) fail(`${label}.score`);
+    if (!Number.isInteger(row.postsCount) || row.postsCount < 0) fail(`${label}.postsCount`);
+    if (typeof row.reason !== "string" || row.reason.length > 180) fail(`${label}.reason`);
+    if (MOOD_BANNED.test(row.reason)) fail(`${label}.reason Wort`);
+    if (row.previousMood != null && row.previousMood !== "" && !MOODS.has(row.previousMood)) {
+      fail(`${label}.previousMood`);
+    }
+    if (!Array.isArray(row.sources)) fail(`${label}.sources`);
+    if (empty) {
+      if (row.updatedAt != null && row.updatedAt !== "" && !isoStamp(row.updatedAt)) fail(`${label}.updatedAt`);
+    } else {
+      if (!row.reason.trim()) fail(`${label}.reason`);
+      if (!isoStamp(row.updatedAt)) fail(`${label}.updatedAt`);
+      sourcesOk(row.sources, label);
+    }
+    if (empty && Array.isArray(row.sources) && row.sources.length) sourcesOk(row.sources, label);
+    for (const source of row.sources || []) {
+      if (MOOD_BANNED.test(String(source?.title || ""))) fail(`${label}.source Wort`);
+    }
+  }
+}
+
+const GERMANY_BANNED = /kaufen|verkaufen|empfehlung|anlageberatung/i;
+const turbos = loaded["de-turbos.json"];
+const germany = loaded["germany.json"];
+const turboSymbols = Array.isArray(turbos) ? turbos : turbos?.symbols;
+if (!Array.isArray(turboSymbols) || turboSymbols.length !== 15) fail("de-turbos.symbols");
+if (turbos && !Array.isArray(turbos) && turbos.asOf !== "2026-11-10") fail("de-turbos.asOf");
+const turboBySymbol = new Map();
+for (const item of turboSymbols || []) {
+  const label = `de-turbos.${item?.symbol || "?"}`;
+  if (!/^[A-Z0-9]{1,6}\.DE$/.test(item?.symbol || "")) fail(`${label}.symbol`);
+  if (!item?.name) fail(`${label}.name`);
+  if (!/^[A-Z]{2}[A-Z0-9]{10}$/.test(item?.underlyingIsin || "")) fail(`${label}.isin`);
+  for (const side of ["longExample", "shortExample"]) {
+    if (!/^[A-Z]{2}[A-Z0-9]{10}$/.test(item?.[side]?.isin || "")) fail(`${label}.${side}`);
+    if (!item?.[side]?.issuer) fail(`${label}.${side}.issuer`);
+    if (!isUrl(item?.[side]?.url)) fail(`${label}.${side}.url`);
+  }
+  if (!isUrl(item?.source)) fail(`${label}.source`);
+  if (GERMANY_BANNED.test(JSON.stringify(item))) fail(`${label} Wort`);
+  if (turboBySymbol.has(item.symbol)) fail(`${label} doppelt`);
+  turboBySymbol.set(item.symbol, item);
+}
+if (germany) {
+  if (germany.example !== false) fail("germany.example");
+  if (germany.timezone !== "Europe/Berlin") fail("germany.timezone");
+  if (germany.window !== "09:00-10:30") fail("germany.window");
+  if (!isoStamp(germany.asOf)) fail("germany.asOf");
+  if (!Array.isArray(germany.symbols) || germany.symbols.length !== turboBySymbol.size) fail("germany.symbols");
+  let previousAvg = Infinity;
+  for (const row of germany.symbols || []) {
+    const label = `germany.${row?.symbol || "?"}`;
+    const turbo = turboBySymbol.get(row?.symbol);
+    if (!turbo) fail(`${label} nicht in de-turbos`);
+    if (row?.name !== turbo?.name) fail(`${label}.name`);
+    if (row?.underlyingIsin !== turbo?.underlyingIsin) fail(`${label}.underlyingIsin`);
+    if (typeof row?.priceEur !== "number") fail(`${label}.priceEur`);
+    if (typeof row?.changePct !== "number") fail(`${label}.changePct`);
+    if (!Array.isArray(row?.sparkline) || row.sparkline.length < 2) fail(`${label}.sparkline`);
+    if (!Array.isArray(row?.intraday) || row.intraday.length < 2) fail(`${label}.intraday`);
+    const morning = row?.morning;
+    if (typeof morning?.avgPct !== "number" || typeof morning?.maxPct !== "number") fail(`${label}.morning`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(morning?.maxDay || "")) fail(`${label}.maxDay`);
+    if (!Number.isInteger(morning?.n) || morning.n < 1 || morning.n > 21) fail(`${label}.n`);
+    if (morning.avgPct > previousAvg + 0.001) fail(`${label} Reihenfolge`);
+    previousAvg = morning.avgPct;
+    if (row?.trKnockouts?.long !== true || row?.trKnockouts?.short !== true) fail(`${label}.trKnockouts`);
+    if (row?.longExample?.isin !== turbo?.longExample?.isin) fail(`${label}.long`);
+    if (row?.shortExample?.isin !== turbo?.shortExample?.isin) fail(`${label}.short`);
+    if (row?.source !== turbo?.source) fail(`${label}.source`);
+    sourcesOk(row?.sources, label);
+    if (GERMANY_BANNED.test(JSON.stringify(row))) fail(`${label} Wort`);
+  }
 }
 
 const iconFiles = [

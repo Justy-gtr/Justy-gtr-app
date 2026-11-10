@@ -1,4 +1,4 @@
-import { chartAxisLabels, compactNumber, formatScrubWhen, guideLabelsToDraw, guideStyle, instrumentAxisLabels, instrumentSeries, priceMove, scrubDelta, seriesAccent, seriesFor, TILE_COLORS, weekCurve, weekdayShort } from "./logic.js";
+import { chartAxisLabels, compactNumber, formatScrubWhen, guideLabelsToDraw, guideStyle, instrumentAxisLabels, instrumentSeries, priceMove, scrubDelta, seriesAccent, TILE_COLORS, weekCurve, weekdayShort } from "./logic.js";
 
 function hexAlpha(hex, alpha) {
   const value = hex.replace("#", "");
@@ -23,21 +23,25 @@ function isExtendedSession(session) {
   return session === "pre" || session === "post";
 }
 
-export function sparkline(values, color) {
+export function sparkline(values, color, options = {}) {
+  const dots = Boolean(options?.dots);
   const nums = sparkPoints(values);
   if (nums.length < 2) return "";
-  const width = 96;
-  const height = 36;
-  const min = Math.min(...nums.map((point) => point.eur));
-  const max = Math.max(...nums.map((point) => point.eur));
+  const source = dots && nums.length > 8
+    ? Array.from({ length: 8 }, (_, index) => nums[Math.round((index * (nums.length - 1)) / 7)])
+    : nums;
+  const width = dots ? 88 : 96;
+  const height = dots ? 26 : 36;
+  const min = Math.min(...source.map((point) => point.eur));
+  const max = Math.max(...source.map((point) => point.eur));
   const span = max - min || 1;
-  const coords = nums.map((point, index) => {
-    const x = (index / (nums.length - 1)) * width;
+  const coords = source.map((point, index) => {
+    const x = source.length === 1 ? width / 2 : (index / (source.length - 1)) * width;
     const y = height - ((point.eur - min) / span) * (height - 6) - 3;
     return { x, y, session: point.session };
   });
   const d = coords.map((coord, index) => `${index ? "L" : "M"}${coord.x.toFixed(1)} ${coord.y.toFixed(1)}`).join(" ");
-  const stroke = color || (nums.at(-1).eur >= nums[0].eur ? "#7ddec0" : "#ff8b98");
+  const stroke = color || (source.at(-1).eur >= source[0].eur ? "#7ddec0" : "#ff8b98");
   let extended = "";
   let open = false;
   const parts = [];
@@ -55,7 +59,10 @@ export function sparkline(values, color) {
   if (parts.length) {
     extended = `<path d="${parts.join(" ")}" fill="none" stroke="#e4b15a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
   }
-  return `<svg class="spark" viewBox="0 0 ${width} ${height}" aria-hidden="true"><path d="${d}" fill="none" stroke="${stroke}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>${extended}</svg>`;
+  const circles = dots
+    ? coords.map((coord) => `<circle cx="${coord.x.toFixed(1)}" cy="${coord.y.toFixed(1)}" r="1.8" fill="${stroke}"/>`).join("")
+    : "";
+  return `<svg class="spark" viewBox="0 0 ${width} ${height}" aria-hidden="true"><path d="${d}" fill="none" stroke="${stroke}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>${extended}${circles}</svg>`;
 }
 
 const euroAxis = new Intl.NumberFormat("de-DE", {
@@ -303,8 +310,15 @@ function sessionScrub(point) {
   return "";
 }
 
+function scrubLine(canvas) {
+  const wrap = canvas.closest?.(".chart-wrap");
+  const line = wrap?.querySelector?.(".scrub");
+  if (line) return line;
+  return canvas.parentElement?.querySelector?.(".scrub") || null;
+}
+
 function showScrub(canvas, coord, layout) {
-  const scrub = canvas.parentElement?.querySelector(".scrub");
+  const scrub = scrubLine(canvas);
   if (!scrub || !coord) return;
   const phase = sessionScrub(coord.point);
   const points = (layout?.coords || []).map((item) => item.point);
@@ -324,7 +338,7 @@ function showScrub(canvas, coord, layout) {
 }
 
 function hideScrub(canvas) {
-  const scrub = canvas.parentElement?.querySelector(".scrub");
+  const scrub = scrubLine(canvas);
   if (!scrub) return;
   scrub.hidden = false;
   scrub.textContent = "";
@@ -633,15 +647,20 @@ export function drawCharts(data, ui) {
   document.querySelectorAll("canvas[data-chart]").forEach((canvas) => {
     const kind = canvas.dataset.chart;
     if (kind === "price") {
-      const ticker = (data.prices?.tickers || []).find((item) => item.symbol === (canvas.dataset.symbol || ui.chartSymbol));
-      const picked = ui.langfrist
-        ? seriesFor(ticker, ui.chartRange, true)
-        : instrumentSeries(ticker, ui.chartRange);
+      const ticker = (data.prices?.tickers || []).find((item) => item.symbol === (canvas.dataset.symbol || ui.analyseSymbol || ui.chartSymbol));
+      const picked = instrumentSeries(ticker, ui.chartRange);
       const points = picked.points || [];
       const first = Number(points[0]?.eur);
       const last = Number(points.at(-1)?.eur);
       const falling = points.length > 1 && last < first;
       const color = falling ? "#ff5d6c" : "#3ddc84";
+      drawLineChart(canvas, points, { color, axes: true, scrub: true, instrument: true });
+    } else if (kind === "de") {
+      const row = (data.germany?.symbols || []).find((item) => item.symbol === canvas.dataset.symbol);
+      const points = row?.intraday || [];
+      const first = Number(points[0]?.eur);
+      const last = Number(points.at(-1)?.eur);
+      const color = points.length > 1 && last < first ? "#ff5d6c" : "#3ddc84";
       drawLineChart(canvas, points, { color, axes: true, scrub: true, instrument: true });
     } else if (kind === "prod") {
       const series = (data.production?.series || []).find((item) => item.id === canvas.dataset.series);

@@ -1,0 +1,262 @@
+{
+  "asOf": "2026-11-10",
+  "broker": "Trade Republic",
+  "note": "Beispiel-Knock-outs von onvista, Filter Trade Republic. Eine ISIN kann nach dem Knock-out weg sein.",
+  "symbols": [
+    {
+      "symbol": "S92.DE",
+      "name": "SMA Solar",
+      "underlyingIsin": "DE000A0DJ6J9",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000HM4FG81",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/326050485-HM4FG8-DE000HM4FG81"
+      },
+      "shortExample": {
+        "isin": "DE000FG9MP33",
+        "issuer": "Société Générale",
+        "url": "https://www.sg-zertifikate.de/product-details/fg9mp3"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-SMA-Solar"
+    },
+    {
+      "symbol": "AIXA.DE",
+      "name": "Aixtron",
+      "underlyingIsin": "DE000A0WMPJ6",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000HF2CZY4",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/345901625-HF2CZY-DE000HF2CZY4"
+      },
+      "shortExample": {
+        "isin": "DE000FG84H09",
+        "issuer": "Société Générale",
+        "url": "https://www.sg-zertifikate.de/product-details/fg84h0"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Aixtron"
+    },
+    {
+      "symbol": "EVT.DE",
+      "name": "Evotec",
+      "underlyingIsin": "DE0005664809",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000HF2B3F8",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/345808712-HF2B3F-DE000HF2B3F8"
+      },
+      "shortExample": {
+        "isin": "DE000HM9EUX9",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/338052452-HM9EUX-DE000HM9EUX9"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Evotec"
+    },
+    {
+      "symbol": "SMHN.DE",
+      "name": "SUSS MicroTec",
+      "underlyingIsin": "DE000A1K0235",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000HM10QT0",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/316748833-HM10QT-DE000HM10QT0"
+      },
+      "shortExample": {
+        "isin": "DE000HF23UF8",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/345222765-HF23UF-DE000HF23UF8"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-SUSS-MicroTec"
+    },
+    {
+      "symbol": "HFG.DE",
+      "name": "HelloFresh",
+      "underlyingIsin": "DE000A161408",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000HF1DSF8",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/343159950-HF1DSF-DE000HF1DSF8"
+      },
+      "shortExample": {
+        "isin": "DE000HF2CYL4",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/345901608-HF2CYL-DE000HF2CYL4"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-HelloFresh"
+    },
+    {
+      "symbol": "AG1.DE",
+      "name": "Auto1",
+      "underlyingIsin": "DE000A2LQ884",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000FG76UQ5",
+        "issuer": "Société Générale",
+        "url": "https://www.sg-zertifikate.de/product-details/fg76uq"
+      },
+      "shortExample": {
+        "isin": "DE000FG40AF6",
+        "issuer": "Société Générale",
+        "url": "https://www.sg-zertifikate.de/product-details/fg40af"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-AUTO1-GROUP-SE"
+    },
+    {
+      "symbol": "HAG.DE",
+      "name": "Hensoldt",
+      "underlyingIsin": "DE000HAG0005",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000HE1JMG7",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/343761932-HE1JMG-DE000HE1JMG7"
+      },
+      "shortExample": {
+        "isin": "DE000FB00EZ1",
+        "issuer": "Société Générale",
+        "url": "https://www.sg-zertifikate.de/product-details/fb00ez"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-HENSOLDT-AG"
+    },
+    {
+      "symbol": "TMV.DE",
+      "name": "TeamViewer",
+      "underlyingIsin": "DE000A2YN900",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000FC9WC19",
+        "issuer": "Société Générale",
+        "url": "https://www.sg-zertifikate.de/product-details/fc9wc1"
+      },
+      "shortExample": {
+        "isin": "DE000HF2B688",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/345808743-HF2B68-DE000HF2B688"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-TeamViewer-SE"
+    },
+    {
+      "symbol": "RHM.DE",
+      "name": "Rheinmetall",
+      "underlyingIsin": "DE0007030009",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000HE1JMM5",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/343762620-HE1JMM-DE000HE1JMM5"
+      },
+      "shortExample": {
+        "isin": "DE000HF2CTN0",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/345900206-HF2CTN-DE000HF2CTN0"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Rheinmetall"
+    },
+    {
+      "symbol": "TKA.DE",
+      "name": "thyssenkrupp",
+      "underlyingIsin": "DE0007500001",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000HF22419",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/345080406-HF2241-DE000HF22419"
+      },
+      "shortExample": {
+        "isin": "DE000FB0U8S2",
+        "issuer": "Société Générale",
+        "url": "https://www.sg-zertifikate.de/product-details/fb0u8s"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-ThyssenKrupp"
+    },
+    {
+      "symbol": "NDX1.DE",
+      "name": "Nordex",
+      "underlyingIsin": "DE000A0D6554",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000HF26Q73",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/345386081-HF26Q7-DE000HF26Q73"
+      },
+      "shortExample": {
+        "isin": "DE000WA8JKH9",
+        "issuer": "UBS",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/336087675-WA8JKH-DE000WA8JKH9"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Nordex"
+    },
+    {
+      "symbol": "ZAL.DE",
+      "name": "Zalando",
+      "underlyingIsin": "DE000ZAL1111",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000FB0JJK2",
+        "issuer": "Société Générale",
+        "url": "https://www.sg-zertifikate.de/product-details/fb0jjk"
+      },
+      "shortExample": {
+        "isin": "DE000FG22W05",
+        "issuer": "Société Générale",
+        "url": "https://www.sg-zertifikate.de/product-details/fg22w0"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Zalando"
+    },
+    {
+      "symbol": "R3NK.DE",
+      "name": "Renk",
+      "underlyingIsin": "DE000RENK730",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000WB4HR54",
+        "issuer": "UBS",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/343482498-WB4HR5-DE000WB4HR54"
+      },
+      "shortExample": {
+        "isin": "DE000HF2A250",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/345678747-HF2A25-DE000HF2A250"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-RENK-GROUP-AG"
+    },
+    {
+      "symbol": "IFX.DE",
+      "name": "Infineon",
+      "underlyingIsin": "DE0006231004",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000HE178G9",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/326787546-HE178G-DE000HE178G9"
+      },
+      "shortExample": {
+        "isin": "DE000FB0W3K8",
+        "issuer": "Société Générale",
+        "url": "https://www.sg-zertifikate.de/product-details/fb0w3k"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Infineon"
+    },
+    {
+      "symbol": "ENR.DE",
+      "name": "Siemens Energy",
+      "underlyingIsin": "DE000ENER6Y0",
+      "trTurbos": true,
+      "longExample": {
+        "isin": "DE000HE12DC7",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/314888202-HE12DC-DE000HE12DC7"
+      },
+      "shortExample": {
+        "isin": "DE000HF23TF0",
+        "issuer": "HSBC",
+        "url": "https://www.onvista.de/derivate/Knock-Outs/345223996-HF23TF-DE000HF23TF0"
+      },
+      "source": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Siemens-Energy"
+    }
+  ]
+}

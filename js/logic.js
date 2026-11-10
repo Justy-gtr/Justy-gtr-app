@@ -1439,7 +1439,7 @@ export function pendingDailyQuestion(data, store) {
   return question;
 }
 
-const TAB_IDS = ["heute", "kalender", "posts", "schwarm", "charts", "mehr"];
+const TAB_IDS = ["heute", "kalender", "posts", "schwarm", "mehr"];
 
 function uniqSorted(list) {
   return [...new Set(list.filter(Boolean))].sort();
@@ -1521,7 +1521,7 @@ function mehrSignals(data) {
 }
 
 /**
- * What can light a tab dot. Charts stay empty: a moving price is not new content.
+ * What can light a tab dot. A moving price does not.
  * Mehr lights when a Moonshot text, its date, or the short-term set is new.
  */
 export function tabSignals(data, store) {
@@ -1530,7 +1530,6 @@ export function tabSignals(data, store) {
     kalender: calendarSignals(data),
     posts: postSignals(data),
     schwarm: schwarmSignals(data),
-    charts: [],
     mehr: mehrSignals(data)
   };
 }
@@ -1591,6 +1590,84 @@ function impactRank(event) {
 /** Soonest upcoming event. Same day: higher impact first. */
 export function headlineEvent(events, now = new Date()) {
   return upcomingEvents(events, now, 1)[0] || null;
+}
+
+export const CALENDAR_KEEP_MS = 24 * 60 * 60 * 1000;
+
+function calendarZone(event) {
+  return event?.timezone || "Europe/Berlin";
+}
+
+function nextDate(iso) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso || ""));
+  if (!match) return "";
+  const utc = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]) + 1));
+  return utc.toISOString().slice(0, 10);
+}
+
+/** Start in the event's zone. A day without a clock begins at 00:00. */
+export function calendarStart(event) {
+  return zonedWallTime(event?.date, event?.time || "00:00", calendarZone(event));
+}
+
+/**
+ * Explicit end, or null when only the start exists.
+ * A bare day in `end` lasts through that day.
+ */
+export function calendarEnd(event) {
+  const zone = calendarZone(event);
+  const end = event?.end;
+  if (typeof end === "string" && end.trim()) {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(end)) return zonedWallTime(nextDate(end), "00:00", zone);
+    if (/^\d{4}-\d{2}-\d{2}T/.test(end)) {
+      const parsed = new Date(end);
+      if (!Number.isNaN(parsed.getTime())) return parsed;
+    }
+    const clock = /^(\d{1,2}:\d{2})/.exec(end);
+    if (clock && event?.date) return zonedWallTime(event.date, clock[1], zone);
+  }
+  if (event?.endDate) return zonedWallTime(event.endDate, event.endTime || "23:59", zone);
+  return null;
+}
+
+/**
+ * Kalenderseite: Laufendes und Kommendes oben (heute zuerst, dann der früheste Beginn).
+ * Vorbei darunter. Weg, wenn Ende — oder Beginn ohne Ende — mehr als 24 Stunden zurückliegt.
+ */
+export function orderCalendarEvents(events, now = new Date()) {
+  const nowMs = now instanceof Date ? now.getTime() : new Date(now).getTime();
+  if (!Number.isFinite(nowMs)) return [];
+  const today = berlinDate(new Date(nowMs));
+  const rows = [];
+  for (const event of events || []) {
+    const start = calendarStart(event);
+    const end = calendarEnd(event);
+    const startMs = start ? start.getTime() : NaN;
+    const endMs = end ? end.getTime() : NaN;
+    const anchorMs = Number.isFinite(endMs) ? endMs : startMs;
+    if (!Number.isFinite(anchorMs)) continue;
+    if (nowMs - anchorMs > CALENDAR_KEEP_MS) continue;
+    const day = String(event?.date || "");
+    const timed = Boolean(event?.time);
+    let past = false;
+    if (Number.isFinite(endMs)) past = nowMs >= endMs;
+    else if (timed) past = Number.isFinite(startMs) && nowMs >= startMs;
+    else past = Boolean(day) && day < today;
+    const ongoing = !past && Number.isFinite(startMs) && startMs <= nowMs;
+    rows.push({ event, past, ongoing, startMs: Number.isFinite(startMs) ? startMs : anchorMs, anchorMs, day });
+  }
+  const current = rows.filter((row) => !row.past);
+  const past = rows.filter((row) => row.past);
+  const bySoon = (a, b) => {
+    const aFirst = a.ongoing || a.day === today;
+    const bFirst = b.ongoing || b.day === today;
+    if (aFirst !== bFirst) return aFirst ? -1 : 1;
+    if (a.startMs !== b.startMs) return a.startMs - b.startMs;
+    return String(a.event?.id || "").localeCompare(String(b.event?.id || ""));
+  };
+  current.sort(bySoon);
+  past.sort((a, b) => (b.anchorMs - a.anchorMs) || String(a.event?.id || "").localeCompare(String(b.event?.id || "")));
+  return current.map((row) => row.event).concat(past.map((row) => row.event));
 }
 
 export function isInAppUrl(url, origin = location.origin, base = "") {
@@ -1733,6 +1810,17 @@ export function usSessionWord(date = new Date()) {
   if (minutes >= 9 * 60 + 30 && minutes < 16 * 60) return "offen";
   if (minutes >= 16 * 60 && minutes < 20 * 60) return "nachbörslich";
   return "geschlossen";
+}
+
+/** Three lights for the home strip: Tradegate, US cash, US extended hours. */
+export function marketLights(date = new Date()) {
+  const berlin = zonedClock(date, "Europe/Berlin");
+  const minutes = berlin.hour * 60 + berlin.minute;
+  const tradegate = berlin.weekday <= 4 && minutes >= 8 * 60 && minutes < 22 * 60 ? "offen" : "zu";
+  const usWord = usSessionWord(date);
+  const us = usWord === "offen" ? "offen" : usWord === "geschlossen" ? "zu" : "neben";
+  const overnight = usWord === "vorbörslich" || usWord === "nachbörslich" ? "an" : "zu";
+  return { tradegate, us, overnight, usWord };
 }
 
 /**
