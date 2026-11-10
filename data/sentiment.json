@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T15:59:00+01:00",
+  "updatedAt": "2026-11-10T16:08:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 30,
       "postsCount": 10,
-      "reason": "SpaceX erholt sich auf rund -0,9 % (140,80 $). Fidelitys kleinerer Anteil wird belächelt, dazu Wetten auf fallende Kurse. Vorfreude auf Flug 15 am Freitag bleibt.",
+      "reason": "SpaceX holt den CPI-Rückgang auf rund -1 % (140,59 $) auf. Großes Thema: geplantes 24-Mrd.-$-Projekt mit Gaskraftwerk und Rechenzentrum in Starbase.",
       "sources": [
         {
-          "title": "SpaceX bei 140,80 $ (-0,9 %)",
-          "url": "https://x.com/Maximilius31/status/2120167765948420403"
+          "title": "24-Mrd.-$-KI-Projekt in Starbase",
+          "url": "https://x.com/BacklogAlpha/status/2120154524614602901"
         },
         {
-          "title": "Fidelity verkleinert SpaceX-Anteil",
-          "url": "https://x.com/spcxGOD/status/2120168070345797816"
+          "title": "Minus nach CPI auf 1 % verkleinert",
+          "url": "https://x.com/gonta_southwood/status/2120166033172713526"
         },
         {
-          "title": "Große Put-Wette auf 125 $",
-          "url": "https://x.com/DarkFlowAlert/status/2120168239061700889"
+          "title": "Vergleich mit dem CPI-Tag im Oktober",
+          "url": "https://x.com/spcxGOD/status/2120159440372461846"
         }
       ],
-      "updatedAt": "2026-11-10T15:59:00+01:00"
+      "updatedAt": "2026-11-10T16:08:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": -5,
+      "score": 5,
       "postsCount": 10,
-      "reason": "Tesla liegt rund -0,7 % bei 375 $ auf der 50-Tage-Linie. Gesprochen wird über Musks Chip-Fabrik-Plan mit SpaceX, Grok 4.8 diese Woche und nur noch eine Cybertruck-Version.",
+      "reason": "Bei Tesla geht es um ARKs Kursziel von 4.400 $ für 2031, Haftung bei Robotaxis und fahrerlose Model Y in Grünheide. Wichtige Marke laut Tradern: 370 $.",
       "sources": [
         {
-          "title": "Tesla bei 375,54 $ (-0,66 %)",
-          "url": "https://x.com/Maximilius31/status/2120167765948420403"
+          "title": "ARK-Ziel 4.400 $ für 2031",
+          "url": "https://x.com/kongbaest/status/2120157564440621140"
         },
         {
-          "title": "Musks Chip-Ziel für Tesla und SpaceX",
-          "url": "https://x.com/tickerorbit/status/2120169180079301098"
+          "title": "Tesla haftet bei Robotaxis",
+          "url": "https://x.com/BastianelliLore/status/2120171078462935097"
         },
         {
-          "title": "Cybertruck nur noch in einer Version",
-          "url": "https://x.com/FullSelfFunding/status/2120168677769396645"
+          "title": "Marken 370 $ und 375 $",
+          "url": "https://x.com/SuperMariossss/status/2120158717492809891"
         }
       ],
-      "updatedAt": "2026-11-10T15:59:00+01:00"
+      "updatedAt": "2026-11-10T16:08:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 25,
+      "score": 15,
       "postsCount": 10,
-      "reason": "Rocket Lab ist fast wieder im Plus (58,32 $) nach -10 % vorbörslich. Lob für den riesigen Auftragsbestand, Sorgen wegen Neutron erst 2027 und gemischter Kursziele.",
+      "reason": "Rocket Lab: Barclays senkt das Kursziel auf 82 $, Clear Street hebt auf 110 $. Dazu neue FCC-Unterlagen zum Iridium-Deal und Sorgen um Neutron.",
       "sources": [
         {
-          "title": "Fast wieder im Plus bei 58,32 $",
-          "url": "https://x.com/0xCheng_2019/status/2120168786041188634"
+          "title": "Barclays-Ziel 85 auf 82 $",
+          "url": "https://x.com/Brechtfengels/status/2120170803161440462"
         },
         {
-          "title": "Von -10 % auf -1 % erholt",
-          "url": "https://x.com/retail_mourinho/status/2120164563110789604"
+          "title": "Clear Street-Ziel 110 $",
+          "url": "https://x.com/Jessica869f/status/2120167650945101939"
         },
         {
-          "title": "Rekordumsatz, Neutron verzögert",
-          "url": "https://x.com/Nextwave_invest/status/2120165021720195475"
+          "title": "FCC-Unterlagen zum Iridium-Deal",
+          "url": "https://x.com/mottbox_/status/2120162141713899879"
         }
       ],
-      "updatedAt": "2026-11-10T15:59:00+01:00"
+      "updatedAt": "2026-11-10T16:08:00+01:00"
     }
   }
 }
