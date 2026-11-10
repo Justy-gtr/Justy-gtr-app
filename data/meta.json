@@ -1,16 +1,16 @@
 {
   "dataMode": "live",
-  "lastUpdated": "2026-11-10T17:58:00+01:00",
-  "pricesUpdated": "2026-11-10T16:28:15.326Z",
+  "lastUpdated": "2026-11-10T17:24:42.053Z",
+  "pricesUpdated": "2026-11-10T17:24:42.053Z",
   "timezone": "Europe/Berlin",
   "owner": "Justy",
   "researchVoice": "Karl",
   "disclaimer": "Keine Anlageberatung. Nur Recherche und Bildung.",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1151,
+    "rate": 1.1153,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-10T16:28:15.326Z",
+    "asOf": "2026-11-10T17:24:42.053Z",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -35,7 +35,7 @@
       "venue": "Xetra",
       "symbol": "TL0.DE",
       "intradayMethod": "direct_eur_plus_us",
-      "overnight": null,
+      "overnight": "us",
       "source": "alpaca-iex",
       "error": null
     },
@@ -57,7 +57,7 @@
       "venue": "Xetra",
       "symbol": "9MW.DE",
       "intradayMethod": "direct_eur_plus_us",
-      "overnight": null,
+      "overnight": "us",
       "source": "alpaca-iex",
       "error": null
     }
