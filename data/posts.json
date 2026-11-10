@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-10T16:10:00+01:00",
+  "asOf": "2026-11-10T17:58:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -85,6 +85,29 @@
     }
   },
   "posts": [
+    {
+      "id": "post-starlink-2120182681229246875",
+      "account": "@Starlink",
+      "displayName": "Starlink",
+      "postedAt": "2026-11-10T16:51:56+01:00",
+      "summaryDe": "Starlink liefert künftig schnelles Internet an Bord der Fluggesellschaft Slate (@flyslate), damit Passagiere während des ganzen Flugs online bleiben. Ein weiterer Airline-Kunde, kein Kursfaktor.",
+      "originalText": "Starlink will deliver fast, reliable internet onboard @flyslate, enabling passengers to stay connected throughout their flight 🛰️✈️",
+      "url": "https://x.com/Starlink/status/2120182681229246875",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Starlink auf X",
+          "url": "https://x.com/Starlink/status/2120182681229246875"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2120102767624880364",
       "account": "@elonmusk",
@@ -5825,5 +5848,5 @@
       ]
     }
   ],
-  "notes": "10.11. 15:20: Seit 11:34 keine neuen Posts von @elonmusk, SpaceX, Tesla, Starlink, Optimus, xAI, Neuralink, Boring, Rocket Lab (X-Abfrage). Nichts Wichtiges."
+  "notes": "10.11. 18:00: Seit 16:10 nur ein neuer Post (@Starlink: Internet an Bord von Slate). Musk seit 11:34 still (X-Abfrage). Nichts Wichtiges."
 }
