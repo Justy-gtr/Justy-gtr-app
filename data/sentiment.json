@@ -1,31 +1,70 @@
 {
   "example": false,
-  "updatedAt": "2026-11-10T00:00:00+01:00",
   "schema": 1,
+  "updatedAt": "2026-11-10T08:05:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "",
-      "score": 0,
-      "postsCount": 0,
-      "reason": "",
-      "sources": [],
-      "updatedAt": ""
+      "mood": "gut",
+      "score": 55,
+      "postsCount": 25,
+      "reason": "Viel Vorfreude auf Starship-Flug 15 am Freitag mit Doppel-Fang am Turm, dazu Pläne für ein 24-Mrd.-$-Rechenzentrum in Starbase.",
+      "sources": [
+        {
+          "title": "Starship Flight 15 am 13. Nov.: Booster und Ship sollen gefangen werden",
+          "url": "https://x.com/Stellarixorine/status/2120025510441095590"
+        },
+        {
+          "title": "SpaceX-Starts 10.–17. Nov. inkl. Starship Flight 15",
+          "url": "https://x.com/BassonBrain/status/2120023880366518620"
+        },
+        {
+          "title": "24-Mrd.-$-Rechenzentrum und Gaskraftwerk in Starbase (Bloomberg)",
+          "url": "https://x.com/AerialKiwi/status/2120046422104125828"
+        }
+      ],
+      "updatedAt": "2026-11-10T08:05:00+01:00"
     },
     "TSLA": {
-      "mood": "",
-      "score": 0,
-      "postsCount": 0,
-      "reason": "",
-      "sources": [],
-      "updatedAt": ""
+      "mood": "gut",
+      "score": 30,
+      "postsCount": 25,
+      "reason": "Gesprochen wird über den Robotaxi-Ausbau (+5,5 % am Montag), das Cybertruck-Aus zugunsten Cybercab und eine neue Solarfabrik; einige erwähnen Insider-Verkäufe.",
+      "sources": [
+        {
+          "title": "TSLA +5,5 % am Montag nach Robotaxi-Ausbau",
+          "url": "https://x.com/ankushtasildar/status/2120043217290949016"
+        },
+        {
+          "title": "Neue 10-Mrd.-$-Solarfabrik bei Houston",
+          "url": "https://x.com/dukethefifthh/status/2120048874693767646"
+        },
+        {
+          "title": "Insider-Verkäufe laut SEC Form 4",
+          "url": "https://x.com/SuperMariossss/status/2120022503699669487"
+        }
+      ],
+      "updatedAt": "2026-11-10T08:05:00+01:00"
     },
     "RKLB": {
-      "mood": "",
-      "score": 0,
-      "postsCount": 0,
-      "reason": "",
-      "sources": [],
-      "updatedAt": ""
+      "mood": "gemischt",
+      "score": -5,
+      "postsCount": 25,
+      "reason": "Q3-Zahlen: Umsatz besser als erwartet, aber höherer Verlust; nachbörslich etwa 7 % im Minus. Positiv diskutiert wird der 150-Mio.-$-Kredit des Pentagons für Neutron.",
+      "sources": [
+        {
+          "title": "Rocket Lab Q3: Umsatz geschlagen, Gewinn verfehlt",
+          "url": "https://x.com/iothomehacking/status/2120049551163728096"
+        },
+        {
+          "title": "RKLB-Perps −7,4 % seit Börsenschluss",
+          "url": "https://x.com/perpequities/status/2120048839034114400"
+        },
+        {
+          "title": "Pentagon: 150 Mio. $ Kreditzusage für Neutron",
+          "url": "https://x.com/RCapitalX/status/2120035503689056558"
+        }
+      ],
+      "updatedAt": "2026-11-10T08:05:00+01:00"
     }
   }
 }
