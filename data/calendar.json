@@ -543,7 +543,7 @@
       ],
       "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Ergebnis 14:30: Verbraucherpreise +0,4 % zum Vormonat (erwartet +0,3 %, September +0,6 %), Kernrate +0,3 % (erwartet +0,2 %), Energie +0,7 %, Wohnen +0,3 %; Jahresraten fehlen wegen des Shutdowns 2025 (BLS, CNBC). Beide Werte über Konsens: Das stützt die Zinserhöhung im Dezember. Fed-Gouverneur Waller sagte vorab, bei höheren Werten sollte die Fed sogar 50 Basispunkte erwägen (CNBC). Vorher: Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid. Stand Di Vormittag: Dow-Futures +0,35 %, S&P-Futures +0,1 %, Nasdaq-100-Futures −0,3 %, Brent 90,6 $ nach Trumps Iran-Aussage (Yahoo/Stocktwits). DAX mittags +1,2 % nahe Rekord (dpa-AFX).",
+      "reasoning": "Ergebnis 14:30: Verbraucherpreise +0,4 % zum Vormonat (erwartet +0,3 %, September +0,6 %), Kernrate +0,3 % (erwartet +0,2 %), Energie +0,7 %, Wohnen +0,3 %; Jahresraten fehlen wegen des Shutdowns 2025 (BLS, CNBC). Beide Werte über Konsens: Das stützt die Zinserhöhung im Dezember. Reaktion: 10-jährige US-Rendite +8 Basispunkte auf 4,95 %, Nasdaq zur Eröffnung −0,9 %, um 10:04 New York aber schon +0,1 %; Nvidia −3 % (CNBC). Fed-Gouverneur Waller sagte vorab, bei höheren Werten sollte die Fed sogar 50 Basispunkte erwägen (CNBC). Vorher: Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid. Stand Di Vormittag: Dow-Futures +0,35 %, S&P-Futures +0,1 %, Nasdaq-100-Futures −0,3 %, Brent 90,6 $ nach Trumps Iran-Aussage (Yahoo/Stocktwits). DAX mittags +1,2 % nahe Rekord (dpa-AFX).",
       "example": false,
       "sources": [
         {
@@ -585,6 +585,10 @@
         {
           "title": "dpa-AFX/onvista: Dax nähert sich Rekordhoch (10.11.)",
           "url": "https://www.onvista.de/news/2026/11-10-aktien-frankfurt-weiter-auf-erholungskurs-dax-naehert-sich-rekordhoch-0-10-26574579"
+        },
+        {
+          "title": "CNBC: S&P leicht schwächer, Nasdaq +0,1 % nach CPI (10.11., 10:04 ET)",
+          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
         }
       ]
     },
@@ -1592,7 +1596,7 @@
       ],
       "probabilityPct": 80,
       "impact": "mittel",
-      "reasoning": "China setzt den Zusatzzoll von 24 % auf US-Waren ab 10.11., 13:01 Uhr Peking, für weitere zwei Monate aus, 10 % bleiben. Das setzt die Absprache des Treffens beider Präsidenten in Washington um (Xinhua). Die USA verlängerten parallel die Aussetzung von Section-301-Maßnahmen gegen Chinas Schifffahrt bis Januar. Um den 10. Januar steht also die nächste Entscheidung an. Peking warnt, dass die USA die gekippten IEEPA-Zölle durch Section-301-Zölle ersetzen wollen. Für Tesla zählt China als Absatz- und Lieferkettenmarkt. 80 %, dass der Termin als Entscheidungspunkt kommt: Das genaue Datum folgt aus „zwei Monaten“ und ist nicht amtlich benannt.",
+      "reasoning": "China setzt den Zusatzzoll von 24 % auf US-Waren ab 10.11., 13:01 Uhr Peking, für weitere zwei Monate aus, 10 % bleiben. Das setzt die Absprache des Treffens beider Präsidenten in Washington um (Xinhua). Die USA verlängerten parallel die Aussetzung von Section-301-Maßnahmen gegen Chinas Schifffahrt bis Januar und alle 178 Ausnahmen von den Section-301-Technologiezöllen bis 9.1.2027, 23:59 Uhr New York (USTR im Federal Register, 10.11.). Um den 10. Januar steht also die nächste Entscheidung an. Peking warnt, dass die USA die gekippten IEEPA-Zölle durch Section-301-Zölle ersetzen wollen. Für Tesla zählt China als Absatz- und Lieferkettenmarkt. 80 %, dass der Termin als Entscheidungspunkt kommt: Das genaue Datum folgt aus „zwei Monaten“ und ist nicht amtlich benannt.",
       "example": false,
       "sources": [
         {
@@ -1606,6 +1610,10 @@
         {
           "title": "ISS: USA verlängern Aussetzung der Hafengebühren bis Januar 2027",
           "url": "https://www.iss-shipping.com/u-s-extends-suspension-of-port-fees-until-january-2027/"
+        },
+        {
+          "title": "Federal Register/USTR: 178 Section-301-Ausnahmen bis 9.1.2027 verlängert (10.11.)",
+          "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22925/notice-of-product-exclusion-extensions-chinas-acts-policies-and-practices-related-to-technology"
         }
       ]
     },
