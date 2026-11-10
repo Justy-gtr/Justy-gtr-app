@@ -525,7 +525,7 @@
     },
     {
       "id": "evt-us-cpi-okt",
-      "title": "USA: Verbraucherpreise (CPI) Oktober",
+      "title": "USA: Verbraucherpreise (CPI) Oktober — veröffentlicht: +0,4 %, Kern +0,3 % (heißer als erwartet)",
       "date": "2026-11-10",
       "time": "14:30",
       "timezone": "Europe/Berlin",
@@ -537,11 +537,23 @@
         "TSLA",
         "RKLB"
       ],
-      "probabilityPct": 95,
+      "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid. Stand Di Vormittag: Dow-Futures +0,35 %, S&P-Futures +0,1 %, Nasdaq-100-Futures −0,3 %, Brent 90,6 $ nach Trumps Iran-Aussage (Yahoo/Stocktwits). DAX mittags +1,2 % nahe Rekord (dpa-AFX).",
+      "reasoning": "Ergebnis 14:30: Verbraucherpreise +0,4 % zum Vormonat (erwartet +0,3 %, September +0,6 %), Kernrate +0,3 % (erwartet +0,2 %), Energie +0,7 %, Wohnen +0,3 %; Jahresraten fehlen wegen des Shutdowns 2025 (BLS, CNBC). Beide Werte über Konsens: Das stützt die Zinserhöhung im Dezember. Fed-Gouverneur Waller sagte vorab, bei höheren Werten sollte die Fed sogar 50 Basispunkte erwägen (CNBC). Vorher: Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid. Stand Di Vormittag: Dow-Futures +0,35 %, S&P-Futures +0,1 %, Nasdaq-100-Futures −0,3 %, Brent 90,6 $ nach Trumps Iran-Aussage (Yahoo/Stocktwits). DAX mittags +1,2 % nahe Rekord (dpa-AFX).",
       "example": false,
       "sources": [
+        {
+          "title": "BLS: Verbraucherpreise Oktober 2026 (10.11.)",
+          "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+        },
+        {
+          "title": "CNBC: Preise +0,4 %, mehr als erwartet (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
+        },
+        {
+          "title": "CNBC: Waller zu 50 Basispunkten (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html"
+        },
         {
           "title": "BLS: Termine Verbraucherpreisindex",
           "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
@@ -798,8 +810,8 @@
     },
     {
       "id": "evt-anthropic-ipo",
-      "title": "Anthropic: Börsengang an der Nasdaq (Ziel: Woche ab 16. November)",
-      "date": "2026-11-16",
+      "title": "Anthropic: Börsengang an der Nasdaq (Preis 18.11., Handel ab Do 19.11.)",
+      "date": "2026-11-19",
       "end": "2026-11-20",
       "time": null,
       "timezone": "Europe/Berlin",
@@ -809,11 +821,19 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 60,
+      "probabilityPct": 85,
       "impact": "mittel",
-      "reasoning": "Anthropic will unter dem Kürzel ANT an die Nasdaq. Laut Reuters sollte die Roadshow am Di 10.11. offiziell starten, die Preisfestsetzung folgt voraussichtlich nächste Woche (India Today/Reuters). Eine an Banken verschickte Unterlage nannte 70–80 $ je Aktie und bis zu 69,3 Mrd. $ Erlös, wurde aber als „ungenau“ zurückgezogen; dazu 26 Mrd. $ Privatplatzierung u. a. von Google, Nvidia, Microsoft. Bestätigt hat Anthropic weder Termin noch Preisspanne. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 60 statt 50 %, dass der Handel in der Woche ab 16.11. beginnt: Roadshow-Start spricht dafür, die fehlende Preisspanne dagegen.",
+      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms.",
       "example": false,
       "sources": [
+        {
+          "title": "Anthropic: Start der Roadshow (10.11.)",
+          "url": "https://www.anthropic.com/news/roadshow-launch"
+        },
+        {
+          "title": "CNBC: Preisspanne 70–78 $, Handel ab 19.11. (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+        },
         {
           "title": "India Today/Reuters: Roadshow am 10.11., Preis nächste Woche",
           "url": "https://www.indiatoday.in/business/story/anthropic-ipo-withdraws-filing-69-billion-fundraise-report-3036003-2026-11-10"
@@ -910,9 +930,13 @@
       ],
       "probabilityPct": 50,
       "impact": "mittel",
-      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nach dem US-Start lag Nvidia zeitweise bis zu 8 % im Minus, um 18:05 bei ~177,2 $ (−5,0 %), während Broadcom, AMD und die Nasdaq (~+2,5 %) stiegen. Stand 20:05: Nvidia ~176,8 $ (−5,3 %), weiter keine öffentliche Antwort Huangs auf die Briefing-Bitte; Nvidia hatte schon auf frühere Nachfragen nicht gesagt, ob er kommt (CNBC). Der künftige Mehrheitsführer Jeffries erwartet, dass die Affäre am Mo in einem vertraulichen Briefing mit dem Weißen Haus zur Sprache kommt (CNBC); Nvidia: Huang führe „ohne Unterbrechung“ weiter. Mit der neuen demokratischen Mehrheit droht zusätzlich mehr Aufsicht (CNBC). Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen. Stand 22:00: Nvidia schloss bei 178,67 $ (−4,3 %) – einziger Verlierer im Halbleiter-Index, der etwa 7 % stieg (Reuters). Die drei republikanischen Ausschuss-Chefs haben ihre Bitte um ein vertrauliches Briefing am 18.11. am Montagabend erneut öffentlich gemacht (The Verge); eine Zusage Huangs gibt es weiter nicht. Daher bleibt es bei 50 %.",
+      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nach dem US-Start lag Nvidia zeitweise bis zu 8 % im Minus, um 18:05 bei ~177,2 $ (−5,0 %), während Broadcom, AMD und die Nasdaq (~+2,5 %) stiegen. Stand 20:05: Nvidia ~176,8 $ (−5,3 %), weiter keine öffentliche Antwort Huangs auf die Briefing-Bitte; Nvidia hatte schon auf frühere Nachfragen nicht gesagt, ob er kommt (CNBC). Der künftige Mehrheitsführer Jeffries erwartet, dass die Affäre am Mo in einem vertraulichen Briefing mit dem Weißen Haus zur Sprache kommt (CNBC); Nvidia: Huang führe „ohne Unterbrechung“ weiter. Mit der neuen demokratischen Mehrheit droht zusätzlich mehr Aufsicht (CNBC). Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen. Stand 22:00: Nvidia schloss bei 178,67 $ (−4,3 %) – einziger Verlierer im Halbleiter-Index, der etwa 7 % stieg (Reuters). Die drei republikanischen Ausschuss-Chefs haben ihre Bitte um ein vertrauliches Briefing am 18.11. am Montagabend erneut öffentlich gemacht (The Verge); eine Zusage Huangs gibt es weiter nicht. Daher bleibt es bei 50 %. Neu Di 10.11.: Trump sagte im Weißen Haus, er habe mit Huang gesprochen, Huang bestreite, von einer Spionin gewusst zu haben – „das FBI schaut sich das an“. Eine Kanzlei in Los Angeles hat in San José eine Sammelklage von Aktionären gegen Nvidia und Huang eingereicht (CNBC). Nvidia vorbörslich etwa +1 %. 50 % unverändert, weil eine Zusage Huangs weiter fehlt.",
       "example": false,
       "sources": [
+        {
+          "title": "CNBC: FBI-Prüfung und Sammelklage (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/nvidia-scandal-fails-to-bring-down-the-tech-bulls-as-spy-investigation-widens.html"
+        },
         {
           "title": "The Verge: Republikaner erneuern Bitte um Huang-Briefing (9.11.)",
           "url": "https://www.theverge.com/policy/1030258/republicans-reshare-request-for-a-closed-door-briefing-with-jensen-huang-next-week"
@@ -1140,7 +1164,7 @@
       ],
       "probabilityPct": 98,
       "impact": "hoch",
-      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen. Stand 9.11.: Der Markt preist laut CME FedWatch mit über 80 % eine Zinserhöhung ein (Reuters), gestützt vom starken Oktober-Arbeitsmarkt.",
+      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen. Stand 9.11.: Der Markt preist laut CME FedWatch mit über 80 % eine Zinserhöhung ein (Reuters), gestützt vom starken Oktober-Arbeitsmarkt. Stand 10.11.: Oktober-CPI mit +0,4 % und Kernrate +0,3 % jeweils 0,1 Punkte über Konsens (BLS). Waller ist für eine Erhöhung im Dezember und brachte bei heißen Daten 50 Basispunkte ins Spiel (CNBC). Am Fr 13.11. folgen die Erzeugerpreise.",
       "example": false,
       "sources": [
         {
@@ -1150,6 +1174,14 @@
         {
           "title": "Reuters/StreetInsider: Wall St steigt, Öl fällt, Nvidia schwach (9.11.)",
           "url": "https://www.streetinsider.com/General+News/Wall+St+rallies+after+last+week%27s+AI+rout%3B+Nvidia+falls/27310155.html"
+        },
+        {
+          "title": "BLS: Verbraucherpreise Oktober 2026",
+          "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+        },
+        {
+          "title": "CNBC: Waller zu 50 Basispunkten (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html"
         }
       ]
     },
