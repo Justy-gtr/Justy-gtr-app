@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T08:24:00+01:00",
+  "updatedAt": "2026-11-10T08:30:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 60,
-      "postsCount": 25,
-      "reason": "Viel Vorfreude auf Starship-Flug 15 am Freitag mit Doppel-Fang am Turm; dazu +5,8 % am Montag, NASA-Mondaufträge und Pläne für ein 24-Mrd.-$-Rechenzentrum in Starbase.",
+      "postsCount": 20,
+      "reason": "Vorfreude auf Starship-Flug 15 am Freitag mit Doppel-Fang; Booster B22 rollt zur Rampe. Dazu +5,8 % am Montag und NASA-Mondaufträge, FAA-Freigabe fehlt noch.",
       "sources": [
-        {
-          "title": "Starship Flight 15 am 13. Nov.: Booster und Ship sollen gefangen werden",
-          "url": "https://x.com/Stellarixorine/status/2120025510441095590"
-        },
         {
           "title": "Booster B22 rollt zur Rampe für Flug 15",
           "url": "https://x.com/DimaZeniuk/status/2120050024188887378"
         },
         {
-          "title": "SPCX +5,8 %: NASA-Mond-Pool CLPS 2 und Starship-Buchung 2028",
+          "title": "Guten Morgen Europa: Überblick für SpaceX-Anleger",
+          "url": "https://x.com/spcxGOD/status/2120036733563883590"
+        },
+        {
+          "title": "SPCX +5,8 %: NASA-Mond-Pool CLPS 2, Flug 15 frühestens 13.11.",
           "url": "https://x.com/AsLongAslCan/status/2120054632156176394"
         }
       ],
-      "updatedAt": "2026-11-10T08:24:00+01:00"
+      "updatedAt": "2026-11-10T08:30:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 25,
-      "reason": "Robotaxi-Ausbau (San Antonio, +5,5 % am Montag), neue Solarfabrik; deutsche Posts kritisieren Cybertruck-Aus und Markenwert.",
+      "score": 20,
+      "postsCount": 20,
+      "reason": "Robotaxi-Ausbau (+5,5 % am Montag), Solarfabrik bei Houston und neues Entwicklungszentrum in Berlin; Kritik am Cybertruck-Aus und an 0 % Umsatzwachstum.",
       "sources": [
         {
           "title": "TSLA +5,5 % am Montag nach Robotaxi-Ausbau",
           "url": "https://x.com/ankushtasildar/status/2120043217290949016"
         },
         {
-          "title": "Neue 10-Mrd.-$-Solarfabrik bei Houston",
+          "title": "10-Mrd.-$-Solarfabrik bei Houston",
           "url": "https://x.com/dukethefifthh/status/2120048874693767646"
         },
         {
-          "title": "Insider-Verkäufe laut SEC Form 4",
-          "url": "https://x.com/SuperMariossss/status/2120022503699669487"
+          "title": "Q3-Umsatzwachstum: Tesla bei 0 %",
+          "url": "https://x.com/AnessHusseinAli/status/2120043528029876440"
         }
       ],
-      "updatedAt": "2026-11-10T08:24:00+01:00"
+      "updatedAt": "2026-11-10T08:30:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": -15,
-      "postsCount": 25,
-      "reason": "Q3: Umsatz besser, aber höherer Verlust; nachbörslich etwa 7 % im Minus, Kursziel von Piper Sandler auf 58 $. Pentagon-Kredit für Neutron kommt gut an.",
+      "postsCount": 20,
+      "reason": "Q3: Umsatz besser, aber höherer Verlust; vorbörslich etwa 7 % im Minus, Piper Sandler senkt Kursziel auf 58 $. Pentagon-Kredit für Neutron kommt gut an.",
       "sources": [
         {
           "title": "Rocket Lab Q3: Umsatz geschlagen, Gewinn verfehlt",
           "url": "https://x.com/iothomehacking/status/2120049551163728096"
         },
         {
-          "title": "Piper Sandler senkt Kursziel von 83 auf 58 $",
-          "url": "https://x.com/RCapitalX/status/2120054254379626754"
+          "title": "RKLB seit Börsenschluss rund −7,4 %",
+          "url": "https://x.com/perpequities/status/2120048839034114400"
         },
         {
           "title": "Pentagon: 150 Mio. $ Kreditzusage für Neutron",
           "url": "https://x.com/RCapitalX/status/2120035503689056558"
         }
       ],
-      "updatedAt": "2026-11-10T08:24:00+01:00"
+      "updatedAt": "2026-11-10T08:30:00+01:00"
     }
   }
 }
