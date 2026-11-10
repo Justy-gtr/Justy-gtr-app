@@ -2,6 +2,7 @@ import { chartAnalysis } from "./analysis.js";
 import { analyseViewToggle, musterCard } from "./analyse-view.js";
 import { sparkline } from "./chart.js";
 import { renderDeutschland } from "./germany-view.js";
+import { knockOut, readKnockStore } from "./knockout.js";
 import { renderMoodLamp } from "./sentiment.js";
 import {
   esc,
@@ -28,6 +29,10 @@ import {
   sessionBlurb,
   headlineEvent,
   orderCalendarEvents,
+  calendarStart,
+  calendarEnd,
+  berlinDate,
+  marketLights,
   isStandalone,
   opinionWord,
   vsSwarmVerdict,
@@ -188,59 +193,201 @@ export function renderShell(ctx) {
   }
 }
 
-function renderHeute(data, ui, store) {
-  const tickers = data.prices?.tickers || [];
+const HOME_FOCUS = ["SPCX", "TSLA", "RKLB"];
+
+function focusTickers(data) {
+  const all = data?.prices?.tickers || [];
+  const picked = HOME_FOCUS.map((symbol) => all.find((item) => item.symbol === symbol)).filter(Boolean);
+  return picked.length ? picked : all.slice(0, 3);
+}
+
+function homeUpcoming(data, now) {
+  return orderCalendarEvents(data?.calendar?.events || [], now).filter((event) => {
+    const end = calendarEnd(event);
+    const start = calendarStart(event);
+    if (end) return end.getTime() > now.getTime();
+    if (event?.time) return start && start.getTime() > now.getTime();
+    return String(event?.date || "") >= berlinDate(now);
+  }).slice(0, 2);
+}
+
+function lightClass(state) {
+  if (state === "offen" || state === "an") return state === "an" ? "is-wait" : "is-go";
+  if (state === "neben") return "is-wait";
+  return "is-off";
+}
+
+function ampelStrip(now) {
+  const lights = marketLights(now);
+  const usText = lights.usWord === "vorbörslich" ? "vor" : lights.usWord === "nachbörslich" ? "nach" : lights.usWord === "offen" ? "offen" : "zu";
+  const cells = [
+    ["Tradegate", lights.tradegate === "offen" ? "offen" : "zu", lightClass(lights.tradegate), "xetra"],
+    ["US", usText, lightClass(lights.us), "nyse"],
+    ["Nacht", lights.overnight === "an" ? "an" : "zu", lightClass(lights.overnight), ""]
+  ];
+  return `<div class="ampel" role="group" aria-label="Markt">${cells.map(([name, text, cls, session]) => session
+    ? `<button type="button" class="ampel-cell ${cls}" data-action="open-session" data-id="${esc(session)}"><i aria-hidden="true"></i><span>${esc(name)}</span><em>${esc(text)}</em></button>`
+    : `<span class="ampel-cell ${cls}"><i aria-hidden="true"></i><span>${esc(name)}</span><em>${esc(text)}</em></span>`).join("")}</div>`;
+}
+
+function homeTickerCard(data, ticker) {
+  const sparkSource = ticker.history?.intraday?.length ? sparkSample(ticker.history.intraday) : ticker.sparkline;
+  const facts = priceFacts(ticker);
+  return `<article class="home-tick">
+    ${renderMoodLamp(data?.sentiment, ticker.symbol, new Date(), `home-${ticker.symbol}`, "is-corner")}
+    <button type="button" class="home-tick-go" data-action="open-analyse" data-symbol="${esc(ticker.symbol)}" aria-label="${esc(ticker.name || ticker.symbol)} in der Analyse öffnen">
+      <strong>${esc(ticker.symbol)}</strong>
+      <span class="home-tick-px">${esc(formatEUR(ticker.priceEur))}</span>
+      <span class="home-tick-pct ${tone(ticker.changePct)}">${arrow(ticker.changePct)} ${esc(formatPct(ticker.changePct))}</span>
+      ${sparkline(sparkSource, undefined, { dots: true })}
+    </button>
+    <button type="button" class="why-link" data-action="explain" data-symbol="${esc(ticker.symbol)}">Warum?</button>
+    ${facts ? `<details class="home-span"><summary>Spanne</summary>${facts}</details>` : ""}
+  </article>`;
+}
+
+function homeBriefing(data) {
+  const briefing = data?.briefing;
+  const bullets = (briefing?.bullets || []).slice(0, 3);
+  if (!bullets.length && !briefing?.summary) {
+    return `<button type="button" class="text-btn" data-action="open-briefing">Morgen-Briefing</button>`;
+  }
+  return `<section class="card home-brief" aria-label="Briefing">
+    <p class="kicker">Briefing</p>
+    <ul class="home-bullets">${bullets.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
+    <details class="home-more">
+      <summary>Mehr lesen</summary>
+      <p>${esc(briefing?.summary || "")}</p>
+      <button type="button" class="text-btn" data-action="open-briefing">Ganzes Briefing</button>
+    </details>
+  </section>`;
+}
+
+function homeDates(data, now) {
+  const events = homeUpcoming(data, now);
+  const rows = events.map((event) => `<button type="button" class="home-date" data-action="open-event" data-id="${esc(event.id)}">
+    <span class="home-date-time">${esc(formatEventClock(event))}</span>
+    <span class="home-date-title">${esc(event.title)}</span>
+    ${prob(event.probabilityPct)}
+  </button>`).join("");
+  return `<details class="fold home-dates" open>
+    <summary>Termine <span class="muted">${events.length ? "die nächsten zwei" : "leer"}</span></summary>
+    <div class="fold-body">
+      ${rows || `<p class="empty">Gerade liegt kein Termin vorn.</p>`}
+      <button type="button" class="text-btn" data-action="page" data-page="kalender">Alle Termine</button>
+    </div>
+  </details>`;
+}
+
+function savedKnocks() {
+  try {
+    if (typeof localStorage === "undefined") return [];
+    return readKnockStore(localStorage).saved || [];
+  } catch {
+    return [];
+  }
+}
+
+function homeKnock(data) {
+  const saved = savedKnocks().slice(0, 3);
+  const rate = Number(data?.prices?.fx?.rate);
+  if (!saved.length) {
+    return `<section class="home-ko" aria-label="Knock-out">
+      <span>Knock-out</span>
+      <button type="button" data-action="open-ko">Rechner</button>
+    </section>`;
+  }
+  const rows = saved.map((item) => {
+    const ticker = (data?.prices?.tickers || []).find((row) => row.symbol === item.symbol);
+    const result = knockOut({
+      priceEur: ticker?.priceEur,
+      rate: Number.isFinite(rate) ? rate : ticker?.fxRate,
+      barrier: item.barrier,
+      side: item.side
+    });
+    const word = result.behind ? "hinter der Schwelle" : result.band === "nah" ? "nah" : result.band === "mittel" ? "mittel" : "weit";
+    return `<button type="button" data-action="open-ko"><strong>${esc(item.name || item.symbol)}</strong><span class="is-${esc(result.band || "weit")}">${esc(word)}</span></button>`;
+  }).join("");
+  return `<section class="home-ko is-list" aria-label="Knock-out">${rows}</section>`;
+}
+
+function homeMoons(data) {
+  const file = data?.moonshots;
+  const near = file?.nearTerm?.candidates || [];
+  const rest = file?.candidates || [];
+  const seen = new Set();
+  const cards = [];
+  for (const item of [...near, ...rest]) {
+    if (!item || seen.has(item.symbol)) continue;
+    seen.add(item.symbol);
+    cards.push(item);
+    if (cards.length >= 6) break;
+  }
+  if (!cards.length) return "";
+  return `<section class="home-moons" aria-label="Moonshots">
+    <div class="row between"><p class="kicker">Moonshots</p><button type="button" class="text-btn" data-action="open-moonshots">Alle</button></div>
+    <div class="moon-rail">${cards.map((item) => `<button type="button" class="moon-mini" data-action="open-moonshots">
+      <strong>${esc(item.symbol)}</strong>
+      <span>${esc(item.name || "")}</span>
+      <em>${item.priceEur == null ? "" : esc(formatEUR(item.priceEur))} <span class="${tone(item.changePct)}">${esc(formatPct(item.changePct))}</span></em>
+      <small>${esc(item.catalyst?.label || formatDay(item.catalyst?.date) || "")}</small>
+    </button>`).join("")}</div>
+  </section>`;
+}
+
+function homeAlerts(data) {
+  const alerts = [...(data?.alerts?.alerts || [])].sort((a, b) => String(b.timestamp || "").localeCompare(String(a.timestamp || "")));
+  if (!alerts.length) return "";
+  return `<section class="card home-alerts" aria-label="Meldungen">
+    <div class="row between"><p class="kicker">Meldungen</p><button type="button" class="text-btn" data-action="open-alerts">Alle anzeigen</button></div>
+    ${alerts.slice(0, 3).map((alert) => `<button type="button" class="mini-note" data-action="open-alerts">
+      <span class="row between"><strong>${esc(alert.symbol)}</strong><span>${esc(formatEUR(alert.priceEur))} <span class="${tone(alert.changePct)}">${esc(formatPct(alert.changePct))}</span></span></span>
+      <span class="muted">${esc(formatStamp(alert.timestamp))}${alert.notified ? " · gemeldet" : ""}</span>
+    </button>`).join("")}
+  </section>`;
+}
+
+export function renderHeute(data, ui, store) {
   const calm = bigDrop(data);
-  const next = headlineEvent(data.calendar?.events || []);
-  const favorites = [...(data.favorites?.favorites || [])].sort((a, b) => (a.rank || 99) - (b.rank || 99));
-  const launch = data.production?.nextLaunch;
-  const live = freshPrices(data.meta);
-  const alerts = data.alerts?.alerts || [];
-  const install = !store.installHidden && !isStandalone();
+  const favorites = [...(data?.favorites?.favorites || [])].sort((a, b) => (a.rank || 99) - (b.rank || 99));
+  const launch = data?.production?.nextLaunch;
+  const install = !store?.installHidden && typeof window !== "undefined" && !isStandalone();
   const now = new Date();
   const today = new Intl.DateTimeFormat("de-DE", { weekday: "long", day: "numeric", month: "long" }).format(now);
   const clock = berlinClockText(now);
   const dropped = calm.tickers.map((ticker) => ticker.symbol).join(", ");
+  const tickers = focusTickers(data);
   return `
-    ${dailyWager(data, store)}
-    <header class="page-head home-head">
-      <p class="eyebrow">Heute</p>
-      <h1>${esc(greeting())}, Justy</h1>
-      <div class="home-meta">
-        <p class="dateline">${esc(today)}</p>
+    <header class="home-hero">
+      <div class="home-hero-top">
+        <div>
+          <p class="eyebrow">Heute</p>
+          <h1>${esc(greeting())}, Justy</h1>
+          <p class="dateline">${esc(today)}</p>
+        </div>
         <div class="home-clock">
           <time id="home-clock" datetime="${esc(now.toISOString())}">${esc(clock)}</time>
           <p id="home-session" class="home-session">US ${esc(usSessionWord(now))}</p>
         </div>
       </div>
+      ${ampelStrip(now)}
     </header>
+    <section class="home-ticks" aria-label="Kurse">${tickers.map((ticker) => homeTickerCard(data, ticker)).join("") || `<p class="empty">Keine Kurse.</p>`}</section>
     ${install ? `<p class="install-line"><span>In Safari auf Teilen tippen, dann „Zum Home-Bildschirm“.</span><button type="button" data-action="dismiss-install">OK</button></p>` : ""}
     ${calm.active ? `<button type="button" class="banner banner-calm" data-action="open-calm">Ruhe-Modus · ${esc(dropped || "Ein Kurs")}</button>` : ""}
-    ${feedBlock(data)}
-    ${marketBlock(data)}
-    ${topFive(favorites, ui)}
-    <section class="card quote-card is-tight" aria-label="Kurse in Euro">
-      <div class="row between quote-head"><span class="kicker">Kurse in Euro</span><span class="muted">Xetra, sonst umgerechnet</span></div>
-      ${tickers.map((ticker) => quoteRow(ticker, live, true)).join("") || `<p class="empty">Keine Kurse.</p>`}
-    </section>
-    ${next ? `<button type="button" class="card next-card" data-action="open-event" data-id="${esc(next.id)}">
-      <span class="kicker">Als Nächstes</span>
-      <span class="next-title">${esc(next.title)}</span>
-      <span class="muted">${esc(formatEventClock(next))} · ${esc(String(next.probabilityPct ?? "—"))} %</span>
-    </button>` : ""}
+    ${dailyWager(data, store)}
+    ${homeBriefing(data)}
+    ${homeDates(data, now)}
+    ${homeKnock(data)}
+    ${homeMoons(data)}
+    ${homeAlerts(data)}
+    <details class="fold"><summary>Neues</summary><div class="fold-body">${feedBlock(data) || `<p class="empty">Nichts Neues.</p>`}</div></details>
+    <details class="fold"><summary>Tagesplan</summary><div class="fold-body">${marketBlock(data)}</div></details>
+    <details class="fold"><summary>Karls Top 10</summary><div class="fold-body">${topFive(favorites, ui) || `<p class="empty">Noch keine Liste.</p>`}</div></details>
     ${launch ? `<details class="fold"><summary><span>Starship</span><span class="count-num summary-count" id="count-num" data-target="${esc(launch.target || "")}">—</span></summary><div class="fold-body">${launchBody(launch)}</div></details>` : ""}
-    ${alerts.length ? `<details class="fold"><summary>Bewegungen ab 2 % <span class="muted">${alerts.length}</span></summary><div class="fold-body">${alerts.slice(0, 6).map((alert) => `
-      <button type="button" class="mini-note" data-action="open-alerts">
-        <span class="row between"><strong>${esc(alert.symbol)}</strong><span>${esc(formatEUR(alert.priceEur))} <span class="${tone(alert.changePct)}">${esc(formatPct(alert.changePct))}</span></span></span>
-        <span class="muted">${esc(formatStamp(alert.timestamp))}${alert.notified ? " · gemeldet" : ""}</span>
-      </button>`).join("")}</div></details>` : ""}
-    <details class="fold"><summary>Kosmos</summary><div class="fold-body chips">${(data.companies?.companies || []).map((company) => `
+    <details class="fold"><summary>Kosmos</summary><div class="fold-body chips">${(data?.companies?.companies || []).map((company) => `
       <button type="button" class="chip" data-action="open-company" data-id="${esc(company.id)}">${esc(company.name)}</button>`).join("")}</div></details>
-    <div class="jump-list">
-      <button type="button" data-action="open-briefing"><span>Morgen-Briefing</span><span aria-hidden="true">›</span></button>
-      <button type="button" data-action="open-question"><span>Tagesfrage</span><span aria-hidden="true">›</span></button>
-      <button type="button" data-action="page" data-page="kalender"><span>Ganzer Kalender</span><span aria-hidden="true">›</span></button>
-    </div>
+    <button type="button" class="text-btn" data-action="open-question">Tagesfrage</button>
   `;
 }
 

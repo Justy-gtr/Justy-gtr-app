@@ -1812,6 +1812,17 @@ export function usSessionWord(date = new Date()) {
   return "geschlossen";
 }
 
+/** Three lights for the home strip: Tradegate, US cash, US extended hours. */
+export function marketLights(date = new Date()) {
+  const berlin = zonedClock(date, "Europe/Berlin");
+  const minutes = berlin.hour * 60 + berlin.minute;
+  const tradegate = berlin.weekday <= 4 && minutes >= 8 * 60 && minutes < 22 * 60 ? "offen" : "zu";
+  const usWord = usSessionWord(date);
+  const us = usWord === "offen" ? "offen" : usWord === "geschlossen" ? "zu" : "neben";
+  const overnight = usWord === "vorbörslich" || usWord === "nachbörslich" ? "an" : "zu";
+  return { tradegate, us, overnight, usWord };
+}
+
 /**
  * Poll while a new snapshot can exist: Berlin weekday 05:00–22:15,
  * or the US pre/regular/post session plus the same 30-minute buffer as the workflow.

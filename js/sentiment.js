@@ -112,11 +112,12 @@ function sheetBody(state) {
   `;
 }
 
-export function renderMoodLamp(file, symbol, now = new Date(), place = "chart") {
+export function renderMoodLamp(file, symbol, now = new Date(), place = "chart", extra = "") {
   const state = lampState(file?.symbols?.[symbol], now);
   const safeSymbol = esc(symbol || "");
   const id = `mood-sheet-${place}-${symbol || "x"}`;
   const classes = ["mood-lamp", `is-${state.tone}`];
+  if (extra) classes.push(extra);
   if (state.empty) classes.push("is-empty");
   if (state.stale) classes.push("is-stale");
   if (state.changed) classes.push("is-changed");
