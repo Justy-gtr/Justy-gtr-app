@@ -539,7 +539,7 @@
       ],
       "probabilityPct": 95,
       "impact": "mittel",
-      "reasoning": "Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens laut Dow-Jones-Tagesvorschau: +0,3 % zum Vormonat und +3,9 % zum Vorjahr, Kernrate +0,2 % / +2,7 % (September +0,6 % / +3,7 %, Kern +0,3 % / +2,6 %). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid.",
+      "reasoning": "Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid.",
       "example": false,
       "sources": [
         {
@@ -1669,6 +1669,38 @@
         {
           "title": "Trade Law Counsel: Section-232-Verhandlungen zu Robotik, keine Zölle",
           "url": "https://www.tradelawcounsel.com/insights-news/2026/11/2/president-directs-section-232-negotiations-on-robotics-and-industrial-machinery-imports-no-tariffs-imposed"
+        }
+      ]
+    },
+    {
+      "id": "evt-coreweave-q3",
+      "title": "CoreWeave: Zahlen Q3 2026 (nach US-Schluss)",
+      "date": "2026-11-10",
+      "time": "23:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "earnings",
+      "company": "CoreWeave",
+      "tickers": [
+        "SPCX",
+        "MRVL"
+      ],
+      "probabilityPct": 97,
+      "impact": "mittel",
+      "reasoning": "Offiziell: Telefonkonferenz am Di 10.11. um 17:00 Uhr ET (= 23:00 Berlin), die Zahlen kommen davor nach US-Schluss (CoreWeave). Der KI-Cloud-Anbieter gilt als Gradmesser für die Rechenzentrums-Ausgaben, die vorige Woche nach der US-Wahl in Zweifel gerieten. Das trifft die KI-Geschichte von SpaceX (Rechenzentren) und Marvell (Netzwerkchips). 97 %: fester Firmentermin.",
+      "example": false,
+      "sources": [
+        {
+          "title": "CoreWeave/Business Wire: Termin Q3-Zahlen und Call (27.10.)",
+          "url": "https://finance.yahoo.com/technology/ai/articles/coreweave-announces-date-third-quarter-200500709.html"
+        },
+        {
+          "title": "CoreWeave IR: Q3 2026 Earnings Call",
+          "url": "https://investors.coreweave.com/events-and-presentations/event-details/2026/CoreWeave-Third-Quarter-2026-Earnings-Call/default.aspx"
+        },
+        {
+          "title": "Saxo Morning Brew 10.11.: Termine (CoreWeave)",
+          "url": "https://www.home.saxo/en-ch/content/articles/morning-brew/morning-brew-november-10-2026-10112026"
         }
       ]
     }
