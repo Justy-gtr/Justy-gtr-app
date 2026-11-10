@@ -66,6 +66,15 @@ export const TICKERS = [
     role: "Vergleich",
     usdSymbol: "RKLB",
     eurSymbols: ["6RJ0.F", "6RJ0.MU"]
+  },
+  {
+    symbol: "MRVL",
+    name: "Marvell Technology",
+    venue: "Nasdaq",
+    role: "Halbleiter",
+    usdSymbol: "MRVL",
+    // Xetra zuerst, Frankfurt als Ersatz. Beide in Euro, wie TL0 bei Tesla.
+    eurSymbols: ["9MW.DE", "9MW.F"]
   }
 ];
 

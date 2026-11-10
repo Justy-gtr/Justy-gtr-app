@@ -17,6 +17,7 @@ import {
   weekdayPathsMerged
 } from "../js/daypath.js";
 import { berlinClock } from "../js/seasonality.js";
+import { TICKERS } from "./fetch-prices.mjs";
 import { dayPathVenues, dayPathsStale, shouldSkipSeasonality } from "./fetch-seasonality.mjs";
 
 const ADVICE = /\b(kaufen|verkaufen|kauft|verkauft|kauf|verkauf|empfehl\w*)\b/i;
@@ -220,11 +221,7 @@ test("Ohne dayPaths oder bei neuer Fassung wird neu gerechnet", () => {
   const dayPaths = { schema: DAYPATH_SCHEMA, days: [{}, {}, {}, {}, {}] };
   const current = {
     asOf: "2026-11-09T08:00:00.000Z",
-    symbols: {
-      SPCX: { dayPaths },
-      TSLA: { dayPaths },
-      RKLB: { dayPaths }
-    }
+    symbols: Object.fromEntries(TICKERS.map((spec) => [spec.symbol, { dayPaths }]))
   };
   assert.equal(shouldSkipSeasonality(current, now, false, false), true);
   assert.equal(shouldSkipSeasonality(current, now, true, false), false);

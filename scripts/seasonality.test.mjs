@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
 import { renderAnalyse } from "../js/analyse-view.js";
+import { TICKERS } from "./fetch-prices.mjs";
 import { MIN_CASES } from "../js/analysis.js";
 import {
   EARLY_NOTE_DE,
@@ -383,7 +384,7 @@ test("Die Karte steht unter dem Muster und die Spanne lässt sie in Ruhe", () =>
   assert.equal(/\b(kaufen|verkaufen)\b/i.test(html), false);
   assert.equal(/Kaufsignal/i.test(fs.readFileSync("data/seasonality.json", "utf8")), false);
   assert.equal(ADVICE.test(fs.readFileSync("js/seasonality.js", "utf8")), false);
-  for (const symbol of ["SPCX", "TSLA", "RKLB"]) {
+  for (const symbol of TICKERS.map((spec) => spec.symbol)) {
     const pack = seasonality.symbols[symbol];
     for (const key of ["all", "year"]) {
       const line = seasonalityHeadline(symbol, pack.ranges[key]);
@@ -427,4 +428,14 @@ test("Die Karte steht unter dem Muster und die Spanne lässt sie in Ruhe", () =>
   assert.ok(slot("SPCX", "15:00").n >= MIN_CASES);
   assert.match(spcx, /data-hour="08"/);
   assert.match(spcx, /–/);
+  const mrvlCard = renderSeasonalityCard(seasonality, { symbol: "MRVL" }, "all");
+  assert.match(mrvlCard, /MRVL/);
+  assert.match(mrvlCard, /vor 15:30: Handel in Deutschland/);
+  assert.equal(ADVICE.test(mrvlCard), false);
+  assert.ok(slot("MRVL", "08").n >= MIN_CASES);
+  assert.ok(slot("MRVL", "15:30").n >= MIN_CASES);
+  assert.match(JSON.stringify(seasonality.sources), /quote\/9MW\.(?:DE|F)/);
+  const mrvlPaths = seasonality.symbols.MRVL.dayPaths;
+  assert.equal(mrvlPaths.days.length, 5);
+  assert.ok(mrvlPaths.days.some((day) => day.n >= MIN_CASES));
 });

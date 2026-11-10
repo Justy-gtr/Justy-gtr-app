@@ -9,6 +9,11 @@ import {
   HOUR_SLOTS,
   WEEKDAY_LABELS
 } from "../js/seasonality.js";
+import { TICKERS } from "./fetch-prices.mjs";
+
+const ANALYSE_SYMBOLS = TICKERS.map((spec) => spec.symbol);
+// MRVL hat keinen Eintrag. Eine andere Routine schreibt diese Datei.
+const SENTIMENT_SYMBOLS = ["SPCX", "TSLA", "RKLB"];
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const dataDir = path.join(root, "data");
@@ -85,7 +90,7 @@ if (meta) {
 const prices = loaded["prices.json"];
 if (prices) {
   const symbols = new Set((prices.tickers || []).map((ticker) => ticker.symbol));
-  for (const symbol of ["SPCX", "TSLA", "RKLB"]) {
+  for (const symbol of ANALYSE_SYMBOLS) {
     if (!symbols.has(symbol)) fail(`prices fehlt ${symbol}`);
   }
   for (const ticker of prices.tickers || []) {
@@ -350,7 +355,7 @@ if (seasonality) {
     fail("seasonality.weekdays");
   }
   sourcesOk(seasonality.sources, "seasonality");
-  for (const symbol of ["SPCX", "TSLA", "RKLB"]) {
+  for (const symbol of ANALYSE_SYMBOLS) {
     const pack = seasonality.symbols?.[symbol];
     if (!pack?.name) fail(`seasonality.${symbol}`);
     for (const key of ["all", "year"]) {
@@ -524,7 +529,7 @@ if (sentiment) {
   if (sentiment.example !== false) fail("sentiment.example");
   if (sentiment.schema !== 1) fail("sentiment.schema");
   if (!isoStamp(sentiment.updatedAt)) fail("sentiment.updatedAt");
-  for (const symbol of ["SPCX", "TSLA", "RKLB"]) {
+  for (const symbol of SENTIMENT_SYMBOLS) {
     const row = sentiment.symbols?.[symbol];
     const label = `sentiment.${symbol}`;
     if (!row) {

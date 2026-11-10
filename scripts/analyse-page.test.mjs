@@ -4,10 +4,11 @@ import test from "node:test";
 import { BOUNCE_FEW, BOUNCE_LOOK, BOUNCE_PLAIN, BREAK_LEGEND, N_LEGEND, analyseCandles, analyseChart, analyseText, countLevelBounces, describeLevelBounces, detectShape, levelMarkLabel, levelPriceTag, levelSideName, numberLevelMarks } from "../js/analyse.js";
 import { guideLegend, musterCard, rangeBoard, renderAnalyse } from "../js/analyse-view.js";
 import { MIN_CASES, analysisText, chartAnalysis } from "../js/analysis.js";
-import { nameAnchorX, pickNameY, settlePriceTags, visibleGridLabels } from "../js/candle-chart.js";
+import { GUTTER_EDGE, GUTTER_GAP, TAG_HPAD, candleBodyWidth, candleX, gutterStart, gutterWidth, nameAnchorX, pickNameY, settlePriceTags, tagBox, visibleGridLabels } from "../js/candle-chart.js";
 import { ANALYSE_RANGES, bucketCandles, candleColor, candlesFor, formatMove, isUsefulFourHour, scrubLabel } from "../js/candles.js";
 import { chartAxisLabels, formatEUR, guideLabelsToDraw, HOURLY_BAR_CAP, instrumentAxisLabels, instrumentSeries, scrubDelta, seriesFor, tradingSessionCount, VISIBLE_BARS } from "../js/logic.js";
 import { renderChartsPage } from "../js/views.js";
+import { TICKERS } from "./fetch-prices.mjs";
 import { aggregateBars } from "./market.mjs";
 
 const ADVICE = /\b(kaufen|verkaufen|kauft|verkauft|kauf|verkauf|long|short|empfehl\w*|signal|tipp)\b/i;
@@ -634,8 +635,8 @@ test("Nummern und Striche kommen aus der Fixture, nicht aus dem Tageskurs", () =
   assert.match(css, /\.guide-legend \.swatch\.trend/);
   assert.equal(css.includes("kaufen"), false);
   const sw = fs.readFileSync("sw.js", "utf8");
-  assert.match(sw, /jgtr-v35/);
-  assert.equal(sw.includes("jgtr-v34"), false);
+  assert.match(sw, /jgtr-v36/);
+  assert.equal(sw.includes("jgtr-v35"), false);
 });
 
 test("Achse nennt die Uhrzeit und das Datum nur am Tageswechsel", () => {
@@ -802,6 +803,20 @@ test("Linienname links, Preisplakette rechts, Karte zeigt denselben Euro", () =>
   assert.match(html, new RegExp(formatEUR(126.94).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   assert.equal(levelPriceTag(126.94), formatEUR(126.94));
   assert.equal(html.includes("Keine Anlageberatung"), false);
+  const textWidth = 72;
+  const padR = gutterWidth([textWidth]);
+  assert.ok(padR >= textWidth + TAG_HPAD + GUTTER_EDGE);
+  const axis = { padL: 8, plotW: 280, count: 68, gap: GUTTER_GAP, padR };
+  const gutter = gutterStart(axis);
+  const slot = (axis.plotW - axis.gap) / axis.count;
+  const lastRight = candleX(axis, axis.count - 1) + candleBodyWidth(slot) / 2;
+  assert.ok(lastRight <= gutter - GUTTER_GAP + 0.05, `Kerze ${lastRight} Rinne ${gutter}`);
+  const box = tagBox(gutter, gutter + padR - GUTTER_EDGE, textWidth);
+  assert.ok(box.left >= gutter - 0.01);
+  assert.ok(box.right <= gutter + padR - GUTTER_EDGE + 0.01);
+  assert.ok(box.left >= lastRight + GUTTER_GAP - 0.05);
+  const wide = gutterWidth([40, 90, 55]);
+  assert.equal(wide, gutterWidth([90]));
 });
 
 test("Charts-Seite ist die Kurslinie mit 1T bis Max", () => {
@@ -853,4 +868,70 @@ test("Charts-Seite ist die Kurslinie mit 1T bis Max", () => {
   for (let index = 1; index < labels.length; index += 1) {
     assert.ok(labels[index].index - labels[index - 1].index >= 2);
   }
+});
+
+test("MRVL steht in der Analyse in Euro, mit Kerzen, Chart und grauer Lampe", () => {
+  const spec = TICKERS.find((item) => item.symbol === "MRVL");
+  assert.equal(spec?.name, "Marvell Technology");
+  assert.equal(spec.venue, "Nasdaq");
+  assert.equal(spec.usdSymbol, "MRVL");
+  assert.deepEqual(spec.eurSymbols, ["9MW.DE", "9MW.F"]);
+  const prices = JSON.parse(fs.readFileSync("data/prices.json", "utf8"));
+  const seasonality = JSON.parse(fs.readFileSync("data/seasonality.json", "utf8"));
+  const sentiment = JSON.parse(fs.readFileSync("data/sentiment.json", "utf8"));
+  const ticker = prices.tickers.find((item) => item.symbol === "MRVL");
+  assert.ok(ticker);
+  assert.equal(ticker.currency, "EUR");
+  assert.equal(typeof ticker.priceEur, "number");
+  assert.ok(ticker.priceEur > 0);
+  assert.equal(ticker.eurMethod, "direct_eur");
+  assert.ok(["9MW.DE", "9MW.F"].includes(ticker.eurSymbol));
+  assert.ok(["Xetra", "Frankfurt"].includes(ticker.eurVenue));
+  assert.equal(typeof ticker.why, "string");
+  assert.ok(ticker.why.length > 20);
+  const narrative = JSON.stringify({
+    why: ticker.why,
+    whySources: ticker.whySources,
+    longTermOutlook: ticker.longTermOutlook,
+    counterArgument: ticker.counterArgument,
+    firstPrinciples: ticker.firstPrinciples
+  });
+  assert.equal(ADVICE.test(narrative), false);
+  for (const key of ["intraday", "5m", "1H", "4H", "1M", "6M", "1Y", "5Y"]) {
+    assert.ok((ticker.history[key] || []).length >= 2, key);
+  }
+  const kinds = new Set();
+  for (const range of ANALYSE_RANGES) {
+    const packed = candlesFor(ticker, range);
+    if (range === "4 Std" && packed.missing) continue;
+    assert.equal(packed.missing, false, range);
+    assert.ok(packed.candles.length >= 2, `${range} ${packed.candles.length}`);
+    const result = analyseChart(ticker, range);
+    assert.equal(ADVICE.test(analyseText(result)), false, range);
+    for (const line of result.lines || []) kinds.add(line.kind);
+  }
+  assert.ok(kinds.has("support") || kinds.has("resistance"));
+  assert.ok(kinds.has("trend"));
+  assert.equal(ADVICE.test(analysisText(chartAnalysis(ticker, "1T"))), false);
+  assert.equal(sentiment.symbols?.MRVL, undefined);
+  const ui = { analyseSymbol: "MRVL", analyseRange: "1T", live: false };
+  const kerzen = renderAnalyse({ prices, seasonality, sentiment }, ui);
+  assert.match(kerzen, /Marvell Technology/);
+  assert.match(kerzen, /data-symbol="MRVL"[^>]*aria-pressed="true"|aria-pressed="true"[^>]*data-symbol="MRVL"/);
+  assert.match(kerzen, /mood-lamp is-leer/);
+  assert.match(kerzen, /is-empty/);
+  assert.match(kerzen, /noch keine Daten/);
+  assert.match(kerzen, /data-view="kerzen"[^>]*aria-selected="true"|aria-selected="true"[^>]*data-view="kerzen"/);
+  assert.match(kerzen, /Wochentag/);
+  assert.match(kerzen, /Durchschnittlicher Tagesverlauf/);
+  assert.match(kerzen, /Xetra|Frankfurt/);
+  assert.equal(ADVICE.test(kerzen), false);
+  assert.equal(/\bEmpfehlung\b/.test(kerzen), false);
+  const linie = renderChartsPage({ prices, seasonality, sentiment }, { ...ui, chartRange: "1T" });
+  assert.match(linie, /Marvell Technology/);
+  assert.match(linie, /data-view="chart"/);
+  assert.match(linie, /mood-lamp is-leer/);
+  assert.match(linie, /data-chart="price"/);
+  assert.equal(ADVICE.test(linie), false);
+  assert.equal(/\bEmpfehlung\b/.test(linie), false);
 });

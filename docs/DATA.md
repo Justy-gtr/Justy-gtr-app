@@ -73,13 +73,13 @@ Der Kurs-Workflow ändert `dataMode` nicht.
 }
 ```
 
-Pflicht-Symbole: `SPCX`, `TSLA`, `RKLB`.
+Pflicht-Symbole: `SPCX`, `TSLA`, `RKLB`, `MRVL`. Die Liste kommt aus `TICKERS` in `scripts/fetch-prices.mjs`.
 
 Ticker-Felder:
 
 | Feld | Bedeutung |
 | --- | --- |
-| `symbol`, `name`, `role`, `venue` | `role` ist `Fokus`, `Tesla` oder `Vergleich` |
+| `symbol`, `name`, `role`, `venue` | `role` ist `Fokus`, `Tesla`, `Vergleich` oder `Halbleiter` |
 | `currency` | immer `EUR` für den angezeigten Kurs |
 | `priceEur`, `priceUsd`, `previousCloseEur`, `changeEur`, `changePct` | `changePct` ist die Tagesveränderung in Euro |
 | `dayHighEur`, `dayLowEur` | Hoch und Tief der regulären Sitzung, die `priceEur` liefert (Xetra, Frankfurt oder Nasdaq). Nicht der Nachthandel |
@@ -88,7 +88,7 @@ Ticker-Felder:
 | `overnightHighEur`, `overnightLowEur` | Hoch und Tief derselben Phase. Bei `nachhandel` und `vorboerse` das Min/Max der geladenen Kerzen, weil die Quelle kein amtliches Overnight-Hoch/Tief liefert. Bei `us` das amtliche `regularMarketDayHigh` / `Low` der Nasdaq, umgerechnet |
 | `overnightAsOf` | Zeit des letzten Drucks, ISO-8601 |
 | `eurMethod` | `direct_eur` (deutscher Handelsplatz) oder `usd_div_eurusd` (Nasdaq geteilt durch EURUSD). Im Seed: `example` |
-| `eurVenue`, `eurSymbol` | z. B. `Xetra` / `TL0.DE`, `Frankfurt` / `6RJ0.F`, sonst `null` |
+| `eurVenue`, `eurSymbol` | z. B. `Xetra` / `TL0.DE`, `Frankfurt` / `6RJ0.F`, `Xetra` / `9MW.DE`, sonst `null` |
 | `usdSymbol`, `intradayMethod`, `fxRate` | Referenz und wie der Tagesverlauf entstand. `intradayMethod` zusätzlich `direct_eur_plus_us`, wenn nach dem Euro-Schluss Nasdaq-Punkte angehängt sind |
 | `source` | `alpaca-iex`, wenn der US-Kurs oder die US-Minuten von Alpaca IEX kamen, sonst `yahoo`. Die Euro-Anzeige folgt weiter `eurMethod` |
 | `sparkline` | Liste der letzten Euro-Kurse, kurz |
@@ -583,7 +583,7 @@ Feste Ids: `spacex`, `tesla`, `rocketlab`, `neuralink`, `xai`, `terafab`, `borin
 
 Eigene Historie je Aktie: wie oft Schluss zu Schluss an einem Wochentag stieg, und wie sich die Stunden in Berliner Zeit verhalten. Keine Rohkurse. Der Kurs-Workflow schreibt die Datei höchstens einmal je Berliner Tag neu (`scripts/fetch-seasonality.mjs`). Fehlt `symbols.*.dayPaths` oder weicht `dayPaths.schema` von der Fassung im Code ab, rechnet er trotzdem neu. Die Analyse-Spanne ändert diese Karte nicht.
 
-`ranges.all` ist bis zu zwei Jahre, `ranges.year` die letzten 365 Tage bis zum letzten Tageskurs. `days` ist Mo–Fr mit `n`, `up`, `avg`, `med` (Prozent, Schluss zu Schluss). `hours` und `grid` sind die Berliner Slots `08`–`14` (volle Stunde), `15:00` (nur bis 15:30) und danach `15:30`–`21:30` der US-Sitzung. Jede Zelle in `grid` hat `n`, `up` und `avg`. Die Karte zeigt in jedem Feld den Anteil steigender Stunden (`up` / `n`), erst ab sieben Fällen, sonst einen Strich. Die Farbe bleibt die mittlere Bewegung. Die Uhrzeit kommt vom echten Zeitstempel, damit die Sommerzeit nicht verrutscht. Vor 15:30 zählt der deutsche Yahoo-Kurs mit den meisten Stunden (Tesla `TL0.DE`/`TL0.F`, Rocket Lab `6RJ0.F`/`6RJ0.MU`, SpaceX Frankfurt `SPX.F`, ersatzweise Xetra `SPX.DE`). `SPX.F` ist bei Yahoo „Space Exploration Techs. Corp.“ an der Frankfurter Börse und hat Stunden ab 8 Uhr. Xetra öffnet erst um 9 und hat keine 8-Uhr-Stunde. Der Tageskurs von SpaceX bleibt der US-Dollar-Kurs. Sonst, wo keine deutsche Reihe reicht, die US-Vorbörse, die etwa um 10:00 beginnt. Beides wird nicht in derselben Stunde gemischt. `earlyNote` sagt auf der Karte, welche Quelle die frühen Stunden trägt. Prozent zeigt die App erst ab sieben Fällen.
+`ranges.all` ist bis zu zwei Jahre, `ranges.year` die letzten 365 Tage bis zum letzten Tageskurs. `days` ist Mo–Fr mit `n`, `up`, `avg`, `med` (Prozent, Schluss zu Schluss). `hours` und `grid` sind die Berliner Slots `08`–`14` (volle Stunde), `15:00` (nur bis 15:30) und danach `15:30`–`21:30` der US-Sitzung. Jede Zelle in `grid` hat `n`, `up` und `avg`. Die Karte zeigt in jedem Feld den Anteil steigender Stunden (`up` / `n`), erst ab sieben Fällen, sonst einen Strich. Die Farbe bleibt die mittlere Bewegung. Die Uhrzeit kommt vom echten Zeitstempel, damit die Sommerzeit nicht verrutscht. Vor 15:30 zählt der deutsche Yahoo-Kurs mit den meisten Stunden (Tesla `TL0.DE`/`TL0.F`, Rocket Lab `6RJ0.F`/`6RJ0.MU`, Marvell `9MW.DE`/`9MW.F`, SpaceX Frankfurt `SPX.F`, ersatzweise Xetra `SPX.DE`). `SPX.F` ist bei Yahoo „Space Exploration Techs. Corp.“ an der Frankfurter Börse und hat Stunden ab 8 Uhr. Xetra öffnet erst um 9 und hat keine 8-Uhr-Stunde. Der Tageskurs von SpaceX bleibt der US-Dollar-Kurs. Sonst, wo keine deutsche Reihe reicht, die US-Vorbörse, die etwa um 10:00 beginnt. Beides wird nicht in derselben Stunde gemischt. `earlyNote` sagt auf der Karte, welche Quelle die frühen Stunden trägt. Prozent zeigt die App erst ab sieben Fällen.
 
 `dayPaths` (Schema `1`) ist der mittlere Verlauf von 07:00 bis 23:00 Uhr Berlin, 33 Körbe zu 30 Minuten. Die Basis ist der erste Druck ab 07:00. Ein Korb ohne Druck bleibt leer. Yahoo-60-Minuten reichen etwa zwei Jahre, 30 Minuten etwa 60 Tage, die US-Reihe inklusive Vorbörse und Nachbörse. Deutsche Kurse nur in Euro: Frankfurt, Xetra, Stuttgart, München, soweit Yahoo sie hat. Frankfurt gewinnt einen Korb, den beide handeln. Stuttgart und die anderen füllen Lücken, sobald dieselbe Börse einen vorherigen Druck hat. Der erste Druck einer neuen Börse ist nur die neue Basis und bleibt eine Lücke. Prozent je Börse, damit Euro und Dollar nicht springen. `coverage` nennt je Korb `n`, `where` und `sources`. 07:00 und 07:30 bleiben leer: Yahoo hat vor 08:00 keinen Druck, auch nicht über Tradegate oder Lang & Schwarz. Frankfurt füllt ab 08:00, Stuttgart die halben Stunden und den späten Handel bis etwa 21:30, die US-Nachbörse 22:00, 22:30 und 23:00. 22:30 liegt nur in den letzten etwa 60 Tagen, weil die lange US-Reihe stündlich auf 22:00 und 23:00 steht. Unter sieben Tagen zeichnet die App die Linie trotzdem und schreibt „wenige Tage“ dazu. Sind die Alpaca-Schlüssel gesetzt, hängt der Lauf IEX-Stunden (etwa zwei Jahre) und IEX-30-Minuten (etwa 70 Tage) als spätere Reihe an. Sie füllt nur leere Körbe, vor allem in den US-Stunden. `n`, `where` und `sources` bleiben. `usFeed` steht danach auf `alpaca-iex`, oder auf `yahoo`, wenn der IEX-Abruf leer blieb. Ohne Schlüssel fehlt `usFeed` und der Lauf ist der bisherige.
 
@@ -597,7 +597,7 @@ Der Assistent pflegt bei den festen dreien Name, `for`, `against`, `catalyst`, `
 
 ## `sentiment.json`
 
-Wie auf X über die drei Aktien geredet wird. Ein Assistent schreibt die Datei mehrmals am Tag. Kein Workflow. Die Wörter „kaufen“, „verkaufen“, „Empfehlung“, „Kaufsignal“ und „Anlageberatung“ sind verboten. Die Lampe beschreibt nur das Gerede, sie rät nicht.
+Wie auf X über SPCX, TSLA und RKLB geredet wird. MRVL steht in der Analyse, hat hier keinen Eintrag. Fehlt das Symbol, zeigt die Lampe „noch keine Daten“ und bleibt grau. Ein Assistent schreibt die Datei mehrmals am Tag. Kein Workflow. Die Wörter „kaufen“, „verkaufen“, „Empfehlung“, „Kaufsignal“ und „Anlageberatung“ sind verboten. Die Lampe beschreibt nur das Gerede, sie rät nicht.
 
 Leerer Stand, so wie die Datei ausgeliefert wird: `example` ist `false`, `mood` ist leer, `score` ist `0`, `postsCount` ist `0`, `reason` und `updatedAt` der Zeile sind leer, `sources` ist leer. Die App zeigt dann „noch keine Daten“ und eine graue Lampe.
 
@@ -635,7 +635,7 @@ Leerer Stand, so wie die Datei ausgeliefert wird: `example` ist `false`, `mood` 
 }
 ```
 
-Pflicht-Symbole: `SPCX`, `TSLA`, `RKLB`. `schema` ist `1`.
+Pflicht-Symbole: `SPCX`, `TSLA`, `RKLB`. MRVL gehört nicht dazu. `schema` ist `1`.
 
 | Feld | Bedeutung |
 | --- | --- |
