@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T14:49:00+01:00",
+  "updatedAt": "2026-11-10T14:54:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,7 +22,7 @@
           "url": "https://x.com/SuperMariossss/status/2120143457054294064"
         }
       ],
-      "updatedAt": "2026-11-10T14:49:00+01:00"
+      "updatedAt": "2026-11-10T14:54:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,13 +43,13 @@
           "url": "https://x.com/MarketPulse369/status/2120141792158924964"
         }
       ],
-      "updatedAt": "2026-11-10T14:49:00+01:00"
+      "updatedAt": "2026-11-10T14:54:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 10,
+      "score": 5,
       "postsCount": 15,
-      "reason": "Jubel über ESCAPADE-Sonden auf Marskurs, 515 Mio. $ Neutron-Aufträge und 150 Mio. $ Kreditzusage. Piper Sandler senkt Kursziel auf 58 $ wegen Neutron-Verzögerung.",
+      "reason": "Lob für ESCAPADE-Sonden auf Marskurs und 515 Mio. $ Neutron-Aufträge. Aber Neutron-Verzögerung, gesenkte Kursziele und vorbörslich rund -9 % nach der heißen US-Inflation.",
       "sources": [
         {
           "title": "ESCAPADE-Sonden auf Kurs zum Mars",
@@ -60,11 +60,11 @@
           "url": "https://x.com/Bearlovesbull/status/2120140930464235528"
         },
         {
-          "title": "Piper Sandler: Kursziel 58 statt 83 $",
-          "url": "https://x.com/AIStockSavvy/status/2120147875439292678"
+          "title": "Vorbörslich rund -9 % trotz starkem Bericht",
+          "url": "https://x.com/WojciechBernPL/status/2120151838590689286"
         }
       ],
-      "updatedAt": "2026-11-10T14:49:00+01:00"
+      "updatedAt": "2026-11-10T14:54:00+01:00"
     }
   }
 }
