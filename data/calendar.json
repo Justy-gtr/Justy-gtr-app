@@ -543,7 +543,7 @@
       ],
       "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Ergebnis 14:30: Verbraucherpreise +0,4 % zum Vormonat (erwartet +0,3 %, September +0,6 %), Kernrate +0,3 % (erwartet +0,2 %), Energie +0,7 %, Wohnen +0,3 %; Jahresraten fehlen wegen des Shutdowns 2025 (BLS, CNBC). Beide Werte über Konsens: Das stützt die Zinserhöhung im Dezember. Reaktion: 10-jährige US-Rendite +8 Basispunkte auf 4,95 %, Nasdaq zur Eröffnung −0,9 %, um 10:04 New York aber schon +0,1 %; Nvidia −3 % (CNBC). Mittags New York kippte die Erholung: um 17:58 Berlin Nasdaq −1,3 %, Nvidia −6,6 %, 10-jährige Rendite 5,0 % (Yahoo, CNBC). Fed-Gouverneur Waller sagte vorab, bei höheren Werten sollte die Fed sogar 50 Basispunkte erwägen (CNBC). Vorher: Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid. Stand Di Vormittag: Dow-Futures +0,35 %, S&P-Futures +0,1 %, Nasdaq-100-Futures −0,3 %, Brent 90,6 $ nach Trumps Iran-Aussage (Yahoo/Stocktwits). DAX mittags +1,2 % nahe Rekord (dpa-AFX).",
+      "reasoning": "Ergebnis 14:30: Verbraucherpreise +0,4 % zum Vormonat (erwartet +0,3 %, September +0,6 %), Kernrate +0,3 % (erwartet +0,2 %), Energie +0,7 %, Wohnen +0,3 %; Jahresraten fehlen wegen des Shutdowns 2025 (BLS, CNBC). Beide Werte über Konsens: Das stützt die Zinserhöhung im Dezember. Reaktion: 10-jährige US-Rendite +8 Basispunkte auf 4,95 %, Nasdaq zur Eröffnung −0,9 %, um 10:04 New York aber schon +0,1 %; Nvidia −3 % (CNBC). Mittags New York kippte die Erholung: um 17:58 Berlin Nasdaq −1,3 %, Nvidia −6,6 %, 10-jährige Rendite 5,0 % (Yahoo, CNBC). Fed-Gouverneur Waller sagte vorab, bei höheren Werten sollte die Fed sogar 50 Basispunkte erwägen (CNBC). Vorher: Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid. Stand Di Vormittag: Dow-Futures +0,35 %, S&P-Futures +0,1 %, Nasdaq-100-Futures −0,3 %, Brent 90,6 $ nach Trumps Iran-Aussage (Yahoo/Stocktwits). DAX mittags +1,2 % nahe Rekord (dpa-AFX). Schluss 22:00: Nasdaq −0,7 % auf 25.065,88, S&P 500 −0,4 % auf 7.521,11, Nvidia −5,5 % auf 168,80 $ (Yahoo). Deutsche Bank erwartet nach den Daten eine weitere Erhöhung im Januar 2027 (Economic Times).",
       "example": false,
       "sources": [
         {
@@ -589,6 +589,14 @@
         {
           "title": "CNBC: S&P leicht schwächer, Nasdaq +0,1 % nach CPI (10.11., 10:04 ET)",
           "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq Composite (Schluss 10.11.)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "title": "Economic Times: Liveblog Wall Street 10.11. (Deutsche Bank)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-anthropic-ipo-nvidia-intel-marvell-tech-ai-chip-stocks-inflation-fed-rate-hike-treasury-bond-yield-news-10th-november-2026/liveblog/135712173.cms"
         }
       ]
     },
@@ -720,7 +728,7 @@
       ],
       "probabilityPct": 65,
       "impact": "hoch",
-      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert.",
+      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -782,6 +790,10 @@
         {
           "title": "@XFreeze: fünf Contingency-Landeoptionen Flight 15",
           "url": "https://x.com/XFreeze/status/2119123323225612354"
+        },
+        {
+          "title": "FAA: SpaceX Starship Super Heavy Project (Stand 10.11.)",
+          "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
         }
       ]
     },
@@ -1705,12 +1717,16 @@
       ],
       "probabilityPct": 95,
       "impact": "mittel",
-      "reasoning": "Sitzung am 26./27. Januar laut Fed-Kalender. In dieselben Wochen fallen voraussichtlich die Q4-Zahlen von Tesla und SpaceX; deren Termine sind noch nicht veröffentlicht und stehen deshalb nicht im Kalender.",
+      "reasoning": "Sitzung am 26./27. Januar laut Fed-Kalender. In dieselben Wochen fallen voraussichtlich die Q4-Zahlen von Tesla und SpaceX; deren Termine sind noch nicht veröffentlicht und stehen deshalb nicht im Kalender. Stand 10.11.: Deutsche Bank erwartet nach dem heißen Oktober-CPI nach Dezember eine weitere Erhöhung um 25 Basispunkte schon im Januar (vorher März) (Economic Times). 95 % gilt dem Termin selbst.",
       "example": false,
       "sources": [
         {
           "title": "Federal Reserve: FOMC-Sitzungskalender",
           "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        },
+        {
+          "title": "Economic Times: Liveblog Wall Street 10.11. (Deutsche Bank)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-anthropic-ipo-nvidia-intel-marvell-tech-ai-chip-stocks-inflation-fed-rate-hike-treasury-bond-yield-news-10th-november-2026/liveblog/135712173.cms"
         }
       ]
     },
@@ -1775,7 +1791,7 @@
       ],
       "probabilityPct": 97,
       "impact": "mittel",
-      "reasoning": "Offiziell: Telefonkonferenz am Di 10.11. um 17:00 Uhr ET (= 23:00 Berlin), die Zahlen kommen davor nach US-Schluss (CoreWeave). Der KI-Cloud-Anbieter gilt als Gradmesser für die Rechenzentrums-Ausgaben, die vorige Woche nach der US-Wahl in Zweifel gerieten. Das trifft die KI-Geschichte von SpaceX (Rechenzentren) und Marvell (Netzwerkchips). 97 %: fester Firmentermin.",
+      "reasoning": "Offiziell: Telefonkonferenz am Di 10.11. um 17:00 Uhr ET (= 23:00 Berlin), die Zahlen kommen davor nach US-Schluss (CoreWeave). Der KI-Cloud-Anbieter gilt als Gradmesser für die Rechenzentrums-Ausgaben, die vorige Woche nach der US-Wahl in Zweifel gerieten. Das trifft die KI-Geschichte von SpaceX (Rechenzentren) und Marvell (Netzwerkchips). 97 %: fester Firmentermin. Stand 22:15: Noch keine veröffentlichten Zahlen gefunden. Aktie schloss bei 48,73 $ (Yahoo). Erwartet: Umsatz etwa 3,54 Mrd. $, Verlust etwa 1,54 $ je Aktie; im Blick steht vor allem die Finanzierung des Ausbaus (Investing.com).",
       "example": false,
       "sources": [
         {
@@ -1789,6 +1805,10 @@
         {
           "title": "Saxo Morning Brew 10.11.: Termine (CoreWeave)",
           "url": "https://www.home.saxo/en-ch/content/articles/morning-brew/morning-brew-november-10-2026-10112026"
+        },
+        {
+          "title": "Investing.com: CoreWeave vor den Zahlen (10.11.)",
+          "url": "https://www.investing.com/analysis/coreweave-earnings-can-ai-revenue-growth-justify-its-mounting-debt-burden-200691291"
         }
       ]
     },
@@ -1834,7 +1854,7 @@
       ],
       "probabilityPct": 97,
       "impact": "niedrig",
-      "reasoning": "Offiziell: Telefonkonferenz am Di 10.11. um 17:00 Uhr ET (= 23:00 Berlin), Zahlen davor nach US-Schluss (Firefly). Der Raketen-Konkurrent ist nach den RKLB-Zahlen ein zweiter Stimmungstest für kleine Raumfahrtwerte. 97 %: fester Firmentermin.",
+      "reasoning": "Offiziell: Telefonkonferenz am Di 10.11. um 17:00 Uhr ET (= 23:00 Berlin), Zahlen davor nach US-Schluss (Firefly). Der Raketen-Konkurrent ist nach den RKLB-Zahlen ein zweiter Stimmungstest für kleine Raumfahrtwerte. 97 %: fester Firmentermin. Stand 22:15: Noch keine veröffentlichten Zahlen gefunden, Aktie schloss bei 23,70 $ (Yahoo).",
       "example": false,
       "sources": [
         {
@@ -1848,6 +1868,10 @@
         {
           "title": "Yahoo/Stocktwits: Termine Di 10.11. (Firefly)",
           "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-mixed-investors-102051723.html"
+        },
+        {
+          "title": "Yahoo Finance: FLY",
+          "url": "https://finance.yahoo.com/quote/FLY/"
         }
       ]
     }

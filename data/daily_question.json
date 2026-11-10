@@ -1,29 +1,60 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-09-rklb",
-    "date": "2026-11-09",
-    "question": "Schließt RKLB am Dienstag, 10. November, an der Nasdaq höher als am Montag (58,86 $)?",
+    "id": "2026-11-10-rklb",
+    "date": "2026-11-10",
+    "question": "Schließt RKLB am Mittwoch, 11. November, an der Nasdaq höher als am Dienstag (62,71 $)?",
     "karlAnswer": "nein",
-    "karlReason": "Knapp „nein“, etwa 45 zu 55. Umsatz, Auftragsbestand und Q4-Ausblick sind stark, aber fast 30 % in zwei Tagen haben viel vorweggenommen, der Verlust je Aktie lag mit −0,12 $ unter der Erwartung, und nachbörslich stand die Aktie um 22:13 rund 7 % tiefer. Der Call um 23:00 kann das drehen.",
+    "karlReason": "Knapp „nein“, etwa 45 zu 55. Nach +6,5 % am Dienstag und rund +18 % seit dem Freitagsschluss (53,07 $) ist viel Erholung eingepreist; nachbörslich stand die Aktie um 22:05 bei etwa 62,20 $, also leicht darunter (Yahoo). Heute 23:00 legen Konkurrent Firefly und CoreWeave Zahlen vor, und nach dem heißen Oktober-CPI sind steigende Zinsen eingepreist. Dafür spricht: Rekord-Auftragsbestand, höhere Neutron-Preise und der 100. Electron-Start am Samstag.",
     "outcome": null,
-    "resolvesAt": "2026-11-10T22:15:00+01:00",
+    "resolvesAt": "2026-11-11T22:15:00+01:00",
     "sources": [
       {
-        "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
-        "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
-      },
-      {
-        "title": "24/7 Wall St.: RKLB Q3 – Umsatz über, EPS unter Erwartung (9.11.)",
-        "url": "https://247wallst.com/investing/2026/11/09/live-will-rocket-lab-smash-q3-earnings-tonight-after-jumping-10-intraday/"
-      },
-      {
-        "title": "Yahoo Finance: RKLB (inkl. Nachbörse)",
+        "title": "Yahoo Finance: RKLB (Schluss 10.11. 62,71 $, Nachbörse)",
         "url": "https://finance.yahoo.com/quote/RKLB/"
+      },
+      {
+        "title": "Yahoo Finance: Rocket Lab und AST SpaceMobile nach Zahlen (10.11.)",
+        "url": "https://finance.yahoo.com/markets/stocks/article/space-stocks-rocket-lab-ast-spacemobile-on-the-move-following-earnings-operational-updates-175324457.html"
+      },
+      {
+        "title": "Firefly Aerospace: Termin Q3-Zahlen (10.11., 17:00 ET)",
+        "url": "https://investors.fireflyspace.com/news-releases/news-release-details/firefly-aerospace-announce-third-quarter-2026-financial-results"
+      },
+      {
+        "title": "Handelsblatt: Inflationsdaten belasten Wall Street (10.11.)",
+        "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-inflationsdaten-belasten-wall-street-nvidia-aktien-verlieren/100268787.html"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-09-rklb",
+      "date": "2026-11-09",
+      "question": "Schließt RKLB am Dienstag, 10. November, an der Nasdaq höher als am Montag (58,86 $)?",
+      "karlAnswer": "nein",
+      "karlReason": "Knapp „nein“, etwa 45 zu 55. Umsatz, Auftragsbestand und Q4-Ausblick sind stark, aber fast 30 % in zwei Tagen haben viel vorweggenommen, der Verlust je Aktie lag mit −0,12 $ unter der Erwartung, und nachbörslich stand die Aktie um 22:13 rund 7 % tiefer. Der Call um 23:00 kann das drehen. Ergebnis: RKLB schloss am Di bei 62,71 $, 6,5 % über den 58,86 $ vom Montag (Yahoo). Karls „nein“ lag daneben: Nach dem frühen Minus von bis zu 10 % zählten Umsatz, Auftragsbestand und Neutron-Preise mehr als der Verlust je Aktie.",
+      "outcome": "ja",
+      "resolvesAt": "2026-11-10T22:15:00+01:00",
+      "sources": [
+        {
+          "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+        },
+        {
+          "title": "24/7 Wall St.: RKLB Q3 – Umsatz über, EPS unter Erwartung (9.11.)",
+          "url": "https://247wallst.com/investing/2026/11/09/live-will-rocket-lab-smash-q3-earnings-tonight-after-jumping-10-intraday/"
+        },
+        {
+          "title": "Yahoo Finance: RKLB (inkl. Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "title": "Yahoo Finance: RKLB Schluss 10.11. (62,71 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        }
+      ]
+    },
     {
       "id": "2026-11-08-ussf627",
       "date": "2026-11-08",

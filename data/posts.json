@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-10T20:00:00+01:00",
+  "asOf": "2026-11-10T22:20:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -85,6 +85,41 @@
     }
   },
   "posts": [
+    {
+      "id": "post-spacex-2120231065394590007",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-10T20:04:12+01:00",
+      "summaryDe": "SpaceX: Liefervertrag mit dem deutschen Anlagenbauer Singulus für eine schlüsselfertige Fertigungslinie für Heterojunction-Solarzellen. Die Zellen sind für die Starmind-Satelliten aus Bastrop (Texas) gedacht; die erste Linie kommt im ersten Halbjahr 2027, weitere sind geplant. Laut Singulus-Ad-hoc liegt das Volumen der ersten Linie bei über 60 Mio. €; die „über 100 GW“ beschreiben das Ausbauziel der Anlagen, nicht bestellte Linien. Die Singulus-Aktie stieg danach laut Börse Express um rund 40 % auf 16,30 €.",
+      "originalText": "We have signed a major supply contract with SINGULUS to create a durable option for advanced solar cell manufacturing to support more than 100 GW of equipment as we accelerate the production of our Starmind satellites in Bastrop, Texas",
+      "url": "https://x.com/SpaceX/status/2120231065394590007",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X",
+          "url": "https://x.com/SpaceX/status/2120231065394590007"
+        },
+        {
+          "title": "Singulus: Liefervertrag mit SpaceX für HJT-Anlagen (10.11.)",
+          "url": "https://www.singulus.com/2026/11/10/spacex-heterojunction-solar-cells-singulus/"
+        },
+        {
+          "title": "PTA-Adhoc Singulus: Großauftrag von SpaceX, über 60 Mio. € (10.11., 19:20)",
+          "url": "https://www.tradingview.com/news/reuters.com,2026-11-10:newsml_Pexp4s9ka:0/"
+        },
+        {
+          "title": "Börse Express: Singulus-Aktie springt nach SpaceX-Auftrag (10.11.)",
+          "url": "https://www.boerse-express.com/news/articles/singulus-aktie-kurs-springt-nach-spacex-auftrag-961584"
+        }
+      ]
+    },
     {
       "id": "post-spacex-2120220290219208884",
       "account": "@SpaceX",
