@@ -1,13 +1,13 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T08:18:00+01:00",
+  "updatedAt": "2026-11-10T08:24:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 55,
+      "score": 60,
       "postsCount": 25,
-      "reason": "Viel Vorfreude auf Starship-Flug 15 am Freitag: Booster B22 rollt zur Rampe, beide Stufen sollen am Turm gefangen werden. Dazu Pläne für ein 24-Mrd.-$-Rechenzentrum in Starbase.",
+      "reason": "Viel Vorfreude auf Starship-Flug 15 am Freitag mit Doppel-Fang am Turm; dazu +5,8 % am Montag, NASA-Mondaufträge und Pläne für ein 24-Mrd.-$-Rechenzentrum in Starbase.",
       "sources": [
         {
           "title": "Starship Flight 15 am 13. Nov.: Booster und Ship sollen gefangen werden",
@@ -18,11 +18,11 @@
           "url": "https://x.com/DimaZeniuk/status/2120050024188887378"
         },
         {
-          "title": "24-Mrd.-$-Rechenzentrum und Gaskraftwerk in Starbase (Bloomberg)",
-          "url": "https://x.com/AerialKiwi/status/2120046422104125828"
+          "title": "SPCX +5,8 %: NASA-Mond-Pool CLPS 2 und Starship-Buchung 2028",
+          "url": "https://x.com/AsLongAslCan/status/2120054632156176394"
         }
       ],
-      "updatedAt": "2026-11-10T08:18:00+01:00"
+      "updatedAt": "2026-11-10T08:24:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,28 +43,28 @@
           "url": "https://x.com/SuperMariossss/status/2120022503699669487"
         }
       ],
-      "updatedAt": "2026-11-10T08:18:00+01:00"
+      "updatedAt": "2026-11-10T08:24:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": -5,
+      "score": -15,
       "postsCount": 25,
-      "reason": "Q3-Zahlen: Umsatz besser als erwartet, aber höherer Verlust; nachbörslich etwa 7 % im Minus. Positiv diskutiert wird der 150-Mio.-$-Kredit des Pentagons für Neutron.",
+      "reason": "Q3-Zahlen: Umsatz besser als erwartet, aber höherer Verlust; nachbörslich etwa 7 % im Minus, Piper Sandler senkt das Kursziel auf 58 $. Positiv diskutiert wird der 150-Mio.-$-Kredit des Pentagons für Neutron.",
       "sources": [
         {
           "title": "Rocket Lab Q3: Umsatz geschlagen, Gewinn verfehlt",
           "url": "https://x.com/iothomehacking/status/2120049551163728096"
         },
         {
-          "title": "RKLB-Perps −7,4 % seit Börsenschluss",
-          "url": "https://x.com/perpequities/status/2120048839034114400"
+          "title": "Piper Sandler senkt Kursziel von 83 auf 58 $",
+          "url": "https://x.com/RCapitalX/status/2120054254379626754"
         },
         {
           "title": "Pentagon: 150 Mio. $ Kreditzusage für Neutron",
           "url": "https://x.com/RCapitalX/status/2120035503689056558"
         }
       ],
-      "updatedAt": "2026-11-10T08:18:00+01:00"
+      "updatedAt": "2026-11-10T08:24:00+01:00"
     }
   }
 }
