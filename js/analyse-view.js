@@ -4,6 +4,7 @@ import { analysisShowsN } from "./analysis.js";
 import { esc, formatEUR, formatPct, guideStyle, methodLabel, rangeChange } from "./logic.js";
 import { dayPathsFor, renderDayPaths } from "./daypath.js";
 import { renderSeasonalityCard } from "./seasonality.js";
+import { renderMoodLamp } from "./sentiment.js";
 
 function tone(value) {
   if (value > 0) return "up";
@@ -70,6 +71,17 @@ export function rangeBoard(active, action) {
       <button type="button" data-action="${esc(action)}" data-range="${esc(item)}" aria-pressed="${item === active ? "true" : "false"}" aria-label="${esc(rangeAria(item))}">${esc(item)}</button>`).join("")}</div>`).join("")}</div>`;
 }
 
+export function analyseViewOf(value) {
+  return value === "chart" ? "chart" : "kerzen";
+}
+
+export function analyseViewToggle(active) {
+  const view = analyseViewOf(active);
+  const items = [["kerzen", "Kerzen"], ["chart", "Chart"]];
+  return `<div class="segment analyse-view" role="group" aria-label="Darstellung">${items.map(([id, label]) => `
+    <button type="button" data-action="analyse-view" data-view="${id}" aria-selected="${view === id ? "true" : "false"}">${label}</button>`).join("")}</div>`;
+}
+
 export function renderAnalyse(data, ui) {
   const ticker = (data?.prices?.tickers || []).find((item) => item.symbol === ui?.analyseSymbol) || data?.prices?.tickers?.[0];
   const range = ANALYSE_RANGES.includes(ui?.analyseRange) ? ui.analyseRange : "15 Min";
@@ -88,9 +100,13 @@ export function renderAnalyse(data, ui) {
     <p class="muted analyse-hint">4 Std für die Richtung, 15 Min für den Zeitpunkt.</p>
     <div class="card chart-wrap candle-wrap">
       <p class="scrub"></p>
-      <canvas class="chart chart-price chart-candles" data-chart="candles" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kerzenchart in Euro. Ziehen zeigt Kurs, Zeit und Veränderung."></canvas>
+      <div class="chart-stage">
+        ${renderMoodLamp(data?.sentiment, ticker?.symbol, new Date(), "analyse")}
+        <canvas class="chart chart-price chart-candles" data-chart="candles" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kerzenchart in Euro. Ziehen zeigt Kurs, Zeit und Veränderung."></canvas>
+      </div>
       ${guideLegend(result.lines)}
     </div>
+    ${analyseViewToggle("kerzen")}
     ${musterCard(result)}
     ${renderSeasonalityCard(data?.seasonality, ticker, ui?.analyseSeason)}
     <button type="button" class="text-btn" data-action="explain" data-symbol="${esc(ticker?.symbol || "")}">Warum diese Bewegung?</button>

@@ -1,4 +1,4 @@
-import { chartAxisLabels, compactNumber, formatScrubWhen, guideLabelsToDraw, guideStyle, instrumentAxisLabels, instrumentSeries, priceMove, scrubDelta, seriesAccent, seriesFor, TILE_COLORS, weekCurve, weekdayShort } from "./logic.js";
+import { chartAxisLabels, compactNumber, formatScrubWhen, guideLabelsToDraw, guideStyle, instrumentAxisLabels, instrumentSeries, priceMove, scrubDelta, seriesAccent, TILE_COLORS, weekCurve, weekdayShort } from "./logic.js";
 
 function hexAlpha(hex, alpha) {
   const value = hex.replace("#", "");
@@ -303,8 +303,15 @@ function sessionScrub(point) {
   return "";
 }
 
+function scrubLine(canvas) {
+  const wrap = canvas.closest?.(".chart-wrap");
+  const line = wrap?.querySelector?.(".scrub");
+  if (line) return line;
+  return canvas.parentElement?.querySelector?.(".scrub") || null;
+}
+
 function showScrub(canvas, coord, layout) {
-  const scrub = canvas.parentElement?.querySelector(".scrub");
+  const scrub = scrubLine(canvas);
   if (!scrub || !coord) return;
   const phase = sessionScrub(coord.point);
   const points = (layout?.coords || []).map((item) => item.point);
@@ -324,7 +331,7 @@ function showScrub(canvas, coord, layout) {
 }
 
 function hideScrub(canvas) {
-  const scrub = canvas.parentElement?.querySelector(".scrub");
+  const scrub = scrubLine(canvas);
   if (!scrub) return;
   scrub.hidden = false;
   scrub.textContent = "";
@@ -633,10 +640,8 @@ export function drawCharts(data, ui) {
   document.querySelectorAll("canvas[data-chart]").forEach((canvas) => {
     const kind = canvas.dataset.chart;
     if (kind === "price") {
-      const ticker = (data.prices?.tickers || []).find((item) => item.symbol === (canvas.dataset.symbol || ui.chartSymbol));
-      const picked = ui.langfrist
-        ? seriesFor(ticker, ui.chartRange, true)
-        : instrumentSeries(ticker, ui.chartRange);
+      const ticker = (data.prices?.tickers || []).find((item) => item.symbol === (canvas.dataset.symbol || ui.analyseSymbol || ui.chartSymbol));
+      const picked = instrumentSeries(ticker, ui.chartRange);
       const points = picked.points || [];
       const first = Number(points[0]?.eur);
       const last = Number(points.at(-1)?.eur);

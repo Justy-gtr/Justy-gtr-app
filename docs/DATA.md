@@ -28,6 +28,7 @@ Der Kurs-Workflow ändert `dataMode` nicht.
 | `alerts.json` | nur `notified` auf `true` setzen | Einträge anlegen und Kursfelder aktualisieren, `example`-Alerts nach einem erfolgreichen Lauf entfernen |
 | `seasonality.json` | fasst sie nicht an | Wochentag und Uhrzeit je Aktie, einmal je Berliner Tag, ohne Rohkurse |
 | `moonshots.json` | Texte, Termin, Quellen, `pastCatalysts`, Hebel-ISIN der drei festen Kandidaten | Kurse und Zählung der festen Kandidaten; `nearTerm` täglich aus dem Zahlungskalender |
+| `sentiment.json` | Stimmung je Aktie, mehrmals am Tag | fasst sie nicht an |
 | alle anderen | vollständig | fasst sie nicht an |
 
 `narrativeExample`: `true`, solange `why` und der Langfrist-Text noch aus dem Seed stammen. Der Workflow übernimmt den Text und lässt die Flagge auf `true`, bis der Assistent sie auf `false` setzt. Dann bleibt sie `false`.
@@ -158,6 +159,8 @@ US-Minuten, 5-Minuten und Stundenkerzen kommen zuerst von Alpaca IEX, inklusive 
 ```
 
 `kind` ist `company` (Umschalter Unternehmen) oder `external` (Fed, Zölle, Wahlen, Regulierung, Gerichte, Zahlen Dritter). `probabilityPct` von 0 bis 100. `impact`: `hoch`, `mittel` oder `niedrig`. `time` darf `null` sein.
+
+`end` ist optional. Ein Tag `YYYY-MM-DD` gilt den ganzen Tag, eine ISO-Zeit ist der genaue Schluss. Fehlt `end`, zählt der Beginn (`date` und `time`). Die Kalenderseite sortiert beim Anzeigen, nicht in der Datei: Laufendes und Heutiges oben, der früheste Beginn zuerst, spätere Tage danach, Vorbei darunter. Liegt das Ende — oder der Beginn, wenn kein Ende da ist — mehr als 24 Stunden zurück, zeigt die Seite den Termin nicht. Die Rechnung nutzt die Uhr beim Öffnen.
 
 ## `posts.json`
 
@@ -589,6 +592,60 @@ Drei feste Kandidaten mit einem datierten Termin, erreichbar unter Mehr, plus de
 Der Assistent pflegt bei den festen dreien Name, `for`, `against`, `catalyst`, `pastCatalysts.dates`, `leverage` und `sources`. `scripts/fetch-moonshots.mjs` im Kurs-Workflow schreibt Kurs, Sparkline, `fx` und die Zählung. Die Zählung nimmt gut zwei Jahre Yahoo-Tagesschluss. Der Live-Kurs kann von Alpaca IEX kommen (`source`, `marketSource`). Die Zählung bleibt der Yahoo-Tagesschluss. `history.catalyst` ist der nächste Handelstag nach einem Termin nach US-Schluss, Schluss zu Schluss. `history.days` ist der Anteil der Tage mit einer Bewegung von mindestens 5 Prozent. Prozent erst ab `n` von 7. Die drei Fokus-Ticker SPCX, TSLA und RKLB kommen hier nicht vor.
 
 `nearTerm` wählt einmal je Berliner Tag bis zu drei Namen aus `data/turbo-universe.json`. Das Universum ist der Nasdaq-100 zum 22. Oktober 2026 plus bekannte liquide Momentum-Werte, also Namen mit verbreiteten Knock-outs bei Trade Republic. Der Nasdaq-Kalender liefert die Zahlentermine. Zuerst zählen heute und die nächsten drei Handelstage. Liegen dort weniger als drei Termine, geht das Fenster bis fünf Handelstage, und `note` sagt das. Die Reihenfolge mischt die Nähe des Termins mit der Zahl großer Folgetage in den letzten acht Quartalen (mindestens +5 % oder höchstens −5 %). Eine Options-Spanne kommt dazu, wenn Yahoo sie ohne Schlüssel hergibt. Eine Beispiel-ISIN nur aus einer öffentlichen Emittentenliste, sonst gar keine. Vorbörsliche Termine zählen den Handelstag selbst, nachbörsliche den nächsten Handelstag. Prozent erst ab `n` von 7.
+
+## `sentiment.json`
+
+Wie auf X über die drei Aktien geredet wird. Ein Assistent schreibt die Datei mehrmals am Tag. Kein Workflow. Die Wörter „kaufen“, „verkaufen“, „Empfehlung“, „Kaufsignal“ und „Anlageberatung“ sind verboten. Die Lampe beschreibt nur das Gerede, sie rät nicht.
+
+Leerer Stand, so wie die Datei ausgeliefert wird: `example` ist `false`, `mood` ist leer, `score` ist `0`, `postsCount` ist `0`, `reason` und `updatedAt` der Zeile sind leer, `sources` ist leer. Die App zeigt dann „noch keine Daten“ und eine graue Lampe.
+
+```json
+{
+  "example": false,
+  "updatedAt": "2026-11-10T14:35:00+01:00",
+  "schema": 1,
+  "symbols": {
+    "SPCX": {
+      "mood": "gut",
+      "score": 40,
+      "postsCount": 12,
+      "reason": "Viele Beiträge klingen freundlich.",
+      "sources": [{ "title": "X-Suche", "url": "https://x.com/search?q=SPCX" }],
+      "updatedAt": "2026-11-10T14:35:00+01:00"
+    },
+    "TSLA": {
+      "mood": "",
+      "score": 0,
+      "postsCount": 0,
+      "reason": "",
+      "sources": [],
+      "updatedAt": ""
+    },
+    "RKLB": {
+      "mood": "gemischt",
+      "score": -10,
+      "postsCount": 4,
+      "reason": "Lob und Zweifel stehen nebeneinander.",
+      "sources": [{ "title": "X-Suche", "url": "https://x.com/search?q=RKLB" }],
+      "updatedAt": "2026-11-10T14:35:00+01:00"
+    }
+  }
+}
+```
+
+Pflicht-Symbole: `SPCX`, `TSLA`, `RKLB`. `schema` ist `1`.
+
+| Feld | Bedeutung |
+| --- | --- |
+| `mood` | `gut`, `gemischt` oder `schlecht`. Leer, solange noch nichts da ist |
+| `score` | ganze Zahl von −100 bis 100 |
+| `postsCount` | Anzahl der Beiträge, ganze Zahl ab 0 |
+| `reason` | ein kurzer deutscher Satz |
+| `sources` | bei gesetztem `mood` mindestens eine Quelle `{ "title", "url" }`. Leer erlaubt, solange `mood` leer ist |
+| `updatedAt` | ISO-8601 der Zeile. Leer, solange `mood` leer ist |
+| `previousMood` | optional, einer der drei Töne. Gesetzt, wenn sich der Ton in diesem Stand geändert hat. Die Lampe pulsiert dann einmal, außer die Bewegung ist reduziert |
+
+Die Lampe ist grün bei `gut` (`#22c55e`), rot bei `schlecht` (`#ef4444`), gelb bei `gemischt`. Grau, wenn der Ton fehlt oder `updatedAt` älter als zwei Stunden ist. Daneben steht „Stimmung · 14:35“ in Berliner Zeit, sonst „Stimmung · noch keine Daten“.
 
 ## Prüfung
 

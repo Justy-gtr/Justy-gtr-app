@@ -382,15 +382,22 @@ function paintTouchMark(ctx, x, y, kind, outcome, color) {
   ctx.restore();
 }
 
+function scrubLine(canvas) {
+  const wrap = canvas.closest?.(".chart-wrap");
+  const line = wrap?.querySelector?.(".scrub");
+  if (line) return line;
+  return canvas.parentElement?.querySelector?.(".scrub") || null;
+}
+
 function showScrub(canvas, candle, firstClose, candles) {
-  const scrub = canvas.parentElement?.querySelector(".scrub");
+  const scrub = scrubLine(canvas);
   if (!scrub) return;
   scrub.hidden = false;
   scrub.textContent = scrubLabel(candle, firstClose, candles);
 }
 
 function hideScrub(canvas) {
-  const scrub = canvas.parentElement?.querySelector(".scrub");
+  const scrub = scrubLine(canvas);
   if (!scrub) return;
   scrub.hidden = false;
   scrub.textContent = "";

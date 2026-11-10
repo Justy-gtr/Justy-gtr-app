@@ -70,7 +70,8 @@ const files = [
   "meta.json", "prices.json", "calendar.json", "posts.json", "favorites.json", "crowd.json",
   "promises.json", "production.json", "insiders.json", "briefing.json", "weekly.json",
   "daily_question.json", "glossary.json", "track_record.json", "alerts.json",
-  "scenarios.json", "companies.json", "seasonality.json", "moonshots.json", "turbo-universe.json"
+  "scenarios.json", "companies.json", "seasonality.json", "moonshots.json", "turbo-universe.json",
+  "sentiment.json"
 ];
 const loaded = Object.fromEntries(files.map((name) => [name, read(name)]));
 
@@ -509,6 +510,49 @@ for (const item of universe?.symbols || []) {
   if (universeSymbols.has(item?.symbol)) fail(`universe.${item.symbol} doppelt`);
   universeSymbols.add(item?.symbol);
   if (item.underlyingIsin && !/^[A-Z]{2}[A-Z0-9]{10}$/.test(item.underlyingIsin)) fail(`universe.${item.symbol}.isin`);
+}
+
+const MOODS = new Set(["gut", "gemischt", "schlecht"]);
+const MOOD_BANNED = /kaufen|verkaufen|empfehlung|kaufsignal|anlageberatung/i;
+
+function isoStamp(value) {
+  return typeof value === "string" && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(value) && Number.isFinite(Date.parse(value));
+}
+
+const sentiment = loaded["sentiment.json"];
+if (sentiment) {
+  if (sentiment.example !== false) fail("sentiment.example");
+  if (sentiment.schema !== 1) fail("sentiment.schema");
+  if (!isoStamp(sentiment.updatedAt)) fail("sentiment.updatedAt");
+  for (const symbol of ["SPCX", "TSLA", "RKLB"]) {
+    const row = sentiment.symbols?.[symbol];
+    const label = `sentiment.${symbol}`;
+    if (!row) {
+      fail(`${label} fehlt`);
+      continue;
+    }
+    const empty = row.mood == null || row.mood === "";
+    if (!empty && !MOODS.has(row.mood)) fail(`${label}.mood`);
+    if (!Number.isInteger(row.score) || row.score < -100 || row.score > 100) fail(`${label}.score`);
+    if (!Number.isInteger(row.postsCount) || row.postsCount < 0) fail(`${label}.postsCount`);
+    if (typeof row.reason !== "string" || row.reason.length > 180) fail(`${label}.reason`);
+    if (MOOD_BANNED.test(row.reason)) fail(`${label}.reason Wort`);
+    if (row.previousMood != null && row.previousMood !== "" && !MOODS.has(row.previousMood)) {
+      fail(`${label}.previousMood`);
+    }
+    if (!Array.isArray(row.sources)) fail(`${label}.sources`);
+    if (empty) {
+      if (row.updatedAt != null && row.updatedAt !== "" && !isoStamp(row.updatedAt)) fail(`${label}.updatedAt`);
+    } else {
+      if (!row.reason.trim()) fail(`${label}.reason`);
+      if (!isoStamp(row.updatedAt)) fail(`${label}.updatedAt`);
+      sourcesOk(row.sources, label);
+    }
+    if (empty && Array.isArray(row.sources) && row.sources.length) sourcesOk(row.sources, label);
+    for (const source of row.sources || []) {
+      if (MOOD_BANNED.test(String(source?.title || ""))) fail(`${label}.source Wort`);
+    }
+  }
 }
 
 const iconFiles = [

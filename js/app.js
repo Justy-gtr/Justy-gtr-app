@@ -1,4 +1,5 @@
-import { renderAnalyse } from "./analyse-view.js";
+import { analyseViewOf, renderAnalyse } from "./analyse-view.js";
+import { markMoodPulse } from "./sentiment.js";
 import { drawCandles } from "./candle-chart.js";
 import { drawDayPaths } from "./daypath.js";
 import { drawCharts } from "./chart.js";
@@ -9,7 +10,7 @@ import { appBase, berlinClockText, CHART_RANGES, isInAppUrl, loadStore, markTabS
 import { playLiftoff, tickCountdown } from "./motion.js";
 import { initNav } from "./nav.js";
 import { initPull } from "./pull.js";
-import { detailContent, errorDetail, glossaryList, renderShell } from "./views.js";
+import { detailContent, errorDetail, glossaryList, renderChartsPage, renderShell } from "./views.js";
 
 const ui = {
   page: "heute",
@@ -17,7 +18,7 @@ const ui = {
   postFilter: "alle",
   chartSymbol: "SPCX",
   chartRange: "1T",
-  langfrist: false,
+  analyseView: "kerzen",
   analyseSymbol: "SPCX",
   analyseRange: "15 Min",
   analyseSeason: "all",
@@ -31,6 +32,7 @@ const ui = {
 let data = null;
 let store = loadStore();
 store.answers = store.answers || {};
+ui.analyseView = analyseViewOf(store.analyseView);
 
 const LIVE_MS = 60_000;
 let lastLiveAttempt = 0;
@@ -66,7 +68,7 @@ function priceStamp(prices) {
 async function pullPrices() {
   if (!data || liveInflight) return;
   if (document.visibilityState === "hidden") return;
-  if (ui.page !== "charts" && ui.page !== "heute" && ui.page !== "analyse") return;
+  if (ui.page !== "heute" && ui.page !== "analyse") return;
   if (!marketWatch()) {
     if (ui.live) {
       ui.live = false;
@@ -159,6 +161,7 @@ function restoreScroll(map) {
 function render() {
   const scrolls = captureScroll();
   document.body.dataset.page = ui.page || "";
+  document.body.dataset.analyseView = analyseViewOf(ui.analyseView);
   try {
     renderShell(context());
   } catch (error) {
@@ -167,12 +170,17 @@ function render() {
   }
   try {
     const analyse = document.getElementById("page-analyse");
-    if (analyse) analyse.innerHTML = renderAnalyse(data, ui);
+    if (analyse) {
+      analyse.innerHTML = analyseViewOf(ui.analyseView) === "chart"
+        ? renderChartsPage(data, ui)
+        : renderAnalyse(data, ui);
+    }
   } catch (error) {
     const analyse = document.getElementById("page-analyse");
     if (analyse) analyse.innerHTML = `<article class="card error-card"><h2>Chartanalyse gerade nicht da.</h2><p class="muted">${error.message}</p></article>`;
   }
   restoreScroll(scrolls);
+  try { markMoodPulse(document); } catch { /* Puls ist Beiwerk. */ }
   nav.align();
   notePage(ui.page);
   paintClock();
@@ -255,6 +263,21 @@ document.addEventListener("click", (event) => {
   openExternal(url.href);
 }, true);
 
+function closeMoodSheets() {
+  document.querySelectorAll(".mood-sheet").forEach((node) => {
+    node.hidden = true;
+  });
+  document.querySelectorAll(".mood-hit").forEach((node) => {
+    node.setAttribute("aria-expanded", "false");
+  });
+}
+
+document.addEventListener("pointerdown", (event) => {
+  const target = event.target;
+  if (target instanceof Element && target.closest(".mood-lamp")) return;
+  closeMoodSheets();
+}, true);
+
 document.body.addEventListener("click", (event) => {
   const el = event.target.closest("[data-action]");
   if (!el) return;
@@ -281,27 +304,33 @@ document.body.addEventListener("click", (event) => {
     render();
     return;
   }
-  if (action === "chart-symbol") {
+  if (action === "chart-symbol" || action === "analyse-symbol") {
     ui.chartSymbol = el.dataset.symbol;
+    ui.analyseSymbol = el.dataset.symbol;
     render();
     return;
   }
   if (action === "chart-range") {
     const next = el.dataset.range;
     if (!CHART_RANGES.includes(next)) return;
-    const short = ["1T", "1W", "1M"];
-    ui.chartRange = ui.langfrist && short.includes(next) ? "1J" : next;
+    ui.chartRange = next;
     render();
     return;
   }
-  if (action === "langfrist") {
-    ui.langfrist = !ui.langfrist;
-    if (ui.langfrist && ["1T", "1W", "1M"].includes(ui.chartRange)) ui.chartRange = "1J";
+  if (action === "analyse-view") {
+    ui.analyseView = analyseViewOf(el.dataset.view);
+    store.analyseView = ui.analyseView;
+    saveStore(store);
     render();
     return;
   }
-  if (action === "analyse-symbol") {
-    ui.analyseSymbol = el.dataset.symbol;
+  if (action === "open-analyse") {
+    if (el.dataset.symbol) {
+      ui.analyseSymbol = el.dataset.symbol;
+      ui.chartSymbol = el.dataset.symbol;
+    }
+    nav.closeAll();
+    nav.go("analyse");
     render();
     return;
   }
@@ -364,6 +393,22 @@ document.body.addEventListener("click", (event) => {
   if (action === "open-link-again") {
     const href = document.getElementById("link-sheet")?.dataset.href;
     if (href) window.open(href, "_blank");
+    return;
+  }
+  if (action === "mood-lamp") {
+    const lamp = el.closest(".mood-lamp");
+    const sheet = lamp?.querySelector(".mood-sheet");
+    if (!sheet) return;
+    const willOpen = sheet.hidden;
+    closeMoodSheets();
+    if (willOpen) {
+      sheet.hidden = false;
+      el.setAttribute("aria-expanded", "true");
+    }
+    return;
+  }
+  if (action === "close-mood") {
+    closeMoodSheets();
     return;
   }
   openDetail(action, el.dataset);

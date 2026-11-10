@@ -342,6 +342,18 @@ button.card { border-radius: 24px; }
 }
 .segment button { min-height: 40px; border-radius: 12px; color: var(--muted); }
 .segment button[aria-selected="true"] { background: rgba(228,177,90,.18); color: var(--gold-2); }
+.segment.analyse-view {
+  width: min(220px, 100%);
+}
+.segment.analyse-view button {
+  min-height: 32px;
+  font-size: 13px;
+  font-weight: 650;
+}
+body[data-analyse-view="chart"] .segment.analyse-view button[aria-selected="true"] {
+  background: rgba(61, 220, 132, 0.16);
+  color: #3ddc84;
+}
 
 .gauge-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .gauge-card h3 { font-size: 14px; }
@@ -411,14 +423,14 @@ button.card { border-radius: 24px; }
   border-left: 0;
   border-right: 0;
 }
-body[data-page="charts"] {
+body[data-page="analyse"][data-analyse-view="chart"] {
   background: #000;
 }
-body[data-page="charts"]::before {
+body[data-page="analyse"][data-analyse-view="chart"]::before {
   opacity: 0;
 }
-body[data-page="charts"] .app,
-#page-charts {
+body[data-page="analyse"][data-analyse-view="chart"] .app,
+body[data-page="analyse"][data-analyse-view="chart"] #page-analyse {
   background: #000;
 }
 .instrument { color: #f4f6f8; }
@@ -506,6 +518,99 @@ body[data-page="charts"] .app,
   -webkit-user-drag: none;
 }
 .chart-wrap .scrub { margin-left: 10px; margin-right: 10px; }
+.chart-stage { position: relative; }
+.mood-lamp {
+  position: absolute;
+  z-index: 4;
+  top: 4px;
+  left: 6px;
+  width: min(200px, 56%);
+  max-width: min(200px, 56%);
+  pointer-events: none;
+}
+.mood-lamp.is-gut { --mood: #22c55e; }
+.mood-lamp.is-gemischt { --mood: #f59e0b; }
+.mood-lamp.is-schlecht { --mood: #ef4444; }
+.mood-lamp.is-leer,
+.mood-lamp.is-stale { --mood: #6b7280; }
+.mood-hit,
+.mood-sheet { pointer-events: auto; }
+.mood-hit {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 100%;
+  min-height: 22px;
+  margin: 0;
+  padding: 2px 7px 2px 4px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #d5dbe6;
+  touch-action: manipulation;
+}
+.mood-dot {
+  width: 10px;
+  height: 10px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--mood, #6b7280);
+  box-shadow: 0 0 8px 1px var(--mood, transparent);
+}
+.mood-lamp.is-leer .mood-dot,
+.mood-lamp.is-stale .mood-dot {
+  box-shadow: none;
+  opacity: 0.45;
+}
+.mood-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 10px;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  color: #d5dbe6;
+}
+.mood-sheet {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  max-height: 180px;
+  overflow: auto;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(12, 14, 20, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45);
+  color: #f4f1ea;
+}
+.mood-sheet[hidden] { display: none !important; }
+.mood-lead { margin: 0; font-size: 13px; line-height: 1.35; }
+.mood-meta { margin: 6px 0 0; font-size: 12px; font-variant-numeric: tabular-nums; }
+.mood-quiet { margin: 6px 0 0; color: #b7c0d0; font-size: 11px; line-height: 1.35; }
+.mood-sources { margin: 6px 0 0; padding-left: 1.1em; font-size: 12px; }
+.mood-sources a { overflow-wrap: anywhere; }
+.mood-close {
+  display: block;
+  margin-top: 8px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #f6e7c4;
+  font-size: 12px;
+  min-height: 28px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mood-lamp.is-changed:not(.is-stale):not(.is-leer) .mood-dot {
+    animation: mood-pulse 1.8s ease-in-out infinite;
+  }
+}
+@keyframes mood-pulse {
+  0%, 100% { box-shadow: 0 0 5px 0 var(--mood); }
+  50% { box-shadow: 0 0 12px 3px var(--mood); }
+}
 .scrub {
   display: block;
   box-sizing: border-box;
@@ -578,7 +683,11 @@ body[data-page="charts"] .app,
   padding-top: 6px;
 }
 .dock-note { margin-top: 16px; text-transform: none; letter-spacing: 0; font-size: 13px; color: var(--muted); }
-.tabbar { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.tabbar {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+}
 .tab {
   min-height: 52px;
   min-width: 0;

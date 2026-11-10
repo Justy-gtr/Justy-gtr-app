@@ -83,7 +83,10 @@
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
 }
-.tabbar { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.tabbar {
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+}
 .tab {
   font-size: 9px;
   letter-spacing: 0;

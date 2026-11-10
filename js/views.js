@@ -1,6 +1,7 @@
 import { chartAnalysis } from "./analysis.js";
-import { musterCard } from "./analyse-view.js";
+import { analyseViewToggle, musterCard } from "./analyse-view.js";
 import { sparkline } from "./chart.js";
+import { renderMoodLamp } from "./sentiment.js";
 import {
   esc,
   formatDay,
@@ -25,6 +26,7 @@ import {
   formatEventClock,
   sessionBlurb,
   headlineEvent,
+  orderCalendarEvents,
   isStandalone,
   opinionWord,
   vsSwarmVerdict,
@@ -36,7 +38,6 @@ import {
   safeUrl,
   pendingDailyQuestion,
   scoreboard,
-  seriesFor,
   trackSummary,
   bigDrop,
   historySentence,
@@ -164,7 +165,6 @@ export function renderShell(ctx) {
     ["page-kalender", () => renderKalender(data, ui)],
     ["page-posts", () => renderPosts(data, ui)],
     ["page-schwarm", () => renderSchwarm(data)],
-    ["page-charts", () => renderChartsPage(data, ui)],
     ["page-mehr", () => renderMehr(data)]
   ];
   for (const [id, build] of pages) {
@@ -309,7 +309,7 @@ function quoteRow(ticker, live, tight = false) {
   const fresh = live && ticker.example !== true;
   const sparkSource = ticker.history?.intraday?.length ? sparkSample(ticker.history.intraday) : ticker.sparkline;
   return `<div class="quote${tight ? " is-tight" : ""}" data-symbol-card="${esc(ticker.symbol)}">
-    <button type="button" class="quote-hit" data-action="open-company" data-symbol="${esc(ticker.symbol)}" aria-label="${esc(ticker.name || ticker.symbol)} öffnen"></button>
+    <button type="button" class="quote-hit" data-action="open-analyse" data-symbol="${esc(ticker.symbol)}" aria-label="${esc(ticker.name || ticker.symbol)} in der Analyse öffnen"></button>
     <span class="q-name">
       <strong>${esc(ticker.symbol)}${fresh ? `<span class="live-dot" title="Frische Kurse"></span>` : ""}</strong>
       <span class="q-sub"><span>${esc(ticker.name || "")}</span><button type="button" class="why-link" data-action="explain" data-symbol="${esc(ticker.symbol)}">Warum?</button></span>
@@ -472,10 +472,11 @@ function rocketSvg() {
   </svg>`;
 }
 
-function renderKalender(data, ui) {
-  const events = (data.calendar?.events || [])
-    .filter((event) => event.kind === (ui.calKind === "external" ? "external" : "company"))
-    .sort((a, b) => String(a.date).localeCompare(String(b.date)));
+export function renderKalender(data, ui, now = new Date()) {
+  const events = orderCalendarEvents(
+    (data.calendar?.events || []).filter((event) => event.kind === (ui.calKind === "external" ? "external" : "company")),
+    now
+  );
   return `
     <header class="page-head">
       <p class="eyebrow">Kalender</p>
@@ -565,16 +566,16 @@ function instrumentMove(change) {
 }
 
 export function renderChartsPage(data, ui) {
-  const ticker = tickerBy(data, ui.chartSymbol) || data.prices?.tickers?.[0];
+  const ticker = tickerBy(data, ui.analyseSymbol || ui.chartSymbol) || data.prices?.tickers?.[0];
   const active = CHART_RANGES.includes(ui.chartRange) ? ui.chartRange : "1T";
-  const shown = ui.langfrist ? seriesFor(ticker, active, true) : instrumentSeries(ticker, active);
+  const shown = instrumentSeries(ticker, active);
   const change = rangeChange(shown.points);
-  const analysis = chartAnalysis(ticker, active, ui.langfrist);
+  const analysis = chartAnalysis(ticker, active, false);
   const lit = CHART_RANGES.includes(shown.range) ? shown.range : active;
   return `
     <div class="instrument">
       <div class="chips">${(data.prices?.tickers || []).map((item) => `
-        <button type="button" class="chip" data-action="chart-symbol" data-symbol="${esc(item.symbol)}" aria-pressed="${item.symbol === ticker?.symbol}">${esc(item.symbol)}</button>`).join("")}</div>
+        <button type="button" class="chip" data-action="analyse-symbol" data-symbol="${esc(item.symbol)}" aria-pressed="${item.symbol === ticker?.symbol}">${esc(item.symbol)}</button>`).join("")}</div>
       <header class="instrument-head">
         <div class="instrument-id">
           <img class="instrument-logo" src="icons/logo.svg" width="28" height="28" alt="">
@@ -587,19 +588,15 @@ export function renderChartsPage(data, ui) {
         <button type="button" data-action="chart-range" data-range="${esc(item)}" aria-pressed="${item === lit ? "true" : "false"}">${esc(item)}</button>`).join("")}</div>
       <div class="chart-wrap instrument-chart">
         <p class="scrub"></p>
-        <canvas class="chart chart-price" data-chart="price" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kurslinie in Euro. Ziehen zeigt Datum, Uhrzeit, Kurs und Veränderung."></canvas>
+        <div class="chart-stage">
+          ${renderMoodLamp(data?.sentiment, ticker?.symbol, new Date(), "analyse")}
+          <canvas class="chart chart-price" data-chart="price" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kurslinie in Euro. Ziehen zeigt Datum, Uhrzeit, Kurs und Veränderung."></canvas>
+        </div>
       </div>
       <p class="muted chart-note">${esc(methodLabel(ticker || {}))}</p>
     </div>
-    <button type="button" class="switch" data-action="langfrist" role="switch" aria-checked="${ui.langfrist ? "true" : "false"}">
-      <span class="switch-copy">
-        <strong>Langfrist-Brille</strong>
-        <span>Glättet und zeigt die längere Bewegung, nicht den lauten Tag.</span>
-      </span>
-      <span class="knob" aria-hidden="true"></span>
-    </button>
+    ${analyseViewToggle("chart")}
     ${musterCard(analysis)}
-    ${ui.langfrist ? `<article class="card"><p class="kicker">Langfrist</p><p>${esc(ticker?.longTermOutlook || "Noch kein Langfrist-Text.")}</p>${ticker?.narrativeExample ? pill(true) : ""}</article>` : ""}
     <button type="button" class="text-btn" data-action="explain" data-symbol="${esc(ticker?.symbol || "")}">Warum diese Bewegung?</button>
   `;
 }

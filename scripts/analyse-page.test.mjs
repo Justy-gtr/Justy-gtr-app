@@ -634,8 +634,8 @@ test("Nummern und Striche kommen aus der Fixture, nicht aus dem Tageskurs", () =
   assert.match(css, /\.guide-legend \.swatch\.trend/);
   assert.equal(css.includes("kaufen"), false);
   const sw = fs.readFileSync("sw.js", "utf8");
-  assert.match(sw, /jgtr-v34/);
-  assert.equal(sw.includes("jgtr-v33"), false);
+  assert.match(sw, /jgtr-v35/);
+  assert.equal(sw.includes("jgtr-v34"), false);
 });
 
 test("Achse nennt die Uhrzeit und das Datum nur am Tageswechsel", () => {
@@ -830,6 +830,12 @@ test("Charts-Seite ist die Kurslinie mit 1T bis Max", () => {
   assert.match(html, /data-range="1W"[^>]*aria-pressed="true"|aria-pressed="true"[^>]*data-range="1W"/);
   assert.match(html, /<p class="scrub"><\/p>/);
   assert.match(html, /instrument-logo/);
+  assert.match(html, /data-view="chart"/);
+  assert.match(html, /data-view="kerzen"/);
+  assert.match(html, /aria-selected="true"/);
+  assert.match(html, /Warum diese Bewegung/);
+  assert.equal(html.includes("Langfrist"), false);
+  assert.equal(html.includes("data-action=\"langfrist\""), false);
   assert.equal(html.includes("Handeln"), false);
   assert.equal(html.includes("Sparplan"), false);
   assert.equal(html.includes("5 Min"), false);

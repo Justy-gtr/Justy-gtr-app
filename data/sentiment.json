@@ -1,0 +1,31 @@
+{
+  "example": false,
+  "updatedAt": "2026-11-10T00:00:00+01:00",
+  "schema": 1,
+  "symbols": {
+    "SPCX": {
+      "mood": "",
+      "score": 0,
+      "postsCount": 0,
+      "reason": "",
+      "sources": [],
+      "updatedAt": ""
+    },
+    "TSLA": {
+      "mood": "",
+      "score": 0,
+      "postsCount": 0,
+      "reason": "",
+      "sources": [],
+      "updatedAt": ""
+    },
+    "RKLB": {
+      "mood": "",
+      "score": 0,
+      "postsCount": 0,
+      "reason": "",
+      "sources": [],
+      "updatedAt": ""
+    }
+  }
+}
