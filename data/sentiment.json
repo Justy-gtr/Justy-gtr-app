@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T15:30:00+01:00",
+  "updatedAt": "2026-11-10T15:35:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 15,
-      "reason": "Vorfreude auf Starship-Flug 15 am Freitag mit Doppel-Fang. Vorbörslich rund -3 % nach heißer US-Inflation; Sorgen wegen Texas-Landstopp und Rechenzentrums-Moratorium.",
+      "score": 35,
+      "postsCount": 14,
+      "reason": "Gesprochen wird über ein geplantes 24-Mrd.-$-Kraftwerk mit Rechenzentrum in Starbase und Anthropic als Großkunde. Vorbörslich um 138 $ nach heißer US-Inflation.",
       "sources": [
         {
-          "title": "Booster B22 rollt für Flug 15 aus",
-          "url": "https://x.com/HAL9000spcx/status/2120140097656127998"
+          "title": "24 Mrd. $ für Kraftwerk und Rechenzentrum",
+          "url": "https://x.com/csidetrader/status/2120161288663749040"
         },
         {
-          "title": "Vorbörslich 137,58 $ (-3,2 %)",
-          "url": "https://x.com/Maximilius31/status/2120155048264999367"
+          "title": "Anthropic mietet Rechenleistung bei SpaceX",
+          "url": "https://x.com/spcxGOD/status/2120161420998226323"
         },
         {
-          "title": "Texas will Landübergabe pausieren",
-          "url": "https://x.com/SuperMariossss/status/2120143457054294064"
+          "title": "Vorbörslich unter 140 $",
+          "url": "https://x.com/ATAFIN/status/2120157972391133319"
         }
       ],
-      "updatedAt": "2026-11-10T15:30:00+01:00"
+      "updatedAt": "2026-11-10T15:35:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": -10,
-      "postsCount": 15,
-      "reason": "Heiße US-Inflation drückt Tesla vorbörslich ins Minus. Dazu Gespräche über eine Fusion mit SpaceX und Streit über den Cybertruck, der nur noch als Cyberbeast kommt.",
+      "score": 0,
+      "postsCount": 14,
+      "reason": "Heiße US-Inflation drückt Tesla vorbörslich um rund 7 $. Dagegen Freude über die neue Solarfabrik bei Houston, ARKs Kursziel 4.400 $ und Tesla Assisted Driving in Europa.",
       "sources": [
         {
-          "title": "CPI heiß, Tesla vorbörslich im Minus",
+          "title": "CPI heiß, Tesla vorbörslich -7 $",
           "url": "https://x.com/DRJBori63/status/2120148561853591904"
         },
         {
-          "title": "Sonderausschüsse prüfen Fusion mit SpaceX",
-          "url": "https://x.com/SuperMariossss/status/2120143371901567149"
+          "title": "10-Mrd.-$-Solarfabrik bei Houston",
+          "url": "https://x.com/NestorLRamos/status/2120149674241703941"
         },
         {
-          "title": "Cybertruck nur noch als Cyberbeast",
-          "url": "https://x.com/MarketPulse369/status/2120141792158924964"
+          "title": "Tesla Assisted Driving in Europa",
+          "url": "https://x.com/sebaonwheels/status/2120150735262200038"
         }
       ],
-      "updatedAt": "2026-11-10T15:30:00+01:00"
+      "updatedAt": "2026-11-10T15:35:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 5,
+      "score": 0,
       "postsCount": 15,
-      "reason": "Lob für ESCAPADE-Sonden auf Marskurs und 515 Mio. $ Neutron-Aufträge. Aber Neutron-Verzögerung, gesenkte Kursziele und vorbörslich rund -9 % nach der heißen US-Inflation.",
+      "reason": "Rekordumsatz, 3,6 Mrd. $ Auftragsbestand und ESCAPADE auf Marskurs. Aber Neutron-Sorgen, Piper senkt Kursziel auf 58 $ und vorbörslich rund -9 %.",
       "sources": [
         {
-          "title": "ESCAPADE-Sonden auf Kurs zum Mars",
-          "url": "https://x.com/AIStockSavvy/status/2120139510864564649"
+          "title": "Piper Sandler senkt Kursziel auf 58 $",
+          "url": "https://x.com/AIStockSavvy/status/2120147875439292678"
         },
         {
-          "title": "Über 515 Mio. $ Neutron-Aufträge",
-          "url": "https://x.com/Bearlovesbull/status/2120140930464235528"
+          "title": "Globalstar-Satelliten bestehen Tests",
+          "url": "https://x.com/Bearlovesbull/status/2120153319385526466"
         },
         {
-          "title": "Vorbörslich rund -9 % trotz starkem Bericht",
-          "url": "https://x.com/WojciechBernPL/status/2120151838590689286"
+          "title": "Rekordumsatz, aber Neutron-Unsicherheit",
+          "url": "https://x.com/Alpha_Bronze/status/2120154518176280862"
         }
       ],
-      "updatedAt": "2026-11-10T15:30:00+01:00"
+      "updatedAt": "2026-11-10T15:35:00+01:00"
     }
   }
 }
