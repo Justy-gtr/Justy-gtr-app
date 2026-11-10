@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T16:16:00+01:00",
+  "updatedAt": "2026-11-10T16:25:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gut",
-      "score": 35,
+      "mood": "gemischt",
+      "score": 10,
       "postsCount": 10,
-      "reason": "Bei SpaceX freut man sich, dass ARK an zwei Tagen für rund 96 Mio. $ nachgekauft hat. Dazu: Gavin Baker hat 42 % seines Depots in SpaceX. Zweifel gibt es an Rechenzentren im All.",
+      "reason": "SpaceX: Viel Gesprächsstoff über Fidelity, das seinen Anteil um rund 18 % verkleinert hat. Dazu: Pläne für ein 24-Mrd.-$-Kraftwerk mit Rechenzentrum in Starbase.",
       "sources": [
         {
-          "title": "ARK kauft rund 96 Mio. $ nach",
-          "url": "https://x.com/AndrePhillip/status/2120170449258856454"
+          "title": "Fidelity verkleinert Anteil um 17,9 %",
+          "url": "https://x.com/wallstengine/status/2120167024576090431"
         },
         {
-          "title": "SpaceX 42 % bei Gavin Baker",
-          "url": "https://x.com/_BL4CKSH33P_/status/2120173228563779927"
+          "title": "24-Mrd.-$-Kraftwerk in Starbase",
+          "url": "https://x.com/csidetrader/status/2120161288663749040"
         },
         {
-          "title": "SpaceX sieht hier gut aus",
-          "url": "https://x.com/spcxGOD/status/2120170994325221643"
+          "title": "Seeking Alpha bleibt optimistisch",
+          "url": "https://x.com/SeekingAlpha/status/2120163333412458742"
         }
       ],
-      "updatedAt": "2026-11-10T16:16:00+01:00"
+      "updatedAt": "2026-11-10T16:25:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 0,
+      "score": 5,
       "postsCount": 10,
-      "reason": "Bei Tesla geht es um Robotaxis und Cybercab: Tesla will bei fahrerlosen Fahrten haften. Kritiker bemängeln, dass Modelle wie Cybertruck und Model X wegfallen.",
+      "reason": "Tesla: In Grünheide fährt jedes neue Model Y allein übers Werksgelände, und Tesla will bei Robotaxis haften. Kritik gibt es am Aus für Cybertruck und Model X.",
       "sources": [
+        {
+          "title": "Model Y fährt in Grünheide allein",
+          "url": "https://x.com/sebaonwheels/status/2120170616284467404"
+        },
         {
           "title": "Tesla haftet bei Robotaxis",
           "url": "https://x.com/BastianelliLore/status/2120171078462935097"
         },
         {
           "title": "Kritik: Modelle fallen weg",
-          "url": "https://x.com/Automoto415792/status/2120170821755048087"
-        },
-        {
-          "title": "Robotaxi soll Milliarden Meilen fahren",
-          "url": "https://x.com/GrindeOptions/status/2120170739445956947"
+          "url": "https://x.com/Automoto415792/status/2120171900177727728"
         }
       ],
-      "updatedAt": "2026-11-10T16:16:00+01:00"
+      "updatedAt": "2026-11-10T16:25:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 20,
+      "score": 15,
       "postsCount": 10,
-      "reason": "Rocket Lab: Lob für 3,57 Mrd. $ Auftragsbestand und 16 ausgebuchte Neutron-Starts. Barclays senkt das Kursziel auf 82 $. Auf Reddit wird 3-mal so viel darüber geredet.",
+      "reason": "Rocket Lab: Analysten uneins. Clear Street hebt das Kursziel auf 110 $, Cantor senkt auf 111 $, Barclays auf 82 $. Lob für den Auftragsbestand und ausgebuchte Neutron-Starts.",
       "sources": [
+        {
+          "title": "Kursziele von Cantor und Barclays gesenkt",
+          "url": "https://x.com/ArkkDaily/status/2120173905679732816"
+        },
+        {
+          "title": "Clear Street hebt Ziel auf 110 $",
+          "url": "https://x.com/thereal_rok/status/2120174098408161733"
+        },
         {
           "title": "Auftragsbestand 3,57 Mrd. $",
           "url": "https://x.com/xFuturium/status/2120172183817527798"
-        },
-        {
-          "title": "Barclays-Ziel 85 auf 82 $",
-          "url": "https://x.com/Brechtfengels/status/2120170803161440462"
-        },
-        {
-          "title": "Reddit-Erwähnungen verdreifacht",
-          "url": "https://x.com/StockSignalsPro/status/2120171906636657007"
         }
       ],
-      "updatedAt": "2026-11-10T16:16:00+01:00"
+      "updatedAt": "2026-11-10T16:25:00+01:00"
     }
   }
 }
