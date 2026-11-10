@@ -1,38 +1,38 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T15:40:00+01:00",
+  "updatedAt": "2026-11-10T15:46:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 35,
-      "postsCount": 14,
-      "reason": "Gesprochen wird über ein geplantes 24-Mrd.-$-Kraftwerk mit Rechenzentrum in Starbase und Anthropic als Großkunde. Vorbörslich um 138 $ nach heißer US-Inflation.",
+      "score": 40,
+      "postsCount": 11,
+      "reason": "SpaceX holt den Eröffnungsrutsch nach der heißen US-Inflation großteils auf, nur noch rund -1 %. Gesprächsthemen: Kraftwerk mit Rechenzentrum in Starbase und Flug 15 am Freitag.",
       "sources": [
+        {
+          "title": "Minus von 2 % auf 1 % verkleinert",
+          "url": "https://x.com/gonta_southwood/status/2120166033172713526"
+        },
+        {
+          "title": "Großteil des Verlusts zur Eröffnung zurück",
+          "url": "https://x.com/spcxGOD/status/2120164577015144588"
+        },
         {
           "title": "24 Mrd. $ für Kraftwerk und Rechenzentrum",
           "url": "https://x.com/csidetrader/status/2120161288663749040"
-        },
-        {
-          "title": "Anthropic mietet Rechenleistung bei SpaceX",
-          "url": "https://x.com/spcxGOD/status/2120161420998226323"
-        },
-        {
-          "title": "Vorbörslich unter 140 $",
-          "url": "https://x.com/ATAFIN/status/2120157972391133319"
         }
       ],
-      "updatedAt": "2026-11-10T15:40:00+01:00"
+      "updatedAt": "2026-11-10T15:46:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 0,
-      "postsCount": 14,
-      "reason": "Tesla startet nach der heißen US-Inflation rund 1,6 % im Minus und prallt an 378 $ ab. Dagegen Freude über die Solarfabrik bei Houston und Musks geplante China-Reise mit Trump.",
+      "score": -5,
+      "postsCount": 12,
+      "reason": "Tesla liegt nach der heißen US-Inflation knapp 1 % im Minus und kämpft um 378 $. Dazu Freude über die Solarfabrik bei Houston, aber auch Streit über die hohe Bewertung.",
       "sources": [
         {
-          "title": "Tesla eröffnet -1,57 %",
-          "url": "https://x.com/stocksnipa/status/2120163045200544088"
+          "title": "Tesla bei 375 $ (-0,8 %)",
+          "url": "https://x.com/tommyatx/status/2120165956832067655"
         },
         {
           "title": "Abprall an 378 $, Verkäufer im Vorteil",
@@ -43,28 +43,28 @@
           "url": "https://x.com/NestorLRamos/status/2120149674241703941"
         }
       ],
-      "updatedAt": "2026-11-10T15:40:00+01:00"
+      "updatedAt": "2026-11-10T15:46:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 0,
-      "postsCount": 15,
-      "reason": "Rekordumsatz, Auftragsbestand +52 % auf 3,6 Mrd. $ und höhere Neutron-Preise. Aber Neutron erst 2027, Piper senkt Kursziel auf 58 $ und die Aktie liegt rund 9 % im Minus.",
+      "score": 15,
+      "postsCount": 12,
+      "reason": "Der Rutsch nach den Zahlen wird aufgefangen: von -10 % auf rund -1 %. Lob für Rekordumsatz und 3,6 Mrd. $ Auftragsbestand, Sorgen wegen Neutron erst 2027.",
       "sources": [
+        {
+          "title": "Von -10 % auf -1 % erholt",
+          "url": "https://x.com/retail_mourinho/status/2120164563110789604"
+        },
+        {
+          "title": "Rekordumsatz, Neutron verzögert",
+          "url": "https://x.com/Nextwave_invest/status/2120165021720195475"
+        },
         {
           "title": "Piper Sandler senkt Kursziel auf 58 $",
           "url": "https://x.com/AIStockSavvy/status/2120147875439292678"
-        },
-        {
-          "title": "Globalstar-Satelliten bestehen Tests",
-          "url": "https://x.com/Bearlovesbull/status/2120153319385526466"
-        },
-        {
-          "title": "Auftragsbestand +52 % in einem Quartal",
-          "url": "https://x.com/xandiito/status/2120162651674480866"
         }
       ],
-      "updatedAt": "2026-11-10T15:40:00+01:00"
+      "updatedAt": "2026-11-10T15:46:00+01:00"
     }
   }
 }
