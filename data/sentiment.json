@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T14:14:00+01:00",
+  "updatedAt": "2026-11-10T14:28:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 55,
-      "postsCount": 20,
-      "reason": "Flug 15 mit Doppel-Fang am Freitag bleibt Topthema, dazu ein 24-Mrd.-$-Gaskraftwerk mit KI-Rechenzentrum in Starbase. Vorbörslich rund -2 % nach +5,8 %.",
+      "postsCount": 15,
+      "reason": "Vorfreude auf Flug 15 mit Doppel-Fang; Morgan Stanley sieht das KI-Rechenzentrumsgeschäft stark. Dämpfer: Texas will Landübergabe bei Boca Chica pausieren.",
       "sources": [
         {
-          "title": "Starship Flug 15: Doppel-Fang am Freitag",
-          "url": "https://x.com/BetTheDecade/status/2120141840573706426"
+          "title": "Morgan Stanley: SpaceX als Rechenzentrumsfirma",
+          "url": "https://x.com/blockspace/status/2120142571531886806"
         },
         {
-          "title": "24 Mrd. $ für Kraftwerk und Rechenzentrum in Texas",
-          "url": "https://x.com/marketsday/status/2120131663791620258"
+          "title": "Texas will Landübergabe an SpaceX pausieren",
+          "url": "https://x.com/SuperMariossss/status/2120143457054294064"
         },
         {
-          "title": "SPCX vorbörslich -2 % nach starkem Montag",
-          "url": "https://x.com/spcxGOD/status/2120139465100308916"
+          "title": "Flug 15: Booster und Schiff sollen gefangen werden",
+          "url": "https://x.com/MarkAve313/status/2120144353012195778"
         }
       ],
-      "updatedAt": "2026-11-10T14:14:00+01:00"
+      "updatedAt": "2026-11-10T14:28:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": -10,
-      "postsCount": 19,
-      "reason": "Cybertruck nur noch als teurer Cyberbeast bestellbar, Jefferies senkt Kursziel auf 375 $, Sorgen um Musk-Nachfolge. Optimus und Robotaxi bleiben Hoffnungsthemen.",
+      "score": -5,
+      "postsCount": 15,
+      "reason": "Tesla und SpaceX prüfen mit Sonderausschüssen eine mögliche Fusion. Dazu Jefferies-Kurszielsenkung, Cybertruck nur noch als Cyberbeast und schwacher Nasdaq.",
       "sources": [
+        {
+          "title": "Sonderausschüsse prüfen Fusion mit SpaceX",
+          "url": "https://x.com/SuperMariossss/status/2120143371901567149"
+        },
         {
           "title": "Cybertruck nur noch als Cyberbeast",
           "url": "https://x.com/MarketPulse369/status/2120141792158924964"
         },
         {
-          "title": "Jefferies senkt Kursziel auf 375 $",
-          "url": "https://x.com/TeslaDailyPulse/status/2120129819073491330"
-        },
-        {
-          "title": "Debatte um Nachfolge hinter Musk",
-          "url": "https://x.com/S_NewsRoomCOM/status/2120141427208294814"
+          "title": "Robotaxi-Marke in Japan angemeldet",
+          "url": "https://x.com/LennyTesfaye/status/2120145335280615486"
         }
       ],
-      "updatedAt": "2026-11-10T14:14:00+01:00"
+      "updatedAt": "2026-11-10T14:28:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 0,
-      "postsCount": 20,
-      "reason": "Lob für Rekordumsatz, 515 Mio. $ Neutron-Aufträge und gelungene ESCAPADE-Manöver Richtung Mars. Dagegen größerer Verlust, Neutron erst 2027 und rund -7 %.",
+      "score": 5,
+      "postsCount": 15,
+      "reason": "Viel Lob für die gelungenen ESCAPADE-Manöver Richtung Mars und volle Neutron-Auftragsbücher. Dagegen größerer Verlust, Neutron ohne festen Termin und rund -6 %.",
       "sources": [
         {
-          "title": "ESCAPADE-Satelliten auf Kurs zum Mars",
-          "url": "https://x.com/AIStockSavvy/status/2120139510864564649"
+          "title": "ESCAPADE-Sonden auf Kurs zum Mars",
+          "url": "https://x.com/StockSavvyShay/status/2120143109422288986"
         },
         {
-          "title": "Über 515 Mio. $ Neutron-Startverträge",
-          "url": "https://x.com/Bearlovesbull/status/2120140930464235528"
+          "title": "Neutron: über 515 Mio. $ neue Aufträge",
+          "url": "https://x.com/BroadwakeAI/status/2120143870386462998"
         },
         {
-          "title": "Trotz Umsatzplus rund -7 %",
-          "url": "https://x.com/beinghmn/status/2120142442477347279"
+          "title": "Vorbörslich rund -6 % trotz Umsatzplus",
+          "url": "https://x.com/newsinvesting/status/2120143559500140592"
         }
       ],
-      "updatedAt": "2026-11-10T14:14:00+01:00"
+      "updatedAt": "2026-11-10T14:28:00+01:00"
     }
   }
 }
