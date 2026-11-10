@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T14:59:00+01:00",
+  "updatedAt": "2026-11-10T15:04:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 45,
+      "score": 40,
       "postsCount": 15,
-      "reason": "Vorfreude auf Starship-Flug 15 am Freitag mit Doppel-Fang. Vorbörslich gut -2 % nach starkem Montag; Sorgen wegen Texas-Landstopp und Rechenzentrums-Moratorium.",
+      "reason": "Vorfreude auf Starship-Flug 15 am Freitag mit Doppel-Fang. Vorbörslich rund -3 % nach heißer US-Inflation; Sorgen wegen Texas-Landstopp und Rechenzentrums-Moratorium.",
       "sources": [
         {
           "title": "Booster B22 rollt für Flug 15 aus",
           "url": "https://x.com/HAL9000spcx/status/2120140097656127998"
         },
         {
-          "title": "Vorbörslich 139 $ nach +5,8 % am Montag",
-          "url": "https://x.com/spcxGOD/status/2120139465100308916"
+          "title": "Vorbörslich 137,58 $ (-3,2 %)",
+          "url": "https://x.com/Maximilius31/status/2120155048264999367"
         },
         {
           "title": "Texas will Landübergabe pausieren",
           "url": "https://x.com/SuperMariossss/status/2120143457054294064"
         }
       ],
-      "updatedAt": "2026-11-10T14:59:00+01:00"
+      "updatedAt": "2026-11-10T15:04:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,7 +43,7 @@
           "url": "https://x.com/MarketPulse369/status/2120141792158924964"
         }
       ],
-      "updatedAt": "2026-11-10T14:59:00+01:00"
+      "updatedAt": "2026-11-10T15:04:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/WojciechBernPL/status/2120151838590689286"
         }
       ],
-      "updatedAt": "2026-11-10T14:59:00+01:00"
+      "updatedAt": "2026-11-10T15:04:00+01:00"
     }
   }
 }
