@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T10:33:00+01:00",
+  "updatedAt": "2026-11-10T10:56:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,7 +22,7 @@
           "url": "https://x.com/DanielBechler2/status/2120071504222367898"
         }
       ],
-      "updatedAt": "2026-11-10T10:33:00+01:00"
+      "updatedAt": "2026-11-10T10:56:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,13 +43,13 @@
           "url": "https://x.com/TeslaOptimusHub/status/2120070890150904019"
         }
       ],
-      "updatedAt": "2026-11-10T10:33:00+01:00"
+      "updatedAt": "2026-11-10T10:56:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": -5,
       "postsCount": 20,
-      "reason": "Rekordumsatz (+73 %), 3,6 Mrd. $ Auftragsbestand und teurere Neutron-Starts (70 Mio. $) werden gelobt, doch der höhere Verlust drückt den Kurs nachbörslich.",
+      "reason": "Rekordumsatz (+73 %), 3,6 Mrd. $ Auftragsbestand und teurere Neutron-Starts werden gelobt; höherer Verlust und Neutron-Start erst Mitte 2027 drücken den Kurs.",
       "sources": [
         {
           "title": "Q3: Rekordumsatz, Kurs nachbörslich im Minus",
@@ -60,11 +60,11 @@
           "url": "https://x.com/Neil_Shares/status/2120065120978214946"
         },
         {
-          "title": "Neutron-Preis steigt auf 70 Mio. $",
-          "url": "https://x.com/Bettybronxton/status/2120080128927572407"
+          "title": "Neutron-Start erst Mitte 2027, Aktie fällt",
+          "url": "https://x.com/azattelevision/status/2120091062903415009"
         }
       ],
-      "updatedAt": "2026-11-10T10:33:00+01:00"
+      "updatedAt": "2026-11-10T10:56:00+01:00"
     }
   }
 }
