@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T13:34:00+01:00",
+  "updatedAt": "2026-11-10T13:57:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,7 +22,7 @@
           "url": "https://x.com/DanielBechler2/status/2120071504222367898"
         }
       ],
-      "updatedAt": "2026-11-10T13:34:00+01:00"
+      "updatedAt": "2026-11-10T13:57:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,28 +43,28 @@
           "url": "https://x.com/BreakoutFlow/status/2120130635679318245"
         }
       ],
-      "updatedAt": "2026-11-10T13:34:00+01:00"
+      "updatedAt": "2026-11-10T13:57:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 0,
+      "score": -10,
       "postsCount": 20,
-      "reason": "150-Mio.-$-Kreditzusage der US-Regierung für Neutron, Stifel und Citi bleiben bei ihren Kurszielen. Dagegen: höherer Verlust, Neutron erst 2027, vorbörslich -5 %.",
+      "reason": "Rekordumsatz und 150-Mio.-$-Kreditzusage für Neutron werden gelobt, doch mehrere Analysten senken nach den Zahlen ihre Kursziele (Cantor, Piper). Vorbörslich rund -6 %.",
       "sources": [
+        {
+          "title": "Analysten senken Kursziele nach Q3",
+          "url": "https://x.com/TipRanks/status/2120135157227176006"
+        },
+        {
+          "title": "Piper Sandler senkt Kursziel auf 58 $",
+          "url": "https://x.com/Drewalphatrades/status/2120136912661102741"
+        },
         {
           "title": "150 Mio. $ Kreditzusage für Neutron",
           "url": "https://x.com/marketsday/status/2120109464346902898"
-        },
-        {
-          "title": "Citi bestätigt Kursziel 105 $",
-          "url": "https://x.com/SpacBobby/status/2120109588213342329"
-        },
-        {
-          "title": "Vorbörslich: Rocket Lab -5,4 %",
-          "url": "https://x.com/pipmoment/status/2120103153777418700"
         }
       ],
-      "updatedAt": "2026-11-10T13:34:00+01:00"
+      "updatedAt": "2026-11-10T13:57:00+01:00"
     }
   }
 }
