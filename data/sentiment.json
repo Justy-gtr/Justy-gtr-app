@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T09:31:00+01:00",
+  "updatedAt": "2026-11-10T09:35:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,7 +22,7 @@
           "url": "https://x.com/CenapKoehler/status/2120071243973922923"
         }
       ],
-      "updatedAt": "2026-11-10T09:31:00+01:00"
+      "updatedAt": "2026-11-10T09:35:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,13 +43,13 @@
           "url": "https://x.com/TeslaOptimusHub/status/2120070890150904019"
         }
       ],
-      "updatedAt": "2026-11-10T09:31:00+01:00"
+      "updatedAt": "2026-11-10T09:35:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": -10,
       "postsCount": 20,
-      "reason": "Rekordumsatz in Q3 (+73 %) und Auftragsbestand 3,6 Mrd. $ werden gelobt, doch höherer Verlust drückt den Kurs nachbörslich um 6–8 %.",
+      "reason": "Rekordumsatz in Q3 (+73 %) und Auftragsbestand 3,6 Mrd. $ werden gelobt, doch höherer Verlust drückt den Kurs nachbörslich um 6–8 %. Barclays senkt Kursziel auf 82 $.",
       "sources": [
         {
           "title": "Q3: Umsatz +73 %, Verlust größer als erwartet",
@@ -60,11 +60,11 @@
           "url": "https://x.com/Neil_Shares/status/2120065120978214946"
         },
         {
-          "title": "RKLB nachbörslich rund −8 %",
-          "url": "https://x.com/nm_0125/status/2120068512198889870"
+          "title": "Analysten: KeyBanc 100 $, Barclays senkt auf 82 $",
+          "url": "https://x.com/sellsidesheriff/status/2120072102124367959"
         }
       ],
-      "updatedAt": "2026-11-10T09:31:00+01:00"
+      "updatedAt": "2026-11-10T09:35:00+01:00"
     }
   }
 }
