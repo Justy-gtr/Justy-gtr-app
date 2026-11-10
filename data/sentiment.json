@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T11:35:00+01:00",
+  "updatedAt": "2026-11-10T11:58:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,7 +22,7 @@
           "url": "https://x.com/DanielBechler2/status/2120071504222367898"
         }
       ],
-      "updatedAt": "2026-11-10T11:35:00+01:00"
+      "updatedAt": "2026-11-10T11:58:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,28 +43,28 @@
           "url": "https://x.com/x_invest1/status/2120099302139633997"
         }
       ],
-      "updatedAt": "2026-11-10T11:35:00+01:00"
+      "updatedAt": "2026-11-10T11:58:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": -5,
       "postsCount": 20,
-      "reason": "Rekordumsatz (+73 %), 3,6 Mrd. $ Auftragsbestand und teurere Neutron-Starts werden gelobt; höherer Verlust und Neutron-Start erst Mitte 2027 drücken den Kurs.",
+      "reason": "Rekordumsatz und 3,6 Mrd. $ Auftragsbestand werden gelobt, Stifel bleibt bei 132 $ Kursziel. Höherer Verlust und Neutron erst 2027: vorbörslich rund -5 %.",
       "sources": [
         {
-          "title": "Q3: Rekordumsatz, Kurs nachbörslich im Minus",
-          "url": "https://x.com/LukasKiemer/status/2120086723354939642"
+          "title": "Vorbörslich: Rocket Lab -5,4 %",
+          "url": "https://x.com/pipmoment/status/2120103153777418700"
         },
         {
-          "title": "Rekord-Quartal, Neutron mit 16 Buchungen",
-          "url": "https://x.com/Neil_Shares/status/2120065120978214946"
+          "title": "Stifel bestätigt Kursziel 132 $",
+          "url": "https://x.com/SpacBobby/status/2120103849444999246"
         },
         {
           "title": "Neutron-Start erst Mitte 2027, Aktie fällt",
           "url": "https://x.com/azattelevision/status/2120091062903415009"
         }
       ],
-      "updatedAt": "2026-11-10T11:35:00+01:00"
+      "updatedAt": "2026-11-10T11:58:00+01:00"
     }
   }
 }
