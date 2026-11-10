@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T15:04:00+01:00",
+  "updatedAt": "2026-11-10T15:12:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,7 +22,7 @@
           "url": "https://x.com/SuperMariossss/status/2120143457054294064"
         }
       ],
-      "updatedAt": "2026-11-10T15:04:00+01:00"
+      "updatedAt": "2026-11-10T15:12:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,7 +43,7 @@
           "url": "https://x.com/MarketPulse369/status/2120141792158924964"
         }
       ],
-      "updatedAt": "2026-11-10T15:04:00+01:00"
+      "updatedAt": "2026-11-10T15:12:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/WojciechBernPL/status/2120151838590689286"
         }
       ],
-      "updatedAt": "2026-11-10T15:04:00+01:00"
+      "updatedAt": "2026-11-10T15:12:00+01:00"
     }
   }
 }
