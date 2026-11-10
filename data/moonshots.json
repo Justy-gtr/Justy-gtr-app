@@ -6,7 +6,7 @@
     "pair": "EURUSD",
     "rate": 1.1223,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-10T01:23:29+01:00",
+    "asOf": "2026-11-10T01:54:30+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
