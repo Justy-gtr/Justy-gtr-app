@@ -1,13 +1,13 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T16:31:00+01:00",
+  "updatedAt": "2026-11-10T16:40:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
       "score": 20,
       "postsCount": 10,
-      "reason": "SpaceX: Viele freuen sich über die Erholung nach dem CPI-Rücksetzer und ARKs Zukäufe für rund 96 Mio. $. Dagegen steht Fidelity, das seinen Anteil um rund 18 % verkleinert hat.",
+      "reason": "SpaceX: Gesprochen wird über ARKs Zukäufe und Fidelitys kleineren Anteil. Manche erinnern daran, dass die Aktie seit dem Börsengang rund 5 % unter dem Ausgabepreis liegt.",
       "sources": [
         {
           "title": "Fidelity verkleinert Anteil um 17,9 %",
@@ -18,53 +18,53 @@
           "url": "https://x.com/soulehoward1/status/2120175532419727559"
         },
         {
-          "title": "Erholung nach CPI-Rücksetzer",
-          "url": "https://x.com/gonta_southwood/status/2120166033172713526"
+          "title": "Seit Börsengang rund 5 % im Minus",
+          "url": "https://x.com/RussFaigen/status/2120177594813624510"
         }
       ],
-      "updatedAt": "2026-11-10T16:31:00+01:00"
+      "updatedAt": "2026-11-10T16:40:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 5,
+      "score": 0,
       "postsCount": 10,
-      "reason": "Tesla: Gesprochen wird über das Cybertruck-Aus in 8 Monaten für das Cybercab, Teslas Haftung bei Robotaxis und einen Brief an die NHTSA zu neuen Matrix-LED-Regeln.",
+      "reason": "Tesla: Jefferies senkt das Kursziel auf 375 $. Cybertruck-Bestellungen gestoppt außer Cyberbeast. Positiv gesehen: Robotaxi neu in San Antonio und eine Solarfabrik bei Houston.",
       "sources": [
         {
-          "title": "Cybertruck-Aus für Cybercab",
-          "url": "https://x.com/Seixas_Capital/status/2120176391224176875"
+          "title": "Jefferies-Ziel 400 auf 375 $",
+          "url": "https://x.com/HindsMarkets/status/2120177191468101797"
         },
         {
-          "title": "Tesla haftet bei Robotaxis",
-          "url": "https://x.com/BastianelliLore/status/2120171078462935097"
+          "title": "Cybertruck-Bestellstopp",
+          "url": "https://x.com/TeslaOracle_com/status/2120178219546808654"
         },
         {
-          "title": "Brief an NHTSA zu Matrix-LED",
-          "url": "https://x.com/x_invest1/status/2120176181626728642"
+          "title": "Robotaxi in San Antonio",
+          "url": "https://x.com/Tarun6996420/status/2120178687454617732"
         }
       ],
-      "updatedAt": "2026-11-10T16:31:00+01:00"
+      "updatedAt": "2026-11-10T16:40:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 15,
+      "score": 25,
       "postsCount": 10,
-      "reason": "Rocket Lab: Analysten uneins, Cantor senkt das Kursziel auf 111 $, Clear Street hebt auf 110 $. Vorfreude auf den 100. Electron-Start ab 14.11. und positiven Cashflow.",
+      "reason": "Rocket Lab: Freude, dass die Aktie nach dem Minus von über 7 % wieder ins Plus dreht. Lob für den Rekordumsatz von 268 Mio. $, Sorge wegen Neutron erst 2027.",
       "sources": [
         {
-          "title": "Kursziele von Cantor und Barclays gesenkt",
-          "url": "https://x.com/ArkkDaily/status/2120173905679732816"
+          "title": "Nach −7 % wieder im Plus",
+          "url": "https://x.com/broisquant/status/2120177258631500122"
         },
         {
-          "title": "Clear Street hebt Ziel auf 110 $",
-          "url": "https://x.com/thereal_rok/status/2120174098408161733"
+          "title": "Rekordumsatz und Auftragsbestand",
+          "url": "https://x.com/KeithTradeSmith/status/2120177662404571565"
         },
         {
-          "title": "100. Electron-Start ab 14.11.",
-          "url": "https://x.com/orbital_station/status/2120175837995814974"
+          "title": "Risiko: Neutron erst 2027",
+          "url": "https://x.com/FlyingCabbageB/status/2120178204191428876"
         }
       ],
-      "updatedAt": "2026-11-10T16:31:00+01:00"
+      "updatedAt": "2026-11-10T16:40:00+01:00"
     }
   }
 }
