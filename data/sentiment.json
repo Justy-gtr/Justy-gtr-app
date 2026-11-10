@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T15:51:00+01:00",
+  "updatedAt": "2026-11-10T15:59:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 25,
+      "score": 30,
       "postsCount": 10,
-      "reason": "SpaceX rutscht wieder auf rund -2,8 % ab. Neu: Fidelity hat seinen Anteil um 17,9 % verkleinert. Vorfreude auf Flug 15 am Freitag und das Starbase-Rechenzentrum bleibt.",
+      "reason": "SpaceX erholt sich auf rund -0,9 % (140,80 $). Fidelitys kleinerer Anteil wird belächelt, dazu Wetten auf fallende Kurse. Vorfreude auf Flug 15 am Freitag bleibt.",
       "sources": [
         {
-          "title": "Fidelity verkleinert SpaceX-Anteil um 17,9 %",
-          "url": "https://x.com/wallstengine/status/2120167024576090431"
+          "title": "SpaceX bei 140,80 $ (-0,9 %)",
+          "url": "https://x.com/Maximilius31/status/2120167765948420403"
         },
         {
-          "title": "SpaceX bei 138,10 $ (-2,8 %)",
-          "url": "https://x.com/QuikOptions/status/2120166466162937882"
+          "title": "Fidelity verkleinert SpaceX-Anteil",
+          "url": "https://x.com/spcxGOD/status/2120168070345797816"
         },
         {
-          "title": "24 Mrd. $ für Kraftwerk und Rechenzentrum",
-          "url": "https://x.com/csidetrader/status/2120161288663749040"
+          "title": "Große Put-Wette auf 125 $",
+          "url": "https://x.com/DarkFlowAlert/status/2120168239061700889"
         }
       ],
-      "updatedAt": "2026-11-10T15:51:00+01:00"
+      "updatedAt": "2026-11-10T15:59:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": -5,
       "postsCount": 10,
-      "reason": "Tesla liegt nach der heißen US-Inflation knapp 1 % im Minus und kämpft um 378 $. Dazu Freude über die Solarfabrik bei Houston, aber auch Streit über die hohe Bewertung.",
+      "reason": "Tesla liegt rund -0,7 % bei 375 $ auf der 50-Tage-Linie. Gesprochen wird über Musks Chip-Fabrik-Plan mit SpaceX, Grok 4.8 diese Woche und nur noch eine Cybertruck-Version.",
       "sources": [
         {
-          "title": "Tesla bei 375 $ (-0,8 %)",
-          "url": "https://x.com/tommyatx/status/2120165956832067655"
+          "title": "Tesla bei 375,54 $ (-0,66 %)",
+          "url": "https://x.com/Maximilius31/status/2120167765948420403"
         },
         {
-          "title": "Abprall an 378 $, Verkäufer im Vorteil",
-          "url": "https://x.com/Options_Master1/status/2120164008124911880"
+          "title": "Musks Chip-Ziel für Tesla und SpaceX",
+          "url": "https://x.com/tickerorbit/status/2120169180079301098"
         },
         {
-          "title": "10-Mrd.-$-Solarfabrik bei Houston",
-          "url": "https://x.com/NestorLRamos/status/2120149674241703941"
+          "title": "Cybertruck nur noch in einer Version",
+          "url": "https://x.com/FullSelfFunding/status/2120168677769396645"
         }
       ],
-      "updatedAt": "2026-11-10T15:51:00+01:00"
+      "updatedAt": "2026-11-10T15:59:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 20,
+      "score": 25,
       "postsCount": 10,
-      "reason": "Clear Street hebt das Kursziel auf 129 $, Piper senkt auf 58 $. Lob für Rekordumsatz und ESCAPADE auf Marskurs, Kritik am größeren Verlust und Neutron erst 2027.",
+      "reason": "Rocket Lab ist fast wieder im Plus (58,32 $) nach -10 % vorbörslich. Lob für den riesigen Auftragsbestand, Sorgen wegen Neutron erst 2027 und gemischter Kursziele.",
       "sources": [
         {
-          "title": "Clear Street: Kursziel 129 $",
-          "url": "https://x.com/rocket__house/status/2120166589790085353"
-        },
-        {
-          "title": "Verlust wächst auf 79,7 Mio. $",
-          "url": "https://x.com/margindamage/status/2120166413553807680"
+          "title": "Fast wieder im Plus bei 58,32 $",
+          "url": "https://x.com/0xCheng_2019/status/2120168786041188634"
         },
         {
           "title": "Von -10 % auf -1 % erholt",
           "url": "https://x.com/retail_mourinho/status/2120164563110789604"
+        },
+        {
+          "title": "Rekordumsatz, Neutron verzögert",
+          "url": "https://x.com/Nextwave_invest/status/2120165021720195475"
         }
       ],
-      "updatedAt": "2026-11-10T15:51:00+01:00"
+      "updatedAt": "2026-11-10T15:59:00+01:00"
     }
   }
 }
