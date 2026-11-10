@@ -4,9 +4,9 @@
   "asOf": "2026-11-10T06:00:00+01:00",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1166,
+    "rate": 1.1169,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-10T23:28:31+01:00",
+    "asOf": "2026-11-10T23:31:31+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -161,7 +161,7 @@
         }
       ],
       "priceUsd": 168.79,
-      "priceEur": 151.17,
+      "priceEur": 151.12,
       "previousCloseUsd": 178.64,
       "changePct": -5.51,
       "eurMethod": "usd_div_eurusd",
@@ -189,7 +189,7 @@
         161.64,
         166.22,
         160.28,
-        151.17
+        151.12
       ],
       "asOf": "2026-11-10T06:00:00+01:00",
       "marketSource": {
@@ -346,7 +346,7 @@
         }
       ],
       "priceUsd": 224.54,
-      "priceEur": 201.1,
+      "priceEur": 201.03,
       "previousCloseUsd": 207.74,
       "changePct": 8.09,
       "eurMethod": "usd_div_eurusd",
@@ -374,7 +374,7 @@
         189.91,
         191.37,
         186.05,
-        201.1
+        201.03
       ],
       "asOf": "2026-11-10T06:00:00+01:00",
       "marketSource": {
@@ -531,7 +531,7 @@
         }
       ],
       "priceUsd": 154.37,
-      "priceEur": 138.25,
+      "priceEur": 138.21,
       "previousCloseUsd": 154.58,
       "changePct": -0.14,
       "eurMethod": "usd_div_eurusd",
@@ -559,7 +559,7 @@
         118.87,
         125.75,
         138.69,
-        138.25
+        138.21
       ],
       "asOf": "2026-11-10T06:00:00+01:00",
       "marketSource": {
@@ -856,7 +856,7 @@
           }
         ],
         "priceUsd": 19.15,
-        "priceEur": 17.15,
+        "priceEur": 17.14,
         "previousCloseUsd": 22.94,
         "changePct": -16.52,
         "eurMethod": "usd_div_eurusd",
@@ -884,7 +884,7 @@
           21.42,
           23.16,
           20.58,
-          17.15
+          17.14
         ],
         "asOf": "2026-11-10T06:00:00+01:00",
         "marketSource": {
@@ -1005,7 +1005,7 @@
           }
         ],
         "priceUsd": 267.69,
-        "priceEur": 239.74,
+        "priceEur": 239.66,
         "previousCloseUsd": 276.21,
         "changePct": -3.08,
         "eurMethod": "usd_div_eurusd",
@@ -1033,7 +1033,7 @@
           213.31,
           222.61,
           247.67,
-          239.74
+          239.66
         ],
         "asOf": "2026-11-10T06:00:00+01:00",
         "marketSource": {
