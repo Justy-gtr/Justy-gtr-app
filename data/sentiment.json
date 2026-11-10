@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T13:57:00+01:00",
+  "updatedAt": "2026-11-10T14:14:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 60,
+      "score": 55,
       "postsCount": 20,
-      "reason": "Flug 15 am Freitag (13.11.) mit erstem Doppel-Fang bleibt Hauptthema; dazu +5,8 % am Montag, Stifel zu KI-Rechenzentren und die fast fertige Starship-Rampe in Florida.",
+      "reason": "Flug 15 mit Doppel-Fang am Freitag bleibt Topthema, dazu ein 24-Mrd.-$-Gaskraftwerk mit KI-Rechenzentrum in Starbase. Vorbörslich rund -2 % nach +5,8 %.",
       "sources": [
         {
-          "title": "Starship Flug 15: Doppel-Fang geplant, SPCX fast +6 %",
-          "url": "https://x.com/joehansen/status/2120086309934944535"
+          "title": "Starship Flug 15: Doppel-Fang am Freitag",
+          "url": "https://x.com/BetTheDecade/status/2120141840573706426"
         },
         {
-          "title": "Stifel: SpaceX könnte KI-Rechenzentren übernehmen",
-          "url": "https://x.com/Linnazhan/status/2120074733630943335"
+          "title": "24 Mrd. $ für Kraftwerk und Rechenzentrum in Texas",
+          "url": "https://x.com/marketsday/status/2120131663791620258"
         },
         {
-          "title": "Starship-Rampe auf Pad 39A fast fertig",
-          "url": "https://x.com/DanielBechler2/status/2120071504222367898"
+          "title": "SPCX vorbörslich -2 % nach starkem Montag",
+          "url": "https://x.com/spcxGOD/status/2120139465100308916"
         }
       ],
-      "updatedAt": "2026-11-10T13:57:00+01:00"
+      "updatedAt": "2026-11-10T14:14:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 0,
-      "postsCount": 20,
-      "reason": "Robotaxi in San Antonio wird gefeiert. Dagegen: Jefferies senkt Kursziel auf 375 $, schwache China-Verkäufe und Streit mit Texas' neuer Gouverneurin um Steuervorteile.",
+      "score": -10,
+      "postsCount": 19,
+      "reason": "Cybertruck nur noch als teurer Cyberbeast bestellbar, Jefferies senkt Kursziel auf 375 $, Sorgen um Musk-Nachfolge. Optimus und Robotaxi bleiben Hoffnungsthemen.",
       "sources": [
+        {
+          "title": "Cybertruck nur noch als Cyberbeast",
+          "url": "https://x.com/MarketPulse369/status/2120141792158924964"
+        },
         {
           "title": "Jefferies senkt Kursziel auf 375 $",
           "url": "https://x.com/TeslaDailyPulse/status/2120129819073491330"
         },
         {
-          "title": "Robotaxi jetzt auch in San Antonio",
-          "url": "https://x.com/wealthleee/status/2120101661972508995"
-        },
-        {
-          "title": "Texas: Streit um Steuervorteile und Rechenzentren",
-          "url": "https://x.com/BreakoutFlow/status/2120130635679318245"
+          "title": "Debatte um Nachfolge hinter Musk",
+          "url": "https://x.com/S_NewsRoomCOM/status/2120141427208294814"
         }
       ],
-      "updatedAt": "2026-11-10T13:57:00+01:00"
+      "updatedAt": "2026-11-10T14:14:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": -10,
+      "score": 0,
       "postsCount": 20,
-      "reason": "Rekordumsatz und 150-Mio.-$-Kreditzusage für Neutron werden gelobt, doch mehrere Analysten senken nach den Zahlen ihre Kursziele (Cantor, Piper). Vorbörslich rund -6 %.",
+      "reason": "Lob für Rekordumsatz, 515 Mio. $ Neutron-Aufträge und gelungene ESCAPADE-Manöver Richtung Mars. Dagegen größerer Verlust, Neutron erst 2027 und rund -7 %.",
       "sources": [
         {
-          "title": "Analysten senken Kursziele nach Q3",
-          "url": "https://x.com/TipRanks/status/2120135157227176006"
+          "title": "ESCAPADE-Satelliten auf Kurs zum Mars",
+          "url": "https://x.com/AIStockSavvy/status/2120139510864564649"
         },
         {
-          "title": "Piper Sandler senkt Kursziel auf 58 $",
-          "url": "https://x.com/Drewalphatrades/status/2120136912661102741"
+          "title": "Über 515 Mio. $ Neutron-Startverträge",
+          "url": "https://x.com/Bearlovesbull/status/2120140930464235528"
         },
         {
-          "title": "150 Mio. $ Kreditzusage für Neutron",
-          "url": "https://x.com/marketsday/status/2120109464346902898"
+          "title": "Trotz Umsatzplus rund -7 %",
+          "url": "https://x.com/beinghmn/status/2120142442477347279"
         }
       ],
-      "updatedAt": "2026-11-10T13:57:00+01:00"
+      "updatedAt": "2026-11-10T14:14:00+01:00"
     }
   }
 }
