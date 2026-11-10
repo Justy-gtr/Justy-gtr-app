@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T10:56:00+01:00",
+  "updatedAt": "2026-11-10T11:35:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,28 +22,28 @@
           "url": "https://x.com/DanielBechler2/status/2120071504222367898"
         }
       ],
-      "updatedAt": "2026-11-10T10:56:00+01:00"
+      "updatedAt": "2026-11-10T11:35:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 15,
+      "score": 10,
       "postsCount": 20,
-      "reason": "Nach +5,5 % am Montag vorbörslich leicht im Minus; Robotaxi, FSD-Rabatt bei Lemonade und Solarprojekt in Texas sind Thema. Kritik am Cybertruck-Aus bis Mitte 2027.",
+      "reason": "Robotaxi startet in San Antonio, der 8. US-Stadt, nach +5,5 % am Montag. Dämpfer: Einzelhandelsverkauf in China im Oktober so niedrig wie seit 4 Jahren nicht.",
       "sources": [
         {
-          "title": "TSLA +5,5 %, vorbörslich -0,6 %, Lemonade-FSD-Rabatt",
-          "url": "https://x.com/TessSwiftAI/status/2120086341891313723"
+          "title": "Robotaxi jetzt auch in San Antonio",
+          "url": "https://x.com/wealthleee/status/2120101661972508995"
         },
         {
-          "title": "Cybertruck-Produktion endet Mitte 2027",
-          "url": "https://x.com/TheXNote/status/2120066545015549959"
+          "title": "China: nur 8.817 Tesla im Oktober verkauft",
+          "url": "https://x.com/CNEVhome/status/2120100654366838897"
         },
         {
-          "title": "Erdarbeiten für Project Crystal Sun in Texas",
-          "url": "https://x.com/TeslaOptimusHub/status/2120070890150904019"
+          "title": "Cyberbeast-Lieferung erst März bis Juni 2027",
+          "url": "https://x.com/x_invest1/status/2120099302139633997"
         }
       ],
-      "updatedAt": "2026-11-10T10:56:00+01:00"
+      "updatedAt": "2026-11-10T11:35:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/azattelevision/status/2120091062903415009"
         }
       ],
-      "updatedAt": "2026-11-10T10:56:00+01:00"
+      "updatedAt": "2026-11-10T11:35:00+01:00"
     }
   }
 }
