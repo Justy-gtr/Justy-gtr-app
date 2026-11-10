@@ -635,8 +635,8 @@ test("Nummern und Striche kommen aus der Fixture, nicht aus dem Tageskurs", () =
   assert.match(css, /\.guide-legend \.swatch\.trend/);
   assert.equal(css.includes("kaufen"), false);
   const sw = fs.readFileSync("sw.js", "utf8");
-  assert.match(sw, /jgtr-v36/);
-  assert.equal(sw.includes("jgtr-v35"), false);
+  assert.match(sw, /jgtr-v37/);
+  assert.equal(sw.includes("jgtr-v36"), false);
 });
 
 test("Achse nennt die Uhrzeit und das Datum nur am Tageswechsel", () => {
