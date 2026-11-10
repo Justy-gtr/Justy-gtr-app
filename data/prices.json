@@ -8852,47 +8852,35 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Schluss +5,8 % auf 142,07 $ nach +8,6 % am Freitag (Yahoo Finance). Treiber: breite Erholung von Chips und KI-Werten nach dem Ausverkauf der Vorwoche – Nasdaq +2,7 %, Halbleiter-Index ~+7 %, Öl deutlich billiger (Reuters) –, dazu NASAs neue Mond-Lieferaufträge (CLPS 2, SpaceX unter acht Firmen) und Stifel mit Ziel 190 $. Bremse: Haltefrist-Ende am 8.12. Di früh: Nikkei schließt +2,87 % mit Chipwerten, SoftBank +13,9 % vor einem Quartalsverlust von 7 Mrd. $ (Nikkei, CNBC); Nasdaq-Futures etwa unverändert, Dax eröffnet +1,2 % nahe Rekord, CPI um 14:30 (CNBC, dpa-AFX).",
+      "why": "Mo Schluss +5,8 % auf 142,07 $, zweiter Plustag (Yahoo): Erholung von Chips und KI-Werten, NASA-Mondaufträge (CLPS 2). Nachts +0,3 % (Benzinga/Yahoo). Barclays nennt T-Mobile den „saubersten“ Partner für einen möglichen Kauf durch SpaceX. Musk: Grok 4.8 startet vorsichtig diese Woche, Grok 5 erst in 2–3 Monaten (X). Di: Nasdaq-Futures −0,1 %, CPI um 14:30 (Investing.com).",
       "whySources": [
         {
           "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Reuters/StreetInsider: Wall St steigt, Öl fällt, Nvidia schwach (9.11.)",
-          "url": "https://www.streetinsider.com/General+News/Wall+St+rallies+after+last+week%27s+AI+rout%3B+Nvidia+falls/27310155.html"
+          "title": "Yahoo/Benzinga: SPCX nachts höher, Stifel 190 $ (10.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spcx-stock-climbs-overnight-tesla-081607440.html"
         },
         {
-          "title": "Yahoo Finance: SpaceX, Rocket Lab steigen nach NASA-Mondaufträgen (9.11.)",
-          "url": "https://finance.yahoo.com/markets/article/spacex-rocket-lab-blast-higher-as-nasa-hands-out-10-billion-in-moon-base-awards-164320855.html"
+          "title": "Yahoo/Benzinga: Barclays zu T-Mobile (10.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spcx-stock-logs-2-day-042605532.html"
         },
         {
-          "title": "24/7 Wall St.: Rocket Lab +9 % vor Zahlen, SpaceX +6 % (9.11.)",
-          "url": "https://247wallst.com/investing/2026/11/09/rocket-lab-jumps-9-ahead-of-earnings-ast-spacemobile-surges-11-on-japan-satellite-venture-with-rakuten-spacex-rises-6/"
+          "title": "GuruFocus: SPCX +5,8 % nach NASA-Mondauftrag",
+          "url": "https://www.gurufocus.com/news/9185525/spacex-stocks-rise-580-after-winning-spot-in-nasas-10-billion-lunar-pool"
         },
         {
-          "title": "NASA: Aufträge für Mondbasis-Transporte (CLPS 2, 7.11.)",
-          "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/"
+          "title": "@elonmusk: Grok 4.8",
+          "url": "https://x.com/elonmusk/status/2120088070443655190"
         },
         {
-          "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
+          "title": "@elonmusk: Grok 5",
+          "url": "https://x.com/elonmusk/status/2120099798078656909"
         },
         {
-          "title": "Nikkei: Nikkei schließt bei 60.459 (+2,87 %) (10.11.)",
-          "url": "https://www.nikkei.com/article/DGXZQOFL100KF0Q6A111C2000000/"
-        },
-        {
-          "title": "CNBC: SoftBank mit 7 Mrd. $ Nettoverlust im Q2 (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html"
-        },
-        {
-          "title": "CNBC: US-Futures vor dem CPI (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
-        },
-        {
-          "title": "dpa-AFX/finanznachrichten: Dax eröffnet +1,2 % nahe Rekord (10.11.)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70083778-aktien-frankfurt-eroeffnung-dax-flirtet-mit-rekordhoch-016.htm"
+          "title": "Investing.com: Was die Märkte bewegt (10.11.)",
+          "url": "https://www.investing.com/news/economy-news/us-inflation-data-ahead-huang-scandal-fallout--whats-moving-markets-5014413"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -21124,47 +21112,27 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Schluss +5,5 % auf 378,05 $ (Yahoo Finance). Treiber: Musk will die Cybertruck-Fertigung in Texas Mitte 2027 beenden und die Fläche fürs Cybercab nutzen – Anleger lesen das als Fokus aufs Robotaxi (Investing.com). Dazu Robotaxi in San Antonio und die breite Erholung: Nicht-Basiskonsum und Industrie je etwa +4 %, Nasdaq +2,7 % (Reuters). Gegenwind: China-Verkäufe im Oktober auf Vier-Jahres-Tief (IBD). Nachts −0,15 % auf 377,49 $; Musk bestätigt „Project Crystal Sun“, eine Solarfabrik bei Houston für über 10 Mrd. $ (Benzinga). Jefferies senkt das Kursziel von 400 auf 375 $ (Hold) und die Gewinnschätzung 2026 um 23 % (dpa-AFX). Di früh: Nasdaq-Futures etwa unverändert, Dax eröffnet +1,2 % nahe Rekord, CPI um 14:30 (CNBC, dpa-AFX).",
+      "why": "Xetra kaum verändert (−0,25 %) nach Mo +5,5 % auf 378,05 $ (Robotaxi San Antonio, Cybertruck-Ende Mitte 2027 fürs Cybercab). Tesla nimmt keine Bestellungen mehr für den Cybertruck Premium AWD an und hebt den Cyberbeast um 7.500 $ auf 109.990 $ (Tesla Oracle). Jefferies senkt das Ziel von 400 auf 375 $ (Reuters). Musk: Cybercab werde die meisten Personenkilometer fahren (X).",
       "whySources": [
         {
           "title": "Yahoo Finance: TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "Reuters/StreetInsider: Wall St steigt, Öl fällt, Nvidia schwach (9.11.)",
-          "url": "https://www.streetinsider.com/General+News/Wall+St+rallies+after+last+week%27s+AI+rout%3B+Nvidia+falls/27310155.html"
+          "title": "Gotrade: TSLA +5,5 % am 9.11.",
+          "url": "https://www.heygotrade.com/en/news/tesla-tsla-stock-news-november-10-2026/"
         },
         {
-          "title": "Investing.com: Warum Tesla heute steigt",
-          "url": "https://www.investing.com/news/stock-market-news/why-is-tesla-stock-rallying-today-93CH-5012599"
+          "title": "Tesla Oracle: Cybertruck-Bestellstopp, Cyberbeast teurer (10.11.)",
+          "url": "https://www.teslaoracle.com/2026/11/10/tesla-stops-taking-orders-for-cybertruck-except-for-the-cyberbeast-increases-price-by-7500/"
         },
         {
-          "title": "TechCrunch: Cybertruck-Anzahlungen werden erstattet (9.11.)",
-          "url": "https://techcrunch.com/2026/11/09/musk-says-tesla-will-refund-some-cybertruck-deposits-defends-decision-to-end-production/"
+          "title": "Reuters/Longbridge: Analysten-Überblick, Jefferies 375 $ (10.11.)",
+          "url": "https://longbridge.com/en/news/304968777.md"
         },
         {
-          "title": "IBD: China-Verkäufe schwach, Robotaxi San Antonio (9.11.)",
-          "url": "https://www.investors.com/news/tesla-elon-musk-robotaxi-china/"
-        },
-        {
-          "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
-        },
-        {
-          "title": "Benzinga: Tesla „Project Crystal Sun“, Solarfabrik bei Houston (10.11.)",
-          "url": "https://www.benzinga.com/markets/tech/26/11/63078453/teslas-10-billion-project-crystal-sun-takes-shape-near-houston-as-elon-musk-eyes-tslas-largest-us-solar-factory-bet-so-far"
-        },
-        {
-          "title": "dpa-AFX/wallstreet-online: Jefferies senkt Tesla-Ziel auf 375 $ (10.11.)",
-          "url": "https://www.wallstreet-online.de/nachricht/21667512-jefferies-stuft-tesla-hold"
-        },
-        {
-          "title": "CNBC: US-Futures vor dem CPI (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
-        },
-        {
-          "title": "dpa-AFX/finanznachrichten: Dax eröffnet +1,2 % nahe Rekord (10.11.)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70083778-aktien-frankfurt-eroeffnung-dax-flirtet-mit-rekordhoch-016.htm"
+          "title": "@elonmusk: Cybercab passenger miles",
+          "url": "https://x.com/elonmusk/status/2120090152429404655"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -36303,23 +36271,23 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Schluss Mo +10,9 % auf 58,86 $ (Yahoo Finance). Nach den Q3-Zahlen nachbörslich −6,5 % auf 55,02 $ (Investing.com): Rekordumsatz 267,8 Mio. $ und Auftragsbestand ~3,6 Mrd. $, dazu acht Neutron-Aufträge über 515 Mio. $ zu einem Grundpreis von 70 statt 55 Mio. $ (Rocket Lab). Dagegen: Verlust je Aktie −0,12 $ statt −0,07 $, höhere Ausgaben, Neutron erst 2027. Piper Sandler senkt das Kursziel von 83 auf 58 $.",
+      "why": "Frankfurt −4,3 % auf 48,80 €, vorbörslich in den USA etwa −7 % (Seeking Alpha) nach Q3: Verlust je Aktie −0,12 $ statt −0,07 $ erwartet. Rekordumsatz 267,8 Mio. $, Auftragsbestand 3,57 Mrd. $, Q4-Umsatzziel 270–290 Mio. $ über Konsens, aber höherer EBITDA-Verlust (TipRanks). Neutron erst 2027; Piper Sandler senkt das Ziel von 83 auf 58 $.",
       "whySources": [
         {
           "title": "Yahoo Finance: RKLB",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "Investing.com: RKLB nachbörslich −6,5 % auf 55,02 $ (Call-Transkript)",
-          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-rocket-lab-beats-revenue-in-q3-2026-stock-swings-lower-after-hours-93CH-5013696"
+          "title": "Seeking Alpha: RKLB vorbörslich −7 % (10.11.)",
+          "url": "https://seekingalpha.com/news/4669543-rocket-lab-stock-slides-despite-record-backlog-upbeat-outlook"
+        },
+        {
+          "title": "TipRanks: RKLB nach gemischtem Q3",
+          "url": "http://www.tipranks.com/news/rocket-lab-stock-slips-after-mixed-q3-results"
         },
         {
           "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
           "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
-        },
-        {
-          "title": "Rocket Lab: Neutron-Aufträge über 515 Mio. $ (9.11.)",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation"
         },
         {
           "title": "Rallies: Piper Sandler senkt RKLB-Kursziel auf 58 $ (10.11.)",
@@ -47662,12 +47630,8 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Xetra 136,84 €, plus 7,71 % (Yahoo Finance 9MW.DE). Montag an der Nasdaq 154,60 $, etwa plus 9,5 %: Chipwerte erholten sich nach dem Ausverkauf der Vorwoche, der Philadelphia-Halbleiterindex legte zu (TokenPost). Dazu der geplante Aktientausch mit Lumentum über rund 115 Mrd. $ (MarketBeat). B. Riley setzte am 9.11. das Kursziel von 275 auf 250 $ herab. Nachhandel 138,69 €.",
+      "why": "Xetra +1,2 % nach Mo +9,5 % an der Nasdaq auf 154,60 $ mit der Chip-Erholung (MarketBeat). Bremse: Fusions-Arbitrageure sehen die Lumentum-Übernahme (115 Mrd. $, nur in Aktien) laut Bloomberg nur bei etwa 50 % Abschlusschance; Abschluss erst im 1. Halbjahr 2028 geplant (Marvell).",
       "whySources": [
-        {
-          "title": "Yahoo Finance: MRVL",
-          "url": "https://finance.yahoo.com/quote/MRVL/"
-        },
         {
           "title": "Yahoo Finance: 9MW.DE",
           "url": "https://finance.yahoo.com/quote/9MW.DE/"
@@ -47677,8 +47641,12 @@
           "url": "https://www.marketbeat.com/instant-alerts/price-marvell-technology-nasdaq-mrvl-stock-jumps-95-heres-why-2026-11-09/"
         },
         {
-          "title": "TokenPost: Halbleiterindex am 9.11.",
-          "url": "https://www.tokenpost.com/news/investing/52386"
+          "title": "Bloomberg Law: Marvell-Lumentum-Chance etwa 50 % (10.11.)",
+          "url": "https://news.bloomberglaw.com/mergers-and-acquisitions/marvell-lumentum-deal-odds-near-coin-flip-as-ai-trade-shakes-1"
+        },
+        {
+          "title": "Marvell: Zusammenschluss mit Lumentum (2.11.)",
+          "url": "https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",

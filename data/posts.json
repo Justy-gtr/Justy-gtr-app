@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-10T09:45:00+01:00",
+  "asOf": "2026-11-10T11:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -85,6 +85,125 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2120099798078656909",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T11:22:36+01:00",
+      "summaryDe": "Musk: Grok 4.8 reicht noch nicht an Anthropics Opus 5.5 heran. Grok 5 solle Opus 5.5 übertreffen, „vielleicht in zwei oder drei Monaten“. Damit rückt Grok 5 eher ins Frühjahr 2027 als vor Jahresende.",
+      "originalText": "Not as good. Opus 5.5 is a masterpiece. But Grok 5 should exceed Opus 5.5 and maybe that happens in 2 or 3 months, with continued acceleration thereafter.",
+      "url": "https://x.com/elonmusk/status/2120099798078656909",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "xAI"
+      ],
+      "sentiment": "neutral",
+      "important": true,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Grok 5 in 2 or 3 months",
+          "url": "https://x.com/elonmusk/status/2120099798078656909"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120097663794483601",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T11:14:07+01:00",
+      "summaryDe": "Musk: Der neue Trainings- und Inferenz-Code für Grok stammt aus der Starlink-Technik von SpaceX; SpaceX schreibe sogar eigene Zeitrechnung inklusive Schaltsekunden.",
+      "originalText": "At SpaceX, we write our own headers and calculate our own time (includes leap seconds). … The new Grok AI/SI training and inference stack is derived from incredible of work done by amazing engineers to create Starlink.",
+      "url": "https://x.com/elonmusk/status/2120097663794483601",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "xAI"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Grok stack derived from Starlink",
+          "url": "https://x.com/elonmusk/status/2120097663794483601"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120093699048870138",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T10:58:21+01:00",
+      "summaryDe": "Musk scherzt über Kritik an seinem Vermögen: Wer 1 Billion $ nicht mochte, werde 10 Billionen $ „wirklich hassen“. Kein Firmenbezug.",
+      "originalText": "Well, if they didn’t like $1T, they’re REALLY gonna hate $10T 😂",
+      "url": "https://x.com/elonmusk/status/2120093699048870138",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: $1T / $10T",
+          "url": "https://x.com/elonmusk/status/2120093699048870138"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120090152429404655",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T10:44:16+01:00",
+      "summaryDe": "Musk: Das Cybercab werde überall, wo es nicht gesetzlich verboten ist, den Großteil aller gefahrenen Personenkilometer übernehmen. Eine Behauptung ohne Zahlen oder Termin.",
+      "originalText": "Cybercab will do a majority of all passenger miles in any jurisdiction where it is not prohibited by law. Obvious to anyone with eyes and a brain.",
+      "url": "https://x.com/elonmusk/status/2120090152429404655",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Cybercab majority of passenger miles",
+          "url": "https://x.com/elonmusk/status/2120090152429404655"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120088070443655190",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T10:35:59+01:00",
+      "summaryDe": "Musk zu Grok 4.8: Das Vortraining ist fertig, der Code für RL und Inferenz wurde komplett neu in C/C++ geschrieben (statt JAX/SGLang). 4.8 steckt jetzt im RL-Training, die Testwerte steigen; ein vorsichtiger erster Start für Nutzer soll später diese Woche kommen.",
+      "originalText": "We have dumped JAX/SGLang and rewritten the entire RL and inference stack from scratch in C/C++ … Training (aka pre-training) is done. … Now, 4.8 is in RL and the evals are starting to climb. We will do a soft rollout to Bot users later this week and see how it goes.",
+      "url": "https://x.com/elonmusk/status/2120088070443655190",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "xAI"
+      ],
+      "sentiment": "positiv",
+      "important": true,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Grok 4.8 soft rollout later this week",
+          "url": "https://x.com/elonmusk/status/2120088070443655190"
+        }
+      ]
+    },
     {
       "id": "post-starlink-2120029978066813318",
       "account": "@Starlink",

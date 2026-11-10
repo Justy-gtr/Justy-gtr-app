@@ -539,7 +539,7 @@
       ],
       "probabilityPct": 95,
       "impact": "mittel",
-      "reasoning": "Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid.",
+      "reasoning": "Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid. Stand Di 11:30: S&P-Futures +0,2 %, Nasdaq-100-Futures −0,1 %, Brent um 90 $ (Investing.com).",
       "example": false,
       "sources": [
         {
@@ -557,6 +557,10 @@
         {
           "title": "Dow Jones/MarketScreener: Tagesvorschau Di 10.11. (Konsens CPI)",
           "url": "https://at.marketscreener.com/boerse-nachrichten/tagesvorschau-dienstag-10-november-ce785edad98df724"
+        },
+        {
+          "title": "Investing.com: Was die Märkte bewegen (10.11.)",
+          "url": "https://www.investing.com/news/economy-news/us-inflation-data-ahead-huang-scandal-fallout--whats-moving-markets-5014413"
         }
       ]
     },
@@ -688,7 +692,7 @@
       ],
       "probabilityPct": 65,
       "impact": "hoch",
-      "reasoning": "Stand Di 05:20: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt (SpaceWireDaily, SpaceX-Missionsseite). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX.",
+      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX.",
       "example": false,
       "sources": [
         {
@@ -797,11 +801,19 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 50,
+      "probabilityPct": 60,
       "impact": "mittel",
-      "reasoning": "Anthropic will unter dem Kürzel ANT an die Nasdaq. Laut The Information soll die Roadshow diese Woche starten, Ziel ist die Woche ab 16.11.; die FT berichtet von 80–100 Mrd. $ Erlös. Bestätigt hat Anthropic weder Termin noch Preisspanne. Nachts schickte die Firma Banken eine Unterlage mit 70–80 $ je Aktie und zog sie als „ungenau“ zurück (Reuters via Bloomberg Law). Investoren diskutieren laut Bloomberg 1,1–1,3 Billionen $ Bewertung statt früher bis zu 2 Billionen. Für SPCX zählt der Börsengang doppelt: als direkter KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. Musk lästerte nachts über Anthropic. 50 %, dass der Handel in dieser Woche beginnt: Zeitplan nur aus Berichten, Preisspanne fehlt noch.",
+      "reasoning": "Anthropic will unter dem Kürzel ANT an die Nasdaq. Laut Reuters sollte die Roadshow am Di 10.11. offiziell starten, die Preisfestsetzung folgt voraussichtlich nächste Woche (India Today/Reuters). Eine an Banken verschickte Unterlage nannte 70–80 $ je Aktie und bis zu 69,3 Mrd. $ Erlös, wurde aber als „ungenau“ zurückgezogen; dazu 26 Mrd. $ Privatplatzierung u. a. von Google, Nvidia, Microsoft. Bestätigt hat Anthropic weder Termin noch Preisspanne. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 60 statt 50 %, dass der Handel in der Woche ab 16.11. beginnt: Roadshow-Start spricht dafür, die fehlende Preisspanne dagegen.",
       "example": false,
       "sources": [
+        {
+          "title": "India Today/Reuters: Roadshow am 10.11., Preis nächste Woche",
+          "url": "https://www.indiatoday.in/business/story/anthropic-ipo-withdraws-filing-69-billion-fundraise-report-3036003-2026-11-10"
+        },
+        {
+          "title": "Investing.com: Was die Märkte bewegt (10.11.)",
+          "url": "https://www.investing.com/news/economy-news/us-inflation-data-ahead-huang-scandal-fallout--whats-moving-markets-5014413"
+        },
         {
           "title": "FinanceFeeds: Anthropic-Roadshow ohne Preisspanne (9.11.)",
           "url": "https://financefeeds.com/anthropic-ipo-date-roadshow-week-arrives-with-no-price-range-on-file/"
@@ -1340,11 +1352,15 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 15,
+      "probabilityPct": 7,
       "impact": "mittel",
-      "reasoning": "Musk sagte am 4. August, Grok 5 solle vor Ende 2026 kommen. Aktuell ist Grok 4.7 (21.09.) das neueste Modell, die offiziellen Release Notes nennen kein Grok 5, und laut Bericht stehen 4.8 und 4.9 davor in der Reihe. Prognosemärkte lagen zuletzt bei rund 12 % für eine Veröffentlichung bis 31.12. Ich liege mit 15 % ähnlich. Für SPCX zählt das, weil das SI-Segment im Q3 mit 7,56 Mrd. US-Dollar mehr als die Hälfte des Umsatzes brachte.",
+      "reasoning": "Musk sagte am 4. August, Grok 5 solle vor Ende 2026 kommen. Am 10.11. schrieb er auf X, Grok 5 solle Opus 5.5 übertreffen, „vielleicht in zwei oder drei Monaten“ – also eher Januar/Februar 2027. Erst kommt Grok 4.8, das noch im RL-Training steckt. Darum 7 statt 15 % für einen Start bis 31.12. Für SPCX zählt das, weil das SI-Segment im Q3 mit 7,56 Mrd. US-Dollar mehr als die Hälfte des Umsatzes brachte.",
       "example": false,
       "sources": [
+        {
+          "title": "@elonmusk: Grok 5 in 2 or 3 months (10.11.)",
+          "url": "https://x.com/elonmusk/status/2120099798078656909"
+        },
         {
           "title": "Unloc: Grok 5 – Stand und Aussagen zum Termin",
           "url": "https://unloc.tools/resource/grok-5"
@@ -1701,6 +1717,34 @@
         {
           "title": "Saxo Morning Brew 10.11.: Termine (CoreWeave)",
           "url": "https://www.home.saxo/en-ch/content/articles/morning-brew/morning-brew-november-10-2026-10112026"
+        }
+      ]
+    },
+    {
+      "id": "evt-grok48-rollout",
+      "title": "SpaceX SI: Grok 4.8 – vorsichtiger erster Start (Musk: „später diese Woche“)",
+      "date": "2026-11-12",
+      "end": "2026-11-15",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "produkt",
+      "company": "SpaceX (SI, ehemals xAI)",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 50,
+      "impact": "niedrig",
+      "reasoning": "Musk am 10.11. auf X: Vortraining fertig, Code neu in C/C++, Grok 4.8 steckt im RL-Training und soll später diese Woche vorsichtig für erste Nutzer starten. Er nennt es selbst „noch nicht unglaublich“. 50 %, weil Musks KI-Termine oft rutschen und RL-Ergebnisse erst kommen. Kurswirkung auf SPCX gering, eher ein Stimmungsfaktor.",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Grok 4.8 soft rollout later this week (10.11.)",
+          "url": "https://x.com/elonmusk/status/2120088070443655190"
+        },
+        {
+          "title": "SpaceX SI Docs: Release Notes",
+          "url": "https://docs.x.ai/developers/release-notes"
         }
       ]
     }
