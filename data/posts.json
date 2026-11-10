@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-10T17:58:00+01:00",
+  "asOf": "2026-11-10T20:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -85,6 +85,56 @@
     }
   },
   "posts": [
+    {
+      "id": "post-spacex-2120220290219208884",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-10T19:21:23+01:00",
+      "summaryDe": "SpaceX: Der Super-Heavy-Booster 22 steht auf dem Startplatz in Starbase. Er ist der erste V3-Booster, der zum Fang an den Turm zurückkehren soll, und wurde dort schon für letzte Fangtests genutzt, darunter ein Klemmtest in Fanghöhe. Ein weiterer Schritt Richtung Flight 15 am Fr 13.11.; die FAA-Zulassung steht laut Missionsseite noch aus.",
+      "originalText": "Super Heavy moved to the launch pad at Starbase. Booster 22 is the first Super Heavy V3 booster planned to return to the launch site for catch and was used for final catch testing upon arrival, including a suspended squeeze test at catch height",
+      "url": "https://x.com/SpaceX/status/2120220290219208884",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X",
+          "url": "https://x.com/SpaceX/status/2120220290219208884"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15 (Missionsseite)",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
+        }
+      ]
+    },
+    {
+      "id": "post-starlink-2120206875581186293",
+      "account": "@Starlink",
+      "displayName": "Starlink",
+      "postedAt": "2026-11-10T18:28:05+01:00",
+      "summaryDe": "Starlink stellt die Mini 2 vor, die nächste tragbare Schüssel: bis zu 4,5 Stunden Netz mit einem wechselbaren Akku oder Strom über USB-C, eingebautes WLAN, online in 60 Sekunden. Vorbestellungen sind offen. Neues Endgerät für das Privatkundengeschäft, Preis im Post nicht genannt.",
+      "originalText": "Introducing Mini 2, the next-generation portable Starlink. Get up to 4.5 hours of connectivity on a single charge with the quick-swap battery, or plug in with USB-C. With built-in Wi-Fi, all you need is a clear view of the sky to get online in 60 seconds. Preorders are now open",
+      "url": "https://x.com/Starlink/status/2120206875581186293",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Starlink auf X",
+          "url": "https://x.com/Starlink/status/2120206875581186293"
+        }
+      ]
+    },
     {
       "id": "post-starlink-2120182681229246875",
       "account": "@Starlink",

@@ -9965,67 +9965,39 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Mo Schluss +5,8 % auf 142,07 $ (Yahoo): Erholung von Chips und KI-Werten, NASA-Mondaufträge, Barclays nennt T-Mobile den „saubersten“ Partner für eine mögliche Übernahme durch SpaceX. Di nach der heißen Oktober-Inflation (+0,4 %, Kern +0,3 %, BLS) vorbörslich bis 137,63 $ (−3,1 %), nach der Eröffnung kurz bei 144,34 $ (+1,6 %). Am Mittag New York wieder abgegeben: um 17:58 bei 141,34 $ (−0,5 %), Nasdaq −1,3 % (Yahoo). Die 10-jährige US-Rendite stieg auf 5,0 % (CNBC), Dallas-Fed-Chefin Logan fordert mindestens zwei weitere Zinserhöhungen (Investing.com). Rivale Anthropic startet die Roadshow, Handel ab 19.11. erwartet (CNBC).",
+      "why": "Mo Schluss +5,8 % auf 142,07 $ (NASA-Mondaufträge, Erholung der KI-Werte). Di nach der heißen Oktober-Inflation (+0,4 %, Kern +0,3 %, BLS) vorbörslich bis 137,63 $, kurz bis 144,89 $, um 19:57 bei 140,57 $ (−1,1 %, Yahoo). Der Nasdaq verliert 1,1 %, Nvidia 5,8 % nach dem China-Bericht von The Information; die 10-jährige US-Rendite steht bei 5,0 % (Yahoo, CNBC). Eine Dezember-Zinserhöhung ist laut Handelsblatt voll eingepreist, Logan will mindestens zwei weitere (Investing.com). Für SpaceX selbst: Booster 22 steht für Flight 15 (Fr 13.11.) auf dem Startplatz (@SpaceX), Starlink öffnet Vorbestellungen für die Mini 2.",
       "whySources": [
-        {
-          "title": "Investing.com: Fed-Präsidentin Logan fordert mindestens zwei weitere Erhöhungen (10.11.)",
-          "url": "https://www.investing.com/news/economy-news/feds-logan-calls-for-two-more-rate-hikes-to-combat-inflation-5016213"
-        },
-        {
-          "title": "CNBC: 10-jährige Rendite zurück bei 5 % nach CPI und Waller (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html"
-        },
         {
           "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Yahoo/Benzinga: SPCX nachts höher, Stifel 190 $ (10.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spcx-stock-climbs-overnight-tesla-081607440.html"
-        },
-        {
-          "title": "Yahoo/Benzinga: Barclays zu T-Mobile (10.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spcx-stock-logs-2-day-042605532.html"
-        },
-        {
-          "title": "GuruFocus: SPCX +5,8 % nach NASA-Mondauftrag",
-          "url": "https://www.gurufocus.com/news/9185525/spacex-stocks-rise-580-after-winning-spot-in-nasas-10-billion-lunar-pool"
-        },
-        {
-          "title": "@elonmusk: Grok 4.8",
-          "url": "https://x.com/elonmusk/status/2120088070443655190"
-        },
-        {
-          "title": "@elonmusk: Grok 5",
-          "url": "https://x.com/elonmusk/status/2120099798078656909"
-        },
-        {
-          "title": "Investing.com: Was die Märkte bewegt (10.11.)",
-          "url": "https://www.investing.com/news/economy-news/us-inflation-data-ahead-huang-scandal-fallout--whats-moving-markets-5014413"
-        },
-        {
-          "title": "Yahoo/Stocktwits: SPCX vorbörslich −0,5 % (10.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-mixed-investors-102051723.html"
+          "title": "Handelsblatt: Inflationsdaten belasten Wall Street (10.11.)",
+          "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-inflationsdaten-belasten-wall-street-nvidia-aktien-verlieren/100268787.html"
         },
         {
           "title": "BLS: Verbraucherpreise Oktober 2026",
           "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
         },
         {
-          "title": "CNBC: Anthropic-Preisspanne, Handel ab 19.11.",
-          "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+          "title": "CNBC: 10-jährige Rendite zurück bei 5 % nach CPI und Waller (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html"
         },
         {
-          "title": "ChartExchange: SPCX vorbörslich 137,63 $ (10.11., 8:54 ET)",
-          "url": "https://chartexchange.com/symbol/nasdaq-spcx/historical/"
+          "title": "Investing.com: Fed-Präsidentin Logan fordert mindestens zwei weitere Erhöhungen (10.11.)",
+          "url": "https://www.investing.com/news/economy-news/feds-logan-calls-for-two-more-rate-hikes-to-combat-inflation-5016213"
         },
         {
-          "title": "CNBC: Futures fallen nach CPI, Waller (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
+          "title": "@SpaceX: Booster 22 auf dem Startplatz (10.11.)",
+          "url": "https://x.com/SpaceX/status/2120220290219208884"
         },
         {
-          "title": "CNBC: S&P leicht schwächer, Nasdaq +0,1 % nach CPI (10.11., 10:04 ET)",
-          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
+          "title": "@Starlink: Mini 2, Vorbestellung offen (10.11.)",
+          "url": "https://x.com/Starlink/status/2120206875581186293"
+        },
+        {
+          "title": "Benzinga: Space Stock Tracker (10.11.)",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63097812/space-stock-tracker-moon-contracts-earnings-and-midterms-rock-the-sector"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -24328,39 +24300,27 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Nach Mo +5,5 % auf 378,05 $ (Robotaxi San Antonio, Cybertruck-Ende Mitte 2027 fürs Cybercab) leicht schwächer: um 17:58 an der Nasdaq bei 375,25 $ (−0,7 %), Nasdaq −1,3 % nach heißer Inflation und 10-jähriger Rendite bei 5,0 % (Yahoo, CNBC). Belastung aus China: Im Oktober gingen laut CPCA nur 8.817 Teslas aus Shanghai an chinesische Käufer, −66 % zum Vorjahr und der schwächste Monat seit Juli 2022; der Export stieg auf 59.012 (Electrek). Jefferies senkt das Ziel von 400 auf 375 $ (Reuters).",
+      "why": "Nach Mo +5,5 % auf 378,05 $ (Robotaxi San Antonio, Cybertruck-Ende Mitte 2027 fürs Cybercab) fast unverändert: um 19:57 bei 377,36 $ (−0,2 %, Yahoo), obwohl der Nasdaq 1,1 % verliert. Belastung aus China: Im Oktober gingen laut CPCA nur 8.817 Teslas aus Shanghai an chinesische Käufer, −66 % zum Vorjahr; der Export stieg auf 59.012 (Electrek). Jefferies senkt das Ziel von 400 auf 375 $ und die Gewinnschätzung 2026 um 23 % (finanzen.net). Stütze: Tesla nimmt außer für den Cyberbeast keine Cybertruck-Bestellungen mehr an und hob dessen Preis um 7.500 $ (Tesla Oracle).",
       "whySources": [
         {
-          "title": "CNBC: 10-jährige Rendite zurück bei 5 % nach CPI und Waller (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html"
+          "title": "Yahoo Finance: TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
           "title": "Electrek: Teslas China-Inlandsverkäufe im Oktober −66 % (CPCA, 10.11.)",
           "url": "https://electrek.co/2026/11/10/tesla-china-sales-crash-october-2026-lowest-four-years/"
         },
         {
-          "title": "Yahoo Finance: TSLA",
-          "url": "https://finance.yahoo.com/quote/TSLA/"
-        },
-        {
-          "title": "Gotrade: TSLA +5,5 % am 9.11.",
-          "url": "https://www.heygotrade.com/en/news/tesla-tsla-stock-news-november-10-2026/"
+          "title": "finanzen.net: Jefferies Tesla Hold, Ziel 375 $ (10.11.)",
+          "url": "https://www.finanzen.net/analyse/tesla_hold-jefferies_&_company_inc._1119641"
         },
         {
           "title": "Tesla Oracle: Cybertruck-Bestellstopp, Cyberbeast teurer (10.11.)",
           "url": "https://www.teslaoracle.com/2026/11/10/tesla-stops-taking-orders-for-cybertruck-except-for-the-cyberbeast-increases-price-by-7500/"
         },
         {
-          "title": "Reuters/Longbridge: Analysten-Überblick, Jefferies 375 $ (10.11.)",
-          "url": "https://longbridge.com/en/news/304968777.md"
-        },
-        {
-          "title": "BLS: Verbraucherpreise Oktober 2026",
-          "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
-        },
-        {
-          "title": "CNBC: S&P leicht schwächer, Nasdaq +0,1 % nach CPI (10.11., 10:04 ET)",
-          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
+          "title": "Yahoo/GuruFocus: Tesla nach Robotaxi-Start leichter (10.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-stocks-move-lower-day-174917522.html"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -40647,47 +40607,39 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Nach Q3 vorbörslich bis −10,2 % auf 52,87 $ (Benzinga), nach der US-Eröffnung erholt und trotz schwachem Nasdaq (−1,3 %) im Plus: um 17:58 bei 59,49 $ (+1,1 %, Yahoo). Der Frankfurter Euro-Kurs von 47,65 € (−6,6 %) stammt noch vom Vormittag. Q3: Verlust je Aktie −0,12 $ statt −0,06 $ erwartet, Rekordumsatz 267,8 Mio. $ (+73 %), Auftragsbestand 3,57 Mrd. $, Q4-Umsatzziel 270–290 Mio. $ über Konsens. Neutron frühestens 2027 (Quartz). Kursziele: Piper Sandler 83 → 58 $, Barclays 85 → 82 $, Craig-Hallum 120 → 100 $, Cantor 122 → 111 $, KeyBanc bleibt bei 100 $ (Benzinga, TradingView, The Fly).",
+      "why": "Nach Q3 vorbörslich bis −10,2 % auf 52,87 $ (Benzinga), Tagestief 54,96 $, dann gedreht: um 19:57 bei 59,99 $ (+1,9 %, Yahoo), gegen einen Nasdaq mit −1,1 %. Q3: Verlust je Aktie −0,12 $ statt −0,06 $ erwartet, Rekordumsatz 267,8 Mio. $ (+73 %), Auftragsbestand 3,57 Mrd. $, Q4-Umsatzziel 270–290 Mio. $ über Konsens. Neutron frühestens 2027 (Quartz). Kursziele: Piper Sandler 83 → 58 $, Barclays 85 → 82 $, Craig-Hallum 120 → 100 $, Cantor 122 → 111 $, KeyBanc bleibt bei 100 $, Clear Street hebt auf 110 $ (Benzinga, TradingView, Schaeffer's). Heute 23:00 legt Konkurrent Firefly Zahlen vor.",
       "whySources": [
-        {
-          "title": "TradingView: Barclays senkt RKLB-Ziel auf 82 $ (10.11.)",
-          "url": "https://www.tradingview.com/news/tradingview:f36aba77eb1fb:0-barclays-maintains-rocket-lab-at-overweight-lowers-price-target-to-82-from-85/"
-        },
-        {
-          "title": "TipRanks/The Fly: Craig-Hallum senkt RKLB-Ziel auf 100 $ (10.11.)",
-          "url": "https://www.tipranks.com/news/the-fly/rocket-lab-price-target-lowered-to-100-from-120-at-craig-hallum-thefly-news"
-        },
         {
           "title": "Yahoo Finance: RKLB",
           "url": "https://finance.yahoo.com/quote/RKLB/"
-        },
-        {
-          "title": "Yahoo/Stocktwits: RKLB vorbörslich −7,3 % (10.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-mixed-investors-102051723.html"
-        },
-        {
-          "title": "Seeking Alpha: RKLB vorbörslich −7 % (10.11.)",
-          "url": "https://seekingalpha.com/news/4669543-rocket-lab-stock-slides-despite-record-backlog-upbeat-outlook"
-        },
-        {
-          "title": "TipRanks: RKLB nach gemischtem Q3",
-          "url": "http://www.tipranks.com/news/rocket-lab-stock-slips-after-mixed-q3-results"
-        },
-        {
-          "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
-        },
-        {
-          "title": "Rallies: Piper Sandler senkt RKLB-Kursziel auf 58 $ (10.11.)",
-          "url": "https://rallies.ai/news/rocket-lab-corp-piper-sandler-cuts-target-price-to-58-from-83-009ff33228067663"
         },
         {
           "title": "Benzinga: Analysten nach RKLB-Q3, vorbörslich −10,2 % (10.11.)",
           "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/11/63087884/these-analysts-revise-their-forecasts-on-rocket-lab-following-q3-results"
         },
         {
+          "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+        },
+        {
           "title": "Quartz: RKLB Q3 – Umsatz +73 %, Verlust größer (10.11.)",
           "url": "https://qz.com/rocket-lab-stock-slips-revenue-beat-wider-loss-111026"
+        },
+        {
+          "title": "TradingView: Barclays senkt RKLB-Ziel auf 82 $ (10.11.)",
+          "url": "https://www.tradingview.com/news/tradingview:f36aba77eb1fb:0-barclays-maintains-rocket-lab-at-overweight-lowers-price-target-to-82-from-85/"
+        },
+        {
+          "title": "TradingView: Cantor senkt RKLB-Ziel auf 111 $ (10.11.)",
+          "url": "https://www.tradingview.com/news/tradingview:99ec063b375ee:0-cantor-fitzgerald-maintains-rocket-lab-at-overweight-lowers-price-target-to-111-from-122/"
+        },
+        {
+          "title": "TipRanks/The Fly: Craig-Hallum senkt RKLB-Ziel auf 100 $ (10.11.)",
+          "url": "https://www.tipranks.com/news/the-fly/rocket-lab-price-target-lowered-to-100-from-120-at-craig-hallum-thefly-news"
+        },
+        {
+          "title": "Schaeffer's: RKLB im Plus, Clear Street Ziel 110 $ (10.11.)",
+          "url": "https://www.schaeffersresearch.com/content/news/2026/11/10/rocket-lab-stock-up-on-record-revenue-bear-notes"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -53837,11 +53789,19 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Nach Mo +9,5 % an der Nasdaq auf 154,60 $ (MarketBeat) vorbörslich rund −5 % nach der heißen Oktober-Inflation, nach der Eröffnung kurz +1,4 %. Am Mittag New York wieder im Minus: um 17:58 bei 151,41 $ (−2,1 %, Yahoo), Nasdaq −1,3 %, 10-jährige US-Rendite 5,0 % (CNBC). Nvidia fällt um 6,6 % auf 166,83 $: The Information berichtet, über ein Netzwerk um die mutmaßliche Spionin Alice Huang seien seit 2023 mindestens 7,5 Mrd. $ Nvidia-Hardware an chinesische Firmen gegangen (Yahoo). Bremse bleibt die Lumentum-Übernahme (115 Mrd. $, nur in Aktien): Arbitrageure sehen laut Bloomberg nur etwa 50 % Abschlusschance. Zahlen am 1.12. (Benzinga).",
+      "why": "Nach Mo +9,5 % auf 154,60 $ (MarketBeat) vorbörslich rund −5 % nach der heißen Oktober-Inflation, Tagesspanne 147,79–158,59 $, um 19:57 bei 152,89 $ (−1,1 %, Yahoo). Der Nasdaq verliert 1,1 %, die 10-jährige US-Rendite steht bei 5,0 % (CNBC). Nvidia fällt um 5,8 % auf 168,39 $ (Yahoo) und ist nicht mehr das zweitwertvollste Unternehmen (Economic Times): The Information berichtet, über ein Netzwerk um die mutmaßliche Spionin Alice Huang seien seit 2023 mindestens 7,5 Mrd. $ Nvidia-Hardware an chinesische Firmen gegangen. Bremse bleibt die Lumentum-Übernahme (115 Mrd. $, nur in Aktien): Arbitrageure sehen laut Bloomberg nur etwa 50 % Abschlusschance. Zahlen am 1.12. (Benzinga).",
       "whySources": [
         {
           "title": "Yahoo Finance: MRVL (Kurs 17:58)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
+        },
+        {
+          "title": "Handelsblatt: Inflationsdaten belasten Wall Street (10.11.)",
+          "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-inflationsdaten-belasten-wall-street-nvidia-aktien-verlieren/100268787.html"
+        },
+        {
+          "title": "Yahoo Finance: NVDA",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
           "title": "CNBC: 10-jährige Rendite zurück bei 5 % nach CPI und Waller (10.11.)",
@@ -53852,10 +53812,6 @@
           "url": "https://finance.yahoo.com/markets/article/nvidia-stock-drops-3-extending-decline-on-report-alleged-chinese-spy-linked-to-nvidia-ceo-aided-75-billion-in-china-chip-shipments-152654028.html"
         },
         {
-          "title": "Yahoo Finance: 9MW.DE",
-          "url": "https://finance.yahoo.com/quote/9MW.DE/"
-        },
-        {
           "title": "MarketBeat: MRVL am 9.11. plus 9,5 %",
           "url": "https://www.marketbeat.com/instant-alerts/price-marvell-technology-nasdaq-mrvl-stock-jumps-95-heres-why-2026-11-09/"
         },
@@ -53864,20 +53820,12 @@
           "url": "https://news.bloomberglaw.com/mergers-and-acquisitions/marvell-lumentum-deal-odds-near-coin-flip-as-ai-trade-shakes-1"
         },
         {
-          "title": "Marvell: Zusammenschluss mit Lumentum (2.11.)",
-          "url": "https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity"
-        },
-        {
           "title": "Benzinga: Lumentum-Deal 50:50, Zahlen 1.12. (10.11.)",
           "url": "https://www.benzinga.com/markets/tech/26/11/63080723/marvells-115-billion-lumentum-deal-faces-50-50-odds-report"
         },
         {
-          "title": "CNBC: S&P leicht schwächer, Nasdaq +0,1 % nach CPI (10.11., 10:04 ET)",
-          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
-        },
-        {
-          "title": "CNBC: Nvidia fällt erneut nach Spionage-Affäre (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html"
+          "title": "Economic Times: Nasdaq −1,4 %, Nvidia −6 % (Live-Ticker 10.11.)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-anthropic-ipo-nvidia-intel-marvell-tech-ai-chip-stocks-inflation-fed-rate-hike-treasury-bond-yield-news-10th-november-2026/liveblog/135712173.cms"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",
