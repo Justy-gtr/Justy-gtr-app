@@ -1,53 +1,66 @@
 {
   "example": false,
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "title": "Morgen-Briefing",
   "greeting": "Guten Morgen, Justy.",
-  "summary": "Heute ist ein voller Montag. Um 11:51 feuert die zweite ESCAPADE-Sonde (Gold) ihr Triebwerk Richtung Mars. Zur ersten Sonde (Blue) gibt es noch keine offizielle Bestätigung. Um 18:00 trifft Trump den Premier von Katar wegen Iran — das kann Öl und Börsenstimmung bewegen. Um 23:00 legt Rocket Lab seine Zahlen vor. Über Nacht keine wichtigen Posts.",
+  "summary": "Gestern war ein starker Erholungstag: Tesla schloss 5,5 % höher, SpaceX 5,8 %, Rocket Lab sogar 10,9 % – getragen von Chips und KI, Nasdaq +2,7 %. Nach den Zahlen fiel Rocket Lab nachbörslich aber um 6,5 % auf rund 55 $: Rekordumsatz und acht Neutron-Aufträge, doch der Verlust je Aktie war höher als erwartet, und Piper Sandler senkte das Kursziel auf 58 $. Über Nacht legte Tokio nach, der Nikkei stieg um fast 3 % über 60.000, SoftBank um 14 %. Heute um 07:30 kommen Infineon und SoftBank mit Zahlen, um 14:30 die US-Inflation – sie entscheidet, ob die Fed im Dezember erhöht. US-Futures liegen leicht im Plus. Musk postete nachts vor allem Politik, nichts Wichtiges.",
   "bullets": [
-    "11:51 ESCAPADE Gold: Mars-Manöver (85 %). Blue weiter unbestätigt.",
-    "18:00 Trump trifft Katars Premier: Iran-Waffenruhe im Gespräch.",
-    "23:00 Rocket Lab: Zahlen fürs 3. Quartal.",
-    "Di 04:03 SpaceX USSF-627 (85 %, Tagesfrage). Di 14:30 US-Inflation.",
-    "US-Futures leicht im Plus, Öl etwas schwächer. Keine wichtigen Posts."
+    "Mo-Schluss: TSLA +5,5 % (378 $), SPCX +5,8 % (142 $), RKLB +10,9 % (58,86 $), dann nachbörslich −6,5 %.",
+    "Rocket Lab Q3: Rekordumsatz 267,8 Mio. $, acht Neutron-Aufträge über 515 Mio. $, aber EPS −0,12 $. Piper Sandler: Ziel 83 → 58 $.",
+    "Tokio: Nikkei +2,9 % bei rund 60.500, SoftBank +14 %, Tokyo Electron +5,7 %.",
+    "07:30 Infineon-Jahreszahlen und SoftBank-Zahlen, 08:00 Hensoldt-Kapitalmarkttag.",
+    "14:30 US-Inflation (Konsens +0,3 % zum Vormonat). FedWatch: 84 % für eine Erhöhung im Dezember.",
+    "Mi 03:49 SpaceX USSF-627 (80 %). Fr 23:45 Starship Flight 15, FAA-Lizenz fehlt noch (65 %)."
   ],
   "audioUrl": null,
   "sources": [
     {
-      "title": "NASA: ESCAPADE Twin Spacecraft to Mars",
-      "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+      "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
+      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
     },
     {
-      "title": "NASA ESCAPADE Blog-Archiv (kein Post-Burn-Update)",
-      "url": "https://science.nasa.gov/blogs/escapade/"
+      "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
+      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
     },
     {
-      "title": "Axios: Trump trifft Katars Premier zu Iran (9.11.)",
-      "url": "https://www.axios.com/2026/11/09/trump-qatar-prime-minister-iran-war-mediation"
+      "title": "StockAnalysis: RKLB Schluss und Nachbörse",
+      "url": "https://stockanalysis.com/stocks/rklb/forecast/"
     },
     {
-      "title": "FXStreet/Reuters: Treffen 17:00 GMT im Weißen Haus",
-      "url": "https://www.fxstreet.com/news/us-president-donald-trump-will-meet-qatars-prime-minister-on-monday-202611090430"
+      "title": "Rallies: Piper Sandler senkt RKLB-Ziel auf 58 $",
+      "url": "https://rallies.ai/news/rocket-lab-corp-piper-sandler-cuts-target-price-to-58-from-83-009ff33228067663"
     },
     {
-      "title": "Rocket Lab IR: Q3-2026-Call",
-      "url": "https://investors.rocketlabcorp.com/events/event-details/third-quarter-2026-financial-results-update-and-conference-call"
+      "title": "Economic Times/Reuters: Nikkei fast +3 %, SoftBank +14 % (10.11.)",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/japans-nikkei-surges-nearly-3-as-ai-stocks-extend-rebound-softbank-jumps-14/articleshow/135697829.cms"
     },
     {
-      "title": "SpaceX: USSF-627 Mission",
+      "title": "Yahoo Finance: Nikkei 225",
+      "url": "https://finance.yahoo.com/quote/%255EN225/history/"
+    },
+    {
+      "title": "SoftBank Group: Earnings Q2 FY2026",
+      "url": "https://group.softbank/en/event/earnings_2026q2"
+    },
+    {
+      "title": "Dow Jones/MarketScreener: Tagesvorschau Di 10.11.",
+      "url": "https://at.marketscreener.com/boerse-nachrichten/tagesvorschau-dienstag-10-november-ce785edad98df724"
+    },
+    {
+      "title": "SpaceX: USSF-627",
       "url": "https://www.spacex.com/launches/ussf627"
     },
     {
-      "title": "BLS: CPI schedule",
-      "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+      "title": "SpaceX: Starship Flight 15",
+      "url": "https://www.spacex.com/launches/starship-flight-15"
     },
     {
-      "title": "Yahoo Finance: US-Futures erholen sich (9.11.)",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-034814953.html"
+      "title": "Yahoo Finance: TSLA",
+      "url": "https://finance.yahoo.com/quote/TSLA/"
     },
     {
-      "title": "CNBC: Öl fällt nach Trump-Aussage (9.11.)",
-      "url": "https://www.cnbc.com/2026/11/09/oil-falls-as-trump-says-new-iran-attacks-unlikely.html"
+      "title": "Yahoo Finance: SPCX",
+      "url": "https://finance.yahoo.com/quote/SPCX/"
     }
   ]
 }

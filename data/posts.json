@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-10T05:30:00+01:00",
+  "asOf": "2026-11-10T06:45:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -85,6 +85,33 @@
     }
   },
   "posts": [
+    {
+      "id": "post-rocketlab-2120005735354667235",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-10T05:08:49+01:00",
+      "summaryDe": "Rocket Lab nennt das dritte Quartal „phänomenal“ bei neuen Startaufträgen. Gemeint sind vor allem die acht Neutron-Aufträge über 515 Mio. $ aus dem Zahlenbericht. Kein neuer Fakt, eher Werbung nach dem nachbörslichen Minus.",
+      "originalText": "A phenomenal quarter for new launch bookings",
+      "url": "https://x.com/RocketLab/status/2120005735354667235",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X",
+          "url": "https://x.com/RocketLab/status/2120005735354667235"
+        },
+        {
+          "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2119996001490768028",
       "account": "@elonmusk",
