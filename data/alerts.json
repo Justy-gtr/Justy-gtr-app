@@ -244,37 +244,11 @@
       ]
     },
     {
-      "id": "SPCX-2026-11-10",
-      "symbol": "SPCX",
-      "name": "SpaceX",
-      "changePct": 5.92,
-      "priceEur": 126.99,
-      "thresholdPct": 2,
-      "direction": "up",
-      "timestamp": "2026-11-09T23:16:20.872Z",
-      "notified": true,
-      "example": false,
-      "sources": [
-        {
-          "title": "Alpaca Markets IEX SPCX",
-          "url": "https://data.alpaca.markets/v2/stocks/SPCX/snapshot?feed=iex"
-        },
-        {
-          "title": "Yahoo Finance SPCX",
-          "url": "https://finance.yahoo.com/quote/SPCX"
-        },
-        {
-          "title": "Yahoo Finance EURUSD=X",
-          "url": "https://finance.yahoo.com/quote/EURUSD=X"
-        }
-      ]
-    },
-    {
       "id": "RKLB-2026-11-10",
       "symbol": "RKLB",
       "name": "Rocket Lab",
-      "changePct": -3.82,
-      "priceEur": 49.05,
+      "changePct": -6.57,
+      "priceEur": 47.65,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-10T08:54:47.467Z",
@@ -303,8 +277,8 @@
       "id": "MRVL-2026-11-10",
       "symbol": "MRVL",
       "name": "Marvell Technology",
-      "changePct": -3.8,
-      "priceEur": 131.64,
+      "changePct": -2.56,
+      "priceEur": 133.34,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-10T13:52:50.586Z",
