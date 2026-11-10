@@ -4,6 +4,7 @@ import { sparkline } from "./chart.js";
 import { renderDeutschland } from "./germany-view.js";
 import { knockOut, readKnockStore } from "./knockout.js";
 import { renderMoodLamp } from "./sentiment.js";
+import { SCHEDULES, formatNextUpdate, nextUpdate, sourceUpdates } from "./update-schedule.js";
 import {
   esc,
   formatDay,
@@ -738,7 +739,7 @@ export function renderChartsPage(data, ui) {
       <div class="chart-wrap instrument-chart">
         <p class="scrub"></p>
         <div class="chart-stage">
-          ${renderMoodLamp(data?.sentiment, ticker?.symbol, new Date(), "analyse")}
+          ${renderMoodLamp(data?.sentiment, ticker?.symbol, ui?.now || new Date(), "analyse")}
           <canvas class="chart chart-price" data-chart="price" data-symbol="${esc(ticker?.symbol || "")}" aria-label="Kurslinie in Euro. Ziehen zeigt Datum, Uhrzeit, Kurs und Veränderung."></canvas>
         </div>
       </div>
@@ -750,7 +751,7 @@ export function renderChartsPage(data, ui) {
   `;
 }
 
-function renderMehr() {
+export function renderMehr() {
   const items = [
     ["open-moonshots", "Moonshots", "Kandidaten mit Kurstreibern"],
     ["open-insiders", "Insider-Käufe", "Wer kauft eigene Aktien"],
@@ -768,12 +769,58 @@ function renderMehr() {
   ];
   return `
     <header class="page-head">
-      <p class="eyebrow">Mehr</p>
+      <div class="row between">
+        <p class="eyebrow">Mehr</p>
+        <button type="button" class="updates-btn" data-action="open-updates">Aktualisierungen</button>
+      </div>
       <h2>Werkzeuge</h2>
     </header>
     <div class="menu">${items.map(([action, title, text]) => `
       <button type="button" class="card linkish" data-action="${action}"><strong>${esc(title)}</strong><span>${esc(text)}</span></button>`).join("")}</div>
   `;
+}
+
+function updateCard(rows, { plan = false, stack = false } = {}) {
+  return `<div class="card update-card">${rows.map((row) => plan ? `
+    <div class="plan-row">
+      <strong>${esc(row.label)}</strong>
+      ${row.lines.map((line) => `<p>${esc(line)}</p>`).join("")}
+    </div>` : `
+    <div class="update-row${stack ? " is-stack" : ""}">
+      <strong>${esc(row.label)}</strong>
+      <span>${esc(row.text)}</span>
+    </div>`).join("")}</div>`;
+}
+
+function updatesDetail(data, now) {
+  const when = now instanceof Date || typeof now === "string" || typeof now === "number" ? now : new Date();
+  const stamps = sourceUpdates(data, when);
+  const upcoming = SCHEDULES.map((item) => ({
+    label: item.label,
+    text: formatNextUpdate(nextUpdate(item.id, when), when)
+  }));
+  const last = stamps.length
+    ? updateCard(stamps)
+    : `<p class="empty">Noch kein Zeitstempel in den Dateien.</p>`;
+  return {
+    kind: "updates",
+    title: "Aktualisierungen",
+    html: `
+      <section aria-label="Zuletzt aktualisiert">
+        <p class="kicker">Zuletzt aktualisiert</p>
+        ${last}
+      </section>
+      <section aria-label="Nächste Aktualisierung">
+        <p class="kicker">Nächste Aktualisierung</p>
+        ${updateCard(upcoming, { stack: true })}
+      </section>
+      <section aria-label="Fahrplan">
+        <p class="kicker">Fahrplan</p>
+        ${updateCard(SCHEDULES, { plan: true })}
+      </section>
+      <p class="muted update-note">Zeiten können ein paar Minuten abweichen. Die App lädt alle Daten neu beim Öffnen, beim Ziehen nach unten und nach mehr als zwei Minuten im Hintergrund. Auf Heute und Analyse kommen die Kurse etwa einmal pro Minute, solange ein neuer Stand anstehen kann.</p>
+    `
+  };
 }
 
 export function detailContent(action, dataset, ctx) {
@@ -798,6 +845,7 @@ export function detailContent(action, dataset, ctx) {
   if (action === "open-weekly") return weeklyDetail(data);
   if (action === "open-alerts") return alertsDetail(data);
   if (action === "open-moonshots") return moonshotsDetail(data);
+  if (action === "open-updates") return updatesDetail(data, ctx.now || ui?.now);
   return null;
 }
 

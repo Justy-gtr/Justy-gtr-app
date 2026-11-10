@@ -188,7 +188,7 @@ test("Charts und Analyse setzen die Lampe links über die Fläche, die Lesezeile
       { symbol: "TSLA", name: "Tesla", priceEur: 20, history: { intraday: [], "1M": [] } }
     ]
   };
-  const charts = renderChartsPage({ prices, sentiment }, { chartSymbol: "SPCX", chartRange: "1T", langfrist: false, live: false });
+  const charts = renderChartsPage({ prices, sentiment }, { chartSymbol: "SPCX", chartRange: "1T", langfrist: false, live: false, now });
   assert.match(charts, /<p class="scrub"><\/p>\s*<div class="chart-stage">\s*<div class="mood-lamp is-gut/);
   assert.match(charts, /Stimmung · 14:35/);
   assert.match(charts, /data-symbol="SPCX"/);
@@ -211,7 +211,7 @@ test("Charts und Analyse setzen die Lampe links über die Fläche, die Lesezeile
   assert.match(css, /prefers-reduced-motion:\s*no-preference[\s\S]*mood-pulse/);
   assert.match(css, /prefers-reduced-motion:\s*reduce[\s\S]*animation:\s*none !important/);
   const sw = fs.readFileSync("sw.js", "utf8");
-  assert.match(sw, /jgtr-v37/);
+  assert.match(sw, /jgtr-v38/);
   assert.match(sw, /data\/sentiment\.json/);
   assert.match(sw, /js\/sentiment\.js/);
   assert.match(sw, /pathname\.includes\("\/data\/"\)/);

@@ -1742,6 +1742,54 @@ button.ampel-cell { width: 100%; }
 .inner-card { box-shadow: none; }
 .text-toggle { margin-top: 4px; }
 
+.updates-btn {
+  flex: 0 0 auto;
+  min-height: 44px;
+  margin: 0;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--gold-2);
+  font-size: 13px;
+  line-height: 1.1;
+}
+.update-card > * + * { margin-top: 0; }
+.update-row, .plan-row { padding: 10px 0; }
+.update-row + .update-row,
+.plan-row + .plan-row { border-top: 1px solid var(--line); }
+.update-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+.update-row strong, .plan-row strong {
+  font-size: 15px;
+  font-weight: 620;
+  letter-spacing: -0.01em;
+}
+.update-row span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.update-row.is-stack {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.update-row.is-stack span { text-align: left; }
+.plan-row p {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+.update-note { line-height: 1.45; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation: none !important;
