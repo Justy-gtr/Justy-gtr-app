@@ -247,14 +247,18 @@
       "id": "SPCX-2026-11-10",
       "symbol": "SPCX",
       "name": "SpaceX",
-      "changePct": 5.81,
-      "priceEur": 126.39,
+      "changePct": 5.92,
+      "priceEur": 126.42,
       "thresholdPct": 2,
       "direction": "up",
       "timestamp": "2026-11-09T23:16:20.872Z",
       "notified": false,
       "example": false,
       "sources": [
+        {
+          "title": "Alpaca Markets IEX SPCX",
+          "url": "https://data.alpaca.markets/v2/stocks/SPCX/snapshot?feed=iex"
+        },
         {
           "title": "Yahoo Finance SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX"
@@ -278,6 +282,10 @@
       "example": false,
       "sources": [
         {
+          "title": "Alpaca Markets IEX TSLA",
+          "url": "https://data.alpaca.markets/v2/stocks/TSLA/snapshot?feed=iex"
+        },
+        {
           "title": "Yahoo Finance TL0.DE",
           "url": "https://finance.yahoo.com/quote/TL0.DE"
         },
@@ -288,32 +296,6 @@
         {
           "title": "Yahoo Finance TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA"
-        }
-      ]
-    },
-    {
-      "id": "MRVL-2026-11-10",
-      "symbol": "MRVL",
-      "name": "Marvell Technology",
-      "changePct": 7.71,
-      "priceEur": 136.84,
-      "thresholdPct": 2,
-      "direction": "up",
-      "timestamp": "2026-11-10T07:46:24.684Z",
-      "notified": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "Yahoo Finance 9MW.DE",
-          "url": "https://finance.yahoo.com/quote/9MW.DE"
-        },
-        {
-          "title": "Yahoo Finance EURUSD=X",
-          "url": "https://finance.yahoo.com/quote/EURUSD=X"
-        },
-        {
-          "title": "Yahoo Finance MRVL",
-          "url": "https://finance.yahoo.com/quote/MRVL"
         }
       ]
     }
