@@ -8072,7 +8072,7 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Mo Schluss +5,8 % auf 142,07 $, zweiter Plustag (Yahoo): Erholung von Chips und KI-Werten, NASA-Mondaufträge (CLPS 2). Nachts +0,3 %, früh vorbörslich −0,5 % (Benzinga/Stocktwits). Barclays nennt T-Mobile den „saubersten“ Partner für einen möglichen Kauf durch SpaceX. Musk: Grok 4.8 startet vorsichtig diese Woche, Grok 5 erst in 2–3 Monaten (X). Di 14:30: US-Inflation Oktober mit +0,4 % (Kern +0,3 %) heißer als erwartet, das stützt eine Fed-Zinserhöhung im Dezember (BLS). Rivale Anthropic startet die Roadshow, Handel ab 19.11. erwartet (CNBC).",
+      "why": "Mo Schluss +5,8 % auf 142,07 $, zweiter Plustag (Yahoo): Erholung von Chips und KI-Werten, NASA-Mondaufträge (CLPS 2). Barclays nennt T-Mobile den „saubersten“ Partner für eine mögliche Übernahme durch SpaceX. Di 14:30: US-Inflation Oktober mit +0,4 % (Kern +0,3 %) heißer als erwartet, Fed-Gouverneur Waller hält eine Zinserhöhung im Dezember für wahrscheinlich (BLS, CNBC). Danach Nasdaq-Futures rund −1 % und SPCX vorbörslich bei 137,63 $ (−3,1 %, ChartExchange, 14:54). Der Euro-Kurs holt noch das Montagsplus nach. Rivale Anthropic startet die Roadshow, Handel ab 19.11. erwartet (CNBC).",
       "whySources": [
         {
           "title": "Yahoo Finance: SPCX",
@@ -8113,6 +8113,14 @@
         {
           "title": "CNBC: Anthropic-Preisspanne, Handel ab 19.11.",
           "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+        },
+        {
+          "title": "ChartExchange: SPCX vorbörslich 137,63 $ (10.11., 8:54 ET)",
+          "url": "https://chartexchange.com/symbol/nasdaq-spcx/historical/"
+        },
+        {
+          "title": "CNBC: Futures fallen nach CPI, Waller (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -21031,7 +21039,7 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Xetra kaum verändert (−0,25 %) nach Mo +5,5 % auf 378,05 $ (Robotaxi San Antonio, Cybertruck-Ende Mitte 2027 fürs Cybercab). Tesla nimmt keine Bestellungen mehr für den Cybertruck Premium AWD an und hebt den Cyberbeast um 7.500 $ auf 109.990 $ (Tesla Oracle). Jefferies senkt das Ziel von 400 auf 375 $ (Reuters). Musk: Cybercab werde die meisten Personenkilometer fahren (X).",
+      "why": "Xetra −1,2 % nach Mo +5,5 % auf 378,05 $ (Robotaxi San Antonio, Cybertruck-Ende Mitte 2027 fürs Cybercab). Nach der heißen Oktober-Inflation (+0,4 %, BLS) fallen die Nasdaq-Futures um rund 1 % (CNBC). Tesla nimmt keine Bestellungen mehr für den Cybertruck Premium AWD an und hebt den Cyberbeast um 7.500 $ auf 109.990 $ (Tesla Oracle). Jefferies senkt das Ziel von 400 auf 375 $ (Reuters).",
       "whySources": [
         {
           "title": "Yahoo Finance: TSLA",
@@ -21050,8 +21058,12 @@
           "url": "https://longbridge.com/en/news/304968777.md"
         },
         {
-          "title": "@elonmusk: Cybercab passenger miles",
-          "url": "https://x.com/elonmusk/status/2120090152429404655"
+          "title": "CNBC: Futures fallen nach CPI, Waller (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
+        },
+        {
+          "title": "BLS: Verbraucherpreise Oktober 2026",
+          "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -35524,7 +35536,7 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Frankfurt −3,0 % auf 49,45 €, vorbörslich in den USA −7,3 % (Stocktwits) nach Q3: Verlust je Aktie −0,12 $ statt −0,07 $ erwartet. Rekordumsatz 267,8 Mio. $, Auftragsbestand 3,57 Mrd. $, Q4-Umsatzziel 270–290 Mio. $ über Konsens, aber höherer EBITDA-Verlust (TipRanks). Neutron erst 2027; Piper Sandler senkt das Ziel von 83 auf 58 $.",
+      "why": "Frankfurt −3,8 %, vorbörslich in den USA −10,2 % auf 52,87 $ (Benzinga) nach Q3: Verlust je Aktie −0,12 $ statt −0,06 $ erwartet, Rekordumsatz 267,8 Mio. $, Auftragsbestand 3,57 Mrd. $, Q4-Umsatzziel 270–290 Mio. $ über Konsens, aber bereinigter EBITDA-Verlust 14–20 Mio. $. Neutron erst 2027. Kursziele: Piper Sandler 83 → 58 $, Cantor 122 → 111 $, KeyBanc bleibt bei 100 $ (Benzinga).",
       "whySources": [
         {
           "title": "Yahoo Finance: RKLB",
@@ -35549,6 +35561,10 @@
         {
           "title": "Rallies: Piper Sandler senkt RKLB-Kursziel auf 58 $ (10.11.)",
           "url": "https://rallies.ai/news/rocket-lab-corp-piper-sandler-cuts-target-price-to-58-from-83-009ff33228067663"
+        },
+        {
+          "title": "Benzinga: Analysten nach RKLB-Q3, vorbörslich −10,2 % (10.11.)",
+          "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/11/63087884/these-analysts-revise-their-forecasts-on-rocket-lab-following-q3-results"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -47491,7 +47507,7 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Xetra −0,5 % nach Mo +9,5 % an der Nasdaq auf 154,60 $ mit der Chip-Erholung (MarketBeat). Bremse: Fusions-Arbitrageure sehen die Lumentum-Übernahme (115 Mrd. $, nur in Aktien) laut Bloomberg nur bei etwa 50 % Abschlusschance; Abschluss erst im 1. Halbjahr 2028 geplant (Marvell). BofA sieht Marvell, AMD und Broadcom als mögliche Profiteure der Huang-Untersuchung bei Nvidia (Stocktwits).",
+      "why": "Xetra −3,8 % nach Mo +9,5 % an der Nasdaq auf 154,60 $ (MarketBeat). Nach der heißen Oktober-Inflation geben Chipwerte nach: Marvell vorbörslich rund −5 %, Intel und Micron −3 % (CNBC). Bremse bleibt die Lumentum-Übernahme (115 Mrd. $, nur in Aktien): Fusions-Arbitrageure sehen laut Bloomberg nur etwa 50 % Abschlusschance, Abschluss erst im 1. Halbjahr 2028 geplant (Marvell). Zahlen am 1.12. (Benzinga).",
       "whySources": [
         {
           "title": "Yahoo Finance: 9MW.DE",
@@ -47510,8 +47526,12 @@
           "url": "https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity"
         },
         {
-          "title": "Yahoo/Stocktwits: BofA zu AMD, Broadcom, Marvell (10.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-mixed-investors-102051723.html"
+          "title": "CNBC: Chipwerte vorbörslich schwach, Marvell −5 % (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
+        },
+        {
+          "title": "Benzinga: Lumentum-Deal 50:50, Zahlen 1.12. (10.11.)",
+          "url": "https://www.benzinga.com/markets/tech/26/11/63080723/marvells-115-billion-lumentum-deal-faces-50-50-odds-report"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",

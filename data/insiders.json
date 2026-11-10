@@ -1,8 +1,30 @@
 {
   "example": false,
-  "asOf": "2026-11-04",
+  "asOf": "2026-11-10",
   "notes": "Alle Einträge aus SEC-Form-4-Meldungen (Code S = Verkauf am Markt). Zusammengefasst je Person und Tag, Preis = gewichteter Durchschnitt. Seit Juni 2026 habe ich bei TSLA, SPCX und RKLB keinen einzigen Insider-Kauf am Markt gefunden. Viele Verkäufe laufen über vorab festgelegte 10b5-1-Pläne oder decken Steuern – das ist weniger aussagekräftig als ein spontaner Verkauf. Nicht aufgeführt: Musks Optionsausübung bei Tesla am 16.06.2026 mit Einbehalt von Aktien für Steuern (kein Marktverkauf).",
   "trades": [
+    {
+      "id": "ins-mrvl-koopmans-2026-11-02",
+      "person": "Chris Koopmans",
+      "role": "Präsident und COO – über den Koopmans Family Trust, 10b5-1-Plan vom 16.06.2026",
+      "symbol": "MRVL",
+      "company": "Marvell",
+      "side": "verkauf",
+      "shares": 10000,
+      "priceUsd": 186.97,
+      "date": "2026-11-02",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Chris Koopmans (MRVL), Handel am 02.11.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1835632/0001628280-26-069600.txt"
+        },
+        {
+          "title": "StockTitan: Marvell-COO-Trust verkauft 10.000 Aktien",
+          "url": "https://www.stocktitan.net/sec-filings/MRVL/form-4-marvell-technology-inc-insider-trading-activity-ace05f519101.html"
+        }
+      ]
+    },
     {
       "id": "ins-rklb-armagno-2026-11-02",
       "person": "Nina Armagno",
