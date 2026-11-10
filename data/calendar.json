@@ -428,7 +428,7 @@
     },
     {
       "id": "evt-softbank-q2-fy26",
-      "title": "SoftBank Group: Zahlen Q2 (Tokio)",
+      "title": "SoftBank Group: Zahlen Q2 (Tokio) — veröffentlicht, Nettoverlust",
       "date": "2026-11-10",
       "time": "07:30",
       "timezone": "Europe/Berlin",
@@ -438,36 +438,32 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 97,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "Offizieller Termin: Veröffentlichung 15:30 Uhr Tokio (07:30 Berlin), Pressekonferenz 16:30 Uhr Tokio. Die Aktie stieg am Vormittag um rund 13–15 % und hob den Nikkei allein um gut 400 Punkte; der Index lag mittags 2,9 % höher bei 60.476 (Nikkei, CNBC). SoftBank ist einer der großen KI-Investoren. Die Zahlen sind ein Stimmungstest für KI-Werte vor der US-Eröffnung, also indirekt auch für SpaceX mit xAI. 97 %: fester Termin. Stand 06:45: Nikkei laut Yahoo gegen 11:20 Uhr Tokio bei 60.488 Punkten (+2,9 %), Topix +2,3 %; Tokyo Electron +5,7 %, Advantest +4,9 %, Kioxia +7,6 % (Reuters via Economic Times). Die Tokioter Börse schließt um 07:30 Berliner Zeit, also zeitgleich mit den Zahlen.",
+      "reasoning": "Veröffentlicht: Im Quartal Juli–September Nettoverlust von 1,12 Bio. Yen (rund 7 Mrd. $) nach 2,5 Bio. Yen Gewinn im Vorjahr; Umsatz 2,22 Bio. Yen über der LSEG-Schätzung von 2,02 Bio. Yen (CNBC). Im Halbjahr belastete u. a. ein Verlust von 597,2 Mrd. Yen aus der Neuordnung der Kraftwerks-Bestellungen für US-KI-Rechenzentren (SoftBank-Finanzbericht). Die Aktie schloss vor den Zahlen 13,9 % höher und hob den Nikkei allein um rund 380 Punkte; der Nikkei schloss +2,87 % bei 60.459,58, Topix +1,98 % (Nikkei). Die Reaktion auf den Verlust zeigt sich erst am Mittwoch in Tokio. Für SpaceX mit xAI ein indirekter Stimmungstest für KI-Werte.",
       "example": false,
       "sources": [
         {
+          "title": "CNBC: SoftBank mit 7 Mrd. $ Nettoverlust im Q2 (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html"
+        },
+        {
+          "title": "SoftBank Group: Finanzbericht Halbjahr bis 30.9.2026",
+          "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf"
+        },
+        {
+          "title": "Nikkei: Nikkei schließt bei 60.459 (+1.684) (10.11.)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL100KF0Q6A111C2000000/"
+        },
+        {
           "title": "SoftBank Group: Earnings Results Q2 FY2026",
           "url": "https://group.softbank/en/event/earnings_2026q2"
-        },
-        {
-          "title": "Nikkei: Nikkei 225 wieder über 60.000 (10.11.)",
-          "url": "https://www.nikkei.com/article/DGXZQOFL100E50Q6A111C2000000/"
-        },
-        {
-          "title": "CNBC: SoftBank +13 %, Asiens Tech-Werte folgen der Wall Street (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/ai-softbank-sk-hynix-samsung-wall-street-tech-stocks.html"
-        },
-        {
-          "title": "Economic Times/Reuters: Nikkei fast +3 %, SoftBank +14 % (10.11.)",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/japans-nikkei-surges-nearly-3-as-ai-stocks-extend-rebound-softbank-jumps-14/articleshow/135697829.cms"
-        },
-        {
-          "title": "Yahoo Finance: Nikkei 225 historische Daten",
-          "url": "https://finance.yahoo.com/quote/%255EN225/history/"
         }
       ]
     },
     {
       "id": "evt-infineon-gj26",
-      "title": "Infineon: Jahreszahlen 2026 und Ausblick (Xetra, Deutschland-Tab)",
+      "title": "Infineon: Jahreszahlen 2026 — veröffentlicht, Ausblick ~20 Mrd. €",
       "date": "2026-11-10",
       "time": "07:30",
       "timezone": "Europe/Berlin",
@@ -477,18 +473,22 @@
       "tickers": [
         "IFX.DE"
       ],
-      "probabilityPct": 97,
+      "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Fester Termin: Jahreszahlen um 07:30, Pressekonferenz 08:00. Konsens fürs vierte Quartal: 4,69 Mrd. € Umsatz und 0,62 € Gewinn je Aktie (Vorquartal 4,17 Mrd. € / 0,44 €). Entscheidend ist der Ausblick aufs Geschäftsjahr 2027 und ob Infineon die über 1,6 Mrd. € Umsatz mit KI-Rechenzentren bestätigt. Die Aktie stieg am Montag um 6,3 %, liegt aber rund 48 % unter dem Juni-Hoch (Investing.com). Großer Chipwert im DAX, deshalb auch ein Stimmungstest für KI- und Halbleiterwerte vor der US-Eröffnung. Infineon steht im Deutschland-Tab mit Knock-outs bei Trade Republic. 97 %: fester Termin.",
+      "reasoning": "Veröffentlicht: Q4 Umsatz 4,706 Mrd. € (Konsens 4,69), Segmentmarge 23,8 %, bereinigtes EPS 0,60 € (Konsens 0,62). Ausblick 2027: rund 20 Mrd. € Umsatz (+über 20 %, Konsens 19,81 Mrd. €), davon knapp 4 Mrd. € Stromversorgung für Rechenzentren, Segmentmarge im mittleren 20er-Bereich. Dagegen: Free Cashflow nur ~1,8 Mrd. € statt erwarteter 2,26 Mrd. €, Investitionen 3,0–3,5 Mrd. € (Infineon, Investing.com). Dividende soll auf 0,38 € steigen. Vorbörslich +4,6 % auf 50,86 € (ad-hoc-news). Stimmungstest für KI- und Chipwerte vor der US-Eröffnung; Deutschland-Tab.",
       "example": false,
       "sources": [
         {
-          "title": "Investing.com: Infineon vor den Zahlen – Gewinn soll sich fast verdoppeln (9.11.)",
-          "url": "https://de.investing.com/news/stock-market-news/infineonaktie-vor-den-zahlen-am-dienstag-gewinn-soll-sich-fast-verdoppeln-3755371"
+          "title": "Infineon/MarketScreener: Rekordquartal, Ausblick GJ 2027 (10.11.)",
+          "url": "https://in.marketscreener.com/news/infineon-closes-fy-2026-with-record-quarter-expects-revenue-growth-of-more-than-20-percent-and-a-5-ce785edad889f524"
         },
         {
-          "title": "Dow Jones/MarketScreener: Tagesvorschau Di 10.11.",
-          "url": "https://at.marketscreener.com/boerse-nachrichten/tagesvorschau-dienstag-10-november-ce785edad98df724"
+          "title": "Investing.com: Infineon-Ausblick über Erwartung, Cashflow enttäuscht (10.11.)",
+          "url": "https://de.investing.com/news/earnings/infineon-ubertrifft-dank-kinachfrage-umsatzprognose-fur-gj27--cashflow-enttauscht-3758214"
+        },
+        {
+          "title": "ad-hoc-news: Infineon vorbörslich +4,61 % auf 50,86 € (10.11.)",
+          "url": "https://www.ad-hoc-news.de/boerse/news/vorboerse/infineon-stock-at-eur-50-86-up-4-61-prozent-premarket/70484424"
         },
         {
           "title": "Infineon: Investor Relations",
@@ -498,7 +498,7 @@
     },
     {
       "id": "evt-hensoldt-cmd",
-      "title": "Hensoldt: Kapitalmarkttag (Deutschland-Tab)",
+      "title": "Hensoldt: Kapitalmarkttag — 6 Mrd. € Umsatz 2030 bestätigt, 10 Mrd. € für 2035",
       "date": "2026-11-10",
       "time": "08:00",
       "timezone": "Europe/Berlin",
@@ -508,18 +508,18 @@
       "tickers": [
         "HAG.DE"
       ],
-      "probabilityPct": 95,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "Laut Dow-Jones-Tagesvorschau hält Hensoldt heute ab 08:00 seinen Kapitalmarkttag. Mittelfristziele können den Rüstungswert bewegen, der am Montag laut Kurs-Workflow rund 6,9 % zulegte. Hensoldt steht im Deutschland-Tab. Für SPCX, TSLA und RKLB ohne direkte Bedeutung. 95 %: fester Termin.",
+      "reasoning": "Stattgefunden: Hensoldt bestätigt die Umsatzambition von 6 Mrd. € für 2030 und nennt erstmals 10 Mrd. € für 2035; 2027/2028 jeweils 15–20 % Umsatzwachstum, bereinigte EBITDA-Marge bis 2030 von rund 19 auf rund 21 % (EQS-News). Deutschland-Tab. Für SPCX, TSLA und RKLB ohne direkte Bedeutung.",
       "example": false,
       "sources": [
         {
-          "title": "Dow Jones/MarketScreener: Tagesvorschau Di 10.11.",
-          "url": "https://at.marketscreener.com/boerse-nachrichten/tagesvorschau-dienstag-10-november-ce785edad98df724"
+          "title": "EQS-News/finanzen.net: Hensoldt-Kapitalmarkttag (10.11.)",
+          "url": "https://www.finanzen.net/nachricht/aktien/eqs-news-kapitalmarkttag-hensoldt-best-tigt-umsatzambition-von-6-milliarden-euro-f-r-2030-und-strebt-10-milliarden-euro-f-r-2035-an-16052240"
         },
         {
-          "title": "Yahoo Finance: HAG.DE",
-          "url": "https://finance.yahoo.com/quote/HAG.DE"
+          "title": "Dow Jones/MarketScreener: Tagesvorschau Di 10.11.",
+          "url": "https://at.marketscreener.com/boerse-nachrichten/tagesvorschau-dienstag-10-november-ce785edad98df724"
         }
       ]
     },
@@ -593,9 +593,9 @@
     },
     {
       "id": "evt-falcon9-ussf317",
-      "title": "SpaceX: Falcon-9-Start USSF-317 für die Space Force",
-      "date": "2026-11-13",
-      "time": "05:23",
+      "title": "SpaceX: Falcon-9-Start USSF-317 für die Space Force (verschoben auf Sa 05:09)",
+      "date": "2026-11-14",
+      "time": "05:09",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -605,7 +605,7 @@
       ],
       "probabilityPct": 75,
       "impact": "niedrig",
-      "reasoning": "SpaceX zielt auf Donnerstag 12.11., Vier-Stunden-Fenster ab 20:23 Uhr Ortszeit Vandenberg (in Berlin 05:23 Uhr am 13.11.), Ersatzfreitag. Dritter Space-Force-Start innerhalb einer Woche von derselben Rampe – deshalb etwas niedrigere Wahrscheinlichkeit wegen Turnaround-Risiko. Kurswirkung gering.",
+      "reasoning": "SpaceX zielt jetzt auf Freitag 13.11., Vier-Stunden-Fenster ab 20:09 Uhr Ortszeit Vandenberg (in Berlin Sa 14.11. 05:09), Ersatz Samstag 19:55 Ortszeit. Vorher stand Donnerstag 20:23 Ortszeit. Dritter Space-Force-Start binnen gut einer Woche von derselben Rampe, deshalb Turnaround-Risiko. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -615,6 +615,33 @@
         {
           "title": "Next Spaceflight: USSF-317",
           "url": "https://nextspaceflight.com/launches/details/8335/"
+        }
+      ]
+    },
+    {
+      "id": "evt-falcon9-ussf266",
+      "title": "SpaceX: Falcon-9-Start USSF-266 für die Space Force",
+      "date": "2026-11-17",
+      "time": "17:58",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "start",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 75,
+      "impact": "niedrig",
+      "reasoning": "SpaceX zielt auf Dienstag 17.11., Vier-Stunden-Fenster ab 08:58 Uhr Ortszeit Vandenberg (17:58 Berlin), Ersatz Mittwoch 08:49 Ortszeit. Booster fliegt zum 29. Mal. Vierter Space-Force-Start von SLC-4E in kurzer Folge, deshalb 75 % für den Zieltag. Kurswirkung gering.",
+      "example": false,
+      "sources": [
+        {
+          "title": "SpaceX: USSF-266 Mission",
+          "url": "https://www.spacex.com/launches/ussf266"
+        },
+        {
+          "title": "SpaceX: Startliste",
+          "url": "https://www.spacex.com/launches/starship"
         }
       ]
     },

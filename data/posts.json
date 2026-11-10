@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-10T06:45:00+01:00",
+  "asOf": "2026-11-10T08:40:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -85,6 +85,29 @@
     }
   },
   "posts": [
+    {
+      "id": "post-starlink-2120029978066813318",
+      "account": "@Starlink",
+      "displayName": "Starlink",
+      "postedAt": "2026-11-10T06:45:09+01:00",
+      "summaryDe": "Starlink Japan wirbt mit der Zusammenarbeit mit dem Ferienhaus-Anbieter SANU: schnelles Internet auch in abgelegenen Ferienhäusern in Japan. Kleine Marketing-Meldung, kein Kursfaktor.",
+      "originalText": "Starlinkは、日本の最も遠隔地や地方にある@sanu2ndhome の別荘にも、高速で安定したインターネットを届けます。",
+      "url": "https://x.com/Starlink/status/2120029978066813318",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Starlink auf X",
+          "url": "https://x.com/Starlink/status/2120029978066813318"
+        }
+      ]
+    },
     {
       "id": "post-rocketlab-2120005735354667235",
       "account": "@RocketLab",

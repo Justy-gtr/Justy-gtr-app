@@ -8887,7 +8887,7 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Schluss +5,8 % auf 142,07 $ nach +8,6 % am Freitag (Yahoo Finance). Treiber: breite Erholung von Chips und KI-Werten nach dem Ausverkauf der Vorwoche – Nasdaq +2,7 %, Halbleiter-Index ~+7 %, Öl deutlich billiger (Reuters) –, dazu NASAs neue Mond-Lieferaufträge (CLPS 2, SpaceX unter acht Firmen) und Stifel mit Ziel 190 $. Bremse: Haltefrist-Ende am 8.12. Di früh: Nasdaq-Futures +0,2 %, Nikkei +2,9 % mit Chipwerten (Investing.com, Nikkei).",
+      "why": "Schluss +5,8 % auf 142,07 $ nach +8,6 % am Freitag (Yahoo Finance). Treiber: breite Erholung von Chips und KI-Werten nach dem Ausverkauf der Vorwoche – Nasdaq +2,7 %, Halbleiter-Index ~+7 %, Öl deutlich billiger (Reuters) –, dazu NASAs neue Mond-Lieferaufträge (CLPS 2, SpaceX unter acht Firmen) und Stifel mit Ziel 190 $. Bremse: Haltefrist-Ende am 8.12. Di früh: Nikkei schließt +2,87 % mit Chipwerten, SoftBank +13,9 % vor einem Quartalsverlust von 7 Mrd. $ (Nikkei, CNBC); Nasdaq-Futures knapp im Plus vor dem CPI um 14:30 (Investing.com).",
       "whySources": [
         {
           "title": "Yahoo Finance: SPCX",
@@ -8914,8 +8914,12 @@
           "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
         },
         {
-          "title": "Nikkei: Nikkei 225 wieder über 60.000 (10.11.)",
-          "url": "https://www.nikkei.com/article/DGXZQOFL100E50Q6A111C2000000/"
+          "title": "Nikkei: Nikkei schließt bei 60.459 (+2,87 %) (10.11.)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL100KF0Q6A111C2000000/"
+        },
+        {
+          "title": "CNBC: SoftBank mit 7 Mrd. $ Nettoverlust im Q2 (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -24405,7 +24409,7 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Schluss +5,5 % auf 378,05 $ (Yahoo Finance). Treiber: Musk will die Cybertruck-Fertigung in Texas Mitte 2027 beenden und die Fläche fürs Cybercab nutzen – Anleger lesen das als Fokus aufs Robotaxi (Investing.com). Dazu Robotaxi in San Antonio und die breite Erholung: Nicht-Basiskonsum und Industrie je etwa +4 %, Nasdaq +2,7 % (Reuters). Gegenwind: China-Verkäufe im Oktober auf Vier-Jahres-Tief (IBD). Di früh: Nasdaq-Futures +0,2 % vor dem CPI um 14:30 (Investing.com).",
+      "why": "Schluss +5,5 % auf 378,05 $ (Yahoo Finance). Treiber: Musk will die Cybertruck-Fertigung in Texas Mitte 2027 beenden und die Fläche fürs Cybercab nutzen – Anleger lesen das als Fokus aufs Robotaxi (Investing.com). Dazu Robotaxi in San Antonio und die breite Erholung: Nicht-Basiskonsum und Industrie je etwa +4 %, Nasdaq +2,7 % (Reuters). Gegenwind: China-Verkäufe im Oktober auf Vier-Jahres-Tief (IBD). Nachts −0,15 % auf 377,49 $; Musk bestätigt „Project Crystal Sun“, eine Solarfabrik bei Houston für über 10 Mrd. $ (Benzinga). Di früh: Nasdaq-Futures knapp im Plus vor dem CPI um 14:30 (Investing.com).",
       "whySources": [
         {
           "title": "Yahoo Finance: TSLA",
@@ -24430,6 +24434,10 @@
         {
           "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
           "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
+        },
+        {
+          "title": "Benzinga: Tesla „Project Crystal Sun“, Solarfabrik bei Houston (10.11.)",
+          "url": "https://www.benzinga.com/markets/tech/26/11/63078453/teslas-10-billion-project-crystal-sun-takes-shape-near-houston-as-elon-musk-eyes-tslas-largest-us-solar-factory-bet-so-far"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
