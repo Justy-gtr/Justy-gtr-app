@@ -1,55 +1,55 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T08:30:00+01:00",
+  "updatedAt": "2026-11-10T08:36:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 60,
       "postsCount": 20,
-      "reason": "Vorfreude auf Starship-Flug 15 am Freitag mit Doppel-Fang; Booster B22 rollt zur Rampe. Dazu +5,8 % am Montag und NASA-Mondaufträge, FAA-Freigabe fehlt noch.",
+      "reason": "Vorfreude auf Starship-Flug 15 am Freitag mit Doppel-Fang; dazu +5,8 % am Montag, NASA-Mondaufträge und Starlink bei Lufthansa. FAA-Freigabe fehlt noch.",
       "sources": [
         {
           "title": "Booster B22 rollt zur Rampe für Flug 15",
           "url": "https://x.com/DimaZeniuk/status/2120050024188887378"
         },
         {
-          "title": "Guten Morgen Europa: Überblick für SpaceX-Anleger",
-          "url": "https://x.com/spcxGOD/status/2120036733563883590"
+          "title": "Brussels Airlines (Lufthansa) fliegt erstmals mit Starlink",
+          "url": "https://x.com/spcxGOD/status/2120056614560395370"
         },
         {
           "title": "SPCX +5,8 %: NASA-Mond-Pool CLPS 2, Flug 15 frühestens 13.11.",
           "url": "https://x.com/AsLongAslCan/status/2120054632156176394"
         }
       ],
-      "updatedAt": "2026-11-10T08:30:00+01:00"
+      "updatedAt": "2026-11-10T08:36:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 20,
       "postsCount": 20,
-      "reason": "Robotaxi-Ausbau (+5,5 % am Montag), Solarfabrik bei Houston und neues Entwicklungszentrum in Berlin; Kritik am Cybertruck-Aus und an 0 % Umsatzwachstum.",
+      "reason": "Robotaxi-Ausbau (+5,5 % am Montag), FSD heißt jetzt TAD, Solarfabrik bei Houston; deutsche Posts vergleichen mit Xpeng, Kritik an 0 % Umsatzwachstum.",
       "sources": [
         {
           "title": "TSLA +5,5 % am Montag nach Robotaxi-Ausbau",
           "url": "https://x.com/ankushtasildar/status/2120043217290949016"
         },
         {
-          "title": "10-Mrd.-$-Solarfabrik bei Houston",
-          "url": "https://x.com/dukethefifthh/status/2120048874693767646"
+          "title": "Software-Update: Aus FSD wird Tesla Assisted Driving",
+          "url": "https://x.com/EFIEBER_ANDRE/status/2120053864715911510"
         },
         {
           "title": "Q3-Umsatzwachstum: Tesla bei 0 %",
           "url": "https://x.com/AnessHusseinAli/status/2120043528029876440"
         }
       ],
-      "updatedAt": "2026-11-10T08:30:00+01:00"
+      "updatedAt": "2026-11-10T08:36:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": -15,
       "postsCount": 20,
-      "reason": "Q3: Umsatz besser, aber höherer Verlust; vorbörslich etwa 7 % im Minus, Piper Sandler senkt Kursziel auf 58 $. Pentagon-Kredit für Neutron kommt gut an.",
+      "reason": "Q3: Umsatz besser, aber höherer Verlust; vorbörslich etwa 7 % im Minus, Piper Sandler senkt Kursziel auf 58 $. Starke Neutron-Buchungen, Start aber erst 2027.",
       "sources": [
         {
           "title": "Rocket Lab Q3: Umsatz geschlagen, Gewinn verfehlt",
@@ -60,11 +60,11 @@
           "url": "https://x.com/perpequities/status/2120048839034114400"
         },
         {
-          "title": "Pentagon: 150 Mio. $ Kreditzusage für Neutron",
-          "url": "https://x.com/RCapitalX/status/2120035503689056558"
+          "title": "Neutron-Deals 515 Mio. $, Erststart frühestens 2027",
+          "url": "https://x.com/happypepi_slav/status/2120055356537676210"
         }
       ],
-      "updatedAt": "2026-11-10T08:30:00+01:00"
+      "updatedAt": "2026-11-10T08:36:00+01:00"
     }
   }
 }
