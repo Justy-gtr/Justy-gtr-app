@@ -88,8 +88,8 @@
   grid-auto-columns: minmax(0, 1fr);
 }
 .tab {
-  font-size: 9px;
-  letter-spacing: 0;
+  font-size: 8px;
+  letter-spacing: -0.04em;
   min-width: 0;
   padding: 0 1px;
 }
@@ -98,7 +98,7 @@
   max-width: 100%;
   white-space: nowrap;
 }
-.tab svg { width: 18px; height: 18px; }
+.tab svg { width: 16px; height: 16px; }
 .chart-candles,
 .candle-wrap,
 .candle-wrap .scrub {

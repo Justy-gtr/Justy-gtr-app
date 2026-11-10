@@ -648,6 +648,13 @@ export function drawCharts(data, ui) {
       const falling = points.length > 1 && last < first;
       const color = falling ? "#ff5d6c" : "#3ddc84";
       drawLineChart(canvas, points, { color, axes: true, scrub: true, instrument: true });
+    } else if (kind === "de") {
+      const row = (data.germany?.symbols || []).find((item) => item.symbol === canvas.dataset.symbol);
+      const points = row?.intraday || [];
+      const first = Number(points[0]?.eur);
+      const last = Number(points.at(-1)?.eur);
+      const color = points.length > 1 && last < first ? "#ff5d6c" : "#3ddc84";
+      drawLineChart(canvas, points, { color, axes: true, scrub: true, instrument: true });
     } else if (kind === "prod") {
       const series = (data.production?.series || []).find((item) => item.id === canvas.dataset.series);
       drawTileSpark(canvas, series);

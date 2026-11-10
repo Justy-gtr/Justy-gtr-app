@@ -700,11 +700,78 @@ body[data-page="analyse"][data-analyse-view="chart"] #page-analyse {
   justify-content: center;
   gap: 2px;
   padding: 0 1px;
-  font-size: 9px;
-  letter-spacing: 0;
+  font-size: 8px;
+  letter-spacing: -0.04em;
 }
 .tab span { display: block; max-width: 100%; white-space: nowrap; }
-.tab svg { width: 18px; height: 18px; }
+.tab svg { width: 16px; height: 16px; }
+.de-row { padding: 0; overflow: hidden; }
+.de-hit {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 84px;
+  grid-template-areas:
+    "name price"
+    "morning spark"
+    "badge badge";
+  gap: 4px 8px;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 12px;
+  align-items: center;
+}
+.de-main { grid-area: name; display: flex; flex-direction: column; min-width: 0; }
+.de-main strong { font-size: 16px; letter-spacing: -0.02em; }
+.de-main .muted { font-size: 12px; }
+.de-px { grid-area: price; text-align: right; font-variant-numeric: tabular-nums; align-self: start; }
+.de-px strong { display: block; font-size: 16px; }
+.de-px .up { color: #3ddc84; }
+.de-px .down { color: #ff5d6c; }
+.de-spark { grid-area: spark; width: 76px; height: 28px; justify-self: end; }
+.de-morning { grid-area: morning; display: flex; flex-direction: column; gap: 4px; color: var(--muted); font-size: 12px; }
+.de-meter {
+  display: block;
+  height: 3px;
+  width: 100%;
+  max-width: 148px;
+  border-radius: 2px;
+  background: rgba(255,255,255,.08);
+}
+.de-meter::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: var(--w, 0%);
+  border-radius: 2px;
+  background: #e4b15a;
+}
+.de-badge {
+  grid-area: badge;
+  justify-self: start;
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 11px;
+  letter-spacing: 0.01em;
+  color: #f6e7c4;
+  background: rgba(228, 177, 90, 0.14);
+  border: 1px solid rgba(228, 177, 90, 0.35);
+}
+.de-more { padding: 0 12px 12px; }
+.de-sides { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.de-isin button {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 0;
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  color: var(--gold-2);
+}
+.de-isin button span { display: block; color: var(--muted); font-size: 11px; }
+.de-chart-wrap { margin-top: 8px; }
+.de-chart-wrap .chart-price { height: 180px; }
 .tab[aria-current="page"] { color: var(--gold-2); }
 .tab-icon { position: relative; width: 20px; height: 20px; display: grid; }
 .tab-dot {

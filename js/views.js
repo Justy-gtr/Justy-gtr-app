@@ -1,6 +1,7 @@
 import { chartAnalysis } from "./analysis.js";
 import { analyseViewToggle, musterCard } from "./analyse-view.js";
 import { sparkline } from "./chart.js";
+import { renderDeutschland } from "./germany-view.js";
 import { renderMoodLamp } from "./sentiment.js";
 import {
   esc,
@@ -165,6 +166,7 @@ export function renderShell(ctx) {
     ["page-kalender", () => renderKalender(data, ui)],
     ["page-posts", () => renderPosts(data, ui)],
     ["page-schwarm", () => renderSchwarm(data)],
+    ["page-deutschland", () => renderDeutschland(data, ui)],
     ["page-mehr", () => renderMehr(data)]
   ];
   for (const [id, build] of pages) {

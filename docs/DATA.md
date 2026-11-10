@@ -29,6 +29,8 @@ Der Kurs-Workflow ändert `dataMode` nicht.
 | `seasonality.json` | fasst sie nicht an | Wochentag und Uhrzeit je Aktie, einmal je Berliner Tag, ohne Rohkurse |
 | `moonshots.json` | Texte, Termin, Quellen, `pastCatalysts`, Hebel-ISIN der drei festen Kandidaten | Kurse und Zählung der festen Kandidaten; `nearTerm` täglich aus dem Zahlungskalender |
 | `sentiment.json` | Stimmung je Aktie, mehrmals am Tag | fasst sie nicht an |
+| `de-turbos.json` | Beispiel-ISINs, Emittent, Quelle | fasst sie nicht an |
+| `germany.json` | fasst Kurse und Morgen-Schwankung nicht an | Kurs, Tagesveränderung, Sparkline, Morgen-Schwankung |
 | alle anderen | vollständig | fasst sie nicht an |
 
 `narrativeExample`: `true`, solange `why` und der Langfrist-Text noch aus dem Seed stammen. Der Workflow übernimmt den Text und lässt die Flagge auf `true`, bis der Assistent sie auf `false` setzt. Dann bleibt sie `false`.
@@ -646,6 +648,40 @@ Pflicht-Symbole: `SPCX`, `TSLA`, `RKLB`. `schema` ist `1`.
 | `previousMood` | optional, einer der drei Töne. Gesetzt, wenn sich der Ton in diesem Stand geändert hat. Die Lampe pulsiert dann einmal, außer die Bewegung ist reduziert |
 
 Die Lampe ist grün bei `gut` (`#22c55e`), rot bei `schlecht` (`#ef4444`), gelb bei `gemischt`. Grau, wenn der Ton fehlt oder `updatedAt` älter als zwei Stunden ist. Daneben steht „Stimmung · 14:35“ in Berliner Zeit, sonst „Stimmung · noch keine Daten“.
+
+## `germany.json`
+
+Xetra-Namen mit großem Auf und Ab am Morgen, die bei Trade Republic Long- und Short-Knock-outs haben. Die feste Liste steht in `data/de-turbos.json` (onvista, Filter Trade Republic, Stand `knockoutsAsOf`). `scripts/fetch-germany.mjs` im Kurs-Workflow schreibt die Kurse dazu. Yahoo liefert sie schon in Euro. Der Workflow fasst die Beispiel-ISINs nicht an.
+
+```json
+{
+  "example": false,
+  "asOf": "2026-11-10T08:00:00.000Z",
+  "knockoutsAsOf": "2026-11-10",
+  "timezone": "Europe/Berlin",
+  "window": "09:00-10:30",
+  "symbols": [
+    {
+      "symbol": "S92.DE",
+      "name": "SMA Solar",
+      "underlyingIsin": "DE000A0DJ6J9",
+      "priceEur": 49.4,
+      "changePct": 1.15,
+      "sparkline": [48.2, 49.4],
+      "intraday": [{ "t": "2026-11-10T08:00:00.000Z", "eur": 48.2 }],
+      "morning": { "avgPct": 3.5, "maxPct": 7.6, "maxDay": "2026-11-03", "n": 21 },
+      "trKnockouts": { "long": true, "short": true },
+      "longExample": { "isin": "DE000HM4FG81", "issuer": "HSBC", "url": "https://…" },
+      "shortExample": { "isin": "DE000FG9MP33", "issuer": "Société Générale", "url": "https://…" },
+      "source": "https://www.onvista.de/…",
+      "sources": [{ "title": "Yahoo Finance S92.DE", "url": "https://finance.yahoo.com/quote/S92.DE" }],
+      "asOf": "2026-11-10T08:00:00.000Z"
+    }
+  ]
+}
+```
+
+`morning` ist die Morgen-Schwankung: je Xetra-Tag `(Hoch − Tief) / Eröffnung` in Prozent, nur Kerzen von 09:00 bis vor 10:30 Uhr Berlin, aus den 15-Minuten-Kursen des letzten Monats. Der Mittelwert, der größte Tag und `n` nehmen die letzten höchstens 21 fertigen Sitzungen. Der noch laufende Morgen zählt nicht. `sparkline` und `intraday` sind der letzte Handelstag in 5 Minuten. Die Seite sortiert nach `avgPct`, der größte Morgen oben. Die Wörter „kaufen“, „verkaufen“, „Empfehlung“ und „Anlageberatung“ stehen hier nicht. Eine Beispiel-ISIN kann nach dem Knock-out weg sein.
 
 ## Prüfung
 

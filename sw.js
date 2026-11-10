@@ -19,6 +19,8 @@ const CORE = [
   "js/nav.js",
   "js/views.js",
   "js/sentiment.js",
+  "js/germany.js",
+  "js/germany-view.js",
   "js/eggs.js",
   "js/motion.js",
   "js/knockout.js",
@@ -49,7 +51,8 @@ const CORE = [
   "data/scenarios.json",
   "data/companies.json",
   "data/moonshots.json",
-  "data/sentiment.json"
+  "data/sentiment.json",
+  "data/germany.json"
 ];
 
 self.addEventListener("install", (event) => {

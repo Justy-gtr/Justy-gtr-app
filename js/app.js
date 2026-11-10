@@ -19,6 +19,7 @@ const ui = {
   chartSymbol: "SPCX",
   chartRange: "1T",
   analyseView: "kerzen",
+  deSymbol: "",
   analyseSymbol: "SPCX",
   analyseRange: "15 Min",
   analyseSeason: "all",
@@ -315,6 +316,18 @@ document.body.addEventListener("click", (event) => {
     if (!CHART_RANGES.includes(next)) return;
     ui.chartRange = next;
     render();
+    return;
+  }
+  if (action === "de-toggle") {
+    ui.deSymbol = ui.deSymbol === el.dataset.symbol ? "" : el.dataset.symbol;
+    render();
+    return;
+  }
+  if (action === "copy-isin") {
+    const isin = el.dataset.isin || "";
+    const copied = () => toast("ISIN kopiert");
+    if (navigator.clipboard?.writeText) navigator.clipboard.writeText(isin).then(copied).catch(() => toast(isin));
+    else toast(isin);
     return;
   }
   if (action === "analyse-view") {
