@@ -539,7 +539,7 @@
       ],
       "probabilityPct": 95,
       "impact": "mittel",
-      "reasoning": "Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid. Stand Di 11:30: S&P-Futures +0,2 %, Nasdaq-100-Futures −0,1 %, Brent um 90 $ (Investing.com).",
+      "reasoning": "Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid. Stand Di Vormittag: Dow-Futures +0,35 %, S&P-Futures +0,1 %, Nasdaq-100-Futures −0,3 %, Brent 90,6 $ nach Trumps Iran-Aussage (Yahoo/Stocktwits). DAX mittags +1,2 % nahe Rekord (dpa-AFX).",
       "example": false,
       "sources": [
         {
@@ -561,6 +561,14 @@
         {
           "title": "Investing.com: Was die Märkte bewegen (10.11.)",
           "url": "https://www.investing.com/news/economy-news/us-inflation-data-ahead-huang-scandal-fallout--whats-moving-markets-5014413"
+        },
+        {
+          "title": "Yahoo/Stocktwits: US-Futures gemischt vor CPI (10.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-mixed-investors-102051723.html"
+        },
+        {
+          "title": "dpa-AFX/onvista: Dax nähert sich Rekordhoch (10.11.)",
+          "url": "https://www.onvista.de/news/2026/11-10-aktien-frankfurt-weiter-auf-erholungskurs-dax-naehert-sich-rekordhoch-0-10-26574579"
         }
       ]
     },
@@ -1745,6 +1753,37 @@
         {
           "title": "SpaceX SI Docs: Release Notes",
           "url": "https://docs.x.ai/developers/release-notes"
+        }
+      ]
+    },
+    {
+      "id": "evt-firefly-q3",
+      "title": "Firefly Aerospace: Zahlen Q3 2026 (nach US-Schluss)",
+      "date": "2026-11-10",
+      "time": "23:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "earnings",
+      "company": "Firefly Aerospace",
+      "tickers": [
+        "RKLB"
+      ],
+      "probabilityPct": 97,
+      "impact": "niedrig",
+      "reasoning": "Offiziell: Telefonkonferenz am Di 10.11. um 17:00 Uhr ET (= 23:00 Berlin), Zahlen davor nach US-Schluss (Firefly). Der Raketen-Konkurrent ist nach den RKLB-Zahlen ein zweiter Stimmungstest für kleine Raumfahrtwerte. 97 %: fester Firmentermin.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Firefly Aerospace: Termin Q3-Zahlen (14.10.)",
+          "url": "https://investors.fireflyspace.com/news-releases/news-release-details/firefly-aerospace-announce-third-quarter-2026-financial-results"
+        },
+        {
+          "title": "Firefly IR: Q3 2026 Conference Call",
+          "url": "https://investors.fireflyspace.com/events/event-details/firefly-aerospace-third-quarter-2026-financial-results-conference-call"
+        },
+        {
+          "title": "Yahoo/Stocktwits: Termine Di 10.11. (Firefly)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-mixed-investors-102051723.html"
         }
       ]
     }

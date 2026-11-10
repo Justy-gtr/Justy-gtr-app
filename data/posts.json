@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-10T11:30:00+01:00",
+  "asOf": "2026-11-10T13:10:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -85,6 +85,31 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2120102767624880364",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T11:34:24+01:00",
+      "summaryDe": "Musk: Die Starlink-Software, gebaut um riesige Datenmengen durchs All und zur Erde zu leiten, eigne sich auch sehr gut zum Training von Superintelligenz. Stützt die KI-Geschichte von SpaceX.",
+      "originalText": "Turns out that the Starlink software, built for managing the movement of vast amounts of data through space and to the ground, is also very well suited to training super intelligence",
+      "url": "https://x.com/elonmusk/status/2120102767624880364",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "xAI"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Starlink software for training super intelligence",
+          "url": "https://x.com/elonmusk/status/2120102767624880364"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2120099798078656909",
       "account": "@elonmusk",
@@ -5800,5 +5825,5 @@
       ]
     }
   ],
-  "notes": "10.11. 05:30: 22 neue Musk-Posts seit 09.11. 17:03, überwiegend Politik (Urteil gegen Russell Brand, Großbritannien). Firmenbezogen: Grok findet laut SpaceX-Launchchef Fremdkörper zu 99,9 %, Memphis-Steuern aus dem SpaceX-Rechenzentrum 54 Mio. $, Starlink in Vietnam, Jay Leno testet FSD, Lob für Shotwell, Spitze gegen Anthropic. @RocketLab: Rekordquartal und Neutron-Aufträge über 515 Mio. $. @robotaxi: drei Werbe-Posts zur CoRL in Austin. Keine neuen Posts von SpaceX, Tesla, Starlink, xAI, Neuralink, Boring. Nichts Wichtiges."
+  "notes": "10.11. 13:10: Seit 11:30 ein neuer Musk-Post mit Firmenbezug (Starlink-Software eigne sich fürs Training von Superintelligenz) und zwei Emoji-Antworten. Keine neuen Posts von SpaceX, Tesla, Starlink, xAI, Neuralink, Boring, Rocket Lab. Nichts Wichtiges."
 }
