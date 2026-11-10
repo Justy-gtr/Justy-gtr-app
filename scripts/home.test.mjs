@@ -141,7 +141,9 @@ test("Marvell-Karte bleibt grau ohne Stimmungsdaten, RKLB bleibt in Frage und Me
   assert.equal(lamp.includes("is-gut"), false);
   assert.equal(lamp.includes("is-gemischt"), false);
   assert.equal(lamp.includes("is-stale"), false);
-  assert.match(ticks, /data-symbol="SPCX"[^>]*data-mood="gut"|mood-lamp is-gut[^"]*" data-symbol="SPCX"/);
+  const spcxMood = sentiment.symbols.SPCX.mood;
+  assert.match(spcxMood, /^(gut|gemischt|schlecht)$/);
+  assert.match(ticks, new RegExp(`data-symbol="SPCX"[^>]*data-mood="${spcxMood}"|mood-lamp is-${spcxMood}[^"]*" data-symbol="SPCX"`));
   assert.match(html, /class="wager-text"[^>]*>[^<]*RKLB/);
   const alerts = html.match(/<section class="card home-alerts"[\s\S]*?<\/section>/)[0];
   assert.match(alerts, />RKLB</);

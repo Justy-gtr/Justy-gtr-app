@@ -453,6 +453,7 @@ async function refresh(manual) {
   try {
     data = await loadData();
     render();
+    if (nav.topKind() === "updates") openDetail("open-updates", {}, true);
     if (manual) toast("Aktualisiert");
   } catch {
     if (manual) toast("Keine Verbindung. Gespeicherte Daten bleiben.");
