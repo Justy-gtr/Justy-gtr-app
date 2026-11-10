@@ -1,34 +1,34 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T08:05:00+01:00",
+  "updatedAt": "2026-11-10T08:10:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 55,
       "postsCount": 25,
-      "reason": "Viel Vorfreude auf Starship-Flug 15 am Freitag mit Doppel-Fang am Turm, dazu Pläne für ein 24-Mrd.-$-Rechenzentrum in Starbase.",
+      "reason": "Viel Vorfreude auf Starship-Flug 15 am Freitag: Booster B22 rollt zur Rampe, beide Stufen sollen am Turm gefangen werden. Dazu Pläne für ein 24-Mrd.-$-Rechenzentrum in Starbase.",
       "sources": [
         {
           "title": "Starship Flight 15 am 13. Nov.: Booster und Ship sollen gefangen werden",
           "url": "https://x.com/Stellarixorine/status/2120025510441095590"
         },
         {
-          "title": "SpaceX-Starts 10.–17. Nov. inkl. Starship Flight 15",
-          "url": "https://x.com/BassonBrain/status/2120023880366518620"
+          "title": "Booster B22 rollt zur Rampe für Flug 15",
+          "url": "https://x.com/DimaZeniuk/status/2120050024188887378"
         },
         {
           "title": "24-Mrd.-$-Rechenzentrum und Gaskraftwerk in Starbase (Bloomberg)",
           "url": "https://x.com/AerialKiwi/status/2120046422104125828"
         }
       ],
-      "updatedAt": "2026-11-10T08:05:00+01:00"
+      "updatedAt": "2026-11-10T08:10:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 30,
       "postsCount": 25,
-      "reason": "Gesprochen wird über den Robotaxi-Ausbau (+5,5 % am Montag), das Cybertruck-Aus zugunsten Cybercab und eine neue Solarfabrik; einige erwähnen Insider-Verkäufe.",
+      "reason": "Gesprochen wird über den Robotaxi-Ausbau (jetzt auch San Antonio, +5,5 % am Montag), das Cybertruck-Aus zugunsten Cybercab und eine neue Solarfabrik; einige erwähnen Insider-Verkäufe.",
       "sources": [
         {
           "title": "TSLA +5,5 % am Montag nach Robotaxi-Ausbau",
@@ -43,7 +43,7 @@
           "url": "https://x.com/SuperMariossss/status/2120022503699669487"
         }
       ],
-      "updatedAt": "2026-11-10T08:05:00+01:00"
+      "updatedAt": "2026-11-10T08:10:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/RCapitalX/status/2120035503689056558"
         }
       ],
-      "updatedAt": "2026-11-10T08:05:00+01:00"
+      "updatedAt": "2026-11-10T08:10:00+01:00"
     }
   }
 }
