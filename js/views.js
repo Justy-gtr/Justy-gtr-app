@@ -193,7 +193,7 @@ export function renderShell(ctx) {
   }
 }
 
-const HOME_FOCUS = ["SPCX", "TSLA", "RKLB"];
+const HOME_FOCUS = ["SPCX", "TSLA", "MRVL"];
 
 function focusTickers(data) {
   const all = data?.prices?.tickers || [];
