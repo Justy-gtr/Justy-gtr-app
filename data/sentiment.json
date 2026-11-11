@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T16:12:00+01:00",
+  "updatedAt": "2026-11-11T16:20:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
       "score": -5,
-      "postsCount": 16,
-      "reason": "SpaceX: Kurs erholt sich auf rund 145 $ und dreht ins Plus. Das Anthropic-Gerücht bleibt Thema, viele halten es für unwichtig. Fans hoffen auf Flug 15.",
+      "postsCount": 18,
+      "reason": "SpaceX: Kurs um 145 $, leicht im Plus. Fans halten das Anthropic-Gerücht für Taktik vor deren Börsengang, ein großer Account warnt vor einer Bullenfalle.",
       "sources": [
         {
-          "title": "SPCX bei 145,72 $",
-          "url": "https://x.com/steve_bristow/status/2120534357140295773"
+          "title": "Anthropic-Gerücht nur Taktik?",
+          "url": "https://x.com/TrueNorthTake/status/2120536378702500307"
+        },
+        {
+          "title": "Warnung vor Bullenfalle bei 145 $",
+          "url": "https://x.com/0x_Discover/status/2120536530326327412"
         },
         {
           "title": "Anthropic-Gerücht: Folgen für den Umsatz",
           "url": "https://x.com/JaredKubin/status/2120528985071243744"
-        },
-        {
-          "title": "Dan Ives: 20–25 % Politik-Abschlag",
-          "url": "https://x.com/PatMcClain/status/2120532760259375486"
         }
       ],
-      "updatedAt": "2026-11-11T16:12:00+01:00"
+      "updatedAt": "2026-11-11T16:20:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,28 +43,28 @@
           "url": "https://x.com/anthonysagami/status/2120519413925343691"
         }
       ],
-      "updatedAt": "2026-11-11T16:12:00+01:00"
+      "updatedAt": "2026-11-11T16:20:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 35,
-      "postsCount": 18,
-      "reason": "Rocket Lab: Rund 5–6 % im Plus, 50 % über dem Tief von vor vier Tagen. Gefeiert werden Rekordquartal und Neutron-Aufträge, Analysten senken Ziele leicht.",
+      "score": 38,
+      "postsCount": 20,
+      "reason": "Rocket Lab: Kurs weiter stark, Neutron-Startpreis steigt um 27 % auf 70 Mio. $ wegen hoher Nachfrage. Charttechniker sehen bei 66–72 $ eine Hürde.",
       "sources": [
+        {
+          "title": "Neutron-Preis steigt auf 70 Mio. $",
+          "url": "https://x.com/SpaceSector001/status/2120535984882225485"
+        },
         {
           "title": "RKLB +50 % in vier Handelstagen",
           "url": "https://x.com/jrouldz/status/2120533768129724690"
         },
         {
-          "title": "Rekordumsatz 268 Mio. $ im Q3",
-          "url": "https://x.com/CoinMarketCap/status/2120509402843119990"
-        },
-        {
-          "title": "Morgan Stanley: Kursziel 103 $",
-          "url": "https://x.com/pharris667/status/2120511788470964380"
+          "title": "Widerstand bei 66–72 $",
+          "url": "https://x.com/AsafNaamani/status/2120536295596310930"
         }
       ],
-      "updatedAt": "2026-11-11T16:12:00+01:00"
+      "updatedAt": "2026-11-11T16:20:00+01:00"
     }
   }
 }
