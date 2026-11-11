@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-11T18:00:00+01:00",
+  "asOf": "2026-11-11T20:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -77,6 +77,154 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2120590521253126183",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-11T19:52:33+01:00",
+      "summaryDe": "Musk teilt den SpaceX-Post vom Vortag: Booster 22, der erste Super-Heavy-V3-Booster, der zum Fangen an den Startplatz zurückkehren soll, steht an der Startrampe in Starbase. Er wurde vorher am Turm getestet, auch mit einem Klemmtest in Fanghöhe. Für Flight 15 (Fr 23:45) fehlt weiter die FAA-Lizenz.",
+      "originalText": "Starship Super Heavy rocket booster moved to launch pad",
+      "url": "https://x.com/elonmusk/status/2120590521253126183",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Booster an der Rampe (11.11., 19:52)",
+          "url": "https://x.com/elonmusk/status/2120590521253126183"
+        },
+        {
+          "title": "@SpaceX: Booster 22 an der Startrampe (10.11.)",
+          "url": "https://x.com/SpaceX/status/2120220290219208884"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120589832963711162",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-11T19:49:49+01:00",
+      "summaryDe": "Musk wirbt für Teslas Megapack-Speicher („sorgen für Netzstabilität, damit es nie einen Blackout gibt“) und teilt einen Tesla-Energy-Post: Mit Echtzeit-Simulation (CHIL) habe Tesla 444 Megapacks am Melbourne Renewable Energy Hub vorab geprüft, 600 MW / 1,6 GWh gingen Monate früher ans Netz. Werbung, keine neuen Zahlen.",
+      "originalText": "Tesla Megapacks are designed to ensure grid stability, so that you never have a blackout",
+      "url": "https://x.com/elonmusk/status/2120589832963711162",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Megapacks (11.11., 19:49)",
+          "url": "https://x.com/elonmusk/status/2120589832963711162"
+        },
+        {
+          "title": "Tesla Energy: CHIL in Melbourne (11.11.)",
+          "url": "https://x.com/i/status/2120320369282437219"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120572352073433380",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-11T18:40:21+01:00",
+      "summaryDe": "Musk reagiert auf die unbestätigte Mitschrift, Anthropic wolle den SpaceX-Rechenvertrag nicht über Mitte 2027 verlängern: „Wir nehmen die Rechenleistung gern zurück. Kein Problem. Aber ich glaube, das Gegenteil wird passieren.“ Er meint damit, dass Anthropic eher mehr statt weniger Rechenleistung brauchen wird. Eine Bestätigung oder ein Dementi von Anthropic ist das nicht.",
+      "originalText": "@aaronburnett We would be happy to take the compute back. No problem.\n\nBut I think the opposite is going to happen.",
+      "url": "https://x.com/elonmusk/status/2120572352073433380",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Anthropic"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „We would be happy to take the compute back“ (11.11., 18:40)",
+          "url": "https://x.com/elonmusk/status/2120572352073433380"
+        },
+        {
+          "title": "@aaronburnett: Anthropic-Kommentar ohne Kontext (11.11.)",
+          "url": "https://x.com/aaronburnett/status/2120561304247083448"
+        },
+        {
+          "title": "Wccftech: Musk antwortet auf Anthropic-Bericht (11.11.)",
+          "url": "https://wccftech.com/anthropic-believes-its-partnership-with-spacex-wont-last-beyond-q2-2027-and-elon-musk-now-says-well-be-happy-to-take-the-compute-back/"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120565179276832797",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-11T18:11:51+01:00",
+      "summaryDe": "Musk teilt die Meldung, dass Teslas Fahrassistenz (FSD Supervised) in Finnland zugelassen ist; der Rollout beginne bald. Die EU-weite Entscheidung steht noch aus.",
+      "originalText": "Tesla self-driving now approved in Finland",
+      "url": "https://x.com/elonmusk/status/2120565179276832797",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: FSD in Finnland (11.11., 18:11)",
+          "url": "https://x.com/elonmusk/status/2120565179276832797"
+        },
+        {
+          "title": "Tesla-Konto: „Now approved in Finland“ (11.11.)",
+          "url": "https://x.com/i/status/2120400770952745439"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120565056429814073",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-11T18:11:22+01:00",
+      "summaryDe": "Musk: Um mehr vom Cybertruck-Bestellrückstau abzuarbeiten, läuft die Produktion bis Ende Sommer 2027 weiter – vorher hieß es Mitte 2027. In einer Antwort schreibt er, das sei aus Gewinnsicht „nicht der klügste Schritt“, aber es müsse Platz für Sentimentalität geben. Ein genaues Enddatum oder Stückzahlen nennt er nicht (Electrek, TeslaNorth).",
+      "originalText": "In order to work through more of the Cybertruck order backlog, production will be extended through the end of summer 2027",
+      "url": "https://x.com/elonmusk/status/2120565056429814073",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Cybertruck-Produktion bis Ende Sommer 2027 (11.11., 18:11)",
+          "url": "https://x.com/elonmusk/status/2120565056429814073"
+        },
+        {
+          "title": "@elonmusk: „not the smartest move from a profit-maximizing standpoint“ (11.11., 18:32)",
+          "url": "https://x.com/elonmusk/status/2120570459335131606"
+        },
+        {
+          "title": "Electrek: Tesla verlängert Cybertruck-Produktion (11.11.)",
+          "url": "https://electrek.co/2026/11/11/tesla-extends-cybertruck-production-summer-2027-fan-backlash/"
+        },
+        {
+          "title": "TeslaNorth: Cybertruck-Produktion bis Sommer 2027 (11.11.)",
+          "url": "https://teslanorth.com/2026/11/11/cybertruck-production-extended-summer-2027/"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2120444551731270081",
       "account": "@elonmusk",
@@ -6187,5 +6335,5 @@
       ]
     }
   ],
-  "notes": "11.11. 18:00: Seit 10:12 kein neuer Post von Musk oder den offiziellen Konten (X-Abfrage). Nichts Wichtiges."
+  "notes": "11.11. 20:00: Neue Musk-Posts: Antwort auf das Anthropic-Gerücht („nehmen die Rechenleistung gern zurück“), Cybertruck-Produktion bis Ende Sommer 2027, FSD in Finnland, Booster 22 an der Rampe, Megapacks (X-Abfrage)."
 }

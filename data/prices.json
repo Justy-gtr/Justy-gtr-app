@@ -6380,15 +6380,23 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "SPCX hat das Tagesminus aufgeholt: In New York um 18:00 bei 144,06 $ (+0,7 % zum Schluss von 143,09 $), Tagestief 138,62 $, Hoch 145,16 $; auf Xetra schloss die Aktie bei 129,26 € (+1,4 % zum Vortag 127,52 €) (Yahoo). Gegen den Nasdaq (+2,1 %) bleibt SPCX aber zurück. Belastung bleibt eine unbestätigte Mitschrift auf X (Konto @jukan05): Anthropic soll Analysten gesagt haben, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Bis 18:00 gibt es weder Bestätigung noch Dementi und keine neue SEC-Meldung (TeslaNorth, SEC). Warum das zählt: Anthropic stand im dritten Quartal laut 10-Q und Bloomberg für 34,5 % des SpaceX-Umsatzes, die Verträge sind nach Januar bzw. März 2027 mit 90 Tagen Frist kündbar (Anthropic-S-1 laut TokenPost). Stützend: Die FCC hat die Anträge zum Kauf der 800-MHz-Frequenzen von Grain zur Prüfung angenommen – manche Börsendienste schrieben fälschlich von einer Genehmigung (Teslarati, StreetInsider); KeyBanc meldet 5 % mehr Starlink-App-Downloads im Oktober (StreetInsider). Die US-Raumfahrtbehörde SDA zahlt SpaceX 9,9 Mio. $ für eine Studie, ob die Starlink-Laser („Plaser“) für Raketenwarnung taugen (SpaceNews). Die Wall Street läuft technologielastig: Nasdaq um 18:00 +2,1 %, S&P 500 +1,4 %, Nvidia +4,5 %, CoreWeave nach starken Zahlen und höherer Jahresprognose +26 % (Yahoo, Investopedia, Benzinga). Der Dax schloss bei 26.663 Punkten (+1,2 %, Yahoo). Gegenwind bleibt die Fed: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht „grenzwertig beunruhigend“ (CNBC). Flight 15 (Fr 23:45) wartet weiter auf die FAA-Lizenz; USSF-627 startet Do 03:35.",
+      "why": "SPCX rutscht am Abend wieder leicht ins Minus: In New York um 20:00 bei 142,32 $ (−0,5 % zum Schluss von 143,09 $), Tagesspanne 138,62–145,16 $; in Stuttgart 128,60 € (+0,7 % zum Vortag) (Yahoo). Gegen den Nasdaq (+2,2 %) bleibt SPCX deutlich zurück. Belastung bleibt eine unbestätigte Mitschrift auf X (Konto @jukan05): Anthropic soll Analysten gesagt haben, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Musk antwortete um 18:40 auf X: „Wir nehmen die Rechenleistung gern zurück. Kein Problem. Aber ich glaube, das Gegenteil wird passieren.“ Eine Bestätigung oder ein Dementi von Anthropic gibt es weiter nicht, auch keine neue SEC-Meldung (X, Wccftech, TeslaNorth, SEC). Warum das zählt: Anthropic stand im dritten Quartal laut 10-Q und Bloomberg für 34,5 % des SpaceX-Umsatzes, die Verträge sind nach Januar bzw. März 2027 mit 90 Tagen Frist kündbar (Anthropic-S-1 laut TokenPost). Stützend: Die FCC hat die Anträge zum Kauf der 800-MHz-Frequenzen von Grain zur Prüfung angenommen – manche Börsendienste schrieben fälschlich von einer Genehmigung (Teslarati, StreetInsider); KeyBanc meldet 5 % mehr Starlink-App-Downloads im Oktober (StreetInsider). Die Wall Street bleibt technologielastig fest: Nasdaq um 20:00 +2,2 %, S&P 500 +1,6 %, Nvidia +4,8 % trotz drohender Kongress-Vorladung für Chef Huang; CoreWeave hatte nach starken Zahlen den KI-Sektor angeschoben (Yahoo, Investopedia, Bloomberg Law). Der Dax schloss bei 26.663 Punkten (+1,2 %, Yahoo). Gegenwind bleibt die Fed: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht „grenzwertig beunruhigend“ (CNBC). Booster 22 steht für Flight 15 (Fr 23:45) an der Rampe, die FAA-Lizenz fehlt weiter; USSF-627 startet Do 03:35.",
       "whySources": [
         {
           "title": "Yahoo Finance SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Yahoo Finance SPX.DE",
-          "url": "https://finance.yahoo.com/quote/SPX.DE/"
+          "title": "Yahoo Finance SPX.SG",
+          "url": "https://finance.yahoo.com/quote/SPX.SG/"
+        },
+        {
+          "title": "@elonmusk: „We would be happy to take the compute back“ (11.11., 18:40)",
+          "url": "https://x.com/elonmusk/status/2120572352073433380"
+        },
+        {
+          "title": "Wccftech: Musk antwortet auf Anthropic-Bericht (11.11.)",
+          "url": "https://wccftech.com/anthropic-believes-its-partnership-with-spacex-wont-last-beyond-q2-2027-and-elon-musk-now-says-well-be-happy-to-take-the-compute-back/"
         },
         {
           "title": "TeslaNorth: Anthropic-Gerücht weiter unbestätigt (11.11.)",
@@ -6401,6 +6409,10 @@
         {
           "title": "StreetInsider: SpaceX steigt, FCC und KeyBanc (11.11.)",
           "url": "https://www.streetinsider.com/Investing/SpaceX+stock+rises+as+FCC+approves+nationwide+spectrum+deal/27327470.html"
+        },
+        {
+          "title": "@SpaceX: Booster 22 an der Startrampe (10.11.)",
+          "url": "https://x.com/SpaceX/status/2120220290219208884"
         },
         {
           "title": "SpaceNews: SDA-Studie zu SpaceX-Lasern",
@@ -6447,12 +6459,16 @@
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
+          "title": "Yahoo Finance ^GSPC",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
           "title": "Investopedia: Nasdaq und S&P 500 steigen, Chipwerte und CoreWeave vorn (11.11.)",
           "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11112026-12248789"
         },
         {
-          "title": "Benzinga: Was ist los mit Marvell? (11.11.)",
-          "url": "https://www.benzinga.com/markets/tech/26/11/63147679/whats-going-on-with-marvell-technology-stock-wednesday-6"
+          "title": "Yahoo Finance NVDA",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
           "title": "Yahoo Finance CRWV",
@@ -6465,6 +6481,10 @@
         {
           "title": "CNBC: Goolsbee nennt Inflationsbericht „borderline disturbing“ (11.11.)",
           "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html"
+        },
+        {
+          "title": "Bloomberg Law: Kongress will Huang vorladen (11.11.)",
+          "url": "https://news.bloomberglaw.com/artificial-intelligence/congress-set-to-subpoena-nvidias-jensen-huang-republican-says"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -20494,31 +20514,47 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "In New York um 18:00 bei 392,96 $ (+3,5 % zum Schluss von 379,78 $, Tageshoch 395,43 $); auf Xetra Schluss bei 353,95 € (+5,1 % zum Vortag 336,85 €) (Yahoo). Tesla läuft mit dem Tech-Markt. Die Wall Street läuft technologielastig: Nasdaq um 18:00 +2,1 %, S&P 500 +1,4 %, Nvidia +4,5 %, CoreWeave nach starken Zahlen und höherer Jahresprognose +26 % (Yahoo, Investopedia, Benzinga). Der Dax schloss bei 26.663 Punkten (+1,2 %, Yahoo). Gegenwind bleibt die Fed: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht „grenzwertig beunruhigend“ (CNBC). Eigener Rückenwind: Finnland hat Teslas „Assisted Driving“ zugelassen, die EU-Entscheidung steht noch aus (Traficom, StreetInsider). In Texas hat Tesla laut Zulassungsdaten erstmals mehr Robotaxis registriert als Waymo (1.302 gegen 1.297; EV Wire). Morgan Stanley hob das Kursziel von 400 auf 410 $ (Halten), Jefferies stufte auf Halten ab (MarketBeat). Bremse: Teslas Einzelhandelsverkäufe in China fielen im Oktober um 66,1 % auf 8.817 Autos (CPCA laut TIKR).",
+      "why": "In New York um 20:00 bei 394,54 $ (+3,9 % zum Schluss von 379,78 $, Tageshoch 395,43 $); in Stuttgart 353,90 € (+4,2 %) (Yahoo). Tesla läuft mit dem Tech-Markt. Die Wall Street bleibt technologielastig fest: Nasdaq um 20:00 +2,2 %, S&P 500 +1,6 %, Nvidia +4,8 % trotz drohender Kongress-Vorladung für Chef Huang; CoreWeave hatte nach starken Zahlen den KI-Sektor angeschoben (Yahoo, Investopedia, Bloomberg Law). Der Dax schloss bei 26.663 Punkten (+1,2 %, Yahoo). Gegenwind bleibt die Fed: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht „grenzwertig beunruhigend“ (CNBC). Eigene Nachrichten: Musk verlängert die Cybertruck-Produktion bis Ende Sommer 2027 (statt Mitte 2027), um mehr vom Bestellrückstau abzuarbeiten; Tesla hatte zugleich die Preise um bis zu 10 % erhöht (X, Electrek). Finnland hat Teslas „Assisted Driving“ zugelassen, die EU-Entscheidung steht noch aus (Traficom, StreetInsider). In Texas hat Tesla laut Zulassungsdaten erstmals mehr Robotaxis registriert als Waymo (1.302 gegen 1.297; EV Wire). Morgan Stanley hob das Kursziel von 400 auf 410 $ (Halten), Jefferies stufte auf Halten ab (MarketBeat). Bremse: Teslas Einzelhandelsverkäufe in China fielen im Oktober um 66,1 % auf 8.817 Autos (CPCA laut TIKR).",
       "whySources": [
         {
           "title": "Yahoo Finance TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "Yahoo Finance TL0.DE",
-          "url": "https://finance.yahoo.com/quote/TL0.DE/"
+          "title": "Yahoo Finance TL0.SG",
+          "url": "https://finance.yahoo.com/quote/TL0.SG/"
         },
         {
-          "title": "StreetInsider: Tesla steigt nach Zulassung in Finnland (11.11.)",
-          "url": "https://www.streetinsider.com/Investing/Tesla+shares+rise+on+Finlands+assisted+driving+approval/27327467.html"
+          "title": "@elonmusk: Cybertruck-Produktion bis Ende Sommer 2027 (11.11., 18:11)",
+          "url": "https://x.com/elonmusk/status/2120565056429814073"
+        },
+        {
+          "title": "Electrek: Tesla verlängert Cybertruck-Produktion (11.11.)",
+          "url": "https://electrek.co/2026/11/11/tesla-extends-cybertruck-production-summer-2027-fan-backlash/"
+        },
+        {
+          "title": "TeslaNorth: Cybertruck-Produktion bis Sommer 2027 (11.11.)",
+          "url": "https://teslanorth.com/2026/11/11/cybertruck-production-extended-summer-2027/"
+        },
+        {
+          "title": "@elonmusk: FSD in Finnland zugelassen (11.11., 18:11)",
+          "url": "https://x.com/elonmusk/status/2120565179276832797"
         },
         {
           "title": "Yahoo Finance ^IXIC",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
+          "title": "Yahoo Finance ^GSPC",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
           "title": "Investopedia: Nasdaq und S&P 500 steigen, Chipwerte und CoreWeave vorn (11.11.)",
           "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11112026-12248789"
         },
         {
-          "title": "Benzinga: Was ist los mit Marvell? (11.11.)",
-          "url": "https://www.benzinga.com/markets/tech/26/11/63147679/whats-going-on-with-marvell-technology-stock-wednesday-6"
+          "title": "Yahoo Finance NVDA",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
           "title": "Yahoo Finance CRWV",
@@ -20531,6 +20567,14 @@
         {
           "title": "CNBC: Goolsbee nennt Inflationsbericht „borderline disturbing“ (11.11.)",
           "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html"
+        },
+        {
+          "title": "Bloomberg Law: Kongress will Huang vorladen (11.11.)",
+          "url": "https://news.bloomberglaw.com/artificial-intelligence/congress-set-to-subpoena-nvidias-jensen-huang-republican-says"
+        },
+        {
+          "title": "StreetInsider: Tesla steigt nach Zulassung in Finnland (11.11.)",
+          "url": "https://www.streetinsider.com/Investing/Tesla+shares+rise+on+Finlands+assisted+driving+approval/27327467.html"
         },
         {
           "title": "Traficom: Tesla Assisted Driving in Finnland erlaubt (11.11.)",
@@ -32199,7 +32243,7 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Rocket Lab baut das Plus aus: In New York um 18:00 bei 67,62 $ (+7,8 % zum Schluss von 62,71 $, Hoch 68,26 $); in Stuttgart um 17:42 bei 60,90 € (+8,9 % zum Vortag 55,90 €) (Yahoo). Eine eigene neue Meldung gibt es heute nicht; Käufer arbeiten laut 24/7 Wall St. weiter die Q3-Zahlen ab (Rekordumsatz 267,8 Mio. $, +73 %, Auftragsbestand 3,57 Mrd. $, Neutron-Grundpreis 70 statt 55 Mio. $). Dazu kommt eine breite Erholung bei Raumfahrtwerten: Firefly +10,9 %, AST SpaceMobile +8,4 % (Yahoo, 18:00), während SpaceX kaum mitläuft. Am Dienstag meldete Rocket Lab außerdem, dass die beiden selbst gebauten ESCAPADE-Sonden für die NASA ihre Brennmanöver Richtung Mars geschafft haben (Rocket Lab). Das Analystenbild bleibt gespalten: Needham bleibt bei „Kaufen“, senkt das Kursziel aber von 120 auf 100 $ (TradingView, MarketBeat); Piper Sandler senkte auf 58 $, Stifel bleibt bei 132 $ (Defense World, TIKR). Risiko: Neutron-Erstflug erst 2027, höherer Verlust durch die Iridium-Übernahme (24/7 Wall St.). Die Wall Street läuft technologielastig: Nasdaq um 18:00 +2,1 %, S&P 500 +1,4 %, Nvidia +4,5 %, CoreWeave nach starken Zahlen und höherer Jahresprognose +26 % (Yahoo, Investopedia, Benzinga). Der Dax schloss bei 26.663 Punkten (+1,2 %, Yahoo). Gegenwind bleibt die Fed: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht „grenzwertig beunruhigend“ (CNBC). Electron-Start 100 am Sa 14.11. ab 06:30.",
+      "why": "Rocket Lab bleibt klar im Plus: In New York um 20:00 bei 66,84 $ (+6,6 % zum Schluss von 62,71 $, Hoch 68,26 $); in Stuttgart 60,40 € (+8,1 % zum Vortag 55,90 €) (Yahoo). Laut TipRanks summiert sich das Plus seit vier Tagen auf rund 44 %. Eine eigene neue Meldung gibt es heute nicht; Käufer arbeiten weiter die Q3-Zahlen ab (Rekordumsatz 267,8 Mio. $, +73 %, Auftragsbestand 3,57 Mrd. $, neue Neutron-Aufträge über 515 Mio. $, Neutron-Grundpreis 70 statt 55 Mio. $) (24/7 Wall St., TipRanks). Dazu kommt eine breite Erholung bei Raumfahrtwerten: Firefly +10,7 %, AST SpaceMobile +8,0 % (Yahoo, 20:00), während SpaceX nicht mitläuft. Analysten: Morgan Stanley bleibt bei „Übergewichten“ mit Kursziel 103 $ und hebt den erwarteten Neutron-Preis für 2030 auf 66 Mio. $ (TipRanks); Barclays senkt das Ziel von 85 auf 82 $, bleibt aber bei „Übergewichten“ (Gelonghui via Futu); Needham senkt von 120 auf 100 $ (Kaufen). Risiko: Neutron-Erstflug erst 2027, der Q3-Cashflow profitierte von einer einmaligen 70-Mio.-$-Zahlung, und die Iridium-Übernahme erhöht die Aktienzahl (TipRanks, 24/7 Wall St.). Die Wall Street bleibt technologielastig fest: Nasdaq um 20:00 +2,2 %, S&P 500 +1,6 %, Nvidia +4,8 % trotz drohender Kongress-Vorladung für Chef Huang; CoreWeave hatte nach starken Zahlen den KI-Sektor angeschoben (Yahoo, Investopedia, Bloomberg Law). Der Dax schloss bei 26.663 Punkten (+1,2 %, Yahoo). Gegenwind bleibt die Fed: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht „grenzwertig beunruhigend“ (CNBC). Electron-Start 100 am Sa 14.11. ab 06:30.",
       "whySources": [
         {
           "title": "Yahoo Finance RKLB",
@@ -32210,12 +32254,16 @@
           "url": "https://finance.yahoo.com/quote/6RJ0.SG/"
         },
         {
-          "title": "24/7 Wall St.: Rocket Lab und AST SpaceMobile +8 % (11.11.)",
-          "url": "https://247wallst.com/investing/2026/11/11/rocket-lab-and-ast-spacemobile-rally-8-as-space-stocks-rebound-spacex-holds-steady/"
+          "title": "TipRanks: Morgan Stanley zu Rocket Lab (11.11.)",
+          "url": "https://www.tipranks.com/news/article/get-ready-for-whats-next-says-morgan-stanley-about-rocket-lab-stock"
         },
         {
-          "title": "Rocket Lab: ESCAPADE-Sonden auf Mars-Kurs (10.11.)",
-          "url": "https://rocketlabcorp.com/updates/twin-satellites-built-by-rocket-lab-for-nasas-escapade-mission-complete-successful-trans-mars-injection-burns-setting-course-for-the-red-planet/"
+          "title": "Futu/Gelonghui: Barclays senkt Rocket-Lab-Ziel auf 82 $ (11.11.)",
+          "url": "https://news.futunn.com/post/1004136994/barclays-lowers-rocket-lab-price-target-to-82"
+        },
+        {
+          "title": "24/7 Wall St.: Rocket Lab und AST SpaceMobile +8 % (11.11.)",
+          "url": "https://247wallst.com/investing/2026/11/11/rocket-lab-and-ast-spacemobile-rally-8-as-space-stocks-rebound-spacex-holds-steady/"
         },
         {
           "title": "Yahoo Finance FLY",
@@ -32224,6 +32272,10 @@
         {
           "title": "Yahoo Finance ASTS",
           "url": "https://finance.yahoo.com/quote/ASTS/"
+        },
+        {
+          "title": "Rocket Lab: ESCAPADE-Sonden auf Mars-Kurs (10.11.)",
+          "url": "https://rocketlabcorp.com/updates/twin-satellites-built-by-rocket-lab-for-nasas-escapade-mission-complete-successful-trans-mars-injection-burns-setting-course-for-the-red-planet/"
         },
         {
           "title": "TradingView: Needham senkt Kursziel auf 100 $ (11.11.)",
@@ -32258,12 +32310,16 @@
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
+          "title": "Yahoo Finance ^GSPC",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
           "title": "Investopedia: Nasdaq und S&P 500 steigen, Chipwerte und CoreWeave vorn (11.11.)",
           "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11112026-12248789"
         },
         {
-          "title": "Benzinga: Was ist los mit Marvell? (11.11.)",
-          "url": "https://www.benzinga.com/markets/tech/26/11/63147679/whats-going-on-with-marvell-technology-stock-wednesday-6"
+          "title": "Yahoo Finance NVDA",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
           "title": "Yahoo Finance CRWV",
@@ -32276,6 +32332,10 @@
         {
           "title": "CNBC: Goolsbee nennt Inflationsbericht „borderline disturbing“ (11.11.)",
           "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html"
+        },
+        {
+          "title": "Bloomberg Law: Kongress will Huang vorladen (11.11.)",
+          "url": "https://news.bloomberglaw.com/artificial-intelligence/congress-set-to-subpoena-nvidias-jensen-huang-republican-says"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -45248,7 +45308,7 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Marvell ist einer der stärksten Chipwerte des Tages: In New York um 18:00 bei 174,34 $ (+12,9 % zum Schluss von 154,39 $, Hoch 174,47 $); in Stuttgart Schluss bei 155,88 € (+12,5 %) (Yahoo). Treiber ist die KI-Chip-Erholung nach den starken CoreWeave-Zahlen samt höherer Jahresprognose; Marvell schneidet besser ab als der Sektor, liegt aber laut Benzinga weiter unter seinen 20-, 50- und 200-Tage-Linien (Widerstand um 171 $, Unterstützung um 163 $). Die Wall Street läuft technologielastig: Nasdaq um 18:00 +2,1 %, S&P 500 +1,4 %, Nvidia +4,5 %, CoreWeave nach starken Zahlen und höherer Jahresprognose +26 % (Yahoo, Investopedia, Benzinga). Der Dax schloss bei 26.663 Punkten (+1,2 %, Yahoo). Gegenwind bleibt die Fed: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht „grenzwertig beunruhigend“ (CNBC). Bremse bleibt der Lumentum-Deal, dem Arbitrageure laut Bloomberg nur etwa 50:50 Chancen geben. Nächste Signale: Cisco und Applied Materials Do nach US-Schluss, Nvidia am 17.11., eigene Zahlen am 1.12. (Benzinga).",
+      "why": "Marvell bleibt einer der stärksten Chipwerte des Tages: In New York um 20:00 bei 172,45 $ (+11,7 % zum Schluss von 154,39 $, Hoch 174,53 $); in Stuttgart 155,72 € (+12,4 %) (Yahoo). Treiber ist die KI-Chip-Erholung nach den starken CoreWeave-Zahlen samt höherer Jahresprognose; Marvell schneidet besser ab als der Sektor, liegt aber laut Benzinga weiter unter seinen 20-, 50- und 200-Tage-Linien (Widerstand um 171 $, Unterstützung um 163 $). Die Wall Street bleibt technologielastig fest: Nasdaq um 20:00 +2,2 %, S&P 500 +1,6 %, Nvidia +4,8 % trotz drohender Kongress-Vorladung für Chef Huang; CoreWeave hatte nach starken Zahlen den KI-Sektor angeschoben (Yahoo, Investopedia, Bloomberg Law). Der Dax schloss bei 26.663 Punkten (+1,2 %, Yahoo). Gegenwind bleibt die Fed: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht „grenzwertig beunruhigend“ (CNBC). Bremse bleibt der Lumentum-Deal, dem Arbitrageure laut Bloomberg nur etwa 50:50 Chancen geben. Nächste Signale: Cisco und Applied Materials Do nach US-Schluss, Nvidia am 17.11., eigene Zahlen am 1.12. (Benzinga).",
       "whySources": [
         {
           "title": "Yahoo Finance MRVL",
@@ -45259,20 +45319,24 @@
           "url": "https://finance.yahoo.com/quote/9MW.SG/"
         },
         {
-          "title": "Yahoo Finance NVDA",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Benzinga: Was ist los mit Marvell? (11.11.)",
+          "url": "https://www.benzinga.com/markets/tech/26/11/63147679/whats-going-on-with-marvell-technology-stock-wednesday-6"
         },
         {
           "title": "Yahoo Finance ^IXIC",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
+          "title": "Yahoo Finance ^GSPC",
+          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+        },
+        {
           "title": "Investopedia: Nasdaq und S&P 500 steigen, Chipwerte und CoreWeave vorn (11.11.)",
           "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11112026-12248789"
         },
         {
-          "title": "Benzinga: Was ist los mit Marvell? (11.11.)",
-          "url": "https://www.benzinga.com/markets/tech/26/11/63147679/whats-going-on-with-marvell-technology-stock-wednesday-6"
+          "title": "Yahoo Finance NVDA",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
           "title": "Yahoo Finance CRWV",
@@ -45285,6 +45349,10 @@
         {
           "title": "CNBC: Goolsbee nennt Inflationsbericht „borderline disturbing“ (11.11.)",
           "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html"
+        },
+        {
+          "title": "Bloomberg Law: Kongress will Huang vorladen (11.11.)",
+          "url": "https://news.bloomberglaw.com/artificial-intelligence/congress-set-to-subpoena-nvidias-jensen-huang-republican-says"
         },
         {
           "title": "KuCoin: Chipwerte vorbörslich fester, Marvell +7,6 %",
