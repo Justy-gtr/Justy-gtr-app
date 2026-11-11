@@ -1,12 +1,12 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T16:25:00+01:00",
+  "updatedAt": "2026-11-11T16:28:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
       "score": -5,
-      "postsCount": 20,
+      "postsCount": 22,
       "reason": "SpaceX: Kurs um 145 $. Fans sehen das Anthropic-Gerücht als Analystennotiz ohne Bestätigung. Neu: Pentagon zahlt 9,9 Mio. $ für eine Starlink-Laserstudie.",
       "sources": [
         {
@@ -22,7 +22,7 @@
           "url": "https://x.com/0x_Discover/status/2120536530326327412"
         }
       ],
-      "updatedAt": "2026-11-11T16:25:00+01:00"
+      "updatedAt": "2026-11-11T16:28:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,28 +43,28 @@
           "url": "https://x.com/SteelyDanMxmlst/status/2120524803027456454"
         }
       ],
-      "updatedAt": "2026-11-11T16:25:00+01:00"
+      "updatedAt": "2026-11-11T16:28:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 34,
-      "postsCount": 22,
-      "reason": "Rocket Lab: Kurs stark, Neutron-Preis steigt auf 70 Mio. $ und der Auftragsbestand wird gefeiert. Einige warnen, dass der Hype bei Kleinanlegern ein Top-Signal sei.",
+      "score": 35,
+      "postsCount": 25,
+      "reason": "Rocket Lab: Kurs fast wieder bei 70 $. Gefeiert werden Neutron-Preis von 70 Mio. $ und ein Raketenbau alle 8 Tage. Einige warnen vor Kleinanleger-Hype.",
       "sources": [
         {
           "title": "Neutron-Preis steigt auf 70 Mio. $",
           "url": "https://x.com/SpaceSector001/status/2120535984882225485"
         },
         {
-          "title": "RKLB +50 % in vier Handelstagen",
-          "url": "https://x.com/jrouldz/status/2120533768129724690"
+          "title": "Alle 8 Tage eine neue Rakete",
+          "url": "https://x.com/MacroGekko/status/2120538114774929415"
         },
         {
           "title": "Warnung vor Kleinanleger-Hype",
           "url": "https://x.com/retail_mourinho/status/2120536724497420562"
         }
       ],
-      "updatedAt": "2026-11-11T16:25:00+01:00"
+      "updatedAt": "2026-11-11T16:28:00+01:00"
     }
   }
 }
