@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T15:55:00+01:00",
+  "updatedAt": "2026-11-11T16:00:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -10,
-      "postsCount": 25,
-      "reason": "SpaceX: Viele sorgen sich, weil Anthropic den GPU-Vertrag 2027 beenden will. Fans sagen, die Rechenleistung ist gefragt, und hoffen auf Starship-Flug 15.",
+      "score": -18,
+      "postsCount": 14,
+      "reason": "SpaceX: Kurs rund 3 % im Minus, viele sorgen sich wegen des Anthropic-Vertragsendes 2027. Fans verweisen auf Pentagon-Laserauftrag und FCC-Funkfrequenzen.",
       "sources": [
+        {
+          "title": "SPCX größter Verlierer, rund -3 %",
+          "url": "https://x.com/spon2016/status/2120531549863158155"
+        },
         {
           "title": "Anthropic will GPU-Vertrag beenden (Bericht)",
           "url": "https://x.com/BradMunchen/status/2120517312038244555"
         },
         {
-          "title": "Bulle: SpaceX bekommt knappe Rechenleistung zurück",
-          "url": "https://x.com/SpaceInvestor_D/status/2120521788094398847"
-        },
-        {
-          "title": "Hoffnung auf Starship-Flug 15",
-          "url": "https://x.com/amerigir12/status/2120529834699030988"
+          "title": "FCC prüft SpaceX-Funkfrequenzen",
+          "url": "https://x.com/realJosephF1288/status/2120531735134007652"
         }
       ],
-      "updatedAt": "2026-11-11T15:55:00+01:00"
+      "updatedAt": "2026-11-11T16:00:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,7 +43,7 @@
           "url": "https://x.com/tenet_research/status/2120464477460279749"
         }
       ],
-      "updatedAt": "2026-11-11T15:55:00+01:00"
+      "updatedAt": "2026-11-11T16:00:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/SpacBobby/status/2120498980362850576"
         }
       ],
-      "updatedAt": "2026-11-11T15:55:00+01:00"
+      "updatedAt": "2026-11-11T16:00:00+01:00"
     }
   }
 }
