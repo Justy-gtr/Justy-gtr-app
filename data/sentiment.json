@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T12:36:00+01:00",
+  "updatedAt": "2026-11-11T14:15:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 24,
-      "reason": "SpaceX: Begeisterung über die Morgan-Stanley-Notiz zu schnellen Rechenzentren, den Starbase-Plan für 24 Mrd. $ und den Singulus-Deal. Einige warnen vor Hebel-Risiken.",
+      "score": 34,
+      "postsCount": 26,
+      "reason": "SpaceX: Vorbörslich im Plus, Lob für das KI-Rack Kessel und den Singulus-Deal. Skepsis: ein unbestätigtes Gerücht zum Anthropic-Vertrag und Zweifel am Umsatzziel.",
       "sources": [
         {
-          "title": "Morgan Stanley: Rechenzentren in 3–4 Monaten",
-          "url": "https://x.com/spcxGOD/status/2120471966733983858"
+          "title": "Gerücht: Anthropic-Vertrag (unbestätigt)",
+          "url": "https://x.com/allday_stocks/status/2120500828536443043"
         },
         {
-          "title": "Starbase: Kraftwerk und Rechenzentrum",
-          "url": "https://x.com/grok/status/2120465952118579541"
+          "title": "Zweifel an 500 Mrd. $ Umsatzziel",
+          "url": "https://x.com/SingularityRes/status/2120504323457397208"
         },
         {
-          "title": "Singulus-Deal für SpaceX",
-          "url": "https://x.com/Michael94124642/status/2120471574612750518"
+          "title": "Vorbörse-Überblick SpaceX",
+          "url": "https://x.com/spcxGOD/status/2120498023403041206"
         }
       ],
-      "updatedAt": "2026-11-11T12:36:00+01:00"
+      "updatedAt": "2026-11-11T14:15:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -47,24 +47,24 @@
     },
     "RKLB": {
       "mood": "gut",
-      "score": 26,
-      "postsCount": 18,
-      "reason": "Rocket Lab: Freude über das Mars-Manöver und den höheren Neutron-Preis (70 Mio. $). Morgan Stanley senkt das Kursziel leicht auf 103 $, bleibt aber positiv.",
+      "score": 24,
+      "postsCount": 22,
+      "reason": "Rocket Lab: Freude über Rekordumsatz, volle Neutron-Auftragsbücher und höhere Startpreise. Needham und Morgan Stanley senken die Kursziele etwas, bleiben aber positiv.",
       "sources": [
+        {
+          "title": "Needham: Kursziel 100 $ statt 120 $",
+          "url": "https://x.com/SpacBobby/status/2120498980362850576"
+        },
         {
           "title": "Morgan Stanley: Kursziel 103 $",
           "url": "https://x.com/SpacBobby/status/2120478301219352577"
         },
         {
-          "title": "Neutron kostet jetzt 70 Mio. $",
-          "url": "https://x.com/ReadFuturist/status/2120464296044065132"
-        },
-        {
-          "title": "Erfolgreiches Mars-Manöver",
-          "url": "https://x.com/Space2Terra/status/2120463455303909397"
+          "title": "Höhere Preise für Electron und Neutron",
+          "url": "https://x.com/PhilipTortora/status/2120495524931416292"
         }
       ],
-      "updatedAt": "2026-11-11T12:36:00+01:00"
+      "updatedAt": "2026-11-11T13:55:00+01:00"
     }
   }
 }

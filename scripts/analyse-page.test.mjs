@@ -11,7 +11,7 @@ import { renderChartsPage } from "../js/views.js";
 import { TICKERS } from "./fetch-prices.mjs";
 import { aggregateBars } from "./market.mjs";
 
-const ADVICE = /\b(kaufen|verkaufen|kauft|verkauft|kauf|verkauf|long|short|empfehl\w*|signal|tipp)\b/i;
+const ADVICE = /\b(kaufen|verkaufen|kauft|verkauft|kauf|verkauf|empfehl\w*|signal|tipp)\b|\b(long|short)\b(?!: Wie oft)/i;
 const DAY = 86400000;
 
 function candle(index, close, extra = {}) {

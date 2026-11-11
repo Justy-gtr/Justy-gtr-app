@@ -84,7 +84,7 @@
       ],
       "probabilityPct": 80,
       "impact": "niedrig",
-      "reasoning": "Stand Di 05:20: SpaceX-Missionsseite bestätigt Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Siebter Flug der Erststufe, Landung auf der Drohnenschiff „Of Course I Still Love You“. 80 % unverändert für einen Start im Fenster: Routine von derselben Rampe, die erste Verschiebung kam ohne Begründung. Kurswirkung gering. Stand Mi 05:00: Wieder um einen Tag verschoben, jetzt Mi 11.11. 18:35 PT (bei uns Do 12.11. 03:35–07:35), Backup Do 18:21 PT (Fr 03:21 Berlin). Fünfte Verschiebung, Status laut Launch Library „Go“. 80 % unverändert für einen Start in diesem Fenster oder dem Backup. Stand Mi 07:00: Termin Do 03:35 Berlin bestätigt, Status um 06:45 erneut „Go“ (Launch Library). 80 % unverändert. Stand Mi 09:00: SpaceX-Missionsseite und Next Spaceflight nennen weiter Do 02:35 UTC (03:35 Berlin) ab Vandenberg. 80 % unverändert. Stand Mi 09:50: SpaceX bestätigt das vierstündige Fenster ab Mi 18:35 PT (Do 03:35 Berlin); Ersatztermin Do 18:21 PT (Fr 03:21 Berlin). 80 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite unverändert, Fenster ab Mi 18:35 PT (Do 03:35 Berlin), Backup Do 18:21 PT. 80 % unverändert.",
+      "reasoning": "Stand Di 05:20: SpaceX-Missionsseite bestätigt Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Siebter Flug der Erststufe, Landung auf der Drohnenschiff „Of Course I Still Love You“. 80 % unverändert für einen Start im Fenster: Routine von derselben Rampe, die erste Verschiebung kam ohne Begründung. Kurswirkung gering. Stand Mi 05:00: Wieder um einen Tag verschoben, jetzt Mi 11.11. 18:35 PT (bei uns Do 12.11. 03:35–07:35), Backup Do 18:21 PT (Fr 03:21 Berlin). Fünfte Verschiebung, Status laut Launch Library „Go“. 80 % unverändert für einen Start in diesem Fenster oder dem Backup. Stand Mi 07:00: Termin Do 03:35 Berlin bestätigt, Status um 06:45 erneut „Go“ (Launch Library). 80 % unverändert. Stand Mi 09:00: SpaceX-Missionsseite und Next Spaceflight nennen weiter Do 02:35 UTC (03:35 Berlin) ab Vandenberg. 80 % unverändert. Stand Mi 09:50: SpaceX bestätigt das vierstündige Fenster ab Mi 18:35 PT (Do 03:35 Berlin); Ersatztermin Do 18:21 PT (Fr 03:21 Berlin). 80 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite unverändert, Fenster ab Mi 18:35 PT (Do 03:35 Berlin), Backup Do 18:21 PT. 80 % unverändert. Stand Mi 14:00: Launch Library weiter „Go“ für Do 02:35 UTC (03:35 Berlin). 80 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -179,7 +179,7 @@
       ],
       "probabilityPct": 65,
       "impact": "hoch",
-      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert. Stand Mi 07:00: Weiter keine Lizenz auf der FAA-Seite, SpaceX schreibt weiter „pending regulatory approval“. 65 % unverändert. Stand Mi 09:00: FAA-Seite nennt weiter keine Lizenz, SpaceX-Missionsseite unverändert „pending regulatory approval“ (Fenster Fr 16:45–18:00 CT). 65 % unverändert. Stand Mi 09:50: FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz, SpaceX weiter „pending regulatory approval“. Die Meldung einer Fanseite über eine erteilte Lizenz bleibt unbestätigt. 65 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite weiter „pending regulatory approval“, die FAA-Seite (Stand 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Mi 12:55: SpaceX-Missionsseite weiter „as soon as Friday, November 13, pending regulatory approval“; eine FAA-Lizenz ist nicht gemeldet. 65 % unverändert.",
+      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert. Stand Mi 07:00: Weiter keine Lizenz auf der FAA-Seite, SpaceX schreibt weiter „pending regulatory approval“. 65 % unverändert. Stand Mi 09:00: FAA-Seite nennt weiter keine Lizenz, SpaceX-Missionsseite unverändert „pending regulatory approval“ (Fenster Fr 16:45–18:00 CT). 65 % unverändert. Stand Mi 09:50: FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz, SpaceX weiter „pending regulatory approval“. Die Meldung einer Fanseite über eine erteilte Lizenz bleibt unbestätigt. 65 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite weiter „pending regulatory approval“, die FAA-Seite (Stand 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Mi 12:55: SpaceX-Missionsseite weiter „as soon as Friday, November 13, pending regulatory approval“; eine FAA-Lizenz ist nicht gemeldet. 65 % unverändert. Stand Mi 14:00: SpaceX-Missionsseite weiter „pending regulatory approval“, Launch Library führt den Start als „TBC“. Eine Fanseite (All Things Elon) schreibt von einer erteilten Lizenz, nennt aber keine FAA-Quelle und verwechselt den Wochentag – bleibt unbestätigt. 65 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -249,6 +249,10 @@
         {
           "title": "SpaceX: Starship Flight 15 (pending regulatory approval)",
           "url": "https://www.spacex.com/launches/starship-flight-15"
+        },
+        {
+          "title": "Launch Library 2: Starship Flight 15",
+          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?search=Starship"
         }
       ]
     },
@@ -978,6 +982,37 @@
         {
           "title": "EZB: Sitzungskalender des EZB-Rats",
           "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+        }
+      ]
+    },
+    {
+      "id": "evt-rklb-gao-mars",
+      "title": "Rocket Lab gegen Blue Origin: GAO entscheidet über Protest zum Mars-Funkorbiter der NASA",
+      "date": "2026-12-21",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "regulierung",
+      "company": "Rocket Lab",
+      "tickers": [
+        "RKLB"
+      ],
+      "probabilityPct": 80,
+      "impact": "niedrig",
+      "reasoning": "Die NASA hat am 1. September Blue Origin den Mars-Funkorbiter (Mars Telecommunications Network, bis zu rund 700 Mio. $) zugesprochen; Rocket Lab hat am 11. September beim Rechnungshof GAO protestiert, weil die Vergabe den vom Kongress festgelegten Teilnahmeregeln widerspreche. Nach der 100-Tage-Frist muss die GAO bis Mo 21.12. entscheiden; so lange ruht Blue Origins Vertrag (SpaceNexus, TradingView). Meine 80 % gelten dafür, dass bis dahin eine Entscheidung fällt – die NASA kann vorher selbst nachbessern oder Rocket Lab zurückziehen. Dass Rocket Lab gewinnt, ist deutlich unwahrscheinlicher: Die GAO gab 2025 nur 14 % der entschiedenen Proteste statt, mit freiwilligen Korrekturen der Behörden hatten 52 % Erfolg (GAO-Jahresbericht). Für den Kurs eher klein, ein Erfolg wäre aber ein Prestigeauftrag für Rocket Labs Raumfahrzeug-Sparte.",
+      "example": false,
+      "sources": [
+        {
+          "title": "SpaceNexus: Rocket Lab protestiert gegen NASA-Vergabe an Blue Origin",
+          "url": "https://spacenexus.us/blog/rocket-lab-protests-blue-origin-mars-telecommunications-award"
+        },
+        {
+          "title": "TradingView: Key facts Rocket Lab – GAO-Entscheidung bis 21.12.",
+          "url": "https://www.tradingview.com/news/tradingview:ad7a50f40a7cf:0-key-facts-rocket-lab-revenue-backlog-up-iridium-deal-mars-protest/"
+        },
+        {
+          "title": "GAO: Bid Protest Annual Report Fiscal Year 2025",
+          "url": "https://www.gao.gov/products/gao-26-900695"
         }
       ]
     },

@@ -178,13 +178,36 @@ export function dayPathsStale(previous) {
   return false;
 }
 
+function rowLacksDown(row) {
+  if (!row || !Number.isInteger(row.n) || row.n <= 0) return false;
+  if (!Number.isInteger(row.up) || row.up < 0 || row.up > row.n) return false;
+  return !Number.isInteger(row.down) || row.down < 0 || row.up + row.down > row.n;
+}
+
+/** Older files counted only rises. A missing down count has to be rebuilt, not guessed. */
+function seasonalityLacksDown(previous) {
+  for (const pack of Object.values(previous?.symbols || {})) {
+    for (const key of ["all", "year"]) {
+      const stats = pack?.ranges?.[key];
+      if (!stats) continue;
+      const rows = [...(stats.days || []), ...(stats.hours || [])];
+      for (const row of stats.grid || []) {
+        if (Array.isArray(row)) rows.push(...row);
+      }
+      if (rows.some(rowLacksDown)) return true;
+    }
+  }
+  return false;
+}
+
 /**
- * Skip only when today is already written and dayPaths is on the current schema.
+ * Skip only when today is already written, dayPaths is current, and down counts are stored.
  * With Alpaca keys, the first run of the Berlin day still rebuilds until usFeed is set.
  */
 export function shouldSkipSeasonality(previous, now = new Date(), force = false, alpacaReady = alpacaConfigured()) {
   if (force) return false;
   if (dayPathsStale(previous)) return false;
+  if (seasonalityLacksDown(previous)) return false;
   if (alpacaReady && previous?.usFeed !== "alpaca-iex" && previous?.usFeed !== "yahoo") return false;
   if (!previous?.asOf) return false;
   return berlinDay(previous.asOf) === berlinDay(now);

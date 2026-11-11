@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-11-11T11:57:23.552Z",
+  "asOf": "2026-11-11T13:19:26.154Z",
   "example": false,
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1138,
+    "rate": 1.1126,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-11T11:57:23.552Z",
+    "asOf": "2026-11-11T13:19:26.154Z",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -21,52 +21,52 @@
       "example": false,
       "narrativeExample": false,
       "stale": false,
-      "priceEur": 128.52,
+      "priceEur": 128.66,
       "priceUsd": 143.15,
-      "previousCloseEur": 127.6,
+      "previousCloseEur": 127.74,
       "changeEur": 0.92,
       "changePct": 0.72,
-      "dayHighEur": 130.09,
-      "dayLowEur": 123.62,
+      "dayHighEur": 130.23,
+      "dayLowEur": 123.76,
       "eurMethod": "usd_div_eurusd",
       "eurVenue": null,
       "eurSymbol": null,
       "usdSymbol": "SPCX",
       "intradayMethod": "usd_div_eurusd",
-      "fxRate": 1.1138,
+      "fxRate": 1.1126,
       "sparkline": [
         123.62,
         123.39,
-        125.68,
-        127.94,
-        128.85,
-        127.99,
-        127.23,
-        126.22,
-        126.73,
-        126.64,
-        126.84,
-        126.26,
-        125.72,
-        125.52,
-        125.92,
-        126.23,
-        125.23,
-        125.59,
-        125.5,
-        125.1,
-        124.78,
-        125.11,
-        125.26,
-        125.78,
-        126.04,
-        125.83,
+        125.56,
+        128.24,
+        128.31,
+        127.7,
+        127.37,
+        126.13,
+        126.63,
+        126.54,
+        126.5,
+        126.28,
+        125.91,
+        125.71,
         125.89,
-        125.66,
-        126.55,
-        126.57,
-        126.87,
-        127.51
+        125.79,
+        125.36,
+        125.53,
+        125.69,
+        125.15,
+        125.03,
+        125.17,
+        125.89,
+        125.99,
+        125.86,
+        126.16,
+        125.79,
+        126.01,
+        126.75,
+        126.75,
+        127.19,
+        131.02
       ],
       "history": {
         "intraday": [
@@ -2505,729 +2505,51 @@
             "eur": 127.51,
             "usd": 143.1,
             "session": "post"
+          },
+          {
+            "t": "2026-11-11T13:05:00.000Z",
+            "eur": 130.29,
+            "usd": 144.96,
+            "session": "pre"
+          },
+          {
+            "t": "2026-11-11T13:07:00.000Z",
+            "eur": 129.99,
+            "usd": 144.63,
+            "session": "pre"
+          },
+          {
+            "t": "2026-11-11T13:09:00.000Z",
+            "eur": 130.36,
+            "usd": 145.04,
+            "session": "pre"
+          },
+          {
+            "t": "2026-11-11T13:11:00.000Z",
+            "eur": 130.53,
+            "usd": 145.23,
+            "session": "pre"
+          },
+          {
+            "t": "2026-11-11T13:12:00.000Z",
+            "eur": 130.79,
+            "usd": 145.52,
+            "session": "pre"
+          },
+          {
+            "t": "2026-11-11T13:13:00.000Z",
+            "eur": 130.9,
+            "usd": 145.64,
+            "session": "pre"
+          },
+          {
+            "t": "2026-11-11T13:14:00.000Z",
+            "eur": 131.02,
+            "usd": 145.77,
+            "session": "pre"
           }
         ],
         "5m": [
-          {
-            "t": "2026-11-06T13:30:00.000Z",
-            "eur": 115.88,
-            "open": 115.88,
-            "high": 115.88,
-            "low": 115.88,
-            "session": "pre"
-          },
-          {
-            "t": "2026-11-06T13:40:00.000Z",
-            "eur": 115.88,
-            "open": 115.88,
-            "high": 115.88,
-            "low": 115.88,
-            "session": "pre"
-          },
-          {
-            "t": "2026-11-06T13:55:00.000Z",
-            "eur": 116.2,
-            "open": 116.2,
-            "high": 116.2,
-            "low": 116.2,
-            "session": "pre"
-          },
-          {
-            "t": "2026-11-06T14:20:00.000Z",
-            "eur": 115.73,
-            "open": 115.73,
-            "high": 115.73,
-            "low": 115.73,
-            "session": "pre"
-          },
-          {
-            "t": "2026-11-06T14:30:00.000Z",
-            "eur": 114.76,
-            "open": 116.79,
-            "high": 117.15,
-            "low": 114.55,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T14:35:00.000Z",
-            "eur": 116.57,
-            "open": 114.7,
-            "high": 116.66,
-            "low": 114.51,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T14:40:00.000Z",
-            "eur": 117.64,
-            "open": 116.55,
-            "high": 118.21,
-            "low": 116.41,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T14:45:00.000Z",
-            "eur": 117.51,
-            "open": 117.65,
-            "high": 118.02,
-            "low": 117.32,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T14:50:00.000Z",
-            "eur": 116.21,
-            "open": 117.34,
-            "high": 117.77,
-            "low": 116.18,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T14:55:00.000Z",
-            "eur": 116.86,
-            "open": 116.33,
-            "high": 116.96,
-            "low": 115.8,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T15:00:00.000Z",
-            "eur": 116.39,
-            "open": 116.95,
-            "high": 116.95,
-            "low": 116.01,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T15:05:00.000Z",
-            "eur": 116.4,
-            "open": 116.4,
-            "high": 116.85,
-            "low": 116.3,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T15:10:00.000Z",
-            "eur": 117.28,
-            "open": 116.42,
-            "high": 117.59,
-            "low": 116.3,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T15:15:00.000Z",
-            "eur": 116.82,
-            "open": 117.24,
-            "high": 117.25,
-            "low": 116.37,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T15:20:00.000Z",
-            "eur": 116.97,
-            "open": 116.71,
-            "high": 117.29,
-            "low": 116.63,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T15:25:00.000Z",
-            "eur": 117.04,
-            "open": 117.02,
-            "high": 117.36,
-            "low": 116.81,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T15:30:00.000Z",
-            "eur": 116.48,
-            "open": 116.95,
-            "high": 117.01,
-            "low": 116.38,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T15:35:00.000Z",
-            "eur": 116.5,
-            "open": 116.36,
-            "high": 116.87,
-            "low": 116.16,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T15:40:00.000Z",
-            "eur": 116.63,
-            "open": 116.63,
-            "high": 116.79,
-            "low": 116.21,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T15:45:00.000Z",
-            "eur": 117.06,
-            "open": 116.41,
-            "high": 117.08,
-            "low": 116.3,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T15:50:00.000Z",
-            "eur": 117.05,
-            "open": 117.03,
-            "high": 117.49,
-            "low": 117.01,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T15:55:00.000Z",
-            "eur": 117.1,
-            "open": 117.05,
-            "high": 117.39,
-            "low": 116.85,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T16:00:00.000Z",
-            "eur": 116.66,
-            "open": 117.04,
-            "high": 117.14,
-            "low": 116.43,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T16:05:00.000Z",
-            "eur": 116.21,
-            "open": 116.59,
-            "high": 116.69,
-            "low": 116.02,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T16:10:00.000Z",
-            "eur": 116.1,
-            "open": 116.14,
-            "high": 116.14,
-            "low": 115.61,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T16:15:00.000Z",
-            "eur": 115.85,
-            "open": 116.14,
-            "high": 116.45,
-            "low": 115.69,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T16:20:00.000Z",
-            "eur": 116.57,
-            "open": 115.84,
-            "high": 116.67,
-            "low": 115.72,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T16:25:00.000Z",
-            "eur": 116.55,
-            "open": 116.64,
-            "high": 116.82,
-            "low": 116.38,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T16:30:00.000Z",
-            "eur": 116.87,
-            "open": 116.52,
-            "high": 116.97,
-            "low": 116.52,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T16:35:00.000Z",
-            "eur": 117.01,
-            "open": 116.86,
-            "high": 117.01,
-            "low": 116.68,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T16:40:00.000Z",
-            "eur": 116.76,
-            "open": 117,
-            "high": 117.04,
-            "low": 116.75,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T16:45:00.000Z",
-            "eur": 117.08,
-            "open": 116.74,
-            "high": 117.09,
-            "low": 116.72,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T16:50:00.000Z",
-            "eur": 117.18,
-            "open": 117.04,
-            "high": 117.33,
-            "low": 117.01,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T16:55:00.000Z",
-            "eur": 117.69,
-            "open": 117.15,
-            "high": 117.7,
-            "low": 117.02,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T17:00:00.000Z",
-            "eur": 117.52,
-            "open": 117.57,
-            "high": 117.95,
-            "low": 117.43,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T17:05:00.000Z",
-            "eur": 117.75,
-            "open": 117.49,
-            "high": 117.86,
-            "low": 117.36,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T17:10:00.000Z",
-            "eur": 118.09,
-            "open": 117.73,
-            "high": 118.25,
-            "low": 117.69,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T17:15:00.000Z",
-            "eur": 118.25,
-            "open": 118.11,
-            "high": 118.46,
-            "low": 118.1,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T17:20:00.000Z",
-            "eur": 118.03,
-            "open": 118.26,
-            "high": 118.29,
-            "low": 117.77,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T17:25:00.000Z",
-            "eur": 118.15,
-            "open": 118.02,
-            "high": 118.18,
-            "low": 118.01,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T17:30:00.000Z",
-            "eur": 117.58,
-            "open": 118.08,
-            "high": 118.11,
-            "low": 117.45,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T17:35:00.000Z",
-            "eur": 116.83,
-            "open": 117.58,
-            "high": 117.59,
-            "low": 116.36,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T17:40:00.000Z",
-            "eur": 116.78,
-            "open": 116.95,
-            "high": 116.95,
-            "low": 116.3,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T17:45:00.000Z",
-            "eur": 116.42,
-            "open": 116.76,
-            "high": 116.95,
-            "low": 116.26,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T17:50:00.000Z",
-            "eur": 116.41,
-            "open": 116.4,
-            "high": 116.62,
-            "low": 116.18,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T17:55:00.000Z",
-            "eur": 116.74,
-            "open": 116.46,
-            "high": 116.94,
-            "low": 116.45,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T18:00:00.000Z",
-            "eur": 116.66,
-            "open": 116.69,
-            "high": 116.73,
-            "low": 116.5,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T18:05:00.000Z",
-            "eur": 117.36,
-            "open": 116.71,
-            "high": 117.36,
-            "low": 116.69,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T18:10:00.000Z",
-            "eur": 117.42,
-            "open": 117.3,
-            "high": 117.44,
-            "low": 117.2,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T18:15:00.000Z",
-            "eur": 117.46,
-            "open": 117.4,
-            "high": 117.52,
-            "low": 117.1,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T18:20:00.000Z",
-            "eur": 117.54,
-            "open": 117.37,
-            "high": 117.6,
-            "low": 117.28,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T18:25:00.000Z",
-            "eur": 117.7,
-            "open": 117.5,
-            "high": 117.82,
-            "low": 117.32,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T18:30:00.000Z",
-            "eur": 119.07,
-            "open": 117.67,
-            "high": 119.15,
-            "low": 117.59,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T18:35:00.000Z",
-            "eur": 118.46,
-            "open": 119.12,
-            "high": 119.24,
-            "low": 118.16,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T18:40:00.000Z",
-            "eur": 118.09,
-            "open": 118.42,
-            "high": 118.46,
-            "low": 117.99,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T18:45:00.000Z",
-            "eur": 117.88,
-            "open": 118.01,
-            "high": 118.18,
-            "low": 117.66,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T18:50:00.000Z",
-            "eur": 118.38,
-            "open": 117.91,
-            "high": 118.42,
-            "low": 117.66,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T18:55:00.000Z",
-            "eur": 118.51,
-            "open": 118.35,
-            "high": 118.76,
-            "low": 118.09,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T19:00:00.000Z",
-            "eur": 118.71,
-            "open": 118.51,
-            "high": 118.74,
-            "low": 118.26,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T19:05:00.000Z",
-            "eur": 118.89,
-            "open": 118.55,
-            "high": 119.15,
-            "low": 118.55,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T19:10:00.000Z",
-            "eur": 118.87,
-            "open": 118.87,
-            "high": 119.03,
-            "low": 118.76,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T19:15:00.000Z",
-            "eur": 118.86,
-            "open": 118.83,
-            "high": 119.02,
-            "low": 118.77,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T19:20:00.000Z",
-            "eur": 119.04,
-            "open": 118.87,
-            "high": 119.3,
-            "low": 118.79,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T19:25:00.000Z",
-            "eur": 119.52,
-            "open": 119.02,
-            "high": 119.67,
-            "low": 118.99,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T19:30:00.000Z",
-            "eur": 119.06,
-            "open": 119.53,
-            "high": 119.53,
-            "low": 119.05,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T19:35:00.000Z",
-            "eur": 119.31,
-            "open": 119.18,
-            "high": 119.34,
-            "low": 119.05,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T19:40:00.000Z",
-            "eur": 119.78,
-            "open": 119.32,
-            "high": 119.88,
-            "low": 119.23,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T19:45:00.000Z",
-            "eur": 119.68,
-            "open": 119.78,
-            "high": 119.99,
-            "low": 119.65,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T19:50:00.000Z",
-            "eur": 119.89,
-            "open": 119.79,
-            "high": 120.15,
-            "low": 119.78,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T19:55:00.000Z",
-            "eur": 120.13,
-            "open": 119.9,
-            "high": 120.35,
-            "low": 119.89,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T20:00:00.000Z",
-            "eur": 120.16,
-            "open": 120.08,
-            "high": 120.51,
-            "low": 120.01,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T20:05:00.000Z",
-            "eur": 120.2,
-            "open": 120.13,
-            "high": 120.3,
-            "low": 119.8,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T20:10:00.000Z",
-            "eur": 119.8,
-            "open": 120.16,
-            "high": 120.21,
-            "low": 119.76,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T20:15:00.000Z",
-            "eur": 119.32,
-            "open": 119.75,
-            "high": 119.97,
-            "low": 119.26,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T20:20:00.000Z",
-            "eur": 119.34,
-            "open": 119.32,
-            "high": 119.51,
-            "low": 119.11,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T20:25:00.000Z",
-            "eur": 119.39,
-            "open": 119.26,
-            "high": 119.44,
-            "low": 119.16,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T20:30:00.000Z",
-            "eur": 119.56,
-            "open": 119.38,
-            "high": 119.58,
-            "low": 119.12,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T20:35:00.000Z",
-            "eur": 119.23,
-            "open": 119.56,
-            "high": 119.59,
-            "low": 119.12,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T20:40:00.000Z",
-            "eur": 119.74,
-            "open": 119.27,
-            "high": 120.03,
-            "low": 119.27,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T20:45:00.000Z",
-            "eur": 119.26,
-            "open": 119.8,
-            "high": 120.04,
-            "low": 119.25,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T20:50:00.000Z",
-            "eur": 119.37,
-            "open": 119.35,
-            "high": 119.54,
-            "low": 119.28,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T20:55:00.000Z",
-            "eur": 119.49,
-            "open": 119.4,
-            "high": 119.93,
-            "low": 119.4,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-06T21:00:00.000Z",
-            "eur": 120.35,
-            "open": 119.64,
-            "high": 120.35,
-            "low": 119.64,
-            "session": "post"
-          },
-          {
-            "t": "2026-11-06T21:05:00.000Z",
-            "eur": 120.45,
-            "open": 120.62,
-            "high": 120.62,
-            "low": 120.45,
-            "session": "post"
-          },
-          {
-            "t": "2026-11-06T21:10:00.000Z",
-            "eur": 120.67,
-            "open": 120.59,
-            "high": 120.71,
-            "low": 120.59,
-            "session": "post"
-          },
-          {
-            "t": "2026-11-06T21:20:00.000Z",
-            "eur": 120.37,
-            "open": 120.37,
-            "high": 120.37,
-            "low": 120.37,
-            "session": "post"
-          },
-          {
-            "t": "2026-11-06T21:30:00.000Z",
-            "eur": 120.55,
-            "open": 120.55,
-            "high": 120.55,
-            "low": 120.55,
-            "session": "post"
-          },
-          {
-            "t": "2026-11-06T21:35:00.000Z",
-            "eur": 120.41,
-            "open": 120.41,
-            "high": 120.41,
-            "low": 120.41,
-            "session": "post"
-          },
-          {
-            "t": "2026-11-06T21:45:00.000Z",
-            "eur": 120.35,
-            "open": 120.35,
-            "high": 120.35,
-            "low": 120.35,
-            "session": "post"
-          },
-          {
-            "t": "2026-11-06T21:50:00.000Z",
-            "eur": 120.35,
-            "open": 120.35,
-            "high": 120.35,
-            "low": 120.35,
-            "session": "post"
-          },
           {
             "t": "2026-11-09T13:20:00.000Z",
             "eur": 122.77,
@@ -4627,81 +3949,25 @@
             "high": 127.51,
             "low": 127.51,
             "session": "post"
+          },
+          {
+            "t": "2026-11-11T13:05:00.000Z",
+            "eur": 130.36,
+            "open": 130.29,
+            "high": 130.36,
+            "low": 129.99,
+            "session": "pre"
+          },
+          {
+            "t": "2026-11-11T13:10:00.000Z",
+            "eur": 131.02,
+            "open": 130.53,
+            "high": 131.02,
+            "low": 130.53,
+            "session": "pre"
           }
         ],
         "1H": [
-          {
-            "t": "2026-10-28T12:00:00.000Z",
-            "eur": 133.62,
-            "open": 133.83,
-            "high": 133.92,
-            "low": 133.62,
-            "session": "pre"
-          },
-          {
-            "t": "2026-10-28T13:00:00.000Z",
-            "eur": 129.41,
-            "open": 133.78,
-            "high": 133.78,
-            "low": 128.98,
-            "session": "pre"
-          },
-          {
-            "t": "2026-10-28T14:00:00.000Z",
-            "eur": 129.33,
-            "open": 129.4,
-            "high": 129.72,
-            "low": 127.72,
-            "session": "regular"
-          },
-          {
-            "t": "2026-10-28T15:00:00.000Z",
-            "eur": 130.03,
-            "open": 129.32,
-            "high": 130.52,
-            "low": 129.3,
-            "session": "regular"
-          },
-          {
-            "t": "2026-10-28T16:00:00.000Z",
-            "eur": 130.07,
-            "open": 130.02,
-            "high": 130.31,
-            "low": 129.49,
-            "session": "regular"
-          },
-          {
-            "t": "2026-10-28T17:00:00.000Z",
-            "eur": 129.45,
-            "open": 130.09,
-            "high": 130.18,
-            "low": 128.83,
-            "session": "regular"
-          },
-          {
-            "t": "2026-10-28T18:00:00.000Z",
-            "eur": 129.98,
-            "open": 129.38,
-            "high": 130.58,
-            "low": 128.82,
-            "session": "regular"
-          },
-          {
-            "t": "2026-10-28T19:00:00.000Z",
-            "eur": 130.47,
-            "open": 129.95,
-            "high": 130.98,
-            "low": 129.77,
-            "session": "regular"
-          },
-          {
-            "t": "2026-10-28T20:00:00.000Z",
-            "eur": 129.63,
-            "open": 129.71,
-            "high": 129.71,
-            "low": 128.95,
-            "session": "post"
-          },
           {
             "t": "2026-10-29T12:00:00.000Z",
             "eur": 128.33,
@@ -5349,6 +4615,14 @@
             "high": 127.68,
             "low": 127.36,
             "session": "post"
+          },
+          {
+            "t": "2026-11-11T13:00:00.000Z",
+            "eur": 131.02,
+            "open": 130.29,
+            "high": 131.02,
+            "low": 129.99,
+            "session": "pre"
           }
         ],
         "4H": [
@@ -7043,7 +6317,7 @@
           },
           {
             "t": "2026-11-10T14:30:00.000Z",
-            "eur": 128.52,
+            "eur": 128.66,
             "open": 124,
             "high": 129.11,
             "low": 122.66,
@@ -8930,7 +8204,7 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Auf Xetra um 12:37 bei 132,64 € (+4,0 % zum Xetra-Schluss 127,52 €; umgerechnet etwa 147,8 $ bei EUR/USD 1,114, rund 3,3 % über dem Nasdaq-Schluss von 143,09 $); vorbörslich in New York um 12:53 bei 147,66 $ (+3,2 %). Neu seit dem Vormittag: Laut SemiAnalysis baut SpaceX ein eigenes KI-Rack namens „Kessel“ für Rechenzentren auf der Erde und im Orbit – SpaceX würde nur noch die Chips bei Nvidia kaufen und den Rest selbst beschaffen (Stocktwits, Yahoo nennt das als Grund für das Vorbörsenplus). Der Nasdaq-100-Future liegt um 12:45 rund 1,8 % höher (Yahoo). Chipwerte ziehen vorbörslich breit an: CoreWeave nach erhöhter Prognose zweistellig im Plus, Nvidia erholt sich um rund 5 % nach zwei Verlusttagen wegen der Huang-Affäre (CNBC), TSMC will je 500 Mio. $ in Anthropic und OpenAI stecken (Dow Jones). In Frankfurt liegt der Dax mittags 0,7 % höher bei 26.527 Punkten, Infineon +7,2 % (dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). US-Anleihemarkt heute wegen Veterans Day geschlossen, Aktien handeln normal. Dazu Musks nächtliche Aussage zu Singulus-Anlagen für 100 GW Solarzellen pro Jahr (Singulus selbst nennt für die erste Linie über 60 Mio. €) und ein kleiner Pentagon-Auftrag über 9,9 Mio. $ für eine Studie zu Laserterminals (Defence Blog). Dagegen: Dan Ives sieht 20–25 % „politischen Abschlag“ wegen Texas, und ein Berufungsgericht ließ die Klage entlassener Ingenieure zu (Reuters). Flight 15 (Fr 23:45) wartet weiter auf die FAA-Lizenz; USSF-627 startet Do 03:35.",
+      "why": "Auf Xetra um 13:43 bei 131,60 € (+3,2 % zum Xetra-Schluss 127,52 €), etwas unter dem Mittagshoch von 132,64 €; vorbörslich in New York um 13:58 bei 145,72 $ (+1,8 % zum Schluss von 143,09 $). Treiber bleiben der SemiAnalysis-Bericht über SpaceX’ eigenes KI-Rack „Kessel“ (Stocktwits), die KI-Rally und Musks Singulus-Aussage zu 100 GW Solarzellen pro Jahr. Der Nasdaq-100-Future liegt gegen 13:50 rund 2,0 % höher (Yahoo); Auslöser ist der starke Ausblick von CoreWeave, Chipwerte ziehen vorbörslich breit an, Nvidia rund 3,7 % (Reuters, Yahoo). In Frankfurt steht der Dax bei 26.528 Punkten (+0,7 %), knapp unter dem Rekord von 26.692; Infineon +7,2 % (dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Neu und eher negativ: Die Sicherheitsfirma Claroc fand 35.578 per Grok Build gebaute Apps offen im Netz, darunter 24 Apps von Mitarbeitern von X und SpaceXSI mit vertraulichen Vertriebsunterlagen; SpaceXSI hat die eigenen Apps entfernt (The Hacker News). Dazu Dan Ives’ „politischer Abschlag“ von 20–25 % wegen Texas und die Ingenieurs-Klage (Reuters). Flight 15 (Fr 23:45) wartet weiter auf die FAA-Lizenz; USSF-627 startet Do 03:35.",
       "whySources": [
         {
           "title": "Yahoo Finance SPX.DE",
@@ -8941,48 +8215,40 @@
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Yahoo Finance EURUSD=X",
-          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
-        },
-        {
           "title": "Stocktwits: SpaceX-Rack „Kessel“ laut SemiAnalysis (11.11.)",
           "url": "https://stocktwits.com/news-articles/markets/equity/spacex-control-nvidia-hardware-semianalysis-custom-ai-rack-earth-orbit/cNGDWAvR9Jv"
-        },
-        {
-          "title": "Yahoo Finance: Futures vorbörslich – SPCX im Fokus (11.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-futures-rise-095935016.html"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq-100-Future",
-          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
-        },
-        {
-          "title": "CNBC: Nvidia vorbörslich +5 % trotz Huang-Untersuchung (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
-        },
-        {
-          "title": "Morningstar/Dow Jones: Morning Briefing – TSMC investiert in Anthropic und OpenAI (11.11.)",
-          "url": "https://www.morningstar.com/news/dow-jones/202611113193/north-american-morning-briefing-nasdaq-futures-surge-as-ai-optimism-grips-markets"
-        },
-        {
-          "title": "US News/Reuters: Futures steigen nach CoreWeave (11.11.)",
-          "url": "https://money.usnews.com/investing/news/articles/2026-11-11/s-p-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears"
-        },
-        {
-          "title": "dpa-AFX/t-online: Dax mittags +0,7 %, Tech-Erholung stützt (11.11.)",
-          "url": "https://www.t-online.de/finanzen/boerse/ticker/aktien-frankfurt-dax-bleibt-vorerst-auf-erfolgskurs-tech-erholung-stuetzt/0DBAD60088BDE6E3/"
-        },
-        {
-          "title": "CNBC: FedWatch 91,9 % für Erhöhung im Dezember (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
         },
         {
           "title": "@elonmusk: Singulus 100 GW/Jahr",
           "url": "https://x.com/elonmusk/status/2120302471210033426"
         },
         {
-          "title": "Defence Blog: SDA-Auftrag über 9,9 Mio. $ (11.11.)",
-          "url": "https://defence-blog.com/spacex-wins-pentagon-deal-to-test-starlink-lasers-for-missile-tracking/"
+          "title": "Yahoo Finance: Nasdaq-100-Future",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
+        },
+        {
+          "title": "Reuters/Investing.com: Futures steigen nach CoreWeave (11.11.)",
+          "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-5018288"
+        },
+        {
+          "title": "Yahoo Finance NVDA",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
+        },
+        {
+          "title": "dpa-AFX: Dax bleibt auf Erfolgskurs, Tech-Erholung stützt (11.11.)",
+          "url": "https://www.dpa-afx.de/?cHash=097af14a65f8af5ce7eb00cae33e26a8&tx_news_pi1=428486&tx_news_pi1=News&tx_news_pi1=detail"
+        },
+        {
+          "title": "CNBC: FedWatch 91,9 % für Erhöhung im Dezember (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
+        },
+        {
+          "title": "The Hacker News: Über 35.000 Grok-Apps offen im Netz (11.11.)",
+          "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html"
+        },
+        {
+          "title": "Claroc: Grok-Build-Apps offen",
+          "url": "https://blog.claroc.io/ghostshares-grok-build-apps/"
         },
         {
           "title": "Yahoo Finance: Ives sieht politischen Abschlag",
@@ -9033,10 +8299,10 @@
       ],
       "fetchError": null,
       "overnightPhase": "vorboerse",
-      "overnightEur": 124.01,
-      "overnightHighEur": 124.57,
-      "overnightLowEur": 123.55,
-      "overnightAsOf": "2026-11-10T14:24:00.000Z",
+      "overnightEur": 131.02,
+      "overnightHighEur": 131.02,
+      "overnightLowEur": 123.68,
+      "overnightAsOf": "2026-11-11T13:14:00.000Z",
       "source": "alpaca-iex"
     },
     {
@@ -9048,11 +8314,11 @@
       "example": false,
       "narrativeExample": false,
       "stale": false,
-      "priceEur": 347.25,
+      "priceEur": 346.35,
       "priceUsd": 379.73,
       "previousCloseEur": 336.85,
-      "changeEur": 10.4,
-      "changePct": 3.09,
+      "changeEur": 9.5,
+      "changePct": 2.82,
       "dayHighEur": 349.05,
       "dayLowEur": 345,
       "eurMethod": "direct_eur",
@@ -9060,40 +8326,40 @@
       "eurSymbol": "TL0.DE",
       "usdSymbol": "TSLA",
       "intradayMethod": "direct_eur",
-      "fxRate": 1.1138,
+      "fxRate": 1.1126,
       "sparkline": [
         345.55,
         345.85,
-        346.5,
-        346.95,
-        346.8,
         346.75,
+        346.5,
         346.75,
         347.2,
         347.05,
-        346.95,
         346.5,
-        346.45,
-        347.3,
+        346.8,
         347.75,
-        347.75,
-        348.5,
-        349.05,
+        348,
+        348.4,
         348.75,
-        348.9,
         348.05,
         347.5,
-        347.3,
-        347.55,
         347.5,
-        347.7,
-        347.7,
-        347.7,
+        347.5,
+        347.2,
+        347.8,
         347.4,
-        347.4,
-        347.45,
+        347.5,
         347.6,
-        347.25
+        347.1,
+        346.9,
+        348.3,
+        347.65,
+        347.15,
+        346.75,
+        346.75,
+        347.15,
+        346.75,
+        346.35
       ],
       "history": {
         "intraday": [
@@ -9443,8 +8709,158 @@
             "session": "regular"
           },
           {
-            "t": "2026-11-11T11:41:19.000Z",
+            "t": "2026-11-11T11:41:00.000Z",
             "eur": 347.25,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T11:42:00.000Z",
+            "eur": 347.1,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T11:45:00.000Z",
+            "eur": 346.9,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T11:50:00.000Z",
+            "eur": 346.7,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T11:52:00.000Z",
+            "eur": 346.9,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T11:53:00.000Z",
+            "eur": 347.05,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T11:55:00.000Z",
+            "eur": 347.35,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T11:56:00.000Z",
+            "eur": 347.4,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:02:00.000Z",
+            "eur": 348.3,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:03:00.000Z",
+            "eur": 348.4,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:11:00.000Z",
+            "eur": 347.45,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:15:00.000Z",
+            "eur": 347.65,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:17:00.000Z",
+            "eur": 347.45,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:20:00.000Z",
+            "eur": 347.15,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:21:00.000Z",
+            "eur": 347.15,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:23:00.000Z",
+            "eur": 346.7,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:31:00.000Z",
+            "eur": 347.2,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:33:00.000Z",
+            "eur": 346.75,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:35:00.000Z",
+            "eur": 346.8,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:36:00.000Z",
+            "eur": 346.95,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:43:00.000Z",
+            "eur": 346.75,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:46:00.000Z",
+            "eur": 346.65,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:47:00.000Z",
+            "eur": 347.15,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:48:00.000Z",
+            "eur": 347.3,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:51:00.000Z",
+            "eur": 347.15,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:52:00.000Z",
+            "eur": 346.8,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:55:00.000Z",
+            "eur": 346.9,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:56:00.000Z",
+            "eur": 346.75,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:57:00.000Z",
+            "eur": 346.35,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T13:00:00.000Z",
+            "eur": 346.7,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T13:04:24.000Z",
+            "eur": 346.35,
             "session": "regular"
           }
         ],
@@ -10913,11 +10329,116 @@
             "low": 347.4
           },
           {
-            "t": "2026-11-11T11:41:19.000Z",
-            "eur": 347.25,
+            "t": "2026-11-11T11:40:00.000Z",
+            "eur": 347.1,
             "open": 347.25,
             "high": 347.25,
-            "low": 347.25
+            "low": 347.1
+          },
+          {
+            "t": "2026-11-11T11:45:00.000Z",
+            "eur": 346.9,
+            "open": 346.9,
+            "high": 346.9,
+            "low": 346.9
+          },
+          {
+            "t": "2026-11-11T11:50:00.000Z",
+            "eur": 347.05,
+            "open": 346.7,
+            "high": 347.05,
+            "low": 346.7
+          },
+          {
+            "t": "2026-11-11T11:55:00.000Z",
+            "eur": 347.4,
+            "open": 347.35,
+            "high": 347.4,
+            "low": 347.35
+          },
+          {
+            "t": "2026-11-11T12:00:00.000Z",
+            "eur": 348.4,
+            "open": 348.3,
+            "high": 348.4,
+            "low": 348.3
+          },
+          {
+            "t": "2026-11-11T12:10:00.000Z",
+            "eur": 347.45,
+            "open": 347.45,
+            "high": 347.45,
+            "low": 347.45
+          },
+          {
+            "t": "2026-11-11T12:15:00.000Z",
+            "eur": 347.45,
+            "open": 347.65,
+            "high": 347.65,
+            "low": 347.45
+          },
+          {
+            "t": "2026-11-11T12:20:00.000Z",
+            "eur": 346.7,
+            "open": 347.15,
+            "high": 347.15,
+            "low": 346.7
+          },
+          {
+            "t": "2026-11-11T12:30:00.000Z",
+            "eur": 346.75,
+            "open": 347.2,
+            "high": 347.2,
+            "low": 346.75
+          },
+          {
+            "t": "2026-11-11T12:35:00.000Z",
+            "eur": 346.95,
+            "open": 346.8,
+            "high": 346.95,
+            "low": 346.8
+          },
+          {
+            "t": "2026-11-11T12:40:00.000Z",
+            "eur": 346.75,
+            "open": 346.75,
+            "high": 346.75,
+            "low": 346.75
+          },
+          {
+            "t": "2026-11-11T12:45:00.000Z",
+            "eur": 347.3,
+            "open": 346.65,
+            "high": 347.3,
+            "low": 346.65
+          },
+          {
+            "t": "2026-11-11T12:50:00.000Z",
+            "eur": 346.8,
+            "open": 347.25,
+            "high": 347.25,
+            "low": 346.8
+          },
+          {
+            "t": "2026-11-11T12:55:00.000Z",
+            "eur": 346.35,
+            "open": 346.7,
+            "high": 346.9,
+            "low": 346.35
+          },
+          {
+            "t": "2026-11-11T13:00:00.000Z",
+            "eur": 346.7,
+            "open": 346.7,
+            "high": 346.7,
+            "low": 346.7
+          },
+          {
+            "t": "2026-11-11T13:04:24.000Z",
+            "eur": 346.35,
+            "open": 346.35,
+            "high": 346.35,
+            "low": 346.35
           }
         ],
         "1H": [
@@ -11598,15 +11119,31 @@
             "eur": 347.4,
             "open": 347.4,
             "high": 347.7,
-            "low": 347.3,
+            "low": 346.7,
             "session": "regular"
           },
           {
-            "t": "2026-11-11T11:41:19.000Z",
-            "eur": 347.25,
-            "open": 347.25,
-            "high": 347.25,
-            "low": 347.25,
+            "t": "2026-11-11T12:00:00.000Z",
+            "eur": 346.35,
+            "open": 348.3,
+            "high": 348.4,
+            "low": 346.35,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T13:00:00.000Z",
+            "eur": 346.7,
+            "open": 346.7,
+            "high": 346.7,
+            "low": 346.7,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T13:04:24.000Z",
+            "eur": 346.35,
+            "open": 346.35,
+            "high": 346.35,
+            "low": 346.35,
             "session": "regular"
           }
         ],
@@ -11614,8 +11151,8 @@
           {
             "t": "2025-11-11T12:00:00.000Z",
             "eur": 373.75,
-            "open": 382.3,
-            "high": 382.5,
+            "open": 381.3,
+            "high": 381.6,
             "low": 373.75
           },
           {
@@ -16870,10 +16407,17 @@
           },
           {
             "t": "2026-11-11T08:00:00.000Z",
-            "eur": 347.25,
+            "eur": 347.4,
             "open": 345,
             "high": 349.05,
             "low": 345
+          },
+          {
+            "t": "2026-11-11T12:00:00.000Z",
+            "eur": 346.35,
+            "open": 348.3,
+            "high": 348.4,
+            "low": 346.35
           }
         ],
         "1M": [
@@ -17033,7 +16577,7 @@
           },
           {
             "t": "2026-11-11T08:00:00.000Z",
-            "eur": 347.25,
+            "eur": 346.35,
             "open": 345,
             "high": 349.05,
             "low": 345
@@ -17966,7 +17510,7 @@
           },
           {
             "t": "2026-11-11T08:00:00.000Z",
-            "eur": 347.25,
+            "eur": 346.35,
             "open": 345,
             "high": 349.05,
             "low": 345
@@ -19746,7 +19290,7 @@
           },
           {
             "t": "2026-11-11T08:00:00.000Z",
-            "eur": 347.25,
+            "eur": 346.35,
             "open": 345,
             "high": 349.05,
             "low": 345
@@ -21588,8 +21132,8 @@
             "low": 318.3
           },
           {
-            "t": "2026-11-11T11:41:19.000Z",
-            "eur": 347.25,
+            "t": "2026-11-11T13:04:24.000Z",
+            "eur": 346.35,
             "open": 345,
             "high": 349.05,
             "low": 345
@@ -21597,7 +21141,7 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Auf Xetra um 12:38 bei 347,40 € (+3,1 % zum Xetra-Schluss 336,85 €; umgerechnet etwa 387 $ bei EUR/USD 1,114, rund 1,9 % über dem Nasdaq-Schluss von 379,78 $); vorbörslich in New York um 12:53 bei 386,44 $ (+1,8 %). Der Nasdaq-100-Future liegt um 12:45 rund 1,8 % höher (Yahoo). Chipwerte ziehen vorbörslich breit an: CoreWeave nach erhöhter Prognose zweistellig im Plus, Nvidia erholt sich um rund 5 % nach zwei Verlusttagen wegen der Huang-Affäre (CNBC), TSMC will je 500 Mio. $ in Anthropic und OpenAI stecken (Dow Jones). In Frankfurt liegt der Dax mittags 0,7 % höher bei 26.527 Punkten, Infineon +7,2 % (dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). US-Anleihemarkt heute wegen Veterans Day geschlossen, Aktien handeln normal. Eigener Rückenwind: Finnland hat Teslas „Assisted Driving“ vorläufig zugelassen, nachdem Tesla den Namen „Full Self-Driving“ gestrichen und die Tempo-Einstellungen verschärft hat; die EU-Abstimmung erwartet die Behörde im Winter, frühestens im Dezember (Traficom, Reuters). In Texas hat Tesla laut Zulassungsdaten erstmals mehr Robotaxis registriert als Waymo (1.302 gegen 1.297; X-News, unbestätigt). Morgan Stanley hob das Kursziel von 400 auf 410 $ (Halten), Jefferies senkte zuvor von 400 auf 375 $.",
+      "why": "Auf Xetra um 13:36 bei 346,95 € (+3,0 % zum Xetra-Schluss 336,85 €); vorbörslich in New York um 13:58 bei 385,90 $ (+1,6 % zum Schluss von 379,78 $). Der Nasdaq-100-Future liegt gegen 13:50 rund 2,0 % höher (Yahoo); Auslöser ist der starke Ausblick von CoreWeave, Chipwerte ziehen vorbörslich breit an, Nvidia rund 3,7 % (Reuters, Yahoo). In Frankfurt steht der Dax bei 26.528 Punkten (+0,7 %), knapp unter dem Rekord von 26.692; Infineon +7,2 % (dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Eigener Rückenwind: Finnland hat Teslas „Assisted Driving“ zugelassen; die EU-Entscheidung erwartet die Behörde erst im Winter (Traficom, Reuters). In Texas hat Tesla laut Zulassungsdaten erstmals mehr Robotaxis registriert als Waymo (1.302 gegen 1.297; X-News, unbestätigt). Morgan Stanley hob das Kursziel von 400 auf 410 $ (Halten), Jefferies stufte auf Halten mit 375 $ ab (MarketBeat).",
       "whySources": [
         {
           "title": "Yahoo Finance TL0.DE",
@@ -21608,28 +21152,20 @@
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "Yahoo Finance EURUSD=X",
-          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
-        },
-        {
           "title": "Yahoo Finance: Nasdaq-100-Future",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "CNBC: Nvidia vorbörslich +5 % trotz Huang-Untersuchung (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
+          "title": "Reuters/Investing.com: Futures steigen nach CoreWeave (11.11.)",
+          "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-5018288"
         },
         {
-          "title": "Morningstar/Dow Jones: Morning Briefing – TSMC investiert in Anthropic und OpenAI (11.11.)",
-          "url": "https://www.morningstar.com/news/dow-jones/202611113193/north-american-morning-briefing-nasdaq-futures-surge-as-ai-optimism-grips-markets"
+          "title": "Yahoo Finance NVDA",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "US News/Reuters: Futures steigen nach CoreWeave (11.11.)",
-          "url": "https://money.usnews.com/investing/news/articles/2026-11-11/s-p-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears"
-        },
-        {
-          "title": "dpa-AFX/t-online: Dax mittags +0,7 %, Tech-Erholung stützt (11.11.)",
-          "url": "https://www.t-online.de/finanzen/boerse/ticker/aktien-frankfurt-dax-bleibt-vorerst-auf-erfolgskurs-tech-erholung-stuetzt/0DBAD60088BDE6E3/"
+          "title": "dpa-AFX: Dax bleibt auf Erfolgskurs, Tech-Erholung stützt (11.11.)",
+          "url": "https://www.dpa-afx.de/?cHash=097af14a65f8af5ce7eb00cae33e26a8&tx_news_pi1=428486&tx_news_pi1=News&tx_news_pi1=detail"
         },
         {
           "title": "CNBC: FedWatch 91,9 % für Erhöhung im Dezember (11.11.)",
@@ -21640,8 +21176,8 @@
           "url": "https://www.traficom.fi/en/news/teslas-driver-assistance-system-now-permitted-finnish-roads"
         },
         {
-          "title": "Reuters/CNA: Finnland lässt Tesla-System zu (11.11.)",
-          "url": "https://www.channelnewsasia.com/business/finland-clears-tesla-assisted-driving-tech-after-changes-6542681"
+          "title": "Reuters/Investing.com: Finnland lässt Tesla-System zu (11.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/finland-approves-teslas-assisted-driving-system-5017838"
         },
         {
           "title": "X-News: Tesla überholt Waymo bei Robotaxi-Zulassungen in Texas",
@@ -21652,8 +21188,8 @@
           "url": "https://gmteight.com/flash/detail/1569821"
         },
         {
-          "title": "TradingView: Jefferies senkt Kursziel auf 375 $",
-          "url": "https://www.tradingview.com/news/tradingview:a7a3333afbe07:0-key-facts-merger-review-solar-plant-cybertruck-shift-to-cybercab/"
+          "title": "MarketBeat: Jefferies stuft Tesla auf Halten ab (11.11.)",
+          "url": "https://www.marketbeat.com/instant-alerts/analyst-tesla-nasdaq-tsla-rating-lowered-to-hold-at-jefferies-financial-group-2026-11-11/"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -21692,9 +21228,9 @@
       ],
       "fetchError": null,
       "overnightPhase": "vorboerse",
-      "overnightEur": 333.25,
-      "overnightHighEur": 334.22,
-      "overnightLowEur": 332.85,
+      "overnightEur": 333.61,
+      "overnightHighEur": 334.58,
+      "overnightLowEur": 333.21,
       "overnightAsOf": "2026-11-10T14:24:00.000Z",
       "source": "alpaca-iex"
     },
@@ -21712,14 +21248,14 @@
       "previousCloseEur": 55.5,
       "changeEur": 2,
       "changePct": 3.6,
-      "dayHighEur": 57.5,
+      "dayHighEur": 58,
       "dayLowEur": 56.4,
       "eurMethod": "direct_eur",
       "eurVenue": "Frankfurt",
       "eurSymbol": "6RJ0.F",
       "usdSymbol": "RKLB",
       "intradayMethod": "usd_div_eurusd",
-      "fxRate": 1.1138,
+      "fxRate": 1.1126,
       "sparkline": [
         47.43,
         51.48,
@@ -26580,13 +26116,6 @@
           }
         ],
         "4H": [
-          {
-            "t": "2025-11-11T12:00:00.000Z",
-            "eur": 48.8,
-            "open": 48.6,
-            "high": 48.8,
-            "low": 48.2
-          },
           {
             "t": "2025-11-11T16:00:00.000Z",
             "eur": 47.2,
@@ -33005,6 +32534,13 @@
             "open": 57.1,
             "high": 57.5,
             "low": 56.4
+          },
+          {
+            "t": "2026-11-11T12:00:00.000Z",
+            "eur": 57.5,
+            "open": 58,
+            "high": 58,
+            "low": 57.5
           }
         ],
         "1M": [
@@ -33166,7 +32702,7 @@
             "t": "2026-11-11T07:00:00.000Z",
             "eur": 57.5,
             "open": 56.9,
-            "high": 57.5,
+            "high": 58,
             "low": 56.4
           }
         ],
@@ -34099,7 +33635,7 @@
             "t": "2026-11-11T07:00:00.000Z",
             "eur": 57.5,
             "open": 56.9,
-            "high": 57.5,
+            "high": 58,
             "low": 56.4
           }
         ],
@@ -35879,7 +35415,7 @@
             "t": "2026-11-11T07:00:00.000Z",
             "eur": 57.5,
             "open": 56.9,
-            "high": 57.5,
+            "high": 58,
             "low": 56.4
           }
         ],
@@ -36844,16 +36380,16 @@
             "low": 46.2
           },
           {
-            "t": "2026-11-11T11:26:39.000Z",
+            "t": "2026-11-11T12:08:33.000Z",
             "eur": 57.5,
             "open": 56.9,
-            "high": 57.5,
+            "high": 58,
             "low": 56.4
           }
         ]
       },
       "recordHighEur": 125.8,
-      "why": "In Frankfurt zuletzt bei 57,50 € (+3,6 % zum Frankfurter Schluss 55,50 €); vorbörslich in New York um 12:53 bei 63,58 $ (+1,4 % zum Schluss von 62,71 $) – Rocket Lab läuft weiter hinter SPCX und den Chipwerten her. Nach dem Quartalsbericht bleibt das Bild gespalten: Piper Sandler senkte das Ziel von 83 auf 58 $ (Neutral), Stifel bleibt bei 132 $ (Defense World, TIKR); Stützen sind Rekordumsatz von 268 Mio. $, der Auftragsbestand von 3,57 Mrd. $ (+52 % im Quartal) und höhere Neutron-Preise, der Erstflug von Neutron ist aber auf 2027 gerutscht (Trefis, Rocket Lab). Der Nasdaq-100-Future liegt um 12:45 rund 1,8 % höher (Yahoo). Chipwerte ziehen vorbörslich breit an: CoreWeave nach erhöhter Prognose zweistellig im Plus, Nvidia erholt sich um rund 5 % nach zwei Verlusttagen wegen der Huang-Affäre (CNBC), TSMC will je 500 Mio. $ in Anthropic und OpenAI stecken (Dow Jones). In Frankfurt liegt der Dax mittags 0,7 % höher bei 26.527 Punkten, Infineon +7,2 % (dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). US-Anleihemarkt heute wegen Veterans Day geschlossen, Aktien handeln normal. Electron-Start 100 am Sa 14.11. ab 06:30.",
+      "why": "In Frankfurt zuletzt bei 57,50 € (+3,6 % zum Frankfurter Schluss 55,50 €); vorbörslich in New York um 13:57 bei 63,21 $ (+0,8 % zum Schluss von 62,71 $) – Rocket Lab läuft weiter hinter SPCX und den Chipwerten her. Nach dem Quartalsbericht bleibt das Bild gespalten: Piper Sandler senkte das Ziel von 83 auf 58 $, Stifel bleibt bei 132 $ (Defense World, TIKR); Stützen sind Rekordumsatz von 268 Mio. $, Auftragsbestand von 3,57 Mrd. $ und höhere Neutron-Preise (70 Mio. $), der Neutron-Erstflug ist aber auf 2027 gerutscht (Rocket Lab). Bisher hier nicht erwähnt: Das Pentagon-Büro für strategisches Kapital (OSC) hat am 9.11. eine bedingte Kreditzusage über 150 Mio. $ für mehr Neutron-Starts gegeben – noch nicht ausgezahlt, Bedingungen offen (US-Kriegsministerium, SpaceNews). Der Nasdaq-100-Future liegt gegen 13:50 rund 2,0 % höher (Yahoo); Auslöser ist der starke Ausblick von CoreWeave, Chipwerte ziehen vorbörslich breit an, Nvidia rund 3,7 % (Reuters, Yahoo). In Frankfurt steht der Dax bei 26.528 Punkten (+0,7 %), knapp unter dem Rekord von 26.692; Infineon +7,2 % (dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Electron-Start 100 am Sa 14.11. ab 06:30.",
       "whySources": [
         {
           "title": "Yahoo Finance 6RJ0.F",
@@ -36864,10 +36400,6 @@
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "Yahoo Finance EURUSD=X",
-          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
-        },
-        {
           "title": "Defense World: Piper Sandler senkt Kursziel auf 58 $ (11.11.)",
           "url": "https://www.defenseworld.net/2026/11/11/rocket-lab-nasdaqrklb-given-new-58-00-price-target-at-piper-sandler.html"
         },
@@ -36876,32 +36408,32 @@
           "url": "https://www.tikr.com/blog/stifels-132-target-says-rocket-labs-58-slide-went-too-far"
         },
         {
-          "title": "Trefis: Warum Rocket Lab stieg (11.11.)",
-          "url": "https://www.trefis.com/stock/rklb/articles/624390/why-did-rocket-lab-stock-jump/2026-11-11"
-        },
-        {
           "title": "Rocket Lab: Zahlen Q3 2026",
           "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+        },
+        {
+          "title": "US-Kriegsministerium: OSC-Kreditzusage über 150 Mio. $ an Rocket Lab (9.11.)",
+          "url": "https://www.war.gov/News/Releases/Release/Article/4644766/the-department-of-wars-office-of-strategic-capital-signs-150-million-conditiona/"
+        },
+        {
+          "title": "SpaceNews: Pentagon-Finanzierung für Neutron",
+          "url": "https://spacenews.com/rocket-lab-gets-pentagon-financing-to-boost-neutron-production/"
         },
         {
           "title": "Yahoo Finance: Nasdaq-100-Future",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "CNBC: Nvidia vorbörslich +5 % trotz Huang-Untersuchung (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
+          "title": "Reuters/Investing.com: Futures steigen nach CoreWeave (11.11.)",
+          "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-5018288"
         },
         {
-          "title": "Morningstar/Dow Jones: Morning Briefing – TSMC investiert in Anthropic und OpenAI (11.11.)",
-          "url": "https://www.morningstar.com/news/dow-jones/202611113193/north-american-morning-briefing-nasdaq-futures-surge-as-ai-optimism-grips-markets"
+          "title": "Yahoo Finance NVDA",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "US News/Reuters: Futures steigen nach CoreWeave (11.11.)",
-          "url": "https://money.usnews.com/investing/news/articles/2026-11-11/s-p-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears"
-        },
-        {
-          "title": "dpa-AFX/t-online: Dax mittags +0,7 %, Tech-Erholung stützt (11.11.)",
-          "url": "https://www.t-online.de/finanzen/boerse/ticker/aktien-frankfurt-dax-bleibt-vorerst-auf-erfolgskurs-tech-erholung-stuetzt/0DBAD60088BDE6E3/"
+          "title": "dpa-AFX: Dax bleibt auf Erfolgskurs, Tech-Erholung stützt (11.11.)",
+          "url": "https://www.dpa-afx.de/?cHash=097af14a65f8af5ce7eb00cae33e26a8&tx_news_pi1=428486&tx_news_pi1=News&tx_news_pi1=detail"
         },
         {
           "title": "CNBC: FedWatch 91,9 % für Erhöhung im Dezember (11.11.)",
@@ -36944,9 +36476,9 @@
       ],
       "fetchError": null,
       "overnightPhase": "vorboerse",
-      "overnightEur": 47.79,
-      "overnightHighEur": 47.79,
-      "overnightLowEur": 47.79,
+      "overnightEur": 47.84,
+      "overnightHighEur": 47.84,
+      "overnightLowEur": 47.84,
       "overnightAsOf": "2026-11-10T13:38:00.000Z",
       "source": "alpaca-iex"
     },
@@ -36956,58 +36488,58 @@
       "role": "Halbleiter",
       "venue": "Nasdaq",
       "currency": "EUR",
-      "priceEur": 149.72,
+      "priceEur": 150.92,
       "priceUsd": 154.37,
       "previousCloseEur": 138.74,
-      "changeEur": 10.98,
-      "changePct": 7.91,
-      "dayHighEur": 150.08,
+      "changeEur": 12.18,
+      "changePct": 8.78,
+      "dayHighEur": 151.5,
       "dayLowEur": 146.76,
       "overnightPhase": "vorboerse",
-      "overnightEur": 132.61,
-      "overnightHighEur": 135.31,
-      "overnightLowEur": 132.08,
-      "overnightAsOf": "2026-11-10T14:13:00.000Z",
+      "overnightEur": 151.24,
+      "overnightHighEur": 151.25,
+      "overnightLowEur": 132.22,
+      "overnightAsOf": "2026-11-11T13:18:00.000Z",
       "eurMethod": "direct_eur",
       "eurVenue": "Xetra",
       "eurSymbol": "9MW.DE",
       "usdSymbol": "MRVL",
       "source": "alpaca-iex",
-      "intradayMethod": "direct_eur",
-      "fxRate": 1.1138,
+      "intradayMethod": "direct_eur_plus_us",
+      "fxRate": 1.1126,
       "sparkline": [
         146.92,
-        147.28,
-        147.26,
-        147.4,
+        147.5,
+        147.92,
         147.48,
-        147.98,
-        147.64,
-        147.64,
+        147.42,
+        147.68,
         148.12,
-        147.16,
-        147.08,
-        147.02,
+        147.66,
+        147.34,
         147.7,
         147.9,
-        148.24,
-        147.86,
-        148.4,
+        148.04,
+        148.32,
         148.42,
-        148.44,
-        148,
-        147.72,
+        148.16,
+        147.9,
         147.76,
-        148.44,
-        148.4,
-        148.84,
+        148.48,
+        148.56,
         149.58,
         149.16,
-        148.78,
-        149.46,
-        149.66,
-        149.82,
-        149.72
+        149.2,
+        149.6,
+        149.72,
+        149.44,
+        149.96,
+        150.22,
+        150.6,
+        151.48,
+        150.74,
+        150.92,
+        151.24
       ],
       "history": {
         "intraday": [
@@ -37427,9 +36959,141 @@
             "session": "regular"
           },
           {
-            "t": "2026-11-11T11:37:48.000Z",
+            "t": "2026-11-11T11:37:00.000Z",
             "eur": 149.72,
             "session": "regular"
+          },
+          {
+            "t": "2026-11-11T11:46:00.000Z",
+            "eur": 149.44,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T11:48:00.000Z",
+            "eur": 149.52,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T11:50:00.000Z",
+            "eur": 149.36,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:04:00.000Z",
+            "eur": 150.26,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:08:00.000Z",
+            "eur": 149.96,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:12:00.000Z",
+            "eur": 149.92,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:15:00.000Z",
+            "eur": 150.14,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:17:00.000Z",
+            "eur": 150.22,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:22:00.000Z",
+            "eur": 150.34,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:27:00.000Z",
+            "eur": 150.4,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:28:00.000Z",
+            "eur": 150.58,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:31:00.000Z",
+            "eur": 150.6,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:34:00.000Z",
+            "eur": 150.74,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:41:00.000Z",
+            "eur": 151.2,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:50:00.000Z",
+            "eur": 151.48,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:51:00.000Z",
+            "eur": 151.46,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:54:00.000Z",
+            "eur": 150.92,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:57:00.000Z",
+            "eur": 150.78,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T12:59:00.000Z",
+            "eur": 150.74,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T13:00:00.000Z",
+            "eur": 150.86,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T13:01:00.000Z",
+            "eur": 150.9,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T13:02:00.000Z",
+            "eur": 150.92,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T13:03:00.000Z",
+            "eur": 151.06,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T13:04:25.000Z",
+            "eur": 150.92,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T13:09:00.000Z",
+            "eur": 150.85,
+            "usd": 167.83,
+            "session": "pre"
+          },
+          {
+            "t": "2026-11-11T13:18:00.000Z",
+            "eur": 151.24,
+            "usd": 168.27,
+            "session": "pre"
           }
         ],
         "5m": [
@@ -38849,17 +38513,108 @@
           },
           {
             "t": "2026-11-11T11:35:00.000Z",
-            "eur": 149.78,
+            "eur": 149.72,
             "open": 149.74,
             "high": 149.78,
-            "low": 149.74
+            "low": 149.72
           },
           {
-            "t": "2026-11-11T11:37:48.000Z",
-            "eur": 149.72,
-            "open": 149.72,
-            "high": 149.72,
-            "low": 149.72
+            "t": "2026-11-11T11:45:00.000Z",
+            "eur": 149.52,
+            "open": 149.44,
+            "high": 149.52,
+            "low": 149.44
+          },
+          {
+            "t": "2026-11-11T11:50:00.000Z",
+            "eur": 149.36,
+            "open": 149.26,
+            "high": 149.36,
+            "low": 149.26
+          },
+          {
+            "t": "2026-11-11T12:00:00.000Z",
+            "eur": 150.26,
+            "open": 150.26,
+            "high": 150.26,
+            "low": 150.26
+          },
+          {
+            "t": "2026-11-11T12:05:00.000Z",
+            "eur": 149.96,
+            "open": 149.96,
+            "high": 149.96,
+            "low": 149.96
+          },
+          {
+            "t": "2026-11-11T12:10:00.000Z",
+            "eur": 149.92,
+            "open": 149.92,
+            "high": 149.92,
+            "low": 149.92
+          },
+          {
+            "t": "2026-11-11T12:15:00.000Z",
+            "eur": 150.22,
+            "open": 150.14,
+            "high": 150.22,
+            "low": 150.14
+          },
+          {
+            "t": "2026-11-11T12:20:00.000Z",
+            "eur": 150.34,
+            "open": 150.34,
+            "high": 150.34,
+            "low": 150.34
+          },
+          {
+            "t": "2026-11-11T12:25:00.000Z",
+            "eur": 150.58,
+            "open": 150.4,
+            "high": 150.58,
+            "low": 150.4
+          },
+          {
+            "t": "2026-11-11T12:30:00.000Z",
+            "eur": 150.74,
+            "open": 150.6,
+            "high": 150.74,
+            "low": 150.6
+          },
+          {
+            "t": "2026-11-11T12:40:00.000Z",
+            "eur": 151.2,
+            "open": 151.2,
+            "high": 151.2,
+            "low": 151.2
+          },
+          {
+            "t": "2026-11-11T12:50:00.000Z",
+            "eur": 150.92,
+            "open": 151.48,
+            "high": 151.5,
+            "low": 150.92
+          },
+          {
+            "t": "2026-11-11T12:55:00.000Z",
+            "eur": 150.74,
+            "open": 150.78,
+            "high": 150.78,
+            "low": 150.74
+          },
+          {
+            "t": "2026-11-11T13:00:00.000Z",
+            "eur": 151.06,
+            "open": 150.74,
+            "high": 151.06,
+            "low": 150.74
+          },
+          {
+            "t": "2026-11-11T13:04:25.000Z",
+            "eur": 150.92,
+            "open": 150.92,
+            "high": 150.92,
+            "low": 150.92
           }
         ],
         "1H": [
@@ -39537,18 +39292,34 @@
           },
           {
             "t": "2026-11-11T11:00:00.000Z",
-            "eur": 149.78,
+            "eur": 149.36,
             "open": 148.8,
             "high": 150.08,
             "low": 148.78,
             "session": "regular"
           },
           {
-            "t": "2026-11-11T11:37:48.000Z",
-            "eur": 149.72,
-            "open": 149.72,
-            "high": 149.72,
-            "low": 149.72,
+            "t": "2026-11-11T12:00:00.000Z",
+            "eur": 150.74,
+            "open": 150.26,
+            "high": 151.5,
+            "low": 149.92,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T13:00:00.000Z",
+            "eur": 151.06,
+            "open": 150.74,
+            "high": 151.06,
+            "low": 150.74,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-11T13:04:25.000Z",
+            "eur": 150.92,
+            "open": 150.92,
+            "high": 150.92,
+            "low": 150.92,
             "session": "regular"
           }
         ],
@@ -39556,8 +39327,8 @@
           {
             "t": "2025-11-11T12:00:00.000Z",
             "eur": 77.28,
-            "open": 80.04,
-            "high": 80.06,
+            "open": 79.62,
+            "high": 79.79,
             "low": 77.25
           },
           {
@@ -44777,10 +44548,17 @@
           },
           {
             "t": "2026-11-11T08:00:00.000Z",
-            "eur": 149.72,
+            "eur": 149.36,
             "open": 147,
             "high": 150.08,
             "low": 146.76
+          },
+          {
+            "t": "2026-11-11T12:00:00.000Z",
+            "eur": 150.92,
+            "open": 150.26,
+            "high": 151.5,
+            "low": 149.92
           }
         ],
         "1M": [
@@ -44940,9 +44718,9 @@
           },
           {
             "t": "2026-11-11T08:00:00.000Z",
-            "eur": 149.72,
+            "eur": 150.92,
             "open": 147,
-            "high": 150.08,
+            "high": 151.5,
             "low": 146.76
           }
         ],
@@ -45873,9 +45651,9 @@
           },
           {
             "t": "2026-11-11T08:00:00.000Z",
-            "eur": 149.72,
+            "eur": 150.92,
             "open": 147,
-            "high": 150.08,
+            "high": 151.5,
             "low": 146.76
           }
         ],
@@ -47653,9 +47431,9 @@
           },
           {
             "t": "2026-11-11T08:00:00.000Z",
-            "eur": 149.72,
+            "eur": 150.92,
             "open": 147,
-            "high": 150.08,
+            "high": 151.5,
             "low": 146.76
           }
         ],
@@ -48711,16 +48489,16 @@
             "low": 122.28
           },
           {
-            "t": "2026-11-11T11:37:48.000Z",
-            "eur": 149.72,
+            "t": "2026-11-11T13:04:25.000Z",
+            "eur": 150.92,
             "open": 147,
-            "high": 150.08,
+            "high": 151.5,
             "low": 146.76
           }
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Auf Xetra um 12:37 bei 149,72 € (+7,9 % zum Xetra-Schluss 138,74 €; umgerechnet etwa 166,8 $ bei EUR/USD 1,114); vorbörslich in New York um 12:53 bei 166,50 $ (+7,8 % zum Schluss von 154,39 $). Marvell gehört zu den stärksten KI-Hardware-Werten vor US-Eröffnung. Der Nasdaq-100-Future liegt um 12:45 rund 1,8 % höher (Yahoo). Chipwerte ziehen vorbörslich breit an: CoreWeave nach erhöhter Prognose zweistellig im Plus, Nvidia erholt sich um rund 5 % nach zwei Verlusttagen wegen der Huang-Affäre (CNBC), TSMC will je 500 Mio. $ in Anthropic und OpenAI stecken (Dow Jones). In Frankfurt liegt der Dax mittags 0,7 % höher bei 26.527 Punkten, Infineon +7,2 % (dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). US-Anleihemarkt heute wegen Veterans Day geschlossen, Aktien handeln normal. Bremse bleibt der Lumentum-Deal, dem Arbitrageure laut Bloomberg nur etwa 50:50 Chancen geben. Nächste Signale: Cisco und Applied Materials Do nach US-Schluss, Nvidia am 17.11.",
+      "why": "Auf Xetra um 13:41 bei 151,20 € (+9,0 % zum Xetra-Schluss 138,74 €); vorbörslich in New York um 13:58 bei 167,80 $ (+8,7 % zum Schluss von 154,39 $). Marvell gehört zu den stärksten Chipwerten vor US-Eröffnung, getragen von der Branchenerholung nach CoreWeave (KuCoin, Reuters). Der Nasdaq-100-Future liegt gegen 13:50 rund 2,0 % höher (Yahoo); Auslöser ist der starke Ausblick von CoreWeave, Chipwerte ziehen vorbörslich breit an, Nvidia rund 3,7 % (Reuters, Yahoo). In Frankfurt steht der Dax bei 26.528 Punkten (+0,7 %), knapp unter dem Rekord von 26.692; Infineon +7,2 % (dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Bremse bleibt der Lumentum-Deal, dem Arbitrageure laut Bloomberg nur etwa 50:50 Chancen geben. Nächste Signale: Cisco und Applied Materials Do nach US-Schluss, Nvidia am 17.11.",
       "whySources": [
         {
           "title": "Yahoo Finance 9MW.DE",
@@ -48731,28 +48509,24 @@
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "Yahoo Finance EURUSD=X",
-          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
+          "title": "KuCoin: Chipwerte vorbörslich fester, Marvell +7,6 %",
+          "url": "https://www.kucoin.com/news/flash/pre-market-chip-stocks-rally-marvell-tech-up-7-6"
         },
         {
           "title": "Yahoo Finance: Nasdaq-100-Future",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "CNBC: Nvidia vorbörslich +5 % trotz Huang-Untersuchung (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
+          "title": "Reuters/Investing.com: Futures steigen nach CoreWeave (11.11.)",
+          "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-5018288"
         },
         {
-          "title": "Morningstar/Dow Jones: Morning Briefing – TSMC investiert in Anthropic und OpenAI (11.11.)",
-          "url": "https://www.morningstar.com/news/dow-jones/202611113193/north-american-morning-briefing-nasdaq-futures-surge-as-ai-optimism-grips-markets"
+          "title": "Yahoo Finance NVDA",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "US News/Reuters: Futures steigen nach CoreWeave (11.11.)",
-          "url": "https://money.usnews.com/investing/news/articles/2026-11-11/s-p-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears"
-        },
-        {
-          "title": "dpa-AFX/t-online: Dax mittags +0,7 %, Tech-Erholung stützt (11.11.)",
-          "url": "https://www.t-online.de/finanzen/boerse/ticker/aktien-frankfurt-dax-bleibt-vorerst-auf-erfolgskurs-tech-erholung-stuetzt/0DBAD60088BDE6E3/"
+          "title": "dpa-AFX: Dax bleibt auf Erfolgskurs, Tech-Erholung stützt (11.11.)",
+          "url": "https://www.dpa-afx.de/?cHash=097af14a65f8af5ce7eb00cae33e26a8&tx_news_pi1=428486&tx_news_pi1=News&tx_news_pi1=detail"
         },
         {
           "title": "CNBC: FedWatch 91,9 % für Erhöhung im Dezember (11.11.)",

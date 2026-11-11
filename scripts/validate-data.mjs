@@ -317,12 +317,19 @@ for (const company of loaded["companies.json"]?.companies || []) {
   sourcesOk(company.sources, `companies.${company.id}`);
 }
 
+function checkDown(row, label) {
+  if (row.down == null) return;
+  if (!Number.isInteger(row.down) || row.down < 0 || row.down > row.n) fail(`${label}.down`);
+  else if (Number.isInteger(row.up) && row.up + row.down > row.n) fail(`${label}.down`);
+}
+
 function countRow(row, label, withMedian) {
   if (!row || !Number.isInteger(row.n) || row.n < 0) {
     fail(`${label}.n`);
     return;
   }
   if (!Number.isInteger(row.up) || row.up < 0 || row.up > row.n) fail(`${label}.up`);
+  checkDown(row, label);
   if (row.n === 0) {
     if (row.avg != null) fail(`${label}.avg`);
   } else if (typeof row.avg !== "number" || Number.isNaN(row.avg)) fail(`${label}.avg`);
@@ -338,6 +345,7 @@ function cellRow(cell, label) {
     return;
   }
   if (!Number.isInteger(cell.up) || cell.up < 0 || cell.up > cell.n) fail(`${label}.up`);
+  checkDown(cell, label);
   if (cell.n === 0) {
     if (cell.avg != null) fail(`${label}.avg`);
   } else if (typeof cell.avg !== "number" || Number.isNaN(cell.avg)) fail(`${label}.avg`);
