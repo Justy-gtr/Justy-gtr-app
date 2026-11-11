@@ -84,7 +84,7 @@
       ],
       "probabilityPct": 80,
       "impact": "niedrig",
-      "reasoning": "Stand Di 05:20: SpaceX-Missionsseite bestätigt Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Siebter Flug der Erststufe, Landung auf der Drohnenschiff „Of Course I Still Love You“. 80 % unverändert für einen Start im Fenster: Routine von derselben Rampe, die erste Verschiebung kam ohne Begründung. Kurswirkung gering. Stand Mi 05:00: Wieder um einen Tag verschoben, jetzt Mi 11.11. 18:35 PT (bei uns Do 12.11. 03:35–07:35), Backup Do 18:21 PT (Fr 03:21 Berlin). Fünfte Verschiebung, Status laut Launch Library „Go“. 80 % unverändert für einen Start in diesem Fenster oder dem Backup. Stand Mi 07:00: Termin Do 03:35 Berlin bestätigt, Status um 06:45 erneut „Go“ (Launch Library). 80 % unverändert. Stand Mi 09:00: SpaceX-Missionsseite und Next Spaceflight nennen weiter Do 02:35 UTC (03:35 Berlin) ab Vandenberg. 80 % unverändert. Stand Mi 09:50: SpaceX bestätigt das vierstündige Fenster ab Mi 18:35 PT (Do 03:35 Berlin); Ersatztermin Do 18:21 PT (Fr 03:21 Berlin). 80 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite unverändert, Fenster ab Mi 18:35 PT (Do 03:35 Berlin), Backup Do 18:21 PT. 80 % unverändert. Stand Mi 14:00: Launch Library weiter „Go“ für Do 02:35 UTC (03:35 Berlin). 80 % unverändert. Stand Mi 15:00: Wetterprognosen für Vandenberg sehen rund 90–96 % „Go“ (Space Launch Hub). Das Wetter ist also kaum das Risiko, eher Technik oder Kunde; 80 % unverändert.",
+      "reasoning": "Stand Di 05:20: SpaceX-Missionsseite bestätigt Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Siebter Flug der Erststufe, Landung auf dem Drohnenschiff „Of Course I Still Love You“. 80 % unverändert für einen Start im Fenster: Routine von derselben Rampe, die erste Verschiebung kam ohne Begründung. Kurswirkung gering. Stand Mi 05:00: Wieder um einen Tag verschoben, jetzt Mi 11.11. 18:35 PT (bei uns Do 12.11. 03:35–07:35), Backup Do 18:21 PT (Fr 03:21 Berlin). Fünfte Verschiebung, Status laut Launch Library „Go“. 80 % unverändert für einen Start in diesem Fenster oder dem Backup. Stand Mi 07:00: Termin Do 03:35 Berlin bestätigt, Status um 06:45 erneut „Go“ (Launch Library). 80 % unverändert. Stand Mi 09:00: SpaceX-Missionsseite und Next Spaceflight nennen weiter Do 02:35 UTC (03:35 Berlin) ab Vandenberg. 80 % unverändert. Stand Mi 09:50: SpaceX bestätigt das vierstündige Fenster ab Mi 18:35 PT (Do 03:35 Berlin); Ersatztermin Do 18:21 PT (Fr 03:21 Berlin). 80 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite unverändert, Fenster ab Mi 18:35 PT (Do 03:35 Berlin), Backup Do 18:21 PT. 80 % unverändert. Stand Mi 14:00: Launch Library weiter „Go“ für Do 02:35 UTC (03:35 Berlin). 80 % unverändert. Stand Mi 15:00: Wetterprognosen für Vandenberg sehen rund 90–96 % „Go“ (Space Launch Hub). Das Wetter ist also kaum das Risiko, eher Technik oder Kunde; 80 % unverändert. Stand Mi 16:00: SpaceX führt den Start weiter für Do 02:35 UTC (03:35 Berlin) von SLC-4E, Landung auf der Drohnenschiff „Of Course I Still Love You“ (SpaceX, Space Launch Live). 80 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -183,7 +183,7 @@
       ],
       "probabilityPct": 65,
       "impact": "hoch",
-      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert. Stand Mi 07:00: Weiter keine Lizenz auf der FAA-Seite, SpaceX schreibt weiter „pending regulatory approval“. 65 % unverändert. Stand Mi 09:00: FAA-Seite nennt weiter keine Lizenz, SpaceX-Missionsseite unverändert „pending regulatory approval“ (Fenster Fr 16:45–18:00 CT). 65 % unverändert. Stand Mi 09:50: FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz, SpaceX weiter „pending regulatory approval“. Die Meldung einer Fanseite über eine erteilte Lizenz bleibt unbestätigt. 65 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite weiter „pending regulatory approval“, die FAA-Seite (Stand 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Mi 12:55: SpaceX-Missionsseite weiter „as soon as Friday, November 13, pending regulatory approval“; eine FAA-Lizenz ist nicht gemeldet. 65 % unverändert. Stand Mi 14:00: SpaceX-Missionsseite weiter „pending regulatory approval“, Launch Library führt den Start als „TBC“. Eine Fanseite (All Things Elon) schreibt von einer erteilten Lizenz, nennt aber keine FAA-Quelle und verwechselt den Wochentag – bleibt unbestätigt. 65 % unverändert. Stand Mi 15:00: Missionsseite weiter „pending regulatory approval“, Fenster Fr 16:45 CT (23:45 Berlin); eine FAA-Lizenzänderung für die Rückkehr von Ship 42 zum Turm ist weiter nicht gemeldet (SpaceX, SciBeat). 65 % unverändert.",
+      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert. Stand Mi 07:00: Weiter keine Lizenz auf der FAA-Seite, SpaceX schreibt weiter „pending regulatory approval“. 65 % unverändert. Stand Mi 09:00: FAA-Seite nennt weiter keine Lizenz, SpaceX-Missionsseite unverändert „pending regulatory approval“ (Fenster Fr 16:45–18:00 CT). 65 % unverändert. Stand Mi 09:50: FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz, SpaceX weiter „pending regulatory approval“. Die Meldung einer Fanseite über eine erteilte Lizenz bleibt unbestätigt. 65 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite weiter „pending regulatory approval“, die FAA-Seite (Stand 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Mi 12:55: SpaceX-Missionsseite weiter „as soon as Friday, November 13, pending regulatory approval“; eine FAA-Lizenz ist nicht gemeldet. 65 % unverändert. Stand Mi 14:00: SpaceX-Missionsseite weiter „pending regulatory approval“, Launch Library führt den Start als „TBC“. Eine Fanseite (All Things Elon) schreibt von einer erteilten Lizenz, nennt aber keine FAA-Quelle und verwechselt den Wochentag – bleibt unbestätigt. 65 % unverändert. Stand Mi 15:00: Missionsseite weiter „pending regulatory approval“, Fenster Fr 16:45 CT (23:45 Berlin); eine FAA-Lizenzänderung für die Rückkehr von Ship 42 zum Turm ist weiter nicht gemeldet (SpaceX, SciBeat). 65 % unverändert. Stand Mi 16:00: Missionsseite weiter „pending regulatory approval“, eine FAA-Lizenzänderung ist weiter nicht veröffentlicht (SpaceX, The Space Launches). 65 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -261,6 +261,10 @@
         {
           "title": "SciBeat: Flight 15 wartet auf FAA-Freigabe",
           "url": "https://scibeat.com/articles/starship-flight-15-targets-but-dual-catch-needs-faa-approval"
+        },
+        {
+          "title": "The Space Launches: Flight 15 wartet auf FAA",
+          "url": "https://www.thespacelaunches.com/news/2026-11-06-starship-flight-15-dual-catch-attempt-awaits-faa-green-light.html"
         }
       ]
     },
@@ -527,7 +531,7 @@
       ],
       "probabilityPct": 85,
       "impact": "mittel",
-      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms. Stand Mi 07:00: Fidelity nennt für Privatkunden Zeichnungsende Di 17.11. 16:00 ET (22:00 Berlin) und die Preisfestsetzung am Abend des 18.11.; das stützt den Handelsstart am 19.11. 85 % unverändert. Stand Mi 09:50: Laut FT wollen die Konsortialbanken (Goldman Sachs, Morgan Stanley) wegen hoher Nachfrage den Preis über die Spanne von 70–78 $ heben, die Bewertung läge dann bei 1,5 Bio. $ oder mehr. Das stützt den Termin; 85 % unverändert. Stand Mi 12:55: Der TSMC-Verwaltungsrat hat je 500 Mio. $ Investition in Anthropic und OpenAI genehmigt (Dow Jones). Stützt die Nachfrage; 85 % unverändert. Stand Mi 15:00: Auf X verbreitet sich eine unbestätigte Mitschrift (Konto @jukan05), wonach Anthropic Analysten gesagt habe, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Weder Anthropic noch SpaceX haben das bestätigt. Für den Börsentermin ändert das nichts; 85 % unverändert.",
+      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms. Stand Mi 07:00: Fidelity nennt für Privatkunden Zeichnungsende Di 17.11. 16:00 ET (22:00 Berlin) und die Preisfestsetzung am Abend des 18.11.; das stützt den Handelsstart am 19.11. 85 % unverändert. Stand Mi 09:50: Laut FT wollen die Konsortialbanken (Goldman Sachs, Morgan Stanley) wegen hoher Nachfrage den Preis über die Spanne von 70–78 $ heben, die Bewertung läge dann bei 1,5 Bio. $ oder mehr. Das stützt den Termin; 85 % unverändert. Stand Mi 12:55: Der TSMC-Verwaltungsrat hat je 500 Mio. $ Investition in Anthropic und OpenAI genehmigt (Dow Jones). Stützt die Nachfrage; 85 % unverändert. Stand Mi 15:00: Auf X verbreitet sich eine unbestätigte Mitschrift (Konto @jukan05), wonach Anthropic Analysten gesagt habe, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Weder Anthropic noch SpaceX haben das bestätigt. Für den Börsentermin ändert das nichts; 85 % unverändert. Stand Mi 16:00: Die X-Mitschrift zum SpaceX-Vertrag ist weiter unbestätigt; weder Anthropic noch SpaceX haben sich geäußert, eine neue SEC-Meldung gibt es nicht. Laut Anthropic-Prospekt sind die Verträge erst nach Januar bzw. März 2027 mit 90 Tagen Frist kündbar (S-1, TokenPost). 85 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -581,6 +585,10 @@
         {
           "title": "@jukan05: Anthropic-Aussagen vor Analysten (unbestätigt, 11.11.)",
           "url": "https://x.com/jukan05/status/2120483370488750336"
+        },
+        {
+          "title": "TokenPost: Kündigungsregeln der SpaceXAI-Verträge im Anthropic-S-1",
+          "url": "https://www.tokenpost.com/news/technology/43514"
         }
       ]
     },
@@ -1449,79 +1457,6 @@
         {
           "title": "AP: Überraschend starke Payrolls",
           "url": "https://apnews.com/article/jobs-inflation-paycheck-salary-employment-746ee02db33d0372980f815ada33d8d3"
-        }
-      ]
-    },
-    {
-      "id": "evt-us-cpi-okt",
-      "title": "USA: Verbraucherpreise (CPI) Oktober — veröffentlicht: +0,4 %, Kern +0,3 % (heißer als erwartet)",
-      "date": "2026-11-10",
-      "time": "14:30",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "makro",
-      "company": null,
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Ergebnis 14:30: Verbraucherpreise +0,4 % zum Vormonat (erwartet +0,3 %, September +0,6 %), Kernrate +0,3 % (erwartet +0,2 %), Energie +0,7 %, Wohnen +0,3 %; Jahresraten fehlen wegen des Shutdowns 2025 (BLS, CNBC). Beide Werte über Konsens: Das stützt die Zinserhöhung im Dezember. Reaktion: 10-jährige US-Rendite +8 Basispunkte auf 4,95 %, Nasdaq zur Eröffnung −0,9 %, um 10:04 New York aber schon +0,1 %; Nvidia −3 % (CNBC). Mittags New York kippte die Erholung: um 17:58 Berlin Nasdaq −1,3 %, Nvidia −6,6 %, 10-jährige Rendite 5,0 % (Yahoo, CNBC). Fed-Gouverneur Waller sagte vorab, bei höheren Werten sollte die Fed sogar 50 Basispunkte erwägen (CNBC). Vorher: Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid. Stand Di Vormittag: Dow-Futures +0,35 %, S&P-Futures +0,1 %, Nasdaq-100-Futures −0,3 %, Brent 90,6 $ nach Trumps Iran-Aussage (Yahoo/Stocktwits). DAX mittags +1,2 % nahe Rekord (dpa-AFX). Schluss 22:00: Nasdaq −0,7 % auf 25.065,88, S&P 500 −0,4 % auf 7.521,11, Nvidia −5,5 % auf 168,80 $ (Yahoo). Deutsche Bank erwartet nach den Daten eine weitere Erhöhung im Januar 2027 (Economic Times).",
-      "example": false,
-      "sources": [
-        {
-          "title": "BLS: Verbraucherpreise Oktober 2026 (10.11.)",
-          "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
-        },
-        {
-          "title": "CNBC: Preise +0,4 %, mehr als erwartet (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
-        },
-        {
-          "title": "CNBC: Waller zu 50 Basispunkten (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html"
-        },
-        {
-          "title": "BLS: Termine Verbraucherpreisindex",
-          "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
-        },
-        {
-          "title": "CNBC: Was der Oktober-CPI zeigen soll (9.11.)",
-          "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html"
-        },
-        {
-          "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
-        },
-        {
-          "title": "Dow Jones/MarketScreener: Tagesvorschau Di 10.11. (Konsens CPI)",
-          "url": "https://at.marketscreener.com/boerse-nachrichten/tagesvorschau-dienstag-10-november-ce785edad98df724"
-        },
-        {
-          "title": "Investing.com: Was die Märkte bewegen (10.11.)",
-          "url": "https://www.investing.com/news/economy-news/us-inflation-data-ahead-huang-scandal-fallout--whats-moving-markets-5014413"
-        },
-        {
-          "title": "Yahoo/Stocktwits: US-Futures gemischt vor CPI (10.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-mixed-investors-102051723.html"
-        },
-        {
-          "title": "dpa-AFX/onvista: Dax nähert sich Rekordhoch (10.11.)",
-          "url": "https://www.onvista.de/news/2026/11-10-aktien-frankfurt-weiter-auf-erholungskurs-dax-naehert-sich-rekordhoch-0-10-26574579"
-        },
-        {
-          "title": "CNBC: S&P leicht schwächer, Nasdaq +0,1 % nach CPI (10.11., 10:04 ET)",
-          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq Composite (Schluss 10.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "title": "Economic Times: Liveblog Wall Street 10.11. (Deutsche Bank)",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-anthropic-ipo-nvidia-intel-marvell-tech-ai-chip-stocks-inflation-fed-rate-hike-treasury-bond-yield-news-10th-november-2026/liveblog/135712173.cms"
         }
       ]
     },
