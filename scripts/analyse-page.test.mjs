@@ -11,7 +11,7 @@ import { renderChartsPage } from "../js/views.js";
 import { TICKERS } from "./fetch-prices.mjs";
 import { aggregateBars } from "./market.mjs";
 
-const ADVICE = /\b(kaufen|verkaufen|kauft|verkauft|kauf|verkauf|long|short|empfehl\w*|signal|tipp)\b/i;
+const ADVICE = /\b(kaufen|verkaufen|kauft|verkauft|kauf|verkauf|empfehl\w*|signal|tipp)\b|\b(long|short)\b(?!: Wie oft)/i;
 const DAY = 86400000;
 
 function candle(index, close, extra = {}) {
@@ -635,8 +635,8 @@ test("Nummern und Striche kommen aus der Fixture, nicht aus dem Tageskurs", () =
   assert.match(css, /\.guide-legend \.swatch\.trend/);
   assert.equal(css.includes("kaufen"), false);
   const sw = fs.readFileSync("sw.js", "utf8");
-  assert.match(sw, /jgtr-v38/);
-  assert.equal(sw.includes("jgtr-v37"), false);
+  assert.match(sw, /jgtr-v39/);
+  assert.equal(sw.includes("jgtr-v38"), false);
 });
 
 test("Achse nennt die Uhrzeit und das Datum nur am Tageswechsel", () => {

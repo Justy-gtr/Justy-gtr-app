@@ -23,6 +23,7 @@ import {
   keepSettledHours,
   renderSeasonalityCard,
   seasonalityHeadline,
+  downPercent,
   summarizeWeek,
   upPercent
 } from "../js/seasonality.js";
@@ -45,6 +46,22 @@ function tagCells(html) {
   return [...tagRow(html).matchAll(/class="clock-(?:cell|sum) is-day[^"]*"[^>]*>([^<]*)</g)].map((match) => match[1]);
 }
 
+function clockOf(html, mode) {
+  const start = html.indexOf(`data-clock="${mode}"`);
+  if (start < 0) return "";
+  const end = html.indexOf("</div>", start);
+  return html.slice(start, end === -1 ? html.length : end);
+}
+
+function paintBefore(html, text) {
+  const at = html.indexOf(`>${text}<`);
+  if (at < 0) return null;
+  const style = html.slice(html.lastIndexOf("<span", at), at);
+  const match = style.match(/rgba\((\d+), (\d+), (\d+),([0-9.]+)\)/);
+  if (!match) return null;
+  return { rgb: `${match[1]}, ${match[2]}, ${match[3]}`, alpha: Number(match[4]), ink: /is-ink"/.test(style) };
+}
+
 test("Wochentage zählen nur die eigenen Schlüsse, Wochenende und Lücken bleiben draußen", () => {
   const days = aggregateWeekdays([
     { t: "2026-01-02", close: 100 },
@@ -59,12 +76,15 @@ test("Wochentage zählen nur die eigenen Schlüsse, Wochenende und Lücken bleib
   assert.equal(days.length, 5);
   assert.equal(days[0].n, 1);
   assert.equal(days[0].up, 1);
+  assert.equal(days[0].down, 0);
   assert.equal(days[0].avg, 10);
   assert.equal(days[0].med, 10);
   assert.equal(days[1].n, 1);
   assert.equal(days[1].up, 0);
+  assert.equal(days[1].down, 0);
   assert.equal(days[1].avg, 0);
   assert.equal(days[2].up, 0);
+  assert.equal(days[2].down, 1);
   assert.equal(days[2].avg, -10);
   assert.equal(days[3].up, 1);
   assert.equal(days[3].avg, 1.01);
@@ -251,17 +271,24 @@ test("Unter sieben Fällen gibt es keine Prozentzahl", () => {
   assert.match(html, /data-hour="08"/);
   assert.match(html, /data-hour="15:00"/);
   assert.match(html, /data-hour="15:30"/);
-  assert.match(html, /Zahl: Anteil steigender Stunden/);
-  assert.match(html, /Tag: Anteil steigender Tage/);
+  assert.match(html, /Long: Wie oft ging es hoch\?/);
+  assert.match(html, /Short: Wie oft ging es runter\?/);
+  assert.equal(html.includes("Zahl: Anteil steigender Stunden"), false);
+  assert.equal(html.includes("chart-legend"), false);
   assert.equal(/Keine Anlageberatung/.test(html), false);
   assert.match(html, /clock-cell[^>]*>50%</);
   assert.match(html, /clock-cell is-quiet[^>]*>–</);
+  assert.ok(html.indexOf("Long: Wie oft ging es hoch?") < html.indexOf('data-clock="up"'));
+  assert.ok(html.indexOf('data-clock="up"') < html.indexOf("Short: Wie oft ging es runter?"));
+  assert.ok(html.indexOf("Short: Wie oft ging es runter?") < html.indexOf('data-clock="down"'));
   assert.ok(html.indexOf('data-hour="21:30"') < html.indexOf('data-row="tag"'));
-  assert.ok(html.indexOf('data-row="tag"') < html.indexOf("chart-legend"));
   assert.deepEqual(tagCells(html), ["–", "80%", "20%", "50%", "60%", "59 %"]);
   assert.match(tagRow(html), /clock-name is-day/);
   assert.match(tagRow(html), /background:rgba\(125, 222, 192/);
-  assert.match(tagRow(html), /background:rgba\(255, 139, 152/);
+  assert.equal(/rgba\(255, 139, 152/.test(tagRow(html)), false);
+  assert.equal(/rgba\(255, 139, 152/.test(clockOf(html, "up")), false);
+  assert.equal(clockOf(html, "down").includes("40%"), false);
+  assert.match(clockOf(html, "down"), />–</);
   assert.equal(html.includes("Vorbörse 10:00"), false);
   assert.match(html, /–/);
   assert.match(html, new RegExp(SEASON_N_LEGEND.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
@@ -333,11 +360,110 @@ test("Die Tag-Zeile zählt steigende Tage im selben Zeitraum wie die Balken", ()
   const year = renderSeasonalityCard(pack, { symbol: "SPCX" }, "year");
   assert.deepEqual(tagCells(all), ["80%", "80%", "80%", "80%", "80%", "80 %"]);
   assert.deepEqual(tagCells(year), ["25%", "25%", "25%", "25%", "–", "35 %"]);
-  assert.match(all, /Tag: Anteil steigender Tage/);
+  assert.match(all, /Long: Wie oft ging es hoch\?/);
+  assert.match(all, /Short: Wie oft ging es runter\?/);
+  assert.deepEqual(tagCells(clockOf(all, "down")), ["–", "–", "–", "–", "–", "–"]);
   assert.match(tagRow(all), /ganzer Tag, Schluss zu Schluss, 80 % der Tage gestiegen/);
   assert.match(year, /data-season="year"/);
   assert.equal(/Keine Anlageberatung/.test(all + year), false);
   assert.equal(ADVICE.test(all + year), false);
+});
+
+test("Runter zählt nur fallende Fälle, flache bleiben draußen", () => {
+  const mondays = ["2026-01-05", "2026-01-12", "2026-01-19", "2026-01-26", "2026-02-02", "2026-02-09", "2026-02-16", "2026-02-23", "2026-03-02", "2026-03-09"];
+  const closes = [101, 102, 103, 104, 105, 106, 99, 98, 97, 100];
+  const bars = mondays.map((day, index) => ({
+    t: `${day}T14:30:00.000Z`,
+    open: 100,
+    close: closes[index],
+    durationMin: 60
+  }));
+  const cash = HOUR_SLOTS.indexOf("15:30");
+  const cell = aggregateGrid(bars)[0][cash];
+  assert.equal(cell.n, 10);
+  assert.equal(cell.up, 6);
+  assert.equal(cell.down, 3);
+  assert.equal(upPercent(cell), 60);
+  assert.equal(downPercent(cell), 30);
+  assert.notEqual(downPercent(cell), 100 - upPercent(cell));
+  assert.equal(downPercent({ n: 10, up: 6 }), null);
+  assert.equal(downPercent({ n: 6, up: 1, down: 4 }), null);
+  assert.equal(upPercent({ n: 10, up: 8, down: 3 }), null);
+  const hours = aggregateHours(bars);
+  assert.equal(hours[cash].n, 10);
+  assert.equal(hours[cash].up, 6);
+  assert.equal(hours[cash].down, 3);
+
+  const days = [
+    { n: 10, up: 6, down: 3, avg: 1.2, med: 0.4 },
+    { n: 10, up: 2, down: 8, avg: -4, med: -1 },
+    { n: 10, up: 8, down: 1, avg: -0.2, med: 0.1 },
+    { n: 6, up: 4, down: 2, avg: 1, med: 1 },
+    { n: 10, up: 5, down: 5, avg: 0, med: 0 }
+  ];
+  assert.deepEqual(summarizeWeek(days), { n: 46, up: 25, down: 19, avg: -0.52 });
+  const hourRows = HOUR_SLOTS.map((_, index) => (
+    index === 0 ? { n: 6, up: 4, down: 1, avg: 2 } : { n: 20, up: 12, down: 7, avg: index === 2 ? -1.4 : 0.2 }
+  ));
+  const grid = Array.from({ length: 5 }, (_, day) => HOUR_SLOTS.map((_, index) => {
+    if (index === 0) return { n: 4, up: 3, down: 1, avg: 3 };
+    if (day === 2 && index === 2) return { n: 10, up: 8, down: 1, avg: -2.5 };
+    return { n: 10, up: 6, down: 3, avg: 0.4 };
+  }));
+  const pack = {
+    symbols: {
+      SPCX: {
+        name: "SpaceX",
+        ranges: {
+          all: { from: "2026-01-02", to: "2026-11-06", days, hours: hourRows, grid },
+          year: { from: "2026-01-02", to: "2026-11-06", days, hours: hourRows, grid }
+        }
+      }
+    }
+  };
+  const html = renderSeasonalityCard(pack, { symbol: "SPCX", name: "SpaceX" }, "all");
+  const up = clockOf(html, "up");
+  const down = clockOf(html, "down");
+  assert.match(html, /Long: Wie oft ging es hoch\?/);
+  assert.match(html, /Short: Wie oft ging es runter\?/);
+  assert.equal(html.includes("chart-legend"), false);
+  assert.equal(html.includes("Uhrzeit, Berlin"), false);
+  assert.equal(ADVICE.test(html), false);
+  assert.equal(/Keine Anlageberatung/.test(html), false);
+  assert.equal(/\b(kaufen|verkaufen|Empfehlung|Kaufsignal)\b/i.test(html), false);
+  assert.deepEqual([...up.matchAll(/data-hour="([^"]+)"/g)].map((match) => match[1]), HOUR_SLOTS);
+  assert.deepEqual([...down.matchAll(/data-hour="([^"]+)"/g)].map((match) => match[1]), HOUR_SLOTS);
+  assert.match(up, />Woche</);
+  assert.match(down, />Woche</);
+  assert.deepEqual(tagCells(up), ["60%", "20%", "80%", "–", "50%", "54 %"]);
+  assert.deepEqual(tagCells(down), ["30%", "80%", "10%", "–", "50%", "41 %"]);
+  assert.match(tagRow(up), /Mittwoch, ganzer Tag, Schluss zu Schluss, 80 % der Tage gestiegen/);
+  assert.match(tagRow(down), /Dienstag, ganzer Tag, Schluss zu Schluss, 80 % der Tage gefallen/);
+  assert.match(down, />35 %</);
+  assert.equal(down.includes(">40%<"), false);
+  assert.equal(down.includes(">40 %</"), false);
+  const upDay = tagRow(up);
+  const downDay = tagRow(down);
+  const risen = paintBefore(upDay, "80%");
+  const mild = paintBefore(upDay, "20%");
+  const fallen = paintBefore(downDay, "80%");
+  const rare = paintBefore(downDay, "10%");
+  assert.equal(risen.rgb, "125, 222, 192");
+  assert.equal(mild.rgb, "125, 222, 192");
+  assert.ok(risen.alpha > mild.alpha);
+  assert.equal(risen.ink, true);
+  assert.equal(mild.ink, false);
+  assert.equal(/rgba\(255, 139, 152/.test(up), false);
+  assert.equal(fallen.rgb, "255, 139, 152");
+  assert.equal(rare.rgb, "255, 139, 152");
+  assert.ok(fallen.alpha > rare.alpha);
+  assert.equal(fallen.ink, true);
+  assert.equal(rare.ink, false);
+  assert.equal(/rgba\(125, 222, 192/.test(down), false);
+  const spoken = up.indexOf("80 % der Stunden gestiegen, im Schnitt −2,50 %");
+  const greenDespiteDrop = up.slice(up.lastIndexOf("<span", spoken), spoken);
+  assert.match(greenDespiteDrop, /rgba\(125, 222, 192/);
+  assert.equal(/rgba\(255, 139, 152/.test(greenDespiteDrop), false);
 });
 
 test("Ein Jahr schneidet alte Tage ab und mischt keine zweite Aktie hinein", () => {
@@ -395,8 +521,21 @@ test("Die Karte steht unter dem Muster und die Spanne lässt sie in Ruhe", () =>
       assert.equal(/Keine Anlageberatung/.test(view), false, symbol);
       assert.match(view, /Vergangenheit, keine Vorhersage/);
       assert.match(view, /nicht den ganzen Markt/);
-      assert.match(view, /Tag: Anteil steigender Tage/);
+      assert.match(view, /Long: Wie oft ging es hoch\?/);
+      assert.match(view, /Short: Wie oft ging es runter\?/);
+      assert.equal(view.includes("chart-legend"), false, symbol);
       assert.ok(view.indexOf('data-hour="21:30"') < view.indexOf('data-row="tag"'), symbol);
+      assert.equal(/rgba\(255, 139, 152/.test(clockOf(view, "up")), false, symbol);
+      const downExpected = pack.ranges[key].days.map((row) => {
+        const share = downPercent(row);
+        return share == null ? "–" : `${share}%`;
+      });
+      const weekDown = downPercent(summarizeWeek(pack.ranges[key].days));
+      downExpected.push(weekDown == null ? "–" : `${weekDown} %`);
+      const downClock = clockOf(view, "down");
+      assert.deepEqual(tagCells(downClock), downExpected, `${symbol} ${key} runter`);
+      assert.equal(/rgba\(125, 222, 192/.test(downClock), false, `${symbol} runter`);
+      assert.equal(/rgba\(255, 139, 152/.test(downClock), downExpected.some((text) => text !== "–"), symbol);
       const expected = pack.ranges[key].days.map((row) => {
         const share = upPercent(row);
         return share == null ? "–" : `${share}%`;

@@ -211,7 +211,7 @@ test("Charts und Analyse setzen die Lampe links über die Fläche, die Lesezeile
   assert.match(css, /prefers-reduced-motion:\s*no-preference[\s\S]*mood-pulse/);
   assert.match(css, /prefers-reduced-motion:\s*reduce[\s\S]*animation:\s*none !important/);
   const sw = fs.readFileSync("sw.js", "utf8");
-  assert.match(sw, /jgtr-v38/);
+  assert.match(sw, /jgtr-v39/);
   assert.match(sw, /data\/sentiment\.json/);
   assert.match(sw, /js\/sentiment\.js/);
   assert.match(sw, /pathname\.includes\("\/data\/"\)/);

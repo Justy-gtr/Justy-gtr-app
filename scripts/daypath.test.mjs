@@ -236,6 +236,13 @@ test("Ohne dayPaths oder bei neuer Fassung wird neu gerechnet", () => {
   const old = structuredClone(current);
   old.symbols.TSLA.dayPaths = { schema: DAYPATH_SCHEMA - 1, days: [{}, {}, {}, {}, {}] };
   assert.equal(shouldSkipSeasonality(old, now, false, false), false);
+  const lacksDown = structuredClone(current);
+  lacksDown.symbols.SPCX.ranges = {
+    all: { days: [{ n: 10, up: 6, avg: 1, med: 1 }], hours: [], grid: [] }
+  };
+  assert.equal(shouldSkipSeasonality(lacksDown, now, false, false), false);
+  lacksDown.symbols.SPCX.ranges.all.days[0].down = 3;
+  assert.equal(shouldSkipSeasonality(lacksDown, now, false, false), true);
   assert.deepEqual(dayPathVenues({ earlySymbols: ["SPX.F", "SPX.DE"], eurSymbols: [] }).map((venue) => venue.symbol), [
     "SPX.F", "SPX.DE", "SPX.SG", "SPX.MU"
   ]);
