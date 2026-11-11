@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T08:05:00+01:00",
+  "updatedAt": "2026-11-11T09:02:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,49 +22,49 @@
           "url": "https://x.com/TrackSmartMoney/status/2120400609740222938"
         }
       ],
-      "updatedAt": "2026-11-11T08:05:00+01:00"
+      "updatedAt": "2026-11-11T09:02:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 30,
       "postsCount": 15,
-      "reason": "Tesla: Mehr Robotaxis in Texas registriert als Waymo (1.302 zu 1.297). Die SEC schließt den alten Funding-secured-Fonds. Cybertruck läuft aus, Fokus Cybercab.",
+      "reason": "Tesla: Freude über die Fahrassistent-Zulassung in Finnland und mehr Robotaxis in Texas als Waymo. Dämpfer: Model Y fiel in China im Oktober auf Platz 33.",
       "sources": [
         {
-          "title": "Texas-Register: Tesla vor Waymo",
-          "url": "https://x.com/sebaonwheels/status/2120411202215874850"
+          "title": "Finnland erlaubt Tesla Assisted Driving",
+          "url": "https://x.com/BetTheDecade/status/2120423313453220232"
         },
         {
-          "title": "SEC schließt Entschädigungsfonds",
-          "url": "https://x.com/tslaming/status/2120384942870036876"
+          "title": "Mehr Robotaxis als Waymo in Texas",
+          "url": "https://x.com/CuriousPejjy/status/2120412755282841785"
         },
         {
-          "title": "Cybertruck raus, Cybercab rein",
-          "url": "https://x.com/AashishAuti/status/2120407686596747322"
+          "title": "China Oktober: Model Y auf Platz 33",
+          "url": "https://x.com/CNEVhome/status/2120414723930009772"
         }
       ],
-      "updatedAt": "2026-11-11T08:05:00+01:00"
+      "updatedAt": "2026-11-11T09:02:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 40,
+      "score": 30,
       "postsCount": 15,
-      "reason": "Rocket Lab: Freude über 150 Mio. $ Pentagon-Kredit und die Mars-Sonden auf Kurs. Gestern +6,5 %. Manche finden die Bewertung (38-facher Umsatz) zu hoch.",
+      "reason": "Rocket Lab: Freude über 150 Mio. $ Pentagon-Kredit und den bald 100. Electron-Start. Ein Post meldet: Piper Sandler senkt das Kursziel von 83 auf 58 $.",
       "sources": [
         {
           "title": "Pentagon-Kredit 150 Mio. $",
           "url": "https://x.com/zotpaper/status/2120411336924680493"
         },
         {
-          "title": "Mars-Sonden nach Erdvorbeiflug",
-          "url": "https://x.com/augustcool/status/2120392360529932547"
+          "title": "Electron vor 100. Start",
+          "url": "https://x.com/RCapitalX/status/2120412991602778522"
         },
         {
-          "title": "Bewertung: 38-facher Umsatz",
-          "url": "https://x.com/myrapath/status/2120381892952465686"
+          "title": "Piper Sandler: Kursziel 58 $",
+          "url": "https://x.com/NGLSHMUELI/status/2120426388222087436"
         }
       ],
-      "updatedAt": "2026-11-11T08:05:00+01:00"
+      "updatedAt": "2026-11-11T09:02:00+01:00"
     }
   }
 }
