@@ -2,25 +2,35 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { berlinParts, shouldRun } from "./schedule.mjs";
 import {
-  extendedQuote,
-  fxFor,
-  mergeTicker,
-  meaningful,
-  resolveOvernight,
-  sessionEnded,
+  baselineForLivePrint,
+  berlinDayKey,
   chooseIntraday,
+  displayedPrice,
+  extendedQuote,
+  freshestGermanQuote,
+  freshestPrint,
+  fxFor,
+  germanMinuteSymbols,
   keepRecentSession,
   keepTradingDays,
+  latestOnNewYorkDay,
+  meaningful,
+  mergeGermanMinutes,
+  mergeTicker,
   previousSessionClose,
+  resolveOvernight,
   sessionBaseline,
+  sessionEnded,
   staleSessionAlert,
   stitchIntraday,
   trustedChange,
   updateAlerts,
   usClockSession,
   usSessionActive,
-  usdToEur
+  usdToEur,
+  venueFor
 } from "./market.mjs";
+import { TICKERS } from "./fetch-prices.mjs";
 import { bigDrop, bucketMinutes, buildFeed, buildMarketTimeline, compactStances, formatEventClock, formatFeedTime, headlineEvent, isInAppUrl, karlVoiceIssues, marketWatch, maxPoints, opinionWord, scoreboard, seriesFor, sparkSample, trackSummary, verdictForStances, vsSwarmVerdict, zonedWallTime } from "../js/logic.js";
 import fs from "node:fs";
 
@@ -713,6 +723,140 @@ test("1 Min behält jeden Punkt, 5 Min den letzten im Block", () => {
   assert.equal(sampled.at(-1).eur, 10);
   assert.equal(seriesFor(ticker, "Tag", false).range, "1 Min");
   assert.equal(seriesFor(ticker, "5 Min").range, "5 Min");
+});
+
+test("Frühe Plätze kommen vor Xetra, Stuttgart füllt Frankfurt auf", () => {
+  assert.equal(venueFor("SPX.SG"), "Stuttgart");
+  assert.equal(venueFor("SPX.DE"), "Xetra");
+  assert.equal(venueFor("TL0.F"), "Frankfurt");
+  assert.equal(venueFor("6RJ0.MU"), "München");
+  const by = Object.fromEntries(TICKERS.map((spec) => [spec.symbol, spec]));
+  assert.deepEqual(by.SPCX.eurSymbols, ["SPX.DE", "SPX.F", "SPX.SG"]);
+  assert.deepEqual(germanMinuteSymbols(by.SPCX), ["SPX.F", "SPX.SG", "SPX.DE"]);
+  assert.deepEqual(germanMinuteSymbols(by.TSLA), ["TL0.F", "TL0.SG", "TL0.DE"]);
+  assert.deepEqual(germanMinuteSymbols(by.MRVL), ["9MW.F", "9MW.SG", "9MW.DE"]);
+  assert.deepEqual(germanMinuteSymbols(by.RKLB), ["6RJ0.F", "6RJ0.SG", "6RJ0.MU"]);
+});
+
+test("Frankfurt und Stuttgart zählen vor der Mindestdicke, Xetra übernimmt ab 9", () => {
+  const frankfurt = Array.from({ length: 11 }, (_, index) => ({
+    t: new Date(Date.parse("2026-11-11T07:00:00.000Z") + index * 60 * 1000).toISOString(),
+    close: 100 + index
+  }));
+  const stuttgart = [{ t: "2026-11-11T07:30:00.000Z", close: 150 }];
+  const xetra = [
+    { t: "2026-11-11T08:00:00.000Z", close: 200 },
+    { t: "2026-11-11T08:01:00.000Z", close: 201 }
+  ];
+  const usd = [{ t: "2026-11-11T09:00:00.000Z", eur: 9, session: "pre" }];
+  const thin = chooseIntraday(frankfurt.map((point) => ({ t: point.t, eur: point.close })), usd, "direct_eur");
+  assert.equal(thin.method, "usd_div_eurusd");
+  const merged = mergeGermanMinutes([
+    { symbol: "6RJ0.F", points: frankfurt },
+    { symbol: "6RJ0.SG", points: stuttgart },
+    { symbol: "TL0.DE", points: xetra }
+  ]);
+  assert.equal(merged.length, 14);
+  assert.equal(merged[0].close, 100);
+  assert.equal(merged.find((point) => point.t === stuttgart[0].t).close, 150);
+  assert.equal(merged.at(-2).close, 200);
+  assert.equal(merged.at(-1).close, 201);
+  const early = merged.filter((point) => Date.parse(point.t) < Date.parse(xetra[0].t));
+  assert.equal(early.length, 12);
+  const stitched = chooseIntraday(merged.map((point) => ({ t: point.t, eur: point.close, session: "regular" })), usd, "direct_eur");
+  assert.equal(stitched.method, "direct_eur_plus_us");
+  assert.equal(stitched.points[0].eur, 100);
+  assert.equal(stitched.points.at(-1).session, "pre");
+  const sameMinute = mergeGermanMinutes([
+    { symbol: "SPX.F", points: [{ t: "2026-11-11T07:05:00.000Z", close: 1 }] },
+    { symbol: "SPX.SG", points: [{ t: "2026-11-11T07:05:00.000Z", close: 2 }, { t: "2026-11-11T07:06:00.000Z", close: 3 }] }
+  ]);
+  assert.deepEqual(sameMinute.map((point) => point.close), [1, 3]);
+});
+
+test("Der Kurs von heute ist der frischeste deutsche Druck, nicht der gestrige Schluss", () => {
+  const day = "2026-11-11";
+  const groups = [
+    {
+      symbol: "SPX.F",
+      points: [
+        { t: "2026-11-10T12:00:00.000Z", close: 1 },
+        { t: "2026-11-11T07:02:00.000Z", close: 10 }
+      ]
+    },
+    {
+      symbol: "SPX.SG",
+      points: [{ t: "2026-11-11T07:01:00.000Z", close: 11 }]
+    },
+    {
+      symbol: "SPX.DE",
+      points: [
+        { t: "2026-11-10T16:00:00.000Z", close: 2 },
+        { t: "2026-11-11T08:04:00.000Z", close: 12 }
+      ],
+      quote: { price: 12.4, t: "2026-11-11T08:05:00.000Z" }
+    }
+  ];
+  const best = freshestGermanQuote(groups, day);
+  assert.equal(best.symbol, "SPX.DE");
+  assert.equal(best.price, 12.4);
+  const morning = freshestGermanQuote(groups.map((group) => ({
+    symbol: group.symbol,
+    points: (group.points || []).filter((point) => Date.parse(point.t) < Date.parse("2026-11-11T08:00:00.000Z"))
+  })), day);
+  assert.equal(morning.symbol, "SPX.F");
+  assert.equal(morning.price, 10);
+  const pre = displayedPrice({
+    us: { price: 145.5, session: "pre", t: "2026-11-11T10:20:00.000Z", symbol: "SPCX" },
+    fallback: { price: 143.09, t: "2026-11-10T21:00:00.000Z", symbol: "SPCX" }
+  });
+  assert.equal(pre.kind, "usd");
+  assert.equal(pre.price, 145.5);
+  const german = displayedPrice({
+    german: best,
+    us: { price: 145.5, session: "pre", t: "2026-11-11T12:19:00.000Z" },
+    fallback: { price: 143.09 }
+  });
+  assert.equal(german.kind, "eur");
+  assert.equal(german.symbol, "SPX.DE");
+  const closed = displayedPrice({ fallback: { price: 143.09, symbol: "SPCX" } });
+  assert.equal(closed.kind, "close");
+  const afterHours = displayedPrice({
+    us: { price: 140, session: "post", t: "2026-11-10T21:51:00.000Z" },
+    fallback: { price: 143.09 }
+  });
+  assert.equal(afterHours.kind, "close");
+  assert.equal(afterHours.price, 143.09);
+  assert.equal(freshestPrint(groups[0].points, { day }).price, 10);
+});
+
+test("Ein IEX-Minutendruck vom Vortag ist nicht heute", () => {
+  const morning = new Date("2026-11-11T07:30:00.000Z");
+  const yesterday = [{ t: "2026-11-10T21:51:00.000Z", close: 1 }];
+  assert.equal(latestOnNewYorkDay(yesterday, morning), false);
+  assert.equal(berlinDayKey(yesterday[0].t), "2026-11-10");
+  const pre = [{ t: "2026-11-11T10:20:00.000Z", close: 2 }];
+  assert.equal(latestOnNewYorkDay(pre, new Date("2026-11-11T12:00:00.000Z")), true);
+  assert.equal(latestOnNewYorkDay([], morning), false);
+});
+
+test("Der Vortag eines heutigen Drucks ist der letzte Tagesbalken, wenn der heutige noch fehlt", () => {
+  const open = {
+    points: [
+      { t: "2026-11-10T08:00:00.000Z", close: 127.52 },
+      { t: "2026-11-11T08:00:00.000Z", close: 130.48 }
+    ]
+  };
+  assert.equal(baselineForLivePrint(open, "2026-11-11T08:04:00.000Z"), 127.52);
+  const beforeBar = {
+    points: [
+      { t: "2026-11-09T08:00:00.000Z", close: 126.76 },
+      { t: "2026-11-10T08:00:00.000Z", close: 127.52 }
+    ]
+  };
+  assert.equal(baselineForLivePrint(beforeBar, "2026-11-11T07:02:00.000Z"), 127.52);
+  assert.equal(baselineForLivePrint(beforeBar, "2026-11-10T16:00:00.000Z"), 126.76);
+  assert.equal(sessionBaseline(beforeBar), 126.76);
 });
 
 test("Euro-Platz gewinnt erst mit einer echten Minutenreihe", () => {

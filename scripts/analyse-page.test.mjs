@@ -635,8 +635,8 @@ test("Nummern und Striche kommen aus der Fixture, nicht aus dem Tageskurs", () =
   assert.match(css, /\.guide-legend \.swatch\.trend/);
   assert.equal(css.includes("kaufen"), false);
   const sw = fs.readFileSync("sw.js", "utf8");
-  assert.match(sw, /jgtr-v38/);
-  assert.equal(sw.includes("jgtr-v37"), false);
+  assert.match(sw, /jgtr-v40/);
+  assert.equal(sw.includes("jgtr-v39"), false);
 });
 
 test("Achse nennt die Uhrzeit und das Datum nur am Tageswechsel", () => {
@@ -875,7 +875,7 @@ test("MRVL steht in der Analyse in Euro, mit Kerzen, Chart und grauer Lampe", ()
   assert.equal(spec?.name, "Marvell Technology");
   assert.equal(spec.venue, "Nasdaq");
   assert.equal(spec.usdSymbol, "MRVL");
-  assert.deepEqual(spec.eurSymbols, ["9MW.DE", "9MW.F"]);
+  assert.deepEqual(spec.eurSymbols, ["9MW.DE", "9MW.F", "9MW.SG"]);
   const prices = JSON.parse(fs.readFileSync("data/prices.json", "utf8"));
   const seasonality = JSON.parse(fs.readFileSync("data/seasonality.json", "utf8"));
   const sentiment = JSON.parse(fs.readFileSync("data/sentiment.json", "utf8"));
@@ -885,8 +885,8 @@ test("MRVL steht in der Analyse in Euro, mit Kerzen, Chart und grauer Lampe", ()
   assert.equal(typeof ticker.priceEur, "number");
   assert.ok(ticker.priceEur > 0);
   assert.equal(ticker.eurMethod, "direct_eur");
-  assert.ok(["9MW.DE", "9MW.F"].includes(ticker.eurSymbol));
-  assert.ok(["Xetra", "Frankfurt"].includes(ticker.eurVenue));
+  assert.ok(["9MW.DE", "9MW.F", "9MW.SG"].includes(ticker.eurSymbol));
+  assert.ok(["Xetra", "Frankfurt", "Stuttgart"].includes(ticker.eurVenue));
   assert.equal(typeof ticker.why, "string");
   assert.ok(ticker.why.length > 20);
   const narrative = JSON.stringify({
