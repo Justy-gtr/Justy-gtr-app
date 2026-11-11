@@ -1,33 +1,68 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-10-rklb",
-    "date": "2026-11-10",
-    "question": "Schließt RKLB am Mittwoch, 11. November, an der Nasdaq höher als am Dienstag (62,71 $)?",
+    "id": "2026-11-11-rklb",
+    "date": "2026-11-11",
+    "question": "Schließt RKLB am Donnerstag, 12. November, an der Nasdaq höher als am Mittwoch (66,15 $)?",
     "karlAnswer": "nein",
-    "karlReason": "Knapp „nein“, etwa 45 zu 55. Nach +6,5 % am Dienstag und rund +18 % seit dem Freitagsschluss (53,07 $) ist viel Erholung eingepreist; nachbörslich stand die Aktie um 22:05 bei etwa 62,20 $, also leicht darunter (Yahoo). Heute 23:00 legen Konkurrent Firefly und CoreWeave Zahlen vor, und nach dem heißen Oktober-CPI sind steigende Zinsen eingepreist. Dafür spricht: Rekord-Auftragsbestand, höhere Neutron-Preise und der 100. Electron-Start am Samstag.",
+    "karlReason": "Knapp „nein“, etwa 45 zu 55. Seit dem Freitagsschluss (53,07 $) liegt RKLB rund 25 % höher, allein am Mittwoch +5,5 %; nachbörslich stand die Aktie um 22:02 bei 66,20 $, also fast unverändert (Yahoo). Barclays und Needham haben ihre Ziele gesenkt, und der Markt rechnet zu 87 % mit einer Fed-Zinserhöhung im Dezember (Futu, CNBC). Dafür spricht: die breite Erholung bei Raumfahrtwerten und der 100. Electron-Start am Samstag. Karl lag mit „nein“ zweimal daneben – der Schwung war stärker.",
     "outcome": null,
-    "resolvesAt": "2026-11-11T22:15:00+01:00",
+    "resolvesAt": "2026-11-12T22:15:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: RKLB (Schluss 10.11. 62,71 $, Nachbörse)",
+        "title": "Yahoo Finance: RKLB (Schluss 11.11. 66,15 $, Nachbörse)",
         "url": "https://finance.yahoo.com/quote/RKLB/"
       },
       {
-        "title": "Yahoo Finance: Rocket Lab und AST SpaceMobile nach Zahlen (10.11.)",
-        "url": "https://finance.yahoo.com/markets/stocks/article/space-stocks-rocket-lab-ast-spacemobile-on-the-move-following-earnings-operational-updates-175324457.html"
+        "title": "Yahoo Finance: RKLB-Historie (Schluss 6.11. 53,07 $)",
+        "url": "https://finance.yahoo.com/quote/RKLB/history/"
       },
       {
-        "title": "Firefly Aerospace: Termin Q3-Zahlen (10.11., 17:00 ET)",
-        "url": "https://investors.fireflyspace.com/news-releases/news-release-details/firefly-aerospace-announce-third-quarter-2026-financial-results"
+        "title": "Futu/Gelonghui: Barclays senkt Rocket-Lab-Ziel auf 82 $ (11.11.)",
+        "url": "https://news.futunn.com/post/1004136994/barclays-lowers-rocket-lab-price-target-to-82"
       },
       {
-        "title": "Handelsblatt: Inflationsdaten belasten Wall Street (10.11.)",
-        "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-inflationsdaten-belasten-wall-street-nvidia-aktien-verlieren/100268787.html"
+        "title": "24/7 Wall St.: Rocket Lab und AST SpaceMobile +8 % (11.11.)",
+        "url": "https://247wallst.com/investing/2026/11/11/rocket-lab-and-ast-spacemobile-rally-8-as-space-stocks-rebound-spacex-holds-steady/"
+      },
+      {
+        "title": "CNBC: Dollar steigt, Markt preist Zinserhöhung im Dezember ein (11.11.)",
+        "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-10-rklb",
+      "date": "2026-11-10",
+      "question": "Schließt RKLB am Mittwoch, 11. November, an der Nasdaq höher als am Dienstag (62,71 $)?",
+      "karlAnswer": "nein",
+      "karlReason": "Knapp „nein“, etwa 45 zu 55. Nach +6,5 % am Dienstag und rund +18 % seit dem Freitagsschluss (53,07 $) ist viel Erholung eingepreist; nachbörslich stand die Aktie um 22:05 bei etwa 62,20 $, also leicht darunter (Yahoo). Heute 23:00 legen Konkurrent Firefly und CoreWeave Zahlen vor, und nach dem heißen Oktober-CPI sind steigende Zinsen eingepreist. Dafür spricht: Rekord-Auftragsbestand, höhere Neutron-Preise und der 100. Electron-Start am Samstag. Ergebnis: RKLB schloss am Mi bei 66,15 $, 5,5 % über den 62,71 $ vom Dienstag (Yahoo). Karls „nein“ lag daneben: Die breite Erholung bei Raumfahrtwerten und die Q3-Zahlen trugen weiter, obwohl Barclays und Needham ihre Ziele senkten.",
+      "outcome": "ja",
+      "resolvesAt": "2026-11-11T22:15:00+01:00",
+      "sources": [
+        {
+          "title": "Yahoo Finance: RKLB (Schluss 10.11. 62,71 $, Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "title": "Yahoo Finance: Rocket Lab und AST SpaceMobile nach Zahlen (10.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/article/space-stocks-rocket-lab-ast-spacemobile-on-the-move-following-earnings-operational-updates-175324457.html"
+        },
+        {
+          "title": "Firefly Aerospace: Termin Q3-Zahlen (10.11., 17:00 ET)",
+          "url": "https://investors.fireflyspace.com/news-releases/news-release-details/firefly-aerospace-announce-third-quarter-2026-financial-results"
+        },
+        {
+          "title": "Handelsblatt: Inflationsdaten belasten Wall Street (10.11.)",
+          "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-inflationsdaten-belasten-wall-street-nvidia-aktien-verlieren/100268787.html"
+        },
+        {
+          "title": "Yahoo Finance: RKLB Schluss 11.11. (66,15 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        }
+      ]
+    },
     {
       "id": "2026-11-09-rklb",
       "date": "2026-11-09",

@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-11T20:00:00+01:00",
+  "asOf": "2026-11-11T22:05:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -77,6 +77,79 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2120613240707420280",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-11T21:22:50+01:00",
+      "summaryDe": "Musk vergleicht Solarstrom im All mit Solarstrom auf der Erde: 100 GW im All entsprächen grob 800 GW auf der Erde, weil Solaranlagen am Boden große Batterien für die Nacht und im Winter zusätzlich Gas- oder Atomstrom bräuchten. Hintergrund ist der Singulus-Auftrag für Solarzellen-Anlagen der Starmind-Satelliten. Eine eigene Rechnung legt er nicht vor.",
+      "originalText": "100GW in space is roughly equal to 800GW on Earth. Moreover, solar on Earth must be paired with massive batteries to continue powering compute at night and supplemented with combustion or nuclear power during winter. These are not the same at all.",
+      "url": "https://x.com/elonmusk/status/2120613240707420280",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „100GW in space is roughly equal to 800GW on Earth“ (11.11., 21:22)",
+          "url": "https://x.com/elonmusk/status/2120613240707420280"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120593710107029687",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-11T20:05:13+01:00",
+      "summaryDe": "Musk zum Ausbauziel für Solar-Rechenleistung: SpaceX ziele auf 1 Terawatt pro Jahr von der Erde aus, später über 1 Petawatt pro Jahr vom Mond. Gelinge das, sei SpaceX „offensichtlich mehr wert als die Erde“. Das ist eine Vision ohne Zeitplan, kein offizieller Plan mit Datum.",
+      "originalText": "Actually, we’re aiming for 1TW/year from Earth, rising to over 1PW/year from the Moon. That’s why I say that if we achieve this outcome, SpaceX will obviously be worth more than Earth, because space is so staggeringly enormous!",
+      "url": "https://x.com/elonmusk/status/2120593710107029687",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „aiming for 1TW/year from Earth“ (11.11., 20:05)",
+          "url": "https://x.com/elonmusk/status/2120593710107029687"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120592775813255535",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-11T20:01:31+01:00",
+      "summaryDe": "Musk antwortet auf einen Bernstein-Vergleich, wie viel der geplanten Rechenzentren je Anbieter wirklich gebaut wird: SpaceX habe die Chance, im nächsten Jahr etwa die Hälfte der Gigawatt an „tatsächlich nutzbarer“ Rechenleistung zu stellen. Ein großes Cluster zuverlässig zum Laufen zu bringen dauere bei SpaceX rund zwei Monate rund um die Uhr, bei anderen schätzt er eher sechs. Das passt zu seiner Antwort auf das Anthropic-Gerücht; belegte Zahlen nennt er nicht.",
+      "originalText": "SpaceX has a chance of going about half the GW next year of actually usable compute. “Actually usable” is an important metric. It takes us ~2 months working 24/7 to get a large compute cluster working reliably. I’d guess closer to 6 months for others.",
+      "url": "https://x.com/elonmusk/status/2120592775813255535",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „about half the GW next year of actually usable compute“ (11.11., 20:01)",
+          "url": "https://x.com/elonmusk/status/2120592775813255535"
+        },
+        {
+          "title": "@zerohedge: Bernstein-Vergleich der Rechenzentrums-Pipelines (11.11.)",
+          "url": "https://x.com/zerohedge/status/2120581319189270544"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2120590521253126183",
       "account": "@elonmusk",
@@ -6335,5 +6408,5 @@
       ]
     }
   ],
-  "notes": "11.11. 20:00: Neue Musk-Posts: Antwort auf das Anthropic-Gerücht („nehmen die Rechenleistung gern zurück“), Cybertruck-Produktion bis Ende Sommer 2027, FSD in Finnland, Booster 22 an der Rampe, Megapacks (X-Abfrage)."
+  "notes": "11.11. 22:00: Drei neue Musk-Posts zu Rechenleistung und Solar im All („etwa die Hälfte der GW nutzbarer Rechenleistung“, „1 TW pro Jahr“, „100 GW im All ≈ 800 GW auf der Erde“) (X-Abfrage)."
 }
