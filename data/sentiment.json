@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T14:15:00+01:00",
+  "updatedAt": "2026-11-11T15:04:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gut",
-      "score": 34,
-      "postsCount": 26,
-      "reason": "SpaceX: Vorbörslich im Plus, Lob für das KI-Rack Kessel und den Singulus-Deal. Skepsis: ein unbestätigtes Gerücht zum Anthropic-Vertrag und Zweifel am Umsatzziel.",
+      "mood": "gemischt",
+      "score": 6,
+      "postsCount": 30,
+      "reason": "SpaceX: Bericht, Anthropic wolle den GPU-Mietvertrag nach Juni 2027 beenden, drückt vorbörslich. Andere loben das KI-Rack Kessel und neue Funkfrequenzen.",
       "sources": [
         {
-          "title": "Gerücht: Anthropic-Vertrag (unbestätigt)",
-          "url": "https://x.com/allday_stocks/status/2120500828536443043"
+          "title": "Anthropic will GPU-Vertrag beenden (Bericht)",
+          "url": "https://x.com/BradMunchen/status/2120517312038244555"
         },
         {
-          "title": "Zweifel an 500 Mrd. $ Umsatzziel",
-          "url": "https://x.com/SingularityRes/status/2120504323457397208"
+          "title": "SPCX vorbörslich rund 5 $ tiefer",
+          "url": "https://x.com/DRJBori63/status/2120517127434068415"
         },
         {
-          "title": "Vorbörse-Überblick SpaceX",
-          "url": "https://x.com/spcxGOD/status/2120498023403041206"
+          "title": "FCC: mehr Low-Band-Frequenzen",
+          "url": "https://x.com/RocketTerminal/status/2120516908554289519"
         }
       ],
-      "updatedAt": "2026-11-11T14:15:00+01:00"
+      "updatedAt": "2026-11-11T15:04:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,7 +43,7 @@
           "url": "https://x.com/QuantAlphaXXX/status/2120465950545723429"
         }
       ],
-      "updatedAt": "2026-11-11T12:36:00+01:00"
+      "updatedAt": "2026-11-11T15:04:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/PhilipTortora/status/2120495524931416292"
         }
       ],
-      "updatedAt": "2026-11-11T13:55:00+01:00"
+      "updatedAt": "2026-11-11T15:04:00+01:00"
     }
   }
 }
