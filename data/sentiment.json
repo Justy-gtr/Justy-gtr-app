@@ -1,35 +1,39 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T16:20:00+01:00",
+  "updatedAt": "2026-11-11T16:25:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
       "score": -5,
-      "postsCount": 18,
-      "reason": "SpaceX: Kurs um 145 $, leicht im Plus. Fans halten das Anthropic-Gerücht für Taktik vor deren Börsengang, ein großer Account warnt vor einer Bullenfalle.",
+      "postsCount": 20,
+      "reason": "SpaceX: Kurs um 145 $. Fans sehen das Anthropic-Gerücht als Analystennotiz ohne Bestätigung. Neu: Pentagon zahlt 9,9 Mio. $ für eine Starlink-Laserstudie.",
       "sources": [
         {
-          "title": "Anthropic-Gerücht nur Taktik?",
-          "url": "https://x.com/TrueNorthTake/status/2120536378702500307"
+          "title": "Pentagon-Studie zu Starlink-Lasern",
+          "url": "https://x.com/JoshSharp/status/2120537459620540741"
+        },
+        {
+          "title": "Anthropic-Gerücht aus Analystennotizen",
+          "url": "https://x.com/spcxGOD/status/2120537489702019213"
         },
         {
           "title": "Warnung vor Bullenfalle bei 145 $",
           "url": "https://x.com/0x_Discover/status/2120536530326327412"
-        },
-        {
-          "title": "Anthropic-Gerücht: Folgen für den Umsatz",
-          "url": "https://x.com/JaredKubin/status/2120528985071243744"
         }
       ],
-      "updatedAt": "2026-11-11T16:20:00+01:00"
+      "updatedAt": "2026-11-11T16:25:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 25,
-      "postsCount": 15,
-      "reason": "Tesla: Rund 2 % im Plus, Fans reden wieder von 400 $. Viel Werbe-Spam, einige Halter sorgen sich wegen alter HW3-Autos und dem schnellen Autonomie-Kurs.",
+      "postsCount": 17,
+      "reason": "Tesla: Rund 2 % im Plus. Neu: Grünheide soll ab Mitte 2027 eigene 4680-Batteriezellen bauen. Einige Halter sorgen sich um alte HW3-Autos.",
       "sources": [
+        {
+          "title": "Grünheide: eigene Zellen ab 2027",
+          "url": "https://x.com/sebaonwheels/status/2120536778645885321"
+        },
         {
           "title": "Tesla-Aktie 400 $ bald?",
           "url": "https://x.com/strengthPlan/status/2120527248004657437"
@@ -37,19 +41,15 @@
         {
           "title": "Sorge um schnellen Autonomie-Kurs",
           "url": "https://x.com/SteelyDanMxmlst/status/2120524803027456454"
-        },
-        {
-          "title": "Tesla auf Kurs zu 150 Mrd. $ Umsatz",
-          "url": "https://x.com/anthonysagami/status/2120519413925343691"
         }
       ],
-      "updatedAt": "2026-11-11T16:20:00+01:00"
+      "updatedAt": "2026-11-11T16:25:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 38,
-      "postsCount": 20,
-      "reason": "Rocket Lab: Kurs weiter stark, Neutron-Startpreis steigt um 27 % auf 70 Mio. $ wegen hoher Nachfrage. Charttechniker sehen bei 66–72 $ eine Hürde.",
+      "score": 34,
+      "postsCount": 22,
+      "reason": "Rocket Lab: Kurs stark, Neutron-Preis steigt auf 70 Mio. $ und der Auftragsbestand wird gefeiert. Einige warnen, dass der Hype bei Kleinanlegern ein Top-Signal sei.",
       "sources": [
         {
           "title": "Neutron-Preis steigt auf 70 Mio. $",
@@ -60,11 +60,11 @@
           "url": "https://x.com/jrouldz/status/2120533768129724690"
         },
         {
-          "title": "Widerstand bei 66–72 $",
-          "url": "https://x.com/AsafNaamani/status/2120536295596310930"
+          "title": "Warnung vor Kleinanleger-Hype",
+          "url": "https://x.com/retail_mourinho/status/2120536724497420562"
         }
       ],
-      "updatedAt": "2026-11-11T16:20:00+01:00"
+      "updatedAt": "2026-11-11T16:25:00+01:00"
     }
   }
 }
