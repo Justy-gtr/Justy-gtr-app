@@ -1,35 +1,27 @@
 {
   "example": false,
-  "asOf": "2026-11-10T22:20:00+01:00",
+  "asOf": "2026-11-11T05:15:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
       "label": "zuversichtlich",
-      "summary": "Flight 15 NET Fr 13.11., FAA-Lizenz weiter offen. Musk nachts: Grok-Fremdkörper-Erkennung bei SpaceX (99,9 %), Memphis-Steuern 54 Mio. $, Starlink Vietnam. Anthropic-Börsengang rückt näher (Ziel Woche ab 16.11.). Di früh: Nasdaq-Futures +0,2 %, Nikkei +2,9 %. Mi 03:49 USSF-627, Di 14:30 CPI.",
+      "summary": "Nachts: Musk spricht von bestellten Singulus-Anlagen für 100 GW Solarzellen pro Jahr (Singulus selbst: erste Linie über 60 Mio. €), FCC nimmt den 800-MHz-Kauf von Grain zur Prüfung an. Nachbörslich 144,10 $. Flight 15 (Fr 13.11.) weiter ohne FAA-Lizenz.",
       "sources": [
         {
-          "title": "@SpaceX: Flight 15 catch",
-          "url": "https://x.com/SpaceX/status/2119093662957060389"
+          "title": "@elonmusk: 100 GW/Jahr HJT-Anlagen von Singulus (11.11., 00:47)",
+          "url": "https://x.com/elonmusk/status/2120302471210033426"
         },
         {
-          "title": "@elonmusk: Grok",
-          "url": "https://x.com/elonmusk/status/2119989523748905221"
+          "title": "Singulus: Liefervertrag mit SpaceX für HJT-Anlagen (10.11.)",
+          "url": "https://www.singulus.com/2026/11/10/singulus-spacex-supply-contract/"
         },
         {
-          "title": "@elonmusk: Memphis taxes",
-          "url": "https://x.com/elonmusk/status/2119993726898774521"
+          "title": "FCC Public Notice DA-26-1218: SpaceX-Grain-Anträge angenommen (10.11.)",
+          "url": "https://pubt.io/view/C06697C9A177EC6A53A2EE8AF9D15878F3F059D5"
         },
         {
-          "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
-        },
-        {
-          "title": "Nikkei: Nikkei 225 wieder über 60.000 (10.11.)",
-          "url": "https://www.nikkei.com/article/DGXZQOFL100E50Q6A111C2000000/"
-        },
-        {
-          "title": "FinanceFeeds: Anthropic-Roadshow ohne Preisspanne (9.11.)",
-          "url": "https://financefeeds.com/anthropic-ipo-date-roadshow-week-arrives-with-no-price-range-on-file/"
+          "title": "FAA: SpaceX Starship Super Heavy Project (Stand 11.11.)",
+          "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
         }
       ]
     },
@@ -59,32 +51,182 @@
     "RKLB": {
       "score": 0.1,
       "label": "gemischt",
-      "summary": "Q3: Rekordumsatz, Auftragsbestand ~3,6 Mrd. $, acht Neutron-Aufträge über 515 Mio. $ zu höherem Preis. Dagegen Verlust je Aktie −0,12 $, mehr Ausgaben, Neutron erst 2027: nachbörslich −6,5 % auf 55,02 $. Piper Sandler senkt Kursziel auf 58 $. Electron-100 laut Beck in etwa einer Woche.",
+      "summary": "Nach +6,5 % am Dienstag nachbörslich leicht schwächer (61,84 $). Rocket Lab feiert ESCAPADE auf Marskurs und zeigt die goldene Electron für Start 100 (Sa 14.11.). Konkurrent Firefly verschiebt den nächsten Alpha-Start auf Q1 2027.",
       "sources": [
         {
-          "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+          "title": "@RocketLab: ESCAPADE-Sonden auf dem Weg zum Mars (10.11.)",
+          "url": "https://x.com/RocketLab/status/2120266023589102049"
         },
         {
-          "title": "Rocket Lab: Neutron-Aufträge über 515 Mio. $ (9.11.)",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation"
+          "title": "@RocketLab: Electron im Gold-Look für Start 100 (10.11.)",
+          "url": "https://x.com/RocketLab/status/2120283697161417120"
         },
         {
-          "title": "Investing.com: RKLB nachbörslich −6,5 % auf 55,02 $ (Call-Transkript)",
-          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-rocket-lab-beats-revenue-in-q3-2026-stock-swings-lower-after-hours-93CH-5013696"
+          "title": "MarketBeat/Yahoo: Was Firefly im Q3-Call sagte (Alpha Flight 8 in Q1 2027)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/firefly-aerospace-fly-said-q3-021441989.html"
         },
         {
-          "title": "Rallies: Piper Sandler senkt RKLB-Kursziel auf 58 $ (10.11.)",
-          "url": "https://rallies.ai/news/rocket-lab-corp-piper-sandler-cuts-target-price-to-58-from-83-009ff33228067663"
-        },
-        {
-          "title": "@RocketLab: A blowout quarter",
-          "url": "https://x.com/RocketLab/status/2119944830449275258"
+          "title": "Yahoo Finance: RKLB (Schluss 10.11. und Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2120302471210033426",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-11T00:47:57+01:00",
+      "summaryDe": "Musk: SpaceX habe bei Singulus in Deutschland HJT-Solarzellen-Anlagen für 100 GW pro Jahr bestellt – für Starmind, um „eine empfindungsfähige Sonne“ zu schaffen. Achtung: Singulus selbst nennt für die erste Linie über 60 Mio. € und „über 100 GW“ als Ausbaurahmen der Partnerschaft; Wert und Zeitplan der weiteren Linien sind nicht veröffentlicht.",
+      "originalText": "SpaceX has ordered 100 GW/year of HJT solar manufacturing equipment from Singulus in Germany. This is for Starmind to create a sentient sun.",
+      "url": "https://x.com/elonmusk/status/2120302471210033426",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: 100 GW/Jahr HJT-Anlagen von Singulus (11.11., 00:47)",
+          "url": "https://x.com/elonmusk/status/2120302471210033426"
+        },
+        {
+          "title": "Singulus: Liefervertrag mit SpaceX für HJT-Anlagen (10.11.)",
+          "url": "https://www.singulus.com/2026/11/10/singulus-spacex-supply-contract/"
+        },
+        {
+          "title": "Interesting Engineering: SpaceX bestellt Solaranlagen bei Singulus (10.11.)",
+          "url": "https://interestingengineering.com/energy/spacex-singulus-hjt-solar-cell-production-line"
+        }
+      ]
+    },
+    {
+      "id": "post-boringcompany-2120286900569456800",
+      "account": "@boringcompany",
+      "displayName": "The Boring Company",
+      "postedAt": "2026-11-10T23:46:04+01:00",
+      "summaryDe": "Boring Company: 29 Tage nach dem Ende der Tunnelarbeiten in Bastrop hat die Bohrung in San Antonio begonnen.",
+      "originalText": "29 days from completion of tunneling in Bastrop to initiation of tunneling in San Antonio.",
+      "url": "https://x.com/boringcompany/status/2120286900569456800",
+      "tickers": [],
+      "companies": [
+        "Boring"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@boringcompany auf X",
+          "url": "https://x.com/boringcompany/status/2120286900569456800"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2120283697161417120",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-10T23:33:21+01:00",
+      "summaryDe": "Rocket Lab zeigt die Electron für den 100. Start im schwarz-goldenen Look. Start „The Mountain God Rises“ für iQPS frühestens Sa 14.11., Fenster ab 06:30 Uhr Berlin.",
+      "originalText": "Black rocket 🤝 Golden milestone. Electron is all dressed up for launch 100.",
+      "url": "https://x.com/RocketLab/status/2120283697161417120",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: Electron im Gold-Look für Start 100 (10.11.)",
+          "url": "https://x.com/RocketLab/status/2120283697161417120"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        }
+      ]
+    },
+    {
+      "id": "post-boringcompany-2120282374823117200",
+      "account": "@boringcompany",
+      "displayName": "The Boring Company",
+      "postedAt": "2026-11-10T23:28:05+01:00",
+      "summaryDe": "Boring Company hat mit Morgan's in San Antonio offiziell die Bohrung des „Morgan's Inclusion Tunnel“ begonnen, eines barrierefreien Tunnels zwischen Hotel, Freizeitpark und Pflegeeinrichtungen. Ein Eröffnungstermin wurde nicht genannt.",
+      "originalText": "What an inspiring event and a welcoming community. TBC is proud to partner w Morgan's and have officially started digging the Morgan's Inclusion Tunnel.",
+      "url": "https://x.com/boringcompany/status/2120282374823117200",
+      "tickers": [],
+      "companies": [
+        "Boring"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@boringcompany auf X",
+          "url": "https://x.com/boringcompany/status/2120282374823117200"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120278105051042195",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-10T23:11:07+01:00",
+      "summaryDe": "Musk teilt die Meldung, dass die FCC die Anträge für SpaceX' Kauf der landesweiten 800-MHz-Frequenzen von Grain (546 Lizenzpaare, für Starlink Mobile) zur Prüfung angenommen hat. Das ist der Start des Verfahrens, keine Genehmigung: Stellungnahmen bis 1.12., Erwiderungen bis 8.12.",
+      "originalText": "RT @ns123abc: 🚨 BREAKING: The FCC accepts SpaceX's application to acquire nationwide 800 MHz spectrum …",
+      "url": "https://x.com/elonmusk/status/2120278105051042195",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk teilt Meldung zur FCC-Annahme (10.11., 23:11)",
+          "url": "https://x.com/elonmusk/status/2120278105051042195"
+        },
+        {
+          "title": "FCC Public Notice DA-26-1218: SpaceX-Grain-Anträge angenommen (10.11.)",
+          "url": "https://pubt.io/view/C06697C9A177EC6A53A2EE8AF9D15878F3F059D5"
+        },
+        {
+          "title": "FCC EDOCS: DA-26-1218, Stellungnahmen bis 1.12., Erwiderungen bis 8.12.",
+          "url": "https://nexusbroadcast.com/fcc-edocs"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2120266023589102049",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-10T22:23:07+01:00",
+      "summaryDe": "Rocket Lab: Die ESCAPADE-Zwillinge Blue und Gold für NASA und UC Berkeley sind auf dem Weg zum Mars. Beide Sonden haben nach Schwungholen an der Erde mit ihrem Haupttriebwerk den Mars-Einschuss geschafft.",
+      "originalText": "Blue and Gold are on their way to Mars! The twin spacecraft, designed and built by Rocket Lab, for @NASA and @ucbssl's ESCAPADE mission, completed powered Earth gravity assists to each perfectly execute a trans-Mars Injection.",
+      "url": "https://x.com/RocketLab/status/2120266023589102049",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: ESCAPADE-Sonden auf dem Weg zum Mars (10.11.)",
+          "url": "https://x.com/RocketLab/status/2120266023589102049"
+        }
+      ]
+    },
     {
       "id": "post-spacex-2120231065394590007",
       "account": "@SpaceX",

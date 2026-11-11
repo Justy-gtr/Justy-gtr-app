@@ -10796,39 +10796,43 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Schluss 143,09 $ (+0,7 % zu Mo 142,07 $, Yahoo), obwohl der Nasdaq nach der heißen Oktober-Inflation (+0,4 %, Kern +0,3 %, BLS) 0,7 % verlor und Nvidia 5,5 %. Tagesspanne 137,65–144,89 $. Stütze: NASAs Mondprogramm CLPS-2 mit SpaceX unter acht Firmen und ein Starship-Startauftrag für 2028; Morgan Stanley bleibt bei Overweight und 300 $, Stifel bei 190 $ (Investing.com, CNBC). Am Abend meldete Singulus per Ad-hoc einen SpaceX-Auftrag über mehr als 60 Mio. € für Solarzellen-Anlagen der Starmind-Satelliten (@SpaceX). Booster 22 steht für Flight 15 (Fr 13.11.) auf dem Startplatz, die FAA-Zulassung ist laut Missionsseite weiter offen.",
+      "why": "Schluss Di 143,09 $ (+0,7 %), nachbörslich bis 02:00 Uhr 144,10 $ (Yahoo). Über Nacht: Musk schreibt, SpaceX habe bei Singulus Solarzellen-Anlagen für 100 GW pro Jahr bestellt; Singulus selbst nennt für die erste Linie (H1 2027) über 60 Mio. € und „über 100 GW“ nur als Ausbaurahmen. Die FCC hat die Anträge zum Kauf von Grains 800-MHz-Frequenzen (546 Lizenzpaare, Starlink Mobile) zur Prüfung angenommen – Stellungnahmen bis 1.12., noch keine Genehmigung. Rückenwind vom Markt: Nasdaq-100-Future um 04:50 rund +1,2 % nach starken CoreWeave-Zahlen, Nikkei +1,1 % (Yahoo, Bloomberg). Flight 15 (Fr 13.11.) steht laut SpaceX weiter unter Zulassungsvorbehalt, USSF-627 ist auf Do 03:35 verschoben.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX (Schluss 10.11.)",
+          "title": "Yahoo Finance: SPCX (Schluss 10.11. und Nachbörse)",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Investing.com: Warum SpaceX heute steigt (10.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/why-is-space-exploration-technologies-stock-gaining-today-93CH-5016150"
+          "title": "@elonmusk: 100 GW/Jahr HJT-Anlagen von Singulus (11.11., 00:47)",
+          "url": "https://x.com/elonmusk/status/2120302471210033426"
         },
         {
-          "title": "CNBC: Analysten-Calls Di 10.11. (Morgan Stanley zu SpaceX)",
-          "url": "https://www.cnbc.com/2026/11/10/tuesday-biggest-analyst-calls-like-nvidia.html"
+          "title": "Singulus: Liefervertrag mit SpaceX für HJT-Anlagen (10.11.)",
+          "url": "https://www.singulus.com/2026/11/10/singulus-spacex-supply-contract/"
         },
         {
-          "title": "BLS: Verbraucherpreise Oktober 2026",
-          "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+          "title": "FCC Public Notice DA-26-1218: SpaceX-Grain-Anträge angenommen (10.11.)",
+          "url": "https://pubt.io/view/C06697C9A177EC6A53A2EE8AF9D15878F3F059D5"
         },
         {
-          "title": "Yahoo Finance: Nasdaq Composite",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+          "title": "FCC EDOCS: DA-26-1218, Stellungnahmen bis 1.12., Erwiderungen bis 8.12.",
+          "url": "https://nexusbroadcast.com/fcc-edocs"
         },
         {
-          "title": "@SpaceX: Singulus-Vertrag (10.11.)",
-          "url": "https://x.com/SpaceX/status/2120231065394590007"
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (11.11., 04:50)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "PTA-Adhoc Singulus: Großauftrag von SpaceX (10.11.)",
-          "url": "https://www.tradingview.com/news/reuters.com,2026-11-10:newsml_Pexp4s9ka:0/"
+          "title": "Bloomberg/swissinfo: Asiens Börsen steigen nach CoreWeave (11.11.)",
+          "url": "https://www.swissinfo.ch/eng/asian-stocks-rise-on-ai-enthusiasm%2c-bonds-decline%3a-markets-wrap/92360800"
         },
         {
-          "title": "@SpaceX: Booster 22 auf dem Startplatz (10.11.)",
-          "url": "https://x.com/SpaceX/status/2120220290219208884"
+          "title": "SpaceX: Starship Flight 15 (pending regulatory approval)",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
+        },
+        {
+          "title": "Space Launch Live: USSF-627 auf 12.11. 02:35 UTC verschoben",
+          "url": "https://spacelaunchlive.com/launches/falcon-9-block-5-ussf-627/"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -26118,11 +26122,23 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Schluss 379,78 $ (+0,5 % zu Mo 378,05 $, Yahoo), Tagesspanne 370,43–380,00 $, gegen einen Nasdaq mit −0,7 % nach der heißen Oktober-Inflation. Belastung aus China: Im Oktober gingen laut CPCA nur 8.817 Teslas aus Shanghai an chinesische Käufer, −66 % zum Vorjahr (Electrek). Jefferies senkt das Ziel von 400 auf 375 $ und hält eine Fusion mit SpaceX nach den Midterms für schwieriger (CNBC, t-online). Stütze: Tesla nimmt außer für den Cyberbeast keine Cybertruck-Bestellungen mehr an und hob dessen Preis um 7.500 $ (Tesla Oracle).",
+      "why": "Schluss Di 379,78 $ (+0,5 %), nachbörslich bis 02:00 Uhr 381,90 $ (Yahoo). Keine neue Firmenmeldung über Nacht; Musk verteidigt weiter das Cybertruck-Aus in etwa acht Monaten zugunsten zusätzlicher Cybercab-Fertigung, viele Anzahlungen gehen zurück (TechCrunch). Rückenwind: Nasdaq-100-Future um 04:50 rund +1,2 % nach CoreWeave (Yahoo, Bloomberg). Belastung bleibt China mit −66 % Inlandsabsatz im Oktober (Electrek) und Jefferies mit Ziel 375 $ (CNBC).",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA (Schluss 10.11.)",
+          "title": "Yahoo Finance: TSLA (Schluss 10.11. und Nachbörse)",
           "url": "https://finance.yahoo.com/quote/TSLA/"
+        },
+        {
+          "title": "TechCrunch: Musk verteidigt Cybertruck-Aus, Anzahlungen zurück (9.11.)",
+          "url": "https://techcrunch.com/2026/11/09/musk-says-tesla-will-refund-some-cybertruck-deposits-defends-decision-to-end-production/"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (11.11., 04:50)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
+        },
+        {
+          "title": "Bloomberg/swissinfo: Asiens Börsen steigen nach CoreWeave (11.11.)",
+          "url": "https://www.swissinfo.ch/eng/asian-stocks-rise-on-ai-enthusiasm%2c-bonds-decline%3a-markets-wrap/92360800"
         },
         {
           "title": "Electrek: Tesla China −66 % im Oktober (10.11.)",
@@ -26131,18 +26147,6 @@
         {
           "title": "CNBC: Analysten-Calls Di 10.11. (Jefferies zu Tesla)",
           "url": "https://www.cnbc.com/2026/11/10/tuesday-biggest-analyst-calls-like-nvidia.html"
-        },
-        {
-          "title": "t-online/dpa-AFX: Jefferies senkt Ziel für Tesla auf 375 Dollar (10.11.)",
-          "url": "https://www.t-online.de/finanzen/boerse/boerse-analysen/us88160r1014/jefferies-senkt-ziel-fuer-tesla-auf-375-dollar-hold-/20261110589762/"
-        },
-        {
-          "title": "Tesla Oracle: Cybertruck-Bestellstopp außer Cyberbeast (10.11.)",
-          "url": "https://www.teslaoracle.com/2026/11/10/tesla-stops-taking-orders-for-cybertruck-except-for-the-cyberbeast-increases-price-by-7500/"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq Composite",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -43455,35 +43459,43 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Schluss 62,71 $ (+6,5 % zu Mo 58,86 $, Yahoo), nach vorbörslich bis −10,2 % (Benzinga) und einem Tagestief von 54,96 $ – gegen einen Nasdaq mit −0,7 %. Anleger schauten von der Verlustzahl (−0,12 $ je Aktie statt −0,06 $) auf Rekordumsatz 267,8 Mio. $ (+73 %), Auftragsbestand 3,57 Mrd. $ und das Q4-Ziel von 270–290 Mio. $ über Konsens. Barclays: Neue Neutron-Verträge laufen jetzt zu 70 statt 55 Mio. $ je Start, Ziel trotzdem 85 → 82 $ (Yahoo Finance). Neutron frühestens 2027. Weitere Ziele: Piper Sandler 83 → 58 $, Craig-Hallum 120 → 100 $, Cantor 122 → 111 $, Clear Street 110 $ (Benzinga, TradingView). Heute 23:00 legt Konkurrent Firefly Zahlen vor.",
+      "why": "Schluss Di 62,71 $ (+6,5 %), nachbörslich bis 02:00 Uhr 61,84 $ (−1,4 %, Yahoo). Konkurrent Firefly meldete einen Q3-Umsatz von 110,7 Mio. $ (+259 %), aber 0,45 $ Verlust je Aktie statt erwarteter 0,09 $ und schiebt den nächsten Alpha-Start auf Q1 2027; FLY nachbörslich 23,12 $ (Investing.com, Yahoo). Stütze: Das Pentagon-Büro OSC sagt Rocket Lab einen bedingten Kredit über 150 Mio. $ für den Neutron-Hochlauf zu, Ars Technica sieht dahinter die Sorge vor einem Startengpass, wenn Falcon 9 ausläuft. ESCAPADE ist auf Marskurs, Electron-Start 100 am Sa 14.11. ab 06:30 Uhr.",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB (Schluss 10.11.)",
+          "title": "Yahoo Finance: RKLB (Schluss 10.11. und Nachbörse)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "Yahoo Finance: Rocket Lab und AST SpaceMobile nach Zahlen (10.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/article/space-stocks-rocket-lab-ast-spacemobile-on-the-move-following-earnings-operational-updates-175324457.html"
+          "title": "Yahoo Finance: FLY (Schluss 10.11. und Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/FLY/"
         },
         {
-          "title": "Rocket Lab: Ergebnisse Q3 2026",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+          "title": "Firefly Aerospace: Ergebnisse Q3 2026 (GlobeNewswire, 10.11.)",
+          "url": "https://www.globenewswire.com/news-release/2026/11/10/3400229/0/en/firefly-aerospace-announces-third-quarter-2026-financial-results-with-record-backlog-of-1-7-billion.html"
         },
         {
-          "title": "Benzinga: Analysten nach den RKLB-Zahlen (10.11.)",
-          "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/11/63087884/these-analysts-revise-their-forecasts-on-rocket-lab-following-q3-results"
+          "title": "Investing.com: Firefly Q3 – Verlust höher, Aktie fällt (10.11.)",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-firefly-aerospace-q3-2026-loss-widens-as-stock-falls-93CH-5017336"
         },
         {
-          "title": "TradingView: Cantor 122 → 111 $ (10.11.)",
-          "url": "https://www.tradingview.com/news/tradingview:99ec063b375ee:0-cantor-fitzgerald-maintains-rocket-lab-at-overweight-lowers-price-target-to-111-from-122/"
+          "title": "MarketBeat/Yahoo: Was Firefly im Q3-Call sagte (Alpha Flight 8 in Q1 2027)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/firefly-aerospace-fly-said-q3-021441989.html"
         },
         {
-          "title": "Schaeffer's: RKLB steigt nach Rekordumsatz (10.11.)",
-          "url": "https://www.schaeffersresearch.com/content/news/2026/11/10/rocket-lab-stock-up-on-record-revenue-bear-notes"
+          "title": "US-Kriegsministerium: OSC sagt Rocket Lab 150 Mio. $ Kredit zu (9.11.)",
+          "url": "https://www.war.gov/News/Releases/Release/Article/4644766/the-department-of-wars-office-of-strategic-capital-signs-150-million-conditiona/"
         },
         {
-          "title": "Quartz: RKLB nach Umsatzplus und höherem Verlust (10.11.)",
-          "url": "https://qz.com/rocket-lab-stock-slips-revenue-beat-wider-loss-111026"
+          "title": "Ars Technica: US-Militär nervös wegen Startengpass (10.11.)",
+          "url": "https://arstechnica.com/space/2026/11/the-us-military-seems-to-be-getting-nervous-about-the-launch-supply-crunch/"
+        },
+        {
+          "title": "@RocketLab: ESCAPADE-Sonden auf dem Weg zum Mars (10.11.)",
+          "url": "https://x.com/RocketLab/status/2120266023589102049"
+        },
+        {
+          "title": "@RocketLab: Electron im Gold-Look für Start 100 (10.11.)",
+          "url": "https://x.com/RocketLab/status/2120283697161417120"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -57500,35 +57512,43 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Schluss 154,39 $ (−0,1 % zu Mo 154,60 $, Yahoo), nach vorbörslich rund −5 % und einer Tagesspanne von 147,79–158,59 $. Der Nasdaq schloss 0,7 % tiefer, Nvidia 5,5 % tiefer bei 168,80 $ (Yahoo) und ist nicht mehr das zweitwertvollste Unternehmen (Economic Times): The Information berichtet, über ein Netzwerk um die mutmaßliche Spionin Alice Huang seien seit 2023 mindestens 7,5 Mrd. $ Nvidia-Hardware an chinesische Firmen gegangen. Dazu die heiße Oktober-Inflation und eine 10-jährige US-Rendite um 5 % (CNBC). Bremse bleibt die Lumentum-Übernahme (115 Mrd. $, nur in Aktien): Arbitrageure sehen laut Bloomberg nur etwa 50 % Abschlusschance. Heute 23:00 berichtet CoreWeave, Zahlen von Marvell am 1.12. (Benzinga).",
+      "why": "Schluss Di 154,39 $ (−0,1 %), nachbörslich bis 02:00 Uhr 157,99 $ (+2,3 %, Yahoo). Treiber: CoreWeave übertraf die Erwartungen (Umsatz 3,66 Mrd. $, +168 %; Jahresziel auf 13,0–13,3 Mrd. $ erhöht; Auftragsbestand 132,5 Mrd. $), die Aktie stieg nachbörslich um 7,9 % auf 52,58 $ und zog Chipwerte mit (Ground News: MRVL +1,9 %, AMD +1,1 %). Nasdaq-100-Future um 04:50 rund +1,2 %, Nvidia nachbörslich +0,9 % auf 170,48 $ (Yahoo). Bremse bleibt der Lumentum-Deal; Marvell reichte eine Mitarbeiter-Mail von CEO Murphy zur Kursschwäche bei der SEC ein.",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL (Schluss 10.11.)",
+          "title": "Yahoo Finance: MRVL (Schluss 10.11. und Nachbörse)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "Yahoo Finance: NVDA (Schluss 10.11.)",
+          "title": "Yahoo Finance: CRWV (Schluss 10.11. und Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/CRWV/"
+        },
+        {
+          "title": "Yahoo Finance: NVDA (Schluss 10.11. und Nachbörse)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: Nvidia fällt nach Bericht über Chip-Lieferungen nach China (10.11.)",
-          "url": "https://finance.yahoo.com/markets/article/nvidia-stock-drops-3-extending-decline-on-report-alleged-chinese-spy-linked-to-nvidia-ceo-aided-75-billion-in-china-chip-shipments-152654028.html"
+          "title": "CoreWeave: Ergebnisse Q3 2026 (10.11.)",
+          "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx"
         },
         {
-          "title": "Economic Times: Liveblog Wall Street 10.11.",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-anthropic-ipo-nvidia-intel-marvell-tech-ai-chip-stocks-inflation-fed-rate-hike-treasury-bond-yield-news-10th-november-2026/liveblog/135712173.cms"
+          "title": "CNBC: CoreWeave Q3 (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html"
         },
         {
-          "title": "CNBC: US-Renditen (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html"
+          "title": "Yahoo Finance: CoreWeave nachbörslich bis +8 % (10.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/crwv-stock-climbs-8-hours-220940004.html"
         },
         {
-          "title": "Bloomberg Law: Marvell-Lumentum-Deal fast Münzwurf",
-          "url": "https://news.bloomberglaw.com/mergers-and-acquisitions/marvell-lumentum-deal-odds-near-coin-flip-as-ai-trade-shakes-1"
+          "title": "Ground News: Chipwerte nachbörslich höher, Marvell +1,9 % (10.11.)",
+          "url": "https://ground.news/article/chip-stocks-generally-rose-in-after-hours-trading-in-the-us-with-marvell-technology-up-19-and-amd-up-11"
         },
         {
-          "title": "Benzinga: Lumentum-Deal 50/50 (Termin 1.12.)",
-          "url": "https://www.benzinga.com/markets/tech/26/11/63080723/marvells-115-billion-lumentum-deal-faces-50-50-odds-report"
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (11.11., 04:50)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
+        },
+        {
+          "title": "SEC: Marvell 425 – Murphy-Mail an Mitarbeiter zum Lumentum-Deal (10.11.)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1835632/000119312526455400/d180177d425.htm"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",

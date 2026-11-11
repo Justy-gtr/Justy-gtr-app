@@ -2,609 +2,42 @@
   "example": false,
   "events": [
     {
-      "id": "evt-midterms-ki-rechenzentren",
-      "title": "Nach dem Demokraten-Sieg: Risiko für KI-Rechenzentren und Chip-Schwäche",
-      "date": "2026-11-05",
+      "id": "evt-grok48-rollout",
+      "title": "SpaceX SI: Grok 4.8 – vorsichtiger erster Start (Musk: „später diese Woche“)",
+      "date": "2026-11-12",
+      "end": "2026-11-15",
       "time": null,
       "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "regulierung",
-      "company": "US-Politik / Chipbranche",
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB",
-        "ASML",
-        "MSFT"
-      ],
-      "probabilityPct": 100,
-      "impact": "hoch",
-      "reasoning": "Der Midterm-Sieg der Demokraten ist eingetreten (daher 100 %). Am 5.11. fiel der Nasdaq um 5,5 % in die Korrektur, der Chip-Index um 12 %. Gründe: Sorge vor Bremsen für KI-Rechenzentren und schwache Zahlen von Qualcomm und Arm. SpaceX schloss rund 9 % tiefer, Tesla fast 11 %. Etwas Entwarnung: Texas’ neue Gouverneurin Hinojosa will schon genehmigte Rechenzentren fertig bauen lassen; strengere Regeln nur für neue. Achten auf: erste Gesetzentwürfe.",
-      "example": false,
-      "sources": [
-        {
-          "title": "InvestmentNews: Nasdaq in der Korrektur nach den Midterms (05.11.2026)",
-          "url": "https://www.investmentnews.com/equities/nasdaq-enters-correction-as-ai-stocks-sink-after-midterm-elections/268903"
-        },
-        {
-          "title": "Yahoo Finance: Börse am 05.11.2026 (Nasdaq −5 %, Chip-Ausverkauf)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-rises-chip-stocks-141439950.html"
-        },
-        {
-          "title": "NBC News: Tech-Aktien fallen nach Midterms und KI-Sorgen (05.11.2026)",
-          "url": "https://www.nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650"
-        },
-        {
-          "title": "Gavin Baker auf X: Hinojosa zu Rechenzentren in Texas",
-          "url": "https://x.com/GavinSBaker/status/2118420042283102604"
-        },
-        {
-          "title": "BBC: SpaceX und Tech-Aktien fallen nach Midterms (05.11.2026)",
-          "url": "https://www.bbc.com/news/articles/cmn04705rd8jo"
-        }
-      ]
-    },
-    {
-      "id": "evt-faa-lizenz-streamline-2026",
-      "title": "FAA: Vorschläge zur Straffung der Start-/Wiedereintritts-Lizenzierung (Überarbeitung 2027)",
-      "date": "2026-11-05",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "regulierung",
-      "company": "FAA",
-      "tickers": [
-        "SPCX",
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Am 5.11. kündigte Verkehrsminister Duffy vier FAA-Maßnahmen an: drei vorgeschlagene Regeln zu Flugabbruch und Wiedereintrittsrisiko plus eine Final Rule mit technischen Korrekturen; umfassende Lizenz-Reform für 2027 geplant; Personalaufbau im Office of Commercial Space Transportation. Für SpaceX (und Rocket Lab) potenziell kürzere Genehmigungswege bei weiterem Sicherheitsstandard. 100 %: öffentlich angekündigt. Wird freitags als positiver SPCX-Treiber mitgezählt; Demokraten-Mehrheit bleibt politischer Gegenwind.",
-      "example": false,
-      "sources": [
-        {
-          "title": "FAA: Duffy commercial space actions 05.11.2026",
-          "url": "https://www.faa.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-supercharges-american-dominance-commercial"
-        },
-        {
-          "title": "Reuters via Investing: FAA streamline boost for SpaceX",
-          "url": "https://www.investing.com/news/stock-market-news/us-proposes-space-launch-rule-changes-in-potential-boost-for-spacex-5005351"
-        },
-        {
-          "title": "Investing.com: Why SPCX rallying Friday",
-          "url": "https://www.investing.com/news/stock-market-news/why-is-space-exploration-technologies-stock-rallying-today-93CH-5008756"
-        }
-      ]
-    },
-    {
-      "id": "evt-us-jobs-okt",
-      "title": "USA: Arbeitsmarktbericht Oktober (veröffentlicht)",
-      "date": "2026-11-06",
-      "time": "14:30",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "makro",
-      "company": null,
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "hoch",
-      "reasoning": "Veröffentlicht 6.11. 14:30 Berlin: +165.000 Nonfarm-Payrolls (Konsens ~59–65k), Arbeitslosenquote 4,1 % (Konsens 4,2 %), Löhne +0,4 % MoM / +3,1 % YoY. August auf 186k und September auf 60k nach oben revidiert. Breites Wachstum (Professional Services +70k, Health Care +42k). Starker Bericht: CME FedWatch erhöhte die Chance auf eine 25-bp-Zinsanhebung im Dezember auf rund 77 %. Laut CNBC blieb die Sofortreaktion an den Futures gemischt, Treasuries höher.",
-      "example": false,
-      "sources": [
-        {
-          "title": "BLS: Employment Situation October 2026",
-          "url": "https://www.bls.gov/news.release/empsit.htm"
-        },
-        {
-          "title": "CNBC: +165k Jobs, Arbeitslosigkeit 4,1 %",
-          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
-        },
-        {
-          "title": "AP: Überraschend starke Payrolls",
-          "url": "https://apnews.com/article/jobs-inflation-paycheck-salary-employment-746ee02db33d0372980f815ada33d8d3"
-        }
-      ]
-    },
-    {
-      "id": "evt-baron-musk-fireside",
-      "title": "Baron Investment Conference: Musk im Fireside-Chat mit Ron Baron",
-      "date": "2026-11-06",
-      "time": "19:10",
-      "timezone": "Europe/Berlin",
       "kind": "company",
-      "category": "konferenz",
-      "company": "Tesla / SpaceX",
-      "tickers": [
-        "TSLA",
-        "SPCX"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Baron Capital hat den virtuellen Fireside-Chat mit Elon Musk am 6.11. ab 13:10 ET (19:10 Berlin) per X-Broadcast gestartet (@BaronCapital). Clips aus dem Gespräch kursieren (u. a. Musk im Airstream vor Ort am GW-Kraftwerk, Hands-on auf dem Gelände). 100 %: Termin hat stattgefunden. Öffentlicher Voll-Transcript noch ausstehend; Kurswirkung über nachlaufende Zitate.",
-      "example": false,
-      "sources": [
-        {
-          "title": "@BaronCapital: Fireside Chat Stream",
-          "url": "https://x.com/BaronCapital/status/2118765607122260177"
-        },
-        {
-          "title": "Baron Conference 2026 Agenda",
-          "url": "https://www.baroncapitalgroup.com/conference-2026"
-        },
-        {
-          "title": "Clip: Musk Airstream / Kraftwerk",
-          "url": "https://x.com/KanekoaTheGreat/status/2118778153711935662"
-        }
-      ]
-    },
-    {
-      "id": "evt-falcon9-ussf432",
-      "title": "SpaceX: Falcon-9-Start USSF-432 für die Space Force — erfolgreich",
-      "date": "2026-11-07",
-      "time": "01:48",
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "start",
-      "company": "SpaceX",
+      "category": "produkt",
+      "company": "SpaceX (SI, ehemals xAI)",
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 100,
+      "probabilityPct": 50,
       "impact": "niedrig",
-      "reasoning": "Erfolgreich: SpaceX meldet Start Freitag 6.11. 16:48 PT (Samstag 01:48 Berlin) von Vandenberg SLC-4E; Booster B1095 (8. Flug) landete auf Of Course I Still Love You. Mission-Seite und Space.com/Vandenberg bestätigen Start und Landung; Nutzlast klassifiziert (Webcast nach ~10 Min beendet). 100 %: Termin erledigt. Kurswirkung gering (Routine-Militärflug).",
+      "reasoning": "Musk am 10.11. auf X: Vortraining fertig, Code neu in C/C++, Grok 4.8 steckt im RL-Training und soll später diese Woche vorsichtig für erste Nutzer starten. Er nennt es selbst „noch nicht unglaublich“. 50 %, weil Musks KI-Termine oft rutschen und RL-Ergebnisse erst kommen. Kurswirkung auf SPCX gering, eher ein Stimmungsfaktor. Stand Mi 05:00: Noch kein Start, kein Eintrag in den xAI-Release-Notes (TeslaNorth). 50 % unverändert.",
       "example": false,
       "sources": [
         {
-          "title": "SpaceX: USSF-432 Mission (gestartet)",
-          "url": "https://www.spacex.com/launches/ussf432"
+          "title": "@elonmusk: Grok 4.8 soft rollout later this week (10.11.)",
+          "url": "https://x.com/elonmusk/status/2120088070443655190"
         },
         {
-          "title": "@SpaceX: Liftoff USSF-432",
-          "url": "https://x.com/SpaceX/status/2118868469655433435"
+          "title": "SpaceX SI Docs: Release Notes",
+          "url": "https://docs.x.ai/developers/release-notes"
         },
         {
-          "title": "@SpaceX: Booster-Landung OCISLY",
-          "url": "https://x.com/SpaceX/status/2118870818021097862"
-        },
-        {
-          "title": "Space.com: USSF-432 classified launch",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-classified-mission-space-force-ussf-432"
-        }
-      ]
-    },
-    {
-      "id": "evt-escapade-tmi",
-      "title": "Rocket Lab / NASA ESCAPADE: Mars-Einschussmanöver — beide gelungen (NASA bestätigt)",
-      "date": "2026-11-09",
-      "time": "11:51",
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "mission",
-      "company": "Rocket Lab",
-      "tickers": [
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "niedrig",
-      "reasoning": "NASA bestätigt am 9.11.: Beide ESCAPADE-Sonden haben ihren angetriebenen Vorbeiflug an der Erde mit etwa 9-minütigem Trans-Mars-Burn geschafft — die erste am Sa 7.11. um 5 Uhr EST (11:00 Berlin) in rund 1.000 Meilen Höhe, die zweite am Mo 9.11. um 6 Uhr EST (12:00 Berlin) in rund 650 Meilen Höhe. NASA: „zweimal, fehlerfrei, in zwei Tagen“. Ankunft am Mars am 7. und 9.9.2027. Darum 85 → 100 %. Rocket Lab hat die Sonden gebaut; Kurswirkung gering, die Q3-Zahlen heute 23:00 wiegen schwerer.",
-      "example": false,
-      "sources": [
-        {
-          "title": "NASA: ESCAPADE schließt beide Swing-by-Manöver ab, Kurs Mars (9.11.)",
-          "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/"
-        },
-        {
-          "title": "NASA: ESCAPADE Twin Spacecraft to Mars",
-          "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
-        },
-        {
-          "title": "@RocketLab: ESCAPADE epic interplanetary",
-          "url": "https://x.com/RocketLab/status/2118834083279306990"
-        },
-        {
-          "title": "@RocketLab: See you soon, Mars",
-          "url": "https://x.com/RocketLab/status/2118544706066055248"
-        },
-        {
-          "title": "@NASASolarSystem: Flyby #1 (Vorabend)",
-          "url": "https://x.com/NASASolarSystem/status/2118761571996586015"
-        },
-        {
-          "title": "The Space Tap: ESCAPADE — outcome not yet confirmed (7.11.)",
-          "url": "https://thespacetap.com/nasa-escapade-earth-flyby-slingshot-mars-nov-7-9/"
-        },
-        {
-          "title": "Orbinauts: Gold feuert am 9.11., Blue noch ohne NASA-Ergebnis",
-          "url": "https://orbinauts.com/news/nasas-escapade-gold-short-of-thrust-last-december-fires-its-engine-past-earth-on-9-november-to-head-for-mars/"
-        },
-        {
-          "title": "Starlust: Blue „erfolgreich“ (nicht offiziell, 7.11.)",
-          "url": "https://starlust.org/nasas-first-escapade-orbiter-swings-past-earth-on-trip-to-mars-second-set-to-fly-by-on-november-9/"
-        },
-        {
-          "title": "@jeff_on_orbit: Blue-Burn „nicht bestätigt“ (8.11.)",
-          "url": "https://x.com/jeff_on_orbit/status/2119246722589204875"
-        },
-        {
-          "title": "@NASASolarSystem: Flyby #2 is tonight",
-          "url": "https://x.com/NASASolarSystem/status/2119494168728789467"
-        },
-        {
-          "title": "NASA ESCAPADE Blog-Archiv (Stand 9.11. 14:10: kein Post-Burn-Update)",
-          "url": "https://science.nasa.gov/blogs/escapade/"
-        },
-        {
-          "title": "Space Exploration .IN: Blue-Ergebnis nicht verifiziert (8.11.)",
-          "url": "https://www.spaceexploration.in/news/escapade-earth-flyby-preparations"
-        },
-        {
-          "title": "Leonard David: DSN Madrid hat Kontakt zu Gold, NASA-Meldung erwartet (9.11.)",
-          "url": "https://www.leonarddavid.com/escapade-probes-gravity-assist-to-the-red-planet/"
-        },
-        {
-          "title": "@amsatdl: Gold-Vorbeiflug unter 7000 km (9.11.)",
-          "url": "https://x.com/amsatdl/status/2119781346617041031"
-        }
-      ]
-    },
-    {
-      "id": "evt-robotaxi-san-antonio",
-      "title": "Tesla: Robotaxi startet in San Antonio — gestartet",
-      "date": "2026-11-09",
-      "time": "12:00",
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "robotaxi",
-      "company": "Tesla",
-      "tickers": [
-        "TSLA"
-      ],
-      "probabilityPct": 100,
-      "impact": "niedrig",
-      "reasoning": "Eingetreten: Tesla (@robotaxi) nannte „ab morgen, 5 Uhr“ und auf Nachfrage „Monday“; TechCrunch, Tesla Oracle und Stocktwits melden den Start am Mo 9.11. um 5:00 Uhr Ortszeit (12:00 Berlin). San Antonio ist damit die achte Robotaxi-Stadt. Die Startzone soll laut Sawyer Merritt rund 275 Quadratmeilen groß sein (seine Zählung, nicht von Tesla). Tesla nennt weder Preise noch Flottengröße oder ob Sicherheitsfahrer an Bord sind. Am selben Tag schrieb @robotaxi um 12:00: größeres Fahrgebiet in Austin live; Robotaxi Tracker misst dort jetzt 435 statt 272 Quadratmeilen. Kurswirkung eher klein, es stützt aber die Robotaxi-Geschichte.",
-      "example": false,
-      "sources": [
-        {
-          "title": "@robotaxi: Robotaxi available in San Antonio starting tomorrow, 5am",
-          "url": "https://x.com/robotaxi/status/2119678179963187564"
-        },
-        {
-          "title": "@robotaxi: „Monday“",
-          "url": "https://x.com/robotaxi/status/2119680468392276192"
-        },
-        {
-          "title": "TechCrunch: Tesla expands robotaxi service to San Antonio",
-          "url": "https://techcrunch.com/2026/11/09/tesla-expands-robotaxi-service-to-san-antonio/"
-        },
-        {
-          "title": "Tesla Oracle: Robotaxi in San Antonio gestartet (9.11.)",
-          "url": "https://www.teslaoracle.com/2026/11/09/after-fort-worth-tesla-launches-robotaxi-service-in-san-antonio-texas-today-nov-9-now-available-in-8-cities/"
-        },
-        {
-          "title": "Stocktwits: Robotaxi Makes San Antonio Debut",
-          "url": "https://stocktwits.com/news-articles/markets/equity/elon-musk-says-tesla-will-refund-deposits-to-lot-of-people-as-cybertruck-production-winds-down/cNGr7JrR9en"
-        },
-        {
-          "title": "@robotaxi: Bigger Austin service area now live",
-          "url": "https://x.com/robotaxi/status/2119746828191027346"
-        },
-        {
-          "title": "Robotaxi Tracker: Austin 272 → 435 Quadratmeilen",
-          "url": "https://robotracker.app/updates?city_id=1"
-        }
-      ]
-    },
-    {
-      "id": "evt-trump-katar-iran",
-      "title": "USA/Iran: Trump trifft Katars Premier zu Waffenruhe und Atomgesprächen — stattgefunden, kein Abkommen",
-      "date": "2026-11-09",
-      "time": "18:00",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "politik",
-      "company": null,
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Stattgefunden: Trump und Katars Premier Al Thani sprachen am Mo etwa 45 Minuten im Oval Office über Iran (Axios via Iran International). Ein Abkommen wurde nicht verkündet. Auf dem Tisch liegt weiter Katars Rahmen: USA lockern die Seeblockade und geben eingefrorene Gelder frei, Iran lässt Atominspektoren zu und öffnet die Straße von Hormus; beide Seiten sind bei den Bedingungen noch uneins, Washington hat den Plan nicht angenommen (Fox News). Rubio: „kein Durchbruch in Sicht“; Irans Präsident Peseschkian signalisiert Gesprächsbereitschaft. 100 %: Termin erledigt. Für die Börse zählt eher Öl: Brent lag am Mo bei rund 94 $ (Yahoo Finance) und stützt die Tech-Erholung.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Iran International: Trump und Katars Premier, 45 Minuten Treffen (9.11.)",
-          "url": "https://www.iranintl.com/en/liveblog/202611077068"
-        },
-        {
-          "title": "Fox News: Trump trifft Katars Premier, Rubio sieht keinen Durchbruch (9.11.)",
-          "url": "https://www.foxnews.com/world/trump-meets-key-iran-war-mediator-uae-reveals-major-oil-export-surge-despite-conflict"
-        },
-        {
-          "title": "Al-Monitor: Trump meets Qatar PM as mediators push Iran deal",
-          "url": "https://www.al-monitor.com/originals/2026/11/trump-meets-qatar-pm-mediators-push-iran-deal"
-        },
-        {
-          "title": "Axios: Trump trifft Katars Premier zu Iran (9.11.)",
-          "url": "https://www.axios.com/2026/11/09/trump-qatar-prime-minister-iran-war-mediation"
-        },
-        {
-          "title": "FXStreet/Reuters: Treffen 17:00 GMT im Weißen Haus",
-          "url": "https://www.fxstreet.com/news/us-president-donald-trump-will-meet-qatars-prime-minister-on-monday-202611090430"
-        },
-        {
-          "title": "Yahoo Finance: Börse heute, Brent ~94 $ (9.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
-        }
-      ]
-    },
-    {
-      "id": "evt-rklb-q3",
-      "title": "Rocket Lab: Q3-2026-Zahlen und Call — veröffentlicht",
-      "date": "2026-11-09",
-      "time": "23:00",
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "earnings",
-      "company": "Rocket Lab",
-      "tickers": [
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "hoch",
-      "reasoning": "Veröffentlicht am Mo 9.11. um 22:05 (Call 23:00). Umsatz Rekord 267,8 Mio. $ (+73 % zum Vorjahr), über der eigenen Spanne 250–265 Mio. $ und dem Konsens von etwa 257 Mio. $. Verlust je Aktie −0,12 $ statt erwarteter −0,07 $; darin stecken ein Einmalverlust von 27,3 Mio. $ aus der Ablösung von Wandelanleihen und 21,3 Mio. $ Transaktionskosten (Iridium). Bereinigtes EBITDA −18,0 Mio. $ (Prognose −17 bis −23), GAAP-Bruttomarge rund 33,6 % (Prognose 29–31 %), erstmals positiver operativer Cashflow (7,2 Mio. $). Auftragsbestand rund 3,57 Mrd. $ (+52 % seit Ende Q2), davon fast 1 Mrd. $ neue Startaufträge; Neutron hat jetzt 16 Missionen im Bestand, Grundpreis teils 70 Mio. $, Erststart weiter frühestens 2027. Q4-Ausblick: Umsatz 270–290 Mio. $ (Konsens vorher ~265 Mio. $), GAAP-Bruttomarge 34–36 %. Aktie schloss am Mo bei 58,86 $ (+10,9 %); nachbörslich zunächst schwankend zwischen etwa 54,7 und 60,1 $, nach dem Call bei 55,02 $ (−6,5 %, Investing.com). Im Call: acht Neutron-Aufträge über 515 Mio. $ (u. a. ICEYE, Muon Space, Starcloud), nächste freie Neutron-Plätze in den 2030ern; bereinigtes EBITDA soll binnen sechs Monaten nach dem ersten erfolgreichen Neutron-Flug positiv werden. Piper Sandler senkt das Kursziel von 83 auf 58 $. Di vorbörslich −10,2 % auf 52,87 $; Cantor senkt das Ziel von 122 auf 111 $, KeyBanc bleibt bei 100 $ (Benzinga).",
-      "example": false,
-      "sources": [
-        {
-          "title": "Rocket Lab: Ergebnisse Q3 2026 (9.11.)",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
-        },
-        {
-          "title": "Rocket Lab: Neutron-Aufträge über 515 Mio. $ (9.11.)",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation"
-        },
-        {
-          "title": "Investing.com: RKLB nachbörslich −6,5 % auf 55,02 $ (Call-Transkript)",
-          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-rocket-lab-beats-revenue-in-q3-2026-stock-swings-lower-after-hours-93CH-5013696"
-        },
-        {
-          "title": "Rallies: Piper Sandler senkt RKLB-Kursziel auf 58 $ (10.11.)",
-          "url": "https://rallies.ai/news/rocket-lab-corp-piper-sandler-cuts-target-price-to-58-from-83-009ff33228067663"
-        },
-        {
-          "title": "24/7 Wall St.: RKLB Q3 – Umsatz über, EPS unter Erwartung (9.11.)",
-          "url": "https://247wallst.com/investing/2026/11/09/live-will-rocket-lab-smash-q3-earnings-tonight-after-jumping-10-intraday/"
-        },
-        {
-          "title": "Yahoo Finance: RKLB (inkl. Nachbörse)",
-          "url": "https://finance.yahoo.com/quote/RKLB/"
-        },
-        {
-          "title": "Rocket Lab: Termin der Q3-2026-Zahlen (GlobeNewswire)",
-          "url": "https://www.globenewswire.com/news-release/2026/10/20/3385004/0/en/rocket-lab-announces-date-of-third-quarter-2026-financial-results.html"
-        },
-        {
-          "title": "Rocket Lab IR: Q3-2026-Call",
-          "url": "https://investors.rocketlabcorp.com/events/event-details/third-quarter-2026-financial-results-update-and-conference-call"
-        },
-        {
-          "title": "Rocket Lab: Neutron-Update, Erststart jetzt 2027",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-provides-update-neutron-development-and-adjusts"
-        },
-        {
-          "title": "Rocket Lab: Ergebnisse Q2 2026",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts"
-        },
-        {
-          "title": "Yahoo Finance: RKLB historische Kurse",
-          "url": "https://finance.yahoo.com/quote/RKLB/history/"
-        },
-        {
-          "title": "EBC: RKLB Q3-Vorschau (Konsens, Margen-Prognose)",
-          "url": "https://www.ebc.com/forex/rocket-lab-rklb-q3-2026-earnings-preview"
-        },
-        {
-          "title": "MarketBeat: RKLB Q3 Konsens",
-          "url": "https://www.marketbeat.com/earnings/reports/2026-11-9-rocketlab-stock/"
-        },
-        {
-          "title": "TipRanks: Optionen erwarten ~15 % Bewegung (RKLB Q3)",
-          "url": "http://www.tipranks.com/news/rocket-lab-stock-price-forecast-what-options-traders-and-financial-analysts-expect-ahead-of-q3-earnings"
-        },
-        {
-          "title": "Yahoo Finance: SpaceX, Rocket Lab steigen nach NASA-Mondaufträgen (9.11.)",
-          "url": "https://finance.yahoo.com/markets/article/spacex-rocket-lab-blast-higher-as-nasa-hands-out-10-billion-in-moon-base-awards-164320855.html"
-        },
-        {
-          "title": "24/7 Wall St.: Rocket Lab +9 % vor Zahlen, SpaceX +6 % (9.11.)",
-          "url": "https://247wallst.com/investing/2026/11/09/rocket-lab-jumps-9-ahead-of-earnings-ast-spacemobile-surges-11-on-japan-satellite-venture-with-rakuten-spacex-rises-6/"
-        },
-        {
-          "title": "Benzinga: Analysten nach RKLB-Q3 (10.11.)",
-          "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/11/63087884/these-analysts-revise-their-forecasts-on-rocket-lab-following-q3-results"
-        }
-      ]
-    },
-    {
-      "id": "evt-softbank-q2-fy26",
-      "title": "SoftBank Group: Zahlen Q2 (Tokio) — veröffentlicht, Nettoverlust",
-      "date": "2026-11-10",
-      "time": "07:30",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "earnings",
-      "company": "SoftBank Group",
-      "tickers": [
-        "SPCX"
-      ],
-      "probabilityPct": 100,
-      "impact": "niedrig",
-      "reasoning": "Veröffentlicht: Im Quartal Juli–September Nettoverlust von 1,12 Bio. Yen (rund 7 Mrd. $) nach 2,5 Bio. Yen Gewinn im Vorjahr; Umsatz 2,22 Bio. Yen über der LSEG-Schätzung von 2,02 Bio. Yen (CNBC). Im Halbjahr belastete u. a. ein Verlust von 597,2 Mrd. Yen aus der Neuordnung der Kraftwerks-Bestellungen für US-KI-Rechenzentren (SoftBank-Finanzbericht). Die Aktie schloss vor den Zahlen 13,9 % höher und hob den Nikkei allein um rund 380 Punkte; der Nikkei schloss +2,87 % bei 60.459,58, Topix +1,98 % (Nikkei). Die Reaktion auf den Verlust zeigt sich erst am Mittwoch in Tokio. Für SpaceX mit xAI ein indirekter Stimmungstest für KI-Werte.",
-      "example": false,
-      "sources": [
-        {
-          "title": "CNBC: SoftBank mit 7 Mrd. $ Nettoverlust im Q2 (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html"
-        },
-        {
-          "title": "SoftBank Group: Finanzbericht Halbjahr bis 30.9.2026",
-          "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf"
-        },
-        {
-          "title": "Nikkei: Nikkei schließt bei 60.459 (+1.684) (10.11.)",
-          "url": "https://www.nikkei.com/article/DGXZQOFL100KF0Q6A111C2000000/"
-        },
-        {
-          "title": "SoftBank Group: Earnings Results Q2 FY2026",
-          "url": "https://group.softbank/en/event/earnings_2026q2"
-        }
-      ]
-    },
-    {
-      "id": "evt-infineon-gj26",
-      "title": "Infineon: Jahreszahlen 2026 — veröffentlicht, Ausblick ~20 Mrd. €",
-      "date": "2026-11-10",
-      "time": "07:30",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "earnings",
-      "company": "Infineon",
-      "tickers": [
-        "IFX.DE"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Veröffentlicht: Q4 Umsatz 4,706 Mrd. € (Konsens 4,69), Segmentmarge 23,8 %, bereinigtes EPS 0,60 € (Konsens 0,62). Ausblick 2027: rund 20 Mrd. € Umsatz (+über 20 %, Konsens 19,81 Mrd. €), davon knapp 4 Mrd. € Stromversorgung für Rechenzentren, Segmentmarge im mittleren 20er-Bereich. Dagegen: Free Cashflow nur ~1,8 Mrd. € statt erwarteter 2,26 Mrd. €, Investitionen 3,0–3,5 Mrd. € (Infineon, Investing.com). Dividende soll auf 0,38 € steigen. Vorbörslich +4,6 % auf 50,86 € (ad-hoc-news). Stimmungstest für KI- und Chipwerte vor der US-Eröffnung; Deutschland-Tab.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Infineon/MarketScreener: Rekordquartal, Ausblick GJ 2027 (10.11.)",
-          "url": "https://in.marketscreener.com/news/infineon-closes-fy-2026-with-record-quarter-expects-revenue-growth-of-more-than-20-percent-and-a-5-ce785edad889f524"
-        },
-        {
-          "title": "Investing.com: Infineon-Ausblick über Erwartung, Cashflow enttäuscht (10.11.)",
-          "url": "https://de.investing.com/news/earnings/infineon-ubertrifft-dank-kinachfrage-umsatzprognose-fur-gj27--cashflow-enttauscht-3758214"
-        },
-        {
-          "title": "ad-hoc-news: Infineon vorbörslich +4,61 % auf 50,86 € (10.11.)",
-          "url": "https://www.ad-hoc-news.de/boerse/news/vorboerse/infineon-stock-at-eur-50-86-up-4-61-prozent-premarket/70484424"
-        },
-        {
-          "title": "Infineon: Investor Relations",
-          "url": "https://www.infineon.com/de/about/investor"
-        }
-      ]
-    },
-    {
-      "id": "evt-hensoldt-cmd",
-      "title": "Hensoldt: Kapitalmarkttag — 6 Mrd. € Umsatz 2030 bestätigt, 10 Mrd. € für 2035",
-      "date": "2026-11-10",
-      "time": "08:00",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "unternehmen",
-      "company": "Hensoldt",
-      "tickers": [
-        "HAG.DE"
-      ],
-      "probabilityPct": 100,
-      "impact": "niedrig",
-      "reasoning": "Stattgefunden: Hensoldt bestätigt die Umsatzambition von 6 Mrd. € für 2030 und nennt erstmals 10 Mrd. € für 2035; 2027/2028 jeweils 15–20 % Umsatzwachstum, bereinigte EBITDA-Marge bis 2030 von rund 19 auf rund 21 % (EQS-News). Deutschland-Tab. Für SPCX, TSLA und RKLB ohne direkte Bedeutung.",
-      "example": false,
-      "sources": [
-        {
-          "title": "EQS-News/finanzen.net: Hensoldt-Kapitalmarkttag (10.11.)",
-          "url": "https://www.finanzen.net/nachricht/aktien/eqs-news-kapitalmarkttag-hensoldt-best-tigt-umsatzambition-von-6-milliarden-euro-f-r-2030-und-strebt-10-milliarden-euro-f-r-2035-an-16052240"
-        },
-        {
-          "title": "Dow Jones/MarketScreener: Tagesvorschau Di 10.11.",
-          "url": "https://at.marketscreener.com/boerse-nachrichten/tagesvorschau-dienstag-10-november-ce785edad98df724"
-        }
-      ]
-    },
-    {
-      "id": "evt-us-cpi-okt",
-      "title": "USA: Verbraucherpreise (CPI) Oktober — veröffentlicht: +0,4 %, Kern +0,3 % (heißer als erwartet)",
-      "date": "2026-11-10",
-      "time": "14:30",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "makro",
-      "company": null,
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Ergebnis 14:30: Verbraucherpreise +0,4 % zum Vormonat (erwartet +0,3 %, September +0,6 %), Kernrate +0,3 % (erwartet +0,2 %), Energie +0,7 %, Wohnen +0,3 %; Jahresraten fehlen wegen des Shutdowns 2025 (BLS, CNBC). Beide Werte über Konsens: Das stützt die Zinserhöhung im Dezember. Reaktion: 10-jährige US-Rendite +8 Basispunkte auf 4,95 %, Nasdaq zur Eröffnung −0,9 %, um 10:04 New York aber schon +0,1 %; Nvidia −3 % (CNBC). Mittags New York kippte die Erholung: um 17:58 Berlin Nasdaq −1,3 %, Nvidia −6,6 %, 10-jährige Rendite 5,0 % (Yahoo, CNBC). Fed-Gouverneur Waller sagte vorab, bei höheren Werten sollte die Fed sogar 50 Basispunkte erwägen (CNBC). Vorher: Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid. Stand Di Vormittag: Dow-Futures +0,35 %, S&P-Futures +0,1 %, Nasdaq-100-Futures −0,3 %, Brent 90,6 $ nach Trumps Iran-Aussage (Yahoo/Stocktwits). DAX mittags +1,2 % nahe Rekord (dpa-AFX). Schluss 22:00: Nasdaq −0,7 % auf 25.065,88, S&P 500 −0,4 % auf 7.521,11, Nvidia −5,5 % auf 168,80 $ (Yahoo). Deutsche Bank erwartet nach den Daten eine weitere Erhöhung im Januar 2027 (Economic Times).",
-      "example": false,
-      "sources": [
-        {
-          "title": "BLS: Verbraucherpreise Oktober 2026 (10.11.)",
-          "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
-        },
-        {
-          "title": "CNBC: Preise +0,4 %, mehr als erwartet (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
-        },
-        {
-          "title": "CNBC: Waller zu 50 Basispunkten (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html"
-        },
-        {
-          "title": "BLS: Termine Verbraucherpreisindex",
-          "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
-        },
-        {
-          "title": "CNBC: Was der Oktober-CPI zeigen soll (9.11.)",
-          "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html"
-        },
-        {
-          "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
-        },
-        {
-          "title": "Dow Jones/MarketScreener: Tagesvorschau Di 10.11. (Konsens CPI)",
-          "url": "https://at.marketscreener.com/boerse-nachrichten/tagesvorschau-dienstag-10-november-ce785edad98df724"
-        },
-        {
-          "title": "Investing.com: Was die Märkte bewegen (10.11.)",
-          "url": "https://www.investing.com/news/economy-news/us-inflation-data-ahead-huang-scandal-fallout--whats-moving-markets-5014413"
-        },
-        {
-          "title": "Yahoo/Stocktwits: US-Futures gemischt vor CPI (10.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-mixed-investors-102051723.html"
-        },
-        {
-          "title": "dpa-AFX/onvista: Dax nähert sich Rekordhoch (10.11.)",
-          "url": "https://www.onvista.de/news/2026/11-10-aktien-frankfurt-weiter-auf-erholungskurs-dax-naehert-sich-rekordhoch-0-10-26574579"
-        },
-        {
-          "title": "CNBC: S&P leicht schwächer, Nasdaq +0,1 % nach CPI (10.11., 10:04 ET)",
-          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq Composite (Schluss 10.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "title": "Economic Times: Liveblog Wall Street 10.11. (Deutsche Bank)",
-          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-anthropic-ipo-nvidia-intel-marvell-tech-ai-chip-stocks-inflation-fed-rate-hike-treasury-bond-yield-news-10th-november-2026/liveblog/135712173.cms"
+          "title": "TeslaNorth: Grok 4.8 soll diese Woche kommen (10.11.)",
+          "url": "https://teslanorth.com/2026/11/10/grok-4-8-coming-this-week-rebuild/"
         }
       ]
     },
     {
       "id": "evt-falcon9-ussf627",
-      "title": "SpaceX: Falcon-9-Start USSF-627 für die Space Force (verschoben auf Mi 03:49)",
-      "date": "2026-11-11",
-      "time": "03:49",
+      "title": "SpaceX: Falcon-9-Start USSF-627 für die Space Force (verschoben auf Do 03:35)",
+      "date": "2026-11-12",
+      "time": "03:35",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -614,7 +47,7 @@
       ],
       "probabilityPct": 80,
       "impact": "niedrig",
-      "reasoning": "Stand Di 05:20: SpaceX-Missionsseite bestätigt Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Siebter Flug der Erststufe, Landung auf der Drohnenschiff „Of Course I Still Love You“. 80 % unverändert für einen Start im Fenster: Routine von derselben Rampe, die erste Verschiebung kam ohne Begründung. Kurswirkung gering.",
+      "reasoning": "Stand Di 05:20: SpaceX-Missionsseite bestätigt Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Siebter Flug der Erststufe, Landung auf der Drohnenschiff „Of Course I Still Love You“. 80 % unverändert für einen Start im Fenster: Routine von derselben Rampe, die erste Verschiebung kam ohne Begründung. Kurswirkung gering. Stand Mi 05:00: Wieder um einen Tag verschoben, jetzt Mi 11.11. 18:35 PT (bei uns Do 12.11. 03:35–07:35), Backup Do 18:21 PT (Fr 03:21 Berlin). Fünfte Verschiebung, Status laut Launch Library „Go“. 80 % unverändert für einen Start in diesem Fenster oder dem Backup.",
       "example": false,
       "sources": [
         {
@@ -628,60 +61,10 @@
         {
           "title": "Next Spaceflight: USSF-627",
           "url": "https://nextspaceflight.com/launches/details/8446/"
-        }
-      ]
-    },
-    {
-      "id": "evt-falcon9-ussf317",
-      "title": "SpaceX: Falcon-9-Start USSF-317 für die Space Force (verschoben auf Sa 05:09)",
-      "date": "2026-11-14",
-      "time": "05:09",
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "start",
-      "company": "SpaceX",
-      "tickers": [
-        "SPCX"
-      ],
-      "probabilityPct": 75,
-      "impact": "niedrig",
-      "reasoning": "SpaceX zielt jetzt auf Freitag 13.11., Vier-Stunden-Fenster ab 20:09 Uhr Ortszeit Vandenberg (in Berlin Sa 14.11. 05:09), Ersatz Samstag 19:55 Ortszeit. Vorher stand Donnerstag 20:23 Ortszeit. Dritter Space-Force-Start binnen gut einer Woche von derselben Rampe, deshalb Turnaround-Risiko. Kurswirkung gering.",
-      "example": false,
-      "sources": [
-        {
-          "title": "SpaceX: USSF-317 Mission",
-          "url": "https://www.spacex.com/launches/ussf317"
         },
         {
-          "title": "Next Spaceflight: USSF-317",
-          "url": "https://nextspaceflight.com/launches/details/8335/"
-        }
-      ]
-    },
-    {
-      "id": "evt-falcon9-ussf266",
-      "title": "SpaceX: Falcon-9-Start USSF-266 für die Space Force",
-      "date": "2026-11-17",
-      "time": "17:58",
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "start",
-      "company": "SpaceX",
-      "tickers": [
-        "SPCX"
-      ],
-      "probabilityPct": 75,
-      "impact": "niedrig",
-      "reasoning": "SpaceX zielt auf Dienstag 17.11., Vier-Stunden-Fenster ab 08:58 Uhr Ortszeit Vandenberg (17:58 Berlin), Ersatz Mittwoch 08:49 Ortszeit. Booster fliegt zum 29. Mal. Vierter Space-Force-Start von SLC-4E in kurzer Folge, deshalb 75 % für den Zieltag. Kurswirkung gering.",
-      "example": false,
-      "sources": [
-        {
-          "title": "SpaceX: USSF-266 Mission",
-          "url": "https://www.spacex.com/launches/ussf266"
-        },
-        {
-          "title": "SpaceX: Startliste",
-          "url": "https://www.spacex.com/launches/starship"
+          "title": "Space Launch Live: USSF-627 auf 12.11. 02:35 UTC verschoben",
+          "url": "https://spacelaunchlive.com/launches/falcon-9-block-5-ussf-627/"
         }
       ]
     },
@@ -728,7 +111,7 @@
       ],
       "probabilityPct": 65,
       "impact": "hoch",
-      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert.",
+      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -794,6 +177,37 @@
         {
           "title": "FAA: SpaceX Starship Super Heavy Project (Stand 10.11.)",
           "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15 (pending regulatory approval)",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
+        }
+      ]
+    },
+    {
+      "id": "evt-falcon9-ussf317",
+      "title": "SpaceX: Falcon-9-Start USSF-317 für die Space Force (verschoben auf Sa 05:09)",
+      "date": "2026-11-14",
+      "time": "05:09",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "start",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 75,
+      "impact": "niedrig",
+      "reasoning": "SpaceX zielt jetzt auf Freitag 13.11., Vier-Stunden-Fenster ab 20:09 Uhr Ortszeit Vandenberg (in Berlin Sa 14.11. 05:09), Ersatz Samstag 19:55 Ortszeit. Vorher stand Donnerstag 20:23 Ortszeit. Dritter Space-Force-Start binnen gut einer Woche von derselben Rampe, deshalb Turnaround-Risiko. Kurswirkung gering.",
+      "example": false,
+      "sources": [
+        {
+          "title": "SpaceX: USSF-317 Mission",
+          "url": "https://www.spacex.com/launches/ussf317"
+        },
+        {
+          "title": "Next Spaceflight: USSF-317",
+          "url": "https://nextspaceflight.com/launches/details/8335/"
         }
       ]
     },
@@ -833,54 +247,29 @@
       ]
     },
     {
-      "id": "evt-anthropic-ipo",
-      "title": "Anthropic: Börsengang an der Nasdaq (Preis 18.11., Handel ab Do 19.11.)",
-      "date": "2026-11-19",
-      "end": "2026-11-20",
-      "time": null,
+      "id": "evt-falcon9-ussf266",
+      "title": "SpaceX: Falcon-9-Start USSF-266 für die Space Force",
+      "date": "2026-11-17",
+      "time": "17:58",
       "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "index",
-      "company": "Anthropic",
+      "kind": "company",
+      "category": "start",
+      "company": "SpaceX",
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 85,
-      "impact": "mittel",
-      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms.",
+      "probabilityPct": 75,
+      "impact": "niedrig",
+      "reasoning": "SpaceX zielt auf Dienstag 17.11., Vier-Stunden-Fenster ab 08:58 Uhr Ortszeit Vandenberg (17:58 Berlin), Ersatz Mittwoch 08:49 Ortszeit. Booster fliegt zum 29. Mal. Vierter Space-Force-Start von SLC-4E in kurzer Folge, deshalb 75 % für den Zieltag. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
-          "title": "Anthropic: Start der Roadshow (10.11.)",
-          "url": "https://www.anthropic.com/news/roadshow-launch"
+          "title": "SpaceX: USSF-266 Mission",
+          "url": "https://www.spacex.com/launches/ussf266"
         },
         {
-          "title": "CNBC: Preisspanne 70–78 $, Handel ab 19.11. (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
-        },
-        {
-          "title": "India Today/Reuters: Roadshow am 10.11., Preis nächste Woche",
-          "url": "https://www.indiatoday.in/business/story/anthropic-ipo-withdraws-filing-69-billion-fundraise-report-3036003-2026-11-10"
-        },
-        {
-          "title": "Investing.com: Was die Märkte bewegt (10.11.)",
-          "url": "https://www.investing.com/news/economy-news/us-inflation-data-ahead-huang-scandal-fallout--whats-moving-markets-5014413"
-        },
-        {
-          "title": "FinanceFeeds: Anthropic-Roadshow ohne Preisspanne (9.11.)",
-          "url": "https://financefeeds.com/anthropic-ipo-date-roadshow-week-arrives-with-no-price-range-on-file/"
-        },
-        {
-          "title": "Bloomberg Law: Anthropic zieht Unterlage mit IPO-Ziel zurück (10.11.)",
-          "url": "https://news.bloomberglaw.com/capital-markets/anthropic-seeks-to-raise-69-3-billion-via-its-ipo-reuters-says"
-        },
-        {
-          "title": "Reuters/TradingView: Roadshow nächste Woche (The Information)",
-          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46N49G:0-anthropic-to-proceed-with-ipo-roadshow-next-week-the-information/"
-        },
-        {
-          "title": "@elonmusk: The most entertaining outcome",
-          "url": "https://x.com/elonmusk/status/2119989362725396589"
+          "title": "SpaceX: Startliste",
+          "url": "https://www.spacex.com/launches/starship"
         }
       ]
     },
@@ -1032,6 +421,58 @@
       ]
     },
     {
+      "id": "evt-anthropic-ipo",
+      "title": "Anthropic: Börsengang an der Nasdaq (Preis 18.11., Handel ab Do 19.11.)",
+      "date": "2026-11-19",
+      "end": "2026-11-20",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "index",
+      "company": "Anthropic",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 85,
+      "impact": "mittel",
+      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Anthropic: Start der Roadshow (10.11.)",
+          "url": "https://www.anthropic.com/news/roadshow-launch"
+        },
+        {
+          "title": "CNBC: Preisspanne 70–78 $, Handel ab 19.11. (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+        },
+        {
+          "title": "India Today/Reuters: Roadshow am 10.11., Preis nächste Woche",
+          "url": "https://www.indiatoday.in/business/story/anthropic-ipo-withdraws-filing-69-billion-fundraise-report-3036003-2026-11-10"
+        },
+        {
+          "title": "Investing.com: Was die Märkte bewegt (10.11.)",
+          "url": "https://www.investing.com/news/economy-news/us-inflation-data-ahead-huang-scandal-fallout--whats-moving-markets-5014413"
+        },
+        {
+          "title": "FinanceFeeds: Anthropic-Roadshow ohne Preisspanne (9.11.)",
+          "url": "https://financefeeds.com/anthropic-ipo-date-roadshow-week-arrives-with-no-price-range-on-file/"
+        },
+        {
+          "title": "Bloomberg Law: Anthropic zieht Unterlage mit IPO-Ziel zurück (10.11.)",
+          "url": "https://news.bloomberglaw.com/capital-markets/anthropic-seeks-to-raise-69-3-billion-via-its-ipo-reuters-says"
+        },
+        {
+          "title": "Reuters/TradingView: Roadshow nächste Woche (The Information)",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46N49G:0-anthropic-to-proceed-with-ipo-roadshow-next-week-the-information/"
+        },
+        {
+          "title": "@elonmusk: The most entertaining outcome",
+          "url": "https://x.com/elonmusk/status/2119989362725396589"
+        }
+      ]
+    },
+    {
       "id": "evt-tesla-argentina-nov",
       "title": "Tesla: Marktstart Argentinien (20. November, Unicenter)",
       "date": "2026-11-20",
@@ -1098,6 +539,37 @@
         {
           "title": "@elonmusk: Cybertruck/Cybercab Kapazität",
           "url": "https://x.com/elonmusk/status/2118591788701421573"
+        }
+      ]
+    },
+    {
+      "id": "evt-fcc-grain-800mhz",
+      "title": "FCC: Frist für Stellungnahmen zum SpaceX-Kauf der 800-MHz-Frequenzen von Grain",
+      "date": "2026-12-01",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "regulierung",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 95,
+      "impact": "mittel",
+      "reasoning": "Die FCC hat am 10.11. die Anträge zur Übernahme der landesweiten 800-MHz-Lizenzen (546 Lizenzpaare) von Grain durch SpaceX zur Prüfung angenommen (DA-26-1218, Docket 26-313). Stellungnahmen bis 1.12., Erwiderungen bis 8.12.; danach entscheidet die Behörde. Die Frequenzen sollen Starlink Mobile ein eigenes Netz am Boden und aus dem All geben. 95 %: Fristen stehen in der Bekanntmachung, nur eine Verlängerung würde sie verschieben. Eine Genehmigung ist damit noch nicht gegeben.",
+      "example": false,
+      "sources": [
+        {
+          "title": "FCC Public Notice DA-26-1218: SpaceX-Grain-Anträge angenommen (10.11.)",
+          "url": "https://pubt.io/view/C06697C9A177EC6A53A2EE8AF9D15878F3F059D5"
+        },
+        {
+          "title": "FCC EDOCS: DA-26-1218, Stellungnahmen bis 1.12., Erwiderungen bis 8.12.",
+          "url": "https://nexusbroadcast.com/fcc-edocs"
+        },
+        {
+          "title": "@elonmusk teilt Meldung zur FCC-Annahme (10.11., 23:11)",
+          "url": "https://x.com/elonmusk/status/2120278105051042195"
         }
       ]
     },
@@ -1313,6 +785,35 @@
       ]
     },
     {
+      "id": "evt-us-shutdown-risiko",
+      "title": "USA: Übergangshaushalt läuft am 11. Dezember aus (Risiko Regierungsstillstand)",
+      "date": "2026-12-11",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "politik",
+      "company": "US-Kongress",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 25,
+      "impact": "mittel",
+      "reasoning": "Die Regierung ist per Übergangsgesetz nur bis 11. Dezember finanziert. Die 25 % sind meine Schätzung, dass es tatsächlich zu einem Stillstand kommt: Der alte Kongress sitzt noch bis Januar, die Demokraten haben nach ihrem Sieg wenig Grund zu Zugeständnissen, aber kurze Übergangslösungen sind die Regel. Ein Stillstand würde Behörden bremsen, die für uns zählen: FAA-Lizenzen (Starship), SEC und Konjunkturdaten.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Congress.gov (CRS): Übergangshaushalt FY2027 bis 11. Dezember",
+          "url": "https://www.congress.gov/crs-product/R49353"
+        },
+        {
+          "title": "Holland & Knight: Fristen des Kongresses zum Jahresende",
+          "url": "https://www.hklaw.com/en/insights/publications/2026/10/beyond-the-midterms-congress-faces-converging-year-end-deadlines"
+        }
+      ]
+    },
+    {
       "id": "evt-russell-rebalance-dez",
       "title": "Russell-Indexanpassung: SpaceX im Russell 1000 Growth (Goldman: >10 Mrd. $ passive Käufe)",
       "date": "2026-12-11",
@@ -1340,35 +841,6 @@
         {
           "title": "LSEG: Russell Reconstitution",
           "url": "https://www.lseg.com/en/ftse-russell/russell-reconstitution"
-        }
-      ]
-    },
-    {
-      "id": "evt-us-shutdown-risiko",
-      "title": "USA: Übergangshaushalt läuft am 11. Dezember aus (Risiko Regierungsstillstand)",
-      "date": "2026-12-11",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "politik",
-      "company": "US-Kongress",
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB"
-      ],
-      "probabilityPct": 25,
-      "impact": "mittel",
-      "reasoning": "Die Regierung ist per Übergangsgesetz nur bis 11. Dezember finanziert. Die 25 % sind meine Schätzung, dass es tatsächlich zu einem Stillstand kommt: Der alte Kongress sitzt noch bis Januar, die Demokraten haben nach ihrem Sieg wenig Grund zu Zugeständnissen, aber kurze Übergangslösungen sind die Regel. Ein Stillstand würde Behörden bremsen, die für uns zählen: FAA-Lizenzen (Starship), SEC und Konjunkturdaten.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Congress.gov (CRS): Übergangshaushalt FY2027 bis 11. Dezember",
-          "url": "https://www.congress.gov/crs-product/R49353"
-        },
-        {
-          "title": "Holland & Knight: Fristen des Kongresses zum Jahresende",
-          "url": "https://www.hklaw.com/en/insights/publications/2026/10/beyond-the-midterms-congress-faces-converging-year-end-deadlines"
         }
       ]
     },
@@ -1778,7 +1250,7 @@
     },
     {
       "id": "evt-coreweave-q3",
-      "title": "CoreWeave: Zahlen Q3 2026 (nach US-Schluss)",
+      "title": "CoreWeave: Zahlen Q3 2026 — veröffentlicht, über den Erwartungen, Prognose erhöht",
       "date": "2026-11-10",
       "time": "23:00",
       "timezone": "Europe/Berlin",
@@ -1789,9 +1261,9 @@
         "SPCX",
         "MRVL"
       ],
-      "probabilityPct": 97,
+      "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Offiziell: Telefonkonferenz am Di 10.11. um 17:00 Uhr ET (= 23:00 Berlin), die Zahlen kommen davor nach US-Schluss (CoreWeave). Der KI-Cloud-Anbieter gilt als Gradmesser für die Rechenzentrums-Ausgaben, die vorige Woche nach der US-Wahl in Zweifel gerieten. Das trifft die KI-Geschichte von SpaceX (Rechenzentren) und Marvell (Netzwerkchips). 97 %: fester Firmentermin. Stand 22:15: Noch keine veröffentlichten Zahlen gefunden. Aktie schloss bei 48,73 $ (Yahoo). Erwartet: Umsatz etwa 3,54 Mrd. $, Verlust etwa 1,54 $ je Aktie; im Blick steht vor allem die Finanzierung des Ausbaus (Investing.com).",
+      "reasoning": "Offiziell: Telefonkonferenz am Di 10.11. um 17:00 Uhr ET (= 23:00 Berlin), die Zahlen kommen davor nach US-Schluss (CoreWeave). Der KI-Cloud-Anbieter gilt als Gradmesser für die Rechenzentrums-Ausgaben, die vorige Woche nach der US-Wahl in Zweifel gerieten. Das trifft die KI-Geschichte von SpaceX (Rechenzentren) und Marvell (Netzwerkchips). 97 %: fester Firmentermin. Stand 22:15: Noch keine veröffentlichten Zahlen gefunden. Aktie schloss bei 48,73 $ (Yahoo). Erwartet: Umsatz etwa 3,54 Mrd. $, Verlust etwa 1,54 $ je Aktie; im Blick steht vor allem die Finanzierung des Ausbaus (Investing.com). Ergebnis: Umsatz 3,66 Mrd. $ (+168 %, erwartet etwa 3,55 Mrd. $), bereinigter Verlust 0,95 $ je Aktie statt erwarteter 1,16 $ (LSEG via CNBC), Nettoverlust 709 Mio. $ wegen 846 Mio. $ Zinsen. Jahresziel Umsatz auf 13,0–13,3 Mrd. $ erhöht, Auftragsbestand 132,5 Mrd. $ (Juni: 104,2 Mrd. $), rund 9 Mrd. $ Kundenvorauszahlungen in den nächsten drei Monaten (CoreWeave). Aktie nachbörslich bis 02:00 Uhr +7,9 % auf 52,58 $ (Yahoo); Nasdaq-100-Future am Mittwochmorgen rund +1,2 %, Asiens Börsen zogen mit (Bloomberg).",
       "example": false,
       "sources": [
         {
@@ -1809,40 +1281,32 @@
         {
           "title": "Investing.com: CoreWeave vor den Zahlen (10.11.)",
           "url": "https://www.investing.com/analysis/coreweave-earnings-can-ai-revenue-growth-justify-its-mounting-debt-burden-200691291"
-        }
-      ]
-    },
-    {
-      "id": "evt-grok48-rollout",
-      "title": "SpaceX SI: Grok 4.8 – vorsichtiger erster Start (Musk: „später diese Woche“)",
-      "date": "2026-11-12",
-      "end": "2026-11-15",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "produkt",
-      "company": "SpaceX (SI, ehemals xAI)",
-      "tickers": [
-        "SPCX"
-      ],
-      "probabilityPct": 50,
-      "impact": "niedrig",
-      "reasoning": "Musk am 10.11. auf X: Vortraining fertig, Code neu in C/C++, Grok 4.8 steckt im RL-Training und soll später diese Woche vorsichtig für erste Nutzer starten. Er nennt es selbst „noch nicht unglaublich“. 50 %, weil Musks KI-Termine oft rutschen und RL-Ergebnisse erst kommen. Kurswirkung auf SPCX gering, eher ein Stimmungsfaktor.",
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk: Grok 4.8 soft rollout later this week (10.11.)",
-          "url": "https://x.com/elonmusk/status/2120088070443655190"
         },
         {
-          "title": "SpaceX SI Docs: Release Notes",
-          "url": "https://docs.x.ai/developers/release-notes"
+          "title": "CoreWeave: Ergebnisse Q3 2026 (10.11.)",
+          "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx"
+        },
+        {
+          "title": "CNBC: CoreWeave Q3 (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html"
+        },
+        {
+          "title": "Yahoo Finance: CoreWeave nachbörslich bis +8 % (10.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/crwv-stock-climbs-8-hours-220940004.html"
+        },
+        {
+          "title": "Yahoo Finance: CRWV (Schluss 10.11. und Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/CRWV/"
+        },
+        {
+          "title": "Bloomberg/swissinfo: Asiens Börsen steigen nach CoreWeave (11.11.)",
+          "url": "https://www.swissinfo.ch/eng/asian-stocks-rise-on-ai-enthusiasm%2c-bonds-decline%3a-markets-wrap/92360800"
         }
       ]
     },
     {
       "id": "evt-firefly-q3",
-      "title": "Firefly Aerospace: Zahlen Q3 2026 (nach US-Schluss)",
+      "title": "Firefly Aerospace: Zahlen Q3 2026 — veröffentlicht, Rekordumsatz, höherer Verlust, Alpha erst 2027",
       "date": "2026-11-10",
       "time": "23:00",
       "timezone": "Europe/Berlin",
@@ -1852,9 +1316,9 @@
       "tickers": [
         "RKLB"
       ],
-      "probabilityPct": 97,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "Offiziell: Telefonkonferenz am Di 10.11. um 17:00 Uhr ET (= 23:00 Berlin), Zahlen davor nach US-Schluss (Firefly). Der Raketen-Konkurrent ist nach den RKLB-Zahlen ein zweiter Stimmungstest für kleine Raumfahrtwerte. 97 %: fester Firmentermin. Stand 22:15: Noch keine veröffentlichten Zahlen gefunden, Aktie schloss bei 23,70 $ (Yahoo).",
+      "reasoning": "Offiziell: Telefonkonferenz am Di 10.11. um 17:00 Uhr ET (= 23:00 Berlin), Zahlen davor nach US-Schluss (Firefly). Der Raketen-Konkurrent ist nach den RKLB-Zahlen ein zweiter Stimmungstest für kleine Raumfahrtwerte. 97 %: fester Firmentermin. Stand 22:15: Noch keine veröffentlichten Zahlen gefunden, Aktie schloss bei 23,70 $ (Yahoo). Ergebnis: Umsatz 110,7 Mio. $ (+259 %), Auftragsbestand 1,7 Mrd. $, Jahresziel 440–450 Mio. $ (vorher 420–450). Verlust 75,4 Mio. $ bzw. 0,45 $ je Aktie, erwartet waren etwa 0,09 $ (Investing.com). Alpha Flight 8 rutscht auf Q1 2027; mit AST SpaceMobile ein Triebwerksvertrag über mehr als 1,3 Mrd. $ (Firefly, MarketBeat). FLY nachbörslich 23,12 $ (−2,4 %), RKLB nachbörslich −1,4 % (Yahoo).",
       "example": false,
       "sources": [
         {
@@ -1872,6 +1336,225 @@
         {
           "title": "Yahoo Finance: FLY",
           "url": "https://finance.yahoo.com/quote/FLY/"
+        },
+        {
+          "title": "Firefly Aerospace: Ergebnisse Q3 2026 (GlobeNewswire, 10.11.)",
+          "url": "https://www.globenewswire.com/news-release/2026/11/10/3400229/0/en/firefly-aerospace-announces-third-quarter-2026-financial-results-with-record-backlog-of-1-7-billion.html"
+        },
+        {
+          "title": "Investing.com: Firefly Q3 – Verlust höher, Aktie fällt (10.11.)",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-firefly-aerospace-q3-2026-loss-widens-as-stock-falls-93CH-5017336"
+        },
+        {
+          "title": "MarketBeat/Yahoo: Was Firefly im Q3-Call sagte (Alpha Flight 8 in Q1 2027)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/firefly-aerospace-fly-said-q3-021441989.html"
+        },
+        {
+          "title": "Yahoo Finance: RKLB (Schluss 10.11. und Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        }
+      ]
+    },
+    {
+      "id": "evt-us-cpi-okt",
+      "title": "USA: Verbraucherpreise (CPI) Oktober — veröffentlicht: +0,4 %, Kern +0,3 % (heißer als erwartet)",
+      "date": "2026-11-10",
+      "time": "14:30",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "makro",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 100,
+      "impact": "mittel",
+      "reasoning": "Ergebnis 14:30: Verbraucherpreise +0,4 % zum Vormonat (erwartet +0,3 %, September +0,6 %), Kernrate +0,3 % (erwartet +0,2 %), Energie +0,7 %, Wohnen +0,3 %; Jahresraten fehlen wegen des Shutdowns 2025 (BLS, CNBC). Beide Werte über Konsens: Das stützt die Zinserhöhung im Dezember. Reaktion: 10-jährige US-Rendite +8 Basispunkte auf 4,95 %, Nasdaq zur Eröffnung −0,9 %, um 10:04 New York aber schon +0,1 %; Nvidia −3 % (CNBC). Mittags New York kippte die Erholung: um 17:58 Berlin Nasdaq −1,3 %, Nvidia −6,6 %, 10-jährige Rendite 5,0 % (Yahoo, CNBC). Fed-Gouverneur Waller sagte vorab, bei höheren Werten sollte die Fed sogar 50 Basispunkte erwägen (CNBC). Vorher: Offizieller BLS-Termin, letzter CPI vor der Fed-Sitzung am 8./9.12. Konsens (Dow Jones): +0,3 % zum Vormonat, Kernrate +0,2 % (September +0,6 % / +0,3 %). Eine offizielle Jahresrate gibt es diesmal nicht, weil im Shutdown 2025 Daten fehlen; BofA schätzt sie auf etwa 3,8 % und Kern 2,7 % (CNBC). Der Terminmarkt preist laut CME FedWatch 84 % für eine Zinserhöhung im Dezember (Investing.com/Reuters). BofA: nur ein klar weicher Wert von +0,1 % würde die Erhöhung noch abwenden. Ein heißer Wert trifft teure Wachstumswerte wie SPCX, TSLA und RKLB zuerst. Danach sprechen um 16:50 Dallas-Fed-Präsidentin Logan und um 19:30 Kansas-City-Fed-Präsident Schmid. Stand Di Vormittag: Dow-Futures +0,35 %, S&P-Futures +0,1 %, Nasdaq-100-Futures −0,3 %, Brent 90,6 $ nach Trumps Iran-Aussage (Yahoo/Stocktwits). DAX mittags +1,2 % nahe Rekord (dpa-AFX). Schluss 22:00: Nasdaq −0,7 % auf 25.065,88, S&P 500 −0,4 % auf 7.521,11, Nvidia −5,5 % auf 168,80 $ (Yahoo). Deutsche Bank erwartet nach den Daten eine weitere Erhöhung im Januar 2027 (Economic Times).",
+      "example": false,
+      "sources": [
+        {
+          "title": "BLS: Verbraucherpreise Oktober 2026 (10.11.)",
+          "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+        },
+        {
+          "title": "CNBC: Preise +0,4 %, mehr als erwartet (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
+        },
+        {
+          "title": "CNBC: Waller zu 50 Basispunkten (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html"
+        },
+        {
+          "title": "BLS: Termine Verbraucherpreisindex",
+          "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+        },
+        {
+          "title": "CNBC: Was der Oktober-CPI zeigen soll (9.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html"
+        },
+        {
+          "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
+        },
+        {
+          "title": "Dow Jones/MarketScreener: Tagesvorschau Di 10.11. (Konsens CPI)",
+          "url": "https://at.marketscreener.com/boerse-nachrichten/tagesvorschau-dienstag-10-november-ce785edad98df724"
+        },
+        {
+          "title": "Investing.com: Was die Märkte bewegen (10.11.)",
+          "url": "https://www.investing.com/news/economy-news/us-inflation-data-ahead-huang-scandal-fallout--whats-moving-markets-5014413"
+        },
+        {
+          "title": "Yahoo/Stocktwits: US-Futures gemischt vor CPI (10.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-mixed-investors-102051723.html"
+        },
+        {
+          "title": "dpa-AFX/onvista: Dax nähert sich Rekordhoch (10.11.)",
+          "url": "https://www.onvista.de/news/2026/11-10-aktien-frankfurt-weiter-auf-erholungskurs-dax-naehert-sich-rekordhoch-0-10-26574579"
+        },
+        {
+          "title": "CNBC: S&P leicht schwächer, Nasdaq +0,1 % nach CPI (10.11., 10:04 ET)",
+          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq Composite (Schluss 10.11.)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "title": "Economic Times: Liveblog Wall Street 10.11. (Deutsche Bank)",
+          "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-anthropic-ipo-nvidia-intel-marvell-tech-ai-chip-stocks-inflation-fed-rate-hike-treasury-bond-yield-news-10th-november-2026/liveblog/135712173.cms"
+        }
+      ]
+    },
+    {
+      "id": "evt-hensoldt-cmd",
+      "title": "Hensoldt: Kapitalmarkttag — 6 Mrd. € Umsatz 2030 bestätigt, 10 Mrd. € für 2035",
+      "date": "2026-11-10",
+      "time": "08:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "unternehmen",
+      "company": "Hensoldt",
+      "tickers": [
+        "HAG.DE"
+      ],
+      "probabilityPct": 100,
+      "impact": "niedrig",
+      "reasoning": "Stattgefunden: Hensoldt bestätigt die Umsatzambition von 6 Mrd. € für 2030 und nennt erstmals 10 Mrd. € für 2035; 2027/2028 jeweils 15–20 % Umsatzwachstum, bereinigte EBITDA-Marge bis 2030 von rund 19 auf rund 21 % (EQS-News). Deutschland-Tab. Für SPCX, TSLA und RKLB ohne direkte Bedeutung.",
+      "example": false,
+      "sources": [
+        {
+          "title": "EQS-News/finanzen.net: Hensoldt-Kapitalmarkttag (10.11.)",
+          "url": "https://www.finanzen.net/nachricht/aktien/eqs-news-kapitalmarkttag-hensoldt-best-tigt-umsatzambition-von-6-milliarden-euro-f-r-2030-und-strebt-10-milliarden-euro-f-r-2035-an-16052240"
+        },
+        {
+          "title": "Dow Jones/MarketScreener: Tagesvorschau Di 10.11.",
+          "url": "https://at.marketscreener.com/boerse-nachrichten/tagesvorschau-dienstag-10-november-ce785edad98df724"
+        }
+      ]
+    },
+    {
+      "id": "evt-softbank-q2-fy26",
+      "title": "SoftBank Group: Zahlen Q2 (Tokio) — veröffentlicht, Nettoverlust",
+      "date": "2026-11-10",
+      "time": "07:30",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "earnings",
+      "company": "SoftBank Group",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 100,
+      "impact": "niedrig",
+      "reasoning": "Veröffentlicht: Im Quartal Juli–September Nettoverlust von 1,12 Bio. Yen (rund 7 Mrd. $) nach 2,5 Bio. Yen Gewinn im Vorjahr; Umsatz 2,22 Bio. Yen über der LSEG-Schätzung von 2,02 Bio. Yen (CNBC). Im Halbjahr belastete u. a. ein Verlust von 597,2 Mrd. Yen aus der Neuordnung der Kraftwerks-Bestellungen für US-KI-Rechenzentren (SoftBank-Finanzbericht). Die Aktie schloss vor den Zahlen 13,9 % höher und hob den Nikkei allein um rund 380 Punkte; der Nikkei schloss +2,87 % bei 60.459,58, Topix +1,98 % (Nikkei). Die Reaktion auf den Verlust zeigt sich erst am Mittwoch in Tokio. Für SpaceX mit xAI ein indirekter Stimmungstest für KI-Werte.",
+      "example": false,
+      "sources": [
+        {
+          "title": "CNBC: SoftBank mit 7 Mrd. $ Nettoverlust im Q2 (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html"
+        },
+        {
+          "title": "SoftBank Group: Finanzbericht Halbjahr bis 30.9.2026",
+          "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_en.pdf"
+        },
+        {
+          "title": "Nikkei: Nikkei schließt bei 60.459 (+1.684) (10.11.)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL100KF0Q6A111C2000000/"
+        },
+        {
+          "title": "SoftBank Group: Earnings Results Q2 FY2026",
+          "url": "https://group.softbank/en/event/earnings_2026q2"
+        }
+      ]
+    },
+    {
+      "id": "evt-infineon-gj26",
+      "title": "Infineon: Jahreszahlen 2026 — veröffentlicht, Ausblick ~20 Mrd. €",
+      "date": "2026-11-10",
+      "time": "07:30",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "earnings",
+      "company": "Infineon",
+      "tickers": [
+        "IFX.DE"
+      ],
+      "probabilityPct": 100,
+      "impact": "mittel",
+      "reasoning": "Veröffentlicht: Q4 Umsatz 4,706 Mrd. € (Konsens 4,69), Segmentmarge 23,8 %, bereinigtes EPS 0,60 € (Konsens 0,62). Ausblick 2027: rund 20 Mrd. € Umsatz (+über 20 %, Konsens 19,81 Mrd. €), davon knapp 4 Mrd. € Stromversorgung für Rechenzentren, Segmentmarge im mittleren 20er-Bereich. Dagegen: Free Cashflow nur ~1,8 Mrd. € statt erwarteter 2,26 Mrd. €, Investitionen 3,0–3,5 Mrd. € (Infineon, Investing.com). Dividende soll auf 0,38 € steigen. Vorbörslich +4,6 % auf 50,86 € (ad-hoc-news). Stimmungstest für KI- und Chipwerte vor der US-Eröffnung; Deutschland-Tab.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Infineon/MarketScreener: Rekordquartal, Ausblick GJ 2027 (10.11.)",
+          "url": "https://in.marketscreener.com/news/infineon-closes-fy-2026-with-record-quarter-expects-revenue-growth-of-more-than-20-percent-and-a-5-ce785edad889f524"
+        },
+        {
+          "title": "Investing.com: Infineon-Ausblick über Erwartung, Cashflow enttäuscht (10.11.)",
+          "url": "https://de.investing.com/news/earnings/infineon-ubertrifft-dank-kinachfrage-umsatzprognose-fur-gj27--cashflow-enttauscht-3758214"
+        },
+        {
+          "title": "ad-hoc-news: Infineon vorbörslich +4,61 % auf 50,86 € (10.11.)",
+          "url": "https://www.ad-hoc-news.de/boerse/news/vorboerse/infineon-stock-at-eur-50-86-up-4-61-prozent-premarket/70484424"
+        },
+        {
+          "title": "Infineon: Investor Relations",
+          "url": "https://www.infineon.com/de/about/investor"
+        }
+      ]
+    },
+    {
+      "id": "evt-us-jobs-okt",
+      "title": "USA: Arbeitsmarktbericht Oktober (veröffentlicht)",
+      "date": "2026-11-06",
+      "time": "14:30",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "makro",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 100,
+      "impact": "hoch",
+      "reasoning": "Veröffentlicht 6.11. 14:30 Berlin: +165.000 Nonfarm-Payrolls (Konsens ~59–65k), Arbeitslosenquote 4,1 % (Konsens 4,2 %), Löhne +0,4 % MoM / +3,1 % YoY. August auf 186k und September auf 60k nach oben revidiert. Breites Wachstum (Professional Services +70k, Health Care +42k). Starker Bericht: CME FedWatch erhöhte die Chance auf eine 25-bp-Zinsanhebung im Dezember auf rund 77 %. Laut CNBC blieb die Sofortreaktion an den Futures gemischt, Treasuries höher.",
+      "example": false,
+      "sources": [
+        {
+          "title": "BLS: Employment Situation October 2026",
+          "url": "https://www.bls.gov/news.release/empsit.htm"
+        },
+        {
+          "title": "CNBC: +165k Jobs, Arbeitslosigkeit 4,1 %",
+          "url": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+        },
+        {
+          "title": "AP: Überraschend starke Payrolls",
+          "url": "https://apnews.com/article/jobs-inflation-paycheck-salary-employment-746ee02db33d0372980f815ada33d8d3"
         }
       ]
     }
