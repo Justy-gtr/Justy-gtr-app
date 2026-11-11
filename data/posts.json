@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-11T05:15:00+01:00",
+  "asOf": "2026-11-11T07:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -51,11 +51,15 @@
     "RKLB": {
       "score": 0.1,
       "label": "gemischt",
-      "summary": "Nach +6,5 % am Dienstag nachbörslich leicht schwächer (61,84 $). Rocket Lab feiert ESCAPADE auf Marskurs und zeigt die goldene Electron für Start 100 (Sa 14.11.). Konkurrent Firefly verschiebt den nächsten Alpha-Start auf Q1 2027.",
+      "summary": "Nach +6,5 % am Dienstag nachbörslich leicht schwächer (61,84 $). Rocket Lab feiert die ESCAPADE-Sonden auf Marskurs – laut Firma eine Premiere für das doppelte Schwungholen an der Erde – und zeigt die goldene Electron für Start 100 (Sa 14.11.). Konkurrent Firefly verschiebt den nächsten Alpha-Start auf Q1 2027.",
       "sources": [
         {
-          "title": "@RocketLab: ESCAPADE-Sonden auf dem Weg zum Mars (10.11.)",
-          "url": "https://x.com/RocketLab/status/2120266023589102049"
+          "title": "@RocketLab: Blue und Gold – zwei Swing-by-Manöver an der Erde (11.11., 05:03)",
+          "url": "https://x.com/RocketLab/status/2120366714374475968"
+        },
+        {
+          "title": "Rocket Lab: ESCAPADE-Satelliten auf Marskurs",
+          "url": "https://rocketlabcorp.com/updates/twin-satellites-built-by-rocket-lab-for-nasas-escapade-mission-complete-successful-trans-mars-injection-burns-setting-course-for-the-red-planet/"
         },
         {
           "title": "@RocketLab: Electron im Gold-Look für Start 100 (10.11.)",
@@ -73,6 +77,33 @@
     }
   },
   "posts": [
+    {
+      "id": "post-rocketlab-2120366714374475968",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-11T05:03:13+01:00",
+      "summaryDe": "Rocket Lab: Die ESCAPADE-Sonden Blue und Gold haben im Abstand von zwei Tagen je ein angetriebenes Schwungholen an der Erde geflogen und damit Kurs auf den Mars genommen. Rocket Lab nennt das „interplanetare Geschichte“ und eine Premiere für dieses schwierige Manöver; Ankunft am Mars ist für 2027 geplant.",
+      "originalText": "Our spacecraft just made interplanetary history - twice. Blue & Gold flawlessly executed powered Earth gravity assists, two days apart, to slingshot our planet and shoot for Mars' orbit. This is the first time the highly complex maneuver has been executed successfully by …",
+      "url": "https://x.com/RocketLab/status/2120366714374475968",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: Blue und Gold – zwei Swing-by-Manöver an der Erde (11.11., 05:03)",
+          "url": "https://x.com/RocketLab/status/2120366714374475968"
+        },
+        {
+          "title": "Rocket Lab: ESCAPADE-Satelliten auf Marskurs",
+          "url": "https://rocketlabcorp.com/updates/twin-satellites-built-by-rocket-lab-for-nasas-escapade-mission-complete-successful-trans-mars-injection-burns-setting-course-for-the-red-planet/"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2120302471210033426",
       "account": "@elonmusk",

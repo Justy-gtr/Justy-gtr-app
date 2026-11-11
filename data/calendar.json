@@ -47,7 +47,7 @@
       ],
       "probabilityPct": 80,
       "impact": "niedrig",
-      "reasoning": "Stand Di 05:20: SpaceX-Missionsseite bestätigt Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Siebter Flug der Erststufe, Landung auf der Drohnenschiff „Of Course I Still Love You“. 80 % unverändert für einen Start im Fenster: Routine von derselben Rampe, die erste Verschiebung kam ohne Begründung. Kurswirkung gering. Stand Mi 05:00: Wieder um einen Tag verschoben, jetzt Mi 11.11. 18:35 PT (bei uns Do 12.11. 03:35–07:35), Backup Do 18:21 PT (Fr 03:21 Berlin). Fünfte Verschiebung, Status laut Launch Library „Go“. 80 % unverändert für einen Start in diesem Fenster oder dem Backup.",
+      "reasoning": "Stand Di 05:20: SpaceX-Missionsseite bestätigt Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Siebter Flug der Erststufe, Landung auf der Drohnenschiff „Of Course I Still Love You“. 80 % unverändert für einen Start im Fenster: Routine von derselben Rampe, die erste Verschiebung kam ohne Begründung. Kurswirkung gering. Stand Mi 05:00: Wieder um einen Tag verschoben, jetzt Mi 11.11. 18:35 PT (bei uns Do 12.11. 03:35–07:35), Backup Do 18:21 PT (Fr 03:21 Berlin). Fünfte Verschiebung, Status laut Launch Library „Go“. 80 % unverändert für einen Start in diesem Fenster oder dem Backup. Stand Mi 07:00: Termin Do 03:35 Berlin bestätigt, Status um 06:45 erneut „Go“ (Launch Library). 80 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -65,6 +65,29 @@
         {
           "title": "Space Launch Live: USSF-627 auf 12.11. 02:35 UTC verschoben",
           "url": "https://spacelaunchlive.com/launches/falcon-9-block-5-ussf-627/"
+        }
+      ]
+    },
+    {
+      "id": "evt-cisco-amat-q",
+      "title": "Cisco und Applied Materials: Quartalszahlen (nach US-Börsenschluss)",
+      "date": "2026-11-12",
+      "time": "22:05",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "earnings",
+      "company": null,
+      "tickers": [
+        "MRVL"
+      ],
+      "probabilityPct": 95,
+      "impact": "mittel",
+      "reasoning": "Beide Firmen haben ihren Termin selbst angekündigt: Zahlen am Do 12.11. nach US-Börsenschluss, Telefonkonferenzen jeweils 16:30 ET (22:30 Berlin). Cisco rechnet für das Geschäftsjahr 2027 mit rund 7,5 Mrd. $ KI-Infrastruktur-Umsatz mit Hyperscalern, Applied Materials ist ein Gradmesser für Chip-Investitionen. Nach CoreWeave ist das das nächste Signal für KI-Netzwerk- und Chipwerte wie Marvell, vor Nvidia am 17.11. 95 %: Termine sind bestätigt; die genaue Veröffentlichungsminute ist geschätzt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Week ahead 9.–13.11.: Cisco und Applied Materials Do nach Börsenschluss",
+          "url": "https://news.futureredirect.com/en/news/week-ahead-november-9-2026-cpi-earnings-congress"
         }
       ]
     },
@@ -111,7 +134,7 @@
       ],
       "probabilityPct": 65,
       "impact": "hoch",
-      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert.",
+      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert. Stand Mi 07:00: Weiter keine Lizenz auf der FAA-Seite, SpaceX schreibt weiter „pending regulatory approval“. 65 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -435,7 +458,7 @@
       ],
       "probabilityPct": 85,
       "impact": "mittel",
-      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms.",
+      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms. Stand Mi 07:00: Fidelity nennt für Privatkunden Zeichnungsende Di 17.11. 16:00 ET (22:00 Berlin) und die Preisfestsetzung am Abend des 18.11.; das stützt den Handelsstart am 19.11. 85 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -469,6 +492,10 @@
         {
           "title": "@elonmusk: The most entertaining outcome",
           "url": "https://x.com/elonmusk/status/2119989362725396589"
+        },
+        {
+          "title": "Fidelity: Anthropic-IPO – Zeichnungsende 17.11., Preis am Abend des 18.11.",
+          "url": "https://www.fidelity.com/learning-center/trading-investing/anthropic-ipo-explained"
         }
       ]
     },
@@ -668,7 +695,7 @@
       ],
       "probabilityPct": 98,
       "impact": "hoch",
-      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen. Stand 9.11.: Der Markt preist laut CME FedWatch mit über 80 % eine Zinserhöhung ein (Reuters), gestützt vom starken Oktober-Arbeitsmarkt. Stand 10.11.: Oktober-CPI mit +0,4 % und Kernrate +0,3 % jeweils 0,1 Punkte über Konsens (BLS). Waller ist für eine Erhöhung im Dezember und brachte bei heißen Daten 50 Basispunkte ins Spiel (CNBC). Am Fr 13.11. folgen die Erzeugerpreise. Stand 17:58: Die 10-jährige US-Rendite stieg um mehr als 14 Basispunkte auf 5,004 %, die 2-jährige um über 20 Basispunkte auf 4,755 % (CNBC). Dallas-Fed-Präsidentin Logan fordert mindestens zwei weitere Erhöhungen um je 25 Basispunkte, im Winter womöglich schneller (Investing.com). Goldman Sachs AM: Erhöhung im Dezember ist Basisfall, weitere 2027 möglich (CNBC). Stand 20:00: Laut Handelsblatt ist eine Erhöhung im Dezember nun voll eingepreist, rund 90 % rechnen mit 25 Basispunkten auf 4,0–4,25 %, rund 10 % mit 50 Basispunkten. 98 % unverändert, das gilt dem Termin selbst.",
+      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen. Stand 9.11.: Der Markt preist laut CME FedWatch mit über 80 % eine Zinserhöhung ein (Reuters), gestützt vom starken Oktober-Arbeitsmarkt. Stand 10.11.: Oktober-CPI mit +0,4 % und Kernrate +0,3 % jeweils 0,1 Punkte über Konsens (BLS). Waller ist für eine Erhöhung im Dezember und brachte bei heißen Daten 50 Basispunkte ins Spiel (CNBC). Am Fr 13.11. folgen die Erzeugerpreise. Stand 17:58: Die 10-jährige US-Rendite stieg um mehr als 14 Basispunkte auf 5,004 %, die 2-jährige um über 20 Basispunkte auf 4,755 % (CNBC). Dallas-Fed-Präsidentin Logan fordert mindestens zwei weitere Erhöhungen um je 25 Basispunkte, im Winter womöglich schneller (Investing.com). Goldman Sachs AM: Erhöhung im Dezember ist Basisfall, weitere 2027 möglich (CNBC). Stand 20:00: Laut Handelsblatt ist eine Erhöhung im Dezember nun voll eingepreist, rund 90 % rechnen mit 25 Basispunkten auf 4,0–4,25 %, rund 10 % mit 50 Basispunkten. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 07:00: Fed-Vizechefin Bowman sagte am Abend, bei der Inflation sei „noch Arbeit zu tun“, ohne ausdrücklich eine Erhöhung zu fordern (Fed, Reuters). Trading Economics nennt rund 91 % Wahrscheinlichkeit für eine Erhöhung im Dezember. 98 % unverändert, das gilt dem Termin selbst.",
       "example": false,
       "sources": [
         {
@@ -694,6 +721,18 @@
         {
           "title": "Handelsblatt: Inflationsdaten belasten Wall Street (10.11.)",
           "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-inflationsdaten-belasten-wall-street-nvidia-aktien-verlieren/100268787.html"
+        },
+        {
+          "title": "Federal Reserve: Rede Bowman (10.11.)",
+          "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm"
+        },
+        {
+          "title": "Reuters/Investing.com: Bowman – „noch Arbeit zu tun“ bei der Inflation (10.11.)",
+          "url": "https://www.investing.com/news/economy-news/feds-bowman-says-still-work-to-do-on-inflation-5016718"
+        },
+        {
+          "title": "Trading Economics: US-Futures steigen nach CoreWeave (11.11.)",
+          "url": "https://tradingeconomics.com/united-states/stock-market/news/600218"
         }
       ]
     },
