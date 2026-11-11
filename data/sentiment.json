@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T15:11:00+01:00",
+  "updatedAt": "2026-11-11T15:55:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -8,
-      "postsCount": 34,
-      "reason": "SpaceX: Kurs fällt vorbörslich, weil Anthropic laut Berichten den GPU-Mietvertrag 2027 beenden will. Fans verweisen auf den Qualcomm-Funkdeal und das KI-Rack.",
+      "score": -10,
+      "postsCount": 25,
+      "reason": "SpaceX: Viele sorgen sich, weil Anthropic den GPU-Vertrag 2027 beenden will. Fans sagen, die Rechenleistung ist gefragt, und hoffen auf Starship-Flug 15.",
       "sources": [
         {
           "title": "Anthropic will GPU-Vertrag beenden (Bericht)",
           "url": "https://x.com/BradMunchen/status/2120517312038244555"
         },
         {
-          "title": "SPCX vorbörslich rund 5 $ tiefer",
-          "url": "https://x.com/DRJBori63/status/2120517127434068415"
+          "title": "Bulle: SpaceX bekommt knappe Rechenleistung zurück",
+          "url": "https://x.com/SpaceInvestor_D/status/2120521788094398847"
         },
         {
-          "title": "SPCX fällt wegen Anthropic-Aussagen",
-          "url": "https://x.com/sspencer_smb/status/2120518576071180477"
+          "title": "Hoffnung auf Starship-Flug 15",
+          "url": "https://x.com/amerigir12/status/2120529834699030988"
         }
       ],
-      "updatedAt": "2026-11-11T15:11:00+01:00"
+      "updatedAt": "2026-11-11T15:55:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 32,
-      "postsCount": 20,
-      "reason": "Tesla: Viele teilen die Fahrassistent-Zulassung in Finnland, die EU-Abstimmung folgt. Vorbörslich rund 2 % im Plus. Kritik an verpassten Robotaxi-Zielen bleibt.",
+      "score": 30,
+      "postsCount": 15,
+      "reason": "Tesla: Rund 2 % im Plus nach Börsenstart, Optionshändler setzen vor allem auf steigende Kurse. Die Finnland-Zulassung wird weiter geteilt, Kritiker bleiben laut.",
       "sources": [
+        {
+          "title": "TSLA-Optionen vor allem Calls",
+          "url": "https://x.com/InsiderFinancex/status/2120530007483187373"
+        },
+        {
+          "title": "S&P-Heatmap: TSLA +2 %",
+          "url": "https://x.com/alphatradingpro/status/2120529949861769607"
+        },
         {
           "title": "Finnland erlaubt Tesla-Fahrassistent",
           "url": "https://x.com/tenet_research/status/2120464477460279749"
-        },
-        {
-          "title": "Finnland: 11. Land mit FSD",
-          "url": "https://x.com/hout1213/status/2120479844047917237"
-        },
-        {
-          "title": "Vorbörse +2 %, Robotaxi-Kritik",
-          "url": "https://x.com/QuantAlphaXXX/status/2120465950545723429"
         }
       ],
-      "updatedAt": "2026-11-11T15:11:00+01:00"
+      "updatedAt": "2026-11-11T15:55:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 24,
-      "postsCount": 22,
-      "reason": "Rocket Lab: Freude über Rekordumsatz, volle Neutron-Auftragsbücher und höhere Startpreise. Needham und Morgan Stanley senken die Kursziele etwas, bleiben aber positiv.",
+      "score": 22,
+      "postsCount": 12,
+      "reason": "Rocket Lab: Viele verteidigen die Aktie nach den Zahlen, die Neutron-Verspätung sei überbewertet. Andere fragen nach Geldbedarf und Verwässerung.",
       "sources": [
+        {
+          "title": "Warum der Markt bei RKLB falsch liegt",
+          "url": "https://x.com/VanquishTrader/status/2120528525736505787"
+        },
+        {
+          "title": "Frage nach Geldbedarf für Neutron",
+          "url": "https://x.com/fresh1142362193/status/2120529420805083303"
+        },
         {
           "title": "Needham: Kursziel 100 $ statt 120 $",
           "url": "https://x.com/SpacBobby/status/2120498980362850576"
-        },
-        {
-          "title": "Morgan Stanley: Kursziel 103 $",
-          "url": "https://x.com/SpacBobby/status/2120478301219352577"
-        },
-        {
-          "title": "Höhere Preise für Electron und Neutron",
-          "url": "https://x.com/PhilipTortora/status/2120495524931416292"
         }
       ],
-      "updatedAt": "2026-11-11T15:11:00+01:00"
+      "updatedAt": "2026-11-11T15:55:00+01:00"
     }
   }
 }
