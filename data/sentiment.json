@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-10T16:40:00+01:00",
+  "updatedAt": "2026-11-11T08:05:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gemischt",
-      "score": 20,
-      "postsCount": 10,
-      "reason": "SpaceX: Gesprochen wird über ARKs Zukäufe und Fidelitys kleineren Anteil. Manche erinnern daran, dass die Aktie seit dem Börsengang rund 5 % unter dem Ausgabepreis liegt.",
+      "mood": "gut",
+      "score": 35,
+      "postsCount": 15,
+      "reason": "SpaceX: Viel Lob für den Solar-Deal mit Singulus und Vorfreude auf Flight 15 mit doppeltem Fang. Eine große Put-Wette bis 27.11. sorgt für etwas Skepsis.",
       "sources": [
         {
-          "title": "Fidelity verkleinert Anteil um 17,9 %",
-          "url": "https://x.com/wallstengine/status/2120167024576090431"
+          "title": "Guten Morgen Europa: Singulus-Deal",
+          "url": "https://x.com/spcxGOD/status/2120398619341729879"
         },
         {
-          "title": "ARK kauft rund 96 Mio. $ nach",
-          "url": "https://x.com/soulehoward1/status/2120175532419727559"
+          "title": "Flight 15: erster doppelter Fang",
+          "url": "https://x.com/simesimu5/status/2120409001573671368"
         },
         {
-          "title": "Seit Börsengang rund 5 % im Minus",
-          "url": "https://x.com/RussFaigen/status/2120177594813624510"
+          "title": "Put-Wette über 584.000 $",
+          "url": "https://x.com/TrackSmartMoney/status/2120400609740222938"
         }
       ],
-      "updatedAt": "2026-11-10T16:40:00+01:00"
+      "updatedAt": "2026-11-11T08:05:00+01:00"
     },
     "TSLA": {
-      "mood": "gemischt",
-      "score": 0,
-      "postsCount": 10,
-      "reason": "Tesla: Jefferies senkt das Kursziel auf 375 $. Cybertruck-Bestellungen gestoppt außer Cyberbeast. Positiv gesehen: Robotaxi neu in San Antonio und eine Solarfabrik bei Houston.",
+      "mood": "gut",
+      "score": 30,
+      "postsCount": 15,
+      "reason": "Tesla: Mehr Robotaxis in Texas registriert als Waymo (1.302 zu 1.297). Die SEC schließt den alten Funding-secured-Fonds. Cybertruck läuft aus, Fokus Cybercab.",
       "sources": [
         {
-          "title": "Jefferies-Ziel 400 auf 375 $",
-          "url": "https://x.com/HindsMarkets/status/2120177191468101797"
+          "title": "Texas-Register: Tesla vor Waymo",
+          "url": "https://x.com/sebaonwheels/status/2120411202215874850"
         },
         {
-          "title": "Cybertruck-Bestellstopp",
-          "url": "https://x.com/TeslaOracle_com/status/2120178219546808654"
+          "title": "SEC schließt Entschädigungsfonds",
+          "url": "https://x.com/tslaming/status/2120384942870036876"
         },
         {
-          "title": "Robotaxi in San Antonio",
-          "url": "https://x.com/Tarun6996420/status/2120178687454617732"
+          "title": "Cybertruck raus, Cybercab rein",
+          "url": "https://x.com/AashishAuti/status/2120407686596747322"
         }
       ],
-      "updatedAt": "2026-11-10T16:40:00+01:00"
+      "updatedAt": "2026-11-11T08:05:00+01:00"
     },
     "RKLB": {
-      "mood": "gemischt",
-      "score": 25,
-      "postsCount": 10,
-      "reason": "Rocket Lab: Freude, dass die Aktie nach dem Minus von über 7 % wieder ins Plus dreht. Lob für den Rekordumsatz von 268 Mio. $, Sorge wegen Neutron erst 2027.",
+      "mood": "gut",
+      "score": 40,
+      "postsCount": 15,
+      "reason": "Rocket Lab: Freude über 150 Mio. $ Pentagon-Kredit und die Mars-Sonden auf Kurs. Gestern +6,5 %. Manche finden die Bewertung (38-facher Umsatz) zu hoch.",
       "sources": [
         {
-          "title": "Nach −7 % wieder im Plus",
-          "url": "https://x.com/broisquant/status/2120177258631500122"
+          "title": "Pentagon-Kredit 150 Mio. $",
+          "url": "https://x.com/zotpaper/status/2120411336924680493"
         },
         {
-          "title": "Rekordumsatz und Auftragsbestand",
-          "url": "https://x.com/KeithTradeSmith/status/2120177662404571565"
+          "title": "Mars-Sonden nach Erdvorbeiflug",
+          "url": "https://x.com/augustcool/status/2120392360529932547"
         },
         {
-          "title": "Risiko: Neutron erst 2027",
-          "url": "https://x.com/FlyingCabbageB/status/2120178204191428876"
+          "title": "Bewertung: 38-facher Umsatz",
+          "url": "https://x.com/myrapath/status/2120381892952465686"
         }
       ],
-      "updatedAt": "2026-11-10T16:40:00+01:00"
+      "updatedAt": "2026-11-11T08:05:00+01:00"
     }
   }
 }
