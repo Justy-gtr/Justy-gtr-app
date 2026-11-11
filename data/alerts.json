@@ -247,8 +247,8 @@
       "id": "TSLA-2026-11-11",
       "symbol": "TSLA",
       "name": "Tesla",
-      "changePct": 2.82,
-      "priceEur": 346.35,
+      "changePct": 2.21,
+      "priceEur": 347.2,
       "thresholdPct": 2,
       "direction": "up",
       "timestamp": "2026-11-10T23:10:06.919Z",
@@ -260,8 +260,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/TSLA/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance TL0.DE",
-          "url": "https://finance.yahoo.com/quote/TL0.DE"
+          "title": "Yahoo Finance TL0.SG",
+          "url": "https://finance.yahoo.com/quote/TL0.SG"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -277,8 +277,8 @@
       "id": "MRVL-2026-11-11",
       "symbol": "MRVL",
       "name": "Marvell Technology",
-      "changePct": 8.78,
-      "priceEur": 150.92,
+      "changePct": 8.97,
+      "priceEur": 151.18,
       "thresholdPct": 2,
       "direction": "up",
       "timestamp": "2026-11-11T08:59:42.871Z",
@@ -304,32 +304,32 @@
       ]
     },
     {
-      "id": "RKLB-2026-11-11",
-      "symbol": "RKLB",
-      "name": "Rocket Lab",
-      "changePct": 3.6,
-      "priceEur": 57.5,
+      "id": "SPCX-2026-11-11",
+      "symbol": "SPCX",
+      "name": "SpaceX",
+      "changePct": 2.51,
+      "priceEur": 130.86,
       "thresholdPct": 2,
       "direction": "up",
-      "timestamp": "2026-11-11T09:59:47.072Z",
+      "timestamp": "2026-11-11T13:34:11.865Z",
       "notified": false,
       "example": false,
       "sources": [
         {
-          "title": "Alpaca Markets IEX RKLB",
-          "url": "https://data.alpaca.markets/v2/stocks/RKLB/snapshot?feed=iex"
+          "title": "Alpaca Markets IEX SPCX",
+          "url": "https://data.alpaca.markets/v2/stocks/SPCX/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance 6RJ0.F",
-          "url": "https://finance.yahoo.com/quote/6RJ0.F"
+          "title": "Yahoo Finance SPX.SG",
+          "url": "https://finance.yahoo.com/quote/SPX.SG"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
           "url": "https://finance.yahoo.com/quote/EURUSD=X"
         },
         {
-          "title": "Yahoo Finance RKLB",
-          "url": "https://finance.yahoo.com/quote/RKLB"
+          "title": "Yahoo Finance SPCX",
+          "url": "https://finance.yahoo.com/quote/SPCX"
         }
       ]
     }
