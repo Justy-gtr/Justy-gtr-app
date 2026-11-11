@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T16:33:00+01:00",
+  "updatedAt": "2026-11-11T16:37:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -5,
-      "postsCount": 22,
-      "reason": "SpaceX: Kurs um 145 $. Fans sehen das Anthropic-Gerücht als Analystennotiz ohne Bestätigung. Neu: Pentagon zahlt 9,9 Mio. $ für eine Starlink-Laserstudie.",
+      "score": -15,
+      "postsCount": 24,
+      "reason": "SpaceX: Kurs rutscht wieder ab, rund 3 % im Minus und einer der größten Verlierer. Das Anthropic-Gerücht drückt, Fans halten es für eine unbestätigte Analystennotiz.",
       "sources": [
         {
-          "title": "Pentagon-Studie zu Starlink-Lasern",
-          "url": "https://x.com/JoshSharp/status/2120537459620540741"
+          "title": "SPCX -3,3 %, größter Verlierer",
+          "url": "https://x.com/spon2016/status/2120540613619929504"
         },
         {
           "title": "Anthropic-Gerücht aus Analystennotizen",
           "url": "https://x.com/spcxGOD/status/2120537489702019213"
         },
         {
-          "title": "Warnung vor Bullenfalle bei 145 $",
-          "url": "https://x.com/0x_Discover/status/2120536530326327412"
+          "title": "Pentagon-Studie zu Starlink-Lasern",
+          "url": "https://x.com/JoshSharp/status/2120537459620540741"
         }
       ],
-      "updatedAt": "2026-11-11T16:33:00+01:00"
+      "updatedAt": "2026-11-11T16:37:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,7 +43,7 @@
           "url": "https://x.com/ChrisHuRocks/status/2120539656454291503"
         }
       ],
-      "updatedAt": "2026-11-11T16:33:00+01:00"
+      "updatedAt": "2026-11-11T16:37:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/retail_mourinho/status/2120536724497420562"
         }
       ],
-      "updatedAt": "2026-11-11T16:33:00+01:00"
+      "updatedAt": "2026-11-11T16:37:00+01:00"
     }
   }
 }
