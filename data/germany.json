@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-11T19:26:54.424Z",
+  "asOf": "2026-11-11T20:57:37.904Z",
   "knockoutsAsOf": "2026-11-10",
   "timezone": "Europe/Berlin",
   "window": "09:00-10:30",
@@ -461,7 +461,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-SMA-Solar"
         }
       ],
-      "asOf": "2026-11-11T19:26:51.640Z"
+      "asOf": "2026-11-11T20:57:35.958Z"
     },
     {
       "symbol": "AIXA.DE",
@@ -1019,7 +1019,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Aixtron"
         }
       ],
-      "asOf": "2026-11-11T19:26:51.889Z"
+      "asOf": "2026-11-11T20:57:36.092Z"
     },
     {
       "symbol": "SMHN.DE",
@@ -1552,7 +1552,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-SUSS-MicroTec"
         }
       ],
-      "asOf": "2026-11-11T19:26:52.264Z"
+      "asOf": "2026-11-11T20:57:36.400Z"
     },
     {
       "symbol": "HFG.DE",
@@ -1985,7 +1985,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-HelloFresh"
         }
       ],
-      "asOf": "2026-11-11T19:26:52.434Z"
+      "asOf": "2026-11-11T20:57:36.527Z"
     },
     {
       "symbol": "AG1.DE",
@@ -2538,7 +2538,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-AUTO1-GROUP-SE"
         }
       ],
-      "asOf": "2026-11-11T19:26:52.617Z"
+      "asOf": "2026-11-11T20:57:36.660Z"
     },
     {
       "symbol": "EVT.DE",
@@ -2946,7 +2946,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Evotec"
         }
       ],
-      "asOf": "2026-11-11T19:26:52.056Z"
+      "asOf": "2026-11-11T20:57:36.227Z"
     },
     {
       "symbol": "HAG.DE",
@@ -3475,7 +3475,7 @@
       ],
       "morning": {
         "avgPct": 3,
-        "maxPct": 8.9,
+        "maxPct": 9,
         "maxDay": "2026-11-05",
         "n": 21
       },
@@ -3504,7 +3504,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-HENSOLDT-AG"
         }
       ],
-      "asOf": "2026-11-11T19:26:52.821Z"
+      "asOf": "2026-11-11T20:57:36.800Z"
     },
     {
       "symbol": "RHM.DE",
@@ -3529,7 +3529,7 @@
         834.4,
         834.5,
         829.6,
-        831.2,
+        831.4,
         830.8,
         831.8,
         831.7,
@@ -3566,7 +3566,7 @@
         823.1,
         824.2,
         823.6,
-        823.4,
+        823.3,
         823,
         822.9,
         820.3,
@@ -3684,7 +3684,7 @@
         },
         {
           "t": "2026-11-11T09:20:00.000Z",
-          "eur": 831.2
+          "eur": 831.4
         },
         {
           "t": "2026-11-11T09:25:00.000Z",
@@ -3832,7 +3832,7 @@
         },
         {
           "t": "2026-11-11T12:25:00.000Z",
-          "eur": 823.4
+          "eur": 823.3
         },
         {
           "t": "2026-11-11T12:30:00.000Z",
@@ -4062,7 +4062,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Rheinmetall"
         }
       ],
-      "asOf": "2026-11-11T19:26:53.206Z"
+      "asOf": "2026-11-11T20:57:37.113Z"
     },
     {
       "symbol": "R3NK.DE",
@@ -4620,7 +4620,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-RENK-GROUP-AG"
         }
       ],
-      "asOf": "2026-11-11T19:26:53.949Z"
+      "asOf": "2026-11-11T20:57:37.646Z"
     },
     {
       "symbol": "TMV.DE",
@@ -5084,7 +5084,7 @@
       ],
       "morning": {
         "avgPct": 2.8,
-        "maxPct": 12.7,
+        "maxPct": 12.6,
         "maxDay": "2026-11-03",
         "n": 21
       },
@@ -5113,7 +5113,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-TeamViewer-SE"
         }
       ],
-      "asOf": "2026-11-11T19:26:52.992Z"
+      "asOf": "2026-11-11T20:57:36.945Z"
     },
     {
       "symbol": "TKA.DE",
@@ -5666,7 +5666,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-ThyssenKrupp"
         }
       ],
-      "asOf": "2026-11-11T19:26:53.377Z"
+      "asOf": "2026-11-11T20:57:37.274Z"
     },
     {
       "symbol": "ZAL.DE",
@@ -6209,7 +6209,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Zalando"
         }
       ],
-      "asOf": "2026-11-11T19:26:53.761Z"
+      "asOf": "2026-11-11T20:57:37.522Z"
     },
     {
       "symbol": "NDX1.DE",
@@ -6767,7 +6767,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Nordex"
         }
       ],
-      "asOf": "2026-11-11T19:26:53.533Z"
+      "asOf": "2026-11-11T20:57:37.400Z"
     },
     {
       "symbol": "IFX.DE",
@@ -6865,7 +6865,7 @@
         51.79,
         51.83,
         51.62,
-        51.78,
+        51.77,
         51.69,
         51.73,
         51.8,
@@ -7239,7 +7239,7 @@
         },
         {
           "t": "2026-11-11T15:25:00.000Z",
-          "eur": 51.78
+          "eur": 51.77
         },
         {
           "t": "2026-11-11T15:30:00.000Z",
@@ -7325,7 +7325,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Infineon"
         }
       ],
-      "asOf": "2026-11-11T19:26:54.192Z"
+      "asOf": "2026-11-11T20:57:37.765Z"
     },
     {
       "symbol": "ENR.DE",
@@ -7418,7 +7418,7 @@
         127.86,
         128.92,
         129.5,
-        129.82,
+        129.8,
         129.68,
         129.72,
         129.9,
@@ -7777,7 +7777,7 @@
         },
         {
           "t": "2026-11-11T15:00:00.000Z",
-          "eur": 129.82
+          "eur": 129.8
         },
         {
           "t": "2026-11-11T15:05:00.000Z",
@@ -7855,7 +7855,7 @@
       "morning": {
         "avgPct": 2.3,
         "maxPct": 4.3,
-        "maxDay": "2026-11-06",
+        "maxDay": "2026-11-05",
         "n": 21
       },
       "trKnockouts": {
@@ -7883,7 +7883,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Siemens-Energy"
         }
       ],
-      "asOf": "2026-11-11T19:26:54.424Z"
+      "asOf": "2026-11-11T20:57:37.903Z"
     }
   ]
 }
