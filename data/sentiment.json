@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T16:28:00+01:00",
+  "updatedAt": "2026-11-11T16:33:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -22,28 +22,28 @@
           "url": "https://x.com/0x_Discover/status/2120536530326327412"
         }
       ],
-      "updatedAt": "2026-11-11T16:28:00+01:00"
+      "updatedAt": "2026-11-11T16:33:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 25,
-      "postsCount": 17,
-      "reason": "Tesla: Rund 2 % im Plus. Neu: Grünheide soll ab Mitte 2027 eigene 4680-Batteriezellen bauen. Einige Halter sorgen sich um alte HW3-Autos.",
+      "postsCount": 20,
+      "reason": "Tesla: Rund 2 % im Plus. Neu: Robotaxi startet in San Antonio, jetzt 8 Städte. Dazu Gespräche über Cybertruck-Ende in Texas bis 2027 und Zellen aus Grünheide.",
       "sources": [
+        {
+          "title": "Robotaxi startet in San Antonio",
+          "url": "https://x.com/CultFinance_/status/2120539549390753794"
+        },
         {
           "title": "Grünheide: eigene Zellen ab 2027",
           "url": "https://x.com/sebaonwheels/status/2120536778645885321"
         },
         {
-          "title": "Tesla-Aktie 400 $ bald?",
-          "url": "https://x.com/strengthPlan/status/2120527248004657437"
-        },
-        {
-          "title": "Sorge um schnellen Autonomie-Kurs",
-          "url": "https://x.com/SteelyDanMxmlst/status/2120524803027456454"
+          "title": "Widerstand bei 394 $",
+          "url": "https://x.com/ChrisHuRocks/status/2120539656454291503"
         }
       ],
-      "updatedAt": "2026-11-11T16:28:00+01:00"
+      "updatedAt": "2026-11-11T16:33:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/retail_mourinho/status/2120536724497420562"
         }
       ],
-      "updatedAt": "2026-11-11T16:28:00+01:00"
+      "updatedAt": "2026-11-11T16:33:00+01:00"
     }
   }
 }
