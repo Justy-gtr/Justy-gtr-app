@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T16:00:00+01:00",
+  "updatedAt": "2026-11-11T16:08:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -18,
+      "score": -15,
       "postsCount": 14,
-      "reason": "SpaceX: Kurs rund 3 % im Minus, viele sorgen sich wegen des Anthropic-Vertragsendes 2027. Fans verweisen auf Pentagon-Laserauftrag und FCC-Funkfrequenzen.",
+      "reason": "SpaceX: Kurs leicht im Minus, das Anthropic-Gerücht bleibt Thema. Dan Ives spricht von 20–25 % Politik-Abschlag. Fans hoffen auf Starship-Flug 15.",
       "sources": [
         {
-          "title": "SPCX größter Verlierer, rund -3 %",
-          "url": "https://x.com/spon2016/status/2120531549863158155"
+          "title": "Anthropic-Gerücht: Folgen für den Umsatz",
+          "url": "https://x.com/JaredKubin/status/2120528985071243744"
         },
         {
-          "title": "Anthropic will GPU-Vertrag beenden (Bericht)",
-          "url": "https://x.com/BradMunchen/status/2120517312038244555"
+          "title": "Dan Ives: 20–25 % Politik-Abschlag",
+          "url": "https://x.com/PatMcClain/status/2120532760259375486"
         },
         {
-          "title": "FCC prüft SpaceX-Funkfrequenzen",
-          "url": "https://x.com/realJosephF1288/status/2120531735134007652"
+          "title": "Flug 15 am Freitag im Blick",
+          "url": "https://x.com/TeslaLarry/status/2120528878372544804"
         }
       ],
-      "updatedAt": "2026-11-11T16:00:00+01:00"
+      "updatedAt": "2026-11-11T16:08:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 30,
+      "score": 25,
       "postsCount": 15,
-      "reason": "Tesla: Rund 2 % im Plus nach Börsenstart, Optionshändler setzen vor allem auf steigende Kurse. Die Finnland-Zulassung wird weiter geteilt, Kritiker bleiben laut.",
+      "reason": "Tesla: Rund 2 % im Plus, Fans reden wieder von 400 $. Viel Werbe-Spam, einige Halter sorgen sich wegen alter HW3-Autos und dem schnellen Autonomie-Kurs.",
       "sources": [
         {
-          "title": "TSLA-Optionen vor allem Calls",
-          "url": "https://x.com/InsiderFinancex/status/2120530007483187373"
+          "title": "Tesla-Aktie 400 $ bald?",
+          "url": "https://x.com/strengthPlan/status/2120527248004657437"
         },
         {
-          "title": "S&P-Heatmap: TSLA +2 %",
-          "url": "https://x.com/alphatradingpro/status/2120529949861769607"
+          "title": "Sorge um schnellen Autonomie-Kurs",
+          "url": "https://x.com/SteelyDanMxmlst/status/2120524803027456454"
         },
         {
-          "title": "Finnland erlaubt Tesla-Fahrassistent",
-          "url": "https://x.com/tenet_research/status/2120464477460279749"
+          "title": "Tesla auf Kurs zu 150 Mrd. $ Umsatz",
+          "url": "https://x.com/anthonysagami/status/2120519413925343691"
         }
       ],
-      "updatedAt": "2026-11-11T16:00:00+01:00"
+      "updatedAt": "2026-11-11T16:08:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 22,
-      "postsCount": 12,
-      "reason": "Rocket Lab: Viele verteidigen die Aktie nach den Zahlen, die Neutron-Verspätung sei überbewertet. Andere fragen nach Geldbedarf und Verwässerung.",
+      "score": 30,
+      "postsCount": 15,
+      "reason": "Rocket Lab: Rekordquartal wird gefeiert, Kurs zieht weiter an. Barclays und Morgan Stanley senken Kursziele leicht, bleiben aber positiv.",
       "sources": [
         {
-          "title": "Warum der Markt bei RKLB falsch liegt",
-          "url": "https://x.com/VanquishTrader/status/2120528525736505787"
+          "title": "Rekordumsatz 268 Mio. $ im Q3",
+          "url": "https://x.com/CoinMarketCap/status/2120509402843119990"
         },
         {
-          "title": "Frage nach Geldbedarf für Neutron",
-          "url": "https://x.com/fresh1142362193/status/2120529420805083303"
+          "title": "Morgan Stanley: Kursziel 103 $",
+          "url": "https://x.com/pharris667/status/2120511788470964380"
         },
         {
-          "title": "Needham: Kursziel 100 $ statt 120 $",
-          "url": "https://x.com/SpacBobby/status/2120498980362850576"
+          "title": "Antwort an FCC zu Globalstar-Einwänden",
+          "url": "https://x.com/SpaceSector001/status/2120530819944947825"
         }
       ],
-      "updatedAt": "2026-11-11T16:00:00+01:00"
+      "updatedAt": "2026-11-11T16:08:00+01:00"
     }
   }
 }
