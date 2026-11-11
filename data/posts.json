@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-11T09:00:00+01:00",
+  "asOf": "2026-11-11T09:50:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -77,6 +77,33 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2120432718639145404",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-11T09:25:30+01:00",
+      "summaryDe": "Musk wirbt für die neue Starlink Mini 2: tragbares, „blitzschnelles“ Internet überall auf der Erde, wo Starlink erlaubt ist. Er teilt damit den Starlink-Post vom Vorabend (bis zu 4,5 Stunden Akku, Vorbestellung offen); neue Zahlen oder ein Preis stehen nicht darin.",
+      "originalText": "Portable, lightning-fast Internet that works anywhere on Earth where Starlink is legal!",
+      "url": "https://x.com/elonmusk/status/2120432718639145404",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Starlink Mini 2 (11.11., 09:25)",
+          "url": "https://x.com/elonmusk/status/2120432718639145404"
+        },
+        {
+          "title": "@Starlink: Mini 2 vorgestellt (10.11.)",
+          "url": "https://x.com/Starlink/status/2120206875581186293"
+        }
+      ]
+    },
     {
       "id": "post-rocketlab-2120366714374475968",
       "account": "@RocketLab",
