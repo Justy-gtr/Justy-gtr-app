@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T10:20:00+01:00",
+  "updatedAt": "2026-11-11T12:36:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 38,
-      "postsCount": 18,
-      "reason": "SpaceX: Lob für den Singulus-Solardeal, Vorfreude auf Flight 15 und neu: ein eigenes KI-Rack „Kessel“ laut SemiAnalysis. Eine große Put-Wette sorgt für Skepsis.",
+      "score": 40,
+      "postsCount": 24,
+      "reason": "SpaceX: Begeisterung über die Morgan-Stanley-Notiz zu schnellen Rechenzentren, den Starbase-Plan für 24 Mrd. $ und den Singulus-Deal. Einige warnen vor Hebel-Risiken.",
       "sources": [
         {
-          "title": "SpaceX baut eigenes KI-Rack Kessel",
-          "url": "https://x.com/spcxGOD/status/2120445085305192761"
+          "title": "Morgan Stanley: Rechenzentren in 3–4 Monaten",
+          "url": "https://x.com/spcxGOD/status/2120471966733983858"
         },
         {
-          "title": "Guten Morgen Europa: Singulus-Deal",
-          "url": "https://x.com/spcxGOD/status/2120398619341729879"
+          "title": "Starbase: Kraftwerk und Rechenzentrum",
+          "url": "https://x.com/grok/status/2120465952118579541"
         },
         {
-          "title": "Flight 15: erster doppelter Fang",
-          "url": "https://x.com/simesimu5/status/2120409001573671368"
+          "title": "Singulus-Deal für SpaceX",
+          "url": "https://x.com/Michael94124642/status/2120471574612750518"
         }
       ],
-      "updatedAt": "2026-11-11T10:20:00+01:00"
+      "updatedAt": "2026-11-11T12:36:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 15,
-      "reason": "Tesla: Freude über die Fahrassistent-Zulassung in Finnland und mehr Robotaxis in Texas als Waymo. Dämpfer: Model Y fiel in China im Oktober auf Platz 33.",
+      "score": 32,
+      "postsCount": 20,
+      "reason": "Tesla: Viele teilen die Fahrassistent-Zulassung in Finnland, die EU-Abstimmung folgt. Vorbörslich rund 2 % im Plus. Kritik an verpassten Robotaxi-Zielen bleibt.",
       "sources": [
         {
-          "title": "Finnland erlaubt Tesla Assisted Driving",
-          "url": "https://x.com/BetTheDecade/status/2120423313453220232"
+          "title": "Finnland erlaubt Tesla-Fahrassistent",
+          "url": "https://x.com/tenet_research/status/2120464477460279749"
         },
         {
-          "title": "Mehr Robotaxis als Waymo in Texas",
-          "url": "https://x.com/CuriousPejjy/status/2120412755282841785"
+          "title": "Finnland: 11. Land mit FSD",
+          "url": "https://x.com/hout1213/status/2120479844047917237"
         },
         {
-          "title": "China Oktober: Model Y auf Platz 33",
-          "url": "https://x.com/CNEVhome/status/2120414723930009772"
+          "title": "Vorbörse +2 %, Robotaxi-Kritik",
+          "url": "https://x.com/QuantAlphaXXX/status/2120465950545723429"
         }
       ],
-      "updatedAt": "2026-11-11T09:02:00+01:00"
+      "updatedAt": "2026-11-11T12:36:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 15,
-      "reason": "Rocket Lab: Freude über 150 Mio. $ Pentagon-Kredit und den bald 100. Electron-Start. Ein Post meldet: Piper Sandler senkt das Kursziel von 83 auf 58 $.",
+      "score": 26,
+      "postsCount": 18,
+      "reason": "Rocket Lab: Freude über das Mars-Manöver und den höheren Neutron-Preis (70 Mio. $). Morgan Stanley senkt das Kursziel leicht auf 103 $, bleibt aber positiv.",
       "sources": [
         {
-          "title": "Pentagon-Kredit 150 Mio. $",
-          "url": "https://x.com/zotpaper/status/2120411336924680493"
+          "title": "Morgan Stanley: Kursziel 103 $",
+          "url": "https://x.com/SpacBobby/status/2120478301219352577"
         },
         {
-          "title": "Electron vor 100. Start",
-          "url": "https://x.com/RCapitalX/status/2120412991602778522"
+          "title": "Neutron kostet jetzt 70 Mio. $",
+          "url": "https://x.com/ReadFuturist/status/2120464296044065132"
         },
         {
-          "title": "Piper Sandler: Kursziel 58 $",
-          "url": "https://x.com/NGLSHMUELI/status/2120426388222087436"
+          "title": "Erfolgreiches Mars-Manöver",
+          "url": "https://x.com/Space2Terra/status/2120463455303909397"
         }
       ],
-      "updatedAt": "2026-11-11T09:02:00+01:00"
+      "updatedAt": "2026-11-11T12:36:00+01:00"
     }
   }
 }
