@@ -8895,66 +8895,70 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Auf Xetra um 09:30 bei 131,34 € (+3,0 % zum Xetra-Schluss 127,52 €; umgerechnet etwa 146,5 $ bei EUR/USD 1,1152 um 09:44, also rund 2,4 % über dem Nasdaq-Schluss von 143,09 $). Treiber ist der KI-Schwung nach CoreWeave, dazu Musks nächtliche Aussage zu Singulus-Anlagen für 100 GW Solarzellen pro Jahr (Singulus selbst nennt für die erste Linie über 60 Mio. €). Der Nasdaq-100-Future liegt um 09:34 rund 1,7 % höher (Yahoo), der Dax um 09:29 rund 1,0 % bei 26.603 Punkten, nur knapp unter dem Rekord von 26.693 (Handelsblatt). Treiber sind KI-Werte: CoreWeave hob nach starkem Quartal die Jahresprognose, dazu meldete das WSJ für OpenAI erstmals rund 10 Mrd. $ Quartalsumsatz. Gegenwind bleibt die Fed: Nach dem heißen US-CPI ist eine Zinserhöhung im Dezember weitgehend eingepreist. Dagegen: Ein US-Berufungsgericht ließ die Klage von acht entlassenen Ingenieuren gegen SpaceX vor einem ordentlichen Gericht zu (Reuters), und Dan Ives sieht 20–25 % „politischen Abschlag“ wegen Texas. Flight 15 (Fr 23:45) hat laut FAA-Seite noch keine Lizenz; USSF-627 startet Do 03:35.",
+      "why": "Auf Xetra um 11:23 bei 131,20 € (+2,9 % zum Xetra-Schluss 127,52 €; umgerechnet etwa 146,2 $ bei EUR/USD 1,1143, rund 2,2 % über dem Nasdaq-Schluss von 143,09 $); vorbörslich in New York 146,07 $ (+2,1 %). Der Nasdaq-100-Future liegt um 11:31 rund 1,8 % höher (Yahoo); KI-Hardware zieht vorbörslich breit an, Nvidia +3,6 %, AMD und Micron je +5,2 % (EconoTimes). Auslöser bleiben die erhöhte CoreWeave-Prognose und der WSJ-Bericht über rund 10 Mrd. $ OpenAI-Quartalsumsatz. Der Dax hat seinen Morgengewinn auf rund +0,6 % bei 26.518 Punkten halbiert (Yahoo, Handelsblatt). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Dazu kommen Musks nächtliche Aussage zu Singulus-Anlagen für 100 GW Solarzellen pro Jahr (Singulus selbst nennt für die erste Linie über 60 Mio. €) und ein kleiner Pentagon-Auftrag: Die Space Development Agency zahlt 9,9 Mio. $ (bis 12,7 Mio. $) für eine Studie zu SpaceX-Laserterminals in Raketenwarn-Satelliten (Defence Blog). Dagegen: Ein US-Berufungsgericht ließ die Klage von acht entlassenen Ingenieuren gegen SpaceX vor einem ordentlichen Gericht zu (Reuters), Dan Ives sieht 20–25 % „politischen Abschlag“ wegen Texas. Flight 15 (Fr 23:45) wartet weiter auf die FAA-Lizenz; USSF-627 startet Do 03:35.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPX.DE (11.11., 09:30)",
+          "title": "Yahoo Finance SPX.DE",
           "url": "https://finance.yahoo.com/quote/SPX.DE/"
         },
         {
-          "title": "Yahoo Finance: SPCX (Schluss 10.11.)",
+          "title": "Yahoo Finance SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Yahoo Finance: EURUSD=X (11.11., 09:44)",
+          "title": "Yahoo Finance EURUSD=X",
           "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         },
         {
-          "title": "@elonmusk: 100 GW/Jahr HJT-Anlagen von Singulus (11.11., 00:47)",
-          "url": "https://x.com/elonmusk/status/2120302471210033426"
-        },
-        {
-          "title": "Yahoo Finance: NQ=F (11.11., 09:34)",
+          "title": "Yahoo Finance: Nasdaq-100-Future",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Yahoo Finance: ^GDAXI (11.11., 09:29)",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+          "title": "EconoTimes: KI-Hardware vorbörslich fester (11.11.)",
+          "url": "https://econotimes.com/AI-Hardware-Shares-Rise-Before-U-S-Open-Led-by-Lumentum-s-8-4-Gain-1775122"
         },
         {
-          "title": "Handelsblatt: Dax nur knapp unter Rekordniveau – KI-Profiteure gewinnen (11.11., 09:19)",
-          "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-nur-knapp-unter-rekordniveau-ki-profiteure-gewinnen/100269009.html"
+          "title": "CNBC: CoreWeave nach Prognoseanhebung fester (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html"
         },
         {
-          "title": "XTB: Morning Wrap 11.11. – CoreWeave stützt Nasdaq",
-          "url": "https://www.xtb.com/en/market-analysis/morning-wrap-equity-indices-extend-rebound-coreweave-outlook-supports-nasdaq-11-11-2026"
-        },
-        {
-          "title": "Moneycontrol/Reuters: Nasdaq-Futures bis +1,5 % nach CoreWeave (11.11.)",
-          "url": "https://www.moneycontrol.com/news/business/markets/nasdaq-futures-rally-up-to-1-5-as-coreweave-results-lift-sentiment-14077102.html"
-        },
-        {
-          "title": "Reuters/Investing.com: OpenAI-Quartalsumsatz steigt auf 10 Mrd. $, Verluste wachsen (WSJ)",
+          "title": "Investing.com: OpenAI mit 10 Mrd. $ Quartalsumsatz (WSJ)",
           "url": "https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353"
         },
         {
-          "title": "Reuters/Dawn: Berufungsgericht – SpaceX muss sich Klage von acht Ingenieuren stellen (11.11.)",
+          "title": "Yahoo Finance: Dax",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+        },
+        {
+          "title": "Handelsblatt: Dax nur knapp unter Rekordniveau (11.11.)",
+          "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-nur-knapp-unter-rekordniveau-ki-profiteure-gewinnen/100269009.html"
+        },
+        {
+          "title": "CNBC: Dollar fester, FedWatch 91,9 % für Erhöhung im Dezember (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
+        },
+        {
+          "title": "@elonmusk: Singulus 100 GW/Jahr",
+          "url": "https://x.com/elonmusk/status/2120302471210033426"
+        },
+        {
+          "title": "Defence Blog: SDA-Auftrag über 9,9 Mio. $ für Starlink-Laser (11.11.)",
+          "url": "https://defence-blog.com/spacex-wins-pentagon-deal-to-test-starlink-lasers-for-missile-tracking/"
+        },
+        {
+          "title": "Reuters/Dawn: SpaceX muss sich Ingenieurs-Klage stellen",
           "url": "https://www.dawn.com/news/2043687"
         },
         {
-          "title": "Yahoo Finance: Dan Ives sieht 20–25 % „politischen Abschlag“ bei SpaceX (11.11.)",
+          "title": "Yahoo Finance: Ives sieht politischen Abschlag",
           "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-carries-25-political-064509750.html"
         },
         {
-          "title": "SpaceX: Starship Flight 15 (pending regulatory approval, Stand 11.11.)",
+          "title": "SpaceX: Starship Flight 15",
           "url": "https://www.spacex.com/launches/starship-flight-15"
         },
         {
-          "title": "FAA: SpaceX Starship Super Heavy Project (Stand 11.11.)",
-          "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
-        },
-        {
-          "title": "SpaceX: USSF-627 Mission",
+          "title": "SpaceX: USSF-627",
           "url": "https://www.spacex.com/launches/ussf627"
         }
       ],
@@ -21234,55 +21238,67 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Auf Xetra um 09:27 bei 346,35 € (+2,8 % zum Xetra-Schluss 336,85 €; umgerechnet etwa 386 $ bei EUR/USD 1,1152 um 09:44, rund 1,7 % über dem Nasdaq-Schluss von 379,78 $). Rückenwind: Finnland erlaubt Teslas „Assisted Driving“ (früher FSD Supervised) ab sofort, die EU-weite Entscheidung erwartet Traficom „im kommenden Winter“; das Robotaxi fährt seit 9.11. auch in San Antonio. In China lockt Tesla bis 30.11. mit 0-%-Finanzierung – ein Zeichen, dass die Nachfrage gestützt werden muss. Der Nasdaq-100-Future liegt um 09:34 rund 1,7 % höher (Yahoo), der Dax um 09:29 rund 1,0 % bei 26.603 Punkten, nur knapp unter dem Rekord von 26.693 (Handelsblatt). Treiber sind KI-Werte: CoreWeave hob nach starkem Quartal die Jahresprognose, dazu meldete das WSJ für OpenAI erstmals rund 10 Mrd. $ Quartalsumsatz. Gegenwind bleibt die Fed: Nach dem heißen US-CPI ist eine Zinserhöhung im Dezember weitgehend eingepreist.",
+      "why": "Auf Xetra um 11:25 bei 347,30 € (+3,1 % zum Xetra-Schluss 336,85 €; umgerechnet etwa 387 $ bei EUR/USD 1,1143, rund 1,9 % über dem Nasdaq-Schluss von 379,78 $); vorbörslich in New York 386,90 $ (+1,9 %). Der Nasdaq-100-Future liegt um 11:31 rund 1,8 % höher (Yahoo); KI-Hardware zieht vorbörslich breit an, Nvidia +3,6 %, AMD und Micron je +5,2 % (EconoTimes). Auslöser bleiben die erhöhte CoreWeave-Prognose und der WSJ-Bericht über rund 10 Mrd. $ OpenAI-Quartalsumsatz. Der Dax hat seinen Morgengewinn auf rund +0,6 % bei 26.518 Punkten halbiert (Yahoo, Handelsblatt). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Eigener Rückenwind: Finnland erlaubt Teslas „Assisted Driving“ ab sofort, die EU-weite Entscheidung steht aus (Reuters); das Robotaxi fährt seit 9.11. auch in San Antonio. Morgan Stanley hob das Kursziel von 400 auf 410 $ (Halten), Jefferies senkte zuvor von 400 auf 375 $. In China lockt Tesla bis 30.11. mit 0-%-Finanzierung – ein Zeichen, dass die Nachfrage gestützt werden muss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: TL0.DE (11.11., 09:27)",
+          "title": "Yahoo Finance TL0.DE",
           "url": "https://finance.yahoo.com/quote/TL0.DE/"
         },
         {
-          "title": "Yahoo Finance: TSLA (Schluss 10.11.)",
+          "title": "Yahoo Finance TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "Yahoo Finance: EURUSD=X (11.11., 09:44)",
+          "title": "Yahoo Finance EURUSD=X",
           "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         },
         {
-          "title": "Traficom: Teslas Assistenzsystem in Finnland zugelassen (11.11.)",
-          "url": "https://www.traficom.fi/en/news/teslas-driver-assistance-system-now-permitted-finnish-roads"
-        },
-        {
-          "title": "EVMagz: Tesla-Robotaxi startet in San Antonio, größeres Gebiet in Austin (11.11.)",
-          "url": "https://evmagz.com/tesla-expands-robotaxi-service-to-san-antonio-and-broadens-austin-coverage/"
-        },
-        {
-          "title": "GMT Eight: Tesla China startet 0-%-Finanzierung (11.11.)",
-          "url": "https://gmteight.com/flash/detail/1583573"
-        },
-        {
-          "title": "Yahoo Finance: NQ=F (11.11., 09:34)",
+          "title": "Yahoo Finance: Nasdaq-100-Future",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Yahoo Finance: ^GDAXI (11.11., 09:29)",
+          "title": "EconoTimes: KI-Hardware vorbörslich fester (11.11.)",
+          "url": "https://econotimes.com/AI-Hardware-Shares-Rise-Before-U-S-Open-Led-by-Lumentum-s-8-4-Gain-1775122"
+        },
+        {
+          "title": "CNBC: CoreWeave nach Prognoseanhebung fester (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html"
+        },
+        {
+          "title": "Investing.com: OpenAI mit 10 Mrd. $ Quartalsumsatz (WSJ)",
+          "url": "https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353"
+        },
+        {
+          "title": "Yahoo Finance: Dax",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         },
         {
-          "title": "Handelsblatt: Dax nur knapp unter Rekordniveau – KI-Profiteure gewinnen (11.11., 09:19)",
+          "title": "Handelsblatt: Dax nur knapp unter Rekordniveau (11.11.)",
           "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-nur-knapp-unter-rekordniveau-ki-profiteure-gewinnen/100269009.html"
         },
         {
-          "title": "XTB: Morning Wrap 11.11. – CoreWeave stützt Nasdaq",
-          "url": "https://www.xtb.com/en/market-analysis/morning-wrap-equity-indices-extend-rebound-coreweave-outlook-supports-nasdaq-11-11-2026"
+          "title": "CNBC: Dollar fester, FedWatch 91,9 % für Erhöhung im Dezember (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
         },
         {
-          "title": "Moneycontrol/Reuters: Nasdaq-Futures bis +1,5 % nach CoreWeave (11.11.)",
-          "url": "https://www.moneycontrol.com/news/business/markets/nasdaq-futures-rally-up-to-1-5-as-coreweave-results-lift-sentiment-14077102.html"
+          "title": "Reuters/Investing.com: Finnland erlaubt Teslas Assisted Driving",
+          "url": "https://www.investing.com/news/stock-market-news/finland-approves-teslas-assisted-driving-system-5017838"
         },
         {
-          "title": "Reuters/Investing.com: OpenAI-Quartalsumsatz steigt auf 10 Mrd. $, Verluste wachsen (WSJ)",
-          "url": "https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353"
+          "title": "evmagz: Robotaxi in San Antonio",
+          "url": "https://evmagz.com/tesla-expands-robotaxi-service-to-san-antonio-and-broadens-austin-coverage/"
+        },
+        {
+          "title": "GMT Eight: Morgan Stanley hebt Kursziel auf 410 $",
+          "url": "https://gmteight.com/flash/detail/1569821"
+        },
+        {
+          "title": "TradingView: Jefferies senkt Kursziel auf 375 $",
+          "url": "https://www.tradingview.com/news/tradingview:a7a3333afbe07:0-key-facts-merger-review-solar-plant-cybertruck-shift-to-cybercab/"
+        },
+        {
+          "title": "GMT Eight: 0-%-Finanzierung in China",
+          "url": "https://gmteight.com/flash/detail/1583573"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -36412,51 +36428,67 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "In Frankfurt um 09:25 bei 56,40 € (+1,6 % zum Frankfurter Schluss 55,50 €; umgerechnet etwa 62,9 $ bei EUR/USD 1,1152 um 09:44, kaum über dem Nasdaq-Schluss von 62,71 $). Rocket Lab läuft damit hinter SPCX und dem Tech-Markt her; nachbörslich war die Aktie am Dienstag auf 61,84 $ gefallen. Stützen bleiben die ESCAPADE-Sonden auf Marskurs und der zugesagte Pentagon-Kredit über 150 Mio. $ für Neutron. Der Nasdaq-100-Future liegt um 09:34 rund 1,7 % höher (Yahoo), der Dax um 09:29 rund 1,0 % bei 26.603 Punkten, nur knapp unter dem Rekord von 26.693 (Handelsblatt). Treiber sind KI-Werte: CoreWeave hob nach starkem Quartal die Jahresprognose, dazu meldete das WSJ für OpenAI erstmals rund 10 Mrd. $ Quartalsumsatz. Gegenwind bleibt die Fed: Nach dem heißen US-CPI ist eine Zinserhöhung im Dezember weitgehend eingepreist. Electron-Start 100 am Sa 14.11. ab 06:30.",
+      "why": "In Frankfurt zuletzt um 10:09 bei 57,50 € (+3,6 % zum Frankfurter Schluss 55,50 €; umgerechnet etwa 64,1 $ bei EUR/USD 1,1143); vorbörslich in New York aber nur 63,11 $ (+0,6 % zum Schluss von 62,71 $) – Rocket Lab läuft hinter SPCX und den Chipwerten her. Nach dem Quartalsbericht bleibt das Bild gespalten: Piper Sandler senkte das Ziel von 83 auf 58 $ (Neutral), Stifel bleibt bei 132 $ (Defense World, TIKR); Stützen sind der Rekord-Auftragsbestand von 3,57 Mrd. $, höhere Startpreise (SpaceNews) und die ESCAPADE-Sonden auf Marskurs. Der Nasdaq-100-Future liegt um 11:31 rund 1,8 % höher (Yahoo); KI-Hardware zieht vorbörslich breit an, Nvidia +3,6 %, AMD und Micron je +5,2 % (EconoTimes). Auslöser bleiben die erhöhte CoreWeave-Prognose und der WSJ-Bericht über rund 10 Mrd. $ OpenAI-Quartalsumsatz. Der Dax hat seinen Morgengewinn auf rund +0,6 % bei 26.518 Punkten halbiert (Yahoo, Handelsblatt). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Electron-Start 100 am Sa 14.11. ab 06:30.",
       "whySources": [
         {
-          "title": "Yahoo Finance: 6RJ0.F (11.11., 09:25)",
+          "title": "Yahoo Finance 6RJ0.F",
           "url": "https://finance.yahoo.com/quote/6RJ0.F/"
         },
         {
-          "title": "Yahoo Finance: RKLB (Schluss und Nachbörse 10.11.)",
+          "title": "Yahoo Finance RKLB",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "Yahoo Finance: EURUSD=X (11.11., 09:44)",
+          "title": "Yahoo Finance EURUSD=X",
           "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         },
         {
-          "title": "Rocket Lab: ESCAPADE-Sonden auf Marskurs",
+          "title": "Defense World: Piper Sandler senkt Kursziel auf 58 $ (11.11.)",
+          "url": "https://www.defenseworld.net/2026/11/11/rocket-lab-nasdaqrklb-given-new-58-00-price-target-at-piper-sandler.html"
+        },
+        {
+          "title": "TIKR: Stifel bleibt bei 132 $",
+          "url": "https://www.tikr.com/blog/stifels-132-target-says-rocket-labs-58-slide-went-too-far"
+        },
+        {
+          "title": "Rocket Lab: Zahlen Q3 2026",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+        },
+        {
+          "title": "SpaceNews: Rocket Lab erhöht Startpreise (10.11.)",
+          "url": "https://spacenews.com/high-demand-prompts-rocket-lab-to-raise-launch-prices/"
+        },
+        {
+          "title": "Rocket Lab: ESCAPADE auf Marskurs",
           "url": "https://rocketlabcorp.com/updates/twin-satellites-built-by-rocket-lab-for-nasas-escapade-mission-complete-successful-trans-mars-injection-burns-setting-course-for-the-red-planet/"
         },
         {
-          "title": "US-Kriegsministerium: OSC sagt Rocket Lab 150 Mio. $ Kredit zu (9.11.)",
-          "url": "https://www.war.gov/News/Releases/Release/Article/4644766/the-department-of-wars-office-of-strategic-capital-signs-150-million-conditiona/"
-        },
-        {
-          "title": "Yahoo Finance: NQ=F (11.11., 09:34)",
+          "title": "Yahoo Finance: Nasdaq-100-Future",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Yahoo Finance: ^GDAXI (11.11., 09:29)",
+          "title": "EconoTimes: KI-Hardware vorbörslich fester (11.11.)",
+          "url": "https://econotimes.com/AI-Hardware-Shares-Rise-Before-U-S-Open-Led-by-Lumentum-s-8-4-Gain-1775122"
+        },
+        {
+          "title": "CNBC: CoreWeave nach Prognoseanhebung fester (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html"
+        },
+        {
+          "title": "Investing.com: OpenAI mit 10 Mrd. $ Quartalsumsatz (WSJ)",
+          "url": "https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353"
+        },
+        {
+          "title": "Yahoo Finance: Dax",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         },
         {
-          "title": "Handelsblatt: Dax nur knapp unter Rekordniveau – KI-Profiteure gewinnen (11.11., 09:19)",
+          "title": "Handelsblatt: Dax nur knapp unter Rekordniveau (11.11.)",
           "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-nur-knapp-unter-rekordniveau-ki-profiteure-gewinnen/100269009.html"
         },
         {
-          "title": "XTB: Morning Wrap 11.11. – CoreWeave stützt Nasdaq",
-          "url": "https://www.xtb.com/en/market-analysis/morning-wrap-equity-indices-extend-rebound-coreweave-outlook-supports-nasdaq-11-11-2026"
-        },
-        {
-          "title": "Moneycontrol/Reuters: Nasdaq-Futures bis +1,5 % nach CoreWeave (11.11.)",
-          "url": "https://www.moneycontrol.com/news/business/markets/nasdaq-futures-rally-up-to-1-5-as-coreweave-results-lift-sentiment-14077102.html"
-        },
-        {
-          "title": "Reuters/Investing.com: OpenAI-Quartalsumsatz steigt auf 10 Mrd. $, Verluste wachsen (WSJ)",
-          "url": "https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353"
+          "title": "CNBC: Dollar fester, FedWatch 91,9 % für Erhöhung im Dezember (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -47836,59 +47868,55 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Auf Xetra um 09:20 bei 147,56 € (+6,4 % zum Xetra-Schluss 138,74 €; umgerechnet etwa 164,6 $ bei EUR/USD 1,1152 um 09:44, rund 6,6 % über dem Nasdaq-Schluss von 154,39 $). Ein Teil ist Nachholen: Xetra schloss am Dienstag, bevor Marvell in New York drehte. Der Rest ist die Chip- und Optik-Erholung nach CoreWeave; im US-Overnight-Handel lag Marvell schon rund 3 % höher (Tiger Brokers). Der Nasdaq-100-Future liegt um 09:34 rund 1,7 % höher (Yahoo), der Dax um 09:29 rund 1,0 % bei 26.603 Punkten, nur knapp unter dem Rekord von 26.693 (Handelsblatt). Treiber sind KI-Werte: CoreWeave hob nach starkem Quartal die Jahresprognose, dazu meldete das WSJ für OpenAI erstmals rund 10 Mrd. $ Quartalsumsatz. Gegenwind bleibt die Fed: Nach dem heißen US-CPI ist eine Zinserhöhung im Dezember weitgehend eingepreist. Bremse bleibt der Lumentum-Deal, dem Arbitrageure laut Bloomberg nur etwa 50:50 Chancen geben. Nächste Signale: Cisco und Applied Materials Do nach US-Schluss, Nvidia am 17.11.",
+      "why": "Auf Xetra um 11:25 bei 147,76 € (+6,5 % zum Xetra-Schluss 138,74 €; umgerechnet etwa 164,7 $ bei EUR/USD 1,1143); vorbörslich in New York 165,58 $ (+7,2 % zum Schluss von 154,39 $, Public.com). Marvell gehört damit zu den stärksten KI-Hardware-Werten vor US-Eröffnung, zusammen mit Lumentum (+8,4 %) und Sandisk (EconoTimes). Der Nasdaq-100-Future liegt um 11:31 rund 1,8 % höher (Yahoo); KI-Hardware zieht vorbörslich breit an, Nvidia +3,6 %, AMD und Micron je +5,2 % (EconoTimes). Auslöser bleiben die erhöhte CoreWeave-Prognose und der WSJ-Bericht über rund 10 Mrd. $ OpenAI-Quartalsumsatz. Der Dax hat seinen Morgengewinn auf rund +0,6 % bei 26.518 Punkten halbiert (Yahoo, Handelsblatt). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Bremse bleibt der Lumentum-Deal, dem Arbitrageure laut Bloomberg nur etwa 50:50 Chancen geben. Nächste Signale: Cisco und Applied Materials Do nach US-Schluss, Nvidia am 17.11.",
       "whySources": [
         {
-          "title": "Yahoo Finance: 9MW.DE (11.11., 09:20)",
+          "title": "Yahoo Finance 9MW.DE",
           "url": "https://finance.yahoo.com/quote/9MW.DE/"
         },
         {
-          "title": "Yahoo Finance: MRVL (Schluss 10.11.)",
+          "title": "Yahoo Finance MRVL",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "Yahoo Finance: EURUSD=X (11.11., 09:44)",
+          "title": "Yahoo Finance EURUSD=X",
           "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         },
         {
-          "title": "Tiger Brokers: Marvell im Overnight-Handel +3,1 % mit Chip-Erholung (11.11.)",
-          "url": "https://www.itiger.com/news/1199630341"
+          "title": "Public.com: MRVL vorbörslich",
+          "url": "https://public.com/stocks/mrvl/pre-market"
         },
         {
-          "title": "GMT Eight: Optik-Werte breit im Plus, Marvell über 7 % höher (11.11.)",
-          "url": "https://gmteight.com/flash/detail/1563207"
-        },
-        {
-          "title": "TradingView/Benzinga: Lumentum-Deal laut Arbitrageuren nur 50:50 (Bloomberg)",
-          "url": "https://www.tradingview.com/news/benzinga:04e8ee0b0094b:0-marvell-s-115-billion-lumentum-deal-faces-50-50-odds-report/"
-        },
-        {
-          "title": "Week ahead 9.–13.11.: Cisco und Applied Materials Do nach Börsenschluss",
-          "url": "https://news.futureredirect.com/en/news/week-ahead-november-9-2026-cpi-earnings-congress"
-        },
-        {
-          "title": "Yahoo Finance: NQ=F (11.11., 09:34)",
+          "title": "Yahoo Finance: Nasdaq-100-Future",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Yahoo Finance: ^GDAXI (11.11., 09:29)",
+          "title": "EconoTimes: KI-Hardware vorbörslich fester (11.11.)",
+          "url": "https://econotimes.com/AI-Hardware-Shares-Rise-Before-U-S-Open-Led-by-Lumentum-s-8-4-Gain-1775122"
+        },
+        {
+          "title": "CNBC: CoreWeave nach Prognoseanhebung fester (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html"
+        },
+        {
+          "title": "Investing.com: OpenAI mit 10 Mrd. $ Quartalsumsatz (WSJ)",
+          "url": "https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353"
+        },
+        {
+          "title": "Yahoo Finance: Dax",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         },
         {
-          "title": "Handelsblatt: Dax nur knapp unter Rekordniveau – KI-Profiteure gewinnen (11.11., 09:19)",
+          "title": "Handelsblatt: Dax nur knapp unter Rekordniveau (11.11.)",
           "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-nur-knapp-unter-rekordniveau-ki-profiteure-gewinnen/100269009.html"
         },
         {
-          "title": "XTB: Morning Wrap 11.11. – CoreWeave stützt Nasdaq",
-          "url": "https://www.xtb.com/en/market-analysis/morning-wrap-equity-indices-extend-rebound-coreweave-outlook-supports-nasdaq-11-11-2026"
+          "title": "CNBC: Dollar fester, FedWatch 91,9 % für Erhöhung im Dezember (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
         },
         {
-          "title": "Moneycontrol/Reuters: Nasdaq-Futures bis +1,5 % nach CoreWeave (11.11.)",
-          "url": "https://www.moneycontrol.com/news/business/markets/nasdaq-futures-rally-up-to-1-5-as-coreweave-results-lift-sentiment-14077102.html"
-        },
-        {
-          "title": "Reuters/Investing.com: OpenAI-Quartalsumsatz steigt auf 10 Mrd. $, Verluste wachsen (WSJ)",
-          "url": "https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353"
+          "title": "Benzinga/TradingView: Lumentum-Deal 50:50 (Bloomberg)",
+          "url": "https://www.tradingview.com/news/benzinga:04e8ee0b0094b:0-marvell-s-115-billion-lumentum-deal-faces-50-50-odds-report/"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",

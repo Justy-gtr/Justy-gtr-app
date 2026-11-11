@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-11T09:50:00+01:00",
+  "asOf": "2026-11-11T11:40:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.38,
@@ -77,6 +77,60 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2120444551731270081",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-11T10:12:31+01:00",
+      "summaryDe": "Musk antwortet mit „Yup“ auf Herbert Ong, der argumentiert: Billige, reibungslose Cybercab-Fahrten vergrößern den ganzen Fahrmarkt, Tesla dürfe man deshalb nicht am Börsenwert von Uber messen. Musk bestätigt damit nur die These; neue Zahlen oder Termine nennt er nicht.",
+      "originalText": "@herbertong @JOBhakdi Yup",
+      "url": "https://x.com/elonmusk/status/2120444551731270081",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „Yup“ (11.11., 10:12)",
+          "url": "https://x.com/elonmusk/status/2120444551731270081"
+        },
+        {
+          "title": "@herbertong: Cybercab und der Fahrmarkt (11.11.)",
+          "url": "https://x.com/herbertong/status/2120322785851621456"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120438853928681981",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-11T09:49:53+01:00",
+      "summaryDe": "Musk stichelt gegen SoftBank-Chef Masayoshi Son: Statt 12 Mrd. $ für ein Viertel von Tesla zu geben, um Tesla von der Börse zu nehmen, habe Son das Geld in WeWork gesteckt – „das war dumm“. Anlass ist ein Bericht über SoftBank-Verluste mit reservierten Gasturbinen. Rückblick, keine neue Tesla-Nachricht.",
+      "originalText": "I remember that time when Masa, instead of putting $12B into Tesla for a 1/4 of the company to help me take Tesla private, instead invested the money in WeWork. That was dumb.",
+      "url": "https://x.com/elonmusk/status/2120438853928681981",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Masa und WeWork (11.11., 09:49)",
+          "url": "https://x.com/elonmusk/status/2120438853928681981"
+        },
+        {
+          "title": "@KatieMiller: „Taps the sign“ (11.11.)",
+          "url": "https://x.com/KatieMiller/status/2120342384445898866"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2120432718639145404",
       "account": "@elonmusk",
