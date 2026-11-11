@@ -1,13 +1,13 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T15:04:00+01:00",
+  "updatedAt": "2026-11-11T15:11:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 6,
-      "postsCount": 30,
-      "reason": "SpaceX: Bericht, Anthropic wolle den GPU-Mietvertrag nach Juni 2027 beenden, drückt vorbörslich. Andere loben das KI-Rack Kessel und neue Funkfrequenzen.",
+      "score": -8,
+      "postsCount": 34,
+      "reason": "SpaceX: Kurs fällt vorbörslich, weil Anthropic laut Berichten den GPU-Mietvertrag 2027 beenden will. Fans verweisen auf den Qualcomm-Funkdeal und das KI-Rack.",
       "sources": [
         {
           "title": "Anthropic will GPU-Vertrag beenden (Bericht)",
@@ -18,11 +18,11 @@
           "url": "https://x.com/DRJBori63/status/2120517127434068415"
         },
         {
-          "title": "FCC: mehr Low-Band-Frequenzen",
-          "url": "https://x.com/RocketTerminal/status/2120516908554289519"
+          "title": "SPCX fällt wegen Anthropic-Aussagen",
+          "url": "https://x.com/sspencer_smb/status/2120518576071180477"
         }
       ],
-      "updatedAt": "2026-11-11T15:04:00+01:00"
+      "updatedAt": "2026-11-11T15:11:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,7 +43,7 @@
           "url": "https://x.com/QuantAlphaXXX/status/2120465950545723429"
         }
       ],
-      "updatedAt": "2026-11-11T15:04:00+01:00"
+      "updatedAt": "2026-11-11T15:11:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/PhilipTortora/status/2120495524931416292"
         }
       ],
-      "updatedAt": "2026-11-11T15:04:00+01:00"
+      "updatedAt": "2026-11-11T15:11:00+01:00"
     }
   }
 }
