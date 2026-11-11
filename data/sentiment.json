@@ -1,14 +1,18 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T09:02:00+01:00",
+  "updatedAt": "2026-11-11T10:20:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 35,
-      "postsCount": 15,
-      "reason": "SpaceX: Viel Lob für den Solar-Deal mit Singulus und Vorfreude auf Flight 15 mit doppeltem Fang. Eine große Put-Wette bis 27.11. sorgt für etwas Skepsis.",
+      "score": 38,
+      "postsCount": 18,
+      "reason": "SpaceX: Lob für den Singulus-Solardeal, Vorfreude auf Flight 15 und neu: ein eigenes KI-Rack „Kessel“ laut SemiAnalysis. Eine große Put-Wette sorgt für Skepsis.",
       "sources": [
+        {
+          "title": "SpaceX baut eigenes KI-Rack Kessel",
+          "url": "https://x.com/spcxGOD/status/2120445085305192761"
+        },
         {
           "title": "Guten Morgen Europa: Singulus-Deal",
           "url": "https://x.com/spcxGOD/status/2120398619341729879"
@@ -16,13 +20,9 @@
         {
           "title": "Flight 15: erster doppelter Fang",
           "url": "https://x.com/simesimu5/status/2120409001573671368"
-        },
-        {
-          "title": "Put-Wette über 584.000 $",
-          "url": "https://x.com/TrackSmartMoney/status/2120400609740222938"
         }
       ],
-      "updatedAt": "2026-11-11T09:02:00+01:00"
+      "updatedAt": "2026-11-11T10:20:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
