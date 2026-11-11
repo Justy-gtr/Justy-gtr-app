@@ -247,8 +247,8 @@
       "id": "TSLA-2026-11-11",
       "symbol": "TSLA",
       "name": "Tesla",
-      "changePct": 4.06,
-      "priceEur": 336.85,
+      "changePct": 3.03,
+      "priceEur": 347.05,
       "thresholdPct": 2,
       "direction": "up",
       "timestamp": "2026-11-10T23:10:06.919Z",
@@ -274,44 +274,14 @@
       ]
     },
     {
-      "id": "RKLB-2026-11-11",
-      "symbol": "RKLB",
-      "name": "Rocket Lab",
-      "changePct": 11.37,
-      "priceEur": 56.8,
-      "thresholdPct": 2,
-      "direction": "up",
-      "timestamp": "2026-11-10T23:10:06.919Z",
-      "notified": false,
-      "example": false,
-      "sources": [
-        {
-          "title": "Alpaca Markets IEX RKLB",
-          "url": "https://data.alpaca.markets/v2/stocks/RKLB/snapshot?feed=iex"
-        },
-        {
-          "title": "Yahoo Finance 6RJ0.F",
-          "url": "https://finance.yahoo.com/quote/6RJ0.F"
-        },
-        {
-          "title": "Yahoo Finance EURUSD=X",
-          "url": "https://finance.yahoo.com/quote/EURUSD=X"
-        },
-        {
-          "title": "Yahoo Finance RKLB",
-          "url": "https://finance.yahoo.com/quote/RKLB"
-        }
-      ]
-    },
-    {
       "id": "MRVL-2026-11-11",
       "symbol": "MRVL",
       "name": "Marvell Technology",
-      "changePct": 10.74,
-      "priceEur": 138.74,
+      "changePct": 6.66,
+      "priceEur": 147.98,
       "thresholdPct": 2,
       "direction": "up",
-      "timestamp": "2026-11-10T23:10:06.919Z",
+      "timestamp": "2026-11-11T08:59:42.871Z",
       "notified": false,
       "example": false,
       "sources": [
