@@ -5253,7 +5253,7 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Auf Xetra um 13:43 bei 131,60 € (+3,2 % zum Xetra-Schluss 127,52 €), etwas unter dem Mittagshoch von 132,64 €; vorbörslich in New York um 13:58 bei 145,72 $ (+1,8 % zum Schluss von 143,09 $). Treiber bleiben der SemiAnalysis-Bericht über SpaceX’ eigenes KI-Rack „Kessel“ (Stocktwits), die KI-Rally und Musks Singulus-Aussage zu 100 GW Solarzellen pro Jahr. Der Nasdaq-100-Future liegt gegen 13:50 rund 2,0 % höher (Yahoo); Auslöser ist der starke Ausblick von CoreWeave, Chipwerte ziehen vorbörslich breit an, Nvidia rund 3,7 % (Reuters, Yahoo). In Frankfurt steht der Dax bei 26.528 Punkten (+0,7 %), knapp unter dem Rekord von 26.692; Infineon +7,2 % (dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Neu und eher negativ: Die Sicherheitsfirma Claroc fand 35.578 per Grok Build gebaute Apps offen im Netz, darunter 24 Apps von Mitarbeitern von X und SpaceXSI mit vertraulichen Vertriebsunterlagen; SpaceXSI hat die eigenen Apps entfernt (The Hacker News). Dazu Dan Ives’ „politischer Abschlag“ von 20–25 % wegen Texas und die Ingenieurs-Klage (Reuters). Flight 15 (Fr 23:45) wartet weiter auf die FAA-Lizenz; USSF-627 startet Do 03:35.",
+      "why": "SPCX gibt die Gewinne vom Vormittag großteils ab: Auf Xetra um 14:45 bei 128,54 € (+0,8 % zum Xetra-Schluss 127,52 €, nach 132,64 € am Mittag); vorbörslich in New York um 15:00 bei 142,24 $ (−0,6 % zum Schluss von 143,09 $, um 13:58 waren es noch 145,72 $) (Yahoo). Zeitlich passt dazu eine unbestätigte Mitschrift, die sich seit etwa 12:45 auf X verbreitet (Konto @jukan05, rund 180.000 Aufrufe): Anthropic soll Analysten gesagt haben, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Weder Anthropic noch SpaceX haben das bestätigt. Warum das zählt: Anthropic stand im dritten Quartal laut 10-Q und Bloomberg für 34,5 % des SpaceX-Umsatzes, und die Verträge sind ab Anfang 2027 mit 90 Tagen Frist kündbar (Motley Fool). Evercore sieht kein unmittelbares Umsatzrisiko, weil Anthropic knapp an Rechenleistung ist (TipRanks). Weiter belasten Claroc-Fund zu offenen Grok-Build-Apps (The Hacker News) und Dan Ives’ „politischer Abschlag“ von 20–25 % (Yahoo); stützend wirken der SemiAnalysis-Bericht zum KI-Rack „Kessel“ (Stocktwits) und die KI-Rally. Der Nasdaq-100-Future liegt gegen 14:50 rund 1,8 % höher (Yahoo), getragen vom starken Ausblick von CoreWeave (Reuters). Der Dax steht gegen 14:45 bei 26.543 Punkten (+0,7 %, Yahoo, dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Flight 15 (Fr 23:45) wartet weiter auf die FAA-Lizenz; USSF-627 startet Do 03:35.",
       "whySources": [
         {
           "title": "Yahoo Finance SPX.DE",
@@ -5264,12 +5264,28 @@
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Stocktwits: SpaceX-Rack „Kessel“ laut SemiAnalysis (11.11.)",
-          "url": "https://stocktwits.com/news-articles/markets/equity/spacex-control-nvidia-hardware-semianalysis-custom-ai-rack-earth-orbit/cNGDWAvR9Jv"
+          "title": "@jukan05: Anthropic-Aussagen vor Analysten (unbestätigt, 11.11.)",
+          "url": "https://x.com/jukan05/status/2120483370488750336"
         },
         {
-          "title": "@elonmusk: Singulus 100 GW/Jahr",
-          "url": "https://x.com/elonmusk/status/2120302471210033426"
+          "title": "Motley Fool: 34,5 % des SpaceX-Umsatzes an einem Kunden (5.11.)",
+          "url": "https://www.fool.com/investing/2026/11/05/345-of-spacexs-revenue-could-disappear-by-mid-2027/"
+        },
+        {
+          "title": "TipRanks: Was Anthropics 120,5-Mrd.-Deal für SpaceX bedeutet",
+          "url": "http://www.tipranks.com/news/spcx-stock-what-anthropics-120-5b-deal-means-for-spacex"
+        },
+        {
+          "title": "The Hacker News: Über 35.000 Grok-Apps offen im Netz (11.11.)",
+          "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html"
+        },
+        {
+          "title": "Yahoo Finance: Ives sieht politischen Abschlag",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-carries-25-political-064509750.html"
+        },
+        {
+          "title": "Stocktwits: SpaceX-Rack „Kessel“ laut SemiAnalysis (11.11.)",
+          "url": "https://stocktwits.com/news-articles/markets/equity/spacex-control-nvidia-hardware-semianalysis-custom-ai-rack-earth-orbit/cNGDWAvR9Jv"
         },
         {
           "title": "Yahoo Finance: Nasdaq-100-Future",
@@ -5280,8 +5296,8 @@
           "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-5018288"
         },
         {
-          "title": "Yahoo Finance NVDA",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Yahoo Finance ^GDAXI",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         },
         {
           "title": "dpa-AFX: Dax bleibt auf Erfolgskurs, Tech-Erholung stützt (11.11.)",
@@ -5290,22 +5306,6 @@
         {
           "title": "CNBC: FedWatch 91,9 % für Erhöhung im Dezember (11.11.)",
           "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
-        },
-        {
-          "title": "The Hacker News: Über 35.000 Grok-Apps offen im Netz (11.11.)",
-          "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html"
-        },
-        {
-          "title": "Claroc: Grok-Build-Apps offen",
-          "url": "https://blog.claroc.io/ghostshares-grok-build-apps/"
-        },
-        {
-          "title": "Yahoo Finance: Ives sieht politischen Abschlag",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-carries-25-political-064509750.html"
-        },
-        {
-          "title": "Reuters/Dawn: SpaceX muss sich Ingenieurs-Klage stellen",
-          "url": "https://www.dawn.com/news/2043687"
         },
         {
           "title": "SpaceX: Starship Flight 15",
@@ -18341,7 +18341,7 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Auf Xetra um 13:36 bei 346,95 € (+3,0 % zum Xetra-Schluss 336,85 €); vorbörslich in New York um 13:58 bei 385,90 $ (+1,6 % zum Schluss von 379,78 $). Der Nasdaq-100-Future liegt gegen 13:50 rund 2,0 % höher (Yahoo); Auslöser ist der starke Ausblick von CoreWeave, Chipwerte ziehen vorbörslich breit an, Nvidia rund 3,7 % (Reuters, Yahoo). In Frankfurt steht der Dax bei 26.528 Punkten (+0,7 %), knapp unter dem Rekord von 26.692; Infineon +7,2 % (dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Eigener Rückenwind: Finnland hat Teslas „Assisted Driving“ zugelassen; die EU-Entscheidung erwartet die Behörde erst im Winter (Traficom, Reuters). In Texas hat Tesla laut Zulassungsdaten erstmals mehr Robotaxis registriert als Waymo (1.302 gegen 1.297; X-News, unbestätigt). Morgan Stanley hob das Kursziel von 400 auf 410 $ (Halten), Jefferies stufte auf Halten mit 375 $ ab (MarketBeat).",
+      "why": "Auf Xetra um 14:43 bei 346,80 € (+3,0 % zum Xetra-Schluss 336,85 €); vorbörslich in New York um 15:00 bei 385,15 $ (+1,4 % zum Schluss von 379,78 $) (Yahoo). Der Nasdaq-100-Future liegt gegen 14:50 rund 1,8 % höher (Yahoo), getragen vom starken Ausblick von CoreWeave (Reuters). Der Dax steht gegen 14:45 bei 26.543 Punkten (+0,7 %, Yahoo, dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Eigener Rückenwind: Finnland hat Teslas „Assisted Driving“ zugelassen, die EU-Entscheidung steht noch aus (Traficom, Reuters). In Texas hat Tesla laut Zulassungsdaten erstmals mehr Robotaxis registriert als Waymo (1.302 gegen 1.297; EV Wire). Morgan Stanley hob das Kursziel von 400 auf 410 $ (Halten), Jefferies stufte auf Halten ab (MarketBeat). Bremse: Teslas Einzelhandelsverkäufe in China fielen im Oktober um 66,1 % auf 8.817 Autos (CPCA laut TIKR).",
       "whySources": [
         {
           "title": "Yahoo Finance TL0.DE",
@@ -18360,8 +18360,8 @@
           "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-5018288"
         },
         {
-          "title": "Yahoo Finance NVDA",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Yahoo Finance ^GDAXI",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         },
         {
           "title": "dpa-AFX: Dax bleibt auf Erfolgskurs, Tech-Erholung stützt (11.11.)",
@@ -18380,8 +18380,8 @@
           "url": "https://www.investing.com/news/stock-market-news/finland-approves-teslas-assisted-driving-system-5017838"
         },
         {
-          "title": "X-News: Tesla überholt Waymo bei Robotaxi-Zulassungen in Texas",
-          "url": "https://x.com/i/trending/2120298536952537400"
+          "title": "EV Wire: Tesla überholt Waymo bei Robotaxi-Zulassungen in Texas",
+          "url": "https://evwire.com/p/tesla-overtakes-waymo-texas-robotaxi-registrations"
         },
         {
           "title": "GMT Eight: Morgan Stanley hebt Kursziel auf 410 $",
@@ -18390,6 +18390,10 @@
         {
           "title": "MarketBeat: Jefferies stuft Tesla auf Halten ab (11.11.)",
           "url": "https://www.marketbeat.com/instant-alerts/analyst-tesla-nasdaq-tsla-rating-lowered-to-hold-at-jefferies-financial-group-2026-11-11/"
+        },
+        {
+          "title": "TIKR: Tesla-Verkäufe in China auf Vierjahrestief",
+          "url": "https://www.tikr.com/blog/musk-calls-model-y-the-best-selling-car-on-earth-inside-china-tesla-sales-hit-a-4-year-low"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -29855,7 +29859,7 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "In Frankfurt zuletzt bei 57,50 € (+3,6 % zum Frankfurter Schluss 55,50 €); vorbörslich in New York um 13:57 bei 63,21 $ (+0,8 % zum Schluss von 62,71 $) – Rocket Lab läuft weiter hinter SPCX und den Chipwerten her. Nach dem Quartalsbericht bleibt das Bild gespalten: Piper Sandler senkte das Ziel von 83 auf 58 $, Stifel bleibt bei 132 $ (Defense World, TIKR); Stützen sind Rekordumsatz von 268 Mio. $, Auftragsbestand von 3,57 Mrd. $ und höhere Neutron-Preise (70 Mio. $), der Neutron-Erstflug ist aber auf 2027 gerutscht (Rocket Lab). Bisher hier nicht erwähnt: Das Pentagon-Büro für strategisches Kapital (OSC) hat am 9.11. eine bedingte Kreditzusage über 150 Mio. $ für mehr Neutron-Starts gegeben – noch nicht ausgezahlt, Bedingungen offen (US-Kriegsministerium, SpaceNews). Der Nasdaq-100-Future liegt gegen 13:50 rund 2,0 % höher (Yahoo); Auslöser ist der starke Ausblick von CoreWeave, Chipwerte ziehen vorbörslich breit an, Nvidia rund 3,7 % (Reuters, Yahoo). In Frankfurt steht der Dax bei 26.528 Punkten (+0,7 %), knapp unter dem Rekord von 26.692; Infineon +7,2 % (dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Electron-Start 100 am Sa 14.11. ab 06:30.",
+      "why": "In Frankfurt zuletzt um 13:08 bei 57,50 € (+3,6 % zum Frankfurter Schluss 55,50 €); vorbörslich in New York um 15:00 bei 62,90 $ (+0,3 % zum Schluss von 62,71 $) (Yahoo). Neu: Needham bleibt bei „Kaufen“, senkt das Kursziel aber von 120 auf 100 $ (TradingView, MarketBeat). Damit ist das Analystenbild weiter gespalten: Piper Sandler senkte auf 58 $, Stifel bleibt bei 132 $ (Defense World, TIKR). Stützen sind Rekordumsatz von 268 Mio. $, Auftragsbestand von 3,57 Mrd. $ und höhere Neutron-Preise (70 Mio. $); der Neutron-Erstflug ist aber auf 2027 gerutscht (Rocket Lab). Dazu die bedingte Kreditzusage des Pentagon-Büros OSC über 150 Mio. $ für mehr Neutron-Starts vom 9.11. (US-Kriegsministerium). Der Nasdaq-100-Future liegt gegen 14:50 rund 1,8 % höher (Yahoo), getragen vom starken Ausblick von CoreWeave (Reuters). Der Dax steht gegen 14:45 bei 26.543 Punkten (+0,7 %, Yahoo, dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Electron-Start 100 am Sa 14.11. ab 06:30.",
       "whySources": [
         {
           "title": "Yahoo Finance 6RJ0.F",
@@ -29864,6 +29868,14 @@
         {
           "title": "Yahoo Finance RKLB",
           "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "title": "TradingView: Needham senkt Kursziel auf 100 $ (11.11.)",
+          "url": "https://www.tradingview.com/news/tradingview:055611fd060f0:0-needham-maintains-rocket-lab-at-buy-lowers-price-target-to-100-from-120/"
+        },
+        {
+          "title": "MarketBeat: Needham senkt Kursziel (11.11.)",
+          "url": "https://www.marketbeat.com/instant-alerts/analyst-rocket-lab-nasdaq-rklb-stock-price-target-cut-by-needham-company-llc-2026-11-11/"
         },
         {
           "title": "Defense World: Piper Sandler senkt Kursziel auf 58 $ (11.11.)",
@@ -29894,8 +29906,8 @@
           "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-5018288"
         },
         {
-          "title": "Yahoo Finance NVDA",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Yahoo Finance ^GDAXI",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         },
         {
           "title": "dpa-AFX: Dax bleibt auf Erfolgskurs, Tech-Erholung stützt (11.11.)",
@@ -42034,7 +42046,7 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Auf Xetra um 13:41 bei 151,20 € (+9,0 % zum Xetra-Schluss 138,74 €); vorbörslich in New York um 13:58 bei 167,80 $ (+8,7 % zum Schluss von 154,39 $). Marvell gehört zu den stärksten Chipwerten vor US-Eröffnung, getragen von der Branchenerholung nach CoreWeave (KuCoin, Reuters). Der Nasdaq-100-Future liegt gegen 13:50 rund 2,0 % höher (Yahoo); Auslöser ist der starke Ausblick von CoreWeave, Chipwerte ziehen vorbörslich breit an, Nvidia rund 3,7 % (Reuters, Yahoo). In Frankfurt steht der Dax bei 26.528 Punkten (+0,7 %), knapp unter dem Rekord von 26.692; Infineon +7,2 % (dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Bremse bleibt der Lumentum-Deal, dem Arbitrageure laut Bloomberg nur etwa 50:50 Chancen geben. Nächste Signale: Cisco und Applied Materials Do nach US-Schluss, Nvidia am 17.11.",
+      "why": "Auf Xetra um 14:45 bei 151,02 € (+8,9 % zum Xetra-Schluss 138,74 €); vorbörslich in New York um 15:00 bei 167,39 $ (+8,4 % zum Schluss von 154,39 $) (Yahoo). Marvell bleibt einer der stärksten Chipwerte vor US-Eröffnung, getragen von der Branchenerholung nach CoreWeave (KuCoin, Reuters). Der Nasdaq-100-Future liegt gegen 14:50 rund 1,8 % höher (Yahoo), getragen vom starken Ausblick von CoreWeave (Reuters). Der Dax steht gegen 14:45 bei 26.543 Punkten (+0,7 %, Yahoo, dpa-AFX). Gegenwind bleibt die Fed: FedWatch sieht 91,9 % für eine Erhöhung im Dezember (CNBC). Bremse bleibt der Lumentum-Deal, dem Arbitrageure laut Bloomberg nur etwa 50:50 Chancen geben. Nächste Signale: Cisco und Applied Materials Do nach US-Schluss, Nvidia am 17.11.",
       "whySources": [
         {
           "title": "Yahoo Finance 9MW.DE",
