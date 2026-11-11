@@ -4,9 +4,9 @@
   "asOf": "2026-11-11T06:00:00+01:00",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1093,
+    "rate": 1.1099,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-11T23:39:30+01:00",
+    "asOf": "2026-11-12T00:29:31+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -161,7 +161,7 @@
         }
       ],
       "priceUsd": 173.85,
-      "priceEur": 156.73,
+      "priceEur": 156.64,
       "previousCloseUsd": 168.79,
       "changePct": 3,
       "eurMethod": "usd_div_eurusd",
@@ -189,7 +189,7 @@
         166.22,
         160.28,
         150.49,
-        156.73
+        156.64
       ],
       "asOf": "2026-11-11T06:00:00+01:00",
       "marketSource": {
@@ -346,7 +346,7 @@
         }
       ],
       "priceUsd": 231.19,
-      "priceEur": 208.42,
+      "priceEur": 208.3,
       "previousCloseUsd": 224.54,
       "changePct": 2.96,
       "eurMethod": "usd_div_eurusd",
@@ -374,7 +374,7 @@
         191.37,
         186.05,
         200.17,
-        208.42
+        208.3
       ],
       "asOf": "2026-11-11T06:00:00+01:00",
       "marketSource": {
@@ -531,7 +531,7 @@
         }
       ],
       "priceUsd": 168.81,
-      "priceEur": 152.18,
+      "priceEur": 152.1,
       "previousCloseUsd": 154.37,
       "changePct": 9.35,
       "eurMethod": "usd_div_eurusd",
@@ -559,7 +559,7 @@
         125.75,
         138.69,
         137.57,
-        152.18
+        152.1
       ],
       "asOf": "2026-11-11T06:00:00+01:00",
       "marketSource": {
@@ -570,18 +570,18 @@
     }
   ],
   "nearTerm": {
-    "pickedOn": "2026-11-11",
+    "pickedOn": "2026-11-12",
     "window": 3,
     "expanded": false,
-    "from": "2026-11-10",
-    "to": "2026-11-13",
+    "from": "2026-11-11",
+    "to": "2026-11-16",
     "includesToday": true,
-    "note": "Fenster: heute und die nächsten 3 Handelstage, bis 13. November 2026.",
+    "note": "Fenster: heute und die nächsten 3 Handelstage, bis 16. November 2026.",
     "tradingDays": [
-      "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "asOf": "2026-11-11T06:00:00+01:00",
     "sources": [
@@ -596,148 +596,13 @@
     ],
     "candidates": [
       {
-        "id": "crwv-2026-11-10",
-        "symbol": "CRWV",
-        "name": "CoreWeave",
-        "usdSymbol": "CRWV",
-        "daysAway": 0,
-        "for": [
-          "Der Termin liegt heute.",
-          "Bisher n = 6. Keine Prozentzahl."
-        ],
-        "against": [
-          "Unter 7 früheren Terminen steht hier keine Prozentzahl.",
-          "Das sind frühere Termine. Keine Vorhersage."
-        ],
-        "catalyst": {
-          "label": "Zahlen",
-          "date": "2026-11-10",
-          "time": null,
-          "timezone": "Europe/Berlin",
-          "session": "amc",
-          "detail": "Nasdaq: nachbörslich. Die Uhr ist der US-Schluss in Berliner Zeit."
-        },
-        "pastCatalysts": {
-          "kind": "earnings_after_close",
-          "dates": [
-            "2025-05-14",
-            "2025-08-12",
-            "2025-11-10",
-            "2026-02-26",
-            "2026-05-07",
-            "2026-08-11"
-          ]
-        },
-        "history": {
-          "catalystLabel": "Am Folgetag",
-          "note": "Schluss am Zahlentag bis zum nächsten Handelstag.",
-          "from": "2025-03-28",
-          "to": "2026-11-11",
-          "catalyst": {
-            "n": 6,
-            "up": 1,
-            "down": 4,
-            "showPct": false
-          },
-          "moves": [
-            {
-              "date": "2025-05-14",
-              "base": "2025-05-14",
-              "reaction": "2025-05-15",
-              "pct": -2.51
-            },
-            {
-              "date": "2025-08-12",
-              "base": "2025-08-12",
-              "reaction": "2025-08-13",
-              "pct": -20.83
-            },
-            {
-              "date": "2025-11-10",
-              "base": "2025-11-10",
-              "reaction": "2025-11-11",
-              "pct": -16.31
-            },
-            {
-              "date": "2026-02-26",
-              "base": "2026-02-26",
-              "reaction": "2026-02-27",
-              "pct": -18.51
-            },
-            {
-              "date": "2026-05-07",
-              "base": "2026-05-07",
-              "reaction": "2026-05-08",
-              "pct": -11.4
-            },
-            {
-              "date": "2026-08-11",
-              "base": "2026-08-11",
-              "reaction": "2026-08-12",
-              "pct": 19.28
-            }
-          ]
-        },
-        "sources": [
-          {
-            "title": "Nasdaq: Zahlentermine am 10. November 2026",
-            "url": "https://www.nasdaq.com/market-activity/earnings"
-          },
-          {
-            "title": "Historische Zahlentermine CRWV",
-            "url": "https://www.historicalearnings.com/crwv.html"
-          },
-          {
-            "title": "Universum mit verbreiteten Knock-outs",
-            "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
-          }
-        ],
-        "priceUsd": 60.8,
-        "priceEur": 54.81,
-        "previousCloseUsd": 48.74,
-        "changePct": 24.74,
-        "eurMethod": "usd_div_eurusd",
-        "sparkline": [
-          73.2,
-          71.92,
-          69.45,
-          58.76,
-          62.15,
-          54.75,
-          54.49,
-          55.34,
-          55.03,
-          49.55,
-          48.33,
-          49.2,
-          53.31,
-          57.44,
-          54.45,
-          49.07,
-          44.95,
-          48.02,
-          43.2,
-          38.86,
-          41.32,
-          43.94,
-          43.42,
-          54.81
-        ],
-        "asOf": "2026-11-11T06:00:00+01:00",
-        "marketSource": {
-          "title": "Alpaca Markets IEX CRWV",
-          "url": "https://data.alpaca.markets/v2/stocks/CRWV/snapshot?feed=iex"
-        },
-        "source": "alpaca-iex"
-      },
-      {
         "id": "amat-2026-11-12",
         "symbol": "AMAT",
         "name": "Applied Materials",
         "usdSymbol": "AMAT",
-        "daysAway": 2,
+        "daysAway": 1,
         "for": [
-          "Der Termin liegt in 2 Handelstagen.",
+          "Der Termin liegt am nächsten Handelstag.",
           "In 8 früheren Quartalen lag die Bewegung am Folgetag 1 Mal bei mindestens +5 %."
         ],
         "against": [
@@ -842,7 +707,7 @@
           }
         ],
         "priceUsd": 394.84,
-        "priceEur": 355.95,
+        "priceEur": 355.75,
         "previousCloseUsd": 372.54,
         "changePct": 5.99,
         "eurMethod": "usd_div_eurusd",
@@ -870,7 +735,7 @@
           296.32,
           332.41,
           331.95,
-          355.95
+          355.75
         ],
         "asOf": "2026-11-11T06:00:00+01:00",
         "marketSource": {
@@ -884,9 +749,9 @@
         "symbol": "CSCO",
         "name": "Cisco",
         "usdSymbol": "CSCO",
-        "daysAway": 2,
+        "daysAway": 1,
         "for": [
-          "Der Termin liegt in 2 Handelstagen.",
+          "Der Termin liegt am nächsten Handelstag.",
           "In 8 früheren Quartalen lag die Bewegung am Folgetag 1 Mal bei mindestens +5 %."
         ],
         "against": [
@@ -991,7 +856,7 @@
           }
         ],
         "priceUsd": 100.82,
-        "priceEur": 90.89,
+        "priceEur": 90.84,
         "previousCloseUsd": 98.15,
         "changePct": 2.72,
         "eurMethod": "usd_div_eurusd",
@@ -1019,12 +884,103 @@
           83.58,
           88.5,
           87.46,
-          90.89
+          90.84
         ],
         "asOf": "2026-11-11T06:00:00+01:00",
         "marketSource": {
           "title": "Alpaca Markets IEX CSCO",
           "url": "https://data.alpaca.markets/v2/stocks/CSCO/snapshot?feed=iex"
+        },
+        "source": "alpaca-iex"
+      },
+      {
+        "id": "nbis-2026-11-12",
+        "symbol": "NBIS",
+        "name": "Nebius Group",
+        "usdSymbol": "NBIS",
+        "daysAway": 1,
+        "for": [
+          "Der Termin liegt am nächsten Handelstag.",
+          "Bisher n = 0. Keine Prozentzahl."
+        ],
+        "against": [
+          "Unter 7 früheren Terminen steht hier keine Prozentzahl.",
+          "Das sind frühere Termine. Keine Vorhersage."
+        ],
+        "catalyst": {
+          "label": "Zahlen",
+          "date": "2026-11-12",
+          "time": null,
+          "timezone": "Europe/Berlin",
+          "session": "bmo",
+          "detail": "Nasdaq: vorbörslich. Die Uhr ist die US-Eröffnung in Berliner Zeit."
+        },
+        "pastCatalysts": {
+          "kind": "earnings_before_open",
+          "dates": []
+        },
+        "history": {
+          "catalystLabel": "Am Zahlentag",
+          "note": "Schluss am Vortag bis zum Schluss am Zahlentag. Frühere Termine sind wie der nächste vor der Eröffnung gezählt.",
+          "from": "2024-10-21",
+          "to": "2026-11-11",
+          "catalyst": {
+            "n": 0,
+            "up": 0,
+            "down": 0,
+            "showPct": false
+          },
+          "moves": []
+        },
+        "sources": [
+          {
+            "title": "Nasdaq: Zahlentermine am 12. November 2026",
+            "url": "https://www.nasdaq.com/market-activity/earnings"
+          },
+          {
+            "title": "Historische Zahlentermine NBIS",
+            "url": "https://www.historicalearnings.com/nbis.html"
+          },
+          {
+            "title": "Universum mit verbreiteten Knock-outs",
+            "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
+          }
+        ],
+        "priceUsd": 154.9,
+        "priceEur": 139.56,
+        "previousCloseUsd": 133.96,
+        "changePct": 15.63,
+        "eurMethod": "usd_div_eurusd",
+        "sparkline": [
+          197.15,
+          188.22,
+          184.62,
+          166.15,
+          168.03,
+          147.57,
+          151.79,
+          152.72,
+          152.71,
+          141.84,
+          141.46,
+          136.63,
+          152.56,
+          163.83,
+          154.17,
+          137.84,
+          126.73,
+          135.49,
+          126.28,
+          107.14,
+          115.33,
+          126.89,
+          119.4,
+          139.56
+        ],
+        "asOf": "2026-11-11T06:00:00+01:00",
+        "marketSource": {
+          "title": "Alpaca Markets IEX NBIS",
+          "url": "https://data.alpaca.markets/v2/stocks/NBIS/snapshot?feed=iex"
         },
         "source": "alpaca-iex"
       }

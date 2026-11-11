@@ -332,6 +332,66 @@
           "url": "https://finance.yahoo.com/quote/RKLB"
         }
       ]
+    },
+    {
+      "id": "TSLA-2026-11-12",
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "changePct": 5.22,
+      "priceEur": 353.95,
+      "thresholdPct": 2,
+      "direction": "up",
+      "timestamp": "2026-11-11T23:29:18.815Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Alpaca Markets IEX TSLA",
+          "url": "https://data.alpaca.markets/v2/stocks/TSLA/snapshot?feed=iex"
+        },
+        {
+          "title": "Yahoo Finance TL0.DE",
+          "url": "https://finance.yahoo.com/quote/TL0.DE"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA"
+        }
+      ]
+    },
+    {
+      "id": "MRVL-2026-11-12",
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "changePct": 13.53,
+      "priceEur": 155.36,
+      "thresholdPct": 2,
+      "direction": "up",
+      "timestamp": "2026-11-11T23:29:18.815Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Alpaca Markets IEX MRVL",
+          "url": "https://data.alpaca.markets/v2/stocks/MRVL/snapshot?feed=iex"
+        },
+        {
+          "title": "Yahoo Finance 9MW.DE",
+          "url": "https://finance.yahoo.com/quote/9MW.DE"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance MRVL",
+          "url": "https://finance.yahoo.com/quote/MRVL"
+        }
+      ]
     }
   ]
 }
