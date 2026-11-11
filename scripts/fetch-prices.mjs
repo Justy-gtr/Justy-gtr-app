@@ -14,19 +14,29 @@ import {
 } from "./alpaca.mjs";
 import {
   aggregateBars,
+  baselineForLivePrint,
+  berlinDayKey,
+  chooseIntraday,
+  displayedPrice,
   extendedQuote,
   failedTicker,
+  freshestGermanQuote,
+  freshestPrint,
   fxFor,
-  meaningful,
-  mergeTicker,
-  normalizePeriods,
-  resolveOvernight,
-  roundTo,
-  sessionEnded,
-  chooseIntraday,
+  germanMinuteSymbols,
   keepRecentSession,
   keepTradingDays,
+  latestOnNewYorkDay,
+  meaningful,
+  mergeGermanMinutes,
+  mergeTicker,
+  normalizePeriods,
+  emptyOvernight,
+  resolveOvernight,
+  roundTo,
   sessionBaseline,
+  sessionEnded,
+  sessionSpan,
   tagSessions,
   updateAlerts,
   usClockSession,
@@ -46,9 +56,9 @@ export const TICKERS = [
     venue: "Nasdaq",
     role: "Fokus",
     usdSymbol: "SPCX",
-    eurSymbols: [],
-    // Frankfurt handelt die Aktie ab 8 Uhr. Xetra (SPX.DE) erst ab 9 und ohne 15:00.
-    // Nur die Heatmap nutzt das. Der Tageskurs bleibt der US-Dollar-Kurs.
+    // Xetra ist der Euro-Platz. Frankfurt und Stuttgart drucken ab etwa 8 Uhr.
+    eurSymbols: ["SPX.DE", "SPX.F", "SPX.SG"],
+    // Heatmap: Frankfurt hat die 8-Uhr-Stunde, Xetra erst ab 9.
     earlySymbols: ["SPX.F", "SPX.DE"]
   },
   {
@@ -57,7 +67,7 @@ export const TICKERS = [
     venue: "Nasdaq",
     role: "Tesla",
     usdSymbol: "TSLA",
-    eurSymbols: ["TL0.DE", "TL0.F"]
+    eurSymbols: ["TL0.DE", "TL0.F", "TL0.SG"]
   },
   {
     symbol: "RKLB",
@@ -65,7 +75,7 @@ export const TICKERS = [
     venue: "Nasdaq",
     role: "Vergleich",
     usdSymbol: "RKLB",
-    eurSymbols: ["6RJ0.F", "6RJ0.MU"]
+    eurSymbols: ["6RJ0.F", "6RJ0.SG", "6RJ0.MU"]
   },
   {
     symbol: "MRVL",
@@ -73,8 +83,8 @@ export const TICKERS = [
     venue: "Nasdaq",
     role: "Halbleiter",
     usdSymbol: "MRVL",
-    // Xetra zuerst, Frankfurt als Ersatz. Beide in Euro, wie TL0 bei Tesla.
-    eurSymbols: ["9MW.DE", "9MW.F"]
+    // Xetra zuerst, Frankfurt und Stuttgart davor in der Minutenreihe.
+    eurSymbols: ["9MW.DE", "9MW.F", "9MW.SG"]
   }
 ];
 
@@ -171,13 +181,18 @@ function numberOrNull(value) {
   return value == null || Number.isNaN(Number(value)) ? null : Number(value);
 }
 
-function berlinDay(date) {
-  return new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Europe/Berlin",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit"
-  }).format(date);
+function widenSpan(base, extra) {
+  const highs = [base?.high, extra?.high].filter((value) => Number.isFinite(Number(value))).map(Number);
+  const lows = [base?.low, extra?.low].filter((value) => Number.isFinite(Number(value))).map(Number);
+  return {
+    high: highs.length ? Math.max(...highs) : null,
+    low: lows.length ? Math.min(...lows) : null
+  };
+}
+
+function quoteStamp(chart) {
+  if (!chart || chart.price == null || !chart.regularTime) return null;
+  return { price: chart.price, t: new Date(chart.regularTime * 1000).toISOString() };
 }
 
 function quoteLink(symbol) {
@@ -369,78 +384,162 @@ function toEurQuote(quote, rate) {
   };
 }
 
-async function loadTicker(spec, fx, previous, now = new Date(), usPack = null) {
-  let eurChart = null;
-  let eurSymbol = null;
-  for (const candidate of spec.eurSymbols) {
+async function loadChartMap(symbols, interval, range, label) {
+  const rows = await Promise.all((symbols || []).map(async (symbol) => {
     try {
-      const chart = await fetchChart(candidate, "1d", "5d");
-      if (chart?.currency === "EUR" && (chart.price != null || chart.points.length)) {
-        eurChart = chart;
-        eurSymbol = candidate;
-        break;
-      }
+      const chart = await fetchChart(symbol, interval, range);
+      return [symbol, chart];
     } catch (error) {
-      console.log(`::warning::${candidate}: ${error.message}`);
+      console.log(`::warning::${label} ${symbol}: ${error.message}`);
+      return null;
+    }
+  }));
+  return new Map(rows.filter(Boolean));
+}
+
+async function loadUsdMinutes(spec, usPack, now) {
+  const iexMinutes = minutePoints(spec.usdSymbol, usPack);
+  const iexCurrent = latestOnNewYorkDay(iexMinutes, now);
+  if (iexMinutes.length >= MIN_MINUTE_BARS && iexCurrent) {
+    return { chart: { points: iexMinutes, periods: null }, alpaca: true };
+  }
+  if (usPack && iexMinutes.length && !iexCurrent) {
+    const last = iexMinutes[iexMinutes.length - 1]?.t;
+    console.log(`Alpaca ${spec.symbol} 1m: letzter Druck ${last} liegt auf einem früheren Handelstag, Yahoo bleibt.`);
+  } else if (usPack && iexMinutes.length) {
+    console.log(`Alpaca ${spec.symbol} 1m: ${iexMinutes.length} Punkte, Yahoo bleibt.`);
+  }
+  try {
+    const chart = await fetchChart(spec.usdSymbol, INTRADAY_INTERVAL, INTRADAY_RANGE, { includePrePost: true });
+    return { chart, alpaca: false };
+  } catch (error) {
+    console.log(`::warning::Intraday ${spec.usdSymbol}: ${error.message}`);
+    try {
+      const chart = await fetchChart(spec.usdSymbol, INTRADAY_INTERVAL, INTRADAY_RANGE);
+      return { chart, alpaca: false };
+    } catch (fallbackError) {
+      console.log(`::warning::Intraday ${spec.usdSymbol}: ${fallbackError.message}`);
+      return { chart: null, alpaca: false };
     }
   }
+}
 
+async function loadTicker(spec, fx, previous, now = new Date(), usPack = null) {
+  const minuteSymbols = germanMinuteSymbols(spec);
   const iexChart = standingQuote(spec.usdSymbol, usPack, now);
   const quoteFromAlpaca = Boolean(iexChart && iexChart.price != null);
-  const usd = quoteFromAlpaca ? iexChart : await fetchChart(spec.usdSymbol, "1d", "5d");
-  const useEur = Boolean(eurSymbol);
-  const method = useEur ? "direct_eur" : "usd_div_eurusd";
-  const spotUsd = usd.price;
-  const spotEur = useEur ? eurChart.price : roundTo(usdToEur(spotUsd, fx.rate), 2);
-  const priceChart = useEur ? eurChart : usd;
-  const prevRaw = sessionBaseline(priceChart);
-  const prevEur = prevRaw == null
-    ? null
-    : (useEur ? roundTo(prevRaw, 2) : roundTo(usdToEur(prevRaw, fx.rate), 2));
-  const changePct = spotEur != null && prevEur ? roundTo(((spotEur - prevEur) / prevEur) * 100, 2) : null;
+  const [dailyRows, minuteRows, usd, usdMinutes] = await Promise.all([
+    loadChartMap(spec.eurSymbols, "1d", "5d", "Kurs"),
+    loadChartMap(minuteSymbols, INTRADAY_INTERVAL, INTRADAY_RANGE, "Intraday"),
+    quoteFromAlpaca ? Promise.resolve(iexChart) : fetchChart(spec.usdSymbol, "1d", "5d"),
+    loadUsdMinutes(spec, usPack, now)
+  ]);
+  const dailyBySymbol = new Map([...dailyRows].filter(([, chart]) => chart?.currency === "EUR" && (chart.price != null || chart.points.length)));
+  const minuteBySymbol = new Map([...minuteRows].filter(([, chart]) => chart?.currency === "EUR" && chart.points?.length));
+  const historySymbol = (spec.eurSymbols || []).find((symbol) => dailyBySymbol.has(symbol)) || null;
+  const historyChart = historySymbol ? dailyBySymbol.get(historySymbol) : null;
+  const useEur = Boolean(historySymbol);
+  let barsFromAlpaca = usdMinutes.alpaca;
+  const usdIntra = usdMinutes.chart;
 
   const history = { intraday: [], "5m": [], "1H": [], "4H": [], "1M": [], "6M": [], "1Y": [], "5Y": [] };
-  let intradayMethod = method;
-
-  let euIntra = null;
-  if (useEur && eurSymbol) {
-    try {
-      euIntra = await fetchChart(eurSymbol, INTRADAY_INTERVAL, INTRADAY_RANGE);
-    } catch (error) {
-      console.log(`::warning::Intraday ${eurSymbol}: ${error.message}`);
-    }
-  }
-  const iexMinutes = minutePoints(spec.usdSymbol, usPack);
-  let barsFromAlpaca = false;
-  let usdIntra = null;
-  if (iexMinutes.length >= MIN_MINUTE_BARS) {
-    usdIntra = { points: iexMinutes, periods: null };
-    barsFromAlpaca = true;
-  } else {
-    if (usPack && iexMinutes.length) {
-      console.log(`Alpaca ${spec.symbol} 1m: ${iexMinutes.length} Punkte, Yahoo bleibt.`);
-    }
-    try {
-      usdIntra = await fetchChart(spec.usdSymbol, INTRADAY_INTERVAL, INTRADAY_RANGE, { includePrePost: true });
-    } catch (error) {
-      console.log(`::warning::Intraday ${spec.usdSymbol}: ${error.message}`);
-      try {
-        usdIntra = await fetchChart(spec.usdSymbol, INTRADAY_INTERVAL, INTRADAY_RANGE);
-      } catch (fallbackError) {
-        console.log(`::warning::Intraday ${spec.usdSymbol}: ${fallbackError.message}`);
-      }
-    }
-  }
-
-  const usdIntraday = usdIntra
-    ? convertPoints(tagSessions(usdIntra.points, usdIntra.periods, { clock: true }), fx, fx.rate)
-    : [];
-  const euIntraday = euIntra
-    ? directPoints(euIntra.points).map((point) => ({ ...point, session: "regular" }))
-    : [];
-  const chosen = chooseIntraday(euIntraday, usdIntraday, method);
+  const taggedUsd = usdIntra ? tagSessions(usdIntra.points, usdIntra.periods, { clock: true }) : [];
+  const usdIntraday = taggedUsd.length ? convertPoints(taggedUsd, fx, fx.rate) : [];
+  const mergedGerman = mergeGermanMinutes(minuteSymbols.map((symbol) => ({
+    symbol,
+    points: minuteBySymbol.get(symbol)?.points || []
+  })).filter((group) => group.points.length));
+  const euIntraday = directPoints(mergedGerman).map((point) => ({ ...point, session: "regular" }));
+  const seriesFallback = useEur ? "direct_eur" : "usd_div_eurusd";
+  const chosen = chooseIntraday(euIntraday, usdIntraday, seriesFallback);
   history.intraday = keepRecentSession(chosen.points);
-  intradayMethod = chosen.method;
+  const intradayMethod = chosen.method;
+
+  const day = berlinDayKey(now);
+  const germanToday = freshestGermanQuote(minuteSymbols.map((symbol) => ({
+    symbol,
+    points: minuteBySymbol.get(symbol)?.points || [],
+    quote: quoteStamp(dailyBySymbol.get(symbol))
+  })), day);
+  const phase = usClockSession(now.getTime());
+  let usToday = null;
+  if (phase === "regular" && Number(usd.price) > 0 && usd.regularTime && berlinDayKey(usd.regularTime * 1000) === day) {
+    usToday = {
+      symbol: spec.usdSymbol,
+      price: usd.price,
+      session: "regular",
+      t: new Date(usd.regularTime * 1000).toISOString()
+    };
+  } else {
+    const print = freshestPrint(taggedUsd, { day, sessions: ["pre", "regular"] });
+    if (print) usToday = { symbol: spec.usdSymbol, price: print.price, session: print.session, t: print.t };
+  }
+  const fallback = useEur
+    ? {
+      symbol: historySymbol,
+      price: historyChart.price,
+      t: historyChart.regularTime ? new Date(historyChart.regularTime * 1000).toISOString() : null
+    }
+    : {
+      symbol: spec.usdSymbol,
+      price: usd.price,
+      t: usd.regularTime ? new Date(usd.regularTime * 1000).toISOString() : null
+    };
+  const tag = displayedPrice({ german: germanToday, us: usToday, fallback });
+
+  let spotUsd = usd.price;
+  let spotEur = null;
+  let prevRaw = null;
+  let prevDirect = false;
+  let method = seriesFallback;
+  let tagSymbol = useEur ? historySymbol : null;
+  if (tag?.kind === "eur") {
+    method = "direct_eur";
+    tagSymbol = tag.symbol;
+    spotEur = roundTo(tag.price, 2);
+    prevRaw = baselineForLivePrint(dailyBySymbol.get(tag.symbol) || historyChart, tag.t, now);
+    prevDirect = true;
+  } else if (tag?.kind === "usd") {
+    method = "usd_div_eurusd";
+    tagSymbol = null;
+    spotUsd = tag.price;
+    spotEur = roundTo(usdToEur(spotUsd, fx.rate), 2);
+    prevRaw = baselineForLivePrint(usd, tag.t, now) ?? usd.chartPreviousClose ?? usd.metaPrevious;
+    prevDirect = false;
+  } else if (useEur) {
+    spotEur = roundTo(historyChart.price, 2);
+    prevRaw = sessionBaseline(historyChart);
+    prevDirect = true;
+  } else {
+    spotEur = roundTo(usdToEur(spotUsd, fx.rate), 2);
+    prevRaw = sessionBaseline(usd);
+  }
+  const prevEur = prevRaw == null
+    ? null
+    : (prevDirect ? roundTo(prevRaw, 2) : roundTo(usdToEur(prevRaw, fx.rate), 2));
+  const changePct = spotEur != null && prevEur ? roundTo(((spotEur - prevEur) / prevEur) * 100, 2) : null;
+
+  let dayHigh = null;
+  let dayLow = null;
+  if (tag?.kind === "eur") {
+    const chart = dailyBySymbol.get(tag.symbol);
+    const meta = chart?.regularTime && berlinDayKey(chart.regularTime * 1000) === day
+      ? { high: chart.dayHigh, low: chart.dayLow }
+      : null;
+    const span = widenSpan(meta, sessionSpan(minuteBySymbol.get(tag.symbol)?.points, { day }));
+    dayHigh = span.high;
+    dayLow = span.low;
+  } else if (tag?.kind === "usd") {
+    const span = sessionSpan(taggedUsd, { day, sessions: ["pre", "regular"] });
+    dayHigh = span.high == null ? null : usdToEur(span.high, fx.rate);
+    dayLow = span.low == null ? null : usdToEur(span.low, fx.rate);
+  } else if (useEur) {
+    dayHigh = historyChart.dayHigh;
+    dayLow = historyChart.dayLow;
+  } else {
+    dayHigh = usdToEur(usd.dayHigh, fx.rate);
+    dayLow = usdToEur(usd.dayLow, fx.rate);
+  }
 
   const nowSec = Math.floor(now.getTime() / 1000);
   // fulldayPrice is not the last print: it keeps moving after the last candle. Unused.
@@ -450,8 +549,9 @@ async function loadTicker(spec, fx, previous, now = new Date(), usPack = null) {
   if (!computedUsd && usPack?.snapshots?.[spec.usdSymbol]) {
     computedUsd = extendedPrint(usPack.snapshots[spec.usdSymbol], now);
   }
-  const regularLive = usClockSession(now.getTime()) === "regular";
-  if (!computedUsd && useEur && regularLive && sessionEnded((euIntra || eurChart)?.periods, nowSec) && usd.price != null) {
+  const regularLive = phase === "regular";
+  const sessionChart = (historySymbol && minuteBySymbol.get(historySymbol)) || historyChart;
+  if (!computedUsd && useEur && regularLive && sessionEnded(sessionChart?.periods, nowSec) && usd.price != null) {
     computedUsd = {
       phase: "us",
       price: usd.price,
@@ -460,34 +560,41 @@ async function loadTicker(spec, fx, previous, now = new Date(), usPack = null) {
       asOf: usd.regularTime ? new Date(usd.regularTime * 1000).toISOString() : now.toISOString()
     };
   }
-  const overnight = resolveOvernight(toEurQuote(computedUsd, fx.rate), previous, { regularLive });
+  let overnight = resolveOvernight(toEurQuote(computedUsd, fx.rate), previous, { regularLive });
+  if (tag?.kind === "usd" && tag.session === "pre") overnight = emptyOvernight();
 
   const barOptions = { fx, spot: fx.rate, direct: useEur };
+  const rangeSymbol = useEur ? historySymbol : spec.usdSymbol;
   for (const [key, interval, range] of RANGES) {
-    const chart = await fetchChart(useEur ? eurSymbol : spec.usdSymbol, interval, range);
+    const chart = await fetchChart(rangeSymbol, interval, range);
     history[key] = eurBars(chart.points, barOptions);
   }
 
   try {
-    history["4H"] = await loadFourHour(useEur ? eurSymbol : spec.usdSymbol, barOptions);
+    history["4H"] = await loadFourHour(rangeSymbol, barOptions);
   } catch (error) {
     console.log(`::warning::4H ${spec.symbol}: ${error.message}`);
     history["4H"] = previous?.history?.["4H"] || [];
   }
 
-  const five = await loadFiveMinuteHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx, usPack });
+  const five = await loadFiveMinuteHistory(spec, { useEur, eurSymbol: historySymbol, intradayMethod, barOptions, fx, usPack });
   history["5m"] = five.bars || previous?.history?.["5m"] || [];
   if (five.iex) barsFromAlpaca = true;
 
-  const hourly = await loadHourlyHistory(spec, { useEur, eurSymbol, intradayMethod, barOptions, fx, usPack });
+  const hourly = await loadHourlyHistory(spec, { useEur, eurSymbol: historySymbol, intradayMethod, barOptions, fx, usPack });
   history["1H"] = hourly.bars || previous?.history?.["1H"] || [];
   if (hourly.iex) barsFromAlpaca = true;
 
   if (history["1M"].length && spotEur != null) {
     const last = history["1M"][history["1M"].length - 1];
-    last.eur = roundTo(spotEur, 2);
-    if (typeof last.high === "number") last.high = roundTo(Math.max(last.high, last.open ?? last.eur, last.eur), 2);
-    if (typeof last.low === "number") last.low = roundTo(Math.min(last.low, last.open ?? last.eur, last.eur), 2);
+    const sameVenue = !tagSymbol || tagSymbol === historySymbol;
+    const sameDay = berlinDayKey(last.t) === berlinDayKey(tag?.t || now);
+    const alignSpot = tag?.kind !== "usd" || !useEur;
+    if (sameVenue && sameDay && alignSpot) {
+      last.eur = roundTo(spotEur, 2);
+      if (typeof last.high === "number") last.high = roundTo(Math.max(last.high, last.open ?? last.eur, last.eur), 2);
+      if (typeof last.low === "number") last.low = roundTo(Math.min(last.low, last.open ?? last.eur, last.eur), 2);
+    }
   }
 
   const sparkSource = history.intraday.length ? history.intraday : history["1M"];
@@ -495,15 +602,13 @@ async function loadTicker(spec, fx, previous, now = new Date(), usPack = null) {
   const highs = [spotEur, ...history["5Y"].map((point) => point.eur), ...history["1Y"].map((point) => point.eur)]
     .filter((value) => value != null);
   const source = quoteFromAlpaca || barsFromAlpaca ? ALPACA_SOURCE : "yahoo";
+  const showEur = method === "direct_eur" && tagSymbol;
   const sources = [];
   if (source === ALPACA_SOURCE) sources.push(marketLink(spec.usdSymbol));
-  sources.push(quoteLink(useEur ? eurSymbol : spec.usdSymbol));
-  const needsFx = !useEur || intradayMethod !== "direct_eur" || overnight.eur != null;
+  sources.push(quoteLink(showEur ? tagSymbol : spec.usdSymbol));
+  const needsFx = !showEur || intradayMethod !== "direct_eur" || overnight.eur != null;
   if (needsFx) sources.push(fx.source);
-  if (useEur) sources.push(quoteLink(spec.usdSymbol));
-
-  const dayHigh = useEur ? eurChart.dayHigh : usdToEur(usd.dayHigh, fx.rate);
-  const dayLow = useEur ? eurChart.dayLow : usdToEur(usd.dayLow, fx.rate);
+  if (showEur) sources.push(quoteLink(spec.usdSymbol));
 
   return {
     symbol: spec.symbol,
@@ -524,8 +629,8 @@ async function loadTicker(spec, fx, previous, now = new Date(), usPack = null) {
     overnightLowEur: overnight.low,
     overnightAsOf: overnight.asOf,
     eurMethod: method,
-    eurVenue: useEur ? venueFor(eurSymbol) : null,
-    eurSymbol: eurSymbol,
+    eurVenue: showEur ? venueFor(tagSymbol) : null,
+    eurSymbol: showEur ? tagSymbol : null,
     usdSymbol: spec.usdSymbol,
     source,
     intradayMethod,
@@ -592,7 +697,7 @@ async function main() {
     },
     tickers: built.tickers
   };
-  const nextAlerts = updateAlerts(previousAlerts, built.tickers, nowIso, berlinDay(now));
+  const nextAlerts = updateAlerts(previousAlerts, built.tickers, nowIso, berlinDayKey(now));
   const nextMeta = {
     ...previousMeta,
     pricesUpdated: previousMeta.pricesUpdated || null,
@@ -646,6 +751,8 @@ async function main() {
         overnightLowEur: ticker.overnightLowEur,
         points: ticker.history["1M"].length,
         intraday: ticker.history.intraday.length,
+        intradayFrom: ticker.history.intraday[0]?.t || null,
+        intradayTo: ticker.history.intraday.at(-1)?.t || null,
         fiveM: ticker.history["5m"]?.length || 0,
         oneH: ticker.history["1H"]?.length || 0,
         fourH: ticker.history["4H"]?.length || 0

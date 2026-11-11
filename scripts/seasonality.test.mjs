@@ -566,7 +566,7 @@ test("Die Karte steht unter dem Muster und die Spanne lässt sie in Ruhe", () =>
   assert.ok(slot("SPCX", "10").n >= MIN_CASES);
   assert.ok(slot("SPCX", "15:00").n >= MIN_CASES);
   assert.match(spcx, /data-hour="08"/);
-  assert.match(spcx, /–/);
+  assert.match(tsla, /–/);
   const mrvlCard = renderSeasonalityCard(seasonality, { symbol: "MRVL" }, "all");
   assert.match(mrvlCard, /MRVL/);
   assert.match(mrvlCard, /vor 15:30: Handel in Deutschland/);

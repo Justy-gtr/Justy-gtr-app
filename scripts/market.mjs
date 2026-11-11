@@ -26,8 +26,31 @@ export function venueFor(symbol) {
   if (!symbol) return null;
   if (symbol.endsWith(".DE")) return "Xetra";
   if (symbol.endsWith(".F")) return "Frankfurt";
+  if (symbol.endsWith(".SG")) return "Stuttgart";
   if (symbol.endsWith(".MU")) return "München";
   return null;
+}
+
+/**
+ * Minute symbols for one ticker: Frankfurt, then Stuttgart, then Xetra, then the rest.
+ * Xetra is not first. It opens at 09:00, the other two around 08:00.
+ */
+export function germanMinuteSymbols(spec) {
+  const seen = new Set();
+  const frankfurt = [];
+  const stuttgart = [];
+  const xetra = [];
+  const rest = [];
+  for (const symbol of [...(spec?.eurSymbols || []), ...(spec?.earlySymbols || [])]) {
+    const text = String(symbol || "").trim();
+    if (!text || seen.has(text)) continue;
+    seen.add(text);
+    if (/\.F$/i.test(text)) frankfurt.push(text);
+    else if (/\.SG$/i.test(text)) stuttgart.push(text);
+    else if (/\.DE$/i.test(text)) xetra.push(text);
+    else rest.push(text);
+  }
+  return [...frankfurt, ...stuttgart, ...xetra, ...rest];
 }
 
 const NARRATIVE_KEYS = ["why", "whySources", "longTermOutlook", "counterArgument", "firstPrinciples", "notes"];
@@ -73,7 +96,9 @@ export function impliedChangePct(priceEur, previousCloseEur) {
   return ((price - prev) / prev) * 100;
 }
 
-function berlinDayOf(date) {
+export function berlinDayKey(value) {
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return null;
   return new Intl.DateTimeFormat("en-CA", {
     timeZone: "Europe/Berlin",
     year: "numeric",
@@ -95,7 +120,7 @@ export function priorCloseFromHistory(ticker, now = new Date()) {
   if (bars.length < 2) return null;
   const last = bars[bars.length - 1];
   const prev = bars[bars.length - 2];
-  const today = berlinDayOf(now instanceof Date ? now : new Date(now));
+  const today = berlinDayKey(now instanceof Date ? now : new Date(now));
   const price = Number(ticker.priceEur);
   const lastEur = Number(last.eur);
   const lastIsSpot = String(last.t).slice(0, 10) === today
@@ -338,6 +363,38 @@ export function sessionBaseline(chart) {
   return previousSessionClose(chart);
 }
 
+/**
+ * Previous close for a live print.
+ * A daily bar that is still yesterday must not be treated as the bar before that:
+ * the print is a new session, so yesterday itself is the baseline.
+ */
+export function baselineForLivePrint(chart, spotTime, now = new Date()) {
+  const bars = (chart?.points || [])
+    .filter((point) => point && point.t && Number.isFinite(Number(point.close)))
+    .slice()
+    .sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
+  if (bars.length < 2) return null;
+  const spot = spotTime ? new Date(spotTime) : (now instanceof Date ? now : new Date(now));
+  const spotDay = berlinDayKey(spot);
+  const lastDay = berlinDayKey(bars[bars.length - 1].t);
+  if (spotDay && lastDay && spotDay > lastDay) return Number(bars[bars.length - 1].close);
+  return sessionBaseline(chart);
+}
+
+/** True when the newest bar is on the same New York date as `now`. */
+export function latestOnNewYorkDay(points, now = new Date()) {
+  const when = now instanceof Date ? now : new Date(now);
+  if (Number.isNaN(when.getTime())) return false;
+  let latest = null;
+  for (const point of points || []) {
+    const time = Date.parse(point?.t);
+    if (!Number.isFinite(time)) continue;
+    if (latest == null || time > latest) latest = time;
+  }
+  if (latest == null) return false;
+  return nyParts(new Date(latest)).date === nyParts(when).date;
+}
+
 /** US cash session by the New York clock. Half-open: 04:00 pre, 09:30 regular, 16:00 post, 20:00 closed. */
 export function usClockSession(epochMs) {
   const parts = nyParts(new Date(epochMs));
@@ -490,6 +547,160 @@ export function stitchIntraday(primary, extra) {
   const last = Date.parse(base[base.length - 1].t);
   if (!Number.isFinite(last)) return base.concat(extra);
   return base.concat(extra.filter((point) => Date.parse(point.t) > last));
+}
+
+function pointPrice(point) {
+  const price = Number(point?.close ?? point?.eur ?? point?.price);
+  return Number.isFinite(price) ? price : null;
+}
+
+function sortByTime(points) {
+  return (points || [])
+    .filter((point) => point && point.t && Number.isFinite(Date.parse(point.t)))
+    .slice()
+    .sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
+}
+
+function dedupeMinutes(points) {
+  const map = new Map();
+  for (const point of sortByTime(points)) map.set(point.t, point);
+  return [...map.values()];
+}
+
+/** Earlier groups keep a shared minute. Later groups only fill minutes that are still empty. */
+export function fillMinuteGaps(groups) {
+  const map = new Map();
+  for (const group of groups || []) {
+    const points = Array.isArray(group) ? group : group?.points;
+    for (const point of dedupeMinutes(points)) {
+      if (!map.has(point.t)) map.set(point.t, point);
+    }
+  }
+  return [...map.values()].sort((a, b) => Date.parse(a.t) - Date.parse(b.t));
+}
+
+/**
+ * Frankfurt and Stuttgart from about 08:00, then Xetra for its own span, then the early venues again after Xetra's last print.
+ * Without a Xetra series the venues are merged first, so a thin Frankfurt tape still counts with Stuttgart.
+ */
+export function mergeGermanMinutes(groups) {
+  const list = (groups || []).filter((group) => group?.points?.length);
+  const primary = list.find((group) => String(group.symbol || "").endsWith(".DE"));
+  const early = list.filter((group) => group !== primary);
+  const earlyPoints = fillMinuteGaps(early);
+  if (!primary) return earlyPoints;
+  const xetra = dedupeMinutes(primary.points);
+  if (!xetra.length) return earlyPoints;
+  const first = Date.parse(xetra[0].t);
+  const last = Date.parse(xetra[xetra.length - 1].t);
+  const before = earlyPoints.filter((point) => Date.parse(point.t) < first);
+  const after = earlyPoints.filter((point) => Date.parse(point.t) > last);
+  return [...before, ...xetra, ...after];
+}
+
+/** Newest print on a Berlin day. `sessions` limits US pre/regular when the points are tagged. */
+export function freshestPrint(points, { day = null, sessions = null } = {}) {
+  let best = null;
+  for (const point of points || []) {
+    const time = Date.parse(point?.t);
+    if (!Number.isFinite(time)) continue;
+    if (day && berlinDayKey(time) !== day) continue;
+    if (sessions && !sessions.includes(point.session)) continue;
+    const price = pointPrice(point);
+    if (price == null) continue;
+    if (!best || time > best.time) {
+      const high = Number(point.high);
+      const low = Number(point.low);
+      best = {
+        t: point.t,
+        time,
+        price,
+        session: point.session || null,
+        high: Number.isFinite(high) ? high : null,
+        low: Number.isFinite(low) ? low : null
+      };
+    }
+  }
+  return best;
+}
+
+/** Latest German print today. A quote timestamp newer than the last minute wins. */
+export function freshestGermanQuote(groups, day) {
+  let best = null;
+  for (const group of groups || []) {
+    const minute = freshestPrint(group?.points, { day });
+    let candidate = minute
+      ? { symbol: group.symbol || null, price: minute.price, t: minute.t, time: minute.time, session: minute.session || "regular" }
+      : null;
+    const quote = group?.quote;
+    const quotePrice = Number(quote?.price);
+    const quoteTime = Date.parse(quote?.t);
+    if (quote && quotePrice > 0 && Number.isFinite(quoteTime) && berlinDayKey(quoteTime) === day) {
+      if (!candidate || quoteTime > candidate.time) {
+        candidate = {
+          symbol: group.symbol || null,
+          price: quotePrice,
+          t: new Date(quoteTime).toISOString(),
+          time: quoteTime,
+          session: "regular"
+        };
+      }
+    }
+    if (candidate && (!best || candidate.time > best.time)) best = candidate;
+  }
+  return best;
+}
+
+export function sessionSpan(points, { day = null, sessions = null } = {}) {
+  let high = null;
+  let low = null;
+  for (const point of points || []) {
+    const time = Date.parse(point?.t);
+    if (!Number.isFinite(time)) continue;
+    if (day && berlinDayKey(time) !== day) continue;
+    if (sessions && !sessions.includes(point.session)) continue;
+    const upper = Number(point.high ?? point.close ?? point.eur ?? point.price);
+    const lower = Number(point.low ?? point.close ?? point.eur ?? point.price);
+    if (Number.isFinite(upper)) high = high == null ? upper : Math.max(high, upper);
+    if (Number.isFinite(lower)) low = low == null ? lower : Math.min(low, lower);
+  }
+  return { high, low };
+}
+
+/**
+ * Tag price. A German print from today stays ahead of a later US pre-market print.
+ * US pre or regular replaces yesterday's close only when no German venue has printed today.
+ * A post-market print does not replace the regular close.
+ */
+export function displayedPrice({ german = null, us = null, fallback = null } = {}) {
+  if (german && Number(german.price) > 0) {
+    return {
+      kind: "eur",
+      symbol: german.symbol || null,
+      price: Number(german.price),
+      t: german.t || null,
+      session: german.session || "regular"
+    };
+  }
+  if (us && Number(us.price) > 0 && (us.session === "pre" || us.session === "regular")) {
+    return {
+      kind: "usd",
+      symbol: us.symbol || null,
+      price: Number(us.price),
+      t: us.t || null,
+      session: us.session
+    };
+  }
+  if (fallback && Number(fallback.price) > 0) {
+    return {
+      kind: "close",
+      symbol: fallback.symbol || null,
+      price: Number(fallback.price),
+      t: fallback.t || null,
+      session: fallback.session || null
+    };
+  }
+  return null;
 }
 
 /**
