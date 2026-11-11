@@ -14,7 +14,7 @@ import {
 } from "../js/analysis.js";
 import { seriesFor } from "../js/logic.js";
 
-const ADVICE = /\b(kaufen|verkaufen|kauft|verkauft|kauf|verkauf|long|short|empfehl\w*|signal|tipp)\b/i;
+const ADVICE = /\b(kaufen|verkaufen|kauft|verkauft|kauf|verkauf|empfehl\w*|signal|tipp)\b|\b(long|short)\b(?!: Wie oft)/i;
 
 const DAY = 86400000;
 

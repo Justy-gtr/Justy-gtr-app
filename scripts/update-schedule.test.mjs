@@ -153,6 +153,6 @@ test("Mehr zeigt den Knopf, die Tafel die drei Blöcke", () => {
   assert.equal(detail.html.includes("Keine Anlageberatung"), false);
   assert.equal(BANNED.test(detail.html), false);
   const sw = fs.readFileSync("sw.js", "utf8");
-  assert.match(sw, /jgtr-v38/);
+  assert.match(sw, /jgtr-v39/);
   assert.match(sw, /js\/update-schedule\.js/);
 });

@@ -319,7 +319,6 @@
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.45);
 }
 .season-pre { margin: 0; font-size: 12px; color: var(--muted); }
-.season-card .chart-legend { font-size: 12px; line-height: 1.35; }
 .swatch.pattern { background: #9fdfff; color: #9fdfff; }
 .analysis .swatch.pattern, .guide-legend .swatch.pattern { background: rgba(232, 234, 240, 0.8); color: rgba(232, 234, 240, 0.8); }
 .swatch.mark {
