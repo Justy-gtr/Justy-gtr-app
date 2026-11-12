@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T16:21:00+01:00",
+  "updatedAt": "2026-11-12T16:26:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 55,
+      "score": 45,
       "postsCount": 15,
-      "reason": "SpaceX: Rund 5 % im Plus. Fast alle reden über Huang und Musk, ein Wechsel ist aber nur ein Gerücht. Einige nennen es Hype. Flight 15 ist für Freitag geplant.",
+      "reason": "SpaceX: Erst bis 5,6 % im Plus, jetzt noch gut 2 % bei 143 $. Viele hoffen auf Huang bei SpaceX, von Musk gibt es dazu noch nichts. Flight 15 ist am Freitag.",
       "sources": [
         {
-          "title": "TommyATX: SPCX +5,2 %",
-          "url": "https://x.com/tommyatx/status/2120896818133262567"
+          "title": "Hoch 147,58 $, jetzt 142,9 $",
+          "url": "https://x.com/gonta_southwood/status/2120899193988690273"
         },
         {
-          "title": "Angie G: Huang zu Musk?",
-          "url": "https://x.com/MomAngtrades/status/2120896692015038886"
+          "title": "Huang schnell zu SpaceX holen?",
+          "url": "https://x.com/phithetasigma/status/2120899870806671501"
         },
         {
-          "title": "Huang und Musk zusammen?",
-          "url": "https://x.com/AdamPlotkin/status/2120897574412689890"
+          "title": "Flight 15 mit Fangversuch",
+          "url": "https://x.com/davideverist350/status/2120900325414670604"
         }
       ],
-      "updatedAt": "2026-11-12T16:21:00+01:00"
+      "updatedAt": "2026-11-12T16:26:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 20,
+      "score": 5,
       "postsCount": 15,
-      "reason": "Tesla: Leicht im Plus, viele schauen auf den Ausbruch über 395 bis 400 $. Robotaxi fährt rund um die Uhr in 8 Städten. Fans hoffen auf Huang, Skeptiker warnen.",
+      "reason": "Tesla: Jetzt leicht im Minus, der Kurs prallte an 392 $ ab. Fans hoffen weiter auf Huang, andere fragen, warum er bei Tesla besser passen sollte als bei Nvidia.",
       "sources": [
         {
-          "title": "Robotaxi rund um die Uhr",
-          "url": "https://x.com/Maximilius31/status/2120895034568368254"
+          "title": "Tesla dreht ins Minus",
+          "url": "https://x.com/na_option/status/2120899690795331845"
         },
         {
-          "title": "Angie G: Huang zu Musk?",
-          "url": "https://x.com/MomAngtrades/status/2120896692015038886"
+          "title": "Zweifel an der Huang-Idee",
+          "url": "https://x.com/realmikecolin/status/2120899545068695602"
         },
         {
-          "title": "Ausbruchszone 395 $",
-          "url": "https://x.com/StockXcapital/status/2120898375709245674"
+          "title": "Squawksquare: von NVDA zu TSLA",
+          "url": "https://x.com/squawksquare/status/2120900011005485161"
         }
       ],
-      "updatedAt": "2026-11-12T16:21:00+01:00"
+      "updatedAt": "2026-11-12T16:26:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
