@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-12T09:55:00+01:00",
+  "asOf": "2026-11-12T11:45:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,29 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2120809238121586952",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-12T10:21:39+01:00",
+      "summaryDe": "Auf einen Post, die führenden KI-Labore setzten sich vom Rest ab und Musk wirke damit zu entspannt, antwortet er: Der Weg sei lang, „wir sind noch auf der ersten Meile“, auch wenn es anders wirke. Neue Zahlen oder Termine zu Grok nennt er nicht.",
+      "originalText": "The road ahead is long and we are still in the first mile, although it may seem otherwise",
+      "url": "https://x.com/elonmusk/status/2120809238121586952",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX (SI, ehemals xAI)"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „The road ahead is long …“ (12.11., 10:21)",
+          "url": "https://x.com/elonmusk/status/2120809238121586952"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2120761716632129873",
       "account": "@elonmusk",
