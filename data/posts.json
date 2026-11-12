@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-12T16:00:00+01:00",
+  "asOf": "2026-11-12T18:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,41 @@
     }
   },
   "posts": [
+    {
+      "id": "post-spacex-2120912086989426746",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-12T17:10:20+01:00",
+      "summaryDe": "SpaceX sagt 220 Mio. $ für den Ausbau der Wasser- und Abwassernetze in Brownsville und im Cameron County zu, laut SpaceX der größte private Beitrag in der Geschichte der Stadt. In einer Reihe von Posts verweist SpaceX auf das geplante Rechenzentrum bei Starbase, für das auch eine alte illegale Müllkippe geräumt werde, und auf Jobs und Steuereinnahmen von Texas bis Cochise County (Arizona). Musk teilte die Reihe mit „SpaceX community benefits“. Neue Zahlen zum Rechenzentrum selbst nennt SpaceX nicht.",
+      "originalText": "SpaceX has committed $220 million to expand water and wastewater infrastructure for Brownsville and Cameron County -- the largest private contribution to Brownsville’s water future in the city’s history.",
+      "url": "https://x.com/SpaceX/status/2120912086989426746",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX: 220 Mio. $ für Wasser in Brownsville (12.11., 17:10)",
+          "url": "https://x.com/SpaceX/status/2120912086989426746"
+        },
+        {
+          "title": "@SpaceX: Aufräumen am Rechenzentrums-Gelände Starbase (12.11., 17:09)",
+          "url": "https://x.com/SpaceX/status/2120911969087607288"
+        },
+        {
+          "title": "@SpaceX: „SpaceX builds the infrastructure of the future“ (12.11., 17:08)",
+          "url": "https://x.com/SpaceX/status/2120911599749697879"
+        },
+        {
+          "title": "@elonmusk: „SpaceX community benefits“ (12.11., 17:10)",
+          "url": "https://x.com/elonmusk/status/2120912138772369758"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2120809238121586952",
       "account": "@elonmusk",
