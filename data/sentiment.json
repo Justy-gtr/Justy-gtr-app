@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T15:51:00+01:00",
+  "updatedAt": "2026-11-12T15:56:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 50,
-      "postsCount": 12,
-      "reason": "SpaceX: Nach Börsenstart bis zu 5,6 % im Plus, während Nvidia fällt. Viele hoffen, dass Huang zu SpaceX kommt; Kalshi sieht dafür 38 %. Freitag folgt Flight 15.",
+      "score": 45,
+      "postsCount": 15,
+      "reason": "SpaceX: Nach Huangs Rücktritt träumen viele, dass er zu SpaceX wechselt. Dazu Vorfreude auf Flight 15 am Freitag und die geplante Bergung beider Stufen.",
       "sources": [
         {
-          "title": "SpaceX bis +5,6 %",
-          "url": "https://x.com/gonta_southwood/status/2120891203415834625"
+          "title": "Huang-Wechsel zu SpaceX?",
+          "url": "https://x.com/nisalrenuja/status/2120886257786184149"
         },
         {
-          "title": "Kalshi: 38 % für Huang-Wechsel",
-          "url": "https://x.com/OInvests/status/2120889402058522650"
+          "title": "Flight 15 und SPCX",
+          "url": "https://x.com/LucasSa54749430/status/2120883546554331570"
         },
         {
-          "title": "Händler spekulieren auf Huang",
-          "url": "https://x.com/HammerstoneMar3/status/2120889385751376149"
+          "title": "Nvidia und SpaceX auf Kalshi",
+          "url": "https://x.com/cthrin/status/2120882653058748886"
         }
       ],
-      "updatedAt": "2026-11-12T15:51:00+01:00"
+      "updatedAt": "2026-11-12T15:56:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 15,
-      "postsCount": 12,
-      "reason": "Tesla: Startet leicht im Plus um 390 $. Optionshändler sehen 400 $ als Deckel und 370 $ als Boden. Fans wünschen sich Huang bei Tesla, Kritiker warnen vor Sicherheitsfragen.",
+      "score": 10,
+      "postsCount": 15,
+      "reason": "Tesla: Viel Werbe-Spam, wenig Neues. Chartleute sehen 395 bis 400 $ als Hürde. Fans hoffen auf Huang bei Tesla, einige Börsenbriefe raten eher zur Vorsicht.",
       "sources": [
         {
-          "title": "Magnificent 7 zum Start",
-          "url": "https://x.com/stocksnipa/status/2120889509147472200"
+          "title": "Hürde bei 395 bis 400 $",
+          "url": "https://x.com/Perdu2You/status/2120882787356164153"
         },
         {
-          "title": "Optionen: 400 $ und 370 $",
-          "url": "https://x.com/Stop_Loss1/status/2120890675583476155"
+          "title": "Huang und Tesla/SpaceX",
+          "url": "https://x.com/Maximilius31/status/2120881947069047059"
         },
         {
-          "title": "Fans: Huang zu Tesla",
-          "url": "https://x.com/KHerriage/status/2120889033211379750"
+          "title": "FSD und Robotaxi im Fokus",
+          "url": "https://x.com/maxrock2306/status/2120882961289728076"
         }
       ],
-      "updatedAt": "2026-11-12T15:51:00+01:00"
+      "updatedAt": "2026-11-12T15:56:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 11,
-      "reason": "Rocket Lab: Fans teilen Bilder nächtlicher Neutron-Kältetests und bekommen Hoffnung durch Pentagon-Kredite. Manche hoffen, ein Huang-Wechsel hebt alle Raumfahrtwerte.",
+      "score": 35,
+      "postsCount": 15,
+      "reason": "Rocket Lab: Seeking Alpha schreibt positiv über Neutron. Finanzchef sagt, Neutron-Buchungen sind mit echten Anzahlungen gesichert. Dazu Pentagon-Kredite.",
       "sources": [
+        {
+          "title": "Seeking Alpha zu Neutron",
+          "url": "https://x.com/SeekingAlpha/status/2120891880930160844"
+        },
+        {
+          "title": "Anzahlungen für Neutron",
+          "url": "https://x.com/MrBig8x6/status/2120879647051448442"
+        },
         {
           "title": "Neutron-Kältetests",
           "url": "https://x.com/nikogeorge/status/2120889202569044249"
-        },
-        {
-          "title": "Pentagon-Kredite, NASA-Aufträge",
-          "url": "https://x.com/tychodotmedia/status/2120889770155151538"
-        },
-        {
-          "title": "Raumfahrt-Rally erhofft",
-          "url": "https://x.com/IcenezzNL/status/2120889234668282169"
         }
       ],
-      "updatedAt": "2026-11-12T15:51:00+01:00"
+      "updatedAt": "2026-11-12T15:56:00+01:00"
     }
   }
 }
