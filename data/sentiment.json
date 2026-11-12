@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T08:18:00+01:00",
+  "updatedAt": "2026-11-12T08:25:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -22,7 +22,7 @@
           "url": "https://x.com/lanios_/status/2120766040036852170"
         }
       ],
-      "updatedAt": "2026-11-12T08:18:00+01:00"
+      "updatedAt": "2026-11-12T08:25:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,7 +43,7 @@
           "url": "https://x.com/StonkKing4/status/2120747589473841577"
         }
       ],
-      "updatedAt": "2026-11-12T08:18:00+01:00"
+      "updatedAt": "2026-11-12T08:25:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/pledisme/status/2120756287608906041"
         }
       ],
-      "updatedAt": "2026-11-12T08:18:00+01:00"
+      "updatedAt": "2026-11-12T08:25:00+01:00"
     }
   }
 }
