@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T10:23:00+01:00",
+  "updatedAt": "2026-11-12T10:34:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -22,28 +22,28 @@
           "url": "https://x.com/manager_magazin/status/2120806007190499511"
         }
       ],
-      "updatedAt": "2026-11-12T10:23:00+01:00"
+      "updatedAt": "2026-11-12T10:34:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 35,
       "postsCount": 25,
-      "reason": "Tesla: Robotaxi rund um die Uhr bleibt Thema. FSD jetzt in 11 EU-Ländern, Verkäufe in Südkorea mehr als verdoppelt. Kritiker zeigen FSD-Unfälle.",
+      "reason": "Tesla: Finnland erlaubt FSD (TAD), EU-Freigabe am 1.12. erhofft. Robotaxi rund um die Uhr bleibt Thema. Kritiker zeigen Robotaxi-Unfälle. Fusion mit SpaceX im Gespräch.",
       "sources": [
+        {
+          "title": "Finnland gibt grünes Licht für TAD",
+          "url": "https://x.com/RonnyGolisch/status/2120810336311722368"
+        },
         {
           "title": "Robotaxi 24/7 in allen Städten",
           "url": "https://x.com/EFIEBER_ANDRE/status/2120784365747601796"
         },
         {
-          "title": "Südkorea: Tesla-Verkäufe +110 %",
-          "url": "https://x.com/thinkercar/status/2120798486501138728"
-        },
-        {
-          "title": "Kritik an FSD-Unfällen",
-          "url": "https://x.com/BradMunchen/status/2120775388456734991"
+          "title": "Kritik an Robotaxi-Unfällen",
+          "url": "https://x.com/BradMunchen/status/2120811685980389457"
         }
       ],
-      "updatedAt": "2026-11-12T10:23:00+01:00"
+      "updatedAt": "2026-11-12T10:34:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/AktienETFNewbie/status/2120772528150860262"
         }
       ],
-      "updatedAt": "2026-11-12T10:23:00+01:00"
+      "updatedAt": "2026-11-12T10:34:00+01:00"
     }
   }
 }
