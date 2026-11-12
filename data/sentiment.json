@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T13:17:00+01:00",
+  "updatedAt": "2026-11-12T13:34:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 0,
+      "score": 15,
       "postsCount": 20,
-      "reason": "SpaceX: Kalshi meldet über 4 % Minus, verknüpft mit Musks Lob für Jensen Huang. Andere finden Huang bei SpaceX spannend. Flug 15 bleibt für Freitag 22:45 Uhr geplant.",
+      "reason": "SpaceX: Countdown zu Flug 15 morgen, viele hoffen auf Huang bei SpaceX. Neu: Starlink-Mobilfunknetz mit Qualcomm. Anthropics Börsengang könnte SpaceX-Rekord übertreffen.",
       "sources": [
         {
-          "title": "Kalshi: SPCX über 4 % im Minus",
-          "url": "https://x.com/Kalshi_Finance/status/2120849049284661707"
+          "title": "Morgen: Flug 15",
+          "url": "https://x.com/outerspacetoday/status/2120854225546846542"
         },
         {
-          "title": "Huang zu SpaceX/xAI?",
-          "url": "https://x.com/JesseCohenInv/status/2120851139105079336"
+          "title": "Anthropic-IPO vs. SpaceX",
+          "url": "https://x.com/coinbureau/status/2120856439040401860"
         },
         {
-          "title": "Flug 15 am Freitag",
-          "url": "https://x.com/metanoia_ki/status/2120852835877187853"
+          "title": "Starlink-Mobilfunk mit Qualcomm",
+          "url": "https://x.com/IDEric_/status/2120856813902213311"
         }
       ],
-      "updatedAt": "2026-11-12T13:17:00+01:00"
+      "updatedAt": "2026-11-12T13:34:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 25,
-      "postsCount": 15,
-      "reason": "Tesla: Robotaxi-Zähler zeigt über 5 Mio. autonome Meilen. J.P. Morgan erwartet bis 2030 viele Roboter, Tesla vorne. Kritik: BYD exportiert mehr Autos als Tesla ausliefert.",
+      "postsCount": 7,
+      "reason": "Tesla: Fans freuen sich, dass Tesla nicht mehr Schlusslicht der Mag-7 seit Jahresbeginn ist, Nvidia jetzt schon. Florida wirbt weiter um den Firmensitz. FSD-Nutzer loben.",
       "sources": [
         {
-          "title": "Robotaxi: 5 Mio. Meilen",
-          "url": "https://x.com/daltonskach/status/2120852490136801601"
+          "title": "Mag-7: Tesla nicht mehr Letzter",
+          "url": "https://x.com/DRJBori63/status/2120853337876611329"
         },
         {
-          "title": "J.P. Morgan zu Humanoiden",
-          "url": "https://x.com/Michael34952/status/2120851562905964752"
+          "title": "Florida wirbt um Tesla",
+          "url": "https://x.com/RonnyGolisch/status/2120853573122560032"
         },
         {
-          "title": "BYD-Exporte vs. Tesla",
-          "url": "https://x.com/JungleReportFi/status/2120852363632066668"
+          "title": "97 % auf FSD gefahren",
+          "url": "https://x.com/Chansoo/status/2120855385024450956"
         }
       ],
-      "updatedAt": "2026-11-12T13:17:00+01:00"
+      "updatedAt": "2026-11-12T13:34:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 40,
-      "postsCount": 7,
-      "reason": "Rocket Lab: ARK kauft laut Posts im Rücksetzer zu. Nachts liefen laute Kältetests an Neutron. Peter Beck: Die Hälfte der Neutron-Starts soll eigene Satelliten bringen.",
+      "postsCount": 8,
+      "reason": "Rocket Lab: Börsenwert in einer Woche von unter 30 auf fast 45 Mrd. $ gestiegen, Langzeitanleger jubeln. Einige warnen vor einem roten Tag wegen der Nvidia-Krise.",
       "sources": [
         {
-          "title": "ARK stockt auf",
-          "url": "https://x.com/rmzerozero/status/2120849957473108028"
+          "title": "Börsenwert fast 45 Mrd. $",
+          "url": "https://x.com/rmzerozero/status/2120853147161653340"
         },
         {
-          "title": "Neutron-Kältetests",
-          "url": "https://x.com/kyle_LTS/status/2120852091149180932"
+          "title": "Langzeit-Sparplan seit 2021",
+          "url": "https://x.com/yourherofraser/status/2120855704974016950"
         },
         {
-          "title": "Beck zu Neutron",
-          "url": "https://x.com/SpaceInvestor_D/status/2120851476759171315"
+          "title": "Tech unter Druck durch Nvidia",
+          "url": "https://x.com/Dividendplays/status/2120854981331014095"
         }
       ],
-      "updatedAt": "2026-11-12T13:17:00+01:00"
+      "updatedAt": "2026-11-12T13:34:00+01:00"
     }
   }
 }
