@@ -6351,79 +6351,83 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Do 20:00: SpaceX an der Nasdaq 142,17 $ um 20:02 (+1,7 % zum Schluss von 139,75 $), Tageshoch 147,58 $ (Yahoo). Neu am Nachmittag: SpaceX will mehr als 74 Mrd. $ in zwei Supercompute-Standorte stecken, rund 50 Mrd. $ in Cochise County (Arizona) und 24 Mrd. $ in Starbase (Reuters/CNA, Bloomberg Law). CNBC nennt das als Grund für das Plus; zudem hob CLSA das Kursziel laut CNBC auf 300 $ (bisher 250 $). Weiter wirkt die Spekulation, Musk könne Huang holen; Gespräche sind nicht bekannt (Investing.com). Markt um 20:02: Nvidia 164,67 $ (−5,2 %) nach Huangs Rücktritt, ohne festen Nachfolger. Gewinner sind Konkurrenten: AMD +4,6 %, Broadcom +5,2 %; Verlierer: Nebius −17,9 % (höhere Investitionspläne), CoreWeave −7,7 %. Nasdaq −0,3 %, S&P 500 −0,2 % (Yahoo). Dazu steigt die 10-jährige US-Rendite auf 5,107 %, eine Fed-Zinserhöhung im Dezember gilt laut CME FedWatch als sicher (CNBC). Nach US-Schluss berichten Cisco und Applied Materials. Flight 15 (Fr 23:45) wartet weiter auf die FAA-Lizenz.",
+      "why": "Stand Do 22:00: SpaceX schloss an der Nasdaq bei 139,94 $ (+0,1 % zum Schluss von 139,75 $), nach einem Tageshoch von 147,58 $ (Yahoo). Das Plus vom Nachmittag ist damit fast weg. Getragen hatten es die Pläne für mehr als 74 Mrd. $ in zwei Supercompute-Standorte (Cochise/Arizona rund 50 Mrd. $, Starbase 24 Mrd. $) und die Spekulation, Musk könne Huang holen; Musk stimmte am Abend Naval zu, man ersetze einen Gründer nicht einfach, ein Angebot ist nicht bekannt (SpaceX, Reuters/CNA, Investing.com, X). Markt zum US-Schluss: Nvidia 166,19 $ (−4,3 %) nach Huangs Rücktritt, ohne festen Nachfolger; Reuters berichtet über eine dritte Affäre. AMD +5,9 %, Nebius −16,8 %, Applied Materials −3,6 % vor den Zahlen. Nasdaq −0,4 %, S&P 500 −0,4 %, die 10-jährige US-Rendite bei rund 5,10 % (Yahoo, Reuters/CNA). Nach US-Schluss: Cisco übertraf die Erwartungen (18,5 Mrd. $ Umsatz, KI-Umsatz-Ziel mit Hyperscalern auf 9 Mrd. $ erhöht) und stieg nachbörslich um 5,1 %; Applied Materials meldete Rekordumsatz von 10,41 Mrd. $, nachbörslich −0,6 % (Cisco, Applied Materials, Yahoo 22:10). Flight 15 (Fr 23:45) wartet weiter auf die FAA-Lizenz.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX (12.11., 20:02)",
+          "title": "Yahoo Finance: SPCX (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/SPCX/"
+        },
+        {
+          "title": "SpaceX: Updates – Supercompute in Texas und Arizona (12.11.)",
+          "url": "https://www.spacex.com/updates/starships-fly"
         },
         {
           "title": "Reuters/CNA: SpaceX will über 74 Mrd. $ in zwei Supercompute-Standorte investieren (12.11.)",
           "url": "https://www.channelnewsasia.com/business/spacex-invest-over-74-billion-in-supercompute-facilities-in-texas-arizona-6547056"
         },
         {
-          "title": "Bloomberg Law: SpaceX plant Rechenzentren für 74 Mrd. $ in Arizona und Texas (12.11.)",
-          "url": "https://news.bloomberglaw.com/artificial-intelligence/spacex-plans-74-billion-data-center-projects-in-arizona-texas"
-        },
-        {
-          "title": "Teslarati: SpaceX nennt 50 Mrd. $ für den Campus in Arizona (12.11.)",
-          "url": "https://www.teslarati.com/spacex-arizona-supercomputer-tombstone/"
-        },
-        {
-          "title": "CNBC: Die größten Kursbewegungen am Donnerstag (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/stocks-moving-the-most-today-live-updates.html"
-        },
-        {
-          "title": "Price Target: CLSA startet SpaceX mit Ziel 250 $ (28.09.)",
-          "url": "https://price-target.com/2026/09/28/174225/"
-        },
-        {
           "title": "Investing.com: Spekulation über Musk und Huang (12.11.)",
           "url": "https://www.investing.com/news/stock-market-news/muskhuang-partnership-speculation-grows-after-nvidia-exit-as-spacex-shares-rise-5022354"
         },
         {
-          "title": "Yahoo Finance: NVDA (12.11., 20:02)",
+          "title": "@elonmusk: „True words“ (12.11., 18:44)",
+          "url": "https://x.com/elonmusk/status/2120935801559105973"
+        },
+        {
+          "title": "Yahoo Finance: NVDA (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: AMD (12.11., 20:02)",
+          "title": "Yahoo Finance: AMD (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/AMD/"
         },
         {
-          "title": "Yahoo Finance: AVGO (12.11., 20:02)",
-          "url": "https://finance.yahoo.com/quote/AVGO/"
-        },
-        {
-          "title": "Yahoo Finance: NBIS (12.11., 20:02)",
+          "title": "Yahoo Finance: NBIS (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/NBIS/"
         },
         {
-          "title": "Yahoo Finance: CRWV (12.11., 20:02)",
-          "url": "https://finance.yahoo.com/quote/CRWV/"
+          "title": "Yahoo Finance: AMAT (US-Schluss 12.11.)",
+          "url": "https://finance.yahoo.com/quote/AMAT/"
         },
         {
-          "title": "Yahoo Finance: ^IXIC (12.11., 20:02)",
+          "title": "Yahoo Finance: ^IXIC (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Yahoo Finance: ^GSPC (12.11., 20:02)",
+          "title": "Yahoo Finance: ^GSPC (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/%5EGSPC/"
         },
         {
-          "title": "Yahoo Finance: Börse live – Nasdaq dreht ins Minus (12.11., 19:56)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-slides-jensen-huang-resigns-invest-165632931.html"
+          "title": "Yahoo Finance: ^TNX (US-Schluss 12.11.)",
+          "url": "https://finance.yahoo.com/quote/%5ETNX/"
         },
         {
-          "title": "CNBC: Rendite 10-jähriger US-Anleihen wieder über 5 % (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html"
+          "title": "Reuters/CNA: Wall Street, Nvidia fällt nach Rücktritt des Chefs (12.11.)",
+          "url": "https://www.channelnewsasia.com/business/wall-street-edges-up-nvidia-drops-after-ceo-resigns-6544496"
         },
         {
-          "title": "CNBC: Die größten Kursbewegungen am Donnerstag (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/stocks-moving-the-most-today-live-updates.html"
+          "title": "Yahoo Finance: Börse live – S&P 500 und Nasdaq fallen (12.11., 21:42)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-nasdaq-fall-as-nvidia-ceo-exit-rising-bond-yields-roil-markets-195710154.html"
+        },
+        {
+          "title": "TechCrunch: Reuters berichtet über eine dritte Affäre Huangs (12.11.)",
+          "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/"
         },
         {
           "title": "SpaceX: Starship Flight 15",
           "url": "https://www.spacex.com/launches/starship-flight-15"
+        },
+        {
+          "title": "Cisco (PR Newswire): Zahlen Q1 GJ 2027 (12.11.)",
+          "url": "https://www.prnewswire.com/news-releases/cisco-reports-first-quarter-earnings-302938394.html"
+        },
+        {
+          "title": "Applied Materials (GlobeNewswire): Zahlen Q4 GJ 2026 (12.11.)",
+          "url": "https://www.globenewswire.com/news-release/2026/11/12/3402149/0/en/applied-materials-announces-fourth-quarter-and-fiscal-year-2026-results.html"
+        },
+        {
+          "title": "Yahoo Finance: CSCO und AMAT nachbörslich (12.11., 22:10)",
+          "url": "https://finance.yahoo.com/quote/CSCO/"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -20183,10 +20187,10 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Do 20:00: Tesla an der Nasdaq 390,24 $ um 20:02 (−0,1 % zum Schluss von 390,82 $), Spanne 385,20 bis 396,20 $ (Yahoo). Keine eigene Kursmeldung und keine neue SEC-Meldung, Tesla läuft mit dem Gesamtmarkt. Nachrichten des Tages: Robotaxi fährt rund um die Uhr in allen acht US-Städten (Not a Tesla App); Grünheide soll ab Mitte 2027 Zellen voll selbst fertigen (TeslaNorth); der Cybertruck ist nur noch als teuerstes Modell Cyberbeast bestellbar, die Produktion läuft bis Ende Sommer 2027 (Car and Driver, InsideEVs). Markt um 20:02: Nvidia 164,67 $ (−5,2 %) nach Huangs Rücktritt, ohne festen Nachfolger. Gewinner sind Konkurrenten: AMD +4,6 %, Broadcom +5,2 %; Verlierer: Nebius −17,9 % (höhere Investitionspläne), CoreWeave −7,7 %. Nasdaq −0,3 %, S&P 500 −0,2 % (Yahoo). Dazu steigt die 10-jährige US-Rendite auf 5,107 %, eine Fed-Zinserhöhung im Dezember gilt laut CME FedWatch als sicher (CNBC). Nach US-Schluss berichten Cisco und Applied Materials.",
+      "why": "Stand Do 22:00: Tesla schloss an der Nasdaq bei 397,45 $ (+1,7 % zum Schluss von 390,82 $), Spanne 385,20 bis 401,22 $ (Yahoo). Keine eigene Kursmeldung und keine neue SEC-Meldung; Tesla stieg gegen den schwachen Gesamtmarkt. Nachrichten des Tages: Robotaxi fährt rund um die Uhr in allen acht US-Städten (Not a Tesla App), Grünheide soll ab Mitte 2027 Zellen voll selbst fertigen (TeslaNorth), der Cybertruck ist nur noch als Cyberbeast bestellbar (Car and Driver). JPMorgan bleibt bei Neutral mit Ziel 430 $ (finanzen.net). Markt zum US-Schluss: Nvidia 166,19 $ (−4,3 %) nach Huangs Rücktritt, ohne festen Nachfolger; Reuters berichtet über eine dritte Affäre. AMD +5,9 %, Nebius −16,8 %, Applied Materials −3,6 % vor den Zahlen. Nasdaq −0,4 %, S&P 500 −0,4 %, die 10-jährige US-Rendite bei rund 5,10 % (Yahoo, Reuters/CNA). Nach US-Schluss: Cisco übertraf die Erwartungen (18,5 Mrd. $ Umsatz, KI-Umsatz-Ziel mit Hyperscalern auf 9 Mrd. $ erhöht) und stieg nachbörslich um 5,1 %; Applied Materials meldete Rekordumsatz von 10,41 Mrd. $, nachbörslich −0,6 % (Cisco, Applied Materials, Yahoo 22:10).",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA (12.11., 20:02)",
+          "title": "Yahoo Finance: TSLA (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
@@ -20202,48 +20206,60 @@
           "url": "https://www.caranddriver.com/news/a74413385/tesla-cybertruck-lineup-reduced-one-expensive-model/"
         },
         {
-          "title": "InsideEVs: Cybertruck-Produktion bis Ende Sommer 2027 (11.11.)",
-          "url": "https://insideevs.com/news/815183/tesla-extends-cybertruck-production-summer-2027/"
+          "title": "finanzen.net: Tesla Neutral (JP Morgan, 12.11.)",
+          "url": "https://www.finanzen.net/analyse/tesla_neutral-jp_morgan_chase_&_co._1120668"
         },
         {
-          "title": "Yahoo Finance: NVDA (12.11., 20:02)",
+          "title": "Yahoo Finance: NVDA (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: AMD (12.11., 20:02)",
+          "title": "Yahoo Finance: AMD (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/AMD/"
         },
         {
-          "title": "Yahoo Finance: AVGO (12.11., 20:02)",
-          "url": "https://finance.yahoo.com/quote/AVGO/"
-        },
-        {
-          "title": "Yahoo Finance: NBIS (12.11., 20:02)",
+          "title": "Yahoo Finance: NBIS (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/NBIS/"
         },
         {
-          "title": "Yahoo Finance: CRWV (12.11., 20:02)",
-          "url": "https://finance.yahoo.com/quote/CRWV/"
+          "title": "Yahoo Finance: AMAT (US-Schluss 12.11.)",
+          "url": "https://finance.yahoo.com/quote/AMAT/"
         },
         {
-          "title": "Yahoo Finance: ^IXIC (12.11., 20:02)",
+          "title": "Yahoo Finance: ^IXIC (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Yahoo Finance: ^GSPC (12.11., 20:02)",
+          "title": "Yahoo Finance: ^GSPC (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/%5EGSPC/"
         },
         {
-          "title": "Yahoo Finance: Börse live – Nasdaq dreht ins Minus (12.11., 19:56)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-slides-jensen-huang-resigns-invest-165632931.html"
+          "title": "Yahoo Finance: ^TNX (US-Schluss 12.11.)",
+          "url": "https://finance.yahoo.com/quote/%5ETNX/"
         },
         {
-          "title": "CNBC: Rendite 10-jähriger US-Anleihen wieder über 5 % (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html"
+          "title": "Reuters/CNA: Wall Street, Nvidia fällt nach Rücktritt des Chefs (12.11.)",
+          "url": "https://www.channelnewsasia.com/business/wall-street-edges-up-nvidia-drops-after-ceo-resigns-6544496"
         },
         {
-          "title": "CNBC: Die größten Kursbewegungen am Donnerstag (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/stocks-moving-the-most-today-live-updates.html"
+          "title": "Yahoo Finance: Börse live – S&P 500 und Nasdaq fallen (12.11., 21:42)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-nasdaq-fall-as-nvidia-ceo-exit-rising-bond-yields-roil-markets-195710154.html"
+        },
+        {
+          "title": "TechCrunch: Reuters berichtet über eine dritte Affäre Huangs (12.11.)",
+          "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/"
+        },
+        {
+          "title": "Cisco (PR Newswire): Zahlen Q1 GJ 2027 (12.11.)",
+          "url": "https://www.prnewswire.com/news-releases/cisco-reports-first-quarter-earnings-302938394.html"
+        },
+        {
+          "title": "Applied Materials (GlobeNewswire): Zahlen Q4 GJ 2026 (12.11.)",
+          "url": "https://www.globenewswire.com/news-release/2026/11/12/3402149/0/en/applied-materials-announces-fourth-quarter-and-fiscal-year-2026-results.html"
+        },
+        {
+          "title": "Yahoo Finance: CSCO und AMAT nachbörslich (12.11., 22:10)",
+          "url": "https://finance.yahoo.com/quote/CSCO/"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -31950,59 +31966,79 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Do 20:00: Rocket Lab an der Nasdaq 65,05 $ um 20:02 (−1,7 % zum Schluss von 66,15 $), Tief 63,69 $ (Yahoo). Keine eigene Meldung und keine neue SEC-Meldung: leichte Gewinnmitnahmen nach rund 25 % seit Freitag, dazu belastet die Rendite über 5 % Wachstumswerte. Berenberg hob das Ziel über Nacht von 83 auf 85 $ (Investing.com). Markt um 20:02: Nvidia 164,67 $ (−5,2 %) nach Huangs Rücktritt, ohne festen Nachfolger. Gewinner sind Konkurrenten: AMD +4,6 %, Broadcom +5,2 %; Verlierer: Nebius −17,9 % (höhere Investitionspläne), CoreWeave −7,7 %. Nasdaq −0,3 %, S&P 500 −0,2 % (Yahoo). Dazu steigt die 10-jährige US-Rendite auf 5,107 %, eine Fed-Zinserhöhung im Dezember gilt laut CME FedWatch als sicher (CNBC). Nach US-Schluss berichten Cisco und Applied Materials. Der 100. Electron-Start „The Mountain God Rises“ ist für Sa 14.11. geplant (Rocket Lab).",
+      "why": "Stand Do 22:00: Rocket Lab schloss an der Nasdaq bei 64,07 $ (−3,1 % zum Schluss von 66,15 $), Tief 63,69 $ (Yahoo). Keine eigene Kursmeldung und keine neue SEC-Meldung. Belastet haben gesenkte Kursziele nach den Q3-Zahlen: Morgan Stanley 103 statt 105 $ (Übergewichten), Needham 100 statt 120 $ (Kaufen), Piper Sandler 58 statt 83 $ (Neutral), Barclays 82 statt 85 $; Berenberg hob dagegen auf 85 $ (Gelonghui/Sina, Investing.com). Dazu Gewinnmitnahmen nach rund 25 % seit Freitag und die Rendite über 5 %, die Wachstumswerte drückt. Markt zum US-Schluss: Nvidia 166,19 $ (−4,3 %) nach Huangs Rücktritt, ohne festen Nachfolger; Reuters berichtet über eine dritte Affäre. AMD +5,9 %, Nebius −16,8 %, Applied Materials −3,6 % vor den Zahlen. Nasdaq −0,4 %, S&P 500 −0,4 %, die 10-jährige US-Rendite bei rund 5,10 % (Yahoo, Reuters/CNA). Nach US-Schluss: Cisco übertraf die Erwartungen (18,5 Mrd. $ Umsatz, KI-Umsatz-Ziel mit Hyperscalern auf 9 Mrd. $ erhöht) und stieg nachbörslich um 5,1 %; Applied Materials meldete Rekordumsatz von 10,41 Mrd. $, nachbörslich −0,6 % (Cisco, Applied Materials, Yahoo 22:10). Am Abend meldete Rocket Lab, seine Avionik laufe auf dem NASA-Teleskop Roman (X); der 100. Electron-Start ist für Sa 14.11. geplant (Rocket Lab).",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB (12.11., 20:02)",
+          "title": "Yahoo Finance: RKLB (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "title": "Sina/Gelonghui: Rocket Lab vorbörslich −3 %, mehrere Banken senken Ziele (12.11.)",
+          "url": "https://finance.sina.com.cn/stock/bxjj/2026-11-12/doc-iniynpnv1145867.shtml"
         },
         {
           "title": "Investing.com: Berenberg hebt Rocket-Lab-Ziel auf 85 $ (12.11.)",
           "url": "https://www.investing.com/news/analyst-ratings/berenberg-raises-rocket-lab-stock-price-target-on-launch-demand-93CH-5020508"
         },
         {
+          "title": "@RocketLab: Avionik läuft auf NASA Roman (12.11., 21:32)",
+          "url": "https://x.com/RocketLab/status/2120978084283531641"
+        },
+        {
           "title": "Rocket Lab: The Mountain God Rises",
           "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
         },
         {
-          "title": "Yahoo Finance: NVDA (12.11., 20:02)",
+          "title": "Yahoo Finance: NVDA (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: AMD (12.11., 20:02)",
+          "title": "Yahoo Finance: AMD (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/AMD/"
         },
         {
-          "title": "Yahoo Finance: AVGO (12.11., 20:02)",
-          "url": "https://finance.yahoo.com/quote/AVGO/"
-        },
-        {
-          "title": "Yahoo Finance: NBIS (12.11., 20:02)",
+          "title": "Yahoo Finance: NBIS (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/NBIS/"
         },
         {
-          "title": "Yahoo Finance: CRWV (12.11., 20:02)",
-          "url": "https://finance.yahoo.com/quote/CRWV/"
+          "title": "Yahoo Finance: AMAT (US-Schluss 12.11.)",
+          "url": "https://finance.yahoo.com/quote/AMAT/"
         },
         {
-          "title": "Yahoo Finance: ^IXIC (12.11., 20:02)",
+          "title": "Yahoo Finance: ^IXIC (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Yahoo Finance: ^GSPC (12.11., 20:02)",
+          "title": "Yahoo Finance: ^GSPC (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/%5EGSPC/"
         },
         {
-          "title": "Yahoo Finance: Börse live – Nasdaq dreht ins Minus (12.11., 19:56)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-slides-jensen-huang-resigns-invest-165632931.html"
+          "title": "Yahoo Finance: ^TNX (US-Schluss 12.11.)",
+          "url": "https://finance.yahoo.com/quote/%5ETNX/"
         },
         {
-          "title": "CNBC: Rendite 10-jähriger US-Anleihen wieder über 5 % (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html"
+          "title": "Reuters/CNA: Wall Street, Nvidia fällt nach Rücktritt des Chefs (12.11.)",
+          "url": "https://www.channelnewsasia.com/business/wall-street-edges-up-nvidia-drops-after-ceo-resigns-6544496"
         },
         {
-          "title": "CNBC: Die größten Kursbewegungen am Donnerstag (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/stocks-moving-the-most-today-live-updates.html"
+          "title": "Yahoo Finance: Börse live – S&P 500 und Nasdaq fallen (12.11., 21:42)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-nasdaq-fall-as-nvidia-ceo-exit-rising-bond-yields-roil-markets-195710154.html"
+        },
+        {
+          "title": "TechCrunch: Reuters berichtet über eine dritte Affäre Huangs (12.11.)",
+          "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/"
+        },
+        {
+          "title": "Cisco (PR Newswire): Zahlen Q1 GJ 2027 (12.11.)",
+          "url": "https://www.prnewswire.com/news-releases/cisco-reports-first-quarter-earnings-302938394.html"
+        },
+        {
+          "title": "Applied Materials (GlobeNewswire): Zahlen Q4 GJ 2026 (12.11.)",
+          "url": "https://www.globenewswire.com/news-release/2026/11/12/3402149/0/en/applied-materials-announces-fourth-quarter-and-fiscal-year-2026-results.html"
+        },
+        {
+          "title": "Yahoo Finance: CSCO und AMAT nachbörslich (12.11., 22:10)",
+          "url": "https://finance.yahoo.com/quote/CSCO/"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -45207,10 +45243,10 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Do 20:00: Marvell an der Nasdaq 165,41 $ um 20:02 (−2,0 % zum Schluss von 168,80 $), nach einem Tief von 155,97 $ (Yahoo). Marvell gehört zu den Firmen, an denen Nvidia beteiligt ist (rund 2 Mrd. $); solche Werte fielen nach Huangs Rücktritt zunächst um mehr als 4 % (CNBC). Ein Teil des Verlusts ist aufgeholt, weil Anleger in Nvidia-Konkurrenten wie AMD und Broadcom umschichten. Per 8-K vergrößert Marvell den Verwaltungsrat von 7 auf 10 Mitglieder (SEC). Markt um 20:02: Nvidia 164,67 $ (−5,2 %) nach Huangs Rücktritt, ohne festen Nachfolger. Gewinner sind Konkurrenten: AMD +4,6 %, Broadcom +5,2 %; Verlierer: Nebius −17,9 % (höhere Investitionspläne), CoreWeave −7,7 %. Nasdaq −0,3 %, S&P 500 −0,2 % (Yahoo). Dazu steigt die 10-jährige US-Rendite auf 5,107 %, eine Fed-Zinserhöhung im Dezember gilt laut CME FedWatch als sicher (CNBC). Nach US-Schluss berichten Cisco und Applied Materials.",
+      "why": "Stand Do 22:00: Marvell schloss an der Nasdaq bei 164,45 $ (−2,6 % zum Schluss von 168,80 $), nach einem Tief von 155,97 $ (Yahoo). Marvell gehört zu den Firmen, an denen Nvidia beteiligt ist (rund 2 Mrd. $); solche Werte fielen nach Huangs Rücktritt zunächst um mehr als 4 % (CNBC). Chipwerte waren gespalten: Nvidia-Konkurrenten wie AMD stiegen, Chip-Ausrüster wie Applied Materials fielen vor ihren Zahlen (Yahoo, StockStory). Per 8-K vergrößert Marvell den Verwaltungsrat von 7 auf 10 Mitglieder (SEC). Markt zum US-Schluss: Nvidia 166,19 $ (−4,3 %) nach Huangs Rücktritt, ohne festen Nachfolger; Reuters berichtet über eine dritte Affäre. AMD +5,9 %, Nebius −16,8 %, Applied Materials −3,6 % vor den Zahlen. Nasdaq −0,4 %, S&P 500 −0,4 %, die 10-jährige US-Rendite bei rund 5,10 % (Yahoo, Reuters/CNA). Nach US-Schluss: Cisco übertraf die Erwartungen (18,5 Mrd. $ Umsatz, KI-Umsatz-Ziel mit Hyperscalern auf 9 Mrd. $ erhöht) und stieg nachbörslich um 5,1 %; Applied Materials meldete Rekordumsatz von 10,41 Mrd. $, nachbörslich −0,6 % (Cisco, Applied Materials, Yahoo 22:10). Marvell nachbörslich um 22:10 bei 165,35 $ (+0,5 %) (Yahoo).",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL (12.11., 20:02)",
+          "title": "Yahoo Finance: MRVL (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
@@ -45218,48 +45254,64 @@
           "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html"
         },
         {
+          "title": "StockStory: Applied Materials und andere Chipwerte fallen (12.11.)",
+          "url": "https://stockstory.org/us/stocks/nasdaq/amat/news/why-up-down/applied-materials-seagate-photronics-vishay-intertechnology-and-allegro-microsystems-stocks-trade-down-what-you-need-to-know"
+        },
+        {
           "title": "SEC: Marvell 8-K – drei neue Verwaltungsräte (12.11.)",
           "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000026/mrvl-20261111.htm"
         },
         {
-          "title": "Yahoo Finance: NVDA (12.11., 20:02)",
+          "title": "Yahoo Finance: NVDA (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: AMD (12.11., 20:02)",
+          "title": "Yahoo Finance: AMD (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/AMD/"
         },
         {
-          "title": "Yahoo Finance: AVGO (12.11., 20:02)",
-          "url": "https://finance.yahoo.com/quote/AVGO/"
-        },
-        {
-          "title": "Yahoo Finance: NBIS (12.11., 20:02)",
+          "title": "Yahoo Finance: NBIS (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/NBIS/"
         },
         {
-          "title": "Yahoo Finance: CRWV (12.11., 20:02)",
-          "url": "https://finance.yahoo.com/quote/CRWV/"
+          "title": "Yahoo Finance: AMAT (US-Schluss 12.11.)",
+          "url": "https://finance.yahoo.com/quote/AMAT/"
         },
         {
-          "title": "Yahoo Finance: ^IXIC (12.11., 20:02)",
+          "title": "Yahoo Finance: ^IXIC (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Yahoo Finance: ^GSPC (12.11., 20:02)",
+          "title": "Yahoo Finance: ^GSPC (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/%5EGSPC/"
         },
         {
-          "title": "Yahoo Finance: Börse live – Nasdaq dreht ins Minus (12.11., 19:56)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-slides-jensen-huang-resigns-invest-165632931.html"
+          "title": "Yahoo Finance: ^TNX (US-Schluss 12.11.)",
+          "url": "https://finance.yahoo.com/quote/%5ETNX/"
         },
         {
-          "title": "CNBC: Rendite 10-jähriger US-Anleihen wieder über 5 % (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html"
+          "title": "Reuters/CNA: Wall Street, Nvidia fällt nach Rücktritt des Chefs (12.11.)",
+          "url": "https://www.channelnewsasia.com/business/wall-street-edges-up-nvidia-drops-after-ceo-resigns-6544496"
         },
         {
-          "title": "CNBC: Die größten Kursbewegungen am Donnerstag (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/stocks-moving-the-most-today-live-updates.html"
+          "title": "Yahoo Finance: Börse live – S&P 500 und Nasdaq fallen (12.11., 21:42)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-nasdaq-fall-as-nvidia-ceo-exit-rising-bond-yields-roil-markets-195710154.html"
+        },
+        {
+          "title": "TechCrunch: Reuters berichtet über eine dritte Affäre Huangs (12.11.)",
+          "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/"
+        },
+        {
+          "title": "Cisco (PR Newswire): Zahlen Q1 GJ 2027 (12.11.)",
+          "url": "https://www.prnewswire.com/news-releases/cisco-reports-first-quarter-earnings-302938394.html"
+        },
+        {
+          "title": "Applied Materials (GlobeNewswire): Zahlen Q4 GJ 2026 (12.11.)",
+          "url": "https://www.globenewswire.com/news-release/2026/11/12/3402149/0/en/applied-materials-announces-fourth-quarter-and-fiscal-year-2026-results.html"
+        },
+        {
+          "title": "Yahoo Finance: CSCO und AMAT nachbörslich (12.11., 22:10)",
+          "url": "https://finance.yahoo.com/quote/CSCO/"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",

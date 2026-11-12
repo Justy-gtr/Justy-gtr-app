@@ -1,37 +1,72 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-11-rklb",
-    "date": "2026-11-11",
-    "question": "Schließt RKLB am Donnerstag, 12. November, an der Nasdaq höher als am Mittwoch (66,15 $)?",
-    "karlAnswer": "nein",
-    "karlReason": "Knapp „nein“, etwa 45 zu 55. Seit dem Freitagsschluss (53,07 $) liegt RKLB rund 25 % höher, allein am Mittwoch +5,5 %; nachbörslich stand die Aktie um 22:02 bei 66,20 $, also fast unverändert (Yahoo). Barclays und Needham haben ihre Ziele gesenkt, und der Markt rechnet zu 87 % mit einer Fed-Zinserhöhung im Dezember (Futu, CNBC). Dafür spricht: die breite Erholung bei Raumfahrtwerten und der 100. Electron-Start am Samstag. Karl lag mit „nein“ zweimal daneben – der Schwung war stärker.",
+    "id": "2026-11-12-rklb",
+    "date": "2026-11-12",
+    "question": "Schließt RKLB am Freitag, 13. November, an der Nasdaq höher als am Donnerstag (64,07 $)?",
+    "karlAnswer": "ja",
+    "karlReason": "Knapp „ja“, etwa 52 zu 48. Nach −3,1 % am Donnerstag stand die Aktie nachbörslich um 22:03 bei 64,38 $, leicht im Plus (Yahoo). Dafür spricht: Der 100. Electron-Start „The Mountain God Rises“ steht für Sa 14.11. an, und Raumfahrtwerte schauen auf Starship Flight 15 am Freitagabend. Dagegen: gesenkte Kursziele von Morgan Stanley, Needham, Piper Sandler und Barclays, die US-Rendite über 5 % und am Freitag 14:30 die Erzeugerpreise (Sina/Gelonghui, Yahoo).",
     "outcome": null,
-    "resolvesAt": "2026-11-12T22:15:00+01:00",
+    "resolvesAt": "2026-11-13T22:15:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: RKLB (Schluss 11.11. 66,15 $, Nachbörse)",
+        "title": "Yahoo Finance: RKLB (Schluss 12.11. 64,07 $, Nachbörse)",
         "url": "https://finance.yahoo.com/quote/RKLB/"
       },
       {
-        "title": "Yahoo Finance: RKLB-Historie (Schluss 6.11. 53,07 $)",
-        "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        "title": "Rocket Lab: The Mountain God Rises",
+        "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
       },
       {
-        "title": "Futu/Gelonghui: Barclays senkt Rocket-Lab-Ziel auf 82 $ (11.11.)",
-        "url": "https://news.futunn.com/post/1004136994/barclays-lowers-rocket-lab-price-target-to-82"
+        "title": "Sina/Gelonghui: Mehrere Banken senken Rocket-Lab-Ziele (12.11.)",
+        "url": "https://finance.sina.com.cn/stock/bxjj/2026-11-12/doc-iniynpnv1145867.shtml"
       },
       {
-        "title": "24/7 Wall St.: Rocket Lab und AST SpaceMobile +8 % (11.11.)",
-        "url": "https://247wallst.com/investing/2026/11/11/rocket-lab-and-ast-spacemobile-rally-8-as-space-stocks-rebound-spacex-holds-steady/"
-      },
-      {
-        "title": "CNBC: Dollar steigt, Markt preist Zinserhöhung im Dezember ein (11.11.)",
-        "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
+        "title": "SpaceX: Starship Flight 15",
+        "url": "https://www.spacex.com/launches/starship-flight-15"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-11-rklb",
+      "date": "2026-11-11",
+      "question": "Schließt RKLB am Donnerstag, 12. November, an der Nasdaq höher als am Mittwoch (66,15 $)?",
+      "karlAnswer": "nein",
+      "karlReason": "Knapp „nein“, etwa 45 zu 55. Seit dem Freitagsschluss (53,07 $) liegt RKLB rund 25 % höher, allein am Mittwoch +5,5 %; nachbörslich stand die Aktie um 22:02 bei 66,20 $, also fast unverändert (Yahoo). Barclays und Needham haben ihre Ziele gesenkt, und der Markt rechnet zu 87 % mit einer Fed-Zinserhöhung im Dezember (Futu, CNBC). Dafür spricht: die breite Erholung bei Raumfahrtwerten und der 100. Electron-Start am Samstag. Karl lag mit „nein“ zweimal daneben – der Schwung war stärker. Ergebnis: RKLB schloss am Do bei 64,07 $, 3,1 % unter den 66,15 $ vom Mittwoch (Yahoo). Karls „nein“ lag richtig: Gesenkte Kursziele (Morgan Stanley, Needham, Piper Sandler, Barclays) und die Rendite über 5 % bremsten die Erholung.",
+      "outcome": "nein",
+      "resolvesAt": "2026-11-12T22:15:00+01:00",
+      "sources": [
+        {
+          "title": "Yahoo Finance: RKLB (Schluss 11.11. 66,15 $, Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "title": "Yahoo Finance: RKLB-Historie (Schluss 6.11. 53,07 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        },
+        {
+          "title": "Futu/Gelonghui: Barclays senkt Rocket-Lab-Ziel auf 82 $ (11.11.)",
+          "url": "https://news.futunn.com/post/1004136994/barclays-lowers-rocket-lab-price-target-to-82"
+        },
+        {
+          "title": "24/7 Wall St.: Rocket Lab und AST SpaceMobile +8 % (11.11.)",
+          "url": "https://247wallst.com/investing/2026/11/11/rocket-lab-and-ast-spacemobile-rally-8-as-space-stocks-rebound-spacex-holds-steady/"
+        },
+        {
+          "title": "CNBC: Dollar steigt, Markt preist Zinserhöhung im Dezember ein (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
+        },
+        {
+          "title": "Yahoo Finance: RKLB Schluss 12.11. (64,07 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        },
+        {
+          "title": "Sina/Gelonghui: Mehrere Banken senken Rocket-Lab-Ziele (12.11.)",
+          "url": "https://finance.sina.com.cn/stock/bxjj/2026-11-12/doc-iniynpnv1145867.shtml"
+        }
+      ]
+    },
     {
       "id": "2026-11-10-rklb",
       "date": "2026-11-10",

@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-12T20:00:00+01:00",
+  "asOf": "2026-11-12T22:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,81 @@
     }
   },
   "posts": [
+    {
+      "id": "post-tesla-2120980260393271585",
+      "account": "@Tesla",
+      "displayName": "Tesla",
+      "postedAt": "2026-11-12T21:41:14+01:00",
+      "summaryDe": "Tesla wirbt für sein Fahrassistenzsystem: Es gebe ein Leben vor und eines nach dem ersten Erlebnis mit FSD (Supervised). Werbepost ohne neue Zahlen oder Termine.",
+      "originalText": "There's life before experiencing FSD Supervised, and there's life after",
+      "url": "https://x.com/Tesla/status/2120980260393271585",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Tesla: „There’s life before experiencing FSD Supervised…“ (12.11., 21:41)",
+          "url": "https://x.com/Tesla/status/2120980260393271585"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2120978084283531641",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-12T21:32:35+01:00",
+      "summaryDe": "Rocket Lab meldet, die eigene Elektronik (Avionik) laufe an Bord des NASA-Weltraumteleskops Roman. Sie steuert den Koronografen, der das Licht von Sternen abblendet, um Planeten um ferne Sterne direkt abzubilden. Als Nächstes sollen erste Bilder kommen.",
+      "originalText": "Rocket Lab’s avionics are up and running on @NASARoman. Our hardware is enabling Roman's coronagraph instrument, the system that blocks starlight to directly image planets orbiting distant stars. Next stop: first images!",
+      "url": "https://x.com/RocketLab/status/2120978084283531641",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: Avionik läuft auf NASA Roman (12.11., 21:32)",
+          "url": "https://x.com/RocketLab/status/2120978084283531641"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120935801559105973",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-12T18:44:34+01:00",
+      "summaryDe": "Investor Naval schrieb nach Huangs Rücktritt, man hätte aus den Fällen Steve Jobs und Travis Kalanick lernen sollen, dass man einen Gründer nicht einfach ersetzt. Musk antwortet: „Wahre Worte“. Er stellt sich damit erneut auf Huangs Seite; ein Angebot oder Gespräche mit Huang nennt er nicht.",
+      "originalText": "@naval True words",
+      "url": "https://x.com/elonmusk/status/2120935801559105973",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „True words“ (12.11., 18:44)",
+          "url": "https://x.com/elonmusk/status/2120935801559105973"
+        },
+        {
+          "title": "@naval: „one does not just simply replace the founder…“ (12.11., 06:35)",
+          "url": "https://x.com/naval/status/2120752211588452715"
+        }
+      ]
+    },
     {
       "id": "post-spacex-2120912086989426746",
       "account": "@SpaceX",
