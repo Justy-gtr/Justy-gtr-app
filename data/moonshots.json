@@ -4,9 +4,9 @@
   "asOf": "2026-11-12T06:00:00+01:00",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1057,
+    "rate": 1.1058,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-12T23:32:29+01:00",
+    "asOf": "2026-11-13T00:16:30+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -161,7 +161,7 @@
         }
       ],
       "priceUsd": 166.07,
-      "priceEur": 150.19,
+      "priceEur": 150.18,
       "previousCloseUsd": 173.85,
       "changePct": -4.48,
       "eurMethod": "usd_div_eurusd",
@@ -189,7 +189,7 @@
         160.28,
         150.49,
         155.55,
-        150.19
+        150.18
       ],
       "asOf": "2026-11-12T06:00:00+01:00",
       "marketSource": {
@@ -346,7 +346,7 @@
         }
       ],
       "priceUsd": 226.82,
-      "priceEur": 205.14,
+      "priceEur": 205.11,
       "previousCloseUsd": 231.19,
       "changePct": -1.89,
       "eurMethod": "usd_div_eurusd",
@@ -374,7 +374,7 @@
         186.05,
         200.17,
         207.1,
-        205.14
+        205.11
       ],
       "asOf": "2026-11-12T06:00:00+01:00",
       "marketSource": {
@@ -531,7 +531,7 @@
         }
       ],
       "priceUsd": 164.44,
-      "priceEur": 148.72,
+      "priceEur": 148.7,
       "previousCloseUsd": 168.81,
       "changePct": -2.59,
       "eurMethod": "usd_div_eurusd",
@@ -559,7 +559,7 @@
         138.69,
         137.57,
         151.13,
-        148.72
+        148.7
       ],
       "asOf": "2026-11-12T06:00:00+01:00",
       "marketSource": {
@@ -570,18 +570,18 @@
     }
   ],
   "nearTerm": {
-    "pickedOn": "2026-11-12",
+    "pickedOn": "2026-11-13",
     "window": 3,
     "expanded": false,
-    "from": "2026-11-11",
-    "to": "2026-11-16",
+    "from": "2026-11-12",
+    "to": "2026-11-17",
     "includesToday": true,
-    "note": "Fenster: heute und die nächsten 3 Handelstage, bis 16. November 2026.",
+    "note": "Fenster: heute und die nächsten 3 Handelstage, bis 17. November 2026.",
     "tradingDays": [
-      "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "asOf": "2026-11-12T06:00:00+01:00",
     "sources": [
@@ -600,9 +600,9 @@
         "symbol": "AMAT",
         "name": "Applied Materials",
         "usdSymbol": "AMAT",
-        "daysAway": 1,
+        "daysAway": 0,
         "for": [
-          "Der Termin liegt am nächsten Handelstag.",
+          "Der Termin liegt heute.",
           "In 8 früheren Quartalen lag die Bewegung am Folgetag 1 Mal bei mindestens +5 %."
         ],
         "against": [
@@ -707,7 +707,7 @@
           }
         ],
         "priceUsd": 381.1,
-        "priceEur": 344.67,
+        "priceEur": 344.63,
         "previousCloseUsd": 394.84,
         "changePct": -3.48,
         "eurMethod": "usd_div_eurusd",
@@ -735,7 +735,7 @@
           332.41,
           331.95,
           353.73,
-          344.67
+          344.63
         ],
         "asOf": "2026-11-12T06:00:00+01:00",
         "marketSource": {
@@ -749,9 +749,9 @@
         "symbol": "CSCO",
         "name": "Cisco",
         "usdSymbol": "CSCO",
-        "daysAway": 1,
+        "daysAway": 0,
         "for": [
-          "Der Termin liegt am nächsten Handelstag.",
+          "Der Termin liegt heute.",
           "In 8 früheren Quartalen lag die Bewegung am Folgetag 1 Mal bei mindestens +5 %."
         ],
         "against": [
@@ -856,7 +856,7 @@
           }
         ],
         "priceUsd": 101.97,
-        "priceEur": 92.22,
+        "priceEur": 92.21,
         "previousCloseUsd": 100.82,
         "changePct": 1.14,
         "eurMethod": "usd_div_eurusd",
@@ -884,7 +884,7 @@
           88.5,
           87.46,
           90.21,
-          92.22
+          92.21
         ],
         "asOf": "2026-11-12T06:00:00+01:00",
         "marketSource": {
@@ -898,9 +898,9 @@
         "symbol": "NBIS",
         "name": "Nebius Group",
         "usdSymbol": "NBIS",
-        "daysAway": 1,
+        "daysAway": 0,
         "for": [
-          "Der Termin liegt am nächsten Handelstag.",
+          "Der Termin liegt heute.",
           "Bisher n = 0. Keine Prozentzahl."
         ],
         "against": [
@@ -947,7 +947,7 @@
           }
         ],
         "priceUsd": 128.91,
-        "priceEur": 116.59,
+        "priceEur": 116.57,
         "previousCloseUsd": 154.9,
         "changePct": -16.78,
         "eurMethod": "usd_div_eurusd",
@@ -975,7 +975,7 @@
           126.89,
           119.4,
           138.5,
-          116.59
+          116.57
         ],
         "asOf": "2026-11-12T06:00:00+01:00",
         "marketSource": {

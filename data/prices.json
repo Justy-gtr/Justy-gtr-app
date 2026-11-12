@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-11-12T22:32:31.510Z",
+  "asOf": "2026-11-12T23:16:07.272Z",
   "example": false,
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1057,
+    "rate": 1.1058,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-12T22:32:31.510Z",
+    "asOf": "2026-11-12T23:16:07.272Z",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -21,19 +21,19 @@
       "example": false,
       "narrativeExample": false,
       "stale": false,
-      "priceEur": 126.52,
+      "priceEur": 129.04,
       "priceUsd": 139.98,
-      "previousCloseEur": 125.98,
-      "changeEur": 0.54,
-      "changePct": 0.43,
-      "dayHighEur": 130.64,
-      "dayLowEur": 124.12,
+      "previousCloseEur": 127.52,
+      "changeEur": 1.52,
+      "changePct": 1.19,
+      "dayHighEur": 132.56,
+      "dayLowEur": 124,
       "eurMethod": "direct_eur",
-      "eurVenue": "Stuttgart",
-      "eurSymbol": "SPX.SG",
+      "eurVenue": "Xetra",
+      "eurSymbol": "SPX.DE",
       "usdSymbol": "SPCX",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1057,
+      "fxRate": 1.1058,
       "sparkline": [
         125.5,
         124.68,
@@ -66,7 +66,7 @@
         128.84,
         128.04,
         126.72,
-        126.77
+        126.76
       ],
       "history": {
         "intraday": [
@@ -1367,37 +1367,37 @@
           },
           {
             "t": "2026-11-12T20:56:00.000Z",
-            "eur": 126.88,
+            "eur": 126.86,
             "usd": 140.29,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:57:00.000Z",
-            "eur": 126.89,
+            "eur": 126.88,
             "usd": 140.31,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:58:00.000Z",
-            "eur": 126.94,
+            "eur": 126.93,
             "usd": 140.36,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:59:00.000Z",
-            "eur": 126.6,
+            "eur": 126.58,
             "usd": 139.98,
             "session": "regular"
           },
           {
             "t": "2026-11-12T21:08:00.000Z",
-            "eur": 126.58,
+            "eur": 126.57,
             "usd": 139.96,
             "session": "post"
           },
           {
             "t": "2026-11-12T21:29:00.000Z",
-            "eur": 126.77,
+            "eur": 126.76,
             "usd": 140.17,
             "session": "post"
           }
@@ -3874,7 +3874,7 @@
             "open": 129.04,
             "high": 129.04,
             "low": 129.04,
-            "session": "post"
+            "session": "regular"
           }
         ],
         "4H": [
@@ -5300,13 +5300,6 @@
             "open": 130.68,
             "high": 133.12,
             "low": 125.08
-          },
-          {
-            "t": "2026-11-12T08:00:00.000Z",
-            "eur": 129.04,
-            "open": 125.4,
-            "high": 132.56,
-            "low": 124
           }
         ],
         "6M": [
@@ -5722,13 +5715,6 @@
             "open": 130.68,
             "high": 133.12,
             "low": 125.08
-          },
-          {
-            "t": "2026-11-12T08:00:00.000Z",
-            "eur": 129.04,
-            "open": 125.4,
-            "high": 132.56,
-            "low": 124
           }
         ],
         "1Y": [
@@ -6144,13 +6130,6 @@
             "open": 130.68,
             "high": 133.12,
             "low": 125.08
-          },
-          {
-            "t": "2026-11-12T08:00:00.000Z",
-            "eur": 129.04,
-            "open": 125.4,
-            "high": 132.56,
-            "low": 124
           }
         ],
         "5Y": [
@@ -6356,8 +6335,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/SPCX/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance SPX.SG",
-          "url": "https://finance.yahoo.com/quote/SPX.SG"
+          "title": "Yahoo Finance SPX.DE",
+          "url": "https://finance.yahoo.com/quote/SPX.DE"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -6370,9 +6349,9 @@
       ],
       "fetchError": null,
       "overnightPhase": "nachhandel",
-      "overnightEur": 126.77,
-      "overnightHighEur": 126.77,
-      "overnightLowEur": 126.58,
+      "overnightEur": 126.76,
+      "overnightHighEur": 126.76,
+      "overnightLowEur": 126.57,
       "overnightAsOf": "2026-11-12T21:29:00.000Z",
       "source": "alpaca-iex"
     },
@@ -6385,19 +6364,19 @@
       "example": false,
       "narrativeExample": false,
       "stale": false,
-      "priceEur": 359.2,
+      "priceEur": 354.05,
       "priceUsd": 397.43,
-      "previousCloseEur": 351.9,
-      "changeEur": 7.3,
-      "changePct": 2.07,
-      "dayHighEur": 361.35,
-      "dayLowEur": 347.1,
+      "previousCloseEur": 336.85,
+      "changeEur": 17.2,
+      "changePct": 5.11,
+      "dayHighEur": 356.55,
+      "dayLowEur": 347.05,
       "eurMethod": "direct_eur",
-      "eurVenue": "Stuttgart",
-      "eurSymbol": "TL0.SG",
+      "eurVenue": "Xetra",
+      "eurSymbol": "TL0.DE",
       "usdSymbol": "TSLA",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1057,
+      "fxRate": 1.1058,
       "sparkline": [
         349.25,
         349,
@@ -6430,7 +6409,7 @@
         353.35,
         355.95,
         360.55,
-        359.43
+        359.39
       ],
       "history": {
         "intraday": [
@@ -7576,19 +7555,19 @@
           },
           {
             "t": "2026-11-12T20:57:00.000Z",
-            "eur": 359.65,
+            "eur": 359.61,
             "usd": 397.67,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:58:00.000Z",
-            "eur": 359.77,
+            "eur": 359.73,
             "usd": 397.8,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:59:00.000Z",
-            "eur": 359.43,
+            "eur": 359.39,
             "usd": 397.43,
             "session": "regular"
           }
@@ -10058,7 +10037,7 @@
             "open": 354.05,
             "high": 354.05,
             "low": 354.05,
-            "session": "post"
+            "session": "regular"
           }
         ],
         "4H": [
@@ -15488,13 +15467,6 @@
             "open": 345,
             "high": 356.3,
             "low": 345
-          },
-          {
-            "t": "2026-11-12T08:00:00.000Z",
-            "eur": 354.05,
-            "open": 349.05,
-            "high": 356.55,
-            "low": 347.05
           }
         ],
         "6M": [
@@ -16421,13 +16393,6 @@
             "open": 345,
             "high": 356.3,
             "low": 345
-          },
-          {
-            "t": "2026-11-12T08:00:00.000Z",
-            "eur": 354.05,
-            "open": 349.05,
-            "high": 356.55,
-            "low": 347.05
           }
         ],
         "1Y": [
@@ -18201,13 +18166,6 @@
             "open": 345,
             "high": 356.3,
             "low": 345
-          },
-          {
-            "t": "2026-11-12T08:00:00.000Z",
-            "eur": 354.05,
-            "open": 349.05,
-            "high": 356.55,
-            "low": 347.05
           }
         ],
         "5Y": [
@@ -20152,8 +20110,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/TSLA/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance TL0.SG",
-          "url": "https://finance.yahoo.com/quote/TL0.SG"
+          "title": "Yahoo Finance TL0.DE",
+          "url": "https://finance.yahoo.com/quote/TL0.DE"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -20181,19 +20139,19 @@
       "example": false,
       "narrativeExample": false,
       "stale": false,
-      "priceEur": 57.8,
+      "priceEur": 60.3,
       "priceUsd": 64.08,
-      "previousCloseEur": 59.5,
-      "changeEur": -1.7,
-      "changePct": -2.86,
-      "dayHighEur": 60,
-      "dayLowEur": 57,
+      "previousCloseEur": 55.5,
+      "changeEur": 4.8,
+      "changePct": 8.65,
+      "dayHighEur": 60.3,
+      "dayLowEur": 56.7,
       "eurMethod": "direct_eur",
-      "eurVenue": "Stuttgart",
-      "eurSymbol": "6RJ0.SG",
+      "eurVenue": "Frankfurt",
+      "eurSymbol": "6RJ0.F",
       "usdSymbol": "RKLB",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1057,
+      "fxRate": 1.1058,
       "sparkline": [
         57.7,
         57.7,
@@ -20225,8 +20183,8 @@
         58.5,
         58.5,
         58.2,
-        57.93,
-        57.95
+        57.92,
+        57.94
       ],
       "history": {
         "intraday": [
@@ -20572,19 +20530,19 @@
           },
           {
             "t": "2026-11-12T20:57:00.000Z",
-            "eur": 57.93,
+            "eur": 57.92,
             "usd": 64.05,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:58:00.000Z",
-            "eur": 57.94,
+            "eur": 57.93,
             "usd": 64.07,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:59:00.000Z",
-            "eur": 57.95,
+            "eur": 57.94,
             "usd": 64.08,
             "session": "regular"
           }
@@ -28011,13 +27969,6 @@
             "open": 56.9,
             "high": 62.3,
             "low": 56.4
-          },
-          {
-            "t": "2026-11-12T07:00:00.000Z",
-            "eur": 60.3,
-            "open": 58.2,
-            "high": 60.3,
-            "low": 56.7
           }
         ],
         "6M": [
@@ -28944,13 +28895,6 @@
             "open": 56.9,
             "high": 62.3,
             "low": 56.4
-          },
-          {
-            "t": "2026-11-12T07:00:00.000Z",
-            "eur": 60.3,
-            "open": 58.2,
-            "high": 60.3,
-            "low": 56.7
           }
         ],
         "1Y": [
@@ -30724,13 +30668,6 @@
             "open": 56.9,
             "high": 62.3,
             "low": 56.4
-          },
-          {
-            "t": "2026-11-12T07:00:00.000Z",
-            "eur": 60.3,
-            "open": 58.2,
-            "high": 60.3,
-            "low": 56.7
           }
         ],
         "5Y": [
@@ -31800,8 +31737,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/RKLB/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance 6RJ0.SG",
-          "url": "https://finance.yahoo.com/quote/6RJ0.SG"
+          "title": "Yahoo Finance 6RJ0.F",
+          "url": "https://finance.yahoo.com/quote/6RJ0.F"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -31826,25 +31763,25 @@
       "role": "Halbleiter",
       "venue": "Nasdaq",
       "currency": "EUR",
-      "priceEur": 148.62,
+      "priceEur": 151.26,
       "priceUsd": 164.44,
-      "previousCloseEur": 152.32,
-      "changeEur": -3.7,
-      "changePct": -2.43,
-      "dayHighEur": 152.6,
-      "dayLowEur": 141.38,
+      "previousCloseEur": 138.74,
+      "changeEur": 12.52,
+      "changePct": 9.02,
+      "dayHighEur": 153.3,
+      "dayLowEur": 140.44,
       "overnightPhase": "nachhandel",
-      "overnightEur": 149.93,
-      "overnightHighEur": 149.96,
-      "overnightLowEur": 148.74,
+      "overnightEur": 149.92,
+      "overnightHighEur": 149.95,
+      "overnightLowEur": 148.72,
       "overnightAsOf": "2026-11-12T21:55:00.000Z",
       "eurMethod": "direct_eur",
-      "eurVenue": "Stuttgart",
-      "eurSymbol": "9MW.SG",
+      "eurVenue": "Xetra",
+      "eurSymbol": "9MW.DE",
       "usdSymbol": "MRVL",
       "source": "alpaca-iex",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1057,
+      "fxRate": 1.1058,
       "sparkline": [
         147,
         146.52,
@@ -31877,7 +31814,7 @@
         148.98,
         149.74,
         149.1,
-        149.93
+        149.91
       ],
       "history": {
         "intraday": [
@@ -33158,43 +33095,43 @@
           },
           {
             "t": "2026-11-12T20:57:00.000Z",
-            "eur": 148.6,
+            "eur": 148.59,
             "usd": 164.31,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:58:00.000Z",
-            "eur": 148.61,
+            "eur": 148.59,
             "usd": 164.32,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:59:00.000Z",
-            "eur": 148.72,
+            "eur": 148.7,
             "usd": 164.44,
             "session": "regular"
           },
           {
             "t": "2026-11-12T21:02:00.000Z",
-            "eur": 148.74,
+            "eur": 148.72,
             "usd": 164.46,
             "session": "post"
           },
           {
             "t": "2026-11-12T21:11:00.000Z",
-            "eur": 148.94,
+            "eur": 148.92,
             "usd": 164.68,
             "session": "post"
           },
           {
             "t": "2026-11-12T21:44:00.000Z",
-            "eur": 149.96,
+            "eur": 149.94,
             "usd": 165.81,
             "session": "post"
           },
           {
             "t": "2026-11-12T21:55:00.000Z",
-            "eur": 149.93,
+            "eur": 149.91,
             "usd": 165.78,
             "session": "post"
           }
@@ -35727,7 +35664,7 @@
             "open": 151.26,
             "high": 151.26,
             "low": 151.26,
-            "session": "post"
+            "session": "regular"
           }
         ],
         "4H": [
@@ -41122,13 +41059,6 @@
             "open": 147,
             "high": 156.42,
             "low": 146.76
-          },
-          {
-            "t": "2026-11-12T08:00:00.000Z",
-            "eur": 151.26,
-            "open": 147.4,
-            "high": 153.3,
-            "low": 140.44
           }
         ],
         "6M": [
@@ -42055,13 +41985,6 @@
             "open": 147,
             "high": 156.42,
             "low": 146.76
-          },
-          {
-            "t": "2026-11-12T08:00:00.000Z",
-            "eur": 151.26,
-            "open": 147.4,
-            "high": 153.3,
-            "low": 140.44
           }
         ],
         "1Y": [
@@ -43835,13 +43758,6 @@
             "open": 147,
             "high": 156.42,
             "low": 146.76
-          },
-          {
-            "t": "2026-11-12T08:00:00.000Z",
-            "eur": 151.26,
-            "open": 147.4,
-            "high": 153.3,
-            "low": 140.44
           }
         ],
         "5Y": [
@@ -44998,8 +44914,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/MRVL/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance 9MW.SG",
-          "url": "https://finance.yahoo.com/quote/9MW.SG"
+          "title": "Yahoo Finance 9MW.DE",
+          "url": "https://finance.yahoo.com/quote/9MW.DE"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
