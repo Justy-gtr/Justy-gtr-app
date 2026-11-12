@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T13:34:00+01:00",
+  "updatedAt": "2026-11-12T13:56:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 15,
+      "score": 10,
       "postsCount": 20,
-      "reason": "SpaceX: Countdown zu Flug 15 morgen, viele hoffen auf Huang bei SpaceX. Neu: Starlink-Mobilfunknetz mit Qualcomm. Anthropics Börsengang könnte SpaceX-Rekord übertreffen.",
+      "reason": "SpaceX: Akten zeigen Pläne für einen 100-Mrd.-$-Raumhafen in Louisiana. Kiew meldet erneut Starshield-Einschränkungen, Aktie kurz schwächer. Flug 15 morgen im Fokus.",
       "sources": [
         {
-          "title": "Morgen: Flug 15",
-          "url": "https://x.com/outerspacetoday/status/2120854225546846542"
+          "title": "Project Osprey in Louisiana",
+          "url": "https://x.com/spcxGOD/status/2120857431181762944"
         },
         {
-          "title": "Anthropic-IPO vs. SpaceX",
-          "url": "https://x.com/coinbureau/status/2120856439040401860"
+          "title": "Kiew: Starshield wieder gedrosselt",
+          "url": "https://x.com/wsb_degens/status/2120857580473888825"
         },
         {
-          "title": "Starlink-Mobilfunk mit Qualcomm",
-          "url": "https://x.com/IDEric_/status/2120856813902213311"
+          "title": "Doppelter Fang bei Flug 15",
+          "url": "https://x.com/SuperMariossss/status/2120857339565883504"
         }
       ],
-      "updatedAt": "2026-11-12T13:34:00+01:00"
+      "updatedAt": "2026-11-12T13:56:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 7,
-      "reason": "Tesla: Fans freuen sich, dass Tesla nicht mehr Schlusslicht der Mag-7 seit Jahresbeginn ist, Nvidia jetzt schon. Florida wirbt weiter um den Firmensitz. FSD-Nutzer loben.",
+      "score": 30,
+      "postsCount": 14,
+      "reason": "Tesla: Robotaxi hat in Texas jetzt mehr fahrerlose Autos gemeldet als Waymo (1.302 zu 1.297). Viele feiern 5 Mio. Meilen. Manche kritisieren Musks Angebot an Huang.",
       "sources": [
         {
-          "title": "Mag-7: Tesla nicht mehr Letzter",
-          "url": "https://x.com/DRJBori63/status/2120853337876611329"
+          "title": "Mehr Robotaxis als Waymo in Texas",
+          "url": "https://x.com/SuperMariossss/status/2120857373271285977"
         },
         {
-          "title": "Florida wirbt um Tesla",
-          "url": "https://x.com/RonnyGolisch/status/2120853573122560032"
+          "title": "5 Mio. Meilen, rund um die Uhr",
+          "url": "https://x.com/kingjackox23/status/2120859300763508908"
         },
         {
-          "title": "97 % auf FSD gefahren",
-          "url": "https://x.com/Chansoo/status/2120855385024450956"
+          "title": "Kritik am Huang-Angebot",
+          "url": "https://x.com/misterbien2/status/2120858099095392610"
         }
       ],
-      "updatedAt": "2026-11-12T13:34:00+01:00"
+      "updatedAt": "2026-11-12T13:56:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 8,
-      "reason": "Rocket Lab: Börsenwert in einer Woche von unter 30 auf fast 45 Mrd. $ gestiegen, Langzeitanleger jubeln. Einige warnen vor einem roten Tag wegen der Nvidia-Krise.",
+      "score": 30,
+      "postsCount": 4,
+      "reason": "Rocket Lab: Fans loben, dass die Firma ohne Drama einfach liefert. Space Investor vergleicht: Intuitive Machines hat gleich viel Umsatz bei 7 % des Börsenwerts.",
       "sources": [
+        {
+          "title": "Lob: kein Drama, nur Arbeit",
+          "url": "https://x.com/Neil_Shares/status/2120857441009389627"
+        },
+        {
+          "title": "Vergleich mit Intuitive Machines",
+          "url": "https://x.com/SpaceInvestor_D/status/2120860456940101828"
+        },
         {
           "title": "Börsenwert fast 45 Mrd. $",
           "url": "https://x.com/rmzerozero/status/2120853147161653340"
-        },
-        {
-          "title": "Langzeit-Sparplan seit 2021",
-          "url": "https://x.com/yourherofraser/status/2120855704974016950"
-        },
-        {
-          "title": "Tech unter Druck durch Nvidia",
-          "url": "https://x.com/Dividendplays/status/2120854981331014095"
         }
       ],
-      "updatedAt": "2026-11-12T13:34:00+01:00"
+      "updatedAt": "2026-11-12T13:56:00+01:00"
     }
   }
 }
