@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T15:08:00+01:00",
+  "updatedAt": "2026-11-12T15:18:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 20,
+      "score": 25,
       "postsCount": 12,
-      "reason": "SpaceX: Viele rätseln, ob Musk Ex-Nvidia-Chef Huang holt. Für Flight 15 am Freitag wird sogar über Jamaika der Luftraum gesperrt. Ein Tesla-Zusammenschluss wird geprüft.",
+      "reason": "SpaceX: Während KI-Cloud-Werte nach Huangs Rücktritt stark fallen, liegt SpaceX vorbörslich nur knapp 1 % im Minus. Booster B22 rollt für den ersten V3-Fang raus.",
       "sources": [
         {
-          "title": "Holt Musk Huang?",
-          "url": "https://x.com/inkdropreads/status/2120879221358879102"
+          "title": "KI-Werte fallen, SpaceX kaum",
+          "url": "https://x.com/spcxGOD/status/2120881803409981750"
         },
         {
-          "title": "Luftraumsperre für Flight 15",
-          "url": "https://x.com/JamaicaObserver/status/2120879961452028305"
+          "title": "Booster B22 rollt raus",
+          "url": "https://x.com/EleanorTice420/status/2120882797464134024"
         },
         {
-          "title": "10-Q: Tesla-Fusion wird geprüft",
-          "url": "https://x.com/alialagheband/status/2120880948216525147"
+          "title": "State Street stockt auf",
+          "url": "https://x.com/kongbaest/status/2120882507784618436"
         }
       ],
-      "updatedAt": "2026-11-12T15:08:00+01:00"
+      "updatedAt": "2026-11-12T15:18:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": -5,
+      "score": 5,
       "postsCount": 12,
-      "reason": "Tesla: Charttrader nennen 386 $ als Marke, die halten muss. Viele Listen-Accounts raten zur Vorsicht. Fans hoffen, Tesla holt Huang, und reden über eine SpaceX-Fusion.",
+      "reason": "Tesla: Charttrader sehen eine Erholung, 380 $ gilt als Stütze und 395–400 $ als Hürde. Fans feiern Robotaxi rund um die Uhr. Viele Spam-Listen raten weiter ab.",
       "sources": [
         {
-          "title": "Redler: 386 $ muss halten",
-          "url": "https://x.com/RedDogT3/status/2120880783887827288"
+          "title": "Chart: Erholung, Marken",
+          "url": "https://x.com/corp_nick14/status/2120883203246559424"
         },
         {
-          "title": "Fans: Tesla soll Huang holen",
-          "url": "https://x.com/YyzOhad/status/2120879489982890467"
+          "title": "Hürde 395–400 $",
+          "url": "https://x.com/Perdu2You/status/2120882787356164153"
         },
         {
-          "title": "SpaceX-Tesla-Fusion: Rechnung",
-          "url": "https://x.com/alialagheband/status/2120880948216525147"
+          "title": "Robotaxi rund um die Uhr",
+          "url": "https://x.com/thecryptosharma/status/2120882831148589423"
         }
       ],
-      "updatedAt": "2026-11-12T15:08:00+01:00"
+      "updatedAt": "2026-11-12T15:18:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/millennialinv16/status/2120879470991003803"
         }
       ],
-      "updatedAt": "2026-11-12T15:08:00+01:00"
+      "updatedAt": "2026-11-12T15:18:00+01:00"
     }
   }
 }
