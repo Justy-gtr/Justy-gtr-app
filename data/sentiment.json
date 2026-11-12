@@ -1,33 +1,33 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T12:36:00+01:00",
+  "updatedAt": "2026-11-12T12:56:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 20,
-      "postsCount": 25,
-      "reason": "SpaceX: Vorfreude auf den doppelten Turmfang bei Flug 15 am Freitag. Baillie Gifford hat 24 % seiner Anteile verkauft. Viele scherzen, Jensen Huang könnte zu SpaceX wechseln.",
+      "score": 5,
+      "postsCount": 20,
+      "reason": "SpaceX: Aktie seit gestern -4,2 %, nahe dem Börsengangspreis. Laut Axios planen Demokraten Prüfungen der Pentagon-Aufträge. State Street stockt auf, Vorfreude auf Flug 15.",
       "sources": [
         {
-          "title": "Doppelter Fang am Freitag",
-          "url": "https://x.com/TheTeslaBull/status/2120837068033044520"
+          "title": "-4,2 % in 24 Stunden",
+          "url": "https://x.com/PythoDEX/status/2120843001425801259"
         },
         {
-          "title": "Baillie Gifford verkauft 24 %",
-          "url": "https://x.com/spcxGOD/status/2120836526078636543"
+          "title": "Axios: Prüfung der Pentagon-Aufträge",
+          "url": "https://x.com/x_invest1/status/2120845248016663003"
         },
         {
-          "title": "Witz: Huang zu SpaceX",
-          "url": "https://x.com/markgardn/status/2120838709612618025"
+          "title": "State Street stockt um 78 % auf",
+          "url": "https://x.com/AIStockSavvy/status/2120843646136094867"
         }
       ],
-      "updatedAt": "2026-11-12T12:36:00+01:00"
+      "updatedAt": "2026-11-12T12:56:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 30,
-      "postsCount": 25,
+      "postsCount": 6,
       "reason": "Tesla: Fans wünschen sich Jensen Huang bei Tesla. Wetten auf 1,8 Mio. Auslieferungen bei 46 %. Florida wirbt um den Firmensitz. Kritik: CO2-Gutschriften brechen ein.",
       "sources": [
         {
@@ -43,28 +43,28 @@
           "url": "https://x.com/BacklogAlpha/status/2120833989586104829"
         }
       ],
-      "updatedAt": "2026-11-12T12:36:00+01:00"
+      "updatedAt": "2026-11-12T12:56:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 35,
-      "postsCount": 8,
-      "reason": "Rocket Lab: Berenberg-Kursziel 85 $ wird viel geteilt, Startaufträge 7-mal so schnell wie im Vorjahr. Manche hoffen auf mehr Pentagon-Aufträge nach der US-Wahl.",
+      "postsCount": 5,
+      "reason": "Rocket Lab: Berenberg-Kursziel 85 $ wird weiter geteilt. Morgan Stanley sieht Wachstum durch höhere Neutron-Preise, Verzögerungen drücken aber kurzfristig die Marge.",
       "sources": [
         {
           "title": "Berenberg: Kursziel 85 $",
           "url": "https://x.com/AIStockSavvy/status/2120842640765882542"
         },
         {
-          "title": "Aufträge 7-mal so schnell",
-          "url": "https://x.com/allday_stocks/status/2120831577794007438"
+          "title": "Morgan Stanley zu Neutron",
+          "url": "https://x.com/gulVasikova/status/2120843056090092013"
         },
         {
-          "title": "Mehr Pentagon-Aufträge?",
-          "url": "https://x.com/AloWeilly/status/2120832787527667857"
+          "title": "Aufträge 7-mal so schnell",
+          "url": "https://x.com/allday_stocks/status/2120831577794007438"
         }
       ],
-      "updatedAt": "2026-11-12T12:36:00+01:00"
+      "updatedAt": "2026-11-12T12:56:00+01:00"
     }
   }
 }
