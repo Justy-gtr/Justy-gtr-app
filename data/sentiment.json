@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T16:30:00+01:00",
+  "updatedAt": "2026-11-12T16:33:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 45,
+      "score": 40,
       "postsCount": 15,
-      "reason": "SpaceX: Erst bis 5,6 % im Plus, jetzt noch gut 2 % bei 143 $. Viele hoffen auf Huang bei SpaceX, von Musk gibt es dazu noch nichts. Flight 15 ist am Freitag.",
+      "reason": "SpaceX: Gewinne schrumpfen, Kurs unter 142 $. Teslarati und viele Fans wünschen sich Huang bei SpaceX. Thema: Index-Umschichtung am Freitag und Flight 15.",
       "sources": [
         {
-          "title": "Hoch 147,58 $, jetzt 142,9 $",
+          "title": "Teslarati: Huang zu Tesla/SpaceX",
+          "url": "https://x.com/Teslarati/status/2120902181674959298"
+        },
+        {
+          "title": "Hoch 147,58 $, dann Rückgang",
           "url": "https://x.com/gonta_southwood/status/2120899193988690273"
         },
         {
-          "title": "Huang schnell zu SpaceX holen?",
-          "url": "https://x.com/phithetasigma/status/2120899870806671501"
-        },
-        {
-          "title": "Flight 15 mit Fangversuch",
-          "url": "https://x.com/davideverist350/status/2120900325414670604"
+          "title": "Index-Umschichtung am Freitag",
+          "url": "https://x.com/wallstbull37/status/2120901736864907419"
         }
       ],
-      "updatedAt": "2026-11-12T16:30:00+01:00"
+      "updatedAt": "2026-11-12T16:33:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -35,15 +35,15 @@
           "url": "https://x.com/na_option/status/2120899690795331845"
         },
         {
-          "title": "Zweifel an der Huang-Idee",
-          "url": "https://x.com/realmikecolin/status/2120899545068695602"
+          "title": "Teslarati: Huang zu Tesla/SpaceX",
+          "url": "https://x.com/Teslarati/status/2120902181674959298"
         },
         {
           "title": "Squawksquare: von NVDA zu TSLA",
           "url": "https://x.com/squawksquare/status/2120900011005485161"
         }
       ],
-      "updatedAt": "2026-11-12T16:30:00+01:00"
+      "updatedAt": "2026-11-12T16:33:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
