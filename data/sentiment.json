@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T11:13:00+01:00",
+  "updatedAt": "2026-11-12T11:33:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 20,
-      "postsCount": 24,
-      "reason": "SpaceX: Vorfreude auf Starship-Flug am Freitag, Luftraumsperren der FAA laut Fans erteilt. Kurs zuletzt -5 %. Musk gelassen wegen möglichem Anthropic-Abgang.",
+      "score": 15,
+      "postsCount": 25,
+      "reason": "SpaceX: Vorfreude auf Starship-Flug am Freitag, Booster B22 rollt zur Rampe. Selenskyj klagt über gedrosseltes Starshield. Viel Gerede über Huang und Anthropic.",
       "sources": [
         {
-          "title": "FAA-Luftraumsperren für Flug 15",
-          "url": "https://x.com/Tibetan95380/status/2120819597054201987"
+          "title": "Booster B22 vor Flug 15",
+          "url": "https://x.com/AntonioGprivate/status/2120826522990793004"
         },
         {
-          "title": "SPCX -5,3 % im Sog von Nvidia",
-          "url": "https://x.com/KuCoin_Web3/status/2120819149761053064"
+          "title": "Selenskyj: Starshield gedrosselt",
+          "url": "https://x.com/BetTheDecade/status/2120825170226970861"
         },
         {
-          "title": "Musk zu Anthropic-Compute",
-          "url": "https://x.com/JungleReportFi/status/2120820817994952799"
+          "title": "Anthropic-Vertrag: wer steigt aus?",
+          "url": "https://x.com/teajayzz64/status/2120824295027064835"
         }
       ],
-      "updatedAt": "2026-11-12T11:13:00+01:00"
+      "updatedAt": "2026-11-12T11:33:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,7 +43,7 @@
           "url": "https://x.com/BradMunchen/status/2120811685980389457"
         }
       ],
-      "updatedAt": "2026-11-12T11:13:00+01:00"
+      "updatedAt": "2026-11-12T11:33:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/BruceTa55302936/status/2120808146239402333"
         }
       ],
-      "updatedAt": "2026-11-12T11:13:00+01:00"
+      "updatedAt": "2026-11-12T11:33:00+01:00"
     }
   }
 }
