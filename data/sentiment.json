@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T14:58:00+01:00",
+  "updatedAt": "2026-11-12T15:08:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
       "score": 20,
-      "postsCount": 15,
-      "reason": "SpaceX: Nach Berichten über Huangs Aus bei Nvidia spekulieren Fans, Musk hole ihn zu SpaceX. Vorbörslich rund -1 %. Viele freuen sich auf den Doppelfang am Freitag.",
+      "postsCount": 12,
+      "reason": "SpaceX: Viele rätseln, ob Musk Ex-Nvidia-Chef Huang holt. Für Flight 15 am Freitag wird sogar über Jamaika der Luftraum gesperrt. Ein Tesla-Zusammenschluss wird geprüft.",
       "sources": [
         {
-          "title": "Huang raus als Nvidia-Chef",
-          "url": "https://x.com/spcxGOD/status/2120878016754557006"
+          "title": "Holt Musk Huang?",
+          "url": "https://x.com/inkdropreads/status/2120879221358879102"
         },
         {
-          "title": "State Street stockt SpaceX auf",
-          "url": "https://x.com/Bearlovesbull/status/2120877502419620075"
+          "title": "Luftraumsperre für Flight 15",
+          "url": "https://x.com/JamaicaObserver/status/2120879961452028305"
         },
         {
-          "title": "Flight 15: Doppelfang Freitag",
-          "url": "https://x.com/KevSepho82/status/2120875007022678525"
+          "title": "10-Q: Tesla-Fusion wird geprüft",
+          "url": "https://x.com/alialagheband/status/2120880948216525147"
         }
       ],
-      "updatedAt": "2026-11-12T14:58:00+01:00"
+      "updatedAt": "2026-11-12T15:08:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 0,
+      "score": -5,
       "postsCount": 12,
-      "reason": "Tesla: Vorbörslich etwa -1,3 %, die Nvidia-Krise drückt KI-Werte. Charttrader schauen auf 384 $. Fans teilen ein FSD-Video, in dem das Auto für einen Hund bremst.",
+      "reason": "Tesla: Charttrader nennen 386 $ als Marke, die halten muss. Viele Listen-Accounts raten zur Vorsicht. Fans hoffen, Tesla holt Huang, und reden über eine SpaceX-Fusion.",
       "sources": [
         {
-          "title": "Nvidia-Krise trifft KI-Werte",
-          "url": "https://x.com/RandyWKirk1/status/2120875410720502206"
+          "title": "Redler: 386 $ muss halten",
+          "url": "https://x.com/RedDogT3/status/2120880783887827288"
         },
         {
-          "title": "Chart: 384 $ muss halten",
-          "url": "https://x.com/SuperMariossss/status/2120876521204105378"
+          "title": "Fans: Tesla soll Huang holen",
+          "url": "https://x.com/YyzOhad/status/2120879489982890467"
         },
         {
-          "title": "FSD bremst für Hund",
-          "url": "https://x.com/x_invest1/status/2120875536377332046"
+          "title": "SpaceX-Tesla-Fusion: Rechnung",
+          "url": "https://x.com/alialagheband/status/2120880948216525147"
         }
       ],
-      "updatedAt": "2026-11-12T14:58:00+01:00"
+      "updatedAt": "2026-11-12T15:08:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 13,
-      "reason": "Rocket Lab: Vorbörslich etwa -3,6 %, trotzdem viel Zuversicht. Der Finanzchef sagt, Neutron-Aufträge sind mit Anzahlungen gesichert. Nutzer entdecken ein neues Radar-Team.",
+      "score": 20,
+      "postsCount": 11,
+      "reason": "Rocket Lab: Anleger diskutieren, ob Neutron-Anzahlungen das Absagerisiko senken. Viele wollen lange halten. Dazu kommen viele Werbe-Posts für Chatgruppen.",
       "sources": [
         {
-          "title": "Neutron-Aufträge mit Anzahlung",
+          "title": "Neutron-Anzahlungen bewertet",
+          "url": "https://x.com/MrBig8x6/status/2120879647051448442"
+        },
+        {
+          "title": "Finanzchef: echte Anzahlungen",
           "url": "https://x.com/rocket__house/status/2120877757185900777"
         },
         {
-          "title": "Neues Radar-Geschäft",
-          "url": "https://x.com/cyberprince_rwo/status/2120875827998986596"
-        },
-        {
-          "title": "Chart: Ausbruch aus Keil",
-          "url": "https://x.com/Spybef0rey0ubuy/status/2120878029085757456"
+          "title": "Halten statt verkaufen",
+          "url": "https://x.com/millennialinv16/status/2120879470991003803"
         }
       ],
-      "updatedAt": "2026-11-12T14:58:00+01:00"
+      "updatedAt": "2026-11-12T15:08:00+01:00"
     }
   }
 }
