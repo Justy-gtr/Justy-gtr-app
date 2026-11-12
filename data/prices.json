@@ -7751,59 +7751,55 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "SPCX nachbörslich 138,10 $ (−1,2 % zum Schluss 139,75 $, 19:59 ET) (Yahoo). Nacht zu Do, Stand 06:45: Nvidias Verwaltungsrat hat laut Reuters am Mittwochabend über Chef Jensen Huang beraten, eine Entscheidung ist nicht bekannt; im Gespräch als Interimschefs sind Finanzchefin Colette Kress und CUDA-Architekt Ian Buck (Semafor, Reuters). Nvidia nachbörslich 158,78 $ (−8,6 % zum Schluss 173,73 $), Nasdaq-100-Future um 06:35 bei 28.145 Punkten (−1,2 %), S&P-500-Future −0,5 %, Taiwan −2,8 %, Nikkei −0,8 % (Yahoo, Reuters). Der Dax-Future steigt dagegen auf 26.911 Punkte (finanzen.net). Für SpaceX selbst gute Nachrichten: USSF-627 startete um 05:36, die Erststufe landete auf dem Drohnenschiff – der 120. Falcon-9-Start des Jahres (SpaceX, Space.com). Dazu ein SDA-Auftrag über knapp 10 Mio. $, SpaceX-Laserverbindungen mit Raketenwarnsatelliten zu koppeln (SpaceNews). Flight 15 (Fr 23:45) wartet weiter auf die FAA-Lizenz; das Anthropic-Gerücht vom Mittwoch ist unbestätigt.",
+      "why": "Stand Do 08:50: SpaceX in Frankfurt 125,48 € (−0,4 % zum Frankfurter Vortag, 08:28), Nasdaq-Schluss Mi 139,75 $ (−2,3 %), nachbörslich 138,10 $ (Yahoo). Nvidia-Chefkrise: Der Verwaltungsrat hat getagt, ein Beschluss ist nicht verkündet; laut Bloomberg sucht er mit einer externen Personalberatung Nachfolger für Jensen Huang (Bloomberg, Guardian). Nvidia in Frankfurt 145,72 € (−6,9 %), Nasdaq-100-Future um 08:40 bei 28.195 Punkten (−1,0 %), S&P-500-Future −0,4 % (Yahoo). Der Dax steuert dagegen auf ein Rekordhoch zu, IG taxiert ihn 0,6 % höher bei 26.830 Punkten (tagesschau). Für SpaceX selbst: USSF-627 startete um 05:36, die Erststufe landete (SpaceX). Flight 15 (Fr 23:45) wartet weiter auf die FAA-Lizenz, die FAA hat aber die Luftraumsperre für den 13.11. veröffentlicht (spacex-news.com). Heute 14:00 Nebius-Zahlen, abends Cisco und Applied Materials – Tests für das KI-Rechenzentrumsgeschäft.",
       "whySources": [
         {
-          "title": "Yahoo Finance SPCX (Nachbörse 19:59 ET)",
+          "title": "Yahoo Finance: SPX.F (Frankfurt)",
+          "url": "https://finance.yahoo.com/quote/SPX.F/"
+        },
+        {
+          "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Reuters Morning Bid Europe: „Jensen hangs on as Nvidia tumbles“ (12.11.)",
-          "url": "https://www.devdiscourse.com/article/international/4005571-morning-bid-europe-jensen-hangs-on-as-nvidia-tumbles"
+          "title": "Bloomberg (via Bloomberg Law): Nvidia sucht mit externer Firma CEO-Kandidaten (12.11.)",
+          "url": "https://news.bloomberglaw.com/esg/nvidia-working-with-outside-firm-to-identify-ceo-candidates-1"
         },
         {
-          "title": "Semafor via Yahoo: Teile des Boards wollen CFO Kress als Interimschefin (11.11.)",
-          "url": "https://finance.yahoo.com/technology/articles/nvidia-board-prepares-oust-ceo-032749113.html"
+          "title": "The Guardian: Board berät über Huang, noch keine Entscheidung (12.11.)",
+          "url": "https://www.theguardian.com/technology/2026/nov/12/nvidia-board-decision-ceo-jensen-huang-alleged-second-affair"
         },
         {
-          "title": "Yahoo Finance NVDA (Schluss 173,73 $, Nachbörse 158,78 $)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Yahoo Finance: NVD.F (Frankfurt)",
+          "url": "https://finance.yahoo.com/quote/NVD.F/"
         },
         {
-          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (12.11., 06:35)",
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Yahoo Finance: S&P-500-Future ES=F (12.11., 06:35)",
+          "title": "Yahoo Finance: S&P-500-Future ES=F",
           "url": "https://finance.yahoo.com/quote/ES%3DF/"
         },
         {
-          "title": "Yahoo Finance: Nikkei 225 (^N225, 12.11., 06:30)",
-          "url": "https://finance.yahoo.com/quote/%5EN225/"
+          "title": "tagesschau: Dax könnte mit Rekordhoch starten (12.11., 07:33)",
+          "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-106.html"
         },
         {
-          "title": "finanzen.net/Dow Jones: Dax-Future im Frühhandel freundlich (12.11., 06:04)",
-          "url": "https://www.finanzen.net/nachricht/aktien/eurex-dax-futures-im-fruehhandel-freundlich-16057844"
-        },
-        {
-          "title": "@SpaceX: Liftoff! USSF-627 (12.11., 05:37)",
-          "url": "https://x.com/SpaceX/status/2120737709924720659"
-        },
-        {
-          "title": "@SpaceX: Erststufe landet auf „Of Course I Still Love You“ (12.11., 05:45)",
+          "title": "@SpaceX: Erststufe USSF-627 gelandet (12.11.)",
           "url": "https://x.com/SpaceX/status/2120739813401792913"
         },
         {
-          "title": "Space.com: SpaceX startet zweite geheime Space-Force-Mission in sechs Tagen (12.11.)",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-2nd-mystery-mission-for-us-space-force-in-6-day-span-photos"
+          "title": "spacex-news.com: FAA-Luftraumsperre Starbase 13.11.",
+          "url": "https://spacex-news.com/news/2026/11/faa-posts-launch-airspace-restriction-near-starbase-13-november-201/"
         },
         {
-          "title": "SpaceNews: SDA-Auftrag über knapp 10 Mio. $ für SpaceX-Laserverbindungen (11.11.)",
-          "url": "https://spacenews.com/spacex-to-study-options-to-bridge-commercial-and-military-satellite-networks/"
-        },
-        {
-          "title": "SpaceX: Starship Flight 15 (pending regulatory approval)",
+          "title": "SpaceX: Starship Flight 15",
           "url": "https://www.spacex.com/launches/starship-flight-15"
+        },
+        {
+          "title": "Nebius IR: Q3-Zahlen 12.11., 14:00 MEZ",
+          "url": "https://nebius.com/investor-events/q3-financial-resualts-and-live-webcast"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -23201,55 +23197,51 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Tesla nachbörslich 387,15 $ (−0,9 % zum Schluss 390,84 $, 19:59 ET) (Yahoo). Nacht zu Do, Stand 06:45: Nvidias Verwaltungsrat hat laut Reuters am Mittwochabend über Chef Jensen Huang beraten, eine Entscheidung ist nicht bekannt; im Gespräch als Interimschefs sind Finanzchefin Colette Kress und CUDA-Architekt Ian Buck (Semafor, Reuters). Nvidia nachbörslich 158,78 $ (−8,6 % zum Schluss 173,73 $), Nasdaq-100-Future um 06:35 bei 28.145 Punkten (−1,2 %), S&P-500-Future −0,5 %, Taiwan −2,8 %, Nikkei −0,8 % (Yahoo, Reuters). Der Dax-Future steigt dagegen auf 26.911 Punkte (finanzen.net). Eigene Nachricht: Tesla meldet um 05:31, dass Robotaxi jetzt rund um die Uhr in allen Städten fährt; Musk ergänzt „168 Stunden pro Woche“ (X). Gegenwind: Jefferies hat am Montag von „Strong Buy“ auf „Hold“ abgestuft (MarketBeat). Am Mittwoch +2,9 % mit der FSD-Freigabe in Finnland und längerer Cybertruck-Produktion.",
+      "why": "Stand Do 08:50: Tesla in Frankfurt 349,25 € (−0,8 % zum Frankfurter Vortag, 08:04), vor Xetra 349,00 € (ad-hoc-news); Nasdaq-Schluss Mi 390,84 $, nachbörslich 387,15 $ (Yahoo). Die +2,6 % in der App rechnen gegen den deutschen Schluss vom Mittwoch, vor dem US-Anstieg. Nvidia-Chefkrise: Der Verwaltungsrat hat getagt, ein Beschluss ist nicht verkündet; laut Bloomberg sucht er mit einer externen Personalberatung Nachfolger für Jensen Huang (Bloomberg, Guardian). Nvidia in Frankfurt 145,72 € (−6,9 %), Nasdaq-100-Future um 08:40 bei 28.195 Punkten (−1,0 %), S&P-500-Future −0,4 % (Yahoo). Der Dax steuert dagegen auf ein Rekordhoch zu, IG taxiert ihn 0,6 % höher bei 26.830 Punkten (tagesschau). Eigene Nachrichten: Robotaxi fährt seit heute früh rund um die Uhr in allen Städten (@robotaxi), Musk verweist auf die „Optimus Academy“ für Roboter-Training (X).",
       "whySources": [
         {
-          "title": "Yahoo Finance TSLA (Nachbörse 19:59 ET)",
+          "title": "Yahoo Finance: TL0.F (Frankfurt)",
+          "url": "https://finance.yahoo.com/quote/TL0.F/"
+        },
+        {
+          "title": "ad-hoc-news: Tesla-Aktie bei 349,00 Euro vor Xetra",
+          "url": "https://www.ad-hoc-news.de/boerse/news/vorboerse/tesla-aktie-bei-349-00-euro-vor-xetra-1-40-prozent-tiefer/70495666"
+        },
+        {
+          "title": "Yahoo Finance: TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "Reuters Morning Bid Europe: „Jensen hangs on as Nvidia tumbles“ (12.11.)",
-          "url": "https://www.devdiscourse.com/article/international/4005571-morning-bid-europe-jensen-hangs-on-as-nvidia-tumbles"
+          "title": "Bloomberg (via Bloomberg Law): Nvidia sucht mit externer Firma CEO-Kandidaten (12.11.)",
+          "url": "https://news.bloomberglaw.com/esg/nvidia-working-with-outside-firm-to-identify-ceo-candidates-1"
         },
         {
-          "title": "Semafor via Yahoo: Teile des Boards wollen CFO Kress als Interimschefin (11.11.)",
-          "url": "https://finance.yahoo.com/technology/articles/nvidia-board-prepares-oust-ceo-032749113.html"
+          "title": "The Guardian: Board berät über Huang, noch keine Entscheidung (12.11.)",
+          "url": "https://www.theguardian.com/technology/2026/nov/12/nvidia-board-decision-ceo-jensen-huang-alleged-second-affair"
         },
         {
-          "title": "Yahoo Finance NVDA (Schluss 173,73 $, Nachbörse 158,78 $)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Yahoo Finance: NVD.F (Frankfurt)",
+          "url": "https://finance.yahoo.com/quote/NVD.F/"
         },
         {
-          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (12.11., 06:35)",
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Yahoo Finance: S&P-500-Future ES=F (12.11., 06:35)",
+          "title": "Yahoo Finance: S&P-500-Future ES=F",
           "url": "https://finance.yahoo.com/quote/ES%3DF/"
         },
         {
-          "title": "Yahoo Finance: Nikkei 225 (^N225, 12.11., 06:30)",
-          "url": "https://finance.yahoo.com/quote/%5EN225/"
+          "title": "tagesschau: Dax könnte mit Rekordhoch starten (12.11., 07:33)",
+          "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-106.html"
         },
         {
-          "title": "finanzen.net/Dow Jones: Dax-Future im Frühhandel freundlich (12.11., 06:04)",
-          "url": "https://www.finanzen.net/nachricht/aktien/eurex-dax-futures-im-fruehhandel-freundlich-16057844"
-        },
-        {
-          "title": "@robotaxi: Robotaxi jetzt rund um die Uhr in jeder Stadt (12.11., 05:31)",
+          "title": "@robotaxi: Robotaxi rund um die Uhr (12.11.)",
           "url": "https://x.com/robotaxi/status/2120736143566344324"
         },
         {
-          "title": "@elonmusk: „Robotaxi works 168 hours a week“ (12.11., 06:12)",
-          "url": "https://x.com/elonmusk/status/2120746428720988408"
-        },
-        {
-          "title": "MarketBeat: Jefferies stuft Tesla auf „Hold“ ab (11.11.)",
-          "url": "https://www.marketbeat.com/instant-alerts/analyst-tesla-nasdaq-tsla-rating-lowered-to-hold-at-jefferies-financial-group-2026-11-11/"
-        },
-        {
-          "title": "Electrek: Cybertruck-Produktion bis Sommer 2027 (11.11.)",
-          "url": "https://electrek.co/2026/11/11/tesla-extends-cybertruck-production-summer-2027-fan-backlash/"
+          "title": "@elonmusk: „Optimus Academy“ (12.11.)",
+          "url": "https://x.com/elonmusk/status/2120761716632129873"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -36008,39 +36000,43 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Rocket Lab nachbörslich 64,43 $ (−2,6 % zum Schluss 66,15 $, 19:59 ET) (Yahoo), ohne eigene Meldung im Sog fallender Tech-Futures. Nacht zu Do, Stand 06:45: Nvidias Verwaltungsrat hat laut Reuters am Mittwochabend über Chef Jensen Huang beraten, eine Entscheidung ist nicht bekannt; im Gespräch als Interimschefs sind Finanzchefin Colette Kress und CUDA-Architekt Ian Buck (Semafor, Reuters). Nvidia nachbörslich 158,78 $ (−8,6 % zum Schluss 173,73 $), Nasdaq-100-Future um 06:35 bei 28.145 Punkten (−1,2 %), S&P-500-Future −0,5 %, Taiwan −2,8 %, Nikkei −0,8 % (Yahoo, Reuters). Der Dax-Future steigt dagegen auf 26.911 Punkte (finanzen.net). Am Mittwoch +5,5 % nach Q3-Zahlen und Erholung der Raumfahrtwerte. Nächster Termin: der 100. Electron-Start „The Mountain God Rises“ für iQPS, frühestens Sa 14.11. ab 06:30.",
+      "why": "Stand Do 08:50: Rocket Lab hat in Frankfurt heute noch nicht gehandelt; nachbörslich 64,43 $ (−2,6 % zum Schluss 66,15 $) (Yahoo), ohne eigene Meldung im Sog fallender Tech-Futures. Nvidia-Chefkrise: Der Verwaltungsrat hat getagt, ein Beschluss ist nicht verkündet; laut Bloomberg sucht er mit einer externen Personalberatung Nachfolger für Jensen Huang (Bloomberg, Guardian). Nvidia in Frankfurt 145,72 € (−6,9 %), Nasdaq-100-Future um 08:40 bei 28.195 Punkten (−1,0 %), S&P-500-Future −0,4 % (Yahoo). Der Dax steuert dagegen auf ein Rekordhoch zu, IG taxiert ihn 0,6 % höher bei 26.830 Punkten (tagesschau). Am Mittwoch +5,5 % nach Q3 und Erholung der Raumfahrtwerte. Rocket Lab erhöht wegen hoher Nachfrage die Preise für Electron und Neutron (SpaceNews, 10.11.). Nächster Termin: der 100. Electron-Start für iQPS, frühestens Sa 14.11. ab 06:30.",
       "whySources": [
         {
-          "title": "Yahoo Finance RKLB (Nachbörse 19:59 ET)",
+          "title": "Yahoo Finance: RKLB",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "Reuters Morning Bid Europe: „Jensen hangs on as Nvidia tumbles“ (12.11.)",
-          "url": "https://www.devdiscourse.com/article/international/4005571-morning-bid-europe-jensen-hangs-on-as-nvidia-tumbles"
+          "title": "Yahoo Finance: 6RJ0.F (Frankfurt)",
+          "url": "https://finance.yahoo.com/quote/6RJ0.F/"
         },
         {
-          "title": "Semafor via Yahoo: Teile des Boards wollen CFO Kress als Interimschefin (11.11.)",
-          "url": "https://finance.yahoo.com/technology/articles/nvidia-board-prepares-oust-ceo-032749113.html"
+          "title": "Bloomberg (via Bloomberg Law): Nvidia sucht mit externer Firma CEO-Kandidaten (12.11.)",
+          "url": "https://news.bloomberglaw.com/esg/nvidia-working-with-outside-firm-to-identify-ceo-candidates-1"
         },
         {
-          "title": "Yahoo Finance NVDA (Schluss 173,73 $, Nachbörse 158,78 $)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "The Guardian: Board berät über Huang, noch keine Entscheidung (12.11.)",
+          "url": "https://www.theguardian.com/technology/2026/nov/12/nvidia-board-decision-ceo-jensen-huang-alleged-second-affair"
         },
         {
-          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (12.11., 06:35)",
+          "title": "Yahoo Finance: NVD.F (Frankfurt)",
+          "url": "https://finance.yahoo.com/quote/NVD.F/"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Yahoo Finance: S&P-500-Future ES=F (12.11., 06:35)",
+          "title": "Yahoo Finance: S&P-500-Future ES=F",
           "url": "https://finance.yahoo.com/quote/ES%3DF/"
         },
         {
-          "title": "Yahoo Finance: Nikkei 225 (^N225, 12.11., 06:30)",
-          "url": "https://finance.yahoo.com/quote/%5EN225/"
+          "title": "tagesschau: Dax könnte mit Rekordhoch starten (12.11., 07:33)",
+          "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-106.html"
         },
         {
-          "title": "finanzen.net/Dow Jones: Dax-Future im Frühhandel freundlich (12.11., 06:04)",
-          "url": "https://www.finanzen.net/nachricht/aktien/eurex-dax-futures-im-fruehhandel-freundlich-16057844"
+          "title": "SpaceNews: Hohe Nachfrage – Rocket Lab erhöht Startpreise (10.11.)",
+          "url": "https://spacenews.com/high-demand-prompts-rocket-lab-to-raise-launch-prices/"
         },
         {
           "title": "Rocket Lab: The Mountain God Rises",
@@ -50341,46 +50337,50 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Marvell nachbörslich 164,00 $ (−2,8 % zum Schluss 168,80 $, 19:59 ET) (Yahoo). Nacht zu Do, Stand 06:45: Nvidias Verwaltungsrat hat laut Reuters am Mittwochabend über Chef Jensen Huang beraten, eine Entscheidung ist nicht bekannt; im Gespräch als Interimschefs sind Finanzchefin Colette Kress und CUDA-Architekt Ian Buck (Semafor, Reuters). Nvidia nachbörslich 158,78 $ (−8,6 % zum Schluss 173,73 $), Nasdaq-100-Future um 06:35 bei 28.145 Punkten (−1,2 %), S&P-500-Future −0,5 %, Taiwan −2,8 %, Nikkei −0,8 % (Yahoo, Reuters). Der Dax-Future steigt dagegen auf 26.911 Punkte (finanzen.net). Am Mittwoch +9,3 % in der Chip-Erholung nach CoreWeave. Heute nach US-Schluss Cisco (erwartet 1,32 $ je Aktie, 18,11 Mrd. $ Umsatz) und Applied Materials (4,06 $, 10,30 Mrd. $) – der nächste Test für die KI-Chipwerte (TipRanks, Investing.com). Eigene Zahlen am 1.12.",
+      "why": "Stand Do 08:50: Marvell in Frankfurt 147,02 € (−4,7 % zum Frankfurter Vortag, 08:29), nachbörslich 164,00 $ (−2,8 % zum Schluss 168,80 $) (Yahoo). Die +5,8 % in der App rechnen gegen den deutschen Schluss vor dem US-Anstieg vom Mittwoch (+9,3 %). Nvidia-Chefkrise: Der Verwaltungsrat hat getagt, ein Beschluss ist nicht verkündet; laut Bloomberg sucht er mit einer externen Personalberatung Nachfolger für Jensen Huang (Bloomberg, Guardian). Nvidia in Frankfurt 145,72 € (−6,9 %), Nasdaq-100-Future um 08:40 bei 28.195 Punkten (−1,0 %), S&P-500-Future −0,4 % (Yahoo). Der Dax steuert dagegen auf ein Rekordhoch zu, IG taxiert ihn 0,6 % höher bei 26.830 Punkten (tagesschau). Heute 14:00 Nebius-Zahlen, nach US-Schluss Cisco (erwartet 1,32 $ je Aktie, 18,11 Mrd. $ Umsatz) und Applied Materials (4,06 $, 10,30 Mrd. $) – die nächsten Tests für die KI-Chipwerte (TipRanks, Investing.com). Eigene Zahlen am 1.12.",
       "whySources": [
         {
-          "title": "Yahoo Finance MRVL (Nachbörse 19:59 ET)",
+          "title": "Yahoo Finance: 9MW.F (Frankfurt)",
+          "url": "https://finance.yahoo.com/quote/9MW.F/"
+        },
+        {
+          "title": "Yahoo Finance: MRVL",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "Reuters Morning Bid Europe: „Jensen hangs on as Nvidia tumbles“ (12.11.)",
-          "url": "https://www.devdiscourse.com/article/international/4005571-morning-bid-europe-jensen-hangs-on-as-nvidia-tumbles"
+          "title": "Bloomberg (via Bloomberg Law): Nvidia sucht mit externer Firma CEO-Kandidaten (12.11.)",
+          "url": "https://news.bloomberglaw.com/esg/nvidia-working-with-outside-firm-to-identify-ceo-candidates-1"
         },
         {
-          "title": "Semafor via Yahoo: Teile des Boards wollen CFO Kress als Interimschefin (11.11.)",
-          "url": "https://finance.yahoo.com/technology/articles/nvidia-board-prepares-oust-ceo-032749113.html"
+          "title": "The Guardian: Board berät über Huang, noch keine Entscheidung (12.11.)",
+          "url": "https://www.theguardian.com/technology/2026/nov/12/nvidia-board-decision-ceo-jensen-huang-alleged-second-affair"
         },
         {
-          "title": "Yahoo Finance NVDA (Schluss 173,73 $, Nachbörse 158,78 $)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Yahoo Finance: NVD.F (Frankfurt)",
+          "url": "https://finance.yahoo.com/quote/NVD.F/"
         },
         {
-          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (12.11., 06:35)",
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Yahoo Finance: S&P-500-Future ES=F (12.11., 06:35)",
+          "title": "Yahoo Finance: S&P-500-Future ES=F",
           "url": "https://finance.yahoo.com/quote/ES%3DF/"
         },
         {
-          "title": "Yahoo Finance: Nikkei 225 (^N225, 12.11., 06:30)",
-          "url": "https://finance.yahoo.com/quote/%5EN225/"
+          "title": "tagesschau: Dax könnte mit Rekordhoch starten (12.11., 07:33)",
+          "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-106.html"
         },
         {
-          "title": "finanzen.net/Dow Jones: Dax-Future im Frühhandel freundlich (12.11., 06:04)",
-          "url": "https://www.finanzen.net/nachricht/aktien/eurex-dax-futures-im-fruehhandel-freundlich-16057844"
+          "title": "Nebius IR: Q3-Zahlen 12.11., 14:00 MEZ",
+          "url": "https://nebius.com/investor-events/q3-financial-resualts-and-live-webcast"
         },
         {
-          "title": "TipRanks: Was Analysten von Cisco Q1 erwarten",
+          "title": "TipRanks: Cisco Q1 – was Analysten erwarten",
           "url": "https://www.tipranks.com/news/cisco-q1-earnings-heres-what-analysts-expect-from-csco-stock-amid-ai-trade-concerns"
         },
         {
-          "title": "Investing.com: Applied Materials Q4 – worauf es ankommt",
+          "title": "Investing.com: Applied Materials Q4 – Vorschau",
           "url": "https://www.investing.com/news/stock-market-news/applied-materials-fiscal-q4-2026-earnings-preview-what-to-watch-for-in-the-print-93CH-5019657"
         }
       ],

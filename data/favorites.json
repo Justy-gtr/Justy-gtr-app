@@ -139,7 +139,7 @@
       "priceAsOf": "2026-11-04",
       "priceVenue": "Xetra",
       "swarmNote": "Die laute Mehrheit behandelt Nvidia weiter als den Kern der KI-Welle und liegt auf der Kaufseite.",
-      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl stehen Rechenzentren politisch unter Druck. Seit 8.11. läuft eine Untersuchung zu Huangs Affäre mit einer mutmaßlichen chinesischen Agentin; am 11.11. berichtete das WSJ, der Verwaltungsrat bereite seine Ablösung vor. Nachbörslich fiel die Aktie auf 158,78 $ (−8,6 %). Karl jagt den Namen nicht.",
+      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl stehen Rechenzentren politisch unter Druck. Seit 8.11. läuft eine Untersuchung zu Huangs Affäre mit einer mutmaßlichen chinesischen Agentin; am 11.11. berichtete das WSJ, der Verwaltungsrat bereite seine Ablösung vor. Nachbörslich fiel die Aktie auf 158,78 $ (−8,6 %). Laut Bloomberg sucht der Verwaltungsrat mit einer externen Personalberatung schon Nachfolger, ein Beschluss ist bis Do früh nicht verkündet. Karl jagt den Namen nicht.",
       "counterArgument": "Die Aufträge können die Politik überholen. Wer zu früh aussteigt, verpasst die nächste Welle.",
       "example": false,
       "sources": [
@@ -170,6 +170,10 @@
         {
           "title": "Yahoo Finance NVDA (Nachbörse 19:59 ET)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
+        },
+        {
+          "title": "Bloomberg (via Bloomberg Law): Nvidia sucht mit externer Firma CEO-Kandidaten (12.11.)",
+          "url": "https://news.bloomberglaw.com/esg/nvidia-working-with-outside-firm-to-identify-ceo-candidates-1"
         }
       ]
     },

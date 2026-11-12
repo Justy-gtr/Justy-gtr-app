@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-12T06:50:00+01:00",
+  "asOf": "2026-11-12T08:55:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,37 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2120761716632129873",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-12T07:12:49+01:00",
+      "summaryDe": "Musk antwortet auf ein Video von Farzad („Warum Tesla eine Schule für Roboter baut“) nur mit „Optimus Academy“. Gemeint ist das Trainingsgelände, auf dem laut Musk beim Q3-Call 10.000 bis 20.000 Optimus-Roboter Aufgaben durch Selbstübung lernen sollen. Neue Zahlen oder Termine nennt er nicht.",
+      "originalText": "Optimus Academy",
+      "url": "https://x.com/elonmusk/status/2120761716632129873",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „Optimus Academy“ (12.11., 07:12)",
+          "url": "https://x.com/elonmusk/status/2120761716632129873"
+        },
+        {
+          "title": "@farzyness: Why Tesla Is Building A School For Robots (11.11.)",
+          "url": "https://x.com/farzyness/status/2120609554777944196"
+        },
+        {
+          "title": "BeInCrypto: Robotaxi rund um die Uhr, Optimus Academy (12.11.)",
+          "url": "https://beincrypto.com/tesla-robotaxi-24-7-optimus-academy/"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2120746428720988408",
       "account": "@elonmusk",
