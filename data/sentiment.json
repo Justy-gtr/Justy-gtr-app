@@ -1,13 +1,13 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T16:13:00+01:00",
+  "updatedAt": "2026-11-12T16:21:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 55,
       "postsCount": 15,
-      "reason": "SpaceX: Rund 5 % im Plus bei etwa 147 $. Viele hoffen, dass Huang zu Musk wechselt, einige nennen das übertriebenen Hype. Flight 15 ist für Freitag geplant.",
+      "reason": "SpaceX: Rund 5 % im Plus. Fast alle reden über Huang und Musk, ein Wechsel ist aber nur ein Gerücht. Einige nennen es Hype. Flight 15 ist für Freitag geplant.",
       "sources": [
         {
           "title": "TommyATX: SPCX +5,2 %",
@@ -18,17 +18,17 @@
           "url": "https://x.com/MomAngtrades/status/2120896692015038886"
         },
         {
-          "title": "Skeptiker: nur Hype?",
-          "url": "https://x.com/EBUYUKARSLAN/status/2120896432907444642"
+          "title": "Huang und Musk zusammen?",
+          "url": "https://x.com/AdamPlotkin/status/2120897574412689890"
         }
       ],
-      "updatedAt": "2026-11-12T16:13:00+01:00"
+      "updatedAt": "2026-11-12T16:21:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 20,
       "postsCount": 15,
-      "reason": "Tesla: Leicht im Plus um 393 $, die Hürde bei 400 $ bleibt Thema. Robotaxi fährt jetzt rund um die Uhr in 8 Städten. Fans hoffen auf Huang, Skeptiker warnen.",
+      "reason": "Tesla: Leicht im Plus, viele schauen auf den Ausbruch über 395 bis 400 $. Robotaxi fährt rund um die Uhr in 8 Städten. Fans hoffen auf Huang, Skeptiker warnen.",
       "sources": [
         {
           "title": "Robotaxi rund um die Uhr",
@@ -39,32 +39,32 @@
           "url": "https://x.com/MomAngtrades/status/2120896692015038886"
         },
         {
-          "title": "Warnung vor FOMO",
-          "url": "https://x.com/M44_1RJ/status/2120896170356797565"
+          "title": "Ausbruchszone 395 $",
+          "url": "https://x.com/StockXcapital/status/2120898375709245674"
         }
       ],
-      "updatedAt": "2026-11-12T16:13:00+01:00"
+      "updatedAt": "2026-11-12T16:21:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 15,
-      "reason": "Rocket Lab: Seeking Alpha lobt Neutron, Anzahlungen machen die Buchungen sicherer. Pentagon-Kredite für Raumfahrt sind Thema, Neutron-Start erst 2027.",
+      "score": 35,
+      "postsCount": 10,
+      "reason": "Rocket Lab: Pentagon gibt 150 Mio. $ Kredit, damit Neutron nach dem Erststart öfter fliegen kann. Seeking Alpha lobt Neutron, der Erststart ist aber erst 2027.",
       "sources": [
+        {
+          "title": "150 Mio. $ für Neutron",
+          "url": "https://x.com/jameskeeling202/status/2120898573336490166"
+        },
         {
           "title": "Seeking Alpha zu Neutron",
           "url": "https://x.com/SeekingAlpha/status/2120891880930160844"
         },
         {
-          "title": "Neutron-Buchungen mit Anzahlung",
-          "url": "https://x.com/MrBig8x6/status/2120879647051448442"
-        },
-        {
-          "title": "Pentagon-Kredite für Raumfahrt",
-          "url": "https://x.com/AFP_press/status/2120879348601192483"
+          "title": "Donald Dean: RKLB-Marke 65 $",
+          "url": "https://x.com/donaldjdean/status/2120898357858328822"
         }
       ],
-      "updatedAt": "2026-11-12T16:09:00+01:00"
+      "updatedAt": "2026-11-12T16:21:00+01:00"
     }
   }
 }
