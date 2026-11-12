@@ -1,96 +1,128 @@
 {
   "example": false,
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "title": "Morgen-Briefing",
   "greeting": "Guten Morgen, Justy.",
-  "summary": "Die Nacht war ruhig, aber freundlich: Starke Zahlen von CoreWeave haben die KI-Werte nachbörslich angeschoben, der Nasdaq-100-Future liegt um 06:41 rund 1,4 % im Plus, Tokio stieg um rund 1 %. Gestern schloss SpaceX bei 143,09 $ (+0,7 %), Tesla bei 379,78 $ (+0,5 %), Rocket Lab bei 62,71 $ (+6,5 %); nachbörslich lagen SpaceX und Tesla etwas höher, Rocket Lab etwas tiefer. Musk schrieb nachts, SpaceX habe bei Singulus Anlagen für 100 GW Solarzellen pro Jahr bestellt – Singulus selbst nennt für die erste Linie über 60 Millionen Euro. Rocket Lab meldet, dass beide ESCAPADE-Sonden Kurs auf den Mars haben. Der Dax wird höher erwartet, um 07:00 kommen Siemens Energy, Eon und RWE. In den USA ist Veterans Day: Aktien handeln normal, Anleihen nicht. Starship Flight 15 am Freitag hat noch keine FAA-Lizenz.",
+  "summary": "Die Nacht gehörte Nvidia: Der Verwaltungsrat hat über Chef Jensen Huang beraten, nachdem eine zweite Affäre bekannt wurde – eine Entscheidung gibt es bis 06:45 nicht, als Interimschefin wird Finanzchefin Colette Kress genannt. Nvidia fiel nachbörslich um 8,6 % auf 158,78 $, der Nasdaq-100-Future liegt um 06:35 rund 1,2 % im Minus, Taiwan verlor 2,8 %. SpaceX hat um 05:36 die Space-Force-Mission USSF-627 gestartet, die Erststufe ist sicher gelandet. Musk schrieb nachts, Huang einzustellen „wäre eine Ehre“, und feierte morgens, dass Teslas Robotaxi jetzt rund um die Uhr fährt. Nachbörslich lagen SpaceX bei 138,10 $ (−1,2 %), Tesla bei 387,15 $ (−0,9 %) und Rocket Lab bei 64,43 $ (−2,6 %). Der Dax-Future steht dagegen höher, nahe am Rekord; heute berichten Siemens und Allianz, nach US-Schluss Cisco und Applied Materials. Starship Flight 15 am Freitag um 23:45 hat weiter keine FAA-Lizenz.",
   "bullets": [
-    "Di-Schluss: SPCX 143,09 $ (+0,7 %), TSLA 379,78 $ (+0,5 %), RKLB 62,71 $ (+6,5 %), MRVL 154,39 $; nachbörslich SPCX 144,10 $, TSLA 381,90 $, RKLB 61,84 $, MRVL 157,99 $.",
-    "CoreWeave Q3: Umsatz 3,66 Mrd. $, Jahresprognose erhöht, Aktie nachbörslich +7,9 %. Nasdaq-100-Future 06:41 rund +1,4 %, Nikkei rund +1 %.",
-    "Musk: Singulus-Anlagen für 100 GW/Jahr bestellt. Singulus: erste Linie über 60 Mio. €, 100 GW nur als Ausbaurahmen.",
-    "Rocket Lab 05:03: ESCAPADE-Sonden Blue und Gold nach Schwungholen an der Erde auf Marskurs.",
-    "Heute 07:00 Siemens Energy, Eon, RWE; 08:00 deutsche Inflation (endgültig). Dax vorbörslich höher. US-Börse offen, Anleihemarkt zu (Veterans Day).",
-    "Fed: Bowman sieht „noch Arbeit zu tun“, Erhöhung im Dezember rund 90 % eingepreist.",
-    "Do 03:35 USSF-627 (Go, 80 %). Do abends Cisco und Applied Materials. Fr 23:45 Starship Flight 15, FAA-Lizenz fehlt noch (65 %).",
-    "Heute 22:15 löst sich die Tagesfrage: Schließt RKLB über 62,71 $?"
+    "Mi-Schluss: SPCX 139,75 $ (−2,3 %), TSLA 390,84 $ (+2,9 %), RKLB 66,15 $ (+5,5 %), MRVL 168,80 $ (+9,3 %); nachbörslich SPCX 138,10 $, TSLA 387,15 $, RKLB 64,43 $, MRVL 164,00 $.",
+    "Nvidia: Board hat getagt, noch kein Beschluss. Im Gespräch als Interimschef: Colette Kress, Ian Buck. NVDA nachbörslich 158,78 $ (−8,6 %).",
+    "Futures 06:35: Nasdaq-100 −1,2 %, S&P 500 −0,5 %. Taiwan −2,8 %, Nikkei −0,8 %. Dax-Future 26.911 (+184) – Rekord bei 26.692.",
+    "SpaceX: USSF-627 um 05:36 gestartet, Booster B1103 gelandet (120. Falcon-9-Start 2026). SDA-Studienauftrag über knapp 10 Mio. $.",
+    "Tesla: Robotaxi jetzt rund um die Uhr in allen Städten, Musk: „168 Stunden pro Woche“. Jefferies stuft auf „Hold“ ab.",
+    "Heute: Siemens und Allianz legen Zahlen vor; nachmittags US-Arbeitslosenanträge; ab 22:05 Cisco und Applied Materials.",
+    "Fr 14:30 US-Erzeugerpreise, Fr 23:45 Starship Flight 15 (FAA-Lizenz fehlt, 60 %). Sa ab 06:30 der 100. Electron-Start.",
+    "Heute 22:15 löst sich die Tagesfrage: Schließt RKLB über 66,15 $?"
   ],
   "audioUrl": null,
   "sources": [
     {
-      "title": "Yahoo Finance: SPCX (Schluss 10.11. und Nachbörse)",
+      "title": "Yahoo Finance: SPCX (Schluss 11.11. und Nachbörse)",
       "url": "https://finance.yahoo.com/quote/SPCX/"
     },
     {
-      "title": "Yahoo Finance: TSLA (Schluss 10.11. und Nachbörse)",
+      "title": "Yahoo Finance: TSLA (Schluss 11.11. und Nachbörse)",
       "url": "https://finance.yahoo.com/quote/TSLA/"
     },
     {
-      "title": "Yahoo Finance: RKLB (Schluss 10.11. und Nachbörse)",
+      "title": "Yahoo Finance: RKLB (Schluss 11.11. und Nachbörse)",
       "url": "https://finance.yahoo.com/quote/RKLB/"
     },
     {
-      "title": "Yahoo Finance: MRVL (Schluss 10.11. und Nachbörse)",
+      "title": "Yahoo Finance: MRVL (Schluss 11.11. und Nachbörse)",
       "url": "https://finance.yahoo.com/quote/MRVL/"
     },
     {
-      "title": "CoreWeave: Ergebnisse Q3 2026 (10.11.)",
-      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx"
+      "title": "Yahoo Finance NVDA (Schluss 173,73 $, Nachbörse 158,78 $)",
+      "url": "https://finance.yahoo.com/quote/NVDA/"
     },
     {
-      "title": "Yahoo Finance: CRWV (Schluss 10.11. und Nachbörse)",
-      "url": "https://finance.yahoo.com/quote/CRWV/"
+      "title": "Reuters Morning Bid Europe: „Jensen hangs on as Nvidia tumbles“ (12.11.)",
+      "url": "https://www.devdiscourse.com/article/international/4005571-morning-bid-europe-jensen-hangs-on-as-nvidia-tumbles"
     },
     {
-      "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (11.11., 06:41)",
+      "title": "Semafor via Yahoo: Teile des Boards wollen CFO Kress als Interimschefin (11.11.)",
+      "url": "https://finance.yahoo.com/technology/articles/nvidia-board-prepares-oust-ceo-032749113.html"
+    },
+    {
+      "title": "The Guardian: Nvidia-Liveblog (12.11.)",
+      "url": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest"
+    },
+    {
+      "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (12.11., 06:35)",
       "url": "https://finance.yahoo.com/quote/NQ%3DF/"
     },
     {
-      "title": "Trading Economics: US-Futures steigen nach CoreWeave (11.11.)",
-      "url": "https://tradingeconomics.com/united-states/stock-market/news/600218"
+      "title": "Yahoo Finance: S&P-500-Future ES=F (12.11., 06:35)",
+      "url": "https://finance.yahoo.com/quote/ES%3DF/"
     },
     {
-      "title": "Handelsblatt: Dax und Börse aktuell – fünf Punkte (11.11., 06:12)",
-      "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-fuenf-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html"
+      "title": "Yahoo Finance: Nikkei 225 (^N225, 12.11., 06:30)",
+      "url": "https://finance.yahoo.com/quote/%5EN225/"
     },
     {
-      "title": "Dow Jones/MarketScreener: Tagesvorschau Mi 11.11.",
-      "url": "https://de.marketscreener.com/boerse-nachrichten/tagesvorschau-mittwoch-11-november-ce785edbd88af02c"
+      "title": "finanzen.net/Dow Jones: Dax-Future im Frühhandel freundlich (12.11., 06:04)",
+      "url": "https://www.finanzen.net/nachricht/aktien/eurex-dax-futures-im-fruehhandel-freundlich-16057844"
     },
     {
-      "title": "QuantVPS: Börse am Veterans Day 2026 (Aktien offen, Anleihen zu)",
-      "url": "https://www.quantvps.com/market-hours/veterans-day"
+      "title": "dpa-AFX: Dax schließt 1,2 % höher bei 26.662,77 Punkten (11.11.)",
+      "url": "https://live.deutsche-boerse.com/nachrichten/ROUNDUP-Aktien-Frankfurt-Schluss-Dax-weiter-erholt-und-knapp-unter-Rekordhoch-a5874de2-81a2-4fc9-8499-f5fc906768b3"
     },
     {
-      "title": "@elonmusk: 100 GW/Jahr HJT-Anlagen von Singulus (11.11., 00:47)",
-      "url": "https://x.com/elonmusk/status/2120302471210033426"
+      "title": "Handelsblatt: Dax und Börse aktuell – sechs Punkte (12.11., 06:14)",
+      "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-sechs-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html"
     },
     {
-      "title": "Singulus: Liefervertrag mit SpaceX für HJT-Anlagen (10.11.)",
-      "url": "https://www.singulus.com/2026/11/10/singulus-spacex-supply-contract/"
+      "title": "@elonmusk: „That would be an honor“ (12.11., 02:22)",
+      "url": "https://x.com/elonmusk/status/2120688743111971293"
     },
     {
-      "title": "@RocketLab: Blue und Gold – zwei Swing-by-Manöver an der Erde (11.11., 05:03)",
-      "url": "https://x.com/RocketLab/status/2120366714374475968"
+      "title": "@SpaceX: Liftoff! USSF-627 (12.11., 05:37)",
+      "url": "https://x.com/SpaceX/status/2120737709924720659"
     },
     {
-      "title": "Reuters/Investing.com: Bowman – „noch Arbeit zu tun“ bei der Inflation (10.11.)",
-      "url": "https://www.investing.com/news/economy-news/feds-bowman-says-still-work-to-do-on-inflation-5016718"
+      "title": "@SpaceX: Erststufe landet auf „Of Course I Still Love You“ (12.11., 05:45)",
+      "url": "https://x.com/SpaceX/status/2120739813401792913"
     },
     {
-      "title": "Space Launch Live: USSF-627 Do 12.11. 02:35 UTC, Status Go (11.11., 05:45 UTC)",
-      "url": "https://spacelaunchlive.com/launches/falcon-9-block-5-ussf-627/"
+      "title": "Space.com: SpaceX startet zweite geheime Space-Force-Mission in sechs Tagen (12.11.)",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-2nd-mystery-mission-for-us-space-force-in-6-day-span-photos"
     },
     {
-      "title": "Week ahead 9.–13.11.: Cisco und Applied Materials Do nach Börsenschluss",
-      "url": "https://news.futureredirect.com/en/news/week-ahead-november-9-2026-cpi-earnings-congress"
+      "title": "SpaceNews: SDA-Auftrag über knapp 10 Mio. $ für SpaceX-Laserverbindungen (11.11.)",
+      "url": "https://spacenews.com/spacex-to-study-options-to-bridge-commercial-and-military-satellite-networks/"
+    },
+    {
+      "title": "@robotaxi: Robotaxi jetzt rund um die Uhr in jeder Stadt (12.11., 05:31)",
+      "url": "https://x.com/robotaxi/status/2120736143566344324"
+    },
+    {
+      "title": "@elonmusk: „Robotaxi works 168 hours a week“ (12.11., 06:12)",
+      "url": "https://x.com/elonmusk/status/2120746428720988408"
+    },
+    {
+      "title": "MarketBeat: Jefferies stuft Tesla auf „Hold“ ab (11.11.)",
+      "url": "https://www.marketbeat.com/instant-alerts/analyst-tesla-nasdaq-tsla-rating-lowered-to-hold-at-jefferies-financial-group-2026-11-11/"
+    },
+    {
+      "title": "TipRanks: Was Analysten von Cisco Q1 erwarten",
+      "url": "https://www.tipranks.com/news/cisco-q1-earnings-heres-what-analysts-expect-from-csco-stock-amid-ai-trade-concerns"
+    },
+    {
+      "title": "Investing.com: Applied Materials Q4 – worauf es ankommt",
+      "url": "https://www.investing.com/news/stock-market-news/applied-materials-fiscal-q4-2026-earnings-preview-what-to-watch-for-in-the-print-93CH-5019657"
     },
     {
       "title": "SpaceX: Starship Flight 15 (pending regulatory approval)",
       "url": "https://www.spacex.com/launches/starship-flight-15"
     },
     {
-      "title": "FAA: SpaceX Starship Super Heavy Project (Stand 11.11.)",
+      "title": "FAA: SpaceX Starship Super Heavy Project (zuletzt aktualisiert 10.11.)",
       "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
+    },
+    {
+      "title": "Rocket Lab: The Mountain God Rises",
+      "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
     }
   ]
 }

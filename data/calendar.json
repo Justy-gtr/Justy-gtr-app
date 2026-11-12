@@ -2,102 +2,8 @@
   "example": false,
   "events": [
     {
-      "id": "evt-grok48-rollout",
-      "title": "SpaceX SI: Grok 4.8 – vorsichtiger erster Start (Musk: „später diese Woche“)",
-      "date": "2026-11-12",
-      "end": "2026-11-15",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "produkt",
-      "company": "SpaceX (SI, ehemals xAI)",
-      "tickers": [
-        "SPCX"
-      ],
-      "probabilityPct": 40,
-      "impact": "niedrig",
-      "reasoning": "Musk am 10.11. auf X: Vortraining fertig, Code neu in C/C++, Grok 4.8 steckt im RL-Training und soll später diese Woche vorsichtig für erste Nutzer starten. Er nennt es selbst „noch nicht unglaublich“. 50 %, weil Musks KI-Termine oft rutschen und RL-Ergebnisse erst kommen. Kurswirkung auf SPCX gering, eher ein Stimmungsfaktor. Stand Mi 05:00: Noch kein Start, kein Eintrag in den xAI-Release-Notes (TeslaNorth). 50 % unverändert. Stand Do 05:10: Grok 4.8 ist weiter nicht erschienen: kein Eintrag in Modellkatalog, API-Doku oder Release-Notes (ByteForward). Bis Sonntag bleiben drei Tage, Musk-KI-Termine rutschen oft. 40 statt 50 %.",
-      "example": false,
-      "sources": [
-        {
-          "title": "@elonmusk: Grok 4.8 soft rollout later this week (10.11.)",
-          "url": "https://x.com/elonmusk/status/2120088070443655190"
-        },
-        {
-          "title": "SpaceX SI Docs: Release Notes",
-          "url": "https://docs.x.ai/developers/release-notes"
-        },
-        {
-          "title": "TeslaNorth: Grok 4.8 soll diese Woche kommen (10.11.)",
-          "url": "https://teslanorth.com/2026/11/10/grok-4-8-coming-this-week-rebuild/"
-        },
-        {
-          "title": "ByteForward: Grok 4.8 – was bestätigt ist (Stand 12.11.)",
-          "url": "https://bytefwd.com/grok-4-8-cursor-model-options-leak/"
-        }
-      ]
-    },
-    {
-      "id": "evt-nvda-ceo-entscheidung",
-      "title": "Nvidia: Verwaltungsrat entscheidet über Chef Jensen Huang",
-      "date": "2026-11-12",
-      "time": null,
-      "end": "2026-11-20",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "politik",
-      "company": null,
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "MRVL"
-      ],
-      "probabilityPct": 65,
-      "impact": "hoch",
-      "reasoning": "Neu Do 05:10: Laut Wall Street Journal bereitet Nvidias Verwaltungsrat die Ablösung von Chef Jensen Huang vor; CNBC, Reuters und NBC bestätigen eine Sitzung am Mittwochabend (US-Zeit). Auslöser: Nach der Affäre mit einer mutmaßlichen chinesischen Agentin berichtete die New York Times über eine zweite Beziehung mit Kimberly Powell, Vizechefin für Gesundheit, die an Huang berichtet. Laut Bloomberg sucht der Verwaltungsrat mit einer externen Firma nach Nachfolgern und erwägt einen Interimschef. Nach der Satzung reicht eine einfache Mehrheit der elf Direktoren, zehn gelten als unabhängig (Reuters via CNA). Nvidia fiel nachbörslich auf 158,78 $ (−8,6 % zum Schluss 173,73 $), AMD und Broadcom stiegen um 4 bzw. 3 %, Nasdaq-100-Futures um 05:50 bei −0,9 % (Yahoo, MarketWatch). Musk schrieb um 02:22 auf X, Huang einzustellen „wäre eine Ehre“, und stimmte Gavin Baker zu, der Board solle das Ergebnis der Untersuchung abwarten. Bis 05:10 gibt es keine Entscheidung und keine Stellungnahme von Nvidia. Meine 65 % gelten dafür, dass Huang bis Fr 20.11. den Chefposten verliert oder beurlaubt wird: Mehrere große Medien berichten übereinstimmend von konkreter Vorbereitung; dagegen stehen große Aktionäre, die auf das Untersuchungsergebnis warten wollen, und Trumps Rückhalt für Huang. Warum das für uns zählt: Nvidia ist Taktgeber der KI-Werte; SpaceX (Rechenzentren) und Tesla hängen an dieser Stimmung, Marvell direkt am Chipsektor.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Wall Street Journal via CNBC: Board berät über Ablösung (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
-        },
-        {
-          "title": "CNA/Reuters: Board berät, Huang per Mehrheit abrufbar (12.11.)",
-          "url": "https://www.channelnewsasia.com/world/nvidia-ceo-jensen-huang-oust-board-affair-6544031"
-        },
-        {
-          "title": "Yahoo/Stocktwits: Futures gemischt, Bloomberg: Suche nach Nachfolger (11.11., 21:31 ET)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-031512683.html"
-        },
-        {
-          "title": "MarketWatch/Morningstar: Nvidia fällt nachbörslich, Board will Huang ablösen (11.11.)",
-          "url": "https://www.morningstar.com/news/marketwatch/20261111357/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang"
-        },
-        {
-          "title": "NBC News: Nvidia fast −9 % nachbörslich, Chipwerte mit nach unten (11.11.)",
-          "url": "https://www.nbcnews.com/business/business-news/nvidia-shares-drop-hours-reports-meeting-ceo-jensen-huangs-future-rcna608906"
-        },
-        {
-          "title": "wallstreet-online/dpa-AFX: Nvidia sackt nach Bericht über Chefablösung nachbörslich ab (12.11.)",
-          "url": "https://www.wallstreet-online.de/nachricht/21678717-aktie-fokus-nvidia-sackt-bericht-chefabloesung-nachboerslich"
-        },
-        {
-          "title": "@elonmusk: „That would be an honor“ (12.11., 02:22)",
-          "url": "https://x.com/elonmusk/status/2120688743111971293"
-        },
-        {
-          "title": "@elonmusk: „Exactly“ an Gavin Baker (12.11., 02:51)",
-          "url": "https://x.com/elonmusk/status/2120695884145098967"
-        },
-        {
-          "title": "Yahoo Finance NVDA (Nachbörse 19:59 ET)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
-        }
-      ]
-    },
-    {
       "id": "evt-falcon9-ussf627",
-      "title": "SpaceX: Falcon-9-Start USSF-627 für die Space Force (verschoben auf Do 05:36)",
+      "title": "SpaceX: Falcon-9-Start USSF-627 für die Space Force (gestartet Do 05:36)",
       "date": "2026-11-12",
       "time": "05:36",
       "timezone": "Europe/Berlin",
@@ -107,9 +13,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 90,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "Stand Di 05:20: SpaceX-Missionsseite bestätigt Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Siebter Flug der Erststufe, Landung auf dem Drohnenschiff „Of Course I Still Love You“. 80 % unverändert für einen Start im Fenster: Routine von derselben Rampe, die erste Verschiebung kam ohne Begründung. Kurswirkung gering. Stand Mi 05:00: Wieder um einen Tag verschoben, jetzt Mi 11.11. 18:35 PT (bei uns Do 12.11. 03:35–07:35), Backup Do 18:21 PT (Fr 03:21 Berlin). Fünfte Verschiebung, Status laut Launch Library „Go“. 80 % unverändert für einen Start in diesem Fenster oder dem Backup. Stand Mi 07:00: Termin Do 03:35 Berlin bestätigt, Status um 06:45 erneut „Go“ (Launch Library). 80 % unverändert. Stand Mi 09:00: SpaceX-Missionsseite und Next Spaceflight nennen weiter Do 02:35 UTC (03:35 Berlin) ab Vandenberg. 80 % unverändert. Stand Mi 09:50: SpaceX bestätigt das vierstündige Fenster ab Mi 18:35 PT (Do 03:35 Berlin); Ersatztermin Do 18:21 PT (Fr 03:21 Berlin). 80 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite unverändert, Fenster ab Mi 18:35 PT (Do 03:35 Berlin), Backup Do 18:21 PT. 80 % unverändert. Stand Mi 14:00: Launch Library weiter „Go“ für Do 02:35 UTC (03:35 Berlin). 80 % unverändert. Stand Mi 15:00: Wetterprognosen für Vandenberg sehen rund 90–96 % „Go“ (Space Launch Hub). Das Wetter ist also kaum das Risiko, eher Technik oder Kunde; 80 % unverändert. Stand Mi 16:00: SpaceX führt den Start weiter für Do 02:35 UTC (03:35 Berlin) von SLC-4E, Landung auf der Drohnenschiff „Of Course I Still Love You“ (SpaceX, Space Launch Live). 80 % unverändert. Stand Mi 18:00: Start weiter für Do 02:35 UTC (03:35 Berlin) von SLC-4E, Fenster bis 06:35 UTC; eine Warnmeldung für das Seegebiet vor Südkalifornien (NAVAREA XII 774/26) ist veröffentlicht (SpaceX, NAVAREA). 80 % unverändert. Stand Mi 20:00: Status „Go“, Start Do 02:35–02:36 UTC (03:35 Berlin), Fenster vier Stunden; Ersatztermin laut SpaceX Do 18:21 PT (Fr 03:21 Berlin). Wetter laut NextLiftoff Nebel, 15 °C. 80 % unverändert. Stand Mi 22:00: Status weiter „Go“ (Launch Library um 20:45 bestätigt), Fenster Do 02:35–06:35 UTC (03:35–07:35 Berlin), Booster B1103 fliegt zum siebten Mal. 80 % unverändert. Stand Do 05:10: Noch einmal um zwei Stunden verschoben, jetzt Do 04:36 UTC (05:36 Berlin), Fenster bis 06:35 UTC (07:35 Berlin); es ist der siebte Terminwechsel (Orbital Radar). SpaceX meldete um 04:47 auf X: alle Systeme gut, Wetter günstig, die Betankung beginnt gleich. Der Start lag beim Stand dieses Updates noch vor uns. 90 statt 80 %, weil der Countdown läuft und das Wetter passt.",
+      "reasoning": "Stand Di 05:20: SpaceX-Missionsseite bestätigt Di 10.11., 18:49 PT – bei uns Mi 11.11. 03:49–07:49 Uhr; Backup Mi 11.11. 18:35 PT (Do 03:35 Berlin). Siebter Flug der Erststufe, Landung auf dem Drohnenschiff „Of Course I Still Love You“. 80 % unverändert für einen Start im Fenster: Routine von derselben Rampe, die erste Verschiebung kam ohne Begründung. Kurswirkung gering. Stand Mi 05:00: Wieder um einen Tag verschoben, jetzt Mi 11.11. 18:35 PT (bei uns Do 12.11. 03:35–07:35), Backup Do 18:21 PT (Fr 03:21 Berlin). Fünfte Verschiebung, Status laut Launch Library „Go“. 80 % unverändert für einen Start in diesem Fenster oder dem Backup. Stand Mi 07:00: Termin Do 03:35 Berlin bestätigt, Status um 06:45 erneut „Go“ (Launch Library). 80 % unverändert. Stand Mi 09:00: SpaceX-Missionsseite und Next Spaceflight nennen weiter Do 02:35 UTC (03:35 Berlin) ab Vandenberg. 80 % unverändert. Stand Mi 09:50: SpaceX bestätigt das vierstündige Fenster ab Mi 18:35 PT (Do 03:35 Berlin); Ersatztermin Do 18:21 PT (Fr 03:21 Berlin). 80 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite unverändert, Fenster ab Mi 18:35 PT (Do 03:35 Berlin), Backup Do 18:21 PT. 80 % unverändert. Stand Mi 14:00: Launch Library weiter „Go“ für Do 02:35 UTC (03:35 Berlin). 80 % unverändert. Stand Mi 15:00: Wetterprognosen für Vandenberg sehen rund 90–96 % „Go“ (Space Launch Hub). Das Wetter ist also kaum das Risiko, eher Technik oder Kunde; 80 % unverändert. Stand Mi 16:00: SpaceX führt den Start weiter für Do 02:35 UTC (03:35 Berlin) von SLC-4E, Landung auf der Drohnenschiff „Of Course I Still Love You“ (SpaceX, Space Launch Live). 80 % unverändert. Stand Mi 18:00: Start weiter für Do 02:35 UTC (03:35 Berlin) von SLC-4E, Fenster bis 06:35 UTC; eine Warnmeldung für das Seegebiet vor Südkalifornien (NAVAREA XII 774/26) ist veröffentlicht (SpaceX, NAVAREA). 80 % unverändert. Stand Mi 20:00: Status „Go“, Start Do 02:35–02:36 UTC (03:35 Berlin), Fenster vier Stunden; Ersatztermin laut SpaceX Do 18:21 PT (Fr 03:21 Berlin). Wetter laut NextLiftoff Nebel, 15 °C. 80 % unverändert. Stand Mi 22:00: Status weiter „Go“ (Launch Library um 20:45 bestätigt), Fenster Do 02:35–06:35 UTC (03:35–07:35 Berlin), Booster B1103 fliegt zum siebten Mal. 80 % unverändert. Stand Do 05:10: Noch einmal um zwei Stunden verschoben, jetzt Do 04:36 UTC (05:36 Berlin), Fenster bis 06:35 UTC (07:35 Berlin); es ist der siebte Terminwechsel (Orbital Radar). SpaceX meldete um 04:47 auf X: alle Systeme gut, Wetter günstig, die Betankung beginnt gleich. Der Start lag beim Stand dieses Updates noch vor uns. 90 statt 80 %, weil der Countdown läuft und das Wetter passt. Stand Do 06:50: Erledigt. Falcon 9 ist um 05:36 Uhr Berlin von Vandenberg gestartet (SpaceX meldete „Liftoff!“ um 05:37), die Erststufe B1103 landete bei ihrem siebten Flug rund 8,5 Minuten später auf „Of Course I Still Love You“. Laut Space.com war es der 120. Falcon-9-Start 2026 und der zweite geheime Space-Force-Flug binnen sechs Tagen; Details zur Nutzlast nennt SpaceX nicht. Kurswirkung gering.",
       "example": false,
       "sources": [
         {
@@ -159,6 +65,18 @@
         {
           "title": "Orbital Radar: USSF-627 neu Do 04:36 UTC, sieben Terminwechsel",
           "url": "https://orbitalradar.com/launch/falcon-9-ussf-xxx-r-5"
+        },
+        {
+          "title": "@SpaceX: Liftoff! USSF-627 (12.11., 05:37)",
+          "url": "https://x.com/SpaceX/status/2120737709924720659"
+        },
+        {
+          "title": "@SpaceX: Erststufe landet auf „Of Course I Still Love You“ (12.11., 05:45)",
+          "url": "https://x.com/SpaceX/status/2120739813401792913"
+        },
+        {
+          "title": "Space.com: SpaceX startet zweite geheime Space-Force-Mission in sechs Tagen (12.11.)",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-2nd-mystery-mission-for-us-space-force-in-6-day-span-photos"
         }
       ]
     },
@@ -176,7 +94,7 @@
       ],
       "probabilityPct": 95,
       "impact": "mittel",
-      "reasoning": "Beide Firmen haben ihren Termin selbst angekündigt: Zahlen am Do 12.11. nach US-Börsenschluss, Telefonkonferenzen jeweils 16:30 ET (22:30 Berlin). Cisco rechnet für das Geschäftsjahr 2027 mit rund 7,5 Mrd. $ KI-Infrastruktur-Umsatz mit Hyperscalern, Applied Materials ist ein Gradmesser für Chip-Investitionen. Nach CoreWeave ist das das nächste Signal für KI-Netzwerk- und Chipwerte wie Marvell, vor Nvidia am 17.11. 95 %: Termine sind bestätigt; die genaue Veröffentlichungsminute ist geschätzt. Stand Mi 22:00: Vorlauf am Mittwoch: Cisco +2,7 % auf 100,76 $, Applied Materials +6,1 % auf 395,08 $ (Yahoo). Cisco bestätigt Zahlen am Do nach US-Schluss, Telefonkonferenz 22:30 Berlin. Stand Do 05:10: Cisco hat noch nicht berichtet: Die Zahlen kommen wie angekündigt Do nach US-Schluss, Konferenz 16:30 ET (22:30 Berlin). Ein Artikel, der schon von „übertroffenen“ Zahlen sprach, ist falsch (Cisco IR). Erwartet werden 18,11 Mrd. $ Umsatz und 1,32 $ bereinigter Gewinn je Aktie; die eigene Spanne lag bei 18,0–18,2 Mrd. $. Morgan Stanley hatte vergangene Woche auf Halten abgestuft, Ziel 120 $ (Yahoo/TipRanks). Neu ist der Gegenwind aus dem Nvidia-Chefstreit: Nasdaq-100-Futures um 05:50 rund −0,9 %. 95 % unverändert.",
+      "reasoning": "Beide Firmen haben ihren Termin selbst angekündigt: Zahlen am Do 12.11. nach US-Börsenschluss, Telefonkonferenzen jeweils 16:30 ET (22:30 Berlin). Cisco rechnet für das Geschäftsjahr 2027 mit rund 7,5 Mrd. $ KI-Infrastruktur-Umsatz mit Hyperscalern, Applied Materials ist ein Gradmesser für Chip-Investitionen. Nach CoreWeave ist das das nächste Signal für KI-Netzwerk- und Chipwerte wie Marvell, vor Nvidia am 17.11. 95 %: Termine sind bestätigt; die genaue Veröffentlichungsminute ist geschätzt. Stand Mi 22:00: Vorlauf am Mittwoch: Cisco +2,7 % auf 100,76 $, Applied Materials +6,1 % auf 395,08 $ (Yahoo). Cisco bestätigt Zahlen am Do nach US-Schluss, Telefonkonferenz 22:30 Berlin. Stand Do 05:10: Cisco hat noch nicht berichtet: Die Zahlen kommen wie angekündigt Do nach US-Schluss, Konferenz 16:30 ET (22:30 Berlin). Ein Artikel, der schon von „übertroffenen“ Zahlen sprach, ist falsch (Cisco IR). Erwartet werden 18,11 Mrd. $ Umsatz und 1,32 $ bereinigter Gewinn je Aktie; die eigene Spanne lag bei 18,0–18,2 Mrd. $. Morgan Stanley hatte vergangene Woche auf Halten abgestuft, Ziel 120 $ (Yahoo/TipRanks). Neu ist der Gegenwind aus dem Nvidia-Chefstreit: Nasdaq-100-Futures um 05:50 rund −0,9 %. 95 % unverändert. Stand Do 06:50: Erwartet werden bei Cisco 1,32 $ Gewinn je Aktie und 18,11 Mrd. $ Umsatz (TipRanks), bei Applied Materials 4,06 $ je Aktie und 10,30 Mrd. $ Umsatz; bei AMAT zählen vor allem Ausblick, Margen und China-Exportregeln (Investing.com). Nach dem Nvidia-Schock sind beide Zahlen ein Test für die KI-Stimmung, für MRVL am direktesten.",
       "example": false,
       "sources": [
         {
@@ -202,6 +120,132 @@
         {
           "title": "Yahoo/TipRanks: Was Analysten von Cisco erwarten",
           "url": "https://finance.yahoo.com/markets/stocks/articles/cisco-q1-earnings-analysts-expect-204703273.html"
+        },
+        {
+          "title": "TipRanks: Was Analysten von Cisco Q1 erwarten",
+          "url": "https://www.tipranks.com/news/cisco-q1-earnings-heres-what-analysts-expect-from-csco-stock-amid-ai-trade-concerns"
+        },
+        {
+          "title": "Investing.com: Applied Materials Q4 – worauf es ankommt",
+          "url": "https://www.investing.com/news/stock-market-news/applied-materials-fiscal-q4-2026-earnings-preview-what-to-watch-for-in-the-print-93CH-5019657"
+        }
+      ]
+    },
+    {
+      "id": "evt-grok48-rollout",
+      "title": "SpaceX SI: Grok 4.8 – vorsichtiger erster Start (Musk: „später diese Woche“)",
+      "date": "2026-11-12",
+      "end": "2026-11-15",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "produkt",
+      "company": "SpaceX (SI, ehemals xAI)",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 40,
+      "impact": "niedrig",
+      "reasoning": "Musk am 10.11. auf X: Vortraining fertig, Code neu in C/C++, Grok 4.8 steckt im RL-Training und soll später diese Woche vorsichtig für erste Nutzer starten. Er nennt es selbst „noch nicht unglaublich“. 50 %, weil Musks KI-Termine oft rutschen und RL-Ergebnisse erst kommen. Kurswirkung auf SPCX gering, eher ein Stimmungsfaktor. Stand Mi 05:00: Noch kein Start, kein Eintrag in den xAI-Release-Notes (TeslaNorth). 50 % unverändert. Stand Do 05:10: Grok 4.8 ist weiter nicht erschienen: kein Eintrag in Modellkatalog, API-Doku oder Release-Notes (ByteForward). Bis Sonntag bleiben drei Tage, Musk-KI-Termine rutschen oft. 40 statt 50 %. Stand Do 06:50: Weiter kein Start; die SpaceX-SI-Newsseite führt kein Grok 4.8 (x.ai/news, TokenPost). 40 % unverändert.",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: Grok 4.8 soft rollout later this week (10.11.)",
+          "url": "https://x.com/elonmusk/status/2120088070443655190"
+        },
+        {
+          "title": "SpaceX SI Docs: Release Notes",
+          "url": "https://docs.x.ai/developers/release-notes"
+        },
+        {
+          "title": "TeslaNorth: Grok 4.8 soll diese Woche kommen (10.11.)",
+          "url": "https://teslanorth.com/2026/11/10/grok-4-8-coming-this-week-rebuild/"
+        },
+        {
+          "title": "ByteForward: Grok 4.8 – was bestätigt ist (Stand 12.11.)",
+          "url": "https://bytefwd.com/grok-4-8-cursor-model-options-leak/"
+        },
+        {
+          "title": "TokenPost: xAI plant begrenzten Grok-4.8-Start diese Woche",
+          "url": "https://www.tokenpost.com/news/technology/53847"
+        },
+        {
+          "title": "SpaceX SI: News",
+          "url": "https://x.ai/news"
+        }
+      ]
+    },
+    {
+      "id": "evt-nvda-ceo-entscheidung",
+      "title": "Nvidia: Verwaltungsrat entscheidet über Chef Jensen Huang",
+      "date": "2026-11-12",
+      "time": null,
+      "end": "2026-11-20",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "politik",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "MRVL"
+      ],
+      "probabilityPct": 65,
+      "impact": "hoch",
+      "reasoning": "Neu Do 05:10: Laut Wall Street Journal bereitet Nvidias Verwaltungsrat die Ablösung von Chef Jensen Huang vor; CNBC, Reuters und NBC bestätigen eine Sitzung am Mittwochabend (US-Zeit). Auslöser: Nach der Affäre mit einer mutmaßlichen chinesischen Agentin berichtete die New York Times über eine zweite Beziehung mit Kimberly Powell, Vizechefin für Gesundheit, die an Huang berichtet. Laut Bloomberg sucht der Verwaltungsrat mit einer externen Firma nach Nachfolgern und erwägt einen Interimschef. Nach der Satzung reicht eine einfache Mehrheit der elf Direktoren, zehn gelten als unabhängig (Reuters via CNA). Nvidia fiel nachbörslich auf 158,78 $ (−8,6 % zum Schluss 173,73 $), AMD und Broadcom stiegen um 4 bzw. 3 %, Nasdaq-100-Futures um 05:50 bei −0,9 % (Yahoo, MarketWatch). Musk schrieb um 02:22 auf X, Huang einzustellen „wäre eine Ehre“, und stimmte Gavin Baker zu, der Board solle das Ergebnis der Untersuchung abwarten. Bis 05:10 gibt es keine Entscheidung und keine Stellungnahme von Nvidia. Meine 65 % gelten dafür, dass Huang bis Fr 20.11. den Chefposten verliert oder beurlaubt wird: Mehrere große Medien berichten übereinstimmend von konkreter Vorbereitung; dagegen stehen große Aktionäre, die auf das Untersuchungsergebnis warten wollen, und Trumps Rückhalt für Huang. Warum das für uns zählt: Nvidia ist Taktgeber der KI-Werte; SpaceX (Rechenzentren) und Tesla hängen an dieser Stimmung, Marvell direkt am Chipsektor. Stand Do 06:50: Der Verwaltungsrat hat am Mittwochabend (US-Zeit) getagt, eine Entscheidung ist bis jetzt nicht bekannt, Nvidia hat sich nicht geäußert (Reuters, Guardian). Laut Semafor wollen einige Direktoren Finanzchefin Colette Kress als Interimschefin; Reuters nennt auch CUDA-Architekt Ian Buck. Senatoren Warren und Coons verlangen, Unterlagen zu Nvidias China-Exporten aufzubewahren. Nasdaq-100-Future um 06:35 bei 28.145 Punkten (−1,2 %), Taiwans Börse −2,8 % (Yahoo, Reuters). 65 % unverändert: Die Vorbereitung ist breit bestätigt, aber nach der Sitzung kam kein Beschluss.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Wall Street Journal via CNBC: Board berät über Ablösung (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
+        },
+        {
+          "title": "CNA/Reuters: Board berät, Huang per Mehrheit abrufbar (12.11.)",
+          "url": "https://www.channelnewsasia.com/world/nvidia-ceo-jensen-huang-oust-board-affair-6544031"
+        },
+        {
+          "title": "Yahoo/Stocktwits: Futures gemischt, Bloomberg: Suche nach Nachfolger (11.11., 21:31 ET)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/dow-p-500-nasdaq-futures-031512683.html"
+        },
+        {
+          "title": "MarketWatch/Morningstar: Nvidia fällt nachbörslich, Board will Huang ablösen (11.11.)",
+          "url": "https://www.morningstar.com/news/marketwatch/20261111357/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang"
+        },
+        {
+          "title": "NBC News: Nvidia fast −9 % nachbörslich, Chipwerte mit nach unten (11.11.)",
+          "url": "https://www.nbcnews.com/business/business-news/nvidia-shares-drop-hours-reports-meeting-ceo-jensen-huangs-future-rcna608906"
+        },
+        {
+          "title": "wallstreet-online/dpa-AFX: Nvidia sackt nach Bericht über Chefablösung nachbörslich ab (12.11.)",
+          "url": "https://www.wallstreet-online.de/nachricht/21678717-aktie-fokus-nvidia-sackt-bericht-chefabloesung-nachboerslich"
+        },
+        {
+          "title": "@elonmusk: „That would be an honor“ (12.11., 02:22)",
+          "url": "https://x.com/elonmusk/status/2120688743111971293"
+        },
+        {
+          "title": "@elonmusk: „Exactly“ an Gavin Baker (12.11., 02:51)",
+          "url": "https://x.com/elonmusk/status/2120695884145098967"
+        },
+        {
+          "title": "Yahoo Finance NVDA (Nachbörse 19:59 ET)",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
+        },
+        {
+          "title": "Reuters Morning Bid Europe: „Jensen hangs on as Nvidia tumbles“ (12.11.)",
+          "url": "https://www.devdiscourse.com/article/international/4005571-morning-bid-europe-jensen-hangs-on-as-nvidia-tumbles"
+        },
+        {
+          "title": "Semafor via Yahoo: Teile des Boards wollen CFO Kress als Interimschefin (11.11.)",
+          "url": "https://finance.yahoo.com/technology/articles/nvidia-board-prepares-oust-ceo-032749113.html"
+        },
+        {
+          "title": "The Guardian: Nvidia-Liveblog (12.11.)",
+          "url": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (12.11., 06:35)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         }
       ]
     },
@@ -246,9 +290,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 65,
+      "probabilityPct": 60,
       "impact": "hoch",
-      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert. Stand Mi 07:00: Weiter keine Lizenz auf der FAA-Seite, SpaceX schreibt weiter „pending regulatory approval“. 65 % unverändert. Stand Mi 09:00: FAA-Seite nennt weiter keine Lizenz, SpaceX-Missionsseite unverändert „pending regulatory approval“ (Fenster Fr 16:45–18:00 CT). 65 % unverändert. Stand Mi 09:50: FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz, SpaceX weiter „pending regulatory approval“. Die Meldung einer Fanseite über eine erteilte Lizenz bleibt unbestätigt. 65 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite weiter „pending regulatory approval“, die FAA-Seite (Stand 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Mi 12:55: SpaceX-Missionsseite weiter „as soon as Friday, November 13, pending regulatory approval“; eine FAA-Lizenz ist nicht gemeldet. 65 % unverändert. Stand Mi 14:00: SpaceX-Missionsseite weiter „pending regulatory approval“, Launch Library führt den Start als „TBC“. Eine Fanseite (All Things Elon) schreibt von einer erteilten Lizenz, nennt aber keine FAA-Quelle und verwechselt den Wochentag – bleibt unbestätigt. 65 % unverändert. Stand Mi 15:00: Missionsseite weiter „pending regulatory approval“, Fenster Fr 16:45 CT (23:45 Berlin); eine FAA-Lizenzänderung für die Rückkehr von Ship 42 zum Turm ist weiter nicht gemeldet (SpaceX, SciBeat). 65 % unverändert. Stand Mi 16:00: Missionsseite weiter „pending regulatory approval“, eine FAA-Lizenzänderung ist weiter nicht veröffentlicht (SpaceX, The Space Launches). 65 % unverändert. Stand Mi 18:00: Space.com nennt den Start weiter für Fr 16:45 CT (23:45 Berlin), die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“; eine FAA-Lizenz für Flight 15 ist weiter nicht veröffentlicht (SpaceX, Space.com). 65 % unverändert. Stand Mi 20:00: Booster 22 steht an der Startrampe (SpaceX, Musk auf X), die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“; eine FAA-Lizenz ist weiter nicht veröffentlicht. 65 % unverändert. Stand Mi 22:00: Die SpaceX-Seite nennt weiter Fr 13.11., Fenster 16:45 CT (23:45 Berlin), „pending regulatory approval“; eine FAA-Lizenz ist bis zum Abend nicht veröffentlicht. 65 % unverändert. Stand Do 05:10: Die SpaceX-Missionsseite schreibt weiter „as soon as Friday, November 13, pending regulatory approval“, Fenster 16:45 CT (23:45 Berlin); die FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert.",
+      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert. Stand Mi 07:00: Weiter keine Lizenz auf der FAA-Seite, SpaceX schreibt weiter „pending regulatory approval“. 65 % unverändert. Stand Mi 09:00: FAA-Seite nennt weiter keine Lizenz, SpaceX-Missionsseite unverändert „pending regulatory approval“ (Fenster Fr 16:45–18:00 CT). 65 % unverändert. Stand Mi 09:50: FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz, SpaceX weiter „pending regulatory approval“. Die Meldung einer Fanseite über eine erteilte Lizenz bleibt unbestätigt. 65 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite weiter „pending regulatory approval“, die FAA-Seite (Stand 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Mi 12:55: SpaceX-Missionsseite weiter „as soon as Friday, November 13, pending regulatory approval“; eine FAA-Lizenz ist nicht gemeldet. 65 % unverändert. Stand Mi 14:00: SpaceX-Missionsseite weiter „pending regulatory approval“, Launch Library führt den Start als „TBC“. Eine Fanseite (All Things Elon) schreibt von einer erteilten Lizenz, nennt aber keine FAA-Quelle und verwechselt den Wochentag – bleibt unbestätigt. 65 % unverändert. Stand Mi 15:00: Missionsseite weiter „pending regulatory approval“, Fenster Fr 16:45 CT (23:45 Berlin); eine FAA-Lizenzänderung für die Rückkehr von Ship 42 zum Turm ist weiter nicht gemeldet (SpaceX, SciBeat). 65 % unverändert. Stand Mi 16:00: Missionsseite weiter „pending regulatory approval“, eine FAA-Lizenzänderung ist weiter nicht veröffentlicht (SpaceX, The Space Launches). 65 % unverändert. Stand Mi 18:00: Space.com nennt den Start weiter für Fr 16:45 CT (23:45 Berlin), die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“; eine FAA-Lizenz für Flight 15 ist weiter nicht veröffentlicht (SpaceX, Space.com). 65 % unverändert. Stand Mi 20:00: Booster 22 steht an der Startrampe (SpaceX, Musk auf X), die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“; eine FAA-Lizenz ist weiter nicht veröffentlicht. 65 % unverändert. Stand Mi 22:00: Die SpaceX-Seite nennt weiter Fr 13.11., Fenster 16:45 CT (23:45 Berlin), „pending regulatory approval“; eine FAA-Lizenz ist bis zum Abend nicht veröffentlicht. 65 % unverändert. Stand Do 05:10: Die SpaceX-Missionsseite schreibt weiter „as soon as Friday, November 13, pending regulatory approval“, Fenster 16:45 CT (23:45 Berlin); die FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Do 06:50: Gut 40 Stunden vor dem Fenster nennt die FAA-Seite (zuletzt aktualisiert 10.11.) weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. Ohne Lizenz und veröffentlichte Luftraumsperren bis Donnerstag rutscht der Termin meist (Pip Theory). 60 statt 65 %, weil die Zeit knapper wird; die Lizenz kam bei früheren Flügen aber oft erst kurz vorher.",
       "example": false,
       "sources": [
         {
@@ -334,6 +378,14 @@
         {
           "title": "Space.com: Flight-15-Liveblog (11.11.)",
           "url": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-11-2026-starship-first-double-landing-attempt"
+        },
+        {
+          "title": "FAA: SpaceX Starship Super Heavy Project (zuletzt aktualisiert 10.11.)",
+          "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
+        },
+        {
+          "title": "Pip Theory: Flight-15-Vorschau – ohne Lizenz bis Donnerstag rutscht der Termin wohl",
+          "url": "https://piptheory.com/research/starship-flight-15-preview-november-13-2026-ship-catch-spacex-stock"
         }
       ]
     },
@@ -606,6 +658,44 @@
         {
           "title": "CNBC: Nvidia-Verwaltungsrat berät über Huangs Zukunft (11.11.)",
           "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
+        }
+      ]
+    },
+    {
+      "id": "evt-apec-shenzhen",
+      "title": "APEC-Gipfel in Shenzhen: Treffen Trump–Xi erwartet",
+      "date": "2026-11-18",
+      "end": "2026-11-19",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "politik",
+      "company": null,
+      "tickers": [
+        "TSLA",
+        "SPCX",
+        "MRVL"
+      ],
+      "probabilityPct": 85,
+      "impact": "mittel",
+      "reasoning": "Der APEC-Gipfel findet am 18. und 19. November in Shenzhen statt (chinesische Regierung). Trump und Xi sollen sich dort treffen, Thema unter anderem ein Meldekanal für KI-Zwischenfälle (Lianhe Zaobao); große Ergebnisse etwa zu Zöllen werden laut SCMP erst zum G20 erwartet. Die Nvidia-Affäre um eine mutmaßliche chinesische Agentin fällt genau in diese Woche. 85 % für das Treffen, weil beide Seiten es angekündigt haben, Absagen aber möglich sind. Wichtig für Tesla (China-Geschäft), Chipwerte wie Marvell und die Exportregeln für KI-Chips.",
+      "example": false,
+      "sources": [
+        {
+          "title": "gov.cn: APEC 2026 am 18.–19. November in Shenzhen",
+          "url": "https://english.www.gov.cn/news/202512/12/content_WS693c1432c6d00ca5f9a080e6.html"
+        },
+        {
+          "title": "SCMP: Xi und Trump vor APEC-Gesprächen, große Ergebnisse erst zum G20",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3373969/xi-and-trump-set-apec-talks-major-deliverables-expected-wait-g20"
+        },
+        {
+          "title": "Lianhe Zaobao: Treffen Xi–Trump in Shenzhen, KI-Sicherheitskanal",
+          "url": "https://www.zaobao.com.sg/en/news/world/xi-trump-shenzhen-meeting-advance-ai-safety-talks-china-and-us-set-major-incident-notification"
+        },
+        {
+          "title": "The Guardian: Nvidia-Liveblog (12.11.)",
+          "url": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest"
         }
       ]
     },
@@ -1050,35 +1140,6 @@
       ]
     },
     {
-      "id": "evt-us-shutdown-risiko",
-      "title": "USA: Übergangshaushalt läuft am 11. Dezember aus (Risiko Regierungsstillstand)",
-      "date": "2026-12-11",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "politik",
-      "company": "US-Kongress",
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB"
-      ],
-      "probabilityPct": 25,
-      "impact": "mittel",
-      "reasoning": "Die Regierung ist per Übergangsgesetz nur bis 11. Dezember finanziert. Die 25 % sind meine Schätzung, dass es tatsächlich zu einem Stillstand kommt: Der alte Kongress sitzt noch bis Januar, die Demokraten haben nach ihrem Sieg wenig Grund zu Zugeständnissen, aber kurze Übergangslösungen sind die Regel. Ein Stillstand würde Behörden bremsen, die für uns zählen: FAA-Lizenzen (Starship), SEC und Konjunkturdaten.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Congress.gov (CRS): Übergangshaushalt FY2027 bis 11. Dezember",
-          "url": "https://www.congress.gov/crs-product/R49353"
-        },
-        {
-          "title": "Holland & Knight: Fristen des Kongresses zum Jahresende",
-          "url": "https://www.hklaw.com/en/insights/publications/2026/10/beyond-the-midterms-congress-faces-converging-year-end-deadlines"
-        }
-      ]
-    },
-    {
       "id": "evt-russell-rebalance-dez",
       "title": "Russell-Indexanpassung: SpaceX im Russell 1000 Growth (Goldman: >10 Mrd. $ passive Käufe)",
       "date": "2026-12-11",
@@ -1106,6 +1167,35 @@
         {
           "title": "LSEG: Russell Reconstitution",
           "url": "https://www.lseg.com/en/ftse-russell/russell-reconstitution"
+        }
+      ]
+    },
+    {
+      "id": "evt-us-shutdown-risiko",
+      "title": "USA: Übergangshaushalt läuft am 11. Dezember aus (Risiko Regierungsstillstand)",
+      "date": "2026-12-11",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "politik",
+      "company": "US-Kongress",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 25,
+      "impact": "mittel",
+      "reasoning": "Die Regierung ist per Übergangsgesetz nur bis 11. Dezember finanziert. Die 25 % sind meine Schätzung, dass es tatsächlich zu einem Stillstand kommt: Der alte Kongress sitzt noch bis Januar, die Demokraten haben nach ihrem Sieg wenig Grund zu Zugeständnissen, aber kurze Übergangslösungen sind die Regel. Ein Stillstand würde Behörden bremsen, die für uns zählen: FAA-Lizenzen (Starship), SEC und Konjunkturdaten.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Congress.gov (CRS): Übergangshaushalt FY2027 bis 11. Dezember",
+          "url": "https://www.congress.gov/crs-product/R49353"
+        },
+        {
+          "title": "Holland & Knight: Fristen des Kongresses zum Jahresende",
+          "url": "https://www.hklaw.com/en/insights/publications/2026/10/beyond-the-midterms-congress-faces-converging-year-end-deadlines"
         }
       ]
     },
@@ -1561,43 +1651,6 @@
         {
           "title": "Trade Law Counsel: Section-232-Verhandlungen zu Robotik, keine Zölle",
           "url": "https://www.tradelawcounsel.com/insights-news/2026/11/2/president-directs-section-232-negotiations-on-robotics-and-industrial-machinery-imports-no-tariffs-imposed"
-        }
-      ]
-    },
-    {
-      "id": "evt-de-energie-zahlen",
-      "title": "Siemens Energy, Eon und RWE: Zahlen (vorbörslich)",
-      "date": "2026-11-11",
-      "time": "07:00",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "earnings",
-      "company": null,
-      "tickers": [],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Erledigt. Siemens Energy: Rekordquartal mit 12,8 Mrd. € Umsatz und 1,49 € Gewinn je Aktie (erwartet 1,34 €), Dividende 2,30 €, aber für 2027 rund 5 Mrd. € Nettogewinn statt der von Analysten erwarteten 5,5 Mrd. €; auf Tradegate um 07:44 trotzdem gut 5 % höher. Eon bestätigt die Prognose (bereinigtes Ebitda 7,1 Mrd. € nach neun Monaten). RWE steigert das bereinigte Ebitda um 35 % auf 4,6 Mrd. € und erwartet das obere Ende der Spanne. Für SPCX, TSLA und RKLB ohne direkte Wirkung, wichtig für die Dax-Stimmung und den Deutschland-Reiter.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Siemens Energy: Ergebnis Q4 GJ 2026 (11.11.)",
-          "url": "https://www.siemens-energy.com/global/en/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html"
-        },
-        {
-          "title": "Investing.com: Siemens-Energy-Aktie nach den Zahlen (11.11., Tradegate 07:44)",
-          "url": "https://de.investing.com/news/stock-market-news/siemensenergyaktie-nach-den-zahlen-was-gegen-den-kurssprung-spricht-3761039"
-        },
-        {
-          "title": "EQS/E.ON: Prognose 2026 bestätigt (11.11., 07:00)",
-          "url": "https://www.eqs-news.com/de/news/corporate/e-on-bestatigt-prognose-fur-2026-und-investiert-weiter-in-europas-energieinfrastruktur/f129a76f-a667-4d3a-ae3d-f60a0b22acfb"
-        },
-        {
-          "title": "RWE: Neunmonatszahlen 2026 (11.11.)",
-          "url": "https://www.rwe.com/investor-relations/finanzkalender-und-veroeffentlichungen/news-und-ad-hoc-mitteilungen/news/news-2026-11-11/"
-        },
-        {
-          "title": "tagesschau.de: Marktbericht – Dax-Rekord in Sichtweite, Eon, RWE, Siemens Energy (11.11.)",
-          "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nasdaq-eon-nvidia-100.html"
         }
       ]
     },

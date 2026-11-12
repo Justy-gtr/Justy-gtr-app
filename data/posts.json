@@ -1,12 +1,20 @@
 {
   "example": false,
-  "asOf": "2026-11-12T05:10:00+01:00",
+  "asOf": "2026-11-12T06:50:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
       "label": "verhalten",
-      "summary": "Nachts: Nvidia-Chefstreit drückt die KI-Werte, SPCX nachbörslich 138,10 $ (−1,2 %). Musk würde Huang „gern“ einstellen und will, dass Nvidias Board die Untersuchung abwartet. USSF-627 startklar (05:36), Flight 15 weiter ohne FAA-Lizenz, Anthropic-Gerücht unbestätigt.",
+      "summary": "Morgens: USSF-627 um 05:36 gestartet, Erststufe gelandet. Der Nvidia-Chefstreit drückt die KI-Werte, SPCX nachbörslich 138,10 $ (−1,2 %). Musk würde Huang „gern“ einstellen. Flight 15 (Fr 23:45) weiter ohne FAA-Lizenz.",
       "sources": [
+        {
+          "title": "@SpaceX: Liftoff! USSF-627 (12.11., 05:37)",
+          "url": "https://x.com/SpaceX/status/2120737709924720659"
+        },
+        {
+          "title": "@SpaceX: Erststufe landet auf „Of Course I Still Love You“ (12.11., 05:45)",
+          "url": "https://x.com/SpaceX/status/2120739813401792913"
+        },
         {
           "title": "@elonmusk: „That would be an honor“ (12.11., 02:22)",
           "url": "https://x.com/elonmusk/status/2120688743111971293"
@@ -18,37 +26,25 @@
         {
           "title": "Yahoo Finance SPCX (Nachbörse 19:59 ET)",
           "url": "https://finance.yahoo.com/quote/SPCX/"
-        },
-        {
-          "title": "@SpaceX: USSF-627 – alle Systeme gut, Betankung beginnt (12.11., 04:47)",
-          "url": "https://x.com/SpaceX/status/2120725054933635188"
-        },
-        {
-          "title": "SpaceX: Starship Flight 15 (Stand 12.11.)",
-          "url": "https://www.spacex.com/launches/starship-flight-15"
         }
       ]
     },
     "TSLA": {
       "score": 0.05,
       "label": "verhalten",
-      "summary": "Nach +2,9 % am Mittwoch nachbörslich 387,15 $ (−0,9 %), weil Nvidia nach dem WSJ-Bericht über Huangs mögliche Ablösung um 8,6 % fiel. Musks „wäre eine Ehre“ zu Huang ist Gesprächsthema. In Europa heißt FSD jetzt „Tesla Assisted Driving“, Tempo-Spielraum max. 10 %.",
+      "summary": "Morgens: Tesla meldet Robotaxi rund um die Uhr in allen Städten, Musk: „168 Stunden pro Woche“. Nachbörslich 387,15 $ (−0,9 %) im Sog von Nvidia; Jefferies hat am Montag auf „Hold“ abgestuft.",
       "sources": [
         {
-          "title": "@elonmusk: „That would be an honor“ (12.11., 02:22)",
-          "url": "https://x.com/elonmusk/status/2120688743111971293"
+          "title": "@robotaxi: Robotaxi jetzt rund um die Uhr in jeder Stadt (12.11., 05:31)",
+          "url": "https://x.com/robotaxi/status/2120736143566344324"
         },
         {
-          "title": "Yahoo Finance TSLA (Nachbörse 19:59 ET)",
-          "url": "https://finance.yahoo.com/quote/TSLA/"
+          "title": "@elonmusk: „Robotaxi works 168 hours a week“ (12.11., 06:12)",
+          "url": "https://x.com/elonmusk/status/2120746428720988408"
         },
         {
-          "title": "Starnews: Tesla benennt FSD in Europa in „Tesla Assisted Driving“ um (12.11.)",
-          "url": "https://www.starnewskorea.com/en/business-life/2026/11/12/2026111209071098129"
-        },
-        {
-          "title": "CNBC: Nvidia-Verwaltungsrat berät über Huangs Zukunft (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
+          "title": "MarketBeat: Jefferies stuft Tesla auf „Hold“ ab (11.11.)",
+          "url": "https://www.marketbeat.com/instant-alerts/analyst-tesla-nasdaq-tsla-rating-lowered-to-hold-at-jefferies-financial-group-2026-11-11/"
         }
       ]
     },
@@ -73,6 +69,106 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2120746428720988408",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-12T06:12:04+01:00",
+      "summaryDe": "Musk teilt die Robotaxi-Meldung mit dem Satz: „Ein Robotaxi arbeitet 168 Stunden pro Woche“ – also rund um die Uhr, sieben Tage lang.",
+      "originalText": "Robotaxi works 168 hours a week",
+      "url": "https://x.com/elonmusk/status/2120746428720988408",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „Robotaxi works 168 hours a week“ (12.11., 06:12)",
+          "url": "https://x.com/elonmusk/status/2120746428720988408"
+        },
+        {
+          "title": "@robotaxi: Robotaxi jetzt rund um die Uhr in jeder Stadt (12.11., 05:31)",
+          "url": "https://x.com/robotaxi/status/2120736143566344324"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2120739813401792913",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-12T05:45:47+01:00",
+      "summaryDe": "Die Falcon-9-Erststufe der Mission USSF-627 ist auf dem Drohnenschiff „Of Course I Still Love You“ im Pazifik gelandet.",
+      "originalText": "Falcon 9’s first stage lands on the Of Course I Still Love You droneship",
+      "url": "https://x.com/SpaceX/status/2120739813401792913",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX: Erststufe landet auf „Of Course I Still Love You“ (12.11., 05:45)",
+          "url": "https://x.com/SpaceX/status/2120739813401792913"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2120737709924720659",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-12T05:37:26+01:00",
+      "summaryDe": "„Abgehoben!“ – Falcon 9 ist mit der geheimen Space-Force-Mission USSF-627 von Vandenberg in Kalifornien gestartet.",
+      "originalText": "Liftoff!",
+      "url": "https://x.com/SpaceX/status/2120737709924720659",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX: Liftoff! USSF-627 (12.11., 05:37)",
+          "url": "https://x.com/SpaceX/status/2120737709924720659"
+        },
+        {
+          "title": "Space.com: SpaceX startet zweite geheime Space-Force-Mission in sechs Tagen (12.11.)",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-2nd-mystery-mission-for-us-space-force-in-6-day-span-photos"
+        }
+      ]
+    },
+    {
+      "id": "post-robotaxi-2120736143566344324",
+      "account": "@robotaxi",
+      "displayName": "Robotaxi (Tesla)",
+      "postedAt": "2026-11-12T05:31:12+01:00",
+      "summaryDe": "Teslas Robotaxi-Konto meldet: Der Dienst fährt ab sofort rund um die Uhr, in jeder Stadt, in der er angeboten wird.",
+      "originalText": "Robotaxi now runs 24/7. Every city we're available in",
+      "url": "https://x.com/robotaxi/status/2120736143566344324",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@robotaxi: Robotaxi jetzt rund um die Uhr in jeder Stadt (12.11., 05:31)",
+          "url": "https://x.com/robotaxi/status/2120736143566344324"
+        }
+      ]
+    },
     {
       "id": "post-spacex-2120725054933635188",
       "account": "@SpaceX",
