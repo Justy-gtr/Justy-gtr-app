@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-12T16:45:19.527Z",
+  "asOf": "2026-11-12T17:40:28.955Z",
   "knockoutsAsOf": "2026-11-10",
   "timezone": "Europe/Berlin",
   "window": "09:00-10:30",
@@ -9,8 +9,8 @@
       "symbol": "S92.DE",
       "name": "SMA Solar",
       "underlyingIsin": "DE000A0DJ6J9",
-      "priceEur": 49.4,
-      "changePct": 2.4,
+      "priceEur": 49.32,
+      "changePct": 2.24,
       "sparkline": [
         48.48,
         47.66,
@@ -110,7 +110,8 @@
         50.05,
         49.72,
         49.48,
-        49.72
+        49.4,
+        49.32
       ],
       "intraday": [
         {
@@ -507,7 +508,11 @@
         },
         {
           "t": "2026-11-12T16:25:00.000Z",
-          "eur": 49.72
+          "eur": 49.4
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 49.32
         }
       ],
       "morning": {
@@ -541,14 +546,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-SMA-Solar"
         }
       ],
-      "asOf": "2026-11-12T16:45:16.663Z"
+      "asOf": "2026-11-12T17:40:25.786Z"
     },
     {
       "symbol": "AIXA.DE",
       "name": "Aixtron",
       "underlyingIsin": "DE000A0WMPJ6",
-      "priceEur": 33.83,
-      "changePct": -1.34,
+      "priceEur": 33.71,
+      "changePct": -1.69,
       "sparkline": [
         33.44,
         33.12,
@@ -650,7 +655,8 @@
         33.9,
         33.89,
         33.82,
-        33.82
+        33.83,
+        33.71
       ],
       "intraday": [
         {
@@ -1055,7 +1061,11 @@
         },
         {
           "t": "2026-11-12T16:25:00.000Z",
-          "eur": 33.82
+          "eur": 33.83
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 33.71
         }
       ],
       "morning": {
@@ -1089,14 +1099,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Aixtron"
         }
       ],
-      "asOf": "2026-11-12T16:45:16.884Z"
+      "asOf": "2026-11-12T17:40:26.012Z"
     },
     {
       "symbol": "HAG.DE",
       "name": "Hensoldt",
       "underlyingIsin": "DE000HAG0005",
-      "priceEur": 79.28,
-      "changePct": -4,
+      "priceEur": 79.46,
+      "changePct": -3.78,
       "sparkline": [
         83.36,
         82.18,
@@ -1200,7 +1210,7 @@
         79.12,
         79.22,
         79.26,
-        79.28
+        79.46
       ],
       "intraday": [
         {
@@ -1613,7 +1623,7 @@
         },
         {
           "t": "2026-11-12T16:30:00.000Z",
-          "eur": 79.28
+          "eur": 79.46
         }
       ],
       "morning": {
@@ -1647,14 +1657,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-HENSOLDT-AG"
         }
       ],
-      "asOf": "2026-11-12T16:45:17.921Z"
+      "asOf": "2026-11-12T17:40:26.887Z"
     },
     {
       "symbol": "SMHN.DE",
       "name": "SUSS MicroTec",
       "underlyingIsin": "DE000A1K0235",
-      "priceEur": 50.65,
-      "changePct": -2.6,
+      "priceEur": 50.45,
+      "changePct": -2.98,
       "sparkline": [
         50.75,
         50.35,
@@ -1748,7 +1758,8 @@
         50.75,
         50.7,
         50.6,
-        50.65
+        50.65,
+        50.45
       ],
       "intraday": [
         {
@@ -2122,6 +2133,10 @@
         {
           "t": "2026-11-12T16:25:00.000Z",
           "eur": 50.65
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 50.45
         }
       ],
       "morning": {
@@ -2155,14 +2170,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-SUSS-MicroTec"
         }
       ],
-      "asOf": "2026-11-12T16:45:17.265Z"
+      "asOf": "2026-11-12T17:40:26.349Z"
     },
     {
       "symbol": "AG1.DE",
       "name": "Auto1",
       "underlyingIsin": "DE000A2LQ884",
-      "priceEur": 15.55,
-      "changePct": 0.45,
+      "priceEur": 15.44,
+      "changePct": -0.26,
       "sparkline": [
         15.8,
         15.77,
@@ -2245,7 +2260,8 @@
         15.52,
         15.52,
         15.5,
-        15.51
+        15.55,
+        15.44
       ],
       "intraday": [
         {
@@ -2574,7 +2590,11 @@
         },
         {
           "t": "2026-11-12T16:25:00.000Z",
-          "eur": 15.51
+          "eur": 15.55
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 15.44
         }
       ],
       "morning": {
@@ -2608,14 +2628,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-AUTO1-GROUP-SE"
         }
       ],
-      "asOf": "2026-11-12T16:45:17.753Z"
+      "asOf": "2026-11-12T17:40:26.711Z"
     },
     {
       "symbol": "HFG.DE",
       "name": "HelloFresh",
       "underlyingIsin": "DE000A161408",
-      "priceEur": 2.88,
-      "changePct": -0.24,
+      "priceEur": 2.89,
+      "changePct": 0.17,
       "sparkline": [
         2.92,
         2.9,
@@ -2698,7 +2718,8 @@
         2.88,
         2.88,
         2.87,
-        2.88
+        2.88,
+        2.89
       ],
       "intraday": [
         {
@@ -3028,6 +3049,10 @@
         {
           "t": "2026-11-12T16:25:00.000Z",
           "eur": 2.88
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 2.89
         }
       ],
       "morning": {
@@ -3061,14 +3086,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-HelloFresh"
         }
       ],
-      "asOf": "2026-11-12T16:45:17.577Z"
+      "asOf": "2026-11-12T17:40:26.545Z"
     },
     {
       "symbol": "EVT.DE",
       "name": "Evotec",
       "underlyingIsin": "DE0005664809",
-      "priceEur": 3.14,
-      "changePct": -0.63,
+      "priceEur": 3.12,
+      "changePct": -1.14,
       "sparkline": [
         3.27,
         3.21,
@@ -3149,7 +3174,8 @@
         3.14,
         3.14,
         3.14,
-        3.14
+        3.14,
+        3.12
       ],
       "intraday": [
         {
@@ -3471,6 +3497,10 @@
         {
           "t": "2026-11-12T16:25:00.000Z",
           "eur": 3.14
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 3.12
         }
       ],
       "morning": {
@@ -3504,14 +3534,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Evotec"
         }
       ],
-      "asOf": "2026-11-12T16:45:17.057Z"
+      "asOf": "2026-11-12T17:40:26.180Z"
     },
     {
       "symbol": "R3NK.DE",
       "name": "Renk",
       "underlyingIsin": "DE000RENK730",
-      "priceEur": 32.84,
-      "changePct": -3.89,
+      "priceEur": 32.88,
+      "changePct": -3.78,
       "sparkline": [
         34.31,
         34,
@@ -3614,7 +3644,8 @@
         32.74,
         32.9,
         32.74,
-        32.81
+        32.84,
+        32.88
       ],
       "intraday": [
         {
@@ -4023,7 +4054,11 @@
         },
         {
           "t": "2026-11-12T16:25:00.000Z",
-          "eur": 32.81
+          "eur": 32.84
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 32.88
         }
       ],
       "morning": {
@@ -4057,14 +4092,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-RENK-GROUP-AG"
         }
       ],
-      "asOf": "2026-11-12T16:45:19.185Z"
+      "asOf": "2026-11-12T17:40:28.043Z"
     },
     {
       "symbol": "RHM.DE",
       "name": "Rheinmetall",
       "underlyingIsin": "DE0007030009",
-      "priceEur": 774.7,
-      "changePct": -2.44,
+      "priceEur": 772.6,
+      "changePct": -2.71,
       "sparkline": [
         807.4,
         800.7,
@@ -4167,7 +4202,8 @@
         777.1,
         776.1,
         774.4,
-        775.2
+        774.7,
+        772.6
       ],
       "intraday": [
         {
@@ -4576,7 +4612,11 @@
         },
         {
           "t": "2026-11-12T16:25:00.000Z",
-          "eur": 775.2
+          "eur": 774.7
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 772.6
         }
       ],
       "morning": {
@@ -4610,14 +4650,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Rheinmetall"
         }
       ],
-      "asOf": "2026-11-12T16:45:18.326Z"
+      "asOf": "2026-11-12T17:40:27.226Z"
     },
     {
       "symbol": "TMV.DE",
       "name": "TeamViewer",
       "underlyingIsin": "DE000A2YN900",
-      "priceEur": 4.86,
-      "changePct": -2.91,
+      "priceEur": 4.83,
+      "changePct": -3.55,
       "sparkline": [
         5.01,
         5.02,
@@ -4700,7 +4740,7 @@
         4.86,
         4.85,
         4.86,
-        4.86
+        4.83
       ],
       "intraday": [
         {
@@ -5029,7 +5069,7 @@
         },
         {
           "t": "2026-11-12T16:30:00.000Z",
-          "eur": 4.86
+          "eur": 4.83
         }
       ],
       "morning": {
@@ -5063,14 +5103,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-TeamViewer-SE"
         }
       ],
-      "asOf": "2026-11-12T16:45:18.120Z"
+      "asOf": "2026-11-12T17:40:27.054Z"
     },
     {
       "symbol": "TKA.DE",
       "name": "thyssenkrupp",
       "underlyingIsin": "DE0007500001",
-      "priceEur": 12.49,
-      "changePct": -0.04,
+      "priceEur": 12.45,
+      "changePct": -0.36,
       "sparkline": [
         12.56,
         12.49,
@@ -5172,7 +5212,8 @@
         12.46,
         12.47,
         12.47,
-        12.48
+        12.48,
+        12.44
       ],
       "intraday": [
         {
@@ -5578,6 +5619,10 @@
         {
           "t": "2026-11-12T16:25:00.000Z",
           "eur": 12.48
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 12.44
         }
       ],
       "morning": {
@@ -5611,14 +5656,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-ThyssenKrupp"
         }
       ],
-      "asOf": "2026-11-12T16:45:18.581Z"
+      "asOf": "2026-11-12T17:40:27.392Z"
     },
     {
       "symbol": "IFX.DE",
       "name": "Infineon",
       "underlyingIsin": "DE0006231004",
-      "priceEur": 52.29,
-      "changePct": 0.33,
+      "priceEur": 52.11,
+      "changePct": -0.02,
       "sparkline": [
         50.44,
         50.19,
@@ -5721,7 +5766,8 @@
         52.23,
         52.39,
         52.25,
-        52.26
+        52.29,
+        52.11
       ],
       "intraday": [
         {
@@ -6130,7 +6176,11 @@
         },
         {
           "t": "2026-11-12T16:25:00.000Z",
-          "eur": 52.26
+          "eur": 52.29
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 52.11
         }
       ],
       "morning": {
@@ -6164,14 +6214,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Infineon"
         }
       ],
-      "asOf": "2026-11-12T16:45:19.359Z"
+      "asOf": "2026-11-12T17:40:28.788Z"
     },
     {
       "symbol": "NDX1.DE",
       "name": "Nordex",
       "underlyingIsin": "DE000A0D6554",
-      "priceEur": 42,
-      "changePct": 0.33,
+      "priceEur": 41.98,
+      "changePct": 0.29,
       "sparkline": [
         41.58,
         41.4,
@@ -6274,7 +6324,8 @@
         42.02,
         42.02,
         41.96,
-        42
+        42,
+        41.98
       ],
       "intraday": [
         {
@@ -6684,6 +6735,10 @@
         {
           "t": "2026-11-12T16:25:00.000Z",
           "eur": 42
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 41.98
         }
       ],
       "morning": {
@@ -6717,14 +6772,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Nordex"
         }
       ],
-      "asOf": "2026-11-12T16:45:18.776Z"
+      "asOf": "2026-11-12T17:40:27.612Z"
     },
     {
       "symbol": "ZAL.DE",
       "name": "Zalando",
       "underlyingIsin": "DE000ZAL1111",
-      "priceEur": 28.45,
-      "changePct": 2.52,
+      "priceEur": 28.46,
+      "changePct": 2.56,
       "sparkline": [
         28.57,
         28.69,
@@ -6827,7 +6882,8 @@
         28.37,
         28.45,
         28.45,
-        28.44
+        28.45,
+        28.46
       ],
       "intraday": [
         {
@@ -7236,7 +7292,11 @@
         },
         {
           "t": "2026-11-12T16:25:00.000Z",
-          "eur": 28.44
+          "eur": 28.45
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 28.46
         }
       ],
       "morning": {
@@ -7270,14 +7330,14 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Zalando"
         }
       ],
-      "asOf": "2026-11-12T16:45:18.992Z"
+      "asOf": "2026-11-12T17:40:27.794Z"
     },
     {
       "symbol": "ENR.DE",
       "name": "Siemens Energy",
       "underlyingIsin": "DE000ENER6Y0",
-      "priceEur": 133.2,
-      "changePct": 0.33,
+      "priceEur": 132.52,
+      "changePct": -0.18,
       "sparkline": [
         130.8,
         131,
@@ -7380,7 +7440,8 @@
         133.78,
         133.74,
         133.34,
-        133.4
+        133.2,
+        132.52
       ],
       "intraday": [
         {
@@ -7789,7 +7850,11 @@
         },
         {
           "t": "2026-11-12T16:25:00.000Z",
-          "eur": 133.4
+          "eur": 133.2
+        },
+        {
+          "t": "2026-11-12T16:30:00.000Z",
+          "eur": 132.52
         }
       ],
       "morning": {
@@ -7823,7 +7888,7 @@
           "url": "https://www.onvista.de/derivate/Knock-Outs/Knock-Outs-auf-Siemens-Energy"
         }
       ],
-      "asOf": "2026-11-12T16:45:19.527Z"
+      "asOf": "2026-11-12T17:40:28.954Z"
     }
   ]
 }
