@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-11T16:42:00+01:00",
+  "updatedAt": "2026-11-12T08:05:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -15,
+      "score": 10,
       "postsCount": 24,
-      "reason": "SpaceX: Kurs rutscht wieder ab, rund 3 % im Minus und einer der größten Verlierer. Das Anthropic-Gerücht drückt, Fans halten es für eine unbestätigte Analystennotiz.",
+      "reason": "SpaceX: Gestern 2,3 % im Minus. Jetzt wird gehofft, dass Musk Nvidia-Chef Huang holt. Dazu FCC-Antrag für 800-MHz-Funk direkt aufs Handy angenommen.",
       "sources": [
         {
-          "title": "SPCX -3,3 %, größter Verlierer",
-          "url": "https://x.com/spon2016/status/2120540613619929504"
+          "title": "SPCX schloss 2,3 % im Minus",
+          "url": "https://x.com/naidongtangyuan/status/2120769266819731695"
         },
         {
-          "title": "Anthropic-Gerücht aus Analystennotizen",
-          "url": "https://x.com/spcxGOD/status/2120537489702019213"
+          "title": "Hoffnung: Huang wechselt zu SpaceX",
+          "url": "https://x.com/TheFiscalNexus/status/2120746872914489650"
         },
         {
-          "title": "Pentagon-Studie zu Starlink-Lasern",
-          "url": "https://x.com/JoshSharp/status/2120537459620540741"
+          "title": "FCC nimmt 800-MHz-Antrag an",
+          "url": "https://x.com/lanios_/status/2120766040036852170"
         }
       ],
-      "updatedAt": "2026-11-11T16:42:00+01:00"
+      "updatedAt": "2026-11-12T08:05:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 20,
-      "reason": "Tesla: Rund 2 % im Plus. Neu: Robotaxi startet in San Antonio, jetzt 8 Städte. Dazu Gespräche über Cybertruck-Ende in Texas bis 2027 und Zellen aus Grünheide.",
+      "score": 40,
+      "postsCount": 22,
+      "reason": "Tesla: Großes Thema ist Robotaxi jetzt rund um die Uhr in allen 8 Städten. Dazu FSD in Finnland erlaubt. Kritiker posten Unfallvideos.",
       "sources": [
         {
-          "title": "Robotaxi startet in San Antonio",
-          "url": "https://x.com/CultFinance_/status/2120539549390753794"
+          "title": "Robotaxi 24/7 in allen 8 Städten",
+          "url": "https://x.com/daltonbrewer/status/2120748624778805724"
         },
         {
-          "title": "Grünheide: eigene Zellen ab 2027",
-          "url": "https://x.com/sebaonwheels/status/2120536778645885321"
+          "title": "Rechnung: Gewinn pro Robotaxi",
+          "url": "https://x.com/WR4NYGov/status/2120754399232540890"
         },
         {
-          "title": "Widerstand bei 394 $",
-          "url": "https://x.com/ChrisHuRocks/status/2120539656454291503"
+          "title": "Kritik an FSD-Sicherheit",
+          "url": "https://x.com/StonkKing4/status/2120747589473841577"
         }
       ],
-      "updatedAt": "2026-11-11T16:42:00+01:00"
+      "updatedAt": "2026-11-12T08:05:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 35,
+      "score": 25,
       "postsCount": 25,
-      "reason": "Rocket Lab: Kurs fast wieder bei 70 $. Gefeiert werden Neutron-Preis von 70 Mio. $ und ein Raketenbau alle 8 Tage. Einige warnen vor Kleinanleger-Hype.",
+      "reason": "Rocket Lab: Finanzchef sagt, Neutron wird mit mehr Starts profitabel. Die Iridium-Übernahme wird gelobt. Viel Spam von Signalgruppen.",
       "sources": [
         {
-          "title": "Neutron-Preis steigt auf 70 Mio. $",
-          "url": "https://x.com/SpaceSector001/status/2120535984882225485"
+          "title": "Neutron-Gewinn hängt an Startrate",
+          "url": "https://x.com/RCapitalX/status/2120749325840224434"
         },
         {
-          "title": "Alle 8 Tage eine neue Rakete",
-          "url": "https://x.com/MacroGekko/status/2120538114774929415"
+          "title": "Iridium-Übernahme als Chance",
+          "url": "https://x.com/AktienETFNewbie/status/2120772528150860262"
         },
         {
-          "title": "Warnung vor Kleinanleger-Hype",
-          "url": "https://x.com/retail_mourinho/status/2120536724497420562"
+          "title": "Neutron erst 2027 im Einsatz",
+          "url": "https://x.com/pledisme/status/2120756287608906041"
         }
       ],
-      "updatedAt": "2026-11-11T16:42:00+01:00"
+      "updatedAt": "2026-11-12T08:05:00+01:00"
     }
   }
 }
