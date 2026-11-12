@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T10:34:00+01:00",
+  "updatedAt": "2026-11-12T10:51:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -22,7 +22,7 @@
           "url": "https://x.com/manager_magazin/status/2120806007190499511"
         }
       ],
-      "updatedAt": "2026-11-12T10:34:00+01:00"
+      "updatedAt": "2026-11-12T10:51:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,28 +43,28 @@
           "url": "https://x.com/BradMunchen/status/2120811685980389457"
         }
       ],
-      "updatedAt": "2026-11-12T10:34:00+01:00"
+      "updatedAt": "2026-11-12T10:51:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 25,
-      "reason": "Rocket Lab: Neutron-Start wird teurer (70 statt 55 Mio. $), wegen hoher Nachfrage. Rekordumsatz wird gelobt, Verlust bremst. Viel Spam.",
+      "score": 30,
+      "postsCount": 20,
+      "reason": "Rocket Lab: 100. Start am 14.11. steht an. Neutron wird teurer (70 statt 55 Mio. $), erste 16 Flüge schon vergeben. Vorbörslich leicht im Minus, viel Spam.",
       "sources": [
         {
-          "title": "Neutron-Preis steigt auf 70 Mio. $",
-          "url": "https://x.com/LPNationalist/status/2120775219207917881"
+          "title": "Neutron: 16 Flüge vergeben",
+          "url": "https://x.com/HillaHaddad/status/2120814217800351858"
         },
         {
-          "title": "Q3: Rekordumsatz, mehr Verlust",
-          "url": "https://x.com/SuperEx/status/2120780452512600171"
+          "title": "100. Start am 14.11.",
+          "url": "https://x.com/PhoebePlague/status/2120816294039802048"
         },
         {
-          "title": "Iridium-Übernahme als Chance",
-          "url": "https://x.com/AktienETFNewbie/status/2120772528150860262"
+          "title": "Vorbörse: RKLB -3 %",
+          "url": "https://x.com/BruceTa55302936/status/2120808146239402333"
         }
       ],
-      "updatedAt": "2026-11-12T10:34:00+01:00"
+      "updatedAt": "2026-11-12T10:51:00+01:00"
     }
   }
 }
