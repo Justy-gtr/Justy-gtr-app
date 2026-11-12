@@ -6318,135 +6318,59 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "SPCX schließt klar im Minus: Schluss 139,75 $ (−2,3 % zum Vortag 143,09 $), Tagesspanne 138,62–145,16 $, nachbörslich um 22:02 bei 140,11 $; in Stuttgart zuletzt 127,16 € (−0,4 %, 21:33) (Yahoo). Gegen den Nasdaq (+1,6 %) bleibt SPCX deutlich zurück; ein Teil der Abgaben kam in den letzten zwei Handelsstunden (um 20:00 noch −0,5 %). Belastung bleibt eine unbestätigte Mitschrift auf X (Konto @jukan05): Anthropic soll Analysten gesagt haben, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Musk antwortete um 18:40 auf X: „Wir nehmen die Rechenleistung gern zurück. Kein Problem. Aber ich glaube, das Gegenteil wird passieren.“ Um 20:01 legte Musk nach: SpaceX habe die Chance, im nächsten Jahr etwa die Hälfte der Gigawatt an „tatsächlich nutzbarer“ Rechenleistung zu stellen; ein großes Cluster zuverlässig zum Laufen zu bringen dauere bei SpaceX rund zwei Monate, bei anderen eher sechs. Eine Bestätigung oder ein Dementi von Anthropic gibt es weiter nicht, auch keine neue SEC-Meldung (X, Wccftech, TeslaNorth, SEC). Warum das zählt: Anthropic stand im dritten Quartal laut 10-Q und Bloomberg für 34,5 % des SpaceX-Umsatzes, die Verträge sind nach Januar bzw. März 2027 mit 90 Tagen Frist kündbar (Anthropic-S-1 laut TokenPost). Stützend: Die FCC hat die Anträge zum Kauf der 800-MHz-Frequenzen von Grain zur Prüfung angenommen – manche Börsendienste schrieben fälschlich von einer Genehmigung (Teslarati, StreetInsider); KeyBanc meldet 5 % mehr Starlink-App-Downloads im Oktober (StreetInsider). Schluss an der Wall Street: Nasdaq +1,6 % auf 25.466 Punkte, S&P 500 +1,3 %, Dow +0,5 %; Nvidia +2,9 %. Gegen Abend gaben die Tech-Werte einen Teil der Gewinne ab (Nasdaq um 20:00 noch +2,2 %). CoreWeave schloss nach starken Zahlen +24,7 % und zog den KI-Sektor mit (Yahoo). Republikaner drohen Nvidia-Chef Huang mit einer Vorladung, falls er bis Mittwochabend nicht auf die Briefing-Bitte antwortet (TechCrunch, Bloomberg Law). Der Dax schloss bei 26.663 Punkten (+1,2 %, Yahoo). Gegenwind bleibt die Fed: Goolsbee nannte den Oktober-Inflationsbericht „grenzwertig beunruhigend“, und laut CME FedWatch rechnen Händler zu 87 % mit einer Zinserhöhung im Dezember (CNBC). Booster 22 steht für Flight 15 (Fr 23:45) an der Rampe, die FAA-Lizenz fehlt weiter; USSF-627 startet Do 03:35.",
+      "why": "Nacht zu Do: SPCX nachbörslich 138,10 $ (−1,2 % zum Schluss 139,75 $, Stand 19:59 ET) (Yahoo). Taktgeber der Nacht ist Nvidia: Laut Wall Street Journal bereitet der Verwaltungsrat die Ablösung von Chef Jensen Huang vor, nach einer zweiten Affären-Meldung der New York Times; Bloomberg berichtet von einer Nachfolgersuche. Nvidia fiel nachbörslich auf 158,78 $ (−8,6 % zum Schluss 173,73 $), Nasdaq-100-Futures um 05:50 bei 28.220 Punkten (−0,9 %) (Yahoo, CNBC, MarketWatch). Musk schrieb um 02:22 auf X, Huang einzustellen „wäre eine Ehre“ (CNBC). Tokio verdaut den Schreck: Der Nikkei lag mittags noch 0,8 % im Plus, um 04:47 Berlin bei 61.227 Punkten fast unverändert (Nikkei, Yahoo); Advantest drehte von +5 % am Mittwoch auf −3 %. Am Mittwoch schloss SPCX −2,3 % gegen einen Nasdaq von +1,6 %; Belastung blieb die unbestätigte X-Mitschrift, Anthropic wolle den Rechenvertrag nicht über Mitte 2027 hinaus verlängern – Anthropic hat sich bis heute früh nicht geäußert (TeslaNorth). Termine: USSF-627 startet Do ab 05:36, SpaceX meldet alle Systeme gut; Flight 15 (Fr 23:45) wartet weiter auf die FAA-Lizenz.",
       "whySources": [
         {
-          "title": "Yahoo Finance SPCX (Schluss 11.11.)",
+          "title": "Yahoo Finance SPCX (Nachbörse 19:59 ET)",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Yahoo Finance SPX.SG",
-          "url": "https://finance.yahoo.com/quote/SPX.SG/"
+          "title": "CNBC: Nvidia-Verwaltungsrat berät über Huangs Zukunft (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
         },
         {
-          "title": "@elonmusk: „about half the GW next year of actually usable compute“ (11.11., 20:01)",
-          "url": "https://x.com/elonmusk/status/2120592775813255535"
+          "title": "MarketWatch/Morningstar: Nvidia fällt nachbörslich, Board will Huang ablösen (11.11.)",
+          "url": "https://www.morningstar.com/news/marketwatch/20261111357/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang"
         },
         {
-          "title": "TeslaNorth: Musk würde Anthropic-Rechenleistung gern zurücknehmen (11.11.)",
-          "url": "https://teslanorth.com/2026/11/11/musk-anthropic-spacex-take-compute-back/"
-        },
-        {
-          "title": "@elonmusk: „We would be happy to take the compute back“ (11.11., 18:40)",
-          "url": "https://x.com/elonmusk/status/2120572352073433380"
-        },
-        {
-          "title": "Wccftech: Musk antwortet auf Anthropic-Bericht (11.11.)",
-          "url": "https://wccftech.com/anthropic-believes-its-partnership-with-spacex-wont-last-beyond-q2-2027-and-elon-musk-now-says-well-be-happy-to-take-the-compute-back/"
-        },
-        {
-          "title": "TeslaNorth: Anthropic-Gerücht weiter unbestätigt (11.11.)",
-          "url": "https://teslanorth.com/2026/11/11/anthropic-spacex-compute-contract-mid-2027/"
-        },
-        {
-          "title": "Teslarati: FCC nimmt Grain-Antrag an, keine Genehmigung (11.11.)",
-          "url": "https://www.teslarati.com/spacex-fcc-verizon-att-approved/"
-        },
-        {
-          "title": "StreetInsider: SpaceX steigt, FCC und KeyBanc (11.11.)",
-          "url": "https://www.streetinsider.com/Investing/SpaceX+stock+rises+as+FCC+approves+nationwide+spectrum+deal/27327470.html"
-        },
-        {
-          "title": "@SpaceX: Booster 22 an der Startrampe (10.11.)",
-          "url": "https://x.com/SpaceX/status/2120220290219208884"
-        },
-        {
-          "title": "SpaceNews: SDA-Studie zu SpaceX-Lasern",
-          "url": "https://spacenews.com/spacex-to-study-options-to-bridge-commercial-and-military-satellite-networks/"
-        },
-        {
-          "title": "@jukan05: Anthropic-Aussagen vor Analysten (unbestätigt, 11.11.)",
-          "url": "https://x.com/jukan05/status/2120483370488750336"
-        },
-        {
-          "title": "Motley Fool: 34,5 % des SpaceX-Umsatzes an einem Kunden (5.11.)",
-          "url": "https://www.fool.com/investing/2026/11/05/345-of-spacexs-revenue-could-disappear-by-mid-2027/"
-        },
-        {
-          "title": "TipRanks: Was Anthropics 120,5-Mrd.-Deal für SpaceX bedeutet",
-          "url": "http://www.tipranks.com/news/spcx-stock-what-anthropics-120-5b-deal-means-for-spacex"
-        },
-        {
-          "title": "The Hacker News: Über 35.000 Grok-Apps offen im Netz (11.11.)",
-          "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html"
-        },
-        {
-          "title": "Yahoo Finance: Ives sieht politischen Abschlag",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-carries-25-political-064509750.html"
-        },
-        {
-          "title": "Stocktwits: SpaceX-Rack „Kessel“ laut SemiAnalysis (11.11.)",
-          "url": "https://stocktwits.com/news-articles/markets/equity/spacex-control-nvidia-hardware-semianalysis-custom-ai-rack-earth-orbit/cNGDWAvR9Jv"
-        },
-        {
-          "title": "SpaceX: Starship Flight 15",
-          "url": "https://www.spacex.com/launches/starship-flight-15"
-        },
-        {
-          "title": "SpaceX: USSF-627",
-          "url": "https://www.spacex.com/launches/ussf627"
-        },
-        {
-          "title": "TokenPost: Kündigungsregeln der SpaceXAI-Verträge im Anthropic-S-1",
-          "url": "https://www.tokenpost.com/news/technology/43514"
-        },
-        {
-          "title": "Investopedia: Nasdaq und S&P 500 steigen, Chipwerte und CoreWeave vorn (11.11.)",
-          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11112026-12248789"
-        },
-        {
-          "title": "Yahoo Finance ^IXIC",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "title": "Yahoo Finance ^GSPC",
-          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
-        },
-        {
-          "title": "Yahoo Finance ^DJI",
-          "url": "https://finance.yahoo.com/quote/%5EDJI/"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq, S&P 500 und Dow steigen, Chipwerte nach CoreWeave (11.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
-        },
-        {
-          "title": "Yahoo Finance NVDA",
+          "title": "Yahoo Finance NVDA (Nachbörse 19:59 ET)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance CRWV",
-          "url": "https://finance.yahoo.com/quote/CRWV/"
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
+          "url": "https://finance.yahoo.com/quote/NQ=F/"
         },
         {
-          "title": "TechCrunch: Kongress will Huang vorladen (11.11.)",
-          "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/"
+          "title": "@elonmusk: „That would be an honor“ (12.11., 02:22)",
+          "url": "https://x.com/elonmusk/status/2120688743111971293"
         },
         {
-          "title": "Bloomberg Law: Kongress will Huang vorladen (11.11.)",
-          "url": "https://news.bloomberglaw.com/artificial-intelligence/congress-set-to-subpoena-nvidias-jensen-huang-republican-says"
+          "title": "CNBC: Musk – Huang einzustellen wäre „eine Ehre“ (12.11.)",
+          "url": "https://www.cnbc.com/2026/11/12/elon-musk-jensen-huang-nvidia-tesla.html"
         },
         {
-          "title": "Yahoo Finance ^GDAXI",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+          "title": "Nikkei: 日経平均は続伸、AI半導体が押し上げ (12.11., 12:06 JST)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL1209F0S6A111C2000000/"
         },
         {
-          "title": "CNBC: Goolsbee nennt Inflationsbericht „borderline disturbing“ (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html"
+          "title": "Yahoo Finance: Nikkei 225 (^N225)",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
         },
         {
-          "title": "CNBC: Dollar steigt, Markt preist Zinserhöhung im Dezember ein (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
+          "title": "Yahoo Finance: Advantest (6857.T)",
+          "url": "https://finance.yahoo.com/quote/6857.T/"
+        },
+        {
+          "title": "TeslaNorth: Anthropic will SpaceX-Vertrag angeblich nicht über Mitte 2027 verlängern (11.11.)",
+          "url": "https://teslanorth.com/2026/11/11/anthropic-spacex-compute-contract-mid-2027/"
+        },
+        {
+          "title": "@SpaceX: USSF-627 – alle Systeme gut, Betankung beginnt (12.11., 04:47)",
+          "url": "https://x.com/SpaceX/status/2120725054933635188"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15 (Stand 12.11.)",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -20549,111 +20473,55 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Tesla schließt deutlich fester: Schluss 390,82 $ (+2,9 % zum Vortag 379,78 $, Tageshoch 395,43 $), nachbörslich um 22:02 bei 391,42 $; in Stuttgart zuletzt 352,20 € (+3,7 %, 21:40) (Yahoo). Tesla läuft mit dem Tech-Markt, gab aber wie der Nasdaq gegen Abend etwas ab (um 20:00 noch +3,9 %). Schluss an der Wall Street: Nasdaq +1,6 % auf 25.466 Punkte, S&P 500 +1,3 %, Dow +0,5 %; Nvidia +2,9 %. Gegen Abend gaben die Tech-Werte einen Teil der Gewinne ab (Nasdaq um 20:00 noch +2,2 %). CoreWeave schloss nach starken Zahlen +24,7 % und zog den KI-Sektor mit (Yahoo). Republikaner drohen Nvidia-Chef Huang mit einer Vorladung, falls er bis Mittwochabend nicht auf die Briefing-Bitte antwortet (TechCrunch, Bloomberg Law). Der Dax schloss bei 26.663 Punkten (+1,2 %, Yahoo). Gegenwind bleibt die Fed: Goolsbee nannte den Oktober-Inflationsbericht „grenzwertig beunruhigend“, und laut CME FedWatch rechnen Händler zu 87 % mit einer Zinserhöhung im Dezember (CNBC). Eigene Nachrichten: Musk verlängert die Cybertruck-Produktion bis Ende Sommer 2027 (statt Mitte 2027), um mehr vom Bestellrückstau abzuarbeiten; Tesla hatte zugleich die Preise um bis zu 10 % erhöht (X, Electrek). Finnland hat Teslas „Assisted Driving“ zugelassen, die EU-Entscheidung steht noch aus (Traficom, StreetInsider). In Texas hat Tesla laut Zulassungsdaten erstmals mehr Robotaxis registriert als Waymo (1.302 gegen 1.297; EV Wire). Morgan Stanley hob das Kursziel von 400 auf 410 $ (Halten), Jefferies stufte auf Halten ab (MarketBeat). Bremse: Teslas Einzelhandelsverkäufe in China fielen im Oktober um 66,1 % auf 8.817 Autos (CPCA laut TIKR).",
+      "why": "Nacht zu Do: Tesla nachbörslich 387,15 $ (−0,9 % zum Schluss 390,84 $, 19:59 ET) (Yahoo). Taktgeber der Nacht ist Nvidia: Laut Wall Street Journal bereitet der Verwaltungsrat die Ablösung von Chef Jensen Huang vor, nach einer zweiten Affären-Meldung der New York Times; Bloomberg berichtet von einer Nachfolgersuche. Nvidia fiel nachbörslich auf 158,78 $ (−8,6 % zum Schluss 173,73 $), Nasdaq-100-Futures um 05:50 bei 28.220 Punkten (−0,9 %) (Yahoo, CNBC, MarketWatch). Musk schrieb um 02:22 auf X, Huang einzustellen „wäre eine Ehre“ (CNBC). Tokio verdaut den Schreck: Der Nikkei lag mittags noch 0,8 % im Plus, um 04:47 Berlin bei 61.227 Punkten fast unverändert (Nikkei, Yahoo); Advantest drehte von +5 % am Mittwoch auf −3 %. Am Mittwoch +2,9 % mit dem Tech-Markt, gestützt von der längeren Cybertruck-Produktion bis Ende Sommer 2027. Neu für Europa: Mit Update 2026.39.100 heißt FSD jetzt „Tesla Assisted Driving“, der Tempo-Spielraum über dem Limit sinkt auf höchstens 10 %; die niederländische RDW hat freigegeben (Starnews).",
       "whySources": [
         {
-          "title": "Yahoo Finance TSLA (Schluss 11.11.)",
+          "title": "Yahoo Finance TSLA (Nachbörse 19:59 ET)",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "TipRanks: Tesla steigt, Musk verschiebt Cybertruck-Ende (11.11.)",
-          "url": "https://www.tipranks.com/news/tesla-stock-tsla-rises-as-musk-pushes-forward-cybertruck-shutdown"
+          "title": "CNBC: Nvidia-Verwaltungsrat berät über Huangs Zukunft (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
         },
         {
-          "title": "Yahoo Finance TL0.SG",
-          "url": "https://finance.yahoo.com/quote/TL0.SG/"
+          "title": "MarketWatch/Morningstar: Nvidia fällt nachbörslich, Board will Huang ablösen (11.11.)",
+          "url": "https://www.morningstar.com/news/marketwatch/20261111357/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang"
         },
         {
-          "title": "@elonmusk: Cybertruck-Produktion bis Ende Sommer 2027 (11.11., 18:11)",
-          "url": "https://x.com/elonmusk/status/2120565056429814073"
-        },
-        {
-          "title": "Electrek: Tesla verlängert Cybertruck-Produktion (11.11.)",
-          "url": "https://electrek.co/2026/11/11/tesla-extends-cybertruck-production-summer-2027-fan-backlash/"
-        },
-        {
-          "title": "TeslaNorth: Cybertruck-Produktion bis Sommer 2027 (11.11.)",
-          "url": "https://teslanorth.com/2026/11/11/cybertruck-production-extended-summer-2027/"
-        },
-        {
-          "title": "@elonmusk: FSD in Finnland zugelassen (11.11., 18:11)",
-          "url": "https://x.com/elonmusk/status/2120565179276832797"
-        },
-        {
-          "title": "Investopedia: Nasdaq und S&P 500 steigen, Chipwerte und CoreWeave vorn (11.11.)",
-          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11112026-12248789"
-        },
-        {
-          "title": "StreetInsider: Tesla steigt nach Zulassung in Finnland (11.11.)",
-          "url": "https://www.streetinsider.com/Investing/Tesla+shares+rise+on+Finlands+assisted+driving+approval/27327467.html"
-        },
-        {
-          "title": "Traficom: Tesla Assisted Driving in Finnland erlaubt (11.11.)",
-          "url": "https://www.traficom.fi/en/news/teslas-driver-assistance-system-now-permitted-finnish-roads"
-        },
-        {
-          "title": "Reuters/Investing.com: Finnland lässt Tesla-System zu (11.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/finland-approves-teslas-assisted-driving-system-5017838"
-        },
-        {
-          "title": "EV Wire: Tesla überholt Waymo bei Robotaxi-Zulassungen in Texas",
-          "url": "https://evwire.com/p/tesla-overtakes-waymo-texas-robotaxi-registrations"
-        },
-        {
-          "title": "GMT Eight: Morgan Stanley hebt Kursziel auf 410 $",
-          "url": "https://gmteight.com/flash/detail/1569821"
-        },
-        {
-          "title": "MarketBeat: Jefferies stuft Tesla auf Halten ab (11.11.)",
-          "url": "https://www.marketbeat.com/instant-alerts/analyst-tesla-nasdaq-tsla-rating-lowered-to-hold-at-jefferies-financial-group-2026-11-11/"
-        },
-        {
-          "title": "TIKR: Tesla-Verkäufe in China auf Vierjahrestief",
-          "url": "https://www.tikr.com/blog/musk-calls-model-y-the-best-selling-car-on-earth-inside-china-tesla-sales-hit-a-4-year-low"
-        },
-        {
-          "title": "Yahoo Finance ^IXIC",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "title": "Yahoo Finance ^GSPC",
-          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
-        },
-        {
-          "title": "Yahoo Finance ^DJI",
-          "url": "https://finance.yahoo.com/quote/%5EDJI/"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq, S&P 500 und Dow steigen, Chipwerte nach CoreWeave (11.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
-        },
-        {
-          "title": "Yahoo Finance NVDA",
+          "title": "Yahoo Finance NVDA (Nachbörse 19:59 ET)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance CRWV",
-          "url": "https://finance.yahoo.com/quote/CRWV/"
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
+          "url": "https://finance.yahoo.com/quote/NQ=F/"
         },
         {
-          "title": "TechCrunch: Kongress will Huang vorladen (11.11.)",
-          "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/"
+          "title": "@elonmusk: „That would be an honor“ (12.11., 02:22)",
+          "url": "https://x.com/elonmusk/status/2120688743111971293"
         },
         {
-          "title": "Bloomberg Law: Kongress will Huang vorladen (11.11.)",
-          "url": "https://news.bloomberglaw.com/artificial-intelligence/congress-set-to-subpoena-nvidias-jensen-huang-republican-says"
+          "title": "CNBC: Musk – Huang einzustellen wäre „eine Ehre“ (12.11.)",
+          "url": "https://www.cnbc.com/2026/11/12/elon-musk-jensen-huang-nvidia-tesla.html"
         },
         {
-          "title": "Yahoo Finance ^GDAXI",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+          "title": "Nikkei: 日経平均は続伸、AI半導体が押し上げ (12.11., 12:06 JST)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL1209F0S6A111C2000000/"
         },
         {
-          "title": "CNBC: Goolsbee nennt Inflationsbericht „borderline disturbing“ (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html"
+          "title": "Yahoo Finance: Nikkei 225 (^N225)",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
         },
         {
-          "title": "CNBC: Dollar steigt, Markt preist Zinserhöhung im Dezember ein (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
+          "title": "Yahoo Finance: Advantest (6857.T)",
+          "url": "https://finance.yahoo.com/quote/6857.T/"
+        },
+        {
+          "title": "Starnews: Tesla benennt FSD in Europa in „Tesla Assisted Driving“ um (12.11.)",
+          "url": "https://www.starnewskorea.com/en/business-life/2026/11/12/2026111209071098129"
+        },
+        {
+          "title": "Electrek: Cybertruck-Produktion bis Sommer 2027 (11.11.)",
+          "url": "https://electrek.co/2026/11/11/tesla-extends-cybertruck-production-summer-2027-fan-backlash/"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -32285,115 +32153,55 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Rocket Lab schließt klar im Plus: Schluss 66,15 $ (+5,5 % zum Vortag 62,71 $, Hoch 68,26 $), nachbörslich um 22:02 bei 66,20 $; in Stuttgart zuletzt 59,30 € (+6,1 %, 21:31) (Yahoo). Laut TipRanks summiert sich das Plus seit vier Tagen auf rund 44 %. Eine eigene neue Meldung gibt es heute nicht; Käufer arbeiten weiter die Q3-Zahlen ab (Rekordumsatz 267,8 Mio. $, +73 %, Auftragsbestand 3,57 Mrd. $, neue Neutron-Aufträge über 515 Mio. $, Neutron-Grundpreis 70 statt 55 Mio. $) (24/7 Wall St., TipRanks). Dazu kommt eine breite Erholung bei Raumfahrtwerten: Firefly +10,7 %, AST SpaceMobile +8,0 % (Yahoo, 20:00; zum Schluss Firefly +11,8 %, AST +7,0 %), während SpaceX nicht mitläuft. Analysten: Morgan Stanley bleibt bei „Übergewichten“ mit Kursziel 103 $ und hebt den erwarteten Neutron-Preis für 2030 auf 66 Mio. $ (TipRanks); Barclays senkt das Ziel von 85 auf 82 $, bleibt aber bei „Übergewichten“ (Gelonghui via Futu); Needham senkt von 120 auf 100 $ (Kaufen). Risiko: Neutron-Erstflug erst 2027, der Q3-Cashflow profitierte von einer einmaligen 70-Mio.-$-Zahlung, und die Iridium-Übernahme erhöht die Aktienzahl (TipRanks, 24/7 Wall St.). Schluss an der Wall Street: Nasdaq +1,6 % auf 25.466 Punkte, S&P 500 +1,3 %, Dow +0,5 %; Nvidia +2,9 %. Gegen Abend gaben die Tech-Werte einen Teil der Gewinne ab (Nasdaq um 20:00 noch +2,2 %). CoreWeave schloss nach starken Zahlen +24,7 % und zog den KI-Sektor mit (Yahoo). Republikaner drohen Nvidia-Chef Huang mit einer Vorladung, falls er bis Mittwochabend nicht auf die Briefing-Bitte antwortet (TechCrunch, Bloomberg Law). Der Dax schloss bei 26.663 Punkten (+1,2 %, Yahoo). Gegenwind bleibt die Fed: Goolsbee nannte den Oktober-Inflationsbericht „grenzwertig beunruhigend“, und laut CME FedWatch rechnen Händler zu 87 % mit einer Zinserhöhung im Dezember (CNBC). Electron-Start 100 am Sa 14.11. ab 06:30.",
+      "why": "Nacht zu Do: Rocket Lab nachbörslich 64,43 $ (−2,6 % zum Schluss 66,15 $, 19:59 ET) (Yahoo) – ohne eigene Meldung, im Sog fallender Tech-Futures. Taktgeber der Nacht ist Nvidia: Laut Wall Street Journal bereitet der Verwaltungsrat die Ablösung von Chef Jensen Huang vor, nach einer zweiten Affären-Meldung der New York Times; Bloomberg berichtet von einer Nachfolgersuche. Nvidia fiel nachbörslich auf 158,78 $ (−8,6 % zum Schluss 173,73 $), Nasdaq-100-Futures um 05:50 bei 28.220 Punkten (−0,9 %) (Yahoo, CNBC, MarketWatch). Musk schrieb um 02:22 auf X, Huang einzustellen „wäre eine Ehre“ (CNBC). Tokio verdaut den Schreck: Der Nikkei lag mittags noch 0,8 % im Plus, um 04:47 Berlin bei 61.227 Punkten fast unverändert (Nikkei, Yahoo); Advantest drehte von +5 % am Mittwoch auf −3 %. Am Mittwoch +5,5 %, getragen von den Q3-Zahlen und einer Erholung der Raumfahrtwerte. Rocket Lab feiert auf X das Team vor dem 100. Electron-Start (Sa 14.11. ab 06:30); die Münchner Tochter Mynaric meldet die erste Laser-Datenübertragung in beide Richtungen.",
       "whySources": [
         {
-          "title": "Yahoo Finance RKLB (Schluss 11.11.)",
+          "title": "Yahoo Finance RKLB (Nachbörse 19:59 ET)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "Yahoo Finance 6RJ0.SG",
-          "url": "https://finance.yahoo.com/quote/6RJ0.SG/"
+          "title": "CNBC: Nvidia-Verwaltungsrat berät über Huangs Zukunft (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
         },
         {
-          "title": "TipRanks: Morgan Stanley zu Rocket Lab (11.11.)",
-          "url": "https://www.tipranks.com/news/article/get-ready-for-whats-next-says-morgan-stanley-about-rocket-lab-stock"
+          "title": "MarketWatch/Morningstar: Nvidia fällt nachbörslich, Board will Huang ablösen (11.11.)",
+          "url": "https://www.morningstar.com/news/marketwatch/20261111357/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang"
         },
         {
-          "title": "Futu/Gelonghui: Barclays senkt Rocket-Lab-Ziel auf 82 $ (11.11.)",
-          "url": "https://news.futunn.com/post/1004136994/barclays-lowers-rocket-lab-price-target-to-82"
-        },
-        {
-          "title": "24/7 Wall St.: Rocket Lab und AST SpaceMobile +8 % (11.11.)",
-          "url": "https://247wallst.com/investing/2026/11/11/rocket-lab-and-ast-spacemobile-rally-8-as-space-stocks-rebound-spacex-holds-steady/"
-        },
-        {
-          "title": "Yahoo Finance FLY",
-          "url": "https://finance.yahoo.com/quote/FLY/"
-        },
-        {
-          "title": "Yahoo Finance ASTS",
-          "url": "https://finance.yahoo.com/quote/ASTS/"
-        },
-        {
-          "title": "Rocket Lab: ESCAPADE-Sonden auf Mars-Kurs (10.11.)",
-          "url": "https://rocketlabcorp.com/updates/twin-satellites-built-by-rocket-lab-for-nasas-escapade-mission-complete-successful-trans-mars-injection-burns-setting-course-for-the-red-planet/"
-        },
-        {
-          "title": "TradingView: Needham senkt Kursziel auf 100 $ (11.11.)",
-          "url": "https://www.tradingview.com/news/tradingview:055611fd060f0:0-needham-maintains-rocket-lab-at-buy-lowers-price-target-to-100-from-120/"
-        },
-        {
-          "title": "MarketBeat: Needham senkt Kursziel (11.11.)",
-          "url": "https://www.marketbeat.com/instant-alerts/analyst-rocket-lab-nasdaq-rklb-stock-price-target-cut-by-needham-company-llc-2026-11-11/"
-        },
-        {
-          "title": "Defense World: Piper Sandler senkt Kursziel auf 58 $ (11.11.)",
-          "url": "https://www.defenseworld.net/2026/11/11/rocket-lab-nasdaqrklb-given-new-58-00-price-target-at-piper-sandler.html"
-        },
-        {
-          "title": "TIKR: Stifel bleibt bei 132 $",
-          "url": "https://www.tikr.com/blog/stifels-132-target-says-rocket-labs-58-slide-went-too-far"
-        },
-        {
-          "title": "Rocket Lab: Zahlen Q3 2026",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
-        },
-        {
-          "title": "US-Kriegsministerium: OSC-Kreditzusage über 150 Mio. $ an Rocket Lab (9.11.)",
-          "url": "https://www.war.gov/News/Releases/Release/Article/4644766/the-department-of-wars-office-of-strategic-capital-signs-150-million-conditiona/"
-        },
-        {
-          "title": "SpaceNews: Pentagon-Finanzierung für Neutron",
-          "url": "https://spacenews.com/rocket-lab-gets-pentagon-financing-to-boost-neutron-production/"
-        },
-        {
-          "title": "Investopedia: Nasdaq und S&P 500 steigen, Chipwerte und CoreWeave vorn (11.11.)",
-          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11112026-12248789"
-        },
-        {
-          "title": "Yahoo Finance ^IXIC",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "title": "Yahoo Finance ^GSPC",
-          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
-        },
-        {
-          "title": "Yahoo Finance ^DJI",
-          "url": "https://finance.yahoo.com/quote/%5EDJI/"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq, S&P 500 und Dow steigen, Chipwerte nach CoreWeave (11.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
-        },
-        {
-          "title": "Yahoo Finance NVDA",
+          "title": "Yahoo Finance NVDA (Nachbörse 19:59 ET)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance CRWV",
-          "url": "https://finance.yahoo.com/quote/CRWV/"
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
+          "url": "https://finance.yahoo.com/quote/NQ=F/"
         },
         {
-          "title": "TechCrunch: Kongress will Huang vorladen (11.11.)",
-          "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/"
+          "title": "@elonmusk: „That would be an honor“ (12.11., 02:22)",
+          "url": "https://x.com/elonmusk/status/2120688743111971293"
         },
         {
-          "title": "Bloomberg Law: Kongress will Huang vorladen (11.11.)",
-          "url": "https://news.bloomberglaw.com/artificial-intelligence/congress-set-to-subpoena-nvidias-jensen-huang-republican-says"
+          "title": "CNBC: Musk – Huang einzustellen wäre „eine Ehre“ (12.11.)",
+          "url": "https://www.cnbc.com/2026/11/12/elon-musk-jensen-huang-nvidia-tesla.html"
         },
         {
-          "title": "Yahoo Finance ^GDAXI",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+          "title": "Nikkei: 日経平均は続伸、AI半導体が押し上げ (12.11., 12:06 JST)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL1209F0S6A111C2000000/"
         },
         {
-          "title": "CNBC: Goolsbee nennt Inflationsbericht „borderline disturbing“ (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html"
+          "title": "Yahoo Finance: Nikkei 225 (^N225)",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
         },
         {
-          "title": "CNBC: Dollar steigt, Markt preist Zinserhöhung im Dezember ein (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
+          "title": "Yahoo Finance: Advantest (6857.T)",
+          "url": "https://finance.yahoo.com/quote/6857.T/"
+        },
+        {
+          "title": "@RocketLab: „100 launches, one incredible team“ (11.11., 22:54)",
+          "url": "https://x.com/RocketLab/status/2120636374235889734"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -45383,87 +45191,51 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Marvell gehört zu den stärksten Chipwerten des Tages: Schluss 168,80 $ (+9,3 % zum Vortag 154,39 $, Hoch 174,53 $) (Yahoo); um 20:00 lag das Plus noch bei 11,7 %. Treiber ist die KI-Chip-Erholung nach den starken CoreWeave-Zahlen samt höherer Jahresprognose; Marvell schneidet besser ab als der Sektor, liegt aber laut Benzinga weiter unter seinen 20-, 50- und 200-Tage-Linien (Widerstand um 171 $, Unterstützung um 163 $). Schluss an der Wall Street: Nasdaq +1,6 % auf 25.466 Punkte, S&P 500 +1,3 %, Dow +0,5 %; Nvidia +2,9 %. Gegen Abend gaben die Tech-Werte einen Teil der Gewinne ab (Nasdaq um 20:00 noch +2,2 %). CoreWeave schloss nach starken Zahlen +24,7 % und zog den KI-Sektor mit (Yahoo). Republikaner drohen Nvidia-Chef Huang mit einer Vorladung, falls er bis Mittwochabend nicht auf die Briefing-Bitte antwortet (TechCrunch, Bloomberg Law). Der Dax schloss bei 26.663 Punkten (+1,2 %, Yahoo). Gegenwind bleibt die Fed: Goolsbee nannte den Oktober-Inflationsbericht „grenzwertig beunruhigend“, und laut CME FedWatch rechnen Händler zu 87 % mit einer Zinserhöhung im Dezember (CNBC). Bremse bleibt der Lumentum-Deal, dem Arbitrageure laut Bloomberg nur etwa 50:50 Chancen geben. Nächste Signale: Cisco (Mi +2,7 %) und Applied Materials (Mi +6,1 %) legen Do nach US-Schluss Zahlen vor, Nvidia am 17.11., eigene Zahlen am 1.12. (Benzinga).",
+      "why": "Nacht zu Do: Marvell nachbörslich 164,00 $ (−2,8 % zum Schluss 168,80 $, 19:59 ET) (Yahoo). Taktgeber der Nacht ist Nvidia: Laut Wall Street Journal bereitet der Verwaltungsrat die Ablösung von Chef Jensen Huang vor, nach einer zweiten Affären-Meldung der New York Times; Bloomberg berichtet von einer Nachfolgersuche. Nvidia fiel nachbörslich auf 158,78 $ (−8,6 % zum Schluss 173,73 $), Nasdaq-100-Futures um 05:50 bei 28.220 Punkten (−0,9 %) (Yahoo, CNBC, MarketWatch). Musk schrieb um 02:22 auf X, Huang einzustellen „wäre eine Ehre“ (CNBC). Tokio verdaut den Schreck: Der Nikkei lag mittags noch 0,8 % im Plus, um 04:47 Berlin bei 61.227 Punkten fast unverändert (Nikkei, Yahoo); Advantest drehte von +5 % am Mittwoch auf −3 %. Am Mittwoch +9,3 % in der KI-Chip-Erholung nach CoreWeave. Nächster Prüfstein: Cisco und Applied Materials legen Do nach US-Schluss Zahlen vor (Konferenz 22:30), eigene Zahlen am 1.12.",
       "whySources": [
         {
-          "title": "Yahoo Finance MRVL (Schluss 11.11.)",
+          "title": "Yahoo Finance MRVL (Nachbörse 19:59 ET)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "Yahoo Finance 9MW.SG",
-          "url": "https://finance.yahoo.com/quote/9MW.SG/"
+          "title": "CNBC: Nvidia-Verwaltungsrat berät über Huangs Zukunft (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
         },
         {
-          "title": "Benzinga: Was ist los mit Marvell? (11.11.)",
-          "url": "https://www.benzinga.com/markets/tech/26/11/63147679/whats-going-on-with-marvell-technology-stock-wednesday-6"
+          "title": "MarketWatch/Morningstar: Nvidia fällt nachbörslich, Board will Huang ablösen (11.11.)",
+          "url": "https://www.morningstar.com/news/marketwatch/20261111357/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang"
         },
         {
-          "title": "Investopedia: Nasdaq und S&P 500 steigen, Chipwerte und CoreWeave vorn (11.11.)",
-          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11112026-12248789"
-        },
-        {
-          "title": "KuCoin: Chipwerte vorbörslich fester, Marvell +7,6 %",
-          "url": "https://www.kucoin.com/news/flash/pre-market-chip-stocks-rally-marvell-tech-up-7-6"
-        },
-        {
-          "title": "Benzinga/TradingView: Lumentum-Deal 50:50 (Bloomberg)",
-          "url": "https://www.tradingview.com/news/benzinga:04e8ee0b0094b:0-marvell-s-115-billion-lumentum-deal-faces-50-50-odds-report/"
-        },
-        {
-          "title": "Yahoo Finance ^IXIC",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "title": "Yahoo Finance ^GSPC",
-          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
-        },
-        {
-          "title": "Yahoo Finance ^DJI",
-          "url": "https://finance.yahoo.com/quote/%5EDJI/"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq, S&P 500 und Dow steigen, Chipwerte nach CoreWeave (11.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
-        },
-        {
-          "title": "Yahoo Finance NVDA",
+          "title": "Yahoo Finance NVDA (Nachbörse 19:59 ET)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance CRWV",
-          "url": "https://finance.yahoo.com/quote/CRWV/"
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
+          "url": "https://finance.yahoo.com/quote/NQ=F/"
         },
         {
-          "title": "TechCrunch: Kongress will Huang vorladen (11.11.)",
-          "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/"
+          "title": "@elonmusk: „That would be an honor“ (12.11., 02:22)",
+          "url": "https://x.com/elonmusk/status/2120688743111971293"
         },
         {
-          "title": "Bloomberg Law: Kongress will Huang vorladen (11.11.)",
-          "url": "https://news.bloomberglaw.com/artificial-intelligence/congress-set-to-subpoena-nvidias-jensen-huang-republican-says"
+          "title": "CNBC: Musk – Huang einzustellen wäre „eine Ehre“ (12.11.)",
+          "url": "https://www.cnbc.com/2026/11/12/elon-musk-jensen-huang-nvidia-tesla.html"
         },
         {
-          "title": "Yahoo Finance ^GDAXI",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+          "title": "Nikkei: 日経平均は続伸、AI半導体が押し上げ (12.11., 12:06 JST)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL1209F0S6A111C2000000/"
         },
         {
-          "title": "CNBC: Goolsbee nennt Inflationsbericht „borderline disturbing“ (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html"
+          "title": "Yahoo Finance: Nikkei 225 (^N225)",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
         },
         {
-          "title": "CNBC: Dollar steigt, Markt preist Zinserhöhung im Dezember ein (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
+          "title": "Yahoo Finance: Advantest (6857.T)",
+          "url": "https://finance.yahoo.com/quote/6857.T/"
         },
         {
-          "title": "Cisco: Termin Q1-Zahlen 12.11.",
-          "url": "https://investor.cisco.com/news/news-details/2026/Cisco-Schedules-Conference-Call-for-Q1-Fiscal-Year-2027-Financial-Results/default.aspx"
-        },
-        {
-          "title": "Yahoo Finance CSCO",
-          "url": "https://finance.yahoo.com/quote/CSCO/"
-        },
-        {
-          "title": "Yahoo Finance AMAT",
-          "url": "https://finance.yahoo.com/quote/AMAT/"
+          "title": "Cisco IR: Q1-FY27-Zahlen am 12.11., 16:30 ET",
+          "url": "https://investor.cisco.com/events-and-presentations/event-details/2026/Cisco-Q1FY27-Earnings-Results/default.aspx"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",

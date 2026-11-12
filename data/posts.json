@@ -1,82 +1,248 @@
 {
   "example": false,
-  "asOf": "2026-11-11T22:05:00+01:00",
+  "asOf": "2026-11-12T05:10:00+01:00",
   "sentiment": {
     "SPCX": {
-      "score": 0.38,
-      "label": "zuversichtlich",
-      "summary": "Nachts: Musk spricht von bestellten Singulus-Anlagen für 100 GW Solarzellen pro Jahr (Singulus selbst: erste Linie über 60 Mio. €), FCC nimmt den 800-MHz-Kauf von Grain zur Prüfung an. Nachbörslich 144,10 $. Flight 15 (Fr 13.11.) weiter ohne FAA-Lizenz.",
+      "score": 0.1,
+      "label": "verhalten",
+      "summary": "Nachts: Nvidia-Chefstreit drückt die KI-Werte, SPCX nachbörslich 138,10 $ (−1,2 %). Musk würde Huang „gern“ einstellen und will, dass Nvidias Board die Untersuchung abwartet. USSF-627 startklar (05:36), Flight 15 weiter ohne FAA-Lizenz, Anthropic-Gerücht unbestätigt.",
       "sources": [
         {
-          "title": "@elonmusk: 100 GW/Jahr HJT-Anlagen von Singulus (11.11., 00:47)",
-          "url": "https://x.com/elonmusk/status/2120302471210033426"
+          "title": "@elonmusk: „That would be an honor“ (12.11., 02:22)",
+          "url": "https://x.com/elonmusk/status/2120688743111971293"
         },
         {
-          "title": "Singulus: Liefervertrag mit SpaceX für HJT-Anlagen (10.11.)",
-          "url": "https://www.singulus.com/2026/11/10/singulus-spacex-supply-contract/"
+          "title": "@elonmusk: „Exactly“ an Gavin Baker (12.11., 02:51)",
+          "url": "https://x.com/elonmusk/status/2120695884145098967"
         },
         {
-          "title": "FCC Public Notice DA-26-1218: SpaceX-Grain-Anträge angenommen (10.11.)",
-          "url": "https://pubt.io/view/C06697C9A177EC6A53A2EE8AF9D15878F3F059D5"
+          "title": "Yahoo Finance SPCX (Nachbörse 19:59 ET)",
+          "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "FAA: SpaceX Starship Super Heavy Project (Stand 11.11.)",
-          "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
+          "title": "@SpaceX: USSF-627 – alle Systeme gut, Betankung beginnt (12.11., 04:47)",
+          "url": "https://x.com/SpaceX/status/2120725054933635188"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15 (Stand 12.11.)",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
         }
       ]
     },
     "TSLA": {
-      "score": 0.15,
-      "label": "leicht zuversichtlich",
-      "summary": "Nach +5,5 % am Montag ruhige Nacht: @robotaxi wirbt bei der CoRL in Austin, Musk teilt Jay Lenos FSD-Test und Moravys „meistverkaufte Luxusmarke“. Di früh: Nasdaq-Futures +0,2 %, CPI 14:30 entscheidet über den Ton.",
+      "score": 0.05,
+      "label": "verhalten",
+      "summary": "Nach +2,9 % am Mittwoch nachbörslich 387,15 $ (−0,9 %), weil Nvidia nach dem WSJ-Bericht über Huangs mögliche Ablösung um 8,6 % fiel. Musks „wäre eine Ehre“ zu Huang ist Gesprächsthema. In Europa heißt FSD jetzt „Tesla Assisted Driving“, Tempo-Spielraum max. 10 %.",
       "sources": [
         {
-          "title": "@robotaxi: Cybercab is peak me time",
-          "url": "https://x.com/robotaxi/status/2119942065572458737"
+          "title": "@elonmusk: „That would be an honor“ (12.11., 02:22)",
+          "url": "https://x.com/elonmusk/status/2120688743111971293"
         },
         {
-          "title": "@elonmusk: Jay Leno FSD",
-          "url": "https://x.com/elonmusk/status/2119989055392002456"
+          "title": "Yahoo Finance TSLA (Nachbörse 19:59 ET)",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "@elonmusk: Lars Moravy",
-          "url": "https://x.com/elonmusk/status/2119912356377694591"
+          "title": "Starnews: Tesla benennt FSD in Europa in „Tesla Assisted Driving“ um (12.11.)",
+          "url": "https://www.starnewskorea.com/en/business-life/2026/11/12/2026111209071098129"
         },
         {
-          "title": "Investing.com/Reuters: US-Futures stabil, CPI im Blick (9.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763"
+          "title": "CNBC: Nvidia-Verwaltungsrat berät über Huangs Zukunft (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
         }
       ]
     },
     "RKLB": {
       "score": 0.1,
       "label": "gemischt",
-      "summary": "Nach +6,5 % am Dienstag nachbörslich leicht schwächer (61,84 $). Rocket Lab feiert die ESCAPADE-Sonden auf Marskurs – laut Firma eine Premiere für das doppelte Schwungholen an der Erde – und zeigt die goldene Electron für Start 100 (Sa 14.11.). Konkurrent Firefly verschiebt den nächsten Alpha-Start auf Q1 2027.",
+      "summary": "Nach +5,5 % am Mittwoch nachbörslich 64,43 $ (−2,6 %) im Sog der Tech-Futures. Rocket Lab feiert vor Electron-Start 100 (Sa 14.11.) das Team, Tochter Mynaric meldet erste Laser-Datenübertragung in beide Richtungen.",
       "sources": [
         {
-          "title": "@RocketLab: Blue und Gold – zwei Swing-by-Manöver an der Erde (11.11., 05:03)",
-          "url": "https://x.com/RocketLab/status/2120366714374475968"
-        },
-        {
-          "title": "Rocket Lab: ESCAPADE-Satelliten auf Marskurs",
-          "url": "https://rocketlabcorp.com/updates/twin-satellites-built-by-rocket-lab-for-nasas-escapade-mission-complete-successful-trans-mars-injection-burns-setting-course-for-the-red-planet/"
-        },
-        {
-          "title": "@RocketLab: Electron im Gold-Look für Start 100 (10.11.)",
-          "url": "https://x.com/RocketLab/status/2120283697161417120"
-        },
-        {
-          "title": "MarketBeat/Yahoo: Was Firefly im Q3-Call sagte (Alpha Flight 8 in Q1 2027)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/firefly-aerospace-fly-said-q3-021441989.html"
-        },
-        {
-          "title": "Yahoo Finance: RKLB (Schluss 10.11. und Nachbörse)",
+          "title": "Yahoo Finance RKLB (Nachbörse 19:59 ET)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "title": "@RocketLab: „100 launches, one incredible team“ (11.11., 22:54)",
+          "url": "https://x.com/RocketLab/status/2120636374235889734"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
         }
       ]
     }
   },
   "posts": [
+    {
+      "id": "post-spacex-2120725054933635188",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-12T04:47:08+01:00",
+      "summaryDe": "SpaceX meldet für den Falcon-9-Start USSF-627 der Space Force: alle Systeme gut, Wetter günstig, die Betankung beginnt gleich. Start aus Kalifornien, Fenster ab 05:36 Uhr Berlin.",
+      "originalText": "All systems are looking good, and weather is favorable for liftoff. Propellant load is about to begin for Falcon 9’s launch of the USSF-627 mission from California",
+      "url": "https://x.com/SpaceX/status/2120725054933635188",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX: USSF-627 – alle Systeme gut, Betankung beginnt (12.11., 04:47)",
+          "url": "https://x.com/SpaceX/status/2120725054933635188"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120714539331445247",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-12T04:05:21+01:00",
+      "summaryDe": "Musk stimmt („True“) einem Beitrag zu, wonach Städte und Bundesstaaten, die Rechenzentren erlauben, bald Haushaltsüberschüsse hätten und die anderen nicht. Passt zu SpaceX' Rechenzentrumsplänen und den Streit um Genehmigungen nach den Midterms; keine neue Zahl.",
+      "originalText": "True (Antwort auf: „Soon every city / state that permits datacenter construction will have a fiscal surplus, and those that don't will not“)",
+      "url": "https://x.com/elonmusk/status/2120714539331445247",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „True“ (12.11., 04:05)",
+          "url": "https://x.com/elonmusk/status/2120714539331445247"
+        },
+        {
+          "title": "@anabology: Rechenzentren und Haushaltsüberschüsse (12.11., 00:19)",
+          "url": "https://x.com/anabology/status/2120657642343268401"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120695884145098967",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-12T02:51:14+01:00",
+      "summaryDe": "Musk stellt sich im Nvidia-Streit hinter Investor Gavin Baker: Dessen Satz, Nvidias Verwaltungsrat solle vor einer Ablösung Huangs das Ergebnis der Untersuchung abwarten oder danach die Aktionäre abstimmen lassen, kommentiert Musk mit „Exactly“ (02:51) und „💯“ (02:50).",
+      "originalText": "Exactly",
+      "url": "https://x.com/elonmusk/status/2120695884145098967",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „Exactly“ an Gavin Baker (12.11., 02:51)",
+          "url": "https://x.com/elonmusk/status/2120695884145098967"
+        },
+        {
+          "title": "@elonmusk: „💯“ an Gavin Baker (12.11., 02:50)",
+          "url": "https://x.com/elonmusk/status/2120695676124475585"
+        },
+        {
+          "title": "@GavinSBaker: Board soll Untersuchung abwarten (12.11., 02:33)",
+          "url": "https://x.com/GavinSBaker/status/2120691304107741389"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2120688743111971293",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-12T02:22:51+01:00",
+      "summaryDe": "Auf den Aufruf des Finanzblogs Zerohedge „Elon, stell Jensen ein“ antwortet Musk: „Das wäre eine Ehre.“ Kurz zuvor hatte das Wall Street Journal berichtet, Nvidias Verwaltungsrat bereite die Ablösung von Chef Jensen Huang vor; Nvidia fiel nachbörslich um gut 8 %. Ein Angebot oder eine Rolle bei SpaceX oder Tesla nennt Musk nicht (CNBC).",
+      "originalText": "That would be an honor",
+      "url": "https://x.com/elonmusk/status/2120688743111971293",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „That would be an honor“ (12.11., 02:22)",
+          "url": "https://x.com/elonmusk/status/2120688743111971293"
+        },
+        {
+          "title": "CNBC: Musk – Huang einzustellen wäre „eine Ehre“ (12.11.)",
+          "url": "https://www.cnbc.com/2026/11/12/elon-musk-jensen-huang-nvidia-tesla.html"
+        },
+        {
+          "title": "@zerohedge: „Elon please hire Jensen“ (12.11., 00:22)",
+          "url": "https://x.com/zerohedge/status/2120658425550135333"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2120636374235889734",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-11T22:54:45+01:00",
+      "summaryDe": "Rocket Lab dankt dem Team mit „100 Starts, ein unglaubliches Team“ – vor dem 100. Electron-Flug „The Mountain God Rises“ für iQPS, geplant ab Sa 14.11. aus Neuseeland.",
+      "originalText": "100 launches, one incredible team. We couldn't be prouder of the people who are making it possible with sheer determination, late nights, problem solving under pressure, and by showing up for each other for every single mission.",
+      "url": "https://x.com/RocketLab/status/2120636374235889734",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: „100 launches, one incredible team“ (11.11., 22:54)",
+          "url": "https://x.com/RocketLab/status/2120636374235889734"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2120625102102630410",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-11T22:09:58+01:00",
+      "summaryDe": "Rocket Lab gratuliert dem Münchner Team (Tochter Mynaric): Das Laserterminal CONDOR hat erstmals Daten in beide Richtungen zwischen Satellit und Bodenstation übertragen. Ein Baustein für Rocket Labs Satelliten-Geschäft.",
+      "originalText": "Congratulations to the Munich team!",
+      "url": "https://x.com/RocketLab/status/2120625102102630410",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: Congratulations to the Munich team (11.11., 22:09)",
+          "url": "https://x.com/RocketLab/status/2120625102102630410"
+        },
+        {
+          "title": "@Mynaric: CONDOR – bidirektionale Datenübertragung Weltraum–Boden (11.11.)",
+          "url": "https://x.com/Mynaric/status/2120493167912817085"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2120613240707420280",
       "account": "@elonmusk",

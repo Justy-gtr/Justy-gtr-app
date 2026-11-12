@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-12",
   "investors": [
     {
       "id": "inv-sawyermerritt",
@@ -277,11 +277,11 @@
         "swarmStance": "kauf",
         "againstCrowd": true,
         "vsSwarm": "skeptischer",
-        "karlTake": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Politik drückt, und jetzt prüft der Verwaltungsrat den Chef.",
+        "karlTake": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Der Verwaltungsrat bereitet laut WSJ Huangs Ablösung vor, ein Nachfolger fehlt.",
         "karlCounter": "Die Aufträge können die Politik überholen.",
         "priceEur": 180.56,
         "priceVenue": "Xetra",
-        "note": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Rechenzentren stehen politisch unter Druck."
+        "note": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Der Verwaltungsrat bereitet laut WSJ Huangs Ablösung vor, ein Nachfolger fehlt."
       },
       {
         "symbol": "AVGO",
