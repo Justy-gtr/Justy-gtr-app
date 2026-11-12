@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T16:38:00+01:00",
+  "updatedAt": "2026-11-12T16:46:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
+      "score": 30,
       "postsCount": 15,
-      "reason": "SpaceX: Gewinne schrumpfen, Kurs unter 142 $. Teslarati und viele Fans wünschen sich Huang bei SpaceX. Thema: Index-Umschichtung am Freitag und Flight 15.",
+      "reason": "SpaceX: Nach dem Hoch bei 147,60 $ bröckelt der Kurs, manche erwarten bis zum Abend ein Minus. Viele wünschen sich weiter Huang, andere warnen vor der Abhängigkeit von Musk.",
       "sources": [
+        {
+          "title": "Kurs bröckelt nach dem Hoch",
+          "url": "https://x.com/DRJBori63/status/2120904072660127991"
+        },
         {
           "title": "Teslarati: Huang zu Tesla/SpaceX",
           "url": "https://x.com/Teslarati/status/2120902181674959298"
         },
         {
-          "title": "Hoch 147,58 $, dann Rückgang",
-          "url": "https://x.com/gonta_southwood/status/2120899193988690273"
-        },
-        {
-          "title": "Index-Umschichtung am Freitag",
-          "url": "https://x.com/wallstbull37/status/2120901736864907419"
+          "title": "Abhängigkeit von einer Person",
+          "url": "https://x.com/BrownIshwar/status/2120903865646387279"
         }
       ],
-      "updatedAt": "2026-11-12T16:38:00+01:00"
+      "updatedAt": "2026-11-12T16:46:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,7 +43,7 @@
           "url": "https://x.com/squawksquare/status/2120900011005485161"
         }
       ],
-      "updatedAt": "2026-11-12T16:38:00+01:00"
+      "updatedAt": "2026-11-12T16:46:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
