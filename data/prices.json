@@ -5133,18 +5133,18 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Do 13:55: SpaceX auf Xetra 125,40 € (13:31), 3,0 % unter dem Xetra-Schluss vom Mittwoch (129,26 €); umgerechnet etwa 139,2 $ bei EUR/USD 1,110. Vorbörslich in New York 138,70 $, 0,8 % unter dem Nasdaq-Schluss von 139,75 $ (−2,3 % am Mittwoch) (Yahoo). Das Xetra-Minus holt vor allem den US-Verlust vom Mittwoch nach (Zweifel am Anthropic-Rechenvertrag, den Musk bestritt). Politischer Gegenwind: Die künftige demokratische Kongressmehrheit kündigt Untersuchungen zu SpaceX-Militäraufträgen an (Axios). Für SpaceX als Rechenzentrums-Anbieter zählt auch der Nebius-Ausblick. Markt um 13:45: Der Dax liegt bei 26.831 Punkten (+0,6 %), nachdem er am Vormittag erstmals über 27.000 stieg (Hoch 27.001,67; Siemens und Allianz mit Rekordzahlen) (Yahoo, finanzen.net). Tech bleibt schwach: Nvidia auf Xetra 144,38 € (−8,8 %), vorbörslich 160,70 $ (−7,5 %); der Verwaltungsrat hat zu Chef Huang weiter nichts verkündet (Washington Post). Nasdaq-100-Future −0,9 %, S&P-500-Future −0,4 % (Yahoo). Neu um 13:30: Nebius übertraf mit 980,8 Mio. $ Umsatz die Erwartungen, enttäuschte aber mit dem Ausblick und hebt die Investitionen 2026 auf 27 Mrd. $; die Aktie fällt vorbörslich um gut 10 % (CNBC, Business Wire). Nach US-Schluss folgen Cisco und Applied Materials. Flight 15 (Fr 23:45): Ship 42 steht an Pad 2, die FAA-Lizenz fehlt weiter (NSF, FAA).",
+      "why": "Stand Do 15:00: SpaceX auf Xetra 124,44 € (14:42), 3,7 % unter dem Xetra-Schluss vom Mittwoch (129,26 €); umgerechnet etwa 138,1 $ bei EUR/USD 1,110. Vorbörslich in New York 138,65 $, 0,8 % unter dem Nasdaq-Schluss von 139,75 $ (Yahoo). Das Xetra-Minus holt vor allem den US-Verlust vom Mittwoch nach; vorbörslich hält sich SpaceX deutlich besser als die Chipwerte. SpaceX ist als Rechenzentrums-Betreiber großer Nvidia-Kunde, der Chefwechsel bei Nvidia und die Nebius-Zahlen treffen die KI-Stimmung. Politischer Gegenwind: Die künftige demokratische Kongressmehrheit kündigt Untersuchungen zu SpaceX-Militäraufträgen an (Axios). Markt um 15:00: Nvidia hat gegen 14:50 den Rücktritt von Chef Jensen Huang verkündet, Finanzchefin Colette Kress führt vorläufig (NVIDIA). Nvidia vorbörslich 155,99 $ (−10,2 %), Xetra 143,54 € (−9,3 %); Nasdaq-100-Future rund −1,4 %, S&P-500-Future −0,6 % (Yahoo). Nebius fällt nach höheren Investitionsplänen und verschobener Kapazität vorbörslich um knapp 20 % (Reuters, Yahoo). Der Dax hält sich mit 26.729 Punkten (+0,3 %) nahe dem Rekord vom Vormittag (Yahoo). US-Börsen öffnen um 15:30, nach US-Schluss folgen Cisco und Applied Materials. Flight 15 (Fr 23:45) wartet weiter auf die FAA-Lizenz.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPX.DE (Xetra 12.11., 13:31)",
+          "title": "Yahoo Finance: SPX.DE (Xetra 12.11., 14:42)",
           "url": "https://finance.yahoo.com/quote/SPX.DE/"
         },
         {
-          "title": "Yahoo Finance: SPCX (Schluss 11.11. und Vorbörse 12.11., 13:54)",
+          "title": "Yahoo Finance: SPCX (Schluss 11.11. und Vorbörse 12.11., 15:00)",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Yahoo Finance: EURUSD=X (12.11., 13:53)",
+          "title": "Yahoo Finance: EURUSD=X (12.11., 14:58)",
           "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         },
         {
@@ -5152,47 +5152,43 @@
           "url": "https://www.axios.com/2026/11/12/spacex-scrutiny-looms-congress"
         },
         {
-          "title": "Yahoo Finance: ^GDAXI (12.11., 13:40)",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+          "title": "NVIDIA: NVIDIA Announces CEO Transition (12.11.)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
         },
         {
-          "title": "finanzen.net: DAX verbucht mittags Gewinne (12.11.)",
-          "url": "https://www.finanzen.net/nachricht/aktien/pluszeichen-in-frankfurt-dax-verbucht-mittags-gewinne-16059560"
-        },
-        {
-          "title": "Yahoo Finance: NVD.DE (Xetra 12.11., 13:40)",
-          "url": "https://finance.yahoo.com/quote/NVD.DE/"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Schluss 11.11. und Vorbörse 12.11., 13:54)",
+          "title": "Yahoo Finance: NVDA (Schluss 11.11. und Vorbörse 12.11., 15:00)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Washington Post: Nvidia-Verwaltungsrat berät über Huangs Zukunft (12.11.)",
-          "url": "https://www.washingtonpost.com/technology/2026/11/12/nvidia-board-weighs-jensen-huangs-future-after-affair-with-allege-chinese-spy/"
+          "title": "Yahoo Finance: NVD.DE (Xetra 12.11., 14:43)",
+          "url": "https://finance.yahoo.com/quote/NVD.DE/"
         },
         {
-          "title": "Yahoo Finance: NQ=F (12.11., 13:44)",
+          "title": "Yahoo Finance: NQ=F (12.11., 14:50)",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Yahoo Finance: ES=F (12.11., 13:45)",
+          "title": "Yahoo Finance: ES=F (12.11., 14:49)",
           "url": "https://finance.yahoo.com/quote/ES%3DF/"
         },
         {
-          "title": "CNBC: Nebius fällt um 10 % nach schwachem Ausblick und höheren Investitionen (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html"
+          "title": "Reuters/StreetInsider: Nebius senkt Umsatzziel wegen Kapazitätsverzögerungen (12.11.)",
+          "url": "https://www.streetinsider.com/Reuters/Nebius+beats+quarterly+revenue+estimates+on+strong+AI+demand/27330371.html"
         },
         {
-          "title": "Business Wire: Nebius – Zahlen Q3 2026 (12.11.)",
-          "url": "https://www.businesswire.com/news/home/20261112208769/en/Nebius-reports-third-quarter-2026-financial-results"
+          "title": "Yahoo Finance: NBIS (Vorbörse 12.11., 15:00)",
+          "url": "https://finance.yahoo.com/quote/NBIS/"
         },
         {
-          "title": "NASASpaceflight (Video): SpaceX rollt Ship 42 für Flight 15 zu Pad 2 (12.11.)",
-          "url": "https://themorning.science/watch/spacex-rolls-ship-42-for-flight-15-nTP0658r-Ak"
+          "title": "Yahoo Finance: ^GDAXI (12.11., 14:44)",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         },
         {
-          "title": "FAA: SpaceX Starship Super Heavy Project (zuletzt aktualisiert 10.11.)",
+          "title": "Reuters/Investing.com: Nasdaq-Futures fallen wegen Nvidia (12.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-fall-as-nvidia-turmoil-rattles-ai-stocks-5020761"
+        },
+        {
+          "title": "FAA: SpaceX Starship Super Heavy Project",
           "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
         }
       ],
@@ -17966,14 +17962,14 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Do 13:55: Tesla auf Xetra 350,90 € (13:22), 0,9 % unter dem Xetra-Schluss vom Mittwoch (353,95 €); vorbörslich in New York 387,44 $, 0,9 % unter dem Nasdaq-Schluss von 390,84 $ (Yahoo). Keine eigene Kursmeldung und keine neue SEC-Meldung: Tesla läuft mit dem schwachen Tech-Markt, hält sich aber besser als die Chipwerte. Robotaxi fährt seit Mittwoch rund um die Uhr in allen acht US-Städten, die Cybertruck-Fertigung läuft bis Ende Sommer 2027 (eletric-vehicles.com). Markt um 13:45: Der Dax liegt bei 26.831 Punkten (+0,6 %), nachdem er am Vormittag erstmals über 27.000 stieg (Hoch 27.001,67; Siemens und Allianz mit Rekordzahlen) (Yahoo, finanzen.net). Tech bleibt schwach: Nvidia auf Xetra 144,38 € (−8,8 %), vorbörslich 160,70 $ (−7,5 %); der Verwaltungsrat hat zu Chef Huang weiter nichts verkündet (Washington Post). Nasdaq-100-Future −0,9 %, S&P-500-Future −0,4 % (Yahoo). Neu um 13:30: Nebius übertraf mit 980,8 Mio. $ Umsatz die Erwartungen, enttäuschte aber mit dem Ausblick und hebt die Investitionen 2026 auf 27 Mrd. $; die Aktie fällt vorbörslich um gut 10 % (CNBC, Business Wire). Nach US-Schluss folgen Cisco und Applied Materials.",
+      "why": "Stand Do 15:00: Tesla auf Xetra 348,45 € (14:35), 1,6 % unter dem Xetra-Schluss vom Mittwoch (353,95 €); vorbörslich in New York 386,87 $, 1,0 % unter dem Nasdaq-Schluss von 390,84 $ (Yahoo). Keine eigene Kursmeldung und keine neue SEC-Meldung: Tesla läuft mit dem schwachen Tech-Markt, hält sich aber besser als die Chipwerte. Robotaxi fährt seit Mittwoch rund um die Uhr in allen acht US-Städten (eletric-vehicles.com). Markt um 15:00: Nvidia hat gegen 14:50 den Rücktritt von Chef Jensen Huang verkündet, Finanzchefin Colette Kress führt vorläufig (NVIDIA). Nvidia vorbörslich 155,99 $ (−10,2 %), Xetra 143,54 € (−9,3 %); Nasdaq-100-Future rund −1,4 %, S&P-500-Future −0,6 % (Yahoo). Nebius fällt nach höheren Investitionsplänen und verschobener Kapazität vorbörslich um knapp 20 % (Reuters, Yahoo). Der Dax hält sich mit 26.729 Punkten (+0,3 %) nahe dem Rekord vom Vormittag (Yahoo). US-Börsen öffnen um 15:30, nach US-Schluss folgen Cisco und Applied Materials.",
       "whySources": [
         {
-          "title": "Yahoo Finance: TL0.DE (Xetra 12.11., 13:22)",
+          "title": "Yahoo Finance: TL0.DE (Xetra 12.11., 14:35)",
           "url": "https://finance.yahoo.com/quote/TL0.DE/"
         },
         {
-          "title": "Yahoo Finance: TSLA (Schluss 11.11. und Vorbörse 12.11., 13:54)",
+          "title": "Yahoo Finance: TSLA (Schluss 11.11. und Vorbörse 12.11., 15:00)",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
@@ -17981,40 +17977,40 @@
           "url": "https://eletric-vehicles.com/tesla/tesla-opens-robotaxi-around-the-clock-in-all-eight-u-s-cities/"
         },
         {
-          "title": "Yahoo Finance: ^GDAXI (12.11., 13:40)",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+          "title": "NVIDIA: NVIDIA Announces CEO Transition (12.11.)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
         },
         {
-          "title": "finanzen.net: DAX verbucht mittags Gewinne (12.11.)",
-          "url": "https://www.finanzen.net/nachricht/aktien/pluszeichen-in-frankfurt-dax-verbucht-mittags-gewinne-16059560"
-        },
-        {
-          "title": "Yahoo Finance: NVD.DE (Xetra 12.11., 13:40)",
-          "url": "https://finance.yahoo.com/quote/NVD.DE/"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Schluss 11.11. und Vorbörse 12.11., 13:54)",
+          "title": "Yahoo Finance: NVDA (Schluss 11.11. und Vorbörse 12.11., 15:00)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Washington Post: Nvidia-Verwaltungsrat berät über Huangs Zukunft (12.11.)",
-          "url": "https://www.washingtonpost.com/technology/2026/11/12/nvidia-board-weighs-jensen-huangs-future-after-affair-with-allege-chinese-spy/"
+          "title": "Yahoo Finance: NVD.DE (Xetra 12.11., 14:43)",
+          "url": "https://finance.yahoo.com/quote/NVD.DE/"
         },
         {
-          "title": "Yahoo Finance: NQ=F (12.11., 13:44)",
+          "title": "Yahoo Finance: NQ=F (12.11., 14:50)",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Yahoo Finance: ES=F (12.11., 13:45)",
+          "title": "Yahoo Finance: ES=F (12.11., 14:49)",
           "url": "https://finance.yahoo.com/quote/ES%3DF/"
         },
         {
-          "title": "CNBC: Nebius fällt um 10 % nach schwachem Ausblick und höheren Investitionen (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html"
+          "title": "Reuters/StreetInsider: Nebius senkt Umsatzziel wegen Kapazitätsverzögerungen (12.11.)",
+          "url": "https://www.streetinsider.com/Reuters/Nebius+beats+quarterly+revenue+estimates+on+strong+AI+demand/27330371.html"
         },
         {
-          "title": "Business Wire: Nebius – Zahlen Q3 2026 (12.11.)",
-          "url": "https://www.businesswire.com/news/home/20261112208769/en/Nebius-reports-third-quarter-2026-financial-results"
+          "title": "Yahoo Finance: NBIS (Vorbörse 12.11., 15:00)",
+          "url": "https://finance.yahoo.com/quote/NBIS/"
+        },
+        {
+          "title": "Yahoo Finance: ^GDAXI (12.11., 14:44)",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+        },
+        {
+          "title": "Reuters/Investing.com: Nasdaq-Futures fallen wegen Nvidia (12.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-fall-as-nvidia-turmoil-rattles-ai-stocks-5020761"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -29499,18 +29495,14 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Do 13:55: Rocket Lab in Stuttgart 58,00 € (13:32), 2,5 % unter dem Stuttgarter Vortag (59,50 €); in Frankfurt zuletzt 57,50 € (09:55, −5,0 %). Vorbörslich in New York 64,40 $, 2,6 % unter dem Nasdaq-Schluss von 66,15 $ (+5,5 % am Mittwoch) (Yahoo). Keine eigene Meldung und keine neue SEC-Meldung: Gewinnmitnahmen nach rund 25 % seit Freitag, dazu schwache Tech-Futures. Berenberg hob das Ziel über Nacht von 83 auf 85 $ (Investing.com). Markt um 13:45: Der Dax liegt bei 26.831 Punkten (+0,6 %), nachdem er am Vormittag erstmals über 27.000 stieg (Hoch 27.001,67; Siemens und Allianz mit Rekordzahlen) (Yahoo, finanzen.net). Tech bleibt schwach: Nvidia auf Xetra 144,38 € (−8,8 %), vorbörslich 160,70 $ (−7,5 %); der Verwaltungsrat hat zu Chef Huang weiter nichts verkündet (Washington Post). Nasdaq-100-Future −0,9 %, S&P-500-Future −0,4 % (Yahoo). Neu um 13:30: Nebius übertraf mit 980,8 Mio. $ Umsatz die Erwartungen, enttäuschte aber mit dem Ausblick und hebt die Investitionen 2026 auf 27 Mrd. $; die Aktie fällt vorbörslich um gut 10 % (CNBC, Business Wire). Nach US-Schluss folgen Cisco und Applied Materials. Der 100. Electron-Start ist für Sa 14.11. ab 06:30 geplant.",
+      "why": "Stand Do 15:00: Rocket Lab in Stuttgart 57,80 € (14:32), 2,9 % unter dem Stuttgarter Vortag (59,50 €). Vorbörslich in New York 64,06 $, 3,2 % unter dem Nasdaq-Schluss von 66,15 $ (+5,5 % am Mittwoch) (Yahoo). Keine eigene Meldung und keine neue SEC-Meldung: Gewinnmitnahmen nach rund 25 % seit Freitag, dazu der Tech-Abverkauf nach Huangs Rücktritt. Berenberg hob das Ziel über Nacht von 83 auf 85 $ (Investing.com). Markt um 15:00: Nvidia hat gegen 14:50 den Rücktritt von Chef Jensen Huang verkündet, Finanzchefin Colette Kress führt vorläufig (NVIDIA). Nvidia vorbörslich 155,99 $ (−10,2 %), Xetra 143,54 € (−9,3 %); Nasdaq-100-Future rund −1,4 %, S&P-500-Future −0,6 % (Yahoo). Nebius fällt nach höheren Investitionsplänen und verschobener Kapazität vorbörslich um knapp 20 % (Reuters, Yahoo). Der Dax hält sich mit 26.729 Punkten (+0,3 %) nahe dem Rekord vom Vormittag (Yahoo). US-Börsen öffnen um 15:30, nach US-Schluss folgen Cisco und Applied Materials. Der 100. Electron-Start ist für Sa 14.11. ab 06:30 geplant.",
       "whySources": [
         {
-          "title": "Yahoo Finance: 6RJ0.SG (Stuttgart 12.11., 13:32)",
+          "title": "Yahoo Finance: 6RJ0.SG (Stuttgart 12.11., 14:32)",
           "url": "https://finance.yahoo.com/quote/6RJ0.SG/"
         },
         {
-          "title": "Yahoo Finance: 6RJ0.F (Frankfurt 12.11., 09:55)",
-          "url": "https://finance.yahoo.com/quote/6RJ0.F/"
-        },
-        {
-          "title": "Yahoo Finance: RKLB (Schluss 11.11. und Vorbörse 12.11., 13:53)",
+          "title": "Yahoo Finance: RKLB (Schluss 11.11. und Vorbörse 12.11., 15:00)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
@@ -29518,40 +29510,40 @@
           "url": "https://www.investing.com/news/analyst-ratings/berenberg-raises-rocket-lab-stock-price-target-on-launch-demand-93CH-5020508"
         },
         {
-          "title": "Yahoo Finance: ^GDAXI (12.11., 13:40)",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+          "title": "NVIDIA: NVIDIA Announces CEO Transition (12.11.)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
         },
         {
-          "title": "finanzen.net: DAX verbucht mittags Gewinne (12.11.)",
-          "url": "https://www.finanzen.net/nachricht/aktien/pluszeichen-in-frankfurt-dax-verbucht-mittags-gewinne-16059560"
-        },
-        {
-          "title": "Yahoo Finance: NVD.DE (Xetra 12.11., 13:40)",
-          "url": "https://finance.yahoo.com/quote/NVD.DE/"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Schluss 11.11. und Vorbörse 12.11., 13:54)",
+          "title": "Yahoo Finance: NVDA (Schluss 11.11. und Vorbörse 12.11., 15:00)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Washington Post: Nvidia-Verwaltungsrat berät über Huangs Zukunft (12.11.)",
-          "url": "https://www.washingtonpost.com/technology/2026/11/12/nvidia-board-weighs-jensen-huangs-future-after-affair-with-allege-chinese-spy/"
+          "title": "Yahoo Finance: NVD.DE (Xetra 12.11., 14:43)",
+          "url": "https://finance.yahoo.com/quote/NVD.DE/"
         },
         {
-          "title": "Yahoo Finance: NQ=F (12.11., 13:44)",
+          "title": "Yahoo Finance: NQ=F (12.11., 14:50)",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Yahoo Finance: ES=F (12.11., 13:45)",
+          "title": "Yahoo Finance: ES=F (12.11., 14:49)",
           "url": "https://finance.yahoo.com/quote/ES%3DF/"
         },
         {
-          "title": "CNBC: Nebius fällt um 10 % nach schwachem Ausblick und höheren Investitionen (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html"
+          "title": "Reuters/StreetInsider: Nebius senkt Umsatzziel wegen Kapazitätsverzögerungen (12.11.)",
+          "url": "https://www.streetinsider.com/Reuters/Nebius+beats+quarterly+revenue+estimates+on+strong+AI+demand/27330371.html"
         },
         {
-          "title": "Business Wire: Nebius – Zahlen Q3 2026 (12.11.)",
-          "url": "https://www.businesswire.com/news/home/20261112208769/en/Nebius-reports-third-quarter-2026-financial-results"
+          "title": "Yahoo Finance: NBIS (Vorbörse 12.11., 15:00)",
+          "url": "https://finance.yahoo.com/quote/NBIS/"
+        },
+        {
+          "title": "Yahoo Finance: ^GDAXI (12.11., 14:44)",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+        },
+        {
+          "title": "Reuters/Investing.com: Nasdaq-Futures fallen wegen Nvidia (12.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-fall-as-nvidia-turmoil-rattles-ai-stocks-5020761"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -41801,59 +41793,55 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Do 13:55: Marvell auf Xetra 146,84 € (13:39), 5,5 % unter dem Xetra-Schluss vom Mittwoch (155,36 €); umgerechnet etwa 163,0 $ bei EUR/USD 1,110. Vorbörslich in New York 162,73 $, 3,6 % unter dem Nasdaq-Schluss von 168,80 $ (+9,3 % am Mittwoch) (Yahoo). Als Chipwert hängt Marvell direkt an der Nvidia-Krise; dazu kommt der Streit um China: Peking warnt die USA, die Huang-Affäre als Vorwand für neue Chip-Beschränkungen zu nutzen (Al Jazeera/Reuters). Markt um 13:45: Der Dax liegt bei 26.831 Punkten (+0,6 %), nachdem er am Vormittag erstmals über 27.000 stieg (Hoch 27.001,67; Siemens und Allianz mit Rekordzahlen) (Yahoo, finanzen.net). Tech bleibt schwach: Nvidia auf Xetra 144,38 € (−8,8 %), vorbörslich 160,70 $ (−7,5 %); der Verwaltungsrat hat zu Chef Huang weiter nichts verkündet (Washington Post). Nasdaq-100-Future −0,9 %, S&P-500-Future −0,4 % (Yahoo). Neu um 13:30: Nebius übertraf mit 980,8 Mio. $ Umsatz die Erwartungen, enttäuschte aber mit dem Ausblick und hebt die Investitionen 2026 auf 27 Mrd. $; die Aktie fällt vorbörslich um gut 10 % (CNBC, Business Wire). Nach US-Schluss folgen Cisco und Applied Materials.",
+      "why": "Stand Do 15:00: Marvell auf Xetra 146,48 € (14:43), 5,7 % unter dem Xetra-Schluss vom Mittwoch (155,36 €); vorbörslich in New York 159,01 $, 5,8 % unter dem Nasdaq-Schluss von 168,80 $ (+9,3 % am Mittwoch) (Yahoo). Als Chipwert hängt Marvell direkt an der Nvidia-Krise, die mit Huangs Rücktritt jetzt einen Chefwechsel ohne festen Nachfolger bringt; dazu kommt der Streit um China-Exporte: Das Handelsministerium arbeitet laut The Information an einer Regel gegen den Fernzugriff chinesischer KI-Firmen (Guardian-Liveblog). Markt um 15:00: Nvidia hat gegen 14:50 den Rücktritt von Chef Jensen Huang verkündet, Finanzchefin Colette Kress führt vorläufig (NVIDIA). Nvidia vorbörslich 155,99 $ (−10,2 %), Xetra 143,54 € (−9,3 %); Nasdaq-100-Future rund −1,4 %, S&P-500-Future −0,6 % (Yahoo). Nebius fällt nach höheren Investitionsplänen und verschobener Kapazität vorbörslich um knapp 20 % (Reuters, Yahoo). Der Dax hält sich mit 26.729 Punkten (+0,3 %) nahe dem Rekord vom Vormittag (Yahoo). US-Börsen öffnen um 15:30, nach US-Schluss folgen Cisco und Applied Materials.",
       "whySources": [
         {
-          "title": "Yahoo Finance: 9MW.DE (Xetra 12.11., 13:39)",
+          "title": "Yahoo Finance: 9MW.DE (Xetra 12.11., 14:43)",
           "url": "https://finance.yahoo.com/quote/9MW.DE/"
         },
         {
-          "title": "Yahoo Finance: MRVL (Schluss 11.11. und Vorbörse 12.11., 13:53)",
+          "title": "Yahoo Finance: MRVL (Schluss 11.11. und Vorbörse 12.11., 15:00)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "Yahoo Finance: EURUSD=X (12.11., 13:53)",
-          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
+          "title": "Guardian (Liveblog): Huang tritt zurück, Kress Interimschefin (12.11.)",
+          "url": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest"
         },
         {
-          "title": "Al Jazeera/AP/Reuters: China wirft den USA „erfundene“ Spionagevorwürfe vor (12.11.)",
-          "url": "https://www.aljazeera.com/news/2026/11/12/china-says-us-fabricating-nvidia-spy-claims-to-justify-tech-blockade"
+          "title": "NVIDIA: NVIDIA Announces CEO Transition (12.11.)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
         },
         {
-          "title": "Yahoo Finance: ^GDAXI (12.11., 13:40)",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
-        },
-        {
-          "title": "finanzen.net: DAX verbucht mittags Gewinne (12.11.)",
-          "url": "https://www.finanzen.net/nachricht/aktien/pluszeichen-in-frankfurt-dax-verbucht-mittags-gewinne-16059560"
-        },
-        {
-          "title": "Yahoo Finance: NVD.DE (Xetra 12.11., 13:40)",
-          "url": "https://finance.yahoo.com/quote/NVD.DE/"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Schluss 11.11. und Vorbörse 12.11., 13:54)",
+          "title": "Yahoo Finance: NVDA (Schluss 11.11. und Vorbörse 12.11., 15:00)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Washington Post: Nvidia-Verwaltungsrat berät über Huangs Zukunft (12.11.)",
-          "url": "https://www.washingtonpost.com/technology/2026/11/12/nvidia-board-weighs-jensen-huangs-future-after-affair-with-allege-chinese-spy/"
+          "title": "Yahoo Finance: NVD.DE (Xetra 12.11., 14:43)",
+          "url": "https://finance.yahoo.com/quote/NVD.DE/"
         },
         {
-          "title": "Yahoo Finance: NQ=F (12.11., 13:44)",
+          "title": "Yahoo Finance: NQ=F (12.11., 14:50)",
           "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Yahoo Finance: ES=F (12.11., 13:45)",
+          "title": "Yahoo Finance: ES=F (12.11., 14:49)",
           "url": "https://finance.yahoo.com/quote/ES%3DF/"
         },
         {
-          "title": "CNBC: Nebius fällt um 10 % nach schwachem Ausblick und höheren Investitionen (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html"
+          "title": "Reuters/StreetInsider: Nebius senkt Umsatzziel wegen Kapazitätsverzögerungen (12.11.)",
+          "url": "https://www.streetinsider.com/Reuters/Nebius+beats+quarterly+revenue+estimates+on+strong+AI+demand/27330371.html"
         },
         {
-          "title": "Business Wire: Nebius – Zahlen Q3 2026 (12.11.)",
-          "url": "https://www.businesswire.com/news/home/20261112208769/en/Nebius-reports-third-quarter-2026-financial-results"
+          "title": "Yahoo Finance: NBIS (Vorbörse 12.11., 15:00)",
+          "url": "https://finance.yahoo.com/quote/NBIS/"
+        },
+        {
+          "title": "Yahoo Finance: ^GDAXI (12.11., 14:44)",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+        },
+        {
+          "title": "Reuters/Investing.com: Nasdaq-Futures fallen wegen Nvidia (12.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-fall-as-nvidia-turmoil-rattles-ai-stocks-5020761"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",

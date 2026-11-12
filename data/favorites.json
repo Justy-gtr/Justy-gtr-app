@@ -132,14 +132,14 @@
       "swarmStance": "kauf",
       "againstCrowd": true,
       "vsSwarm": "skeptischer",
-      "karlTake": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Der Verwaltungsrat bereitet laut WSJ Huangs Ablösung vor, ein Nachfolger fehlt.",
+      "karlTake": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Huang ist zurückgetreten, Finanzchefin Kress führt nur vorläufig, ein dauerhafter Nachfolger fehlt.",
       "karlCounter": "Die Aufträge können die Politik überholen.",
       "horizon": "langfrist",
       "priceEur": 180.56,
       "priceAsOf": "2026-11-04",
       "priceVenue": "Xetra",
       "swarmNote": "Die laute Mehrheit behandelt Nvidia weiter als den Kern der KI-Welle und liegt auf der Kaufseite.",
-      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl stehen Rechenzentren politisch unter Druck. Seit 8.11. läuft eine Untersuchung zu Huangs Affäre mit einer mutmaßlichen chinesischen Agentin; am 11.11. berichtete das WSJ, der Verwaltungsrat bereite seine Ablösung vor. Nachbörslich fiel die Aktie auf 158,78 $ (−8,6 %). Laut Bloomberg sucht der Verwaltungsrat mit einer externen Personalberatung schon Nachfolger, ein Beschluss ist bis Do früh nicht verkündet. Auf Xetra fiel die Aktie am Do früh auf 145,96 € (−7,8 %), Polymarket sieht 88 % für Huangs Abgang bis Jahresende (Reuters). Karl jagt den Namen nicht.",
+      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl stehen Rechenzentren politisch unter Druck. Seit 8.11. läuft eine Untersuchung zu Huangs Affäre mit einer mutmaßlichen chinesischen Agentin; am 11.11. berichtete das WSJ, der Verwaltungsrat bereite seine Ablösung vor. Nachbörslich fiel die Aktie auf 158,78 $ (−8,6 %). Laut Bloomberg sucht der Verwaltungsrat mit einer externen Personalberatung schon Nachfolger, ein Beschluss ist bis Do früh nicht verkündet. Auf Xetra fiel die Aktie am Do früh auf 145,96 € (−7,8 %), Polymarket sieht 88 % für Huangs Abgang bis Jahresende (Reuters). Karl jagt den Namen nicht. Am Do 12.11. gegen 14:50 verkündete Nvidia Huangs Rücktritt mit sofortiger Wirkung; Finanzchefin Colette Kress ist Interimschefin, Harvey C. Jones erster Verwaltungsratsvorsitzender, die Zahlen am 17.11. kommen wie geplant (NVIDIA). Vorbörslich 155,99 $ (−10,2 %).",
       "counterArgument": "Die Aufträge können die Politik überholen. Wer zu früh aussteigt, verpasst die nächste Welle.",
       "example": false,
       "sources": [
@@ -182,6 +182,10 @@
         {
           "title": "Yahoo Finance: NVD.DE (Xetra 12.11., 09:30)",
           "url": "https://finance.yahoo.com/quote/NVD.DE/"
+        },
+        {
+          "title": "NVIDIA: NVIDIA Announces CEO Transition (12.11.)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
         }
       ]
     },
