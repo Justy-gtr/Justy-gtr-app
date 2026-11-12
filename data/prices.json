@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-11-12T22:19:31.376Z",
+  "asOf": "2026-11-12T22:32:31.510Z",
   "example": false,
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1059,
+    "rate": 1.1057,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-12T22:19:31.376Z",
+    "asOf": "2026-11-12T22:32:31.510Z",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -33,7 +33,7 @@
       "eurSymbol": "SPX.SG",
       "usdSymbol": "SPCX",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1059,
+      "fxRate": 1.1057,
       "sparkline": [
         125.5,
         124.68,
@@ -66,7 +66,7 @@
         128.84,
         128.04,
         126.72,
-        126.74
+        126.77
       ],
       "history": {
         "intraday": [
@@ -1367,37 +1367,37 @@
           },
           {
             "t": "2026-11-12T20:56:00.000Z",
-            "eur": 126.85,
+            "eur": 126.88,
             "usd": 140.29,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:57:00.000Z",
-            "eur": 126.86,
+            "eur": 126.89,
             "usd": 140.31,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:58:00.000Z",
-            "eur": 126.91,
+            "eur": 126.94,
             "usd": 140.36,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:59:00.000Z",
-            "eur": 126.57,
+            "eur": 126.6,
             "usd": 139.98,
             "session": "regular"
           },
           {
             "t": "2026-11-12T21:08:00.000Z",
-            "eur": 126.55,
+            "eur": 126.58,
             "usd": 139.96,
             "session": "post"
           },
           {
             "t": "2026-11-12T21:29:00.000Z",
-            "eur": 126.74,
+            "eur": 126.77,
             "usd": 140.17,
             "session": "post"
           }
@@ -6370,9 +6370,9 @@
       ],
       "fetchError": null,
       "overnightPhase": "nachhandel",
-      "overnightEur": 126.75,
-      "overnightHighEur": 126.75,
-      "overnightLowEur": 126.56,
+      "overnightEur": 126.77,
+      "overnightHighEur": 126.77,
+      "overnightLowEur": 126.58,
       "overnightAsOf": "2026-11-12T21:29:00.000Z",
       "source": "alpaca-iex"
     },
@@ -6397,7 +6397,7 @@
       "eurSymbol": "TL0.SG",
       "usdSymbol": "TSLA",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1059,
+      "fxRate": 1.1057,
       "sparkline": [
         349.25,
         349,
@@ -6430,7 +6430,7 @@
         353.35,
         355.95,
         360.55,
-        359.35
+        359.43
       ],
       "history": {
         "intraday": [
@@ -7576,19 +7576,19 @@
           },
           {
             "t": "2026-11-12T20:57:00.000Z",
-            "eur": 359.57,
+            "eur": 359.65,
             "usd": 397.67,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:58:00.000Z",
-            "eur": 359.69,
+            "eur": 359.77,
             "usd": 397.8,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:59:00.000Z",
-            "eur": 359.35,
+            "eur": 359.43,
             "usd": 397.43,
             "session": "regular"
           }
@@ -20193,7 +20193,7 @@
       "eurSymbol": "6RJ0.SG",
       "usdSymbol": "RKLB",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1059,
+      "fxRate": 1.1057,
       "sparkline": [
         57.7,
         57.7,
@@ -20225,8 +20225,8 @@
         58.5,
         58.5,
         58.2,
-        57.91,
-        57.94
+        57.93,
+        57.95
       ],
       "history": {
         "intraday": [
@@ -20572,19 +20572,19 @@
           },
           {
             "t": "2026-11-12T20:57:00.000Z",
-            "eur": 57.91,
+            "eur": 57.93,
             "usd": 64.05,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:58:00.000Z",
-            "eur": 57.93,
+            "eur": 57.94,
             "usd": 64.07,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:59:00.000Z",
-            "eur": 57.94,
+            "eur": 57.95,
             "usd": 64.08,
             "session": "regular"
           }
@@ -31834,9 +31834,9 @@
       "dayHighEur": 152.6,
       "dayLowEur": 141.38,
       "overnightPhase": "nachhandel",
-      "overnightEur": 149.91,
-      "overnightHighEur": 149.93,
-      "overnightLowEur": 148.71,
+      "overnightEur": 149.93,
+      "overnightHighEur": 149.96,
+      "overnightLowEur": 148.74,
       "overnightAsOf": "2026-11-12T21:55:00.000Z",
       "eurMethod": "direct_eur",
       "eurVenue": "Stuttgart",
@@ -31844,7 +31844,7 @@
       "usdSymbol": "MRVL",
       "source": "alpaca-iex",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1059,
+      "fxRate": 1.1057,
       "sparkline": [
         147,
         146.52,
@@ -31877,7 +31877,7 @@
         148.98,
         149.74,
         149.1,
-        149.9
+        149.93
       ],
       "history": {
         "intraday": [
@@ -33158,43 +33158,43 @@
           },
           {
             "t": "2026-11-12T20:57:00.000Z",
-            "eur": 148.57,
+            "eur": 148.6,
             "usd": 164.31,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:58:00.000Z",
-            "eur": 148.58,
+            "eur": 148.61,
             "usd": 164.32,
             "session": "regular"
           },
           {
             "t": "2026-11-12T20:59:00.000Z",
-            "eur": 148.69,
+            "eur": 148.72,
             "usd": 164.44,
             "session": "regular"
           },
           {
             "t": "2026-11-12T21:02:00.000Z",
-            "eur": 148.7,
+            "eur": 148.74,
             "usd": 164.46,
             "session": "post"
           },
           {
             "t": "2026-11-12T21:11:00.000Z",
-            "eur": 148.9,
+            "eur": 148.94,
             "usd": 164.68,
             "session": "post"
           },
           {
             "t": "2026-11-12T21:44:00.000Z",
-            "eur": 149.93,
+            "eur": 149.96,
             "usd": 165.81,
             "session": "post"
           },
           {
             "t": "2026-11-12T21:55:00.000Z",
-            "eur": 149.9,
+            "eur": 149.93,
             "usd": 165.78,
             "session": "post"
           }
