@@ -139,7 +139,7 @@
       "priceAsOf": "2026-11-04",
       "priceVenue": "Xetra",
       "swarmNote": "Die laute Mehrheit behandelt Nvidia weiter als den Kern der KI-Welle und liegt auf der Kaufseite.",
-      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl stehen Rechenzentren politisch unter Druck. Seit 8.11. läuft eine Untersuchung zu Huangs Affäre mit einer mutmaßlichen chinesischen Agentin; am 11.11. berichtete das WSJ, der Verwaltungsrat bereite seine Ablösung vor. Nachbörslich fiel die Aktie auf 158,78 $ (−8,6 %). Laut Bloomberg sucht der Verwaltungsrat mit einer externen Personalberatung schon Nachfolger, ein Beschluss ist bis Do früh nicht verkündet. Karl jagt den Namen nicht.",
+      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl stehen Rechenzentren politisch unter Druck. Seit 8.11. läuft eine Untersuchung zu Huangs Affäre mit einer mutmaßlichen chinesischen Agentin; am 11.11. berichtete das WSJ, der Verwaltungsrat bereite seine Ablösung vor. Nachbörslich fiel die Aktie auf 158,78 $ (−8,6 %). Laut Bloomberg sucht der Verwaltungsrat mit einer externen Personalberatung schon Nachfolger, ein Beschluss ist bis Do früh nicht verkündet. Auf Xetra fiel die Aktie am Do früh auf 145,96 € (−7,8 %), Polymarket sieht 88 % für Huangs Abgang bis Jahresende (Reuters). Karl jagt den Namen nicht.",
       "counterArgument": "Die Aufträge können die Politik überholen. Wer zu früh aussteigt, verpasst die nächste Welle.",
       "example": false,
       "sources": [
@@ -174,6 +174,14 @@
         {
           "title": "Bloomberg (via Bloomberg Law): Nvidia sucht mit externer Firma CEO-Kandidaten (12.11.)",
           "url": "https://news.bloomberglaw.com/esg/nvidia-working-with-outside-firm-to-identify-ceo-candidates-1"
+        },
+        {
+          "title": "RTÉ/Reuters: Nvidia-Board berät über Huangs Zukunft, Polymarket 88 % (12.11., 08:06)",
+          "url": "https://www.rte.ie/news/business/2026/1112/1598921-nvidia-board-meets-to-decide-ceo-huangs-future/"
+        },
+        {
+          "title": "Yahoo Finance: NVD.DE (Xetra 12.11., 09:30)",
+          "url": "https://finance.yahoo.com/quote/NVD.DE/"
         }
       ]
     },
@@ -264,7 +272,7 @@
       "priceAsOf": "2026-11-05",
       "priceVenue": "Frankfurt",
       "swarmNote": "In den geführten Konten kommt Rocket Lab kaum vor. Sawyer hat sie auf der Liste, ohne Posts.",
-      "reason": "Q3 am 9.11.: Rekordumsatz 267,8 Mio. $ (+73 %), Auftragsbestand ~3,6 Mrd. $ (+52 % in einem Quartal), Q4-Ausblick 270–290 Mio. $, erstmals positiver operativer Cashflow. Acht neue Neutron-Aufträge über 515 Mio. $, Grundpreis 70 statt 55 Mio. $, 16 Missionen gebucht, Erststart frühestens 2027. Verlust je Aktie −0,12 $; nachbörslich −6,5 % auf 55,02 $, Piper Sandler senkt das Ziel auf 58 $.",
+      "reason": "Q3 am 9.11.: Rekordumsatz 267,8 Mio. $ (+73 %), Auftragsbestand ~3,6 Mrd. $ (+52 % in einem Quartal), Q4-Ausblick 270–290 Mio. $, erstmals positiver operativer Cashflow. Acht neue Neutron-Aufträge über 515 Mio. $, Grundpreis 70 statt 55 Mio. $, 16 Missionen gebucht, Erststart frühestens 2027. Verlust je Aktie −0,12 $; nachbörslich −6,5 % auf 55,02 $, Piper Sandler senkt das Ziel auf 58 $. Berenberg hob am 12.11. das Ziel von 83 auf 85 $: Startaufträge laufen etwa siebenmal so schnell wie im Vorjahr.",
       "counterArgument": "Ohne Neutron bleibt Rocket Lab klein gegen SpaceX. Das Management verkauft seit Monaten Aktien.",
       "example": false,
       "sources": [
@@ -303,6 +311,10 @@
         {
           "title": "Yahoo Finance: SpaceX, Rocket Lab steigen (9.11.)",
           "url": "https://finance.yahoo.com/markets/article/spacex-rocket-lab-blast-higher-as-nasa-hands-out-10-billion-in-moon-base-awards-164320855.html"
+        },
+        {
+          "title": "Investing.com: Berenberg hebt Rocket-Lab-Ziel auf 85 $ (12.11.)",
+          "url": "https://www.investing.com/news/analyst-ratings/berenberg-raises-rocket-lab-stock-price-target-on-launch-demand-93CH-5020508"
         }
       ]
     },
