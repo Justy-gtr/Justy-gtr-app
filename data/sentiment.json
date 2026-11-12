@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T09:41:00+01:00",
+  "updatedAt": "2026-11-12T10:23:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 15,
+      "score": 20,
       "postsCount": 25,
-      "reason": "SpaceX: Viel Vorfreude auf Starship-Flug am Freitag mit doppeltem Auffangen. Zweifel am Singulus-Solarauftrag. Dazu Gerede, Huang könnte zu Musk wechseln.",
+      "reason": "SpaceX: Vorfreude auf Starship-Flug am Freitag. Deutsche Bank hebt Umsatzprognose. Sorge, dass Anthropic den Compute-Vertrag nicht verlängert. Fusion mit Tesla im Gespräch.",
       "sources": [
         {
-          "title": "Starship-Test am Freitag",
-          "url": "https://x.com/RZitelmann/status/2120773831404978539"
+          "title": "Deutsche Bank: mehr Umsatz bis 2028",
+          "url": "https://x.com/spcxGOD/status/2120808924798410921"
         },
         {
-          "title": "Singulus-Auftrag kleiner als gedacht",
-          "url": "https://x.com/dukethefifthh/status/2120773506841346262"
+          "title": "Anthropic will offenbar nicht verlängern",
+          "url": "https://x.com/lanios_/status/2120808820733890661"
         },
         {
-          "title": "FCC nimmt 800-MHz-Antrag an",
-          "url": "https://x.com/lanios_/status/2120766040036852170"
+          "title": "manager magazin: SpaceX-Tesla-Fusion",
+          "url": "https://x.com/manager_magazin/status/2120806007190499511"
         }
       ],
-      "updatedAt": "2026-11-12T09:41:00+01:00"
+      "updatedAt": "2026-11-12T10:23:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,7 +43,7 @@
           "url": "https://x.com/BradMunchen/status/2120775388456734991"
         }
       ],
-      "updatedAt": "2026-11-12T09:41:00+01:00"
+      "updatedAt": "2026-11-12T10:23:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/AktienETFNewbie/status/2120772528150860262"
         }
       ],
-      "updatedAt": "2026-11-12T09:41:00+01:00"
+      "updatedAt": "2026-11-12T10:23:00+01:00"
     }
   }
 }
