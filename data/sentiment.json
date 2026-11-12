@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T16:09:00+01:00",
+  "updatedAt": "2026-11-12T16:13:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 55,
       "postsCount": 15,
-      "reason": "SpaceX: Laut Posts rund 5 % im Plus. Viele hoffen, dass Huang zu SpaceX wechselt und Terafab leitet. Dazu Vorfreude auf Flight 15 am Freitag.",
+      "reason": "SpaceX: Rund 5 % im Plus bei etwa 147 $. Viele hoffen, dass Huang zu Musk wechselt, einige nennen das übertriebenen Hype. Flight 15 ist für Freitag geplant.",
       "sources": [
         {
-          "title": "NVDA runter, SPCX hoch",
-          "url": "https://x.com/OInvests/status/2120889402058522650"
+          "title": "TommyATX: SPCX +5,2 %",
+          "url": "https://x.com/tommyatx/status/2120896818133262567"
         },
         {
-          "title": "Kip Herriage: Huang zu Musk?",
-          "url": "https://x.com/KHerriage/status/2120889033211379750"
+          "title": "Angie G: Huang zu Musk?",
+          "url": "https://x.com/MomAngtrades/status/2120896692015038886"
         },
         {
-          "title": "Hammerstone: SPCX +5 %",
-          "url": "https://x.com/HammerstoneMar3/status/2120889385751376149"
+          "title": "Skeptiker: nur Hype?",
+          "url": "https://x.com/EBUYUKARSLAN/status/2120896432907444642"
         }
       ],
-      "updatedAt": "2026-11-12T16:09:00+01:00"
+      "updatedAt": "2026-11-12T16:13:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 15,
+      "score": 20,
       "postsCount": 15,
-      "reason": "Tesla: Leicht im Plus, die Hürde bei 395 bis 400 $ bleibt Thema. Fans hoffen auf Huang bei Tesla, dazu viel Werbe-Spam und einzelne harte Kritiker.",
+      "reason": "Tesla: Leicht im Plus um 393 $, die Hürde bei 400 $ bleibt Thema. Robotaxi fährt jetzt rund um die Uhr in 8 Städten. Fans hoffen auf Huang, Skeptiker warnen.",
       "sources": [
         {
-          "title": "Kip Herriage: Huang für Tesla",
-          "url": "https://x.com/KHerriage/status/2120889033211379750"
+          "title": "Robotaxi rund um die Uhr",
+          "url": "https://x.com/Maximilius31/status/2120895034568368254"
         },
         {
-          "title": "Hürde bei 395 bis 400 $",
-          "url": "https://x.com/Perdu2You/status/2120882787356164153"
+          "title": "Angie G: Huang zu Musk?",
+          "url": "https://x.com/MomAngtrades/status/2120896692015038886"
         },
         {
-          "title": "FSD und Robotaxi im Fokus",
-          "url": "https://x.com/maxrock2306/status/2120882961289728076"
+          "title": "Warnung vor FOMO",
+          "url": "https://x.com/M44_1RJ/status/2120896170356797565"
         }
       ],
-      "updatedAt": "2026-11-12T16:09:00+01:00"
+      "updatedAt": "2026-11-12T16:13:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
