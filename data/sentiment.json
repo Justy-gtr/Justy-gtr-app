@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T12:16:00+01:00",
+  "updatedAt": "2026-11-12T12:36:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 15,
-      "postsCount": 24,
-      "reason": "SpaceX: Große Vorfreude auf doppelten Turmfang bei Flug 15 am Freitag. Fonds Baillie Gifford hat 24 % seiner SpaceX-Anteile abgebaut. Selenskyj klagt über Starshield.",
+      "score": 20,
+      "postsCount": 25,
+      "reason": "SpaceX: Vorfreude auf den doppelten Turmfang bei Flug 15 am Freitag. Baillie Gifford hat 24 % seiner Anteile verkauft. Viele scherzen, Jensen Huang könnte zu SpaceX wechseln.",
       "sources": [
         {
-          "title": "Doppelter Fang bei Flug 15",
-          "url": "https://x.com/rpg571/status/2120835213345354224"
+          "title": "Doppelter Fang am Freitag",
+          "url": "https://x.com/TheTeslaBull/status/2120837068033044520"
         },
         {
-          "title": "Baillie Gifford baut 24 % ab",
+          "title": "Baillie Gifford verkauft 24 %",
           "url": "https://x.com/spcxGOD/status/2120836526078636543"
         },
         {
-          "title": "Selenskyj: Starshield gedrosselt",
-          "url": "https://x.com/BetTheDecade/status/2120825170226970861"
+          "title": "Witz: Huang zu SpaceX",
+          "url": "https://x.com/markgardn/status/2120838709612618025"
         }
       ],
-      "updatedAt": "2026-11-12T12:16:00+01:00"
+      "updatedAt": "2026-11-12T12:36:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 35,
+      "score": 30,
       "postsCount": 25,
-      "reason": "Tesla: Wetten auf 1,8 Mio. Auslieferungen 2026 steigen auf 46 %. Florida wirbt um Teslas Firmensitz. Finnland erlaubt FSD (TAD). Kritiker zeigen Robotaxi-Unfälle.",
+      "reason": "Tesla: Fans wünschen sich Jensen Huang bei Tesla. Wetten auf 1,8 Mio. Auslieferungen bei 46 %. Florida wirbt um den Firmensitz. Kritik: CO2-Gutschriften brechen ein.",
       "sources": [
         {
-          "title": "Kalshi: 1,8 Mio. Auslieferungen 46 %",
+          "title": "Huang zu Tesla TeraFab?",
+          "url": "https://x.com/Micro2Macr0/status/2120822754941239591"
+        },
+        {
+          "title": "Kalshi: 1,8 Mio. bei 46 %",
           "url": "https://x.com/mikhryc0x/status/2120832582786900153"
         },
         {
           "title": "Florida lädt Tesla ein",
           "url": "https://x.com/BacklogAlpha/status/2120833989586104829"
-        },
-        {
-          "title": "Finnland gibt grünes Licht für TAD",
-          "url": "https://x.com/RonnyGolisch/status/2120810336311722368"
         }
       ],
-      "updatedAt": "2026-11-12T12:16:00+01:00"
+      "updatedAt": "2026-11-12T12:36:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 35,
-      "postsCount": 20,
-      "reason": "Rocket Lab: Berenberg hebt Kursziel auf 85 $, Startaufträge laufen 7-mal so schnell wie im Vorjahr. 100. Start am 14.11. Neutron bis in die 2030er ausgebucht.",
+      "postsCount": 8,
+      "reason": "Rocket Lab: Berenberg-Kursziel 85 $ wird viel geteilt, Startaufträge 7-mal so schnell wie im Vorjahr. Manche hoffen auf mehr Pentagon-Aufträge nach der US-Wahl.",
       "sources": [
         {
           "title": "Berenberg: Kursziel 85 $",
+          "url": "https://x.com/AIStockSavvy/status/2120842640765882542"
+        },
+        {
+          "title": "Aufträge 7-mal so schnell",
           "url": "https://x.com/allday_stocks/status/2120831577794007438"
         },
         {
-          "title": "Neutron: 16 Flüge vergeben",
-          "url": "https://x.com/HillaHaddad/status/2120814217800351858"
-        },
-        {
-          "title": "100. Start am 14.11.",
-          "url": "https://x.com/PhoebePlague/status/2120816294039802048"
+          "title": "Mehr Pentagon-Aufträge?",
+          "url": "https://x.com/AloWeilly/status/2120832787527667857"
         }
       ],
-      "updatedAt": "2026-11-12T12:16:00+01:00"
+      "updatedAt": "2026-11-12T12:36:00+01:00"
     }
   }
 }
