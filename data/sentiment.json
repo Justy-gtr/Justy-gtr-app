@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T09:06:00+01:00",
+  "updatedAt": "2026-11-12T09:41:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -22,28 +22,28 @@
           "url": "https://x.com/lanios_/status/2120766040036852170"
         }
       ],
-      "updatedAt": "2026-11-12T09:06:00+01:00"
+      "updatedAt": "2026-11-12T09:41:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 35,
       "postsCount": 25,
-      "reason": "Tesla: Robotaxi rund um die Uhr in allen Städten bleibt Thema. FSD jetzt in 11 EU-Ländern. Kritiker zeigen tödliche FSD-Unfälle.",
+      "reason": "Tesla: Robotaxi rund um die Uhr bleibt Thema. FSD jetzt in 11 EU-Ländern, Verkäufe in Südkorea mehr als verdoppelt. Kritiker zeigen FSD-Unfälle.",
       "sources": [
         {
           "title": "Robotaxi 24/7 in allen Städten",
           "url": "https://x.com/EFIEBER_ANDRE/status/2120784365747601796"
         },
         {
-          "title": "Finnland erlaubt FSD",
-          "url": "https://x.com/TeslaFansCH/status/2120788673918591211"
+          "title": "Südkorea: Tesla-Verkäufe +110 %",
+          "url": "https://x.com/thinkercar/status/2120798486501138728"
         },
         {
           "title": "Kritik an FSD-Unfällen",
           "url": "https://x.com/BradMunchen/status/2120775388456734991"
         }
       ],
-      "updatedAt": "2026-11-12T09:06:00+01:00"
+      "updatedAt": "2026-11-12T09:41:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/AktienETFNewbie/status/2120772528150860262"
         }
       ],
-      "updatedAt": "2026-11-12T09:06:00+01:00"
+      "updatedAt": "2026-11-12T09:41:00+01:00"
     }
   }
 }
