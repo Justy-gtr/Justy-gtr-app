@@ -1,54 +1,54 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T14:28:00+01:00",
+  "updatedAt": "2026-11-12T14:38:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
       "score": 10,
-      "postsCount": 20,
-      "reason": "SpaceX: Großer Account lobt den stillen Zukauf von State Street. Die Aktie steht 5 Monate nach dem Börsengang wieder nahe 135 $. Viele hoffen auf Rückenwind durch Flug 15.",
+      "postsCount": 10,
+      "reason": "SpaceX: Laut Nikkei will Terafab, das Chipprojekt von Tesla und SpaceX, Maschinen in Monaten statt Jahren. Fans träumen weiter von Huang bei SpaceX. Viele sind vorsichtig.",
       "sources": [
         {
-          "title": "State Street kauft still zu",
-          "url": "https://x.com/SPCX100T/status/2120869086448275800"
+          "title": "Nikkei: Terafab bestellt eilig",
+          "url": "https://x.com/laternenparkerX/status/2120872984898392301"
         },
         {
-          "title": "5 Monate nach dem Börsengang",
-          "url": "https://x.com/gonta_southwood/status/2120869371128213850"
+          "title": "Huang zu SpaceX?",
+          "url": "https://x.com/kalebra07/status/2120871684634734606"
         },
         {
-          "title": "Vorbörse: SPCX -0,5 %",
-          "url": "https://x.com/spcxGOD/status/2120867517992173897"
+          "title": "Musk: Ziel 1 TW Solar pro Jahr",
+          "url": "https://x.com/HeyEric/status/2120873056210165858"
         }
       ],
-      "updatedAt": "2026-11-12T14:28:00+01:00"
+      "updatedAt": "2026-11-12T14:38:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 10,
-      "postsCount": 12,
-      "reason": "Tesla: Vorbörslich rund 1,6 % im Minus, die Nvidia-Krise drückt den Markt. Manche warnen, ohne Musk wäre der Abschlag noch größer. Positiv: Optimus-Produktion startet.",
+      "score": 5,
+      "postsCount": 15,
+      "reason": "Tesla: Charttrader sehen 385 $ als wichtige Marke. Pessimisten rufen das Ende des KI-Booms aus, ein Nutzer setzt groß auf fallende Kurse. Fans zeigen Cybercab in Korea.",
       "sources": [
         {
-          "title": "Vorbörse: TSLA -1,6 %",
-          "url": "https://x.com/BellwetherFCF/status/2120868143249658073"
+          "title": "Chart: 385 $ muss halten",
+          "url": "https://x.com/wickedstocks/status/2120871425233817885"
         },
         {
-          "title": "Risiko: Firma hängt an Musk",
-          "url": "https://x.com/mustby/status/2120870585853264358"
+          "title": "Pessimist: Hoch ist erreicht",
+          "url": "https://x.com/MarioOttai549/status/2120871036593799566"
         },
         {
-          "title": "Optimus-Produktion startet",
-          "url": "https://x.com/UDexling/status/2120870233594613909"
+          "title": "Cybercab in Südkorea",
+          "url": "https://x.com/AllTeslas/status/2120872418256294002"
         }
       ],
-      "updatedAt": "2026-11-12T14:28:00+01:00"
+      "updatedAt": "2026-11-12T14:38:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 35,
-      "postsCount": 6,
+      "postsCount": 3,
       "reason": "Rocket Lab: Anleger zeigen sich stolz und sehen die Aktie im Aufwärtstrend, einige erwarten bald 72 $. Berenbergs Kursziel 85 $ wird weiter geteilt.",
       "sources": [
         {
@@ -64,7 +64,7 @@
           "url": "https://x.com/RCapitalX/status/2120866116847428043"
         }
       ],
-      "updatedAt": "2026-11-12T14:28:00+01:00"
+      "updatedAt": "2026-11-12T14:38:00+01:00"
     }
   }
 }
