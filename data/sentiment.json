@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T09:00:00+01:00",
+  "updatedAt": "2026-11-12T09:06:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 10,
-      "postsCount": 24,
-      "reason": "SpaceX: Gestern 2,3 % im Minus. Jetzt wird gehofft, dass Musk Nvidia-Chef Huang holt. Dazu FCC-Antrag für 800-MHz-Funk direkt aufs Handy angenommen.",
+      "score": 15,
+      "postsCount": 25,
+      "reason": "SpaceX: Viel Vorfreude auf Starship-Flug am Freitag mit doppeltem Auffangen. Zweifel am Singulus-Solarauftrag. Dazu Gerede, Huang könnte zu Musk wechseln.",
       "sources": [
         {
-          "title": "SPCX schloss 2,3 % im Minus",
-          "url": "https://x.com/naidongtangyuan/status/2120769266819731695"
+          "title": "Starship-Test am Freitag",
+          "url": "https://x.com/RZitelmann/status/2120773831404978539"
         },
         {
-          "title": "Hoffnung: Huang wechselt zu SpaceX",
-          "url": "https://x.com/TheFiscalNexus/status/2120746872914489650"
+          "title": "Singulus-Auftrag kleiner als gedacht",
+          "url": "https://x.com/dukethefifthh/status/2120773506841346262"
         },
         {
           "title": "FCC nimmt 800-MHz-Antrag an",
           "url": "https://x.com/lanios_/status/2120766040036852170"
         }
       ],
-      "updatedAt": "2026-11-12T09:00:00+01:00"
+      "updatedAt": "2026-11-12T09:06:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 35,
-      "postsCount": 22,
-      "reason": "Tesla: Großes Thema ist Robotaxi jetzt rund um die Uhr in allen 8 Städten. Dazu FSD in Finnland erlaubt. Kritiker posten Unfallvideos.",
+      "postsCount": 25,
+      "reason": "Tesla: Robotaxi rund um die Uhr in allen Städten bleibt Thema. FSD jetzt in 11 EU-Ländern. Kritiker zeigen tödliche FSD-Unfälle.",
       "sources": [
         {
-          "title": "Robotaxi 24/7 in allen 8 Städten",
-          "url": "https://x.com/daltonbrewer/status/2120748624778805724"
+          "title": "Robotaxi 24/7 in allen Städten",
+          "url": "https://x.com/EFIEBER_ANDRE/status/2120784365747601796"
         },
         {
-          "title": "Rechnung: Gewinn pro Robotaxi",
-          "url": "https://x.com/WR4NYGov/status/2120754399232540890"
+          "title": "Finnland erlaubt FSD",
+          "url": "https://x.com/TeslaFansCH/status/2120788673918591211"
         },
         {
-          "title": "Kritik an FSD-Sicherheit",
-          "url": "https://x.com/StonkKing4/status/2120747589473841577"
+          "title": "Kritik an FSD-Unfällen",
+          "url": "https://x.com/BradMunchen/status/2120775388456734991"
         }
       ],
-      "updatedAt": "2026-11-12T09:00:00+01:00"
+      "updatedAt": "2026-11-12T09:06:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 25,
       "postsCount": 25,
-      "reason": "Rocket Lab: Finanzchef sagt, Neutron wird mit mehr Starts profitabel. Die Iridium-Übernahme wird gelobt. Viel Spam von Signalgruppen.",
+      "reason": "Rocket Lab: Neutron-Start wird teurer (70 statt 55 Mio. $), wegen hoher Nachfrage. Rekordumsatz wird gelobt, Verlust bremst. Viel Spam.",
       "sources": [
         {
-          "title": "Neutron-Gewinn hängt an Startrate",
-          "url": "https://x.com/RCapitalX/status/2120749325840224434"
+          "title": "Neutron-Preis steigt auf 70 Mio. $",
+          "url": "https://x.com/LPNationalist/status/2120775219207917881"
+        },
+        {
+          "title": "Q3: Rekordumsatz, mehr Verlust",
+          "url": "https://x.com/SuperEx/status/2120780452512600171"
         },
         {
           "title": "Iridium-Übernahme als Chance",
           "url": "https://x.com/AktienETFNewbie/status/2120772528150860262"
-        },
-        {
-          "title": "Neutron erst 2027 im Einsatz",
-          "url": "https://x.com/pledisme/status/2120756287608906041"
         }
       ],
-      "updatedAt": "2026-11-12T09:00:00+01:00"
+      "updatedAt": "2026-11-12T09:06:00+01:00"
     }
   }
 }
