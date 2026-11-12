@@ -337,8 +337,8 @@
       "id": "MRVL-2026-11-12",
       "symbol": "MRVL",
       "name": "Marvell Technology",
-      "changePct": -4.04,
-      "priceEur": 149.08,
+      "changePct": -2.89,
+      "priceEur": 147.92,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-11T23:29:18.815Z",
@@ -350,8 +350,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/MRVL/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance 9MW.DE",
-          "url": "https://finance.yahoo.com/quote/9MW.DE"
+          "title": "Yahoo Finance 9MW.SG",
+          "url": "https://finance.yahoo.com/quote/9MW.SG"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -367,8 +367,8 @@
       "id": "SPCX-2026-11-12",
       "symbol": "SPCX",
       "name": "SpaceX",
-      "changePct": -2.14,
-      "priceEur": 126.5,
+      "changePct": -2.35,
+      "priceEur": 126.22,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-12T10:30:37.989Z",
@@ -390,6 +390,36 @@
         {
           "title": "Yahoo Finance SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX"
+        }
+      ]
+    },
+    {
+      "id": "RKLB-2026-11-12",
+      "symbol": "RKLB",
+      "name": "Rocket Lab",
+      "changePct": -2.52,
+      "priceEur": 58,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-12T11:30:23.749Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Alpaca Markets IEX RKLB",
+          "url": "https://data.alpaca.markets/v2/stocks/RKLB/snapshot?feed=iex"
+        },
+        {
+          "title": "Yahoo Finance 6RJ0.SG",
+          "url": "https://finance.yahoo.com/quote/6RJ0.SG"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance RKLB",
+          "url": "https://finance.yahoo.com/quote/RKLB"
         }
       ]
     }
