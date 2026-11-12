@@ -1,33 +1,33 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T14:38:00+01:00",
+  "updatedAt": "2026-11-12T14:46:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 10,
-      "postsCount": 10,
-      "reason": "SpaceX: Laut Nikkei will Terafab, das Chipprojekt von Tesla und SpaceX, Maschinen in Monaten statt Jahren. Fans träumen weiter von Huang bei SpaceX. Viele sind vorsichtig.",
+      "score": 15,
+      "postsCount": 12,
+      "reason": "SpaceX: United Airlines will Starlink bis Ende 2026 auf 64 % der Flüge haben. Fans reisen schon nach Starbase für den Doppelfang. Musk nennt 1 Petawatt Strom vom Mond als Ziel.",
       "sources": [
         {
-          "title": "Nikkei: Terafab bestellt eilig",
-          "url": "https://x.com/laternenparkerX/status/2120872984898392301"
+          "title": "United: Starlink auf 64 % der Flüge",
+          "url": "https://x.com/movesurge/status/2120873367985369192"
         },
         {
-          "title": "Huang zu SpaceX?",
-          "url": "https://x.com/kalebra07/status/2120871684634734606"
+          "title": "Anreise zum Doppelfang",
+          "url": "https://x.com/PhilipJohnston/status/2120874021671571733"
         },
         {
-          "title": "Musk: Ziel 1 TW Solar pro Jahr",
-          "url": "https://x.com/HeyEric/status/2120873056210165858"
+          "title": "Musk: 1 Petawatt vom Mond",
+          "url": "https://x.com/weijgenberger/status/2120875324795769199"
         }
       ],
-      "updatedAt": "2026-11-12T14:38:00+01:00"
+      "updatedAt": "2026-11-12T14:46:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 5,
-      "postsCount": 15,
+      "postsCount": 6,
       "reason": "Tesla: Charttrader sehen 385 $ als wichtige Marke. Pessimisten rufen das Ende des KI-Booms aus, ein Nutzer setzt groß auf fallende Kurse. Fans zeigen Cybercab in Korea.",
       "sources": [
         {
@@ -43,12 +43,12 @@
           "url": "https://x.com/AllTeslas/status/2120872418256294002"
         }
       ],
-      "updatedAt": "2026-11-12T14:38:00+01:00"
+      "updatedAt": "2026-11-12T14:46:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 35,
-      "postsCount": 3,
+      "postsCount": 1,
       "reason": "Rocket Lab: Anleger zeigen sich stolz und sehen die Aktie im Aufwärtstrend, einige erwarten bald 72 $. Berenbergs Kursziel 85 $ wird weiter geteilt.",
       "sources": [
         {
@@ -64,7 +64,7 @@
           "url": "https://x.com/RCapitalX/status/2120866116847428043"
         }
       ],
-      "updatedAt": "2026-11-12T14:38:00+01:00"
+      "updatedAt": "2026-11-12T14:46:00+01:00"
     }
   }
 }
