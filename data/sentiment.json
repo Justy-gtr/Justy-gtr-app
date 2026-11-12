@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T12:56:00+01:00",
+  "updatedAt": "2026-11-12T13:17:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 5,
+      "score": 0,
       "postsCount": 20,
-      "reason": "SpaceX: Aktie seit gestern -4,2 %, nahe dem Börsengangspreis. Laut Axios planen Demokraten Prüfungen der Pentagon-Aufträge. State Street stockt auf, Vorfreude auf Flug 15.",
+      "reason": "SpaceX: Kalshi meldet über 4 % Minus, verknüpft mit Musks Lob für Jensen Huang. Andere finden Huang bei SpaceX spannend. Flug 15 bleibt für Freitag 22:45 Uhr geplant.",
       "sources": [
         {
-          "title": "-4,2 % in 24 Stunden",
-          "url": "https://x.com/PythoDEX/status/2120843001425801259"
+          "title": "Kalshi: SPCX über 4 % im Minus",
+          "url": "https://x.com/Kalshi_Finance/status/2120849049284661707"
         },
         {
-          "title": "Axios: Prüfung der Pentagon-Aufträge",
-          "url": "https://x.com/x_invest1/status/2120845248016663003"
+          "title": "Huang zu SpaceX/xAI?",
+          "url": "https://x.com/JesseCohenInv/status/2120851139105079336"
         },
         {
-          "title": "State Street stockt um 78 % auf",
-          "url": "https://x.com/AIStockSavvy/status/2120843646136094867"
+          "title": "Flug 15 am Freitag",
+          "url": "https://x.com/metanoia_ki/status/2120852835877187853"
         }
       ],
-      "updatedAt": "2026-11-12T12:56:00+01:00"
+      "updatedAt": "2026-11-12T13:17:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 6,
-      "reason": "Tesla: Fans wünschen sich Jensen Huang bei Tesla. Wetten auf 1,8 Mio. Auslieferungen bei 46 %. Florida wirbt um den Firmensitz. Kritik: CO2-Gutschriften brechen ein.",
+      "score": 25,
+      "postsCount": 15,
+      "reason": "Tesla: Robotaxi-Zähler zeigt über 5 Mio. autonome Meilen. J.P. Morgan erwartet bis 2030 viele Roboter, Tesla vorne. Kritik: BYD exportiert mehr Autos als Tesla ausliefert.",
       "sources": [
         {
-          "title": "Huang zu Tesla TeraFab?",
-          "url": "https://x.com/Micro2Macr0/status/2120822754941239591"
+          "title": "Robotaxi: 5 Mio. Meilen",
+          "url": "https://x.com/daltonskach/status/2120852490136801601"
         },
         {
-          "title": "Kalshi: 1,8 Mio. bei 46 %",
-          "url": "https://x.com/mikhryc0x/status/2120832582786900153"
+          "title": "J.P. Morgan zu Humanoiden",
+          "url": "https://x.com/Michael34952/status/2120851562905964752"
         },
         {
-          "title": "Florida lädt Tesla ein",
-          "url": "https://x.com/BacklogAlpha/status/2120833989586104829"
+          "title": "BYD-Exporte vs. Tesla",
+          "url": "https://x.com/JungleReportFi/status/2120852363632066668"
         }
       ],
-      "updatedAt": "2026-11-12T12:56:00+01:00"
+      "updatedAt": "2026-11-12T13:17:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 35,
-      "postsCount": 5,
-      "reason": "Rocket Lab: Berenberg-Kursziel 85 $ wird weiter geteilt. Morgan Stanley sieht Wachstum durch höhere Neutron-Preise, Verzögerungen drücken aber kurzfristig die Marge.",
+      "score": 40,
+      "postsCount": 7,
+      "reason": "Rocket Lab: ARK kauft laut Posts im Rücksetzer zu. Nachts liefen laute Kältetests an Neutron. Peter Beck: Die Hälfte der Neutron-Starts soll eigene Satelliten bringen.",
       "sources": [
         {
-          "title": "Berenberg: Kursziel 85 $",
-          "url": "https://x.com/AIStockSavvy/status/2120842640765882542"
+          "title": "ARK stockt auf",
+          "url": "https://x.com/rmzerozero/status/2120849957473108028"
         },
         {
-          "title": "Morgan Stanley zu Neutron",
-          "url": "https://x.com/gulVasikova/status/2120843056090092013"
+          "title": "Neutron-Kältetests",
+          "url": "https://x.com/kyle_LTS/status/2120852091149180932"
         },
         {
-          "title": "Aufträge 7-mal so schnell",
-          "url": "https://x.com/allday_stocks/status/2120831577794007438"
+          "title": "Beck zu Neutron",
+          "url": "https://x.com/SpaceInvestor_D/status/2120851476759171315"
         }
       ],
-      "updatedAt": "2026-11-12T12:56:00+01:00"
+      "updatedAt": "2026-11-12T13:17:00+01:00"
     }
   }
 }
