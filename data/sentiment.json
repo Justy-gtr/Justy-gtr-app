@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T15:56:00+01:00",
+  "updatedAt": "2026-11-12T16:01:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 45,
+      "score": 50,
       "postsCount": 15,
-      "reason": "SpaceX: Nach Huangs Rücktritt träumen viele, dass er zu SpaceX wechselt. Dazu Vorfreude auf Flight 15 am Freitag und die geplante Bergung beider Stufen.",
+      "reason": "SpaceX: Rund 2 % im Plus. Viele spekulieren, dass Huang zu Musk wechselt, Musk nannte das eine Ehre. Dazu Vorfreude auf Flight 15 am Freitag.",
       "sources": [
         {
-          "title": "Huang-Wechsel zu SpaceX?",
-          "url": "https://x.com/nisalrenuja/status/2120886257786184149"
+          "title": "Investing.com: Huang-Spekulation",
+          "url": "https://x.com/newsinvesting/status/2120893260985995755"
         },
         {
-          "title": "Flight 15 und SPCX",
-          "url": "https://x.com/LucasSa54749430/status/2120883546554331570"
+          "title": "Huang bei SpaceX und Tesla?",
+          "url": "https://x.com/nerdalert/status/2120892534859694503"
         },
         {
-          "title": "Nvidia und SpaceX auf Kalshi",
-          "url": "https://x.com/cthrin/status/2120882653058748886"
+          "title": "Flight 15 und Wiederverwendung",
+          "url": "https://x.com/Geysen_Trades/status/2120893545196175656"
         }
       ],
-      "updatedAt": "2026-11-12T15:56:00+01:00"
+      "updatedAt": "2026-11-12T16:01:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 10,
+      "score": 15,
       "postsCount": 15,
-      "reason": "Tesla: Viel Werbe-Spam, wenig Neues. Chartleute sehen 395 bis 400 $ als Hürde. Fans hoffen auf Huang bei Tesla, einige Börsenbriefe raten eher zur Vorsicht.",
+      "reason": "Tesla: Etwa 1 % im Plus bei 395 $, die Hürde bei 400 $ bleibt Thema. Fans hoffen auf Huang bei Tesla, dazu viel Werbe-Spam und einige Blasen-Warnungen.",
       "sources": [
+        {
+          "title": "Sawyer Merritt: Huang und Terafab",
+          "url": "https://x.com/gefjon_nasira/status/2120893923811811428"
+        },
         {
           "title": "Hürde bei 395 bis 400 $",
           "url": "https://x.com/Perdu2You/status/2120882787356164153"
         },
         {
-          "title": "Huang und Tesla/SpaceX",
-          "url": "https://x.com/Maximilius31/status/2120881947069047059"
-        },
-        {
-          "title": "FSD und Robotaxi im Fokus",
-          "url": "https://x.com/maxrock2306/status/2120882961289728076"
+          "title": "Tesla stärker als der Markt",
+          "url": "https://x.com/CapitalPsyc/status/2120893355811070266"
         }
       ],
-      "updatedAt": "2026-11-12T15:56:00+01:00"
+      "updatedAt": "2026-11-12T16:01:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 35,
+      "score": 30,
       "postsCount": 15,
-      "reason": "Rocket Lab: Seeking Alpha schreibt positiv über Neutron. Finanzchef sagt, Neutron-Buchungen sind mit echten Anzahlungen gesichert. Dazu Pentagon-Kredite.",
+      "reason": "Rocket Lab: Leicht im Minus um 65,50 $. Seeking Alpha lobt Neutron, Neutron-Buchungen gelten als gesichert. Neu: RKLB-Futures auf Coinbase und Deribit.",
       "sources": [
         {
           "title": "Seeking Alpha zu Neutron",
           "url": "https://x.com/SeekingAlpha/status/2120891880930160844"
         },
         {
-          "title": "Anzahlungen für Neutron",
-          "url": "https://x.com/MrBig8x6/status/2120879647051448442"
+          "title": "Raumfahrtwerte zum Start",
+          "url": "https://x.com/theSpacecyborg/status/2120892857846272416"
         },
         {
-          "title": "Neutron-Kältetests",
-          "url": "https://x.com/nikogeorge/status/2120889202569044249"
+          "title": "RKLB-Futures auf Coinbase",
+          "url": "https://x.com/CoinbaseAssets/status/2120892725021061125"
         }
       ],
-      "updatedAt": "2026-11-12T15:56:00+01:00"
+      "updatedAt": "2026-11-12T16:01:00+01:00"
     }
   }
 }
