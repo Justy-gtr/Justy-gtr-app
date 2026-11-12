@@ -337,8 +337,8 @@
       "id": "MRVL-2026-11-12",
       "symbol": "MRVL",
       "name": "Marvell Technology",
-      "changePct": -2.38,
-      "priceEur": 150.64,
+      "changePct": -6.15,
+      "priceEur": 145.8,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-11T23:29:18.815Z",
@@ -350,8 +350,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/MRVL/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance 9MW.F",
-          "url": "https://finance.yahoo.com/quote/9MW.F"
+          "title": "Yahoo Finance 9MW.DE",
+          "url": "https://finance.yahoo.com/quote/9MW.DE"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -367,8 +367,8 @@
       "id": "SPCX-2026-11-12",
       "symbol": "SPCX",
       "name": "SpaceX",
-      "changePct": -2.48,
-      "priceEur": 126.06,
+      "changePct": -3.67,
+      "priceEur": 124.52,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-12T10:30:37.989Z",
@@ -397,8 +397,8 @@
       "id": "RKLB-2026-11-12",
       "symbol": "RKLB",
       "name": "Rocket Lab",
-      "changePct": -2.52,
-      "priceEur": 58,
+      "changePct": -2.86,
+      "priceEur": 57.8,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-12T11:30:23.749Z",
