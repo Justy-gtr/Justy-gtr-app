@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T11:54:00+01:00",
+  "updatedAt": "2026-11-12T12:16:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
       "score": 15,
-      "postsCount": 25,
-      "reason": "SpaceX: Vorfreude auf Starship-Flug am Freitag, Booster B22 rollt zur Rampe. Selenskyj klagt über gedrosseltes Starshield. Viel Gerede über Huang und Anthropic.",
+      "postsCount": 24,
+      "reason": "SpaceX: Große Vorfreude auf doppelten Turmfang bei Flug 15 am Freitag. Fonds Baillie Gifford hat 24 % seiner SpaceX-Anteile abgebaut. Selenskyj klagt über Starshield.",
       "sources": [
         {
-          "title": "Booster B22 vor Flug 15",
-          "url": "https://x.com/AntonioGprivate/status/2120826522990793004"
+          "title": "Doppelter Fang bei Flug 15",
+          "url": "https://x.com/rpg571/status/2120835213345354224"
+        },
+        {
+          "title": "Baillie Gifford baut 24 % ab",
+          "url": "https://x.com/spcxGOD/status/2120836526078636543"
         },
         {
           "title": "Selenskyj: Starshield gedrosselt",
           "url": "https://x.com/BetTheDecade/status/2120825170226970861"
-        },
-        {
-          "title": "Anthropic-Vertrag: wer steigt aus?",
-          "url": "https://x.com/teajayzz64/status/2120824295027064835"
         }
       ],
-      "updatedAt": "2026-11-12T11:54:00+01:00"
+      "updatedAt": "2026-11-12T12:16:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 35,
       "postsCount": 25,
-      "reason": "Tesla: Finnland erlaubt FSD (TAD), EU-Freigabe am 1.12. erhofft. Robotaxi rund um die Uhr bleibt Thema. Kritiker zeigen Robotaxi-Unfälle. Fusion mit SpaceX im Gespräch.",
+      "reason": "Tesla: Wetten auf 1,8 Mio. Auslieferungen 2026 steigen auf 46 %. Florida wirbt um Teslas Firmensitz. Finnland erlaubt FSD (TAD). Kritiker zeigen Robotaxi-Unfälle.",
       "sources": [
+        {
+          "title": "Kalshi: 1,8 Mio. Auslieferungen 46 %",
+          "url": "https://x.com/mikhryc0x/status/2120832582786900153"
+        },
+        {
+          "title": "Florida lädt Tesla ein",
+          "url": "https://x.com/BacklogAlpha/status/2120833989586104829"
+        },
         {
           "title": "Finnland gibt grünes Licht für TAD",
           "url": "https://x.com/RonnyGolisch/status/2120810336311722368"
-        },
-        {
-          "title": "Robotaxi 24/7 in allen Städten",
-          "url": "https://x.com/EFIEBER_ANDRE/status/2120784365747601796"
-        },
-        {
-          "title": "Kritik an Robotaxi-Unfällen",
-          "url": "https://x.com/BradMunchen/status/2120811685980389457"
         }
       ],
-      "updatedAt": "2026-11-12T11:54:00+01:00"
+      "updatedAt": "2026-11-12T12:16:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/PhoebePlague/status/2120816294039802048"
         }
       ],
-      "updatedAt": "2026-11-12T11:54:00+01:00"
+      "updatedAt": "2026-11-12T12:16:00+01:00"
     }
   }
 }
