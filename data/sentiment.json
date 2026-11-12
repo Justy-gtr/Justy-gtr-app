@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T16:01:00+01:00",
+  "updatedAt": "2026-11-12T16:09:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 50,
+      "score": 55,
       "postsCount": 15,
-      "reason": "SpaceX: Rund 2 % im Plus. Viele spekulieren, dass Huang zu Musk wechselt, Musk nannte das eine Ehre. Dazu Vorfreude auf Flight 15 am Freitag.",
+      "reason": "SpaceX: Laut Posts rund 5 % im Plus. Viele hoffen, dass Huang zu SpaceX wechselt und Terafab leitet. Dazu Vorfreude auf Flight 15 am Freitag.",
       "sources": [
         {
-          "title": "Investing.com: Huang-Spekulation",
-          "url": "https://x.com/newsinvesting/status/2120893260985995755"
+          "title": "NVDA runter, SPCX hoch",
+          "url": "https://x.com/OInvests/status/2120889402058522650"
         },
         {
-          "title": "Huang bei SpaceX und Tesla?",
-          "url": "https://x.com/nerdalert/status/2120892534859694503"
+          "title": "Kip Herriage: Huang zu Musk?",
+          "url": "https://x.com/KHerriage/status/2120889033211379750"
         },
         {
-          "title": "Flight 15 und Wiederverwendung",
-          "url": "https://x.com/Geysen_Trades/status/2120893545196175656"
+          "title": "Hammerstone: SPCX +5 %",
+          "url": "https://x.com/HammerstoneMar3/status/2120889385751376149"
         }
       ],
-      "updatedAt": "2026-11-12T16:01:00+01:00"
+      "updatedAt": "2026-11-12T16:09:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 15,
       "postsCount": 15,
-      "reason": "Tesla: Etwa 1 % im Plus bei 395 $, die Hürde bei 400 $ bleibt Thema. Fans hoffen auf Huang bei Tesla, dazu viel Werbe-Spam und einige Blasen-Warnungen.",
+      "reason": "Tesla: Leicht im Plus, die Hürde bei 395 bis 400 $ bleibt Thema. Fans hoffen auf Huang bei Tesla, dazu viel Werbe-Spam und einzelne harte Kritiker.",
       "sources": [
         {
-          "title": "Sawyer Merritt: Huang und Terafab",
-          "url": "https://x.com/gefjon_nasira/status/2120893923811811428"
+          "title": "Kip Herriage: Huang für Tesla",
+          "url": "https://x.com/KHerriage/status/2120889033211379750"
         },
         {
           "title": "Hürde bei 395 bis 400 $",
           "url": "https://x.com/Perdu2You/status/2120882787356164153"
         },
         {
-          "title": "Tesla stärker als der Markt",
-          "url": "https://x.com/CapitalPsyc/status/2120893355811070266"
+          "title": "FSD und Robotaxi im Fokus",
+          "url": "https://x.com/maxrock2306/status/2120882961289728076"
         }
       ],
-      "updatedAt": "2026-11-12T16:01:00+01:00"
+      "updatedAt": "2026-11-12T16:09:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 30,
       "postsCount": 15,
-      "reason": "Rocket Lab: Leicht im Minus um 65,50 $. Seeking Alpha lobt Neutron, Neutron-Buchungen gelten als gesichert. Neu: RKLB-Futures auf Coinbase und Deribit.",
+      "reason": "Rocket Lab: Seeking Alpha lobt Neutron, Anzahlungen machen die Buchungen sicherer. Pentagon-Kredite für Raumfahrt sind Thema, Neutron-Start erst 2027.",
       "sources": [
         {
           "title": "Seeking Alpha zu Neutron",
           "url": "https://x.com/SeekingAlpha/status/2120891880930160844"
         },
         {
-          "title": "Raumfahrtwerte zum Start",
-          "url": "https://x.com/theSpacecyborg/status/2120892857846272416"
+          "title": "Neutron-Buchungen mit Anzahlung",
+          "url": "https://x.com/MrBig8x6/status/2120879647051448442"
         },
         {
-          "title": "RKLB-Futures auf Coinbase",
-          "url": "https://x.com/CoinbaseAssets/status/2120892725021061125"
+          "title": "Pentagon-Kredite für Raumfahrt",
+          "url": "https://x.com/AFP_press/status/2120879348601192483"
         }
       ],
-      "updatedAt": "2026-11-12T16:01:00+01:00"
+      "updatedAt": "2026-11-12T16:09:00+01:00"
     }
   }
 }
