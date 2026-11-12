@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T14:15:00+01:00",
+  "updatedAt": "2026-11-12T14:28:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 5,
+      "score": 10,
       "postsCount": 20,
-      "reason": "SpaceX: Vorbörslich rund 1 % im Minus. Gerätselt wird, warum Google den SpaceX-Aufsichtsrat verlässt. Motley Fool zweifelt an einer Fusion mit Tesla. Flug 15 morgen.",
+      "reason": "SpaceX: Großer Account lobt den stillen Zukauf von State Street. Die Aktie steht 5 Monate nach dem Börsengang wieder nahe 135 $. Viele hoffen auf Rückenwind durch Flug 15.",
       "sources": [
         {
-          "title": "Google verlässt SpaceX-Board",
-          "url": "https://x.com/herbertong/status/2120866447438254431"
+          "title": "State Street kauft still zu",
+          "url": "https://x.com/SPCX100T/status/2120869086448275800"
         },
         {
-          "title": "Motley Fool zu Tesla-SpaceX-Fusion",
-          "url": "https://x.com/TheRealBagi/status/2120865224806813969"
+          "title": "5 Monate nach dem Börsengang",
+          "url": "https://x.com/gonta_southwood/status/2120869371128213850"
         },
         {
-          "title": "Vorbörse: SPCX -0,9 %",
-          "url": "https://x.com/pastortomars/status/2120865871510085679"
+          "title": "Vorbörse: SPCX -0,5 %",
+          "url": "https://x.com/spcxGOD/status/2120867517992173897"
         }
       ],
-      "updatedAt": "2026-11-12T14:15:00+01:00"
+      "updatedAt": "2026-11-12T14:28:00+01:00"
     },
     "TSLA": {
-      "mood": "gut",
-      "score": 25,
-      "postsCount": 18,
-      "reason": "Tesla: Robotaxi fährt jetzt in allen 8 Städten rund um die Uhr, das wird viel gefeiert. Vorbörslich gut 1 % im Minus, weil die Nvidia-Krise den Gesamtmarkt drückt.",
+      "mood": "gemischt",
+      "score": 10,
+      "postsCount": 12,
+      "reason": "Tesla: Vorbörslich rund 1,6 % im Minus, die Nvidia-Krise drückt den Markt. Manche warnen, ohne Musk wäre der Abschlag noch größer. Positiv: Optimus-Produktion startet.",
       "sources": [
         {
-          "title": "Robotaxi 24/7 in 8 Städten",
-          "url": "https://x.com/MarketPulse369/status/2120865605699899841"
+          "title": "Vorbörse: TSLA -1,6 %",
+          "url": "https://x.com/BellwetherFCF/status/2120868143249658073"
         },
         {
-          "title": "Vorbörse: Mag 7 meist schwächer",
-          "url": "https://x.com/zerohedge/status/2120865088101896514"
+          "title": "Risiko: Firma hängt an Musk",
+          "url": "https://x.com/mustby/status/2120870585853264358"
         },
         {
-          "title": "Finnland erlaubt Fahrassistenz",
-          "url": "https://x.com/QuantAlphaXXX/status/2120866680926577033"
+          "title": "Optimus-Produktion startet",
+          "url": "https://x.com/UDexling/status/2120870233594613909"
         }
       ],
-      "updatedAt": "2026-11-12T14:15:00+01:00"
+      "updatedAt": "2026-11-12T14:28:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 2,
-      "reason": "Rocket Lab: Fans loben, dass die Firma ohne Drama einfach liefert. Space Investor vergleicht: Intuitive Machines hat gleich viel Umsatz bei 7 % des Börsenwerts.",
+      "score": 35,
+      "postsCount": 6,
+      "reason": "Rocket Lab: Anleger zeigen sich stolz und sehen die Aktie im Aufwärtstrend, einige erwarten bald 72 $. Berenbergs Kursziel 85 $ wird weiter geteilt.",
       "sources": [
         {
-          "title": "Lob: kein Drama, nur Arbeit",
-          "url": "https://x.com/Neil_Shares/status/2120857441009389627"
+          "title": "Stolz auf RKLB",
+          "url": "https://x.com/Money_or_Life_X/status/2120870121040400731"
         },
         {
-          "title": "Vergleich mit Intuitive Machines",
-          "url": "https://x.com/SpaceInvestor_D/status/2120860456940101828"
+          "title": "Chart: Ziel 72 $",
+          "url": "https://x.com/jezstrtickland/status/2120868784734941488"
         },
         {
-          "title": "Börsenwert fast 45 Mrd. $",
-          "url": "https://x.com/rmzerozero/status/2120853147161653340"
+          "title": "Berenberg: Kursziel 85 $",
+          "url": "https://x.com/RCapitalX/status/2120866116847428043"
         }
       ],
-      "updatedAt": "2026-11-12T14:15:00+01:00"
+      "updatedAt": "2026-11-12T14:28:00+01:00"
     }
   }
 }
