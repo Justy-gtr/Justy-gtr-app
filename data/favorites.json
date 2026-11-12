@@ -139,7 +139,7 @@
       "priceAsOf": "2026-11-04",
       "priceVenue": "Xetra",
       "swarmNote": "Die laute Mehrheit behandelt Nvidia weiter als den Kern der KI-Welle und liegt auf der Kaufseite.",
-      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl stehen Rechenzentren politisch unter Druck. Seit 8.11. läuft eine Untersuchung zu Huangs Affäre mit einer mutmaßlichen chinesischen Agentin; am 11.11. berichtete das WSJ, der Verwaltungsrat bereite seine Ablösung vor. Nachbörslich fiel die Aktie auf 158,78 $ (−8,6 %). Laut Bloomberg sucht der Verwaltungsrat mit einer externen Personalberatung schon Nachfolger, ein Beschluss ist bis Do früh nicht verkündet. Auf Xetra fiel die Aktie am Do früh auf 145,96 € (−7,8 %), Polymarket sieht 88 % für Huangs Abgang bis Jahresende (Reuters). Karl jagt den Namen nicht. Am Do 12.11. gegen 14:50 verkündete Nvidia Huangs Rücktritt mit sofortiger Wirkung; Finanzchefin Colette Kress ist Interimschefin, Harvey C. Jones erster Verwaltungsratsvorsitzender, die Zahlen am 17.11. kommen wie geplant (NVIDIA). Vorbörslich 155,99 $ (−10,2 %).",
+      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl stehen Rechenzentren politisch unter Druck. Seit 8.11. läuft eine Untersuchung zu Huangs Affäre mit einer mutmaßlichen chinesischen Agentin; am 11.11. berichtete das WSJ, der Verwaltungsrat bereite seine Ablösung vor. Nachbörslich fiel die Aktie auf 158,78 $ (−8,6 %). Laut Bloomberg sucht der Verwaltungsrat mit einer externen Personalberatung schon Nachfolger, ein Beschluss ist bis Do früh nicht verkündet. Auf Xetra fiel die Aktie am Do früh auf 145,96 € (−7,8 %), Polymarket sieht 88 % für Huangs Abgang bis Jahresende (Reuters). Karl jagt den Namen nicht. Am Do 12.11. gegen 14:50 verkündete Nvidia Huangs Rücktritt mit sofortiger Wirkung; Finanzchefin Colette Kress ist Interimschefin, Harvey C. Jones erster Verwaltungsratsvorsitzender, die Zahlen am 17.11. kommen wie geplant (NVIDIA). Vorbörslich 155,99 $ (−10,2 %). Zur US-Eröffnung fiel die Aktie bis 149,27 $ (−14,1 %), um 15:55 stand sie bei 161,06 $ (−7,3 %); seit Mittwoch senkten acht Analysten ihre Ziele auf im Schnitt 214 $ (Yahoo, Handelsblatt).",
       "counterArgument": "Die Aufträge können die Politik überholen. Wer zu früh aussteigt, verpasst die nächste Welle.",
       "example": false,
       "sources": [
@@ -186,6 +186,14 @@
         {
           "title": "NVIDIA: NVIDIA Announces CEO Transition (12.11.)",
           "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+        },
+        {
+          "title": "Handelsblatt: „Dunkles Kapitel für Nvidia“ – Analysten bewerten Aktie neu (12.11.)",
+          "url": "https://www.handelsblatt.com/finanzen/maerkte/geldanlage-dunkles-kapitel-fuer-nvidia-analysten-bewerten-aktie-neu/100269354.html"
+        },
+        {
+          "title": "SEC: Nvidia 8-K zu Huangs Rücktritt (12.11.)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
         }
       ]
     },
