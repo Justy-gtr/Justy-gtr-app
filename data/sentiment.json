@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T11:33:00+01:00",
+  "updatedAt": "2026-11-12T11:54:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -22,7 +22,7 @@
           "url": "https://x.com/teajayzz64/status/2120824295027064835"
         }
       ],
-      "updatedAt": "2026-11-12T11:33:00+01:00"
+      "updatedAt": "2026-11-12T11:54:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,14 +43,18 @@
           "url": "https://x.com/BradMunchen/status/2120811685980389457"
         }
       ],
-      "updatedAt": "2026-11-12T11:33:00+01:00"
+      "updatedAt": "2026-11-12T11:54:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 30,
+      "score": 35,
       "postsCount": 20,
-      "reason": "Rocket Lab: 100. Start am 14.11. steht an. Neutron wird teurer (70 statt 55 Mio. $), erste 16 Flüge schon vergeben. Vorbörslich leicht im Minus, viel Spam.",
+      "reason": "Rocket Lab: Berenberg hebt Kursziel auf 85 $, Startaufträge laufen 7-mal so schnell wie im Vorjahr. 100. Start am 14.11. Neutron bis in die 2030er ausgebucht.",
       "sources": [
+        {
+          "title": "Berenberg: Kursziel 85 $",
+          "url": "https://x.com/allday_stocks/status/2120831577794007438"
+        },
         {
           "title": "Neutron: 16 Flüge vergeben",
           "url": "https://x.com/HillaHaddad/status/2120814217800351858"
@@ -58,13 +62,9 @@
         {
           "title": "100. Start am 14.11.",
           "url": "https://x.com/PhoebePlague/status/2120816294039802048"
-        },
-        {
-          "title": "Vorbörse: RKLB -3 %",
-          "url": "https://x.com/BruceTa55302936/status/2120808146239402333"
         }
       ],
-      "updatedAt": "2026-11-12T11:33:00+01:00"
+      "updatedAt": "2026-11-12T11:54:00+01:00"
     }
   }
 }
