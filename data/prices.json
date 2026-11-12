@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-11-12T01:02:12.828Z",
+  "asOf": "2026-11-12T04:50:25.473Z",
   "example": false,
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1099,
+    "rate": 1.1084,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-12T01:02:12.828Z",
+    "asOf": "2026-11-12T04:50:25.473Z",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -33,7 +33,7 @@
       "eurSymbol": "SPX.DE",
       "usdSymbol": "SPCX",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1099,
+      "fxRate": 1.1084,
       "sparkline": [
         130.48,
         129.92,
@@ -6409,9 +6409,9 @@
       ],
       "fetchError": null,
       "overnightPhase": "nachhandel",
-      "overnightEur": 128.93,
-      "overnightHighEur": 129.1,
-      "overnightLowEur": 128.78,
+      "overnightEur": 129.11,
+      "overnightHighEur": 129.28,
+      "overnightLowEur": 128.95,
       "overnightAsOf": "2026-11-10T21:51:00.000Z",
       "source": "alpaca-iex"
     },
@@ -6436,7 +6436,7 @@
       "eurSymbol": "TL0.DE",
       "usdSymbol": "TSLA",
       "intradayMethod": "direct_eur",
-      "fxRate": 1.1099,
+      "fxRate": 1.1084,
       "sparkline": [
         344.3,
         344.4,
@@ -20560,9 +20560,9 @@
       ],
       "fetchError": null,
       "overnightPhase": "nachhandel",
-      "overnightEur": 342.14,
-      "overnightHighEur": 342.14,
-      "overnightLowEur": 341.87,
+      "overnightEur": 342.6,
+      "overnightHighEur": 342.6,
+      "overnightLowEur": 342.33,
       "overnightAsOf": "2026-11-10T21:50:00.000Z",
       "source": "alpaca-iex"
     },
@@ -20587,7 +20587,7 @@
       "eurSymbol": "6RJ0.F",
       "usdSymbol": "RKLB",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1099,
+      "fxRate": 1.1084,
       "sparkline": [
         56.9,
         56.8,
@@ -32270,7 +32270,7 @@
       "usdSymbol": "MRVL",
       "source": "alpaca-iex",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1099,
+      "fxRate": 1.1084,
       "sparkline": [
         146.02,
         146,
