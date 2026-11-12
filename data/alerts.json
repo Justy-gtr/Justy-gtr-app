@@ -337,8 +337,8 @@
       "id": "MRVL-2026-11-12",
       "symbol": "MRVL",
       "name": "Marvell Technology",
-      "changePct": -6.15,
-      "priceEur": 145.8,
+      "changePct": -6.13,
+      "priceEur": 142.98,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-11T23:29:18.815Z",
@@ -350,8 +350,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/MRVL/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance 9MW.DE",
-          "url": "https://finance.yahoo.com/quote/9MW.DE"
+          "title": "Yahoo Finance 9MW.SG",
+          "url": "https://finance.yahoo.com/quote/9MW.SG"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -367,10 +367,10 @@
       "id": "SPCX-2026-11-12",
       "symbol": "SPCX",
       "name": "SpaceX",
-      "changePct": -3.67,
-      "priceEur": 124.52,
+      "changePct": 2.32,
+      "priceEur": 128.9,
       "thresholdPct": 2,
-      "direction": "down",
+      "direction": "up",
       "timestamp": "2026-11-12T10:30:37.989Z",
       "notified": false,
       "example": false,
@@ -380,8 +380,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/SPCX/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance SPX.DE",
-          "url": "https://finance.yahoo.com/quote/SPX.DE"
+          "title": "Yahoo Finance SPX.SG",
+          "url": "https://finance.yahoo.com/quote/SPX.SG"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -397,8 +397,8 @@
       "id": "RKLB-2026-11-12",
       "symbol": "RKLB",
       "name": "Rocket Lab",
-      "changePct": -2.86,
-      "priceEur": 57.8,
+      "changePct": -6.28,
+      "priceEur": 56.7,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-12T11:30:23.749Z",
@@ -410,8 +410,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/RKLB/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance 6RJ0.SG",
-          "url": "https://finance.yahoo.com/quote/6RJ0.SG"
+          "title": "Yahoo Finance 6RJ0.F",
+          "url": "https://finance.yahoo.com/quote/6RJ0.F"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
