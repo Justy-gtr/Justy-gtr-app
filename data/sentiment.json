@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T15:18:00+01:00",
+  "updatedAt": "2026-11-12T15:36:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 25,
+      "score": 30,
       "postsCount": 12,
-      "reason": "SpaceX: Während KI-Cloud-Werte nach Huangs Rücktritt stark fallen, liegt SpaceX vorbörslich nur knapp 1 % im Minus. Booster B22 rollt für den ersten V3-Fang raus.",
+      "reason": "SpaceX: Großes Thema bleibt, ob Huang zu SpaceX wechselt; laut Zerohedge steigen die Wettquoten dafür. Fans träumen von Terafab-Chips, Skeptiker halten das für Unsinn.",
       "sources": [
         {
-          "title": "KI-Werte fallen, SpaceX kaum",
-          "url": "https://x.com/spcxGOD/status/2120881803409981750"
+          "title": "Zerohedge: Wettquoten steigen",
+          "url": "https://x.com/zerohedge/status/2120883398889591027"
         },
         {
-          "title": "Booster B22 rollt raus",
-          "url": "https://x.com/EleanorTice420/status/2120882797464134024"
+          "title": "Huang für Terafab?",
+          "url": "https://x.com/TheDukeofKewpie/status/2120884118821245304"
         },
         {
-          "title": "State Street stockt auf",
-          "url": "https://x.com/kongbaest/status/2120882507784618436"
+          "title": "Skeptiker: Unsinn",
+          "url": "https://x.com/RedRoccck/status/2120884786684182611"
         }
       ],
-      "updatedAt": "2026-11-12T15:18:00+01:00"
+      "updatedAt": "2026-11-12T15:36:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,7 +43,7 @@
           "url": "https://x.com/thecryptosharma/status/2120882831148589423"
         }
       ],
-      "updatedAt": "2026-11-12T15:18:00+01:00"
+      "updatedAt": "2026-11-12T15:36:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/millennialinv16/status/2120879470991003803"
         }
       ],
-      "updatedAt": "2026-11-12T15:18:00+01:00"
+      "updatedAt": "2026-11-12T15:36:00+01:00"
     }
   }
 }
