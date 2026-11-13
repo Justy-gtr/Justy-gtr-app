@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T09:58:00+01:00",
+  "updatedAt": "2026-11-13T10:03:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
       "postsCount": 20,
-      "reason": "SpaceX: Starship Flug 15 heute ab 23:45 Uhr mit erstem Doppel-Fang ist Hauptthema, FAA-Freigabe offen. Dazu viel Gerede über die Fusion mit Tesla.",
+      "reason": "SpaceX: Alles schaut auf Starship Flug 15 heute ab 23:45 Uhr mit erstem Doppel-Fang. Dazu Gerede über Fusion mit Tesla und 74-Mrd-KI-Rechenzentren.",
       "sources": [
         {
-          "title": "Space.com: „Don't panic“ auf Starship",
-          "url": "https://x.com/SPACEdotcom/status/2121153559505047568"
+          "title": "SpaceX 101 vor Flug 15",
+          "url": "https://x.com/spcxGOD/status/2121158628858093754"
         },
         {
-          "title": "Flug 15 heute, Fusion im Dezember?",
-          "url": "https://x.com/AsLongAslCan/status/2121139566228685096"
+          "title": "Heute erster Doppel-Fang?",
+          "url": "https://x.com/RoviHere/status/2121162608073937229"
         },
         {
-          "title": "Ship 42 steht auf der Startrampe",
-          "url": "https://x.com/DimaZeniuk/status/2121152026776109191"
+          "title": "Flug 15: Startfenster heute",
+          "url": "https://x.com/Bjoern_Hev/status/2121161811508556115"
         }
       ],
-      "updatedAt": "2026-11-13T09:58:00+01:00"
+      "updatedAt": "2026-11-13T10:03:00+01:00"
     },
     "TSLA": {
-      "mood": "gut",
-      "score": 20,
+      "mood": "gemischt",
+      "score": 5,
       "postsCount": 20,
-      "reason": "Tesla: Fusion mit SpaceX bleibt Thema Nummer eins, offen ist das Umtauschverhältnis. Einige nennen die Aktie im Vergleich zu Toyota zu teuer.",
+      "reason": "Tesla: Fusion mit SpaceX bleibt Hauptthema, aber einige Anleger fürchten, dabei schlechter wegzukommen. Viele Spam-Beiträge, wenig echte News.",
       "sources": [
         {
-          "title": "Fusion schon im Dezember?",
-          "url": "https://x.com/dukethefifthh/status/2121145990216290546"
+          "title": "IBD: Fusion bis Dezember?",
+          "url": "https://x.com/investvize_com/status/2121162148667879770"
         },
         {
-          "title": "Der Aktionär: Fusion im Dezember?",
-          "url": "https://x.com/aktionaer/status/2121152123274428528"
+          "title": "Kritik: Fusion schadet Tesla-Anlegern",
+          "url": "https://x.com/New_Dimension10/status/2121165221385400727"
         },
         {
-          "title": "Tesla oder Toyota?",
-          "url": "https://x.com/meqiri_official/status/2121135984121426073"
+          "title": "Kein Aufschlag für Tesla bei Fusion",
+          "url": "https://x.com/SeeYouAt10X/status/2121159172775641154"
         }
       ],
-      "updatedAt": "2026-11-13T09:58:00+01:00"
+      "updatedAt": "2026-11-13T10:03:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 40,
-      "postsCount": 6,
-      "reason": "Rocket Lab: Wenige neue Beiträge. Vorfreude auf den 100. Electron-Start Samstag 06:30 Uhr, Lob für Peter Becks Fragerunde. Kaum Kritik.",
+      "postsCount": 8,
+      "reason": "Rocket Lab: Vorfreude auf den goldenen 100. Electron-Start Samstag 06:30 Uhr. Dazu Beiträge über 150-Mio-Kredit vom Pentagon und Neutron-Nachfrage.",
       "sources": [
         {
-          "title": "100. Electron-Start",
-          "url": "https://x.com/matiere/status/2121148168180322627"
+          "title": "Goldene 100. Electron",
+          "url": "https://x.com/mspetersenpicks/status/2121159357995872743"
         },
         {
-          "title": "These: Neutron setzt die Preise",
-          "url": "https://x.com/MegatrendMaster/status/2121153161671172375"
+          "title": "Pentagon-Kredit für Rocket Lab",
+          "url": "https://x.com/RakibKhan0073/status/2121160651490082916"
         },
         {
-          "title": "Starts heute",
-          "url": "https://x.com/theSpacecyborg/status/2121137948926390662"
+          "title": "Neuseeland feiert",
+          "url": "https://x.com/Gykiwi03/status/2121163352676479460"
         }
       ],
-      "updatedAt": "2026-11-13T09:39:00+01:00"
+      "updatedAt": "2026-11-13T10:03:00+01:00"
     }
   }
 }
