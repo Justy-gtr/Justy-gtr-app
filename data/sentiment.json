@@ -1,12 +1,12 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T14:58:00+01:00",
+  "updatedAt": "2026-11-13T15:02:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
-      "postsCount": 14,
+      "postsCount": 20,
       "reason": "SpaceX: Vorbörslich rund +1 % bei 141 $. Alle schauen auf den ersten Doppel-Fang bei Flug 15 heute ab 23:45 Uhr. Einige meinen, er könnte das Fusionsverhältnis beeinflussen.",
       "sources": [
         {
@@ -22,7 +22,7 @@
           "url": "https://x.com/spcxGOD/status/2121239156776943884"
         }
       ],
-      "updatedAt": "2026-11-13T14:58:00+01:00"
+      "updatedAt": "2026-11-13T15:02:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,13 +43,13 @@
           "url": "https://x.com/viaNexusHQ/status/2121235103829385372"
         }
       ],
-      "updatedAt": "2026-11-13T14:58:00+01:00"
+      "updatedAt": "2026-11-13T15:02:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 45,
-      "postsCount": 15,
-      "reason": "Rocket Lab: Vorfreude auf den 100. Electron-Start Samstag früh für iQPS aus Japan. Anleger rechnen vor, dass zwei Aktienverträge bis zu 370 Mio. $ bringen könnten.",
+      "score": 50,
+      "postsCount": 18,
+      "reason": "Rocket Lab: Alle 8 Globalstar-Satelliten auf Rocket-Lab-Plattformen haben die ersten Tests im All bestanden. Dazu Vorfreude auf den 100. Electron-Start Samstag früh.",
       "sources": [
         {
           "title": "100. Electron-Start Samstag",
@@ -60,11 +60,11 @@
           "url": "https://x.com/rocket__house/status/2121238377001324695"
         },
         {
-          "title": "Raumfahrtwerte weiter stark",
-          "url": "https://x.com/BuyAtSupport/status/2121235650825355361"
+          "title": "Globalstar-Satelliten bestehen Tests",
+          "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
         }
       ],
-      "updatedAt": "2026-11-13T14:58:00+01:00"
+      "updatedAt": "2026-11-13T15:02:00+01:00"
     }
   }
 }
