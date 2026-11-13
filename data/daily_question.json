@@ -1,16 +1,16 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-12-rklb",
-    "date": "2026-11-12",
-    "question": "Schließt RKLB am Freitag, 13. November, an der Nasdaq höher als am Donnerstag (64,07 $)?",
+    "id": "2026-11-13-rklb",
+    "date": "2026-11-13",
+    "question": "Schließt RKLB am Montag, 16. November, an der Nasdaq höher als am Freitag (61,53 $)?",
     "karlAnswer": "ja",
-    "karlReason": "Knapp „ja“, etwa 52 zu 48. Nach −3,1 % am Donnerstag stand die Aktie nachbörslich um 22:03 bei 64,38 $, leicht im Plus (Yahoo). Dafür spricht: Der 100. Electron-Start „The Mountain God Rises“ steht für Sa 14.11. an, und Raumfahrtwerte schauen auf Starship Flight 15 am Freitagabend. Dagegen: gesenkte Kursziele von Morgan Stanley, Needham, Piper Sandler und Barclays, die US-Rendite über 5 % und am Freitag 14:30 die Erzeugerpreise (Sina/Gelonghui, Yahoo).",
+    "karlReason": "Knapp „ja“, etwa 55 zu 45. Am Wochenende kommen zwei Ereignisse, die Raumfahrtwerten helfen können: der 100. Electron-Start am Sa ab 06:30 Berlin (Rocket Lab) und Starship Flight 15 heute um 23:45, für den die FAA am Abend die Lizenz erteilt hat (Seeking Alpha). Nach −4,0 % am Freitag liegt RKLB nachbörslich bei 60,83 $ (Yahoo). Dagegen: Der Chip- und KI-Ausverkauf nach Huangs Rücktritt ist nicht vorbei, die zehnjährige US-Rendite steht bei 5,15 %, und Nvidia legt erst am Di 17.11. Zahlen vor (Yahoo, Reuters). Scheitert einer der Starts, kippt die Frage eher zu „nein“.",
     "outcome": null,
-    "resolvesAt": "2026-11-13T22:15:00+01:00",
+    "resolvesAt": "2026-11-16T22:15:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: RKLB (Schluss 12.11. 64,07 $, Nachbörse)",
+        "title": "Yahoo Finance: RKLB (Schluss 13.11. 61,53 $, Nachbörse)",
         "url": "https://finance.yahoo.com/quote/RKLB/"
       },
       {
@@ -18,16 +18,51 @@
         "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
       },
       {
-        "title": "Sina/Gelonghui: Mehrere Banken senken Rocket-Lab-Ziele (12.11.)",
-        "url": "https://finance.sina.com.cn/stock/bxjj/2026-11-12/doc-iniynpnv1145867.shtml"
+        "title": "@RocketLab: Übertragung Sa 04:30 UTC, Fenster 05:30 UTC (13.11., 20:21)",
+        "url": "https://x.com/RocketLab/status/2121322570364670251"
       },
       {
-        "title": "SpaceX: Starship Flight 15",
-        "url": "https://www.spacex.com/launches/starship-flight-15"
+        "title": "Seeking Alpha: FAA erteilt geänderte Lizenz VOL 23-129 Rev. 10 für einen Flight-15-Start (13.11.)",
+        "url": "https://seekingalpha.com/news/4672602-faa-revises-spacex-starship-license-authorizes-single-flight-15-launch"
+      },
+      {
+        "title": "Reuters via Euronext: Aktien fallen mit Tech, Dollar auf 19-Monats-Hoch (13.11.)",
+        "url": "https://live.euronext.com/en/financial-news/stocks-fall-tech-nvidia-concerns-us-dollar-climbs"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-12-rklb",
+      "date": "2026-11-12",
+      "question": "Schließt RKLB am Freitag, 13. November, an der Nasdaq höher als am Donnerstag (64,07 $)?",
+      "karlAnswer": "ja",
+      "karlReason": "Knapp „ja“, etwa 52 zu 48. Nach −3,1 % am Donnerstag stand die Aktie nachbörslich um 22:03 bei 64,38 $, leicht im Plus (Yahoo). Dafür spricht: Der 100. Electron-Start „The Mountain God Rises“ steht für Sa 14.11. an, und Raumfahrtwerte schauen auf Starship Flight 15 am Freitagabend. Dagegen: gesenkte Kursziele von Morgan Stanley, Needham, Piper Sandler und Barclays, die US-Rendite über 5 % und am Freitag 14:30 die Erzeugerpreise (Sina/Gelonghui, Yahoo). Ergebnis: RKLB schloss am Fr bei 61,53 $, 4,0 % unter den 64,07 $ vom Donnerstag (Yahoo). Karls „ja“ lag daneben: Der Chip- und KI-Ausverkauf nach Huangs Rücktritt bei Nvidia zog auch Wachstumswerte nach unten, der Electron-Start und Flight 15 halfen vorab nicht.",
+      "outcome": "nein",
+      "resolvesAt": "2026-11-13T22:15:00+01:00",
+      "sources": [
+        {
+          "title": "Yahoo Finance: RKLB (Schluss 12.11. 64,07 $, Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        },
+        {
+          "title": "Sina/Gelonghui: Mehrere Banken senken Rocket-Lab-Ziele (12.11.)",
+          "url": "https://finance.sina.com.cn/stock/bxjj/2026-11-12/doc-iniynpnv1145867.shtml"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
+        },
+        {
+          "title": "Yahoo Finance: RKLB Schluss 13.11. (61,53 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        }
+      ]
+    },
     {
       "id": "2026-11-11-rklb",
       "date": "2026-11-11",

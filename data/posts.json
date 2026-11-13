@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-13T20:05:00+01:00",
+  "asOf": "2026-11-13T22:05:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,158 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2121345211959804234",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-13T21:51:25+01:00",
+      "summaryDe": "Musk antwortet einem Ex-Tesla-Ingenieur, der Nvidia-Mitarbeitern rät zu kündigen, wenn sie Huang zurückwollen: „Eine Petition für Huangs Wiedereinsetzung läuft, und ich unterschreibe auch.“ Bei Nvidia sammelt ein interner Beitrag über 1.600 Kommentare für Huangs Rückkehr (WIRED); ein kursierender Brief mit angeblich Hunderten Unterschriften ist unbestätigt.",
+      "originalText": "@yunta_tsai A petition is underway to reinstate Jensen and I’m signing it too",
+      "url": "https://x.com/elonmusk/status/2121345211959804234",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "Nvidia",
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (13.11., 21:51)",
+          "url": "https://x.com/elonmusk/status/2121345211959804234"
+        },
+        {
+          "title": "@yunta_tsai: „resign and chill“ (13.11., 15:01)",
+          "url": "https://x.com/yunta_tsai/status/2121242163644412202"
+        },
+        {
+          "title": "WIRED: Nvidia-Mitarbeiter fordern Huangs Rückkehr (13.11.)",
+          "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/"
+        },
+        {
+          "title": "FactCheckRadar: Brief mit „Hunderten Unterschriften“ unbestätigt (13.11.)",
+          "url": "https://www.factcheckradar.com/fact-check/did-hundreds-of-nvidia-employees-sign-a-letter-demanding-huang-return"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2121322570364670251",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-13T20:21:27+01:00",
+      "summaryDe": "Rocket Lab: Den 100. Electron-Start live sehen – die Übertragung beginnt Sa 14.11. um 04:30 UTC (05:30 Berlin), eine Stunde bevor das Startfenster um 05:30 UTC (06:30 Berlin) öffnet.",
+      "originalText": "Watch our 100th Electron launch LIVE: … Livestream begins Saturday November 14th 04:30 UTC. That's T-1 hour before the launch window opens at 05:30 UTC.",
+      "url": "https://x.com/RocketLab/status/2121322570364670251",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (13.11., 20:21)",
+          "url": "https://x.com/RocketLab/status/2121322570364670251"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2121322099679879173",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-13T20:19:35+01:00",
+      "summaryDe": "Rocket Lab: „Um viele Raketen zu starten, muss man viele bauen.“ Die Fabrik produziert derzeit alle 8 Tage eine Electron; die 3D-gedruckten Rutherford-Triebwerke werden vor dem Flug mehrfach gezündet.",
+      "originalText": "To launch a lot of rockets, you need to build a lot of rockets.\n\nOur factory is currently producing Electron at a rate of one rocket every 8 days.",
+      "url": "https://x.com/RocketLab/status/2121322099679879173",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (13.11., 20:19)",
+          "url": "https://x.com/RocketLab/status/2121322099679879173"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121316611974185273",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-13T19:57:47+01:00",
+      "summaryDe": "Musk: „Etwa 4 Stunden bis Flight 15“ – er teilt den Livestream-Link von SpaceX. Kurz danach, gegen 20:15 Berlin, meldete Space.com die FAA-Lizenz für den Start.",
+      "originalText": "About 4 hours to Flight 15",
+      "url": "https://x.com/elonmusk/status/2121316611974185273",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (13.11., 19:57)",
+          "url": "https://x.com/elonmusk/status/2121316611974185273"
+        },
+        {
+          "title": "@SpaceX: „Watch Starship Flight 15“ (13.11., 19:56)",
+          "url": "https://x.com/SpaceX/status/2121316300702056595"
+        },
+        {
+          "title": "Space.com-Liveblog: „Game on!“ – FAA-Freigabe für Flight 15 (13.11., 20:15 Berlin)",
+          "url": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-13-2026-starship-first-double-landing-attempt"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2121316300702056595",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-13T19:56:32+01:00",
+      "summaryDe": "SpaceX verlinkt den Livestream zu Starship Flight 15. Startfenster heute 23:45 Berlin (75 Minuten); geplant ist erstmals, Booster 22 und Ship 42 mit dem Turm zu fangen. Die FAA-Lizenz kam kurz danach (Space.com, Seeking Alpha).",
+      "originalText": "Watch Starship Flight 15",
+      "url": "https://x.com/SpaceX/status/2121316300702056595",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (13.11., 19:56)",
+          "url": "https://x.com/SpaceX/status/2121316300702056595"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
+        },
+        {
+          "title": "Space.com-Liveblog: „Game on!“ – FAA-Freigabe für Flight 15 (13.11., 20:15 Berlin)",
+          "url": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-13-2026-starship-first-double-landing-attempt"
+        },
+        {
+          "title": "Seeking Alpha: FAA erteilt geänderte Lizenz VOL 23-129 Rev. 10 für einen Flight-15-Start (13.11.)",
+          "url": "https://seekingalpha.com/news/4672602-faa-revises-spacex-starship-license-authorizes-single-flight-15-launch"
+        }
+      ]
+    },
     {
       "id": "post-rocketlab-2121315229800030438",
       "account": "@RocketLab",
@@ -7316,5 +7468,5 @@
       ]
     }
   ],
-  "notes": "13.11. 20:05: Neu zwei @RocketLab-Posts (100. Start: Fenster öffnet in 12 Stunden; Space-Force-Mission VICTUS HAZE). Seit 17:00 Berlin keine neuen Posts von @elonmusk, @SpaceX, @Tesla, @xai, @neuralink oder @boringcompany (X-Abfrage)."
+  "notes": "13.11. 22:05: Neu: @SpaceX-Livestream und Musk „etwa 4 Stunden bis Flight 15“, Musk zur Petition für Huangs Rückkehr, zwei @RocketLab-Posts (Fabrik alle 8 Tage eine Electron, Übertragung 100. Start). Musks Werbe-Posts für Grok Bot und reine Reposts nicht aufgenommen (X-Abfrage)."
 }
