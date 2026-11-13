@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T09:07:00+01:00",
+  "updatedAt": "2026-11-13T09:16:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -10,8 +10,8 @@
       "reason": "SpaceX: Starship Flug 15 heute ab 23:45 Uhr mit erstem Doppel-Fang ist Hauptthema, FAA-Freigabe offen. Dazu viel Gerede über die Fusion mit Tesla.",
       "sources": [
         {
-          "title": "Wie viel Starlink passt auf Starship",
-          "url": "https://x.com/spcxGOD/status/2121143527627202656"
+          "title": "Space.com: „Don't panic“ auf Starship",
+          "url": "https://x.com/SPACEdotcom/status/2121153559505047568"
         },
         {
           "title": "Flug 15 heute, Fusion im Dezember?",
@@ -22,7 +22,7 @@
           "url": "https://x.com/DimaZeniuk/status/2121152026776109191"
         }
       ],
-      "updatedAt": "2026-11-13T09:07:00+01:00"
+      "updatedAt": "2026-11-13T09:16:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,12 +43,12 @@
           "url": "https://x.com/meqiri_official/status/2121135984121426073"
         }
       ],
-      "updatedAt": "2026-11-13T09:07:00+01:00"
+      "updatedAt": "2026-11-13T09:16:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 40,
-      "postsCount": 4,
+      "postsCount": 6,
       "reason": "Rocket Lab: Wenige neue Beiträge. Vorfreude auf den 100. Electron-Start Samstag 06:30 Uhr, Lob für Peter Becks Fragerunde. Kaum Kritik.",
       "sources": [
         {
@@ -56,15 +56,15 @@
           "url": "https://x.com/matiere/status/2121148168180322627"
         },
         {
-          "title": "Lob für Peter Beck",
-          "url": "https://x.com/HildaBrunnn/status/2121140665765834990"
+          "title": "These: Neutron setzt die Preise",
+          "url": "https://x.com/MegatrendMaster/status/2121153161671172375"
         },
         {
           "title": "Starts heute",
           "url": "https://x.com/theSpacecyborg/status/2121137948926390662"
         }
       ],
-      "updatedAt": "2026-11-13T09:05:00+01:00"
+      "updatedAt": "2026-11-13T09:16:00+01:00"
     }
   }
 }
