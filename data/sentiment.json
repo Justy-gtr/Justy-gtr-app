@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T16:23:00+01:00",
+  "updatedAt": "2026-11-13T16:30:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gut",
-      "score": 20,
-      "postsCount": 20,
-      "reason": "SpaceX: Der Markt rutscht ab, SpaceX fällt unter das Tief vor Börsenstart. Trotzdem überwiegt die Vorfreude auf den Doppel-Fang bei Flug 15. Die FAA-Freigabe fehlt noch.",
+      "mood": "gemischt",
+      "score": 15,
+      "postsCount": 25,
+      "reason": "SpaceX: Leicht schwächer um 138 $. SpaceX-Anleger ärgern sich, dass ein Fusions-Aufschlag für Tesla ihre Anteile verwässert. Vorfreude auf Flug 15, FAA-Lizenz fehlt noch.",
       "sources": [
         {
-          "title": "Markt kippt schnell, auch SPCX",
-          "url": "https://x.com/squawksquare/status/2121257988229067089"
+          "title": "Aufschlag für Tesla verwässert SpaceX",
+          "url": "https://x.com/TheFiscalNexus/status/2121263667073503469"
         },
         {
-          "title": "Morgan Stanley: Flug 15 unterschätzt",
-          "url": "https://x.com/RocketTerminal/status/2121256774749532362"
+          "title": "Flug 15: FAA-Lizenz fehlt noch",
+          "url": "https://x.com/JoshSharp/status/2121262424506388634"
         },
         {
-          "title": "KeyBanc: Wendepunkt für Starship",
-          "url": "https://x.com/electrickaos_/status/2121256865015214446"
+          "title": "Zweite große Wette auf fallende Kurse",
+          "url": "https://x.com/DarkFlowAlert/status/2121261665328980250"
         }
       ],
-      "updatedAt": "2026-11-13T16:23:00+01:00"
+      "updatedAt": "2026-11-13T16:30:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": -5,
       "postsCount": 25,
-      "reason": "Tesla: Vorbörslich über 400 $, jetzt um 394 $ (rund -1 %). Tech wird breit abverkauft, einige wetten auf weitere Verluste. Bei der SpaceX-Fusion streiten Fans und Skeptiker.",
+      "reason": "Tesla: Um 394 $, Tech wird breit abverkauft. Viel Streit über die SpaceX-Fusion: Manche meinen, der Aufschlag ist schon im Kurs, andere sehen Tesla-Aktionäre als Gewinner.",
       "sources": [
         {
-          "title": "Märkte kippen schnell",
-          "url": "https://x.com/squawksquare/status/2121257988229067089"
+          "title": "Aufschlag schon im Kurs?",
+          "url": "https://x.com/MirageWL8/status/2121263782366527742"
         },
         {
           "title": "Tech-Abverkauf zum Start",
           "url": "https://x.com/TheBronxViking/status/2121257929647247433"
         },
         {
-          "title": "Von über 400 $ auf rund 390 $",
-          "url": "https://x.com/GorillaWing/status/2121258080876818803"
+          "title": "Aufschlag für Tesla verwässert SpaceX",
+          "url": "https://x.com/TheFiscalNexus/status/2121263667073503469"
         }
       ],
-      "updatedAt": "2026-11-13T16:23:00+01:00"
+      "updatedAt": "2026-11-13T16:30:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
         }
       ],
-      "updatedAt": "2026-11-13T16:23:00+01:00"
+      "updatedAt": "2026-11-13T16:30:00+01:00"
     }
   }
 }
