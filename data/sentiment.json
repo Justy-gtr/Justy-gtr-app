@@ -1,13 +1,13 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T15:35:00+01:00",
+  "updatedAt": "2026-11-13T15:40:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
       "postsCount": 20,
-      "reason": "SpaceX: Um 141 $. Große Konten sehen den Doppel-Fang bei Flug 15 heute ab 23:45 Uhr als Test für günstigere Starts. Unsicher: Die FAA-Lizenz fehlt laut Reuters noch.",
+      "reason": "SpaceX: Um 140 $. Große Konten sehen den Doppel-Fang bei Flug 15 heute ab 23:45 Uhr als Test für günstigere Starts. Unsicher: Die FAA-Lizenz fehlt laut Reuters noch.",
       "sources": [
         {
           "title": "Doppel-Fang als Kostentest",
@@ -22,7 +22,7 @@
           "url": "https://x.com/theSpacecyborg/status/2121248348023714235"
         }
       ],
-      "updatedAt": "2026-11-13T15:35:00+01:00"
+      "updatedAt": "2026-11-13T15:40:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,7 +43,7 @@
           "url": "https://x.com/viaNexusHQ/status/2121235103829385372"
         }
       ],
-      "updatedAt": "2026-11-13T15:35:00+01:00"
+      "updatedAt": "2026-11-13T15:40:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
         }
       ],
-      "updatedAt": "2026-11-13T15:35:00+01:00"
+      "updatedAt": "2026-11-13T15:40:00+01:00"
     }
   }
 }
