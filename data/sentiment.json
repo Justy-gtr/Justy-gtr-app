@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T15:07:00+01:00",
+  "updatedAt": "2026-11-13T15:13:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,28 +22,28 @@
           "url": "https://x.com/spcxGOD/status/2121239156776943884"
         }
       ],
-      "updatedAt": "2026-11-13T15:07:00+01:00"
+      "updatedAt": "2026-11-13T15:13:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 20,
-      "postsCount": 15,
-      "reason": "Tesla: Vorbörslich rund +1,5 %, Fusionsgespräche mit SpaceX laut Bloomberg weit fortgeschritten. Kritik: Günstigstes Model Y AWD gestrichen, Texas prüft den Deal.",
+      "score": 25,
+      "postsCount": 20,
+      "reason": "Tesla: Vorbörslich wieder über 400 $, rund +15 % in einer Woche. Große Konten sehen Aufwärtstrend und reden über die SpaceX-Fusion. Gegenwind: Texas will den Deal streng prüfen.",
       "sources": [
         {
           "title": "Bloomberg: Fusion schon im Dezember?",
           "url": "https://x.com/Themachac/status/2121237752964649101"
         },
         {
-          "title": "Model Y AWD 8.000 $ teurer",
-          "url": "https://x.com/CKEVS1998/status/2121237564371955819"
+          "title": "Wieder über 400 $, Aufwärtstrend",
+          "url": "https://x.com/TheProfInvestor/status/2121244216018026860"
         },
         {
           "title": "Texas bedroht Fusion",
           "url": "https://x.com/viaNexusHQ/status/2121235103829385372"
         }
       ],
-      "updatedAt": "2026-11-13T15:07:00+01:00"
+      "updatedAt": "2026-11-13T15:13:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
         }
       ],
-      "updatedAt": "2026-11-13T15:07:00+01:00"
+      "updatedAt": "2026-11-13T15:13:00+01:00"
     }
   }
 }
