@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T13:17:00+01:00",
+  "updatedAt": "2026-11-13T13:35:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
+      "score": 45,
       "postsCount": 15,
-      "reason": "SpaceX: Countdown zu Starship Flug 15 heute ab 23:45 Uhr, große Accounts erwarten den bisher ehrgeizigsten Flug. Neu: Pläne für 5G-Basisstationen mit Qualcomm ab 2027.",
+      "reason": "SpaceX: Großer Starship-Tag. Auch Accounts mit viel Reichweite feiern den geplanten Doppel-Fang bei Flug 15 heute ab 23:45 Uhr. Die FAA-Freigabe fehlt aber weiter.",
       "sources": [
         {
-          "title": "XFreeze: Flug 15 heute",
-          "url": "https://x.com/XFreeze/status/2121213729723633814"
+          "title": "Shay Boloor: erster Doppel-Fang",
+          "url": "https://x.com/StockSavvyShay/status/2121218789551554676"
         },
         {
-          "title": "5G-Basisstationen mit Qualcomm",
-          "url": "https://x.com/allday_stocks/status/2121213641546441153"
+          "title": "DekmarTrades: historischer Test",
+          "url": "https://x.com/DekmarTrades/status/2121217934127136914"
         },
         {
-          "title": "5 Notfall-Landeoptionen für Flug 15",
-          "url": "https://x.com/Napoleon__Bon/status/2121215360280248370"
+          "title": "Start noch ohne Freigabe",
+          "url": "https://x.com/TheFutSig/status/2121219098558472623"
         }
       ],
-      "updatedAt": "2026-11-13T13:17:00+01:00"
+      "updatedAt": "2026-11-13T13:35:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 15,
-      "reason": "Tesla: Robotaxi fährt jetzt rund um die Uhr in allen Städten, Musk teilt das. Aktie vorbörslich knapp unter 400 $. Fusion bleibt Thema, manche wollen erst die Bedingungen sehen.",
+      "score": 25,
+      "postsCount": 14,
+      "reason": "Tesla: Neue Batterielinie in Tilburg und Optimus-Jobs in Grünheide kommen gut an. Kritik: MotorTrend sieht Rivian R2 vor dem Model Y. Fusion bleibt Thema.",
       "sources": [
         {
-          "title": "Benzinga: Robotaxi jetzt 24/7",
-          "url": "https://x.com/Benzinga/status/2121212229819449425"
+          "title": "Neue Batterielinie in Tilburg",
+          "url": "https://x.com/EFIEBER_ANDRE/status/2121218807293198336"
         },
         {
-          "title": "Tesla nähert sich 400 $",
-          "url": "https://x.com/wirequantsspace/status/2121210373550301306"
+          "title": "Optimus-Training in Grünheide",
+          "url": "https://x.com/traderzeitung/status/2121217317145072076"
         },
         {
-          "title": "Skepsis: erst Fusionsbedingungen sehen",
-          "url": "https://x.com/BigpoppaTodd/status/2121212236349808848"
+          "title": "Rivian R2 schlägt Model Y",
+          "url": "https://x.com/rivianledger/status/2121217728849813982"
         }
       ],
-      "updatedAt": "2026-11-13T13:17:00+01:00"
+      "updatedAt": "2026-11-13T13:35:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 45,
-      "postsCount": 15,
-      "reason": "Rocket Lab: Ruhige Stunde, Fans freuen sich auf den 100. Electron-Start Samstag 06:30 Uhr und teilen Bilder von der Startrampe. Sonst viele Werbe- und Spam-Beiträge.",
+      "score": 40,
+      "postsCount": 9,
+      "reason": "Rocket Lab: Wenige Beiträge. Peter Beck will bei Rechenzentren im All lieber schneller Nachzügler sein. Neutron-Aufträge gelten als Plus, der Start erst 2027 bremst.",
       "sources": [
         {
-          "title": "Bilder von der Startrampe LC-1",
-          "url": "https://x.com/MrsIglesiasRKLB/status/2121211949166018869"
+          "title": "Beck: schneller Nachzügler",
+          "url": "https://x.com/EarningsNugget/status/2121219027616030919"
+        },
+        {
+          "title": "Neutron-Aufträge und Start 2027",
+          "url": "https://x.com/grok/status/2121219116375671066"
         },
         {
           "title": "Sky Tower leuchtet zum 100. Start",
           "url": "https://x.com/MrsIglesiasRKLB/status/2121205006007496715"
-        },
-        {
-          "title": "ARK kauft 15.114 RKLB-Aktien",
-          "url": "https://x.com/ArkkDaily/status/2121202833806528782"
         }
       ],
-      "updatedAt": "2026-11-13T13:17:00+01:00"
+      "updatedAt": "2026-11-13T13:35:00+01:00"
     }
   }
 }
