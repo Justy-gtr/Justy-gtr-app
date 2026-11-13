@@ -5356,7 +5356,7 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Fr 14:05: In Xetra rund −1,3 % bei 127,32 € (Kursabruf 13:23), ohne eigene neue Nachricht. Im Fokus steht Starship Flight 15 heute um 23:45: Laut Reuters lag bis Freitagmorgen US-Zeit noch keine FAA-Lizenz vor, die SpaceX-Seite schreibt weiter „pending regulatory approval“ (Reuters/CNA, SpaceX). Rückenwind gibt der Bloomberg-Bericht, dass eine Fusion mit Tesla schon im Dezember verkündet werden könnte (RTÉ). Dax gegen Mittag leicht im Plus, die Rendite zehnjähriger Bundesanleihen steigt auf rund 3,38 %; um 14:30 kommen die US-Erzeugerpreise (Goldesel nach dpa-AFX).",
+      "why": "Stand Fr 15:10: In Xetra rund −1,1 % bei 127,60 € (Kursabruf 14:42), vorbörslich in den USA kaum verändert bei 139,98 $ (Yahoo). Eine eigene neue Nachricht gibt es nicht. Alles wartet auf Starship Flight 15 um 23:45: Bis Freitagmorgen US-Zeit lag keine FAA-Lizenz vor, die SpaceX-Seite schreibt weiter „pending regulatory approval“ (Reuters/CNA, SpaceX). Rückenwind vom Markt: Die US-Erzeugerpreise stiegen im Oktober nur um 0,3 % statt 0,4 %, die US-Futures legten danach rund 0,5 % zu (CNBC, Trading Economics).",
       "whySources": [
         {
           "title": "Yahoo Finance: SpaceX Xetra (SPX.DE)",
@@ -5371,12 +5371,12 @@
           "url": "https://www.spacex.com/launches/starship-flight-15"
         },
         {
-          "title": "RTÉ: Fusionsgespräche SpaceX–Tesla schreiten voran (13.11., 09:39)",
-          "url": "https://www.rte.ie/news/business/2026/1113/1599074-spacex-tesla-merger-talks/"
+          "title": "CNBC: PPI Oktober +0,3 % statt 0,4 % (13.11.)",
+          "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html"
         },
         {
-          "title": "Goldesel: Mittagsupdate 13.11. – Dax dreht ins Plus, Senat lädt Huang vor (11:39, nach dpa-AFX)",
-          "url": "https://goldesel.de/artikel/mittagsupdate-13-11-dax-dreht-nach-schwachem-start-ins-plus-eon-gefragt-bitcoin-unter-70-000-dollar"
+          "title": "Trading Economics: US-Futures +0,5 % nach dem PPI (13.11.)",
+          "url": "https://tradingeconomics.com/united-states/stock-market/news/601157"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -18181,7 +18181,7 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Fr 14:05: In Xetra rund +2,8 % bei 364,10 € (Kursabruf 13:23) gegenüber dem Xetra-Schluss vom Do (354,05 €). Eine eigene neue Nachricht gibt es nicht: Das Plus holt den US-Anstieg vom Do-Abend nach, als Tesla nach dem Bloomberg-Bericht zur möglichen Fusion mit SpaceX schon im Dezember +1,7 % auf 397,45 $ schloss (RTÉ). Schon vor Xetra-Start lag die Aktie bei Lang & Schwarz 1,5 % vorn (ad-hoc-news). Händler warten auf die US-Erzeugerpreise um 14:30 (Goldesel nach dpa-AFX).",
+      "why": "Stand Fr 15:10: In Xetra rund +2,9 % bei 364,25 € (Kursabruf 14:42) gegenüber dem Xetra-Schluss vom Do (354,05 €). Das Plus holt den US-Anstieg vom Do-Abend nach, als Tesla nach dem Bloomberg-Bericht zur möglichen Fusion mit SpaceX schon im Dezember +1,7 % auf 397,45 $ schloss (RTÉ); vorbörslich in den USA steht die Aktie bei 397,43 $, also unverändert (Yahoo). Nach den etwas kühleren US-Erzeugerpreisen (+0,3 % statt 0,4 %) legten die US-Futures rund 0,5 % zu (CNBC, Trading Economics).",
       "whySources": [
         {
           "title": "Yahoo Finance: Tesla Xetra (TL0.DE)",
@@ -18192,12 +18192,16 @@
           "url": "https://www.rte.ie/news/business/2026/1113/1599074-spacex-tesla-merger-talks/"
         },
         {
-          "title": "ad-hoc-news: Tesla vor Xetra +1,46 % auf 359,23 € (Bezug Xetra-Schluss 354,05 €, 13.11.)",
-          "url": "https://www.ad-hoc-news.de/boerse/news/vorboerse/tesla-stock-gains-1-46-prozent-to-eur-359-23-before-xetra/70503025"
+          "title": "Yahoo Finance: TSLA (Vorbörse 13.11.)",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "Goldesel: Mittagsupdate 13.11. – Dax dreht ins Plus, Senat lädt Huang vor (11:39, nach dpa-AFX)",
-          "url": "https://goldesel.de/artikel/mittagsupdate-13-11-dax-dreht-nach-schwachem-start-ins-plus-eon-gefragt-bitcoin-unter-70-000-dollar"
+          "title": "CNBC: PPI Oktober +0,3 % statt 0,4 % (13.11.)",
+          "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html"
+        },
+        {
+          "title": "Trading Economics: US-Futures +0,5 % nach dem PPI (13.11.)",
+          "url": "https://tradingeconomics.com/united-states/stock-market/news/601157"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -29625,147 +29629,31 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Fr 13:10: In Stuttgart unverändert gegenüber dem deutschen Vortag. In den USA schloss Rocket Lab am Do bei 64,07 $ (−3,1 %) nach gesenkten Kurszielen; der 100. Electron-Start ist weiter für Sa 06:30 Berlin geplant (Rocket Lab, Advanced Television). Dax gegen Mittag +0,1 % bei 26.807 nach dem Rekord vom Do, MDax −0,4 % (dpa-AFX); Händler warten auf die US-Erzeugerpreise um 14:30 (Handelsblatt).",
+      "why": "Stand Fr 15:10: In Stuttgart bei 57,60 € (−0,4 %, Kursabruf 14:42), vorbörslich in den USA kaum verändert bei 64,08 $ nach −3,1 % am Do wegen gesenkter Kursziele (Yahoo, Stock Observer). Der 100. Electron-Start ist weiter für Sa 06:30 Berlin geplant (Rocket Lab). Die US-Erzeugerpreise stiegen im Oktober nur um 0,3 % statt 0,4 %, die US-Futures legten danach rund 0,5 % zu (CNBC, Trading Economics).",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB (Nachbörse 13.11., 01:57)",
+          "title": "Yahoo Finance: Frankfurt- und Stuttgart-Kurse (13.11.)",
+          "url": "https://finance.yahoo.com/quote/6RJ0.SG/"
+        },
+        {
+          "title": "Yahoo Finance: RKLB (Vorbörse 13.11.)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
-        },
-        {
-          "title": "boerse-global/ad-hoc-news: Analysten senken Rocket-Lab-Ziele, bleiben bei Kaufen (13.11.)",
-          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/rocket-lab-analysts-trim-targets-but-keep-the-faith-as-electron-nears-its-100th-launch/70502055"
-        },
-        {
-          "title": "MaxQ: The Mountain God Rises – Status Go, Wetter 99 % GO, NOTAMs",
-          "url": "https://www.maxq.app/launches/electron-the-mountain-god-rises-iqps-launch-10"
-        },
-        {
-          "title": "@RocketLab: Generalprobe fertig, 100. Electron ab 14.11. (12.11., 23:29)",
-          "url": "https://x.com/RocketLab/status/2121007529409032312"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (13.11., 06:42)",
-          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
-        },
-        {
-          "title": "Dow Jones via finanznachrichten: Dax-Future im Frühhandel leichter (13.11.)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70120001-eurex-dax-futures-im-fruehhandel-leichter-015.htm"
-        },
-        {
-          "title": "@RocketLab: Lightning-Plattformen bestehen Tests im Orbit (13.11., 00:32)",
-          "url": "https://x.com/RocketLab/status/2121023245604602195"
-        },
-        {
-          "title": "Air & Space Forces: Pentagon gibt Rocket Lab 150 Mio. $ Kredit (12.11.)",
-          "url": "https://www.airandspaceforces.com/pentagon-150m-loan-rocket-lab-new-launch-vehicle-cadence/"
-        },
-        {
-          "title": "Reuters/US News: Williams – weitere Zinserhöhungen wahrscheinlich (12.11.)",
-          "url": "https://money.usnews.com/investing/news/articles/2026-11-12/feds-williams-says-central-bank-has-work-to-do-to-get-inflation-back-on-target"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
-          "url": "https://finance.yahoo.com/quote/NQ=F/"
-        },
-        {
-          "title": "Investing.com: US-Futures erholen sich nach Huangs Abgang (13.11.)",
-          "url": "https://uk.investing.com/news/stock-market-news/us-stock-futures-rise-after-nvidia-ceo-exit-spooks-wall-st-4979339"
-        },
-        {
-          "title": "Sina/Gelonghui: Rocket Lab vorbörslich −3 %, mehrere Banken senken Ziele (12.11.)",
-          "url": "https://finance.sina.com.cn/stock/bxjj/2026-11-12/doc-iniynpnv1145867.shtml"
-        },
-        {
-          "title": "Investing.com: Berenberg hebt Rocket-Lab-Ziel auf 85 $ (12.11.)",
-          "url": "https://www.investing.com/news/analyst-ratings/berenberg-raises-rocket-lab-stock-price-target-on-launch-demand-93CH-5020508"
-        },
-        {
-          "title": "@RocketLab: Avionik läuft auf NASA Roman (12.11., 21:32)",
-          "url": "https://x.com/RocketLab/status/2120978084283531641"
-        },
-        {
-          "title": "Rocket Lab: The Mountain God Rises",
-          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
-        },
-        {
-          "title": "Yahoo Finance: AMD (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/AMD/"
-        },
-        {
-          "title": "Yahoo Finance: NBIS (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/NBIS/"
         },
         {
           "title": "Stock Observer: Barclays senkt Rocket-Lab-Ziel auf 82 $ (13.11.)",
           "url": "https://www.thestockobserver.com/2026/11/13/rocket-lab-nasdaqrklb-stock-gets-price-target-trim-from-barclays.html"
         },
         {
-          "title": "Markets Daily: Piper Sandler senkt Rocket-Lab-Ziel auf 58 $ (13.11.)",
-          "url": "https://www.themarketsdaily.com/2026/11/13/rocket-lab-nasdaqrklb-stock-gets-price-target-cut-from-piper-sandler.html"
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
         },
         {
-          "title": "Rocket Lab: Launch Safety – NET Sa 14.11. 05:30 UTC, Ersatztage bis 26.11.",
-          "url": "https://rocketlabcorp.com/launch/launch-safety/"
+          "title": "CNBC: PPI Oktober +0,3 % statt 0,4 % (13.11.)",
+          "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html"
         },
         {
-          "title": "Yahoo Finance: Frankfurt- und Stuttgart-Kurse (13.11.)",
-          "url": "https://finance.yahoo.com/quote/TL0.DE/"
-        },
-        {
-          "title": "Nikkei: Tokio-Schluss 61.142,35 (+0,53 %) (13.11., 07:50 Berlin)",
-          "url": "https://www.nikkei.com/article/DGXZQOFL136400T11C26A1000000/"
-        },
-        {
-          "title": "TradingKey: Kospi −0,98 %, SK Hynix −3 %, SoftBank −5 % (13.11.)",
-          "url": "https://www.tradingkey.com/analysis/stocks/more/262304080-japan-korea-stocks-skhy-kospi-nikkei-samsung-skhynix-softbank-kioxia-tradingkey"
-        },
-        {
-          "title": "dpa-AFX via finanzen.net: Börsentag auf einen Blick (13.11., 07:30)",
-          "url": "https://www.finanzen.net/nachricht/aktien/dpa-afx-boersentag-auf-einen-blick-etwas-schwaecher-nach-dax-rekord-16062162"
-        },
-        {
-          "title": "FXStreet: US-Futures leichter, PPI-Prognose 6,6 % zum Vorjahr (13.11., 08:19)",
-          "url": "https://www.fxstreet.com/news/dow-jones-futures-fall-amid-fed-rate-hike-fears-nvidia-leadership-shakeup-ppi-data-eyed-202611130719"
-        },
-        {
-          "title": "Yahoo Finance: Raumfahrtwerte – RKLB +21 % in einer Woche, SPCX +4 % (13.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/space-stocks-had-stellar-week-075154983.html"
-        },
-        {
-          "title": "Rocket Lab: 100. Electron-Start diese Woche (Pressemitteilung)",
-          "url": "https://www.globenewswire.com/news-release/2026/11/12/3402322/0/en/rocket-lab-to-launch-milestone-100th-electron-rocket-this-week.html"
-        },
-        {
-          "title": "dpa-AFX via finanznachrichten.de: Dax-Eröffnung −0,3 % auf 26.705 (13.11., 09:19)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70121547-aktien-frankfurt-eroeffnung-zurueckhaltung-nach-rekordhoch-beim-dax-016.htm"
-        },
-        {
-          "title": "finanzen.net: Heute im Fokus (13.11., 09:35)",
-          "url": "https://www.finanzen.net/nachricht/aktien/heute-im-fokus-13-11-2026-16062113"
-        },
-        {
-          "title": "dpa-AFX via finanzen.net: Dax am Vormittag −0,3 % auf 26.706 (13.11.)",
-          "url": "https://www.finanzen.net/nachricht/aktien/roundup-aktien-frankfurt-eroeffnung-zurueckhaltung-nach-rekordhoch-beim-dax-16062502"
-        },
-        {
-          "title": "Forex.com: Dax-Ausblick und Termine 13.11. (PPI 14:30, Fed-Redner)",
-          "url": "https://www.forex.com/de-de/news-and-analysis/dax-ausblick-ruckschlag-bei-27-000-punkten-unterstutzung-im-fokus/"
-        },
-        {
-          "title": "Advanced Television: Rocket Lab bereit für den 100. Flug (13.11.)",
-          "url": "https://www.advanced-television.com/2026/11/13/rocket-lab-readies-for-100th-flight/"
-        },
-        {
-          "title": "dpa-AFX via ARIVA: Atempause nach Dax-Rekord, Dax mittags +0,1 % bei 26.807 (13.11., 11:54)",
-          "url": "https://www.ariva.de/news/aktien-frankfurt-atempause-nach-rekordhoch-beim-dax-12206503"
-        },
-        {
-          "title": "Handelsblatt: Dax bewegt sich kaum (13.11., 12:13)",
-          "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-aktuell-dax-bewegt-sich-kaum-entfernt-sich-aber-vom-rekord/100269627.html"
+          "title": "Trading Economics: US-Futures +0,5 % nach dem PPI (13.11.)",
+          "url": "https://tradingeconomics.com/united-states/stock-market/news/601157"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -41551,127 +41439,27 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Fr 11:50: In Stuttgart beim Kursabruf 11:20 bei 147,60 € (−0,7 %) (Yahoo). Marvell schloss am Do bei 164,45 $ (−2,6 %), nachbörslich half Ciscos Rekordquartal. Druck kommt aus Washington: Der Kongress will strengere Chip-Exportregeln für China, Malaysia prüft eine Megaspeed-Tochter (Guardian/Reuters). Dax am Vormittag −0,3 % bei 26.706 nach dem Rekord vom Do, MDax −0,8 %; laut dpa-AFX steckt der Techsektor den Huang-Rücktritt gut weg. Heute 14:30 US-Erzeugerpreise, danach mehrere Fed-Redner (dpa-AFX, Forex.com). Nachtrag 14:05: Nvidia liegt bei Lang & Schwarz rund 1,5 % im Plus, Cisco vorbörslich fast −2 %, weil das Auftragswachstum abkühlt und UBS nachlassende Hyperscaler-Bestellungen bemängelt (Goldesel nach dpa-AFX).",
+      "why": "Stand Fr 15:10: In Xetra bei 148,60 € (−1,8 %, Kursabruf 14:42), vorbörslich in den USA unverändert bei 164,44 $ (Yahoo). Marvell schloss am Do bei 164,45 $ (−2,6 %). Druck kommt aus Washington: Der Kongress will strengere Chip-Exportregeln, Huang muss bis Sa 02:00 Berlin einer Befragung zustimmen oder bekommt eine Vorladung (Guardian/Reuters, Benzinga). Nvidia liegt vorbörslich rund 2 % vorn, Cisco rund 4 % hinten; nach den etwas kühleren US-Erzeugerpreisen (+0,3 % statt 0,4 %) legten die US-Futures rund 0,5 % zu (Trading Economics, CNBC).",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL (Nachbörse 13.11., 01:58)",
+          "title": "Yahoo Finance: MRVL (Vorbörse 13.11.)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Schluss 12.11. und Nachbörse)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
-        },
-        {
-          "title": "NVIDIA 8-K: Rücktritt Huang, Kress interim, Jones Verwaltungsratschef (11.11.)",
-          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
-        },
-        {
-          "title": "NBC News: Lutnick sagt aus, Mast will Huang am 1.12. befragen (12.11.)",
-          "url": "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (13.11., 06:42)",
-          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
-        },
-        {
-          "title": "Dow Jones via finanznachrichten: Dax-Future im Frühhandel leichter (13.11.)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70120001-eurex-dax-futures-im-fruehhandel-leichter-015.htm"
-        },
-        {
-          "title": "Cisco (PR Newswire): Zahlen Q1 GJ 2027 (12.11.)",
-          "url": "https://www.prnewswire.com/news-releases/cisco-reports-first-quarter-earnings-302938394.html"
-        },
-        {
-          "title": "BBC: Wer ist Nvidias Interimschefin Colette Kress? (12.11.)",
-          "url": "https://www.bbc.com/news/articles/cqgm37dv20e8o"
-        },
-        {
-          "title": "Reuters/US News: Williams – weitere Zinserhöhungen wahrscheinlich (12.11.)",
-          "url": "https://money.usnews.com/investing/news/articles/2026-11-12/feds-williams-says-central-bank-has-work-to-do-to-get-inflation-back-on-target"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
-          "url": "https://finance.yahoo.com/quote/NQ=F/"
-        },
-        {
-          "title": "Investing.com: US-Futures erholen sich nach Huangs Abgang (13.11.)",
-          "url": "https://uk.investing.com/news/stock-market-news/us-stock-futures-rise-after-nvidia-ceo-exit-spooks-wall-st-4979339"
-        },
-        {
-          "title": "CNBC (Liveblog): Huangs Rücktritt (12.11.)",
-          "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html"
-        },
-        {
-          "title": "StockStory: Applied Materials und andere Chipwerte fallen (12.11.)",
-          "url": "https://stockstory.org/us/stocks/nasdaq/amat/news/why-up-down/applied-materials-seagate-photronics-vishay-intertechnology-and-allegro-microsystems-stocks-trade-down-what-you-need-to-know"
-        },
-        {
-          "title": "SEC: Marvell 8-K – drei neue Verwaltungsräte (12.11.)",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000026/mrvl-20261111.htm"
-        },
-        {
-          "title": "Yahoo Finance: AMD (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/AMD/"
-        },
-        {
-          "title": "Yahoo Finance: NBIS (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/NBIS/"
-        },
-        {
-          "title": "Yahoo Finance: AMAT (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/AMAT/"
-        },
-        {
-          "title": "Yahoo Finance: ^IXIC (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "title": "Edit USA: Frist für Huang Fr 20 Uhr ET, Termine 1., 3. und 10.12. (12.11.)",
-          "url": "https://www.editusa.com/intelligence/jensen-huang-congress-deadline-december-hearings-lutnick-kessler"
-        },
-        {
-          "title": "Yahoo Finance: Frankfurt- und Stuttgart-Kurse (13.11.)",
-          "url": "https://finance.yahoo.com/quote/TL0.DE/"
-        },
-        {
-          "title": "Nikkei: Tokio-Schluss 61.142,35 (+0,53 %) (13.11., 07:50 Berlin)",
-          "url": "https://www.nikkei.com/article/DGXZQOFL136400T11C26A1000000/"
-        },
-        {
-          "title": "TradingKey: Kospi −0,98 %, SK Hynix −3 %, SoftBank −5 % (13.11.)",
-          "url": "https://www.tradingkey.com/analysis/stocks/more/262304080-japan-korea-stocks-skhy-kospi-nikkei-samsung-skhynix-softbank-kioxia-tradingkey"
-        },
-        {
-          "title": "dpa-AFX via finanzen.net: Börsentag auf einen Blick (13.11., 07:30)",
-          "url": "https://www.finanzen.net/nachricht/aktien/dpa-afx-boersentag-auf-einen-blick-etwas-schwaecher-nach-dax-rekord-16062162"
-        },
-        {
-          "title": "FXStreet: US-Futures leichter, PPI-Prognose 6,6 % zum Vorjahr (13.11., 08:19)",
-          "url": "https://www.fxstreet.com/news/dow-jones-futures-fall-amid-fed-rate-hike-fears-nvidia-leadership-shakeup-ppi-data-eyed-202611130719"
         },
         {
           "title": "Guardian-Liveblog: Johnson für Chip-Exportgrenzen, Malaysia prüft Megaspeed-Tochter (13.11.)",
           "url": "https://www.theguardian.com/technology/live/2026/nov/13/nvidia-jensen-huang-to-testify-before-congress-live-latest-updates"
         },
         {
-          "title": "dpa-AFX via finanznachrichten.de: Dax-Eröffnung −0,3 % auf 26.705 (13.11., 09:19)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70121547-aktien-frankfurt-eroeffnung-zurueckhaltung-nach-rekordhoch-beim-dax-016.htm"
+          "title": "Benzinga: Huang droht Vorladung, Frist Fr 20 Uhr ET (13.11.)",
+          "url": "https://www.benzinga.com/markets/tech/26/11/63235908/jensen-huang-faces-subpoena-threat-as-3-republican-led-house-committees-demand-closed-door-testimony-over-nvidias-china-ties"
         },
         {
-          "title": "finanzen.net: Heute im Fokus (13.11., 09:35)",
-          "url": "https://www.finanzen.net/nachricht/aktien/heute-im-fokus-13-11-2026-16062113"
+          "title": "Trading Economics: US-Futures +0,5 % nach dem PPI (13.11.)",
+          "url": "https://tradingeconomics.com/united-states/stock-market/news/601157"
         },
         {
-          "title": "dpa-AFX via finanzen.net: Dax am Vormittag −0,3 % auf 26.706 (13.11.)",
-          "url": "https://www.finanzen.net/nachricht/aktien/roundup-aktien-frankfurt-eroeffnung-zurueckhaltung-nach-rekordhoch-beim-dax-16062502"
-        },
-        {
-          "title": "Forex.com: Dax-Ausblick und Termine 13.11. (PPI 14:30, Fed-Redner)",
-          "url": "https://www.forex.com/de-de/news-and-analysis/dax-ausblick-ruckschlag-bei-27-000-punkten-unterstutzung-im-fokus/"
-        },
-        {
-          "title": "Goldesel: Mittagsupdate 13.11. – Dax dreht ins Plus, Senat lädt Huang vor (11:39, nach dpa-AFX)",
-          "url": "https://goldesel.de/artikel/mittagsupdate-13-11-dax-dreht-nach-schwachem-start-ins-plus-eon-gefragt-bitcoin-unter-70-000-dollar"
+          "title": "CNBC: PPI Oktober +0,3 % statt 0,4 % (13.11.)",
+          "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",
