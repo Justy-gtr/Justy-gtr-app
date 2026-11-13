@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T13:35:00+01:00",
+  "updatedAt": "2026-11-13T13:58:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 45,
+      "score": 40,
       "postsCount": 15,
-      "reason": "SpaceX: Großer Starship-Tag. Auch Accounts mit viel Reichweite feiern den geplanten Doppel-Fang bei Flug 15 heute ab 23:45 Uhr. Die FAA-Freigabe fehlt aber weiter.",
+      "reason": "SpaceX: Große News-Accounts berichten über den geplanten Doppel-Fang bei Flug 15 heute ab 23:45 Uhr. Kritiker verweisen auf hohe Ausgaben und die noch fehlende Freigabe.",
       "sources": [
         {
-          "title": "Shay Boloor: erster Doppel-Fang",
-          "url": "https://x.com/StockSavvyShay/status/2121218789551554676"
+          "title": "Frank Curzio: Doppel-Fang heute",
+          "url": "https://x.com/FrankCurzio/status/2121224474121134133"
         },
         {
-          "title": "DekmarTrades: historischer Test",
-          "url": "https://x.com/DekmarTrades/status/2121217934127136914"
+          "title": "Open Outcrier: SPCX vorbörslich +0,2 %",
+          "url": "https://x.com/OpenOutcrier/status/2121225570742685870"
         },
         {
-          "title": "Start noch ohne Freigabe",
-          "url": "https://x.com/TheFutSig/status/2121219098558472623"
+          "title": "Kritik: Investitionen höher als Umsatz",
+          "url": "https://x.com/Investablefutur/status/2121223741044826547"
         }
       ],
-      "updatedAt": "2026-11-13T13:35:00+01:00"
+      "updatedAt": "2026-11-13T13:58:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 14,
-      "reason": "Tesla: Neue Batterielinie in Tilburg und Optimus-Jobs in Grünheide kommen gut an. Kritik: MotorTrend sieht Rivian R2 vor dem Model Y. Fusion bleibt Thema.",
+      "score": 15,
+      "postsCount": 15,
+      "reason": "Tesla: Fusion mit SpaceX bleibt Hauptthema, vorbörslich +0,5 %. Gegenwind: Texas' künftiger Justizminister kündigt strenge Prüfung an, manche sehen keinen Aufschlag für Tesla.",
       "sources": [
         {
-          "title": "Neue Batterielinie in Tilburg",
-          "url": "https://x.com/EFIEBER_ANDRE/status/2121218807293198336"
+          "title": "Open Outcrier: Fusionsgespräche",
+          "url": "https://x.com/OpenOutcrier/status/2121225478103040381"
         },
         {
-          "title": "Optimus-Training in Grünheide",
-          "url": "https://x.com/traderzeitung/status/2121217317145072076"
+          "title": "Texas will Deal streng prüfen",
+          "url": "https://x.com/LKPreserve/status/2121221198105464860"
         },
         {
-          "title": "Rivian R2 schlägt Model Y",
-          "url": "https://x.com/rivianledger/status/2121217728849813982"
+          "title": "Kein automatischer Aufschlag für Tesla",
+          "url": "https://x.com/SeeYouAt10X/status/2121219970181021803"
         }
       ],
-      "updatedAt": "2026-11-13T13:35:00+01:00"
+      "updatedAt": "2026-11-13T13:58:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 9,
-      "reason": "Rocket Lab: Wenige Beiträge. Peter Beck will bei Rechenzentren im All lieber schneller Nachzügler sein. Neutron-Aufträge gelten als Plus, der Start erst 2027 bremst.",
+      "score": 50,
+      "postsCount": 14,
+      "reason": "Rocket Lab: Peter Beck im CNBC-Interview über Rekordumsatz und Neutron-Nachfrage. Berenberg hebt das Kursziel auf 85 $, ARK stockt erneut auf. Neutron erst 2027.",
       "sources": [
         {
-          "title": "Beck: schneller Nachzügler",
-          "url": "https://x.com/EarningsNugget/status/2121219027616030919"
+          "title": "CNBC: Interview mit Peter Beck",
+          "url": "https://x.com/CNBCMorningCall/status/2121220795137704250"
         },
         {
-          "title": "Neutron-Aufträge und Start 2027",
-          "url": "https://x.com/grok/status/2121219116375671066"
+          "title": "Berenberg: Kursziel 85 $",
+          "url": "https://x.com/Drewalphatrades/status/2121225313115951566"
         },
         {
-          "title": "Sky Tower leuchtet zum 100. Start",
-          "url": "https://x.com/MrsIglesiasRKLB/status/2121205006007496715"
+          "title": "ARK stockt bei Rocket Lab auf",
+          "url": "https://x.com/marketsday/status/2121221847383777779"
         }
       ],
-      "updatedAt": "2026-11-13T13:35:00+01:00"
+      "updatedAt": "2026-11-13T13:58:00+01:00"
     }
   }
 }
