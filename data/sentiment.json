@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T14:24:00+01:00",
+  "updatedAt": "2026-11-13T14:31:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 12,
-      "reason": "SpaceX: Viel Vorfreude auf den Doppel-Fang bei Flug 15 heute ab 23:45 Uhr, auch große News-Accounts berichten. Gegenstimme: Morningstar sieht den fairen Wert nur bei 70 $.",
+      "score": 45,
+      "postsCount": 10,
+      "reason": "SpaceX: Astronaut Chris Hadfield wünscht viel Glück für Flug 15 heute ab 23:45 Uhr. Neu: Rosenblatt hält SpaceX für den größten Kunden von Super Micro (KI-Server).",
       "sources": [
         {
-          "title": "SpacBobby: Erster Starship-Fang heute",
-          "url": "https://x.com/SpacBobby/status/2121230212583305382"
+          "title": "Chris Hadfield: Viel Glück",
+          "url": "https://x.com/Cmdr_Hadfield/status/2121232259978002577"
         },
         {
-          "title": "Fusion: wahrscheinliche Bedingungen",
-          "url": "https://x.com/sspencer_smb/status/2121230101597548864"
+          "title": "SpaceX größter Super-Micro-Kunde?",
+          "url": "https://x.com/PJC7R/status/2121233896553713822"
         },
         {
-          "title": "Morningstar: fairer Wert 70 $",
-          "url": "https://x.com/ThomasWalkr6969/status/2121231087712206881"
+          "title": "Wiederverwendung senkt Starlink-Kosten",
+          "url": "https://x.com/kotha2barta/status/2121233690235686941"
         }
       ],
-      "updatedAt": "2026-11-13T14:24:00+01:00"
+      "updatedAt": "2026-11-13T14:31:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 20,
-      "postsCount": 12,
-      "reason": "Tesla: Laut zerohedge vorbörslich rund +1 %. Herbert Ong teilt Floridas Einladung für den Firmensitz. Kritik am teureren Model Y AWD, Fusion bleibt Thema.",
+      "postsCount": 10,
+      "reason": "Tesla: Vorbörslich gut 1 % im Plus bei rund 402 $. Fusion bleibt Thema, Skeptiker halten einen echten Deal für unsicher. Kritik: Model Y wirkt neben dem Rivian R2 veraltet.",
       "sources": [
         {
-          "title": "zerohedge: Tesla vorbörslich +1 %",
-          "url": "https://x.com/zerohedge/status/2121231704077500624"
+          "title": "Verhältnis TSLA zu SPCX vorbörslich",
+          "url": "https://x.com/ExitVelocityApp/status/2121233704802824218"
         },
         {
-          "title": "Herbert Ong: Florida lädt Tesla ein",
-          "url": "https://x.com/herbertong/status/2121231969300464123"
+          "title": "Skepsis: Ankündigung ist kein Deal",
+          "url": "https://x.com/maison_d_ami/status/2121232800514785400"
         },
         {
-          "title": "Model Y AWD jetzt 8.000 $ teurer",
-          "url": "https://x.com/ShortingIsFun/status/2121232021259538854"
+          "title": "Rivian R2 schlägt Model Y",
+          "url": "https://x.com/ShortingIsFun/status/2121232533215940679"
         }
       ],
-      "updatedAt": "2026-11-13T14:24:00+01:00"
+      "updatedAt": "2026-11-13T14:31:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 50,
-      "postsCount": 14,
-      "reason": "Rocket Lab: Peter Beck im CNBC-Interview über Rekordumsatz und Neutron-Nachfrage. Berenberg hebt das Kursziel auf 85 $, ARK stockt erneut auf. Neutron erst 2027.",
+      "postsCount": 10,
+      "reason": "Rocket Lab: Peter Beck sieht bei Neutron einen Vorteil gegenüber Starship. Pentagon-Kredit und 16 gebuchte Neutron-Flüge werden geteilt. 100. Electron-Start Samstag früh.",
       "sources": [
         {
-          "title": "CNBC: Interview mit Peter Beck",
-          "url": "https://x.com/CNBCMorningCall/status/2121220795137704250"
+          "title": "Beck: Neutron-Vorteil gegenüber Starship",
+          "url": "https://x.com/QuantAlphaXXX/status/2121232610449883236"
         },
         {
-          "title": "Berenberg: Kursziel 85 $",
-          "url": "https://x.com/Drewalphatrades/status/2121225313115951566"
+          "title": "Pentagon-Kredite und Neutron-Buchungen",
+          "url": "https://x.com/theSpacecyborg/status/2121232806160244914"
         },
         {
-          "title": "ARK stockt bei Rocket Lab auf",
-          "url": "https://x.com/marketsday/status/2121221847383777779"
+          "title": "Launch 100: The Mountain God Rises",
+          "url": "https://x.com/matiere/status/2121233468231500279"
         }
       ],
-      "updatedAt": "2026-11-13T14:24:00+01:00"
+      "updatedAt": "2026-11-13T14:31:00+01:00"
     }
   }
 }
