@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-13T09:10:00+01:00",
+  "asOf": "2026-11-13T11:50:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -390,6 +390,38 @@
         {
           "title": "@elonmusk: „SpaceX community benefits“ (12.11., 17:10)",
           "url": "https://x.com/elonmusk/status/2120912138772369758"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2120911785217986739",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-12T17:09:08+01:00",
+      "summaryDe": "SpaceX wirbt für seine geplanten Supercomputer-Standorte im Rio Grande Valley (Texas) und in Cochise County (Arizona): Man baue mehr als Rechenzentren, schaffe Jobs, investiere in Infrastruktur und erweitere die lokale Steuerbasis. Laut SpaceX-Update zusammen über 74 Mrd. $ (24 Mrd. $ in Texas, rund 50 Mrd. $ in Arizona). Musk teilte den Beitrag am Fr um 10:34.",
+      "originalText": "From the Rio Grande Valley, TX to Cochise County, AZ, we’re building more than supercomputers. We’re creating jobs, investing in critical infrastructure, expanding local tax bases, and working alongside communities to build a future that benefits the people who live there",
+      "url": "https://x.com/SpaceX/status/2120911785217986739",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "xAI"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (12.11., 17:09)",
+          "url": "https://x.com/SpaceX/status/2120911785217986739"
+        },
+        {
+          "title": "SpaceX: Update zu Supercomputern in Texas und Arizona (12.11.)",
+          "url": "https://www.spacex.com/updates/"
+        },
+        {
+          "title": "@elonmusk teilt den SpaceX-Beitrag (13.11., 10:34)",
+          "url": "https://x.com/elonmusk/status/2121174767562551693"
         }
       ]
     },
