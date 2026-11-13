@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T14:35:00+01:00",
+  "updatedAt": "2026-11-13T14:42:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
-      "postsCount": 10,
-      "reason": "SpaceX: Astronaut Chris Hadfield wünscht viel Glück für Flug 15 heute ab 23:45 Uhr. Neu: Rosenblatt hält SpaceX für den größten Kunden von Super Micro (KI-Server).",
+      "postsCount": 12,
+      "reason": "SpaceX: Vorbörslich knapp +1 % bei rund 141 $. Fans fiebern dem Doppel-Fang bei Flug 15 heute ab 23:45 Uhr entgegen, 26 Starlink-V3-Satelliten an Bord.",
       "sources": [
+        {
+          "title": "SPCX vorbörslich +0,9 %",
+          "url": "https://x.com/Maximilius31/status/2121236089859899880"
+        },
         {
           "title": "Chris Hadfield: Viel Glück",
           "url": "https://x.com/Cmdr_Hadfield/status/2121232259978002577"
         },
         {
-          "title": "SpaceX größter Super-Micro-Kunde?",
-          "url": "https://x.com/PJC7R/status/2121233896553713822"
-        },
-        {
-          "title": "Wiederverwendung senkt Starlink-Kosten",
-          "url": "https://x.com/kotha2barta/status/2121233690235686941"
+          "title": "26 Starlink V3 = 10 Falcon-Flüge",
+          "url": "https://x.com/alialagheband/status/2121235974290305358"
         }
       ],
-      "updatedAt": "2026-11-13T14:35:00+01:00"
+      "updatedAt": "2026-11-13T14:42:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 20,
-      "postsCount": 10,
-      "reason": "Tesla: Vorbörslich gut 1 % im Plus bei rund 402 $. Fusion bleibt Thema, Skeptiker halten einen echten Deal für unsicher. Kritik: Model Y wirkt neben dem Rivian R2 veraltet.",
+      "score": 25,
+      "postsCount": 15,
+      "reason": "Tesla: US-Erzeugerpreise etwas kühler als erwartet, Aktie vorbörslich +1,4 % bei rund 403 $. Wetten auf die Fusion steigen. Gegenwind: Texas droht mit strenger Prüfung.",
       "sources": [
         {
-          "title": "Verhältnis TSLA zu SPCX vorbörslich",
-          "url": "https://x.com/ExitVelocityApp/status/2121233704802824218"
+          "title": "TSLA +1,4 %, Polymarket-Quote steigt",
+          "url": "https://x.com/Maximilius31/status/2121235647797112867"
         },
         {
-          "title": "Skepsis: Ankündigung ist kein Deal",
-          "url": "https://x.com/maison_d_ami/status/2121232800514785400"
+          "title": "PPI kühler als erwartet",
+          "url": "https://x.com/wensontrading/status/2121235082304160235"
         },
         {
-          "title": "Rivian R2 schlägt Model Y",
-          "url": "https://x.com/ShortingIsFun/status/2121232533215940679"
+          "title": "Texas bedroht Fusion",
+          "url": "https://x.com/viaNexusHQ/status/2121235103829385372"
         }
       ],
-      "updatedAt": "2026-11-13T14:35:00+01:00"
+      "updatedAt": "2026-11-13T14:42:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/matiere/status/2121233468231500279"
         }
       ],
-      "updatedAt": "2026-11-13T14:35:00+01:00"
+      "updatedAt": "2026-11-13T14:42:00+01:00"
     }
   }
 }
