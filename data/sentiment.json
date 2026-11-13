@@ -1,32 +1,32 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T10:34:00+01:00",
+  "updatedAt": "2026-11-13T10:55:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
       "postsCount": 20,
-      "reason": "SpaceX: Alles schaut auf Starship Flug 15 heute ab 23:45 Uhr mit erstem Doppel-Fang. Dazu Gerede über Fusion mit Tesla und 74-Mrd-KI-Rechenzentren.",
+      "reason": "SpaceX: Starship Flug 15 heute ab 23:45 Uhr mit erstem Doppel-Fang ist Hauptthema. Dazu Fusion mit Tesla und Musks Post „Jensen“: Holt er den Ex-Nvidia-Chef?",
       "sources": [
         {
           "title": "SpaceX 101 vor Flug 15",
           "url": "https://x.com/spcxGOD/status/2121158628858093754"
         },
         {
-          "title": "Heute erster Doppel-Fang?",
-          "url": "https://x.com/RoviHere/status/2121162608073937229"
+          "title": "Musk postet „Jensen“",
+          "url": "https://x.com/spcxGOD/status/2121176998923944006"
         },
         {
           "title": "Flug 15: Startfenster 23:45–01:00 Uhr",
           "url": "https://x.com/christna_a/status/2121167699833217237"
         }
       ],
-      "updatedAt": "2026-11-13T10:34:00+01:00"
+      "updatedAt": "2026-11-13T10:55:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 5,
+      "score": 10,
       "postsCount": 20,
       "reason": "Tesla: Fusion mit SpaceX bleibt Hauptthema, aber einige Anleger fürchten, dabei schlechter wegzukommen. Viele Spam-Beiträge, wenig echte News.",
       "sources": [
@@ -39,11 +39,11 @@
           "url": "https://x.com/New_Dimension10/status/2121165221385400727"
         },
         {
-          "title": "Kein Aufschlag für Tesla bei Fusion",
-          "url": "https://x.com/SeeYouAt10X/status/2121159172775641154"
+          "title": "Fusion rückt näher, Tesla im Fokus",
+          "url": "https://x.com/MarketCapOf/status/2121176901519864178"
         }
       ],
-      "updatedAt": "2026-11-13T10:34:00+01:00"
+      "updatedAt": "2026-11-13T10:55:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -60,11 +60,11 @@
           "url": "https://x.com/RakibKhan0073/status/2121160651490082916"
         },
         {
-          "title": "Peter Beck: Mehr als eine Startfirma",
-          "url": "https://x.com/Bearlovesbull/status/2121173791959113741"
+          "title": "Peter Beck: 70-Mio-Starts, 50 % Marge",
+          "url": "https://x.com/Bearlovesbull/status/2121178600581812323"
         }
       ],
-      "updatedAt": "2026-11-13T10:34:00+01:00"
+      "updatedAt": "2026-11-13T10:55:00+01:00"
     }
   }
 }
