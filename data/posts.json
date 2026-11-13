@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-13T05:10:00+01:00",
+  "asOf": "2026-11-13T07:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -93,6 +93,38 @@
         {
           "title": "SpaceX: Starship Flight 15 (pending regulatory approval)",
           "url": "https://www.spacex.com/launches/starship-flight-15"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121039931015344322",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-13T01:38:21+01:00",
+      "summaryDe": "Ex-OpenAI-Forscher Will Depue schreibt, er habe forensische Belege, dass DeepSeek, Moonshot, MiniMax und Ant Group ihre neuesten Modelle auf Nvidias Blackwell-Chips trainiert haben, die nicht nach China exportiert werden dürfen. Musk antwortet nur mit „🤔“. Der Bericht zeigt laut Autoren den Zugriff auf Blackwell-Hardware, aber nicht, wo sie stand oder ob Exportregeln verletzt wurden (Unemployment Labs). Das passt zum Druck in Washington auf schärfere Chip-Kontrollen.",
+      "originalText": "@willdepue 🤔",
+      "url": "https://x.com/elonmusk/status/2121039931015344322",
+      "tickers": [
+        "SPCX",
+        "MRVL"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk: „🤔“ (13.11., 01:38)",
+          "url": "https://x.com/elonmusk/status/2121039931015344322"
+        },
+        {
+          "title": "@willdepue: Forensik-Bericht zu chinesischen KI-Labs (12.11., 22:29)",
+          "url": "https://x.com/willdepue/status/2120992457630326841"
+        },
+        {
+          "title": "Unemployment Labs: Chinesische KI-Modelle tragen Blackwell-Fingerabdruck (12.11.)",
+          "url": "https://unemploymentlabs.com/checkpoint-forensics"
         }
       ]
     },

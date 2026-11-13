@@ -7668,11 +7668,47 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Fr 05:00: SpaceX schloss am Do an der Nasdaq bei 139,94 $ (+0,1 %), nachbörslich um 01:59 bei 141,96 $ (+1,4 %) (Yahoo). Neu ist ein Bloomberg-Bericht vom Abend: Die Fusionsgespräche mit Tesla kommen voran, eine Bekanntgabe sei schon im Dezember möglich, vielleicht auch erst Anfang 2027. Bedingungen gibt es noch keine (Bloomberg, Reuters/cash). Tagsüber hatten die Pläne für mehr als 74 Mrd. $ in Supercompute-Standorte und die Huang-Spekulation gestützt (SpaceX, Investing.com). Ship 42 fährt zur Rampe (SpaceX auf X). Flight 15 heute ab 23:45 wartet weiter auf die FAA-Lizenz. Über Nacht: New-York-Fed-Chef Williams hält weitere Zinserhöhungen für wahrscheinlich (Reuters). Tokio erholt sich nach dem Nvidia-Schock, Chipwerte wie Advantest und Tokyo Electron vorn. Der Nikkei 225 lag mittags 1,6 % im Plus und um 04:47 noch 0,9 % (61.348). Der Nasdaq-100-Future war um 04:52 kaum verändert (Nikkei, Yahoo, Investing.com).",
+      "why": "Stand Fr 07:00: SpaceX schloss am Do bei 139,94 $ (+0,1 %), nachbörslich um 01:59 bei 141,96 $ (+1,4 %) (Yahoo). Treiber ist der Bloomberg-Bericht: Die Fusion mit Tesla könnte schon im Dezember verkündet werden, vielleicht erst Anfang 2027; Bedingungen gibt es noch keine (Bloomberg, Reuters). Heute um 23:45 soll Starship Flight 15 starten, die FAA-Lizenz fehlt aber weiter. Morgan Stanley (Jonas) nennt einen Fang von Booster und Schiff „wahrscheinlich klar positiv“ für die Aktie (über Sawyer Merritt auf X). Am Morgen: Tokio gab Gewinne ab, der Nikkei lag um 06:37 bei 61.146 (+0,5 %) nach +1,6 % am Mittag; Hongkong und Korea im Minus, Yen über 160 je Dollar. Nasdaq-100-Future um 06:42 bei 28.327 (−0,2 %), Dax-Future rund 100 Punkte tiefer. Heute 14:30 US-Erzeugerpreise (Yahoo, Nikkei, Bloomberg, Dow Jones).",
       "whySources": [
         {
           "title": "Yahoo Finance: SPCX (Nachbörse 13.11., 01:59)",
           "url": "https://finance.yahoo.com/quote/SPCX/"
+        },
+        {
+          "title": "Reuters via Investing.com: SpaceX-Tesla-Fusionsgespräche kommen voran (12.11.)",
+          "url": "https://ca.investing.com/news/stock-market-news/spacex-tesla-merger-talks-progress-bloomberg-news-reports-4954156"
+        },
+        {
+          "title": "FAA: SpaceX Starship Super Heavy Project (zuletzt aktualisiert 10.11.)",
+          "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15 (pending regulatory approval)",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
+        },
+        {
+          "title": "@SawyerMerritt: Morgan Stanley (Jonas) zu Flight 15 (13.11., 00:30)",
+          "url": "https://x.com/SawyerMerritt/status/2121022747375530158"
+        },
+        {
+          "title": "Yahoo Finance: Nikkei 225 (^N225, 13.11., 06:37)",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "title": "Nikkei: Nikkei 225 am Mittag +997 Punkte auf 61.816 (13.11.)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL1321T0T11C26A1000000/"
+        },
+        {
+          "title": "Bloomberg via swissinfo: Asien gibt Gewinne ab, Anleihen fallen vor US-PPI (13.11., 05:57)",
+          "url": "https://www.swissinfo.ch/eng/asian-stocks-erase-gain%2C-bonds-slide-before-us-ppi%3A-markets-wrap/92374084"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (13.11., 06:42)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
+        },
+        {
+          "title": "Dow Jones via finanznachrichten: Dax-Future im Frühhandel leichter (13.11.)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70120001-eurex-dax-futures-im-fruehhandel-leichter-015.htm"
         },
         {
           "title": "Bloomberg (via Bloomberg Law): SpaceX-Tesla-Fusionsgespräche kommen voran (12.11.)",
@@ -7687,20 +7723,12 @@
           "url": "https://x.com/SpaceX/status/2121044579470233638"
         },
         {
-          "title": "FAA: SpaceX Starship Super Heavy Project (zuletzt aktualisiert 10.11.)",
-          "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
-        },
-        {
           "title": "Reuters/US News: Williams – weitere Zinserhöhungen wahrscheinlich (12.11.)",
           "url": "https://money.usnews.com/investing/news/articles/2026-11-12/feds-williams-says-central-bank-has-work-to-do-to-get-inflation-back-on-target"
         },
         {
           "title": "Nikkei: Nikkei 225 am Mittag +997 Punkte auf 61.816 (13.11.)",
           "url": "https://www.nikkei.com/article/DGXZQOFL130J90T11C26A1000000/"
-        },
-        {
-          "title": "Yahoo Finance: Nikkei 225 (^N225)",
-          "url": "https://finance.yahoo.com/quote/%5EN225/"
         },
         {
           "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
@@ -7729,34 +7757,6 @@
         {
           "title": "Yahoo Finance: NVDA (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
-        },
-        {
-          "title": "Yahoo Finance: AMD (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/AMD/"
-        },
-        {
-          "title": "Yahoo Finance: NBIS (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/NBIS/"
-        },
-        {
-          "title": "Yahoo Finance: AMAT (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/AMAT/"
-        },
-        {
-          "title": "Yahoo Finance: ^IXIC (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "title": "Yahoo Finance: ^GSPC (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
-        },
-        {
-          "title": "Yahoo Finance: ^TNX (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/%5ETNX/"
-        },
-        {
-          "title": "Reuters/CNA: Wall Street, Nvidia fällt nach Rücktritt des Chefs (12.11.)",
-          "url": "https://www.channelnewsasia.com/business/wall-street-edges-up-nvidia-drops-after-ceo-resigns-6544496"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -22857,11 +22857,39 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Fr 05:00: Tesla schloss am Do an der Nasdaq bei 397,45 $ (+1,7 %), nachbörslich um 01:59 bei 399,85 $ (+0,6 %) (Yahoo). Neu ist ein Bloomberg-Bericht vom Abend: Die Fusionsgespräche mit SpaceX kommen voran, eine Bekanntgabe sei schon im Dezember möglich, vielleicht auch erst Anfang 2027. Offen sind die Führung, das Umtauschverhältnis und wie Teslas China-Geschäft abgeschirmt wird (Bloomberg, Mint). Tagsüber halfen der Robotaxi-Betrieb rund um die Uhr in acht US-Städten und die Zellpläne für Grünheide (Not a Tesla App, TeslaNorth). Über Nacht: New-York-Fed-Chef Williams hält weitere Zinserhöhungen für wahrscheinlich (Reuters). Tokio erholt sich nach dem Nvidia-Schock, Chipwerte wie Advantest und Tokyo Electron vorn. Der Nikkei 225 lag mittags 1,6 % im Plus und um 04:47 noch 0,9 % (61.348). Der Nasdaq-100-Future war um 04:52 kaum verändert (Nikkei, Yahoo, Investing.com).",
+      "why": "Stand Fr 07:00: Tesla schloss am Do bei 397,45 $ (+1,7 %), nachbörslich um 01:59 bei 399,85 $ (+0,6 %) (Yahoo). Treiber ist der Bloomberg-Bericht, die Fusion mit SpaceX könne schon im Dezember verkündet werden; offen sind Umtauschverhältnis, Führung und Teslas China-Geschäft. Tesla stieg zeitweise um 1,9 % auf den Bericht (Electrek). Tesla-Hauptversammlung am 3.12. Am Morgen: Tokio gab Gewinne ab, der Nikkei lag um 06:37 bei 61.146 (+0,5 %) nach +1,6 % am Mittag; Hongkong und Korea im Minus, Yen über 160 je Dollar. Nasdaq-100-Future um 06:42 bei 28.327 (−0,2 %), Dax-Future rund 100 Punkte tiefer. Heute 14:30 US-Erzeugerpreise (Yahoo, Nikkei, Bloomberg, Dow Jones).",
       "whySources": [
         {
           "title": "Yahoo Finance: TSLA (Nachbörse 13.11., 01:59)",
           "url": "https://finance.yahoo.com/quote/TSLA/"
+        },
+        {
+          "title": "Reuters via Investing.com: SpaceX-Tesla-Fusionsgespräche kommen voran (12.11.)",
+          "url": "https://ca.investing.com/news/stock-market-news/spacex-tesla-merger-talks-progress-bloomberg-news-reports-4954156"
+        },
+        {
+          "title": "Electrek: SpaceX könnte Tesla-Fusion im Dezember verkünden (12.11.)",
+          "url": "https://electrek.co/2026/11/12/spacex-tesla-merger-announcement-december-report/"
+        },
+        {
+          "title": "Yahoo Finance: Nikkei 225 (^N225, 13.11., 06:37)",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "title": "Nikkei: Nikkei 225 am Mittag +997 Punkte auf 61.816 (13.11.)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL1321T0T11C26A1000000/"
+        },
+        {
+          "title": "Bloomberg via swissinfo: Asien gibt Gewinne ab, Anleihen fallen vor US-PPI (13.11., 05:57)",
+          "url": "https://www.swissinfo.ch/eng/asian-stocks-erase-gain%2C-bonds-slide-before-us-ppi%3A-markets-wrap/92374084"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (13.11., 06:42)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
+        },
+        {
+          "title": "Dow Jones via finanznachrichten: Dax-Future im Frühhandel leichter (13.11.)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70120001-eurex-dax-futures-im-fruehhandel-leichter-015.htm"
         },
         {
           "title": "Bloomberg (via Bloomberg Law): SpaceX-Tesla-Fusionsgespräche kommen voran (12.11.)",
@@ -22882,10 +22910,6 @@
         {
           "title": "Nikkei: Nikkei 225 am Mittag +997 Punkte auf 61.816 (13.11.)",
           "url": "https://www.nikkei.com/article/DGXZQOFL130J90T11C26A1000000/"
-        },
-        {
-          "title": "Yahoo Finance: Nikkei 225 (^N225)",
-          "url": "https://finance.yahoo.com/quote/%5EN225/"
         },
         {
           "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
@@ -22922,30 +22946,6 @@
         {
           "title": "Yahoo Finance: NBIS (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/NBIS/"
-        },
-        {
-          "title": "Yahoo Finance: AMAT (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/AMAT/"
-        },
-        {
-          "title": "Yahoo Finance: ^IXIC (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "title": "Yahoo Finance: ^GSPC (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
-        },
-        {
-          "title": "Yahoo Finance: ^TNX (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/%5ETNX/"
-        },
-        {
-          "title": "Reuters/CNA: Wall Street, Nvidia fällt nach Rücktritt des Chefs (12.11.)",
-          "url": "https://www.channelnewsasia.com/business/wall-street-edges-up-nvidia-drops-after-ceo-resigns-6544496"
-        },
-        {
-          "title": "Yahoo Finance: Börse live – S&P 500 und Nasdaq fallen (12.11., 21:42)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-nasdaq-fall-as-nvidia-ceo-exit-rising-bond-yields-roil-markets-195710154.html"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -35310,15 +35310,43 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Fr 05:00: Rocket Lab schloss am Do an der Nasdaq bei 64,07 $ (−3,1 %) nach gesenkten Kurszielen (Morgan Stanley, Needham, Piper Sandler, Barclays). Nachbörslich stand die Aktie um 01:57 bei 64,80 $ (+1,1 %) (Yahoo, Sina/Gelonghui). Am Abend kamen gute Nachrichten: Die Generalprobe für den 100. Electron-Start ist geschafft, das Fenster öffnet Sa 06:30 Berlin. Alle acht Lightning-Plattformen für MDA und Globalstar haben die ersten Tests im Orbit bestanden (Rocket Lab auf X). Das Pentagon stellt 150 Mio. $ Kredit unter Bedingungen in Aussicht, damit Neutron nach dem Erststart 2027 öfter fliegen kann (Air & Space Forces). Über Nacht: New-York-Fed-Chef Williams hält weitere Zinserhöhungen für wahrscheinlich (Reuters). Tokio erholt sich nach dem Nvidia-Schock, Chipwerte wie Advantest und Tokyo Electron vorn. Der Nikkei 225 lag mittags 1,6 % im Plus und um 04:47 noch 0,9 % (61.348). Der Nasdaq-100-Future war um 04:52 kaum verändert (Nikkei, Yahoo, Investing.com).",
+      "why": "Stand Fr 07:00: Rocket Lab schloss am Do bei 64,07 $ (−3,1 %) nach gesenkten Kurszielen, nachbörslich um 01:57 bei 64,80 $ (+1,1 %) (Yahoo). Die Analysten senkten die Ziele, blieben aber bei Kaufen bzw. Übergewichten, etwa Needham 100 $ statt 120 $ und Morgan Stanley 103 $ statt 105 $ (boerse-global). Für den 100. Electron-Start Sa ab 06:30 meldet der Tracker MaxQ Status „Go“ und 99 % gutes Wetter; die Generalprobe ist geschafft (Rocket Lab auf X). Am Morgen: Tokio gab Gewinne ab, der Nikkei lag um 06:37 bei 61.146 (+0,5 %) nach +1,6 % am Mittag; Hongkong und Korea im Minus, Yen über 160 je Dollar. Nasdaq-100-Future um 06:42 bei 28.327 (−0,2 %), Dax-Future rund 100 Punkte tiefer. Heute 14:30 US-Erzeugerpreise (Yahoo, Nikkei, Bloomberg, Dow Jones).",
       "whySources": [
         {
           "title": "Yahoo Finance: RKLB (Nachbörse 13.11., 01:57)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
+          "title": "boerse-global/ad-hoc-news: Analysten senken Rocket-Lab-Ziele, bleiben bei Kaufen (13.11.)",
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/rocket-lab-analysts-trim-targets-but-keep-the-faith-as-electron-nears-its-100th-launch/70502055"
+        },
+        {
+          "title": "MaxQ: The Mountain God Rises – Status Go, Wetter 99 % GO, NOTAMs",
+          "url": "https://www.maxq.app/launches/electron-the-mountain-god-rises-iqps-launch-10"
+        },
+        {
           "title": "@RocketLab: Generalprobe fertig, 100. Electron ab 14.11. (12.11., 23:29)",
           "url": "https://x.com/RocketLab/status/2121007529409032312"
+        },
+        {
+          "title": "Yahoo Finance: Nikkei 225 (^N225, 13.11., 06:37)",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "title": "Nikkei: Nikkei 225 am Mittag +997 Punkte auf 61.816 (13.11.)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL1321T0T11C26A1000000/"
+        },
+        {
+          "title": "Bloomberg via swissinfo: Asien gibt Gewinne ab, Anleihen fallen vor US-PPI (13.11., 05:57)",
+          "url": "https://www.swissinfo.ch/eng/asian-stocks-erase-gain%2C-bonds-slide-before-us-ppi%3A-markets-wrap/92374084"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (13.11., 06:42)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
+        },
+        {
+          "title": "Dow Jones via finanznachrichten: Dax-Future im Frühhandel leichter (13.11.)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70120001-eurex-dax-futures-im-fruehhandel-leichter-015.htm"
         },
         {
           "title": "@RocketLab: Lightning-Plattformen bestehen Tests im Orbit (13.11., 00:32)",
@@ -35335,10 +35363,6 @@
         {
           "title": "Nikkei: Nikkei 225 am Mittag +997 Punkte auf 61.816 (13.11.)",
           "url": "https://www.nikkei.com/article/DGXZQOFL130J90T11C26A1000000/"
-        },
-        {
-          "title": "Yahoo Finance: Nikkei 225 (^N225)",
-          "url": "https://finance.yahoo.com/quote/%5EN225/"
         },
         {
           "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
@@ -35375,30 +35399,6 @@
         {
           "title": "Yahoo Finance: NBIS (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/NBIS/"
-        },
-        {
-          "title": "Yahoo Finance: AMAT (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/AMAT/"
-        },
-        {
-          "title": "Yahoo Finance: ^IXIC (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "title": "Yahoo Finance: ^GSPC (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
-        },
-        {
-          "title": "Yahoo Finance: ^TNX (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/%5ETNX/"
-        },
-        {
-          "title": "Reuters/CNA: Wall Street, Nvidia fällt nach Rücktritt des Chefs (12.11.)",
-          "url": "https://www.channelnewsasia.com/business/wall-street-edges-up-nvidia-drops-after-ceo-resigns-6544496"
-        },
-        {
-          "title": "Yahoo Finance: Börse live – S&P 500 und Nasdaq fallen (12.11., 21:42)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-nasdaq-fall-as-nvidia-ceo-exit-rising-bond-yields-roil-markets-195710154.html"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -49641,19 +49641,47 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Fr 05:00: Marvell schloss am Do an der Nasdaq bei 164,45 $ (−2,6 %), nachbörslich um 01:58 bei 168,47 $ (+2,4 %) (Yahoo). Rückenwind kam von Cisco: Rekordumsatz von 18,5 Mrd. $, das Ziel für KI-Umsatz mit Hyperscalern steigt auf 9 Mrd. $ (Cisco). Das spricht für weiter hohe Ausgaben für KI-Netzwerke, Marvells Kerngeschäft. Nvidia stand nachbörslich bei 167,84 $ (+1,0 %) (Yahoo). Interimschefin ist Colette Kress, ein fester Nachfolger fehlt (BBC). Über Nacht: New-York-Fed-Chef Williams hält weitere Zinserhöhungen für wahrscheinlich (Reuters). Tokio erholt sich nach dem Nvidia-Schock, Chipwerte wie Advantest und Tokyo Electron vorn. Der Nikkei 225 lag mittags 1,6 % im Plus und um 04:47 noch 0,9 % (61.348). Der Nasdaq-100-Future war um 04:52 kaum verändert (Nikkei, Yahoo, Investing.com).",
+      "why": "Stand Fr 07:00: Marvell schloss am Do bei 164,45 $ (−2,6 %), nachbörslich um 01:58 bei 168,47 $ (+2,4 %) (Yahoo), gestützt von Ciscos Rekordquartal und dem höheren KI-Umsatzziel (Cisco). Nvidia schloss bei 166,19 $ (−4,3 %) und lag nachbörslich bei 167,84 $ (+1,0 %). Kress ist Interimschefin, Harvey Jones neuer Verwaltungsratschef (Nvidia 8-K). Ausschuss-Chef Mast will Huang am 1.12. befragen, Handelsminister Lutnick sagt am 10.12. im Senat zu Chip-Exporten aus (NBC News). Am Morgen: Tokio gab Gewinne ab, der Nikkei lag um 06:37 bei 61.146 (+0,5 %) nach +1,6 % am Mittag; Hongkong und Korea im Minus, Yen über 160 je Dollar. Nasdaq-100-Future um 06:42 bei 28.327 (−0,2 %), Dax-Future rund 100 Punkte tiefer. Heute 14:30 US-Erzeugerpreise (Yahoo, Nikkei, Bloomberg, Dow Jones).",
       "whySources": [
         {
           "title": "Yahoo Finance: MRVL (Nachbörse 13.11., 01:58)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "Cisco (PR Newswire): Zahlen Q1 GJ 2027 (12.11.)",
-          "url": "https://www.prnewswire.com/news-releases/cisco-reports-first-quarter-earnings-302938394.html"
+          "title": "Yahoo Finance: NVDA (Schluss 12.11. und Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: NVDA (Nachbörse 13.11.)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "NVIDIA 8-K: Rücktritt Huang, Kress interim, Jones Verwaltungsratschef (11.11.)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+        },
+        {
+          "title": "NBC News: Lutnick sagt aus, Mast will Huang am 1.12. befragen (12.11.)",
+          "url": "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093"
+        },
+        {
+          "title": "Yahoo Finance: Nikkei 225 (^N225, 13.11., 06:37)",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "title": "Nikkei: Nikkei 225 am Mittag +997 Punkte auf 61.816 (13.11.)",
+          "url": "https://www.nikkei.com/article/DGXZQOFL1321T0T11C26A1000000/"
+        },
+        {
+          "title": "Bloomberg via swissinfo: Asien gibt Gewinne ab, Anleihen fallen vor US-PPI (13.11., 05:57)",
+          "url": "https://www.swissinfo.ch/eng/asian-stocks-erase-gain%2C-bonds-slide-before-us-ppi%3A-markets-wrap/92374084"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (13.11., 06:42)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
+        },
+        {
+          "title": "Dow Jones via finanznachrichten: Dax-Future im Frühhandel leichter (13.11.)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70120001-eurex-dax-futures-im-fruehhandel-leichter-015.htm"
+        },
+        {
+          "title": "Cisco (PR Newswire): Zahlen Q1 GJ 2027 (12.11.)",
+          "url": "https://www.prnewswire.com/news-releases/cisco-reports-first-quarter-earnings-302938394.html"
         },
         {
           "title": "BBC: Wer ist Nvidias Interimschefin Colette Kress? (12.11.)",
@@ -49666,10 +49694,6 @@
         {
           "title": "Nikkei: Nikkei 225 am Mittag +997 Punkte auf 61.816 (13.11.)",
           "url": "https://www.nikkei.com/article/DGXZQOFL130J90T11C26A1000000/"
-        },
-        {
-          "title": "Yahoo Finance: Nikkei 225 (^N225)",
-          "url": "https://finance.yahoo.com/quote/%5EN225/"
         },
         {
           "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
@@ -49706,30 +49730,6 @@
         {
           "title": "Yahoo Finance: ^IXIC (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
-        },
-        {
-          "title": "Yahoo Finance: ^GSPC (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
-        },
-        {
-          "title": "Yahoo Finance: ^TNX (US-Schluss 12.11.)",
-          "url": "https://finance.yahoo.com/quote/%5ETNX/"
-        },
-        {
-          "title": "Reuters/CNA: Wall Street, Nvidia fällt nach Rücktritt des Chefs (12.11.)",
-          "url": "https://www.channelnewsasia.com/business/wall-street-edges-up-nvidia-drops-after-ceo-resigns-6544496"
-        },
-        {
-          "title": "Yahoo Finance: Börse live – S&P 500 und Nasdaq fallen (12.11., 21:42)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-nasdaq-fall-as-nvidia-ceo-exit-rising-bond-yields-roil-markets-195710154.html"
-        },
-        {
-          "title": "TechCrunch: Reuters berichtet über eine dritte Affäre Huangs (12.11.)",
-          "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/"
-        },
-        {
-          "title": "Applied Materials (GlobeNewswire): Zahlen Q4 GJ 2026 (12.11.)",
-          "url": "https://www.globenewswire.com/news-release/2026/11/12/3402149/0/en/applied-materials-announces-fourth-quarter-and-fiscal-year-2026-results.html"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",
