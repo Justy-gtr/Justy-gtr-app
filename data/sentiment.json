@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T14:52:00+01:00",
+  "updatedAt": "2026-11-13T14:58:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
-      "postsCount": 12,
-      "reason": "SpaceX: Vorbörslich knapp +1 % bei rund 141 $. Fans fiebern dem Doppel-Fang bei Flug 15 heute ab 23:45 Uhr entgegen, 26 Starlink-V3-Satelliten an Bord.",
+      "postsCount": 14,
+      "reason": "SpaceX: Vorbörslich rund +1 % bei 141 $. Alle schauen auf den ersten Doppel-Fang bei Flug 15 heute ab 23:45 Uhr. Einige meinen, er könnte das Fusionsverhältnis beeinflussen.",
       "sources": [
         {
           "title": "SPCX vorbörslich +0,9 %",
           "url": "https://x.com/Maximilius31/status/2121236089859899880"
         },
         {
-          "title": "Chris Hadfield: Viel Glück",
-          "url": "https://x.com/Cmdr_Hadfield/status/2121232259978002577"
+          "title": "TraderFox: Wichtigster Katalysator seit IPO",
+          "url": "https://x.com/traderfox_de/status/2121239567202165074"
         },
         {
-          "title": "26 Starlink V3 = 10 Falcon-Flüge",
-          "url": "https://x.com/alialagheband/status/2121235974290305358"
+          "title": "Starship-Fang und Fusionsverhältnis",
+          "url": "https://x.com/spcxGOD/status/2121239156776943884"
         }
       ],
-      "updatedAt": "2026-11-13T14:52:00+01:00"
+      "updatedAt": "2026-11-13T14:58:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 25,
+      "score": 20,
       "postsCount": 15,
-      "reason": "Tesla: US-Erzeugerpreise etwas kühler als erwartet, Aktie vorbörslich +1,4 % bei rund 403 $. Wetten auf die Fusion steigen. Gegenwind: Texas droht mit strenger Prüfung.",
+      "reason": "Tesla: Vorbörslich rund +1,5 %, Fusionsgespräche mit SpaceX laut Bloomberg weit fortgeschritten. Kritik: Günstigstes Model Y AWD gestrichen, Texas prüft den Deal.",
       "sources": [
         {
-          "title": "TSLA +1,4 %, Polymarket-Quote steigt",
-          "url": "https://x.com/Maximilius31/status/2121235647797112867"
+          "title": "Bloomberg: Fusion schon im Dezember?",
+          "url": "https://x.com/Themachac/status/2121237752964649101"
         },
         {
-          "title": "PPI kühler als erwartet",
-          "url": "https://x.com/wensontrading/status/2121235082304160235"
+          "title": "Model Y AWD 8.000 $ teurer",
+          "url": "https://x.com/CKEVS1998/status/2121237564371955819"
         },
         {
           "title": "Texas bedroht Fusion",
           "url": "https://x.com/viaNexusHQ/status/2121235103829385372"
         }
       ],
-      "updatedAt": "2026-11-13T14:52:00+01:00"
+      "updatedAt": "2026-11-13T14:58:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 50,
-      "postsCount": 10,
-      "reason": "Rocket Lab: Peter Beck sieht bei Neutron einen Vorteil gegenüber Starship. Pentagon-Kredit und 16 gebuchte Neutron-Flüge werden geteilt. 100. Electron-Start Samstag früh.",
+      "score": 45,
+      "postsCount": 15,
+      "reason": "Rocket Lab: Vorfreude auf den 100. Electron-Start Samstag früh für iQPS aus Japan. Anleger rechnen vor, dass zwei Aktienverträge bis zu 370 Mio. $ bringen könnten.",
       "sources": [
         {
-          "title": "Beck: Neutron-Vorteil gegenüber Starship",
-          "url": "https://x.com/QuantAlphaXXX/status/2121232610449883236"
+          "title": "100. Electron-Start Samstag",
+          "url": "https://x.com/BroadwakeAI/status/2121236800505368884"
         },
         {
-          "title": "Pentagon-Kredite und Neutron-Buchungen",
-          "url": "https://x.com/theSpacecyborg/status/2121232806160244914"
+          "title": "Bis zu 370 Mio. $ aus Aktienverträgen",
+          "url": "https://x.com/rocket__house/status/2121238377001324695"
         },
         {
-          "title": "Launch 100: The Mountain God Rises",
-          "url": "https://x.com/matiere/status/2121233468231500279"
+          "title": "Raumfahrtwerte weiter stark",
+          "url": "https://x.com/BuyAtSupport/status/2121235650825355361"
         }
       ],
-      "updatedAt": "2026-11-13T14:52:00+01:00"
+      "updatedAt": "2026-11-13T14:58:00+01:00"
     }
   }
 }
