@@ -1,56 +1,60 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T15:51:00+01:00",
+  "updatedAt": "2026-11-13T15:55:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
-      "postsCount": 20,
-      "reason": "SpaceX: Um 140 $. Große Konten sehen den Doppel-Fang bei Flug 15 heute ab 23:45 Uhr als Test für günstigere Starts. Unsicher: Die FAA-Lizenz fehlt laut Reuters noch.",
+      "postsCount": 19,
+      "reason": "SpaceX: Um 140 $. Große Konten freuen sich auf Flug 15 ab 23:45 Uhr: Erstmals sollen Booster und Schiff am Turm gefangen werden. Die FAA-Freigabe steht aber noch aus.",
       "sources": [
         {
+          "title": "WOLF: Erster Fang des Schiffs geplant",
+          "url": "https://x.com/WOLF_Financial/status/2121251874707837424"
+        },
+        {
           "title": "Doppel-Fang als Kostentest",
-          "url": "https://x.com/DrJStrategy/status/2121244926008582238"
+          "url": "https://x.com/DrJStrategy/status/2121249898498568649"
         },
         {
-          "title": "TraderFox: Wichtigster Katalysator seit IPO",
-          "url": "https://x.com/traderfox_de/status/2121239567202165074"
-        },
-        {
-          "title": "FAA-Lizenz fehlt noch",
-          "url": "https://x.com/theSpacecyborg/status/2121248348023714235"
+          "title": "Starts um 140 $: Viele warten ab",
+          "url": "https://x.com/spcxGOD/status/2121248149985431665"
         }
       ],
-      "updatedAt": "2026-11-13T15:51:00+01:00"
+      "updatedAt": "2026-11-13T15:55:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 20,
-      "postsCount": 20,
-      "reason": "Tesla: Nach +15 % in einer Woche zur US-Eröffnung leicht im Minus um 394 $. Viele reden über die SpaceX-Fusion. Gegenwind: Texas will den Deal streng prüfen.",
+      "score": 25,
+      "postsCount": 19,
+      "reason": "Tesla: Nach +15 % in einer Woche zeigt die Aktie relative Stärke. Viel Gerede über die SpaceX-Fusion und einen möglichen Aufschlag für Tesla-Aktionäre. Dazu viel Spam.",
       "sources": [
         {
-          "title": "Bloomberg: Fusion schon im Dezember?",
-          "url": "https://x.com/Themachac/status/2121237752964649101"
+          "title": "Relative Stärke trotz schwachem Markt",
+          "url": "https://x.com/wickedstocks/status/2121243436741267760"
         },
         {
-          "title": "Eröffnung bei 393,80 $",
-          "url": "https://x.com/Stop_Loss1/status/2121253126317465832"
+          "title": "Fusion als Aktientausch erklärt",
+          "url": "https://x.com/cath2060/status/2121254582282334581"
         },
         {
-          "title": "Texas bedroht Fusion",
-          "url": "https://x.com/viaNexusHQ/status/2121235103829385372"
+          "title": "Weiche Erzeugerpreise, Tesla vorbörslich im Plus",
+          "url": "https://x.com/RandyWKirk1/status/2121250197888291147"
         }
       ],
-      "updatedAt": "2026-11-13T15:51:00+01:00"
+      "updatedAt": "2026-11-13T15:55:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 50,
-      "postsCount": 18,
-      "reason": "Rocket Lab: Generalprobe für den 100. Electron-Start ist geschafft, Start Samstag 06:30 Uhr. Dazu haben alle 8 Globalstar-Satelliten die ersten Tests im All bestanden.",
+      "postsCount": 20,
+      "reason": "Rocket Lab: Alle 8 Globalstar-Satelliten haben ihre ersten Tests im All bestanden. Der 100. Electron-Start ist für Samstag 06:30 Uhr bereit. Einzelne meckern über Schwankungen.",
       "sources": [
+        {
+          "title": "Globalstar-Satelliten bestehen Tests",
+          "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
+        },
         {
           "title": "Generalprobe für Start 100 geschafft",
           "url": "https://x.com/DaveMorgenscmu/status/2121248627163271208"
@@ -58,13 +62,9 @@
         {
           "title": "Bis zu 370 Mio. $ aus Aktienverträgen",
           "url": "https://x.com/rocket__house/status/2121238377001324695"
-        },
-        {
-          "title": "Globalstar-Satelliten bestehen Tests",
-          "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
         }
       ],
-      "updatedAt": "2026-11-13T15:51:00+01:00"
+      "updatedAt": "2026-11-13T15:55:00+01:00"
     }
   }
 }
