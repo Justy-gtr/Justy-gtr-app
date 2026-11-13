@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T12:16:00+01:00",
+  "updatedAt": "2026-11-13T12:36:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 35,
       "postsCount": 20,
-      "reason": "SpaceX: Vorfreude auf Starship Flug 15 heute ab 23:45 Uhr mit Doppel-Fang. Aber 12 Stunden vorher noch keine FAA-Freigabe, das fällt auf. Dazu Fusionsgerede.",
+      "reason": "SpaceX: Starship Flug 15 heute ab 23:45 Uhr soll erstmals beide Stufen fangen und über Land heimkehren. Kritik: noch keine FAA-Freigabe. Dazu Fusionsgerede.",
       "sources": [
         {
           "title": "Noch keine FAA-Lizenz 12 h vor Start",
           "url": "https://x.com/spcxGOD/status/2121193494924394902"
         },
         {
-          "title": "Doppel-Fang in Folge",
-          "url": "https://x.com/AsFoundX/status/2121195517161898264"
+          "title": "Hitzeschild wird mit jedem Flug besser",
+          "url": "https://x.com/EvasTeslaSPlaid/status/2121189625934831957"
         },
         {
-          "title": "Musk postet „Jensen“",
-          "url": "https://x.com/spcxGOD/status/2121176998923944006"
+          "title": "Erster Rückflug über bewohntes Land",
+          "url": "https://x.com/matkue/status/2121201821104460075"
         }
       ],
-      "updatedAt": "2026-11-13T12:16:00+01:00"
+      "updatedAt": "2026-11-13T12:36:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 25,
       "postsCount": 20,
-      "reason": "Tesla: Fusion mit SpaceX ist Thema Nummer eins. Viele erwarten für Tesla-Aktionäre einen Aufschlag von 15 bis 30 %. Einzelne Kritiker warnen vor Nachteilen.",
+      "reason": "Tesla: Fusion mit SpaceX bleibt Thema Nummer eins, vorbörslich leicht im Plus. Model Y Premium in den USA für 2026 ausverkauft. JPMorgan hat Tesla-Anteile reduziert.",
       "sources": [
         {
-          "title": "The Assembly: Größte Fusion der Geschichte?",
-          "url": "https://x.com/InTheAssembly/status/2121174491862556764"
+          "title": "Fusion schon im Dezember möglich",
+          "url": "https://x.com/robertratcliffx/status/2121202421158351134"
         },
         {
-          "title": "Wer profitiert mehr von der Fusion?",
-          "url": "https://x.com/EpicTradeDate/status/2121193445901598780"
+          "title": "Model Y Premium 2026 ausverkauft",
+          "url": "https://x.com/AllTeslaNews/status/2121200014626046182"
         },
         {
-          "title": "Kritik: Fusion schadet Tesla-Anlegern",
-          "url": "https://x.com/New_Dimension10/status/2121165221385400727"
+          "title": "JPMorgan reduziert Tesla",
+          "url": "https://x.com/BestTrader01/status/2121191562826625293"
         }
       ],
-      "updatedAt": "2026-11-13T12:16:00+01:00"
+      "updatedAt": "2026-11-13T12:36:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 6,
-      "reason": "Rocket Lab: Vorfreude auf den goldenen 100. Electron-Start Samstag 06:30 Uhr. Dazu Beiträge über 150-Mio-Kredit vom Pentagon und Neutron-Nachfrage.",
+      "score": 45,
+      "postsCount": 20,
+      "reason": "Rocket Lab: ARK (Cathie Wood) kaufte gestern gut 15.000 Aktien. Vorfreude auf den 100. Electron-Start Samstag 06:30 Uhr. Einige ärgern sich über Neutron-Verzögerungen.",
       "sources": [
         {
-          "title": "Goldene 100. Electron",
-          "url": "https://x.com/mspetersenpicks/status/2121159357995872743"
+          "title": "ARK kauft 15.114 RKLB-Aktien",
+          "url": "https://x.com/ArkkDaily/status/2121202833806528782"
         },
         {
-          "title": "Pentagon-Kredit für Rocket Lab",
-          "url": "https://x.com/RakibKhan0073/status/2121160651490082916"
+          "title": "Meldungen: 100. Start, Pentagon-Kredit",
+          "url": "https://x.com/lanios_/status/2121196390617395592"
         },
         {
-          "title": "Peter Beck: 70-Mio-Starts, 50 % Marge",
-          "url": "https://x.com/Bearlovesbull/status/2121178600581812323"
+          "title": "Frust über Neutron-Verzögerungen",
+          "url": "https://x.com/RKLBMan/status/2121204630952566937"
         }
       ],
-      "updatedAt": "2026-11-13T12:16:00+01:00"
+      "updatedAt": "2026-11-13T12:36:00+01:00"
     }
   }
 }
