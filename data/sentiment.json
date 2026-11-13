@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-12T16:46:00+01:00",
+  "updatedAt": "2026-11-13T08:03:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 15,
-      "reason": "SpaceX: Nach dem Hoch bei 147,60 $ bröckelt der Kurs, manche erwarten bis zum Abend ein Minus. Viele wünschen sich weiter Huang, andere warnen vor der Abhängigkeit von Musk.",
+      "score": 40,
+      "postsCount": 20,
+      "reason": "SpaceX: Fast alle reden über eine mögliche Fusion mit Tesla, Ankündigung vielleicht schon im Dezember. Dazu Starship Flug 15 heute Nacht, einige warnen vor einem Fehlschlag.",
       "sources": [
         {
-          "title": "Kurs bröckelt nach dem Hoch",
-          "url": "https://x.com/DRJBori63/status/2120904072660127991"
+          "title": "Fusion SpaceX/Tesla im Dezember?",
+          "url": "https://x.com/SuperMariossss/status/2121123940974129598"
         },
         {
-          "title": "Teslarati: Huang zu Tesla/SpaceX",
-          "url": "https://x.com/Teslarati/status/2120902181674959298"
+          "title": "Panke: Morgenüberblick SpaceX",
+          "url": "https://x.com/spcxGOD/status/2121121381123346461"
         },
         {
-          "title": "Abhängigkeit von einer Person",
-          "url": "https://x.com/BrownIshwar/status/2120903865646387279"
+          "title": "Skepsis vor Flug 15",
+          "url": "https://x.com/Bernd_Kaiser_BD/status/2121108294508966312"
         }
       ],
-      "updatedAt": "2026-11-12T16:46:00+01:00"
+      "updatedAt": "2026-11-13T08:03:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 5,
-      "postsCount": 15,
-      "reason": "Tesla: Jetzt leicht im Minus, der Kurs prallte an 392 $ ab. Fans hoffen weiter auf Huang, andere fragen, warum er bei Tesla besser passen sollte als bei Nvidia.",
+      "score": 15,
+      "postsCount": 20,
+      "reason": "Tesla: Die Fusion mit SpaceX ist Hauptthema. Viele fragen, wie viel Aufschlag Tesla-Aktionäre bekommen, andere warnen, dass alles an Musk hängt.",
       "sources": [
         {
-          "title": "Tesla dreht ins Minus",
-          "url": "https://x.com/na_option/status/2120899690795331845"
+          "title": "SpaceX könnte Tesla übernehmen",
+          "url": "https://x.com/Tesla_Optimus_K/status/2121110695303668132"
         },
         {
-          "title": "Teslarati: Huang zu Tesla/SpaceX",
-          "url": "https://x.com/Teslarati/status/2120902181674959298"
+          "title": "Ohne Aufschlag kein Ja",
+          "url": "https://x.com/alexmedin1/status/2121114443669266557"
         },
         {
-          "title": "Squawksquare: von NVDA zu TSLA",
-          "url": "https://x.com/squawksquare/status/2120900011005485161"
+          "title": "Musk-Abhängigkeit",
+          "url": "https://x.com/strengthPlan/status/2121101116108575162"
         }
       ],
-      "updatedAt": "2026-11-12T16:46:00+01:00"
+      "updatedAt": "2026-11-13T08:03:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 35,
-      "postsCount": 10,
-      "reason": "Rocket Lab: Pentagon gibt 150 Mio. $ Kredit, damit Neutron nach dem Erststart öfter fliegen kann. Seeking Alpha lobt Neutron, der Erststart ist aber erst 2027.",
+      "score": 40,
+      "postsCount": 20,
+      "reason": "Rocket Lab: Vorfreude auf den 100. Electron-Start am Samstag, dazu bestanden alle acht Lightning-Satelliten die ersten Tests. Wenig Kritik.",
       "sources": [
         {
-          "title": "150 Mio. $ für Neutron",
-          "url": "https://x.com/jameskeeling202/status/2120898573336490166"
+          "title": "100. Electron-Start",
+          "url": "https://x.com/pledisme/status/2121103700307353614"
         },
         {
-          "title": "Seeking Alpha zu Neutron",
-          "url": "https://x.com/SeekingAlpha/status/2120891880930160844"
+          "title": "Lightning-Satelliten getestet",
+          "url": "https://x.com/Bettybronxton/status/2121113864704049270"
         },
         {
-          "title": "Donald Dean: RKLB-Marke 65 $",
-          "url": "https://x.com/donaldjdean/status/2120898357858328822"
+          "title": "Streit Iridium/SpaceX",
+          "url": "https://x.com/RCapitalX/status/2121110315974947198"
         }
       ],
-      "updatedAt": "2026-11-12T16:21:00+01:00"
+      "updatedAt": "2026-11-13T08:03:00+01:00"
     }
   }
 }
