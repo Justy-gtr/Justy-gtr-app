@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-11-13T00:59:05.091Z",
+  "asOf": "2026-11-13T04:48:56.916Z",
   "example": false,
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1056,
+    "rate": 1.1062,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-13T00:59:05.091Z",
+    "asOf": "2026-11-13T04:48:56.916Z",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -33,7 +33,7 @@
       "eurSymbol": "SPX.DE",
       "usdSymbol": "SPCX",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1056,
+      "fxRate": 1.1062,
       "sparkline": [
         125.5,
         124.68,
@@ -6361,9 +6361,9 @@
       ],
       "fetchError": null,
       "overnightPhase": "nachhandel",
-      "overnightEur": 126.78,
-      "overnightHighEur": 126.78,
-      "overnightLowEur": 126.59,
+      "overnightEur": 126.71,
+      "overnightHighEur": 126.71,
+      "overnightLowEur": 126.52,
       "overnightAsOf": "2026-11-12T21:29:00.000Z",
       "source": "alpaca-iex"
     },
@@ -6388,7 +6388,7 @@
       "eurSymbol": "TL0.DE",
       "usdSymbol": "TSLA",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1056,
+      "fxRate": 1.1062,
       "sparkline": [
         349.25,
         349,
@@ -20179,7 +20179,7 @@
       "eurSymbol": "6RJ0.F",
       "usdSymbol": "RKLB",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1056,
+      "fxRate": 1.1062,
       "sparkline": [
         57.7,
         57.7,
@@ -31815,9 +31815,9 @@
       "dayHighEur": 153.3,
       "dayLowEur": 140.44,
       "overnightPhase": "nachhandel",
-      "overnightEur": 149.95,
-      "overnightHighEur": 149.97,
-      "overnightLowEur": 148.75,
+      "overnightEur": 149.86,
+      "overnightHighEur": 149.89,
+      "overnightLowEur": 148.67,
       "overnightAsOf": "2026-11-12T21:55:00.000Z",
       "eurMethod": "direct_eur",
       "eurVenue": "Xetra",
@@ -31825,7 +31825,7 @@
       "usdSymbol": "MRVL",
       "source": "alpaca-iex",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.1056,
+      "fxRate": 1.1062,
       "sparkline": [
         147,
         146.52,
