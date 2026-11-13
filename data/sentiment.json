@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T11:35:00+01:00",
+  "updatedAt": "2026-11-13T11:58:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
+      "score": 35,
       "postsCount": 20,
-      "reason": "SpaceX: Starship Flug 15 heute ab 23:45 Uhr mit erstem Doppel-Fang ist Hauptthema. Dazu Fusion mit Tesla und Musks Post „Jensen“: Holt er den Ex-Nvidia-Chef?",
+      "reason": "SpaceX: Vorfreude auf Starship Flug 15 heute ab 23:45 Uhr mit Doppel-Fang. Aber 12 Stunden vorher noch keine FAA-Freigabe, das fällt auf. Dazu Fusionsgerede.",
       "sources": [
         {
-          "title": "SpaceX 101 vor Flug 15",
-          "url": "https://x.com/spcxGOD/status/2121158628858093754"
+          "title": "Noch keine FAA-Lizenz 12 h vor Start",
+          "url": "https://x.com/spcxGOD/status/2121193494924394902"
+        },
+        {
+          "title": "Doppel-Fang in Folge",
+          "url": "https://x.com/AsFoundX/status/2121195517161898264"
         },
         {
           "title": "Musk postet „Jensen“",
           "url": "https://x.com/spcxGOD/status/2121176998923944006"
-        },
-        {
-          "title": "Hitzeschild wird mit jedem Flug besser",
-          "url": "https://x.com/EvasTeslaSPlaid/status/2121189625934831957"
         }
       ],
-      "updatedAt": "2026-11-13T11:35:00+01:00"
+      "updatedAt": "2026-11-13T11:58:00+01:00"
     },
     "TSLA": {
-      "mood": "gemischt",
-      "score": 15,
+      "mood": "gut",
+      "score": 25,
       "postsCount": 20,
-      "reason": "Tesla: Fusion mit SpaceX bleibt Hauptthema, aber einige Anleger fürchten, dabei schlechter wegzukommen. Viele Spam-Beiträge, wenig echte News.",
+      "reason": "Tesla: Fusion mit SpaceX ist Thema Nummer eins. Viele erwarten für Tesla-Aktionäre einen Aufschlag von 15 bis 30 %. Einzelne Kritiker warnen vor Nachteilen.",
       "sources": [
         {
           "title": "The Assembly: Größte Fusion der Geschichte?",
           "url": "https://x.com/InTheAssembly/status/2121174491862556764"
         },
         {
-          "title": "Kritik: Fusion schadet Tesla-Anlegern",
-          "url": "https://x.com/New_Dimension10/status/2121165221385400727"
+          "title": "Wer profitiert mehr von der Fusion?",
+          "url": "https://x.com/EpicTradeDate/status/2121193445901598780"
         },
         {
-          "title": "Fusion rückt näher, Tesla im Fokus",
-          "url": "https://x.com/MarketCapOf/status/2121176901519864178"
+          "title": "Kritik: Fusion schadet Tesla-Anlegern",
+          "url": "https://x.com/New_Dimension10/status/2121165221385400727"
         }
       ],
-      "updatedAt": "2026-11-13T11:35:00+01:00"
+      "updatedAt": "2026-11-13T11:58:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/Bearlovesbull/status/2121178600581812323"
         }
       ],
-      "updatedAt": "2026-11-13T11:35:00+01:00"
+      "updatedAt": "2026-11-13T11:58:00+01:00"
     }
   }
 }
