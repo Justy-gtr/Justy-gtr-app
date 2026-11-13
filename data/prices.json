@@ -5580,10 +5580,10 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Fr 18:05: In New York um 18:01 bei 138,30 $ (−1,2 % zum Schluss von 139,94 $), in Xetra zum Schluss bei 125,34 € (−2,9 %) (Yahoo). Neu: SpaceX hat laut The Information im KI-Bereich rund 60 Stellen im Team von Grok Imagine (Video- und Bildgenerator) gestrichen und setzt stärker auf KI-Programmierwerkzeuge und Grok Bot (Investing.com). Alles wartet auf Starship Flight 15 um 23:45: Strand und Straße bei Starbase sind gesperrt (City of Starbase), die FAA-Lizenz fehlt aber noch, die SpaceX-Seite schreibt „pending regulatory approval“ (SpaceX). Der Markt baut die Verluste aus: Nasdaq um 18:01 −1,6 %, S&P 500 −1,0 % (Yahoo). Der Chipindex fällt laut Reuters um 5 %, AMD um rund 10 %, Nvidia −3,7 % nach dem Rücktritt von Jensen Huang; die Rendite zehnjähriger US-Anleihen stieg bis 5,16 %, den höchsten Stand seit Oktober, weil Anleger mit einer Zinserhöhung im Dezember rechnen (Yahoo, Reuters).",
+      "why": "Stand Fr 20:05: In New York um 19:56 bei 139,93 $ und damit unverändert zum Schluss von 139,94 $; der Verlust vom frühen Abend (18:01: −1,2 %) ist aufgeholt (Yahoo). In Xetra schloss die Aktie bei 125,34 € (−2,9 %). Alles wartet auf Starship Flight 15 um 23:45 Berlin: Die Sperren laufen, die FAA-Lizenz fehlt aber weiter (SpaceX, NASASpaceflight). Laut The Information hat SpaceX rund 60 Stellen im Team von Grok Imagine gestrichen. TipRanks rechnet vor, dass der Kursrückgang seit Ende Oktober eine Fusion mit Tesla in Aktien für SpaceX-Aktionäre teurer macht. Der Markt hat sich etwas erholt, bleibt aber im Minus: Nasdaq um 19:56 −1,0 %, S&P 500 −0,5 %, der Chipindex SOX −3,9 % (Yahoo). Treiber ist weiter der Ausverkauf bei Chip- und KI-Werten nach Jensen Huangs Rücktritt bei Nvidia: AMD rund −10 %, Broadcom −6 %; ein Bericht über Dell-Server mit gesperrten Nvidia-Chips in Shanghai und ein Bericht, Microsoft wolle mit weniger KI-Cloud-Anbietern arbeiten, belasten zusätzlich (Benzinga, Reuters). Die Rendite zehnjähriger US-Anleihen liegt bei 5,14 %, der Dollar auf einem 19-Monats-Hoch (Yahoo, Reuters).",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX (13.11., 18:01)",
+          "title": "Yahoo Finance: SPCX (13.11., 19:56)",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
@@ -5591,44 +5591,48 @@
           "url": "https://finance.yahoo.com/quote/SPX.DE/"
         },
         {
-          "title": "Investing.com: SpaceX-KI streicht rund 60 Stellen im Grok-Imagine-Team (The Information, 13.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/musks-ai-group-lays-off-60-staffers-from-grok-video-unit-the-information-reports-5025776"
-        },
-        {
-          "title": "The Information: Elon Musk’s AI Group Guts Grok Video Generation Team",
-          "url": "https://www.theinformation.com/articles/elon-musks-ai-group-guts-grok-video-generation-team"
-        },
-        {
-          "title": "City of Starbase: Strand- und Straßensperren 13., 14. und 15.11. (Mayor's Orders 2026-25 und 2026-26)",
-          "url": "https://www.starbase.texas.gov/beach-road-access"
-        },
-        {
           "title": "SpaceX: Starship Flight 15 (pending regulatory approval)",
           "url": "https://www.spacex.com/launches/starship-flight-15"
         },
         {
-          "title": "finanzen.net: SpaceX am Nachmittag mit roten Vorzeichen (13.11., 16:08)",
-          "url": "https://www.finanzen.net/nachricht/aktien/spacex-aktie-kursbewegung-13-11-2026-15758011"
+          "title": "@NASASpaceflight: „Keine offizielle Nachricht der FAA“, unter fünf Stunden bis zum Start (13.11., 19:03)",
+          "url": "https://x.com/NASASpaceflight/status/2121302998219641167"
         },
         {
-          "title": "Yahoo Finance-Liveblog: Nasdaq −1,6 %, Rendite bis 5,16 % (13.11., 17:40)",
+          "title": "Investing.com: SpaceX-KI streicht rund 60 Stellen im Grok-Imagine-Team (The Information, 13.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/musks-ai-group-lays-off-60-staffers-from-grok-video-unit-the-information-reports-5025776"
+        },
+        {
+          "title": "TipRanks: SpaceX-Kursrückgang verteuert eine Tesla-Übernahme in Aktien (13.11.)",
+          "url": "https://www.tipranks.com/news/spacex-stocks-12-drop-has-driven-up-the-cost-of-elon-musks-all-stock-tesla-buyout"
+        },
+        {
+          "title": "Yahoo Finance-Liveblog: Nasdaq führt Verluste an, Chip-Ausverkauf beschleunigt sich (13.11., 19:49)",
           "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
         },
         {
-          "title": "Reuters via Central Oregon Daily: Chipindex −5 %, AMD −9,4 % (13.11.)",
-          "url": "https://www.centraloregondaily.com/news/consumer/wall-st-reverses-early-gains-as-nvidia-fallout-rattles-tech-stocks/article_4864122f-faa9-53ef-b47f-3f5cc804368d.html"
+          "title": "Benzinga: AMD −10,5 %, Nasdaq 100 −1,7 %; Bessent und Dell-Server in Shanghai (13.11., 19:41)",
+          "url": "https://www.benzinga.com/markets/equities/26/11/63259862/stock-market-today-amd-nvidia-chip-selloff-cisco-modine-november-13"
         },
         {
-          "title": "Yahoo Finance: Nvidia rutscht, Chip-Ausverkauf beschleunigt sich (13.11.)",
-          "url": "https://finance.yahoo.com/markets/article/nvidia-stock-slips-as-investors-digest-ceo-exit-rest-of-chip-sector-falls-144818245.html"
+          "title": "Reuters via Investing.com: Neoclouds und KI-Aktien fallen erneut (13.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/neoclouds-ai-stocks-slide-again-as-nvidia-turmoil-rattles-sector-5026205"
         },
         {
-          "title": "Yahoo Finance: %5EIXIC (13.11., 18:01)",
+          "title": "Reuters via MarketScreener: Aktien fallen mit Tech, Dollar auf 19-Monats-Hoch (13.11.)",
+          "url": "https://ca.marketscreener.com/news/stocks-fall-with-tech-nvidia-concerns-us-dollar-climbs-ce785ed9d080f723"
+        },
+        {
+          "title": "Yahoo Finance: %5EIXIC (13.11., 19:56)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Yahoo Finance: NVDA (13.11., 18:01)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Yahoo Finance: %5ESOX (13.11., 19:56)",
+          "url": "https://finance.yahoo.com/quote/%5ESOX/"
+        },
+        {
+          "title": "Yahoo Finance: %5ETNX (13.11., 19:41)",
+          "url": "https://finance.yahoo.com/quote/%5ETNX/"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -18521,10 +18525,10 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Fr 18:05: In New York um 18:01 bei 389,97 $ (−1,9 % zum Schluss von 397,45 $), in Xetra zum Schluss bei 353,60 € (−0,1 %) (Yahoo). Nach dem Wochenplus von rund 16 % nehmen Anleger Gewinne mit (Yahoo); eine eigene neue Nachricht gibt es nicht. Die Fusionsgespräche mit SpaceX laufen laut Bloomberg weiter, eine Bekanntgabe gilt frühestens im Dezember als möglich (Quartz). Der Markt baut die Verluste aus: Nasdaq um 18:01 −1,6 %, S&P 500 −1,0 % (Yahoo). Der Chipindex fällt laut Reuters um 5 %, AMD um rund 10 %, Nvidia −3,7 % nach dem Rücktritt von Jensen Huang; die Rendite zehnjähriger US-Anleihen stieg bis 5,16 %, den höchsten Stand seit Oktober, weil Anleger mit einer Zinserhöhung im Dezember rechnen (Yahoo, Reuters).",
+      "why": "Stand Fr 20:05: In New York um 19:56 bei 391,14 $ (−1,6 % zum Schluss von 397,45 $), in Xetra zum Schluss bei 353,60 € (−0,1 %) (Yahoo). Nach dem Wochenplus von rund 16 % nehmen Anleger Gewinne mit; eine eigene neue Nachricht gibt es nicht. Die Fusionsgespräche mit SpaceX laufen laut Bloomberg weiter, eine Bekanntgabe ist frühestens im Dezember möglich, offen sind Umtauschverhältnis und Teslas China-Geschäft (finanzen.net). Der Markt hat sich etwas erholt, bleibt aber im Minus: Nasdaq um 19:56 −1,0 %, S&P 500 −0,5 %, der Chipindex SOX −3,9 % (Yahoo). Treiber ist weiter der Ausverkauf bei Chip- und KI-Werten nach Jensen Huangs Rücktritt bei Nvidia: AMD rund −10 %, Broadcom −6 %; ein Bericht über Dell-Server mit gesperrten Nvidia-Chips in Shanghai und ein Bericht, Microsoft wolle mit weniger KI-Cloud-Anbietern arbeiten, belasten zusätzlich (Benzinga, Reuters). Die Rendite zehnjähriger US-Anleihen liegt bei 5,14 %, der Dollar auf einem 19-Monats-Hoch (Yahoo, Reuters).",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA (13.11., 18:01)",
+          "title": "Yahoo Finance: TSLA (13.11., 19:56)",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
@@ -18532,32 +18536,40 @@
           "url": "https://finance.yahoo.com/quote/TL0.DE/"
         },
         {
-          "title": "Yahoo Finance: Tesla +16 % in einer Woche",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-soars-16-week-musk-115453089.html"
+          "title": "finanzen.net: Tesla und SpaceX – Fusion wohl schon im Dezember möglich (13.11., 17:05)",
+          "url": "https://www.finanzen.net/nachricht/aktien/fusionsplaene-bei-musk-aktien-von-tesla-und-spacex-im-blick-fusionsgespraeche-kommen-offenbar-voran-00-16060972"
         },
         {
-          "title": "Quartz: Fusionsgespräche SpaceX–Tesla kommen voran (Bloomberg)",
-          "url": "https://qz.com/spacex-tesla-merger-talks-december-deal-111326"
+          "title": "TipRanks: SpaceX-Kursrückgang verteuert eine Tesla-Übernahme in Aktien (13.11.)",
+          "url": "https://www.tipranks.com/news/spacex-stocks-12-drop-has-driven-up-the-cost-of-elon-musks-all-stock-tesla-buyout"
         },
         {
-          "title": "Yahoo Finance-Liveblog: Nasdaq −1,6 %, Rendite bis 5,16 % (13.11., 17:40)",
+          "title": "Yahoo Finance-Liveblog: Nasdaq führt Verluste an, Chip-Ausverkauf beschleunigt sich (13.11., 19:49)",
           "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
         },
         {
-          "title": "Reuters via Central Oregon Daily: Chipindex −5 %, AMD −9,4 % (13.11.)",
-          "url": "https://www.centraloregondaily.com/news/consumer/wall-st-reverses-early-gains-as-nvidia-fallout-rattles-tech-stocks/article_4864122f-faa9-53ef-b47f-3f5cc804368d.html"
+          "title": "Benzinga: AMD −10,5 %, Nasdaq 100 −1,7 %; Bessent und Dell-Server in Shanghai (13.11., 19:41)",
+          "url": "https://www.benzinga.com/markets/equities/26/11/63259862/stock-market-today-amd-nvidia-chip-selloff-cisco-modine-november-13"
         },
         {
-          "title": "Yahoo Finance: Nvidia rutscht, Chip-Ausverkauf beschleunigt sich (13.11.)",
-          "url": "https://finance.yahoo.com/markets/article/nvidia-stock-slips-as-investors-digest-ceo-exit-rest-of-chip-sector-falls-144818245.html"
+          "title": "Reuters via Investing.com: Neoclouds und KI-Aktien fallen erneut (13.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/neoclouds-ai-stocks-slide-again-as-nvidia-turmoil-rattles-sector-5026205"
         },
         {
-          "title": "Yahoo Finance: %5EIXIC (13.11., 18:01)",
+          "title": "Reuters via MarketScreener: Aktien fallen mit Tech, Dollar auf 19-Monats-Hoch (13.11.)",
+          "url": "https://ca.marketscreener.com/news/stocks-fall-with-tech-nvidia-concerns-us-dollar-climbs-ce785ed9d080f723"
+        },
+        {
+          "title": "Yahoo Finance: %5EIXIC (13.11., 19:56)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Yahoo Finance: NVDA (13.11., 18:01)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Yahoo Finance: %5ESOX (13.11., 19:56)",
+          "url": "https://finance.yahoo.com/quote/%5ESOX/"
+        },
+        {
+          "title": "Yahoo Finance: %5ETNX (13.11., 19:41)",
+          "url": "https://finance.yahoo.com/quote/%5ETNX/"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -29927,10 +29939,10 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Fr 18:05: In New York um 18:01 bei 60,31 $ (−5,9 % zum Schluss von 64,07 $), in Stuttgart um 17:30 bei 55,00 € (Yahoo). Eine neue Firmenmeldung gibt es nicht; die Aktie fällt mit dem schwachen Tech- und Wachstumssektor. Schon am Do hatten gesenkte Kursziele belastet, darunter Morgan Stanley von 105 auf 103 $ (Übergewichten) (Defense World). Der Markt baut die Verluste aus: Nasdaq um 18:01 −1,6 %, S&P 500 −1,0 % (Yahoo). Der Chipindex fällt laut Reuters um 5 %, AMD um rund 10 %, Nvidia −3,7 % nach dem Rücktritt von Jensen Huang; die Rendite zehnjähriger US-Anleihen stieg bis 5,16 %, den höchsten Stand seit Oktober, weil Anleger mit einer Zinserhöhung im Dezember rechnen (Yahoo, Reuters). Der 100. Electron-Start ist weiter für Sa 06:30 Berlin geplant (Rocket Lab).",
+      "why": "Stand Fr 20:05: In New York um 19:56 bei 61,21 $ (−4,5 % zum Schluss von 64,07 $), etwas besser als um 18:01 (−5,9 %); in Stuttgart um 17:30 bei 55,00 € (Yahoo). Eine neue Firmenmeldung gibt es nicht; die Aktie fällt mit dem schwachen Tech- und Wachstumssektor. Schon am Do hatten gesenkte Kursziele belastet, darunter Morgan Stanley von 105 auf 103 $ (Übergewichten) (Defense World). Der Markt hat sich etwas erholt, bleibt aber im Minus: Nasdaq um 19:56 −1,0 %, S&P 500 −0,5 %, der Chipindex SOX −3,9 % (Yahoo). Treiber ist weiter der Ausverkauf bei Chip- und KI-Werten nach Jensen Huangs Rücktritt bei Nvidia: AMD rund −10 %, Broadcom −6 %; ein Bericht über Dell-Server mit gesperrten Nvidia-Chips in Shanghai und ein Bericht, Microsoft wolle mit weniger KI-Cloud-Anbietern arbeiten, belasten zusätzlich (Benzinga, Reuters). Die Rendite zehnjähriger US-Anleihen liegt bei 5,14 %, der Dollar auf einem 19-Monats-Hoch (Yahoo, Reuters). Der 100. Electron-Start ist weiter für Sa 06:30 Berlin geplant (Rocket Lab).",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB (13.11., 18:01)",
+          "title": "Yahoo Finance: RKLB (13.11., 19:56)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
@@ -29942,27 +29954,39 @@
           "url": "https://www.defenseworld.net/2026/11/13/rocket-lab-nasdaqrklb-shares-down-3-1-after-analyst-downgrade.html"
         },
         {
-          "title": "Yahoo Finance-Liveblog: Nasdaq −1,6 %, Rendite bis 5,16 % (13.11., 17:40)",
+          "title": "Yahoo Finance-Liveblog: Nasdaq führt Verluste an, Chip-Ausverkauf beschleunigt sich (13.11., 19:49)",
           "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
         },
         {
-          "title": "Reuters via Central Oregon Daily: Chipindex −5 %, AMD −9,4 % (13.11.)",
-          "url": "https://www.centraloregondaily.com/news/consumer/wall-st-reverses-early-gains-as-nvidia-fallout-rattles-tech-stocks/article_4864122f-faa9-53ef-b47f-3f5cc804368d.html"
+          "title": "Benzinga: AMD −10,5 %, Nasdaq 100 −1,7 %; Bessent und Dell-Server in Shanghai (13.11., 19:41)",
+          "url": "https://www.benzinga.com/markets/equities/26/11/63259862/stock-market-today-amd-nvidia-chip-selloff-cisco-modine-november-13"
         },
         {
-          "title": "Yahoo Finance: Nvidia rutscht, Chip-Ausverkauf beschleunigt sich (13.11.)",
-          "url": "https://finance.yahoo.com/markets/article/nvidia-stock-slips-as-investors-digest-ceo-exit-rest-of-chip-sector-falls-144818245.html"
+          "title": "Reuters via Investing.com: Neoclouds und KI-Aktien fallen erneut (13.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/neoclouds-ai-stocks-slide-again-as-nvidia-turmoil-rattles-sector-5026205"
         },
         {
-          "title": "Yahoo Finance: %5EIXIC (13.11., 18:01)",
+          "title": "Reuters via MarketScreener: Aktien fallen mit Tech, Dollar auf 19-Monats-Hoch (13.11.)",
+          "url": "https://ca.marketscreener.com/news/stocks-fall-with-tech-nvidia-concerns-us-dollar-climbs-ce785ed9d080f723"
+        },
+        {
+          "title": "Yahoo Finance: %5EIXIC (13.11., 19:56)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Yahoo Finance: NVDA (13.11., 18:01)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Yahoo Finance: %5ESOX (13.11., 19:56)",
+          "url": "https://finance.yahoo.com/quote/%5ESOX/"
         },
         {
-          "title": "Rocket Lab: The Mountain God Rises (NET 14.11., 05:30 UTC)",
+          "title": "Yahoo Finance: %5ETNX (13.11., 19:41)",
+          "url": "https://finance.yahoo.com/quote/%5ETNX/"
+        },
+        {
+          "title": "@RocketLab: Startfenster des 100. Starts öffnet in 12 Stunden, Übertragung ab 05:30 Berlin (13.11., 18:34)",
+          "url": "https://x.com/RocketLab/status/2121295702387228977"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
           "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
         }
       ],
@@ -41871,10 +41895,10 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Fr 18:05: In New York um 18:01 bei 153,40 $ (−6,7 % zum Schluss von 164,45 $), in Xetra zum Schluss bei 139,34 € (−7,9 %) (Yahoo). Eine eigene Nachricht gibt es nicht; Marvell fällt im breiten Chip-Ausverkauf mit Broadcom, Intel und Micron (Investopedia, Yahoo). Der Markt baut die Verluste aus: Nasdaq um 18:01 −1,6 %, S&P 500 −1,0 % (Yahoo). Der Chipindex fällt laut Reuters um 5 %, AMD um rund 10 %, Nvidia −3,7 % nach dem Rücktritt von Jensen Huang; die Rendite zehnjähriger US-Anleihen stieg bis 5,16 %, den höchsten Stand seit Oktober, weil Anleger mit einer Zinserhöhung im Dezember rechnen (Yahoo, Reuters). Nvidia-Zahlen am Di 17.11.",
+      "why": "Stand Fr 20:05: In New York um 19:56 bei 155,85 $ (−5,2 % zum Schluss von 164,45 $), in Xetra zum Schluss bei 139,34 € (−7,9 %) (Yahoo). Eine eigene Nachricht gibt es nicht; Marvell fällt im breiten Chip-Ausverkauf mit AMD, Broadcom und Micron (Investopedia, Reuters). Der Markt hat sich etwas erholt, bleibt aber im Minus: Nasdaq um 19:56 −1,0 %, S&P 500 −0,5 %, der Chipindex SOX −3,9 % (Yahoo). Treiber ist weiter der Ausverkauf bei Chip- und KI-Werten nach Jensen Huangs Rücktritt bei Nvidia: AMD rund −10 %, Broadcom −6 %; ein Bericht über Dell-Server mit gesperrten Nvidia-Chips in Shanghai und ein Bericht, Microsoft wolle mit weniger KI-Cloud-Anbietern arbeiten, belasten zusätzlich (Benzinga, Reuters). Die Rendite zehnjähriger US-Anleihen liegt bei 5,14 %, der Dollar auf einem 19-Monats-Hoch (Yahoo, Reuters). Nvidia-Zahlen am Di 17.11.",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL (13.11., 18:01)",
+          "title": "Yahoo Finance: MRVL (13.11., 19:56)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
@@ -41886,28 +41910,36 @@
           "url": "https://www.investopedia.com/stock-market-today-dow-jones-today-s-and-p-500-nasdaq-11132026-12252143"
         },
         {
-          "title": "Yahoo Finance: AMD (13.11., 18:01)",
+          "title": "Yahoo Finance: AMD (13.11., 19:56)",
           "url": "https://finance.yahoo.com/quote/AMD/"
         },
         {
-          "title": "Yahoo Finance-Liveblog: Nasdaq −1,6 %, Rendite bis 5,16 % (13.11., 17:40)",
+          "title": "Yahoo Finance-Liveblog: Nasdaq führt Verluste an, Chip-Ausverkauf beschleunigt sich (13.11., 19:49)",
           "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
         },
         {
-          "title": "Reuters via Central Oregon Daily: Chipindex −5 %, AMD −9,4 % (13.11.)",
-          "url": "https://www.centraloregondaily.com/news/consumer/wall-st-reverses-early-gains-as-nvidia-fallout-rattles-tech-stocks/article_4864122f-faa9-53ef-b47f-3f5cc804368d.html"
+          "title": "Benzinga: AMD −10,5 %, Nasdaq 100 −1,7 %; Bessent und Dell-Server in Shanghai (13.11., 19:41)",
+          "url": "https://www.benzinga.com/markets/equities/26/11/63259862/stock-market-today-amd-nvidia-chip-selloff-cisco-modine-november-13"
         },
         {
-          "title": "Yahoo Finance: Nvidia rutscht, Chip-Ausverkauf beschleunigt sich (13.11.)",
-          "url": "https://finance.yahoo.com/markets/article/nvidia-stock-slips-as-investors-digest-ceo-exit-rest-of-chip-sector-falls-144818245.html"
+          "title": "Reuters via Investing.com: Neoclouds und KI-Aktien fallen erneut (13.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/neoclouds-ai-stocks-slide-again-as-nvidia-turmoil-rattles-sector-5026205"
         },
         {
-          "title": "Yahoo Finance: %5EIXIC (13.11., 18:01)",
+          "title": "Reuters via MarketScreener: Aktien fallen mit Tech, Dollar auf 19-Monats-Hoch (13.11.)",
+          "url": "https://ca.marketscreener.com/news/stocks-fall-with-tech-nvidia-concerns-us-dollar-climbs-ce785ed9d080f723"
+        },
+        {
+          "title": "Yahoo Finance: %5EIXIC (13.11., 19:56)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Yahoo Finance: NVDA (13.11., 18:01)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Yahoo Finance: %5ESOX (13.11., 19:56)",
+          "url": "https://finance.yahoo.com/quote/%5ESOX/"
+        },
+        {
+          "title": "Yahoo Finance: %5ETNX (13.11., 19:41)",
+          "url": "https://finance.yahoo.com/quote/%5ETNX/"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",

@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-13T18:05:00+01:00",
+  "asOf": "2026-11-13T20:05:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,60 @@
     }
   },
   "posts": [
+    {
+      "id": "post-rocketlab-2121315229800030438",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-13T19:52:17+01:00",
+      "summaryDe": "Rocket Lab: „Stolz, der US Space Force taktisch schnell einsetzbare Raumfahrtfähigkeiten zu liefern.“ Rocket Lab zitiert dazu die Space Force zur Mission VICTUS HAZE, bei der im Juni 2026 eine Electron auf kurzfristigen Abruf startete.",
+      "originalText": "Proud to deliver tactically responsive space capabilities to the @USSpaceForce",
+      "url": "https://x.com/RocketLab/status/2121315229800030438",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (13.11., 19:52)",
+          "url": "https://x.com/RocketLab/status/2121315229800030438"
+        },
+        {
+          "title": "@USSpaceForce: VICTUS HAZE (13.11., 18:45)",
+          "url": "https://x.com/USSpaceForce/status/2121298310757601345"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2121295702387228977",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-13T18:34:41+01:00",
+      "summaryDe": "Rocket Lab: Das Startfenster für den 100. Start öffnet in 12 Stunden. Eine Sonderübertragung beginnt Sa 14.11. um 04:30 UTC (05:30 Berlin), etwa eine Stunde vor dem Start.",
+      "originalText": "Our 100th launch window opens in 12 hours. Join us LIVE for a special broadcast to celebrate this milestone from 04:30 UTC, Saturday November 14th - approximately one hour before lift-off.",
+      "url": "https://x.com/RocketLab/status/2121295702387228977",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: Startfenster des 100. Starts öffnet in 12 Stunden, Übertragung ab 05:30 Berlin (13.11., 18:34)",
+          "url": "https://x.com/RocketLab/status/2121295702387228977"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        }
+      ]
+    },
     {
       "id": "post-spacex-2121280048871473281",
       "account": "@SpaceX",
@@ -7262,5 +7316,5 @@
       ]
     }
   ],
-  "notes": "13.11. 18:05: Neu @SpaceX zu Boca Chica („Strand nicht zu verkaufen“) und zwei Musk-Posts („And remember …“ mit Foto von Ship 42, „Starlink“ zum United-Interview) (X-Abfrage). Politische Antworten ohne Firmenbezug nicht aufgenommen."
+  "notes": "13.11. 20:05: Neu zwei @RocketLab-Posts (100. Start: Fenster öffnet in 12 Stunden; Space-Force-Mission VICTUS HAZE). Seit 17:00 Berlin keine neuen Posts von @elonmusk, @SpaceX, @Tesla, @xai, @neuralink oder @boringcompany (X-Abfrage)."
 }
