@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-12T22:00:00+01:00",
+  "asOf": "2026-11-13T05:10:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,106 @@
     }
   },
   "posts": [
+    {
+      "id": "post-spacex-2121044579470233638",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-13T01:56:49+01:00",
+      "summaryDe": "SpaceX: Ship 42 fährt vor dem Start zur Startrampe in Starbase. Das Schiff für Flight 15 wird damit für den Start vorbereitet; das Fenster öffnet Fr 16:45 Ortszeit (23:45 Berlin). Eine FAA-Lizenz für den Flug ist weiter nicht veröffentlicht.",
+      "originalText": "Ship 42 moves to the Starbase pad ahead of launch",
+      "url": "https://x.com/SpaceX/status/2121044579470233638",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX: Ship 42 fährt zur Startrampe (13.11., 01:56)",
+          "url": "https://x.com/SpaceX/status/2121044579470233638"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15 (pending regulatory approval)",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2121023245604602195",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-13T00:32:03+01:00",
+      "summaryDe": "Rocket Lab: Alle acht selbst gebauten Lightning-Satellitenplattformen für MDA Space und Globalstar haben die ersten Funktionstests im Orbit bestanden. Jetzt heben sie ihre Bahn auf die Zielhöhe an, Rocket Lab begleitet das.",
+      "originalText": "All eight Rocket Lab-built Lightning platforms for @MDA_space and @Globalstar have passed initial on-orbit functional tests. Orbit raising is now underway, with our team supporting the spacecraft as they climb toward their final orbit.",
+      "url": "https://x.com/RocketLab/status/2121023245604602195",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: Lightning-Plattformen bestehen Tests im Orbit (13.11., 00:32)",
+          "url": "https://x.com/RocketLab/status/2121023245604602195"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2121007529409032312",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-12T23:29:36+01:00",
+      "summaryDe": "Rocket Lab: Generalprobe mit Betankung (Wet Dress Rehearsal) abgeschlossen. Electron ist bereit für den 100. Start „The Mountain God Rises“ von Launch Complex 1 in Neuseeland; das Fenster öffnet Sa 14.11. um 05:30 UTC (06:30 Berlin).",
+      "originalText": "Wet Dress Rehearsal complete ✅ Electron is ready for its 100th launch this weekend from Launch Complex 1. 'The Mountain God Rises' launch window opens tomorrow Nov 14: 05:30 UTC",
+      "url": "https://x.com/RocketLab/status/2121007529409032312",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab: Generalprobe fertig, 100. Electron ab 14.11. (12.11., 23:29)",
+          "url": "https://x.com/RocketLab/status/2121007529409032312"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        }
+      ]
+    },
+    {
+      "id": "post-starlink-2120995147504853416",
+      "account": "@Starlink",
+      "displayName": "Starlink",
+      "postedAt": "2026-11-12T22:40:24+01:00",
+      "summaryDe": "Starlink wirbt mit Southwest Airlines: An Bord sind über Starlink Spiele, Livestreams und Chat möglich. Werbepost ohne neue Zahlen.",
+      "originalText": "Starlink enables gaming, live streaming, and chat onboard @SouthwestAir",
+      "url": "https://x.com/Starlink/status/2120995147504853416",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Starlink: Southwest Airlines (12.11., 22:40)",
+          "url": "https://x.com/Starlink/status/2120995147504853416"
+        }
+      ]
+    },
     {
       "id": "post-tesla-2120980260393271585",
       "account": "@Tesla",

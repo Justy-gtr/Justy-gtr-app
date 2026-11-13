@@ -536,9 +536,9 @@
         "TSLA",
         "RKLB"
       ],
-      "probabilityPct": 90,
+      "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Williams tritt am Do um 18:30 ET (Fr 00:30 Berlin) auf einem Podium auf (Helious-Kalender). Nach der heißen Oktober-Inflation preist der Markt eine Fed-Zinserhöhung im Dezember ein, der Dollar steht auf einem 19-Monats-Hoch; Goldman erwartet zusätzlich eine Erhöhung Anfang 2027 (CNBC). Williams gilt als Stimme der Fed-Führung, laut NAB wird jede Andeutung sofort gehandelt. Steigende Zinsen treffen vor allem hoch bewertete Wachstumswerte wie SPCX, TSLA und RKLB. 90 %: Termin angekündigt, Inhalt offen.",
+      "reasoning": "Williams tritt am Do um 18:30 ET (Fr 00:30 Berlin) auf einem Podium auf (Helious-Kalender). Nach der heißen Oktober-Inflation preist der Markt eine Fed-Zinserhöhung im Dezember ein, der Dollar steht auf einem 19-Monats-Hoch; Goldman erwartet zusätzlich eine Erhöhung Anfang 2027 (CNBC). Williams gilt als Stimme der Fed-Führung, laut NAB wird jede Andeutung sofort gehandelt. Steigende Zinsen treffen vor allem hoch bewertete Wachstumswerte wie SPCX, TSLA und RKLB. 90 %: Termin angekündigt, Inhalt offen. Stand Fr 05:00: Eingetreten. Williams sagte, weitere Zinserhöhungen seien wahrscheinlich: Die Wirtschaft sei stark, der Arbeitsmarkt werde fester und die Inflation hartnäckig, „wir haben noch Arbeit vor uns“. Wann und wie weit, ließ er offen. Der Markt erwartet im Dezember eine Erhöhung um 0,25 Punkte auf 4,00–4,25 % (Reuters). Er dämpfte die Erwartungen also nicht. Nasdaq-100-Future um 04:52 kaum verändert (Yahoo). 100 %.",
       "example": false,
       "sources": [
         {
@@ -548,6 +548,14 @@
         {
           "title": "Helious: Termine von John Williams",
           "url": "https://helious.io/fed/williams"
+        },
+        {
+          "title": "Reuters/US News: Williams – die Fed hat noch Arbeit vor sich (12.11.)",
+          "url": "https://money.usnews.com/investing/news/articles/2026-11-12/feds-williams-says-central-bank-has-work-to-do-to-get-inflation-back-on-target"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F",
+          "url": "https://finance.yahoo.com/quote/NQ=F/"
         }
       ]
     },
@@ -567,7 +575,7 @@
       ],
       "probabilityPct": 95,
       "impact": "niedrig",
-      "reasoning": "Offizieller BLS-Termin, 8:30 Uhr ET. Nach dem CPI am Dienstag der zweite Inflationswert vor der Fed-Sitzung im Dezember, für die der Markt eine Zinserhöhung erwartet. Bewegt meist weniger als der CPI. 95 %: fester Termin. Stand Do 20:00: Erwartet werden +0,4 % zum Vormonat nach +1,3 % im September. Die 10-jährige US-Rendite stieg auf 5,107 %; der Markt preist laut CME FedWatch eine Zinserhöhung im Dezember zu 100 % ein, eine um 0,5 Punkte zu etwa 13 % (CNBC). Fed-Präsidentin Hammack (Cleveland) bevorzugt kleinere, häufigere Schritte (Reuters). Stand Do 22:00: Die 10-jährige US-Rendite schloss bei rund 5,10 % (Yahoo ^TNX); Nasdaq −0,4 %, S&P 500 −0,4 % (Yahoo).",
+      "reasoning": "Offizieller BLS-Termin, 8:30 Uhr ET. Nach dem CPI am Dienstag der zweite Inflationswert vor der Fed-Sitzung im Dezember, für die der Markt eine Zinserhöhung erwartet. Bewegt meist weniger als der CPI. 95 %: fester Termin. Stand Do 20:00: Erwartet werden +0,4 % zum Vormonat nach +1,3 % im September. Die 10-jährige US-Rendite stieg auf 5,107 %; der Markt preist laut CME FedWatch eine Zinserhöhung im Dezember zu 100 % ein, eine um 0,5 Punkte zu etwa 13 % (CNBC). Fed-Präsidentin Hammack (Cleveland) bevorzugt kleinere, häufigere Schritte (Reuters). Stand Do 22:00: Die 10-jährige US-Rendite schloss bei rund 5,10 % (Yahoo ^TNX); Nasdaq −0,4 %, S&P 500 −0,4 % (Yahoo). Stand Fr 05:00: New-York-Fed-Chef Williams sagte am Abend, weitere Zinserhöhungen seien wahrscheinlich (Reuters). Ein hoher PPI würde die Wetten auf Dezember und Januar weiter stützen. 95 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -589,6 +597,10 @@
         {
           "title": "Yahoo Finance: ^TNX (US-Schluss 12.11.)",
           "url": "https://finance.yahoo.com/quote/%5ETNX/"
+        },
+        {
+          "title": "Reuters/US News: Williams – die Fed hat noch Arbeit vor sich (12.11.)",
+          "url": "https://money.usnews.com/investing/news/articles/2026-11-12/feds-williams-says-central-bank-has-work-to-do-to-get-inflation-back-on-target"
         }
       ]
     },
@@ -606,7 +618,7 @@
       ],
       "probabilityPct": 55,
       "impact": "hoch",
-      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert. Stand Mi 07:00: Weiter keine Lizenz auf der FAA-Seite, SpaceX schreibt weiter „pending regulatory approval“. 65 % unverändert. Stand Mi 09:00: FAA-Seite nennt weiter keine Lizenz, SpaceX-Missionsseite unverändert „pending regulatory approval“ (Fenster Fr 16:45–18:00 CT). 65 % unverändert. Stand Mi 09:50: FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz, SpaceX weiter „pending regulatory approval“. Die Meldung einer Fanseite über eine erteilte Lizenz bleibt unbestätigt. 65 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite weiter „pending regulatory approval“, die FAA-Seite (Stand 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Mi 12:55: SpaceX-Missionsseite weiter „as soon as Friday, November 13, pending regulatory approval“; eine FAA-Lizenz ist nicht gemeldet. 65 % unverändert. Stand Mi 14:00: SpaceX-Missionsseite weiter „pending regulatory approval“, Launch Library führt den Start als „TBC“. Eine Fanseite (All Things Elon) schreibt von einer erteilten Lizenz, nennt aber keine FAA-Quelle und verwechselt den Wochentag – bleibt unbestätigt. 65 % unverändert. Stand Mi 15:00: Missionsseite weiter „pending regulatory approval“, Fenster Fr 16:45 CT (23:45 Berlin); eine FAA-Lizenzänderung für die Rückkehr von Ship 42 zum Turm ist weiter nicht gemeldet (SpaceX, SciBeat). 65 % unverändert. Stand Mi 16:00: Missionsseite weiter „pending regulatory approval“, eine FAA-Lizenzänderung ist weiter nicht veröffentlicht (SpaceX, The Space Launches). 65 % unverändert. Stand Mi 18:00: Space.com nennt den Start weiter für Fr 16:45 CT (23:45 Berlin), die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“; eine FAA-Lizenz für Flight 15 ist weiter nicht veröffentlicht (SpaceX, Space.com). 65 % unverändert. Stand Mi 20:00: Booster 22 steht an der Startrampe (SpaceX, Musk auf X), die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“; eine FAA-Lizenz ist weiter nicht veröffentlicht. 65 % unverändert. Stand Mi 22:00: Die SpaceX-Seite nennt weiter Fr 13.11., Fenster 16:45 CT (23:45 Berlin), „pending regulatory approval“; eine FAA-Lizenz ist bis zum Abend nicht veröffentlicht. 65 % unverändert. Stand Do 05:10: Die SpaceX-Missionsseite schreibt weiter „as soon as Friday, November 13, pending regulatory approval“, Fenster 16:45 CT (23:45 Berlin); die FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Do 06:50: Gut 40 Stunden vor dem Fenster nennt die FAA-Seite (zuletzt aktualisiert 10.11.) weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. Ohne Lizenz und veröffentlichte Luftraumsperren bis Donnerstag rutscht der Termin meist (Pip Theory). 60 statt 65 %, weil die Zeit knapper wird; die Lizenz kam bei früheren Flügen aber oft erst kurz vorher. Stand Do 08:50: Die FAA-Starship-Seite (zuletzt aktualisiert 10.11.) nennt weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. Die FAA hat aber eine Luftraumsperre für Starbase am 13.11. veröffentlicht (NOTAM 6/7129, spacex-news.com) – ein Zeichen, dass der Termin geplant bleibt. 60 % unverändert. Stand Do 09:50: Die FAA-Seite (zuletzt aktualisiert 10.11.) nennt weiter keine Lizenz, SpaceX schreibt weiter „pending regulatory approval“, Fenster Fr 16:45–18:00 CT (23:45–01:00 Berlin). Ein Raumfahrt-Blog meldet, die Lizenz werde heute erwartet und Ship 42 rolle heute zur Rampe, nennt dafür aber keine Behördenquelle (vc.ru). 60 % unverändert, bis die FAA die Lizenz tatsächlich veröffentlicht. Stand Do 11:45: SpaceX rollt Ship 42 heute zu Pad 2, danach soll die Rakete gestapelt werden (NASASpaceflight). Die FAA-Seite (Stand 10.11.) nennt weiter keine Lizenz, SpaceX schreibt weiter „pending regulatory approval“. 60 % unverändert: Die Hardware ist bereit, die Lizenz fehlt. Stand Do 13:55: Ship 42 ist zu Pad 2 gerollt, als Nächstes wird es auf Booster 22 gestapelt (NASASpaceflight, Advanced Television). Die FAA-Seite (zuletzt aktualisiert 10.11.) nennt weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. 60 % unverändert. Stand Do 15:00: Keine Änderung. Launch Library führt den Start weiter als „TBC“ für Fr 23:45, die FAA-Seite nennt keine Lizenz für Flight 15. 60 % unverändert. Stand Do 16:00: Weiter keine FAA-Lizenz veröffentlicht; die SpaceX-Seite nennt Fr 16:45 CT (23:45 Berlin) „pending regulatory approval“, Launch Library führt den Start als „TBC“. Der Raumfahrt-Blog von G. Trishkin erwartet die Lizenz heute (vc.ru, unbestätigt). 60 % unverändert. Stand Do 18:00: Weiter keine FAA-Lizenz veröffentlicht; die SpaceX-Seite schreibt weiter „pending regulatory approval“ für Fr 16:45 CT (23:45 Berlin). 60 % unverändert. Stand Do 20:00: Weiter keine FAA-Lizenz veröffentlicht; SpaceX schreibt unverändert „pending regulatory approval“ für Fr 16:45 CT (23:45 Berlin). 60 % unverändert. Stand Do 22:00: Rund 26 Stunden vor dem Fenster ist weiter keine FAA-Lizenz veröffentlicht; SpaceX schreibt unverändert „as soon as Friday, November 13, pending regulatory approval“, Fenster 16:45 CT (23:45 Berlin). Space.com meldet aus Starbase „noch ein Tag bis zum Start“, Ship 42 steht an Pad 2 zum Stapeln (SpaceX, Space.com, Advanced Television). 55 statt 60 %: Hardware und Luftraumsperre passen, aber je näher das Fenster rückt, ohne Lizenz, desto eher rutscht der Termin; früher kam die Lizenz allerdings teils erst am Vortag.",
+      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert. Stand Mi 07:00: Weiter keine Lizenz auf der FAA-Seite, SpaceX schreibt weiter „pending regulatory approval“. 65 % unverändert. Stand Mi 09:00: FAA-Seite nennt weiter keine Lizenz, SpaceX-Missionsseite unverändert „pending regulatory approval“ (Fenster Fr 16:45–18:00 CT). 65 % unverändert. Stand Mi 09:50: FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz, SpaceX weiter „pending regulatory approval“. Die Meldung einer Fanseite über eine erteilte Lizenz bleibt unbestätigt. 65 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite weiter „pending regulatory approval“, die FAA-Seite (Stand 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Mi 12:55: SpaceX-Missionsseite weiter „as soon as Friday, November 13, pending regulatory approval“; eine FAA-Lizenz ist nicht gemeldet. 65 % unverändert. Stand Mi 14:00: SpaceX-Missionsseite weiter „pending regulatory approval“, Launch Library führt den Start als „TBC“. Eine Fanseite (All Things Elon) schreibt von einer erteilten Lizenz, nennt aber keine FAA-Quelle und verwechselt den Wochentag – bleibt unbestätigt. 65 % unverändert. Stand Mi 15:00: Missionsseite weiter „pending regulatory approval“, Fenster Fr 16:45 CT (23:45 Berlin); eine FAA-Lizenzänderung für die Rückkehr von Ship 42 zum Turm ist weiter nicht gemeldet (SpaceX, SciBeat). 65 % unverändert. Stand Mi 16:00: Missionsseite weiter „pending regulatory approval“, eine FAA-Lizenzänderung ist weiter nicht veröffentlicht (SpaceX, The Space Launches). 65 % unverändert. Stand Mi 18:00: Space.com nennt den Start weiter für Fr 16:45 CT (23:45 Berlin), die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“; eine FAA-Lizenz für Flight 15 ist weiter nicht veröffentlicht (SpaceX, Space.com). 65 % unverändert. Stand Mi 20:00: Booster 22 steht an der Startrampe (SpaceX, Musk auf X), die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“; eine FAA-Lizenz ist weiter nicht veröffentlicht. 65 % unverändert. Stand Mi 22:00: Die SpaceX-Seite nennt weiter Fr 13.11., Fenster 16:45 CT (23:45 Berlin), „pending regulatory approval“; eine FAA-Lizenz ist bis zum Abend nicht veröffentlicht. 65 % unverändert. Stand Do 05:10: Die SpaceX-Missionsseite schreibt weiter „as soon as Friday, November 13, pending regulatory approval“, Fenster 16:45 CT (23:45 Berlin); die FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Do 06:50: Gut 40 Stunden vor dem Fenster nennt die FAA-Seite (zuletzt aktualisiert 10.11.) weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. Ohne Lizenz und veröffentlichte Luftraumsperren bis Donnerstag rutscht der Termin meist (Pip Theory). 60 statt 65 %, weil die Zeit knapper wird; die Lizenz kam bei früheren Flügen aber oft erst kurz vorher. Stand Do 08:50: Die FAA-Starship-Seite (zuletzt aktualisiert 10.11.) nennt weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. Die FAA hat aber eine Luftraumsperre für Starbase am 13.11. veröffentlicht (NOTAM 6/7129, spacex-news.com) – ein Zeichen, dass der Termin geplant bleibt. 60 % unverändert. Stand Do 09:50: Die FAA-Seite (zuletzt aktualisiert 10.11.) nennt weiter keine Lizenz, SpaceX schreibt weiter „pending regulatory approval“, Fenster Fr 16:45–18:00 CT (23:45–01:00 Berlin). Ein Raumfahrt-Blog meldet, die Lizenz werde heute erwartet und Ship 42 rolle heute zur Rampe, nennt dafür aber keine Behördenquelle (vc.ru). 60 % unverändert, bis die FAA die Lizenz tatsächlich veröffentlicht. Stand Do 11:45: SpaceX rollt Ship 42 heute zu Pad 2, danach soll die Rakete gestapelt werden (NASASpaceflight). Die FAA-Seite (Stand 10.11.) nennt weiter keine Lizenz, SpaceX schreibt weiter „pending regulatory approval“. 60 % unverändert: Die Hardware ist bereit, die Lizenz fehlt. Stand Do 13:55: Ship 42 ist zu Pad 2 gerollt, als Nächstes wird es auf Booster 22 gestapelt (NASASpaceflight, Advanced Television). Die FAA-Seite (zuletzt aktualisiert 10.11.) nennt weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. 60 % unverändert. Stand Do 15:00: Keine Änderung. Launch Library führt den Start weiter als „TBC“ für Fr 23:45, die FAA-Seite nennt keine Lizenz für Flight 15. 60 % unverändert. Stand Do 16:00: Weiter keine FAA-Lizenz veröffentlicht; die SpaceX-Seite nennt Fr 16:45 CT (23:45 Berlin) „pending regulatory approval“, Launch Library führt den Start als „TBC“. Der Raumfahrt-Blog von G. Trishkin erwartet die Lizenz heute (vc.ru, unbestätigt). 60 % unverändert. Stand Do 18:00: Weiter keine FAA-Lizenz veröffentlicht; die SpaceX-Seite schreibt weiter „pending regulatory approval“ für Fr 16:45 CT (23:45 Berlin). 60 % unverändert. Stand Do 20:00: Weiter keine FAA-Lizenz veröffentlicht; SpaceX schreibt unverändert „pending regulatory approval“ für Fr 16:45 CT (23:45 Berlin). 60 % unverändert. Stand Do 22:00: Rund 26 Stunden vor dem Fenster ist weiter keine FAA-Lizenz veröffentlicht; SpaceX schreibt unverändert „as soon as Friday, November 13, pending regulatory approval“, Fenster 16:45 CT (23:45 Berlin). Space.com meldet aus Starbase „noch ein Tag bis zum Start“, Ship 42 steht an Pad 2 zum Stapeln (SpaceX, Space.com, Advanced Television). 55 statt 60 %: Hardware und Luftraumsperre passen, aber je näher das Fenster rückt, ohne Lizenz, desto eher rutscht der Termin; früher kam die Lizenz allerdings teils erst am Vortag. Stand Fr 05:00: Knapp 19 Stunden vor dem Fenster nennt die FAA-Seite (zuletzt aktualisiert 10.11.) weiter keine Flight-15-Lizenz, die SpaceX-Seite schreibt weiter „pending regulatory approval“, Fenster 16:45–18:00 CT (23:45–01:00 Berlin). Neu: SpaceX meldete um 01:56, Ship 42 fahre „vor dem Start“ zur Rampe (X). Die Vorbereitung läuft also weiter wie geplant. 55 % unverändert: Die Hardware ist bereit, die Lizenz fehlt.",
       "example": false,
       "sources": [
         {
@@ -716,6 +728,10 @@
         {
           "title": "Advanced Television: SpaceX bereitet Starship-Test 15 vor (12.11.)",
           "url": "https://www.advanced-television.com/2026/11/12/spacex-readies-starship-test-15/"
+        },
+        {
+          "title": "@SpaceX: Ship 42 fährt zur Startrampe (13.11., 01:56)",
+          "url": "https://x.com/SpaceX/status/2121044579470233638"
         }
       ]
     },
@@ -758,9 +774,9 @@
       "tickers": [
         "RKLB"
       ],
-      "probabilityPct": 75,
+      "probabilityPct": 80,
       "impact": "niedrig",
-      "reasoning": "Rocket Lab bestätigt auf X den 100. Electron-Flug: QPS-SAR-Satellit, Launch Complex 1 Neuseeland, Fenster ab 05:30 UTC am 14.11. (06:30 Berlin). Meine 75 % gelten für einen Start bis 20. November – Electron ist zuverlässig, Wetter verschiebt oft. Kurswirkung gering; wichtiger bleiben die Q3-Zahlen am 9.11. Im Q3-Call am 9.11. sagte Beck, der 100. Electron-Start komme in etwa einer Woche (MarketBeat/Yahoo).",
+      "reasoning": "Rocket Lab bestätigt auf X den 100. Electron-Flug: QPS-SAR-Satellit, Launch Complex 1 Neuseeland, Fenster ab 05:30 UTC am 14.11. (06:30 Berlin). Meine 75 % gelten für einen Start bis 20. November – Electron ist zuverlässig, Wetter verschiebt oft. Kurswirkung gering; wichtiger bleiben die Q3-Zahlen am 9.11. Im Q3-Call am 9.11. sagte Beck, der 100. Electron-Start komme in etwa einer Woche (MarketBeat/Yahoo). Stand Fr 05:00: Rocket Lab hat die Generalprobe mit Betankung abgeschlossen. Electron sei bereit, das Fenster öffne Sa 14.11. um 05:30 UTC (06:30 Berlin) (X). 80 statt 75 %, weil der letzte Test vor dem Start erledigt ist. Es bleibt das Wetterrisiko.",
       "example": false,
       "sources": [
         {
@@ -778,6 +794,10 @@
         {
           "title": "Yahoo/MarketBeat: Rocket Lab Q3-Call (10.11.)",
           "url": "https://finance.yahoo.com/markets/stocks/articles/rocket-lab-q3-earnings-call-031435942.html"
+        },
+        {
+          "title": "@RocketLab: Generalprobe fertig, 100. Electron ab 14.11. (12.11., 23:29)",
+          "url": "https://x.com/RocketLab/status/2121007529409032312"
         }
       ]
     },
@@ -2059,6 +2079,51 @@
         {
           "title": "AP: Überraschend starke Payrolls",
           "url": "https://apnews.com/article/jobs-inflation-paycheck-salary-employment-746ee02db33d0372980f815ada33d8d3"
+        }
+      ]
+    },
+    {
+      "id": "evt-spcx-tsla-fusion",
+      "title": "SpaceX und Tesla: mögliche Bekanntgabe der Fusion (laut Bloomberg schon im Dezember)",
+      "date": "2026-12-01",
+      "end": "2026-12-31",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "fusion",
+      "company": "SpaceX / Tesla",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "probabilityPct": 40,
+      "impact": "hoch",
+      "reasoning": "Bloomberg berichtete am Do 12.11. (21:22 Berlin) unter Berufung auf Insider: Die Fusionsgespräche kommen voran, eine Bekanntgabe des bisher größten Firmendeals sei schon im Dezember möglich. Besprochen wird auch, dass es Anfang 2027 wird. Verwaltungsräte und Berater verhandeln über die Führungsstruktur, wie viele SpaceX-Aktien Tesla-Aktionäre bekämen und wie Teslas China-Geschäft abgeschirmt würde (Bloomberg, Mint). Musk hatte im Oktober Sonderausschüsse aus unabhängigen Direktoren genannt. Es sei aber zu früh, von einer Fusion auszugehen, die Ausschüsse hätten sich noch nicht auf Bedingungen geeinigt (Reuters/cash). Gegenwind: Spannungen zwischen SpaceX-Regierungsaufträgen und Teslas China-Werk (JPMorgan) und ein Kongress mit demokratischen Mehrheiten, der Musk prüfen will. Jefferies hält die Fusion nach den Wahlen für schwieriger. Die Tesla-Hauptversammlung ist am 3.12. Meine 40 % gelten für eine offizielle Bekanntgabe im Dezember. Der Zeitplan ist laut Bericht ehrgeizig, Musk-Termine rutschen oft, und die Ausschüsse haben noch keine Bedingungen. Nachbörslich am Do um 01:59 Berlin: SPCX 141,96 $ (+1,4 %), TSLA 399,85 $ (+0,6 %) (Yahoo).",
+      "example": false,
+      "sources": [
+        {
+          "title": "Bloomberg (via Bloomberg Law): SpaceX and Tesla Talks on Record Merger Are Said to Progress (12.11.)",
+          "url": "https://news.bloomberglaw.com/daily-labor-report/spacex-and-tesla-talks-on-record-merger-are-said-to-progress"
+        },
+        {
+          "title": "AFR/Bloomberg: SpaceX and Tesla on track for merger as soon as December (13.11.)",
+          "url": "https://www.afr.com/world/north-america/spacex-and-tesla-on-track-for-merger-as-soon-as-december-20261113-p61dv1"
+        },
+        {
+          "title": "cash.ch/Reuters: Fusion SpaceX/Tesla wird womöglich schon im Dezember verkündet (12.11.)",
+          "url": "https://www.cash.ch/news/top-news/fusion-spacextesla-wird-womoglich-schon-im-dezember-verkundet-984949"
+        },
+        {
+          "title": "Mint: Was den Deal noch stoppen könnte (13.11.)",
+          "url": "https://www.livemint.com/companies/news/elon-musks-spacex-tesla-mega-merger-could-be-announced-in-december-what-could-derail-the-deal-11794535491532.html"
+        },
+        {
+          "title": "Yahoo Finance: SPCX (Nachbörse 12.11.)",
+          "url": "https://finance.yahoo.com/quote/SPCX/"
+        },
+        {
+          "title": "Yahoo Finance: TSLA (Nachbörse 12.11.)",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
         }
       ]
     }
