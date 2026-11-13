@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T10:03:00+01:00",
+  "updatedAt": "2026-11-13T10:12:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -18,11 +18,11 @@
           "url": "https://x.com/RoviHere/status/2121162608073937229"
         },
         {
-          "title": "Flug 15: Startfenster heute",
-          "url": "https://x.com/Bjoern_Hev/status/2121161811508556115"
+          "title": "Flug 15: Startfenster 23:45–01:00 Uhr",
+          "url": "https://x.com/christna_a/status/2121167699833217237"
         }
       ],
-      "updatedAt": "2026-11-13T10:03:00+01:00"
+      "updatedAt": "2026-11-13T10:12:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,12 +43,12 @@
           "url": "https://x.com/SeeYouAt10X/status/2121159172775641154"
         }
       ],
-      "updatedAt": "2026-11-13T10:03:00+01:00"
+      "updatedAt": "2026-11-13T10:12:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 40,
-      "postsCount": 8,
+      "postsCount": 6,
       "reason": "Rocket Lab: Vorfreude auf den goldenen 100. Electron-Start Samstag 06:30 Uhr. Dazu Beiträge über 150-Mio-Kredit vom Pentagon und Neutron-Nachfrage.",
       "sources": [
         {
@@ -60,11 +60,11 @@
           "url": "https://x.com/RakibKhan0073/status/2121160651490082916"
         },
         {
-          "title": "Neuseeland feiert",
-          "url": "https://x.com/Gykiwi03/status/2121163352676479460"
+          "title": "Lob: Rocket Lab ohne Milliardärsgeld",
+          "url": "https://x.com/rmzerozero/status/2121166973497233680"
         }
       ],
-      "updatedAt": "2026-11-13T10:03:00+01:00"
+      "updatedAt": "2026-11-13T10:12:00+01:00"
     }
   }
 }
