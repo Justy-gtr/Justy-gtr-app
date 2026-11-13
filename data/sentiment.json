@@ -1,56 +1,60 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T12:56:00+01:00",
+  "updatedAt": "2026-11-13T13:17:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
       "postsCount": 15,
-      "reason": "SpaceX: Große Vorfreude auf Starship Flug 15 heute ab 23:45 Uhr mit erstem Doppel-Fang. Viele sehen das als wichtigsten Test des Jahres. Die fehlende FAA-Freigabe bleibt Thema.",
+      "reason": "SpaceX: Countdown zu Starship Flug 15 heute ab 23:45 Uhr, große Accounts erwarten den bisher ehrgeizigsten Flug. Neu: Pläne für 5G-Basisstationen mit Qualcomm ab 2027.",
       "sources": [
         {
-          "title": "Starship-Gegenwind endet dieses Wochenende",
-          "url": "https://x.com/spcxGOD/status/2121205210735419679"
+          "title": "XFreeze: Flug 15 heute",
+          "url": "https://x.com/XFreeze/status/2121213729723633814"
         },
         {
-          "title": "Simulation des Flugs 15",
-          "url": "https://x.com/Napoleon__Bon/status/2121208966105665589"
+          "title": "5G-Basisstationen mit Qualcomm",
+          "url": "https://x.com/allday_stocks/status/2121213641546441153"
         },
         {
-          "title": "Noch keine FAA-Lizenz 12 h vor Start",
-          "url": "https://x.com/spcxGOD/status/2121193494924394902"
+          "title": "5 Notfall-Landeoptionen für Flug 15",
+          "url": "https://x.com/Napoleon__Bon/status/2121215360280248370"
         }
       ],
-      "updatedAt": "2026-11-13T12:56:00+01:00"
+      "updatedAt": "2026-11-13T13:17:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 20,
+      "score": 30,
       "postsCount": 15,
-      "reason": "Tesla: +12 % in einer Woche, Fusion mit SpaceX bleibt Hauptthema. Ein großer Account warnt, dass die US-Preisdaten heute 14:30 Uhr Tesla drücken könnten.",
+      "reason": "Tesla: Robotaxi fährt jetzt rund um die Uhr in allen Städten, Musk teilt das. Aktie vorbörslich knapp unter 400 $. Fusion bleibt Thema, manche wollen erst die Bedingungen sehen.",
       "sources": [
         {
-          "title": "Techaktien: +12 % in einer Woche",
-          "url": "https://x.com/Techaktien1/status/2121206769309319376"
+          "title": "Benzinga: Robotaxi jetzt 24/7",
+          "url": "https://x.com/Benzinga/status/2121212229819449425"
         },
         {
-          "title": "Warnung vor PPI-Daten",
-          "url": "https://x.com/squawksquare/status/2121207260957266048"
+          "title": "Tesla nähert sich 400 $",
+          "url": "https://x.com/wirequantsspace/status/2121210373550301306"
         },
         {
-          "title": "Hilfe für Batterie in Grünheide",
-          "url": "https://x.com/RonnyGolisch/status/2121206687008764158"
+          "title": "Skepsis: erst Fusionsbedingungen sehen",
+          "url": "https://x.com/BigpoppaTodd/status/2121212236349808848"
         }
       ],
-      "updatedAt": "2026-11-13T12:56:00+01:00"
+      "updatedAt": "2026-11-13T13:17:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 45,
       "postsCount": 15,
-      "reason": "Rocket Lab: Aucklands Sky Tower leuchtet für den 100. Electron-Start am Samstag 06:30 Uhr. ARK-Käufe werden weiter geteilt, Neutron-Verzögerungen bleiben ein Thema.",
+      "reason": "Rocket Lab: Ruhige Stunde, Fans freuen sich auf den 100. Electron-Start Samstag 06:30 Uhr und teilen Bilder von der Startrampe. Sonst viele Werbe- und Spam-Beiträge.",
       "sources": [
+        {
+          "title": "Bilder von der Startrampe LC-1",
+          "url": "https://x.com/MrsIglesiasRKLB/status/2121211949166018869"
+        },
         {
           "title": "Sky Tower leuchtet zum 100. Start",
           "url": "https://x.com/MrsIglesiasRKLB/status/2121205006007496715"
@@ -58,13 +62,9 @@
         {
           "title": "ARK kauft 15.114 RKLB-Aktien",
           "url": "https://x.com/ArkkDaily/status/2121202833806528782"
-        },
-        {
-          "title": "Neutron-Verzögerungen zeigen, wie schwer es ist",
-          "url": "https://x.com/ReadFuturist/status/2121205157300224487"
         }
       ],
-      "updatedAt": "2026-11-13T12:56:00+01:00"
+      "updatedAt": "2026-11-13T13:17:00+01:00"
     }
   }
 }
