@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T15:13:00+01:00",
+  "updatedAt": "2026-11-13T15:18:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
       "postsCount": 20,
-      "reason": "SpaceX: Vorbörslich rund +1 % bei 141 $. Alle schauen auf den ersten Doppel-Fang bei Flug 15 heute ab 23:45 Uhr. Einige meinen, er könnte das Fusionsverhältnis beeinflussen.",
+      "reason": "SpaceX: Vorbörslich um 141 $. Große Konten sehen den Doppel-Fang bei Flug 15 heute ab 23:45 Uhr als Test für günstigere Starts. Nebenthema: Abbau im Grok-Videoteam.",
       "sources": [
         {
-          "title": "SPCX vorbörslich +0,9 %",
-          "url": "https://x.com/Maximilius31/status/2121236089859899880"
+          "title": "Doppel-Fang als Kostentest",
+          "url": "https://x.com/DrJStrategy/status/2121244926008582238"
         },
         {
           "title": "TraderFox: Wichtigster Katalysator seit IPO",
           "url": "https://x.com/traderfox_de/status/2121239567202165074"
         },
         {
-          "title": "Starship-Fang und Fusionsverhältnis",
-          "url": "https://x.com/spcxGOD/status/2121239156776943884"
+          "title": "The Information: Grok-Videoteam verkleinert",
+          "url": "https://x.com/AIStockSavvy/status/2121244750619857055"
         }
       ],
-      "updatedAt": "2026-11-13T15:13:00+01:00"
+      "updatedAt": "2026-11-13T15:18:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,7 +43,7 @@
           "url": "https://x.com/viaNexusHQ/status/2121235103829385372"
         }
       ],
-      "updatedAt": "2026-11-13T15:13:00+01:00"
+      "updatedAt": "2026-11-13T15:18:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
         }
       ],
-      "updatedAt": "2026-11-13T15:13:00+01:00"
+      "updatedAt": "2026-11-13T15:18:00+01:00"
     }
   }
 }
