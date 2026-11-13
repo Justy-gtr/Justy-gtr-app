@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-13T07:00:00+01:00",
+  "asOf": "2026-11-13T09:10:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,88 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2121123425213399408",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-13T07:10:07+01:00",
+      "summaryDe": "Musk teilt nur „Grok Bot“ und zitiert die Meldung von @bot, dass Grok Bot auf dem Mac jetzt Nachrichten, Mail, Notizen, Erinnerungen, Kalender, Ort und Kontakte nutzen kann. Werbung für das xAI-Produkt von SpaceX SI.",
+      "originalText": "Grok Bot",
+      "url": "https://x.com/elonmusk/status/2121123425213399408",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (13.11., 07:10)",
+          "url": "https://x.com/elonmusk/status/2121123425213399408"
+        },
+        {
+          "title": "@bot: Grok Bot auf dem Mac (12.11.)",
+          "url": "https://x.com/bot/status/2120946968403095906"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121120295884837183",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-13T06:57:41+01:00",
+      "summaryDe": "Musk: „Gebt Grok Bot eure mühsamsten Aufgaben!“ Er zitiert seine Mutter Maye Musk, die Grok Bot 2.000 Fotos in Dropbox sortieren ließ – in fünf Minuten statt einer Woche.",
+      "originalText": "Give Grok @Bot your most laborious tasks!",
+      "url": "https://x.com/elonmusk/status/2121120295884837183",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (13.11., 06:57)",
+          "url": "https://x.com/elonmusk/status/2121120295884837183"
+        },
+        {
+          "title": "@mayemusk: Grok Bot sortiert Fotos (12.11.)",
+          "url": "https://x.com/mayemusk/status/2120896049946501238"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121118775210868871",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-13T06:51:39+01:00",
+      "summaryDe": "Musk schreibt nur „Jensen“ und teilt ein Video von a16z mit dem Satz „Du wirst für immer in Erinnerung bleiben, weil manche Dinge ewig sind“ – eine Würdigung für den zurückgetretenen Nvidia-Chef Jensen Huang. Musk hatte schon gesagt, Huang einzustellen wäre „eine Ehre“.",
+      "originalText": "Jensen",
+      "url": "https://x.com/elonmusk/status/2121118775210868871",
+      "tickers": [
+        "MRVL",
+        "SPCX"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (13.11., 06:51)",
+          "url": "https://x.com/elonmusk/status/2121118775210868871"
+        },
+        {
+          "title": "@a16z: Video (13.11., 00:14)",
+          "url": "https://x.com/a16z/status/2121018724262293539"
+        }
+      ]
+    },
     {
       "id": "post-spacex-2121044579470233638",
       "account": "@SpaceX",

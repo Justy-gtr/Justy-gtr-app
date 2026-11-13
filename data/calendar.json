@@ -516,7 +516,7 @@
       ],
       "probabilityPct": 95,
       "impact": "niedrig",
-      "reasoning": "Offizieller BLS-Termin, 8:30 Uhr ET. Nach dem CPI am Dienstag der zweite Inflationswert vor der Fed-Sitzung im Dezember, für die der Markt eine Zinserhöhung erwartet. Bewegt meist weniger als der CPI. 95 %: fester Termin. Stand Do 20:00: Erwartet werden +0,4 % zum Vormonat nach +1,3 % im September. Die 10-jährige US-Rendite stieg auf 5,107 %; der Markt preist laut CME FedWatch eine Zinserhöhung im Dezember zu 100 % ein, eine um 0,5 Punkte zu etwa 13 % (CNBC). Fed-Präsidentin Hammack (Cleveland) bevorzugt kleinere, häufigere Schritte (Reuters). Stand Do 22:00: Die 10-jährige US-Rendite schloss bei rund 5,10 % (Yahoo ^TNX); Nasdaq −0,4 %, S&P 500 −0,4 % (Yahoo). Stand Fr 05:00: New-York-Fed-Chef Williams sagte am Abend, weitere Zinserhöhungen seien wahrscheinlich (Reuters). Ein hoher PPI würde die Wetten auf Dezember und Januar weiter stützen. 95 % unverändert. Stand Fr 07:00: Prognose +0,4 % zum Vormonat (zuvor +1,3 %), Kernrate +0,3 % (Dow Jones). Laut Bloomberg ist die Zahl wichtiger geworden, weil der heiße CPI die Wetten auf eine Zinserhöhung im Dezember gestützt hat; die zweijährige US-Rendite stieg am Do um 14 Basispunkte. 95 % unverändert.",
+      "reasoning": "Offizieller BLS-Termin, 8:30 Uhr ET. Nach dem CPI am Dienstag der zweite Inflationswert vor der Fed-Sitzung im Dezember, für die der Markt eine Zinserhöhung erwartet. Bewegt meist weniger als der CPI. 95 %: fester Termin. Stand Do 20:00: Erwartet werden +0,4 % zum Vormonat nach +1,3 % im September. Die 10-jährige US-Rendite stieg auf 5,107 %; der Markt preist laut CME FedWatch eine Zinserhöhung im Dezember zu 100 % ein, eine um 0,5 Punkte zu etwa 13 % (CNBC). Fed-Präsidentin Hammack (Cleveland) bevorzugt kleinere, häufigere Schritte (Reuters). Stand Do 22:00: Die 10-jährige US-Rendite schloss bei rund 5,10 % (Yahoo ^TNX); Nasdaq −0,4 %, S&P 500 −0,4 % (Yahoo). Stand Fr 05:00: New-York-Fed-Chef Williams sagte am Abend, weitere Zinserhöhungen seien wahrscheinlich (Reuters). Ein hoher PPI würde die Wetten auf Dezember und Januar weiter stützen. 95 % unverändert. Stand Fr 07:00: Prognose +0,4 % zum Vormonat (zuvor +1,3 %), Kernrate +0,3 % (Dow Jones). Laut Bloomberg ist die Zahl wichtiger geworden, weil der heiße CPI die Wetten auf eine Zinserhöhung im Dezember gestützt hat; die zweijährige US-Rendite stieg am Do um 14 Basispunkte. 95 % unverändert. Stand Fr 09:10: Erwartet werden +6,6 % zum Vorjahr, Kernrate +5,0 %. Laut CME FedWatch liegt die Wahrscheinlichkeit für 25 Basispunkte im Dezember bei rund 87 %, für 50 Basispunkte bei rund 13 %. US-Futures um 08:19 leicht im Minus, Nasdaq-100 −0,3 % (FXStreet). 95 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -550,6 +550,10 @@
         {
           "title": "Bloomberg via swissinfo: Asien gibt Gewinne ab, Anleihen fallen vor US-PPI (13.11., 05:57)",
           "url": "https://www.swissinfo.ch/eng/asian-stocks-erase-gain%2C-bonds-slide-before-us-ppi%3A-markets-wrap/92374084"
+        },
+        {
+          "title": "FXStreet: US-Futures leichter, PPI-Prognose 6,6 % zum Vorjahr (13.11., 08:19)",
+          "url": "https://www.fxstreet.com/news/dow-jones-futures-fall-amid-fed-rate-hike-fears-nvidia-leadership-shakeup-ppi-data-eyed-202611130719"
         }
       ]
     },
@@ -567,7 +571,7 @@
       ],
       "probabilityPct": 55,
       "impact": "hoch",
-      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert. Stand Mi 07:00: Weiter keine Lizenz auf der FAA-Seite, SpaceX schreibt weiter „pending regulatory approval“. 65 % unverändert. Stand Mi 09:00: FAA-Seite nennt weiter keine Lizenz, SpaceX-Missionsseite unverändert „pending regulatory approval“ (Fenster Fr 16:45–18:00 CT). 65 % unverändert. Stand Mi 09:50: FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz, SpaceX weiter „pending regulatory approval“. Die Meldung einer Fanseite über eine erteilte Lizenz bleibt unbestätigt. 65 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite weiter „pending regulatory approval“, die FAA-Seite (Stand 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Mi 12:55: SpaceX-Missionsseite weiter „as soon as Friday, November 13, pending regulatory approval“; eine FAA-Lizenz ist nicht gemeldet. 65 % unverändert. Stand Mi 14:00: SpaceX-Missionsseite weiter „pending regulatory approval“, Launch Library führt den Start als „TBC“. Eine Fanseite (All Things Elon) schreibt von einer erteilten Lizenz, nennt aber keine FAA-Quelle und verwechselt den Wochentag – bleibt unbestätigt. 65 % unverändert. Stand Mi 15:00: Missionsseite weiter „pending regulatory approval“, Fenster Fr 16:45 CT (23:45 Berlin); eine FAA-Lizenzänderung für die Rückkehr von Ship 42 zum Turm ist weiter nicht gemeldet (SpaceX, SciBeat). 65 % unverändert. Stand Mi 16:00: Missionsseite weiter „pending regulatory approval“, eine FAA-Lizenzänderung ist weiter nicht veröffentlicht (SpaceX, The Space Launches). 65 % unverändert. Stand Mi 18:00: Space.com nennt den Start weiter für Fr 16:45 CT (23:45 Berlin), die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“; eine FAA-Lizenz für Flight 15 ist weiter nicht veröffentlicht (SpaceX, Space.com). 65 % unverändert. Stand Mi 20:00: Booster 22 steht an der Startrampe (SpaceX, Musk auf X), die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“; eine FAA-Lizenz ist weiter nicht veröffentlicht. 65 % unverändert. Stand Mi 22:00: Die SpaceX-Seite nennt weiter Fr 13.11., Fenster 16:45 CT (23:45 Berlin), „pending regulatory approval“; eine FAA-Lizenz ist bis zum Abend nicht veröffentlicht. 65 % unverändert. Stand Do 05:10: Die SpaceX-Missionsseite schreibt weiter „as soon as Friday, November 13, pending regulatory approval“, Fenster 16:45 CT (23:45 Berlin); die FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Do 06:50: Gut 40 Stunden vor dem Fenster nennt die FAA-Seite (zuletzt aktualisiert 10.11.) weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. Ohne Lizenz und veröffentlichte Luftraumsperren bis Donnerstag rutscht der Termin meist (Pip Theory). 60 statt 65 %, weil die Zeit knapper wird; die Lizenz kam bei früheren Flügen aber oft erst kurz vorher. Stand Do 08:50: Die FAA-Starship-Seite (zuletzt aktualisiert 10.11.) nennt weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. Die FAA hat aber eine Luftraumsperre für Starbase am 13.11. veröffentlicht (NOTAM 6/7129, spacex-news.com) – ein Zeichen, dass der Termin geplant bleibt. 60 % unverändert. Stand Do 09:50: Die FAA-Seite (zuletzt aktualisiert 10.11.) nennt weiter keine Lizenz, SpaceX schreibt weiter „pending regulatory approval“, Fenster Fr 16:45–18:00 CT (23:45–01:00 Berlin). Ein Raumfahrt-Blog meldet, die Lizenz werde heute erwartet und Ship 42 rolle heute zur Rampe, nennt dafür aber keine Behördenquelle (vc.ru). 60 % unverändert, bis die FAA die Lizenz tatsächlich veröffentlicht. Stand Do 11:45: SpaceX rollt Ship 42 heute zu Pad 2, danach soll die Rakete gestapelt werden (NASASpaceflight). Die FAA-Seite (Stand 10.11.) nennt weiter keine Lizenz, SpaceX schreibt weiter „pending regulatory approval“. 60 % unverändert: Die Hardware ist bereit, die Lizenz fehlt. Stand Do 13:55: Ship 42 ist zu Pad 2 gerollt, als Nächstes wird es auf Booster 22 gestapelt (NASASpaceflight, Advanced Television). Die FAA-Seite (zuletzt aktualisiert 10.11.) nennt weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. 60 % unverändert. Stand Do 15:00: Keine Änderung. Launch Library führt den Start weiter als „TBC“ für Fr 23:45, die FAA-Seite nennt keine Lizenz für Flight 15. 60 % unverändert. Stand Do 16:00: Weiter keine FAA-Lizenz veröffentlicht; die SpaceX-Seite nennt Fr 16:45 CT (23:45 Berlin) „pending regulatory approval“, Launch Library führt den Start als „TBC“. Der Raumfahrt-Blog von G. Trishkin erwartet die Lizenz heute (vc.ru, unbestätigt). 60 % unverändert. Stand Do 18:00: Weiter keine FAA-Lizenz veröffentlicht; die SpaceX-Seite schreibt weiter „pending regulatory approval“ für Fr 16:45 CT (23:45 Berlin). 60 % unverändert. Stand Do 20:00: Weiter keine FAA-Lizenz veröffentlicht; SpaceX schreibt unverändert „pending regulatory approval“ für Fr 16:45 CT (23:45 Berlin). 60 % unverändert. Stand Do 22:00: Rund 26 Stunden vor dem Fenster ist weiter keine FAA-Lizenz veröffentlicht; SpaceX schreibt unverändert „as soon as Friday, November 13, pending regulatory approval“, Fenster 16:45 CT (23:45 Berlin). Space.com meldet aus Starbase „noch ein Tag bis zum Start“, Ship 42 steht an Pad 2 zum Stapeln (SpaceX, Space.com, Advanced Television). 55 statt 60 %: Hardware und Luftraumsperre passen, aber je näher das Fenster rückt, ohne Lizenz, desto eher rutscht der Termin; früher kam die Lizenz allerdings teils erst am Vortag. Stand Fr 05:00: Knapp 19 Stunden vor dem Fenster nennt die FAA-Seite (zuletzt aktualisiert 10.11.) weiter keine Flight-15-Lizenz, die SpaceX-Seite schreibt weiter „pending regulatory approval“, Fenster 16:45–18:00 CT (23:45–01:00 Berlin). Neu: SpaceX meldete um 01:56, Ship 42 fahre „vor dem Start“ zur Rampe (X). Die Vorbereitung läuft also weiter wie geplant. 55 % unverändert: Die Hardware ist bereit, die Lizenz fehlt. Stand Fr 07:00: Knapp 17 Stunden vor dem Fenster ist weiter keine FAA-Lizenz veröffentlicht (FAA-Seite zuletzt 10.11. aktualisiert), SpaceX schreibt unverändert „pending regulatory approval“ für 16:45 CT (23:45 Berlin). Space.com kündigt den Start für heute an; Ship 42 soll 26 Starlink-V3-Satelliten aussetzen und nach rund 22,5 Stunden am Sa vom Turm gefangen werden. Morgan Stanley (Adam Jonas) schreibt, ein Fang von Booster und Schiff wäre „wahrscheinlich klar positiv“ für die Aktie (zitiert von Sawyer Merritt auf X). 55 % unverändert: Hardware bereit, Lizenz fehlt; früher kam sie teils erst am Vortag oder am Starttag.",
+      "reasoning": "Stand Di 11:30: Flight 15 zielt auf Fr 13.11., Fenster 17:45–19:00 ET (= 23:45–01:00 Berlin), erstmals sollen Booster und Schiff gefangen werden; das Schiff fliegt rund 22 Stunden und 14 Erdumläufe und setzt 26 Starlink-V3-Satelliten aus (Space.com). Die nötige FAA-Lizenzänderung für die Rückkehr des Schiffs über bewohntes Gebiet ist weiter nicht erteilt; die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (SpaceWireDaily, SpaceX). FAA-Wiedereintritts-NOTAM ab 13.11. stützt den Termin, Musk hält den Schiffsfang für „eher wahrscheinlich als nicht“. 65 % unverändert: offizielle Zielangabe, aber Lizenz und Wetter offen. Impact hoch für SPCX. Stand Di 19:21: Booster 22 steht auf dem Startplatz, die Fangtests am Turm sind laut SpaceX erledigt (@SpaceX). Die Missionsseite schreibt um 20:00 weiter „pending regulatory approval“; Fan-Seiten melden die Lizenz schon, eine FAA-Bestätigung fehlt. 65 % unverändert. Stand Di 22:15: Die FAA-Starship-Seite nennt weiter keine Lizenz für Flight 15, nur Fan-Seiten (All Things Elon) melden sie als erteilt; das zählt nicht als Bestätigung. 65 % unverändert. Stand Mi 05:00: FAA-Seite nennt weiter keine Lizenz für Flight 15, die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“ (Fenster Fr 16:45 CT = 23:45 Berlin). 65 % unverändert. Stand Mi 07:00: Weiter keine Lizenz auf der FAA-Seite, SpaceX schreibt weiter „pending regulatory approval“. 65 % unverändert. Stand Mi 09:00: FAA-Seite nennt weiter keine Lizenz, SpaceX-Missionsseite unverändert „pending regulatory approval“ (Fenster Fr 16:45–18:00 CT). 65 % unverändert. Stand Mi 09:50: FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz, SpaceX weiter „pending regulatory approval“. Die Meldung einer Fanseite über eine erteilte Lizenz bleibt unbestätigt. 65 % unverändert. Stand Mi 11:40: SpaceX-Missionsseite weiter „pending regulatory approval“, die FAA-Seite (Stand 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Mi 12:55: SpaceX-Missionsseite weiter „as soon as Friday, November 13, pending regulatory approval“; eine FAA-Lizenz ist nicht gemeldet. 65 % unverändert. Stand Mi 14:00: SpaceX-Missionsseite weiter „pending regulatory approval“, Launch Library führt den Start als „TBC“. Eine Fanseite (All Things Elon) schreibt von einer erteilten Lizenz, nennt aber keine FAA-Quelle und verwechselt den Wochentag – bleibt unbestätigt. 65 % unverändert. Stand Mi 15:00: Missionsseite weiter „pending regulatory approval“, Fenster Fr 16:45 CT (23:45 Berlin); eine FAA-Lizenzänderung für die Rückkehr von Ship 42 zum Turm ist weiter nicht gemeldet (SpaceX, SciBeat). 65 % unverändert. Stand Mi 16:00: Missionsseite weiter „pending regulatory approval“, eine FAA-Lizenzänderung ist weiter nicht veröffentlicht (SpaceX, The Space Launches). 65 % unverändert. Stand Mi 18:00: Space.com nennt den Start weiter für Fr 16:45 CT (23:45 Berlin), die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“; eine FAA-Lizenz für Flight 15 ist weiter nicht veröffentlicht (SpaceX, Space.com). 65 % unverändert. Stand Mi 20:00: Booster 22 steht an der Startrampe (SpaceX, Musk auf X), die SpaceX-Missionsseite schreibt weiter „pending regulatory approval“; eine FAA-Lizenz ist weiter nicht veröffentlicht. 65 % unverändert. Stand Mi 22:00: Die SpaceX-Seite nennt weiter Fr 13.11., Fenster 16:45 CT (23:45 Berlin), „pending regulatory approval“; eine FAA-Lizenz ist bis zum Abend nicht veröffentlicht. 65 % unverändert. Stand Do 05:10: Die SpaceX-Missionsseite schreibt weiter „as soon as Friday, November 13, pending regulatory approval“, Fenster 16:45 CT (23:45 Berlin); die FAA-Seite (zuletzt aktualisiert 10.11.) nennt keine Flight-15-Lizenz. 65 % unverändert. Stand Do 06:50: Gut 40 Stunden vor dem Fenster nennt die FAA-Seite (zuletzt aktualisiert 10.11.) weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. Ohne Lizenz und veröffentlichte Luftraumsperren bis Donnerstag rutscht der Termin meist (Pip Theory). 60 statt 65 %, weil die Zeit knapper wird; die Lizenz kam bei früheren Flügen aber oft erst kurz vorher. Stand Do 08:50: Die FAA-Starship-Seite (zuletzt aktualisiert 10.11.) nennt weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. Die FAA hat aber eine Luftraumsperre für Starbase am 13.11. veröffentlicht (NOTAM 6/7129, spacex-news.com) – ein Zeichen, dass der Termin geplant bleibt. 60 % unverändert. Stand Do 09:50: Die FAA-Seite (zuletzt aktualisiert 10.11.) nennt weiter keine Lizenz, SpaceX schreibt weiter „pending regulatory approval“, Fenster Fr 16:45–18:00 CT (23:45–01:00 Berlin). Ein Raumfahrt-Blog meldet, die Lizenz werde heute erwartet und Ship 42 rolle heute zur Rampe, nennt dafür aber keine Behördenquelle (vc.ru). 60 % unverändert, bis die FAA die Lizenz tatsächlich veröffentlicht. Stand Do 11:45: SpaceX rollt Ship 42 heute zu Pad 2, danach soll die Rakete gestapelt werden (NASASpaceflight). Die FAA-Seite (Stand 10.11.) nennt weiter keine Lizenz, SpaceX schreibt weiter „pending regulatory approval“. 60 % unverändert: Die Hardware ist bereit, die Lizenz fehlt. Stand Do 13:55: Ship 42 ist zu Pad 2 gerollt, als Nächstes wird es auf Booster 22 gestapelt (NASASpaceflight, Advanced Television). Die FAA-Seite (zuletzt aktualisiert 10.11.) nennt weiter keine Flight-15-Lizenz, SpaceX schreibt weiter „pending regulatory approval“. 60 % unverändert. Stand Do 15:00: Keine Änderung. Launch Library führt den Start weiter als „TBC“ für Fr 23:45, die FAA-Seite nennt keine Lizenz für Flight 15. 60 % unverändert. Stand Do 16:00: Weiter keine FAA-Lizenz veröffentlicht; die SpaceX-Seite nennt Fr 16:45 CT (23:45 Berlin) „pending regulatory approval“, Launch Library führt den Start als „TBC“. Der Raumfahrt-Blog von G. Trishkin erwartet die Lizenz heute (vc.ru, unbestätigt). 60 % unverändert. Stand Do 18:00: Weiter keine FAA-Lizenz veröffentlicht; die SpaceX-Seite schreibt weiter „pending regulatory approval“ für Fr 16:45 CT (23:45 Berlin). 60 % unverändert. Stand Do 20:00: Weiter keine FAA-Lizenz veröffentlicht; SpaceX schreibt unverändert „pending regulatory approval“ für Fr 16:45 CT (23:45 Berlin). 60 % unverändert. Stand Do 22:00: Rund 26 Stunden vor dem Fenster ist weiter keine FAA-Lizenz veröffentlicht; SpaceX schreibt unverändert „as soon as Friday, November 13, pending regulatory approval“, Fenster 16:45 CT (23:45 Berlin). Space.com meldet aus Starbase „noch ein Tag bis zum Start“, Ship 42 steht an Pad 2 zum Stapeln (SpaceX, Space.com, Advanced Television). 55 statt 60 %: Hardware und Luftraumsperre passen, aber je näher das Fenster rückt, ohne Lizenz, desto eher rutscht der Termin; früher kam die Lizenz allerdings teils erst am Vortag. Stand Fr 05:00: Knapp 19 Stunden vor dem Fenster nennt die FAA-Seite (zuletzt aktualisiert 10.11.) weiter keine Flight-15-Lizenz, die SpaceX-Seite schreibt weiter „pending regulatory approval“, Fenster 16:45–18:00 CT (23:45–01:00 Berlin). Neu: SpaceX meldete um 01:56, Ship 42 fahre „vor dem Start“ zur Rampe (X). Die Vorbereitung läuft also weiter wie geplant. 55 % unverändert: Die Hardware ist bereit, die Lizenz fehlt. Stand Fr 07:00: Knapp 17 Stunden vor dem Fenster ist weiter keine FAA-Lizenz veröffentlicht (FAA-Seite zuletzt 10.11. aktualisiert), SpaceX schreibt unverändert „pending regulatory approval“ für 16:45 CT (23:45 Berlin). Space.com kündigt den Start für heute an; Ship 42 soll 26 Starlink-V3-Satelliten aussetzen und nach rund 22,5 Stunden am Sa vom Turm gefangen werden. Morgan Stanley (Adam Jonas) schreibt, ein Fang von Booster und Schiff wäre „wahrscheinlich klar positiv“ für die Aktie (zitiert von Sawyer Merritt auf X). 55 % unverändert: Hardware bereit, Lizenz fehlt; früher kam sie teils erst am Vortag oder am Starttag. Stand Fr 09:10: Knapp 15 Stunden vor dem Fenster weiter keine FAA-Lizenz, SpaceX schreibt unverändert „pending regulatory approval“ (16:45 CT = 23:45 Berlin). Ship 42 ist inzwischen auf Booster 22 gestapelt (IGW auf X). Die FAA hat einen Luftraum-Hinweis (NOTAM) für den Wiedereintritt im Indischen Ozean ab heute 23:53 Berlin mit Ersatztagen bis 20.11. veröffentlicht. Wetter am Startplatz klar, 0 % Regen (Visit Starbase). 55 % unverändert: Alles ist bereit bis auf die Lizenz; bei Flight 3 kam sie erst am Vortag.",
       "example": false,
       "sources": [
         {
@@ -689,6 +693,47 @@
         {
           "title": "@SawyerMerritt: Morgan Stanley (Jonas) zu Flight 15 (13.11., 00:30)",
           "url": "https://x.com/SawyerMerritt/status/2121022747375530158"
+        },
+        {
+          "title": "@interstellargw: Starship für Flight 15 komplett gestapelt (13.11., 07:20)",
+          "url": "https://x.com/interstellargw/status/2121126080694108516"
+        },
+        {
+          "title": "FAA-NOTAM A0106/26: Wiedereintritt Flight 15 im Indischen Ozean ab 13.11. 23:53 Berlin",
+          "url": "https://notams.aim.faa.gov/notamSearch/createNotamPdf?transactionid=83016122"
+        },
+        {
+          "title": "Visit Starbase: Wetterbericht Flight 15",
+          "url": "https://visit-starbase.com/launch-weather"
+        }
+      ]
+    },
+    {
+      "id": "evt-nvda-huang-frist",
+      "title": "Nvidia: Frist für Huangs Zusage zur Befragung am 1.12. (sonst Vorladung)",
+      "date": "2026-11-14",
+      "time": "02:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "politik",
+      "company": "NVIDIA",
+      "tickers": [
+        "MRVL",
+        "SPCX",
+        "TSLA"
+      ],
+      "probabilityPct": 70,
+      "impact": "niedrig",
+      "reasoning": "Die Ausschuss-Chefs Mast, Moolenaar und Crawford verlangen, dass Jensen Huang bis Freitag 20 Uhr ET (Sa 02:00 Berlin) schriftlich einem vertraulichen, protokollierten Gespräch am 1.12. zustimmt. Sonst will der Auswärtige Ausschuss ihn vorladen (Edit USA, NBC News). Huang hat die Kanzlei Paul Weiss beauftragt. Meine 70 % gelten dafür, dass er bis zur Frist zusagt: Eine Vorladung wäre für ihn und Nvidia die schlechtere Schlagzeile, aber Anwälte können auf Zeit spielen. Warum das für uns zählt: Eine Vorladung hielte die Nvidia-Affäre in den Schlagzeilen, das drückt auf KI- und Chipwerte wie Marvell.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Edit USA: Frist für Huang Fr 20 Uhr ET, Termine 1., 3. und 10.12. (12.11.)",
+          "url": "https://www.editusa.com/intelligence/jensen-huang-congress-deadline-december-hearings-lutnick-kessler"
+        },
+        {
+          "title": "NBC News: Lutnick sagt aus, Mast will Huang am 1.12. befragen (12.11.)",
+          "url": "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093"
         }
       ]
     },
@@ -733,7 +778,7 @@
       ],
       "probabilityPct": 85,
       "impact": "niedrig",
-      "reasoning": "Rocket Lab bestätigt auf X den 100. Electron-Flug: QPS-SAR-Satellit, Launch Complex 1 Neuseeland, Fenster ab 05:30 UTC am 14.11. (06:30 Berlin). Meine 75 % gelten für einen Start bis 20. November – Electron ist zuverlässig, Wetter verschiebt oft. Kurswirkung gering; wichtiger bleiben die Q3-Zahlen am 9.11. Im Q3-Call am 9.11. sagte Beck, der 100. Electron-Start komme in etwa einer Woche (MarketBeat/Yahoo). Stand Fr 05:00: Rocket Lab hat die Generalprobe mit Betankung abgeschlossen. Electron sei bereit, das Fenster öffne Sa 14.11. um 05:30 UTC (06:30 Berlin) (X). 80 statt 75 %, weil der letzte Test vor dem Start erledigt ist. Es bleibt das Wetterrisiko. Stand Fr 07:00: Der Start-Tracker MaxQ führt den Flug mit Status „Go“, Wetter 99 % günstig, Wind 24 km/h. Luftraumsperren (NOTAM) gibt es für Sa 05:45–08:05 Berlin und als Ersatz für So 05:30–07:35 Berlin (MaxQ). Rocket Lab hat den Start offiziell angekündigt (GlobeNewswire). 85 statt 80 %, weil Wetter und Ersatztag passen; Restrisiko sind technische Abbrüche.",
+      "reasoning": "Rocket Lab bestätigt auf X den 100. Electron-Flug: QPS-SAR-Satellit, Launch Complex 1 Neuseeland, Fenster ab 05:30 UTC am 14.11. (06:30 Berlin). Meine 75 % gelten für einen Start bis 20. November – Electron ist zuverlässig, Wetter verschiebt oft. Kurswirkung gering; wichtiger bleiben die Q3-Zahlen am 9.11. Im Q3-Call am 9.11. sagte Beck, der 100. Electron-Start komme in etwa einer Woche (MarketBeat/Yahoo). Stand Fr 05:00: Rocket Lab hat die Generalprobe mit Betankung abgeschlossen. Electron sei bereit, das Fenster öffne Sa 14.11. um 05:30 UTC (06:30 Berlin) (X). 80 statt 75 %, weil der letzte Test vor dem Start erledigt ist. Es bleibt das Wetterrisiko. Stand Fr 07:00: Der Start-Tracker MaxQ führt den Flug mit Status „Go“, Wetter 99 % günstig, Wind 24 km/h. Luftraumsperren (NOTAM) gibt es für Sa 05:45–08:05 Berlin und als Ersatz für So 05:30–07:35 Berlin (MaxQ). Rocket Lab hat den Start offiziell angekündigt (GlobeNewswire). 85 statt 80 %, weil Wetter und Ersatztag passen; Restrisiko sind technische Abbrüche. Stand Fr 09:10: Rocket Lab nennt weiter Sa 14.11. 05:30 UTC (06:30 Berlin), Ersatztage bis 26.11.; Straßen-, See- und Luftsperren sind für Sa angesetzt (Rocket Lab). 85 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -763,6 +808,10 @@
         {
           "title": "Rocket Lab (GlobeNewswire): 100. Electron-Start diese Woche (12.11.)",
           "url": "https://www.globenewswire.com/news-release/2026/11/12/3402322/0/en/rocket-lab-to-launch-milestone-100th-electron-rocket-this-week.html"
+        },
+        {
+          "title": "Rocket Lab: Launch Safety – NET Sa 14.11. 05:30 UTC, Ersatztage bis 26.11.",
+          "url": "https://rocketlabcorp.com/launch/launch-safety/"
         }
       ]
     },
@@ -859,151 +908,6 @@
           "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
         }
       ]
-    },
-    {
-      "id": "evt-nvda-huang-briefing",
-      "title": "Nvidia: Huang soll vor dem Kongress aussagen (Mast will ihn am 1.12. vertraulich befragen, Senat bittet für 3.12.)",
-      "date": "2026-12-01",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "regulierung",
-      "company": "NVIDIA",
-      "tickers": [
-        "SPCX",
-        "TSLA"
-      ],
-      "probabilityPct": 70,
-      "impact": "mittel",
-      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nach dem US-Start lag Nvidia zeitweise bis zu 8 % im Minus, um 18:05 bei ~177,2 $ (−5,0 %), während Broadcom, AMD und die Nasdaq (~+2,5 %) stiegen. Stand 20:05: Nvidia ~176,8 $ (−5,3 %), weiter keine öffentliche Antwort Huangs auf die Briefing-Bitte; Nvidia hatte schon auf frühere Nachfragen nicht gesagt, ob er kommt (CNBC). Der künftige Mehrheitsführer Jeffries erwartet, dass die Affäre am Mo in einem vertraulichen Briefing mit dem Weißen Haus zur Sprache kommt (CNBC); Nvidia: Huang führe „ohne Unterbrechung“ weiter. Mit der neuen demokratischen Mehrheit droht zusätzlich mehr Aufsicht (CNBC). Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen. Stand 22:00: Nvidia schloss bei 178,67 $ (−4,3 %) – einziger Verlierer im Halbleiter-Index, der etwa 7 % stieg (Reuters). Die drei republikanischen Ausschuss-Chefs haben ihre Bitte um ein vertrauliches Briefing am 18.11. am Montagabend erneut öffentlich gemacht (The Verge); eine Zusage Huangs gibt es weiter nicht. Daher bleibt es bei 50 %. Neu Di 10.11.: Trump sagte im Weißen Haus, er habe mit Huang gesprochen, Huang bestreite, von einer Spionin gewusst zu haben – „das FBI schaut sich das an“. Eine Kanzlei in Los Angeles hat in San José eine Sammelklage von Aktionären gegen Nvidia und Huang eingereicht (CNBC). Nvidia vorbörslich etwa +1 %. 50 % unverändert, weil eine Zusage Huangs weiter fehlt. Stand Di 17:58: Nvidia dreht ins Minus, −6,6 % auf 166,83 $. The Information berichtet, über ein mit Alice Huang verbundenes Netzwerk seien seit 2023 mindestens 7,5 Mrd. $ Nvidia-Hardware an chinesische Firmen gegangen; Oppositionsführer Jeffries will mehr Antworten (Yahoo). Die Sammelklage umfasst Käufe vom 9.10.2025 bis 8.11.2026 (Anadolu). 50 % unverändert, eine Zusage Huangs fehlt weiter. Stand Mi 09:00: Nvidias Verwaltungsrat hat eine unabhängige Untersuchung mit Ex-Bundesanwalt Joon H. Kim und der Kanzlei Wachtell Lipton eingesetzt; er sieht bisher keinen Hinweis, dass Geheimnisse abgeflossen sind. Huang bleibt CEO. 50 % unverändert. Stand Mi 12:55: Nvidia-Aktie vorbörslich rund 5 % fester nach 5,5 % Minus am Di und 4,3 % am Mo (CNBC). Am Briefing-Termin ändert das nichts; 50 % unverändert. Stand Mi 20:00: Laut Bloomberg Law sind die Republikaner bereit, Huang vorzuladen, falls er bis Mittwochabend nicht auf die Briefing-Bitte antwortet; eine Vorladung ist noch nicht verschickt. Nvidia steigt trotzdem mit dem Chipsektor (um 20:00 +4,8 %, Yahoo). 50 % unverändert. Stand Mi 22:00: Ausschusschef Moolenaar sagte bei Fox Business, Huang habe bis Mittwochabend Zeit; Mast bereitet die Vorladung vor. Eine Antwort von Nvidia gibt es laut TechCrunch nicht. Nvidia schloss +2,9 % (Yahoo). 50 % unverändert. Stand Do 05:10: Huangs Frist für eine Antwort an den Ausschuss ist am Mittwochabend ohne öffentliche Antwort verstrichen (Techwire); Moolenaar und Mast hatten für diesen Fall eine Vorladung angekündigt. Zugleich berät Nvidias Verwaltungsrat über Huangs Ablösung (eigener Termin). Ob das Briefing am 18.11. stattfindet, bleibt offen: 50 % unverändert. Stand Do 15:00: Huang ist nicht mehr Nvidia-Chef (NVIDIA). Damit fällt der Anlass für ein Briefing durch ihn als Konzernchef weg; der Ausschuss kann ihn zwar weiter vorladen, und Nvidia könnte stattdessen Interimschefin Kress oder Anwälte schicken, öffentlich zugesagt ist aber nichts. 35 statt 50 %. Stand Do 16:00: Keine neue Aussage des Ausschusses nach dem Rücktritt gefunden. 35 % unverändert. Stand Do 18:00: Wende. Der Ausschussvorsitzende Brian Mast sagte am Donnerstag, Huang habe zugesagt, noch vor Thanksgiving (26.11.) vor dem Kongress auszusagen: „Er hat zugestimmt zu kommen, wir verhandeln über den Tag.“ Huangs Team habe sich am Mittwochabend gemeldet; Mast will ihn „in etwa einer Woche“ sehen, die Aussage soll wohl unter Eid und protokolliert vor mehreren Ausschüssen stattfinden, öffentlich oder vertraulich ist offen. Mast droht sonst mit einer Vorladung „für den nächsten Tag“ (CNBC). Zusätzlich fordert der Demokraten-Chef Jeffries ein vertrauliches Briefing für den Kongress, Senatorin Warren verlangt Antworten auch von Nvidias Führung (CNBC). Der Termin 18.11. ist damit nicht mehr fest, das Fenster reicht jetzt von Mo 16.11. bis Mi 25.11. 75 statt 35 %: Zusage und Vorladungsdrohung liegen vor, offen bleiben Tag und Rahmen, ein Rutschen nach Thanksgiving ist möglich. Stand Do 20:00: Keine neue Festlegung; der Tag wird laut TechCrunch weiter verhandelt, Zusage „vor Thanksgiving“ bleibt. 75 % unverändert. Stand Do 22:00: Kein Tag festgelegt; TechCrunch schreibt, Huang solle „in den kommenden Wochen“ vor dem Kongress aussagen. Der Bericht über eine dritte Affäre (Reuters) erhöht eher den Druck aus dem Kongress. 75 % unverändert. Stand Fr 07:00: Neuer Termin. Ausschuss-Chef Mast hat Huang am Donnerstag schriftlich gebeten, am 1.12. zu einem vertraulichen, protokollierten Gespräch zu kommen; bestätigt Huang bis Freitagabend nicht, will Mast ihn vorladen. Zusätzlich bittet Senator Tim Scott (Bankenausschuss) Huang um eine Aussage am 3.12. und Handelsminister Lutnick am 10.12.; Lutnick hat zugesagt (NBC News). Huang hat die Kanzlei Paul Weiss beauftragt (Reuters). Die Aussage „vor Thanksgiving“ ist damit vom Tisch, ich verschiebe den Termin auf 1.–3.12. 70 statt 75 %: Vorladungsdrohung und zwei Ausschüsse sprechen für einen Auftritt, aber Huang ist kein Nvidia-Chef mehr und kann mit Anwälten Zeit gewinnen.",
-      "example": false,
-      "sources": [
-        {
-          "title": "CNBC: FBI-Prüfung und Sammelklage (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/nvidia-scandal-fails-to-bring-down-the-tech-bulls-as-spy-investigation-widens.html"
-        },
-        {
-          "title": "The Verge: Republikaner erneuern Bitte um Huang-Briefing (9.11.)",
-          "url": "https://www.theverge.com/policy/1030258/republicans-reshare-request-for-a-closed-door-briefing-with-jensen-huang-next-week"
-        },
-        {
-          "title": "Reuters/StreetInsider: Wall St steigt, Öl fällt, Nvidia schwach (9.11.)",
-          "url": "https://www.streetinsider.com/General+News/Wall+St+rallies+after+last+week%27s+AI+rout%3B+Nvidia+falls/27310155.html"
-        },
-        {
-          "title": "CNBC: Huang soll Kongress briefen, Nvidia lässt Teilnahme offen (5.11.)",
-          "url": "https://www.cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html"
-        },
-        {
-          "title": "CNBC: Huang und die neue Kongress-Aufsicht (9.11.)",
-          "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-affair-congress-scrutiny.html"
-        },
-        {
-          "title": "JBizNews: Nvidia −6,7 % zum Start, Chips steigen (9.11.)",
-          "url": "https://jbiznews.com/stocks-jump-at-the-open-as-bargain-hunters-return-nvidia-sinks-nearly-7-after-board-probe-of-ceo/"
-        },
-        {
-          "title": "NVIDIA: Statement from the Board (8.11.2026)",
-          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
-        },
-        {
-          "title": "CNBC: Nvidia investigates Huang relationship (8.11.)",
-          "url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html"
-        },
-        {
-          "title": "Wall Street Observer: Briefing-Bitte 18.11., NVDA −3,8 % über Nacht",
-          "url": "https://wallstreetobserver.com/articles/nvidia-board-investigation-huang"
-        },
-        {
-          "title": "The Star/Reuters: Nvidia falls about 3% (9.11.)",
-          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/09/nvidia-falls-about-3-in-after-hours-and-perpetual-futures-trade"
-        },
-        {
-          "title": "CNA/Reuters: Trump nennt Huang „honorable“ (9.11.)",
-          "url": "https://www.channelnewsasia.com/business/trump-calls-nvidias-huang-honorable-says-he-has-not-discussed-allegations-him-6534881"
-        },
-        {
-          "title": "Yahoo Finance: Nvidia vorbörslich −4 % (9.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
-        },
-        {
-          "title": "CNBC: Nvidia vorbörslich −5 % (9.11.)",
-          "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
-        },
-        {
-          "title": "House Foreign Affairs: Bitte um Huang-Briefing, Antwort bis 11.11.",
-          "url": "https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-request-jensen-huang-brief-congress-on-link-to-chinese-intelligence-asset"
-        },
-        {
-          "title": "CNBC: Analysten zu Huang-Belastung, Baird zu H200 (9.11.)",
-          "url": "https://www.cnbc.com/2026/11/09/nvidia-stock-faces-huang-investigation-overhang-analysts.html"
-        },
-        {
-          "title": "Yahoo Finance: NVDA vorbörslich",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
-        },
-        {
-          "title": "Yahoo Finance: Nvidia −3 %, The Information zu 7,5 Mrd. $ Lieferungen nach China (10.11.)",
-          "url": "https://finance.yahoo.com/markets/article/nvidia-stock-drops-3-extending-decline-on-report-alleged-chinese-spy-linked-to-nvidia-ceo-aided-75-billion-in-china-chip-shipments-152654028.html"
-        },
-        {
-          "title": "Anadolu: Nvidia −4 %, Sammelklage und Untersuchung (10.11.)",
-          "url": "https://www.aa.com.tr/en/economy/nvidia-shares-extend-losses-falling-4-amid-shareholder-lawsuit-ceo-probe/4119144"
-        },
-        {
-          "title": "Nvidia: Erklärung des Verwaltungsrats (externe Untersuchung)",
-          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
-        },
-        {
-          "title": "CNBC: Nvidia beauftragt Wachtell Lipton mit Huang-Untersuchung (10.11.)",
-          "url": "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html"
-        },
-        {
-          "title": "CNBC: Nvidia vorbörslich +5 % trotz Huang-Untersuchung (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
-        },
-        {
-          "title": "Bloomberg Law: Kongress will Huang vorladen (11.11.)",
-          "url": "https://news.bloomberglaw.com/artificial-intelligence/congress-set-to-subpoena-nvidias-jensen-huang-republican-says"
-        },
-        {
-          "title": "TechCrunch: Kongress will Huang vorladen (11.11.)",
-          "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/"
-        },
-        {
-          "title": "Techwire: Huang lässt Kongress-Frist ohne öffentliche Antwort verstreichen",
-          "url": "https://www.techwire.co.il/en/article/nvidia-huang-congress-deadline-passes-no-public-response"
-        },
-        {
-          "title": "CNBC: Nvidia-Verwaltungsrat berät über Huangs Zukunft (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
-        },
-        {
-          "title": "NVIDIA: NVIDIA Announces CEO Transition (12.11.)",
-          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
-        },
-        {
-          "title": "CNBC (Liveblog): Huang sagt vor dem Kongress aus, Trump schlägt Tim Cook vor (12.11., 17:52)",
-          "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html"
-        },
-        {
-          "title": "TechCrunch: Jensen Huang will vor dem Kongress aussagen (12.11.)",
-          "url": "https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/"
-        },
-        {
-          "title": "TechCrunch: Reuters berichtet über eine dritte Affäre Huangs (12.11.)",
-          "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/"
-        },
-        {
-          "title": "NBC News: Lutnick sagt aus, Mast will Huang am 1.12. befragen (12.11.)",
-          "url": "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093"
-        },
-        {
-          "title": "Reuters via GMA: Kress-Memo, Mitarbeiterversammlung 18.11. (13.11.)",
-          "url": "https://www.gmanetwork.com/news/money/companies/1009361/nvidia-appoints-cfo-colette-kress-as-interim-ceo-after-jensen-huang-s-exit/story/"
-        }
-      ],
-      "end": "2026-12-03"
     },
     {
       "id": "evt-apec-shenzhen",
@@ -1214,6 +1118,155 @@
       ]
     },
     {
+      "id": "evt-nvda-huang-briefing",
+      "title": "Nvidia: Huang soll vor dem Kongress aussagen (Mast will ihn am 1.12. vertraulich befragen, Senat bittet für 3.12.)",
+      "date": "2026-12-01",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "regulierung",
+      "company": "NVIDIA",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "probabilityPct": 70,
+      "impact": "mittel",
+      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nach dem US-Start lag Nvidia zeitweise bis zu 8 % im Minus, um 18:05 bei ~177,2 $ (−5,0 %), während Broadcom, AMD und die Nasdaq (~+2,5 %) stiegen. Stand 20:05: Nvidia ~176,8 $ (−5,3 %), weiter keine öffentliche Antwort Huangs auf die Briefing-Bitte; Nvidia hatte schon auf frühere Nachfragen nicht gesagt, ob er kommt (CNBC). Der künftige Mehrheitsführer Jeffries erwartet, dass die Affäre am Mo in einem vertraulichen Briefing mit dem Weißen Haus zur Sprache kommt (CNBC); Nvidia: Huang führe „ohne Unterbrechung“ weiter. Mit der neuen demokratischen Mehrheit droht zusätzlich mehr Aufsicht (CNBC). Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen. Stand 22:00: Nvidia schloss bei 178,67 $ (−4,3 %) – einziger Verlierer im Halbleiter-Index, der etwa 7 % stieg (Reuters). Die drei republikanischen Ausschuss-Chefs haben ihre Bitte um ein vertrauliches Briefing am 18.11. am Montagabend erneut öffentlich gemacht (The Verge); eine Zusage Huangs gibt es weiter nicht. Daher bleibt es bei 50 %. Neu Di 10.11.: Trump sagte im Weißen Haus, er habe mit Huang gesprochen, Huang bestreite, von einer Spionin gewusst zu haben – „das FBI schaut sich das an“. Eine Kanzlei in Los Angeles hat in San José eine Sammelklage von Aktionären gegen Nvidia und Huang eingereicht (CNBC). Nvidia vorbörslich etwa +1 %. 50 % unverändert, weil eine Zusage Huangs weiter fehlt. Stand Di 17:58: Nvidia dreht ins Minus, −6,6 % auf 166,83 $. The Information berichtet, über ein mit Alice Huang verbundenes Netzwerk seien seit 2023 mindestens 7,5 Mrd. $ Nvidia-Hardware an chinesische Firmen gegangen; Oppositionsführer Jeffries will mehr Antworten (Yahoo). Die Sammelklage umfasst Käufe vom 9.10.2025 bis 8.11.2026 (Anadolu). 50 % unverändert, eine Zusage Huangs fehlt weiter. Stand Mi 09:00: Nvidias Verwaltungsrat hat eine unabhängige Untersuchung mit Ex-Bundesanwalt Joon H. Kim und der Kanzlei Wachtell Lipton eingesetzt; er sieht bisher keinen Hinweis, dass Geheimnisse abgeflossen sind. Huang bleibt CEO. 50 % unverändert. Stand Mi 12:55: Nvidia-Aktie vorbörslich rund 5 % fester nach 5,5 % Minus am Di und 4,3 % am Mo (CNBC). Am Briefing-Termin ändert das nichts; 50 % unverändert. Stand Mi 20:00: Laut Bloomberg Law sind die Republikaner bereit, Huang vorzuladen, falls er bis Mittwochabend nicht auf die Briefing-Bitte antwortet; eine Vorladung ist noch nicht verschickt. Nvidia steigt trotzdem mit dem Chipsektor (um 20:00 +4,8 %, Yahoo). 50 % unverändert. Stand Mi 22:00: Ausschusschef Moolenaar sagte bei Fox Business, Huang habe bis Mittwochabend Zeit; Mast bereitet die Vorladung vor. Eine Antwort von Nvidia gibt es laut TechCrunch nicht. Nvidia schloss +2,9 % (Yahoo). 50 % unverändert. Stand Do 05:10: Huangs Frist für eine Antwort an den Ausschuss ist am Mittwochabend ohne öffentliche Antwort verstrichen (Techwire); Moolenaar und Mast hatten für diesen Fall eine Vorladung angekündigt. Zugleich berät Nvidias Verwaltungsrat über Huangs Ablösung (eigener Termin). Ob das Briefing am 18.11. stattfindet, bleibt offen: 50 % unverändert. Stand Do 15:00: Huang ist nicht mehr Nvidia-Chef (NVIDIA). Damit fällt der Anlass für ein Briefing durch ihn als Konzernchef weg; der Ausschuss kann ihn zwar weiter vorladen, und Nvidia könnte stattdessen Interimschefin Kress oder Anwälte schicken, öffentlich zugesagt ist aber nichts. 35 statt 50 %. Stand Do 16:00: Keine neue Aussage des Ausschusses nach dem Rücktritt gefunden. 35 % unverändert. Stand Do 18:00: Wende. Der Ausschussvorsitzende Brian Mast sagte am Donnerstag, Huang habe zugesagt, noch vor Thanksgiving (26.11.) vor dem Kongress auszusagen: „Er hat zugestimmt zu kommen, wir verhandeln über den Tag.“ Huangs Team habe sich am Mittwochabend gemeldet; Mast will ihn „in etwa einer Woche“ sehen, die Aussage soll wohl unter Eid und protokolliert vor mehreren Ausschüssen stattfinden, öffentlich oder vertraulich ist offen. Mast droht sonst mit einer Vorladung „für den nächsten Tag“ (CNBC). Zusätzlich fordert der Demokraten-Chef Jeffries ein vertrauliches Briefing für den Kongress, Senatorin Warren verlangt Antworten auch von Nvidias Führung (CNBC). Der Termin 18.11. ist damit nicht mehr fest, das Fenster reicht jetzt von Mo 16.11. bis Mi 25.11. 75 statt 35 %: Zusage und Vorladungsdrohung liegen vor, offen bleiben Tag und Rahmen, ein Rutschen nach Thanksgiving ist möglich. Stand Do 20:00: Keine neue Festlegung; der Tag wird laut TechCrunch weiter verhandelt, Zusage „vor Thanksgiving“ bleibt. 75 % unverändert. Stand Do 22:00: Kein Tag festgelegt; TechCrunch schreibt, Huang solle „in den kommenden Wochen“ vor dem Kongress aussagen. Der Bericht über eine dritte Affäre (Reuters) erhöht eher den Druck aus dem Kongress. 75 % unverändert. Stand Fr 07:00: Neuer Termin. Ausschuss-Chef Mast hat Huang am Donnerstag schriftlich gebeten, am 1.12. zu einem vertraulichen, protokollierten Gespräch zu kommen; bestätigt Huang bis Freitagabend nicht, will Mast ihn vorladen. Zusätzlich bittet Senator Tim Scott (Bankenausschuss) Huang um eine Aussage am 3.12. und Handelsminister Lutnick am 10.12.; Lutnick hat zugesagt (NBC News). Huang hat die Kanzlei Paul Weiss beauftragt (Reuters). Die Aussage „vor Thanksgiving“ ist damit vom Tisch, ich verschiebe den Termin auf 1.–3.12. 70 statt 75 %: Vorladungsdrohung und zwei Ausschüsse sprechen für einen Auftritt, aber Huang ist kein Nvidia-Chef mehr und kann mit Anwälten Zeit gewinnen. Stand Fr 09:10: Die Frist für Huangs schriftliche Zusage läuft heute um 20 Uhr ET ab (Sa 02:00 Berlin), sonst lädt der Auswärtige Ausschuss ihn vor. Zusätzlich soll am 3.12. um 10 Uhr ET Jeffrey Kessler (Handelsministerium, Exportkontrollen) vor Masts Ausschuss aussagen (Edit USA). 70 % unverändert.",
+      "example": false,
+      "sources": [
+        {
+          "title": "CNBC: FBI-Prüfung und Sammelklage (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/nvidia-scandal-fails-to-bring-down-the-tech-bulls-as-spy-investigation-widens.html"
+        },
+        {
+          "title": "The Verge: Republikaner erneuern Bitte um Huang-Briefing (9.11.)",
+          "url": "https://www.theverge.com/policy/1030258/republicans-reshare-request-for-a-closed-door-briefing-with-jensen-huang-next-week"
+        },
+        {
+          "title": "Reuters/StreetInsider: Wall St steigt, Öl fällt, Nvidia schwach (9.11.)",
+          "url": "https://www.streetinsider.com/General+News/Wall+St+rallies+after+last+week%27s+AI+rout%3B+Nvidia+falls/27310155.html"
+        },
+        {
+          "title": "CNBC: Huang soll Kongress briefen, Nvidia lässt Teilnahme offen (5.11.)",
+          "url": "https://www.cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html"
+        },
+        {
+          "title": "CNBC: Huang und die neue Kongress-Aufsicht (9.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-affair-congress-scrutiny.html"
+        },
+        {
+          "title": "JBizNews: Nvidia −6,7 % zum Start, Chips steigen (9.11.)",
+          "url": "https://jbiznews.com/stocks-jump-at-the-open-as-bargain-hunters-return-nvidia-sinks-nearly-7-after-board-probe-of-ceo/"
+        },
+        {
+          "title": "NVIDIA: Statement from the Board (8.11.2026)",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+        },
+        {
+          "title": "CNBC: Nvidia investigates Huang relationship (8.11.)",
+          "url": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html"
+        },
+        {
+          "title": "Wall Street Observer: Briefing-Bitte 18.11., NVDA −3,8 % über Nacht",
+          "url": "https://wallstreetobserver.com/articles/nvidia-board-investigation-huang"
+        },
+        {
+          "title": "The Star/Reuters: Nvidia falls about 3% (9.11.)",
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/09/nvidia-falls-about-3-in-after-hours-and-perpetual-futures-trade"
+        },
+        {
+          "title": "CNA/Reuters: Trump nennt Huang „honorable“ (9.11.)",
+          "url": "https://www.channelnewsasia.com/business/trump-calls-nvidias-huang-honorable-says-he-has-not-discussed-allegations-him-6534881"
+        },
+        {
+          "title": "Yahoo Finance: Nvidia vorbörslich −4 % (9.11.)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
+        },
+        {
+          "title": "CNBC: Nvidia vorbörslich −5 % (9.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
+        },
+        {
+          "title": "House Foreign Affairs: Bitte um Huang-Briefing, Antwort bis 11.11.",
+          "url": "https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-request-jensen-huang-brief-congress-on-link-to-chinese-intelligence-asset"
+        },
+        {
+          "title": "CNBC: Analysten zu Huang-Belastung, Baird zu H200 (9.11.)",
+          "url": "https://www.cnbc.com/2026/11/09/nvidia-stock-faces-huang-investigation-overhang-analysts.html"
+        },
+        {
+          "title": "Yahoo Finance: NVDA vorbörslich",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
+        },
+        {
+          "title": "Yahoo Finance: Nvidia −3 %, The Information zu 7,5 Mrd. $ Lieferungen nach China (10.11.)",
+          "url": "https://finance.yahoo.com/markets/article/nvidia-stock-drops-3-extending-decline-on-report-alleged-chinese-spy-linked-to-nvidia-ceo-aided-75-billion-in-china-chip-shipments-152654028.html"
+        },
+        {
+          "title": "Anadolu: Nvidia −4 %, Sammelklage und Untersuchung (10.11.)",
+          "url": "https://www.aa.com.tr/en/economy/nvidia-shares-extend-losses-falling-4-amid-shareholder-lawsuit-ceo-probe/4119144"
+        },
+        {
+          "title": "Nvidia: Erklärung des Verwaltungsrats (externe Untersuchung)",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+        },
+        {
+          "title": "CNBC: Nvidia beauftragt Wachtell Lipton mit Huang-Untersuchung (10.11.)",
+          "url": "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html"
+        },
+        {
+          "title": "CNBC: Nvidia vorbörslich +5 % trotz Huang-Untersuchung (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
+        },
+        {
+          "title": "Bloomberg Law: Kongress will Huang vorladen (11.11.)",
+          "url": "https://news.bloomberglaw.com/artificial-intelligence/congress-set-to-subpoena-nvidias-jensen-huang-republican-says"
+        },
+        {
+          "title": "TechCrunch: Kongress will Huang vorladen (11.11.)",
+          "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/"
+        },
+        {
+          "title": "Techwire: Huang lässt Kongress-Frist ohne öffentliche Antwort verstreichen",
+          "url": "https://www.techwire.co.il/en/article/nvidia-huang-congress-deadline-passes-no-public-response"
+        },
+        {
+          "title": "CNBC: Nvidia-Verwaltungsrat berät über Huangs Zukunft (11.11.)",
+          "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
+        },
+        {
+          "title": "NVIDIA: NVIDIA Announces CEO Transition (12.11.)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+        },
+        {
+          "title": "CNBC (Liveblog): Huang sagt vor dem Kongress aus, Trump schlägt Tim Cook vor (12.11., 17:52)",
+          "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html"
+        },
+        {
+          "title": "TechCrunch: Jensen Huang will vor dem Kongress aussagen (12.11.)",
+          "url": "https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/"
+        },
+        {
+          "title": "TechCrunch: Reuters berichtet über eine dritte Affäre Huangs (12.11.)",
+          "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/"
+        },
+        {
+          "title": "NBC News: Lutnick sagt aus, Mast will Huang am 1.12. befragen (12.11.)",
+          "url": "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093"
+        },
+        {
+          "title": "Reuters via GMA: Kress-Memo, Mitarbeiterversammlung 18.11. (13.11.)",
+          "url": "https://www.gmanetwork.com/news/money/companies/1009361/nvidia-appoints-cfo-colette-kress-as-interim-ceo-after-jensen-huang-s-exit/story/"
+        },
+        {
+          "title": "Edit USA: Frist für Huang Fr 20 Uhr ET, Termine 1., 3. und 10.12. (12.11.)",
+          "url": "https://www.editusa.com/intelligence/jensen-huang-congress-deadline-december-hearings-lutnick-kessler"
+        }
+      ],
+      "end": "2026-12-03"
+    },
+    {
       "id": "evt-fcc-grain-800mhz",
       "title": "FCC: Frist für Stellungnahmen zum SpaceX-Kauf der 800-MHz-Frequenzen von Grain",
       "date": "2026-12-01",
@@ -1249,6 +1302,63 @@
         {
           "title": "StreetInsider: „FCC approves“ (11.11., irreführend)",
           "url": "https://www.streetinsider.com/Investing/SpaceX+stock+rises+as+FCC+approves+nationwide+spectrum+deal/27327470.html"
+        }
+      ]
+    },
+    {
+      "id": "evt-spcx-tsla-fusion",
+      "title": "SpaceX und Tesla: mögliche Bekanntgabe der Fusion (laut Bloomberg schon im Dezember)",
+      "date": "2026-12-01",
+      "end": "2026-12-31",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "fusion",
+      "company": "SpaceX / Tesla",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "probabilityPct": 40,
+      "impact": "hoch",
+      "reasoning": "Bloomberg berichtete am Do 12.11. (21:22 Berlin) unter Berufung auf Insider: Die Fusionsgespräche kommen voran, eine Bekanntgabe des bisher größten Firmendeals sei schon im Dezember möglich. Besprochen wird auch, dass es Anfang 2027 wird. Verwaltungsräte und Berater verhandeln über die Führungsstruktur, wie viele SpaceX-Aktien Tesla-Aktionäre bekämen und wie Teslas China-Geschäft abgeschirmt würde (Bloomberg, Mint). Musk hatte im Oktober Sonderausschüsse aus unabhängigen Direktoren genannt. Es sei aber zu früh, von einer Fusion auszugehen, die Ausschüsse hätten sich noch nicht auf Bedingungen geeinigt (Reuters/cash). Gegenwind: Spannungen zwischen SpaceX-Regierungsaufträgen und Teslas China-Werk (JPMorgan) und ein Kongress mit demokratischen Mehrheiten, der Musk prüfen will. Jefferies hält die Fusion nach den Wahlen für schwieriger. Die Tesla-Hauptversammlung ist am 3.12. Meine 40 % gelten für eine offizielle Bekanntgabe im Dezember. Der Zeitplan ist laut Bericht ehrgeizig, Musk-Termine rutschen oft, und die Ausschüsse haben noch keine Bedingungen. Nachbörslich am Do um 01:59 Berlin: SPCX 141,96 $ (+1,4 %), TSLA 399,85 $ (+0,6 %) (Yahoo). Stand Fr 07:00: Keine neuen Details. Tesla stieg am Do zeitweise um 1,9 % auf den Bericht (Electrek). Electrek weist darauf hin, dass bei einem Kontrollwechsel Teile von Musks Tesla-Vergütung sofort fällig werden könnten. Reuters hat SpaceX und Tesla nicht erreicht. 40 % unverändert. Stand Fr 09:10: Keine neue Meldung der Firmen. Barclays hatte im Oktober durchgerechnet: Nach einer Übernahme Teslas durch SpaceX hielte Musk rund 37 % des Kapitals, aber 56 % der Stimmen. Laut Musk muss die Hälfte aller ausstehenden Tesla-Aktien zustimmen; auf der Tagesordnung der Hauptversammlung am 3.12. steht die Fusion bisher nicht (Investing.com). 40 % unverändert.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Bloomberg (via Bloomberg Law): SpaceX and Tesla Talks on Record Merger Are Said to Progress (12.11.)",
+          "url": "https://news.bloomberglaw.com/daily-labor-report/spacex-and-tesla-talks-on-record-merger-are-said-to-progress"
+        },
+        {
+          "title": "AFR/Bloomberg: SpaceX and Tesla on track for merger as soon as December (13.11.)",
+          "url": "https://www.afr.com/world/north-america/spacex-and-tesla-on-track-for-merger-as-soon-as-december-20261113-p61dv1"
+        },
+        {
+          "title": "cash.ch/Reuters: Fusion SpaceX/Tesla wird womöglich schon im Dezember verkündet (12.11.)",
+          "url": "https://www.cash.ch/news/top-news/fusion-spacextesla-wird-womoglich-schon-im-dezember-verkundet-984949"
+        },
+        {
+          "title": "Mint: Was den Deal noch stoppen könnte (13.11.)",
+          "url": "https://www.livemint.com/companies/news/elon-musks-spacex-tesla-mega-merger-could-be-announced-in-december-what-could-derail-the-deal-11794535491532.html"
+        },
+        {
+          "title": "Yahoo Finance: SPCX (Nachbörse 12.11.)",
+          "url": "https://finance.yahoo.com/quote/SPCX/"
+        },
+        {
+          "title": "Yahoo Finance: TSLA (Nachbörse 12.11.)",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
+        },
+        {
+          "title": "Electrek: SpaceX könnte Tesla-Fusion im Dezember verkünden (12.11.)",
+          "url": "https://electrek.co/2026/11/12/spacex-tesla-merger-announcement-december-report/"
+        },
+        {
+          "title": "Reuters via Investing.com: SpaceX-Tesla-Fusionsgespräche kommen voran (12.11.)",
+          "url": "https://ca.investing.com/news/stock-market-news/spacex-tesla-merger-talks-progress-bloomberg-news-reports-4954156"
+        },
+        {
+          "title": "Investing.com: Fusion rückt näher – Musk hätte danach die Stimmenmehrheit (13.11., 07:45)",
+          "url": "https://de.investing.com/news/stock-market-news/teslaaktie-fusion-mit-spacex-ruckt-naher--musk-hatte-danach-die-stimmenmehrheit-3766373"
         }
       ]
     },
@@ -1436,6 +1546,30 @@
         {
           "title": "Teslarati: SpaceX nennt 50 Mrd. $ für den Campus in Arizona (12.11.)",
           "url": "https://www.teslarati.com/spacex-arizona-supercomputer-tombstone/"
+        }
+      ]
+    },
+    {
+      "id": "evt-lutnick-senat",
+      "title": "Senat: Handelsminister Lutnick sagt zu Nvidia und Chip-Exporten aus",
+      "date": "2026-12-10",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "regulierung",
+      "company": null,
+      "tickers": [
+        "MRVL",
+        "SPCX"
+      ],
+      "probabilityPct": 85,
+      "impact": "mittel",
+      "reasoning": "Senator Tim Scott (Bankenausschuss) hat Handelsminister Lutnick um eine öffentliche Anhörung am 10.12. gebeten, wegen der Nvidia-Affäre und der Rolle des Handelsministeriums bei Exportkontrollen. Lutnick hat laut seiner Sprecherin freiwillig zugesagt (NBC News). Senatoren beider Parteien wollen wissen, ob Exportkontrollen gelockert wurden. 85 %, weil die Zusage vorliegt; Kongress-Termine verschieben sich aber öfter. Warum das für uns zählt: Härtere China-Regeln treffen Chipwerte wie Marvell, SpaceX hängt über die KI-Stimmung mit dran.",
+      "example": false,
+      "sources": [
+        {
+          "title": "NBC News: Lutnick sagt aus, Mast will Huang am 1.12. befragen (12.11.)",
+          "url": "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093"
         }
       ]
     },
@@ -2052,83 +2186,6 @@
         {
           "title": "AP: Überraschend starke Payrolls",
           "url": "https://apnews.com/article/jobs-inflation-paycheck-salary-employment-746ee02db33d0372980f815ada33d8d3"
-        }
-      ]
-    },
-    {
-      "id": "evt-spcx-tsla-fusion",
-      "title": "SpaceX und Tesla: mögliche Bekanntgabe der Fusion (laut Bloomberg schon im Dezember)",
-      "date": "2026-12-01",
-      "end": "2026-12-31",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "fusion",
-      "company": "SpaceX / Tesla",
-      "tickers": [
-        "SPCX",
-        "TSLA"
-      ],
-      "probabilityPct": 40,
-      "impact": "hoch",
-      "reasoning": "Bloomberg berichtete am Do 12.11. (21:22 Berlin) unter Berufung auf Insider: Die Fusionsgespräche kommen voran, eine Bekanntgabe des bisher größten Firmendeals sei schon im Dezember möglich. Besprochen wird auch, dass es Anfang 2027 wird. Verwaltungsräte und Berater verhandeln über die Führungsstruktur, wie viele SpaceX-Aktien Tesla-Aktionäre bekämen und wie Teslas China-Geschäft abgeschirmt würde (Bloomberg, Mint). Musk hatte im Oktober Sonderausschüsse aus unabhängigen Direktoren genannt. Es sei aber zu früh, von einer Fusion auszugehen, die Ausschüsse hätten sich noch nicht auf Bedingungen geeinigt (Reuters/cash). Gegenwind: Spannungen zwischen SpaceX-Regierungsaufträgen und Teslas China-Werk (JPMorgan) und ein Kongress mit demokratischen Mehrheiten, der Musk prüfen will. Jefferies hält die Fusion nach den Wahlen für schwieriger. Die Tesla-Hauptversammlung ist am 3.12. Meine 40 % gelten für eine offizielle Bekanntgabe im Dezember. Der Zeitplan ist laut Bericht ehrgeizig, Musk-Termine rutschen oft, und die Ausschüsse haben noch keine Bedingungen. Nachbörslich am Do um 01:59 Berlin: SPCX 141,96 $ (+1,4 %), TSLA 399,85 $ (+0,6 %) (Yahoo). Stand Fr 07:00: Keine neuen Details. Tesla stieg am Do zeitweise um 1,9 % auf den Bericht (Electrek). Electrek weist darauf hin, dass bei einem Kontrollwechsel Teile von Musks Tesla-Vergütung sofort fällig werden könnten. Reuters hat SpaceX und Tesla nicht erreicht. 40 % unverändert.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Bloomberg (via Bloomberg Law): SpaceX and Tesla Talks on Record Merger Are Said to Progress (12.11.)",
-          "url": "https://news.bloomberglaw.com/daily-labor-report/spacex-and-tesla-talks-on-record-merger-are-said-to-progress"
-        },
-        {
-          "title": "AFR/Bloomberg: SpaceX and Tesla on track for merger as soon as December (13.11.)",
-          "url": "https://www.afr.com/world/north-america/spacex-and-tesla-on-track-for-merger-as-soon-as-december-20261113-p61dv1"
-        },
-        {
-          "title": "cash.ch/Reuters: Fusion SpaceX/Tesla wird womöglich schon im Dezember verkündet (12.11.)",
-          "url": "https://www.cash.ch/news/top-news/fusion-spacextesla-wird-womoglich-schon-im-dezember-verkundet-984949"
-        },
-        {
-          "title": "Mint: Was den Deal noch stoppen könnte (13.11.)",
-          "url": "https://www.livemint.com/companies/news/elon-musks-spacex-tesla-mega-merger-could-be-announced-in-december-what-could-derail-the-deal-11794535491532.html"
-        },
-        {
-          "title": "Yahoo Finance: SPCX (Nachbörse 12.11.)",
-          "url": "https://finance.yahoo.com/quote/SPCX/"
-        },
-        {
-          "title": "Yahoo Finance: TSLA (Nachbörse 12.11.)",
-          "url": "https://finance.yahoo.com/quote/TSLA/"
-        },
-        {
-          "title": "Electrek: SpaceX könnte Tesla-Fusion im Dezember verkünden (12.11.)",
-          "url": "https://electrek.co/2026/11/12/spacex-tesla-merger-announcement-december-report/"
-        },
-        {
-          "title": "Reuters via Investing.com: SpaceX-Tesla-Fusionsgespräche kommen voran (12.11.)",
-          "url": "https://ca.investing.com/news/stock-market-news/spacex-tesla-merger-talks-progress-bloomberg-news-reports-4954156"
-        }
-      ]
-    },
-    {
-      "id": "evt-lutnick-senat",
-      "title": "Senat: Handelsminister Lutnick sagt zu Nvidia und Chip-Exporten aus",
-      "date": "2026-12-10",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "regulierung",
-      "company": null,
-      "tickers": [
-        "MRVL",
-        "SPCX"
-      ],
-      "probabilityPct": 85,
-      "impact": "mittel",
-      "reasoning": "Senator Tim Scott (Bankenausschuss) hat Handelsminister Lutnick um eine öffentliche Anhörung am 10.12. gebeten, wegen der Nvidia-Affäre und der Rolle des Handelsministeriums bei Exportkontrollen. Lutnick hat laut seiner Sprecherin freiwillig zugesagt (NBC News). Senatoren beider Parteien wollen wissen, ob Exportkontrollen gelockert wurden. 85 %, weil die Zusage vorliegt; Kongress-Termine verschieben sich aber öfter. Warum das für uns zählt: Härtere China-Regeln treffen Chipwerte wie Marvell, SpaceX hängt über die KI-Stimmung mit dran.",
-      "example": false,
-      "sources": [
-        {
-          "title": "NBC News: Lutnick sagt aus, Mast will Huang am 1.12. befragen (12.11.)",
-          "url": "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093"
         }
       ]
     }
