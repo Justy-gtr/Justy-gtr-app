@@ -1,13 +1,13 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T15:28:00+01:00",
+  "updatedAt": "2026-11-13T15:31:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
       "postsCount": 20,
-      "reason": "SpaceX: Vorbörslich um 141 $. Große Konten sehen den Doppel-Fang bei Flug 15 heute ab 23:45 Uhr als Test für günstigere Starts. Nebenthema: Abbau im Grok-Videoteam.",
+      "reason": "SpaceX: Um 141 $. Große Konten sehen den Doppel-Fang bei Flug 15 heute ab 23:45 Uhr als Test für günstigere Starts. Unsicher: Die FAA-Lizenz fehlt laut Reuters noch.",
       "sources": [
         {
           "title": "Doppel-Fang als Kostentest",
@@ -18,11 +18,11 @@
           "url": "https://x.com/traderfox_de/status/2121239567202165074"
         },
         {
-          "title": "The Information: Grok-Videoteam verkleinert",
-          "url": "https://x.com/AIStockSavvy/status/2121244750619857055"
+          "title": "FAA-Lizenz fehlt noch",
+          "url": "https://x.com/theSpacecyborg/status/2121248348023714235"
         }
       ],
-      "updatedAt": "2026-11-13T15:28:00+01:00"
+      "updatedAt": "2026-11-13T15:31:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,17 +43,17 @@
           "url": "https://x.com/viaNexusHQ/status/2121235103829385372"
         }
       ],
-      "updatedAt": "2026-11-13T15:28:00+01:00"
+      "updatedAt": "2026-11-13T15:31:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 50,
       "postsCount": 18,
-      "reason": "Rocket Lab: Alle 8 Globalstar-Satelliten auf Rocket-Lab-Plattformen haben die ersten Tests im All bestanden. Dazu Vorfreude auf den 100. Electron-Start Samstag früh.",
+      "reason": "Rocket Lab: Generalprobe für den 100. Electron-Start ist geschafft, Start Samstag 06:30 Uhr. Dazu haben alle 8 Globalstar-Satelliten die ersten Tests im All bestanden.",
       "sources": [
         {
-          "title": "100. Electron-Start Samstag",
-          "url": "https://x.com/BroadwakeAI/status/2121236800505368884"
+          "title": "Generalprobe für Start 100 geschafft",
+          "url": "https://x.com/DaveMorgenscmu/status/2121248627163271208"
         },
         {
           "title": "Bis zu 370 Mio. $ aus Aktienverträgen",
@@ -64,7 +64,7 @@
           "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
         }
       ],
-      "updatedAt": "2026-11-13T15:28:00+01:00"
+      "updatedAt": "2026-11-13T15:31:00+01:00"
     }
   }
 }
