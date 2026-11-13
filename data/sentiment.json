@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T12:36:00+01:00",
+  "updatedAt": "2026-11-13T12:56:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 35,
-      "postsCount": 20,
-      "reason": "SpaceX: Starship Flug 15 heute ab 23:45 Uhr soll erstmals beide Stufen fangen und über Land heimkehren. Kritik: noch keine FAA-Freigabe. Dazu Fusionsgerede.",
+      "score": 40,
+      "postsCount": 15,
+      "reason": "SpaceX: Große Vorfreude auf Starship Flug 15 heute ab 23:45 Uhr mit erstem Doppel-Fang. Viele sehen das als wichtigsten Test des Jahres. Die fehlende FAA-Freigabe bleibt Thema.",
       "sources": [
+        {
+          "title": "Starship-Gegenwind endet dieses Wochenende",
+          "url": "https://x.com/spcxGOD/status/2121205210735419679"
+        },
+        {
+          "title": "Simulation des Flugs 15",
+          "url": "https://x.com/Napoleon__Bon/status/2121208966105665589"
+        },
         {
           "title": "Noch keine FAA-Lizenz 12 h vor Start",
           "url": "https://x.com/spcxGOD/status/2121193494924394902"
-        },
-        {
-          "title": "Hitzeschild wird mit jedem Flug besser",
-          "url": "https://x.com/EvasTeslaSPlaid/status/2121189625934831957"
-        },
-        {
-          "title": "Erster Rückflug über bewohntes Land",
-          "url": "https://x.com/matkue/status/2121201821104460075"
         }
       ],
-      "updatedAt": "2026-11-13T12:36:00+01:00"
+      "updatedAt": "2026-11-13T12:56:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 20,
-      "reason": "Tesla: Fusion mit SpaceX bleibt Thema Nummer eins, vorbörslich leicht im Plus. Model Y Premium in den USA für 2026 ausverkauft. JPMorgan hat Tesla-Anteile reduziert.",
+      "score": 20,
+      "postsCount": 15,
+      "reason": "Tesla: +12 % in einer Woche, Fusion mit SpaceX bleibt Hauptthema. Ein großer Account warnt, dass die US-Preisdaten heute 14:30 Uhr Tesla drücken könnten.",
       "sources": [
         {
-          "title": "Fusion schon im Dezember möglich",
-          "url": "https://x.com/robertratcliffx/status/2121202421158351134"
+          "title": "Techaktien: +12 % in einer Woche",
+          "url": "https://x.com/Techaktien1/status/2121206769309319376"
         },
         {
-          "title": "Model Y Premium 2026 ausverkauft",
-          "url": "https://x.com/AllTeslaNews/status/2121200014626046182"
+          "title": "Warnung vor PPI-Daten",
+          "url": "https://x.com/squawksquare/status/2121207260957266048"
         },
         {
-          "title": "JPMorgan reduziert Tesla",
-          "url": "https://x.com/BestTrader01/status/2121191562826625293"
+          "title": "Hilfe für Batterie in Grünheide",
+          "url": "https://x.com/RonnyGolisch/status/2121206687008764158"
         }
       ],
-      "updatedAt": "2026-11-13T12:36:00+01:00"
+      "updatedAt": "2026-11-13T12:56:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 45,
-      "postsCount": 20,
-      "reason": "Rocket Lab: ARK (Cathie Wood) kaufte gestern gut 15.000 Aktien. Vorfreude auf den 100. Electron-Start Samstag 06:30 Uhr. Einige ärgern sich über Neutron-Verzögerungen.",
+      "postsCount": 15,
+      "reason": "Rocket Lab: Aucklands Sky Tower leuchtet für den 100. Electron-Start am Samstag 06:30 Uhr. ARK-Käufe werden weiter geteilt, Neutron-Verzögerungen bleiben ein Thema.",
       "sources": [
+        {
+          "title": "Sky Tower leuchtet zum 100. Start",
+          "url": "https://x.com/MrsIglesiasRKLB/status/2121205006007496715"
+        },
         {
           "title": "ARK kauft 15.114 RKLB-Aktien",
           "url": "https://x.com/ArkkDaily/status/2121202833806528782"
         },
         {
-          "title": "Meldungen: 100. Start, Pentagon-Kredit",
-          "url": "https://x.com/lanios_/status/2121196390617395592"
-        },
-        {
-          "title": "Frust über Neutron-Verzögerungen",
-          "url": "https://x.com/RKLBMan/status/2121204630952566937"
+          "title": "Neutron-Verzögerungen zeigen, wie schwer es ist",
+          "url": "https://x.com/ReadFuturist/status/2121205157300224487"
         }
       ],
-      "updatedAt": "2026-11-13T12:36:00+01:00"
+      "updatedAt": "2026-11-13T12:56:00+01:00"
     }
   }
 }
