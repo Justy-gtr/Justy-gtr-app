@@ -1,14 +1,18 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T16:06:00+01:00",
+  "updatedAt": "2026-11-13T16:08:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 50,
-      "postsCount": 15,
-      "reason": "SpaceX: Analysten von KeyBanc und Morgan Stanley nennen Flug 15 einen wichtigen Wendepunkt, falls der Doppel-Fang klappt. Thrive Capital hat aufgestockt. FAA-Freigabe fehlt.",
+      "score": 30,
+      "postsCount": 20,
+      "reason": "SpaceX: Der Markt rutscht ab, SpaceX fällt unter das Tief vor Börsenstart. Trotzdem überwiegt die Vorfreude auf den Doppel-Fang bei Flug 15. Die FAA-Freigabe fehlt noch.",
       "sources": [
+        {
+          "title": "Markt kippt schnell, auch SPCX",
+          "url": "https://x.com/squawksquare/status/2121257988229067089"
+        },
         {
           "title": "Morgan Stanley: Flug 15 unterschätzt",
           "url": "https://x.com/RocketTerminal/status/2121256774749532362"
@@ -16,34 +20,30 @@
         {
           "title": "KeyBanc: Wendepunkt für Starship",
           "url": "https://x.com/electrickaos_/status/2121256865015214446"
-        },
-        {
-          "title": "Thrive Capital verdoppelt SpaceX-Anteil",
-          "url": "https://x.com/burrytracker/status/2121254336558727236"
         }
       ],
-      "updatedAt": "2026-11-13T16:06:00+01:00"
+      "updatedAt": "2026-11-13T16:08:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 5,
-      "postsCount": 15,
-      "reason": "Tesla: Nach dem Start in den USA rutscht der breite Markt ab, Tesla fällt unter 400 $. Händler schauen auf 388 $ als Stütze. Die Fusionshoffnung bleibt das Hauptthema.",
+      "score": 0,
+      "postsCount": 20,
+      "reason": "Tesla: Vorbörslich über 400 $, jetzt um 390 $. Große Konten melden Angst um KI-Aktien und Zinsen, Tech wird breit abverkauft. Die Fusionshoffnung bleibt Thema.",
       "sources": [
         {
-          "title": "Starker Abverkauf am Markt",
-          "url": "https://x.com/MentoviaX/status/2121257735631106522"
+          "title": "Märkte kippen schnell",
+          "url": "https://x.com/squawksquare/status/2121257988229067089"
         },
         {
-          "title": "Marken: 388 $ Stütze, 404 $ Widerstand",
-          "url": "https://x.com/SuperMariossss/status/2121257179915420040"
+          "title": "Tech-Abverkauf zum Start",
+          "url": "https://x.com/TheBronxViking/status/2121257929647247433"
         },
         {
-          "title": "Fusion: Rechnung zum Tauschverhältnis",
-          "url": "https://x.com/Tesla_Analyst/status/2121254309379600686"
+          "title": "Von über 400 $ auf rund 390 $",
+          "url": "https://x.com/GorillaWing/status/2121258080876818803"
         }
       ],
-      "updatedAt": "2026-11-13T16:06:00+01:00"
+      "updatedAt": "2026-11-13T16:08:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
         }
       ],
-      "updatedAt": "2026-11-13T16:06:00+01:00"
+      "updatedAt": "2026-11-13T16:08:00+01:00"
     }
   }
 }
