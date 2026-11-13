@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T13:58:00+01:00",
+  "updatedAt": "2026-11-13T14:14:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
+      "score": 45,
       "postsCount": 15,
-      "reason": "SpaceX: Große News-Accounts berichten über den geplanten Doppel-Fang bei Flug 15 heute ab 23:45 Uhr. Kritiker verweisen auf hohe Ausgaben und die noch fehlende Freigabe.",
+      "reason": "SpaceX: Vorbörslich leicht im Plus, alle warten auf Flug 15 heute ab 23:45 Uhr. Geteilt wird ein Morgan-Stanley-Kursziel von 300 $ und der schnelle Bau von 210 MW Rechenzentren.",
       "sources": [
         {
-          "title": "Frank Curzio: Doppel-Fang heute",
-          "url": "https://x.com/FrankCurzio/status/2121224474121134133"
+          "title": "SPCX-Überblick vor Börsenstart",
+          "url": "https://x.com/spcxGOD/status/2121228172096147678"
         },
         {
-          "title": "Open Outcrier: SPCX vorbörslich +0,2 %",
-          "url": "https://x.com/OpenOutcrier/status/2121225570742685870"
+          "title": "Morgan Stanley: Kursziel 300 $",
+          "url": "https://x.com/semodough/status/2121229469348495716"
         },
         {
-          "title": "Kritik: Investitionen höher als Umsatz",
-          "url": "https://x.com/Investablefutur/status/2121223741044826547"
+          "title": "210 MW in 91 Tagen gebaut",
+          "url": "https://x.com/aktien_max/status/2121225835298296294"
         }
       ],
-      "updatedAt": "2026-11-13T13:58:00+01:00"
+      "updatedAt": "2026-11-13T14:14:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 15,
       "postsCount": 15,
-      "reason": "Tesla: Fusion mit SpaceX bleibt Hauptthema, vorbörslich +0,5 %. Gegenwind: Texas' künftiger Justizminister kündigt strenge Prüfung an, manche sehen keinen Aufschlag für Tesla.",
+      "reason": "Tesla: Vorbörslich knapp unter 400 $, Fusion bleibt Thema, Texas will genau prüfen. Florida wirbt um den Firmensitz. Das günstigste Model Y AWD ist aus dem US-Shop verschwunden.",
       "sources": [
         {
-          "title": "Open Outcrier: Fusionsgespräche",
-          "url": "https://x.com/OpenOutcrier/status/2121225478103040381"
+          "title": "Texas-Prüfung: Reaktionen",
+          "url": "https://x.com/MadScientistBTC/status/2121226912890839169"
         },
         {
-          "title": "Texas will Deal streng prüfen",
-          "url": "https://x.com/LKPreserve/status/2121221198105464860"
+          "title": "Florida wirbt um Tesla-Sitz",
+          "url": "https://x.com/SuperMariossss/status/2121226053163303148"
         },
         {
-          "title": "Kein automatischer Aufschlag für Tesla",
-          "url": "https://x.com/SeeYouAt10X/status/2121219970181021803"
+          "title": "Model Y AWD für 41.990 $ entfernt",
+          "url": "https://x.com/MarketPulse369/status/2121228366455988596"
         }
       ],
-      "updatedAt": "2026-11-13T13:58:00+01:00"
+      "updatedAt": "2026-11-13T14:14:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/marketsday/status/2121221847383777779"
         }
       ],
-      "updatedAt": "2026-11-13T13:58:00+01:00"
+      "updatedAt": "2026-11-13T14:14:00+01:00"
     }
   }
 }
