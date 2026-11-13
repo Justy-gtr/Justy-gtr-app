@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T14:14:00+01:00",
+  "updatedAt": "2026-11-13T14:24:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 45,
-      "postsCount": 15,
-      "reason": "SpaceX: Vorbörslich leicht im Plus, alle warten auf Flug 15 heute ab 23:45 Uhr. Geteilt wird ein Morgan-Stanley-Kursziel von 300 $ und der schnelle Bau von 210 MW Rechenzentren.",
+      "score": 40,
+      "postsCount": 12,
+      "reason": "SpaceX: Viel Vorfreude auf den Doppel-Fang bei Flug 15 heute ab 23:45 Uhr, auch große News-Accounts berichten. Gegenstimme: Morningstar sieht den fairen Wert nur bei 70 $.",
       "sources": [
         {
-          "title": "SPCX-Überblick vor Börsenstart",
-          "url": "https://x.com/spcxGOD/status/2121228172096147678"
+          "title": "SpacBobby: Erster Starship-Fang heute",
+          "url": "https://x.com/SpacBobby/status/2121230212583305382"
         },
         {
-          "title": "Morgan Stanley: Kursziel 300 $",
-          "url": "https://x.com/semodough/status/2121229469348495716"
+          "title": "Fusion: wahrscheinliche Bedingungen",
+          "url": "https://x.com/sspencer_smb/status/2121230101597548864"
         },
         {
-          "title": "210 MW in 91 Tagen gebaut",
-          "url": "https://x.com/aktien_max/status/2121225835298296294"
+          "title": "Morningstar: fairer Wert 70 $",
+          "url": "https://x.com/ThomasWalkr6969/status/2121231087712206881"
         }
       ],
-      "updatedAt": "2026-11-13T14:14:00+01:00"
+      "updatedAt": "2026-11-13T14:24:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 15,
-      "postsCount": 15,
-      "reason": "Tesla: Vorbörslich knapp unter 400 $, Fusion bleibt Thema, Texas will genau prüfen. Florida wirbt um den Firmensitz. Das günstigste Model Y AWD ist aus dem US-Shop verschwunden.",
+      "score": 20,
+      "postsCount": 12,
+      "reason": "Tesla: Laut zerohedge vorbörslich rund +1 %. Herbert Ong teilt Floridas Einladung für den Firmensitz. Kritik am teureren Model Y AWD, Fusion bleibt Thema.",
       "sources": [
         {
-          "title": "Texas-Prüfung: Reaktionen",
-          "url": "https://x.com/MadScientistBTC/status/2121226912890839169"
+          "title": "zerohedge: Tesla vorbörslich +1 %",
+          "url": "https://x.com/zerohedge/status/2121231704077500624"
         },
         {
-          "title": "Florida wirbt um Tesla-Sitz",
-          "url": "https://x.com/SuperMariossss/status/2121226053163303148"
+          "title": "Herbert Ong: Florida lädt Tesla ein",
+          "url": "https://x.com/herbertong/status/2121231969300464123"
         },
         {
-          "title": "Model Y AWD für 41.990 $ entfernt",
-          "url": "https://x.com/MarketPulse369/status/2121228366455988596"
+          "title": "Model Y AWD jetzt 8.000 $ teurer",
+          "url": "https://x.com/ShortingIsFun/status/2121232021259538854"
         }
       ],
-      "updatedAt": "2026-11-13T14:14:00+01:00"
+      "updatedAt": "2026-11-13T14:24:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/marketsday/status/2121221847383777779"
         }
       ],
-      "updatedAt": "2026-11-13T14:14:00+01:00"
+      "updatedAt": "2026-11-13T14:24:00+01:00"
     }
   }
 }
