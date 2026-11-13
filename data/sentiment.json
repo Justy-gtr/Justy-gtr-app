@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T08:59:00+01:00",
+  "updatedAt": "2026-11-13T09:05:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
       "postsCount": 20,
-      "reason": "SpaceX: Fast alle reden über eine mögliche Fusion mit Tesla, Ankündigung vielleicht schon im Dezember. Dazu Starship Flug 15 heute Nacht, einige warnen vor einem Fehlschlag.",
+      "reason": "SpaceX: Starship Flug 15 heute ab 23:45 Uhr mit erstem Doppel-Fang ist Hauptthema, FAA-Freigabe offen. Dazu viel Gerede über die Fusion mit Tesla.",
       "sources": [
         {
-          "title": "Fusion SpaceX/Tesla im Dezember?",
-          "url": "https://x.com/SuperMariossss/status/2121123940974129598"
+          "title": "Wie viel Starlink passt auf Starship",
+          "url": "https://x.com/spcxGOD/status/2121143527627202656"
         },
         {
-          "title": "Panke: Morgenüberblick SpaceX",
-          "url": "https://x.com/spcxGOD/status/2121121381123346461"
+          "title": "Flug 15 heute, Fusion im Dezember?",
+          "url": "https://x.com/AsLongAslCan/status/2121139566228685096"
         },
         {
-          "title": "Skepsis vor Flug 15",
-          "url": "https://x.com/Bernd_Kaiser_BD/status/2121108294508966312"
+          "title": "Rechnung zur Fusion",
+          "url": "https://x.com/Ly10255315/status/2121147218715410741"
         }
       ],
-      "updatedAt": "2026-11-13T08:59:00+01:00"
+      "updatedAt": "2026-11-13T09:05:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 12,
-      "reason": "Tesla: Fusion mit SpaceX bleibt Hauptthema, vorbörslich fast 3 % im Plus. Das Robotaxi fährt jetzt rund um die Uhr. Einige fragen nach dem Aufschlag für Aktionäre.",
+      "score": 20,
+      "postsCount": 20,
+      "reason": "Tesla: Fusion mit SpaceX bleibt Thema Nummer eins, offen ist das Umtauschverhältnis. Einige nennen die Aktie im Vergleich zu Toyota zu teuer.",
       "sources": [
         {
-          "title": "Tesla fast +3 % vorbörslich",
-          "url": "https://x.com/Blynexex/status/2121137894077194378"
+          "title": "Fusion schon im Dezember?",
+          "url": "https://x.com/dukethefifthh/status/2121145990216290546"
         },
         {
-          "title": "Robotaxi jetzt rund um die Uhr",
-          "url": "https://x.com/IvoPan145365/status/2121136209154146532"
+          "title": "Tesla-Finanzierung & Lieferzeiten",
+          "url": "https://x.com/RonnyGolisch/status/2121145287842386251"
         },
         {
-          "title": "Ohne Aufschlag kein Ja",
-          "url": "https://x.com/alexmedin1/status/2121114443669266557"
+          "title": "Tesla oder Toyota?",
+          "url": "https://x.com/meqiri_official/status/2121135984121426073"
         }
       ],
-      "updatedAt": "2026-11-13T08:59:00+01:00"
+      "updatedAt": "2026-11-13T09:05:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 40,
-      "postsCount": 20,
-      "reason": "Rocket Lab: Vorfreude auf den 100. Electron-Start am Samstag, dazu bestanden alle acht Lightning-Satelliten die ersten Tests. Wenig Kritik.",
+      "postsCount": 4,
+      "reason": "Rocket Lab: Wenige neue Beiträge. Vorfreude auf den 100. Electron-Start Samstag 06:30 Uhr, Lob für Peter Becks Fragerunde. Kaum Kritik.",
       "sources": [
         {
           "title": "100. Electron-Start",
-          "url": "https://x.com/pledisme/status/2121103700307353614"
+          "url": "https://x.com/matiere/status/2121148168180322627"
         },
         {
-          "title": "Lightning-Satelliten getestet",
-          "url": "https://x.com/Bettybronxton/status/2121113864704049270"
+          "title": "Lob für Peter Beck",
+          "url": "https://x.com/HildaBrunnn/status/2121140665765834990"
         },
         {
-          "title": "Streit Iridium/SpaceX",
-          "url": "https://x.com/RCapitalX/status/2121110315974947198"
+          "title": "Starts heute",
+          "url": "https://x.com/theSpacecyborg/status/2121137948926390662"
         }
       ],
-      "updatedAt": "2026-11-13T08:59:00+01:00"
+      "updatedAt": "2026-11-13T09:05:00+01:00"
     }
   }
 }
