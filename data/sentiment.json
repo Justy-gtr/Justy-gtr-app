@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T16:31:00+01:00",
+  "updatedAt": "2026-11-13T16:40:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -22,28 +22,28 @@
           "url": "https://x.com/DarkFlowAlert/status/2121261665328980250"
         }
       ],
-      "updatedAt": "2026-11-13T16:31:00+01:00"
+      "updatedAt": "2026-11-13T16:40:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": -5,
+      "score": -10,
       "postsCount": 25,
-      "reason": "Tesla: Um 394 $, Tech wird breit abverkauft. Viel Streit über die SpaceX-Fusion: Manche meinen, der Aufschlag ist schon im Kurs, andere sehen Tesla-Aktionäre als Gewinner.",
+      "reason": "Tesla: Zum Start bei 404 $, jetzt rund -2 % bei 388 $. Steigende Zinsen drücken auf Tech. Bei der SpaceX-Fusion streiten Fans und Skeptiker über den Aufschlag.",
       "sources": [
+        {
+          "title": "Tesla dreht ins Minus, Zinsen steigen",
+          "url": "https://x.com/RandyWKirk1/status/2121266680404037846"
+        },
         {
           "title": "Aufschlag schon im Kurs?",
           "url": "https://x.com/MirageWL8/status/2121263782366527742"
-        },
-        {
-          "title": "Tech-Abverkauf zum Start",
-          "url": "https://x.com/TheBronxViking/status/2121257929647247433"
         },
         {
           "title": "Aufschlag für Tesla verwässert SpaceX",
           "url": "https://x.com/TheFiscalNexus/status/2121263667073503469"
         }
       ],
-      "updatedAt": "2026-11-13T16:31:00+01:00"
+      "updatedAt": "2026-11-13T16:40:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
         }
       ],
-      "updatedAt": "2026-11-13T16:31:00+01:00"
+      "updatedAt": "2026-11-13T16:40:00+01:00"
     }
   }
 }
