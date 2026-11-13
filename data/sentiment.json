@@ -1,12 +1,12 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T16:08:00+01:00",
+  "updatedAt": "2026-11-13T16:12:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 20,
+      "score": 25,
+      "postsCount": 25,
       "reason": "SpaceX: Der Markt rutscht ab, SpaceX fällt unter das Tief vor Börsenstart. Trotzdem überwiegt die Vorfreude auf den Doppel-Fang bei Flug 15. Die FAA-Freigabe fehlt noch.",
       "sources": [
         {
@@ -22,13 +22,13 @@
           "url": "https://x.com/electrickaos_/status/2121256865015214446"
         }
       ],
-      "updatedAt": "2026-11-13T16:08:00+01:00"
+      "updatedAt": "2026-11-13T16:12:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 0,
-      "postsCount": 20,
-      "reason": "Tesla: Vorbörslich über 400 $, jetzt um 390 $. Große Konten melden Angst um KI-Aktien und Zinsen, Tech wird breit abverkauft. Die Fusionshoffnung bleibt Thema.",
+      "score": -5,
+      "postsCount": 25,
+      "reason": "Tesla: Vorbörslich über 400 $, dann um 390 $. Händler sehen die 388-$-Marke wackeln, Tech wird breit abverkauft. Bei der SpaceX-Fusion streiten sich Fans und Skeptiker.",
       "sources": [
         {
           "title": "Märkte kippen schnell",
@@ -43,7 +43,7 @@
           "url": "https://x.com/GorillaWing/status/2121258080876818803"
         }
       ],
-      "updatedAt": "2026-11-13T16:08:00+01:00"
+      "updatedAt": "2026-11-13T16:12:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
         }
       ],
-      "updatedAt": "2026-11-13T16:08:00+01:00"
+      "updatedAt": "2026-11-13T16:12:00+01:00"
     }
   }
 }
