@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T15:46:00+01:00",
+  "updatedAt": "2026-11-13T15:51:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,28 +22,28 @@
           "url": "https://x.com/theSpacecyborg/status/2121248348023714235"
         }
       ],
-      "updatedAt": "2026-11-13T15:46:00+01:00"
+      "updatedAt": "2026-11-13T15:51:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 25,
+      "score": 20,
       "postsCount": 20,
-      "reason": "Tesla: Vorbörslich wieder über 400 $, rund +15 % in einer Woche. Große Konten sehen Aufwärtstrend und reden über die SpaceX-Fusion. Gegenwind: Texas will den Deal streng prüfen.",
+      "reason": "Tesla: Nach +15 % in einer Woche zur US-Eröffnung leicht im Minus um 394 $. Viele reden über die SpaceX-Fusion. Gegenwind: Texas will den Deal streng prüfen.",
       "sources": [
         {
           "title": "Bloomberg: Fusion schon im Dezember?",
           "url": "https://x.com/Themachac/status/2121237752964649101"
         },
         {
-          "title": "Wieder über 400 $, Aufwärtstrend",
-          "url": "https://x.com/TheProfInvestor/status/2121244216018026860"
+          "title": "Eröffnung bei 393,80 $",
+          "url": "https://x.com/Stop_Loss1/status/2121253126317465832"
         },
         {
           "title": "Texas bedroht Fusion",
           "url": "https://x.com/viaNexusHQ/status/2121235103829385372"
         }
       ],
-      "updatedAt": "2026-11-13T15:46:00+01:00"
+      "updatedAt": "2026-11-13T15:51:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
         }
       ],
-      "updatedAt": "2026-11-13T15:46:00+01:00"
+      "updatedAt": "2026-11-13T15:51:00+01:00"
     }
   }
 }
