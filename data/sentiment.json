@@ -1,56 +1,60 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T16:00:00+01:00",
+  "updatedAt": "2026-11-13T16:06:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 50,
-      "postsCount": 14,
-      "reason": "SpaceX: Großes Thema ist, dass Thrive Capital seinen SpaceX-Anteil mehr als verdoppelt hat. Dazu Vorfreude auf den Doppel-Fang bei Flug 15. Die FAA-Freigabe fehlt noch.",
+      "postsCount": 15,
+      "reason": "SpaceX: Analysten von KeyBanc und Morgan Stanley nennen Flug 15 einen wichtigen Wendepunkt, falls der Doppel-Fang klappt. Thrive Capital hat aufgestockt. FAA-Freigabe fehlt.",
       "sources": [
+        {
+          "title": "Morgan Stanley: Flug 15 unterschätzt",
+          "url": "https://x.com/RocketTerminal/status/2121256774749532362"
+        },
+        {
+          "title": "KeyBanc: Wendepunkt für Starship",
+          "url": "https://x.com/electrickaos_/status/2121256865015214446"
+        },
         {
           "title": "Thrive Capital verdoppelt SpaceX-Anteil",
           "url": "https://x.com/burrytracker/status/2121254336558727236"
-        },
-        {
-          "title": "WOLF: Erster Fang des Schiffs geplant",
-          "url": "https://x.com/WOLF_Financial/status/2121251874707837424"
-        },
-        {
-          "title": "Flug 15 bereit, wartet auf FAA",
-          "url": "https://x.com/Ly10255315/status/2121254367596544408"
         }
       ],
-      "updatedAt": "2026-11-13T16:00:00+01:00"
+      "updatedAt": "2026-11-13T16:06:00+01:00"
     },
     "TSLA": {
-      "mood": "gut",
-      "score": 20,
-      "postsCount": 14,
-      "reason": "Tesla: Pendelt nach der US-Eröffnung um 399 bis 400 $. Viele Optionshändler schauen auf die 400er-Marke. Dazu Rechnungen zum Tesla-Aufschlag bei einer SpaceX-Fusion.",
+      "mood": "gemischt",
+      "score": 5,
+      "postsCount": 15,
+      "reason": "Tesla: Nach dem Start in den USA rutscht der breite Markt ab, Tesla fällt unter 400 $. Händler schauen auf 388 $ als Stütze. Die Fusionshoffnung bleibt das Hauptthema.",
       "sources": [
         {
-          "title": "Viele Optionen bei 400 $",
-          "url": "https://x.com/Options_Master1/status/2121254078512832583"
+          "title": "Starker Abverkauf am Markt",
+          "url": "https://x.com/MentoviaX/status/2121257735631106522"
+        },
+        {
+          "title": "Marken: 388 $ Stütze, 404 $ Widerstand",
+          "url": "https://x.com/SuperMariossss/status/2121257179915420040"
         },
         {
           "title": "Fusion: Rechnung zum Tauschverhältnis",
           "url": "https://x.com/Tesla_Analyst/status/2121254309379600686"
-        },
-        {
-          "title": "Relative Stärke trotz schwachem Markt",
-          "url": "https://x.com/wickedstocks/status/2121243436741267760"
         }
       ],
-      "updatedAt": "2026-11-13T16:00:00+01:00"
+      "updatedAt": "2026-11-13T16:06:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 5,
-      "postsCount": 15,
-      "reason": "Rocket Lab: Zur US-Eröffnung rund 4 % im Minus bei 61 $, die ganze Raumfahrt-Branche ist rot. Manche sind genervt. Positiv bleiben die Globalstar-Tests und Start 100.",
+      "score": 10,
+      "postsCount": 12,
+      "reason": "Rocket Lab: Leicht im Minus mit der schwachen Raumfahrt-Branche, viel Spam. Positiv: Bericht über 150 Mio. $ für Ersatz-Mitflüge, dazu Globalstar-Tests und Start 100.",
       "sources": [
+        {
+          "title": "150 Mio. $ für Ersatz-Mitflüge",
+          "url": "https://x.com/vnaylon/status/2121257255819706708"
+        },
         {
           "title": "Raumfahrt-Aktien zum Start im Minus",
           "url": "https://x.com/theSpacecyborg/status/2121255956541821359"
@@ -58,13 +62,9 @@
         {
           "title": "Globalstar-Satelliten bestehen Tests",
           "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
-        },
-        {
-          "title": "Generalprobe für Start 100 geschafft",
-          "url": "https://x.com/DaveMorgenscmu/status/2121248627163271208"
         }
       ],
-      "updatedAt": "2026-11-13T16:00:00+01:00"
+      "updatedAt": "2026-11-13T16:06:00+01:00"
     }
   }
 }
