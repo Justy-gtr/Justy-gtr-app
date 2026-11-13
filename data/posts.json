@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-13T16:05:00+01:00",
+  "asOf": "2026-11-13T18:05:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,91 @@
     }
   },
   "posts": [
+    {
+      "id": "post-spacex-2121280048871473281",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-13T17:32:29+01:00",
+      "summaryDe": "SpaceX: „Boca Chica Beach ist nicht zu verkaufen, und SpaceX versucht nicht, ihn zu kaufen.“ Der Strand sei wichtig für das Rio Grande Valley, SpaceX investiere viel, um ihn zu erhalten. Im verlinkten Text: Es geht um rund 1.200 Acres Land um das Startgelände, davon etwa 600 dauerhaft geschützt; SpaceX bietet „zig Millionen Dollar“ gegen die Stranderosion an.",
+      "originalText": "Boca Chica Beach is not for sale, and SpaceX isn’t attempting to buy it. The beach is an important part of the Rio Grande Valley community, and SpaceX is investing substantial resources to preserve and improve it",
+      "url": "https://x.com/SpaceX/status/2121280048871473281",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX: „Boca Chica Beach is not for sale“ (13.11., 17:32)",
+          "url": "https://x.com/SpaceX/status/2121280048871473281"
+        },
+        {
+          "title": "SpaceX: Restoring Boca Chica Beach (13.11.)",
+          "url": "https://www.spacex.com/updates"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121268692453343344",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-13T16:47:22+01:00",
+      "summaryDe": "Musk: „Und denkt dran …“ – dazu ein Foto von Ship 42 an der Startrampe mit der Aufschrift „Don’t Panic“, einem Zitat aus „Per Anhalter durch die Galaxis“. Flight 15 ist für heute 23:45 Berlin geplant, die FAA-Lizenz ist noch nicht veröffentlicht.",
+      "originalText": "And remember …",
+      "url": "https://x.com/elonmusk/status/2121268692453343344",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (13.11., 16:47)",
+          "url": "https://x.com/elonmusk/status/2121268692453343344"
+        },
+        {
+          "title": "Space.com-Liveblog: „Don’t Panic“ auf Ship 42",
+          "url": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-13-2026-starship-first-double-landing-attempt"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15 (pending regulatory approval)",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121267716023546027",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-13T16:43:29+01:00",
+      "summaryDe": "Musk: „Starlink“. Er zitiert einen Beitrag, laut dem United-Airlines-Chef Scott Kirby Starlink-WLAN den größten Wettbewerbsvorteil seiner Airline in 100 Jahren nennt: WLAN sei der wichtigste Grund, warum Kunden einen Flug wählen.",
+      "originalText": "Starlink",
+      "url": "https://x.com/elonmusk/status/2121267716023546027",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (13.11., 16:43)",
+          "url": "https://x.com/elonmusk/status/2121267716023546027"
+        },
+        {
+          "title": "Zitierter Beitrag zum United-Interview (13.11., 15:25)",
+          "url": "https://x.com/i/status/2121248130620346584"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2121250804447445203",
       "account": "@elonmusk",
@@ -7177,5 +7262,5 @@
       ]
     }
   ],
-  "notes": "13.11. 16:05: Drei neue Musk-Posts: „Starship 42 preparing for launch“, „Hmm“ zur Kritik an Nvidias Aufsichtsrat wegen Huangs Abgang und „Grok is a straight shooter“ (X-Abfrage). Keine neuen Beiträge der Firmenkonten."
+  "notes": "13.11. 18:05: Neu @SpaceX zu Boca Chica („Strand nicht zu verkaufen“) und zwei Musk-Posts („And remember …“ mit Foto von Ship 42, „Starlink“ zum United-Interview) (X-Abfrage). Politische Antworten ohne Firmenbezug nicht aufgenommen."
 }
