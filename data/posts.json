@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-14T16:00:00+01:00",
+  "asOf": "2026-11-14T18:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,84 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2121648438144024943",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T17:56:20+01:00",
+      "summaryDe": "Musk erklärt den verlorenen Booster: Die Triebwerke liefen auf diesem Flug leicht unter Plan, deshalb reichte der Treibstoff nicht (grüne Flamme = verbranntes Kupfer). Abhilfe: Raptor V3.2 und rund eine Sekunde früheres Abschalten. Der Verlust ändere den Zeitplan zu vielen wiederverwendbaren Flügen nicht.",
+      "originalText": "Slight underperformance of engines on this flight is the reason. […] this booster loss does not change our timeline to reach high volume, fully reusable Starship flights.",
+      "url": "https://x.com/elonmusk/status/2121648438144024943",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 17:56): leichte Minderleistung der Triebwerke",
+          "url": "https://x.com/elonmusk/status/2121648438144024943"
+        },
+        {
+          "title": "@elonmusk auf X (14.11., 16:43): Booster hatte etwas zu wenig Treibstoff",
+          "url": "https://x.com/elonmusk/status/2121630197611208994"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121640541221785669",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T17:24:57+01:00",
+      "summaryDe": "Musk: Am Ende werde SpaceX über 100.000 Kommunikationssatelliten haben, meist der Generationen V4 und V5; gut möglich, dass das System etwa die Hälfte des weltweiten Datenverkehrs trägt.",
+      "originalText": "there will ultimately be over 100k SpaceX communications satellites, most of which will be V4 or V5. Good chance that this system carries about half of global traffic.",
+      "url": "https://x.com/elonmusk/status/2121640541221785669",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 17:24)",
+          "url": "https://x.com/elonmusk/status/2121640541221785669"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2121629656868614213",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-14T16:41:42+01:00",
+      "summaryDe": "SpaceX: Starship gleitet weiter im Orbit, die Rückkehr zum Startplatz sieht heute weiter gut aus. Startplatz und Turm sind „go“ für den Fang (geplant gegen 22:20 Berlin).",
+      "originalText": "Flight 15 Update: Starship coasting in orbit, still looking good for return to launch site today. Pad and tower systems are go for catch.",
+      "url": "https://x.com/SpaceX/status/2121629656868614213",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (14.11., 16:41): Pad und Turm „go“ für den Fang",
+          "url": "https://x.com/SpaceX/status/2121629656868614213"
+        },
+        {
+          "title": "Space.com: Starship Flight 15 Live-Ticker (14.11.)",
+          "url": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-14-2026-starship-first-double-landing-attempt"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2121613402846204253",
       "account": "@elonmusk",
@@ -8244,5 +8322,5 @@
       ]
     }
   ],
-  "notes": "14.11. 16:00: Neu zwei Musk-Posts: Starship absolviert 14 Erdumrundungen vor dem Landeversuch (15:30) und Huangs Nvidia-Lieferverträge seien oft nur per Handschlag geschlossen (15:37). Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @RocketLab, @Peter_J_Beck, @boringcompany seit der letzten Abfrage (X-Abfrage bis 16:00)."
+  "notes": "14.11. 18:00: Neu: SpaceX meldet um 16:41 Pad und Turm „go“ für den Schiffsfang; Musk erklärt den Booster-Verlust mit leicht schwächeren Triebwerken (Zeitplan unverändert) und erwartet über 100.000 SpaceX-Satelliten. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @RocketLab, @Peter_J_Beck, @boringcompany (X-Abfrage bis 18:00)."
 }

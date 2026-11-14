@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-14T16:00:00+01:00",
+  "updatedAt": "2026-11-14T18:00:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 15,
-      "postsCount": 24,
-      "reason": "Viele Halter bleiben nach dem verpatzten Booster-Fang zuversichtlich und warten auf den Schiffsfang; andere klagen, dass die Aktie nach jedem Anstieg wieder fällt.",
+      "score": 20,
+      "postsCount": 25,
+      "reason": "Viele freuen sich auf den Schiffsfang heute Abend, nachdem SpaceX „go“ gemeldet hat; andere fragen, warum die Aktie trotz guter Nachrichten nicht steigt.",
       "sources": [
         {
-          "title": "@pledisme auf X (14.11., 12:32)",
-          "url": "https://x.com/pledisme/status/2121566954058096795"
+          "title": "@spcxGOD auf X (14.11., 17:45)",
+          "url": "https://x.com/spcxGOD/status/2121645593852284992"
         },
         {
-          "title": "@DigitalAssetsUS auf X (14.11., 12:10)",
-          "url": "https://x.com/DigitalAssetsUS/status/2121561456374079982"
+          "title": "@RealMicahLamar auf X (14.11., 17:57)",
+          "url": "https://x.com/RealMicahLamar/status/2121648685209833779"
         },
         {
-          "title": "@JamesRandyThom2 auf X (14.11., 14:41)",
-          "url": "https://x.com/JamesRandyThom2/status/2121599363977969952"
+          "title": "@MsVeilMoney auf X (14.11., 17:53)",
+          "url": "https://x.com/MsVeilMoney/status/2121647685250040208"
         }
       ],
-      "updatedAt": "2026-11-14T16:00:00+01:00"
+      "updatedAt": "2026-11-14T18:00:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 0,
       "postsCount": 24,
-      "reason": "Die Cybercab-Bestellungen kommen gut an, gleichzeitig streiten viele über den Fusionsaufschlag, und einige Skeptiker halten die Aktie für viel zu teuer.",
+      "reason": "Der Cybercab-Verkauf für 29.990 $ und die FSD-Werbung am Times Square kommen gut an; Kritiker halten das Abo von 299 $ im Monat für zu teuer.",
       "sources": [
         {
-          "title": "@pedrosilva auf X (14.11., 14:24)",
-          "url": "https://x.com/pedrosilva/status/2121595202938994719"
+          "title": "@afrikha44 auf X (14.11., 17:51)",
+          "url": "https://x.com/afrikha44/status/2121647094268334344"
         },
         {
-          "title": "@Hazy19L auf X (14.11., 15:31)",
-          "url": "https://x.com/Hazy19L/status/2121611871837135288"
+          "title": "@GerberKawasaki auf X (14.11., 17:53)",
+          "url": "https://x.com/GerberKawasaki/status/2121647686868971827"
         },
         {
-          "title": "@stonkstothe auf X (14.11., 13:16)",
-          "url": "https://x.com/stonkstothe/status/2121578048428392492"
+          "title": "@x_invest1 auf X (14.11., 17:50)",
+          "url": "https://x.com/x_invest1/status/2121646974050918712"
         }
       ],
-      "updatedAt": "2026-11-14T16:00:00+01:00"
+      "updatedAt": "2026-11-14T18:00:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 50,
+      "score": 45,
       "postsCount": 25,
-      "reason": "Der 100. Electron-Start wird weiter gefeiert; viele betonen, dass Umsatz und Auftragsbestand stark gewachsen sind, der Kurs aber auf Vorjahresniveau steht.",
+      "reason": "Der 100. Electron-Start und das Wochenplus von fast 16 % werden gefeiert; einige Trader sehen Raumfahrtwerte aber als Kandidaten für einen Rücksetzer.",
       "sources": [
         {
-          "title": "@ValueSnapShotio auf X (14.11., 14:52)",
-          "url": "https://x.com/ValueSnapShotio/status/2121602047594102862"
+          "title": "@scotto2050 auf X (14.11., 17:45)",
+          "url": "https://x.com/scotto2050/status/2121645603860222011"
         },
         {
-          "title": "@GMGoz1x auf X (14.11., 13:34)",
-          "url": "https://x.com/GMGoz1x/status/2121582532965568533"
+          "title": "@AdrianCInvests auf X (14.11., 17:35)",
+          "url": "https://x.com/AdrianCInvests/status/2121643144760721586"
         },
         {
-          "title": "@SpaceCapX auf X (14.11., 14:52)",
-          "url": "https://x.com/SpaceCapX/status/2121602261579362522"
+          "title": "@LWeisama auf X (14.11., 17:46)",
+          "url": "https://x.com/LWeisama/status/2121645900745637978"
         }
       ],
-      "updatedAt": "2026-11-14T16:00:00+01:00"
+      "updatedAt": "2026-11-14T18:00:00+01:00"
     }
   }
 }
