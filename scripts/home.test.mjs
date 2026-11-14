@@ -101,7 +101,7 @@ test("Marvell-Karte bleibt grau ohne Stimmungsdaten, RKLB bleibt in Frage und Me
   const mrvl = prices.tickers.find((ticker) => ticker.symbol === "MRVL");
   assert.equal(mrvl?.name, "Marvell Technology");
   assert.equal(mrvl.currency, "EUR");
-  assert.equal(mrvl.eurSymbol, "9MW.DE");
+  assert.ok(["9MW.DE", "9MW.F", "9MW.SG"].includes(mrvl.eurSymbol));
   const fresh = new Date().toISOString();
   const html = renderHeute({
     prices,

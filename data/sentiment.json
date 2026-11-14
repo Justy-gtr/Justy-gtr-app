@@ -1,70 +1,71 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-13T16:44:00+01:00",
+  "updatedAt": "2026-11-14T09:30:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 20,
-      "postsCount": 25,
-      "reason": "SpaceX: Nur rund -1 %, hält sich besser als Tesla. Viele sehen Geld vor Flug 15 in SpaceX parken. Manche ärgern sich über Verwässerung durch die Tesla-Fusion.",
+      "score": 10,
+      "postsCount": 24,
+      "reason": "Nach dem abgebrochenen Booster-Fang wetten einige auf fallende Kurse, viele schauen aber schon auf den Schiffsfang am Abend und bleiben zuversichtlich.",
       "sources": [
         {
-          "title": "SpaceX hält sich vor Flug 15",
-          "url": "https://x.com/MentoviaX/status/2121267594711998948"
+          "title": "@TraderGillx auf X (14.11., 05:25)",
+          "url": "https://x.com/TraderGillx/status/2121459582497116467"
         },
         {
-          "title": "Aufschlag für Tesla verwässert SpaceX",
-          "url": "https://x.com/TheFiscalNexus/status/2121263667073503469"
+          "title": "@Boomocjl auf X (14.11., 04:29)",
+          "url": "https://x.com/Boomocjl/status/2121445481515520084"
         },
         {
-          "title": "Flug 15: FAA-Lizenz fehlt noch",
-          "url": "https://x.com/JoshSharp/status/2121262424506388634"
+          "title": "@fynnvestor auf X (14.11., 09:22)",
+          "url": "https://x.com/fynnvestor/status/2121519144688636266"
         }
       ],
-      "updatedAt": "2026-11-13T16:44:00+01:00"
+      "updatedAt": "2026-11-14T09:30:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": -10,
-      "postsCount": 25,
-      "reason": "Tesla: Zum Start bei 404 $, jetzt rund -2 % bei 388 $. Steigende Zinsen drücken auf Tech. Bei der SpaceX-Fusion streiten Fans und Skeptiker über den Aufschlag.",
+      "score": 5,
+      "postsCount": 24,
+      "reason": "Die Cybercab-Bestellungen und Musks Satz, das Abo solle billiger werden, kommen gut an; Skeptiker zweifeln am Fusionsaufschlag und setzen auf fallende Kurse.",
       "sources": [
         {
-          "title": "Tesla dreht ins Minus, Zinsen steigen",
-          "url": "https://x.com/RandyWKirk1/status/2121266680404037846"
+          "title": "@NeoTSX auf X (14.11., 09:41)",
+          "url": "https://x.com/NeoTSX/status/2121523802383499291"
         },
         {
-          "title": "Aufschlag schon im Kurs?",
-          "url": "https://x.com/MirageWL8/status/2121263782366527742"
+          "title": "@MirageWL8 auf X (14.11., 09:25)",
+          "url": "https://x.com/MirageWL8/status/2121519923079815556"
         },
         {
-          "title": "Aufschlag für Tesla verwässert SpaceX",
-          "url": "https://x.com/TheFiscalNexus/status/2121263667073503469"
+          "title": "@WILPOWERTRADES auf X (14.11., 05:12)",
+          "url": "https://x.com/WILPOWERTRADES/status/2121456296469663891"
         }
       ],
-      "updatedAt": "2026-11-13T16:44:00+01:00"
+      "updatedAt": "2026-11-14T09:30:00+01:00"
     },
     "RKLB": {
-      "mood": "gemischt",
-      "score": 10,
-      "postsCount": 12,
-      "reason": "Rocket Lab: Leicht im Minus mit der schwachen Raumfahrt-Branche, viel Spam. Positiv: Bericht über 150 Mio. $ für Ersatz-Mitflüge, dazu Globalstar-Tests und Start 100.",
+      "mood": "gut",
+      "score": 55,
+      "postsCount": 25,
+      "reason": "Der geglückte 100. Electron-Start wird gefeiert, viele loben Peter Beck; Zweifel tauchen kaum auf.",
       "sources": [
         {
-          "title": "150 Mio. $ für Ersatz-Mitflüge",
-          "url": "https://x.com/vnaylon/status/2121257255819706708"
+          "title": "@StockSavvyShay auf X (14.11., 06:34)",
+          "url": "https://x.com/StockSavvyShay/status/2121476849905885514"
         },
         {
-          "title": "Raumfahrt-Aktien zum Start im Minus",
-          "url": "https://x.com/theSpacecyborg/status/2121255956541821359"
+          "title": "@Neil_Shares auf X (14.11., 06:33)",
+          "url": "https://x.com/Neil_Shares/status/2121476671320871035"
         },
         {
-          "title": "Globalstar-Satelliten bestehen Tests",
-          "url": "https://x.com/StockSavvyShay/status/2121241249047081136"
+          "title": "@HKIStrategies auf X (14.11., 07:00)",
+          "url": "https://x.com/HKIStrategies/status/2121483271045542002"
         }
       ],
-      "updatedAt": "2026-11-13T16:44:00+01:00"
+      "updatedAt": "2026-11-14T09:30:00+01:00",
+      "previousMood": "gemischt"
     }
   }
 }

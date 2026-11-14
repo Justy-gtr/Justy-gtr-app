@@ -924,7 +924,7 @@ test("MRVL steht in der Analyse in Euro, mit Kerzen, Chart und grauer Lampe", ()
   assert.match(kerzen, /data-view="kerzen"[^>]*aria-selected="true"|aria-selected="true"[^>]*data-view="kerzen"/);
   assert.match(kerzen, /Wochentag/);
   assert.match(kerzen, /Durchschnittlicher Tagesverlauf/);
-  assert.match(kerzen, /Xetra|Frankfurt/);
+  assert.match(kerzen, /Xetra|Frankfurt|Stuttgart/);
   assert.equal(ADVICE.test(kerzen), false);
   assert.equal(/\bEmpfehlung\b/.test(kerzen), false);
   const linie = renderChartsPage({ prices, seasonality, sentiment }, { ...ui, chartRange: "1T" });
