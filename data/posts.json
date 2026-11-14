@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-14T18:00:00+01:00",
+  "asOf": "2026-11-14T20:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,56 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2121666778308678025",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T19:09:13+01:00",
+      "summaryDe": "Musk (Antwort an Scott Manley, der die Umleitung des Boosters ins Meer richtig fand): Der nächste Booster sei fast flugbereit, ein Verlust von Turm oder Startrampe würde SpaceX aber womöglich 2 bis 3 Monate kosten. Eine Minute vorher: Erste Schlüsse seien oft teilweise falsch, nötig sei die volle Auswertung der Telemetrie.",
+      "originalText": "We have the next booster almost ready for flight, but losing the tower or launch mount would potentially cost us 2 to 3 months",
+      "url": "https://x.com/elonmusk/status/2121666778308678025",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 19:09): Turm-Verlust würde 2 bis 3 Monate kosten",
+          "url": "https://x.com/elonmusk/status/2121666778308678025"
+        },
+        {
+          "title": "@elonmusk auf X (14.11., 19:08): erste Schlüsse oft teilweise falsch",
+          "url": "https://x.com/elonmusk/status/2121666488214204441"
+        }
+      ]
+    },
+    {
+      "id": "post-peter_j_beck-2121656566718103866",
+      "account": "@Peter_J_Beck",
+      "displayName": "Peter Beck",
+      "postedAt": "2026-11-14T18:28:38+01:00",
+      "summaryDe": "Rocket-Lab-Chef Beck dankt NASA-Chef Jared Isaacman für die Glückwünsche zum 100. Electron-Start: „Auf zu 200!“",
+      "originalText": "@NASAAdmin Thanks Jared, on to 200!",
+      "url": "https://x.com/Peter_J_Beck/status/2121656566718103866",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Peter_J_Beck auf X (14.11., 18:28): „on to 200!“",
+          "url": "https://x.com/Peter_J_Beck/status/2121656566718103866"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2121648438144024943",
       "account": "@elonmusk",
@@ -8322,5 +8372,5 @@
       ]
     }
   ],
-  "notes": "14.11. 18:00: Neu: SpaceX meldet um 16:41 Pad und Turm „go“ für den Schiffsfang; Musk erklärt den Booster-Verlust mit leicht schwächeren Triebwerken (Zeitplan unverändert) und erwartet über 100.000 SpaceX-Satelliten. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @RocketLab, @Peter_J_Beck, @boringcompany (X-Abfrage bis 18:00)."
+  "notes": "14.11. 20:00: Neu: Musk – nächster Booster fast flugbereit, ein Turm-Verlust würde 2 bis 3 Monate kosten; erste Schlüsse zur Booster-Panne oft teilweise falsch. Beck: „Auf zu 200!“ Seit 16:41 keine neue Meldung von @SpaceX; keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @RocketLab, @boringcompany (X-Abfrage bis 20:00)."
 }
