@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-14T14:00:00+01:00",
+  "asOf": "2026-11-14T15:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,33 @@
     }
   },
   "posts": [
+    {
+      "id": "post-spacex-2121602376532742611",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-14T14:53:18+01:00",
+      "summaryDe": "SpaceX zeigt ein Video von Starship im Orbit über Afrika. Gut 15 Stunden nach dem Start kreist Ship 42 weiter um die Erde; der Fang am Turm in Starbase ist für 22:17 Berlin geplant.",
+      "originalText": "Starship in orbit over Africa",
+      "url": "https://x.com/SpaceX/status/2121602376532742611",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (14.11., 14:53)",
+          "url": "https://x.com/SpaceX/status/2121602376532742611"
+        },
+        {
+          "title": "Space.com: Starship Flight 15 – Fang gegen 21:17 GMT (14.11.)",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship"
+        }
+      ]
+    },
     {
       "id": "post-peter_j_beck-2121526414587609177",
       "account": "@Peter_J_Beck",
