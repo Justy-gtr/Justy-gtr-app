@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-14T07:30:00+01:00",
+  "asOf": "2026-11-14T08:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,198 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2121502131056177514",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T08:14:58+01:00",
+      "summaryDe": "Musk zeigt ein Foto vom Start einer Starship von Starbase mit dem Satz „Made on Earth by humans“ – von Menschen auf der Erde gebaut.",
+      "originalText": "Made on Earth by humans",
+      "url": "https://x.com/elonmusk/status/2121502131056177514",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 08:14)",
+          "url": "https://x.com/elonmusk/status/2121502131056177514"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2121501709285638267",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-14T08:13:17+01:00",
+      "summaryDe": "Rocket Lab: Dreistellig – Electron hat 100 Starts schneller erreicht als jede andere kommerziell entwickelte Rakete. Über 100 weitere Starts stehen bereits im Auftragsbuch.",
+      "originalText": "Triple digits 💯\n\nElectron has reached 100 launches faster than any commercially developed rocket in history. With another 100+ launches in backlog, we're just getting started.",
+      "url": "https://x.com/RocketLab/status/2121501709285638267",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (14.11., 08:13)",
+          "url": "https://x.com/RocketLab/status/2121501709285638267"
+        },
+        {
+          "title": "Rocket Lab (GlobeNewswire): 100. Electron-Start, Missionserfolg (14.11.)",
+          "url": "https://www.globenewswire.com/news-release/2026/11/14/3403041/0/en/rocket-lab-hits-100-electron-launches-fastest-commercial-rocket-to-reach-the-milestone.html"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121501324663832873",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T08:11:46+01:00",
+      "summaryDe": "Musk: Künftige Starship-Flüge sollen über 50 Terabit pro Sekunde Starlink-Kapazität in den Orbit bringen. Er zitiert dazu einen Post, nach dem die 26 Starlink-Satelliten von Flight 15 bis zu 26 Terabit Kapazität hinzufügen.",
+      "originalText": "Future Starship flights will carry over 50 Tb/s of Starlink bandwidth to orbit",
+      "url": "https://x.com/elonmusk/status/2121501324663832873",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 08:11)",
+          "url": "https://x.com/elonmusk/status/2121501324663832873"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121498745007469015",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T08:01:31+01:00",
+      "summaryDe": "Musk spottet über Nvidias Verwaltungsrat: Auf einen Post zu den Lebensläufen der Board-Mitglieder antwortet er „Das ist der Verwaltungsrat, der über das einst wertvollste Unternehmen der Welt entscheidet!?“ mit einem Facepalm-Emoji.",
+      "originalText": "This is the board making decisions about what used to be the most valuable company on Earth!?\n\n🤦‍♂️",
+      "url": "https://x.com/elonmusk/status/2121498745007469015",
+      "tickers": [
+        "MRVL"
+      ],
+      "companies": [
+        "Nvidia"
+      ],
+      "sentiment": "negativ",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 08:01)",
+          "url": "https://x.com/elonmusk/status/2121498745007469015"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121493331528056887",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T07:40:00+01:00",
+      "summaryDe": "Musk zitiert eine Liste aller 15 Starship-Starts seit April 2023 mit „Erst langsam, dann rasante Beschleunigung“ – ein Hinweis auf die geplante höhere Startfrequenz.",
+      "originalText": "Slowly at first, then rapid acceleration",
+      "url": "https://x.com/elonmusk/status/2121493331528056887",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 07:40)",
+          "url": "https://x.com/elonmusk/status/2121493331528056887"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121492849002987844",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T07:38:05+01:00",
+      "summaryDe": "Musk zum Cybercab: Es werde landesweit verfügbar, sobald die Zulassungen da sind. Die Monatsgebühr von 299 $ sei aber zu hoch und solle wie FSD plus Konnektivität bei anderen Tesla-Modellen eher bei rund 115 $ liegen. Einen neuen Preis hat Tesla noch nicht veröffentlicht.",
+      "originalText": "It will be available nationwide, as we receive regulatory approval. \n\nBut the monthly fee is too high. Should match the cost of Tesla FSD and connectivity for other models, which is more like ~$115/month.",
+      "url": "https://x.com/elonmusk/status/2121492849002987844",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 07:38)",
+          "url": "https://x.com/elonmusk/status/2121492849002987844"
+        },
+        {
+          "title": "Electronmotion: Musk – 299 $ Monatsgebühr zu hoch, eher 115 $ (Update 14.11.)",
+          "url": "https://electronmotion.com/2026/11/13/tesla-cybercab-personal-purchase/"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2121490530316272044",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-14T07:28:52+01:00",
+      "summaryDe": "Rocket Lab zum 100. Start mit einem Video von Gründer Peter Beck: Mehr als 55 eigene Raumfahrzeuge sind in Entwicklung und Bau, über 1 Mrd. $ an Starts für Electron, HASTE und Neutron sind gebucht; Rocket Lab will auch eine eigene Satellitenkonstellation betreiben.",
+      "originalText": "From Flight 1 to 100, our Founder and CEO @peter_j_beck has had many memorable moments in nearly a decade of launches. [...] There's 55+ Rocket Lab spacecraft in development and production, multiple missions operating on orbit today, and $1b+ worth of launches booked across all three of our rocket programs - Electron, HASTE and Neutron. [...]",
+      "url": "https://x.com/RocketLab/status/2121490530316272044",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (14.11., 07:28)",
+          "url": "https://x.com/RocketLab/status/2121490530316272044"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121489571213168758",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T07:25:03+01:00",
+      "summaryDe": "Musk: Starship umrundet die Erde gerade etwa alle 90 Minuten. Der Fang am Turm ist für Sa gegen 22:17 Berlin geplant.",
+      "originalText": "Starship is traveling around the world every ~90 minutes right now",
+      "url": "https://x.com/elonmusk/status/2121489571213168758",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 07:25)",
+          "url": "https://x.com/elonmusk/status/2121489571213168758"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2121489252072693925",
       "account": "@elonmusk",
@@ -7948,5 +8140,5 @@
       ]
     }
   ],
-  "notes": "14.11. 07:30: Neu: @RocketLab zum 100. Electron-Start (Fakten, Abheben 06:31, Kick Stage im Transferorbit, Satellit ausgesetzt), @SpaceX (Schiff und Hitzeschild gesund, 06:44), Musk („So far, so good for the ship“, 07:23). Kurze Musk-Antworten ohne Inhalt („Yeah“, „There will be many agents“) nicht aufgenommen. Countdown-Hinweise und Livestream-Links nicht aufgenommen. Keine neuen Posts von @Tesla, @xai, @neuralink, @boringcompany seit 04:30 (X-Abfrage)."
+  "notes": "14.11. 08:30: Neu: Musk zum Cybercab-Abo (299 $ zu hoch, eher ~115 $, 07:38), zu Starship (Erdumrundung alle ~90 Minuten, „Slowly at first, then rapid acceleration“, über 50 Tb/s Starlink-Kapazität pro Flug, Startfoto) und zu Nvidias Verwaltungsrat (08:01); @RocketLab mit Beck-Video und „Triple digits“ (08:13). Kurze Musk-Antworten nur mit Emoji oder „True“, Spott über MKBHD („He’s a chicken“) nicht aufgenommen. Keine neuen Posts von @SpaceX, @Tesla, @xai, @neuralink, @boringcompany seit 07:30 (X-Abfrage)."
 }

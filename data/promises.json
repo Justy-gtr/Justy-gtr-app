@@ -182,7 +182,7 @@
       "targetDate": "2026-12-31",
       "status": "offen",
       "delay": null,
-      "note": "14.11.: Tesla lädt ausgewählte Kunden zur Cybercab-Bestellung ein (29.990 $ plus 299 $ Abo im Monat). Die Bestellseite nennt Dezember 2026 in Austin als voraussichtliche Auslieferung (Electrek, Reuters). Noch nicht gehalten, erst wenn das erste Auto beim Kunden ist.",
+      "note": "14.11.: Tesla lädt ausgewählte Kunden zur Cybercab-Bestellung ein (29.990 $ plus 299 $ Abo im Monat). Die Bestellseite nennt Dezember 2026 in Austin als voraussichtliche Auslieferung (Electrek, Reuters). Noch nicht gehalten, erst wenn das erste Auto beim Kunden ist. 14.11. 07:38: Musk nennt das Pflicht-Abo von 299 $ im Monat „zu hoch“, es solle eher bei rund 115 $ liegen; landesweit verfügbar werde das Cybercab mit den Zulassungen (Musk auf X). Einen neuen Preis hat Tesla noch nicht veröffentlicht (Electronmotion).",
       "example": false,
       "sources": [
         {
@@ -200,6 +200,14 @@
         {
           "title": "Reuters via TradingView: Tesla lädt ausgewählte Kunden zum Cybercab-Kauf ein (13.11.)",
           "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46U2HB:0-tesla-robotaxi-select-customers-are-now-being-invited-to-purchase-cybercab-for-personal-use/"
+        },
+        {
+          "title": "@elonmusk auf X (Cybercab-Abo zu teuer, ~115 $, 14.11., 07:38)",
+          "url": "https://x.com/elonmusk/status/2121492849002987844"
+        },
+        {
+          "title": "Electronmotion: Musk – 299 $ Monatsgebühr zu hoch, eher 115 $ (Update 14.11.)",
+          "url": "https://electronmotion.com/2026/11/13/tesla-cybercab-personal-purchase/"
         }
       ]
     },

@@ -29,7 +29,7 @@ test("Produktionszeilen kommen aus den Punkten, nicht aus festem Text", () => {
   assert.equal(productionValue(series("starlink_users"), production.asOf).unit, "Mio.");
   assert.equal(productionCaption(series("starlink_users")), "+89 % zum Vorjahr · 7,2 → 13,6 Mio.");
   assert.equal(productionCaption(series("spacex_launches_2026")), "kumuliert bis Ende Q3 · Vorjahr gleiche Zeit 128");
-  assert.equal(productionCaption(series("starship_launches")), "2023–2026: 2 · 4 · 5 · 3 · Flight 12–14 bisher");
+  assert.equal(productionCaption(series("starship_launches")), "2023–2026: 2 · 4 · 5 · 4 · Flight 12–15 bisher");
   assert.equal(productionValue(series("starship_launches"), production.asOf).unit, "in 2026");
   assert.equal(productionCaption(series("tesla_deliveries")), "+1,3 % zum Vorquartal · Q2 war 480.126");
   assert.equal(productionValue(series("tesla_deliveries"), production.asOf).text, "486.532");
@@ -37,7 +37,7 @@ test("Produktionszeilen kommen aus den Punkten, nicht aus festem Text", () => {
 });
 
 test("Plan nur bei einer offiziellen Zahl, nicht bei einer Schätzung", () => {
-  assert.equal(planGap(series("starship_launches"), production.asOf), "Plan 2026: 25 · bisher 3");
+  assert.equal(planGap(series("starship_launches"), production.asOf), "Plan 2026: 25 · bisher 4");
   assert.equal(series("starship_launches").plan[0].source.url, "https://www.faa.gov/space/stakeholder_engagement/spacex_starship");
   assert.equal(planGap(series("tesla_deliveries"), production.asOf), "");
   assert.equal(series("tesla_deliveries").plan, undefined);
