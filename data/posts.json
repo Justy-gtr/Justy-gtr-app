@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-14T09:30:00+01:00",
+  "asOf": "2026-11-14T11:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,29 @@
     }
   },
   "posts": [
+    {
+      "id": "post-peter_j_beck-2121526414587609177",
+      "account": "@Peter_J_Beck",
+      "displayName": "Peter Beck",
+      "postedAt": "2026-11-14T09:51:27+01:00",
+      "summaryDe": "Rocket-Lab-Chef Peter Beck zitiert den Post zum 100. Electron-Start und schreibt nur: „100 % Missionserfolg“.",
+      "originalText": "100% mission success",
+      "url": "https://x.com/Peter_J_Beck/status/2121526414587609177",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Peter_J_Beck auf X (14.11., 09:51)",
+          "url": "https://x.com/Peter_J_Beck/status/2121526414587609177"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2121502131056177514",
       "account": "@elonmusk",
@@ -8140,5 +8163,5 @@
       ]
     }
   ],
-  "notes": "14.11. 09:30: Keine neuen inhaltlichen Posts seit 08:15. Musk schrieb nur „So funny“ zu einem Bild (08:50), nicht aufgenommen. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @RocketLab, @boringcompany seit 08:15 (X-Abfrage bis 09:40)."
+  "notes": "14.11. 11:30: Neu nur Peter Beck „100 % Missionserfolg“ (09:51). Musk hat seit 08:50 nichts gepostet; keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @RocketLab, @boringcompany seit 08:15 (X-Abfrage bis 11:45)."
 }
