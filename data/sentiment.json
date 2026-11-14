@@ -1,71 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-14T09:30:00+01:00",
+  "updatedAt": "2026-11-14T16:00:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 10,
+      "score": 15,
       "postsCount": 24,
-      "reason": "Nach dem abgebrochenen Booster-Fang wetten einige auf fallende Kurse, viele schauen aber schon auf den Schiffsfang am Abend und bleiben zuversichtlich.",
+      "reason": "Viele Halter bleiben trotz des verpatzten Booster-Fangs langfristig zuversichtlich und schauen auf den Schiffsfang am Abend; andere klagen, dass die Aktie nach jedem Anstieg wieder fällt.",
       "sources": [
         {
-          "title": "@TraderGillx auf X (14.11., 05:25)",
-          "url": "https://x.com/TraderGillx/status/2121459582497116467"
+          "title": "@pledisme auf X (14.11., 12:32)",
+          "url": "https://x.com/pledisme/status/2121566954058096795"
         },
         {
-          "title": "@Boomocjl auf X (14.11., 04:29)",
-          "url": "https://x.com/Boomocjl/status/2121445481515520084"
+          "title": "@DigitalAssetsUS auf X (14.11., 12:10)",
+          "url": "https://x.com/DigitalAssetsUS/status/2121561456374079982"
         },
         {
-          "title": "@fynnvestor auf X (14.11., 09:22)",
-          "url": "https://x.com/fynnvestor/status/2121519144688636266"
+          "title": "@JamesRandyThom2 auf X (14.11., 14:41)",
+          "url": "https://x.com/JamesRandyThom2/status/2121599363977969952"
         }
       ],
-      "updatedAt": "2026-11-14T09:30:00+01:00"
+      "updatedAt": "2026-11-14T16:00:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 5,
+      "score": 0,
       "postsCount": 24,
-      "reason": "Die Cybercab-Bestellungen und Musks Satz, das Abo solle billiger werden, kommen gut an; Skeptiker zweifeln am Fusionsaufschlag und setzen auf fallende Kurse.",
+      "reason": "Die Cybercab-Bestellungen kommen gut an, gleichzeitig streiten viele über den Fusionsaufschlag, und einige Skeptiker halten die Aktie für viel zu teuer.",
       "sources": [
         {
-          "title": "@NeoTSX auf X (14.11., 09:41)",
-          "url": "https://x.com/NeoTSX/status/2121523802383499291"
+          "title": "@pedrosilva auf X (14.11., 14:24)",
+          "url": "https://x.com/pedrosilva/status/2121595202938994719"
         },
         {
-          "title": "@MirageWL8 auf X (14.11., 09:25)",
-          "url": "https://x.com/MirageWL8/status/2121519923079815556"
+          "title": "@Hazy19L auf X (14.11., 15:31)",
+          "url": "https://x.com/Hazy19L/status/2121611871837135288"
         },
         {
-          "title": "@WILPOWERTRADES auf X (14.11., 05:12)",
-          "url": "https://x.com/WILPOWERTRADES/status/2121456296469663891"
+          "title": "@stonkstothe auf X (14.11., 13:16)",
+          "url": "https://x.com/stonkstothe/status/2121578048428392492"
         }
       ],
-      "updatedAt": "2026-11-14T09:30:00+01:00"
+      "updatedAt": "2026-11-14T16:00:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 55,
+      "score": 50,
       "postsCount": 25,
-      "reason": "Der geglückte 100. Electron-Start wird gefeiert, viele loben Peter Beck; Zweifel tauchen kaum auf.",
+      "reason": "Der 100. Electron-Start wird weiter gefeiert; viele betonen, dass Umsatz und Auftragsbestand stark gewachsen sind, der Kurs aber auf Vorjahresniveau steht.",
       "sources": [
         {
-          "title": "@StockSavvyShay auf X (14.11., 06:34)",
-          "url": "https://x.com/StockSavvyShay/status/2121476849905885514"
+          "title": "@ValueSnapShotio auf X (14.11., 14:52)",
+          "url": "https://x.com/ValueSnapShotio/status/2121602047594102862"
         },
         {
-          "title": "@Neil_Shares auf X (14.11., 06:33)",
-          "url": "https://x.com/Neil_Shares/status/2121476671320871035"
+          "title": "@GMGoz1x auf X (14.11., 13:34)",
+          "url": "https://x.com/GMGoz1x/status/2121582532965568533"
         },
         {
-          "title": "@HKIStrategies auf X (14.11., 07:00)",
-          "url": "https://x.com/HKIStrategies/status/2121483271045542002"
+          "title": "@SpaceCapX auf X (14.11., 14:52)",
+          "url": "https://x.com/SpaceCapX/status/2121602261579362522"
         }
       ],
-      "updatedAt": "2026-11-14T09:30:00+01:00",
-      "previousMood": "gemischt"
+      "updatedAt": "2026-11-14T16:00:00+01:00"
     }
   }
 }
