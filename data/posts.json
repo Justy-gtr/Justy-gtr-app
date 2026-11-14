@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-14T05:10:00+01:00",
+  "asOf": "2026-11-14T07:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,164 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2121489252072693925",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T07:23:47+01:00",
+      "summaryDe": "Musk zitiert den SpaceX-Post zum gesunden Schiff und Hitzeschild: „Bisher läuft es gut für das Schiff.“ Der Fang am Turm ist für Sa gegen 22:17 Berlin geplant.",
+      "originalText": "So far, so good for the ship",
+      "url": "https://x.com/elonmusk/status/2121489252072693925",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 07:23)",
+          "url": "https://x.com/elonmusk/status/2121489252072693925"
+        },
+        {
+          "title": "@SpaceX auf X (Hitzeschild gesund, 14.11., 06:44)",
+          "url": "https://x.com/SpaceX/status/2121479482582441991"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2121488840359862297",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-14T07:22:00+01:00",
+      "summaryDe": "Rocket Lab: Nutzlast ausgesetzt – der Radarsatellit für iQPS ist im Orbit. Damit ist der 100. Electron-Flug erfolgreich.",
+      "originalText": "MISSION SUCCESS. Payload deployment from the Kick Stage confirmed. Welcome back to space @QPS_Inc.",
+      "url": "https://x.com/RocketLab/status/2121488840359862297",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (14.11., 07:22)",
+          "url": "https://x.com/RocketLab/status/2121488840359862297"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2121479482582441991",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-14T06:44:58+01:00",
+      "summaryDe": "SpaceX: Starship und sein Hitzeschild sind gesund, das Schiff kreist knapp 7 Stunden nach dem Start weiter um die Erde. Das Team überwacht die Systeme vor dem geplanten Fang in Starbase rund 22,5 Stunden nach dem Start (Sa ~22:17 Berlin).",
+      "originalText": "Starship and its heatshield are healthy as the vehicle continues to orbit Earth after a spectacular start to its mission nearly 7 hours ago. Teams are continuing to monitor systems ahead of a planned return to launch site catch at Starbase ~22.5 hours after launch",
+      "url": "https://x.com/SpaceX/status/2121479482582441991",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (14.11., 06:44)",
+          "url": "https://x.com/SpaceX/status/2121479482582441991"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15 (Ablaufplan)",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2121478641494401329",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-14T06:41:37+01:00",
+      "summaryDe": "Rocket Lab: Brennschluss der zweiten Stufe bestätigt, die Kick Stage hat sich getrennt und ist im Transferorbit. Rund 40 Minuten bis zum Aussetzen des Satelliten.",
+      "originalText": "@QPS_Inc Second engine cut off confirmed. Electron's Kick Stage has separated and is now in a transfer orbit. We are about 40 minutes out from payload deployment.",
+      "url": "https://x.com/RocketLab/status/2121478641494401329",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (14.11., 06:41)",
+          "url": "https://x.com/RocketLab/status/2121478641494401329"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2121476193673523698",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-14T06:31:54+01:00",
+      "summaryDe": "Rocket Lab: Abheben zum 100. Mal – die 100. Electron „The Mountain God Rises“ für iQPS ist von Neuseeland gestartet.",
+      "originalText": "LIFT-OFF for the 100th time!",
+      "url": "https://x.com/RocketLab/status/2121476193673523698",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (14.11., 06:31)",
+          "url": "https://x.com/RocketLab/status/2121476193673523698"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2121469499031609589",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-14T06:05:18+01:00",
+      "summaryDe": "Rocket Lab: Bisher wurden 100 Electron-Raketen gebaut, angetrieben von 999 Rutherford-Triebwerken – eins weniger als 1.000, weil beim 40. Start ein geborgenes Triebwerk erneut flog.",
+      "originalText": "We've built 100 Electron rockets, powered by 999 Rutherford engines (one less than 1000 because we re-flew a recovered engine on our 40th launch).",
+      "url": "https://x.com/RocketLab/status/2121469499031609589",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (14.11., 06:05)",
+          "url": "https://x.com/RocketLab/status/2121469499031609589"
+        }
+      ]
+    },
     {
       "id": "post-rocketlab-2121443002002682366",
       "account": "@RocketLab",
@@ -7790,5 +7948,5 @@
       ]
     }
   ],
-  "notes": "14.11. 05:10: Neu 12 Posts: @SpaceX zu Flight 15 (Start 23:48, Booster in den Golf umgeleitet, Orbit, 26 Starlink ausgesetzt, Freiflug mit guten Systemen, Video der Booster-Wasserung), @Starlink (26 Terabit), @Tesla zum Cybercab-Verkauf, Musk (Live-Bilder, „True“ zu Huang als „Steve Jobs von Nvidia“), @RocketLab (100. Electron aufgerichtet, Fenster 06:30). Reine Reposts, Emoji-Antworten ohne Inhalt („Always“, Flagge/Herz an den NASA-Chef) nicht aufgenommen (X-Abfrage). Keine neuen Posts von @xai, @neuralink, @boringcompany."
+  "notes": "14.11. 07:30: Neu: @RocketLab zum 100. Electron-Start (Fakten, Abheben 06:31, Kick Stage im Transferorbit, Satellit ausgesetzt), @SpaceX (Schiff und Hitzeschild gesund, 06:44), Musk („So far, so good for the ship“, 07:23). Kurze Musk-Antworten ohne Inhalt („Yeah“, „There will be many agents“) nicht aufgenommen. Countdown-Hinweise und Livestream-Links nicht aufgenommen. Keine neuen Posts von @Tesla, @xai, @neuralink, @boringcompany seit 04:30 (X-Abfrage)."
 }
