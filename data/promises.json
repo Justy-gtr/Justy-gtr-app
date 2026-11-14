@@ -26,9 +26,9 @@
       "promise": "Starship Flight 15 soll im November starten und dabei erstmals Booster und Schiff mit dem Turm fangen; ein Erfolg sei eher wahrscheinlich als nicht.",
       "promisedOn": "2026-10-20",
       "targetDate": "2026-11-30",
-      "status": "offen",
-      "delay": null,
-      "note": "Musk bestätigte am 6.11. (Baron-Chat und abendliche Posts), dass Flight 15 Booster und Ship 42 fangen soll. Zieltermin SpaceX-VP: 13.11.; FAA-Lizenz offen. Status weiter offen. 14.11. 05:10: Flight 15 ist am Fr 23:47 Berlin gestartet. Den Booster-Fang hat SpaceX abgebrochen, Booster 22 wurde in den Golf umgeleitet und explodierte dort (Space.com, SpaceNews). Ship 42 ist im Orbit, hat 26 Starlink-Satelliten ausgesetzt und soll Sa gegen 22:17 Berlin gefangen werden. Status offen, bis das Schiff zurück ist; der Booster-Teil ist verfehlt. 14.11. 07:30: Laut SpaceX sind Schiff und Hitzeschild nach knapp 7 Stunden im Orbit gesund, Fangversuch weiter für Sa ~22:17 Berlin geplant (SpaceX auf X).",
+      "status": "teilweise",
+      "delay": "Der Booster-Fang wurde am 13.11. abgebrochen; der Doppelfang steht noch aus.",
+      "note": "Musk bestätigte am 6.11. (Baron-Chat und abendliche Posts), dass Flight 15 Booster und Ship 42 fangen soll. Zieltermin SpaceX-VP: 13.11.; FAA-Lizenz offen. Status weiter offen. 14.11. 05:10: Flight 15 ist am Fr 23:47 Berlin gestartet. Den Booster-Fang hat SpaceX abgebrochen, Booster 22 wurde in den Golf umgeleitet und explodierte dort (Space.com, SpaceNews). Ship 42 ist im Orbit, hat 26 Starlink-Satelliten ausgesetzt und soll Sa gegen 22:17 Berlin gefangen werden. Status offen, bis das Schiff zurück ist; der Booster-Teil ist verfehlt. 14.11. 07:30: Laut SpaceX sind Schiff und Hitzeschild nach knapp 7 Stunden im Orbit gesund, Fangversuch weiter für Sa ~22:17 Berlin geplant (SpaceX auf X). 14.11. 22:30: Ship 42 wurde um 22:21 Berlin vom Turm gefangen – der erste Fang einer Starship-Oberstufe überhaupt (SpaceX auf X). Der Booster-Teil ist verfehlt, deshalb „teilweise“.",
       "example": false,
       "sources": [
         {
@@ -66,6 +66,14 @@
         {
           "title": "@SpaceX auf X (Hitzeschild gesund, 14.11., 06:44)",
           "url": "https://x.com/SpaceX/status/2121479482582441991"
+        },
+        {
+          "title": "@SpaceX auf X (14.11., 22:21): „Mechazilla catches Starship!“",
+          "url": "https://x.com/SpaceX/status/2121715216597827756"
+        },
+        {
+          "title": "Space.com: Starship Flight 15 Live-Ticker (14.11.)",
+          "url": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-14-2026-starship-first-double-landing-attempt"
         }
       ]
     },

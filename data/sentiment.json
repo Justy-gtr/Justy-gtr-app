@@ -1,28 +1,29 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-14T18:00:00+01:00",
+  "updatedAt": "2026-11-14T22:30:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gemischt",
-      "score": 20,
+      "mood": "gut",
+      "score": 75,
       "postsCount": 25,
-      "reason": "Viele freuen sich auf den Schiffsfang heute Abend, nachdem SpaceX „go“ gemeldet hat; andere fragen, warum die Aktie trotz guter Nachrichten nicht steigt.",
+      "reason": "Der erste Fang des Schiffs am Turm wird auf X als historisch gefeiert; einige erwarten am Montag Kursgewinne, nur wenige erinnern an den verpassten Booster-Fang.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (14.11., 17:45)",
-          "url": "https://x.com/spcxGOD/status/2121645593852284992"
+          "title": "@onPrivateEq auf X (14.11., 22:25)",
+          "url": "https://x.com/onPrivateEq/status/2121716145724309588"
         },
         {
-          "title": "@RealMicahLamar auf X (14.11., 17:57)",
-          "url": "https://x.com/RealMicahLamar/status/2121648685209833779"
+          "title": "@gonta_southwood auf X (14.11., 22:24)",
+          "url": "https://x.com/gonta_southwood/status/2121715896419049733"
         },
         {
-          "title": "@MsVeilMoney auf X (14.11., 17:53)",
-          "url": "https://x.com/MsVeilMoney/status/2121647685250040208"
+          "title": "@mikedaviswins auf X (14.11., 22:24)",
+          "url": "https://x.com/mikedaviswins/status/2121716014182264896"
         }
       ],
-      "updatedAt": "2026-11-14T18:00:00+01:00"
+      "updatedAt": "2026-11-14T22:30:00+01:00",
+      "previousMood": "gemischt"
     },
     "TSLA": {
       "mood": "gemischt",

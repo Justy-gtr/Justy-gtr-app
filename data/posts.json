@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-14T20:00:00+01:00",
+  "asOf": "2026-11-14T22:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,106 @@
     }
   },
   "posts": [
+    {
+      "id": "post-spacex-2121715216597827756",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-14T22:21:41+01:00",
+      "summaryDe": "SpaceX meldet den Erfolg: Der Turm („Mechazilla“) hat Starship gefangen – der erste Fang einer Starship-Oberstufe nach einem Orbitflug. SpaceX gratuliert dem ganzen Team.",
+      "originalText": "Mechazilla catches Starship! Congratulations to the entire SpaceX team on this incredible achievement!",
+      "url": "https://x.com/SpaceX/status/2121715216597827756",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (14.11., 22:21): „Mechazilla catches Starship!“",
+          "url": "https://x.com/SpaceX/status/2121715216597827756"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121701421183853007",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T21:26:52+01:00",
+      "summaryDe": "Musk: Das Bremsmanöver von Starship war gut, die Landezündung folgt in 53 Minuten. Kurz vorher (21:02) hatte er geschrieben, alle Systeme stünden auf Grün.",
+      "originalText": "Good deorbit burn. \n\nLanding burn in 53 minutes.",
+      "url": "https://x.com/elonmusk/status/2121701421183853007",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 21:26): Bremsmanöver gut, Landezündung in 53 Minuten",
+          "url": "https://x.com/elonmusk/status/2121701421183853007"
+        },
+        {
+          "title": "@elonmusk auf X (14.11., 21:02): alle Systeme grün für das Bremsmanöver",
+          "url": "https://x.com/elonmusk/status/2121695381759144393"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2121701161040556374",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-14T21:25:50+01:00",
+      "summaryDe": "SpaceX: Bremsmanöver gelungen. Starship ist auf Kurs für den Wiedereintritt und den geplanten Fang in Starbase in rund einer Stunde.",
+      "originalText": "Good deorbit burn. Starship is on course to reenter Earth’s atmosphere ahead of a planned catch at Starbase in ~1 hour",
+      "url": "https://x.com/SpaceX/status/2121701161040556374",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (14.11., 21:25): Bremsmanöver gelungen, Fang in ~1 Stunde",
+          "url": "https://x.com/SpaceX/status/2121701161040556374"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2121684113526858011",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-14T20:18:06+01:00",
+      "summaryDe": "SpaceX: Nach der letzten Prüfung haben alle Teams „go“ gemeldet, Starship zum Startplatz in Starbase zurückzubringen. Damit war die Wasserung vor Hawaii vom Tisch.",
+      "originalText": "Teams have polled go to return Starship to the launch site at Starbase",
+      "url": "https://x.com/SpaceX/status/2121684113526858011",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (14.11., 20:18): Teams „go“ für die Rückkehr zum Startplatz",
+          "url": "https://x.com/SpaceX/status/2121684113526858011"
+        },
+        {
+          "title": "Space.com: Starship Flight 15 Live-Ticker (14.11.)",
+          "url": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-14-2026-starship-first-double-landing-attempt"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2121666778308678025",
       "account": "@elonmusk",
@@ -8372,5 +8472,5 @@
       ]
     }
   ],
-  "notes": "14.11. 20:00: Neu: Musk – nächster Booster fast flugbereit, ein Turm-Verlust würde 2 bis 3 Monate kosten; erste Schlüsse zur Booster-Panne oft teilweise falsch. Beck: „Auf zu 200!“ Seit 16:41 keine neue Meldung von @SpaceX; keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @RocketLab, @boringcompany (X-Abfrage bis 20:00)."
+  "notes": "14.11. 22:30: Neu: SpaceX meldet um 22:21 den Fang von Starship am Turm; vorher „go“ für die Rückkehr (20:18) und gelungenes Bremsmanöver (21:25, auch Musk). Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @RocketLab, @Peter_J_Beck, @boringcompany (X-Abfrage bis 22:27)."
 }
