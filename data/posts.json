@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-13T22:05:00+01:00",
+  "asOf": "2026-11-14T05:10:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,328 @@
     }
   },
   "posts": [
+    {
+      "id": "post-rocketlab-2121443002002682366",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-14T04:20:00+01:00",
+      "summaryDe": "Rocket Lab: Die 100. Electron steht senkrecht auf Pad A von Launch Complex 1 – an derselben Stelle, an der 2017 die allererste Electron startete.",
+      "originalText": "Our 100th Electron is vertical on Pad A at Launch Complex-1. The same spot we launched our very first Electron way back in 2017.",
+      "url": "https://x.com/RocketLab/status/2121443002002682366",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (14.11., 04:20)",
+          "url": "https://x.com/RocketLab/status/2121443002002682366"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2121439746740170859",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-14T04:07:04+01:00",
+      "summaryDe": "SpaceX zeigt ein Video von Landezündung und Wasserung des Boosters 22 im Golf von Mexiko. Der geplante Fang am Turm war abgebrochen worden.",
+      "originalText": "Landing burn and splashdown for Super Heavy Booster 22",
+      "url": "https://x.com/SpaceX/status/2121439746740170859",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (14.11., 04:07)",
+          "url": "https://x.com/SpaceX/status/2121439746740170859"
+        },
+        {
+          "title": "Space.com: Starship startet zu Flight 15, Booster-Fang abgebrochen (13.11.)",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121430364878974983",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T03:29:47+01:00",
+      "summaryDe": "Musk antwortet „Stimmt“ auf einen Post von Investor Naval Ravikant: „Jensen Huang ist der Steve Jobs von Nvidia. Er ist unersetzlich.“",
+      "originalText": "@naval True",
+      "url": "https://x.com/elonmusk/status/2121430364878974983",
+      "tickers": [
+        "MRVL"
+      ],
+      "companies": [
+        "Nvidia"
+      ],
+      "sentiment": "neutral",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 03:29)",
+          "url": "https://x.com/elonmusk/status/2121430364878974983"
+        },
+        {
+          "title": "@naval: „Jensen Huang is the Steve Jobs of Nvidia“ (13.11., 08:30)",
+          "url": "https://x.com/naval/status/2121143697161236839"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2121407145187160569",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-14T01:57:31+01:00",
+      "summaryDe": "Rocket Lab: Zum 100. Start sind Rakete und Startteam „in Festkleidung“. Das Fenster für „The Mountain God Rises“ für iQPS öffnet heute um 18:30 NZDT, also 06:30 Berlin.",
+      "originalText": "This occasion calls for formal wear. Our 100th Electron is all dressed up, so our pad technicians are too. The launch window for \"The Mountain God Rises\" for @QPS_Inc opens today",
+      "url": "https://x.com/RocketLab/status/2121407145187160569",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (14.11., 01:57)",
+          "url": "https://x.com/RocketLab/status/2121407145187160569"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2121394839954874797",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-14T01:08:38+01:00",
+      "summaryDe": "SpaceX: Starship ist jetzt in einer langen Freiflugphase um die Erde und soll rund 21 Stunden im Orbit bleiben. Es gebe Optionen für eine frühere Rückkehr, „aber alle Systeme sehen gerade gut aus“.",
+      "originalText": "Starship is now in a long coast phase around Earth. Teams will monitor Starship’s systems over the next ~21 hours that we intend to be in orbit for. We do have a few early deorbit options available should we need them, but all systems are looking good right now",
+      "url": "https://x.com/SpaceX/status/2121394839954874797",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (14.11., 01:08)",
+          "url": "https://x.com/SpaceX/status/2121394839954874797"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15 (Ablaufplan)",
+          "url": "https://www.spacex.com/launches/starship-flight-15"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2121394268652839309",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-14T01:06:21+01:00",
+      "summaryDe": "SpaceX: Nutzlast ausgesetzt – alle 26 Starlink-V3-Satelliten sind im Orbit.",
+      "originalText": "Payload deploy complete. All 26 @Starlink V3 satellites are in orbit",
+      "url": "https://x.com/SpaceX/status/2121394268652839309",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (14.11., 01:06)",
+          "url": "https://x.com/SpaceX/status/2121394268652839309"
+        }
+      ]
+    },
+    {
+      "id": "post-tesla-2121389588736520545",
+      "account": "@Tesla",
+      "displayName": "Tesla",
+      "postedAt": "2026-11-14T00:47:46+01:00",
+      "summaryDe": "Tesla antwortet mit einem Cowboy-Emoji auf den Post des Robotaxi-Kontos: Ausgewählte Kunden werden jetzt eingeladen, ein Cybercab für den privaten Gebrauch zu kaufen (29.990 $ plus 299 $ Abo im Monat, Auslieferung laut Bestellseite ab Dezember in Austin).",
+      "originalText": "🤠 (zitiert @robotaxi: „Select customers are now being invited to purchase Cybercab for personal use“)",
+      "url": "https://x.com/Tesla/status/2121389588736520545",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Tesla auf X (14.11., 00:47)",
+          "url": "https://x.com/Tesla/status/2121389588736520545"
+        },
+        {
+          "title": "@robotaxi auf X (Einladungen zum Cybercab-Kauf, 14.11., 00:27)",
+          "url": "https://x.com/robotaxi/status/2121384435241402737"
+        },
+        {
+          "title": "Electrek: Cybercab-Bestellungen für 29.990 $ plus 299 $ im Monat, Auslieferung voraussichtlich Dezember 2026 in Austin (13.11.)",
+          "url": "https://electrek.co/2026/11/13/tesla-cybercab-personal-use-orders-299-subscription-geofence/"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121388517540716839",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T00:43:30+01:00",
+      "summaryDe": "Musk teilt Live-Bilder von Starship aus dem All.",
+      "originalText": "Live Starship video from space",
+      "url": "https://x.com/elonmusk/status/2121388517540716839",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 00:43)",
+          "url": "https://x.com/elonmusk/status/2121388517540716839"
+        }
+      ]
+    },
+    {
+      "id": "post-starlink-2121384634760220952",
+      "account": "@Starlink",
+      "displayName": "Starlink",
+      "postedAt": "2026-11-14T00:28:05+01:00",
+      "summaryDe": "Starlink: Die 26 Satelliten dieses Flugs bringen bis zu 26 Terabit Kapazität ins Netz.",
+      "originalText": "Today’s Starlink payload will add up to 26 Terabits of capacity to the constellation",
+      "url": "https://x.com/Starlink/status/2121384634760220952",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Starlink auf X (14.11., 00:28)",
+          "url": "https://x.com/Starlink/status/2121384634760220952"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2121381593768186362",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-14T00:15:59+01:00",
+      "summaryDe": "SpaceX: Starship zündet zum Einschuss und erreicht zum zweiten Mal überhaupt die Erdumlaufbahn (rund 275 km).",
+      "originalText": "Starship performs its orbital insertion burn and enters orbit of Earth for the second time",
+      "url": "https://x.com/SpaceX/status/2121381593768186362",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (14.11., 00:15)",
+          "url": "https://x.com/SpaceX/status/2121381593768186362"
+        },
+        {
+          "title": "@SpaceX auf X (Orbit erreicht, 14.11., 00:15)",
+          "url": "https://x.com/SpaceX/status/2121381593768186362"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2121376372576915909",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-13T23:55:15+01:00",
+      "summaryDe": "SpaceX: Der Super-Heavy-Booster wurde zu einer Wasserung vor der Küste im Golf umgeleitet – der geplante Fang am Turm findet nicht statt.",
+      "originalText": "Super Heavy has diverted to an offshore splashdown in the Gulf",
+      "url": "https://x.com/SpaceX/status/2121376372576915909",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "negativ",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (13.11., 23:55)",
+          "url": "https://x.com/SpaceX/status/2121376372576915909"
+        },
+        {
+          "title": "Space.com: Starship startet zu Flight 15, Booster-Fang abgebrochen (13.11.)",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship"
+        },
+        {
+          "title": "SpaceNews: Starship startet zum 15. Test, Booster-Fang abgesagt (13.11.)",
+          "url": "https://spacenews.com/starship-launches-on-15th-test-calls-off-booster-catch/"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2121374779680964991",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-13T23:48:55+01:00",
+      "summaryDe": "SpaceX: Starship ist gestartet – Flight 15 hebt von Starbase ab.",
+      "originalText": "Liftoff of Starship!",
+      "url": "https://x.com/SpaceX/status/2121374779680964991",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (13.11., 23:48)",
+          "url": "https://x.com/SpaceX/status/2121374779680964991"
+        },
+        {
+          "title": "CNBC: SpaceX startet Starship zu wichtigem Testflug (13.11.)",
+          "url": "https://www.cnbc.com/2026/11/13/spacex-launches-starship-in-key-test-flight-of-massive-rocket.html"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2121345211959804234",
       "account": "@elonmusk",
@@ -7468,5 +7790,5 @@
       ]
     }
   ],
-  "notes": "13.11. 22:05: Neu: @SpaceX-Livestream und Musk „etwa 4 Stunden bis Flight 15“, Musk zur Petition für Huangs Rückkehr, zwei @RocketLab-Posts (Fabrik alle 8 Tage eine Electron, Übertragung 100. Start). Musks Werbe-Posts für Grok Bot und reine Reposts nicht aufgenommen (X-Abfrage)."
+  "notes": "14.11. 05:10: Neu 12 Posts: @SpaceX zu Flight 15 (Start 23:48, Booster in den Golf umgeleitet, Orbit, 26 Starlink ausgesetzt, Freiflug mit guten Systemen, Video der Booster-Wasserung), @Starlink (26 Terabit), @Tesla zum Cybercab-Verkauf, Musk (Live-Bilder, „True“ zu Huang als „Steve Jobs von Nvidia“), @RocketLab (100. Electron aufgerichtet, Fenster 06:30). Reine Reposts, Emoji-Antworten ohne Inhalt („Always“, Flagge/Herz an den NASA-Chef) nicht aufgenommen (X-Abfrage). Keine neuen Posts von @xai, @neuralink, @boringcompany."
 }

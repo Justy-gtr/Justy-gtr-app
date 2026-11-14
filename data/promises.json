@@ -28,7 +28,7 @@
       "targetDate": "2026-11-30",
       "status": "offen",
       "delay": null,
-      "note": "Musk bestätigte am 6.11. (Baron-Chat und abendliche Posts), dass Flight 15 Booster und Ship 42 fangen soll. Zieltermin SpaceX-VP: 13.11.; FAA-Lizenz offen. Status weiter offen.",
+      "note": "Musk bestätigte am 6.11. (Baron-Chat und abendliche Posts), dass Flight 15 Booster und Ship 42 fangen soll. Zieltermin SpaceX-VP: 13.11.; FAA-Lizenz offen. Status weiter offen. 14.11. 05:10: Flight 15 ist am Fr 23:47 Berlin gestartet. Den Booster-Fang hat SpaceX abgebrochen, Booster 22 wurde in den Golf umgeleitet und explodierte dort (Space.com, SpaceNews). Ship 42 ist im Orbit, hat 26 Starlink-Satelliten ausgesetzt und soll Sa gegen 22:17 Berlin gefangen werden. Status offen, bis das Schiff zurück ist; der Booster-Teil ist verfehlt.",
       "example": false,
       "sources": [
         {
@@ -46,6 +46,22 @@
         {
           "title": "@elonmusk: catch booster and Starship upcoming flight",
           "url": "https://x.com/elonmusk/status/2118732082843435305"
+        },
+        {
+          "title": "Space.com: Starship startet zu Flight 15, Booster-Fang abgebrochen (13.11.)",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship"
+        },
+        {
+          "title": "SpaceNews: Starship startet zum 15. Test, Booster-Fang abgesagt (13.11.)",
+          "url": "https://spacenews.com/starship-launches-on-15th-test-calls-off-booster-catch/"
+        },
+        {
+          "title": "@SpaceX auf X (Booster in den Golf umgeleitet, 23:55)",
+          "url": "https://x.com/SpaceX/status/2121376372576915909"
+        },
+        {
+          "title": "@SpaceX auf X (Freiflugphase, alle Systeme gut, 01:08)",
+          "url": "https://x.com/SpaceX/status/2121394839954874797"
         }
       ]
     },
@@ -162,12 +178,24 @@
       "targetDate": "2026-12-31",
       "status": "offen",
       "delay": null,
-      "note": "",
+      "note": "14.11.: Tesla lädt ausgewählte Kunden zur Cybercab-Bestellung ein (29.990 $ plus 299 $ Abo im Monat). Die Bestellseite nennt Dezember 2026 in Austin als voraussichtliche Auslieferung (Electrek, Reuters). Noch nicht gehalten, erst wenn das erste Auto beim Kunden ist.",
       "example": false,
       "sources": [
         {
           "title": "Not a Tesla App: Tesla Q3-2026-Call Zusammenfassung",
           "url": "https://www.notateslaapp.com/news/4867/tesla-q3-2026-earnings-call-recap-everything-you-need-to-know"
+        },
+        {
+          "title": "@robotaxi auf X (Einladungen zum Cybercab-Kauf, 14.11., 00:27)",
+          "url": "https://x.com/robotaxi/status/2121384435241402737"
+        },
+        {
+          "title": "Electrek: Cybercab-Bestellungen für 29.990 $ plus 299 $ im Monat, Auslieferung voraussichtlich Dezember 2026 in Austin (13.11.)",
+          "url": "https://electrek.co/2026/11/13/tesla-cybercab-personal-use-orders-299-subscription-geofence/"
+        },
+        {
+          "title": "Reuters via TradingView: Tesla lädt ausgewählte Kunden zum Cybercab-Kauf ein (13.11.)",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46U2HB:0-tesla-robotaxi-select-customers-are-now-being-invited-to-purchase-cybercab-for-personal-use/"
         }
       ]
     },
