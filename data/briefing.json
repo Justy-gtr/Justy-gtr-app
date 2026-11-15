@@ -1,116 +1,88 @@
 {
   "example": false,
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "title": "Morgen-Briefing",
   "greeting": "Guten Morgen, Justy.",
-  "summary": "Samstag, die Börsen sind zu – aber die Nacht war voll Raumfahrt. Starship Flight 15 ist am Freitag um 23:47 gestartet: Das Schiff ist im Orbit, hat 26 Starlink-Satelliten ausgesetzt und ist laut SpaceX samt Hitzeschild gesund. Den Fang des Boosters hat SpaceX abgebrochen, er explodierte im Golf von Mexiko; nachbörslich fiel SPCX darauf auf 136,25 $, 2,1 % unter dem Schluss. Heute gegen 22:17 soll erstmals das Schiff selbst am Turm gefangen werden. Rocket Lab hat heute früh um 06:31 die 100. Electron gestartet, um 07:22 war der Radarsatellit für iQPS ausgesetzt. Tesla nimmt seit Freitagabend Cybercab-Bestellungen an, 29.990 $ plus 299 $ Abo im Monat, Auslieferung laut Bestellseite ab Dezember in Austin. Bei Nvidia ist Huangs Frist für eine Zusage an den Kongress um 02:00 abgelaufen, ohne dass Zusage oder Vorladung öffentlich sind. Nächste Woche zählen vor allem die Nvidia-Zahlen am Dienstag um 23:00.",
+  "summary": "Sonntag, die Börsen sind zu, und die Nacht war ruhig. Das große Thema bleibt der Schiffsfang von gestern Abend: Ship 42 ist um 22:21 als erstes Starship-Schiff am Turm gelandet, Musk hat es danach begutachtet und schreibt „Ship 42 sieht großartig aus“; NASA-Chef Isaacman nennt den Fang „fast wie Magie“. Der Booster-Abbruch vom Freitag wird noch untersucht, laut SpaceX ging ihm beim Rückflug der Treibstoff zu früh aus. SpaceX hat den Space-Force-Start USSF-266 auf Montag, 23.11., 17:04 verschoben; der nächste Start ist damit USSF-317 in der Nacht auf Mittwoch um 04:14, neu im Kalender steht NROL-136 am Samstag um 13:30. Bei Tesla stehen in Dallas inzwischen mehr als 50 Cybercabs, gestartet sind die Fahrten aber noch nicht – ich sehe den November-Start bei 65 %. Grok 4.8 ist weiter nicht offiziell da, die Woche endet heute Abend. Die Stimmung auf X ist bei SpaceX gut, bei Tesla gemischt, bei Rocket Lab nach dem 100. Electron-Start gut. Die Woche entscheidet sich am Dienstag: US-Einzelhandel um 14:30 und Nvidia-Zahlen um 23:00.",
   "bullets": [
-    "Fr-Schluss New York: SPCX 139,11 $ (−0,6 %), TSLA 390,22 $ (−1,8 %), RKLB 61,53 $ (−4,0 %), MRVL 156,76 $ (−4,7 %). Nasdaq −0,9 %, Chipindex SOX −3,4 %.",
-    "Nachbörslich bis 01:59: SPCX 136,25 $ (−2,1 %, nach dem Booster-Abbruch), TSLA 387,11 $, RKLB 59,87 $, MRVL 152,59 $.",
-    "Auf Wochensicht trotzdem im Plus: SPCX +3,6 %, TSLA +8,9 %, RKLB +15,9 %, MRVL +11,0 %.",
-    "Starship: Schiff im Orbit, Hitzeschild gesund (SpaceX, 06:44). Fang am Turm heute ~22:17 – ich sehe 50 %. Grund für den Booster-Abbruch noch offen.",
-    "Rocket Lab: 100. Electron um 06:31 gestartet, Satellit um 07:22 ausgesetzt – Erfolg.",
-    "Tesla: Cybercab-Bestellungen für ausgewählte Kunden offen, Auslieferung laut Bestellseite Dezember in Austin. Die NHTSA-Frage zum fehlenden Bremspedal ist offen.",
-    "Nvidia/Huang: Frist abgelaufen, weder Zusage noch Vorladung veröffentlicht. Termin für die Befragung bleibt der 1.12.",
-    "Nächste Woche: Di 17.11. FAA-Anhörung zu Starbase und 23:00 Nvidia-Zahlen, Mi/Do APEC mit Trump und Xi, Do 19.11. Anthropic-Börsengang. Mo 22:15 löst sich die Tagesfrage (RKLB über 61,53 $?)."
+    "Fr-Schluss New York: SPCX 139,11 $ (−0,6 %), TSLA 390,22 $ (−1,8 %), RKLB 61,53 $ (−4,0 %). Gehandelt wird erst wieder Montag.",
+    "Starship: Ship 42 am Sa um 22:21 vom Turm gefangen – erster Schiffsfang überhaupt. Musk: „Ship 42 sieht großartig aus“. Booster-Abbruch: zu wenig Treibstoff, Ursache offen.",
+    "Falcon 9: USSF-317 Mi 18.11. 04:14 (75 %), NROL-136 Sa 21.11. 13:30 (neu, 80 %), USSF-266 verschoben auf Mo 23.11. 17:04 (75 %).",
+    "Tesla: 50+ Cybercabs in Dallas gefilmt, Fahrten noch nicht gestartet – November-Start 65 %. Cybercab-Bestellungen laufen, Auslieferung laut Bestellseite ab Dezember.",
+    "Grok 4.8: kein offizieller Start, nur Auto-Antworten von @grok behaupten einen Soft Rollout – 20 %, Frist heute Abend.",
+    "Stimmung auf X: SPCX gut (75), TSLA gemischt (10), RKLB gut (40).",
+    "Diese Woche: Mo 00:50 Japan-BIP, Di 14:30 US-Einzelhandel, Di 20:00 FAA-Anhörung Starbase, Di 23:00 Nvidia, Mi 20:00 Fed-Protokoll, Mi/Do APEC mit Trump und Xi, Do Anthropic-Börsengang.",
+    "Tagesfrage: Mo 22:15 löst sich, ob RKLB über 61,53 $ schließt – Karl sagt knapp ja."
   ],
   "audioUrl": null,
   "sources": [
     {
-      "title": "Yahoo Finance: Schlusskurse 13.11. und Nachbörse (SPCX, TSLA, RKLB, MRVL)",
+      "title": "Yahoo Finance: SPCX (Schluss 13.11.)",
       "url": "https://finance.yahoo.com/quote/SPCX/"
     },
     {
-      "title": "Yahoo Finance: SPCX (Schluss 13.11. und Nachbörse bis 01:59)",
-      "url": "https://finance.yahoo.com/quote/SPCX/"
-    },
-    {
-      "title": "Yahoo Finance: TSLA (Schluss 13.11. und Nachbörse bis 01:59)",
+      "title": "Yahoo Finance: TSLA (Schluss 13.11.)",
       "url": "https://finance.yahoo.com/quote/TSLA/"
     },
     {
-      "title": "Yahoo Finance: RKLB (Schluss 13.11. und Nachbörse bis 01:59)",
+      "title": "Yahoo Finance: RKLB (Schluss 13.11.)",
       "url": "https://finance.yahoo.com/quote/RKLB/"
     },
     {
-      "title": "Yahoo Finance: MRVL (Schluss 13.11. und Nachbörse bis 01:59)",
-      "url": "https://finance.yahoo.com/quote/MRVL/"
+      "title": "@SpaceX auf X (14.11., 22:21): „Mechazilla catches Starship!“",
+      "url": "https://x.com/SpaceX/status/2121715216597827756"
     },
     {
-      "title": "TokenPost: SpaceX-Aktie nachbörslich −2 % nach verpasstem Booster-Fang (14.11.)",
-      "url": "https://www.tokenpost.com/news/investing/57119"
+      "title": "@elonmusk auf X (15.11., 00:25): „Ship 42 looks great!“",
+      "url": "https://x.com/elonmusk/status/2121746382402797892"
     },
     {
-      "title": "Space.com: Starship startet zu Flight 15, Booster-Fang abgebrochen (13.11.)",
-      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship"
+      "title": "SpaceX: Starship Flight 15 – Missionsbericht",
+      "url": "https://www.spacex.com/launches/starship-flight-15/"
     },
     {
-      "title": "AFP: Starship im Orbit, Booster-Fang abgebrochen (14.11.)",
-      "url": "https://www.afp.com/en/spacexs-starship-enters-earths-orbit-booster-catch-aborted"
+      "title": "Al Jazeera (AP/Reuters): Starship von Turmarmen gefangen, Isaacman: „fast wie Magie“ (15.11.)",
+      "url": "https://www.aljazeera.com/news/2026/11/15/spacexs-starship-captured-by-launchpad-arms-in-dramatic-first"
     },
     {
-      "title": "NBC News: SpaceX startet 15. Starship-Flug, Booster-Manöver abgebrochen (13.11.)",
-      "url": "https://www.nbcnews.com/science/space/spacex-launches-15th-starship-flight-aborts-booster-recovery-maneuver-rcna609274"
+      "title": "SpaceX: USSF-317 Mission",
+      "url": "https://www.spacex.com/launches/ussf317"
     },
     {
-      "title": "@SpaceX auf X (Hitzeschild gesund, 14.11., 06:44)",
-      "url": "https://x.com/SpaceX/status/2121479482582441991"
+      "title": "SpaceX: USSF-266 Mission",
+      "url": "https://www.spacex.com/launches/ussf266"
     },
     {
-      "title": "SpaceX: Starship Flight 15 (Ablaufplan)",
-      "url": "https://www.spacex.com/launches/starship-flight-15"
+      "title": "SpaceX: NROL-136 Mission",
+      "url": "https://www.spacex.com/launches/nrol136"
     },
     {
-      "title": "@RocketLab auf X (Lift-off, 14.11., 06:31)",
-      "url": "https://x.com/RocketLab/status/2121476193673523698"
+      "title": "@SawyerMerritt auf X (14.11., 20:58): erste Cybercab-Fahrten in Dallas „stehen bevor“",
+      "url": "https://x.com/SawyerMerritt/status/2121694173052936334"
     },
     {
-      "title": "@RocketLab auf X (SECO, Kick Stage im Transferorbit, 06:41)",
-      "url": "https://x.com/RocketLab/status/2121478641494401329"
+      "title": "Electric Vehicles: Dutzende Cybercabs in Dallas gefilmt (14.11.)",
+      "url": "https://eletric-vehicles.com/tesla/tesla-cybercabs-filmed-by-the-dozen-in-dallas-before-planned-launch/"
     },
     {
-      "title": "@RocketLab auf X (Nutzlast ausgesetzt, 14.11., 07:22)",
-      "url": "https://x.com/RocketLab/status/2121488840359862297"
+      "title": "TechCrunch: Tesla öffnet Cybercab-Bestellungen (14.11.)",
+      "url": "https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/"
     },
     {
-      "title": "Rocket Lab: The Mountain God Rises",
-      "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+      "title": "SpaceX SI: News (Stand 15.11.)",
+      "url": "https://x.ai/news"
     },
     {
-      "title": "Electrek: Cybercab-Bestellungen für 29.990 $ plus 299 $ im Monat (13.11.)",
-      "url": "https://electrek.co/2026/11/13/tesla-cybercab-personal-use-orders-299-subscription-geofence/"
+      "title": "Rocket Lab: 100. Electron-Start erfolgreich (14.11.)",
+      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-hits-100-electron-launches-fastest-commercial-rocket"
     },
     {
-      "title": "Reuters via TradingView: Tesla lädt ausgewählte Kunden zum Cybercab-Kauf ein (13.11.)",
-      "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46U2HB:0-tesla-robotaxi-select-customers-are-now-being-invited-to-purchase-cybercab-for-personal-use/"
+      "title": "Reuters via Devdiscourse: Wall St Week Ahead – Nvidia und Anthropic (14.11.)",
+      "url": "https://www.devdiscourse.com/article/international/4006851-wall-st-week-ahead-nvidia-results-anthropic-ipo-pose-tests-for-tumultuous-ai-trade"
     },
     {
-      "title": "ABC News: Republikaner fordern Aussagen von Lutnick und Huang (13.11.)",
-      "url": "https://abcnews.com/Politics/house-senate-republicans-call-howard-lutnick-jensen-huang/story?id=138111390"
-    },
-    {
-      "title": "GSM Global: Huang mit Paul-Weiss-Anwälten, bis Fr-Nachmittag keine Antwort (13.11.)",
-      "url": "https://gsmglobalnews.com/article/d20261113-huanglawyer1.html"
-    },
-    {
-      "title": "Auswärtiger Ausschuss: Pressemitteilungen (Stand 14.11., 07:00)",
-      "url": "https://foreignaffairs.house.gov/news/press-releases"
-    },
-    {
-      "title": "NVIDIA: Termin Q3-Zahlen Geschäftsjahr 2027",
-      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx"
-    },
-    {
-      "title": "FAA: SpaceX Starship Super Heavy Project (Anhörungen)",
-      "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
-    },
-    {
-      "title": "gov.cn: APEC 2026 am 18.–19. November in Shenzhen",
-      "url": "https://english.www.gov.cn/news/202512/12/content_WS693c1432c6d00ca5f9a080e6.html"
-    },
-    {
-      "title": "CNBC: Anthropic-Preisspanne 70–78 $, Handel ab 19.11. (10.11.)",
-      "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+      "title": "CNBC: Wochenausblick 16.–20.11. (13.11.)",
+      "url": "https://www.cnbc.com/2026/11/13/stock-market-next-week-outlook-for-nov-16-20-2026.html"
     }
   ]
 }

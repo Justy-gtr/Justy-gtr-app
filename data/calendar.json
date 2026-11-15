@@ -16,7 +16,7 @@
       ],
       "probabilityPct": 20,
       "impact": "niedrig",
-      "reasoning": "Musk am 10.11. auf X: Vortraining fertig, Code neu in C/C++, Grok 4.8 steckt im RL-Training und soll später diese Woche vorsichtig für erste Nutzer starten. Er nennt es selbst „noch nicht unglaublich“. 50 %, weil Musks KI-Termine oft rutschen und RL-Ergebnisse erst kommen. Kurswirkung auf SPCX gering, eher ein Stimmungsfaktor. Stand Mi 05:00: Noch kein Start, kein Eintrag in den xAI-Release-Notes (TeslaNorth). 50 % unverändert. Stand Do 05:10: Grok 4.8 ist weiter nicht erschienen: kein Eintrag in Modellkatalog, API-Doku oder Release-Notes (ByteForward). Bis Sonntag bleiben drei Tage, Musk-KI-Termine rutschen oft. 40 statt 50 %. Stand Do 06:50: Weiter kein Start; die SpaceX-SI-Newsseite führt kein Grok 4.8 (x.ai/news, TokenPost). 40 % unverändert. Stand Do 18:00: Weiter kein Start; die SpaceX-SI-Newsseite führt als neuestes Modell Grok 4.7 (x.ai/news, ORIENS). 40 % unverändert. Stand Do 20:00: Weiter kein Start gemeldet; Grok 4.7 bleibt das aktuelle Modell (ByteForward). 40 % unverändert. Stand Fr 07:00: Weiter kein Start; die SpaceX-SI-Newsseite und die API-Release-Notes führen Grok 4.7 als neuestes Modell. Bis Sonntag bleibt nur das Wochenende. 30 statt 40 %. Stand Sa 22:00: Ein Techblog (Zeniteq) meldet den Start eines eingeschränkten „Soft Rollouts“ – Quelle ist aber nur eine automatische Antwort des Chatbot-Kontos @grok vom 13.11. auf eine Nutzerfrage, keine Mitteilung von SpaceX SI oder Musk. Release-Notes und Newsseite führen weiter kein Grok 4.8 (Zeniteq, SpaceX-SI-Doku). 30 % unverändert. Stand So 05:30: Weiter kein offizieller Start; Release-Notes und Newsseite von SpaceX SI führen Grok 4.7 als neuestes Modell, Musk schrieb in der Nacht nichts zu Grok 4.8 (SpaceX-SI-Doku, Musk auf X). Bis Sonntagabend bleibt nur noch ein Tag: 20 statt 30 %.",
+      "reasoning": "Musk am 10.11. auf X: Vortraining fertig, Code neu in C/C++, Grok 4.8 steckt im RL-Training und soll später diese Woche vorsichtig für erste Nutzer starten. Er nennt es selbst „noch nicht unglaublich“. 50 %, weil Musks KI-Termine oft rutschen und RL-Ergebnisse erst kommen. Kurswirkung auf SPCX gering, eher ein Stimmungsfaktor. Stand Mi 05:00: Noch kein Start, kein Eintrag in den xAI-Release-Notes (TeslaNorth). 50 % unverändert. Stand Do 05:10: Grok 4.8 ist weiter nicht erschienen: kein Eintrag in Modellkatalog, API-Doku oder Release-Notes (ByteForward). Bis Sonntag bleiben drei Tage, Musk-KI-Termine rutschen oft. 40 statt 50 %. Stand Do 06:50: Weiter kein Start; die SpaceX-SI-Newsseite führt kein Grok 4.8 (x.ai/news, TokenPost). 40 % unverändert. Stand Do 18:00: Weiter kein Start; die SpaceX-SI-Newsseite führt als neuestes Modell Grok 4.7 (x.ai/news, ORIENS). 40 % unverändert. Stand Do 20:00: Weiter kein Start gemeldet; Grok 4.7 bleibt das aktuelle Modell (ByteForward). 40 % unverändert. Stand Fr 07:00: Weiter kein Start; die SpaceX-SI-Newsseite und die API-Release-Notes führen Grok 4.7 als neuestes Modell. Bis Sonntag bleibt nur das Wochenende. 30 statt 40 %. Stand Sa 22:00: Ein Techblog (Zeniteq) meldet den Start eines eingeschränkten „Soft Rollouts“ – Quelle ist aber nur eine automatische Antwort des Chatbot-Kontos @grok vom 13.11. auf eine Nutzerfrage, keine Mitteilung von SpaceX SI oder Musk. Release-Notes und Newsseite führen weiter kein Grok 4.8 (Zeniteq, SpaceX-SI-Doku). 30 % unverändert. Stand So 05:30: Weiter kein offizieller Start; Release-Notes und Newsseite von SpaceX SI führen Grok 4.7 als neuestes Modell, Musk schrieb in der Nacht nichts zu Grok 4.8 (SpaceX-SI-Doku, Musk auf X). Bis Sonntagabend bleibt nur noch ein Tag: 20 statt 30 %. Stand So 06:30: Weiter nichts Offizielles. Auf X behauptet nur das automatische Antwortkonto @grok, der „Soft Rollout“ laufe; SpaceX SI und Musk haben das nicht bestätigt, die Newsseite zeigt kein Grok 4.8 (SpaceX SI). 20 % unverändert, das Fenster endet heute Abend.",
       "example": false,
       "sources": [
         {
@@ -155,121 +155,6 @@
       ]
     },
     {
-      "id": "evt-electron-mountain-god",
-      "title": "Rocket Lab: 100. Electron-Start „The Mountain God Rises“ – erfolgreich, Satellit ausgesetzt",
-      "date": "2026-11-14",
-      "time": "06:31",
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "start",
-      "company": "Rocket Lab",
-      "tickers": [
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "niedrig",
-      "reasoning": "Rocket Lab bestätigt auf X den 100. Electron-Flug: QPS-SAR-Satellit, Launch Complex 1 Neuseeland, Fenster ab 05:30 UTC am 14.11. (06:30 Berlin). Meine 75 % gelten für einen Start bis 20. November – Electron ist zuverlässig, Wetter verschiebt oft. Kurswirkung gering; wichtiger bleiben die Q3-Zahlen am 9.11. Im Q3-Call am 9.11. sagte Beck, der 100. Electron-Start komme in etwa einer Woche (MarketBeat/Yahoo). Stand Fr 05:00: Rocket Lab hat die Generalprobe mit Betankung abgeschlossen. Electron sei bereit, das Fenster öffne Sa 14.11. um 05:30 UTC (06:30 Berlin) (X). 80 statt 75 %, weil der letzte Test vor dem Start erledigt ist. Es bleibt das Wetterrisiko. Stand Fr 07:00: Der Start-Tracker MaxQ führt den Flug mit Status „Go“, Wetter 99 % günstig, Wind 24 km/h. Luftraumsperren (NOTAM) gibt es für Sa 05:45–08:05 Berlin und als Ersatz für So 05:30–07:35 Berlin (MaxQ). Rocket Lab hat den Start offiziell angekündigt (GlobeNewswire). 85 statt 80 %, weil Wetter und Ersatztag passen; Restrisiko sind technische Abbrüche. Stand Fr 09:10: Rocket Lab nennt weiter Sa 14.11. 05:30 UTC (06:30 Berlin), Ersatztage bis 26.11.; Straßen-, See- und Luftsperren sind für Sa angesetzt (Rocket Lab). 85 % unverändert. Stand Fr 09:55: Keine Änderung, Start weiter Sa 06:30 Berlin (Rocket Lab). 85 % unverändert. Stand Fr 11:50: Rocket Lab und iQPS nennen weiter Sa 14.11. 05:30 UTC (06:30 Berlin), Übertragung ab etwa 30 Minuten vorher (Rocket Lab, iQPS). 85 % unverändert. Stand Fr 13:10: Keine Verschiebung gemeldet, Rocket Lab nennt weiter Sa 05:30 UTC (06:30 Berlin) (Rocket Lab, Advanced Television). 85 % unverändert. Stand Fr 14:05: Rocket Lab hält am Start Sa 14.11. 18:30 NZDT (06:30 Berlin) fest; Straßen-, See- und Luftraumsperren sind für Sa angesetzt, Ersatztage bis 26.11. (Rocket Lab Launch Safety). 85 % unverändert. Stand Fr 15:10: Keine Verschiebung gemeldet, Rocket Lab nennt weiter Sa 14.11. 18:30 NZDT (06:30 Berlin) ab Launch Complex 1 (Rocket Lab). 85 % unverändert. Stand Fr 20:05: Rocket Lab schreibt um 18:34 Berlin, das Fenster öffne in 12 Stunden; die Übertragung beginnt Sa 05:30 Berlin, etwa eine Stunde vor dem Start (Rocket Lab auf X). Keine Verschiebung. 85 % unverändert. Stand Fr 22:05: Rocket Lab bestätigt um 20:21: Übertragung Sa 04:30 UTC (05:30 Berlin), Fenster öffnet 05:30 UTC (06:30 Berlin). Keine Verschiebung. 85 % unverändert. Stand Sa 05:10: Die 100. Electron steht senkrecht auf Pad A von Launch Complex 1, wo 2017 die erste Electron startete (Rocket Lab auf X, 04:20). Rocket Lab bestätigte um 01:57, das Fenster öffne heute um 05:30 UTC (06:30 Berlin); die Übertragung beginnt um 05:30 Berlin. Keine Verschiebung gemeldet. 90 statt 85 %, weil die Rakete aufgerichtet ist und der Countdown läuft; Restrisiko sind Wetter und ein technischer Abbruch, Ersatztage reichen bis 26.11. Stand Sa 07:30: Eingetreten und erfolgreich. Electron hob um 06:31 Berlin von Launch Complex 1 in Neuseeland ab (Rocket Lab auf X). Erste Stufe, Stufentrennung und zweite Stufe liefen nach Plan, die Kick Stage erreichte den Transferorbit (06:37 und 06:41). Um 07:22 meldete Rocket Lab, der Radarsatellit QPS-SAR-19 „Yamatsumi-II“ für iQPS sei ausgesetzt. Damit ist Electron die erste kommerzielle Kleinrakete mit 100 Starts; Rocket Lab hat dafür 100 Raketen mit 999 Rutherford-Triebwerken gebaut (Rocket Lab auf X). 100 %. Der Handel reagiert erst am Montag. Nachtrag Sa 08:30: Rocket Lab bestätigt per Pressemitteilung den Missionserfolg; der Satellit YAMATSUMI-II fliegt in 575 km Höhe. Es war der 11. Start für iQPS, das bis 2030 sieben weitere Electron-Starts gebucht hat (Rocket Lab, GlobeNewswire). Laut Beck sind „die nächsten 100 Electrons bereits gebucht“.",
-      "example": false,
-      "sources": [
-        {
-          "title": "@RocketLab auf X: 100. Electron, Fenster 14.11.",
-          "url": "https://x.com/RocketLab/status/2118521208639746494"
-        },
-        {
-          "title": "Rocket Lab: Startliste",
-          "url": "https://rocketlabcorp.com/missions/launches/"
-        },
-        {
-          "title": "Rocket Lab: 99. Electron erfolgreich",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/mission-success-rocket-lab-launches-99th-electron-mission"
-        },
-        {
-          "title": "Yahoo/MarketBeat: Rocket Lab Q3-Call (10.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/rocket-lab-q3-earnings-call-031435942.html"
-        },
-        {
-          "title": "@RocketLab: Generalprobe fertig, 100. Electron ab 14.11. (12.11., 23:29)",
-          "url": "https://x.com/RocketLab/status/2121007529409032312"
-        },
-        {
-          "title": "MaxQ: The Mountain God Rises – Status Go, Wetter 99 % GO, NOTAMs",
-          "url": "https://www.maxq.app/launches/electron-the-mountain-god-rises-iqps-launch-10"
-        },
-        {
-          "title": "Rocket Lab (GlobeNewswire): 100. Electron-Start diese Woche (12.11.)",
-          "url": "https://www.globenewswire.com/news-release/2026/11/12/3402322/0/en/rocket-lab-to-launch-milestone-100th-electron-rocket-this-week.html"
-        },
-        {
-          "title": "Rocket Lab: Launch Safety – NET Sa 14.11. 05:30 UTC, Ersatztage bis 26.11.",
-          "url": "https://rocketlabcorp.com/launch/launch-safety/"
-        },
-        {
-          "title": "Rocket Lab: The Mountain God Rises (NET 14.11., 05:30 UTC)",
-          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
-        },
-        {
-          "title": "iQPS: QPS-SAR-19 „YAMATSUMI-II“, Start 14.11. 05:30 UTC",
-          "url": "https://i-qps.net/en/news/4162/"
-        },
-        {
-          "title": "Advanced Television: Rocket Lab bereit für den 100. Flug (13.11.)",
-          "url": "https://www.advanced-television.com/2026/11/13/rocket-lab-readies-for-100th-flight/"
-        },
-        {
-          "title": "@RocketLab: Startfenster des 100. Starts öffnet in 12 Stunden, Übertragung ab 05:30 Berlin (13.11., 18:34)",
-          "url": "https://x.com/RocketLab/status/2121295702387228977"
-        },
-        {
-          "title": "Ars Technica: Rocket Report – Starship vor historischem Testflug, 100 Electron-Starts (13.11.)",
-          "url": "https://arstechnica.com/space/2026/11/rocket-report-starship-set-for-historic-test-flight-a-century-of-electron/"
-        },
-        {
-          "title": "@RocketLab: Übertragung Sa 04:30 UTC, Fenster 05:30 UTC (13.11., 20:21)",
-          "url": "https://x.com/RocketLab/status/2121322570364670251"
-        },
-        {
-          "title": "@RocketLab auf X (100. Electron senkrecht auf Pad A, 14.11., 04:20)",
-          "url": "https://x.com/RocketLab/status/2121443002002682366"
-        },
-        {
-          "title": "@RocketLab auf X (Startfenster öffnet heute 05:30 UTC, 14.11., 01:57)",
-          "url": "https://x.com/RocketLab/status/2121407145187160569"
-        },
-        {
-          "title": "Space.com: Rocket Lab startet 100. Mission am 14.11.",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/rocket-lab-100th-launch-iqps-electron-sar-satellite"
-        },
-        {
-          "title": "@RocketLab auf X (Lift-off, 14.11., 06:31)",
-          "url": "https://x.com/RocketLab/status/2121476193673523698"
-        },
-        {
-          "title": "@RocketLab auf X (MECO und Stufentrennung, 06:37)",
-          "url": "https://x.com/RocketLab/status/2121477682357752251"
-        },
-        {
-          "title": "@RocketLab auf X (SECO, Kick Stage im Transferorbit, 06:41)",
-          "url": "https://x.com/RocketLab/status/2121478641494401329"
-        },
-        {
-          "title": "@RocketLab auf X (100 Electron, 999 Rutherford-Triebwerke, 06:05)",
-          "url": "https://x.com/RocketLab/status/2121469499031609589"
-        },
-        {
-          "title": "@RocketLab auf X (Nutzlast ausgesetzt, 14.11., 07:22)",
-          "url": "https://x.com/RocketLab/status/2121488840359862297"
-        },
-        {
-          "title": "Rocket Lab (GlobeNewswire): 100. Electron-Start, Missionserfolg (14.11.)",
-          "url": "https://www.globenewswire.com/news-release/2026/11/14/3403041/0/en/rocket-lab-hits-100-electron-launches-fastest-commercial-rocket-to-reach-the-milestone.html"
-        },
-        {
-          "title": "@RocketLab auf X (Triple digits, 14.11., 08:13)",
-          "url": "https://x.com/RocketLab/status/2121501709285638267"
-        }
-      ]
-    },
-    {
       "id": "evt-starship-flight15-schiffsfang",
       "title": "Starship Flight 15: Ship 42 vom Turm gefangen – erster Schiffsfang überhaupt",
       "date": "2026-11-14",
@@ -283,7 +168,7 @@
       ],
       "probabilityPct": 100,
       "impact": "hoch",
-      "reasoning": "Ship 42 kreist seit Fr 23:47 um die Erde und soll nach rund 14 Umläufen am Sa gegen 21:17 UTC, also 22:17 Berlin, nach Starbase zurückkehren und dort vom Turm gefangen werden – das wäre die erste Bergung einer Starship-Oberstufe überhaupt (Space.com, Ars Technica). Vorher gibt es drei Prüfpunkte für eine frühere Wasserung im Ozean, zuletzt rund 20:29 Berlin; das Bremsmanöver folgt gegen 21:23 Berlin (SpaceX-Ablaufplan). Die Rückkehr über Mexiko und die USA gibt es nur, wenn alle für Wiedereintritt, Landezündung und Anflug nötigen Systeme gesund sind; sonst geht das Schiff ins Meer, für den letzten Anflug gibt es eine Notwasserungszone im Golf (SpaceX, Space.com). Um 01:08 schrieb SpaceX, alle Systeme sähen gut aus (SpaceX auf X). Meine 45 % gelten für einen erfolgreichen Fang am Sa. Dafür spricht: Schiff im Orbit, Nutzlast ausgesetzt, Systeme bisher gut; Musk nannte einen Erfolg vorab „eher wahrscheinlich als nicht“. Dagegen: Es ist der erste Versuch überhaupt, Hitzeschild und Anflug sind ungetestet, und der Booster-Fang wurde gestern aus noch unbekanntem Grund abgebrochen – SpaceX bricht lieber ab, als den Turm zu riskieren. Ein Fang wäre für SPCX ein starkes Signal zur Wiederverwendbarkeit; der Handel reagiert erst am Montag. Stand Sa 07:30: SpaceX schrieb um 06:44 Berlin, Starship und sein Hitzeschild seien „gesund“, das Schiff kreise weiter um die Erde; das Team überwache die Systeme vor dem geplanten Fang in Starbase rund 22,5 Stunden nach dem Start (SpaceX auf X). Damit ist auch der zweite Prüfpunkt für eine frühe Wasserung (etwa 7 Stunden nach dem Start) ohne Abbruch vorbei (Space.com). Warum der Booster-Fang abgebrochen wurde, hat SpaceX weiter nicht gesagt; SpaceX-Sprecher Dan Huot sagte in der Übertragung, man wisse noch nicht, warum man ihn nicht zurückholen konnte (AFP). 50 statt 45 %, weil das Schiff nach gut 7 Stunden ohne Probleme im Orbit ist und der Hitzeschild intakt gemeldet wird; der schwierigste Teil – Wiedereintritt, Landezündung und Fang – steht aber noch aus. Stand Sa 08:30: Seit dem SpaceX-Post von 06:44 keine neue Statusmeldung. Musk schrieb um 07:23 „Bisher läuft es gut für das Schiff“ und um 07:25, Starship umrunde die Erde gerade alle rund 90 Minuten (Musk auf X). Der letzte Prüfpunkt für eine frühe Wasserung liegt bei rund T+20:41, also gegen 20:29 Berlin, das Bremsmanöver bei T+21:36 (Space.com). 50 % unverändert. Stand Sa 09:30: Seit dem SpaceX-Post von 06:44 weiter keine neue Statusmeldung von SpaceX oder Musk zum Schiff (X-Abfrage bis 09:40). SpaceX-Sprecherin Kate Tice hatte in der Übertragung gesagt, man gehe den Fang nur an, wenn das Schiff alle Systemprüfungen und Entscheidungspunkte bestehe, „und davon gibt es viele“ (CNA/AFP). Nächster Prüfpunkt ist die letzte Rückkehrprüfung gegen 20:29 Berlin. 50 % unverändert. Stand Sa 11:30: Weiter keine neue Statusmeldung von SpaceX oder Musk zum Schiff seit 06:44 (X-Abfrage bis 11:45). Laut AFP ist der Fang für Sa gegen 21:20 GMT geplant, also rund 22:20 Berlin; SpaceX-Sprecher Dan Huot sagte, man sehe derzeit keine Probleme mit dem Fahrzeug oder dem Rückkehrgebiet. Die endgültige Freigabe hängt am Zustand von Hitzeschild, Triebwerken und weiteren Systemen; vorher gibt es mehrere Punkte, an denen SpaceX auf eine Wasserung im Meer umschwenken kann (Aerospace Global News). 50 % unverändert. Stand Sa 13:00: Weiter keine neue Statusmeldung von SpaceX oder Musk zum Schiff seit 06:44 (X-Abfrage bis 12:55). Laut offiziellem Ablaufplan folgt die letzte Rückkehrprüfung („Final Hawaii Return Check“) bei T+20:41:55, also gegen 20:29 Berlin, der Bremsschub bei T+21:35:57 (gegen 21:23) und der Fang bei T+22:32:34, also gegen 22:20 Berlin (SpaceX). AFP zitiert SpaceX-Sprecher Huot: keine Probleme mit dem Fahrzeug oder dem Rückkehrgebiet. 50 % unverändert. Stand Sa 14:00: Weiter keine neue Statusmeldung von SpaceX oder Musk zum Schiff (X-Abfrage bis 13:58; Musks letzter Post 08:50). Ship 42 hat die ersten beiden Abbruchpunkte passiert; die letzte Entscheidung zwischen Fang und Wasserung im Nordpazifik fällt bei T+20:41:55, also gegen 20:29 Berlin. Space.com nennt als Fangzeit 16:17 Uhr US-Ostküste, also 22:17 Berlin. 50 % unverändert. Stand Sa 15:00: SpaceX postete um 14:53 ein Video „Starship im Orbit über Afrika“ – ohne neue Angaben zum Zustand, aber auch ohne Hinweis auf Probleme (SpaceX auf X). Laut Space.com hatte SpaceX-Sprecher Dan Huot schon am Morgen gesagt, das Hitzeschild-Team habe die Bilder von Bodenkameras und Starlink-Satelliten geprüft und der Schild sei „in guter Verfassung“ für Wiedereintritt und Rückkehr; der Booster-Abbruch lag wohl an einem Problem der Lage- und Bahnregelung (GNC). Die letzte Rückkehrprüfung kommt gegen 20:29 Berlin, der Fang ist um 22:17 Berlin geplant (Space.com). 50 % unverändert. Stand Sa 16:00: Musk schrieb um 15:30, Starship absolviere gerade 14 Erdumrundungen, bevor es den Abstieg einleite und die Landung in Starbase versuche (Musk auf X). Neue Probleme meldet SpaceX nicht; Space.com nennt weiter 16:20 Uhr EST, also 22:20 Berlin, für den Fang, die letzte Rückkehrprüfung kommt gegen 20:00 Berlin (Space.com). 50 % unverändert – es ist der allererste Fangversuch eines Schiffs aus dem Orbit, und beim Booster hat ein Regelungsproblem den Fang am Freitag kurz vor dem Ziel verhindert. Stand Sa 18:00: SpaceX schrieb um 16:41, Starship gleite weiter im Orbit, die Rückkehr zum Startplatz sehe heute weiter gut aus, Startplatz und Turm seien „go“ für den Fang (SpaceX auf X). Die letzte Prüfung („Final Hawaii Return Check“) kommt bei Missionszeit 20:41, also gegen 20:28 Berlin; der Fang ist für 22:20 Berlin geplant (Space.com). Zur Booster-Panne schrieb Musk, der Booster habe etwas zu wenig Treibstoff gehabt, weil die Triebwerke leicht unter Plan liefen; das betrifft nicht das Schiff (Musk auf X). Deshalb 50 → 55 %: Das Schiff ist gesund und der Turm bereit, aber es bleibt der allererste Fangversuch eines Schiffs aus dem Orbit. Stand Sa 20:00: Seit 16:41 keine neue SpaceX-Meldung; die letzte Prüfung („Final Hawaii Return Check“) steht gegen 20:28 Berlin noch aus, der Fang ist laut Space.com gegen 22:16 Berlin geplant. Musk schrieb um 19:09, der nächste Booster sei fast flugbereit, ein Verlust von Turm oder Startrampe würde aber 2 bis 3 Monate kosten (Musk auf X) – SpaceX wird den Fang also nur wagen, wenn alles passt. 55 % unverändert. Stand Sa 22:30: Eingetreten. Die letzte Prüfung lief um 20:18 Berlin: Alle Teams meldeten „go“ für die Rückkehr zum Startplatz, laut SpaceX-Sprecherin Kate Tice inklusive Hitzeschild, Klappen, Struktur, Steuerung und Turm (SpaceX auf X, Space.com). Um 21:25 meldete SpaceX ein gelungenes Bremsmanöver (laut Space.com ein 10-Sekunden-Schub mit einem Triebwerk), um 21:58 den Wiedereintritt, um 22:18 Kurvenmanöver und Endanflug. Um 22:21 Berlin schrieb SpaceX: „Mechazilla fängt Starship!“ (SpaceX auf X). Damit ist erstmals eine Starship-Oberstufe nach einem Orbitflug zum Startplatz zurückgekehrt und vom Turm gefangen worden. Der Booster-Fang am Freitag war dagegen abgebrochen worden, ein Doppelfang steht also noch aus. 100 % – meine letzte Schätzung lag bei 55 %. Für SPCX ist das ein starkes Signal zur Wiederverwendbarkeit; der Handel reagiert erst am Montag.",
+      "reasoning": "Ship 42 kreist seit Fr 23:47 um die Erde und soll nach rund 14 Umläufen am Sa gegen 21:17 UTC, also 22:17 Berlin, nach Starbase zurückkehren und dort vom Turm gefangen werden – das wäre die erste Bergung einer Starship-Oberstufe überhaupt (Space.com, Ars Technica). Vorher gibt es drei Prüfpunkte für eine frühere Wasserung im Ozean, zuletzt rund 20:29 Berlin; das Bremsmanöver folgt gegen 21:23 Berlin (SpaceX-Ablaufplan). Die Rückkehr über Mexiko und die USA gibt es nur, wenn alle für Wiedereintritt, Landezündung und Anflug nötigen Systeme gesund sind; sonst geht das Schiff ins Meer, für den letzten Anflug gibt es eine Notwasserungszone im Golf (SpaceX, Space.com). Um 01:08 schrieb SpaceX, alle Systeme sähen gut aus (SpaceX auf X). Meine 45 % gelten für einen erfolgreichen Fang am Sa. Dafür spricht: Schiff im Orbit, Nutzlast ausgesetzt, Systeme bisher gut; Musk nannte einen Erfolg vorab „eher wahrscheinlich als nicht“. Dagegen: Es ist der erste Versuch überhaupt, Hitzeschild und Anflug sind ungetestet, und der Booster-Fang wurde gestern aus noch unbekanntem Grund abgebrochen – SpaceX bricht lieber ab, als den Turm zu riskieren. Ein Fang wäre für SPCX ein starkes Signal zur Wiederverwendbarkeit; der Handel reagiert erst am Montag. Stand Sa 07:30: SpaceX schrieb um 06:44 Berlin, Starship und sein Hitzeschild seien „gesund“, das Schiff kreise weiter um die Erde; das Team überwache die Systeme vor dem geplanten Fang in Starbase rund 22,5 Stunden nach dem Start (SpaceX auf X). Damit ist auch der zweite Prüfpunkt für eine frühe Wasserung (etwa 7 Stunden nach dem Start) ohne Abbruch vorbei (Space.com). Warum der Booster-Fang abgebrochen wurde, hat SpaceX weiter nicht gesagt; SpaceX-Sprecher Dan Huot sagte in der Übertragung, man wisse noch nicht, warum man ihn nicht zurückholen konnte (AFP). 50 statt 45 %, weil das Schiff nach gut 7 Stunden ohne Probleme im Orbit ist und der Hitzeschild intakt gemeldet wird; der schwierigste Teil – Wiedereintritt, Landezündung und Fang – steht aber noch aus. Stand Sa 08:30: Seit dem SpaceX-Post von 06:44 keine neue Statusmeldung. Musk schrieb um 07:23 „Bisher läuft es gut für das Schiff“ und um 07:25, Starship umrunde die Erde gerade alle rund 90 Minuten (Musk auf X). Der letzte Prüfpunkt für eine frühe Wasserung liegt bei rund T+20:41, also gegen 20:29 Berlin, das Bremsmanöver bei T+21:36 (Space.com). 50 % unverändert. Stand Sa 09:30: Seit dem SpaceX-Post von 06:44 weiter keine neue Statusmeldung von SpaceX oder Musk zum Schiff (X-Abfrage bis 09:40). SpaceX-Sprecherin Kate Tice hatte in der Übertragung gesagt, man gehe den Fang nur an, wenn das Schiff alle Systemprüfungen und Entscheidungspunkte bestehe, „und davon gibt es viele“ (CNA/AFP). Nächster Prüfpunkt ist die letzte Rückkehrprüfung gegen 20:29 Berlin. 50 % unverändert. Stand Sa 11:30: Weiter keine neue Statusmeldung von SpaceX oder Musk zum Schiff seit 06:44 (X-Abfrage bis 11:45). Laut AFP ist der Fang für Sa gegen 21:20 GMT geplant, also rund 22:20 Berlin; SpaceX-Sprecher Dan Huot sagte, man sehe derzeit keine Probleme mit dem Fahrzeug oder dem Rückkehrgebiet. Die endgültige Freigabe hängt am Zustand von Hitzeschild, Triebwerken und weiteren Systemen; vorher gibt es mehrere Punkte, an denen SpaceX auf eine Wasserung im Meer umschwenken kann (Aerospace Global News). 50 % unverändert. Stand Sa 13:00: Weiter keine neue Statusmeldung von SpaceX oder Musk zum Schiff seit 06:44 (X-Abfrage bis 12:55). Laut offiziellem Ablaufplan folgt die letzte Rückkehrprüfung („Final Hawaii Return Check“) bei T+20:41:55, also gegen 20:29 Berlin, der Bremsschub bei T+21:35:57 (gegen 21:23) und der Fang bei T+22:32:34, also gegen 22:20 Berlin (SpaceX). AFP zitiert SpaceX-Sprecher Huot: keine Probleme mit dem Fahrzeug oder dem Rückkehrgebiet. 50 % unverändert. Stand Sa 14:00: Weiter keine neue Statusmeldung von SpaceX oder Musk zum Schiff (X-Abfrage bis 13:58; Musks letzter Post 08:50). Ship 42 hat die ersten beiden Abbruchpunkte passiert; die letzte Entscheidung zwischen Fang und Wasserung im Nordpazifik fällt bei T+20:41:55, also gegen 20:29 Berlin. Space.com nennt als Fangzeit 16:17 Uhr US-Ostküste, also 22:17 Berlin. 50 % unverändert. Stand Sa 15:00: SpaceX postete um 14:53 ein Video „Starship im Orbit über Afrika“ – ohne neue Angaben zum Zustand, aber auch ohne Hinweis auf Probleme (SpaceX auf X). Laut Space.com hatte SpaceX-Sprecher Dan Huot schon am Morgen gesagt, das Hitzeschild-Team habe die Bilder von Bodenkameras und Starlink-Satelliten geprüft und der Schild sei „in guter Verfassung“ für Wiedereintritt und Rückkehr; der Booster-Abbruch lag wohl an einem Problem der Lage- und Bahnregelung (GNC). Die letzte Rückkehrprüfung kommt gegen 20:29 Berlin, der Fang ist um 22:17 Berlin geplant (Space.com). 50 % unverändert. Stand Sa 16:00: Musk schrieb um 15:30, Starship absolviere gerade 14 Erdumrundungen, bevor es den Abstieg einleite und die Landung in Starbase versuche (Musk auf X). Neue Probleme meldet SpaceX nicht; Space.com nennt weiter 16:20 Uhr EST, also 22:20 Berlin, für den Fang, die letzte Rückkehrprüfung kommt gegen 20:00 Berlin (Space.com). 50 % unverändert – es ist der allererste Fangversuch eines Schiffs aus dem Orbit, und beim Booster hat ein Regelungsproblem den Fang am Freitag kurz vor dem Ziel verhindert. Stand Sa 18:00: SpaceX schrieb um 16:41, Starship gleite weiter im Orbit, die Rückkehr zum Startplatz sehe heute weiter gut aus, Startplatz und Turm seien „go“ für den Fang (SpaceX auf X). Die letzte Prüfung („Final Hawaii Return Check“) kommt bei Missionszeit 20:41, also gegen 20:28 Berlin; der Fang ist für 22:20 Berlin geplant (Space.com). Zur Booster-Panne schrieb Musk, der Booster habe etwas zu wenig Treibstoff gehabt, weil die Triebwerke leicht unter Plan liefen; das betrifft nicht das Schiff (Musk auf X). Deshalb 50 → 55 %: Das Schiff ist gesund und der Turm bereit, aber es bleibt der allererste Fangversuch eines Schiffs aus dem Orbit. Stand Sa 20:00: Seit 16:41 keine neue SpaceX-Meldung; die letzte Prüfung („Final Hawaii Return Check“) steht gegen 20:28 Berlin noch aus, der Fang ist laut Space.com gegen 22:16 Berlin geplant. Musk schrieb um 19:09, der nächste Booster sei fast flugbereit, ein Verlust von Turm oder Startrampe würde aber 2 bis 3 Monate kosten (Musk auf X) – SpaceX wird den Fang also nur wagen, wenn alles passt. 55 % unverändert. Stand Sa 22:30: Eingetreten. Die letzte Prüfung lief um 20:18 Berlin: Alle Teams meldeten „go“ für die Rückkehr zum Startplatz, laut SpaceX-Sprecherin Kate Tice inklusive Hitzeschild, Klappen, Struktur, Steuerung und Turm (SpaceX auf X, Space.com). Um 21:25 meldete SpaceX ein gelungenes Bremsmanöver (laut Space.com ein 10-Sekunden-Schub mit einem Triebwerk), um 21:58 den Wiedereintritt, um 22:18 Kurvenmanöver und Endanflug. Um 22:21 Berlin schrieb SpaceX: „Mechazilla fängt Starship!“ (SpaceX auf X). Damit ist erstmals eine Starship-Oberstufe nach einem Orbitflug zum Startplatz zurückgekehrt und vom Turm gefangen worden. Der Booster-Fang am Freitag war dagegen abgebrochen worden, ein Doppelfang steht also noch aus. 100 % – meine letzte Schätzung lag bei 55 %. Für SPCX ist das ein starkes Signal zur Wiederverwendbarkeit; der Handel reagiert erst am Montag. Nachtrag So 06:30: SpaceX schreibt im Missionsbericht, Ship 42 sei nach 22,5 Stunden zum Startplatz zurückgekehrt; NASA-Chef Isaacman nannte den Fang „fast wie Magie“. Der Booster brach den Rückflug wegen zu wenig Treibstoff ab, die Ursache wird noch untersucht (SpaceX, Al Jazeera, tagesschau).",
       "example": false,
       "sources": [
         {
@@ -385,6 +270,18 @@
         {
           "title": "@SpaceX auf X (14.11., 22:21): „Mechazilla catches Starship!“",
           "url": "https://x.com/SpaceX/status/2121715216597827756"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15 – Missionsbericht",
+          "url": "https://www.spacex.com/launches/starship-flight-15/"
+        },
+        {
+          "title": "Al Jazeera (AP/Reuters): Starship von Turmarmen gefangen – NASA-Chef Isaacman: „fast wie Magie“ (15.11.)",
+          "url": "https://www.aljazeera.com/news/2026/11/15/spacexs-starship-captured-by-launchpad-arms-in-dramatic-first"
+        },
+        {
+          "title": "tagesschau.de: Erfolg für SpaceX – „Starship“-Rakete kehrt zur Startrampe zurück",
+          "url": "https://www.tagesschau.de/ausland/amerika/space-x-rakete-rueckkehr-100.html"
         }
       ]
     },
@@ -522,7 +419,7 @@
       ],
       "probabilityPct": 75,
       "impact": "niedrig",
-      "reasoning": "SpaceX zielt jetzt auf Freitag 13.11., Vier-Stunden-Fenster ab 20:09 Uhr Ortszeit Vandenberg (in Berlin Sa 14.11. 05:09), Ersatz Samstag 19:55 Ortszeit. Vorher stand Donnerstag 20:23 Ortszeit. Dritter Space-Force-Start binnen gut einer Woche von derselben Rampe, deshalb Turnaround-Risiko. Kurswirkung gering. Stand Fr 09:55: Erneut verschoben. SpaceX zielt jetzt auf Dienstag 17.11., Vier-Stunden-Fenster ab 19:14 Uhr Ortszeit Vandenberg (in Berlin Mi 18.11. 04:14), Ersatz Mi 18.11. 20:54 Ortszeit. Die Erststufe fliegt zum 11. Mal und soll auf „Of Course I Still Love You“ landen (SpaceX, spacex-news.com). Einen Grund nennt SpaceX nicht. 75 % unverändert für den neuen Termin. Stand So 05:30: SpaceX nennt weiter Dienstag 17.11., Fenster ab 19:14 Uhr Ortszeit (Mi 18.11. 04:14 Berlin), Ersatz Mi 20:54 Ortszeit. Damit ist USSF-317 jetzt der nächste Space-Force-Start, vor USSF-266 (SpaceX). 75 % unverändert.",
+      "reasoning": "SpaceX zielt jetzt auf Freitag 13.11., Vier-Stunden-Fenster ab 20:09 Uhr Ortszeit Vandenberg (in Berlin Sa 14.11. 05:09), Ersatz Samstag 19:55 Ortszeit. Vorher stand Donnerstag 20:23 Ortszeit. Dritter Space-Force-Start binnen gut einer Woche von derselben Rampe, deshalb Turnaround-Risiko. Kurswirkung gering. Stand Fr 09:55: Erneut verschoben. SpaceX zielt jetzt auf Dienstag 17.11., Vier-Stunden-Fenster ab 19:14 Uhr Ortszeit Vandenberg (in Berlin Mi 18.11. 04:14), Ersatz Mi 18.11. 20:54 Ortszeit. Die Erststufe fliegt zum 11. Mal und soll auf „Of Course I Still Love You“ landen (SpaceX, spacex-news.com). Einen Grund nennt SpaceX nicht. 75 % unverändert für den neuen Termin. Stand So 05:30: SpaceX nennt weiter Dienstag 17.11., Fenster ab 19:14 Uhr Ortszeit (Mi 18.11. 04:14 Berlin), Ersatz Mi 20:54 Ortszeit. Damit ist USSF-317 jetzt der nächste Space-Force-Start, vor USSF-266 (SpaceX). 75 % unverändert. Stand So 06:30: Unverändert, die Startdatenbank führt den Start weiter für 18.11. 03:14 UTC (04:14 Berlin) mit Status „Go“ (Launch Library 2). 75 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -536,6 +433,10 @@
         {
           "title": "spacex-news.com: USSF-317 auf 18.11. 03:14 UTC verschoben (13.11.)",
           "url": "https://spacex-news.com/launches/falcon-9-block-5-ussf-317/"
+        },
+        {
+          "title": "Launch Library 2: USSF-317 (Stand 15.11.: 18.11. 03:14 UTC, „Go“)",
+          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?search=USSF-317"
         }
       ]
     },
@@ -593,7 +494,7 @@
       ],
       "probabilityPct": 92,
       "impact": "mittel",
-      "reasoning": "Der APEC-Gipfel findet am 18. und 19. November in Shenzhen statt (chinesische Regierung). Trump und Xi sollen sich dort treffen, Thema unter anderem ein Meldekanal für KI-Zwischenfälle (Lianhe Zaobao); große Ergebnisse etwa zu Zöllen werden laut SCMP erst zum G20 erwartet. Die Nvidia-Affäre um eine mutmaßliche chinesische Agentin fällt genau in diese Woche. 85 % für das Treffen, weil beide Seiten es angekündigt haben, Absagen aber möglich sind. Wichtig für Tesla (China-Geschäft), Chipwerte wie Marvell und die Exportregeln für KI-Chips. Stand Sa 09:30: Das Weiße Haus hat am Fr bestätigt, dass Trump, Xi und Putin sich am Do 19.11. am Rand des Gipfels zum ersten Dreiertreffen der drei Staatschefs überhaupt treffen; dazu kommen ein Arbeitsessen und ein Treffen Trump–Xi am selben Tag. Themen laut US-Regierung: Abbau von Atomwaffen und der Iran-Krieg, nicht die Ukraine. Die Nvidia-Affäre und Exportkontrollen für Chips sollen ausdrücklich keine Rolle spielen („Wir verhandeln keine amerikanischen Exportkontrollen“). Elon Musk begleitet Trump auf der Reise, ist beim Dreiertreffen aber nicht dabei. Trump fliegt am Mo los und ist am Di zuerst beim ASEAN-Gipfel auf den Philippinen (CNA/AFP, Reuters, AP). 92 statt 85 %, weil das Weiße Haus die Treffen jetzt offiziell bestätigt hat; kurzfristige Absagen bleiben möglich. Für uns wichtig: Musk mit in China ist ein Signal für Teslas China-Geschäft. Dass Exportkontrollen nicht auf dem Tisch liegen, heißt für Chipwerte wie Marvell keine Lockerung, aber auch keine neue Verschärfung aus Shenzhen. Stand Sa 13:00: Vorbereitung läuft: China und die USA haben am Fr in der ersten Sitzung ihres neuen Handelsrats über Zollsenkungen, das gegenseitige Paket „30 Mrd. $ gegen 30 Mrd. $“ und Agrarhandel gesprochen, teilte Chinas Handelsministerium am Sa mit; ob es Einigungen gab, sagte es nicht. Das im September vereinbarte Zollpaket über 60 Mrd. $ ist weiter nicht fertig (CNBC/Reuters). 92 % unverändert.",
+      "reasoning": "Der APEC-Gipfel findet am 18. und 19. November in Shenzhen statt (chinesische Regierung). Trump und Xi sollen sich dort treffen, Thema unter anderem ein Meldekanal für KI-Zwischenfälle (Lianhe Zaobao); große Ergebnisse etwa zu Zöllen werden laut SCMP erst zum G20 erwartet. Die Nvidia-Affäre um eine mutmaßliche chinesische Agentin fällt genau in diese Woche. 85 % für das Treffen, weil beide Seiten es angekündigt haben, Absagen aber möglich sind. Wichtig für Tesla (China-Geschäft), Chipwerte wie Marvell und die Exportregeln für KI-Chips. Stand Sa 09:30: Das Weiße Haus hat am Fr bestätigt, dass Trump, Xi und Putin sich am Do 19.11. am Rand des Gipfels zum ersten Dreiertreffen der drei Staatschefs überhaupt treffen; dazu kommen ein Arbeitsessen und ein Treffen Trump–Xi am selben Tag. Themen laut US-Regierung: Abbau von Atomwaffen und der Iran-Krieg, nicht die Ukraine. Die Nvidia-Affäre und Exportkontrollen für Chips sollen ausdrücklich keine Rolle spielen („Wir verhandeln keine amerikanischen Exportkontrollen“). Elon Musk begleitet Trump auf der Reise, ist beim Dreiertreffen aber nicht dabei. Trump fliegt am Mo los und ist am Di zuerst beim ASEAN-Gipfel auf den Philippinen (CNA/AFP, Reuters, AP). 92 statt 85 %, weil das Weiße Haus die Treffen jetzt offiziell bestätigt hat; kurzfristige Absagen bleiben möglich. Für uns wichtig: Musk mit in China ist ein Signal für Teslas China-Geschäft. Dass Exportkontrollen nicht auf dem Tisch liegen, heißt für Chipwerte wie Marvell keine Lockerung, aber auch keine neue Verschärfung aus Shenzhen. Stand Sa 13:00: Vorbereitung läuft: China und die USA haben am Fr in der ersten Sitzung ihres neuen Handelsrats über Zollsenkungen, das gegenseitige Paket „30 Mrd. $ gegen 30 Mrd. $“ und Agrarhandel gesprochen, teilte Chinas Handelsministerium am Sa mit; ob es Einigungen gab, sagte es nicht. Das im September vereinbarte Zollpaket über 60 Mrd. $ ist weiter nicht fertig (CNBC/Reuters). 92 % unverändert. Stand So 06:30: Vor dem Treffen Xi–Trump verhandeln beide Seiten laut Business Times über gegenseitige Zollsenkungen und Agrarkäufe; eine Einigung ist noch nicht verkündet. 92 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -631,6 +532,10 @@
         {
           "title": "CNBC: China und USA sprechen vor Xi–Trump-Treffen über Zölle (14.11.)",
           "url": "https://www.cnbc.com/2026/11/14/china-us-tariffs-xi-trump-meeting.html"
+        },
+        {
+          "title": "Business Times: China und USA beraten vor dem Treffen Xi–Trump in Shenzhen über Zölle und Agrarhandel",
+          "url": "https://www.businesstimes.com.sg/international/china-us-discuss-tariffs-farm-trade-ahead-xi-trump-meeting-shenzhen"
         }
       ]
     },
@@ -770,6 +675,33 @@
       ]
     },
     {
+      "id": "evt-falcon9-nrol136",
+      "title": "SpaceX: Falcon-9-Start NROL-136 für den US-Aufklärungsdienst NRO (Sa 21.11. 13:30)",
+      "date": "2026-11-21",
+      "time": "13:30",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "start",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 80,
+      "impact": "niedrig",
+      "reasoning": "SpaceX zielt auf Samstag 21.11., 30-Minuten-Fenster ab 04:30 Uhr Ortszeit Vandenberg (13:30 Berlin), Ersatz So 22.11. 04:16 Ortszeit (13:16 Berlin). Die Erststufe fliegt zum 14. Mal und soll an Land auf LZ-4 aufsetzen (SpaceX). An Bord sind Satelliten für das Aufklärungsnetz, das SpaceX mit Northrop Grumman für das NRO baut (Next Spaceflight). Routine-Start, aber Vandenberg hat mit USSF-317 am 18.11. und USSF-266 am 23.11. eine dichte Woche; Verschiebungen um einen Tag sind häufig. 80 % für den genannten Termin. Kurswirkung gering, zeigt aber das Militärgeschäft von SpaceX.",
+      "example": false,
+      "sources": [
+        {
+          "title": "SpaceX: NROL-136 Mission (Sa 21.11., Fenster ab 04:30 PT, Ersatz So 04:16 PT)",
+          "url": "https://www.spacex.com/launches/nrol136"
+        },
+        {
+          "title": "Next Spaceflight: NROL-136 (21.11. 12:30 UTC, B1097, 14. Flug)",
+          "url": "https://nextspaceflight.com/launches/details/8468/"
+        }
+      ]
+    },
+    {
       "id": "evt-falcon9-ussf266",
       "title": "SpaceX: Falcon-9-Start USSF-266 für die Space Force (verschoben auf Mo 23.11. 17:04)",
       "date": "2026-11-23",
@@ -783,7 +715,7 @@
       ],
       "probabilityPct": 75,
       "impact": "niedrig",
-      "reasoning": "SpaceX zielt auf Dienstag 17.11., Vier-Stunden-Fenster ab 08:58 Uhr Ortszeit Vandenberg (17:58 Berlin), Ersatz Mittwoch 08:49 Ortszeit. Booster fliegt zum 29. Mal. Vierter Space-Force-Start von SLC-4E in kurzer Folge, deshalb 75 % für den Zieltag. Kurswirkung gering. Stand So 05:30: Verschoben. SpaceX zielt jetzt auf Montag 23.11., Vier-Stunden-Fenster ab 08:04 Uhr Ortszeit Vandenberg (17:04 Berlin), Ersatz Di 24.11. 07:55 Ortszeit (16:55 Berlin). Laut Launch-Library-Verlauf rutschte der Start schon am 13.11. vom 18. auf den 23.11.; einen Grund nennt SpaceX nicht (SpaceX, Space Launch Live). 75 % unverändert für den neuen Termin.",
+      "reasoning": "SpaceX zielt auf Dienstag 17.11., Vier-Stunden-Fenster ab 08:58 Uhr Ortszeit Vandenberg (17:58 Berlin), Ersatz Mittwoch 08:49 Ortszeit. Booster fliegt zum 29. Mal. Vierter Space-Force-Start von SLC-4E in kurzer Folge, deshalb 75 % für den Zieltag. Kurswirkung gering. Stand So 05:30: Verschoben. SpaceX zielt jetzt auf Montag 23.11., Vier-Stunden-Fenster ab 08:04 Uhr Ortszeit Vandenberg (17:04 Berlin), Ersatz Di 24.11. 07:55 Ortszeit (16:55 Berlin). Laut Launch-Library-Verlauf rutschte der Start schon am 13.11. vom 18. auf den 23.11.; einen Grund nennt SpaceX nicht (SpaceX, Space Launch Live). 75 % unverändert für den neuen Termin. Stand So 06:30: Unverändert Mo 23.11. 16:04 UTC (17:04 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -797,6 +729,10 @@
         {
           "title": "Space Launch Live: USSF-266 – Verschiebungsverlauf (13.11.: auf 23.11. 16:04 UTC)",
           "url": "https://spacelaunchlive.com/launches/falcon-9-block-5-ussf-266/"
+        },
+        {
+          "title": "Launch Library 2: USSF-266 (Stand 15.11.: 23.11. 16:04 UTC, „Go“)",
+          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?search=USSF-266"
         }
       ]
     },
@@ -814,7 +750,7 @@
       ],
       "probabilityPct": 65,
       "impact": "mittel",
-      "reasoning": "Im Q3-Call kündigte Tesla Cybercab-Fahrten in Dallas für „nächsten Monat“ an; in Austin fahren bereits über 300 Cybercabs. Musk bekräftigte am 6.11. die Kapazitätsverschiebung Richtung Cybercab (Cybertruck in Texas Mitte 2027 runter). Das Datum hier ist das Monatsende als Frist, kein angekündigter Tag. Ich bleibe bei 55 %, weil Tesla bei Robotaxi-Terminen oft rutscht, der Schritt Austin→Dallas aber klein ist. Politisches Risiko: nach den Midterms in Texas mehr Aufsicht über autonome Fahrdienste möglich. Stand So 05:30: Am Sa wurden in Dallas mehr als 50 Cybercabs mit Tesla-Schriftzug auf einem Parkplatz gefilmt, einige offenbar mit Starlink-Antenne; Sawyer Merritt schreibt, erste öffentliche Fahrten „stehen bevor“. Die Zahl ist eine Schätzung von Beobachtern, Tesla hat noch keinen Start in Dallas verkündet, Fahrgäste fahren dort bisher im Model Y (Sawyer Merritt, Robotaxi DMV USA auf X). Eine Flotte vor Ort zwei Wochen vor Monatsende spricht für den November-Termin: 65 statt 55 %.",
+      "reasoning": "Im Q3-Call kündigte Tesla Cybercab-Fahrten in Dallas für „nächsten Monat“ an; in Austin fahren bereits über 300 Cybercabs. Musk bekräftigte am 6.11. die Kapazitätsverschiebung Richtung Cybercab (Cybertruck in Texas Mitte 2027 runter). Das Datum hier ist das Monatsende als Frist, kein angekündigter Tag. Ich bleibe bei 55 %, weil Tesla bei Robotaxi-Terminen oft rutscht, der Schritt Austin→Dallas aber klein ist. Politisches Risiko: nach den Midterms in Texas mehr Aufsicht über autonome Fahrdienste möglich. Stand So 05:30: Am Sa wurden in Dallas mehr als 50 Cybercabs mit Tesla-Schriftzug auf einem Parkplatz gefilmt, einige offenbar mit Starlink-Antenne; Sawyer Merritt schreibt, erste öffentliche Fahrten „stehen bevor“. Die Zahl ist eine Schätzung von Beobachtern, Tesla hat noch keinen Start in Dallas verkündet, Fahrgäste fahren dort bisher im Model Y (Sawyer Merritt, Robotaxi DMV USA auf X). Eine Flotte vor Ort zwei Wochen vor Monatsende spricht für den November-Termin: 65 statt 55 %. Stand So 06:30: Keine neue Ankündigung von Tesla über Nacht; Fahrgäste in Dallas bekommen weiter ein Model Y, obwohl dort Dutzende Cybercabs gefilmt wurden (Electric Vehicles). 65 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -840,6 +776,10 @@
         {
           "title": "@RobotaxiDMVUSA auf X (15.11., 00:12): 50+ Cybercabs in Dallas, Schätzung der Community, noch kein Fahrbetrieb",
           "url": "https://x.com/RobotaxiDMVUSA/status/2121743113492234406"
+        },
+        {
+          "title": "Electric Vehicles: Dutzende Cybercabs in Dallas gefilmt, Dallas-Fahrgäste weiter im Model Y (14.11.)",
+          "url": "https://eletric-vehicles.com/tesla/tesla-cybercabs-filmed-by-the-dozen-in-dallas-before-planned-launch/"
         }
       ]
     },

@@ -20,8 +20,18 @@ function series(id) {
   return production.series.find((item) => item.id === id);
 }
 
-test("Starship-Karte formatiert Berlin und zählt aus dem Ziel", () => {
-  assert.equal(formatLaunchWhen(production.nextLaunch.target), "Fr 13.11. · 23:45 Berlin");
+test("Start-Karte formatiert Berlin und zählt aus dem Ziel", () => {
+  // feste Beispiele: Winterzeit, UTC-Eingabe und Sommerzeit landen in Berliner Ortszeit
+  assert.equal(formatLaunchWhen("2026-11-13T23:45:00+01:00"), "Fr 13.11. · 23:45 Berlin");
+  assert.equal(formatLaunchWhen("2026-11-18T03:14:00Z"), "Mi 18.11. · 04:14 Berlin");
+  assert.equal(formatLaunchWhen("2026-07-01T10:00:00Z"), "Mi 01.07. · 12:00 Berlin");
+  assert.equal(formatLaunchWhen("kein Datum"), "");
+  // der aktuelle nächste Start aus den Daten: gültiges Ziel, sauberes Format, kein fester Starttermin im Test
+  const launch = production.nextLaunch;
+  assert.ok(launch && typeof launch.target === "string", "nextLaunch.target fehlt");
+  assert.ok(!Number.isNaN(new Date(launch.target).getTime()), `ungültiges Ziel: ${launch.target}`);
+  assert.match(formatLaunchWhen(launch.target), /^(Mo|Di|Mi|Do|Fr|Sa|So) \d{2}\.\d{2}\. · \d{2}:\d{2} Berlin$/);
+  assert.ok(Array.isArray(launch.sources) && launch.sources.length > 0, "nextLaunch ohne Quelle");
 });
 
 test("Produktionszeilen kommen aus den Punkten, nicht aus festem Text", () => {
