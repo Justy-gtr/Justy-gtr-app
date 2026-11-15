@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-15T18:00:00+01:00",
+  "asOf": "2026-11-15T20:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,94 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2122043427776819503",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-15T20:05:53+01:00",
+      "summaryDe": "Musk zitiert mit dem Wort „Starlink“ einen Post von DogeDesigner: Honduras habe 1.860 Starlink-Antennen in 218 Gemeinden aufgestellt, vor allem für Schulen auf dem Land. Die Zahl stammt aus dem zitierten Post, eine offizielle Mitteilung dazu haben wir nicht gefunden.",
+      "originalText": "Starlink",
+      "url": "https://x.com/elonmusk/status/2122043427776819503",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (15.11., 20:05)",
+          "url": "https://x.com/elonmusk/status/2122043427776819503"
+        },
+        {
+          "title": "@cb_doge auf X: Honduras – 1.860 Starlink-Antennen (15.11., 14:12)",
+          "url": "https://x.com/cb_doge/status/2121954541818310835"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122041658426765334",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-15T19:58:51+01:00",
+      "summaryDe": "Musk zitiert mit „Starlink“ die Meldung, dass Lufthansa ihren ersten Airbus A350-1000 ab dem Erstflug München–Tokio am 3. Dezember mit Starlink-WLAN ausstattet – als erstes Langstreckenflugzeug der Gruppe. Laut Lufthansa ist das WLAN für Miles-&-More-Mitglieder in allen Klassen kostenlos; bis 2029 sollen rund 850 Flugzeuge der Gruppe Starlink bekommen.",
+      "originalText": "Starlink",
+      "url": "https://x.com/elonmusk/status/2122041658426765334",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (15.11., 19:58)",
+          "url": "https://x.com/elonmusk/status/2122041658426765334"
+        },
+        {
+          "title": "Lufthansa Group: Erster A350-1000 „Deutschland“ – erstes Langstreckenflugzeug mit Starlink-WLAN, Erstflug 3.12. nach Tokio",
+          "url": "https://newsroom.lufthansagroup.com/en/lufthansa-group-the-worlds-largest-airbus-customer-receives-its-700th-airbus-aircraft/"
+        },
+        {
+          "title": "Highend Rewards: Lufthansa plant Starlink für rund 850 Flugzeuge bis 2029",
+          "url": "https://www.highendrewards.com/lufthansa-a350-1000-starlink-wifi-long-haul/"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122039394164990097",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-15T19:49:51+01:00",
+      "summaryDe": "Goldman-Sachs-Chef David Solomon nannte den Starship-Fang „spektakulär“ und schrieb, er wolle das einmal live sehen. Musk antwortet: „Du wärst sehr willkommen.“ Freundlicher Austausch, keine Firmen-Neuigkeit.",
+      "originalText": "@DavidSolomon You would be most welcome",
+      "url": "https://x.com/elonmusk/status/2122039394164990097",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (15.11., 19:49)",
+          "url": "https://x.com/elonmusk/status/2122039394164990097"
+        },
+        {
+          "title": "@DavidSolomon auf X (15.11., 14:37)",
+          "url": "https://x.com/DavidSolomon/status/2121960724943823205"
+        }
+      ]
+    },
     {
       "id": "post-spacex-2122001927861158109",
       "account": "@SpaceX",
@@ -8838,5 +8926,5 @@
       ]
     }
   ],
-  "notes": "15.11. 18:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20). @SpaceX postete um 17:20 Werbung für Version 2.0 seines Browser-Spiels. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 18:20). 15.11. 16:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 16:12). 15.11. 15:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 15:12). 15.11. 14:00: Keine neuen eigenen Posts von @elonmusk seit 09:25 (danach nur ein Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 14:20). 15.11. 13:00: Keine neuen Posts von @elonmusk seit 10:20 (letzter: Repost des ALS-Patienten-Videos), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 13:20). 15.11. 11:30: Keine neuen eigenen Posts von @elonmusk seit 09:25 (nur zwei Reposts: CBS-Bericht zum Flug-15-Start, Video eines ALS-Patienten mit Hirnimplantat), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 11:40). 15.11. 09:30: Neu vier Musk-Posts zum Schiffsfang und zu Rechenzentren im All (08:56–09:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 09:35). Nicht übernommen: Musk-Antworten ohne Inhalt („Mentats“, „The sky is not even close to the limit“). 15.11. 08:30: Neu nur Musks Douglas-Adams-Scherz zu Ship 42 (03:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @Peter_J_Beck; @RocketLab zuletzt 03:20 (X-Abfrage bis 08:40). Nicht übernommen: Musk-Zitat eines Politik-Memes (04:08). 15.11. 06:30: Keine neuen Firmen-Posts seit 05:20 (X-Abfrage bis 06:40 für @elonmusk, @SpaceX, @Tesla, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Starlink). Nicht übernommen: Musk-Reposts ohne Firmenbezug und Werbung für Grok. 15.11. 05:30: Neu: Musk zum Schiffsfang (Glückwunsch, Inspektion, „Ship 42 looks great“, drei Booster und ein Schiff, Umarmung), SpaceX-Rückblick auf Flight 15, Rocket Lab und Peter Beck zum 100. Electron-Start. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:20). Nicht übernommen: Musk-Zitate ohne Firmenbezug (Politik-Meme, Werbung für Grok)."
+  "notes": "15.11. 20:00: @elonmusk zitierte zwei Starlink-Meldungen (Lufthansa-Langstrecke, Honduras-Schulen) und lud Goldman-Chef David Solomon zu einem Starship-Start ein; dazu zwei Reposts (Paul Graham, David Solomon) ohne eigene Aussage. Keine neuen Posts von @SpaceX seit 17:20, keine von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab (X-Abfrage bis 20:15). 15.11. 18:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20). @SpaceX postete um 17:20 Werbung für Version 2.0 seines Browser-Spiels. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 18:20). 15.11. 16:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 16:12). 15.11. 15:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 15:12). 15.11. 14:00: Keine neuen eigenen Posts von @elonmusk seit 09:25 (danach nur ein Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 14:20). 15.11. 13:00: Keine neuen Posts von @elonmusk seit 10:20 (letzter: Repost des ALS-Patienten-Videos), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 13:20). 15.11. 11:30: Keine neuen eigenen Posts von @elonmusk seit 09:25 (nur zwei Reposts: CBS-Bericht zum Flug-15-Start, Video eines ALS-Patienten mit Hirnimplantat), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 11:40). 15.11. 09:30: Neu vier Musk-Posts zum Schiffsfang und zu Rechenzentren im All (08:56–09:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 09:35). Nicht übernommen: Musk-Antworten ohne Inhalt („Mentats“, „The sky is not even close to the limit“). 15.11. 08:30: Neu nur Musks Douglas-Adams-Scherz zu Ship 42 (03:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @Peter_J_Beck; @RocketLab zuletzt 03:20 (X-Abfrage bis 08:40). Nicht übernommen: Musk-Zitat eines Politik-Memes (04:08). 15.11. 06:30: Keine neuen Firmen-Posts seit 05:20 (X-Abfrage bis 06:40 für @elonmusk, @SpaceX, @Tesla, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Starlink). Nicht übernommen: Musk-Reposts ohne Firmenbezug und Werbung für Grok. 15.11. 05:30: Neu: Musk zum Schiffsfang (Glückwunsch, Inspektion, „Ship 42 looks great“, drei Booster und ein Schiff, Umarmung), SpaceX-Rückblick auf Flight 15, Rocket Lab und Peter Beck zum 100. Electron-Start. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:20). Nicht übernommen: Musk-Zitate ohne Firmenbezug (Politik-Meme, Werbung für Grok)."
 }
