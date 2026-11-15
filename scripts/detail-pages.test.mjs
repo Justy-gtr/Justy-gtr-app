@@ -59,13 +59,19 @@ test("Wochenkurve nimmt die Stundenreihe", () => {
   const spcx = prices.tickers.find((item) => item.symbol === "SPCX");
   const curve = weekCurve(spcx.history, weekly.sessions);
   const days = [...new Set(curve.map((point) => point.day))];
-  assert.deepEqual(days, ["2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06"]);
+  // die Handelstage kommen aus dem aktuellen Rückblick, nicht aus einer festen Woche
+  const expectedDays = weekly.symbols.find((item) => item.symbol === "SPCX").closes.map((point) => point.t);
+  assert.equal(expectedDays[0], weekly.sessions.start);
+  assert.equal(expectedDays[expectedDays.length - 1], weekly.sessions.end);
+  assert.deepEqual(days, expectedDays);
   const hourly = new Set((spcx.history["1H"] || []).map((point) => point.t));
   assert.ok(curve.length >= 40, `zu wenig Stunden: ${curve.length}`);
   assert.ok(curve.every((point) => hourly.has(point.t)));
-  const thursday = curve.filter((point) => point.day === "2026-11-05");
-  assert.ok(thursday.length < 30, "Donnerstag darf nicht die 5-Minuten-Reihe sein");
-  assert.equal(curve.some((point) => point.day === "2026-11-01"), false);
+  for (const day of expectedDays) {
+    const points = curve.filter((point) => point.day === day);
+    assert.ok(points.length < 30, `${day} darf nicht die 5-Minuten-Reihe sein`);
+  }
+  assert.equal(curve.some((point) => point.day < weekly.sessions.start || point.day > weekly.sessions.end), false);
   for (const row of weekly.symbols) {
     const move = priceMove(row.startEur, row.endEur);
     assert.equal(Math.round(move * 10) / 10, row.changePct);
@@ -93,7 +99,7 @@ test("Beide Ansichten bleiben ohne Kauf- und Beratungssätze", () => {
   assert.match(week, /Nächste Woche/);
   assert.match(week, /Mehr lesen/);
   assert.match(week, /data-chart="week"/);
-  assert.match(week, /ESCAPADE Gold/);
+  assert.ok(weekly.upcoming.every((item) => week.includes(item.title.replace(/&/g, "&amp;"))), "Termine der nächsten Woche fehlen");
   assert.equal(week.includes("kaufen"), false);
   assert.equal(week.includes("Anlageberatung"), false);
 });

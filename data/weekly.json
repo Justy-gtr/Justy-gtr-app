@@ -1,193 +1,394 @@
 {
   "example": false,
-  "weekOf": "2026-11-02",
-  "title": "Wochenrückblick KW 45",
-  "lede": "2.–8. November. Freitag gegen Freitag in Euro. Tech fiel nach der Wahl, Freitag kam eine Erholung.",
-  "sessions": { "start": "2026-11-02", "end": "2026-11-06" },
+  "weekOf": "2026-11-09",
+  "title": "Wochenrückblick KW 46",
+  "lede": "9.–13. November, Freitag gegen Freitag in Euro: alle drei im Plus, Rocket Lab vorneweg. Am Wochenende fing der Turm zum ersten Mal ein Starship-Schiff.",
+  "sessions": {
+    "start": "2026-11-09",
+    "end": "2026-11-13"
+  },
   "symbols": [
     {
       "symbol": "SPCX",
-      "startEur": 120.47,
-      "endEur": 119.58,
-      "changePct": -0.7,
+      "startEur": 117.64,
+      "endEur": 125.34,
+      "changePct": 6.5,
       "closes": [
-        { "t": "2026-11-02", "eur": 122.23 },
-        { "t": "2026-11-03", "eur": 126.26 },
-        { "t": "2026-11-04", "eur": 121.28 },
-        { "t": "2026-11-05", "eur": 110.03 },
-        { "t": "2026-11-06", "eur": 119.58 }
+        {
+          "t": "2026-11-09",
+          "eur": 126.76
+        },
+        {
+          "t": "2026-11-10",
+          "eur": 127.52
+        },
+        {
+          "t": "2026-11-11",
+          "eur": 129.26
+        },
+        {
+          "t": "2026-11-12",
+          "eur": 129.04
+        },
+        {
+          "t": "2026-11-13",
+          "eur": 125.34
+        }
       ]
     },
     {
       "symbol": "TSLA",
-      "startEur": 358.85,
-      "endEur": 323.7,
-      "changePct": -9.8,
+      "startEur": 323.7,
+      "endEur": 353.6,
+      "changePct": 9.2,
       "closes": [
-        { "t": "2026-11-02", "eur": 367 },
-        { "t": "2026-11-03", "eur": 355.85 },
-        { "t": "2026-11-04", "eur": 342.15 },
-        { "t": "2026-11-05", "eur": 312.2 },
-        { "t": "2026-11-06", "eur": 323.7 }
+        {
+          "t": "2026-11-09",
+          "eur": 336.4
+        },
+        {
+          "t": "2026-11-10",
+          "eur": 336.85
+        },
+        {
+          "t": "2026-11-11",
+          "eur": 353.95
+        },
+        {
+          "t": "2026-11-12",
+          "eur": 354.05
+        },
+        {
+          "t": "2026-11-13",
+          "eur": 353.6
+        }
       ]
     },
     {
       "symbol": "RKLB",
-      "startEur": 49.2,
-      "endEur": 47.35,
-      "changePct": -3.8,
+      "startEur": 47.35,
+      "endEur": 56.2,
+      "changePct": 18.7,
       "closes": [
-        { "t": "2026-11-02", "eur": 46.95 },
-        { "t": "2026-11-03", "eur": 49.8 },
-        { "t": "2026-11-04", "eur": 46.5 },
-        { "t": "2026-11-05", "eur": 41.8 },
-        { "t": "2026-11-06", "eur": 47.35 }
+        {
+          "t": "2026-11-09",
+          "eur": 51
+        },
+        {
+          "t": "2026-11-10",
+          "eur": 55.5
+        },
+        {
+          "t": "2026-11-11",
+          "eur": 60.5
+        },
+        {
+          "t": "2026-11-12",
+          "eur": 60.3
+        },
+        {
+          "t": "2026-11-13",
+          "eur": 56.2
+        }
       ]
     }
   ],
   "events": [
-    { "icon": "rocket", "text": "USSF-432 gestartet, Booster gelandet", "meta": "Sa · SpaceX" },
-    { "icon": "orbit", "text": "Flight 15: frühestens Fr 13.11., erster Doppel-Fang", "meta": "Offizielle Zielmarke" },
-    { "icon": "alert", "text": "ESCAPADE Blue-Burn noch nicht bestätigt", "meta": "Sa 07.11. · Rocket Lab / NASA" },
-    { "icon": "car", "text": "Tesla-Start Argentinien am 20.11. bestätigt", "meta": "Tesla" },
-    { "icon": "target", "text": "Karl: 3 von 3 Terminen getroffen (Brier 0,016)", "meta": "Trefferbilanz" }
+    {
+      "icon": "rocket",
+      "text": "Starship Flight 15: Turm fängt erstmals das Schiff",
+      "meta": "Sa 14.11. 22:21 · SpaceX · Booster gewassert"
+    },
+    {
+      "icon": "rocket",
+      "text": "100. Electron-Start geglückt, Satellit im Orbit",
+      "meta": "Sa 14.11. 06:31 · Rocket Lab"
+    },
+    {
+      "icon": "target",
+      "text": "Rocket Lab: Rekordumsatz 267,8 Mio. $, 8 Neutron-Aufträge",
+      "meta": "Mo 09.11. · Q3-Zahlen"
+    },
+    {
+      "icon": "orbit",
+      "text": "ESCAPADE: beide Sonden auf Marskurs",
+      "meta": "Mo 09.11. · NASA / Rocket Lab"
+    },
+    {
+      "icon": "alert",
+      "text": "Nvidia-Chef Huang tritt zurück, Chipwerte fallen",
+      "meta": "Do 12.11. · Nvidia"
+    },
+    {
+      "icon": "car",
+      "text": "Robotaxi in San Antonio, jetzt rund um die Uhr",
+      "meta": "Mo 09.11. / Do 12.11. · Tesla"
+    },
+    {
+      "icon": "car",
+      "text": "Cybercab privat bestellbar: 29.990 $ + 299 $ im Monat",
+      "meta": "Sa 14.11. · Tesla (ausgewählte Kunden)"
+    },
+    {
+      "icon": "alert",
+      "text": "Grok 4.8 kam nicht wie angekündigt",
+      "meta": "So 15.11. · SpaceX SI · nur Bot-Antwort, nichts Offizielles"
+    },
+    {
+      "icon": "target",
+      "text": "Karl: 20 von 21 Terminen eingetreten, Tagesfrage 1 von 5",
+      "meta": "Trefferbilanz · Brier 0,046"
+    }
   ],
   "upcoming": [
-    { "date": "2026-11-09", "time": "11:51", "title": "ESCAPADE Gold", "probabilityPct": 85 },
-    { "date": "2026-11-09", "time": "23:00", "title": "Rocket-Lab-Zahlen", "probabilityPct": 97 },
-    { "date": "2026-11-10", "time": "04:03", "title": "USSF-627", "probabilityPct": 85 },
-    { "date": "2026-11-10", "time": "14:30", "title": "US-Inflation", "probabilityPct": 95 },
-    { "date": "2026-11-13", "time": "05:23", "title": "USSF-317", "probabilityPct": 75 },
-    { "date": "2026-11-13", "time": "23:45", "title": "Starship Flight 15", "probabilityPct": 65 },
-    { "date": "2026-11-14", "time": "06:30", "title": "100. Electron-Start", "probabilityPct": 75 }
+    {
+      "date": "2026-11-16",
+      "time": "03:00",
+      "title": "China: Einzelhandel & Industrie",
+      "probabilityPct": 97
+    },
+    {
+      "date": "2026-11-17",
+      "time": "14:30",
+      "title": "US-Einzelhandel",
+      "probabilityPct": 95
+    },
+    {
+      "date": "2026-11-17",
+      "time": "22:20",
+      "title": "Nvidia-Zahlen Q3",
+      "probabilityPct": 99
+    },
+    {
+      "date": "2026-11-18",
+      "time": "04:14",
+      "title": "USSF-317 (Falcon 9)",
+      "probabilityPct": 75
+    },
+    {
+      "date": "2026-11-18",
+      "title": "APEC: Trump trifft Xi",
+      "probabilityPct": 92
+    },
+    {
+      "date": "2026-11-18",
+      "time": "20:00",
+      "title": "Fed-Protokoll",
+      "probabilityPct": 98
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Anthropic-Börsengang",
+      "probabilityPct": 85
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Walmart-Zahlen Q3",
+      "probabilityPct": 97
+    },
+    {
+      "date": "2026-11-20",
+      "title": "Tesla-Start Argentinien",
+      "probabilityPct": 85
+    },
+    {
+      "date": "2026-11-21",
+      "time": "13:30",
+      "title": "NROL-136 (Falcon 9)",
+      "probabilityPct": 80
+    }
   ],
-  "summary": "Woche 2.–8. November, Kurse Freitag gegen Freitag in Euro.\nSPCX: ±0 % (−0,2 %). Mittwoch und Donnerstag tief, Freitag zurück.\nTSLA: −9,8 % auf Xetra (323,70 €). Das ist echt, kein Datenfehler.\nRKLB: −3,8 % in Frankfurt (47,35 €).\nGrund: Nach der Wahl am Dienstag fielen Tech-Werte. Freitag kam eine Erholung.",
+  "summary": "Woche 9.–13. November, Kurse Freitag gegen Freitag in Euro (Stuttgart, aus prices.json).\nSPCX: 117,64 € → 125,34 € (+6,5 %). In Dollar +3,6 % (134,27 $ → 139,11 $).\nTSLA: 323,70 € → 353,60 € (+9,2 %). In Dollar +8,9 % (358,22 $ → 390,22 $).\nRKLB: 47,35 € → 56,20 € (+18,7 %). In Dollar +15,9 % (53,07 $ → 61,53 $).\nWarum Euro mehr zeigt als Dollar: Der deutsche Schluss am 6.11. kam vor dem US-Plus vom Freitagabend. Montag holte das nach. Dazu wurde der Euro etwas schwächer (1,114 → 1,103 $).\nWas die Woche trug: Erholung der Tech-Werte am Montag, Rocket Labs Rekordquartal, Teslas Robotaxi-Ausbau. Gebremst haben die heiße US-Inflation am Dienstag und der Nvidia-Schock ab Mittwochabend. Am Freitag fielen alle drei, vor allem RKLB.\nAm Wochenende, bei geschlossener Börse: erster Schiffsfang von Starship und der 100. Electron-Start. Montag ist der erste Handelstag danach.",
   "highlights": [
     {
       "title": "📈 Kurse",
-      "text": "SPCX 120,70 € → 120,51 € (−0,2 %). TSLA Xetra 358,85 € → 323,70 € (−9,8 %), in Dollar −10,4 %. RKLB Frankfurt 49,20 € → 47,35 € (−3,8 %). Hinweis: Am Wochenende zeigt die App bei TSLA −9,8 % als Tagesminus. Das ist in Wahrheit das Wochenminus."
+      "text": "SPCX 117,64 € → 125,34 € (+6,5 %), bestes Tagesplus am Montag. TSLA 323,70 € → 353,60 € (+9,2 %), der Sprung kam Mittwoch (+5,1 %). RKLB 47,35 € → 56,20 € (+18,7 %), Hoch am Mittwoch mit 60,50 €, danach Gewinnmitnahmen und gesenkte Kursziele. Freitag schlossen alle drei leichter. Hinweis: Den Freitagsschluss 6.11. für SPCX führt prices.json heute mit 117,64 €. Im Rückblick KW 45 stand 119,58 €, die Kursreihe wurde seitdem neu geladen."
     },
     {
       "title": "🚀 SpaceX",
-      "text": "USSF-432 gestartet, Booster gelandet (Sa 01:48). Flight 15 offiziell: frühestens Fr 13.11., erster Fang von Booster und Schiff. Die Zulassung fehlt noch."
+      "text": "Flight 15 startete Fr 23:47. Der Booster-Fang wurde abgebrochen, der Booster wasserte im Golf. Musk: Die Triebwerke liefen leicht unter Plan, der Treibstoff reichte nicht. Abhilfe ist Raptor V3.2. Das Schiff erreichte den Orbit, setzte 26 Starlink-V3-Satelliten aus und wurde Sa 22:21 vom Turm gefangen. Das ist der erste Fang eines Schiffs überhaupt. Dazu USSF-627 gestartet (Do 05:36, zwei Tage später als geplant). USSF-317 ist zweimal verschoben, jetzt Mi 18.11. 04:14. Bloomberg berichtet, eine Fusion mit Tesla könne schon im Dezember kommen. Bestätigt ist das nicht."
     },
     {
-      "title": "🔴 ESCAPADE (Rocket Lab / NASA)",
-      "text": "Blue sollte am Sa 07.11. zünden. NASA und Rocket Lab haben es bis So 18 Uhr nicht bestätigt. Darum noch nicht gewertet. Gold zündet Mo 09.11. um 11:51."
+      "title": "🟢 Rocket Lab",
+      "text": "Q3 am Mo: Rekordumsatz 267,8 Mio. $ (+73 %), Auftragsbestand rund 3,57 Mrd. $, acht Neutron-Starts für über 515 Mio. $. Der Verlust je Aktie war höher als erwartet (−0,12 $), die Aktie drehte trotzdem ins Plus. ESCAPADE: beide Sonden auf Marskurs (NASA). Sa 06:31 der 100. Electron-Start, Satellit für iQPS ausgesetzt. Pentagon-Kredit über 150 Mio. $ für die Neutron-Startrate, an Bedingungen geknüpft."
     },
     {
       "title": "🚗 Tesla",
-      "text": "Start in Argentinien am 20.11. bestätigt. Musk: Cybertruck läuft noch 8–9 Monate, dann mehr Cybercab. Niederlande: FSD heißt jetzt „Tesla Assisted Driving“."
+      "text": "Robotaxi startet Mo in San Antonio, Austin bekommt ein größeres Gebiet. Ab Do fährt der Dienst rund um die Uhr. Sa: Ausgewählte Kunden dürfen ein Cybercab für 29.990 $ plus 299 $ im Monat bestellen. Musk findet die Monatsgebühr zu hoch, eher um 115 $. Einen neuen Preis gibt es nicht. Gegenwind: China-Verkäufe aus Shanghai im Oktober −66 % zum Vorjahr (CPCA)."
+    },
+    {
+      "title": "⚠️ Markt",
+      "text": "US-Inflation Oktober heißer als erwartet (+0,4 %, Kern +0,3 %). Nvidia: Chef Jensen Huang tritt am Do zurück, Finanzchefin Colette Kress führt vorläufig. Chipwerte fielen, Nvidia auf Xetra in der Woche von 169,76 € auf 145,52 €. Musk stellte sich mehrfach hinter Huang."
     },
     {
       "title": "🗣️ Wichtigste Posts",
-      "text": "Musk (Fr): SpaceX bald über 100 Mrd. $ Jahresumsatz, über 500 Mrd. bis Ende 2027. Das ist sein Ziel, keine Zahl aus einem Bericht. Musk (Fr): Flight 15 versucht, beide Teile zu fangen. @Starlink (Mi): Mobilfunknetz mit Qualcomm ab 2027."
+      "text": "Musk (Di): Grok 4.8 soll „später diese Woche“ vorsichtig starten. Das ist nicht eingetreten. Grok 5 „vielleicht in zwei, drei Monaten“. Musk (Do): Huang einzustellen „wäre eine Ehre“. @robotaxi (Do): Betrieb rund um die Uhr. @SpaceX (Sa): Schiff gefangen. Musk (Sa): Grund für den verlorenen Booster, und am Ende über 100.000 Starlink-Satelliten. @RocketLab (Sa): 100. Electron im Orbit. Beck: „100 % Missionserfolg“."
     },
     {
       "title": "🎯 Karl: Trefferbilanz",
-      "text": "Termine mit Prozent: 3 von 3 eingetroffen (Arbeitsmarkt 95 %, Baron-Gespräch 92 %, USSF-432 80 %). Brier-Wert 0,016 (0 = perfekt). Tagesfrage: 3 von 3 richtig, Brier 0,088. ESCAPADE und USSF-627 sind noch offen. Die 9 Aktien-Tipps laufen bis Mai 2027 und sind alle noch offen."
+      "text": "21 Kalender-Termine waren diese Woche fällig, gewertet wird der erste Wert je Termin. 20 traten ein, einer nicht: Grok 4.8 (erst 50 %, zuletzt 10 %). Brier 0,046 (0 = perfekt). Mit dem letzten Wert vor dem Ergebnis sind es 0,025. Ehrlich gesagt: Viele Termine waren fest angesetzte Zahlen (95–97 %), die sind leicht. Bei den schweren lag Karl zu tief. Flight 15 stand zwischendurch nur bei 30 %, der Schiffsfang bei 45 %, Huangs Abgang bei 65 %. Nicht gewertet: Huang-Frist (lief ohne öffentliches Ergebnis ab). USSF-317 ist verschoben und noch offen. Die 9 Aktien-Tipps laufen bis Mai 2027 und sind alle offen."
     },
     {
       "title": "👥 Schwarm gegen Karl",
-      "text": "Noch keine Wertung. Beide Quoten stehen auf null, die Tipps sind erst eine Woche alt. Zwischenstand seit Einstieg: Henkel +1,0 % (nur Karl). Nvidia −6,0 % und Broadcom −8,2 % (der Schwarm kauft, Karl ist vorsichtig). Nur eine Momentaufnahme."
+      "text": "Noch keine Wertung. Beide Quoten stehen auf null, kein Tipp ist entschieden. Zwischenstand seit Einstieg in Euro, Fr 13.11.: Wo Karl vorsichtiger war als der Schwarm, liegt Nvidia bei −19,4 %. Dort lag Karl richtig. Broadcom +6,8 %, TSMC +2,6 % und SpaceX +3,6 % sprechen eher für den Schwarm. Wo Karl allein eine Zahl setzte: Rocket Lab +20,5 %, Henkel +5,5 %. Tesla +3,3 %. Das ist nur eine Momentaufnahme."
     },
     {
       "title": "❓ Tagesfrage",
-      "text": "Karl lag 3-mal richtig: SPCX Do (nein), SPCX Fr (ja), USSF-432 (ja). ESCAPADE ist nicht gewertet. Offen bis Di 08:30: Startet USSF-627 im ersten Fenster? Karl sagt ja. Deine Punkte zählt nur dein iPhone."
+      "text": "Diese Woche lag Karl nur 1-mal von 5 richtig. Er sagte, USSF-627 startet im ersten Fenster, der Start kam aber zwei Tage später. Bei RKLB lag er am Di, Mi und Fr falsch und am Do richtig. Seit Start: 5 von 9. Offen bis Mo 22:15: Schließt RKLB am Montag über 61,53 $? Karl sagt knapp ja. Deine Punkte zählt nur dein iPhone."
     },
     {
       "title": "📅 Nächste Woche",
-      "text": "Mo 11:51 ESCAPADE Gold (85 %). Mo 23:00 Rocket-Lab-Zahlen (97 %). Di 04:03 USSF-627 (85 %). Di 14:30 US-Inflation (95 %). Fr 05:23 USSF-317 (75 %). Fr 23:45 Starship Flight 15 (65 %). Sa 06:30 100. Electron-Start (75 %)."
+      "text": "Mo 03:00 China-Daten (97 %). Di 14:30 US-Einzelhandel (95 %). Di 20:00 FAA-Anhörung zu mehr Starship-Starts (90 %). Di 22:20 Nvidia-Zahlen, die ersten ohne Huang (99 %). Mi 04:14 USSF-317 (75 %). Mi APEC mit Trump und Xi, Musk reist mit (92 %). Mi 20:00 Fed-Protokoll (98 %). Do Anthropic-Börsengang (85 %) und Walmart-Zahlen (97 %). Fr Tesla-Start Argentinien (85 %). Sa 13:30 NROL-136 (80 %). Danach: Mo 23.11. USSF-266 (75 %), So 29.11. Cygnus NG-25 (65 %)."
     }
   ],
   "sources": [
     {
-      "title": "Yahoo Finance: SPCX historische Kurse",
-      "url": "https://finance.yahoo.com/quote/SPCX/history/"
+      "title": "Yahoo Finance: SPX.SG (SpaceX Stuttgart)",
+      "url": "https://finance.yahoo.com/quote/SPX.SG/history/"
     },
     {
-      "title": "Yahoo Finance: TL0.DE (Tesla Xetra)",
-      "url": "https://finance.yahoo.com/quote/TL0.DE/history/"
+      "title": "Yahoo Finance: TL0.SG (Tesla Stuttgart)",
+      "url": "https://finance.yahoo.com/quote/TL0.SG/history/"
     },
     {
-      "title": "Yahoo Finance: 6RJ0.F (Rocket Lab Frankfurt)",
-      "url": "https://finance.yahoo.com/quote/6RJ0.F/history/"
+      "title": "Yahoo Finance: 6RJ0.SG (Rocket Lab Stuttgart)",
+      "url": "https://finance.yahoo.com/quote/6RJ0.SG/history/"
     },
     {
       "title": "Yahoo Finance: EURUSD",
       "url": "https://finance.yahoo.com/quote/EURUSD=X/history/"
     },
     {
-      "title": "PYE Markets: Wochenbilanz 06.11.2026 (Tesla −10,40 %)",
-      "url": "https://proveyouredge.com/articles/week-in-review-2026-11-07"
+      "title": "Yahoo Finance: NVD.DE (Nvidia Xetra)",
+      "url": "https://finance.yahoo.com/quote/NVD.DE/history/"
     },
     {
-      "title": "SpaceX: USSF-432 Mission",
-      "url": "https://www.spacex.com/launches/ussf432"
-    },
-    {
-      "title": "@SpaceX: Flight 15 frühestens 13.11.",
-      "url": "https://x.com/SpaceX/status/2119093662957060389"
+      "title": "@SpaceX: Starship vom Turm gefangen (14.11.)",
+      "url": "https://x.com/SpaceX/status/2121715216597827756"
     },
     {
       "title": "SpaceX: Starship Flight 15",
       "url": "https://www.spacex.com/launches/starship-flight-15"
     },
     {
-      "title": "NASA: ESCAPADE-Blog (kein Update nach dem Blue-Burn)",
-      "url": "https://science.nasa.gov/blogs/escapade/"
+      "title": "Ars Technica: Flight 15 erreicht den Orbit",
+      "url": "https://arstechnica.com/space/2026/11/starship-flight-15-powers-to-orbit-setting-up-a-possible-catch-on-saturday/"
     },
     {
-      "title": "NASA: ESCAPADE Burn-Zeiten",
-      "url": "https://science.nasa.gov/blogs/escapade/2026/11/02/nasas-twin-escapade-spacecraft-to-slingshot-past-earth-on-way-to-mars/"
+      "title": "@elonmusk: Warum der Booster verloren ging (14.11.)",
+      "url": "https://x.com/elonmusk/status/2121648438144024943"
     },
     {
-      "title": "@Tesla: Start in Argentinien",
-      "url": "https://x.com/Tesla/status/2118720752379899907"
-    },
-    {
-      "title": "LA NACION: Tesla bestätigt 20. November",
-      "url": "https://www.lanacion.com.ar/autos/tesla-confirmo-la-fecha-en-la-que-llegara-a-la-argentina-nid06112026/"
-    },
-    {
-      "title": "RDW: Teslas Fahrassistenz genehmigt",
-      "url": "https://www.rdw.nl/en/news/2026/rdw-approves-changes-to-tesla-driver-assistance-system"
-    },
-    {
-      "title": "@elonmusk: SpaceX >100 Mrd. $ (Baron-Gespräch)",
-      "url": "https://x.com/elonmusk/status/2118789262393090314"
-    },
-    {
-      "title": "@elonmusk: Booster und Schiff fangen",
-      "url": "https://x.com/elonmusk/status/2118732082843435305"
-    },
-    {
-      "title": "@Starlink: Qualcomm-Partnerschaft",
-      "url": "https://x.com/Starlink/status/2117973275414532165"
-    },
-    {
-      "title": "BLS: Arbeitsmarktbericht Oktober 2026",
-      "url": "https://www.bls.gov/news.release/empsit.htm"
-    },
-    {
-      "title": "Rocket Lab: Termin Q3-Zahlen",
-      "url": "https://www.globenewswire.com/news-release/2026/10/20/3385004/0/en/rocket-lab-announces-date-of-third-quarter-2026-financial-results.html"
-    },
-    {
-      "title": "SpaceX: USSF-627 Mission",
-      "url": "https://www.spacex.com/launches/ussf627"
+      "title": "@SpaceX: USSF-627 gestartet (12.11.)",
+      "url": "https://x.com/SpaceX/status/2120737709924720659"
     },
     {
       "title": "SpaceX: USSF-317 Mission",
       "url": "https://www.spacex.com/launches/ussf317"
     },
     {
-      "title": "BLS: CPI-Termine",
-      "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+      "title": "AFR/Bloomberg: Fusion SpaceX–Tesla womöglich im Dezember",
+      "url": "https://www.afr.com/world/north-america/spacex-and-tesla-on-track-for-merger-as-soon-as-december-20261113-p61dv1"
     },
     {
-      "title": "@RocketLab: 100. Electron am 14.11.",
-      "url": "https://x.com/RocketLab/status/2118521208639746494"
+      "title": "Rocket Lab: Ergebnisse Q3 2026",
+      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts"
+    },
+    {
+      "title": "Rocket Lab: Neutron-Aufträge über 515 Mio. $",
+      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation"
+    },
+    {
+      "title": "NASA: ESCAPADE auf dem Weg zum Mars",
+      "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/"
+    },
+    {
+      "title": "@RocketLab: 100. Electron, Nutzlast ausgesetzt (14.11.)",
+      "url": "https://x.com/RocketLab/status/2121488840359862297"
+    },
+    {
+      "title": "@Peter_J_Beck: „100 % Missionserfolg“",
+      "url": "https://x.com/Peter_J_Beck/status/2121526414587609177"
+    },
+    {
+      "title": "TechCrunch: Tesla-Robotaxi in San Antonio",
+      "url": "https://techcrunch.com/2026/11/09/tesla-expands-robotaxi-service-to-san-antonio/"
+    },
+    {
+      "title": "@robotaxi: Betrieb rund um die Uhr (12.11.)",
+      "url": "https://x.com/robotaxi/status/2120736143566344324"
+    },
+    {
+      "title": "@Tesla: Cybercab für Privatkunden (14.11.)",
+      "url": "https://x.com/Tesla/status/2121389588736520545"
+    },
+    {
+      "title": "@elonmusk: Cybercab-Gebühr zu hoch (14.11.)",
+      "url": "https://x.com/elonmusk/status/2121492849002987844"
+    },
+    {
+      "title": "BLS: Verbraucherpreise Oktober 2026",
+      "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+    },
+    {
+      "title": "NVIDIA: CEO Transition (12.11.)",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+    },
+    {
+      "title": "@elonmusk: Huang einzustellen „wäre eine Ehre“ (12.11.)",
+      "url": "https://x.com/elonmusk/status/2120688743111971293"
+    },
+    {
+      "title": "@elonmusk: Grok 4.8 „später diese Woche“ (10.11.)",
+      "url": "https://x.com/elonmusk/status/2120088070443655190"
+    },
+    {
+      "title": "@elonmusk: Grok 5 in zwei, drei Monaten (10.11.)",
+      "url": "https://x.com/elonmusk/status/2120099798078656909"
+    },
+    {
+      "title": "SpaceX SI Docs: Release Notes (kein Grok 4.8)",
+      "url": "https://docs.x.ai/developers/release-notes"
+    },
+    {
+      "title": "Zeniteq: Soft Rollout nur laut @grok-Antwort",
+      "url": "https://www.zeniteq.com/news/grok-4-8-begins-a-limited-rollout-to-bot-users-r10idz"
+    },
+    {
+      "title": "NVIDIA: Termin Q3-Zahlen",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx"
+    },
+    {
+      "title": "CNBC: Wochenausblick 16.–20.11.",
+      "url": "https://www.cnbc.com/2026/11/13/stock-market-next-week-outlook-for-nov-16-20-2026.html"
+    },
+    {
+      "title": "Der Aktionär: Wochenradar 16.–22. November",
+      "url": "https://www.deraktionaer.de/artikel/maerkte-forex-zinsen/der-aktionaer-wochenradar-16-bis-22-november-2026-20442753.html"
+    },
+    {
+      "title": "CNBC: Anthropic-Spanne 70–78 $, Handel ab 19.11.",
+      "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+    },
+    {
+      "title": "Federal Reserve: Termine November 2026",
+      "url": "https://www.federalreserve.gov/newsevents/2026-november.htm"
+    },
+    {
+      "title": "FAA: Starship Super Heavy Boca Chica",
+      "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
+    },
+    {
+      "title": "SCMP: Xi und Trump vor APEC-Gesprächen",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3373969/xi-and-trump-set-apec-talks-major-deliverables-expected-wait-g20"
+    },
+    {
+      "title": "SpaceX: NROL-136 Mission",
+      "url": "https://www.spacex.com/launches/nrol136"
+    },
+    {
+      "title": "Infobae: Tesla Argentinien 20. November",
+      "url": "https://www.infobae.com/economia/2026/11/06/tesla-confirmo-su-llegada-a-la-argentina-para-los-proximos-dias-los-detalles-del-desembarco-de-los-autos-electricos-de-elon-musk/"
     }
   ]
 }
