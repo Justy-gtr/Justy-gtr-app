@@ -1,71 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-14T22:30:00+01:00",
+  "updatedAt": "2026-11-15T05:30:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 75,
       "postsCount": 25,
-      "reason": "Der erste Fang des Schiffs am Turm wird auf X als historisch gefeiert; einige erwarten am Montag Kursgewinne, nur wenige erinnern an den verpassten Booster-Fang.",
+      "reason": "Der Schiffsfang wird über Nacht weiter gefeiert, viele erwarten am Montag Kursgewinne; nur vereinzelt Sorgen um Verwässerung durch neue Aktien.",
       "sources": [
         {
-          "title": "@onPrivateEq auf X (14.11., 22:25)",
-          "url": "https://x.com/onPrivateEq/status/2121716145724309588"
+          "title": "@fammetaX auf X (15.11., 00:32)",
+          "url": "https://x.com/fammetaX/status/2121748143662666092"
         },
         {
-          "title": "@gonta_southwood auf X (14.11., 22:24)",
-          "url": "https://x.com/gonta_southwood/status/2121715896419049733"
+          "title": "@InvestingDad212 auf X (15.11., 00:08)",
+          "url": "https://x.com/InvestingDad212/status/2121742102891475321"
         },
         {
-          "title": "@mikedaviswins auf X (14.11., 22:24)",
-          "url": "https://x.com/mikedaviswins/status/2121716014182264896"
+          "title": "@scentofnatur auf X (15.11., 00:07)",
+          "url": "https://x.com/scentofnatur/status/2121741965041750171"
         }
       ],
-      "updatedAt": "2026-11-14T22:30:00+01:00",
-      "previousMood": "gemischt"
+      "updatedAt": "2026-11-15T05:30:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 0,
+      "score": 10,
       "postsCount": 24,
-      "reason": "Der Cybercab-Verkauf für 29.990 $ und die FSD-Werbung am Times Square kommen gut an; Kritiker halten das Abo von 299 $ im Monat für zu teuer.",
+      "reason": "Cybercab-Verkauf und Robotaxi-Ausbau kommen gut an; nach dem Schiffsfang fragen viele, ob eine Fusion für Tesla-Aktionäre noch günstig ist.",
       "sources": [
         {
-          "title": "@afrikha44 auf X (14.11., 17:51)",
-          "url": "https://x.com/afrikha44/status/2121647094268334344"
+          "title": "@Joe_Shmo auf X (15.11., 05:18)",
+          "url": "https://x.com/Joe_Shmo/status/2121820009051611351"
         },
         {
-          "title": "@GerberKawasaki auf X (14.11., 17:53)",
-          "url": "https://x.com/GerberKawasaki/status/2121647686868971827"
+          "title": "@spcxGOD auf X (15.11., 03:00)",
+          "url": "https://x.com/spcxGOD/status/2121785257884000479"
         },
         {
-          "title": "@x_invest1 auf X (14.11., 17:50)",
-          "url": "https://x.com/x_invest1/status/2121646974050918712"
+          "title": "@4sfedtinja auf X (15.11., 03:44)",
+          "url": "https://x.com/4sfedtinja/status/2121796457690960201"
         }
       ],
-      "updatedAt": "2026-11-14T18:00:00+01:00"
+      "updatedAt": "2026-11-15T05:30:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 45,
+      "score": 40,
       "postsCount": 25,
-      "reason": "Der 100. Electron-Start und das Wochenplus von fast 16 % werden gefeiert; einige Trader sehen Raumfahrtwerte aber als Kandidaten für einen Rücksetzer.",
+      "reason": "Der 100. Electron-Start wird gefeiert; Chartbeobachter verweisen aber auf Widerstand bei 66–68 $ und Verluste bis zum Neutron-Start.",
       "sources": [
         {
-          "title": "@scotto2050 auf X (14.11., 17:45)",
-          "url": "https://x.com/scotto2050/status/2121645603860222011"
+          "title": "@TheNovaS auf X (15.11., 01:13)",
+          "url": "https://x.com/TheNovaS/status/2121758387486744946"
         },
         {
-          "title": "@AdrianCInvests auf X (14.11., 17:35)",
-          "url": "https://x.com/AdrianCInvests/status/2121643144760721586"
+          "title": "@9EMAPlus auf X (15.11., 02:00)",
+          "url": "https://x.com/9EMAPlus/status/2121770294008574108"
         },
         {
-          "title": "@LWeisama auf X (14.11., 17:46)",
-          "url": "https://x.com/LWeisama/status/2121645900745637978"
+          "title": "@pm07291 auf X (15.11., 03:25)",
+          "url": "https://x.com/pm07291/status/2121791667623604401"
         }
       ],
-      "updatedAt": "2026-11-14T18:00:00+01:00"
+      "updatedAt": "2026-11-15T05:30:00+01:00"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-14T22:30:00+01:00",
+  "asOf": "2026-11-15T05:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,225 @@
     }
   },
   "posts": [
+    {
+      "id": "post-rocketlab-2121790454111060069",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-15T03:20:39+01:00",
+      "summaryDe": "Rocket Lab nennt Electron nach dem 100. Start „die zuverlässigste kleine Trägerrakete der Welt“.",
+      "originalText": "Electron - the world's most reliable small launch vehicle.",
+      "url": "https://x.com/RocketLab/status/2121790454111060069",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (15.11., 03:20): Electron „zuverlässigste kleine Trägerrakete“",
+          "url": "https://x.com/RocketLab/status/2121790454111060069"
+        }
+      ]
+    },
+    {
+      "id": "post-peter_j_beck-2121775764857369043",
+      "account": "@Peter_J_Beck",
+      "displayName": "Peter Beck",
+      "postedAt": "2026-11-15T02:22:17+01:00",
+      "summaryDe": "Rocket-Lab-Chef Peter Beck feiert den 100. Electron-Start mit einem Wort: „100“.",
+      "originalText": "100",
+      "url": "https://x.com/Peter_J_Beck/status/2121775764857369043",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@Peter_J_Beck auf X (15.11., 02:22): „100“",
+          "url": "https://x.com/Peter_J_Beck/status/2121775764857369043"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121763977349013884",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-15T01:35:27+01:00",
+      "summaryDe": "Musk schreibt, er habe Ship 42 nach der Rückkehr umarmt; kurz davor teilte er eigene Handyvideos vom Fang, aufgenommen vom Turm.",
+      "originalText": "I hugged ship 42 upon its return",
+      "url": "https://x.com/elonmusk/status/2121763977349013884",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (15.11., 01:35): Ship 42 umarmt",
+          "url": "https://x.com/elonmusk/status/2121763977349013884"
+        },
+        {
+          "title": "@elonmusk auf X (15.11., 01:33): Handyvideos vom Turm",
+          "url": "https://x.com/elonmusk/status/2121763396190179414"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121759522851115109",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-15T01:17:45+01:00",
+      "summaryDe": "Musk: „Der epische Tag ist da“ – er dankt dem Team von SpaceX. Er zitiert Biograf Walter Isaacson, der sich erinnert, wie Musk 2020 darauf bestand, dass der Turm ein Schiff fangen kann.",
+      "originalText": "The epic day has arrived, thanks to the incredibly talented team at SpaceX!",
+      "url": "https://x.com/elonmusk/status/2121759522851115109",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (15.11., 01:17): „The epic day has arrived“",
+          "url": "https://x.com/elonmusk/status/2121759522851115109"
+        },
+        {
+          "title": "@WalterIsaacson auf X (14.11., 23:00): Erinnerung an Musks Idee von 2020",
+          "url": "https://x.com/WalterIsaacson/status/2121725076919717899"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121759042582589821",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-15T01:15:50+01:00",
+      "summaryDe": "Musk zählt die Bilanz: drei gefangene Booster und jetzt ein Schiff. Er zitiert eine Liste der Fänge vom Oktober 2024, Januar 2025, März 2025 und 14. November 2026.",
+      "originalText": "Three booster catches and a ship",
+      "url": "https://x.com/elonmusk/status/2121759042582589821",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (15.11., 01:15): „Three booster catches and a ship“",
+          "url": "https://x.com/elonmusk/status/2121759042582589821"
+        },
+        {
+          "title": "@cb_doge auf X (14.11., 22:39): Liste der Fänge",
+          "url": "https://x.com/cb_doge/status/2121719723805258178"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121746382402797892",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-15T00:25:32+01:00",
+      "summaryDe": "Musk nach der Inspektion: „Ship 42 sieht großartig aus!“ – ein Hinweis, dass das gefangene Schiff in gutem Zustand ist.",
+      "originalText": "Ship 42 looks great!",
+      "url": "https://x.com/elonmusk/status/2121746382402797892",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (15.11., 00:25): „Ship 42 looks great!“",
+          "url": "https://x.com/elonmusk/status/2121746382402797892"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2121738348804857963",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-14T23:53:37+01:00",
+      "summaryDe": "SpaceX fasst Flight 15 zusammen: Start am Freitag in Starbase, Rückkehr am Samstag – und das habe „alles verändert“.",
+      "originalText": "On Friday, November 13, Starship lifted off from Starbase, Texas on its 15th flight. \n\nOn Saturday, November 14, Starship returned to Starbase, Texas, and changed everything →",
+      "url": "https://x.com/SpaceX/status/2121738348804857963",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (14.11., 23:53): Rückblick Flight 15",
+          "url": "https://x.com/SpaceX/status/2121738348804857963"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121733992726802703",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T23:36:18+01:00",
+      "summaryDe": "Musk meldet, er begutachte Ship 42 gerade vor Ort.",
+      "originalText": "Inspecting ship 42 right now",
+      "url": "https://x.com/elonmusk/status/2121733992726802703",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 23:36): Ship 42 wird begutachtet",
+          "url": "https://x.com/elonmusk/status/2121733992726802703"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2121726288968720709",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-14T23:05:41+01:00",
+      "summaryDe": "Musk gratuliert nach dem Schiffsfang dem „unglaublichen Team bei SpaceX“.",
+      "originalText": "Congratulations to an incredible team at SpaceX!!!",
+      "url": "https://x.com/elonmusk/status/2121726288968720709",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (14.11., 23:05): Glückwunsch an das Team",
+          "url": "https://x.com/elonmusk/status/2121726288968720709"
+        }
+      ]
+    },
     {
       "id": "post-spacex-2121715216597827756",
       "account": "@SpaceX",
@@ -8472,5 +8691,5 @@
       ]
     }
   ],
-  "notes": "14.11. 22:30: Neu: SpaceX meldet um 22:21 den Fang von Starship am Turm; vorher „go“ für die Rückkehr (20:18) und gelungenes Bremsmanöver (21:25, auch Musk). Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @RocketLab, @Peter_J_Beck, @boringcompany (X-Abfrage bis 22:27)."
+  "notes": "15.11. 05:30: Neu: Musk zum Schiffsfang (Glückwunsch, Inspektion, „Ship 42 looks great“, drei Booster und ein Schiff, Umarmung), SpaceX-Rückblick auf Flight 15, Rocket Lab und Peter Beck zum 100. Electron-Start. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:20). Nicht übernommen: Musk-Zitate ohne Firmenbezug (Politik-Meme, Werbung für Grok)."
 }

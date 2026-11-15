@@ -3,83 +3,27 @@
   "asOf": "2026-11-07",
   "lede": "Was die Firmen wirklich schaffen – nicht der Kurs.",
   "nextLaunch": {
-    "name": "Starship Flight 15 (Doppel-Fang Booster+Schiff)",
-    "headline": "Starship Flight 15",
-    "shortNote": "Schiff am Sa 22:21 vom Turm gefangen",
-    "statusNote": "Gestartet Fr 23:47 · Booster-Fang abgebrochen · Schiff am Sa 22:21 gefangen",
-    "target": "2026-11-13T23:45:00+01:00",
+    "name": "Falcon 9 · USSF-317 (Space Force)",
+    "headline": "Falcon 9 USSF-317",
+    "shortNote": "Space-Force-Start ab Vandenberg",
+    "statusNote": "Fenster Mi 18.11. 04:14–08:14 Berlin · Ersatz Do 05:54",
+    "target": "2026-11-18T04:14:00+01:00",
     "livestreamUrl": "https://x.com/SpaceX",
-    "status": "abgeschlossen",
-    "note": "SpaceX: frühestens Freitag 13.11. ~17:45 ET / 16:45 CT (= 23:45 Berlin), vorbehaltlich Zulassung. Erster Ship-Catch am Tower; Booster-Fang ebenfalls geplant. Blog beschreibt fünf Contingency-Splashdowns. 10.11. 19:21: Booster 22 auf dem Startplatz, Fangtests am Turm erledigt (@SpaceX). 11.11. 22:00: SpaceX-Seite weiter „pending regulatory approval“, FAA-Lizenz noch nicht veröffentlicht. 13.11. 01:56: Ship 42 fährt zur Rampe (@SpaceX). 05:00: FAA-Lizenz weiter nicht veröffentlicht, SpaceX-Seite „pending regulatory approval“. 13.11. 07:00: FAA-Lizenz weiter nicht veröffentlicht, SpaceX-Seite „pending regulatory approval“, Fenster 23:45–01:00 Berlin. 13.11. 09:10: Starship komplett gestapelt (IGW auf X), FAA-Lizenz weiter nicht veröffentlicht, Wiedereintritts-NOTAM ab 23:53 Berlin. 13.11. 09:55: Weiter keine FAA-Lizenz veröffentlicht, Fenster heute 23:45 Berlin. 13.11. 11:50: Rund 12 Stunden vor dem Fenster weiter keine FAA-Lizenz veröffentlicht (FAA-Seite Stand 10.11.). 13.11. 13:10: Gut 10 Stunden vor dem Fenster weiter keine FAA-Lizenz; laut Reuters kam sie früher meist am Vortag. 14.11. 05:10: Gestartet am Fr 13.11. um 23:47 Berlin. Booster 22 sollte nach 6,5 Minuten gefangen werden, SpaceX brach den Fang aber ab und leitete ihn in den Golf um, wo er explodierte; Grund noch offen. Ship 42 erreichte den Orbit (~275 km), setzte alle 26 Starlink-V3-Satelliten aus und ist laut SpaceX in gutem Zustand. Rückkehr und erster Schiffsfang am Turm geplant für Sa gegen 21:17 UTC (22:17 Berlin), nur wenn alle Systeme gesund sind (Space.com, SpaceX). 14.11. 07:30: SpaceX meldet um 06:44, Schiff und Hitzeschild seien gesund; Fang weiter für ~22:17 Berlin geplant (SpaceX auf X). 14.11. 08:30: Keine neue SpaceX-Statusmeldung seit 06:44; Musk um 07:23: „Bisher läuft es gut für das Schiff“ (Musk auf X). 14.11. 22:30: Letzte Prüfung um 20:18 „go“, Bremsmanöver 21:25, Wiedereintritt 21:58; um 22:21 Berlin meldete SpaceX den Fang von Ship 42 am Turm – der erste Schiffsfang überhaupt (SpaceX auf X).",
+    "status": "geplant",
+    "note": "SpaceX zielt auf Di 17.11., Vier-Stunden-Fenster ab 19:14 Uhr Ortszeit Vandenberg (Mi 18.11. 04:14 Berlin), Ersatz Mi 18.11. 20:54 Ortszeit (Do 05:54 Berlin). Die Erststufe fliegt zum 11. Mal und soll auf dem Drohnenschiff „Of Course I Still Love You“ landen (SpaceX). Eigentlich sollte hier USSF-266 stehen; SpaceX hat diesen Start aber auf Mo 23.11., 08:04 Uhr Ortszeit (17:04 Berlin) verschoben (SpaceX). Vorher: Starship Flight 15 startete am 13.11. um 23:47, der Booster-Fang wurde abgebrochen, Ship 42 wurde am 14.11. um 22:21 als erstes Starship-Schiff vom Turm gefangen.",
     "example": false,
     "sources": [
       {
-        "title": "@SpaceX: Booster 22 auf dem Startplatz (10.11.)",
-        "url": "https://x.com/SpaceX/status/2120220290219208884"
+        "title": "SpaceX: USSF-317 Mission (Stand 15.11.: Di 17.11., Fenster ab 19:14 PT)",
+        "url": "https://www.spacex.com/launches/ussf317"
       },
       {
-        "title": "@SpaceX: Flight 15 catch",
-        "url": "https://x.com/SpaceX/status/2119093662957060389"
+        "title": "SpaceX: USSF-266 Mission (Stand 15.11.: Mo 23.11., Fenster ab 08:04 PT)",
+        "url": "https://www.spacex.com/launches/ussf266"
       },
       {
-        "title": "SpaceX Updates: Returning Starship to the Launch Site",
-        "url": "https://www.spacex.com/updates/"
-      },
-      {
-        "title": "Teslarati: Flight 15 Ziel 13. November",
-        "url": "https://www.teslarati.com/spacex-starship-catch-nov-13/"
-      },
-      {
-        "title": "@XFreeze: Contingency landing options Flight 15",
-        "url": "https://x.com/XFreeze/status/2119123323225612354"
-      },
-      {
-        "title": "SpaceX: Starship Flight 15",
-        "url": "https://www.spacex.com/launches/starship-flight-15"
-      },
-      {
-        "title": "@SpaceX: Ship 42 fährt zur Startrampe (13.11., 01:56)",
-        "url": "https://x.com/SpaceX/status/2121044579470233638"
-      },
-      {
-        "title": "FAA: SpaceX Starship Super Heavy Project (zuletzt aktualisiert 10.11.)",
-        "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
-      },
-      {
-        "title": "@interstellargw: Starship für Flight 15 komplett gestapelt (13.11., 07:20)",
-        "url": "https://x.com/interstellargw/status/2121126080694108516"
-      },
-      {
-        "title": "FAA-NOTAM A0106/26: Wiedereintritt Flight 15 im Indischen Ozean ab 13.11. 23:53 Berlin",
-        "url": "https://notams.aim.faa.gov/notamSearch/createNotamPdf?transactionid=83016122"
-      },
-      {
-        "title": "Reuters via CNA: Bis Freitagmorgen keine FAA-Lizenz für Flight 15 (13.11.)",
-        "url": "https://www.channelnewsasia.com/business/spacex-attempt-first-starship-spacecraft-recovery-land-in-15th-flight-6549306"
-      },
-      {
-        "title": "Space.com: Starship startet zu Flight 15, Booster-Fang abgebrochen (13.11.)",
-        "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship"
-      },
-      {
-        "title": "Spaceflight Now: Starship im Orbit, Booster wassert mit Explosion im Golf (13.11.)",
-        "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/"
-      },
-      {
-        "title": "@SpaceX auf X (Orbit erreicht, 14.11., 00:15)",
-        "url": "https://x.com/SpaceX/status/2121381593768186362"
-      },
-      {
-        "title": "@SpaceX auf X (Freiflugphase, alle Systeme gut, 01:08)",
-        "url": "https://x.com/SpaceX/status/2121394839954874797"
-      },
-      {
-        "title": "@SpaceX auf X (Hitzeschild gesund, 14.11., 06:44)",
-        "url": "https://x.com/SpaceX/status/2121479482582441991"
-      },
-      {
-        "title": "@SpaceX auf X (14.11., 20:18): Teams „go“ für die Rückkehr zum Startplatz",
-        "url": "https://x.com/SpaceX/status/2121684113526858011"
+        "title": "Space Launch Live: USSF-266 – Verschiebungsverlauf (13.11.: auf 23.11. 16:04 UTC)",
+        "url": "https://spacelaunchlive.com/launches/falcon-9-block-5-ussf-266/"
       },
       {
         "title": "@SpaceX auf X (14.11., 22:21): „Mechazilla catches Starship!“",

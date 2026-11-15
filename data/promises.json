@@ -138,12 +138,20 @@
       "targetDate": "2027-03-31",
       "status": "offen",
       "delay": null,
-      "note": "Setzt einen erfolgreichen Schiffsfang bei Flight 15 voraus.",
+      "note": "Setzt einen erfolgreichen Schiffsfang bei Flight 15 voraus. 15.11. 05:30: Seit dem 14.11. gibt es ein gefangenes Schiff: Ship 42 kam nach rund 22,5 Stunden zum Turm zurück. Musk schrieb nach der Inspektion „Ship 42 sieht großartig aus“; ob genau dieses Schiff wieder fliegt, hat SpaceX nicht gesagt (SpaceX, Musk auf X).",
       "example": false,
       "sources": [
         {
           "title": "Ars Technica: SpaceX will bei Flight 15 beide Stufen fangen",
           "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/"
+        },
+        {
+          "title": "@SpaceX auf X (14.11., 22:21): „Mechazilla catches Starship!“",
+          "url": "https://x.com/SpaceX/status/2121715216597827756"
+        },
+        {
+          "title": "@elonmusk auf X (15.11., 00:25): „Ship 42 looks great!“",
+          "url": "https://x.com/elonmusk/status/2121746382402797892"
         }
       ]
     },
@@ -156,7 +164,7 @@
       "targetDate": "2026-11-30",
       "status": "offen",
       "delay": null,
-      "note": "In Austin fahren laut Tesla bereits über 300 Cybercabs. Musk: Cybertruck-Produktion Texas Mitte 2027 runterfahren für mehr Cybercab-Kapazität — stützt die Dallas-Richtung, Terminrisiko bleibt. 11.11.: Musk verlängert die Cybertruck-Produktion bis Ende Sommer 2027, um mehr Bestellungen abzuarbeiten (X, Electrek).",
+      "note": "In Austin fahren laut Tesla bereits über 300 Cybercabs. Musk: Cybertruck-Produktion Texas Mitte 2027 runterfahren für mehr Cybercab-Kapazität — stützt die Dallas-Richtung, Terminrisiko bleibt. 11.11.: Musk verlängert die Cybertruck-Produktion bis Ende Sommer 2027, um mehr Bestellungen abzuarbeiten (X, Electrek). 15.11. 05:30: Am 14.11. wurden in Dallas mehr als 50 Cybercabs mit Tesla-Schriftzug auf einem Parkplatz gefilmt (Schätzung von Beobachtern); einen Start der Fahrten hat Tesla noch nicht verkündet (Sawyer Merritt, Robotaxi DMV USA auf X).",
       "example": false,
       "sources": [
         {
@@ -178,6 +186,14 @@
         {
           "title": "Electrek: Tesla verlängert Cybertruck-Produktion (11.11.)",
           "url": "https://electrek.co/2026/11/11/tesla-extends-cybertruck-production-summer-2027-fan-backlash/"
+        },
+        {
+          "title": "@SawyerMerritt auf X (14.11., 20:58): erste öffentliche Cybercab-Fahrten in Dallas „stehen bevor“",
+          "url": "https://x.com/SawyerMerritt/status/2121694173052936334"
+        },
+        {
+          "title": "@RobotaxiDMVUSA auf X (15.11., 00:12): 50+ Cybercabs in Dallas, Schätzung der Community, noch kein Fahrbetrieb",
+          "url": "https://x.com/RobotaxiDMVUSA/status/2121743113492234406"
         }
       ]
     },
