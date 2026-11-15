@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-15T20:00:00+01:00",
+  "asOf": "2026-11-15T22:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,128 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2122068777189716003",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-15T21:46:37+01:00",
+      "summaryDe": "Musk zitiert ein Arthur-C.-Clarke-Zitat zum Starship-Fang („Schiff“ werde bald fast immer „Raumschiff“ heißen) und schreibt: „Ship“ werde künftig fast immer als Raumschiff verstanden. Stimmungs-Post nach dem ersten Schiffsfang, keine neue Firmen-Information.",
+      "originalText": "Ship, in the future, will almost always be taken to mean spaceship",
+      "url": "https://x.com/elonmusk/status/2122068777189716003",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (15.11., 21:46)",
+          "url": "https://x.com/elonmusk/status/2122068777189716003"
+        },
+        {
+          "title": "Zitierter Post mit Clarke-Zitat (14.11., 23:19)",
+          "url": "https://x.com/i/status/2121729721180574127"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122068253564350768",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-15T21:44:32+01:00",
+      "summaryDe": "Musk teilt (Repost) die Meldung, dass Samsung Chips für die Starlink-Satelliten in seinem Werk in Austin (Texas) bauen will. Laut Seoul Economic Daily investiert Samsung 1,9 Mrd. $ in den Ausbau, die Fertigung des Mikrocontrollers STM32V8 (bisher in Frankreich gebaut, steuert die Laser-Verbindungen zwischen Starlink-Satelliten) soll bis 2030 anlaufen. Samsung bestätigt Verträge mit einzelnen Kunden nicht offiziell.",
+      "originalText": "RT @cb_doge: BREAKING: Samsung reportedly plans to make chips for SpaceX’s Starlink satellites in Austin, Texas. Samsung is investing $1.9 billion to expand its Austin chip factory, with the planned operations targeted to begin by 2030, according to Seoul Economic Daily.",
+      "url": "https://x.com/elonmusk/status/2122068253564350768",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (Repost, 15.11., 21:44)",
+          "url": "https://x.com/elonmusk/status/2122068253564350768"
+        },
+        {
+          "title": "@cb_doge auf X: Samsung soll Starlink-Chips in Austin bauen (15.11., 16:00)",
+          "url": "https://x.com/cb_doge/status/2121981656882122993"
+        },
+        {
+          "title": "Seoul Economic Daily: Samsung soll SpaceX-Satellitenchips in Texas fertigen (15.11.)",
+          "url": "https://en.sedaily.com/business/2026/11/15/samsung-to-make-spacex-satellite-chips-in-texas"
+        },
+        {
+          "title": "Seoul Economic Daily: Samsung teilt Texas-Werke auf – Raumfahrtchips in Austin, KI-Chips in Taylor (15.11.)",
+          "url": "https://en.sedaily.com/business/2026/11/15/samsung-splits-texas-fabs-space-chips-in-austin-ai-chips-in"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122067934818566444",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-15T21:43:16+01:00",
+      "summaryDe": "Musk bedankt sich („Ich schätze die Unterstützung“) für einen Gastbeitrag von Douglas MacKinnon, früher im Weißen Haus und im Pentagon, in The Hill: Die politischen Angriffe auf Musk sollten aufhören, weil sein Ziel einer dauerhaften Präsenz der Menschheit im All wichtig für ihr Überleben sei. Meinungsbeitrag, keine Firmen-Neuigkeit.",
+      "originalText": "@cb_doge I appreciate the support",
+      "url": "https://x.com/elonmusk/status/2122067934818566444",
+      "tickers": [
+        "SPCX",
+        "TSLA"
+      ],
+      "companies": [
+        "SpaceX",
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (15.11., 21:43)",
+          "url": "https://x.com/elonmusk/status/2122067934818566444"
+        },
+        {
+          "title": "@cb_doge auf X: MacKinnon fordert Ende der politischen Angriffe auf Musk (15.11., 13:07)",
+          "url": "https://x.com/cb_doge/status/2121938086292770850"
+        },
+        {
+          "title": "The Hill (Meinung, Douglas MacKinnon): Allow Elon Musk to get back to the task of saving humanity",
+          "url": "https://thehill.com/opinion/campaign/6218513-musk-space-civilization-survival/"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2122067787418145124",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-15T21:42:41+01:00",
+      "summaryDe": "Rocket Lab zeigt in einem gut fünfminütigen Video Mitarbeiter hinter der neuen Rakete Neutron: Triebwerksbau und Heißtests, Fertigung der bisher größten Kohlefaser-Bauteile und Tests der Flug-Hardware auf der Startrampe Launch Complex 3. Werbe- und Fortschrittsvideo, kein neuer Starttermin.",
+      "originalText": "Meet some of the people behind Neutron and take a look across our sites for engine builds and hot fires, production of our largest carbon composite structures, and flight hardware testing on the launch mount at Launch Complex 3.",
+      "url": "https://x.com/RocketLab/status/2122067787418145124",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (15.11., 21:42)",
+          "url": "https://x.com/RocketLab/status/2122067787418145124"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2122043427776819503",
       "account": "@elonmusk",
@@ -8926,5 +9048,5 @@
       ]
     }
   ],
-  "notes": "15.11. 20:00: @elonmusk zitierte zwei Starlink-Meldungen (Lufthansa-Langstrecke, Honduras-Schulen) und lud Goldman-Chef David Solomon zu einem Starship-Start ein; dazu zwei Reposts (Paul Graham, David Solomon) ohne eigene Aussage. Keine neuen Posts von @SpaceX seit 17:20, keine von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab (X-Abfrage bis 20:15). 15.11. 18:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20). @SpaceX postete um 17:20 Werbung für Version 2.0 seines Browser-Spiels. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 18:20). 15.11. 16:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 16:12). 15.11. 15:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 15:12). 15.11. 14:00: Keine neuen eigenen Posts von @elonmusk seit 09:25 (danach nur ein Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 14:20). 15.11. 13:00: Keine neuen Posts von @elonmusk seit 10:20 (letzter: Repost des ALS-Patienten-Videos), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 13:20). 15.11. 11:30: Keine neuen eigenen Posts von @elonmusk seit 09:25 (nur zwei Reposts: CBS-Bericht zum Flug-15-Start, Video eines ALS-Patienten mit Hirnimplantat), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 11:40). 15.11. 09:30: Neu vier Musk-Posts zum Schiffsfang und zu Rechenzentren im All (08:56–09:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 09:35). Nicht übernommen: Musk-Antworten ohne Inhalt („Mentats“, „The sky is not even close to the limit“). 15.11. 08:30: Neu nur Musks Douglas-Adams-Scherz zu Ship 42 (03:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @Peter_J_Beck; @RocketLab zuletzt 03:20 (X-Abfrage bis 08:40). Nicht übernommen: Musk-Zitat eines Politik-Memes (04:08). 15.11. 06:30: Keine neuen Firmen-Posts seit 05:20 (X-Abfrage bis 06:40 für @elonmusk, @SpaceX, @Tesla, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Starlink). Nicht übernommen: Musk-Reposts ohne Firmenbezug und Werbung für Grok. 15.11. 05:30: Neu: Musk zum Schiffsfang (Glückwunsch, Inspektion, „Ship 42 looks great“, drei Booster und ein Schiff, Umarmung), SpaceX-Rückblick auf Flight 15, Rocket Lab und Peter Beck zum 100. Electron-Start. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:20). Nicht übernommen: Musk-Zitate ohne Firmenbezug (Politik-Meme, Werbung für Grok)."
+  "notes": "15.11. 22:00: @elonmusk teilte die Samsung-Meldung zu Starlink-Chips aus Austin, bedankte sich für einen Gastbeitrag von Douglas MacKinnon und schrieb zum Schiffsfang; dazu ein Repost von James Douma, der Grok lobt und fragt, ob Jensen Huang zu Unrecht verurteilt werde (ohne eigene Aussage). @RocketLab zeigt ein Neutron-Video. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 22:20). 15.11. 20:00: @elonmusk zitierte zwei Starlink-Meldungen (Lufthansa-Langstrecke, Honduras-Schulen) und lud Goldman-Chef David Solomon zu einem Starship-Start ein; dazu zwei Reposts (Paul Graham, David Solomon) ohne eigene Aussage. Keine neuen Posts von @SpaceX seit 17:20, keine von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab (X-Abfrage bis 20:15). 15.11. 18:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20). @SpaceX postete um 17:20 Werbung für Version 2.0 seines Browser-Spiels. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 18:20). 15.11. 16:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 16:12). 15.11. 15:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 15:12). 15.11. 14:00: Keine neuen eigenen Posts von @elonmusk seit 09:25 (danach nur ein Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 14:20). 15.11. 13:00: Keine neuen Posts von @elonmusk seit 10:20 (letzter: Repost des ALS-Patienten-Videos), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 13:20). 15.11. 11:30: Keine neuen eigenen Posts von @elonmusk seit 09:25 (nur zwei Reposts: CBS-Bericht zum Flug-15-Start, Video eines ALS-Patienten mit Hirnimplantat), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 11:40). 15.11. 09:30: Neu vier Musk-Posts zum Schiffsfang und zu Rechenzentren im All (08:56–09:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 09:35). Nicht übernommen: Musk-Antworten ohne Inhalt („Mentats“, „The sky is not even close to the limit“). 15.11. 08:30: Neu nur Musks Douglas-Adams-Scherz zu Ship 42 (03:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @Peter_J_Beck; @RocketLab zuletzt 03:20 (X-Abfrage bis 08:40). Nicht übernommen: Musk-Zitat eines Politik-Memes (04:08). 15.11. 06:30: Keine neuen Firmen-Posts seit 05:20 (X-Abfrage bis 06:40 für @elonmusk, @SpaceX, @Tesla, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Starlink). Nicht übernommen: Musk-Reposts ohne Firmenbezug und Werbung für Grok. 15.11. 05:30: Neu: Musk zum Schiffsfang (Glückwunsch, Inspektion, „Ship 42 looks great“, drei Booster und ein Schiff, Umarmung), SpaceX-Rückblick auf Flight 15, Rocket Lab und Peter Beck zum 100. Electron-Start. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:20). Nicht übernommen: Musk-Zitate ohne Firmenbezug (Politik-Meme, Werbung für Grok)."
 }
