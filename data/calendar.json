@@ -16,7 +16,7 @@
       ],
       "probabilityPct": 20,
       "impact": "niedrig",
-      "reasoning": "Musk am 10.11. auf X: Vortraining fertig, Code neu in C/C++, Grok 4.8 steckt im RL-Training und soll später diese Woche vorsichtig für erste Nutzer starten. Er nennt es selbst „noch nicht unglaublich“. 50 %, weil Musks KI-Termine oft rutschen und RL-Ergebnisse erst kommen. Kurswirkung auf SPCX gering, eher ein Stimmungsfaktor. Stand Mi 05:00: Noch kein Start, kein Eintrag in den xAI-Release-Notes (TeslaNorth). 50 % unverändert. Stand Do 05:10: Grok 4.8 ist weiter nicht erschienen: kein Eintrag in Modellkatalog, API-Doku oder Release-Notes (ByteForward). Bis Sonntag bleiben drei Tage, Musk-KI-Termine rutschen oft. 40 statt 50 %. Stand Do 06:50: Weiter kein Start; die SpaceX-SI-Newsseite führt kein Grok 4.8 (x.ai/news, TokenPost). 40 % unverändert. Stand Do 18:00: Weiter kein Start; die SpaceX-SI-Newsseite führt als neuestes Modell Grok 4.7 (x.ai/news, ORIENS). 40 % unverändert. Stand Do 20:00: Weiter kein Start gemeldet; Grok 4.7 bleibt das aktuelle Modell (ByteForward). 40 % unverändert. Stand Fr 07:00: Weiter kein Start; die SpaceX-SI-Newsseite und die API-Release-Notes führen Grok 4.7 als neuestes Modell. Bis Sonntag bleibt nur das Wochenende. 30 statt 40 %. Stand Sa 22:00: Ein Techblog (Zeniteq) meldet den Start eines eingeschränkten „Soft Rollouts“ – Quelle ist aber nur eine automatische Antwort des Chatbot-Kontos @grok vom 13.11. auf eine Nutzerfrage, keine Mitteilung von SpaceX SI oder Musk. Release-Notes und Newsseite führen weiter kein Grok 4.8 (Zeniteq, SpaceX-SI-Doku). 30 % unverändert. Stand So 05:30: Weiter kein offizieller Start; Release-Notes und Newsseite von SpaceX SI führen Grok 4.7 als neuestes Modell, Musk schrieb in der Nacht nichts zu Grok 4.8 (SpaceX-SI-Doku, Musk auf X). Bis Sonntagabend bleibt nur noch ein Tag: 20 statt 30 %. Stand So 06:30: Weiter nichts Offizielles. Auf X behauptet nur das automatische Antwortkonto @grok, der „Soft Rollout“ laufe; SpaceX SI und Musk haben das nicht bestätigt, die Newsseite zeigt kein Grok 4.8 (SpaceX SI). 20 % unverändert, das Fenster endet heute Abend.",
+      "reasoning": "Musk am 10.11. auf X: Vortraining fertig, Code neu in C/C++, Grok 4.8 steckt im RL-Training und soll später diese Woche vorsichtig für erste Nutzer starten. Er nennt es selbst „noch nicht unglaublich“. 50 %, weil Musks KI-Termine oft rutschen und RL-Ergebnisse erst kommen. Kurswirkung auf SPCX gering, eher ein Stimmungsfaktor. Stand Mi 05:00: Noch kein Start, kein Eintrag in den xAI-Release-Notes (TeslaNorth). 50 % unverändert. Stand Do 05:10: Grok 4.8 ist weiter nicht erschienen: kein Eintrag in Modellkatalog, API-Doku oder Release-Notes (ByteForward). Bis Sonntag bleiben drei Tage, Musk-KI-Termine rutschen oft. 40 statt 50 %. Stand Do 06:50: Weiter kein Start; die SpaceX-SI-Newsseite führt kein Grok 4.8 (x.ai/news, TokenPost). 40 % unverändert. Stand Do 18:00: Weiter kein Start; die SpaceX-SI-Newsseite führt als neuestes Modell Grok 4.7 (x.ai/news, ORIENS). 40 % unverändert. Stand Do 20:00: Weiter kein Start gemeldet; Grok 4.7 bleibt das aktuelle Modell (ByteForward). 40 % unverändert. Stand Fr 07:00: Weiter kein Start; die SpaceX-SI-Newsseite und die API-Release-Notes führen Grok 4.7 als neuestes Modell. Bis Sonntag bleibt nur das Wochenende. 30 statt 40 %. Stand Sa 22:00: Ein Techblog (Zeniteq) meldet den Start eines eingeschränkten „Soft Rollouts“ – Quelle ist aber nur eine automatische Antwort des Chatbot-Kontos @grok vom 13.11. auf eine Nutzerfrage, keine Mitteilung von SpaceX SI oder Musk. Release-Notes und Newsseite führen weiter kein Grok 4.8 (Zeniteq, SpaceX-SI-Doku). 30 % unverändert. Stand So 05:30: Weiter kein offizieller Start; Release-Notes und Newsseite von SpaceX SI führen Grok 4.7 als neuestes Modell, Musk schrieb in der Nacht nichts zu Grok 4.8 (SpaceX-SI-Doku, Musk auf X). Bis Sonntagabend bleibt nur noch ein Tag: 20 statt 30 %. Stand So 06:30: Weiter nichts Offizielles. Auf X behauptet nur das automatische Antwortkonto @grok, der „Soft Rollout“ laufe; SpaceX SI und Musk haben das nicht bestätigt, die Newsseite zeigt kein Grok 4.8 (SpaceX SI). 20 % unverändert, das Fenster endet heute Abend. Stand So 08:30: Weiter nichts Offizielles. Grundlage bleibt Musks Satz vom 10.11., der eingeschränkte Start komme „später diese Woche“ (TokenPost); seit Mitternacht gibt es von Musk und SpaceX SI keinen Post zu Grok 4.8 (X-Abfrage bis 08:40). 20 % unverändert, das Fenster endet heute Abend.",
       "example": false,
       "sources": [
         {
@@ -365,7 +365,7 @@
       "id": "evt-nvda-q3",
       "title": "NVIDIA: Zahlen Q3 (Geschäftsjahr 2027)",
       "date": "2026-11-17",
-      "time": "23:00",
+      "time": "22:20",
       "timezone": "Europe/Berlin",
       "kind": "external",
       "category": "earnings",
@@ -376,7 +376,7 @@
       ],
       "probabilityPct": 99,
       "impact": "mittel",
-      "reasoning": "Offiziell: nach US-Börsenschluss, Call um 14:00 Uhr Pacific. Für uns relevant, weil SpaceX mit dem SI-Segment (Rechenzentren, Grok, Cursor) inzwischen ein großer KI-Infrastruktur-Käufer ist und Tesla für Training ebenfalls. Die Nasdaq-100 war Ende Oktober in eine Korrektur gerutscht, weil Zweifel an den KI-Investitionen wuchsen. Stand Do 05:10: Die Zahlen am 17.11. fallen jetzt mitten in den Streit um Chef Huang: Laut WSJ bereitet der Verwaltungsrat seine Ablösung vor, Nvidia fiel nachbörslich auf 158,78 $ (−8,6 %) (Yahoo, CNBC). Der Termin selbst ist bestätigt; 97 % unverändert. Stand Do 15:00: Nvidia bestätigt in der Rücktrittsmitteilung zu Huang den Termin Di 17.11., Zahlen gegen 13:20 Uhr Pacific (22:20 Berlin), Telefonkonferenz 14:00 Pacific (23:00 Berlin). Es wird der erste Bericht unter Interimschefin Kress. 99 statt 97 %, weil der Termin heute schriftlich bestätigt wurde.",
+      "reasoning": "Offiziell: nach US-Börsenschluss, Call um 14:00 Uhr Pacific. Für uns relevant, weil SpaceX mit dem SI-Segment (Rechenzentren, Grok, Cursor) inzwischen ein großer KI-Infrastruktur-Käufer ist und Tesla für Training ebenfalls. Die Nasdaq-100 war Ende Oktober in eine Korrektur gerutscht, weil Zweifel an den KI-Investitionen wuchsen. Stand Do 05:10: Die Zahlen am 17.11. fallen jetzt mitten in den Streit um Chef Huang: Laut WSJ bereitet der Verwaltungsrat seine Ablösung vor, Nvidia fiel nachbörslich auf 158,78 $ (−8,6 %) (Yahoo, CNBC). Der Termin selbst ist bestätigt; 97 % unverändert. Stand Do 15:00: Nvidia bestätigt in der Rücktrittsmitteilung zu Huang den Termin Di 17.11., Zahlen gegen 13:20 Uhr Pacific (22:20 Berlin), Telefonkonferenz 14:00 Pacific (23:00 Berlin). Es wird der erste Bericht unter Interimschefin Kress. 99 statt 97 %, weil der Termin heute schriftlich bestätigt wurde. Stand So 08:30: Uhrzeit im Kalender auf 22:20 Berlin korrigiert – dann kommen laut Nvidia die Zahlen, die Telefonkonferenz folgt um 23:00. Die dpa-AFX-Wochenvorschau nennt ebenfalls Di 22:20 (boersennews.de). Analysten erwarten laut LSEG rund 109,2 Mrd. $ Umsatz und 2,48 $ bereinigten Gewinn je Aktie (Yonhap Infomax). 99 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -402,6 +402,18 @@
         {
           "title": "NVIDIA: NVIDIA Announces CEO Transition (12.11.)",
           "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+        },
+        {
+          "title": "boersennews.de: Wochenvorschau KW 47 – Nvidia Q3-Zahlen Di 22:20, US-Einzelhandel 14:30",
+          "url": "https://www.boersennews.de/nachrichten/service/community/wochenvorschau-kw-47-nvidia-zahlen-und-anthropic-debuet-die-woche-der-ki-giganten/5351909/"
+        },
+        {
+          "title": "dpa-AFX via boersennews.de: Wochenausblick – Anleger warten nach Dax-Rekord auf Nvidia-Zahlen und Anthropic",
+          "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/wochenausblick-anleger-warten-nach-dax-rekord-auf-nvidia-zahlen-und-anthropic/5352002/"
+        },
+        {
+          "title": "Yonhap Infomax: Wochenausblick New York – Nvidia-Zahlen und Anthropic-Börsengang (Preis 18.11., Handel 19.11., Spanne 70–78 $)",
+          "url": "https://en.infomaxai.com/news/articleView.html?idxno=148587"
         }
       ]
     },
@@ -419,7 +431,7 @@
       ],
       "probabilityPct": 75,
       "impact": "niedrig",
-      "reasoning": "SpaceX zielt jetzt auf Freitag 13.11., Vier-Stunden-Fenster ab 20:09 Uhr Ortszeit Vandenberg (in Berlin Sa 14.11. 05:09), Ersatz Samstag 19:55 Ortszeit. Vorher stand Donnerstag 20:23 Ortszeit. Dritter Space-Force-Start binnen gut einer Woche von derselben Rampe, deshalb Turnaround-Risiko. Kurswirkung gering. Stand Fr 09:55: Erneut verschoben. SpaceX zielt jetzt auf Dienstag 17.11., Vier-Stunden-Fenster ab 19:14 Uhr Ortszeit Vandenberg (in Berlin Mi 18.11. 04:14), Ersatz Mi 18.11. 20:54 Ortszeit. Die Erststufe fliegt zum 11. Mal und soll auf „Of Course I Still Love You“ landen (SpaceX, spacex-news.com). Einen Grund nennt SpaceX nicht. 75 % unverändert für den neuen Termin. Stand So 05:30: SpaceX nennt weiter Dienstag 17.11., Fenster ab 19:14 Uhr Ortszeit (Mi 18.11. 04:14 Berlin), Ersatz Mi 20:54 Ortszeit. Damit ist USSF-317 jetzt der nächste Space-Force-Start, vor USSF-266 (SpaceX). 75 % unverändert. Stand So 06:30: Unverändert, die Startdatenbank führt den Start weiter für 18.11. 03:14 UTC (04:14 Berlin) mit Status „Go“ (Launch Library 2). 75 % unverändert.",
+      "reasoning": "SpaceX zielt jetzt auf Freitag 13.11., Vier-Stunden-Fenster ab 20:09 Uhr Ortszeit Vandenberg (in Berlin Sa 14.11. 05:09), Ersatz Samstag 19:55 Ortszeit. Vorher stand Donnerstag 20:23 Ortszeit. Dritter Space-Force-Start binnen gut einer Woche von derselben Rampe, deshalb Turnaround-Risiko. Kurswirkung gering. Stand Fr 09:55: Erneut verschoben. SpaceX zielt jetzt auf Dienstag 17.11., Vier-Stunden-Fenster ab 19:14 Uhr Ortszeit Vandenberg (in Berlin Mi 18.11. 04:14), Ersatz Mi 18.11. 20:54 Ortszeit. Die Erststufe fliegt zum 11. Mal und soll auf „Of Course I Still Love You“ landen (SpaceX, spacex-news.com). Einen Grund nennt SpaceX nicht. 75 % unverändert für den neuen Termin. Stand So 05:30: SpaceX nennt weiter Dienstag 17.11., Fenster ab 19:14 Uhr Ortszeit (Mi 18.11. 04:14 Berlin), Ersatz Mi 20:54 Ortszeit. Damit ist USSF-317 jetzt der nächste Space-Force-Start, vor USSF-266 (SpaceX). 75 % unverändert. Stand So 06:30: Unverändert, die Startdatenbank führt den Start weiter für 18.11. 03:14 UTC (04:14 Berlin) mit Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 08:30: Unverändert 18.11. 03:14 UTC (04:14 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -554,7 +566,7 @@
       ],
       "probabilityPct": 85,
       "impact": "mittel",
-      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms. Stand Mi 07:00: Fidelity nennt für Privatkunden Zeichnungsende Di 17.11. 16:00 ET (22:00 Berlin) und die Preisfestsetzung am Abend des 18.11.; das stützt den Handelsstart am 19.11. 85 % unverändert. Stand Mi 09:50: Laut FT wollen die Konsortialbanken (Goldman Sachs, Morgan Stanley) wegen hoher Nachfrage den Preis über die Spanne von 70–78 $ heben, die Bewertung läge dann bei 1,5 Bio. $ oder mehr. Das stützt den Termin; 85 % unverändert. Stand Mi 12:55: Der TSMC-Verwaltungsrat hat je 500 Mio. $ Investition in Anthropic und OpenAI genehmigt (Dow Jones). Stützt die Nachfrage; 85 % unverändert. Stand Mi 15:00: Auf X verbreitet sich eine unbestätigte Mitschrift (Konto @jukan05), wonach Anthropic Analysten gesagt habe, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Weder Anthropic noch SpaceX haben das bestätigt. Für den Börsentermin ändert das nichts; 85 % unverändert. Stand Mi 16:00: Die X-Mitschrift zum SpaceX-Vertrag ist weiter unbestätigt; weder Anthropic noch SpaceX haben sich geäußert, eine neue SEC-Meldung gibt es nicht. Laut Anthropic-Prospekt sind die Verträge erst nach Januar bzw. März 2027 mit 90 Tagen Frist kündbar (S-1, TokenPost). 85 % unverändert. Stand Mi 18:00: Die X-Mitschrift (@jukan05), Anthropic wolle den SpaceX-Rechenvertrag nicht über Mitte 2027 hinaus verlängern, ist weiter weder bestätigt noch dementiert; auch TeslaNorth schreibt, keine der beiden Firmen habe sich geäußert. 85 % unverändert. Stand Mi 20:00: Musk antwortete um 18:40 auf X auf die Mitschrift: „Wir nehmen die Rechenleistung gern zurück. Kein Problem. Aber ich glaube, das Gegenteil wird passieren.“ Das ist eine Reaktion, keine Bestätigung; Anthropic selbst hat sich weiter nicht geäußert (X, Wccftech). 85 % unverändert. Stand Mi 22:00: Weiter keine Stellungnahme von Anthropic zur Mitschrift. Musk schrieb um 20:01 nach, SpaceX könne im nächsten Jahr etwa die Hälfte der Gigawatt an „tatsächlich nutzbarer“ Rechenleistung stellen. SPCX schloss −2,3 % bei 139,75 $ (X, TeslaNorth, Yahoo). Für den Börsengang selbst ändert das nichts: 85 % unverändert. Stand Do 05:10: Weiter keine Stellungnahme von Anthropic oder SpaceX zur X-Mitschrift über das Vertragsende Mitte 2027 (TeslaNorth). Für den Börsengang selbst neu: der Nvidia-Chefstreit drückt die KI-Werte nachbörslich, das Buch gilt laut früheren Berichten aber als gedeckt. 85 % unverändert.",
+      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms. Stand Mi 07:00: Fidelity nennt für Privatkunden Zeichnungsende Di 17.11. 16:00 ET (22:00 Berlin) und die Preisfestsetzung am Abend des 18.11.; das stützt den Handelsstart am 19.11. 85 % unverändert. Stand Mi 09:50: Laut FT wollen die Konsortialbanken (Goldman Sachs, Morgan Stanley) wegen hoher Nachfrage den Preis über die Spanne von 70–78 $ heben, die Bewertung läge dann bei 1,5 Bio. $ oder mehr. Das stützt den Termin; 85 % unverändert. Stand Mi 12:55: Der TSMC-Verwaltungsrat hat je 500 Mio. $ Investition in Anthropic und OpenAI genehmigt (Dow Jones). Stützt die Nachfrage; 85 % unverändert. Stand Mi 15:00: Auf X verbreitet sich eine unbestätigte Mitschrift (Konto @jukan05), wonach Anthropic Analysten gesagt habe, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Weder Anthropic noch SpaceX haben das bestätigt. Für den Börsentermin ändert das nichts; 85 % unverändert. Stand Mi 16:00: Die X-Mitschrift zum SpaceX-Vertrag ist weiter unbestätigt; weder Anthropic noch SpaceX haben sich geäußert, eine neue SEC-Meldung gibt es nicht. Laut Anthropic-Prospekt sind die Verträge erst nach Januar bzw. März 2027 mit 90 Tagen Frist kündbar (S-1, TokenPost). 85 % unverändert. Stand Mi 18:00: Die X-Mitschrift (@jukan05), Anthropic wolle den SpaceX-Rechenvertrag nicht über Mitte 2027 hinaus verlängern, ist weiter weder bestätigt noch dementiert; auch TeslaNorth schreibt, keine der beiden Firmen habe sich geäußert. 85 % unverändert. Stand Mi 20:00: Musk antwortete um 18:40 auf X auf die Mitschrift: „Wir nehmen die Rechenleistung gern zurück. Kein Problem. Aber ich glaube, das Gegenteil wird passieren.“ Das ist eine Reaktion, keine Bestätigung; Anthropic selbst hat sich weiter nicht geäußert (X, Wccftech). 85 % unverändert. Stand Mi 22:00: Weiter keine Stellungnahme von Anthropic zur Mitschrift. Musk schrieb um 20:01 nach, SpaceX könne im nächsten Jahr etwa die Hälfte der Gigawatt an „tatsächlich nutzbarer“ Rechenleistung stellen. SPCX schloss −2,3 % bei 139,75 $ (X, TeslaNorth, Yahoo). Für den Börsengang selbst ändert das nichts: 85 % unverändert. Stand Do 05:10: Weiter keine Stellungnahme von Anthropic oder SpaceX zur X-Mitschrift über das Vertragsende Mitte 2027 (TeslaNorth). Für den Börsengang selbst neu: der Nvidia-Chefstreit drückt die KI-Werte nachbörslich, das Buch gilt laut früheren Berichten aber als gedeckt. 85 % unverändert. Stand So 08:30: Das Buch ist laut Bloomberg etwa sechsfach überzeichnet, bestehende Geldgeber werden bei der Zuteilung bevorzugt (Reuters). Preisspanne 70–78 $, Preis am 18.11., Handel ab 19.11. unter dem Kürzel ANT (Yonhap Infomax, Reuters). Die dpa-AFX-Wochenvorschau nennt den Börsengang „voraussichtlich am Donnerstag“ (boersennews.de). Für SpaceX wichtig, weil Anthropic Rechenleistung bei SpaceX SI mietet. 85 % unverändert: Nachfrage stark, Restrisiko bleibt eine Verschiebung, falls die Nvidia-Zahlen am Di den KI-Markt stark drücken.",
       "example": false,
       "sources": [
         {
@@ -636,6 +648,18 @@
         {
           "title": "Yahoo Finance SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
+        },
+        {
+          "title": "Reuters via Investing.com: Anthropic-Börsengang laut Bloomberg etwa sechsfach überzeichnet (12.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/anthropics-ipo-is-about-six-times-oversubscribed-bloomberg-news-reports-5023345"
+        },
+        {
+          "title": "Yonhap Infomax: Wochenausblick New York – Nvidia-Zahlen und Anthropic-Börsengang (Preis 18.11., Handel 19.11., Spanne 70–78 $)",
+          "url": "https://en.infomaxai.com/news/articleView.html?idxno=148587"
+        },
+        {
+          "title": "dpa-AFX via boersennews.de: Wochenausblick – Anleger warten nach Dax-Rekord auf Nvidia-Zahlen und Anthropic",
+          "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/wochenausblick-anleger-warten-nach-dax-rekord-auf-nvidia-zahlen-und-anthropic/5352002/"
         }
       ]
     },
@@ -737,6 +761,37 @@
       ]
     },
     {
+      "id": "evt-falcon9-ng25",
+      "title": "SpaceX: Falcon-9-Start Cygnus NG-25 mit Fracht zur ISS für die NASA (So 29.11. 16:49)",
+      "date": "2026-11-29",
+      "time": "16:49",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "start",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 65,
+      "impact": "niedrig",
+      "reasoning": "Die NASA plant den Start des Frachters Cygnus XL von Northrop Grumman (Mission CRS-25) auf einer Falcon 9 frühestens am So 29.11. um 10:49 Uhr Ostküstenzeit (16:49 Berlin) von Startrampe SLC-40 in Cape Canaveral (NASA). Die Startdatenbank führt 15:47 UTC (16:47 Berlin) mit Status „Go“ (Launch Library 2). An Bord: Versorgung und Experimente für die Raumstation, der Frachter bleibt bis Mai 2027 angedockt (NASA, Northrop Grumman). Bis zum Termin sind es zwei Wochen, ISS-Frachtflüge rutschen oft um ein, zwei Tage, etwa wegen Wetter oder Stationsplanung. Deshalb 65 % für genau diesen Tag. Kurswirkung gering, zeigt aber, dass die NASA auch fremde Frachter mit SpaceX fliegt.",
+      "example": false,
+      "sources": [
+        {
+          "title": "NASA: Medien-Einladung zum Start von Northrop Grumman CRS-25 (frühestens So 29.11., 10:49 EST, SLC-40)",
+          "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-northrop-grumman-crs-25-station-resupply-launch/"
+        },
+        {
+          "title": "Launch Library 2: Cygnus CRS-2 NG-25 (Stand 15.11.: 29.11. 15:47 UTC, „Go“)",
+          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?search=NG-25"
+        },
+        {
+          "title": "Northrop Grumman: NASA Commercial Resupply Mission NG-25",
+          "url": "https://www.northropgrumman.com/what-we-do/space/missions/nasa-commercial-resupply-mission-ng-25"
+        }
+      ]
+    },
+    {
       "id": "evt-cybercab-dallas",
       "title": "Tesla: Cybercab-Fahrten in Dallas (Ziel: November)",
       "date": "2026-11-30",
@@ -750,7 +805,7 @@
       ],
       "probabilityPct": 65,
       "impact": "mittel",
-      "reasoning": "Im Q3-Call kündigte Tesla Cybercab-Fahrten in Dallas für „nächsten Monat“ an; in Austin fahren bereits über 300 Cybercabs. Musk bekräftigte am 6.11. die Kapazitätsverschiebung Richtung Cybercab (Cybertruck in Texas Mitte 2027 runter). Das Datum hier ist das Monatsende als Frist, kein angekündigter Tag. Ich bleibe bei 55 %, weil Tesla bei Robotaxi-Terminen oft rutscht, der Schritt Austin→Dallas aber klein ist. Politisches Risiko: nach den Midterms in Texas mehr Aufsicht über autonome Fahrdienste möglich. Stand So 05:30: Am Sa wurden in Dallas mehr als 50 Cybercabs mit Tesla-Schriftzug auf einem Parkplatz gefilmt, einige offenbar mit Starlink-Antenne; Sawyer Merritt schreibt, erste öffentliche Fahrten „stehen bevor“. Die Zahl ist eine Schätzung von Beobachtern, Tesla hat noch keinen Start in Dallas verkündet, Fahrgäste fahren dort bisher im Model Y (Sawyer Merritt, Robotaxi DMV USA auf X). Eine Flotte vor Ort zwei Wochen vor Monatsende spricht für den November-Termin: 65 statt 55 %. Stand So 06:30: Keine neue Ankündigung von Tesla über Nacht; Fahrgäste in Dallas bekommen weiter ein Model Y, obwohl dort Dutzende Cybercabs gefilmt wurden (Electric Vehicles). 65 % unverändert.",
+      "reasoning": "Im Q3-Call kündigte Tesla Cybercab-Fahrten in Dallas für „nächsten Monat“ an; in Austin fahren bereits über 300 Cybercabs. Musk bekräftigte am 6.11. die Kapazitätsverschiebung Richtung Cybercab (Cybertruck in Texas Mitte 2027 runter). Das Datum hier ist das Monatsende als Frist, kein angekündigter Tag. Ich bleibe bei 55 %, weil Tesla bei Robotaxi-Terminen oft rutscht, der Schritt Austin→Dallas aber klein ist. Politisches Risiko: nach den Midterms in Texas mehr Aufsicht über autonome Fahrdienste möglich. Stand So 05:30: Am Sa wurden in Dallas mehr als 50 Cybercabs mit Tesla-Schriftzug auf einem Parkplatz gefilmt, einige offenbar mit Starlink-Antenne; Sawyer Merritt schreibt, erste öffentliche Fahrten „stehen bevor“. Die Zahl ist eine Schätzung von Beobachtern, Tesla hat noch keinen Start in Dallas verkündet, Fahrgäste fahren dort bisher im Model Y (Sawyer Merritt, Robotaxi DMV USA auf X). Eine Flotte vor Ort zwei Wochen vor Monatsende spricht für den November-Termin: 65 statt 55 %. Stand So 06:30: Keine neue Ankündigung von Tesla über Nacht; Fahrgäste in Dallas bekommen weiter ein Model Y, obwohl dort Dutzende Cybercabs gefilmt wurden (Electric Vehicles). 65 % unverändert. Stand So 08:30: Weiter keine Ankündigung von Tesla zum Start in Dallas. 65 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -1190,7 +1245,7 @@
       ],
       "probabilityPct": 98,
       "impact": "hoch",
-      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen. Stand 9.11.: Der Markt preist laut CME FedWatch mit über 80 % eine Zinserhöhung ein (Reuters), gestützt vom starken Oktober-Arbeitsmarkt. Stand 10.11.: Oktober-CPI mit +0,4 % und Kernrate +0,3 % jeweils 0,1 Punkte über Konsens (BLS). Waller ist für eine Erhöhung im Dezember und brachte bei heißen Daten 50 Basispunkte ins Spiel (CNBC). Am Fr 13.11. folgen die Erzeugerpreise. Stand 17:58: Die 10-jährige US-Rendite stieg um mehr als 14 Basispunkte auf 5,004 %, die 2-jährige um über 20 Basispunkte auf 4,755 % (CNBC). Dallas-Fed-Präsidentin Logan fordert mindestens zwei weitere Erhöhungen um je 25 Basispunkte, im Winter womöglich schneller (Investing.com). Goldman Sachs AM: Erhöhung im Dezember ist Basisfall, weitere 2027 möglich (CNBC). Stand 20:00: Laut Handelsblatt ist eine Erhöhung im Dezember nun voll eingepreist, rund 90 % rechnen mit 25 Basispunkten auf 4,0–4,25 %, rund 10 % mit 50 Basispunkten. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 07:00: Fed-Vizechefin Bowman sagte am Abend, bei der Inflation sei „noch Arbeit zu tun“, ohne ausdrücklich eine Erhöhung zu fordern (Fed, Reuters). Trading Economics nennt rund 91 % Wahrscheinlichkeit für eine Erhöhung im Dezember. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 11:40: Laut CME FedWatch liegt die Wahrscheinlichkeit für 25 Basispunkte im Dezember bei 91,9 % (Vortag 84 %), für 50 Basispunkte bei 9,1 %; eine Pause ist ausgepreist (CNBC). 98 % unverändert, das gilt dem Termin selbst. Stand Mi 18:00: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht (+0,4 % zum Vormonat) „grenzwertig beunruhigend“; Sorge machen ihm vor allem die Dienstleistungspreise (CNBC). 98 % unverändert, das gilt dem Termin selbst. Stand Sa 22:00: Boston-Fed-Chefin Susan Collins sprach sich am Sa für einen „stetigen, schrittweisen“ Weg kleiner Erhöhungen aus, gegen ein schnelleres Tempo; die Zinsen könnten im nächsten Jahr aber etwas höher steigen als gedacht. Reuters schreibt, allgemein werde im Dezember eine Erhöhung um 0,25 Punkte auf 4,00–4,25 % erwartet, danach eine weitere im Januar (Reuters). 98 % unverändert, das gilt dem Termin selbst.",
+      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen. Stand 9.11.: Der Markt preist laut CME FedWatch mit über 80 % eine Zinserhöhung ein (Reuters), gestützt vom starken Oktober-Arbeitsmarkt. Stand 10.11.: Oktober-CPI mit +0,4 % und Kernrate +0,3 % jeweils 0,1 Punkte über Konsens (BLS). Waller ist für eine Erhöhung im Dezember und brachte bei heißen Daten 50 Basispunkte ins Spiel (CNBC). Am Fr 13.11. folgen die Erzeugerpreise. Stand 17:58: Die 10-jährige US-Rendite stieg um mehr als 14 Basispunkte auf 5,004 %, die 2-jährige um über 20 Basispunkte auf 4,755 % (CNBC). Dallas-Fed-Präsidentin Logan fordert mindestens zwei weitere Erhöhungen um je 25 Basispunkte, im Winter womöglich schneller (Investing.com). Goldman Sachs AM: Erhöhung im Dezember ist Basisfall, weitere 2027 möglich (CNBC). Stand 20:00: Laut Handelsblatt ist eine Erhöhung im Dezember nun voll eingepreist, rund 90 % rechnen mit 25 Basispunkten auf 4,0–4,25 %, rund 10 % mit 50 Basispunkten. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 07:00: Fed-Vizechefin Bowman sagte am Abend, bei der Inflation sei „noch Arbeit zu tun“, ohne ausdrücklich eine Erhöhung zu fordern (Fed, Reuters). Trading Economics nennt rund 91 % Wahrscheinlichkeit für eine Erhöhung im Dezember. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 11:40: Laut CME FedWatch liegt die Wahrscheinlichkeit für 25 Basispunkte im Dezember bei 91,9 % (Vortag 84 %), für 50 Basispunkte bei 9,1 %; eine Pause ist ausgepreist (CNBC). 98 % unverändert, das gilt dem Termin selbst. Stand Mi 18:00: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht (+0,4 % zum Vormonat) „grenzwertig beunruhigend“; Sorge machen ihm vor allem die Dienstleistungspreise (CNBC). 98 % unverändert, das gilt dem Termin selbst. Stand Sa 22:00: Boston-Fed-Chefin Susan Collins sprach sich am Sa für einen „stetigen, schrittweisen“ Weg kleiner Erhöhungen aus, gegen ein schnelleres Tempo; die Zinsen könnten im nächsten Jahr aber etwas höher steigen als gedacht. Reuters schreibt, allgemein werde im Dezember eine Erhöhung um 0,25 Punkte auf 4,00–4,25 % erwartet, danach eine weitere im Januar (Reuters). 98 % unverändert, das gilt dem Termin selbst. Stand So 08:30: Am Terminmarkt liegt die Wahrscheinlichkeit einer Erhöhung um 0,25 Punkte laut CME FedWatch bei 89,8 %, für 0,5 Punkte bei 10,2 % (FXBus, Stand 14.11.). 98 % unverändert, das gilt dem Termin selbst.",
       "example": false,
       "sources": [
         {
@@ -1240,6 +1295,10 @@
         {
           "title": "Reuters via Investing.com: Fed-Präsidentin Collins für schrittweise Zinserhöhungen (14.11.)",
           "url": "https://www.investing.com/news/economy-news/feds-collins-says-gradual-rate-hikes-best-to-manage-economic-risks-5027385"
+        },
+        {
+          "title": "FXBus: CME FedWatch – 89,8 % für +0,25 Punkte im Dezember, 10,2 % für +0,5 (14.11.)",
+          "url": "https://www.fxbus.com/en/news/20261114054159200962.html"
         }
       ]
     },

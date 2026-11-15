@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-15T05:30:00+01:00",
+  "updatedAt": "2026-11-15T08:40:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 75,
+      "score": 70,
       "postsCount": 25,
-      "reason": "Der Schiffsfang wird über Nacht weiter gefeiert, viele erwarten am Montag Kursgewinne; nur vereinzelt Sorgen um Verwässerung durch neue Aktien.",
+      "reason": "Der Schiffsfang wird weiter gefeiert, einige erwarten Montag Kursgewinne und sehen den Anthropic-Börsengang als Rückenwind; vereinzelt Spott, die Aktie falle nach Erfolgen.",
       "sources": [
         {
-          "title": "@fammetaX auf X (15.11., 00:32)",
-          "url": "https://x.com/fammetaX/status/2121748143662666092"
+          "title": "@nextbigfuture auf X (15.11., 08:35)",
+          "url": "https://x.com/nextbigfuture/status/2121869801106878744"
         },
         {
-          "title": "@InvestingDad212 auf X (15.11., 00:08)",
-          "url": "https://x.com/InvestingDad212/status/2121742102891475321"
+          "title": "@spcxGOD auf X (15.11., 08:30)",
+          "url": "https://x.com/spcxGOD/status/2121868302813474968"
         },
         {
-          "title": "@scentofnatur auf X (15.11., 00:07)",
-          "url": "https://x.com/scentofnatur/status/2121741965041750171"
+          "title": "@dezmondOliver auf X (15.11., 08:37)",
+          "url": "https://x.com/dezmondOliver/status/2121870279530225836"
         }
       ],
-      "updatedAt": "2026-11-15T05:30:00+01:00"
+      "updatedAt": "2026-11-15T08:40:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 10,
-      "postsCount": 24,
-      "reason": "Cybercab-Verkauf und Robotaxi-Ausbau kommen gut an; nach dem Schiffsfang fragen viele, ob eine Fusion für Tesla-Aktionäre noch günstig ist.",
+      "score": 5,
+      "postsCount": 25,
+      "reason": "Lob für Cybercab-Fahrten steht neben Unfallvorwürfen und Fragen zum Umtauschverhältnis bei einer SpaceX-Fusion; viel Werbe-Spam.",
       "sources": [
         {
-          "title": "@Joe_Shmo auf X (15.11., 05:18)",
-          "url": "https://x.com/Joe_Shmo/status/2121820009051611351"
+          "title": "@x_invest1 auf X (15.11., 08:30)",
+          "url": "https://x.com/x_invest1/status/2121868541678813288"
         },
         {
-          "title": "@spcxGOD auf X (15.11., 03:00)",
-          "url": "https://x.com/spcxGOD/status/2121785257884000479"
+          "title": "@StonkKing4 auf X (15.11., 08:34)",
+          "url": "https://x.com/StonkKing4/status/2121869440199655516"
         },
         {
-          "title": "@4sfedtinja auf X (15.11., 03:44)",
-          "url": "https://x.com/4sfedtinja/status/2121796457690960201"
+          "title": "@ChrisPyller auf X (15.11., 08:36)",
+          "url": "https://x.com/ChrisPyller/status/2121869923739922881"
         }
       ],
-      "updatedAt": "2026-11-15T05:30:00+01:00"
+      "updatedAt": "2026-11-15T08:40:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 40,
+      "score": 35,
       "postsCount": 25,
-      "reason": "Der 100. Electron-Start wird gefeiert; Chartbeobachter verweisen aber auf Widerstand bei 66–68 $ und Verluste bis zum Neutron-Start.",
+      "reason": "Der 100. Electron-Start wird weiter gefeiert; Seeking Alpha warnt vor neuen Schulden, einzelne sprechen von einer Blase. Viel Werbe-Spam.",
       "sources": [
         {
-          "title": "@TheNovaS auf X (15.11., 01:13)",
-          "url": "https://x.com/TheNovaS/status/2121758387486744946"
+          "title": "@leonid_zador auf X (15.11., 08:19)",
+          "url": "https://x.com/leonid_zador/status/2121865625173639169"
         },
         {
-          "title": "@9EMAPlus auf X (15.11., 02:00)",
-          "url": "https://x.com/9EMAPlus/status/2121770294008574108"
+          "title": "@SeekingAlpha auf X (15.11., 08:30)",
+          "url": "https://x.com/SeekingAlpha/status/2121868308425449902"
         },
         {
-          "title": "@pm07291 auf X (15.11., 03:25)",
-          "url": "https://x.com/pm07291/status/2121791667623604401"
+          "title": "@Tim19662078 auf X (15.11., 07:24)",
+          "url": "https://x.com/Tim19662078/status/2121851907874468318"
         }
       ],
-      "updatedAt": "2026-11-15T05:30:00+01:00"
+      "updatedAt": "2026-11-15T08:40:00+01:00"
     }
   }
 }
