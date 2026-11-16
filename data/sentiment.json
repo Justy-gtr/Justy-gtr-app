@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T10:30:00+01:00",
+  "updatedAt": "2026-11-16T12:38:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 25,
+      "score": 30,
       "postsCount": 25,
-      "reason": "Der Starship-Fang wird gefeiert und stärkt für viele die Bewertung; Kritik gibt es an der sehr hohen Bewertung und einer Starlink-Rüge in Südafrika.",
+      "reason": "Citi hebt das Kursziel auf 280 $, der Starship-Fang wird weiter gefeiert; Kritik gibt es an der hohen Bewertung und Starlink-Einschränkungen für die Ukraine.",
       "sources": [
         {
-          "title": "@financespotnews auf X (16.11., 10:13)",
-          "url": "https://x.com/financespotnews/status/2122256610491822250"
+          "title": "@wallstengine auf X (16.11., 12:36)",
+          "url": "https://x.com/wallstengine/status/2122292723999031424"
         },
         {
-          "title": "@mybroadband auf X (16.11., 10:06)",
-          "url": "https://x.com/mybroadband/status/2122254859101425676"
+          "title": "@CyberCabDavid auf X (16.11., 12:36)",
+          "url": "https://x.com/CyberCabDavid/status/2122292691350544778"
         },
         {
-          "title": "@ai_univarse auf X (16.11., 10:04)",
-          "url": "https://x.com/ai_univarse/status/2122254529349775836"
+          "title": "@DigitalAssetsUS auf X (16.11., 12:35)",
+          "url": "https://x.com/DigitalAssetsUS/status/2122292521468379598"
         }
       ],
-      "updatedAt": "2026-11-16T10:15:00+01:00"
+      "updatedAt": "2026-11-16T12:38:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 15,
+      "score": 20,
       "postsCount": 25,
-      "reason": "Viel Gesprächsstoff: Cybercab für Privatkunden (29.990 $ + 299 $/Monat) und mehr Robotaxi in Miami; Kritik an FSD-Fehlern und der möglichen SpaceX-Fusion.",
+      "reason": "JPMorgan sieht im schnellen Robotaxi-Ausbau eine frühe Bestätigung, Miami-Zone wächst; Ärger über fehlendes FSD für HW3 in Australien und keine Zulassung in der Schweiz.",
       "sources": [
         {
-          "title": "@ciertasskyn auf X (16.11., 10:26)",
-          "url": "https://x.com/ciertasskyn/status/2122260085485269111"
+          "title": "@amitk404 auf X (16.11., 12:34)",
+          "url": "https://x.com/amitk404/status/2122292309119348823"
         },
         {
-          "title": "@TeslaBest auf X (16.11., 10:24)",
-          "url": "https://x.com/TeslaBest/status/2122259399854972982"
+          "title": "@BlakeKing777 auf X (16.11., 12:35)",
+          "url": "https://x.com/BlakeKing777/status/2122292366706982986"
         },
         {
-          "title": "@x_invest1 auf X (16.11., 10:27)",
-          "url": "https://x.com/x_invest1/status/2122260200371740681"
+          "title": "@1electricdon auf X (16.11., 12:35)",
+          "url": "https://x.com/1electricdon/status/2122292393018048905"
         }
       ],
-      "updatedAt": "2026-11-16T10:30:00+01:00"
+      "updatedAt": "2026-11-16T12:38:00+01:00"
     },
     "RKLB": {
-      "mood": "gut",
-      "score": 25,
-      "postsCount": 20,
-      "reason": "Viele feiern den 100. Start und wollen die Aktie lange halten; andere erinnern daran, dass der Kurs noch weit unter dem alten Hoch liegt.",
+      "mood": "gemischt",
+      "score": 10,
+      "postsCount": 25,
+      "reason": "Viele erwarten wieder einen roten Tag und zeigen das Minus seit dem Hoch; Fans loben den 100. Start und die 16 gebuchten Neutron-Missionen.",
       "sources": [
         {
-          "title": "@Jordan_Envesta auf X (16.11., 09:48)",
-          "url": "https://x.com/Jordan_Envesta/status/2122250318796714017"
+          "title": "@ayanjainhere auf X (16.11., 12:28)",
+          "url": "https://x.com/ayanjainhere/status/2122290666181099955"
         },
         {
-          "title": "@futureplz auf X (16.11., 09:31)",
-          "url": "https://x.com/futureplz/status/2122246110433653186"
+          "title": "@FemmyYohana auf X (16.11., 12:30)",
+          "url": "https://x.com/FemmyYohana/status/2122291141790060968"
         },
         {
-          "title": "@belbeleggers auf X (16.11., 08:52)",
-          "url": "https://x.com/belbeleggers/status/2122236226271089143"
+          "title": "@AlgoTradeAlert auf X (16.11., 12:17)",
+          "url": "https://x.com/AlgoTradeAlert/status/2122287960968352083"
         }
       ],
-      "updatedAt": "2026-11-16T10:15:00+01:00"
+      "updatedAt": "2026-11-16T12:38:00+01:00"
     }
   }
 }
