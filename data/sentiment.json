@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T15:58:00+01:00",
+  "updatedAt": "2026-11-16T16:07:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 35,
       "postsCount": 20,
-      "reason": "Bernstein, RBC, Raymond James und Citi loben den Starship-Fang; SPCX startet mit knapp −1 % bei 138 $, viele Fans wundern sich über den schwachen Kurs.",
+      "reason": "Citi hebt das Kursziel auf 280 $; Fans feiern den Starship-Fang, wundern sich aber, dass SPCX trotzdem leicht fällt. Auch Fusion mit Tesla wird diskutiert.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (16.11., 15:33)",
-          "url": "https://x.com/spcxGOD/status/2122337280425926946"
+          "title": "@WOLF_Financial auf X (16.11., 15:59)",
+          "url": "https://x.com/WOLF_Financial/status/2122343805978333690"
+        },
+        {
+          "title": "@bauminater auf X (16.11., 16:00)",
+          "url": "https://x.com/bauminater/status/2122343936748356077"
         },
         {
           "title": "@Stop_Loss1 auf X (16.11., 15:56)",
           "url": "https://x.com/Stop_Loss1/status/2122342942987710677"
-        },
-        {
-          "title": "@davidkarim auf X (16.11., 15:45)",
-          "url": "https://x.com/davidkarim/status/2122340196079251486"
         }
       ],
-      "updatedAt": "2026-11-16T15:58:00+01:00"
+      "updatedAt": "2026-11-16T16:07:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 20,
-      "postsCount": 20,
-      "reason": "Viel Freude über 3 Mrd. € für die Cybercab-Halle in Grünheide und den Cybercab-Verkauf; doch TSLA fällt zum Start, einige Anleger sind frustriert.",
+      "score": 10,
+      "postsCount": 19,
+      "reason": "Grünheide-Ausbau für 1 Mio. Cybercabs (3 Mrd. €) freut viele; doch TSLA rutscht vorbörslich über 4 % ab, und das 299-$-Abo fürs Cybercab wird kritisiert.",
       "sources": [
         {
-          "title": "@Finanzennet auf X (16.11., 15:53)",
-          "url": "https://x.com/Finanzennet/status/2122342234544627933"
+          "title": "@NextChargeDE auf X (16.11., 16:03)",
+          "url": "https://x.com/NextChargeDE/status/2122344842311405852"
         },
         {
-          "title": "@CuriousPejjy auf X (16.11., 15:47)",
-          "url": "https://x.com/CuriousPejjy/status/2122340719671046369"
+          "title": "@OlanrewajuSkido auf X (16.11., 15:54)",
+          "url": "https://x.com/OlanrewajuSkido/status/2122342606441251236"
         },
         {
-          "title": "@na_option auf X (16.11., 15:48)",
-          "url": "https://x.com/na_option/status/2122340947291996271"
+          "title": "@wotwitt auf X (16.11., 15:57)",
+          "url": "https://x.com/wotwitt/status/2122343180897276274"
         }
       ],
-      "updatedAt": "2026-11-16T15:58:00+01:00"
+      "updatedAt": "2026-11-16T16:07:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 25,
+      "score": 30,
       "postsCount": 20,
-      "reason": "Fans feiern 100 Electron-Starts und Neutron (auch für Astronauten gedacht); nach dem ULA-Fehlstart sehen viele Rocket Lab als Nr. 2, die Aktie bleibt schwach.",
+      "reason": "Nach dem Vulcan-Fehlstart heißt es: Nur SpaceX und Rocket Lab fliegen noch in den USA; Neutron-Preis steigt auf 70 Mio. $. Viel Spam, die Aktie bleibt schwach.",
       "sources": [
         {
-          "title": "@rafytirado21 auf X (16.11., 15:33)",
-          "url": "https://x.com/rafytirado21/status/2122337351024492904"
+          "title": "@SpaceInvestor_D auf X (16.11., 16:00)",
+          "url": "https://x.com/SpaceInvestor_D/status/2122344031246008440"
         },
         {
-          "title": "@RCapitalX auf X (16.11., 15:46)",
-          "url": "https://x.com/RCapitalX/status/2122340444457877728"
+          "title": "@BuyAtSupport auf X (16.11., 15:59)",
+          "url": "https://x.com/BuyAtSupport/status/2122343848018166210"
         },
         {
-          "title": "@nikogeorge auf X (16.11., 15:44)",
-          "url": "https://x.com/nikogeorge/status/2122340131063665090"
+          "title": "@MarthaJohn1679 auf X (16.11., 15:58)",
+          "url": "https://x.com/MarthaJohn1679/status/2122343597395607720"
         }
       ],
-      "updatedAt": "2026-11-16T15:58:00+01:00"
+      "updatedAt": "2026-11-16T16:07:00+01:00"
     }
   }
 }
