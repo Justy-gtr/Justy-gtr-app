@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-16T16:20:00+01:00",
+  "asOf": "2026-11-16T18:20:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,90 @@
     }
   },
   "posts": [
+    {
+      "id": "post-spacex-2122368004298068305",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-16T17:35:38+01:00",
+      "summaryDe": "SpaceX zeigt Bordaufnahmen vom Anflug des Schiffs Starship 42 kurz vor dem Fang durch die Turmarme („Don't Panic“). Neues Video zum ersten Schiffsfang von Flight 15, keine neue Firmenmeldung.",
+      "originalText": "Don't Panic \n\nRiding on Starship 42 during final approach to catch",
+      "url": "https://x.com/SpaceX/status/2122368004298068305",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (16.11., 17:35): Riding on Starship 42 during final approach to catch",
+          "url": "https://x.com/SpaceX/status/2122368004298068305"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15",
+          "url": "https://www.spacex.com/launches/starship-flight-15/"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2122355344576037338",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-16T16:45:20+01:00",
+      "summaryDe": "SpaceX veröffentlicht ein weiteres Video: Starship 42 im Anflug auf den Fang am Startturm. Nachschau auf den ersten Schiffsfang vom Wochenende.",
+      "originalText": "Starship 42 coming in for catch",
+      "url": "https://x.com/SpaceX/status/2122355344576037338",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (16.11., 16:45): Starship 42 coming in for catch",
+          "url": "https://x.com/SpaceX/status/2122355344576037338"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15",
+          "url": "https://www.spacex.com/launches/starship-flight-15/"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2122352509721190612",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-16T16:34:04+01:00",
+      "summaryDe": "SpaceX zeigt die Landezündung von Starship 42 im Endanflug auf den Fang am Turm. Weiteres Video zum ersten Schiffsfang, keine neue Nachricht.",
+      "originalText": "Starship landing burn on final approach for catch",
+      "url": "https://x.com/SpaceX/status/2122352509721190612",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (16.11., 16:34): Starship landing burn on final approach for catch",
+          "url": "https://x.com/SpaceX/status/2122352509721190612"
+        },
+        {
+          "title": "SpaceX: Starship Flight 15",
+          "url": "https://www.spacex.com/launches/starship-flight-15/"
+        }
+      ]
+    },
     {
       "id": "post-robotaxi-2122234442328740005",
       "account": "@robotaxi",

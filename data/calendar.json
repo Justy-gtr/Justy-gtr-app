@@ -427,7 +427,7 @@
     },
     {
       "id": "evt-fed-warsh-ki-konferenz",
-      "title": "Fed-Chef Warsh eröffnet Konferenz zu KI, Produktivität und Jobs (Mo 18:00)",
+      "title": "Fed-Chef Warsh eröffnet Konferenz zu KI, Produktivität und Jobs (Mo 18:00, gehalten)",
       "date": "2026-11-16",
       "time": "18:00",
       "timezone": "Europe/Berlin",
@@ -439,9 +439,9 @@
         "TSLA",
         "MRVL"
       ],
-      "probabilityPct": 97,
+      "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Kevin Warsh hält am Mo um 9:00 Uhr Ortszeit San Francisco (18:00 Berlin) die Eröffnungsrede der Fed-Konferenz seiner Arbeitsgruppe zu Produktivität und Jobs und moderiert danach Runden zur Verbreitung von „Superintelligenz“, u. a. mit Nikesh Arora (Palo Alto Networks), Patrick Collison (Stripe) und Marc Andreessen (San Francisco Fed). Es ist sein erster Auftritt vor dem Fed-Protokoll am Mi. Der Fed-Präsident von Kansas City, Jeff Schmid, sagte am So, die Inflation laufe „in die falsche Richtung“, ein Teil des Drucks komme aus der KI-Nachfrage (MLQ, CNBC). Klingt Warsh nach weiteren Zinserhöhungen, belastet das teure Wachstumswerte wie SPCX und TSLA. 97 %, weil der Termin fest im Fed-Programm steht. Stand Mo 06:30: Termin bestätigt, Eröffnung um 17:00 GMT (18:00 Berlin) (investingLive). Laut Vorberichten geht es um die Wirkung von KI auf Produktivität, Jobs und Inflation, nicht um ein Zinssignal; Warsh ist mit seiner These, KI dämpfe die Inflation, unter den Fed-Kollegen eher allein (Reuters via Investing.com, Washington Post). Eine Zinserhöhung im Dezember ist laut investingLive weiter fest eingepreist. 97 % unverändert. Stand Mo 08:30: Termin unverändert, 12:00 Uhr New York (18:00 Berlin); vorher spricht Fed-Gouverneur Barr in Mailand über KI und Finanzstabilität (MLQ). 97 % unverändert. Stand Mo 09:30: Laut Programm der San Francisco Fed spricht Warsh um 9:00 Uhr Pacific (18:00 Berlin) rund 15 Minuten zur Eröffnung und moderiert danach Runden und ein Kamingespräch. 97 % unverändert. Stand Mo 13:00: Programm unverändert, Warsh eröffnet um 9:00 Uhr Pacific (18:00 Berlin) (San Francisco Fed). 97 % unverändert.",
+      "reasoning": "Kevin Warsh hält am Mo um 9:00 Uhr Ortszeit San Francisco (18:00 Berlin) die Eröffnungsrede der Fed-Konferenz seiner Arbeitsgruppe zu Produktivität und Jobs und moderiert danach Runden zur Verbreitung von „Superintelligenz“, u. a. mit Nikesh Arora (Palo Alto Networks), Patrick Collison (Stripe) und Marc Andreessen (San Francisco Fed). Es ist sein erster Auftritt vor dem Fed-Protokoll am Mi. Der Fed-Präsident von Kansas City, Jeff Schmid, sagte am So, die Inflation laufe „in die falsche Richtung“, ein Teil des Drucks komme aus der KI-Nachfrage (MLQ, CNBC). Klingt Warsh nach weiteren Zinserhöhungen, belastet das teure Wachstumswerte wie SPCX und TSLA. 97 %, weil der Termin fest im Fed-Programm steht. Stand Mo 06:30: Termin bestätigt, Eröffnung um 17:00 GMT (18:00 Berlin) (investingLive). Laut Vorberichten geht es um die Wirkung von KI auf Produktivität, Jobs und Inflation, nicht um ein Zinssignal; Warsh ist mit seiner These, KI dämpfe die Inflation, unter den Fed-Kollegen eher allein (Reuters via Investing.com, Washington Post). Eine Zinserhöhung im Dezember ist laut investingLive weiter fest eingepreist. 97 % unverändert. Stand Mo 08:30: Termin unverändert, 12:00 Uhr New York (18:00 Berlin); vorher spricht Fed-Gouverneur Barr in Mailand über KI und Finanzstabilität (MLQ). 97 % unverändert. Stand Mo 09:30: Laut Programm der San Francisco Fed spricht Warsh um 9:00 Uhr Pacific (18:00 Berlin) rund 15 Minuten zur Eröffnung und moderiert danach Runden und ein Kamingespräch. 97 % unverändert. Stand Mo 13:00: Programm unverändert, Warsh eröffnet um 9:00 Uhr Pacific (18:00 Berlin) (San Francisco Fed). 97 % unverändert. Stand Mo 18:15: Rede gehalten. Warsh sagt, „Superintelligenz“ werde die Wirtschaft deutlich prägen, mit wichtigen Folgen für die Geldpolitik „später“. Er nannte drei Szenarien, ausdrücklich keine Prognosen: mehr Produktivität bei fast voller Beschäftigung; Jobverluste durch Automatisierung; oder KI enttäuscht – dann könnten nach hohen Investitionen und Kursgewinnen die Bewertungen fallen, die Wirtschaft sich abkühlen und die Arbeitslosigkeit steigen (CNBC, Axios). Ein direktes Zinssignal nennen die Berichte nicht. 100 %, weil der Termin stattgefunden hat.",
       "example": false,
       "sources": [
         {
@@ -467,6 +467,14 @@
         {
           "title": "MLQ.ai: Nasdaq-Futures fast −1 %, Taiwan-Chipausverkauf vertieft sich (16.11., 06:46 Berlin)",
           "url": "https://mlq.ai/news/nasdaq-futures-fall-nearly-1-as-taiwans-chip-rout-deepens-before-nvidia-results-while-european-futures-edge-up/"
+        },
+        {
+          "title": "CNBC: Warsh betont Bedeutung von KI, warnt, sie könne „enttäuschen“ (16.11.)",
+          "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html"
+        },
+        {
+          "title": "Axios: Warsh sieht Risiko eines Kurseinbruchs, falls der KI-Boom enttäuscht (16.11.)",
+          "url": "https://www.axios.com/2026/11/16/fed-warsh-ai-boom-stocks"
         }
       ]
     },
@@ -2125,6 +2133,41 @@
         {
           "title": "Reuters/Investing.com: Finnland genehmigt Tesla Assisted Driving (11.11.)",
           "url": "https://www.investing.com/news/stock-market-news/finland-approves-teslas-assisted-driving-system-5017838"
+        }
+      ]
+    },
+    {
+      "id": "evt-tesla-gruenheide-antrag",
+      "title": "Tesla: Genehmigungsantrag für Cybercab-Halle in Grünheide (bis Jahresende)",
+      "date": "2026-12-31",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "produkt",
+      "company": "Tesla",
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 80,
+      "impact": "niedrig",
+      "reasoning": "Tesla hat am Mo 16.11. angekündigt, rund drei Milliarden Euro in ein neues Produktionsgebäude in Grünheide zu stecken, in dem später bis zu eine Million Cybercabs im Jahr gebaut werden können. Der Genehmigungsantrag soll noch 2026 eingereicht werden und baut auf dem Gesamtantrag von 2023 auf; Baubeginn im 1. Halbjahr 2027, Produktionsbeginn 2029 (tagesschau/rbb, Reuters via Investing.com, electrive). 80 %, weil Tesla den Termin selbst nennt und der Antrag auf bereits eingereichten Unterlagen aufbaut; Tesla-Zeitpläne rutschen aber oft. Die Aktie fiel am Mo trotzdem mit dem Tech-Markt (TipRanks).",
+      "example": false,
+      "sources": [
+        {
+          "title": "tagesschau/rbb: Tesla kündigt Milliarden-Investition in Grünheide an (16.11., 14:54)",
+          "url": "https://www.tagesschau.de/inland/regional/brandenburg/rbb-tesla-kuendigt-milliarden-investition-in-werk-in-gruenheide-an-102.html"
+        },
+        {
+          "title": "Reuters via Investing.com: Tesla kündigt 3,3-Mrd.-$-Ausbau des Werks in Deutschland an (16.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/tesla-announces-33-billion-expansion-of-germany-plant-5030287"
+        },
+        {
+          "title": "electrive: Tesla kündigt Milliarden-Ausbau für Gigafactory Grünheide an (16.11.)",
+          "url": "https://www.electrive.net/2026/11/16/tesla-kuendigt-milliarden-ausbau-fuer-gigafactory-gruenheide-an/"
+        },
+        {
+          "title": "TipRanks: Tesla-Aktie fällt trotz Ausbauplänen in Deutschland (16.11.)",
+          "url": "https://www.tipranks.com/news/tesla-stock-tsla-slips-despite-plans-to-invest-over-3b-in-german-cybercab-plant-expansion"
         }
       ]
     },

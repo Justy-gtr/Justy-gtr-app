@@ -422,6 +422,28 @@
           "url": "https://x.com/boringcompany/status/2115587065282982342"
         }
       ]
+    },
+    {
+      "id": "prm-tesla-gruenheide-cybercab",
+      "who": "Tesla (Werksleiter André Thierig)",
+      "company": "Tesla",
+      "promise": "Tesla will rund drei Milliarden Euro in ein neues Produktionsgebäude in Grünheide investieren, in dem bis zu eine Million Cybercabs im Jahr gebaut werden können. Antrag noch 2026, Baubeginn im 1. Halbjahr 2027, Produktionsbeginn 2029.",
+      "promisedOn": "2026-11-16",
+      "targetDate": "2029-12-31",
+      "status": "offen",
+      "delay": null,
+      "note": "Zwischenschritte: Genehmigungsantrag bis Ende 2026 (siehe Kalender), Baubeginn bis Mitte 2027.",
+      "example": false,
+      "sources": [
+        {
+          "title": "tagesschau/rbb: Tesla kündigt Milliarden-Investition in Grünheide an (16.11.)",
+          "url": "https://www.tagesschau.de/inland/regional/brandenburg/rbb-tesla-kuendigt-milliarden-investition-in-werk-in-gruenheide-an-102.html"
+        },
+        {
+          "title": "Tagesspiegel: Tesla will in Grünheide das Robotaxi Cybercab bauen (16.11.)",
+          "url": "https://www.tagesspiegel.de/potsdam/brandenburg/nachste-milliardeninvestition-im-tesla-werk-tesla-will-in-grunheide-bei-berlin-das-robotaxi-cybercab-bauen-16289742.html"
+        }
+      ]
     }
   ]
 }
