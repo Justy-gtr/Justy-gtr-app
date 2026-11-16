@@ -432,7 +432,7 @@
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-13T20:59:57.235Z",
-      "notified": false,
+      "notified": true,
       "example": false,
       "sources": [
         {
@@ -462,7 +462,7 @@
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-16T10:56:42.218Z",
-      "notified": false,
+      "notified": true,
       "example": false,
       "sources": [
         {
@@ -492,7 +492,7 @@
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-16T10:56:42.218Z",
-      "notified": false,
+      "notified": true,
       "example": false,
       "sources": [
         {
