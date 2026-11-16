@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T16:11:00+01:00",
+  "updatedAt": "2026-11-16T16:19:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
+      "score": 30,
       "postsCount": 20,
-      "reason": "Laut Bloomberg ist Anthropic jetzt größter SpaceX-Kunde (34,5 % vom Q3-Umsatz); Coatue hat Anteile aufgestockt, Citi-Ziel 280 $. Fans wundern sich über den leichten Kursrückgang.",
+      "reason": "Anthropic als größter Kunde und Morgan Stanley mit 300-$-Ziel freuen Fans; doch SPCX fällt 1 % auf ~138 $, viele ärgern sich, dass der Kurs unter dem Ausgabepreis bleibt.",
       "sources": [
         {
           "title": "@Sam_Badawi auf X (16.11., 16:07)",
           "url": "https://x.com/Sam_Badawi/status/2122345797287317914"
         },
         {
-          "title": "@spcxGOD auf X (16.11., 16:07)",
-          "url": "https://x.com/spcxGOD/status/2122345767750779203"
+          "title": "@TeslaEuskadi auf X (16.11., 16:13)",
+          "url": "https://x.com/TeslaEuskadi/status/2122347407551996153"
         },
         {
-          "title": "@WOLF_Financial auf X (16.11., 15:59)",
-          "url": "https://x.com/WOLF_Financial/status/2122343805978333690"
+          "title": "@diversify062 auf X (16.11., 16:12)",
+          "url": "https://x.com/diversify062/status/2122347188772544928"
         }
       ],
-      "updatedAt": "2026-11-16T16:11:00+01:00"
+      "updatedAt": "2026-11-16T16:19:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 10,
-      "postsCount": 19,
-      "reason": "Grünheide-Ausbau für 1 Mio. Cybercabs (3 Mrd. €) freut viele; doch TSLA rutscht vorbörslich über 4 % ab, und das 299-$-Abo fürs Cybercab wird kritisiert.",
+      "score": 5,
+      "postsCount": 20,
+      "reason": "TSLA fällt rund 3 % auf ~377 $ (Tagestief); Grünheide-Ausbau wird in Deutschland gefeiert, Skeptiker zweifeln. Viel Gerede über eine mögliche Fusion mit SpaceX.",
       "sources": [
         {
-          "title": "@NextChargeDE auf X (16.11., 16:03)",
-          "url": "https://x.com/NextChargeDE/status/2122344842311405852"
+          "title": "@RandyWKirk1 auf X (16.11., 16:17)",
+          "url": "https://x.com/RandyWKirk1/status/2122348240901464251"
         },
         {
-          "title": "@OlanrewajuSkido auf X (16.11., 15:54)",
-          "url": "https://x.com/OlanrewajuSkido/status/2122342606441251236"
+          "title": "@CuriousPejjy auf X (16.11., 16:16)",
+          "url": "https://x.com/CuriousPejjy/status/2122348069530259742"
         },
         {
-          "title": "@wotwitt auf X (16.11., 15:57)",
-          "url": "https://x.com/wotwitt/status/2122343180897276274"
+          "title": "@BradMunchen auf X (16.11., 16:17)",
+          "url": "https://x.com/BradMunchen/status/2122348255921275273"
         }
       ],
-      "updatedAt": "2026-11-16T16:11:00+01:00"
+      "updatedAt": "2026-11-16T16:19:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/retail_mourinho/status/2122346114393289018"
         }
       ],
-      "updatedAt": "2026-11-16T16:11:00+01:00"
+      "updatedAt": "2026-11-16T16:19:00+01:00"
     }
   }
 }
