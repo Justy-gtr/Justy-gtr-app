@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T16:34:00+01:00",
+  "updatedAt": "2026-11-16T16:38:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,28 +22,28 @@
           "url": "https://x.com/diversify062/status/2122347188772544928"
         }
       ],
-      "updatedAt": "2026-11-16T16:34:00+01:00"
+      "updatedAt": "2026-11-16T16:38:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": -10,
+      "score": -5,
       "postsCount": 20,
-      "reason": "TSLA rutscht rund 3 % auf ~377 $, Trader setzen auf weitere Verluste; Stimmrechtsberater ISS ist gegen Denholms Wiederwahl. Der Grünheide-Ausbau freut nur noch wenige.",
+      "reason": "TSLA fällt gut 3 % auf ~377 $, viele Trader setzen auf weitere Verluste. Fans halten dagegen: Robotaxi fährt früher als geplant rund um die Uhr in allen 8 Städten.",
       "sources": [
+        {
+          "title": "@herbertong auf X (16.11., 16:34)",
+          "url": "https://x.com/herbertong/status/2122352493505954256"
+        },
+        {
+          "title": "@IkoWEB3 auf X (16.11., 16:34)",
+          "url": "https://x.com/IkoWEB3/status/2122352689258402291"
+        },
         {
           "title": "@StkNewz auf X (16.11., 16:19)",
           "url": "https://x.com/StkNewz/status/2122348843006296541"
-        },
-        {
-          "title": "@IamSinovuyo auf X (16.11., 16:19)",
-          "url": "https://x.com/IamSinovuyo/status/2122348906985967911"
-        },
-        {
-          "title": "@na_option auf X (16.11., 16:18)",
-          "url": "https://x.com/na_option/status/2122348606522896419"
         }
       ],
-      "updatedAt": "2026-11-16T16:34:00+01:00"
+      "updatedAt": "2026-11-16T16:38:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/SpaceInvestor_D/status/2122344031246008440"
         }
       ],
-      "updatedAt": "2026-11-16T16:34:00+01:00"
+      "updatedAt": "2026-11-16T16:38:00+01:00"
     }
   }
 }
