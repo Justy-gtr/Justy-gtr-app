@@ -4,9 +4,9 @@
   "asOf": "2026-11-13T06:00:00+01:00",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1028,
+    "rate": 1.1007,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-13T23:29:33+01:00",
+    "asOf": "2026-11-16T11:56:44+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -161,7 +161,7 @@
         }
       ],
       "priceUsd": 162.84,
-      "priceEur": 147.66,
+      "priceEur": 147.36,
       "previousCloseUsd": 166.07,
       "changePct": -1.94,
       "eurMethod": "usd_div_eurusd",
@@ -189,7 +189,7 @@
         150.49,
         155.55,
         149.79,
-        147.66
+        147.36
       ],
       "asOf": "2026-11-13T06:00:00+01:00",
       "marketSource": {
@@ -346,7 +346,7 @@
         }
       ],
       "priceUsd": 227.81,
-      "priceEur": 206.58,
+      "priceEur": 206.16,
       "previousCloseUsd": 226.82,
       "changePct": 0.44,
       "eurMethod": "usd_div_eurusd",
@@ -374,7 +374,7 @@
         200.17,
         207.1,
         204.55,
-        206.58
+        206.16
       ],
       "asOf": "2026-11-13T06:00:00+01:00",
       "marketSource": {
@@ -531,7 +531,7 @@
         }
       ],
       "priceUsd": 156.75,
-      "priceEur": 142.14,
+      "priceEur": 141.85,
       "previousCloseUsd": 164.44,
       "changePct": -4.68,
       "eurMethod": "usd_div_eurusd",
@@ -559,7 +559,7 @@
         137.57,
         151.13,
         148.22,
-        142.14
+        141.85
       ],
       "asOf": "2026-11-13T06:00:00+01:00",
       "marketSource": {
@@ -570,18 +570,18 @@
     }
   ],
   "nearTerm": {
-    "pickedOn": "2026-11-13",
+    "pickedOn": "2026-11-16",
     "window": 3,
     "expanded": false,
-    "from": "2026-11-12",
-    "to": "2026-11-17",
+    "from": "2026-11-16",
+    "to": "2026-11-19",
     "includesToday": true,
-    "note": "Fenster: heute und die nächsten 3 Handelstage, bis 17. November 2026.",
+    "note": "Fenster: heute und die nächsten 3 Handelstage, bis 19. November 2026.",
     "tradingDays": [
-      "2026-11-12",
-      "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19"
     ],
     "asOf": "2026-11-13T06:00:00+01:00",
     "sources": [
@@ -596,14 +596,14 @@
     ],
     "candidates": [
       {
-        "id": "amat-2026-11-12",
-        "symbol": "AMAT",
-        "name": "Applied Materials",
-        "usdSymbol": "AMAT",
-        "daysAway": 0,
+        "id": "panw-2026-11-18",
+        "symbol": "PANW",
+        "name": "Palo Alto Networks",
+        "usdSymbol": "PANW",
+        "daysAway": 2,
         "for": [
-          "Der Termin liegt heute.",
-          "In 8 früheren Quartalen lag die Bewegung am Folgetag 1 Mal bei mindestens +5 %."
+          "Der Termin liegt in 2 Handelstagen.",
+          "In 8 früheren Quartalen lag die Bewegung am Folgetag 0 Mal bei mindestens +5 %."
         ],
         "against": [
           "In denselben 8 Quartalen lag die Bewegung am Folgetag 5 Mal bei mindestens −5 %.",
@@ -611,7 +611,7 @@
         ],
         "catalyst": {
           "label": "Zahlen",
-          "date": "2026-11-12",
+          "date": "2026-11-18",
           "time": null,
           "timezone": "Europe/Berlin",
           "session": "amc",
@@ -620,14 +620,14 @@
         "pastCatalysts": {
           "kind": "earnings_after_close",
           "dates": [
-            "2024-11-14",
+            "2024-11-20",
             "2025-02-13",
-            "2025-05-15",
-            "2025-08-14",
-            "2025-11-13",
-            "2026-02-12",
-            "2026-05-14",
-            "2026-08-13"
+            "2025-05-20",
+            "2025-08-18",
+            "2025-11-19",
+            "2026-02-17",
+            "2026-06-02",
+            "2026-09-01"
           ]
         },
         "history": {
@@ -637,130 +637,130 @@
           "to": "2026-11-13",
           "catalyst": {
             "n": 8,
-            "up": 1,
+            "up": 0,
             "down": 5,
             "showPct": true
           },
           "moves": [
             {
-              "date": "2024-11-14",
-              "base": "2024-11-14",
-              "reaction": "2024-11-15",
-              "pct": -9.2
+              "date": "2024-11-20",
+              "base": "2024-11-20",
+              "reaction": "2024-11-21",
+              "pct": 1.22
             },
             {
               "date": "2025-02-13",
               "base": "2025-02-13",
               "reaction": "2025-02-14",
-              "pct": -8.18
+              "pct": -0.92
             },
             {
-              "date": "2025-05-15",
-              "base": "2025-05-15",
-              "reaction": "2025-05-16",
-              "pct": -5.25
+              "date": "2025-05-20",
+              "base": "2025-05-20",
+              "reaction": "2025-05-21",
+              "pct": -6.8
             },
             {
-              "date": "2025-08-14",
-              "base": "2025-08-14",
-              "reaction": "2025-08-15",
-              "pct": -14.07
+              "date": "2025-08-18",
+              "base": "2025-08-18",
+              "reaction": "2025-08-19",
+              "pct": 3.06
             },
             {
-              "date": "2025-11-13",
-              "base": "2025-11-13",
-              "reaction": "2025-11-14",
-              "pct": 1.25
+              "date": "2025-11-19",
+              "base": "2025-11-19",
+              "reaction": "2025-11-20",
+              "pct": -7.42
             },
             {
-              "date": "2026-02-12",
-              "base": "2026-02-12",
-              "reaction": "2026-02-13",
-              "pct": 8.08
+              "date": "2026-02-17",
+              "base": "2026-02-17",
+              "reaction": "2026-02-18",
+              "pct": -6.82
             },
             {
-              "date": "2026-05-14",
-              "base": "2026-05-14",
-              "reaction": "2026-05-15",
-              "pct": -0.89
+              "date": "2026-06-02",
+              "base": "2026-06-02",
+              "reaction": "2026-06-03",
+              "pct": -5.64
             },
             {
-              "date": "2026-08-13",
-              "base": "2026-08-13",
-              "reaction": "2026-08-14",
-              "pct": -5.12
+              "date": "2026-09-01",
+              "base": "2026-09-01",
+              "reaction": "2026-09-02",
+              "pct": -9.28
             }
           ]
         },
         "sources": [
           {
-            "title": "Nasdaq: Zahlentermine am 12. November 2026",
+            "title": "Nasdaq: Zahlentermine am 18. November 2026",
             "url": "https://www.nasdaq.com/market-activity/earnings"
           },
           {
-            "title": "Historische Zahlentermine AMAT",
-            "url": "https://www.historicalearnings.com/amat.html"
+            "title": "Historische Zahlentermine PANW",
+            "url": "https://www.historicalearnings.com/panw.html"
           },
           {
             "title": "Universum mit verbreiteten Knock-outs",
             "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
           }
         ],
-        "priceUsd": 370.37,
-        "priceEur": 335.85,
-        "previousCloseUsd": 381.1,
-        "changePct": -2.82,
+        "priceUsd": 322.09,
+        "priceEur": 291.48,
+        "previousCloseUsd": 322.5,
+        "changePct": -0.13,
         "eurMethod": "usd_div_eurusd",
         "sparkline": [
-          414.33,
-          398.95,
-          383.49,
-          365.01,
-          368.33,
-          360.73,
-          364,
-          334.7,
-          336.18,
-          345.52,
-          354.34,
-          373.78,
-          377.98,
-          348.83,
-          335.69,
-          341.24,
-          329.61,
-          284.16,
-          296.32,
-          332.41,
-          331.95,
-          353.73,
-          343.35,
-          335.85
+          354.35,
+          335,
+          330.21,
+          305,
+          309.34,
+          303.1,
+          309.09,
+          316.29,
+          339.13,
+          348.08,
+          359.5,
+          354.45,
+          341.14,
+          327.17,
+          315.25,
+          312.9,
+          310.55,
+          280.08,
+          279.51,
+          296.83,
+          290.81,
+          299.46,
+          290.81,
+          291.48
         ],
         "asOf": "2026-11-13T06:00:00+01:00",
         "marketSource": {
-          "title": "Alpaca Markets IEX AMAT",
-          "url": "https://data.alpaca.markets/v2/stocks/AMAT/snapshot?feed=iex"
+          "title": "Alpaca Markets IEX PANW",
+          "url": "https://data.alpaca.markets/v2/stocks/PANW/snapshot?feed=iex"
         },
         "source": "alpaca-iex"
       },
       {
-        "id": "csco-2026-11-12",
-        "symbol": "CSCO",
-        "name": "Cisco",
-        "usdSymbol": "CSCO",
-        "daysAway": 0,
+        "id": "intu-2026-11-19",
+        "symbol": "INTU",
+        "name": "Intuit",
+        "usdSymbol": "INTU",
+        "daysAway": 3,
         "for": [
-          "Der Termin liegt heute.",
-          "In 8 früheren Quartalen lag die Bewegung am Folgetag 1 Mal bei mindestens +5 %."
+          "Der Termin liegt in 3 Handelstagen.",
+          "In 8 früheren Quartalen lag die Bewegung am Folgetag 2 Mal bei mindestens +5 %."
         ],
         "against": [
-          "In denselben 8 Quartalen lag die Bewegung am Folgetag 2 Mal bei mindestens −5 %.",
+          "In denselben 8 Quartalen lag die Bewegung am Folgetag 3 Mal bei mindestens −5 %.",
           "Das sind frühere Termine. Keine Vorhersage."
         ],
         "catalyst": {
           "label": "Zahlen",
-          "date": "2026-11-12",
+          "date": "2026-11-19",
           "time": null,
           "timezone": "Europe/Berlin",
           "session": "amc",
@@ -769,14 +769,14 @@
         "pastCatalysts": {
           "kind": "earnings_after_close",
           "dates": [
-            "2024-11-13",
-            "2025-02-12",
-            "2025-05-14",
-            "2025-08-13",
-            "2025-11-12",
-            "2026-02-11",
-            "2026-05-13",
-            "2026-08-12"
+            "2024-11-21",
+            "2025-02-25",
+            "2025-05-22",
+            "2025-08-21",
+            "2025-11-20",
+            "2026-02-26",
+            "2026-05-20",
+            "2026-08-25"
           ]
         },
         "history": {
@@ -786,201 +786,259 @@
           "to": "2026-11-13",
           "catalyst": {
             "n": 8,
-            "up": 1,
-            "down": 2,
+            "up": 2,
+            "down": 3,
             "showPct": true
           },
           "moves": [
             {
-              "date": "2024-11-13",
-              "base": "2024-11-13",
-              "reaction": "2024-11-14",
-              "pct": -2.13
+              "date": "2024-11-21",
+              "base": "2024-11-21",
+              "reaction": "2024-11-22",
+              "pct": -5.68
             },
             {
-              "date": "2025-02-12",
-              "base": "2025-02-12",
-              "reaction": "2025-02-13",
-              "pct": 2.09
+              "date": "2025-02-25",
+              "base": "2025-02-25",
+              "reaction": "2025-02-26",
+              "pct": 12.58
             },
             {
-              "date": "2025-05-14",
-              "base": "2025-05-14",
-              "reaction": "2025-05-15",
-              "pct": 4.85
+              "date": "2025-05-22",
+              "base": "2025-05-22",
+              "reaction": "2025-05-23",
+              "pct": 8.12
             },
             {
-              "date": "2025-08-13",
-              "base": "2025-08-13",
-              "reaction": "2025-08-14",
-              "pct": -1.56
+              "date": "2025-08-21",
+              "base": "2025-08-21",
+              "reaction": "2025-08-22",
+              "pct": -5.03
             },
             {
-              "date": "2025-11-12",
-              "base": "2025-11-12",
-              "reaction": "2025-11-13",
-              "pct": 4.62
+              "date": "2025-11-20",
+              "base": "2025-11-20",
+              "reaction": "2025-11-21",
+              "pct": 4.03
             },
             {
-              "date": "2026-02-11",
-              "base": "2026-02-11",
-              "reaction": "2026-02-12",
-              "pct": -12.32
+              "date": "2026-02-26",
+              "base": "2026-02-26",
+              "reaction": "2026-02-27",
+              "pct": 3.7
             },
             {
-              "date": "2026-05-13",
-              "base": "2026-05-13",
-              "reaction": "2026-05-14",
-              "pct": 13.41
+              "date": "2026-05-20",
+              "base": "2026-05-20",
+              "reaction": "2026-05-21",
+              "pct": -20.02
             },
             {
-              "date": "2026-08-12",
-              "base": "2026-08-12",
-              "reaction": "2026-08-13",
-              "pct": -8.4
+              "date": "2026-08-25",
+              "base": "2026-08-25",
+              "reaction": "2026-08-26",
+              "pct": -3.24
             }
           ]
         },
         "sources": [
           {
-            "title": "Nasdaq: Zahlentermine am 12. November 2026",
+            "title": "Nasdaq: Zahlentermine am 19. November 2026",
             "url": "https://www.nasdaq.com/market-activity/earnings"
           },
           {
-            "title": "Historische Zahlentermine CSCO",
-            "url": "https://www.historicalearnings.com/csco.html"
+            "title": "Historische Zahlentermine INTU",
+            "url": "https://www.historicalearnings.com/intu.html"
           },
           {
             "title": "Universum mit verbreiteten Knock-outs",
             "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
           }
         ],
-        "priceUsd": 95.64,
-        "priceEur": 86.73,
-        "previousCloseUsd": 101.97,
-        "changePct": -6.21,
+        "priceUsd": 341.64,
+        "priceEur": 309.17,
+        "previousCloseUsd": 340.09,
+        "changePct": 0.46,
         "eurMethod": "usd_div_eurusd",
         "sparkline": [
-          102.7,
-          101.51,
-          97.97,
-          95.77,
-          94.96,
-          95.05,
-          95.47,
-          93.47,
-          94.91,
-          98.27,
-          99.68,
-          99.1,
-          97.34,
-          93.46,
-          91.07,
-          92,
-          92.45,
-          85.2,
-          83.58,
-          88.5,
-          87.46,
-          90.21,
-          91.94,
-          86.73
+          269.04,
+          277.3,
+          294.45,
+          289.97,
+          290.32,
+          298.65,
+          298.73,
+          316.27,
+          306.01,
+          303,
+          293.95,
+          294.88,
+          296.88,
+          305.01,
+          315.59,
+          308,
+          318.22,
+          315.84,
+          304.14,
+          303.42,
+          303.36,
+          306.78,
+          306.59,
+          309.17
         ],
         "asOf": "2026-11-13T06:00:00+01:00",
         "marketSource": {
-          "title": "Alpaca Markets IEX CSCO",
-          "url": "https://data.alpaca.markets/v2/stocks/CSCO/snapshot?feed=iex"
+          "title": "Alpaca Markets IEX INTU",
+          "url": "https://data.alpaca.markets/v2/stocks/INTU/snapshot?feed=iex"
         },
         "source": "alpaca-iex"
       },
       {
-        "id": "nbis-2026-11-12",
-        "symbol": "NBIS",
-        "name": "Nebius Group",
-        "usdSymbol": "NBIS",
-        "daysAway": 0,
+        "id": "rost-2026-11-19",
+        "symbol": "ROST",
+        "name": "Ross Stores",
+        "usdSymbol": "ROST",
+        "daysAway": 3,
         "for": [
-          "Der Termin liegt heute.",
-          "Bisher n = 0. Keine Prozentzahl."
+          "Der Termin liegt in 3 Handelstagen.",
+          "In 8 früheren Quartalen lag die Bewegung am Folgetag 3 Mal bei mindestens +5 %."
         ],
         "against": [
-          "Unter 7 früheren Terminen steht hier keine Prozentzahl.",
+          "In denselben 8 Quartalen lag die Bewegung am Folgetag 1 Mal bei mindestens −5 %.",
           "Das sind frühere Termine. Keine Vorhersage."
         ],
         "catalyst": {
           "label": "Zahlen",
-          "date": "2026-11-12",
+          "date": "2026-11-19",
           "time": null,
           "timezone": "Europe/Berlin",
-          "session": "bmo",
-          "detail": "Nasdaq: vorbörslich. Die Uhr ist die US-Eröffnung in Berliner Zeit."
+          "session": "amc",
+          "detail": "Nasdaq: nachbörslich. Die Uhr ist der US-Schluss in Berliner Zeit."
         },
         "pastCatalysts": {
-          "kind": "earnings_before_open",
-          "dates": []
+          "kind": "earnings_after_close",
+          "dates": [
+            "2024-11-21",
+            "2025-03-04",
+            "2025-05-22",
+            "2025-08-21",
+            "2025-11-20",
+            "2026-03-03",
+            "2026-05-21",
+            "2026-08-20"
+          ]
         },
         "history": {
-          "catalystLabel": "Am Zahlentag",
-          "note": "Schluss am Vortag bis zum Schluss am Zahlentag. Frühere Termine sind wie der nächste vor der Eröffnung gezählt.",
-          "from": "2024-10-21",
+          "catalystLabel": "Am Folgetag",
+          "note": "Schluss am Zahlentag bis zum nächsten Handelstag.",
+          "from": "2024-10-04",
           "to": "2026-11-13",
           "catalyst": {
-            "n": 0,
-            "up": 0,
-            "down": 0,
-            "showPct": false
+            "n": 8,
+            "up": 3,
+            "down": 1,
+            "showPct": true
           },
-          "moves": []
+          "moves": [
+            {
+              "date": "2024-11-21",
+              "base": "2024-11-21",
+              "reaction": "2024-11-22",
+              "pct": 2.19
+            },
+            {
+              "date": "2025-03-04",
+              "base": "2025-03-04",
+              "reaction": "2025-03-05",
+              "pct": 1.96
+            },
+            {
+              "date": "2025-05-22",
+              "base": "2025-05-22",
+              "reaction": "2025-05-23",
+              "pct": -9.85
+            },
+            {
+              "date": "2025-08-21",
+              "base": "2025-08-21",
+              "reaction": "2025-08-22",
+              "pct": 1.12
+            },
+            {
+              "date": "2025-11-20",
+              "base": "2025-11-20",
+              "reaction": "2025-11-21",
+              "pct": 8.41
+            },
+            {
+              "date": "2026-03-03",
+              "base": "2026-03-03",
+              "reaction": "2026-03-04",
+              "pct": 8.03
+            },
+            {
+              "date": "2026-05-21",
+              "base": "2026-05-21",
+              "reaction": "2026-05-22",
+              "pct": 8.11
+            },
+            {
+              "date": "2026-08-20",
+              "base": "2026-08-20",
+              "reaction": "2026-08-21",
+              "pct": 4.39
+            }
+          ]
         },
         "sources": [
           {
-            "title": "Nasdaq: Zahlentermine am 12. November 2026",
+            "title": "Nasdaq: Zahlentermine am 19. November 2026",
             "url": "https://www.nasdaq.com/market-activity/earnings"
           },
           {
-            "title": "Historische Zahlentermine NBIS",
-            "url": "https://www.historicalearnings.com/nbis.html"
+            "title": "Historische Zahlentermine ROST",
+            "url": "https://www.historicalearnings.com/rost.html"
           },
           {
             "title": "Universum mit verbreiteten Knock-outs",
             "url": "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
           }
         ],
-        "priceUsd": 115.85,
-        "priceEur": 105.05,
-        "previousCloseUsd": 128.91,
-        "changePct": -10.13,
+        "priceUsd": 231.67,
+        "priceEur": 209.65,
+        "previousCloseUsd": 237.27,
+        "changePct": -2.36,
         "eurMethod": "usd_div_eurusd",
         "sparkline": [
-          184.62,
-          166.15,
-          168.03,
-          147.57,
-          151.79,
-          152.72,
-          152.71,
-          141.84,
-          141.46,
-          136.63,
-          152.56,
-          163.83,
-          154.17,
-          137.84,
-          126.73,
-          135.49,
-          126.28,
-          107.14,
-          115.33,
-          126.89,
-          119.4,
-          138.5,
-          115.94,
-          105.05
+          201.42,
+          205.96,
+          209.42,
+          211.26,
+          212.79,
+          211.32,
+          208.44,
+          210.91,
+          204.34,
+          208.7,
+          205.92,
+          204.84,
+          208.23,
+          204.13,
+          206.68,
+          206.93,
+          219.27,
+          209.37,
+          205.81,
+          212.61,
+          212.92,
+          216.02,
+          213.82,
+          209.65
         ],
         "asOf": "2026-11-13T06:00:00+01:00",
         "marketSource": {
-          "title": "Alpaca Markets IEX NBIS",
-          "url": "https://data.alpaca.markets/v2/stocks/NBIS/snapshot?feed=iex"
+          "title": "Alpaca Markets IEX ROST",
+          "url": "https://data.alpaca.markets/v2/stocks/ROST/snapshot?feed=iex"
         },
         "source": "alpaca-iex"
       }
