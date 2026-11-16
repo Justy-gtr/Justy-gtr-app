@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T13:37:00+01:00",
+  "updatedAt": "2026-11-16T13:58:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -48,23 +48,23 @@
     "RKLB": {
       "mood": "gemischt",
       "score": 20,
-      "postsCount": 15,
-      "reason": "Viele loben den Blick in die Neutron-Fabrik und den 100. Electron-Start mit voll gebuchten Folgestarts; andere sehen weiter Druck auf Wachstumswerte.",
+      "postsCount": 20,
+      "reason": "Goldman hebt das Ziel leicht auf 68 $ (neutral); viele sehen Rocket Lab nach dem ULA-Fehlstart als klare Nr. 2, andere klagen über den schwachen Wochenstart.",
       "sources": [
         {
-          "title": "@ASML2002 auf X (16.11., 13:00)",
-          "url": "https://x.com/ASML2002/status/2122298829060092253"
+          "title": "@SpacBobby auf X (16.11., 13:41)",
+          "url": "https://x.com/SpacBobby/status/2122308960732774667"
         },
         {
-          "title": "@gadflyrebel auf X (16.11., 13:00)",
-          "url": "https://x.com/gadflyrebel/status/2122298860823609438"
+          "title": "@aridiculosidea auf X (16.11., 13:54)",
+          "url": "https://x.com/aridiculosidea/status/2122312243790651859"
         },
         {
-          "title": "@DadOfWallStreet auf X (16.11., 13:01)",
-          "url": "https://x.com/DadOfWallStreet/status/2122299050326139153"
+          "title": "@Early_Catalyst auf X (16.11., 13:52)",
+          "url": "https://x.com/Early_Catalyst/status/2122311834313338995"
         }
       ],
-      "updatedAt": "2026-11-16T13:17:00+01:00"
+      "updatedAt": "2026-11-16T13:58:00+01:00"
     }
   }
 }
