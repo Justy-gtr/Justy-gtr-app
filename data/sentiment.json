@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T15:04:00+01:00",
+  "updatedAt": "2026-11-16T15:11:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,7 +22,7 @@
           "url": "https://x.com/MentoviaX/status/2122325979288805665"
         }
       ],
-      "updatedAt": "2026-11-16T15:04:00+01:00"
+      "updatedAt": "2026-11-16T15:11:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,28 +43,28 @@
           "url": "https://x.com/MentoviaX/status/2122328049135780030"
         }
       ],
-      "updatedAt": "2026-11-16T15:04:00+01:00"
+      "updatedAt": "2026-11-16T15:11:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 20,
+      "score": 25,
       "postsCount": 20,
-      "reason": "Goldman hebt das Ziel leicht auf 68 $ (neutral); viele sehen Rocket Lab nach dem ULA-Fehlstart als klare Nr. 2, andere klagen über den schwachen Wochenstart.",
+      "reason": "Morgan Stanley bleibt bei Overweight mit 103 $, Fans feiern den 100. Electron-Start; andere ärgern sich, dass die Aktie wegen des ULA-Fehlstarts mit fällt.",
       "sources": [
         {
-          "title": "@SpacBobby auf X (16.11., 13:41)",
-          "url": "https://x.com/SpacBobby/status/2122308960732774667"
+          "title": "@SpacBobby auf X (16.11., 15:03)",
+          "url": "https://x.com/SpacBobby/status/2122329699443761173"
         },
         {
-          "title": "@aridiculosidea auf X (16.11., 13:54)",
-          "url": "https://x.com/aridiculosidea/status/2122312243790651859"
+          "title": "@247WallSt auf X (16.11., 15:04)",
+          "url": "https://x.com/247WallSt/status/2122329965936976342"
         },
         {
-          "title": "@Early_Catalyst auf X (16.11., 13:52)",
-          "url": "https://x.com/Early_Catalyst/status/2122311834313338995"
+          "title": "@AxiosRose auf X (16.11., 15:05)",
+          "url": "https://x.com/AxiosRose/status/2122330186242793877"
         }
       ],
-      "updatedAt": "2026-11-16T15:04:00+01:00"
+      "updatedAt": "2026-11-16T15:11:00+01:00"
     }
   }
 }
