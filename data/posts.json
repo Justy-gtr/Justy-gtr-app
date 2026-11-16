@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-16T08:30:00+01:00",
+  "asOf": "2026-11-16T09:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,34 @@
     }
   },
   "posts": [
+    {
+      "id": "post-robotaxi-2122234442328740005",
+      "account": "@robotaxi",
+      "displayName": "Robotaxi (Tesla)",
+      "postedAt": "2026-11-16T08:44:54+01:00",
+      "summaryDe": "Teslas Robotaxi-Konto meldet: Der Dienst fährt jetzt in einem größeren Teil von Miami. Die Karte zeigt die alte Zone rund um den Flughafen und die neue, die nach Osten bis in die Innenstadt von Miami reicht; die Strände sind noch nicht dabei. Musk hat den Post um 09:13 geteilt.",
+      "originalText": "Now serving more of Miami 🌴",
+      "url": "https://x.com/robotaxi/status/2122234442328740005",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@robotaxi auf X: „Now serving more of Miami“ mit neuer Karte (16.11., 08:44)",
+          "url": "https://x.com/robotaxi/status/2122234442328740005"
+        },
+        {
+          "title": "@elonmusk auf X: Repost des Robotaxi-Posts zu Miami (16.11., 09:13)",
+          "url": "https://x.com/elonmusk/status/2122241757207556360"
+        }
+      ]
+    },
     {
       "example": false,
       "id": "post-elonmusk-2122224914526777516",
