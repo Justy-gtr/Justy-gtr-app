@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T10:15:00+01:00",
+  "updatedAt": "2026-11-16T10:30:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -28,22 +28,22 @@
       "mood": "gemischt",
       "score": 15,
       "postsCount": 25,
-      "reason": "Freude über das fast verdoppelte Robotaxi-Gebiet in Miami und Morgan Stanleys höhere Cybercab-Prognose; Ärger über Musks Post zur möglichen SpaceX-Fusion bleibt.",
+      "reason": "Viel Gesprächsstoff: Cybercab für Privatkunden (29.990 $ + 299 $/Monat) und mehr Robotaxi in Miami; Kritik an FSD-Fehlern und der möglichen SpaceX-Fusion.",
       "sources": [
         {
-          "title": "@tslaming auf X (16.11., 09:19)",
-          "url": "https://x.com/tslaming/status/2122243050189783227"
+          "title": "@ciertasskyn auf X (16.11., 10:26)",
+          "url": "https://x.com/ciertasskyn/status/2122260085485269111"
         },
         {
-          "title": "@AllTeslaNews auf X (16.11., 09:21)",
-          "url": "https://x.com/AllTeslaNews/status/2122243583688208490"
+          "title": "@TeslaBest auf X (16.11., 10:24)",
+          "url": "https://x.com/TeslaBest/status/2122259399854972982"
         },
         {
-          "title": "@kongbaest auf X (16.11., 09:18)",
-          "url": "https://x.com/kongbaest/status/2122242779392733474"
+          "title": "@x_invest1 auf X (16.11., 10:27)",
+          "url": "https://x.com/x_invest1/status/2122260200371740681"
         }
       ],
-      "updatedAt": "2026-11-16T09:22:00+01:00"
+      "updatedAt": "2026-11-16T10:30:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
