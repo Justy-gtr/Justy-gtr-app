@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T16:22:00+01:00",
+  "updatedAt": "2026-11-16T16:29:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,7 +22,7 @@
           "url": "https://x.com/diversify062/status/2122347188772544928"
         }
       ],
-      "updatedAt": "2026-11-16T16:22:00+01:00"
+      "updatedAt": "2026-11-16T16:29:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,28 +43,28 @@
           "url": "https://x.com/na_option/status/2122348606522896419"
         }
       ],
-      "updatedAt": "2026-11-16T16:22:00+01:00"
+      "updatedAt": "2026-11-16T16:29:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 30,
+      "score": 25,
       "postsCount": 20,
-      "reason": "Nach dem Vulcan-Fehlstart heißt es: Nur SpaceX und Rocket Lab fliegen noch in den USA; Neutron-Preis steigt auf 70 Mio. $. Viel Spam, die Aktie bleibt schwach.",
+      "reason": "Rocket Lab gilt nach dem Vulcan-Fehlstart als wichtige Nr. 2 in den USA; ein bekannter Marktkommentator nimmt nach dem Startrekord aber Gewinne mit. Viel Spam.",
       "sources": [
         {
-          "title": "@SpaceInvestor_D auf X (16.11., 16:00)",
-          "url": "https://x.com/SpaceInvestor_D/status/2122344031246008440"
-        },
-        {
-          "title": "@BuyAtSupport auf X (16.11., 15:59)",
-          "url": "https://x.com/BuyAtSupport/status/2122343848018166210"
+          "title": "@Sarge986 auf X (16.11., 16:23)",
+          "url": "https://x.com/Sarge986/status/2122349815346737171"
         },
         {
           "title": "@retail_mourinho auf X (16.11., 16:08)",
           "url": "https://x.com/retail_mourinho/status/2122346114393289018"
+        },
+        {
+          "title": "@SpaceInvestor_D auf X (16.11., 16:00)",
+          "url": "https://x.com/SpaceInvestor_D/status/2122344031246008440"
         }
       ],
-      "updatedAt": "2026-11-16T16:22:00+01:00"
+      "updatedAt": "2026-11-16T16:29:00+01:00"
     }
   }
 }
