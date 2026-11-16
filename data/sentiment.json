@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T08:43:00+01:00",
+  "updatedAt": "2026-11-16T09:22:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -26,24 +26,24 @@
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 5,
+      "score": 15,
       "postsCount": 25,
-      "reason": "Ärger über Musks Post: Einige werfen ihm vor, den Tesla-Kurs vor einer SpaceX-Fusion zu drücken; MKBHDs Cybercab-Bestellung und das 299-$-Abo werden diskutiert.",
+      "reason": "Freude über das fast verdoppelte Robotaxi-Gebiet in Miami und Morgan Stanleys höhere Cybercab-Prognose; Ärger über Musks Post zur möglichen SpaceX-Fusion bleibt.",
       "sources": [
         {
-          "title": "@djaym7x auf X (16.11., 08:40)",
-          "url": "https://x.com/djaym7x/status/2122233392385413279"
+          "title": "@tslaming auf X (16.11., 09:19)",
+          "url": "https://x.com/tslaming/status/2122243050189783227"
         },
         {
-          "title": "@NeoTSX auf X (16.11., 08:38)",
-          "url": "https://x.com/NeoTSX/status/2122232725491089651"
+          "title": "@AllTeslaNews auf X (16.11., 09:21)",
+          "url": "https://x.com/AllTeslaNews/status/2122243583688208490"
         },
         {
-          "title": "@Tslachan auf X (16.11., 08:03)",
-          "url": "https://x.com/Tslachan/status/2122224037627879928"
+          "title": "@kongbaest auf X (16.11., 09:18)",
+          "url": "https://x.com/kongbaest/status/2122242779392733474"
         }
       ],
-      "updatedAt": "2026-11-16T08:43:00+01:00"
+      "updatedAt": "2026-11-16T09:22:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
