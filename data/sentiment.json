@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T13:17:00+01:00",
+  "updatedAt": "2026-11-16T13:37:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -26,24 +26,24 @@
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 20,
-      "postsCount": 25,
-      "reason": "JPMorgan sieht im schnellen Robotaxi-Ausbau eine frühe Bestätigung, Miami-Zone wächst; Ärger über fehlendes FSD für HW3 in Australien und keine Zulassung in der Schweiz.",
+      "score": 10,
+      "postsCount": 20,
+      "reason": "Mehr Kritik: Benzinga zitiert Tesla als teuerste Aktie im S&P 500, Cybercab in Dallas lässt auf sich warten, FSD-Unfallvideo aus China; Fans loben Robotaxi.",
       "sources": [
         {
-          "title": "@amitk404 auf X (16.11., 12:34)",
-          "url": "https://x.com/amitk404/status/2122292309119348823"
+          "title": "@Benzinga auf X (16.11., 13:35)",
+          "url": "https://x.com/Benzinga/status/2122307445720809633"
         },
         {
-          "title": "@BlakeKing777 auf X (16.11., 12:35)",
-          "url": "https://x.com/BlakeKing777/status/2122292366706982986"
+          "title": "@an0ym0u5 auf X (16.11., 13:32)",
+          "url": "https://x.com/an0ym0u5/status/2122306690687336793"
         },
         {
-          "title": "@1electricdon auf X (16.11., 12:35)",
-          "url": "https://x.com/1electricdon/status/2122292393018048905"
+          "title": "@realtalkstruth auf X (16.11., 13:34)",
+          "url": "https://x.com/realtalkstruth/status/2122307425021694297"
         }
       ],
-      "updatedAt": "2026-11-16T13:17:00+01:00"
+      "updatedAt": "2026-11-16T13:37:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
