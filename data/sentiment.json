@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T15:36:00+01:00",
+  "updatedAt": "2026-11-16T15:47:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
       "postsCount": 25,
-      "reason": "Citi, Raymond James, Bernstein und RBC bleiben nach dem Starship-Fang optimistisch; Fans wundern sich, dass SPCX vorbörslich trotzdem leicht unter 139 $ liegt.",
+      "reason": "Citi, Raymond James, Bernstein und RBC bleiben nach dem Starship-Fang optimistisch; zum US-Handelsstart liegt SPCX kaum verändert bei 139 $, Chips fallen deutlich.",
       "sources": [
+        {
+          "title": "@gomarketbeater auf X (16.11., 15:41)",
+          "url": "https://x.com/gomarketbeater/status/2122339209063076105"
+        },
         {
           "title": "@spcxGOD auf X (16.11., 15:33)",
           "url": "https://x.com/spcxGOD/status/2122337280425926946"
         },
         {
-          "title": "@Michael34952 auf X (16.11., 15:20)",
-          "url": "https://x.com/Michael34952/status/2122333909987778916"
-        },
-        {
-          "title": "@WillWhiteWriter auf X (16.11., 15:32)",
-          "url": "https://x.com/WillWhiteWriter/status/2122337034597773533"
+          "title": "@FranciscoSpace5 auf X (16.11., 15:38)",
+          "url": "https://x.com/FranciscoSpace5/status/2122338620946407915"
         }
       ],
-      "updatedAt": "2026-11-16T15:36:00+01:00"
+      "updatedAt": "2026-11-16T15:47:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 30,
       "postsCount": 30,
-      "reason": "Tesla bestätigt 3 Mrd. € für eine neue Grünheide-Halle für bis zu 1 Mio. Cybercabs ab 2029, viele feiern das; Charttrader schauen skeptisch auf die Marke um 385 $.",
+      "reason": "Tesla bestätigt 3 Mrd. € für eine neue Grünheide-Halle für bis zu 1 Mio. Cybercabs ab 2029, viele feiern das; zum Handelsstart nur leicht im Minus bei 389 $.",
       "sources": [
         {
           "title": "@WOLF_Financial auf X (16.11., 15:10)",
           "url": "https://x.com/WOLF_Financial/status/2122331592131547507"
         },
         {
-          "title": "@Tslachan auf X (16.11., 15:11)",
-          "url": "https://x.com/Tslachan/status/2122331789314469946"
+          "title": "@jakeisinvestor auf X (16.11., 15:45)",
+          "url": "https://x.com/jakeisinvestor/status/2122340219550605320"
         },
         {
-          "title": "@krspyszn auf X (16.11., 15:11)",
-          "url": "https://x.com/krspyszn/status/2122331761300693210"
+          "title": "@gomarketbeater auf X (16.11., 15:41)",
+          "url": "https://x.com/gomarketbeater/status/2122339209063076105"
         }
       ],
-      "updatedAt": "2026-11-16T15:36:00+01:00"
+      "updatedAt": "2026-11-16T15:47:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/AxiosRose/status/2122330186242793877"
         }
       ],
-      "updatedAt": "2026-11-16T15:36:00+01:00"
+      "updatedAt": "2026-11-16T15:47:00+01:00"
     }
   }
 }
