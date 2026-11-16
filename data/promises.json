@@ -138,7 +138,7 @@
       "targetDate": "2027-03-31",
       "status": "offen",
       "delay": null,
-      "note": "Setzt einen erfolgreichen Schiffsfang bei Flight 15 voraus. 15.11. 05:30: Seit dem 14.11. gibt es ein gefangenes Schiff: Ship 42 kam nach rund 22,5 Stunden zum Turm zurück. Musk schrieb nach der Inspektion „Ship 42 sieht großartig aus“; ob genau dieses Schiff wieder fliegt, hat SpaceX nicht gesagt (SpaceX, Musk auf X).",
+      "note": "Setzt einen erfolgreichen Schiffsfang bei Flight 15 voraus. 15.11. 05:30: Seit dem 14.11. gibt es ein gefangenes Schiff: Ship 42 kam nach rund 22,5 Stunden zum Turm zurück. Musk schrieb nach der Inspektion „Ship 42 sieht großartig aus“; ob genau dieses Schiff wieder fliegt, hat SpaceX nicht gesagt (SpaceX, Musk auf X). 16.11. 05:00: Musk schreibt nach seiner Begutachtung, Ship 42 könne „wahrscheinlich nach einigen Wochen Überholung“ wieder fliegen; für Wiederverwendung ohne Überholung wie beim Flugzeug seien aber noch viele kleine Änderungen nötig (Musk auf X). Einen Termin für den zweiten Flug nennt SpaceX nicht.",
       "example": false,
       "sources": [
         {
@@ -152,6 +152,10 @@
         {
           "title": "@elonmusk auf X (15.11., 00:25): „Ship 42 looks great!“",
           "url": "https://x.com/elonmusk/status/2121746382402797892"
+        },
+        {
+          "title": "@elonmusk auf X: Ship 42 nach einigen Wochen Überholung wieder flugfähig (15.11., 23:20)",
+          "url": "https://x.com/elonmusk/status/2122092374016806969"
         }
       ]
     },
