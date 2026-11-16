@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-16T05:00:00+01:00",
+  "asOf": "2026-11-16T06:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,110 @@
     }
   },
   "posts": [
+    {
+      "example": false,
+      "id": "post-elonmusk-2122203324460265943",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-16T06:41:15+01:00",
+      "summaryDe": "Musk bestätigt mit „Yup“ einen Vergleich: Die NASA gab Boeing 2014 bis zu 4,2 Mrd. $ für Starliner und SpaceX bis zu 2,6 Mrd. $ für Crew Dragon; Starliner flog bisher nur einmal mit Besatzung, Dragon fliegt regelmäßig zur ISS. Kein neuer Auftrag, Seitenhieb auf Boeing.",
+      "originalText": "Yup [zitiert: „In 2014, NASA awarded Boeing $4.2 BILLION to develop Starliner. SpaceX received just $2.6 BILLION for Crew Dragon …“]",
+      "url": "https://x.com/elonmusk/status/2122203324460265943",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (16.11., 06:41)",
+          "url": "https://x.com/elonmusk/status/2122203324460265943"
+        },
+        {
+          "title": "Yahoo Finance (Benzinga): SPCX steigt nachbörslich fast 1 % nach dem Schiffsfang (16.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spcx-stock-climbs-starship-catch-041957770.html"
+        }
+      ]
+    },
+    {
+      "example": false,
+      "id": "post-elonmusk-2122191623731745133",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-16T05:54:46+01:00",
+      "summaryDe": "Musk bestätigt mit „Yup“ einen Post, nach dem SpaceX mehr Starts hat als alle anderen Firmen zusammen. Eigene Zahlen nennt er nicht; am Sonntag hatte er geschrieben, Falcon bringe rund 85 % der weltweiten Nutzlast in den Orbit.",
+      "originalText": "Yup [zitiert: „SpaceX has launched more then every other company combined“]",
+      "url": "https://x.com/elonmusk/status/2122191623731745133",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (16.11., 05:54)",
+          "url": "https://x.com/elonmusk/status/2122191623731745133"
+        }
+      ]
+    },
+    {
+      "example": false,
+      "id": "post-elonmusk-2122186399575396604",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-16T05:34:00+01:00",
+      "summaryDe": "Musk erinnert an seinen eigenen Post von vor zwölf Jahren (März 2014): Damals sagte er vor dem Senat gegen das Monopol von ULA (Lockheed und Boeing) bei Starts für die nationale Sicherheit aus. Anlass ist offenbar der gescheiterte Vulcan-Start von ULA am Sonntag.",
+      "originalText": "12 years ago [zitiert, 05.03.2014: „About to testify before Senate against ULA (Lockheed and Boeing) monopoly contract for national security launches“]",
+      "url": "https://x.com/elonmusk/status/2122186399575396604",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (16.11., 05:34)",
+          "url": "https://x.com/elonmusk/status/2122186399575396604"
+        },
+        {
+          "title": "n-tv Börsen-Tag: Vulcan-Fehlstart, 40 Amazon-Satelliten zerstört (16.11., 06:17)",
+          "url": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Montag-16-November-2026-id31536982.html"
+        }
+      ]
+    },
+    {
+      "example": false,
+      "id": "post-elonmusk-2122173074258731277",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-16T04:41:03+01:00",
+      "summaryDe": "Musk antwortet auf einen Vergleich seiner Fotos nach dem Absturz von Starship SN8 (2020) und nach dem Fang von Ship 42 (2026) knapp: „Wir haben ein paar Verbesserungen gemacht.“",
+      "originalText": "We made some improvements",
+      "url": "https://x.com/elonmusk/status/2122173074258731277",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (16.11., 04:41)",
+          "url": "https://x.com/elonmusk/status/2122173074258731277"
+        }
+      ]
+    },
     {
       "example": false,
       "id": "post-elonmusk-2122155781785346141",
@@ -9292,5 +9396,5 @@
       ]
     }
   ],
-  "notes": "16.11. 05:00: @elonmusk nennt Starship-V4-Daten (rund 70 m, über 60 % mehr Treibstoff, neun Triebwerke) und schreibt, Ship 42 könne nach einigen Wochen Überholung wieder fliegen; dazu Repost der Morgan-Stanley-Studie zu Flight 15, Kritik an Blue Origin und ULA, Beileid an ULA und Starlink-Posts (United, Griechenland, Brasilien, Dominikanische Republik). @RocketLab zeigt eine goldene Electron. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:15). 15.11. 22:00: @elonmusk teilte die Samsung-Meldung zu Starlink-Chips aus Austin, bedankte sich für einen Gastbeitrag von Douglas MacKinnon und schrieb zum Schiffsfang; dazu ein Repost von James Douma, der Grok lobt und fragt, ob Jensen Huang zu Unrecht verurteilt werde (ohne eigene Aussage). @RocketLab zeigt ein Neutron-Video. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 22:20). 15.11. 20:00: @elonmusk zitierte zwei Starlink-Meldungen (Lufthansa-Langstrecke, Honduras-Schulen) und lud Goldman-Chef David Solomon zu einem Starship-Start ein; dazu zwei Reposts (Paul Graham, David Solomon) ohne eigene Aussage. Keine neuen Posts von @SpaceX seit 17:20, keine von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab (X-Abfrage bis 20:15). 15.11. 18:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20). @SpaceX postete um 17:20 Werbung für Version 2.0 seines Browser-Spiels. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 18:20). 15.11. 16:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 16:12). 15.11. 15:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 15:12). 15.11. 14:00: Keine neuen eigenen Posts von @elonmusk seit 09:25 (danach nur ein Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 14:20). 15.11. 13:00: Keine neuen Posts von @elonmusk seit 10:20 (letzter: Repost des ALS-Patienten-Videos), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 13:20). 15.11. 11:30: Keine neuen eigenen Posts von @elonmusk seit 09:25 (nur zwei Reposts: CBS-Bericht zum Flug-15-Start, Video eines ALS-Patienten mit Hirnimplantat), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 11:40). 15.11. 09:30: Neu vier Musk-Posts zum Schiffsfang und zu Rechenzentren im All (08:56–09:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 09:35). Nicht übernommen: Musk-Antworten ohne Inhalt („Mentats“, „The sky is not even close to the limit“). 15.11. 08:30: Neu nur Musks Douglas-Adams-Scherz zu Ship 42 (03:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @Peter_J_Beck; @RocketLab zuletzt 03:20 (X-Abfrage bis 08:40). Nicht übernommen: Musk-Zitat eines Politik-Memes (04:08). 15.11. 06:30: Keine neuen Firmen-Posts seit 05:20 (X-Abfrage bis 06:40 für @elonmusk, @SpaceX, @Tesla, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Starlink). Nicht übernommen: Musk-Reposts ohne Firmenbezug und Werbung für Grok. 15.11. 05:30: Neu: Musk zum Schiffsfang (Glückwunsch, Inspektion, „Ship 42 looks great“, drei Booster und ein Schiff, Umarmung), SpaceX-Rückblick auf Flight 15, Rocket Lab und Peter Beck zum 100. Electron-Start. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:20). Nicht übernommen: Musk-Zitate ohne Firmenbezug (Politik-Meme, Werbung für Grok)."
+  "notes": "16.11. 06:30: @elonmusk mit vier Posts zu SpaceX: „12 years ago“ (eigene Senats-Aussage 2014 gegen das ULA-Monopol, nach dem Vulcan-Fehlstart), zweimal „Yup“ (SpaceX startet mehr als alle anderen zusammen; Starliner 4,2 Mrd. $ gegen Dragon 2,6 Mrd. $) und „Wir haben ein paar Verbesserungen gemacht“ (SN8 gegen Ship 42). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @Tesla_Optimus; @RocketLab zuletzt 02:32 (goldene Electron, schon erfasst) (X-Abfrage bis 06:45). Nicht übernommen: Musk-Antworten zu SNL-Sketchen und Politik, Werbung für Grok („Grok kann fast alles“). 16.11. 05:00: @elonmusk nennt Starship-V4-Daten (rund 70 m, über 60 % mehr Treibstoff, neun Triebwerke) und schreibt, Ship 42 könne nach einigen Wochen Überholung wieder fliegen; dazu Repost der Morgan-Stanley-Studie zu Flight 15, Kritik an Blue Origin und ULA, Beileid an ULA und Starlink-Posts (United, Griechenland, Brasilien, Dominikanische Republik). @RocketLab zeigt eine goldene Electron. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:15). 15.11. 22:00: @elonmusk teilte die Samsung-Meldung zu Starlink-Chips aus Austin, bedankte sich für einen Gastbeitrag von Douglas MacKinnon und schrieb zum Schiffsfang; dazu ein Repost von James Douma, der Grok lobt und fragt, ob Jensen Huang zu Unrecht verurteilt werde (ohne eigene Aussage). @RocketLab zeigt ein Neutron-Video. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 22:20). 15.11. 20:00: @elonmusk zitierte zwei Starlink-Meldungen (Lufthansa-Langstrecke, Honduras-Schulen) und lud Goldman-Chef David Solomon zu einem Starship-Start ein; dazu zwei Reposts (Paul Graham, David Solomon) ohne eigene Aussage. Keine neuen Posts von @SpaceX seit 17:20, keine von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab (X-Abfrage bis 20:15). 15.11. 18:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20). @SpaceX postete um 17:20 Werbung für Version 2.0 seines Browser-Spiels. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 18:20). 15.11. 16:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 16:12). 15.11. 15:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 15:12). 15.11. 14:00: Keine neuen eigenen Posts von @elonmusk seit 09:25 (danach nur ein Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 14:20). 15.11. 13:00: Keine neuen Posts von @elonmusk seit 10:20 (letzter: Repost des ALS-Patienten-Videos), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 13:20). 15.11. 11:30: Keine neuen eigenen Posts von @elonmusk seit 09:25 (nur zwei Reposts: CBS-Bericht zum Flug-15-Start, Video eines ALS-Patienten mit Hirnimplantat), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 11:40). 15.11. 09:30: Neu vier Musk-Posts zum Schiffsfang und zu Rechenzentren im All (08:56–09:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 09:35). Nicht übernommen: Musk-Antworten ohne Inhalt („Mentats“, „The sky is not even close to the limit“). 15.11. 08:30: Neu nur Musks Douglas-Adams-Scherz zu Ship 42 (03:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @Peter_J_Beck; @RocketLab zuletzt 03:20 (X-Abfrage bis 08:40). Nicht übernommen: Musk-Zitat eines Politik-Memes (04:08). 15.11. 06:30: Keine neuen Firmen-Posts seit 05:20 (X-Abfrage bis 06:40 für @elonmusk, @SpaceX, @Tesla, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Starlink). Nicht übernommen: Musk-Reposts ohne Firmenbezug und Werbung für Grok. 15.11. 05:30: Neu: Musk zum Schiffsfang (Glückwunsch, Inspektion, „Ship 42 looks great“, drei Booster und ein Schiff, Umarmung), SpaceX-Rückblick auf Flight 15, Rocket Lab und Peter Beck zum 100. Electron-Start. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:20). Nicht übernommen: Musk-Zitate ohne Firmenbezug (Politik-Meme, Werbung für Grok)."
 }
