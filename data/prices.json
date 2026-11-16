@@ -5112,39 +5112,35 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Mo 18:15: SPCX hält sich besser als der Tech-Markt – in New York 136,70 $, 1,7 % unter dem Freitagsschluss von 139,11 $; Xetra schloss bei 124,52 € (−0,7 %) (Yahoo). Der Nasdaq Composite liegt 1,8 % im Minus, der Chipindex SOX 4,0 % (Yahoo). Treiber sind der Chip-Ausverkauf vor Nvidias Zahlen am Di und die neue US-Exportregel (Investing.com, Yahoo Finance). Unter den Raumfahrtwerten hält sich SpaceX nach dem ersten Schiffsfang am besten (24/7 Wall St.); Fed-Chef Warsh warnte, ein enttäuschender KI-Boom könne Aktienkurse fallen lassen (CNBC).",
+      "why": "Stand Mo 20:15: SPCX hält sich fast stabil – in New York 138,47 $, 0,5 % unter dem Freitagsschluss von 139,11 $; Xetra schloss bei 124,52 € (−0,7 %), während der Nasdaq Composite 2,3 % und der Chipindex SOX 4,5 % verlieren (Yahoo). Stütze ist der erste Schiffsfang von Starship: Mehrere Banken loben ihn als großen Schritt zur Wiederverwendung, Bank of America hebt das Kursziel von 235 auf 275 $, Citi von 240 auf 280 $ (CNBC, StockAnalysis, MarketWatch).",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX",
+          "title": "Yahoo Finance: SPCX (16.11., 20:15)",
           "url": "https://finance.yahoo.com/quote/SPCX"
         },
         {
-          "title": "Yahoo Finance: SPX.DE",
+          "title": "Yahoo Finance: SPX.DE (Xetra-Schluss 16.11.)",
           "url": "https://finance.yahoo.com/quote/SPX.DE"
         },
         {
-          "title": "Yahoo Finance: Nasdaq Composite",
+          "title": "Yahoo Finance: Nasdaq Composite (16.11., 20:15)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC"
         },
         {
-          "title": "Yahoo Finance: PHLX Semiconductor (SOX)",
+          "title": "Yahoo Finance: PHLX Semiconductor SOX (16.11., 20:15)",
           "url": "https://finance.yahoo.com/quote/%5ESOX"
         },
         {
-          "title": "Investing.com: US-Chipwerte fallen, Händler lösen Wetten auf Nvidia-Rivalen vor den Zahlen auf (16.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/us-chip-stocks-slide-as-traders-unwind-nvidia-rival-bets-before-earnings-5030435"
+          "title": "CNBC: Analysten begeistert vom Starship-Fang (16.11.)",
+          "url": "https://www.cnbc.com/2026/11/16/analysts-are-awed-by-spacexs-starship-catch-heres-why-.html"
         },
         {
-          "title": "Yahoo Finance: AMD und Broadcom fallen nach verschärften US-Chipregeln (16.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-amd-micron-sink-on-us-chips-restrictions-coreweave-tanks-as-cloud-providers-tank-too-142453519.html"
+          "title": "StockAnalysis: SPCX-Analystenurteile (u. a. BofA 235 → 275 $, Citi 240 → 280 $, 16.11.)",
+          "url": "https://stockanalysis.com/stocks/spcx/ratings/"
         },
         {
-          "title": "24/7 Wall St.: AST SpaceMobile −7 %, Rocket Lab −4 %, SpaceX gibt trotz Starship-Fang nach (16.11.)",
-          "url": "https://247wallst.com/investing/2026/11/16/ast-spacemobile-drops-7-as-tech-selloff-hits-space-stocks-rocket-lab-falls-4-spacex-dips-despite-historic-starship-catch/"
-        },
-        {
-          "title": "CNBC: Warsh – KI könnte „enttäuschen“ (16.11.)",
-          "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html"
+          "title": "MarketWatch via Morningstar: SpaceX baut Vorsprung aus, Tech-Ausverkauf drückt die Aktie (16.11.)",
+          "url": "https://www.morningstar.com/news/marketwatch/2026111660/spacex-widens-its-lead-in-the-space-race-even-as-a-tech-selloff-weighs-on-its-stock"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -17294,14 +17290,14 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Mo 18:15: Tesla fällt – in New York 380,33 $, 2,5 % unter dem Freitagsschluss von 390,22 $; Xetra schloss bei 346,20 € (−2,1 %) (Yahoo). Der Tech-Ausverkauf vor Nvidias Zahlen überdeckt Teslas eigene Nachricht: rund drei Milliarden Euro für ein neues Gebäude in Grünheide, in dem ab 2029 bis zu eine Million Cybercabs im Jahr entstehen sollen (Reuters via Investing.com, tagesschau). Der Nasdaq Composite liegt 1,8 % im Minus (Yahoo).",
+      "why": "Stand Mo 20:15: Tesla fällt – in New York 377,72 $, 3,2 % unter dem Freitagsschluss von 390,22 $; Xetra schloss bei 346,20 € (−2,1 %) (Yahoo). Der Tech-Ausverkauf überdeckt die Cybercab-Nachrichten (3 Mrd. € für eine Halle in Grünheide, Verkauf an Privatkunden); Investing.com nennt zudem Sorge über die hohen Investitionen und die Angst vor einer Zinserhöhung im Dezember (Investing.com, TechCrunch). Der Nasdaq Composite liegt 2,3 % im Minus (Yahoo).",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA",
+          "title": "Yahoo Finance: TSLA (16.11., 20:15)",
           "url": "https://finance.yahoo.com/quote/TSLA"
         },
         {
-          "title": "Yahoo Finance: TL0.DE",
+          "title": "Yahoo Finance: TL0.DE (Xetra-Schluss 16.11.)",
           "url": "https://finance.yahoo.com/quote/TL0.DE"
         },
         {
@@ -17309,15 +17305,11 @@
           "url": "https://www.investing.com/news/stock-market-news/why-is-tesla-stock-sliding-today-93CH-5030404"
         },
         {
-          "title": "Reuters via Investing.com: Tesla kündigt Ausbau des Werks in Deutschland an (16.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/tesla-announces-33-billion-expansion-of-germany-plant-5030287"
+          "title": "TechCrunch: Tesla setzt mit 3 Mrd. € in Grünheide voll auf das Cybercab (16.11.)",
+          "url": "https://techcrunch.com/2026/11/16/tesla-goes-all-in-on-the-cybercab-with-upcoming-e3b-berlin-gigafactory-expansion/"
         },
         {
-          "title": "tagesschau/rbb: Tesla-Milliarden für Grünheide (16.11.)",
-          "url": "https://www.tagesschau.de/inland/regional/brandenburg/rbb-tesla-kuendigt-milliarden-investition-in-werk-in-gruenheide-an-102.html"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq Composite",
+          "title": "Yahoo Finance: Nasdaq Composite (16.11., 20:15)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC"
         }
       ],
@@ -28513,14 +28505,14 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Mo 18:15: Rocket Lab fällt – in New York 58,95 $, 4,2 % unter dem Freitagsschluss von 61,53 $; Stuttgart 53,70 € (−3,6 %) (Yahoo). Raumfahrtwerte fallen mit dem Tech-Ausverkauf, den auch die Unruhe um Nvidia antreibt (Benzinga); dazu wirkt der Vulcan-Fehlstart von ULA am So nach (Yahoo Finance). Der Nasdaq Composite liegt 1,8 % im Minus (Yahoo).",
+      "why": "Stand Mo 20:15: Rocket Lab fällt deutlich – in New York 57,83 $, 6,0 % unter dem Freitagsschluss von 61,53 $; Stuttgart 52,20 € (−6,3 %) (Yahoo). Raumfahrtwerte fallen mit dem Tech-Ausverkauf und nach dem Vulcan-Fehlstart von ULA am So; eine eigene neue Rocket-Lab-Meldung gibt es nicht, die Kursziele wurden aber letzte Woche gesenkt (Benzinga, Yahoo Finance). Damit läuft die Tagesfrage (Schluss über 61,53 $?) Richtung „nein“ – entschieden wird um 22:15.",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB",
+          "title": "Yahoo Finance: RKLB (16.11., 20:15)",
           "url": "https://finance.yahoo.com/quote/RKLB"
         },
         {
-          "title": "Yahoo Finance: 6RJ0.SG",
+          "title": "Yahoo Finance: 6RJ0.SG (16.11., 19:47)",
           "url": "https://finance.yahoo.com/quote/6RJ0.SG"
         },
         {
@@ -28532,8 +28524,8 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/asts-rklb-lunr-fly-fall-055834650.html"
         },
         {
-          "title": "Yahoo Finance: Nasdaq Composite",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC"
+          "title": "Benzinga via TradingView: Warum fällt Rocket Lab am Montag? (Kursziele MS 103 $, Needham 100 $, Piper 58 $)",
+          "url": "https://www.tradingview.com/news/benzinga:f0790590a094b:0-why-is-rocket-lab-stock-falling-monday/"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -39963,30 +39955,34 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Mo 18:15: Marvell fällt – in New York 147,58 $, 5,9 % unter dem Freitagsschluss von 156,76 $; Xetra schloss bei 134,80 € (−3,3 %) (Yahoo). Händler lösen vor Nvidias Zahlen am Di Wetten auf Nvidia-Rivalen auf, dazu kommt die verschärfte US-Exportregel; Micron, Intel und AMD fallen ähnlich, der Chipindex SOX liegt 4,0 % im Minus (Investing.com, Yahoo). Zahlen am Di 1.12. (Marvell).",
+      "why": "Stand Mo 20:15: Marvell fällt – in New York 147,21 $, 6,1 % unter dem Freitagsschluss von 156,76 $; Xetra schloss bei 134,80 € (−3,3 %) (Yahoo). Der Chip-Ausverkauf vor Nvidias Zahlen am Di geht weiter: Intel, Marvell, Micron und Arm verlieren jeweils mehr als 7 %, Nvidia rund 4 %, der Chipindex SOX 4,5 %; dazu kommen Zinssorgen (Investopedia, dpa-AFX, Yahoo). Marvell-Zahlen am Di 1.12. (Marvell).",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL",
+          "title": "Yahoo Finance: MRVL (16.11., 20:15)",
           "url": "https://finance.yahoo.com/quote/MRVL"
         },
         {
-          "title": "Yahoo Finance: 9MW.DE",
+          "title": "Yahoo Finance: 9MW.DE (Xetra-Schluss 16.11.)",
           "url": "https://finance.yahoo.com/quote/9MW.DE"
         },
         {
-          "title": "Investing.com: US-Chipwerte fallen, Händler lösen Wetten auf Nvidia-Rivalen vor den Zahlen auf (16.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/us-chip-stocks-slide-as-traders-unwind-nvidia-rival-bets-before-earnings-5030435"
+          "title": "Investopedia: Indizes fallen, KI-Werte sinken, Nvidia-Ausverkauf vor den Zahlen (16.11., 19:50 Berlin)",
+          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11162026-12257790"
         },
         {
-          "title": "Yahoo Finance: AMD und Broadcom fallen nach verschärften US-Chipregeln (16.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-amd-micron-sink-on-us-chips-restrictions-coreweave-tanks-as-cloud-providers-tank-too-142453519.html"
+          "title": "dpa-AFX via Investing.com: Aktien New York – Tech-Werte bleiben unter Druck (16.11., 17:00)",
+          "url": "https://de.investing.com/news/stock-market-news/roundupaktien-new-york-techwerte-bleiben-unter-druck-3770922"
         },
         {
-          "title": "Yahoo Finance: PHLX Semiconductor (SOX)",
+          "title": "Yahoo Finance: PHLX Semiconductor SOX (16.11., 20:15)",
           "url": "https://finance.yahoo.com/quote/%5ESOX"
         },
         {
-          "title": "Marvell: Telefonkonferenz zum 3. Quartal",
+          "title": "Yahoo Finance: NVDA (16.11., 20:15)",
+          "url": "https://finance.yahoo.com/quote/NVDA"
+        },
+        {
+          "title": "Marvell: Telefonkonferenz zum 3. Quartal (1.12.)",
           "url": "https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results"
         }
       ],
