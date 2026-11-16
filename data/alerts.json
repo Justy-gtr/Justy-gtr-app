@@ -457,8 +457,8 @@
       "id": "RKLB-2026-11-16",
       "symbol": "RKLB",
       "name": "Rocket Lab",
-      "changePct": -3.95,
-      "priceEur": 53.5,
+      "changePct": -6.1,
+      "priceEur": 52.3,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-16T10:56:42.218Z",
@@ -487,8 +487,8 @@
       "id": "MRVL-2026-11-16",
       "symbol": "MRVL",
       "name": "Marvell Technology",
-      "changePct": -2.47,
-      "priceEur": 135.9,
+      "changePct": -6.97,
+      "priceEur": 132.7,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-16T10:56:42.218Z",
@@ -500,8 +500,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/MRVL/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance 9MW.DE",
-          "url": "https://finance.yahoo.com/quote/9MW.DE"
+          "title": "Yahoo Finance 9MW.SG",
+          "url": "https://finance.yahoo.com/quote/9MW.SG"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -510,6 +510,36 @@
         {
           "title": "Yahoo Finance MRVL",
           "url": "https://finance.yahoo.com/quote/MRVL"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-2026-11-16",
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "changePct": -3.4,
+      "priceEur": 342.6,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-16T20:56:15.131Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Alpaca Markets IEX TSLA",
+          "url": "https://data.alpaca.markets/v2/stocks/TSLA/snapshot?feed=iex"
+        },
+        {
+          "title": "Yahoo Finance TL0.SG",
+          "url": "https://finance.yahoo.com/quote/TL0.SG"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA"
         }
       ]
     }
