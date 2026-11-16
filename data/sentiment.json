@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T08:02:00+01:00",
+  "updatedAt": "2026-11-16T08:11:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -22,28 +22,28 @@
           "url": "https://x.com/rogerstirling60/status/2122207117260337453"
         }
       ],
-      "updatedAt": "2026-11-16T08:02:00+01:00"
+      "updatedAt": "2026-11-16T08:11:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 15,
       "postsCount": 25,
-      "reason": "Morgan Stanley hebt die Robotaxi-Prognose, Cybercab-Vorbestellungen und der Argentinien-Start werden besprochen; dazu Sicherheitsvorwürfe und viel Werbe-Spam.",
+      "reason": "Koreas Pensionsfonds hält so viele Tesla-Aktien wie nie, Morgan Stanley hebt die Robotaxi-Prognose; vorbörslich leicht im Minus, dazu Sicherheitsvorwürfe.",
       "sources": [
+        {
+          "title": "@Tslachan auf X (16.11., 08:03)",
+          "url": "https://x.com/Tslachan/status/2122224037627879928"
+        },
         {
           "title": "@SuperMariossss auf X (16.11., 07:34)",
           "url": "https://x.com/SuperMariossss/status/2122216710690295869"
         },
         {
-          "title": "@masked_investor auf X (16.11., 06:50)",
-          "url": "https://x.com/masked_investor/status/2122205647706144901"
-        },
-        {
-          "title": "@x_invest1 auf X (16.11., 07:28)",
-          "url": "https://x.com/x_invest1/status/2122215262787387805"
+          "title": "@QuantAlphaXXX auf X (16.11., 08:08)",
+          "url": "https://x.com/QuantAlphaXXX/status/2122225169129177294"
         }
       ],
-      "updatedAt": "2026-11-16T08:02:00+01:00"
+      "updatedAt": "2026-11-16T08:11:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/adamkhootrader/status/2122211383790227821"
         }
       ],
-      "updatedAt": "2026-11-16T08:02:00+01:00"
+      "updatedAt": "2026-11-16T08:11:00+01:00"
     }
   }
 }
