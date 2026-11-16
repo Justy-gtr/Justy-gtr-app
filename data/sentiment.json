@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T14:52:00+01:00",
+  "updatedAt": "2026-11-16T14:57:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,28 +22,28 @@
           "url": "https://x.com/MentoviaX/status/2122325979288805665"
         }
       ],
-      "updatedAt": "2026-11-16T14:52:00+01:00"
+      "updatedAt": "2026-11-16T14:57:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 15,
-      "postsCount": 25,
-      "reason": "Viele teilen das 3-Mrd.-€-Cybercab-Werk in Grünheide und Musks China-Reise mit Trump; Kritiker sehen Prüfung der SpaceX-Fusion in Texas und leichtes Minus vorbörslich.",
+      "score": 20,
+      "postsCount": 28,
+      "reason": "Große Newskanäle melden 3 Mrd. € extra für Grünheide (FAZ), Fans jubeln über das Cybercab-Werk; vorbörslich etwa −1,3 % wegen Nvidia, Texas will die SpaceX-Fusion prüfen.",
       "sources": [
         {
-          "title": "@tvorreyer auf X (16.11., 14:46)",
-          "url": "https://x.com/tvorreyer/status/2122325542892671357"
+          "title": "@DeItaone auf X (16.11., 14:53)",
+          "url": "https://x.com/DeItaone/status/2122327120911487394"
         },
         {
-          "title": "@MentoviaX auf X (16.11., 14:48)",
-          "url": "https://x.com/MentoviaX/status/2122325979288805665"
+          "title": "@financialjuice auf X (16.11., 14:54)",
+          "url": "https://x.com/financialjuice/status/2122327576786153593"
         },
         {
-          "title": "@PNN_de auf X (16.11., 14:48)",
-          "url": "https://x.com/PNN_de/status/2122325822875013379"
+          "title": "@RandyWKirk1 auf X (16.11., 14:54)",
+          "url": "https://x.com/RandyWKirk1/status/2122327540752904441"
         }
       ],
-      "updatedAt": "2026-11-16T14:52:00+01:00"
+      "updatedAt": "2026-11-16T14:57:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/Early_Catalyst/status/2122311834313338995"
         }
       ],
-      "updatedAt": "2026-11-16T14:52:00+01:00"
+      "updatedAt": "2026-11-16T14:57:00+01:00"
     }
   }
 }
