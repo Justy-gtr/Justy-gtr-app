@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T15:51:00+01:00",
+  "updatedAt": "2026-11-16T15:58:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 25,
-      "reason": "Citi, Raymond James, Bernstein und RBC bleiben nach dem Starship-Fang optimistisch; zum US-Handelsstart liegt SPCX kaum verändert bei 139 $, Chips fallen deutlich.",
+      "score": 35,
+      "postsCount": 20,
+      "reason": "Bernstein, RBC, Raymond James und Citi loben den Starship-Fang; SPCX startet mit knapp −1 % bei 138 $, viele Fans wundern sich über den schwachen Kurs.",
       "sources": [
-        {
-          "title": "@gomarketbeater auf X (16.11., 15:41)",
-          "url": "https://x.com/gomarketbeater/status/2122339209063076105"
-        },
         {
           "title": "@spcxGOD auf X (16.11., 15:33)",
           "url": "https://x.com/spcxGOD/status/2122337280425926946"
         },
         {
-          "title": "@FranciscoSpace5 auf X (16.11., 15:38)",
-          "url": "https://x.com/FranciscoSpace5/status/2122338620946407915"
+          "title": "@Stop_Loss1 auf X (16.11., 15:56)",
+          "url": "https://x.com/Stop_Loss1/status/2122342942987710677"
+        },
+        {
+          "title": "@davidkarim auf X (16.11., 15:45)",
+          "url": "https://x.com/davidkarim/status/2122340196079251486"
         }
       ],
-      "updatedAt": "2026-11-16T15:51:00+01:00"
+      "updatedAt": "2026-11-16T15:58:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 25,
-      "postsCount": 30,
-      "reason": "Fans feiern 3 Mrd. € für die Cybercab-Halle in Grünheide; zum Handelsstart rutscht TSLA aber ins Minus (bis gut 1 %), einige Anleger zeigen sich frustriert.",
+      "score": 20,
+      "postsCount": 20,
+      "reason": "Viel Freude über 3 Mrd. € für die Cybercab-Halle in Grünheide und den Cybercab-Verkauf; doch TSLA fällt zum Start, einige Anleger sind frustriert.",
       "sources": [
         {
-          "title": "@jakeisinvestor auf X (16.11., 15:45)",
-          "url": "https://x.com/jakeisinvestor/status/2122340219550605320"
+          "title": "@Finanzennet auf X (16.11., 15:53)",
+          "url": "https://x.com/Finanzennet/status/2122342234544627933"
         },
         {
-          "title": "@Stop_Loss1 auf X (16.11., 15:46)",
-          "url": "https://x.com/Stop_Loss1/status/2122340626347807014"
+          "title": "@CuriousPejjy auf X (16.11., 15:47)",
+          "url": "https://x.com/CuriousPejjy/status/2122340719671046369"
         },
         {
           "title": "@na_option auf X (16.11., 15:48)",
           "url": "https://x.com/na_option/status/2122340947291996271"
         }
       ],
-      "updatedAt": "2026-11-16T15:51:00+01:00"
+      "updatedAt": "2026-11-16T15:58:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": 25,
       "postsCount": 20,
-      "reason": "Morgan Stanley bleibt bei Overweight mit 103 $, Fans feiern den 100. Electron-Start; andere ärgern sich, dass die Aktie wegen des ULA-Fehlstarts mit fällt.",
+      "reason": "Fans feiern 100 Electron-Starts und Neutron (auch für Astronauten gedacht); nach dem ULA-Fehlstart sehen viele Rocket Lab als Nr. 2, die Aktie bleibt schwach.",
       "sources": [
         {
-          "title": "@SpacBobby auf X (16.11., 15:03)",
-          "url": "https://x.com/SpacBobby/status/2122329699443761173"
+          "title": "@rafytirado21 auf X (16.11., 15:33)",
+          "url": "https://x.com/rafytirado21/status/2122337351024492904"
         },
         {
-          "title": "@247WallSt auf X (16.11., 15:04)",
-          "url": "https://x.com/247WallSt/status/2122329965936976342"
+          "title": "@RCapitalX auf X (16.11., 15:46)",
+          "url": "https://x.com/RCapitalX/status/2122340444457877728"
         },
         {
-          "title": "@AxiosRose auf X (16.11., 15:05)",
-          "url": "https://x.com/AxiosRose/status/2122330186242793877"
+          "title": "@nikogeorge auf X (16.11., 15:44)",
+          "url": "https://x.com/nikogeorge/status/2122340131063665090"
         }
       ],
-      "updatedAt": "2026-11-16T15:51:00+01:00"
+      "updatedAt": "2026-11-16T15:58:00+01:00"
     }
   }
 }
