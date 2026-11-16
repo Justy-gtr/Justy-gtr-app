@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T12:38:00+01:00",
+  "updatedAt": "2026-11-16T13:17:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gemischt",
-      "score": 30,
-      "postsCount": 25,
-      "reason": "Citi hebt das Kursziel auf 280 $, der Starship-Fang wird weiter gefeiert; Kritik gibt es an der hohen Bewertung und Starlink-Einschränkungen für die Ukraine.",
+      "mood": "gut",
+      "score": 40,
+      "postsCount": 20,
+      "reason": "Citi und Raymond James heben nach dem Starship-Fang ihre Ziele an, SPCX ist vorbörslich im Plus; einige finden die Bewertung zu hoch und wollen auf fallende Kurse setzen.",
       "sources": [
         {
-          "title": "@wallstengine auf X (16.11., 12:36)",
-          "url": "https://x.com/wallstengine/status/2122292723999031424"
+          "title": "@TipRanks auf X (16.11., 13:15)",
+          "url": "https://x.com/TipRanks/status/2122302635487215653"
         },
         {
-          "title": "@CyberCabDavid auf X (16.11., 12:36)",
-          "url": "https://x.com/CyberCabDavid/status/2122292691350544778"
+          "title": "@AIStockSavvy auf X (16.11., 13:15)",
+          "url": "https://x.com/AIStockSavvy/status/2122302537537569089"
         },
         {
-          "title": "@DigitalAssetsUS auf X (16.11., 12:35)",
-          "url": "https://x.com/DigitalAssetsUS/status/2122292521468379598"
+          "title": "@ali_alizeh72722 auf X (16.11., 13:14)",
+          "url": "https://x.com/ali_alizeh72722/status/2122302392142078215"
         }
       ],
-      "updatedAt": "2026-11-16T12:38:00+01:00"
+      "updatedAt": "2026-11-16T13:17:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,28 +43,28 @@
           "url": "https://x.com/1electricdon/status/2122292393018048905"
         }
       ],
-      "updatedAt": "2026-11-16T12:38:00+01:00"
+      "updatedAt": "2026-11-16T13:17:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 10,
-      "postsCount": 25,
-      "reason": "Viele erwarten wieder einen roten Tag und zeigen das Minus seit dem Hoch; Fans loben den 100. Start und die 16 gebuchten Neutron-Missionen.",
+      "score": 20,
+      "postsCount": 15,
+      "reason": "Viele loben den Blick in die Neutron-Fabrik und den 100. Electron-Start mit voll gebuchten Folgestarts; andere sehen weiter Druck auf Wachstumswerte.",
       "sources": [
         {
-          "title": "@ayanjainhere auf X (16.11., 12:28)",
-          "url": "https://x.com/ayanjainhere/status/2122290666181099955"
+          "title": "@ASML2002 auf X (16.11., 13:00)",
+          "url": "https://x.com/ASML2002/status/2122298829060092253"
         },
         {
-          "title": "@FemmyYohana auf X (16.11., 12:30)",
-          "url": "https://x.com/FemmyYohana/status/2122291141790060968"
+          "title": "@gadflyrebel auf X (16.11., 13:00)",
+          "url": "https://x.com/gadflyrebel/status/2122298860823609438"
         },
         {
-          "title": "@AlgoTradeAlert auf X (16.11., 12:17)",
-          "url": "https://x.com/AlgoTradeAlert/status/2122287960968352083"
+          "title": "@DadOfWallStreet auf X (16.11., 13:01)",
+          "url": "https://x.com/DadOfWallStreet/status/2122299050326139153"
         }
       ],
-      "updatedAt": "2026-11-16T12:38:00+01:00"
+      "updatedAt": "2026-11-16T13:17:00+01:00"
     }
   }
 }
