@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T15:13:00+01:00",
+  "updatedAt": "2026-11-16T15:24:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 22,
-      "reason": "Raymond James (800 $) und Pivotal (260 $) bleiben nach dem Starship-Fang optimistisch, Citi hebt auf 280 $; Texas will eine Tesla-SpaceX-Fusion genau prüfen.",
+      "score": 45,
+      "postsCount": 25,
+      "reason": "Nach Citi und Raymond James bestätigen auch Bernstein und RBC ihre Einstufung; SpaceX liegt vorbörslich knapp 1 % im Plus, während Chipwerte fallen.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (16.11., 14:46)",
-          "url": "https://x.com/spcxGOD/status/2122325351783141585"
+          "title": "@Michael34952 auf X (16.11., 15:20)",
+          "url": "https://x.com/Michael34952/status/2122333909987778916"
         },
         {
-          "title": "@JasonL_Capital auf X (16.11., 14:48)",
-          "url": "https://x.com/JasonL_Capital/status/2122325998209474695"
+          "title": "@Michael34952 auf X (16.11., 15:20)",
+          "url": "https://x.com/Michael34952/status/2122334070256316537"
         },
         {
-          "title": "@MentoviaX auf X (16.11., 14:48)",
-          "url": "https://x.com/MentoviaX/status/2122325979288805665"
+          "title": "@BeerDealer08 auf X (16.11., 15:21)",
+          "url": "https://x.com/BeerDealer08/status/2122334135838441607"
         }
       ],
-      "updatedAt": "2026-11-16T15:13:00+01:00"
+      "updatedAt": "2026-11-16T15:24:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,7 +43,7 @@
           "url": "https://x.com/krspyszn/status/2122331761300693210"
         }
       ],
-      "updatedAt": "2026-11-16T15:13:00+01:00"
+      "updatedAt": "2026-11-16T15:24:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/AxiosRose/status/2122330186242793877"
         }
       ],
-      "updatedAt": "2026-11-16T15:13:00+01:00"
+      "updatedAt": "2026-11-16T15:24:00+01:00"
     }
   }
 }
