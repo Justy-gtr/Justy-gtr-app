@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T15:24:00+01:00",
+  "updatedAt": "2026-11-16T15:36:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 45,
+      "score": 40,
       "postsCount": 25,
-      "reason": "Nach Citi und Raymond James bestätigen auch Bernstein und RBC ihre Einstufung; SpaceX liegt vorbörslich knapp 1 % im Plus, während Chipwerte fallen.",
+      "reason": "Citi, Raymond James, Bernstein und RBC bleiben nach dem Starship-Fang optimistisch; Fans wundern sich, dass SPCX vorbörslich trotzdem leicht unter 139 $ liegt.",
       "sources": [
+        {
+          "title": "@spcxGOD auf X (16.11., 15:33)",
+          "url": "https://x.com/spcxGOD/status/2122337280425926946"
+        },
         {
           "title": "@Michael34952 auf X (16.11., 15:20)",
           "url": "https://x.com/Michael34952/status/2122333909987778916"
         },
         {
-          "title": "@Michael34952 auf X (16.11., 15:20)",
-          "url": "https://x.com/Michael34952/status/2122334070256316537"
-        },
-        {
-          "title": "@BeerDealer08 auf X (16.11., 15:21)",
-          "url": "https://x.com/BeerDealer08/status/2122334135838441607"
+          "title": "@WillWhiteWriter auf X (16.11., 15:32)",
+          "url": "https://x.com/WillWhiteWriter/status/2122337034597773533"
         }
       ],
-      "updatedAt": "2026-11-16T15:24:00+01:00"
+      "updatedAt": "2026-11-16T15:36:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,7 +43,7 @@
           "url": "https://x.com/krspyszn/status/2122331761300693210"
         }
       ],
-      "updatedAt": "2026-11-16T15:24:00+01:00"
+      "updatedAt": "2026-11-16T15:36:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/AxiosRose/status/2122330186242793877"
         }
       ],
-      "updatedAt": "2026-11-16T15:24:00+01:00"
+      "updatedAt": "2026-11-16T15:36:00+01:00"
     }
   }
 }
