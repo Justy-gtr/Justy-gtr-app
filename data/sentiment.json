@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T15:47:00+01:00",
+  "updatedAt": "2026-11-16T15:51:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,28 +22,28 @@
           "url": "https://x.com/FranciscoSpace5/status/2122338620946407915"
         }
       ],
-      "updatedAt": "2026-11-16T15:47:00+01:00"
+      "updatedAt": "2026-11-16T15:51:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 30,
+      "score": 25,
       "postsCount": 30,
-      "reason": "Tesla bestätigt 3 Mrd. € für eine neue Grünheide-Halle für bis zu 1 Mio. Cybercabs ab 2029, viele feiern das; zum Handelsstart nur leicht im Minus bei 389 $.",
+      "reason": "Fans feiern 3 Mrd. € für die Cybercab-Halle in Grünheide; zum Handelsstart rutscht TSLA aber ins Minus (bis gut 1 %), einige Anleger zeigen sich frustriert.",
       "sources": [
-        {
-          "title": "@WOLF_Financial auf X (16.11., 15:10)",
-          "url": "https://x.com/WOLF_Financial/status/2122331592131547507"
-        },
         {
           "title": "@jakeisinvestor auf X (16.11., 15:45)",
           "url": "https://x.com/jakeisinvestor/status/2122340219550605320"
         },
         {
-          "title": "@gomarketbeater auf X (16.11., 15:41)",
-          "url": "https://x.com/gomarketbeater/status/2122339209063076105"
+          "title": "@Stop_Loss1 auf X (16.11., 15:46)",
+          "url": "https://x.com/Stop_Loss1/status/2122340626347807014"
+        },
+        {
+          "title": "@na_option auf X (16.11., 15:48)",
+          "url": "https://x.com/na_option/status/2122340947291996271"
         }
       ],
-      "updatedAt": "2026-11-16T15:47:00+01:00"
+      "updatedAt": "2026-11-16T15:51:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/AxiosRose/status/2122330186242793877"
         }
       ],
-      "updatedAt": "2026-11-16T15:47:00+01:00"
+      "updatedAt": "2026-11-16T15:51:00+01:00"
     }
   }
 }
