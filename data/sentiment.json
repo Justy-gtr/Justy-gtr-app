@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T15:11:00+01:00",
+  "updatedAt": "2026-11-16T15:13:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,28 +22,28 @@
           "url": "https://x.com/MentoviaX/status/2122325979288805665"
         }
       ],
-      "updatedAt": "2026-11-16T15:11:00+01:00"
+      "updatedAt": "2026-11-16T15:13:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 25,
+      "score": 30,
       "postsCount": 30,
-      "reason": "Fast alle reden über 3 Mrd. € für Grünheide: neue Halle für bis zu 1 Mio. Cybercabs/Jahr, Bau ab 2027. Dämpfer: vorbörslich leicht im Minus wegen Nvidia.",
+      "reason": "Tesla bestätigt 3 Mrd. € für eine neue Grünheide-Halle für bis zu 1 Mio. Cybercabs ab 2029, viele feiern das; Charttrader schauen skeptisch auf die Marke um 385 $.",
       "sources": [
         {
-          "title": "@wallstengine auf X (16.11., 15:00)",
-          "url": "https://x.com/wallstengine/status/2122328903536742612"
+          "title": "@WOLF_Financial auf X (16.11., 15:10)",
+          "url": "https://x.com/WOLF_Financial/status/2122331592131547507"
         },
         {
-          "title": "@CHItrader auf X (16.11., 15:01)",
-          "url": "https://x.com/CHItrader/status/2122329135208939919"
+          "title": "@Tslachan auf X (16.11., 15:11)",
+          "url": "https://x.com/Tslachan/status/2122331789314469946"
         },
         {
-          "title": "@MentoviaX auf X (16.11., 14:56)",
-          "url": "https://x.com/MentoviaX/status/2122328049135780030"
+          "title": "@krspyszn auf X (16.11., 15:11)",
+          "url": "https://x.com/krspyszn/status/2122331761300693210"
         }
       ],
-      "updatedAt": "2026-11-16T15:11:00+01:00"
+      "updatedAt": "2026-11-16T15:13:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/AxiosRose/status/2122330186242793877"
         }
       ],
-      "updatedAt": "2026-11-16T15:11:00+01:00"
+      "updatedAt": "2026-11-16T15:13:00+01:00"
     }
   }
 }
