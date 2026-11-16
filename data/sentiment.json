@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-15T08:40:00+01:00",
+  "updatedAt": "2026-11-16T08:02:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gut",
-      "score": 70,
+      "mood": "gemischt",
+      "score": 20,
       "postsCount": 25,
-      "reason": "Der Schiffsfang wird weiter gefeiert, einige erwarten Montag Kursgewinne und sehen den Anthropic-Börsengang als Rückenwind; vereinzelt Spott, die Aktie falle nach Erfolgen.",
+      "reason": "Starship-V4-Details und Zukäufe von ARK und Morgan Stanley stehen neben Thiels geschrumpftem Anteil, dem gesprengten Booster und Sorge vor den Nvidia-Zahlen.",
       "sources": [
         {
-          "title": "@nextbigfuture auf X (15.11., 08:35)",
-          "url": "https://x.com/nextbigfuture/status/2121869801106878744"
+          "title": "@spcxGOD auf X (16.11., 07:00)",
+          "url": "https://x.com/spcxGOD/status/2122208046541910476"
         },
         {
-          "title": "@spcxGOD auf X (15.11., 08:30)",
-          "url": "https://x.com/spcxGOD/status/2121868302813474968"
+          "title": "@NeoTSX auf X (16.11., 06:16)",
+          "url": "https://x.com/NeoTSX/status/2122197137865752630"
         },
         {
-          "title": "@dezmondOliver auf X (15.11., 08:37)",
-          "url": "https://x.com/dezmondOliver/status/2121870279530225836"
+          "title": "@rogerstirling60 auf X (16.11., 06:56)",
+          "url": "https://x.com/rogerstirling60/status/2122207117260337453"
         }
       ],
-      "updatedAt": "2026-11-15T08:40:00+01:00"
+      "updatedAt": "2026-11-16T08:02:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 5,
+      "score": 15,
       "postsCount": 25,
-      "reason": "Lob für Cybercab-Fahrten steht neben Unfallvorwürfen und Fragen zum Umtauschverhältnis bei einer SpaceX-Fusion; viel Werbe-Spam.",
+      "reason": "Morgan Stanley hebt die Robotaxi-Prognose, Cybercab-Vorbestellungen und der Argentinien-Start werden besprochen; dazu Sicherheitsvorwürfe und viel Werbe-Spam.",
       "sources": [
         {
-          "title": "@x_invest1 auf X (15.11., 08:30)",
-          "url": "https://x.com/x_invest1/status/2121868541678813288"
+          "title": "@SuperMariossss auf X (16.11., 07:34)",
+          "url": "https://x.com/SuperMariossss/status/2122216710690295869"
         },
         {
-          "title": "@StonkKing4 auf X (15.11., 08:34)",
-          "url": "https://x.com/StonkKing4/status/2121869440199655516"
+          "title": "@masked_investor auf X (16.11., 06:50)",
+          "url": "https://x.com/masked_investor/status/2122205647706144901"
         },
         {
-          "title": "@ChrisPyller auf X (15.11., 08:36)",
-          "url": "https://x.com/ChrisPyller/status/2121869923739922881"
+          "title": "@x_invest1 auf X (16.11., 07:28)",
+          "url": "https://x.com/x_invest1/status/2122215262787387805"
         }
       ],
-      "updatedAt": "2026-11-15T08:40:00+01:00"
+      "updatedAt": "2026-11-16T08:02:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 35,
+      "score": 30,
       "postsCount": 25,
-      "reason": "Der 100. Electron-Start wird weiter gefeiert; Seeking Alpha warnt vor neuen Schulden, einzelne sprechen von einer Blase. Viel Werbe-Spam.",
+      "reason": "Die 100 Starts und Neutron werden gelobt, Rocket Lab gilt als stärkster SpaceX-Rivale; Adam Khoo zählt die Aktie aber zu gefallenen Blasen-Werten.",
       "sources": [
         {
-          "title": "@leonid_zador auf X (15.11., 08:19)",
-          "url": "https://x.com/leonid_zador/status/2121865625173639169"
+          "title": "@RCapitalX auf X (16.11., 07:07)",
+          "url": "https://x.com/RCapitalX/status/2122209913325920447"
         },
         {
-          "title": "@SeekingAlpha auf X (15.11., 08:30)",
-          "url": "https://x.com/SeekingAlpha/status/2121868308425449902"
+          "title": "@k2__investment auf X (16.11., 06:51)",
+          "url": "https://x.com/k2__investment/status/2122205997619900501"
         },
         {
-          "title": "@Tim19662078 auf X (15.11., 07:24)",
-          "url": "https://x.com/Tim19662078/status/2121851907874468318"
+          "title": "@adamkhootrader auf X (16.11., 07:13)",
+          "url": "https://x.com/adamkhootrader/status/2122211383790227821"
         }
       ],
-      "updatedAt": "2026-11-15T08:40:00+01:00"
+      "updatedAt": "2026-11-16T08:02:00+01:00"
     }
   }
 }
