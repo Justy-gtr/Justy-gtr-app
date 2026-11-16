@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T08:11:00+01:00",
+  "updatedAt": "2026-11-16T08:23:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 20,
+      "score": 25,
       "postsCount": 25,
-      "reason": "Starship-V4-Details und Zukäufe von ARK und Morgan Stanley stehen neben Thiels geschrumpftem Anteil, dem gesprengten Booster und Sorge vor den Nvidia-Zahlen.",
+      "reason": "Morgan Stanley nennt den Schiffsfang historisch, viele warten gespannt auf den ersten Handelstag danach; Sorgen machen der verlorene Booster und hohe KI-Ausgaben.",
       "sources": [
+        {
+          "title": "@xbyhunter auf X (16.11., 08:21)",
+          "url": "https://x.com/xbyhunter/status/2122228638787768544"
+        },
+        {
+          "title": "@QuantAlphaXXX auf X (16.11., 08:21)",
+          "url": "https://x.com/QuantAlphaXXX/status/2122228439339892961"
+        },
         {
           "title": "@spcxGOD auf X (16.11., 07:00)",
           "url": "https://x.com/spcxGOD/status/2122208046541910476"
-        },
-        {
-          "title": "@NeoTSX auf X (16.11., 06:16)",
-          "url": "https://x.com/NeoTSX/status/2122197137865752630"
-        },
-        {
-          "title": "@rogerstirling60 auf X (16.11., 06:56)",
-          "url": "https://x.com/rogerstirling60/status/2122207117260337453"
         }
       ],
-      "updatedAt": "2026-11-16T08:11:00+01:00"
+      "updatedAt": "2026-11-16T08:23:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
