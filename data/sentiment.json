@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T14:35:00+01:00",
+  "updatedAt": "2026-11-16T14:52:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
-      "postsCount": 20,
-      "reason": "Citi und Raymond James heben nach dem Starship-Fang ihre Ziele an, SPCX ist vorbörslich im Plus; einige finden die Bewertung zu hoch und wollen auf fallende Kurse setzen.",
+      "postsCount": 22,
+      "reason": "Raymond James (800 $) und Pivotal (260 $) bleiben nach dem Starship-Fang optimistisch, Citi hebt auf 280 $; Texas will eine Tesla-SpaceX-Fusion genau prüfen.",
       "sources": [
         {
-          "title": "@TipRanks auf X (16.11., 13:15)",
-          "url": "https://x.com/TipRanks/status/2122302635487215653"
+          "title": "@spcxGOD auf X (16.11., 14:46)",
+          "url": "https://x.com/spcxGOD/status/2122325351783141585"
         },
         {
-          "title": "@AIStockSavvy auf X (16.11., 13:15)",
-          "url": "https://x.com/AIStockSavvy/status/2122302537537569089"
+          "title": "@JasonL_Capital auf X (16.11., 14:48)",
+          "url": "https://x.com/JasonL_Capital/status/2122325998209474695"
         },
         {
-          "title": "@ali_alizeh72722 auf X (16.11., 13:14)",
-          "url": "https://x.com/ali_alizeh72722/status/2122302392142078215"
+          "title": "@MentoviaX auf X (16.11., 14:48)",
+          "url": "https://x.com/MentoviaX/status/2122325979288805665"
         }
       ],
-      "updatedAt": "2026-11-16T13:17:00+01:00"
+      "updatedAt": "2026-11-16T14:52:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 15,
       "postsCount": 25,
-      "reason": "Fans teilen Berichte über eine 2. Fabrik in Grünheide für bis zu 1 Mio. Cybercabs/Jahr und eine größere Miami-Zone; Kritiker warnen vor Kursrutsch unter 385 $.",
+      "reason": "Viele teilen das 3-Mrd.-€-Cybercab-Werk in Grünheide und Musks China-Reise mit Trump; Kritiker sehen Prüfung der SpaceX-Fusion in Texas und leichtes Minus vorbörslich.",
       "sources": [
         {
-          "title": "@TeslaNerdDE auf X (16.11., 14:33)",
-          "url": "https://x.com/TeslaNerdDE/status/2122322139126648990"
+          "title": "@tvorreyer auf X (16.11., 14:46)",
+          "url": "https://x.com/tvorreyer/status/2122325542892671357"
         },
         {
-          "title": "@OverlyTrev auf X (16.11., 14:26)",
-          "url": "https://x.com/OverlyTrev/status/2122320528581239194"
+          "title": "@MentoviaX auf X (16.11., 14:48)",
+          "url": "https://x.com/MentoviaX/status/2122325979288805665"
         },
         {
-          "title": "@wickedstocks auf X (16.11., 14:22)",
-          "url": "https://x.com/wickedstocks/status/2122319469074579603"
+          "title": "@PNN_de auf X (16.11., 14:48)",
+          "url": "https://x.com/PNN_de/status/2122325822875013379"
         }
       ],
-      "updatedAt": "2026-11-16T14:35:00+01:00"
+      "updatedAt": "2026-11-16T14:52:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/Early_Catalyst/status/2122311834313338995"
         }
       ],
-      "updatedAt": "2026-11-16T13:58:00+01:00"
+      "updatedAt": "2026-11-16T14:52:00+01:00"
     }
   }
 }
