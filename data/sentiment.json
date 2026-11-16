@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T08:23:00+01:00",
+  "updatedAt": "2026-11-16T08:43:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -26,24 +26,24 @@
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 15,
+      "score": 5,
       "postsCount": 25,
-      "reason": "Koreas Pensionsfonds hält so viele Tesla-Aktien wie nie, Morgan Stanley hebt die Robotaxi-Prognose; vorbörslich leicht im Minus, dazu Sicherheitsvorwürfe.",
+      "reason": "Ärger über Musks Post: Einige werfen ihm vor, den Tesla-Kurs vor einer SpaceX-Fusion zu drücken; MKBHDs Cybercab-Bestellung und das 299-$-Abo werden diskutiert.",
       "sources": [
+        {
+          "title": "@djaym7x auf X (16.11., 08:40)",
+          "url": "https://x.com/djaym7x/status/2122233392385413279"
+        },
+        {
+          "title": "@NeoTSX auf X (16.11., 08:38)",
+          "url": "https://x.com/NeoTSX/status/2122232725491089651"
+        },
         {
           "title": "@Tslachan auf X (16.11., 08:03)",
           "url": "https://x.com/Tslachan/status/2122224037627879928"
-        },
-        {
-          "title": "@SuperMariossss auf X (16.11., 07:34)",
-          "url": "https://x.com/SuperMariossss/status/2122216710690295869"
-        },
-        {
-          "title": "@QuantAlphaXXX auf X (16.11., 08:08)",
-          "url": "https://x.com/QuantAlphaXXX/status/2122225169129177294"
         }
       ],
-      "updatedAt": "2026-11-16T08:11:00+01:00"
+      "updatedAt": "2026-11-16T08:43:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
