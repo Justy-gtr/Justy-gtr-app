@@ -1,37 +1,80 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-13-rklb",
-    "date": "2026-11-13",
-    "question": "Schließt RKLB am Montag, 16. November, an der Nasdaq höher als am Freitag (61,53 $)?",
-    "karlAnswer": "ja",
-    "karlReason": "Knapp „ja“, etwa 55 zu 45. Am Wochenende kommen zwei Ereignisse, die Raumfahrtwerten helfen können: der 100. Electron-Start am Sa ab 06:30 Berlin (Rocket Lab) und Starship Flight 15 heute um 23:45, für den die FAA am Abend die Lizenz erteilt hat (Seeking Alpha). Nach −4,0 % am Freitag liegt RKLB nachbörslich bei 60,83 $ (Yahoo). Dagegen: Der Chip- und KI-Ausverkauf nach Huangs Rücktritt ist nicht vorbei, die zehnjährige US-Rendite steht bei 5,15 %, und Nvidia legt erst am Di 17.11. Zahlen vor (Yahoo, Reuters). Scheitert einer der Starts, kippt die Frage eher zu „nein“.",
+    "id": "2026-11-16-rklb",
+    "date": "2026-11-16",
+    "question": "Schließt RKLB am Dienstag, 17. November, an der Nasdaq höher als am Montag (57,37 $)?",
+    "karlAnswer": "nein",
+    "karlReason": "Knapp „nein“, etwa 45 zu 55. RKLB hat vier Tage in Folge verloren (von 66,15 auf 57,37 $), nachbörslich um 22:10 kaum verändert bei 57,34 $ (Yahoo). Dafür spricht: Nach dem Rückgang ist eine Gegenbewegung möglich, und eine schlechte Rocket-Lab-Nachricht gibt es nicht (Benzinga). Dagegen: Der Tech-Ausverkauf vor Nvidias Zahlen (Di nach US-Schluss) und dem Anthropic-Börsengang läuft weiter, die Nasdaq-Futures stehen tiefer, am Di 14:30 kommen die US-Einzelhandelsumsätze (dpa-AFX, Yahoo). Karl lag zuletzt mit „ja“ dreimal daneben.",
     "outcome": null,
-    "resolvesAt": "2026-11-16T22:15:00+01:00",
+    "resolvesAt": "2026-11-17T22:15:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: RKLB (Schluss 13.11. 61,53 $, Nachbörse)",
+        "title": "Yahoo Finance: RKLB (Schluss 16.11. 57,37 $, Nachbörse)",
         "url": "https://finance.yahoo.com/quote/RKLB/"
       },
       {
-        "title": "Rocket Lab: The Mountain God Rises",
-        "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        "title": "Yahoo Finance: RKLB-Historie (Schluss 16.11. 57,37 $, 13.11. 61,53 $)",
+        "url": "https://finance.yahoo.com/quote/RKLB/history/"
       },
       {
-        "title": "@RocketLab: Übertragung Sa 04:30 UTC, Fenster 05:30 UTC (13.11., 20:21)",
-        "url": "https://x.com/RocketLab/status/2121322570364670251"
+        "title": "Benzinga: Warum fällt Rocket Lab am Montag? (Vulcan-Fehlstart, Kursziele)",
+        "url": "https://www.benzinga.com/news/space/26/11/63280714/why-is-rocket-lab-stock-falling-monday"
       },
       {
-        "title": "Seeking Alpha: FAA erteilt geänderte Lizenz VOL 23-129 Rev. 10 für einen Flight-15-Start (13.11.)",
-        "url": "https://seekingalpha.com/news/4672602-faa-revises-spacex-starship-license-authorizes-single-flight-15-launch"
+        "title": "dpa-AFX via Yahoo: Aktien New York – Tech-Ausverkauf geht weiter, Warten auf Nvidia und Anthropic (16.11.)",
+        "url": "https://de.finance.yahoo.com/nachrichten/aktien-new-york-tech-ausverkauf-191345003.html"
       },
       {
-        "title": "Reuters via Euronext: Aktien fallen mit Tech, Dollar auf 19-Monats-Hoch (13.11.)",
-        "url": "https://live.euronext.com/en/financial-news/stocks-fall-tech-nvidia-concerns-us-dollar-climbs"
+        "title": "Yahoo Finance: Nasdaq-100-Futures NQ=F (16.11., 22:03)",
+        "url": "https://finance.yahoo.com/quote/NQ%3DF"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-13-rklb",
+      "date": "2026-11-13",
+      "question": "Schließt RKLB am Montag, 16. November, an der Nasdaq höher als am Freitag (61,53 $)?",
+      "karlAnswer": "ja",
+      "karlReason": "Knapp „ja“, etwa 55 zu 45. Am Wochenende kommen zwei Ereignisse, die Raumfahrtwerten helfen können: der 100. Electron-Start am Sa ab 06:30 Berlin (Rocket Lab) und Starship Flight 15 heute um 23:45, für den die FAA am Abend die Lizenz erteilt hat (Seeking Alpha). Nach −4,0 % am Freitag liegt RKLB nachbörslich bei 60,83 $ (Yahoo). Dagegen: Der Chip- und KI-Ausverkauf nach Huangs Rücktritt ist nicht vorbei, die zehnjährige US-Rendite steht bei 5,15 %, und Nvidia legt erst am Di 17.11. Zahlen vor (Yahoo, Reuters). Scheitert einer der Starts, kippt die Frage eher zu „nein“. Ergebnis: RKLB schloss am Mo bei 57,37 $, 6,8 % unter den 61,53 $ vom Freitag (Yahoo, ChartExchange). Karls „ja“ lag daneben: Der Electron-Start und der Starship-Fang halfen nicht – der Tech- und Chip-Ausverkauf vor Nvidias Zahlen und der Vulcan-Fehlstart von ULA zogen Raumfahrtwerte nach unten (Benzinga).",
+      "outcome": "nein",
+      "resolvesAt": "2026-11-16T22:15:00+01:00",
+      "sources": [
+        {
+          "title": "Yahoo Finance: RKLB (Schluss 13.11. 61,53 $, Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "title": "Rocket Lab: The Mountain God Rises",
+          "url": "https://rocketlabcorp.com/missions/launches/iqps-the-mountain-god-rises/"
+        },
+        {
+          "title": "@RocketLab: Übertragung Sa 04:30 UTC, Fenster 05:30 UTC (13.11., 20:21)",
+          "url": "https://x.com/RocketLab/status/2121322570364670251"
+        },
+        {
+          "title": "Seeking Alpha: FAA erteilt geänderte Lizenz VOL 23-129 Rev. 10 für einen Flight-15-Start (13.11.)",
+          "url": "https://seekingalpha.com/news/4672602-faa-revises-spacex-starship-license-authorizes-single-flight-15-launch"
+        },
+        {
+          "title": "Reuters via Euronext: Aktien fallen mit Tech, Dollar auf 19-Monats-Hoch (13.11.)",
+          "url": "https://live.euronext.com/en/financial-news/stocks-fall-tech-nvidia-concerns-us-dollar-climbs"
+        },
+        {
+          "title": "Yahoo Finance: RKLB Schluss 16.11. (57,37 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        },
+        {
+          "title": "ChartExchange: RKLB Schluss 16.11. 57,37 $ (−6,76 %), nachbörslich 57,52 $",
+          "url": "https://chartexchange.com/symbol/nasdaq-rklb/historical/"
+        },
+        {
+          "title": "Benzinga: Warum fällt Rocket Lab am Montag? (Vulcan-Fehlstart, Kursziele)",
+          "url": "https://www.benzinga.com/news/space/26/11/63280714/why-is-rocket-lab-stock-falling-monday"
+        }
+      ]
+    },
     {
       "id": "2026-11-12-rklb",
       "date": "2026-11-12",

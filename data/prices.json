@@ -6852,10 +6852,10 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Mo 20:15: SPCX hält sich fast stabil – in New York 138,47 $, 0,5 % unter dem Freitagsschluss von 139,11 $; Xetra schloss bei 124,52 € (−0,7 %), während der Nasdaq Composite 2,3 % und der Chipindex SOX 4,5 % verlieren (Yahoo). Stütze ist der erste Schiffsfang von Starship: Mehrere Banken loben ihn als großen Schritt zur Wiederverwendung, Bank of America hebt das Kursziel von 235 auf 275 $, Citi von 240 auf 280 $ (CNBC, StockAnalysis, MarketWatch).",
+      "why": "US-Schluss Mo: SPCX schließt bei 137,36 $, 1,3 % unter dem Freitag (139,11 $); Xetra schloss bei 124,52 € (−0,7 %) (Yahoo). Laut dpa-AFX verlor SpaceX „trotz guter Nachrichten“ – der erste Fang der Starship-Oberstufe gilt Analysten als Meilenstein, Bank of America und Citi hoben ihre Kursziele (dpa-AFX, CNBC). Der Tech-Ausverkauf war stärker: Nasdaq Composite −2,5 %, Chipindex SOX −5,3 % (Yahoo).",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX (16.11., 20:15)",
+          "title": "Yahoo Finance: SPCX (Schluss 16.11. 137,36 $)",
           "url": "https://finance.yahoo.com/quote/SPCX"
         },
         {
@@ -6863,24 +6863,20 @@
           "url": "https://finance.yahoo.com/quote/SPX.DE"
         },
         {
-          "title": "Yahoo Finance: Nasdaq Composite (16.11., 20:15)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC"
-        },
-        {
-          "title": "Yahoo Finance: PHLX Semiconductor SOX (16.11., 20:15)",
-          "url": "https://finance.yahoo.com/quote/%5ESOX"
+          "title": "dpa-AFX via Yahoo: Aktien New York – Tech-Ausverkauf geht weiter, Warten auf Nvidia und Anthropic (16.11.)",
+          "url": "https://de.finance.yahoo.com/nachrichten/aktien-new-york-tech-ausverkauf-191345003.html"
         },
         {
           "title": "CNBC: Analysten begeistert vom Starship-Fang (16.11.)",
           "url": "https://www.cnbc.com/2026/11/16/analysts-are-awed-by-spacexs-starship-catch-heres-why-.html"
         },
         {
-          "title": "StockAnalysis: SPCX-Analystenurteile (u. a. BofA 235 → 275 $, Citi 240 → 280 $, 16.11.)",
-          "url": "https://stockanalysis.com/stocks/spcx/ratings/"
+          "title": "Yahoo Finance: Nasdaq Composite (Schluss 16.11.)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC"
         },
         {
-          "title": "MarketWatch via Morningstar: SpaceX baut Vorsprung aus, Tech-Ausverkauf drückt die Aktie (16.11.)",
-          "url": "https://www.morningstar.com/news/marketwatch/2026111660/spacex-widens-its-lead-in-the-space-race-even-as-a-tech-selloff-weighs-on-its-stock"
+          "title": "Yahoo Finance: PHLX Semiconductor SOX (Schluss 16.11.)",
+          "url": "https://finance.yahoo.com/quote/%5ESOX"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -20326,10 +20322,10 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Mo 20:15: Tesla fällt – in New York 377,72 $, 3,2 % unter dem Freitagsschluss von 390,22 $; Xetra schloss bei 346,20 € (−2,1 %) (Yahoo). Der Tech-Ausverkauf überdeckt die Cybercab-Nachrichten (3 Mrd. € für eine Halle in Grünheide, Verkauf an Privatkunden); Investing.com nennt zudem Sorge über die hohen Investitionen und die Angst vor einer Zinserhöhung im Dezember (Investing.com, TechCrunch). Der Nasdaq Composite liegt 2,3 % im Minus (Yahoo).",
+      "why": "US-Schluss Mo: Tesla schließt bei 379,74 $, 2,7 % unter dem Freitag (390,22 $); Xetra schloss bei 346,20 € (−2,1 %) (Yahoo). Der Tech-Ausverkauf und Zinssorgen überdecken die Cybercab-Nachrichten (3 Mrd. € für Grünheide, Verkauf an ausgewählte Privatkunden für 29.990 $); Investing.com nennt auch die hohen Investitionen. JPMorgan bleibt bei „Neutral“ und 430 $, nennt den Privatverkauf aber eine „frühe Bestätigung“ der Robotaxi-Pläne (Investing.com, Yahoo Finance).",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA (16.11., 20:15)",
+          "title": "Yahoo Finance: TSLA (Schluss 16.11. 379,74 $)",
           "url": "https://finance.yahoo.com/quote/TSLA"
         },
         {
@@ -20341,11 +20337,11 @@
           "url": "https://www.investing.com/news/stock-market-news/why-is-tesla-stock-sliding-today-93CH-5030404"
         },
         {
-          "title": "TechCrunch: Tesla setzt mit 3 Mrd. € in Grünheide voll auf das Cybercab (16.11.)",
-          "url": "https://techcrunch.com/2026/11/16/tesla-goes-all-in-on-the-cybercab-with-upcoming-e3b-berlin-gigafactory-expansion/"
+          "title": "Yahoo Finance: JPMorgan – Cybercab-Verkauf an Privatkunden ist „frühe Bestätigung“ (16.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/article/teslas-cybercab-sales-to-the-public-is-early-validation-of-robotaxi-push-jpmorgan-says-192114709.html"
         },
         {
-          "title": "Yahoo Finance: Nasdaq Composite (16.11., 20:15)",
+          "title": "Yahoo Finance: Nasdaq Composite (Schluss 16.11.)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC"
         }
       ],
@@ -31957,14 +31953,18 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Mo 20:15: Rocket Lab fällt deutlich – in New York 57,83 $, 6,0 % unter dem Freitagsschluss von 61,53 $; Stuttgart 52,20 € (−6,3 %) (Yahoo). Raumfahrtwerte fallen mit dem Tech-Ausverkauf und nach dem Vulcan-Fehlstart von ULA am So; eine eigene neue Rocket-Lab-Meldung gibt es nicht, die Kursziele wurden aber letzte Woche gesenkt (Benzinga, Yahoo Finance). Damit läuft die Tagesfrage (Schluss über 61,53 $?) Richtung „nein“ – entschieden wird um 22:15.",
+      "why": "US-Schluss Mo: Rocket Lab schließt bei 57,37 $, 6,8 % unter dem Freitag (61,53 $) – der vierte Verlusttag in Folge; Stuttgart 52,00 € (−6,6 %) (Yahoo, ChartExchange). Raumfahrtwerte fielen mit dem Tech-Ausverkauf und nach dem Vulcan-Fehlstart von ULA am So; eine eigene neue Rocket-Lab-Meldung gab es nicht, die Kursziele wurden letzte Woche gesenkt (Benzinga). Damit ist die Tagesfrage (Schluss über 61,53 $?) mit „nein“ entschieden.",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB (16.11., 20:15)",
-          "url": "https://finance.yahoo.com/quote/RKLB"
+          "title": "Yahoo Finance: RKLB-Historie (Schluss 16.11. 57,37 $, 13.11. 61,53 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
         },
         {
-          "title": "Yahoo Finance: 6RJ0.SG (16.11., 19:47)",
+          "title": "ChartExchange: RKLB Schluss 16.11. 57,37 $ (−6,76 %), nachbörslich 57,52 $",
+          "url": "https://chartexchange.com/symbol/nasdaq-rklb/historical/"
+        },
+        {
+          "title": "Yahoo Finance: 6RJ0.SG (16.11., 21:55)",
           "url": "https://finance.yahoo.com/quote/6RJ0.SG"
         },
         {
@@ -31972,12 +31972,8 @@
           "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63295932/rocket-lab-firefly-ast-spacemobile-stocks-drop-whats-going-on-with-space-stocks-monday"
         },
         {
-          "title": "Yahoo Finance: ASTS, RKLB, LUNR und FLY fallen nach ULA-Fehlstart (16.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/asts-rklb-lunr-fly-fall-055834650.html"
-        },
-        {
-          "title": "Benzinga via TradingView: Warum fällt Rocket Lab am Montag? (Kursziele MS 103 $, Needham 100 $, Piper 58 $)",
-          "url": "https://www.tradingview.com/news/benzinga:f0790590a094b:0-why-is-rocket-lab-stock-falling-monday/"
+          "title": "Benzinga: Warum fällt Rocket Lab am Montag? (Vulcan-Fehlstart, Kursziele)",
+          "url": "https://www.benzinga.com/news/space/26/11/63280714/why-is-rocket-lab-stock-falling-monday"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -44586,10 +44582,10 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Mo 20:15: Marvell fällt – in New York 147,21 $, 6,1 % unter dem Freitagsschluss von 156,76 $; Xetra schloss bei 134,80 € (−3,3 %) (Yahoo). Der Chip-Ausverkauf vor Nvidias Zahlen am Di geht weiter: Intel, Marvell, Micron und Arm verlieren jeweils mehr als 7 %, Nvidia rund 4 %, der Chipindex SOX 4,5 %; dazu kommen Zinssorgen (Investopedia, dpa-AFX, Yahoo). Marvell-Zahlen am Di 1.12. (Marvell).",
+      "why": "US-Schluss Mo: Marvell schließt bei 145,36 $, 7,3 % unter dem Freitag (156,76 $); Xetra schloss bei 134,80 € (−3,3 %) (Yahoo). Der Chip-Ausverkauf vor Nvidias Zahlen am Di ging weiter (SOX −5,3 %, Nvidia −4,1 %); dazu belastet laut WSJ-Bericht, dass Nvidia-Interimschefin Kress die Finanzierung der KI-Branche bremsen will – Nvidia ist an Marvell beteiligt –, und die geplante Lumentum-Übernahme mit eigenen Aktien verwässert (GuruFocus, Motley Fool). Marvell-Zahlen am Di 1.12. (Marvell).",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL (16.11., 20:15)",
+          "title": "Yahoo Finance: MRVL (Schluss 16.11. 145,36 $)",
           "url": "https://finance.yahoo.com/quote/MRVL"
         },
         {
@@ -44597,20 +44593,20 @@
           "url": "https://finance.yahoo.com/quote/9MW.DE"
         },
         {
-          "title": "Investopedia: Indizes fallen, KI-Werte sinken, Nvidia-Ausverkauf vor den Zahlen (16.11., 19:50 Berlin)",
-          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11162026-12257790"
-        },
-        {
-          "title": "dpa-AFX via Investing.com: Aktien New York – Tech-Werte bleiben unter Druck (16.11., 17:00)",
-          "url": "https://de.investing.com/news/stock-market-news/roundupaktien-new-york-techwerte-bleiben-unter-druck-3770922"
-        },
-        {
-          "title": "Yahoo Finance: PHLX Semiconductor SOX (16.11., 20:15)",
+          "title": "Yahoo Finance: PHLX Semiconductor SOX (Schluss 16.11.)",
           "url": "https://finance.yahoo.com/quote/%5ESOX"
         },
         {
-          "title": "Yahoo Finance: NVDA (16.11., 20:15)",
+          "title": "Yahoo Finance: NVDA (Schluss 16.11. 156,14 $)",
           "url": "https://finance.yahoo.com/quote/NVDA"
+        },
+        {
+          "title": "GuruFocus via Yahoo: Marvell −6,88 % nach Bericht über Nvidias Finanzierungsbremse (16.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-stocks-slide-6-88-175145051.html"
+        },
+        {
+          "title": "Motley Fool: Warum Marvell heute fällt (16.11.)",
+          "url": "https://www.fool.com/investing/2026/11/16/why-marvell-stock-is-down-today/"
         },
         {
           "title": "Marvell: Telefonkonferenz zum 3. Quartal (1.12.)",
