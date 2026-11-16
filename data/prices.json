@@ -5112,18 +5112,14 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Mo 13:00: SPCX hält sich gegen den schwachen Tech-Markt – auf Xetra 127,30 € (13:01), 1,6 % über dem Xetra-Schluss vom Freitag, in Frankfurt 127,82 € (+0,3 %), vorbörslich in den USA 139,57 $ (+0,3 %) (Yahoo). Rückenwind ist der erste Fang eines Starship-Oberteils (Ship 42) nach dem Flug ins All am Sa (SpaceX); Pivotal Research bestätigt danach „Buy“ mit 260 $ Kursziel (Investing.com). Dazu kommt die Debatte, ob SpaceX bei einer Fusion mit Tesla dessen Platz im S&P 500 bekommen könnte (Yahoo Finance). Neue Firmenmeldungen bei der SEC gibt es heute nicht (EDGAR). Der Dax tritt bei rund 26.720 Punkten auf der Stelle, weil Anleger auf die Nvidia-Zahlen am Di warten; Chipwerte aus Asien drücken Tech (aktiencheck.de, dpa-AFX). Die Nasdaq-100-Futures liegen um 13:09 Berlin 1,4 % im Minus (Yahoo).",
+      "why": "Stand Mo 14:15: SPCX hält sich gegen den schwachen Tech-Markt – auf Xetra 126,10 € (14:02), 0,6 % über dem Freitag, vorbörslich in den USA 139,00 $, fast unverändert zum Freitagsschluss von 139,11 $ (Yahoo). Stütze ist der erste Fang eines Starship-Oberteils am Sa (SpaceX): Citi hebt danach das Kursziel von 240 auf 280 $ und hebt die Schätzungen für Q4 und das erste Halbjahr 2027 an, vor allem für die KI-Sparte (Investing.com); Pivotal bleibt bei „Buy“ mit 260 $. Neue SEC-Meldungen konnte ich nicht prüfen, EDGAR blockt den Abruf. Die Nasdaq-100-Futures liegen um 14:09 Berlin 1,2 % im Minus, der Dax tritt bei rund 26.720 Punkten auf der Stelle (Yahoo). Reuters nennt als Grund den Chip- und KI-Ausverkauf vor den Nvidia-Zahlen am Di und dem Anthropic-Börsengang am Do.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPX.DE (16.11., 13:01)",
+          "title": "Yahoo Finance: SPX.DE (16.11., 14:02)",
           "url": "https://finance.yahoo.com/quote/SPX.DE"
         },
         {
-          "title": "Yahoo Finance: SPX.F (16.11., 12:59)",
-          "url": "https://finance.yahoo.com/quote/SPX.F"
-        },
-        {
-          "title": "Yahoo Finance: SPCX vorbörslich (16.11., 13:18)",
+          "title": "Yahoo Finance: SPCX (16.11., 14:18)",
           "url": "https://finance.yahoo.com/quote/SPCX"
         },
         {
@@ -5131,28 +5127,24 @@
           "url": "https://www.spacex.com/launches/starship-flight-15/"
         },
         {
-          "title": "Investing.com: Pivotal Research bestätigt SpaceX mit „Buy“ und 260 $ (16.11.)",
-          "url": "https://www.investing.com/news/analyst-ratings/pivotal-research-reiterates-spacex-stock-rating-on-reusable-rocket-progress-93CH-5029016"
+          "title": "Investing.com: Citi hebt SpaceX-Kursziel auf 280 $ (16.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/citi-raises-spacex-stock-price-target-on-starship-progress-93CH-5029136"
         },
         {
-          "title": "Yahoo Finance: TSLA und SPCX laufen über Nacht auseinander (16.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tsla-spcx-diverge-overnight-retail-083147590.html"
+          "title": "CNBC: Die großen Analystenurteile vom Montag (16.11.)",
+          "url": "https://www.cnbc.com/2026/11/16/big-monday-wall-street-calls-like-nvidia-spacex.html"
         },
         {
-          "title": "SEC EDGAR: Einreichungen SpaceX (CIK 1181412)",
-          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001181412&type=&dateb=&owner=include&count=40"
+          "title": "Yahoo Finance: NQ=F (16.11., 14:09)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF"
         },
         {
-          "title": "aktiencheck.de: DAX Check am Mittag (16.11., 12:59)",
-          "url": "https://aktiencheck.de/artikel/dax-check-am-mittag-rheinmetall-mtu-und-daimler-truck-vorn-siemens-symrise-und"
+          "title": "Yahoo Finance: ^GDAXI (16.11., 14:03)",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI"
         },
         {
-          "title": "finanznachrichten.de (dpa-AFX): Dax bleibt trotz Tech-Schwäche in Sichtweite des Rekordhochs (16.11., 11:58)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70140026-aktien-frankfurt-dax-bleibt-trotz-tech-schwaeche-in-sichtweite-des-rekordhochs-016.htm"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq-100-Futures NQ=F (16.11., 13:09)",
-          "url": "https://finance.yahoo.com/quote/NQ=F"
+          "title": "Reuters via Investing.com: S&P-500- und Nasdaq-Futures fallen vor Nvidia-Zahlen und Anthropic-Debüt (16.11.)",
+          "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-slide-as-nvidia-earnings-anthropic-debut-loom-5028900"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -17302,31 +17294,35 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Mo 13:00: Tesla gibt leicht nach – auf Xetra 351,50 € (13:00), 0,6 % unter dem Freitag, vorbörslich in den USA 386,05 $ (−1,1 %) (Yahoo). Eine eigene Kursnachricht fehlt; der Tech-Markt ist schwach. JPMorgan bleibt bei „Neutral“ mit 430 $ und zählt rund 1.306 Robotaxis in Texas, fast so viele wie Waymo (1.321) (Investing.com). Goldman Sachs bleibt bei „Neutral“ mit 360 $ (GMT Eight). Der Dax tritt bei rund 26.720 Punkten auf der Stelle, weil Anleger auf die Nvidia-Zahlen am Di warten; Chipwerte aus Asien drücken Tech (aktiencheck.de, dpa-AFX). Die Nasdaq-100-Futures liegen um 13:09 Berlin 1,4 % im Minus (Yahoo).",
+      "why": "Stand Mo 14:15: Tesla gibt leicht nach – auf Xetra 350,00 € (13:55), 1,0 % unter dem Freitag, vorbörslich in den USA 385,50 $ (−1,2 % zum Freitagsschluss von 390,22 $) (Yahoo). Eine eigene schlechte Nachricht gibt es nicht; nach der besten Woche seit Mai fehlt der Schwung, und der Tech-Markt ist schwach (Yahoo Finance). JPMorgan bleibt bei „Neutral“ mit 430 $, wird aber wegen der schnell wachsenden Robotaxi-Flotte und der ersten Cybercab-Verkäufe an Kunden zuversichtlicher (CNBC). Die Nasdaq-100-Futures liegen um 14:09 Berlin 1,2 % im Minus, der Dax tritt bei rund 26.720 Punkten auf der Stelle (Yahoo). Reuters nennt als Grund den Chip- und KI-Ausverkauf vor den Nvidia-Zahlen am Di und dem Anthropic-Börsengang am Do.",
       "whySources": [
         {
-          "title": "Yahoo Finance: TL0.DE (16.11., 13:00)",
+          "title": "Yahoo Finance: TL0.DE (16.11., 13:55)",
           "url": "https://finance.yahoo.com/quote/TL0.DE"
         },
         {
-          "title": "Yahoo Finance: TSLA vorbörslich (16.11., 13:18)",
+          "title": "Yahoo Finance: TSLA (16.11., 14:18)",
           "url": "https://finance.yahoo.com/quote/TSLA"
         },
         {
-          "title": "Investing.com: JPMorgan bestätigt Tesla mit „Neutral“ und 430 $ wegen Robotaxi-Fortschritt (16.11.)",
-          "url": "https://www.investing.com/news/analyst-ratings/jpmorgan-reiterates-tesla-stock-rating-on-robotaxi-progress-93CH-5028927"
+          "title": "Yahoo Finance: TSLA und SPCX laufen über Nacht auseinander (16.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/tsla-spcx-diverge-overnight-retail-083147590.html"
         },
         {
-          "title": "GMT Eight: Goldman Sachs bleibt bei Tesla „Neutral“, Ziel 360 $ (16.11.)",
-          "url": "https://gmteight.com/flash/detail/1569605"
+          "title": "CNBC: Die großen Analystenurteile vom Montag (16.11.)",
+          "url": "https://www.cnbc.com/2026/11/16/big-monday-wall-street-calls-like-nvidia-spacex.html"
         },
         {
-          "title": "aktiencheck.de: DAX Check am Mittag (16.11., 12:59)",
-          "url": "https://aktiencheck.de/artikel/dax-check-am-mittag-rheinmetall-mtu-und-daimler-truck-vorn-siemens-symrise-und"
+          "title": "Yahoo Finance: NQ=F (16.11., 14:09)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF"
         },
         {
-          "title": "Yahoo Finance: Nasdaq-100-Futures NQ=F (16.11., 13:09)",
-          "url": "https://finance.yahoo.com/quote/NQ=F"
+          "title": "Yahoo Finance: ^GDAXI (16.11., 14:03)",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI"
+        },
+        {
+          "title": "Reuters via Investing.com: S&P-500- und Nasdaq-Futures fallen vor Nvidia-Zahlen und Anthropic-Debüt (16.11.)",
+          "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-slide-as-nvidia-earnings-anthropic-debut-loom-5028900"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -28521,31 +28517,39 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Mo 13:00: Rocket Lab fällt – in Stuttgart 53,70 € (13:02), 3,6 % unter dem Freitag, vorbörslich in den USA 59,44 $ (−3,4 %) (Yahoo). Hauptgrund laut Benzinga ist der Fehlstart der Vulcan-Rakete von ULA am So, der Raumfahrtwerte belastet – trotz des 100. Electron-Starts am Sa. Tiger Brokers nennt zusätzlich den schwachen Gewinn im 3. Quartal, gesenkte Kursziele (Morgan Stanley 103 $, Needham 100 $) und die offene Iridium-Übernahme. Der Dax tritt bei rund 26.720 Punkten auf der Stelle, weil Anleger auf die Nvidia-Zahlen am Di warten; Chipwerte aus Asien drücken Tech (aktiencheck.de, dpa-AFX). Die Nasdaq-100-Futures liegen um 13:09 Berlin 1,4 % im Minus (Yahoo).",
+      "why": "Stand Mo 14:15: Rocket Lab fällt – in Stuttgart 53,90 € (13:46), 3,2 % unter dem Freitag, vorbörslich in den USA 59,67 $ (−3,0 % zum Freitagsschluss von 61,53 $) (Yahoo). Hauptgrund ist der Fehlstart der Vulcan-Rakete von ULA am So mit 40 Amazon-Satelliten, der Raumfahrtwerte belastet – trotz des 100. Electron-Starts am Sa (Benzinga, Rocket Lab). Dazu wirken der schwache Gewinn im 3. Quartal und gesenkte Kursziele nach (Tiger Brokers). Die Nasdaq-100-Futures liegen um 14:09 Berlin 1,2 % im Minus, der Dax tritt bei rund 26.720 Punkten auf der Stelle (Yahoo). Reuters nennt als Grund den Chip- und KI-Ausverkauf vor den Nvidia-Zahlen am Di und dem Anthropic-Börsengang am Do.",
       "whySources": [
         {
-          "title": "Yahoo Finance: 6RJ0.SG (16.11., 13:02)",
+          "title": "Yahoo Finance: 6RJ0.SG (16.11., 13:46)",
           "url": "https://finance.yahoo.com/quote/6RJ0.SG"
         },
         {
-          "title": "Yahoo Finance: RKLB vorbörslich (16.11., 13:18)",
+          "title": "Yahoo Finance: RKLB (16.11., 14:17)",
           "url": "https://finance.yahoo.com/quote/RKLB"
         },
         {
-          "title": "Benzinga: Why Is Rocket Lab Stock Falling Monday? (16.11.)",
+          "title": "Benzinga: Warum Rocket Lab am Montag fällt (16.11.)",
           "url": "https://www.benzinga.com/news/space/26/11/63280714/why-is-rocket-lab-stock-falling-monday"
         },
         {
-          "title": "Tiger Brokers: Rocket Lab im Overnight-Handel −4,05 % (16.11.)",
+          "title": "Rocket Lab: 100 Electron-Starts (14.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-hits-100-electron-launches-fastest-commercial-rocket"
+        },
+        {
+          "title": "Tiger Brokers: RKLB über Nacht −4,05 % (16.11.)",
           "url": "https://www.itiger.com/news/1161374662"
         },
         {
-          "title": "aktiencheck.de: DAX Check am Mittag (16.11., 12:59)",
-          "url": "https://aktiencheck.de/artikel/dax-check-am-mittag-rheinmetall-mtu-und-daimler-truck-vorn-siemens-symrise-und"
+          "title": "Yahoo Finance: NQ=F (16.11., 14:09)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF"
         },
         {
-          "title": "Yahoo Finance: Nasdaq-100-Futures NQ=F (16.11., 13:09)",
-          "url": "https://finance.yahoo.com/quote/NQ=F"
+          "title": "Yahoo Finance: ^GDAXI (16.11., 14:03)",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI"
+        },
+        {
+          "title": "Reuters via Investing.com: S&P-500- und Nasdaq-Futures fallen vor Nvidia-Zahlen und Anthropic-Debüt (16.11.)",
+          "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-slide-as-nvidia-earnings-anthropic-debut-loom-5028900"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -39975,31 +39979,43 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Mo 13:00: Marvell fällt auf Xetra auf 134,10 € (13:01), 3,8 % unter dem Freitag (Yahoo). Grund ist der Chip-Ausverkauf nach Huangs Rücktritt bei Nvidia und dem Einbruch in Asien: Nvidia steht vorbörslich 3,5 % tiefer, UBS senkt das Nvidia-Ziel von 300 auf 240 $ (Yahoo, dpa-AFX bei MarketScreener). Infineon liegt in Frankfurt 1,1 % im Minus (Yahoo). Der Dax tritt bei rund 26.720 Punkten auf der Stelle, weil Anleger auf die Nvidia-Zahlen am Di warten; Chipwerte aus Asien drücken Tech (aktiencheck.de, dpa-AFX). Die Nasdaq-100-Futures liegen um 13:09 Berlin 1,4 % im Minus (Yahoo).",
+      "why": "Stand Mo 14:15: Marvell fällt deutlich – auf Xetra 134,08 € (14:01), 3,8 % unter dem Freitag, vorbörslich in den USA 147,38 $ (−6,0 % zum Freitagsschluss von 156,76 $) (Yahoo). Grund ist der breite Chip-Ausverkauf: Nvidia steht vorbörslich 3,5 % tiefer, AMD, Intel, Broadcom und Micron verlieren laut Reuters 3,5 bis 5 %, nachdem Asiens Chipwerte eingebrochen sind (Taiex rund −6 %). Commerzbank nennt die Führungskrise bei Nvidia als Haupttreiber (Invezz). Bei Marvell lastet zusätzlich die umstrittene Lumentum-Übernahme (Kalkine). Die Nasdaq-100-Futures liegen um 14:09 Berlin 1,2 % im Minus, der Dax tritt bei rund 26.720 Punkten auf der Stelle (Yahoo). Reuters nennt als Grund den Chip- und KI-Ausverkauf vor den Nvidia-Zahlen am Di und dem Anthropic-Börsengang am Do.",
       "whySources": [
         {
-          "title": "Yahoo Finance: 9MW.DE (16.11., 13:01)",
+          "title": "Yahoo Finance: 9MW.DE (16.11., 14:01)",
           "url": "https://finance.yahoo.com/quote/9MW.DE"
         },
         {
-          "title": "Yahoo Finance: NVDA vorbörslich (16.11., 13:19)",
+          "title": "Yahoo Finance: MRVL (16.11., 14:19)",
+          "url": "https://finance.yahoo.com/quote/MRVL"
+        },
+        {
+          "title": "Yahoo Finance: NVDA (16.11., 14:19)",
           "url": "https://finance.yahoo.com/quote/NVDA"
         },
         {
-          "title": "MarketScreener (dpa-AFX): UBS senkt Ziel für Nvidia auf 240 Dollar – „Buy“ (16.11.)",
-          "url": "https://de.marketscreener.com/boerse-nachrichten/ubs-senkt-ziel-fuer-nvidia-auf-240-dollar-buy-ce785edfd988f42d"
+          "title": "Invezz: Warum AMD und Broadcom vorbörslich fallen (16.11.)",
+          "url": "https://invezz.com/nz/news/2026/11/16/why-are-amd-and-broadcom-stocks-falling-in-premarket-trading-on-monday/"
         },
         {
-          "title": "Yahoo Finance: IFX.DE (16.11., 13:03)",
-          "url": "https://finance.yahoo.com/quote/IFX.DE"
+          "title": "NDTV Profit: Chipwerte fallen vor US-Börsenstart nach Asien-Ausverkauf (16.11.)",
+          "url": "https://www.ndtvprofit.com/markets/amd-micron-intel-sandisk-plunge-before-the-bell-why-ai-chip-stocks-are-under-pressure-12333767"
         },
         {
-          "title": "aktiencheck.de: DAX Check am Mittag (16.11., 12:59)",
-          "url": "https://aktiencheck.de/artikel/dax-check-am-mittag-rheinmetall-mtu-und-daimler-truck-vorn-siemens-symrise-und"
+          "title": "Kalkine: Lumentum-Deal lastet weiter auf Marvell (16.11.)",
+          "url": "https://kalkine.com/news/technology/what-investors-weigh-at-marvell-technology-nasdaqmrvl-as-the-lumentum-deal-overhang-persists"
         },
         {
-          "title": "Yahoo Finance: Nasdaq-100-Futures NQ=F (16.11., 13:09)",
-          "url": "https://finance.yahoo.com/quote/NQ=F"
+          "title": "Yahoo Finance: NQ=F (16.11., 14:09)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF"
+        },
+        {
+          "title": "Yahoo Finance: ^GDAXI (16.11., 14:03)",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI"
+        },
+        {
+          "title": "Reuters via Investing.com: S&P-500- und Nasdaq-Futures fallen vor Nvidia-Zahlen und Anthropic-Debüt (16.11.)",
+          "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-slide-as-nvidia-earnings-anthropic-debut-loom-5028900"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",
