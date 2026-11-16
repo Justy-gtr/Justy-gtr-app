@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T09:22:00+01:00",
+  "updatedAt": "2026-11-16T10:15:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
       "score": 25,
       "postsCount": 25,
-      "reason": "Morgan Stanley nennt den Schiffsfang historisch, viele warten gespannt auf den ersten Handelstag danach; Sorgen machen der verlorene Booster und hohe KI-Ausgaben.",
+      "reason": "Der Starship-Fang wird gefeiert und stärkt für viele die Bewertung; Kritik gibt es an der sehr hohen Bewertung und einer Starlink-Rüge in Südafrika.",
       "sources": [
         {
-          "title": "@xbyhunter auf X (16.11., 08:21)",
-          "url": "https://x.com/xbyhunter/status/2122228638787768544"
+          "title": "@financespotnews auf X (16.11., 10:13)",
+          "url": "https://x.com/financespotnews/status/2122256610491822250"
         },
         {
-          "title": "@QuantAlphaXXX auf X (16.11., 08:21)",
-          "url": "https://x.com/QuantAlphaXXX/status/2122228439339892961"
+          "title": "@mybroadband auf X (16.11., 10:06)",
+          "url": "https://x.com/mybroadband/status/2122254859101425676"
         },
         {
-          "title": "@spcxGOD auf X (16.11., 07:00)",
-          "url": "https://x.com/spcxGOD/status/2122208046541910476"
+          "title": "@ai_univarse auf X (16.11., 10:04)",
+          "url": "https://x.com/ai_univarse/status/2122254529349775836"
         }
       ],
-      "updatedAt": "2026-11-16T08:23:00+01:00"
+      "updatedAt": "2026-11-16T10:15:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -47,24 +47,24 @@
     },
     "RKLB": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 25,
-      "reason": "Die 100 Starts und Neutron werden gelobt, Rocket Lab gilt als stärkster SpaceX-Rivale; Adam Khoo zählt die Aktie aber zu gefallenen Blasen-Werten.",
+      "score": 25,
+      "postsCount": 20,
+      "reason": "Viele feiern den 100. Start und wollen die Aktie lange halten; andere erinnern daran, dass der Kurs noch weit unter dem alten Hoch liegt.",
       "sources": [
         {
-          "title": "@RCapitalX auf X (16.11., 07:07)",
-          "url": "https://x.com/RCapitalX/status/2122209913325920447"
+          "title": "@Jordan_Envesta auf X (16.11., 09:48)",
+          "url": "https://x.com/Jordan_Envesta/status/2122250318796714017"
         },
         {
-          "title": "@k2__investment auf X (16.11., 06:51)",
-          "url": "https://x.com/k2__investment/status/2122205997619900501"
+          "title": "@futureplz auf X (16.11., 09:31)",
+          "url": "https://x.com/futureplz/status/2122246110433653186"
         },
         {
-          "title": "@adamkhootrader auf X (16.11., 07:13)",
-          "url": "https://x.com/adamkhootrader/status/2122211383790227821"
+          "title": "@belbeleggers auf X (16.11., 08:52)",
+          "url": "https://x.com/belbeleggers/status/2122236226271089143"
         }
       ],
-      "updatedAt": "2026-11-16T08:11:00+01:00"
+      "updatedAt": "2026-11-16T10:15:00+01:00"
     }
   }
 }
