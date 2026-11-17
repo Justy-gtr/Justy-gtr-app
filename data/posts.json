@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-17T08:30:00+01:00",
+  "asOf": "2026-11-17T09:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,115 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2122601053111677107",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T09:01:41+01:00",
+      "summaryDe": "Musk teilt einen Beitrag von @XFreeze über seine Jugend: Als Teenager habe er in einer Sinnkrise Religion und Philosophie gelesen und dann in „Per Anhalter durch die Galaxis“ Antworten gefunden. Rückblick, keine Meldung.",
+      "originalText": "RT @XFreeze: As a teenager, Elon Musk went through an existential crisis, reading religion and philosophy in search of the meaning of life…",
+      "url": "https://x.com/elonmusk/status/2122601053111677107",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 09:01): Repost @XFreeze",
+          "url": "https://x.com/elonmusk/status/2122601053111677107"
+        },
+        {
+          "title": "Originalpost @XFreeze (17.11., 08:44)",
+          "url": "https://x.com/XFreeze/status/2122596768051548482"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122600952096280785",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T09:01:17+01:00",
+      "summaryDe": "Musk kommentiert mit „Cyber-Inception“ und teilt einen Beitrag, laut dem ein Musikvideo komplett mit dem Neuralink-Implantat von @Cyborg21 (Kenneth Shock, ALS-Patient) gemacht wurde. Werbung für Neuralink, keine neue Zahl.",
+      "originalText": "Cyber-Inception / RT @anabology: This video was made entirely using @Cyborg21's neuralink implant",
+      "url": "https://x.com/elonmusk/status/2122600952096280785",
+      "tickers": [],
+      "companies": [
+        "Neuralink"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 09:01): „Cyber-Inception“",
+          "url": "https://x.com/elonmusk/status/2122600952096280785"
+        },
+        {
+          "title": "@elonmusk auf X (17.11., 09:00): Repost @anabology",
+          "url": "https://x.com/elonmusk/status/2122600786404442130"
+        },
+        {
+          "title": "Originalpost @anabology (16.11., 18:30): Video mit Neuralink-Implantat",
+          "url": "https://x.com/anabology/status/2122381867512918510"
+        },
+        {
+          "title": "@Cyborg21 auf X (02.11.): Musikvideo „ALLOW ALWAYS“",
+          "url": "https://x.com/Cyborg21/status/2117044016621748292"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122600656267821308",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T09:00:07+01:00",
+      "summaryDe": "Musk teilt ein kurzes Video von @paranoidream („Find me when you wake up“), das auf seinen Post zu „Edge of Tomorrow“ und Superintelligenz antwortet. Kunst/Humor, keine Meldung.",
+      "originalText": "RT @paranoidream: Find me when you wake up. [Video]",
+      "url": "https://x.com/elonmusk/status/2122600656267821308",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 09:00): Repost @paranoidream",
+          "url": "https://x.com/elonmusk/status/2122600656267821308"
+        },
+        {
+          "title": "Originalpost @paranoidream (17.11., 07:30)",
+          "url": "https://x.com/paranoidream/status/2122578000487256086"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122598090280521936",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T08:49:55+01:00",
+      "summaryDe": "Nachdem ein Nutzer gemeldet hatte, dass das X-Konto von Jensen Huang den blauen Haken und das Nvidia-Abzeichen verloren hat, antwortet Musk: Der blaue Haken komme zurück, „kostenlos, aufs Haus“. Geste an den früheren Nvidia-Chef vor den Nvidia-Zahlen heute Abend, keine Firmenmeldung.",
+      "originalText": "@TeslaBoomerMama Blue check coming back for free on the house",
+      "url": "https://x.com/elonmusk/status/2122598090280521936",
+      "tickers": [],
+      "companies": [
+        "Nvidia",
+        "X"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 08:49): „Blue check coming back for free“",
+          "url": "https://x.com/elonmusk/status/2122598090280521936"
+        },
+        {
+          "title": "Zitierter Post @Tslachan (17.11., 05:55): Huang verliert blauen Haken",
+          "url": "https://x.com/Tslachan/status/2122554209577152999"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2122593416215224343",
       "account": "@elonmusk",
