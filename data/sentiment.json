@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-17T13:16:00+01:00",
+  "updatedAt": "2026-11-17T14:12:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,49 +22,49 @@
           "url": "https://x.com/CaesarCapitalz/status/2122652220344676445"
         }
       ],
-      "updatedAt": "2026-11-17T13:16:00+01:00"
+      "updatedAt": "2026-11-17T14:12:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 30,
       "postsCount": 25,
-      "reason": "Barclays bleibt bei Overweight (450 $) wegen Robotaxi; laut 13F hat Viking Global seine Tesla-Aktien mehr als vervierfacht. Kritiker sehen schwache Gewinne.",
+      "reason": "Fusion mit SpaceX gilt als immer wahrscheinlicher (Wettmarkt Kalshi 62 %); Barclays bleibt bei 450 $, Cybercab-Halle in Grünheide. Kritiker sehen schwache Gewinne.",
       "sources": [
+        {
+          "title": "@joehansen auf X (17.11., 14:08)",
+          "url": "https://x.com/joehansen/status/2122678138232872977"
+        },
         {
           "title": "@Livermore_Club auf X (17.11., 13:10)",
           "url": "https://x.com/Livermore_Club/status/2122663614222111194"
         },
         {
-          "title": "@AIStockSavvy auf X (17.11., 12:49)",
-          "url": "https://x.com/AIStockSavvy/status/2122658419605942656"
-        },
-        {
-          "title": "@NeoTSX auf X (17.11., 12:38)",
-          "url": "https://x.com/NeoTSX/status/2122655617416565083"
+          "title": "@AIRoboticsInt auf X (17.11., 14:08)",
+          "url": "https://x.com/AIRoboticsInt/status/2122678346450612477"
         }
       ],
-      "updatedAt": "2026-11-17T13:16:00+01:00"
+      "updatedAt": "2026-11-17T14:12:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": 20,
       "postsCount": 17,
-      "reason": "Erfolgreicher Start von QPS-SAR-19, dazu Hinweis auf über 1 Mrd. $ neue Aufträge im Q3. Citadels Einstieg wird diskutiert; Neutron-Verschiebung bleibt Thema.",
+      "reason": "Electron schafft den 100. Start, dazu über 1 Mrd. $ neue Aufträge im Q3 und Citadels Einstieg. Die Bewertung hängt laut vielen aber an der verschobenen Neutron.",
       "sources": [
+        {
+          "title": "@aktiennews_com auf X (17.11., 14:00)",
+          "url": "https://x.com/aktiennews_com/status/2122676137075659164"
+        },
         {
           "title": "@Fiscal_ai auf X (17.11., 13:01)",
           "url": "https://x.com/Fiscal_ai/status/2122661299478028421"
-        },
-        {
-          "title": "@ICR_AT_UNIVERSE auf X (17.11., 12:50)",
-          "url": "https://x.com/ICR_AT_UNIVERSE/status/2122658513629675926"
         },
         {
           "title": "@AlphaOwlTrading auf X (17.11., 12:06)",
           "url": "https://x.com/AlphaOwlTrading/status/2122647518773162008"
         }
       ],
-      "updatedAt": "2026-11-17T13:16:00+01:00"
+      "updatedAt": "2026-11-17T14:12:00+01:00"
     }
   }
 }
