@@ -10,6 +10,7 @@ import { appBase, berlinClockText, CHART_RANGES, isInAppUrl, loadStore, markTabS
 import { playLiftoff, tickCountdown } from "./motion.js";
 import { initNav } from "./nav.js";
 import { initPull } from "./pull.js";
+import { initTraining } from "./replay-ui.js";
 import { detailContent, errorDetail, glossaryList, renderChartsPage, renderShell } from "./views.js";
 
 const ui = {
@@ -106,6 +107,7 @@ async function pullPrices() {
 }
 
 const knockout = initKnockout({ getData: () => data });
+const training = initTraining();
 const pager = document.getElementById("pager");
 function paintDots() {
   const unread = data ? unreadTabs(data, store) : {};
@@ -192,6 +194,7 @@ function render() {
     tickCountdown();
     try { eggs.afterRender(data); } catch { /* Überraschung ist Beiwerk. */ }
     try { knockout.sync(); } catch { /* Rechner bleibt zu, die Seite nicht. */ }
+    try { training.sync(); } catch { /* Training bleibt, die Seite nicht. */ }
   });
 }
 

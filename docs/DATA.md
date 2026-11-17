@@ -683,6 +683,22 @@ Xetra-Namen mit großem Auf und Ab am Morgen, die bei Trade Republic Long- und S
 
 `morning` ist die Morgen-Schwankung: je Xetra-Tag `(Hoch − Tief) / Eröffnung` in Prozent, nur Kerzen von 09:00 bis vor 10:30 Uhr Berlin, aus den 15-Minuten-Kursen des letzten Monats. Der Mittelwert, der größte Tag und `n` nehmen die letzten höchstens 21 fertigen Sitzungen. Der noch laufende Morgen zählt nicht. `sparkline` und `intraday` sind der letzte Handelstag in 5 Minuten. Die Seite sortiert nach `avgPct`, der größte Morgen oben. Die Wörter „kaufen“, „verkaufen“, „Empfehlung“ und „Anlageberatung“ stehen hier nicht. Eine Beispiel-ISIN kann nach dem Knock-out weg sein.
 
+## `replay/index.json`
+
+Archiv für den Training-Tab (Rückspiel). Kein Kurs-Workflow-Feld und keine redaktionellen `sources`. `scripts/fetch-replay.mjs` schreibt `data/replay/index.json` und je Tag `data/replay/<SYMBOL>/<YYYY-MM-DD>.json`.
+
+Der Lauf ist anhängbar: ein vorhandener Tag mit voller Sitzung bleibt stehen. Neu geschrieben werden fehlende Tage und die letzten zwei Berliner Tage, weil die letzte Sitzung beim ersten Lauf noch unvollständig sein kann. Yahoo liefert etwa 60 Tage 5-Minuten-Kerzen (`includePrePost`). Ältere Dateien im Ordner bleiben im Index, solange die Datei liegt. Ein Lauf am Tag reicht. Der Fünf-Minuten-Kursjob soll das Archiv nicht anfassen. Aufruf, zum Beispiel einmal nach 22:00 Berlin:
+
+```bash
+node scripts/fetch-replay.mjs
+```
+
+`--dry-run` schreibt nichts. `--symbol TSLA` begrenzt auf ein Papier.
+
+`b` ist eine Liste `[Minute, Open, High, Low, Close, Umsatz]`. Die Minute ist Berlin, ab Mitternacht, von 08:00 bis vor 22:00. Preise in US-Dollar. Umsatz `0` ist ein Druck ohne Umsatz (Vorbörse). `-1` heißt, der Umsatz fehlt. Vor 10:00 kommen deutsche Drucke, über EURUSD in Dollar. Ab 10:00 der US-Ticker. Der Einsatz in der App bleibt Euro.
+
+Pflicht im Pool: `SPCX`, `TSLA`, `RKLB`, `MRVL`, `NVDA`.
+
 ## Prüfung
 
 `node scripts/validate-data.mjs` prüft Pflichtfelder, Quellen und dass keine Schlüssel-Muster in den Dateien stehen. Der Seiten-Workflow bricht ab, wenn das fehlschlägt.

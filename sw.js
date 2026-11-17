@@ -1,4 +1,4 @@
-const CACHE = "jgtr-v40";
+const CACHE = "jgtr-v42";
 const CORE = [
   "",
   "index.html",
@@ -27,6 +27,9 @@ const CORE = [
   "js/knockout.js",
   "js/knockout-ui.js",
   "js/pull.js",
+  "js/replay.js",
+  "js/replay-ui.js",
+  "css/replay.css",
   "icons/logo.svg",
   "icons/favicon.svg",
   "icons/apple-touch-icon.png",

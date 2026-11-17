@@ -10,6 +10,7 @@ import {
   WEEKDAY_LABELS
 } from "../js/seasonality.js";
 import { TICKERS } from "./fetch-prices.mjs";
+import { checkReplayArchive } from "./replay-check.mjs";
 
 const ANALYSE_SYMBOLS = TICKERS.map((spec) => spec.symbol);
 // MRVL hat keinen Eintrag. Eine andere Routine schreibt diese Datei.
@@ -639,6 +640,8 @@ for (const name of files) {
   const text = fs.readFileSync(path.join(dataDir, name), "utf8");
   if (banned.test(text)) fail(`Schlüssel-Muster in data/${name}`);
 }
+
+for (const message of checkReplayArchive(root)) fail(message);
 
 if (errors.length) {
   console.error(errors.join("\n"));

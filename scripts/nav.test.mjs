@@ -34,7 +34,7 @@ test("Sieben Tabs, Deutschland sitzt vor Analyse, Heute öffnet Analyse", () => 
   const views = fs.readFileSync("js/views.js", "utf8");
   assert.equal(html.includes('data-page="charts"'), false);
   assert.equal(html.includes("page-charts"), false);
-  assert.equal((html.match(/class="tab"/g) || []).length, 7);
+  assert.equal((html.match(/class="tab"/g) || []).length, 8);
   assert.match(html, /data-page="schwarm"[\s\S]*data-page="deutschland"[\s\S]*data-page="analyse"/);
   assert.match(html, />Deutschland</);
   assert.equal(nav.includes('"charts"'), false);
