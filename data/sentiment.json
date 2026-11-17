@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-17T10:05:00+01:00",
+  "updatedAt": "2026-11-17T10:25:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -26,24 +26,24 @@
     },
     "TSLA": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 15,
-      "reason": "Barclays bleibt bei Overweight mit Ziel 450 $ und lobt Robotaxi und Cybercab; dazu Robotaxi-Zahlung per X Money. Einige streiten über die Bewertung.",
+      "score": 35,
+      "postsCount": 25,
+      "reason": "Berichte über 3 Mrd. € Ausbau in Grünheide für das Cybercab freuen viele; dazu Barclays mit Ziel 450 $. Kritiker meckern über Bewertung und Tech-Ausverkauf.",
       "sources": [
+        {
+          "title": "@EpochTimesDE auf X (17.11., 10:17)",
+          "url": "https://x.com/EpochTimesDE/status/2122620196745842809"
+        },
+        {
+          "title": "@NomieGirari96o auf X (17.11., 10:18)",
+          "url": "https://x.com/NomieGirari96o/status/2122620364173754379"
+        },
         {
           "title": "@TeslaZoa auf X (17.11., 09:58)",
           "url": "https://x.com/TeslaZoa/status/2122615282166628628"
-        },
-        {
-          "title": "@TeslaZoa auf X (17.11., 09:57)",
-          "url": "https://x.com/TeslaZoa/status/2122615191947092441"
-        },
-        {
-          "title": "@NextChargeDE auf X (17.11., 10:03)",
-          "url": "https://x.com/NextChargeDE/status/2122616545218306334"
         }
       ],
-      "updatedAt": "2026-11-17T10:05:00+01:00"
+      "updatedAt": "2026-11-17T10:25:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
