@@ -5288,7 +5288,7 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "US-Schluss Mo: SPCX schließt bei 137,36 $ (−1,3 %), nachbörslich kaum verändert bei 137,48 $ (Yahoo). Der Tech-Ausverkauf (Nasdaq −2,5 %) überdeckte den Schiffsfang, für den Analysten ihre Ziele bestätigten oder hoben – im Schnitt rund 258 $ (Stockanalysis, CNBC). Über Nacht: NASA-Chef Isaacman sagt, der Fang „ändert alles“, und Musk behauptet, die FAA habe kostenloses Starlink vor dem Flugausfall vom 13.11. abgelehnt (Musk auf X, Teslarati). Auf Xetra um 13:04 bei 126,72 €, 1,8 % über dem Xetra-Schluss vom Mo (124,52 €), in den USA vorbörslich 139,00 $ (+1,2 %) (Yahoo). Rückenwind geben neue 13F-Meldungen zum Stichtag 30.09.: Nvidia hat seinen SpaceX-Anteil um 7,7 Mio. auf 130,5 Mio. Aktien erhöht – SpaceX ist damit Nvidias größte gemeldete Beteiligung, vor Intel; David Teppers Appaloosa hat seinen Anteil um 1.626 % aufgestockt, Stanley Druckenmillers Duquesne ist neu mit 30,5 Mio. $ eingestiegen (Stocktwits, FinanceFeeds). Saudi-Arabiens Staatsfonds PIF hält seine 154,15 Mio. Aktien unverändert, Altimeter hat um 41 % auf 1,06 Mio. reduziert (Seeking Alpha, Arab News, Chip Dispatch), Citadel seinen Aktienbestand um 94 % (Benzinga, Fazen Markets). Das sind Bestände vom Quartalsende, keine aktuellen Käufe oder Verkäufe. Cantor Fitzgerald bestätigt „Overweight“ mit Kursziel 345 $ und nennt den 74-Mrd.-$-Rechenzentrumsplan und Flug 15 unterschätzte Treiber (Investing.com). Musk spottet über Delta, das Amazon Leo statt Starlink gewählt hat (Musk auf X). Der Dax liegt um 13:04 bei 26.413 Punkten (−0,7 %) – Nervosität vor den Nvidia-Zahlen, die neuen US-Auflagen für KI-Chip-Exporte und der Anthropic-Börsengang am Do (dpa-AFX); die besseren ZEW-Konjunkturerwartungen (+35,6 nach +28,1 Punkten) halfen wenig (ZEW). In den USA erholen sich Chip- und KI-Hardwarewerte vorbörslich, Nasdaq-100-Futures um 13:09 +0,4 %, S&P-500-Futures unverändert (Yahoo, Sing Tao).",
+      "why": "US-Schluss Mo: SPCX schließt bei 137,36 $ (−1,3 %), nachbörslich kaum verändert bei 137,48 $ (Yahoo). Der Tech-Ausverkauf (Nasdaq −2,5 %) überdeckte den Schiffsfang, für den Analysten ihre Ziele bestätigten oder hoben – im Schnitt rund 258 $ (Stockanalysis, CNBC). Über Nacht: NASA-Chef Isaacman sagt, der Fang „ändert alles“, und Musk behauptet, die FAA habe kostenloses Starlink vor dem Flugausfall vom 13.11. abgelehnt (Musk auf X, Teslarati). Auf Xetra um 14:16 bei 126,26 €, 1,4 % über dem Xetra-Schluss vom Mo (124,52 €), in den USA vorbörslich um 14:31 bei 138,42 $ (+0,8 %) (Yahoo). Rückenwind geben neue 13F-Meldungen zum Stichtag 30.09.: Nvidia hat seinen SpaceX-Anteil um 7,7 Mio. auf 130,5 Mio. Aktien erhöht – SpaceX ist damit Nvidias größte gemeldete Beteiligung, vor Intel; David Teppers Appaloosa hat seinen Anteil um 1.626 % aufgestockt, Stanley Druckenmillers Duquesne ist neu mit 30,5 Mio. $ eingestiegen (Stocktwits, FinanceFeeds). Saudi-Arabiens Staatsfonds PIF hält seine 154,15 Mio. Aktien unverändert, Altimeter hat um 41 % auf 1,06 Mio. reduziert (Seeking Alpha, Arab News, Chip Dispatch), Citadel seinen Aktienbestand um 94 % (Benzinga, Fazen Markets). Das sind Bestände vom Quartalsende, keine aktuellen Käufe oder Verkäufe. Cantor Fitzgerald bestätigt „Overweight“ mit Kursziel 345 $ und nennt den 74-Mrd.-$-Rechenzentrumsplan und Flug 15 unterschätzte Treiber (Investing.com). Musk schreibt auf Altmans Vorwurf doppelt gezählter Chip-Nachfrage, SpaceX rechne mit null Verkäufen an OpenAI (Musk auf X). Musk spottet über Delta, das Amazon Leo statt Starlink gewählt hat (Musk auf X). Der Dax liegt um 14:16 bei 26.327 Punkten (−1,0 %) – laut dpa-AFX nimmt die Korrektur weiter Fahrt auf: Nervosität vor den Nvidia-Zahlen, die neuen US-Auflagen für KI-Chip-Exporte und der Anthropic-Börsengang am Do; Deutsche Bank fiel nach kritischen Medienberichten zeitweise über 6 % (dpa-AFX). Die US-Einzelhandelsumsätze stiegen im Oktober wie erwartet um 0,2 %, ohne Autos um 0,6 % (Census). Nasdaq-100-Futures um 14:21 +0,4 %, S&P-500-Futures unverändert (Yahoo).",
       "whySources": [
         {
           "title": "Yahoo Finance: SPCX (Schluss 16.11. 137,36 $, Nachbörse)",
@@ -5331,10 +5331,6 @@
           "url": "https://www.zew.de/das-zew/aktuelles/verbesserung-der-erwartungen-im-november"
         },
         {
-          "title": "Yahoo Finance: SPX.DE (Xetra, 17.11., 13:04) und SPCX vorbörslich",
-          "url": "https://finance.yahoo.com/quote/SPX.DE"
-        },
-        {
           "title": "Stocktwits: Nvidia macht SpaceX zur größten Beteiligung, Appaloosa und Duquesne steigen ein (17.11.)",
           "url": "https://stocktwits.com/news-articles/markets/equity/us-stock-futures-edge-lower-after-tech-sell-off-nvda-earnings-amd-spcx-dis-in-focus/cNbaAmCR9Wf"
         },
@@ -5355,15 +5351,23 @@
           "url": "https://au.investing.com/news/stock-market-news/cantor-fitzgerald-reiterates-overweight-on-spacex-stock-after-catalysts-93CH-4776587"
         },
         {
-          "title": "dpa-AFX via onvista: Aktien Frankfurt – Schwach, Nervosität vor Nvidia-Zahlen (17.11., mittags)",
-          "url": "https://www.onvista.de/news/2026/11-17-aktien-frankfurt-schwach-nervositaet-vor-nvidia-zahlen-am-spaeten-abend-0-10-26577288"
+          "title": "Yahoo Finance: SPX.DE (Xetra, 17.11., 14:16) und SPCX vorbörslich (14:31)",
+          "url": "https://finance.yahoo.com/quote/SPX.DE"
         },
         {
-          "title": "Sing Tao (stnn): US-KI-Hardwarewerte vorbörslich erholt (17.11., 12:53 Berlin)",
-          "url": "https://www.stnn.cc/detail/6afc40d08f9d2b19dd9271fb.html"
+          "title": "@elonmusk auf X (17.11., 14:08): „SpaceX is assuming zero sales to OpenAI“",
+          "url": "https://x.com/elonmusk/status/2122678226535248248"
         },
         {
-          "title": "Yahoo Finance: Dax ^GDAXI, Nasdaq-100-Futures NQ=F, S&P-500-Futures ES=F (17.11., 13:04–13:09)",
+          "title": "dpa-AFX via onvista: Aktien Frankfurt – Schwach, Nervosität vor Nvidia-Zahlen (17.11., früher Nachmittag)",
+          "url": "https://www.onvista.de/news/2026/11-17-aktien-frankfurt-schwach-nervositaet-vor-nvidia-zahlen-am-spaeten-abend-0-10-26577353"
+        },
+        {
+          "title": "U.S. Census Bureau: Advance Monthly Sales for Retail and Food Services, October 2026 (17.11.)",
+          "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+        },
+        {
+          "title": "Yahoo Finance: Dax ^GDAXI, Nasdaq-100-Futures NQ=F, S&P-500-Futures ES=F (17.11., 14:16–14:21)",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI"
         }
       ],
@@ -17619,7 +17623,7 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "US-Schluss Mo: Tesla schließt bei 379,74 $ (−2,7 %), nachbörslich unverändert bei 379,80 $ (Yahoo). Tech-Ausverkauf und Zinssorgen überdeckten die Cybercab-Nachrichten (Investing.com). Über Nacht kündigt Musk an, Besitzer könnten ihr Auto vielleicht schon ab Dezember testweise ins Robotaxi-Netz geben – bisher hieß es etwa 2. Quartal 2027 (Musk auf X, Teslarati). Musk reist mit Trump zum APEC-Gipfel nach Shenzhen (Musk auf X, The Next Web); am Morgen teilte er Beiträge zur Cybercab-Halle in Grünheide (Musk auf X). Auf Xetra um 13:02 bei 347,40 €, 0,3 % über dem Xetra-Schluss vom Mo (346,20 €), in den USA vorbörslich 381,36 $ (+0,4 %) (Yahoo). Barclays (Dan Levy) bestätigt „Overweight“ mit Kursziel 450 $: Der Robotaxi-Betrieb rund um die Uhr nur mit Kameras sei ein Beleg für Fortschritte der Software (Investing.com, aktiencheck). Laut 13F hat Altimeter (Brad Gerstner) im 3. Quartal neu 1,92 Mio. Tesla-Aktien gekauft, rund 680 Mio. $ wert (Chip Dispatch); Viking Global hat seinen Bestand auf 2,34 Mio. Aktien mehr als vervierfacht (+327 %, rund 831 Mio. $) (13F.finance). Stand jeweils 30.09. Der Verwaltungsrat bittet die Aktionäre in einem Brief, bei der Hauptversammlung am 3.12. für alle Vorschläge zu stimmen (SEC). Der Dax liegt um 13:04 bei 26.413 Punkten (−0,7 %) – Nervosität vor den Nvidia-Zahlen, die neuen US-Auflagen für KI-Chip-Exporte und der Anthropic-Börsengang am Do (dpa-AFX); die besseren ZEW-Konjunkturerwartungen (+35,6 nach +28,1 Punkten) halfen wenig (ZEW). In den USA erholen sich Chip- und KI-Hardwarewerte vorbörslich, Nasdaq-100-Futures um 13:09 +0,4 %, S&P-500-Futures unverändert (Yahoo, Sing Tao).",
+      "why": "US-Schluss Mo: Tesla schließt bei 379,74 $ (−2,7 %), nachbörslich unverändert bei 379,80 $ (Yahoo). Tech-Ausverkauf und Zinssorgen überdeckten die Cybercab-Nachrichten (Investing.com). Über Nacht kündigt Musk an, Besitzer könnten ihr Auto vielleicht schon ab Dezember testweise ins Robotaxi-Netz geben – bisher hieß es etwa 2. Quartal 2027 (Musk auf X, Teslarati). Musk reist mit Trump zum APEC-Gipfel nach Shenzhen (Musk auf X, The Next Web); am Morgen teilte er Beiträge zur Cybercab-Halle in Grünheide (Musk auf X). Auf Xetra um 14:15 bei 347,05 €, 0,2 % über dem Xetra-Schluss vom Mo (346,20 €), in den USA vorbörslich um 14:31 bei 381,02 $ (+0,3 %) (Yahoo). Barclays (Dan Levy) bestätigt „Overweight“ mit Kursziel 450 $: Der Robotaxi-Betrieb rund um die Uhr nur mit Kameras sei ein Beleg für Fortschritte der Software (Investing.com, aktiencheck). Laut 13F hat Altimeter (Brad Gerstner) im 3. Quartal neu 1,92 Mio. Tesla-Aktien gekauft, rund 680 Mio. $ wert (Chip Dispatch); Viking Global hat seinen Bestand auf 2,34 Mio. Aktien mehr als vervierfacht (+327 %, rund 831 Mio. $) (13F.finance). Stand jeweils 30.09. Der Verwaltungsrat bittet die Aktionäre in einem Brief, bei der Hauptversammlung am 3.12. für alle Vorschläge zu stimmen (SEC); der Stimmrechtsberater ISS empfiehlt dagegen, gegen die Wiederwahl von Verwaltungsratschefin Robyn Denholm zu stimmen (Reuters). Der Dax liegt um 14:16 bei 26.327 Punkten (−1,0 %) – laut dpa-AFX nimmt die Korrektur weiter Fahrt auf: Nervosität vor den Nvidia-Zahlen, die neuen US-Auflagen für KI-Chip-Exporte und der Anthropic-Börsengang am Do; Deutsche Bank fiel nach kritischen Medienberichten zeitweise über 6 % (dpa-AFX). Die US-Einzelhandelsumsätze stiegen im Oktober wie erwartet um 0,2 %, ohne Autos um 0,6 % (Census). Nasdaq-100-Futures um 14:21 +0,4 %, S&P-500-Futures unverändert (Yahoo).",
       "whySources": [
         {
           "title": "Yahoo Finance: TSLA (Schluss 16.11. 379,74 $, Nachbörse)",
@@ -17662,10 +17666,6 @@
           "url": "https://www.zew.de/das-zew/aktuelles/verbesserung-der-erwartungen-im-november"
         },
         {
-          "title": "Yahoo Finance: TL0.DE (Xetra, 17.11., 13:02) und TSLA vorbörslich",
-          "url": "https://finance.yahoo.com/quote/TL0.DE"
-        },
-        {
           "title": "Investing.com: Barclays bestätigt Tesla-Rating wegen Robotaxi-Fortschritt (17.11.)",
           "url": "https://www.investing.com/news/analyst-ratings/barclays-reiterates-tesla-stock-rating-on-robotaxi-progress-93CH-5031841"
         },
@@ -17678,15 +17678,23 @@
           "url": "https://13f.finance/fund/viking-global"
         },
         {
-          "title": "dpa-AFX via onvista: Aktien Frankfurt – Schwach, Nervosität vor Nvidia-Zahlen (17.11., mittags)",
-          "url": "https://www.onvista.de/news/2026/11-17-aktien-frankfurt-schwach-nervositaet-vor-nvidia-zahlen-am-spaeten-abend-0-10-26577288"
+          "title": "Yahoo Finance: TL0.DE (Xetra, 17.11., 14:15) und TSLA vorbörslich (14:31)",
+          "url": "https://finance.yahoo.com/quote/TL0.DE"
         },
         {
-          "title": "Sing Tao (stnn): US-KI-Hardwarewerte vorbörslich erholt (17.11., 12:53 Berlin)",
-          "url": "https://www.stnn.cc/detail/6afc40d08f9d2b19dd9271fb.html"
+          "title": "Reuters via TradingView: ISS empfiehlt, gegen die Wiederwahl von Robyn Denholm zu stimmen (16.11.)",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46X0RR:0-iss-recommends-tesla-shareholders-vote-against-proposal-to-elect-robyn-denholm-to-board/"
         },
         {
-          "title": "Yahoo Finance: Dax ^GDAXI, Nasdaq-100-Futures NQ=F, S&P-500-Futures ES=F (17.11., 13:04–13:09)",
+          "title": "dpa-AFX via onvista: Aktien Frankfurt – Schwach, Nervosität vor Nvidia-Zahlen (17.11., früher Nachmittag)",
+          "url": "https://www.onvista.de/news/2026/11-17-aktien-frankfurt-schwach-nervositaet-vor-nvidia-zahlen-am-spaeten-abend-0-10-26577353"
+        },
+        {
+          "title": "U.S. Census Bureau: Advance Monthly Sales for Retail and Food Services, October 2026 (17.11.)",
+          "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+        },
+        {
+          "title": "Yahoo Finance: Dax ^GDAXI, Nasdaq-100-Futures NQ=F, S&P-500-Futures ES=F (17.11., 14:16–14:21)",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI"
         }
       ],
@@ -28968,7 +28976,7 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "US-Schluss Mo: Rocket Lab schließt bei 57,37 $ (−6,8 %), der vierte Verlusttag in Folge; nachbörslich 57,08 $ (−0,5 %) (Yahoo). Raumfahrtwerte fielen mit dem Tech-Ausverkauf und nach dem Vulcan-Fehlstart von ULA; eine eigene schlechte Rocket-Lab-Meldung gab es nicht (Benzinga, TIKR). Über Nacht feierte die Nasdaq die 100. Electron am Times Square (Rocket Lab auf X). Auf Xetra zuletzt um 12:32 bei 52,00 €, 3,7 % unter dem Xetra-Schluss vom Mo (54,00 €) – das holt den US-Rückgang vom Montagabend nach; vom Vormittagstief bei 51,00 € (10:22) hat sich die Aktie leicht erholt. In den USA vorbörslich 57,80 $ (+0,7 %) (Yahoo). Laut 13F ist Citadel zum 30.09. neu mit rund 3,2 Mio. Rocket-Lab-Aktien (rund 221 Mio. $) eingestiegen – ein Bestand vom Quartalsende (The Distributed). Eine neue Rocket-Lab-Meldung gibt es nicht: Die Kurszielsenkungen von Morgan Stanley (103 $) und Needham (100 $) sind vom 11.11., und für Neutron gilt weiter Erststart 2027 mit Tanktest im Januar (MarketBeat, 24/7 Wall St.). Der Start „The Mountain God Rises“ für iQPS, der heute auf X als Neuigkeit geteilt wird, war schon am 14.11. – die 100. Electron (iQPS). Der Dax liegt um 13:04 bei 26.413 Punkten (−0,7 %) – Nervosität vor den Nvidia-Zahlen, die neuen US-Auflagen für KI-Chip-Exporte und der Anthropic-Börsengang am Do (dpa-AFX); die besseren ZEW-Konjunkturerwartungen (+35,6 nach +28,1 Punkten) halfen wenig (ZEW). In den USA erholen sich Chip- und KI-Hardwarewerte vorbörslich, Nasdaq-100-Futures um 13:09 +0,4 %, S&P-500-Futures unverändert (Yahoo, Sing Tao). Die Tagesfrage (Di-Schluss über 57,37 $?) ist offen bis 22:15.",
+      "why": "US-Schluss Mo: Rocket Lab schließt bei 57,37 $ (−6,8 %), der vierte Verlusttag in Folge; nachbörslich 57,08 $ (−0,5 %) (Yahoo). Raumfahrtwerte fielen mit dem Tech-Ausverkauf und nach dem Vulcan-Fehlstart von ULA; eine eigene schlechte Rocket-Lab-Meldung gab es nicht (Benzinga, TIKR). Über Nacht feierte die Nasdaq die 100. Electron am Times Square (Rocket Lab auf X). Auf Xetra zuletzt um 13:34 bei 52,80 €, 2,2 % unter dem Xetra-Schluss vom Mo (54,00 €) – das holt den US-Rückgang vom Montagabend nach; vom Vormittagstief bei 51,00 € (10:22) hat sich die Aktie erholt. In den USA vorbörslich um 14:31 bei 57,11 $ (−0,5 %) (Yahoo). Laut 13F ist Citadel zum 30.09. neu mit rund 3,2 Mio. Rocket-Lab-Aktien (rund 221 Mio. $) eingestiegen – ein Bestand vom Quartalsende (The Distributed). Eine neue Rocket-Lab-Meldung gibt es nicht: Die Kurszielsenkungen von Morgan Stanley (103 $) und Needham (100 $) sind vom 11.11., und für Neutron gilt weiter Erststart 2027 mit Tanktest im Januar (MarketBeat, 24/7 Wall St.). Der Start „The Mountain God Rises“ für iQPS, der heute auf X als Neuigkeit geteilt wird, war schon am 14.11. – die 100. Electron (iQPS). Der Dax liegt um 14:16 bei 26.327 Punkten (−1,0 %) – laut dpa-AFX nimmt die Korrektur weiter Fahrt auf: Nervosität vor den Nvidia-Zahlen, die neuen US-Auflagen für KI-Chip-Exporte und der Anthropic-Börsengang am Do; Deutsche Bank fiel nach kritischen Medienberichten zeitweise über 6 % (dpa-AFX). Die US-Einzelhandelsumsätze stiegen im Oktober wie erwartet um 0,2 %, ohne Autos um 0,6 % (Census). Nasdaq-100-Futures um 14:21 +0,4 %, S&P-500-Futures unverändert (Yahoo). Die Tagesfrage (Di-Schluss über 57,37 $?) ist offen bis 22:15.",
       "whySources": [
         {
           "title": "Yahoo Finance: RKLB (Schluss 16.11. 57,37 $, Nachbörse)",
@@ -29003,10 +29011,6 @@
           "url": "https://www.zew.de/das-zew/aktuelles/verbesserung-der-erwartungen-im-november"
         },
         {
-          "title": "Yahoo Finance: 6RJ0.DE (Xetra, 17.11., 12:32) und RKLB vorbörslich",
-          "url": "https://finance.yahoo.com/quote/6RJ0.DE"
-        },
-        {
           "title": "The Distributed: Citadel 13F Q3 2026 – Rocket Lab neu 3,2 Mio. Aktien",
           "url": "https://thedistributed.co/funds/citadel-advisors"
         },
@@ -29015,15 +29019,19 @@
           "url": "https://i-qps.net/news/4163/"
         },
         {
-          "title": "dpa-AFX via onvista: Aktien Frankfurt – Schwach, Nervosität vor Nvidia-Zahlen (17.11., mittags)",
-          "url": "https://www.onvista.de/news/2026/11-17-aktien-frankfurt-schwach-nervositaet-vor-nvidia-zahlen-am-spaeten-abend-0-10-26577288"
+          "title": "Yahoo Finance: 6RJ0.DE (Xetra, 17.11., 13:34) und RKLB vorbörslich (14:31)",
+          "url": "https://finance.yahoo.com/quote/6RJ0.DE"
         },
         {
-          "title": "Sing Tao (stnn): US-KI-Hardwarewerte vorbörslich erholt (17.11., 12:53 Berlin)",
-          "url": "https://www.stnn.cc/detail/6afc40d08f9d2b19dd9271fb.html"
+          "title": "dpa-AFX via onvista: Aktien Frankfurt – Schwach, Nervosität vor Nvidia-Zahlen (17.11., früher Nachmittag)",
+          "url": "https://www.onvista.de/news/2026/11-17-aktien-frankfurt-schwach-nervositaet-vor-nvidia-zahlen-am-spaeten-abend-0-10-26577353"
         },
         {
-          "title": "Yahoo Finance: Dax ^GDAXI, Nasdaq-100-Futures NQ=F, S&P-500-Futures ES=F (17.11., 13:04–13:09)",
+          "title": "U.S. Census Bureau: Advance Monthly Sales for Retail and Food Services, October 2026 (17.11.)",
+          "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+        },
+        {
+          "title": "Yahoo Finance: Dax ^GDAXI, Nasdaq-100-Futures NQ=F, S&P-500-Futures ES=F (17.11., 14:16–14:21)",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI"
         }
       ],
@@ -40617,7 +40625,7 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "US-Schluss Mo: Marvell schließt bei 145,36 $ (−7,3 %), nachbörslich 144,55 $ (−0,6 %) (Yahoo). Treiber bleibt der Chip-Ausverkauf vor Nvidias Zahlen heute 22:20 (SOX −5,3 %); zusätzlich senkte SemiAnalysis seine Prognose für Ausgaben in KI-Beschleuniger 2027 um 19 % und 2028 um 28 % (Chosunbiz). Asien folgt am Di: Kospi −2,6 %, Nikkei −1,3 % (Yahoo), SoftBank und Advantest je rund −4 % (RTTNews); laut Handelsblatt belasten die neuen US-Chipauflagen. Gegen 12:00 drehte Marvell ins Plus: auf Xetra um 13:04 bei 139,08 €, 3,2 % über dem Xetra-Schluss vom Mo (134,80 €), in den USA vorbörslich 154,70 $ (+6,4 %) (Yahoo). Grund ist eine breite vorbörsliche Erholung der KI-Hardwarewerte vor den Nvidia-Zahlen – um 12:53 lagen AMD +3,1 %, Lumentum +4,5 % und Coherent +5,0 % im Plus (Sing Tao); Nvidia vorbörslich +0,9 %, auf Xetra 143,60 € (−1,2 %) (Yahoo). Laut 13F hat Citadel seinen Marvell-Bestand im 3. Quartal um 729 % aufgestockt (Benzinga) – ein Stand vom 30.09. Eine eigene Marvell-Meldung gibt es nicht; die Form-4-Meldungen vom 16.11. sind nur übliche Aktienzuteilungen an drei Aufsichtsräte (SEC). Der Dax liegt um 13:04 bei 26.413 Punkten (−0,7 %) – Nervosität vor den Nvidia-Zahlen, die neuen US-Auflagen für KI-Chip-Exporte und der Anthropic-Börsengang am Do (dpa-AFX); die besseren ZEW-Konjunkturerwartungen (+35,6 nach +28,1 Punkten) halfen wenig (ZEW). In den USA erholen sich Chip- und KI-Hardwarewerte vorbörslich, Nasdaq-100-Futures um 13:09 +0,4 %, S&P-500-Futures unverändert (Yahoo, Sing Tao). Marvell-Zahlen am Di 1.12.",
+      "why": "US-Schluss Mo: Marvell schließt bei 145,36 $ (−7,3 %), nachbörslich 144,55 $ (−0,6 %) (Yahoo). Treiber bleibt der Chip-Ausverkauf vor Nvidias Zahlen heute 22:20 (SOX −5,3 %); zusätzlich senkte SemiAnalysis seine Prognose für Ausgaben in KI-Beschleuniger 2027 um 19 % und 2028 um 28 % (Chosunbiz). Asien folgt am Di: Kospi −2,6 %, Nikkei −1,3 % (Yahoo), SoftBank und Advantest je rund −4 % (RTTNews); laut Handelsblatt belasten die neuen US-Chipauflagen. Gegen 12:00 drehte Marvell ins Plus: auf Xetra um 14:07 bei 139,20 €, 3,3 % über dem Xetra-Schluss vom Mo (134,80 €); in den USA vorbörslich um 14:31 bei 150,90 $ (+3,8 %), nach +6,4 % um 13:00 (Yahoo). Grund ist eine breite vorbörsliche Erholung der KI-Hardwarewerte vor den Nvidia-Zahlen – um 12:53 lagen AMD +3,1 %, Lumentum +4,5 % und Coherent +5,0 % im Plus (Sing Tao); Nvidia vorbörslich um 14:31 bei 157,76 $ (+1,0 %), auf Xetra 144,06 € (−0,9 %) (Yahoo). Lumentum hängt über das feste Umtauschverhältnis (4,5 Marvell-Aktien je Lumentum-Aktie) direkt am Marvell-Kurs (Investing.com). Laut 13F hat Citadel seinen Marvell-Bestand im 3. Quartal um 729 % aufgestockt (Benzinga) – ein Stand vom 30.09. Eine eigene Marvell-Meldung gibt es nicht; die Form-4-Meldungen vom 16.11. sind nur übliche Aktienzuteilungen an drei Aufsichtsräte (SEC). Der Dax liegt um 14:16 bei 26.327 Punkten (−1,0 %) – laut dpa-AFX nimmt die Korrektur weiter Fahrt auf: Nervosität vor den Nvidia-Zahlen, die neuen US-Auflagen für KI-Chip-Exporte und der Anthropic-Börsengang am Do; Deutsche Bank fiel nach kritischen Medienberichten zeitweise über 6 % (dpa-AFX). Die US-Einzelhandelsumsätze stiegen im Oktober wie erwartet um 0,2 %, ohne Autos um 0,6 % (Census). Nasdaq-100-Futures um 14:21 +0,4 %, S&P-500-Futures unverändert (Yahoo). Marvell-Zahlen am Di 1.12.",
       "whySources": [
         {
           "title": "Yahoo Finance: MRVL (Schluss 16.11. 145,36 $, Nachbörse)",
@@ -40656,23 +40664,31 @@
           "url": "https://www.zew.de/das-zew/aktuelles/verbesserung-der-erwartungen-im-november"
         },
         {
-          "title": "Yahoo Finance: 9MW.DE und NVD.DE (Xetra, 17.11., 13:04), MRVL vorbörslich",
-          "url": "https://finance.yahoo.com/quote/9MW.DE"
-        },
-        {
           "title": "Benzinga: Citadel stockt Marvell um 729 % auf (13F, 17.11.)",
           "url": "https://www.benzinga.com/markets/hedge-funds/26/11/63332490/ken-griffin-dumps-spacex-amazon-buys-arkk-and-bets-big-on-marvell"
-        },
-        {
-          "title": "dpa-AFX via onvista: Aktien Frankfurt – Schwach, Nervosität vor Nvidia-Zahlen (17.11., mittags)",
-          "url": "https://www.onvista.de/news/2026/11-17-aktien-frankfurt-schwach-nervositaet-vor-nvidia-zahlen-am-spaeten-abend-0-10-26577288"
         },
         {
           "title": "Sing Tao (stnn): US-KI-Hardwarewerte vorbörslich erholt (17.11., 12:53 Berlin)",
           "url": "https://www.stnn.cc/detail/6afc40d08f9d2b19dd9271fb.html"
         },
         {
-          "title": "Yahoo Finance: Dax ^GDAXI, Nasdaq-100-Futures NQ=F, S&P-500-Futures ES=F (17.11., 13:04–13:09)",
+          "title": "Yahoo Finance: 9MW.DE und NVD.DE (Xetra, 17.11., 14:07–14:16), MRVL/NVDA vorbörslich (14:31)",
+          "url": "https://finance.yahoo.com/quote/9MW.DE"
+        },
+        {
+          "title": "Investing.com: Why is Lumentum stock rallying today? (17.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-lumentum-stock-rallying-today-93CH-5032547"
+        },
+        {
+          "title": "dpa-AFX via onvista: Aktien Frankfurt – Schwach, Nervosität vor Nvidia-Zahlen (17.11., früher Nachmittag)",
+          "url": "https://www.onvista.de/news/2026/11-17-aktien-frankfurt-schwach-nervositaet-vor-nvidia-zahlen-am-spaeten-abend-0-10-26577353"
+        },
+        {
+          "title": "U.S. Census Bureau: Advance Monthly Sales for Retail and Food Services, October 2026 (17.11.)",
+          "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
+        },
+        {
+          "title": "Yahoo Finance: Dax ^GDAXI, Nasdaq-100-Futures NQ=F, S&P-500-Futures ES=F (17.11., 14:16–14:21)",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI"
         }
       ],
