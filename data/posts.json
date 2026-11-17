@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-17T05:00:00+01:00",
+  "asOf": "2026-11-17T06:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,182 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2122560875793953165",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T06:22:02+01:00",
+      "summaryDe": "Musk teilt zwei Beiträge zum Ausbau in Grünheide: André Thierig (@AndrThie, Tesla Grünheide) schreibt, die Cybercab-Produktion komme nach Giga Berlin, erste Investition rund 3 Mrd. € in eine neue Halle; @gigafactories: „Cybercab-Produktion kommt nach Europa“. Bekannt seit Montag (Tesla-Mitteilung), keine neue Zahl.",
+      "originalText": "RT @AndrThie: If you ever wondered, what we would be doing at Giga Berlin with all the land that we have… We are expanding! Cybercab pro… / RT @gigafactories: Giga Berlin is expanding - Cybercab production is coming to Europe",
+      "url": "https://x.com/elonmusk/status/2122560875793953165",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 06:22): Repost @AndrThie – Cybercab-Produktion kommt nach Giga Berlin",
+          "url": "https://x.com/elonmusk/status/2122560875793953165"
+        },
+        {
+          "title": "Originalpost @AndrThie (16.11., 17:19): rund 3 Mrd. € für neue Halle in Grünheide",
+          "url": "https://x.com/AndrThie/status/2122363982627389528"
+        },
+        {
+          "title": "@elonmusk auf X (17.11., 06:22): Repost @gigafactories „Cybercab production is coming to Europe“",
+          "url": "https://x.com/elonmusk/status/2122560960414278012"
+        },
+        {
+          "title": "Reuters via The Star: Tesla investiert 3 Mrd. € in Grünheide für Cybercab (16.11.)",
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/17/tesla-plans-33-billion-cybercab-boost-for-germany039s-troubled-auto-sector"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122560774073901341",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T06:21:38+01:00",
+      "summaryDe": "Musk wirbt mit „Grok @Bot“ für den Assistenten von SpaceX SI und zitiert einen Nutzer, dessen Grok Bot 90 Minuten mit dem AT&T-Kundendienst telefoniert habe, ohne dass die Mitarbeiterin den Bot erkannte. Werbung, keine Zahl.",
+      "originalText": "Grok @Bot [zitiert: „Grok Bot just got off a 90 minute phone call with AT&T handling a complex issue for me.“]",
+      "url": "https://x.com/elonmusk/status/2122560774073901341",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 06:21): Grok @Bot",
+          "url": "https://x.com/elonmusk/status/2122560774073901341"
+        },
+        {
+          "title": "Zitierter Post (16.11., 23:19): Grok Bot telefoniert 90 Minuten mit AT&T",
+          "url": "https://x.com/i/status/2122454524468056263"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122560586508587255",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T06:20:53+01:00",
+      "summaryDe": "Musk antwortet Marcus House mit „Yes“ auf die Frage, ob künftig ein Material am Starship sitzt, das den Wiedereintritt übersteht und sich beim Fang nicht abschabt – Anschluss an Musks Aussage, das abgeschabte Hitzeschutzmaterial werde durch Edelstahl ersetzt. Technikdetail, keine neue Meldung.",
+      "originalText": "@MarcusHouse Yes",
+      "url": "https://x.com/elonmusk/status/2122560586508587255",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 06:20): @MarcusHouse Yes",
+          "url": "https://x.com/elonmusk/status/2122560586508587255"
+        },
+        {
+          "title": "Beantworteter Post @MarcusHouse (17.11., 03:23)",
+          "url": "https://x.com/MarcusHouse/status/2122515862880178373"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122550109078425632",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T05:39:15+01:00",
+      "summaryDe": "Musk teilt eine Meldung von @cb_doge: Burundi verteilt 435 Starlink-Sets an Schulen und Gesundheitszentren auf dem Land, finanziert über ein Weltbank-Projekt. Kleiner Auftrag, Werbung für Starlink.",
+      "originalText": "RT @cb_doge: BREAKING: The Government of Burundi is rolling out 435 Starlink kits to connect rural schools and health centers.",
+      "url": "https://x.com/elonmusk/status/2122550109078425632",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 05:39): Repost @cb_doge – Burundi, 435 Starlink-Sets",
+          "url": "https://x.com/elonmusk/status/2122550109078425632"
+        },
+        {
+          "title": "Originalpost @cb_doge (17.11., 02:53)",
+          "url": "https://x.com/cb_doge/status/2122508406879895871"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122550057346249196",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T05:39:03+01:00",
+      "summaryDe": "Musk teilt ein Zitat von Leo Bozell zu Südafrika: Starlink sei überall eine gute Idee, die Regierung verlange aber 30 % der Firma vor Ort, das sei „absurd“. Politik-Thema, keine neue Firmenmeldung.",
+      "originalText": "RT @cb_doge: LEO BOZELL: “Everyone would agree that Starlink is a great idea for South Africa. … The government said, we want 30% of that company here, which of course is preposterous.”",
+      "url": "https://x.com/elonmusk/status/2122550057346249196",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 05:39): Repost @cb_doge – Bozell zu Starlink in Südafrika",
+          "url": "https://x.com/elonmusk/status/2122550057346249196"
+        },
+        {
+          "title": "Originalpost @cb_doge (17.11., 04:16)",
+          "url": "https://x.com/cb_doge/status/2122529345902350362"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122545705067872753",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T05:21:45+01:00",
+      "summaryDe": "Musk teilt einen Beitrag, nach dem Starlink Rettern in Argentinien half, 211 im Schneesturm festsitzende Touristen in den Bergen von Catamarca in Sicherheit zu bringen. Werbung, keine Firmenmeldung.",
+      "originalText": "RT @cb_doge: Starlink helped rescue teams bring 211 stranded tourists to safety in Argentina’s remote mountains.",
+      "url": "https://x.com/elonmusk/status/2122545705067872753",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 05:21): Repost @cb_doge – Starlink-Rettung in Argentinien",
+          "url": "https://x.com/elonmusk/status/2122545705067872753"
+        },
+        {
+          "title": "Originalpost @cb_doge (16.11., 21:16)",
+          "url": "https://x.com/cb_doge/status/2122423529769763225"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2122542607653896255",
       "account": "@elonmusk",
