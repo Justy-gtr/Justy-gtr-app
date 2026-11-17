@@ -495,8 +495,17 @@ async function refresh(manual) {
 
 let clockTimer = 0;
 
+let shownHour = null;
+
 function paintClock(date = new Date()) {
   const text = berlinClockText(date);
+  const hourKey = text.slice(0, 2);
+  if (shownHour !== null && shownHour !== hourKey && data && ui.page === "news") {
+    shownHour = hourKey;
+    render();
+    return;
+  }
+  shownHour = hourKey;
   const iso = date.toISOString();
   const clock = document.getElementById("clock");
   const minutes = text.slice(0, 5);

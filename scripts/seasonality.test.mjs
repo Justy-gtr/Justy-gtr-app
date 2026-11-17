@@ -261,15 +261,16 @@ test("Unter sieben Fällen gibt es keine Prozentzahl", () => {
   const html = renderSeasonalityCard(seasonality, { symbol: "TSLA", name: "Tesla" }, "all");
   assert.match(html, /Wochentag &amp; Uhrzeit/);
   assert.equal(seasonalityHeadline("TSLA", seasonality.symbols.TSLA.ranges.all), "Dienstags stieg TSLA am häufigsten (80 %, n = 10). Mittwochs am seltensten (20 %, n = 10).");
-  assert.match(html, /id="move-table"/);
-  assert.equal(html.includes("Long: Wie oft"), false);
-  assert.equal(html.includes("wd-list"), false);
+  assert.match(html, /Long: Wie oft ging es hoch/);
+  assert.match(html, /Short: Wie oft ging es runter/);
+  assert.equal(html.includes("Mittlere Bewegung"), false);
+  assert.deepEqual(tagCells(html), ["–", "80%", "20%", "50%", "60%", "59 %"]);
   assert.match(html, /Vergangenheit, keine Vorhersage/);
   assert.match(html, new RegExp(EARLY_NOTE_DE));
   assert.equal(html.includes("chart-legend"), false);
   assert.equal(/Keine Anlageberatung/.test(html), false);
   assert.equal(html.includes("Vorbörse 10:00"), false);
-  assert.match(html, /noch zu wenig Daten/);
+  assert.match(html, /data-hour="08"/);
   assert.match(html, new RegExp(SEASON_N_LEGEND.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   assert.match(html, /dieser Aktie/);
   assert.equal(ADVICE.test(html), false);
@@ -337,8 +338,10 @@ test("Die Tag-Zeile zählt steigende Tage im selben Zeitraum wie die Balken", ()
   };
   const all = renderSeasonalityCard(pack, { symbol: "SPCX" }, "all");
   const year = renderSeasonalityCard(pack, { symbol: "SPCX" }, "year");
-  assert.match(all, /id="move-table"/);
-  assert.equal(all.includes("Long: Wie oft"), false);
+  assert.match(all, /Long: Wie oft ging es hoch/);
+  assert.match(all, /Short: Wie oft ging es runter/);
+  assert.deepEqual(tagCells(all), ["80%", "80%", "80%", "80%", "80%", "80 %"]);
+  assert.deepEqual(tagCells(year), ["25%", "25%", "25%", "25%", "–", "35 %"]);
   assert.match(year, /data-season="year"/);
   assert.equal(/Keine Anlageberatung/.test(all + year), false);
   assert.equal(ADVICE.test(all + year), false);
@@ -397,8 +400,10 @@ test("Runter zählt nur fallende Fälle, flache bleiben draußen", () => {
     }
   };
   const html = renderSeasonalityCard(pack, { symbol: "SPCX", name: "SpaceX" }, "all");
-  assert.match(html, /id="move-table"/);
-  assert.equal(html.includes("Long: Wie oft"), false);
+  assert.match(html, /Long: Wie oft ging es hoch/);
+  assert.match(html, /Short: Wie oft ging es runter/);
+  assert.deepEqual(tagCells(clockOf(html, "up")), ["60%", "20%", "80%", "–", "50%", "54 %"]);
+  assert.deepEqual(tagCells(clockOf(html, "down")), ["30%", "80%", "10%", "–", "50%", "41 %"]);
   assert.equal(html.includes("chart-legend"), false);
   assert.equal(ADVICE.test(html), false);
   assert.equal(/Keine Anlageberatung/.test(html), false);
@@ -463,9 +468,9 @@ test("Die Karte steht unter dem Muster und die Spanne lässt sie in Ruhe", () =>
       assert.equal(/Keine Anlageberatung/.test(view), false, symbol);
       assert.match(view, /Vergangenheit, keine Vorhersage/);
       assert.match(view, /nicht den ganzen Markt/);
-      assert.match(view, /id="move-table"/);
-      assert.equal(view.includes("Long: Wie oft"), false, symbol);
-      assert.equal(view.includes("wd-list"), false, symbol);
+      assert.match(view, /Long: Wie oft ging es hoch/, symbol);
+      assert.match(view, /Short: Wie oft ging es runter/, symbol);
+      assert.equal(view.includes("Mittlere Bewegung"), false, symbol);
     }
   }
   const tsla = renderSeasonalityCard(seasonality, { symbol: "TSLA" }, "all");
@@ -488,8 +493,8 @@ test("Die Karte steht unter dem Muster und die Spanne lässt sie in Ruhe", () =>
   assert.ok(slot("SPCX", "09").n >= MIN_CASES);
   assert.ok(slot("SPCX", "10").n >= MIN_CASES);
   assert.ok(slot("SPCX", "15:00").n >= MIN_CASES);
-  assert.match(spcx, /id="move-table"/);
-  assert.match(tsla, /noch zu wenig Daten/);
+  assert.match(spcx, /data-hour="08"/);
+  assert.match(tsla, /Long: Wie oft ging es hoch/);
   const mrvlCard = renderSeasonalityCard(seasonality, { symbol: "MRVL" }, "all");
   assert.match(mrvlCard, /MRVL/);
   assert.match(mrvlCard, /vor 15:30: Handel in Deutschland/);

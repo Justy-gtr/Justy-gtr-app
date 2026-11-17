@@ -471,14 +471,15 @@ export function seasonalityHeadline(symbol, windowStats) {
 
 const SHARE_RGB = { up: "125, 222, 192", down: "255, 139, 152" };
 
-/** Shade follows the printed share. Stronger means that direction happened more often. */
-function sharePaint(share, mode) {
+/** Under 50 % red, from 50 % green. Farther from 50 is stronger. */
+function sharePaint(share) {
   if (!Number.isFinite(share)) return { style: "", ink: false };
-  const amount = Math.min(1, Math.max(0, share / 100));
-  const alpha = Math.round((0.18 + amount * 0.74) * 100) / 100;
+  const dist = Math.min(1, Math.abs(share - 50) / 50);
+  const alpha = Math.round((0.32 + dist * 0.58) * 100) / 100;
+  const green = share >= 50;
   return {
-    style: `background:rgba(${SHARE_RGB[mode] || SHARE_RGB.up},${alpha})`,
-    ink: amount >= 0.7
+    style: `background:rgba(${green ? SHARE_RGB.up : SHARE_RGB.down},${alpha})`,
+    ink: share >= 70 || share <= 30
   };
 }
 
@@ -543,7 +544,7 @@ function shownShare(row, mode) {
 }
 
 function clockSpan(base, share, mode, aria, spaced) {
-  const paint = share == null ? { style: "", ink: false } : sharePaint(share, mode);
+  const paint = share == null ? { style: "", ink: false } : sharePaint(share);
   const quiet = share == null ? " is-quiet" : "";
   const ink = paint.ink ? " is-ink" : "";
   const text = share == null ? "–" : (spaced ? `${share} %` : `${share}%`);
@@ -719,7 +720,6 @@ export function renderSeasonalityCard(seasonality, ticker, season) {
     return `<article class="card season-card" aria-label="Wochentag und Uhrzeit">
       <p class="kicker">Wochentag &amp; Uhrzeit${symbol ? ` · ${esc(symbol)}` : ""}</p>
       <p class="season-note">Für diese Aktie liegen noch keine eigenen Tageszahlen.</p>
-      ${renderDirectionBlock(directionFromTicker(ticker))}
       <p class="season-note">${esc(PAST_NOTE)}</p>
     </article>`;
   }
@@ -734,7 +734,7 @@ export function renderSeasonalityCard(seasonality, ticker, season) {
       <p class="kicker">Wochentag &amp; Uhrzeit${symbol ? ` · ${esc(symbol)}` : ""}</p>
       ${toggle}
     </div>
-    ${renderDirectionBlock(directionPack(stats) || directionFromTicker(ticker))}
+    ${clockBlock(stats.hours || [], stats.grid || [], stats.days || [])}
     ${earlyLine(pack.earlyNote)}
     <p class="season-note">${esc(PAST_NOTE)}</p>
     <p class="analysis-note n-legend">${esc(SEASON_N_LEGEND)}</p>

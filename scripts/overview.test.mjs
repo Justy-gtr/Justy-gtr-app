@@ -2,10 +2,9 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { buildSymbolRecord, cheaperNames, historyPlacement, peerPlacement, shouldSkipFundamentals } from "../js/bewertung.js";
 import { renderBewertung } from "../js/bewertung-view.js";
-import { buildNews, filterNews, glancePoints } from "../js/news.js";
+import { buildNews, filterNews, glancePoints, hourWeek, sentimentLight, stockAgenda } from "../js/news.js";
 import { renderNews } from "../js/news-view.js";
-import { aggregateWeekdays } from "../js/seasonality.js";
-import { renderDirectionBlock } from "../js/seasonality.js";
+import { aggregateWeekdays, renderSeasonalityCard } from "../js/seasonality.js";
 import { moodReliability } from "../js/stimmung.js";
 import { renderStimmung } from "../js/stimmung-view.js";
 import { renderTraining } from "../js/training-view.js";
@@ -38,8 +37,9 @@ test("News steht neueste zuerst und filtert nach Aktie", () => {
   assert.equal(filterNews(items, "Markt")[0].id, "post:markt");
   assert.equal(filterNews(items, "RKLB").length, 0);
   const html = renderNews(data, { newsFilter: "alle" }, new Date("2026-11-17T21:00:00+01:00"));
-  assert.match(html, /Heute auf einen Blick/);
-  assert.match(html, /Was bewegt den Kurs/);
+  assert.match(html, /Letzte Woche/);
+  assert.match(html, /Die nächsten drei Stunden/);
+  assert.equal(html.includes("Was bewegt den Kurs"), false);
   assert.match(html, /data-filter="NVDA"/);
   assert.match(html, /data-filter="Markt"/);
   assert.ok(html.indexOf("NVDA") < html.indexOf("Neuer Beitrag"));
@@ -51,7 +51,48 @@ test("News steht neueste zuerst und filtert nach Aktie", () => {
   }, new Date("2026-11-17T12:00:00+01:00"));
   assert.equal(glance.length, 3);
   for (const line of glance) assert.ok(line.split(" ").length <= 6, line);
-  assert.match(renderNews(data, { newsFilter: "alle" }), /<th>Aktie<\/th>/);
+  const agenda = stockAgenda({
+    calendar: {
+      events: [
+        { id: "old", title: "Alt.", date: "2026-11-01", time: "10:00", timezone: "Europe/Berlin", tickers: ["TSLA"] },
+        { id: "soon", title: "Tesla legt Zahlen vor.", date: "2026-11-18", time: "22:20", timezone: "Europe/Berlin", tickers: ["TSLA"] },
+        { id: "later", title: "Ein später Termin.", date: "2026-11-20", time: "09:00", timezone: "Europe/Berlin", tickers: ["TSLA"] },
+        { id: "third", title: "Noch ein Termin.", date: "2026-11-21", time: "09:00", timezone: "Europe/Berlin", tickers: ["TSLA"] },
+        { id: "fourth", title: "Zu viel.", date: "2026-11-22", time: "09:00", timezone: "Europe/Berlin", tickers: ["TSLA"] }
+      ]
+    }
+  }, "TSLA", new Date("2026-11-17T12:00:00+01:00"));
+  assert.deepEqual(agenda.map((event) => event.id), ["soon", "later", "third"]);
+  const view = renderNews({
+    calendar: { events: agenda },
+    prices: { tickers: [] },
+    posts: { posts: [] }
+  }, { newsFilter: "TSLA" }, new Date("2026-11-17T12:00:00+01:00"));
+  assert.match(view, /Mi 18\.11\. 22:20/);
+  assert.match(view, /Tesla legt Zahlen vor/);
+  assert.equal(view.includes("…"), false);
+  const now = new Date("2026-11-17T15:00:00+01:00");
+  const bars = ["2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-16"].map((day, index) => ({
+    t: `${day}T14:00:00Z`,
+    open: 100,
+    eur: index < 3 ? 101 : 99
+  }));
+  const week = hourWeek({ history: { "1H": bars } }, now);
+  assert.equal(week.hour, 15);
+  assert.equal(week.n, 5);
+  assert.equal(week.up, 3);
+  assert.equal(week.share, 60);
+  assert.equal(sentimentLight({ sentiment: { symbols: { TSLA: { mood: "gut", updatedAt: "2026-11-17T15:00:00+01:00" } } } }, "TSLA").word, "positiv");
+  assert.equal(sentimentLight({ sentiment: { symbols: { RKLB: { mood: "gemischt", updatedAt: "2026-11-17T15:00:00+01:00" } } } }, "RKLB").word, "gemischt");
+  assert.equal(sentimentLight({ sentiment: { symbols: { SPCX: { mood: "schlecht", updatedAt: "2026-11-17T15:00:00+01:00" } } } }, "SPCX").word, "negativ");
+  const lit = renderNews({
+    prices: { tickers: [{ symbol: "TSLA", history: { "1H": bars } }] },
+    sentiment: { symbols: { TSLA: { mood: "gut", updatedAt: "2026-11-17T15:00:00+01:00" } } },
+    posts: { posts: [] },
+    calendar: { events: [] }
+  }, { newsFilter: "TSLA" }, now);
+  assert.match(lit, /Stimmung positiv/);
+  assert.match(lit, /#22c55e/);
 });
 
 test("Stimmung nennt fehlende Treffer und behält die Bereiche", () => {
@@ -150,7 +191,7 @@ test("Bewertung lässt ein negatives KGV leer und setzt die Spanne", () => {
   assert.equal(BANNED.test(html), false);
 });
 
-test("Wochentag nennt mittleren Anstieg und Rückgang in gleich hohen Bahnen", () => {
+test("Unter 50 Prozent ist rot, ab 50 Prozent grün", () => {
   const days = aggregateWeekdays([
     { t: "2026-01-02", close: 100 },
     { t: "2026-01-05", close: 110 },
@@ -159,22 +200,24 @@ test("Wochentag nennt mittleren Anstieg und Rückgang in gleich hohen Bahnen", (
   ]);
   assert.equal(days[0].avgUp, 10);
   assert.equal(days[0].avgDown, -10);
-  const fat = [0, 1, 2, 3, 4].map((index) => ({
-    n: 10,
-    up: index === 4 ? 3 : 6,
-    down: index === 4 ? 7 : 4,
-    avg: 0.2,
-    avgUp: 1.2 + index * 0.1,
-    avgDown: -0.8
-  }));
-  const html = renderDirectionBlock({ days: fat, hours: fat, source: "datei" });
-  assert.equal((html.match(/heat-cell/g) || []).length, 20);
-  assert.match(html, /background:rgba\(125, 222, 192/);
-  assert.match(html, /background:rgba\(255, 139, 152/);
-  assert.match(html, /Mittlere Bewegung hoch und runter/);
-  assert.match(html, />hoch</);
+  const row = (up) => ({ n: 10, up, down: 10 - up, avg: 0 });
+  const pack = {
+    symbols: {
+      TSLA: {
+        ranges: {
+          all: { days: [row(8), row(2), row(5), row(6), row(3)], hours: [], grid: [] },
+          year: { days: [row(8), row(2), row(5), row(6), row(3)], hours: [], grid: [] }
+        }
+      }
+    }
+  };
+  const html = renderSeasonalityCard(pack, { symbol: "TSLA" }, "all");
+  assert.match(html, /Long: Wie oft ging es hoch/);
+  assert.match(html, /Short: Wie oft ging es runter/);
+  assert.match(html, /data-row="tag"/);
+  assert.equal(html.includes("Mittlere Bewegung"), false);
+  const paint = (text) => html.slice(html.lastIndexOf("<span", html.indexOf(`>${text}<`)), html.indexOf(`>${text}<`));
+  assert.match(paint("80%"), /125, 222, 192/);
+  assert.match(paint("20%"), /255, 139, 152/);
   assert.equal(BANNED.test(html), false);
-  const thin = renderDirectionBlock({ days: [{ n: 2, up: 1, down: 1, avgUp: 1, avgDown: -1 }], hours: [] });
-  assert.match(thin, /noch zu wenig Daten/);
-  assert.equal((thin.match(/heat-cell/g) || []).length, 0);
 });
