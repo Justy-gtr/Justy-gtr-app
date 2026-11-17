@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-17T14:12:00+01:00",
+  "updatedAt": "2026-11-17T14:56:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
       "postsCount": 25,
-      "reason": "Cantor bleibt bei Overweight (345 $), Nvidia und andere Fonds stocken laut 13F auf, vorbörslich leicht im Plus. Citadels 94-%-Verkauf sorgt weiter für Gerede.",
+      "reason": "SpaceX ist jetzt Nvidias größte Aktienposition, Saudi-Fonds PIF hält still. Mehrere Großanleger setzen fast alles auf SpaceX; Citadels Verkauf bleibt Thema.",
       "sources": [
         {
-          "title": "@AIStockSavvy auf X (17.11., 12:44)",
-          "url": "https://x.com/AIStockSavvy/status/2122657168520360431"
+          "title": "@spcxGOD auf X (17.11., 14:15)",
+          "url": "https://x.com/spcxGOD/status/2122679900372910187"
         },
         {
-          "title": "@realcoincentral auf X (17.11., 13:13)",
-          "url": "https://x.com/realcoincentral/status/2122664343800312184"
+          "title": "@MoodSpaceX auf X (17.11., 14:50)",
+          "url": "https://x.com/MoodSpaceX/status/2122688708188999949"
         },
         {
-          "title": "@CaesarCapitalz auf X (17.11., 12:25)",
-          "url": "https://x.com/CaesarCapitalz/status/2122652220344676445"
+          "title": "@GripCitadel auf X (17.11., 14:50)",
+          "url": "https://x.com/GripCitadel/status/2122688882219061644"
         }
       ],
-      "updatedAt": "2026-11-17T14:12:00+01:00"
+      "updatedAt": "2026-11-17T14:56:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 30,
+      "score": 25,
       "postsCount": 25,
-      "reason": "Fusion mit SpaceX gilt als immer wahrscheinlicher (Wettmarkt Kalshi 62 %); Barclays bleibt bei 450 $, Cybercab-Halle in Grünheide. Kritiker sehen schwache Gewinne.",
+      "reason": "Cybercab-Halle in Grünheide und mögliche SpaceX-Fusion bleiben Thema. Kritiker verweisen auf die hohe Bewertung (KGV 156) und das Minus von gestern.",
       "sources": [
+        {
+          "title": "@DiplomaticTake auf X (17.11., 14:25)",
+          "url": "https://x.com/DiplomaticTake/status/2122682480830398890"
+        },
+        {
+          "title": "@onepagemarket auf X (17.11., 14:36)",
+          "url": "https://x.com/onepagemarket/status/2122685282348920847"
+        },
         {
           "title": "@joehansen auf X (17.11., 14:08)",
           "url": "https://x.com/joehansen/status/2122678138232872977"
-        },
-        {
-          "title": "@Livermore_Club auf X (17.11., 13:10)",
-          "url": "https://x.com/Livermore_Club/status/2122663614222111194"
-        },
-        {
-          "title": "@AIRoboticsInt auf X (17.11., 14:08)",
-          "url": "https://x.com/AIRoboticsInt/status/2122678346450612477"
         }
       ],
-      "updatedAt": "2026-11-17T14:12:00+01:00"
+      "updatedAt": "2026-11-17T14:56:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": 20,
-      "postsCount": 17,
-      "reason": "Electron schafft den 100. Start, dazu über 1 Mrd. $ neue Aufträge im Q3 und Citadels Einstieg. Die Bewertung hängt laut vielen aber an der verschobenen Neutron.",
+      "postsCount": 20,
+      "reason": "Citadels neuer Einstieg (~221 Mio. $) und der 100. Electron-Start werden gefeiert, Iridium-Satellitennews hilft. Bewertung hängt laut vielen an der Neutron.",
       "sources": [
+        {
+          "title": "@stocksinspace auf X (17.11., 14:32)",
+          "url": "https://x.com/stocksinspace/status/2122684361724080530"
+        },
+        {
+          "title": "@RCapitalX auf X (17.11., 14:15)",
+          "url": "https://x.com/RCapitalX/status/2122680086243811738"
+        },
         {
           "title": "@aktiennews_com auf X (17.11., 14:00)",
           "url": "https://x.com/aktiennews_com/status/2122676137075659164"
-        },
-        {
-          "title": "@Fiscal_ai auf X (17.11., 13:01)",
-          "url": "https://x.com/Fiscal_ai/status/2122661299478028421"
-        },
-        {
-          "title": "@AlphaOwlTrading auf X (17.11., 12:06)",
-          "url": "https://x.com/AlphaOwlTrading/status/2122647518773162008"
         }
       ],
-      "updatedAt": "2026-11-17T14:12:00+01:00"
+      "updatedAt": "2026-11-17T14:56:00+01:00"
     }
   }
 }
