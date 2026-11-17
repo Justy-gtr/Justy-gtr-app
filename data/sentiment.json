@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-17T10:25:00+01:00",
+  "updatedAt": "2026-11-17T10:37:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -26,24 +26,24 @@
     },
     "TSLA": {
       "mood": "gut",
-      "score": 35,
-      "postsCount": 25,
-      "reason": "Berichte über 3 Mrd. € Ausbau in Grünheide für das Cybercab freuen viele; dazu Barclays mit Ziel 450 $. Kritiker meckern über Bewertung und Tech-Ausverkauf.",
+      "score": 30,
+      "postsCount": 35,
+      "reason": "Viel Gerede über eine mögliche Fusion mit SpaceX samt unbestätigtem 450-$-Gerücht, das Kritiker ärgert; dazu Freude über den Grünheide-Ausbau und Barclays.",
       "sources": [
+        {
+          "title": "@BradMunchen auf X (17.11., 10:30)",
+          "url": "https://x.com/BradMunchen/status/2122623378364489804"
+        },
+        {
+          "title": "@JimmyTrendRiX auf X (17.11., 08:47)",
+          "url": "https://x.com/JimmyTrendRiX/status/2122597427576246518"
+        },
         {
           "title": "@EpochTimesDE auf X (17.11., 10:17)",
           "url": "https://x.com/EpochTimesDE/status/2122620196745842809"
-        },
-        {
-          "title": "@NomieGirari96o auf X (17.11., 10:18)",
-          "url": "https://x.com/NomieGirari96o/status/2122620364173754379"
-        },
-        {
-          "title": "@TeslaZoa auf X (17.11., 09:58)",
-          "url": "https://x.com/TeslaZoa/status/2122615282166628628"
         }
       ],
-      "updatedAt": "2026-11-17T10:25:00+01:00"
+      "updatedAt": "2026-11-17T10:37:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
