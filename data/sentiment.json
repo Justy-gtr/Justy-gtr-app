@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-17T10:37:00+01:00",
+  "updatedAt": "2026-11-17T11:16:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 45,
-      "postsCount": 15,
-      "reason": "Weiter Begeisterung nach dem Starship-Catch; dazu neue NSSL-Startaufträge und Gavin Bakers Fonds mit rund 42 % in SpaceX. Wenige Zweifler an den Kosten.",
+      "score": 40,
+      "postsCount": 25,
+      "reason": "Weiter Lob für den Starship-Catch und Nvidias große SpaceX-Beteiligung; dass Citadel fast alle SpaceX-Aktien abgegeben hat, sorgt aber für Diskussion.",
       "sources": [
         {
-          "title": "@RocketTerminal auf X (17.11., 10:00)",
-          "url": "https://x.com/RocketTerminal/status/2122615742084559238"
+          "title": "@jakeisinvestor auf X (17.11., 11:05)",
+          "url": "https://x.com/jakeisinvestor/status/2122632231118049449"
         },
         {
-          "title": "@kindcorp auf X (17.11., 10:02)",
-          "url": "https://x.com/kindcorp/status/2122616370420736018"
+          "title": "@Rahatirtaza auf X (17.11., 10:53)",
+          "url": "https://x.com/Rahatirtaza/status/2122629279867605056"
         },
         {
-          "title": "@electrickaos_ auf X (17.11., 10:00)",
-          "url": "https://x.com/electrickaos_/status/2122615902730326397"
+          "title": "@muskonomy auf X (17.11., 10:30)",
+          "url": "https://x.com/muskonomy/status/2122623278254870592"
         }
       ],
-      "updatedAt": "2026-11-17T10:05:00+01:00"
+      "updatedAt": "2026-11-17T11:16:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 30,
-      "postsCount": 35,
-      "reason": "Viel Gerede über eine mögliche Fusion mit SpaceX samt unbestätigtem 450-$-Gerücht, das Kritiker ärgert; dazu Freude über den Grünheide-Ausbau und Barclays.",
+      "postsCount": 30,
+      "reason": "Fusionsgerede mit SpaceX hält an; Altimeter-Chef Gerstner baut eine große Tesla-Position auf. Dazu Grünheide-Ausbau, Kritiker sehen schwache Gewinne.",
       "sources": [
+        {
+          "title": "@grok auf X (17.11., 10:56)",
+          "url": "https://x.com/grok/status/2122629847801278926"
+        },
+        {
+          "title": "@aktien_max auf X (17.11., 10:57)",
+          "url": "https://x.com/aktien_max/status/2122630071412273624"
+        },
         {
           "title": "@BradMunchen auf X (17.11., 10:30)",
           "url": "https://x.com/BradMunchen/status/2122623378364489804"
-        },
-        {
-          "title": "@JimmyTrendRiX auf X (17.11., 08:47)",
-          "url": "https://x.com/JimmyTrendRiX/status/2122597427576246518"
-        },
-        {
-          "title": "@EpochTimesDE auf X (17.11., 10:17)",
-          "url": "https://x.com/EpochTimesDE/status/2122620196745842809"
         }
       ],
-      "updatedAt": "2026-11-17T10:37:00+01:00"
+      "updatedAt": "2026-11-17T11:16:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 10,
+      "score": 15,
       "postsCount": 25,
-      "reason": "Lob für den 100. Electron-Start, aber der Kursrutsch und die Neutron-Verschiebung sorgen für Spott; ein großer Account lästert über Halter.",
+      "reason": "Laut 13F hat Citadel SpaceX fast ganz abgegeben und neu Rocket Lab im Depot, das freut Fans; Kursrutsch und Neutron-Verschiebung sorgen weiter für Spott.",
       "sources": [
+        {
+          "title": "@Rahatirtaza auf X (17.11., 10:53)",
+          "url": "https://x.com/Rahatirtaza/status/2122629279867605056"
+        },
+        {
+          "title": "@RCapitalX auf X (17.11., 10:06)",
+          "url": "https://x.com/RCapitalX/status/2122617396251021410"
+        },
         {
           "title": "@beautyofhelin auf X (17.11., 10:01)",
           "url": "https://x.com/beautyofhelin/status/2122616000738631783"
-        },
-        {
-          "title": "@JustSt0cks auf X (17.11., 09:55)",
-          "url": "https://x.com/JustSt0cks/status/2122614500801069060"
-        },
-        {
-          "title": "@RCapitalX auf X (17.11., 08:56)",
-          "url": "https://x.com/RCapitalX/status/2122599682660790430"
         }
       ],
-      "updatedAt": "2026-11-17T10:05:00+01:00"
+      "updatedAt": "2026-11-17T11:16:00+01:00"
     }
   }
 }
