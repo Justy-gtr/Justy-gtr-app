@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-17T09:48:00+01:00",
+  "updatedAt": "2026-11-17T10:05:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
-      "postsCount": 20,
-      "reason": "Nach dem Starship-Catch hebt Citi das Kursziel auf 280 $; laut 13F ist SpaceX Nvidias größte Beteiligung, ARK kauft ebenfalls zu.",
+      "postsCount": 15,
+      "reason": "Weiter Begeisterung nach dem Starship-Catch; dazu neue NSSL-Startaufträge und Gavin Bakers Fonds mit rund 42 % in SpaceX. Wenige Zweifler an den Kosten.",
       "sources": [
         {
-          "title": "@AsLongAslCan auf X (17.11., 08:43)",
-          "url": "https://x.com/AsLongAslCan/status/2122596410004541851"
+          "title": "@RocketTerminal auf X (17.11., 10:00)",
+          "url": "https://x.com/RocketTerminal/status/2122615742084559238"
         },
         {
-          "title": "@lanios_ auf X (17.11., 08:47)",
-          "url": "https://x.com/lanios_/status/2122597390444105741"
+          "title": "@kindcorp auf X (17.11., 10:02)",
+          "url": "https://x.com/kindcorp/status/2122616370420736018"
         },
         {
-          "title": "@MarketCapOf auf X (17.11., 08:52)",
-          "url": "https://x.com/MarketCapOf/status/2122598715492122974"
+          "title": "@electrickaos_ auf X (17.11., 10:00)",
+          "url": "https://x.com/electrickaos_/status/2122615902730326397"
         }
       ],
-      "updatedAt": "2026-11-17T09:48:00+01:00"
+      "updatedAt": "2026-11-17T10:05:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 20,
-      "reason": "Fans freuen sich über 150 neu registrierte Cybercabs und Sichtungen an der Ostküste; Chartleute sehen 375 $ als wichtige Marke, einige Kritiker an Musk.",
+      "score": 30,
+      "postsCount": 15,
+      "reason": "Barclays bleibt bei Overweight mit Ziel 450 $ und lobt Robotaxi und Cybercab; dazu Robotaxi-Zahlung per X Money. Einige streiten über die Bewertung.",
       "sources": [
         {
-          "title": "@ann_stone34 auf X (17.11., 08:30)",
-          "url": "https://x.com/ann_stone34/status/2122593121389396392"
+          "title": "@TeslaZoa auf X (17.11., 09:58)",
+          "url": "https://x.com/TeslaZoa/status/2122615282166628628"
         },
         {
-          "title": "@x_invest1 auf X (17.11., 08:35)",
-          "url": "https://x.com/x_invest1/status/2122594515987091624"
+          "title": "@TeslaZoa auf X (17.11., 09:57)",
+          "url": "https://x.com/TeslaZoa/status/2122615191947092441"
         },
         {
-          "title": "@traderjoe0319 auf X (17.11., 08:42)",
-          "url": "https://x.com/traderjoe0319/status/2122596203007258740"
+          "title": "@NextChargeDE auf X (17.11., 10:03)",
+          "url": "https://x.com/NextChargeDE/status/2122616545218306334"
         }
       ],
-      "updatedAt": "2026-11-17T09:48:00+01:00"
+      "updatedAt": "2026-11-17T10:05:00+01:00"
     },
     "RKLB": {
-      "mood": "gut",
-      "score": 30,
-      "postsCount": 20,
-      "reason": "Viel Lob für den 100. Electron-Start und die schnellere Laser-Terminal-Produktion nach dem Mynaric-Kauf; der gestrige Kursrutsch wird noch erwähnt.",
+      "mood": "gemischt",
+      "score": 10,
+      "postsCount": 25,
+      "reason": "Lob für den 100. Electron-Start, aber der Kursrutsch und die Neutron-Verschiebung sorgen für Spott; ein großer Account lästert über Halter.",
       "sources": [
+        {
+          "title": "@beautyofhelin auf X (17.11., 10:01)",
+          "url": "https://x.com/beautyofhelin/status/2122616000738631783"
+        },
+        {
+          "title": "@JustSt0cks auf X (17.11., 09:55)",
+          "url": "https://x.com/JustSt0cks/status/2122614500801069060"
+        },
         {
           "title": "@RCapitalX auf X (17.11., 08:56)",
           "url": "https://x.com/RCapitalX/status/2122599682660790430"
-        },
-        {
-          "title": "@theSpacecyborg auf X (17.11., 08:21)",
-          "url": "https://x.com/theSpacecyborg/status/2122591008030626226"
-        },
-        {
-          "title": "@listingtrack auf X (17.11., 08:27)",
-          "url": "https://x.com/listingtrack/status/2122592427236266074"
         }
       ],
-      "updatedAt": "2026-11-17T09:48:00+01:00"
+      "updatedAt": "2026-11-17T10:05:00+01:00"
     }
   }
 }
