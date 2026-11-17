@@ -52,7 +52,7 @@ function yahooSession(jar) {
   curl("https://fc.yahoo.com", jar);
   const crumb = curl("https://query1.finance.yahoo.com/v1/test/getcrumb", jar);
   const token = crumb.body.trim();
-  if (crumb.status !== 200 || !/^[A-Za-z0-9._-]+$/.test(token)) throw new Error(token.slice(0, 40) || String(crumb.status));
+  if (crumb.status !== 200 || !/^[A-Za-z0-9._/-]+$/.test(token)) throw new Error(token.slice(0, 40) || String(crumb.status));
   return token;
 }
 
@@ -68,19 +68,23 @@ function closesOf(chart) {
 }
 
 function loadSymbol(symbol, jar, crumb, fxRate, withHistory) {
-  const summaryUrl = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${encodeURIComponent(symbol)}?modules=summaryDetail,defaultKeyStatistics,price&crumb=${encodeURIComponent(crumb)}`;
+  const summaryUrl = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${encodeURIComponent(symbol)}?modules=summaryDetail,defaultKeyStatistics,price,calendarEvents&crumb=${encodeURIComponent(crumb)}`;
   const summary = getJson(summaryUrl, jar);
-  const chart = withHistory
-    ? getJson(`https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=1y&interval=1d`, jar)
-    : null;
+  const chart = getJson(`https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=${withHistory ? "1y" : "5d"}&interval=1d`, jar);
   const result = summary?.quoteSummary?.result?.[0];
   if (!result) throw new Error("leere Antwort");
+  const meta = chart?.chart?.result?.[0]?.meta || {};
   return buildSymbolRecord({
     symbol,
     summary: result.summaryDetail || {},
     stats: result.defaultKeyStatistics || {},
-    price: result.price || {},
-    closes: chart ? closesOf(chart) : [],
+    price: {
+      ...(result.price || {}),
+      fiftyTwoWeekHigh: meta.fiftyTwoWeekHigh,
+      fiftyTwoWeekLow: meta.fiftyTwoWeekLow
+    },
+    events: result.calendarEvents || {},
+    closes: withHistory ? closesOf(chart) : [],
     fxRate
   });
 }

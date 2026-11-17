@@ -161,8 +161,8 @@ test("Wochentag nennt mittleren Anstieg und Rückgang in gleich hohen Bahnen", (
   assert.equal(days[0].avgDown, -10);
   const fat = [0, 1, 2, 3, 4].map((index) => ({
     n: 10,
-    up: 6,
-    down: 4,
+    up: index === 4 ? 3 : 6,
+    down: index === 4 ? 7 : 4,
     avg: 0.2,
     avgUp: 1.2 + index * 0.1,
     avgDown: -0.8

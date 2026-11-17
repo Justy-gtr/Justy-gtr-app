@@ -88,6 +88,7 @@ export function renderAnalyse(data, ui) {
   const result = analyseChart(ticker, range);
   const change = rangeChange(result.candles || []);
   return `
+    ${renderSeasonalityCard(data?.seasonality, ticker, ui?.analyseSeason)}
     <header class="page-head">
       <p class="eyebrow">Chartanalyse</p>
       <h2>${esc(ticker?.name || "Kurs")}</h2>
@@ -108,7 +109,6 @@ export function renderAnalyse(data, ui) {
     </div>
     ${analyseViewToggle("kerzen")}
     ${musterCard(result)}
-    ${renderSeasonalityCard(data?.seasonality, ticker, ui?.analyseSeason)}
     <button type="button" class="text-btn" data-action="explain" data-symbol="${esc(ticker?.symbol || "")}">Warum diese Bewegung?</button>
     ${renderDayPaths(dayPathsFor(ticker, data?.seasonality))}
   `;

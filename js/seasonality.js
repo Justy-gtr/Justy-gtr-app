@@ -650,34 +650,27 @@ function directionPack(stats) {
   return { days, hours: stats?.hours || [], source: "datei" };
 }
 
-function heatStyle(value, scale) {
-  if (!Number.isFinite(value) || value === 0 || !scale) return "";
-  const amount = Math.min(1, Math.abs(value) / scale);
-  const alpha = Math.round((0.28 + amount * 0.62) * 100) / 100;
-  const rgb = value > 0 ? "125, 222, 192" : "255, 139, 152";
+/** Green from 50 % up-moves, red below. Stronger color means farther from 50. */
+function shareStyle(row) {
+  const share = upPercent(row);
+  if (share == null) return "";
+  const dist = Math.min(1, Math.abs(share - 50) / 50);
+  const alpha = Math.round((0.38 + dist * 0.5) * 100) / 100;
+  const rgb = share >= 50 ? "125, 222, 192" : "255, 139, 152";
   return `background:rgba(${rgb},${alpha})`;
 }
 
-function heatScale(rows, key) {
-  let max = 0;
-  for (const row of rows) {
-    if (!row || row.n < MIN_CASES || !Number.isFinite(row[key])) continue;
-    max = Math.max(max, Math.abs(row[key]));
-  }
-  return max;
-}
-
-function heatCell(row, key, scale) {
+function heatCell(row, key) {
   const show = row && row.n >= MIN_CASES && Number.isFinite(row[key]);
   const text = show ? formatSignedPct(row[key]) : "–";
-  const style = show ? heatStyle(row[key], scale) : "";
+  const style = show ? shareStyle(row) : "";
   return `<td class="heat-cell${show ? "" : " is-quiet"}" style="${style}">${esc(text)}</td>`;
 }
 
 function heatTable(title, labels, rows, keys) {
   const body = labels.map((label, index) => {
     const row = rows[index];
-    return `<tr data-heat="${esc(keys[index] || label)}"><th>${esc(label)}</th>${heatCell(row, "avgUp", heatScale(rows, "avgUp"))}${heatCell(row, "avgDown", heatScale(rows, "avgDown"))}</tr>`;
+    return `<tr data-heat="${esc(keys[index] || label)}"><th>${esc(label)}</th>${heatCell(row, "avgUp")}${heatCell(row, "avgDown")}</tr>`;
   }).join("");
   return `<table class="heat-table" aria-label="${esc(title)}">
     <thead><tr><th></th><th>hoch</th><th>runter</th></tr></thead>
@@ -706,12 +699,10 @@ export function renderDirectionBlock(pack) {
     shownLabels.push(slotFace(slot));
     shownKeys.push(slot);
   });
-  const note = pack.source === "reihe" ? `<p class="season-note">Aus der geladenen Kursreihe, neben den Flächen.</p>` : "";
   return `<div class="heat-block" id="move-table">
     <p class="season-kicker">Mittlere Bewegung hoch und runter</p>
     ${heatTable("Wochentag", WEEKDAY_LABELS, days, WEEKDAY_LABELS)}
     ${shownHours.length ? heatTable("Stunde", shownLabels, shownHours, shownKeys) : ""}
-    ${note}
   </div>`;
 }
 
@@ -726,7 +717,7 @@ export function renderSeasonalityCard(seasonality, ticker, season) {
   const pack = seasonality?.symbols?.[symbol];
   if (!pack?.ranges?.all) {
     return `<article class="card season-card" aria-label="Wochentag und Uhrzeit">
-      <p class="kicker">Wochentag &amp; Uhrzeit</p>
+      <p class="kicker">Wochentag &amp; Uhrzeit${symbol ? ` · ${esc(symbol)}` : ""}</p>
       <p class="season-note">Für diese Aktie liegen noch keine eigenen Tageszahlen.</p>
       ${renderDirectionBlock(directionFromTicker(ticker))}
       <p class="season-note">${esc(PAST_NOTE)}</p>
@@ -734,21 +725,16 @@ export function renderSeasonalityCard(seasonality, ticker, season) {
   }
   const key = season === "year" && pack.ranges.year ? "year" : "all";
   const stats = pack.ranges[key];
-  const headline = seasonalityHeadline(symbol, stats);
   const toggle = rangesMatch(pack) ? "" : `<div class="season-toggle" role="group" aria-label="Zeitraum der Statistik">
       <button type="button" data-action="analyse-season" data-season="year" aria-pressed="${key === "year" ? "true" : "false"}">1 Jahr</button>
       <button type="button" data-action="analyse-season" data-season="all" aria-pressed="${key === "all" ? "true" : "false"}">Alles</button>
     </div>`;
   return `<article class="card season-card" aria-label="Wochentag und Uhrzeit" data-season="${key}">
     <div class="season-head">
-      <p class="kicker">Wochentag &amp; Uhrzeit</p>
+      <p class="kicker">Wochentag &amp; Uhrzeit${symbol ? ` · ${esc(symbol)}` : ""}</p>
       ${toggle}
     </div>
-    <p class="season-lead">${esc(headline)}</p>
-    <p class="season-kicker">Tage, Schluss zu Schluss</p>
-    <div class="wd-list">${weekdayRows(stats.days || [])}</div>
     ${renderDirectionBlock(directionPack(stats) || directionFromTicker(ticker))}
-    ${clockBlock(stats.hours || [], stats.grid || [], stats.days || [])}
     ${earlyLine(pack.earlyNote)}
     <p class="season-note">${esc(PAST_NOTE)}</p>
     <p class="analysis-note n-legend">${esc(SEASON_N_LEGEND)}</p>

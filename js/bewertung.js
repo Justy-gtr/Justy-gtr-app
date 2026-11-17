@@ -50,7 +50,36 @@ export function peHistory(closes, eps) {
  * One symbol from Yahoo quoteSummary modules summaryDetail, defaultKeyStatistics and price.
  * A negative trailing or forward profit clears the ratio instead of showing a misleading number.
  */
-export function buildSymbolRecord({ symbol, summary = {}, stats = {}, price = {}, closes = [], fxRate = null } = {}) {
+export const ABOUT = {
+  SPCX: "SpaceX bringt Lasten in den Orbit und betreibt Starlink.",
+  TSLA: "Tesla baut Autos, Speicher und Software.",
+  RKLB: "Rocket Lab startet kleine Raketen.",
+  MRVL: "Marvell baut Chips für Rechenzentren und Netze.",
+  NVDA: "Nvidia baut Rechenchips für KI.",
+  AAPL: "Apple baut Telefone, Rechner und Dienste.",
+  MSFT: "Microsoft macht Software und Cloud.",
+  GOOGL: "Alphabet betreibt Suche, Werbung und Cloud.",
+  AMZN: "Amazon betreibt Handel und Cloud.",
+  META: "Meta betreibt soziale Netze.",
+  AMD: "AMD baut Prozessoren und Grafikchips.",
+  AVGO: "Broadcom baut Chips und Netztechnik.",
+  INTC: "Intel stellt Prozessoren her.",
+  QCOM: "Qualcomm entwirft Funkchips für Telefone.",
+  ASML: "ASML baut Maschinen für Chipfabriken.",
+  "SAP.DE": "SAP macht Unternehmenssoftware.",
+  "IFX.DE": "Infineon macht Halbleiter für Autos und Industrie."
+};
+
+export function yahooDay(value) {
+  if (value == null) return null;
+  if (Array.isArray(value)) return yahooDay(value[0]);
+  const raw = typeof value === "object" ? value.raw ?? value.fmt : value;
+  if (typeof raw === "number" && raw > 1e9) return new Date(raw * 1000).toISOString().slice(0, 10);
+  if (typeof raw === "string" && /^\d{4}-\d{2}-\d{2}/.test(raw)) return raw.slice(0, 10);
+  return null;
+}
+
+export function buildSymbolRecord({ symbol, summary = {}, stats = {}, price = {}, events = {}, closes = [], fxRate = null } = {}) {
   const eps = rawNum(stats.trailingEps);
   const reportedPe = rawNum(summary.trailingPE);
   const px = rawNum(price.regularMarketPrice);
@@ -86,6 +115,13 @@ export function buildSymbolRecord({ symbol, summary = {}, stats = {}, price = {}
       marketCapEur = cap / rate;
     }
   }
+  const toEur = (value) => {
+    if (value == null) return null;
+    if (currency === "EUR") return value;
+    return rate > 0 ? value / rate : null;
+  };
+  const weekHigh = rawNum(price.fiftyTwoWeekHigh);
+  const weekLow = rawNum(price.fiftyTwoWeekLow);
   return {
     symbol,
     name: price.longName || price.shortName || symbol,
@@ -98,6 +134,13 @@ export function buildSymbolRecord({ symbol, summary = {}, stats = {}, price = {}
     marketCapUsd,
     marketCapEur,
     epsTrailing: eps,
+    weekHigh,
+    weekLow,
+    weekHighEur: toEur(weekHigh),
+    weekLowEur: toEur(weekLow),
+    earningsDate: yahooDay(events?.earnings?.earningsDate),
+    dividendDate: yahooDay(events?.dividendDate) || yahooDay(events?.exDividendDate),
+    about: ABOUT[symbol] || "",
     history: peState === "negativ" ? { n: 0, min: null, max: null, current: null } : peHistory(closes, eps),
     sources: [{ title: `Yahoo Finance ${symbol}`, url: `https://finance.yahoo.com/quote/${encodeURIComponent(symbol)}` }]
   };
@@ -139,6 +182,7 @@ export function shouldSkipFundamentals(previous, now = new Date(), force = false
   if (!previous?.asOf || !Array.isArray(previous.symbols)) return false;
   const have = new Set(previous.symbols.map((item) => item?.symbol));
   if (!UNIVERSE.every((symbol) => have.has(symbol))) return false;
+  if (!previous.symbols.every((item) => item?.about && Object.prototype.hasOwnProperty.call(item, "weekHighEur"))) return false;
   if (typeof dayOf !== "function") return false;
   return dayOf(previous.asOf) != null && dayOf(previous.asOf) === dayOf(now);
 }

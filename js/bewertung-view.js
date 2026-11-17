@@ -26,7 +26,7 @@ const NAMES = {
   "SAP.DE": "SAP",
   "IFX.DE": "Infineon"
 };
-import { esc, formatNumber } from "./logic.js";
+import { berlinDate, calendarList, calendarSentence, calendarWhen, esc, formatEUR, formatNumber } from "./logic.js";
 
 function formatRatio(value) {
   if (!Number.isFinite(value)) return "—";
@@ -59,19 +59,9 @@ function forwardSentence(row) {
   return "";
 }
 
-function bar(placement, label) {
-  if (!placement?.enough) {
-    return `<div class="value-block"><p class="kicker">${esc(label)}</p><p class="value-empty">noch zu wenig Daten</p></div>`;
-  }
-  const left = (placement.position * 100).toFixed(1);
-  return `<div class="value-block">
-    <p class="kicker">${esc(label)}</p>
-    <div class="value-scale" role="img" aria-label="${esc(placement.word)}">
-      <div class="value-bar"><span class="value-mark" style="left:${left}%"></span></div>
-      <div class="value-labels"><span>günstig</span><span>normal</span><span>teuer</span></div>
-    </div>
-    <p class="value-word">${esc(placement.word)}</p>
-  </div>`;
+function placeLine(label, placement) {
+  const text = placement?.enough ? placement.word : "noch zu wenig Daten";
+  return `<p class="value-plain">${esc(label)}: ${esc(text)}.</p>`;
 }
 
 export function renderBewertung(data, ui) {
@@ -89,7 +79,6 @@ export function renderBewertung(data, ui) {
   const forwardLine = forwardSentence(row);
   const salesLine = row?.priceToSales == null ? "Kein KUV gemeldet." : "";
   const cap = formatCapEur(row?.marketCapEur);
-  const historyNote = data?.fundamentals?.historyNote || "Die Spanne vergleicht den heutigen Gewinn mit den Tagesschlüssen der letzten zwölf Monate.";
   return `
     <header class="page-head">
       <p class="eyebrow">Bewertung</p>
@@ -107,19 +96,52 @@ export function renderBewertung(data, ui) {
       ${forwardLine ? `<p class="value-plain">${esc(forwardLine)}</p>` : ""}
       ${salesLine ? `<p class="value-plain">${esc(salesLine)}</p>` : ""}
       <p class="value-cap">Marktkapitalisierung <strong>${esc(cap)}</strong></p>
-      ${bar(history, "Gegen die eigene Spanne")}
-      ${history.enough ? `<p class="muted value-note">${esc(historyNote)}</p>` : ""}
-      ${bar(peers, "KGV gegen die anderen beobachteten Aktien")}
-      ${peers.enough ? `<p class="muted value-note">Mittel der anderen: ${esc(formatRatio(peers.median))}.</p>` : ""}
-      ${bar(salesPeers, "KUV gegen die anderen beobachteten Aktien")}
-      <p class="muted value-note">Für die eigene Spanne des KUV liegt keine frühere Umsatzreihe vor.</p>
+      ${placeLine("Gegen die eigene Spanne", history)}
+      ${placeLine("Gegen die anderen", peers.enough ? peers : salesPeers)}
     </article>
     <section class="card cheap-card" aria-label="Vergleichsweise niedrig bewertet">
       <p class="kicker">Vergleichsweise niedrig bewertet</p>
-      ${cheap.length ? `<ul class="cheap-list">${cheap.map((item) => {
+      ${cheap.length ? `<div class="cheap-list">${cheap.map((item) => {
         const figure = item.trailingPe > 0 ? `KGV ${formatRatio(item.trailingPe)}` : `KUV ${formatRatio(item.priceToSales)}`;
-        return `<li><strong>${esc(NAMES[item.symbol] || item.symbol)}</strong><span>${esc(figure)}</span></li>`;
-      }).join("")}</ul>` : `<p class="value-empty">noch zu wenig Daten</p>`}
+        return `<button type="button" class="cheap-hit" data-action="open-value" data-symbol="${esc(item.symbol)}"><strong>${esc(NAMES[item.symbol] || item.symbol)}</strong><span>${esc(figure)}</span></button>`;
+      }).join("")}</div>` : `<p class="value-empty">noch zu wenig Daten</p>`}
     </section>
   `;
+}
+
+function datedLine(iso, text, now) {
+  if (!iso || iso < berlinDate(now)) return "";
+  const when = calendarWhen({ date: iso });
+  return `<li><span class="muted">${esc(when)}</span> ${esc(text)}</li>`;
+}
+
+export function valueDetail(data, symbol, now = new Date()) {
+  const row = symbolsOf(data?.fundamentals).find((item) => item.symbol === symbol) || null;
+  const name = NAMES[symbol] || row?.name || symbol || "Aktie";
+  const events = calendarList(data?.calendar?.events || [], now)
+    .filter((event) => (event.tickers || []).includes(symbol))
+    .slice(0, 3);
+  const range = row?.weekLowEur != null && row?.weekHighEur != null
+    ? `${formatEUR(row.weekLowEur)} bis ${formatEUR(row.weekHighEur)}`
+    : "nicht gemeldet";
+  const upcoming = [
+    datedLine(row?.earningsDate, "Zahlen stehen an.", now),
+    datedLine(row?.dividendDate, "Eine Dividende steht an.", now),
+    ...events.map((event) => `<li><span class="muted">${esc(calendarWhen(event))}</span> ${esc(calendarSentence(event))}</li>`)
+  ].filter(Boolean).join("");
+  return {
+    kind: "value",
+    title: name,
+    html: `
+      <p>${esc(row?.about || "Keine kurze Beschreibung hinterlegt.")}</p>
+      <div class="value-grid">
+        <div><span class="value-num">${esc(formatRatio(row?.trailingPe))}</span><span class="muted">KGV bisher</span></div>
+        <div><span class="value-num">${esc(formatRatio(row?.priceToSales))}</span><span class="muted">KUV</span></div>
+      </div>
+      <p class="value-cap">Marktkapitalisierung <strong>${esc(formatCapEur(row?.marketCapEur))}</strong></p>
+      <p>52-Wochen-Spanne ${esc(range)}.</p>
+      <p class="kicker">Die nächsten Tage</p>
+      ${upcoming ? `<ul class="cheap-list">${upcoming}</ul>` : `<p class="muted">Keine Termine in den nächsten Tagen.</p>`}
+    `
+  };
 }

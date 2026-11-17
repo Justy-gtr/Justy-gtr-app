@@ -1,6 +1,6 @@
 import { chartAnalysis } from "./analysis.js";
 import { analyseViewToggle, musterCard } from "./analyse-view.js";
-import { renderBewertung } from "./bewertung-view.js";
+import { renderBewertung, valueDetail } from "./bewertung-view.js";
 import { renderNews } from "./news-view.js";
 import { renderTraining } from "./training-view.js";
 import { sparkline } from "./chart.js";
@@ -32,6 +32,8 @@ import {
   sessionBlurb,
   headlineEvent,
   calendarList,
+  calendarSentence,
+  calendarWhen,
   orderCalendarEvents,
   calendarStart,
   calendarEnd,
@@ -589,28 +591,10 @@ function sessionDetail(id) {
   return { kind: "session", title, html: `<p>${esc(sessionBlurb(id))}</p>` };
 }
 
-function shortTitle(title) {
-  const words = String(title || "").trim().split(/\s+/).filter(Boolean);
-  if (words.length <= 8) return words.join(" ");
-  return `${words.slice(0, 8).join(" ")}…`;
-}
-
-function rowWhen(event, now) {
-  const endDay = typeof event?.end === "string" && /^\d{4}-\d{2}-\d{2}$/.test(event.end) ? event.end : "";
-  const startDay = String(event?.date || "");
-  const today = berlinDate(now);
-  if (endDay && startDay && startDay < today && endDay >= today) {
-    const [year, month, day] = endDay.split("-").map(Number);
-    const label = new Intl.DateTimeFormat("de-DE", { timeZone: "Europe/Berlin", day: "numeric", month: "short" }).format(new Date(Date.UTC(year, month - 1, day, 12)));
-    return `bis ${label}`;
-  }
-  return formatEventClock(event, now);
-}
-
-function eventRow(event, now) {
+function eventRow(event) {
   return `<button type="button" class="card linkish cal-row" data-action="open-event" data-id="${esc(event.id)}">
-    <span class="muted">${esc(rowWhen(event, now))}</span>
-    <strong>${esc(shortTitle(event.title))}</strong>
+    <span class="muted">${esc(calendarWhen(event))}</span>
+    <strong>${esc(calendarSentence(event))}</strong>
   </button>`;
 }
 
@@ -647,7 +631,7 @@ export function renderKalender(data, ui, now = new Date()) {
       <p class="eyebrow">Kalender</p>
       <h2>Termine</h2>
     </header>
-    <div class="stack">${events.map((event) => eventRow(event, now)).join("") || `<p class="empty">Gerade liegt kein Termin vorn.</p>`}</div>
+    <div class="stack">${events.map((event) => eventRow(event)).join("") || `<p class="empty">Gerade liegt kein Termin vorn.</p>`}</div>
   `;
 }
 
@@ -837,6 +821,7 @@ function updatesDetail(data, now) {
 export function detailContent(action, dataset, ctx) {
   const { data, ui, store } = ctx;
   if (action === "open-company") return companyDetail(data, dataset.symbol || dataset.id, ui);
+  if (action === "open-value") return valueDetail(data, dataset.symbol, ctx.now || new Date());
   if (action === "open-favorite") return favoriteDetail(data, dataset.id, ui);
   if (action === "explain") return explainDetail(data, dataset.symbol);
   if (action === "open-event") return eventDetail(data, dataset.id);

@@ -115,15 +115,43 @@ function fewWords(text, max = 5) {
 }
 
 const REASON = /Treiber|Gestützt|Gegenwind|Getragen|Meldung|Bericht|Anleger/;
+const PRICE_DUMP = /schließt bei|Xetra-Schluss|nachbörslich|Gesamtmarkt|Nasdaq Composite|S&P 500|Der Dax hatte|Huang hat|Vor Nvidias Zahlen|Nach Börsenschluss/;
+const BANNED_WHY = /\b(kaufen|verkaufen|Empfehlung|Kaufsignal)\b/i;
 
-/** First reason sentence, a few words, not the price print. */
-export function shortWhy(text) {
-  const parts = String(text || "").replace(/\s+/g, " ").trim().split(/(?<=[.!?])\s/).filter(Boolean);
-  const hit = parts.find((part) => REASON.test(part)) || "";
-  const words = hit.replace(/\([^)]*\)/g, " ").replace(/\s+/g, " ").trim().split(" ").filter(Boolean).slice(0, 12);
-  if (!words.length) return "Keine kurze Einordnung.";
-  const line = words.join(" ").replace(/[,:;–-]+$/, "").replace(/\s+(und|für|der|die|das|dem|den|nach|von|mit|einem|einer|am|im)$/i, "");
-  return /[.!?…]$/.test(line) ? line : `${line}.`;
+function tidy(text) {
+  return String(text || "")
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/\s+/g, " ")
+    .replace(/\s+([,.;:])/g, "$1")
+    .trim();
+}
+
+function pieces(text) {
+  const masked = String(text || "").replace(/\b(Mrd|Mio|St|bzw|ca|Nr)\./gi, "$1§");
+  return masked.split(/(?<=[.!?])\s/).map((part) => tidy(part.replace(/§/g, "."))).filter(Boolean);
+}
+
+function closeSentence(text) {
+  let line = tidy(text).replace(/[,:;–\-]+\s*$/, "").replace(/\s+(und|für|oder|sowie|nach|von|mit|dass)$/i, "");
+  if (!line) return "";
+  line = line.charAt(0).toUpperCase() + line.slice(1);
+  return /[.!?]$/.test(line) ? line : `${line}.`;
+}
+
+/** One complete sentence on the reason. Price prints are left out. */
+export function shortWhy(text, changePct = null) {
+  const parts = pieces(text);
+  const useful = parts.filter((part) => !PRICE_DUMP.test(part));
+  let hit = useful.find((part) => REASON.test(part)) || "";
+  if (hit && /\bnicht\b/.test(hit.split(";")[0]) && hit.includes(";")) hit = hit.split(";").slice(1).join(";");
+  else hit = hit.split(";")[0];
+  hit = hit.split(/\s[–—]\s/)[0];
+  if (BANNED_WHY.test(hit)) hit = hit.split(BANNED_WHY)[0];
+  const sentence = closeSentence(hit);
+  if (sentence.split(" ").filter(Boolean).length >= 5 && !BANNED_WHY.test(sentence)) return sentence;
+  if (Number(changePct) < 0) return "Kein klarer Anlass, Markt insgesamt schwächer.";
+  if (Number(changePct) > 0) return "Kein klarer Anlass, Markt insgesamt fester.";
+  return "Kein klarer Anlass.";
 }
 
 export function courseDrivers(data) {
@@ -139,7 +167,7 @@ export function courseDrivers(data) {
       name: ticker.name || ticker.symbol,
       priceEur: ticker.priceEur,
       changePct: ticker.changePct,
-      why: shortWhy(ticker.why)
+      why: shortWhy(ticker.why, ticker.changePct)
     }));
 }
 
