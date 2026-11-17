@@ -542,6 +542,66 @@
           "url": "https://finance.yahoo.com/quote/TSLA"
         }
       ]
+    },
+    {
+      "id": "SPCX-2026-11-17",
+      "symbol": "SPCX",
+      "name": "SpaceX",
+      "changePct": -3.5,
+      "priceEur": 124.52,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-17T04:15:47.349Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Alpaca Markets IEX SPCX",
+          "url": "https://data.alpaca.markets/v2/stocks/SPCX/snapshot?feed=iex"
+        },
+        {
+          "title": "Yahoo Finance SPX.DE",
+          "url": "https://finance.yahoo.com/quote/SPX.DE"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance SPCX",
+          "url": "https://finance.yahoo.com/quote/SPCX"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-2026-11-17",
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "changePct": -2.22,
+      "priceEur": 346.2,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-17T04:15:47.349Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Alpaca Markets IEX TSLA",
+          "url": "https://data.alpaca.markets/v2/stocks/TSLA/snapshot?feed=iex"
+        },
+        {
+          "title": "Yahoo Finance TL0.DE",
+          "url": "https://finance.yahoo.com/quote/TL0.DE"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA"
+        }
+      ]
     }
   ]
 }
