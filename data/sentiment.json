@@ -1,56 +1,60 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-17T12:38:00+01:00",
+  "updatedAt": "2026-11-17T12:57:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
       "postsCount": 25,
-      "reason": "13F-Welle: Nvidia, ARK und Tudor stocken bei SpaceX auf, dazu Lob für den Starship-Catch. Citadels 94-%-Verkauf und Starlink-Ärger in Südafrika bremsen.",
+      "reason": "Cantor bleibt bei Overweight (345 $), Nvidia und andere Fonds stocken laut 13F auf, vorbörslich leicht im Plus. Citadels 94-%-Verkauf sorgt weiter für Gerede.",
       "sources": [
+        {
+          "title": "@AIStockSavvy auf X (17.11., 12:44)",
+          "url": "https://x.com/AIStockSavvy/status/2122657168520360431"
+        },
         {
           "title": "@Investingcom auf X (17.11., 12:13)",
           "url": "https://x.com/Investingcom/status/2122649392066814261"
-        },
-        {
-          "title": "@spcxGOD auf X (17.11., 11:59)",
-          "url": "https://x.com/spcxGOD/status/2122645829617930642"
         },
         {
           "title": "@CaesarCapitalz auf X (17.11., 12:25)",
           "url": "https://x.com/CaesarCapitalz/status/2122652220344676445"
         }
       ],
-      "updatedAt": "2026-11-17T12:38:00+01:00"
+      "updatedAt": "2026-11-17T12:57:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 30,
       "postsCount": 25,
-      "reason": "Barclays bleibt bei Overweight und 450 $ wegen Robotaxi; Fusionsgerede mit SpaceX und Cybercab-Pläne für Grünheide. Kritiker nennen schwache Gewinne und China-Absatz.",
+      "reason": "Barclays bleibt bei Overweight (450 $) wegen Robotaxi; Fusionsgerede mit SpaceX hält an. Kritiker verweisen auf schwache Gewinne und den Rutsch unter die 200-Tage-Linie.",
       "sources": [
         {
-          "title": "@tenet_research auf X (17.11., 11:23)",
-          "url": "https://x.com/tenet_research/status/2122636801194275081"
+          "title": "@AIStockSavvy auf X (17.11., 12:49)",
+          "url": "https://x.com/AIStockSavvy/status/2122658419605942656"
         },
         {
           "title": "@moomoo auf X (17.11., 12:30)",
           "url": "https://x.com/moomoo/status/2122653479680242156"
         },
         {
-          "title": "@Stefan_Hajek auf X (17.11., 11:33)",
-          "url": "https://x.com/Stefan_Hajek/status/2122639211677491564"
+          "title": "@NeoTSX auf X (17.11., 12:38)",
+          "url": "https://x.com/NeoTSX/status/2122655617416565083"
         }
       ],
-      "updatedAt": "2026-11-17T12:38:00+01:00"
+      "updatedAt": "2026-11-17T12:57:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 15,
+      "score": 20,
       "postsCount": 17,
-      "reason": "Citadels neue Rocket-Lab-Position (ca. 221 Mio. $) statt SpaceX wird viel diskutiert; sonst wenig Neues, viel Werbung. Kursrutsch und Neutron-Verschiebung bleiben Thema.",
+      "reason": "Neuer Start geglückt: Electron brachte den Radarsatelliten QPS-SAR-19 ins All. Citadels neue Rocket-Lab-Position wird diskutiert; Neutron-Verschiebung bleibt Thema.",
       "sources": [
+        {
+          "title": "@ICR_AT_UNIVERSE auf X (17.11., 12:50)",
+          "url": "https://x.com/ICR_AT_UNIVERSE/status/2122658513629675926"
+        },
         {
           "title": "@AlphaOwlTrading auf X (17.11., 12:06)",
           "url": "https://x.com/AlphaOwlTrading/status/2122647518773162008"
@@ -58,13 +62,9 @@
         {
           "title": "@LongBullz auf X (17.11., 12:33)",
           "url": "https://x.com/LongBullz/status/2122654284026163405"
-        },
-        {
-          "title": "@dixonhill432305 auf X (17.11., 12:21)",
-          "url": "https://x.com/dixonhill432305/status/2122651427537629469"
         }
       ],
-      "updatedAt": "2026-11-17T12:38:00+01:00"
+      "updatedAt": "2026-11-17T12:57:00+01:00"
     }
   }
 }
