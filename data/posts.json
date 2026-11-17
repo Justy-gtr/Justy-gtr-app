@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-16T22:00:00+01:00",
+  "asOf": "2026-11-17T05:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,276 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2122542607653896255",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T05:09:27+01:00",
+      "summaryDe": "Musk antwortet Andrew Ross Sorkin, der Fragen für den DealBook-Gipfel am Mittwoch sammelt: Er sei dann in China und nur „digital“ dabei. Das bestätigt, dass Musk Trump zum APEC-Gipfel nach Shenzhen begleitet.",
+      "originalText": "@andrewrsorkin @dealbook I will be in China, so it will be digital me",
+      "url": "https://x.com/elonmusk/status/2122542607653896255",
+      "tickers": [
+        "TSLA",
+        "SPCX"
+      ],
+      "companies": [
+        "Tesla",
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 05:09): @andrewrsorkin @dealbook I will be in China, so it will be digital me",
+          "url": "https://x.com/elonmusk/status/2122542607653896255"
+        },
+        {
+          "title": "Beantworteter Post @andrewrsorkin (17.11., 04:00): Vorbereitung DealBook-Gipfel am Mittwoch",
+          "url": "https://x.com/andrewrsorkin/status/2122525131792642242"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122511400908243146",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T03:05:26+01:00",
+      "summaryDe": "Musk zum Video, in dem die Fangarme beim Schiffsfang Hitzeschutzmaterial (Ablator) von Ship 42 abschaben: Das werde bei künftigen Flügen durch Edelstahlwolle ersetzt. Technisches Detail auf dem Weg zur Wiederverwendung.",
+      "originalText": "@xdNiBoR That will be replaced with stainless steel wool for future flights",
+      "url": "https://x.com/elonmusk/status/2122511400908243146",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 03:05): @xdNiBoR That will be replaced with stainless steel wool for future flights",
+          "url": "https://x.com/elonmusk/status/2122511400908243146"
+        },
+        {
+          "title": "Beantworteter Post @xdNiBoR (16.11.): Ablator wird von den Fangarmen abgeschabt",
+          "url": "https://x.com/i/status/2122382803065004158"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122472344052531640",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T00:30:15+01:00",
+      "summaryDe": "Musk teilt das SpaceX-Video vom Fangturm: „Blick auf die Starship-Landung vom Turm aus“. Weiteres Video zum Schiffsfang, keine neue Meldung.",
+      "originalText": "View of Starship landing from the tower",
+      "url": "https://x.com/elonmusk/status/2122472344052531640",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 00:30): View of Starship landing from the tower",
+          "url": "https://x.com/elonmusk/status/2122472344052531640"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122471820712660999",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T00:28:10+01:00",
+      "summaryDe": "Musk zitiert mit „Starlink“ einen Beitrag, nach dem der britische Offshore-Betreiber North Star seine Flotte mit Starlink verbindet; dessen IT-Chef nennt es den größten Fortschritt der Kommunikation seit 15 Jahren. Werbung, keine Zahl zum Auftrag.",
+      "originalText": "Starlink [zitiert: „Starlink has completely transformed connectivity across North Star's offshore fleet“]",
+      "url": "https://x.com/elonmusk/status/2122471820712660999",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 00:28): Starlink [zitiert: „Starlink has completely transformed connectivity across Nort",
+          "url": "https://x.com/elonmusk/status/2122471820712660999"
+        },
+        {
+          "title": "Zitierter Post (16.11., 15:24): Starlink bei North Star",
+          "url": "https://x.com/i/status/2122334905833308170"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122449119570534680",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-16T22:57:57+01:00",
+      "summaryDe": "WICHTIG: Musk kündigt an, dass Tesla-Besitzer ihr Auto bald ins Robotaxi-Netz geben können: „Kommt bald. Wenn es gut läuft, starten wir vielleicht nächsten Monat Tests.“ Bisher nannte Tesla etwa das 2. Quartal 2027 für Kundenautos im Netz. Regeln und Umsatzanteil sind offen (Teslarati).",
+      "originalText": "@apostlejohn @WorldlyReviewer Coming soon. If things well, may start trials next month. Much better to manage a fleet of cars than have to drive just one car by yourself!",
+      "url": "https://x.com/elonmusk/status/2122449119570534680",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": true,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (16.11., 22:57): @apostlejohn @WorldlyReviewer Coming soon. If things well, may start trials next",
+          "url": "https://x.com/elonmusk/status/2122449119570534680"
+        },
+        {
+          "title": "Beantworteter Post @apostlejohn (16.11., 19:56): Uber-Fahrer würde sein Model Y lieber für Robotaxi arbeiten lassen",
+          "url": "https://x.com/apostlejohn/status/2122403531894214806"
+        },
+        {
+          "title": "Teslarati: Tesla könnte schon nächsten Monat Robotaxis von Kunden testen (16.11.)",
+          "url": "https://www.teslarati.com/tesla-may-test-customer-owned-robotaxis-early-next-month-musk-says/"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2122446937286971592",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-16T22:49:17+01:00",
+      "summaryDe": "SpaceX zeigt ein Bild von Ship 42 nach dem Fang: „Starship 42 zurück auf der Erde“. Keine neue Meldung zum Zustand oder zum nächsten Flug.",
+      "originalText": "Starship 42 back on Earth",
+      "url": "https://x.com/SpaceX/status/2122446937286971592",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (16.11., 22:49): Starship 42 back on Earth",
+          "url": "https://x.com/SpaceX/status/2122446937286971592"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122446366354096479",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-16T22:47:01+01:00",
+      "summaryDe": "Musk behauptet, Verkehrsminister Duffy habe kostenlose Starlink-Anschlüsse für die Flugsicherung FAA abgelehnt – nach dem landesweiten Startverbot am Fr 13.11. seien sie doch nötig gewesen. Laut FAA lag der Ausfall an Datenflut im alten Netz nach einem Router-Einbau von L3Harris; ob Starlink geholfen hätte, ist offen. Das Ministerium hat sich zu Musks Aussage nicht geäußert (Teslarati, FAA).",
+      "originalText": "As I was saying … Free Starlinks for FAA were offered to Sec Duffy, but he said they were not needed. As it turns out, they were.",
+      "url": "https://x.com/elonmusk/status/2122446366354096479",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (16.11., 22:47): As I was saying … Free Starlinks for FAA were offered to Sec Duffy, but he said ",
+          "url": "https://x.com/elonmusk/status/2122446366354096479"
+        },
+        {
+          "title": "Teslarati: FAA lehnte laut Musk kostenloses Starlink vor dem Startverbot ab (16.11.)",
+          "url": "https://www.teslarati.com/faa-turned-down-free-starlink-offer-before-nationwide-ground-stop-elon-musk-says/"
+        },
+        {
+          "title": "FAA: Fragen und Antworten zum landesweiten Startverbot",
+          "url": "https://www.faa.gov/newsroom/nationwide-ground-stop-questions-and-answers"
+        }
+      ]
+    },
+    {
+      "id": "post-starlink-2122446093648875712",
+      "account": "@Starlink",
+      "displayName": "Starlink",
+      "postedAt": "2026-11-16T22:45:56+01:00",
+      "summaryDe": "Starlink zeigt den Schiffsfang, übertragen über ein Starlink Mini – Werbung für die kleine Antenne mit Material vom Fang.",
+      "originalText": "Catching a Starship with Mini 2 →",
+      "url": "https://x.com/Starlink/status/2122446093648875712",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@Starlink auf X (16.11., 22:45): Catching a Starship with Mini 2 →",
+          "url": "https://x.com/Starlink/status/2122446093648875712"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2122445908747100624",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-16T22:45:12+01:00",
+      "summaryDe": "Rocket Lab teilt ein Video mit dem Satz „Raketen starten, Rekorde brechen“ – Rückblick auf die 100. Electron, keine neue Meldung.",
+      "originalText": "Launching rockets, breaking records 🚀",
+      "url": "https://x.com/RocketLab/status/2122445908747100624",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (16.11., 22:45): Launching rockets, breaking records 🚀",
+          "url": "https://x.com/RocketLab/status/2122445908747100624"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2122444107272593721",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-16T22:38:02+01:00",
+      "summaryDe": "Rocket Lab dankt der Nasdaq: Electron war zum 100. Start auf der Leinwand am Times Square zu sehen. Electron sei die schnellste kommerzielle Rakete, die 100 Starts erreicht hat. Feier, keine neue Geschäftsmeldung.",
+      "originalText": "Electron showing off over Times Square 🚀 Thank you @nasdaq for celebrating our 100th Electron launch with us. Being the fastest commercial rocket in history to reach 100 launches is a special milestone to share.",
+      "url": "https://x.com/RocketLab/status/2122444107272593721",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (16.11., 22:38): Electron showing off over Times Square 🚀 Thank you @nasdaq for celebrating our 1",
+          "url": "https://x.com/RocketLab/status/2122444107272593721"
+        }
+      ]
+    },
     {
       "id": "post-spacex-2122427170328883425",
       "account": "@SpaceX",

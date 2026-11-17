@@ -6852,31 +6852,31 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "US-Schluss Mo: SPCX schließt bei 137,36 $, 1,3 % unter dem Freitag (139,11 $); Xetra schloss bei 124,52 € (−0,7 %) (Yahoo). Laut dpa-AFX verlor SpaceX „trotz guter Nachrichten“ – der erste Fang der Starship-Oberstufe gilt Analysten als Meilenstein, Bank of America und Citi hoben ihre Kursziele (dpa-AFX, CNBC). Der Tech-Ausverkauf war stärker: Nasdaq Composite −2,5 %, Chipindex SOX −5,3 % (Yahoo).",
+      "why": "US-Schluss Mo: SPCX schließt bei 137,36 $ (−1,3 %), nachbörslich kaum verändert bei 137,48 $ (Yahoo). Der Tech-Ausverkauf (Nasdaq −2,5 %) überdeckte den Schiffsfang, für den Analysten ihre Ziele bestätigten oder hoben – im Schnitt rund 258 $ (Stockanalysis, CNBC). Über Nacht: NASA-Chef Isaacman sagt, der Fang „ändert alles“, und Musk behauptet, die FAA habe kostenloses Starlink vor dem Flugausfall vom 13.11. abgelehnt (Musk auf X, Teslarati). Nasdaq-Futures leicht im Plus (+0,4 %).",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX (Schluss 16.11. 137,36 $)",
+          "title": "Yahoo Finance: SPCX (Schluss 16.11. 137,36 $, Nachbörse)",
           "url": "https://finance.yahoo.com/quote/SPCX"
         },
         {
-          "title": "Yahoo Finance: SPX.DE (Xetra-Schluss 16.11.)",
-          "url": "https://finance.yahoo.com/quote/SPX.DE"
-        },
-        {
-          "title": "dpa-AFX via Yahoo: Aktien New York – Tech-Ausverkauf geht weiter, Warten auf Nvidia und Anthropic (16.11.)",
-          "url": "https://de.finance.yahoo.com/nachrichten/aktien-new-york-tech-ausverkauf-191345003.html"
+          "title": "Stockanalysis: SPCX-Kursziele, Schnitt 257,5 $ (Stand 16.11.)",
+          "url": "https://stockanalysis.com/stocks/spcx/forecast/"
         },
         {
           "title": "CNBC: Analysten begeistert vom Starship-Fang (16.11.)",
           "url": "https://www.cnbc.com/2026/11/16/analysts-are-awed-by-spacexs-starship-catch-heres-why-.html"
         },
         {
-          "title": "Yahoo Finance: Nasdaq Composite (Schluss 16.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC"
+          "title": "@RapidResponse47 auf X: NASA-Chef zum Starship-Fang „This really changes everything“ (von Musk geteilt)",
+          "url": "https://x.com/RapidResponse47/status/2122420702686961667"
         },
         {
-          "title": "Yahoo Finance: PHLX Semiconductor SOX (Schluss 16.11.)",
-          "url": "https://finance.yahoo.com/quote/%5ESOX"
+          "title": "Teslarati: FAA lehnte laut Musk kostenloses Starlink vor dem Startverbot ab (16.11.)",
+          "url": "https://www.teslarati.com/faa-turned-down-free-starlink-offer-before-nationwide-ground-stop-elon-musk-says/"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Futures NQ=F (17.11., 05:02)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -20322,27 +20322,35 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "US-Schluss Mo: Tesla schließt bei 379,74 $, 2,7 % unter dem Freitag (390,22 $); Xetra schloss bei 346,20 € (−2,1 %) (Yahoo). Der Tech-Ausverkauf und Zinssorgen überdecken die Cybercab-Nachrichten (3 Mrd. € für Grünheide, Verkauf an ausgewählte Privatkunden für 29.990 $); Investing.com nennt auch die hohen Investitionen. JPMorgan bleibt bei „Neutral“ und 430 $, nennt den Privatverkauf aber eine „frühe Bestätigung“ der Robotaxi-Pläne (Investing.com, Yahoo Finance).",
+      "why": "US-Schluss Mo: Tesla schließt bei 379,74 $ (−2,7 %), nachbörslich unverändert bei 379,80 $ (Yahoo). Tech-Ausverkauf und Zinssorgen überdeckten die Cybercab-Nachrichten (Investing.com). Über Nacht kündigt Musk an, Besitzer könnten ihr Auto vielleicht schon ab Dezember testweise ins Robotaxi-Netz geben – bisher hieß es etwa 2. Quartal 2027 (Musk auf X, Teslarati). Musk reist mit Trump zum APEC-Gipfel nach Shenzhen (Musk auf X, The Next Web). Nasdaq-Futures +0,4 %.",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA (Schluss 16.11. 379,74 $)",
+          "title": "Yahoo Finance: TSLA (Schluss 16.11. 379,74 $, Nachbörse)",
           "url": "https://finance.yahoo.com/quote/TSLA"
-        },
-        {
-          "title": "Yahoo Finance: TL0.DE (Xetra-Schluss 16.11.)",
-          "url": "https://finance.yahoo.com/quote/TL0.DE"
         },
         {
           "title": "Investing.com: Warum die Tesla-Aktie heute fällt (16.11.)",
           "url": "https://www.investing.com/news/stock-market-news/why-is-tesla-stock-sliding-today-93CH-5030404"
         },
         {
-          "title": "Yahoo Finance: JPMorgan – Cybercab-Verkauf an Privatkunden ist „frühe Bestätigung“ (16.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/article/teslas-cybercab-sales-to-the-public-is-early-validation-of-robotaxi-push-jpmorgan-says-192114709.html"
+          "title": "@elonmusk auf X (16.11., 22:57): Robotaxi-Tests mit Kundenautos vielleicht nächsten Monat",
+          "url": "https://x.com/elonmusk/status/2122449119570534680"
         },
         {
-          "title": "Yahoo Finance: Nasdaq Composite (Schluss 16.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC"
+          "title": "Teslarati: Tesla könnte schon nächsten Monat Robotaxis von Kunden testen (16.11.)",
+          "url": "https://www.teslarati.com/tesla-may-test-customer-owned-robotaxis-early-next-month-musk-says/"
+        },
+        {
+          "title": "@elonmusk auf X (17.11., 05:09): „I will be in China“",
+          "url": "https://x.com/elonmusk/status/2122542607653896255"
+        },
+        {
+          "title": "The Next Web: Chinas Tech-Chefs und Musk reisen zum APEC-CEO-Gipfel nach Shenzhen (16.11.)",
+          "url": "https://thenextweb.com/news/apec-ceo-summit-shenzhen-catl-baidu-unitree-musk"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Futures NQ=F (17.11., 05:02)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -31953,27 +31961,23 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "US-Schluss Mo: Rocket Lab schließt bei 57,37 $, 6,8 % unter dem Freitag (61,53 $) – der vierte Verlusttag in Folge; Stuttgart 52,00 € (−6,6 %) (Yahoo, ChartExchange). Raumfahrtwerte fielen mit dem Tech-Ausverkauf und nach dem Vulcan-Fehlstart von ULA am So; eine eigene neue Rocket-Lab-Meldung gab es nicht, die Kursziele wurden letzte Woche gesenkt (Benzinga). Damit ist die Tagesfrage (Schluss über 61,53 $?) mit „nein“ entschieden.",
+      "why": "US-Schluss Mo: Rocket Lab schließt bei 57,37 $ (−6,8 %), der vierte Verlusttag in Folge; nachbörslich 57,08 $ (−0,5 %) (Yahoo). Raumfahrtwerte fielen mit dem Tech-Ausverkauf und nach dem Vulcan-Fehlstart von ULA; eine eigene schlechte Rocket-Lab-Meldung gab es nicht (Benzinga, TIKR). Über Nacht feierte die Nasdaq die 100. Electron am Times Square (Rocket Lab auf X). Die Tagesfrage (Di-Schluss über 57,37 $?) ist offen bis 22:15.",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB-Historie (Schluss 16.11. 57,37 $, 13.11. 61,53 $)",
-          "url": "https://finance.yahoo.com/quote/RKLB/history/"
-        },
-        {
-          "title": "ChartExchange: RKLB Schluss 16.11. 57,37 $ (−6,76 %), nachbörslich 57,52 $",
-          "url": "https://chartexchange.com/symbol/nasdaq-rklb/historical/"
-        },
-        {
-          "title": "Yahoo Finance: 6RJ0.SG (16.11., 21:55)",
-          "url": "https://finance.yahoo.com/quote/6RJ0.SG"
+          "title": "Yahoo Finance: RKLB (Schluss 16.11. 57,37 $, Nachbörse)",
+          "url": "https://finance.yahoo.com/quote/RKLB"
         },
         {
           "title": "Benzinga: Rocket Lab, Firefly, AST SpaceMobile fallen – was ist los mit Raumfahrtwerten? (16.11.)",
           "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63295932/rocket-lab-firefly-ast-spacemobile-stocks-drop-whats-going-on-with-space-stocks-monday"
         },
         {
-          "title": "Benzinga: Warum fällt Rocket Lab am Montag? (Vulcan-Fehlstart, Kursziele)",
-          "url": "https://www.benzinga.com/news/space/26/11/63280714/why-is-rocket-lab-stock-falling-monday"
+          "title": "TIKR: Rocket Lab −7 %, AST SpaceMobile −12 % nach Tech-Ausverkauf und Vulcan-Fehlstart (16.11.)",
+          "url": "https://www.tikr.com/blog/rocket-lab-sinks-7-ast-spacemobile-down-12-as-tech-selloff-and-vulcan-failure-hit-space-stocks"
+        },
+        {
+          "title": "@RocketLab auf X (16.11., 22:38): Electron am Times Square",
+          "url": "https://x.com/RocketLab/status/2122444107272593721"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -44582,31 +44586,23 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "US-Schluss Mo: Marvell schließt bei 145,36 $, 7,3 % unter dem Freitag (156,76 $); Xetra schloss bei 134,80 € (−3,3 %) (Yahoo). Der Chip-Ausverkauf vor Nvidias Zahlen am Di ging weiter (SOX −5,3 %, Nvidia −4,1 %); dazu belastet laut WSJ-Bericht, dass Nvidia-Interimschefin Kress die Finanzierung der KI-Branche bremsen will – Nvidia ist an Marvell beteiligt –, und die geplante Lumentum-Übernahme mit eigenen Aktien verwässert (GuruFocus, Motley Fool). Marvell-Zahlen am Di 1.12. (Marvell).",
+      "why": "US-Schluss Mo: Marvell schließt bei 145,36 $ (−7,3 %), nachbörslich 144,55 $ (−0,6 %) (Yahoo). Treiber bleibt der Chip-Ausverkauf vor Nvidias Zahlen heute 22:20 (SOX −5,3 %); zusätzlich senkte SemiAnalysis seine Prognose für Ausgaben in KI-Beschleuniger 2027 um 19 % und 2028 um 28 % (Chosunbiz). Asien folgt am Di: Kospi −1,9 %, Samsung −2,2 %, SK Hynix −1,4 %, SoftBank −4,7 % (NDTV Profit). Marvell-Zahlen am Di 1.12.",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL (Schluss 16.11. 145,36 $)",
+          "title": "Yahoo Finance: MRVL (Schluss 16.11. 145,36 $, Nachbörse)",
           "url": "https://finance.yahoo.com/quote/MRVL"
-        },
-        {
-          "title": "Yahoo Finance: 9MW.DE (Xetra-Schluss 16.11.)",
-          "url": "https://finance.yahoo.com/quote/9MW.DE"
         },
         {
           "title": "Yahoo Finance: PHLX Semiconductor SOX (Schluss 16.11.)",
           "url": "https://finance.yahoo.com/quote/%5ESOX"
         },
         {
-          "title": "Yahoo Finance: NVDA (Schluss 16.11. 156,14 $)",
-          "url": "https://finance.yahoo.com/quote/NVDA"
+          "title": "Chosunbiz: Kospi kurz unter 5.000, SemiAnalysis senkt KI-Capex-Prognose (17.11.)",
+          "url": "https://biz.chosun.com/en/en-finance/2026/11/17/2H3IW7Z3B5AC5KNZM5RJY5R4V4/"
         },
         {
-          "title": "GuruFocus via Yahoo: Marvell −6,88 % nach Bericht über Nvidias Finanzierungsbremse (16.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-stocks-slide-6-88-175145051.html"
-        },
-        {
-          "title": "Motley Fool: Warum Marvell heute fällt (16.11.)",
-          "url": "https://www.fool.com/investing/2026/11/16/why-marvell-stock-is-down-today/"
+          "title": "NDTV Profit: Nikkei und Kospi fallen fast 2 % vor Nvidia-Zahlen (17.11.)",
+          "url": "https://www.ndtvprofit.com/markets/asian-markets-today-nikkei-kospi-fall-nearly-2-as-nvidia-sell-off-weighs-on-tech-stocks-ahead-of-results-12336216"
         },
         {
           "title": "Marvell: Telefonkonferenz zum 3. Quartal (1.12.)",
