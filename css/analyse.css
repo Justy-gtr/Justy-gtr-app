@@ -314,27 +314,18 @@
   min-height: 22px;
   font-weight: 700;
 }
-.move-block { margin-top: 12px; }
-.move-row {
-  display: grid;
-  grid-template-columns: 46px minmax(0, 1fr) minmax(0, 1fr);
-  column-gap: 8px;
-  row-gap: 2px;
-  align-items: center;
-  margin-top: 8px;
+.heat-block { margin-top: 12px; }
+.heat-table { width: 100%; border-collapse: separate; border-spacing: 3px; margin-top: 8px; }
+.heat-table th, .heat-table td {
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  padding: 6px 2px;
+  border-radius: 6px;
 }
-.move-name { grid-row: 1 / span 3; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
-.move-track {
-  height: 10px;
-  border-radius: 99px;
-  background: rgba(255, 255, 255, 0.08);
-  overflow: hidden;
-}
-.move-bar { display: block; height: 100%; border-radius: 99px; }
-.move-bar.up { background: var(--up); }
-.move-bar.down { background: var(--down); }
-.move-fig { grid-column: 2 / -1; font-size: 13px; font-variant-numeric: tabular-nums; }
-.move-count { grid-column: 2 / -1; color: var(--muted); font-size: 12px; }
+.heat-table th { color: var(--muted); font-weight: 600; }
+.heat-table tbody th { text-align: left; }
+.heat-cell.is-quiet { color: var(--muted); background: rgba(255, 255, 255, 0.04); }
 .clock-sum.is-ink {
   color: #14160f;
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.45);

@@ -1670,6 +1670,23 @@ export function orderCalendarEvents(events, now = new Date()) {
   return current.map((row) => row.event).concat(past.map((row) => row.event));
 }
 
+/** True once the event is over. A day without a clock lasts through that day. */
+export function eventIsPast(event, now = new Date()) {
+  const nowMs = now instanceof Date ? now.getTime() : new Date(now).getTime();
+  if (!Number.isFinite(nowMs)) return false;
+  const end = calendarEnd(event);
+  const start = calendarStart(event);
+  if (end) return nowMs >= end.getTime();
+  if (event?.time) return Boolean(start) && nowMs >= start.getTime();
+  const day = String(event?.date || "");
+  return Boolean(day) && day < berlinDate(new Date(nowMs));
+}
+
+/** Upcoming and still running only. Anything already over stays off the list. */
+export function calendarList(events, now = new Date()) {
+  return orderCalendarEvents(events, now).filter((event) => !eventIsPast(event, now));
+}
+
 export function isInAppUrl(url, origin = location.origin, base = "") {
   if (!url || url.origin !== origin) return false;
   const path = url.pathname.replace(/\/$/, "");

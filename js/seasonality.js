@@ -650,71 +650,68 @@ function directionPack(stats) {
   return { days, hours: stats?.hours || [], source: "datei" };
 }
 
-function directionScale(rows) {
+function heatStyle(value, scale) {
+  if (!Number.isFinite(value) || value === 0 || !scale) return "";
+  const amount = Math.min(1, Math.abs(value) / scale);
+  const alpha = Math.round((0.28 + amount * 0.62) * 100) / 100;
+  const rgb = value > 0 ? "125, 222, 192" : "255, 139, 152";
+  return `background:rgba(${rgb},${alpha})`;
+}
+
+function heatScale(rows, key) {
   let max = 0;
   for (const row of rows) {
-    if (!row || row.n < MIN_CASES) continue;
-    if (Number.isFinite(row.avgUp)) max = Math.max(max, Math.abs(row.avgUp));
-    if (Number.isFinite(row.avgDown)) max = Math.max(max, Math.abs(row.avgDown));
+    if (!row || row.n < MIN_CASES || !Number.isFinite(row[key])) continue;
+    max = Math.max(max, Math.abs(row[key]));
   }
   return max;
 }
 
-function directionHasSignal(pack) {
-  return [...(pack?.days || []), ...(pack?.hours || [])].some((row) => (
-    row && row.n >= MIN_CASES && (Number.isFinite(row.avgUp) || Number.isFinite(row.avgDown))
-  ));
+function heatCell(row, key, scale) {
+  const show = row && row.n >= MIN_CASES && Number.isFinite(row[key]);
+  const text = show ? formatSignedPct(row[key]) : "–";
+  const style = show ? heatStyle(row[key], scale) : "";
+  return `<td class="heat-cell${show ? "" : " is-quiet"}" style="${style}">${esc(text)}</td>`;
 }
 
-function moveTrack(value, scale, kind) {
-  if (!Number.isFinite(value) || !scale) return `<span class="move-track ${kind}" aria-hidden="true"></span>`;
-  const width = Math.max(8, Math.min(100, Math.round((Math.abs(value) / scale) * 100)));
-  return `<span class="move-track ${kind}" aria-hidden="true"><span class="move-bar ${kind === "is-down" ? "down" : "up"}" style="width:${width}%"></span></span>`;
+function heatTable(title, labels, rows, keys) {
+  const body = labels.map((label, index) => {
+    const row = rows[index];
+    return `<tr data-heat="${esc(keys[index] || label)}"><th>${esc(label)}</th>${heatCell(row, "avgUp", heatScale(rows, "avgUp"))}${heatCell(row, "avgDown", heatScale(rows, "avgDown"))}</tr>`;
+  }).join("");
+  return `<table class="heat-table" aria-label="${esc(title)}">
+    <thead><tr><th></th><th>hoch</th><th>runter</th></tr></thead>
+    <tbody>${body}</tbody>
+  </table>`;
 }
 
-function moveRow(label, key, row, scale) {
-  const thin = !row || row.n < MIN_CASES || (!Number.isFinite(row.avgUp) && !Number.isFinite(row.avgDown));
-  const fig = thin ? "–" : `${formatSignedPct(row.avgUp)} · ${formatSignedPct(row.avgDown)}`;
-  const count = thin
-    ? `n = ${row?.n || 0} · noch zu wenig Daten`
-    : `${row.up} von ${row.n} hoch · ${row.down} von ${row.n} runter`;
-  const aria = thin
-    ? `${label}, noch zu wenig Daten`
-    : `${label}, Anstieg im Schnitt ${formatSignedPct(row.avgUp)}, Rückgang im Schnitt ${formatSignedPct(row.avgDown)}, ${count}`;
-  return `<div class="move-row" data-move="${esc(key)}">
-    <span class="move-name">${esc(label)}</span>
-    ${thin ? `<span class="move-track is-up" aria-hidden="true"></span><span class="move-track is-down" aria-hidden="true"></span>` : `${moveTrack(row.avgUp, scale, "is-up")}${moveTrack(row.avgDown, scale, "is-down")}`}
-    <span class="move-fig">${esc(fig)}</span>
-    <span class="move-count">${esc(count)}</span>
-    <span class="sr-only">${esc(aria)}</span>
-  </div>`;
-}
-
-/** Equal tracks: mean rise and mean drop, per weekday and per hour. */
+/** Colored cells: mean rise and mean drop, per weekday and per hour. */
 export function renderDirectionBlock(pack) {
-  if (!directionHasSignal(pack)) {
-    return `<div class="move-block" id="move-bars">
+  const days = pack?.days || [];
+  const hours = pack?.hours || [];
+  const ready = [...days, ...hours].some((row) => row && row.n >= MIN_CASES && (Number.isFinite(row.avgUp) || Number.isFinite(row.avgDown)));
+  if (!ready) {
+    return `<div class="heat-block" id="move-table">
       <p class="season-kicker">Mittlere Bewegung hoch und runter</p>
       <p class="season-note">noch zu wenig Daten</p>
     </div>`;
   }
-  const days = pack.days || [];
-  const hours = pack.hours || [];
-  const dayScale = directionScale(days) || 1;
-  const hourScale = directionScale(hours) || 1;
-  const dayRows = WEEKDAY_LABELS.map((label, index) => moveRow(label, label, days[index], dayScale)).join("");
-  const hourRows = HOUR_SLOTS.map((slot, index) => moveRow(slotFace(slot), slot, hours[index], hourScale)).join("");
-  const source = pack.source === "reihe"
-    ? `<p class="season-note">Balken aus der geladenen Kursreihe, neben den Flächen.</p>`
-    : "";
-  return `<div class="move-block" id="move-bars">
+  const shownHours = [];
+  const shownLabels = [];
+  const shownKeys = [];
+  HOUR_SLOTS.forEach((slot, index) => {
+    const row = hours[index];
+    if (!row || row.n < MIN_CASES || (!Number.isFinite(row.avgUp) && !Number.isFinite(row.avgDown))) return;
+    shownHours.push(row);
+    shownLabels.push(slotFace(slot));
+    shownKeys.push(slot);
+  });
+  const note = pack.source === "reihe" ? `<p class="season-note">Aus der geladenen Kursreihe, neben den Flächen.</p>` : "";
+  return `<div class="heat-block" id="move-table">
     <p class="season-kicker">Mittlere Bewegung hoch und runter</p>
-    <p class="season-note">Gleich hohe Bahnen. Links der mittlere Anstieg, rechts der mittlere Rückgang.</p>
-    <p class="season-kicker">Wochentag</p>
-    ${dayRows}
-    <p class="season-kicker">Stunde</p>
-    ${hourRows}
-    ${source}
+    ${heatTable("Wochentag", WEEKDAY_LABELS, days, WEEKDAY_LABELS)}
+    ${shownHours.length ? heatTable("Stunde", shownLabels, shownHours, shownKeys) : ""}
+    ${note}
   </div>`;
 }
 

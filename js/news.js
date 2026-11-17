@@ -110,6 +110,22 @@ export function filterNews(items, filter) {
 
 const DRIVER_ORDER = ["SPCX", "TSLA", "RKLB", "MRVL", "NVDA"];
 
+function fewWords(text, max = 5) {
+  return String(text || "").replace(/\s+/g, " ").trim().split(" ").filter(Boolean).slice(0, max).join(" ");
+}
+
+const REASON = /Treiber|Gestützt|Gegenwind|Getragen|Meldung|Bericht|Anleger/;
+
+/** First reason sentence, a few words, not the price print. */
+export function shortWhy(text) {
+  const parts = String(text || "").replace(/\s+/g, " ").trim().split(/(?<=[.!?])\s/).filter(Boolean);
+  const hit = parts.find((part) => REASON.test(part)) || "";
+  const words = hit.replace(/\([^)]*\)/g, " ").replace(/\s+/g, " ").trim().split(" ").filter(Boolean).slice(0, 12);
+  if (!words.length) return "Keine kurze Einordnung.";
+  const line = words.join(" ").replace(/[,:;–-]+$/, "").replace(/\s+(und|für|der|die|das|dem|den|nach|von|mit|einem|einer|am|im)$/i, "");
+  return /[.!?…]$/.test(line) ? line : `${line}.`;
+}
+
 export function courseDrivers(data) {
   const rank = (symbol) => {
     const index = DRIVER_ORDER.indexOf(symbol);
@@ -123,26 +139,23 @@ export function courseDrivers(data) {
       name: ticker.name || ticker.symbol,
       priceEur: ticker.priceEur,
       changePct: ticker.changePct,
-      why: String(ticker.why || "").trim() || "Noch keine Einordnung hinterlegt."
+      why: shortWhy(ticker.why)
     }));
 }
 
 export function glancePoints(data, now = new Date()) {
-  const points = [];
-  const mover = [...(data?.prices?.tickers || [])]
-    .filter((ticker) => Number.isFinite(Number(ticker?.changePct)))
-    .sort((a, b) => Math.abs(b.changePct) - Math.abs(a.changePct))[0];
-  if (mover) {
-    const why = headlineOf(mover.why, 90);
-    points.push(why ? `${mover.symbol} ${formatPct(mover.changePct)}. ${why}` : `${mover.symbol} heute ${formatPct(mover.changePct)}.`);
-  }
+  const lines = [];
+  const movers = [...(data?.prices?.tickers || [])]
+    .filter((ticker) => ticker?.symbol && Number.isFinite(Number(ticker.changePct)))
+    .sort((a, b) => Math.abs(b.changePct) - Math.abs(a.changePct));
+  if (movers[0]) lines.push(`${movers[0].symbol} ${formatPct(movers[0].changePct)}`);
   const next = orderCalendarEvents(data?.calendar?.events || [], now)[0];
-  if (next?.title) points.push(next.date ? `${next.title} · ${next.date}` : next.title);
-  const bullet = (data?.briefing?.bullets || []).map((item) => headlineOf(item, 120)).find(Boolean);
-  if (bullet) points.push(bullet);
-  if (points.length < 3) {
-    const alert = [...(data?.alerts?.alerts || [])].sort((a, b) => stamp(b?.timestamp) - stamp(a?.timestamp))[0];
-    if (alert?.symbol && points.length < 3) points.push(`${alert.symbol} in den Meldungen: ${formatPct(alert.changePct)}.`);
+  if (next?.title) lines.push(fewWords(next.title, 4));
+  if (movers[1]) lines.push(`${movers[1].symbol} ${formatPct(movers[1].changePct)}`);
+  else {
+    const bullet = (data?.briefing?.bullets || []).find((item) => String(item || "").trim());
+    if (bullet) lines.push(fewWords(bullet, 4));
+    else if (data?.briefing?.title) lines.push(fewWords(data.briefing.title, 4));
   }
-  return points.slice(0, 3);
+  return lines.slice(0, 3).map((line) => fewWords(line, 6));
 }

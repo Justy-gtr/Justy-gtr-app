@@ -3,7 +3,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
-import { VALUE_SYMBOLS, buildSymbolRecord, shouldSkipFundamentals } from "../js/bewertung.js";
+import { UNIVERSE, VALUE_SYMBOLS, buildSymbolRecord, shouldSkipFundamentals } from "../js/bewertung.js";
 import { berlinDay } from "../js/seasonality.js";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
@@ -67,11 +67,12 @@ function closesOf(chart) {
   return series.map(Number).filter((value) => Number.isFinite(value) && value > 0);
 }
 
-function loadSymbol(symbol, jar, crumb, fxRate) {
+function loadSymbol(symbol, jar, crumb, fxRate, withHistory) {
   const summaryUrl = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${encodeURIComponent(symbol)}?modules=summaryDetail,defaultKeyStatistics,price&crumb=${encodeURIComponent(crumb)}`;
-  const chartUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=1y&interval=1d`;
   const summary = getJson(summaryUrl, jar);
-  const chart = getJson(chartUrl, jar);
+  const chart = withHistory
+    ? getJson(`https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=1y&interval=1d`, jar)
+    : null;
   const result = summary?.quoteSummary?.result?.[0];
   if (!result) throw new Error("leere Antwort");
   return buildSymbolRecord({
@@ -79,7 +80,7 @@ function loadSymbol(symbol, jar, crumb, fxRate) {
     summary: result.summaryDetail || {},
     stats: result.defaultKeyStatistics || {},
     price: result.price || {},
-    closes: closesOf(chart),
+    closes: chart ? closesOf(chart) : [],
     fxRate
   });
 }
@@ -112,9 +113,9 @@ export function refreshFundamentals({ force = false, write = true } = {}) {
   }
   const kept = new Map((previous?.symbols || []).map((item) => [item.symbol, item]));
   let fresh = 0;
-  for (const symbol of VALUE_SYMBOLS) {
+  for (const symbol of UNIVERSE) {
     try {
-      kept.set(symbol, loadSymbol(symbol, jar, crumb, fx?.rate));
+      kept.set(symbol, loadSymbol(symbol, jar, crumb, fx?.rate, VALUE_SYMBOLS.includes(symbol)));
       fresh += 1;
     } catch (error) {
       console.log(`::warning::Bewertung ${symbol}: ${error.message}`);
@@ -131,7 +132,7 @@ export function refreshFundamentals({ force = false, write = true } = {}) {
     note: "KGV und KUV beschreiben nur die Lage der Zahl. Ein fehlender oder negativer Gewinn bleibt leer.",
     historyNote: "Die eigene Spanne teilt die Tagesschlüsse der letzten zwölf Monate durch den heutigen Gewinn je Aktie. Frühere Gewinne sind nicht zurückgerechnet.",
     fx: fx || previous?.fx || null,
-    symbols: VALUE_SYMBOLS.map((symbol) => kept.get(symbol)).filter(Boolean)
+    symbols: UNIVERSE.map((symbol) => kept.get(symbol)).filter(Boolean)
   };
   if (write) fs.writeFileSync(filePath, `${JSON.stringify(next, null, 2)}\n`);
   return next;

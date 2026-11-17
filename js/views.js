@@ -31,6 +31,7 @@ import {
   formatEventClock,
   sessionBlurb,
   headlineEvent,
+  calendarList,
   orderCalendarEvents,
   calendarStart,
   calendarEnd,
@@ -588,11 +589,28 @@ function sessionDetail(id) {
   return { kind: "session", title, html: `<p>${esc(sessionBlurb(id))}</p>` };
 }
 
-function eventRow(event) {
-  return `<button type="button" class="card linkish event-row" data-action="open-event" data-id="${esc(event.id)}">
-    <span class="row between"><strong>${esc(event.title)}</strong>${pill(event.example)}</span>
-    <span class="muted">${esc(formatEventClock(event))} · ${esc(event.kind === "external" ? "Extern" : "Unternehmen")}</span>
-    ${prob(event.probabilityPct)}
+function shortTitle(title) {
+  const words = String(title || "").trim().split(/\s+/).filter(Boolean);
+  if (words.length <= 8) return words.join(" ");
+  return `${words.slice(0, 8).join(" ")}…`;
+}
+
+function rowWhen(event, now) {
+  const endDay = typeof event?.end === "string" && /^\d{4}-\d{2}-\d{2}$/.test(event.end) ? event.end : "";
+  const startDay = String(event?.date || "");
+  const today = berlinDate(now);
+  if (endDay && startDay && startDay < today && endDay >= today) {
+    const [year, month, day] = endDay.split("-").map(Number);
+    const label = new Intl.DateTimeFormat("de-DE", { timeZone: "Europe/Berlin", day: "numeric", month: "short" }).format(new Date(Date.UTC(year, month - 1, day, 12)));
+    return `bis ${label}`;
+  }
+  return formatEventClock(event, now);
+}
+
+function eventRow(event, now) {
+  return `<button type="button" class="card linkish cal-row" data-action="open-event" data-id="${esc(event.id)}">
+    <span class="muted">${esc(rowWhen(event, now))}</span>
+    <strong>${esc(shortTitle(event.title))}</strong>
   </button>`;
 }
 
@@ -623,20 +641,13 @@ function rocketSvg() {
 }
 
 export function renderKalender(data, ui, now = new Date()) {
-  const events = orderCalendarEvents(
-    (data.calendar?.events || []).filter((event) => event.kind === (ui.calKind === "external" ? "external" : "company")),
-    now
-  );
+  const events = calendarList(data.calendar?.events || [], now);
   return `
     <header class="page-head">
       <p class="eyebrow">Kalender</p>
-      <h2>Was den Kurs bewegen kann</h2>
+      <h2>Termine</h2>
     </header>
-    <div class="segment" role="tablist" aria-label="Art der Termine">
-      <button type="button" role="tab" data-action="cal-kind" data-kind="company" aria-selected="${ui.calKind !== "external"}">Unternehmen</button>
-      <button type="button" role="tab" data-action="cal-kind" data-kind="external" aria-selected="${ui.calKind === "external"}">Extern</button>
-    </div>
-    <div class="stack">${events.map((event) => eventRow(event)).join("") || `<p class="empty">In dieser Ansicht liegt nichts.</p>`}</div>
+    <div class="stack">${events.map((event) => eventRow(event, now)).join("") || `<p class="empty">Gerade liegt kein Termin vorn.</p>`}</div>
   `;
 }
 

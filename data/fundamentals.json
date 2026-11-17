@@ -1,13 +1,13 @@
 {
   "example": false,
-  "asOf": "2026-11-17T22:57:09.196Z",
+  "asOf": "2026-11-17T23:14:07.477Z",
   "timezone": "Europe/Berlin",
   "note": "KGV und KUV beschreiben nur die Lage der Zahl. Ein fehlender oder negativer Gewinn bleibt leer.",
   "historyNote": "Die eigene Spanne teilt die Tagesschlüsse der letzten zwölf Monate durch den heutigen Gewinn je Aktie. Frühere Gewinne sind nicht zurückgerechnet.",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.1004,
-    "asOf": "2026-11-17T22:57:07.989Z",
+    "rate": 1.0997,
+    "asOf": "2026-11-17T23:14:02.848Z",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -24,7 +24,7 @@
       "forwardState": "gemeldet",
       "priceToSales": 60.06,
       "marketCapUsd": 1924436721664,
-      "marketCapEur": 1748851982609.96,
+      "marketCapEur": 1749965192019.6418,
       "epsTrailing": 0.23,
       "history": {
         "n": 110,
@@ -49,7 +49,7 @@
       "forwardState": "gemeldet",
       "priceToSales": 14.51,
       "marketCapUsd": 1502482792448,
-      "marketCapEur": 1365396939701.9265,
+      "marketCapEur": 1366266065697.9177,
       "epsTrailing": 0.91,
       "history": {
         "n": 251,
@@ -74,7 +74,7 @@
       "forwardState": "gemeldet",
       "priceToSales": 42.01,
       "marketCapUsd": 37047115776,
-      "marketCapEur": 33666953631.40676,
+      "marketCapEur": 33688383901.06393,
       "epsTrailing": -0.37,
       "history": {
         "n": 0,
@@ -99,7 +99,7 @@
       "forwardState": "gemeldet",
       "priceToSales": 14.16,
       "marketCapUsd": 133831180288,
-      "marketCapEur": 121620483722.2828,
+      "marketCapEur": 121697899689.0061,
       "epsTrailing": 3.04,
       "history": {
         "n": 251,
@@ -124,7 +124,7 @@
       "forwardState": "gemeldet",
       "priceToSales": 12.39,
       "marketCapUsd": 3753892642816,
-      "marketCapEur": 3411389170134.4966,
+      "marketCapEur": 3413560646372.6475,
       "epsTrailing": 7.91,
       "history": {
         "n": 251,
@@ -136,6 +136,306 @@
         {
           "title": "Yahoo Finance NVDA",
           "url": "https://finance.yahoo.com/quote/NVDA"
+        }
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "currency": "USD",
+      "trailingPe": 39.19,
+      "peState": "gemeldet",
+      "forwardPe": 33.29,
+      "forwardState": "gemeldet",
+      "priceToSales": 10.68,
+      "marketCapUsd": 5114019971072,
+      "marketCapEur": 4650377349342.549,
+      "epsTrailing": 8.98,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance AAPL",
+          "url": "https://finance.yahoo.com/quote/AAPL"
+        }
+      ]
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "currency": "USD",
+      "trailingPe": 26.42,
+      "peState": "gemeldet",
+      "forwardPe": 20.92,
+      "forwardState": "gemeldet",
+      "priceToSales": 10.85,
+      "marketCapUsd": 3759436726272,
+      "marketCapEur": 3418602097182.868,
+      "epsTrailing": 19.16,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance MSFT",
+          "url": "https://finance.yahoo.com/quote/MSFT"
+        }
+      ]
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "currency": "USD",
+      "trailingPe": 14.63,
+      "peState": "gemeldet",
+      "forwardPe": 18.46,
+      "forwardState": "gemeldet",
+      "priceToSales": 7.31,
+      "marketCapUsd": 3444778729472,
+      "marketCapEur": 3132471337157.4067,
+      "epsTrailing": 19.15,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance GOOGL",
+          "url": "https://finance.yahoo.com/quote/GOOGL"
+        }
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "currency": "USD",
+      "trailingPe": 20.85,
+      "peState": "gemeldet",
+      "forwardPe": 23.6,
+      "forwardState": "gemeldet",
+      "priceToSales": 3.5,
+      "marketCapUsd": 2788600315904,
+      "marketCapEur": 2535782773396.381,
+      "epsTrailing": 12.37,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance AMZN",
+          "url": "https://finance.yahoo.com/quote/AMZN"
+        }
+      ]
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms, Inc.",
+      "currency": "USD",
+      "trailingPe": 21.11,
+      "peState": "gemeldet",
+      "forwardPe": 17.35,
+      "forwardState": "gemeldet",
+      "priceToSales": 6.55,
+      "marketCapUsd": 1581980975104,
+      "marketCapEur": 1438556856509.9573,
+      "epsTrailing": 29.31,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance META",
+          "url": "https://finance.yahoo.com/quote/META"
+        }
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "currency": "USD",
+      "trailingPe": 107.57,
+      "peState": "gemeldet",
+      "forwardPe": 28.54,
+      "forwardState": "gemeldet",
+      "priceToSales": 18.34,
+      "marketCapUsd": 833176600576,
+      "marketCapEur": 757639902315.1769,
+      "epsTrailing": 4.68,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance AMD",
+          "url": "https://finance.yahoo.com/quote/AMD"
+        }
+      ]
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom Inc.",
+      "currency": "USD",
+      "trailingPe": 43.63,
+      "peState": "gemeldet",
+      "forwardPe": 17.6,
+      "forwardState": "gemeldet",
+      "priceToSales": 18.3,
+      "marketCapUsd": 1630671994880,
+      "marketCapEur": 1482833495389.6519,
+      "epsTrailing": 7.83,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance AVGO",
+          "url": "https://finance.yahoo.com/quote/AVGO"
+        }
+      ]
+    },
+    {
+      "symbol": "INTC",
+      "name": "Intel Corporation",
+      "currency": "USD",
+      "trailingPe": null,
+      "peState": "negativ",
+      "forwardPe": 30.81,
+      "forwardState": "gemeldet",
+      "priceToSales": 4.9,
+      "marketCapUsd": 293228544000,
+      "marketCapEur": 266644124761.29855,
+      "epsTrailing": -2.35,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance INTC",
+          "url": "https://finance.yahoo.com/quote/INTC"
+        }
+      ]
+    },
+    {
+      "symbol": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "currency": "USD",
+      "trailingPe": 13.12,
+      "peState": "gemeldet",
+      "forwardPe": 13.65,
+      "forwardState": "gemeldet",
+      "priceToSales": 4.14,
+      "marketCapUsd": 178336890880,
+      "marketCapEur": 162168674074.74768,
+      "epsTrailing": 12.7,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance QCOM",
+          "url": "https://finance.yahoo.com/quote/QCOM"
+        }
+      ]
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML Holding N.V.",
+      "currency": "USD",
+      "trailingPe": 34.03,
+      "peState": "gemeldet",
+      "forwardPe": 21.82,
+      "forwardState": "gemeldet",
+      "priceToSales": 13.5,
+      "marketCapUsd": 533075099648,
+      "marketCapEur": 484745930388.2878,
+      "epsTrailing": 40.64,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance ASML",
+          "url": "https://finance.yahoo.com/quote/ASML"
+        }
+      ]
+    },
+    {
+      "symbol": "SAP.DE",
+      "name": "SAP SE",
+      "currency": "EUR",
+      "trailingPe": 29.16,
+      "peState": "gemeldet",
+      "forwardPe": 23.74,
+      "forwardState": "gemeldet",
+      "priceToSales": 5.9,
+      "marketCapUsd": null,
+      "marketCapEur": 232572157952,
+      "epsTrailing": 6.91,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance SAP.DE",
+          "url": "https://finance.yahoo.com/quote/SAP.DE"
+        }
+      ]
+    },
+    {
+      "symbol": "IFX.DE",
+      "name": "Infineon Technologies AG",
+      "currency": "EUR",
+      "trailingPe": 42.71,
+      "peState": "gemeldet",
+      "forwardPe": 12.56,
+      "forwardState": "gemeldet",
+      "priceToSales": 3.87,
+      "marketCapUsd": null,
+      "marketCapEur": 63322406912,
+      "epsTrailing": 1.14,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance IFX.DE",
+          "url": "https://finance.yahoo.com/quote/IFX.DE"
         }
       ]
     }

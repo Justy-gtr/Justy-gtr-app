@@ -1,4 +1,11 @@
 export const VALUE_SYMBOLS = ["SPCX", "TSLA", "RKLB", "MRVL", "NVDA"];
+/** Large US and German tech, space and AI names. The chips stay the five above. */
+export const UNIVERSE = [
+  ...VALUE_SYMBOLS,
+  "AAPL", "MSFT", "GOOGL", "AMZN", "META", "AMD", "AVGO", "INTC", "QCOM", "ASML",
+  "SAP.DE", "IFX.DE"
+];
+export const CHEAP_LIMIT = 4;
 export const HISTORY_MIN = 20;
 export const PEER_MIN = 2;
 
@@ -131,9 +138,33 @@ export function shouldSkipFundamentals(previous, now = new Date(), force = false
   if (force) return false;
   if (!previous?.asOf || !Array.isArray(previous.symbols)) return false;
   const have = new Set(previous.symbols.map((item) => item?.symbol));
-  if (!VALUE_SYMBOLS.every((symbol) => have.has(symbol))) return false;
+  if (!UNIVERSE.every((symbol) => have.has(symbol))) return false;
   if (typeof dayOf !== "function") return false;
   return dayOf(previous.asOf) != null && dayOf(previous.asOf) === dayOf(now);
+}
+
+function medianOf(values) {
+  const list = values.filter((value) => Number.isFinite(value) && value > 0).sort((a, b) => a - b);
+  if (!list.length) return null;
+  const mid = Math.floor(list.length / 2);
+  return list.length % 2 ? list[mid] : (list[mid - 1] + list[mid]) / 2;
+}
+
+/** Names with a clearly lower KGV than the set, or a low KUV when the KGV is missing. */
+export function cheaperNames(symbols, { limit = CHEAP_LIMIT, skip = "" } = {}) {
+  const rows = (symbols || []).filter((item) => item?.symbol && item.symbol !== skip);
+  const peMedian = medianOf(rows.map((item) => item.trailingPe));
+  const psMedian = medianOf(rows.map((item) => item.priceToSales));
+  return rows
+    .filter((item) => {
+      if (item.peState === "negativ") return false;
+      const lowPe = item.trailingPe > 0 && peMedian && item.trailingPe <= peMedian * 0.8;
+      const lowPs = !(item.trailingPe > 0) && item.priceToSales > 0 && psMedian && item.priceToSales <= psMedian * 0.8;
+      const lowHist = historyPlacement(item.history).word === "günstig" && item.trailingPe > 0 && peMedian && item.trailingPe <= peMedian;
+      return lowPe || lowPs || lowHist;
+    })
+    .sort((a, b) => (a.trailingPe || a.priceToSales || 0) - (b.trailingPe || b.priceToSales || 0))
+    .slice(0, limit);
 }
 
 export function symbolsOf(file) {

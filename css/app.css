@@ -944,10 +944,15 @@ body.detail-open .pager { overflow: hidden; }
 
 #page-heute > * + * { margin-top: 28px; }
 .glance-list { margin: 8px 0 0; padding-left: 1.15em; }
-.glance-list li { margin: 8px 0; font-size: 17px; line-height: 1.35; }
-.driver summary { cursor: pointer; display: block; list-style: none; }
-.driver summary::-webkit-details-marker { display: none; }
-.driver-px { font-size: 18px; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
+.glance-list li { margin: 6px 0; font-size: 20px; line-height: 1.25; letter-spacing: -0.02em; }
+.driver-table { width: 100%; border-collapse: collapse; }
+.driver-table th { text-align: left; color: var(--muted); font-size: 11px; font-weight: 650; letter-spacing: 0.04em; text-transform: uppercase; }
+.driver-table td { padding: 10px 8px 10px 0; vertical-align: top; font-size: 15px; border-top: 1px solid var(--line); }
+.driver-table td:nth-child(2) { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.cal-row { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left; }
+.cheap-list { list-style: none; margin: 8px 0 0; padding: 0; }
+.cheap-list li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 17px; }
+.cheap-list span { font-variant-numeric: tabular-nums; }
 .news-item summary { cursor: pointer; display: block; }
 .news-item summary::-webkit-details-marker { display: none; }
 .news-top { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }

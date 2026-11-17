@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
 import { orderCalendarEvents } from "../js/logic.js";
+import { calendarList } from "../js/logic.js";
 import { renderKalender } from "../js/views.js";
 
 function event(id, date, time, extra = {}) {
@@ -97,19 +98,18 @@ test("Die Kalenderseite rendert diese Reihenfolge und blendet Altes aus", () => 
     event("extern", "2026-11-10", "16:00", { kind: "external" }),
     event("extern-old", "2026-10-01", "09:00", { kind: "external" })
   ];
-  const company = renderKalender({ calendar: { events } }, { calKind: "company" }, now);
+  const company = renderKalender({ calendar: { events } }, {}, now);
   const companyIds = [...company.matchAll(/data-id="([^"]+)"/g)].map((match) => match[1]);
-  assert.deepEqual(companyIds, ["soon", "later", "past-new"]);
+  assert.deepEqual(companyIds, ["soon", "extern", "later"]);
   assert.equal(company.includes("past-old"), false);
-  assert.equal(companyIds.includes("extern"), false);
-  const external = renderKalender({ calendar: { events } }, { calKind: "external" }, now);
-  const externalIds = [...external.matchAll(/data-id="([^"]+)"/g)].map((match) => match[1]);
-  assert.deepEqual(externalIds, ["extern"]);
+  assert.equal(company.includes("past-new"), false);
+  assert.equal(company.includes("Unternehmen"), false);
+  assert.equal(company.includes("class=\"prob"), false);
   const file = JSON.parse(fs.readFileSync("data/calendar.json", "utf8"));
   const liveNow = new Date("2026-11-10T02:00:00+01:00");
-  const html = renderKalender({ calendar: file }, { calKind: "company" }, liveNow);
+  const html = renderKalender({ calendar: file }, {}, liveNow);
   const ids = [...html.matchAll(/data-id="([^"]+)"/g)].map((match) => match[1]);
-  const expected = orderCalendarEvents(file.events.filter((item) => item.kind === "company"), liveNow).map((item) => item.id);
+  const expected = calendarList(file.events, liveNow).map((item) => item.id);
   assert.deepEqual(ids, expected);
   assert.ok(ids.length > 0);
   const byId = new Map(file.events.map((item) => [item.id, item]));

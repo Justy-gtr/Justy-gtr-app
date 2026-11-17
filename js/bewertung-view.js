@@ -1,4 +1,5 @@
 import {
+  cheaperNames,
   historyPlacement,
   peerPlacement,
   peerValues,
@@ -11,7 +12,19 @@ const NAMES = {
   TSLA: "Tesla",
   RKLB: "Rocket Lab",
   MRVL: "Marvell",
-  NVDA: "Nvidia"
+  NVDA: "Nvidia",
+  AAPL: "Apple",
+  MSFT: "Microsoft",
+  GOOGL: "Alphabet",
+  AMZN: "Amazon",
+  META: "Meta",
+  AMD: "AMD",
+  AVGO: "Broadcom",
+  INTC: "Intel",
+  QCOM: "Qualcomm",
+  ASML: "ASML",
+  "SAP.DE": "SAP",
+  "IFX.DE": "Infineon"
 };
 import { esc, formatNumber } from "./logic.js";
 
@@ -67,9 +80,11 @@ export function renderBewertung(data, ui) {
   const row = rows.find((item) => item.symbol === active) || null;
   const chips = VALUE_SYMBOLS.map((symbol) => `
     <button type="button" class="chip" data-action="value-symbol" data-symbol="${esc(symbol)}" aria-pressed="${symbol === active}">${esc(symbol)}</button>`).join("");
+  const focus = rows.filter((item) => VALUE_SYMBOLS.includes(item.symbol));
   const history = historyPlacement(row?.history);
-  const peers = peerPlacement(row?.trailingPe, peerValues(rows, active, "trailingPe"));
-  const salesPeers = peerPlacement(row?.priceToSales, peerValues(rows, active, "priceToSales"));
+  const peers = peerPlacement(row?.trailingPe, peerValues(focus, active, "trailingPe"));
+  const salesPeers = peerPlacement(row?.priceToSales, peerValues(focus, active, "priceToSales"));
+  const cheap = cheaperNames(rows, { skip: active });
   const peLine = peSentence(row);
   const forwardLine = forwardSentence(row);
   const salesLine = row?.priceToSales == null ? "Kein KUV gemeldet." : "";
@@ -99,5 +114,12 @@ export function renderBewertung(data, ui) {
       ${bar(salesPeers, "KUV gegen die anderen beobachteten Aktien")}
       <p class="muted value-note">Für die eigene Spanne des KUV liegt keine frühere Umsatzreihe vor.</p>
     </article>
+    <section class="card cheap-card" aria-label="Vergleichsweise niedrig bewertet">
+      <p class="kicker">Vergleichsweise niedrig bewertet</p>
+      ${cheap.length ? `<ul class="cheap-list">${cheap.map((item) => {
+        const figure = item.trailingPe > 0 ? `KGV ${formatRatio(item.trailingPe)}` : `KUV ${formatRatio(item.priceToSales)}`;
+        return `<li><strong>${esc(NAMES[item.symbol] || item.symbol)}</strong><span>${esc(figure)}</span></li>`;
+      }).join("")}</ul>` : `<p class="value-empty">noch zu wenig Daten</p>`}
+    </section>
   `;
 }

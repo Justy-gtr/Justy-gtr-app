@@ -1,5 +1,5 @@
-import { courseDrivers, filterNews, glancePoints, headlineOf, NEWS_CHIPS, buildNews } from "./news.js";
-import { esc, formatEUR, formatPct, formatStamp, safeUrl } from "./logic.js";
+import { courseDrivers, filterNews, glancePoints, NEWS_CHIPS, buildNews } from "./news.js";
+import { esc, formatPct, formatStamp, safeUrl } from "./logic.js";
 
 function tone(value) {
   if (value > 0) return "up";
@@ -47,20 +47,15 @@ export function renderNews(data, ui, now = new Date()) {
     </section>
     <section aria-label="Was bewegt den Kurs">
       <p class="kicker">Was bewegt den Kurs</p>
-      <div class="stack">${drivers.map((ticker) => {
-        const short = headlineOf(ticker.why, 90);
-        const rest = short && short !== ticker.why ? ticker.why : "";
-        return `<details class="card driver">
-          <summary>
-            <span class="row between">
-              <strong>${esc(ticker.symbol)}</strong>
-              <span class="driver-px">${esc(formatEUR(ticker.priceEur))} <span class="${tone(ticker.changePct)}">${esc(formatPct(ticker.changePct))}</span></span>
-            </span>
-            <span class="news-title">${esc(short || ticker.why)}</span>
-          </summary>
-          ${rest ? `<p>${esc(rest)}</p>` : ""}
-        </details>`;
-      }).join("") || `<p class="empty">Noch keine Einordnung hinterlegt.</p>`}</div>
+      <table class="driver-table">
+        <thead><tr><th>Aktie</th><th>%</th><th>Warum</th></tr></thead>
+        <tbody>${drivers.map((ticker) => `
+          <tr>
+            <td>${esc(ticker.symbol)}</td>
+            <td class="${tone(ticker.changePct)}">${esc(formatPct(ticker.changePct))}</td>
+            <td>${esc(ticker.why)}</td>
+          </tr>`).join("") || `<tr><td colspan="3">Noch keine Einordnung.</td></tr>`}</tbody>
+      </table>
     </section>
     <div class="chips" role="tablist" aria-label="Aktie">${NEWS_CHIPS.map((id) => `
       <button type="button" class="chip" data-action="news-filter" data-filter="${esc(id)}" aria-pressed="${filter === id}">${esc(chipLabel(id))}</button>`).join("")}</div>

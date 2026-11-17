@@ -656,7 +656,7 @@ Optional, die Datei muss es nicht haben: `history` ist eine Liste `{ "direction"
 
 Bewertung je Aktie. `scripts/fetch-fundamentals.mjs` hängt am Kurs-Workflow und schreibt die Datei höchstens einmal je Berliner Tag. `--force` erzwingt einen neuen Abruf, `--dry-run` schreibt nicht. Quelle ist Yahoo `quoteSummary` (Crumb, ohne Schlüssel) plus die Tagesschlüsse aus der Chart-Schnittstelle. Schlägt der Abruf fehl, bleibt die letzte Datei stehen und der Lauf warnt, statt die Kurse zu blockieren.
 
-Pflicht-Symbole: `SPCX`, `TSLA`, `RKLB`, `MRVL`, `NVDA`.
+Pflicht-Symbole der Bewertung: `SPCX`, `TSLA`, `RKLB`, `MRVL`, `NVDA`. Dieselbe Datei führt zusätzlich große US- und deutsche Technik-, Raumfahrt- und KI-Namen (Apple, Microsoft, Alphabet, Amazon, Meta, AMD, Broadcom, Intel, Qualcomm, ASML, SAP, Infineon). Die Seite nennt daraus bis zu vier Namen mit vergleichsweise niedrigem KGV. Der Lauf holt für die fünf Fokus-Namen auch die Kursspanne, für die übrigen nur die Kennzahlen.
 
 ```json
 {

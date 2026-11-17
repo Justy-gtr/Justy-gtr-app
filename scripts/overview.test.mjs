@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildSymbolRecord, historyPlacement, peerPlacement, shouldSkipFundamentals } from "../js/bewertung.js";
+import { buildSymbolRecord, cheaperNames, historyPlacement, peerPlacement, shouldSkipFundamentals } from "../js/bewertung.js";
 import { renderBewertung } from "../js/bewertung-view.js";
 import { buildNews, filterNews, glancePoints } from "../js/news.js";
 import { renderNews } from "../js/news-view.js";
@@ -50,6 +50,8 @@ test("News steht neueste zuerst und filtert nach Aktie", () => {
     briefing: { bullets: ["Nvidia am Abend."] }
   }, new Date("2026-11-17T12:00:00+01:00"));
   assert.equal(glance.length, 3);
+  for (const line of glance) assert.ok(line.split(" ").length <= 6, line);
+  assert.match(renderNews(data, { newsFilter: "alle" }), /<th>Aktie<\/th>/);
 });
 
 test("Stimmung nennt fehlende Treffer und behält die Bereiche", () => {
@@ -126,6 +128,14 @@ test("Bewertung lässt ein negatives KGV leer und setzt die Spanne", () => {
   assert.equal(peerPlacement(10, [40, 50]).word, "günstig");
   assert.equal(peerPlacement(80, [40, 50]).word, "teuer");
   assert.equal(shouldSkipFundamentals(null, new Date(), false, () => "2026-11-17"), false);
+  const low = cheaperNames([
+    { symbol: "AAA", trailingPe: 12, priceToSales: 2, history: { n: 0 } },
+    { symbol: "BBB", trailingPe: 80, priceToSales: 10, history: { n: 0 } },
+    { symbol: "CCC", trailingPe: 90, priceToSales: 12, history: { n: 0 } },
+    { symbol: "DDD", trailingPe: null, peState: "negativ", priceToSales: 1, history: { n: 0 } }
+  ]);
+  assert.deepEqual(low.map((item) => item.symbol), ["AAA"]);
+  assert.match(renderBewertung({ fundamentals: { symbols: [loss, rich, { symbol: "INTC", name: "Intel", trailingPe: 12, peState: "gemeldet", priceToSales: 3, marketCapEur: 1e11, history: { n: 0 } }] } }, { valueSymbol: "RKLB" }), /Vergleichsweise niedrig bewertet/);
   const html = renderBewertung({
     fundamentals: {
       historyNote: "Spanne aus dem Kurs.",
@@ -158,12 +168,13 @@ test("Wochentag nennt mittleren Anstieg und Rückgang in gleich hohen Bahnen", (
     avgDown: -0.8
   }));
   const html = renderDirectionBlock({ days: fat, hours: fat, source: "datei" });
-  assert.equal((html.match(/class="move-track is-up"/g) || []).length, 20);
-  assert.equal((html.match(/class="move-track is-down"/g) || []).length, 20);
+  assert.equal((html.match(/heat-cell/g) || []).length, 20);
+  assert.match(html, /background:rgba\(125, 222, 192/);
+  assert.match(html, /background:rgba\(255, 139, 152/);
   assert.match(html, /Mittlere Bewegung hoch und runter/);
-  assert.match(html, /6 von 10 hoch/);
+  assert.match(html, />hoch</);
   assert.equal(BANNED.test(html), false);
   const thin = renderDirectionBlock({ days: [{ n: 2, up: 1, down: 1, avgUp: 1, avgDown: -1 }], hours: [] });
   assert.match(thin, /noch zu wenig Daten/);
-  assert.equal((thin.match(/move-track/g) || []).length, 0);
+  assert.equal((thin.match(/heat-cell/g) || []).length, 0);
 });
