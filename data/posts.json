@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-17T06:30:00+01:00",
+  "asOf": "2026-11-17T08:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,284 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2122593416215224343",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T08:31:20+01:00",
+      "summaryDe": "Musk antwortet auf einen Beitrag über die Tesla-Krise 2018 (Antonio Gracias erzählt, wie Musk nachts im Karosseriebau rund 30 Schweißpunkte strich): Er und einer der besten Statik-Ingenieure hätten je eine Seite der Rohkarosse markiert, die Urteile hätten fast genau übereingestimmt. Wäre es falsch gewesen, hätte es einen Rückruf gegeben – „gab es nicht“. Rückblick, keine neue Meldung.",
+      "originalText": "@stark0xbt I had one of our best structural engineers mark spot welds for deletion on one side of the body-in-white and I did the other (the welds are symmetric). Our judgments matched exactly, apart from debate about a few, which was settled quickly. If we had been wrong, it would have resulted in a recall. We were not.",
+      "url": "https://x.com/elonmusk/status/2122593416215224343",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 08:31): Antwort zu gestrichenen Schweißpunkten",
+          "url": "https://x.com/elonmusk/status/2122593416215224343"
+        },
+        {
+          "title": "Beantworteter Post @stark0xbt (16.11., 22:39): Gracias über Musk 2018",
+          "url": "https://x.com/stark0xbt/status/2122444425087295548"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122591679525900447",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T08:24:26+01:00",
+      "summaryDe": "Musk teilt einen Erfahrungsbericht von @teslaownersSV: Grok Bot habe die Krankenakte seiner Frau gelesen, Krebsstudien recherchiert, einen Spezialisten in Stanford gefunden und die E-Mails entworfen; Stanford habe Stunden später zurückgerufen. Musk antwortet mit einem Herz. Werbung für Grok, keine Zahl.",
+      "originalText": "RT @teslaownersSV: Grok Bot read my wife's medical records, researched the latest cancer treatments and trials, found the top specialist at Stanford and drafted the emails. …",
+      "url": "https://x.com/elonmusk/status/2122591679525900447",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 08:24): Repost @teslaownersSV – Grok Bot und Stanford",
+          "url": "https://x.com/elonmusk/status/2122591679525900447"
+        },
+        {
+          "title": "Originalpost @teslaownersSV (17.11., 03:09)",
+          "url": "https://x.com/teslaownersSV/status/2122512355062161744"
+        },
+        {
+          "title": "@elonmusk auf X (17.11., 08:24): Antwort ❤️",
+          "url": "https://x.com/elonmusk/status/2122591709515362679"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122589089702813944",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T08:14:09+01:00",
+      "summaryDe": "Musk spottet mit einem Bild über Delta-Chef Ed Bastian, der laut @XFreeze die Entscheidung für Amazon Leo statt Starlink weiter als „langes Spiel“ verteidigt (United hat laut dem Beitrag über 700 Flugzeuge mit Starlink, Delta will Amazon Leo erst ab 2028 einbauen). Kurz danach schreibt Musk, das Bild könne auch „Warten auf Grok 4.8“ heißen – ein Hinweis, dass Grok 4.8 noch nicht da ist. Keine Firmenmeldung.",
+      "originalText": "@XFreeze I found a pic of “the long game” / @XFreeze Could also be titled “waiting for Grok 4.8” 😂 😢",
+      "url": "https://x.com/elonmusk/status/2122589089702813944",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 08:14): Bild zu „the long game“",
+          "url": "https://x.com/elonmusk/status/2122589089702813944"
+        },
+        {
+          "title": "Beantworteter Post @XFreeze (17.11., 07:26): Delta bleibt bei Amazon Leo",
+          "url": "https://x.com/XFreeze/status/2122577137609912605"
+        },
+        {
+          "title": "@elonmusk auf X (17.11., 08:22): „waiting for Grok 4.8“",
+          "url": "https://x.com/elonmusk/status/2122591171905986818"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122588732742304147",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T08:12:44+01:00",
+      "summaryDe": "Musk teilt einen Beitrag des früheren Nvidia-Mitarbeiters Yun-Ta Tsai: Jensen Huang sei zu Führungskräften fordernd, zu einzelnen Mitarbeitern aber stets freundlich gewesen. Passt zu Musks Unterstützung für eine Rückkehr Huangs; Nvidia legt heute 22:20 Zahlen vor.",
+      "originalText": "RT @yunta_tsai: Jensen was demanding of his executives, yet consistently kind and supportive to individual contributors like me. Too many c…",
+      "url": "https://x.com/elonmusk/status/2122588732742304147",
+      "tickers": [],
+      "companies": [
+        "Nvidia"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 08:12): Repost @yunta_tsai über Jensen Huang",
+          "url": "https://x.com/elonmusk/status/2122588732742304147"
+        },
+        {
+          "title": "Originalpost @yunta_tsai (17.11., 06:33)",
+          "url": "https://x.com/yunta_tsai/status/2122563749668167851"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122587577274237129",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T08:08:08+01:00",
+      "summaryDe": "Musk schreibt, es sei schön gewesen, die frühen SpaceX-Ingenieure Tom Mueller (@lrocket) und Hans Koenigsmann beim ersten Schiffsfang zu sehen, und zitiert Muellers Lob für Musk. Keine neue Meldung.",
+      "originalText": "Was good to see @lrocket & @HansKoenigsmann at the first ship catch",
+      "url": "https://x.com/elonmusk/status/2122587577274237129",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 08:08): Mueller und Koenigsmann beim Schiffsfang",
+          "url": "https://x.com/elonmusk/status/2122587577274237129"
+        },
+        {
+          "title": "Zitierter Post (16.11., 23:11): Tom Mueller über Musk",
+          "url": "https://x.com/i/status/2122452622519230711"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122577169863885235",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T07:26:47+01:00",
+      "summaryDe": "Musk: Unermüdliches Reinforcement Learning müsse sich für eine Superintelligenz anfühlen wie der Film „Edge of Tomorrow“ (immer derselbe Tag, bis es klappt). Gedankenspiel zu KI, keine Meldung.",
+      "originalText": "Relentless reinforcement learning must feel like Edge of Tomorrow to superintelligence",
+      "url": "https://x.com/elonmusk/status/2122577169863885235",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 07:26)",
+          "url": "https://x.com/elonmusk/status/2122577169863885235"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122576221846253837",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T07:23:01+01:00",
+      "summaryDe": "Musk teilt erneut das Video vom Fang des Starship 42 am Turm (Original vom 15.11.). Bekannt, keine neue Zahl.",
+      "originalText": "Starship 42 [Video]",
+      "url": "https://x.com/elonmusk/status/2122576221846253837",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 07:23): Starship 42 (Video)",
+          "url": "https://x.com/elonmusk/status/2122576221846253837"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122573303994896678",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T07:11:25+01:00",
+      "summaryDe": "Musk teilt ein spöttisches Video von @Cyber_Trailer über FSD-Nutzer („FSD-Wissen sickert langsam zu den Dümmsten durch“). Humor, keine Meldung.",
+      "originalText": "RT @Cyber_Trailer: FSD knowledge is slowly matriculating down to the dumbest members of society.",
+      "url": "https://x.com/elonmusk/status/2122573303994896678",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 07:11): Repost @Cyber_Trailer",
+          "url": "https://x.com/elonmusk/status/2122573303994896678"
+        },
+        {
+          "title": "Originalpost @Cyber_Trailer (15.11., 06:40)",
+          "url": "https://x.com/Cyber_Trailer/status/2121840684294611324"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122572107116642664",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T07:06:40+01:00",
+      "summaryDe": "Musk fragt „Wie kann Grok Bot hilfreicher werden?“ und zitiert einen Aufruf, Rückmeldungen zum Bot gegen Guthaben zu geben. Werbung und Nutzerumfrage, keine Zahl.",
+      "originalText": "How can Grok @Bot be more helpful?",
+      "url": "https://x.com/elonmusk/status/2122572107116642664",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 07:06): Wie kann Grok Bot hilfreicher werden?",
+          "url": "https://x.com/elonmusk/status/2122572107116642664"
+        },
+        {
+          "title": "Zitierter Post (17.11., 03:41): Aufruf zu Feedback",
+          "url": "https://x.com/i/status/2122520453604372990"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122569434158002642",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T06:56:03+01:00",
+      "summaryDe": "Musk teilt einen Beitrag von @JasonBud: Grok Bot erledige Aufgaben notfalls auch per Telefonanruf. Werbung, keine Zahl.",
+      "originalText": "RT @JasonBud: Grok @bot will do whatever it takes to get a task done for you, even make a phone call.",
+      "url": "https://x.com/elonmusk/status/2122569434158002642",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 06:56): Repost @JasonBud",
+          "url": "https://x.com/elonmusk/status/2122569434158002642"
+        },
+        {
+          "title": "Originalpost @JasonBud (16.11., 21:55)",
+          "url": "https://x.com/JasonBud/status/2122433424010924139"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2122560875793953165",
       "account": "@elonmusk",
