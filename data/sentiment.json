@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-17T11:16:00+01:00",
+  "updatedAt": "2026-11-17T12:38:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
       "postsCount": 25,
-      "reason": "Weiter Lob für den Starship-Catch und Nvidias große SpaceX-Beteiligung; dass Citadel fast alle SpaceX-Aktien abgegeben hat, sorgt aber für Diskussion.",
+      "reason": "13F-Welle: Nvidia, ARK und Tudor stocken bei SpaceX auf, dazu Lob für den Starship-Catch. Citadels 94-%-Verkauf und Starlink-Ärger in Südafrika bremsen.",
       "sources": [
         {
-          "title": "@jakeisinvestor auf X (17.11., 11:05)",
-          "url": "https://x.com/jakeisinvestor/status/2122632231118049449"
+          "title": "@Investingcom auf X (17.11., 12:13)",
+          "url": "https://x.com/Investingcom/status/2122649392066814261"
         },
         {
-          "title": "@Rahatirtaza auf X (17.11., 10:53)",
-          "url": "https://x.com/Rahatirtaza/status/2122629279867605056"
+          "title": "@spcxGOD auf X (17.11., 11:59)",
+          "url": "https://x.com/spcxGOD/status/2122645829617930642"
         },
         {
-          "title": "@muskonomy auf X (17.11., 10:30)",
-          "url": "https://x.com/muskonomy/status/2122623278254870592"
+          "title": "@CaesarCapitalz auf X (17.11., 12:25)",
+          "url": "https://x.com/CaesarCapitalz/status/2122652220344676445"
         }
       ],
-      "updatedAt": "2026-11-17T11:16:00+01:00"
+      "updatedAt": "2026-11-17T12:38:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 30,
-      "postsCount": 30,
-      "reason": "Fusionsgerede mit SpaceX hält an; Altimeter-Chef Gerstner baut eine große Tesla-Position auf. Dazu Grünheide-Ausbau, Kritiker sehen schwache Gewinne.",
+      "postsCount": 25,
+      "reason": "Barclays bleibt bei Overweight und 450 $ wegen Robotaxi; Fusionsgerede mit SpaceX und Cybercab-Pläne für Grünheide. Kritiker nennen schwache Gewinne und China-Absatz.",
       "sources": [
         {
-          "title": "@grok auf X (17.11., 10:56)",
-          "url": "https://x.com/grok/status/2122629847801278926"
+          "title": "@tenet_research auf X (17.11., 11:23)",
+          "url": "https://x.com/tenet_research/status/2122636801194275081"
         },
         {
-          "title": "@aktien_max auf X (17.11., 10:57)",
-          "url": "https://x.com/aktien_max/status/2122630071412273624"
+          "title": "@moomoo auf X (17.11., 12:30)",
+          "url": "https://x.com/moomoo/status/2122653479680242156"
         },
         {
-          "title": "@BradMunchen auf X (17.11., 10:30)",
-          "url": "https://x.com/BradMunchen/status/2122623378364489804"
+          "title": "@Stefan_Hajek auf X (17.11., 11:33)",
+          "url": "https://x.com/Stefan_Hajek/status/2122639211677491564"
         }
       ],
-      "updatedAt": "2026-11-17T11:16:00+01:00"
+      "updatedAt": "2026-11-17T12:38:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": 15,
-      "postsCount": 25,
-      "reason": "Laut 13F hat Citadel SpaceX fast ganz abgegeben und neu Rocket Lab im Depot, das freut Fans; Kursrutsch und Neutron-Verschiebung sorgen weiter für Spott.",
+      "postsCount": 17,
+      "reason": "Citadels neue Rocket-Lab-Position (ca. 221 Mio. $) statt SpaceX wird viel diskutiert; sonst wenig Neues, viel Werbung. Kursrutsch und Neutron-Verschiebung bleiben Thema.",
       "sources": [
         {
-          "title": "@Rahatirtaza auf X (17.11., 10:53)",
-          "url": "https://x.com/Rahatirtaza/status/2122629279867605056"
+          "title": "@AlphaOwlTrading auf X (17.11., 12:06)",
+          "url": "https://x.com/AlphaOwlTrading/status/2122647518773162008"
         },
         {
-          "title": "@RCapitalX auf X (17.11., 10:06)",
-          "url": "https://x.com/RCapitalX/status/2122617396251021410"
+          "title": "@LongBullz auf X (17.11., 12:33)",
+          "url": "https://x.com/LongBullz/status/2122654284026163405"
         },
         {
-          "title": "@beautyofhelin auf X (17.11., 10:01)",
-          "url": "https://x.com/beautyofhelin/status/2122616000738631783"
+          "title": "@dixonhill432305 auf X (17.11., 12:21)",
+          "url": "https://x.com/dixonhill432305/status/2122651427537629469"
         }
       ],
-      "updatedAt": "2026-11-17T11:16:00+01:00"
+      "updatedAt": "2026-11-17T12:38:00+01:00"
     }
   }
 }
