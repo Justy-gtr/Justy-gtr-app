@@ -283,7 +283,7 @@ function paintGuides(ctx, layout, lines) {
       ctx.lineTo(coords.at(-1).x, y0);
     }
     ctx.stroke();
-    if (line.kind !== "pattern") pending.push({ y: endY, text: style.label, color: style.color });
+    if (line.kind !== "pattern") pending.push({ y: endY, text: line.marker ? `${line.marker} · ${style.label}` : style.label, color: style.color });
   }
   ctx.setLineDash([]);
   ctx.font = "10px -apple-system, BlinkMacSystemFont, sans-serif";

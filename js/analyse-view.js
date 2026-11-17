@@ -55,7 +55,9 @@ export function guideLegend(lines) {
   const items = kinds.map((kind) => {
     const style = guideStyle(kind);
     const cls = kind === "resistance" ? "resist" : kind;
-    return `<span><i class="swatch ${cls}" aria-hidden="true"></i>${esc(style.label)}</span>`;
+    const marker = (lines || []).find((line) => line?.kind === kind && line.marker)?.marker;
+    const note = marker ? ` · ${marker}` : "";
+    return `<span><i class="swatch ${cls}" aria-hidden="true"></i>${esc(style.label)}${esc(note)}</span>`;
   });
   if (marks) {
     items.push(`<span class="mark-key">▲ abgeprallt</span>`);

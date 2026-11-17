@@ -1,4 +1,4 @@
-import { berlinDate, calendarList, calendarStart, formatEUR, formatPct, orderCalendarEvents } from "./logic.js";
+import { berlinDate, calendarList, calendarStart, formatEUR, formatPct, opinionWord, orderCalendarEvents } from "./logic.js";
 import { berlinClock, hourMove } from "./seasonality.js";
 import { lampState } from "./sentiment.js";
 
@@ -111,6 +111,41 @@ export function filterNews(items, filter) {
 }
 
 export const AGENDA_SYMBOLS = ["SPCX", "TSLA", "RKLB", "MRVL", "NVDA"];
+const GERMAN_PLAIN = new Set(["SAP", "HEN3", "IFX"]);
+
+/** Compact Schwarm rows. US is the tracked names. GER is the Trade-Republic list. */
+export function swarmList(data, side) {
+  const favorites = data?.favorites?.favorites || [];
+  const fav = new Map(favorites.map((item) => [item?.symbol, item]));
+  if (side === "ger") {
+    return (data?.germany?.symbols || []).map((row) => {
+      const item = fav.get(row?.symbol);
+      return {
+        symbol: row?.symbol || "",
+        name: row?.name || row?.symbol || "",
+        note: item?.swarmStance ? opinionWord(item.swarmStance) : "ohne Schwarm"
+      };
+    }).filter((row) => row.symbol);
+  }
+  const german = new Set([
+    ...GERMAN_PLAIN,
+    ...(data?.germany?.symbols || []).map((row) => row?.symbol)
+  ]);
+  const symbols = [];
+  for (const symbol of [...AGENDA_SYMBOLS, ...favorites.map((item) => item?.symbol)]) {
+    if (!symbol || symbols.includes(symbol) || german.has(symbol) || String(symbol).endsWith(".DE")) continue;
+    symbols.push(symbol);
+  }
+  return symbols.map((symbol) => {
+    const item = fav.get(symbol);
+    const light = sentimentLight(data, symbol);
+    return {
+      symbol,
+      name: item?.name || symbol,
+      note: item?.swarmStance ? opinionWord(item.swarmStance) : light.word
+    };
+  });
+}
 
 function fundRows(data) {
   const symbols = data?.fundamentals?.symbols;

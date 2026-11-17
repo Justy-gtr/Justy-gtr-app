@@ -76,7 +76,7 @@ const files = [
   "promises.json", "production.json", "insiders.json", "briefing.json", "weekly.json",
   "daily_question.json", "glossary.json", "track_record.json", "alerts.json",
   "scenarios.json", "companies.json", "seasonality.json", "moonshots.json", "turbo-universe.json",
-  "sentiment.json", "germany.json", "de-turbos.json", "fundamentals.json"
+  "sentiment.json", "germany.json", "de-turbos.json", "fundamentals.json", "lines.json"
 ];
 const loaded = Object.fromEntries(files.map((name) => [name, read(name)]));
 
@@ -640,6 +640,32 @@ if (fundamentals) {
       }
       if (row.marketCapEur != null && typeof row.marketCapEur !== "number") fail(`fundamentals.${symbol}.marketCapEur`);
       if (FUND_BANNED.test(JSON.stringify(row))) fail(`fundamentals.${symbol} Wort`);
+    }
+  }
+}
+
+const linesDoc = loaded["lines.json"];
+if (linesDoc) {
+  if (linesDoc.schema !== 1) fail("lines.schema");
+  if (linesDoc.everyMin !== 15) fail("lines.everyMin");
+  if (!linesDoc.symbols || typeof linesDoc.symbols !== "object") fail("lines.symbols");
+  for (const symbol of ANALYSE_SYMBOLS) {
+    if (!linesDoc.symbols?.[symbol]) fail(`lines fehlt ${symbol}`);
+  }
+  const allowed = new Set(["support", "resistance", "trend", "pattern"]);
+  const markers = new Set(["", "fest", "2×", "3×"]);
+  for (const [symbol, row] of Object.entries(linesDoc.symbols || {})) {
+    if (!row?.hour || !row?.ranges) fail(`lines.${symbol}`);
+    for (const range of Object.values(row.ranges || {})) {
+      const drawn = range?.lines || [];
+      if (drawn.length > 3) fail(`lines.${symbol} mehr als drei`);
+      for (const line of drawn) {
+        if (!allowed.has(line.kind)) fail(`lines.${symbol} art`);
+        if (!markers.has(line.marker || "")) fail(`lines.${symbol} marker`);
+        if ((line.kind === "support" || line.kind === "resistance") && !(Number(line.n) >= 2)) {
+          fail(`lines.${symbol} zu wenig Berührungen`);
+        }
+      }
     }
   }
 }

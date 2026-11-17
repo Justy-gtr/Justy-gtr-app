@@ -716,6 +716,12 @@ Xetra-Namen mit großem Auf und Ab am Morgen, die bei Trade Republic Long- und S
 
 `morning` ist die Morgen-Schwankung: je Xetra-Tag `(Hoch − Tief) / Eröffnung` in Prozent, nur Kerzen von 09:00 bis vor 10:30 Uhr Berlin, aus den 15-Minuten-Kursen des letzten Monats. Der Mittelwert, der größte Tag und `n` nehmen die letzten höchstens 21 fertigen Sitzungen. Der noch laufende Morgen zählt nicht. `sparkline` und `intraday` sind der letzte Handelstag in 5 Minuten. Die Seite sortiert nach `avgPct`, der größte Morgen oben. Die Wörter „kaufen“, „verkaufen“, „Empfehlung“ und „Anlageberatung“ stehen hier nicht. Eine Beispiel-ISIN kann nach dem Knock-out weg sein.
 
+## `lines.json`
+
+Bestätigte Chartlinien und die aktuelle Stunde. `scripts/build-lines.mjs` rechnet sie aus `prices.json`, ohne einen neuen Börsenabruf. Der Kurs-Workflow schreibt die Datei bei jedem Lauf mit. Zusätzlich läuft `.github/workflows/afternoon.yml` montags bis freitags alle 15 Minuten (`*/15 12-21 * * 1-5` in UTC). Das Tor lässt nur 14:00 bis 22:00 Berliner Zeit durch, Sommer und Winter. Die offene App holt Kurse, Wochentag-Stunden und diese Datei im selben Takt nach.
+
+Jede Linie ist `support`, `resistance`, `trend` oder `pattern`. Stütze und Widerstand brauchen mindestens zwei abgeschlossene Berührungen. Ein Trend bleibt, wenn der Kurs ihn reitet oder ihn mindestens zweimal berührt. Höchstens drei Linien je Spanne. `marker` ist `fest`, `2×` oder `3×`. `hour` ist die Berliner Stunde des Laufs: wie oft die letzten fünf Handelstage in dieser Stunde stiegen.
+
 ## Prüfung
 
 `node scripts/validate-data.mjs` prüft Pflichtfelder, Quellen und dass keine Schlüssel-Muster in den Dateien stehen. Der Seiten-Workflow bricht ab, wenn das fehlschlägt.

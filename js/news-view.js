@@ -1,4 +1,4 @@
-import { AGENDA_SYMBOLS, eventsWithin, filterNews, hourShareStyle, hourWeek, NEWS_CHIPS, nextUpcoming, sentimentLight, buildNews } from "./news.js";
+import { AGENDA_SYMBOLS, eventsWithin, filterNews, hourShareStyle, hourWeek, NEWS_CHIPS, nextUpcoming, sentimentLight, swarmList, buildNews } from "./news.js";
 import { calendarSentence, calendarWhen, esc, formatStamp, safeUrl } from "./logic.js";
 import { formatSignedPct } from "./seasonality.js";
 
@@ -11,6 +11,26 @@ function berlinHourLabel(now) {
   let hour = parts.find((part) => part.type === "hour")?.value || "";
   if (hour === "24") hour = "00";
   return `${hour} Uhr`;
+}
+
+function swarmBlock(data, ui) {
+  const side = ui?.swarmSide === "ger" ? "ger" : "us";
+  const rows = swarmList(data, side).map((row) => {
+    const symbol = String(row.symbol || "").replace(/\.DE$/, "");
+    return `<p class="swarm-row"><strong>${esc(symbol)}</strong><span>${esc(row.name)}</span><span class="muted">${esc(row.note)}</span></p>`;
+  }).join("");
+  return `
+    <section class="card swarm-compact" id="swarm-compact" aria-label="Schwarm">
+      <div class="row between">
+        <p class="kicker">Schwarm</p>
+        <div class="segment swarm-side" role="group" aria-label="US oder GER">
+          <button type="button" data-action="swarm-side" data-side="us" aria-pressed="${side === "us"}">US</button>
+          <span class="swarm-bar" aria-hidden="true">|</span>
+          <button type="button" data-action="swarm-side" data-side="ger" aria-pressed="${side === "ger"}">GER</button>
+        </div>
+      </div>
+      ${rows || `<p class="muted">Keine Namen in dieser Liste.</p>`}
+    </section>`;
 }
 
 function chipLabel(filter) {
@@ -93,6 +113,7 @@ export function renderNews(data, ui, now = new Date()) {
         ? eventLines(soon)
         : `<p class="muted">In den nächsten drei Stunden liegt nichts.</p>${later.length ? `<p class="kicker">Danach</p>${eventLines(later)}` : ""}`}</div>
     </section>
+    ${swarmBlock(data, ui)}
     <div class="chips" role="tablist" aria-label="Aktie">${NEWS_CHIPS.map((id) => `
       <button type="button" class="chip" data-action="news-filter" data-filter="${esc(id)}" aria-pressed="${filter === id}">${esc(chipLabel(id))}</button>`).join("")}</div>
     <div class="stack">${rows || `<p class="empty">In diesem Filter liegt nichts.</p>`}</div>

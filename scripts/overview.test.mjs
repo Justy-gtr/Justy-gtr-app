@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { buildSymbolRecord, cheaperNames, historyPlacement, peerPlacement, shouldSkipFundamentals } from "../js/bewertung.js";
 import { renderBewertung } from "../js/bewertung-view.js";
-import { buildNews, filterNews, glancePoints, hourWeek, sentimentLight, stockAgenda } from "../js/news.js";
+import { buildNews, filterNews, glancePoints, hourWeek, sentimentLight, stockAgenda, swarmList } from "../js/news.js";
 import { renderNews } from "../js/news-view.js";
 import { aggregateWeekdays, renderSeasonalityCard } from "../js/seasonality.js";
 import { moodReliability } from "../js/stimmung.js";
@@ -93,6 +93,61 @@ test("News steht neueste zuerst und filtert nach Aktie", () => {
   }, { newsFilter: "TSLA" }, now);
   assert.match(lit, /Stimmung positiv/);
   assert.match(lit, /#22c55e/);
+});
+
+test("Schwarm auf News schaltet zwischen US und GER", () => {
+  const data = {
+    favorites: {
+      favorites: [
+        { symbol: "SPCX", name: "SpaceX", swarmStance: "kauf" },
+        { symbol: "SAP", name: "SAP", swarmStance: "halten" },
+        { symbol: "TSM", name: "TSMC", swarmStance: "kauf" }
+      ]
+    },
+    germany: {
+      symbols: [
+        { symbol: "S92.DE", name: "SMA Solar" },
+        { symbol: "HFG.DE", name: "HelloFresh" }
+      ]
+    },
+    sentiment: { symbols: { TSLA: { mood: "gut", updatedAt: "2026-11-17T15:00:00+01:00" } } },
+    posts: { posts: [] },
+    calendar: { events: [] },
+    prices: { tickers: [] }
+  };
+  const us = swarmList(data, "us");
+  assert.equal(us.find((row) => row.symbol === "SPCX")?.note, "optimistisch");
+  assert.ok(us.some((row) => row.symbol === "TSLA" && row.note === "positiv"));
+  assert.ok(us.some((row) => row.symbol === "TSM"));
+  assert.equal(us.some((row) => row.symbol === "SAP" || String(row.symbol).endsWith(".DE")), false);
+  const ger = swarmList(data, "ger");
+  assert.deepEqual(ger.map((row) => row.symbol), ["S92.DE", "HFG.DE"]);
+  assert.equal(ger[0].note, "ohne Schwarm");
+  const now = new Date("2026-11-17T21:00:00+01:00");
+  const german = renderNews(data, { newsFilter: "alle", swarmSide: "ger" }, now);
+  assert.match(german, /data-action="swarm-side"/);
+  assert.match(german, />US</);
+  assert.match(german, />GER</);
+  assert.match(german, /aria-pressed="true">GER/);
+  assert.match(german, /SMA Solar/);
+  assert.equal(german.includes("SpaceX"), false);
+  const american = renderNews(data, { newsFilter: "alle", swarmSide: "us" }, now);
+  assert.match(american, /aria-pressed="true">US/);
+  assert.match(american, /optimistisch/);
+  assert.equal(american.includes("SMA Solar"), false);
+  assert.equal(BANNED.test(german), false);
+  assert.equal(BANNED.test(american), false);
+  const kept = renderStimmung({
+    prices: { tickers: [] },
+    sentiment: { symbols: {} },
+    seasonality: {},
+    production: {},
+    weekly: {},
+    germany: { symbols: [] },
+    crowd: { comparison: {} },
+    favorites: { favorites: [] }
+  }, { analyseSymbol: "TSLA", analyseRange: "15 Min", analyseView: "kerzen" });
+  assert.match(kept, /Schwarm gegen Karl/);
 });
 
 test("Stimmung nennt fehlende Treffer und behält die Bereiche", () => {

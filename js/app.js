@@ -1,3 +1,4 @@
+import { inAfternoonRefresh, QUARTER_MS } from "./afternoon.js";
 import { analyseViewOf } from "./analyse-view.js";
 import { renderStimmung } from "./stimmung-view.js";
 import { markMoodPulse } from "./sentiment.js";
@@ -45,6 +46,7 @@ let data = null;
 let store = loadStore();
 store.answers = store.answers || {};
 ui.analyseView = analyseViewOf(store.analyseView);
+ui.swarmSide = store.swarmSide === "ger" ? "ger" : "us";
 
 const LIVE_MS = 60_000;
 let lastLiveAttempt = 0;
@@ -323,6 +325,13 @@ document.body.addEventListener("click", (event) => {
     render();
     return;
   }
+  if (action === "swarm-side") {
+    ui.swarmSide = el.dataset.side === "ger" ? "ger" : "us";
+    store.swarmSide = ui.swarmSide;
+    saveStore(store);
+    render();
+    return;
+  }
   if (action === "value-symbol") {
     ui.valueSymbol = el.dataset.symbol || "SPCX";
     render();
@@ -532,6 +541,57 @@ function armClock() {
   clockTimer = window.setTimeout(armClock, 1000 - (Date.now() % 1000));
 }
 
+let afternoonInflight = false;
+
+async function refreshAfternoon() {
+  if (!data || afternoonInflight || document.visibilityState === "hidden") return;
+  if (!inAfternoonRefresh()) return;
+  afternoonInflight = true;
+  try {
+    const stamp = Date.now();
+    const load = async (name) => {
+      const response = await fetch(`${appBase()}/data/${name}.json?t=${stamp}`, { cache: "no-store" });
+      if (!response.ok) throw new Error(name);
+      return response.json();
+    };
+    const [prices, seasonality, lines] = await Promise.all([
+      load("prices"),
+      load("seasonality"),
+      load("lines")
+    ]);
+    let changed = false;
+    if (prices && Array.isArray(prices.tickers) && priceStamp(prices) !== priceStamp(data.prices)) {
+      data.prices = prices;
+      if (data.meta && prices.asOf) data.meta.pricesUpdated = prices.asOf;
+      const then = Date.parse(prices.asOf || "");
+      ui.live = prices.example !== true && Number.isFinite(then) && Date.now() - then < 15 * 60 * 1000;
+      changed = true;
+    }
+    if (seasonality && seasonality.asOf !== data.seasonality?.asOf) {
+      data.seasonality = seasonality;
+      changed = true;
+    }
+    if (lines && lines.asOf !== data.lines?.asOf) {
+      data.lines = lines;
+      changed = true;
+    }
+    if (changed) render();
+    else paintLiveFlag();
+  } catch {
+    /* Der nächste Viertelstundenschlag versucht es wieder. */
+  } finally {
+    afternoonInflight = false;
+  }
+}
+
+function armAfternoon() {
+  const wait = QUARTER_MS - (Date.now() % QUARTER_MS);
+  window.setTimeout(() => {
+    refreshAfternoon();
+    armAfternoon();
+  }, Math.max(1000, wait));
+}
+
 async function boot() {
   armClock();
   window.setInterval(tickCountdown, 1000);
@@ -553,9 +613,11 @@ async function boot() {
     armClock();
     if (hiddenAt.t && Date.now() - hiddenAt.t > 120000) refresh(false);
     pullPrices();
+    refreshAfternoon();
   });
   pullPrices();
   window.setInterval(pullPrices, 15000);
+  armAfternoon();
   if ("serviceWorker" in navigator) {
     let reloaded = false;
     if (navigator.serviceWorker.controller) {

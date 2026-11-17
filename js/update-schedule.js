@@ -42,6 +42,7 @@ export const SCHEDULES = [
     label: "Kurse",
     lines: [
       "Mo–Fr alle 5 Min von 05:00 bis 22:15",
+      "Mo–Fr 14:00–22:00 Linien und die aktuelle Stunde alle 15 Min",
       "Sa/So um 09:00, 14:00 und 20:00"
     ],
     rules: [
