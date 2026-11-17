@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-17T14:00:00+01:00",
+  "asOf": "2026-11-17T18:00:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,232 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2122733232894468308",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T17:46:55+01:00",
+      "summaryDe": "Musk zitiert den Post von @Tesla_Megapack zum neuen „Powercore“: „Fortschrittliche Halbleiter-Transformatoren in großem Maßstab von Tesla.“ Powercore vereint Mittelspannungstransformator, Wechselrichter und Schutzschalter in einem Gerät, 7,4 MW dauerhaft bei 34,5 kV, hergestellt in den USA, Betrieb ab 2027. Kurz davor teilte Musk einen Post von @jamesdouma dazu („Genau das wird dringend gebraucht“).",
+      "originalText": "Advanced solid state transformers at scale from Tesla (zitiert @Tesla_Megapack: „Introducing Powercore … 7.4 MW/9 MVA continuously at 34.5 kVac … Made in America. Operating 2027“)",
+      "url": "https://x.com/elonmusk/status/2122733232894468308",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 17:46): Powercore",
+          "url": "https://x.com/elonmusk/status/2122733232894468308"
+        },
+        {
+          "title": "@Tesla_Megapack auf X (17.11., 17:00): Introducing Powercore",
+          "url": "https://x.com/Tesla_Megapack/status/2122721563493744771"
+        },
+        {
+          "title": "@elonmusk auf X (17.11., 17:45): Repost @jamesdouma",
+          "url": "https://x.com/elonmusk/status/2122732817188782341"
+        },
+        {
+          "title": "pv magazine USA: Tesla stellt Powercore auf der RE+ 2026 vor (17.11.)",
+          "url": "https://pv-magazine-usa.com/2026/11/17/exclusive-tesla-unveils-powercore-medium-voltage-power-electronics-platform-at-re-2026/"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2122729380648501303",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-17T17:31:37+01:00",
+      "summaryDe": "SpaceX teilt einen Beitrag eines Mitarbeiters an YouTuber MrBeast: Dessen signierte Hitzeschild-Kachel sei auf dem Starship geblieben und habe den Flug ins All und zurück überstanden. Werbung, keine Zahl.",
+      "originalText": "RT @Boca_Bill_R: @MrBeast … Confirmed! You're tile stayed on and the signature even survived. You've touched hardware that flew to space and came back to Earth…",
+      "url": "https://x.com/SpaceX/status/2122729380648501303",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (17.11., 17:31): Repost @Boca_Bill_R",
+          "url": "https://x.com/SpaceX/status/2122729380648501303"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122728883317334138",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T17:29:38+01:00",
+      "summaryDe": "Musk teilt die Erklärung von Jensen Huang: Huang bedauert seine Fehler, will mit der Untersuchung des Verwaltungsrats zusammenarbeiten und wäre „geehrt“, als Nvidia-Chef zurückzukehren, falls der Verwaltungsrat das will. Nvidia stieg danach von rund 150 $ auf über 155 $; laut CNBC erwägt der Verwaltungsrat eine Rückkehr derzeit nicht. Nvidia-Zahlen heute 22:20.",
+      "originalText": "RT @JensenHuang: Over the past week, I’ve been overwhelmed by the love and support of friends, industry colleagues, and people I've never m…",
+      "url": "https://x.com/elonmusk/status/2122728883317334138",
+      "tickers": [
+        "MRVL"
+      ],
+      "companies": [
+        "Nvidia"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 17:29): Repost @JensenHuang",
+          "url": "https://x.com/elonmusk/status/2122728883317334138"
+        },
+        {
+          "title": "@JensenHuang auf X (17.11., 17:18): Erklärung zur möglichen Rückkehr",
+          "url": "https://x.com/JensenHuang/status/2122726005219737649"
+        },
+        {
+          "title": "CNBC: Jensen Huang zeigt sich in erster Erklärung seit dem Rücktritt offen für eine Rückkehr (17.11.)",
+          "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html"
+        },
+        {
+          "title": "Variety: Nvidia-Aktie steigt nach Huangs Erklärung von 150,09 $ auf 155,36 $ (17.11.)",
+          "url": "https://variety.com/2026/biz/news/nvidia-stock-up-jensen-huang-public-statement-1236950343/"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122728765528617279",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T17:29:10+01:00",
+      "summaryDe": "Musk teilt einen Nutzerbeitrag: Grok Bot habe dieselbe Aufgabe in unter 2 Stunden erledigt, OpenAIs „Dot“ hänge noch fest. Werbung für Grok Bot, keine überprüfbare Zahl.",
+      "originalText": "RT @Da7_Tech: Gave the same task to Grok bot and OpenAI's Dot yesterday. Grok finished it in under 2 hours. Dot still has no clue what it's…",
+      "url": "https://x.com/elonmusk/status/2122728765528617279",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "xAI"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 17:29): Repost @Da7_Tech",
+          "url": "https://x.com/elonmusk/status/2122728765528617279"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122728097455997036",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T17:26:31+01:00",
+      "summaryDe": "Musk teilt einen italienischen Beitrag mit einem TV-Bericht über Starship. Keine neue Information.",
+      "originalText": "RT @andst7: Bellissimo servizio su Starship da vedere e condividere! 👏🏻👏🏻",
+      "url": "https://x.com/elonmusk/status/2122728097455997036",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 17:26): Repost @andst7",
+          "url": "https://x.com/elonmusk/status/2122728097455997036"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122724090427633763",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T17:10:36+01:00",
+      "summaryDe": "Musk teilt einen Beitrag mit einem Video, in dem Rocket-Lab-Chef Peter Beck 2019 erklärt, warum er Wiederverwendung bei kleinen Raketen erst für unsinnig hielt und dann seinen Hut aß – als Beleg, wie schwer SpaceX' Leistung nachzumachen sei. Alte Aufnahme, keine neue Meldung.",
+      "originalText": "RT @GoodPartsOnly: A SpaceX competitor explains just how impossible it is to achieve what Elon has. Rocket Lab CEO Peter Beck once said re…",
+      "url": "https://x.com/elonmusk/status/2122724090427633763",
+      "tickers": [
+        "SPCX",
+        "RKLB"
+      ],
+      "companies": [
+        "SpaceX",
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 17:10): Repost @GoodPartsOnly",
+          "url": "https://x.com/elonmusk/status/2122724090427633763"
+        },
+        {
+          "title": "Originalpost @GoodPartsOnly (16.11., 13:27)",
+          "url": "https://x.com/GoodPartsOnly/status/2122305474054029695"
+        }
+      ]
+    },
+    {
+      "id": "post-tesla-2122721430596997348",
+      "account": "@Tesla",
+      "displayName": "Tesla",
+      "postedAt": "2026-11-17T17:00:01+01:00",
+      "summaryDe": "Tesla ruft die Aktionäre zur Stimmabgabe für die Hauptversammlung am 3. Dezember auf – online, per Post, QR-Code oder Telefon; ein Video mit Optimus zeigt, wie es geht. Keine neue Zahl.",
+      "originalText": "Tesla’s Annual Meeting is coming up on December 3 & we need your vote …",
+      "url": "https://x.com/Tesla/status/2122721430596997348",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@Tesla auf X (17.11., 17:00)",
+          "url": "https://x.com/Tesla/status/2122721430596997348"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2122718036138287610",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-17T16:46:32+01:00",
+      "summaryDe": "SpaceX hat dem Versorger von Brownsville weitere 30 Mio. $ für Wasser- und Abwasserprojekte gezahlt; damit sind 70 von zugesagten 220 Mio. $ geflossen. Musk teilte später einen Fan-Beitrag dazu.",
+      "originalText": "Building for the future also means investing in the communities we work and live in. We provided another $30 million to the Brownsville Public Utilities Board (making a total to $70 million given so far out of the $220 million we've committed)…",
+      "url": "https://x.com/SpaceX/status/2122718036138287610",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (17.11., 16:46): weitere 30 Mio. $ für Brownsville",
+          "url": "https://x.com/SpaceX/status/2122718036138287610"
+        },
+        {
+          "title": "@elonmusk auf X (17.11., 17:44): Repost @XFreeze",
+          "url": "https://x.com/elonmusk/status/2122732511012831675"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2122678657944797635",
       "account": "@elonmusk",
@@ -10893,5 +11119,5 @@
       ]
     }
   ],
-  "notes": "17.11. 14:00: Seit 09:01 nur Posts von @elonmusk ab 13:36: Seitenhieb auf OpenAI („SpaceX rechnet mit null Verkäufen an OpenAI“), Reposts zu Jin Air/Starlink, Texas A&M/Terafab, dem CNBC-Analystenbericht zum Schiffsfang und Grok Bot 1.0, „Yes“ zu Südafrikas 30-%-Regel für Starlink. Ausgelassen: politische Reposts (@RonDeSantis, @IterIntellectus zu Südafrika), ein chinesischer Repost über einen Streit um Musk (@ZhouTalks) und die Antwort „True“ zu Südafrika. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @robotaxi, @Tesla_Optimus (X-Abfrage bis 14:20). 16.11. 22:00: @elonmusk teilte das Starship-Bordvideo („Catching a Starship from space“) und warb für Grok Bot 1.0; @SpaceX zeigt den Fang aus Sicht von Mechazilla; @robotaxi: X Money in der Robotaxi-App. Ausgelassen: eine Emoji-Antwort an Maye Musk. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus (X-Abfrage bis 22:20). 16.11. 16:00: Keine neuen eigenen Posts von @elonmusk mit Firmeninhalt seit 09:13 – nur zwei Reposts (Starship wäre nach Nutzlast schon zweitgrößter US-Anbieter; SpaceX bei einer Weihnachtsaktion der Polizei in Florida) und eine Antwort mit Emoji zu einem SNL-Sketch. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @Tesla_Optimus, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_AI, @robotaxi (X-Abfrage bis 16:20). 16.11. 08:30: @elonmusk nennt Starship-Ziele (Treibstoff unter 500.000 $ pro Flug, über 200 t Nutzlast), hebt die abgeschaltete Grok-Wasserzeichnung in der SpaceX-SI-API hervor, stimmt zu, dass ein mäßiger Cybercab-Erfolg im Tesla-Kurs eingepreist sei, und postet zu Solarenergie und Boca Chica. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @Tesla_Optimus, @xai, @neuralink, @boringcompany, @RocketLab (X-Abfrage bis 08:45). 16.11. 06:30: @elonmusk mit vier Posts zu SpaceX: „12 years ago“ (eigene Senats-Aussage 2014 gegen das ULA-Monopol, nach dem Vulcan-Fehlstart), zweimal „Yup“ (SpaceX startet mehr als alle anderen zusammen; Starliner 4,2 Mrd. $ gegen Dragon 2,6 Mrd. $) und „Wir haben ein paar Verbesserungen gemacht“ (SN8 gegen Ship 42). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @Tesla_Optimus; @RocketLab zuletzt 02:32 (goldene Electron, schon erfasst) (X-Abfrage bis 06:45). Nicht übernommen: Musk-Antworten zu SNL-Sketchen und Politik, Werbung für Grok („Grok kann fast alles“). 16.11. 05:00: @elonmusk nennt Starship-V4-Daten (rund 70 m, über 60 % mehr Treibstoff, neun Triebwerke) und schreibt, Ship 42 könne nach einigen Wochen Überholung wieder fliegen; dazu Repost der Morgan-Stanley-Studie zu Flight 15, Kritik an Blue Origin und ULA, Beileid an ULA und Starlink-Posts (United, Griechenland, Brasilien, Dominikanische Republik). @RocketLab zeigt eine goldene Electron. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:15). 15.11. 22:00: @elonmusk teilte die Samsung-Meldung zu Starlink-Chips aus Austin, bedankte sich für einen Gastbeitrag von Douglas MacKinnon und schrieb zum Schiffsfang; dazu ein Repost von James Douma, der Grok lobt und fragt, ob Jensen Huang zu Unrecht verurteilt werde (ohne eigene Aussage). @RocketLab zeigt ein Neutron-Video. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 22:20). 15.11. 20:00: @elonmusk zitierte zwei Starlink-Meldungen (Lufthansa-Langstrecke, Honduras-Schulen) und lud Goldman-Chef David Solomon zu einem Starship-Start ein; dazu zwei Reposts (Paul Graham, David Solomon) ohne eigene Aussage. Keine neuen Posts von @SpaceX seit 17:20, keine von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab (X-Abfrage bis 20:15). 15.11. 18:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20). @SpaceX postete um 17:20 Werbung für Version 2.0 seines Browser-Spiels. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 18:20). 15.11. 16:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 16:12). 15.11. 15:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 15:12). 15.11. 14:00: Keine neuen eigenen Posts von @elonmusk seit 09:25 (danach nur ein Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 14:20). 15.11. 13:00: Keine neuen Posts von @elonmusk seit 10:20 (letzter: Repost des ALS-Patienten-Videos), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 13:20). 15.11. 11:30: Keine neuen eigenen Posts von @elonmusk seit 09:25 (nur zwei Reposts: CBS-Bericht zum Flug-15-Start, Video eines ALS-Patienten mit Hirnimplantat), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 11:40). 15.11. 09:30: Neu vier Musk-Posts zum Schiffsfang und zu Rechenzentren im All (08:56–09:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 09:35). Nicht übernommen: Musk-Antworten ohne Inhalt („Mentats“, „The sky is not even close to the limit“). 15.11. 08:30: Neu nur Musks Douglas-Adams-Scherz zu Ship 42 (03:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @Peter_J_Beck; @RocketLab zuletzt 03:20 (X-Abfrage bis 08:40). Nicht übernommen: Musk-Zitat eines Politik-Memes (04:08). 15.11. 06:30: Keine neuen Firmen-Posts seit 05:20 (X-Abfrage bis 06:40 für @elonmusk, @SpaceX, @Tesla, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Starlink). Nicht übernommen: Musk-Reposts ohne Firmenbezug und Werbung für Grok. 15.11. 05:30: Neu: Musk zum Schiffsfang (Glückwunsch, Inspektion, „Ship 42 looks great“, drei Booster und ein Schiff, Umarmung), SpaceX-Rückblick auf Flight 15, Rocket Lab und Peter Beck zum 100. Electron-Start. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:20). Nicht übernommen: Musk-Zitate ohne Firmenbezug (Politik-Meme, Werbung für Grok)."
+  "notes": "17.11. 18:00: Seit 14:10 neue Posts ab 16:46: @SpaceX zu 30 Mio. $ für Brownsville und Repost zur MrBeast-Kachel, @Tesla Aufruf zur Hauptversammlung, @elonmusk zu Tesla Powercore, Repost von Jensen Huangs Rückkehr-Erklärung, Grok Bot gegen OpenAI Dot, Peter-Beck-Video, Starship-TV-Bericht. Ausgelassen: ein politischer Repost (@spqr_sulla), der doppelte Brownsville-Repost (@XFreeze, als Quelle beim SpaceX-Post), die Antwort „@grok“ an @yunta_tsai und zwei Tesla-Reposts der Powercore-Posts. Keine neuen Posts von @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @robotaxi, @Tesla_Optimus (X-Abfrage bis 18:15). 17.11. 14:00: Seit 09:01 nur Posts von @elonmusk ab 13:36: Seitenhieb auf OpenAI („SpaceX rechnet mit null Verkäufen an OpenAI“), Reposts zu Jin Air/Starlink, Texas A&M/Terafab, dem CNBC-Analystenbericht zum Schiffsfang und Grok Bot 1.0, „Yes“ zu Südafrikas 30-%-Regel für Starlink. Ausgelassen: politische Reposts (@RonDeSantis, @IterIntellectus zu Südafrika), ein chinesischer Repost über einen Streit um Musk (@ZhouTalks) und die Antwort „True“ zu Südafrika. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @robotaxi, @Tesla_Optimus (X-Abfrage bis 14:20). 16.11. 22:00: @elonmusk teilte das Starship-Bordvideo („Catching a Starship from space“) und warb für Grok Bot 1.0; @SpaceX zeigt den Fang aus Sicht von Mechazilla; @robotaxi: X Money in der Robotaxi-App. Ausgelassen: eine Emoji-Antwort an Maye Musk. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus (X-Abfrage bis 22:20). 16.11. 16:00: Keine neuen eigenen Posts von @elonmusk mit Firmeninhalt seit 09:13 – nur zwei Reposts (Starship wäre nach Nutzlast schon zweitgrößter US-Anbieter; SpaceX bei einer Weihnachtsaktion der Polizei in Florida) und eine Antwort mit Emoji zu einem SNL-Sketch. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @Tesla_Optimus, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_AI, @robotaxi (X-Abfrage bis 16:20). 16.11. 08:30: @elonmusk nennt Starship-Ziele (Treibstoff unter 500.000 $ pro Flug, über 200 t Nutzlast), hebt die abgeschaltete Grok-Wasserzeichnung in der SpaceX-SI-API hervor, stimmt zu, dass ein mäßiger Cybercab-Erfolg im Tesla-Kurs eingepreist sei, und postet zu Solarenergie und Boca Chica. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @Tesla_Optimus, @xai, @neuralink, @boringcompany, @RocketLab (X-Abfrage bis 08:45). 16.11. 06:30: @elonmusk mit vier Posts zu SpaceX: „12 years ago“ (eigene Senats-Aussage 2014 gegen das ULA-Monopol, nach dem Vulcan-Fehlstart), zweimal „Yup“ (SpaceX startet mehr als alle anderen zusammen; Starliner 4,2 Mrd. $ gegen Dragon 2,6 Mrd. $) und „Wir haben ein paar Verbesserungen gemacht“ (SN8 gegen Ship 42). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @Tesla_Optimus; @RocketLab zuletzt 02:32 (goldene Electron, schon erfasst) (X-Abfrage bis 06:45). Nicht übernommen: Musk-Antworten zu SNL-Sketchen und Politik, Werbung für Grok („Grok kann fast alles“). 16.11. 05:00: @elonmusk nennt Starship-V4-Daten (rund 70 m, über 60 % mehr Treibstoff, neun Triebwerke) und schreibt, Ship 42 könne nach einigen Wochen Überholung wieder fliegen; dazu Repost der Morgan-Stanley-Studie zu Flight 15, Kritik an Blue Origin und ULA, Beileid an ULA und Starlink-Posts (United, Griechenland, Brasilien, Dominikanische Republik). @RocketLab zeigt eine goldene Electron. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:15). 15.11. 22:00: @elonmusk teilte die Samsung-Meldung zu Starlink-Chips aus Austin, bedankte sich für einen Gastbeitrag von Douglas MacKinnon und schrieb zum Schiffsfang; dazu ein Repost von James Douma, der Grok lobt und fragt, ob Jensen Huang zu Unrecht verurteilt werde (ohne eigene Aussage). @RocketLab zeigt ein Neutron-Video. Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 22:20). 15.11. 20:00: @elonmusk zitierte zwei Starlink-Meldungen (Lufthansa-Langstrecke, Honduras-Schulen) und lud Goldman-Chef David Solomon zu einem Starship-Start ein; dazu zwei Reposts (Paul Graham, David Solomon) ohne eigene Aussage. Keine neuen Posts von @SpaceX seit 17:20, keine von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab (X-Abfrage bis 20:15). 15.11. 18:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20). @SpaceX postete um 17:20 Werbung für Version 2.0 seines Browser-Spiels. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 18:20). 15.11. 16:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 16:12). 15.11. 15:00: Keine neuen eigenen Posts von @elonmusk seit 10:25 (nur der Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 15:12). 15.11. 14:00: Keine neuen eigenen Posts von @elonmusk seit 09:25 (danach nur ein Repost um 10:20), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 14:20). 15.11. 13:00: Keine neuen Posts von @elonmusk seit 10:20 (letzter: Repost des ALS-Patienten-Videos), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Tesla_Optimus, @Tesla_AI (X-Abfrage bis 13:20). 15.11. 11:30: Keine neuen eigenen Posts von @elonmusk seit 09:25 (nur zwei Reposts: CBS-Bericht zum Flug-15-Start, Video eines ALS-Patienten mit Hirnimplantat), keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 11:40). 15.11. 09:30: Neu vier Musk-Posts zum Schiffsfang und zu Rechenzentren im All (08:56–09:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck (X-Abfrage bis 09:35). Nicht übernommen: Musk-Antworten ohne Inhalt („Mentats“, „The sky is not even close to the limit“). 15.11. 08:30: Neu nur Musks Douglas-Adams-Scherz zu Ship 42 (03:25). Keine neuen Posts von @SpaceX, @Tesla, @Starlink, @xai, @neuralink, @boringcompany, @Peter_J_Beck; @RocketLab zuletzt 03:20 (X-Abfrage bis 08:40). Nicht übernommen: Musk-Zitat eines Politik-Memes (04:08). 15.11. 06:30: Keine neuen Firmen-Posts seit 05:20 (X-Abfrage bis 06:40 für @elonmusk, @SpaceX, @Tesla, @xai, @neuralink, @boringcompany, @RocketLab, @Peter_J_Beck, @Starlink). Nicht übernommen: Musk-Reposts ohne Firmenbezug und Werbung für Grok. 15.11. 05:30: Neu: Musk zum Schiffsfang (Glückwunsch, Inspektion, „Ship 42 looks great“, drei Booster und ein Schiff, Umarmung), SpaceX-Rückblick auf Flight 15, Rocket Lab und Peter Beck zum 100. Electron-Start. Keine neuen Posts von @Tesla, @Starlink, @xai, @neuralink, @boringcompany (X-Abfrage bis 05:20). Nicht übernommen: Musk-Zitate ohne Firmenbezug (Politik-Meme, Werbung für Grok)."
 }
