@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-17T08:58:00+01:00",
+  "updatedAt": "2026-11-17T09:06:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
+      "score": 45,
       "postsCount": 20,
-      "reason": "Laut 13F-Meldungen kauft Cathie Woods ARK für 52 Mio. $ SPCX und Druckenmiller steigt neu ein; dazu ein kleiner Militärauftrag für SpaceX.",
+      "reason": "Nach dem Starship-Catch hebt Citi das Kursziel auf 280 $; laut 13F ist SpaceX Nvidias größte Beteiligung, ARK kauft ebenfalls zu.",
       "sources": [
         {
-          "title": "@ArkkDaily auf X (17.11., 06:45)",
-          "url": "https://x.com/ArkkDaily/status/2122566696733212918"
+          "title": "@AsLongAslCan auf X (17.11., 08:43)",
+          "url": "https://x.com/AsLongAslCan/status/2122596410004541851"
         },
         {
-          "title": "@muskonomy auf X (17.11., 06:35)",
-          "url": "https://x.com/muskonomy/status/2122564198886703123"
+          "title": "@lanios_ auf X (17.11., 08:47)",
+          "url": "https://x.com/lanios_/status/2122597390444105741"
         },
         {
-          "title": "@xbyhunter auf X (17.11., 07:46)",
-          "url": "https://x.com/xbyhunter/status/2122582148901421481"
+          "title": "@MarketCapOf auf X (17.11., 08:52)",
+          "url": "https://x.com/MarketCapOf/status/2122598715492122974"
         }
       ],
-      "updatedAt": "2026-11-17T08:58:00+01:00"
+      "updatedAt": "2026-11-17T09:06:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 30,
+      "score": 25,
       "postsCount": 20,
-      "reason": "Viel Freude über 3 Mrd. € für Cybercab-Werk in Grünheide; dazu erste Cybercab-Bestellungen und Musks Idee, eigene Autos bald ins Robotaxi-Netz zu geben.",
+      "reason": "Fans freuen sich über 150 neu registrierte Cybercabs und Sichtungen an der Ostküste; Chartleute sehen 375 $ als wichtige Marke, einige Kritiker an Musk.",
       "sources": [
         {
-          "title": "@Tiefseher auf X (17.11., 07:42)",
-          "url": "https://x.com/Tiefseher/status/2122581088346280227"
+          "title": "@ann_stone34 auf X (17.11., 08:30)",
+          "url": "https://x.com/ann_stone34/status/2122593121389396392"
         },
         {
-          "title": "@Greg_Palmer1 auf X (17.11., 07:17)",
-          "url": "https://x.com/Greg_Palmer1/status/2122574831409328476"
+          "title": "@x_invest1 auf X (17.11., 08:35)",
+          "url": "https://x.com/x_invest1/status/2122594515987091624"
         },
         {
-          "title": "@AllTeslaNews auf X (17.11., 07:30)",
-          "url": "https://x.com/AllTeslaNews/status/2122578225091977521"
+          "title": "@traderjoe0319 auf X (17.11., 08:42)",
+          "url": "https://x.com/traderjoe0319/status/2122596203007258740"
         }
       ],
-      "updatedAt": "2026-11-17T08:58:00+01:00"
+      "updatedAt": "2026-11-17T09:06:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 30,
       "postsCount": 20,
-      "reason": "Fans feiern den 100. Electron-Start, der jetzt am Times Square gezeigt wird, und rechnen mit vollen Neutron-Auftragsbüchern; ein Fonds schichtet laut 13F in RKLB um.",
+      "reason": "Viel Lob für den 100. Electron-Start und die schnellere Laser-Terminal-Produktion nach dem Mynaric-Kauf; der gestrige Kursrutsch wird noch erwähnt.",
       "sources": [
         {
-          "title": "@RCapitalX auf X (17.11., 06:52)",
-          "url": "https://x.com/RCapitalX/status/2122568475512320111"
+          "title": "@RCapitalX auf X (17.11., 08:56)",
+          "url": "https://x.com/RCapitalX/status/2122599682660790430"
         },
         {
-          "title": "@bad_investor_ auf X (17.11., 06:23)",
-          "url": "https://x.com/bad_investor_/status/2122561231035007000"
+          "title": "@theSpacecyborg auf X (17.11., 08:21)",
+          "url": "https://x.com/theSpacecyborg/status/2122591008030626226"
         },
         {
-          "title": "@0xyuura auf X (17.11., 07:44)",
-          "url": "https://x.com/0xyuura/status/2122581745350688919"
+          "title": "@listingtrack auf X (17.11., 08:27)",
+          "url": "https://x.com/listingtrack/status/2122592427236266074"
         }
       ],
-      "updatedAt": "2026-11-17T08:58:00+01:00"
+      "updatedAt": "2026-11-17T09:06:00+01:00"
     }
   }
 }
