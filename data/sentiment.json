@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-16T16:41:00+01:00",
+  "updatedAt": "2026-11-17T08:03:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 30,
+      "score": 40,
       "postsCount": 20,
-      "reason": "Anthropic als größter Kunde und Morgan Stanley mit 300-$-Ziel freuen Fans; doch SPCX fällt 1 % auf ~138 $, viele ärgern sich, dass der Kurs unter dem Ausgabepreis bleibt.",
+      "reason": "Laut 13F-Meldungen kauft Cathie Woods ARK für 52 Mio. $ SPCX und Druckenmiller steigt neu ein; dazu ein kleiner Militärauftrag für SpaceX.",
       "sources": [
         {
-          "title": "@Sam_Badawi auf X (16.11., 16:07)",
-          "url": "https://x.com/Sam_Badawi/status/2122345797287317914"
+          "title": "@ArkkDaily auf X (17.11., 06:45)",
+          "url": "https://x.com/ArkkDaily/status/2122566696733212918"
         },
         {
-          "title": "@TeslaEuskadi auf X (16.11., 16:13)",
-          "url": "https://x.com/TeslaEuskadi/status/2122347407551996153"
+          "title": "@muskonomy auf X (17.11., 06:35)",
+          "url": "https://x.com/muskonomy/status/2122564198886703123"
         },
         {
-          "title": "@diversify062 auf X (16.11., 16:12)",
-          "url": "https://x.com/diversify062/status/2122347188772544928"
+          "title": "@xbyhunter auf X (17.11., 07:46)",
+          "url": "https://x.com/xbyhunter/status/2122582148901421481"
         }
       ],
-      "updatedAt": "2026-11-16T16:41:00+01:00"
+      "updatedAt": "2026-11-17T08:03:00+01:00"
     },
     "TSLA": {
-      "mood": "gemischt",
-      "score": -5,
+      "mood": "gut",
+      "score": 30,
       "postsCount": 20,
-      "reason": "TSLA fällt gut 3 % auf ~377 $, viele Trader setzen auf weitere Verluste. Fans halten dagegen: Robotaxi fährt früher als geplant rund um die Uhr in allen 8 Städten.",
+      "reason": "Viel Freude über 3 Mrd. € für Cybercab-Werk in Grünheide; dazu erste Cybercab-Bestellungen und Musks Idee, eigene Autos bald ins Robotaxi-Netz zu geben.",
       "sources": [
         {
-          "title": "@herbertong auf X (16.11., 16:34)",
-          "url": "https://x.com/herbertong/status/2122352493505954256"
+          "title": "@Tiefseher auf X (17.11., 07:42)",
+          "url": "https://x.com/Tiefseher/status/2122581088346280227"
         },
         {
-          "title": "@IkoWEB3 auf X (16.11., 16:34)",
-          "url": "https://x.com/IkoWEB3/status/2122352689258402291"
+          "title": "@Greg_Palmer1 auf X (17.11., 07:17)",
+          "url": "https://x.com/Greg_Palmer1/status/2122574831409328476"
         },
         {
-          "title": "@StkNewz auf X (16.11., 16:19)",
-          "url": "https://x.com/StkNewz/status/2122348843006296541"
+          "title": "@AllTeslaNews auf X (17.11., 07:30)",
+          "url": "https://x.com/AllTeslaNews/status/2122578225091977521"
         }
       ],
-      "updatedAt": "2026-11-16T16:41:00+01:00"
+      "updatedAt": "2026-11-17T08:03:00+01:00"
     },
     "RKLB": {
-      "mood": "gemischt",
-      "score": 25,
+      "mood": "gut",
+      "score": 30,
       "postsCount": 20,
-      "reason": "Rocket Lab gilt nach dem Vulcan-Fehlstart als wichtige Nr. 2 in den USA; ein bekannter Marktkommentator nimmt nach dem Startrekord aber Gewinne mit. Viel Spam.",
+      "reason": "Fans feiern den 100. Electron-Start, der jetzt am Times Square gezeigt wird, und rechnen mit vollen Neutron-Auftragsbüchern; ein Fonds schichtet laut 13F in RKLB um.",
       "sources": [
         {
-          "title": "@Sarge986 auf X (16.11., 16:23)",
-          "url": "https://x.com/Sarge986/status/2122349815346737171"
+          "title": "@RCapitalX auf X (17.11., 06:52)",
+          "url": "https://x.com/RCapitalX/status/2122568475512320111"
         },
         {
-          "title": "@retail_mourinho auf X (16.11., 16:08)",
-          "url": "https://x.com/retail_mourinho/status/2122346114393289018"
+          "title": "@bad_investor_ auf X (17.11., 06:23)",
+          "url": "https://x.com/bad_investor_/status/2122561231035007000"
         },
         {
-          "title": "@SpaceInvestor_D auf X (16.11., 16:00)",
-          "url": "https://x.com/SpaceInvestor_D/status/2122344031246008440"
+          "title": "@0xyuura auf X (17.11., 07:44)",
+          "url": "https://x.com/0xyuura/status/2122581745350688919"
         }
       ],
-      "updatedAt": "2026-11-16T16:41:00+01:00"
+      "updatedAt": "2026-11-17T08:03:00+01:00"
     }
   }
 }
