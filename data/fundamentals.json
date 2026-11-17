@@ -1,0 +1,143 @@
+{
+  "example": false,
+  "asOf": "2026-11-17T22:57:09.196Z",
+  "timezone": "Europe/Berlin",
+  "note": "KGV und KUV beschreiben nur die Lage der Zahl. Ein fehlender oder negativer Gewinn bleibt leer.",
+  "historyNote": "Die eigene Spanne teilt die Tagesschlüsse der letzten zwölf Monate durch den heutigen Gewinn je Aktie. Frühere Gewinne sind nicht zurückgerechnet.",
+  "fx": {
+    "pair": "EURUSD",
+    "rate": 1.1004,
+    "asOf": "2026-11-17T22:57:07.989Z",
+    "source": {
+      "title": "Yahoo Finance EURUSD=X",
+      "url": "https://finance.yahoo.com/quote/EURUSD=X"
+    }
+  },
+  "symbols": [
+    {
+      "symbol": "SPCX",
+      "name": "Space Exploration Technologies Corp.",
+      "currency": "USD",
+      "trailingPe": 616.09,
+      "peState": "gemeldet",
+      "forwardPe": 51.67,
+      "forwardState": "gemeldet",
+      "priceToSales": 60.06,
+      "marketCapUsd": 1924436721664,
+      "marketCapEur": 1748851982609.96,
+      "epsTrailing": 0.23,
+      "history": {
+        "n": 110,
+        "min": 470.74,
+        "max": 919.09,
+        "current": 616.09
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance SPCX",
+          "url": "https://finance.yahoo.com/quote/SPCX"
+        }
+      ]
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "currency": "USD",
+      "trailingPe": 417.7,
+      "peState": "gemeldet",
+      "forwardPe": 176.04,
+      "forwardState": "gemeldet",
+      "priceToSales": 14.51,
+      "marketCapUsd": 1502482792448,
+      "marketCapEur": 1365396939701.9265,
+      "epsTrailing": 0.91,
+      "history": {
+        "n": 251,
+        "min": 327.82,
+        "max": 538.33,
+        "current": 417.7
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA"
+        }
+      ]
+    },
+    {
+      "symbol": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "currency": "USD",
+      "trailingPe": null,
+      "peState": "negativ",
+      "forwardPe": 769.07,
+      "forwardState": "gemeldet",
+      "priceToSales": 42.01,
+      "marketCapUsd": 37047115776,
+      "marketCapEur": 33666953631.40676,
+      "epsTrailing": -0.37,
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance RKLB",
+          "url": "https://finance.yahoo.com/quote/RKLB"
+        }
+      ]
+    },
+    {
+      "symbol": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "currency": "USD",
+      "trailingPe": 48.93,
+      "peState": "gemeldet",
+      "forwardPe": 20.18,
+      "forwardState": "gemeldet",
+      "priceToSales": 14.16,
+      "marketCapUsd": 133831180288,
+      "marketCapEur": 121620483722.2828,
+      "epsTrailing": 3.04,
+      "history": {
+        "n": 251,
+        "min": 24.25,
+        "max": 104.09,
+        "current": 48.93
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance MRVL",
+          "url": "https://finance.yahoo.com/quote/MRVL"
+        }
+      ]
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "currency": "USD",
+      "trailingPe": 19.65,
+      "peState": "gemeldet",
+      "forwardPe": 9.8,
+      "forwardState": "gemeldet",
+      "priceToSales": 12.39,
+      "marketCapUsd": 3753892642816,
+      "marketCapEur": 3411389170134.4966,
+      "epsTrailing": 7.91,
+      "history": {
+        "n": 251,
+        "min": 19.65,
+        "max": 30.25,
+        "current": 19.65
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance NVDA",
+          "url": "https://finance.yahoo.com/quote/NVDA"
+        }
+      ]
+    }
+  ]
+}

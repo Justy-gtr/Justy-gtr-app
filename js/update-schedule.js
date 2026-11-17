@@ -123,6 +123,7 @@ export const SOURCE_STAMPS = [
   { id: "scenarios", label: "Was-wäre-wenn", read: (data) => data?.scenarios?.updatedAt || data?.scenarios?.asOf },
   { id: "companies", label: "Erste Prinzipien", read: (data) => data?.companies?.updatedAt || data?.companies?.asOf },
   { id: "glossary", label: "Glossar", read: (data) => data?.glossary?.updatedAt || data?.glossary?.asOf },
+  { id: "fundamentals", label: "Bewertung", read: (data) => data?.fundamentals?.asOf },
   { id: "promises", label: "Versprechen", read: (data) => data?.promises?.updatedAt || data?.promises?.asOf }
 ];
 

@@ -70,6 +70,10 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: node scripts/fetch-germany.mjs
 
+      - name: Bewertung
+        if: steps.gate.outputs.run == 'true'
+        run: node scripts/fetch-fundamentals.mjs
+
       - name: Nur bei Änderung committen
         id: commit
         if: steps.gate.outputs.run == 'true'
@@ -79,7 +83,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/prices.json data/alerts.json data/meta.json data/seasonality.json data/moonshots.json data/germany.json
+          git add data/prices.json data/alerts.json data/meta.json data/seasonality.json data/moonshots.json data/germany.json data/fundamentals.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "sha=" >> "$GITHUB_OUTPUT"
@@ -90,7 +94,7 @@ jobs:
           # GitHub lehnt den Push manchmal kurz ab (commit_refs_rules).
           # Bis zu vier Versuche, dazwischen 5/15/30 s. Bei einem Konflikt in data/
           # bleibt die frisch erzeugte Fassung; sonst werden die Kurse neu geholt.
-          export JGTR_REGENERATE="node scripts/fetch-prices.mjs && node scripts/fetch-seasonality.mjs --force && node scripts/fetch-moonshots.mjs && node scripts/fetch-germany.mjs"
+          export JGTR_REGENERATE="node scripts/fetch-prices.mjs && node scripts/fetch-seasonality.mjs --force && node scripts/fetch-moonshots.mjs && node scripts/fetch-germany.mjs && node scripts/fetch-fundamentals.mjs --force"
           if ! node scripts/push-main.mjs; then
             echo "Push nach 4 Versuchen gescheitert."
             exit 1

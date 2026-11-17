@@ -76,7 +76,7 @@ const files = [
   "promises.json", "production.json", "insiders.json", "briefing.json", "weekly.json",
   "daily_question.json", "glossary.json", "track_record.json", "alerts.json",
   "scenarios.json", "companies.json", "seasonality.json", "moonshots.json", "turbo-universe.json",
-  "sentiment.json", "germany.json", "de-turbos.json"
+  "sentiment.json", "germany.json", "de-turbos.json", "fundamentals.json"
 ];
 const loaded = Object.fromEntries(files.map((name) => [name, read(name)]));
 
@@ -619,6 +619,28 @@ if (germany) {
     if (row?.source !== turbo?.source) fail(`${label}.source`);
     sourcesOk(row?.sources, label);
     if (GERMANY_BANNED.test(JSON.stringify(row))) fail(`${label} Wort`);
+  }
+}
+
+const fundamentals = loaded["fundamentals.json"];
+const VALUE_SYMBOLS = ["SPCX", "TSLA", "RKLB", "MRVL", "NVDA"];
+const FUND_BANNED = /\b(kaufen|verkaufen)\b|empfehlung|kaufsignal/i;
+if (fundamentals) {
+  if (FUND_BANNED.test(JSON.stringify({ note: fundamentals.note, historyNote: fundamentals.historyNote }))) {
+    fail("fundamentals Text");
+  }
+  const rows = Array.isArray(fundamentals.symbols) ? fundamentals.symbols : [];
+  for (const symbol of VALUE_SYMBOLS) {
+    const row = rows.find((item) => item?.symbol === symbol);
+    if (!row) fail(`fundamentals fehlt ${symbol}`);
+    else {
+      sourcesOk(row.sources, `fundamentals.${symbol}`);
+      if (row.epsTrailing != null && row.epsTrailing <= 0 && row.trailingPe != null) {
+        fail(`fundamentals.${symbol} KGV trotz negativem Gewinn`);
+      }
+      if (row.marketCapEur != null && typeof row.marketCapEur !== "number") fail(`fundamentals.${symbol}.marketCapEur`);
+      if (FUND_BANNED.test(JSON.stringify(row))) fail(`fundamentals.${symbol} Wort`);
+    }
   }
 }
 

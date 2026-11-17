@@ -7,6 +7,7 @@
     "validate": "node scripts/validate-data.mjs",
     "prices": "node scripts/fetch-prices.mjs --dry-run",
     "moonshots": "node scripts/fetch-moonshots.mjs",
-    "seasonality": "node scripts/fetch-seasonality.mjs"
+    "seasonality": "node scripts/fetch-seasonality.mjs",
+    "fundamentals": "node scripts/fetch-fundamentals.mjs"
   }
 }

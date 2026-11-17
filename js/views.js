@@ -1,7 +1,9 @@
 import { chartAnalysis } from "./analysis.js";
 import { analyseViewToggle, musterCard } from "./analyse-view.js";
+import { renderBewertung } from "./bewertung-view.js";
+import { renderNews } from "./news-view.js";
+import { renderTraining } from "./training-view.js";
 import { sparkline } from "./chart.js";
-import { renderDeutschland } from "./germany-view.js";
 import { knockOut, readKnockStore } from "./knockout.js";
 import { renderMoodLamp } from "./sentiment.js";
 import { SCHEDULES, formatNextUpdate, nextUpdate, sourceUpdates } from "./update-schedule.js";
@@ -168,12 +170,10 @@ function gauge(title, block) {
 export function renderShell(ctx) {
   const { data, ui, store } = ctx;
   const pages = [
-    ["page-heute", () => renderHeute(data, ui, store)],
-    ["page-kalender", () => renderKalender(data, ui)],
-    ["page-posts", () => renderPosts(data, ui)],
-    ["page-schwarm", () => renderSchwarm(data)],
-    ["page-deutschland", () => renderDeutschland(data, ui)],
-    ["page-mehr", () => renderMehr(data)]
+    ["page-news", () => `${renderNews(data, ui)}<details class="fold"><summary>Startseite</summary><div class="fold-body">${renderHeute(data, ui, store)}</div></details>`],
+    ["page-bewertung", () => renderBewertung(data, ui)],
+    ["page-training", () => renderTraining()],
+    ["page-kalender", () => renderKalender(data, ui)]
   ];
   for (const [id, build] of pages) {
     const node = document.getElementById(id);
@@ -668,7 +668,7 @@ function renderPosts(data, ui) {
   `;
 }
 
-function renderSchwarm(data) {
+export function renderSchwarm(data) {
   const comparison = data.crowd?.comparison || {};
   const investors = data.crowd?.investors || [];
   const picks = [...(data.favorites?.favorites || [])].sort((a, b) => (a.rank || 99) - (b.rank || 99));
@@ -818,7 +818,7 @@ function updatesDetail(data, now) {
         <p class="kicker">Fahrplan</p>
         ${updateCard(SCHEDULES, { plan: true })}
       </section>
-      <p class="muted update-note">Zeiten können ein paar Minuten abweichen. Die App lädt alle Daten neu beim Öffnen, beim Ziehen nach unten und nach mehr als zwei Minuten im Hintergrund. Auf Heute und Analyse kommen die Kurse etwa einmal pro Minute, solange ein neuer Stand anstehen kann.</p>
+      <p class="muted update-note">Zeiten können ein paar Minuten abweichen. Die App lädt alle Daten neu beim Öffnen, beim Ziehen nach unten und nach mehr als zwei Minuten im Hintergrund. Auf News und Stimmung kommen die Kurse etwa einmal pro Minute, solange ein neuer Stand anstehen kann.</p>
     `
   };
 }

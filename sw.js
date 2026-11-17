@@ -1,4 +1,4 @@
-const CACHE = "jgtr-v40";
+const CACHE = "jgtr-v41";
 const CORE = [
   "",
   "index.html",
@@ -20,6 +20,13 @@ const CORE = [
   "js/views.js",
   "js/update-schedule.js",
   "js/sentiment.js",
+  "js/news.js",
+  "js/news-view.js",
+  "js/bewertung.js",
+  "js/bewertung-view.js",
+  "js/stimmung.js",
+  "js/stimmung-view.js",
+  "js/training-view.js",
   "js/germany.js",
   "js/germany-view.js",
   "js/eggs.js",
@@ -53,7 +60,8 @@ const CORE = [
   "data/companies.json",
   "data/moonshots.json",
   "data/sentiment.json",
-  "data/germany.json"
+  "data/germany.json",
+  "data/fundamentals.json"
 ];
 
 self.addEventListener("install", (event) => {

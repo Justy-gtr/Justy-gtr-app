@@ -1,4 +1,5 @@
-import { analyseViewOf, renderAnalyse } from "./analyse-view.js";
+import { analyseViewOf } from "./analyse-view.js";
+import { renderStimmung } from "./stimmung-view.js";
 import { markMoodPulse } from "./sentiment.js";
 import { drawCandles } from "./candle-chart.js";
 import { drawDayPaths } from "./daypath.js";
@@ -10,12 +11,22 @@ import { appBase, berlinClockText, CHART_RANGES, isInAppUrl, loadStore, markTabS
 import { playLiftoff, tickCountdown } from "./motion.js";
 import { initNav } from "./nav.js";
 import { initPull } from "./pull.js";
-import { detailContent, errorDetail, glossaryList, renderChartsPage, renderShell } from "./views.js";
+import { detailContent, errorDetail, glossaryList, renderShell } from "./views.js";
+
+const DOT_SOURCES = {
+  news: ["posts", "heute"],
+  stimmung: ["schwarm", "mehr"],
+  bewertung: [],
+  training: [],
+  kalender: ["kalender"]
+};
 
 const ui = {
-  page: "heute",
+  page: "news",
   calKind: "company",
   postFilter: "alle",
+  newsFilter: "alle",
+  valueSymbol: "SPCX",
   chartSymbol: "SPCX",
   chartRange: "1T",
   analyseView: "kerzen",
@@ -69,7 +80,7 @@ function priceStamp(prices) {
 async function pullPrices() {
   if (!data || liveInflight) return;
   if (document.visibilityState === "hidden") return;
-  if (ui.page !== "heute" && ui.page !== "analyse") return;
+  if (ui.page !== "news" && ui.page !== "stimmung") return;
   if (!marketWatch()) {
     if (ui.live) {
       ui.live = false;
@@ -110,7 +121,8 @@ const pager = document.getElementById("pager");
 function paintDots() {
   const unread = data ? unreadTabs(data, store) : {};
   document.querySelectorAll(".tab").forEach((button) => {
-    const on = (unread[button.dataset.page] || []).length > 0;
+    const keys = DOT_SOURCES[button.dataset.page] || [button.dataset.page];
+    const on = keys.some((key) => (unread[key] || []).length > 0);
     const dot = button.querySelector(".tab-dot");
     if (dot) dot.hidden = !on;
     button.classList.toggle("has-dot", on);
@@ -119,7 +131,12 @@ function paintDots() {
 
 function notePage(id) {
   if (!data || !id) return;
-  if (markTabSeen(store, data, id)) saveStore(store);
+  const keys = DOT_SOURCES[id] || [id];
+  let changed = false;
+  for (const key of keys) {
+    if (markTabSeen(store, data, key)) changed = true;
+  }
+  if (changed) saveStore(store);
   paintDots();
 }
 
@@ -166,19 +183,15 @@ function render() {
   try {
     renderShell(context());
   } catch (error) {
-    const home = document.getElementById("page-heute");
-    if (home) home.innerHTML = `<article class="card error-card"><h2>Startseite gerade nicht da.</h2><p class="muted">${error.message}</p></article>`;
+    const home = document.getElementById("page-news");
+    if (home) home.innerHTML = `<article class="card error-card"><h2>News gerade nicht da.</h2><p class="muted">${error.message}</p></article>`;
   }
   try {
-    const analyse = document.getElementById("page-analyse");
-    if (analyse) {
-      analyse.innerHTML = analyseViewOf(ui.analyseView) === "chart"
-        ? renderChartsPage(data, ui)
-        : renderAnalyse(data, ui);
-    }
+    const stimmung = document.getElementById("page-stimmung");
+    if (stimmung) stimmung.innerHTML = renderStimmung(data, ui);
   } catch (error) {
-    const analyse = document.getElementById("page-analyse");
-    if (analyse) analyse.innerHTML = `<article class="card error-card"><h2>Chartanalyse gerade nicht da.</h2><p class="muted">${error.message}</p></article>`;
+    const stimmung = document.getElementById("page-stimmung");
+    if (stimmung) stimmung.innerHTML = `<article class="card error-card"><h2>Stimmung gerade nicht da.</h2><p class="muted">${error.message}</p></article>`;
   }
   restoreScroll(scrolls);
   try { markMoodPulse(document); } catch { /* Puls ist Beiwerk. */ }
@@ -305,6 +318,16 @@ document.body.addEventListener("click", (event) => {
     render();
     return;
   }
+  if (action === "news-filter") {
+    ui.newsFilter = el.dataset.filter || "alle";
+    render();
+    return;
+  }
+  if (action === "value-symbol") {
+    ui.valueSymbol = el.dataset.symbol || "SPCX";
+    render();
+    return;
+  }
   if (action === "chart-symbol" || action === "analyse-symbol") {
     ui.chartSymbol = el.dataset.symbol;
     ui.analyseSymbol = el.dataset.symbol;
@@ -343,7 +366,7 @@ document.body.addEventListener("click", (event) => {
       ui.chartSymbol = el.dataset.symbol;
     }
     nav.closeAll();
-    nav.go("analyse");
+    nav.go("stimmung");
     render();
     return;
   }
@@ -427,6 +450,16 @@ document.body.addEventListener("click", (event) => {
   openDetail(action, el.dataset);
 });
 
+document.body.addEventListener("toggle", (event) => {
+  const node = event.target;
+  if (!(node instanceof HTMLDetailsElement) || !node.open) return;
+  requestAnimationFrame(() => {
+    try { drawCharts(data, ui); } catch { /* Linie bleibt leer, bis der nächste Lauf sie zeichnet. */ }
+    try { drawCandles(data, ui); } catch { /* Kerzen bleiben leer, bis der nächste Lauf sie zeichnet. */ }
+    try { drawDayPaths(data, ui); } catch { /* Tagesverlauf bleibt leer, bis der nächste Lauf sie zeichnet. */ }
+  });
+}, true);
+
 document.body.addEventListener("input", (event) => {
   if (event.target.id !== "glossary-q") return;
   ui.glossaryQuery = event.target.value;
@@ -496,7 +529,7 @@ async function boot() {
   try {
     data = await loadData();
   } catch (error) {
-    document.getElementById("page-heute").innerHTML = `<p class="empty">Die Daten sind gerade nicht da. ${error.message}</p>`;
+    document.getElementById("page-news").innerHTML = `<p class="empty">Die Daten sind gerade nicht da. ${error.message}</p>`;
     return;
   }
   render();

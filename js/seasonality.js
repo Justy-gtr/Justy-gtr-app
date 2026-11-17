@@ -261,15 +261,27 @@ function moveCounts(values) {
   return { up, down };
 }
 
+function meanOf(values) {
+  if (!values.length) return null;
+  return round2(values.reduce((sum, value) => sum + value, 0) / values.length);
+}
+
 function summarize(values, withMedian) {
   if (!values.length) {
-    const empty = { n: 0, up: 0, down: 0, avg: null };
+    const empty = { n: 0, up: 0, down: 0, avg: null, avgUp: null, avgDown: null };
     if (withMedian) empty.med = null;
     return empty;
   }
   const { up, down } = moveCounts(values);
   const avg = round2(values.reduce((sum, value) => sum + value, 0) / values.length);
-  const row = { n: values.length, up, down, avg };
+  const row = {
+    n: values.length,
+    up,
+    down,
+    avg,
+    avgUp: meanOf(values.filter((value) => value > 0)),
+    avgDown: meanOf(values.filter((value) => value < 0))
+  };
   if (withMedian) row.med = median(values);
   return row;
 }
@@ -619,6 +631,93 @@ function earlyLine(note) {
   return `<p class="season-pre">${esc(note)}</p>`;
 }
 
+/** Daily closes from the loaded series. The 5Y row is weekly and stays out. */
+export function directionFromTicker(ticker) {
+  const history = ticker?.history || {};
+  const daily = Array.isArray(history["1Y"]) && history["1Y"].length
+    ? history["1Y"]
+    : (history["6M"] || []);
+  return {
+    days: aggregateWeekdays(daily),
+    hours: aggregateHours(history["1H"] || []),
+    source: "reihe"
+  };
+}
+
+function directionPack(stats) {
+  const days = stats?.days || [];
+  if (!days.some((row) => row && Object.prototype.hasOwnProperty.call(row, "avgUp"))) return null;
+  return { days, hours: stats?.hours || [], source: "datei" };
+}
+
+function directionScale(rows) {
+  let max = 0;
+  for (const row of rows) {
+    if (!row || row.n < MIN_CASES) continue;
+    if (Number.isFinite(row.avgUp)) max = Math.max(max, Math.abs(row.avgUp));
+    if (Number.isFinite(row.avgDown)) max = Math.max(max, Math.abs(row.avgDown));
+  }
+  return max;
+}
+
+function directionHasSignal(pack) {
+  return [...(pack?.days || []), ...(pack?.hours || [])].some((row) => (
+    row && row.n >= MIN_CASES && (Number.isFinite(row.avgUp) || Number.isFinite(row.avgDown))
+  ));
+}
+
+function moveTrack(value, scale, kind) {
+  if (!Number.isFinite(value) || !scale) return `<span class="move-track ${kind}" aria-hidden="true"></span>`;
+  const width = Math.max(8, Math.min(100, Math.round((Math.abs(value) / scale) * 100)));
+  return `<span class="move-track ${kind}" aria-hidden="true"><span class="move-bar ${kind === "is-down" ? "down" : "up"}" style="width:${width}%"></span></span>`;
+}
+
+function moveRow(label, key, row, scale) {
+  const thin = !row || row.n < MIN_CASES || (!Number.isFinite(row.avgUp) && !Number.isFinite(row.avgDown));
+  const fig = thin ? "–" : `${formatSignedPct(row.avgUp)} · ${formatSignedPct(row.avgDown)}`;
+  const count = thin
+    ? `n = ${row?.n || 0} · noch zu wenig Daten`
+    : `${row.up} von ${row.n} hoch · ${row.down} von ${row.n} runter`;
+  const aria = thin
+    ? `${label}, noch zu wenig Daten`
+    : `${label}, Anstieg im Schnitt ${formatSignedPct(row.avgUp)}, Rückgang im Schnitt ${formatSignedPct(row.avgDown)}, ${count}`;
+  return `<div class="move-row" data-move="${esc(key)}">
+    <span class="move-name">${esc(label)}</span>
+    ${thin ? `<span class="move-track is-up" aria-hidden="true"></span><span class="move-track is-down" aria-hidden="true"></span>` : `${moveTrack(row.avgUp, scale, "is-up")}${moveTrack(row.avgDown, scale, "is-down")}`}
+    <span class="move-fig">${esc(fig)}</span>
+    <span class="move-count">${esc(count)}</span>
+    <span class="sr-only">${esc(aria)}</span>
+  </div>`;
+}
+
+/** Equal tracks: mean rise and mean drop, per weekday and per hour. */
+export function renderDirectionBlock(pack) {
+  if (!directionHasSignal(pack)) {
+    return `<div class="move-block" id="move-bars">
+      <p class="season-kicker">Mittlere Bewegung hoch und runter</p>
+      <p class="season-note">noch zu wenig Daten</p>
+    </div>`;
+  }
+  const days = pack.days || [];
+  const hours = pack.hours || [];
+  const dayScale = directionScale(days) || 1;
+  const hourScale = directionScale(hours) || 1;
+  const dayRows = WEEKDAY_LABELS.map((label, index) => moveRow(label, label, days[index], dayScale)).join("");
+  const hourRows = HOUR_SLOTS.map((slot, index) => moveRow(slotFace(slot), slot, hours[index], hourScale)).join("");
+  const source = pack.source === "reihe"
+    ? `<p class="season-note">Balken aus der geladenen Kursreihe, neben den Flächen.</p>`
+    : "";
+  return `<div class="move-block" id="move-bars">
+    <p class="season-kicker">Mittlere Bewegung hoch und runter</p>
+    <p class="season-note">Gleich hohe Bahnen. Links der mittlere Anstieg, rechts der mittlere Rückgang.</p>
+    <p class="season-kicker">Wochentag</p>
+    ${dayRows}
+    <p class="season-kicker">Stunde</p>
+    ${hourRows}
+    ${source}
+  </div>`;
+}
+
 function rangesMatch(pack) {
   const year = pack?.ranges?.year;
   const all = pack?.ranges?.all;
@@ -632,6 +731,7 @@ export function renderSeasonalityCard(seasonality, ticker, season) {
     return `<article class="card season-card" aria-label="Wochentag und Uhrzeit">
       <p class="kicker">Wochentag &amp; Uhrzeit</p>
       <p class="season-note">Für diese Aktie liegen noch keine eigenen Tageszahlen.</p>
+      ${renderDirectionBlock(directionFromTicker(ticker))}
       <p class="season-note">${esc(PAST_NOTE)}</p>
     </article>`;
   }
@@ -650,6 +750,7 @@ export function renderSeasonalityCard(seasonality, ticker, season) {
     <p class="season-lead">${esc(headline)}</p>
     <p class="season-kicker">Tage, Schluss zu Schluss</p>
     <div class="wd-list">${weekdayRows(stats.days || [])}</div>
+    ${renderDirectionBlock(directionPack(stats) || directionFromTicker(ticker))}
     ${clockBlock(stats.hours || [], stats.grid || [], stats.days || [])}
     ${earlyLine(pack.earlyNote)}
     <p class="season-note">${esc(PAST_NOTE)}</p>

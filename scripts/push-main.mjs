@@ -11,7 +11,8 @@ const DATA_FILES = [
   "data/meta.json",
   "data/seasonality.json",
   "data/moonshots.json",
-  "data/germany.json"
+  "data/germany.json",
+  "data/fundamentals.json"
 ];
 
 export function backoffSeconds(attempt) {

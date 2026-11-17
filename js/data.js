@@ -21,7 +21,8 @@ export const FILES = [
   "companies",
   "moonshots",
   "sentiment",
-  "germany"
+  "germany",
+  "fundamentals"
 ];
 
 export async function loadData() {

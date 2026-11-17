@@ -1,6 +1,6 @@
 import { esc } from "./logic.js";
 
-const PAGES = ["heute", "kalender", "posts", "schwarm", "deutschland", "analyse", "mehr"];
+export const PAGES = ["news", "stimmung", "bewertung", "training", "kalender"];
 
 /** Page slot from the pager's own width. offsetLeft follows the wrong box once overlays sit beside the scroller. */
 export function pagerIndex(scrollLeft, width, count = PAGES.length) {
@@ -17,7 +17,7 @@ export function initNav(pager, { onPage } = {}) {
   const root = document.getElementById("detail-root");
   const stack = [];
   let closing = false;
-  let current = "heute";
+  let current = PAGES[0];
   let lockUntil = 0;
 
   function indexOf(id) {
