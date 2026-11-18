@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T12:57:00+01:00",
+  "updatedAt": "2026-11-18T13:17:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
+      "score": 30,
       "postsCount": 25,
-      "reason": "Viele Fans halten SpaceX fest oder haben den Rücksetzer nachgekauft. SpaceX ist jetzt 80 % der US-Aktien des Saudi-Fonds. Einige warnen vor IPO-Schwäche.",
+      "reason": "Tepper hat seine SpaceX-Position stark erhöht, die 40-Mrd.-$-KI-Wette ist Thema. Andere sagen, SpaceX zeige, dass Aktien nach dem IPO oft fallen.",
       "sources": [
         {
-          "title": "@DavidDTawil auf X (18.11., 12:52)",
-          "url": "https://x.com/DavidDTawil/status/2123021616993255545"
+          "title": "@steady_profits auf X (18.11., 13:10)",
+          "url": "https://x.com/steady_profits/status/2123025983687057578"
         },
         {
-          "title": "@stevenmarkryan auf X (18.11., 12:38)",
-          "url": "https://x.com/stevenmarkryan/status/2123018048131289330"
+          "title": "@capitalsnitch auf X (18.11., 13:08)",
+          "url": "https://x.com/capitalsnitch/status/2123025490407473599"
         },
         {
-          "title": "@StochAlpha auf X (18.11., 12:39)",
-          "url": "https://x.com/StochAlpha/status/2123018273193169100"
+          "title": "@caata87297467 auf X (18.11., 13:04)",
+          "url": "https://x.com/caata87297467/status/2123024447947063758"
         }
       ],
-      "updatedAt": "2026-11-18T12:57:00+01:00"
+      "updatedAt": "2026-11-18T13:17:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 15,
       "postsCount": 25,
-      "reason": "Langfrist-Fans halten Tesla und sprechen über Solar und eine SpaceX-Fusion. Skeptiker zweifeln an Robotaxi-Tempo, ein Fonds soll Tesla-Aktien abgegeben haben.",
+      "reason": "Bericht über 3 Mrd. € für bis zu 1 Mio. Cybercabs pro Jahr in Deutschland, 200 neue Cybercabs in Texas. Kritiker wie Gordon Johnson widersprechen den Fans.",
       "sources": [
         {
-          "title": "@otigart auf X (18.11., 12:52)",
-          "url": "https://x.com/otigart/status/2123021445513072712"
+          "title": "@AIAgentUpdate auf X (18.11., 13:12)",
+          "url": "https://x.com/AIAgentUpdate/status/2123026539830780364"
         },
         {
-          "title": "@AllTeslaNews auf X (18.11., 12:50)",
-          "url": "https://x.com/AllTeslaNews/status/2123021034374778916"
+          "title": "@therealmrghost6 auf X (18.11., 13:14)",
+          "url": "https://x.com/therealmrghost6/status/2123027108725236184"
         },
         {
-          "title": "@an0ym0u5 auf X (18.11., 12:48)",
-          "url": "https://x.com/an0ym0u5/status/2123020561739632728"
+          "title": "@GordonJohnson19 auf X (18.11., 13:14)",
+          "url": "https://x.com/GordonJohnson19/status/2123027115079569455"
         }
       ],
-      "updatedAt": "2026-11-18T12:57:00+01:00"
+      "updatedAt": "2026-11-18T13:17:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 10,
-      "postsCount": 11,
-      "reason": "Wenig echte Beiträge: Es geht um neuen Verkaufsdruck nach dem Rückgang von etwa 67 $ auf 55 $ und um den Vergleich mit ASTS. Viel Spam.",
+      "score": 25,
+      "postsCount": 13,
+      "reason": "Halter bleiben gelassen, Chartfans sehen eine Erholung nach dem Rücksetzer. Viele hohe Langfrist-Kursziele, aber auch viel Werbung und Spam.",
       "sources": [
         {
-          "title": "@Cabala44Isabel auf X (18.11., 12:52)",
-          "url": "https://x.com/Cabala44Isabel/status/2123021590451585165"
+          "title": "@Flott00s auf X (18.11., 13:02)",
+          "url": "https://x.com/Flott00s/status/2123024049391464524"
         },
         {
-          "title": "@grok auf X (18.11., 12:39)",
-          "url": "https://x.com/grok/status/2123018371205640679"
+          "title": "@younsik_felix auf X (18.11., 13:04)",
+          "url": "https://x.com/younsik_felix/status/2123024519308923156"
         },
         {
-          "title": "@StockChaser_ auf X (18.11., 12:53)",
-          "url": "https://x.com/StockChaser_/status/2123021811978059853"
+          "title": "@Neil_Shares auf X (18.11., 12:55)",
+          "url": "https://x.com/Neil_Shares/status/2123022214337556957"
         }
       ],
-      "updatedAt": "2026-11-18T12:57:00+01:00"
+      "updatedAt": "2026-11-18T13:17:00+01:00"
     }
   }
 }
