@@ -53,7 +53,7 @@ function readFields() {
     stake: fieldNumber("replay-stake", "100"),
     leverage: fieldNumber("replay-lev", "10"),
     spread: fieldNumber("replay-spread", "0,5"),
-    balance: fieldNumber("replay-balance", "1000"),
+    balance: fieldNumber("replay-balance", "100"),
     target: fieldNumber("replay-target", ""),
     reenter: fieldNumber("replay-reenter", ""),
     takeShare: fieldNumber("replay-take", "100")
@@ -87,7 +87,7 @@ function setupHtml(history, note) {
   const stake = saved?.stake ?? 100;
   const leverage = saved?.leverage ?? 10;
   const spread = saved ? String(Math.round(saved.spread * 10000) / 100).replace(".", ",") : "0,5";
-  const balance = saved?.balance ?? 1000;
+  const balance = saved?.balance ?? 100;
   const target = saved?.takeProfitPct ?? "";
   const again = saved?.reenterPct ?? "";
   const take = saved?.takeSharePct ?? 100;

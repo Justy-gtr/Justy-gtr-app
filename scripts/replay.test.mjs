@@ -6,6 +6,7 @@ import {
   REPLAY_POOL,
   SESSION_FROM,
   SESSION_TO,
+  START_EUROS,
   UI,
   US_OPEN_MIN,
   assembleDay,
@@ -20,6 +21,8 @@ import {
   inspectCandle,
   knockBarrier,
   liveSnapshot,
+  normalizeSettings,
+  rescueBalance,
   openTrade,
   pickRound,
   rememberRound,
@@ -293,6 +296,18 @@ test("Texte und Archiv bleiben ohne Rat und ohne Schlüssel", () => {
   const root = new URL("..", import.meta.url).pathname;
   const errors = checkReplayArchive(root);
   assert.deepEqual(errors, []);
+});
+
+test("Startkonto ist 100 € und ein leeres Konto beginnt wieder bei 100 €", () => {
+  assert.equal(START_EUROS, 100);
+  assert.equal(normalizeSettings({}).balance, 100);
+  assert.equal(createRound(flatDay(), {}).cashCents, 10000);
+  const wiped = rescueBalance({ phase: "play", position: null, cashCents: 0, revived: 0 });
+  assert.equal(wiped.cashCents, 10000);
+  assert.equal(wiped.revived, 1);
+  const kept = rescueBalance({ phase: "play", position: null, cashCents: 2500 });
+  assert.equal(kept.cashCents, 2500);
+  assert.match(fs.readFileSync("js/replay-ui.js", "utf8"), /balance: fieldNumber\("replay-balance", "100"\)/);
 });
 
 test("Einsatz über dem Konto geht nicht auf", () => {

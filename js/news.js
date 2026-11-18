@@ -240,6 +240,9 @@ export function hourWeek(ticker, now = new Date()) {
 }
 
 const WEEKDAY_WORD = ["Sonntags", "Montags", "Dienstags", "Mittwochs", "Donnerstags", "Freitags", "Samstags"];
+const WEEKDAY_SHORT = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+const TRADE_FROM = 8;
+const TRADE_TO = 22;
 
 function weekdayIndex(iso) {
   const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso || ""));
@@ -272,29 +275,55 @@ function countTickerHour(ticker, weekday, hour) {
   return n ? { up, down, n } : null;
 }
 
-/** One sentence for this weekday and hour. Archive first, then the loaded prices. */
-export function hourSentence(symbol, now, hoursDoc, ticker) {
+function nextWeekday(weekday) {
+  let day = weekday;
+  do {
+    day = (day + 1) % 7;
+  } while (day === 0 || day === 6);
+  return day;
+}
+
+/** Current hour inside 08–22 on a weekday. Otherwise the next such hour, never the last one. */
+export function hourSlot(now = new Date()) {
   const clock = berlinClock(now);
   if (!clock) return null;
   const weekday = weekdayIndex(clock.date);
-  const day = hoursDoc?.symbols?.[symbol]?.[String(weekday)] || {};
-  let hour = clock.hour;
-  let cell = cellOf(hoursDoc, symbol, weekday, hour) || countTickerHour(ticker, weekday, hour);
-  if (!cell) {
-    const hours = Object.keys(day).map(Number).filter((value) => day[value]?.n > 0).sort((a, b) => b - a);
-    if (!hours.length) return null;
-    hour = hours[0];
-    cell = day[hour];
+  const inSession = weekday >= 1 && weekday <= 5 && clock.hour >= TRADE_FROM && clock.hour < TRADE_TO;
+  if (inSession) return { weekday, hour: clock.hour, live: true };
+  if (weekday >= 1 && weekday <= 5 && clock.hour < TRADE_FROM) {
+    return { weekday, hour: TRADE_FROM, live: false };
   }
+  return { weekday: nextWeekday(weekday), hour: TRADE_FROM, live: false };
+}
+
+export function hourHeader(slot) {
+  if (!slot) return "Diese Stunde";
+  const range = `${String(slot.hour).padStart(2, "0")}–${String(slot.hour + 1).padStart(2, "0")} Uhr`;
+  const short = WEEKDAY_SHORT[slot.weekday] || "";
+  if (slot.live) return `Diese Stunde, ${short} ${range}`;
+  return `Nächste Handelsstunde: ${short} ${range}`;
+}
+
+function hourRange(hour) {
+  return `${String(hour).padStart(2, "0")}–${String(hour + 1).padStart(2, "0")} Uhr`;
+}
+
+/** One sentence for the shown hour. Archive first, then the loaded prices. */
+export function hourSentence(symbol, now, hoursDoc, ticker) {
+  const slot = hourSlot(now);
+  if (!slot) return null;
+  const cell = cellOf(hoursDoc, symbol, slot.weekday, slot.hour) || countTickerHour(ticker, slot.weekday, slot.hour);
+  if (!cell) return null;
   const up = Math.round((cell.up / cell.n) * 100);
   const down = 100 - up;
-  const word = WEEKDAY_WORD[weekday] || "";
+  const word = WEEKDAY_WORD[slot.weekday] || "";
   return {
-    hour,
-    weekday,
+    hour: slot.hour,
+    weekday: slot.weekday,
+    live: slot.live,
     share: up,
     n: cell.n,
-    text: `${word} ${String(hour).padStart(2, "0")}–${String(hour + 1).padStart(2, "0")} Uhr: ${up} % hoch · ${down} % runter (n=${cell.n})`
+    text: `${word} ${hourRange(slot.hour)}: ${up} % hoch · ${down} % runter (n=${cell.n})`
   };
 }
 

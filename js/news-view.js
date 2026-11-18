@@ -1,4 +1,4 @@
-import { AGENDA_SYMBOLS, eventsWithin, filterNews, hourSentence, hourShareStyle, NEWS_CHIPS, nextUpcoming, sentimentLight, swarmList, buildNews } from "./news.js";
+import { AGENDA_SYMBOLS, eventsWithin, filterNews, hourHeader, hourSentence, hourShareStyle, hourSlot, NEWS_CHIPS, nextUpcoming, sentimentLight, swarmList, buildNews } from "./news.js";
 import { calendarSentence, calendarWhen, esc, formatStamp, safeUrl } from "./logic.js";
 
 function swarmBlock(data, ui) {
@@ -80,7 +80,7 @@ export function renderNews(data, ui, now = new Date()) {
       <h2>Meldungen</h2>
     </header>
     <section class="card" aria-label="Aktuelle Stunde nach Wochentag">
-      <p class="kicker">Diese Stunde</p>
+      <p class="kicker">${esc(hourHeader(hourSlot(now)))}</p>
       ${hourRows(data, now, filter)}
     </section>
     <section aria-label="Die nächsten drei Stunden">

@@ -8,6 +8,7 @@ export const SESSION_TO = 22 * 60;
 export const US_OPEN_MIN = 15 * 60 + 30;
 export const US_FROM_MIN = 10 * 60;
 export const INTERVAL_MIN = 5;
+export const START_EUROS = 100;
 export const SPEEDS = [0.1, 0.2, 0.5, 1, 2];
 export const LEVERAGE_PRESETS = [5, 10, 20, 50, 100];
 export const TAKE_PRESETS = [25, 50, 100];
@@ -208,7 +209,7 @@ function num(value, fallback) {
 }
 
 export function normalizeSettings(raw = {}) {
-  const balance = clamp(num(raw.balance, 1000), 10, 1_000_000);
+  const balance = clamp(num(raw.balance, START_EUROS), 10, 1_000_000);
   const stake = clamp(num(raw.stake, 100), 1, balance);
   const leverage = clamp(num(raw.leverage, 10), 1, 200);
   const spread = clamp(num(raw.spread, 0.005), 0, 0.25);
@@ -388,7 +389,7 @@ function finish(state) {
   }
   const done = { ...state, phase: "done", paused: true, marketMin: SESSION_TO, cashCents, position, trades };
   if (done.cashCents > 0) return done;
-  return { ...done, cashCents: 10000, revived: (done.revived || 0) + 1 };
+  return { ...done, cashCents: eurosToCents(START_EUROS), revived: (done.revived || 0) + 1 };
 }
 
 export function catchUp(state, marketMin) {
@@ -472,7 +473,7 @@ export function speedLabel(speed) {
 /** Fresh 100 € when a knock-out or a round leaves nothing. */
 export function rescueBalance(state) {
   if (!state || state.position || state.cashCents > 0) return state;
-  return { ...state, cashCents: 10000, revived: (state.revived || 0) + 1 };
+  return { ...state, cashCents: eurosToCents(START_EUROS), revived: (state.revived || 0) + 1 };
 }
 
 /** Close part or all of the open position. The rest stays. The payout returns to the account. */

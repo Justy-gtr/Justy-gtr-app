@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { buildSymbolRecord, cheaperNames, historyPlacement, peerPlacement, shouldSkipFundamentals } from "../js/bewertung.js";
 import { renderBewertung } from "../js/bewertung-view.js";
-import { buildNews, filterNews, glancePoints, hourWeek, sentimentLight, stockAgenda, swarmList } from "../js/news.js";
+import { buildNews, filterNews, glancePoints, hourHeader, hourSlot, hourWeek, sentimentLight, stockAgenda, swarmList } from "../js/news.js";
 import { renderNews } from "../js/news-view.js";
 import { aggregateWeekdays, renderSeasonalityCard } from "../js/seasonality.js";
 import { moodReliability } from "../js/stimmung.js";
@@ -38,7 +38,7 @@ test("News steht neueste zuerst und filtert nach Aktie", () => {
   assert.equal(filterNews(items, "Markt")[0].id, "post:markt");
   assert.equal(filterNews(items, "RKLB").length, 0);
   const html = renderNews(data, { newsFilter: "alle" }, new Date("2026-11-17T21:00:00+01:00"));
-  assert.match(html, /Diese Stunde/);
+  assert.match(html, /Diese Stunde, Di 21–22 Uhr/);
   assert.match(html, /Die nächsten drei Stunden/);
   assert.equal(html.includes("Was bewegt den Kurs"), false);
   assert.match(html, /data-filter="NVDA"/);
@@ -94,6 +94,23 @@ test("News steht neueste zuerst und filtert nach Aktie", () => {
   }, { newsFilter: "TSLA" }, now);
   assert.match(lit, /Stimmung positiv/);
   assert.match(lit, /#22c55e/);
+  const night = new Date("2026-11-18T01:10:00+01:00");
+  const slot = hourSlot(night);
+  assert.equal(slot.live, false);
+  assert.equal(slot.weekday, 3);
+  assert.equal(slot.hour, 8);
+  assert.equal(hourHeader(slot), "Nächste Handelsstunde: Mi 08–09 Uhr");
+  assert.equal(hourSlot(new Date("2026-11-18T15:30:00+01:00")).live, true);
+  assert.equal(hourSlot(new Date("2026-11-20T23:00:00+01:00")).weekday, 1);
+  const nightView = renderNews({
+    hours: { symbols: { SPCX: { "3": { "8": { up: 7, down: 5, n: 12 }, "21": { up: 1, down: 11, n: 12 } } } } },
+    prices: { tickers: [] },
+    posts: { posts: [] },
+    calendar: { events: [] }
+  }, { newsFilter: "alle" }, night);
+  assert.match(nightView, /Nächste Handelsstunde: Mi 08–09 Uhr/);
+  assert.match(nightView, /Mittwochs 08–09 Uhr: 58 % hoch · 42 % runter \(n=12\)/);
+  assert.equal(nightView.includes("21–22"), false);
 });
 
 test("Schwarm auf News schaltet zwischen US und GER", () => {
