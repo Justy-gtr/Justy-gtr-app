@@ -46,7 +46,7 @@ import {
 } from "./replay.js";
 
 const PAGE_ID = "page-training";
-let chartZoom = 24;
+let chartZoom = 0;
 
 function stakeSteps(cashCents, selected) {
   const ladder = stakeLadder(cashCents, selected);
@@ -142,6 +142,9 @@ function playHtml(round, mask, history) {
   const pos = open
     ? `<p class="replay-pos">${esc(sideLabel(open.side))} · ${esc(formatEuroCents(open.stakeCents))} · ${esc(UI.leverage)} ${esc(open.leverage)} · ${esc(UI.reasonKo)} ${esc(formatUsd(snap.barrier))}</p>`
     : "";
+  const zoomMax = Math.max(8, round.visible || 8);
+  const zoomValue = chartZoom > 0 ? Math.min(Math.max(8, chartZoom), zoomMax) : zoomMax;
+  const zoomLabel = chartZoom > 0 && chartZoom < zoomMax ? String(Math.round(chartZoom)) : "Tag";
   return `
     <div class="replay replay-live" data-replay-root data-screen="play">
       <header class="replay-top">
@@ -151,6 +154,14 @@ function playHtml(round, mask, history) {
         </div>
         <p class="replay-clock" id="replay-clock">${esc(formatMinute(snap.minute))}</p>
       </header>
+      <div class="replay-chart">
+        <canvas id="replay-canvas" aria-label="Kerzen bis zur aktuellen Minute. Spätere Kerzen bleiben verdeckt."></canvas>
+      </div>
+      <label class="replay-zoom">
+        <span>Zoom</span>
+        <input id="replay-zoom" type="range" min="8" max="${zoomMax}" step="1" value="${zoomValue}" aria-label="Zoom">
+        <span id="replay-zoom-n">${esc(zoomLabel)}</span>
+      </label>
       <div class="replay-speeds" role="group" aria-label="Kerzengrösse">${intervals}</div>
       ${round.intervalNote ? `<p class="replay-note">${esc(round.intervalNote)}</p>` : ""}
       <div class="replay-hud">
@@ -160,14 +171,6 @@ function playHtml(round, mask, history) {
       <p class="replay-price" id="replay-price">${snap.price == null ? "" : esc(formatUsd(snap.price))}</p>
       ${pos}
       <p class="replay-warn" id="replay-warn"></p>
-      <div class="replay-chart">
-        <canvas id="replay-canvas" aria-label="Kerzen bis zur aktuellen Minute. Spätere Kerzen bleiben verdeckt."></canvas>
-      </div>
-      <label class="replay-zoom">
-        <span>Zoom</span>
-        <input id="replay-zoom" type="range" min="8" max="48" step="1" value="${chartZoom}" aria-label="Zoom">
-        <span id="replay-zoom-n">${chartZoom}</span>
-      </label>
       <div class="replay-actions">
         <button type="button" class="replay-go" data-action="replay-step">${esc(UI.weiter)}</button>
         <button type="button" class="replay-long" data-action="replay-long" ${open ? "disabled" : ""}>${esc(UI.long)}</button>
@@ -715,9 +718,11 @@ export function initTraining() {
         });
       }
       if (target?.id === "replay-zoom") {
-        chartZoom = Math.max(8, Math.min(48, Number(target.value) || 24));
+        const max = Number(target.max) || 8;
+        const value = Number(target.value);
+        chartZoom = value >= max - 0.01 ? 0 : Math.max(8, value);
         const count = document.getElementById("replay-zoom-n");
-        if (count) count.textContent = String(chartZoom);
+        if (count) count.textContent = chartZoom ? String(Math.round(chartZoom)) : "Tag";
         const canvas = document.getElementById("replay-canvas");
         if (canvas && round) drawChart(canvas, round);
         return;

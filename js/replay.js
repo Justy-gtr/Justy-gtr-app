@@ -214,16 +214,28 @@ export function sessionBars(day) {
   return (day?.b || []).filter((bar) => Array.isArray(bar) && bar[0] >= SESSION_FROM && bar[0] < SESSION_TO && bar[4] > 0);
 }
 
-/** How many candles fit. Bodies stay at least 6 px, older candles leave to the left. */
+/** Zoomed view keeps bodies at least 6 px. A full day (no cap) may be thinner. */
 export function candleWindow(count, plotWidth, cap) {
   const minSlot = CANDLE_MIN_BODY + CANDLE_GAP;
-  const width = Math.max(minSlot, Number(plotWidth) || 0);
-  const fit = Math.max(1, Math.floor(width / minSlot));
-  const limit = Number(cap) > 0 ? Math.max(1, Math.min(fit, Math.round(Number(cap)))) : fit;
-  const shown = Math.min(Math.max(0, count), limit);
+  const width = Math.max(1, Number(plotWidth) || 0);
+  const n = Math.max(0, count);
+  const whole = !(Number(cap) > 0);
+  if (whole) {
+    const shown = n;
+    const slot = shown > 0 ? width / shown : minSlot;
+    return {
+      from: 0,
+      shown,
+      slot,
+      body: Math.min(22, Math.max(slot * 0.7, 0.6))
+    };
+  }
+  const fit = Math.max(1, Math.floor(Math.max(width, minSlot) / minSlot));
+  const limit = Math.max(1, Math.min(fit, Math.round(Number(cap))));
+  const shown = Math.min(n, limit);
   const slot = shown > 0 ? width / shown : minSlot;
   return {
-    from: Math.max(0, count - shown),
+    from: Math.max(0, n - shown),
     shown,
     slot,
     body: Math.max(CANDLE_MIN_BODY, Math.min(slot - CANDLE_GAP, 22))

@@ -339,12 +339,16 @@ test("10 Minuten bündelt 5 Minuten, 1 Minute wird nicht erfunden", () => {
   assert.equal(round.visible, PREVIEW_BARS);
   assert.equal(round.paused, true);
   const wide = candleWindow(400, 280);
-  assert.ok(wide.shown >= 30 && wide.shown <= 40);
+  assert.equal(wide.shown, 400);
+  assert.equal(wide.from, 0);
+  assert.ok(wide.body < 6);
   const zoomed = candleWindow(400, 280, 12);
   assert.equal(zoomed.shown, 12);
   assert.ok(zoomed.body >= 6);
+  assert.ok(zoomed.from > 0);
   const limited = candleWindow(400, 280, 80);
-  assert.equal(limited.shown, wide.shown);
+  assert.ok(limited.shown < 80);
+  assert.ok(limited.shown <= Math.floor(280 / 8));
   assert.ok(limited.body >= 6);
   const ladder = stakeLadder(10000, 100);
   assert.equal(ladder.steps[0], 10);
@@ -352,9 +356,6 @@ test("10 Minuten bündelt 5 Minuten, 1 Minute wird nicht erfunden", () => {
   assert.equal(ladder.picked, 100);
   assert.equal(stakeLadder(25000, 100).steps.at(-1), 250);
   assert.equal(stakeLadder(5000, 100).picked, 50);
-  assert.ok(wide.from > 0);
-  assert.ok(wide.body >= 6);
-  assert.ok(wide.slot >= 8);
   assert.equal(dismissSheet(56, 0), true);
   assert.equal(dismissSheet(20, 0), false);
   assert.equal(dismissSheet(80, 12), false);
