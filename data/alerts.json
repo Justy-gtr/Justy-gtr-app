@@ -552,7 +552,7 @@
       "thresholdPct": 2,
       "direction": "up",
       "timestamp": "2026-11-17T21:18:05.154Z",
-      "notified": false,
+      "notified": true,
       "example": false,
       "sources": [
         {
@@ -582,7 +582,7 @@
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-17T21:18:05.154Z",
-      "notified": false,
+      "notified": true,
       "example": false,
       "sources": [
         {
@@ -612,7 +612,7 @@
       "thresholdPct": 2,
       "direction": "up",
       "timestamp": "2026-11-18T06:58:33.313Z",
-      "notified": false,
+      "notified": true,
       "example": false,
       "sources": [
         {
@@ -642,7 +642,7 @@
       "thresholdPct": 2,
       "direction": "up",
       "timestamp": "2026-11-18T06:58:33.313Z",
-      "notified": false,
+      "notified": true,
       "example": false,
       "sources": [
         {
