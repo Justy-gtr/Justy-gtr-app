@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-18T13:30:00+01:00",
+  "asOf": "2026-11-18T15:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,30 @@
     }
   },
   "posts": [
+    {
+      "id": "post-rocketlab-2123052731321758083",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-18T14:56:30+01:00",
+      "summaryDe": "Rocket Lab stellt diese Woche auf der Space Tech Expo Europe in Bremen aus (Halle 5, Stand K01) und wirbt damit, Raketen, Raumfahrzeuge und Bauteile für Missionen der ganzen Branche zu bauen. Reine Messe-Werbung, keine neue Geschäftsmeldung.",
+      "originalText": "We build rockets. We build spacecraft. We build the components that power missions across the industry.\n\nThis week, we’re in Bremen for @SpaceTechExpoEU. At the show? Find us at Booth K01, Hall 5.",
+      "url": "https://x.com/RocketLab/status/2123052731321758083",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (18.11., 14:56): Space Tech Expo Europe in Bremen",
+          "url": "https://x.com/RocketLab/status/2123052731321758083"
+        }
+      ]
+    },
     {
       "id": "post-elonmusk-2123017891167785201",
       "account": "@elonmusk",

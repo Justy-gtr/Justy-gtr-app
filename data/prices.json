@@ -5083,47 +5083,39 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Mi 13:30: SPCX liegt auf Xetra bei 129,96 € (+1,9 % zum Xetra-Schluss von 127,58 €), vorbörslich in New York bei 142,18 $ (+0,3 % zum Schluss von 141,70 $) (Yahoo). Der Xetra-Aufschlag ist vor allem Nachholen: Am Di schloss Xetra, bevor SPCX in New York auf +3,2 % stieg. Rückenwind kommt aus Nvidias Zahlen, die neuen Vera-Rubin-Racks gehen laut Nvidia „bald“ auch bei SpaceX SI in Betrieb. Laut Bloomberg könnten Goldman Sachs und Apollo schon diese Woche rund 4 Mrd. $ Anleihen für die Nvidia-Chips verkaufen; die Schulden liegen bei einer Zweckgesellschaft von Atlas SP, nicht bei SpaceX, und SpaceX hat nichts bestätigt (GuruFocus/Bloomberg). Gesamtmarkt: Die Nvidia-Erholung trägt weiter, aber schwächer als am Morgen. Nvidia lag vorbörslich bei 160,37 $ (+3,2 % zum Schluss von 155,46 $), Xetra 145,56 € (+4,4 %); der Nasdaq-100-Future stand um 13:07 bei +0,8 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia). Der Dax gab den Morgengewinn bis Mittag ab und lag gegen 12:30 bei rund 26.065 Punkten (+0,1 %), gestützt von Infineon und Siemens Energy; der europäische Tech-Index erholte sich um etwa 1,5 % (dpa-AFX, dts). Heute noch: US-Baubeginne 14:30, Fed-Protokoll 20:00, Anthropic-Preis nach US-Schluss.",
+      "why": "Stand Mi 15:36: SPCX steigt in New York auf 143,33 $ (+1,2 % zum Schluss von 141,70 $; Spanne 141,59–144,78 $), auf Xetra lag die Aktie zuletzt bei 129,90 € (+1,8 %) (Yahoo). Treiber bleibt die Chip-Finanzierung: Laut Semafor könnten Teile der rund 40 Mrd. $ schon diese Woche an Anleger gehen; die Schulden liegen in einer Zweckgesellschaft, SpaceX mietet die GPUs und hält sie aus der eigenen Bilanz (Semafor). Bloomberg-Stratege Cranfield nennt die SpaceX-Anleihe neben dem Anthropic-Börsengang einen Test für die KI-Stimmung (Bloomberg/swissinfo). SpaceX hat nichts bestätigt. Gesamtmarkt: Der Nvidia-Schwung verpufft zum US-Start. Nvidia lag vorbörslich zeitweise über 163 $, um 15:36 nur noch bei 155,99 $ (+0,3 %); der Nasdaq Composite steht +0,3 % (Yahoo). Laut Bloomberg schrumpften die Gewinne, nachdem Fed-Gouverneur Waller eine Zinserhöhung um 50 Basispunkte im Dezember ins Spiel brachte (Bloomberg/swissinfo, CNBC). Der Dax rutschte unter 26.000 Punkte und lag um 15:21 bei 25.936 (−0,4 %) (dpa-AFX, Yahoo). Heute noch: Fed-Protokoll 20:00, Williams 20:30, Anthropic-Preis nach US-Schluss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPX.DE (Stand Mi 18.11., 13:00 Xetra)",
-          "url": "https://finance.yahoo.com/quote/SPX.DE/"
-        },
-        {
-          "title": "Yahoo Finance: SPCX (Stand Mi 18.11., 13:17 vorbörslich)",
+          "title": "Yahoo Finance: SPCX (Stand Mi 18.11., 15:36 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "GuruFocus via Yahoo: SpaceX will rund 4 Mrd. $ für Nvidia-Chips einsammeln (18.11.)",
-          "url": "https://sg.finance.yahoo.com/news/spacex-wants-4-billion-investors-111930111.html"
+          "title": "Yahoo Finance: SPX.DE (Stand Mi 18.11., 15:18 Xetra)",
+          "url": "https://finance.yahoo.com/quote/SPX.DE/"
         },
         {
-          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %",
-          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+          "title": "Semafor: SpaceX-Chipfinanzierung über 40 Mrd. $ bleibt außerhalb der Bilanz (18.11.)",
+          "url": "https://www.semafor.com/article/11/18/2026/spacex-40-billion-chip-financing-to-stay-off-balance-sheet"
         },
         {
-          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 13:17 vorbörslich)",
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 15:36 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 13:02 Xetra)",
-          "url": "https://finance.yahoo.com/quote/NVD.DE/"
+          "title": "Yahoo Finance: Nasdaq Composite (Stand Mi 18.11., 15:36)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 13:07)",
-          "url": "https://finance.yahoo.com/quote/NQ=F/"
+          "title": "Bloomberg via swissinfo: US-Futures steigen nach Nvidia-Ausblick, Gewinne schrumpfen nach Waller (18.11., 14:35)",
+          "url": "https://www.swissinfo.ch/eng/stocks-lose-nvidia-led-momentum%2c-treasuries-rise%3a-markets-wrap/92397458"
         },
         {
-          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – etwas stabilisiert, Tech-Werte profitieren von Nvidia-Bericht (18.11., 12:10)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165246-aktien-frankfurt-etwas-stabilisiert-tech-werte-profitieren-von-nvidia-bericht-016.htm"
+          "title": "CNBC: Fed-Gouverneur Waller – Fed muss die Leute womöglich mit einer Erhöhung um einen halben Punkt „schocken“ (18.11.)",
+          "url": "https://www.cnbc.com/amp/2026/11/18/federal-reserve-governor-christopher-waller.html"
         },
         {
-          "title": "finanznachrichten (dts): Dax am Mittag auf Vortagesniveau – 26.000er-Marke hält (18.11., 12:42)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165537-dax-am-mittag-auf-vortagesniveau-26-000er-marke-haelt-003.htm"
-        },
-        {
-          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 13:02)",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – Dax rutscht unter 26.000 Punkte (18.11., 14:41)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70167366-aktien-frankfurt-dax-rutscht-unter-26-000-punkte-016.htm"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -17406,47 +17398,43 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Mi 13:30: Tesla liegt auf Xetra bei 349,25 € (+1,7 % zum Xetra-Schluss von 343,50 €), vorbörslich bei 383,39 $ (+0,9 % zum Schluss von 380,11 $) (Yahoo). Eine eigene neue Firmenmeldung gibt es nicht; die Aktie zieht mit der Tech-Erholung nach Nvidias Zahlen mit, ein Teil des Xetra-Plus ist Nachholen. Gegenwind von Analystenseite: China Merchants Securities International senkte am Mi das Kursziel von 441 auf 354 $ und bleibt bei „Neutral“; die Bank kürzt ihre Gewinnschätzungen für 2026 bis 2028 um 41 bis 53 %, wegen höherer Ausgaben und eines langsameren Cybercab-Hochlaufs (GMT Eight). Gesamtmarkt: Die Nvidia-Erholung trägt weiter, aber schwächer als am Morgen. Nvidia lag vorbörslich bei 160,37 $ (+3,2 % zum Schluss von 155,46 $), Xetra 145,56 € (+4,4 %); der Nasdaq-100-Future stand um 13:07 bei +0,8 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia). Der Dax gab den Morgengewinn bis Mittag ab und lag gegen 12:30 bei rund 26.065 Punkten (+0,1 %), gestützt von Infineon und Siemens Energy; der europäische Tech-Index erholte sich um etwa 1,5 % (dpa-AFX, dts). Heute noch: US-Baubeginne 14:30, Fed-Protokoll 20:00, Anthropic-Preis nach US-Schluss.",
+      "why": "Stand Mi 15:36: Tesla liegt in New York bei 381,63 $ (+0,4 % zum Schluss von 380,11 $), nachdem die Aktie direkt nach dem Start bis 389,27 $ (+2,4 %) gestiegen war; auf Xetra zuletzt 349,50 € (+1,7 %, vor allem Nachholen vom Vortag) (Yahoo). Eine neue Firmenmeldung gibt es nicht; seit Di-Abend liegt bei der SEC nur Wahlwerbung zur Hauptversammlung am 3.12. (X-Posts von Tesla und Optimus, VoteTesla.com) als Zusatzunterlage (SEC). Gegenwind bleibt das gesenkte Kursziel von China Merchants (441 → 354 $) (GMT Eight). Gesamtmarkt: Der Nvidia-Schwung verpufft zum US-Start. Nvidia lag vorbörslich zeitweise über 163 $, um 15:36 nur noch bei 155,99 $ (+0,3 %); der Nasdaq Composite steht +0,3 % (Yahoo). Laut Bloomberg schrumpften die Gewinne, nachdem Fed-Gouverneur Waller eine Zinserhöhung um 50 Basispunkte im Dezember ins Spiel brachte (Bloomberg/swissinfo, CNBC). Der Dax rutschte unter 26.000 Punkte und lag um 15:21 bei 25.936 (−0,4 %) (dpa-AFX, Yahoo). Heute noch: Fed-Protokoll 20:00, Williams 20:30, Anthropic-Preis nach US-Schluss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: TL0.DE (Stand Mi 18.11., 13:01 Xetra)",
+          "title": "Yahoo Finance: TSLA (Stand Mi 18.11., 15:36 Nasdaq)",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
+        },
+        {
+          "title": "Yahoo Finance: TL0.DE (Stand Mi 18.11., 15:17 Xetra)",
           "url": "https://finance.yahoo.com/quote/TL0.DE/"
         },
         {
-          "title": "Yahoo Finance: TSLA (Stand Mi 18.11., 13:17 vorbörslich)",
-          "url": "https://finance.yahoo.com/quote/TSLA/"
+          "title": "SEC: Tesla DEFA14A – Zusatzmaterial zur Hauptversammlung (17.11.)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926129146/tm267596d13_defa14a.htm"
         },
         {
           "title": "GMT Eight: China Merchants Securities International senkt Tesla-Kursziel von 441 auf 354 $, „Neutral“ (18.11.)",
           "url": "https://gmteight.com/flash/detail/1573796"
         },
         {
-          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %",
-          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 13:17 vorbörslich)",
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 15:36 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 13:02 Xetra)",
-          "url": "https://finance.yahoo.com/quote/NVD.DE/"
+          "title": "Yahoo Finance: Nasdaq Composite (Stand Mi 18.11., 15:36)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 13:07)",
-          "url": "https://finance.yahoo.com/quote/NQ=F/"
+          "title": "Bloomberg via swissinfo: US-Futures steigen nach Nvidia-Ausblick, Gewinne schrumpfen nach Waller (18.11., 14:35)",
+          "url": "https://www.swissinfo.ch/eng/stocks-lose-nvidia-led-momentum%2c-treasuries-rise%3a-markets-wrap/92397458"
         },
         {
-          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – etwas stabilisiert, Tech-Werte profitieren von Nvidia-Bericht (18.11., 12:10)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165246-aktien-frankfurt-etwas-stabilisiert-tech-werte-profitieren-von-nvidia-bericht-016.htm"
+          "title": "CNBC: Fed-Gouverneur Waller – Fed muss die Leute womöglich mit einer Erhöhung um einen halben Punkt „schocken“ (18.11.)",
+          "url": "https://www.cnbc.com/amp/2026/11/18/federal-reserve-governor-christopher-waller.html"
         },
         {
-          "title": "finanznachrichten (dts): Dax am Mittag auf Vortagesniveau – 26.000er-Marke hält (18.11., 12:42)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165537-dax-am-mittag-auf-vortagesniveau-26-000er-marke-haelt-003.htm"
-        },
-        {
-          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 13:02)",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – Dax rutscht unter 26.000 Punkte (18.11., 14:41)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70167366-aktien-frankfurt-dax-rutscht-unter-26-000-punkte-016.htm"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -28689,47 +28677,39 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Mi 13:30: Rocket Lab notiert in Stuttgart bei 51,10 € (+2,5 % zum Schluss von 49,85 €; der letzte Frankfurter Kurs ist von 10:08), vorbörslich in New York bei 56,40 $ (+2,5 % zum Schluss von 55,05 $) (Yahoo). Nach vier Verlusttagen erholt sich die Aktie mit Tech- und Raumfahrtwerten nach Nvidias Zahlen; eine eigene neue Meldung von Rocket Lab oder eine neue SEC-Meldung gibt es seit Di-Abend nicht. Für die Tagesfrage zählt der Nasdaq-Schluss heute gegen 55,05 $; vorbörslich liegt die Aktie darüber. Gesamtmarkt: Die Nvidia-Erholung trägt weiter, aber schwächer als am Morgen. Nvidia lag vorbörslich bei 160,37 $ (+3,2 % zum Schluss von 155,46 $), Xetra 145,56 € (+4,4 %); der Nasdaq-100-Future stand um 13:07 bei +0,8 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia). Der Dax gab den Morgengewinn bis Mittag ab und lag gegen 12:30 bei rund 26.065 Punkten (+0,1 %), gestützt von Infineon und Siemens Energy; der europäische Tech-Index erholte sich um etwa 1,5 % (dpa-AFX, dts). Heute noch: US-Baubeginne 14:30, Fed-Protokoll 20:00, Anthropic-Preis nach US-Schluss.",
+      "why": "Stand Mi 15:36: Rocket Lab fällt in New York auf 54,40 $ (−1,2 % zum Schluss von 55,05 $), nach einem Start bis 56,20 $; vorbörslich lag die Aktie noch bei rund +2,5 %. In Stuttgart zuletzt 50,80 € (+1,9 %) (Yahoo). Eine neue Firmen- oder SEC-Meldung gibt es nicht; Rocket Lab wirbt nur für seinen Stand auf der Space Tech Expo in Bremen (X). Für die Tagesfrage zählt der Nasdaq-Schluss gegen 55,05 $ – derzeit liegt die Aktie darunter. Gesamtmarkt: Der Nvidia-Schwung verpufft zum US-Start. Nvidia lag vorbörslich zeitweise über 163 $, um 15:36 nur noch bei 155,99 $ (+0,3 %); der Nasdaq Composite steht +0,3 % (Yahoo). Laut Bloomberg schrumpften die Gewinne, nachdem Fed-Gouverneur Waller eine Zinserhöhung um 50 Basispunkte im Dezember ins Spiel brachte (Bloomberg/swissinfo, CNBC). Der Dax rutschte unter 26.000 Punkte und lag um 15:21 bei 25.936 (−0,4 %) (dpa-AFX, Yahoo). Heute noch: Fed-Protokoll 20:00, Williams 20:30, Anthropic-Preis nach US-Schluss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: 6RJ0.SG (Stand Mi 18.11., 13:02 Stuttgart)",
-          "url": "https://finance.yahoo.com/quote/6RJ0.SG/"
-        },
-        {
-          "title": "Yahoo Finance: RKLB (Stand Mi 18.11., 13:17 vorbörslich)",
+          "title": "Yahoo Finance: RKLB (Stand Mi 18.11., 15:36 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "SEC EDGAR: Rocket Lab-Einreichungen",
-          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001819994&type=&dateb=&owner=include&count=40"
+          "title": "Yahoo Finance: 6RJ0.SG (Stand Mi 18.11., 15:16 Stuttgart)",
+          "url": "https://finance.yahoo.com/quote/6RJ0.SG/"
         },
         {
-          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %",
-          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+          "title": "@RocketLab auf X (18.11., 14:56): Space Tech Expo Europe in Bremen",
+          "url": "https://x.com/RocketLab/status/2123052731321758083"
         },
         {
-          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 13:17 vorbörslich)",
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 15:36 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 13:02 Xetra)",
-          "url": "https://finance.yahoo.com/quote/NVD.DE/"
+          "title": "Yahoo Finance: Nasdaq Composite (Stand Mi 18.11., 15:36)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 13:07)",
-          "url": "https://finance.yahoo.com/quote/NQ=F/"
+          "title": "Bloomberg via swissinfo: US-Futures steigen nach Nvidia-Ausblick, Gewinne schrumpfen nach Waller (18.11., 14:35)",
+          "url": "https://www.swissinfo.ch/eng/stocks-lose-nvidia-led-momentum%2c-treasuries-rise%3a-markets-wrap/92397458"
         },
         {
-          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – etwas stabilisiert, Tech-Werte profitieren von Nvidia-Bericht (18.11., 12:10)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165246-aktien-frankfurt-etwas-stabilisiert-tech-werte-profitieren-von-nvidia-bericht-016.htm"
+          "title": "CNBC: Fed-Gouverneur Waller – Fed muss die Leute womöglich mit einer Erhöhung um einen halben Punkt „schocken“ (18.11.)",
+          "url": "https://www.cnbc.com/amp/2026/11/18/federal-reserve-governor-christopher-waller.html"
         },
         {
-          "title": "finanznachrichten (dts): Dax am Mittag auf Vortagesniveau – 26.000er-Marke hält (18.11., 12:42)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165537-dax-am-mittag-auf-vortagesniveau-26-000er-marke-haelt-003.htm"
-        },
-        {
-          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 13:02)",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – Dax rutscht unter 26.000 Punkte (18.11., 14:41)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70167366-aktien-frankfurt-dax-rutscht-unter-26-000-punkte-016.htm"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -40244,51 +40224,35 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Mi 13:30: Marvell liegt auf Xetra bei 139,50 € (+7,2 % zum Xetra-Schluss von 130,16 €), vorbörslich bei 152,94 $ (+2,8 % zum Schluss von 148,74 $) (Yahoo). Das große Xetra-Plus ist zum Teil Nachholen: Am Di schloss Xetra vor der US-Erholung, in New York drehte Marvell danach noch auf +2,3 %. Dazu kommt der Schub für Chipwerte nach Nvidias Zahlen, auch Micron, AMD und Broadcom steigen vorbörslich (TipRanks). Laut SEC-Meldung verkaufte Chef Matthew Murphy am 16.11. 7.500 Aktien nach einem vorab festgelegten 10b5-1-Plan. Zahlen am Di 1.12. Gesamtmarkt: Die Nvidia-Erholung trägt weiter, aber schwächer als am Morgen. Nvidia lag vorbörslich bei 160,37 $ (+3,2 % zum Schluss von 155,46 $), Xetra 145,56 € (+4,4 %); der Nasdaq-100-Future stand um 13:07 bei +0,8 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia). Der Dax gab den Morgengewinn bis Mittag ab und lag gegen 12:30 bei rund 26.065 Punkten (+0,1 %), gestützt von Infineon und Siemens Energy; der europäische Tech-Index erholte sich um etwa 1,5 % (dpa-AFX, dts). Heute noch: US-Baubeginne 14:30, Fed-Protokoll 20:00, Anthropic-Preis nach US-Schluss.",
+      "why": "Stand Mi 15:36: Marvell dreht in New York ins Minus und liegt bei 145,99 $ (−1,8 % zum Schluss von 148,74 $), nach 152,23 $ kurz nach dem Start und rund +2,8 % vorbörslich. Auf Xetra steht dagegen 138,00 € (+6,0 %), weil Xetra die US-Erholung vom Dienstag nachholt (Yahoo). Eine neue Firmenmeldung gibt es nicht; Marvell folgt dem nachlassenden Nvidia-Schwung. Zahlen am Di 1.12. Gesamtmarkt: Der Nvidia-Schwung verpufft zum US-Start. Nvidia lag vorbörslich zeitweise über 163 $, um 15:36 nur noch bei 155,99 $ (+0,3 %); der Nasdaq Composite steht +0,3 % (Yahoo). Laut Bloomberg schrumpften die Gewinne, nachdem Fed-Gouverneur Waller eine Zinserhöhung um 50 Basispunkte im Dezember ins Spiel brachte (Bloomberg/swissinfo, CNBC). Der Dax rutschte unter 26.000 Punkte und lag um 15:21 bei 25.936 (−0,4 %) (dpa-AFX, Yahoo). Heute noch: Fed-Protokoll 20:00, Williams 20:30, Anthropic-Preis nach US-Schluss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: 9MW.DE (Stand Mi 18.11., 13:02 Xetra)",
-          "url": "https://finance.yahoo.com/quote/9MW.DE/"
-        },
-        {
-          "title": "Yahoo Finance: MRVL (Stand Mi 18.11., 13:16 vorbörslich)",
+          "title": "Yahoo Finance: MRVL (Stand Mi 18.11., 15:36 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "TipRanks: Chipwerte wie Micron, AMD und Broadcom steigen vorbörslich (18.11.)",
-          "url": "https://www.tipranks.com/news/why-chip-stocks-micron-amd-and-broadcom-are-rising-in-pre-market-trading-november-18"
+          "title": "Yahoo Finance: 9MW.DE (Stand Mi 18.11., 15:20 Xetra)",
+          "url": "https://finance.yahoo.com/quote/9MW.DE/"
         },
         {
-          "title": "SEC Form 4: Matthew J. Murphy (MRVL), Abgabe von 7.500 Aktien am 16.11.2026",
-          "url": "https://www.sec.gov/Archives/edgar/data/1835632/000162828026074618/wk-form4_1794960225.xml"
-        },
-        {
-          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %",
-          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 13:17 vorbörslich)",
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 15:36 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 13:02 Xetra)",
-          "url": "https://finance.yahoo.com/quote/NVD.DE/"
+          "title": "Yahoo Finance: Nasdaq Composite (Stand Mi 18.11., 15:36)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 13:07)",
-          "url": "https://finance.yahoo.com/quote/NQ=F/"
+          "title": "Bloomberg via swissinfo: US-Futures steigen nach Nvidia-Ausblick, Gewinne schrumpfen nach Waller (18.11., 14:35)",
+          "url": "https://www.swissinfo.ch/eng/stocks-lose-nvidia-led-momentum%2c-treasuries-rise%3a-markets-wrap/92397458"
         },
         {
-          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – etwas stabilisiert, Tech-Werte profitieren von Nvidia-Bericht (18.11., 12:10)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165246-aktien-frankfurt-etwas-stabilisiert-tech-werte-profitieren-von-nvidia-bericht-016.htm"
+          "title": "CNBC: Fed-Gouverneur Waller – Fed muss die Leute womöglich mit einer Erhöhung um einen halben Punkt „schocken“ (18.11.)",
+          "url": "https://www.cnbc.com/amp/2026/11/18/federal-reserve-governor-christopher-waller.html"
         },
         {
-          "title": "finanznachrichten (dts): Dax am Mittag auf Vortagesniveau – 26.000er-Marke hält (18.11., 12:42)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165537-dax-am-mittag-auf-vortagesniveau-26-000er-marke-haelt-003.htm"
-        },
-        {
-          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 13:02)",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
+          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – Dax rutscht unter 26.000 Punkte (18.11., 14:41)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70167366-aktien-frankfurt-dax-rutscht-unter-26-000-punkte-016.htm"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",

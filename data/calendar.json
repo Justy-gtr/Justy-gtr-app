@@ -113,71 +113,6 @@
       ]
     },
     {
-      "id": "evt-us-einzelhandel-okt",
-      "title": "USA: Einzelhandelsumsätze Oktober (veröffentlicht)",
-      "date": "2026-11-17",
-      "time": "14:30",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "makro",
-      "company": null,
-      "tickers": [
-        "TSLA",
-        "SPCX",
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Am Di 17.11. um 8:30 Uhr ET (14:30 Berlin) kommen die US-Einzelhandelsumsätze für Oktober, am selben Tag Industrieproduktion und abends die Nvidia-Zahlen (CNBC-Terminkalender). Starke Zahlen würden die erwartete Zinserhöhung der Fed im Dezember stützen und teure Wachstumswerte wie TSLA, SPCX und RKLB eher belasten. 95 %, weil es ein fester Termin des Handelsministeriums ist. Stand Di 06:30: Prognose laut Dow-Jones-Tagesvorschau +0,2 % zum Vormonat (zuvor +0,8 %), ohne Autos +0,4 % (zuvor +0,9 %); um 15:15 folgt die Industrieproduktion. 95 % unverändert. Stand Di 14:30: Veröffentlicht. Die Umsätze stiegen im Oktober um 0,2 % zum Vormonat auf 748,2 Mrd. $ – genau wie erwartet; ohne Autos +0,6 % (Prognose +0,4 %), bei den Autohändlern −1,6 %; zum Vorjahr +6,8 %. Der September bleibt bei +0,8 %, ohne Autos auf +1,1 % nach oben revidiert. Laut Census ist der Anstieg im Oktober statistisch nicht sicher von null verschieden (Census). Keine Überraschung, die das Bild zur Fed-Sitzung im Dezember stark verschiebt. 100 %, weil veröffentlicht.",
-      "example": false,
-      "sources": [
-        {
-          "title": "CNBC: Wochenausblick 16.–20.11. mit Terminkalender (13.11.)",
-          "url": "https://www.cnbc.com/2026/11/13/stock-market-next-week-outlook-for-nov-16-20-2026.html"
-        },
-        {
-          "title": "MarketScreener (Dow Jones): Tagesvorschau Dienstag 17.11.",
-          "url": "https://de.marketscreener.com/boerse-nachrichten/tagesvorschau-dienstag-17-november-ce785edfde89f322"
-        },
-        {
-          "title": "U.S. Census Bureau: Advance Monthly Sales for Retail and Food Services, October 2026 (17.11.)",
-          "url": "https://www.census.gov/retail/marts/www/marts_current.pdf"
-        }
-      ]
-    },
-    {
-      "id": "evt-us-industrieproduktion-okt",
-      "title": "USA: Industrieproduktion Oktober (veröffentlicht)",
-      "date": "2026-11-17",
-      "time": "15:15",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "makro",
-      "company": null,
-      "tickers": [
-        "TSLA",
-        "MRVL"
-      ],
-      "probabilityPct": 100,
-      "impact": "niedrig",
-      "reasoning": "Die US-Notenbank veröffentlicht die Industrieproduktion für Oktober am Di 17.11. um 9:15 Uhr New Yorker Zeit, also 15:15 Berlin (Fed, Finance Calendar); erwartet war laut Investing.com 0,0 % zum Vormonat nach +0,7 % im September. Veröffentlicht: Die Produktion sank im Oktober um 0,4 %. Grund ist vor allem der Einbruch bei Strom- und Gasversorgern (−4,3 %) und im Bergbau (−0,8 %); die Industrie selbst legte um 0,3 % zu, ohne Autos und Autoteile aber −0,1 %. Der August wurde auf −0,1 % gesenkt. Die Auslastung fiel auf 76,4 %, 3,0 Punkte unter dem langjährigen Schnitt; zum Vorjahr liegt die Produktion 2,1 % höher. Ausrüstungsgüter für Unternehmen +1,0 % (Fed). Schwächer als erwartet, aber getrieben vom Energieteil – für TSLA und MRVL zählt eher das Plus bei Industrie und Ausrüstung. Erst nach Veröffentlichung eingetragen, deshalb 100 % und nicht für die Trefferquote gewertet.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Federal Reserve: G.17 Industrial Production and Capacity Utilization, Oktober 2026 (17.11.)",
-          "url": "https://www.federalreserve.gov/releases/g17/current/default.htm"
-        },
-        {
-          "title": "Investing.com: Wirtschaftskalender US-Industrieproduktion (Prognose Okt. 0,0 %)",
-          "url": "https://www.investing.com/economic-calendar/--161"
-        },
-        {
-          "title": "Finance Calendar: US Industrial Production Oktober – Di 17.11., 09:15 New York",
-          "url": "https://www.financecalendar.com/event/us-industrial-production-november-2026/"
-        }
-      ]
-    },
-    {
       "id": "evt-faa-starbase-anhoerung",
       "title": "FAA: Online-Anhörungen zu bis zu 100 (später 456) Starship-Starts pro Jahr ab Starbase (laufen)",
       "date": "2026-11-17",
@@ -690,7 +625,7 @@
       ],
       "probabilityPct": 98,
       "impact": "mittel",
-      "reasoning": "Die Fed veröffentlicht am Mi 18.11. um 14:00 Uhr ET (20:00 Berlin) das Protokoll ihrer Sitzung vom 27./28. Oktober (Fed-Terminkalender). Anleger suchen darin Hinweise, wie viele Mitglieder schon im Oktober für eine Zinserhöhung waren und wie schnell es danach weitergehen könnte. Der Markt rechnet laut CME FedWatch mit 91,9 % mit einer Erhöhung um 25 Basispunkte im Dezember (CNBC, 11.11.); dpa-AFX nennt Zinserhöhungen von Fed und EZB im Dezember „so gut wie sicher“. Ein harter Ton im Protokoll würde teure Wachstumswerte wie SPCX, TSLA und RKLB belasten. Es ist derselbe Abend, an dem die Nvidia-Zahlen vom Vortag noch nachwirken. Meine 98 % gelten dem Termin selbst – die Fed hält solche Termine praktisch immer ein. Stand Di 18:10: St.-Louis-Fed-Chef Alberto Musalem sagt, bis Frühjahr 2027 seien wohl mehrere Zinserhöhungen nötig – rechnerisch bis zu vier, bei jeder Sitzung von Dezember bis April; er stimmt in dieser Zeit aber nicht mit ab (CNBC). Das verstärkt die Zinssorgen vor dem Protokoll. 98 % unverändert. Stand Mi 13:30: Am selben Abend sprechen drei Fed-Vertreter: Michael Barr um 19:35, New-York-Fed-Chef John Williams um 20:30 und Neel Kashkari um 22:15 Berlin, Kashkari zu KI und Geldpolitik (TD Economics, Econoday). Vorher um 14:30 kommen die US-Baubeginne. 98 % unverändert.",
+      "reasoning": "Die Fed veröffentlicht am Mi 18.11. um 14:00 Uhr ET (20:00 Berlin) das Protokoll ihrer Sitzung vom 27./28. Oktober (Fed-Terminkalender). Anleger suchen darin Hinweise, wie viele Mitglieder schon im Oktober für eine Zinserhöhung waren und wie schnell es danach weitergehen könnte. Der Markt rechnet laut CME FedWatch mit 91,9 % mit einer Erhöhung um 25 Basispunkte im Dezember (CNBC, 11.11.); dpa-AFX nennt Zinserhöhungen von Fed und EZB im Dezember „so gut wie sicher“. Ein harter Ton im Protokoll würde teure Wachstumswerte wie SPCX, TSLA und RKLB belasten. Es ist derselbe Abend, an dem die Nvidia-Zahlen vom Vortag noch nachwirken. Meine 98 % gelten dem Termin selbst – die Fed hält solche Termine praktisch immer ein. Stand Di 18:10: St.-Louis-Fed-Chef Alberto Musalem sagt, bis Frühjahr 2027 seien wohl mehrere Zinserhöhungen nötig – rechnerisch bis zu vier, bei jeder Sitzung von Dezember bis April; er stimmt in dieser Zeit aber nicht mit ab (CNBC). Das verstärkt die Zinssorgen vor dem Protokoll. 98 % unverändert. Stand Mi 13:30: Am selben Abend sprechen drei Fed-Vertreter: Michael Barr um 19:35, New-York-Fed-Chef John Williams um 20:30 und Neel Kashkari um 22:15 Berlin, Kashkari zu KI und Geldpolitik (TD Economics, Econoday). Vorher um 14:30 kommen die US-Baubeginne. 98 % unverändert. Stand Mi 15:30: Zusätzlich spricht San-Francisco-Fed-Chefin Mary Daly schon um 18:15 Berlin, auf einer Tagung zu Frauen im Bankwesen; letzte Woche erwartete sie weitere Zinserhöhungen (Newsquawk). Im Protokoll zählt vor allem, wie viele Mitglieder neben Cook und Hammack schon im Oktober eine Erhöhung wollten und ob über 50 Basispunkte gesprochen wurde. Der Markt preist eine Erhöhung um 25 Basispunkte im Dezember als fast sicher, für 50 Basispunkte nur rund 8 % (Admiral Markets). Das Protokoll stammt von vor den heißen Oktober-Inflationsdaten und könnte daher als überholt gelten; Williams um 20:30 ist der wichtigere Redner (Newsquawk). 98 % unverändert. Neu Mi 14:00: Fed-Gouverneur Christopher Waller sagte bei CNBC, die Inflation laufe in die falsche Richtung und verbreitere sich; die Fed solle im Dezember um 50 Basispunkte erhöhen oder klar schnellere Schritte ankündigen (CNBC, Investing.com). Damit steigt die Messlatte für das Protokoll und für Williams am Abend.",
       "example": false,
       "sources": [
         {
@@ -720,6 +655,22 @@
         {
           "title": "Global Trade Review/Econoday: Wirtschaftskalender Mittwoch 18.11.",
           "url": "https://www.globaltradereview.com/news/all/6afd772aed55447fdc10e461"
+        },
+        {
+          "title": "Newsquawk: Primer – Fedspeak 18.11. (Daly, Barr, Williams, Kashkari) und Protokoll",
+          "url": "https://www.newsquawk.com/headlines/primer---todays-fedspeak-18th-november-2026-includes-daly-barr-williams-kashkari-fomc-meeting-minutes-are-also-released"
+        },
+        {
+          "title": "Admiral Markets: FOMC-Protokoll 18.11. – Zeit und worauf es ankommt",
+          "url": "https://admiralmarkets.com/analytics/traders-blog/fomc-minutes-november-2026"
+        },
+        {
+          "title": "CNBC: Fed-Gouverneur Waller – Fed muss die Leute womöglich mit einer Erhöhung um einen halben Punkt „schocken“ (18.11.)",
+          "url": "https://www.cnbc.com/amp/2026/11/18/federal-reserve-governor-christopher-waller.html"
+        },
+        {
+          "title": "Investing.com: Waller warnt vor sich verschärfender Inflation, bringt 50 Basispunkte im Dezember ins Spiel (18.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/feds-waller-warns-inflation-is-worsening-floats-50basispoint-december-hike-5035893"
         }
       ]
     },
@@ -736,9 +687,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 92,
+      "probabilityPct": 95,
       "impact": "mittel",
-      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms. Stand Mi 07:00: Fidelity nennt für Privatkunden Zeichnungsende Di 17.11. 16:00 ET (22:00 Berlin) und die Preisfestsetzung am Abend des 18.11.; das stützt den Handelsstart am 19.11. 85 % unverändert. Stand Mi 09:50: Laut FT wollen die Konsortialbanken (Goldman Sachs, Morgan Stanley) wegen hoher Nachfrage den Preis über die Spanne von 70–78 $ heben, die Bewertung läge dann bei 1,5 Bio. $ oder mehr. Das stützt den Termin; 85 % unverändert. Stand Mi 12:55: Der TSMC-Verwaltungsrat hat je 500 Mio. $ Investition in Anthropic und OpenAI genehmigt (Dow Jones). Stützt die Nachfrage; 85 % unverändert. Stand Mi 15:00: Auf X verbreitet sich eine unbestätigte Mitschrift (Konto @jukan05), wonach Anthropic Analysten gesagt habe, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Weder Anthropic noch SpaceX haben das bestätigt. Für den Börsentermin ändert das nichts; 85 % unverändert. Stand Mi 16:00: Die X-Mitschrift zum SpaceX-Vertrag ist weiter unbestätigt; weder Anthropic noch SpaceX haben sich geäußert, eine neue SEC-Meldung gibt es nicht. Laut Anthropic-Prospekt sind die Verträge erst nach Januar bzw. März 2027 mit 90 Tagen Frist kündbar (S-1, TokenPost). 85 % unverändert. Stand Mi 18:00: Die X-Mitschrift (@jukan05), Anthropic wolle den SpaceX-Rechenvertrag nicht über Mitte 2027 hinaus verlängern, ist weiter weder bestätigt noch dementiert; auch TeslaNorth schreibt, keine der beiden Firmen habe sich geäußert. 85 % unverändert. Stand Mi 20:00: Musk antwortete um 18:40 auf X auf die Mitschrift: „Wir nehmen die Rechenleistung gern zurück. Kein Problem. Aber ich glaube, das Gegenteil wird passieren.“ Das ist eine Reaktion, keine Bestätigung; Anthropic selbst hat sich weiter nicht geäußert (X, Wccftech). 85 % unverändert. Stand Mi 22:00: Weiter keine Stellungnahme von Anthropic zur Mitschrift. Musk schrieb um 20:01 nach, SpaceX könne im nächsten Jahr etwa die Hälfte der Gigawatt an „tatsächlich nutzbarer“ Rechenleistung stellen. SPCX schloss −2,3 % bei 139,75 $ (X, TeslaNorth, Yahoo). Für den Börsengang selbst ändert das nichts: 85 % unverändert. Stand Do 05:10: Weiter keine Stellungnahme von Anthropic oder SpaceX zur X-Mitschrift über das Vertragsende Mitte 2027 (TeslaNorth). Für den Börsengang selbst neu: der Nvidia-Chefstreit drückt die KI-Werte nachbörslich, das Buch gilt laut früheren Berichten aber als gedeckt. 85 % unverändert. Stand So 08:30: Das Buch ist laut Bloomberg etwa sechsfach überzeichnet, bestehende Geldgeber werden bei der Zuteilung bevorzugt (Reuters). Preisspanne 70–78 $, Preis am 18.11., Handel ab 19.11. unter dem Kürzel ANT (Yonhap Infomax, Reuters). Die dpa-AFX-Wochenvorschau nennt den Börsengang „voraussichtlich am Donnerstag“ (boersennews.de). Für SpaceX wichtig, weil Anthropic Rechenleistung bei SpaceX SI mietet. 85 % unverändert: Nachfrage stark, Restrisiko bleibt eine Verschiebung, falls die Nvidia-Zahlen am Di den KI-Markt stark drücken. Stand So 13:00: Die Spanne bleibt bei 70 bis 78 $; AMD, Broadcom, Google, Micron, Microsoft, Nvidia und TSMC zeichnen zusammen 26 Mrd. $ zum Ausgabepreis. Anthropic schrieb in den ersten neun Monaten 2026 einen Nettoverlust von 104 Mrd. $ und hat Ausgabezusagen über 900 Mrd. $ – CNBC nennt den Börsengang deshalb einen Prüfstein für die ganze KI-Branche. 85 % unverändert. Stand Mo 08:30: Der Zeitplan steht laut Reuters weiter: Preis am Mi, Handel ab Do (Investing.com/Reuters Morning Bid über MLQ). Der Chip-Ausverkauf in Asien erhöht das Risiko einer Verschiebung nur leicht, solange die Nvidia-Zahlen am Di nicht stark enttäuschen. 85 % unverändert. Stand Mo 16:00: Laut Bloomberg ist das Orderbuch fast siebenfach gedeckt, stärker als bei SpaceX zum selben Zeitpunkt; es soll am Di schließen, Preis am Mi, Handel ab Do unter ANT (The Next Web). 85 % unverändert. Stand Mo 22:00: Preisspanne weiter 70–78 $ je Aktie, 825 Mio. Aktien, Preisfestsetzung am Mi 18.11., Handel ab Do 19.11. unter dem Kürzel ANT (CNBC). dpa-AFX nennt den Börsengang einen Grund für die Unsicherheit im Tech-Sektor. 85 % unverändert. Stand Di 18:10: Laut mehreren Quellen von CNBC dürfte Anthropic den Preis über der Spanne von 70–78 $ festlegen; laut Bloomberg am oberen Ende oder darüber. Das Orderbuch schließt heute um 16:00 Uhr New Yorker Zeit (22:00 Berlin), Handel ab Do unter ANT (CNBC, Capital Brief). 85 % unverändert. Stand Di 20:20: Laut Wall Street Journal will Anthropic die Aktien über 80 $ ausgeben, das wären rund 1,5–1,6 Bio. $ Bewertung (bisher bis 1,33 Bio. $ am oberen Ende); die Wagnisgeldgeber Bessemer, Menlo und Accel wollen sogar zukaufen. Endgültig festgelegt wird der Preis erst am Mi und hängt laut WSJ auch von der Reaktion auf die Nvidia-Zahlen ab; Handel ab Do unter ANT (Stocktwits/Yahoo). Ein offizieller Preis liegt noch nicht vor. 85 % unverändert. Stand Di 22:20: Laut CNBC-Quellen dürfte Anthropic den Preis über der Spanne von 70–78 $ festlegen, die Nachfrage soll ein Vielfaches der angebotenen Aktien betragen. Ein offizieller Ausgabepreis liegt noch nicht vor; Preisfestsetzung Mi, Handel ab Do unter ANT (CNBC). Microsoft stellte am Di eigene KI-Modelle für Programmierung und Cybersicherheit vor (MAI Code 2), als Konkurrenz zu Anthropic und OpenAI (Economic Times/Reuters). 85 % unverändert. Stand Mi 11:50: Laut Bloomberg steht Anthropic kurz vor der Preisfestsetzung; der Preis soll am oberen Ende der Spanne oder darüber liegen, das Buch ist laut Bankern fast siebenfach überzeichnet. Angeboten werden 825 Mio. Aktien (Bloomberg Law, CNBC). Der Preis kommt nach US-Schluss am Mi, Handel ab Do unter ANT. Nvidias Zahlen haben die Tech-Stimmung am Mi früh etwas beruhigt (dpa-AFX). 92 statt 85 %: Bücher geschlossen, Nachfrage hoch, Markt stabiler; Restrisiko ist eine kurzfristige Verschiebung. Stand Mi 13:30: Noch kein Ausgabepreis. Laut Börsenprospekt lag der Umsatz im 3. Quartal bei 17 Mrd. $ (Vorjahr 1,4 Mrd. $), die hochgerechnete Jahresrate Ende Oktober bei rund 81 Mrd. $. Am oberen Ende der Spanne brächte der Börsengang rund 64,4 Mrd. $ und eine Bewertung von etwa 1,4 Billionen $ (RTÉ). 92 % unverändert.",
+      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms. Stand Mi 07:00: Fidelity nennt für Privatkunden Zeichnungsende Di 17.11. 16:00 ET (22:00 Berlin) und die Preisfestsetzung am Abend des 18.11.; das stützt den Handelsstart am 19.11. 85 % unverändert. Stand Mi 09:50: Laut FT wollen die Konsortialbanken (Goldman Sachs, Morgan Stanley) wegen hoher Nachfrage den Preis über die Spanne von 70–78 $ heben, die Bewertung läge dann bei 1,5 Bio. $ oder mehr. Das stützt den Termin; 85 % unverändert. Stand Mi 12:55: Der TSMC-Verwaltungsrat hat je 500 Mio. $ Investition in Anthropic und OpenAI genehmigt (Dow Jones). Stützt die Nachfrage; 85 % unverändert. Stand Mi 15:00: Auf X verbreitet sich eine unbestätigte Mitschrift (Konto @jukan05), wonach Anthropic Analysten gesagt habe, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Weder Anthropic noch SpaceX haben das bestätigt. Für den Börsentermin ändert das nichts; 85 % unverändert. Stand Mi 16:00: Die X-Mitschrift zum SpaceX-Vertrag ist weiter unbestätigt; weder Anthropic noch SpaceX haben sich geäußert, eine neue SEC-Meldung gibt es nicht. Laut Anthropic-Prospekt sind die Verträge erst nach Januar bzw. März 2027 mit 90 Tagen Frist kündbar (S-1, TokenPost). 85 % unverändert. Stand Mi 18:00: Die X-Mitschrift (@jukan05), Anthropic wolle den SpaceX-Rechenvertrag nicht über Mitte 2027 hinaus verlängern, ist weiter weder bestätigt noch dementiert; auch TeslaNorth schreibt, keine der beiden Firmen habe sich geäußert. 85 % unverändert. Stand Mi 20:00: Musk antwortete um 18:40 auf X auf die Mitschrift: „Wir nehmen die Rechenleistung gern zurück. Kein Problem. Aber ich glaube, das Gegenteil wird passieren.“ Das ist eine Reaktion, keine Bestätigung; Anthropic selbst hat sich weiter nicht geäußert (X, Wccftech). 85 % unverändert. Stand Mi 22:00: Weiter keine Stellungnahme von Anthropic zur Mitschrift. Musk schrieb um 20:01 nach, SpaceX könne im nächsten Jahr etwa die Hälfte der Gigawatt an „tatsächlich nutzbarer“ Rechenleistung stellen. SPCX schloss −2,3 % bei 139,75 $ (X, TeslaNorth, Yahoo). Für den Börsengang selbst ändert das nichts: 85 % unverändert. Stand Do 05:10: Weiter keine Stellungnahme von Anthropic oder SpaceX zur X-Mitschrift über das Vertragsende Mitte 2027 (TeslaNorth). Für den Börsengang selbst neu: der Nvidia-Chefstreit drückt die KI-Werte nachbörslich, das Buch gilt laut früheren Berichten aber als gedeckt. 85 % unverändert. Stand So 08:30: Das Buch ist laut Bloomberg etwa sechsfach überzeichnet, bestehende Geldgeber werden bei der Zuteilung bevorzugt (Reuters). Preisspanne 70–78 $, Preis am 18.11., Handel ab 19.11. unter dem Kürzel ANT (Yonhap Infomax, Reuters). Die dpa-AFX-Wochenvorschau nennt den Börsengang „voraussichtlich am Donnerstag“ (boersennews.de). Für SpaceX wichtig, weil Anthropic Rechenleistung bei SpaceX SI mietet. 85 % unverändert: Nachfrage stark, Restrisiko bleibt eine Verschiebung, falls die Nvidia-Zahlen am Di den KI-Markt stark drücken. Stand So 13:00: Die Spanne bleibt bei 70 bis 78 $; AMD, Broadcom, Google, Micron, Microsoft, Nvidia und TSMC zeichnen zusammen 26 Mrd. $ zum Ausgabepreis. Anthropic schrieb in den ersten neun Monaten 2026 einen Nettoverlust von 104 Mrd. $ und hat Ausgabezusagen über 900 Mrd. $ – CNBC nennt den Börsengang deshalb einen Prüfstein für die ganze KI-Branche. 85 % unverändert. Stand Mo 08:30: Der Zeitplan steht laut Reuters weiter: Preis am Mi, Handel ab Do (Investing.com/Reuters Morning Bid über MLQ). Der Chip-Ausverkauf in Asien erhöht das Risiko einer Verschiebung nur leicht, solange die Nvidia-Zahlen am Di nicht stark enttäuschen. 85 % unverändert. Stand Mo 16:00: Laut Bloomberg ist das Orderbuch fast siebenfach gedeckt, stärker als bei SpaceX zum selben Zeitpunkt; es soll am Di schließen, Preis am Mi, Handel ab Do unter ANT (The Next Web). 85 % unverändert. Stand Mo 22:00: Preisspanne weiter 70–78 $ je Aktie, 825 Mio. Aktien, Preisfestsetzung am Mi 18.11., Handel ab Do 19.11. unter dem Kürzel ANT (CNBC). dpa-AFX nennt den Börsengang einen Grund für die Unsicherheit im Tech-Sektor. 85 % unverändert. Stand Di 18:10: Laut mehreren Quellen von CNBC dürfte Anthropic den Preis über der Spanne von 70–78 $ festlegen; laut Bloomberg am oberen Ende oder darüber. Das Orderbuch schließt heute um 16:00 Uhr New Yorker Zeit (22:00 Berlin), Handel ab Do unter ANT (CNBC, Capital Brief). 85 % unverändert. Stand Di 20:20: Laut Wall Street Journal will Anthropic die Aktien über 80 $ ausgeben, das wären rund 1,5–1,6 Bio. $ Bewertung (bisher bis 1,33 Bio. $ am oberen Ende); die Wagnisgeldgeber Bessemer, Menlo und Accel wollen sogar zukaufen. Endgültig festgelegt wird der Preis erst am Mi und hängt laut WSJ auch von der Reaktion auf die Nvidia-Zahlen ab; Handel ab Do unter ANT (Stocktwits/Yahoo). Ein offizieller Preis liegt noch nicht vor. 85 % unverändert. Stand Di 22:20: Laut CNBC-Quellen dürfte Anthropic den Preis über der Spanne von 70–78 $ festlegen, die Nachfrage soll ein Vielfaches der angebotenen Aktien betragen. Ein offizieller Ausgabepreis liegt noch nicht vor; Preisfestsetzung Mi, Handel ab Do unter ANT (CNBC). Microsoft stellte am Di eigene KI-Modelle für Programmierung und Cybersicherheit vor (MAI Code 2), als Konkurrenz zu Anthropic und OpenAI (Economic Times/Reuters). 85 % unverändert. Stand Mi 11:50: Laut Bloomberg steht Anthropic kurz vor der Preisfestsetzung; der Preis soll am oberen Ende der Spanne oder darüber liegen, das Buch ist laut Bankern fast siebenfach überzeichnet. Angeboten werden 825 Mio. Aktien (Bloomberg Law, CNBC). Der Preis kommt nach US-Schluss am Mi, Handel ab Do unter ANT. Nvidias Zahlen haben die Tech-Stimmung am Mi früh etwas beruhigt (dpa-AFX). 92 statt 85 %: Bücher geschlossen, Nachfrage hoch, Markt stabiler; Restrisiko ist eine kurzfristige Verschiebung. Stand Mi 13:30: Noch kein Ausgabepreis. Laut Börsenprospekt lag der Umsatz im 3. Quartal bei 17 Mrd. $ (Vorjahr 1,4 Mrd. $), die hochgerechnete Jahresrate Ende Oktober bei rund 81 Mrd. $. Am oberen Ende der Spanne brächte der Börsengang rund 64,4 Mrd. $ und eine Bewertung von etwa 1,4 Billionen $ (RTÉ). 92 % unverändert. Stand Mi 15:30: Offiziell gilt weiter die Spanne 70–78 $ für 825 Mio. Aktien aus dem 3. S-1-Nachtrag vom 17.11.; laut Bloomberg ist das Angebot fast siebenfach überzeichnet, laut WSJ wird ein Preis über 80 $ erwartet (Invezz). Der Preis kommt heute nach US-Schluss, Handel unter „ANT“ ab Do (Yahoo Finance). Ich hebe auf 95 %, weil die Bücher geschlossen sind und die Nachfrage weit über dem Angebot liegt; Restrisiko ist ein kurzfristiger Aufschub bei einem Markteinbruch.",
       "example": false,
       "sources": [
         {
@@ -880,6 +831,14 @@
         {
           "title": "RTÉ: Anthropic bepreist heute den Börsengang (18.11., 10:34)",
           "url": "https://www.rte.ie/news/business/2026/1118/1599642-anthropic-set-to-price-ipo/"
+        },
+        {
+          "title": "Yahoo Finance Live: Anthropic setzt heute den Preis, Handel ab Donnerstag (18.11.)",
+          "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-company-set-to-price-stock-today-starts-trading-thursday-125121455.html"
+        },
+        {
+          "title": "Invezz: Anthropic setzt heute Abend den Preis, Berichte deuten auf über 80 $ (18.11.)",
+          "url": "https://invezz.com/news/2026/11/18/anthropic-ipo-set-to-price-tonight-reports-point-above-80/"
         }
       ]
     },
@@ -1658,7 +1617,7 @@
       ],
       "probabilityPct": 98,
       "impact": "hoch",
-      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen. Stand 9.11.: Der Markt preist laut CME FedWatch mit über 80 % eine Zinserhöhung ein (Reuters), gestützt vom starken Oktober-Arbeitsmarkt. Stand 10.11.: Oktober-CPI mit +0,4 % und Kernrate +0,3 % jeweils 0,1 Punkte über Konsens (BLS). Waller ist für eine Erhöhung im Dezember und brachte bei heißen Daten 50 Basispunkte ins Spiel (CNBC). Am Fr 13.11. folgen die Erzeugerpreise. Stand 17:58: Die 10-jährige US-Rendite stieg um mehr als 14 Basispunkte auf 5,004 %, die 2-jährige um über 20 Basispunkte auf 4,755 % (CNBC). Dallas-Fed-Präsidentin Logan fordert mindestens zwei weitere Erhöhungen um je 25 Basispunkte, im Winter womöglich schneller (Investing.com). Goldman Sachs AM: Erhöhung im Dezember ist Basisfall, weitere 2027 möglich (CNBC). Stand 20:00: Laut Handelsblatt ist eine Erhöhung im Dezember nun voll eingepreist, rund 90 % rechnen mit 25 Basispunkten auf 4,0–4,25 %, rund 10 % mit 50 Basispunkten. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 07:00: Fed-Vizechefin Bowman sagte am Abend, bei der Inflation sei „noch Arbeit zu tun“, ohne ausdrücklich eine Erhöhung zu fordern (Fed, Reuters). Trading Economics nennt rund 91 % Wahrscheinlichkeit für eine Erhöhung im Dezember. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 11:40: Laut CME FedWatch liegt die Wahrscheinlichkeit für 25 Basispunkte im Dezember bei 91,9 % (Vortag 84 %), für 50 Basispunkte bei 9,1 %; eine Pause ist ausgepreist (CNBC). 98 % unverändert, das gilt dem Termin selbst. Stand Mi 18:00: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht (+0,4 % zum Vormonat) „grenzwertig beunruhigend“; Sorge machen ihm vor allem die Dienstleistungspreise (CNBC). 98 % unverändert, das gilt dem Termin selbst. Stand Sa 22:00: Boston-Fed-Chefin Susan Collins sprach sich am Sa für einen „stetigen, schrittweisen“ Weg kleiner Erhöhungen aus, gegen ein schnelleres Tempo; die Zinsen könnten im nächsten Jahr aber etwas höher steigen als gedacht. Reuters schreibt, allgemein werde im Dezember eine Erhöhung um 0,25 Punkte auf 4,00–4,25 % erwartet, danach eine weitere im Januar (Reuters). 98 % unverändert, das gilt dem Termin selbst. Stand So 08:30: Am Terminmarkt liegt die Wahrscheinlichkeit einer Erhöhung um 0,25 Punkte laut CME FedWatch bei 89,8 %, für 0,5 Punkte bei 10,2 % (FXBus, Stand 14.11.). 98 % unverändert, das gilt dem Termin selbst.",
+      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen. Stand 9.11.: Der Markt preist laut CME FedWatch mit über 80 % eine Zinserhöhung ein (Reuters), gestützt vom starken Oktober-Arbeitsmarkt. Stand 10.11.: Oktober-CPI mit +0,4 % und Kernrate +0,3 % jeweils 0,1 Punkte über Konsens (BLS). Waller ist für eine Erhöhung im Dezember und brachte bei heißen Daten 50 Basispunkte ins Spiel (CNBC). Am Fr 13.11. folgen die Erzeugerpreise. Stand 17:58: Die 10-jährige US-Rendite stieg um mehr als 14 Basispunkte auf 5,004 %, die 2-jährige um über 20 Basispunkte auf 4,755 % (CNBC). Dallas-Fed-Präsidentin Logan fordert mindestens zwei weitere Erhöhungen um je 25 Basispunkte, im Winter womöglich schneller (Investing.com). Goldman Sachs AM: Erhöhung im Dezember ist Basisfall, weitere 2027 möglich (CNBC). Stand 20:00: Laut Handelsblatt ist eine Erhöhung im Dezember nun voll eingepreist, rund 90 % rechnen mit 25 Basispunkten auf 4,0–4,25 %, rund 10 % mit 50 Basispunkten. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 07:00: Fed-Vizechefin Bowman sagte am Abend, bei der Inflation sei „noch Arbeit zu tun“, ohne ausdrücklich eine Erhöhung zu fordern (Fed, Reuters). Trading Economics nennt rund 91 % Wahrscheinlichkeit für eine Erhöhung im Dezember. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 11:40: Laut CME FedWatch liegt die Wahrscheinlichkeit für 25 Basispunkte im Dezember bei 91,9 % (Vortag 84 %), für 50 Basispunkte bei 9,1 %; eine Pause ist ausgepreist (CNBC). 98 % unverändert, das gilt dem Termin selbst. Stand Mi 18:00: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht (+0,4 % zum Vormonat) „grenzwertig beunruhigend“; Sorge machen ihm vor allem die Dienstleistungspreise (CNBC). 98 % unverändert, das gilt dem Termin selbst. Stand Sa 22:00: Boston-Fed-Chefin Susan Collins sprach sich am Sa für einen „stetigen, schrittweisen“ Weg kleiner Erhöhungen aus, gegen ein schnelleres Tempo; die Zinsen könnten im nächsten Jahr aber etwas höher steigen als gedacht. Reuters schreibt, allgemein werde im Dezember eine Erhöhung um 0,25 Punkte auf 4,00–4,25 % erwartet, danach eine weitere im Januar (Reuters). 98 % unverändert, das gilt dem Termin selbst. Stand So 08:30: Am Terminmarkt liegt die Wahrscheinlichkeit einer Erhöhung um 0,25 Punkte laut CME FedWatch bei 89,8 %, für 0,5 Punkte bei 10,2 % (FXBus, Stand 14.11.). 98 % unverändert, das gilt dem Termin selbst. Stand Mi 15:30: Gouverneur Waller wirbt offen für eine Erhöhung um 50 Basispunkte am 9.12. oder ein klares Signal für schnellere Schritte (CNBC, Investing.com). Der Termin selbst bleibt bei 98 %; offen ist nur, ob 25 oder 50 Basispunkte.",
       "example": false,
       "sources": [
         {
@@ -1712,6 +1671,14 @@
         {
           "title": "FXBus: CME FedWatch – 89,8 % für +0,25 Punkte im Dezember, 10,2 % für +0,5 (14.11.)",
           "url": "https://www.fxbus.com/en/news/20261114054159200962.html"
+        },
+        {
+          "title": "CNBC: Fed-Gouverneur Waller – Fed muss die Leute womöglich mit einer Erhöhung um einen halben Punkt „schocken“ (18.11.)",
+          "url": "https://www.cnbc.com/amp/2026/11/18/federal-reserve-governor-christopher-waller.html"
+        },
+        {
+          "title": "Investing.com: Waller warnt vor sich verschärfender Inflation, bringt 50 Basispunkte im Dezember ins Spiel (18.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/feds-waller-warns-inflation-is-worsening-floats-50basispoint-december-hike-5035893"
         }
       ]
     },
@@ -2402,14 +2369,22 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 15,
+      "probabilityPct": 20,
       "impact": "mittel",
-      "reasoning": "Spaceflight Now berichtet, SpaceX plane den ersten Starship-Start aus Florida für Ende dieses oder Anfang nächsten Jahres; drei Rampen sind dort im Bau. Ich setze nur 15 % für einen Start bis Ende Januar, weil Flight 15 in Texas noch aussteht und neue Rampen fast immer länger brauchen als angekündigt. Das Datum hier ist das Ende meines Betrachtungsfensters, kein angekündigter Termin.",
+      "reasoning": "Spaceflight Now berichtet, SpaceX plane den ersten Starship-Start aus Florida für Ende dieses oder Anfang nächsten Jahres; drei Rampen sind dort im Bau. Ich setze nur 15 % für einen Start bis Ende Januar, weil Flight 15 in Texas noch aussteht und neue Rampen fast immer länger brauchen als angekündigt. Das Datum hier ist das Ende meines Betrachtungsfensters, kein angekündigter Termin. Stand Mi 15:30: Flight 15 ist am 13.11. geflogen, das Schiff wurde erstmals vom Turm gefangen, der Booster ging verloren und wird untersucht (Orbit Economics). Laut einer FAA-Planungskonferenz im Oktober peilte SpaceX den 10. Dezember für Flight 16 als ersten Start von Rampe 39A in Florida an, ausdrücklich vorläufig (Florida Spaceflight). Bis 16.11. gab es aber kein offizielles Datum und keine bekannte FAA-Startlizenz für 39A; nach den letzten Abständen von 46 bis 66 Tagen läge Flight 16 eher Ende Dezember bis Mitte Januar (Orbit Economics). 15 → 20 %: Flight 15 liegt hinter uns, aber Florida-Lizenz und Booster-Untersuchung fehlen noch.",
       "example": false,
       "sources": [
         {
           "title": "Spaceflight Now: Starship Flight 14 erreicht den Orbit (28.09.2026)",
           "url": "https://spaceflightnow.com/2026/09/28/starship-returns-to-earth-rocket-splashes-down-north-of-hawaii-after-three-hour-flight/"
+        },
+        {
+          "title": "Orbit Economics: Nächster Starship-Start – Flight 16 ohne Datum (Stand 16.11.)",
+          "url": "https://orbiteconomics.com/next-starship-launch/"
+        },
+        {
+          "title": "Florida Spaceflight: FAA-Planung nennt 10. Dezember für ersten Starship-Start aus Florida (22.10.)",
+          "url": "https://flspaceflight.com/news/starship-new-glenn-florida-december-2026-launch-targets"
         }
       ]
     },
@@ -2450,7 +2425,7 @@
       ],
       "probabilityPct": 70,
       "impact": "niedrig",
-      "reasoning": "Die Dragon-Frachtkapsel der 35. Versorgungsmission soll am Do 19.11. um 12:05 Uhr US-Ostküstenzeit (18:05 Berlin) von der ISS ablegen und danach vor Kalifornien wassern. Am Mi wurde das Abdocken wegen schlechten Wetters in den Landegebieten abgesagt; die NASA nennt nur das Wetter als Grund, nicht die Kapsel (NASA, SpaceX auf X). 70 %, weil das Wetter vor Kalifornien schon einmal zum Aufschub geführt hat. Für den Kurs ist das Routine. Stand Mi 13:30: Die NASA prüft das Wetter erneut am Mi um 12:00 Uhr US-Ostküstenzeit (18:00 Berlin); die nächste Abdock-Chance bleibt Do 12:05 Ostküstenzeit (NASA). 70 % unverändert.",
+      "reasoning": "Die Dragon-Frachtkapsel der 35. Versorgungsmission soll am Do 19.11. um 12:05 Uhr US-Ostküstenzeit (18:05 Berlin) von der ISS ablegen und danach vor Kalifornien wassern. Am Mi wurde das Abdocken wegen schlechten Wetters in den Landegebieten abgesagt; die NASA nennt nur das Wetter als Grund, nicht die Kapsel (NASA, SpaceX auf X). 70 %, weil das Wetter vor Kalifornien schon einmal zum Aufschub geführt hat. Für den Kurs ist das Routine. Stand Mi 13:30: Die NASA prüft das Wetter erneut am Mi um 12:00 Uhr US-Ostküstenzeit (18:00 Berlin); die nächste Abdock-Chance bleibt Do 12:05 Ostküstenzeit (NASA). 70 % unverändert. Stand Mi 15:30: Keine neue NASA-Meldung seit der Absage für Mittwoch; die nächste Wetterbesprechung ist heute um 18:00 Berlin, die nächste Gelegenheit Do 18:05 (NASA). 70 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -2480,9 +2455,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 60,
+      "probabilityPct": 65,
       "impact": "mittel",
-      "reasoning": "Laut Bloomberg könnten Goldman Sachs und Apollo schon diese Woche rund 4 Mrd. $ Anleihen aus der etwa 40 Mrd. $ schweren Finanzierung für Nvidias Vera-Rubin-Chips verkaufen. Eine Zweckgesellschaft von Atlas SP kauft die Chips und vermietet sie an SpaceX, so bleiben die Schulden außerhalb der SpaceX-Bilanz; ein Preis ist noch nicht festgelegt (Yahoo Finance/Bloomberg, Lianhe Zaobao). Finanzchef Johnsen sagte am Di, ein großer Teil des Ausbaus werde aus dem eigenen Geschäft bezahlt (Stocktwits). 60 %, weil nur ein Medienbericht vorliegt und SpaceX nichts bestätigt hat.",
+      "reasoning": "Laut Bloomberg könnten Goldman Sachs und Apollo schon diese Woche rund 4 Mrd. $ Anleihen aus der etwa 40 Mrd. $ schweren Finanzierung für Nvidias Vera-Rubin-Chips verkaufen. Eine Zweckgesellschaft von Atlas SP kauft die Chips und vermietet sie an SpaceX, so bleiben die Schulden außerhalb der SpaceX-Bilanz; ein Preis ist noch nicht festgelegt (Yahoo Finance/Bloomberg, Lianhe Zaobao). Finanzchef Johnsen sagte am Di, ein großer Teil des Ausbaus werde aus dem eigenen Geschäft bezahlt (Stocktwits). 60 %, weil nur ein Medienbericht vorliegt und SpaceX nichts bestätigt hat. Stand Mi 15:30: Semafor bestätigt unabhängig von Bloomberg, dass Teile der siebenteiligen Finanzierung schon diese Woche an Anleger gehen könnten. Apollo gibt zunächst fast 20 Mrd. $ selbst und verkauft das später weiter; der Großteil von 35,5 Mrd. $ soll 8,3 % bzw. 7,75 % Zins tragen, riskantere Teile unter 3 Mrd. $ über 9 %. Das Geld geht in eine Zweckgesellschaft, SpaceX mietet die GPUs (Semafor). 60 → 65 %, weil jetzt zwei Medien unabhängig berichten; SpaceX selbst hat weiter nichts bestätigt.",
       "example": false,
       "sources": [
         {
@@ -2496,12 +2471,16 @@
         {
           "title": "Stocktwits: SpaceX-Finanzchef Johnsen – Rechenleistung großteils aus eigenem Geld, Anleihe für KI-Chips naht (17.11.)",
           "url": "https://stocktwits.com/news-articles/markets/equity/space-x-to-self-fund-majority-of-compute-expansion-cfo-says-as-bond-sale-for-ai-chips-reportedly-nears/cNbXjL9R9hL"
+        },
+        {
+          "title": "Semafor: SpaceX-Chipfinanzierung über 40 Mrd. $ bleibt außerhalb der Bilanz (18.11.)",
+          "url": "https://www.semafor.com/article/11/18/2026/spacex-40-billion-chip-financing-to-stay-off-balance-sheet"
         }
       ]
     },
     {
       "id": "evt-us-baubeginne-okt",
-      "title": "USA: Baubeginne und Baugenehmigungen Oktober (Mi 18.11. 14:30)",
+      "title": "USA: Baubeginne und Baugenehmigungen Oktober (veröffentlicht)",
       "date": "2026-11-18",
       "time": "14:30",
       "timezone": "Europe/Berlin",
@@ -2513,9 +2492,9 @@
         "SPCX",
         "RKLB"
       ],
-      "probabilityPct": 97,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "Am Mi 18.11. um 8:30 Uhr US-Ostküstenzeit (14:30 Berlin) meldet das Handelsministerium die Baubeginne und Baugenehmigungen für Oktober. Erwartet werden 1,240 Mio. Baubeginne aufs Jahr gerechnet (September 1,221 Mio.) und 1,378 Mio. Genehmigungen (zuvor 1,398 Mio.) (TD Economics); Econoday rechnet mit 1,230 Mio. und nennt hohe Hypothekenzinsen als Bremse. Die Zahl bewegt Tech-Werte meist wenig, eine starke Überraschung könnte aber die Zinssorgen vor dem Fed-Protokoll um 20:00 verstärken oder dämpfen. 97 %, weil es ein fester Termin ist.",
+      "reasoning": "Am Mi 18.11. um 8:30 Uhr US-Ostküstenzeit (14:30 Berlin) meldet das Handelsministerium die Baubeginne und Baugenehmigungen für Oktober. Erwartet werden 1,240 Mio. Baubeginne aufs Jahr gerechnet (September 1,221 Mio.) und 1,378 Mio. Genehmigungen (zuvor 1,398 Mio.) (TD Economics); Econoday rechnet mit 1,230 Mio. und nennt hohe Hypothekenzinsen als Bremse. Die Zahl bewegt Tech-Werte meist wenig, eine starke Überraschung könnte aber die Zinssorgen vor dem Fed-Protokoll um 20:00 verstärken oder dämpfen. 97 %, weil es ein fester Termin ist. Ergebnis Mi 14:30: Die Baubeginne stiegen im Oktober um 9,9 % auf eine Jahresrate von 1,309 Mio., erwartet waren laut Bloomberg-Umfrage 1,25 Mio.; der September wurde auf 1,191 Mio. gesenkt. Getrieben vor allem von Mehrfamilienhäusern, Einfamilienhäuser +4,0 % auf 864.000. Die Baugenehmigungen fielen dagegen um 7,4 % auf 1,295 Mio. (Erwartung laut Anadolu 1,38 Mio.), Einfamilien-Genehmigungen −8,7 % (Census/HUD, Bloomberg Law, Anadolu). Laut Census liegt der Monatszuwachs innerhalb der Fehlerspanne (±16,8 %). Gemischtes Bild ohne klaren Zinsimpuls; die Fed-Frage entscheidet sich eher am Abend mit Protokoll und Williams. Termin eingetreten: 100 %.",
       "example": false,
       "sources": [
         {
@@ -2525,6 +2504,18 @@
         {
           "title": "Global Trade Review/Econoday: Wirtschaftskalender Mittwoch 18.11.",
           "url": "https://www.globaltradereview.com/news/all/6afd772aed55447fdc10e461"
+        },
+        {
+          "title": "US Census Bureau/HUD: New Residential Construction, Oktober 2026 (18.11.)",
+          "url": "https://www.census.gov/construction/nrc/pdf/newresconst_202610.pdf"
+        },
+        {
+          "title": "Bloomberg Law: US Housing Starts Climb on Multifamily Construction Rebound (18.11.)",
+          "url": "https://news.bloomberglaw.com/capital-markets/us-housing-starts-climb-on-jump-in-multifamily-construction-1"
+        },
+        {
+          "title": "Anadolu: US-Baubeginne steigen, Genehmigungen fallen (18.11.)",
+          "url": "https://www.aa.com.tr/en/economy/us-homebuilders-break-ground-on-more-homes-in-october-as-permits-decline/4129447"
         }
       ]
     }
