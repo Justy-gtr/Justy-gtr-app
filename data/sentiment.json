@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T10:32:00+01:00",
+  "updatedAt": "2026-11-18T10:58:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
       "postsCount": 25,
-      "reason": "Nvidias großer SpaceX-Anteil und das Chip-Leasing (~47 Mrd. $) sind Hauptthema, dazu Starmind-Pläne und höhere Kursziele. Viele Fans, wenig Kritik.",
+      "reason": "Vorbörslich leicht im Plus. Thema sind Texas-Genehmigung fürs 24-Mrd.-$-Rechenzentrum, Nvidia-Chips und Orbit-Rechenzentren. Einige fragen nach den Kosten.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (18.11., 09:30)",
-          "url": "https://x.com/spcxGOD/status/2122970568014340575"
+          "title": "@NGLSHMUELI auf X (18.11., 10:52)",
+          "url": "https://x.com/NGLSHMUELI/status/2122991394729943184"
         },
         {
-          "title": "@RobynHD auf X (18.11., 09:53)",
-          "url": "https://x.com/RobynHD/status/2122976356690481570"
+          "title": "@nextbigtrade auf X (18.11., 10:50)",
+          "url": "https://x.com/nextbigtrade/status/2122990801752096945"
         },
         {
-          "title": "@coys05091882 auf X (18.11., 09:19)",
-          "url": "https://x.com/coys05091882/status/2122967990178132355"
+          "title": "@SpaceXPete10 auf X (18.11., 10:55)",
+          "url": "https://x.com/SpaceXPete10/status/2122992169489473966"
         }
       ],
-      "updatedAt": "2026-11-18T10:32:00+01:00"
+      "updatedAt": "2026-11-18T10:58:00+01:00"
     },
     "TSLA": {
-      "mood": "gemischt",
-      "score": 10,
+      "mood": "gut",
+      "score": 25,
       "postsCount": 25,
-      "reason": "Fans reden über Optimus und eine mögliche SpaceX-Fusion, Kritiker nennen die Aktie überteuert. Viel Spam, wenig echte Neuigkeiten am Morgen.",
+      "reason": "Vorbörslich gut 1 % im Plus. Fans loben Powercore und sagen, Tesla hält sich stark. Daneben viel Spam und einzelne Kritik an der hohen Bewertung.",
       "sources": [
         {
-          "title": "@piggyoinkoink12 auf X (18.11., 10:00)",
-          "url": "https://x.com/piggyoinkoink12/status/2122978306089718171"
+          "title": "@TessSwiftAI auf X (18.11., 10:37)",
+          "url": "https://x.com/TessSwiftAI/status/2122987646364340641"
         },
         {
-          "title": "@TslainsightsC auf X (18.11., 09:18)",
-          "url": "https://x.com/TslainsightsC/status/2122967625852481667"
+          "title": "@BryGuyBMoney auf X (18.11., 10:33)",
+          "url": "https://x.com/BryGuyBMoney/status/2122986422470684698"
         },
         {
-          "title": "@ZACarlito auf X (18.11., 10:25)",
-          "url": "https://x.com/ZACarlito/status/2122984453521707207"
+          "title": "@oguztur auf X (18.11., 10:52)",
+          "url": "https://x.com/oguztur/status/2122991405232710112"
         }
       ],
-      "updatedAt": "2026-11-18T10:32:00+01:00"
+      "updatedAt": "2026-11-18T10:58:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/corleoneinvests/status/2122971418778272128"
         }
       ],
-      "updatedAt": "2026-11-18T10:32:00+01:00"
+      "updatedAt": "2026-11-18T10:58:00+01:00"
     }
   }
 }
