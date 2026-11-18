@@ -5083,54 +5083,46 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Mi 11:50: SPCX liegt auf Xetra bei 130,04 € (+1,9 % zum Xetra-Schluss von 127,58 €), vorbörslich in New York bei 142,46 $ (+0,5 % zum Schluss von 141,70 $) (Yahoo). Rückenwind kommt aus Nvidias Zahlen: Laut Nvidia laufen die neuen Vera-Rubin-Racks bei Partnern und gehen „bald“ auch bei SpaceX SI in Betrieb (Nvidia). Finanzchef Bret Johnsen sagte am Di, ein großer Teil des Rechenzentrums-Ausbaus werde aus dem eigenen Geschäft bezahlt; laut Bloomberg könnten diese Woche rund 4 Mrd. $ Anleihen für die Nvidia-Chips ausgegeben werden, SpaceX hat das nicht bestätigt (Stocktwits, Yahoo Finance/Bloomberg). Gesamtmarkt: Nvidias Zahlen haben den Tech-Ausverkauf am Mi früh gebremst. Nvidia lag vorbörslich bei 160,87 $ (+3,5 %), Xetra 146,44 € (+5,1 %); der Nasdaq-100-Future stand um 11:32 bei +1,0 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, bereinigt 2,68 $ je Aktie, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia); der Konsens lag bei 109,10 Mrd. $ und 125,1 Mrd. $ (CNBC/LSEG). Der Verwaltungsrat holt Huang nicht zurück (CNBC). Der Dax lag nach dem Start 0,3 % im Plus bei 26.111 Punkten, Tech-Werte wie Infineon erholten sich (dpa-AFX).",
+      "why": "Stand Mi 13:30: SPCX liegt auf Xetra bei 129,96 € (+1,9 % zum Xetra-Schluss von 127,58 €), vorbörslich in New York bei 142,18 $ (+0,3 % zum Schluss von 141,70 $) (Yahoo). Der Xetra-Aufschlag ist vor allem Nachholen: Am Di schloss Xetra, bevor SPCX in New York auf +3,2 % stieg. Rückenwind kommt aus Nvidias Zahlen, die neuen Vera-Rubin-Racks gehen laut Nvidia „bald“ auch bei SpaceX SI in Betrieb. Laut Bloomberg könnten Goldman Sachs und Apollo schon diese Woche rund 4 Mrd. $ Anleihen für die Nvidia-Chips verkaufen; die Schulden liegen bei einer Zweckgesellschaft von Atlas SP, nicht bei SpaceX, und SpaceX hat nichts bestätigt (GuruFocus/Bloomberg). Gesamtmarkt: Die Nvidia-Erholung trägt weiter, aber schwächer als am Morgen. Nvidia lag vorbörslich bei 160,37 $ (+3,2 % zum Schluss von 155,46 $), Xetra 145,56 € (+4,4 %); der Nasdaq-100-Future stand um 13:07 bei +0,8 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia). Der Dax gab den Morgengewinn bis Mittag ab und lag gegen 12:30 bei rund 26.065 Punkten (+0,1 %), gestützt von Infineon und Siemens Energy; der europäische Tech-Index erholte sich um etwa 1,5 % (dpa-AFX, dts). Heute noch: US-Baubeginne 14:30, Fed-Protokoll 20:00, Anthropic-Preis nach US-Schluss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPX.DE (Stand Mi 18.11., 11:20 Xetra)",
+          "title": "Yahoo Finance: SPX.DE (Stand Mi 18.11., 13:00 Xetra)",
           "url": "https://finance.yahoo.com/quote/SPX.DE/"
         },
         {
-          "title": "Yahoo Finance: SPCX (Stand Mi 18.11., 11:42 vorbörslich)",
+          "title": "Yahoo Finance: SPCX (Stand Mi 18.11., 13:17 vorbörslich)",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %, Rückkauf-Aufstockung um 150 Mrd. $ schon im September",
+          "title": "GuruFocus via Yahoo: SpaceX will rund 4 Mrd. $ für Nvidia-Chips einsammeln (18.11.)",
+          "url": "https://sg.finance.yahoo.com/news/spacex-wants-4-billion-investors-111930111.html"
+        },
+        {
+          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %",
           "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
         },
         {
-          "title": "Stocktwits: SpaceX-Finanzchef Johnsen – Rechenleistung großteils aus eigenem Geld, Anleihe für KI-Chips naht (17.11.)",
-          "url": "https://stocktwits.com/news-articles/markets/equity/space-x-to-self-fund-majority-of-compute-expansion-cfo-says-as-bond-sale-for-ai-chips-reportedly-nears/cNbXjL9R9hL"
-        },
-        {
-          "title": "Yahoo Finance/Bloomberg: SpaceX-Schulden für KI-Chips kommen schon diese Woche an den Markt",
-          "url": "https://finance.yahoo.com/technology/ai/articles/spacex-debt-ai-chips-hit-145310043.html"
-        },
-        {
-          "title": "CNBC: Nvidia Q3 – 2,68 $ je Aktie vs. 2,48 $ erwartet, Umsatz 115,84 vs. 109,10 Mrd. $ (LSEG), Ausblick ~130 Mrd. $ vs. 125,1 Mrd. $ (17.11.)",
-          "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"
-        },
-        {
-          "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 11:41 vorbörslich)",
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 13:17 vorbörslich)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 11:27 Xetra)",
+          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 13:02 Xetra)",
           "url": "https://finance.yahoo.com/quote/NVD.DE/"
         },
         {
-          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 11:32)",
+          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 13:07)",
           "url": "https://finance.yahoo.com/quote/NQ=F/"
         },
         {
-          "title": "dpa-AFX via boersennews: Aktien Frankfurt Eröffnung – etwas stabilisiert nach gutem Nvidia-Bericht (18.11., 10:03)",
-          "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/roundup-aktien-frankfurt-eroeffnung-etwas-stabilisiert-nach-gutem-nvidia-bericht/5357592/"
+          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – etwas stabilisiert, Tech-Werte profitieren von Nvidia-Bericht (18.11., 12:10)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165246-aktien-frankfurt-etwas-stabilisiert-tech-werte-profitieren-von-nvidia-bericht-016.htm"
         },
         {
-          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 11:27)",
+          "title": "finanznachrichten (dts): Dax am Mittag auf Vortagesniveau – 26.000er-Marke hält (18.11., 12:42)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165537-dax-am-mittag-auf-vortagesniveau-26-000er-marke-haelt-003.htm"
+        },
+        {
+          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 13:02)",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         }
       ],
@@ -17414,54 +17406,46 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Mi 11:50: Tesla liegt auf Xetra bei 350,30 € (+2,0 % zum Xetra-Schluss von 343,50 €), vorbörslich bei 384,68 $ (+1,2 % zum Schluss von 380,11 $) (Yahoo). Eine eigene neue Firmenmeldung gibt es nicht; die Aktie zieht mit der Tech-Erholung nach Nvidias Zahlen mit. Der Xetra-Schluss am Di lag vor dem US-Schluss, ein Teil des Plus ist Nachholen. Im Blick bleiben der Ausbau in Grünheide für den Cybercab (rund 3 Mrd. €, Bau ab 2027) und Musks Reise zum APEC-Gipfel in Shenzhen, wo Trump am Mi gelandet ist (TechCrunch, CNBC). Gesamtmarkt: Nvidias Zahlen haben den Tech-Ausverkauf am Mi früh gebremst. Nvidia lag vorbörslich bei 160,87 $ (+3,5 %), Xetra 146,44 € (+5,1 %); der Nasdaq-100-Future stand um 11:32 bei +1,0 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, bereinigt 2,68 $ je Aktie, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia); der Konsens lag bei 109,10 Mrd. $ und 125,1 Mrd. $ (CNBC/LSEG). Der Verwaltungsrat holt Huang nicht zurück (CNBC). Der Dax lag nach dem Start 0,3 % im Plus bei 26.111 Punkten, Tech-Werte wie Infineon erholten sich (dpa-AFX).",
+      "why": "Stand Mi 13:30: Tesla liegt auf Xetra bei 349,25 € (+1,7 % zum Xetra-Schluss von 343,50 €), vorbörslich bei 383,39 $ (+0,9 % zum Schluss von 380,11 $) (Yahoo). Eine eigene neue Firmenmeldung gibt es nicht; die Aktie zieht mit der Tech-Erholung nach Nvidias Zahlen mit, ein Teil des Xetra-Plus ist Nachholen. Gegenwind von Analystenseite: China Merchants Securities International senkte am Mi das Kursziel von 441 auf 354 $ und bleibt bei „Neutral“; die Bank kürzt ihre Gewinnschätzungen für 2026 bis 2028 um 41 bis 53 %, wegen höherer Ausgaben und eines langsameren Cybercab-Hochlaufs (GMT Eight). Gesamtmarkt: Die Nvidia-Erholung trägt weiter, aber schwächer als am Morgen. Nvidia lag vorbörslich bei 160,37 $ (+3,2 % zum Schluss von 155,46 $), Xetra 145,56 € (+4,4 %); der Nasdaq-100-Future stand um 13:07 bei +0,8 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia). Der Dax gab den Morgengewinn bis Mittag ab und lag gegen 12:30 bei rund 26.065 Punkten (+0,1 %), gestützt von Infineon und Siemens Energy; der europäische Tech-Index erholte sich um etwa 1,5 % (dpa-AFX, dts). Heute noch: US-Baubeginne 14:30, Fed-Protokoll 20:00, Anthropic-Preis nach US-Schluss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: TL0.DE (Stand Mi 18.11., 11:25 Xetra)",
+          "title": "Yahoo Finance: TL0.DE (Stand Mi 18.11., 13:01 Xetra)",
           "url": "https://finance.yahoo.com/quote/TL0.DE/"
         },
         {
-          "title": "Yahoo Finance: TSLA (Stand Mi 18.11., 11:41 vorbörslich)",
+          "title": "Yahoo Finance: TSLA (Stand Mi 18.11., 13:17 vorbörslich)",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "TechCrunch: Tesla investiert 3 Mrd. € in Grünheide für den Cybercab (16.11.)",
-          "url": "https://techcrunch.com/2026/11/16/tesla-goes-all-in-on-the-cybercab-with-upcoming-e3b-berlin-gigafactory-expansion/"
+          "title": "GMT Eight: China Merchants Securities International senkt Tesla-Kursziel von 441 auf 354 $, „Neutral“ (18.11.)",
+          "url": "https://gmteight.com/flash/detail/1573796"
         },
         {
-          "title": "CNBC: Trump in Shenzhen gelandet, Dreiertreffen mit Xi und Putin am Donnerstag (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-china-apec.html"
-        },
-        {
-          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %, Rückkauf-Aufstockung um 150 Mrd. $ schon im September",
+          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %",
           "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
         },
         {
-          "title": "CNBC: Nvidia Q3 – 2,68 $ je Aktie vs. 2,48 $ erwartet, Umsatz 115,84 vs. 109,10 Mrd. $ (LSEG), Ausblick ~130 Mrd. $ vs. 125,1 Mrd. $ (17.11.)",
-          "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"
-        },
-        {
-          "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 11:41 vorbörslich)",
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 13:17 vorbörslich)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 11:27 Xetra)",
+          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 13:02 Xetra)",
           "url": "https://finance.yahoo.com/quote/NVD.DE/"
         },
         {
-          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 11:32)",
+          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 13:07)",
           "url": "https://finance.yahoo.com/quote/NQ=F/"
         },
         {
-          "title": "dpa-AFX via boersennews: Aktien Frankfurt Eröffnung – etwas stabilisiert nach gutem Nvidia-Bericht (18.11., 10:03)",
-          "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/roundup-aktien-frankfurt-eroeffnung-etwas-stabilisiert-nach-gutem-nvidia-bericht/5357592/"
+          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – etwas stabilisiert, Tech-Werte profitieren von Nvidia-Bericht (18.11., 12:10)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165246-aktien-frankfurt-etwas-stabilisiert-tech-werte-profitieren-von-nvidia-bericht-016.htm"
         },
         {
-          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 11:27)",
+          "title": "finanznachrichten (dts): Dax am Mittag auf Vortagesniveau – 26.000er-Marke hält (18.11., 12:42)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165537-dax-am-mittag-auf-vortagesniveau-26-000er-marke-haelt-003.htm"
+        },
+        {
+          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 13:02)",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         }
       ],
@@ -28705,50 +28689,46 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Mi 11:50: Rocket Lab notiert in Frankfurt bei 52,10 € (+4,2 % zum Schluss von 50,00 €), vorbörslich in New York bei 56,76 $ (+3,1 % zum Schluss von 55,05 $) (Yahoo). Nach vier Verlusttagen in Folge erholt sich die Aktie mit dem ganzen Tech- und Raumfahrtsektor nach Nvidias Zahlen; eine eigene neue Meldung von Rocket Lab gibt es seit dem Archimedes-Heißtest am Di-Abend nicht (Rocket Lab auf X). Für die Tagesfrage zählt der Nasdaq-Schluss heute gegen 55,05 $. Gesamtmarkt: Nvidias Zahlen haben den Tech-Ausverkauf am Mi früh gebremst. Nvidia lag vorbörslich bei 160,87 $ (+3,5 %), Xetra 146,44 € (+5,1 %); der Nasdaq-100-Future stand um 11:32 bei +1,0 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, bereinigt 2,68 $ je Aktie, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia); der Konsens lag bei 109,10 Mrd. $ und 125,1 Mrd. $ (CNBC/LSEG). Der Verwaltungsrat holt Huang nicht zurück (CNBC). Der Dax lag nach dem Start 0,3 % im Plus bei 26.111 Punkten, Tech-Werte wie Infineon erholten sich (dpa-AFX).",
+      "why": "Stand Mi 13:30: Rocket Lab notiert in Stuttgart bei 51,10 € (+2,5 % zum Schluss von 49,85 €; der letzte Frankfurter Kurs ist von 10:08), vorbörslich in New York bei 56,40 $ (+2,5 % zum Schluss von 55,05 $) (Yahoo). Nach vier Verlusttagen erholt sich die Aktie mit Tech- und Raumfahrtwerten nach Nvidias Zahlen; eine eigene neue Meldung von Rocket Lab oder eine neue SEC-Meldung gibt es seit Di-Abend nicht. Für die Tagesfrage zählt der Nasdaq-Schluss heute gegen 55,05 $; vorbörslich liegt die Aktie darüber. Gesamtmarkt: Die Nvidia-Erholung trägt weiter, aber schwächer als am Morgen. Nvidia lag vorbörslich bei 160,37 $ (+3,2 % zum Schluss von 155,46 $), Xetra 145,56 € (+4,4 %); der Nasdaq-100-Future stand um 13:07 bei +0,8 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia). Der Dax gab den Morgengewinn bis Mittag ab und lag gegen 12:30 bei rund 26.065 Punkten (+0,1 %), gestützt von Infineon und Siemens Energy; der europäische Tech-Index erholte sich um etwa 1,5 % (dpa-AFX, dts). Heute noch: US-Baubeginne 14:30, Fed-Protokoll 20:00, Anthropic-Preis nach US-Schluss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: 6RJ0.F (Stand Mi 18.11., 10:08 Frankfurt)",
-          "url": "https://finance.yahoo.com/quote/6RJ0.F/"
+          "title": "Yahoo Finance: 6RJ0.SG (Stand Mi 18.11., 13:02 Stuttgart)",
+          "url": "https://finance.yahoo.com/quote/6RJ0.SG/"
         },
         {
-          "title": "Yahoo Finance: RKLB (Stand Mi 18.11., 11:38 vorbörslich)",
+          "title": "Yahoo Finance: RKLB (Stand Mi 18.11., 13:17 vorbörslich)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "@RocketLab auf X (17.11., 22:16): Archimedes-Heißtest",
-          "url": "https://x.com/RocketLab/status/2122801023458951413"
+          "title": "SEC EDGAR: Rocket Lab-Einreichungen",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001819994&type=&dateb=&owner=include&count=40"
         },
         {
-          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %, Rückkauf-Aufstockung um 150 Mrd. $ schon im September",
+          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %",
           "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
         },
         {
-          "title": "CNBC: Nvidia Q3 – 2,68 $ je Aktie vs. 2,48 $ erwartet, Umsatz 115,84 vs. 109,10 Mrd. $ (LSEG), Ausblick ~130 Mrd. $ vs. 125,1 Mrd. $ (17.11.)",
-          "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"
-        },
-        {
-          "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 11:41 vorbörslich)",
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 13:17 vorbörslich)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 11:27 Xetra)",
+          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 13:02 Xetra)",
           "url": "https://finance.yahoo.com/quote/NVD.DE/"
         },
         {
-          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 11:32)",
+          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 13:07)",
           "url": "https://finance.yahoo.com/quote/NQ=F/"
         },
         {
-          "title": "dpa-AFX via boersennews: Aktien Frankfurt Eröffnung – etwas stabilisiert nach gutem Nvidia-Bericht (18.11., 10:03)",
-          "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/roundup-aktien-frankfurt-eroeffnung-etwas-stabilisiert-nach-gutem-nvidia-bericht/5357592/"
+          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – etwas stabilisiert, Tech-Werte profitieren von Nvidia-Bericht (18.11., 12:10)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165246-aktien-frankfurt-etwas-stabilisiert-tech-werte-profitieren-von-nvidia-bericht-016.htm"
         },
         {
-          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 11:27)",
+          "title": "finanznachrichten (dts): Dax am Mittag auf Vortagesniveau – 26.000er-Marke hält (18.11., 12:42)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165537-dax-am-mittag-auf-vortagesniveau-26-000er-marke-haelt-003.htm"
+        },
+        {
+          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 13:02)",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         }
       ],
@@ -40264,54 +40244,50 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Mi 11:50: Marvell liegt auf Xetra bei 140,60 € (+8,0 % zum Xetra-Schluss von 130,16 €), vorbörslich bei 154,75 $ (+4,0 % zum Schluss von 148,74 $) (Yahoo). Das große Xetra-Plus ist zum Teil Nachholen: Am Di schloss Xetra vor der US-Erholung, in New York drehte Marvell danach noch auf +2,3 %. Dazu kommt der Schub für KI-Hardware nach Nvidias Zahlen, Neocloud-Werte wie Nebius und CoreWeave steigen vorbörslich deutlich (CNBC). Laut SEC-Meldung gab Chef Matthew Murphy am 16.11. 7.500 Aktien ab, zu durchschnittlich 146,54 $ nach einem vorab festgelegten 10b5-1-Plan (SEC). Zahlen am Di 1.12. Gesamtmarkt: Nvidias Zahlen haben den Tech-Ausverkauf am Mi früh gebremst. Nvidia lag vorbörslich bei 160,87 $ (+3,5 %), Xetra 146,44 € (+5,1 %); der Nasdaq-100-Future stand um 11:32 bei +1,0 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, bereinigt 2,68 $ je Aktie, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia); der Konsens lag bei 109,10 Mrd. $ und 125,1 Mrd. $ (CNBC/LSEG). Der Verwaltungsrat holt Huang nicht zurück (CNBC). Der Dax lag nach dem Start 0,3 % im Plus bei 26.111 Punkten, Tech-Werte wie Infineon erholten sich (dpa-AFX).",
+      "why": "Stand Mi 13:30: Marvell liegt auf Xetra bei 139,50 € (+7,2 % zum Xetra-Schluss von 130,16 €), vorbörslich bei 152,94 $ (+2,8 % zum Schluss von 148,74 $) (Yahoo). Das große Xetra-Plus ist zum Teil Nachholen: Am Di schloss Xetra vor der US-Erholung, in New York drehte Marvell danach noch auf +2,3 %. Dazu kommt der Schub für Chipwerte nach Nvidias Zahlen, auch Micron, AMD und Broadcom steigen vorbörslich (TipRanks). Laut SEC-Meldung verkaufte Chef Matthew Murphy am 16.11. 7.500 Aktien nach einem vorab festgelegten 10b5-1-Plan. Zahlen am Di 1.12. Gesamtmarkt: Die Nvidia-Erholung trägt weiter, aber schwächer als am Morgen. Nvidia lag vorbörslich bei 160,37 $ (+3,2 % zum Schluss von 155,46 $), Xetra 145,56 € (+4,4 %); der Nasdaq-100-Future stand um 13:07 bei +0,8 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia). Der Dax gab den Morgengewinn bis Mittag ab und lag gegen 12:30 bei rund 26.065 Punkten (+0,1 %), gestützt von Infineon und Siemens Energy; der europäische Tech-Index erholte sich um etwa 1,5 % (dpa-AFX, dts). Heute noch: US-Baubeginne 14:30, Fed-Protokoll 20:00, Anthropic-Preis nach US-Schluss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: 9MW.DE (Stand Mi 18.11., 11:21 Xetra)",
+          "title": "Yahoo Finance: 9MW.DE (Stand Mi 18.11., 13:02 Xetra)",
           "url": "https://finance.yahoo.com/quote/9MW.DE/"
         },
         {
-          "title": "Yahoo Finance: MRVL (Stand Mi 18.11., 11:41 vorbörslich)",
+          "title": "Yahoo Finance: MRVL (Stand Mi 18.11., 13:16 vorbörslich)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
+          "title": "TipRanks: Chipwerte wie Micron, AMD und Broadcom steigen vorbörslich (18.11.)",
+          "url": "https://www.tipranks.com/news/why-chip-stocks-micron-amd-and-broadcom-are-rising-in-pre-market-trading-november-18"
         },
         {
-          "title": "SEC Form 4: Matthew J. Murphy (MRVL), Handel am 16.11.2026",
+          "title": "SEC Form 4: Matthew J. Murphy (MRVL), Abgabe von 7.500 Aktien am 16.11.2026",
           "url": "https://www.sec.gov/Archives/edgar/data/1835632/000162828026074618/wk-form4_1794960225.xml"
         },
         {
-          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %, Rückkauf-Aufstockung um 150 Mrd. $ schon im September",
+          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %",
           "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
         },
         {
-          "title": "CNBC: Nvidia Q3 – 2,68 $ je Aktie vs. 2,48 $ erwartet, Umsatz 115,84 vs. 109,10 Mrd. $ (LSEG), Ausblick ~130 Mrd. $ vs. 125,1 Mrd. $ (17.11.)",
-          "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"
-        },
-        {
-          "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 11:41 vorbörslich)",
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 13:17 vorbörslich)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 11:27 Xetra)",
+          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 13:02 Xetra)",
           "url": "https://finance.yahoo.com/quote/NVD.DE/"
         },
         {
-          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 11:32)",
+          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 13:07)",
           "url": "https://finance.yahoo.com/quote/NQ=F/"
         },
         {
-          "title": "dpa-AFX via boersennews: Aktien Frankfurt Eröffnung – etwas stabilisiert nach gutem Nvidia-Bericht (18.11., 10:03)",
-          "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/roundup-aktien-frankfurt-eroeffnung-etwas-stabilisiert-nach-gutem-nvidia-bericht/5357592/"
+          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – etwas stabilisiert, Tech-Werte profitieren von Nvidia-Bericht (18.11., 12:10)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165246-aktien-frankfurt-etwas-stabilisiert-tech-werte-profitieren-von-nvidia-bericht-016.htm"
         },
         {
-          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 11:27)",
+          "title": "finanznachrichten (dts): Dax am Mittag auf Vortagesniveau – 26.000er-Marke hält (18.11., 12:42)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70165537-dax-am-mittag-auf-vortagesniveau-26-000er-marke-haelt-003.htm"
+        },
+        {
+          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 13:02)",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         }
       ],

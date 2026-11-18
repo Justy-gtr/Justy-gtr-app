@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-18T11:50:00+01:00",
+  "asOf": "2026-11-18T13:30:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,76 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2123017891167785201",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-18T12:38:03+01:00",
+      "summaryDe": "Musk fragt, ob die „Thukydides-Falle“ – der Konflikt zwischen aufsteigender und etablierter Großmacht – je vermeidbar sei, und schreibt, leider sei das interessanteste Ergebnis das wahrscheinlichste. Der Post fällt in den APEC-Gipfel in Shenzhen mit Trump und Xi; einen direkten Bezug nennt Musk nicht.",
+      "originalText": "Is the Thucydides Trap ever avoidable?\n\nI wish it were, but, inevitably, the most interesting outcome is the most likely.",
+      "url": "https://x.com/elonmusk/status/2123017891167785201",
+      "tickers": [],
+      "companies": [],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (18.11., 12:38): Thukydides-Falle",
+          "url": "https://x.com/elonmusk/status/2123017891167785201"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122991638582816914",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-18T10:53:44+01:00",
+      "summaryDe": "Musk: Für sich selbst tragende Städte auf Mond und Mars müsse man etwa eine Megatonne pro Jahr in die Umlaufbahn bringen. Er antwortet damit auf Shaun Maguire, der eine Grafik teilte, wonach Starship als eigene Firma bei der Nutzlast in den Orbit schon Platz 2 in den USA wäre, hinter Falcon 9.",
+      "originalText": "About a megaton per year to orbit is needed to build self-sustaining cities on the Moon and Mars",
+      "url": "https://x.com/elonmusk/status/2122991638582816914",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (18.11., 10:53): eine Megatonne pro Jahr in den Orbit",
+          "url": "https://x.com/elonmusk/status/2122991638582816914"
+        },
+        {
+          "title": "@shaunmmaguire auf X (17.11.): „Insane stat!“ zur Starship-Nutzlast",
+          "url": "https://x.com/shaunmmaguire/status/2122778208949190814"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122987306923733063",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-18T10:36:31+01:00",
+      "summaryDe": "Musk erklärt die Namen der Tunnelbohrmaschinen der Boring Company: „Warten auf Godot“, „A Line-storm Song“ und „The Love Song of J. Alfred Prufrock“. Hintergrund ist die dritte Maschine Prufrock-MB3, die gerade in Nashville angekommen ist.",
+      "originalText": "The machines of @boringcompany were named after:\n\nWaiting for Godot\nA Line-storm Song\nThe Love Song of J. Alfred Prufrock",
+      "url": "https://x.com/elonmusk/status/2122987306923733063",
+      "tickers": [],
+      "companies": [
+        "The Boring Company"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (18.11., 10:36): Namen der Boring-Bohrmaschinen",
+          "url": "https://x.com/elonmusk/status/2122987306923733063"
+        }
+      ]
+    },
     {
       "id": "post-spacex-2122940097683177721",
       "account": "@SpaceX",
