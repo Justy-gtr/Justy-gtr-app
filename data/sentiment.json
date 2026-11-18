@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T16:18:00+01:00",
+  "updatedAt": "2026-11-18T16:22:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 35,
-      "postsCount": 10,
-      "reason": "SpaceX liegt bei 143,27 $ (+1 %). Viele fragen, ob diese Woche 150 $ drin sind, und schwärmen langfristig. Einzelne nehmen Gewinne mit.",
+      "score": 30,
+      "postsCount": 8,
+      "reason": "SpaceX hält das Plus. Trader sehen viele Call-Optionen weit über dem Kurs. Kritiker verweisen darauf, dass Citadel fast alle Aktien verkauft habe.",
       "sources": [
+        {
+          "title": "@danshep55 auf X (18.11., 16:21)",
+          "url": "https://x.com/danshep55/status/2123074061873852512"
+        },
+        {
+          "title": "@DontheConDrumpf auf X (18.11., 16:21)",
+          "url": "https://x.com/DontheConDrumpf/status/2123074058787127608"
+        },
         {
           "title": "@gomarketbeater auf X (18.11., 16:16)",
           "url": "https://x.com/gomarketbeater/status/2123072786650272156"
-        },
-        {
-          "title": "@GrindeOptions auf X (18.11., 16:15)",
-          "url": "https://x.com/GrindeOptions/status/2123072697760645470"
-        },
-        {
-          "title": "@Kayteetav auf X (18.11., 16:15)",
-          "url": "https://x.com/Kayteetav/status/2123072660523700668"
         }
       ],
-      "updatedAt": "2026-11-18T16:18:00+01:00"
+      "updatedAt": "2026-11-18T16:22:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,7 +43,7 @@
           "url": "https://x.com/gomarketbeater/status/2123072786650272156"
         }
       ],
-      "updatedAt": "2026-11-18T16:18:00+01:00"
+      "updatedAt": "2026-11-18T16:22:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/WolseleyFund/status/2123070313999257765"
         }
       ],
-      "updatedAt": "2026-11-18T16:18:00+01:00"
+      "updatedAt": "2026-11-18T16:22:00+01:00"
     }
   }
 }
