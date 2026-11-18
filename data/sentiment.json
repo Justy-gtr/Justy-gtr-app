@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T16:22:00+01:00",
+  "updatedAt": "2026-11-18T16:31:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 8,
-      "reason": "SpaceX hält das Plus. Trader sehen viele Call-Optionen weit über dem Kurs. Kritiker verweisen darauf, dass Citadel fast alle Aktien verkauft habe.",
+      "score": 40,
+      "postsCount": 10,
+      "reason": "SpaceX ist grün an einem schwachen Markttag. Viele Trader melden schnelle Gewinne, manche setzen alles auf SPCX. Einzelne wetten dagegen.",
       "sources": [
         {
-          "title": "@danshep55 auf X (18.11., 16:21)",
-          "url": "https://x.com/danshep55/status/2123074061873852512"
+          "title": "@HES_KEY_90 auf X (18.11., 16:29)",
+          "url": "https://x.com/HES_KEY_90/status/2123076123630133680"
         },
         {
-          "title": "@DontheConDrumpf auf X (18.11., 16:21)",
-          "url": "https://x.com/DontheConDrumpf/status/2123074058787127608"
+          "title": "@Nasdaq_Teej auf X (18.11., 16:28)",
+          "url": "https://x.com/Nasdaq_Teej/status/2123075812312146007"
         },
         {
-          "title": "@gomarketbeater auf X (18.11., 16:16)",
-          "url": "https://x.com/gomarketbeater/status/2123072786650272156"
+          "title": "@ErickScottCarl auf X (18.11., 16:29)",
+          "url": "https://x.com/ErickScottCarl/status/2123076066231427477"
         }
       ],
-      "updatedAt": "2026-11-18T16:22:00+01:00"
+      "updatedAt": "2026-11-18T16:31:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 25,
+      "score": 20,
       "postsCount": 9,
-      "reason": "Tesla bei 382,50 $ (+0,6 %). Thema: 200 neue Cybercabs in Texas an einem Tag, Ausbaupläne für Giga Berlin und der neue Powercore-Trafo.",
+      "reason": "Tesla baut Starlink in Cybercabs ein und will 4680-Zellen in Berlin fertigen. Kritik: Cybertruck-Ende 2027 und kein günstiges Model 2.",
       "sources": [
         {
-          "title": "@CyberFleetUSA auf X (18.11., 16:15)",
-          "url": "https://x.com/CyberFleetUSA/status/2123072615459790953"
+          "title": "@spacefrontierxx auf X (18.11., 16:28)",
+          "url": "https://x.com/spacefrontierxx/status/2123075793106371033"
         },
         {
-          "title": "@ConstrucReview auf X (18.11., 16:15)",
-          "url": "https://x.com/ConstrucReview/status/2123072562062066108"
+          "title": "@theevking auf X (18.11., 16:27)",
+          "url": "https://x.com/theevking/status/2123075733387972649"
         },
         {
-          "title": "@gomarketbeater auf X (18.11., 16:16)",
-          "url": "https://x.com/gomarketbeater/status/2123072786650272156"
+          "title": "@bullishchart auf X (18.11., 16:29)",
+          "url": "https://x.com/bullishchart/status/2123076130739769677"
         }
       ],
-      "updatedAt": "2026-11-18T16:22:00+01:00"
+      "updatedAt": "2026-11-18T16:31:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/WolseleyFund/status/2123070313999257765"
         }
       ],
-      "updatedAt": "2026-11-18T16:22:00+01:00"
+      "updatedAt": "2026-11-18T16:31:00+01:00"
     }
   }
 }
