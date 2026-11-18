@@ -1,14 +1,18 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T14:26:00+01:00",
+  "updatedAt": "2026-11-18T14:31:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 25,
       "postsCount": 24,
-      "reason": "Weiter Thema: 40 Mrd. $ Chip-Finanzierung über Apollo außerhalb der Bilanz. Atreides hat 42 % seines Depots in SpaceX, Kritiker warnen vor hohen Preisen.",
+      "reason": "Neu: SpaceX hat eine Luftgenehmigung in Texas für Supercomputer und Kraftwerk (24 Mrd. $). Dazu die 40-Mrd.-$-Chip-Finanzierung, Kritiker warnen vor hohen Preisen.",
       "sources": [
+        {
+          "title": "@kongbaest auf X (18.11., 14:29)",
+          "url": "https://x.com/kongbaest/status/2123045876998574147"
+        },
         {
           "title": "@TheMarketBishop auf X (18.11., 14:11)",
           "url": "https://x.com/TheMarketBishop/status/2123041496932700314"
@@ -16,13 +20,9 @@
         {
           "title": "@MilkRoadStocks auf X (18.11., 14:15)",
           "url": "https://x.com/MilkRoadStocks/status/2123042297990529476"
-        },
-        {
-          "title": "@tradertvshawn auf X (18.11., 14:23)",
-          "url": "https://x.com/tradertvshawn/status/2123044509525123574"
         }
       ],
-      "updatedAt": "2026-11-18T14:26:00+01:00"
+      "updatedAt": "2026-11-18T14:31:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,7 +43,7 @@
           "url": "https://x.com/GegenDoppeldenk/status/2123041550078767236"
         }
       ],
-      "updatedAt": "2026-11-18T14:26:00+01:00"
+      "updatedAt": "2026-11-18T14:31:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/Bearlovesbull/status/2123037816670072939"
         }
       ],
-      "updatedAt": "2026-11-18T14:26:00+01:00"
+      "updatedAt": "2026-11-18T14:31:00+01:00"
     }
   }
 }
