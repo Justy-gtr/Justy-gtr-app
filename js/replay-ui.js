@@ -429,6 +429,8 @@ export function initTraining() {
     const price = document.getElementById("replay-price");
     if (price) price.textContent = snap.price == null ? "" : formatUsd(snap.price);
     const lastTrade = round.trades?.at(-1);
+    const note = document.getElementById("replay-warn");
+    if (note) note.classList.toggle("replay-ko", !round.position && lastTrade?.reason === "ko");
     if (!round.position && lastTrade?.reason === "ko") warn(UI.reasonKo);
   }
 

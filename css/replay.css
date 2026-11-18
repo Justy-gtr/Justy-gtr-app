@@ -190,6 +190,7 @@
 .replay-price, .replay-pos, .replay-warn, .replay-end { margin: 0; font-variant-numeric: tabular-nums; }
 .replay-pos { font-size: 13px; color: var(--gold-2); }
 .replay-flatline, .replay-warn { color: var(--muted); font-size: 12px; min-height: 1em; }
+.replay-ko { color: var(--down); font-size: 15px; font-weight: 700; }
 .replay-speeds {
   display: flex;
   flex-wrap: wrap;
