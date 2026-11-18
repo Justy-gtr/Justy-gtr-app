@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T12:17:00+01:00",
+  "updatedAt": "2026-11-18T12:34:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 30,
-      "postsCount": 25,
-      "reason": "Nvidias größerer SpaceX-Anteil und CFO-Aussagen zu Starmind-KI-Satelliten werden gefeiert. Chartleute sehen eine laufende Korrektur, bleiben aber gelassen.",
+      "postsCount": 23,
+      "reason": "Vor dem Anthropic-IPO vergleichen viele mit dem SpaceX-Börsenstart. Saudi-Fonds und Druckenmiller als Großaktionäre sind Thema, vorbörslich kaum Bewegung.",
       "sources": [
         {
-          "title": "@goodluckmates auf X (18.11., 12:09)",
-          "url": "https://x.com/goodluckmates/status/2123010630097776873"
+          "title": "@Bojo0x auf X (18.11., 12:29)",
+          "url": "https://x.com/Bojo0x/status/2123015858813591874"
         },
         {
-          "title": "@spcxGOD auf X (18.11., 12:15)",
-          "url": "https://x.com/spcxGOD/status/2123012090025619491"
+          "title": "@Niconiconi8fa auf X (18.11., 12:21)",
+          "url": "https://x.com/Niconiconi8fa/status/2123013598712857040"
         },
         {
-          "title": "@thethirdanalyst auf X (18.11., 12:10)",
-          "url": "https://x.com/thethirdanalyst/status/2123010830618746906"
+          "title": "@ticker_report auf X (18.11., 12:31)",
+          "url": "https://x.com/ticker_report/status/2123016162216739065"
         }
       ],
-      "updatedAt": "2026-11-18T12:17:00+01:00"
+      "updatedAt": "2026-11-18T12:34:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,7 +43,7 @@
           "url": "https://x.com/LumidaNews/status/2123009669333496150"
         }
       ],
-      "updatedAt": "2026-11-18T12:17:00+01:00"
+      "updatedAt": "2026-11-18T12:34:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/corleoneinvests/status/2122971418778272128"
         }
       ],
-      "updatedAt": "2026-11-18T12:17:00+01:00"
+      "updatedAt": "2026-11-18T12:34:00+01:00"
     }
   }
 }
