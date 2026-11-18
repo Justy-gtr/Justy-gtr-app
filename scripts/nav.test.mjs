@@ -5,7 +5,7 @@ import { analyseViewOf, renderAnalyse } from "../js/analyse-view.js";
 import { pagerIndex, pagerLeft } from "../js/nav.js";
 import { detailContent, renderChartsPage } from "../js/views.js";
 
-const PAGES = ["heute", "kalender", "posts", "schwarm", "deutschland", "analyse", "mehr"];
+const PAGES = ["news", "stimmung", "bewertung", "training", "kalender", "mehr"];
 
 test("Jeder Tab trifft seine eigene Seite, nicht die Mitte", () => {
   for (const width of [390, 430]) {
@@ -27,19 +27,28 @@ test("Jeder Tab trifft seine eigene Seite, nicht die Mitte", () => {
   }
 });
 
-test("Sieben Tabs, Deutschland sitzt vor Analyse, Heute öffnet Analyse", () => {
+test("Fünf Tabs, der Kurs öffnet Stimmung", () => {
   const html = fs.readFileSync("index.html", "utf8");
   const nav = fs.readFileSync("js/nav.js", "utf8");
   const app = fs.readFileSync("js/app.js", "utf8");
   const views = fs.readFileSync("js/views.js", "utf8");
+  const training = fs.readFileSync("js/training-view.js", "utf8");
   assert.equal(html.includes('data-page="charts"'), false);
   assert.equal(html.includes("page-charts"), false);
-  assert.equal((html.match(/class="tab"/g) || []).length, 7);
-  assert.match(html, /data-page="schwarm"[\s\S]*data-page="deutschland"[\s\S]*data-page="analyse"/);
-  assert.match(html, />Deutschland</);
+  assert.equal((html.match(/class="tab"/g) || []).length, 6);
+  assert.match(html, /data-page="news"[\s\S]*data-page="stimmung"[\s\S]*data-page="bewertung"[\s\S]*data-page="training"[\s\S]*data-page="kalender"[\s\S]*data-page="mehr"/);
+  assert.match(html, />News</);
+  assert.match(html, />Stimmung</);
+  assert.match(html, />Bewertung</);
+  assert.match(html, />Training</);
+  assert.match(html, />Kalender</);
+  assert.match(html, />Mehr</);
+  assert.match(html, /id="training-mount"/);
+  assert.match(html, /data-training-slot="rueckspiel"/);
+  assert.match(training, /id="training-mount"/);
   assert.equal(nav.includes('"charts"'), false);
   assert.match(views, /data-action="open-analyse"/);
-  assert.match(app, /action === "open-analyse"[\s\S]{0,240}go\("analyse"\)/);
+  assert.match(app, /action === "open-analyse"[\s\S]{0,240}go\("stimmung"\)/);
   assert.match(app, /store\.analyseView = ui\.analyseView/);
   assert.equal(analyseViewOf("chart"), "chart");
   assert.equal(analyseViewOf("kerzen"), "kerzen");

@@ -29,6 +29,7 @@ Der Kurs-Workflow ändert `dataMode` nicht.
 | `seasonality.json` | fasst sie nicht an | Wochentag und Uhrzeit je Aktie, einmal je Berliner Tag, ohne Rohkurse |
 | `moonshots.json` | Texte, Termin, Quellen, `pastCatalysts`, Hebel-ISIN der drei festen Kandidaten | Kurse und Zählung der festen Kandidaten; `nearTerm` täglich aus dem Zahlungskalender |
 | `sentiment.json` | Stimmung je Aktie, mehrmals am Tag | fasst sie nicht an |
+| `fundamentals.json` | fasst sie nicht an | `scripts/fetch-fundamentals.mjs` im Kurs-Workflow, höchstens einmal je Berliner Tag |
 | `de-turbos.json` | Beispiel-ISINs, Emittent, Quelle | fasst sie nicht an |
 | `germany.json` | fasst Kurse und Morgen-Schwankung nicht an | Kurs, Tagesveränderung, Sparkline, Morgen-Schwankung |
 | alle anderen | vollständig | fasst sie nicht an |
@@ -583,7 +584,7 @@ Feste Ids: `spacex`, `tesla`, `rocketlab`, `neuralink`, `xai`, `terafab`, `borin
 
 Eigene Historie je Aktie: wie oft Schluss zu Schluss an einem Wochentag stieg, und wie sich die Stunden in Berliner Zeit verhalten. Keine Rohkurse. Der Kurs-Workflow schreibt die Datei höchstens einmal je Berliner Tag neu (`scripts/fetch-seasonality.mjs`). Fehlt `symbols.*.dayPaths`, weicht `dayPaths.schema` von der Fassung im Code ab, oder fehlt `down` in den Zählungen, rechnet er trotzdem neu. Die Analyse-Spanne ändert diese Karte nicht.
 
-`ranges.all` ist bis zu zwei Jahre, `ranges.year` die letzten 365 Tage bis zum letzten Tageskurs. `days` ist Mo–Fr mit `n`, `up`, `down`, `avg`, `med` (Prozent, Schluss zu Schluss). `hours` und `grid` sind die Berliner Slots `08`–`14` (volle Stunde), `15:00` (nur bis 15:30) und danach `15:30`–`21:30` der US-Sitzung. Jede Zelle in `hours` und `grid` hat `n`, `up`, `down` und `avg`. `up` zählt nur steigende Fälle, `down` nur fallende. Ein unveränderter Fall bleibt in `n` und in keiner der beiden Zahlen. Die Karte zeigt zwei Tabellen mit demselben Raster: „Long: Wie oft ging es hoch?“ (`up` / `n`) und darunter „Short: Wie oft ging es runter?“ (`down` / `n`). Prozent erst ab sieben Fällen, sonst ein Strich. Die Farbe folgt der gezeigten Prozentzahl, grün in der Long-Tabelle und rot in der Short-Tabelle. Fehlt `down` in einer älteren Datei, zeigt die Short-Tabelle einen Strich, bis der Lauf neu schreibt. Die Uhrzeit kommt vom echten Zeitstempel, damit die Sommerzeit nicht verrutscht. Vor 15:30 zählt der deutsche Yahoo-Kurs mit den meisten Stunden (Tesla `TL0.DE`/`TL0.F`/`TL0.SG`, Rocket Lab `6RJ0.F`/`6RJ0.SG`/`6RJ0.MU`, Marvell `9MW.DE`/`9MW.F`/`9MW.SG`, SpaceX Frankfurt `SPX.F`, ersatzweise Xetra `SPX.DE`). `SPX.F` ist bei Yahoo „Space Exploration Techs. Corp.“ an der Frankfurter Börse und hat Stunden ab 8 Uhr. Xetra öffnet erst um 9 und hat keine 8-Uhr-Stunde. Der angezeigte SpaceX-Kurs ist während der deutschen Stunden der frischeste deutsche Platz (`SPX.DE`, `SPX.F`, `SPX.SG`), nicht der gestrige Nasdaq-Schluss. Sonst, wo keine deutsche Reihe reicht, die US-Vorbörse, die etwa um 10:00 beginnt. Beides wird nicht in derselben Stunde gemischt. `earlyNote` sagt auf der Karte, welche Quelle die frühen Stunden trägt. Prozent zeigt die App erst ab sieben Fällen.
+`ranges.all` ist bis zu zwei Jahre, `ranges.year` die letzten 365 Tage bis zum letzten Tageskurs. `days` ist Mo–Fr mit `n`, `up`, `down`, `avg`, `med` (Prozent, Schluss zu Schluss). `hours` und `grid` sind die Berliner Slots `08`–`14` (volle Stunde), `15:00` (nur bis 15:30) und danach `15:30`–`21:30` der US-Sitzung. Jede Zelle in `hours` und `grid` hat `n`, `up`, `down` und `avg`. Ab dem nächsten Lauf können `days` und `hours` zusätzlich `avgUp` und `avgDown` tragen: der mittlere Anstieg nur der steigenden Fälle und der mittlere Rückgang nur der fallenden, in Prozent. Ältere Dateien ohne diese Felder bleiben gültig. Die App rechnet die Balken dann aus der geladenen Kursreihe. `up` zählt nur steigende Fälle, `down` nur fallende. Ein unveränderter Fall bleibt in `n` und in keiner der beiden Zahlen. Die Karte zeigt zwei Tabellen mit demselben Raster: „Long: Wie oft ging es hoch?“ (`up` / `n`) und darunter „Short: Wie oft ging es runter?“ (`down` / `n`). Prozent erst ab sieben Fällen, sonst ein Strich. Die Farbe folgt der gezeigten Prozentzahl, grün in der Long-Tabelle und rot in der Short-Tabelle. Fehlt `down` in einer älteren Datei, zeigt die Short-Tabelle einen Strich, bis der Lauf neu schreibt. Die Uhrzeit kommt vom echten Zeitstempel, damit die Sommerzeit nicht verrutscht. Vor 15:30 zählt der deutsche Yahoo-Kurs mit den meisten Stunden (Tesla `TL0.DE`/`TL0.F`/`TL0.SG`, Rocket Lab `6RJ0.F`/`6RJ0.SG`/`6RJ0.MU`, Marvell `9MW.DE`/`9MW.F`/`9MW.SG`, SpaceX Frankfurt `SPX.F`, ersatzweise Xetra `SPX.DE`). `SPX.F` ist bei Yahoo „Space Exploration Techs. Corp.“ an der Frankfurter Börse und hat Stunden ab 8 Uhr. Xetra öffnet erst um 9 und hat keine 8-Uhr-Stunde. Der angezeigte SpaceX-Kurs ist während der deutschen Stunden der frischeste deutsche Platz (`SPX.DE`, `SPX.F`, `SPX.SG`), nicht der gestrige Nasdaq-Schluss. Sonst, wo keine deutsche Reihe reicht, die US-Vorbörse, die etwa um 10:00 beginnt. Beides wird nicht in derselben Stunde gemischt. `earlyNote` sagt auf der Karte, welche Quelle die frühen Stunden trägt. Prozent zeigt die App erst ab sieben Fällen.
 
 `dayPaths` (Schema `1`) ist der mittlere Verlauf von 07:00 bis 23:00 Uhr Berlin, 33 Körbe zu 30 Minuten. Die Basis ist der erste Druck ab 07:00. Ein Korb ohne Druck bleibt leer. Yahoo-60-Minuten reichen etwa zwei Jahre, 30 Minuten etwa 60 Tage, die US-Reihe inklusive Vorbörse und Nachbörse. Deutsche Kurse nur in Euro: Frankfurt, Xetra, Stuttgart, München, soweit Yahoo sie hat. Frankfurt gewinnt einen Korb, den beide handeln. Stuttgart und die anderen füllen Lücken, sobald dieselbe Börse einen vorherigen Druck hat. Der erste Druck einer neuen Börse ist nur die neue Basis und bleibt eine Lücke. Prozent je Börse, damit Euro und Dollar nicht springen. `coverage` nennt je Korb `n`, `where` und `sources`. 07:00 und 07:30 bleiben leer: Yahoo hat vor 08:00 keinen Druck, auch nicht über Tradegate oder Lang & Schwarz. Frankfurt füllt ab 08:00, Stuttgart die halben Stunden und den späten Handel bis etwa 21:30, die US-Nachbörse 22:00, 22:30 und 23:00. 22:30 liegt nur in den letzten etwa 60 Tagen, weil die lange US-Reihe stündlich auf 22:00 und 23:00 steht. Unter sieben Tagen zeichnet die App die Linie trotzdem und schreibt „wenige Tage“ dazu. Sind die Alpaca-Schlüssel gesetzt, hängt der Lauf IEX-Stunden (etwa zwei Jahre) und IEX-30-Minuten (etwa 70 Tage) als spätere Reihe an. Sie füllt nur leere Körbe, vor allem in den US-Stunden. `n`, `where` und `sources` bleiben. `usFeed` steht danach auf `alpaca-iex`, oder auf `yahoo`, wenn der IEX-Abruf leer blieb. Ohne Schlüssel fehlt `usFeed` und der Lauf ist der bisherige.
 
@@ -649,6 +650,38 @@ Pflicht-Symbole: `SPCX`, `TSLA`, `RKLB`. MRVL gehört nicht dazu. `schema` ist `
 
 Die Lampe ist grün bei `gut` (`#22c55e`), rot bei `schlecht` (`#ef4444`), gelb bei `gemischt`. Grau, wenn der Ton fehlt oder `updatedAt` älter als zwei Stunden ist. Daneben steht „Stimmung · 14:35“ in Berliner Zeit, sonst „Stimmung · noch keine Daten“.
 
+Optional, die Datei muss es nicht haben: `history` ist eine Liste `{ "direction": "up"|"down", "next": "up"|"down" }`. Die Stimmung-Seite zählt, wie oft `direction` und `next` übereinstimmen. Unter sieben brauchbaren Zeilen steht „noch zu wenig Daten“. Fehlt die Liste, gilt dasselbe. Der Assistent lässt das Feld weg, solange keine solche Reihe vorliegt.
+
+## `fundamentals.json`
+
+Bewertung je Aktie. `scripts/fetch-fundamentals.mjs` hängt am Kurs-Workflow und schreibt die Datei höchstens einmal je Berliner Tag. `--force` erzwingt einen neuen Abruf, `--dry-run` schreibt nicht. Quelle ist Yahoo `quoteSummary` (Crumb, ohne Schlüssel) plus die Tagesschlüsse aus der Chart-Schnittstelle. Schlägt der Abruf fehl, bleibt die letzte Datei stehen und der Lauf warnt, statt die Kurse zu blockieren.
+
+Pflicht-Symbole der Bewertung: `SPCX`, `TSLA`, `RKLB`, `MRVL`, `NVDA`. Dieselbe Datei führt zusätzlich große US- und deutsche Technik-, Raumfahrt- und KI-Namen (Apple, Microsoft, Alphabet, Amazon, Meta, AMD, Broadcom, Intel, Qualcomm, ASML, SAP, Infineon). Die Seite nennt daraus bis zu vier Namen mit vergleichsweise niedrigem KGV. Der Lauf holt für die fünf Fokus-Namen auch die Kursspanne, für die übrigen nur die Kennzahlen.
+
+```json
+{
+  "example": false,
+  "asOf": "2026-11-17T22:00:00+01:00",
+  "timezone": "Europe/Berlin",
+  "note": "KGV und KUV beschreiben nur die Lage der Zahl.",
+  "historyNote": "Die eigene Spanne teilt die Tagesschlüsse der letzten zwölf Monate durch den heutigen Gewinn je Aktie.",
+  "fx": { "pair": "EURUSD", "rate": 1.16, "asOf": "2026-11-17T22:00:00+01:00", "source": { "title": "Yahoo Finance EURUSD=X", "url": "https://finance.yahoo.com/quote/EURUSD=X" } },
+  "symbols": []
+}
+```
+
+| Feld | Bedeutung |
+| --- | --- |
+| `trailingPe`, `peState` | KGV der letzten zwölf Monate. `peState`: `gemeldet`, `gerechnet`, `negativ` oder `fehlt`. Bei `negativ` ist `trailingPe` `null` |
+| `forwardPe`, `forwardState` | vorausschauendes KGV, sonst `null` und `fehlt` oder `negativ` |
+| `priceToSales` | KUV, `null` wenn nicht gemeldet |
+| `marketCapUsd`, `marketCapEur` | Marktkapitalisierung. Euro über `fx.rate` (US-Dollar je ein Euro) |
+| `epsTrailing` | Gewinn je Aktie, kann negativ sein |
+| `history` | `n`, `min`, `max`, `current` der Kurs/Gewinn-Spanne. Unter 20 Schlüssen bleibt die Spanne leer |
+| `sources` | Yahoo-Link der Aktie |
+
+Die Seite setzt „günstig“, „normal“ oder „teuer“ nur als Lage gegen die eigene Spanne oder gegen den Median der anderen Symbole in dieser Datei. Das ist keine Branche aus einem Index. Fehlen zwei Vergleichswerte oder die eigene Spanne, steht „noch zu wenig Daten“.
+
 ## `germany.json`
 
 Xetra-Namen mit großem Auf und Ab am Morgen, die bei Trade Republic Long- und Short-Knock-outs haben. Die feste Liste steht in `data/de-turbos.json` (onvista, Filter Trade Republic, Stand `knockoutsAsOf`). `scripts/fetch-germany.mjs` im Kurs-Workflow schreibt die Kurse dazu. Yahoo liefert sie schon in Euro. Der Workflow fasst die Beispiel-ISINs nicht an.
@@ -682,6 +715,12 @@ Xetra-Namen mit großem Auf und Ab am Morgen, die bei Trade Republic Long- und S
 ```
 
 `morning` ist die Morgen-Schwankung: je Xetra-Tag `(Hoch − Tief) / Eröffnung` in Prozent, nur Kerzen von 09:00 bis vor 10:30 Uhr Berlin, aus den 15-Minuten-Kursen des letzten Monats. Der Mittelwert, der größte Tag und `n` nehmen die letzten höchstens 21 fertigen Sitzungen. Der noch laufende Morgen zählt nicht. `sparkline` und `intraday` sind der letzte Handelstag in 5 Minuten. Die Seite sortiert nach `avgPct`, der größte Morgen oben. Die Wörter „kaufen“, „verkaufen“, „Empfehlung“ und „Anlageberatung“ stehen hier nicht. Eine Beispiel-ISIN kann nach dem Knock-out weg sein.
+
+## `lines.json`
+
+Bestätigte Chartlinien und die aktuelle Stunde. `scripts/build-lines.mjs` rechnet sie aus `prices.json`, ohne einen neuen Börsenabruf. Der Kurs-Workflow schreibt die Datei bei jedem Lauf mit. Zusätzlich läuft `.github/workflows/afternoon.yml` montags bis freitags alle 15 Minuten (`*/15 12-21 * * 1-5` in UTC). Das Tor lässt nur 14:00 bis 22:00 Berliner Zeit durch, Sommer und Winter. Die offene App holt Kurse, Wochentag-Stunden und diese Datei im selben Takt nach.
+
+Jede Linie ist `support`, `resistance`, `trend` oder `pattern`. Stütze und Widerstand brauchen mindestens zwei abgeschlossene Berührungen. Ein Trend bleibt, wenn der Kurs ihn reitet oder ihn mindestens zweimal berührt. Höchstens drei Linien je Spanne. `marker` ist `fest`, `2×` oder `3×`. `hour` ist die Berliner Stunde des Laufs: wie oft die letzten fünf Handelstage in dieser Stunde stiegen.
 
 ## Prüfung
 

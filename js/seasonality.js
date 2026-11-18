@@ -261,15 +261,27 @@ function moveCounts(values) {
   return { up, down };
 }
 
+function meanOf(values) {
+  if (!values.length) return null;
+  return round2(values.reduce((sum, value) => sum + value, 0) / values.length);
+}
+
 function summarize(values, withMedian) {
   if (!values.length) {
-    const empty = { n: 0, up: 0, down: 0, avg: null };
+    const empty = { n: 0, up: 0, down: 0, avg: null, avgUp: null, avgDown: null };
     if (withMedian) empty.med = null;
     return empty;
   }
   const { up, down } = moveCounts(values);
   const avg = round2(values.reduce((sum, value) => sum + value, 0) / values.length);
-  const row = { n: values.length, up, down, avg };
+  const row = {
+    n: values.length,
+    up,
+    down,
+    avg,
+    avgUp: meanOf(values.filter((value) => value > 0)),
+    avgDown: meanOf(values.filter((value) => value < 0))
+  };
   if (withMedian) row.med = median(values);
   return row;
 }
@@ -459,14 +471,15 @@ export function seasonalityHeadline(symbol, windowStats) {
 
 const SHARE_RGB = { up: "125, 222, 192", down: "255, 139, 152" };
 
-/** Shade follows the printed share. Stronger means that direction happened more often. */
-function sharePaint(share, mode) {
+/** Under 50 % red, from 50 % green. Farther from 50 is stronger. */
+function sharePaint(share) {
   if (!Number.isFinite(share)) return { style: "", ink: false };
-  const amount = Math.min(1, Math.max(0, share / 100));
-  const alpha = Math.round((0.18 + amount * 0.74) * 100) / 100;
+  const dist = Math.min(1, Math.abs(share - 50) / 50);
+  const alpha = Math.round((0.32 + dist * 0.58) * 100) / 100;
+  const green = share >= 50;
   return {
-    style: `background:rgba(${SHARE_RGB[mode] || SHARE_RGB.up},${alpha})`,
-    ink: amount >= 0.7
+    style: `background:rgba(${green ? SHARE_RGB.up : SHARE_RGB.down},${alpha})`,
+    ink: share >= 70 || share <= 30
   };
 }
 
@@ -531,7 +544,7 @@ function shownShare(row, mode) {
 }
 
 function clockSpan(base, share, mode, aria, spaced) {
-  const paint = share == null ? { style: "", ink: false } : sharePaint(share, mode);
+  const paint = share == null ? { style: "", ink: false } : sharePaint(share);
   const quiet = share == null ? " is-quiet" : "";
   const ink = paint.ink ? " is-ink" : "";
   const text = share == null ? "–" : (spaced ? `${share} %` : `${share}%`);
@@ -609,14 +622,87 @@ function clockGrid(hours, grid, days, mode) {
 
 function clockBlock(hours, grid, days) {
   return `<p class="season-kicker">Long: Wie oft ging es hoch?</p>
-    ${clockGrid(hours, grid, days, "up")}
-    <p class="season-kicker">Short: Wie oft ging es runter?</p>
-    ${clockGrid(hours, grid, days, "down")}`;
+    ${clockGrid(hours, grid, days, "up")}`;
 }
 
 function earlyLine(note) {
   if (!note) return "";
   return `<p class="season-pre">${esc(note)}</p>`;
+}
+
+/** Daily closes from the loaded series. The 5Y row is weekly and stays out. */
+export function directionFromTicker(ticker) {
+  const history = ticker?.history || {};
+  const daily = Array.isArray(history["1Y"]) && history["1Y"].length
+    ? history["1Y"]
+    : (history["6M"] || []);
+  return {
+    days: aggregateWeekdays(daily),
+    hours: aggregateHours(history["1H"] || []),
+    source: "reihe"
+  };
+}
+
+function directionPack(stats) {
+  const days = stats?.days || [];
+  if (!days.some((row) => row && Object.prototype.hasOwnProperty.call(row, "avgUp"))) return null;
+  return { days, hours: stats?.hours || [], source: "datei" };
+}
+
+/** Green from 50 % up-moves, red below. Stronger color means farther from 50. */
+function shareStyle(row) {
+  const share = upPercent(row);
+  if (share == null) return "";
+  const dist = Math.min(1, Math.abs(share - 50) / 50);
+  const alpha = Math.round((0.38 + dist * 0.5) * 100) / 100;
+  const rgb = share >= 50 ? "125, 222, 192" : "255, 139, 152";
+  return `background:rgba(${rgb},${alpha})`;
+}
+
+function heatCell(row, key) {
+  const show = row && row.n >= MIN_CASES && Number.isFinite(row[key]);
+  const text = show ? formatSignedPct(row[key]) : "–";
+  const style = show ? shareStyle(row) : "";
+  return `<td class="heat-cell${show ? "" : " is-quiet"}" style="${style}">${esc(text)}</td>`;
+}
+
+function heatTable(title, labels, rows, keys) {
+  const body = labels.map((label, index) => {
+    const row = rows[index];
+    return `<tr data-heat="${esc(keys[index] || label)}"><th>${esc(label)}</th>${heatCell(row, "avgUp")}${heatCell(row, "avgDown")}</tr>`;
+  }).join("");
+  return `<table class="heat-table" aria-label="${esc(title)}">
+    <thead><tr><th></th><th>hoch</th><th>runter</th></tr></thead>
+    <tbody>${body}</tbody>
+  </table>`;
+}
+
+/** Colored cells: mean rise and mean drop, per weekday and per hour. */
+export function renderDirectionBlock(pack) {
+  const days = pack?.days || [];
+  const hours = pack?.hours || [];
+  const ready = [...days, ...hours].some((row) => row && row.n >= MIN_CASES && (Number.isFinite(row.avgUp) || Number.isFinite(row.avgDown)));
+  if (!ready) {
+    return `<div class="heat-block" id="move-table">
+      <p class="season-kicker">Mittlere Bewegung hoch und runter</p>
+      <p class="season-note">noch zu wenig Daten</p>
+    </div>`;
+  }
+  const shownHours = [];
+  const shownLabels = [];
+  const shownKeys = [];
+  HOUR_SLOTS.forEach((slot, index) => {
+    const row = hours[index];
+    if (!row || row.n < MIN_CASES || (!Number.isFinite(row.avgUp) && !Number.isFinite(row.avgDown))) return;
+    shownHours.push(row);
+    shownLabels.push(slotFace(slot));
+    shownKeys.push(slot);
+  });
+  return `<div class="heat-block" id="move-table">
+    <p class="season-kicker">Mittlere Bewegung hoch und runter</p>
+    ${heatTable("Wochentag", WEEKDAY_LABELS, days, WEEKDAY_LABELS)}
+    ${shownHours.length ? heatTable("Stunde", shownLabels, shownHours, shownKeys) : ""}
+  </div>`;
 }
 
 function rangesMatch(pack) {
@@ -630,26 +716,22 @@ export function renderSeasonalityCard(seasonality, ticker, season) {
   const pack = seasonality?.symbols?.[symbol];
   if (!pack?.ranges?.all) {
     return `<article class="card season-card" aria-label="Wochentag und Uhrzeit">
-      <p class="kicker">Wochentag &amp; Uhrzeit</p>
+      <p class="kicker">Wochentag &amp; Uhrzeit${symbol ? ` · ${esc(symbol)}` : ""}</p>
       <p class="season-note">Für diese Aktie liegen noch keine eigenen Tageszahlen.</p>
       <p class="season-note">${esc(PAST_NOTE)}</p>
     </article>`;
   }
   const key = season === "year" && pack.ranges.year ? "year" : "all";
   const stats = pack.ranges[key];
-  const headline = seasonalityHeadline(symbol, stats);
   const toggle = rangesMatch(pack) ? "" : `<div class="season-toggle" role="group" aria-label="Zeitraum der Statistik">
       <button type="button" data-action="analyse-season" data-season="year" aria-pressed="${key === "year" ? "true" : "false"}">1 Jahr</button>
       <button type="button" data-action="analyse-season" data-season="all" aria-pressed="${key === "all" ? "true" : "false"}">Alles</button>
     </div>`;
   return `<article class="card season-card" aria-label="Wochentag und Uhrzeit" data-season="${key}">
     <div class="season-head">
-      <p class="kicker">Wochentag &amp; Uhrzeit</p>
+      <p class="kicker">Wochentag &amp; Uhrzeit${symbol ? ` · ${esc(symbol)}` : ""}</p>
       ${toggle}
     </div>
-    <p class="season-lead">${esc(headline)}</p>
-    <p class="season-kicker">Tage, Schluss zu Schluss</p>
-    <div class="wd-list">${weekdayRows(stats.days || [])}</div>
     ${clockBlock(stats.hours || [], stats.grid || [], stats.days || [])}
     ${earlyLine(pack.earlyNote)}
     <p class="season-note">${esc(PAST_NOTE)}</p>

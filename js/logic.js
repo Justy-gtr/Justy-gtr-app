@@ -1670,6 +1670,61 @@ export function orderCalendarEvents(events, now = new Date()) {
   return current.map((row) => row.event).concat(past.map((row) => row.event));
 }
 
+/** True once the event is over. A day without a clock lasts through that day. */
+export function eventIsPast(event, now = new Date()) {
+  const nowMs = now instanceof Date ? now.getTime() : new Date(now).getTime();
+  if (!Number.isFinite(nowMs)) return false;
+  const end = calendarEnd(event);
+  const start = calendarStart(event);
+  if (end) return nowMs >= end.getTime();
+  if (event?.time) return Boolean(start) && nowMs >= start.getTime();
+  const day = String(event?.date || "");
+  return Boolean(day) && day < berlinDate(new Date(nowMs));
+}
+
+/** Upcoming and still running only. Anything already over stays off the list. */
+export function calendarList(events, now = new Date()) {
+  return orderCalendarEvents(events, now).filter((event) => !eventIsPast(event, now));
+}
+
+const WEEKDAY_DE = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+
+function calendarWeekday(iso) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso || ""));
+  if (!match) return "";
+  const day = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]))).getUTCDay();
+  return WEEKDAY_DE[day] || "";
+}
+
+function calendarDayLabel(iso) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso || ""));
+  if (!match) return "";
+  return `${calendarWeekday(iso)} ${Number(match[3])}.${match[2]}.`;
+}
+
+/** Weekday, day and clock when the event has one. No invented time. */
+export function calendarWhen(event) {
+  const start = calendarDayLabel(event?.date);
+  if (!start) return "";
+  const clock = event?.time ? ` ${event.time}` : "";
+  const end = typeof event?.end === "string" && /^\d{4}-\d{2}-\d{2}$/.test(event.end) ? event.end : "";
+  if (end && end !== event.date) return `${start}${clock} bis ${calendarDayLabel(end)}`;
+  return `${start}${clock}`;
+}
+
+/** A full sentence for the list, without cutting a word off. */
+export function calendarSentence(event) {
+  let text = String(event?.title || "").replace(/\s*\([^)]*\)/g, " ").replace(/\s+/g, " ").trim();
+  text = text.replace(/\s+([?.!])/g, "$1").replace(/[,:;–\-]\s*$/, "");
+  if (!text) return "Ein Termin steht an.";
+  if (text.length > 118) {
+    const slice = text.slice(0, 110);
+    const cut = Math.max(slice.lastIndexOf(", "), slice.lastIndexOf("; "), slice.lastIndexOf(" und "));
+    text = (cut > 45 ? text.slice(0, cut) : slice.replace(/\s+\S*$/, "")).replace(/[,:;–\-]\s*$/, "");
+  }
+  return /[.!?]$/.test(text) ? text : `${text}.`;
+}
+
 export function isInAppUrl(url, origin = location.origin, base = "") {
   if (!url || url.origin !== origin) return false;
   const path = url.pathname.replace(/\/$/, "");

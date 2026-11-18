@@ -10,6 +10,7 @@ import {
   WEEKDAY_LABELS
 } from "../js/seasonality.js";
 import { TICKERS } from "./fetch-prices.mjs";
+import { checkReplayArchive } from "./replay-check.mjs";
 
 const ANALYSE_SYMBOLS = TICKERS.map((spec) => spec.symbol);
 // MRVL hat keinen Eintrag. Eine andere Routine schreibt diese Datei.
@@ -76,7 +77,7 @@ const files = [
   "promises.json", "production.json", "insiders.json", "briefing.json", "weekly.json",
   "daily_question.json", "glossary.json", "track_record.json", "alerts.json",
   "scenarios.json", "companies.json", "seasonality.json", "moonshots.json", "turbo-universe.json",
-  "sentiment.json", "germany.json", "de-turbos.json"
+  "sentiment.json", "germany.json", "de-turbos.json", "fundamentals.json", "lines.json", "hours.json"
 ];
 const loaded = Object.fromEntries(files.map((name) => [name, read(name)]));
 
@@ -621,6 +622,66 @@ if (germany) {
     if (GERMANY_BANNED.test(JSON.stringify(row))) fail(`${label} Wort`);
   }
 }
+
+const fundamentals = loaded["fundamentals.json"];
+const VALUE_SYMBOLS = ["SPCX", "TSLA", "RKLB", "MRVL", "NVDA"];
+const FUND_BANNED = /\b(kaufen|verkaufen)\b|empfehlung|kaufsignal/i;
+if (fundamentals) {
+  if (FUND_BANNED.test(JSON.stringify({ note: fundamentals.note, historyNote: fundamentals.historyNote }))) {
+    fail("fundamentals Text");
+  }
+  const rows = Array.isArray(fundamentals.symbols) ? fundamentals.symbols : [];
+  for (const symbol of VALUE_SYMBOLS) {
+    const row = rows.find((item) => item?.symbol === symbol);
+    if (!row) fail(`fundamentals fehlt ${symbol}`);
+    else {
+      sourcesOk(row.sources, `fundamentals.${symbol}`);
+      if (row.epsTrailing != null && row.epsTrailing <= 0 && row.trailingPe != null) {
+        fail(`fundamentals.${symbol} KGV trotz negativem Gewinn`);
+      }
+      if (row.marketCapEur != null && typeof row.marketCapEur !== "number") fail(`fundamentals.${symbol}.marketCapEur`);
+      if (FUND_BANNED.test(JSON.stringify(row))) fail(`fundamentals.${symbol} Wort`);
+    }
+  }
+}
+
+const linesDoc = loaded["lines.json"];
+if (linesDoc) {
+  if (linesDoc.schema !== 1) fail("lines.schema");
+  if (linesDoc.everyMin !== 15) fail("lines.everyMin");
+  if (!linesDoc.symbols || typeof linesDoc.symbols !== "object") fail("lines.symbols");
+  for (const symbol of ANALYSE_SYMBOLS) {
+    if (!linesDoc.symbols?.[symbol]) fail(`lines fehlt ${symbol}`);
+  }
+  const allowed = new Set(["support", "resistance", "trend", "pattern"]);
+  const markers = new Set(["", "fest", "2×", "3×"]);
+  for (const [symbol, row] of Object.entries(linesDoc.symbols || {})) {
+    if (!row?.hour || !row?.ranges) fail(`lines.${symbol}`);
+    for (const range of Object.values(row.ranges || {})) {
+      const drawn = range?.lines || [];
+      if (drawn.length > 3) fail(`lines.${symbol} mehr als drei`);
+      for (const line of drawn) {
+        if (!allowed.has(line.kind)) fail(`lines.${symbol} art`);
+        if (!markers.has(line.marker || "")) fail(`lines.${symbol} marker`);
+        if ((line.kind === "support" || line.kind === "resistance") && !(Number(line.n) >= 2)) {
+          fail(`lines.${symbol} zu wenig Berührungen`);
+        }
+      }
+    }
+  }
+}
+
+const hours = loaded["hours.json"];
+if (hours) {
+  if (hours.schema !== 1) fail("hours.schema");
+  for (const symbol of ["SPCX", "TSLA", "RKLB", "MRVL", "NVDA"]) {
+    const day = hours.symbols?.[symbol]?.["2"];
+    if (!day) fail(`hours fehlt ${symbol}`);
+    const cell = day?.["15"];
+    if (!cell || !(cell.n > 0) || cell.up + cell.down !== cell.n) fail(`hours.${symbol}.15`);
+  }
+}
+for (const message of checkReplayArchive(root)) fail(message);
 
 const iconFiles = [
   "icons/logo.svg",

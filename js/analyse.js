@@ -733,6 +733,85 @@ function historyCandles(ticker, range, visible) {
   return candles.length >= visible.length ? candles : visible;
 }
 
+/** A line stays when at least two finished touches hold it. Three, or a trend the price rides, is marked fest. */
+export const RELIABLE_MIN = 2;
+export const RELIABLE_MAX = 3;
+
+function trendHold(line, candles) {
+  const series = candles || [];
+  if (!series.length || line?.eur0 == null || line?.eur1 == null) return { share: 0, near: 0, separated: 0 };
+  const i0 = line.i0 || 0;
+  const i1 = line.i1 ?? series.length - 1;
+  const span = i1 - i0 || 1;
+  const scale = Math.abs(Number(line.eur0)) || 1;
+  const band = scale * 0.006;
+  let near = 0;
+  let separated = 0;
+  let inside = false;
+  const from = Math.max(0, Math.min(i0, series.length - 1));
+  const to = Math.max(from, Math.min(i1, series.length - 1));
+  for (let index = from; index <= to; index += 1) {
+    const candle = series[index];
+    const level = line.eur0 + ((line.eur1 - line.eur0) * (index - i0)) / span;
+    const high = Number(candle?.high ?? candle?.close ?? candle?.eur);
+    const low = Number(candle?.low ?? candle?.close ?? candle?.eur);
+    const hit = Number.isFinite(high) && Number.isFinite(low) && low <= level + band && high >= level - band;
+    if (hit) near += 1;
+    if (hit && !inside) separated += 1;
+    inside = hit;
+  }
+  const total = to - from + 1;
+  return { share: total ? near / total : 0, near, separated };
+}
+
+/**
+ * Confirmed support, resistance, trend, or a pattern segment with two anchors.
+ * The stored candles have no volume, so a line is confirmed by touches:
+ * two finished visits, three or more, or a trend the closes keep riding.
+ * Anything thinner is dropped. At most three lines remain, strongest first.
+ */
+export function keepReliableLines(lines, levels, candles) {
+  const ranked = [];
+  for (const line of lines || []) {
+    if (!line || line.kind === "mark") continue;
+    let score = 0;
+    let marker = "";
+    if (line.kind === "trend") {
+      const hold = trendHold(line, candles);
+      const rides = hold.share >= 0.55 && hold.near >= 3;
+      if (!rides && hold.separated < RELIABLE_MIN) continue;
+      marker = rides || hold.separated >= 3 ? "fest" : "2×";
+      score = (rides ? 5 : 0) + hold.separated;
+    } else if (line.kind === "support" || line.kind === "resistance") {
+      const finished = Number(line.n);
+      if (!Number.isFinite(finished) || finished < RELIABLE_MIN) continue;
+      marker = finished >= 3 ? "fest" : "2×";
+      score = finished + (Number(line.bounce) || 0) * 0.01;
+    } else if (line.kind === "pattern") {
+      if (line.i0 == null || line.i1 == null || line.i1 === line.i0) continue;
+      marker = "2×";
+      score = 2;
+    } else continue;
+    ranked.push({ ...line, marker, score });
+  }
+  ranked.sort((a, b) => b.score - a.score || String(a.kind).localeCompare(String(b.kind)));
+  const kept = ranked.slice(0, RELIABLE_MAX).map(({ score, ...line }) => line);
+  const keptLevels = (levels || []).filter((level) => {
+    if (!level?.kind) return false;
+    if (level.kind === "pattern") return kept.some((line) => line.kind === "pattern");
+    return kept.some((line) => {
+      if (line.kind !== level.kind) return false;
+      const lineEur = Number(line.eur ?? line.eur0);
+      const levelEur = Number(level.eur);
+      if (!Number.isFinite(lineEur) || !Number.isFinite(levelEur)) return true;
+      const scale = Math.abs(levelEur) || 1;
+      return Math.abs(lineEur - levelEur) <= scale * 0.01;
+    });
+  });
+  const seen = new Set(kept.map((line) => line.kind));
+  return { lines: kept, levels: keptLevels, kinds: seen };
+}
+
 function longerDaily(ticker) {
   const year = ticker?.history?.["1Y"] || [];
   const half = ticker?.history?.["6M"] || [];
@@ -754,13 +833,14 @@ export function analyseCandles(visible, history, range) {
     const legend = [{ kind: "pattern", label: shape.legend || TITLES[shape.id] }];
     const levels = withBounces(levelsFrom(shape, past, spec), candles, range);
     const paired = pairLevels(shape.lines, levels);
+    const reliable = keepReliableLines(paired.lines, paired.levels, candles);
     return {
       title: TITLES[shape.id] || TITLES.unklar,
       patternId: shape.id,
-      lines: paired.lines,
-      legend,
+      lines: reliable.lines,
+      legend: legend.filter((item) => reliable.kinds.has(item.kind)),
       outcome: { ...outcome, show: share.show, n: share.n, pct: share.pct },
-      levels: paired.levels,
+      levels: reliable.levels,
       mark: !mark || mark.id === shape.id ? null : mark.id
     };
   }
@@ -769,11 +849,13 @@ export function analyseCandles(visible, history, range) {
   if (!candle) {
     const levels = withBounces((base.levels || []).map(withPrice), candles, range);
     const paired = pairLevels(base.lines || [], levels);
+    const reliable = keepReliableLines(paired.lines, paired.levels, candles);
     return {
       ...base,
       title: TITLES[base.patternId] || base.title,
-      lines: paired.lines,
-      levels: paired.levels
+      lines: reliable.lines,
+      levels: reliable.levels,
+      legend: (base.legend || []).filter((item) => reliable.kinds.has(item.kind))
     };
   }
     const share = pack(countNamed(past, candle.id, spec));

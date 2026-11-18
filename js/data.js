@@ -21,7 +21,10 @@ export const FILES = [
   "companies",
   "moonshots",
   "sentiment",
-  "germany"
+  "germany",
+  "fundamentals",
+  "lines",
+  "hours"
 ];
 
 export async function loadData() {

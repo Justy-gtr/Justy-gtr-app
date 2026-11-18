@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
-import { BOUNCE_FEW, BOUNCE_LOOK, BOUNCE_PLAIN, BREAK_LEGEND, N_LEGEND, analyseCandles, analyseChart, analyseText, countLevelBounces, describeLevelBounces, detectShape, levelMarkLabel, levelPriceTag, levelSideName, numberLevelMarks } from "../js/analyse.js";
+import { BOUNCE_FEW, BOUNCE_LOOK, BOUNCE_PLAIN, BREAK_LEGEND, N_LEGEND, analyseCandles, analyseChart, analyseText, countLevelBounces, describeLevelBounces, detectShape, keepReliableLines, levelMarkLabel, levelPriceTag, levelSideName, numberLevelMarks } from "../js/analyse.js";
 import { guideLegend, musterCard, rangeBoard, renderAnalyse } from "../js/analyse-view.js";
 import { MIN_CASES, analysisText, chartAnalysis } from "../js/analysis.js";
 import { GUTTER_EDGE, GUTTER_GAP, TAG_HPAD, candleBodyWidth, candleX, gutterStart, gutterWidth, nameAnchorX, pickNameY, settlePriceTags, tagBox, visibleGridLabels } from "../js/candle-chart.js";
@@ -116,6 +116,35 @@ test("Eine klare Kopf-Schulter bekommt Linien und erfindet kein Prozent aus zu w
   assert.match(result.outcome.sentence, /Keine Prozentzahl/);
   assert.equal(ADVICE.test(analyseText(result)), false);
   assert.equal(/\b(kaufen|verkaufen)\b/i.test(analyseText(result)), false);
+});
+
+test("Schwache Linien fallen weg, höchstens drei bleiben", () => {
+  const judged = keepReliableLines([
+    { kind: "support", eur0: 10, eur1: 10, n: 1, bounce: 0 },
+    { kind: "resistance", eur0: 12, eur1: 12, n: 2, bounce: 2 },
+    { kind: "support", eur0: 9, eur1: 9, n: 4, bounce: 3 },
+    { kind: "trend", i0: 0, i1: 3, eur0: 8, eur1: 9 }
+  ], [
+    { kind: "support", eur: 10, title: "weg" },
+    { kind: "resistance", eur: 12, title: "bleibt" },
+    { kind: "support", eur: 9, title: "fest" }
+  ], []);
+  assert.equal(judged.lines.some((line) => line.eur0 === 10), false);
+  assert.ok(judged.lines.length <= 3);
+  assert.equal(judged.lines.find((line) => line.eur0 === 9)?.marker, "fest");
+  assert.equal(judged.lines.find((line) => line.eur0 === 12)?.marker, "2×");
+  assert.equal(judged.levels.some((level) => level.eur === 10), false);
+  assert.equal(judged.levels.some((level) => level.eur === 9), true);
+  const rising = pathCandles(Array.from({ length: 24 }, (_, index) => 100 + index));
+  const result = analyseCandles(rising, rising, "1M");
+  const trend = result.lines.find((line) => line.kind === "trend");
+  assert.ok(trend);
+  assert.equal(trend.marker, "fest");
+  assert.ok(result.lines.length <= 3);
+  assert.equal(result.lines.some((line) => line.kind === "support" && (line.n || 0) < 2), false);
+  const legend = guideLegend(result.lines);
+  assert.match(legend, /fest/);
+  assert.equal(/\b(kaufen|verkaufen)\b/i.test(legend), false);
 });
 
 test("Eine gerade Linie bleibt eine Linie und kein Dreieck", () => {
@@ -635,8 +664,8 @@ test("Nummern und Striche kommen aus der Fixture, nicht aus dem Tageskurs", () =
   assert.match(css, /\.guide-legend \.swatch\.trend/);
   assert.equal(css.includes("kaufen"), false);
   const sw = fs.readFileSync("sw.js", "utf8");
-  assert.match(sw, /jgtr-v40/);
-  assert.equal(sw.includes("jgtr-v39"), false);
+  assert.match(sw, /jgtr-v44/);
+  assert.equal(sw.includes("jgtr-v40"), false);
 });
 
 test("Achse nennt die Uhrzeit und das Datum nur am Tageswechsel", () => {

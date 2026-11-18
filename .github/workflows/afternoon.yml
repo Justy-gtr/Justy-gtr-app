@@ -1,0 +1,52 @@
+name: Nachmittag
+
+# GitHub-Cron läuft in UTC und kennt keine Sommerzeit.
+# Alle 15 Minuten von 12:00 bis 21:45 UTC, Montag bis Freitag.
+# 12:00 UTC ist 14:00 Berlin im Sommer, 13:00 UTC ist 14:00 Berlin im Winter.
+# 20:00 UTC ist 22:00 Berlin im Sommer, 21:00 UTC ist 22:00 Berlin im Winter.
+# scripts/afternoon-gate.mjs lässt nur Mo–Fr 14:00–22:00 Berlin durch.
+# Kein neuer Börsenabruf. Die Linien und die aktuelle Stunde
+# werden aus den vorhandenen Kursen neu gerechnet.
+on:
+  schedule:
+    - cron: "*/15 12-21 * * 1-5"
+  workflow_dispatch:
+
+concurrency:
+  group: nachmittag
+  cancel-in-progress: false
+
+jobs:
+  lines:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Stand holen
+        uses: actions/checkout@v4
+
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fenster Europe/Berlin
+        id: gate
+        run: node scripts/afternoon-gate.mjs
+
+      - name: Linien und aktuelle Stunde
+        if: steps.gate.outputs.run == 'true'
+        run: node scripts/build-lines.mjs
+
+      - name: Nur bei Änderung committen
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/lines.json
+          if git diff --cached --quiet; then
+            echo "Keine neuen Linien."
+            exit 0
+          fi
+          git commit -m "Linien und aktuelle Stunde"
+          git push

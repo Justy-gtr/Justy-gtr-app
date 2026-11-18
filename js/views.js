@@ -1,7 +1,8 @@
 import { chartAnalysis } from "./analysis.js";
 import { analyseViewToggle, musterCard } from "./analyse-view.js";
+import { renderBewertung, valueDetail } from "./bewertung-view.js";
+import { renderNews } from "./news-view.js";
 import { sparkline } from "./chart.js";
-import { renderDeutschland } from "./germany-view.js";
 import { knockOut, readKnockStore } from "./knockout.js";
 import { renderMoodLamp } from "./sentiment.js";
 import { SCHEDULES, formatNextUpdate, nextUpdate, sourceUpdates } from "./update-schedule.js";
@@ -29,6 +30,9 @@ import {
   formatEventClock,
   sessionBlurb,
   headlineEvent,
+  calendarList,
+  calendarSentence,
+  calendarWhen,
   orderCalendarEvents,
   calendarStart,
   calendarEnd,
@@ -168,12 +172,10 @@ function gauge(title, block) {
 export function renderShell(ctx) {
   const { data, ui, store } = ctx;
   const pages = [
-    ["page-heute", () => renderHeute(data, ui, store)],
+    ["page-news", () => renderNews(data, ui)],
+    ["page-bewertung", () => renderBewertung(data, ui)],
     ["page-kalender", () => renderKalender(data, ui)],
-    ["page-posts", () => renderPosts(data, ui)],
-    ["page-schwarm", () => renderSchwarm(data)],
-    ["page-deutschland", () => renderDeutschland(data, ui)],
-    ["page-mehr", () => renderMehr(data)]
+    ["page-mehr", () => renderMehr()]
   ];
   for (const [id, build] of pages) {
     const node = document.getElementById(id);
@@ -589,10 +591,9 @@ function sessionDetail(id) {
 }
 
 function eventRow(event) {
-  return `<button type="button" class="card linkish event-row" data-action="open-event" data-id="${esc(event.id)}">
-    <span class="row between"><strong>${esc(event.title)}</strong>${pill(event.example)}</span>
-    <span class="muted">${esc(formatEventClock(event))} · ${esc(event.kind === "external" ? "Extern" : "Unternehmen")}</span>
-    ${prob(event.probabilityPct)}
+  return `<button type="button" class="card linkish cal-row" data-action="open-event" data-id="${esc(event.id)}">
+    <span class="muted">${esc(calendarWhen(event))}</span>
+    <strong>${esc(calendarSentence(event))}</strong>
   </button>`;
 }
 
@@ -623,20 +624,13 @@ function rocketSvg() {
 }
 
 export function renderKalender(data, ui, now = new Date()) {
-  const events = orderCalendarEvents(
-    (data.calendar?.events || []).filter((event) => event.kind === (ui.calKind === "external" ? "external" : "company")),
-    now
-  );
+  const events = calendarList(data.calendar?.events || [], now);
   return `
     <header class="page-head">
       <p class="eyebrow">Kalender</p>
-      <h2>Was den Kurs bewegen kann</h2>
+      <h2>Termine</h2>
     </header>
-    <div class="segment" role="tablist" aria-label="Art der Termine">
-      <button type="button" role="tab" data-action="cal-kind" data-kind="company" aria-selected="${ui.calKind !== "external"}">Unternehmen</button>
-      <button type="button" role="tab" data-action="cal-kind" data-kind="external" aria-selected="${ui.calKind === "external"}">Extern</button>
-    </div>
-    <div class="stack">${events.map((event) => eventRow(event)).join("") || `<p class="empty">In dieser Ansicht liegt nichts.</p>`}</div>
+    <div class="stack">${events.map((event) => eventRow(event)).join("") || `<p class="empty">Gerade liegt kein Termin vorn.</p>`}</div>
   `;
 }
 
@@ -668,7 +662,7 @@ function renderPosts(data, ui) {
   `;
 }
 
-function renderSchwarm(data) {
+export function renderSchwarm(data) {
   const comparison = data.crowd?.comparison || {};
   const investors = data.crowd?.investors || [];
   const picks = [...(data.favorites?.favorites || [])].sort((a, b) => (a.rank || 99) - (b.rank || 99));
@@ -818,7 +812,7 @@ function updatesDetail(data, now) {
         <p class="kicker">Fahrplan</p>
         ${updateCard(SCHEDULES, { plan: true })}
       </section>
-      <p class="muted update-note">Zeiten können ein paar Minuten abweichen. Die App lädt alle Daten neu beim Öffnen, beim Ziehen nach unten und nach mehr als zwei Minuten im Hintergrund. Auf Heute und Analyse kommen die Kurse etwa einmal pro Minute, solange ein neuer Stand anstehen kann.</p>
+      <p class="muted update-note">Zeiten können ein paar Minuten abweichen. Die App lädt alle Daten neu beim Öffnen, beim Ziehen nach unten und nach mehr als zwei Minuten im Hintergrund. Auf News und Stimmung kommen die Kurse etwa einmal pro Minute, solange ein neuer Stand anstehen kann.</p>
     `
   };
 }
@@ -826,6 +820,7 @@ function updatesDetail(data, now) {
 export function detailContent(action, dataset, ctx) {
   const { data, ui, store } = ctx;
   if (action === "open-company") return companyDetail(data, dataset.symbol || dataset.id, ui);
+  if (action === "open-value") return valueDetail(data, dataset.symbol, ctx.now || new Date());
   if (action === "open-favorite") return favoriteDetail(data, dataset.id, ui);
   if (action === "explain") return explainDetail(data, dataset.symbol);
   if (action === "open-event") return eventDetail(data, dataset.id);

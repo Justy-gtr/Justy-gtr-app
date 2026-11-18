@@ -323,8 +323,21 @@ function paintLines(ctx, layout, lines, candles, gridLabels, width) {
       ctx.lineTo(xOf(layout, line.i1 ?? layout.count - 1), y1);
     }
     ctx.stroke();
-    if (line.kind === "pattern") continue;
-    const name = levelSideName(line.kind, line);
+    if (line.kind === "pattern") {
+      if (line.marker) {
+        pendingNames.push({
+          y: y0,
+          anchorY: y0,
+          x: nameAnchorX(layout, line.i0 || 0),
+          text: line.marker,
+          color: style.color,
+          kind: line.kind
+        });
+      }
+      continue;
+    }
+    const side = levelSideName(line.kind, line);
+    const name = line.marker && side ? `${line.marker} · ${side}` : (side || line.marker || "");
     if (name) {
       const anchorX = line.kind === "trend" ? nameAnchorX(layout, line.i0 || 0) : layout.padL + 4;
       pendingNames.push({

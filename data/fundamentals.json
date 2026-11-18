@@ -1,0 +1,562 @@
+{
+  "example": false,
+  "asOf": "2026-11-17T23:27:55.847Z",
+  "timezone": "Europe/Berlin",
+  "note": "KGV und KUV beschreiben nur die Lage der Zahl. Ein fehlender oder negativer Gewinn bleibt leer.",
+  "historyNote": "Die eigene Spanne teilt die Tagesschlüsse der letzten zwölf Monate durch den heutigen Gewinn je Aktie. Frühere Gewinne sind nicht zurückgerechnet.",
+  "fx": {
+    "pair": "EURUSD",
+    "rate": 1.0999,
+    "asOf": "2026-11-17T23:27:51.369Z",
+    "source": {
+      "title": "Yahoo Finance EURUSD=X",
+      "url": "https://finance.yahoo.com/quote/EURUSD=X"
+    }
+  },
+  "symbols": [
+    {
+      "symbol": "SPCX",
+      "name": "Space Exploration Technologies Corp.",
+      "currency": "USD",
+      "trailingPe": 616.09,
+      "peState": "gemeldet",
+      "forwardPe": 51.67,
+      "forwardState": "gemeldet",
+      "priceToSales": 60.06,
+      "marketCapUsd": 1924436721664,
+      "marketCapEur": 1749646987602.5093,
+      "epsTrailing": 0.23,
+      "weekHigh": 225.64,
+      "weekLow": 104.83,
+      "weekHighEur": 205.14592235657784,
+      "weekLowEur": 95.30866442403854,
+      "earningsDate": "2026-10-20",
+      "dividendDate": null,
+      "about": "SpaceX bringt Lasten in den Orbit und betreibt Starlink.",
+      "history": {
+        "n": 110,
+        "min": 470.74,
+        "max": 919.09,
+        "current": 616.09
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance SPCX",
+          "url": "https://finance.yahoo.com/quote/SPCX"
+        }
+      ]
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "currency": "USD",
+      "trailingPe": 417.7,
+      "peState": "gemeldet",
+      "forwardPe": 176.04,
+      "forwardState": "gemeldet",
+      "priceToSales": 14.51,
+      "marketCapUsd": 1502482792448,
+      "marketCapEur": 1366017631101.009,
+      "epsTrailing": 0.91,
+      "weekHigh": 498.83,
+      "weekLow": 297.38,
+      "weekHighEur": 453.5230475497772,
+      "weekLowEur": 270.37003363942176,
+      "earningsDate": "2027-01-27",
+      "dividendDate": null,
+      "about": "Tesla baut Autos, Speicher und Software.",
+      "history": {
+        "n": 251,
+        "min": 327.82,
+        "max": 538.33,
+        "current": 417.7
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA"
+        }
+      ]
+    },
+    {
+      "symbol": "RKLB",
+      "name": "Rocket Lab Corporation",
+      "currency": "USD",
+      "trailingPe": null,
+      "peState": "negativ",
+      "forwardPe": 769.07,
+      "forwardState": "gemeldet",
+      "priceToSales": 42.01,
+      "marketCapUsd": 37047115776,
+      "marketCapEur": 33682258183.471222,
+      "epsTrailing": -0.37,
+      "weekHigh": 151,
+      "weekLow": 37.57,
+      "weekHighEur": 137.28520774615873,
+      "weekLowEur": 34.15765069551777,
+      "earningsDate": "2026-11-09",
+      "dividendDate": null,
+      "about": "Rocket Lab startet kleine Raketen.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance RKLB",
+          "url": "https://finance.yahoo.com/quote/RKLB"
+        }
+      ]
+    },
+    {
+      "symbol": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "currency": "USD",
+      "trailingPe": 48.93,
+      "peState": "gemeldet",
+      "forwardPe": 20.18,
+      "forwardState": "gemeldet",
+      "priceToSales": 14.16,
+      "marketCapUsd": 133831180288,
+      "marketCapEur": 121675770786.43512,
+      "epsTrailing": 3.04,
+      "weekHigh": 329.88,
+      "weekLow": 70.69,
+      "weekHighEur": 299.918174379489,
+      "weekLowEur": 64.26947904354941,
+      "earningsDate": "2026-12-01",
+      "dividendDate": "2026-10-29",
+      "about": "Marvell baut Chips für Rechenzentren und Netze.",
+      "history": {
+        "n": 251,
+        "min": 24.25,
+        "max": 104.09,
+        "current": 48.93
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance MRVL",
+          "url": "https://finance.yahoo.com/quote/MRVL"
+        }
+      ]
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "currency": "USD",
+      "trailingPe": 19.65,
+      "peState": "gemeldet",
+      "forwardPe": 9.8,
+      "forwardState": "gemeldet",
+      "priceToSales": 12.39,
+      "marketCapUsd": 3753892642816,
+      "marketCapEur": 3412939942554.7773,
+      "epsTrailing": 7.91,
+      "weekHigh": 243.37,
+      "weekLow": 148.8,
+      "weekHighEur": 221.2655695972361,
+      "weekLowEur": 135.2850259114465,
+      "earningsDate": "2026-11-17",
+      "dividendDate": "2026-10-01",
+      "about": "Nvidia baut Rechenchips für KI.",
+      "history": {
+        "n": 251,
+        "min": 19.65,
+        "max": 30.25,
+        "current": 19.65
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance NVDA",
+          "url": "https://finance.yahoo.com/quote/NVDA"
+        }
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "currency": "USD",
+      "trailingPe": 39.19,
+      "peState": "gemeldet",
+      "forwardPe": 33.29,
+      "forwardState": "gemeldet",
+      "priceToSales": 10.68,
+      "marketCapUsd": 5114019971072,
+      "marketCapEur": 4649531749315.392,
+      "epsTrailing": 8.98,
+      "weekHigh": 360.83,
+      "weekLow": 243.42,
+      "weekHighEur": 328.0570960996454,
+      "weekLowEur": 221.31102827529773,
+      "earningsDate": "2027-01-28",
+      "dividendDate": "2026-11-16",
+      "about": "Apple baut Telefone, Rechner und Dienste.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance AAPL",
+          "url": "https://finance.yahoo.com/quote/AAPL"
+        }
+      ]
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "currency": "USD",
+      "trailingPe": 26.42,
+      "peState": "gemeldet",
+      "forwardPe": 20.92,
+      "forwardState": "gemeldet",
+      "priceToSales": 10.85,
+      "marketCapUsd": 3759436726272,
+      "marketCapEur": 3417980476654.241,
+      "epsTrailing": 19.16,
+      "weekHigh": 559.15,
+      "weekLow": 349.2,
+      "weekHighEur": 508.36439676334203,
+      "weekLowEur": 317.4834075825075,
+      "earningsDate": "2027-01-27",
+      "dividendDate": "2026-12-10",
+      "about": "Microsoft macht Software und Cloud.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance MSFT",
+          "url": "https://finance.yahoo.com/quote/MSFT"
+        }
+      ]
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "currency": "USD",
+      "trailingPe": 14.63,
+      "peState": "gemeldet",
+      "forwardPe": 18.46,
+      "forwardState": "gemeldet",
+      "priceToSales": 7.31,
+      "marketCapUsd": 3444778729472,
+      "marketCapEur": 3131901745133.194,
+      "epsTrailing": 19.15,
+      "weekHigh": 408.61,
+      "weekLow": 272.11,
+      "weekHighEur": 371.49740885535044,
+      "weekLowEur": 247.3952177470679,
+      "earningsDate": "2026-10-28",
+      "dividendDate": "2026-12-14",
+      "about": "Alphabet betreibt Suche, Werbung und Cloud.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance GOOGL",
+          "url": "https://finance.yahoo.com/quote/GOOGL"
+        }
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "currency": "USD",
+      "trailingPe": 20.85,
+      "peState": "gemeldet",
+      "forwardPe": 23.6,
+      "forwardState": "gemeldet",
+      "priceToSales": 3.5,
+      "marketCapUsd": 2788600315904,
+      "marketCapEur": 2535321680065.4604,
+      "epsTrailing": 12.37,
+      "weekHigh": 287.2,
+      "weekLow": 196,
+      "weekHighEur": 261.11464678607143,
+      "weekLowEur": 178.19801800163648,
+      "earningsDate": "2026-10-29",
+      "dividendDate": null,
+      "about": "Amazon betreibt Handel und Cloud.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance AMZN",
+          "url": "https://finance.yahoo.com/quote/AMZN"
+        }
+      ]
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms, Inc.",
+      "currency": "USD",
+      "trailingPe": 21.11,
+      "peState": "gemeldet",
+      "forwardPe": 17.35,
+      "forwardState": "gemeldet",
+      "priceToSales": 6.55,
+      "marketCapUsd": 1581980975104,
+      "marketCapEur": 1438295276937.9033,
+      "epsTrailing": 29.31,
+      "weekHigh": 779.82,
+      "weekLow": 520.26,
+      "weekHighEur": 708.9917265205928,
+      "weekLowEur": 473.00663696699695,
+      "earningsDate": "2027-01-27",
+      "dividendDate": "2026-09-28",
+      "about": "Meta betreibt soziale Netze.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance META",
+          "url": "https://finance.yahoo.com/quote/META"
+        }
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "currency": "USD",
+      "trailingPe": 107.57,
+      "peState": "gemeldet",
+      "forwardPe": 28.54,
+      "forwardState": "gemeldet",
+      "priceToSales": 18.34,
+      "marketCapUsd": 833176600576,
+      "marketCapEur": 757502137081.5529,
+      "epsTrailing": 4.68,
+      "weekHigh": 658.52,
+      "weekLow": 188.22,
+      "weekHighEur": 598.7089735430493,
+      "weekLowEur": 171.12464769524502,
+      "earningsDate": "2027-02-02",
+      "dividendDate": null,
+      "about": "AMD baut Prozessoren und Grafikchips.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance AMD",
+          "url": "https://finance.yahoo.com/quote/AMD"
+        }
+      ]
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom Inc.",
+      "currency": "USD",
+      "trailingPe": 43.63,
+      "peState": "gemeldet",
+      "forwardPe": 17.6,
+      "forwardState": "gemeldet",
+      "priceToSales": 18.3,
+      "marketCapUsd": 1630671994880,
+      "marketCapEur": 1482563864787.7078,
+      "epsTrailing": 7.83,
+      "weekHigh": 495,
+      "weekLow": 289.77,
+      "weekHighEur": 450.04091281025546,
+      "weekLowEur": 263.45122283843983,
+      "earningsDate": "2026-12-09",
+      "dividendDate": "2026-09-30",
+      "about": "Broadcom baut Chips und Netztechnik.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance AVGO",
+          "url": "https://finance.yahoo.com/quote/AVGO"
+        }
+      ]
+    },
+    {
+      "symbol": "INTC",
+      "name": "Intel Corporation",
+      "currency": "USD",
+      "trailingPe": null,
+      "peState": "negativ",
+      "forwardPe": 30.81,
+      "forwardState": "gemeldet",
+      "priceToSales": 4.9,
+      "marketCapUsd": 293228544000,
+      "marketCapEur": 266595639603.6003,
+      "epsTrailing": -2.35,
+      "weekHigh": 142.35,
+      "weekLow": 32.89,
+      "weekHighEur": 129.42085644149466,
+      "weekLowEur": 29.902718428948084,
+      "earningsDate": "2027-01-28",
+      "dividendDate": "2024-09-01",
+      "about": "Intel stellt Prozessoren her.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance INTC",
+          "url": "https://finance.yahoo.com/quote/INTC"
+        }
+      ]
+    },
+    {
+      "symbol": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "currency": "USD",
+      "trailingPe": 13.12,
+      "peState": "gemeldet",
+      "forwardPe": 13.65,
+      "forwardState": "gemeldet",
+      "priceToSales": 4.14,
+      "marketCapUsd": 178336890880,
+      "marketCapEur": 162139186180.56186,
+      "epsTrailing": 12.7,
+      "weekHigh": 259.92,
+      "weekLow": 121.99,
+      "weekHighEur": 236.3123920356396,
+      "weekLowEur": 110.91008273479406,
+      "earningsDate": "2027-02-03",
+      "dividendDate": "2026-12-17",
+      "about": "Qualcomm entwirft Funkchips für Telefone.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance QCOM",
+          "url": "https://finance.yahoo.com/quote/QCOM"
+        }
+      ]
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML Holding N.V.",
+      "currency": "USD",
+      "trailingPe": 34.03,
+      "peState": "gemeldet",
+      "forwardPe": 21.82,
+      "forwardState": "gemeldet",
+      "priceToSales": 13.5,
+      "marketCapUsd": 533075099648,
+      "marketCapEur": 484657786751.5228,
+      "epsTrailing": 40.64,
+      "weekHigh": 1999.96,
+      "weekLow": 946.11,
+      "weekHighEur": 1818.3107555232293,
+      "weekLowEur": 860.1781980180016,
+      "earningsDate": "2027-01-27",
+      "dividendDate": "2026-11-04",
+      "about": "ASML baut Maschinen für Chipfabriken.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance ASML",
+          "url": "https://finance.yahoo.com/quote/ASML"
+        }
+      ]
+    },
+    {
+      "symbol": "SAP.DE",
+      "name": "SAP SE",
+      "currency": "EUR",
+      "trailingPe": 29.16,
+      "peState": "gemeldet",
+      "forwardPe": 23.74,
+      "forwardState": "gemeldet",
+      "priceToSales": 5.9,
+      "marketCapUsd": null,
+      "marketCapEur": 232572157952,
+      "epsTrailing": 6.91,
+      "weekHigh": 219.65,
+      "weekLow": 127.5,
+      "weekHighEur": 219.65,
+      "weekLowEur": 127.5,
+      "earningsDate": "2026-10-21",
+      "dividendDate": "2026-05-06",
+      "about": "SAP macht Unternehmenssoftware.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance SAP.DE",
+          "url": "https://finance.yahoo.com/quote/SAP.DE"
+        }
+      ]
+    },
+    {
+      "symbol": "IFX.DE",
+      "name": "Infineon Technologies AG",
+      "currency": "EUR",
+      "trailingPe": 42.71,
+      "peState": "gemeldet",
+      "forwardPe": 12.56,
+      "forwardState": "gemeldet",
+      "priceToSales": 3.87,
+      "marketCapUsd": null,
+      "marketCapEur": 63322406912,
+      "epsTrailing": 1.14,
+      "weekHigh": 88.83,
+      "weekLow": 31.27,
+      "weekHighEur": 88.83,
+      "weekLowEur": 31.27,
+      "earningsDate": "2027-02-03",
+      "dividendDate": "2026-02-20",
+      "about": "Infineon macht Halbleiter für Autos und Industrie.",
+      "history": {
+        "n": 0,
+        "min": null,
+        "max": null,
+        "current": null
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance IFX.DE",
+          "url": "https://finance.yahoo.com/quote/IFX.DE"
+        }
+      ]
+    }
+  ]
+}
