@@ -2,6 +2,8 @@
  * Rückspiel-Archiv: 5-Minuten-Kerzen der letzten etwa 60 Tage.
  *
  * Yahoo Chart, includePrePost. US-Ticker ab 10:00 Berlin (Vorbörse, Umsatz oft 0).
+ * Nur 5 Minuten: die 1-Minuten-Reihe von Yahoo reicht nicht über das Archiv.
+ * 10 Minuten bündelt die App aus diesen Kerzen. 1 Minute wird nicht erfunden.
  * Davor deutsche Drucke, über EURUSD in US-Dollar. Fenster 08:00–22:00 Berlin.
  *
  * Idempotent: liegende Tage bleiben. Nur fehlende Tage und die letzten zwei

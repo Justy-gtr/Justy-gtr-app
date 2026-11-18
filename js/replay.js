@@ -8,6 +8,8 @@ export const SESSION_TO = 22 * 60;
 export const US_OPEN_MIN = 15 * 60 + 30;
 export const US_FROM_MIN = 10 * 60;
 export const INTERVAL_MIN = 5;
+export const INTERVALS = [1, 5, 10];
+export const PREVIEW_BARS = 6;
 export const START_EUROS = 100;
 export const SPEEDS = [0.1, 0.2, 0.5, 1, 2];
 export const LEVERAGE_PRESETS = [5, 10, 20, 50, 100];
@@ -56,7 +58,9 @@ export const UI = {
   long: "Long",
   short: "Short",
   out: "Raus",
-  weiter: "Weiter",
+  weiter: "Nächste Kerze",
+  play: "Play",
+  oneMin: "1 Minute liegt im Archiv nicht vor. Gespeichert sind 5-Minuten-Kerzen, 10 Minuten werden daraus gebündelt.",
   allOut: "Komplett raus",
   stakePick: "Einsatz wählen",
   account: "Konto",
@@ -198,6 +202,33 @@ export function unpackBar(bar) {
 
 export function sessionBars(day) {
   return (day?.b || []).filter((bar) => Array.isArray(bar) && bar[0] >= SESSION_FROM && bar[0] < SESSION_TO && bar[4] > 0);
+}
+
+/** Bundle stored 5-minute bars. 1 minute is not in the archive and is not invented. */
+export function aggregateBars(bars, minutes) {
+  if (minutes === 1) return null;
+  const list = (bars || []).filter((bar) => Array.isArray(bar));
+  if (!minutes || minutes === INTERVAL_MIN) return list.map((bar) => bar.slice());
+  if (minutes % INTERVAL_MIN !== 0) return null;
+  const out = [];
+  let bucket = null;
+  for (const bar of list) {
+    const start = Math.floor(bar[0] / minutes) * minutes;
+    if (!bucket || bucket.start !== start) {
+      if (bucket) out.push(bucket.bar);
+      bucket = { start, bar: [start, bar[1], bar[2], bar[3], bar[4], bar[5]] };
+    } else {
+      const packed = bucket.bar;
+      packed[2] = Math.max(packed[2], bar[2]);
+      packed[3] = Math.min(packed[3], bar[3]);
+      packed[4] = bar[4];
+      const left = packed[5];
+      const right = bar[5];
+      packed[5] = left < 0 || right < 0 ? Math.max(left, right) : left + right;
+    }
+  }
+  if (bucket) out.push(bucket.bar);
+  return out;
 }
 
 function clamp(value, min, max) {
@@ -370,7 +401,9 @@ export function createRound(day, settings) {
     marketMin: SESSION_FROM,
     visible: 0,
     bars: sessionBars(day),
+    raw: sessionBars(day),
     interval: INTERVAL_MIN,
+    intervalNote: "",
     cashCents: startCents,
     startCents,
     position: null,
@@ -416,9 +449,62 @@ export function catchUp(state, marketMin) {
   return next;
 }
 
+/** One candle every 5 seconds at 100 %. 200 % is twice as fast. The candle size does not change the wait. */
 export function tick(state, dtSec) {
   if (!state || state.phase !== "play" || state.paused || !(dtSec > 0)) return state;
-  return catchUp(state, state.marketMin + dtSec * state.speed);
+  const pace = state.speed > 0 ? state.speed : 1;
+  const every = 5 / pace;
+  let acc = (state.acc || 0) + dtSec;
+  let next = state;
+  let steps = 0;
+  while (acc >= every - 1e-9 && steps < 30 && next.phase === "play") {
+    acc -= every;
+    const bar = next.bars[next.visible];
+    if (!bar) {
+      next = finish({ ...next, paused: true, acc: 0 });
+      break;
+    }
+    next = { ...catchUp(next, bar[0] + next.interval), paused: false, acc };
+    steps += 1;
+  }
+  if (next.phase !== "play") return next;
+  return { ...next, acc, paused: false };
+}
+
+/** Show the first candles without naming the day. The rest stays hidden. */
+export function previewRound(state, count = PREVIEW_BARS) {
+  if (!state || !state.bars?.length) return state;
+  const n = Math.min(count, state.bars.length);
+  const last = state.bars[n - 1];
+  return {
+    ...state,
+    raw: state.raw || state.bars,
+    visible: n,
+    marketMin: last[0] + state.interval,
+    paused: true
+  };
+}
+
+export function withInterval(state, minutes) {
+  if (!state) return state;
+  if (minutes === 1) return { ...state, intervalNote: UI.oneMin, intervalAsk: 1 };
+  const raw = state.raw || state.bars;
+  const bars = aggregateBars(raw, minutes);
+  if (!bars?.length) return { ...state, intervalNote: UI.oneMin };
+  let visible = 0;
+  while (visible < bars.length && bars[visible][0] + minutes <= state.marketMin + 1e-9) visible += 1;
+  if (visible < 1) visible = Math.min(PREVIEW_BARS, bars.length);
+  const last = bars[Math.max(0, visible - 1)];
+  return {
+    ...state,
+    raw,
+    bars,
+    interval: minutes,
+    visible,
+    marketMin: Math.max(state.marketMin, last[0] + minutes),
+    intervalNote: "",
+    intervalAsk: minutes
+  };
 }
 
 export function stepCandle(state) {

@@ -3,6 +3,9 @@ import fs from "node:fs";
 import test from "node:test";
 import {
   INTERVAL_MIN,
+  aggregateBars,
+  previewRound,
+  withInterval,
   REPLAY_POOL,
   SESSION_FROM,
   SESSION_TO,
@@ -311,6 +314,27 @@ test("Startkonto ist 100 € und ein leeres Konto beginnt wieder bei 100 €", (
   const kept = rescueBalance({ phase: "play", position: null, cashCents: 2500 });
   assert.equal(kept.cashCents, 2500);
   assert.match(fs.readFileSync("js/replay-ui.js", "utf8"), /balance: fieldNumber\("replay-balance", "100"\)/);
+});
+
+test("10 Minuten bündelt 5 Minuten, 1 Minute wird nicht erfunden", () => {
+  const bars = [
+    [480, 10, 12, 9, 11, 1],
+    [485, 11, 13, 10, 12, 2],
+    [490, 12, 12, 8, 9, 3]
+  ];
+  const ten = aggregateBars(bars, 10);
+  assert.equal(ten.length, 2);
+  assert.deepEqual(ten[0], [480, 10, 13, 9, 12, 3]);
+  assert.equal(aggregateBars(bars, 1), null);
+  const round = previewRound(createRound(flatDay(), { balance: 100, stake: 100, leverage: 10, spread: 0 }));
+  assert.ok(round.visible >= 1);
+  assert.equal(round.paused, true);
+  const missing = withInterval(round, 1);
+  assert.match(missing.intervalNote, /1 Minute/);
+  assert.equal(missing.interval, 5);
+  const wider = withInterval(round, 10);
+  assert.equal(wider.interval, 10);
+  assert.ok(wider.visible >= 1);
 });
 
 test("Einsatz über dem Konto geht nicht auf", () => {
