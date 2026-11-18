@@ -106,6 +106,39 @@ jobs:
           echo "changed=true" >> "$GITHUB_OUTPUT"
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
+      - name: 1-Minuten-Archiv, einmal
+        if: steps.gate.outputs.run == 'true'
+        env:
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: |
+          if [ -z "$ALPACA_KEY_ID" ] || [ -z "$ALPACA_SECRET_KEY" ]; then
+            echo "Keine Alpaca-Schlüssel."
+            exit 0
+          fi
+          set +e
+          node --input-type=module -e '
+            import fs from "node:fs";
+            const file = "data/replay/1m/index.json";
+            if (!fs.existsSync(file)) process.exit(2);
+            const count = (JSON.parse(fs.readFileSync(file, "utf8")).days || []).length;
+            process.exit(count >= 200 ? 0 : 2);
+          '
+          status=$?
+          set -e
+          if [ "$status" -eq 0 ]; then
+            echo "1-Minuten-Archiv steht."
+            exit 0
+          fi
+          node scripts/fetch-replay-1m.mjs
+          git add data/replay/1m
+          if git diff --cached --quiet; then
+            echo "Keine 1-Minuten-Kerzen."
+            exit 0
+          fi
+          git commit -m "1-Minuten-Kerzen aus IEX"
+          git push
+
   deploy:
     needs: update
     if: needs.update.outputs.changed == 'true'
