@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-18T18:15:00+01:00",
+  "asOf": "2026-11-18T22:15:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,102 @@
     }
   },
   "posts": [
+    {
+      "id": "post-elonmusk-2123161902683746640",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-18T22:10:18+01:00",
+      "summaryDe": "Musk wirbt erneut für Grok Bot: Man solle ihn „wie einen wirklich klugen Angestellten“ behandeln. Er zitiert einen Artikel über Automatisierung mit Grok Bot. Produktwerbung, keine neuen Zahlen.",
+      "originalText": "Treat Grok @Bot like a really smart employee",
+      "url": "https://x.com/elonmusk/status/2123161902683746640",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX SI"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (18.11., 22:10): Grok Bot wie einen klugen Angestellten behandeln",
+          "url": "https://x.com/elonmusk/status/2123161902683746640"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2123159371119280372",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-18T22:00:15+01:00",
+      "summaryDe": "Musk: „Wir haben viel über die öffentliche Sicherheit nachgedacht.“ Er zitiert ein Video von @farzyness, warum Starship bei Flug 15 im Zickzack statt auf direktem Weg zurückflog. Keine neuen Daten zum nächsten Flug.",
+      "originalText": "We put a lot of thought into public safety",
+      "url": "https://x.com/elonmusk/status/2123159371119280372",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (18.11., 22:00): Gedanken zur öffentlichen Sicherheit (Starship-Rückflug)",
+          "url": "https://x.com/elonmusk/status/2123159371119280372"
+        }
+      ]
+    },
+    {
+      "id": "post-rocketlab-2123141853528871143",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-18T20:50:38+01:00",
+      "summaryDe": "Rocket Lab: Das Triebwerkszentrum in Long Beach ist so aufgebaut, dass alle 8 Tage ein Archimedes-Triebwerk (für die Neutron-Rakete) gebaut und ausgeliefert werden kann. Ein neuer Termin für den ersten Neutron-Start wird nicht genannt.",
+      "originalText": "Development ➡️ Production. We've been building Archimedes for scale from day one. As we iterate through stages of engine development testing, we have set up our Engine Development Center in Long Beach to be capable of building and shipping one Archimedes engine every 8 days.",
+      "url": "https://x.com/RocketLab/status/2123141853528871143",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (18.11., 20:50): ein Archimedes-Triebwerk alle 8 Tage",
+          "url": "https://x.com/RocketLab/status/2123141853528871143"
+        }
+      ]
+    },
+    {
+      "id": "post-starlink-2123132631596556767",
+      "account": "@Starlink",
+      "displayName": "Starlink",
+      "postedAt": "2026-11-18T20:13:59+01:00",
+      "summaryDe": "Starlink Mobile (Handy-Empfang direkt über Satellit) ist jetzt in der Mongolei mit dem Netzbetreiber Mobicom verfügbar: Handys ohne Mobilfunknetz verbinden sich automatisch, Nachrichten-Apps und SMS funktionieren. Musk teilte den Post.",
+      "originalText": "Starlink Mobile is now available in Mongolia with @mobicomofficial! For the first time, phones in areas without cell signal will automatically connect to our satellites, enabling customers to share updates via messaging apps and SMS",
+      "url": "https://x.com/Starlink/status/2123132631596556767",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@Starlink auf X (18.11., 20:13): Starlink Mobile startet in der Mongolei",
+          "url": "https://x.com/Starlink/status/2123132631596556767"
+        }
+      ]
+    },
     {
       "id": "post-starlink-2123099171800719620",
       "account": "@Starlink",

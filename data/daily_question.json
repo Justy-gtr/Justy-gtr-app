@@ -1,37 +1,80 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-17-rklb",
-    "date": "2026-11-17",
-    "question": "Schließt RKLB am Mittwoch, 18. November, an der Nasdaq höher als am Dienstag (55,05 $)?",
-    "karlAnswer": "ja",
-    "karlReason": "Knapp „ja“, etwa 55 zu 45. Nvidia hat nach US-Schluss die Erwartungen übertroffen und einen Ausblick über dem Konsens gegeben; Rocket Lab lag danach um 22:26 nachbörslich bei 55,71 $ (+1,2 %), Nvidia bei +2,1 % (Yahoo, Yahoo Finance). Nach vier Verlusttagen in Folge (von 66,15 auf 55,05 $) ist eine Gegenbewegung möglich, und Rocket Lab zeigte am Abend einen weiteren Archimedes-Heißtest (Rocket Lab auf X). Dagegen: Am Mi um 20:00 kommt das Fed-Protokoll zur Oktober-Sitzung, nachdem St.-Louis-Fed-Chef Musalem bis zu vier Zinserhöhungen für möglich hält (CNBC), und laut WSJ ermittelt die SEC gegen Nvidia (Yahoo Finance/WSJ). Nachbörsliche Kurse nach Zahlen drehen oft bis zum nächsten Tag.",
+    "id": "2026-11-18-rklb",
+    "date": "2026-11-18",
+    "question": "Schließt RKLB am Donnerstag, 19. November, an der Nasdaq höher als am Mittwoch (53,07 $)?",
+    "karlAnswer": "nein",
+    "karlReason": "Knapp „nein“, etwa 45 zu 55. RKLB hat fünf Tage in Folge verloren (von 66,15 auf 53,07 $) und lag nachbörslich um 22:13 bei 53,00 $ (Yahoo). Dagegen spricht: Bei den Optionen wächst die Nachfrage nach Absicherung gegen fallende Kurse (TipRanks/The Fly), das Fed-Protokoll zeigt, dass fast alle Mitglieder weitere Zinserhöhungen erwarten, was teure Wachstumswerte drückt (CNBC), und am Do lenkt der Anthropic-Börsengang viel Geld auf eine einzige Aktie (CNBC). Dafür spricht: Nach dem Rückgang ist eine Gegenbewegung möglich, und Rocket Lab meldete am Abend, alle 8 Tage ein Archimedes-Triebwerk bauen zu können (Rocket Lab auf X). Karl lag zuletzt mit „ja“ zweimal in Folge daneben.",
     "outcome": null,
-    "resolvesAt": "2026-11-18T22:15:00+01:00",
+    "resolvesAt": "2026-11-19T22:15:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: RKLB (Schluss 17.11. 55,05 $, nachbörslich 22:26 55,71 $)",
+        "title": "Yahoo Finance: RKLB (Schluss 18.11. 53,07 $, nachbörslich 22:13 53,00 $)",
         "url": "https://finance.yahoo.com/quote/RKLB/"
       },
       {
-        "title": "Yahoo Finance: RKLB-Historie (Schluss 17.11. 55,05 $, Vortag 57,37 $; Spanne 53,42–58,60 $)",
+        "title": "Yahoo Finance: RKLB-Historie (Schluss 18.11. 53,07 $, 11.11. 66,15 $)",
         "url": "https://finance.yahoo.com/quote/RKLB/history/"
       },
       {
-        "title": "Yahoo Finance Live: Nvidia übertrifft Erwartungen im 3. Quartal, Ausblick Q4 über Erwartung; WSJ: SEC ermittelt (17.11.)",
-        "url": "https://finance.yahoo.com/technology/live/nvidia-earnings-live-nvidia-to-report-q3-results-after-the-bell-with-colette-kress-to-host-first-call-as-interim-ceo-202616349.html"
+        "title": "TipRanks (The Fly): Cboe-Daten zeigen gemischte Optionsstimmung bei Rocket Lab (18.11.)",
+        "url": "https://www.tipranks.com/news/the-fly/cboe-data-shows-mixed-options-sentiment-in-rocket-lab-usa-with-shares-down-1-83-thefly-news"
       },
       {
-        "title": "@RocketLab auf X (17.11., 22:16): Archimedes-Heißtest, über 650 Tests",
-        "url": "https://x.com/RocketLab/status/2122801023458951413"
+        "title": "CNBC: Fed-Mitglieder erwarten weitere Zinserhöhungen und sorgen sich um KI-Inflation – Protokoll (18.11.)",
+        "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html"
       },
       {
-        "title": "CNBC: St.-Louis-Fed-Chef Musalem hält bis zu vier weitere Zinserhöhungen für möglich (17.11.)",
-        "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html"
+        "title": "CNBC: Anthropic erwägt größeres Angebot, Preis nach US-Schluss (18.11.)",
+        "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
+      },
+      {
+        "title": "@RocketLab auf X (18.11., 20:50): ein Archimedes-Triebwerk alle 8 Tage",
+        "url": "https://x.com/RocketLab/status/2123141853528871143"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-17-rklb",
+      "date": "2026-11-17",
+      "question": "Schließt RKLB am Mittwoch, 18. November, an der Nasdaq höher als am Dienstag (55,05 $)?",
+      "karlAnswer": "ja",
+      "karlReason": "Knapp „ja“, etwa 55 zu 45. Nvidia hat nach US-Schluss die Erwartungen übertroffen und einen Ausblick über dem Konsens gegeben; Rocket Lab lag danach um 22:26 nachbörslich bei 55,71 $ (+1,2 %), Nvidia bei +2,1 % (Yahoo, Yahoo Finance). Nach vier Verlusttagen in Folge (von 66,15 auf 55,05 $) ist eine Gegenbewegung möglich, und Rocket Lab zeigte am Abend einen weiteren Archimedes-Heißtest (Rocket Lab auf X). Dagegen: Am Mi um 20:00 kommt das Fed-Protokoll zur Oktober-Sitzung, nachdem St.-Louis-Fed-Chef Musalem bis zu vier Zinserhöhungen für möglich hält (CNBC), und laut WSJ ermittelt die SEC gegen Nvidia (Yahoo Finance/WSJ). Nachbörsliche Kurse nach Zahlen drehen oft bis zum nächsten Tag. Ergebnis: RKLB schloss am Mi bei 53,07 $, 3,6 % unter den 55,05 $ vom Dienstag (Yahoo). Karls „ja“ war falsch: Der nachbörsliche Schwung nach den Nvidia-Zahlen trug nur bis zum Vormittag (Hoch 56,36 $); danach drückten Zinsangst nach dem Fed-Protokoll und schwache Wachstumswerte die Aktie, eine eigene Rocket-Lab-Meldung gab es nicht (Yahoo, CNBC).",
+      "outcome": "nein",
+      "resolvesAt": "2026-11-18T22:15:00+01:00",
+      "sources": [
+        {
+          "title": "Yahoo Finance: RKLB (Schluss 17.11. 55,05 $, nachbörslich 22:26 55,71 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "title": "Yahoo Finance: RKLB-Historie (Schluss 17.11. 55,05 $, Vortag 57,37 $; Spanne 53,42–58,60 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        },
+        {
+          "title": "Yahoo Finance Live: Nvidia übertrifft Erwartungen im 3. Quartal, Ausblick Q4 über Erwartung; WSJ: SEC ermittelt (17.11.)",
+          "url": "https://finance.yahoo.com/technology/live/nvidia-earnings-live-nvidia-to-report-q3-results-after-the-bell-with-colette-kress-to-host-first-call-as-interim-ceo-202616349.html"
+        },
+        {
+          "title": "@RocketLab auf X (17.11., 22:16): Archimedes-Heißtest, über 650 Tests",
+          "url": "https://x.com/RocketLab/status/2122801023458951413"
+        },
+        {
+          "title": "CNBC: St.-Louis-Fed-Chef Musalem hält bis zu vier weitere Zinserhöhungen für möglich (17.11.)",
+          "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html"
+        },
+        {
+          "title": "Yahoo Finance: RKLB-Historie (Schluss 18.11. 53,07 $, Spanne 52,89–56,36 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        },
+        {
+          "title": "CNBC: Fed-Mitglieder erwarten weitere Zinserhöhungen und sorgen sich um KI-Inflation – Protokoll (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html"
+        }
+      ]
+    },
     {
       "id": "2026-11-16-rklb",
       "date": "2026-11-16",
