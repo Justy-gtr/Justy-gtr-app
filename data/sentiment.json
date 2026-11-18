@@ -1,12 +1,12 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T15:40:00+01:00",
+  "updatedAt": "2026-11-18T15:47:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 35,
-      "postsCount": 14,
+      "postsCount": 9,
       "reason": "Neu: Laut Anthropic-Börsenprospekt könnte Anthropic bis 2029 bis zu 120,5 Mrd. $ an SpaceX für Rechenleistung zahlen. Kritik an hohen Zinsen der Chip-Finanzierung.",
       "sources": [
         {
@@ -22,33 +22,33 @@
           "url": "https://x.com/fammetaX/status/2123063118922383862"
         }
       ],
-      "updatedAt": "2026-11-18T15:40:00+01:00"
+      "updatedAt": "2026-11-18T15:47:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 20,
-      "postsCount": 14,
-      "reason": "Tesla startet rund 1,7 % im Plus. Viel Gerede über eine mögliche Fusion mit SpaceX, Skeptiker sehen erst über 410 $ eine echte Erholung.",
+      "score": 15,
+      "postsCount": 11,
+      "reason": "Tesla startet knapp im Plus bei rund 382 $, Trader sehen keine klare Richtung. Gerede über SpaceX-Fusion, deutsche Posts streiten über TÜV und Blickkontrolle.",
       "sources": [
         {
-          "title": "@stocksnipa auf X (18.11., 15:33)",
-          "url": "https://x.com/stocksnipa/status/2123062088990068916"
+          "title": "@Stop_Loss1 auf X (18.11., 15:44)",
+          "url": "https://x.com/Stop_Loss1/status/2123064722945712462"
         },
         {
           "title": "@doogiekidd auf X (18.11., 15:36)",
           "url": "https://x.com/doogiekidd/status/2123062899673555181"
         },
         {
-          "title": "@gkshop88 auf X (18.11., 15:35)",
-          "url": "https://x.com/gkshop88/status/2123062508982509894"
+          "title": "@XBargi2142 auf X (18.11., 15:42)",
+          "url": "https://x.com/XBargi2142/status/2123064344317444429"
         }
       ],
-      "updatedAt": "2026-11-18T15:40:00+01:00"
+      "updatedAt": "2026-11-18T15:47:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": 30,
-      "postsCount": 15,
+      "postsCount": 12,
       "reason": "Weiter Thema: Rocket Lab baut alle 8 Tage eine Electron-Rakete, gut für Neutron. Sonst taucht RKLB vor allem in Watchlisten und Spam-Listen auf.",
       "sources": [
         {
@@ -64,7 +64,7 @@
           "url": "https://x.com/armaanzinvest/status/2123055625395716166"
         }
       ],
-      "updatedAt": "2026-11-18T15:40:00+01:00"
+      "updatedAt": "2026-11-18T15:47:00+01:00"
     }
   }
 }
