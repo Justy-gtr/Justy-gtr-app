@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T12:34:00+01:00",
+  "updatedAt": "2026-11-18T12:57:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 23,
-      "reason": "Vor dem Anthropic-IPO vergleichen viele mit dem SpaceX-Börsenstart. Saudi-Fonds und Druckenmiller als Großaktionäre sind Thema, vorbörslich kaum Bewegung.",
+      "score": 40,
+      "postsCount": 25,
+      "reason": "Viele Fans halten SpaceX fest oder haben den Rücksetzer nachgekauft. SpaceX ist jetzt 80 % der US-Aktien des Saudi-Fonds. Einige warnen vor IPO-Schwäche.",
       "sources": [
         {
-          "title": "@Bojo0x auf X (18.11., 12:29)",
-          "url": "https://x.com/Bojo0x/status/2123015858813591874"
+          "title": "@DavidDTawil auf X (18.11., 12:52)",
+          "url": "https://x.com/DavidDTawil/status/2123021616993255545"
         },
         {
-          "title": "@Niconiconi8fa auf X (18.11., 12:21)",
-          "url": "https://x.com/Niconiconi8fa/status/2123013598712857040"
+          "title": "@stevenmarkryan auf X (18.11., 12:38)",
+          "url": "https://x.com/stevenmarkryan/status/2123018048131289330"
         },
         {
-          "title": "@ticker_report auf X (18.11., 12:31)",
-          "url": "https://x.com/ticker_report/status/2123016162216739065"
+          "title": "@StochAlpha auf X (18.11., 12:39)",
+          "url": "https://x.com/StochAlpha/status/2123018273193169100"
         }
       ],
-      "updatedAt": "2026-11-18T12:34:00+01:00"
+      "updatedAt": "2026-11-18T12:57:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 5,
-      "postsCount": 24,
-      "reason": "Trader sehen Tesla vorbörslich bei ~384 $ vor einem Ausbruch, Fans streiten über die SpaceX-Fusion. Kritische Posts zu sinkenden Gewinnen und Margen.",
+      "score": 15,
+      "postsCount": 25,
+      "reason": "Langfrist-Fans halten Tesla und sprechen über Solar und eine SpaceX-Fusion. Skeptiker zweifeln an Robotaxi-Tempo, ein Fonds soll Tesla-Aktien abgegeben haben.",
       "sources": [
         {
-          "title": "@alphatradingpro auf X (18.11., 12:07)",
-          "url": "https://x.com/alphatradingpro/status/2123010238173630895"
+          "title": "@otigart auf X (18.11., 12:52)",
+          "url": "https://x.com/otigart/status/2123021445513072712"
         },
         {
-          "title": "@New_Dimension10 auf X (18.11., 12:12)",
-          "url": "https://x.com/New_Dimension10/status/2123011521156714571"
+          "title": "@AllTeslaNews auf X (18.11., 12:50)",
+          "url": "https://x.com/AllTeslaNews/status/2123021034374778916"
         },
         {
-          "title": "@LumidaNews auf X (18.11., 12:05)",
-          "url": "https://x.com/LumidaNews/status/2123009669333496150"
+          "title": "@an0ym0u5 auf X (18.11., 12:48)",
+          "url": "https://x.com/an0ym0u5/status/2123020561739632728"
         }
       ],
-      "updatedAt": "2026-11-18T12:34:00+01:00"
+      "updatedAt": "2026-11-18T12:57:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 15,
-      "postsCount": 25,
-      "reason": "Rekordumsatz im Q3 und großer Auftragsbestand werden gelobt, die 100. Electron-Mission ist Thema. Andere fragen nach dem hohen Abstand zum Hoch. Viel Spam.",
+      "score": 10,
+      "postsCount": 11,
+      "reason": "Wenig echte Beiträge: Es geht um neuen Verkaufsdruck nach dem Rückgang von etwa 67 $ auf 55 $ und um den Vergleich mit ASTS. Viel Spam.",
       "sources": [
         {
-          "title": "@SauravM86095769 auf X (18.11., 10:27)",
-          "url": "https://x.com/SauravM86095769/status/2122985132038443176"
+          "title": "@Cabala44Isabel auf X (18.11., 12:52)",
+          "url": "https://x.com/Cabala44Isabel/status/2123021590451585165"
         },
         {
-          "title": "@MrsIglesiasRKLB auf X (18.11., 09:55)",
-          "url": "https://x.com/MrsIglesiasRKLB/status/2122976925459312752"
+          "title": "@grok auf X (18.11., 12:39)",
+          "url": "https://x.com/grok/status/2123018371205640679"
         },
         {
-          "title": "@corleoneinvests auf X (18.11., 09:33)",
-          "url": "https://x.com/corleoneinvests/status/2122971418778272128"
+          "title": "@StockChaser_ auf X (18.11., 12:53)",
+          "url": "https://x.com/StockChaser_/status/2123021811978059853"
         }
       ],
-      "updatedAt": "2026-11-18T12:34:00+01:00"
+      "updatedAt": "2026-11-18T12:57:00+01:00"
     }
   }
 }
