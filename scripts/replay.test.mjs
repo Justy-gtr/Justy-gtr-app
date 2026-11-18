@@ -10,6 +10,7 @@ import {
   PREVIEW_BARS,
   candleWindow,
   dismissSheet,
+  stakeLadder,
   previewRound,
   withInterval,
   REPLAY_POOL,
@@ -339,6 +340,18 @@ test("10 Minuten bündelt 5 Minuten, 1 Minute wird nicht erfunden", () => {
   assert.equal(round.paused, true);
   const wide = candleWindow(400, 280);
   assert.ok(wide.shown >= 30 && wide.shown <= 40);
+  const zoomed = candleWindow(400, 280, 12);
+  assert.equal(zoomed.shown, 12);
+  assert.ok(zoomed.body >= 6);
+  const limited = candleWindow(400, 280, 80);
+  assert.equal(limited.shown, wide.shown);
+  assert.ok(limited.body >= 6);
+  const ladder = stakeLadder(10000, 100);
+  assert.equal(ladder.steps[0], 10);
+  assert.equal(ladder.steps.at(-1), 100);
+  assert.equal(ladder.picked, 100);
+  assert.equal(stakeLadder(25000, 100).steps.at(-1), 250);
+  assert.equal(stakeLadder(5000, 100).picked, 50);
   assert.ok(wide.from > 0);
   assert.ok(wide.body >= 6);
   assert.ok(wide.slot >= 8);

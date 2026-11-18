@@ -215,17 +215,18 @@ export function sessionBars(day) {
 }
 
 /** How many candles fit. Bodies stay at least 6 px, older candles leave to the left. */
-export function candleWindow(count, plotWidth) {
+export function candleWindow(count, plotWidth, cap) {
   const minSlot = CANDLE_MIN_BODY + CANDLE_GAP;
   const width = Math.max(minSlot, Number(plotWidth) || 0);
   const fit = Math.max(1, Math.floor(width / minSlot));
-  const shown = Math.min(Math.max(0, count), fit);
+  const limit = Number(cap) > 0 ? Math.max(1, Math.min(fit, Math.round(Number(cap)))) : fit;
+  const shown = Math.min(Math.max(0, count), limit);
   const slot = shown > 0 ? width / shown : minSlot;
   return {
     from: Math.max(0, count - shown),
     shown,
     slot,
-    body: Math.max(CANDLE_MIN_BODY, Math.min(slot - CANDLE_GAP, 16))
+    body: Math.max(CANDLE_MIN_BODY, Math.min(slot - CANDLE_GAP, 22))
   };
 }
 
@@ -637,6 +638,17 @@ export function setSpeed(state, speed) {
 export function pauseRound(state) {
   if (!state || state.phase !== "play") return state;
   return { ...state, paused: true };
+}
+
+/** 10 € steps from 10 up to the cash still free, never above the account. */
+export function stakeLadder(cashCents, selectedEuros) {
+  const euros = Math.floor(Math.max(0, Number(cashCents) || 0) / 100);
+  const max = Math.floor(euros / 10) * 10;
+  const steps = [];
+  for (let value = 10; value <= max; value += 10) steps.push(value);
+  let picked = Math.round((Number(selectedEuros) || 100) / 10) * 10;
+  if (!steps.includes(picked)) picked = steps.at(-1) || 0;
+  return { steps, picked };
 }
 
 /** The typed Einsatz, and never more than the cash still in the account. Profit stays put. */
