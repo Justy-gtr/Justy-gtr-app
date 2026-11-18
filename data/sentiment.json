@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T15:58:00+01:00",
+  "updatedAt": "2026-11-18T16:08:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 12,
-      "reason": "SpaceX startet bei 143,75 $ und gibt etwas nach. Alle schauen auf den Anthropic-Börsengang heute Abend, dazu viel Hype um eine mögliche Tesla-Fusion.",
+      "score": 25,
+      "postsCount": 15,
+      "reason": "Thema: SpaceX least KI-Chips über eine Apollo-Gesellschaft (rund 40 Mrd. $), Fitch-Rating bleibt BBB+. Dazu Anthropic-Börsengang und Fusionsgerüchte mit Tesla.",
       "sources": [
         {
-          "title": "@gonta_southwood auf X (18.11., 15:51)",
-          "url": "https://x.com/gonta_southwood/status/2123066671279886405"
+          "title": "@grok auf X (18.11., 16:07)",
+          "url": "https://x.com/grok/status/2123070507431891316"
         },
         {
-          "title": "@Stop_Loss1 auf X (18.11., 15:53)",
-          "url": "https://x.com/Stop_Loss1/status/2123067104819646864"
+          "title": "@QuantBuilderAI auf X (18.11., 16:06)",
+          "url": "https://x.com/QuantBuilderAI/status/2123070453270921719"
         },
         {
-          "title": "@Miaavswpv auf X (18.11., 15:49)",
-          "url": "https://x.com/Miaavswpv/status/2123066056881365071"
+          "title": "@jeffboichuk auf X (18.11., 16:07)",
+          "url": "https://x.com/jeffboichuk/status/2123070501136257149"
         }
       ],
-      "updatedAt": "2026-11-18T15:58:00+01:00"
+      "updatedAt": "2026-11-18T16:08:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 15,
-      "postsCount": 12,
-      "reason": "Starke Schwankung: Tesla lief bis 389 $, fiel dann rund 10 $ und erholt sich auf etwa 384 $. Deutsche Posts diskutieren weiter TÜV-Mängel beim Model Y.",
+      "score": 10,
+      "postsCount": 15,
+      "reason": "Musk ist in Shenzhen beim APEC-Gipfel. Deutsche Posts ärgern sich über ein Update, das Tempo-Aufschläge beim Assistenten begrenzt. Fusionsfrage mit SpaceX bleibt.",
       "sources": [
         {
-          "title": "@MentoviaX auf X (18.11., 15:53)",
-          "url": "https://x.com/MentoviaX/status/2123067043591110804"
+          "title": "@diplomattimes auf X (18.11., 16:06)",
+          "url": "https://x.com/diplomattimes/status/2123070430261248270"
         },
         {
-          "title": "@Franz_huemer auf X (18.11., 15:52)",
-          "url": "https://x.com/Franz_huemer/status/2123066847784550525"
+          "title": "@grok auf X (18.11., 16:07)",
+          "url": "https://x.com/grok/status/2123070476989706291"
         },
         {
-          "title": "@Stop_Loss1 auf X (18.11., 15:44)",
-          "url": "https://x.com/Stop_Loss1/status/2123064722945712462"
+          "title": "@IdealGrower auf X (18.11., 16:07)",
+          "url": "https://x.com/IdealGrower/status/2123070579142009207"
         }
       ],
-      "updatedAt": "2026-11-18T15:58:00+01:00"
+      "updatedAt": "2026-11-18T16:08:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": 30,
-      "postsCount": 12,
-      "reason": "Weiter Thema: Rocket Lab baut alle 8 Tage eine Electron-Rakete, gut für Neutron. Sonst taucht RKLB vor allem in Watchlisten und Spam-Listen auf.",
+      "postsCount": 15,
+      "reason": "Einige Trader sehen eine Erholung bei Rocket Lab und nennen eine Nachricht positiv. Der Großteil der Posts sind aber Werbe- und WhatsApp-Spam-Listen.",
       "sources": [
         {
-          "title": "@RCapitalX auf X (18.11., 14:37)",
-          "url": "https://x.com/RCapitalX/status/2123048000666919081"
+          "title": "@WolseleyFund auf X (18.11., 16:06)",
+          "url": "https://x.com/WolseleyFund/status/2123070313999257765"
         },
         {
-          "title": "@Bearlovesbull auf X (18.11., 14:14)",
-          "url": "https://x.com/Bearlovesbull/status/2123042148555653495"
+          "title": "@JaredB747 auf X (18.11., 16:02)",
+          "url": "https://x.com/JaredB747/status/2123069221764800918"
         },
         {
-          "title": "@armaanzinvest auf X (18.11., 15:08)",
-          "url": "https://x.com/armaanzinvest/status/2123055625395716166"
+          "title": "@Tickeron auf X (18.11., 16:05)",
+          "url": "https://x.com/Tickeron/status/2123069970540298665"
         }
       ],
-      "updatedAt": "2026-11-18T15:58:00+01:00"
+      "updatedAt": "2026-11-18T16:08:00+01:00"
     }
   }
 }
