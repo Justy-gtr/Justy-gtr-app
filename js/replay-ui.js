@@ -719,9 +719,11 @@ export function initTraining() {
         });
       }
       if (target?.id === "replay-zoom") {
+        if (!event.isTrusted) return;
         const max = Number(target.max) || 8;
         const value = Number(target.value);
-        chartZoom = value >= max - 0.01 ? 0 : Math.max(8, value);
+        if (!Number.isFinite(value)) return;
+        chartZoom = value >= max - 0.01 ? 0 : Math.max(8, Math.min(max, value));
         const count = document.getElementById("replay-zoom-n");
         if (count) count.textContent = chartZoom ? String(Math.round(chartZoom)) : "Tag";
         const canvas = document.getElementById("replay-canvas");

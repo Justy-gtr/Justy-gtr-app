@@ -6,7 +6,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
+  touch-action: manipulation;
   overscroll-behavior-y: auto;
   padding: 2px 10px 6px;
 }
@@ -73,6 +73,11 @@
   font-size: 13px;
 }
 .replay-free input { width: 72px; min-height: 40px; }
+#page-training button,
+#page-training input,
+#page-training label {
+  touch-action: manipulation;
+}
 .replay-go, .replay-actions button {
   min-height: 44px;
   border: 0;

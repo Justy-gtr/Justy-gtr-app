@@ -384,7 +384,8 @@ test("10 Minuten bündelt 5 Minuten, 1 Minute wird nicht erfunden", () => {
   assert.match(ui, /EINSATZ/);
   assert.match(ui, /HEBEL/);
   assert.match(ui, /replay-close/);
-  assert.match(css, /touch-action:\s*pan-y/);
+  assert.match(css, /touch-action:\s*manipulation/);
+  assert.match(fs.readFileSync(new URL("../index.html", import.meta.url), "utf8"), /maximum-scale=1,\s*user-scalable=no/);
   assert.match(css, /overflow-y:\s*scroll/);
   assert.equal(css.includes("overflow: hidden"), false);
   const missing = withInterval(round, 1);
