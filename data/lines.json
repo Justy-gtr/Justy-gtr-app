@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "example": false,
-  "asOf": "2026-11-18T19:34:05.609Z",
+  "asOf": "2026-11-18T20:06:31.000Z",
   "timezone": "Europe/Berlin",
   "everyMin": 15,
   "window": "Mo–Fr 14:00–22:00",
@@ -9,7 +9,7 @@
   "symbols": {
     "SPCX": {
       "hour": {
-        "hour": 20,
+        "hour": 21,
         "n": 0,
         "up": 0,
         "down": 0,
@@ -322,7 +322,7 @@
     },
     "TSLA": {
       "hour": {
-        "hour": 20,
+        "hour": 21,
         "n": 0,
         "up": 0,
         "down": 0,
@@ -635,12 +635,12 @@
     },
     "RKLB": {
       "hour": {
-        "hour": 20,
-        "n": 2,
-        "up": 1,
+        "hour": 21,
+        "n": 3,
+        "up": 0,
         "down": 0,
-        "share": 50,
-        "avgUp": 0.36,
+        "share": 0,
+        "avgUp": null,
         "avgDown": null
       },
       "ranges": {
@@ -968,7 +968,7 @@
     },
     "MRVL": {
       "hour": {
-        "hour": 20,
+        "hour": 21,
         "n": 0,
         "up": 0,
         "down": 0,
