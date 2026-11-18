@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-17T16:10:00+01:00",
+  "updatedAt": "2026-11-18T10:30:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
+      "score": 45,
       "postsCount": 25,
-      "reason": "SpaceX ist jetzt Nvidias größte Aktienposition, bekannte Trader nennen SPCX ihren Langfrist-Favoriten. Citadels Verkauf und 40-Mrd.-Finanzierung bleiben Thema.",
+      "reason": "Nvidias großer SpaceX-Anteil und das Chip-Leasing (~47 Mrd. $) sind Hauptthema, dazu Starmind-Pläne und höhere Kursziele. Viele Fans, wenig Kritik.",
       "sources": [
         {
-          "title": "@AsFoundX auf X (17.11., 16:00)",
-          "url": "https://x.com/AsFoundX/status/2122706339344330913"
+          "title": "@spcxGOD auf X (18.11., 09:30)",
+          "url": "https://x.com/spcxGOD/status/2122970568014340575"
         },
         {
-          "title": "@RedDogT3 auf X (17.11., 15:18)",
-          "url": "https://x.com/RedDogT3/status/2122695952947413382"
+          "title": "@RobynHD auf X (18.11., 09:53)",
+          "url": "https://x.com/RobynHD/status/2122976356690481570"
         },
         {
-          "title": "@RockyTSTH auf X (17.11., 15:28)",
-          "url": "https://x.com/RockyTSTH/status/2122698481542553847"
+          "title": "@coys05091882 auf X (18.11., 09:19)",
+          "url": "https://x.com/coys05091882/status/2122967990178132355"
         }
       ],
-      "updatedAt": "2026-11-17T16:10:00+01:00"
+      "updatedAt": "2026-11-18T10:30:00+01:00"
     },
     "TSLA": {
-      "mood": "gut",
-      "score": 25,
-      "postsCount": 24,
-      "reason": "Tesla zeigt laut Tradern relative Stärke, die mögliche SpaceX-Fusion (Polymarket ~51 % bis Ende Januar) bleibt Thema. Kritik an FSD und Steuern.",
+      "mood": "gemischt",
+      "score": 10,
+      "postsCount": 25,
+      "reason": "Fans reden über Optimus und eine mögliche SpaceX-Fusion, Kritiker nennen die Aktie überteuert. Viel Spam, wenig echte Neuigkeiten am Morgen.",
       "sources": [
         {
-          "title": "@RedDogT3 auf X (17.11., 15:18)",
-          "url": "https://x.com/RedDogT3/status/2122695952947413382"
+          "title": "@piggyoinkoink12 auf X (18.11., 10:00)",
+          "url": "https://x.com/piggyoinkoink12/status/2122978306089718171"
         },
         {
-          "title": "@Maximilius31 auf X (17.11., 15:15)",
-          "url": "https://x.com/Maximilius31/status/2122695097783382398"
+          "title": "@TslainsightsC auf X (18.11., 09:18)",
+          "url": "https://x.com/TslainsightsC/status/2122967625852481667"
         },
         {
-          "title": "@johnblissnow auf X (17.11., 15:35)",
-          "url": "https://x.com/johnblissnow/status/2122700079169696152"
+          "title": "@ZACarlito auf X (18.11., 10:25)",
+          "url": "https://x.com/ZACarlito/status/2122984453521707207"
         }
       ],
-      "updatedAt": "2026-11-17T16:10:00+01:00"
+      "updatedAt": "2026-11-18T10:30:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 20,
+      "score": 15,
       "postsCount": 25,
-      "reason": "Citadels neuer Einstieg (~221 Mio. $) wird weiter gefeiert, der Vulcan-Fehlstart bei ULA lenkt Blick auf Konkurrenz. Viel Spam, nach Kursminus vorsichtig.",
+      "reason": "Rekordumsatz im Q3 und großer Auftragsbestand werden gelobt, die 100. Electron-Mission ist Thema. Andere fragen nach dem hohen Abstand zum Hoch. Viel Spam.",
       "sources": [
         {
-          "title": "@RCapitalX auf X (17.11., 15:23)",
-          "url": "https://x.com/RCapitalX/status/2122697253525852286"
+          "title": "@SauravM86095769 auf X (18.11., 10:27)",
+          "url": "https://x.com/SauravM86095769/status/2122985132038443176"
         },
         {
-          "title": "@ScottLikesSLS auf X (17.11., 15:48)",
-          "url": "https://x.com/ScottLikesSLS/status/2122703419714539796"
+          "title": "@MrsIglesiasRKLB auf X (18.11., 09:55)",
+          "url": "https://x.com/MrsIglesiasRKLB/status/2122976925459312752"
         },
         {
-          "title": "@almostcrazydi auf X (17.11., 15:03)",
-          "url": "https://x.com/almostcrazydi/status/2122692019168669834"
+          "title": "@corleoneinvests auf X (18.11., 09:33)",
+          "url": "https://x.com/corleoneinvests/status/2122971418778272128"
         }
       ],
-      "updatedAt": "2026-11-17T16:10:00+01:00"
+      "updatedAt": "2026-11-18T10:30:00+01:00"
     }
   }
 }
