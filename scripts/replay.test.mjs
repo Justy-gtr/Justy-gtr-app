@@ -10,6 +10,8 @@ import {
   PREVIEW_BARS,
   candleWindow,
   dismissSheet,
+  stakeBasisCents,
+  stakeChoice,
   stakeLadder,
   previewRound,
   withInterval,
@@ -356,6 +358,19 @@ test("10 Minuten bündelt 5 Minuten, 1 Minute wird nicht erfunden", () => {
   assert.equal(ladder.picked, 100);
   assert.equal(stakeLadder(25000, 100).steps.at(-1), 250);
   assert.equal(stakeLadder(5000, 100).picked, 50);
+  const held = stakeChoice(10000, { stake: 100 });
+  assert.equal(held.allIn, false);
+  assert.equal(held.enabled[100], true);
+  assert.equal(held.enabled[200], false);
+  assert.equal(held.enabled[20], true);
+  const short = stakeChoice(8000, { stake: 100 });
+  assert.equal(short.allIn, true);
+  assert.equal(stakeChoice(8000, { stake: 50 }).allIn, false);
+  assert.equal(tradeStakeCents({ cashCents: 8000, settings: { stake: 100, stakeAllIn: true, spread: 0 } }), 8000);
+  let open = stepCandle(createRound(flatDay(100), { balance: 100, stake: 100, leverage: 10, spread: 0.005 }));
+  open = openTrade(open, "long").state;
+  assert.equal(open.settings.stake, 100);
+  assert.equal(stakeChoice(stakeBasisCents(open), open.settings).allIn, false);
   assert.equal(dismissSheet(56, 0), true);
   assert.equal(dismissSheet(20, 0), false);
   assert.equal(dismissSheet(80, 12), false);

@@ -249,6 +249,27 @@
   accent-color: #e4b15a;
 }
 .replay-pick { display: flex; flex-direction: column; gap: 4px; }
+.replay-stakes {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 4px;
+}
+.replay-stakes button {
+  min-height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 650;
+  padding: 0 1px;
+}
+.replay-stakes button[aria-pressed="true"] {
+  background: var(--gold);
+  color: #1a1206;
+  border-color: transparent;
+}
+.replay-stakes button:disabled { opacity: 0.35; }
 .replay-wheel {
   display: flex;
   gap: 8px;

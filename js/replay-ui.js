@@ -37,7 +37,8 @@ import {
   roundSummary,
   saveHistory,
   settingsFromFields,
-  stakeLadder,
+  stakeBasisCents,
+  stakeChoice,
   takeShare,
   sideLabel,
   skipToOpen,
@@ -48,11 +49,11 @@ import {
 const PAGE_ID = "page-training";
 let chartZoom = 0;
 
-function stakeSteps(cashCents, selected) {
-  const ladder = stakeLadder(cashCents, selected);
-  if (!ladder.steps.length) return "";
-  return ladder.steps.map((euros) => `
-    <button type="button" data-action="replay-stake" data-stake="${euros}" aria-pressed="${euros === ladder.picked ? "true" : "false"}">${euros} €</button>`).join("");
+function stakeButtons(choice) {
+  const presets = choice.presets.map((euros) => `
+    <button type="button" data-action="replay-stake" data-stake="${euros}" aria-pressed="${!choice.allIn && choice.amount === euros ? "true" : "false"}" ${choice.enabled[euros] ? "" : "disabled"}>${euros} €</button>`).join("");
+  const all = `<button type="button" data-action="replay-stake" data-stake="all" aria-pressed="${choice.allIn ? "true" : "false"}" ${choice.allInEnabled ? "" : "disabled"}>All in</button>`;
+  return presets + all;
 }
 
 function fieldNumber(id, fallback) {
@@ -128,9 +129,9 @@ function setupHtml(history, note) {
 }
 
 function playHtml(round, mask, history) {
-  const ladder = stakeLadder(round.cashCents, round.settings?.stake ?? 100);
-  if (round.settings && ladder.picked > 0) round.settings.stake = ladder.picked;
   const snap = liveSnapshot(round);
+  const choice = stakeChoice(stakeBasisCents(round), round.settings);
+  if (round.settings && choice.allIn) round.settings.stakeAllIn = true;
   const open = round.position;
   const figure = open ? formatSignedEuroCents(snap.grossCents) : formatSignedEuroCents(snap.roundCents);
   const pct = open ? formatSignedPct(snap.pct) : "";
@@ -184,7 +185,7 @@ function playHtml(round, mask, history) {
       </div>
       <div class="replay-pick">
         <span class="replay-kicker">${esc(UI.stake)}</span>
-        <div class="replay-wheel" id="replay-wheel">${stakeSteps(round.cashCents, round.settings?.stake ?? 100)}</div>
+        <div class="replay-stakes" role="group" aria-label="${esc(UI.stake)}">${stakeButtons(choice)}</div>
       </div>
     </div>`;
 }
@@ -408,14 +409,6 @@ export function initTraining() {
       drawn = -1;
     }
     if (sheet) mountSheet();
-    const wheel = root.querySelector("#replay-wheel");
-    const picked = wheel?.querySelector("[aria-pressed='true']");
-    if (wheel && picked) {
-      requestAnimationFrame(() => {
-        const delta = picked.getBoundingClientRect().left - wheel.getBoundingClientRect().left - (wheel.clientWidth - picked.clientWidth) / 2;
-        wheel.scrollLeft += delta;
-      });
-    }
     if (screen === "play" && round) {
       updateHud();
       const canvas = document.getElementById("replay-canvas");
@@ -610,11 +603,13 @@ export function initTraining() {
     event.stopPropagation();
     const action = el.dataset.action;
     if (action === "replay-stake") {
-      const euros = Number(el.dataset.stake);
-      if (round?.settings && euros > 0) round.settings.stake = euros;
-      root.querySelectorAll("[data-action='replay-stake']").forEach((button) => {
-        button.setAttribute("aria-pressed", button === el ? "true" : "false");
-      });
+      if (!round?.settings || el.disabled) return;
+      if (el.dataset.stake === "all") round.settings.stakeAllIn = true;
+      else {
+        round.settings.stakeAllIn = false;
+        round.settings.stake = Number(el.dataset.stake);
+      }
+      paint(true);
       return;
     }
     if (action === "replay-lev") {

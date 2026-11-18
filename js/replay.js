@@ -652,6 +652,27 @@ export function pauseRound(state) {
   return { ...state, paused: true };
 }
 
+export const STAKE_PRESETS = [20, 50, 100, 200, 400];
+
+/** Fixed stakes against the account, not the cash left inside an open trade. */
+export function stakeBasisCents(state) {
+  const snap = liveSnapshot(state);
+  const reserved = Math.max(0, state?.cashCents || 0)
+    + (state?.position?.stakeCents || 0)
+    + (state?.position?.entryFeeCents || 0);
+  return Math.max(snap.equityCents || 0, reserved);
+}
+
+export function stakeChoice(equityCents, settings) {
+  const euros = Math.max(0, Number(equityCents) || 0) / 100;
+  const amount = Number(settings?.stake) || 100;
+  const covered = amount <= euros + 1e-6;
+  const allIn = Boolean(settings?.stakeAllIn) || !covered;
+  const enabled = {};
+  for (const value of STAKE_PRESETS) enabled[value] = value <= euros + 1e-6;
+  return { presets: STAKE_PRESETS, amount, allIn, enabled, allInEnabled: euros >= 1 };
+}
+
 /** 10 € steps from 10 up to the cash still free, never above the account. */
 export function stakeLadder(cashCents, selectedEuros) {
   const euros = Math.floor(Math.max(0, Number(cashCents) || 0) / 100);
@@ -666,7 +687,9 @@ export function stakeLadder(cashCents, selectedEuros) {
 /** The typed Einsatz, and never more than the cash still in the account. Profit stays put. */
 export function tradeStakeCents(state) {
   const cash = Math.max(0, Number(state?.cashCents) || 0);
-  const base = eurosToCents(state?.settings?.stake || START_EUROS);
+  const base = state?.settings?.stakeAllIn
+    ? cash
+    : eurosToCents(state?.settings?.stake || START_EUROS);
   let wanted = Math.min(cash, Math.max(0, base));
   const spread = Number(state?.settings?.spread) || 0;
   const fee = Math.round(wanted * spread);
@@ -685,7 +708,9 @@ export function openTrade(state, side) {
   const candle = unpackBar(working.bars[working.visible - 1]);
   const asked = eurosToCents(working.settings?.stake || 0);
   const started = Number(working.startCents) || eurosToCents(START_EUROS);
-  if (asked > working.cashCents && asked > started) return { state: working, ok: false, reason: "stake" };
+  if (!working.settings?.stakeAllIn && asked > working.cashCents && asked > started) {
+    return { state: working, ok: false, reason: "stake" };
+  }
   const stake = tradeStakeCents(working);
   const fee = Math.round(stake * (Number(working.settings?.spread) || 0));
   if (stake < 100 || working.cashCents < stake + fee) return { state: working, ok: false, reason: "stake" };
@@ -726,7 +751,7 @@ export function rescueBalance(state) {
     cashCents: cash,
     startCents: cash,
     revived: (state.revived || 0) + 1,
-    settings: { ...(state.settings || {}), stake: START_EUROS, balance: START_EUROS }
+    settings: { ...(state.settings || {}), stake: START_EUROS, balance: START_EUROS, stakeAllIn: false }
   };
 }
 
