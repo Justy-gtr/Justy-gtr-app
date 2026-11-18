@@ -109,7 +109,7 @@
 }
 .replay-chart {
   flex: 1 1 auto;
-  min-height: 180px;
+  min-height: 96px;
   border-radius: 16px;
   border: 1px solid var(--line);
   background: rgba(0, 0, 0, 0.28);
@@ -191,7 +191,8 @@
 .replay-hud small { font-size: 13px; font-weight: 650; }
 .replay-price, .replay-pos, .replay-warn, .replay-end { margin: 0; font-variant-numeric: tabular-nums; }
 .replay-pos { font-size: 13px; color: var(--gold-2); }
-.replay-flatline, .replay-warn { color: var(--muted); font-size: 12px; min-height: 1em; }
+.replay-flatline, .replay-warn { color: var(--muted); font-size: 12px; min-height: 0; }
+.replay-warn:empty { display: none; }
 .replay-ko { color: var(--down); font-size: 15px; font-weight: 700; }
 .replay-speeds {
   display: flex;
@@ -248,28 +249,54 @@
   width: 100%;
   accent-color: #e4b15a;
 }
-.replay-pick { display: flex; flex-direction: column; gap: 4px; }
-.replay-stakes {
+.replay-band {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 4px;
+  grid-template-columns: 1.15fr 1fr 1.15fr;
+  gap: 6px;
+  flex: none;
 }
-.replay-stakes button {
-  min-height: 42px;
-  border-radius: 12px;
+.replay-tile {
+  grid-column: 1;
+  display: grid;
+  place-items: center;
+  min-height: 44px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--gold-2);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.replay-band-2 .replay-tile { grid-row: 1 / span 2; }
+.replay-lev-grid, .replay-stake-grid {
+  grid-column: 2 / 4;
+  display: grid;
+  gap: 6px;
+}
+.replay-lev-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.replay-stake-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.replay-lev-grid button, .replay-stake-grid button, .replay-fresh {
+  min-height: 44px;
+  border-radius: 14px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.04);
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 650;
-  padding: 0 1px;
+  padding: 0 2px;
 }
-.replay-stakes button[aria-pressed="true"] {
+.replay-lev-grid button[aria-pressed="true"],
+.replay-stake-grid button[aria-pressed="true"] {
   background: var(--gold);
   color: #1a1206;
   border-color: transparent;
 }
-.replay-stakes button:disabled { opacity: 0.35; }
+.replay-stake-grid button:disabled { opacity: 0.35; }
+.replay-fresh {
+  width: 100%;
+  color: var(--gold-2);
+}
 .replay-wheel {
   display: flex;
   gap: 8px;

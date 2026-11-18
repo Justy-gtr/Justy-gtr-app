@@ -4,6 +4,7 @@ import test from "node:test";
 import { packOneMinute } from "./fetch-replay-1m.mjs";
 import {
   INTERVAL_MIN,
+  LEVERAGE_PRESETS,
   aggregateBars,
   applyOneMinute,
   mixSessionBars,
@@ -315,6 +316,8 @@ test("Texte und Archiv bleiben ohne Rat und ohne Schlüssel", () => {
 test("Startkonto ist 100 € und ein leeres Konto beginnt wieder bei 100 €", () => {
   assert.equal(START_EUROS, 100);
   assert.equal(normalizeSettings({}).balance, 100);
+  assert.equal(normalizeSettings({}).leverage, 100);
+  assert.deepEqual(LEVERAGE_PRESETS, [10, 20, 50, 80, 100]);
   assert.equal(createRound(flatDay(), {}).cashCents, 10000);
   const wiped = rescueBalance({ phase: "play", position: null, cashCents: 0, revived: 0 });
   assert.equal(wiped.cashCents, 10000);
@@ -377,6 +380,9 @@ test("10 Minuten bündelt 5 Minuten, 1 Minute wird nicht erfunden", () => {
   const ui = fs.readFileSync(new URL("../js/replay-ui.js", import.meta.url), "utf8");
   const css = fs.readFileSync(new URL("../css/replay.css", import.meta.url), "utf8");
   assert.match(ui, /Schließen/);
+  assert.match(ui, /Neu mit 100/);
+  assert.match(ui, /EINSATZ/);
+  assert.match(ui, /HEBEL/);
   assert.match(ui, /replay-close/);
   assert.match(css, /touch-action:\s*pan-y/);
   assert.match(css, /overflow-y:\s*scroll/);

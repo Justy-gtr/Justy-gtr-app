@@ -14,7 +14,7 @@ export const CANDLE_MIN_BODY = 6;
 export const CANDLE_GAP = 2;
 export const START_EUROS = 100;
 export const SPEEDS = [0.1, 0.2, 0.5, 1, 2];
-export const LEVERAGE_PRESETS = [5, 10, 20, 50, 100];
+export const LEVERAGE_PRESETS = [10, 20, 50, 80, 100];
 export const TAKE_PRESETS = [25, 50, 100];
 export const MIN_DAY_BARS = 60;
 export const MIN_LAST_MIN = 20 * 60;
@@ -328,7 +328,7 @@ function num(value, fallback) {
 export function normalizeSettings(raw = {}) {
   const balance = clamp(num(raw.balance, START_EUROS), 10, 1_000_000);
   const stake = clamp(num(raw.stake, 100), 1, balance);
-  const leverage = clamp(num(raw.leverage, 10), 1, 200);
+  const leverage = clamp(num(raw.leverage, 100), 1, 200);
   const spread = clamp(num(raw.spread, 0.005), 0, 0.25);
   const target = num(raw.takeProfitPct, 0);
   const again = num(raw.reenterPct, 0);

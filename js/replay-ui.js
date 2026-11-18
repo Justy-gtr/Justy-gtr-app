@@ -64,7 +64,7 @@ function fieldNumber(id, fallback) {
 function readFields() {
   return settingsFromFields({
     stake: fieldNumber("replay-stake", "100"),
-    leverage: fieldNumber("replay-lev", "10"),
+    leverage: fieldNumber("replay-lev", "100"),
     spread: fieldNumber("replay-spread", "0,5"),
     balance: fieldNumber("replay-balance", "100"),
     target: fieldNumber("replay-target", ""),
@@ -98,7 +98,7 @@ function statsBlock(history) {
 function setupHtml(history, note) {
   const saved = history?.settings;
   const stake = saved?.stake ?? 100;
-  const leverage = saved?.leverage ?? 10;
+  const leverage = saved?.leverage ?? 100;
   const presets = LEVERAGE_PRESETS.map((value) => `
     <button type="button" data-action="replay-lev" data-lev="${value}" aria-pressed="${value === Number(leverage) ? "true" : "false"}">${value}</button>`).join("");
   return `
@@ -135,7 +135,7 @@ function playHtml(round, mask, history) {
   const open = round.position;
   const figure = open ? formatSignedEuroCents(snap.grossCents) : formatSignedEuroCents(snap.roundCents);
   const pct = open ? formatSignedPct(snap.pct) : "";
-  const leverage = Number(round.settings?.leverage) || 10;
+  const leverage = Number(round.settings?.leverage) || 100;
   const presets = LEVERAGE_PRESETS.map((value) => `
     <button type="button" data-action="replay-lev" data-lev="${value}" aria-pressed="${value === leverage ? "true" : "false"}">${value}</button>`).join("");
   const intervals = [1, 5, 10].map((value) => `
@@ -179,19 +179,20 @@ function playHtml(round, mask, history) {
         <button type="button" class="replay-out" data-action="replay-out" ${open ? "" : "disabled"}>${esc(UI.out)}</button>
         <button type="button" class="replay-allout" data-action="replay-end">${esc(UI.allOut)}</button>
       </div>
-      <div class="replay-tools">
-        <span class="replay-kicker">${esc(UI.leverage)}</span>
-        <div class="replay-presets" role="group" aria-label="${esc(UI.leverage)}">${presets}</div>
+      <div class="replay-band replay-band-2">
+        <div class="replay-tile">EINSATZ</div>
+        <div class="replay-stake-grid" role="group" aria-label="${esc(UI.stake)}">${stakeButtons(choice)}</div>
       </div>
-      <div class="replay-pick">
-        <span class="replay-kicker">${esc(UI.stake)}</span>
-        <div class="replay-stakes" role="group" aria-label="${esc(UI.stake)}">${stakeButtons(choice)}</div>
+      <div class="replay-band">
+        <div class="replay-tile">HEBEL</div>
+        <div class="replay-lev-grid" role="group" aria-label="${esc(UI.leverage)}">${presets}</div>
       </div>
+      ${snap.equityCents < 10000 ? `<button type="button" class="replay-fresh" data-action="replay-fresh">Neu mit 100 €</button>` : ""}
     </div>`;
 }
 
 function sheetHtml(round, history) {
-  const leverage = Number(round?.settings?.leverage) || 10;
+  const leverage = Number(round?.settings?.leverage) || 100;
   const presets = LEVERAGE_PRESETS.map((value) => `
     <button type="button" data-action="replay-lev" data-lev="${value}" aria-pressed="${value === leverage ? "true" : "false"}">${value}</button>`).join("");
   return `
@@ -602,6 +603,11 @@ export function initTraining() {
     if (!String(el.dataset.action || "").startsWith("replay-")) return;
     event.stopPropagation();
     const action = el.dataset.action;
+    if (action === "replay-fresh") {
+      const settings = { ...(round?.settings || history.settings || {}), balance: 100, stake: 100, stakeAllIn: false, leverage: round?.settings?.leverage || 100 };
+      begin(settings);
+      return;
+    }
     if (action === "replay-stake") {
       if (!round?.settings || el.disabled) return;
       if (el.dataset.stake === "all") round.settings.stakeAllIn = true;
