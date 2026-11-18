@@ -79,5 +79,41 @@ export function checkReplayArchive(root) {
       }
     }
   }
+  const minuteIndex = path.join(dir, "1m", "index.json");
+  if (fs.existsSync(minuteIndex)) {
+    let minute;
+    try {
+      minute = JSON.parse(fs.readFileSync(minuteIndex, "utf8"));
+    } catch (error) {
+      errors.push(`kein JSON: data/replay/1m/index.json (${error.message})`);
+      return errors;
+    }
+    const minuteText = JSON.stringify(minute);
+    if (SECRET.test(minuteText)) errors.push("Schlüssel-Muster in data/replay/1m/index.json");
+    if (BANNED.test(minuteText)) errors.push("verbotenes Wort in data/replay/1m");
+    for (const day of minute.days || []) {
+      const file = path.join(dir, "1m", day.s, `${day.d}.json`);
+      if (!fs.existsSync(file)) {
+        errors.push(`fehlt: data/replay/1m/${day.s}/${day.d}.json`);
+        continue;
+      }
+      let body;
+      try {
+        body = JSON.parse(fs.readFileSync(file, "utf8"));
+      } catch (error) {
+        errors.push(`kein JSON: 1m/${day.s}/${day.d} (${error.message})`);
+        continue;
+      }
+      if (body.src !== "alpaca-iex") errors.push(`1m quelle ${day.s} ${day.d}`);
+      let prev = 929;
+      for (const bar of body.b || []) {
+        if (!Array.isArray(bar) || bar.length !== 6 || bar[0] < 15 * 60 + 30 || bar[0] >= SESSION_TO || bar[0] <= prev) {
+          errors.push(`1m balken ${day.s} ${day.d}`);
+          break;
+        }
+        prev = bar[0];
+      }
+    }
+  }
   return errors;
 }

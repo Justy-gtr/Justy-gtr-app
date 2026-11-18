@@ -1,9 +1,12 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
+import { packOneMinute } from "./fetch-replay-1m.mjs";
 import {
   INTERVAL_MIN,
   aggregateBars,
+  applyOneMinute,
+  mixSessionBars,
   previewRound,
   withInterval,
   REPLAY_POOL,
@@ -330,11 +333,36 @@ test("10 Minuten bündelt 5 Minuten, 1 Minute wird nicht erfunden", () => {
   assert.ok(round.visible >= 1);
   assert.equal(round.paused, true);
   const missing = withInterval(round, 1);
-  assert.match(missing.intervalNote, /1 Minute/);
+  assert.match(missing.intervalNote, /1-Minuten/);
   assert.equal(missing.interval, 5);
+  const mixed = mixSessionBars(
+    [[900, 1, 1, 1, 1, 0], [925, 1, 2, 1, 1, 0], [930, 9, 9, 9, 9, 0]],
+    [[930, 2, 3, 1, 2, 4], [931, 2, 2, 2, 2, 1], [800, 5, 5, 5, 5, 1]]
+  );
+  assert.deepEqual(mixed.bars.filter((bar) => bar[6] === 5).map((bar) => bar[0]), [900, 925]);
+  assert.deepEqual(mixed.bars.filter((bar) => bar[6] === 1).map((bar) => bar[0]), [930, 931]);
+  const switched = applyOneMinute(round, [[930, 2, 3, 1, 2, 4], [931, 2, 2, 2, 2, 1]]);
+  assert.equal(switched.interval, 1);
+  assert.ok(switched.bars.some((bar) => bar[6] === 5 && bar[0] < 930));
+  assert.ok(switched.bars.some((bar) => bar[6] === 1));
   const wider = withInterval(round, 10);
   assert.equal(wider.interval, 10);
   assert.ok(wider.visible >= 1);
+  const ui = fs.readFileSync(new URL("../js/replay-ui.js", import.meta.url), "utf8");
+  assert.match(ui, /"5 Min"/);
+  assert.match(ui, /"1 Min"/);
+  let walked = applyOneMinute({ ...round, marketMin: 930 }, [[930, 2, 3, 1, 2, 4], [931, 2, 2, 2, 2, 1]]);
+  assert.ok(walked.bars[walked.visible - 1][0] < 930);
+  walked = stepCandle(walked);
+  assert.equal(walked.bars[walked.visible - 1][0], 930);
+  assert.equal(walked.bars[walked.visible - 1][6], 1);
+  assert.equal(walked.marketMin, 931);
+  const packed = packOneMinute("TSLA", "2026-11-17", [
+    { t: "2026-11-17T14:29:00Z", o: 1, h: 1, l: 1, c: 1, v: 1 },
+    { t: "2026-11-17T14:30:00Z", o: 2, h: 3, l: 1.5, c: 2.5, v: 9 }
+  ]);
+  assert.deepEqual(packed.b.map((bar) => bar[0]), [930]);
+  assert.equal(packed.src, "alpaca-iex");
 });
 
 test("Einsatz über dem Konto geht nicht auf", () => {

@@ -197,14 +197,62 @@ export function assembleDay(date, usPoints, eurSeries, fxPoints) {
 }
 
 export function unpackBar(bar) {
-  return { t: bar[0], o: bar[1], h: bar[2], l: bar[3], c: bar[4], v: bar[5] };
+  return {
+    t: bar[0],
+    o: bar[1],
+    h: bar[2],
+    l: bar[3],
+    c: bar[4],
+    v: bar[5],
+    span: Number(bar[6]) > 0 ? Number(bar[6]) : 0
+  };
 }
 
 export function sessionBars(day) {
   return (day?.b || []).filter((bar) => Array.isArray(bar) && bar[0] >= SESSION_FROM && bar[0] < SESSION_TO && bar[4] > 0);
 }
 
-/** Bundle stored 5-minute bars. 1 minute is not in the archive and is not invented. */
+function barSpan(bar, fallback) {
+  const span = Number(bar?.[6]);
+  return span > 0 ? span : (fallback > 0 ? fallback : INTERVAL_MIN);
+}
+
+/** 5-minute bars before the US open, real 1-minute bars from 15:30. Nothing is filled in. */
+export function mixSessionBars(fiveBars, oneBars) {
+  const early = [];
+  for (const bar of fiveBars || []) {
+    if (!Array.isArray(bar) || bar[0] >= US_OPEN_MIN) continue;
+    const next = bar.slice(0, 6);
+    next[6] = 5;
+    early.push(next);
+  }
+  const late = [];
+  for (const bar of oneBars || []) {
+    if (!Array.isArray(bar) || bar[0] < US_OPEN_MIN || bar[0] >= SESSION_TO) continue;
+    const next = bar.slice(0, 6);
+    next[6] = 1;
+    late.push(next);
+  }
+  late.sort((a, b) => a[0] - b[0]);
+  return { bars: early.concat(late), hasOne: late.length > 0 };
+}
+
+export function intervalMarks(bars) {
+  let five = false;
+  let one = false;
+  let switchMin = null;
+  for (const bar of bars || []) {
+    const span = Number(bar?.[6]) || 0;
+    if (span >= 5) five = true;
+    if (span === 1) {
+      one = true;
+      if (switchMin == null) switchMin = bar[0];
+    }
+  }
+  return { five, one, switchMin };
+}
+
+/** Bundle stored 5-minute bars. 1 minute is not invented. */
 export function aggregateBars(bars, minutes) {
   if (minutes === 1) return null;
   const list = (bars || []).filter((bar) => Array.isArray(bar));
@@ -435,7 +483,7 @@ export function catchUp(state, marketMin) {
   let cashCents = state.cashCents;
   let position = state.position;
   const trades = state.trades.slice();
-  while (visible < state.bars.length && state.bars[visible][0] + state.interval <= limit + 1e-9) {
+  while (visible < state.bars.length && state.bars[visible][0] + barSpan(state.bars[visible], state.interval) <= limit + 1e-9) {
     const candle = unpackBar(state.bars[visible]);
     if (position) {
       const settled = settle(position, candle, state.settings, trades, cashCents);
@@ -464,7 +512,7 @@ export function tick(state, dtSec) {
       next = finish({ ...next, paused: true, acc: 0 });
       break;
     }
-    next = { ...catchUp(next, bar[0] + next.interval), paused: false, acc };
+    next = { ...catchUp(next, bar[0] + barSpan(bar, next.interval)), paused: false, acc };
     steps += 1;
   }
   if (next.phase !== "play") return next;
@@ -485,9 +533,43 @@ export function previewRound(state, count = PREVIEW_BARS) {
   };
 }
 
+export function applyOneMinute(state, oneBars) {
+  if (!state) return state;
+  const late = (oneBars || []).filter((bar) => Array.isArray(bar) && bar[0] >= US_OPEN_MIN);
+  if (!late.length) {
+    return {
+      ...state,
+      intervalAsk: 1,
+      intervalNote: "Für diesen Tag liegen keine 1-Minuten-Kerzen vor."
+    };
+  }
+  const five = (state.raw || state.bars || []).map((bar) => bar.slice(0, 6));
+  const mixed = mixSessionBars(five, late);
+  let visible = 0;
+  while (visible < mixed.bars.length && mixed.bars[visible][0] + barSpan(mixed.bars[visible], 5) <= state.marketMin + 1e-9) {
+    visible += 1;
+  }
+  if (visible < 1) visible = Math.min(PREVIEW_BARS, mixed.bars.length);
+  const last = mixed.bars[Math.max(0, visible - 1)];
+  return {
+    ...state,
+    raw: five,
+    oneBars: late,
+    bars: mixed.bars,
+    interval: 1,
+    intervalAsk: 1,
+    intervalNote: "",
+    visible,
+    marketMin: Math.max(state.marketMin, last[0] + barSpan(last, 1))
+  };
+}
+
 export function withInterval(state, minutes) {
   if (!state) return state;
-  if (minutes === 1) return { ...state, intervalNote: UI.oneMin, intervalAsk: 1 };
+  if (minutes === 1) {
+    if (state.oneBars?.length) return applyOneMinute(state, state.oneBars);
+    return { ...state, intervalAsk: 1, intervalNote: "Für diesen Tag liegen keine 1-Minuten-Kerzen vor." };
+  }
   const raw = state.raw || state.bars;
   const bars = aggregateBars(raw, minutes);
   if (!bars?.length) return { ...state, intervalNote: UI.oneMin };
@@ -511,7 +593,7 @@ export function stepCandle(state) {
   if (!state || state.phase !== "play") return state;
   const nextBar = state.bars[state.visible];
   if (!nextBar) return finish({ ...state, paused: true });
-  return { ...catchUp(state, nextBar[0] + state.interval), paused: true };
+  return { ...catchUp(state, nextBar[0] + barSpan(nextBar, state.interval)), paused: true };
 }
 
 export function skipToOpen(state) {

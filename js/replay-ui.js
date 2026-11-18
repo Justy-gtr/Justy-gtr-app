@@ -21,6 +21,8 @@ import {
   formatUsd,
   hiddenLabels,
   historyStats,
+  applyOneMinute,
+  intervalMarks,
   knockBarrier,
   liveSnapshot,
   loadHistory,
@@ -267,10 +269,11 @@ function drawChart(canvas, round) {
   ctx.moveTo(xOf(now), padT);
   ctx.lineTo(xOf(now), padT + plotH);
   ctx.stroke();
-  const slot = Math.max(1, xOf(8 * 60 + 5) - xOf(8 * 60));
-  const bodyW = Math.max(1.4, Math.min(7, slot * 0.62));
   for (const candle of visible) {
-    const x = xOf(candle.t + 2.5);
+    const span = candle.span || round.interval || 5;
+    const x = xOf(candle.t + span / 2);
+    const slot = Math.max(0.6, xOf(candle.t + span) - xOf(candle.t));
+    const bodyW = Math.max(1.1, Math.min(7, slot * 0.62));
     const up = candle.c >= candle.o;
     const quiet = candle.v === 0;
     ctx.globalAlpha = quiet ? 0.35 : 1;
@@ -288,6 +291,22 @@ function drawChart(canvas, round) {
     else ctx.fillRect(x - bodyW / 2, top, bodyW, h);
   }
   ctx.globalAlpha = 1;
+  const marks = intervalMarks((round.bars || []).slice(0, round.visible));
+  if (round.intervalAsk === 1 && (marks.five || marks.one)) {
+    ctx.font = "10px -apple-system, sans-serif";
+    ctx.textAlign = "left";
+    ctx.fillStyle = "rgba(183,192,208,.85)";
+    if (marks.five) ctx.fillText("5 Min", xOf(8 * 60) + 4, padT + 12);
+    if (marks.one && marks.switchMin != null) {
+      const x = xOf(marks.switchMin);
+      ctx.strokeStyle = "rgba(228,177,90,.55)";
+      ctx.beginPath();
+      ctx.moveTo(x, padT);
+      ctx.lineTo(x, padT + plotH);
+      ctx.stroke();
+      ctx.fillText("1 Min", Math.min(padL + plotW - 36, x + 4), padT + 12);
+    }
+  }
   if (barrier != null) {
     const y = pinned === "low" ? padT + plotH - 1 : pinned === "high" ? padT + 1 : yOf(barrier);
     ctx.strokeStyle = "#ff8b98";
@@ -442,6 +461,22 @@ export function initTraining() {
     return index;
   }
 
+  async function loadOneMinute() {
+    if (!round || !meta) return;
+    let bars = null;
+    try {
+      const response = await fetch(`${appBase()}/data/replay/1m/${meta.symbol}/${meta.date}.json`, { cache: "no-cache" });
+      if (response.ok) {
+        const body = await response.json();
+        bars = body?.b || null;
+      }
+    } catch {
+      bars = null;
+    }
+    round = applyOneMinute(round, bars);
+    paint(true);
+  }
+
   async function loadDay(choice) {
     const response = await fetch(`${appBase()}/data/replay/${choice.symbol}/${choice.date}.json`, { cache: "no-cache" });
     if (!response.ok) throw new Error(String(response.status));
@@ -517,10 +552,13 @@ export function initTraining() {
     }
     if (action === "replay-interval") {
       const minutes = Number(el.dataset.min);
-      if (round) {
-        round = withInterval(round, minutes);
-        paint(true);
+      if (!round) return;
+      if (minutes === 1) {
+        loadOneMinute();
+        return;
       }
+      round = withInterval(round, minutes);
+      paint(true);
       return;
     }
     if (action === "replay-play") {

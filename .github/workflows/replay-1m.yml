@@ -1,0 +1,46 @@
+name: Eine Minute
+
+# Alpaca IEX, nur Marktdaten. Schlüssel kommen aus den Repository-Secrets.
+# 20:30 und 21:30 UTC decken 22:30 Berlin in Sommer und Winter.
+# workflow_dispatch holt fehlende Tage des Archivs nach.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 20 * * 1-5"
+    - cron: "30 21 * * 1-5"
+
+concurrency:
+  group: replay-1m
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Stand holen
+        uses: actions/checkout@v4
+
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 1-Minuten-Kerzen
+        env:
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: node scripts/fetch-replay-1m.mjs
+
+      - name: Nur bei Änderung committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/replay/1m
+          if git diff --cached --quiet; then
+            echo "Keine neuen 1-Minuten-Kerzen."
+            exit 0
+          fi
+          git commit -m "1-Minuten-Kerzen aus IEX"
+          git push
