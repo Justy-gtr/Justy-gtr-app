@@ -75,7 +75,7 @@ export const UI = {
   statsHits: "Trefferquote",
   statsSum: "Summe",
   reasonZiel: "Ziel",
-  reasonKo: "KO",
+  reasonKo: "Knock-out",
   reasonRaus: "Raus",
   quiet: "Kerzen ohne Umsatz sind blass.",
   loading: "Tage werden geladen …",
@@ -414,9 +414,14 @@ function applyClose(position, event, minute, settings, cashCents) {
   const value = event.reason === "ko"
     ? 0
     : theoreticalCents(position.stakeCents, position.leverage, position.entry, event.price, position.side);
-  const exitFee = event.reason === "ko" ? 0 : Math.round(value * settings.spread);
-  const payout = value - exitFee;
-  const pnlCents = payout - position.stakeCents - position.entryFeeCents;
+  const exitFee = event.reason === "ko" ? 0 : Math.round(value * (settings.spread || 0));
+  let payout = value - exitFee;
+  let pnlCents = payout - position.stakeCents - (position.entryFeeCents || 0);
+  const floor = -position.stakeCents;
+  if (pnlCents < floor) {
+    payout += floor - pnlCents;
+    pnlCents = floor;
+  }
   const trade = {
     side: position.side,
     entryMin: position.entryMin,
@@ -427,7 +432,7 @@ function applyClose(position, event, minute, settings, cashCents) {
     pnlCents,
     stakeCents: position.stakeCents
   };
-  let cash = cashCents + payout;
+  let cash = Math.max(0, cashCents + payout);
   let next = null;
   if (event.reason === "ziel" && settings.reenterPct > 0 && event.share !== "part") {
     const stake = Math.round(cash * settings.reenterPct / 100);
@@ -634,13 +639,11 @@ export function pauseRound(state) {
   return { ...state, paused: true };
 }
 
-/** Next trade puts Einsatz plus the profit so far into the position, and never more than the account. */
+/** The typed Einsatz, and never more than the cash still in the account. Profit stays put. */
 export function tradeStakeCents(state) {
   const cash = Math.max(0, Number(state?.cashCents) || 0);
-  const start = Number(state?.startCents) || eurosToCents(START_EUROS);
   const base = eurosToCents(state?.settings?.stake || START_EUROS);
-  const profit = Math.max(0, cash - start);
-  let wanted = Math.min(cash, base + profit);
+  let wanted = Math.min(cash, Math.max(0, base));
   const spread = Number(state?.settings?.spread) || 0;
   const fee = Math.round(wanted * spread);
   if (wanted + fee > cash) wanted = Math.max(0, cash - Math.round(cash * spread));

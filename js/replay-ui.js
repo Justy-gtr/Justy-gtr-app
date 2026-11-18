@@ -428,6 +428,8 @@ export function initTraining() {
     }
     const price = document.getElementById("replay-price");
     if (price) price.textContent = snap.price == null ? "" : formatUsd(snap.price);
+    const lastTrade = round.trades?.at(-1);
+    if (!round.position && lastTrade?.reason === "ko") warn(UI.reasonKo);
   }
 
   function warn(text) {

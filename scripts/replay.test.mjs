@@ -35,6 +35,7 @@ import {
   tradeStakeCents,
   openTrade,
   pickRound,
+  reasonLabel,
   rememberRound,
   roundSummary,
   sessionBars,
@@ -171,8 +172,8 @@ test("Eine Kerze mit Ziel und Knock-out endet im Knock-out", () => {
   const after = catchUp({ ...opened.state, bars }, opened.state.marketMin + INTERVAL_MIN);
   assert.equal(after.trades.at(-1).reason, "ko");
   assert.equal(after.position, null);
-  assert.equal(after.trades.at(-1).pnlCents, -10000 - 50);
-  assert.equal(after.cashCents, 100000 - 10000 - 50);
+  assert.equal(after.trades.at(-1).pnlCents, -10000);
+  assert.equal(after.cashCents, 100000 - 10000);
 });
 
 test("Raus bucht den Spread, Ziel kann neu rein", () => {
@@ -315,8 +316,8 @@ test("Startkonto ist 100 € und ein leeres Konto beginnt wieder bei 100 €", (
   const wiped = rescueBalance({ phase: "play", position: null, cashCents: 0, revived: 0 });
   assert.equal(wiped.cashCents, 10000);
   assert.equal(wiped.revived, 1);
-  assert.equal(tradeStakeCents({ cashCents: 15000, startCents: 10000, settings: { stake: 100, spread: 0 } }), 15000);
-  assert.equal(tradeStakeCents({ cashCents: 15000, startCents: 10000, settings: { stake: 40, spread: 0 } }), 9000);
+  assert.equal(tradeStakeCents({ cashCents: 15000, startCents: 10000, settings: { stake: 100, spread: 0 } }), 10000);
+  assert.equal(tradeStakeCents({ cashCents: 15000, startCents: 10000, settings: { stake: 40, spread: 0 } }), 4000);
   const kept = rescueBalance({ phase: "play", position: null, cashCents: 2500 });
   assert.equal(kept.cashCents, 2500);
   assert.match(fs.readFileSync("js/replay-ui.js", "utf8"), /balance: fieldNumber\("replay-balance", "100"\)/);
@@ -381,6 +382,38 @@ test("10 Minuten bündelt 5 Minuten, 1 Minute wird nicht erfunden", () => {
   ]);
   assert.deepEqual(packed.b.map((bar) => bar[0]), [930]);
   assert.equal(packed.src, "alpaca-iex");
+});
+
+test("50 € Einsatz verliert höchstens 50 €, auch nach einem Gewinn", () => {
+  let round = stepCandle(createRound(flatDay(100), { balance: 100, stake: 50, leverage: 20, spread: 0.005 }));
+  round = { ...round, cashCents: 25000 };
+  const opened = openTrade(round, "long");
+  assert.equal(opened.ok, true);
+  assert.equal(opened.state.position.stakeCents, 5000);
+  const bars = opened.state.bars.slice();
+  const next = bars[opened.state.visible];
+  bars[opened.state.visible] = [next[0], 100, 100, 1, 1, 10];
+  const after = catchUp({ ...opened.state, bars }, opened.state.marketMin + INTERVAL_MIN);
+  const trade = after.trades.at(-1);
+  assert.equal(trade.reason, "ko");
+  assert.equal(reasonLabel(trade.reason), "Knock-out");
+  assert.equal(trade.pnlCents, -5000);
+  assert.equal(after.position, null);
+  assert.equal(after.cashCents, 20000);
+  assert.ok(after.cashCents >= 0);
+  const staked = after.trades.reduce((sum, item) => sum + item.stakeCents, 0);
+  const roundLoss = Math.max(0, after.startCents - after.cashCents);
+  assert.ok(roundLoss <= staked);
+  const wiped = stepCandle(createRound(flatDay(100), { balance: 100, stake: 50, leverage: 10, spread: 0.005 }));
+  const lost = openTrade(wiped, "long").state;
+  const book = lost.bars.slice();
+  const bar = book[lost.visible];
+  book[lost.visible] = [bar[0], 100, 100, 0, 0, 10];
+  const end = catchUp({ ...lost, bars: book }, lost.marketMin + INTERVAL_MIN);
+  assert.equal(end.trades.at(-1).pnlCents, -5000);
+  assert.equal(end.cashCents, 5000);
+  assert.ok(end.cashCents >= 0);
+  assert.ok(end.startCents - end.cashCents <= 5000);
 });
 
 test("Einsatz über dem Konto geht nicht auf", () => {
