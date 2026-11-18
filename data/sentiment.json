@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T14:12:00+01:00",
+  "updatedAt": "2026-11-18T14:26:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 20,
-      "postsCount": 25,
-      "reason": "Großes Thema: 40 Mrd. $ Chip-Finanzierung über Apollo, die nicht in der Bilanz auftaucht. Manche sehen Stärke, andere Sorge wegen Zinsen bis über 9 %.",
+      "score": 25,
+      "postsCount": 24,
+      "reason": "Weiter Thema: 40 Mrd. $ Chip-Finanzierung über Apollo außerhalb der Bilanz. Atreides hat 42 % seines Depots in SpaceX, Kritiker warnen vor hohen Preisen.",
       "sources": [
         {
-          "title": "@DeItaone auf X (18.11., 13:56)",
-          "url": "https://x.com/DeItaone/status/2123037611337900114"
+          "title": "@TheMarketBishop auf X (18.11., 14:11)",
+          "url": "https://x.com/TheMarketBishop/status/2123041496932700314"
         },
         {
-          "title": "@financialjuice auf X (18.11., 13:58)",
-          "url": "https://x.com/financialjuice/status/2123038113958375461"
+          "title": "@MilkRoadStocks auf X (18.11., 14:15)",
+          "url": "https://x.com/MilkRoadStocks/status/2123042297990529476"
         },
         {
-          "title": "@aiStocksDaily auf X (18.11., 14:00)",
-          "url": "https://x.com/aiStocksDaily/status/2123038641601626497"
+          "title": "@tradertvshawn auf X (18.11., 14:23)",
+          "url": "https://x.com/tradertvshawn/status/2123044509525123574"
         }
       ],
-      "updatedAt": "2026-11-18T14:12:00+01:00"
+      "updatedAt": "2026-11-18T14:26:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 10,
       "postsCount": 25,
-      "reason": "Fans feiern 200 neue Cybercabs in Texas und 3 Mrd. € für Grünheide, vorbörslich leicht im Plus. Deutsche Fahrer klagen über Fahrwerk und Bremsen.",
+      "reason": "Fans feiern: In Texas sind jetzt mehr Tesla-Robotaxis registriert als Waymo (1.507 zu 1.321). Deutsche Posts klagen über TÜV-Mängel, Fahrwerk und Bremsen.",
       "sources": [
         {
-          "title": "@MentoviaX auf X (18.11., 13:57)",
-          "url": "https://x.com/MentoviaX/status/2123037908051632393"
+          "title": "@SabioRex2025 auf X (18.11., 14:24)",
+          "url": "https://x.com/SabioRex2025/status/2123044576105525370"
         },
         {
-          "title": "@zerohedge auf X (18.11., 14:09)",
-          "url": "https://x.com/zerohedge/status/2123040882056212823"
+          "title": "@fitz_keith auf X (18.11., 14:23)",
+          "url": "https://x.com/fitz_keith/status/2123044546175000869"
         },
         {
-          "title": "@Kurz_und_krafti auf X (18.11., 14:00)",
-          "url": "https://x.com/Kurz_und_krafti/status/2123038514811937046"
+          "title": "@GegenDoppeldenk auf X (18.11., 14:12)",
+          "url": "https://x.com/GegenDoppeldenk/status/2123041550078767236"
         }
       ],
-      "updatedAt": "2026-11-18T14:12:00+01:00"
+      "updatedAt": "2026-11-18T14:26:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": 30,
       "postsCount": 25,
-      "reason": "Das Archimedes-Triebwerk hat über 650 Testläufe geschafft, viele sehen Neutron näher rücken. Daneben viel Spam von Signalgruppen.",
+      "reason": "Rocket Lab baut jetzt alle 8 Tage eine Electron-Rakete, das gilt als gutes Zeichen für Neutron. Sonst vor allem Spam von Signalgruppen.",
       "sources": [
+        {
+          "title": "@Bearlovesbull auf X (18.11., 14:14)",
+          "url": "https://x.com/Bearlovesbull/status/2123042148555653495"
+        },
+        {
+          "title": "@p_e_d_r_o_78 auf X (18.11., 14:22)",
+          "url": "https://x.com/p_e_d_r_o_78/status/2123044193270419646"
+        },
         {
           "title": "@Bearlovesbull auf X (18.11., 13:57)",
           "url": "https://x.com/Bearlovesbull/status/2123037816670072939"
-        },
-        {
-          "title": "@SpaceSector001 auf X (18.11., 14:01)",
-          "url": "https://x.com/SpaceSector001/status/2123038959408132322"
-        },
-        {
-          "title": "@mottbox_ auf X (18.11., 13:35)",
-          "url": "https://x.com/mottbox_/status/2123032383440179626"
         }
       ],
-      "updatedAt": "2026-11-18T14:12:00+01:00"
+      "updatedAt": "2026-11-18T14:26:00+01:00"
     }
   }
 }
