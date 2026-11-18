@@ -1,54 +1,54 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T15:32:00+01:00",
+  "updatedAt": "2026-11-18T15:40:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 15,
-      "reason": "Kurz vor US-Start: 40-Mrd.-$-Chip-Finanzierung könnte diese Woche an Anleger gehen, gilt als leicht positiv. Viele Posts sehen SpaceX nach Nvidia-Zahlen vorn.",
+      "score": 35,
+      "postsCount": 14,
+      "reason": "Neu: Laut Anthropic-Börsenprospekt könnte Anthropic bis 2029 bis zu 120,5 Mrd. $ an SpaceX für Rechenleistung zahlen. Kritik an hohen Zinsen der Chip-Finanzierung.",
       "sources": [
         {
-          "title": "@gonta_southwood auf X (18.11., 15:19)",
-          "url": "https://x.com/gonta_southwood/status/2123058454864781656"
+          "title": "@dklowery auf X (18.11., 15:34)",
+          "url": "https://x.com/dklowery/status/2123062171554996664"
         },
         {
-          "title": "@ali_alizeh72722 auf X (18.11., 15:25)",
-          "url": "https://x.com/ali_alizeh72722/status/2123059941544247465"
+          "title": "@itsnyaa_x auf X (18.11., 15:35)",
+          "url": "https://x.com/itsnyaa_x/status/2123062519548064019"
         },
         {
-          "title": "@RocketTerminal auf X (18.11., 15:00)",
-          "url": "https://x.com/RocketTerminal/status/2123053617192239198"
+          "title": "@fammetaX auf X (18.11., 15:37)",
+          "url": "https://x.com/fammetaX/status/2123063118922383862"
         }
       ],
-      "updatedAt": "2026-11-18T15:32:00+01:00"
+      "updatedAt": "2026-11-18T15:40:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 15,
-      "postsCount": 15,
-      "reason": "Fans vergleichen günstige Tesla-Robotaxis mit Waymo und loben Powercore für Rechenzentren. Andere sehen Konkurrenz beim FSD. Hauptversammlung am 3.12.",
+      "score": 20,
+      "postsCount": 14,
+      "reason": "Tesla startet rund 1,7 % im Plus. Viel Gerede über eine mögliche Fusion mit SpaceX, Skeptiker sehen erst über 410 $ eine echte Erholung.",
       "sources": [
         {
-          "title": "@DigitalDaisyX auf X (18.11., 15:20)",
-          "url": "https://x.com/DigitalDaisyX/status/2123058645332304047"
+          "title": "@stocksnipa auf X (18.11., 15:33)",
+          "url": "https://x.com/stocksnipa/status/2123062088990068916"
         },
         {
-          "title": "@mvosnakidis auf X (18.11., 15:29)",
-          "url": "https://x.com/mvosnakidis/status/2123061003579523287"
+          "title": "@doogiekidd auf X (18.11., 15:36)",
+          "url": "https://x.com/doogiekidd/status/2123062899673555181"
         },
         {
-          "title": "@MarcusRenoStory auf X (18.11., 15:30)",
-          "url": "https://x.com/MarcusRenoStory/status/2123061394387943449"
+          "title": "@gkshop88 auf X (18.11., 15:35)",
+          "url": "https://x.com/gkshop88/status/2123062508982509894"
         }
       ],
-      "updatedAt": "2026-11-18T15:32:00+01:00"
+      "updatedAt": "2026-11-18T15:40:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": 30,
-      "postsCount": 14,
+      "postsCount": 15,
       "reason": "Weiter Thema: Rocket Lab baut alle 8 Tage eine Electron-Rakete, gut für Neutron. Sonst taucht RKLB vor allem in Watchlisten und Spam-Listen auf.",
       "sources": [
         {
@@ -64,7 +64,7 @@
           "url": "https://x.com/armaanzinvest/status/2123055625395716166"
         }
       ],
-      "updatedAt": "2026-11-18T15:32:00+01:00"
+      "updatedAt": "2026-11-18T15:40:00+01:00"
     }
   }
 }
