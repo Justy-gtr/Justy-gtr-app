@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T13:37:00+01:00",
+  "updatedAt": "2026-11-18T13:54:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 35,
-      "postsCount": 24,
-      "reason": "Fans freuen sich, dass SpaceX beim KI-Ausverkauf stabil blieb und eigenen Strom bauen darf. Einige erinnern an den Absturz nach dem Hoch und fürchten den Anthropic-Effekt.",
+      "score": 25,
+      "postsCount": 25,
+      "reason": "Viele Fans bleiben dabei, doch es wird über rund 60 Entlassungen in der KI-Sparte und die 40-Mrd.-$-Anleihe bei steigenden Risikoaufschlägen gesprochen.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (18.11., 13:26)",
-          "url": "https://x.com/spcxGOD/status/2123030119069450635"
+          "title": "@joehansen auf X (18.11., 13:48)",
+          "url": "https://x.com/joehansen/status/2123035492929458420"
         },
         {
-          "title": "@gonta_southwood auf X (18.11., 13:21)",
-          "url": "https://x.com/gonta_southwood/status/2123028707002765822"
+          "title": "@GryphonIAB auf X (18.11., 13:45)",
+          "url": "https://x.com/GryphonIAB/status/2123034737992425776"
         },
         {
-          "title": "@cabinet963 auf X (18.11., 13:18)",
-          "url": "https://x.com/cabinet963/status/2123028000832880724"
+          "title": "@UnotheInvestor auf X (18.11., 13:48)",
+          "url": "https://x.com/UnotheInvestor/status/2123035541742718992"
         }
       ],
-      "updatedAt": "2026-11-18T13:37:00+01:00"
+      "updatedAt": "2026-11-18T13:54:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,28 +43,28 @@
           "url": "https://x.com/LuckyNum7Levin/status/2123027949981151438"
         }
       ],
-      "updatedAt": "2026-11-18T13:37:00+01:00"
+      "updatedAt": "2026-11-18T13:54:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": 25,
-      "postsCount": 13,
-      "reason": "Halter bleiben gelassen, Chartfans sehen eine Erholung nach dem Rücksetzer. Viele hohe Langfrist-Kursziele, aber auch viel Werbung und Spam.",
+      "postsCount": 15,
+      "reason": "US-Senatoren wollen engere Militär-Raumfahrt mit Neuseeland, das wird als Plus für Rocket Lab gesehen. Space-Werte leicht grün, sonst viel Spam.",
       "sources": [
         {
-          "title": "@Flott00s auf X (18.11., 13:02)",
-          "url": "https://x.com/Flott00s/status/2123024049391464524"
+          "title": "@SpaceSector001 auf X (18.11., 13:49)",
+          "url": "https://x.com/SpaceSector001/status/2123035763055153186"
         },
         {
-          "title": "@younsik_felix auf X (18.11., 13:04)",
-          "url": "https://x.com/younsik_felix/status/2123024519308923156"
+          "title": "@mottbox_ auf X (18.11., 13:35)",
+          "url": "https://x.com/mottbox_/status/2123032383440179626"
         },
         {
-          "title": "@Neil_Shares auf X (18.11., 12:55)",
-          "url": "https://x.com/Neil_Shares/status/2123022214337556957"
+          "title": "@PSInvestor auf X (18.11., 13:39)",
+          "url": "https://x.com/PSInvestor/status/2123033382758297860"
         }
       ],
-      "updatedAt": "2026-11-18T13:37:00+01:00"
+      "updatedAt": "2026-11-18T13:54:00+01:00"
     }
   }
 }
