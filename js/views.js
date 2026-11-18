@@ -2,7 +2,6 @@ import { chartAnalysis } from "./analysis.js";
 import { analyseViewToggle, musterCard } from "./analyse-view.js";
 import { renderBewertung, valueDetail } from "./bewertung-view.js";
 import { renderNews } from "./news-view.js";
-import { renderTraining } from "./training-view.js";
 import { sparkline } from "./chart.js";
 import { knockOut, readKnockStore } from "./knockout.js";
 import { renderMoodLamp } from "./sentiment.js";
@@ -173,10 +172,10 @@ function gauge(title, block) {
 export function renderShell(ctx) {
   const { data, ui, store } = ctx;
   const pages = [
-    ["page-news", () => `${renderNews(data, ui)}<details class="fold"><summary>Startseite</summary><div class="fold-body">${renderHeute(data, ui, store)}</div></details>`],
+    ["page-news", () => renderNews(data, ui)],
     ["page-bewertung", () => renderBewertung(data, ui)],
-    ["page-training", () => renderTraining()],
-    ["page-kalender", () => renderKalender(data, ui)]
+    ["page-kalender", () => renderKalender(data, ui)],
+    ["page-mehr", () => renderMehr()]
   ];
   for (const [id, build] of pages) {
     const node = document.getElementById(id);

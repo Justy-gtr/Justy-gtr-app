@@ -7,6 +7,7 @@ import { renderNews } from "../js/news-view.js";
 import { aggregateWeekdays, renderSeasonalityCard } from "../js/seasonality.js";
 import { moodReliability } from "../js/stimmung.js";
 import { renderStimmung } from "../js/stimmung-view.js";
+import { renderMehr } from "../js/views.js";
 import { renderTraining } from "../js/training-view.js";
 
 const BANNED = /kaufen|verkaufen|empfehlung|kaufsignal|anlageberatung/i;
@@ -37,7 +38,7 @@ test("News steht neueste zuerst und filtert nach Aktie", () => {
   assert.equal(filterNews(items, "Markt")[0].id, "post:markt");
   assert.equal(filterNews(items, "RKLB").length, 0);
   const html = renderNews(data, { newsFilter: "alle" }, new Date("2026-11-17T21:00:00+01:00"));
-  assert.match(html, /Letzte Woche/);
+  assert.match(html, /Diese Stunde/);
   assert.match(html, /Die nächsten drei Stunden/);
   assert.equal(html.includes("Was bewegt den Kurs"), false);
   assert.match(html, /data-filter="NVDA"/);
@@ -117,12 +118,14 @@ test("Schwarm auf News schaltet zwischen US und GER", () => {
   };
   const us = swarmList(data, "us");
   assert.equal(us.find((row) => row.symbol === "SPCX")?.note, "optimistisch");
-  assert.ok(us.some((row) => row.symbol === "TSLA" && row.note === "positiv"));
+  assert.ok(us.some((row) => row.symbol === "TSLA" && row.lamp?.word === "positiv" && row.note === "Stimmung"));
+  assert.equal(us.find((row) => row.symbol === "SPCX")?.lamp.color, "#22c55e");
   assert.ok(us.some((row) => row.symbol === "TSM"));
   assert.equal(us.some((row) => row.symbol === "SAP" || String(row.symbol).endsWith(".DE")), false);
   const ger = swarmList(data, "ger");
   assert.deepEqual(ger.map((row) => row.symbol), ["S92.DE", "HFG.DE"]);
-  assert.equal(ger[0].note, "ohne Schwarm");
+  assert.ok(ger[0].lamp?.color);
+  assert.equal(ger[0].note === "ohne Schwarm", false);
   const now = new Date("2026-11-17T21:00:00+01:00");
   const german = renderNews(data, { newsFilter: "alle", swarmSide: "ger" }, now);
   assert.match(german, /data-action="swarm-side"/);
@@ -175,9 +178,11 @@ test("Stimmung nennt fehlende Treffer und behält die Bereiche", () => {
   assert.match(html, /Kursbild/);
   assert.match(html, /Schwarm/);
   assert.match(html, /Deutschland/);
-  assert.match(html, /Produktion/);
-  assert.match(html, /Wochenrückblick/);
-  assert.match(html, /Werkzeuge/);
+  assert.equal(html.includes(">Produktion<"), false);
+  assert.equal(html.includes(">Wochenrückblick<"), false);
+  assert.match(renderMehr(), /Produktion/);
+  assert.match(renderMehr(), /Wochenrückblick/);
+  assert.match(renderMehr(), /Mehr/);
   assert.match(html, /Kerzen/);
   assert.equal(BANNED.test(html), false);
   const training = renderTraining();
@@ -268,7 +273,7 @@ test("Unter 50 Prozent ist rot, ab 50 Prozent grün", () => {
   };
   const html = renderSeasonalityCard(pack, { symbol: "TSLA" }, "all");
   assert.match(html, /Long: Wie oft ging es hoch/);
-  assert.match(html, /Short: Wie oft ging es runter/);
+  assert.equal(html.includes("Short: Wie oft ging es runter"), false);
   assert.match(html, /data-row="tag"/);
   assert.equal(html.includes("Mittlere Bewegung"), false);
   const paint = (text) => html.slice(html.lastIndexOf("<span", html.indexOf(`>${text}<`)), html.indexOf(`>${text}<`));

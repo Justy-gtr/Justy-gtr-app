@@ -1,9 +1,10 @@
-const CACHE = "jgtr-v43";
+const CACHE = "jgtr-v44";
 const CORE = [
   "",
   "index.html",
   "css/app.css",
   "css/analyse.css",
+  "css/replay.css",
   "manifest.webmanifest",
   "js/afternoon.js",
   "js/app.js",
@@ -35,6 +36,8 @@ const CORE = [
   "js/knockout.js",
   "js/knockout-ui.js",
   "js/pull.js",
+  "js/replay.js",
+  "js/replay-ui.js",
   "icons/logo.svg",
   "icons/favicon.svg",
   "icons/apple-touch-icon.png",
@@ -63,7 +66,9 @@ const CORE = [
   "data/sentiment.json",
   "data/germany.json",
   "data/fundamentals.json",
-  "data/lines.json"
+  "data/lines.json",
+  "data/hours.json",
+  "data/replay/index.json"
 ];
 
 self.addEventListener("install", (event) => {

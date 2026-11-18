@@ -1,23 +1,13 @@
-import { AGENDA_SYMBOLS, eventsWithin, filterNews, hourShareStyle, hourWeek, NEWS_CHIPS, nextUpcoming, sentimentLight, swarmList, buildNews } from "./news.js";
+import { AGENDA_SYMBOLS, eventsWithin, filterNews, hourSentence, hourShareStyle, NEWS_CHIPS, nextUpcoming, sentimentLight, swarmList, buildNews } from "./news.js";
 import { calendarSentence, calendarWhen, esc, formatStamp, safeUrl } from "./logic.js";
-import { formatSignedPct } from "./seasonality.js";
-
-function berlinHourLabel(now) {
-  const parts = new Intl.DateTimeFormat("en-GB", {
-    timeZone: "Europe/Berlin",
-    hour: "2-digit",
-    hourCycle: "h23"
-  }).formatToParts(now);
-  let hour = parts.find((part) => part.type === "hour")?.value || "";
-  if (hour === "24") hour = "00";
-  return `${hour} Uhr`;
-}
 
 function swarmBlock(data, ui) {
   const side = ui?.swarmSide === "ger" ? "ger" : "us";
   const rows = swarmList(data, side).map((row) => {
     const symbol = String(row.symbol || "").replace(/\.DE$/, "");
-    return `<p class="swarm-row"><strong>${esc(symbol)}</strong><span>${esc(row.name)}</span><span class="muted">${esc(row.note)}</span></p>`;
+    const lamp = row.lamp || { color: "#f59e0b", word: "gemischt", source: "offen" };
+    const pip = `<span class="mood-pip" style="background:${lamp.color};box-shadow:0 0 8px ${lamp.color}" role="img" aria-label="Prognose ${esc(lamp.word)}, ${esc(lamp.source || lamp.word)}"></span>`;
+    return `<p class="swarm-row">${pip}<strong>${esc(symbol)}</strong><span>${esc(row.name)}</span><span class="muted">${esc(row.note)}</span></p>`;
   }).join("");
   return `
     <section class="card swarm-compact" id="swarm-compact" aria-label="Schwarm">
@@ -42,24 +32,11 @@ function hourRows(data, now, filter) {
   const symbols = AGENDA_SYMBOLS.includes(filter) ? [filter] : AGENDA_SYMBOLS;
   const bySymbol = new Map((data?.prices?.tickers || []).map((ticker) => [ticker.symbol, ticker]));
   return symbols.map((symbol) => {
-    const ticker = bySymbol.get(symbol);
-    if (!ticker) return "";
+    const line = hourSentence(symbol, now, data?.hours, bySymbol.get(symbol));
+    if (!line) return "";
     const light = sentimentLight(data, symbol);
     const pip = `<span class="mood-pip" style="background:${light.color};box-shadow:0 0 8px ${light.color}" role="img" aria-label="Stimmung ${esc(light.word)}"></span>`;
-    const stats = hourWeek(ticker, now);
-    if (stats.share == null) {
-      return `<p class="hour-row">${pip}<strong>${esc(symbol)}</strong><span class="muted">noch zu wenig Daten</span></p>`;
-    }
-    const up = stats.avgUp == null ? "–" : formatSignedPct(stats.avgUp);
-    const down = stats.avgDown == null ? "–" : formatSignedPct(stats.avgDown);
-    return `<p class="hour-row">
-      ${pip}
-      <strong>${esc(symbol)}</strong>
-      <span class="hour-share" style="${hourShareStyle(stats.share)}">${stats.share} %</span>
-      <span class="up">${esc(up)}</span>
-      <span class="down">${esc(down)}</span>
-      <span class="muted">${stats.up} von ${stats.n} hoch</span>
-    </p>`;
+    return `<p class="hour-row">${pip}<strong>${esc(symbol)}</strong><span class="hour-share" style="${hourShareStyle(line.share)}">${esc(line.text)}</span></p>`;
   }).join("");
 }
 
@@ -78,7 +55,6 @@ export function renderNews(data, ui, now = new Date()) {
   const items = filterNews(buildNews(data), filter);
   const soon = eventsWithin(data, now, 3);
   const later = soon.length ? [] : nextUpcoming(data, now, 4);
-  const hour = berlinHourLabel(now);
   const rows = items.map((item) => {
     const href = safeUrl(item.href);
     const body = item.body && item.body !== item.headline ? item.body : "";
@@ -103,9 +79,9 @@ export function renderNews(data, ui, now = new Date()) {
       <p class="eyebrow">News</p>
       <h2>Meldungen</h2>
     </header>
-    <section class="card" aria-label="Letzte Woche zur aktuellen Stunde">
-      <p class="kicker">Letzte Woche, ${esc(hour)}</p>
-      ${hourRows(data, now, filter) || `<p class="muted">Für diese Stunde liegen noch keine Kurse.</p>`}
+    <section class="card" aria-label="Aktuelle Stunde nach Wochentag">
+      <p class="kicker">Diese Stunde</p>
+      ${hourRows(data, now, filter)}
     </section>
     <section aria-label="Die nächsten drei Stunden">
       <p class="kicker">Die nächsten drei Stunden</p>

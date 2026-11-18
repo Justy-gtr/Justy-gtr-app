@@ -262,7 +262,7 @@ test("Unter sieben Fällen gibt es keine Prozentzahl", () => {
   assert.match(html, /Wochentag &amp; Uhrzeit/);
   assert.equal(seasonalityHeadline("TSLA", seasonality.symbols.TSLA.ranges.all), "Dienstags stieg TSLA am häufigsten (80 %, n = 10). Mittwochs am seltensten (20 %, n = 10).");
   assert.match(html, /Long: Wie oft ging es hoch/);
-  assert.match(html, /Short: Wie oft ging es runter/);
+  assert.equal(html.includes("Short: Wie oft ging es runter"), false);
   assert.equal(html.includes("Mittlere Bewegung"), false);
   assert.deepEqual(tagCells(html), ["–", "80%", "20%", "50%", "60%", "59 %"]);
   assert.match(html, /Vergangenheit, keine Vorhersage/);
@@ -339,7 +339,7 @@ test("Die Tag-Zeile zählt steigende Tage im selben Zeitraum wie die Balken", ()
   const all = renderSeasonalityCard(pack, { symbol: "SPCX" }, "all");
   const year = renderSeasonalityCard(pack, { symbol: "SPCX" }, "year");
   assert.match(all, /Long: Wie oft ging es hoch/);
-  assert.match(all, /Short: Wie oft ging es runter/);
+  assert.equal(all.includes("Short: Wie oft ging es runter"), false);
   assert.deepEqual(tagCells(all), ["80%", "80%", "80%", "80%", "80%", "80 %"]);
   assert.deepEqual(tagCells(year), ["25%", "25%", "25%", "25%", "–", "35 %"]);
   assert.match(year, /data-season="year"/);
@@ -401,9 +401,9 @@ test("Runter zählt nur fallende Fälle, flache bleiben draußen", () => {
   };
   const html = renderSeasonalityCard(pack, { symbol: "SPCX", name: "SpaceX" }, "all");
   assert.match(html, /Long: Wie oft ging es hoch/);
-  assert.match(html, /Short: Wie oft ging es runter/);
+  assert.equal(html.includes("Short: Wie oft ging es runter"), false);
   assert.deepEqual(tagCells(clockOf(html, "up")), ["60%", "20%", "80%", "–", "50%", "54 %"]);
-  assert.deepEqual(tagCells(clockOf(html, "down")), ["30%", "80%", "10%", "–", "50%", "41 %"]);
+  assert.equal(html.includes('data-clock="down"'), false);
   assert.equal(html.includes("chart-legend"), false);
   assert.equal(ADVICE.test(html), false);
   assert.equal(/Keine Anlageberatung/.test(html), false);
@@ -469,7 +469,7 @@ test("Die Karte steht unter dem Muster und die Spanne lässt sie in Ruhe", () =>
       assert.match(view, /Vergangenheit, keine Vorhersage/);
       assert.match(view, /nicht den ganzen Markt/);
       assert.match(view, /Long: Wie oft ging es hoch/, symbol);
-      assert.match(view, /Short: Wie oft ging es runter/, symbol);
+      assert.equal(view.includes("Short: Wie oft ging es runter"), false, symbol);
       assert.equal(view.includes("Mittlere Bewegung"), false, symbol);
     }
   }

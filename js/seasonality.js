@@ -622,9 +622,7 @@ function clockGrid(hours, grid, days, mode) {
 
 function clockBlock(hours, grid, days) {
   return `<p class="season-kicker">Long: Wie oft ging es hoch?</p>
-    ${clockGrid(hours, grid, days, "up")}
-    <p class="season-kicker">Short: Wie oft ging es runter?</p>
-    ${clockGrid(hours, grid, days, "down")}`;
+    ${clockGrid(hours, grid, days, "up")}`;
 }
 
 function earlyLine(note) {

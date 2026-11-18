@@ -10,6 +10,7 @@ import {
   WEEKDAY_LABELS
 } from "../js/seasonality.js";
 import { TICKERS } from "./fetch-prices.mjs";
+import { checkReplayArchive } from "./replay-check.mjs";
 
 const ANALYSE_SYMBOLS = TICKERS.map((spec) => spec.symbol);
 // MRVL hat keinen Eintrag. Eine andere Routine schreibt diese Datei.
@@ -76,7 +77,7 @@ const files = [
   "promises.json", "production.json", "insiders.json", "briefing.json", "weekly.json",
   "daily_question.json", "glossary.json", "track_record.json", "alerts.json",
   "scenarios.json", "companies.json", "seasonality.json", "moonshots.json", "turbo-universe.json",
-  "sentiment.json", "germany.json", "de-turbos.json", "fundamentals.json", "lines.json"
+  "sentiment.json", "germany.json", "de-turbos.json", "fundamentals.json", "lines.json", "hours.json"
 ];
 const loaded = Object.fromEntries(files.map((name) => [name, read(name)]));
 
@@ -669,6 +670,18 @@ if (linesDoc) {
     }
   }
 }
+
+const hours = loaded["hours.json"];
+if (hours) {
+  if (hours.schema !== 1) fail("hours.schema");
+  for (const symbol of ["SPCX", "TSLA", "RKLB", "MRVL", "NVDA"]) {
+    const day = hours.symbols?.[symbol]?.["2"];
+    if (!day) fail(`hours fehlt ${symbol}`);
+    const cell = day?.["15"];
+    if (!cell || !(cell.n > 0) || cell.up + cell.down !== cell.n) fail(`hours.${symbol}.15`);
+  }
+}
+for (const message of checkReplayArchive(root)) fail(message);
 
 const iconFiles = [
   "icons/logo.svg",

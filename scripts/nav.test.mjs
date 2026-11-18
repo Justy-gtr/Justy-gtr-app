@@ -5,7 +5,7 @@ import { analyseViewOf, renderAnalyse } from "../js/analyse-view.js";
 import { pagerIndex, pagerLeft } from "../js/nav.js";
 import { detailContent, renderChartsPage } from "../js/views.js";
 
-const PAGES = ["news", "stimmung", "bewertung", "training", "kalender"];
+const PAGES = ["news", "stimmung", "bewertung", "training", "kalender", "mehr"];
 
 test("Jeder Tab trifft seine eigene Seite, nicht die Mitte", () => {
   for (const width of [390, 430]) {
@@ -35,13 +35,14 @@ test("Fünf Tabs, der Kurs öffnet Stimmung", () => {
   const training = fs.readFileSync("js/training-view.js", "utf8");
   assert.equal(html.includes('data-page="charts"'), false);
   assert.equal(html.includes("page-charts"), false);
-  assert.equal((html.match(/class="tab"/g) || []).length, 5);
-  assert.match(html, /data-page="news"[\s\S]*data-page="stimmung"[\s\S]*data-page="bewertung"[\s\S]*data-page="training"[\s\S]*data-page="kalender"/);
+  assert.equal((html.match(/class="tab"/g) || []).length, 6);
+  assert.match(html, /data-page="news"[\s\S]*data-page="stimmung"[\s\S]*data-page="bewertung"[\s\S]*data-page="training"[\s\S]*data-page="kalender"[\s\S]*data-page="mehr"/);
   assert.match(html, />News</);
   assert.match(html, />Stimmung</);
   assert.match(html, />Bewertung</);
   assert.match(html, />Training</);
   assert.match(html, />Kalender</);
+  assert.match(html, />Mehr</);
   assert.match(html, /id="training-mount"/);
   assert.match(html, /data-training-slot="rueckspiel"/);
   assert.match(training, /id="training-mount"/);

@@ -1,4 +1,5 @@
 import { inAfternoonRefresh, QUARTER_MS } from "./afternoon.js";
+import { initTraining } from "./replay-ui.js";
 import { analyseViewOf } from "./analyse-view.js";
 import { renderStimmung } from "./stimmung-view.js";
 import { markMoodPulse } from "./sentiment.js";
@@ -19,7 +20,8 @@ const DOT_SOURCES = {
   stimmung: ["schwarm", "mehr"],
   bewertung: [],
   training: [],
-  kalender: ["kalender"]
+  kalender: ["kalender"],
+  mehr: ["mehr"]
 };
 
 const ui = {
@@ -159,6 +161,7 @@ const nav = initNav(pager, {
   }
 });
 const eggs = initEggs(toast);
+const training = initTraining();
 
 function context() {
   return { data, ui, store };
@@ -207,6 +210,7 @@ function render() {
     tickCountdown();
     try { eggs.afterRender(data); } catch { /* Überraschung ist Beiwerk. */ }
     try { knockout.sync(); } catch { /* Rechner bleibt zu, die Seite nicht. */ }
+    try { training.sync(); } catch { /* Training bleibt stehen, die Seite nicht. */ }
   });
 }
 

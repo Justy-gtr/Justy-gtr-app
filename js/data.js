@@ -23,7 +23,8 @@ export const FILES = [
   "sentiment",
   "germany",
   "fundamentals",
-  "lines"
+  "lines",
+  "hours"
 ];
 
 export async function loadData() {

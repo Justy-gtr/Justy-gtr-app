@@ -3,7 +3,7 @@ import { renderDeutschland } from "./germany-view.js";
 import { esc } from "./logic.js";
 import { renderMoodLamp } from "./sentiment.js";
 import { marketMood, moodPosition, moodReliability } from "./stimmung.js";
-import { renderChartsPage, renderMehr, renderSchwarm } from "./views.js";
+import { renderChartsPage, renderSchwarm } from "./views.js";
 
 const LAMP_SYMBOLS = ["SPCX", "TSLA", "RKLB", "MRVL"];
 
@@ -61,9 +61,6 @@ export function renderStimmung(data, ui) {
   const chart = analyseViewOf(ui?.analyseView) === "chart"
     ? renderChartsPage(data, ui)
     : renderAnalyse(data, ui);
-  const launch = data?.production?.nextLaunch;
-  const launchLine = launch?.name ? `${launch.name}${launch.status ? `, ${launch.status}` : ""}` : "Die Reihen liegen unter dem Knopf.";
-  const week = data?.weekly?.lede || data?.weekly?.title || "Die letzte Woche liegt unter dem Knopf.";
   return `
     <header class="page-head">
       <p class="eyebrow">Stimmung</p>
@@ -82,24 +79,6 @@ export function renderStimmung(data, ui) {
     <details class="fold">
       <summary>Deutschland</summary>
       <div class="fold-body">${renderDeutschland(data, ui)}</div>
-    </details>
-    <details class="fold">
-      <summary>Produktion</summary>
-      <div class="fold-body">
-        <p>${esc(launchLine)}</p>
-        <button type="button" class="text-btn" data-action="open-production">Produktion öffnen</button>
-      </div>
-    </details>
-    <details class="fold">
-      <summary>Wochenrückblick</summary>
-      <div class="fold-body">
-        <p>${esc(week)}</p>
-        <button type="button" class="text-btn" data-action="open-weekly">Wochenrückblick öffnen</button>
-      </div>
-    </details>
-    <details class="fold">
-      <summary>Werkzeuge</summary>
-      <div class="fold-body">${renderMehr()}</div>
     </details>
   `;
 }

@@ -966,7 +966,7 @@ body.detail-open .pager { overflow: hidden; }
 .swarm-row { display: flex; align-items: baseline; gap: 8px; margin: 8px 0 0; font-size: 15px; }
 .swarm-row span:nth-child(2) { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .mood-pip { width: 12px; height: 12px; border-radius: 50%; flex: none; box-shadow: 0 0 8px currentColor; color: inherit; }
-.hour-share { min-width: 52px; padding: 2px 6px; border-radius: 6px; text-align: center; font-variant-numeric: tabular-nums; }
+.hour-share { padding: 2px 6px; border-radius: 6px; font-variant-numeric: tabular-nums; line-height: 1.35; }
 .next-card strong { font-size: 18px; }
 .next-when { margin: 8px 0 0; color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
 .next-line { margin: 2px 0 0; font-size: 16px; line-height: 1.35; }

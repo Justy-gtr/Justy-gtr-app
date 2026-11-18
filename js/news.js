@@ -120,10 +120,12 @@ export function swarmList(data, side) {
   if (side === "ger") {
     return (data?.germany?.symbols || []).map((row) => {
       const item = fav.get(row?.symbol);
+      const lamp = swarmLamp(data, row?.symbol);
       return {
         symbol: row?.symbol || "",
         name: row?.name || row?.symbol || "",
-        note: item?.swarmStance ? opinionWord(item.swarmStance) : "ohne Schwarm"
+        note: item?.swarmStance ? opinionWord(item.swarmStance) : lamp.source,
+        lamp
       };
     }).filter((row) => row.symbol);
   }
@@ -138,13 +140,49 @@ export function swarmList(data, side) {
   }
   return symbols.map((symbol) => {
     const item = fav.get(symbol);
-    const light = sentimentLight(data, symbol);
+    const lamp = item?.swarmStance ? stanceLamp(item.swarmStance) : swarmLamp(data, symbol);
     return {
       symbol,
       name: item?.name || symbol,
-      note: item?.swarmStance ? opinionWord(item.swarmStance) : light.word
+      note: item?.swarmStance ? opinionWord(item.swarmStance) : lamp.source,
+      lamp
     };
   });
+}
+
+function priceChange(data, symbol) {
+  const ticker = (data?.prices?.tickers || []).find((item) => item?.symbol === symbol);
+  if (ticker && Number.isFinite(Number(ticker.changePct))) return Number(ticker.changePct);
+  const plain = String(symbol || "").replace(/\.DE$/, "");
+  const german = (data?.germany?.symbols || []).find((item) => item?.symbol === symbol || item?.symbol === plain);
+  if (german && Number.isFinite(Number(german.changePct))) return Number(german.changePct);
+  return null;
+}
+
+function stanceLamp(stance) {
+  const word = opinionWord(stance);
+  if (word === "optimistisch") return { color: "#22c55e", word: "positiv", source: "Schwarm" };
+  if (word === "vorsichtig") return { color: "#ef4444", word: "negativ", source: "Schwarm" };
+  return { color: "#f59e0b", word: "gemischt", source: "Schwarm" };
+}
+
+/** A light for every name. The word says where it comes from. */
+export function swarmLamp(data, symbol) {
+  const mood = sentimentLight(data, symbol);
+  if (mood.word !== "ohne Stimmung") return { ...mood, source: "Stimmung" };
+  const change = priceChange(data, symbol);
+  if (change != null) {
+    if (change >= 0.3) return { color: "#22c55e", word: "positiv", source: "Kurs" };
+    if (change <= -0.3) return { color: "#ef4444", word: "negativ", source: "Kurs" };
+    return { color: "#f59e0b", word: "gemischt", source: "Kurs" };
+  }
+  const line = hourSentence(symbol, new Date(), data?.hours);
+  if (line) {
+    if (line.share >= 55) return { color: "#22c55e", word: "positiv", source: "Stunde" };
+    if (line.share <= 45) return { color: "#ef4444", word: "negativ", source: "Stunde" };
+    return { color: "#f59e0b", word: "gemischt", source: "Stunde" };
+  }
+  return { color: "#f59e0b", word: "gemischt", source: "offen" };
 }
 
 function fundRows(data) {
@@ -198,6 +236,65 @@ export function hourWeek(ticker, now = new Date()) {
     share: n ? Math.round((upMoves.length / n) * 100) : null,
     avgUp: meanOf(upMoves),
     avgDown: meanOf(downMoves)
+  };
+}
+
+const WEEKDAY_WORD = ["Sonntags", "Montags", "Dienstags", "Mittwochs", "Donnerstags", "Freitags", "Samstags"];
+
+function weekdayIndex(iso) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso || ""));
+  if (!match) return -1;
+  return new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]))).getUTCDay();
+}
+
+function cellOf(doc, symbol, weekday, hour) {
+  const cell = doc?.symbols?.[symbol]?.[String(weekday)]?.[String(hour)];
+  if (!cell || !(cell.n > 0)) return null;
+  return cell;
+}
+
+function countTickerHour(ticker, weekday, hour) {
+  const seen = new Set();
+  let up = 0;
+  let down = 0;
+  const series = [...(ticker?.history?.["1H"] || []), ...(ticker?.history?.["5m"] || [])];
+  for (const point of series) {
+    const at = berlinClock(point?.t);
+    if (!at || at.hour !== hour || weekdayIndex(at.date) !== weekday || seen.has(at.date)) continue;
+    const open = Number(point.open);
+    const close = Number(point.eur ?? point.close);
+    if (!Number.isFinite(open) || !Number.isFinite(close) || close === open) continue;
+    seen.add(at.date);
+    if (close > open) up += 1;
+    else down += 1;
+  }
+  const n = up + down;
+  return n ? { up, down, n } : null;
+}
+
+/** One sentence for this weekday and hour. Archive first, then the loaded prices. */
+export function hourSentence(symbol, now, hoursDoc, ticker) {
+  const clock = berlinClock(now);
+  if (!clock) return null;
+  const weekday = weekdayIndex(clock.date);
+  const day = hoursDoc?.symbols?.[symbol]?.[String(weekday)] || {};
+  let hour = clock.hour;
+  let cell = cellOf(hoursDoc, symbol, weekday, hour) || countTickerHour(ticker, weekday, hour);
+  if (!cell) {
+    const hours = Object.keys(day).map(Number).filter((value) => day[value]?.n > 0).sort((a, b) => b - a);
+    if (!hours.length) return null;
+    hour = hours[0];
+    cell = day[hour];
+  }
+  const up = Math.round((cell.up / cell.n) * 100);
+  const down = 100 - up;
+  const word = WEEKDAY_WORD[weekday] || "";
+  return {
+    hour,
+    weekday,
+    share: up,
+    n: cell.n,
+    text: `${word} ${String(hour).padStart(2, "0")}–${String(hour + 1).padStart(2, "0")} Uhr: ${up} % hoch · ${down} % runter (n=${cell.n})`
   };
 }
 
