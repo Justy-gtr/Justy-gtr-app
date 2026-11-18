@@ -5083,10 +5083,10 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Mi 16:16: SPCX zieht in New York auf 144,87 $ an (+2,2 % zum Schluss von 141,70 $; Spanne 141,22–145,05 $), nahe am Tageshoch (Yahoo). Treiber bleibt die Chip-Finanzierung: Laut Semafor könnten Teile der rund 40 Mrd. $ schon diese Woche an Anleger gehen; die Schulden liegen in einer Zweckgesellschaft, SpaceX mietet die GPUs und hält sie aus der eigenen Bilanz (Semafor). Dazu reist Musk als einziger Firmenchef mit Trump beim APEC-Gipfel in Shenzhen (The Paper). SpaceX hat zur Finanzierung nichts bestätigt; eine neue SEC-Meldung gibt es nicht (SEC). Gesamtmarkt: Der Nasdaq Composite liegt um 16:16 bei +0,7 %, Nvidia dagegen bei 154,94 $ (−0,3 %) – der Sprung nach den Zahlen ist verpufft (Yahoo, CNBC). Waller hatte am Mittag eine Zinserhöhung um 50 Basispunkte im Dezember ins Spiel gebracht (CNBC). Der Dax steht um 16:01 bei 25.903 (−0,5 %) (Yahoo, dpa-AFX). Heute noch: Daly 18:15, Fed-Protokoll 20:00, Williams 20:30, Anthropic-Preis nach US-Schluss.",
+      "why": "Stand Mi 18:17: SPCX liegt in New York bei 144,16 $ (+1,7 % zum Schluss von 141,70 $; Spanne 141,22–146,31 $) und hält einen Großteil des Tagesgewinns, obwohl Nvidia ins Minus gedreht hat (Yahoo). Treiber bleibt die Chip-Finanzierung: Laut Semafor könnten Teile der rund 40 Mrd. $ schon diese Woche an Anleger gehen; die Schulden liegen in einer Zweckgesellschaft, SpaceX mietet die GPUs (Semafor). SpaceX hat dazu nichts bestätigt; eine neue SEC-Meldung gibt es nicht (SEC). Auf X kündigt Starlink Handy-Empfang per Satellit für Botswana an (X). Gesamtmarkt: Nvidia fällt um 18:17 auf 152,01 $ (−2,2 %), nachdem sie vorbörslich bis zu 3 % im Plus lag; laut Reuters belasten die offene Chefsuche nach Huangs Abgang und eine SEC-Untersuchung die KI-Werte trotz starker Zahlen (Yahoo, Reuters). Der Nasdaq Composite liegt bei +0,2 %, der Dow bei −0,9 % (Yahoo). Der Dax schloss bei 25.736 Punkten (−1,2 %), belastet von Zinsangst vor dem Fed-Protokoll (Yahoo, wallstreet-online). Heute noch: Fed-Protokoll 20:00, Williams 20:30, Anthropic-Preis nach US-Schluss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX (Stand Mi 18.11., 16:16 Nasdaq)",
+          "title": "Yahoo Finance: SPCX (Stand Mi 18.11., 18:17 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
@@ -5094,36 +5094,32 @@
           "url": "https://www.semafor.com/article/11/18/2026/spacex-40-billion-chip-financing-to-stay-off-balance-sheet"
         },
         {
-          "title": "The Paper (澎湃新闻): Trumps Wagenkolonne erreicht Hotel in Shenzhen, Musk im Begleitbus (18.11.)",
-          "url": "https://www.thepaper.cn/newsDetail_forward_34504407"
-        },
-        {
           "title": "SEC EDGAR: Meldungen SpaceX",
           "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001181412"
         },
         {
-          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 16:16 Nasdaq)",
+          "title": "@Starlink auf X (18.11., 18:01): Starlink Mobile kommt nach Botswana",
+          "url": "https://x.com/Starlink/status/2123099171800719620"
+        },
+        {
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 18:17 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: Nasdaq Composite (Stand Mi 18.11., 16:16)",
+          "title": "Yahoo Finance: Nasdaq Composite (Stand Mi 18.11., 18:17)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "CNBC: Aktien mit den größten Bewegungen am Mittwoch – Nvidia-Sprung verpufft (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/stocks-moving-the-most-today-live-updates.html"
+          "title": "Reuters via Financial Newsletter: Nvidia gibt nach und belastet KI-Werte – starker Ausblick vertreibt Unsicherheit um Huang nicht (18.11.)",
+          "url": "https://financialnewsletter.com/nvidia-retreats-weighs-on/"
         },
         {
-          "title": "CNBC: Fed-Gouverneur Waller – Fed muss die Leute womöglich mit einer Erhöhung um einen halben Punkt „schocken“ (18.11.)",
-          "url": "https://www.cnbc.com/amp/2026/11/18/federal-reserve-governor-christopher-waller.html"
-        },
-        {
-          "title": "Yahoo Finance: Dax (Stand Mi 18.11., 16:01)",
+          "title": "Yahoo Finance: Dax (Schluss Mi 18.11.)",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         },
         {
-          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – Dax rutscht unter 26.000 Punkte (18.11.)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70167366-aktien-frankfurt-dax-rutscht-unter-26-000-punkte-016.htm"
+          "title": "wallstreet-online (CMC Markets): Aktien Frankfurt Schluss – Dax rutscht unter 26.000 Punkte, Nervosität vor Anthropic-Börsengang (18.11.)",
+          "url": "https://www.wallstreet-online.de/nachricht/21713784-aktien-frankfurt-schluss-dax-rutscht-26-000-punkte-nervositaet-anthropic-boersengang"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -17406,10 +17402,10 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Mi 16:16: Tesla liegt in New York bei 384,79 $ (+1,2 % zum Schluss von 380,11 $; Spanne 379,35–389,27 $) und erholt sich nach dem Rücksetzer kurz nach dem Start (Yahoo). Eine neue Firmenmeldung gibt es nicht; bei der SEC liegt seit Di-Abend nur Wahlwerbung zur Hauptversammlung am 3.12. (SEC). Rückenwind geben der Nasdaq und Musks Rolle als einziger Firmenchef in Trumps APEC-Delegation (The Paper); Gegenwind bleibt das gesenkte Kursziel von China Merchants (441 → 354 $) (GMT Eight). Gesamtmarkt: Der Nasdaq Composite liegt um 16:16 bei +0,7 %, Nvidia dagegen bei 154,94 $ (−0,3 %) – der Sprung nach den Zahlen ist verpufft (Yahoo, CNBC). Waller hatte am Mittag eine Zinserhöhung um 50 Basispunkte im Dezember ins Spiel gebracht (CNBC). Der Dax steht um 16:01 bei 25.903 (−0,5 %) (Yahoo, dpa-AFX). Heute noch: Daly 18:15, Fed-Protokoll 20:00, Williams 20:30, Anthropic-Preis nach US-Schluss.",
+      "why": "Stand Mi 18:17: Tesla liegt in New York bei 383,09 $ (+0,8 % zum Schluss von 380,11 $; Spanne 378,36–389,27 $) und hat einen Teil des Gewinns vom Nachmittag wieder abgegeben (Yahoo). Eine neue Firmenmeldung gibt es nicht; bei der SEC liegt seit Di-Abend nur Wahlwerbung zur Hauptversammlung am 3.12. (SEC). Musk reist als einziger Firmenchef mit Trump nach Shenzhen, war beim APEC-Bankett am Abend aber nicht zu sehen (CNBC); Gegenwind bleibt das gesenkte Kursziel von China Merchants (441 → 354 $) (GMT Eight). Gesamtmarkt: Nvidia fällt um 18:17 auf 152,01 $ (−2,2 %), nachdem sie vorbörslich bis zu 3 % im Plus lag; laut Reuters belasten die offene Chefsuche nach Huangs Abgang und eine SEC-Untersuchung die KI-Werte trotz starker Zahlen (Yahoo, Reuters). Der Nasdaq Composite liegt bei +0,2 %, der Dow bei −0,9 % (Yahoo). Der Dax schloss bei 25.736 Punkten (−1,2 %), belastet von Zinsangst vor dem Fed-Protokoll (Yahoo, wallstreet-online). Heute noch: Fed-Protokoll 20:00, Williams 20:30, Anthropic-Preis nach US-Schluss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA (Stand Mi 18.11., 16:16 Nasdaq)",
+          "title": "Yahoo Finance: TSLA (Stand Mi 18.11., 18:17 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
@@ -17417,36 +17413,32 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926129146/tm267596d13_defa14a.htm"
         },
         {
-          "title": "The Paper (澎湃新闻): Trumps Wagenkolonne erreicht Hotel in Shenzhen, Musk im Begleitbus (18.11.)",
-          "url": "https://www.thepaper.cn/newsDetail_forward_34504407"
+          "title": "CNBC: Trump, Xi und Putin beim APEC-Bankett in Shenzhen (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html"
         },
         {
           "title": "GMT Eight: China Merchants Securities International senkt Tesla-Kursziel von 441 auf 354 $, „Neutral“ (18.11.)",
           "url": "https://gmteight.com/flash/detail/1573796"
         },
         {
-          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 16:16 Nasdaq)",
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 18:17 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: Nasdaq Composite (Stand Mi 18.11., 16:16)",
+          "title": "Yahoo Finance: Nasdaq Composite (Stand Mi 18.11., 18:17)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "CNBC: Aktien mit den größten Bewegungen am Mittwoch – Nvidia-Sprung verpufft (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/stocks-moving-the-most-today-live-updates.html"
+          "title": "Reuters via Financial Newsletter: Nvidia gibt nach und belastet KI-Werte – starker Ausblick vertreibt Unsicherheit um Huang nicht (18.11.)",
+          "url": "https://financialnewsletter.com/nvidia-retreats-weighs-on/"
         },
         {
-          "title": "CNBC: Fed-Gouverneur Waller – Fed muss die Leute womöglich mit einer Erhöhung um einen halben Punkt „schocken“ (18.11.)",
-          "url": "https://www.cnbc.com/amp/2026/11/18/federal-reserve-governor-christopher-waller.html"
-        },
-        {
-          "title": "Yahoo Finance: Dax (Stand Mi 18.11., 16:01)",
+          "title": "Yahoo Finance: Dax (Schluss Mi 18.11.)",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         },
         {
-          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – Dax rutscht unter 26.000 Punkte (18.11.)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70167366-aktien-frankfurt-dax-rutscht-unter-26-000-punkte-016.htm"
+          "title": "wallstreet-online (CMC Markets): Aktien Frankfurt Schluss – Dax rutscht unter 26.000 Punkte, Nervosität vor Anthropic-Börsengang (18.11.)",
+          "url": "https://www.wallstreet-online.de/nachricht/21713784-aktien-frankfurt-schluss-dax-rutscht-26-000-punkte-nervositaet-anthropic-boersengang"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -28689,43 +28681,35 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Mi 16:16: Rocket Lab dreht in New York ins Plus und steht bei 55,48 $ (+0,8 % zum Schluss von 55,05 $), nach einem Tagestief von 53,55 $ und einem Hoch von 56,36 $ (Yahoo). Eine neue Firmen- oder SEC-Meldung gibt es nicht; Rocket Lab feiert auf X mit einem Mitarbeiter-Thread die 100 Electron-Starts vom 14.11. (X, Rocket Lab IR). Für die Tagesfrage zählt der Nasdaq-Schluss gegen 55,05 $ – derzeit liegt die Aktie knapp darüber. Gesamtmarkt: Der Nasdaq Composite liegt um 16:16 bei +0,7 %, Nvidia dagegen bei 154,94 $ (−0,3 %) – der Sprung nach den Zahlen ist verpufft (Yahoo, CNBC). Waller hatte am Mittag eine Zinserhöhung um 50 Basispunkte im Dezember ins Spiel gebracht (CNBC). Der Dax steht um 16:01 bei 25.903 (−0,5 %) (Yahoo, dpa-AFX). Heute noch: Daly 18:15, Fed-Protokoll 20:00, Williams 20:30, Anthropic-Preis nach US-Schluss.",
+      "why": "Stand Mi 18:17: Rocket Lab ist wieder ins Minus gerutscht und steht bei 54,05 $ (−1,8 % zum Schluss von 55,05 $; Spanne 52,89–56,36 $) (Yahoo). Eine neue Firmen- oder SEC-Meldung gibt es nicht (SEC); die Aktie folgt dem schwächeren KI- und Wachstumsumfeld. Für die Tagesfrage zählt der Nasdaq-Schluss gegen 55,05 $ – derzeit liegt die Aktie darunter. Gesamtmarkt: Nvidia fällt um 18:17 auf 152,01 $ (−2,2 %), nachdem sie vorbörslich bis zu 3 % im Plus lag; laut Reuters belasten die offene Chefsuche nach Huangs Abgang und eine SEC-Untersuchung die KI-Werte trotz starker Zahlen (Yahoo, Reuters). Der Nasdaq Composite liegt bei +0,2 %, der Dow bei −0,9 % (Yahoo). Der Dax schloss bei 25.736 Punkten (−1,2 %), belastet von Zinsangst vor dem Fed-Protokoll (Yahoo, wallstreet-online). Heute noch: Fed-Protokoll 20:00, Williams 20:30, Anthropic-Preis nach US-Schluss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB (Stand Mi 18.11., 16:16 Nasdaq)",
+          "title": "Yahoo Finance: RKLB (Stand Mi 18.11., 18:17 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "@RocketLab auf X (18.11., 16:07): Thread zu 100 Electron-Starts",
-          "url": "https://x.com/RocketLab/status/2123070567326929093"
+          "title": "SEC EDGAR: Meldungen Rocket Lab",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001819994"
         },
         {
-          "title": "Rocket Lab IR: 100 Electron-Starts (14.11.)",
-          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-hits-100-electron-launches-fastest-commercial-rocket"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 16:16 Nasdaq)",
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 18:17 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: Nasdaq Composite (Stand Mi 18.11., 16:16)",
+          "title": "Yahoo Finance: Nasdaq Composite (Stand Mi 18.11., 18:17)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "CNBC: Aktien mit den größten Bewegungen am Mittwoch – Nvidia-Sprung verpufft (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/stocks-moving-the-most-today-live-updates.html"
+          "title": "Reuters via Financial Newsletter: Nvidia gibt nach und belastet KI-Werte – starker Ausblick vertreibt Unsicherheit um Huang nicht (18.11.)",
+          "url": "https://financialnewsletter.com/nvidia-retreats-weighs-on/"
         },
         {
-          "title": "CNBC: Fed-Gouverneur Waller – Fed muss die Leute womöglich mit einer Erhöhung um einen halben Punkt „schocken“ (18.11.)",
-          "url": "https://www.cnbc.com/amp/2026/11/18/federal-reserve-governor-christopher-waller.html"
-        },
-        {
-          "title": "Yahoo Finance: Dax (Stand Mi 18.11., 16:01)",
+          "title": "Yahoo Finance: Dax (Schluss Mi 18.11.)",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         },
         {
-          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – Dax rutscht unter 26.000 Punkte (18.11.)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70167366-aktien-frankfurt-dax-rutscht-unter-26-000-punkte-016.htm"
+          "title": "wallstreet-online (CMC Markets): Aktien Frankfurt Schluss – Dax rutscht unter 26.000 Punkte, Nervosität vor Anthropic-Börsengang (18.11.)",
+          "url": "https://www.wallstreet-online.de/nachricht/21713784-aktien-frankfurt-schluss-dax-rutscht-26-000-punkte-nervositaet-anthropic-boersengang"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -40240,39 +40224,43 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Mi 16:16: Marvell liegt in New York bei 147,44 $ (−0,9 % zum Schluss von 148,74 $) und schwankt stark: erst bis 152,23 $ (+2,3 %), dann bis 142,62 $ (−4,1 %) (Yahoo). Eine neue Firmenmeldung gibt es nicht; bei der SEC kamen am 17.11. nur Insider-Meldungen (Form 4) (SEC). Marvell folgt dem verpufften Nvidia-Schwung. Zahlen am Di 1.12. Gesamtmarkt: Der Nasdaq Composite liegt um 16:16 bei +0,7 %, Nvidia dagegen bei 154,94 $ (−0,3 %) – der Sprung nach den Zahlen ist verpufft (Yahoo, CNBC). Waller hatte am Mittag eine Zinserhöhung um 50 Basispunkte im Dezember ins Spiel gebracht (CNBC). Der Dax steht um 16:01 bei 25.903 (−0,5 %) (Yahoo, dpa-AFX). Heute noch: Daly 18:15, Fed-Protokoll 20:00, Williams 20:30, Anthropic-Preis nach US-Schluss.",
+      "why": "Stand Mi 18:17: Marvell fällt in New York auf 144,79 $ (−2,7 % zum Schluss von 148,74 $; Spanne 142,62–152,23 $) (Yahoo). Laut Investing.com lastet weiter die Verwässerung durch die Übernahme von Lumentum gegen Aktien, dazu kam der gemeldete Aktienverkauf von Chef Matt Murphy (7.500 Aktien am 16.11., 10b5-1-Plan) (Investing.com, SEC). Außerdem zieht der Nvidia-Rückgang Chipwerte wie Marvell, Micron und Sandisk nach unten (MarketWatch). Zahlen am Di 1.12. Gesamtmarkt: Nvidia fällt um 18:17 auf 152,01 $ (−2,2 %), nachdem sie vorbörslich bis zu 3 % im Plus lag; laut Reuters belasten die offene Chefsuche nach Huangs Abgang und eine SEC-Untersuchung die KI-Werte trotz starker Zahlen (Yahoo, Reuters). Der Nasdaq Composite liegt bei +0,2 %, der Dow bei −0,9 % (Yahoo). Der Dax schloss bei 25.736 Punkten (−1,2 %), belastet von Zinsangst vor dem Fed-Protokoll (Yahoo, wallstreet-online). Heute noch: Fed-Protokoll 20:00, Williams 20:30, Anthropic-Preis nach US-Schluss.",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL (Stand Mi 18.11., 16:16 Nasdaq)",
+          "title": "Yahoo Finance: MRVL (Stand Mi 18.11., 18:17 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
+        },
+        {
+          "title": "Investing.com: Warum die Marvell-Aktie heute fällt (18.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-marvell-technology-stock-sliding-today-93CH-5036476"
         },
         {
           "title": "SEC EDGAR: Meldungen Marvell",
           "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001835632"
         },
         {
-          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 16:16 Nasdaq)",
+          "title": "MarketWatch via Morningstar: CoreWeave fällt, Nvidia will Finanzierungen „diszipliniert“ vergeben (18.11.)",
+          "url": "https://www.morningstar.com/news/marketwatch/20261118128/coreweaves-stock-drops-as-nvidia-talks-up-a-disciplined-approach-to-financing"
+        },
+        {
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 18:17 Nasdaq)",
           "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: Nasdaq Composite (Stand Mi 18.11., 16:16)",
+          "title": "Yahoo Finance: Nasdaq Composite (Stand Mi 18.11., 18:17)",
           "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "CNBC: Aktien mit den größten Bewegungen am Mittwoch – Nvidia-Sprung verpufft (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/stocks-moving-the-most-today-live-updates.html"
+          "title": "Reuters via Financial Newsletter: Nvidia gibt nach und belastet KI-Werte – starker Ausblick vertreibt Unsicherheit um Huang nicht (18.11.)",
+          "url": "https://financialnewsletter.com/nvidia-retreats-weighs-on/"
         },
         {
-          "title": "CNBC: Fed-Gouverneur Waller – Fed muss die Leute womöglich mit einer Erhöhung um einen halben Punkt „schocken“ (18.11.)",
-          "url": "https://www.cnbc.com/amp/2026/11/18/federal-reserve-governor-christopher-waller.html"
-        },
-        {
-          "title": "Yahoo Finance: Dax (Stand Mi 18.11., 16:01)",
+          "title": "Yahoo Finance: Dax (Schluss Mi 18.11.)",
           "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         },
         {
-          "title": "dpa-AFX via finanznachrichten: Aktien Frankfurt – Dax rutscht unter 26.000 Punkte (18.11.)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70167366-aktien-frankfurt-dax-rutscht-unter-26-000-punkte-016.htm"
+          "title": "wallstreet-online (CMC Markets): Aktien Frankfurt Schluss – Dax rutscht unter 26.000 Punkte, Nervosität vor Anthropic-Börsengang (18.11.)",
+          "url": "https://www.wallstreet-online.de/nachricht/21713784-aktien-frankfurt-schluss-dax-rutscht-26-000-punkte-nervositaet-anthropic-boersengang"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",
