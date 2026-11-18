@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T16:31:00+01:00",
+  "updatedAt": "2026-11-18T16:35:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 10,
-      "reason": "SpaceX ist grün an einem schwachen Markttag. Viele Trader melden schnelle Gewinne, manche setzen alles auf SPCX. Einzelne wetten dagegen.",
+      "score": 50,
+      "postsCount": 12,
+      "reason": "SpaceX steigt rund 3 % und schlägt den KI-Sektor den dritten Tag in Folge. Viele feiern Options-Gewinne und verweisen auf den Starship-Fang.",
       "sources": [
         {
-          "title": "@HES_KEY_90 auf X (18.11., 16:29)",
-          "url": "https://x.com/HES_KEY_90/status/2123076123630133680"
+          "title": "@steve_dekker auf X (18.11., 16:32)",
+          "url": "https://x.com/steve_dekker/status/2123076849400160446"
         },
         {
-          "title": "@Nasdaq_Teej auf X (18.11., 16:28)",
-          "url": "https://x.com/Nasdaq_Teej/status/2123075812312146007"
+          "title": "@spcxGOD auf X (18.11., 16:33)",
+          "url": "https://x.com/spcxGOD/status/2123077181840449724"
         },
         {
-          "title": "@ErickScottCarl auf X (18.11., 16:29)",
-          "url": "https://x.com/ErickScottCarl/status/2123076066231427477"
+          "title": "@SPXtrain auf X (18.11., 16:33)",
+          "url": "https://x.com/SPXtrain/status/2123077110059122899"
         }
       ],
-      "updatedAt": "2026-11-18T16:31:00+01:00"
+      "updatedAt": "2026-11-18T16:35:00+01:00"
     },
     "TSLA": {
-      "mood": "gut",
-      "score": 20,
-      "postsCount": 9,
-      "reason": "Tesla baut Starlink in Cybercabs ein und will 4680-Zellen in Berlin fertigen. Kritik: Cybertruck-Ende 2027 und kein günstiges Model 2.",
+      "mood": "gemischt",
+      "score": 0,
+      "postsCount": 8,
+      "reason": "Tesla wirkt schwächer als der Nasdaq. Diskutiert werden 19 % weniger Europa-Verkäufe als vor einem Jahr (Woche 9.–15.11.) und ein Ausfall im Service.",
       "sources": [
         {
-          "title": "@spacefrontierxx auf X (18.11., 16:28)",
-          "url": "https://x.com/spacefrontierxx/status/2123075793106371033"
+          "title": "@piloly auf X (18.11., 16:33)",
+          "url": "https://x.com/piloly/status/2123077193215385657"
         },
         {
-          "title": "@theevking auf X (18.11., 16:27)",
-          "url": "https://x.com/theevking/status/2123075733387972649"
+          "title": "@na_option auf X (18.11., 16:32)",
+          "url": "https://x.com/na_option/status/2123076856048128503"
         },
         {
-          "title": "@bullishchart auf X (18.11., 16:29)",
-          "url": "https://x.com/bullishchart/status/2123076130739769677"
+          "title": "@BK_BrenhamTX auf X (18.11., 16:33)",
+          "url": "https://x.com/BK_BrenhamTX/status/2123077023350628437"
         }
       ],
-      "updatedAt": "2026-11-18T16:31:00+01:00"
+      "updatedAt": "2026-11-18T16:35:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/WolseleyFund/status/2123070313999257765"
         }
       ],
-      "updatedAt": "2026-11-18T16:31:00+01:00"
+      "updatedAt": "2026-11-18T16:35:00+01:00"
     }
   }
 }
