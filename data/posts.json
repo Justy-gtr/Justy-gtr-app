@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-17T22:00:00+01:00",
+  "asOf": "2026-11-18T11:50:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,222 @@
     }
   },
   "posts": [
+    {
+      "id": "post-spacex-2122940097683177721",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-18T07:28:56+01:00",
+      "summaryDe": "SpaceX: Wegen ungünstigen Wetters in den Landegebieten soll die Dragon-Frachtkapsel frühestens am Do 19.11. von der ISS ablegen. Die Teams beobachten das Wetter weiter.",
+      "originalText": "Due to unfavorable weather conditions at the splashdown locations, now targeting no earlier than Thursday, November 19 for Dragon to undock the @space_station. Teams will continue to keep an eye on weather",
+      "url": "https://x.com/SpaceX/status/2122940097683177721",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (18.11., 07:28): Dragon-Abdocken frühestens Do 19.11.",
+          "url": "https://x.com/SpaceX/status/2122940097683177721"
+        },
+        {
+          "title": "NASA: Dragon-Abdocken am Mittwoch wegen Wetter abgesagt, nächste Chance Do 19.11. 12:05 EST (18.11.)",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-stand-down-from-dragons-undocking-on-wednesday/"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122924448861008163",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-18T06:26:45+01:00",
+      "summaryDe": "Musk verweist auf seinen Post von Februar 2025: Damals schrieb er, das Verizon-System für die Flugsicherung breche schnell zusammen, und Starlink-Terminals würden der FAA kostenlos geschickt. Hintergrund ist der Streit mit Verkehrsminister Duffy um abgelehnte Gratis-Starlinks.",
+      "originalText": "I wrote this 18 months ago",
+      "url": "https://x.com/elonmusk/status/2122924448861008163",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (18.11., 06:26): „I wrote this 18 months ago“",
+          "url": "https://x.com/elonmusk/status/2122924448861008163"
+        },
+        {
+          "title": "The Hill: Musk sagt, Duffy habe kostenlose Starlinks für die FAA abgelehnt",
+          "url": "https://thehill.com/policy/technology/6225656-musk-claims-duffy-rejected-free-starlinks/"
+        },
+        {
+          "title": "Benzinga: Musk reagiert mit Facepalm auf Duffys Begründung gegen kostenlose Starlinks für die FAA (17.11.)",
+          "url": "https://www.benzinga.com/markets/tech/26/11/63376143/elon-musk-sean-duffy-faa-starlink"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122872199623414175",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-18T02:59:08+01:00",
+      "summaryDe": "Musk wirbt für Grok Bot: Der Assistent könne Firmen Millionen sparen, indem er jede Ausgabe prüft und günstigere Angebote sucht, auch per Anruf beim Lieferanten. Er zitiert einen Bericht, dass bei SpaceX SI fünf Grok Bots Buchhaltungsaufgaben übernehmen und die Rechnungsstellung von etwa 24 Stunden auf Minuten verkürzt haben.",
+      "originalText": "Grok @Bot can save you millions in corporate expenses! It will research every expenditure, evaluate its necessity and find better deals on the Internet or by calling suppliers on the phone directly.",
+      "url": "https://x.com/elonmusk/status/2122872199623414175",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX SI"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (18.11., 02:59): Grok Bot spart Firmenkosten",
+          "url": "https://x.com/elonmusk/status/2122872199623414175"
+        }
+      ]
+    },
+    {
+      "id": "post-boringcompany-2122814382363308535",
+      "account": "@boringcompany",
+      "displayName": "The Boring Company",
+      "postedAt": "2026-11-17T23:09:23+01:00",
+      "summaryDe": "Boring Company: Für den Music City Loop in Nashville ist die dritte Tunnelbohrmaschine (Prufrock-MB3) angekommen, die vierte folgt in den nächsten acht Wochen. Die Firma stellt in vielen Bereichen ein, Jobmesse am Di 24.11.",
+      "originalText": "Nashville, we’re hiring! Prufrock-MB3 has arrived (the third TBM building Music City Loop), and Prufrock-MB4 arrives in the next 8 weeks. Come dig with us - Engineering, Ops, Weld, Maintenance, Electrical, Facilities, Safety, and Security. Hiring Event: Tuesday, November 24",
+      "url": "https://x.com/boringcompany/status/2122814382363308535",
+      "tickers": [],
+      "companies": [
+        "The Boring Company"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@boringcompany auf X (17.11., 23:09): dritte Bohrmaschine in Nashville",
+          "url": "https://x.com/boringcompany/status/2122814382363308535"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2122814338893332591",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-17T23:09:13+01:00",
+      "summaryDe": "SpaceX zeigt Bilder vom ersten Fang eines Starship-Schiffs mit den Turmarmen in Starbase. Die Bauweise soll volle und schnelle Wiederverwendung ermöglichen, mit Starts und Landungen am selben Startplatz.",
+      "originalText": "The Starbase tower chopsticks catching their first Starship. This unique architecture was designed for full and rapid reusability, enabling repeat launches and landings from the same pad",
+      "url": "https://x.com/SpaceX/status/2122814338893332591",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (17.11., 23:09): Turmarme fangen erstes Starship",
+          "url": "https://x.com/SpaceX/status/2122814338893332591"
+        }
+      ]
+    },
+    {
+      "id": "post-tesla-2122812849710088504",
+      "account": "@Tesla",
+      "displayName": "Tesla",
+      "postedAt": "2026-11-17T23:03:17+01:00",
+      "summaryDe": "Tesla: Die von Tesla Energy installierten Solaranlagen der Kunden erzeugen inzwischen mehr als doppelt so viel Strom, wie Teslas weltweiter Betrieb im Jahr verbraucht.",
+      "originalText": "Customer solar systems deployed by @TeslaEnergy now generate more than 2x the electricity that our global operations consume each year",
+      "url": "https://x.com/Tesla/status/2122812849710088504",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@Tesla auf X (17.11., 23:03): Kunden-Solar erzeugt mehr als das Doppelte des Tesla-Verbrauchs",
+          "url": "https://x.com/Tesla/status/2122812849710088504"
+        }
+      ]
+    },
+    {
+      "id": "post-elonmusk-2122810772967575759",
+      "account": "@elonmusk",
+      "displayName": "Elon Musk",
+      "postedAt": "2026-11-17T22:55:02+01:00",
+      "summaryDe": "Musk reagiert mit einem Facepalm-Emoji auf Verkehrsminister Sean Duffy. Duffy hatte erklärt, die FAA setze lieber auf ein Netz am Boden, weil der Luftraum sehr groß sei; Musk hatte gesagt, Duffy habe kostenlose Starlinks für die FAA abgelehnt.",
+      "originalText": "🤦‍♂️",
+      "url": "https://x.com/elonmusk/status/2122810772967575759",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "negativ",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@elonmusk auf X (17.11., 22:55): Facepalm zu Duffy",
+          "url": "https://x.com/elonmusk/status/2122810772967575759"
+        },
+        {
+          "title": "Benzinga: Musk reagiert mit Facepalm auf Duffys Begründung gegen kostenlose Starlinks für die FAA (17.11.)",
+          "url": "https://www.benzinga.com/markets/tech/26/11/63376143/elon-musk-sean-duffy-faa-starlink"
+        },
+        {
+          "title": "The Hill: Musk sagt, Duffy habe kostenlose Starlinks für die FAA abgelehnt",
+          "url": "https://thehill.com/policy/technology/6225656-musk-claims-duffy-rejected-free-starlinks/"
+        }
+      ]
+    },
+    {
+      "id": "post-spacex-2122802167212098047",
+      "account": "@SpaceX",
+      "displayName": "SpaceX",
+      "postedAt": "2026-11-17T22:20:51+01:00",
+      "summaryDe": "SpaceX verlinkt den Auftritt von Finanzchef Bret Johnsen beim TomorrowX Summit: Starship soll Starlink-Internet, Mobilfunk und später Rechenzentren im All möglich machen.",
+      "originalText": "Watch @BretWJ at the @TomorrowXSummit talking about Starship unlocking the future of @Starlink broadband, mobile and ultimately supercompute in space",
+      "url": "https://x.com/SpaceX/status/2122802167212098047",
+      "tickers": [
+        "SPCX"
+      ],
+      "companies": [
+        "SpaceX",
+        "Starlink"
+      ],
+      "sentiment": "positiv",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@SpaceX auf X (17.11., 22:20): Finanzchef Johnsen beim TomorrowX Summit",
+          "url": "https://x.com/SpaceX/status/2122802167212098047"
+        },
+        {
+          "title": "Stocktwits: SpaceX-Finanzchef Johnsen – Rechenleistung großteils aus eigenem Geld, Anleihe für KI-Chips naht (17.11.)",
+          "url": "https://stocktwits.com/news-articles/markets/equity/space-x-to-self-fund-majority-of-compute-expansion-cfo-says-as-bond-sale-for-ai-chips-reportedly-nears/cNbXjL9R9hL"
+        }
+      ]
+    },
     {
       "id": "post-rocketlab-2122801023458951413",
       "account": "@RocketLab",

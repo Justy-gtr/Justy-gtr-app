@@ -35,130 +35,6 @@
       ]
     },
     {
-      "id": "evt-us-nvidia-exportkontrollen",
-      "title": "USA: Neue Exportregel gegen Umleitung von KI-Chips nach China verkündet (Megaspeed-Sperre noch offen)",
-      "date": "2026-11-16",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "politik",
-      "company": null,
-      "tickers": [
-        "MRVL",
-        "SPCX"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Neu Do 11:45: Laut Axios (sechs Quellen) hat Trump im Mai, im August und am 5.11. ein Vorgehen gegen Firmen gebilligt, die Nvidia-KI-Chips nach China umleiten sollen, zuletzt nach einem Telefonat mit Musk, der die Sperre unterstützte. Handelsminister Lutnick bremst laut Axios und warnte vor einem Handelskrieg; umgesetzt ist bis heute nichts. Im Zentrum steht Megaspeed aus Singapur, die frühere Firma von Alice Huang. Das Handelsministerium bestreitet den Streit mit Finanzminister Bessent (Axios, Reuters). Meine 45 % gelten dafür, dass das Handelsministerium bis 30.11. tatsächlich Exportbeschränkungen gegen Megaspeed oder ähnliche Zwischenhändler verkündet: Der Druck ist durch die Huang-Affäre und den Kongress stark gestiegen, aber drei Anläufe sind schon im Sand verlaufen. Warum das für uns zählt: Strengere China-Regeln treffen Nvidia und Chipwerte wie Marvell; SpaceX hängt über die KI-Stimmung mit dran. Stand Do 13:00: Chinas Außenamtssprecherin Mao Ning fordert die USA auf, keine „erfundenen Spionagegeschichten“ als Vorwand für eine „technologische Blockade“ zu nutzen, und verweist auf den Konsens von Trump und Xi; Megaspeed erklärt, es nehme die US-Exportregeln „äußerst ernst“ und wolle mit der US-Regierung zusammenarbeiten (Al Jazeera/AP/Reuters, Bloomberg Law). Vor dem Treffen Trump–Xi in Shenzhen nächste Woche spricht das eher gegen schnelle neue Sperren, der Druck aus dem Kongress bleibt. 45 % unverändert. Stand Do 15:00: Huang ist zurückgetreten (NVIDIA). Der US-Handelsbeauftragte Jamieson Greer sagte CNBC, die USA seien wegen Nvidia weiter „besorgt“; laut The Information arbeitet das Handelsministerium an einer Regel gegen den Fernzugriff chinesischer KI-Firmen auf Nvidia-Chips in Rechenzentren im Ausland, laut Reuters sichern sich chinesische Firmen deshalb schon Kapazität (Guardian-Liveblog). Eine Sperre gegen Megaspeed selbst ist weiter nicht verkündet. 45 % unverändert. Stand Do 18:00: Megaspeed steht weiter nicht auf der Entity List; laut FT und Axios verzögert Handelsminister Lutnick den Schritt, Finanzminister Bessent drängt. Das Weiße Haus erklärte, Trump habe „volles Vertrauen“ in Lutnick; Ausschusschef Mast will die Rolle der Exportbehörde BIS untersuchen lassen (CNBC). 45 % unverändert. Stand Do 20:00: Megaspeed steht weiter nicht auf der Entity List. Die New York Post berichtet über wachsende Kritik an Handelsminister Lutnick und BIS-Chef Kessler wegen der Untätigkeit. Laut Motley Fool fiel Alibaba um 6,5 %, nach Berichten, dass US-Behörden zusätzliche Grenzen für den Fernzugriff auf KI-Chips prüfen. 45 % unverändert. Stand Fr 07:00: Handelsminister Lutnick sagt am 10.12. vor dem Senats-Bankenausschuss aus; Senatoren beider Parteien fragen, ob Exportkontrollen gelockert wurden (NBC News). Ein Forensik-Bericht von Unemployment Labs sieht in Modellen von DeepSeek, Moonshot, MiniMax und Ant Group Spuren von Blackwell-Chips, die nicht nach China dürfen; ob die Chips im Ausland gemietet wurden, bleibt offen. Musk reagierte auf X mit „🤔“. Eine Sperre gegen Megaspeed ist weiter nicht verkündet. 45 % unverändert. Stand Fr 09:55: Malaysias Handelsministerium prüft, ob eine Megaspeed-Tochter eingeführte KI-Chips weiterverschoben hat, und arbeitet dazu mit Singapur und den USA zusammen. Der Sprecher des Repräsentantenhauses Mike Johnson sieht einen „wachsenden Konsens“ im Kongress für Grenzen beim Chip-Export nach China; Republikaner wollen neue Regeln laut einem Senatsmitarbeiter ins Verteidigungsgesetz (NDAA) schreiben (Guardian/Reuters). Laut Reuters beraten Beamte im Weißen Haus, ob Lutnick gehen soll. Eine Sperre gegen Megaspeed ist weiter nicht verkündet. 45 % unverändert. Stand Fr 11:50: Keine Sperre gegen Megaspeed verkündet. CNBC beschreibt, warum Singapur als Drehscheibe für Nvidia-Chips immer wieder auftaucht; der Guardian-Liveblog ist ohne neue Maßnahme geschlossen. 45 % unverändert. Stand Fr 20:05: Finanzminister Bessent sagte CNBC, sein Ministerium habe eine Sperre gegen Megaspeed befürwortet: „Die eigentliche Frage ist, ob Nvidia seine Kunden kannte.“ Ein neuer Bericht verfolgt 22 Dell-Server mit gesperrten Nvidia-H800-Chips über Singapur bis in ein Rechenzentrum in Shanghai (Benzinga). Eine Sperre ist weiter nicht verkündet. 45 % unverändert. Stand So 05:30: NBC berichtet, der Streit zwischen Finanzminister Bessent und Handelsminister Lutnick sei offen ausgebrochen: Bessent wirft dem Handelsministerium vor, KI-Chips nicht von China ferngehalten zu haben. Eine Sperre gegen Megaspeed ist weiter nicht verkündet. 45 % unverändert. Stand Mo 06:30: Konkreter Schritt: Laut Wall Street Journal entwirft das Handelsministerium Regeln, nach denen für Exporte von KI-Chips wie Nvidias Blackwell nach Malaysia, Indonesien und Singapur eine Lizenz nötig wäre, die Fernzugriff chinesischer Kunden verbietet. Unterlagen zeigen laut WSJ, dass Megaspeed von März 2024 bis Juni 2025 Nvidia-Chips für fast 12 Mrd. $ an Firmen in China vermitteln wollte; wie viel geliefert wurde, ist offen (investingLive nach WSJ). Finanzminister Bessent verlangt vom Nvidia-Verwaltungsrat binnen zehn Tagen Antworten, ob Nvidia „scheinbar illegale“ Verkäufe nach China vorangetrieben hat, und gibt dem Handelsministerium die Schuld an der fehlenden Megaspeed-Sperre (CNBC). Verkündet ist noch nichts, aber ein Regelentwurf ist näher an einer Maßnahme als drei gescheiterte Anläufe: 55 statt 45 %. Stand Mo 11:30: Gegenläufiges Signal: Laut Wall Street Journal will die Regierung Nvidia und gut zwei Dutzend weitere KI-Firmen zu „nationalen Champions“ erklären – mit schnelleren Exportlizenzen (Investing.com nach WSJ, eigener Kalendereintrag). Das spricht nicht gegen eine Sperre gegen Megaspeed, zeigt aber, dass Washington Nvidia nicht grundsätzlich bremsen will. Verkündet ist weiter nichts: 55 % unverändert. Stand Mo 16:00: Verkündet. Die Exportbehörde BIS des Handelsministeriums hat am Mo eine vorläufige Regel erlassen, „geschrieben von und auf Anweisung von“ Finanzministerium und Nationalem Sicherheitsrat: Rechenzentren überall auf der Welt brauchen eine Lizenz, wenn sie Firmen mit Sitz in China oder anderen Ländern der Gruppe D:5 nennenswert Rechenleistung aus US-KI-Chips bereitstellen (ab 12 Mio. TPP, laut TechCrunch etwa 750 H100/H200). Dazu gilt eine Lizenzpflicht für Exporte fortgeschrittener Chips nach Indonesien, Malaysia, Singapur, Thailand und Brasilien, außer an US-Firmen (BIS, TechCrunch). CNBC nennt das die erste politische Antwort auf den Nvidia-Skandal; Nvidia, Micron, Intel und AMD fielen nach der Meldung. Megaspeed selbst steht weiter nicht auf der Entity List – dafür gibt es jetzt einen eigenen Eintrag. 100 statt 55 %, weil eine Beschränkung gegen die Umleitung über Drittländer jetzt amtlich ist.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Axios: Lutnick bremste dreimal Trumps Vorgehen gegen die Umleitung von Nvidia-Chips nach China (11.11.)",
-          "url": "https://www.axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls"
-        },
-        {
-          "title": "Investing.com/Reuters: Lutnick stalled Trump crackdown on diversion of Nvidia chips to China, Axios reports (11.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/lutnick-stalled-trump-crackdown-on-diversion-of-nvidia-chips-to-china-axios-reports-5019880"
-        },
-        {
-          "title": "The Guardian (Live): Nvidia-Board berät über Huang, Aktie vorbörslich fast −9 % (12.11., 11:02)",
-          "url": "https://www.theguardian.com/technology/live/2026/nov/12/nvidia-ceo-jensen-huang-affairs-share-price-plunges-live-latest"
-        },
-        {
-          "title": "Al Jazeera/AP/Reuters: China wirft den USA „erfundene“ Spionagevorwürfe vor (12.11.)",
-          "url": "https://www.aljazeera.com/news/2026/11/12/china-says-us-fabricating-nvidia-spy-claims-to-justify-tech-blockade"
-        },
-        {
-          "title": "Bloomberg Law: China – USA sollen Huang-Skandal nicht für Tech-Beschränkungen nutzen (12.11.)",
-          "url": "https://news.bloomberglaw.com/international-trade/china-says-us-should-not-use-huang-scandal-to-justify-tech-curbs"
-        },
-        {
-          "title": "NVIDIA: NVIDIA Announces CEO Transition (12.11.)",
-          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
-        },
-        {
-          "title": "FT: Handelsministerium verzögert Megaspeed auf der schwarzen Liste",
-          "url": "https://www.ft.com/content/afb6c960-a910-4d67-9588-73ba3bea5b06"
-        },
-        {
-          "title": "Axios: Bessent stellt Lutnick wegen Megaspeed zur Rede (11.11.)",
-          "url": "https://www.axios.com/2026/11/11/bessent-lutnick-megaspeed-nvidia-china-chips"
-        },
-        {
-          "title": "CNBC (Liveblog): Huang sagt vor dem Kongress aus, Trump schlägt Tim Cook vor (12.11., 17:52)",
-          "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html"
-        },
-        {
-          "title": "New York Post: Lutnick und Kessler unter Druck wegen Megaspeed (12.11.)",
-          "url": "https://nypost.com/2026/11/12/business/commerce-depts-lutnick-kessler-under-fire-over-inaction-on-nvidias-megaspeed-spy-fiasco/"
-        },
-        {
-          "title": "Motley Fool: Börse am Mittag, 12.11.",
-          "url": "https://www.fool.com/coverage/stock-market-today/2026/11/12/stock-market-midday-nov-12-nvidia-ceo-resigns-amd-surges-as-wall-street-edges-higher/"
-        },
-        {
-          "title": "NBC News: Lutnick sagt aus, Mast will Huang am 1.12. befragen (12.11.)",
-          "url": "https://www.nbcnews.com/politics/congress/commerce-secretary-howard-lutnick-testify-pressure-nvidia-scandal-rcna609093"
-        },
-        {
-          "title": "Unemployment Labs: Chinesische KI-Modelle tragen Blackwell-Fingerabdruck (12.11.)",
-          "url": "https://unemploymentlabs.com/checkpoint-forensics"
-        },
-        {
-          "title": "@elonmusk: „🤔“ (13.11., 01:38)",
-          "url": "https://x.com/elonmusk/status/2121039931015344322"
-        },
-        {
-          "title": "Guardian-Liveblog: Johnson für Chip-Exportgrenzen, Malaysia prüft Megaspeed-Tochter (13.11.)",
-          "url": "https://www.theguardian.com/technology/live/2026/nov/13/nvidia-jensen-huang-to-testify-before-congress-live-latest-updates"
-        },
-        {
-          "title": "Reuters Morning Bid via Investing.com: Scandal topples the AI star (13.11.)",
-          "url": "https://www.investing.com/news/economy-news/morning-bid-scandal-topples-the-ai-star-5024173"
-        },
-        {
-          "title": "CNBC: Warum Singapur im Nvidia-China-Streit immer wieder auftaucht (13.11.)",
-          "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html"
-        },
-        {
-          "title": "Benzinga: AMD −10,5 %, Nasdaq 100 −1,7 %; Bessent und Dell-Server in Shanghai (13.11., 19:41)",
-          "url": "https://www.benzinga.com/markets/equities/26/11/63259862/stock-market-today-amd-nvidia-chip-selloff-cisco-modine-november-13"
-        },
-        {
-          "title": "NBC News: Bessent und Lutnick streiten öffentlich über Chip-Exporte nach China (13.11.)",
-          "url": "https://www.nbcnews.com/politics/white-house/nvidia-trump-administration-feud-bessent-lutnick-china-chips-rcna609048"
-        },
-        {
-          "title": "investingLive (nach WSJ): USA entwerfen Lizenzpflicht für KI-Chips nach Malaysia, Indonesien, Singapur (16.11., 04:31 Berlin)",
-          "url": "https://investinglive.com/stocks/records-show-12bn-nvidia-chips-to-china-us-drafts-licence-rules-on-nvidia-chip-exports/"
-        },
-        {
-          "title": "CNBC: Bessent fordert „dramatischen Umbau“ bei Nvidia und einen externen Chef (15.11.)",
-          "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html"
-        },
-        {
-          "title": "Investing.com: USA wollen Nvidia zu den KI-„National Champions“ zählen, laut WSJ (16.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/us-plans-to-name-nvidia-among-ai-national-champions-wsj-reports-5028365"
-        },
-        {
-          "title": "BIS: Regel gegen Fernzugriff auf US-KI-Chips (Pressemitteilung, 16.11.)",
-          "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology"
-        },
-        {
-          "title": "BIS: Interim Final Rule „Addressing Remote Access to Advanced Semiconductors“ (RIN 0694-AK50)",
-          "url": "https://www.bis.gov/media/documents/rin-0694-ak50.pdf"
-        },
-        {
-          "title": "CNBC: Handelsministerium schließt Schlupfloch für China (16.11., 14:47 Berlin)",
-          "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html"
-        },
-        {
-          "title": "TechCrunch: USA verschärfen Exportregeln für KI-Chips gegen Fernzugriff (16.11.)",
-          "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/"
-        }
-      ]
-    },
-    {
       "id": "evt-us-ki-nationale-champions",
       "title": "USA: Lutnick will KI-Firmen wie Nvidia zu „nationalen Champions“ erklären (laut WSJ binnen einer Woche)",
       "date": "2026-11-16",
@@ -237,96 +113,6 @@
       ]
     },
     {
-      "id": "evt-us-empire-state-nov",
-      "title": "USA: Industriestimmung New York (Empire State) November – schwächer als erwartet (veröffentlicht)",
-      "date": "2026-11-16",
-      "time": "14:30",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "konjunktur",
-      "company": null,
-      "tickers": [
-        "TSLA",
-        "SPCX",
-        "MRVL"
-      ],
-      "probabilityPct": 100,
-      "impact": "niedrig",
-      "reasoning": "Veröffentlicht Mo 14:30 Berlin: Der Index der New Yorker Fed fiel von 25,5 im Oktober (höchster Stand seit Ende 2021) auf 7,8 Punkte. Erwartet waren etwa 17 bis 18 (Seeking Alpha, Trading Economics). Die Industrie wächst damit nur noch leicht: Neue Aufträge 3,0 nach 23,2, Lieferungen 8,8. Die Beschäftigung stieg dagegen so stark wie seit Juni 2022 nicht mehr (18,1), der Preisanstieg bei Vorleistungen ließ deutlich nach (45,9 nach rund 60), und die Erwartungen für die nächsten Monate stiegen auf 28,9 (New York Fed). Für TSLA, SPCX und MRVL zählt vor allem der Zinsblick: Weniger Preisdruck spricht eher gegen weitere Zinserhöhungen. Die Wirkung bleibt klein, der Chip-Ausverkauf vor den Nvidia-Zahlen überlagert den Wert. 100 %, weil die Zahl veröffentlicht ist.",
-      "example": false,
-      "sources": [
-        {
-          "title": "New York Fed: Empire State Manufacturing Survey November 2026 (PDF)",
-          "url": "https://www.newyorkfed.org/medialibrary/media/survey/empire/empire2026/2026_11_empire-state-manufacturing-survey.pdf"
-        },
-        {
-          "title": "Seeking Alpha: Empire-State-Index fällt stärker als erwartet (16.11.)",
-          "url": "https://seekingalpha.com/news/4672973-empire-state-manufacturing-index-slumps-beyond-estimates-in-november"
-        },
-        {
-          "title": "Trading Economics: NY-Industrie verliert im November an Schwung",
-          "url": "https://tradingeconomics.com/united-states/ny-empire-state-manufacturing-index/news/601584"
-        },
-        {
-          "title": "Finobird: Empire State Index, erwartet 17,6 (16.11.)",
-          "url": "https://finobird.com/calendar/economic/us-u-s-ny-empire-state-manufacturing-index-2026-11-16/"
-        }
-      ]
-    },
-    {
-      "id": "evt-fed-warsh-ki-konferenz",
-      "title": "Fed-Chef Warsh eröffnet Konferenz zu KI, Produktivität und Jobs (Mo 18:00, gehalten)",
-      "date": "2026-11-16",
-      "time": "18:00",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "zinsen",
-      "company": null,
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "MRVL"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Kevin Warsh hält am Mo um 9:00 Uhr Ortszeit San Francisco (18:00 Berlin) die Eröffnungsrede der Fed-Konferenz seiner Arbeitsgruppe zu Produktivität und Jobs und moderiert danach Runden zur Verbreitung von „Superintelligenz“, u. a. mit Nikesh Arora (Palo Alto Networks), Patrick Collison (Stripe) und Marc Andreessen (San Francisco Fed). Es ist sein erster Auftritt vor dem Fed-Protokoll am Mi. Der Fed-Präsident von Kansas City, Jeff Schmid, sagte am So, die Inflation laufe „in die falsche Richtung“, ein Teil des Drucks komme aus der KI-Nachfrage (MLQ, CNBC). Klingt Warsh nach weiteren Zinserhöhungen, belastet das teure Wachstumswerte wie SPCX und TSLA. 97 %, weil der Termin fest im Fed-Programm steht. Stand Mo 06:30: Termin bestätigt, Eröffnung um 17:00 GMT (18:00 Berlin) (investingLive). Laut Vorberichten geht es um die Wirkung von KI auf Produktivität, Jobs und Inflation, nicht um ein Zinssignal; Warsh ist mit seiner These, KI dämpfe die Inflation, unter den Fed-Kollegen eher allein (Reuters via Investing.com, Washington Post). Eine Zinserhöhung im Dezember ist laut investingLive weiter fest eingepreist. 97 % unverändert. Stand Mo 08:30: Termin unverändert, 12:00 Uhr New York (18:00 Berlin); vorher spricht Fed-Gouverneur Barr in Mailand über KI und Finanzstabilität (MLQ). 97 % unverändert. Stand Mo 09:30: Laut Programm der San Francisco Fed spricht Warsh um 9:00 Uhr Pacific (18:00 Berlin) rund 15 Minuten zur Eröffnung und moderiert danach Runden und ein Kamingespräch. 97 % unverändert. Stand Mo 13:00: Programm unverändert, Warsh eröffnet um 9:00 Uhr Pacific (18:00 Berlin) (San Francisco Fed). 97 % unverändert. Stand Mo 18:15: Rede gehalten. Warsh sagt, „Superintelligenz“ werde die Wirtschaft deutlich prägen, mit wichtigen Folgen für die Geldpolitik „später“. Er nannte drei Szenarien, ausdrücklich keine Prognosen: mehr Produktivität bei fast voller Beschäftigung; Jobverluste durch Automatisierung; oder KI enttäuscht – dann könnten nach hohen Investitionen und Kursgewinnen die Bewertungen fallen, die Wirtschaft sich abkühlen und die Arbeitslosigkeit steigen (CNBC, Axios). Ein direktes Zinssignal nennen die Berichte nicht. 100 %, weil der Termin stattgefunden hat.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Federal Reserve Bank of San Francisco: Productivity and Jobs Task Force Conference, 16.11., Programm",
-          "url": "https://www.frbsf.org/news-and-media/events/2026/11/productivity-and-jobs-task-force-conference/"
-        },
-        {
-          "title": "MLQ: Schmid – Inflation „in die falsche Richtung“, vor Warshs Rede am Montag (15.11.)",
-          "url": "https://mlq.ai/news/kansas-city-feds-schmid-says-inflation-is-moving-in-the-wrong-direction-before-warshs-monday-remarks/"
-        },
-        {
-          "title": "investingLive: Asien – Chipwerte fallen vor Nvidia, US-Futures drehen ins Minus (16.11., 05:34 Berlin)",
-          "url": "https://investinglive.com/news/investinglive-asia-pacific-market-news-chipmakers-hit-ahead-of-nvidia/"
-        },
-        {
-          "title": "Reuters via Investing.com: Warsh zieht Bilanz der KI-Revolution (15.11.)",
-          "url": "https://www.investing.com/news/economy-news/feds-warsh-to-take-stock-of-ai-revolution-as-us-public-grows-wary-5024808"
-        },
-        {
-          "title": "Washington Post: Mehr Fed-Vertreter sehen KI als Inflationstreiber, Warsh ist Ausreißer (13.11.)",
-          "url": "https://www.washingtonpost.com/business/2026/11/13/more-top-fed-officials-say-ai-is-fueling-inflation-kevin-warsh-is-an-outlier/"
-        },
-        {
-          "title": "MLQ.ai: Nasdaq-Futures fast −1 %, Taiwan-Chipausverkauf vertieft sich (16.11., 06:46 Berlin)",
-          "url": "https://mlq.ai/news/nasdaq-futures-fall-nearly-1-as-taiwans-chip-rout-deepens-before-nvidia-results-while-european-futures-edge-up/"
-        },
-        {
-          "title": "CNBC: Warsh betont Bedeutung von KI, warnt, sie könne „enttäuschen“ (16.11.)",
-          "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html"
-        },
-        {
-          "title": "Axios: Warsh sieht Risiko eines Kurseinbruchs, falls der KI-Boom enttäuscht (16.11.)",
-          "url": "https://www.axios.com/2026/11/16/fed-warsh-ai-boom-stocks"
-        }
-      ]
-    },
-    {
       "id": "evt-us-einzelhandel-okt",
       "title": "USA: Einzelhandelsumsätze Oktober (veröffentlicht)",
       "date": "2026-11-17",
@@ -393,7 +179,7 @@
     },
     {
       "id": "evt-faa-starbase-anhoerung",
-      "title": "FAA: Online-Anhörungen zu bis zu 100 (später 456) Starship-Starts pro Jahr ab Starbase",
+      "title": "FAA: Online-Anhörungen zu bis zu 100 (später 456) Starship-Starts pro Jahr ab Starbase (laufen)",
       "date": "2026-11-17",
       "time": "20:00",
       "timezone": "Europe/Berlin",
@@ -403,9 +189,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 90,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "Die FAA hat die Anhörungen am 17., 18. und 19. November komplett online verlegt und die Kommentarfrist bis 7. Dezember verlängert. Das ist der Start eines langen Umweltverfahrens (Programmatic EIS), keine Genehmigung. Kurzfristig kaum kursrelevant, langfristig entscheidet es über die Startkadenz, die Musk für 2027 verspricht. Stand Di 18:10: Laut FAA gibt es heute zwei Online-Termine: 13:00–15:00 Uhr texanischer Zeit (20:00–22:00 Berlin) und 17:30–19:30 Uhr (00:30–02:30 Berlin in der Nacht zu Mi); Anmeldung per Zoom, je 30 Minuten Vortrag der FAA, dann Wortmeldungen von höchstens 3 Minuten (FAA). 90 % unverändert. Stand Di 20:20: Der erste Online-Termin läuft seit 20:00 Berlin (bis 22:00), der zweite folgt um 00:30. Berichte über den Verlauf oder Wortmeldungen gibt es noch nicht. Laut FAA werden die Wortmeldungen von einem Gerichtsschreiber protokolliert; schriftliche Kommentare sind bis 7.12. möglich (FAA). Heute darf SpaceX in Boca Chica bis zu 25 Starts und 50 Landungen im Jahr machen (KRGV). Eine Entscheidung fällt dabei nicht. 90 % unverändert. Stand Di 22:20: Der erste Online-Termin (20:00–22:00 Berlin) ist vorbei; Berichte über den Verlauf oder einzelne Wortmeldungen gibt es bis 22:20 nicht, und die FAA hat keine Absage oder Verschiebung veröffentlicht (FAA, MyRGV). Laut FAA-Skript gab es zuerst eine halbstündige Präsentation, danach Wortmeldungen von bis zu drei Minuten. Der zweite Termin läuft heute Nacht 00:30–02:30 Berlin, weitere am 18. und 19.11.; Kommentare bis 7.12. Eine Entscheidung fällt dabei nicht. 90 % unverändert.",
+      "reasoning": "Die FAA hat die Anhörungen am 17., 18. und 19. November komplett online verlegt und die Kommentarfrist bis 7. Dezember verlängert. Das ist der Start eines langen Umweltverfahrens (Programmatic EIS), keine Genehmigung. Kurzfristig kaum kursrelevant, langfristig entscheidet es über die Startkadenz, die Musk für 2027 verspricht. Stand Di 18:10: Laut FAA gibt es heute zwei Online-Termine: 13:00–15:00 Uhr texanischer Zeit (20:00–22:00 Berlin) und 17:30–19:30 Uhr (00:30–02:30 Berlin in der Nacht zu Mi); Anmeldung per Zoom, je 30 Minuten Vortrag der FAA, dann Wortmeldungen von höchstens 3 Minuten (FAA). 90 % unverändert. Stand Di 20:20: Der erste Online-Termin läuft seit 20:00 Berlin (bis 22:00), der zweite folgt um 00:30. Berichte über den Verlauf oder Wortmeldungen gibt es noch nicht. Laut FAA werden die Wortmeldungen von einem Gerichtsschreiber protokolliert; schriftliche Kommentare sind bis 7.12. möglich (FAA). Heute darf SpaceX in Boca Chica bis zu 25 Starts und 50 Landungen im Jahr machen (KRGV). Eine Entscheidung fällt dabei nicht. 90 % unverändert. Stand Di 22:20: Der erste Online-Termin (20:00–22:00 Berlin) ist vorbei; Berichte über den Verlauf oder einzelne Wortmeldungen gibt es bis 22:20 nicht, und die FAA hat keine Absage oder Verschiebung veröffentlicht (FAA, MyRGV). Laut FAA-Skript gab es zuerst eine halbstündige Präsentation, danach Wortmeldungen von bis zu drei Minuten. Der zweite Termin läuft heute Nacht 00:30–02:30 Berlin, weitere am 18. und 19.11.; Kommentare bis 7.12. Eine Entscheidung fällt dabei nicht. 90 % unverändert. Stand Mi 11:50: Die Anhörungen am 17.11. haben stattgefunden. Anwohner nannten laut ValleyCentral Sorgen wegen Trümmern an Stränden, Folgen für Tiere und Fischerei, Überschallknalle, Erschütterungen an Häusern und die Gesundheit; einige sagten, mexikanische Fischerdörfer würden übergangen. Schriftliche Kommentare sind bis 7.12. möglich (FAA). Eine Entscheidung fällt dabei nicht. 100 %, weil eingetreten.",
       "example": false,
       "sources": [
         {
@@ -427,6 +213,10 @@
         {
           "title": "MyRGV: Online-Treffen ab 17.11., FAA sagt Präsenztermine ab und verlängert Kommentarfrist (16.11.)",
           "url": "https://myrgv.com/local-news/2026/11/16/spacex-virtual-meetings-start-nov-17-faa-cancels-in-person-meetings-extends-comment-period/"
+        },
+        {
+          "title": "ValleyCentral: Anwohner äußern sich in der FAA-Anhörung zur SpaceX-Erweiterung (17.11.)",
+          "url": "https://www.valleycentral.com/news/local-news/we-feel-our-community-is-being-forgotten-south-texas-residents-weigh-in-on-spacex-expansion/amp/"
         }
       ]
     },
@@ -445,7 +235,7 @@
       ],
       "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Offiziell: nach US-Börsenschluss, Call um 14:00 Uhr Pacific. Für uns relevant, weil SpaceX mit dem SI-Segment (Rechenzentren, Grok, Cursor) inzwischen ein großer KI-Infrastruktur-Käufer ist und Tesla für Training ebenfalls. Die Nasdaq-100 war Ende Oktober in eine Korrektur gerutscht, weil Zweifel an den KI-Investitionen wuchsen. Stand Do 05:10: Die Zahlen am 17.11. fallen jetzt mitten in den Streit um Chef Huang: Laut WSJ bereitet der Verwaltungsrat seine Ablösung vor, Nvidia fiel nachbörslich auf 158,78 $ (−8,6 %) (Yahoo, CNBC). Der Termin selbst ist bestätigt; 97 % unverändert. Stand Do 15:00: Nvidia bestätigt in der Rücktrittsmitteilung zu Huang den Termin Di 17.11., Zahlen gegen 13:20 Uhr Pacific (22:20 Berlin), Telefonkonferenz 14:00 Pacific (23:00 Berlin). Es wird der erste Bericht unter Interimschefin Kress. 99 statt 97 %, weil der Termin heute schriftlich bestätigt wurde. Stand So 08:30: Uhrzeit im Kalender auf 22:20 Berlin korrigiert – dann kommen laut Nvidia die Zahlen, die Telefonkonferenz folgt um 23:00. Die dpa-AFX-Wochenvorschau nennt ebenfalls Di 22:20 (boersennews.de). Analysten erwarten laut LSEG rund 109,2 Mrd. $ Umsatz und 2,48 $ bereinigten Gewinn je Aktie (Yonhap Infomax). 99 % unverändert. Stand So 18:00: Am Optionsmarkt wird nach den Zahlen eine Bewegung von etwa 9,1 % in beide Richtungen eingepreist. Nvidia fiel in der Woche um 12,7 % auf 162,85 $, die sechste Verlustwoche in Folge; HSBC stufte am Fr auf „Halten“ mit Ziel 170 $ ab (Benzinga, 15.11.). 99 % unverändert. Stand So 20:00: Erwartung laut LSEG: Umsatz 109,08 Mrd. $, Gewinn je Aktie 2,47 $; die Telefonkonferenz beginnt um 23:00 Berlin. Nvidia liegt im November bisher 20 % im Minus, auf Kurs für den schwächsten Monat seit Ende 2022 (CNBC). 99 % unverändert. Stand Mo 05:00: Die Investoren Brad Gerstner (Altimeter) und Gavin Baker (Atreides) haben den Nvidia-Verwaltungsrat in einem Brief gebeten, bei der Chefsuche eine Rückkehr von Jensen Huang offenzuhalten (CNBC). In Asien fielen am Mo die Chipwerte: Kospi rund −2,9 %, SK Hynix rund −6 %, Samsung rund −3,7 %; Bank of America meldet seit Oktober fast 20 % tiefere NAND-Spotpreise, sieht aber keine Kürzungen bei Chips für US-KI-Rechenzentren (Global Economic, Seoul Economic Daily). 99 % unverändert. Stand Mo 06:30: Am Wochenende forderte Finanzminister Bessent einen „dramatischen Umbau“ bei Nvidia und einen Chef von außen; laut Financial Times erwägt Huang dagegen eine Rückkehr, Verbündete bauen dafür einen „War Room“ (CNBC, Bloomberg Law). Laut WSJ entwirft Washington Lizenzregeln für KI-Chip-Exporte nach Malaysia, Indonesien und Singapur (investingLive). In Asien schlossen Nikkei −1,36 % und Kospi −2,69 %, SK Hynix fiel über 6 %; Nasdaq-100-Futures lagen um 06:24 Berlin 0,77 % im Minus (Business Upturn, CNBC). Der Termin Di 22:20 steht: 99 % unverändert. Stand Mo 08:30: Der Ausverkauf in Asien hat sich zum Handelsschluss verschärft: Taiwans Taiex fiel um 6,03 %, der zweitgrößte Punkteverlust seiner Geschichte; TSMC, der Fertiger fast aller Nvidia-KI-Chips, −5,74 % (Investing.com, TaiwanPlus). Kospi schloss −3,59 %, Nikkei −2,36 %, Advantest −11 % (MLQ, Business Insider). CLSA stuft Nvidia von „High-Conviction Outperform“ auf „Outperform“ ab und senkt das Kursziel von 425 auf 255 $, die Gewinnschätzungen bleiben, nur das Bewertungsvielfache sinkt wegen der offenen Führungsfrage (Investing.com). Nasdaq-100-Futures lagen um 07:48 Berlin 1,1 % im Minus (MarketScreener). Der Termin Di 22:20 steht: 99 % unverändert. Stand Mo 09:30: Nvidia erklärt, man wähle gerade eine Suchfirma für den Chefposten und habe noch keine Kandidaten angesprochen; Spekulation über Namen sei verfrüht. Eine Petition für Huangs Rückkehr hat über 160.000 Unterschriften, Musk unterstützt sie; Dan Ives sieht „keine Chance“ für eine Rückkehr (CNBC). Ein an die Nvidia-Aktie gekoppelter Kontrakt auf Hyperliquid stieg am So-Abend über 3 % (Bloomberg via Economic Times). In Frankfurt ist Infineon zur Eröffnung Dax-Schlusslicht (−2,9 %) (AktienCheck). Der Termin Di 22:20 steht: 99 % unverändert. Stand Mo 11:30: Die Petition für Huangs Rückkehr hat jetzt über 170.000 Unterschriften (CNBC). Nvidia lag vorbörslich in den USA rund 2,2 % im Minus (CNBC). In Frankfurt hat sich der Chipsektor etwas gefangen: Infineon nur noch −0,9 % (Yahoo), der Dax tritt bei rund 26.740 Punkten auf der Stelle, weil Anleger auf die Zahlen am Di warten (Handelsblatt). Der Termin Di 22:20 steht: 99 % unverändert. Stand Mo 13:00: UBS senkt das Kursziel für Nvidia von 300 auf 240 $, bleibt aber bei „Buy“; Analyst Timothy Arcuri nennt Sorgen um den Umsatz 2028 und mögliche Exportregeln (dpa-AFX bei MarketScreener, Investing.com). Die Petition für Huangs Rückkehr liegt laut CNBC über 175.000 Unterschriften; Großaktionäre wie Altimeter haben dem Vorstand geschrieben. Vorbörslich steht Nvidia um 13:19 Berlin bei 157,17 $, 3,5 % unter dem Freitag (Yahoo). Der Termin Di 22:20 steht: 99 % unverändert. Stand Mo 14:15: Laut FT spricht Huang mit Vertrauten über eine Rückkehr, der offene Brief für ihn hat mehr als 165.000 Unterschriften, darunter Musk; Kress bleibt Interimschefin und stellt die Zahlen vor (Guardian, CNBC). Nvidia liegt vorbörslich bei 157,08 $ (−3,5 %) (Yahoo). Termin unverändert, 99 %. Stand Mo 15:15: Susquehanna erwartet Zahlen und Ausblick über den Schätzungen, getragen von GB300 und ersten Vera-Rubin-Lieferungen, sieht aber bis zu einem festen Chef Unsicherheit; Wunschkandidat ist Nvidia-Manager Ian Buck (Investing.com). Mizuho bleibt bei „Outperform“ und senkt das Kursziel von 250 auf 220 $ (Investing.com). Vorbörslich steht Nvidia um 15:12 Berlin bei 157,30 $, 3,4 % unter dem Freitag (Yahoo). Termin unverändert, 99 %. Stand Mo 16:00: Morgan Stanley senkt das Kursziel von 300 auf 267 $ (Übergewichten) (Business Insider). Laut WSJ soll Interimschefin Kress Nvidias Finanzierungen für KI-Cloud-Firmen bremsen (The Next Web). Dazu kommt die neue Exportregel gegen den Fernzugriff aus China (CNBC). Nvidia notiert um 16:20 Berlin bei 159,74 $ (−1,9 %), Marvell, Micron und Intel fallen deutlich stärker (Yahoo, Investopedia). 99 % unverändert. Stand Mo 20:00: Laut Visible Alpha erwarten Analysten 109,5 Mrd. $ Umsatz (Nvidias eigene Prognose: 108 Mrd. $); die Optionspreise deuten laut Investopedia auf rund 8 % Ausschlag bis Ende der Woche. Nvidia notiert um 20:15 bei 155,96 $ (−4,2 %) (Investopedia, Yahoo). 99 % unverändert. Stand Mo 22:00: Nvidia schließt bei 156,14 $ (−4,1 %) (Yahoo). LSEG-Konsens: 109,1 Mrd. $ Umsatz (+91 %) und 2,47 $ Gewinn je Aktie, Rechenzentren rund 101,9 Mrd. $; Zahlen gegen 22:20 Berlin, Telefonkonferenz 23:00 – erstmals geleitet von Interimschefin Kress (CNBC, FXStreet). Laut dpa-AFX gibt es im Verwaltungsrat keine Überlegungen zu einer Rückkehr Huangs; Finanzminister Bessent fordert einen externen Chef und Antworten zur Exportkontrolle binnen 10 Tagen (dpa-AFX, Quartz). 99 % unverändert. Stand Di 05:00: Asien folgt dem US-Ausverkauf: Kospi −1,9 % auf 5.002, Nikkei −1,2 %, SoftBank −4,7 %, Samsung −2,2 % und SK Hynix −1,4 % (NDTV Profit). Laut UBS ist am Optionsmarkt eine Bewegung von rund 7,8 % eingepreist; entscheidend seien Ausblick, Finanzierung der KI-Kunden und Exportrisiko, nicht das Quartal selbst (Reuters). Erwartet werden rund 109,1 Mrd. $ Umsatz und 2,47 $ Gewinn je Aktie (CNBC). Nvidia nachbörslich 155,60 $ (Yahoo). Der Termin heute 22:20 Berlin steht: 99 % unverändert. Stand Di 06:30: Laut OptionWiz preisen die Optionen bis Mi ±8,4 % ein, also etwa 143 bis 169 $ vom Schluss bei 156,14 $; im Schnitt der letzten acht Berichte bewegte sich die Aktie nur um 4,0 %. Asien bleibt schwach: Nikkei −1,1 %, Kospi −2,4 % (Yahoo, 06:20), SoftBank und Advantest je rund −4 % (RTTNews). Nasdaq-100-Futures +0,3 % (Yahoo, 06:28). Die Dow-Jones-Tagesvorschau nennt weiter 22:20. 99 % unverändert. Stand Di 08:30: Nvidia in Frankfurt um 08:29 bei 143,08 €, umgerechnet etwa 157,5 $ und damit knapp 1 % über dem US-Schluss (Yahoo). Nasdaq-100-Futures +0,1 %, S&P-500-Futures −0,2 % (Yahoo, 08:34); der X-Dax deutet −0,6 % auf 26.440 Punkte an (dpa-AFX). Nikkei −1,3 %, Kospi −2,6 % (Yahoo). 99 % unverändert. Stand Di 09:30: Der Dax eröffnete 0,8 % tiefer bei 26.387 Punkten; laut dpa-AFX sind die Anleger vor den Nvidia-Zahlen nervös (finanzen.net, dpa-AFX). Nvidia auf Xetra um 09:27 bei 143,44 €, rund 1 % über dem umgerechneten US-Schluss (Yahoo). Musk kündigte an, Huangs X-Konto bekomme den verlorenen blauen Haken kostenlos zurück (Musk auf X). 99 % unverändert. Stand Di 11:30: Nvidia auf Xetra um 11:31 bei 141,18 €, 2,9 % unter dem Xetra-Schluss vom Mo und etwa 0,6 % unter dem umgerechneten US-Schluss (Yahoo). Laut LSEG-Konsens erwarten Analysten 2,48 $ Gewinn je Aktie bei rund 109,1 Mrd. $ Umsatz (XTB). Der Dax liegt am späten Vormittag 0,8 % im Minus (Yahoo). 99 % unverändert. Stand Di 13:00: Nvidia in den USA vorbörslich 157,51 $ (+0,9 %), auf Xetra um 13:04 bei 143,60 € (−1,2 %) (Yahoo). Laut den neuen 13F-Meldungen ist SpaceX inzwischen Nvidias größte gemeldete Aktienbeteiligung (130,5 Mio. Aktien, vor Intel) (Stocktwits). Der Dax notiert mittags 0,7 % tiefer bei 26.413 Punkten, Händler nennen die Nervosität vor den Zahlen (dpa-AFX). 99 % unverändert. Stand Di 14:00: Laut CNBC ist es der erste Bericht seit Huangs Abgang, Interimschefin Colette Kress spricht erstmals öffentlich; LSEG-Konsens 2,47 $ je Aktie und 109,1 Mrd. $ Umsatz. Die Aktie liegt im November 24 % im Minus und schloss am Mo auf dem tiefsten Stand seit Juli 2025 (CNBC). Vorbörslich um 14:31 bei 157,76 $ (+1,0 %), auf Xetra um 14:16 bei 144,06 € (−0,9 %) (Yahoo). Telefonkonferenz 17:00 New Yorker Zeit, also 23:00 Berlin (CNBC). 99 % unverändert. Stand Di 15:15: Nvidia vorbörslich um 15:18 bei 157,74 $ (+1,0 %), auf Xetra um 15:03 bei 143,88 € (−1,0 %) (Yahoo). Vor US-Eröffnung um 15:30 fallen die Dow-Futures um 0,8 %, Nasdaq-100-Futures +0,3 % (Yahoo, 15:08). Die US-Industrieproduktion fiel im Oktober um 0,4 %, vor allem wegen der Versorger (Fed). 99 % unverändert. Stand Di 16:20: Nach US-Eröffnung fällt Nvidia bis 16:18 auf 153,77 $ (−1,5 %), auf Xetra um 16:04 bei 141,08 € (−2,9 %) (Yahoo). Seit Beginn der Vorwoche hat die Aktie 16 % verloren; die Optionspreise deuten laut Investopedia bis Wochenende auf eine Bewegung von etwa 8 % in jede Richtung (Investopedia). Laut CNBC hat Nvidia Kunden gewarnt, dass die neue Regel gegen Fernzugriff chinesischer Firmen auf KI-Chips sie und Nvidia US-Klagen aussetzen könnte; der Leerverkäufer Culper Research behauptet, bis zu 20 % des Rechenzentrums-Umsatzes im Geschäftsjahr 2026 seien von China getrieben (CNBC). 99 % unverändert. Stand Di 18:10: Jensen Huang erklärt in seiner ersten Stellungnahme seit dem Rücktritt, er würde als Chef zurückkehren, wenn der Verwaltungsrat das für richtig hält; er bedauert seine Fehler und will mit der Untersuchung zusammenarbeiten (CNBC, Huang auf X). Laut CNBC und WSJ erwägt der Verwaltungsrat eine Rückkehr derzeit nicht. Die Aktie stieg nach der Meldung gegen 16:55 von 150,09 $ auf 155,36 $ (Variety); um 18:11 lag sie bei 154,07 $ (−1,3 %), der Xetra-Schluss bei 139,40 € (−4,1 %) (Yahoo). Musk hat Huangs Erklärung geteilt. Der Termin heute 22:20 steht: 99 % unverändert. Stand Di 20:20: Nvidia hat vor den Zahlen einen Ausschuss des Verwaltungsrats für nationale Sicherheit, Exportkontrollen und Handelsrisiken gebildet, der mindestens einmal im Quartal tagt (CNBC, dpa-AFX). Laut Reuters/Susquehanna preist der Optionsmarkt für Mi eine Bewegung von etwa 8,5 % in beide Richtungen ein, rund 335 Mrd. $ Börsenwert. LSEG-Erwartung: 2,47 $ Gewinn je Aktie, 109,1 Mrd. $ Umsatz (CNBC). Die Aktie lag um 20:17 bei 154,51 $ (−1,0 %) (Yahoo). Der Termin heute 22:20 steht: 99 % unverändert. Stand Di 22:26 – veröffentlicht: Nvidia hat nach US-Schluss Zahlen über den Erwartungen vorgelegt. Umsatz 115,8 Mrd. $ (erwartet 109,15 Mrd. $; Vorjahr 57 Mrd. $), Gewinn je Aktie 2,68 $ (erwartet 2,47 $), Rechenzentren 107,6 Mrd. $ (erwartet 101,85 Mrd. $), Edge Computing 8,2 Mrd. $ (erwartet 7,49 Mrd. $). Ausblick fürs 4. Quartal 127,4–132,6 Mrd. $ Umsatz (erwartet 125,25 Mrd. $), dazu ein Aktienrückkauf über 150 Mrd. $ (Yahoo Finance). Die Aktie schloss bei 155,46 $ (−0,4 %) und lag um 22:26 nachbörslich bei 158,75 $ (+2,1 %) (Yahoo). Kurz vor den Zahlen berichtete das Wall Street Journal, die SEC ermittle gegen Nvidia wegen möglicherweise irreführender Angaben gegenüber Anlegern; Nvidia hat das bis 22:26 nicht kommentiert (Yahoo Finance/WSJ). Telefonkonferenz mit Interimschefin Kress um 23:00. 100 %, weil veröffentlicht.",
+      "reasoning": "Offiziell: nach US-Börsenschluss, Call um 14:00 Uhr Pacific. Für uns relevant, weil SpaceX mit dem SI-Segment (Rechenzentren, Grok, Cursor) inzwischen ein großer KI-Infrastruktur-Käufer ist und Tesla für Training ebenfalls. Die Nasdaq-100 war Ende Oktober in eine Korrektur gerutscht, weil Zweifel an den KI-Investitionen wuchsen. Stand Do 05:10: Die Zahlen am 17.11. fallen jetzt mitten in den Streit um Chef Huang: Laut WSJ bereitet der Verwaltungsrat seine Ablösung vor, Nvidia fiel nachbörslich auf 158,78 $ (−8,6 %) (Yahoo, CNBC). Der Termin selbst ist bestätigt; 97 % unverändert. Stand Do 15:00: Nvidia bestätigt in der Rücktrittsmitteilung zu Huang den Termin Di 17.11., Zahlen gegen 13:20 Uhr Pacific (22:20 Berlin), Telefonkonferenz 14:00 Pacific (23:00 Berlin). Es wird der erste Bericht unter Interimschefin Kress. 99 statt 97 %, weil der Termin heute schriftlich bestätigt wurde. Stand So 08:30: Uhrzeit im Kalender auf 22:20 Berlin korrigiert – dann kommen laut Nvidia die Zahlen, die Telefonkonferenz folgt um 23:00. Die dpa-AFX-Wochenvorschau nennt ebenfalls Di 22:20 (boersennews.de). Analysten erwarten laut LSEG rund 109,2 Mrd. $ Umsatz und 2,48 $ bereinigten Gewinn je Aktie (Yonhap Infomax). 99 % unverändert. Stand So 18:00: Am Optionsmarkt wird nach den Zahlen eine Bewegung von etwa 9,1 % in beide Richtungen eingepreist. Nvidia fiel in der Woche um 12,7 % auf 162,85 $, die sechste Verlustwoche in Folge; HSBC stufte am Fr auf „Halten“ mit Ziel 170 $ ab (Benzinga, 15.11.). 99 % unverändert. Stand So 20:00: Erwartung laut LSEG: Umsatz 109,08 Mrd. $, Gewinn je Aktie 2,47 $; die Telefonkonferenz beginnt um 23:00 Berlin. Nvidia liegt im November bisher 20 % im Minus, auf Kurs für den schwächsten Monat seit Ende 2022 (CNBC). 99 % unverändert. Stand Mo 05:00: Die Investoren Brad Gerstner (Altimeter) und Gavin Baker (Atreides) haben den Nvidia-Verwaltungsrat in einem Brief gebeten, bei der Chefsuche eine Rückkehr von Jensen Huang offenzuhalten (CNBC). In Asien fielen am Mo die Chipwerte: Kospi rund −2,9 %, SK Hynix rund −6 %, Samsung rund −3,7 %; Bank of America meldet seit Oktober fast 20 % tiefere NAND-Spotpreise, sieht aber keine Kürzungen bei Chips für US-KI-Rechenzentren (Global Economic, Seoul Economic Daily). 99 % unverändert. Stand Mo 06:30: Am Wochenende forderte Finanzminister Bessent einen „dramatischen Umbau“ bei Nvidia und einen Chef von außen; laut Financial Times erwägt Huang dagegen eine Rückkehr, Verbündete bauen dafür einen „War Room“ (CNBC, Bloomberg Law). Laut WSJ entwirft Washington Lizenzregeln für KI-Chip-Exporte nach Malaysia, Indonesien und Singapur (investingLive). In Asien schlossen Nikkei −1,36 % und Kospi −2,69 %, SK Hynix fiel über 6 %; Nasdaq-100-Futures lagen um 06:24 Berlin 0,77 % im Minus (Business Upturn, CNBC). Der Termin Di 22:20 steht: 99 % unverändert. Stand Mo 08:30: Der Ausverkauf in Asien hat sich zum Handelsschluss verschärft: Taiwans Taiex fiel um 6,03 %, der zweitgrößte Punkteverlust seiner Geschichte; TSMC, der Fertiger fast aller Nvidia-KI-Chips, −5,74 % (Investing.com, TaiwanPlus). Kospi schloss −3,59 %, Nikkei −2,36 %, Advantest −11 % (MLQ, Business Insider). CLSA stuft Nvidia von „High-Conviction Outperform“ auf „Outperform“ ab und senkt das Kursziel von 425 auf 255 $, die Gewinnschätzungen bleiben, nur das Bewertungsvielfache sinkt wegen der offenen Führungsfrage (Investing.com). Nasdaq-100-Futures lagen um 07:48 Berlin 1,1 % im Minus (MarketScreener). Der Termin Di 22:20 steht: 99 % unverändert. Stand Mo 09:30: Nvidia erklärt, man wähle gerade eine Suchfirma für den Chefposten und habe noch keine Kandidaten angesprochen; Spekulation über Namen sei verfrüht. Eine Petition für Huangs Rückkehr hat über 160.000 Unterschriften, Musk unterstützt sie; Dan Ives sieht „keine Chance“ für eine Rückkehr (CNBC). Ein an die Nvidia-Aktie gekoppelter Kontrakt auf Hyperliquid stieg am So-Abend über 3 % (Bloomberg via Economic Times). In Frankfurt ist Infineon zur Eröffnung Dax-Schlusslicht (−2,9 %) (AktienCheck). Der Termin Di 22:20 steht: 99 % unverändert. Stand Mo 11:30: Die Petition für Huangs Rückkehr hat jetzt über 170.000 Unterschriften (CNBC). Nvidia lag vorbörslich in den USA rund 2,2 % im Minus (CNBC). In Frankfurt hat sich der Chipsektor etwas gefangen: Infineon nur noch −0,9 % (Yahoo), der Dax tritt bei rund 26.740 Punkten auf der Stelle, weil Anleger auf die Zahlen am Di warten (Handelsblatt). Der Termin Di 22:20 steht: 99 % unverändert. Stand Mo 13:00: UBS senkt das Kursziel für Nvidia von 300 auf 240 $, bleibt aber bei „Buy“; Analyst Timothy Arcuri nennt Sorgen um den Umsatz 2028 und mögliche Exportregeln (dpa-AFX bei MarketScreener, Investing.com). Die Petition für Huangs Rückkehr liegt laut CNBC über 175.000 Unterschriften; Großaktionäre wie Altimeter haben dem Vorstand geschrieben. Vorbörslich steht Nvidia um 13:19 Berlin bei 157,17 $, 3,5 % unter dem Freitag (Yahoo). Der Termin Di 22:20 steht: 99 % unverändert. Stand Mo 14:15: Laut FT spricht Huang mit Vertrauten über eine Rückkehr, der offene Brief für ihn hat mehr als 165.000 Unterschriften, darunter Musk; Kress bleibt Interimschefin und stellt die Zahlen vor (Guardian, CNBC). Nvidia liegt vorbörslich bei 157,08 $ (−3,5 %) (Yahoo). Termin unverändert, 99 %. Stand Mo 15:15: Susquehanna erwartet Zahlen und Ausblick über den Schätzungen, getragen von GB300 und ersten Vera-Rubin-Lieferungen, sieht aber bis zu einem festen Chef Unsicherheit; Wunschkandidat ist Nvidia-Manager Ian Buck (Investing.com). Mizuho bleibt bei „Outperform“ und senkt das Kursziel von 250 auf 220 $ (Investing.com). Vorbörslich steht Nvidia um 15:12 Berlin bei 157,30 $, 3,4 % unter dem Freitag (Yahoo). Termin unverändert, 99 %. Stand Mo 16:00: Morgan Stanley senkt das Kursziel von 300 auf 267 $ (Übergewichten) (Business Insider). Laut WSJ soll Interimschefin Kress Nvidias Finanzierungen für KI-Cloud-Firmen bremsen (The Next Web). Dazu kommt die neue Exportregel gegen den Fernzugriff aus China (CNBC). Nvidia notiert um 16:20 Berlin bei 159,74 $ (−1,9 %), Marvell, Micron und Intel fallen deutlich stärker (Yahoo, Investopedia). 99 % unverändert. Stand Mo 20:00: Laut Visible Alpha erwarten Analysten 109,5 Mrd. $ Umsatz (Nvidias eigene Prognose: 108 Mrd. $); die Optionspreise deuten laut Investopedia auf rund 8 % Ausschlag bis Ende der Woche. Nvidia notiert um 20:15 bei 155,96 $ (−4,2 %) (Investopedia, Yahoo). 99 % unverändert. Stand Mo 22:00: Nvidia schließt bei 156,14 $ (−4,1 %) (Yahoo). LSEG-Konsens: 109,1 Mrd. $ Umsatz (+91 %) und 2,47 $ Gewinn je Aktie, Rechenzentren rund 101,9 Mrd. $; Zahlen gegen 22:20 Berlin, Telefonkonferenz 23:00 – erstmals geleitet von Interimschefin Kress (CNBC, FXStreet). Laut dpa-AFX gibt es im Verwaltungsrat keine Überlegungen zu einer Rückkehr Huangs; Finanzminister Bessent fordert einen externen Chef und Antworten zur Exportkontrolle binnen 10 Tagen (dpa-AFX, Quartz). 99 % unverändert. Stand Di 05:00: Asien folgt dem US-Ausverkauf: Kospi −1,9 % auf 5.002, Nikkei −1,2 %, SoftBank −4,7 %, Samsung −2,2 % und SK Hynix −1,4 % (NDTV Profit). Laut UBS ist am Optionsmarkt eine Bewegung von rund 7,8 % eingepreist; entscheidend seien Ausblick, Finanzierung der KI-Kunden und Exportrisiko, nicht das Quartal selbst (Reuters). Erwartet werden rund 109,1 Mrd. $ Umsatz und 2,47 $ Gewinn je Aktie (CNBC). Nvidia nachbörslich 155,60 $ (Yahoo). Der Termin heute 22:20 Berlin steht: 99 % unverändert. Stand Di 06:30: Laut OptionWiz preisen die Optionen bis Mi ±8,4 % ein, also etwa 143 bis 169 $ vom Schluss bei 156,14 $; im Schnitt der letzten acht Berichte bewegte sich die Aktie nur um 4,0 %. Asien bleibt schwach: Nikkei −1,1 %, Kospi −2,4 % (Yahoo, 06:20), SoftBank und Advantest je rund −4 % (RTTNews). Nasdaq-100-Futures +0,3 % (Yahoo, 06:28). Die Dow-Jones-Tagesvorschau nennt weiter 22:20. 99 % unverändert. Stand Di 08:30: Nvidia in Frankfurt um 08:29 bei 143,08 €, umgerechnet etwa 157,5 $ und damit knapp 1 % über dem US-Schluss (Yahoo). Nasdaq-100-Futures +0,1 %, S&P-500-Futures −0,2 % (Yahoo, 08:34); der X-Dax deutet −0,6 % auf 26.440 Punkte an (dpa-AFX). Nikkei −1,3 %, Kospi −2,6 % (Yahoo). 99 % unverändert. Stand Di 09:30: Der Dax eröffnete 0,8 % tiefer bei 26.387 Punkten; laut dpa-AFX sind die Anleger vor den Nvidia-Zahlen nervös (finanzen.net, dpa-AFX). Nvidia auf Xetra um 09:27 bei 143,44 €, rund 1 % über dem umgerechneten US-Schluss (Yahoo). Musk kündigte an, Huangs X-Konto bekomme den verlorenen blauen Haken kostenlos zurück (Musk auf X). 99 % unverändert. Stand Di 11:30: Nvidia auf Xetra um 11:31 bei 141,18 €, 2,9 % unter dem Xetra-Schluss vom Mo und etwa 0,6 % unter dem umgerechneten US-Schluss (Yahoo). Laut LSEG-Konsens erwarten Analysten 2,48 $ Gewinn je Aktie bei rund 109,1 Mrd. $ Umsatz (XTB). Der Dax liegt am späten Vormittag 0,8 % im Minus (Yahoo). 99 % unverändert. Stand Di 13:00: Nvidia in den USA vorbörslich 157,51 $ (+0,9 %), auf Xetra um 13:04 bei 143,60 € (−1,2 %) (Yahoo). Laut den neuen 13F-Meldungen ist SpaceX inzwischen Nvidias größte gemeldete Aktienbeteiligung (130,5 Mio. Aktien, vor Intel) (Stocktwits). Der Dax notiert mittags 0,7 % tiefer bei 26.413 Punkten, Händler nennen die Nervosität vor den Zahlen (dpa-AFX). 99 % unverändert. Stand Di 14:00: Laut CNBC ist es der erste Bericht seit Huangs Abgang, Interimschefin Colette Kress spricht erstmals öffentlich; LSEG-Konsens 2,47 $ je Aktie und 109,1 Mrd. $ Umsatz. Die Aktie liegt im November 24 % im Minus und schloss am Mo auf dem tiefsten Stand seit Juli 2025 (CNBC). Vorbörslich um 14:31 bei 157,76 $ (+1,0 %), auf Xetra um 14:16 bei 144,06 € (−0,9 %) (Yahoo). Telefonkonferenz 17:00 New Yorker Zeit, also 23:00 Berlin (CNBC). 99 % unverändert. Stand Di 15:15: Nvidia vorbörslich um 15:18 bei 157,74 $ (+1,0 %), auf Xetra um 15:03 bei 143,88 € (−1,0 %) (Yahoo). Vor US-Eröffnung um 15:30 fallen die Dow-Futures um 0,8 %, Nasdaq-100-Futures +0,3 % (Yahoo, 15:08). Die US-Industrieproduktion fiel im Oktober um 0,4 %, vor allem wegen der Versorger (Fed). 99 % unverändert. Stand Di 16:20: Nach US-Eröffnung fällt Nvidia bis 16:18 auf 153,77 $ (−1,5 %), auf Xetra um 16:04 bei 141,08 € (−2,9 %) (Yahoo). Seit Beginn der Vorwoche hat die Aktie 16 % verloren; die Optionspreise deuten laut Investopedia bis Wochenende auf eine Bewegung von etwa 8 % in jede Richtung (Investopedia). Laut CNBC hat Nvidia Kunden gewarnt, dass die neue Regel gegen Fernzugriff chinesischer Firmen auf KI-Chips sie und Nvidia US-Klagen aussetzen könnte; der Leerverkäufer Culper Research behauptet, bis zu 20 % des Rechenzentrums-Umsatzes im Geschäftsjahr 2026 seien von China getrieben (CNBC). 99 % unverändert. Stand Di 18:10: Jensen Huang erklärt in seiner ersten Stellungnahme seit dem Rücktritt, er würde als Chef zurückkehren, wenn der Verwaltungsrat das für richtig hält; er bedauert seine Fehler und will mit der Untersuchung zusammenarbeiten (CNBC, Huang auf X). Laut CNBC und WSJ erwägt der Verwaltungsrat eine Rückkehr derzeit nicht. Die Aktie stieg nach der Meldung gegen 16:55 von 150,09 $ auf 155,36 $ (Variety); um 18:11 lag sie bei 154,07 $ (−1,3 %), der Xetra-Schluss bei 139,40 € (−4,1 %) (Yahoo). Musk hat Huangs Erklärung geteilt. Der Termin heute 22:20 steht: 99 % unverändert. Stand Di 20:20: Nvidia hat vor den Zahlen einen Ausschuss des Verwaltungsrats für nationale Sicherheit, Exportkontrollen und Handelsrisiken gebildet, der mindestens einmal im Quartal tagt (CNBC, dpa-AFX). Laut Reuters/Susquehanna preist der Optionsmarkt für Mi eine Bewegung von etwa 8,5 % in beide Richtungen ein, rund 335 Mrd. $ Börsenwert. LSEG-Erwartung: 2,47 $ Gewinn je Aktie, 109,1 Mrd. $ Umsatz (CNBC). Die Aktie lag um 20:17 bei 154,51 $ (−1,0 %) (Yahoo). Der Termin heute 22:20 steht: 99 % unverändert. Stand Di 22:26 – veröffentlicht: Nvidia hat nach US-Schluss Zahlen über den Erwartungen vorgelegt. Umsatz 115,8 Mrd. $ (erwartet 109,15 Mrd. $; Vorjahr 57 Mrd. $), Gewinn je Aktie 2,68 $ (erwartet 2,47 $), Rechenzentren 107,6 Mrd. $ (erwartet 101,85 Mrd. $), Edge Computing 8,2 Mrd. $ (erwartet 7,49 Mrd. $). Ausblick fürs 4. Quartal 127,4–132,6 Mrd. $ Umsatz (erwartet 125,25 Mrd. $), dazu ein Aktienrückkauf über 150 Mrd. $ (Yahoo Finance). Die Aktie schloss bei 155,46 $ (−0,4 %) und lag um 22:26 nachbörslich bei 158,75 $ (+2,1 %) (Yahoo). Kurz vor den Zahlen berichtete das Wall Street Journal, die SEC ermittle gegen Nvidia wegen möglicherweise irreführender Angaben gegenüber Anlegern; Nvidia hat das bis 22:26 nicht kommentiert (Yahoo Finance/WSJ). Telefonkonferenz mit Interimschefin Kress um 23:00. 100 %, weil veröffentlicht. Stand Mi 11:50 – Abgleich mit der offiziellen Mitteilung: Umsatz 115,8 Mrd. $ und bereinigter Gewinn je Aktie 2,68 $ stimmen (nach GAAP 2,70 $). Korrektur: Der Ausblick fürs 4. Quartal lautet 130,0 Mrd. $ plus/minus 3 %, also rund 126,1–133,9 Mrd. $, ohne Rechenzentrums-Umsatz aus China. Die 150 Mrd. $ für Aktienrückkäufe sind nicht neu, der Verwaltungsrat hat sie schon im September freigegeben; Ende Q3 waren noch rund 227,3 Mrd. $ übrig (Nvidia). Laut LSEG lagen die Erwartungen bei 109,10 Mrd. $ Umsatz, 2,48 $ je Aktie und 125,1 Mrd. $ Ausblick (CNBC). Verwaltungsratschef Harvey Jones sagte in der Telefonkonferenz, Huang werde nicht zurückgeholt (CNBC, dpa-AFX); Kress hob die Wachstumsprognose fürs kommende Geschäftsjahr von 70 auf 75 % (wallstreet-online). Muddy Waters legte am 17.11. eine Short-Position offen, will sie aber großteils sofort schließen (Seeking Alpha). Vorbörslich 160,87 $ (+3,5 %), Xetra 146,44 € (+5,1 %) (Yahoo). 100 %, weil veröffentlicht.",
       "example": false,
       "sources": [
         {
@@ -759,6 +549,30 @@
         {
           "title": "Yahoo Finance Live: Nvidia übertrifft Erwartungen im 3. Quartal, Ausblick Q4 über Erwartung, 150 Mrd. $ Rückkauf; WSJ: SEC ermittelt (17.11.)",
           "url": "https://finance.yahoo.com/technology/live/nvidia-earnings-live-nvidia-to-report-q3-results-after-the-bell-with-colette-kress-to-host-first-call-as-interim-ceo-202616349.html"
+        },
+        {
+          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %, Rückkauf-Aufstockung um 150 Mrd. $ schon im September",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+        },
+        {
+          "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
+        },
+        {
+          "title": "dpa-AFX via onvista: ROUNDUP 2/Nvidia – Huang kommt nicht zurück, vorbörslich +3,2 % auf 160,27 $ (18.11., 09:22)",
+          "url": "https://www.onvista.de/news/2026/11-18-roundup-2-nvidia-huang-kommt-nicht-zurueck-starkes-geschaeft-und-zielanhebung-0-10-26577743"
+        },
+        {
+          "title": "wallstreet-online: Märkte am Morgen – Kress hebt Wachstumsprognose von 70 auf 75 % (18.11.)",
+          "url": "https://www.wallstreet-online.de/nachricht/21709947-maerkte-morgen-nvidia-rekord-stromsteuer-runter-anthropic-rekord-ipo"
+        },
+        {
+          "title": "Seeking Alpha: Muddy Waters meldet Short-Position in Nvidia (17.11.)",
+          "url": "https://seekingalpha.com/news/4673868-nvidia-a-new-short-call-at-muddy-waters"
+        },
+        {
+          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 11:27 Xetra)",
+          "url": "https://finance.yahoo.com/quote/NVD.DE/"
         }
       ]
     },
@@ -777,9 +591,9 @@
         "SPCX",
         "MRVL"
       ],
-      "probabilityPct": 95,
+      "probabilityPct": 97,
       "impact": "mittel",
-      "reasoning": "Der APEC-Gipfel findet am 18. und 19. November in Shenzhen statt (chinesische Regierung). Trump und Xi sollen sich dort treffen, Thema unter anderem ein Meldekanal für KI-Zwischenfälle (Lianhe Zaobao); große Ergebnisse etwa zu Zöllen werden laut SCMP erst zum G20 erwartet. Die Nvidia-Affäre um eine mutmaßliche chinesische Agentin fällt genau in diese Woche. 85 % für das Treffen, weil beide Seiten es angekündigt haben, Absagen aber möglich sind. Wichtig für Tesla (China-Geschäft), Chipwerte wie Marvell und die Exportregeln für KI-Chips. Stand Sa 09:30: Das Weiße Haus hat am Fr bestätigt, dass Trump, Xi und Putin sich am Do 19.11. am Rand des Gipfels zum ersten Dreiertreffen der drei Staatschefs überhaupt treffen; dazu kommen ein Arbeitsessen und ein Treffen Trump–Xi am selben Tag. Themen laut US-Regierung: Abbau von Atomwaffen und der Iran-Krieg, nicht die Ukraine. Die Nvidia-Affäre und Exportkontrollen für Chips sollen ausdrücklich keine Rolle spielen („Wir verhandeln keine amerikanischen Exportkontrollen“). Elon Musk begleitet Trump auf der Reise, ist beim Dreiertreffen aber nicht dabei. Trump fliegt am Mo los und ist am Di zuerst beim ASEAN-Gipfel auf den Philippinen (CNA/AFP, Reuters, AP). 92 statt 85 %, weil das Weiße Haus die Treffen jetzt offiziell bestätigt hat; kurzfristige Absagen bleiben möglich. Für uns wichtig: Musk mit in China ist ein Signal für Teslas China-Geschäft. Dass Exportkontrollen nicht auf dem Tisch liegen, heißt für Chipwerte wie Marvell keine Lockerung, aber auch keine neue Verschärfung aus Shenzhen. Stand Sa 13:00: Vorbereitung läuft: China und die USA haben am Fr in der ersten Sitzung ihres neuen Handelsrats über Zollsenkungen, das gegenseitige Paket „30 Mrd. $ gegen 30 Mrd. $“ und Agrarhandel gesprochen, teilte Chinas Handelsministerium am Sa mit; ob es Einigungen gab, sagte es nicht. Das im September vereinbarte Zollpaket über 60 Mrd. $ ist weiter nicht fertig (CNBC/Reuters). 92 % unverändert. Stand So 06:30: Vor dem Treffen Xi–Trump verhandeln beide Seiten laut Business Times über gegenseitige Zollsenkungen und Agrarkäufe; eine Einigung ist noch nicht verkündet. 92 % unverändert. Stand So 20:00: Iran hat am So erneut mit Drohnen einen US-Stützpunkt in Bahrain angegriffen, der zweite Angriff seit Fr und die ersten Angriffe auf Golfstaaten seit September; Bahrain meldet, die Drohnen seien abgefangen worden. Die Revolutionsgarden behaupten, zwei Tanker seien in der Straße von Hormus auf Minen gelaufen; unabhängig bestätigt ist das nicht (BBC, The National). Das Iran-Thema auf dem Gipfel wird damit dringlicher; am Termin selbst ändert sich nichts: 92 % unverändert. Stand Mo 06:30: China hat bestätigt, dass Xi am Do 19.11. in Shenzhen das erste Dreiertreffen mit Trump und Putin ausrichtet (investingLive). Laut Semafor reisen Finanzminister Bessent und Handelsminister Lutnick mit, die gerade öffentlich über Nvidia-Chips nach China streiten (CNBC). Mit der Bestätigung aus Peking 95 statt 92 %. Stand Di 05:00: Musk bestätigt die Reise selbst: Beim DealBook-Gipfel am Mi sei er nur „digital“ dabei, weil er in China sei (Musk auf X). Der APEC-CEO-Gipfel in Shenzhen beginnt am Di mit einer Rede von Xi, auf der Liste stehen die Chefs von CATL, Baidu, BYD, Xiaomi und Unitree; das Gipfeltreffen der Staatschefs folgt am 18. und 19.11. Laut US-Regierung verhandelt Washington mit China nicht über Exportkontrollen (The Next Web, Reuters, AP). 95 % unverändert. Stand Di 11:30: Der APEC-CEO-Gipfel in Shenzhen hat am Di begonnen, mit vergleichsweise wenigen bekannten US-Chefs; Xi soll am zweiten Tag sprechen (Nikkei Asia). 95 % unverändert.",
+      "reasoning": "Der APEC-Gipfel findet am 18. und 19. November in Shenzhen statt (chinesische Regierung). Trump und Xi sollen sich dort treffen, Thema unter anderem ein Meldekanal für KI-Zwischenfälle (Lianhe Zaobao); große Ergebnisse etwa zu Zöllen werden laut SCMP erst zum G20 erwartet. Die Nvidia-Affäre um eine mutmaßliche chinesische Agentin fällt genau in diese Woche. 85 % für das Treffen, weil beide Seiten es angekündigt haben, Absagen aber möglich sind. Wichtig für Tesla (China-Geschäft), Chipwerte wie Marvell und die Exportregeln für KI-Chips. Stand Sa 09:30: Das Weiße Haus hat am Fr bestätigt, dass Trump, Xi und Putin sich am Do 19.11. am Rand des Gipfels zum ersten Dreiertreffen der drei Staatschefs überhaupt treffen; dazu kommen ein Arbeitsessen und ein Treffen Trump–Xi am selben Tag. Themen laut US-Regierung: Abbau von Atomwaffen und der Iran-Krieg, nicht die Ukraine. Die Nvidia-Affäre und Exportkontrollen für Chips sollen ausdrücklich keine Rolle spielen („Wir verhandeln keine amerikanischen Exportkontrollen“). Elon Musk begleitet Trump auf der Reise, ist beim Dreiertreffen aber nicht dabei. Trump fliegt am Mo los und ist am Di zuerst beim ASEAN-Gipfel auf den Philippinen (CNA/AFP, Reuters, AP). 92 statt 85 %, weil das Weiße Haus die Treffen jetzt offiziell bestätigt hat; kurzfristige Absagen bleiben möglich. Für uns wichtig: Musk mit in China ist ein Signal für Teslas China-Geschäft. Dass Exportkontrollen nicht auf dem Tisch liegen, heißt für Chipwerte wie Marvell keine Lockerung, aber auch keine neue Verschärfung aus Shenzhen. Stand Sa 13:00: Vorbereitung läuft: China und die USA haben am Fr in der ersten Sitzung ihres neuen Handelsrats über Zollsenkungen, das gegenseitige Paket „30 Mrd. $ gegen 30 Mrd. $“ und Agrarhandel gesprochen, teilte Chinas Handelsministerium am Sa mit; ob es Einigungen gab, sagte es nicht. Das im September vereinbarte Zollpaket über 60 Mrd. $ ist weiter nicht fertig (CNBC/Reuters). 92 % unverändert. Stand So 06:30: Vor dem Treffen Xi–Trump verhandeln beide Seiten laut Business Times über gegenseitige Zollsenkungen und Agrarkäufe; eine Einigung ist noch nicht verkündet. 92 % unverändert. Stand So 20:00: Iran hat am So erneut mit Drohnen einen US-Stützpunkt in Bahrain angegriffen, der zweite Angriff seit Fr und die ersten Angriffe auf Golfstaaten seit September; Bahrain meldet, die Drohnen seien abgefangen worden. Die Revolutionsgarden behaupten, zwei Tanker seien in der Straße von Hormus auf Minen gelaufen; unabhängig bestätigt ist das nicht (BBC, The National). Das Iran-Thema auf dem Gipfel wird damit dringlicher; am Termin selbst ändert sich nichts: 92 % unverändert. Stand Mo 06:30: China hat bestätigt, dass Xi am Do 19.11. in Shenzhen das erste Dreiertreffen mit Trump und Putin ausrichtet (investingLive). Laut Semafor reisen Finanzminister Bessent und Handelsminister Lutnick mit, die gerade öffentlich über Nvidia-Chips nach China streiten (CNBC). Mit der Bestätigung aus Peking 95 statt 92 %. Stand Di 05:00: Musk bestätigt die Reise selbst: Beim DealBook-Gipfel am Mi sei er nur „digital“ dabei, weil er in China sei (Musk auf X). Der APEC-CEO-Gipfel in Shenzhen beginnt am Di mit einer Rede von Xi, auf der Liste stehen die Chefs von CATL, Baidu, BYD, Xiaomi und Unitree; das Gipfeltreffen der Staatschefs folgt am 18. und 19.11. Laut US-Regierung verhandelt Washington mit China nicht über Exportkontrollen (The Next Web, Reuters, AP). 95 % unverändert. Stand Di 11:30: Der APEC-CEO-Gipfel in Shenzhen hat am Di begonnen, mit vergleichsweise wenigen bekannten US-Chefs; Xi soll am zweiten Tag sprechen (Nikkei Asia). 95 % unverändert. Stand Mi 11:50: Trump ist in Shenzhen gelandet, Xi hat ihn persönlich am Flughafen empfangen. Xi eröffnete den Gipfel mit einem Aufruf zu freiem Handel und mehr Zusammenarbeit bei KI. Das Dreiertreffen Trump–Xi–Putin ist für Do geplant, ein konkretes Ergebnis wird kaum erwartet. Daneben ist ein Zweiergespräch Trump–Xi vorgesehen, mit Hoffnung auf eine Verlängerung der Handelspause über Januar 2027 hinaus (CNBC, NBC News). 97 statt 95 %, weil Trump vor Ort ist.",
       "example": false,
       "sources": [
         {
@@ -849,6 +663,14 @@
         {
           "title": "Nikkei Asia: APEC-CEO-Gipfel in Shenzhen beginnt ohne mehrere US-Schwergewichte (17.11.)",
           "url": "https://asia.nikkei.com/politics/international-relations/apec/china-hosts-apec-ceo-summit-with-several-us-heavyweights-absent"
+        },
+        {
+          "title": "CNBC: Trump in Shenzhen gelandet, Dreiertreffen mit Xi und Putin am Donnerstag (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-china-apec.html"
+        },
+        {
+          "title": "NBC News: Xi empfängt Trump persönlich am Flughafen (18.11.)",
+          "url": "https://www.nbcnews.com/world/asia/xi-jinping-greets-trump-arrives-china-tarmac-putin-talks-shenzhen-apec-rcna609962"
         }
       ]
     },
@@ -906,9 +728,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 85,
+      "probabilityPct": 92,
       "impact": "mittel",
-      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms. Stand Mi 07:00: Fidelity nennt für Privatkunden Zeichnungsende Di 17.11. 16:00 ET (22:00 Berlin) und die Preisfestsetzung am Abend des 18.11.; das stützt den Handelsstart am 19.11. 85 % unverändert. Stand Mi 09:50: Laut FT wollen die Konsortialbanken (Goldman Sachs, Morgan Stanley) wegen hoher Nachfrage den Preis über die Spanne von 70–78 $ heben, die Bewertung läge dann bei 1,5 Bio. $ oder mehr. Das stützt den Termin; 85 % unverändert. Stand Mi 12:55: Der TSMC-Verwaltungsrat hat je 500 Mio. $ Investition in Anthropic und OpenAI genehmigt (Dow Jones). Stützt die Nachfrage; 85 % unverändert. Stand Mi 15:00: Auf X verbreitet sich eine unbestätigte Mitschrift (Konto @jukan05), wonach Anthropic Analysten gesagt habe, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Weder Anthropic noch SpaceX haben das bestätigt. Für den Börsentermin ändert das nichts; 85 % unverändert. Stand Mi 16:00: Die X-Mitschrift zum SpaceX-Vertrag ist weiter unbestätigt; weder Anthropic noch SpaceX haben sich geäußert, eine neue SEC-Meldung gibt es nicht. Laut Anthropic-Prospekt sind die Verträge erst nach Januar bzw. März 2027 mit 90 Tagen Frist kündbar (S-1, TokenPost). 85 % unverändert. Stand Mi 18:00: Die X-Mitschrift (@jukan05), Anthropic wolle den SpaceX-Rechenvertrag nicht über Mitte 2027 hinaus verlängern, ist weiter weder bestätigt noch dementiert; auch TeslaNorth schreibt, keine der beiden Firmen habe sich geäußert. 85 % unverändert. Stand Mi 20:00: Musk antwortete um 18:40 auf X auf die Mitschrift: „Wir nehmen die Rechenleistung gern zurück. Kein Problem. Aber ich glaube, das Gegenteil wird passieren.“ Das ist eine Reaktion, keine Bestätigung; Anthropic selbst hat sich weiter nicht geäußert (X, Wccftech). 85 % unverändert. Stand Mi 22:00: Weiter keine Stellungnahme von Anthropic zur Mitschrift. Musk schrieb um 20:01 nach, SpaceX könne im nächsten Jahr etwa die Hälfte der Gigawatt an „tatsächlich nutzbarer“ Rechenleistung stellen. SPCX schloss −2,3 % bei 139,75 $ (X, TeslaNorth, Yahoo). Für den Börsengang selbst ändert das nichts: 85 % unverändert. Stand Do 05:10: Weiter keine Stellungnahme von Anthropic oder SpaceX zur X-Mitschrift über das Vertragsende Mitte 2027 (TeslaNorth). Für den Börsengang selbst neu: der Nvidia-Chefstreit drückt die KI-Werte nachbörslich, das Buch gilt laut früheren Berichten aber als gedeckt. 85 % unverändert. Stand So 08:30: Das Buch ist laut Bloomberg etwa sechsfach überzeichnet, bestehende Geldgeber werden bei der Zuteilung bevorzugt (Reuters). Preisspanne 70–78 $, Preis am 18.11., Handel ab 19.11. unter dem Kürzel ANT (Yonhap Infomax, Reuters). Die dpa-AFX-Wochenvorschau nennt den Börsengang „voraussichtlich am Donnerstag“ (boersennews.de). Für SpaceX wichtig, weil Anthropic Rechenleistung bei SpaceX SI mietet. 85 % unverändert: Nachfrage stark, Restrisiko bleibt eine Verschiebung, falls die Nvidia-Zahlen am Di den KI-Markt stark drücken. Stand So 13:00: Die Spanne bleibt bei 70 bis 78 $; AMD, Broadcom, Google, Micron, Microsoft, Nvidia und TSMC zeichnen zusammen 26 Mrd. $ zum Ausgabepreis. Anthropic schrieb in den ersten neun Monaten 2026 einen Nettoverlust von 104 Mrd. $ und hat Ausgabezusagen über 900 Mrd. $ – CNBC nennt den Börsengang deshalb einen Prüfstein für die ganze KI-Branche. 85 % unverändert. Stand Mo 08:30: Der Zeitplan steht laut Reuters weiter: Preis am Mi, Handel ab Do (Investing.com/Reuters Morning Bid über MLQ). Der Chip-Ausverkauf in Asien erhöht das Risiko einer Verschiebung nur leicht, solange die Nvidia-Zahlen am Di nicht stark enttäuschen. 85 % unverändert. Stand Mo 16:00: Laut Bloomberg ist das Orderbuch fast siebenfach gedeckt, stärker als bei SpaceX zum selben Zeitpunkt; es soll am Di schließen, Preis am Mi, Handel ab Do unter ANT (The Next Web). 85 % unverändert. Stand Mo 22:00: Preisspanne weiter 70–78 $ je Aktie, 825 Mio. Aktien, Preisfestsetzung am Mi 18.11., Handel ab Do 19.11. unter dem Kürzel ANT (CNBC). dpa-AFX nennt den Börsengang einen Grund für die Unsicherheit im Tech-Sektor. 85 % unverändert. Stand Di 18:10: Laut mehreren Quellen von CNBC dürfte Anthropic den Preis über der Spanne von 70–78 $ festlegen; laut Bloomberg am oberen Ende oder darüber. Das Orderbuch schließt heute um 16:00 Uhr New Yorker Zeit (22:00 Berlin), Handel ab Do unter ANT (CNBC, Capital Brief). 85 % unverändert. Stand Di 20:20: Laut Wall Street Journal will Anthropic die Aktien über 80 $ ausgeben, das wären rund 1,5–1,6 Bio. $ Bewertung (bisher bis 1,33 Bio. $ am oberen Ende); die Wagnisgeldgeber Bessemer, Menlo und Accel wollen sogar zukaufen. Endgültig festgelegt wird der Preis erst am Mi und hängt laut WSJ auch von der Reaktion auf die Nvidia-Zahlen ab; Handel ab Do unter ANT (Stocktwits/Yahoo). Ein offizieller Preis liegt noch nicht vor. 85 % unverändert. Stand Di 22:20: Laut CNBC-Quellen dürfte Anthropic den Preis über der Spanne von 70–78 $ festlegen, die Nachfrage soll ein Vielfaches der angebotenen Aktien betragen. Ein offizieller Ausgabepreis liegt noch nicht vor; Preisfestsetzung Mi, Handel ab Do unter ANT (CNBC). Microsoft stellte am Di eigene KI-Modelle für Programmierung und Cybersicherheit vor (MAI Code 2), als Konkurrenz zu Anthropic und OpenAI (Economic Times/Reuters). 85 % unverändert.",
+      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms. Stand Mi 07:00: Fidelity nennt für Privatkunden Zeichnungsende Di 17.11. 16:00 ET (22:00 Berlin) und die Preisfestsetzung am Abend des 18.11.; das stützt den Handelsstart am 19.11. 85 % unverändert. Stand Mi 09:50: Laut FT wollen die Konsortialbanken (Goldman Sachs, Morgan Stanley) wegen hoher Nachfrage den Preis über die Spanne von 70–78 $ heben, die Bewertung läge dann bei 1,5 Bio. $ oder mehr. Das stützt den Termin; 85 % unverändert. Stand Mi 12:55: Der TSMC-Verwaltungsrat hat je 500 Mio. $ Investition in Anthropic und OpenAI genehmigt (Dow Jones). Stützt die Nachfrage; 85 % unverändert. Stand Mi 15:00: Auf X verbreitet sich eine unbestätigte Mitschrift (Konto @jukan05), wonach Anthropic Analysten gesagt habe, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Weder Anthropic noch SpaceX haben das bestätigt. Für den Börsentermin ändert das nichts; 85 % unverändert. Stand Mi 16:00: Die X-Mitschrift zum SpaceX-Vertrag ist weiter unbestätigt; weder Anthropic noch SpaceX haben sich geäußert, eine neue SEC-Meldung gibt es nicht. Laut Anthropic-Prospekt sind die Verträge erst nach Januar bzw. März 2027 mit 90 Tagen Frist kündbar (S-1, TokenPost). 85 % unverändert. Stand Mi 18:00: Die X-Mitschrift (@jukan05), Anthropic wolle den SpaceX-Rechenvertrag nicht über Mitte 2027 hinaus verlängern, ist weiter weder bestätigt noch dementiert; auch TeslaNorth schreibt, keine der beiden Firmen habe sich geäußert. 85 % unverändert. Stand Mi 20:00: Musk antwortete um 18:40 auf X auf die Mitschrift: „Wir nehmen die Rechenleistung gern zurück. Kein Problem. Aber ich glaube, das Gegenteil wird passieren.“ Das ist eine Reaktion, keine Bestätigung; Anthropic selbst hat sich weiter nicht geäußert (X, Wccftech). 85 % unverändert. Stand Mi 22:00: Weiter keine Stellungnahme von Anthropic zur Mitschrift. Musk schrieb um 20:01 nach, SpaceX könne im nächsten Jahr etwa die Hälfte der Gigawatt an „tatsächlich nutzbarer“ Rechenleistung stellen. SPCX schloss −2,3 % bei 139,75 $ (X, TeslaNorth, Yahoo). Für den Börsengang selbst ändert das nichts: 85 % unverändert. Stand Do 05:10: Weiter keine Stellungnahme von Anthropic oder SpaceX zur X-Mitschrift über das Vertragsende Mitte 2027 (TeslaNorth). Für den Börsengang selbst neu: der Nvidia-Chefstreit drückt die KI-Werte nachbörslich, das Buch gilt laut früheren Berichten aber als gedeckt. 85 % unverändert. Stand So 08:30: Das Buch ist laut Bloomberg etwa sechsfach überzeichnet, bestehende Geldgeber werden bei der Zuteilung bevorzugt (Reuters). Preisspanne 70–78 $, Preis am 18.11., Handel ab 19.11. unter dem Kürzel ANT (Yonhap Infomax, Reuters). Die dpa-AFX-Wochenvorschau nennt den Börsengang „voraussichtlich am Donnerstag“ (boersennews.de). Für SpaceX wichtig, weil Anthropic Rechenleistung bei SpaceX SI mietet. 85 % unverändert: Nachfrage stark, Restrisiko bleibt eine Verschiebung, falls die Nvidia-Zahlen am Di den KI-Markt stark drücken. Stand So 13:00: Die Spanne bleibt bei 70 bis 78 $; AMD, Broadcom, Google, Micron, Microsoft, Nvidia und TSMC zeichnen zusammen 26 Mrd. $ zum Ausgabepreis. Anthropic schrieb in den ersten neun Monaten 2026 einen Nettoverlust von 104 Mrd. $ und hat Ausgabezusagen über 900 Mrd. $ – CNBC nennt den Börsengang deshalb einen Prüfstein für die ganze KI-Branche. 85 % unverändert. Stand Mo 08:30: Der Zeitplan steht laut Reuters weiter: Preis am Mi, Handel ab Do (Investing.com/Reuters Morning Bid über MLQ). Der Chip-Ausverkauf in Asien erhöht das Risiko einer Verschiebung nur leicht, solange die Nvidia-Zahlen am Di nicht stark enttäuschen. 85 % unverändert. Stand Mo 16:00: Laut Bloomberg ist das Orderbuch fast siebenfach gedeckt, stärker als bei SpaceX zum selben Zeitpunkt; es soll am Di schließen, Preis am Mi, Handel ab Do unter ANT (The Next Web). 85 % unverändert. Stand Mo 22:00: Preisspanne weiter 70–78 $ je Aktie, 825 Mio. Aktien, Preisfestsetzung am Mi 18.11., Handel ab Do 19.11. unter dem Kürzel ANT (CNBC). dpa-AFX nennt den Börsengang einen Grund für die Unsicherheit im Tech-Sektor. 85 % unverändert. Stand Di 18:10: Laut mehreren Quellen von CNBC dürfte Anthropic den Preis über der Spanne von 70–78 $ festlegen; laut Bloomberg am oberen Ende oder darüber. Das Orderbuch schließt heute um 16:00 Uhr New Yorker Zeit (22:00 Berlin), Handel ab Do unter ANT (CNBC, Capital Brief). 85 % unverändert. Stand Di 20:20: Laut Wall Street Journal will Anthropic die Aktien über 80 $ ausgeben, das wären rund 1,5–1,6 Bio. $ Bewertung (bisher bis 1,33 Bio. $ am oberen Ende); die Wagnisgeldgeber Bessemer, Menlo und Accel wollen sogar zukaufen. Endgültig festgelegt wird der Preis erst am Mi und hängt laut WSJ auch von der Reaktion auf die Nvidia-Zahlen ab; Handel ab Do unter ANT (Stocktwits/Yahoo). Ein offizieller Preis liegt noch nicht vor. 85 % unverändert. Stand Di 22:20: Laut CNBC-Quellen dürfte Anthropic den Preis über der Spanne von 70–78 $ festlegen, die Nachfrage soll ein Vielfaches der angebotenen Aktien betragen. Ein offizieller Ausgabepreis liegt noch nicht vor; Preisfestsetzung Mi, Handel ab Do unter ANT (CNBC). Microsoft stellte am Di eigene KI-Modelle für Programmierung und Cybersicherheit vor (MAI Code 2), als Konkurrenz zu Anthropic und OpenAI (Economic Times/Reuters). 85 % unverändert. Stand Mi 11:50: Laut Bloomberg steht Anthropic kurz vor der Preisfestsetzung; der Preis soll am oberen Ende der Spanne oder darüber liegen, das Buch ist laut Bankern fast siebenfach überzeichnet. Angeboten werden 825 Mio. Aktien (Bloomberg Law, CNBC). Der Preis kommt nach US-Schluss am Mi, Handel ab Do unter ANT. Nvidias Zahlen haben die Tech-Stimmung am Mi früh etwas beruhigt (dpa-AFX). 92 statt 85 %: Bücher geschlossen, Nachfrage hoch, Markt stabiler; Restrisiko ist eine kurzfristige Verschiebung.",
       "example": false,
       "sources": [
         {
@@ -1038,6 +860,14 @@
         {
           "title": "Economic Times: Live-Ticker Wall Street 17.11. (Huang-Befragung 1.12., Microsoft MAI Code 2)",
           "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-ai-stocks-intel-coreweave-meta-tesla-nvidia-earnings-anthropic-ipo-treasury-fed-rate-treasury-bond-yield-brent-oil-news-17th-november-2026/liveblog/135927419.cms"
+        },
+        {
+          "title": "Bloomberg Law: Anthropic vor der letzten Hürde, Buch fast siebenfach überzeichnet (18.11., 11:00 Berlin)",
+          "url": "https://news.bloomberglaw.com/capital-markets/anthropic-approaches-final-ipo-hurdle-after-tech-stocks-churn"
+        },
+        {
+          "title": "dpa-AFX via boersennews: Aktien Frankfurt Eröffnung – etwas stabilisiert nach gutem Nvidia-Bericht (18.11., 10:03)",
+          "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/roundup-aktien-frankfurt-eroeffnung-etwas-stabilisiert-nach-gutem-nvidia-bericht/5357592/"
         }
       ]
     },
@@ -1055,7 +885,7 @@
       ],
       "probabilityPct": 97,
       "impact": "niedrig",
-      "reasoning": "Walmart legt am Do 19.11. Quartalszahlen vor, am selben Tag Alibaba; Target folgt am Mi 18.11. (Yahoo Finance, Wochenvorschau). Nach heißen Preisdaten (Erzeugerpreise +6,5 % zum Vorjahr) zeigen die Händler, ob die US-Verbraucher noch mitziehen – wichtig für die Stimmung zu Zinsen und für Konsumwerte wie Tesla, für SPCX nur indirekt (Yahoo Finance, FXEmpire). Uhrzeit nicht angegeben. 97 %, weil es ein fester Firmentermin ist.",
+      "reasoning": "Walmart legt am Do 19.11. Quartalszahlen vor, am selben Tag Alibaba; Target folgt am Mi 18.11. (Yahoo Finance, Wochenvorschau). Nach heißen Preisdaten (Erzeugerpreise +6,5 % zum Vorjahr) zeigen die Händler, ob die US-Verbraucher noch mitziehen – wichtig für die Stimmung zu Zinsen und für Konsumwerte wie Tesla, für SPCX nur indirekt (Yahoo Finance, FXEmpire). Uhrzeit nicht angegeben. 97 %, weil es ein fester Firmentermin ist. Stand Mi 11:50: Die Zahlen kommen laut Lokalzeitung aus Walmarts Heimatregion am Donnerstagmorgen US-Zeit, also voraussichtlich am frühen Nachmittag in Berlin (Northwest Arkansas Democrat-Gazette). 97 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -1065,14 +895,18 @@
         {
           "title": "FXEmpire: Dow-Prognose – Erzeugerpreise 6,5 %, Walmart am Donnerstag",
           "url": "https://www.fxempire.com/forecasts/article/dow-jones-forecast-trumps-mexico-tariff-remarks-test-the-rally-1644673"
+        },
+        {
+          "title": "Northwest Arkansas Democrat-Gazette: Walmart-Zahlen am Donnerstagmorgen erwartet (18.11.)",
+          "url": "https://www.nwaonline.com/news/2026/nov/18/walmart-third-quarter-results-expected-thursday/"
         }
       ]
     },
     {
       "id": "evt-falcon9-ussf317",
-      "title": "SpaceX: Falcon-9-Start USSF-317 für die Space Force (Do 19.11. 04:00)",
-      "date": "2026-11-19",
-      "time": "04:00",
+      "title": "SpaceX: Falcon-9-Start USSF-317 für die Space Force (Fr 20.11. 03:46)",
+      "date": "2026-11-20",
+      "time": "03:46",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -1082,7 +916,7 @@
       ],
       "probabilityPct": 65,
       "impact": "niedrig",
-      "reasoning": "SpaceX zielt jetzt auf Freitag 13.11., Vier-Stunden-Fenster ab 20:09 Uhr Ortszeit Vandenberg (in Berlin Sa 14.11. 05:09), Ersatz Samstag 19:55 Ortszeit. Vorher stand Donnerstag 20:23 Ortszeit. Dritter Space-Force-Start binnen gut einer Woche von derselben Rampe, deshalb Turnaround-Risiko. Kurswirkung gering. Stand Fr 09:55: Erneut verschoben. SpaceX zielt jetzt auf Dienstag 17.11., Vier-Stunden-Fenster ab 19:14 Uhr Ortszeit Vandenberg (in Berlin Mi 18.11. 04:14), Ersatz Mi 18.11. 20:54 Ortszeit. Die Erststufe fliegt zum 11. Mal und soll auf „Of Course I Still Love You“ landen (SpaceX, spacex-news.com). Einen Grund nennt SpaceX nicht. 75 % unverändert für den neuen Termin. Stand So 05:30: SpaceX nennt weiter Dienstag 17.11., Fenster ab 19:14 Uhr Ortszeit (Mi 18.11. 04:14 Berlin), Ersatz Mi 20:54 Ortszeit. Damit ist USSF-317 jetzt der nächste Space-Force-Start, vor USSF-266 (SpaceX). 75 % unverändert. Stand So 06:30: Unverändert, die Startdatenbank führt den Start weiter für 18.11. 03:14 UTC (04:14 Berlin) mit Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 08:30: Unverändert 18.11. 03:14 UTC (04:14 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 09:30: Unverändert 18.11. 03:14 UTC (04:14 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Erneut um einen Tag verschoben. Die Startdatenbank führt seit So 20:00 Berlin den 19.11. 03:00 UTC (Do 04:00 Berlin), Fenster bis 07:00 UTC, Status weiter „Go“; ein Grund wird nicht genannt (Launch Library 2 mit Verweis auf SpaceX). Der 19.11. war schon vorher als Ersatztag genannt. Dazu: Die Konkurrenzrakete Vulcan von ULA ist am So beim ersten Flug nach neun Monaten Pause gescheitert; die Space Force wollte erst die Daten dieses Flugs prüfen, bevor sie Vulcan wieder für ihre Missionen freigibt (Spaceflight Now). 75 % unverändert: eine weitere kurze Verschiebung ist bei diesem Start schon mehrfach passiert. Stand So 22:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin) und Status „Go“ unverändert (Launch Library 2). 75 % unverändert. Stand Mo 05:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin) und Status „Go“ unverändert (Launch Library 2). Am Wochenende keine neuen FAA- oder SpaceX-Meldungen dazu. 75 % unverändert. Stand Mo 06:30: Termin Do 19.11. 03:00 UTC (04:00 Berlin), Fenster bis 07:00 UTC, Status „Go“ unverändert (Launch Library 2). 75 % unverändert. Stand Mo 08:30: Keine neue Meldung zu Termin oder Status seit 06:30. 75 % unverändert. Stand Mo 09:30: Die Startdatenbank führt weiter Do 19.11. 03:00 UTC (04:00 Berlin), „Go“ (Launch Library 2). Die letzte FAA-Mitteilung (vom 13.11.) nennt noch den 18.11. 03:14–07:36 UTC als ersten und den 19.11. 03:00–07:22 UTC als Ersatztag – das passt zum Ersatztermin. 75 % unverändert. Stand Mo 11:30: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Mo 13:00: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Mo 16:00: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Di 05:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin), Fenster bis 07:00 UTC, Status „Go“ unverändert (Launch Library 2). Das Wetter wird aber zum Risiko: Die Vorhersage für Vandenberg zeigt zum Start 100 % Bewölkung, mögliche Schauer und Wind um 10 m/s; das Wettermodell der Start-App MaxQ schätzt nur rund 40 % Startwetter (Spanne 20–51 %). Eine offizielle Prognose der Space Force liegt noch nicht vor. 65 statt 75 %, weil ein Wetteraufschub um einen Tag wahrscheinlicher geworden ist.",
+      "reasoning": "SpaceX zielt jetzt auf Freitag 13.11., Vier-Stunden-Fenster ab 20:09 Uhr Ortszeit Vandenberg (in Berlin Sa 14.11. 05:09), Ersatz Samstag 19:55 Ortszeit. Vorher stand Donnerstag 20:23 Ortszeit. Dritter Space-Force-Start binnen gut einer Woche von derselben Rampe, deshalb Turnaround-Risiko. Kurswirkung gering. Stand Fr 09:55: Erneut verschoben. SpaceX zielt jetzt auf Dienstag 17.11., Vier-Stunden-Fenster ab 19:14 Uhr Ortszeit Vandenberg (in Berlin Mi 18.11. 04:14), Ersatz Mi 18.11. 20:54 Ortszeit. Die Erststufe fliegt zum 11. Mal und soll auf „Of Course I Still Love You“ landen (SpaceX, spacex-news.com). Einen Grund nennt SpaceX nicht. 75 % unverändert für den neuen Termin. Stand So 05:30: SpaceX nennt weiter Dienstag 17.11., Fenster ab 19:14 Uhr Ortszeit (Mi 18.11. 04:14 Berlin), Ersatz Mi 20:54 Ortszeit. Damit ist USSF-317 jetzt der nächste Space-Force-Start, vor USSF-266 (SpaceX). 75 % unverändert. Stand So 06:30: Unverändert, die Startdatenbank führt den Start weiter für 18.11. 03:14 UTC (04:14 Berlin) mit Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 08:30: Unverändert 18.11. 03:14 UTC (04:14 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 09:30: Unverändert 18.11. 03:14 UTC (04:14 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Erneut um einen Tag verschoben. Die Startdatenbank führt seit So 20:00 Berlin den 19.11. 03:00 UTC (Do 04:00 Berlin), Fenster bis 07:00 UTC, Status weiter „Go“; ein Grund wird nicht genannt (Launch Library 2 mit Verweis auf SpaceX). Der 19.11. war schon vorher als Ersatztag genannt. Dazu: Die Konkurrenzrakete Vulcan von ULA ist am So beim ersten Flug nach neun Monaten Pause gescheitert; die Space Force wollte erst die Daten dieses Flugs prüfen, bevor sie Vulcan wieder für ihre Missionen freigibt (Spaceflight Now). 75 % unverändert: eine weitere kurze Verschiebung ist bei diesem Start schon mehrfach passiert. Stand So 22:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin) und Status „Go“ unverändert (Launch Library 2). 75 % unverändert. Stand Mo 05:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin) und Status „Go“ unverändert (Launch Library 2). Am Wochenende keine neuen FAA- oder SpaceX-Meldungen dazu. 75 % unverändert. Stand Mo 06:30: Termin Do 19.11. 03:00 UTC (04:00 Berlin), Fenster bis 07:00 UTC, Status „Go“ unverändert (Launch Library 2). 75 % unverändert. Stand Mo 08:30: Keine neue Meldung zu Termin oder Status seit 06:30. 75 % unverändert. Stand Mo 09:30: Die Startdatenbank führt weiter Do 19.11. 03:00 UTC (04:00 Berlin), „Go“ (Launch Library 2). Die letzte FAA-Mitteilung (vom 13.11.) nennt noch den 18.11. 03:14–07:36 UTC als ersten und den 19.11. 03:00–07:22 UTC als Ersatztag – das passt zum Ersatztermin. 75 % unverändert. Stand Mo 11:30: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Mo 13:00: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Mo 16:00: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Di 05:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin), Fenster bis 07:00 UTC, Status „Go“ unverändert (Launch Library 2). Das Wetter wird aber zum Risiko: Die Vorhersage für Vandenberg zeigt zum Start 100 % Bewölkung, mögliche Schauer und Wind um 10 m/s; das Wettermodell der Start-App MaxQ schätzt nur rund 40 % Startwetter (Spanne 20–51 %). Eine offizielle Prognose der Space Force liegt noch nicht vor. 65 statt 75 %, weil ein Wetteraufschub um einen Tag wahrscheinlicher geworden ist. Stand Mi 11:50: Erneut verschoben. SpaceX zielt jetzt auf Fr 20.11., vier Stunden Fenster ab 02:46 UTC (03:46 Berlin, Do 19:46 Ortszeit Vandenberg); Status „Go“ (SpaceX, Next Spaceflight). Einen Grund für die neue Verschiebung nennt SpaceX nicht (Orbit Codex). 65 % unverändert: Nach mehreren Verschiebungen bleibt ein weiterer Aufschub gut möglich.",
       "example": false,
       "sources": [
         {
@@ -1128,6 +962,10 @@
         {
           "title": "Launch Library 2: kommende SpaceX-Starts (Stand 17.11., 05:00 Berlin)",
           "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?mode=list&lsp__name=SpaceX"
+        },
+        {
+          "title": "Orbit Codex: USSF-317 – erneut verschoben, jetzt NET 20.11.",
+          "url": "https://orbitcodex.com/operations/ussf-xxx-r-6-falcon-9"
         }
       ]
     },
@@ -1240,7 +1078,7 @@
       "id": "evt-falcon9-ng25",
       "title": "SpaceX: Falcon-9-Start Cygnus NG-25 mit Fracht zur ISS für die NASA (So 29.11. 16:49)",
       "date": "2026-11-29",
-      "time": "16:49",
+      "time": "16:47",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -1250,7 +1088,7 @@
       ],
       "probabilityPct": 65,
       "impact": "niedrig",
-      "reasoning": "Die NASA plant den Start des Frachters Cygnus XL von Northrop Grumman (Mission CRS-25) auf einer Falcon 9 frühestens am So 29.11. um 10:49 Uhr Ostküstenzeit (16:49 Berlin) von Startrampe SLC-40 in Cape Canaveral (NASA). Die Startdatenbank führt 15:47 UTC (16:47 Berlin) mit Status „Go“ (Launch Library 2). An Bord: Versorgung und Experimente für die Raumstation, der Frachter bleibt bis Mai 2027 angedockt (NASA, Northrop Grumman). Bis zum Termin sind es zwei Wochen, ISS-Frachtflüge rutschen oft um ein, zwei Tage, etwa wegen Wetter oder Stationsplanung. Deshalb 65 % für genau diesen Tag. Kurswirkung gering, zeigt aber, dass die NASA auch fremde Frachter mit SpaceX fliegt. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert.",
+      "reasoning": "Die NASA plant den Start des Frachters Cygnus XL von Northrop Grumman (Mission CRS-25) auf einer Falcon 9 frühestens am So 29.11. um 10:49 Uhr Ostküstenzeit (16:49 Berlin) von Startrampe SLC-40 in Cape Canaveral (NASA). Die Startdatenbank führt 15:47 UTC (16:47 Berlin) mit Status „Go“ (Launch Library 2). An Bord: Versorgung und Experimente für die Raumstation, der Frachter bleibt bis Mai 2027 angedockt (NASA, Northrop Grumman). Bis zum Termin sind es zwei Wochen, ISS-Frachtflüge rutschen oft um ein, zwei Tage, etwa wegen Wetter oder Stationsplanung. Deshalb 65 % für genau diesen Tag. Kurswirkung gering, zeigt aber, dass die NASA auch fremde Frachter mit SpaceX fliegt. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 11:50: Laut Launch Library jetzt Fenster 15:47 UTC (16:47 Berlin), Status „Go“. Wahrscheinlichkeit unverändert.",
       "example": false,
       "sources": [
         {
@@ -1268,6 +1106,10 @@
         {
           "title": "Launch Library 2: kommende Starts (Stand 15.11. 11:40: USSF-317 18.11. 03:14 UTC, NROL-136 21.11. 12:30 UTC, USSF-266 23.11. 16:04 UTC, NG-25 29.11. 15:47 UTC, alle „Go“)",
           "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?mode=list"
+        },
+        {
+          "title": "Next Spaceflight: Falcon 9 – Cygnus NG-25",
+          "url": "https://nextspaceflight.com/launches/"
         }
       ]
     },
@@ -2579,6 +2421,69 @@
         {
           "title": "Trade Law Counsel: Section-232-Verhandlungen zu Robotik, keine Zölle",
           "url": "https://www.tradelawcounsel.com/insights-news/2026/11/2/president-directs-section-232-negotiations-on-robotics-and-industrial-machinery-imports-no-tariffs-imposed"
+        }
+      ]
+    },
+    {
+      "id": "evt-dragon-crs35-abdocken",
+      "title": "SpaceX: Frachtkapsel Dragon (CRS-35) legt von der ISS ab (Do 19.11. 18:05)",
+      "date": "2026-11-19",
+      "time": "18:05",
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "start",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 70,
+      "impact": "niedrig",
+      "reasoning": "Die Dragon-Frachtkapsel der 35. Versorgungsmission soll am Do 19.11. um 12:05 Uhr US-Ostküstenzeit (18:05 Berlin) von der ISS ablegen und danach vor Kalifornien wassern. Am Mi wurde das Abdocken wegen schlechten Wetters in den Landegebieten abgesagt; die NASA nennt nur das Wetter als Grund, nicht die Kapsel (NASA, SpaceX auf X). 70 %, weil das Wetter vor Kalifornien schon einmal zum Aufschub geführt hat. Für den Kurs ist das Routine.",
+      "example": false,
+      "sources": [
+        {
+          "title": "NASA: Dragon-Abdocken am Mittwoch wegen Wetter abgesagt, nächste Chance Do 19.11. 12:05 EST (18.11.)",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-stand-down-from-dragons-undocking-on-wednesday/"
+        },
+        {
+          "title": "@SpaceX auf X (18.11., 07:28): Dragon-Abdocken frühestens Do 19.11.",
+          "url": "https://x.com/SpaceX/status/2122940097683177721"
+        },
+        {
+          "title": "SpaceAndSky: Wetter verschiebt Dragon-Abflug auf Donnerstag (18.11.)",
+          "url": "https://spaceandsky.com/dragon-undocking-delayed-weather-splashdown-california/"
+        }
+      ]
+    },
+    {
+      "id": "evt-spcx-chip-anleihe",
+      "title": "SpaceX: Verkauf von rund 4 Mrd. $ Anleihen für Nvidia-Chips (laut Bloomberg diese Woche)",
+      "date": "2026-11-18",
+      "end": "2026-11-20",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "finanzierung",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 60,
+      "impact": "mittel",
+      "reasoning": "Laut Bloomberg könnten Goldman Sachs und Apollo schon diese Woche rund 4 Mrd. $ Anleihen aus der etwa 40 Mrd. $ schweren Finanzierung für Nvidias Vera-Rubin-Chips verkaufen. Eine Zweckgesellschaft von Atlas SP kauft die Chips und vermietet sie an SpaceX, so bleiben die Schulden außerhalb der SpaceX-Bilanz; ein Preis ist noch nicht festgelegt (Yahoo Finance/Bloomberg, Lianhe Zaobao). Finanzchef Johnsen sagte am Di, ein großer Teil des Ausbaus werde aus dem eigenen Geschäft bezahlt (Stocktwits). 60 %, weil nur ein Medienbericht vorliegt und SpaceX nichts bestätigt hat.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Yahoo Finance/Bloomberg: SpaceX-Schulden für KI-Chips kommen schon diese Woche an den Markt",
+          "url": "https://finance.yahoo.com/technology/ai/articles/spacex-debt-ai-chips-hit-145310043.html"
+        },
+        {
+          "title": "Lianhe Zaobao/Bloomberg: SpaceX könnte Teil der 40-Mrd.-$-Chipfinanzierung schon diese Woche starten",
+          "url": "https://www.zaobao.com.sg/en/finance/world/spacex-may-launch-part-us40-billion-ai-chip-debt-financing-early-week-sources"
+        },
+        {
+          "title": "Stocktwits: SpaceX-Finanzchef Johnsen – Rechenleistung großteils aus eigenem Geld, Anleihe für KI-Chips naht (17.11.)",
+          "url": "https://stocktwits.com/news-articles/markets/equity/space-x-to-self-fund-majority-of-compute-expansion-cfo-says-as-bond-sale-for-ai-chips-reportedly-nears/cNbXjL9R9hL"
         }
       ]
     }

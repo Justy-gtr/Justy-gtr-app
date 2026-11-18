@@ -1,8 +1,30 @@
 {
   "example": false,
-  "asOf": "2026-11-10",
+  "asOf": "2026-11-18",
   "notes": "Alle Einträge aus SEC-Form-4-Meldungen (Code S = Verkauf am Markt). Zusammengefasst je Person und Tag, Preis = gewichteter Durchschnitt. Seit Juni 2026 habe ich bei TSLA, SPCX und RKLB keinen einzigen Insider-Kauf am Markt gefunden. Viele Verkäufe laufen über vorab festgelegte 10b5-1-Pläne oder decken Steuern – das ist weniger aussagekräftig als ein spontaner Verkauf. Nicht aufgeführt: Musks Optionsausübung bei Tesla am 16.06.2026 mit Einbehalt von Aktien für Steuern (kein Marktverkauf).",
   "trades": [
+    {
+      "id": "ins-mrvl-murphy-2026-11-16",
+      "person": "Matthew J. Murphy",
+      "role": "Verwaltungsratschef und CEO – 10b5-1-Plan vom 16.12.2025",
+      "symbol": "MRVL",
+      "company": "Marvell",
+      "side": "verkauf",
+      "shares": 7500,
+      "priceUsd": 146.54,
+      "date": "2026-11-16",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Matthew J. Murphy (MRVL), Verkauf am 16.11.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1835632/000162828026074618/wk-form4_1794960225.xml"
+        },
+        {
+          "title": "SEC EDGAR: Marvell-Einreichungen",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=MRVL&type=4&owner=include&count=10"
+        }
+      ]
+    },
     {
       "id": "ins-mrvl-koopmans-2026-11-02",
       "person": "Chris Koopmans",

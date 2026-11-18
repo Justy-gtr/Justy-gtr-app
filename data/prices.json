@@ -7790,71 +7790,55 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "US-Schluss Di: SPCX schließt bei 141,70 $, 3,2 % über dem Mo (137,36 $) und nahe am Tageshoch von 142,11 $; nachbörslich um 22:25 142,00 $ (+0,2 %) (Yahoo, Nasdaq). Xetra-Schluss 127,58 € (+2,5 %) (Yahoo). Treiber war ein Bloomberg-Bericht: Goldman Sachs und Apollo könnten schon diese Woche erste Teile der rund 40 Mrd. $ schweren Schuldenfinanzierung für Nvidias Vera-Rubin-Chips verkaufen, darunter rund 4 Mrd. $ Anleihen. Eine Zweckgesellschaft von Atlas SP (Apollo) kauft die Chips und vermietet sie für etwa fünf Jahre an SpaceX, so bleiben die Schulden außerhalb der SpaceX-Bilanz. SpaceX hat das bis 22:20 nicht bestätigt (Bloomberg/Yahoo, Stocktwits, 24/7 Wall St.). Die Kehrseite laut Yahoo Finance: SpaceX' eigene Schulden stiegen bis 30.09. auf fast 39 Mrd. $, die fünfjährige Kreditausfallversicherung kostet rund 265 Basispunkte nach etwa 110 beim Börsengang im Juni (Yahoo Finance). Rückenwind kam auch von Analysten (Morgan Stanley und Cantor „Overweight“, Cantor-Ziel 345 $) und von 13F-Meldungen, nach denen SpaceX Nvidias größte gemeldete Beteiligung ist (CNBC, Investing.com, Stocktwits). Gesamtmarkt US-Schluss Di: Nasdaq Composite −0,7 % auf 24.328 Punkte, S&P 500 −1,0 % auf 7.341, Dow −1,6 % auf 50.759; der Chipindex SOX schloss 0,3 % höher (Yahoo, Reuters/MarketScreener). Vor Nvidias Zahlen ging der Ausverkauf weiter, vor allem bei Standardwerten (Dow); Nvidia selbst fiel zeitweise um mehr als 3 %, erholte sich nach Huangs Angebot, bei Bedarf als Chef zurückzukehren, und schloss bei 155,46 $ (−0,4 %) (Yahoo Finance). Nach Börsenschluss legte Nvidia Zahlen über den Erwartungen vor: 115,8 Mrd. $ Umsatz (erwartet 109,15 Mrd. $) und 2,68 $ Gewinn je Aktie (erwartet 2,47 $), Ausblick fürs 4. Quartal 127,4–132,6 Mrd. $ (erwartet 125,25 Mrd. $), dazu ein Aktienrückkauf über 150 Mrd. $; die Aktie lag um 22:26 nachbörslich bei 158,75 $ (+2,1 %) (Yahoo Finance). Huang hat zugesagt, sich am 1.12. von drei Ausschüssen des Repräsentantenhauses befragen zu lassen, Nvidias Chefjurist am 2.12. (House Foreign Affairs Committee). Der Dax hatte bei 26.045 Punkten (−2,1 %) geschlossen (dpa-AFX).",
+      "why": "Stand Mi 11:50: SPCX liegt auf Xetra bei 130,04 € (+1,9 % zum Xetra-Schluss von 127,58 €), vorbörslich in New York bei 142,46 $ (+0,5 % zum Schluss von 141,70 $) (Yahoo). Rückenwind kommt aus Nvidias Zahlen: Laut Nvidia laufen die neuen Vera-Rubin-Racks bei Partnern und gehen „bald“ auch bei SpaceX SI in Betrieb (Nvidia). Finanzchef Bret Johnsen sagte am Di, ein großer Teil des Rechenzentrums-Ausbaus werde aus dem eigenen Geschäft bezahlt; laut Bloomberg könnten diese Woche rund 4 Mrd. $ Anleihen für die Nvidia-Chips ausgegeben werden, SpaceX hat das nicht bestätigt (Stocktwits, Yahoo Finance/Bloomberg). Gesamtmarkt: Nvidias Zahlen haben den Tech-Ausverkauf am Mi früh gebremst. Nvidia lag vorbörslich bei 160,87 $ (+3,5 %), Xetra 146,44 € (+5,1 %); der Nasdaq-100-Future stand um 11:32 bei +1,0 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, bereinigt 2,68 $ je Aktie, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia); der Konsens lag bei 109,10 Mrd. $ und 125,1 Mrd. $ (CNBC/LSEG). Der Verwaltungsrat holt Huang nicht zurück (CNBC). Der Dax lag nach dem Start 0,3 % im Plus bei 26.111 Punkten, Tech-Werte wie Infineon erholten sich (dpa-AFX).",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX (Schluss 17.11. 141,70 $, Vortag 137,36 $; Tageshoch 142,11 $) und SPX.DE (Xetra-Schluss 127,58 €)",
-          "url": "https://finance.yahoo.com/quote/SPCX"
+          "title": "Yahoo Finance: SPX.DE (Stand Mi 18.11., 11:20 Xetra)",
+          "url": "https://finance.yahoo.com/quote/SPX.DE/"
         },
         {
-          "title": "Nasdaq.com: Schlusskurse 17.11. (RKLB 55,05 $, SPCX 141,70 $, TSLA 380,11 $, MRVL 148,74 $) und Nachbörse",
-          "url": "https://www.nasdaq.com/market-activity/stocks/rklb"
+          "title": "Yahoo Finance: SPCX (Stand Mi 18.11., 11:42 vorbörslich)",
+          "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Bloomberg via Yahoo Finance: SpaceX-Schulden für KI-Chips könnten schon diese Woche an den Markt kommen (17.11.)",
+          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %, Rückkauf-Aufstockung um 150 Mrd. $ schon im September",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+        },
+        {
+          "title": "Stocktwits: SpaceX-Finanzchef Johnsen – Rechenleistung großteils aus eigenem Geld, Anleihe für KI-Chips naht (17.11.)",
+          "url": "https://stocktwits.com/news-articles/markets/equity/space-x-to-self-fund-majority-of-compute-expansion-cfo-says-as-bond-sale-for-ai-chips-reportedly-nears/cNbXjL9R9hL"
+        },
+        {
+          "title": "Yahoo Finance/Bloomberg: SpaceX-Schulden für KI-Chips kommen schon diese Woche an den Markt",
           "url": "https://finance.yahoo.com/technology/ai/articles/spacex-debt-ai-chips-hit-145310043.html"
         },
         {
-          "title": "Stocktwits via Yahoo Finance: SpaceX will laut Bloomberg diese Woche Anleihen über rund 4 Mrd. $ verkaufen (17.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spcx-stock-focus-spacex-reportedly-180704362.html"
+          "title": "CNBC: Nvidia Q3 – 2,68 $ je Aktie vs. 2,48 $ erwartet, Umsatz 115,84 vs. 109,10 Mrd. $ (LSEG), Ausblick ~130 Mrd. $ vs. 125,1 Mrd. $ (17.11.)",
+          "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"
         },
         {
-          "title": "24/7 Wall St.: SpaceX +3 % nach Bericht über 4-Mrd.-$-Anleihe für Nvidia-Chips, Rocket Lab −3 % (17.11.)",
-          "url": "https://247wallst.com/investing/2026/11/17/spacex-rises-3-on-report-of-4-billion-bond-sale-to-fund-nvidia-chips-rocket-lab-falls-3-ast-spacemobile-slides-2/"
+          "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
         },
         {
-          "title": "Yahoo Finance: SpaceX least Nvidia-Chips für rund 47 Mrd. $ – Schulden bis 30.09. fast 39 Mrd. $, CDS rund 265 Basispunkte (17.11.)",
-          "url": "https://finance.yahoo.com/markets/article/spacex-is-leasing-47-billion-of-nvidia-chips-like-a-car--and-lenders-hold-the-title-192002200.html"
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 11:41 vorbörslich)",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Stocktwits: Nvidia macht SpaceX zur größten Beteiligung, Appaloosa und Duquesne steigen ein (17.11.)",
-          "url": "https://stocktwits.com/news-articles/markets/equity/us-stock-futures-edge-lower-after-tech-sell-off-nvda-earnings-amd-spcx-dis-in-focus/cNbaAmCR9Wf"
+          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 11:27 Xetra)",
+          "url": "https://finance.yahoo.com/quote/NVD.DE/"
         },
         {
-          "title": "Investing.com: Cantor Fitzgerald bestätigt Overweight auf SpaceX, Ziel 345 $ (17.11.)",
-          "url": "https://au.investing.com/news/stock-market-news/cantor-fitzgerald-reiterates-overweight-on-spacex-stock-after-catalysts-93CH-4776587"
+          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 11:32)",
+          "url": "https://finance.yahoo.com/quote/NQ=F/"
         },
         {
-          "title": "CNBC: Tuesday Wall Street analyst calls (17.11.) – Morgan Stanley bleibt bei SpaceX auf Overweight",
-          "url": "https://www.cnbc.com/2026/11/17/tuesday-wall-street-analyst-calls-like-nvidia-anthropic.html"
+          "title": "dpa-AFX via boersennews: Aktien Frankfurt Eröffnung – etwas stabilisiert nach gutem Nvidia-Bericht (18.11., 10:03)",
+          "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/roundup-aktien-frankfurt-eroeffnung-etwas-stabilisiert-nach-gutem-nvidia-bericht/5357592/"
         },
         {
-          "title": "Yahoo Finance: Nasdaq ^IXIC 24.328, S&P 500 ^GSPC 7.341, Dow ^DJI 50.759, SOX ^SOX 9.643 (Schluss 17.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC"
-        },
-        {
-          "title": "MarketScreener (Reuters): Wall Street schließt tiefer vor Nvidia-Zahlen und Anthropic-Debüt (17.11., vorläufige Schlussdaten)",
-          "url": "https://au.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-earnings-anthropic-debut-ce785edcdc8df226"
-        },
-        {
-          "title": "Yahoo Finance Live: Dow −850 Punkte, S&P 500 und Nasdaq tiefer vor Nvidia-Zahlen; Nvidia schließt −0,4 % (17.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-retail-sales-143848454.html"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Schluss 17.11. 155,46 $, Vortag 156,14 $)",
-          "url": "https://finance.yahoo.com/quote/NVDA"
-        },
-        {
-          "title": "Yahoo Finance Live: Nvidia übertrifft Erwartungen im 3. Quartal, Ausblick Q4 über Erwartung, 150 Mrd. $ Rückkauf; WSJ: SEC ermittelt (17.11.)",
-          "url": "https://finance.yahoo.com/technology/live/nvidia-earnings-live-nvidia-to-report-q3-results-after-the-bell-with-colette-kress-to-host-first-call-as-interim-ceo-202616349.html"
-        },
-        {
-          "title": "House Foreign Affairs Committee: Jensen Huang und Nvidia erklären sich zu Befragungen am 1. und 2.12. bereit (17.11.)",
-          "url": "https://foreignaffairs.house.gov/news/press-releases/jensen-huang-and-nvidia-agree-to-appear-before-congress"
-        },
-        {
-          "title": "dpa-AFX via onvista: Aktien Frankfurt Schluss – Klare Verluste, Nervosität vor Nvidia-Zahlen (17.11., 16:46)",
-          "url": "https://www.onvista.de/news/2026/11-17-aktien-frankfurt-schluss-klare-verluste-nervositaet-vor-nvidia-zahlen-0-10-26577489"
+          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 11:27)",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -22669,63 +22653,55 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "US-Schluss Di: Tesla schließt bei 380,11 $, 0,1 % über dem Mo (379,74 $), nachbörslich um 22:25 380,25 $ (Yahoo, Nasdaq). Beim Marktrutsch am Nachmittag fiel die Aktie bis 374,15 $ und holte das bis zum Schluss auf; Xetra-Schluss 343,50 € (−0,8 %) (Yahoo). Gestützt haben die Vorstellung von „Powercore“, einem Halbleiter-Transformator für Speicher-, Solar- und Rechenzentrumsprojekte (Betrieb ab 2027) (pv magazine, Electrek), und Barclays, das bei „Overweight“ mit Ziel 450 $ bleibt (Investing.com). Gegenwind: Der Stimmrechtsberater ISS empfiehlt, bei der Hauptversammlung am 3.12. gegen die Wiederwahl von Verwaltungsratschefin Robyn Denholm zu stimmen (Reuters). Gesamtmarkt US-Schluss Di: Nasdaq Composite −0,7 % auf 24.328 Punkte, S&P 500 −1,0 % auf 7.341, Dow −1,6 % auf 50.759; der Chipindex SOX schloss 0,3 % höher (Yahoo, Reuters/MarketScreener). Vor Nvidias Zahlen ging der Ausverkauf weiter, vor allem bei Standardwerten (Dow); Nvidia selbst fiel zeitweise um mehr als 3 %, erholte sich nach Huangs Angebot, bei Bedarf als Chef zurückzukehren, und schloss bei 155,46 $ (−0,4 %) (Yahoo Finance). Nach Börsenschluss legte Nvidia Zahlen über den Erwartungen vor: 115,8 Mrd. $ Umsatz (erwartet 109,15 Mrd. $) und 2,68 $ Gewinn je Aktie (erwartet 2,47 $), Ausblick fürs 4. Quartal 127,4–132,6 Mrd. $ (erwartet 125,25 Mrd. $), dazu ein Aktienrückkauf über 150 Mrd. $; die Aktie lag um 22:26 nachbörslich bei 158,75 $ (+2,1 %) (Yahoo Finance). Huang hat zugesagt, sich am 1.12. von drei Ausschüssen des Repräsentantenhauses befragen zu lassen, Nvidias Chefjurist am 2.12. (House Foreign Affairs Committee). Der Dax hatte bei 26.045 Punkten (−2,1 %) geschlossen (dpa-AFX).",
+      "why": "Stand Mi 11:50: Tesla liegt auf Xetra bei 350,30 € (+2,0 % zum Xetra-Schluss von 343,50 €), vorbörslich bei 384,68 $ (+1,2 % zum Schluss von 380,11 $) (Yahoo). Eine eigene neue Firmenmeldung gibt es nicht; die Aktie zieht mit der Tech-Erholung nach Nvidias Zahlen mit. Der Xetra-Schluss am Di lag vor dem US-Schluss, ein Teil des Plus ist Nachholen. Im Blick bleiben der Ausbau in Grünheide für den Cybercab (rund 3 Mrd. €, Bau ab 2027) und Musks Reise zum APEC-Gipfel in Shenzhen, wo Trump am Mi gelandet ist (TechCrunch, CNBC). Gesamtmarkt: Nvidias Zahlen haben den Tech-Ausverkauf am Mi früh gebremst. Nvidia lag vorbörslich bei 160,87 $ (+3,5 %), Xetra 146,44 € (+5,1 %); der Nasdaq-100-Future stand um 11:32 bei +1,0 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, bereinigt 2,68 $ je Aktie, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia); der Konsens lag bei 109,10 Mrd. $ und 125,1 Mrd. $ (CNBC/LSEG). Der Verwaltungsrat holt Huang nicht zurück (CNBC). Der Dax lag nach dem Start 0,3 % im Plus bei 26.111 Punkten, Tech-Werte wie Infineon erholten sich (dpa-AFX).",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA (Schluss 17.11. 380,11 $, Vortag 379,74 $; Tagestief 374,15 $) und TL0.DE (Xetra-Schluss 343,50 €)",
-          "url": "https://finance.yahoo.com/quote/TSLA"
+          "title": "Yahoo Finance: TL0.DE (Stand Mi 18.11., 11:25 Xetra)",
+          "url": "https://finance.yahoo.com/quote/TL0.DE/"
         },
         {
-          "title": "Nasdaq.com: Schlusskurse 17.11. (RKLB 55,05 $, SPCX 141,70 $, TSLA 380,11 $, MRVL 148,74 $) und Nachbörse",
-          "url": "https://www.nasdaq.com/market-activity/stocks/rklb"
+          "title": "Yahoo Finance: TSLA (Stand Mi 18.11., 11:41 vorbörslich)",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "Investing.com: Barclays bestätigt Tesla-Rating wegen Robotaxi-Fortschritt (17.11.)",
-          "url": "https://www.investing.com/news/analyst-ratings/barclays-reiterates-tesla-stock-rating-on-robotaxi-progress-93CH-5031841"
+          "title": "TechCrunch: Tesla investiert 3 Mrd. € in Grünheide für den Cybercab (16.11.)",
+          "url": "https://techcrunch.com/2026/11/16/tesla-goes-all-in-on-the-cybercab-with-upcoming-e3b-berlin-gigafactory-expansion/"
         },
         {
-          "title": "aktiencheck: Barclays bleibt bei Overweight, Ziel 450 $ (17.11., 12:40)",
-          "url": "https://aktiencheck.de/artikel/tesla-aktie-spacex-fantasie-und-kerngeschaeft-barclays-bleibt-bei-overweight"
+          "title": "CNBC: Trump in Shenzhen gelandet, Dreiertreffen mit Xi und Putin am Donnerstag (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-china-apec.html"
         },
         {
-          "title": "Reuters via TradingView: ISS empfiehlt, gegen die Wiederwahl von Robyn Denholm zu stimmen (16.11.)",
-          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46X0RR:0-iss-recommends-tesla-shareholders-vote-against-proposal-to-elect-robyn-denholm-to-board/"
+          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %, Rückkauf-Aufstockung um 150 Mrd. $ schon im September",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
         },
         {
-          "title": "pv magazine USA: Tesla stellt Powercore auf der RE+ 2026 vor (17.11.)",
-          "url": "https://pv-magazine-usa.com/2026/11/17/exclusive-tesla-unveils-powercore-medium-voltage-power-electronics-platform-at-re-2026/"
+          "title": "CNBC: Nvidia Q3 – 2,68 $ je Aktie vs. 2,48 $ erwartet, Umsatz 115,84 vs. 109,10 Mrd. $ (LSEG), Ausblick ~130 Mrd. $ vs. 125,1 Mrd. $ (17.11.)",
+          "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"
         },
         {
-          "title": "Electrek: Tesla unveils 7.4 MW Powercore (17.11.)",
-          "url": "https://electrek.co/2026/11/17/tesla-powercore-solid-state-transformer-heron-link/"
+          "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
         },
         {
-          "title": "Yahoo Finance: Nasdaq ^IXIC 24.328, S&P 500 ^GSPC 7.341, Dow ^DJI 50.759, SOX ^SOX 9.643 (Schluss 17.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC"
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 11:41 vorbörslich)",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "MarketScreener (Reuters): Wall Street schließt tiefer vor Nvidia-Zahlen und Anthropic-Debüt (17.11., vorläufige Schlussdaten)",
-          "url": "https://au.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-earnings-anthropic-debut-ce785edcdc8df226"
+          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 11:27 Xetra)",
+          "url": "https://finance.yahoo.com/quote/NVD.DE/"
         },
         {
-          "title": "Yahoo Finance Live: Dow −850 Punkte, S&P 500 und Nasdaq tiefer vor Nvidia-Zahlen; Nvidia schließt −0,4 % (17.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-retail-sales-143848454.html"
+          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 11:32)",
+          "url": "https://finance.yahoo.com/quote/NQ=F/"
         },
         {
-          "title": "Yahoo Finance: NVDA (Schluss 17.11. 155,46 $, Vortag 156,14 $)",
-          "url": "https://finance.yahoo.com/quote/NVDA"
+          "title": "dpa-AFX via boersennews: Aktien Frankfurt Eröffnung – etwas stabilisiert nach gutem Nvidia-Bericht (18.11., 10:03)",
+          "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/roundup-aktien-frankfurt-eroeffnung-etwas-stabilisiert-nach-gutem-nvidia-bericht/5357592/"
         },
         {
-          "title": "Yahoo Finance Live: Nvidia übertrifft Erwartungen im 3. Quartal, Ausblick Q4 über Erwartung, 150 Mrd. $ Rückkauf; WSJ: SEC ermittelt (17.11.)",
-          "url": "https://finance.yahoo.com/technology/live/nvidia-earnings-live-nvidia-to-report-q3-results-after-the-bell-with-colette-kress-to-host-first-call-as-interim-ceo-202616349.html"
-        },
-        {
-          "title": "House Foreign Affairs Committee: Jensen Huang und Nvidia erklären sich zu Befragungen am 1. und 2.12. bereit (17.11.)",
-          "url": "https://foreignaffairs.house.gov/news/press-releases/jensen-huang-and-nvidia-agree-to-appear-before-congress"
-        },
-        {
-          "title": "dpa-AFX via onvista: Aktien Frankfurt Schluss – Klare Verluste, Nervosität vor Nvidia-Zahlen (17.11., 16:46)",
-          "url": "https://www.onvista.de/news/2026/11-17-aktien-frankfurt-schluss-klare-verluste-nervositaet-vor-nvidia-zahlen-0-10-26577489"
+          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 11:27)",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -35252,55 +35228,51 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "US-Schluss Di: Rocket Lab schließt bei 55,05 $, 4,0 % unter dem Mo (57,37 $) – der vierte Verlusttag in Folge seit 66,15 $ am 11.11.; Spanne 53,42–58,60 $; nachbörslich um 22:26 nach den Nvidia-Zahlen 55,71 $ (+1,2 %) (Yahoo, Nasdaq). Damit ist die Tagesfrage (Schluss über 57,37 $?) mit „nein“ entschieden. Xetra-Schluss 49,80 € (−7,8 %) (Yahoo). Eine eigene schlechte Rocket-Lab-Meldung gab es nicht; laut 24/7 Wall St. ziehen Anleger SpaceX vor, das sich mit ULA und Blue Origin eine Erweiterung der Space-Force-Startverträge um bis zu 985 Mio. $ teilt (24/7 Wall St.). Nach Börsenschluss zeigt Rocket Lab einen weiteren Heißtest des Neutron-Triebwerks Archimedes: mehr als 650 Tests, Leistung über 100 % (Rocket Lab auf X). Gesamtmarkt US-Schluss Di: Nasdaq Composite −0,7 % auf 24.328 Punkte, S&P 500 −1,0 % auf 7.341, Dow −1,6 % auf 50.759; der Chipindex SOX schloss 0,3 % höher (Yahoo, Reuters/MarketScreener). Vor Nvidias Zahlen ging der Ausverkauf weiter, vor allem bei Standardwerten (Dow); Nvidia selbst fiel zeitweise um mehr als 3 %, erholte sich nach Huangs Angebot, bei Bedarf als Chef zurückzukehren, und schloss bei 155,46 $ (−0,4 %) (Yahoo Finance). Nach Börsenschluss legte Nvidia Zahlen über den Erwartungen vor: 115,8 Mrd. $ Umsatz (erwartet 109,15 Mrd. $) und 2,68 $ Gewinn je Aktie (erwartet 2,47 $), Ausblick fürs 4. Quartal 127,4–132,6 Mrd. $ (erwartet 125,25 Mrd. $), dazu ein Aktienrückkauf über 150 Mrd. $; die Aktie lag um 22:26 nachbörslich bei 158,75 $ (+2,1 %) (Yahoo Finance). Huang hat zugesagt, sich am 1.12. von drei Ausschüssen des Repräsentantenhauses befragen zu lassen, Nvidias Chefjurist am 2.12. (House Foreign Affairs Committee). Der Dax hatte bei 26.045 Punkten (−2,1 %) geschlossen (dpa-AFX).",
+      "why": "Stand Mi 11:50: Rocket Lab notiert in Frankfurt bei 52,10 € (+4,2 % zum Schluss von 50,00 €), vorbörslich in New York bei 56,76 $ (+3,1 % zum Schluss von 55,05 $) (Yahoo). Nach vier Verlusttagen in Folge erholt sich die Aktie mit dem ganzen Tech- und Raumfahrtsektor nach Nvidias Zahlen; eine eigene neue Meldung von Rocket Lab gibt es seit dem Archimedes-Heißtest am Di-Abend nicht (Rocket Lab auf X). Für die Tagesfrage zählt der Nasdaq-Schluss heute gegen 55,05 $. Gesamtmarkt: Nvidias Zahlen haben den Tech-Ausverkauf am Mi früh gebremst. Nvidia lag vorbörslich bei 160,87 $ (+3,5 %), Xetra 146,44 € (+5,1 %); der Nasdaq-100-Future stand um 11:32 bei +1,0 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, bereinigt 2,68 $ je Aktie, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia); der Konsens lag bei 109,10 Mrd. $ und 125,1 Mrd. $ (CNBC/LSEG). Der Verwaltungsrat holt Huang nicht zurück (CNBC). Der Dax lag nach dem Start 0,3 % im Plus bei 26.111 Punkten, Tech-Werte wie Infineon erholten sich (dpa-AFX).",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB-Historie (Schluss 17.11. 55,05 $, Vortag 57,37 $; Spanne 53,42–58,60 $)",
-          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+          "title": "Yahoo Finance: 6RJ0.F (Stand Mi 18.11., 10:08 Frankfurt)",
+          "url": "https://finance.yahoo.com/quote/6RJ0.F/"
         },
         {
-          "title": "Nasdaq.com: Schlusskurse 17.11. (RKLB 55,05 $, SPCX 141,70 $, TSLA 380,11 $, MRVL 148,74 $) und Nachbörse",
-          "url": "https://www.nasdaq.com/market-activity/stocks/rklb"
+          "title": "Yahoo Finance: RKLB (Stand Mi 18.11., 11:38 vorbörslich)",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "24/7 Wall St.: Rocket Lab −4 %, während SpaceX sich einen 985-Mio.-$-Startauftrag teilt (17.11.)",
-          "url": "https://247wallst.com/investing/2026/11/17/rocket-lab-slides-4-as-spacex-shares-a-985-million-launch-award-are-cathie-wood-and-david-tepper-picking-spacex-over-rocket-lab/"
-        },
-        {
-          "title": "@RocketLab auf X (17.11., 22:16): Archimedes-Heißtest, über 650 Tests",
+          "title": "@RocketLab auf X (17.11., 22:16): Archimedes-Heißtest",
           "url": "https://x.com/RocketLab/status/2122801023458951413"
         },
         {
-          "title": "The Distributed: Citadel 13F Q3 2026 – Rocket Lab neu 3,2 Mio. Aktien",
-          "url": "https://thedistributed.co/funds/citadel-advisors"
+          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %, Rückkauf-Aufstockung um 150 Mrd. $ schon im September",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
         },
         {
-          "title": "Yahoo Finance: Nasdaq ^IXIC 24.328, S&P 500 ^GSPC 7.341, Dow ^DJI 50.759, SOX ^SOX 9.643 (Schluss 17.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC"
+          "title": "CNBC: Nvidia Q3 – 2,68 $ je Aktie vs. 2,48 $ erwartet, Umsatz 115,84 vs. 109,10 Mrd. $ (LSEG), Ausblick ~130 Mrd. $ vs. 125,1 Mrd. $ (17.11.)",
+          "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"
         },
         {
-          "title": "MarketScreener (Reuters): Wall Street schließt tiefer vor Nvidia-Zahlen und Anthropic-Debüt (17.11., vorläufige Schlussdaten)",
-          "url": "https://au.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-earnings-anthropic-debut-ce785edcdc8df226"
+          "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
         },
         {
-          "title": "Yahoo Finance Live: Dow −850 Punkte, S&P 500 und Nasdaq tiefer vor Nvidia-Zahlen; Nvidia schließt −0,4 % (17.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-retail-sales-143848454.html"
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 11:41 vorbörslich)",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "Yahoo Finance: NVDA (Schluss 17.11. 155,46 $, Vortag 156,14 $)",
-          "url": "https://finance.yahoo.com/quote/NVDA"
+          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 11:27 Xetra)",
+          "url": "https://finance.yahoo.com/quote/NVD.DE/"
         },
         {
-          "title": "Yahoo Finance Live: Nvidia übertrifft Erwartungen im 3. Quartal, Ausblick Q4 über Erwartung, 150 Mrd. $ Rückkauf; WSJ: SEC ermittelt (17.11.)",
-          "url": "https://finance.yahoo.com/technology/live/nvidia-earnings-live-nvidia-to-report-q3-results-after-the-bell-with-colette-kress-to-host-first-call-as-interim-ceo-202616349.html"
+          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 11:32)",
+          "url": "https://finance.yahoo.com/quote/NQ=F/"
         },
         {
-          "title": "House Foreign Affairs Committee: Jensen Huang und Nvidia erklären sich zu Befragungen am 1. und 2.12. bereit (17.11.)",
-          "url": "https://foreignaffairs.house.gov/news/press-releases/jensen-huang-and-nvidia-agree-to-appear-before-congress"
+          "title": "dpa-AFX via boersennews: Aktien Frankfurt Eröffnung – etwas stabilisiert nach gutem Nvidia-Bericht (18.11., 10:03)",
+          "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/roundup-aktien-frankfurt-eroeffnung-etwas-stabilisiert-nach-gutem-nvidia-bericht/5357592/"
         },
         {
-          "title": "dpa-AFX via onvista: Aktien Frankfurt Schluss – Klare Verluste, Nervosität vor Nvidia-Zahlen (17.11., 16:46)",
-          "url": "https://www.onvista.de/news/2026/11-17-aktien-frankfurt-schluss-klare-verluste-nervositaet-vor-nvidia-zahlen-0-10-26577489"
+          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 11:27)",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -48899,63 +48871,55 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "US-Schluss Di: Marvell schließt bei 148,74 $, 2,3 % über dem Mo (145,36 $); nachbörslich um 22:26 nach den Nvidia-Zahlen 152,23 $ (+2,3 %) (Yahoo, Nasdaq). Nach dem Tief um 16:50 bei 140,90 $ (−3,1 %) drehte die Aktie ins Plus; Xetra-Schluss 130,16 € (−3,4 %) (Yahoo). Getragen wurde das von der Erholung einzelner Chipwerte nach dem −7,3 % vom Montag – laut dpa-AFX am Nachmittag Arm +4,3 % und Microchip +3,2 %, Lumentum nach einem Reuters-Bericht über US-Auflagen für chinesische Transceiver im Plus (dpa-AFX, 24/7 Wall St.) – und von der 13F-Meldung, dass Citadel seinen Marvell-Bestand im 3. Quartal um 729 % aufgestockt hat, Stand 30.09. (Benzinga). Marvell-Zahlen am Di 1.12. (Marvell). Gesamtmarkt US-Schluss Di: Nasdaq Composite −0,7 % auf 24.328 Punkte, S&P 500 −1,0 % auf 7.341, Dow −1,6 % auf 50.759; der Chipindex SOX schloss 0,3 % höher (Yahoo, Reuters/MarketScreener). Vor Nvidias Zahlen ging der Ausverkauf weiter, vor allem bei Standardwerten (Dow); Nvidia selbst fiel zeitweise um mehr als 3 %, erholte sich nach Huangs Angebot, bei Bedarf als Chef zurückzukehren, und schloss bei 155,46 $ (−0,4 %) (Yahoo Finance). Nach Börsenschluss legte Nvidia Zahlen über den Erwartungen vor: 115,8 Mrd. $ Umsatz (erwartet 109,15 Mrd. $) und 2,68 $ Gewinn je Aktie (erwartet 2,47 $), Ausblick fürs 4. Quartal 127,4–132,6 Mrd. $ (erwartet 125,25 Mrd. $), dazu ein Aktienrückkauf über 150 Mrd. $; die Aktie lag um 22:26 nachbörslich bei 158,75 $ (+2,1 %) (Yahoo Finance). Huang hat zugesagt, sich am 1.12. von drei Ausschüssen des Repräsentantenhauses befragen zu lassen, Nvidias Chefjurist am 2.12. (House Foreign Affairs Committee). Der Dax hatte bei 26.045 Punkten (−2,1 %) geschlossen (dpa-AFX).",
+      "why": "Stand Mi 11:50: Marvell liegt auf Xetra bei 140,60 € (+8,0 % zum Xetra-Schluss von 130,16 €), vorbörslich bei 154,75 $ (+4,0 % zum Schluss von 148,74 $) (Yahoo). Das große Xetra-Plus ist zum Teil Nachholen: Am Di schloss Xetra vor der US-Erholung, in New York drehte Marvell danach noch auf +2,3 %. Dazu kommt der Schub für KI-Hardware nach Nvidias Zahlen, Neocloud-Werte wie Nebius und CoreWeave steigen vorbörslich deutlich (CNBC). Laut SEC-Meldung gab Chef Matthew Murphy am 16.11. 7.500 Aktien ab, zu durchschnittlich 146,54 $ nach einem vorab festgelegten 10b5-1-Plan (SEC). Zahlen am Di 1.12. Gesamtmarkt: Nvidias Zahlen haben den Tech-Ausverkauf am Mi früh gebremst. Nvidia lag vorbörslich bei 160,87 $ (+3,5 %), Xetra 146,44 € (+5,1 %); der Nasdaq-100-Future stand um 11:32 bei +1,0 % (Yahoo). Laut der offiziellen Mitteilung: Umsatz 115,8 Mrd. $, bereinigt 2,68 $ je Aktie, Ausblick fürs 4. Quartal 130 Mrd. $ ±3 % (Nvidia); der Konsens lag bei 109,10 Mrd. $ und 125,1 Mrd. $ (CNBC/LSEG). Der Verwaltungsrat holt Huang nicht zurück (CNBC). Der Dax lag nach dem Start 0,3 % im Plus bei 26.111 Punkten, Tech-Werte wie Infineon erholten sich (dpa-AFX).",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL (Schluss 17.11. 148,74 $, Vortag 145,36 $; Tagestief 140,90 $) und 9MW.DE (Xetra-Schluss 130,16 €)",
-          "url": "https://finance.yahoo.com/quote/MRVL"
+          "title": "Yahoo Finance: 9MW.DE (Stand Mi 18.11., 11:21 Xetra)",
+          "url": "https://finance.yahoo.com/quote/9MW.DE/"
         },
         {
-          "title": "Nasdaq.com: Schlusskurse 17.11. (RKLB 55,05 $, SPCX 141,70 $, TSLA 380,11 $, MRVL 148,74 $) und Nachbörse",
-          "url": "https://www.nasdaq.com/market-activity/stocks/rklb"
+          "title": "Yahoo Finance: MRVL (Stand Mi 18.11., 11:41 vorbörslich)",
+          "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "Marvell: Telefonkonferenz zum 3. Quartal (1.12.)",
-          "url": "https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results"
+          "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
         },
         {
-          "title": "Benzinga: Citadel stockt Marvell um 729 % auf (13F, 17.11.)",
-          "url": "https://www.benzinga.com/markets/hedge-funds/26/11/63332490/ken-griffin-dumps-spacex-amazon-buys-arkk-and-bets-big-on-marvell"
+          "title": "SEC Form 4: Matthew J. Murphy (MRVL), Handel am 16.11.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1835632/000162828026074618/wk-form4_1794960225.xml"
         },
         {
-          "title": "24/7 Wall St.: Marvell steigt 3 % nach dem 7-%-Minus vom Montag (17.11., 15:55 Berlin)",
-          "url": "https://247wallst.com/investing/2026/11/17/marvell-rises-3-after-mondays-7-drop-is-the-lumentum-deal-still-worth-the-dilution-risk/"
+          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %, Rückkauf-Aufstockung um 150 Mrd. $ schon im September",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
         },
         {
-          "title": "dpa-AFX via finanznachrichten.de: ROUNDUP/Aktien New York – Weitere Verluste vor Nvidia-Zahlen (17.11., 16:37)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70156783-roundup-aktien-new-york-weitere-verluste-vor-nvidia-zahlen-016.htm"
+          "title": "CNBC: Nvidia Q3 – 2,68 $ je Aktie vs. 2,48 $ erwartet, Umsatz 115,84 vs. 109,10 Mrd. $ (LSEG), Ausblick ~130 Mrd. $ vs. 125,1 Mrd. $ (17.11.)",
+          "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"
         },
         {
-          "title": "Yahoo Finance: PHLX Semiconductor ^SOX (Schluss 17.11. +0,3 %)",
-          "url": "https://finance.yahoo.com/quote/%5ESOX"
+          "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
         },
         {
-          "title": "Yahoo Finance: Nasdaq ^IXIC 24.328, S&P 500 ^GSPC 7.341, Dow ^DJI 50.759, SOX ^SOX 9.643 (Schluss 17.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EIXIC"
+          "title": "Yahoo Finance: NVDA (Stand Mi 18.11., 11:41 vorbörslich)",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
-          "title": "MarketScreener (Reuters): Wall Street schließt tiefer vor Nvidia-Zahlen und Anthropic-Debüt (17.11., vorläufige Schlussdaten)",
-          "url": "https://au.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-earnings-anthropic-debut-ce785edcdc8df226"
+          "title": "Yahoo Finance: NVD.DE (Stand Mi 18.11., 11:27 Xetra)",
+          "url": "https://finance.yahoo.com/quote/NVD.DE/"
         },
         {
-          "title": "Yahoo Finance Live: Dow −850 Punkte, S&P 500 und Nasdaq tiefer vor Nvidia-Zahlen; Nvidia schließt −0,4 % (17.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-retail-sales-143848454.html"
+          "title": "Yahoo Finance: NQ=F (Stand Mi 18.11., 11:32)",
+          "url": "https://finance.yahoo.com/quote/NQ=F/"
         },
         {
-          "title": "Yahoo Finance: NVDA (Schluss 17.11. 155,46 $, Vortag 156,14 $)",
-          "url": "https://finance.yahoo.com/quote/NVDA"
+          "title": "dpa-AFX via boersennews: Aktien Frankfurt Eröffnung – etwas stabilisiert nach gutem Nvidia-Bericht (18.11., 10:03)",
+          "url": "https://www.boersennews.de/nachrichten/artikel/dpa-afx/roundup-aktien-frankfurt-eroeffnung-etwas-stabilisiert-nach-gutem-nvidia-bericht/5357592/"
         },
         {
-          "title": "Yahoo Finance Live: Nvidia übertrifft Erwartungen im 3. Quartal, Ausblick Q4 über Erwartung, 150 Mrd. $ Rückkauf; WSJ: SEC ermittelt (17.11.)",
-          "url": "https://finance.yahoo.com/technology/live/nvidia-earnings-live-nvidia-to-report-q3-results-after-the-bell-with-colette-kress-to-host-first-call-as-interim-ceo-202616349.html"
-        },
-        {
-          "title": "House Foreign Affairs Committee: Jensen Huang und Nvidia erklären sich zu Befragungen am 1. und 2.12. bereit (17.11.)",
-          "url": "https://foreignaffairs.house.gov/news/press-releases/jensen-huang-and-nvidia-agree-to-appear-before-congress"
-        },
-        {
-          "title": "dpa-AFX via onvista: Aktien Frankfurt Schluss – Klare Verluste, Nervosität vor Nvidia-Zahlen (17.11., 16:46)",
-          "url": "https://www.onvista.de/news/2026/11-17-aktien-frankfurt-schluss-klare-verluste-nervositaet-vor-nvidia-zahlen-0-10-26577489"
+          "title": "Yahoo Finance: %5EGDAXI (Stand Mi 18.11., 11:27)",
+          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",

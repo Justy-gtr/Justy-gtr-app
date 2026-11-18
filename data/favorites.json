@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-12",
+  "asOf": "2026-11-18",
   "owner": "Karl",
   "title": "Karls Top 10",
   "note": "Zehn Aktien aus dem ganzen Markt, nicht nur aus dem Musk-Umfeld. Kurse in Euro. Tesla und Rocket Lab stehen mit dabei, weil sie schon in der Bilanz sind. Die älteren Themen Starlink und Tesla Energie bleiben im Treffer-Check, sie sind keine eigenen Aktien.",
@@ -132,14 +132,14 @@
       "swarmStance": "kauf",
       "againstCrowd": true,
       "vsSwarm": "skeptischer",
-      "karlTake": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Huang ist zurückgetreten, Finanzchefin Kress führt nur vorläufig, ein dauerhafter Nachfolger fehlt.",
+      "karlTake": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Die Zahlen sind stark, aber Huang kommt nicht zurück und die SEC ermittelt.",
       "karlCounter": "Die Aufträge können die Politik überholen.",
       "horizon": "langfrist",
       "priceEur": 180.56,
       "priceAsOf": "2026-11-04",
       "priceVenue": "Xetra",
       "swarmNote": "Die laute Mehrheit behandelt Nvidia weiter als den Kern der KI-Welle und liegt auf der Kaufseite.",
-      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl stehen Rechenzentren politisch unter Druck. Seit 8.11. läuft eine Untersuchung zu Huangs Affäre mit einer mutmaßlichen chinesischen Agentin; am 11.11. berichtete das WSJ, der Verwaltungsrat bereite seine Ablösung vor. Nachbörslich fiel die Aktie auf 158,78 $ (−8,6 %). Laut Bloomberg sucht der Verwaltungsrat mit einer externen Personalberatung schon Nachfolger, ein Beschluss ist bis Do früh nicht verkündet. Auf Xetra fiel die Aktie am Do früh auf 145,96 € (−7,8 %), Polymarket sieht 88 % für Huangs Abgang bis Jahresende (Reuters). Karl jagt den Namen nicht. Am Do 12.11. gegen 14:50 verkündete Nvidia Huangs Rücktritt mit sofortiger Wirkung; Finanzchefin Colette Kress ist Interimschefin, Harvey C. Jones erster Verwaltungsratsvorsitzender, die Zahlen am 17.11. kommen wie geplant (NVIDIA). Vorbörslich 155,99 $ (−10,2 %). Zur US-Eröffnung fiel die Aktie bis 149,27 $ (−14,1 %), um 15:55 stand sie bei 161,06 $ (−7,3 %); seit Mittwoch senkten acht Analysten ihre Ziele auf im Schnitt 214 $ (Yahoo, Handelsblatt). Um 17:55 stand Nvidia bei 165,09 $ (−5,0 %); Huang hat zugesagt, vor Thanksgiving vor dem Kongress auszusagen, ein fester Nachfolger fehlt weiter (Yahoo, CNBC). Um 20:02 stand Nvidia bei 164,67 $ (−5,2 %); als mögliche feste Nachfolger nennt das Handelsblatt Kress, Ian Buck und Arm-Chef Rene Haas (Yahoo, Handelsblatt). Zum US-Schluss am Do stand Nvidia bei 166,19 $ (−4,3 %); Reuters berichtet zudem über eine dritte Affäre Huangs mit einer weiteren Mitarbeiterin (Yahoo, TechCrunch).",
+      "reason": "Nvidia ist die Mautstelle der KI, der Schwarm ist lange auf der Kaufseite. Nach der Wahl stehen Rechenzentren politisch unter Druck. Seit 8.11. läuft eine Untersuchung zu Huangs Affäre mit einer mutmaßlichen chinesischen Agentin; am 11.11. berichtete das WSJ, der Verwaltungsrat bereite seine Ablösung vor. Nachbörslich fiel die Aktie auf 158,78 $ (−8,6 %). Laut Bloomberg sucht der Verwaltungsrat mit einer externen Personalberatung schon Nachfolger, ein Beschluss ist bis Do früh nicht verkündet. Auf Xetra fiel die Aktie am Do früh auf 145,96 € (−7,8 %), Polymarket sieht 88 % für Huangs Abgang bis Jahresende (Reuters). Karl jagt den Namen nicht. Am Do 12.11. gegen 14:50 verkündete Nvidia Huangs Rücktritt mit sofortiger Wirkung; Finanzchefin Colette Kress ist Interimschefin, Harvey C. Jones erster Verwaltungsratsvorsitzender, die Zahlen am 17.11. kommen wie geplant (NVIDIA). Vorbörslich 155,99 $ (−10,2 %). Zur US-Eröffnung fiel die Aktie bis 149,27 $ (−14,1 %), um 15:55 stand sie bei 161,06 $ (−7,3 %); seit Mittwoch senkten acht Analysten ihre Ziele auf im Schnitt 214 $ (Yahoo, Handelsblatt). Um 17:55 stand Nvidia bei 165,09 $ (−5,0 %); Huang hat zugesagt, vor Thanksgiving vor dem Kongress auszusagen, ein fester Nachfolger fehlt weiter (Yahoo, CNBC). Um 20:02 stand Nvidia bei 164,67 $ (−5,2 %); als mögliche feste Nachfolger nennt das Handelsblatt Kress, Ian Buck und Arm-Chef Rene Haas (Yahoo, Handelsblatt). Zum US-Schluss am Do stand Nvidia bei 166,19 $ (−4,3 %); Reuters berichtet zudem über eine dritte Affäre Huangs mit einer weiteren Mitarbeiterin (Yahoo, TechCrunch). Am 17.11. lieferte Nvidia 115,8 Mrd. $ Umsatz und einen Ausblick von 130 Mrd. $ ±3 % fürs 4. Quartal, beides über den Erwartungen; der Verwaltungsrat holt Huang nicht zurück (Nvidia, CNBC). Vorbörslich am 18.11. +3,5 %.",
       "counterArgument": "Die Aufträge können die Politik überholen. Wer zu früh aussteigt, verpasst die nächste Welle.",
       "example": false,
       "sources": [
@@ -206,6 +206,14 @@
         {
           "title": "TechCrunch: Reuters berichtet über eine dritte Affäre Huangs (12.11.)",
           "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/"
+        },
+        {
+          "title": "NVIDIA: Financial Results for Third Quarter Fiscal 2027 (17.11.) – Q4-Ausblick 130,0 Mrd. $ ±3 %, Rückkauf-Aufstockung um 150 Mrd. $ schon im September",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+        },
+        {
+          "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
         }
       ]
     },
