@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T16:38:00+01:00",
+  "updatedAt": "2026-11-18T16:42:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 50,
-      "postsCount": 12,
-      "reason": "SpaceX steigt rund 3 % und schlägt den KI-Sektor den dritten Tag in Folge. Viele feiern Options-Gewinne und verweisen auf den Starship-Fang.",
+      "score": 40,
+      "postsCount": 10,
+      "reason": "SpaceX hält sich bei rund 144 $. Fans feiern den Starlink-Ausbau durch Starship, Trader sehen aber einen gescheiterten Ausbruch über 144,78 $.",
       "sources": [
         {
-          "title": "@steve_dekker auf X (18.11., 16:32)",
-          "url": "https://x.com/steve_dekker/status/2123076849400160446"
+          "title": "@95Breakers auf X (18.11., 16:40)",
+          "url": "https://x.com/95Breakers/status/2123078861114036440"
         },
         {
-          "title": "@spcxGOD auf X (18.11., 16:33)",
-          "url": "https://x.com/spcxGOD/status/2123077181840449724"
+          "title": "@McJohnnymac auf X (18.11., 16:40)",
+          "url": "https://x.com/McJohnnymac/status/2123078809826066943"
         },
         {
-          "title": "@SPXtrain auf X (18.11., 16:33)",
-          "url": "https://x.com/SPXtrain/status/2123077110059122899"
+          "title": "@Thinkingis9508 auf X (18.11., 16:40)",
+          "url": "https://x.com/Thinkingis9508/status/2123078940025823527"
         }
       ],
-      "updatedAt": "2026-11-18T16:35:00+01:00"
+      "updatedAt": "2026-11-18T16:42:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,7 +43,7 @@
           "url": "https://x.com/BK_BrenhamTX/status/2123077023350628437"
         }
       ],
-      "updatedAt": "2026-11-18T16:35:00+01:00"
+      "updatedAt": "2026-11-18T16:42:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
