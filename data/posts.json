@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-18T15:30:00+01:00",
+  "asOf": "2026-11-18T16:15:00+01:00",
   "sentiment": {
     "SPCX": {
       "score": 0.1,
@@ -69,6 +69,34 @@
     }
   },
   "posts": [
+    {
+      "id": "post-rocketlab-2123070567326929093",
+      "account": "@RocketLab",
+      "displayName": "Rocket Lab",
+      "postedAt": "2026-11-18T16:07:22+01:00",
+      "summaryDe": "Rocket Lab feiert in einem Thread die 100 Electron-Starts (der 100. Start war am 14.11.) – nach eigener Aussage schneller als jede andere kommerziell entwickelte Rakete – und stellt Mitarbeiter vor, etwa den Leiter der Fertigung, die alle 8 Tage eine Electron fertigstellt. Rückblick ohne neue Geschäftszahlen.",
+      "originalText": "100 Electron launches, faster than any other commercially developed rocket in history.\n\nIt started with a handful of people, a carbon-fiber rocket skeptics said would never work, and a sheep farm at the end of a windswept NZ peninsula.\n\nHere are just a few of them who got us",
+      "url": "https://x.com/RocketLab/status/2123070567326929093",
+      "tickers": [
+        "RKLB"
+      ],
+      "companies": [
+        "Rocket Lab"
+      ],
+      "sentiment": "neutral",
+      "important": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "@RocketLab auf X (18.11., 16:07): Thread zu 100 Electron-Starts",
+          "url": "https://x.com/RocketLab/status/2123070567326929093"
+        },
+        {
+          "title": "Rocket Lab IR: 100 Electron-Starts (14.11.)",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-hits-100-electron-launches-fastest-commercial-rocket"
+        }
+      ]
+    },
     {
       "id": "post-rocketlab-2123052731321758083",
       "account": "@RocketLab",
