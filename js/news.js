@@ -103,6 +103,12 @@ export function buildNews(data) {
   return items;
 }
 
+/** Posts and alerts from the last two hours. Older items stay out of the start list. */
+export function freshNews(items, now = new Date(), maxMs = 2 * 60 * 60 * 1000) {
+  const cut = now.getTime() - maxMs;
+  return (items || []).filter((item) => Number(item?.at) >= cut);
+}
+
 export function filterNews(items, filter) {
   const key = NEWS_CHIPS.includes(filter) ? filter : "alle";
   if (key === "alle") return items || [];
@@ -183,6 +189,25 @@ export function swarmLamp(data, symbol) {
     return { color: "#f59e0b", word: "gemischt", source: "Stunde" };
   }
   return { color: "#f59e0b", word: "gemischt", source: "offen" };
+}
+
+/** Biggest move today, with a news mention counting extra. Long and Short both stay in. */
+export function swarmPotential(data, side, now = new Date()) {
+  const fresh = freshNews(buildNews(data), now);
+  const ranked = swarmList(data, side).map((row) => {
+    const change = priceChange(data, row.symbol);
+    const move = Number.isFinite(change) ? change : 0;
+    const symbol = String(row.symbol || "");
+    const plain = symbol.replace(/\.DE$/, "");
+    const mentioned = fresh.some((item) => (item.symbols || []).includes(symbol) || (item.symbols || []).includes(plain));
+    const score = Math.abs(move) + (mentioned ? 4 : 0);
+    const lean = move <= -0.15 ? "Short" : move >= 0.15 ? "Long" : "ruhig";
+    const tone = lean === "Short" ? "#ef4444" : lean === "Long" ? "#22c55e" : "#f59e0b";
+    return { ...row, move, score, lean, tone };
+  });
+  ranked.sort((a, b) => b.score - a.score || String(a.symbol).localeCompare(String(b.symbol)));
+  const moving = ranked.filter((row) => row.score > 0);
+  return (moving.length ? moving : ranked).slice(0, 8);
 }
 
 function fundRows(data) {

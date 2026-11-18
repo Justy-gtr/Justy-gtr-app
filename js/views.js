@@ -997,20 +997,49 @@ function explainDetail(data, symbol) {
   };
 }
 
+function firstBit(text, max = 280) {
+  const clean = String(text || "").replace(/\s+/g, " ").trim();
+  if (!clean) return "";
+  const sentence = clean.split(/(?<=[.!?])\s/).slice(0, 2).join(" ");
+  return sentence.length <= max ? sentence : `${sentence.slice(0, max - 1).trimEnd()}…`;
+}
+
+function consensusLine(text) {
+  const match = String(text || "").match(/Konsens[^.]{0,160}/i);
+  return match ? match[0].trim() : "";
+}
+
+function earlierEvent(events, event) {
+  const tickers = new Set(event?.tickers || []);
+  return (events || [])
+    .filter((item) => item && item.id !== event.id && item.date && String(item.date) < String(event.date || "9999"))
+    .filter((item) => (item.tickers || []).some((ticker) => tickers.has(ticker)) || (event.category && item.category === event.category))
+    .sort((a, b) => String(b.date).localeCompare(String(a.date)))[0] || null;
+}
+
 function eventDetail(data, id) {
-  const event = (data.calendar?.events || []).find((item) => item.id === id);
+  const events = data.calendar?.events || [];
+  const event = events.find((item) => item.id === id);
   if (!event) return { kind: "event", title: "Termin", html: `<p class="empty">Termin nicht gefunden.</p>` };
+  const what = firstBit(event.reasoning) || event.title;
+  const expected = consensusLine(event.reasoning);
+  const prior = earlierEvent(events, event);
+  const stocks = (event.tickers || []).filter(Boolean);
   return {
     kind: "event",
     title: event.title,
     html: `
       <p class="muted">${esc(formatEventClock(event))}</p>
-      <p class="kicker">${esc(event.kind === "external" ? "Extern" : "Unternehmen")} · ${esc(event.category || "")} · Wirkung ${esc(event.impact || "")}</p>
+      <p class="kicker">${esc(event.kind === "external" ? "Extern" : "Unternehmen")} · ${esc(event.category || "")}</p>
       ${pill(event.example)}
-      <h3>Wahrscheinlichkeit</h3>
-      ${prob(event.probabilityPct)}
-      <div class="prose">${prose(event.reasoning)}</div>
-      <div class="chips">${(event.tickers || []).map((symbol) => `<span class="chip quiet">${esc(symbol)}</span>`).join("")}</div>
+      <h3>Was</h3>
+      <p>${esc(what)}</p>
+      <h3>Aktien</h3>
+      ${stocks.length ? `<div class="chips">${stocks.map((symbol) => `<span class="chip quiet">${esc(symbol)}</span>`).join("")}</div>` : `<p class="muted">Keine einzelne Aktie genannt.</p>`}
+      <h3>Erwartet</h3>
+      <p>${esc(expected || "Dazu liegt keine Vergleichszahl vor.")}</p>
+      <h3>Zuletzt</h3>
+      <p>${prior ? esc(`${prior.title} (${prior.date}). ${firstBit(prior.reasoning, 160)}`) : "Kein früherer Termin dazu in den Daten."}</p>
       ${sourcesBlock(event.sources)}
     `
   };

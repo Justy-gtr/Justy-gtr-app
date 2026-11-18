@@ -23,6 +23,7 @@ import {
   liveSnapshot,
   normalizeSettings,
   rescueBalance,
+  tradeStakeCents,
   openTrade,
   pickRound,
   rememberRound,
@@ -305,6 +306,8 @@ test("Startkonto ist 100 € und ein leeres Konto beginnt wieder bei 100 €", (
   const wiped = rescueBalance({ phase: "play", position: null, cashCents: 0, revived: 0 });
   assert.equal(wiped.cashCents, 10000);
   assert.equal(wiped.revived, 1);
+  assert.equal(tradeStakeCents({ cashCents: 15000, startCents: 10000, settings: { stake: 100, spread: 0 } }), 15000);
+  assert.equal(tradeStakeCents({ cashCents: 15000, startCents: 10000, settings: { stake: 40, spread: 0 } }), 9000);
   const kept = rescueBalance({ phase: "play", position: null, cashCents: 2500 });
   assert.equal(kept.cashCents, 2500);
   assert.match(fs.readFileSync("js/replay-ui.js", "utf8"), /balance: fieldNumber\("replay-balance", "100"\)/);

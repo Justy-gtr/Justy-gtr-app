@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { buildSymbolRecord, cheaperNames, historyPlacement, peerPlacement, shouldSkipFundamentals } from "../js/bewertung.js";
 import { renderBewertung } from "../js/bewertung-view.js";
-import { buildNews, filterNews, glancePoints, hourHeader, hourSlot, hourWeek, sentimentLight, stockAgenda, swarmList } from "../js/news.js";
+import { buildNews, filterNews, freshNews, glancePoints, hourHeader, hourSlot, hourWeek, sentimentLight, stockAgenda, swarmList, swarmPotential } from "../js/news.js";
 import { renderNews } from "../js/news-view.js";
 import { aggregateWeekdays, renderSeasonalityCard } from "../js/seasonality.js";
 import { moodReliability } from "../js/stimmung.js";
@@ -43,7 +43,11 @@ test("News steht neueste zuerst und filtert nach Aktie", () => {
   assert.equal(html.includes("Was bewegt den Kurs"), false);
   assert.match(html, /data-filter="NVDA"/);
   assert.match(html, /data-filter="Markt"/);
-  assert.ok(html.indexOf("NVDA") < html.indexOf("Neuer Beitrag"));
+  assert.match(html, /NVDA/);
+  assert.equal(html.includes("Neuer Beitrag"), false);
+  assert.equal(html.includes("Alter Beitrag"), false);
+  assert.equal(freshNews(items, new Date("2026-11-17T21:00:00+01:00")).some((item) => item.id === "alert:A"), true);
+  assert.equal(freshNews(items, new Date("2026-11-17T21:00:00+01:00")).some((item) => item.id === "post:neu"), false);
   assert.equal(BANNED.test(html), false);
   const glance = glancePoints({
     prices: { tickers: [{ symbol: "TSLA", changePct: -2, why: "Die Aktie gab nach." }] },
@@ -71,6 +75,7 @@ test("News steht neueste zuerst und filtert nach Aktie", () => {
   }, { newsFilter: "TSLA" }, new Date("2026-11-17T12:00:00+01:00"));
   assert.match(view, /Mi 18\.11\. 22:20/);
   assert.match(view, /Tesla legt Zahlen vor/);
+  assert.match(view, /data-action="open-event"/);
   assert.equal(view.includes("…"), false);
   const now = new Date("2026-11-17T15:00:00+01:00");
   const bars = ["2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-16"].map((day, index) => ({
@@ -137,6 +142,13 @@ test("Schwarm auf News schaltet zwischen US und GER", () => {
   assert.equal(us.find((row) => row.symbol === "SPCX")?.note, "optimistisch");
   assert.ok(us.some((row) => row.symbol === "TSLA" && row.lamp?.word === "positiv" && row.note === "Stimmung"));
   assert.equal(us.find((row) => row.symbol === "SPCX")?.lamp.color, "#22c55e");
+  const ranked = swarmPotential({
+    ...data,
+    prices: { tickers: [{ symbol: "TSLA", changePct: -3.2 }, { symbol: "SPCX", changePct: 0.4 }] }
+  }, "us", new Date("2026-11-17T21:00:00+01:00"));
+  assert.equal(ranked[0].symbol, "TSLA");
+  assert.equal(ranked[0].lean, "Short");
+  assert.equal(ranked.find((row) => row.symbol === "SPCX").lean, "Long");
   assert.ok(us.some((row) => row.symbol === "TSM"));
   assert.equal(us.some((row) => row.symbol === "SAP" || String(row.symbol).endsWith(".DE")), false);
   const ger = swarmList(data, "ger");

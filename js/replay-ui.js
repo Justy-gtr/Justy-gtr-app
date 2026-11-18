@@ -12,6 +12,7 @@ import {
   UI,
   closeManual,
   createRound,
+  endRound,
   formatDayDe,
   formatEuroCents,
   formatMinute,
@@ -86,26 +87,18 @@ function setupHtml(history, note) {
   const saved = history?.settings;
   const stake = saved?.stake ?? 100;
   const leverage = saved?.leverage ?? 10;
-  const spread = saved ? String(Math.round(saved.spread * 10000) / 100).replace(".", ",") : "0,5";
-  const balance = saved?.balance ?? 100;
-  const target = saved?.takeProfitPct ?? "";
-  const again = saved?.reenterPct ?? "";
-  const take = saved?.takeSharePct ?? 100;
   const presets = LEVERAGE_PRESETS.map((value) => `
-    <button type="button" data-action="replay-lev" data-lev="${value}" aria-pressed="${value === leverage ? "true" : "false"}">${value}</button>`).join("");
+    <button type="button" data-action="replay-lev" data-lev="${value}" aria-pressed="${value === Number(leverage) ? "true" : "false"}">${value}</button>`).join("");
   return `
     <div class="replay" data-replay-root data-screen="setup">
       <header class="replay-head">
         <p class="eyebrow">${esc(UI.title)}</p>
         <h2>Training</h2>
-        <p class="lede">${esc(UI.lede)}</p>
+        <p class="lede">Kerze für Kerze. Nach jeder Kerze hält es an. Der Gewinn bleibt im nächsten Einsatz.</p>
       </header>
       ${statsBlock(history)}
       ${note ? `<p class="replay-note">${esc(note)}</p>` : ""}
-      <label class="replay-field">${esc(UI.balance)}
-        <input id="replay-balance" inputmode="decimal" autocomplete="off" value="${esc(balance)}">
-      </label>
-      <label class="replay-field">${esc(UI.stake)}
+      <label class="replay-field">${esc(UI.stakePick)}
         <input id="replay-stake" inputmode="decimal" autocomplete="off" value="${esc(stake)}">
       </label>
       <p class="kicker">${esc(UI.leverage)}</p>
@@ -114,28 +107,11 @@ function setupHtml(history, note) {
           <input id="replay-lev" inputmode="decimal" autocomplete="off" value="${esc(leverage)}">
         </label>
       </div>
-      <label class="replay-field">${esc(UI.spread)}
-        <input id="replay-spread" inputmode="decimal" autocomplete="off" value="${esc(spread)}">
-      </label>
-      <p class="replay-hint">${esc(UI.spreadHint)}</p>
-      <label class="replay-field">${esc(UI.target)}
-        <input id="replay-target" inputmode="decimal" autocomplete="off" placeholder="${esc(UI.targetHint)}" value="${esc(target)}">
-      </label>
-      <label class="replay-field">${esc(UI.reenter)}
-        <input id="replay-reenter" inputmode="decimal" autocomplete="off" placeholder="${esc(UI.targetHint)}" value="${esc(again)}">
-      </label>
-      <p class="kicker">${esc(UI.take)}</p>
-      <div class="replay-presets" role="group" aria-label="${esc(UI.take)}">${TAKE_PRESETS.map((value) => `
-        <button type="button" data-action="replay-take" data-take="${value}" aria-pressed="${value === Number(take) ? "true" : "false"}">${value} %</button>`).join("")}
-        <label class="replay-free">${esc(UI.takeShare)}
-          <input id="replay-take" inputmode="decimal" autocomplete="off" value="${esc(take)}">
-        </label>
+      <div class="replay-actions">
+        <button type="button" class="replay-long" data-action="replay-begin" data-side="long">${esc(UI.long)}</button>
+        <button type="button" class="replay-short" data-action="replay-begin" data-side="short">${esc(UI.short)}</button>
       </div>
-      <p class="kicker">${esc(UI.speed)}</p>
-      <div class="replay-speeds" role="group" aria-label="${esc(UI.speed)}">${SPEEDS.map((speed) => `
-        <button type="button" data-action="replay-tempo" data-speed="${speed}" aria-pressed="${speed === 1 ? "true" : "false"}">${esc(speedLabel(speed))}</button>`).join("")}</div>
-      <p class="replay-hint">${esc(UI.priceNote)}</p>
-      <button type="button" class="replay-go" data-action="replay-start">${esc(UI.start)}</button>
+      <p class="replay-hint">Start 100 €. Der Einsatz plus der Gewinn geht in den nächsten Handel. Bei null beginnt es wieder bei 100 €.</p>
     </div>`;
 }
 
@@ -170,18 +146,25 @@ function playHtml(round, mask) {
       ${pos}
       <p class="replay-flatline">Spread ${esc(spreadPct)} % je Handel. ${esc(UI.quiet)}</p>
       <p class="replay-warn" id="replay-warn"></p>
-      <div class="replay-speeds" role="group" aria-label="Beschleunigung">
-        <button type="button" data-action="replay-pause" aria-pressed="${round.paused ? "true" : "false"}">${esc(UI.pause)}</button>
-        <button type="button" data-action="replay-step">${esc(UI.step)}</button>
-        ${speeds}
-        <button type="button" data-action="replay-skip">${esc(UI.skip)}</button>
-      </div>
       <div class="replay-actions">
-        <button type="button" class="replay-long" data-action="replay-long" ${open ? "disabled" : ""}>${esc(UI.long)}</button>
-        <button type="button" class="replay-short" data-action="replay-short" ${open ? "disabled" : ""}>${esc(UI.short)}</button>
+        <button type="button" class="replay-go" data-action="replay-step">${esc(UI.weiter)}</button>
         <button type="button" class="replay-out" data-action="replay-out" ${open ? "" : "disabled"}>${esc(UI.out)}</button>
-        <button type="button" class="replay-out" data-action="replay-take-now" ${open ? "" : "disabled"}>${esc(UI.take)}</button>
+        <button type="button" class="replay-out" data-action="replay-end">${esc(UI.allOut)}</button>
       </div>
+      <label class="replay-field">${esc(UI.stakePick)}
+        <input id="replay-stake-live" inputmode="decimal" autocomplete="off" value="${esc(round.settings?.stake ?? 100)}">
+      </label>
+      ${open ? "" : `<div class="replay-actions">
+        <button type="button" class="replay-long" data-action="replay-long">${esc(UI.long)}</button>
+        <button type="button" class="replay-short" data-action="replay-short">${esc(UI.short)}</button>
+      </div>`}
+      <details class="fold">
+        <summary>Tempo</summary>
+        <div class="replay-speeds" role="group" aria-label="${esc(UI.speed)}">
+          <button type="button" data-action="replay-pause" aria-pressed="${round.paused ? "true" : "false"}">${esc(UI.pause)}</button>
+          ${speeds}
+        </div>
+      </details>
     </div>`;
 }
 
@@ -322,6 +305,7 @@ function drawChart(canvas, round) {
 export function initTraining() {
   let screen = "setup";
   let round = null;
+  let pendingSide = "";
   let meta = null;
   let index = null;
   let history = { rounds: [], settings: null };
@@ -448,9 +432,10 @@ export function initTraining() {
     return response.json();
   }
 
-  async function begin(keepSettings) {
+  async function begin(keepSettings, side) {
     if (busy) return;
     busy = true;
+    pendingSide = side || "";
     const settings = keepSettings || readFields();
     note = UI.loading;
     if (screen === "setup") paint(true);
@@ -474,7 +459,12 @@ export function initTraining() {
         return;
       }
       meta = choice;
-      round = createRound(day, settings);
+      round = pauseRound(stepCandle(createRound(day, settings)));
+      if (pendingSide) {
+        const opened = openTrade(round, pendingSide);
+        if (opened.ok) round = pauseRound(opened.state);
+        pendingSide = "";
+      }
       history = { ...history, settings };
       try { saveHistory(localStorage, history); } catch { /* bleibt im Speicher. */ }
       screen = "play";
@@ -504,8 +494,8 @@ export function initTraining() {
       });
       return;
     }
-    if (action === "replay-start") {
-      begin(null);
+    if (action === "replay-begin") {
+      begin(null, el.dataset.side === "short" ? "short" : "long");
       return;
     }
     if (action === "replay-setup") {
@@ -572,10 +562,10 @@ export function initTraining() {
       paint(true);
       return;
     }
-    if (action === "replay-take-now") {
-      const share = Number(round.settings?.takeSharePct) || 100;
-      round = takeShare(round, share);
-      paint(true);
+    if (action === "replay-end") {
+      const prev = round.phase;
+      round = endRound(round);
+      if (!finishIfDone(prev)) paint(true);
     }
   }
 
@@ -584,10 +574,16 @@ export function initTraining() {
     bound = true;
     root.addEventListener("click", onClick);
     root.addEventListener("input", (event) => {
-      if (event.target?.id !== "replay-lev") return;
-      root.querySelectorAll("[data-action='replay-lev']").forEach((button) => {
-        button.setAttribute("aria-pressed", String(button.dataset.lev) === event.target.value ? "true" : "false");
-      });
+      const target = event.target;
+      if (target?.id === "replay-lev") {
+        root.querySelectorAll("[data-action='replay-lev']").forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.lev) === target.value ? "true" : "false");
+        });
+      }
+      if (target?.id === "replay-stake-live" && round?.settings) {
+        const next = Number(String(target.value).replace(",", "."));
+        if (Number.isFinite(next) && next > 0) round.settings.stake = next;
+      }
     });
     const canvas = () => document.getElementById("replay-canvas");
     if (typeof ResizeObserver !== "undefined") {

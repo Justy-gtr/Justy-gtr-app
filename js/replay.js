@@ -56,6 +56,9 @@ export const UI = {
   long: "Long",
   short: "Short",
   out: "Raus",
+  weiter: "Weiter",
+  allOut: "Komplett raus",
+  stakePick: "Einsatz wählen",
   account: "Konto",
   result: "Ergebnis",
   newRound: "Neue Runde",
@@ -441,29 +444,56 @@ export function pauseRound(state) {
   return { ...state, paused: true };
 }
 
+/** Next trade puts Einsatz plus the profit so far into the position, and never more than the account. */
+export function tradeStakeCents(state) {
+  const cash = Math.max(0, Number(state?.cashCents) || 0);
+  const start = Number(state?.startCents) || eurosToCents(START_EUROS);
+  const base = eurosToCents(state?.settings?.stake || START_EUROS);
+  const profit = Math.max(0, cash - start);
+  let wanted = Math.min(cash, base + profit);
+  const spread = Number(state?.settings?.spread) || 0;
+  const fee = Math.round(wanted * spread);
+  if (wanted + fee > cash) wanted = Math.max(0, cash - Math.round(cash * spread));
+  return wanted;
+}
+
 export function openTrade(state, side) {
   if (!state || state.phase !== "play" || state.position) return { state, ok: false, reason: "offen" };
   if (state.visible < 1) return { state, ok: false, reason: "candle" };
+  let working = state;
+  if (working.cashCents <= 0) {
+    working = rescueBalance(working);
+  }
   const cleanSide = side === "short" ? "short" : "long";
-  const candle = unpackBar(state.bars[state.visible - 1]);
-  const stake = eurosToCents(state.settings.stake);
-  const fee = Math.round(stake * state.settings.spread);
-  if (stake < 100 || state.cashCents < stake + fee) return { state, ok: false, reason: "stake" };
+  const candle = unpackBar(working.bars[working.visible - 1]);
+  const asked = eurosToCents(working.settings?.stake || 0);
+  const started = Number(working.startCents) || eurosToCents(START_EUROS);
+  if (asked > working.cashCents && asked > started) return { state: working, ok: false, reason: "stake" };
+  const stake = tradeStakeCents(working);
+  const fee = Math.round(stake * (Number(working.settings?.spread) || 0));
+  if (stake < 100 || working.cashCents < stake + fee) return { state: working, ok: false, reason: "stake" };
   return {
     ok: true,
     state: {
-      ...state,
-      cashCents: state.cashCents - stake - fee,
+      ...working,
+      cashCents: working.cashCents - stake - fee,
       position: {
         side: cleanSide,
         entry: candle.c,
         entryMin: candle.t,
         stakeCents: stake,
-        leverage: state.settings.leverage,
+        leverage: working.settings.leverage,
         entryFeeCents: fee
       }
     }
   };
+}
+
+/** Close anything open and end the round. The account stays for the next one. */
+export function endRound(state) {
+  if (!state || state.phase !== "play") return state;
+  const closed = state.position ? closeManual(state) : state;
+  return finish({ ...closed, paused: true });
 }
 
 export function speedLabel(speed) {
@@ -473,7 +503,14 @@ export function speedLabel(speed) {
 /** Fresh 100 € when a knock-out or a round leaves nothing. */
 export function rescueBalance(state) {
   if (!state || state.position || state.cashCents > 0) return state;
-  return { ...state, cashCents: eurosToCents(START_EUROS), revived: (state.revived || 0) + 1 };
+  const cash = eurosToCents(START_EUROS);
+  return {
+    ...state,
+    cashCents: cash,
+    startCents: cash,
+    revived: (state.revived || 0) + 1,
+    settings: { ...(state.settings || {}), stake: START_EUROS, balance: START_EUROS }
+  };
 }
 
 /** Close part or all of the open position. The rest stays. The payout returns to the account. */

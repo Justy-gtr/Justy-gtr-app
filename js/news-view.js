@@ -1,13 +1,13 @@
-import { AGENDA_SYMBOLS, eventsWithin, filterNews, hourHeader, hourSentence, hourShareStyle, hourSlot, NEWS_CHIPS, nextUpcoming, sentimentLight, swarmList, buildNews } from "./news.js";
+import { AGENDA_SYMBOLS, eventsWithin, filterNews, freshNews, hourHeader, hourSentence, hourShareStyle, hourSlot, NEWS_CHIPS, nextUpcoming, sentimentLight, swarmPotential, buildNews } from "./news.js";
 import { calendarSentence, calendarWhen, esc, formatStamp, safeUrl } from "./logic.js";
 
 function swarmBlock(data, ui) {
   const side = ui?.swarmSide === "ger" ? "ger" : "us";
-  const rows = swarmList(data, side).map((row) => {
+  const rows = swarmPotential(data, side).map((row) => {
     const symbol = String(row.symbol || "").replace(/\.DE$/, "");
     const lamp = row.lamp || { color: "#f59e0b", word: "gemischt", source: "offen" };
-    const pip = `<span class="mood-pip" style="background:${lamp.color};box-shadow:0 0 8px ${lamp.color}" role="img" aria-label="Prognose ${esc(lamp.word)}, ${esc(lamp.source || lamp.word)}"></span>`;
-    return `<p class="swarm-row">${pip}<strong>${esc(symbol)}</strong><span>${esc(row.name)}</span><span class="muted">${esc(row.note)}</span></p>`;
+    const pip = `<span class="mood-pip" style="background:${lamp.color};box-shadow:0 0 8px ${lamp.color}" role="img" aria-label="Stimmung ${esc(lamp.word)}, ${esc(lamp.source || lamp.word)}"></span>`;
+    return `<p class="swarm-row" style="background:${row.tone}22">${pip}<strong>${esc(symbol)}</strong><span>${esc(row.name)}</span><span>${esc(row.lean || "ruhig")}</span><span class="muted">${esc(row.note)}</span></p>`;
   }).join("");
   return `
     <section class="card swarm-compact" id="swarm-compact" aria-label="Schwarm">
@@ -43,18 +43,20 @@ function hourRows(data, now, filter) {
 function eventLines(events) {
   return events.map((event) => {
     const who = (event.tickers || []).slice(0, 2).join(", ");
-    return `<article class="card next-card">
+    return `<button type="button" class="card next-card" data-action="open-event" data-id="${esc(event.id)}">
       <p class="next-when">${esc(calendarWhen(event))}${who ? ` · ${esc(who)}` : ""}</p>
       <p class="next-line">${esc(calendarSentence(event))}</p>
-    </article>`;
+    </button>`;
   }).join("");
 }
 
 export function renderNews(data, ui, now = new Date()) {
   const filter = NEWS_CHIPS.includes(ui?.newsFilter) ? ui.newsFilter : "alle";
-  const items = filterNews(buildNews(data), filter);
+  const items = freshNews(filterNews(buildNews(data), filter), now);
   const soon = eventsWithin(data, now, 3);
   const later = soon.length ? [] : nextUpcoming(data, now, 4);
+  const shownIds = new Set([...soon, ...later].map((event) => event.id));
+  const newsNext = items.length ? [] : nextUpcoming(data, now, 3).filter((event) => !shownIds.has(event.id));
   const rows = items.map((item) => {
     const href = safeUrl(item.href);
     const body = item.body && item.body !== item.headline ? item.body : "";
@@ -92,6 +94,6 @@ export function renderNews(data, ui, now = new Date()) {
     ${swarmBlock(data, ui)}
     <div class="chips" role="tablist" aria-label="Aktie">${NEWS_CHIPS.map((id) => `
       <button type="button" class="chip" data-action="news-filter" data-filter="${esc(id)}" aria-pressed="${filter === id}">${esc(chipLabel(id))}</button>`).join("")}</div>
-    <div class="stack">${rows || `<p class="empty">In diesem Filter liegt nichts.</p>`}</div>
+    <div class="stack">${rows || `<p class="muted">In den letzten zwei Stunden liegt nichts.</p>${newsNext.length ? eventLines(newsNext) : ""}`}</div>
   `;
 }
