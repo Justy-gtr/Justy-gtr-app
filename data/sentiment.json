@@ -1,54 +1,54 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T15:22:00+01:00",
+  "updatedAt": "2026-11-18T15:32:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 20,
-      "reason": "SpaceX-Finanzchef sieht SpaceX bald als größten KI-Infrastruktur-Anbieter. Nvidia-Zahlen heben die Stimmung, dazu Texas-Genehmigung für Supercomputer.",
+      "score": 30,
+      "postsCount": 15,
+      "reason": "Kurz vor US-Start: 40-Mrd.-$-Chip-Finanzierung könnte diese Woche an Anleger gehen, gilt als leicht positiv. Viele Posts sehen SpaceX nach Nvidia-Zahlen vorn.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (18.11., 14:30)",
-          "url": "https://x.com/spcxGOD/status/2123046068258513057"
+          "title": "@gonta_southwood auf X (18.11., 15:19)",
+          "url": "https://x.com/gonta_southwood/status/2123058454864781656"
         },
         {
-          "title": "@OInvests auf X (18.11., 14:41)",
-          "url": "https://x.com/OInvests/status/2123048956141752388"
+          "title": "@ali_alizeh72722 auf X (18.11., 15:25)",
+          "url": "https://x.com/ali_alizeh72722/status/2123059941544247465"
         },
         {
           "title": "@RocketTerminal auf X (18.11., 15:00)",
           "url": "https://x.com/RocketTerminal/status/2123053617192239198"
         }
       ],
-      "updatedAt": "2026-11-18T15:22:00+01:00"
+      "updatedAt": "2026-11-18T15:32:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 15,
-      "postsCount": 20,
-      "reason": "Vorbörslich leicht im Plus dank Nvidia. Gespräch über 200 neue Robotaxis in Texas, aber kaum Reaktion. Viele allgemeine Posts zu Robotern und Energie.",
+      "postsCount": 15,
+      "reason": "Fans vergleichen günstige Tesla-Robotaxis mit Waymo und loben Powercore für Rechenzentren. Andere sehen Konkurrenz beim FSD. Hauptversammlung am 3.12.",
       "sources": [
         {
-          "title": "@RandyWKirk1 auf X (18.11., 14:50)",
-          "url": "https://x.com/RandyWKirk1/status/2123051255132234146"
+          "title": "@DigitalDaisyX auf X (18.11., 15:20)",
+          "url": "https://x.com/DigitalDaisyX/status/2123058645332304047"
         },
         {
-          "title": "@IkcMm auf X (18.11., 14:44)",
-          "url": "https://x.com/IkcMm/status/2123049713952002212"
+          "title": "@mvosnakidis auf X (18.11., 15:29)",
+          "url": "https://x.com/mvosnakidis/status/2123061003579523287"
         },
         {
-          "title": "@1amgroo1 auf X (18.11., 15:21)",
-          "url": "https://x.com/1amgroo1/status/2123058984748007559"
+          "title": "@MarcusRenoStory auf X (18.11., 15:30)",
+          "url": "https://x.com/MarcusRenoStory/status/2123061394387943449"
         }
       ],
-      "updatedAt": "2026-11-18T15:22:00+01:00"
+      "updatedAt": "2026-11-18T15:32:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": 30,
-      "postsCount": 20,
+      "postsCount": 14,
       "reason": "Weiter Thema: Rocket Lab baut alle 8 Tage eine Electron-Rakete, gut für Neutron. Sonst taucht RKLB vor allem in Watchlisten und Spam-Listen auf.",
       "sources": [
         {
@@ -64,7 +64,7 @@
           "url": "https://x.com/armaanzinvest/status/2123055625395716166"
         }
       ],
-      "updatedAt": "2026-11-18T15:22:00+01:00"
+      "updatedAt": "2026-11-18T15:32:00+01:00"
     }
   }
 }
