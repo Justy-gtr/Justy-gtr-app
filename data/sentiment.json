@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T11:34:00+01:00",
+  "updatedAt": "2026-11-18T11:57:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
+      "score": 25,
       "postsCount": 25,
-      "reason": "Tepper soll seine SpaceX-Position stark erhöht haben, JPM bleibt bei 500 $ Ziel. Thema auch: 40-Mrd.-$-Anleihe für KI-Chips und Anthropic-IPO als Konkurrenz.",
+      "reason": "Viele wollen SpaceX unter 150 $ nachlegen, Tepper-Einstieg und Fusion mit Tesla sind Thema. Einige halten die Aktie für stark überteuert.",
       "sources": [
         {
-          "title": "@fammetaX auf X (18.11., 11:22)",
-          "url": "https://x.com/fammetaX/status/2122998940832317851"
+          "title": "@fynnvestor auf X (18.11., 11:44)",
+          "url": "https://x.com/fynnvestor/status/2123004447345279234"
         },
         {
-          "title": "@BestTrader01 auf X (18.11., 11:27)",
-          "url": "https://x.com/BestTrader01/status/2123000122791641389"
+          "title": "@common8er auf X (18.11., 11:55)",
+          "url": "https://x.com/common8er/status/2123007072778269119"
         },
         {
-          "title": "@GryphonIAB auf X (18.11., 11:30)",
-          "url": "https://x.com/GryphonIAB/status/2123000769087733978"
+          "title": "@TaYTaYHilTY auf X (18.11., 11:52)",
+          "url": "https://x.com/TaYTaYHilTY/status/2123006373369954784"
         }
       ],
-      "updatedAt": "2026-11-18T11:34:00+01:00"
+      "updatedAt": "2026-11-18T11:57:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 15,
-      "postsCount": 11,
-      "reason": "Wenig Beiträge: Fans reden über Powercore und Optimus, andere vergleichen Teslas flachen Umsatz mit SpaceX' Wachstum und sind genervt.",
+      "score": 0,
+      "postsCount": 24,
+      "reason": "Streit über Fusion mit SpaceX und das Umtauschverhältnis. Kritik an Unfallzahlen und Robotaxi-Versprechen, Fans zählen über 1.500 Robotaxis in Texas.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (18.11., 11:30)",
-          "url": "https://x.com/spcxGOD/status/2123000765073539487"
+          "title": "@GordonJohnson19 auf X (18.11., 11:53)",
+          "url": "https://x.com/GordonJohnson19/status/2123006708096106916"
         },
         {
-          "title": "@ArtSells auf X (18.11., 11:31)",
-          "url": "https://x.com/ArtSells/status/2123001222000955405"
+          "title": "@derrick_goog auf X (18.11., 11:40)",
+          "url": "https://x.com/derrick_goog/status/2123003329387147551"
         },
         {
-          "title": "@timlatimer365 auf X (18.11., 11:31)",
-          "url": "https://x.com/timlatimer365/status/2123001192934490281"
+          "title": "@mrtsmbg auf X (18.11., 11:43)",
+          "url": "https://x.com/mrtsmbg/status/2123004223163920399"
         }
       ],
-      "updatedAt": "2026-11-18T11:34:00+01:00"
+      "updatedAt": "2026-11-18T11:57:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/corleoneinvests/status/2122971418778272128"
         }
       ],
-      "updatedAt": "2026-11-18T11:34:00+01:00"
+      "updatedAt": "2026-11-18T11:57:00+01:00"
     }
   }
 }
