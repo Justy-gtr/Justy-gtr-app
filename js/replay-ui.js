@@ -22,6 +22,8 @@ import {
   hiddenLabels,
   historyStats,
   applyOneMinute,
+  candleWindow,
+  dismissSheet,
   intervalMarks,
   knockBarrier,
   liveSnapshot,
@@ -95,6 +97,7 @@ function setupHtml(history, note) {
     <button type="button" data-action="replay-lev" data-lev="${value}" aria-pressed="${value === Number(leverage) ? "true" : "false"}">${value}</button>`).join("");
   return `
     <div class="replay" data-replay-root data-screen="setup">
+      <button type="button" class="replay-sheet-close" data-action="replay-close">Schließen</button>
       <header class="replay-head">
         <p class="eyebrow">${esc(UI.title)}</p>
         <h2>Training</h2>
@@ -124,8 +127,6 @@ function playHtml(round, mask, history) {
   const open = round.position;
   const figure = open ? formatSignedEuroCents(snap.grossCents) : formatSignedEuroCents(snap.roundCents);
   const pct = open ? formatSignedPct(snap.pct) : "";
-  const speeds = SPEEDS.map((speed) => `
-    <button type="button" data-action="replay-speed" data-speed="${speed}" aria-pressed="${!round.paused && round.speed === speed ? "true" : "false"}">${esc(speedLabel(speed))}</button>`).join("");
   const leverage = Number(round.settings?.leverage) || 10;
   const presets = LEVERAGE_PRESETS.map((value) => `
     <button type="button" data-action="replay-lev" data-lev="${value}" aria-pressed="${value === leverage ? "true" : "false"}">${value}</button>`).join("");
@@ -155,26 +156,49 @@ function playHtml(round, mask, history) {
       <p class="replay-price" id="replay-price">${snap.price == null ? "" : esc(formatUsd(snap.price))}</p>
       ${pos}
       <p class="replay-warn" id="replay-warn"></p>
+      <div class="replay-tools">
+        <div class="replay-presets" role="group" aria-label="${esc(UI.leverage)}">${presets}</div>
+        <label class="replay-free">${esc(UI.stake)}
+          <input id="replay-stake-live" inputmode="decimal" autocomplete="off" value="${esc(round.settings?.stake ?? 100)}">
+        </label>
+      </div>
       <div class="replay-actions">
         <button type="button" class="replay-go" data-action="replay-step">${esc(UI.weiter)}</button>
         <button type="button" class="replay-long" data-action="replay-long" ${open ? "disabled" : ""}>${esc(UI.long)}</button>
         <button type="button" class="replay-short" data-action="replay-short" ${open ? "disabled" : ""}>${esc(UI.short)}</button>
         <button type="button" class="replay-out" data-action="replay-out" ${open ? "" : "disabled"}>${esc(UI.out)}</button>
         <button type="button" data-action="replay-play" aria-pressed="${round.paused ? "false" : "true"}">${esc(round.paused ? UI.play : UI.pause)}</button>
+        <button type="button" class="replay-back" data-action="replay-settings">${esc(UI.settings)}</button>
       </div>
-      <button type="button" class="replay-back" data-action="replay-end">${esc(UI.allOut)}</button>
-      <label class="replay-field">${esc(UI.stakePick)}
-        <input id="replay-stake-live" inputmode="decimal" autocomplete="off" value="${esc(round.settings?.stake ?? 100)}">
-      </label>
-      <p class="kicker">${esc(UI.leverage)}</p>
-      <div class="replay-presets" role="group" aria-label="${esc(UI.leverage)}">${presets}
-        <label class="replay-free">${esc(UI.custom)}
-          <input id="replay-lev" inputmode="decimal" autocomplete="off" value="${esc(leverage)}">
+    </div>`;
+}
+
+function sheetHtml(round, history) {
+  const leverage = Number(round?.settings?.leverage) || 10;
+  const presets = LEVERAGE_PRESETS.map((value) => `
+    <button type="button" data-action="replay-lev" data-lev="${value}" aria-pressed="${value === leverage ? "true" : "false"}">${value}</button>`).join("");
+  const speeds = SPEEDS.map((speed) => `
+    <button type="button" data-action="replay-speed" data-speed="${speed}" aria-pressed="${round && !round.paused && round.speed === speed ? "true" : "false"}">${esc(speedLabel(speed))}</button>`).join("");
+  const playing = round && round.phase === "play";
+  return `
+    <div class="replay-sheet" data-replay-sheet>
+      <button type="button" class="replay-sheet-backdrop" data-action="replay-close" aria-label="Schließen"></button>
+      <div class="replay-sheet-panel" data-replay-panel>
+        <button type="button" class="replay-sheet-close" data-action="replay-close">Schließen</button>
+        <p class="kicker">${esc(UI.settings)}</p>
+        <label class="replay-field">${esc(UI.stakePick)}
+          <input id="replay-stake" inputmode="decimal" autocomplete="off" value="${esc(round?.settings?.stake ?? history?.settings?.stake ?? 100)}">
         </label>
+        <div class="replay-presets" role="group" aria-label="${esc(UI.leverage)}">${presets}
+          <label class="replay-free">${esc(UI.custom)}
+            <input id="replay-lev" inputmode="decimal" autocomplete="off" value="${esc(leverage)}">
+          </label>
+        </div>
+        ${playing ? `<div class="replay-speeds" role="group" aria-label="${esc(UI.speed)}">${speeds}</div>` : ""}
+        ${playing ? `<button type="button" class="replay-back" data-action="replay-end">${esc(UI.allOut)}</button>` : ""}
+        ${statsBlock(history)}
+        <p class="replay-hint">Play lässt alle 5 Sekunden eine Kerze weiter. 100 % ist diese Geschwindigkeit.</p>
       </div>
-      <div class="replay-speeds" role="group" aria-label="${esc(UI.speed)}">${speeds}</div>
-      ${statsBlock(history)}
-      <p class="replay-hint">Play lässt alle 5 Sekunden eine Kerze weiter. 100 % ist diese Geschwindigkeit.</p>
     </div>`;
 }
 
@@ -217,18 +241,20 @@ function drawChart(canvas, round) {
   const ctx = canvas.getContext("2d");
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ctx.clearRect(0, 0, width, height);
-  const padL = 6;
-  const padR = 62;
-  const padT = 10;
-  const padB = 20;
+  const padL = 8;
+  const padR = 58;
+  const padT = 16;
+  const padB = 18;
   const plotW = Math.max(1, width - padL - padR);
   const plotH = Math.max(1, height - padT - padB);
-  const xOf = (minute) => padL + ((minute - 8 * 60) / (14 * 60)) * plotW;
   const visible = [];
   for (let index = 0; index < round.visible; index += 1) visible.push(unpackBar(round.bars[index]));
+  const frame = candleWindow(visible.length, plotW);
+  const shown = visible.slice(frame.from);
+  const xAt = (index) => padL + (index + 0.5) * frame.slot;
   let cMin = Infinity;
   let cMax = -Infinity;
-  for (const candle of visible) {
+  for (const candle of (shown.length ? shown : visible)) {
     cMin = Math.min(cMin, candle.l);
     cMax = Math.max(cMax, candle.h);
   }
@@ -250,33 +276,34 @@ function drawChart(canvas, round) {
     } else pinned = barrier < cMin ? "low" : "high";
   }
   const yOf = (price) => padT + (1 - (price - min) / (max - min || 1)) * plotH;
-  ctx.font = "10px -apple-system, sans-serif";
-  ctx.textAlign = "center";
-  ctx.fillStyle = "#b7c0d0";
-  ctx.strokeStyle = "rgba(255,255,255,.08)";
+  ctx.font = "11px -apple-system, sans-serif";
+  ctx.textAlign = "right";
   ctx.lineWidth = 1;
-  for (const minute of [8 * 60, 12 * 60, 15 * 60 + 30, 18 * 60, 22 * 60]) {
-    const x = xOf(minute);
+  for (const price of [max, (min + max) / 2, min]) {
+    const y = Math.min(padT + plotH - 2, Math.max(padT + 10, yOf(price)));
+    ctx.strokeStyle = "rgba(255,255,255,.08)";
     ctx.beginPath();
-    ctx.moveTo(x, padT);
-    ctx.lineTo(x, padT + plotH);
+    ctx.moveTo(padL, yOf(price));
+    ctx.lineTo(padL + plotW, yOf(price));
     ctx.stroke();
-    ctx.fillText(formatMinute(minute), Math.min(width - 18, Math.max(16, x)), height - 5);
+    ctx.fillStyle = "#b7c0d0";
+    ctx.fillText(formatUsd(price).replace(" $", ""), width - 4, y);
   }
-  const now = Math.max(8 * 60, Math.min(22 * 60, round.marketMin));
-  ctx.strokeStyle = "rgba(228,177,90,.35)";
-  ctx.beginPath();
-  ctx.moveTo(xOf(now), padT);
-  ctx.lineTo(xOf(now), padT + plotH);
-  ctx.stroke();
-  for (const candle of visible) {
-    const span = candle.span || round.interval || 5;
-    const x = xOf(candle.t + span / 2);
-    const slot = Math.max(0.6, xOf(candle.t + span) - xOf(candle.t));
-    const bodyW = Math.max(1.1, Math.min(7, slot * 0.62));
+  if (shown.length) {
+    ctx.textAlign = "center";
+    ctx.fillStyle = "#b7c0d0";
+    const first = shown[0];
+    const lastTime = shown.at(-1);
+    ctx.fillText(formatMinute(first.t), padL + 16, height - 4);
+    ctx.fillText(formatMinute(lastTime.t + (lastTime.span || round.interval || 5)), padL + plotW - 16, height - 4);
+  }
+  for (let index = 0; index < shown.length; index += 1) {
+    const candle = shown[index];
+    const x = xAt(index);
+    const bodyW = frame.body;
     const up = candle.c >= candle.o;
     const quiet = candle.v === 0;
-    ctx.globalAlpha = quiet ? 0.35 : 1;
+    ctx.globalAlpha = quiet ? 0.82 : 1;
     ctx.strokeStyle = up ? "#7ddec0" : "#ff8b98";
     ctx.fillStyle = ctx.strokeStyle;
     ctx.lineWidth = 1;
@@ -291,20 +318,23 @@ function drawChart(canvas, round) {
     else ctx.fillRect(x - bodyW / 2, top, bodyW, h);
   }
   ctx.globalAlpha = 1;
-  const marks = intervalMarks((round.bars || []).slice(0, round.visible));
+  const marks = intervalMarks(shown.map((candle) => [candle.t, candle.o, candle.h, candle.l, candle.c, candle.v, candle.span || round.interval || 5]));
   if (round.intervalAsk === 1 && (marks.five || marks.one)) {
     ctx.font = "10px -apple-system, sans-serif";
     ctx.textAlign = "left";
     ctx.fillStyle = "rgba(183,192,208,.85)";
-    if (marks.five) ctx.fillText("5 Min", xOf(8 * 60) + 4, padT + 12);
-    if (marks.one && marks.switchMin != null) {
-      const x = xOf(marks.switchMin);
+    if (marks.five && !marks.one) ctx.fillText("5 Min", padL + 4, padT + 11);
+    if (marks.one && !marks.five) ctx.fillText("1 Min", padL + 4, padT + 11);
+    if (marks.five && marks.one && marks.switchMin != null) {
+      const switchIndex = shown.findIndex((candle) => candle.t >= marks.switchMin);
+      const x = switchIndex >= 0 ? xAt(switchIndex) - frame.slot / 2 : padL;
       ctx.strokeStyle = "rgba(228,177,90,.55)";
       ctx.beginPath();
       ctx.moveTo(x, padT);
       ctx.lineTo(x, padT + plotH);
       ctx.stroke();
-      ctx.fillText("1 Min", Math.min(padL + plotW - 36, x + 4), padT + 12);
+      ctx.fillText("5 Min", padL + 4, padT + 11);
+      ctx.fillText("1 Min", Math.min(padL + plotW - 36, x + 4), padT + 11);
     }
   }
   if (barrier != null) {
@@ -331,6 +361,7 @@ function drawChart(canvas, round) {
 
 export function initTraining() {
   let screen = "setup";
+  let sheet = false;
   let round = null;
   let pendingSide = "";
   let meta = null;
@@ -369,6 +400,7 @@ export function initTraining() {
       else root.innerHTML = setupHtml(history, note);
       drawn = -1;
     }
+    if (sheet) mountSheet();
     if (screen === "play" && round) {
       updateHud();
       const canvas = document.getElementById("replay-canvas");
@@ -530,6 +562,45 @@ export function initTraining() {
     }
   }
 
+  function openSettings() {
+    sheet = true;
+    mountSheet();
+  }
+
+  function closeSettings() {
+    sheet = false;
+    page()?.querySelector("[data-replay-sheet]")?.remove();
+    if (screen === "setup" && round) {
+      screen = round.phase === "done" ? "done" : "play";
+      paint(true);
+    }
+  }
+
+  function mountSheet() {
+    const root = page();
+    if (!root || root.querySelector("[data-replay-sheet]")) return;
+    root.insertAdjacentHTML("beforeend", sheetHtml(round, history));
+    const panel = root.querySelector("[data-replay-panel]");
+    if (!panel) return;
+    let startY = 0;
+    let dy = 0;
+    panel.addEventListener("touchstart", (event) => {
+      startY = event.touches[0]?.clientY || 0;
+      dy = 0;
+    }, { passive: true });
+    panel.addEventListener("touchmove", (event) => {
+      const y = event.touches[0]?.clientY || startY;
+      dy = y - startY;
+      if (dy > 0 && panel.scrollTop <= 0) panel.style.transform = `translateY(${Math.min(dy, 160)}px)`;
+      else panel.style.transform = "";
+    }, { passive: true });
+    panel.addEventListener("touchend", () => {
+      if (dismissSheet(dy, panel.scrollTop)) closeSettings();
+      else panel.style.transform = "";
+      dy = 0;
+    });
+  }
+
   function onClick(event) {
     const el = event.target.closest("[data-action]");
     const root = page();
@@ -567,9 +638,12 @@ export function initTraining() {
       paint(true);
       return;
     }
-    if (action === "replay-setup") {
-      screen = "setup";
-      paint(true);
+    if (action === "replay-settings" || action === "replay-setup") {
+      openSettings();
+      return;
+    }
+    if (action === "replay-close") {
+      closeSettings();
       return;
     }
     if (action === "replay-again") {
@@ -632,6 +706,7 @@ export function initTraining() {
       return;
     }
     if (action === "replay-end") {
+      sheet = false;
       const prev = round.phase;
       round = endRound(round);
       if (!finishIfDone(prev)) paint(true);
@@ -649,9 +724,14 @@ export function initTraining() {
           button.setAttribute("aria-pressed", String(button.dataset.lev) === target.value ? "true" : "false");
         });
       }
-      if (target?.id === "replay-stake-live" && round?.settings) {
+      if ((target?.id === "replay-stake-live" || target?.id === "replay-stake") && round?.settings) {
         const next = Number(String(target.value).replace(",", "."));
-        if (Number.isFinite(next) && next > 0) round.settings.stake = next;
+        if (Number.isFinite(next) && next > 0) {
+          round.settings.stake = next;
+          const otherId = target.id === "replay-stake" ? "replay-stake-live" : "replay-stake";
+          const other = document.getElementById(otherId);
+          if (other && other !== target) other.value = target.value;
+        }
       }
     });
     const canvas = () => document.getElementById("replay-canvas");

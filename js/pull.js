@@ -39,6 +39,7 @@ export function initPull({ getScroller, refresh, roots }) {
 
   function onStart(event) {
     if (busy || event.touches.length !== 1) return;
+    if (event.target instanceof Element && event.target.closest("#page-training")) return;
     const scroller = getScroller(event.target);
     if (!scroller || scroller.scrollTop > 1) return;
     const touch = event.touches[0];

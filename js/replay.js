@@ -9,7 +9,9 @@ export const US_OPEN_MIN = 15 * 60 + 30;
 export const US_FROM_MIN = 10 * 60;
 export const INTERVAL_MIN = 5;
 export const INTERVALS = [1, 5, 10];
-export const PREVIEW_BARS = 6;
+export const PREVIEW_BARS = 36;
+export const CANDLE_MIN_BODY = 6;
+export const CANDLE_GAP = 2;
 export const START_EUROS = 100;
 export const SPEEDS = [0.1, 0.2, 0.5, 1, 2];
 export const LEVERAGE_PRESETS = [5, 10, 20, 50, 100];
@@ -210,6 +212,26 @@ export function unpackBar(bar) {
 
 export function sessionBars(day) {
   return (day?.b || []).filter((bar) => Array.isArray(bar) && bar[0] >= SESSION_FROM && bar[0] < SESSION_TO && bar[4] > 0);
+}
+
+/** How many candles fit. Bodies stay at least 6 px, older candles leave to the left. */
+export function candleWindow(count, plotWidth) {
+  const minSlot = CANDLE_MIN_BODY + CANDLE_GAP;
+  const width = Math.max(minSlot, Number(plotWidth) || 0);
+  const fit = Math.max(1, Math.floor(width / minSlot));
+  const shown = Math.min(Math.max(0, count), fit);
+  const slot = shown > 0 ? width / shown : minSlot;
+  return {
+    from: Math.max(0, count - shown),
+    shown,
+    slot,
+    body: Math.max(CANDLE_MIN_BODY, Math.min(slot - CANDLE_GAP, 16))
+  };
+}
+
+/** Finger moved down on a sheet that is already at the top. */
+export function dismissSheet(dy, scrollTop = 0) {
+  return scrollTop <= 0 && dy >= 56;
 }
 
 function barSpan(bar, fallback) {

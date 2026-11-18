@@ -228,6 +228,9 @@ test("Der Wochenwert −9,8 % wird nicht erneut als Tagesalarm geschrieben", () 
 });
 
 test("Alerts behalten notified und feuern ab zwei Prozent", () => {
+  const clock = Date.now;
+  Date.now = () => Date.parse("2026-11-04T16:00:00.000Z");
+  try {
   const first = updateAlerts({ alerts: [] }, [
     { symbol: "TSLA", name: "Tesla", example: false, stale: false, changePct: -2.4, priceEur: 300, sources: [] }
   ], "2026-11-04T15:00:00.000Z", "2026-11-04");
@@ -243,6 +246,9 @@ test("Alerts behalten notified und feuern ab zwei Prozent", () => {
   assert.equal(second.alerts[0].notified, true);
   assert.equal(second.alerts[0].changePct, -3);
   assert.equal(second.alerts[0].timestamp, "2026-11-04T15:00:00.000Z");
+  } finally {
+    Date.now = clock;
+  }
 });
 
 test("Zeitstempel allein gelten nicht als Änderung", () => {

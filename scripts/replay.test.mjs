@@ -7,6 +7,9 @@ import {
   aggregateBars,
   applyOneMinute,
   mixSessionBars,
+  PREVIEW_BARS,
+  candleWindow,
+  dismissSheet,
   previewRound,
   withInterval,
   REPLAY_POOL,
@@ -330,8 +333,24 @@ test("10 Minuten bündelt 5 Minuten, 1 Minute wird nicht erfunden", () => {
   assert.deepEqual(ten[0], [480, 10, 13, 9, 12, 3]);
   assert.equal(aggregateBars(bars, 1), null);
   const round = previewRound(createRound(flatDay(), { balance: 100, stake: 100, leverage: 10, spread: 0 }));
-  assert.ok(round.visible >= 1);
+  assert.ok(PREVIEW_BARS >= 30 && PREVIEW_BARS <= 40);
+  assert.equal(round.visible, PREVIEW_BARS);
   assert.equal(round.paused, true);
+  const wide = candleWindow(400, 280);
+  assert.ok(wide.shown >= 30 && wide.shown <= 40);
+  assert.ok(wide.from > 0);
+  assert.ok(wide.body >= 6);
+  assert.ok(wide.slot >= 8);
+  assert.equal(dismissSheet(56, 0), true);
+  assert.equal(dismissSheet(20, 0), false);
+  assert.equal(dismissSheet(80, 12), false);
+  const ui = fs.readFileSync(new URL("../js/replay-ui.js", import.meta.url), "utf8");
+  const css = fs.readFileSync(new URL("../css/replay.css", import.meta.url), "utf8");
+  assert.match(ui, /Schließen/);
+  assert.match(ui, /replay-close/);
+  assert.match(css, /touch-action:\s*pan-y/);
+  assert.match(css, /overflow-y:\s*scroll/);
+  assert.equal(css.includes("overflow: hidden"), false);
   const missing = withInterval(round, 1);
   assert.match(missing.intervalNote, /1-Minuten/);
   assert.equal(missing.interval, 5);
@@ -348,7 +367,6 @@ test("10 Minuten bündelt 5 Minuten, 1 Minute wird nicht erfunden", () => {
   const wider = withInterval(round, 10);
   assert.equal(wider.interval, 10);
   assert.ok(wider.visible >= 1);
-  const ui = fs.readFileSync(new URL("../js/replay-ui.js", import.meta.url), "utf8");
   assert.match(ui, /"5 Min"/);
   assert.match(ui, /"1 Min"/);
   let walked = applyOneMinute({ ...round, marketMin: 930 }, [[930, 2, 3, 1, 2, 4], [931, 2, 2, 2, 2, 1]]);

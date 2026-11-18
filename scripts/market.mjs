@@ -222,7 +222,7 @@ export function updateAlerts(previous, tickers, nowIso, berlinDay) {
       });
     }
   }
-  const cutoff = Date.now() - 14 * 86400000;
+  const cutoff = now.getTime() - 14 * 86400000;
   return {
     example: false,
     thresholdPct: 2,
