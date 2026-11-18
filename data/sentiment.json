@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T16:35:00+01:00",
+  "updatedAt": "2026-11-18T16:38:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -47,24 +47,24 @@
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 15,
-      "postsCount": 11,
-      "reason": "Posts sagen, Kleinanleger steigen bei Rocket Lab eher aus, und erinnern an rund 57 % Minus in 6 Monaten. Einige bleiben langfristig optimistisch.",
+      "score": 25,
+      "postsCount": 9,
+      "reason": "Rocket Lab feiert 100 Electron-Starts und stichelt auf X gegen SpaceX-Fans. Fans freuen sich, andere sagen, die Stimmung zur Aktie sei so schlecht wie nie.",
       "sources": [
         {
-          "title": "@johhnyWalkerAZ auf X (18.11., 16:16)",
-          "url": "https://x.com/johhnyWalkerAZ/status/2123072744934019355"
+          "title": "@StockMKTNewz auf X (18.11., 16:17)",
+          "url": "https://x.com/StockMKTNewz/status/2123073045535273218"
         },
         {
-          "title": "@Marco_Thesis auf X (18.11., 16:13)",
-          "url": "https://x.com/Marco_Thesis/status/2123071993675211135"
+          "title": "@PSInvestor auf X (18.11., 16:30)",
+          "url": "https://x.com/PSInvestor/status/2123076341029638532"
         },
         {
-          "title": "@WolseleyFund auf X (18.11., 16:06)",
-          "url": "https://x.com/WolseleyFund/status/2123070313999257765"
+          "title": "@johhnyWalkerAZ auf X (18.11., 16:19)",
+          "url": "https://x.com/johhnyWalkerAZ/status/2123073595136213359"
         }
       ],
-      "updatedAt": "2026-11-18T16:35:00+01:00"
+      "updatedAt": "2026-11-18T16:38:00+01:00"
     }
   }
 }
