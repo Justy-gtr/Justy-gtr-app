@@ -4,9 +4,9 @@
   "asOf": "2026-11-17T06:00:00+01:00",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.101,
+    "rate": 1.0985,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-17T22:17:47+01:00",
+    "asOf": "2026-11-18T07:58:44+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -161,7 +161,7 @@
         }
       ],
       "priceUsd": 155.49,
-      "priceEur": 141.23,
+      "priceEur": 141.38,
       "previousCloseUsd": 156.15,
       "changePct": -0.42,
       "eurMethod": "usd_div_eurusd",
@@ -189,7 +189,7 @@
         149.79,
         147.37,
         141.63,
-        141.23
+        141.38
       ],
       "asOf": "2026-11-17T06:00:00+01:00",
       "marketSource": {
@@ -346,7 +346,7 @@
         }
       ],
       "priceUsd": 203.91,
-      "priceEur": 185.21,
+      "priceEur": 185.4,
       "previousCloseUsd": 213.42,
       "changePct": -4.46,
       "eurMethod": "usd_div_eurusd",
@@ -374,7 +374,7 @@
         204.55,
         206.17,
         193.63,
-        185.21
+        185.4
       ],
       "asOf": "2026-11-17T06:00:00+01:00",
       "marketSource": {
@@ -531,7 +531,7 @@
         }
       ],
       "priceUsd": 148.81,
-      "priceEur": 135.16,
+      "priceEur": 135.3,
       "previousCloseUsd": 145.42,
       "changePct": 2.33,
       "eurMethod": "usd_div_eurusd",
@@ -559,7 +559,7 @@
         148.22,
         141.86,
         131.85,
-        135.16
+        135.3
       ],
       "asOf": "2026-11-17T06:00:00+01:00",
       "marketSource": {
@@ -570,18 +570,18 @@
     }
   ],
   "nearTerm": {
-    "pickedOn": "2026-11-17",
+    "pickedOn": "2026-11-18",
     "window": 3,
     "expanded": false,
-    "from": "2026-11-16",
-    "to": "2026-11-19",
+    "from": "2026-11-18",
+    "to": "2026-11-23",
     "includesToday": true,
-    "note": "Fenster: heute und die nächsten 3 Handelstage, bis 19. November 2026.",
+    "note": "Fenster: heute und die nächsten 3 Handelstage, bis 23. November 2026.",
     "tradingDays": [
-      "2026-11-16",
-      "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20",
+      "2026-11-23"
     ],
     "asOf": "2026-11-17T06:00:00+01:00",
     "sources": [
@@ -600,9 +600,9 @@
         "symbol": "PANW",
         "name": "Palo Alto Networks",
         "usdSymbol": "PANW",
-        "daysAway": 2,
+        "daysAway": 0,
         "for": [
-          "Der Termin liegt in 2 Handelstagen.",
+          "Der Termin liegt heute.",
           "In 8 früheren Quartalen lag die Bewegung am Folgetag 0 Mal bei mindestens +5 %."
         ],
         "against": [
@@ -707,7 +707,7 @@
           }
         ],
         "priceUsd": 309.17,
-        "priceEur": 280.82,
+        "priceEur": 281.11,
         "previousCloseUsd": 316.15,
         "changePct": -2.21,
         "eurMethod": "usd_div_eurusd",
@@ -735,7 +735,7 @@
           290.81,
           291.61,
           286.71,
-          280.82
+          281.11
         ],
         "asOf": "2026-11-17T06:00:00+01:00",
         "marketSource": {
@@ -749,9 +749,9 @@
         "symbol": "INTU",
         "name": "Intuit",
         "usdSymbol": "INTU",
-        "daysAway": 3,
+        "daysAway": 1,
         "for": [
-          "Der Termin liegt in 3 Handelstagen.",
+          "Der Termin liegt am nächsten Handelstag.",
           "In 8 früheren Quartalen lag die Bewegung am Folgetag 2 Mal bei mindestens +5 %."
         ],
         "against": [
@@ -856,7 +856,7 @@
           }
         ],
         "priceUsd": 320.64,
-        "priceEur": 291.24,
+        "priceEur": 291.54,
         "previousCloseUsd": 345.43,
         "changePct": -7.18,
         "eurMethod": "usd_div_eurusd",
@@ -884,7 +884,7 @@
           306.59,
           309.22,
           313.44,
-          291.24
+          291.54
         ],
         "asOf": "2026-11-17T06:00:00+01:00",
         "marketSource": {
@@ -898,9 +898,9 @@
         "symbol": "ROST",
         "name": "Ross Stores",
         "usdSymbol": "ROST",
-        "daysAway": 3,
+        "daysAway": 1,
         "for": [
-          "Der Termin liegt in 3 Handelstagen.",
+          "Der Termin liegt am nächsten Handelstag.",
           "In 8 früheren Quartalen lag die Bewegung am Folgetag 3 Mal bei mindestens +5 %."
         ],
         "against": [
@@ -1005,7 +1005,7 @@
           }
         ],
         "priceUsd": 220.41,
-        "priceEur": 200.2,
+        "priceEur": 200.41,
         "previousCloseUsd": 223.06,
         "changePct": -1.19,
         "eurMethod": "usd_div_eurusd",
@@ -1033,7 +1033,7 @@
           213.82,
           209.66,
           202.26,
-          200.2
+          200.41
         ],
         "asOf": "2026-11-17T06:00:00+01:00",
         "marketSource": {
