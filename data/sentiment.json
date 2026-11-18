@@ -1,56 +1,60 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T16:08:00+01:00",
+  "updatedAt": "2026-11-18T16:14:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 15,
-      "reason": "Thema: SpaceX least KI-Chips über eine Apollo-Gesellschaft (rund 40 Mrd. $), Fitch-Rating bleibt BBB+. Dazu Anthropic-Börsengang und Fusionsgerüchte mit Tesla.",
+      "score": 30,
+      "postsCount": 14,
+      "reason": "SpaceX zieht leicht an. Trader sprechen von einer engen Spanne 134,50–143,50 $ kurz vor dem Ausbruch, dazu Freude über den ersten Starship-Fang am Turm.",
       "sources": [
         {
-          "title": "@grok auf X (18.11., 16:07)",
-          "url": "https://x.com/grok/status/2123070507431891316"
+          "title": "@thenotoriousbo auf X (18.11., 16:10)",
+          "url": "https://x.com/thenotoriousbo/status/2123071237286998511"
         },
         {
-          "title": "@QuantBuilderAI auf X (18.11., 16:06)",
-          "url": "https://x.com/QuantBuilderAI/status/2123070453270921719"
+          "title": "@DiplomaticTake auf X (18.11., 16:11)",
+          "url": "https://x.com/DiplomaticTake/status/2123071689307357600"
         },
         {
-          "title": "@jeffboichuk auf X (18.11., 16:07)",
-          "url": "https://x.com/jeffboichuk/status/2123070501136257149"
+          "title": "@NevrEnoughX auf X (18.11., 16:09)",
+          "url": "https://x.com/NevrEnoughX/status/2123071152197374219"
         }
       ],
-      "updatedAt": "2026-11-18T16:08:00+01:00"
+      "updatedAt": "2026-11-18T16:14:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 10,
-      "postsCount": 15,
-      "reason": "Musk ist in Shenzhen beim APEC-Gipfel. Deutsche Posts ärgern sich über ein Update, das Tempo-Aufschläge beim Assistenten begrenzt. Fusionsfrage mit SpaceX bleibt.",
+      "postsCount": 13,
+      "reason": "Gemischt: Ein Video zeigt ein Cybercab, das selbst eine Umleitung fährt (FSD V15). Andere fragen, ob Tesla auch bei 250 $ noch beliebt wäre.",
       "sources": [
         {
-          "title": "@diplomattimes auf X (18.11., 16:06)",
-          "url": "https://x.com/diplomattimes/status/2123070430261248270"
+          "title": "@X_InvestInc auf X (18.11., 16:11)",
+          "url": "https://x.com/X_InvestInc/status/2123071516644622563"
         },
         {
-          "title": "@grok auf X (18.11., 16:07)",
-          "url": "https://x.com/grok/status/2123070476989706291"
+          "title": "@TradeCycles auf X (18.11., 16:12)",
+          "url": "https://x.com/TradeCycles/status/2123071919331086807"
         },
         {
-          "title": "@IdealGrower auf X (18.11., 16:07)",
-          "url": "https://x.com/IdealGrower/status/2123070579142009207"
+          "title": "@Tibug auf X (18.11., 16:10)",
+          "url": "https://x.com/Tibug/status/2123071329591304587"
         }
       ],
-      "updatedAt": "2026-11-18T16:08:00+01:00"
+      "updatedAt": "2026-11-18T16:14:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 30,
-      "postsCount": 15,
-      "reason": "Einige Trader sehen eine Erholung bei Rocket Lab und nennen eine Nachricht positiv. Der Großteil der Posts sind aber Werbe- und WhatsApp-Spam-Listen.",
+      "score": 20,
+      "postsCount": 11,
+      "reason": "Posts erinnern daran, dass Rocket Lab in 6 Monaten rund 57 % verloren hat. Andere bleiben langfristig optimistisch. Viel WhatsApp-Spam.",
       "sources": [
+        {
+          "title": "@Marco_Thesis auf X (18.11., 16:13)",
+          "url": "https://x.com/Marco_Thesis/status/2123071993675211135"
+        },
         {
           "title": "@WolseleyFund auf X (18.11., 16:06)",
           "url": "https://x.com/WolseleyFund/status/2123070313999257765"
@@ -58,13 +62,9 @@
         {
           "title": "@JaredB747 auf X (18.11., 16:02)",
           "url": "https://x.com/JaredB747/status/2123069221764800918"
-        },
-        {
-          "title": "@Tickeron auf X (18.11., 16:05)",
-          "url": "https://x.com/Tickeron/status/2123069970540298665"
         }
       ],
-      "updatedAt": "2026-11-18T16:08:00+01:00"
+      "updatedAt": "2026-11-18T16:14:00+01:00"
     }
   }
 }
