@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T13:54:00+01:00",
+  "updatedAt": "2026-11-18T14:12:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 25,
+      "score": 20,
       "postsCount": 25,
-      "reason": "Viele Fans bleiben dabei, doch es wird über rund 60 Entlassungen in der KI-Sparte und die 40-Mrd.-$-Anleihe bei steigenden Risikoaufschlägen gesprochen.",
+      "reason": "Großes Thema: 40 Mrd. $ Chip-Finanzierung über Apollo, die nicht in der Bilanz auftaucht. Manche sehen Stärke, andere Sorge wegen Zinsen bis über 9 %.",
       "sources": [
         {
-          "title": "@joehansen auf X (18.11., 13:48)",
-          "url": "https://x.com/joehansen/status/2123035492929458420"
+          "title": "@DeItaone auf X (18.11., 13:56)",
+          "url": "https://x.com/DeItaone/status/2123037611337900114"
         },
         {
-          "title": "@GryphonIAB auf X (18.11., 13:45)",
-          "url": "https://x.com/GryphonIAB/status/2123034737992425776"
+          "title": "@financialjuice auf X (18.11., 13:58)",
+          "url": "https://x.com/financialjuice/status/2123038113958375461"
         },
         {
-          "title": "@UnotheInvestor auf X (18.11., 13:48)",
-          "url": "https://x.com/UnotheInvestor/status/2123035541742718992"
+          "title": "@aiStocksDaily auf X (18.11., 14:00)",
+          "url": "https://x.com/aiStocksDaily/status/2123038641601626497"
         }
       ],
-      "updatedAt": "2026-11-18T13:54:00+01:00"
+      "updatedAt": "2026-11-18T14:12:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 5,
-      "postsCount": 24,
-      "reason": "Kritiker nennen eine Fusion zu 450 $ je Tesla-Aktie eine Rettung auf Kosten von SpaceX. Fans verweisen auf Robotaxis in Texas, andere klagen über ein schwaches Jahr.",
+      "score": 10,
+      "postsCount": 25,
+      "reason": "Fans feiern 200 neue Cybercabs in Texas und 3 Mrd. € für Grünheide, vorbörslich leicht im Plus. Deutsche Fahrer klagen über Fahrwerk und Bremsen.",
       "sources": [
         {
-          "title": "@RWMann auf X (18.11., 13:29)",
-          "url": "https://x.com/RWMann/status/2123030880700756326"
+          "title": "@MentoviaX auf X (18.11., 13:57)",
+          "url": "https://x.com/MentoviaX/status/2123037908051632393"
         },
         {
-          "title": "@lanios_ auf X (18.11., 13:30)",
-          "url": "https://x.com/lanios_/status/2123030964452405744"
+          "title": "@zerohedge auf X (18.11., 14:09)",
+          "url": "https://x.com/zerohedge/status/2123040882056212823"
         },
         {
-          "title": "@LuckyNum7Levin auf X (18.11., 13:18)",
-          "url": "https://x.com/LuckyNum7Levin/status/2123027949981151438"
+          "title": "@Kurz_und_krafti auf X (18.11., 14:00)",
+          "url": "https://x.com/Kurz_und_krafti/status/2123038514811937046"
         }
       ],
-      "updatedAt": "2026-11-18T13:54:00+01:00"
+      "updatedAt": "2026-11-18T14:12:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 25,
-      "postsCount": 15,
-      "reason": "US-Senatoren wollen engere Militär-Raumfahrt mit Neuseeland, das wird als Plus für Rocket Lab gesehen. Space-Werte leicht grün, sonst viel Spam.",
+      "score": 30,
+      "postsCount": 25,
+      "reason": "Das Archimedes-Triebwerk hat über 650 Testläufe geschafft, viele sehen Neutron näher rücken. Daneben viel Spam von Signalgruppen.",
       "sources": [
         {
-          "title": "@SpaceSector001 auf X (18.11., 13:49)",
-          "url": "https://x.com/SpaceSector001/status/2123035763055153186"
+          "title": "@Bearlovesbull auf X (18.11., 13:57)",
+          "url": "https://x.com/Bearlovesbull/status/2123037816670072939"
+        },
+        {
+          "title": "@SpaceSector001 auf X (18.11., 14:01)",
+          "url": "https://x.com/SpaceSector001/status/2123038959408132322"
         },
         {
           "title": "@mottbox_ auf X (18.11., 13:35)",
           "url": "https://x.com/mottbox_/status/2123032383440179626"
-        },
-        {
-          "title": "@PSInvestor auf X (18.11., 13:39)",
-          "url": "https://x.com/PSInvestor/status/2123033382758297860"
         }
       ],
-      "updatedAt": "2026-11-18T13:54:00+01:00"
+      "updatedAt": "2026-11-18T14:12:00+01:00"
     }
   }
 }
