@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T10:58:00+01:00",
+  "updatedAt": "2026-11-18T11:16:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 45,
-      "postsCount": 25,
-      "reason": "Vorbörslich leicht im Plus. Thema sind Texas-Genehmigung fürs 24-Mrd.-$-Rechenzentrum, Nvidia-Chips und Orbit-Rechenzentren. Einige fragen nach den Kosten.",
+      "score": 30,
+      "postsCount": 23,
+      "reason": "Druckenmillers neuer SpaceX-Anteil und Nvidias Chip-Deal werden gefeiert. Andere warnen vor hoher Bewertung und schwachen IPOs 2026 vor dem Anthropic-Start.",
       "sources": [
         {
-          "title": "@NGLSHMUELI auf X (18.11., 10:52)",
-          "url": "https://x.com/NGLSHMUELI/status/2122991394729943184"
+          "title": "@najobz auf X (18.11., 11:06)",
+          "url": "https://x.com/najobz/status/2122994757815197903"
         },
         {
-          "title": "@nextbigtrade auf X (18.11., 10:50)",
-          "url": "https://x.com/nextbigtrade/status/2122990801752096945"
+          "title": "@SignalForgeQ auf X (18.11., 11:10)",
+          "url": "https://x.com/SignalForgeQ/status/2122995914176332279"
         },
         {
-          "title": "@SpaceXPete10 auf X (18.11., 10:55)",
-          "url": "https://x.com/SpaceXPete10/status/2122992169489473966"
+          "title": "@hermanndelcampo auf X (18.11., 11:06)",
+          "url": "https://x.com/hermanndelcampo/status/2122994730866708682"
         }
       ],
-      "updatedAt": "2026-11-18T10:58:00+01:00"
+      "updatedAt": "2026-11-18T11:16:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 25,
-      "postsCount": 25,
-      "reason": "Vorbörslich gut 1 % im Plus. Fans loben Powercore und sagen, Tesla hält sich stark. Daneben viel Spam und einzelne Kritik an der hohen Bewertung.",
+      "postsCount": 19,
+      "reason": "Cybercab-Bestellungen für 29.990 $ und Powercore sind Thema, Tesla zeigt laut Tradern relative Stärke. Kritiker verweisen auf Bewertung und schwache 5 Jahre.",
       "sources": [
         {
-          "title": "@TessSwiftAI auf X (18.11., 10:37)",
-          "url": "https://x.com/TessSwiftAI/status/2122987646364340641"
+          "title": "@QuantAlphaXXX auf X (18.11., 11:12)",
+          "url": "https://x.com/QuantAlphaXXX/status/2122996294390050908"
         },
         {
-          "title": "@BryGuyBMoney auf X (18.11., 10:33)",
-          "url": "https://x.com/BryGuyBMoney/status/2122986422470684698"
+          "title": "@RocketTerminal auf X (18.11., 11:00)",
+          "url": "https://x.com/RocketTerminal/status/2122993230551593086"
         },
         {
-          "title": "@oguztur auf X (18.11., 10:52)",
-          "url": "https://x.com/oguztur/status/2122991405232710112"
+          "title": "@Rafalmarut92R auf X (18.11., 11:11)",
+          "url": "https://x.com/Rafalmarut92R/status/2122996230947008610"
         }
       ],
-      "updatedAt": "2026-11-18T10:58:00+01:00"
+      "updatedAt": "2026-11-18T11:16:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/corleoneinvests/status/2122971418778272128"
         }
       ],
-      "updatedAt": "2026-11-18T10:58:00+01:00"
+      "updatedAt": "2026-11-18T11:16:00+01:00"
     }
   }
 }
