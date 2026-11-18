@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T15:47:00+01:00",
+  "updatedAt": "2026-11-18T15:58:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 35,
-      "postsCount": 9,
-      "reason": "Neu: Laut Anthropic-Börsenprospekt könnte Anthropic bis 2029 bis zu 120,5 Mrd. $ an SpaceX für Rechenleistung zahlen. Kritik an hohen Zinsen der Chip-Finanzierung.",
+      "score": 30,
+      "postsCount": 12,
+      "reason": "SpaceX startet bei 143,75 $ und gibt etwas nach. Alle schauen auf den Anthropic-Börsengang heute Abend, dazu viel Hype um eine mögliche Tesla-Fusion.",
       "sources": [
         {
-          "title": "@dklowery auf X (18.11., 15:34)",
-          "url": "https://x.com/dklowery/status/2123062171554996664"
+          "title": "@gonta_southwood auf X (18.11., 15:51)",
+          "url": "https://x.com/gonta_southwood/status/2123066671279886405"
         },
         {
-          "title": "@itsnyaa_x auf X (18.11., 15:35)",
-          "url": "https://x.com/itsnyaa_x/status/2123062519548064019"
+          "title": "@Stop_Loss1 auf X (18.11., 15:53)",
+          "url": "https://x.com/Stop_Loss1/status/2123067104819646864"
         },
         {
-          "title": "@fammetaX auf X (18.11., 15:37)",
-          "url": "https://x.com/fammetaX/status/2123063118922383862"
+          "title": "@Miaavswpv auf X (18.11., 15:49)",
+          "url": "https://x.com/Miaavswpv/status/2123066056881365071"
         }
       ],
-      "updatedAt": "2026-11-18T15:47:00+01:00"
+      "updatedAt": "2026-11-18T15:58:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 15,
-      "postsCount": 11,
-      "reason": "Tesla startet knapp im Plus bei rund 382 $, Trader sehen keine klare Richtung. Gerede über SpaceX-Fusion, deutsche Posts streiten über TÜV und Blickkontrolle.",
+      "postsCount": 12,
+      "reason": "Starke Schwankung: Tesla lief bis 389 $, fiel dann rund 10 $ und erholt sich auf etwa 384 $. Deutsche Posts diskutieren weiter TÜV-Mängel beim Model Y.",
       "sources": [
+        {
+          "title": "@MentoviaX auf X (18.11., 15:53)",
+          "url": "https://x.com/MentoviaX/status/2123067043591110804"
+        },
+        {
+          "title": "@Franz_huemer auf X (18.11., 15:52)",
+          "url": "https://x.com/Franz_huemer/status/2123066847784550525"
+        },
         {
           "title": "@Stop_Loss1 auf X (18.11., 15:44)",
           "url": "https://x.com/Stop_Loss1/status/2123064722945712462"
-        },
-        {
-          "title": "@doogiekidd auf X (18.11., 15:36)",
-          "url": "https://x.com/doogiekidd/status/2123062899673555181"
-        },
-        {
-          "title": "@XBargi2142 auf X (18.11., 15:42)",
-          "url": "https://x.com/XBargi2142/status/2123064344317444429"
         }
       ],
-      "updatedAt": "2026-11-18T15:47:00+01:00"
+      "updatedAt": "2026-11-18T15:58:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/armaanzinvest/status/2123055625395716166"
         }
       ],
-      "updatedAt": "2026-11-18T15:47:00+01:00"
+      "updatedAt": "2026-11-18T15:58:00+01:00"
     }
   }
 }
