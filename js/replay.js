@@ -390,6 +390,14 @@ export function eurosToCents(value) {
   return Math.round(Number(value) * 100);
 }
 
+/** Second tap within 3 s confirms a fresh 100 € round. The first tap only arms it. */
+export function confirmRestart(armedAt, now, windowMs = 3000) {
+  const at = Number(armedAt) || 0;
+  const t = Number(now) || 0;
+  if (!(at > 0) || t < at) return false;
+  return t - at <= windowMs;
+}
+
 /** Next day keeps the account from 25 € up. Below that it starts again at 100 €. */
 export function nextRoundEuros(euros) {
   const cents = Math.round(Number(euros) * 100);

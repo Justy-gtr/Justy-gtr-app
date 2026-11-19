@@ -10,6 +10,7 @@ import {
   TAKE_PRESETS,
   UI,
   closeManual,
+  confirmRestart,
   createRound,
   endRound,
   formatDayDe,
@@ -166,6 +167,12 @@ function playHtml(round, mask, history) {
         <input id="replay-zoom" type="range" min="8" max="${zoomMax}" step="1" value="${zoomValue}" aria-label="Zoom">
         <span id="replay-zoom-n">${esc(zoomLabel)}</span>
       </label>
+      <div class="replay-restart-row">
+        <button type="button" class="replay-restart" data-action="replay-fresh" aria-label="Neu mit 100 €">
+          <span class="replay-restart-icon" aria-hidden="true">↻</span>
+          <span class="replay-restart-eur">100 €</span>
+        </button>
+      </div>
       <div class="replay-speeds" role="group" aria-label="Kerzengrösse">${intervals}${undo}</div>
       ${round.intervalNote ? `<p class="replay-note">${esc(round.intervalNote)}</p>` : ""}
       <div class="replay-hud">
@@ -190,7 +197,6 @@ function playHtml(round, mask, history) {
         <div class="replay-tile">HEBEL</div>
         <div class="replay-lev-grid" role="group" aria-label="${esc(UI.leverage)}">${presets}</div>
       </div>
-      ${snap.equityCents < 10000 ? `<button type="button" class="replay-fresh" data-action="replay-fresh">Neu mit 100 €</button>` : ""}
     </div>`;
 }
 
@@ -375,6 +381,7 @@ export function initTraining() {
   let screen = "setup";
   let sheet = false;
   let round = null;
+  let freshArm = 0;
   let pendingSide = "";
   let meta = null;
   let index = null;
@@ -607,6 +614,22 @@ export function initTraining() {
     event.stopPropagation();
     const action = el.dataset.action;
     if (action === "replay-fresh") {
+      const now = Date.now();
+      if (!el.classList.contains("is-armed") || !confirmRestart(freshArm, now)) {
+        freshArm = now;
+        el.classList.add("is-armed");
+        el.setAttribute("aria-label", "Noch einmal tippen: Neu mit 100 €");
+        window.setTimeout(() => {
+          if (confirmRestart(freshArm, Date.now())) return;
+          freshArm = 0;
+          const button = page()?.querySelector("[data-action='replay-fresh']");
+          if (!button) return;
+          button.classList.remove("is-armed");
+          button.setAttribute("aria-label", "Neu mit 100 €");
+        }, 3100);
+        return;
+      }
+      freshArm = 0;
       const settings = { ...(round?.settings || history.settings || {}), balance: 100, stake: 100, stakeAllIn: false, leverage: round?.settings?.leverage || 100 };
       begin(settings);
       return;

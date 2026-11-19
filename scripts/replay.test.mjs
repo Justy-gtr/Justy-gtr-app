@@ -47,6 +47,7 @@ import {
   settingsFromFields,
   skipToOpen,
   stepCandle,
+  confirmRestart,
   nextRoundEuros,
   undoCandle,
   UNDO_LIMIT,
@@ -532,6 +533,23 @@ test("Der Zurück-Stapel endet bei 500", () => {
   assert.equal(round.undo.length, UNDO_LIMIT);
   assert.equal(round.visible, 520);
   assert.equal(undoCandle(round).visible, 519);
+});
+
+test("Neu mit 100 € braucht einen zweiten Tipp und sitzt unter Tag", () => {
+  assert.equal(confirmRestart(0, 1000), false);
+  assert.equal(confirmRestart(1000, 1000), true);
+  assert.equal(confirmRestart(1000, 4000), true);
+  assert.equal(confirmRestart(1000, 4001), false);
+  const ui = fs.readFileSync(new URL("../js/replay-ui.js", import.meta.url), "utf8");
+  const css = fs.readFileSync(new URL("../css/replay.css", import.meta.url), "utf8");
+  assert.match(ui, /replay-restart-row/);
+  assert.match(ui, /aria-label="Neu mit 100 €"/);
+  assert.match(ui, /data-action="replay-fresh"/);
+  assert.match(ui, /Noch einmal tippen/);
+  assert.equal(ui.includes(">Neu mit 100 €</button>"), false);
+  assert.match(css, /\.replay-restart-row[\s\S]*justify-content:\s*flex-end/);
+  assert.match(css, /\.replay-restart \{[\s\S]*width:\s*32px/);
+  assert.match(css, /\.replay-restart \{[\s\S]*height:\s*32px/);
 });
 
 test("Neue Runde behält das Konto ab 25 €", () => {
