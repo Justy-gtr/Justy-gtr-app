@@ -254,19 +254,41 @@
 }
 .replay-zoom input {
   width: 100%;
+  height: 28px;
+  margin: 0;
   accent-color: #e4b15a;
 }
 .replay-restart-row {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
   min-height: 32px;
-  margin: 2px 0 4px;
+  margin: 8px 0 4px;
+  position: relative;
+  z-index: 3;
 }
+.replay-armnote {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff5d6c;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.replay-stathead { position: relative; }
 .replay-restart {
   width: 32px;
   height: 32px;
   min-height: 32px;
   flex: none;
+  position: relative;
+  z-index: 3;
+  touch-action: manipulation;
   padding: 1px 0 0;
   border-radius: 8px;
   border: 1px solid var(--line);
@@ -282,9 +304,9 @@
 .replay-restart-icon { font-size: 13px; }
 .replay-restart-eur { font-size: 8px; letter-spacing: -0.04em; }
 .replay-restart.is-armed {
-  color: var(--gold-2);
-  border-color: rgba(228, 177, 90, 0.7);
-  background: rgba(228, 177, 90, 0.16);
+  color: #ff5d6c;
+  border-color: #ff5d6c;
+  background: rgba(255, 93, 108, 0.18);
 }
 .replay-band {
   display: grid;
@@ -400,6 +422,9 @@
   min-height: 30px;
   flex: none;
   margin-left: auto;
+  position: relative;
+  z-index: 3;
+  touch-action: manipulation;
   padding: 0;
   border-radius: 8px;
   border: 1px solid var(--line);
@@ -409,9 +434,9 @@
   place-items: center;
 }
 .replay-statreset.is-armed {
-  color: var(--gold-2);
-  border-color: rgba(228, 177, 90, 0.7);
-  background: rgba(228, 177, 90, 0.16);
+  color: #ff5d6c;
+  border-color: #ff5d6c;
+  background: rgba(255, 93, 108, 0.18);
 }
 .replay-statrow { display: flex; justify-content: space-between; gap: 8px; margin: 4px 0; font-size: 15px; }
 .replay-back {

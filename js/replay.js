@@ -390,12 +390,19 @@ export function eurosToCents(value) {
   return Math.round(Number(value) * 100);
 }
 
-/** Second tap within 3 s confirms a fresh 100 € round. The first tap only arms it. */
+/** Second tap within 3 s confirms. The clock lives outside the button, so a redraw cannot forget it. */
 export function confirmRestart(armedAt, now, windowMs = 3000) {
   const at = Number(armedAt) || 0;
   const t = Number(now) || 0;
   if (!(at > 0) || t < at) return false;
   return t - at <= windowMs;
+}
+
+/** pointerup and the click of the same finger are one tap. The next finger is a new tap. */
+export function sameGesture(lastAt, now, gapMs = 80) {
+  const last = Number(lastAt) || 0;
+  const t = Number(now) || 0;
+  return last > 0 && t >= last && t - last < gapMs;
 }
 
 /** Next day keeps the account from 25 € up. Below that it starts again at 100 €. */

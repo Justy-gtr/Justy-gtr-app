@@ -51,6 +51,7 @@ import {
   skipToOpen,
   stepCandle,
   confirmRestart,
+  sameGesture,
   nextRoundEuros,
   undoCandle,
   UNDO_LIMIT,
@@ -548,7 +549,10 @@ test("Neu mit 100 € braucht einen zweiten Tipp und sitzt unter Tag", () => {
   assert.match(ui, /replay-restart-row/);
   assert.match(ui, /aria-label="Neu mit 100 €"/);
   assert.match(ui, /data-action="replay-fresh"/);
-  assert.match(ui, /Noch einmal tippen/);
+  assert.match(ui, /Nochmal\?/);
+  assert.match(ui, /pointerup/);
+  assert.equal(sameGesture(1000, 1040), true);
+  assert.equal(sameGesture(1000, 1200), false);
   assert.equal(ui.includes(">Neu mit 100 €</button>"), false);
   assert.match(css, /\.replay-restart-row[\s\S]*justify-content:\s*flex-end/);
   assert.match(css, /\.replay-restart \{[\s\S]*width:\s*32px/);
@@ -589,7 +593,8 @@ test("Statistik-Reset löscht nur die Runden", () => {
   const css = fs.readFileSync(new URL("../css/replay.css", import.meta.url), "utf8");
   assert.match(ui, /aria-label="Statistik zurücksetzen"/);
   assert.match(ui, /replay-stathead/);
-  assert.match(ui, /Noch einmal tippen: Statistik zurücksetzen/);
+  assert.match(ui, /Nochmal\?/);
+  assert.match(ui, /pointerup/);
   assert.match(css, /\.replay-stathead[\s\S]*justify-content:\s*space-between/);
   assert.match(css, /\.replay-statreset \{[\s\S]*width:\s*30px/);
   assert.match(css, /\.replay-statreset \{[\s\S]*height:\s*30px/);

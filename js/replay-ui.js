@@ -12,6 +12,7 @@ import {
   closeManual,
   confirmRestart,
   createRound,
+  sameGesture,
   endRound,
   formatDayDe,
   formatEuroCents,
@@ -95,6 +96,7 @@ function statsBlock(history) {
   return `<section class="replay-statbox" aria-label="Statistik">
     <div class="replay-stathead">
       <p class="kicker">Statistik</p>
+      <span class="replay-armnote" data-arm-note hidden>Nochmal?</span>
       <button type="button" class="replay-statreset" data-action="replay-reset-stats" aria-label="Statistik zurücksetzen">
         <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 7h14M9 7V5h6v2M8 7l1 13h6l1-13"/></svg>
       </button>
@@ -174,6 +176,7 @@ function playHtml(round, mask, history) {
         <span id="replay-zoom-n">${esc(zoomLabel)}</span>
       </label>
       <div class="replay-restart-row">
+        <span class="replay-armnote" data-arm-note hidden>Nochmal?</span>
         <button type="button" class="replay-restart" data-action="replay-fresh" aria-label="Neu mit 100 €">
           <span class="replay-restart-icon" aria-hidden="true">↻</span>
           <span class="replay-restart-eur">100 €</span>
@@ -389,6 +392,9 @@ export function initTraining() {
   let round = null;
   let freshArm = 0;
   let statsArm = 0;
+  let lastTapAt = 0;
+  let tapStart = null;
+  let toastAfterBegin = false;
   let pendingSide = "";
   let meta = null;
   let index = null;
@@ -436,6 +442,33 @@ export function initTraining() {
         drawn = stamp;
       }
     }
+    paintArm();
+  }
+
+  function showToast(message) {
+    const el = document.getElementById("toast");
+    if (!el) return;
+    el.textContent = message;
+    el.classList.add("show");
+    window.clearTimeout(showToast._timer);
+    showToast._timer = window.setTimeout(() => el.classList.remove("show"), 2200);
+  }
+
+  function paintArm() {
+    const root = page();
+    if (!root) return;
+    const now = Date.now();
+    markArm(root, "replay-fresh", confirmRestart(freshArm, now), "Neu mit 100 €");
+    markArm(root, "replay-reset-stats", confirmRestart(statsArm, now), "Statistik zurücksetzen");
+  }
+
+  function markArm(root, action, on, label) {
+    root.querySelectorAll(`[data-action="${action}"]`).forEach((button) => {
+      button.classList.toggle("is-armed", on);
+      button.setAttribute("aria-label", on ? `Nochmal? ${label}` : label);
+      const note = button.parentElement?.querySelector("[data-arm-note]");
+      if (note) note.hidden = !on;
+    });
   }
 
   function updateHud() {
@@ -528,7 +561,10 @@ export function initTraining() {
   }
 
   async function begin(keepSettings, side) {
-    if (busy) return;
+    if (busy) {
+      toastAfterBegin = false;
+      return;
+    }
     busy = true;
     pendingSide = side || "";
     const settings = keepSettings || readFields();
@@ -565,11 +601,13 @@ export function initTraining() {
       screen = "play";
       note = "";
       paint(true);
+      if (toastAfterBegin) showToast("Konto 100 €");
     } catch {
       note = UI.missing;
       screen = "setup";
       paint(true);
     } finally {
+      toastAfterBegin = false;
       busy = false;
     }
   }
@@ -620,47 +658,9 @@ export function initTraining() {
     if (!String(el.dataset.action || "").startsWith("replay-")) return;
     event.stopPropagation();
     const action = el.dataset.action;
-    if (action === "replay-reset-stats") {
-      const now = Date.now();
-      if (!el.classList.contains("is-armed") || !confirmRestart(statsArm, now)) {
-        statsArm = now;
-        el.classList.add("is-armed");
-        el.setAttribute("aria-label", "Noch einmal tippen: Statistik zurücksetzen");
-        window.setTimeout(() => {
-          if (confirmRestart(statsArm, Date.now())) return;
-          statsArm = 0;
-          page()?.querySelectorAll("[data-action='replay-reset-stats'].is-armed").forEach((button) => {
-            button.classList.remove("is-armed");
-            button.setAttribute("aria-label", "Statistik zurücksetzen");
-          });
-        }, 3100);
-        return;
-      }
-      statsArm = 0;
-      history = resetHistory(history);
-      persist(history);
-      paint(true);
-      return;
-    }
-    if (action === "replay-fresh") {
-      const now = Date.now();
-      if (!el.classList.contains("is-armed") || !confirmRestart(freshArm, now)) {
-        freshArm = now;
-        el.classList.add("is-armed");
-        el.setAttribute("aria-label", "Noch einmal tippen: Neu mit 100 €");
-        window.setTimeout(() => {
-          if (confirmRestart(freshArm, Date.now())) return;
-          freshArm = 0;
-          const button = page()?.querySelector("[data-action='replay-fresh']");
-          if (!button) return;
-          button.classList.remove("is-armed");
-          button.setAttribute("aria-label", "Neu mit 100 €");
-        }, 3100);
-        return;
-      }
-      freshArm = 0;
-      const settings = { ...(round?.settings || history.settings || {}), balance: 100, stake: 100, stakeAllIn: false, leverage: round?.settings?.leverage || 100 };
-      begin(settings);
+    if (action === "replay-reset-stats" || action === "replay-fresh") {
+      if (event.pointerType === "touch") return;
+      armOrRun(action === "replay-fresh" ? "fresh" : "stats");
       return;
     }
     if (action === "replay-stake") {
@@ -768,9 +768,68 @@ export function initTraining() {
     }
   }
 
+  function armOrRun(which) {
+    const now = Date.now();
+    if (sameGesture(lastTapAt, now)) return;
+    lastTapAt = now;
+    const armedAt = which === "fresh" ? freshArm : statsArm;
+    if (!confirmRestart(armedAt, now)) {
+      if (which === "fresh") freshArm = now;
+      else statsArm = now;
+      paintArm();
+      window.setTimeout(() => {
+        const at = which === "fresh" ? freshArm : statsArm;
+        if (confirmRestart(at, Date.now())) return;
+        if (which === "fresh") freshArm = 0;
+        else statsArm = 0;
+        paintArm();
+      }, 3100);
+      return;
+    }
+    if (which === "fresh") {
+      freshArm = 0;
+      toastAfterBegin = true;
+      const settings = { ...(round?.settings || history.settings || {}), balance: 100, stake: 100, stakeAllIn: false, leverage: round?.settings?.leverage || 100 };
+      begin(settings);
+      return;
+    }
+    statsArm = 0;
+    history = resetHistory(history);
+    persist(history);
+    paint(true);
+    showToast("Statistik gelöscht");
+  }
+
+  function onPointerDown(event) {
+    if (event.button != null && event.button !== 0) return;
+    const el = event.target instanceof Element
+      ? event.target.closest("[data-action='replay-fresh'], [data-action='replay-reset-stats']")
+      : null;
+    if (!el || !page()?.contains(el)) {
+      tapStart = null;
+      return;
+    }
+    tapStart = { id: event.pointerId, x: event.clientX, y: event.clientY, action: el.dataset.action };
+  }
+
+  function onPointerUp(event) {
+    if (!tapStart || event.pointerId !== tapStart.id) return;
+    const start = tapStart;
+    tapStart = null;
+    if (Math.hypot(event.clientX - start.x, event.clientY - start.y) > 14) return;
+    const el = event.target instanceof Element ? event.target.closest(`[data-action="${start.action}"]`) : null;
+    if (!el || !page()?.contains(el)) return;
+    event.preventDefault();
+    event.stopPropagation();
+    armOrRun(start.action === "replay-fresh" ? "fresh" : "stats");
+  }
+
   function bind(root) {
     if (bound) return;
     bound = true;
+    root.addEventListener("pointerdown", onPointerDown);
+    root.addEventListener("pointerup", onPointerUp);
+    root.addEventListener("pointercancel", () => { tapStart = null; });
     root.addEventListener("click", onClick);
     root.addEventListener("input", (event) => {
       const target = event.target;
