@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T15:09:00+01:00",
+  "updatedAt": "2026-11-19T15:42:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
       "postsCount": 15,
-      "reason": "SpaceX steigt mit Chipwerten. Thrive Capital soll seinen Anteil mehr als verdoppelt haben; Microsoft, Google und OpenAI wollen SpaceX-Rechenleistung.",
+      "reason": "SpaceX ist jetzt über 5 % im Nasdaq 100. Viel Gerede über eine mögliche Fusion mit Tesla und Anthropic, das SpaceX-Rechenleistung mietet.",
       "sources": [
         {
-          "title": "@Timboo auf X (19.11., 14:40)",
-          "url": "https://x.com/Timboo/status/2123411036648735195"
+          "title": "@JohnTinsmanAOT auf X (19.11., 15:24)",
+          "url": "https://x.com/JohnTinsmanAOT/status/2123422283859481059"
         },
         {
-          "title": "@Dugon777 auf X (19.11., 15:04)",
-          "url": "https://x.com/Dugon777/status/2123417200908235039"
+          "title": "@PaperGainsInc auf X (19.11., 15:13)",
+          "url": "https://x.com/PaperGainsInc/status/2123419431712043156"
         },
         {
-          "title": "@HindsMarkets auf X (19.11., 15:00)",
-          "url": "https://x.com/HindsMarkets/status/2123416019205038583"
+          "title": "@capitalsnitch auf X (19.11., 15:08)",
+          "url": "https://x.com/capitalsnitch/status/2123418076464947379"
         }
       ],
-      "updatedAt": "2026-11-19T15:09:00+01:00"
+      "updatedAt": "2026-11-19T15:42:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 10,
       "postsCount": 15,
-      "reason": "Tesla hält sich besser als der Nasdaq, rutschte zur Eröffnung aber kurz unter die Spanne. Gesprochen wird über FSD in Israel und Musks Tesla-SpaceX-Pläne.",
+      "reason": "UBS bleibt neutral mit Ziel 425 $. Fans freuen sich über 200 neue Cybercabs in Texas und Musks Besuch in Shanghai; andere zweifeln an Optimus.",
       "sources": [
         {
-          "title": "@CLesch34000 auf X (19.11., 14:59)",
-          "url": "https://x.com/CLesch34000/status/2123415922790797718"
+          "title": "@silver13201 auf X (19.11., 15:11)",
+          "url": "https://x.com/silver13201/status/2123418907558256663"
         },
         {
-          "title": "@dexlytrade auf X (19.11., 15:00)",
-          "url": "https://x.com/dexlytrade/status/2123416010443112880"
+          "title": "@BetTheDecade auf X (19.11., 15:20)",
+          "url": "https://x.com/BetTheDecade/status/2123421192535122320"
         },
         {
-          "title": "@Predictivemoney auf X (19.11., 15:03)",
-          "url": "https://x.com/Predictivemoney/status/2123416884825460961"
+          "title": "@gonta_southwood auf X (19.11., 15:20)",
+          "url": "https://x.com/gonta_southwood/status/2123421163401662503"
         }
       ],
-      "updatedAt": "2026-11-19T15:09:00+01:00"
+      "updatedAt": "2026-11-19T15:42:00+01:00"
     },
     "RKLB": {
-      "mood": "gemischt",
-      "score": 10,
-      "postsCount": 8,
-      "reason": "Raumfahrtwerte bekommen Rückenwind durch einen politischen Vorschlag. Andere erinnern daran, dass RKLB rund 65 % unter dem Rekordhoch liegt.",
+      "mood": "gut",
+      "score": 30,
+      "postsCount": 12,
+      "reason": "Raumfahrtwerte steigen, Rocket Lab rund 3 % im Plus. Fans loben den Neutron-Triebwerksbau; Kritik gebe es nur wegen des gefallenen Kurses.",
       "sources": [
         {
-          "title": "@ThinAirTrading auf X (19.11., 15:01)",
-          "url": "https://x.com/ThinAirTrading/status/2123416368225911273"
+          "title": "@davidmoadel auf X (19.11., 15:24)",
+          "url": "https://x.com/davidmoadel/status/2123422059703222408"
         },
         {
-          "title": "@armaanzinvest auf X (19.11., 15:00)",
-          "url": "https://x.com/armaanzinvest/status/2123416182472778039"
+          "title": "@Neil_Shares auf X (19.11., 15:26)",
+          "url": "https://x.com/Neil_Shares/status/2123422723968020645"
         },
         {
-          "title": "@spacepat_o auf X (19.11., 14:49)",
-          "url": "https://x.com/spacepat_o/status/2123413385496633771"
+          "title": "@SpaceKoala auf X (19.11., 15:18)",
+          "url": "https://x.com/SpaceKoala/status/2123420599813017812"
         }
       ],
-      "updatedAt": "2026-11-19T15:09:00+01:00"
+      "updatedAt": "2026-11-19T15:42:00+01:00"
     }
   }
 }
