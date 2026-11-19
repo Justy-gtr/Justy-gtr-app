@@ -105,19 +105,30 @@
   font-weight: 650;
 }
 .replay-secret.muted { font-size: 14px; font-weight: 500; }
-.replay-clock-row {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 46px;
-  min-height: 0;
+.replay-quote {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1.15fr;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
 }
+.replay-quote .replay-price { min-width: 0; white-space: nowrap; }
 .replay-clock {
   margin: 0;
+  text-align: center;
   font-size: 20px;
   line-height: 1.1;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.04em;
   color: var(--gold-2);
+}
+.replay-tick {
+  margin: 0;
+  text-align: right;
+  font-size: 12px;
+  line-height: 1.1;
+  color: var(--muted);
+  white-space: nowrap;
 }
 .replay-chart {
   flex: 1 1 auto;

@@ -179,22 +179,11 @@ function playHtml(round, history, symbol) {
   const pos = open
     ? `<p class="replay-pos">${esc(sideLabel(open.side))} · ${esc(formatEuroCents(open.stakeCents))} · ${esc(UI.leverage)} ${esc(open.leverage)} · ${esc(UI.reasonKo)} ${esc(formatUsd(snap.barrier))}</p>`
     : "";
-  const zoomMax = Math.max(8, round.visible || 8);
-  const zoomValue = chartZoom > 0 ? Math.min(Math.max(8, chartZoom), zoomMax) : zoomMax;
-  const zoomLabel = chartZoom > 0 && chartZoom < zoomMax ? String(Math.round(chartZoom)) : "Tag";
-  const zoomCaption = symbol ? `${zoomLabel} · ${symbol}` : zoomLabel;
+  const tick = symbol ? `Tag · ${symbol}` : "Tag";
   return `
     <div class="replay replay-live" data-replay-root data-screen="play">
       <div class="replay-chart">
         <canvas id="replay-canvas" aria-label="Kerzen bis zur aktuellen Minute. Spätere Kerzen bleiben verdeckt."></canvas>
-      </div>
-      <label class="replay-zoom">
-        <span>Zoom</span>
-        <input id="replay-zoom" type="range" min="8" max="${zoomMax}" step="1" value="${zoomValue}" aria-label="Zoom">
-        <span id="replay-zoom-n">${esc(zoomCaption)}</span>
-      </label>
-      <div class="replay-clock-row">
-        <p class="replay-clock" id="replay-clock">${esc(formatMinute(snap.minute))}</p>
       </div>
       <div class="replay-speeds" role="group" aria-label="Kerzengrösse">${intervals}${undo}${fresh}</div>
       ${round.intervalNote ? `<p class="replay-note">${esc(round.intervalNote)}</p>` : ""}
@@ -202,7 +191,11 @@ function playHtml(round, history, symbol) {
         <p><span>${esc(UI.account)}</span><strong id="replay-equity">${esc(formatEuroCents(snap.equityCents))}</strong></p>
         <p><span>${esc(UI.result)}</span><strong id="replay-pnl" class="${(open ? snap.grossCents : snap.roundCents) < 0 ? "down" : "up"}">${esc(figure)}${pct ? ` <small>${esc(pct)}</small>` : ""}</strong></p>
       </div>
-      <p class="replay-price" id="replay-price">${snap.price == null ? "" : esc(formatUsd(snap.price))}</p>
+      <div class="replay-quote">
+        <p class="replay-price" id="replay-price">${snap.price == null ? "" : esc(formatUsd(snap.price))}</p>
+        <p class="replay-clock" id="replay-clock">${esc(formatMinute(snap.minute))}</p>
+        <p class="replay-tick">${esc(tick)}</p>
+      </div>
       ${pos}
       <p class="replay-warn" id="replay-warn"></p>
       <div class="replay-actions">
@@ -869,18 +862,6 @@ export function initTraining() {
         root.querySelectorAll("[data-action='replay-lev']").forEach((button) => {
           button.setAttribute("aria-pressed", String(button.dataset.lev) === target.value ? "true" : "false");
         });
-      }
-      if (target?.id === "replay-zoom") {
-        if (!event.isTrusted) return;
-        const max = Number(target.max) || 8;
-        const value = Number(target.value);
-        if (!Number.isFinite(value)) return;
-        chartZoom = value >= max - 0.01 ? 0 : Math.max(8, Math.min(max, value));
-        const count = document.getElementById("replay-zoom-n");
-        if (count) count.textContent = `${chartZoom ? String(Math.round(chartZoom)) : "Tag"}${meta?.symbol ? ` · ${meta.symbol}` : ""}`;
-        const canvas = document.getElementById("replay-canvas");
-        if (canvas && round) drawChart(canvas, round);
-        return;
       }
       if ((target?.id === "replay-stake-live" || target?.id === "replay-stake") && round?.settings) {
         const next = Number(String(target.value).replace(",", "."));
