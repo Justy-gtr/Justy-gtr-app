@@ -941,6 +941,11 @@ export function rememberRound(history, summary, at) {
   return { rounds: [row, ...(history?.rounds || [])].slice(0, 40), settings: history?.settings || null };
 }
 
+/** Drop stored rounds. Stake, leverage and the other settings stay. */
+export function resetHistory(history) {
+  return { rounds: [], settings: history?.settings || null };
+}
+
 export function loadHistory(storage) {
   try {
     const raw = JSON.parse(storage.getItem(REPLAY_STORE_KEY) || "");

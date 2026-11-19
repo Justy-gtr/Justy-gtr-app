@@ -34,6 +34,7 @@ import {
   inspectCandle,
   knockBarrier,
   liveSnapshot,
+  loadHistory,
   normalizeSettings,
   rescueBalance,
   tradeStakeCents,
@@ -41,7 +42,9 @@ import {
   pickRound,
   reasonLabel,
   rememberRound,
+  resetHistory,
   roundSummary,
+  saveHistory,
   sessionBars,
   setSpeed,
   settingsFromFields,
@@ -550,6 +553,46 @@ test("Neu mit 100 € braucht einen zweiten Tipp und sitzt unter Tag", () => {
   assert.match(css, /\.replay-restart-row[\s\S]*justify-content:\s*flex-end/);
   assert.match(css, /\.replay-restart \{[\s\S]*width:\s*32px/);
   assert.match(css, /\.replay-restart \{[\s\S]*height:\s*32px/);
+});
+
+test("Statistik-Reset löscht nur die Runden", () => {
+  const settings = { stake: 50, leverage: 80, balance: 300 };
+  const history = rememberRound({ rounds: [], settings }, {
+    id: "t",
+    symbol: "TSLA",
+    name: "Tesla",
+    date: "2026-11-10",
+    pnlCents: 2500,
+    endCents: 12500,
+    tradeCount: 3,
+    hitCount: 2,
+    at: ""
+  }, "2026-11-19T18:00:00+01:00");
+  const cleared = resetHistory(history);
+  assert.deepEqual(cleared.rounds, []);
+  assert.equal(cleared.settings.stake, 50);
+  assert.equal(cleared.settings.leverage, 80);
+  assert.equal(cleared.settings.balance, 300);
+  const stats = historyStats(cleared);
+  assert.equal(stats.rounds, 0);
+  assert.equal(stats.tradeCount, 0);
+  assert.equal(stats.sumCents, 0);
+  assert.equal(stats.hitRate, null);
+  assert.equal(stats.bestCents, null);
+  const storage = { value: "", getItem() { return this.value; }, setItem(_key, value) { this.value = value; } };
+  saveHistory(storage, cleared);
+  const loaded = loadHistory(storage);
+  assert.deepEqual(loaded.rounds, []);
+  assert.equal(loaded.settings.stake, 50);
+  assert.equal(loaded.settings.leverage, 80);
+  const ui = fs.readFileSync(new URL("../js/replay-ui.js", import.meta.url), "utf8");
+  const css = fs.readFileSync(new URL("../css/replay.css", import.meta.url), "utf8");
+  assert.match(ui, /aria-label="Statistik zurücksetzen"/);
+  assert.match(ui, /replay-stathead/);
+  assert.match(ui, /Noch einmal tippen: Statistik zurücksetzen/);
+  assert.match(css, /\.replay-stathead[\s\S]*justify-content:\s*space-between/);
+  assert.match(css, /\.replay-statreset \{[\s\S]*width:\s*30px/);
+  assert.match(css, /\.replay-statreset \{[\s\S]*height:\s*30px/);
 });
 
 test("Neue Runde behält das Konto ab 25 €", () => {

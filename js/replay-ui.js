@@ -36,6 +36,7 @@ import {
   withInterval,
   reasonLabel,
   rememberRound,
+  resetHistory,
   roundSummary,
   saveHistory,
   settingsFromFields,
@@ -92,7 +93,12 @@ function statsBlock(history) {
   ];
   const path = (stats.balances || []).slice(0, 6).map((cents) => formatEuroCents(cents)).join(" · ");
   return `<section class="replay-statbox" aria-label="Statistik">
-    <p class="kicker">Statistik</p>
+    <div class="replay-stathead">
+      <p class="kicker">Statistik</p>
+      <button type="button" class="replay-statreset" data-action="replay-reset-stats" aria-label="Statistik zurücksetzen">
+        <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 7h14M9 7V5h6v2M8 7l1 13h6l1-13"/></svg>
+      </button>
+    </div>
     ${rows.map(([label, value]) => `<p class="replay-statrow"><span>${esc(label)}</span><strong>${esc(value)}</strong></p>`).join("")}
     ${path ? `<p class="replay-hint">${esc(UI.statsBalance)} ${esc(path)}</p>` : ""}
   </section>`;
@@ -382,6 +388,7 @@ export function initTraining() {
   let sheet = false;
   let round = null;
   let freshArm = 0;
+  let statsArm = 0;
   let pendingSide = "";
   let meta = null;
   let index = null;
@@ -613,6 +620,28 @@ export function initTraining() {
     if (!String(el.dataset.action || "").startsWith("replay-")) return;
     event.stopPropagation();
     const action = el.dataset.action;
+    if (action === "replay-reset-stats") {
+      const now = Date.now();
+      if (!el.classList.contains("is-armed") || !confirmRestart(statsArm, now)) {
+        statsArm = now;
+        el.classList.add("is-armed");
+        el.setAttribute("aria-label", "Noch einmal tippen: Statistik zurücksetzen");
+        window.setTimeout(() => {
+          if (confirmRestart(statsArm, Date.now())) return;
+          statsArm = 0;
+          page()?.querySelectorAll("[data-action='replay-reset-stats'].is-armed").forEach((button) => {
+            button.classList.remove("is-armed");
+            button.setAttribute("aria-label", "Statistik zurücksetzen");
+          });
+        }, 3100);
+        return;
+      }
+      statsArm = 0;
+      history = resetHistory(history);
+      persist(history);
+      paint(true);
+      return;
+    }
     if (action === "replay-fresh") {
       const now = Date.now();
       if (!el.classList.contains("is-armed") || !confirmRestart(freshArm, now)) {

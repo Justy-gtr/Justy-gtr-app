@@ -386,6 +386,33 @@
 }
 .replay-trades li span:first-child { grid-column: 1 / -1; color: var(--muted); }
 .replay-trades li strong { justify-self: end; }
+.replay-statbox { position: relative; }
+.replay-stathead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 30px;
+}
+.replay-statreset {
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  flex: none;
+  margin-left: auto;
+  padding: 0;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  display: grid;
+  place-items: center;
+}
+.replay-statreset.is-armed {
+  color: var(--gold-2);
+  border-color: rgba(228, 177, 90, 0.7);
+  background: rgba(228, 177, 90, 0.16);
+}
 .replay-statrow { display: flex; justify-content: space-between; gap: 8px; margin: 4px 0; font-size: 15px; }
 .replay-back {
   min-height: 44px;
