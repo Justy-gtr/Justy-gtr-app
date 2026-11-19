@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T17:07:00+01:00",
+  "updatedAt": "2026-11-19T18:12:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 20,
-      "postsCount": 14,
-      "reason": "SpaceX kämpft um 140 $. Nvidia nennt SpaceX einen der ersten Kunden seiner neuen Chips; viele erwarten Schlagzeilen, dass Anthropic SpaceX überholt.",
+      "score": 15,
+      "postsCount": 19,
+      "reason": "Anthropic-Börsengang stellt SpaceX in den Schatten. Positiv gesehen: Colossus 1 läuft für Anthropic und Milliardär Blavatnik hält weiter SpaceX.",
       "sources": [
-        {
-          "title": "@Kalshi_Finance auf X (19.11., 16:50)",
-          "url": "https://x.com/Kalshi_Finance/status/2123443682401722854"
-        },
-        {
-          "title": "@donaldjdean auf X (19.11., 17:01)",
-          "url": "https://x.com/donaldjdean/status/2123446663541117099"
-        },
         {
           "title": "@paradex auf X (19.11., 16:45)",
           "url": "https://x.com/paradex/status/2123442447544148173"
+        },
+        {
+          "title": "@spcxGOD auf X (19.11., 17:33)",
+          "url": "https://x.com/spcxGOD/status/2123454734916890840"
+        },
+        {
+          "title": "@gonta_southwood auf X (19.11., 17:17)",
+          "url": "https://x.com/gonta_southwood/status/2123450623568101862"
         }
       ],
-      "updatedAt": "2026-11-19T17:07:00+01:00"
+      "updatedAt": "2026-11-19T18:12:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 10,
-      "postsCount": 13,
-      "reason": "Musk will in Shanghai mehr bauen und hält eine Fusion mit SpaceX für wahrscheinlich besser. Trader sehen Tesla am unteren Rand seiner Spanne.",
+      "score": 5,
+      "postsCount": 19,
+      "reason": "Tesla leicht im Minus. Trader sehen die Aktie am unteren Rand ihrer Spanne, andere reden über Optimus-Roboter in den Fabriken.",
       "sources": [
-        {
-          "title": "@SeekingAlpha auf X (19.11., 16:45)",
-          "url": "https://x.com/SeekingAlpha/status/2123442435284238353"
-        },
-        {
-          "title": "@JoshSharp auf X (19.11., 16:45)",
-          "url": "https://x.com/JoshSharp/status/2123442513633595860"
-        },
         {
           "title": "@CoinvoTrading auf X (19.11., 17:00)",
           "url": "https://x.com/CoinvoTrading/status/2123446200556781619"
+        },
+        {
+          "title": "@S_NewsRoomCOM auf X (19.11., 17:26)",
+          "url": "https://x.com/S_NewsRoomCOM/status/2123452748280541370"
+        },
+        {
+          "title": "@RichardHall_f auf X (19.11., 17:02)",
+          "url": "https://x.com/RichardHall_f/status/2123446736635212152"
         }
       ],
-      "updatedAt": "2026-11-19T17:07:00+01:00"
+      "updatedAt": "2026-11-19T18:12:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
-      "score": -30,
-      "postsCount": 10,
-      "reason": "Stimmung kippt: Trader sprechen von neuen Tiefs bei RKLB und einem schwachen Markt. Manche verlieren Vertrauen ins Management, wenige stocken auf.",
+      "score": -20,
+      "postsCount": 20,
+      "reason": "Sorgen um Neutron: Erstflug erst irgendwann 2027. Einige verweisen auf den großen Auftragsbestand von 3,57 Mrd. $, viele Beiträge sind Spam.",
       "sources": [
         {
-          "title": "@cyberprince_rwo auf X (19.11., 16:16)",
-          "url": "https://x.com/cyberprince_rwo/status/2123435207646712098"
+          "title": "@HemingwayBurger auf X (19.11., 17:16)",
+          "url": "https://x.com/HemingwayBurger/status/2123450340192158066"
         },
         {
-          "title": "@WinnerInvestor auf X (19.11., 16:19)",
-          "url": "https://x.com/WinnerInvestor/status/2123436031982866568"
+          "title": "@RCapitalX auf X (19.11., 16:52)",
+          "url": "https://x.com/RCapitalX/status/2123444406145675747"
         },
         {
-          "title": "@TEEELAZER auf X (19.11., 16:23)",
-          "url": "https://x.com/TEEELAZER/status/2123436904104525866"
+          "title": "@pledisme auf X (19.11., 17:13)",
+          "url": "https://x.com/pledisme/status/2123449529374507360"
         }
       ],
-      "updatedAt": "2026-11-19T17:07:00+01:00"
+      "updatedAt": "2026-11-19T18:12:00+01:00"
     }
   }
 }
