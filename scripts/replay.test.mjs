@@ -549,7 +549,9 @@ test("Neu mit 100 € braucht einen zweiten Tipp und sitzt unter Tag", () => {
   assert.equal(confirmRestart(1000, 4001), false);
   const ui = fs.readFileSync(new URL("../js/replay-ui.js", import.meta.url), "utf8");
   const css = fs.readFileSync(new URL("../css/replay.css", import.meta.url), "utf8");
-  assert.match(ui, /replay-restart-row/);
+  assert.match(ui, /replay-clock-row/);
+  assert.match(ui, /\$\{intervals\}\$\{undo\}\$\{fresh\}/);
+  assert.equal(ui.includes("replay-secret"), false);
   assert.match(ui, /aria-label="Neu mit 100 €"/);
   assert.match(ui, /data-action="replay-fresh"/);
   assert.match(ui, /Nochmal\?/);
@@ -557,9 +559,9 @@ test("Neu mit 100 € braucht einen zweiten Tipp und sitzt unter Tag", () => {
   assert.equal(sameGesture(1000, 1040), true);
   assert.equal(sameGesture(1000, 1200), false);
   assert.equal(ui.includes(">Neu mit 100 €</button>"), false);
-  assert.match(css, /\.replay-restart-row[\s\S]*justify-content:\s*flex-end/);
-  assert.match(css, /\.replay-restart \{[\s\S]*width:\s*32px/);
-  assert.match(css, /\.replay-restart \{[\s\S]*height:\s*32px/);
+  assert.match(css, /\.replay-clock-row[\s\S]*justify-content:\s*flex-end/);
+  assert.match(css, /\.replay-speeds \.replay-restart \{[\s\S]*width:\s*40px/);
+  assert.match(css, /\.replay-speeds \.replay-restart \{[\s\S]*height:\s*40px/);
 });
 
 test("Statistik-Reset löscht nur die Runden", () => {

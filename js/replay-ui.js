@@ -23,7 +23,6 @@ import {
   formatSignedEuroCents,
   formatSignedPct,
   formatUsd,
-  hiddenLabels,
   historyStats,
   applyOneMinute,
   candleWindow,
@@ -163,7 +162,7 @@ function setupHtml(history, note) {
     </div>`;
 }
 
-function playHtml(round, mask, history, symbol) {
+function playHtml(round, history, symbol) {
   const snap = liveSnapshot(round);
   const choice = stakeChoice(stakeBasisCents(round), round.settings);
   if (round.settings && choice.allIn) round.settings.stakeAllIn = true;
@@ -176,6 +175,7 @@ function playHtml(round, mask, history, symbol) {
   const intervals = [1, 5, 10].map((value) => `
     <button type="button" data-action="replay-interval" data-min="${value}" aria-pressed="${(round.intervalAsk || round.interval) === value ? "true" : "false"}">${value} Min</button>`).join("");
   const undo = `<button type="button" data-action="replay-undo" ${round.undo?.length ? "" : "disabled"}>${esc(UI.undo)}</button>`;
+  const fresh = `<span class="replay-armnote" data-arm-note hidden>Nochmal?</span><button type="button" class="replay-restart" data-action="replay-fresh" aria-label="Neu mit 100 €"><span class="replay-restart-icon" aria-hidden="true">↻</span><span class="replay-restart-eur">100 €</span></button>`;
   const pos = open
     ? `<p class="replay-pos">${esc(sideLabel(open.side))} · ${esc(formatEuroCents(open.stakeCents))} · ${esc(UI.leverage)} ${esc(open.leverage)} · ${esc(UI.reasonKo)} ${esc(formatUsd(snap.barrier))}</p>`
     : "";
@@ -185,13 +185,6 @@ function playHtml(round, mask, history, symbol) {
   const zoomCaption = symbol ? `${zoomLabel} · ${symbol}` : zoomLabel;
   return `
     <div class="replay replay-live" data-replay-root data-screen="play">
-      <header class="replay-top">
-        <div>
-          <p class="replay-secret">${esc(mask.stock)}</p>
-          <p class="replay-secret muted">${esc(mask.day)}</p>
-        </div>
-        <p class="replay-clock" id="replay-clock">${esc(formatMinute(snap.minute))}</p>
-      </header>
       <div class="replay-chart">
         <canvas id="replay-canvas" aria-label="Kerzen bis zur aktuellen Minute. Spätere Kerzen bleiben verdeckt."></canvas>
       </div>
@@ -200,14 +193,10 @@ function playHtml(round, mask, history, symbol) {
         <input id="replay-zoom" type="range" min="8" max="${zoomMax}" step="1" value="${zoomValue}" aria-label="Zoom">
         <span id="replay-zoom-n">${esc(zoomCaption)}</span>
       </label>
-      <div class="replay-restart-row">
-        <span class="replay-armnote" data-arm-note hidden>Nochmal?</span>
-        <button type="button" class="replay-restart" data-action="replay-fresh" aria-label="Neu mit 100 €">
-          <span class="replay-restart-icon" aria-hidden="true">↻</span>
-          <span class="replay-restart-eur">100 €</span>
-        </button>
+      <div class="replay-clock-row">
+        <p class="replay-clock" id="replay-clock">${esc(formatMinute(snap.minute))}</p>
       </div>
-      <div class="replay-speeds" role="group" aria-label="Kerzengrösse">${intervals}${undo}</div>
+      <div class="replay-speeds" role="group" aria-label="Kerzengrösse">${intervals}${undo}${fresh}</div>
       ${round.intervalNote ? `<p class="replay-note">${esc(round.intervalNote)}</p>` : ""}
       <div class="replay-hud">
         <p><span>${esc(UI.account)}</span><strong id="replay-equity">${esc(formatEuroCents(snap.equityCents))}</strong></p>
@@ -453,7 +442,7 @@ export function initTraining() {
     const root = page();
     if (!root) return;
     if (full || !root.querySelector("[data-replay-root]")) {
-      if (screen === "play" && round && meta) root.innerHTML = playHtml(round, hiddenLabels(), history, meta.symbol);
+      if (screen === "play" && round && meta) root.innerHTML = playHtml(round, history, meta.symbol);
       else if (screen === "done" && round && meta) root.innerHTML = doneHtml(meta, round, history);
       else root.innerHTML = setupHtml(history, note);
       drawn = -1;

@@ -105,9 +105,16 @@
   font-weight: 650;
 }
 .replay-secret.muted { font-size: 14px; font-weight: 500; }
+.replay-clock-row {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 46px;
+  min-height: 0;
+}
 .replay-clock {
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
+  line-height: 1.1;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.04em;
   color: var(--gold-2);
@@ -202,11 +209,22 @@
 .replay-speeds {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   gap: 6px;
   min-width: 0;
+  position: relative;
 }
-.replay-speeds button { flex: 0 1 auto; min-width: 0; font-variant-numeric: tabular-nums; padding: 0 10px; }
+.replay-speeds button { flex: 1 1 auto; min-width: 0; font-variant-numeric: tabular-nums; padding: 0 6px; }
 .replay-speeds button:disabled { opacity: 0.35; }
+.replay-speeds .replay-restart {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0;
+  border-radius: 12px;
+}
 .replay-actions {
   display: grid;
   grid-template-columns: 1.15fr 1fr 1.15fr;
