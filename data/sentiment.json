@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T20:43:00+01:00",
+  "updatedAt": "2026-11-19T21:11:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -10,
-      "postsCount": 15,
-      "reason": "Anthropic knackt beim Start den Bewertungsrekord von SpaceX. SpaceX selbst liegt im roten Gesamtmarkt knapp 2 % im Minus.",
+      "score": 0,
+      "postsCount": 14,
+      "reason": "Laut Nvidias Quartalsmeldung ist SpaceX jetzt Nvidias größte Beteiligung. Fans loben treue Langzeit-Aktionäre, der Gesamtmarkt bleibt ängstlich.",
       "sources": [
         {
-          "title": "@WolfRyan auf X (19.11., 20:17)",
-          "url": "https://x.com/WolfRyan/status/2123495997783298447"
+          "title": "@QijunVinceChen auf X (19.11., 20:42)",
+          "url": "https://x.com/QijunVinceChen/status/2123502144515170641"
         },
         {
-          "title": "@DeepTapeNews auf X (19.11., 20:23)",
-          "url": "https://x.com/DeepTapeNews/status/2123497479614484710"
+          "title": "@Cfez202 auf X (19.11., 20:48)",
+          "url": "https://x.com/Cfez202/status/2123503600563548639"
         },
         {
-          "title": "@_stockResearch auf X (19.11., 20:33)",
-          "url": "https://x.com/_stockResearch/status/2123499820476158039"
+          "title": "@thechef_stocks auf X (19.11., 20:41)",
+          "url": "https://x.com/thechef_stocks/status/2123501880076816775"
         }
       ],
-      "updatedAt": "2026-11-19T20:43:00+01:00"
+      "updatedAt": "2026-11-19T21:11:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": -5,
       "postsCount": 15,
-      "reason": "Tesla rund 2–3 % schwächer bei etwa 378 $. Fans sehen Tesla als Weg zu SpaceX, falls beide fusionieren; Analystenziele liegen im Schnitt bei 410 $.",
+      "reason": "Streit über das Tauschverhältnis bei einer möglichen Fusion mit SpaceX (aktuell etwa 2,75 SpaceX je Tesla). FSD-Fans bleiben zuversichtlich, Trader sind genervt.",
       "sources": [
         {
-          "title": "@EleNaincy65175 auf X (19.11., 20:12)",
-          "url": "https://x.com/EleNaincy65175/status/2123494651516891181"
+          "title": "@RoboBolz auf X (19.11., 20:48)",
+          "url": "https://x.com/RoboBolz/status/2123503679793668384"
         },
         {
-          "title": "@Yochana42437421 auf X (19.11., 20:21)",
-          "url": "https://x.com/Yochana42437421/status/2123496982933107099"
+          "title": "@strengthPlan auf X (19.11., 20:44)",
+          "url": "https://x.com/strengthPlan/status/2123502664344383704"
         },
         {
-          "title": "@JohnToker7 auf X (19.11., 20:15)",
-          "url": "https://x.com/JohnToker7/status/2123495287805067676"
+          "title": "@peymethemoney auf X (19.11., 21:03)",
+          "url": "https://x.com/peymethemoney/status/2123507442856394993"
         }
       ],
-      "updatedAt": "2026-11-19T20:43:00+01:00"
+      "updatedAt": "2026-11-19T21:11:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
-      "score": -20,
+      "score": -15,
       "postsCount": 15,
-      "reason": "RKLB diese Woche rund 15 % im Minus. Fans verteidigen die Firma und die Neutron-Fortschritte, Skeptiker glauben nicht an neue Hochs.",
+      "reason": "Neuer Testlauf des Neutron-Triebwerks Archimedes (über 650 Tests) freut Fans. Chartleser sehen RKLB aber unter einer wichtigen Marke.",
       "sources": [
         {
-          "title": "@magnitudefields auf X (19.11., 19:42)",
-          "url": "https://x.com/magnitudefields/status/2123487030319415751"
+          "title": "@thetechlantis auf X (19.11., 20:54)",
+          "url": "https://x.com/thetechlantis/status/2123505163356819797"
         },
         {
-          "title": "@Neils_Share auf X (19.11., 20:09)",
-          "url": "https://x.com/Neils_Share/status/2123493931149365509"
+          "title": "@rethink15411429 auf X (19.11., 21:08)",
+          "url": "https://x.com/rethink15411429/status/2123508627910619628"
         },
         {
-          "title": "@ghostrider1159 auf X (19.11., 20:00)",
-          "url": "https://x.com/ghostrider1159/status/2123491642355397019"
+          "title": "@JoshSharp auf X (19.11., 21:00)",
+          "url": "https://x.com/JoshSharp/status/2123506801215738018"
         }
       ],
-      "updatedAt": "2026-11-19T20:43:00+01:00"
+      "updatedAt": "2026-11-19T21:11:00+01:00"
     }
   }
 }
