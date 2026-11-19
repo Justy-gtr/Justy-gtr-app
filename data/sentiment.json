@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T16:04:00+01:00",
+  "updatedAt": "2026-11-19T16:37:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gemischt",
-      "score": 0,
-      "postsCount": 15,
-      "reason": "Großes Thema: SpaceX will heute mind. 32 Mrd. $ Schulden für KI-Chips aufnehmen, der Kurs fiel auf ein Tagestief. Bernstein bleibt positiv, Ziel 268 $.",
+      "mood": "gut",
+      "score": 25,
+      "postsCount": 14,
+      "reason": "Nach dem Schreck über 32 Mrd. $ neue Schulden geht es wieder um KI: Anthropic will 30-mal mehr SpaceX-Rechenleistung, große Investoren stocken auf.",
       "sources": [
         {
-          "title": "@financialjuice auf X (19.11., 15:52)",
-          "url": "https://x.com/financialjuice/status/2123429146584084563"
+          "title": "@spcxGOD auf X (19.11., 16:10)",
+          "url": "https://x.com/spcxGOD/status/2123433748003787000"
         },
         {
-          "title": "@ttvresearch auf X (19.11., 15:57)",
-          "url": "https://x.com/ttvresearch/status/2123430366262280434"
+          "title": "@lukeNukemAI auf X (19.11., 16:03)",
+          "url": "https://x.com/lukeNukemAI/status/2123431976698794025"
         },
         {
-          "title": "@AIStockSavvy auf X (19.11., 15:45)",
-          "url": "https://x.com/AIStockSavvy/status/2123427561028149358"
+          "title": "@HindsMarkets auf X (19.11., 16:30)",
+          "url": "https://x.com/HindsMarkets/status/2123438703162818990"
         }
       ],
-      "updatedAt": "2026-11-19T16:04:00+01:00"
+      "updatedAt": "2026-11-19T16:37:00+01:00"
     },
     "TSLA": {
-      "mood": "gemischt",
-      "score": 15,
-      "postsCount": 14,
-      "reason": "Tesla startete rund 1 % höher. Fans zeigen fahrerlose Cybercabs in Dallas und mehr China-Produktion; Kritik am schlechten TÜV-Ergebnis des Model Y.",
+      "mood": "gut",
+      "score": 25,
+      "postsCount": 13,
+      "reason": "Fans feiern einen Rekord von 200 Cybercabs an einem Tag in Texas, mehr als Waymo dort hat. Trader schauen, ob Tesla über 380 $ bleibt.",
       "sources": [
         {
-          "title": "@herbertong auf X (19.11., 15:58)",
-          "url": "https://x.com/herbertong/status/2123430667786833979"
+          "title": "@positive_behnam auf X (19.11., 16:30)",
+          "url": "https://x.com/positive_behnam/status/2123438879751786750"
         },
         {
-          "title": "@Stop_Loss1 auf X (19.11., 15:47)",
-          "url": "https://x.com/Stop_Loss1/status/2123427909465510294"
+          "title": "@OSTradez auf X (19.11., 16:30)",
+          "url": "https://x.com/OSTradez/status/2123438719785132434"
         },
         {
-          "title": "@TeslaDE195932 auf X (19.11., 15:56)",
-          "url": "https://x.com/TeslaDE195932/status/2123430336482955594"
+          "title": "@mc_khristina auf X (19.11., 16:05)",
+          "url": "https://x.com/mc_khristina/status/2123432462810595770"
         }
       ],
-      "updatedAt": "2026-11-19T16:04:00+01:00"
+      "updatedAt": "2026-11-19T16:37:00+01:00"
     },
     "RKLB": {
-      "mood": "gut",
-      "score": 30,
-      "postsCount": 12,
-      "reason": "Raumfahrtwerte steigen, Rocket Lab rund 3 % im Plus. Fans loben den Neutron-Triebwerksbau; Kritik gebe es nur wegen des gefallenen Kurses.",
+      "mood": "schlecht",
+      "score": -30,
+      "postsCount": 10,
+      "reason": "Stimmung kippt: Trader sprechen von neuen Tiefs bei RKLB und einem schwachen Markt. Manche verlieren Vertrauen ins Management, wenige stocken auf.",
       "sources": [
         {
-          "title": "@davidmoadel auf X (19.11., 15:24)",
-          "url": "https://x.com/davidmoadel/status/2123422059703222408"
+          "title": "@cyberprince_rwo auf X (19.11., 16:16)",
+          "url": "https://x.com/cyberprince_rwo/status/2123435207646712098"
         },
         {
-          "title": "@Neil_Shares auf X (19.11., 15:26)",
-          "url": "https://x.com/Neil_Shares/status/2123422723968020645"
+          "title": "@WinnerInvestor auf X (19.11., 16:19)",
+          "url": "https://x.com/WinnerInvestor/status/2123436031982866568"
         },
         {
-          "title": "@SpaceKoala auf X (19.11., 15:18)",
-          "url": "https://x.com/SpaceKoala/status/2123420599813017812"
+          "title": "@TEEELAZER auf X (19.11., 16:23)",
+          "url": "https://x.com/TEEELAZER/status/2123436904104525866"
         }
       ],
-      "updatedAt": "2026-11-19T16:04:00+01:00"
+      "updatedAt": "2026-11-19T16:37:00+01:00"
     }
   }
 }
