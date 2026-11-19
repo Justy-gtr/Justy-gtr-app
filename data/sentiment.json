@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T16:37:00+01:00",
+  "updatedAt": "2026-11-19T17:07:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 25,
+      "score": 20,
       "postsCount": 14,
-      "reason": "Nach dem Schreck über 32 Mrd. $ neue Schulden geht es wieder um KI: Anthropic will 30-mal mehr SpaceX-Rechenleistung, große Investoren stocken auf.",
+      "reason": "SpaceX kämpft um 140 $. Nvidia nennt SpaceX einen der ersten Kunden seiner neuen Chips; viele erwarten Schlagzeilen, dass Anthropic SpaceX überholt.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (19.11., 16:10)",
-          "url": "https://x.com/spcxGOD/status/2123433748003787000"
+          "title": "@Kalshi_Finance auf X (19.11., 16:50)",
+          "url": "https://x.com/Kalshi_Finance/status/2123443682401722854"
         },
         {
-          "title": "@lukeNukemAI auf X (19.11., 16:03)",
-          "url": "https://x.com/lukeNukemAI/status/2123431976698794025"
+          "title": "@donaldjdean auf X (19.11., 17:01)",
+          "url": "https://x.com/donaldjdean/status/2123446663541117099"
         },
         {
-          "title": "@HindsMarkets auf X (19.11., 16:30)",
-          "url": "https://x.com/HindsMarkets/status/2123438703162818990"
+          "title": "@paradex auf X (19.11., 16:45)",
+          "url": "https://x.com/paradex/status/2123442447544148173"
         }
       ],
-      "updatedAt": "2026-11-19T16:37:00+01:00"
+      "updatedAt": "2026-11-19T17:07:00+01:00"
     },
     "TSLA": {
-      "mood": "gut",
-      "score": 25,
+      "mood": "gemischt",
+      "score": 10,
       "postsCount": 13,
-      "reason": "Fans feiern einen Rekord von 200 Cybercabs an einem Tag in Texas, mehr als Waymo dort hat. Trader schauen, ob Tesla über 380 $ bleibt.",
+      "reason": "Musk will in Shanghai mehr bauen und hält eine Fusion mit SpaceX für wahrscheinlich besser. Trader sehen Tesla am unteren Rand seiner Spanne.",
       "sources": [
         {
-          "title": "@positive_behnam auf X (19.11., 16:30)",
-          "url": "https://x.com/positive_behnam/status/2123438879751786750"
+          "title": "@SeekingAlpha auf X (19.11., 16:45)",
+          "url": "https://x.com/SeekingAlpha/status/2123442435284238353"
         },
         {
-          "title": "@OSTradez auf X (19.11., 16:30)",
-          "url": "https://x.com/OSTradez/status/2123438719785132434"
+          "title": "@JoshSharp auf X (19.11., 16:45)",
+          "url": "https://x.com/JoshSharp/status/2123442513633595860"
         },
         {
-          "title": "@mc_khristina auf X (19.11., 16:05)",
-          "url": "https://x.com/mc_khristina/status/2123432462810595770"
+          "title": "@CoinvoTrading auf X (19.11., 17:00)",
+          "url": "https://x.com/CoinvoTrading/status/2123446200556781619"
         }
       ],
-      "updatedAt": "2026-11-19T16:37:00+01:00"
+      "updatedAt": "2026-11-19T17:07:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
@@ -64,7 +64,7 @@
           "url": "https://x.com/TEEELAZER/status/2123436904104525866"
         }
       ],
-      "updatedAt": "2026-11-19T16:37:00+01:00"
+      "updatedAt": "2026-11-19T17:07:00+01:00"
     }
   }
 }
