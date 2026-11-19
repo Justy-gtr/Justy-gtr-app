@@ -1,35 +1,35 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-19T08:28:47+01:00",
-  "nextRun": "2026-11-19T14:00:00+01:00",
+  "updatedAt": "2026-11-19T14:30:00+01:00",
+  "nextRun": "2026-11-20T08:30:00+01:00",
   "long": [
     {
       "name": "Palo Alto Networks",
       "ticker": "PANW",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 339.75,
-      "hint": "Nachbörslich +9,7 % nach Zahlen und höherem Ausblick",
+      "priceEur": 337.43,
+      "hint": "Vorbörslich +9,1 % nach Zahlen und höherem Ausblick",
       "bullets": [
-        "Umsatz 3,44 Mrd. $ (+39 %) und Gewinn je Aktie 1,05 $, beides über den Erwartungen.",
-        "Jahresausblick angehoben auf 14,52–14,57 Mrd. $ Umsatz, Übernahme von Applied Compute für 4,5 Mrd. $.",
-        "Nachbörslich 372,98 $ nach 339,92 $ Schluss, also rund +9,7 % vor dem Start."
+        "Vorbörslich 371 $ nach 339,92 $ Schluss, also gut +9 % vor dem Start.",
+        "Umsatz 3,44 Mrd. $ und Gewinn je Aktie 1,05 $, beides über den Erwartungen.",
+        "Jahresausblick auf 14,52–14,57 Mrd. $ angehoben, Cybersicherheitswerte ziehen mit."
       ],
       "sources": [
+        {
+          "title": "Yahoo Finance: PANW (vorbörslich Do 14:25)",
+          "url": "https://finance.yahoo.com/quote/PANW/"
+        },
+        {
+          "title": "Investing.com: Vorbörse – Palo Alto springt, Chipwerte vor Anthropic-Debüt fester (19.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/premarket-movers-palo-alto-soars-chip-stocks-rally-ahead-of-anthropic-debut-5038792"
+        },
         {
           "title": "CNBC: Palo Alto Networks Zahlen 1. Quartal FY2027 (18.11.)",
           "url": "https://www.cnbc.com/2026/11/18/palo-alto-networks-panw-q1-2027-earnings-.html"
         },
         {
-          "title": "Investing.com: Nachbörsliche Bewegungen PANW, CRWD, P, RRGB (18.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-panw-crwd-p-rrgb-432SI-5037183"
-        },
-        {
-          "title": "ChartMill: Nachbörsliche Gewinner und Verlierer 18.11.",
-          "url": "https://www.chartmill.com/news/SHFS/Chartmill-58898-After-Hours-Stock-Movers-Nov-18-Gainers-and-Losers"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD (1,0978)",
+          "title": "Yahoo Finance: EURUSD (1,0995, Do 14:25)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
@@ -39,59 +39,59 @@
       "ticker": "ANT",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 75.61,
-      "hint": "Erster Handelstag, Ausgabepreis 83 $ über der Spanne",
+      "priceEur": 75.49,
+      "hint": "Erster Handelstag heute, Ausgabepreis 83 $",
       "bullets": [
-        "Ausgabepreis 83 $, über der Spanne von 70–78 $; Angebot wegen hoher Nachfrage vergrößert.",
-        "Laut XTB war das Buch fast siebenfach überzeichnet.",
-        "Erster Kurs heute nach US-Start; Euro-Preis hier ist der umgerechnete Ausgabepreis."
+        "Ausgabepreis 83 $, über der ursprünglichen Spanne; der Handel startet etwa ab 18:00 Berlin.",
+        "Vorbörsliche Kontrakte lagen am Morgen um 104 $, rund 25 % über dem Ausgabepreis.",
+        "Euro-Preis ist der umgerechnete Ausgabepreis, erster Kurs steht noch aus."
       ],
       "sources": [
         {
-          "title": "Anthropic: Preis des Börsengangs (18.11.)",
-          "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+          "title": "CNBC: Anthropic IPO live – Nasdaq-Debüt (19.11.)",
+          "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html"
         },
         {
-          "title": "CNBC: Anthropic sammelt über 81 Mrd. $ ein (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
+          "title": "Goldesel: Mittagsupdate 19.11. – Anthropic-Börsengang treibt US-Futures (11:44)",
+          "url": "https://goldesel.de/artikel/mittagsupdate-19-11-anthropic-boersengang-treibt-us-futures-bund-macht-weg-fuer-unicredit-bei-commerzbank-frei"
         },
         {
-          "title": "XTB: Morning Wrap (19.11., 07:05)",
-          "url": "https://www.xtb.com/int/market-analysis/news-and-research/morning-wrap-time-for-the-largest-stock-market-debut-in-history-19-11-2026"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD (1,0978)",
+          "title": "Yahoo Finance: EURUSD (1,0995, Do 14:25)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
     },
     {
-      "name": "PDD Holdings",
-      "ticker": "PDD",
-      "country": "CN",
-      "exchange": "Nasdaq",
-      "priceEur": 70.55,
-      "hint": "Quartalszahlen heute vor US-Start",
+      "name": "Coherent",
+      "ticker": "COHR",
+      "country": "US",
+      "exchange": "NYSE",
+      "priceEur": 208.73,
+      "hint": "Vorbörslich +7,8 % nach Programm über 2 Mrd. $ für eigene Aktien",
       "bullets": [
-        "PDD legt heute vor Börsenstart die Zahlen zum 3. Quartal vor, Konferenz 13:30 Berlin.",
-        "Schluss Mi 77,45 $, die Aktie ist nach den neuen US-Chipregeln gedrückt.",
-        "Zahlentage brachten bei PDD oft große Sprünge, die Richtung ist offen."
+        "Coherent will eigene Aktien für bis zu 2 Mrd. $ zurückholen, ohne Ablaufdatum.",
+        "Vorbörslich 229,50 $ nach 212,84 $ Schluss, rund +7,8 %.",
+        "Optik- und Chipwerte bekommen Rückenwind vom Anthropic-Debüt."
       ],
       "sources": [
         {
-          "title": "PDD Holdings: Zahlen 3. Quartal am 19.11.",
-          "url": "https://www.globenewswire.com/news-release/2026/11/12/3401573/0/en/pdd-holdings-to-report-third-quarter-2026-unaudited-financial-results-on-november-19-2026.html"
+          "title": "Yahoo Finance: COHR (vorbörslich Do 14:25)",
+          "url": "https://finance.yahoo.com/quote/COHR/"
         },
         {
-          "title": "Newsquawk: US-Zahlen am 19.11. (WMT, PDD, BABA)",
-          "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-earnings-estimates---19th-november-2026-wmt-pdd-baba"
+          "title": "Seeking Alpha: Coherent springt nach 2-Mrd.-$-Programm für eigene Aktien (19.11.)",
+          "url": "https://seekingalpha.com/news/4674637-coherent-stock-jumps-on-2b-share-buyback-plan"
         },
         {
-          "title": "Yahoo Finance: PDD",
-          "url": "https://finance.yahoo.com/quote/PDD/"
+          "title": "MarketWatch: Vorbörsliche Gewinner (19.11.)",
+          "url": "https://www.marketwatch.com/tools/screener/premarket"
         },
         {
-          "title": "Yahoo Finance: EURUSD (1,0978)",
+          "title": "Investing.com: Vorbörse – Palo Alto springt, Chipwerte vor Anthropic-Debüt fester (19.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/premarket-movers-palo-alto-soars-chip-stocks-rally-ahead-of-anthropic-debut-5038792"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD (1,0995, Do 14:25)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
@@ -99,86 +99,102 @@
   ],
   "short": [
     {
+      "name": "SELLAS Life Sciences",
+      "ticker": "SLS",
+      "country": "US",
+      "exchange": "Nasdaq",
+      "priceEur": 12.8,
+      "hint": "Vorbörslich −21,6 % nach Platzierung mit Abschlag",
+      "bullets": [
+        "SELLAS platziert neue Aktien für 150 Mio. $ zu 13,00 $ je Aktie.",
+        "Das sind fast 28 % unter dem Schluss von 17,95 $, nach dem Sprung auf die AML-Studie.",
+        "Vorbörslich 14,07 $, der Preis der Platzierung zieht nach unten."
+      ],
+      "sources": [
+        {
+          "title": "Yahoo Finance: SLS (vorbörslich Do 14:25)",
+          "url": "https://finance.yahoo.com/quote/SLS/"
+        },
+        {
+          "title": "SELLAS: Platzierung über 150 Mio. $ zu 13,00 $ je Aktie",
+          "url": "https://ir.sellaslifesciences.com/news/News-Details/2026/SELLAS-Life-Sciences-Announces-Pricing-of-150-0-Million-Underwritten-Public-Offering/default.aspx"
+        },
+        {
+          "title": "Stocktwits: SLS fällt – Angebot mit fast 30 % Abschlag nach AML-Studienerfolg",
+          "url": "https://stocktwits.com/news-articles/markets/equity/sls-stock-sellas-discounted-share-offering-retail-bulls-crying-foul-low-price/cNbLDqPR9ii"
+        },
+        {
+          "title": "Benzinga: NetEase, Red Robin, Sellas vorbörslich schwächer (19.11.)",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63423554/netease-downbeat-q3-results-joins-red-robin-sellas-life-sciences-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD (1,0995, Do 14:25)",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
+        }
+      ]
+    },
+    {
       "name": "Red Robin Gourmet Burgers",
       "ticker": "RRGB",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 6.19,
-      "hint": "Nachbörslich −14,4 % nach verfehlten Zahlen",
+      "priceEur": 6.16,
+      "hint": "Vorbörslich −14,8 % nach verfehlten Zahlen",
       "bullets": [
         "Verlust je Aktie 0,54 $ statt erwarteter 0,39 $.",
         "Umsatz 232,1 Mio. $ statt erwarteter 250,1 Mio. $, weniger Gäste.",
-        "Nachbörslich 6,80 $ nach 7,95 $ Schluss."
+        "Vorbörslich 6,77 $ nach 7,95 $ Schluss."
       ],
       "sources": [
+        {
+          "title": "Yahoo Finance: RRGB (vorbörslich Do 14:25)",
+          "url": "https://finance.yahoo.com/quote/RRGB/"
+        },
         {
           "title": "Investing.com: Nachbörsliche Bewegungen PANW, CRWD, P, RRGB (18.11.)",
           "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-panw-crwd-p-rrgb-432SI-5037183"
         },
         {
-          "title": "ChartMill: Nachbörsliche Gewinner und Verlierer 18.11.",
-          "url": "https://www.chartmill.com/news/SHFS/Chartmill-58898-After-Hours-Stock-Movers-Nov-18-Gainers-and-Losers"
+          "title": "Benzinga: NetEase, Red Robin, Sellas vorbörslich schwächer (19.11.)",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63423554/netease-downbeat-q3-results-joins-red-robin-sellas-life-sciences-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session"
         },
         {
-          "title": "Yahoo Finance: EURUSD (1,0978)",
+          "title": "Yahoo Finance: EURUSD (1,0995, Do 14:25)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
     },
     {
-      "name": "Humana",
-      "ticker": "HUM",
-      "country": "US",
-      "exchange": "NYSE",
-      "priceEur": 351.41,
-      "hint": "Nach −13 % am Mi neue CMS-Betrugsregel nachbörslich",
-      "bullets": [
-        "Am Mi −13 % auf 385,78 $, weil die Medicare-Behörde CMS mehr Prüfungen bis zurück 2018 plant.",
-        "Nachbörslich weiterer Druck durch eine geplante Anti-Betrugsregel über 90 Mrd. $.",
-        "Mögliche Rückzahlungen drücken auf Marge und Ausblick."
-      ],
-      "sources": [
-        {
-          "title": "EBC: Humana −13 % wegen Medicare-Prüfungen",
-          "url": "https://www.ebc.com/forex/humana-stock-drops-medicare-audits-margin-risks"
-        },
-        {
-          "title": "Benzinga: Humana nachbörslich nach CMS-Betrugsregel (18.11.)",
-          "url": "https://www.benzinga.com/markets/equities/26/11/63417422/humana-shares-slip-after-hours-cms-fraud-rule"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD (1,0978)",
-          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
-        }
-      ]
-    },
-    {
-      "name": "Alibaba (ADR)",
-      "ticker": "BABA",
+      "name": "NetEase",
+      "ticker": "NTES",
       "country": "CN",
-      "exchange": "NYSE",
-      "priceEur": 76.85,
-      "hint": "Hongkong −5,2 %, Zahlen heute, US-Chipregeln",
+      "exchange": "Nasdaq",
+      "priceEur": 101.26,
+      "hint": "Vorbörslich −6,0 % nach schwachem 3. Quartal",
       "bullets": [
-        "In Hongkong −5,2 % auf 80,8 HKD, Tief seit 52 Wochen.",
-        "Neue US-Regeln sperren den Fernzugriff auf KI-Chips über ausländische Rechenzentren.",
-        "Zahlen kommen heute nach Hongkong-Schluss, Fokus auf Cloud und Investitionen."
+        "Umsatz 27,9 Mrd. Yuan, 1,8 % weniger als vor einem Jahr und unter der Erwartung.",
+        "Bereinigter Gewinn je Aktie 14,21 Yuan, deutlich unter den Schätzungen.",
+        "Vorbörslich 111,33 $ nach 118,43 $ Schluss, China-Werte stehen unter Chipregel-Druck."
       ],
       "sources": [
         {
-          "title": "SBH News: Alibaba −5,2 % auf 80,8 HKD (19.11.)",
-          "url": "https://www.sbhnews.com/news/alibaba-plunge-us-chip-curbs-9943bfb5-2026-11-19-PM-12-15"
+          "title": "Yahoo Finance: NTES (vorbörslich Do 14:25)",
+          "url": "https://finance.yahoo.com/quote/NTES/"
         },
         {
-          "title": "Straits Times: US-Chipregeln treffen Alibabas KI-Pläne",
-          "url": "https://www.straitstimes.com/business/alibabas-ai-ambitions-face-steep-challenge-in-us-chip-controls"
+          "title": "TipRanks/The Fly: NetEase −5 % nach Umsatzverfehlung im 3. Quartal",
+          "url": "https://www.tipranks.com/news/the-fly/netease-falls-5-to-112-10-following-q3-revenue-miss-thefly-news"
         },
         {
-          "title": "Newsquawk: US-Zahlen am 19.11. (WMT, PDD, BABA)",
-          "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-earnings-estimates---19th-november-2026-wmt-pdd-baba"
+          "title": "Investing.com: NetEase verfehlt Gewinn- und Umsatzerwartung",
+          "url": "https://www.investing.com/news/earnings/netease-adr-earnings-missed-by-223-revenue-fell-short-of-estimates-5038252"
         },
         {
-          "title": "Yahoo Finance: EURUSD (1,0978)",
+          "title": "Benzinga: NetEase, Red Robin, Sellas vorbörslich schwächer (19.11.)",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63423554/netease-downbeat-q3-results-joins-red-robin-sellas-life-sciences-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD (1,0995, Do 14:25)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
@@ -1226,6 +1242,28 @@
           "url": "https://data.alpaca.markets/v2/stocks/ROST/snapshot?feed=iex"
         },
         "source": "alpaca-iex"
+      }
+    ]
+  },
+  "rocketLabNews": {
+    "text": "Keine neue Pressemitteilung heute: RKLB steht vorbörslich bei 55,16 $ (+3,9 %) nach fünf Verlusttagen, Jim Cramer nennt die Aktie „zu billig“, und laut Axios verschärft der Vulcan-Fehlschlag von ULA die Startknappheit (Quilty: rund 150 fehlende Starts bis 2030).",
+    "updatedAt": "2026-11-19T14:30:00+01:00",
+    "sources": [
+      {
+        "title": "Yahoo Finance: RKLB (vorbörslich Do 14:25)",
+        "url": "https://finance.yahoo.com/quote/RKLB/"
+      },
+      {
+        "title": "Stocktwits: Cramer nennt RKLB „zu billig“ (19.11.)",
+        "url": "https://stocktwits.com/news-articles/markets/equity/rklb-stock-jim-cramer-likes-spacex-rocketlab-cheap-electron-falcon-9-100-launches/cNbiGliR9iN"
+      },
+      {
+        "title": "Axios: Vulcan-Fehlschlag verschärft US-Startkrise (19.11.)",
+        "url": "https://www.axios.com/2026/11/19/spacex-ula-vulcan-launch-crisis"
+      },
+      {
+        "title": "SEC EDGAR: Rocket Lab – letzte Meldung Form 4 vom 18.11.",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001819994&type=&dateb=&owner=include&count=40"
       }
     ]
   }
