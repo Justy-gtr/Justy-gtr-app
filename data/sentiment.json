@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T18:12:00+01:00",
+  "updatedAt": "2026-11-19T18:38:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gut",
-      "score": 15,
-      "postsCount": 19,
-      "reason": "Anthropic-Börsengang stellt SpaceX in den Schatten. Positiv gesehen: Colossus 1 läuft für Anthropic und Milliardär Blavatnik hält weiter SpaceX.",
+      "mood": "gemischt",
+      "score": -10,
+      "postsCount": 14,
+      "reason": "SpaceX rutscht am Anthropic-Börsentag zeitweise über 5 % ab. Viele vergleichen: erst Hype, dann Rückgang – wie beim SpaceX-Börsengang im Juni.",
       "sources": [
         {
-          "title": "@paradex auf X (19.11., 16:45)",
-          "url": "https://x.com/paradex/status/2123442447544148173"
+          "title": "@gonta_southwood auf X (19.11., 18:17)",
+          "url": "https://x.com/gonta_southwood/status/2123465670281265415"
         },
         {
-          "title": "@spcxGOD auf X (19.11., 17:33)",
-          "url": "https://x.com/spcxGOD/status/2123454734916890840"
+          "title": "@TrendSpider auf X (19.11., 18:27)",
+          "url": "https://x.com/TrendSpider/status/2123468133533098096"
         },
         {
-          "title": "@gonta_southwood auf X (19.11., 17:17)",
-          "url": "https://x.com/gonta_southwood/status/2123450623568101862"
+          "title": "@PlayBookTrades auf X (19.11., 18:13)",
+          "url": "https://x.com/PlayBookTrades/status/2123464599248978192"
         }
       ],
-      "updatedAt": "2026-11-19T18:12:00+01:00"
+      "updatedAt": "2026-11-19T18:38:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 5,
-      "postsCount": 19,
-      "reason": "Tesla leicht im Minus. Trader sehen die Aktie am unteren Rand ihrer Spanne, andere reden über Optimus-Roboter in den Fabriken.",
+      "score": -5,
+      "postsCount": 15,
+      "reason": "Tesla um 380 $. Manche Anleger sind frustriert, weil die Aktie seit Jahren kaum steigt; andere verweisen auf Robotaxi und die geplante Cybercab-Fabrik.",
       "sources": [
         {
-          "title": "@CoinvoTrading auf X (19.11., 17:00)",
-          "url": "https://x.com/CoinvoTrading/status/2123446200556781619"
+          "title": "@OutsideChanges auf X (19.11., 18:25)",
+          "url": "https://x.com/OutsideChanges/status/2123467628878668208"
         },
         {
-          "title": "@S_NewsRoomCOM auf X (19.11., 17:26)",
-          "url": "https://x.com/S_NewsRoomCOM/status/2123452748280541370"
+          "title": "@cashflow_needs auf X (19.11., 18:27)",
+          "url": "https://x.com/cashflow_needs/status/2123468110933950854"
         },
         {
-          "title": "@RichardHall_f auf X (19.11., 17:02)",
-          "url": "https://x.com/RichardHall_f/status/2123446736635212152"
+          "title": "@RexWiggins12 auf X (19.11., 18:19)",
+          "url": "https://x.com/RexWiggins12/status/2123466158900985938"
         }
       ],
-      "updatedAt": "2026-11-19T18:12:00+01:00"
+      "updatedAt": "2026-11-19T18:38:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
@@ -64,7 +64,7 @@
           "url": "https://x.com/pledisme/status/2123449529374507360"
         }
       ],
-      "updatedAt": "2026-11-19T18:12:00+01:00"
+      "updatedAt": "2026-11-19T18:38:00+01:00"
     }
   }
 }
