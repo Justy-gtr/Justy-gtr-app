@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T15:42:00+01:00",
+  "updatedAt": "2026-11-19T16:04:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gut",
-      "score": 40,
+      "mood": "gemischt",
+      "score": 0,
       "postsCount": 15,
-      "reason": "SpaceX ist jetzt über 5 % im Nasdaq 100. Viel Gerede über eine mögliche Fusion mit Tesla und Anthropic, das SpaceX-Rechenleistung mietet.",
+      "reason": "Großes Thema: SpaceX will heute mind. 32 Mrd. $ Schulden für KI-Chips aufnehmen, der Kurs fiel auf ein Tagestief. Bernstein bleibt positiv, Ziel 268 $.",
       "sources": [
         {
-          "title": "@JohnTinsmanAOT auf X (19.11., 15:24)",
-          "url": "https://x.com/JohnTinsmanAOT/status/2123422283859481059"
+          "title": "@financialjuice auf X (19.11., 15:52)",
+          "url": "https://x.com/financialjuice/status/2123429146584084563"
         },
         {
-          "title": "@PaperGainsInc auf X (19.11., 15:13)",
-          "url": "https://x.com/PaperGainsInc/status/2123419431712043156"
+          "title": "@ttvresearch auf X (19.11., 15:57)",
+          "url": "https://x.com/ttvresearch/status/2123430366262280434"
         },
         {
-          "title": "@capitalsnitch auf X (19.11., 15:08)",
-          "url": "https://x.com/capitalsnitch/status/2123418076464947379"
+          "title": "@AIStockSavvy auf X (19.11., 15:45)",
+          "url": "https://x.com/AIStockSavvy/status/2123427561028149358"
         }
       ],
-      "updatedAt": "2026-11-19T15:42:00+01:00"
+      "updatedAt": "2026-11-19T16:04:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 10,
-      "postsCount": 15,
-      "reason": "UBS bleibt neutral mit Ziel 425 $. Fans freuen sich über 200 neue Cybercabs in Texas und Musks Besuch in Shanghai; andere zweifeln an Optimus.",
+      "score": 15,
+      "postsCount": 14,
+      "reason": "Tesla startete rund 1 % höher. Fans zeigen fahrerlose Cybercabs in Dallas und mehr China-Produktion; Kritik am schlechten TÜV-Ergebnis des Model Y.",
       "sources": [
         {
-          "title": "@silver13201 auf X (19.11., 15:11)",
-          "url": "https://x.com/silver13201/status/2123418907558256663"
+          "title": "@herbertong auf X (19.11., 15:58)",
+          "url": "https://x.com/herbertong/status/2123430667786833979"
         },
         {
-          "title": "@BetTheDecade auf X (19.11., 15:20)",
-          "url": "https://x.com/BetTheDecade/status/2123421192535122320"
+          "title": "@Stop_Loss1 auf X (19.11., 15:47)",
+          "url": "https://x.com/Stop_Loss1/status/2123427909465510294"
         },
         {
-          "title": "@gonta_southwood auf X (19.11., 15:20)",
-          "url": "https://x.com/gonta_southwood/status/2123421163401662503"
+          "title": "@TeslaDE195932 auf X (19.11., 15:56)",
+          "url": "https://x.com/TeslaDE195932/status/2123430336482955594"
         }
       ],
-      "updatedAt": "2026-11-19T15:42:00+01:00"
+      "updatedAt": "2026-11-19T16:04:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/SpaceKoala/status/2123420599813017812"
         }
       ],
-      "updatedAt": "2026-11-19T15:42:00+01:00"
+      "updatedAt": "2026-11-19T16:04:00+01:00"
     }
   }
 }
