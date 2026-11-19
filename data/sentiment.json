@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T19:43:00+01:00",
+  "updatedAt": "2026-11-19T20:13:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
       "score": -10,
       "postsCount": 15,
-      "reason": "SpaceX dient als Warnbeispiel: großer Börsengang, erst Sprung, dann tiefer Fall. Dazu ein schwacher Gesamtmarkt mit Dow rund 1.000 Punkte im Minus.",
+      "reason": "Weiter Vergleiche mit Anthropic: Manche betonen, SpaceX liege 160 Tage nach dem Börsengang noch im Minus. Andere vergleichen nur Größe und ersten Handelstag.",
       "sources": [
         {
-          "title": "@LanceRoberts auf X (19.11., 19:37)",
-          "url": "https://x.com/LanceRoberts/status/2123485749471334850"
+          "title": "@OtsukimiOtsu auf X (19.11., 20:07)",
+          "url": "https://x.com/OtsukimiOtsu/status/2123493380743221710"
         },
         {
-          "title": "@RonnyHworth auf X (19.11., 19:16)",
-          "url": "https://x.com/RonnyHworth/status/2123480455211065745"
+          "title": "@fourweekmba auf X (19.11., 19:51)",
+          "url": "https://x.com/fourweekmba/status/2123489322896621676"
         },
         {
-          "title": "@ZoroTrading auf X (19.11., 19:36)",
-          "url": "https://x.com/ZoroTrading/status/2123485625978671134"
+          "title": "@oben_wsn auf X (19.11., 19:59)",
+          "url": "https://x.com/oben_wsn/status/2123491475845755051"
         }
       ],
-      "updatedAt": "2026-11-19T19:43:00+01:00"
+      "updatedAt": "2026-11-19T20:13:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
@@ -43,28 +43,28 @@
           "url": "https://x.com/grok/status/2123482910342693109"
         }
       ],
-      "updatedAt": "2026-11-19T19:43:00+01:00"
+      "updatedAt": "2026-11-19T20:13:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
       "score": -20,
-      "postsCount": 20,
-      "reason": "Sorgen um Neutron: Erstflug erst irgendwann 2027. Einige verweisen auf den großen Auftragsbestand von 3,57 Mrd. $, viele Beiträge sind Spam.",
+      "postsCount": 15,
+      "reason": "RKLB diese Woche rund 15 % im Minus. Fans verteidigen die Firma und die Neutron-Fortschritte, Skeptiker glauben nicht an neue Hochs.",
       "sources": [
         {
-          "title": "@HemingwayBurger auf X (19.11., 17:16)",
-          "url": "https://x.com/HemingwayBurger/status/2123450340192158066"
+          "title": "@magnitudefields auf X (19.11., 19:42)",
+          "url": "https://x.com/magnitudefields/status/2123487030319415751"
         },
         {
-          "title": "@RCapitalX auf X (19.11., 16:52)",
-          "url": "https://x.com/RCapitalX/status/2123444406145675747"
+          "title": "@Neils_Share auf X (19.11., 20:09)",
+          "url": "https://x.com/Neils_Share/status/2123493931149365509"
         },
         {
-          "title": "@pledisme auf X (19.11., 17:13)",
-          "url": "https://x.com/pledisme/status/2123449529374507360"
+          "title": "@ghostrider1159 auf X (19.11., 20:00)",
+          "url": "https://x.com/ghostrider1159/status/2123491642355397019"
         }
       ],
-      "updatedAt": "2026-11-19T19:43:00+01:00"
+      "updatedAt": "2026-11-19T20:13:00+01:00"
     }
   }
 }
