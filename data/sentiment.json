@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T14:43:00+01:00",
+  "updatedAt": "2026-11-19T15:09:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
-      "postsCount": 20,
-      "reason": "Thema heute: Anthropic geht an die Börse und mietet viel SpaceX-Rechenleistung, Microsoft will das auch. Viele vergleichen beide Börsengänge.",
+      "postsCount": 15,
+      "reason": "SpaceX steigt mit Chipwerten. Thrive Capital soll seinen Anteil mehr als verdoppelt haben; Microsoft, Google und OpenAI wollen SpaceX-Rechenleistung.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (19.11., 14:28)",
-          "url": "https://x.com/spcxGOD/status/2123407950752403746"
+          "title": "@Timboo auf X (19.11., 14:40)",
+          "url": "https://x.com/Timboo/status/2123411036648735195"
         },
         {
-          "title": "@Ly10255315 auf X (19.11., 14:37)",
-          "url": "https://x.com/Ly10255315/status/2123410409419927672"
+          "title": "@Dugon777 auf X (19.11., 15:04)",
+          "url": "https://x.com/Dugon777/status/2123417200908235039"
         },
         {
-          "title": "@KrugerrandFX auf X (19.11., 14:13)",
-          "url": "https://x.com/KrugerrandFX/status/2123404294367936591"
+          "title": "@HindsMarkets auf X (19.11., 15:00)",
+          "url": "https://x.com/HindsMarkets/status/2123416019205038583"
         }
       ],
-      "updatedAt": "2026-11-19T14:43:00+01:00"
+      "updatedAt": "2026-11-19T15:09:00+01:00"
     },
     "TSLA": {
-      "mood": "gut",
-      "score": 30,
-      "postsCount": 20,
-      "reason": "Tesla vorbörslich rund 2 % im Plus. Gesprochen wird über ein Model Y ohne Lenkrad und eine geplante Polysilizium-Raffinerie in Texas für 3,1 Mrd. $.",
+      "mood": "gemischt",
+      "score": 10,
+      "postsCount": 15,
+      "reason": "Tesla hält sich besser als der Nasdaq, rutschte zur Eröffnung aber kurz unter die Spanne. Gesprochen wird über FSD in Israel und Musks Tesla-SpaceX-Pläne.",
       "sources": [
         {
-          "title": "@DRJBori63 auf X (19.11., 14:07)",
-          "url": "https://x.com/DRJBori63/status/2123402789942403134"
+          "title": "@CLesch34000 auf X (19.11., 14:59)",
+          "url": "https://x.com/CLesch34000/status/2123415922790797718"
         },
         {
-          "title": "@msl0727 auf X (19.11., 14:14)",
-          "url": "https://x.com/msl0727/status/2123404426681450543"
+          "title": "@dexlytrade auf X (19.11., 15:00)",
+          "url": "https://x.com/dexlytrade/status/2123416010443112880"
         },
         {
-          "title": "@yunusdahir234 auf X (19.11., 14:04)",
-          "url": "https://x.com/yunusdahir234/status/2123401990860399077"
+          "title": "@Predictivemoney auf X (19.11., 15:03)",
+          "url": "https://x.com/Predictivemoney/status/2123416884825460961"
         }
       ],
-      "updatedAt": "2026-11-19T14:43:00+01:00"
+      "updatedAt": "2026-11-19T15:09:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 5,
-      "postsCount": 15,
-      "reason": "Fans loben Rekord-Auftragsbestand und Iridium-Übernahmepläne. Andere zeigen, dass RKLB weit unter dem Jahreshoch liegt; Neutron muss erst fliegen.",
+      "score": 10,
+      "postsCount": 8,
+      "reason": "Raumfahrtwerte bekommen Rückenwind durch einen politischen Vorschlag. Andere erinnern daran, dass RKLB rund 65 % unter dem Rekordhoch liegt.",
       "sources": [
         {
-          "title": "@RCapitalX auf X (19.11., 14:00)",
-          "url": "https://x.com/RCapitalX/status/2123400968188633220"
+          "title": "@ThinAirTrading auf X (19.11., 15:01)",
+          "url": "https://x.com/ThinAirTrading/status/2123416368225911273"
         },
         {
-          "title": "@teamjayday auf X (19.11., 14:00)",
-          "url": "https://x.com/teamjayday/status/2123401105631514750"
+          "title": "@armaanzinvest auf X (19.11., 15:00)",
+          "url": "https://x.com/armaanzinvest/status/2123416182472778039"
         },
         {
-          "title": "@nikogeorge auf X (19.11., 14:23)",
-          "url": "https://x.com/nikogeorge/status/2123406747511697706"
+          "title": "@spacepat_o auf X (19.11., 14:49)",
+          "url": "https://x.com/spacepat_o/status/2123413385496633771"
         }
       ],
-      "updatedAt": "2026-11-19T14:43:00+01:00"
+      "updatedAt": "2026-11-19T15:09:00+01:00"
     }
   }
 }
