@@ -201,10 +201,12 @@
 .replay-ko { color: var(--down); font-size: 15px; font-weight: 700; }
 .replay-speeds {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 6px;
+  min-width: 0;
 }
-.replay-speeds button { flex: 0 0 auto; font-variant-numeric: tabular-nums; }
+.replay-speeds button { flex: 0 1 auto; min-width: 0; font-variant-numeric: tabular-nums; padding: 0 10px; }
+.replay-speeds button:disabled { opacity: 0.35; }
 .replay-actions {
   display: grid;
   grid-template-columns: 1.15fr 1fr 1.15fr;

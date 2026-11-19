@@ -27,6 +27,7 @@ import {
   knockBarrier,
   liveSnapshot,
   loadHistory,
+  nextRoundEuros,
   openTrade,
   pauseRound,
   pickRound,
@@ -43,6 +44,7 @@ import {
   sideLabel,
   skipToOpen,
   stepCandle,
+  undoCandle,
   unpackBar
 } from "./replay.js";
 
@@ -124,7 +126,7 @@ function setupHtml(history, note) {
         <button type="button" class="replay-long" data-action="replay-begin" data-side="long">${esc(UI.long)}</button>
         <button type="button" class="replay-short" data-action="replay-begin" data-side="short">${esc(UI.short)}</button>
       </div>
-      <p class="replay-hint">Start 100 €. Der Einsatz plus der Gewinn geht in den nächsten Handel. Bei null beginnt es wieder bei 100 €.</p>
+      <p class="replay-hint">Start 100 €. Unter 25 € beginnt die nächste Runde wieder bei 100 €.</p>
     </div>`;
 }
 
@@ -140,6 +142,7 @@ function playHtml(round, mask, history) {
     <button type="button" data-action="replay-lev" data-lev="${value}" aria-pressed="${value === leverage ? "true" : "false"}">${value}</button>`).join("");
   const intervals = [1, 5, 10].map((value) => `
     <button type="button" data-action="replay-interval" data-min="${value}" aria-pressed="${(round.intervalAsk || round.interval) === value ? "true" : "false"}">${value} Min</button>`).join("");
+  const undo = `<button type="button" data-action="replay-undo" ${round.undo?.length ? "" : "disabled"}>${esc(UI.undo)}</button>`;
   const pos = open
     ? `<p class="replay-pos">${esc(sideLabel(open.side))} · ${esc(formatEuroCents(open.stakeCents))} · ${esc(UI.leverage)} ${esc(open.leverage)} · ${esc(UI.reasonKo)} ${esc(formatUsd(snap.barrier))}</p>`
     : "";
@@ -163,7 +166,7 @@ function playHtml(round, mask, history) {
         <input id="replay-zoom" type="range" min="8" max="${zoomMax}" step="1" value="${zoomValue}" aria-label="Zoom">
         <span id="replay-zoom-n">${esc(zoomLabel)}</span>
       </label>
-      <div class="replay-speeds" role="group" aria-label="Kerzengrösse">${intervals}</div>
+      <div class="replay-speeds" role="group" aria-label="Kerzengrösse">${intervals}${undo}</div>
       ${round.intervalNote ? `<p class="replay-note">${esc(round.intervalNote)}</p>` : ""}
       <div class="replay-hud">
         <p><span>${esc(UI.account)}</span><strong id="replay-equity">${esc(formatEuroCents(snap.equityCents))}</strong></p>
@@ -652,7 +655,7 @@ export function initTraining() {
     }
     if (action === "replay-again") {
       const settings = { ...(round?.settings || history.settings || readFields()) };
-      settings.balance = round && round.cashCents > 0 ? round.cashCents / 100 : 100;
+      settings.balance = nextRoundEuros(round ? round.cashCents / 100 : null);
       begin(settings);
       return;
     }
@@ -671,6 +674,12 @@ export function initTraining() {
       return;
     }
     if (!round || screen !== "play") return;
+    if (action === "replay-undo") {
+      if (!round.undo?.length) return;
+      round = undoCandle(round);
+      paint(true);
+      return;
+    }
     if (action === "replay-step") {
       const prev = round.phase;
       round = stepCandle(pauseRound(round));

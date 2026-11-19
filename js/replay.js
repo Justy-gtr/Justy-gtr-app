@@ -13,6 +13,8 @@ export const PREVIEW_BARS = 36;
 export const CANDLE_MIN_BODY = 6;
 export const CANDLE_GAP = 2;
 export const START_EUROS = 100;
+export const ROUND_KEEP_EUROS = 25;
+export const UNDO_LIMIT = 500;
 export const SPEEDS = [0.1, 0.2, 0.5, 1, 2];
 export const LEVERAGE_PRESETS = [10, 20, 50, 80, 100];
 export const TAKE_PRESETS = [25, 50, 100];
@@ -61,6 +63,7 @@ export const UI = {
   short: "Short",
   out: "Raus",
   weiter: "Nächste Kerze",
+  undo: "↶ Zurück",
   play: "Play",
   oneMin: "1 Minute liegt im Archiv nicht vor. Gespeichert sind 5-Minuten-Kerzen, 10 Minuten werden daraus gebündelt.",
   allOut: "Komplett raus",
@@ -387,6 +390,60 @@ export function eurosToCents(value) {
   return Math.round(Number(value) * 100);
 }
 
+/** Next day keeps the account from 25 € up. Below that it starts again at 100 €. */
+export function nextRoundEuros(euros) {
+  const cents = Math.round(Number(euros) * 100);
+  if (!Number.isFinite(cents) || cents < ROUND_KEEP_EUROS * 100) return START_EUROS;
+  return cents / 100;
+}
+
+function snapshotRound(state) {
+  return {
+    phase: state.phase,
+    paused: true,
+    speed: state.speed,
+    acc: 0,
+    marketMin: state.marketMin,
+    visible: state.visible,
+    bars: state.bars,
+    raw: state.raw,
+    oneBars: state.oneBars,
+    interval: state.interval,
+    intervalAsk: state.intervalAsk,
+    intervalNote: state.intervalNote,
+    cashCents: state.cashCents,
+    startCents: state.startCents,
+    revived: state.revived,
+    position: state.position ? { ...state.position } : null,
+    trades: (state.trades || []).slice(),
+    settings: { ...(state.settings || {}) }
+  };
+}
+
+function rememberUndo(state) {
+  const undo = [...(state.undo || []), snapshotRound(state)].slice(-UNDO_LIMIT);
+  return { ...state, undo };
+}
+
+/** One candle back, including anything traded on that candle. Stake and leverage stay. */
+export function undoCandle(state) {
+  const stack = state?.undo;
+  if (!stack?.length) return state;
+  const snap = stack[stack.length - 1];
+  const settings = state?.settings || {};
+  return {
+    ...snap,
+    settings: {
+      ...snap.settings,
+      stake: settings.stake ?? snap.settings?.stake,
+      stakeAllIn: Boolean(settings.stakeAllIn),
+      leverage: settings.leverage ?? snap.settings?.leverage
+    },
+    undo: stack.slice(0, -1),
+    paused: true
+  };
+}
+
 export function knockBarrier(entry, leverage, side) {
   const gap = entry / leverage;
   return side === "short" ? entry + gap : entry - gap;
@@ -552,7 +609,7 @@ export function tick(state, dtSec) {
       next = finish({ ...next, paused: true, acc: 0 });
       break;
     }
-    next = { ...catchUp(next, bar[0] + barSpan(bar, next.interval)), paused: false, acc };
+    next = { ...catchUp(rememberUndo(next), bar[0] + barSpan(bar, next.interval)), paused: false, acc };
     steps += 1;
   }
   if (next.phase !== "play") return next;
@@ -580,7 +637,8 @@ export function applyOneMinute(state, oneBars) {
     return {
       ...state,
       intervalAsk: 1,
-      intervalNote: "Für diesen Tag liegen keine 1-Minuten-Kerzen vor."
+      intervalNote: "Für diesen Tag liegen keine 1-Minuten-Kerzen vor.",
+      undo: []
     };
   }
   const five = (state.raw || state.bars || []).map((bar) => bar.slice(0, 6));
@@ -600,7 +658,8 @@ export function applyOneMinute(state, oneBars) {
     intervalAsk: 1,
     intervalNote: "",
     visible,
-    marketMin: Math.max(state.marketMin, last[0] + barSpan(last, 1))
+    marketMin: Math.max(state.marketMin, last[0] + barSpan(last, 1)),
+    undo: []
   };
 }
 
@@ -608,11 +667,11 @@ export function withInterval(state, minutes) {
   if (!state) return state;
   if (minutes === 1) {
     if (state.oneBars?.length) return applyOneMinute(state, state.oneBars);
-    return { ...state, intervalAsk: 1, intervalNote: "Für diesen Tag liegen keine 1-Minuten-Kerzen vor." };
+    return { ...state, intervalAsk: 1, intervalNote: "Für diesen Tag liegen keine 1-Minuten-Kerzen vor.", undo: [] };
   }
   const raw = state.raw || state.bars;
   const bars = aggregateBars(raw, minutes);
-  if (!bars?.length) return { ...state, intervalNote: UI.oneMin };
+  if (!bars?.length) return { ...state, intervalNote: UI.oneMin, undo: [] };
   let visible = 0;
   while (visible < bars.length && bars[visible][0] + minutes <= state.marketMin + 1e-9) visible += 1;
   if (visible < 1) visible = Math.min(PREVIEW_BARS, bars.length);
@@ -625,7 +684,8 @@ export function withInterval(state, minutes) {
     visible,
     marketMin: Math.max(state.marketMin, last[0] + minutes),
     intervalNote: "",
-    intervalAsk: minutes
+    intervalAsk: minutes,
+    undo: []
   };
 }
 
@@ -633,12 +693,12 @@ export function stepCandle(state) {
   if (!state || state.phase !== "play") return state;
   const nextBar = state.bars[state.visible];
   if (!nextBar) return finish({ ...state, paused: true });
-  return { ...catchUp(state, nextBar[0] + barSpan(nextBar, state.interval)), paused: true };
+  return { ...catchUp(rememberUndo(state), nextBar[0] + barSpan(nextBar, state.interval)), paused: true };
 }
 
 export function skipToOpen(state) {
   if (!state || state.phase !== "play" || state.marketMin >= US_OPEN_MIN) return state;
-  return { ...catchUp(state, US_OPEN_MIN), paused: true };
+  return { ...catchUp(rememberUndo(state), US_OPEN_MIN), paused: true };
 }
 
 export function setSpeed(state, speed) {

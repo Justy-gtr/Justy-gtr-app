@@ -47,6 +47,9 @@ import {
   settingsFromFields,
   skipToOpen,
   stepCandle,
+  nextRoundEuros,
+  undoCandle,
+  UNDO_LIMIT,
   theoreticalCents,
   tick,
   unpackBar
@@ -460,4 +463,80 @@ test("Einsatz über dem Konto geht nicht auf", () => {
   assert.equal(denied.ok, false);
   assert.equal(denied.reason, "stake");
   assert.equal(unpackBar(round.bars[0]).v, 0);
+});
+
+test("Zurück nimmt die letzte Kerze und den Handel darauf zurück", () => {
+  const settings = { balance: 100, stake: 50, leverage: 10, spread: 0.005 };
+  const fresh = previewRound(createRound(flatDay(100), settings));
+  assert.equal(fresh.undo, undefined);
+  assert.equal(undoCandle(fresh).cashCents, fresh.cashCents);
+  assert.equal(undoCandle(fresh).visible, fresh.visible);
+  const startVisible = fresh.visible;
+  const startCash = fresh.cashCents;
+  let round = stepCandle(fresh);
+  assert.equal(round.visible, startVisible + 1);
+  assert.equal(round.undo.length, 1);
+  round = openTrade(round, "long").state;
+  assert.ok(round.cashCents < startCash);
+  round.settings.stake = 20;
+  round.settings.leverage = 80;
+  const back = undoCandle(round);
+  assert.equal(back.visible, startVisible);
+  assert.equal(back.cashCents, startCash);
+  assert.equal(back.position, null);
+  assert.equal(back.trades.length, 0);
+  assert.equal(back.settings.stake, 20);
+  assert.equal(back.settings.leverage, 80);
+  assert.equal(back.undo.length, 0);
+
+  let traded = stepCandle(createRound(flatDay(100), settings));
+  traded = openTrade(traded, "short").state;
+  const openCash = traded.cashCents;
+  const openVisible = traded.visible;
+  traded = stepCandle(traded);
+  traded = closeManual(traded);
+  const restored = undoCandle(traded);
+  assert.equal(restored.visible, openVisible);
+  assert.equal(restored.cashCents, openCash);
+  assert.equal(restored.position.side, "short");
+  assert.equal(restored.trades.length, 0);
+
+  let knocked = stepCandle(createRound(flatDay(100), { balance: 100, stake: 50, leverage: 10, spread: 0 }));
+  knocked = openTrade(knocked, "long").state;
+  const beforeKnock = knocked.cashCents;
+  const book = knocked.bars.slice();
+  const bar = book[knocked.visible];
+  book[knocked.visible] = [bar[0], 100, 100, 1, 1, 10];
+  knocked = stepCandle({ ...knocked, bars: book });
+  assert.equal(knocked.position, null);
+  const revived = undoCandle(knocked);
+  assert.equal(revived.position.side, "long");
+  assert.equal(revived.cashCents, beforeKnock);
+  assert.equal(revived.trades.length, 0);
+
+  const switched = withInterval(stepCandle(createRound(flatDay(100), settings)), 10);
+  assert.deepEqual(switched.undo, []);
+  const ui = fs.readFileSync(new URL("../js/replay-ui.js", import.meta.url), "utf8");
+  assert.match(ui, /data-action="replay-undo"/);
+  assert.match(ui, /\$\{intervals\}\$\{undo\}/);
+  assert.match(ui, /round\.undo\?\.length \? "" : "disabled"/);
+});
+
+test("Der Zurück-Stapel endet bei 500", () => {
+  const bars = [];
+  for (let minute = SESSION_FROM; minute < SESSION_FROM + 620; minute += 1) {
+    bars.push([minute, 10, 10, 10, 10, 1]);
+  }
+  let round = createRound({ b: bars }, { balance: 100, stake: 10, leverage: 10, spread: 0 });
+  for (let i = 0; i < 520; i += 1) round = stepCandle(round);
+  assert.equal(round.undo.length, UNDO_LIMIT);
+  assert.equal(round.visible, 520);
+  assert.equal(undoCandle(round).visible, 519);
+});
+
+test("Neue Runde behält das Konto ab 25 €", () => {
+  assert.equal(nextRoundEuros(24.99), 100);
+  assert.equal(nextRoundEuros(25), 25);
+  assert.equal(nextRoundEuros(300), 300);
+  assert.equal(nextRoundEuros(0), 100);
 });
