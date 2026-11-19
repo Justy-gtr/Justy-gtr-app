@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T21:11:00+01:00",
+  "updatedAt": "2026-11-19T21:35:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -22,49 +22,49 @@
           "url": "https://x.com/thechef_stocks/status/2123501880076816775"
         }
       ],
-      "updatedAt": "2026-11-19T21:11:00+01:00"
+      "updatedAt": "2026-11-19T21:35:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": -5,
       "postsCount": 15,
-      "reason": "Streit über das Tauschverhältnis bei einer möglichen Fusion mit SpaceX (aktuell etwa 2,75 SpaceX je Tesla). FSD-Fans bleiben zuversichtlich, Trader sind genervt.",
+      "reason": "Cybercab fährt jetzt auch in Dallas öffentlich, doch die Aktie liegt bei rund 377 $ knapp 2 % im Minus. Viele sehen den ganzen Markt im Abwärtstrend.",
       "sources": [
         {
-          "title": "@RoboBolz auf X (19.11., 20:48)",
-          "url": "https://x.com/RoboBolz/status/2123503679793668384"
+          "title": "@SimonsWealth auf X (19.11., 21:28)",
+          "url": "https://x.com/SimonsWealth/status/2123513662019113360"
         },
         {
-          "title": "@strengthPlan auf X (19.11., 20:44)",
-          "url": "https://x.com/strengthPlan/status/2123502664344383704"
+          "title": "@Julianthelemur1 auf X (19.11., 21:31)",
+          "url": "https://x.com/Julianthelemur1/status/2123514648657879471"
         },
         {
-          "title": "@peymethemoney auf X (19.11., 21:03)",
-          "url": "https://x.com/peymethemoney/status/2123507442856394993"
+          "title": "@BeFullyInformed auf X (19.11., 21:30)",
+          "url": "https://x.com/BeFullyInformed/status/2123514300685824422"
         }
       ],
-      "updatedAt": "2026-11-19T21:11:00+01:00"
+      "updatedAt": "2026-11-19T21:35:00+01:00"
     },
     "RKLB": {
-      "mood": "schlecht",
-      "score": -15,
+      "mood": "gemischt",
+      "score": -5,
       "postsCount": 15,
-      "reason": "Neuer Testlauf des Neutron-Triebwerks Archimedes (über 650 Tests) freut Fans. Chartleser sehen RKLB aber unter einer wichtigen Marke.",
+      "reason": "Mehrere Kleinanleger finden RKLB um 50 $ günstig und stocken auf. Chartleser warnen dagegen vor einem gebrochenen Muster.",
       "sources": [
         {
-          "title": "@thetechlantis auf X (19.11., 20:54)",
-          "url": "https://x.com/thetechlantis/status/2123505163356819797"
+          "title": "@TSLASince2019 auf X (19.11., 21:25)",
+          "url": "https://x.com/TSLASince2019/status/2123513081963893109"
+        },
+        {
+          "title": "@ManasHariyani auf X (19.11., 21:11)",
+          "url": "https://x.com/ManasHariyani/status/2123509395640173030"
         },
         {
           "title": "@rethink15411429 auf X (19.11., 21:08)",
-          "url": "https://x.com/rethink15411429/status/2123508627910619628"
-        },
-        {
-          "title": "@JoshSharp auf X (19.11., 21:00)",
-          "url": "https://x.com/JoshSharp/status/2123506801215738018"
+          "url": "https://x.com/rethink15411429/status/2123508732143468949"
         }
       ],
-      "updatedAt": "2026-11-19T21:11:00+01:00"
+      "updatedAt": "2026-11-19T21:35:00+01:00"
     }
   }
 }
