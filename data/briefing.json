@@ -1,144 +1,95 @@
 {
   "example": false,
-  "date": "2026-11-17",
+  "date": "2026-11-19",
   "title": "Morgen-Briefing",
   "greeting": "Guten Morgen, Justy.",
-  "summary": "Dienstag, der Tag der Nvidia-Zahlen. Wall Street hat am Montag kräftig verloren: Nasdaq −2,5 %, Chipindex SOX −5,3 %, Nvidia −4,1 % auf 156,14 $. Unsere vier schlossen alle tiefer – SPCX −1,3 %, TSLA −2,7 %, RKLB −6,8 %, MRVL −7,3 % – nachbörslich blieb es ruhig. Asien folgt heute nach unten, belastet von der neuen US-Exportregel für KI-Chips: Nikkei −1,1 %, Kospi −2,4 %, SoftBank und Advantest je rund −4 %. Die US-Futures haben sich gefangen, der Nasdaq-100 lag um 06:28 bei +0,3 %, der Dax-Future zeigt dagegen rund −0,6 %. Über Nacht kam von Musk die Robotaxi-Ansage: Besitzer könnten ihr Auto vielleicht schon im Dezember testweise ins Netz geben – ich sehe das bei 35 %. Musk fliegt mit Trump zum APEC-Gipfel nach Shenzhen. Heute Abend um 22:20 kommt Nvidia: erwartet werden rund 109 Mrd. $ Umsatz, die Optionen preisen etwa 8 % Ausschlag in beide Richtungen ein.",
+  "summary": "Donnerstag, der Tag des Anthropic-Börsengangs. Anthropic hat den Preis auf 83 $ gesetzt, über der Spanne von 70–78 $, und sammelt mit 81,3 Mrd. $ mehr ein als SpaceX im Juni; Handel ab heute an der Nasdaq unter ANT. Das hebt die Futures: Nasdaq-100 gegen 07:40 +1,5 %, S&P 500 +0,8 %, Dax-Future +0,3 % bei 25.883 nach −1,2 % am Mittwoch. Asien schwächer: Hang Seng −2,2 %, Alibaba −5,2 % wegen neuer US-Chipregeln. Die Fed bleibt hart: Kashkari sagt, die Märkte erwarten mehr Erhöhungen als die Fed, Williams lehnt 50 Basispunkte aber ab. Mi-Schluss: SPCX 143,50 $ (+1,3 %), TSLA 383,72 $ (+0,9 %), RKLB 53,07 $ (−3,6 %), MRVL 145,54 $ (−2,2 %).",
   "bullets": [
-    "Mo-Schluss New York: SPCX 137,36 $ (−1,3 %), TSLA 379,74 $ (−2,7 %), RKLB 57,37 $ (−6,8 %, vierter Verlusttag), MRVL 145,36 $ (−7,3 %). Nachbörslich keine Bewegung über 1 %.",
-    "Vor dem Start: Nasdaq-100-Futures +0,3 %, S&P 500 unverändert, Dow −0,3 % (06:28). Dax-Future −0,6 % bei 26.560. Asien: Nikkei −1,1 %, Kospi −2,4 %, Hang Seng −0,2 %; Shanghai und Shenzhen auf dem tiefsten Stand seit über einem Jahr.",
-    "Nvidia heute 22:20, Telefonkonferenz 23:00 – erstmals mit Interimschefin Kress. Konsens rund 109,1 Mrd. $ Umsatz und 2,47 $ Gewinn je Aktie. Optionen: etwa ±8,4 %, also grob 143 bis 169 $; im Schnitt der letzten acht Berichte waren es nur 4 %. Wichtig für SPCX, weil SpaceX seine KI-Rechenzentren auf Nvidia-Chips baut.",
-    "Tesla: Musk stellt Robotaxi-Tests mit Kundenautos für Dezember in Aussicht (35 %, bisher hieß es etwa 2. Quartal 2027). Am Morgen teilte er Beiträge zur geplanten Cybercab-Halle in Grünheide (rund 3 Mrd. €).",
-    "China: APEC-CEO-Gipfel in Shenzhen heute und morgen, Musk reist mit Trump und ist beim DealBook-Gipfel am Mittwoch nur „digital“ dabei. Gipfel der Staatschefs Mi und Do, Do Dreiertreffen Trump–Xi–Putin, ohne Musk.",
-    "SpaceX: USSF-317 auf Falcon 9 Do 04:00, 65 % – das Wetter in Vandenberg ist das Risiko. Musk: Das abgeschabte Hitzeschutzmaterial von Ship 42 soll künftig durch Edelstahl ersetzt werden.",
-    "Heute außerdem: 11:00 ZEW, 14:30 US-Einzelhandel (Prognose +0,2 % nach +0,8 %), 15:15 Industrieproduktion, 20:00 FAA-Anhörung Starbase, 20:25 Fed-Präsident Williams. Anthropic: Orderbuch schließt heute, Preis Mi, Handel ab Do.",
-    "Tagesfrage: Schließt RKLB heute über 57,37 $? Karl sagt knapp nein – Auflösung 22:15."
+    "Anthropic: 980 Mio. Aktien zu 83 $, Abschluss Fr 20.11.; laut XTB fast siebenfach überzeichnet, Bewertung rund 1,5 Bio. $. Erster Kurs heute nach US-Start – Stimmungstest für alle KI-Werte, auch SPCX.",
+    "Vor dem Start: Nasdaq-100-Future +1,5 %, S&P 500 +0,8 %, Dax-Future 25.883 (+0,3 %). Topix unverändert, Hang Seng −2,2 %, Shanghai −1,0 % (finanzen.net, 07:40).",
+    "Fed: Kashkari – Zinsen bremsen auch Rechenzentrums-Investitionen, Märkte erwarten mehr Erhöhungen als die Fed. Williams gegen „dramatische“ Schritte. FedWatch: 50 Basispunkte im Dezember nun 10 % statt 3 %.",
+    "Nachbörslich Mi: Palo Alto +9,7 % nach starken Zahlen, CrowdStrike +4 %, Red Robin −14 %. Humana nach −13 % weiter unter Druck (CMS-Regeln).",
+    "China: Heute Einzeltreffen Trump–Xi in Shenzhen. PDD vor US-Start, Alibaba nach Hongkong-Schluss mit Zahlen; Walmart um 13:00 Berlin (Konsens 0,64 $ je Aktie).",
+    "SpaceX: CRS-35-Abdocken weiter Fr 18:05 Berlin, 70 % (Wetter). Rocket Lab: keine neue Meldung, ESCAPADE auf Mars-Kurs.",
+    "Tagesfrage: Schließt RKLB heute über 53,07 $? Karl sagt knapp nein – Auflösung 22:15."
   ],
   "audioUrl": null,
   "sources": [
     {
-      "title": "Yahoo Finance: SPCX (Schluss 16.11., Nachbörse)",
+      "title": "Anthropic: Preis des Börsengangs (18.11.)",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+    },
+    {
+      "title": "CNBC: Anthropic sammelt über 81 Mrd. $ ein (18.11.)",
+      "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
+    },
+    {
+      "title": "XTB: Morning Wrap (19.11., 07:05)",
+      "url": "https://www.xtb.com/int/market-analysis/news-and-research/morning-wrap-time-for-the-largest-stock-market-debut-in-history-19-11-2026"
+    },
+    {
+      "title": "finanzen.net/Dow Jones: Morning Briefing Deutschland/Europa (19.11., 07:40)",
+      "url": "https://www.finanzen.net/nachricht/aktien/morning-briefing-deutschland-europa-16075463"
+    },
+    {
+      "title": "tagesschau.de: Anleger vor Anthropic-Börsengang optimistisch (19.11., 07:33)",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-100.html"
+    },
+    {
+      "title": "onvista/dpa-AFX: Dax etwas höher erwartet (19.11., 06:20)",
+      "url": "https://www.onvista.de/news/2026/11-19-dax-flash-dax-etwas-hoeher-erwartet-nasdaq-zieht-vor-anthropic-ipo-an-0-10-26578105"
+    },
+    {
+      "title": "Investing.com: US-Futures steigen vor Anthropic-Debüt (19.11.)",
+      "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-climb-ahead-of-anthropics-15-trillion-mega-ipo-5037518"
+    },
+    {
+      "title": "FXStreet: Kashkari – Märkte erwarten mehr Zinserhöhungen als die Fed (18.11.)",
+      "url": "https://www.fxstreet.com/news/feds-kashkari-markets-believe-central-bank-will-have-to-hike-more-than-officials-now-expect-202611182306"
+    },
+    {
+      "title": "Axios: Williams gegen „dramatische“ Zinsschritte (18.11.)",
+      "url": "https://www.axios.com/2026/11/18/interest-rates-new-york-fed"
+    },
+    {
+      "title": "Investing.com: Nachbörsliche Bewegungen PANW, CRWD, P, RRGB (18.11.)",
+      "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-panw-crwd-p-rrgb-432SI-5037183"
+    },
+    {
+      "title": "EBC: Humana −13 % wegen Medicare-Prüfungen",
+      "url": "https://www.ebc.com/forex/humana-stock-drops-medicare-audits-margin-risks"
+    },
+    {
+      "title": "SBH News: Alibaba −5,2 % auf 80,8 HKD (19.11.)",
+      "url": "https://www.sbhnews.com/news/alibaba-plunge-us-chip-curbs-9943bfb5-2026-11-19-PM-12-15"
+    },
+    {
+      "title": "Walmart: Termin Zahlen 3. Quartal FY2027",
+      "url": "https://corporate.walmart.com/news/events/fy2027-q3-earnings-release"
+    },
+    {
+      "title": "Newsquawk: US-Zahlen am 19.11. (WMT, PDD, BABA)",
+      "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-earnings-estimates---19th-november-2026-wmt-pdd-baba"
+    },
+    {
+      "title": "SpaceX: CRS-35",
+      "url": "https://www.spacex.com/launches/crs35/"
+    },
+    {
+      "title": "Yahoo Finance: SPCX",
       "url": "https://finance.yahoo.com/quote/SPCX/"
     },
     {
-      "title": "Yahoo Finance: TSLA (Schluss 16.11., Nachbörse)",
+      "title": "Yahoo Finance: TSLA",
       "url": "https://finance.yahoo.com/quote/TSLA/"
     },
     {
-      "title": "Yahoo Finance: RKLB (Schluss 16.11., Nachbörse)",
+      "title": "Yahoo Finance: RKLB",
       "url": "https://finance.yahoo.com/quote/RKLB/"
     },
     {
-      "title": "Yahoo Finance: MRVL (Schluss 16.11., Nachbörse)",
+      "title": "Yahoo Finance: MRVL",
       "url": "https://finance.yahoo.com/quote/MRVL/"
-    },
-    {
-      "title": "Investing.com: Futures ruhig vor Nvidia, Schluss Mo (Nasdaq −2,5 %, SOX −5,3 %, NVDA 156,14 $)",
-      "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-muted-as-nvidia-earnings-loom-amid-ai-jitters-5031353"
-    },
-    {
-      "title": "Yahoo Finance: Nasdaq-100-Futures NQ=F (17.11., 06:28)",
-      "url": "https://finance.yahoo.com/quote/NQ%3DF"
-    },
-    {
-      "title": "Yahoo Finance: S&P-500-Futures ES=F (17.11., 06:28)",
-      "url": "https://finance.yahoo.com/quote/ES%3DF"
-    },
-    {
-      "title": "Yahoo Finance: Dow-Futures YM=F (17.11., 06:28)",
-      "url": "https://finance.yahoo.com/quote/YM%3DF"
-    },
-    {
-      "title": "MarketScreener (Dow Jones): Dax-Future im Frühhandel leichter (17.11., 06:07)",
-      "url": "https://de.marketscreener.com/boerse-nachrichten/eurex-dax-futures-im-fruehhandel-leichter-ce785edfde89f125"
-    },
-    {
-      "title": "Yahoo Finance: Nikkei 225 (17.11., 06:23)",
-      "url": "https://finance.yahoo.com/quote/%5EN225"
-    },
-    {
-      "title": "Yahoo Finance: Kospi (17.11., 06:18)",
-      "url": "https://finance.yahoo.com/quote/%5EKS11"
-    },
-    {
-      "title": "Yahoo Finance: Hang Seng (17.11., 06:23)",
-      "url": "https://finance.yahoo.com/quote/%5EHSI"
-    },
-    {
-      "title": "Handelsblatt: Asiens Börsen geben nach – US-Chip-Sanktionen und Nvidia belasten (17.11.)",
-      "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/nikkei-topix-csi-300-asiens-boersen-geben-nach-us-chip-sanktionen-und-nvidia-belasten/100270404.html"
-    },
-    {
-      "title": "finanzen.ch (RTTNews): Asiens Börsen folgen der Wall Street nach unten (17.11.)",
-      "url": "https://www.finanzen.ch/nachrichten/aktien/asian-markets-track-wall-street-lower-1036771537"
-    },
-    {
-      "title": "FXStreet: Asiens Aktien fallen, China-Börsen auf Jahrestief (17.11.)",
-      "url": "https://www.fxstreet.com/news/asian-stocks-slide-as-us-tech-curbs-weigh-on-sentiment-nvidia-earnings-awaited-202611170501"
-    },
-    {
-      "title": "OptionWiz: NVDA – erwartete Bewegung ±8,4 % (Stand 17.11.)",
-      "url": "https://optionwiz.net/earnings/NVDA/expected-move"
-    },
-    {
-      "title": "CNBC: Fragen an Interimschefin Kress, Konsens 109,1 Mrd. $ / 2,47 $ (16.11.)",
-      "url": "https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html"
-    },
-    {
-      "title": "Gotrade: SPCX fällt 1,3 % – Nvidia als Chiplieferant der SpaceX-Rechenzentren (17.11.)",
-      "url": "https://www.heygotrade.com/en/news/spacex-spcx-stock-news-november-17-2026/"
-    },
-    {
-      "title": "@elonmusk auf X (16.11., 22:57): Robotaxi-Tests mit Kundenautos vielleicht nächsten Monat",
-      "url": "https://x.com/elonmusk/status/2122449119570534680"
-    },
-    {
-      "title": "Teslarati: Tesla könnte schon nächsten Monat Robotaxis von Kunden testen (16.11.)",
-      "url": "https://www.teslarati.com/tesla-may-test-customer-owned-robotaxis-early-next-month-musk-says/"
-    },
-    {
-      "title": "@elonmusk auf X (17.11., 06:22): Repost zu Cybercab in Giga Berlin",
-      "url": "https://x.com/elonmusk/status/2122560875793953165"
-    },
-    {
-      "title": "Reuters via The Star: Tesla investiert 3 Mrd. € in Grünheide (16.11.)",
-      "url": "https://www.thestar.com.my/tech/tech-news/2026/11/17/tesla-plans-33-billion-cybercab-boost-for-germany039s-troubled-auto-sector"
-    },
-    {
-      "title": "@elonmusk auf X (17.11., 05:09): „I will be in China, so it will be digital me“",
-      "url": "https://x.com/elonmusk/status/2122542607653896255"
-    },
-    {
-      "title": "The Next Web: APEC-CEO-Gipfel Shenzhen 17.–18.11., Musk reist mit Trump (16.11.)",
-      "url": "https://thenextweb.com/news/apec-ceo-summit-shenzhen-catl-baidu-unitree-musk"
-    },
-    {
-      "title": "FXStreet: Dreiertreffen Xi–Trump–Putin am Donnerstag in Shenzhen (17.11.)",
-      "url": "https://www.fxstreet.com/news/asian-stocks-slide-as-us-tech-curbs-weigh-on-sentiment-nvidia-earnings-awaited-202611170501"
-    },
-    {
-      "title": "Launch Library 2: USSF-317 (Stand 17.11.: 19.11. 03:00 UTC, „Go“)",
-      "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?search=USSF-317&mode=detailed"
-    },
-    {
-      "title": "MaxQ: USSF-317 – Wetter und Startchance",
-      "url": "https://www.maxq.app/launches/falcon-9-block-5-ussf-317"
-    },
-    {
-      "title": "@elonmusk auf X (17.11., 03:05): Ablator wird durch Edelstahl ersetzt",
-      "url": "https://x.com/elonmusk/status/2122511400908243146"
-    },
-    {
-      "title": "MarketScreener (Dow Jones): Tagesvorschau Dienstag 17.11.",
-      "url": "https://de.marketscreener.com/boerse-nachrichten/tagesvorschau-dienstag-17-november-ce785edfde89f322"
-    },
-    {
-      "title": "FAA: SpaceX Starship Super Heavy Projekt Boca Chica (Anhörungen 17.–19.11.)",
-      "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship"
-    },
-    {
-      "title": "FXStreet: Nvidia-Vorschau – erster großer Test nach Huangs Abgang (16.11.)",
-      "url": "https://www.fxstreet.com/news/nvidia-earnings-preview-the-first-big-test-after-jensen-huangs-exit-202611160603"
     }
   ]
 }

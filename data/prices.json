@@ -7531,47 +7531,27 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Schluss Mi 18.11.: SPCX schloss in New York bei 143,50 $ (+1,3 % zum Vortag mit 141,70 $; Spanne 141,22–146,30 $) und hielt sich trotz schwacher Nvidia im Plus (Yahoo). Laut Investing.com rückte der Anthropic-Börsengang den Rechenleistungs-Vertrag über 120,5 Mrd. $ zwischen Anthropic und der KI-Sparte von SpaceX in den Blick; Finanzchef Johnsen sagte, Anthropic werde noch mehr Rechenleistung brauchen (Investing.com). Dazu kommt die Chip-Finanzierung über rund 40 Mrd. $, deren Teile laut Semafor diese Woche an Anleger gehen könnten (Semafor). Texas hat dem geplanten Rechenzentrum bei Starbase eine Luftgenehmigung erteilt, der Landkreis lehnte aber einen Steuernachlass ab (DCD, MyRGV). Gesamtmarkt zum Schluss: Dow −1,1 %, S&P 500 −0,2 %, Nasdaq Composite +0,4 % (Yahoo). Nvidia schloss bei 150,96 $ (−2,9 %), der fünfte Verlusttag in Folge; Summit Insights stufte nach den Zahlen ab, wegen Unsicherheit nach dem Abgang von Huang, Exportregeln und mehr Konkurrenz durch eigene Chips der Kunden (TipRanks). Das Fed-Protokoll zeigt, dass fast alle Mitglieder weitere Zinserhöhungen erwarten (CNBC). Nach US-Schluss: Anthropic setzt den Ausgabepreis, laut Bloomberg wohl 80–85 $ (Investing.com).",
+      "why": "Stand Do 08:25: Schluss Mi 143,50 $ (+1,3 %, Yahoo). Über Nacht keine eigene SpaceX-Meldung. Rückenwind für KI-Werte: Anthropic hat den Börsengang zu 83 $ über der Spanne platziert und sammelt mit 81,3 Mrd. $ mehr ein als SpaceX im Juni; Handel ab heute (Anthropic, CNBC). Nasdaq-100-Future gegen 07:40 +1,5 % (finanzen.net). Das CRS-35-Abdocken bleibt für Fr 18:05 Berlin geplant (SpaceX).",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX-Historie (Schluss Mi 18.11.)",
-          "url": "https://finance.yahoo.com/quote/SPCX/history/"
+          "title": "Yahoo Finance: SPCX",
+          "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Investing.com: Warum steigt die SpaceX-Aktie heute? (18.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/why-is-space-exploration-technologies-stock-climbing-today-93CH-5036550"
+          "title": "Anthropic: Preis des Börsengangs (18.11.)",
+          "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
         },
         {
-          "title": "Semafor: SpaceX-Chipfinanzierung über 40 Mrd. $ bleibt außerhalb der Bilanz (18.11.)",
-          "url": "https://www.semafor.com/article/11/18/2026/spacex-40-billion-chip-financing-to-stay-off-balance-sheet"
+          "title": "CNBC: Anthropic sammelt über 81 Mrd. $ ein (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
         },
         {
-          "title": "DCD: Texas nimmt Genehmigungen für Rechenzentren wieder auf und erteilt SpaceX-Projekt Luftgenehmigung (18.11.)",
-          "url": "https://www.datacenterdynamics.com/en/news/texas-environmental-regulator-resumes-data-center-permitting-following-ercot-review/"
+          "title": "finanzen.net/Dow Jones: Morning Briefing Deutschland/Europa (19.11., 07:40)",
+          "url": "https://www.finanzen.net/nachricht/aktien/morning-briefing-deutschland-europa-16075463"
         },
         {
-          "title": "MyRGV: Cameron County lehnt Steuernachlass für SpaceX-Rechenzentrum ab (17.11.)",
-          "url": "https://myrgv.com/local-news/2026/11/17/cameron-county-commissioners-reject-spacex-bid-for-data-center-tax-break/"
-        },
-        {
-          "title": "Yahoo Finance: Börse heute – Dow und S&P 500 tiefer, Nasdaq höher vor Anthropic-Börsengang (18.11., Schluss)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-earnings-anthropic-ipo-143530588.html"
-        },
-        {
-          "title": "Yahoo Finance: NVDA-Historie (Schluss Mi 18.11.)",
-          "url": "https://finance.yahoo.com/quote/NVDA/history/"
-        },
-        {
-          "title": "TipRanks: Warum Nvidia die Gewinne nach den Zahlen abgibt – Summit Insights stuft ab (18.11.)",
-          "url": "https://www.tipranks.com/news/why-nvidia-stock-is-losing-its-post-earnings-gains-and-why-another-wall-street-analyst-just-downgraded-it"
-        },
-        {
-          "title": "CNBC: Fed-Mitglieder erwarten weitere Zinserhöhungen und sorgen sich um KI-Inflation – Protokoll (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html"
-        },
-        {
-          "title": "Investing.com: Anthropic erwägt Ausgabepreis von 80–85 $ je Aktie, berichtet Bloomberg (18.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/anthropic-weighs-ipo-pricing-of-8085-a-share-bloomberg-reports-5036963"
+          "title": "SpaceX: CRS-35",
+          "url": "https://www.spacex.com/launches/crs35/"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -22328,43 +22308,31 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Schluss Mi 18.11.: Tesla schloss bei 383,72 $ (+0,9 % zum Vortag mit 380,11 $; Spanne 378,36–389,27 $) und gab die Gewinne vom Vormittag zum Teil wieder ab (Yahoo). Eine neue Firmenmeldung gibt es nicht; bei der SEC liegt seit Di-Abend nur Wahlwerbung zur Hauptversammlung am 3.12. (SEC). Musk ist als einziger Firmenchef mit Trump in Shenzhen; am Do folgen das Treffen Trump–Xi und das Dreiertreffen mit Putin (CNBC). Gegenwind bleibt das gesenkte Kursziel von China Merchants (441 → 354 $) (GMT Eight). Gesamtmarkt zum Schluss: Dow −1,1 %, S&P 500 −0,2 %, Nasdaq Composite +0,4 % (Yahoo). Nvidia schloss bei 150,96 $ (−2,9 %), der fünfte Verlusttag in Folge; Summit Insights stufte nach den Zahlen ab, wegen Unsicherheit nach dem Abgang von Huang, Exportregeln und mehr Konkurrenz durch eigene Chips der Kunden (TipRanks). Das Fed-Protokoll zeigt, dass fast alle Mitglieder weitere Zinserhöhungen erwarten (CNBC). Nach US-Schluss: Anthropic setzt den Ausgabepreis, laut Bloomberg wohl 80–85 $ (Investing.com).",
+      "why": "Stand Do 08:25: Schluss Mi 383,72 $ (+0,9 %, Yahoo); vorbörslich laut Investing.com rund 384,9 $. Keine neue Tesla-Meldung über Nacht. US-Futures fester vor dem Anthropic-Debüt (Nasdaq-100 +1,5 %, finanzen.net). Heute zählt China: Einzeltreffen Trump–Xi in Shenzhen (XTB), Alibaba und PDD legen Zahlen vor (Newsquawk). Fed-Präsident Kashkari: Märkte erwarten mehr Zinserhöhungen als die Fed (FXStreet).",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA-Historie (Schluss Mi 18.11.)",
-          "url": "https://finance.yahoo.com/quote/TSLA/history/"
+          "title": "Yahoo Finance: TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "SEC: Tesla DEFA14A – Zusatzmaterial zur Hauptversammlung (17.11.)",
-          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926129146/tm267596d13_defa14a.htm"
+          "title": "Investing.com: Vorbörslich aktivste Aktien",
+          "url": "https://www.investing.com/equities/pre-market"
         },
         {
-          "title": "CNBC: Trump, Xi und Putin beim APEC-Bankett in Shenzhen (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html"
+          "title": "finanzen.net/Dow Jones: Morning Briefing Deutschland/Europa (19.11., 07:40)",
+          "url": "https://www.finanzen.net/nachricht/aktien/morning-briefing-deutschland-europa-16075463"
         },
         {
-          "title": "GMT Eight: China Merchants Securities International senkt Tesla-Kursziel von 441 auf 354 $, „Neutral“ (18.11.)",
-          "url": "https://gmteight.com/flash/detail/1573796"
+          "title": "XTB: Morning Wrap (19.11., 07:05)",
+          "url": "https://www.xtb.com/int/market-analysis/news-and-research/morning-wrap-time-for-the-largest-stock-market-debut-in-history-19-11-2026"
         },
         {
-          "title": "Yahoo Finance: Börse heute – Dow und S&P 500 tiefer, Nasdaq höher vor Anthropic-Börsengang (18.11., Schluss)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-earnings-anthropic-ipo-143530588.html"
+          "title": "Newsquawk: US-Zahlen am 19.11. (WMT, PDD, BABA)",
+          "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-earnings-estimates---19th-november-2026-wmt-pdd-baba"
         },
         {
-          "title": "Yahoo Finance: NVDA-Historie (Schluss Mi 18.11.)",
-          "url": "https://finance.yahoo.com/quote/NVDA/history/"
-        },
-        {
-          "title": "TipRanks: Warum Nvidia die Gewinne nach den Zahlen abgibt – Summit Insights stuft ab (18.11.)",
-          "url": "https://www.tipranks.com/news/why-nvidia-stock-is-losing-its-post-earnings-gains-and-why-another-wall-street-analyst-just-downgraded-it"
-        },
-        {
-          "title": "CNBC: Fed-Mitglieder erwarten weitere Zinserhöhungen und sorgen sich um KI-Inflation – Protokoll (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html"
-        },
-        {
-          "title": "Investing.com: Anthropic erwägt Ausgabepreis von 80–85 $ je Aktie, berichtet Bloomberg (18.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/anthropic-weighs-ipo-pricing-of-8085-a-share-bloomberg-reports-5036963"
+          "title": "FXStreet: Kashkari – Märkte erwarten mehr Zinserhöhungen als die Fed (18.11.)",
+          "url": "https://www.fxstreet.com/news/feds-kashkari-markets-believe-central-bank-will-have-to-hike-more-than-officials-now-expect-202611182306"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -34825,47 +34793,23 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Schluss Mi 18.11.: Rocket Lab schloss bei 53,07 $ (−3,6 % zum Vortag mit 55,05 $; Spanne 52,89–56,36 $) – der fünfte Verlusttag in Folge, seit dem 11.11. (66,15 $) fast 20 % weniger (Yahoo). Eine eigene Firmen- oder SEC-Meldung gab es nicht (SEC). Belastend: Der frühe Gewinn nach den Nvidia-Zahlen verpuffte, als teure Wachstumswerte unter der Zinsangst litten (CNBC); bei den Optionen stieg die Nachfrage nach Absicherung gegen fallende Kurse (TipRanks/The Fly); ein bei TipRanks hoch eingestufter Investor sieht wegen höherer Verluste und des auf 2027 verschobenen Neutron-Starts „noch keine Entwarnung“ (TipRanks). Positiv am Abend: Rocket Lab kann laut eigener Aussage alle 8 Tage ein Archimedes-Triebwerk bauen (Rocket Lab auf X). Die Tagesfrage (Schluss über 55,05 $) ist damit mit „nein“ entschieden. Gesamtmarkt zum Schluss: Dow −1,1 %, S&P 500 −0,2 %, Nasdaq Composite +0,4 % (Yahoo). Nvidia schloss bei 150,96 $ (−2,9 %), der fünfte Verlusttag in Folge; Summit Insights stufte nach den Zahlen ab, wegen Unsicherheit nach dem Abgang von Huang, Exportregeln und mehr Konkurrenz durch eigene Chips der Kunden (TipRanks). Das Fed-Protokoll zeigt, dass fast alle Mitglieder weitere Zinserhöhungen erwarten (CNBC). Nach US-Schluss: Anthropic setzt den Ausgabepreis, laut Bloomberg wohl 80–85 $ (Investing.com).",
+      "why": "Stand Do 08:25: Schluss Mi 53,07 $ (−3,6 %, fünfter Verlusttag, Yahoo). Keine neue Firmen- oder SEC-Meldung über Nacht (SEC). Stocktwits meldet eine leichte Erholung im Nachthandel, nachdem Jim Cramer RKLB „zu billig“ nannte. Die ESCAPADE-Sonden von Rocket Lab sind laut Firma nach den Brennmanövern auf Mars-Kurs. Tagesfrage: Schluss heute über 53,07 $? Auflösung 22:15.",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB-Historie (Schluss Mi 18.11.)",
-          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+          "title": "Yahoo Finance: RKLB",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
           "title": "SEC EDGAR: Meldungen Rocket Lab",
           "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001819994"
         },
         {
-          "title": "TipRanks (The Fly): Cboe-Daten zeigen gemischte Optionsstimmung bei Rocket Lab (18.11.)",
-          "url": "https://www.tipranks.com/news/the-fly/cboe-data-shows-mixed-options-sentiment-in-rocket-lab-usa-with-shares-down-1-83-thefly-news"
+          "title": "Stocktwits: RKLB im Nachthandel, Cramer nennt Aktie zu billig",
+          "url": "https://stocktwits.com/news-articles/markets/equity/rklb-stock-jim-cramer-likes-spacex-rocketlab-cheap-electron-falcon-9-100-launches/cNbiGliR9iN"
         },
         {
-          "title": "TipRanks: „Noch nicht über den Berg“ – Top-Investor sieht Rocket Lab skeptisch (18.11.)",
-          "url": "https://www.tipranks.com/news/article/not-out-of-the-woods-says-top-investor-about-rocket-lab-stock"
-        },
-        {
-          "title": "@RocketLab auf X (18.11., 20:50): ein Archimedes-Triebwerk alle 8 Tage",
-          "url": "https://x.com/RocketLab/status/2123141853528871143"
-        },
-        {
-          "title": "Yahoo Finance: Börse heute – Dow und S&P 500 tiefer, Nasdaq höher vor Anthropic-Börsengang (18.11., Schluss)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-earnings-anthropic-ipo-143530588.html"
-        },
-        {
-          "title": "Yahoo Finance: NVDA-Historie (Schluss Mi 18.11.)",
-          "url": "https://finance.yahoo.com/quote/NVDA/history/"
-        },
-        {
-          "title": "TipRanks: Warum Nvidia die Gewinne nach den Zahlen abgibt – Summit Insights stuft ab (18.11.)",
-          "url": "https://www.tipranks.com/news/why-nvidia-stock-is-losing-its-post-earnings-gains-and-why-another-wall-street-analyst-just-downgraded-it"
-        },
-        {
-          "title": "CNBC: Fed-Mitglieder erwarten weitere Zinserhöhungen und sorgen sich um KI-Inflation – Protokoll (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html"
-        },
-        {
-          "title": "Investing.com: Anthropic erwägt Ausgabepreis von 80–85 $ je Aktie, berichtet Bloomberg (18.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/anthropic-weighs-ipo-pricing-of-8085-a-share-bloomberg-reports-5036963"
+          "title": "Rocket Lab: Brennmanöver schicken ESCAPADE zum Mars",
+          "url": "https://rocketlabcorp.com/updates/the-burns-that-sent-rocket-lab-built-spacecraft-to-mars-and-nbsp/"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -48353,47 +48297,23 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Schluss Mi 18.11.: Marvell schloss bei 145,54 $ (−2,2 % zum Vortag mit 148,74 $; Spanne 142,62–152,23 $), nachdem die Aktie vorbörslich fast 3 % im Plus lag (Yahoo, Benzinga). Laut Benzinga wogen Anleger Nvidias starken Ausblick gegen die Unsicherheit um Führung, Asien-Umsätze und neue Exportregeln ab; Marvell liefert eigene KI-Chips und Verbindungstechnik rund um Nvidia-Systeme (Benzinga). Weiter belastet die Verwässerung durch die Lumentum-Übernahme und der gemeldete Aktienverkauf von Chef Matt Murphy (7.500 Aktien am 16.11., 10b5-1-Plan) (Investing.com, SEC). Zahlen am Di 1.12. Gesamtmarkt zum Schluss: Dow −1,1 %, S&P 500 −0,2 %, Nasdaq Composite +0,4 % (Yahoo). Nvidia schloss bei 150,96 $ (−2,9 %), der fünfte Verlusttag in Folge; Summit Insights stufte nach den Zahlen ab, wegen Unsicherheit nach dem Abgang von Huang, Exportregeln und mehr Konkurrenz durch eigene Chips der Kunden (TipRanks). Das Fed-Protokoll zeigt, dass fast alle Mitglieder weitere Zinserhöhungen erwarten (CNBC). Nach US-Schluss: Anthropic setzt den Ausgabepreis, laut Bloomberg wohl 80–85 $ (Investing.com).",
+      "why": "Stand Do 08:25: Schluss Mi 145,54 $ (−2,2 %, Yahoo). Keine neue Firmenmeldung. Chipwerte vorbörslich fester: Nvidia, Broadcom und AMD je rund +1 bis +2 % (Investing.com), getragen vom Anthropic-Börsengang zu 83 $ (Anthropic). Belastung bleibt die neue US-Chipregel gegen China: Alibaba fiel in Hongkong 5,2 % (SBH News).",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL-Historie (Schluss Mi 18.11.)",
-          "url": "https://finance.yahoo.com/quote/MRVL/history/"
+          "title": "Yahoo Finance: MRVL",
+          "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "Benzinga: Marvell dreht ins Minus, Chipwerte wägen Nvidia-Zahlen gegen Exportrisiken ab (18.11.)",
-          "url": "https://www.benzinga.com/markets/tech/26/11/63404046/marvell-stock-reverses-early-gains-as-chipmakers-weigh-nvidia-earnings-against-export-risks"
+          "title": "Investing.com: Vorbörslich aktivste Aktien",
+          "url": "https://www.investing.com/equities/pre-market"
         },
         {
-          "title": "Investing.com: Warum die Marvell-Aktie heute fällt (18.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/why-is-marvell-technology-stock-sliding-today-93CH-5036476"
+          "title": "Anthropic: Preis des Börsengangs (18.11.)",
+          "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
         },
         {
-          "title": "SEC EDGAR: Meldungen Marvell",
-          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001835632"
-        },
-        {
-          "title": "MarketWatch via Morningstar: CoreWeave fällt, Nvidia will Finanzierungen „diszipliniert“ vergeben (18.11.)",
-          "url": "https://www.morningstar.com/news/marketwatch/20261118128/coreweaves-stock-drops-as-nvidia-talks-up-a-disciplined-approach-to-financing"
-        },
-        {
-          "title": "Yahoo Finance: Börse heute – Dow und S&P 500 tiefer, Nasdaq höher vor Anthropic-Börsengang (18.11., Schluss)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-earnings-anthropic-ipo-143530588.html"
-        },
-        {
-          "title": "Yahoo Finance: NVDA-Historie (Schluss Mi 18.11.)",
-          "url": "https://finance.yahoo.com/quote/NVDA/history/"
-        },
-        {
-          "title": "TipRanks: Warum Nvidia die Gewinne nach den Zahlen abgibt – Summit Insights stuft ab (18.11.)",
-          "url": "https://www.tipranks.com/news/why-nvidia-stock-is-losing-its-post-earnings-gains-and-why-another-wall-street-analyst-just-downgraded-it"
-        },
-        {
-          "title": "CNBC: Fed-Mitglieder erwarten weitere Zinserhöhungen und sorgen sich um KI-Inflation – Protokoll (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html"
-        },
-        {
-          "title": "Investing.com: Anthropic erwägt Ausgabepreis von 80–85 $ je Aktie, berichtet Bloomberg (18.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/anthropic-weighs-ipo-pricing-of-8085-a-share-bloomberg-reports-5036963"
+          "title": "SBH News: Alibaba −5,2 % auf 80,8 HKD (19.11.)",
+          "url": "https://www.sbhnews.com/news/alibaba-plunge-us-chip-curbs-9943bfb5-2026-11-19-PM-12-15"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",

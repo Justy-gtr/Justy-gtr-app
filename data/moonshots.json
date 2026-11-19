@@ -1,9 +1,189 @@
 {
   "schema": 1,
-  "updatedAt": null,
-  "nextRun": null,
-  "long": [],
-  "short": [],
+  "updatedAt": "2026-11-19T08:28:47+01:00",
+  "nextRun": "2026-11-19T14:00:00+01:00",
+  "long": [
+    {
+      "name": "Palo Alto Networks",
+      "ticker": "PANW",
+      "country": "US",
+      "exchange": "Nasdaq",
+      "priceEur": 339.75,
+      "hint": "Nachbörslich +9,7 % nach Zahlen und höherem Ausblick",
+      "bullets": [
+        "Umsatz 3,44 Mrd. $ (+39 %) und Gewinn je Aktie 1,05 $, beides über den Erwartungen.",
+        "Jahresausblick angehoben auf 14,52–14,57 Mrd. $ Umsatz, Übernahme von Applied Compute für 4,5 Mrd. $.",
+        "Nachbörslich 372,98 $ nach 339,92 $ Schluss, also rund +9,7 % vor dem Start."
+      ],
+      "sources": [
+        {
+          "title": "CNBC: Palo Alto Networks Zahlen 1. Quartal FY2027 (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/palo-alto-networks-panw-q1-2027-earnings-.html"
+        },
+        {
+          "title": "Investing.com: Nachbörsliche Bewegungen PANW, CRWD, P, RRGB (18.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-panw-crwd-p-rrgb-432SI-5037183"
+        },
+        {
+          "title": "ChartMill: Nachbörsliche Gewinner und Verlierer 18.11.",
+          "url": "https://www.chartmill.com/news/SHFS/Chartmill-58898-After-Hours-Stock-Movers-Nov-18-Gainers-and-Losers"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD (1,0978)",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
+        }
+      ]
+    },
+    {
+      "name": "Anthropic",
+      "ticker": "ANT",
+      "country": "US",
+      "exchange": "Nasdaq",
+      "priceEur": 75.61,
+      "hint": "Erster Handelstag, Ausgabepreis 83 $ über der Spanne",
+      "bullets": [
+        "Ausgabepreis 83 $, über der Spanne von 70–78 $; Angebot wegen hoher Nachfrage vergrößert.",
+        "Laut XTB war das Buch fast siebenfach überzeichnet.",
+        "Erster Kurs heute nach US-Start; Euro-Preis hier ist der umgerechnete Ausgabepreis."
+      ],
+      "sources": [
+        {
+          "title": "Anthropic: Preis des Börsengangs (18.11.)",
+          "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+        },
+        {
+          "title": "CNBC: Anthropic sammelt über 81 Mrd. $ ein (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
+        },
+        {
+          "title": "XTB: Morning Wrap (19.11., 07:05)",
+          "url": "https://www.xtb.com/int/market-analysis/news-and-research/morning-wrap-time-for-the-largest-stock-market-debut-in-history-19-11-2026"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD (1,0978)",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
+        }
+      ]
+    },
+    {
+      "name": "PDD Holdings",
+      "ticker": "PDD",
+      "country": "CN",
+      "exchange": "Nasdaq",
+      "priceEur": 70.55,
+      "hint": "Quartalszahlen heute vor US-Start",
+      "bullets": [
+        "PDD legt heute vor Börsenstart die Zahlen zum 3. Quartal vor, Konferenz 13:30 Berlin.",
+        "Schluss Mi 77,45 $, die Aktie ist nach den neuen US-Chipregeln gedrückt.",
+        "Zahlentage brachten bei PDD oft große Sprünge, die Richtung ist offen."
+      ],
+      "sources": [
+        {
+          "title": "PDD Holdings: Zahlen 3. Quartal am 19.11.",
+          "url": "https://www.globenewswire.com/news-release/2026/11/12/3401573/0/en/pdd-holdings-to-report-third-quarter-2026-unaudited-financial-results-on-november-19-2026.html"
+        },
+        {
+          "title": "Newsquawk: US-Zahlen am 19.11. (WMT, PDD, BABA)",
+          "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-earnings-estimates---19th-november-2026-wmt-pdd-baba"
+        },
+        {
+          "title": "Yahoo Finance: PDD",
+          "url": "https://finance.yahoo.com/quote/PDD/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD (1,0978)",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
+        }
+      ]
+    }
+  ],
+  "short": [
+    {
+      "name": "Red Robin Gourmet Burgers",
+      "ticker": "RRGB",
+      "country": "US",
+      "exchange": "Nasdaq",
+      "priceEur": 6.19,
+      "hint": "Nachbörslich −14,4 % nach verfehlten Zahlen",
+      "bullets": [
+        "Verlust je Aktie 0,54 $ statt erwarteter 0,39 $.",
+        "Umsatz 232,1 Mio. $ statt erwarteter 250,1 Mio. $, weniger Gäste.",
+        "Nachbörslich 6,80 $ nach 7,95 $ Schluss."
+      ],
+      "sources": [
+        {
+          "title": "Investing.com: Nachbörsliche Bewegungen PANW, CRWD, P, RRGB (18.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-panw-crwd-p-rrgb-432SI-5037183"
+        },
+        {
+          "title": "ChartMill: Nachbörsliche Gewinner und Verlierer 18.11.",
+          "url": "https://www.chartmill.com/news/SHFS/Chartmill-58898-After-Hours-Stock-Movers-Nov-18-Gainers-and-Losers"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD (1,0978)",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
+        }
+      ]
+    },
+    {
+      "name": "Humana",
+      "ticker": "HUM",
+      "country": "US",
+      "exchange": "NYSE",
+      "priceEur": 351.41,
+      "hint": "Nach −13 % am Mi neue CMS-Betrugsregel nachbörslich",
+      "bullets": [
+        "Am Mi −13 % auf 385,78 $, weil die Medicare-Behörde CMS mehr Prüfungen bis zurück 2018 plant.",
+        "Nachbörslich weiterer Druck durch eine geplante Anti-Betrugsregel über 90 Mrd. $.",
+        "Mögliche Rückzahlungen drücken auf Marge und Ausblick."
+      ],
+      "sources": [
+        {
+          "title": "EBC: Humana −13 % wegen Medicare-Prüfungen",
+          "url": "https://www.ebc.com/forex/humana-stock-drops-medicare-audits-margin-risks"
+        },
+        {
+          "title": "Benzinga: Humana nachbörslich nach CMS-Betrugsregel (18.11.)",
+          "url": "https://www.benzinga.com/markets/equities/26/11/63417422/humana-shares-slip-after-hours-cms-fraud-rule"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD (1,0978)",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
+        }
+      ]
+    },
+    {
+      "name": "Alibaba (ADR)",
+      "ticker": "BABA",
+      "country": "CN",
+      "exchange": "NYSE",
+      "priceEur": 76.85,
+      "hint": "Hongkong −5,2 %, Zahlen heute, US-Chipregeln",
+      "bullets": [
+        "In Hongkong −5,2 % auf 80,8 HKD, Tief seit 52 Wochen.",
+        "Neue US-Regeln sperren den Fernzugriff auf KI-Chips über ausländische Rechenzentren.",
+        "Zahlen kommen heute nach Hongkong-Schluss, Fokus auf Cloud und Investitionen."
+      ],
+      "sources": [
+        {
+          "title": "SBH News: Alibaba −5,2 % auf 80,8 HKD (19.11.)",
+          "url": "https://www.sbhnews.com/news/alibaba-plunge-us-chip-curbs-9943bfb5-2026-11-19-PM-12-15"
+        },
+        {
+          "title": "Straits Times: US-Chipregeln treffen Alibabas KI-Pläne",
+          "url": "https://www.straitstimes.com/business/alibabas-ai-ambitions-face-steep-challenge-in-us-chip-controls"
+        },
+        {
+          "title": "Newsquawk: US-Zahlen am 19.11. (WMT, PDD, BABA)",
+          "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-earnings-estimates---19th-november-2026-wmt-pdd-baba"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD (1,0978)",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
+        }
+      ]
+    }
+  ],
   "example": false,
   "disclaimer": "Keine Anlageberatung. Hebel kann Totalverlust bedeuten. Vergangenheit, keine Vorhersage.",
   "asOf": "2026-11-18T06:00:00+01:00",
