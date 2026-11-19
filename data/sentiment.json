@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T19:07:00+01:00",
+  "updatedAt": "2026-11-19T19:43:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -5,
+      "score": -10,
       "postsCount": 15,
-      "reason": "Fast alles dreht sich um Anthropic. SpaceX-Fans betonen, dass SpaceX noch den größten abgeschlossenen Börsengang hält; Trump hält laut CNBC SpaceX-Anleihen.",
+      "reason": "SpaceX dient als Warnbeispiel: großer Börsengang, erst Sprung, dann tiefer Fall. Dazu ein schwacher Gesamtmarkt mit Dow rund 1.000 Punkte im Minus.",
       "sources": [
         {
-          "title": "@kcarrillo10 auf X (19.11., 19:03)",
-          "url": "https://x.com/kcarrillo10/status/2123477370288116084"
+          "title": "@LanceRoberts auf X (19.11., 19:37)",
+          "url": "https://x.com/LanceRoberts/status/2123485749471334850"
         },
         {
-          "title": "@BlueCrewViking auf X (19.11., 19:02)",
-          "url": "https://x.com/BlueCrewViking/status/2123477049155129833"
+          "title": "@RonnyHworth auf X (19.11., 19:16)",
+          "url": "https://x.com/RonnyHworth/status/2123480455211065745"
         },
         {
-          "title": "@TslaGroupie auf X (19.11., 18:52)",
-          "url": "https://x.com/TslaGroupie/status/2123474425454428573"
+          "title": "@ZoroTrading auf X (19.11., 19:36)",
+          "url": "https://x.com/ZoroTrading/status/2123485625978671134"
         }
       ],
-      "updatedAt": "2026-11-19T19:07:00+01:00"
+      "updatedAt": "2026-11-19T19:43:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 5,
+      "score": -5,
       "postsCount": 15,
-      "reason": "Viel Gerede über eine mögliche Fusion von Tesla und SpaceX und wie viel Aufschlag es gäbe. Außerdem: Trump hat im September Tesla-Aktien gemeldet.",
+      "reason": "Kleinanleger klagen über Musk-Müdigkeit, weil die Aktie seit Jahren kaum vorankommt. Nebenbei: Trump meldete Tesla-Aktien in seinem Depot.",
       "sources": [
         {
-          "title": "@grok auf X (19.11., 18:51)",
-          "url": "https://x.com/grok/status/2123474347755024850"
+          "title": "@cashflow_needs auf X (19.11., 19:14)",
+          "url": "https://x.com/cashflow_needs/status/2123480060514484321"
         },
         {
-          "title": "@wirepulsedaily auf X (19.11., 19:01)",
-          "url": "https://x.com/wirepulsedaily/status/2123476650352402504"
+          "title": "@axiomarket auf X (19.11., 19:10)",
+          "url": "https://x.com/axiomarket/status/2123479096956952670"
         },
         {
-          "title": "@TPrivatePirateC auf X (19.11., 18:40)",
-          "url": "https://x.com/TPrivatePirateC/status/2123471432709538243"
+          "title": "@grok auf X (19.11., 19:25)",
+          "url": "https://x.com/grok/status/2123482910342693109"
         }
       ],
-      "updatedAt": "2026-11-19T19:07:00+01:00"
+      "updatedAt": "2026-11-19T19:43:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
@@ -64,7 +64,7 @@
           "url": "https://x.com/pledisme/status/2123449529374507360"
         }
       ],
-      "updatedAt": "2026-11-19T19:07:00+01:00"
+      "updatedAt": "2026-11-19T19:43:00+01:00"
     }
   }
 }
