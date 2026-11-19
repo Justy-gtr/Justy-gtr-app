@@ -39,6 +39,9 @@ import {
   rescueBalance,
   tradeStakeCents,
   openTrade,
+  archiveSymbols,
+  chooseReplaySymbol,
+  normalizeSymbol,
   pickRound,
   reasonLabel,
   rememberRound,
@@ -598,6 +601,48 @@ test("Statistik-Reset löscht nur die Runden", () => {
   assert.match(css, /\.replay-stathead[\s\S]*justify-content:\s*space-between/);
   assert.match(css, /\.replay-statreset \{[\s\S]*width:\s*30px/);
   assert.match(css, /\.replay-statreset \{[\s\S]*height:\s*30px/);
+});
+
+test("Training merkt sich nur eine Aktie aus dem Archiv", () => {
+  const index = {
+    pool: REPLAY_POOL,
+    days: [
+      { s: "TSLA", d: "2026-11-02", n: 40 },
+      { s: "TSLA", d: "2026-11-03", n: 40 },
+      { s: "NVDA", d: "2026-11-04", n: 40 },
+      { s: "SPCX", d: "2026-11-05", n: 10 }
+    ]
+  };
+  assert.deepEqual(archiveSymbols(index), ["TSLA", "NVDA"]);
+  assert.equal(normalizeSymbol(" tsla "), "TSLA");
+  assert.equal(normalizeSymbol("aapl-1"), "");
+  assert.equal(pickRound(index, () => 0, null, "NVDA").symbol, "NVDA");
+  assert.equal(pickRound(index, () => 0, null, "AAPL"), null);
+  const round = { cashCents: 12300, undo: [{ visible: 1 }], settings: { stake: 50, leverage: 80 } };
+  const history = { rounds: [{ symbol: "TSLA", pnlCents: 100 }], settings: { stake: 50, leverage: 80 }, recent: ["MRVL"] };
+  const missed = chooseReplaySymbol(history, round, index, "AAPL");
+  assert.equal(missed.ok, false);
+  assert.match(missed.history.symbolNote, /Keine Kursdaten für AAPL/);
+  assert.equal(missed.round.cashCents, 12300);
+  assert.equal(missed.round.undo.length, 1);
+  assert.equal(missed.history.settings.stake, 50);
+  const picked = chooseReplaySymbol(history, round, index, "nvda");
+  assert.equal(picked.ok, true);
+  assert.equal(picked.history.settings.symbol, "NVDA");
+  assert.equal(picked.history.settings.leverage, 80);
+  assert.deepEqual(picked.history.rounds, history.rounds);
+  assert.deepEqual(picked.round.undo, []);
+  assert.equal(picked.round.cashCents, 12300);
+  assert.deepEqual(picked.history.recent.slice(0, 2), ["NVDA", "MRVL"]);
+  const storage = { value: "", getItem() { return this.value; }, setItem(_key, value) { this.value = value; } };
+  saveHistory(storage, picked.history);
+  const loaded = loadHistory(storage);
+  assert.equal(loaded.settings.symbol, "NVDA");
+  assert.equal(loaded.recent[0], "NVDA");
+  const ui = fs.readFileSync(new URL("../js/replay-ui.js", import.meta.url), "utf8");
+  assert.match(ui, /data-action="replay-symbol"/);
+  assert.match(ui, /Keine Kursdaten für/);
+  assert.match(ui, /zoomCaption/);
 });
 
 test("Neue Runde behält das Konto ab 25 €", () => {

@@ -252,6 +252,29 @@
   color: var(--muted);
   font-size: 12px;
 }
+.replay-zoom #replay-zoom-n { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.replay-symbols { display: flex; flex-direction: column; gap: 6px; }
+.replay-symbol-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.replay-symbol-row button {
+  min-height: 32px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+}
+.replay-symbol-row button[aria-pressed="true"] {
+  background: rgba(228, 177, 90, 0.18);
+  color: var(--gold-2);
+  border-color: transparent;
+}
 .replay-zoom input {
   width: 100%;
   height: 28px;

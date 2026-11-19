@@ -366,8 +366,67 @@ export function poolName(index, symbol) {
   return pool.find((item) => item.symbol === symbol)?.name || symbol;
 }
 
-export function pickRound(index, rng = Math.random, avoid = null) {
+/** US ticker, or empty when the text is not one. */
+export function normalizeSymbol(value) {
+  const symbol = String(value || "").trim().toUpperCase();
+  if (!/^[A-Z][A-Z0-9.]{0,7}$/.test(symbol)) return "";
+  return symbol;
+}
+
+/** Pool names that actually have a saved day. Without an index, the five built-in names. */
+export function archiveSymbols(index) {
+  const ready = new Set();
+  for (const day of index?.days || []) {
+    if (day?.s && day.n >= 24) ready.add(day.s);
+  }
+  const pool = (index?.pool?.length ? index.pool : REPLAY_POOL).map((item) => item.symbol);
+  const listed = pool.filter((symbol) => !ready.size || ready.has(symbol));
+  return listed.length ? listed : [...ready];
+}
+
+export function rememberSymbol(history, symbol) {
+  const clean = normalizeSymbol(symbol);
+  if (!clean) return history || { rounds: [], settings: null, recent: [] };
+  const recent = [clean, ...(history?.recent || [])]
+    .map((item) => normalizeSymbol(item))
+    .filter((item, index, list) => item && list.indexOf(item) === index)
+    .slice(0, 5);
+  return {
+    rounds: history?.rounds || [],
+    settings: { ...(history?.settings || {}), symbol: clean },
+    recent,
+    symbolNote: ""
+  };
+}
+
+/** Save the next stock. Unknown names do not replace the current one. A real change drops undo. */
+export function chooseReplaySymbol(history, round, index, raw) {
+  const symbol = normalizeSymbol(raw);
+  const known = archiveSymbols(index);
+  if (!symbol || (known.length && !known.includes(symbol))) {
+    const label = symbol || String(raw || "").trim().toUpperCase() || "?";
+    return {
+      ok: false,
+      history: { ...(history || { rounds: [], settings: null }), symbolNote: `Keine Kursdaten für ${label}` },
+      round
+    };
+  }
+  const changed = normalizeSymbol(history?.settings?.symbol) !== symbol;
+  return {
+    ok: true,
+    history: rememberSymbol(history, symbol),
+    round: round && changed ? { ...round, undo: [] } : round
+  };
+}
+
+export function pickRound(index, rng = Math.random, avoid = null, symbol = "") {
   let days = (index?.days || []).filter((day) => day?.s && day?.d && day.n >= 24);
+  const wanted = normalizeSymbol(symbol);
+  if (wanted) {
+    const own = days.filter((day) => day.s === wanted);
+    if (!own.length) return null;
+    days = own;
+  }
   if (!days.length) return null;
   if (avoid?.symbol && avoid?.date && days.length > 1) {
     const rest = days.filter((day) => !(day.s === avoid.symbol && day.d === avoid.date));
@@ -950,14 +1009,17 @@ export function rememberRound(history, summary, at) {
 
 /** Drop stored rounds. Stake, leverage and the other settings stay. */
 export function resetHistory(history) {
-  return { rounds: [], settings: history?.settings || null };
+  return { rounds: [], settings: history?.settings || null, recent: history?.recent || [] };
 }
 
 export function loadHistory(storage) {
   try {
     const raw = JSON.parse(storage.getItem(REPLAY_STORE_KEY) || "");
-    if (!raw || !Array.isArray(raw.rounds)) return { rounds: [], settings: raw?.settings || null };
-    return { rounds: raw.rounds.slice(0, 40), settings: raw.settings || null };
+    if (!raw || !Array.isArray(raw.rounds)) {
+      return { rounds: [], settings: raw?.settings || null, recent: [] };
+    }
+    const recent = Array.isArray(raw.recent) ? raw.recent.map((item) => normalizeSymbol(item)).filter(Boolean).slice(0, 5) : [];
+    return { rounds: raw.rounds.slice(0, 40), settings: raw.settings || null, recent };
   } catch {
     return { rounds: [], settings: null };
   }
@@ -966,7 +1028,8 @@ export function loadHistory(storage) {
 export function saveHistory(storage, history) {
   storage.setItem(REPLAY_STORE_KEY, JSON.stringify({
     rounds: (history?.rounds || []).slice(0, 40),
-    settings: history?.settings || null
+    settings: history?.settings || null,
+    recent: (history?.recent || []).slice(0, 5)
   }));
 }
 

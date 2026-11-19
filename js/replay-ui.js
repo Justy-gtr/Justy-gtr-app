@@ -9,9 +9,12 @@ import {
   REPLAY_POOL,
   TAKE_PRESETS,
   UI,
+  archiveSymbols,
+  chooseReplaySymbol,
   closeManual,
   confirmRestart,
   createRound,
+  normalizeSymbol,
   sameGesture,
   endRound,
   formatDayDe,
@@ -93,6 +96,12 @@ function statsBlock(history) {
     [UI.statsWorst, money(stats.worstCents)]
   ];
   const path = (stats.balances || []).slice(0, 6).map((cents) => formatEuroCents(cents)).join(" · ");
+  const seen = [];
+  for (const item of history?.rounds || []) {
+    const symbol = String(item?.symbol || "");
+    if (symbol && !seen.includes(symbol)) seen.push(symbol);
+  }
+  const symbolLine = seen.slice(0, 5).join(" · ");
   return `<section class="replay-statbox" aria-label="Statistik">
     <div class="replay-stathead">
       <p class="kicker">Statistik</p>
@@ -102,8 +111,22 @@ function statsBlock(history) {
       </button>
     </div>
     ${rows.map(([label, value]) => `<p class="replay-statrow"><span>${esc(label)}</span><strong>${esc(value)}</strong></p>`).join("")}
+    ${symbolLine ? `<p class="replay-hint">${esc(symbolLine)}</p>` : ""}
     ${path ? `<p class="replay-hint">${esc(UI.statsBalance)} ${esc(path)}</p>` : ""}
   </section>`;
+}
+
+function stockPicker(history, index) {
+  const symbols = archiveSymbols(index);
+  const current = normalizeSymbol(history?.settings?.symbol);
+  const chips = symbols.map((symbol) => `
+    <button type="button" data-action="replay-symbol" data-symbol="${esc(symbol)}" aria-pressed="${symbol === current ? "true" : "false"}">${esc(symbol)}</button>`).join("");
+  const note = history?.symbolNote || "";
+  return `<div class="replay-symbols">
+    <p class="kicker">Aktie</p>
+    <div class="replay-symbol-row" role="group" aria-label="Aktie">${chips}</div>
+    ${note ? `<p class="replay-note">${esc(note)}</p>` : ""}
+  </div>`;
 }
 
 function setupHtml(history, note) {
@@ -120,6 +143,7 @@ function setupHtml(history, note) {
         <h2>Training</h2>
         <p class="lede">Kerze für Kerze. Nach jeder Kerze hält es an. Der Gewinn bleibt im nächsten Einsatz.</p>
       </header>
+      ${stockPicker(history, null)}
       ${statsBlock(history)}
       ${note ? `<p class="replay-note">${esc(note)}</p>` : ""}
       <label class="replay-field">${esc(UI.stakePick)}
@@ -139,7 +163,7 @@ function setupHtml(history, note) {
     </div>`;
 }
 
-function playHtml(round, mask, history) {
+function playHtml(round, mask, history, symbol) {
   const snap = liveSnapshot(round);
   const choice = stakeChoice(stakeBasisCents(round), round.settings);
   if (round.settings && choice.allIn) round.settings.stakeAllIn = true;
@@ -158,6 +182,7 @@ function playHtml(round, mask, history) {
   const zoomMax = Math.max(8, round.visible || 8);
   const zoomValue = chartZoom > 0 ? Math.min(Math.max(8, chartZoom), zoomMax) : zoomMax;
   const zoomLabel = chartZoom > 0 && chartZoom < zoomMax ? String(Math.round(chartZoom)) : "Tag";
+  const zoomCaption = symbol ? `${zoomLabel} · ${symbol}` : zoomLabel;
   return `
     <div class="replay replay-live" data-replay-root data-screen="play">
       <header class="replay-top">
@@ -173,7 +198,7 @@ function playHtml(round, mask, history) {
       <label class="replay-zoom">
         <span>Zoom</span>
         <input id="replay-zoom" type="range" min="8" max="${zoomMax}" step="1" value="${zoomValue}" aria-label="Zoom">
-        <span id="replay-zoom-n">${esc(zoomLabel)}</span>
+        <span id="replay-zoom-n">${esc(zoomCaption)}</span>
       </label>
       <div class="replay-restart-row">
         <span class="replay-armnote" data-arm-note hidden>Nochmal?</span>
@@ -209,7 +234,7 @@ function playHtml(round, mask, history) {
     </div>`;
 }
 
-function sheetHtml(round, history) {
+function sheetHtml(round, history, index) {
   const leverage = Number(round?.settings?.leverage) || 100;
   const presets = LEVERAGE_PRESETS.map((value) => `
     <button type="button" data-action="replay-lev" data-lev="${value}" aria-pressed="${value === leverage ? "true" : "false"}">${value}</button>`).join("");
@@ -224,6 +249,7 @@ function sheetHtml(round, history) {
             <input id="replay-lev" inputmode="decimal" autocomplete="off" value="${esc(leverage)}">
           </label>
         </div>
+        ${stockPicker(history, index)}
         ${statsBlock(history)}
       </div>
     </div>`;
@@ -427,7 +453,7 @@ export function initTraining() {
     const root = page();
     if (!root) return;
     if (full || !root.querySelector("[data-replay-root]")) {
-      if (screen === "play" && round && meta) root.innerHTML = playHtml(round, hiddenLabels(), history);
+      if (screen === "play" && round && meta) root.innerHTML = playHtml(round, hiddenLabels(), history, meta.symbol);
       else if (screen === "done" && round && meta) root.innerHTML = doneHtml(meta, round, history);
       else root.innerHTML = setupHtml(history, note);
       drawn = -1;
@@ -575,7 +601,7 @@ export function initTraining() {
       let choice = null;
       let day = null;
       for (let attempt = 0; attempt < 4 && !day; attempt += 1) {
-        choice = pickRound(catalog, Math.random, meta);
+        choice = pickRound(catalog, Math.random, meta, history?.settings?.symbol || "");
         if (!choice) break;
         try {
           day = await loadDay(choice);
@@ -584,11 +610,19 @@ export function initTraining() {
         }
       }
       if (!choice || !day?.b?.length) {
-        note = UI.missing;
-        screen = "setup";
+        const wanted = normalizeSymbol(history?.settings?.symbol);
+        if (wanted) {
+          history = { ...history, symbolNote: `Keine Kursdaten für ${wanted}` };
+          note = history.symbolNote;
+          screen = round ? (round.phase === "done" ? "done" : "play") : "setup";
+        } else {
+          note = UI.missing;
+          screen = "setup";
+        }
         paint(true);
         return;
       }
+      history = { ...history, symbolNote: "" };
       meta = choice;
       round = previewRound(createRound(day, settings));
       if (pendingSide) {
@@ -596,7 +630,7 @@ export function initTraining() {
         if (opened.ok) round = pauseRound(opened.state);
         pendingSide = "";
       }
-      history = { ...history, settings };
+      history = { ...history, settings: { ...settings, symbol: history?.settings?.symbol || "" } };
       try { saveHistory(localStorage, history); } catch { /* bleibt im Speicher. */ }
       screen = "play";
       note = "";
@@ -629,7 +663,7 @@ export function initTraining() {
   function mountSheet() {
     const root = page();
     if (!root || root.querySelector("[data-replay-sheet]")) return;
-    root.insertAdjacentHTML("beforeend", sheetHtml(round, history));
+    root.insertAdjacentHTML("beforeend", sheetHtml(round, history, index));
     const panel = root.querySelector("[data-replay-panel]");
     if (!panel) return;
     let startY = 0;
@@ -658,6 +692,15 @@ export function initTraining() {
     if (!String(el.dataset.action || "").startsWith("replay-")) return;
     event.stopPropagation();
     const action = el.dataset.action;
+    if (action === "replay-symbol") {
+      const picked = chooseReplaySymbol(history, round, index, el.dataset.symbol);
+      history = picked.history;
+      if (picked.round) round = picked.round;
+      if (picked.ok) persist(history);
+      else note = history.symbolNote || "";
+      paint(true);
+      return;
+    }
     if (action === "replay-reset-stats" || action === "replay-fresh") {
       if (event.pointerType === "touch") return;
       armOrRun(action === "replay-fresh" ? "fresh" : "stats");
@@ -845,7 +888,7 @@ export function initTraining() {
         if (!Number.isFinite(value)) return;
         chartZoom = value >= max - 0.01 ? 0 : Math.max(8, Math.min(max, value));
         const count = document.getElementById("replay-zoom-n");
-        if (count) count.textContent = chartZoom ? String(Math.round(chartZoom)) : "Tag";
+        if (count) count.textContent = `${chartZoom ? String(Math.round(chartZoom)) : "Tag"}${meta?.symbol ? ` · ${meta.symbol}` : ""}`;
         const canvas = document.getElementById("replay-canvas");
         if (canvas && round) drawChart(canvas, round);
         return;
