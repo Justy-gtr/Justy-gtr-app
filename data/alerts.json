@@ -528,62 +528,62 @@
       ]
     },
     {
-      "id": "SPCX-2026-11-19",
-      "symbol": "SPCX",
-      "name": "SpaceX",
-      "changePct": 3.69,
-      "priceEur": 133.1,
+      "id": "RKLB-2026-11-19",
+      "symbol": "RKLB",
+      "name": "Rocket Lab",
+      "changePct": 3.51,
+      "priceEur": 50.2,
       "thresholdPct": 2,
       "direction": "up",
-      "timestamp": "2026-11-19T01:28:49.803Z",
+      "timestamp": "2026-11-19T11:25:50.706Z",
       "notified": false,
       "example": false,
       "sources": [
         {
-          "title": "Alpaca Markets IEX SPCX",
-          "url": "https://data.alpaca.markets/v2/stocks/SPCX/snapshot?feed=iex"
+          "title": "Alpaca Markets IEX RKLB",
+          "url": "https://data.alpaca.markets/v2/stocks/RKLB/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance SPX.SG",
-          "url": "https://finance.yahoo.com/quote/SPX.SG"
+          "title": "Yahoo Finance 6RJ0.SG",
+          "url": "https://finance.yahoo.com/quote/6RJ0.SG"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
           "url": "https://finance.yahoo.com/quote/EURUSD=X"
         },
         {
-          "title": "Yahoo Finance SPCX",
-          "url": "https://finance.yahoo.com/quote/SPCX"
+          "title": "Yahoo Finance RKLB",
+          "url": "https://finance.yahoo.com/quote/RKLB"
         }
       ]
     },
     {
-      "id": "TSLA-2026-11-19",
-      "symbol": "TSLA",
-      "name": "Tesla",
-      "changePct": 2.25,
-      "priceEur": 352.8,
+      "id": "MRVL-2026-11-19",
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "changePct": 4.89,
+      "priceEur": 138.18,
       "thresholdPct": 2,
       "direction": "up",
-      "timestamp": "2026-11-19T06:58:56.376Z",
+      "timestamp": "2026-11-19T11:25:50.706Z",
       "notified": false,
       "example": false,
       "sources": [
         {
-          "title": "Alpaca Markets IEX TSLA",
-          "url": "https://data.alpaca.markets/v2/stocks/TSLA/snapshot?feed=iex"
+          "title": "Alpaca Markets IEX MRVL",
+          "url": "https://data.alpaca.markets/v2/stocks/MRVL/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance TL0.SG",
-          "url": "https://finance.yahoo.com/quote/TL0.SG"
+          "title": "Yahoo Finance 9MW.DE",
+          "url": "https://finance.yahoo.com/quote/9MW.DE"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
           "url": "https://finance.yahoo.com/quote/EURUSD=X"
         },
         {
-          "title": "Yahoo Finance TSLA",
-          "url": "https://finance.yahoo.com/quote/TSLA"
+          "title": "Yahoo Finance MRVL",
+          "url": "https://finance.yahoo.com/quote/MRVL"
         }
       ]
     }
