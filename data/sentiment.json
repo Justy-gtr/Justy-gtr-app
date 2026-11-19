@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-18T16:42:00+01:00",
+  "updatedAt": "2026-11-19T14:08:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 10,
-      "reason": "SpaceX hält sich bei rund 144 $. Fans feiern den Starlink-Ausbau durch Starship, Trader sehen aber einen gescheiterten Ausbruch über 144,78 $.",
+      "score": 35,
+      "postsCount": 20,
+      "reason": "SpaceX vorbörslich bei rund 146,60 $. Viele vergleichen mit dem Anthropic-Börsengang; Nadella will SpaceX-Rechenleistung mieten. Manche finden die Bewertung zu hoch.",
       "sources": [
         {
-          "title": "@95Breakers auf X (18.11., 16:40)",
-          "url": "https://x.com/95Breakers/status/2123078861114036440"
+          "title": "@McJohnnymac auf X (19.11., 13:00)",
+          "url": "https://x.com/McJohnnymac/status/2123385814549762203"
         },
         {
-          "title": "@McJohnnymac auf X (18.11., 16:40)",
-          "url": "https://x.com/McJohnnymac/status/2123078809826066943"
+          "title": "@alphacharts365 auf X (19.11., 13:40)",
+          "url": "https://x.com/alphacharts365/status/2123396082180718760"
         },
         {
-          "title": "@Thinkingis9508 auf X (18.11., 16:40)",
-          "url": "https://x.com/Thinkingis9508/status/2123078940025823527"
+          "title": "@VoxVex000 auf X (19.11., 13:31)",
+          "url": "https://x.com/VoxVex000/status/2123393768833581061"
         }
       ],
-      "updatedAt": "2026-11-18T16:42:00+01:00"
+      "updatedAt": "2026-11-19T14:08:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 0,
-      "postsCount": 8,
-      "reason": "Tesla wirkt schwächer als der Nasdaq. Diskutiert werden 19 % weniger Europa-Verkäufe als vor einem Jahr (Woche 9.–15.11.) und ein Ausfall im Service.",
+      "score": 15,
+      "postsCount": 18,
+      "reason": "Gesprächsthema: Musk kündigt ein Model Y ohne Lenkrad und Pedale an, dazu Cybercab und Optimus. Andere klagen, die Aktie komme nicht vom Fleck.",
       "sources": [
         {
-          "title": "@piloly auf X (18.11., 16:33)",
-          "url": "https://x.com/piloly/status/2123077193215385657"
+          "title": "@rivianledger auf X (19.11., 13:32)",
+          "url": "https://x.com/rivianledger/status/2123394048790597751"
         },
         {
-          "title": "@na_option auf X (18.11., 16:32)",
-          "url": "https://x.com/na_option/status/2123076856048128503"
+          "title": "@strengthPlan auf X (19.11., 13:19)",
+          "url": "https://x.com/strengthPlan/status/2123390680055873829"
         },
         {
-          "title": "@BK_BrenhamTX auf X (18.11., 16:33)",
-          "url": "https://x.com/BK_BrenhamTX/status/2123077023350628437"
+          "title": "@Johaness212 auf X (19.11., 13:00)",
+          "url": "https://x.com/Johaness212/status/2123385858078515503"
         }
       ],
-      "updatedAt": "2026-11-18T16:42:00+01:00"
+      "updatedAt": "2026-11-19T14:08:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 25,
-      "postsCount": 9,
-      "reason": "Rocket Lab feiert 100 Electron-Starts und stichelt auf X gegen SpaceX-Fans. Fans freuen sich, andere sagen, die Stimmung zur Aktie sei so schlecht wie nie.",
+      "score": 5,
+      "postsCount": 12,
+      "reason": "Rocket Lab um 53 $. Fans loben CEO Beck und die geplante Iridium-Übernahme, Trader sehen nachlassenden Schwung und 52 $ als wichtige Marke.",
       "sources": [
         {
-          "title": "@StockMKTNewz auf X (18.11., 16:17)",
-          "url": "https://x.com/StockMKTNewz/status/2123073045535273218"
+          "title": "@RCapitalX auf X (19.11., 14:00)",
+          "url": "https://x.com/RCapitalX/status/2123400968188633220"
         },
         {
-          "title": "@PSInvestor auf X (18.11., 16:30)",
-          "url": "https://x.com/PSInvestor/status/2123076341029638532"
+          "title": "@Cabala44Isabel auf X (19.11., 13:44)",
+          "url": "https://x.com/Cabala44Isabel/status/2123397038272631005"
         },
         {
-          "title": "@johhnyWalkerAZ auf X (18.11., 16:19)",
-          "url": "https://x.com/johhnyWalkerAZ/status/2123073595136213359"
+          "title": "@JoshTradeOption auf X (19.11., 13:40)",
+          "url": "https://x.com/JoshTradeOption/status/2123395868242198646"
         }
       ],
-      "updatedAt": "2026-11-18T16:38:00+01:00"
+      "updatedAt": "2026-11-19T14:08:00+01:00"
     }
   }
 }
