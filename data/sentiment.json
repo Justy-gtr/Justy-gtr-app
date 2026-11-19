@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T18:38:00+01:00",
+  "updatedAt": "2026-11-19T19:07:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -10,
-      "postsCount": 14,
-      "reason": "SpaceX rutscht am Anthropic-Börsentag zeitweise über 5 % ab. Viele vergleichen: erst Hype, dann Rückgang – wie beim SpaceX-Börsengang im Juni.",
+      "score": -5,
+      "postsCount": 15,
+      "reason": "Fast alles dreht sich um Anthropic. SpaceX-Fans betonen, dass SpaceX noch den größten abgeschlossenen Börsengang hält; Trump meldete Käufe von SpaceX-Anleihen.",
       "sources": [
         {
-          "title": "@gonta_southwood auf X (19.11., 18:17)",
-          "url": "https://x.com/gonta_southwood/status/2123465670281265415"
+          "title": "@kcarrillo10 auf X (19.11., 19:03)",
+          "url": "https://x.com/kcarrillo10/status/2123477370288116084"
         },
         {
-          "title": "@TrendSpider auf X (19.11., 18:27)",
-          "url": "https://x.com/TrendSpider/status/2123468133533098096"
+          "title": "@BlueCrewViking auf X (19.11., 19:02)",
+          "url": "https://x.com/BlueCrewViking/status/2123477049155129833"
         },
         {
-          "title": "@PlayBookTrades auf X (19.11., 18:13)",
-          "url": "https://x.com/PlayBookTrades/status/2123464599248978192"
+          "title": "@TslaGroupie auf X (19.11., 18:52)",
+          "url": "https://x.com/TslaGroupie/status/2123474425454428573"
         }
       ],
-      "updatedAt": "2026-11-19T18:38:00+01:00"
+      "updatedAt": "2026-11-19T19:07:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": -5,
+      "score": 5,
       "postsCount": 15,
-      "reason": "Tesla um 380 $. Manche Anleger sind frustriert, weil die Aktie seit Jahren kaum steigt; andere verweisen auf Robotaxi und die geplante Cybercab-Fabrik.",
+      "reason": "Viel Gerede über eine mögliche Fusion von Tesla und SpaceX und wie viel Aufschlag es gäbe. Außerdem: Trump hat im September Tesla-Aktien gemeldet.",
       "sources": [
         {
-          "title": "@OutsideChanges auf X (19.11., 18:25)",
-          "url": "https://x.com/OutsideChanges/status/2123467628878668208"
+          "title": "@grok auf X (19.11., 18:51)",
+          "url": "https://x.com/grok/status/2123474347755024850"
         },
         {
-          "title": "@cashflow_needs auf X (19.11., 18:27)",
-          "url": "https://x.com/cashflow_needs/status/2123468110933950854"
+          "title": "@wirepulsedaily auf X (19.11., 19:01)",
+          "url": "https://x.com/wirepulsedaily/status/2123476650352402504"
         },
         {
-          "title": "@RexWiggins12 auf X (19.11., 18:19)",
-          "url": "https://x.com/RexWiggins12/status/2123466158900985938"
+          "title": "@TPrivatePirateC auf X (19.11., 18:40)",
+          "url": "https://x.com/TPrivatePirateC/status/2123471432709538243"
         }
       ],
-      "updatedAt": "2026-11-19T18:38:00+01:00"
+      "updatedAt": "2026-11-19T19:07:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
@@ -64,7 +64,7 @@
           "url": "https://x.com/pledisme/status/2123449529374507360"
         }
       ],
-      "updatedAt": "2026-11-19T18:38:00+01:00"
+      "updatedAt": "2026-11-19T19:07:00+01:00"
     }
   }
 }
