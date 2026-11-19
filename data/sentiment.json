@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T20:13:00+01:00",
+  "updatedAt": "2026-11-19T20:43:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
       "score": -10,
       "postsCount": 15,
-      "reason": "Weiter Vergleiche mit Anthropic: Manche betonen, SpaceX liege 160 Tage nach dem Börsengang noch im Minus. Andere vergleichen nur Größe und ersten Handelstag.",
+      "reason": "Anthropic knackt beim Start den Bewertungsrekord von SpaceX. SpaceX selbst liegt im roten Gesamtmarkt knapp 2 % im Minus.",
       "sources": [
         {
-          "title": "@OtsukimiOtsu auf X (19.11., 20:07)",
-          "url": "https://x.com/OtsukimiOtsu/status/2123493380743221710"
+          "title": "@WolfRyan auf X (19.11., 20:17)",
+          "url": "https://x.com/WolfRyan/status/2123495997783298447"
         },
         {
-          "title": "@fourweekmba auf X (19.11., 19:51)",
-          "url": "https://x.com/fourweekmba/status/2123489322896621676"
+          "title": "@DeepTapeNews auf X (19.11., 20:23)",
+          "url": "https://x.com/DeepTapeNews/status/2123497479614484710"
         },
         {
-          "title": "@oben_wsn auf X (19.11., 19:59)",
-          "url": "https://x.com/oben_wsn/status/2123491475845755051"
+          "title": "@_stockResearch auf X (19.11., 20:33)",
+          "url": "https://x.com/_stockResearch/status/2123499820476158039"
         }
       ],
-      "updatedAt": "2026-11-19T20:13:00+01:00"
+      "updatedAt": "2026-11-19T20:43:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": -5,
       "postsCount": 15,
-      "reason": "Kleinanleger klagen über Musk-Müdigkeit, weil die Aktie seit Jahren kaum vorankommt. Nebenbei: Trump meldete Tesla-Aktien in seinem Depot.",
+      "reason": "Tesla rund 2–3 % schwächer bei etwa 378 $. Fans sehen Tesla als Weg zu SpaceX, falls beide fusionieren; Analystenziele liegen im Schnitt bei 410 $.",
       "sources": [
         {
-          "title": "@cashflow_needs auf X (19.11., 19:14)",
-          "url": "https://x.com/cashflow_needs/status/2123480060514484321"
+          "title": "@EleNaincy65175 auf X (19.11., 20:12)",
+          "url": "https://x.com/EleNaincy65175/status/2123494651516891181"
         },
         {
-          "title": "@axiomarket auf X (19.11., 19:10)",
-          "url": "https://x.com/axiomarket/status/2123479096956952670"
+          "title": "@Yochana42437421 auf X (19.11., 20:21)",
+          "url": "https://x.com/Yochana42437421/status/2123496982933107099"
         },
         {
-          "title": "@grok auf X (19.11., 19:25)",
-          "url": "https://x.com/grok/status/2123482910342693109"
+          "title": "@JohnToker7 auf X (19.11., 20:15)",
+          "url": "https://x.com/JohnToker7/status/2123495287805067676"
         }
       ],
-      "updatedAt": "2026-11-19T20:13:00+01:00"
+      "updatedAt": "2026-11-19T20:43:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
@@ -64,7 +64,7 @@
           "url": "https://x.com/ghostrider1159/status/2123491642355397019"
         }
       ],
-      "updatedAt": "2026-11-19T20:13:00+01:00"
+      "updatedAt": "2026-11-19T20:43:00+01:00"
     }
   }
 }
