@@ -329,6 +329,13 @@ document.body.addEventListener("click", (event) => {
     render();
     return;
   }
+  if (action === "moon-toggle") {
+    const side = el.dataset.side === "short" ? "short" : "long";
+    ui.moonOpen = ui.moonOpen || {};
+    ui.moonOpen[side] = !ui.moonOpen[side];
+    render();
+    return;
+  }
   if (action === "swarm-side") {
     ui.swarmSide = el.dataset.side === "ger" ? "ger" : "us";
     store.swarmSide = ui.swarmSide;

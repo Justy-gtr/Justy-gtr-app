@@ -512,6 +512,48 @@ for (const item of near?.candidates || []) {
 }
 if (near) sourcesOk(near.sources, "moonshots.nearTerm");
 
+function moonMoveList(list, label) {
+  if (!Array.isArray(list)) {
+    fail(`${label} liste`);
+    return;
+  }
+  if (!list.length) return;
+  if (list.length !== 3) fail(`${label}.length`);
+  const seen = new Set();
+  for (const item of list) {
+    const id = `${label}.${item?.ticker || "?"}`;
+    if (!item?.name || typeof item?.ticker !== "string" || !item.ticker.trim()) fail(`${id}.name`);
+    if (seen.has(item?.ticker)) fail(`${id} doppelt`);
+    seen.add(item?.ticker);
+    if (!/^[A-Z]{2}$/.test(item?.country || "")) fail(`${id}.country`);
+    if (typeof item?.exchange !== "string" || !item.exchange.trim()) fail(`${id}.exchange`);
+    if (typeof item?.priceEur !== "number") fail(`${id}.priceEur`);
+    if (typeof item?.hint !== "string" || !item.hint.trim() || /[\r\n]/.test(item.hint)) fail(`${id}.hint`);
+    if (!Array.isArray(item?.bullets) || item.bullets.length !== 3 || item.bullets.some((line) => typeof line !== "string" || !line.trim())) {
+      fail(`${id}.bullets`);
+    }
+    sourcesOk(item?.sources, id);
+    walkStrings(item, (text) => {
+      if (ADVICE.test(text) || /kaufsignal|anlageberatung/i.test(text)) fail(`${id} verbotenes Wort`);
+    });
+  }
+}
+
+if (moon && moon.schema !== 1) fail("moonshots.schema");
+if (moon && moon.updatedAt != null && !isoStamp(moon.updatedAt)) fail("moonshots.updatedAt");
+if (moon && moon.nextRun != null && !isoStamp(moon.nextRun)) fail("moonshots.nextRun");
+moonMoveList(moon?.long, "moonshots.long");
+moonMoveList(moon?.short, "moonshots.short");
+if (moon && moon.rocketLabNews != null) {
+  const news = moon.rocketLabNews;
+  if (typeof news?.text !== "string" || !news.text.trim()) fail("moonshots.rocketLabNews.text");
+  if (!isoStamp(news?.updatedAt)) fail("moonshots.rocketLabNews.updatedAt");
+  sourcesOk(news?.sources, "moonshots.rocketLabNews");
+  walkStrings(news, (text) => {
+    if (ADVICE.test(text) || /kaufsignal|anlageberatung/i.test(text)) fail("moonshots.rocketLabNews wort");
+  });
+}
+
 const universe = loaded["turbo-universe.json"];
 if (!universe?.note || !/Knock-out|Turbos/.test(universe.note)) fail("universe.note");
 if (!Array.isArray(universe?.symbols) || universe.symbols.length < 100) fail("universe.symbols");

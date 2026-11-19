@@ -27,7 +27,7 @@ Der Kurs-Workflow ändert `dataMode` nicht.
 | `prices.json` | `why`, `whySources`, `longTermOutlook`, `counterArgument`, `firstPrinciples`, `notes`, `narrativeExample` | alle Kurs-, Historien- und Quellenfelder der Börse, `asOf`, `fx`, `example: false` nach erfolgreichem Abruf |
 | `alerts.json` | nur `notified` auf `true` setzen | Einträge anlegen und Kursfelder aktualisieren, `example`-Alerts nach einem erfolgreichen Lauf entfernen |
 | `seasonality.json` | fasst sie nicht an | Wochentag und Uhrzeit je Aktie, einmal je Berliner Tag, ohne Rohkurse |
-| `moonshots.json` | Texte, Termin, Quellen, `pastCatalysts`, Hebel-ISIN der drei festen Kandidaten | Kurse und Zählung der festen Kandidaten; `nearTerm` täglich aus dem Zahlungskalender |
+| `moonshots.json` | Texte, Termin, Quellen, `pastCatalysts`, Hebel-ISIN der drei festen Kandidaten. `long`, `short`, `updatedAt`, `nextRun` und `rocketLabNews` schreibt die Datenroutine um 08:30 und 14:00 Berlin | Kurse und Zählung der festen Kandidaten; `nearTerm` täglich aus dem Zahlungskalender. `long`, `short` und `rocketLabNews` bleiben stehen |
 | `sentiment.json` | Stimmung je Aktie, mehrmals am Tag | fasst sie nicht an |
 | `fundamentals.json` | fasst sie nicht an | `scripts/fetch-fundamentals.mjs` im Kurs-Workflow, höchstens einmal je Berliner Tag |
 | `de-turbos.json` | Beispiel-ISINs, Emittent, Quelle | fasst sie nicht an |
@@ -595,6 +595,25 @@ Drei feste Kandidaten mit einem datierten Termin, erreichbar unter Mehr, plus de
 Der Assistent pflegt bei den festen dreien Name, `for`, `against`, `catalyst`, `pastCatalysts.dates`, `leverage` und `sources`. `scripts/fetch-moonshots.mjs` im Kurs-Workflow schreibt Kurs, Sparkline, `fx` und die Zählung. Die Zählung nimmt gut zwei Jahre Yahoo-Tagesschluss. Der Live-Kurs kann von Alpaca IEX kommen (`source`, `marketSource`). Die Zählung bleibt der Yahoo-Tagesschluss. `history.catalyst` ist der nächste Handelstag nach einem Termin nach US-Schluss, Schluss zu Schluss. `history.days` ist der Anteil der Tage mit einer Bewegung von mindestens 5 Prozent. Prozent erst ab `n` von 7. Die drei Fokus-Ticker SPCX, TSLA und RKLB kommen hier nicht vor.
 
 `nearTerm` wählt einmal je Berliner Tag bis zu drei Namen aus `data/turbo-universe.json`. Das Universum ist der Nasdaq-100 zum 22. Oktober 2026 plus bekannte liquide Momentum-Werte, also Namen mit verbreiteten Knock-outs bei Trade Republic. Der Nasdaq-Kalender liefert die Zahlentermine. Zuerst zählen heute und die nächsten drei Handelstage. Liegen dort weniger als drei Termine, geht das Fenster bis fünf Handelstage, und `note` sagt das. Die Reihenfolge mischt die Nähe des Termins mit der Zahl großer Folgetage in den letzten acht Quartalen (mindestens +5 % oder höchstens −5 %). Eine Options-Spanne kommt dazu, wenn Yahoo sie ohne Schlüssel hergibt. Eine Beispiel-ISIN nur aus einer öffentlichen Emittentenliste, sonst gar keine. Vorbörsliche Termine zählen den Handelstag selbst, nachbörsliche den nächsten Handelstag. Prozent erst ab `n` von 7.
+
+Zusätzlich trägt die Datei die Tageslisten für die News-Karte. `schema` ist `1`. `updatedAt` und `nextRun` sind ISO-8601 mit Offset oder `null`. `long` und `short` sind Listen. Leer heißt: die Karte bleibt aus. Gefüllt hat jede Liste genau drei Einträge. `long` sind Namen, die heute 10 % oder mehr steigen könnten. `short` sind Namen, die heute 7,5 % oder mehr fallen könnten. Das Land ist frei. Die Datenroutine schreibt beide Listen um 08:30 Berlin und setzt `nextRun` auf 14:00, dann umgekehrt. Der Kurs-Workflow lässt die Felder stehen. Ausgeliefert sind die Listen leer, `updatedAt` und `nextRun` sind `null`. Kein Platzhalter wird als echter Name eingetragen.
+
+Ein Eintrag:
+
+| Feld | Bedeutung |
+| --- | --- |
+| `name` | Anzeigename |
+| `ticker` | Kürzel |
+| `country` | ISO-3166-Alpha-2, daraus die Flagge |
+| `exchange` | Börsenplatz, kurz |
+| `priceEur` | Zahl, Kurs in Euro |
+| `hint` | eine Zeile, ohne Zeilenumbruch |
+| `bullets` | genau drei kurze deutsche Sätze |
+| `sources` | mindestens eine Quelle `{ "title", "url" }` |
+
+`rocketLabNews` ist optional. Fehlt das Feld oder ist `text` leer, zeigt die News-Seite unter der RKLB-Zeile nichts. Sonst: `text` (ein deutscher Satz), `updatedAt` (ISO-8601) und `sources` wie oben. Die Zeile sagt „einmal täglich“ und die Uhrzeit aus `updatedAt`.
+
+Verboten in diesen Texten: „kaufen“, „verkaufen“, „Empfehlung“, „Kaufsignal“, „Anlageberatung“.
 
 ## `sentiment.json`
 

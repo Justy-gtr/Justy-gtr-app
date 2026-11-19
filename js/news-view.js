@@ -1,5 +1,5 @@
 import { AGENDA_SYMBOLS, eventsWithin, filterNews, freshNews, hourHeader, hourSentence, hourShareStyle, hourSlot, NEWS_CHIPS, nextUpcoming, sentimentLight, swarmPotential, buildNews } from "./news.js";
-import { calendarSentence, calendarWhen, esc, formatStamp, safeUrl } from "./logic.js";
+import { calendarSentence, calendarWhen, esc, formatEUR, formatStamp, safeUrl } from "./logic.js";
 
 function swarmBlock(data, ui) {
   const side = ui?.swarmSide === "ger" ? "ger" : "us";
@@ -36,8 +36,99 @@ function hourRows(data, now, filter) {
     if (!line) return "";
     const light = sentimentLight(data, symbol);
     const pip = `<span class="mood-pip" style="background:${light.color};box-shadow:0 0 8px ${light.color}" role="img" aria-label="Stimmung ${esc(light.word)}"></span>`;
-    return `<p class="hour-row">${pip}<strong>${esc(symbol)}</strong><span class="hour-share" style="${hourShareStyle(line.share)}">${esc(line.text)}</span></p>`;
+    const row = `<p class="hour-row">${pip}<strong>${esc(symbol)}</strong><span class="hour-share" style="${hourShareStyle(line.share)}">${esc(line.text)}</span></p>`;
+    return symbol === "RKLB" ? row + rocketLabNewsLine(data) : row;
   }).join("");
+}
+
+function berlinClockLabel(value) {
+  const date = new Date(value || "");
+  if (Number.isNaN(date.getTime())) return "";
+  return new Intl.DateTimeFormat("de-DE", {
+    timeZone: "Europe/Berlin",
+    hour: "2-digit",
+    minute: "2-digit"
+  }).format(date);
+}
+
+function flagEmoji(country) {
+  const code = String(country || "").trim().toUpperCase();
+  if (!/^[A-Z]{2}$/.test(code)) return "";
+  return [...code].map((char) => String.fromCodePoint(127397 + char.charCodeAt(0))).join("");
+}
+
+function sourceLine(sources) {
+  const source = (sources || []).find((item) => item && (item.title || item.url));
+  if (!source) return "";
+  const title = source.title || "Quelle";
+  const href = safeUrl(source.url);
+  const label = `Quelle · ${title}`;
+  if (!href) return `<p class="moon-src">${esc(label)}</p>`;
+  return `<p class="moon-src"><a href="${esc(href)}" target="_blank" data-external="true">${esc(label)}</a></p>`;
+}
+
+function moonItems(file, key) {
+  const list = file?.[key];
+  if (!Array.isArray(list)) return [];
+  return list.filter((item) => item && item.name && item.ticker);
+}
+
+function moonCandidate(item, { expanded }) {
+  const where = [flagEmoji(item.country), item.exchange].filter(Boolean).join(" ");
+  const price = item.priceEur == null ? "" : formatEUR(item.priceEur);
+  const head = `<span class="moon-one"><strong>${esc(item.name)}</strong><em>${esc(item.ticker)}</em><span class="where">${esc(where)}</span><b>${esc(price)}</b></span>`;
+  if (!expanded) {
+    const hint = item.hint ? `<span class="moon-hint">${esc(item.hint)}</span>` : "";
+    return head + hint;
+  }
+  const bullets = (item.bullets || []).slice(0, 3).map((line) => `<li>${esc(line)}</li>`).join("");
+  return `<article class="moon-cand">${head}<ul class="moon-why">${bullets}</ul>${sourceLine(item.sources)}</article>`;
+}
+
+function moonSide(side, items, ui) {
+  if (!items.length) return "";
+  const open = ui?.moonOpen?.[side] === true;
+  const label = side === "short" ? "Short" : "Long";
+  const note = side === "short"
+    ? "könnten heute 7,5 % oder mehr fallen"
+    : "könnten heute 10 % oder mehr steigen";
+  const body = open
+    ? items.slice(0, 3).map((item) => moonCandidate(item, { expanded: true })).join("")
+    : moonCandidate(items[0], { expanded: false });
+  return `<div class="moon-side is-${side}${open ? " is-open" : ""}">
+    <button type="button" class="moon-hit" data-action="moon-toggle" data-side="${side}" aria-expanded="${open ? "true" : "false"}">
+      <span class="moon-side-k"><strong>${label} <i class="chev" aria-hidden="true"></i></strong><span>${note}</span></span>
+      ${open ? "" : body}
+    </button>
+    ${open ? body : ""}
+  </div>`;
+}
+
+function moonshotsCard(data, ui) {
+  const file = data?.moonshots;
+  const long = moonItems(file, "long");
+  const short = moonItems(file, "short");
+  if (!long.length && !short.length) return "";
+  const stand = berlinClockLabel(file?.updatedAt);
+  const next = berlinClockLabel(file?.nextRun);
+  const when = [stand ? `Stand ${stand}` : "", next ? `nächster ${next}` : ""].filter(Boolean).join(" · ");
+  return `<section class="card moon-board" aria-label="Moonshots">
+    <p class="kicker">Moonshots</p>
+    ${when ? `<p class="moon-stand">${esc(when)}</p>` : ""}
+    ${moonSide("long", long, ui)}
+    ${moonSide("short", short, ui)}
+  </section>`;
+}
+
+function rocketLabNewsLine(data) {
+  const news = data?.moonshots?.rocketLabNews;
+  const text = String(news?.text || "").trim();
+  if (!text) return "";
+  const stand = berlinClockLabel(news.updatedAt);
+  const source = (news.sources || []).find((item) => item && safeUrl(item.url));
+  const href = source ? safeUrl(source.url) : "";
+  const link = href ? ` · <a href="${esc(href)}" target="_blank" data-external="true">${esc(source.title || "Quelle")}</a>` : "";
+  return `<p class="rklb-daily"><b>ROCKET LAB NEWS</b> · einmal täglich${stand ? ` · Stand ${esc(stand)}` : ""} · ${esc(text)}${link}</p>`;
 }
 
 function eventLines(events) {
@@ -81,6 +172,7 @@ export function renderNews(data, ui, now = new Date()) {
       <p class="eyebrow">News</p>
       <h2>Meldungen</h2>
     </header>
+    ${moonshotsCard(data, ui)}
     <section class="card" aria-label="Aktuelle Stunde nach Wochentag">
       <p class="kicker">${esc(hourHeader(hourSlot(now)))}</p>
       ${hourRows(data, now, filter)}

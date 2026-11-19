@@ -280,6 +280,65 @@ test("Bewertung lässt ein negatives KGV leer und setzt die Spanne", () => {
   assert.equal(BANNED.test(html), false);
 });
 
+test("Moonshots bleiben zu, bis die Listen gefüllt sind, und klappen in der Zeile auf", () => {
+  const now = new Date("2026-11-17T21:00:00+01:00");
+  const item = (name, ticker, country, exchange) => ({
+    name,
+    ticker,
+    country,
+    exchange,
+    priceEur: 42,
+    hint: "Bewegung am Morgen",
+    bullets: ["Erster Punkt", "Zweiter Punkt", "Dritter Punkt"],
+    sources: [{ title: "Börse", url: "https://example.com/kurs" }]
+  });
+  const moonshots = {
+    schema: 1,
+    updatedAt: "2026-11-19T08:30:00+01:00",
+    nextRun: "2026-11-19T14:00:00+01:00",
+    long: [item("Nordwerk", "NORD", "US", "NYSE"), item("Rheinwerk", "RHEIN", "DE", "Xetra"), item("Hafenwerk", "HAFN", "JP", "TSE")],
+    short: [item("Südwerk", "SUED", "HK", "HKEX"), item("Westwerk", "WEST", "KR", "KRX"), item("Ostwerk", "OST", "GB", "LSE")]
+  };
+  const hidden = renderNews({ moonshots: { long: [], short: [] } }, {}, now);
+  assert.equal(hidden.includes("moon-board"), false);
+  assert.equal(hidden.includes("ROCKET LAB NEWS"), false);
+  const closed = renderNews({ moonshots }, {}, now);
+  assert.match(closed, /moon-board/);
+  assert.match(closed, /Stand 08:30 · nächster 14:00/);
+  assert.match(closed, /könnten heute 10 % oder mehr steigen/);
+  assert.match(closed, /könnten heute 7,5 % oder mehr fallen/);
+  assert.match(closed, /Nordwerk/);
+  assert.match(closed, /Südwerk/);
+  assert.equal(closed.includes("Rheinwerk"), false);
+  assert.equal(closed.includes("Erster Punkt"), false);
+  assert.equal(closed.includes("Beispiel"), false);
+  const open = renderNews({ moonshots }, { moonOpen: { long: true } }, now);
+  assert.match(open, /Rheinwerk/);
+  assert.match(open, /Hafenwerk/);
+  assert.match(open, /Erster Punkt/);
+  assert.match(open, /Quelle · Börse/);
+  assert.equal(open.includes("Westwerk"), false);
+  assert.match(open, /aria-expanded="true"/);
+  const withNews = renderNews({
+    moonshots: {
+      ...moonshots,
+      rocketLabNews: {
+        text: "Ein Satz zur Firma.",
+        updatedAt: "2026-11-19T14:00:00+01:00",
+        sources: [{ title: "Firma", url: "https://example.com/rklb" }]
+      }
+    },
+    hours: { symbols: { RKLB: { "2": { "21": { n: 10, up: 6, down: 4 } } } } }
+  }, {}, now);
+  const rklbAt = withNews.indexOf(">RKLB<");
+  const newsAt = withNews.indexOf("ROCKET LAB NEWS");
+  assert.ok(rklbAt > 0 && newsAt > rklbAt);
+  assert.match(withNews, /einmal täglich · Stand 14:00/);
+  assert.match(withNews, /Ein Satz zur Firma/);
+  assert.equal(BANNED.test(open + withNews), false);
+  assert.equal((open + withNews).includes("Keine Anlageberatung"), false);
+});
+
 test("Unter 50 Prozent ist rot, ab 50 Prozent grün", () => {
   const days = aggregateWeekdays([
     { t: "2026-01-02", close: 100 },
