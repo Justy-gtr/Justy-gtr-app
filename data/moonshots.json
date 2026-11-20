@@ -185,9 +185,9 @@
   "asOf": "2026-11-19T06:00:00+01:00",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.0972,
+    "rate": 1.0991,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-20T02:27:43+01:00",
+    "asOf": "2026-11-20T07:51:45+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -233,8 +233,8 @@
         "catalystLabel": "Nach Zahlen",
         "daysLabel": "Große Tage",
         "note": "Schluss am Zahlentag bis zum nächsten Handelstag.",
-        "from": "2024-10-09",
-        "to": "2026-11-18",
+        "from": "2024-10-10",
+        "to": "2026-11-19",
         "catalyst": {
           "n": 8,
           "up": 1,
@@ -347,7 +347,6 @@
       "changePct": -3.23,
       "eurMethod": "usd_div_eurusd",
       "sparkline": [
-        190.96,
         193.56,
         192.82,
         197.58,
@@ -419,8 +418,8 @@
         "catalystLabel": "Nach Zahlen",
         "daysLabel": "Große Tage",
         "note": "Schluss am Zahlentag bis zum nächsten Handelstag. Der nächste Termin ist ein Start, kein Zahlentag.",
-        "from": "2024-10-09",
-        "to": "2026-11-18",
+        "from": "2024-10-10",
+        "to": "2026-11-19",
         "catalyst": {
           "n": 8,
           "up": 2,
@@ -533,7 +532,6 @@
       "changePct": -3.63,
       "eurMethod": "usd_div_eurusd",
       "sparkline": [
-        183.07,
         182.71,
         184.11,
         183.5,
@@ -605,8 +603,8 @@
         "catalystLabel": "Nach Zahlen",
         "daysLabel": "Große Tage",
         "note": "Schluss am Zahlentag bis zum nächsten Handelstag.",
-        "from": "2024-10-09",
-        "to": "2026-11-18",
+        "from": "2024-10-10",
+        "to": "2026-11-19",
         "catalyst": {
           "n": 8,
           "up": 3,
@@ -719,7 +717,6 @@
       "changePct": -4.87,
       "eurMethod": "usd_div_eurusd",
       "sparkline": [
-        203.18,
         211.39,
         214.15,
         217.86,
@@ -817,8 +814,8 @@
         "history": {
           "catalystLabel": "Am Folgetag",
           "note": "Schluss am Zahlentag bis zum nächsten Handelstag.",
-          "from": "2024-10-09",
-          "to": "2026-11-18",
+          "from": "2024-10-10",
+          "to": "2026-11-19",
           "catalyst": {
             "n": 8,
             "up": 2,
@@ -896,7 +893,6 @@
         "changePct": -1.05,
         "eurMethod": "usd_div_eurusd",
         "sparkline": [
-          289.97,
           290.32,
           298.65,
           298.73,
@@ -967,8 +963,8 @@
         "history": {
           "catalystLabel": "Am Folgetag",
           "note": "Schluss am Zahlentag bis zum nächsten Handelstag.",
-          "from": "2024-10-09",
-          "to": "2026-11-18",
+          "from": "2024-10-10",
+          "to": "2026-11-19",
           "catalyst": {
             "n": 8,
             "up": 3,
@@ -1046,7 +1042,6 @@
         "changePct": -3.32,
         "eurMethod": "usd_div_eurusd",
         "sparkline": [
-          211.26,
           212.79,
           211.32,
           208.44,
@@ -1117,8 +1112,8 @@
         "history": {
           "catalystLabel": "Am Zahlentag",
           "note": "Schluss am Vortag bis zum Schluss am Zahlentag. Frühere Termine sind wie der nächste vor der Eröffnung gezählt.",
-          "from": "2024-10-09",
-          "to": "2026-11-18",
+          "from": "2024-10-10",
+          "to": "2026-11-19",
           "catalyst": {
             "n": 8,
             "up": 1,
@@ -1196,7 +1191,6 @@
         "changePct": -1,
         "eurMethod": "usd_div_eurusd",
         "sparkline": [
-          105.96,
           105.83,
           104.97,
           104.85,
