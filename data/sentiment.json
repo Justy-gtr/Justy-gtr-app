@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T19:10:00+01:00",
+  "updatedAt": "2026-11-20T19:35:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
       "score": -45,
       "postsCount": 25,
-      "reason": "SpaceX bleibt rund 7 % im Minus, KI-Werte sind heute klar die Verlierer. Gesprächsthema: Tepper hat seinen SpaceX-Anteil im Q3 stark ausgebaut.",
+      "reason": "SpaceX bleibt rund 7 % im Minus. Neu: Kreditgeber wollen KI-Chips nicht ins All schicken, ein US-Demokrat droht wegen Starshield mit Mittelstopp.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (20.11., 18:59)",
-          "url": "https://x.com/spcxGOD/status/2123838720407130166"
+          "title": "@MojoTricks auf X (20.11., 19:13)",
+          "url": "https://x.com/MojoTricks/status/2123842077465378828"
         },
         {
-          "title": "@HindsMarkets auf X (20.11., 19:00)",
-          "url": "https://x.com/HindsMarkets/status/2123838812258292164"
+          "title": "@LiveSquawk auf X (20.11., 19:16)",
+          "url": "https://x.com/LiveSquawk/status/2123842813528068341"
         },
         {
-          "title": "@Tiefseher auf X (20.11., 19:06)",
-          "url": "https://x.com/Tiefseher/status/2123840454462525793"
+          "title": "@JOBhakdi auf X (20.11., 19:28)",
+          "url": "https://x.com/JOBhakdi/status/2123845999647215716"
         }
       ],
-      "updatedAt": "2026-11-20T19:10:00+01:00"
+      "updatedAt": "2026-11-20T19:35:00+01:00"
     },
     "TSLA": {
       "mood": "schlecht",
@@ -43,28 +43,28 @@
           "url": "https://x.com/GTA_Terminal/status/2123840130242818443"
         }
       ],
-      "updatedAt": "2026-11-20T19:10:00+01:00"
+      "updatedAt": "2026-11-20T19:35:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
-      "score": -35,
-      "postsCount": 22,
-      "reason": "Riskante Wachstumswerte wie Rocket Lab werden heute stark abgestraft. Fans erinnern an den Rekord-Auftragsbestand von 3,57 Mrd. $ und bleiben dabei.",
+      "score": -30,
+      "postsCount": 24,
+      "reason": "Rocket Lab bleibt unter Druck. Fans rufen zum Durchhalten auf und loben Auftragsbestand von 3,57 Mrd. $ und rund 4,6 Mrd. $ Cash gegenüber AST SpaceMobile.",
       "sources": [
         {
-          "title": "@MacroGekko auf X (20.11., 18:53)",
-          "url": "https://x.com/MacroGekko/status/2123837024100901226"
+          "title": "@HypaWaveNZ auf X (20.11., 19:27)",
+          "url": "https://x.com/HypaWaveNZ/status/2123845773284765812"
         },
         {
-          "title": "@WhullFee auf X (20.11., 19:02)",
-          "url": "https://x.com/WhullFee/status/2123839322420031817"
+          "title": "@Incite_corp auf X (20.11., 19:15)",
+          "url": "https://x.com/Incite_corp/status/2123842606287433936"
         },
         {
-          "title": "@itschrisray auf X (20.11., 18:59)",
-          "url": "https://x.com/itschrisray/status/2123838584109023293"
+          "title": "@pekutovsky45098 auf X (20.11., 19:26)",
+          "url": "https://x.com/pekutovsky45098/status/2123845366546051218"
         }
       ],
-      "updatedAt": "2026-11-20T19:10:00+01:00"
+      "updatedAt": "2026-11-20T19:35:00+01:00"
     }
   }
 }
