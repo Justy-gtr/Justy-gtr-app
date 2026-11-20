@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T16:34:00+01:00",
+  "updatedAt": "2026-11-20T17:10:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
-      "score": -50,
-      "postsCount": 15,
-      "reason": "SpaceX rutscht unter den IPO-Preis von 135 $, KI-Werte fallen breit. Kritiker sprechen von zu hohen Bewertungen, Fans setzen auf Starship und Musks Pläne.",
+      "score": -40,
+      "postsCount": 12,
+      "reason": "SpaceX bleibt um 131 $ unter dem IPO-Preis. Neu: Apollo und Goldman haben die 44-Mrd.-$-Finanzierung für die GPUs festgezurrt, das sorgt für etwas Ruhe.",
       "sources": [
         {
-          "title": "@Kalshi_Finance auf X (20.11., 16:12)",
-          "url": "https://x.com/Kalshi_Finance/status/2123796507694379288"
+          "title": "@financialjuice auf X (20.11., 17:04)",
+          "url": "https://x.com/financialjuice/status/2123809663842173054"
         },
         {
-          "title": "@aacryptoverse auf X (20.11., 16:27)",
-          "url": "https://x.com/aacryptoverse/status/2123800433923875128"
+          "title": "@MookieNFT auf X (20.11., 16:35)",
+          "url": "https://x.com/MookieNFT/status/2123802389807534587"
         },
         {
-          "title": "@ion_gab auf X (20.11., 16:03)",
-          "url": "https://x.com/ion_gab/status/2123794372671987984"
+          "title": "@AIStockSavvy auf X (20.11., 17:05)",
+          "url": "https://x.com/AIStockSavvy/status/2123809936836555149"
         }
       ],
-      "updatedAt": "2026-11-20T16:34:00+01:00"
+      "updatedAt": "2026-11-20T17:10:00+01:00"
     },
     "TSLA": {
-      "mood": "gemischt",
-      "score": -15,
-      "postsCount": 12,
-      "reason": "Tesla hat die Kurslücke geschlossen und gibt wieder nach. Gute Nachrichten wie FSD in Italien und eine geplante Polysilizium-Raffinerie in Texas machen die Runde.",
+      "mood": "schlecht",
+      "score": -30,
+      "postsCount": 8,
+      "reason": "Tesla steht bei den roten Tagesverlierern. Trader beobachten, ob der Kurs hält, manche rechnen bei weiterem Marktrutsch mit rund 335 $ und posten Spott-Memes.",
       "sources": [
         {
-          "title": "@ChrisHuRocks auf X (20.11., 16:15)",
-          "url": "https://x.com/ChrisHuRocks/status/2123797333724803243"
+          "title": "@kpak82 auf X (20.11., 16:52)",
+          "url": "https://x.com/kpak82/status/2123806681838518694"
         },
         {
-          "title": "@GrindeOptions auf X (20.11., 16:12)",
-          "url": "https://x.com/GrindeOptions/status/2123796677119393856"
+          "title": "@MarketRebels auf X (20.11., 16:57)",
+          "url": "https://x.com/MarketRebels/status/2123807933985443976"
         },
         {
-          "title": "@sperezintexas auf X (20.11., 16:02)",
-          "url": "https://x.com/sperezintexas/status/2123794088902242403"
+          "title": "@ChrisHuRocks auf X (20.11., 17:07)",
+          "url": "https://x.com/ChrisHuRocks/status/2123810460097290329"
         }
       ],
-      "updatedAt": "2026-11-20T16:34:00+01:00"
+      "updatedAt": "2026-11-20T17:10:00+01:00"
     },
     "RKLB": {
-      "mood": "gemischt",
-      "score": -15,
-      "postsCount": 3,
-      "reason": "Wenig los bei Rocket Lab: Ein paar Fans jubeln, andere spotten über die Verluste bei Raumfahrt-Aktien. Echte Neuigkeiten gibt es gerade keine.",
+      "mood": "schlecht",
+      "score": -30,
+      "postsCount": 6,
+      "reason": "Rocket Lab liegt gut 4 % im Minus bei rund 51 $, seit dem 11.11. sind es etwa 31 %. Treue Fans bleiben dabei, viele andere sind frustriert.",
       "sources": [
         {
-          "title": "@ProKayaFinance auf X (20.11., 15:51)",
-          "url": "https://x.com/ProKayaFinance/status/2123791250776010887"
+          "title": "@KingHeupel auf X (20.11., 16:59)",
+          "url": "https://x.com/KingHeupel/status/2123808573578694944"
         },
         {
-          "title": "@vinceisbullish auf X (20.11., 16:05)",
-          "url": "https://x.com/vinceisbullish/status/2123794811798814999"
+          "title": "@bintzan9a auf X (20.11., 16:40)",
+          "url": "https://x.com/bintzan9a/status/2123803702238871821"
         },
         {
-          "title": "@MoodSpaceX auf X (20.11., 15:11)",
-          "url": "https://x.com/MoodSpaceX/status/2123781156424323282"
+          "title": "@real_sunny_long auf X (20.11., 16:49)",
+          "url": "https://x.com/real_sunny_long/status/2123805839345488347"
         }
       ],
-      "updatedAt": "2026-11-20T16:34:00+01:00"
+      "updatedAt": "2026-11-20T17:10:00+01:00"
     }
   }
 }
