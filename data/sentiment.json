@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T15:13:00+01:00",
+  "updatedAt": "2026-11-20T15:35:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
-      "score": -40,
-      "postsCount": 14,
-      "reason": "SpaceX liegt vorbörslich gut 6 % im Minus, Sorgen um teure Chip-Anleihen über 8 % Zins. Fans halten dagegen und verweisen auf Tepper, der stark aufgestockt hat.",
+      "score": -45,
+      "postsCount": 12,
+      "reason": "SpaceX dürfte unter dem IPO-Preis starten, Leute rechnen rund 100 Mrd. $ Börsenwert-Verlust vor. Fans sehen nahe Unterstützungen und Teppers großen Einstieg.",
       "sources": [
         {
-          "title": "@gonta_southwood auf X (20.11., 14:49)",
-          "url": "https://x.com/gonta_southwood/status/2123775638138142827"
+          "title": "@trawetsnagrom auf X (20.11., 15:29)",
+          "url": "https://x.com/trawetsnagrom/status/2123785823409889354"
         },
         {
-          "title": "@BullishWhisper auf X (20.11., 14:53)",
-          "url": "https://x.com/BullishWhisper/status/2123776873255854375"
+          "title": "@InvestVerified auf X (20.11., 15:12)",
+          "url": "https://x.com/InvestVerified/status/2123781407272993171"
         },
         {
-          "title": "@TeslaEuskadi auf X (20.11., 14:47)",
-          "url": "https://x.com/TeslaEuskadi/status/2123775260755656794"
+          "title": "@McJohnnymac auf X (20.11., 15:09)",
+          "url": "https://x.com/McJohnnymac/status/2123780852249247958"
         }
       ],
-      "updatedAt": "2026-11-20T15:13:00+01:00"
+      "updatedAt": "2026-11-20T15:35:00+01:00"
     },
     "TSLA": {
-      "mood": "gemischt",
-      "score": -15,
-      "postsCount": 14,
-      "reason": "Nach dem HSBC-Hochstufen kippt die Laune: Viele spotten über den Rückgang von fast 400 $ und rechnen mit weiter fallenden Kursen. Fans setzen auf die SpaceX-Fusion.",
+      "mood": "schlecht",
+      "score": -30,
+      "postsCount": 13,
+      "reason": "Tesla fällt vorbörslich deutlich trotz guter Nachrichten. Gary Black warnt vor Verwässerung bei einer SpaceX-Fusion, mehrere Trader steigen aus.",
       "sources": [
         {
-          "title": "@BoBbyPleWniaK auf X (20.11., 14:37)",
-          "url": "https://x.com/BoBbyPleWniaK/status/2123772706621403572"
+          "title": "@garyblack00 auf X (20.11., 15:29)",
+          "url": "https://x.com/garyblack00/status/2123785845400629629"
         },
         {
-          "title": "@sperezintexas auf X (20.11., 15:09)",
-          "url": "https://x.com/sperezintexas/status/2123780817591628255"
+          "title": "@dale93930 auf X (20.11., 15:28)",
+          "url": "https://x.com/dale93930/status/2123785549219828157"
         },
         {
-          "title": "@JTrades31 auf X (20.11., 14:57)",
-          "url": "https://x.com/JTrades31/status/2123777679757344906"
+          "title": "@squawksquare auf X (20.11., 15:29)",
+          "url": "https://x.com/squawksquare/status/2123785922428940785"
         }
       ],
-      "updatedAt": "2026-11-20T15:13:00+01:00"
+      "updatedAt": "2026-11-20T15:35:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": -5,
-      "postsCount": 10,
-      "reason": "Ruhig bei Rocket Lab: Die 1.000 Rutherford-Triebwerke werden gelobt, einige Anleger schalten wegen der Marktschwäche aber lieber die Kursalarme ab.",
+      "score": -15,
+      "postsCount": 9,
+      "reason": "Raumfahrt-Aktien wurden diese Woche hart getroffen, Anleger zählen die Abstände zum Rekordhoch. Wenige hoffen auf eine Erholung, sonst ist es ruhig.",
       "sources": [
         {
-          "title": "@FelixSchlang auf X (20.11., 14:21)",
-          "url": "https://x.com/FelixSchlang/status/2123768672845955363"
+          "title": "@MoodSpaceX auf X (20.11., 15:11)",
+          "url": "https://x.com/MoodSpaceX/status/2123781156424323282"
         },
         {
-          "title": "@BacklogAlpha auf X (20.11., 15:00)",
-          "url": "https://x.com/BacklogAlpha/status/2123778393959202890"
+          "title": "@armaanzinvest auf X (20.11., 15:10)",
+          "url": "https://x.com/armaanzinvest/status/2123780989529059788"
         },
         {
-          "title": "@ayanjainhere auf X (20.11., 14:55)",
-          "url": "https://x.com/ayanjainhere/status/2123777355634319493"
+          "title": "@enoughbllst auf X (20.11., 15:24)",
+          "url": "https://x.com/enoughbllst/status/2123784616230445109"
         }
       ],
-      "updatedAt": "2026-11-20T15:13:00+01:00"
+      "updatedAt": "2026-11-20T15:35:00+01:00"
     }
   }
 }
