@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T14:05:00+01:00",
+  "updatedAt": "2026-11-20T14:37:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
-      "score": -45,
-      "postsCount": 18,
-      "reason": "SpaceX fällt vorbörslich rund 5 % und wieder unter den IPO-Preis. Viele reden über Kreditgeber, die Nvidia-Chips nicht ins All lassen wollen.",
+      "score": -50,
+      "postsCount": 16,
+      "reason": "SpaceX rutscht vorbörslich gut 6 % auf rund 130 $. Leute nennen den Kursrutsch bei KI-Werten, die 32-Mrd.-$-Anleihe und Streit mit Kreditgebern über Chips im All.",
       "sources": [
         {
-          "title": "@CHItrader auf X (20.11., 13:02)",
-          "url": "https://x.com/CHItrader/status/2123748899827401121"
+          "title": "@gonta_southwood auf X (20.11., 14:23)",
+          "url": "https://x.com/gonta_southwood/status/2123769274967970186"
         },
         {
-          "title": "@ArthurRhodes_ auf X (20.11., 13:23)",
-          "url": "https://x.com/ArthurRhodes_/status/2123754179508437111"
+          "title": "@DRJBori63 auf X (20.11., 14:03)",
+          "url": "https://x.com/DRJBori63/status/2123764042569228347"
         },
         {
-          "title": "@capitalsnitch auf X (20.11., 12:38)",
-          "url": "https://x.com/capitalsnitch/status/2123742715342901649"
+          "title": "@spcxGOD auf X (20.11., 14:32)",
+          "url": "https://x.com/spcxGOD/status/2123771389098307814"
         }
       ],
-      "updatedAt": "2026-11-20T14:05:00+01:00"
+      "updatedAt": "2026-11-20T14:37:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": -5,
-      "postsCount": 18,
-      "reason": "HSBC hebt Tesla auf Halten und das Kursziel auf 359 $, Italien erlaubt FSD. Trotzdem liegt die Aktie im Minus, viele reden über eine Fusion mit SpaceX.",
+      "postsCount": 15,
+      "reason": "HSBC hebt Tesla auf Halten und das Kursziel auf 359 $, viele reden über eine Fusion mit SpaceX. Der schwache Gesamtmarkt drückt aber auf die Laune.",
       "sources": [
-        {
-          "title": "@EvasTeslaSPlaid auf X (20.11., 12:51)",
-          "url": "https://x.com/EvasTeslaSPlaid/status/2123746161152639217"
-        },
         {
           "title": "@barronsonline auf X (20.11., 13:28)",
           "url": "https://x.com/barronsonline/status/2123755270161478034"
         },
         {
-          "title": "@CHItrader auf X (20.11., 13:13)",
-          "url": "https://x.com/CHItrader/status/2123751619757998313"
+          "title": "@StockStormX auf X (20.11., 13:34)",
+          "url": "https://x.com/StockStormX/status/2123756942544044126"
+        },
+        {
+          "title": "@Michael34952 auf X (20.11., 13:40)",
+          "url": "https://x.com/Michael34952/status/2123758280316985582"
         }
       ],
-      "updatedAt": "2026-11-20T14:05:00+01:00"
+      "updatedAt": "2026-11-20T14:37:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": -10,
+      "score": 0,
       "postsCount": 12,
-      "reason": "Fans feiern über 1.000 gebaute Rutherford-Triebwerke und finden 50 $ günstig. Viele andere sprechen von Angst am ganzen Markt.",
+      "reason": "Über 1.000 gebaute Rutherford-Triebwerke machen die Runde, Fans bleiben gelassen und sehen 50 $ als tiefen Kurs. Der Markt insgesamt wirkt aber ängstlich.",
       "sources": [
         {
-          "title": "@islandtimechef auf X (20.11., 14:01)",
-          "url": "https://x.com/islandtimechef/status/2123763698556670013"
+          "title": "@FelixSchlang auf X (20.11., 14:21)",
+          "url": "https://x.com/FelixSchlang/status/2123768672845955363"
+        },
+        {
+          "title": "@Neil_Shares auf X (20.11., 14:06)",
+          "url": "https://x.com/Neil_Shares/status/2123764966595682795"
         },
         {
           "title": "@RCapitalX auf X (20.11., 13:52)",
           "url": "https://x.com/RCapitalX/status/2123761308998979697"
-        },
-        {
-          "title": "@broisquant auf X (20.11., 13:19)",
-          "url": "https://x.com/broisquant/status/2123753107414827492"
         }
       ],
-      "updatedAt": "2026-11-20T14:05:00+01:00"
+      "updatedAt": "2026-11-20T14:37:00+01:00"
     }
   }
 }
