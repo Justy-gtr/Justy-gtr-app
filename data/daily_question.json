@@ -1,41 +1,72 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-18-rklb",
-    "date": "2026-11-18",
-    "question": "Schließt RKLB am Donnerstag, 19. November, an der Nasdaq höher als am Mittwoch (53,07 $)?",
+    "id": "2026-11-20-rklb",
+    "date": "2026-11-20",
+    "question": "Schließt RKLB am Freitag, 20. November, an der Nasdaq höher als am Donnerstag (50,99 $)?",
     "karlAnswer": "nein",
-    "karlReason": "Knapp „nein“, etwa 45 zu 55. RKLB hat fünf Tage in Folge verloren (von 66,15 auf 53,07 $) und lag nachbörslich um 22:13 bei 53,00 $ (Yahoo). Dagegen spricht: Bei den Optionen wächst die Nachfrage nach Absicherung gegen fallende Kurse (TipRanks/The Fly), das Fed-Protokoll zeigt, dass fast alle Mitglieder weitere Zinserhöhungen erwarten, was teure Wachstumswerte drückt (CNBC), und am Do lenkt der Anthropic-Börsengang viel Geld auf eine einzige Aktie (CNBC). Dafür spricht: Nach dem Rückgang ist eine Gegenbewegung möglich, und Rocket Lab meldete am Abend, alle 8 Tage ein Archimedes-Triebwerk bauen zu können (Rocket Lab auf X). Karl lag zuletzt mit „ja“ zweimal in Folge daneben.",
+    "karlReason": "Knapp „nein“, etwa 45 zu 55. RKLB hat sechs Tage in Folge verloren, von 66,15 auf 50,99 $ (Yahoo), eine Gegenbewegung ist also möglich. Dagegen spricht der Morgen: Nasdaq-100-Future rund −1,1 %, Kospi −5,5 %, Nikkei −4,9 % (CNBC), und der Verkauf trifft vor allem KI- und Wachstumswerte (dpa-AFX). Eigene Rocket-Lab-Nachrichten gibt es über Nacht nicht. Karl lag gestern mit „nein“ richtig.",
     "outcome": null,
-    "resolvesAt": "2026-11-19T22:15:00+01:00",
+    "resolvesAt": "2026-11-20T22:15:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: RKLB (Schluss 18.11. 53,07 $, nachbörslich 22:13 53,00 $)",
-        "url": "https://finance.yahoo.com/quote/RKLB/"
+        "title": "Yahoo Finance: RKLB-Historie (Schluss 19.11. 50,99 $, 11.11. 66,15 $)",
+        "url": "https://finance.yahoo.com/quote/RKLB-Historie/"
       },
       {
-        "title": "Yahoo Finance: RKLB-Historie (Schluss 18.11. 53,07 $, 11.11. 66,15 $)",
-        "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        "title": "CNBC: Futures tiefer, Dow erstmals seit Juni unter 50.000 (Live, 20.11.)",
+        "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
       },
       {
-        "title": "TipRanks (The Fly): Cboe-Daten zeigen gemischte Optionsstimmung bei Rocket Lab (18.11.)",
-        "url": "https://www.tipranks.com/news/the-fly/cboe-data-shows-mixed-options-sentiment-in-rocket-lab-usa-with-shares-down-1-83-thefly-news"
+        "title": "dpa-AFX via onvista: Dax im Sog der Weltbörsen weiter bergab (20.11., 06:11)",
+        "url": "https://www.onvista.de/news/2026/11-20-dax-flash-dax-im-sog-der-weltboersen-weiter-bergab-25-000-punkte-in-gefahr-0-10-26578641"
       },
       {
-        "title": "CNBC: Fed-Mitglieder erwarten weitere Zinserhöhungen und sorgen sich um KI-Inflation – Protokoll (18.11.)",
-        "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html"
-      },
-      {
-        "title": "CNBC: Anthropic erwägt größeres Angebot, Preis nach US-Schluss (18.11.)",
-        "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
-      },
-      {
-        "title": "@RocketLab auf X (18.11., 20:50): ein Archimedes-Triebwerk alle 8 Tage",
-        "url": "https://x.com/RocketLab/status/2123141853528871143"
+        "title": "MarketBeat: Rocket Lab fällt auf 50,99 $ (19.11.)",
+        "url": "https://www.marketbeat.com/instant-alerts/price-rocket-lab-nasdaq-rklb-shares-down-39-time-to-sell-2026-11-19/"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-18-rklb",
+      "date": "2026-11-18",
+      "question": "Schließt RKLB am Donnerstag, 19. November, an der Nasdaq höher als am Mittwoch (53,07 $)?",
+      "karlAnswer": "nein",
+      "karlReason": "Knapp „nein“, etwa 45 zu 55. RKLB hat fünf Tage in Folge verloren (von 66,15 auf 53,07 $) und lag nachbörslich um 22:13 bei 53,00 $ (Yahoo). Dagegen spricht: Bei den Optionen wächst die Nachfrage nach Absicherung gegen fallende Kurse (TipRanks/The Fly), das Fed-Protokoll zeigt, dass fast alle Mitglieder weitere Zinserhöhungen erwarten, was teure Wachstumswerte drückt (CNBC), und am Do lenkt der Anthropic-Börsengang viel Geld auf eine einzige Aktie (CNBC). Dafür spricht: Nach dem Rückgang ist eine Gegenbewegung möglich, und Rocket Lab meldete am Abend, alle 8 Tage ein Archimedes-Triebwerk bauen zu können (Rocket Lab auf X). Karl lag zuletzt mit „ja“ zweimal in Folge daneben.",
+      "outcome": "nein",
+      "resolvesAt": "2026-11-19T22:15:00+01:00",
+      "sources": [
+        {
+          "title": "Yahoo Finance: RKLB (Schluss 18.11. 53,07 $, nachbörslich 22:13 53,00 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/"
+        },
+        {
+          "title": "Yahoo Finance: RKLB-Historie (Schluss 18.11. 53,07 $, 11.11. 66,15 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        },
+        {
+          "title": "TipRanks (The Fly): Cboe-Daten zeigen gemischte Optionsstimmung bei Rocket Lab (18.11.)",
+          "url": "https://www.tipranks.com/news/the-fly/cboe-data-shows-mixed-options-sentiment-in-rocket-lab-usa-with-shares-down-1-83-thefly-news"
+        },
+        {
+          "title": "CNBC: Fed-Mitglieder erwarten weitere Zinserhöhungen und sorgen sich um KI-Inflation – Protokoll (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html"
+        },
+        {
+          "title": "CNBC: Anthropic erwägt größeres Angebot, Preis nach US-Schluss (18.11.)",
+          "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
+        },
+        {
+          "title": "@RocketLab auf X (18.11., 20:50): ein Archimedes-Triebwerk alle 8 Tage",
+          "url": "https://x.com/RocketLab/status/2123141853528871143"
+        },
+        {
+          "title": "Yahoo Finance: RKLB-Historie (Schluss Do 19.11. 50,99 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB-Historie/"
+        }
+      ]
+    },
     {
       "id": "2026-11-17-rklb",
       "date": "2026-11-17",

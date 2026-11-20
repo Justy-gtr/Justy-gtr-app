@@ -1,95 +1,67 @@
 {
   "example": false,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "title": "Morgen-Briefing",
   "greeting": "Guten Morgen, Justy.",
-  "summary": "Donnerstag, der Tag des Anthropic-Börsengangs. Anthropic hat den Preis auf 83 $ gesetzt, über der Spanne von 70–78 $, und sammelt mit 81,3 Mrd. $ mehr ein als SpaceX im Juni; Handel ab heute an der Nasdaq unter ANT. Das hebt die Futures: Nasdaq-100 gegen 07:40 +1,5 %, S&P 500 +0,8 %, Dax-Future +0,3 % bei 25.883 nach −1,2 % am Mittwoch. Asien schwächer: Hang Seng −2,2 %, Alibaba −5,2 % wegen neuer US-Chipregeln. Die Fed bleibt hart: Kashkari sagt, die Märkte erwarten mehr Erhöhungen als die Fed, Williams lehnt 50 Basispunkte aber ab. Mi-Schluss: SPCX 143,50 $ (+1,3 %), TSLA 383,72 $ (+0,9 %), RKLB 53,07 $ (−3,6 %), MRVL 145,54 $ (−2,2 %).",
+  "summary": "Freitag nach einem schweren Donnerstag. Das Anthropic-Debüt hat den KI-Handel nicht getragen: ANT schloss bei 97,17 $ (+17 % zum Ausgabepreis, Hoch 115,10 $), aber Nasdaq −2,25 %, S&P 500 −2,0 %, Dow −2,2 % und erstmals seit Juni unter 50.000. Asien bricht heute ein (Kospi −5,5 %, Nikkei −4,9 %), Nasdaq-100-Future rund −1,1 %, der Dax soll rund 1,3 % tiefer bei etwa 25.120 starten. Do-Schluss: SPCX 138,43 $ (−3,5 %), TSLA 374,41 $ (−2,4 %), RKLB 50,99 $ (−3,9 %), MRVL 138,47 $ (−4,9 %).",
   "bullets": [
-    "Anthropic: 980 Mio. Aktien zu 83 $, Abschluss Fr 20.11.; laut XTB fast siebenfach überzeichnet, Bewertung rund 1,5 Bio. $. Erster Kurs heute nach US-Start – Stimmungstest für alle KI-Werte, auch SPCX.",
-    "Vor dem Start: Nasdaq-100-Future +1,5 %, S&P 500 +0,8 %, Dax-Future 25.883 (+0,3 %). Topix unverändert, Hang Seng −2,2 %, Shanghai −1,0 % (finanzen.net, 07:40).",
-    "Fed: Kashkari – Zinsen bremsen auch Rechenzentrums-Investitionen, Märkte erwarten mehr Erhöhungen als die Fed. Williams gegen „dramatische“ Schritte. FedWatch: 50 Basispunkte im Dezember nun 10 % statt 3 %.",
-    "Nachbörslich Mi: Palo Alto +9,7 % nach starken Zahlen, CrowdStrike +4 %, Red Robin −14 %. Humana nach −13 % weiter unter Druck (CMS-Regeln).",
-    "China: Heute Einzeltreffen Trump–Xi in Shenzhen. PDD vor US-Start, Alibaba nach Hongkong-Schluss mit Zahlen; Walmart um 13:00 Berlin (Konsens 0,64 $ je Aktie).",
-    "SpaceX: CRS-35-Abdocken weiter Fr 18:05 Berlin, 70 % (Wetter). Rocket Lab: keine neue Meldung, ESCAPADE auf Mars-Kurs.",
-    "Tagesfrage: Schließt RKLB heute über 53,07 $? Karl sagt knapp nein – Auflösung 22:15."
+    "Anthropic: Schluss 97,17 $, Bewertung rund 1,76 Bio. $, nachbörslich etwa −5 %. Das Geld kam aus anderen KI-Werten, Nvidia fiel den sechsten Tag in Folge (Yahoo/Benzinga, CNBC).",
+    "Dax: Indikation 25.122 (−1,3 %), die 200-Tage-Linie knapp unter 25.000 kommt in Reichweite; IG Metall streikt erstmals seit acht Jahren ganztägig (dpa-AFX, Reuters).",
+    "Heute: Lagarde und Sewing beim European Banking Congress, US-Verbraucherstimmung um 16:00, Bessent am Nachmittag bei CNBC (Reuters, CNBC).",
+    "Nachbörslich: Intuit −10 % (schwacher Ausblick), Ross −5 %, Bending Spoons zeitweise +9,7 % nach Mailchimp-Kauf (Investing.com, Yahoo).",
+    "Tesla: Cybercab fährt jetzt auch in Dallas, Bestellungen in Argentinien offen. Kalender Cybercab Dallas 65 → 100 % (DigitalToday/InsideEVs, Tesla North).",
+    "SpaceX: USSF-317 in der Nacht abgebrochen, neu Sa 03:32 Berlin (70 %). Dragon CRS-35 legt heute um 18:05 ab (70 %, Wetter) (SpaceX, NASA).",
+    "Tagesfrage gestern: RKLB schloss bei 50,99 $ unter 53,07 $, Karl lag mit „nein“ richtig (7 von 13). Heute: RKLB über 50,99 $?"
   ],
   "audioUrl": null,
   "sources": [
     {
-      "title": "Anthropic: Preis des Börsengangs (18.11.)",
-      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+      "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
     },
     {
-      "title": "CNBC: Anthropic sammelt über 81 Mrd. $ ein (18.11.)",
-      "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
+      "title": "CNBC: Futures tiefer, Dow erstmals seit Juni unter 50.000 (Live, 20.11.)",
+      "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
     },
     {
-      "title": "XTB: Morning Wrap (19.11., 07:05)",
-      "url": "https://www.xtb.com/int/market-analysis/news-and-research/morning-wrap-time-for-the-largest-stock-market-debut-in-history-19-11-2026"
+      "title": "CNBC: Friday's big stock stories (19.11.)",
+      "url": "https://www.cnbc.com/2026/11/19/fridays-big-stock-stories-whats-likely-to-move-the-market.html"
     },
     {
-      "title": "finanzen.net/Dow Jones: Morning Briefing Deutschland/Europa (19.11., 07:40)",
-      "url": "https://www.finanzen.net/nachricht/aktien/morning-briefing-deutschland-europa-16075463"
+      "title": "tagesschau: Dax dürfte trotz Anthropic-Hype weiter fallen (20.11., 07:30)",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-102.html"
     },
     {
-      "title": "tagesschau.de: Anleger vor Anthropic-Börsengang optimistisch (19.11., 07:33)",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-100.html"
+      "title": "dpa-AFX via onvista: Dax im Sog der Weltbörsen weiter bergab (20.11., 06:11)",
+      "url": "https://www.onvista.de/news/2026/11-20-dax-flash-dax-im-sog-der-weltboersen-weiter-bergab-25-000-punkte-in-gefahr-0-10-26578641"
     },
     {
-      "title": "onvista/dpa-AFX: Dax etwas höher erwartet (19.11., 06:20)",
-      "url": "https://www.onvista.de/news/2026/11-19-dax-flash-dax-etwas-hoeher-erwartet-nasdaq-zieht-vor-anthropic-ipo-an-0-10-26578105"
+      "title": "Reuters via onvista: Dax tiefer erwartet – Konjunktur und European Banking Congress im Blick (20.11., 06:21)",
+      "url": "https://www.onvista.de/news/2026/11-20-dax-tiefer-erwartet-konjunktur-und-european-banking-congress-im-blick-0-20-26578647"
     },
     {
-      "title": "Investing.com: US-Futures steigen vor Anthropic-Debüt (19.11.)",
-      "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-climb-ahead-of-anthropics-15-trillion-mega-ipo-5037518"
+      "title": "Investing.com: Nachbörsliche Bewegungen BSP, INTU, ESTC, GAP, ROST (19.11.)",
+      "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-bsp-intu-estc-gap-rost-432SI-5040092"
     },
     {
-      "title": "FXStreet: Kashkari – Märkte erwarten mehr Zinserhöhungen als die Fed (18.11.)",
-      "url": "https://www.fxstreet.com/news/feds-kashkari-markets-believe-central-bank-will-have-to-hike-more-than-officials-now-expect-202611182306"
+      "title": "DigitalToday (nach InsideEVs): Tesla startet Cybercab in Dallas (20.11.)",
+      "url": "https://www.digitaltoday.co.kr/en/view/128508/tesla-cybercab-robotaxi-expands-to-dallas-after-austin"
     },
     {
-      "title": "Axios: Williams gegen „dramatische“ Zinsschritte (18.11.)",
-      "url": "https://www.axios.com/2026/11/18/interest-rates-new-york-fed"
+      "title": "Tesla North: Tesla öffnet Bestellungen für Model 3 und Model Y in Argentinien (19.11.)",
+      "url": "https://teslanorth.com/2026/11/19/tesla-argentina-model-3-model-y-prices-orders/"
     },
     {
-      "title": "Investing.com: Nachbörsliche Bewegungen PANW, CRWD, P, RRGB (18.11.)",
-      "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-panw-crwd-p-rrgb-432SI-5037183"
+      "title": "Spaceflight Now: SpaceX bricht USSF-317-Versuch ab, neuer Termin Freitag (19.11.)",
+      "url": "https://spaceflightnow.com/2026/11/19/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-2/"
     },
     {
-      "title": "EBC: Humana −13 % wegen Medicare-Prüfungen",
-      "url": "https://www.ebc.com/forex/humana-stock-drops-medicare-audits-margin-risks"
+      "title": "NASA: Abdocken CRS-35 Fr 20.11. 12:05 EST, Wasserung Sa 21.11. (aktualisiert 19.11.)",
+      "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/"
     },
     {
-      "title": "SBH News: Alibaba −5,2 % auf 80,8 HKD (19.11.)",
-      "url": "https://www.sbhnews.com/news/alibaba-plunge-us-chip-curbs-9943bfb5-2026-11-19-PM-12-15"
-    },
-    {
-      "title": "Walmart: Termin Zahlen 3. Quartal FY2027",
-      "url": "https://corporate.walmart.com/news/events/fy2027-q3-earnings-release"
-    },
-    {
-      "title": "Newsquawk: US-Zahlen am 19.11. (WMT, PDD, BABA)",
-      "url": "https://www.newsquawk.com/headlines/newsquawk-daily-us-earnings-estimates---19th-november-2026-wmt-pdd-baba"
-    },
-    {
-      "title": "SpaceX: CRS-35",
-      "url": "https://www.spacex.com/launches/crs35/"
-    },
-    {
-      "title": "Yahoo Finance: SPCX",
-      "url": "https://finance.yahoo.com/quote/SPCX/"
-    },
-    {
-      "title": "Yahoo Finance: TSLA",
-      "url": "https://finance.yahoo.com/quote/TSLA/"
-    },
-    {
-      "title": "Yahoo Finance: RKLB",
-      "url": "https://finance.yahoo.com/quote/RKLB/"
-    },
-    {
-      "title": "Yahoo Finance: MRVL",
-      "url": "https://finance.yahoo.com/quote/MRVL/"
+      "title": "Yahoo Finance: RKLB-Historie (Schluss 19.11.)",
+      "url": "https://finance.yahoo.com/quote/RKLB-Historie/"
     }
   ]
 }

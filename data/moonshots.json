@@ -1,97 +1,93 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-19T14:30:00+01:00",
-  "nextRun": "2026-11-20T08:30:00+01:00",
+  "updatedAt": "2026-11-20T08:00:00+01:00",
+  "nextRun": "2026-11-20T14:00:00+01:00",
   "long": [
     {
-      "name": "Palo Alto Networks",
-      "ticker": "PANW",
-      "country": "US",
+      "name": "Bending Spoons",
+      "ticker": "BSP",
+      "country": "IT",
       "exchange": "Nasdaq",
-      "priceEur": 337.43,
-      "hint": "Vorbörslich +9,1 % nach Zahlen und höherem Ausblick",
+      "priceEur": 39.85,
+      "hint": "Nachbörslich deutlich höher nach Zahlen und Mailchimp-Übernahme",
       "bullets": [
-        "Vorbörslich 371 $ nach 339,92 $ Schluss, also gut +9 % vor dem Start.",
-        "Umsatz 3,44 Mrd. $ und Gewinn je Aktie 1,05 $, beides über den Erwartungen.",
-        "Jahresausblick auf 14,52–14,57 Mrd. $ angehoben, Cybersicherheitswerte ziehen mit."
+        "Q3-Gewinn je Aktie 0,42 $ statt erwarteter 0,32 $, Umsatz 780 Mio. $.",
+        "Jahresziel auf 3,07–3,09 Mrd. $ Umsatz angehoben, Konsens lag bei 2,90 Mrd. $.",
+        "Übernahme von Mailchimp für 3,68 Mrd. $; nachbörslich zeitweise +9,7 %, zuletzt 43,80 $."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: PANW (vorbörslich Do 14:25)",
-          "url": "https://finance.yahoo.com/quote/PANW/"
+          "title": "Investing.com: Nachbörsliche Bewegungen BSP, INTU, ESTC, GAP, ROST (19.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-bsp-intu-estc-gap-rost-432SI-5040092"
         },
         {
-          "title": "Investing.com: Vorbörse – Palo Alto springt, Chipwerte vor Anthropic-Debüt fester (19.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/premarket-movers-palo-alto-soars-chip-stocks-rally-ahead-of-anthropic-debut-5038792"
+          "title": "StockSetups: Nachbörsliche Gewinner 19.11. (MEDS, LGHL, BSP)",
+          "url": "https://stocksetups.com/articles/after-hours-stock-movers-2026-11-19"
         },
         {
-          "title": "CNBC: Palo Alto Networks Zahlen 1. Quartal FY2027 (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/palo-alto-networks-panw-q1-2027-earnings-.html"
+          "title": "Yahoo Finance: BSP (nachbörslich 43,80 $)",
+          "url": "https://finance.yahoo.com/quote/BSP/"
         },
         {
-          "title": "Yahoo Finance: EURUSD (1,0995, Do 14:25)",
+          "title": "Yahoo Finance: EURUSD 1,099 (Fr 07:45)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
     },
     {
-      "name": "Anthropic",
-      "ticker": "ANT",
+      "name": "DataMeds AI",
+      "ticker": "MEDS",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 75.49,
-      "hint": "Erster Handelstag heute, Ausgabepreis 83 $",
+      "priceEur": 1.03,
+      "hint": "Nachbörslich +55 % nach Kauf einer KI-Krebstest-Plattform",
       "bullets": [
-        "Ausgabepreis 83 $, über der ursprünglichen Spanne; der Handel startet etwa ab 18:00 Berlin.",
-        "Vorbörsliche Kontrakte lagen am Morgen um 104 $, rund 25 % über dem Ausgabepreis.",
-        "Euro-Preis ist der umgerechnete Ausgabepreis, erster Kurs steht noch aus."
+        "Tochter Helomics kauft die Bluttest-Plattform TBIA aus der Todos-Medical-Insolvenz.",
+        "Nachbörslich 1,13 $ nach 0,73 $ Schluss, bei rund 4 Mio. $ Börsenwert.",
+        "Der Test ist nicht von der FDA zugelassen, dazu läuft ein Aktienverkauf über bis zu 7 Mio. $."
       ],
       "sources": [
         {
-          "title": "CNBC: Anthropic IPO live – Nasdaq-Debüt (19.11.)",
-          "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html"
+          "title": "Benzinga: DataMeds AI steigt nachbörslich über 55 % (19.11.)",
+          "url": "https://www.benzinga.com/markets/equities/26/11/63463799/datameds-ai-shares-surge-after-hours-todos-medical-cancer-diagnostics-deal"
         },
         {
-          "title": "Goldesel: Mittagsupdate 19.11. – Anthropic-Börsengang treibt US-Futures (11:44)",
-          "url": "https://goldesel.de/artikel/mittagsupdate-19-11-anthropic-boersengang-treibt-us-futures-bund-macht-weg-fuer-unicredit-bei-commerzbank-frei"
+          "title": "StockSetups: Nachbörsliche Gewinner 19.11. (MEDS, LGHL, BSP)",
+          "url": "https://stocksetups.com/articles/after-hours-stock-movers-2026-11-19"
         },
         {
-          "title": "Yahoo Finance: EURUSD (1,0995, Do 14:25)",
+          "title": "Yahoo Finance: MEDS (nachbörslich 1,13 $)",
+          "url": "https://finance.yahoo.com/quote/MEDS/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD 1,099 (Fr 07:45)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
     },
     {
-      "name": "Coherent",
-      "ticker": "COHR",
+      "name": "VivoSim Labs",
+      "ticker": "VIVS",
       "country": "US",
-      "exchange": "NYSE",
-      "priceEur": 208.73,
-      "hint": "Vorbörslich +7,8 % nach Programm über 2 Mrd. $ für eigene Aktien",
+      "exchange": "Nasdaq",
+      "priceEur": 0.32,
+      "hint": "Nachbörslich +21 % nach Auftrag eines großen Pharmakonzerns",
       "bullets": [
-        "Coherent will eigene Aktien für bis zu 2 Mrd. $ zurückholen, ohne Ablaufdatum.",
-        "Vorbörslich 229,50 $ nach 212,84 $ Schluss, rund +7,8 %.",
-        "Optik- und Chipwerte bekommen Rückenwind vom Anthropic-Debüt."
+        "Siebenstelliger Auftrag für Toxizitätstests von einem der zehn größten Pharmakonzerne.",
+        "Nachbörslich 0,35 $ nach 0,29 $ Schluss.",
+        "Sehr kleiner Wert, die Kurse nachbörslich sind dünn gehandelt."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: COHR (vorbörslich Do 14:25)",
-          "url": "https://finance.yahoo.com/quote/COHR/"
+          "title": "Benzinga: VivoSim Labs nachbörslich +21 % nach Pharma-Auftrag (19.11.)",
+          "url": "https://www.benzinga.com/markets/equities/26/11/63464248/vivosim-labs-shares-jump-after-hours-seven-figure-pharma-deal"
         },
         {
-          "title": "Seeking Alpha: Coherent springt nach 2-Mrd.-$-Programm für eigene Aktien (19.11.)",
-          "url": "https://seekingalpha.com/news/4674637-coherent-stock-jumps-on-2b-share-buyback-plan"
+          "title": "Yahoo Finance: VIVS (nachbörslich 0,35 $)",
+          "url": "https://finance.yahoo.com/quote/VIVS/"
         },
         {
-          "title": "MarketWatch: Vorbörsliche Gewinner (19.11.)",
-          "url": "https://www.marketwatch.com/tools/screener/premarket"
-        },
-        {
-          "title": "Investing.com: Vorbörse – Palo Alto springt, Chipwerte vor Anthropic-Debüt fester (19.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/premarket-movers-palo-alto-soars-chip-stocks-rally-ahead-of-anthropic-debut-5038792"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD (1,0995, Do 14:25)",
+          "title": "Yahoo Finance: EURUSD 1,099 (Fr 07:45)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
@@ -99,102 +95,86 @@
   ],
   "short": [
     {
-      "name": "SELLAS Life Sciences",
-      "ticker": "SLS",
+      "name": "Intuit",
+      "ticker": "INTU",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 12.8,
-      "hint": "Vorbörslich −21,6 % nach Platzierung mit Abschlag",
+      "priceEur": 254.54,
+      "hint": "Nachbörslich −10 % nach schwachem Jahresausblick",
       "bullets": [
-        "SELLAS platziert neue Aktien für 150 Mio. $ zu 13,00 $ je Aktie.",
-        "Das sind fast 28 % unter dem Schluss von 17,95 $, nach dem Sprung auf die AML-Studie.",
-        "Vorbörslich 14,07 $, der Preis der Platzierung zieht nach unten."
+        "Q1-Gewinn je Aktie 2,91 $ über der Erwartung von 2,70 $.",
+        "Jahresausblick 22,88–23,12 $ je Aktie liegt unter dem Konsens von 23,62 $.",
+        "Nachbörslich 279,74 $ nach 310,02 $ Schluss; Mailchimp geht an Bending Spoons."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: SLS (vorbörslich Do 14:25)",
-          "url": "https://finance.yahoo.com/quote/SLS/"
+          "title": "Investing.com: Nachbörsliche Bewegungen BSP, INTU, ESTC, GAP, ROST (19.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-bsp-intu-estc-gap-rost-432SI-5040092"
         },
         {
-          "title": "SELLAS: Platzierung über 150 Mio. $ zu 13,00 $ je Aktie",
-          "url": "https://ir.sellaslifesciences.com/news/News-Details/2026/SELLAS-Life-Sciences-Announces-Pricing-of-150-0-Million-Underwritten-Public-Offering/default.aspx"
+          "title": "Yahoo Finance: INTU (nachbörslich 279,74 $)",
+          "url": "https://finance.yahoo.com/quote/INTU/"
         },
         {
-          "title": "Stocktwits: SLS fällt – Angebot mit fast 30 % Abschlag nach AML-Studienerfolg",
-          "url": "https://stocktwits.com/news-articles/markets/equity/sls-stock-sellas-discounted-share-offering-retail-bulls-crying-foul-low-price/cNbLDqPR9ii"
-        },
-        {
-          "title": "Benzinga: NetEase, Red Robin, Sellas vorbörslich schwächer (19.11.)",
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63423554/netease-downbeat-q3-results-joins-red-robin-sellas-life-sciences-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD (1,0995, Do 14:25)",
+          "title": "Yahoo Finance: EURUSD 1,099 (Fr 07:45)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
     },
     {
-      "name": "Red Robin Gourmet Burgers",
-      "ticker": "RRGB",
+      "name": "Ross Stores",
+      "ticker": "ROST",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 6.16,
-      "hint": "Vorbörslich −14,8 % nach verfehlten Zahlen",
+      "priceEur": 189.75,
+      "hint": "Nachbörslich −5 % nach schwachem Ausblick fürs Weihnachtsquartal",
       "bullets": [
-        "Verlust je Aktie 0,54 $ statt erwarteter 0,39 $.",
-        "Umsatz 232,1 Mio. $ statt erwarteter 250,1 Mio. $, weniger Gäste.",
-        "Vorbörslich 6,77 $ nach 7,95 $ Schluss."
+        "Q3-Gewinn je Aktie 1,91 $, knapp über der Erwartung von 1,86 $.",
+        "Q4-Ausblick 2,16–2,25 $ je Aktie liegt unter der Schätzung von 2,26 $.",
+        "Nachbörslich 208,53 $ nach 219,88 $ Schluss, Investing.com meldete zeitweise −9 %."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: RRGB (vorbörslich Do 14:25)",
-          "url": "https://finance.yahoo.com/quote/RRGB/"
+          "title": "Investing.com: Nachbörsliche Bewegungen BSP, INTU, ESTC, GAP, ROST (19.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-bsp-intu-estc-gap-rost-432SI-5040092"
         },
         {
-          "title": "Investing.com: Nachbörsliche Bewegungen PANW, CRWD, P, RRGB (18.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-panw-crwd-p-rrgb-432SI-5037183"
+          "title": "Yahoo Finance: ROST (nachbörslich 208,53 $)",
+          "url": "https://finance.yahoo.com/quote/ROST/"
         },
         {
-          "title": "Benzinga: NetEase, Red Robin, Sellas vorbörslich schwächer (19.11.)",
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63423554/netease-downbeat-q3-results-joins-red-robin-sellas-life-sciences-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD (1,0995, Do 14:25)",
+          "title": "Yahoo Finance: EURUSD 1,099 (Fr 07:45)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
     },
     {
-      "name": "NetEase",
-      "ticker": "NTES",
-      "country": "CN",
-      "exchange": "Nasdaq",
-      "priceEur": 101.26,
-      "hint": "Vorbörslich −6,0 % nach schwachem 3. Quartal",
+      "name": "Elastic",
+      "ticker": "ESTC",
+      "country": "US",
+      "exchange": "NYSE",
+      "priceEur": 66.96,
+      "hint": "Nachbörslich schwächer trotz besserer Zahlen",
       "bullets": [
-        "Umsatz 27,9 Mrd. Yuan, 1,8 % weniger als vor einem Jahr und unter der Erwartung.",
-        "Bereinigter Gewinn je Aktie 14,21 Yuan, deutlich unter den Schätzungen.",
-        "Vorbörslich 111,33 $ nach 118,43 $ Schluss, China-Werte stehen unter Chipregel-Druck."
+        "Q2-Gewinn je Aktie 0,94 $ statt erwarteter 0,81 $, Umsatz 496 Mio. $.",
+        "Der Umsatzausblick 2,00–2,01 Mrd. $ liegt nur im Rahmen der Erwartungen.",
+        "Nachbörslich 73,59 $ nach 76,33 $ Schluss, Software- und KI-Werte stehen unter Druck."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: NTES (vorbörslich Do 14:25)",
-          "url": "https://finance.yahoo.com/quote/NTES/"
+          "title": "Investing.com: Nachbörsliche Bewegungen BSP, INTU, ESTC, GAP, ROST (19.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-bsp-intu-estc-gap-rost-432SI-5040092"
         },
         {
-          "title": "TipRanks/The Fly: NetEase −5 % nach Umsatzverfehlung im 3. Quartal",
-          "url": "https://www.tipranks.com/news/the-fly/netease-falls-5-to-112-10-following-q3-revenue-miss-thefly-news"
+          "title": "Yahoo Finance: ESTC (nachbörslich 73,59 $)",
+          "url": "https://finance.yahoo.com/quote/ESTC/"
         },
         {
-          "title": "Investing.com: NetEase verfehlt Gewinn- und Umsatzerwartung",
-          "url": "https://www.investing.com/news/earnings/netease-adr-earnings-missed-by-223-revenue-fell-short-of-estimates-5038252"
+          "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
         },
         {
-          "title": "Benzinga: NetEase, Red Robin, Sellas vorbörslich schwächer (19.11.)",
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63423554/netease-downbeat-q3-results-joins-red-robin-sellas-life-sciences-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD (1,0995, Do 14:25)",
+          "title": "Yahoo Finance: EURUSD 1,099 (Fr 07:45)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]

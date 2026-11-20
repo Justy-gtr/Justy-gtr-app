@@ -274,111 +274,6 @@
       ]
     },
     {
-      "id": "evt-fomc-protokoll-okt",
-      "title": "Fed: Protokoll der Zinssitzung vom 27./28. Oktober (veröffentlicht)",
-      "date": "2026-11-18",
-      "time": "20:00",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "zinsen",
-      "company": "Federal Reserve",
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Die Fed veröffentlicht am Mi 18.11. um 14:00 Uhr ET (20:00 Berlin) das Protokoll ihrer Sitzung vom 27./28. Oktober (Fed-Terminkalender). Anleger suchen darin Hinweise, wie viele Mitglieder schon im Oktober für eine Zinserhöhung waren und wie schnell es danach weitergehen könnte. Der Markt rechnet laut CME FedWatch mit 91,9 % mit einer Erhöhung um 25 Basispunkte im Dezember (CNBC, 11.11.); dpa-AFX nennt Zinserhöhungen von Fed und EZB im Dezember „so gut wie sicher“. Ein harter Ton im Protokoll würde teure Wachstumswerte wie SPCX, TSLA und RKLB belasten. Es ist derselbe Abend, an dem die Nvidia-Zahlen vom Vortag noch nachwirken. Meine 98 % gelten dem Termin selbst – die Fed hält solche Termine praktisch immer ein. Stand Di 18:10: St.-Louis-Fed-Chef Alberto Musalem sagt, bis Frühjahr 2027 seien wohl mehrere Zinserhöhungen nötig – rechnerisch bis zu vier, bei jeder Sitzung von Dezember bis April; er stimmt in dieser Zeit aber nicht mit ab (CNBC). Das verstärkt die Zinssorgen vor dem Protokoll. 98 % unverändert. Stand Mi 13:30: Am selben Abend sprechen drei Fed-Vertreter: Michael Barr um 19:35, New-York-Fed-Chef John Williams um 20:30 und Neel Kashkari um 22:15 Berlin, Kashkari zu KI und Geldpolitik (TD Economics, Econoday). Vorher um 14:30 kommen die US-Baubeginne. 98 % unverändert. Stand Mi 15:30: Zusätzlich spricht San-Francisco-Fed-Chefin Mary Daly schon um 18:15 Berlin, auf einer Tagung zu Frauen im Bankwesen; letzte Woche erwartete sie weitere Zinserhöhungen (Newsquawk). Im Protokoll zählt vor allem, wie viele Mitglieder neben Cook und Hammack schon im Oktober eine Erhöhung wollten und ob über 50 Basispunkte gesprochen wurde. Der Markt preist eine Erhöhung um 25 Basispunkte im Dezember als fast sicher, für 50 Basispunkte nur rund 8 % (Admiral Markets). Das Protokoll stammt von vor den heißen Oktober-Inflationsdaten und könnte daher als überholt gelten; Williams um 20:30 ist der wichtigere Redner (Newsquawk). 98 % unverändert. Neu Mi 14:00: Fed-Gouverneur Christopher Waller sagte bei CNBC, die Inflation laufe in die falsche Richtung und verbreitere sich; die Fed solle im Dezember um 50 Basispunkte erhöhen oder klar schnellere Schritte ankündigen (CNBC, Investing.com). Damit steigt die Messlatte für das Protokoll und für Williams am Abend. Stand Mi 18:15: Der Dax schloss bei 25.736 Punkten (−1,2 %); als Grund nennen Händler die Zinsangst vor dem Protokoll nach den hohen Inflationsdaten (Yahoo, wallstreet-online). 98 % unverändert. Stand Mi 20:15: Das Protokoll ist um 20:00 erschienen (Fed). Laut Protokoll hielten „fast alle“ Teilnehmer weitere Zinserhöhungen für wahrscheinlich angebracht; „einige“ wollten schon im Oktober um 0,25 Prozentpunkte erhöhen, und „ein paar“ hielten im Dezember sogar einen größeren Schritt für möglich (CNBC). Die Fed sieht KI-getriebene Nachfrage als „wesentliche Inflationsgefahr“; Fed-Mitarbeiter warnten, dass Leasing-Verpflichtungen außerhalb der Bilanz und Kreisfinanzierungen unter KI-Firmen Verluste verstärken könnten (CNBC). Gouverneur Barr sagte um 19:35, er erwarte weitere Erhöhungen, wenn sich die Wirtschaft wie von ihm erwartet entwickle (Reuters, Fed). Ergebnis: eher straffer als die Oktober-Erklärung, aber nach den heißen Inflationsdaten keine große Überraschung. Termin eingetreten: 100 %. Nachtrag Do 08:20: Kashkari sagte am Mi-Abend, die Märkte erwarteten mehr Zinserhöhungen als die Fed selbst, Zinsen bremsten auch Rechenzentrums-Investitionen (FXStreet, Investing.com). Williams hält weitere Erhöhungen für nötig, lehnt aber „dramatische“ Schritte wie 50 Basispunkte ab (Axios). FedWatch: 50 Basispunkte im Dezember jetzt mit 10 % statt 3 % eingepreist (finanzen.net).",
-      "example": false,
-      "sources": [
-        {
-          "title": "FXStreet: Kashkari – Märkte erwarten mehr Zinserhöhungen als die Fed (18.11.)",
-          "url": "https://www.fxstreet.com/news/feds-kashkari-markets-believe-central-bank-will-have-to-hike-more-than-officials-now-expect-202611182306"
-        },
-        {
-          "title": "Investing.com: Kashkari – Zinsen bremsen Tech-Investitionen (18.11.)",
-          "url": "https://www.investing.com/news/economy-news/feds-kashkari-says-interest-rates-can-impact-tech-investment-5037179"
-        },
-        {
-          "title": "Axios: Williams gegen „dramatische“ Zinsschritte (18.11.)",
-          "url": "https://www.axios.com/2026/11/18/interest-rates-new-york-fed"
-        },
-        {
-          "title": "finanzen.net/Dow Jones: Morning Briefing Deutschland/Europa (19.11., 07:40)",
-          "url": "https://www.finanzen.net/nachricht/aktien/morning-briefing-deutschland-europa-16075463"
-        },
-        {
-          "title": "Federal Reserve: Terminkalender November 2026 (FOMC Minutes 18.11., 14:00 ET)",
-          "url": "https://www.federalreserve.gov/newsevents/2026-november.htm"
-        },
-        {
-          "title": "Federal Reserve: FOMC-Sitzungskalender",
-          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-        },
-        {
-          "title": "CNBC: FedWatch 91,9 % für Erhöhung im Dezember (11.11.)",
-          "url": "https://www.cnbc.com/2026/11/11/dollar-gains-traction-as-fed-speakers-warn-of-risks-from-inflation.html"
-        },
-        {
-          "title": "dpa-AFX: Wochenausblick – Anleger warten auf Nvidia-Zahlen und Anthropic (13.11.)",
-          "url": "https://www.dpa-afx.de/?cHash=c4ab50e912606040b6b98f7ee44b00f9&tx_news_pi1%5Bnews%5D=429284&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail"
-        },
-        {
-          "title": "CNBC: St.-Louis-Fed-Chef Musalem hält bis zu vier weitere Zinserhöhungen für möglich (17.11.)",
-          "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html"
-        },
-        {
-          "title": "TD Economics: Termine 16.–20.11.2026 (Baubeginne Okt. Prognose 1,240 Mio., zuvor 1,221 Mio.; Fed-Redner)",
-          "url": "https://economics.td.com/domains/economics.td.com/documents/reports/bottom-line/tables/2026-11-13/upcoming.htm"
-        },
-        {
-          "title": "Global Trade Review/Econoday: Wirtschaftskalender Mittwoch 18.11.",
-          "url": "https://www.globaltradereview.com/news/all/6afd772aed55447fdc10e461"
-        },
-        {
-          "title": "Newsquawk: Primer – Fedspeak 18.11. (Daly, Barr, Williams, Kashkari) und Protokoll",
-          "url": "https://www.newsquawk.com/headlines/primer---todays-fedspeak-18th-november-2026-includes-daly-barr-williams-kashkari-fomc-meeting-minutes-are-also-released"
-        },
-        {
-          "title": "Admiral Markets: FOMC-Protokoll 18.11. – Zeit und worauf es ankommt",
-          "url": "https://admiralmarkets.com/analytics/traders-blog/fomc-minutes-november-2026"
-        },
-        {
-          "title": "CNBC: Fed-Gouverneur Waller – Fed muss die Leute womöglich mit einer Erhöhung um einen halben Punkt „schocken“ (18.11.)",
-          "url": "https://www.cnbc.com/amp/2026/11/18/federal-reserve-governor-christopher-waller.html"
-        },
-        {
-          "title": "Investing.com: Waller warnt vor sich verschärfender Inflation, bringt 50 Basispunkte im Dezember ins Spiel (18.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/feds-waller-warns-inflation-is-worsening-floats-50basispoint-december-hike-5035893"
-        },
-        {
-          "title": "Yahoo Finance: Dax (Schluss Mi 18.11.)",
-          "url": "https://finance.yahoo.com/quote/%5EGDAXI/"
-        },
-        {
-          "title": "wallstreet-online (CMC Markets): Aktien Frankfurt Schluss – Dax rutscht unter 26.000 Punkte, Nervosität vor Anthropic-Börsengang (18.11.)",
-          "url": "https://www.wallstreet-online.de/nachricht/21713784-aktien-frankfurt-schluss-dax-rutscht-26-000-punkte-nervositaet-anthropic-boersengang"
-        },
-        {
-          "title": "Federal Reserve: Sitzung 27./28. Oktober 2026 – Protokoll veröffentlicht am 18.11., 14:00 Uhr ET",
-          "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20261028.htm"
-        },
-        {
-          "title": "CNBC: Fed-Mitglieder erwarten weitere Zinserhöhungen und sorgen sich um KI-Inflation – Protokoll (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html"
-        },
-        {
-          "title": "Reuters via Investing.com: Fed-Gouverneur Barr – weitere Zinserhöhungen wahrscheinlich (18.11.)",
-          "url": "https://www.investing.com/news/economy-news/feds-barr-says-rate-rises-likely-lie-ahead-for-economy-5036832"
-        },
-        {
-          "title": "Federal Reserve: Rede von Gouverneur Barr, New York Fed (18.11.)",
-          "url": "https://www.federalreserve.gov/newsevents/speech/barr20261118a.htm"
-        }
-      ]
-    },
-    {
       "id": "evt-anthropic-ipo",
       "title": "Anthropic: Börsengang an der Nasdaq (Preis 83 $, Handel ab Do 19.11.)",
       "date": "2026-11-19",
@@ -393,7 +288,7 @@
       ],
       "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms. Stand Mi 07:00: Fidelity nennt für Privatkunden Zeichnungsende Di 17.11. 16:00 ET (22:00 Berlin) und die Preisfestsetzung am Abend des 18.11.; das stützt den Handelsstart am 19.11. 85 % unverändert. Stand Mi 09:50: Laut FT wollen die Konsortialbanken (Goldman Sachs, Morgan Stanley) wegen hoher Nachfrage den Preis über die Spanne von 70–78 $ heben, die Bewertung läge dann bei 1,5 Bio. $ oder mehr. Das stützt den Termin; 85 % unverändert. Stand Mi 12:55: Der TSMC-Verwaltungsrat hat je 500 Mio. $ Investition in Anthropic und OpenAI genehmigt (Dow Jones). Stützt die Nachfrage; 85 % unverändert. Stand Mi 15:00: Auf X verbreitet sich eine unbestätigte Mitschrift (Konto @jukan05), wonach Anthropic Analysten gesagt habe, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Weder Anthropic noch SpaceX haben das bestätigt. Für den Börsentermin ändert das nichts; 85 % unverändert. Stand Mi 16:00: Die X-Mitschrift zum SpaceX-Vertrag ist weiter unbestätigt; weder Anthropic noch SpaceX haben sich geäußert, eine neue SEC-Meldung gibt es nicht. Laut Anthropic-Prospekt sind die Verträge erst nach Januar bzw. März 2027 mit 90 Tagen Frist kündbar (S-1, TokenPost). 85 % unverändert. Stand Mi 18:00: Die X-Mitschrift (@jukan05), Anthropic wolle den SpaceX-Rechenvertrag nicht über Mitte 2027 hinaus verlängern, ist weiter weder bestätigt noch dementiert; auch TeslaNorth schreibt, keine der beiden Firmen habe sich geäußert. 85 % unverändert. Stand Mi 20:00: Musk antwortete um 18:40 auf X auf die Mitschrift: „Wir nehmen die Rechenleistung gern zurück. Kein Problem. Aber ich glaube, das Gegenteil wird passieren.“ Das ist eine Reaktion, keine Bestätigung; Anthropic selbst hat sich weiter nicht geäußert (X, Wccftech). 85 % unverändert. Stand Mi 22:00: Weiter keine Stellungnahme von Anthropic zur Mitschrift. Musk schrieb um 20:01 nach, SpaceX könne im nächsten Jahr etwa die Hälfte der Gigawatt an „tatsächlich nutzbarer“ Rechenleistung stellen. SPCX schloss −2,3 % bei 139,75 $ (X, TeslaNorth, Yahoo). Für den Börsengang selbst ändert das nichts: 85 % unverändert. Stand Do 05:10: Weiter keine Stellungnahme von Anthropic oder SpaceX zur X-Mitschrift über das Vertragsende Mitte 2027 (TeslaNorth). Für den Börsengang selbst neu: der Nvidia-Chefstreit drückt die KI-Werte nachbörslich, das Buch gilt laut früheren Berichten aber als gedeckt. 85 % unverändert. Stand So 08:30: Das Buch ist laut Bloomberg etwa sechsfach überzeichnet, bestehende Geldgeber werden bei der Zuteilung bevorzugt (Reuters). Preisspanne 70–78 $, Preis am 18.11., Handel ab 19.11. unter dem Kürzel ANT (Yonhap Infomax, Reuters). Die dpa-AFX-Wochenvorschau nennt den Börsengang „voraussichtlich am Donnerstag“ (boersennews.de). Für SpaceX wichtig, weil Anthropic Rechenleistung bei SpaceX SI mietet. 85 % unverändert: Nachfrage stark, Restrisiko bleibt eine Verschiebung, falls die Nvidia-Zahlen am Di den KI-Markt stark drücken. Stand So 13:00: Die Spanne bleibt bei 70 bis 78 $; AMD, Broadcom, Google, Micron, Microsoft, Nvidia und TSMC zeichnen zusammen 26 Mrd. $ zum Ausgabepreis. Anthropic schrieb in den ersten neun Monaten 2026 einen Nettoverlust von 104 Mrd. $ und hat Ausgabezusagen über 900 Mrd. $ – CNBC nennt den Börsengang deshalb einen Prüfstein für die ganze KI-Branche. 85 % unverändert. Stand Mo 08:30: Der Zeitplan steht laut Reuters weiter: Preis am Mi, Handel ab Do (Investing.com/Reuters Morning Bid über MLQ). Der Chip-Ausverkauf in Asien erhöht das Risiko einer Verschiebung nur leicht, solange die Nvidia-Zahlen am Di nicht stark enttäuschen. 85 % unverändert. Stand Mo 16:00: Laut Bloomberg ist das Orderbuch fast siebenfach gedeckt, stärker als bei SpaceX zum selben Zeitpunkt; es soll am Di schließen, Preis am Mi, Handel ab Do unter ANT (The Next Web). 85 % unverändert. Stand Mo 22:00: Preisspanne weiter 70–78 $ je Aktie, 825 Mio. Aktien, Preisfestsetzung am Mi 18.11., Handel ab Do 19.11. unter dem Kürzel ANT (CNBC). dpa-AFX nennt den Börsengang einen Grund für die Unsicherheit im Tech-Sektor. 85 % unverändert. Stand Di 18:10: Laut mehreren Quellen von CNBC dürfte Anthropic den Preis über der Spanne von 70–78 $ festlegen; laut Bloomberg am oberen Ende oder darüber. Das Orderbuch schließt heute um 16:00 Uhr New Yorker Zeit (22:00 Berlin), Handel ab Do unter ANT (CNBC, Capital Brief). 85 % unverändert. Stand Di 20:20: Laut Wall Street Journal will Anthropic die Aktien über 80 $ ausgeben, das wären rund 1,5–1,6 Bio. $ Bewertung (bisher bis 1,33 Bio. $ am oberen Ende); die Wagnisgeldgeber Bessemer, Menlo und Accel wollen sogar zukaufen. Endgültig festgelegt wird der Preis erst am Mi und hängt laut WSJ auch von der Reaktion auf die Nvidia-Zahlen ab; Handel ab Do unter ANT (Stocktwits/Yahoo). Ein offizieller Preis liegt noch nicht vor. 85 % unverändert. Stand Di 22:20: Laut CNBC-Quellen dürfte Anthropic den Preis über der Spanne von 70–78 $ festlegen, die Nachfrage soll ein Vielfaches der angebotenen Aktien betragen. Ein offizieller Ausgabepreis liegt noch nicht vor; Preisfestsetzung Mi, Handel ab Do unter ANT (CNBC). Microsoft stellte am Di eigene KI-Modelle für Programmierung und Cybersicherheit vor (MAI Code 2), als Konkurrenz zu Anthropic und OpenAI (Economic Times/Reuters). 85 % unverändert. Stand Mi 11:50: Laut Bloomberg steht Anthropic kurz vor der Preisfestsetzung; der Preis soll am oberen Ende der Spanne oder darüber liegen, das Buch ist laut Bankern fast siebenfach überzeichnet. Angeboten werden 825 Mio. Aktien (Bloomberg Law, CNBC). Der Preis kommt nach US-Schluss am Mi, Handel ab Do unter ANT. Nvidias Zahlen haben die Tech-Stimmung am Mi früh etwas beruhigt (dpa-AFX). 92 statt 85 %: Bücher geschlossen, Nachfrage hoch, Markt stabiler; Restrisiko ist eine kurzfristige Verschiebung. Stand Mi 13:30: Noch kein Ausgabepreis. Laut Börsenprospekt lag der Umsatz im 3. Quartal bei 17 Mrd. $ (Vorjahr 1,4 Mrd. $), die hochgerechnete Jahresrate Ende Oktober bei rund 81 Mrd. $. Am oberen Ende der Spanne brächte der Börsengang rund 64,4 Mrd. $ und eine Bewertung von etwa 1,4 Billionen $ (RTÉ). 92 % unverändert. Stand Mi 15:30: Offiziell gilt weiter die Spanne 70–78 $ für 825 Mio. Aktien aus dem 3. S-1-Nachtrag vom 17.11.; laut Bloomberg ist das Angebot fast siebenfach überzeichnet, laut WSJ wird ein Preis über 80 $ erwartet (Invezz). Der Preis kommt heute nach US-Schluss, Handel unter „ANT“ ab Do (Yahoo Finance). Ich hebe auf 95 %, weil die Bücher geschlossen sind und die Nachfrage weit über dem Angebot liegt; Restrisiko ist ein kurzfristiger Aufschub bei einem Markteinbruch. Stand Mi 16:15: Noch kein Ausgabepreis, der kommt nach US-Schluss (22:00 Berlin). Vanda Research schätzt rund 250 Mio. $ Netto-Käufe von Privatanlegern am ersten Handelstag, doppelt so viel wie beim SpaceX-Börsengang; bis zu 20 % der Aktien sollen an Privatanleger gehen (CNBC). 95 % unverändert. Stand Mi 18:15: Laut CNBC erwägt Anthropic, mehr Aktien anzubieten und den Preis deutlich über 80 $ zu setzen; Großanleger hätten rund 400 Mrd. $ und Privatanleger fast 100 Mrd. $ geordert (unverbindliche Angaben von Insidern). Die endgültige Entscheidung fällt am Mi-Nachmittag US-Zeit, der Preis nach US-Schluss (CNBC). 95 % unverändert. Stand Mi 22:15: Ein Ausgabepreis ist noch nicht veröffentlicht. Laut Bloomberg erwägt Anthropic jetzt 80–85 $ je Aktie (anfangs 70–78 $); am oberen Ende brächte das Grundangebot von 801,4 Mio. Aktien rund 68–70 Mrd. $, zusammen mit der Privatplatzierung von 26 Mrd. $ über 96 Mrd. $ – das wäre der größte Börsengang aller Zeiten (Investing.com/Bloomberg). Der Preis kommt am Abend US-Zeit, der Handel unter ANT beginnt am Do (CNBC). 95 % unverändert. Stand Do 08:20: Anthropic hat den Preis am Mi auf 83 $ je Aktie festgelegt, über der Spanne von 70–78 $; 980 Mio. Aktien, Handel ab heute an der Nasdaq unter ANT, Abschluss Fr 20.11. (Anthropic). CNBC: 81,3 Mrd. $ Erlös, mehr als SpaceX im Juni; laut AP rund 1,5 Bio. $ Bewertung. 95 → 99 %, weil Preis und Handelstag offiziell bestätigt sind. Stand Do 12:25: Der Handel unter ANT soll heute nach der Eröffnungsauktion an der Nasdaq beginnen, große Börsengänge starten meist erst gegen Mittag New Yorker Zeit (CNBC). Vorbörsliche Kontrakte auf die Aktie lagen am Morgen um 104 $, rund 25 % über dem Ausgabepreis von 83 $; der Nasdaq-100-Future stand gegen 11:45 rund 2 % im Plus (Goldesel). Musk sagte im NYT-Interview, Anthropic wolle „am wahrscheinlichsten“ zusätzlich 10 Gigawatt Rechenleistung von SpaceX (druckfin); das widerspricht der unbestätigten X-Mitschrift zum Vertragsende Mitte 2027. 99 % unverändert. Stand Do 14:30: Noch kein erster Kurs; der Handel unter ANT beginnt nach der Eröffnungsauktion, bei großen Börsengängen meist erst gegen Mittag New Yorker Zeit, also etwa ab 18:00 Berlin (CNBC). Chipwerte ziehen vorbörslich an: Micron +4,8 %, Intel und Marvell je über +4 %, Nasdaq-100-Future +2,1 % (Investing.com). 99 % unverändert. Stand Do 16:25: Handel unter ANT läuft an, die Eröffnungsauktion zeigt rund 99,60–100 $ an (Newsquawk 16:10), laut Reuters etwa 99,82 $, also rund 20 % über dem Ausgabepreis von 83 $ (HuffPost/Reuters). Einen bestätigten ersten Kurs gab es bis 16:25 noch nicht. 99 % unverändert. Stand Do 18:20: Eingetreten. Anthropic eröffnete um 17:50 Berlin an der Nasdaq bei 111,50 $, 34 % über dem Ausgabepreis von 83 $, Bewertung rund 2 Bio. $ (CNBC, Investing.com). Zuletzt rund 100 $ (Yahoo). 99 → 100 %.",
+      "reasoning": "Anthropic hat am Di 10.11. die Roadshow offiziell gestartet: 825 Mio. Aktien zu 70–78 $, Kürzel ANT an der Nasdaq (Anthropic). Laut CNBC-Insidern soll der Preis am 18.11. stehen und der Handel am Do 19.11. beginnen; das Orderbuch sei in der Spanne schon gedeckt, etwa 20 % gehen an Privatanleger. Am oberen Ende bis zu 64,35 Mrd. $ Erlös und bis zu 1,405 Bio. $ Bewertung, dazu 26 Mrd. $ Privatplatzierung (u. a. Nvidia, Google, Microsoft, AMD). Den Termin nennen nur Insider, Anthropic selbst nicht. Für SPCX zählt der Börsengang doppelt: als KI-Konkurrent von xAI um Kapital und als Maßstab für KI-Bewertungen. 85 statt 60 %, dass der Handel bis Fr 20.11. beginnt: offizielle Preisspanne und gedecktes Buch; Restrisiko Markt und Politik nach den Midterms. Stand Mi 07:00: Fidelity nennt für Privatkunden Zeichnungsende Di 17.11. 16:00 ET (22:00 Berlin) und die Preisfestsetzung am Abend des 18.11.; das stützt den Handelsstart am 19.11. 85 % unverändert. Stand Mi 09:50: Laut FT wollen die Konsortialbanken (Goldman Sachs, Morgan Stanley) wegen hoher Nachfrage den Preis über die Spanne von 70–78 $ heben, die Bewertung läge dann bei 1,5 Bio. $ oder mehr. Das stützt den Termin; 85 % unverändert. Stand Mi 12:55: Der TSMC-Verwaltungsrat hat je 500 Mio. $ Investition in Anthropic und OpenAI genehmigt (Dow Jones). Stützt die Nachfrage; 85 % unverändert. Stand Mi 15:00: Auf X verbreitet sich eine unbestätigte Mitschrift (Konto @jukan05), wonach Anthropic Analysten gesagt habe, der Rechenvertrag mit SpaceX werde über Mitte 2027 hinaus nicht verlängert. Weder Anthropic noch SpaceX haben das bestätigt. Für den Börsentermin ändert das nichts; 85 % unverändert. Stand Mi 16:00: Die X-Mitschrift zum SpaceX-Vertrag ist weiter unbestätigt; weder Anthropic noch SpaceX haben sich geäußert, eine neue SEC-Meldung gibt es nicht. Laut Anthropic-Prospekt sind die Verträge erst nach Januar bzw. März 2027 mit 90 Tagen Frist kündbar (S-1, TokenPost). 85 % unverändert. Stand Mi 18:00: Die X-Mitschrift (@jukan05), Anthropic wolle den SpaceX-Rechenvertrag nicht über Mitte 2027 hinaus verlängern, ist weiter weder bestätigt noch dementiert; auch TeslaNorth schreibt, keine der beiden Firmen habe sich geäußert. 85 % unverändert. Stand Mi 20:00: Musk antwortete um 18:40 auf X auf die Mitschrift: „Wir nehmen die Rechenleistung gern zurück. Kein Problem. Aber ich glaube, das Gegenteil wird passieren.“ Das ist eine Reaktion, keine Bestätigung; Anthropic selbst hat sich weiter nicht geäußert (X, Wccftech). 85 % unverändert. Stand Mi 22:00: Weiter keine Stellungnahme von Anthropic zur Mitschrift. Musk schrieb um 20:01 nach, SpaceX könne im nächsten Jahr etwa die Hälfte der Gigawatt an „tatsächlich nutzbarer“ Rechenleistung stellen. SPCX schloss −2,3 % bei 139,75 $ (X, TeslaNorth, Yahoo). Für den Börsengang selbst ändert das nichts: 85 % unverändert. Stand Do 05:10: Weiter keine Stellungnahme von Anthropic oder SpaceX zur X-Mitschrift über das Vertragsende Mitte 2027 (TeslaNorth). Für den Börsengang selbst neu: der Nvidia-Chefstreit drückt die KI-Werte nachbörslich, das Buch gilt laut früheren Berichten aber als gedeckt. 85 % unverändert. Stand So 08:30: Das Buch ist laut Bloomberg etwa sechsfach überzeichnet, bestehende Geldgeber werden bei der Zuteilung bevorzugt (Reuters). Preisspanne 70–78 $, Preis am 18.11., Handel ab 19.11. unter dem Kürzel ANT (Yonhap Infomax, Reuters). Die dpa-AFX-Wochenvorschau nennt den Börsengang „voraussichtlich am Donnerstag“ (boersennews.de). Für SpaceX wichtig, weil Anthropic Rechenleistung bei SpaceX SI mietet. 85 % unverändert: Nachfrage stark, Restrisiko bleibt eine Verschiebung, falls die Nvidia-Zahlen am Di den KI-Markt stark drücken. Stand So 13:00: Die Spanne bleibt bei 70 bis 78 $; AMD, Broadcom, Google, Micron, Microsoft, Nvidia und TSMC zeichnen zusammen 26 Mrd. $ zum Ausgabepreis. Anthropic schrieb in den ersten neun Monaten 2026 einen Nettoverlust von 104 Mrd. $ und hat Ausgabezusagen über 900 Mrd. $ – CNBC nennt den Börsengang deshalb einen Prüfstein für die ganze KI-Branche. 85 % unverändert. Stand Mo 08:30: Der Zeitplan steht laut Reuters weiter: Preis am Mi, Handel ab Do (Investing.com/Reuters Morning Bid über MLQ). Der Chip-Ausverkauf in Asien erhöht das Risiko einer Verschiebung nur leicht, solange die Nvidia-Zahlen am Di nicht stark enttäuschen. 85 % unverändert. Stand Mo 16:00: Laut Bloomberg ist das Orderbuch fast siebenfach gedeckt, stärker als bei SpaceX zum selben Zeitpunkt; es soll am Di schließen, Preis am Mi, Handel ab Do unter ANT (The Next Web). 85 % unverändert. Stand Mo 22:00: Preisspanne weiter 70–78 $ je Aktie, 825 Mio. Aktien, Preisfestsetzung am Mi 18.11., Handel ab Do 19.11. unter dem Kürzel ANT (CNBC). dpa-AFX nennt den Börsengang einen Grund für die Unsicherheit im Tech-Sektor. 85 % unverändert. Stand Di 18:10: Laut mehreren Quellen von CNBC dürfte Anthropic den Preis über der Spanne von 70–78 $ festlegen; laut Bloomberg am oberen Ende oder darüber. Das Orderbuch schließt heute um 16:00 Uhr New Yorker Zeit (22:00 Berlin), Handel ab Do unter ANT (CNBC, Capital Brief). 85 % unverändert. Stand Di 20:20: Laut Wall Street Journal will Anthropic die Aktien über 80 $ ausgeben, das wären rund 1,5–1,6 Bio. $ Bewertung (bisher bis 1,33 Bio. $ am oberen Ende); die Wagnisgeldgeber Bessemer, Menlo und Accel wollen sogar zukaufen. Endgültig festgelegt wird der Preis erst am Mi und hängt laut WSJ auch von der Reaktion auf die Nvidia-Zahlen ab; Handel ab Do unter ANT (Stocktwits/Yahoo). Ein offizieller Preis liegt noch nicht vor. 85 % unverändert. Stand Di 22:20: Laut CNBC-Quellen dürfte Anthropic den Preis über der Spanne von 70–78 $ festlegen, die Nachfrage soll ein Vielfaches der angebotenen Aktien betragen. Ein offizieller Ausgabepreis liegt noch nicht vor; Preisfestsetzung Mi, Handel ab Do unter ANT (CNBC). Microsoft stellte am Di eigene KI-Modelle für Programmierung und Cybersicherheit vor (MAI Code 2), als Konkurrenz zu Anthropic und OpenAI (Economic Times/Reuters). 85 % unverändert. Stand Mi 11:50: Laut Bloomberg steht Anthropic kurz vor der Preisfestsetzung; der Preis soll am oberen Ende der Spanne oder darüber liegen, das Buch ist laut Bankern fast siebenfach überzeichnet. Angeboten werden 825 Mio. Aktien (Bloomberg Law, CNBC). Der Preis kommt nach US-Schluss am Mi, Handel ab Do unter ANT. Nvidias Zahlen haben die Tech-Stimmung am Mi früh etwas beruhigt (dpa-AFX). 92 statt 85 %: Bücher geschlossen, Nachfrage hoch, Markt stabiler; Restrisiko ist eine kurzfristige Verschiebung. Stand Mi 13:30: Noch kein Ausgabepreis. Laut Börsenprospekt lag der Umsatz im 3. Quartal bei 17 Mrd. $ (Vorjahr 1,4 Mrd. $), die hochgerechnete Jahresrate Ende Oktober bei rund 81 Mrd. $. Am oberen Ende der Spanne brächte der Börsengang rund 64,4 Mrd. $ und eine Bewertung von etwa 1,4 Billionen $ (RTÉ). 92 % unverändert. Stand Mi 15:30: Offiziell gilt weiter die Spanne 70–78 $ für 825 Mio. Aktien aus dem 3. S-1-Nachtrag vom 17.11.; laut Bloomberg ist das Angebot fast siebenfach überzeichnet, laut WSJ wird ein Preis über 80 $ erwartet (Invezz). Der Preis kommt heute nach US-Schluss, Handel unter „ANT“ ab Do (Yahoo Finance). Ich hebe auf 95 %, weil die Bücher geschlossen sind und die Nachfrage weit über dem Angebot liegt; Restrisiko ist ein kurzfristiger Aufschub bei einem Markteinbruch. Stand Mi 16:15: Noch kein Ausgabepreis, der kommt nach US-Schluss (22:00 Berlin). Vanda Research schätzt rund 250 Mio. $ Netto-Käufe von Privatanlegern am ersten Handelstag, doppelt so viel wie beim SpaceX-Börsengang; bis zu 20 % der Aktien sollen an Privatanleger gehen (CNBC). 95 % unverändert. Stand Mi 18:15: Laut CNBC erwägt Anthropic, mehr Aktien anzubieten und den Preis deutlich über 80 $ zu setzen; Großanleger hätten rund 400 Mrd. $ und Privatanleger fast 100 Mrd. $ geordert (unverbindliche Angaben von Insidern). Die endgültige Entscheidung fällt am Mi-Nachmittag US-Zeit, der Preis nach US-Schluss (CNBC). 95 % unverändert. Stand Mi 22:15: Ein Ausgabepreis ist noch nicht veröffentlicht. Laut Bloomberg erwägt Anthropic jetzt 80–85 $ je Aktie (anfangs 70–78 $); am oberen Ende brächte das Grundangebot von 801,4 Mio. Aktien rund 68–70 Mrd. $, zusammen mit der Privatplatzierung von 26 Mrd. $ über 96 Mrd. $ – das wäre der größte Börsengang aller Zeiten (Investing.com/Bloomberg). Der Preis kommt am Abend US-Zeit, der Handel unter ANT beginnt am Do (CNBC). 95 % unverändert. Stand Do 08:20: Anthropic hat den Preis am Mi auf 83 $ je Aktie festgelegt, über der Spanne von 70–78 $; 980 Mio. Aktien, Handel ab heute an der Nasdaq unter ANT, Abschluss Fr 20.11. (Anthropic). CNBC: 81,3 Mrd. $ Erlös, mehr als SpaceX im Juni; laut AP rund 1,5 Bio. $ Bewertung. 95 → 99 %, weil Preis und Handelstag offiziell bestätigt sind. Stand Do 12:25: Der Handel unter ANT soll heute nach der Eröffnungsauktion an der Nasdaq beginnen, große Börsengänge starten meist erst gegen Mittag New Yorker Zeit (CNBC). Vorbörsliche Kontrakte auf die Aktie lagen am Morgen um 104 $, rund 25 % über dem Ausgabepreis von 83 $; der Nasdaq-100-Future stand gegen 11:45 rund 2 % im Plus (Goldesel). Musk sagte im NYT-Interview, Anthropic wolle „am wahrscheinlichsten“ zusätzlich 10 Gigawatt Rechenleistung von SpaceX (druckfin); das widerspricht der unbestätigten X-Mitschrift zum Vertragsende Mitte 2027. 99 % unverändert. Stand Do 14:30: Noch kein erster Kurs; der Handel unter ANT beginnt nach der Eröffnungsauktion, bei großen Börsengängen meist erst gegen Mittag New Yorker Zeit, also etwa ab 18:00 Berlin (CNBC). Chipwerte ziehen vorbörslich an: Micron +4,8 %, Intel und Marvell je über +4 %, Nasdaq-100-Future +2,1 % (Investing.com). 99 % unverändert. Stand Do 16:25: Handel unter ANT läuft an, die Eröffnungsauktion zeigt rund 99,60–100 $ an (Newsquawk 16:10), laut Reuters etwa 99,82 $, also rund 20 % über dem Ausgabepreis von 83 $ (HuffPost/Reuters). Einen bestätigten ersten Kurs gab es bis 16:25 noch nicht. 99 % unverändert. Stand Do 18:20: Eingetreten. Anthropic eröffnete um 17:50 Berlin an der Nasdaq bei 111,50 $, 34 % über dem Ausgabepreis von 83 $, Bewertung rund 2 Bio. $ (CNBC, Investing.com). Zuletzt rund 100 $ (Yahoo). 99 → 100 %. Stand Fr 07:50: Erster Handelstag beendet. Schluss 97,17 $ (+17 % zum Ausgabepreis 83 $), Tageshoch 115,10 $, Bewertung rund 1,76 Bio. $; nachbörslich etwa −5 % (Yahoo/Benzinga, CNBC, tagesschau). Der Börsengang hat den KI-Handel nicht gestützt: Nasdaq −2,25 %, S&P 500 −2,0 %. 100 % bleibt.",
       "example": false,
       "sources": [
         {
@@ -599,6 +494,18 @@
         {
           "title": "Reuters via Investing.com: Aktien schwanken zum Anthropic-Debüt (19.11.)",
           "url": "https://www.investing.com/news/economy-news/stocks-rise-after-anthropic-ipo-pricing-sets-stage-for-blockbuster-debut-5037540"
+        },
+        {
+          "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
+        },
+        {
+          "title": "CNBC: Friday's big stock stories (19.11.)",
+          "url": "https://www.cnbc.com/2026/11/19/fridays-big-stock-stories-whats-likely-to-move-the-market.html"
+        },
+        {
+          "title": "tagesschau: Dax dürfte trotz Anthropic-Hype weiter fallen (20.11., 07:30)",
+          "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-102.html"
         }
       ]
     },
@@ -651,9 +558,9 @@
     },
     {
       "id": "evt-falcon9-ussf317",
-      "title": "SpaceX: Falcon-9-Start USSF-317 für die Space Force (Fr 20.11. 05:32)",
-      "date": "2026-11-20",
-      "time": "05:32",
+      "title": "SpaceX: Falcon-9-Start USSF-317 für die Space Force (Sa 21.11. 03:32)",
+      "date": "2026-11-21",
+      "time": "03:32",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -663,7 +570,7 @@
       ],
       "probabilityPct": 70,
       "impact": "niedrig",
-      "reasoning": "SpaceX zielt jetzt auf Freitag 13.11., Vier-Stunden-Fenster ab 20:09 Uhr Ortszeit Vandenberg (in Berlin Sa 14.11. 05:09), Ersatz Samstag 19:55 Ortszeit. Vorher stand Donnerstag 20:23 Ortszeit. Dritter Space-Force-Start binnen gut einer Woche von derselben Rampe, deshalb Turnaround-Risiko. Kurswirkung gering. Stand Fr 09:55: Erneut verschoben. SpaceX zielt jetzt auf Dienstag 17.11., Vier-Stunden-Fenster ab 19:14 Uhr Ortszeit Vandenberg (in Berlin Mi 18.11. 04:14), Ersatz Mi 18.11. 20:54 Ortszeit. Die Erststufe fliegt zum 11. Mal und soll auf „Of Course I Still Love You“ landen (SpaceX, spacex-news.com). Einen Grund nennt SpaceX nicht. 75 % unverändert für den neuen Termin. Stand So 05:30: SpaceX nennt weiter Dienstag 17.11., Fenster ab 19:14 Uhr Ortszeit (Mi 18.11. 04:14 Berlin), Ersatz Mi 20:54 Ortszeit. Damit ist USSF-317 jetzt der nächste Space-Force-Start, vor USSF-266 (SpaceX). 75 % unverändert. Stand So 06:30: Unverändert, die Startdatenbank führt den Start weiter für 18.11. 03:14 UTC (04:14 Berlin) mit Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 08:30: Unverändert 18.11. 03:14 UTC (04:14 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 09:30: Unverändert 18.11. 03:14 UTC (04:14 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Erneut um einen Tag verschoben. Die Startdatenbank führt seit So 20:00 Berlin den 19.11. 03:00 UTC (Do 04:00 Berlin), Fenster bis 07:00 UTC, Status weiter „Go“; ein Grund wird nicht genannt (Launch Library 2 mit Verweis auf SpaceX). Der 19.11. war schon vorher als Ersatztag genannt. Dazu: Die Konkurrenzrakete Vulcan von ULA ist am So beim ersten Flug nach neun Monaten Pause gescheitert; die Space Force wollte erst die Daten dieses Flugs prüfen, bevor sie Vulcan wieder für ihre Missionen freigibt (Spaceflight Now). 75 % unverändert: eine weitere kurze Verschiebung ist bei diesem Start schon mehrfach passiert. Stand So 22:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin) und Status „Go“ unverändert (Launch Library 2). 75 % unverändert. Stand Mo 05:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin) und Status „Go“ unverändert (Launch Library 2). Am Wochenende keine neuen FAA- oder SpaceX-Meldungen dazu. 75 % unverändert. Stand Mo 06:30: Termin Do 19.11. 03:00 UTC (04:00 Berlin), Fenster bis 07:00 UTC, Status „Go“ unverändert (Launch Library 2). 75 % unverändert. Stand Mo 08:30: Keine neue Meldung zu Termin oder Status seit 06:30. 75 % unverändert. Stand Mo 09:30: Die Startdatenbank führt weiter Do 19.11. 03:00 UTC (04:00 Berlin), „Go“ (Launch Library 2). Die letzte FAA-Mitteilung (vom 13.11.) nennt noch den 18.11. 03:14–07:36 UTC als ersten und den 19.11. 03:00–07:22 UTC als Ersatztag – das passt zum Ersatztermin. 75 % unverändert. Stand Mo 11:30: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Mo 13:00: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Mo 16:00: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Di 05:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin), Fenster bis 07:00 UTC, Status „Go“ unverändert (Launch Library 2). Das Wetter wird aber zum Risiko: Die Vorhersage für Vandenberg zeigt zum Start 100 % Bewölkung, mögliche Schauer und Wind um 10 m/s; das Wettermodell der Start-App MaxQ schätzt nur rund 40 % Startwetter (Spanne 20–51 %). Eine offizielle Prognose der Space Force liegt noch nicht vor. 65 statt 75 %, weil ein Wetteraufschub um einen Tag wahrscheinlicher geworden ist. Stand Mi 11:50: Erneut verschoben. SpaceX zielt jetzt auf Fr 20.11., vier Stunden Fenster ab 02:46 UTC (03:46 Berlin, Do 19:46 Ortszeit Vandenberg); Status „Go“ (SpaceX, Next Spaceflight). Einen Grund für die neue Verschiebung nennt SpaceX nicht (Orbit Codex). 65 % unverändert: Nach mehreren Verschiebungen bleibt ein weiterer Aufschub gut möglich. Stand Do 12:25: Erneut um gut eine Stunde verschoben: Start jetzt Fr 20.11. 04:28 UTC (05:28 Berlin), Booster B1100 auf seinem 11. Flug, Landung auf der Drohnenschiff „Of Course I Still Love You“ (Next Spaceflight). 65 % unverändert. Stand Do 14:30: Weiter Fr 20.11. 04:28 UTC (05:28 Berlin) laut Next Spaceflight und Orbit Codex. Axios: Nach dem Vulcan-Fehlschlag von ULA am So bleibt SpaceX vorerst der einzige verfügbare Anbieter für Starts der nationalen Sicherheit. 65 % unverändert. Stand Do 16:25: Um vier Minuten auf Fr 04:32 UTC (05:32 Berlin) verschoben, Status jetzt „Go“ (Space Launch Live, Next Spaceflight). 65 → 70 %, weil die Startfreigabe steht; Wetter in Vandenberg bleibt das Restrisiko.",
+      "reasoning": "SpaceX zielt jetzt auf Freitag 13.11., Vier-Stunden-Fenster ab 20:09 Uhr Ortszeit Vandenberg (in Berlin Sa 14.11. 05:09), Ersatz Samstag 19:55 Ortszeit. Vorher stand Donnerstag 20:23 Ortszeit. Dritter Space-Force-Start binnen gut einer Woche von derselben Rampe, deshalb Turnaround-Risiko. Kurswirkung gering. Stand Fr 09:55: Erneut verschoben. SpaceX zielt jetzt auf Dienstag 17.11., Vier-Stunden-Fenster ab 19:14 Uhr Ortszeit Vandenberg (in Berlin Mi 18.11. 04:14), Ersatz Mi 18.11. 20:54 Ortszeit. Die Erststufe fliegt zum 11. Mal und soll auf „Of Course I Still Love You“ landen (SpaceX, spacex-news.com). Einen Grund nennt SpaceX nicht. 75 % unverändert für den neuen Termin. Stand So 05:30: SpaceX nennt weiter Dienstag 17.11., Fenster ab 19:14 Uhr Ortszeit (Mi 18.11. 04:14 Berlin), Ersatz Mi 20:54 Ortszeit. Damit ist USSF-317 jetzt der nächste Space-Force-Start, vor USSF-266 (SpaceX). 75 % unverändert. Stand So 06:30: Unverändert, die Startdatenbank führt den Start weiter für 18.11. 03:14 UTC (04:14 Berlin) mit Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 08:30: Unverändert 18.11. 03:14 UTC (04:14 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 09:30: Unverändert 18.11. 03:14 UTC (04:14 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Erneut um einen Tag verschoben. Die Startdatenbank führt seit So 20:00 Berlin den 19.11. 03:00 UTC (Do 04:00 Berlin), Fenster bis 07:00 UTC, Status weiter „Go“; ein Grund wird nicht genannt (Launch Library 2 mit Verweis auf SpaceX). Der 19.11. war schon vorher als Ersatztag genannt. Dazu: Die Konkurrenzrakete Vulcan von ULA ist am So beim ersten Flug nach neun Monaten Pause gescheitert; die Space Force wollte erst die Daten dieses Flugs prüfen, bevor sie Vulcan wieder für ihre Missionen freigibt (Spaceflight Now). 75 % unverändert: eine weitere kurze Verschiebung ist bei diesem Start schon mehrfach passiert. Stand So 22:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin) und Status „Go“ unverändert (Launch Library 2). 75 % unverändert. Stand Mo 05:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin) und Status „Go“ unverändert (Launch Library 2). Am Wochenende keine neuen FAA- oder SpaceX-Meldungen dazu. 75 % unverändert. Stand Mo 06:30: Termin Do 19.11. 03:00 UTC (04:00 Berlin), Fenster bis 07:00 UTC, Status „Go“ unverändert (Launch Library 2). 75 % unverändert. Stand Mo 08:30: Keine neue Meldung zu Termin oder Status seit 06:30. 75 % unverändert. Stand Mo 09:30: Die Startdatenbank führt weiter Do 19.11. 03:00 UTC (04:00 Berlin), „Go“ (Launch Library 2). Die letzte FAA-Mitteilung (vom 13.11.) nennt noch den 18.11. 03:14–07:36 UTC als ersten und den 19.11. 03:00–07:22 UTC als Ersatztag – das passt zum Ersatztermin. 75 % unverändert. Stand Mo 11:30: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Mo 13:00: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Mo 16:00: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Di 05:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin), Fenster bis 07:00 UTC, Status „Go“ unverändert (Launch Library 2). Das Wetter wird aber zum Risiko: Die Vorhersage für Vandenberg zeigt zum Start 100 % Bewölkung, mögliche Schauer und Wind um 10 m/s; das Wettermodell der Start-App MaxQ schätzt nur rund 40 % Startwetter (Spanne 20–51 %). Eine offizielle Prognose der Space Force liegt noch nicht vor. 65 statt 75 %, weil ein Wetteraufschub um einen Tag wahrscheinlicher geworden ist. Stand Mi 11:50: Erneut verschoben. SpaceX zielt jetzt auf Fr 20.11., vier Stunden Fenster ab 02:46 UTC (03:46 Berlin, Do 19:46 Ortszeit Vandenberg); Status „Go“ (SpaceX, Next Spaceflight). Einen Grund für die neue Verschiebung nennt SpaceX nicht (Orbit Codex). 65 % unverändert: Nach mehreren Verschiebungen bleibt ein weiterer Aufschub gut möglich. Stand Do 12:25: Erneut um gut eine Stunde verschoben: Start jetzt Fr 20.11. 04:28 UTC (05:28 Berlin), Booster B1100 auf seinem 11. Flug, Landung auf der Drohnenschiff „Of Course I Still Love You“ (Next Spaceflight). 65 % unverändert. Stand Do 14:30: Weiter Fr 20.11. 04:28 UTC (05:28 Berlin) laut Next Spaceflight und Orbit Codex. Axios: Nach dem Vulcan-Fehlschlag von ULA am So bleibt SpaceX vorerst der einzige verfügbare Anbieter für Starts der nationalen Sicherheit. 65 % unverändert. Stand Do 16:25: Um vier Minuten auf Fr 04:32 UTC (05:32 Berlin) verschoben, Status jetzt „Go“ (Space Launch Live, Next Spaceflight). 65 → 70 %, weil die Startfreigabe steht; Wetter in Vandenberg bleibt das Restrisiko. Stand Fr 07:50: Der Versuch in der Nacht zu Freitag wurde abgebrochen, SpaceX nannte keinen Grund. Neues Fenster Fr 20.11. ab 18:32 Uhr Ortszeit Vandenberg, in Berlin Sa 21.11. 03:32; Ersatz Sa 20:12 Ortszeit (SpaceX, Spaceflight Now). 70 % unverändert für den neuen Termin.",
       "example": false,
       "sources": [
         {
@@ -721,6 +628,14 @@
         {
           "title": "Space Launch Live: USSF-317 (Status Go)",
           "url": "https://spacelaunchlive.com/launches/falcon-9-block-5-ussf-317/"
+        },
+        {
+          "title": "Spaceflight Now: SpaceX bricht USSF-317-Versuch ab, neuer Termin Freitag (19.11.)",
+          "url": "https://spaceflightnow.com/2026/11/19/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-2/"
+        },
+        {
+          "title": "SpaceX: USSF-317 Mission",
+          "url": "https://www.spacex.com/launches/ussf317"
         }
       ]
     },
@@ -736,9 +651,9 @@
       "tickers": [
         "TSLA"
       ],
-      "probabilityPct": 85,
+      "probabilityPct": 95,
       "impact": "niedrig",
-      "reasoning": "Tesla LatAm und Berichte (Infobae/TN 7.11.): Ausstellung Unicenter Martínez ab 20.11.; Model 3/Y erwartet, Verkauf/Testfahrten eher 2027. 85 % für sichtbaren Start am/um den 20.11. Kurswirkung gering.",
+      "reasoning": "Tesla LatAm und Berichte (Infobae/TN 7.11.): Ausstellung Unicenter Martínez ab 20.11.; Model 3/Y erwartet, Verkauf/Testfahrten eher 2027. 85 % für sichtbaren Start am/um den 20.11. Kurswirkung gering. Stand Fr 07:50: Tesla hat am 19.11. die Bestellungen für Model 3 und Model Y in Argentinien geöffnet (Tesla North); die Ausstellung im Unicenter ist für heute angekündigt. 85 → 95 %.",
       "example": false,
       "sources": [
         {
@@ -756,6 +671,10 @@
         {
           "title": "TN: Tesla Argentinien 20.11. Unicenter",
           "url": "https://tn.com.ar/autos/novedades/2026/11/07/tesla-anuncio-la-fecha-de-su-llegada-a-la-argentina-donde-se-podran-ver-y-probar-sus-autos/"
+        },
+        {
+          "title": "Tesla North: Tesla öffnet Bestellungen für Model 3 und Model Y in Argentinien (19.11.)",
+          "url": "https://teslanorth.com/2026/11/19/tesla-argentina-model-3-model-y-prices-orders/"
         }
       ]
     },
@@ -880,9 +799,9 @@
       "tickers": [
         "TSLA"
       ],
-      "probabilityPct": 65,
+      "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Im Q3-Call kündigte Tesla Cybercab-Fahrten in Dallas für „nächsten Monat“ an; in Austin fahren bereits über 300 Cybercabs. Musk bekräftigte am 6.11. die Kapazitätsverschiebung Richtung Cybercab (Cybertruck in Texas Mitte 2027 runter). Das Datum hier ist das Monatsende als Frist, kein angekündigter Tag. Ich bleibe bei 55 %, weil Tesla bei Robotaxi-Terminen oft rutscht, der Schritt Austin→Dallas aber klein ist. Politisches Risiko: nach den Midterms in Texas mehr Aufsicht über autonome Fahrdienste möglich. Stand So 05:30: Am Sa wurden in Dallas mehr als 50 Cybercabs mit Tesla-Schriftzug auf einem Parkplatz gefilmt, einige offenbar mit Starlink-Antenne; Sawyer Merritt schreibt, erste öffentliche Fahrten „stehen bevor“. Die Zahl ist eine Schätzung von Beobachtern, Tesla hat noch keinen Start in Dallas verkündet, Fahrgäste fahren dort bisher im Model Y (Sawyer Merritt, Robotaxi DMV USA auf X). Eine Flotte vor Ort zwei Wochen vor Monatsende spricht für den November-Termin: 65 statt 55 %. Stand So 06:30: Keine neue Ankündigung von Tesla über Nacht; Fahrgäste in Dallas bekommen weiter ein Model Y, obwohl dort Dutzende Cybercabs gefilmt wurden (Electric Vehicles). 65 % unverändert. Stand So 08:30: Weiter keine Ankündigung von Tesla zum Start in Dallas. 65 % unverändert. Stand So 09:30: Weiter keine offiziellen Startdetails von Tesla; bekannt sind nur die gefilmten Cybercabs auf einem Parkplatz in Dallas (X-Trend-Zusammenfassung). 65 % unverändert.",
+      "reasoning": "Im Q3-Call kündigte Tesla Cybercab-Fahrten in Dallas für „nächsten Monat“ an; in Austin fahren bereits über 300 Cybercabs. Musk bekräftigte am 6.11. die Kapazitätsverschiebung Richtung Cybercab (Cybertruck in Texas Mitte 2027 runter). Das Datum hier ist das Monatsende als Frist, kein angekündigter Tag. Ich bleibe bei 55 %, weil Tesla bei Robotaxi-Terminen oft rutscht, der Schritt Austin→Dallas aber klein ist. Politisches Risiko: nach den Midterms in Texas mehr Aufsicht über autonome Fahrdienste möglich. Stand So 05:30: Am Sa wurden in Dallas mehr als 50 Cybercabs mit Tesla-Schriftzug auf einem Parkplatz gefilmt, einige offenbar mit Starlink-Antenne; Sawyer Merritt schreibt, erste öffentliche Fahrten „stehen bevor“. Die Zahl ist eine Schätzung von Beobachtern, Tesla hat noch keinen Start in Dallas verkündet, Fahrgäste fahren dort bisher im Model Y (Sawyer Merritt, Robotaxi DMV USA auf X). Eine Flotte vor Ort zwei Wochen vor Monatsende spricht für den November-Termin: 65 statt 55 %. Stand So 06:30: Keine neue Ankündigung von Tesla über Nacht; Fahrgäste in Dallas bekommen weiter ein Model Y, obwohl dort Dutzende Cybercabs gefilmt wurden (Electric Vehicles). 65 % unverändert. Stand So 08:30: Weiter keine Ankündigung von Tesla zum Start in Dallas. 65 % unverändert. Stand So 09:30: Weiter keine offiziellen Startdetails von Tesla; bekannt sind nur die gefilmten Cybercabs auf einem Parkplatz in Dallas (X-Trend-Zusammenfassung). 65 % unverändert. Stand Fr 07:50: Eingetreten. Tesla hat am 19.11. auf X den Cybercab-Betrieb in Dallas angekündigt; Fahrgäste können Cybercab und Model Y nicht frei wählen, das Gebiet ist begrenzt (InsideEVs via DigitalToday). 65 → 100 %.",
       "example": false,
       "sources": [
         {
@@ -916,6 +835,10 @@
         {
           "title": "X-Trend-Zusammenfassung: Cybercabs in Dallas aufgereiht, noch keine offiziellen Startdetails (15.11.)",
           "url": "https://x.com/i/trending/2121773591033151527"
+        },
+        {
+          "title": "DigitalToday (nach InsideEVs): Tesla startet Cybercab in Dallas (20.11.)",
+          "url": "https://www.digitaltoday.co.kr/en/view/128508/tesla-cybercab-robotaxi-expands-to-dallas-after-austin"
         }
       ]
     },
@@ -2281,7 +2204,7 @@
       ],
       "probabilityPct": 70,
       "impact": "niedrig",
-      "reasoning": "Die Dragon-Frachtkapsel der 35. Versorgungsmission soll am Do 19.11. um 12:05 Uhr US-Ostküstenzeit (18:05 Berlin) von der ISS ablegen und danach vor Kalifornien wassern. Am Mi wurde das Abdocken wegen schlechten Wetters in den Landegebieten abgesagt; die NASA nennt nur das Wetter als Grund, nicht die Kapsel (NASA, SpaceX auf X). 70 %, weil das Wetter vor Kalifornien schon einmal zum Aufschub geführt hat. Für den Kurs ist das Routine. Stand Mi 13:30: Die NASA prüft das Wetter erneut am Mi um 12:00 Uhr US-Ostküstenzeit (18:00 Berlin); die nächste Abdock-Chance bleibt Do 12:05 Ostküstenzeit (NASA). 70 % unverändert. Stand Mi 15:30: Keine neue NASA-Meldung seit der Absage für Mittwoch; die nächste Wetterbesprechung ist heute um 18:00 Berlin, die nächste Gelegenheit Do 18:05 (NASA). 70 % unverändert. Stand Mi 16:15: Weiter keine neue NASA-Meldung; Wetterbesprechung 18:00 Berlin, nächste Gelegenheit Do 18:05 (NASA). 70 % unverändert. Stand Mi 18:15: Das Ergebnis der Wetterbesprechung von 18:00 ist noch nicht veröffentlicht; im NASA-Blog steht weiter nur die Absage für Mittwoch. SpaceX nennt als Termin frühestens Do 12:05 Uhr Ostküstenzeit (18:05 Berlin) (NASA, SpaceX). 70 % unverändert. Stand Mi 20:15: Ergebnis der Wetterbesprechung: Auch Donnerstag fällt aus. NASA und SpaceX nennen jetzt frühestens Fr 20.11. um 12:05 Uhr Ostküstenzeit (18:05 Berlin) fürs Abdocken und frühestens Sa 21.11. um 17:04 Uhr Ostküstenzeit (23:04 Berlin) für die Wasserung vor Kalifornien, je nach Wetter (NASA, SpaceX). Ein technisches Problem wird nicht genannt. Weil das Wetter schon zweimal nicht passte, bleibt es bei 70 % für Freitag. Stand Mi 22:15: Die ISS-Crew packt weiter Experimente und Geräte in die Kapsel (NASA, ISS auf X). Neuer Termin bleibt frühestens Fr 20.11. 18:05 Berlin, Wasserung frühestens Sa 23:04, je nach Wetter (NASA). 70 % unverändert. Stand Do 08:20: SpaceX und NASA nennen weiter frühestens Fr 20.11. 12:05 Uhr Ostküstenzeit (18:05 Berlin) (SpaceX, NASA). 70 % unverändert, Wetter bleibt das Risiko. Stand Do 12:25: NASA bestätigt die Übertragung: Abkoppeln frühestens Fr 12:05 Uhr Ostküstenzeit (18:05 Berlin), Wasserung vor Kalifornien frühestens Sa 17:04 Ostküstenzeit (23:04 Berlin), je nach Wetter (NASA). 70 % unverändert. Stand Do 18:20: Die Seewetter-Vorhersage für Nordkalifornien sieht besser aus (5–15 Knoten Wind, 6–9 Fuß Wellen), weiter draußen bis 25 Knoten (NOAA). Termin bleibt frühestens Fr 18:05 Berlin. 70 % unverändert.",
+      "reasoning": "Die Dragon-Frachtkapsel der 35. Versorgungsmission soll am Do 19.11. um 12:05 Uhr US-Ostküstenzeit (18:05 Berlin) von der ISS ablegen und danach vor Kalifornien wassern. Am Mi wurde das Abdocken wegen schlechten Wetters in den Landegebieten abgesagt; die NASA nennt nur das Wetter als Grund, nicht die Kapsel (NASA, SpaceX auf X). 70 %, weil das Wetter vor Kalifornien schon einmal zum Aufschub geführt hat. Für den Kurs ist das Routine. Stand Mi 13:30: Die NASA prüft das Wetter erneut am Mi um 12:00 Uhr US-Ostküstenzeit (18:00 Berlin); die nächste Abdock-Chance bleibt Do 12:05 Ostküstenzeit (NASA). 70 % unverändert. Stand Mi 15:30: Keine neue NASA-Meldung seit der Absage für Mittwoch; die nächste Wetterbesprechung ist heute um 18:00 Berlin, die nächste Gelegenheit Do 18:05 (NASA). 70 % unverändert. Stand Mi 16:15: Weiter keine neue NASA-Meldung; Wetterbesprechung 18:00 Berlin, nächste Gelegenheit Do 18:05 (NASA). 70 % unverändert. Stand Mi 18:15: Das Ergebnis der Wetterbesprechung von 18:00 ist noch nicht veröffentlicht; im NASA-Blog steht weiter nur die Absage für Mittwoch. SpaceX nennt als Termin frühestens Do 12:05 Uhr Ostküstenzeit (18:05 Berlin) (NASA, SpaceX). 70 % unverändert. Stand Mi 20:15: Ergebnis der Wetterbesprechung: Auch Donnerstag fällt aus. NASA und SpaceX nennen jetzt frühestens Fr 20.11. um 12:05 Uhr Ostküstenzeit (18:05 Berlin) fürs Abdocken und frühestens Sa 21.11. um 17:04 Uhr Ostküstenzeit (23:04 Berlin) für die Wasserung vor Kalifornien, je nach Wetter (NASA, SpaceX). Ein technisches Problem wird nicht genannt. Weil das Wetter schon zweimal nicht passte, bleibt es bei 70 % für Freitag. Stand Mi 22:15: Die ISS-Crew packt weiter Experimente und Geräte in die Kapsel (NASA, ISS auf X). Neuer Termin bleibt frühestens Fr 20.11. 18:05 Berlin, Wasserung frühestens Sa 23:04, je nach Wetter (NASA). 70 % unverändert. Stand Do 08:20: SpaceX und NASA nennen weiter frühestens Fr 20.11. 12:05 Uhr Ostküstenzeit (18:05 Berlin) (SpaceX, NASA). 70 % unverändert, Wetter bleibt das Risiko. Stand Do 12:25: NASA bestätigt die Übertragung: Abkoppeln frühestens Fr 12:05 Uhr Ostküstenzeit (18:05 Berlin), Wasserung vor Kalifornien frühestens Sa 17:04 Ostküstenzeit (23:04 Berlin), je nach Wetter (NASA). 70 % unverändert. Stand Do 18:20: Die Seewetter-Vorhersage für Nordkalifornien sieht besser aus (5–15 Knoten Wind, 6–9 Fuß Wellen), weiter draußen bis 25 Knoten (NOAA). Termin bleibt frühestens Fr 18:05 Berlin. 70 % unverändert. Stand Fr 07:50: Die NASA hält am Abdocken heute um 12:05 Uhr Ostküstenzeit (18:05 Berlin) fest, Übertragung ab 17:45 Berlin; Wasserung vor Kalifornien Sa 21.11. gegen 22:55 Berlin, wetterabhängig (NASA, aktualisiert 19.11.). 70 % unverändert, weil das Wetter im Landegebiet schon zweimal zum Aufschub geführt hat.",
       "example": false,
       "sources": [
         {
@@ -2327,6 +2250,10 @@
         {
           "title": "NOAA: Seewetter-Vorhersage Pazifik (FZPN26)",
           "url": "https://www.ndbc.noaa.gov/data/Forecasts/FZPN26.KWBC.html"
+        },
+        {
+          "title": "NASA: Abdocken CRS-35 Fr 20.11. 12:05 EST, Wasserung Sa 21.11. (aktualisiert 19.11.)",
+          "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/"
         }
       ]
     },
@@ -2345,7 +2272,7 @@
       ],
       "probabilityPct": 65,
       "impact": "mittel",
-      "reasoning": "Laut Bloomberg könnten Goldman Sachs und Apollo schon diese Woche rund 4 Mrd. $ Anleihen aus der etwa 40 Mrd. $ schweren Finanzierung für Nvidias Vera-Rubin-Chips verkaufen. Eine Zweckgesellschaft von Atlas SP kauft die Chips und vermietet sie an SpaceX, so bleiben die Schulden außerhalb der SpaceX-Bilanz; ein Preis ist noch nicht festgelegt (Yahoo Finance/Bloomberg, Lianhe Zaobao). Finanzchef Johnsen sagte am Di, ein großer Teil des Ausbaus werde aus dem eigenen Geschäft bezahlt (Stocktwits). 60 %, weil nur ein Medienbericht vorliegt und SpaceX nichts bestätigt hat. Stand Mi 15:30: Semafor bestätigt unabhängig von Bloomberg, dass Teile der siebenteiligen Finanzierung schon diese Woche an Anleger gehen könnten. Apollo gibt zunächst fast 20 Mrd. $ selbst und verkauft das später weiter; der Großteil von 35,5 Mrd. $ soll 8,3 % bzw. 7,75 % Zins tragen, riskantere Teile unter 3 Mrd. $ über 9 %. Das Geld geht in eine Zweckgesellschaft, SpaceX mietet die GPUs (Semafor). 60 → 65 %, weil jetzt zwei Medien unabhängig berichten; SpaceX selbst hat weiter nichts bestätigt. Stand Mi 20:15: Ein Abschluss ist noch nicht gemeldet. Bemerkenswert: Das heute veröffentlichte Fed-Protokoll nennt ausdrücklich Leasing-Verpflichtungen außerhalb der Bilanz bei KI-Firmen als Risiko – genau so ist die SpaceX-Finanzierung gebaut (Zweckgesellschaft kauft die Chips, SpaceX mietet sie) (CNBC, Semafor). Das ändert nichts am Zeitplan; 65 % unverändert.",
+      "reasoning": "Laut Bloomberg könnten Goldman Sachs und Apollo schon diese Woche rund 4 Mrd. $ Anleihen aus der etwa 40 Mrd. $ schweren Finanzierung für Nvidias Vera-Rubin-Chips verkaufen. Eine Zweckgesellschaft von Atlas SP kauft die Chips und vermietet sie an SpaceX, so bleiben die Schulden außerhalb der SpaceX-Bilanz; ein Preis ist noch nicht festgelegt (Yahoo Finance/Bloomberg, Lianhe Zaobao). Finanzchef Johnsen sagte am Di, ein großer Teil des Ausbaus werde aus dem eigenen Geschäft bezahlt (Stocktwits). 60 %, weil nur ein Medienbericht vorliegt und SpaceX nichts bestätigt hat. Stand Mi 15:30: Semafor bestätigt unabhängig von Bloomberg, dass Teile der siebenteiligen Finanzierung schon diese Woche an Anleger gehen könnten. Apollo gibt zunächst fast 20 Mrd. $ selbst und verkauft das später weiter; der Großteil von 35,5 Mrd. $ soll 8,3 % bzw. 7,75 % Zins tragen, riskantere Teile unter 3 Mrd. $ über 9 %. Das Geld geht in eine Zweckgesellschaft, SpaceX mietet die GPUs (Semafor). 60 → 65 %, weil jetzt zwei Medien unabhängig berichten; SpaceX selbst hat weiter nichts bestätigt. Stand Mi 20:15: Ein Abschluss ist noch nicht gemeldet. Bemerkenswert: Das heute veröffentlichte Fed-Protokoll nennt ausdrücklich Leasing-Verpflichtungen außerhalb der Bilanz bei KI-Firmen als Risiko – genau so ist die SpaceX-Finanzierung gebaut (Zweckgesellschaft kauft die Chips, SpaceX mietet sie) (CNBC, Semafor). Das ändert nichts am Zeitplan; 65 % unverändert. Stand Fr 07:50: Keine neue Meldung zum Abschluss der Anleihe über Nacht; in der EDGAR-Volltextsuche kein neues 8-K. 65 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -2367,6 +2294,10 @@
         {
           "title": "CNBC: Fed-Mitglieder erwarten weitere Zinserhöhungen und sorgen sich um KI-Inflation – Protokoll (18.11.)",
           "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html"
+        },
+        {
+          "title": "SEC EDGAR Volltextsuche (8-K/Form 4, 19.–20.11.)",
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Tesla%22&forms=8-K,4"
         }
       ]
     },
@@ -2452,6 +2383,56 @@
         {
           "title": "Federal Reserve: Rede Jefferson zu wirtschaftlichen Schocks (19.11.)",
           "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261119a.htm"
+        }
+      ]
+    },
+    {
+      "id": "evt-ebc-lagarde-nov",
+      "title": "Frankfurt: European Banking Congress mit Reden von EZB-Chefin Lagarde und Deutsche-Bank-Chef Sewing",
+      "date": "2026-11-20",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "zinsen",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 95,
+      "impact": "mittel",
+      "reasoning": "Reuters nennt die Reden von Christine Lagarde und Christian Sewing beim European Banking Congress als Hauptpunkte des Tages, dazu Verbrauchervertrauen Euro-Zone und USA sowie deutsche Erzeugerpreise Oktober (Reuters via onvista). Nach dem Kursrutsch zählt jedes Wort zu Zinsen und Finanzstabilität; die EZB entscheidet am 17.12. 95 %, weil der Kongress angekündigt ist, die genaue Uhrzeit nennt die Quelle nicht.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Reuters via onvista: Dax tiefer erwartet – Konjunktur und European Banking Congress im Blick (20.11., 06:21)",
+          "url": "https://www.onvista.de/news/2026/11-20-dax-tiefer-erwartet-konjunktur-und-european-banking-congress-im-blick-0-20-26578647"
+        }
+      ]
+    },
+    {
+      "id": "evt-us-verbrauchervertrauen-nov",
+      "title": "USA: Verbraucherstimmung November (Uni Michigan, endgültig)",
+      "date": "2026-11-20",
+      "time": "16:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "makro",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB"
+      ],
+      "probabilityPct": 97,
+      "impact": "mittel",
+      "reasoning": "Reuters führt das US-Verbrauchervertrauen November auf der Agenda für Freitag (Reuters via onvista); die Uni Michigan veröffentlicht üblich um 10:00 Uhr Ostküstenzeit, also 16:00 Berlin. Wichtig sind vor allem die Inflationserwartungen, weil die Fed nach dem Protokoll weitere Erhöhungen erwägt. 97 % für Termin und Uhrzeit.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Reuters via onvista: Dax tiefer erwartet – Konjunktur und European Banking Congress im Blick (20.11., 06:21)",
+          "url": "https://www.onvista.de/news/2026/11-20-dax-tiefer-erwartet-konjunktur-und-european-banking-congress-im-blick-0-20-26578647"
         }
       ]
     }

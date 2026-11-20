@@ -6235,27 +6235,23 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Do 20:25: 137,55 $ (−4,1 % zum Schluss von 143,50 $, Yahoo); Tageshoch nach der Eröffnung 147,29 $. Der breite Markt fällt deutlich: S&P 500 −1,5 %, Nasdaq −1,6 % (Yahoo), der S&P steuert auf den sechsten Verlusttag in Folge zu (AP). Anthropic eröffnete 34 % über dem Ausgabepreis und gab danach bis auf rund 96 $ nach (Reuters). Laut Motley Fool hängt SpaceX stark an Anthropic: Im Börsenprospekt stehen bis zu 120,5 Mrd. $ für Rechenleistung von SpaceX’ KI-Sparte bis 2029, das bindet die Zahlen eng an einen Kunden. Bernstein bestätigte am Do sein Kursziel von 268 $ (Investing.com).",
+      "why": "Do-Schluss 138,43 $ (−3,5 % zu 143,50 $, Yahoo). Das Anthropic-Debüt zog Geld aus anderen KI-Werten ab, der breite Markt fiel über 2 % (Yahoo/Benzinga); dazu kommt die Sorge um die teuren KI-Rechenzentren und die Abhängigkeit vom großen Anthropic-Rechenvertrag (Motley Fool). Am Morgen Nasdaq-100-Future rund −1,1 % (CNBC).",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX (Do 20:25)",
+          "title": "Yahoo Finance: SPCX (Schluss 19.11.)",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Reuters via Investing.com: Anthropic erreicht 2 Bio. $ beim Debüt, große Indizes fallen (19.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/anthropic-set-to-soar-in-debut-will-ai-peers-follow-5039533"
-        },
-        {
-          "title": "AP: Anthropic-Debüt trägt die Wall Street nicht (19.11.)",
-          "url": "https://apnews.com/article/stocks-markets-ai-us-anthropic-206c84045137824feabe052a29ff6140"
+          "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
         },
         {
           "title": "Motley Fool: Warum die SpaceX-Aktie heute fällt (19.11.)",
           "url": "https://www.fool.com/investing/2026/11/19/why-spacex-stock-is-down-today/"
         },
         {
-          "title": "Investing.com: Bernstein bestätigt SpaceX-Einstufung (19.11.)",
-          "url": "https://www.investing.com/news/analyst-ratings/bernstein-reiterates-spacex-stock-rating-on-ai-compute-build-plan-93CH-5039339"
+          "title": "CNBC: Futures tiefer, Dow erstmals seit Juni unter 50.000 (Live, 20.11.)",
+          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -20121,27 +20117,27 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Do 20:25: 376,67 $ (−1,8 % zum Schluss von 383,72 $, Yahoo); kurz nach der Eröffnung lag Tesla bei rund 391 $, getragen von Musks Zusage für mehr Produktion in Shanghai (Benzinga, Reuters). Das Plus ist weg, weil der ganze Markt dreht: Dow rund −2 %, S&P 500 −1,5 % (Reuters, Yahoo). Keine neue Pflichtmeldung bei der SEC seit Mittwochabend (SEC).",
+      "why": "Do-Schluss 374,41 $ (−2,4 % zu 383,72 $, Yahoo), mit dem Gesamtmarkt (S&P 500 −2,0 %, Yahoo/Benzinga). Gegen den Trend positiv: Tesla startete am 19.11. das Cybercab in Dallas (InsideEVs via DigitalToday) und öffnete Bestellungen in Argentinien (Tesla North). Futures am Morgen tiefer (CNBC).",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA (Do 20:25)",
+          "title": "Yahoo Finance: TSLA (Schluss 19.11.)",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "Benzinga: Was ist los mit der Tesla-Aktie am Donnerstag? (19.11.)",
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63427524/whats-going-on-with-tesla-stock-thursday-2"
+          "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
         },
         {
-          "title": "Reuters via Investing.com: Musk will mehr Produktion in Shanghai (19.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/musk-pledges-higher-tesla-output-at-china-plant-chinese-state-media-says-5037774"
+          "title": "DigitalToday (nach InsideEVs): Tesla startet Cybercab in Dallas (20.11.)",
+          "url": "https://www.digitaltoday.co.kr/en/view/128508/tesla-cybercab-robotaxi-expands-to-dallas-after-austin"
         },
         {
-          "title": "Reuters via Investing.com: Börsen fallen trotz Anthropic-Debüt, Öl steigt (19.11.)",
-          "url": "https://www.investing.com/news/economy-news/stocks-rise-after-anthropic-ipo-pricing-sets-stage-for-blockbuster-debut-5037540"
+          "title": "Tesla North: Tesla öffnet Bestellungen für Model 3 und Model Y in Argentinien (19.11.)",
+          "url": "https://teslanorth.com/2026/11/19/tesla-argentina-model-3-model-y-prices-orders/"
         },
         {
-          "title": "SEC EDGAR: Tesla-Meldungen",
-          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=&dateb=&owner=include&count=40"
+          "title": "CNBC: Futures tiefer, Dow erstmals seit Juni unter 50.000 (Live, 20.11.)",
+          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -31630,27 +31626,23 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Do 20:25: 51,25 $ (−3,4 % zum Schluss von 53,07 $, Yahoo); Tagesspanne bisher 50,45 bis 56,83 $. Das frühe Plus nach Jim Cramers Satz, Rocket Lab sei „zu billig“ (Stocktwits), ist weg; der breite Markt fällt (S&P 500 −1,5 %, Nasdaq −1,6 %, Yahoo), Raumfahrtwerte wie SpaceX (−4,1 %) ebenso. Eine eigene Pressemitteilung oder neue SEC-Meldung gibt es heute nicht (Rocket Lab, SEC). Tagesfrage: Schluss über 53,07 $? Liegt gerade klar darunter, Auflösung nach US-Schluss 22:15.",
+      "why": "Do-Schluss 50,99 $ (−3,9 % zu 53,07 $, Yahoo), sechster Verlusttag in Folge seit 66,15 $. Ein eigener Auslöser fehlt, es gab keine neue Mitteilung und kein neues 8-K (SEC); Raumfahrt- und Wachstumswerte fielen mit dem Markt (MarketBeat, Yahoo/Benzinga).",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB (Do 20:25)",
+          "title": "Yahoo Finance: RKLB (Schluss 19.11.)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "Stocktwits: Cramer nennt Rocket Lab „too cheap“ (19.11.)",
-          "url": "https://stocktwits.com/news-articles/markets/equity/rklb-stock-jim-cramer-likes-spacex-rocketlab-cheap-electron-falcon-9-100-launches/cNbiGliR9iN"
+          "title": "MarketBeat: Rocket Lab fällt auf 50,99 $ (19.11.)",
+          "url": "https://www.marketbeat.com/instant-alerts/price-rocket-lab-nasdaq-rklb-shares-down-39-time-to-sell-2026-11-19/"
         },
         {
-          "title": "Yahoo Finance: ^GSPC (Do 20:25)",
-          "url": "https://finance.yahoo.com/quote/%5EGSPC/"
+          "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
         },
         {
-          "title": "Rocket Lab: Neuigkeiten",
-          "url": "https://rocketlabcorp.com/updates/"
-        },
-        {
-          "title": "SEC EDGAR: Rocket-Lab-Meldungen",
-          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001819994&type=&dateb=&owner=include&count=40"
+          "title": "SEC EDGAR Volltextsuche (8-K/Form 4, 19.–20.11.)",
+          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Tesla%22&forms=8-K,4"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -43939,27 +43931,19 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Do 20:25: 141,93 $ (−2,5 % zum Schluss von 145,54 $, Yahoo); das Plus von über 3 % kurz nach der Eröffnung ist weg. Halbleiterindex SOX −1,2 %, Nvidia −1,7 % (Yahoo); AMD fällt rund 9 % nach einem Leerverkäufer-Bericht von Hunterbrook zu China-Verbindungen (Reuters). Dazu bleibt die Sorge um die Verwässerung durch die geplante Lumentum-Übernahme in reinen Aktien (StreetInsider). Laut Reuters geben KI-Werte breit nach, weil höhere Zinsen auf dem Sektor lasten.",
+      "why": "Do-Schluss 138,47 $ (−4,9 % zu 145,54 $, Yahoo). Chipwerte fielen trotz Nvidias Ausblick weiter, Nvidia sechs Tage in Folge im Minus, AMD unter Druck nach einem Leerverkäufer-Bericht (Yahoo/Benzinga). Asiens Chipwerte am Morgen schwach: SK Hynix −6 %, Samsung −7 % (CNBC).",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL (Do 20:25)",
+          "title": "Yahoo Finance: MRVL (Schluss 19.11.)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "Yahoo Finance: %5ESOX (Do 20:25)",
-          "url": "https://finance.yahoo.com/quote/%5ESOX/"
+          "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
         },
         {
-          "title": "Reuters via StreetInsider: AMD-Aktie rutscht nach Bericht über China-Verbindungen (19.11.)",
-          "url": "https://www.streetinsider.com/Reuters/AMD+shares+slide+as+report+says+China+links+could+invite+US+scrutiny/27375288.html"
-        },
-        {
-          "title": "StreetInsider: Marvell fällt unter Druck des Lumentum-Deals",
-          "url": "https://www.streetinsider.com/Investing/Marvell+Technology+falls+amid+Lumentum+deal+pressure/27368165.html"
-        },
-        {
-          "title": "Reuters via Investing.com: Anthropic erreicht 2 Bio. $ beim Debüt, große Indizes fallen (19.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/anthropic-set-to-soar-in-debut-will-ai-peers-follow-5039533"
+          "title": "CNBC: Futures tiefer, Dow erstmals seit Juni unter 50.000 (Live, 20.11.)",
+          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",
