@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T14:37:00+01:00",
+  "updatedAt": "2026-11-20T15:13:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
-      "score": -50,
-      "postsCount": 16,
-      "reason": "SpaceX rutscht vorbörslich gut 6 % auf rund 130 $. Leute nennen den Kursrutsch bei KI-Werten, die 32-Mrd.-$-Anleihe und Streit mit Kreditgebern über Chips im All.",
+      "score": -40,
+      "postsCount": 14,
+      "reason": "SpaceX liegt vorbörslich gut 6 % im Minus, Sorgen um teure Chip-Anleihen über 8 % Zins. Fans halten dagegen und verweisen auf Tepper, der stark aufgestockt hat.",
       "sources": [
         {
-          "title": "@gonta_southwood auf X (20.11., 14:23)",
-          "url": "https://x.com/gonta_southwood/status/2123769274967970186"
+          "title": "@gonta_southwood auf X (20.11., 14:49)",
+          "url": "https://x.com/gonta_southwood/status/2123775638138142827"
         },
         {
-          "title": "@DRJBori63 auf X (20.11., 14:03)",
-          "url": "https://x.com/DRJBori63/status/2123764042569228347"
+          "title": "@BullishWhisper auf X (20.11., 14:53)",
+          "url": "https://x.com/BullishWhisper/status/2123776873255854375"
         },
         {
-          "title": "@spcxGOD auf X (20.11., 14:32)",
-          "url": "https://x.com/spcxGOD/status/2123771389098307814"
+          "title": "@TeslaEuskadi auf X (20.11., 14:47)",
+          "url": "https://x.com/TeslaEuskadi/status/2123775260755656794"
         }
       ],
-      "updatedAt": "2026-11-20T14:37:00+01:00"
+      "updatedAt": "2026-11-20T15:13:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": -5,
-      "postsCount": 15,
-      "reason": "HSBC hebt Tesla auf Halten und das Kursziel auf 359 $, viele reden über eine Fusion mit SpaceX. Der schwache Gesamtmarkt drückt aber auf die Laune.",
+      "score": -15,
+      "postsCount": 14,
+      "reason": "Nach dem HSBC-Hochstufen kippt die Laune: Viele spotten über den Rückgang von fast 400 $ und rechnen mit weiter fallenden Kursen. Fans setzen auf die SpaceX-Fusion.",
       "sources": [
         {
-          "title": "@barronsonline auf X (20.11., 13:28)",
-          "url": "https://x.com/barronsonline/status/2123755270161478034"
+          "title": "@BoBbyPleWniaK auf X (20.11., 14:37)",
+          "url": "https://x.com/BoBbyPleWniaK/status/2123772706621403572"
         },
         {
-          "title": "@StockStormX auf X (20.11., 13:34)",
-          "url": "https://x.com/StockStormX/status/2123756942544044126"
+          "title": "@sperezintexas auf X (20.11., 15:09)",
+          "url": "https://x.com/sperezintexas/status/2123780817591628255"
         },
         {
-          "title": "@Michael34952 auf X (20.11., 13:40)",
-          "url": "https://x.com/Michael34952/status/2123758280316985582"
+          "title": "@JTrades31 auf X (20.11., 14:57)",
+          "url": "https://x.com/JTrades31/status/2123777679757344906"
         }
       ],
-      "updatedAt": "2026-11-20T14:37:00+01:00"
+      "updatedAt": "2026-11-20T15:13:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 0,
-      "postsCount": 12,
-      "reason": "Über 1.000 gebaute Rutherford-Triebwerke machen die Runde, Fans bleiben gelassen und sehen 50 $ als tiefen Kurs. Der Markt insgesamt wirkt aber ängstlich.",
+      "score": -5,
+      "postsCount": 10,
+      "reason": "Ruhig bei Rocket Lab: Die 1.000 Rutherford-Triebwerke werden gelobt, einige Anleger schalten wegen der Marktschwäche aber lieber die Kursalarme ab.",
       "sources": [
         {
           "title": "@FelixSchlang auf X (20.11., 14:21)",
           "url": "https://x.com/FelixSchlang/status/2123768672845955363"
         },
         {
-          "title": "@Neil_Shares auf X (20.11., 14:06)",
-          "url": "https://x.com/Neil_Shares/status/2123764966595682795"
+          "title": "@BacklogAlpha auf X (20.11., 15:00)",
+          "url": "https://x.com/BacklogAlpha/status/2123778393959202890"
         },
         {
-          "title": "@RCapitalX auf X (20.11., 13:52)",
-          "url": "https://x.com/RCapitalX/status/2123761308998979697"
+          "title": "@ayanjainhere auf X (20.11., 14:55)",
+          "url": "https://x.com/ayanjainhere/status/2123777355634319493"
         }
       ],
-      "updatedAt": "2026-11-20T14:37:00+01:00"
+      "updatedAt": "2026-11-20T15:13:00+01:00"
     }
   }
 }
