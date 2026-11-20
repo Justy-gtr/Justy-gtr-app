@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T17:10:00+01:00",
+  "updatedAt": "2026-11-20T18:10:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
       "score": -40,
-      "postsCount": 12,
-      "reason": "SpaceX bleibt um 131 $ unter dem IPO-Preis. Neu: Apollo und Goldman haben die 44-Mrd.-$-Finanzierung für die GPUs festgezurrt, das sorgt für etwas Ruhe.",
+      "postsCount": 25,
+      "reason": "SpaceX fällt heute rund 6 % auf etwa 130 $. Viel Gerede über die 44-Mrd.-$-GPU-Finanzierung mit über 8 % Zinsen; Starship-Fans bleiben gelassen.",
       "sources": [
         {
           "title": "@financialjuice auf X (20.11., 17:04)",
           "url": "https://x.com/financialjuice/status/2123809663842173054"
         },
         {
-          "title": "@MookieNFT auf X (20.11., 16:35)",
-          "url": "https://x.com/MookieNFT/status/2123802389807534587"
+          "title": "@PedroCorts6 auf X (20.11., 17:49)",
+          "url": "https://x.com/PedroCorts6/status/2123821064924897441"
         },
         {
-          "title": "@AIStockSavvy auf X (20.11., 17:05)",
-          "url": "https://x.com/AIStockSavvy/status/2123809936836555149"
+          "title": "@McJohnnymac auf X (20.11., 17:47)",
+          "url": "https://x.com/McJohnnymac/status/2123820415185309960"
         }
       ],
-      "updatedAt": "2026-11-20T17:10:00+01:00"
+      "updatedAt": "2026-11-20T18:10:00+01:00"
     },
     "TSLA": {
-      "mood": "schlecht",
-      "score": -30,
-      "postsCount": 8,
-      "reason": "Tesla steht bei den roten Tagesverlierern. Trader beobachten, ob der Kurs hält, manche rechnen bei weiterem Marktrutsch mit rund 335 $ und posten Spott-Memes.",
+      "mood": "gemischt",
+      "score": -15,
+      "postsCount": 25,
+      "reason": "Tesla zeigt Schwäche um 362 $. Dagegen: HSBC hebt auf Hold (Ziel 359 $), Italien erlaubt Assisted Driving, Fusionsgespräche mit SpaceX laufen weiter.",
       "sources": [
         {
-          "title": "@kpak82 auf X (20.11., 16:52)",
-          "url": "https://x.com/kpak82/status/2123806681838518694"
+          "title": "@mtm_trader auf X (20.11., 17:23)",
+          "url": "https://x.com/mtm_trader/status/2123814485236269563"
         },
         {
-          "title": "@MarketRebels auf X (20.11., 16:57)",
-          "url": "https://x.com/MarketRebels/status/2123807933985443976"
+          "title": "@Othersidehist auf X (20.11., 17:12)",
+          "url": "https://x.com/Othersidehist/status/2123811697840304141"
         },
         {
-          "title": "@ChrisHuRocks auf X (20.11., 17:07)",
-          "url": "https://x.com/ChrisHuRocks/status/2123810460097290329"
+          "title": "@drumrollDawg auf X (20.11., 17:46)",
+          "url": "https://x.com/drumrollDawg/status/2123820384135032966"
         }
       ],
-      "updatedAt": "2026-11-20T17:10:00+01:00"
+      "updatedAt": "2026-11-20T18:10:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
-      "score": -30,
-      "postsCount": 6,
-      "reason": "Rocket Lab liegt gut 4 % im Minus bei rund 51 $, seit dem 11.11. sind es etwa 31 %. Treue Fans bleiben dabei, viele andere sind frustriert.",
+      "score": -25,
+      "postsCount": 24,
+      "reason": "Rocket Lab liegt seit dem 11.11. rund 31 % im Minus, viele sind frustriert. Fans verweisen auf den Rekord-Auftragsbestand von 3,57 Mrd. $.",
       "sources": [
         {
           "title": "@KingHeupel auf X (20.11., 16:59)",
           "url": "https://x.com/KingHeupel/status/2123808573578694944"
         },
         {
-          "title": "@bintzan9a auf X (20.11., 16:40)",
-          "url": "https://x.com/bintzan9a/status/2123803702238871821"
+          "title": "@RCapitalX auf X (20.11., 17:42)",
+          "url": "https://x.com/RCapitalX/status/2123819234467905791"
         },
         {
-          "title": "@real_sunny_long auf X (20.11., 16:49)",
-          "url": "https://x.com/real_sunny_long/status/2123805839345488347"
+          "title": "@JoshSharp auf X (20.11., 16:58)",
+          "url": "https://x.com/JoshSharp/status/2123808141775110378"
         }
       ],
-      "updatedAt": "2026-11-20T17:10:00+01:00"
+      "updatedAt": "2026-11-20T18:10:00+01:00"
     }
   }
 }
