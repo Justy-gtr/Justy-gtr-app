@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T18:45:00+01:00",
+  "updatedAt": "2026-11-20T19:10:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
       "score": -45,
       "postsCount": 25,
-      "reason": "Der breite Tech-Rutsch trifft SpaceX: rund −7 % auf etwa 128 $. Die teuren GPU-Kredite sind Hauptthema; Dragon CRS-35 hat von der ISS abgedockt.",
+      "reason": "SpaceX bleibt rund 7 % im Minus, KI-Werte sind heute klar die Verlierer. Gesprächsthema: Tepper hat seinen SpaceX-Anteil im Q3 stark ausgebaut.",
       "sources": [
         {
-          "title": "@DeItaone auf X (20.11., 18:13)",
-          "url": "https://x.com/DeItaone/status/2123826970886586725"
+          "title": "@spcxGOD auf X (20.11., 18:59)",
+          "url": "https://x.com/spcxGOD/status/2123838720407130166"
         },
         {
-          "title": "@AyeshaTariq auf X (20.11., 18:32)",
-          "url": "https://x.com/AyeshaTariq/status/2123831770525086155"
+          "title": "@HindsMarkets auf X (20.11., 19:00)",
+          "url": "https://x.com/HindsMarkets/status/2123838812258292164"
         },
         {
-          "title": "@chaviolas auf X (20.11., 18:32)",
-          "url": "https://x.com/chaviolas/status/2123831970362798521"
+          "title": "@Tiefseher auf X (20.11., 19:06)",
+          "url": "https://x.com/Tiefseher/status/2123840454462525793"
         }
       ],
-      "updatedAt": "2026-11-20T18:45:00+01:00"
+      "updatedAt": "2026-11-20T19:10:00+01:00"
     },
     "TSLA": {
       "mood": "schlecht",
-      "score": -25,
+      "score": -35,
       "postsCount": 25,
-      "reason": "Tesla fällt mit dem Markt um 4–6 %. Fans verweisen auf FSD in Italien und ein geplantes 3,1-Mrd.-$-Solarwerk in Texas, viele Trader setzen auf weiter fallende Kurse.",
+      "reason": "Tesla liegt fast 6 % im Minus. Viele sehen einen Schluss unter 360 $ als schlechtes Zeichen, bei den Tagesoptionen fließt das meiste Geld in Puts.",
       "sources": [
         {
-          "title": "@capitalsnitch auf X (20.11., 18:11)",
-          "url": "https://x.com/capitalsnitch/status/2123826640417444221"
+          "title": "@saltavallas1 auf X (20.11., 18:47)",
+          "url": "https://x.com/saltavallas1/status/2123835622209278161"
         },
         {
-          "title": "@CuriousPejjy auf X (20.11., 18:30)",
-          "url": "https://x.com/CuriousPejjy/status/2123831304525406270"
+          "title": "@Rufusdufus911 auf X (20.11., 18:59)",
+          "url": "https://x.com/Rufusdufus911/status/2123838608394039463"
         },
         {
-          "title": "@InvestVerified auf X (20.11., 18:38)",
-          "url": "https://x.com/InvestVerified/status/2123833380525474186"
+          "title": "@GTA_Terminal auf X (20.11., 19:05)",
+          "url": "https://x.com/GTA_Terminal/status/2123840130242818443"
         }
       ],
-      "updatedAt": "2026-11-20T18:45:00+01:00"
+      "updatedAt": "2026-11-20T19:10:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
       "score": -35,
-      "postsCount": 25,
-      "reason": "Rocket Lab rutscht weiter auf rund 46 $. Viele sprechen von einem breiten Kurssturz am Markt, treue Fans freuen sich auf den nächsten Electron-Start.",
+      "postsCount": 22,
+      "reason": "Riskante Wachstumswerte wie Rocket Lab werden heute stark abgestraft. Fans erinnern an den Rekord-Auftragsbestand von 3,57 Mrd. $ und bleiben dabei.",
       "sources": [
         {
-          "title": "@LinLevee auf X (20.11., 18:27)",
-          "url": "https://x.com/LinLevee/status/2123830643721441524"
+          "title": "@MacroGekko auf X (20.11., 18:53)",
+          "url": "https://x.com/MacroGekko/status/2123837024100901226"
         },
         {
-          "title": "@_stockResearch auf X (20.11., 18:22)",
-          "url": "https://x.com/_stockResearch/status/2123829376563511337"
+          "title": "@WhullFee auf X (20.11., 19:02)",
+          "url": "https://x.com/WhullFee/status/2123839322420031817"
         },
         {
-          "title": "@JaredB747 auf X (20.11., 18:15)",
-          "url": "https://x.com/JaredB747/status/2123827563357487150"
+          "title": "@itschrisray auf X (20.11., 18:59)",
+          "url": "https://x.com/itschrisray/status/2123838584109023293"
         }
       ],
-      "updatedAt": "2026-11-20T18:45:00+01:00"
+      "updatedAt": "2026-11-20T19:10:00+01:00"
     }
   }
 }
