@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-19T21:35:00+01:00",
+  "updatedAt": "2026-11-20T14:05:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gemischt",
-      "score": 0,
-      "postsCount": 14,
-      "reason": "Laut Nvidias Quartalsmeldung ist SpaceX jetzt Nvidias größte Beteiligung. Fans loben treue Langzeit-Aktionäre, der Gesamtmarkt bleibt ängstlich.",
+      "mood": "schlecht",
+      "score": -45,
+      "postsCount": 18,
+      "reason": "SpaceX fällt vorbörslich rund 5 % und wieder unter den IPO-Preis. Viele reden über Kreditgeber, die Nvidia-Chips nicht ins All lassen wollen.",
       "sources": [
         {
-          "title": "@QijunVinceChen auf X (19.11., 20:42)",
-          "url": "https://x.com/QijunVinceChen/status/2123502144515170641"
+          "title": "@CHItrader auf X (20.11., 13:02)",
+          "url": "https://x.com/CHItrader/status/2123748899827401121"
         },
         {
-          "title": "@Cfez202 auf X (19.11., 20:48)",
-          "url": "https://x.com/Cfez202/status/2123503600563548639"
+          "title": "@ArthurRhodes_ auf X (20.11., 13:23)",
+          "url": "https://x.com/ArthurRhodes_/status/2123754179508437111"
         },
         {
-          "title": "@thechef_stocks auf X (19.11., 20:41)",
-          "url": "https://x.com/thechef_stocks/status/2123501880076816775"
+          "title": "@capitalsnitch auf X (20.11., 12:38)",
+          "url": "https://x.com/capitalsnitch/status/2123742715342901649"
         }
       ],
-      "updatedAt": "2026-11-19T21:35:00+01:00"
+      "updatedAt": "2026-11-20T14:05:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": -5,
-      "postsCount": 15,
-      "reason": "Cybercab fährt jetzt auch in Dallas öffentlich, doch die Aktie liegt bei rund 377 $ knapp 2 % im Minus. Viele sehen den ganzen Markt im Abwärtstrend.",
+      "postsCount": 18,
+      "reason": "HSBC hebt Tesla auf Halten und das Kursziel auf 359 $, Italien erlaubt FSD. Trotzdem liegt die Aktie im Minus, viele reden über eine Fusion mit SpaceX.",
       "sources": [
         {
-          "title": "@SimonsWealth auf X (19.11., 21:28)",
-          "url": "https://x.com/SimonsWealth/status/2123513662019113360"
+          "title": "@EvasTeslaSPlaid auf X (20.11., 12:51)",
+          "url": "https://x.com/EvasTeslaSPlaid/status/2123746161152639217"
         },
         {
-          "title": "@Julianthelemur1 auf X (19.11., 21:31)",
-          "url": "https://x.com/Julianthelemur1/status/2123514648657879471"
+          "title": "@barronsonline auf X (20.11., 13:28)",
+          "url": "https://x.com/barronsonline/status/2123755270161478034"
         },
         {
-          "title": "@BeFullyInformed auf X (19.11., 21:30)",
-          "url": "https://x.com/BeFullyInformed/status/2123514300685824422"
+          "title": "@CHItrader auf X (20.11., 13:13)",
+          "url": "https://x.com/CHItrader/status/2123751619757998313"
         }
       ],
-      "updatedAt": "2026-11-19T21:35:00+01:00"
+      "updatedAt": "2026-11-20T14:05:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": -5,
-      "postsCount": 15,
-      "reason": "Mehrere Kleinanleger finden RKLB um 50 $ günstig und stocken auf. Chartleser warnen dagegen vor einem gebrochenen Muster.",
+      "score": -10,
+      "postsCount": 12,
+      "reason": "Fans feiern über 1.000 gebaute Rutherford-Triebwerke und finden 50 $ günstig. Viele andere sprechen von Angst am ganzen Markt.",
       "sources": [
         {
-          "title": "@TSLASince2019 auf X (19.11., 21:25)",
-          "url": "https://x.com/TSLASince2019/status/2123513081963893109"
+          "title": "@islandtimechef auf X (20.11., 14:01)",
+          "url": "https://x.com/islandtimechef/status/2123763698556670013"
         },
         {
-          "title": "@ManasHariyani auf X (19.11., 21:11)",
-          "url": "https://x.com/ManasHariyani/status/2123509395640173030"
+          "title": "@RCapitalX auf X (20.11., 13:52)",
+          "url": "https://x.com/RCapitalX/status/2123761308998979697"
         },
         {
-          "title": "@rethink15411429 auf X (19.11., 21:08)",
-          "url": "https://x.com/rethink15411429/status/2123508732143468949"
+          "title": "@broisquant auf X (20.11., 13:19)",
+          "url": "https://x.com/broisquant/status/2123753107414827492"
         }
       ],
-      "updatedAt": "2026-11-19T21:35:00+01:00"
+      "updatedAt": "2026-11-20T14:05:00+01:00"
     }
   }
 }
