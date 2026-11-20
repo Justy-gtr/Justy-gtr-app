@@ -1,181 +1,197 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-20T08:00:00+01:00",
-  "nextRun": "2026-11-20T14:00:00+01:00",
+  "updatedAt": "2026-11-20T14:30:00+01:00",
+  "nextRun": "2026-11-23T08:30:00+01:00",
   "long": [
-    {
-      "name": "Bending Spoons",
-      "ticker": "BSP",
-      "country": "IT",
-      "exchange": "Nasdaq",
-      "priceEur": 39.85,
-      "hint": "Nachbörslich deutlich höher nach Zahlen und Mailchimp-Übernahme",
-      "bullets": [
-        "Q3-Gewinn je Aktie 0,42 $ statt erwarteter 0,32 $, Umsatz 780 Mio. $.",
-        "Jahresziel auf 3,07–3,09 Mrd. $ Umsatz angehoben, Konsens lag bei 2,90 Mrd. $.",
-        "Übernahme von Mailchimp für 3,68 Mrd. $; nachbörslich zeitweise +9,7 %, zuletzt 43,80 $."
-      ],
-      "sources": [
-        {
-          "title": "Investing.com: Nachbörsliche Bewegungen BSP, INTU, ESTC, GAP, ROST (19.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-bsp-intu-estc-gap-rost-432SI-5040092"
-        },
-        {
-          "title": "StockSetups: Nachbörsliche Gewinner 19.11. (MEDS, LGHL, BSP)",
-          "url": "https://stocksetups.com/articles/after-hours-stock-movers-2026-11-19"
-        },
-        {
-          "title": "Yahoo Finance: BSP (nachbörslich 43,80 $)",
-          "url": "https://finance.yahoo.com/quote/BSP/"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD 1,099 (Fr 07:45)",
-          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
-        }
-      ]
-    },
     {
       "name": "DataMeds AI",
       "ticker": "MEDS",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 1.03,
-      "hint": "Nachbörslich +55 % nach Kauf einer KI-Krebstest-Plattform",
+      "priceEur": 0.84,
+      "hint": "Vorbörslich +26 % nach Übernahme einer Krebstest-Plattform",
       "bullets": [
-        "Tochter Helomics kauft die Bluttest-Plattform TBIA aus der Todos-Medical-Insolvenz.",
-        "Nachbörslich 1,13 $ nach 0,73 $ Schluss, bei rund 4 Mio. $ Börsenwert.",
-        "Der Test ist nicht von der FDA zugelassen, dazu läuft ein Aktienverkauf über bis zu 7 Mio. $."
+        "Tochter Helomics übernimmt Bluttest-Werte aus der Insolvenz von Todos Medical.",
+        "Vorbörslich in der Spitze 1,08 $, zuletzt 0,92 $ nach 0,73 $ Schluss.",
+        "Börsenwert nur rund 4 Mio. $, der Test hat keine FDA-Zulassung."
       ],
       "sources": [
+        {
+          "title": "Yahoo Finance: MEDS (vorbörslich Fr 14:25)",
+          "url": "https://finance.yahoo.com/quote/MEDS/"
+        },
+        {
+          "title": "Benzinga: 12 Gesundheitswerte vorbörslich in Bewegung (20.11.)",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63467104/12-health-care-stocks-moving-friday-s-pre-market-session"
+        },
         {
           "title": "Benzinga: DataMeds AI steigt nachbörslich über 55 % (19.11.)",
           "url": "https://www.benzinga.com/markets/equities/26/11/63463799/datameds-ai-shares-surge-after-hours-todos-medical-cancer-diagnostics-deal"
         },
         {
-          "title": "StockSetups: Nachbörsliche Gewinner 19.11. (MEDS, LGHL, BSP)",
-          "url": "https://stocksetups.com/articles/after-hours-stock-movers-2026-11-19"
-        },
-        {
-          "title": "Yahoo Finance: MEDS (nachbörslich 1,13 $)",
-          "url": "https://finance.yahoo.com/quote/MEDS/"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD 1,099 (Fr 07:45)",
-          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
+          "title": "MarketScreener/Dow Jones: EURUSD 1,0973 (Fr 13:44)",
+          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
         }
       ]
     },
     {
-      "name": "VivoSim Labs",
-      "ticker": "VIVS",
+      "name": "Akanda",
+      "ticker": "AKAN",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 0.32,
-      "hint": "Nachbörslich +21 % nach Auftrag eines großen Pharmakonzerns",
+      "priceEur": 4.38,
+      "hint": "Vorbörslich +40 % ohne neue Firmenmeldung",
       "bullets": [
-        "Siebenstelliger Auftrag für Toxizitätstests von einem der zehn größten Pharmakonzerne.",
-        "Nachbörslich 0,35 $ nach 0,29 $ Schluss.",
-        "Sehr kleiner Wert, die Kurse nachbörslich sind dünn gehandelt."
+        "Zuletzt 4,81 $ nach 3,43 $ Schluss, Börsenwert rund 9 Mio. $.",
+        "Quiver sieht Momentum-Handel in einem Wert mit sehr kleinem Streubesitz.",
+        "Geplante Vorzugsaktien über 10 Mio. $ könnten den Anteil der Aktionäre stark verwässern."
       ],
       "sources": [
         {
-          "title": "Benzinga: VivoSim Labs nachbörslich +21 % nach Pharma-Auftrag (19.11.)",
-          "url": "https://www.benzinga.com/markets/equities/26/11/63464248/vivosim-labs-shares-jump-after-hours-seven-figure-pharma-deal"
+          "title": "Yahoo Finance: AKAN (vorbörslich Fr 14:25)",
+          "url": "https://finance.yahoo.com/quote/AKAN/"
         },
         {
-          "title": "Yahoo Finance: VIVS (nachbörslich 0,35 $)",
-          "url": "https://finance.yahoo.com/quote/VIVS/"
+          "title": "Benzinga: 12 Gesundheitswerte vorbörslich in Bewegung (20.11.)",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63467104/12-health-care-stocks-moving-friday-s-pre-market-session"
         },
         {
-          "title": "Yahoo Finance: EURUSD 1,099 (Fr 07:45)",
-          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
+          "title": "Quiver Quantitative: Akanda springt – Händler jagen Momentum in kleinem Streubesitz",
+          "url": "https://www.quiverquant.com/news/Akanda+stock+jumps+as+traders+chase+momentum+in+a+tiny+float+name"
+        },
+        {
+          "title": "Kalkine: Akanda +22 % trotz geplanter Vorzugsaktien über 10 Mio. $",
+          "url": "https://kalkine.com/news/technology/why-is-akanda-nasdaqakan-up-2208-while-planning-a-usd-10-million-preferred-share-sale"
+        },
+        {
+          "title": "MarketScreener/Dow Jones: EURUSD 1,0973 (Fr 13:44)",
+          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
+        }
+      ]
+    },
+    {
+      "name": "Erayak Power Solution",
+      "ticker": "RAYA",
+      "country": "CN",
+      "exchange": "Nasdaq",
+      "priceEur": 0.64,
+      "hint": "Vorbörslich +43 % nach +31 % am Donnerstag",
+      "bullets": [
+        "Vorbörslich in der Spitze 0,87 $, zuletzt 0,70 $ nach 0,49 $ Schluss.",
+        "Benzinga nennt keinen Auslöser, die Bewegung folgt dem Sprung vom Vortag.",
+        "Börsenwert unter 1 Mio. $, Kurse sind dünn gehandelt und schwanken stark."
+      ],
+      "sources": [
+        {
+          "title": "Yahoo Finance: RAYA (vorbörslich Fr 14:25)",
+          "url": "https://finance.yahoo.com/quote/RAYA/"
+        },
+        {
+          "title": "Benzinga: Gap +4 % und 20 weitere Werte vorbörslich (20.11.)",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63465346/why-gap-shares-are-trading-higher-by-around-4-here-are-20-stocks-moving-premarket"
+        },
+        {
+          "title": "MarketScreener/Dow Jones: EURUSD 1,0973 (Fr 13:44)",
+          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
         }
       ]
     }
   ],
   "short": [
     {
+      "name": "Anthropic",
+      "ticker": "ANT",
+      "country": "US",
+      "exchange": "Nasdaq",
+      "priceEur": 79.18,
+      "hint": "Vorbörslich −10,6 % am zweiten Handelstag",
+      "bullets": [
+        "Do-Schluss 97,17 $ nach Eröffnung bei 111,50 $, Ausgabepreis 83 $.",
+        "Zuletzt 86,88 $, der Abstand zum Ausgabepreis schrumpft auf rund 5 %.",
+        "Der Börsengang wird heute abgeschlossen, Händler schichten Tech-Aktien um."
+      ],
+      "sources": [
+        {
+          "title": "Yahoo Finance: ANT (vorbörslich Fr 14:25)",
+          "url": "https://finance.yahoo.com/quote/ANT/"
+        },
+        {
+          "title": "Investing.com: Vorbörse – Anthropic fällt nach Debüt, Intuit nach Mailchimp-Verkauf (20.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/premarket-movers-anthropic-slides-after-debut-intuit-tumbles-on-mailchimp-sale-5041130"
+        },
+        {
+          "title": "StockTitan: Börse live 20.11. – Chipwerte weltweit tiefer vor US-Start",
+          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026"
+        },
+        {
+          "title": "MarketScreener/Dow Jones: DAX fällt unter 25.000 Punkte – Ausverkauf bei Technologie (20.11., 13:44)",
+          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
+        },
+        {
+          "title": "MarketScreener/Dow Jones: EURUSD 1,0973 (Fr 13:44)",
+          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
+        }
+      ]
+    },
+    {
       "name": "Intuit",
       "ticker": "INTU",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 254.54,
-      "hint": "Nachbörslich −10 % nach schwachem Jahresausblick",
+      "priceEur": 256.08,
+      "hint": "Vorbörslich −9,4 % nach gesenktem Umsatzziel",
       "bullets": [
-        "Q1-Gewinn je Aktie 2,91 $ über der Erwartung von 2,70 $.",
-        "Jahresausblick 22,88–23,12 $ je Aktie liegt unter dem Konsens von 23,62 $.",
-        "Nachbörslich 279,74 $ nach 310,02 $ Schluss; Mailchimp geht an Bending Spoons."
+        "Umsatzziel fürs Geschäftsjahr auf 23,08–23,37 Mrd. $ gesenkt, vorher 23,28–23,51 Mrd. $.",
+        "Credit Karma soll nur noch 2,72–2,83 Mrd. $ bringen statt 2,92–2,97 Mrd. $.",
+        "Mailchimp geht für rund 3,68 Mrd. $ an Bending Spoons."
       ],
       "sources": [
         {
-          "title": "Investing.com: Nachbörsliche Bewegungen BSP, INTU, ESTC, GAP, ROST (19.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-bsp-intu-estc-gap-rost-432SI-5040092"
-        },
-        {
-          "title": "Yahoo Finance: INTU (nachbörslich 279,74 $)",
+          "title": "Yahoo Finance: INTU (vorbörslich Fr 14:25)",
           "url": "https://finance.yahoo.com/quote/INTU/"
         },
         {
-          "title": "Yahoo Finance: EURUSD 1,099 (Fr 07:45)",
-          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
+          "title": "CNBC: Stocks moving the most today (20.11.)",
+          "url": "https://www.cnbc.com/2026/11/20/stocks-moving-the-most-today-live-updates.html"
+        },
+        {
+          "title": "Investing.com: Vorbörse – Anthropic fällt nach Debüt, Intuit nach Mailchimp-Verkauf (20.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/premarket-movers-anthropic-slides-after-debut-intuit-tumbles-on-mailchimp-sale-5041130"
+        },
+        {
+          "title": "MarketScreener/Dow Jones: EURUSD 1,0973 (Fr 13:44)",
+          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
         }
       ]
     },
     {
-      "name": "Ross Stores",
-      "ticker": "ROST",
-      "country": "US",
-      "exchange": "Nasdaq",
-      "priceEur": 189.75,
-      "hint": "Nachbörslich −5 % nach schwachem Ausblick fürs Weihnachtsquartal",
-      "bullets": [
-        "Q3-Gewinn je Aktie 1,91 $, knapp über der Erwartung von 1,86 $.",
-        "Q4-Ausblick 2,16–2,25 $ je Aktie liegt unter der Schätzung von 2,26 $.",
-        "Nachbörslich 208,53 $ nach 219,88 $ Schluss, Investing.com meldete zeitweise −9 %."
-      ],
-      "sources": [
-        {
-          "title": "Investing.com: Nachbörsliche Bewegungen BSP, INTU, ESTC, GAP, ROST (19.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-bsp-intu-estc-gap-rost-432SI-5040092"
-        },
-        {
-          "title": "Yahoo Finance: ROST (nachbörslich 208,53 $)",
-          "url": "https://finance.yahoo.com/quote/ROST/"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD 1,099 (Fr 07:45)",
-          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
-        }
-      ]
-    },
-    {
-      "name": "Elastic",
-      "ticker": "ESTC",
-      "country": "US",
+      "name": "United Microelectronics",
+      "ticker": "UMC",
+      "country": "TW",
       "exchange": "NYSE",
-      "priceEur": 66.96,
-      "hint": "Nachbörslich schwächer trotz besserer Zahlen",
+      "priceEur": 11.11,
+      "hint": "Vorbörslich −9,0 % im Chip-Kursrutsch",
       "bullets": [
-        "Q2-Gewinn je Aktie 0,94 $ statt erwarteter 0,81 $, Umsatz 496 Mio. $.",
-        "Der Umsatzausblick 2,00–2,01 Mrd. $ liegt nur im Rahmen der Erwartungen.",
-        "Nachbörslich 73,59 $ nach 76,33 $ Schluss, Software- und KI-Werte stehen unter Druck."
+        "Zuletzt 12,19 $ nach 13,40 $ Schluss, schon am Do rund −4 %.",
+        "Taiwan, Südkorea und Japan schlossen über 5 % tiefer, Chipwerte vorne.",
+        "Auch ASE Technology fällt vorbörslich um rund 8 %."
       ],
       "sources": [
         {
-          "title": "Investing.com: Nachbörsliche Bewegungen BSP, INTU, ESTC, GAP, ROST (19.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-bsp-intu-estc-gap-rost-432SI-5040092"
+          "title": "Yahoo Finance: UMC (vorbörslich Fr 14:25)",
+          "url": "https://finance.yahoo.com/quote/UMC/"
         },
         {
-          "title": "Yahoo Finance: ESTC (nachbörslich 73,59 $)",
-          "url": "https://finance.yahoo.com/quote/ESTC/"
+          "title": "Benzinga: Ross, Intuit, Anthropic und weitere vorbörslich schwächer (20.11.)",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63468329/ross-stores-intuit-anthropic-and-other-big-stocks-moving-lower-in-fridays-pre-market-session"
         },
         {
-          "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
+          "title": "Barchart: Nasdaq-Futures fallen, KI-Kursrutsch geht weiter (20.11.)",
+          "url": "https://www.barchart.com/story/news/8932837/nasdaq-futures-plunge-as-ai-selloff-rolls-on"
         },
         {
-          "title": "Yahoo Finance: EURUSD 1,099 (Fr 07:45)",
-          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
+          "title": "MarketScreener/Dow Jones: EURUSD 1,0973 (Fr 13:44)",
+          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
         }
       ]
     }
@@ -1226,24 +1242,28 @@
     ]
   },
   "rocketLabNews": {
-    "text": "Keine neue Pressemitteilung heute: RKLB steht vorbörslich bei 55,16 $ (+3,9 %) nach fünf Verlusttagen, Jim Cramer nennt die Aktie „zu billig“, und laut Axios verschärft der Vulcan-Fehlschlag von ULA die Startknappheit (Quilty: rund 150 fehlende Starts bis 2030).",
-    "updatedAt": "2026-11-19T14:30:00+01:00",
+    "text": "Keine Pressemitteilung, kein Start und keine neue SEC-Meldung heute (letzte: Form 4 vom 18.11.). RKLB steht vorbörslich bei 48,91 $ (−4,1 %) und steuert auf den siebten Verlusttag zu, Stimmung auf Stocktwits „bärisch“. Analysen des Tages: Motley Fool sieht trotz verfehltem Gewinn starke Zeichen (Rekordumsatz 268 Mio. $, Auftragsbestand 3,6 Mrd. $), Trefis betont die 16 vorab gebuchten Neutron-Starts bei Erstflug frühestens 2027. Keine Änderung von Analysten-Einstufungen gefunden.",
+    "updatedAt": "2026-11-20T14:30:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: RKLB (vorbörslich Do 14:25)",
+        "title": "Yahoo Finance: RKLB (vorbörslich Fr 14:25)",
         "url": "https://finance.yahoo.com/quote/RKLB/"
-      },
-      {
-        "title": "Stocktwits: Cramer nennt RKLB „zu billig“ (19.11.)",
-        "url": "https://stocktwits.com/news-articles/markets/equity/rklb-stock-jim-cramer-likes-spacex-rocketlab-cheap-electron-falcon-9-100-launches/cNbiGliR9iN"
-      },
-      {
-        "title": "Axios: Vulcan-Fehlschlag verschärft US-Startkrise (19.11.)",
-        "url": "https://www.axios.com/2026/11/19/spacex-ula-vulcan-launch-crisis"
       },
       {
         "title": "SEC EDGAR: Rocket Lab – letzte Meldung Form 4 vom 18.11.",
         "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001819994&type=&dateb=&owner=include&count=40"
+      },
+      {
+        "title": "Yahoo/Stocktwits: SpaceX hält sich, Raumfahrtwerte fallen (20.11.)",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-holds-orbit-space-stocks-065831911.html"
+      },
+      {
+        "title": "Motley Fool: Rocket Lab verfehlte beim Gewinn – und das ist gut (20.11.)",
+        "url": "https://www.fool.com/investing/2026/11/20/rocket-lab-missed-on-q3-earnings-and-that-s-great-news/"
+      },
+      {
+        "title": "Trefis: Was könnte die Rocket-Lab-Aktie antreiben? (20.11.)",
+        "url": "https://www.trefis.com/stock/rklb/articles/627244/what-could-send-rocket-lab-stock-higher/2026-11-20"
       }
     ]
   }
