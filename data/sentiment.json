@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T20:37:00+01:00",
+  "updatedAt": "2026-11-20T21:05:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "schlecht",
-      "score": -45,
+      "mood": "gemischt",
+      "score": -15,
       "postsCount": 25,
-      "reason": "Auf X ist von einer platzenden KI-Blase die Rede: SpaceX rund −7 %. Viele schieben es auf Kreditgeber, die Musks Pläne für KI-Chips im All skeptisch sehen.",
+      "reason": "Der Ton wird etwas freundlicher: SpaceX macht kein neues Tagestief, während andere weiter fallen. Jim Chanos stellt die Fusion mit Tesla offen infrage.",
       "sources": [
         {
-          "title": "@joinautopilot auf X (20.11., 20:34)",
-          "url": "https://x.com/joinautopilot/status/2123862617316003959"
+          "title": "@MentoviaX auf X (20.11., 20:52)",
+          "url": "https://x.com/MentoviaX/status/2123866992432099404"
         },
         {
-          "title": "@spcxGOD auf X (20.11., 20:08)",
-          "url": "https://x.com/spcxGOD/status/2123855898833764734"
+          "title": "@RealJimChanos auf X (20.11., 21:01)",
+          "url": "https://x.com/RealJimChanos/status/2123869439439294914"
         },
         {
-          "title": "@Andrew_Moser auf X (20.11., 20:07)",
-          "url": "https://x.com/Andrew_Moser/status/2123855797042184510"
+          "title": "@NullFUD auf X (20.11., 20:55)",
+          "url": "https://x.com/NullFUD/status/2123867803820400843"
         }
       ],
-      "updatedAt": "2026-11-20T20:37:00+01:00"
+      "updatedAt": "2026-11-20T21:05:00+01:00"
     },
     "TSLA": {
-      "mood": "schlecht",
-      "score": -35,
+      "mood": "gemischt",
+      "score": -10,
       "postsCount": 25,
-      "reason": "Trader sehen einen sehr schwachen Markt, Tesla kommt nicht aus der Spanne. Gesprächsthema: Brad Gerstner hat laut Q3-Meldung für 680 Mio. $ Tesla-Aktien geholt.",
+      "reason": "Nach dem Rutsch auf rund 348 $ sprechen viele von einem Einstiegsmoment und hoffen auf Erholung im Dezember. Andere rechnen weiter mit deutlich tieferen Kursen.",
       "sources": [
         {
-          "title": "@ChrisHuRocks auf X (20.11., 20:12)",
-          "url": "https://x.com/ChrisHuRocks/status/2123856999439900811"
+          "title": "@MallSeth auf X (20.11., 20:41)",
+          "url": "https://x.com/MallSeth/status/2123864290033840212"
         },
         {
-          "title": "@LukeBruni17 auf X (20.11., 20:07)",
-          "url": "https://x.com/LukeBruni17/status/2123855647049417121"
+          "title": "@RicochetRowdy auf X (20.11., 20:59)",
+          "url": "https://x.com/RicochetRowdy/status/2123868764127277092"
         },
         {
-          "title": "@daltonbrewer auf X (20.11., 20:19)",
-          "url": "https://x.com/daltonbrewer/status/2123858775937290660"
+          "title": "@j_dtrading auf X (20.11., 20:51)",
+          "url": "https://x.com/j_dtrading/status/2123866742510202991"
         }
       ],
-      "updatedAt": "2026-11-20T20:37:00+01:00"
+      "updatedAt": "2026-11-20T21:05:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
@@ -64,7 +64,7 @@
           "url": "https://x.com/GMGoz1x/status/2123855418413719814"
         }
       ],
-      "updatedAt": "2026-11-20T20:37:00+01:00"
+      "updatedAt": "2026-11-20T21:05:00+01:00"
     }
   }
 }
