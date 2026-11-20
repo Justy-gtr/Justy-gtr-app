@@ -1,54 +1,54 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T16:03:00+01:00",
+  "updatedAt": "2026-11-20T16:34:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
       "score": -50,
-      "postsCount": 14,
-      "reason": "SpaceX eröffnet rund 5 % tiefer bei etwa 131 $, Zwei-Wochen-Tief und unter dem IPO-Preis. Alle reden vom KI-Abschwung, einige Fans legen trotzdem nach.",
+      "postsCount": 15,
+      "reason": "SpaceX rutscht unter den IPO-Preis von 135 $, KI-Werte fallen breit. Kritiker sprechen von zu hohen Bewertungen, Fans setzen auf Starship und Musks Pläne.",
       "sources": [
         {
-          "title": "@DeItaone auf X (20.11., 15:46)",
-          "url": "https://x.com/DeItaone/status/2123790147556966544"
+          "title": "@Kalshi_Finance auf X (20.11., 16:12)",
+          "url": "https://x.com/Kalshi_Finance/status/2123796507694379288"
         },
         {
-          "title": "@gonta_southwood auf X (20.11., 15:48)",
-          "url": "https://x.com/gonta_southwood/status/2123790486880346563"
+          "title": "@aacryptoverse auf X (20.11., 16:27)",
+          "url": "https://x.com/aacryptoverse/status/2123800433923875128"
         },
         {
-          "title": "@TheRealBagi auf X (20.11., 15:49)",
-          "url": "https://x.com/TheRealBagi/status/2123790939445682354"
+          "title": "@ion_gab auf X (20.11., 16:03)",
+          "url": "https://x.com/ion_gab/status/2123794372671987984"
         }
       ],
-      "updatedAt": "2026-11-20T16:03:00+01:00"
+      "updatedAt": "2026-11-20T16:34:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": -20,
+      "score": -15,
       "postsCount": 12,
-      "reason": "Nach dem schwachen Start hoffen Trader, dass Tesla die Kurslücke wieder schließt. Gary Black bleibt bei seiner Warnung vor Verwässerung durch eine SpaceX-Fusion.",
+      "reason": "Tesla hat die Kurslücke geschlossen und gibt wieder nach. Gute Nachrichten wie FSD in Italien und eine geplante Polysilizium-Raffinerie in Texas machen die Runde.",
       "sources": [
         {
-          "title": "@ChrisHuRocks auf X (20.11., 15:54)",
-          "url": "https://x.com/ChrisHuRocks/status/2123792221803831303"
+          "title": "@ChrisHuRocks auf X (20.11., 16:15)",
+          "url": "https://x.com/ChrisHuRocks/status/2123797333724803243"
         },
         {
-          "title": "@garyblack00 auf X (20.11., 15:46)",
-          "url": "https://x.com/garyblack00/status/2123790115105583350"
+          "title": "@GrindeOptions auf X (20.11., 16:12)",
+          "url": "https://x.com/GrindeOptions/status/2123796677119393856"
         },
         {
-          "title": "@RealSPXSniper auf X (20.11., 15:47)",
-          "url": "https://x.com/RealSPXSniper/status/2123790374254604484"
+          "title": "@sperezintexas auf X (20.11., 16:02)",
+          "url": "https://x.com/sperezintexas/status/2123794088902242403"
         }
       ],
-      "updatedAt": "2026-11-20T16:03:00+01:00"
+      "updatedAt": "2026-11-20T16:34:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": -15,
-      "postsCount": 5,
+      "postsCount": 3,
       "reason": "Wenig los bei Rocket Lab: Ein paar Fans jubeln, andere spotten über die Verluste bei Raumfahrt-Aktien. Echte Neuigkeiten gibt es gerade keine.",
       "sources": [
         {
@@ -56,15 +56,15 @@
           "url": "https://x.com/ProKayaFinance/status/2123791250776010887"
         },
         {
-          "title": "@investAndForget auf X (20.11., 15:54)",
-          "url": "https://x.com/investAndForget/status/2123792218041536695"
+          "title": "@vinceisbullish auf X (20.11., 16:05)",
+          "url": "https://x.com/vinceisbullish/status/2123794811798814999"
         },
         {
           "title": "@MoodSpaceX auf X (20.11., 15:11)",
           "url": "https://x.com/MoodSpaceX/status/2123781156424323282"
         }
       ],
-      "updatedAt": "2026-11-20T16:03:00+01:00"
+      "updatedAt": "2026-11-20T16:34:00+01:00"
     }
   }
 }
