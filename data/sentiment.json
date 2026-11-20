@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T19:35:00+01:00",
+  "updatedAt": "2026-11-20T20:05:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
-      "score": -45,
+      "score": -40,
       "postsCount": 25,
-      "reason": "SpaceX bleibt rund 7 % im Minus. Neu: Kreditgeber wollen KI-Chips nicht ins All schicken, ein US-Demokrat droht wegen Starshield mit Mittelstopp.",
+      "reason": "SpaceX bleibt im Minus, hält sich aber besser als andere Raumfahrtwerte. Thema: Druckenmillers Family Office ist neu bei SpaceX eingestiegen.",
       "sources": [
         {
-          "title": "@MojoTricks auf X (20.11., 19:13)",
-          "url": "https://x.com/MojoTricks/status/2123842077465378828"
+          "title": "@VistaPResearch auf X (20.11., 19:49)",
+          "url": "https://x.com/VistaPResearch/status/2123851279718076594"
         },
         {
-          "title": "@LiveSquawk auf X (20.11., 19:16)",
-          "url": "https://x.com/LiveSquawk/status/2123842813528068341"
+          "title": "@hout1213 auf X (20.11., 19:40)",
+          "url": "https://x.com/hout1213/status/2123849075221221592"
         },
         {
-          "title": "@JOBhakdi auf X (20.11., 19:28)",
-          "url": "https://x.com/JOBhakdi/status/2123845999647215716"
+          "title": "@OSPigment auf X (20.11., 19:54)",
+          "url": "https://x.com/OSPigment/status/2123852506556219574"
         }
       ],
-      "updatedAt": "2026-11-20T19:35:00+01:00"
+      "updatedAt": "2026-11-20T20:05:00+01:00"
     },
     "TSLA": {
       "mood": "schlecht",
       "score": -35,
       "postsCount": 25,
-      "reason": "Tesla liegt fast 6 % im Minus. Viele sehen einen Schluss unter 360 $ als schlechtes Zeichen, bei den Tagesoptionen fließt das meiste Geld in Puts.",
+      "reason": "Tesla fällt heute stärker als SpaceX. Einige nennen es eine gesunde Bereinigung, Trader wetten in beide Richtungen; die HSBC-Hochstufung verpufft.",
       "sources": [
         {
-          "title": "@saltavallas1 auf X (20.11., 18:47)",
-          "url": "https://x.com/saltavallas1/status/2123835622209278161"
+          "title": "@DontheConDrumpf auf X (20.11., 19:58)",
+          "url": "https://x.com/DontheConDrumpf/status/2123853509502370251"
         },
         {
-          "title": "@Rufusdufus911 auf X (20.11., 18:59)",
-          "url": "https://x.com/Rufusdufus911/status/2123838608394039463"
+          "title": "@michaelm272 auf X (20.11., 19:35)",
+          "url": "https://x.com/michaelm272/status/2123847729767952889"
         },
         {
-          "title": "@GTA_Terminal auf X (20.11., 19:05)",
-          "url": "https://x.com/GTA_Terminal/status/2123840130242818443"
+          "title": "@squawk_hawk auf X (20.11., 19:39)",
+          "url": "https://x.com/squawk_hawk/status/2123848722996211935"
         }
       ],
-      "updatedAt": "2026-11-20T19:35:00+01:00"
+      "updatedAt": "2026-11-20T20:05:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
       "score": -30,
       "postsCount": 24,
-      "reason": "Rocket Lab bleibt unter Druck. Fans rufen zum Durchhalten auf und loben Auftragsbestand von 3,57 Mrd. $ und rund 4,6 Mrd. $ Cash gegenüber AST SpaceMobile.",
+      "reason": "Raumfahrtwerte haben eine harte Woche, Rocket Lab ist mit unten. Viele Fans ziehen Rocket Lab AST SpaceMobile vor und erwarten eine Erholung.",
       "sources": [
         {
-          "title": "@HypaWaveNZ auf X (20.11., 19:27)",
-          "url": "https://x.com/HypaWaveNZ/status/2123845773284765812"
+          "title": "@hout1213 auf X (20.11., 19:40)",
+          "url": "https://x.com/hout1213/status/2123849075221221592"
         },
         {
-          "title": "@Incite_corp auf X (20.11., 19:15)",
-          "url": "https://x.com/Incite_corp/status/2123842606287433936"
+          "title": "@jbfinancebull auf X (20.11., 19:49)",
+          "url": "https://x.com/jbfinancebull/status/2123851257861558599"
         },
         {
-          "title": "@pekutovsky45098 auf X (20.11., 19:26)",
-          "url": "https://x.com/pekutovsky45098/status/2123845366546051218"
+          "title": "@Stealthct_Storm auf X (20.11., 19:51)",
+          "url": "https://x.com/Stealthct_Storm/status/2123851654910898190"
         }
       ],
-      "updatedAt": "2026-11-20T19:35:00+01:00"
+      "updatedAt": "2026-11-20T20:05:00+01:00"
     }
   }
 }
