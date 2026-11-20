@@ -518,9 +518,102 @@ export function undoCandle(state) {
   };
 }
 
+export const CERT_SPREAD_EUR = 0.01;
+export const ORDER_FEE_CENTS = 100;
+export const DEFAULT_EURUSD = 1.1;
+const RATIO_STEPS = [1, 0.1, 0.01, 0.001, 0.0001, 0.00001, 0.000001, 0.0000001];
+
 export function knockBarrier(entry, leverage, side) {
   const gap = entry / leverage;
   return side === "short" ? entry + gap : entry - gap;
+}
+
+function fxRate(fx) {
+  return Number(fx) > 0 ? Number(fx) : DEFAULT_EURUSD;
+}
+
+/** USD per 1 EUR, same meaning as the price files. */
+function usdToEur(usd, fx) {
+  return Number(usd) / fxRate(fx);
+}
+
+/** Leverage of a knock-out certificate. The threshold does not move after entry. */
+export function effectiveLeverage(underlying, barrier) {
+  const price = Number(underlying);
+  const gap = Math.abs(price - Number(barrier));
+  if (!(price > 0) || !(gap > 0)) return Infinity;
+  return price / gap;
+}
+
+/** Power of ten so the bid is about 0.10–1.00 €. */
+export function pickRatio(distanceEur) {
+  if (!(distanceEur > 0)) return null;
+  for (const ratio of RATIO_STEPS) {
+    const bid = distanceEur * ratio;
+    if (bid >= 0.1 - 1e-9 && bid <= 1 + 1e-9) return ratio;
+  }
+  return null;
+}
+
+export function pickCertificate(underlying, leverage, side, fx = DEFAULT_EURUSD) {
+  const price = Number(underlying);
+  const lev = Number(leverage);
+  if (!(price > 0) || !(lev > 0)) return null;
+  const barrier = knockBarrier(price, lev, side);
+  const distanceEur = usdToEur(Math.abs(price - barrier), fx);
+  const ratio = pickRatio(distanceEur);
+  if (!ratio) return null;
+  const bidCents = Math.max(0, Math.round(distanceEur * ratio * 100));
+  if (bidCents < 1) return null;
+  return {
+    barrier,
+    ratio,
+    fx: fxRate(fx),
+    bidCents,
+    askCents: bidCents + Math.round(CERT_SPREAD_EUR * 100)
+  };
+}
+
+/** Pieces bought from the stake after the 1 € entry fee, at the ask. */
+export function orderQuantity(stakeCents, askCents) {
+  const budget = Math.floor(Number(stakeCents) || 0) - ORDER_FEE_CENTS;
+  const ask = Math.floor(Number(askCents) || 0);
+  if (budget < ask || ask < 1) return 0;
+  return Math.floor(budget / ask);
+}
+
+export function certificateBidCents(underlying, position) {
+  if (!position) return 0;
+  const gap = position.side === "short"
+    ? Number(position.barrier) - Number(underlying)
+    : Number(underlying) - Number(position.barrier);
+  if (!(gap > 0)) return 0;
+  return Math.max(0, Math.round(usdToEur(gap, position.fx) * position.ratio * 100));
+}
+
+export function quotePosition({ underlying, side, leverage, stakeCents, fx, minute }) {
+  const quote = pickCertificate(underlying, leverage, side, fx);
+  if (!quote) return null;
+  const qty = orderQuantity(stakeCents, quote.askCents);
+  if (qty < 1) return null;
+  const spent = qty * quote.askCents + ORDER_FEE_CENTS;
+  if (spent > Math.floor(Number(stakeCents) || 0)) return null;
+  return {
+    spent,
+    position: {
+      side: side === "short" ? "short" : "long",
+      entry: Number(underlying),
+      entryMin: minute,
+      stakeCents: spent,
+      leverage: Number(leverage),
+      barrier: quote.barrier,
+      ratio: quote.ratio,
+      fx: quote.fx,
+      qty,
+      askCents: quote.askCents,
+      entryFeeCents: ORDER_FEE_CENTS
+    }
+  };
 }
 
 export function moveFraction(entry, price, side) {
@@ -540,57 +633,79 @@ export function grossPnlCents(stakeCents, leverage, entry, price, side) {
   return theoreticalCents(stakeCents, leverage, entry, price, side) - stakeCents;
 }
 
+function targetUnderlying(position, takeProfitPct) {
+  if (!(takeProfitPct > 0) || !(position?.qty > 0) || !(position.ratio > 0)) return null;
+  const wantCents = position.stakeCents * (1 + takeProfitPct / 100) + ORDER_FEE_CENTS;
+  const bidCents = wantCents / position.qty;
+  const distanceUsd = (bidCents / 100) * fxRate(position.fx) / position.ratio;
+  const level = position.side === "short" ? position.barrier - distanceUsd : position.barrier + distanceUsd;
+  return level > 0 ? level : null;
+}
+
 export function inspectCandle(position, candle, takeProfitPct) {
   if (!position || !candle) return null;
-  const barrier = knockBarrier(position.entry, position.leverage, position.side);
+  const barrier = Number.isFinite(position.barrier)
+    ? position.barrier
+    : knockBarrier(position.entry, position.leverage, position.side);
   const knocked = position.side === "short" ? candle.h >= barrier : candle.l <= barrier;
   if (knocked) return { reason: "ko", price: barrier };
-  if (takeProfitPct > 0) {
+  let target = targetUnderlying(position, takeProfitPct);
+  if (!target && takeProfitPct > 0 && !(position.qty > 0)) {
     const move = (takeProfitPct / 100) / position.leverage;
-    const target = position.side === "short" ? position.entry * (1 - move) : position.entry * (1 + move);
+    target = position.side === "short" ? position.entry * (1 - move) : position.entry * (1 + move);
+  }
+  if (target) {
     const hit = position.side === "short" ? candle.l <= target : candle.h >= target;
     if (hit && target > 0) return { reason: "ziel", price: target };
   }
   return null;
 }
 
+function closeReceipt(position, event) {
+  const knocked = event.reason === "ko";
+  const bidCents = knocked ? 0 : certificateBidCents(event.price, position);
+  const exitFeeCents = knocked ? 0 : ORDER_FEE_CENTS;
+  const proceeds = bidCents * (position.qty || 0) - exitFeeCents;
+  let pnlCents = proceeds - position.stakeCents;
+  const floor = -(position.stakeCents + exitFeeCents);
+  if (pnlCents < floor) pnlCents = floor;
+  return { proceeds, pnlCents, exitFeeCents, bidCents };
+}
+
 function applyClose(position, event, minute, settings, cashCents) {
-  const value = event.reason === "ko"
-    ? 0
-    : theoreticalCents(position.stakeCents, position.leverage, position.entry, event.price, position.side);
-  const exitFee = event.reason === "ko" ? 0 : Math.round(value * (settings.spread || 0));
-  let payout = value - exitFee;
-  let pnlCents = payout - position.stakeCents - (position.entryFeeCents || 0);
-  const floor = -position.stakeCents;
-  if (pnlCents < floor) {
-    payout += floor - pnlCents;
-    pnlCents = floor;
+  const receipt = closeReceipt(position, event);
+  let pnlCents = receipt.pnlCents;
+  let cash = cashCents + receipt.proceeds;
+  if (cash < 0) {
+    pnlCents -= cash;
+    cash = 0;
   }
   const trade = {
     side: position.side,
     entryMin: position.entryMin,
     exitMin: minute,
     entry: position.entry,
-    exit: event.reason === "ko" ? knockBarrier(position.entry, position.leverage, position.side) : event.price,
+    exit: event.reason === "ko" ? position.barrier : event.price,
     reason: event.reason,
     pnlCents,
-    stakeCents: position.stakeCents
+    stakeCents: position.stakeCents,
+    exitFeeCents: receipt.exitFeeCents,
+    qty: position.qty || 0
   };
-  let cash = Math.max(0, cashCents + payout);
   let next = null;
   if (event.reason === "ziel" && settings.reenterPct > 0 && event.share !== "part") {
-    const stake = Math.round(cash * settings.reenterPct / 100);
-    const fee = Math.round(stake * settings.spread);
-    if (stake >= 100 && cash >= stake + fee) {
-      cash -= stake + fee;
-      next = {
-        side: position.side,
-        entry: event.price,
-        entryMin: minute,
-        stakeCents: stake,
-        leverage: position.leverage,
-        entryFeeCents: fee
-      };
+    const budget = Math.round(cash * settings.reenterPct / 100);
+    const built = quotePosition({
+      underlying: event.price,
+      side: position.side,
+      leverage: position.leverage,
+      stakeCents: budget,
+      fx: position.fx,
+      minute
+    });
+    if (built && cash >= built.spent) {
+      cash -= built.spent;
+      next = built.position;
     }
   }
   return { cashCents: cash, position: next, trade };
@@ -791,9 +906,7 @@ export const STAKE_PRESETS = [20, 50, 100, 200, 400];
 /** Fixed stakes against the account, not the cash left inside an open trade. */
 export function stakeBasisCents(state) {
   const snap = liveSnapshot(state);
-  const reserved = Math.max(0, state?.cashCents || 0)
-    + (state?.position?.stakeCents || 0)
-    + (state?.position?.entryFeeCents || 0);
+  const reserved = Math.max(0, state?.cashCents || 0) + (state?.position?.stakeCents || 0);
   return Math.max(snap.equityCents || 0, reserved);
 }
 
@@ -824,11 +937,7 @@ export function tradeStakeCents(state) {
   const base = state?.settings?.stakeAllIn
     ? cash
     : eurosToCents(state?.settings?.stake || START_EUROS);
-  let wanted = Math.min(cash, Math.max(0, base));
-  const spread = Number(state?.settings?.spread) || 0;
-  const fee = Math.round(wanted * spread);
-  if (wanted + fee > cash) wanted = Math.max(0, cash - Math.round(cash * spread));
-  return wanted;
+  return Math.min(cash, Math.max(0, base));
 }
 
 export function openTrade(state, side) {
@@ -846,21 +955,21 @@ export function openTrade(state, side) {
     return { state: working, ok: false, reason: "stake" };
   }
   const stake = tradeStakeCents(working);
-  const fee = Math.round(stake * (Number(working.settings?.spread) || 0));
-  if (stake < 100 || working.cashCents < stake + fee) return { state: working, ok: false, reason: "stake" };
+  const built = quotePosition({
+    underlying: candle.c,
+    side: cleanSide,
+    leverage: working.settings.leverage,
+    stakeCents: stake,
+    fx: working.settings.eurusd,
+    minute: candle.t
+  });
+  if (!built || working.cashCents < built.spent) return { state: working, ok: false, reason: "stake" };
   return {
     ok: true,
     state: {
       ...working,
-      cashCents: working.cashCents - stake - fee,
-      position: {
-        side: cleanSide,
-        entry: candle.c,
-        entryMin: candle.t,
-        stakeCents: stake,
-        leverage: working.settings.leverage,
-        entryFeeCents: fee
-      }
+      cashCents: working.cashCents - built.spent,
+      position: built.position
     }
   };
 }
@@ -895,19 +1004,39 @@ export function takeShare(state, sharePct) {
   const share = clamp(num(sharePct, state.settings?.takeSharePct || 100), 1, 100) / 100;
   const candle = unpackBar(state.bars[state.visible - 1]);
   const position = state.position;
-  const partStake = Math.max(1, Math.round(position.stakeCents * share));
-  const partFee = Math.round(position.entryFeeCents * (partStake / position.stakeCents));
-  const part = { ...position, stakeCents: partStake, entryFeeCents: partFee };
+  if (!(position.qty > 0)) return closeManual(state);
+  const partQty = share >= 0.999 ? position.qty : Math.min(position.qty, Math.max(1, Math.floor(position.qty * share)));
+  if (partQty >= position.qty) return closeManual(state);
+  const bid = certificateBidCents(candle.c, position);
+  const entryFeePart = Math.round(position.entryFeeCents * partQty / position.qty);
+  const cost = partQty * position.askCents + entryFeePart;
+  const proceeds = partQty * bid - ORDER_FEE_CENTS;
+  let pnlCents = proceeds - cost;
+  let cash = state.cashCents + proceeds;
+  if (cash < 0) {
+    pnlCents -= cash;
+    cash = 0;
+  }
   const trades = state.trades.slice();
-  const closed = applyClose(part, { reason: "mitnehmen", price: candle.c, share: share < 0.999 ? "part" : "all" }, state.marketMin, state.settings, state.cashCents);
-  trades.push(closed.trade);
-  const left = position.stakeCents - partStake;
-  const next = left >= 100 ? {
+  trades.push({
+    side: position.side,
+    entryMin: position.entryMin,
+    exitMin: state.marketMin,
+    entry: position.entry,
+    exit: candle.c,
+    reason: "mitnehmen",
+    pnlCents,
+    stakeCents: cost,
+    exitFeeCents: ORDER_FEE_CENTS,
+    qty: partQty
+  });
+  const next = {
     ...position,
-    stakeCents: left,
-    entryFeeCents: Math.max(0, position.entryFeeCents - partFee)
-  } : null;
-  return rescueBalance({ ...state, cashCents: closed.cashCents, position: next, trades });
+    qty: position.qty - partQty,
+    stakeCents: Math.max(0, position.stakeCents - cost),
+    entryFeeCents: Math.max(0, position.entryFeeCents - entryFeePart)
+  };
+  return rescueBalance({ ...state, cashCents: cash, position: next, trades });
 }
 
 export function closeManual(state) {
@@ -926,12 +1055,16 @@ export function liveSnapshot(state) {
   let barrier = null;
   let pct = 0;
   if (state?.position && last) {
-    const value = theoreticalCents(state.position.stakeCents, state.position.leverage, state.position.entry, last.c, state.position.side);
-    const exitFee = Math.round(value * state.settings.spread);
-    equity += value - exitFee;
-    gross = value - state.position.stakeCents;
-    pct = state.position.stakeCents ? (gross / state.position.stakeCents) * 100 : 0;
-    barrier = knockBarrier(state.position.entry, state.position.leverage, state.position.side);
+    const position = state.position;
+    const bid = position.qty ? certificateBidCents(last.c, position) : 0;
+    const exitFee = bid > 0 ? ORDER_FEE_CENTS : 0;
+    const liquid = bid * (position.qty || 0) - exitFee;
+    gross = liquid - position.stakeCents;
+    equity = Math.max(0, equity + liquid);
+    pct = position.stakeCents ? (gross / position.stakeCents) * 100 : 0;
+    barrier = Number.isFinite(position.barrier)
+      ? position.barrier
+      : knockBarrier(position.entry, position.leverage, position.side);
   }
   return {
     price: last?.c ?? null,

@@ -32,8 +32,12 @@ import {
   hiddenLabels,
   historyStats,
   inspectCandle,
+  certificateBidCents,
+  effectiveLeverage,
   knockBarrier,
   liveSnapshot,
+  orderQuantity,
+  pickCertificate,
   loadHistory,
   normalizeSettings,
   rescueBalance,
@@ -143,11 +147,20 @@ test("Knock-out und Ergebnis folgen dem Hebel", () => {
   const entry = 100;
   assert.equal(knockBarrier(entry, leverage, "long"), 90);
   assert.equal(knockBarrier(entry, leverage, "short"), 110);
-  assert.equal(grossPnlCents(stake, leverage, entry, 101, "long"), 1000);
-  assert.equal(theoreticalCents(stake, leverage, entry, 101, "long"), 11000);
-  assert.equal(grossPnlCents(stake, leverage, entry, 99, "short"), 1000);
-  assert.equal(grossPnlCents(stake, leverage, entry, 90, "long"), -stake);
-  assert.equal(grossPnlCents(stake, leverage, entry, 80, "long"), -stake);
+  const barrier = knockBarrier(entry, leverage, "long");
+  assert.ok(Math.abs(effectiveLeverage(entry, barrier) - leverage) < 1e-9);
+  assert.ok(effectiveLeverage(entry * 1.01, barrier) < leverage);
+  assert.ok(effectiveLeverage(entry * 0.995, barrier) > leverage);
+  const cert = pickCertificate(entry, leverage, "long", 1.1);
+  assert.ok(cert.bidCents >= 10 && cert.bidCents <= 100);
+  const qty = orderQuantity(stake, cert.askCents);
+  const builtAsk = cert.askCents;
+  const upBid = certificateBidCents(entry * 1.01, {
+    side: "long", barrier, ratio: cert.ratio, fx: 1.1, qty
+  });
+  const frozen = Math.round(stake * leverage * 0.01);
+  const fromPrice = qty * upBid - 100 - (qty * builtAsk + 100);
+  assert.notEqual(fromPrice, frozen);
   const longKo = inspectCandle(
     { entry, leverage, side: "long" },
     { t: 600, o: 100, h: 101, l: 90, c: 100 },
@@ -180,15 +193,18 @@ test("Eine Kerze mit Ziel und Knock-out endet im Knock-out", () => {
   let round = stepCandle(state);
   const opened = openTrade(round, "long");
   assert.equal(opened.ok, true);
-  assert.equal(opened.state.cashCents, 100000 - 10000 - 50);
+  const spent = opened.state.position.stakeCents;
+  const cashOpen = opened.state.cashCents;
+  assert.equal(cashOpen, 100000 - spent);
   const bars = opened.state.bars.slice();
   const next = bars[opened.state.visible];
   bars[opened.state.visible] = [next[0], 100, 110, 89, 105, 10];
   const after = catchUp({ ...opened.state, bars }, opened.state.marketMin + INTERVAL_MIN);
   assert.equal(after.trades.at(-1).reason, "ko");
   assert.equal(after.position, null);
-  assert.equal(after.trades.at(-1).pnlCents, -10000);
-  assert.equal(after.cashCents, 100000 - 10000);
+  assert.equal(after.trades.at(-1).exitFeeCents, 0);
+  assert.equal(after.trades.at(-1).pnlCents, -spent);
+  assert.equal(after.cashCents, cashOpen);
 });
 
 test("Raus bucht den Spread, Ziel kann neu rein", () => {
@@ -197,7 +213,8 @@ test("Raus bucht den Spread, Ziel kann neu rein", () => {
   round = closeManual(round);
   const trade = round.trades[0];
   assert.equal(trade.reason, "raus");
-  assert.equal(trade.pnlCents, -50 - 50);
+  assert.equal(trade.pnlCents, -(trade.qty + 200));
+  assert.equal(trade.exitFeeCents, 100);
   assert.equal(round.position, null);
 
   const rising = risingDay();
@@ -436,7 +453,9 @@ test("50 € Einsatz verliert höchstens 50 €, auch nach einem Gewinn", () => 
   round = { ...round, cashCents: 25000 };
   const opened = openTrade(round, "long");
   assert.equal(opened.ok, true);
-  assert.equal(opened.state.position.stakeCents, 5000);
+  const spent = opened.state.position.stakeCents;
+  assert.ok(spent <= 5000);
+  assert.ok(opened.state.position.qty >= 1);
   const bars = opened.state.bars.slice();
   const next = bars[opened.state.visible];
   bars[opened.state.visible] = [next[0], 100, 100, 1, 1, 10];
@@ -444,9 +463,10 @@ test("50 € Einsatz verliert höchstens 50 €, auch nach einem Gewinn", () => 
   const trade = after.trades.at(-1);
   assert.equal(trade.reason, "ko");
   assert.equal(reasonLabel(trade.reason), "Knock-out");
-  assert.equal(trade.pnlCents, -5000);
+  assert.equal(trade.exitFeeCents, 0);
+  assert.equal(trade.pnlCents, -spent);
   assert.equal(after.position, null);
-  assert.equal(after.cashCents, 20000);
+  assert.equal(after.cashCents, 25000 - spent);
   assert.ok(after.cashCents >= 0);
   const staked = after.trades.reduce((sum, item) => sum + item.stakeCents, 0);
   const roundLoss = Math.max(0, after.startCents - after.cashCents);
@@ -457,8 +477,9 @@ test("50 € Einsatz verliert höchstens 50 €, auch nach einem Gewinn", () => 
   const bar = book[lost.visible];
   book[lost.visible] = [bar[0], 100, 100, 0, 0, 10];
   const end = catchUp({ ...lost, bars: book }, lost.marketMin + INTERVAL_MIN);
-  assert.equal(end.trades.at(-1).pnlCents, -5000);
-  assert.equal(end.cashCents, 5000);
+  assert.equal(end.trades.at(-1).exitFeeCents, 0);
+  assert.equal(end.trades.at(-1).pnlCents, -lost.position.stakeCents);
+  assert.equal(end.cashCents, 10000 - lost.position.stakeCents);
   assert.ok(end.cashCents >= 0);
   assert.ok(end.startCents - end.cashCents <= 5000);
 });
@@ -647,6 +668,38 @@ test("Training merkt sich nur eine Aktie aus dem Archiv", () => {
   assert.match(ui, /data-action="replay-symbol"/);
   assert.match(ui, /Keine Kursdaten für/);
   assert.match(ui, /replay-tick/);
+});
+
+test("Sofort raus kostet den Spread und zwei Gebühren, Knock-out keine Raus-Gebühr", () => {
+  const fx = 1.1;
+  const quote = pickCertificate(100, 10, "long", fx);
+  const qty = orderQuantity(10000, quote.askCents);
+  assert.equal(qty, Math.floor((10000 - 100) / quote.askCents));
+  assert.equal(quote.askCents, quote.bidCents + 1);
+  let round = stepCandle(createRound(flatDay(100), { balance: 1000, stake: 100, leverage: 10, eurusd: fx }));
+  const before = round.cashCents;
+  round = openTrade(round, "long").state;
+  assert.equal(round.position.qty, qty);
+  assert.equal(round.position.askCents, quote.askCents);
+  assert.equal(round.cashCents, before - round.position.stakeCents);
+  const closed = closeManual(round);
+  assert.equal(closed.trades[0].pnlCents, -(qty + 200));
+  assert.equal(before - closed.cashCents, qty + 200);
+  assert.equal(closed.trades[0].exitFeeCents, 100);
+
+  let knocked = stepCandle(createRound(flatDay(100), { balance: 1000, stake: 100, leverage: 10, eurusd: fx }));
+  knocked = openTrade(knocked, "long").state;
+  const spent = knocked.position.stakeCents;
+  const cashOpen = knocked.cashCents;
+  const book = knocked.bars.slice();
+  const bar = book[knocked.visible];
+  book[knocked.visible] = [bar[0], 100, 100, 1, 1, 10];
+  const after = catchUp({ ...knocked, bars: book }, knocked.marketMin + INTERVAL_MIN);
+  assert.equal(after.trades.at(-1).reason, "ko");
+  assert.equal(after.trades.at(-1).exitFeeCents, 0);
+  assert.equal(after.trades.at(-1).pnlCents, -spent);
+  assert.equal(after.cashCents, cashOpen);
+  assert.ok(after.cashCents >= 0);
 });
 
 test("Neue Runde behält das Konto ab 25 €", () => {
