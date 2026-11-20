@@ -1277,6 +1277,29 @@
       ]
     },
     {
+      "id": "evt-electron-strix14",
+      "title": "Rocket Lab: Electron-Start „Night Owls Never Sleep“ (14. StriX-Satellit für Synspective, frühestens 27.11.)",
+      "date": "2026-11-27",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "company",
+      "category": "start",
+      "company": "Rocket Lab",
+      "tickers": [
+        "RKLB"
+      ],
+      "probabilityPct": 60,
+      "impact": "niedrig",
+      "reasoning": "Der Start der 14. StriX-Mission wurde in den Startplänen von frühestens 30.11. auf frühestens 27.11. vorgezogen (Kurzia Spaceflight Daily, 20.11.). Uhrzeit noch nicht genannt. 60 %, weil frühe Electron-Termine oft um einige Tage rutschen. Für den Kurs Routine, nach dem 100. Electron-Start eher ein Zeichen der Taktung.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Kurzia Spaceflight Daily: Electron „Night Owls Never Sleep“ auf NET 27.11. vorgezogen (20.11.)",
+          "url": "https://kurzia.com/n/spaceflight-daily/i/iss_fe5bd497547245a6b87d7b70589dce0c"
+        }
+      ]
+    },
+    {
       "id": "evt-rklb-gao-mars",
       "title": "Rocket Lab gegen Blue Origin: GAO entscheidet über Protest zum Mars-Funkorbiter der NASA",
       "date": "2026-12-21",
@@ -1795,7 +1818,7 @@
     },
     {
       "id": "evt-dragon-crs35-abdocken",
-      "title": "SpaceX: Frachtkapsel Dragon (CRS-35) legt von der ISS ab (verschoben auf Fr 20.11. 18:05)",
+      "title": "SpaceX: Frachtkapsel Dragon (CRS-35) hat von der ISS abgelegt (Fr 20.11. 18:05)",
       "date": "2026-11-20",
       "time": "18:05",
       "timezone": "Europe/Berlin",
@@ -1805,9 +1828,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 90,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "Die Dragon-Frachtkapsel der 35. Versorgungsmission soll am Do 19.11. um 12:05 Uhr US-Ostküstenzeit (18:05 Berlin) von der ISS ablegen und danach vor Kalifornien wassern. Am Mi wurde das Abdocken wegen schlechten Wetters in den Landegebieten abgesagt; die NASA nennt nur das Wetter als Grund, nicht die Kapsel (NASA, SpaceX auf X). 70 %, weil das Wetter vor Kalifornien schon einmal zum Aufschub geführt hat. Für den Kurs ist das Routine. Stand Mi 13:30: Die NASA prüft das Wetter erneut am Mi um 12:00 Uhr US-Ostküstenzeit (18:00 Berlin); die nächste Abdock-Chance bleibt Do 12:05 Ostküstenzeit (NASA). 70 % unverändert. Stand Mi 15:30: Keine neue NASA-Meldung seit der Absage für Mittwoch; die nächste Wetterbesprechung ist heute um 18:00 Berlin, die nächste Gelegenheit Do 18:05 (NASA). 70 % unverändert. Stand Mi 16:15: Weiter keine neue NASA-Meldung; Wetterbesprechung 18:00 Berlin, nächste Gelegenheit Do 18:05 (NASA). 70 % unverändert. Stand Mi 18:15: Das Ergebnis der Wetterbesprechung von 18:00 ist noch nicht veröffentlicht; im NASA-Blog steht weiter nur die Absage für Mittwoch. SpaceX nennt als Termin frühestens Do 12:05 Uhr Ostküstenzeit (18:05 Berlin) (NASA, SpaceX). 70 % unverändert. Stand Mi 20:15: Ergebnis der Wetterbesprechung: Auch Donnerstag fällt aus. NASA und SpaceX nennen jetzt frühestens Fr 20.11. um 12:05 Uhr Ostküstenzeit (18:05 Berlin) fürs Abdocken und frühestens Sa 21.11. um 17:04 Uhr Ostküstenzeit (23:04 Berlin) für die Wasserung vor Kalifornien, je nach Wetter (NASA, SpaceX). Ein technisches Problem wird nicht genannt. Weil das Wetter schon zweimal nicht passte, bleibt es bei 70 % für Freitag. Stand Mi 22:15: Die ISS-Crew packt weiter Experimente und Geräte in die Kapsel (NASA, ISS auf X). Neuer Termin bleibt frühestens Fr 20.11. 18:05 Berlin, Wasserung frühestens Sa 23:04, je nach Wetter (NASA). 70 % unverändert. Stand Do 08:20: SpaceX und NASA nennen weiter frühestens Fr 20.11. 12:05 Uhr Ostküstenzeit (18:05 Berlin) (SpaceX, NASA). 70 % unverändert, Wetter bleibt das Risiko. Stand Do 12:25: NASA bestätigt die Übertragung: Abkoppeln frühestens Fr 12:05 Uhr Ostküstenzeit (18:05 Berlin), Wasserung vor Kalifornien frühestens Sa 17:04 Ostküstenzeit (23:04 Berlin), je nach Wetter (NASA). 70 % unverändert. Stand Do 18:20: Die Seewetter-Vorhersage für Nordkalifornien sieht besser aus (5–15 Knoten Wind, 6–9 Fuß Wellen), weiter draußen bis 25 Knoten (NOAA). Termin bleibt frühestens Fr 18:05 Berlin. 70 % unverändert. Stand Fr 07:50: Die NASA hält am Abdocken heute um 12:05 Uhr Ostküstenzeit (18:05 Berlin) fest, Übertragung ab 17:45 Berlin; Wasserung vor Kalifornien Sa 21.11. gegen 22:55 Berlin, wetterabhängig (NASA, aktualisiert 19.11.). 70 % unverändert, weil das Wetter im Landegebiet schon zweimal zum Aufschub geführt hat. Stand Fr 12:20: NASA und Space.com nennen weiter heute 12:05 Uhr Ostküstenzeit (18:05 Berlin), Übertragung ab 17:45 Berlin, Wasserung Sa gegen 22:55 Berlin; bei schlechtem Seegang bleibt Dragon länger an der ISS (Space.com, NASA). 70 % unverändert. Stand Fr 14:30: SpaceX und NASA halten am Abdocken heute um 12:05 Uhr Ostküstenzeit (18:05 Berlin) fest, NASA überträgt ab 17:45 Berlin; die Wasserung vor Kalifornien ist für Sa 21.11. gegen 22:55 Berlin geplant, bei schlechtem Wetter bleibt die Kapsel länger an der Station (SpaceX, Space.com). An Bord ist auch das defekte Handgelenk des Roboterarms Canadarm2. 70 % unverändert, weil das Wetter weiter der Engpass ist. Stand Fr 16:20: Keine Absage gemeldet. NASA und SpaceX nennen weiter 12:05 Uhr Ostküstenzeit (18:05 Berlin) fürs Abdocken, Übertragung ab 17:45 Berlin, Wasserung Sa gegen 22:55 Berlin, je nach Wetter (NASA, Space.com). 70 % unverändert. Stand Fr 18:20: Keine Absage. NASA hat um 17:47 Berlin die Live-Übertragung zum Abflug gestartet, Abdocken weiter für 18:05 geplant; die Wasserung ist für Sa 21.11. gegen 22:55 Berlin vor Kalifornien angesetzt (NASA, Space.com). Eine Bestätigung des Abdockens im NASA-Blog steht noch aus. Weil das Wetter-Hindernis offenbar weg ist und die Übertragung läuft, 70 → 90 %.",
+      "reasoning": "Die Dragon-Frachtkapsel der 35. Versorgungsmission soll am Do 19.11. um 12:05 Uhr US-Ostküstenzeit (18:05 Berlin) von der ISS ablegen und danach vor Kalifornien wassern. Am Mi wurde das Abdocken wegen schlechten Wetters in den Landegebieten abgesagt; die NASA nennt nur das Wetter als Grund, nicht die Kapsel (NASA, SpaceX auf X). 70 %, weil das Wetter vor Kalifornien schon einmal zum Aufschub geführt hat. Für den Kurs ist das Routine. Stand Mi 13:30: Die NASA prüft das Wetter erneut am Mi um 12:00 Uhr US-Ostküstenzeit (18:00 Berlin); die nächste Abdock-Chance bleibt Do 12:05 Ostküstenzeit (NASA). 70 % unverändert. Stand Mi 15:30: Keine neue NASA-Meldung seit der Absage für Mittwoch; die nächste Wetterbesprechung ist heute um 18:00 Berlin, die nächste Gelegenheit Do 18:05 (NASA). 70 % unverändert. Stand Mi 16:15: Weiter keine neue NASA-Meldung; Wetterbesprechung 18:00 Berlin, nächste Gelegenheit Do 18:05 (NASA). 70 % unverändert. Stand Mi 18:15: Das Ergebnis der Wetterbesprechung von 18:00 ist noch nicht veröffentlicht; im NASA-Blog steht weiter nur die Absage für Mittwoch. SpaceX nennt als Termin frühestens Do 12:05 Uhr Ostküstenzeit (18:05 Berlin) (NASA, SpaceX). 70 % unverändert. Stand Mi 20:15: Ergebnis der Wetterbesprechung: Auch Donnerstag fällt aus. NASA und SpaceX nennen jetzt frühestens Fr 20.11. um 12:05 Uhr Ostküstenzeit (18:05 Berlin) fürs Abdocken und frühestens Sa 21.11. um 17:04 Uhr Ostküstenzeit (23:04 Berlin) für die Wasserung vor Kalifornien, je nach Wetter (NASA, SpaceX). Ein technisches Problem wird nicht genannt. Weil das Wetter schon zweimal nicht passte, bleibt es bei 70 % für Freitag. Stand Mi 22:15: Die ISS-Crew packt weiter Experimente und Geräte in die Kapsel (NASA, ISS auf X). Neuer Termin bleibt frühestens Fr 20.11. 18:05 Berlin, Wasserung frühestens Sa 23:04, je nach Wetter (NASA). 70 % unverändert. Stand Do 08:20: SpaceX und NASA nennen weiter frühestens Fr 20.11. 12:05 Uhr Ostküstenzeit (18:05 Berlin) (SpaceX, NASA). 70 % unverändert, Wetter bleibt das Risiko. Stand Do 12:25: NASA bestätigt die Übertragung: Abkoppeln frühestens Fr 12:05 Uhr Ostküstenzeit (18:05 Berlin), Wasserung vor Kalifornien frühestens Sa 17:04 Ostküstenzeit (23:04 Berlin), je nach Wetter (NASA). 70 % unverändert. Stand Do 18:20: Die Seewetter-Vorhersage für Nordkalifornien sieht besser aus (5–15 Knoten Wind, 6–9 Fuß Wellen), weiter draußen bis 25 Knoten (NOAA). Termin bleibt frühestens Fr 18:05 Berlin. 70 % unverändert. Stand Fr 07:50: Die NASA hält am Abdocken heute um 12:05 Uhr Ostküstenzeit (18:05 Berlin) fest, Übertragung ab 17:45 Berlin; Wasserung vor Kalifornien Sa 21.11. gegen 22:55 Berlin, wetterabhängig (NASA, aktualisiert 19.11.). 70 % unverändert, weil das Wetter im Landegebiet schon zweimal zum Aufschub geführt hat. Stand Fr 12:20: NASA und Space.com nennen weiter heute 12:05 Uhr Ostküstenzeit (18:05 Berlin), Übertragung ab 17:45 Berlin, Wasserung Sa gegen 22:55 Berlin; bei schlechtem Seegang bleibt Dragon länger an der ISS (Space.com, NASA). 70 % unverändert. Stand Fr 14:30: SpaceX und NASA halten am Abdocken heute um 12:05 Uhr Ostküstenzeit (18:05 Berlin) fest, NASA überträgt ab 17:45 Berlin; die Wasserung vor Kalifornien ist für Sa 21.11. gegen 22:55 Berlin geplant, bei schlechtem Wetter bleibt die Kapsel länger an der Station (SpaceX, Space.com). An Bord ist auch das defekte Handgelenk des Roboterarms Canadarm2. 70 % unverändert, weil das Wetter weiter der Engpass ist. Stand Fr 16:20: Keine Absage gemeldet. NASA und SpaceX nennen weiter 12:05 Uhr Ostküstenzeit (18:05 Berlin) fürs Abdocken, Übertragung ab 17:45 Berlin, Wasserung Sa gegen 22:55 Berlin, je nach Wetter (NASA, Space.com). 70 % unverändert. Stand Fr 18:20: Keine Absage. NASA hat um 17:47 Berlin die Live-Übertragung zum Abflug gestartet, Abdocken weiter für 18:05 geplant; die Wasserung ist für Sa 21.11. gegen 22:55 Berlin vor Kalifornien angesetzt (NASA, Space.com). Eine Bestätigung des Abdockens im NASA-Blog steht noch aus. Weil das Wetter-Hindernis offenbar weg ist und die Übertragung läuft, 70 → 90 %. Stand Fr 20:30: Eingetreten. Die Dragon legte um 12:05 Uhr Ostküstenzeit (18:05 Berlin) vom Harmony-Modul ab und soll am Sa 21.11. gegen 22:55 Uhr Berliner Zeit vor Kalifornien wassern; die NASA überträgt die Landung nicht (NASA, Space.com). 90 → 100 %.",
       "example": false,
       "sources": [
         {
@@ -1865,6 +1888,14 @@
         {
           "title": "NASA: Dragon Prepares to Depart Station for Earth Return (20.11., 11:47 Ostküstenzeit)",
           "url": "https://www.nasa.gov/blogs/general-blog/2026/11/20/dragon-prepares-to-depart-station-for-earth-return/"
+        },
+        {
+          "title": "NASA: Dragon Undocks from Station Packed With Science and Cargo (20.11.)",
+          "url": "https://www.nasa.gov/blogs/general-blog/2026/11/20/dragon-undocks-from-station-packed-with-science-and-cargo/"
+        },
+        {
+          "title": "Space.com: SpaceX Dragon cargo capsule heads home to Earth from the ISS (20.11.)",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-crs-35-dragon-iss-cargo-mission-return-to-earth"
         }
       ]
     },
@@ -1996,7 +2027,7 @@
     },
     {
       "id": "evt-fed-cook-nov",
-      "title": "Fed: Gouverneurin Lisa Cook spricht über die US-Wirtschaft (Santiago de Chile)",
+      "title": "Fed: Gouverneurin Lisa Cook fordert weitere Zinserhöhungen (Santiago de Chile)",
       "date": "2026-11-20",
       "time": "18:15",
       "timezone": "Europe/Berlin",
@@ -2008,9 +2039,9 @@
         "TSLA",
         "RKLB"
       ],
-      "probabilityPct": 95,
+      "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Lisa Cook hält um 12:15 Uhr Ostküstenzeit (18:15 Berlin) eine Rede zur US-Wirtschaft im globalen Umfeld bei der Konferenz der chilenischen Zentralbank; Gouverneur Waller spricht schon um 14:25 Berlin, aber nur zur Begrüßung (Fed-Kalender, MLQ.ai). Nach den harten Worten von Barr und Paulson und 98,4 % Erhöhungswahrscheinlichkeit für Dezember (Reuters) zählt jedes Signal zum Zinspfad, das trifft vor allem teure Wachstumswerte. 95 %, weil der Termin im Fed-Kalender steht. Stand Fr 14:30: Waller hielt um 14:25 Berlin nur ein Grußwort ohne Fragerunde (Fed-Kalender). Der Zinsdruck kommt heute aus Europa: Die deutschen Erzeugerpreise stiegen im Oktober um 8,1 % zum Vorjahr, erwartet waren 7,4 %, das schürt Erwartungen weiterer Zinserhöhungen; die zehnjährige US-Rendite fiel dennoch auf 4,989 %, weil Geld aus Aktien in Anleihen fließt (MarketScreener/Dow Jones, Sharecast). Damit bekommt Cooks Rede um 18:15 mehr Gewicht. 95 % unverändert. Stand Fr 18:20: Die Rede „The U.S. Economy in Global Context“ steht im Fed-Kalender für 12:15 Uhr Ostküstenzeit (18:15 Berlin), mit Text und Fragerunde (Fed). Es ist ihr erster Auftritt, seit ihr Anwalt erklärt hat, dass sie nicht an der Anhörung im Weißen Haus über ihre mögliche Entlassung teilnimmt (Semafor). Inhalte lagen um 18:20 noch nicht vor. 95 % unverändert.",
+      "reasoning": "Lisa Cook hält um 12:15 Uhr Ostküstenzeit (18:15 Berlin) eine Rede zur US-Wirtschaft im globalen Umfeld bei der Konferenz der chilenischen Zentralbank; Gouverneur Waller spricht schon um 14:25 Berlin, aber nur zur Begrüßung (Fed-Kalender, MLQ.ai). Nach den harten Worten von Barr und Paulson und 98,4 % Erhöhungswahrscheinlichkeit für Dezember (Reuters) zählt jedes Signal zum Zinspfad, das trifft vor allem teure Wachstumswerte. 95 %, weil der Termin im Fed-Kalender steht. Stand Fr 14:30: Waller hielt um 14:25 Berlin nur ein Grußwort ohne Fragerunde (Fed-Kalender). Der Zinsdruck kommt heute aus Europa: Die deutschen Erzeugerpreise stiegen im Oktober um 8,1 % zum Vorjahr, erwartet waren 7,4 %, das schürt Erwartungen weiterer Zinserhöhungen; die zehnjährige US-Rendite fiel dennoch auf 4,989 %, weil Geld aus Aktien in Anleihen fließt (MarketScreener/Dow Jones, Sharecast). Damit bekommt Cooks Rede um 18:15 mehr Gewicht. 95 % unverändert. Stand Fr 18:20: Die Rede „The U.S. Economy in Global Context“ steht im Fed-Kalender für 12:15 Uhr Ostküstenzeit (18:15 Berlin), mit Text und Fragerunde (Fed). Es ist ihr erster Auftritt, seit ihr Anwalt erklärt hat, dass sie nicht an der Anhörung im Weißen Haus über ihre mögliche Entlassung teilnimmt (Semafor). Inhalte lagen um 18:20 noch nicht vor. 95 % unverändert. Stand Fr 20:30: Gehalten. Cook sagte, der Leitzins von 3,75 bis 4,00 % reiche nicht, um die Inflation zu senken; wer mit Erhöhungen warte, laufe Gefahr, „hinter die Kurve“ zu geraten. Die PCE-Inflation lag im Oktober laut Schätzung bei 3,8 %, ohne Energie und Lebensmittel bei 3,2 % (Fed-Redetext, Reuters). Das stützt eine Erhöhung im Dezember und belastet teure Wachstumswerte. 95 → 100 %.",
       "example": false,
       "sources": [
         {
@@ -2036,6 +2067,14 @@
         {
           "title": "Semafor: Fed’s Lisa Cook speaks ahead of hearing (20.11.)",
           "url": "https://www.semafor.com/article/11/20/2026/feds-lisa-cook-speaks-ahead-of-hearing"
+        },
+        {
+          "title": "Federal Reserve: Rede von Gouverneurin Cook, The U.S. Economy in Global Context (20.11.)",
+          "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm"
+        },
+        {
+          "title": "Reuters via Investing.com: Fed’s Cook says rate hikes needed to lower high inflation (20.11.)",
+          "url": "https://www.investing.com/news/economy-news/feds-cook-says-rate-hikes-needed-to-lower-high-inflation-5042321"
         }
       ]
     },
