@@ -646,6 +646,36 @@
           "url": "https://finance.yahoo.com/quote/TSLA"
         }
       ]
+    },
+    {
+      "id": "MRVL-2026-11-20",
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "changePct": 3.63,
+      "priceEur": 134.88,
+      "thresholdPct": 2,
+      "direction": "up",
+      "timestamp": "2026-11-20T01:27:01.787Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Alpaca Markets IEX MRVL",
+          "url": "https://data.alpaca.markets/v2/stocks/MRVL/snapshot?feed=iex"
+        },
+        {
+          "title": "Yahoo Finance 9MW.DE",
+          "url": "https://finance.yahoo.com/quote/9MW.DE"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance MRVL",
+          "url": "https://finance.yahoo.com/quote/MRVL"
+        }
+      ]
     }
   ]
 }

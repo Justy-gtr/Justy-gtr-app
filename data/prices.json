@@ -1,11 +1,11 @@
 {
-  "asOf": "2026-11-19T19:36:11.532Z",
+  "asOf": "2026-11-20T01:27:01.787Z",
   "example": false,
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.0979,
+    "rate": 1.0972,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-19T19:36:11.532Z",
+    "asOf": "2026-11-20T01:27:01.787Z",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -21,25 +21,25 @@
       "example": false,
       "narrativeExample": false,
       "stale": false,
-      "priceEur": 125.34,
-      "priceUsd": 137.74,
-      "previousCloseEur": 130.86,
-      "changeEur": -5.52,
-      "changePct": -4.22,
-      "dayHighEur": 134.06,
-      "dayLowEur": 123.64,
+      "priceEur": 127.76,
+      "priceUsd": 138.17,
+      "previousCloseEur": 127.58,
+      "changeEur": 0.18,
+      "changePct": 0.14,
+      "dayHighEur": 134.1,
+      "dayLowEur": 126.7,
       "eurMethod": "direct_eur",
-      "eurVenue": "Stuttgart",
-      "eurSymbol": "SPX.SG",
+      "eurVenue": "Xetra",
+      "eurSymbol": "SPX.DE",
       "usdSymbol": "SPCX",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.0979,
+      "fxRate": 1.0972,
       "sparkline": [
         133.5,
         133.2,
         133.32,
         133.28,
-        133.46,
+        133.32,
         133.44,
         133.7,
         133.38,
@@ -47,26 +47,26 @@
         133.5,
         133.66,
         132.8,
-        132.26,
-        131.86,
+        132,
+        131.68,
         131.74,
-        133,
+        133.34,
         132.52,
         131.58,
         131.64,
         130.7,
-        129.62,
-        127.14,
-        127,
-        127.7,
-        127.76,
-        125,
+        129.8,
+        127.4,
+        127.12,
+        127.64,
+        127.42,
+        124.04,
         124.14,
         124.8,
+        125.66,
         125.4,
-        125.16,
-        125.48,
-        125.45
+        125.06,
+        125.01
       ],
       "history": {
         "intraday": [
@@ -1201,116 +1201,108 @@
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:16:37.000Z",
+            "t": "2026-11-19T19:16:00.000Z",
             "eur": 125.42,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:18:18.000Z",
+            "t": "2026-11-19T19:18:00.000Z",
             "eur": 125.34,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:19:00.000Z",
-            "eur": 125.16,
-            "usd": 137.42,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:20:00.000Z",
-            "eur": 125.29,
-            "usd": 137.56,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:21:00.000Z",
-            "eur": 125.45,
-            "usd": 137.74,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:22:00.000Z",
-            "eur": 125.45,
-            "usd": 137.74,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:23:00.000Z",
-            "eur": 125.39,
-            "usd": 137.67,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:24:00.000Z",
-            "eur": 125.29,
-            "usd": 137.56,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:25:00.000Z",
-            "eur": 125.36,
-            "usd": 137.64,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:26:00.000Z",
-            "eur": 125.51,
-            "usd": 137.8,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:27:00.000Z",
-            "eur": 125.48,
-            "usd": 137.76,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:28:00.000Z",
-            "eur": 125.45,
-            "usd": 137.74,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:29:00.000Z",
-            "eur": 125.37,
-            "usd": 137.65,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:30:00.000Z",
-            "eur": 125.46,
-            "usd": 137.75,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:31:00.000Z",
-            "eur": 125.27,
-            "usd": 137.54,
-            "session": "regular"
-          },
-          {
             "t": "2026-11-19T19:32:00.000Z",
-            "eur": 125.39,
-            "usd": 137.67,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:33:00.000Z",
             "eur": 125.36,
-            "usd": 137.64,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:34:00.000Z",
-            "eur": 125.48,
-            "usd": 137.77,
+            "t": "2026-11-19T19:48:00.000Z",
+            "eur": 125.4,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:35:00.000Z",
-            "eur": 125.45,
-            "usd": 137.74,
+            "t": "2026-11-19T20:00:00.000Z",
+            "eur": 124.94,
             "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:04:00.000Z",
+            "eur": 124.7,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:17:00.000Z",
+            "eur": 124.98,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:22:00.000Z",
+            "eur": 124.58,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:23:00.000Z",
+            "eur": 124.5,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:33:00.000Z",
+            "eur": 124.3,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:46:00.000Z",
+            "eur": 125.42,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:47:00.000Z",
+            "eur": 125.06,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:51:00.000Z",
+            "eur": 125.44,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:53:00.000Z",
+            "eur": 125.4,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:56:00.000Z",
+            "eur": 125.66,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:59:00.000Z",
+            "eur": 125.64,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T21:10:00.000Z",
+            "eur": 126.02,
+            "usd": 138.27,
+            "session": "post"
+          },
+          {
+            "t": "2026-11-19T21:19:00.000Z",
+            "eur": 125.47,
+            "usd": 137.67,
+            "session": "post"
+          },
+          {
+            "t": "2026-11-19T21:30:00.000Z",
+            "eur": 125.08,
+            "usd": 137.24,
+            "session": "post"
+          },
+          {
+            "t": "2026-11-19T21:47:00.000Z",
+            "eur": 125.01,
+            "usd": 137.16,
+            "session": "post"
           }
         ],
         "5m": [
@@ -3701,7 +3693,7 @@
             "open": 127.76,
             "high": 127.76,
             "low": 127.76,
-            "session": "post"
+            "session": "regular"
           }
         ],
         "4H": [
@@ -5232,13 +5224,6 @@
             "open": 130.1,
             "high": 133.18,
             "low": 128.8
-          },
-          {
-            "t": "2026-11-19T08:00:00.000Z",
-            "eur": 127.76,
-            "open": 133.16,
-            "high": 134.1,
-            "low": 126.7
           }
         ],
         "6M": [
@@ -5689,13 +5674,6 @@
             "open": 130.1,
             "high": 133.18,
             "low": 128.8
-          },
-          {
-            "t": "2026-11-19T08:00:00.000Z",
-            "eur": 127.76,
-            "open": 133.16,
-            "high": 134.1,
-            "low": 126.7
           }
         ],
         "1Y": [
@@ -6146,13 +6124,6 @@
             "open": 130.1,
             "high": 133.18,
             "low": 128.8
-          },
-          {
-            "t": "2026-11-19T08:00:00.000Z",
-            "eur": 127.76,
-            "open": 133.16,
-            "high": 134.1,
-            "low": 126.7
           }
         ],
         "5Y": [
@@ -6309,8 +6280,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/SPCX/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance SPX.SG",
-          "url": "https://finance.yahoo.com/quote/SPX.SG"
+          "title": "Yahoo Finance SPX.DE",
+          "url": "https://finance.yahoo.com/quote/SPX.DE"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -6322,11 +6293,11 @@
         }
       ],
       "fetchError": null,
-      "overnightPhase": "us",
-      "overnightEur": 125.46,
-      "overnightHighEur": 134.13,
-      "overnightLowEur": 123.43,
-      "overnightAsOf": "2026-11-19T19:35:47.000Z",
+      "overnightPhase": "nachhandel",
+      "overnightEur": 125.01,
+      "overnightHighEur": 130.45,
+      "overnightLowEur": 125.01,
+      "overnightAsOf": "2026-11-19T21:47:00.000Z",
       "source": "alpaca-iex"
     },
     {
@@ -6338,52 +6309,52 @@
       "example": false,
       "narrativeExample": false,
       "stale": false,
-      "priceEur": 343.2,
-      "priceUsd": 378.06,
-      "previousCloseEur": 350.4,
-      "changeEur": -7.2,
-      "changePct": -2.05,
-      "dayHighEur": 357.4,
-      "dayLowEur": 339.75,
+      "priceEur": 347.6,
+      "priceUsd": 374.48,
+      "previousCloseEur": 343.5,
+      "changeEur": 4.1,
+      "changePct": 1.19,
+      "dayHighEur": 357.7,
+      "dayLowEur": 344.85,
       "eurMethod": "direct_eur",
-      "eurVenue": "Stuttgart",
-      "eurSymbol": "TL0.SG",
+      "eurVenue": "Xetra",
+      "eurSymbol": "TL0.DE",
       "usdSymbol": "TSLA",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.0979,
+      "fxRate": 1.0972,
       "sparkline": [
         355.1,
         353.2,
         353.95,
-        355.1,
-        354.4,
-        354.75,
-        354.55,
-        354.7,
-        353.7,
-        354.35,
-        356,
-        356.35,
-        355.65,
-        356,
-        356.2,
-        355.7,
-        356.5,
-        357.15,
+        354.65,
+        354.8,
+        355.15,
+        354.6,
+        354.85,
+        354.25,
         354.5,
-        351.2,
-        350.55,
+        355.85,
+        356.2,
+        356.55,
+        356.2,
+        357.4,
+        354.95,
+        355.65,
+        355.1,
+        353.65,
+        350.45,
         346.85,
-        345.8,
-        345.75,
-        347.1,
-        348.25,
-        339.75,
+        345.45,
+        346.95,
+        347.2,
+        347.7,
+        345,
         345.35,
+        343.35,
+        343.05,
         343.25,
-        343.55,
-        343.34,
-        344.34
+        341.4,
+        341.3
       ],
       "history": {
         "intraday": [
@@ -7553,11 +7524,6 @@
             "session": "regular"
           },
           {
-            "t": "2026-11-19T17:05:51.000Z",
-            "eur": 338.15,
-            "session": "regular"
-          },
-          {
             "t": "2026-11-19T17:10:00.000Z",
             "eur": 340.35,
             "session": "regular"
@@ -7693,92 +7659,136 @@
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:20:06.000Z",
+            "t": "2026-11-19T19:20:00.000Z",
             "eur": 343.2,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:21:00.000Z",
-            "eur": 343.61,
-            "usd": 377.27,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:22:00.000Z",
-            "eur": 343.42,
-            "usd": 377.05,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:23:00.000Z",
-            "eur": 343.48,
-            "usd": 377.12,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:24:00.000Z",
-            "eur": 342.95,
-            "usd": 376.54,
-            "session": "regular"
-          },
-          {
             "t": "2026-11-19T19:25:00.000Z",
-            "eur": 343.34,
-            "usd": 376.96,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:26:00.000Z",
-            "eur": 344,
-            "usd": 377.69,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:27:00.000Z",
-            "eur": 344.56,
-            "usd": 378.3,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:28:00.000Z",
-            "eur": 344.29,
-            "usd": 378.01,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:29:00.000Z",
-            "eur": 344.27,
-            "usd": 377.99,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:30:00.000Z",
-            "eur": 344.1,
-            "usd": 377.8,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:31:00.000Z",
-            "eur": 343.86,
-            "usd": 377.54,
+            "eur": 343.25,
             "session": "regular"
           },
           {
             "t": "2026-11-19T19:32:00.000Z",
-            "eur": 344.2,
-            "usd": 377.91,
+            "eur": 344.4,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:33:00.000Z",
-            "eur": 344.43,
-            "usd": 378.16,
+            "t": "2026-11-19T19:35:00.000Z",
+            "eur": 344.05,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:34:00.000Z",
-            "eur": 344.34,
-            "usd": 378.06,
+            "t": "2026-11-19T19:40:00.000Z",
+            "eur": 343.6,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T19:48:00.000Z",
+            "eur": 343.9,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T19:50:00.000Z",
+            "eur": 343.75,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T19:55:00.000Z",
+            "eur": 343.25,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T19:56:00.000Z",
+            "eur": 343.1,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:04:00.000Z",
+            "eur": 341.45,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:05:00.000Z",
+            "eur": 341.45,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:10:00.000Z",
+            "eur": 342,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:17:00.000Z",
+            "eur": 342.2,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:20:00.000Z",
+            "eur": 342.4,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:25:00.000Z",
+            "eur": 342.45,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:33:00.000Z",
+            "eur": 341.4,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:35:00.000Z",
+            "eur": 341.4,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:40:00.000Z",
+            "eur": 341.75,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:47:00.000Z",
+            "eur": 342,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:49:00.000Z",
+            "eur": 342.6,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:50:00.000Z",
+            "eur": 343,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:55:00.000Z",
+            "eur": 341.55,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:56:00.000Z",
+            "eur": 341.85,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:57:00.000Z",
+            "eur": 341.21,
+            "usd": 374.38,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:58:00.000Z",
+            "eur": 341.03,
+            "usd": 374.18,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:59:00.000Z",
+            "eur": 341.3,
+            "usd": 374.48,
             "session": "regular"
           }
         ],
@@ -10135,7 +10145,7 @@
             "open": 347.6,
             "high": 347.6,
             "low": 347.6,
-            "session": "post"
+            "session": "regular"
           }
         ],
         "4H": [
@@ -15565,13 +15575,6 @@
             "open": 350,
             "high": 353.3,
             "low": 345.9
-          },
-          {
-            "t": "2026-11-19T08:00:00.000Z",
-            "eur": 347.6,
-            "open": 353.55,
-            "high": 357.7,
-            "low": 344.85
           }
         ],
         "6M": [
@@ -16498,13 +16501,6 @@
             "open": 350,
             "high": 353.3,
             "low": 345.9
-          },
-          {
-            "t": "2026-11-19T08:00:00.000Z",
-            "eur": 347.6,
-            "open": 353.55,
-            "high": 357.7,
-            "low": 344.85
           }
         ],
         "1Y": [
@@ -18278,13 +18274,6 @@
             "open": 350,
             "high": 353.3,
             "low": 345.9
-          },
-          {
-            "t": "2026-11-19T08:00:00.000Z",
-            "eur": 347.6,
-            "open": 353.55,
-            "high": 357.7,
-            "low": 344.85
           }
         ],
         "5Y": [
@@ -20177,8 +20166,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/TSLA/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance TL0.SG",
-          "url": "https://finance.yahoo.com/quote/TL0.SG"
+          "title": "Yahoo Finance TL0.DE",
+          "url": "https://finance.yahoo.com/quote/TL0.DE"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -20190,11 +20179,11 @@
         }
       ],
       "fetchError": null,
-      "overnightPhase": "us",
-      "overnightEur": 344.35,
-      "overnightHighEur": 358.27,
-      "overnightLowEur": 337.8,
-      "overnightAsOf": "2026-11-19T19:34:59.000Z",
+      "overnightPhase": "nachhandel",
+      "overnightEur": 348.64,
+      "overnightHighEur": 348.64,
+      "overnightLowEur": 348.64,
+      "overnightAsOf": "2026-11-18T21:10:00.000Z",
       "source": "alpaca-iex"
     },
     {
@@ -20206,52 +20195,52 @@
       "example": false,
       "narrativeExample": false,
       "stale": false,
-      "priceEur": 46.7,
-      "priceUsd": 51.45,
-      "previousCloseEur": 48.5,
-      "changeEur": -1.8,
-      "changePct": -3.71,
-      "dayHighEur": 51.3,
-      "dayLowEur": 46.55,
+      "priceEur": 47.2,
+      "priceUsd": 50.98,
+      "previousCloseEur": 50,
+      "changeEur": -2.8,
+      "changePct": -5.6,
+      "dayHighEur": 50.4,
+      "dayLowEur": 45.8,
       "eurMethod": "direct_eur",
-      "eurVenue": "Stuttgart",
-      "eurSymbol": "6RJ0.SG",
+      "eurVenue": "Frankfurt",
+      "eurSymbol": "6RJ0.F",
       "usdSymbol": "RKLB",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.0979,
+      "fxRate": 1.0972,
       "sparkline": [
         49.5,
-        50.3,
         49.5,
         49.5,
+        49.85,
         49.95,
         49.75,
-        49.7,
+        50,
         50.1,
+        50.2,
         50.2,
         50.4,
         50.7,
-        50.5,
+        50.6,
         50.5,
         50.4,
-        50.4,
+        49.95,
         50.2,
-        48.85,
-        47.75,
+        51.3,
+        48,
+        47.4,
+        47.85,
         47.8,
-        47.95,
-        45.8,
-        46.95,
+        47.5,
+        46.8,
         47,
-        46.75,
-        46.62,
-        46.61,
-        46.76,
-        46.66,
-        46.98,
-        46.85,
-        46.83,
-        46.86
+        46.55,
+        46.8,
+        46.3,
+        47.2,
+        46.5,
+        46.36,
+        46.46
       ],
       "history": {
         "intraday": [
@@ -20262,11 +20251,6 @@
           },
           {
             "t": "2026-11-19T07:05:00.000Z",
-            "eur": 50.3,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T07:05:53.000Z",
             "eur": 50.3,
             "session": "regular"
           },
@@ -20506,11 +20490,6 @@
             "session": "regular"
           },
           {
-            "t": "2026-11-19T17:07:55.000Z",
-            "eur": 45.8,
-            "session": "regular"
-          },
-          {
             "t": "2026-11-19T17:31:00.000Z",
             "eur": 47.5,
             "session": "regular"
@@ -20551,116 +20530,72 @@
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:16:09.000Z",
+            "t": "2026-11-19T19:16:00.000Z",
             "eur": 46.7,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:17:00.000Z",
-            "eur": 46.62,
-            "usd": 51.19,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:18:00.000Z",
-            "eur": 46.6,
-            "usd": 51.17,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:19:00.000Z",
-            "eur": 46.61,
-            "usd": 51.17,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:20:00.000Z",
-            "eur": 46.65,
-            "usd": 51.22,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:21:00.000Z",
-            "eur": 46.74,
-            "usd": 51.32,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:22:00.000Z",
-            "eur": 46.76,
-            "usd": 51.34,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:23:00.000Z",
-            "eur": 46.82,
-            "usd": 51.41,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:24:00.000Z",
-            "eur": 46.66,
-            "usd": 51.24,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:25:00.000Z",
-            "eur": 46.77,
-            "usd": 51.35,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:26:00.000Z",
-            "eur": 46.88,
-            "usd": 51.48,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:28:00.000Z",
-            "eur": 46.98,
-            "usd": 51.58,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:29:00.000Z",
-            "eur": 46.89,
-            "usd": 51.49,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:30:00.000Z",
-            "eur": 46.85,
-            "usd": 51.44,
-            "session": "regular"
-          },
-          {
             "t": "2026-11-19T19:31:00.000Z",
-            "eur": 46.76,
-            "usd": 51.34,
+            "eur": 46.8,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:32:00.000Z",
-            "eur": 46.83,
-            "usd": 51.42,
+            "t": "2026-11-19T19:46:00.000Z",
+            "eur": 46.7,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:33:00.000Z",
-            "eur": 46.83,
-            "usd": 51.42,
+            "t": "2026-11-19T20:01:00.000Z",
+            "eur": 46.3,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:34:00.000Z",
-            "eur": 46.78,
-            "usd": 51.37,
+            "t": "2026-11-19T20:16:00.000Z",
+            "eur": 46.3,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:35:00.000Z",
-            "eur": 46.86,
-            "usd": 51.45,
+            "t": "2026-11-19T20:21:00.000Z",
+            "eur": 47.2,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:31:00.000Z",
+            "eur": 46.05,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:46:00.000Z",
+            "eur": 46.6,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:55:00.000Z",
+            "eur": 46.5,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:56:00.000Z",
+            "eur": 46.46,
+            "usd": 50.98,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:57:00.000Z",
+            "eur": 46.36,
+            "usd": 50.87,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:58:00.000Z",
+            "eur": 46.35,
+            "usd": 50.85,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:59:00.000Z",
+            "eur": 46.46,
+            "usd": 50.98,
             "session": "regular"
           }
         ],
@@ -20820,11 +20755,11 @@
             "low": 45.8
           },
           {
-            "t": "2026-11-19T17:07:55.000Z",
-            "eur": 45.8,
-            "open": 45.8,
-            "high": 45.8,
-            "low": 45.8
+            "t": "2026-11-19T20:20:00.000Z",
+            "eur": 47.2,
+            "open": 47.2,
+            "high": 47.2,
+            "low": 47.2
           }
         ],
         "1H": [
@@ -21413,11 +21348,11 @@
             "session": "regular"
           },
           {
-            "t": "2026-11-19T17:07:55.000Z",
-            "eur": 45.8,
-            "open": 45.8,
-            "high": 45.8,
-            "low": 45.8,
+            "t": "2026-11-19T20:00:00.000Z",
+            "eur": 47.2,
+            "open": 47.2,
+            "high": 47.2,
+            "low": 47.2,
             "session": "regular"
           }
         ],
@@ -27847,6 +27782,13 @@
             "open": 47.8,
             "high": 47.8,
             "low": 45.8
+          },
+          {
+            "t": "2026-11-19T20:00:00.000Z",
+            "eur": 47.2,
+            "open": 47.2,
+            "high": 47.2,
+            "low": 47.2
           }
         ],
         "1M": [
@@ -28010,13 +27952,6 @@
             "open": 51.6,
             "high": 52.1,
             "low": 47.75
-          },
-          {
-            "t": "2026-11-19T07:00:00.000Z",
-            "eur": 45.8,
-            "open": 49.75,
-            "high": 50.4,
-            "low": 45.8
           }
         ],
         "6M": [
@@ -28943,13 +28878,6 @@
             "open": 51.6,
             "high": 52.1,
             "low": 47.75
-          },
-          {
-            "t": "2026-11-19T07:00:00.000Z",
-            "eur": 45.8,
-            "open": 49.75,
-            "high": 50.4,
-            "low": 45.8
           }
         ],
         "1Y": [
@@ -30723,13 +30651,6 @@
             "open": 51.6,
             "high": 52.1,
             "low": 47.75
-          },
-          {
-            "t": "2026-11-19T07:00:00.000Z",
-            "eur": 45.8,
-            "open": 49.75,
-            "high": 50.4,
-            "low": 45.8
           }
         ],
         "5Y": [
@@ -31700,8 +31621,8 @@
             "low": 47.75
           },
           {
-            "t": "2026-11-19T17:07:55.000Z",
-            "eur": 45.8,
+            "t": "2026-11-19T20:21:53.000Z",
+            "eur": 47.2,
             "open": 49.75,
             "high": 50.4,
             "low": 45.8
@@ -31754,8 +31675,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/RKLB/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance 6RJ0.SG",
-          "url": "https://finance.yahoo.com/quote/6RJ0.SG"
+          "title": "Yahoo Finance 6RJ0.F",
+          "url": "https://finance.yahoo.com/quote/6RJ0.F"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -31767,11 +31688,11 @@
         }
       ],
       "fetchError": null,
-      "overnightPhase": null,
-      "overnightEur": null,
-      "overnightHighEur": null,
-      "overnightLowEur": null,
-      "overnightAsOf": null,
+      "overnightPhase": "nachhandel",
+      "overnightEur": 47.88,
+      "overnightHighEur": 47.88,
+      "overnightLowEur": 47.88,
+      "overnightAsOf": "2026-11-18T21:05:00.000Z",
       "source": "alpaca-iex"
     },
     {
@@ -31780,25 +31701,25 @@
       "role": "Halbleiter",
       "venue": "Nasdaq",
       "currency": "EUR",
-      "priceEur": 129.24,
-      "priceUsd": 142.57,
-      "previousCloseEur": 132.34,
-      "changeEur": -3.1,
-      "changePct": -2.34,
-      "dayHighEur": 139.18,
-      "dayLowEur": 128.72,
-      "overnightPhase": "us",
-      "overnightEur": 129.86,
-      "overnightHighEur": 140.7,
-      "overnightLowEur": 127.83,
-      "overnightAsOf": "2026-11-19T19:35:47.000Z",
+      "priceEur": 134.88,
+      "priceUsd": 138.45,
+      "previousCloseEur": 130.16,
+      "changeEur": 4.72,
+      "changePct": 3.63,
+      "dayHighEur": 140,
+      "dayLowEur": 132.34,
+      "overnightPhase": "nachhandel",
+      "overnightEur": 126.1,
+      "overnightHighEur": 131.65,
+      "overnightLowEur": 125.04,
+      "overnightAsOf": "2026-11-19T21:59:00.000Z",
       "eurMethod": "direct_eur",
-      "eurVenue": "Stuttgart",
-      "eurSymbol": "9MW.SG",
+      "eurVenue": "Xetra",
+      "eurSymbol": "9MW.DE",
       "usdSymbol": "MRVL",
       "source": "alpaca-iex",
       "intradayMethod": "direct_eur_plus_us",
-      "fxRate": 1.0979,
+      "fxRate": 1.0972,
       "sparkline": [
         137.28,
         137,
@@ -31816,22 +31737,22 @@
         137.18,
         137.04,
         137.38,
-        137.66,
-        137.54,
-        139.02,
-        138.72,
-        138.82,
-        136.1,
-        132.78,
-        133.12,
-        134.78,
-        134.86,
-        128.52,
+        137.6,
+        137.78,
+        137.3,
+        139.4,
+        139.9,
+        137.14,
+        133.02,
+        132.96,
+        134.94,
+        135.22,
+        132,
         129.46,
-        129.21,
-        129.32,
-        130.14,
-        129.85
+        129.52,
+        126.74,
+        126.18,
+        126.1
       ],
       "history": {
         "intraday": [
@@ -32491,11 +32412,6 @@
             "session": "regular"
           },
           {
-            "t": "2026-11-19T17:19:28.000Z",
-            "eur": 128.52,
-            "session": "regular"
-          },
-          {
             "t": "2026-11-19T17:46:00.000Z",
             "eur": 129.58,
             "session": "regular"
@@ -32526,111 +32442,103 @@
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:16:03.000Z",
+            "t": "2026-11-19T19:16:00.000Z",
             "eur": 129.24,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:17:00.000Z",
-            "eur": 129.09,
-            "usd": 141.73,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:18:00.000Z",
-            "eur": 129.21,
-            "usd": 141.86,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:19:00.000Z",
-            "eur": 128.94,
-            "usd": 141.57,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:20:00.000Z",
-            "eur": 129.12,
-            "usd": 141.77,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:21:00.000Z",
-            "eur": 129.37,
-            "usd": 142.04,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:24:00.000Z",
-            "eur": 129.27,
-            "usd": 141.93,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:25:00.000Z",
-            "eur": 129.32,
-            "usd": 141.98,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:26:00.000Z",
-            "eur": 130.02,
-            "usd": 142.75,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:27:00.000Z",
-            "eur": 130.24,
-            "usd": 143,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:28:00.000Z",
-            "eur": 130.26,
-            "usd": 143.02,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:29:00.000Z",
-            "eur": 130.07,
-            "usd": 142.81,
-            "session": "regular"
-          },
-          {
-            "t": "2026-11-19T19:30:00.000Z",
-            "eur": 130.14,
-            "usd": 142.88,
-            "session": "regular"
-          },
-          {
             "t": "2026-11-19T19:31:00.000Z",
-            "eur": 129.76,
-            "usd": 142.47,
+            "eur": 129.78,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:32:00.000Z",
-            "eur": 130.1,
-            "usd": 142.84,
+            "t": "2026-11-19T19:46:00.000Z",
+            "eur": 129.52,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:33:00.000Z",
-            "eur": 129.9,
-            "usd": 142.63,
+            "t": "2026-11-19T20:01:00.000Z",
+            "eur": 127.54,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:34:00.000Z",
-            "eur": 129.91,
-            "usd": 142.63,
+            "t": "2026-11-19T20:16:00.000Z",
+            "eur": 127.26,
             "session": "regular"
           },
           {
-            "t": "2026-11-19T19:35:00.000Z",
-            "eur": 129.85,
-            "usd": 142.57,
+            "t": "2026-11-19T20:31:00.000Z",
+            "eur": 127.06,
             "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:46:00.000Z",
+            "eur": 127.5,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:49:00.000Z",
+            "eur": 126.74,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:55:00.000Z",
+            "eur": 127.12,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:56:00.000Z",
+            "eur": 127.02,
+            "usd": 139.37,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:57:00.000Z",
+            "eur": 126.76,
+            "usd": 139.08,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:58:00.000Z",
+            "eur": 126.4,
+            "usd": 138.69,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T20:59:00.000Z",
+            "eur": 126.18,
+            "usd": 138.45,
+            "session": "regular"
+          },
+          {
+            "t": "2026-11-19T21:05:00.000Z",
+            "eur": 126.05,
+            "usd": 138.3,
+            "session": "post"
+          },
+          {
+            "t": "2026-11-19T21:25:00.000Z",
+            "eur": 125.63,
+            "usd": 137.84,
+            "session": "post"
+          },
+          {
+            "t": "2026-11-19T21:42:00.000Z",
+            "eur": 125.08,
+            "usd": 137.24,
+            "session": "post"
+          },
+          {
+            "t": "2026-11-19T21:50:00.000Z",
+            "eur": 125.04,
+            "usd": 137.19,
+            "session": "post"
+          },
+          {
+            "t": "2026-11-19T21:59:00.000Z",
+            "eur": 126.1,
+            "usd": 138.36,
+            "session": "post"
           }
         ],
         "5m": [
@@ -34874,7 +34782,7 @@
             "open": 134.88,
             "high": 134.88,
             "low": 134.88,
-            "session": "post"
+            "session": "regular"
           }
         ],
         "4H": [
@@ -40269,13 +40177,6 @@
             "open": 141.08,
             "high": 142.08,
             "low": 130.76
-          },
-          {
-            "t": "2026-11-19T08:00:00.000Z",
-            "eur": 134.88,
-            "open": 137.1,
-            "high": 140,
-            "low": 132.34
           }
         ],
         "6M": [
@@ -41202,13 +41103,6 @@
             "open": 141.08,
             "high": 142.08,
             "low": 130.76
-          },
-          {
-            "t": "2026-11-19T08:00:00.000Z",
-            "eur": 134.88,
-            "open": 137.1,
-            "high": 140,
-            "low": 132.34
           }
         ],
         "1Y": [
@@ -42982,13 +42876,6 @@
             "open": 141.08,
             "high": 142.08,
             "low": 130.76
-          },
-          {
-            "t": "2026-11-19T08:00:00.000Z",
-            "eur": 134.88,
-            "open": 137.1,
-            "high": 140,
-            "low": 132.34
           }
         ],
         "5Y": [
@@ -44097,8 +43984,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/MRVL/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance 9MW.SG",
-          "url": "https://finance.yahoo.com/quote/9MW.SG"
+          "title": "Yahoo Finance 9MW.DE",
+          "url": "https://finance.yahoo.com/quote/9MW.DE"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
