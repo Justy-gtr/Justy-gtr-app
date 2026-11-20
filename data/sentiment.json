@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T21:05:00+01:00",
+  "updatedAt": "2026-11-20T21:38:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -15,
+      "score": -20,
       "postsCount": 25,
-      "reason": "Der Ton wird etwas freundlicher: SpaceX macht kein neues Tagestief, während andere weiter fallen. Jim Chanos stellt die Fusion mit Tesla offen infrage.",
+      "reason": "Fans finden, SpaceX werde zu Unrecht wie eine KI-Aktie abgestraft, Starlink werde übersehen. Nvidia fällt heute sogar stärker, rund 13 %.",
       "sources": [
         {
-          "title": "@MentoviaX auf X (20.11., 20:52)",
-          "url": "https://x.com/MentoviaX/status/2123866992432099404"
+          "title": "@spcxGOD auf X (20.11., 21:08)",
+          "url": "https://x.com/spcxGOD/status/2123870999099650454"
         },
         {
-          "title": "@RealJimChanos auf X (20.11., 21:01)",
-          "url": "https://x.com/RealJimChanos/status/2123869439439294914"
+          "title": "@spcxGOD auf X (20.11., 21:18)",
+          "url": "https://x.com/spcxGOD/status/2123873531393888653"
         },
         {
-          "title": "@NullFUD auf X (20.11., 20:55)",
-          "url": "https://x.com/NullFUD/status/2123867803820400843"
+          "title": "@ElliottWaveSage auf X (20.11., 21:05)",
+          "url": "https://x.com/ElliottWaveSage/status/2123870339771879774"
         }
       ],
-      "updatedAt": "2026-11-20T21:05:00+01:00"
+      "updatedAt": "2026-11-20T21:38:00+01:00"
     },
     "TSLA": {
-      "mood": "gemischt",
-      "score": -10,
+      "mood": "schlecht",
+      "score": -25,
       "postsCount": 25,
-      "reason": "Nach dem Rutsch auf rund 348 $ sprechen viele von einem Einstiegsmoment und hoffen auf Erholung im Dezember. Andere rechnen weiter mit deutlich tieferen Kursen.",
+      "reason": "Viele sprechen von einem brutalen Tag, Tesla wird mit dem ganzen Tech-Sektor nach unten gezogen. Einige sehen alles im Rabatt, andere erwarten noch rund 300 $.",
       "sources": [
         {
-          "title": "@MallSeth auf X (20.11., 20:41)",
-          "url": "https://x.com/MallSeth/status/2123864290033840212"
+          "title": "@GrindeOptions auf X (20.11., 21:07)",
+          "url": "https://x.com/GrindeOptions/status/2123870846859289005"
         },
         {
-          "title": "@RicochetRowdy auf X (20.11., 20:59)",
-          "url": "https://x.com/RicochetRowdy/status/2123868764127277092"
+          "title": "@ghostlifestyle_ auf X (20.11., 21:04)",
+          "url": "https://x.com/ghostlifestyle_/status/2123870074897596861"
         },
         {
-          "title": "@j_dtrading auf X (20.11., 20:51)",
-          "url": "https://x.com/j_dtrading/status/2123866742510202991"
+          "title": "@MrStealth27 auf X (20.11., 21:23)",
+          "url": "https://x.com/MrStealth27/status/2123874897176973719"
         }
       ],
-      "updatedAt": "2026-11-20T21:05:00+01:00"
+      "updatedAt": "2026-11-20T21:38:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
-      "score": -30,
-      "postsCount": 25,
-      "reason": "Der Kurs bleibt schwach, Fans betonen aber, dass es der Firma besser geht als je zuvor. Neu: Rocket Lab hat über 1.000 Rutherford-Triebwerke ausgeliefert.",
+      "score": -45,
+      "postsCount": 23,
+      "reason": "Rocket Lab liegt zum Handelsende über 10 % im Minus, Fans sind ratlos, warum es so stark fällt. Nur wenige sehen schon eine Chance zum Einstieg.",
       "sources": [
         {
-          "title": "@TeslaIsTheWay auf X (20.11., 20:07)",
-          "url": "https://x.com/TeslaIsTheWay/status/2123855648609980758"
+          "title": "@MarkHubbard33 auf X (20.11., 21:04)",
+          "url": "https://x.com/MarkHubbard33/status/2123870170531971245"
         },
         {
-          "title": "@real_sunny_long auf X (20.11., 20:23)",
-          "url": "https://x.com/real_sunny_long/status/2123859708641444278"
+          "title": "@LizWhistle auf X (20.11., 21:05)",
+          "url": "https://x.com/LizWhistle/status/2123870257484112049"
         },
         {
-          "title": "@GMGoz1x auf X (20.11., 20:06)",
-          "url": "https://x.com/GMGoz1x/status/2123855418413719814"
+          "title": "@DrSzky auf X (20.11., 21:25)",
+          "url": "https://x.com/DrSzky/status/2123875408881852719"
         }
       ],
-      "updatedAt": "2026-11-20T21:05:00+01:00"
+      "updatedAt": "2026-11-20T21:38:00+01:00"
     }
   }
 }
