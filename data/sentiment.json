@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T20:05:00+01:00",
+  "updatedAt": "2026-11-20T20:37:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
-      "score": -40,
+      "score": -45,
       "postsCount": 25,
-      "reason": "SpaceX bleibt im Minus, hält sich aber besser als andere Raumfahrtwerte. Thema: Druckenmillers Family Office ist neu bei SpaceX eingestiegen.",
+      "reason": "Auf X ist von einer platzenden KI-Blase die Rede: SpaceX rund −7 %. Viele schieben es auf Kreditgeber, die Musks Pläne für KI-Chips im All skeptisch sehen.",
       "sources": [
         {
-          "title": "@VistaPResearch auf X (20.11., 19:49)",
-          "url": "https://x.com/VistaPResearch/status/2123851279718076594"
+          "title": "@joinautopilot auf X (20.11., 20:34)",
+          "url": "https://x.com/joinautopilot/status/2123862617316003959"
         },
         {
-          "title": "@hout1213 auf X (20.11., 19:40)",
-          "url": "https://x.com/hout1213/status/2123849075221221592"
+          "title": "@spcxGOD auf X (20.11., 20:08)",
+          "url": "https://x.com/spcxGOD/status/2123855898833764734"
         },
         {
-          "title": "@OSPigment auf X (20.11., 19:54)",
-          "url": "https://x.com/OSPigment/status/2123852506556219574"
+          "title": "@Andrew_Moser auf X (20.11., 20:07)",
+          "url": "https://x.com/Andrew_Moser/status/2123855797042184510"
         }
       ],
-      "updatedAt": "2026-11-20T20:05:00+01:00"
+      "updatedAt": "2026-11-20T20:37:00+01:00"
     },
     "TSLA": {
       "mood": "schlecht",
       "score": -35,
       "postsCount": 25,
-      "reason": "Tesla fällt heute stärker als SpaceX. Einige nennen es eine gesunde Bereinigung, Trader wetten in beide Richtungen; die HSBC-Hochstufung verpufft.",
+      "reason": "Trader sehen einen sehr schwachen Markt, Tesla kommt nicht aus der Spanne. Gesprächsthema: Brad Gerstner hat laut Q3-Meldung für 680 Mio. $ Tesla-Aktien geholt.",
       "sources": [
         {
-          "title": "@DontheConDrumpf auf X (20.11., 19:58)",
-          "url": "https://x.com/DontheConDrumpf/status/2123853509502370251"
+          "title": "@ChrisHuRocks auf X (20.11., 20:12)",
+          "url": "https://x.com/ChrisHuRocks/status/2123856999439900811"
         },
         {
-          "title": "@michaelm272 auf X (20.11., 19:35)",
-          "url": "https://x.com/michaelm272/status/2123847729767952889"
+          "title": "@LukeBruni17 auf X (20.11., 20:07)",
+          "url": "https://x.com/LukeBruni17/status/2123855647049417121"
         },
         {
-          "title": "@squawk_hawk auf X (20.11., 19:39)",
-          "url": "https://x.com/squawk_hawk/status/2123848722996211935"
+          "title": "@daltonbrewer auf X (20.11., 20:19)",
+          "url": "https://x.com/daltonbrewer/status/2123858775937290660"
         }
       ],
-      "updatedAt": "2026-11-20T20:05:00+01:00"
+      "updatedAt": "2026-11-20T20:37:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
       "score": -30,
-      "postsCount": 24,
-      "reason": "Raumfahrtwerte haben eine harte Woche, Rocket Lab ist mit unten. Viele Fans ziehen Rocket Lab AST SpaceMobile vor und erwarten eine Erholung.",
+      "postsCount": 25,
+      "reason": "Der Kurs bleibt schwach, Fans betonen aber, dass es der Firma besser geht als je zuvor. Neu: Rocket Lab hat über 1.000 Rutherford-Triebwerke ausgeliefert.",
       "sources": [
         {
-          "title": "@hout1213 auf X (20.11., 19:40)",
-          "url": "https://x.com/hout1213/status/2123849075221221592"
+          "title": "@TeslaIsTheWay auf X (20.11., 20:07)",
+          "url": "https://x.com/TeslaIsTheWay/status/2123855648609980758"
         },
         {
-          "title": "@jbfinancebull auf X (20.11., 19:49)",
-          "url": "https://x.com/jbfinancebull/status/2123851257861558599"
+          "title": "@real_sunny_long auf X (20.11., 20:23)",
+          "url": "https://x.com/real_sunny_long/status/2123859708641444278"
         },
         {
-          "title": "@Stealthct_Storm auf X (20.11., 19:51)",
-          "url": "https://x.com/Stealthct_Storm/status/2123851654910898190"
+          "title": "@GMGoz1x auf X (20.11., 20:06)",
+          "url": "https://x.com/GMGoz1x/status/2123855418413719814"
         }
       ],
-      "updatedAt": "2026-11-20T20:05:00+01:00"
+      "updatedAt": "2026-11-20T20:37:00+01:00"
     }
   }
 }
