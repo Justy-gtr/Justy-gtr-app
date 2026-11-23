@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T15:39:00+01:00",
+  "updatedAt": "2026-11-23T16:04:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 60,
+      "score": 65,
       "postsCount": 25,
-      "reason": "Zur US-Eröffnung feiern Fans SpaceX: Posts melden bis zu 10 % Plus und über 136 $, der Freitags-Rutsch sei fast aufgeholt. Jefferies-Ziel 210 $ bleibt Thema.",
+      "reason": "SpaceX springt rund 10 % auf etwa 140 $, weil der KI-Handel zurückkommt und Nvidia stark steigt. Nebenbei Thema: Klage von Oregon und Virginia.",
       "sources": [
         {
-          "title": "@TraderGillx auf X (23.11., 15:36)",
-          "url": "https://x.com/TraderGillx/status/2124874635795730732"
+          "title": "@gonta_southwood auf X (23.11., 15:47)",
+          "url": "https://x.com/gonta_southwood/status/2124877426690068552"
         },
         {
-          "title": "@spcxGOD auf X (23.11., 15:15)",
-          "url": "https://x.com/spcxGOD/status/2124869326910246938"
+          "title": "@Napoleon__Bon auf X (23.11., 15:38)",
+          "url": "https://x.com/Napoleon__Bon/status/2124875117113307194"
         },
         {
-          "title": "@herbertong auf X (23.11., 15:33)",
-          "url": "https://x.com/herbertong/status/2124873856594956696"
+          "title": "@capitalsnitch auf X (23.11., 15:38)",
+          "url": "https://x.com/capitalsnitch/status/2124875177645277457"
         }
       ],
-      "updatedAt": "2026-11-23T15:39:00+01:00"
+      "updatedAt": "2026-11-23T16:04:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 60,
       "postsCount": 25,
-      "reason": "Tesla zieht kräftig an, Posts nennen 8 bis 12 % Plus nach dem Minus vom Freitag. Viel Lob für FSD V15, Skeptiker zweifeln an einem Fusionsaufschlag.",
+      "reason": "Tesla steigt rund 12 % auf etwa 386 $. Chartleser achten auf 377 und 386 $, einige Skeptiker sehen eine Fusion mit SpaceX als Nachteil für Tesla-Aktionäre.",
       "sources": [
         {
-          "title": "@Genz_anxiety auf X (23.11., 15:37)",
-          "url": "https://x.com/Genz_anxiety/status/2124874864058417279"
+          "title": "@ProjectionsLab auf X (23.11., 15:42)",
+          "url": "https://x.com/ProjectionsLab/status/2124876170420257271"
         },
         {
-          "title": "@vureality auf X (23.11., 15:29)",
-          "url": "https://x.com/vureality/status/2124872958892225016"
+          "title": "@MentoviaX auf X (23.11., 16:00)",
+          "url": "https://x.com/MentoviaX/status/2124880714290139497"
         },
         {
-          "title": "@RobinC663043 auf X (23.11., 15:04)",
-          "url": "https://x.com/RobinC663043/status/2124866808675242414"
+          "title": "@OutsideChanges auf X (23.11., 15:51)",
+          "url": "https://x.com/OutsideChanges/status/2124878449592438831"
         }
       ],
-      "updatedAt": "2026-11-23T15:39:00+01:00"
+      "updatedAt": "2026-11-23T16:04:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 45,
-      "postsCount": 24,
-      "reason": "Wenig Neues zu Rocket Lab, viele Spam-Listen. Ein gehebelter RKLB-ETF wurde zur Eröffnung kurz angehalten, Fans bleiben zuversichtlich.",
+      "score": 55,
+      "postsCount": 25,
+      "reason": "Rocket Lab legt über 10 % zu, Raumfahrtwerte sind breit im Plus. Einige mahnen, Neutron-Bestellanfragen seien noch keine festen Aufträge.",
       "sources": [
         {
-          "title": "@ShortSideIO auf X (23.11., 15:32)",
-          "url": "https://x.com/ShortSideIO/status/2124873829986013456"
+          "title": "@TheTape_TNM auf X (23.11., 15:42)",
+          "url": "https://x.com/TheTape_TNM/status/2124876332957852034"
         },
         {
-          "title": "@SpaceSector001 auf X (23.11., 15:30)",
-          "url": "https://x.com/SpaceSector001/status/2124873273414439235"
+          "title": "@MartEnterprises auf X (23.11., 15:48)",
+          "url": "https://x.com/MartEnterprises/status/2124877832476303725"
         },
         {
-          "title": "@VeeveeVeronica auf X (23.11., 15:08)",
-          "url": "https://x.com/VeeveeVeronica/status/2124867617294831836"
+          "title": "@USMC2001DH auf X (23.11., 15:48)",
+          "url": "https://x.com/USMC2001DH/status/2124877859781046545"
         }
       ],
-      "updatedAt": "2026-11-23T15:39:00+01:00"
+      "updatedAt": "2026-11-23T16:04:00+01:00"
     }
   }
 }
