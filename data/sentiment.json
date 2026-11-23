@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T21:06:00+01:00",
+  "updatedAt": "2026-11-23T21:35:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 10,
+      "score": 15,
       "postsCount": 25,
-      "reason": "Der NYT-Bericht, SpaceX hinke bei KI hinterher, macht weiter die Runde. Fans feiern dagegen das Starship-Fangvideo, einige zweifeln am Konzernmix.",
+      "reason": "Der NYT-Bericht bleibt Thema: Laut Times verdient SpaceX seit Mai Milliarden pro Monat mit GPU-Miete an Anthropic und Google. Gerüchte über Klagen gelten als falsch.",
       "sources": [
+        {
+          "title": "@naumowf auf X (23.11., 21:32)",
+          "url": "https://x.com/naumowf/status/2124964430022943075"
+        },
         {
           "title": "@Investingcom auf X (23.11., 21:03)",
           "url": "https://x.com/Investingcom/status/2124957034831352182"
         },
         {
-          "title": "@Erdayastronaut auf X (23.11., 21:03)",
-          "url": "https://x.com/Erdayastronaut/status/2124957031048335553"
-        },
-        {
-          "title": "@jawnzilla auf X (23.11., 21:04)",
-          "url": "https://x.com/jawnzilla/status/2124957213110223018"
+          "title": "@SpaceNotJohn auf X (23.11., 21:33)",
+          "url": "https://x.com/SpaceNotJohn/status/2124964655760064599"
         }
       ],
-      "updatedAt": "2026-11-23T21:06:00+01:00"
+      "updatedAt": "2026-11-23T21:35:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 45,
+      "score": 35,
       "postsCount": 25,
-      "reason": "Ein Video zeigt einen Cybercab, der vor einem Unfall in Austin rechtzeitig stoppt. Dazu Freude über Starlink in jedem Tesla bis 2027 und neue Supercharger.",
+      "reason": "Fans teilen neue Optimus-Fotos aus der Zellfertigung. Deutsche Kritiker spotten über eine Tesla-Blase, ein Gerücht über Musks Umzug nach Florida gilt als falsch.",
       "sources": [
         {
-          "title": "@TodaysNewsco auf X (23.11., 21:04)",
-          "url": "https://x.com/TodaysNewsco/status/2124957279279854004"
+          "title": "@SERobinsonJr auf X (23.11., 21:33)",
+          "url": "https://x.com/SERobinsonJr/status/2124964482308796607"
         },
         {
-          "title": "@TeslaIsTheWay auf X (23.11., 21:03)",
-          "url": "https://x.com/TeslaIsTheWay/status/2124956988362891311"
+          "title": "@Der_Boersianer auf X (23.11., 21:32)",
+          "url": "https://x.com/Der_Boersianer/status/2124964412880564448"
         },
         {
-          "title": "@CyberMikeOG auf X (23.11., 21:04)",
-          "url": "https://x.com/CyberMikeOG/status/2124957349161148840"
+          "title": "@801010athlete auf X (23.11., 21:33)",
+          "url": "https://x.com/801010athlete/status/2124964489502089540"
         }
       ],
-      "updatedAt": "2026-11-23T21:06:00+01:00"
+      "updatedAt": "2026-11-23T21:35:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 15,
+      "score": 20,
       "postsCount": 25,
-      "reason": "Viel Spam. Fans reden über den ESCAPADE-Vorbeiflug an der Erde, Chartfans sehen dagegen eine Schulter-Kopf-Schulter-Formation im Tageschart.",
+      "reason": "Viel Spam. Das ESCAPADE-Erdbild von Rocket Lab kommt gut an, einige fürchten aber, dass RKLB mit fallendem SPCX-Kurs mit nach unten gezogen wird.",
       "sources": [
         {
-          "title": "@elteslaengineer auf X (23.11., 20:45)",
-          "url": "https://x.com/elteslaengineer/status/2124952574646255988"
+          "title": "@RocketLab auf X (23.11., 21:13)",
+          "url": "https://x.com/RocketLab/status/2124959481067180245"
         },
         {
-          "title": "@gregpower auf X (23.11., 20:35)",
-          "url": "https://x.com/gregpower/status/2124950026111824112"
+          "title": "@Mr_Leadfoot97 auf X (23.11., 21:10)",
+          "url": "https://x.com/Mr_Leadfoot97/status/2124958810439635257"
         },
         {
-          "title": "@TommasoGritti auf X (23.11., 20:53)",
-          "url": "https://x.com/TommasoGritti/status/2124954551547560193"
+          "title": "@Universelostcom auf X (23.11., 21:20)",
+          "url": "https://x.com/Universelostcom/status/2124961403131851183"
         }
       ],
-      "updatedAt": "2026-11-23T21:06:00+01:00"
+      "updatedAt": "2026-11-23T21:35:00+01:00"
     }
   }
 }
