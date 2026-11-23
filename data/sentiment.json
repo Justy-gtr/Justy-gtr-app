@@ -1,33 +1,33 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T18:40:00+01:00",
+  "updatedAt": "2026-11-23T19:10:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 20,
+      "score": 25,
       "postsCount": 24,
-      "reason": "Musks NYT-Aussage, SpaceX hinke bei KI hinterher, wird weiter geteilt. Dagegen: Bericht über 40-Mrd.-$-Nvidia-Chipdeal, Jefferies-Ziel 210 $ und ARK-Käufe.",
+      "reason": "Der Bericht über einen 40-Mrd.-$-Deal für Nvidia-Chips wird stark geteilt, dazu Lob für den Starship-Fang. Musks KI-Rückstand laut NYT dämpft weiter.",
       "sources": [
         {
           "title": "@Kalshi_Finance auf X (23.11., 18:14)",
           "url": "https://x.com/Kalshi_Finance/status/2124914373298704748"
         },
         {
-          "title": "@SpaceInvestor_D auf X (23.11., 18:14)",
-          "url": "https://x.com/SpaceInvestor_D/status/2124914575631896676"
+          "title": "@Timboo auf X (23.11., 19:04)",
+          "url": "https://x.com/Timboo/status/2124927125706932389"
         },
         {
-          "title": "@financialjuice auf X (23.11., 17:14)",
-          "url": "https://x.com/financialjuice/status/2124899506642956522"
+          "title": "@SpaceInvestor_D auf X (23.11., 18:14)",
+          "url": "https://x.com/SpaceInvestor_D/status/2124914575631896676"
         }
       ],
-      "updatedAt": "2026-11-23T18:40:00+01:00"
+      "updatedAt": "2026-11-23T19:10:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 50,
-      "postsCount": 23,
+      "postsCount": 24,
       "reason": "Tesla legt mit der KI-Erholung kräftig zu, dazu wird FSD v15 erwähnt. Viele hoffen, dass 400 $ hält, und spekulieren über einen Deal mit SpaceX.",
       "sources": [
         {
@@ -43,28 +43,28 @@
           "url": "https://x.com/grok/status/2124910251778420804"
         }
       ],
-      "updatedAt": "2026-11-23T18:40:00+01:00"
+      "updatedAt": "2026-11-23T19:10:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 30,
+      "score": 35,
       "postsCount": 25,
-      "reason": "Kaum echte News, viel Spam. Einige sehen Unterstützung im Chart und schwärmen von Neutron, andere finden Rocket Lab zu spekulativ und schwankend.",
+      "reason": "Viel Spam, aber auch Neues: Starcloud hat einen Start für Rechenzentren im All gebucht. Einige sehen Unterstützung im Chart, andere finden die Aktie zu spekulativ.",
       "sources": [
+        {
+          "title": "@BastianelliLore auf X (23.11., 18:45)",
+          "url": "https://x.com/BastianelliLore/status/2124922174658216431"
+        },
         {
           "title": "@HKIStrategies auf X (23.11., 18:14)",
           "url": "https://x.com/HKIStrategies/status/2124914503661891758"
         },
         {
-          "title": "@RCapitalX auf X (23.11., 17:07)",
-          "url": "https://x.com/RCapitalX/status/2124897698616926678"
-        },
-        {
-          "title": "@BrianCapital1 auf X (23.11., 18:12)",
-          "url": "https://x.com/BrianCapital1/status/2124914092788076776"
+          "title": "@FranciscoSpace5 auf X (23.11., 18:52)",
+          "url": "https://x.com/FranciscoSpace5/status/2124923966322327926"
         }
       ],
-      "updatedAt": "2026-11-23T18:40:00+01:00"
+      "updatedAt": "2026-11-23T19:10:00+01:00"
     }
   }
 }
