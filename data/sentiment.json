@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T15:06:00+01:00",
+  "updatedAt": "2026-11-23T15:39:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 45,
+      "score": 60,
       "postsCount": 25,
-      "reason": "Die Jefferies-Studie mit 210 $ Kursziel verbreitet sich stark, SpaceX vorbörslich knapp 3 % im Plus. Chartleser zweifeln, dazu Klage wegen KI-Bildern.",
+      "reason": "Zur US-Eröffnung feiern Fans SpaceX: Posts melden bis zu 10 % Plus und über 136 $, der Freitags-Rutsch sei fast aufgeholt. Jefferies-Ziel 210 $ bleibt Thema.",
       "sources": [
         {
-          "title": "@DeItaone auf X (23.11., 14:48)",
-          "url": "https://x.com/DeItaone/status/2124862759028273352"
+          "title": "@TraderGillx auf X (23.11., 15:36)",
+          "url": "https://x.com/TraderGillx/status/2124874635795730732"
         },
         {
-          "title": "@ChartWizardg auf X (23.11., 14:42)",
-          "url": "https://x.com/ChartWizardg/status/2124861022213202172"
+          "title": "@spcxGOD auf X (23.11., 15:15)",
+          "url": "https://x.com/spcxGOD/status/2124869326910246938"
         },
         {
-          "title": "@MarketsCapApp auf X (23.11., 14:43)",
-          "url": "https://x.com/MarketsCapApp/status/2124861375105118680"
+          "title": "@herbertong auf X (23.11., 15:33)",
+          "url": "https://x.com/herbertong/status/2124873856594956696"
         }
       ],
-      "updatedAt": "2026-11-23T15:06:00+01:00"
+      "updatedAt": "2026-11-23T15:39:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 50,
-      "postsCount": 24,
-      "reason": "Tesla vorbörslich knapp 5 % im Plus. Viel Gerede über eine Fusion mit SpaceX: Cathie Wood erwartet einen Aufschlag für Aktionäre, HSBC über 30 %.",
+      "score": 60,
+      "postsCount": 25,
+      "reason": "Tesla zieht kräftig an, Posts nennen 8 bis 12 % Plus nach dem Minus vom Freitag. Viel Lob für FSD V15, Skeptiker zweifeln an einem Fusionsaufschlag.",
       "sources": [
         {
-          "title": "@TSLAChangedLife auf X (23.11., 14:49)",
-          "url": "https://x.com/TSLAChangedLife/status/2124862880671805868"
+          "title": "@Genz_anxiety auf X (23.11., 15:37)",
+          "url": "https://x.com/Genz_anxiety/status/2124874864058417279"
         },
         {
-          "title": "@MKucala auf X (23.11., 14:50)",
-          "url": "https://x.com/MKucala/status/2124863247694061644"
+          "title": "@vureality auf X (23.11., 15:29)",
+          "url": "https://x.com/vureality/status/2124872958892225016"
         },
         {
-          "title": "@herbertong auf X (23.11., 14:42)",
-          "url": "https://x.com/herbertong/status/2124861022053781580"
+          "title": "@RobinC663043 auf X (23.11., 15:04)",
+          "url": "https://x.com/RobinC663043/status/2124866808675242414"
         }
       ],
-      "updatedAt": "2026-11-23T15:06:00+01:00"
+      "updatedAt": "2026-11-23T15:39:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 45,
       "postsCount": 24,
-      "reason": "Diskutiert wird die 27 % teurere Neutron-Rakete: Fans sehen echte Nachfrage, andere warten erst den ersten Flug und feste Aufträge ab.",
+      "reason": "Wenig Neues zu Rocket Lab, viele Spam-Listen. Ein gehebelter RKLB-ETF wurde zur Eröffnung kurz angehalten, Fans bleiben zuversichtlich.",
       "sources": [
         {
-          "title": "@QuantAlphaXXX auf X (23.11., 14:44)",
-          "url": "https://x.com/QuantAlphaXXX/status/2124861526976676138"
+          "title": "@ShortSideIO auf X (23.11., 15:32)",
+          "url": "https://x.com/ShortSideIO/status/2124873829986013456"
         },
         {
-          "title": "@JesseSchurmann auf X (23.11., 14:52)",
-          "url": "https://x.com/JesseSchurmann/status/2124863621054316657"
+          "title": "@SpaceSector001 auf X (23.11., 15:30)",
+          "url": "https://x.com/SpaceSector001/status/2124873273414439235"
         },
         {
-          "title": "@MariaMa29644110 auf X (23.11., 14:58)",
-          "url": "https://x.com/MariaMa29644110/status/2124865163002290592"
+          "title": "@VeeveeVeronica auf X (23.11., 15:08)",
+          "url": "https://x.com/VeeveeVeronica/status/2124867617294831836"
         }
       ],
-      "updatedAt": "2026-11-23T15:06:00+01:00"
+      "updatedAt": "2026-11-23T15:39:00+01:00"
     }
   }
 }
