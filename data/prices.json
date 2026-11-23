@@ -5459,31 +5459,39 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Mo 14:30: SPCX steht vorbörslich bei 131,72 $, 3,1 % über dem Freitagsschluss (127,79 $), aber weiter unter dem Ausgabepreis von 135 $ (Yahoo). Rückenwind gibt Jefferies: Start mit „Buy“ und Kursziel 210 $, 64 % über dem Freitagsschluss; 34 von 44 Analysten stufen SpaceX laut LSEG mit „Buy“ oder „Strong Buy“ ein (CNBC). Die Futures halten die Erholung: Nasdaq-100 +3,4 %, S&P 500 +2,6 % (CNBC, 14:08 Uhr). Gegenwind kommt von den Zinsen: Die zehnjährige US-Rendite steigt auf 4,96 %, Händler sehen zu 96 % eine Zinserhöhung im Dezember, heute um 22:00 Uhr spricht New-York-Fed-Chef Williams (CNBC, New York Fed). Die US-Kartellbehörde FTC hat die Übernahme von Mesh Optical vorzeitig freigegeben (AK&M).",
+      "why": "Stand Mo 16:20: SPCX steigt nach Handelsstart auf 139,61 $, 9,2 % über dem Freitagsschluss (127,79 $) und damit wieder über den Ausgabepreis von 135 $ (Yahoo). Hauptgrund ist die breite KI-Erholung: Nvidia hat Jensen Huang mit sofortiger Wirkung wieder als Chef eingesetzt, die Aktie springt rund 30 %, der Nasdaq eröffnet 7,3 % höher (Nvidia, Reuters, Investopedia). Barron's nennt zusätzlich Hoffnungen auf Geschäfte mit Tesla. Gegenwind: Virginia und Oregon verklagen SpaceX als erste US-Bundesstaaten wegen sexualisierter Grok-Bilder, auch von Kindern; sie fordern Strafen und Unterlassung (Reuters, CNBC). Jefferies hatte am Morgen mit „Buy“ und Kursziel 210 $ begonnen (CNBC). Heute 22:00 Uhr spricht New-York-Fed-Chef Williams.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX vorbörslich 131,72 $ (23.11., 14:30 Uhr)",
+          "title": "Yahoo Finance: SPCX 23.11., 16:22 Uhr",
           "url": "https://finance.yahoo.com/quote/SPCX/"
+        },
+        {
+          "title": "Nvidia: Verwaltungsrat setzt Jensen Huang wieder als Chef ein (23.11.)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+        },
+        {
+          "title": "Reuters via Investing.com: Wall Street eröffnet deutlich höher nach Huangs Rückkehr (23.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-opens-sharply-higher-after-nvidia-reinstates-jensen-huang-as-ceo-5045900"
+        },
+        {
+          "title": "Investopedia: Nvidia +30 % nach Huangs Rückkehr, Nasdaq +6 % (Live, 23.11.)",
+          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11232026-12274147"
+        },
+        {
+          "title": "Barron's: SpaceX-Aktie springt, das Gute überwiegt heute (23.11.)",
+          "url": "https://www.barrons.com/articles/spacex-stock-musk-starlink-tesla-merger-4fa1b482"
+        },
+        {
+          "title": "Reuters via Investing.com: Virginia und Oregon verklagen SpaceX wegen Grok-Bildern (23.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/virginia-oregon-sue-musks-spacex-over-grok-ais-creation-of-child-sexual-abuse-images-and-videos-5045239"
+        },
+        {
+          "title": "CNBC: Zwei Bundesstaaten verklagen SpaceX wegen Grok-Deepfakes (23.11.)",
+          "url": "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html"
         },
         {
           "title": "CNBC: Jefferies startet SpaceX mit „Buy“, Kursziel 210 $ (23.11.)",
           "url": "https://www.cnbc.com/2026/11/23/spacex-jefferies-buy-price-target.html"
-        },
-        {
-          "title": "CNBC: Nasdaq-100-Futures +3,4 % nach Tech-Ausverkauf (Live, 23.11. 14:08 Uhr)",
-          "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
-        },
-        {
-          "title": "CNBC: US-Renditen steigen, FedWatch 96 % für Zinserhöhung im Dezember (23.11.)",
-          "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html"
-        },
-        {
-          "title": "New York Fed: Williams spricht am 23.11. um 16:00 Uhr Ostküstenzeit (Mount Saint Vincent)",
-          "url": "https://www.newyorkfed.org/newsevents/mediaadvisory/2026/1113-2026"
-        },
-        {
-          "title": "AK&M: FTC genehmigt Übernahme von Mesh Optical durch SpaceX vorzeitig (23.11.)",
-          "url": "https://www.akm.ru/eng/news/us-regulator-approves-deal-between-spacex-and-mesh-startup-/"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -18289,31 +18297,35 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Mo 14:30: Tesla steht vorbörslich bei 362,98 $, 5,0 % über dem Freitagsschluss (345,82 $) (Yahoo) – Teil der breiten Erholung nach dem Tech-Ausverkauf, eine eigene Tesla-Nachricht als Auslöser gibt es nicht. Die Futures halten die Erholung: Nasdaq-100 +3,4 %, S&P 500 +2,6 % (CNBC, 14:08 Uhr). Gegenwind kommt von den Zinsen: Die zehnjährige US-Rendite steigt auf 4,96 %, Händler sehen zu 96 % eine Zinserhöhung im Dezember, heute um 22:00 Uhr spricht New-York-Fed-Chef Williams (CNBC, New York Fed). JPMorgan bleibt bei „Neutral“ mit Kursziel 430 $ (dpa-AFX); laut Reuters plant Tesla ein Polysilizium-Werk für 3,1 Mrd. $ in Texas.",
+      "why": "Stand Mo 16:20: Tesla steigt nach Handelsstart auf 392,70 $, 13,6 % über dem Freitagsschluss (345,82 $) (Yahoo). Zwei Gründe: die breite Tech-Erholung, nachdem Nvidia Jensen Huang wieder als Chef eingesetzt hat (Nasdaq zur Eröffnung +7,3 %, Reuters), und das neue Fahrassistenz-Update FSD Version 15 (Barron's). JPMorgan bleibt bei „Neutral“, Kursziel 430 $, und nennt FSD 15 einen Meilenstein für Robotaxis (dpa-AFX). Der US-Einkaufsmanagerindex fiel im November auf 54,6 (Vormonat 55,9), die Wirtschaft wächst aber weiter kräftig (S&P Global). Heute 22:00 Uhr spricht New-York-Fed-Chef Williams.",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA vorbörslich 362,98 $ (23.11., 14:30 Uhr, Fr 345,82 $)",
+          "title": "Yahoo Finance: TSLA 23.11., 16:22 Uhr",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "CNBC: Nasdaq-100-Futures +3,4 % nach Tech-Ausverkauf (Live, 23.11. 14:08 Uhr)",
-          "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
+          "title": "Barron's: Warum Tesla steigt – FSD Version 15 und Tech-Erholung (23.11.)",
+          "url": "https://www.barrons.com/articles/tesla-stock-price-fsd-version-15-full-self-driving-d6a8e538"
         },
         {
-          "title": "CNBC: US-Renditen steigen, FedWatch 96 % für Zinserhöhung im Dezember (23.11.)",
-          "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html"
+          "title": "Nvidia: Verwaltungsrat setzt Jensen Huang wieder als Chef ein (23.11.)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
         },
         {
-          "title": "New York Fed: Williams spricht am 23.11. um 16:00 Uhr Ostküstenzeit (Mount Saint Vincent)",
-          "url": "https://www.newyorkfed.org/newsevents/mediaadvisory/2026/1113-2026"
+          "title": "Reuters via Investing.com: Wall Street eröffnet deutlich höher nach Huangs Rückkehr (23.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-opens-sharply-higher-after-nvidia-reinstates-jensen-huang-as-ceo-5045900"
+        },
+        {
+          "title": "Investopedia: Nvidia +30 % nach Huangs Rückkehr, Nasdaq +6 % (Live, 23.11.)",
+          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11232026-12274147"
         },
         {
           "title": "wallstreet-online (dpa-AFX): JPMorgan belässt Tesla auf „Neutral“, Ziel 430 $ (23.11.)",
           "url": "https://www.wallstreet-online.de/nachricht/21734866-jpmorgan-stuft-tesla-neutral"
         },
         {
-          "title": "Reuters via EnergyNow: Tesla plant Polysilizium-Werk für 3,1 Mrd. $ in Texas (23.11.)",
-          "url": "https://energynow.com/2026/11/tesla-proposes-3-1-bln-texas-polysilicon-plant-for-solar-manufacturing/"
+          "title": "S&P Global: Flash-PMI USA November 54,6 (Vormonat 55,9), 23.11. 15:45",
+          "url": "https://www.pmi.spglobal.com/Public/Home/PressRelease/18abd879261e464fbcc1bc22d4ea64eb"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -29664,19 +29676,11 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Mo 14:30: Rocket Lab steht vorbörslich bei 49,16 $, 8,2 % über dem Freitagsschluss (45,42 $); gegen Mittag waren es noch 49,80 $ (Yahoo, Public.com). Nach der schlechtesten Woche der Firmengeschichte (−26 %) treibt das Interview von Finanzchef Spice: deutlich höhere Electron-Preise in sechs bis neun Monaten, weil SpaceX kaum noch Mitflug-Plätze ab 2029 vergibt (Yahoo/Stocktwits). Dazu erinnert Motley Fool an den um 27 % auf 70 Mio. $ erhöhten Neutron-Preis. Die Futures halten die Erholung: Nasdaq-100 +3,4 %, S&P 500 +2,6 % (CNBC, 14:08 Uhr). Gegenwind kommt von den Zinsen: Die zehnjährige US-Rendite steigt auf 4,96 %, Händler sehen zu 96 % eine Zinserhöhung im Dezember, heute um 22:00 Uhr spricht New-York-Fed-Chef Williams (CNBC, New York Fed). Keine neue Pressemitteilung seit 14.11.",
+      "why": "Stand Mo 16:20: Rocket Lab steigt nach Handelsstart auf 50,41 $, 11,0 % über dem Freitagsschluss (45,42 $) (Yahoo). Nach der schlechtesten Woche der Firmengeschichte (−26 %) treibt das Interview von Finanzchef Spice: deutlich höhere Electron-Preise in sechs bis neun Monaten, weil SpaceX kaum noch Mitflug-Plätze vergibt (Yahoo/Stocktwits); Motley Fool erinnert an den um 27 % auf 70 Mio. $ erhöhten Neutron-Preis. Dazu die breite Tech-Erholung, nachdem Nvidia Jensen Huang wieder als Chef eingesetzt hat: Nasdaq zur Eröffnung +7,3 % (Reuters). Keine neue Pressemitteilung seit 14.11.",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB vorbörslich 49,16 $ (23.11., 14:30 Uhr, Fr 45,42 $)",
+          "title": "Yahoo Finance: RKLB 23.11., 16:22 Uhr",
           "url": "https://finance.yahoo.com/quote/RKLB/"
-        },
-        {
-          "title": "Public.com: RKLB vorbörslich 49,80 $ (23.11., 12:30 Uhr)",
-          "url": "https://public.com/stocks/rklb/pre-market"
-        },
-        {
-          "title": "Benzinga: RKLB steigt vorbörslich nach Aussagen des Finanzchefs (23.11.)",
-          "url": "https://www.benzinga.com/news/space/26/11/63520562/rklb-stock-soars-rocket-lab-cfo-sees-very-strong-electron-demand-ahead"
         },
         {
           "title": "Yahoo Finance (Stocktwits): Rocket-Lab-Finanzchef erwartet deutlich höhere Electron-Preise (23.11.)",
@@ -29687,12 +29691,12 @@
           "url": "https://www.fool.com/investing/2026/11/23/rocket-lab-raised-prices-rocket-launch-what-means-spacex/"
         },
         {
-          "title": "CNBC: Nasdaq-100-Futures +3,4 % nach Tech-Ausverkauf (Live, 23.11. 14:08 Uhr)",
-          "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
+          "title": "Reuters via Investing.com: Wall Street eröffnet deutlich höher nach Huangs Rückkehr (23.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-opens-sharply-higher-after-nvidia-reinstates-jensen-huang-as-ceo-5045900"
         },
         {
-          "title": "CNBC: US-Renditen steigen, FedWatch 96 % für Zinserhöhung im Dezember (23.11.)",
-          "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html"
+          "title": "Nvidia: Verwaltungsrat setzt Jensen Huang wieder als Chef ein (23.11.)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -41449,35 +41453,27 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Mo 14:30: Marvell steht vorbörslich bei 129,30 $, 5,7 % über dem Freitagsschluss (122,28 $); um 10:30 Uhr waren es rund 7,5 % (Yahoo, TECHi). Chipwerte führen die Erholung an, Nvidia bekam Schub, weil Trump den Rat erneut aufforderte, Huang zurückzuholen (Yahoo, Reuters). Im Software-Sektor sorgt CrowdStrike für Schlagzeilen: Übernahme von Zscaler für 43,9 Mrd. $ in Aktien (CNBC). Die Futures halten die Erholung: Nasdaq-100 +3,4 %, S&P 500 +2,6 % (CNBC, 14:08 Uhr). Gegenwind kommt von den Zinsen: Die zehnjährige US-Rendite steigt auf 4,96 %, Händler sehen zu 96 % eine Zinserhöhung im Dezember, heute um 22:00 Uhr spricht New-York-Fed-Chef Williams (CNBC, New York Fed). Marvell-Zahlen am Di 1.12.",
+      "why": "Stand Mo 16:20: Marvell steigt nach Handelsstart auf 147,81 $, 20,9 % über dem Freitagsschluss (122,28 $) (Yahoo). Auslöser ist die Rückkehr von Jensen Huang als Nvidia-Chef: Der Verwaltungsrat setzte ihn einstimmig wieder ein, nach Rücksprache mit der US-Regierung sehe er kein Sicherheitsrisiko (Nvidia). Nvidia springt rund 30 %, der Halbleiter-ETF SOXX rund 11 %, Micron und Intel je über 12 % (Investopedia). Der Nasdaq eröffnete 7,3 % höher (Reuters). Marvell-Zahlen am Di 1.12.",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL vorbörslich 129,30 $ (23.11., 14:30 Uhr, Fr 122,28 $)",
+          "title": "Yahoo Finance: MRVL 23.11., 16:22 Uhr",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "TECHi: KI-Hardware vorbörslich +7,4 %, Nvidia +9,4 %, Marvell +7,5 % (23.11., 10:30 Uhr)",
-          "url": "https://www.techi.com/premarket-ai-hardware-stocks-monday-after-friday-rout-nvidia/"
+          "title": "Nvidia: Verwaltungsrat setzt Jensen Huang wieder als Chef ein (23.11.)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
         },
         {
-          "title": "Yahoo Finance: Futures steigen, Nvidia +8 % nach Trumps Huang-Aufruf (23.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html"
+          "title": "Investopedia: Nvidia +30 % nach Huangs Rückkehr, Nasdaq +6 % (Live, 23.11.)",
+          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11232026-12274147"
         },
         {
-          "title": "Reuters via Investing.com: US-Futures erholen sich nach KI-Ausverkauf (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-rebound-after-rough-week-for-ailinked-shares-5044594"
+          "title": "Reuters via Investing.com: Wall Street eröffnet deutlich höher nach Huangs Rückkehr (23.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-opens-sharply-higher-after-nvidia-reinstates-jensen-huang-as-ceo-5045900"
         },
         {
-          "title": "CNBC: CrowdStrike übernimmt Zscaler für 43,9 Mrd. $ in Aktien (23.11.)",
-          "url": "https://www.cnbc.com/2026/11/23/crowdstrike-to-buy-zscaler.html"
-        },
-        {
-          "title": "CNBC: Nasdaq-100-Futures +3,4 % nach Tech-Ausverkauf (Live, 23.11. 14:08 Uhr)",
-          "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
-        },
-        {
-          "title": "CNBC: US-Renditen steigen, FedWatch 96 % für Zinserhöhung im Dezember (23.11.)",
-          "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html"
+          "title": "Investing.com: Warum Marvell heute steigt (23.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-marvell-technology-stock-surging-today-93CH-5045249"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",
