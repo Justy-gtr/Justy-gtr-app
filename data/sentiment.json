@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T16:34:00+01:00",
+  "updatedAt": "2026-11-23T17:09:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 65,
+      "score": 50,
       "postsCount": 25,
-      "reason": "SpaceX hält rund 10 % Plus bei etwa 140 $ und liegt wieder über dem Ausgabepreis von 135 $. Viele rätseln, ob eine Fusion mit Tesla bald angekündigt wird.",
+      "reason": "SpaceX gibt etwas ab, Posts nennen rund 136 $ und gut 6 % Plus. Kritik gibt es an teuren KI-Chip-Krediten und der Grok-Klage, Fans bleiben zuversichtlich.",
       "sources": [
         {
-          "title": "@kongbaest auf X (23.11., 16:31)",
-          "url": "https://x.com/kongbaest/status/2124888647002685876"
+          "title": "@theSpacecyborg auf X (23.11., 17:04)",
+          "url": "https://x.com/theSpacecyborg/status/2124896808153354622"
         },
         {
-          "title": "@Maximilius31 auf X (23.11., 16:05)",
-          "url": "https://x.com/Maximilius31/status/2124881910103232795"
+          "title": "@ASABattleCards auf X (23.11., 16:45)",
+          "url": "https://x.com/ASABattleCards/status/2124891991515513239"
         },
         {
-          "title": "@RetailInvestGuy auf X (23.11., 16:20)",
-          "url": "https://x.com/RetailInvestGuy/status/2124885890480890235"
+          "title": "@LordBullAI auf X (23.11., 16:42)",
+          "url": "https://x.com/LordBullAI/status/2124891457081552981"
         }
       ],
-      "updatedAt": "2026-11-23T16:34:00+01:00"
+      "updatedAt": "2026-11-23T17:09:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 55,
+      "score": 65,
       "postsCount": 25,
-      "reason": "Tesla hält gut 12 % Plus bei etwa 389 $, Musk lobt FSD V15. Beim Fusionsthema wird gestritten: einige wollen keinen Aufschlag, andere fürchten Nachteile.",
+      "reason": "Tesla steigt rund 13 % auf etwa 391 $, so viel an einem Tag wie lange nicht. Fans feiern FSD V15, einige fragen sich, ob das bis zum Schluss hält.",
       "sources": [
         {
-          "title": "@Maximilius31 auf X (23.11., 16:05)",
-          "url": "https://x.com/Maximilius31/status/2124881910103232795"
+          "title": "@EvasTeslaSPlaid auf X (23.11., 16:39)",
+          "url": "https://x.com/EvasTeslaSPlaid/status/2124890503405789570"
         },
         {
-          "title": "@imrankhondokerr auf X (23.11., 16:31)",
-          "url": "https://x.com/imrankhondokerr/status/2124888602152685686"
+          "title": "@JTrades31 auf X (23.11., 16:51)",
+          "url": "https://x.com/JTrades31/status/2124893489548980725"
         },
         {
-          "title": "@RealAmericanPig auf X (23.11., 16:23)",
-          "url": "https://x.com/RealAmericanPig/status/2124886530514628937"
+          "title": "@Rufusdufus911 auf X (23.11., 16:35)",
+          "url": "https://x.com/Rufusdufus911/status/2124889703635923048"
         }
       ],
-      "updatedAt": "2026-11-23T16:34:00+01:00"
+      "updatedAt": "2026-11-23T17:09:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 55,
       "postsCount": 25,
-      "reason": "Rocket Lab liegt gut 10 % im Plus bei rund 50 $. Fans setzen auf Neutron und denken langfristig, einige bleiben misstrauisch.",
+      "reason": "Rocket Lab steigt weiter, ein Post nennt rund 55,8 $. Viel Spam, Optionshändler setzen auf weitere Gewinne, Vorsichtige warten auf mehr Volumen.",
       "sources": [
         {
-          "title": "@QuikOptions auf X (23.11., 16:15)",
-          "url": "https://x.com/QuikOptions/status/2124884581060849861"
+          "title": "@21carterjones auf X (23.11., 16:51)",
+          "url": "https://x.com/21carterjones/status/2124893725616996646"
         },
         {
-          "title": "@realrobluna auf X (23.11., 16:06)",
-          "url": "https://x.com/realrobluna/status/2124882217000374372"
+          "title": "@StelliumTape auf X (23.11., 16:42)",
+          "url": "https://x.com/StelliumTape/status/2124891455814517036"
         },
         {
-          "title": "@BastianelliLore auf X (23.11., 16:25)",
-          "url": "https://x.com/BastianelliLore/status/2124887008166473728"
+          "title": "@LawrenceFu7590 auf X (23.11., 16:50)",
+          "url": "https://x.com/LawrenceFu7590/status/2124893471312138631"
         }
       ],
-      "updatedAt": "2026-11-23T16:34:00+01:00"
+      "updatedAt": "2026-11-23T17:09:00+01:00"
     }
   }
 }
