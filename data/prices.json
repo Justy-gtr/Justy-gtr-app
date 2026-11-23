@@ -5459,39 +5459,39 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Mo 16:20: SPCX steigt nach Handelsstart auf 139,61 $, 9,2 % über dem Freitagsschluss (127,79 $) und damit wieder über den Ausgabepreis von 135 $ (Yahoo). Hauptgrund ist die breite KI-Erholung: Nvidia hat Jensen Huang mit sofortiger Wirkung wieder als Chef eingesetzt, die Aktie springt rund 30 %, der Nasdaq eröffnet 7,3 % höher (Nvidia, Reuters, Investopedia). Barron's nennt zusätzlich Hoffnungen auf Geschäfte mit Tesla. Gegenwind: Virginia und Oregon verklagen SpaceX als erste US-Bundesstaaten wegen sexualisierter Grok-Bilder, auch von Kindern; sie fordern Strafen und Unterlassung (Reuters, CNBC). Jefferies hatte am Morgen mit „Buy“ und Kursziel 210 $ begonnen (CNBC). Heute 22:00 Uhr spricht New-York-Fed-Chef Williams.",
+      "why": "Stand Mo 18:18: SPCX steht bei 136,02 $, 6,4 % über dem Freitagsschluss (127,79 $), nach einem Tageshoch von 141,86 $ hat die Aktie also einen Teil des Sprungs wieder abgegeben (Yahoo, finanzen.net). Hauptgrund bleibt die breite KI-Erholung: Nvidia hat Jensen Huang wieder als Chef eingesetzt, der Nasdaq liegt rund 7 % im Plus, der Halbleiter-Index fast 15 % (Nvidia, Reuters). Laut Motley Fool hilft das auch SpaceX direkt, weil Apollo und Goldman Sachs am Freitag rund 44 Mrd. $ Anleihen für Nvidia-Chips in SpaceX-Rechenzentren platziert haben; dazu kommt Musks Wunsch nach eingebautem Starlink in Teslas ab Ende 2027. Gegenwind: Virginia und Oregon verklagen SpaceX wegen sexualisierter Grok-Bilder (CNBC). Jefferies startete am Morgen mit „Buy“, Kursziel 210 $ (dpa-AFX). Heute 22:00 Uhr spricht New-York-Fed-Chef Williams.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX 23.11., 16:22 Uhr",
+          "title": "Yahoo Finance: SPCX 23.11., 18:18 Uhr",
           "url": "https://finance.yahoo.com/quote/SPCX/"
+        },
+        {
+          "title": "finanzen.net: SpaceX gewinnt am Montagnachmittag kräftig, Tageshoch 141,86 $ (23.11.)",
+          "url": "https://www.finanzen.net/nachricht/aktien/spacex-aktie-kursbewegung-23-11-2026-15758011"
         },
         {
           "title": "Nvidia: Verwaltungsrat setzt Jensen Huang wieder als Chef ein (23.11.)",
           "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
         },
         {
-          "title": "Reuters via Investing.com: Wall Street eröffnet deutlich höher nach Huangs Rückkehr (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/wall-st-opens-sharply-higher-after-nvidia-reinstates-jensen-huang-as-ceo-5045900"
+          "title": "Reuters via Yahoo: Wall Street springt nach Huangs Rückkehr, Halbleiter-Index +14,8 % (23.11., 16:45 Uhr)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-futures-rebound-rough-075444520.html"
         },
         {
-          "title": "Investopedia: Nvidia +30 % nach Huangs Rückkehr, Nasdaq +6 % (Live, 23.11.)",
-          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11232026-12274147"
-        },
-        {
-          "title": "Barron's: SpaceX-Aktie springt, das Gute überwiegt heute (23.11.)",
-          "url": "https://www.barrons.com/articles/spacex-stock-musk-starlink-tesla-merger-4fa1b482"
-        },
-        {
-          "title": "Reuters via Investing.com: Virginia und Oregon verklagen SpaceX wegen Grok-Bildern (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/virginia-oregon-sue-musks-spacex-over-grok-ais-creation-of-child-sexual-abuse-images-and-videos-5045239"
+          "title": "Motley Fool: Warum die SpaceX-Aktie heute steigt (23.11.)",
+          "url": "https://www.fool.com/investing/2026/11/23/why-spacex-stock-is-gaining-today/"
         },
         {
           "title": "CNBC: Zwei Bundesstaaten verklagen SpaceX wegen Grok-Deepfakes (23.11.)",
           "url": "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html"
         },
         {
-          "title": "CNBC: Jefferies startet SpaceX mit „Buy“, Kursziel 210 $ (23.11.)",
-          "url": "https://www.cnbc.com/2026/11/23/spacex-jefferies-buy-price-target.html"
+          "title": "wallstreet-online (dpa-AFX): Jefferies startet SpaceX mit „Buy“, Ziel 210 $ (23.11.)",
+          "url": "https://www.wallstreet-online.de/nachricht/21732880-analyse-flash-jefferies-spacex-buy-ziel-210-dollar"
+        },
+        {
+          "title": "New York Fed: Williams spricht am 23.11. um 16:00 Uhr Ostküstenzeit",
+          "url": "https://www.newyorkfed.org/newsevents/mediaadvisory/2026/1113-2026"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -18297,35 +18297,39 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Mo 16:20: Tesla steigt nach Handelsstart auf 392,70 $, 13,6 % über dem Freitagsschluss (345,82 $) (Yahoo). Zwei Gründe: die breite Tech-Erholung, nachdem Nvidia Jensen Huang wieder als Chef eingesetzt hat (Nasdaq zur Eröffnung +7,3 %, Reuters), und das neue Fahrassistenz-Update FSD Version 15 (Barron's). JPMorgan bleibt bei „Neutral“, Kursziel 430 $, und nennt FSD 15 einen Meilenstein für Robotaxis (dpa-AFX). Der US-Einkaufsmanagerindex fiel im November auf 54,6 (Vormonat 55,9), die Wirtschaft wächst aber weiter kräftig (S&P Global). Heute 22:00 Uhr spricht New-York-Fed-Chef Williams.",
+      "why": "Stand Mo 18:18: Tesla steht bei 390,42 $, 12,9 % über dem Freitagsschluss (345,82 $); eröffnet hatte die Aktie bei 373,61 $ und ist seitdem weiter gestiegen (Yahoo, finanzen.ch). Zwei Gründe: die breite Tech-Erholung, nachdem Nvidia Jensen Huang wieder als Chef eingesetzt hat (Nasdaq rund +7 %, Reuters), und das neue Fahrassistenz-Update FSD Version 15, das JPMorgan als weiteren Vorsprung beim autonomen Fahren wertet – bei „Neutral“ und Kursziel 430 $ (Yahoo, dpa-AFX). Im Hintergrund wirkt die Fusionsfantasie: HSBC rechnet bei einem SpaceX-Angebot mit 507 $ je Aktie, ohne Übernahme mit 212 $ (Yahoo). Heute 22:00 Uhr spricht New-York-Fed-Chef Williams.",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA 23.11., 16:22 Uhr",
+          "title": "Yahoo Finance: TSLA 23.11., 18:18 Uhr",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "Barron's: Warum Tesla steigt – FSD Version 15 und Tech-Erholung (23.11.)",
-          "url": "https://www.barrons.com/articles/tesla-stock-price-fsd-version-15-full-self-driving-d6a8e538"
+          "title": "finanzen.ch: Tesla am Montagnachmittag mit Kursfeuerwerk, Eröffnung 373,61 $ (23.11.)",
+          "url": "https://www.finanzen.ch/nachrichten/aktien/tesla-aktie-kursbewegung-23-11-2026-1031803659"
         },
         {
           "title": "Nvidia: Verwaltungsrat setzt Jensen Huang wieder als Chef ein (23.11.)",
           "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
         },
         {
-          "title": "Reuters via Investing.com: Wall Street eröffnet deutlich höher nach Huangs Rückkehr (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/wall-st-opens-sharply-higher-after-nvidia-reinstates-jensen-huang-as-ceo-5045900"
+          "title": "Reuters via Yahoo: Wall Street springt nach Huangs Rückkehr, Halbleiter-Index +14,8 % (23.11., 16:45 Uhr)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-futures-rebound-rough-075444520.html"
         },
         {
-          "title": "Investopedia: Nvidia +30 % nach Huangs Rückkehr, Nasdaq +6 % (Live, 23.11.)",
-          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11232026-12274147"
+          "title": "Yahoo Finance: JPMorgan sieht Teslas Vorsprung bei FSD v15 (23.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/article/teslas-autonomy-ambitions-just-got-a-wall-street-vote-of-confidence-130035595.html"
         },
         {
           "title": "wallstreet-online (dpa-AFX): JPMorgan belässt Tesla auf „Neutral“, Ziel 430 $ (23.11.)",
           "url": "https://www.wallstreet-online.de/nachricht/21734866-jpmorgan-stuft-tesla-neutral"
         },
         {
-          "title": "S&P Global: Flash-PMI USA November 54,6 (Vormonat 55,9), 23.11. 15:45",
-          "url": "https://www.pmi.spglobal.com/Public/Home/PressRelease/18abd879261e464fbcc1bc22d4ea64eb"
+          "title": "Yahoo Finance: HSBC bewertet Tesla bei Übernahme mit 507 $, allein mit 212 $ (23.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-says-tsla-holders-071405988.html"
+        },
+        {
+          "title": "New York Fed: Williams spricht am 23.11. um 16:00 Uhr Ostküstenzeit",
+          "url": "https://www.newyorkfed.org/newsevents/mediaadvisory/2026/1113-2026"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -29676,10 +29680,10 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Mo 16:20: Rocket Lab steigt nach Handelsstart auf 50,41 $, 11,0 % über dem Freitagsschluss (45,42 $) (Yahoo). Nach der schlechtesten Woche der Firmengeschichte (−26 %) treibt das Interview von Finanzchef Spice: deutlich höhere Electron-Preise in sechs bis neun Monaten, weil SpaceX kaum noch Mitflug-Plätze vergibt (Yahoo/Stocktwits); Motley Fool erinnert an den um 27 % auf 70 Mio. $ erhöhten Neutron-Preis. Dazu die breite Tech-Erholung, nachdem Nvidia Jensen Huang wieder als Chef eingesetzt hat: Nasdaq zur Eröffnung +7,3 % (Reuters). Keine neue Pressemitteilung seit 14.11.",
+      "why": "Stand Mo 18:18: Rocket Lab steht bei 50,01 $, 10,1 % über dem Freitagsschluss (45,42 $) (Yahoo). Nach der schlechtesten Woche der Firmengeschichte (−26 %) treibt das Interview von Finanzchef Spice: deutlich höhere Electron-Preise in sechs bis neun Monaten, weil SpaceX kaum noch Mitflug-Plätze vergibt (Yahoo/Stocktwits); Motley Fool erinnert an den auf 70 Mio. $ erhöhten Neutron-Preis. Dazu die breite Tech-Erholung nach Huangs Rückkehr zu Nvidia: Nasdaq rund +7 % (Reuters). Keine neue Pressemitteilung seit 14.11.; der nächste Electron-Start für Synspective ist für Fr 27.11. geplant.",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB 23.11., 16:22 Uhr",
+          "title": "Yahoo Finance: RKLB 23.11., 18:18 Uhr",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
@@ -29687,12 +29691,12 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/rklb-stock-worst-week-ever-075716928.html"
         },
         {
-          "title": "Motley Fool: Rocket Lab hebt Neutron-Preis um 27 % auf 70 Mio. $ (23.11.)",
-          "url": "https://www.fool.com/investing/2026/11/23/rocket-lab-raised-prices-rocket-launch-what-means-spacex/"
+          "title": "Motley Fool: Warum Rocket Lab trotz Neutron-Verschiebung steigt (23.11.)",
+          "url": "https://www.fool.com/investing/2026/11/23/why-rocket-lab-stock-rose-after-neutron-s-launch-was-delayed-to-2027/"
         },
         {
-          "title": "Reuters via Investing.com: Wall Street eröffnet deutlich höher nach Huangs Rückkehr (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/wall-st-opens-sharply-higher-after-nvidia-reinstates-jensen-huang-as-ceo-5045900"
+          "title": "Reuters via Yahoo: Wall Street springt nach Huangs Rückkehr, Halbleiter-Index +14,8 % (23.11., 16:45 Uhr)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-futures-rebound-rough-075444520.html"
         },
         {
           "title": "Nvidia: Verwaltungsrat setzt Jensen Huang wieder als Chef ein (23.11.)",
@@ -41453,23 +41457,27 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Mo 16:20: Marvell steigt nach Handelsstart auf 147,81 $, 20,9 % über dem Freitagsschluss (122,28 $) (Yahoo). Auslöser ist die Rückkehr von Jensen Huang als Nvidia-Chef: Der Verwaltungsrat setzte ihn einstimmig wieder ein, nach Rücksprache mit der US-Regierung sehe er kein Sicherheitsrisiko (Nvidia). Nvidia springt rund 30 %, der Halbleiter-ETF SOXX rund 11 %, Micron und Intel je über 12 % (Investopedia). Der Nasdaq eröffnete 7,3 % höher (Reuters). Marvell-Zahlen am Di 1.12.",
+      "why": "Stand Mo 18:18: Marvell steht bei 144,87 $, 18,5 % über dem Freitagsschluss (122,28 $) (Yahoo). Auslöser ist die Rückkehr von Jensen Huang als Nvidia-Chef: Nvidia liegt rund 32 % im Plus, der Halbleiter-Index am Vormittag 14,8 %, der Nasdaq rund 7 % – laut Reuters steuern Nasdaq und S&P 500 auf den größten Tagesgewinn seit April 2025 zu (Reuters, Yahoo). Strategen sind uneins, ob die Erholung hält: Einige sehen den Boden, andere eine Gegenbewegung im Abwärtstrend (CNBC). Marvell-Zahlen am Di 1.12.",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL 23.11., 16:22 Uhr",
+          "title": "Yahoo Finance: MRVL 23.11., 18:18 Uhr",
           "url": "https://finance.yahoo.com/quote/MRVL/"
+        },
+        {
+          "title": "Yahoo Finance: NVDA 23.11., 18:18 Uhr",
+          "url": "https://finance.yahoo.com/quote/NVDA/"
         },
         {
           "title": "Nvidia: Verwaltungsrat setzt Jensen Huang wieder als Chef ein (23.11.)",
           "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
         },
         {
-          "title": "Investopedia: Nvidia +30 % nach Huangs Rückkehr, Nasdaq +6 % (Live, 23.11.)",
-          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11232026-12274147"
+          "title": "Reuters via Yahoo: Wall Street springt nach Huangs Rückkehr, Halbleiter-Index +14,8 % (23.11., 16:45 Uhr)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-futures-rebound-rough-075444520.html"
         },
         {
-          "title": "Reuters via Investing.com: Wall Street eröffnet deutlich höher nach Huangs Rückkehr (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/wall-st-opens-sharply-higher-after-nvidia-reinstates-jensen-huang-as-ceo-5045900"
+          "title": "CNBC: Nvidia holt Huang zurück, Aktien erholen sich – Strategen uneins (23.11.)",
+          "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo-market-rally.html"
         },
         {
           "title": "Investing.com: Warum Marvell heute steigt (23.11.)",
