@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T19:45:00+01:00",
+  "updatedAt": "2026-11-23T20:05:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
@@ -22,7 +22,7 @@
           "url": "https://x.com/joehansen/status/2124932241004622010"
         }
       ],
-      "updatedAt": "2026-11-23T19:45:00+01:00"
+      "updatedAt": "2026-11-23T20:05:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,7 +43,7 @@
           "url": "https://x.com/grok/status/2124910251778420804"
         }
       ],
-      "updatedAt": "2026-11-23T19:45:00+01:00"
+      "updatedAt": "2026-11-23T20:05:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/FranciscoSpace5/status/2124923966322327926"
         }
       ],
-      "updatedAt": "2026-11-23T19:45:00+01:00"
+      "updatedAt": "2026-11-23T20:05:00+01:00"
     }
   }
 }
