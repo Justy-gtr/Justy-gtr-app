@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T17:09:00+01:00",
+  "updatedAt": "2026-11-23T18:10:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gut",
-      "score": 50,
+      "mood": "gemischt",
+      "score": 10,
       "postsCount": 25,
-      "reason": "SpaceX gibt etwas ab, Posts nennen rund 136 $ und gut 6 % Plus. Kritik gibt es an teuren KI-Chip-Krediten und der Grok-Klage, Fans bleiben zuversichtlich.",
+      "reason": "Laut NYT sagte Musk intern, SpaceX hinke bei KI hinterher. Das wird viel geteilt und dämpft die Stimmung, auch wenn der Kurs heute noch im Plus ist.",
       "sources": [
         {
-          "title": "@theSpacecyborg auf X (23.11., 17:04)",
-          "url": "https://x.com/theSpacecyborg/status/2124896808153354622"
+          "title": "@financialjuice auf X (23.11., 17:14)",
+          "url": "https://x.com/financialjuice/status/2124899506642956522"
         },
         {
-          "title": "@ASABattleCards auf X (23.11., 16:45)",
-          "url": "https://x.com/ASABattleCards/status/2124891991515513239"
+          "title": "@LiveSquawk auf X (23.11., 17:16)",
+          "url": "https://x.com/LiveSquawk/status/2124900002329924066"
         },
         {
-          "title": "@LordBullAI auf X (23.11., 16:42)",
-          "url": "https://x.com/LordBullAI/status/2124891457081552981"
+          "title": "@QuasarMarkets auf X (23.11., 17:25)",
+          "url": "https://x.com/QuasarMarkets/status/2124902083090432492"
         }
       ],
-      "updatedAt": "2026-11-23T17:09:00+01:00"
+      "updatedAt": "2026-11-23T18:10:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 65,
+      "score": 55,
       "postsCount": 25,
-      "reason": "Tesla steigt rund 13 % auf etwa 391 $, so viel an einem Tag wie lange nicht. Fans feiern FSD V15, einige fragen sich, ob das bis zum Schluss hält.",
+      "reason": "Tesla bleibt klar im Plus, viele freuen sich über den starken Tag. Diskutiert wird, ob die Marke von 400 $ hält, und über Terafab mit SpaceX.",
       "sources": [
         {
-          "title": "@EvasTeslaSPlaid auf X (23.11., 16:39)",
-          "url": "https://x.com/EvasTeslaSPlaid/status/2124890503405789570"
+          "title": "@MrSilly_eth auf X (23.11., 16:54)",
+          "url": "https://x.com/MrSilly_eth/status/2124894432314941877"
         },
         {
-          "title": "@JTrades31 auf X (23.11., 16:51)",
-          "url": "https://x.com/JTrades31/status/2124893489548980725"
+          "title": "@strengthPlan auf X (23.11., 17:42)",
+          "url": "https://x.com/strengthPlan/status/2124906369316733292"
         },
         {
-          "title": "@Rufusdufus911 auf X (23.11., 16:35)",
-          "url": "https://x.com/Rufusdufus911/status/2124889703635923048"
+          "title": "@grok auf X (23.11., 18:05)",
+          "url": "https://x.com/grok/status/2124912242906845357"
         }
       ],
-      "updatedAt": "2026-11-23T17:09:00+01:00"
+      "updatedAt": "2026-11-23T18:10:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 55,
+      "score": 40,
       "postsCount": 25,
-      "reason": "Rocket Lab steigt weiter, ein Post nennt rund 55,8 $. Viel Spam, Optionshändler setzen auf weitere Gewinne, Vorsichtige warten auf mehr Volumen.",
+      "reason": "Wenig echte News, viel Spam. Einige haben Rocket Lab nachgelegt, andere finden die Bewertung im Vergleich zu Nebius zu hoch.",
       "sources": [
+        {
+          "title": "@LangenbergTim auf X (23.11., 18:05)",
+          "url": "https://x.com/LangenbergTim/status/2124912119116382657"
+        },
+        {
+          "title": "@BastianelliLore auf X (23.11., 18:05)",
+          "url": "https://x.com/BastianelliLore/status/2124912177861832885"
+        },
         {
           "title": "@21carterjones auf X (23.11., 16:51)",
           "url": "https://x.com/21carterjones/status/2124893725616996646"
-        },
-        {
-          "title": "@StelliumTape auf X (23.11., 16:42)",
-          "url": "https://x.com/StelliumTape/status/2124891455814517036"
-        },
-        {
-          "title": "@LawrenceFu7590 auf X (23.11., 16:50)",
-          "url": "https://x.com/LawrenceFu7590/status/2124893471312138631"
         }
       ],
-      "updatedAt": "2026-11-23T17:09:00+01:00"
+      "updatedAt": "2026-11-23T18:10:00+01:00"
     }
   }
 }
