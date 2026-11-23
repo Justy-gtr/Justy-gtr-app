@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T14:06:00+01:00",
+  "updatedAt": "2026-11-23T14:40:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 35,
-      "postsCount": 25,
-      "reason": "SpaceX steigt vorbörslich gut 2 %, Jefferies startet die Abdeckung, dazu Gerüchte über eine Fusion mit Tesla. Kritik gibt es wegen Starlink-Streit und einer Klage.",
+      "score": 40,
+      "postsCount": 24,
+      "reason": "Jefferies startet SpaceX mit Kursziel 210 $, vorbörslich gut 2 % im Plus. Einige warnen, die 135-$-Marke vom Börsengang sei noch nicht zurückerobert.",
       "sources": [
         {
-          "title": "@ticker_report auf X (23.11., 13:48)",
-          "url": "https://x.com/ticker_report/status/2124847678089560407"
+          "title": "@SPCX100T auf X (23.11., 14:05)",
+          "url": "https://x.com/SPCX100T/status/2124851951682900462"
         },
         {
-          "title": "@spcxGOD auf X (23.11., 13:40)",
-          "url": "https://x.com/spcxGOD/status/2124845523215544464"
+          "title": "@goodluckmates auf X (23.11., 14:29)",
+          "url": "https://x.com/goodluckmates/status/2124857864053526808"
         },
         {
-          "title": "@BacklogAlpha auf X (23.11., 12:15)",
-          "url": "https://x.com/BacklogAlpha/status/2124824027940442216"
+          "title": "@CoinPostMedia auf X (23.11., 14:12)",
+          "url": "https://x.com/CoinPostMedia/status/2124853541097374062"
         }
       ],
-      "updatedAt": "2026-11-23T14:06:00+01:00"
+      "updatedAt": "2026-11-23T14:40:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 45,
       "postsCount": 24,
-      "reason": "Großes Thema ist FSD V15, das jetzt startet. Tesla liegt vorbörslich rund 4 % im Plus, JPMorgan bleibt neutral. Auch eine Fusion mit SpaceX wird diskutiert.",
+      "reason": "Tesla liegt vorbörslich 4–5 % im Plus, die Tech-Riesen erholen sich. Gesprochen wird über FSD V15, ARK-Zukäufe und eine mögliche Fusion mit SpaceX.",
       "sources": [
         {
-          "title": "@stockoholics auf X (23.11., 13:30)",
-          "url": "https://x.com/stockoholics/status/2124843085666701715"
+          "title": "@DRJBori63 auf X (23.11., 14:31)",
+          "url": "https://x.com/DRJBori63/status/2124858295282246121"
         },
         {
-          "title": "@CatalystPit auf X (23.11., 12:47)",
-          "url": "https://x.com/CatalystPit/status/2124832136104443960"
+          "title": "@kongbaest auf X (23.11., 14:34)",
+          "url": "https://x.com/kongbaest/status/2124859218528174542"
         },
         {
-          "title": "@AnthonyAbbe2 auf X (23.11., 13:29)",
-          "url": "https://x.com/AnthonyAbbe2/status/2124842725099078045"
+          "title": "@investuskr auf X (23.11., 14:05)",
+          "url": "https://x.com/investuskr/status/2124851889154228639"
         }
       ],
-      "updatedAt": "2026-11-23T14:06:00+01:00"
+      "updatedAt": "2026-11-23T14:40:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 50,
       "postsCount": 25,
-      "reason": "Rocket Lab springt vorbörslich wieder über 50 $, weil der Finanzchef starke Electron-Nachfrage sieht. Baird bestätigt sein Kursziel von 100 $.",
+      "reason": "Rocket Lab bleibt Thema: Baird bestätigt 100 $ Kursziel, der Finanzchef sieht starke Electron-Nachfrage, Neutron-Starts werden 27 % teurer.",
       "sources": [
         {
-          "title": "@SpacBobby auf X (23.11., 13:49)",
-          "url": "https://x.com/SpacBobby/status/2124847812353679656"
+          "title": "@SpacBobby auf X (23.11., 14:26)",
+          "url": "https://x.com/SpacBobby/status/2124857161981554846"
         },
         {
-          "title": "@MM_Sentinel auf X (23.11., 12:42)",
-          "url": "https://x.com/MM_Sentinel/status/2124830822444196164"
+          "title": "@MSWPulse auf X (23.11., 14:28)",
+          "url": "https://x.com/MSWPulse/status/2124857682020491587"
         },
         {
-          "title": "@ailatalia auf X (23.11., 12:13)",
-          "url": "https://x.com/ailatalia/status/2124823759869886827"
+          "title": "@RCapitalX auf X (23.11., 14:08)",
+          "url": "https://x.com/RCapitalX/status/2124852622557651019"
         }
       ],
-      "updatedAt": "2026-11-23T14:06:00+01:00"
+      "updatedAt": "2026-11-23T14:40:00+01:00"
     }
   }
 }
