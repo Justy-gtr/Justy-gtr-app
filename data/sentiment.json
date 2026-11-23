@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T18:10:00+01:00",
+  "updatedAt": "2026-11-23T18:40:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 10,
-      "postsCount": 25,
-      "reason": "Laut NYT sagte Musk intern, SpaceX hinke bei KI hinterher. Das wird viel geteilt und dämpft die Stimmung, auch wenn der Kurs heute noch im Plus ist.",
+      "score": 20,
+      "postsCount": 24,
+      "reason": "Musks NYT-Aussage, SpaceX hinke bei KI hinterher, wird weiter geteilt. Dagegen: Bericht über 40-Mrd.-$-Nvidia-Chipdeal, Jefferies-Ziel 210 $ und ARK-Käufe.",
       "sources": [
+        {
+          "title": "@Kalshi_Finance auf X (23.11., 18:14)",
+          "url": "https://x.com/Kalshi_Finance/status/2124914373298704748"
+        },
+        {
+          "title": "@SpaceInvestor_D auf X (23.11., 18:14)",
+          "url": "https://x.com/SpaceInvestor_D/status/2124914575631896676"
+        },
         {
           "title": "@financialjuice auf X (23.11., 17:14)",
           "url": "https://x.com/financialjuice/status/2124899506642956522"
-        },
-        {
-          "title": "@LiveSquawk auf X (23.11., 17:16)",
-          "url": "https://x.com/LiveSquawk/status/2124900002329924066"
-        },
-        {
-          "title": "@QuasarMarkets auf X (23.11., 17:25)",
-          "url": "https://x.com/QuasarMarkets/status/2124902083090432492"
         }
       ],
-      "updatedAt": "2026-11-23T18:10:00+01:00"
+      "updatedAt": "2026-11-23T18:40:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 55,
-      "postsCount": 25,
-      "reason": "Tesla bleibt klar im Plus, viele freuen sich über den starken Tag. Diskutiert wird, ob die Marke von 400 $ hält, und über Terafab mit SpaceX.",
+      "score": 50,
+      "postsCount": 23,
+      "reason": "Tesla legt mit der KI-Erholung kräftig zu, dazu wird FSD v15 erwähnt. Viele hoffen, dass 400 $ hält, und spekulieren über einen Deal mit SpaceX.",
       "sources": [
         {
-          "title": "@MrSilly_eth auf X (23.11., 16:54)",
-          "url": "https://x.com/MrSilly_eth/status/2124894432314941877"
+          "title": "@NunezAlfred auf X (23.11., 18:34)",
+          "url": "https://x.com/NunezAlfred/status/2124919640568496318"
         },
         {
           "title": "@strengthPlan auf X (23.11., 17:42)",
           "url": "https://x.com/strengthPlan/status/2124906369316733292"
         },
         {
-          "title": "@grok auf X (23.11., 18:05)",
-          "url": "https://x.com/grok/status/2124912242906845357"
+          "title": "@grok auf X (23.11., 17:57)",
+          "url": "https://x.com/grok/status/2124910251778420804"
         }
       ],
-      "updatedAt": "2026-11-23T18:10:00+01:00"
+      "updatedAt": "2026-11-23T18:40:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 40,
+      "score": 30,
       "postsCount": 25,
-      "reason": "Wenig echte News, viel Spam. Einige haben Rocket Lab nachgelegt, andere finden die Bewertung im Vergleich zu Nebius zu hoch.",
+      "reason": "Kaum echte News, viel Spam. Einige sehen Unterstützung im Chart und schwärmen von Neutron, andere finden Rocket Lab zu spekulativ und schwankend.",
       "sources": [
         {
-          "title": "@LangenbergTim auf X (23.11., 18:05)",
-          "url": "https://x.com/LangenbergTim/status/2124912119116382657"
+          "title": "@HKIStrategies auf X (23.11., 18:14)",
+          "url": "https://x.com/HKIStrategies/status/2124914503661891758"
         },
         {
-          "title": "@BastianelliLore auf X (23.11., 18:05)",
-          "url": "https://x.com/BastianelliLore/status/2124912177861832885"
+          "title": "@RCapitalX auf X (23.11., 17:07)",
+          "url": "https://x.com/RCapitalX/status/2124897698616926678"
         },
         {
-          "title": "@21carterjones auf X (23.11., 16:51)",
-          "url": "https://x.com/21carterjones/status/2124893725616996646"
+          "title": "@BrianCapital1 auf X (23.11., 18:12)",
+          "url": "https://x.com/BrianCapital1/status/2124914092788076776"
         }
       ],
-      "updatedAt": "2026-11-23T18:10:00+01:00"
+      "updatedAt": "2026-11-23T18:40:00+01:00"
     }
   }
 }
