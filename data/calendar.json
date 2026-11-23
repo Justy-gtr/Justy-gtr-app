@@ -36,9 +36,9 @@
     },
     {
       "id": "evt-us-ki-nationale-champions",
-      "title": "USA: Lutnick will KI-Firmen wie Nvidia zu „nationalen Champions“ erklären (laut WSJ binnen einer Woche)",
+      "title": "USA: Lutnick will KI-Firmen wie Nvidia zu „nationalen Champions“ erklären (WSJ-Frist von einer Woche verstrichen)",
       "date": "2026-11-16",
-      "end": "2026-11-22",
+      "end": "2026-11-30",
       "time": null,
       "timezone": "Europe/Berlin",
       "kind": "external",
@@ -48,9 +48,9 @@
         "MRVL",
         "SPCX"
       ],
-      "probabilityPct": 60,
+      "probabilityPct": 30,
       "impact": "mittel",
-      "reasoning": "Laut Wall Street Journal (So 15.11.) will die US-Regierung mehr als zwei Dutzend Firmen, darunter Nvidia, Amazon, Microsoft, OpenAI und Anthropic, zu KI-„nationalen Champions“ erklären. Sie sollen Exportlizenzen für Chips schneller bekommen, Hilfe der Regierung im Ausland und Zugang zu staatlicher Finanzierung. Handelsminister Lutnick soll das Programm vorstellen, möglicherweise schon innerhalb einer Woche; der Zeitpunkt kann sich laut Bericht noch ändern (Investing.com nach WSJ). SpaceX SI (Grok) wird in den Berichten nicht genannt. Warum das für uns zählt: Schnellere Lizenzen wären gut für Chipwerte wie Marvell und für die KI-Stimmung, an der auch SPCX hängt – gleichzeitig arbeitet das Handelsministerium an strengeren Regeln gegen Umleitungen nach China. 60 %: Der Plan ist konkret beschrieben und Lutnick als Sprecher benannt, aber es ist ein Bericht, keine Ankündigung, und die Frist von einer Woche ist ausdrücklich unsicher. Stand Mo 20:00: Noch keine offizielle Liste. Musk antwortete um 20:13 mit „Yeah“ auf einen Post, SpaceX gehöre mit auf die Liste – eine Forderung, keine Zusage der Regierung (X). Laut WSJ geht es um mehr als zwei Dutzend Firmen; die Liste würde in die Woche von Trumps China-Reise fallen (The Next Web). 60 % unverändert.",
+      "reasoning": "Laut Wall Street Journal (So 15.11.) will die US-Regierung mehr als zwei Dutzend Firmen, darunter Nvidia, Amazon, Microsoft, OpenAI und Anthropic, zu KI-„nationalen Champions“ erklären. Sie sollen Exportlizenzen für Chips schneller bekommen, Hilfe der Regierung im Ausland und Zugang zu staatlicher Finanzierung. Handelsminister Lutnick soll das Programm vorstellen, möglicherweise schon innerhalb einer Woche; der Zeitpunkt kann sich laut Bericht noch ändern (Investing.com nach WSJ). SpaceX SI (Grok) wird in den Berichten nicht genannt. Warum das für uns zählt: Schnellere Lizenzen wären gut für Chipwerte wie Marvell und für die KI-Stimmung, an der auch SPCX hängt – gleichzeitig arbeitet das Handelsministerium an strengeren Regeln gegen Umleitungen nach China. 60 %: Der Plan ist konkret beschrieben und Lutnick als Sprecher benannt, aber es ist ein Bericht, keine Ankündigung, und die Frist von einer Woche ist ausdrücklich unsicher. Stand Mo 20:00: Noch keine offizielle Liste. Musk antwortete um 20:13 mit „Yeah“ auf einen Post, SpaceX gehöre mit auf die Liste – eine Forderung, keine Zusage der Regierung (X). Laut WSJ geht es um mehr als zwei Dutzend Firmen; die Liste würde in die Woche von Trumps China-Reise fallen (The Next Web). 60 % unverändert. Stand Mo 08:00: Die laut WSJ angepeilte Woche ist um, eine offizielle Liste haben wir bei Reuters, CNBC und im Handelsministerium nicht gefunden (OrigoTech: „nicht verkündet“). 60 → 30 % für eine Liste bis Ende November; das Fenster ist bis 30.11. verlängert.",
       "example": false,
       "sources": [
         {
@@ -68,6 +68,10 @@
         {
           "title": "The Next Web (nach WSJ): Nvidia, OpenAI und Anthropic sollen KI-Champions werden (16.11.)",
           "url": "https://thenextweb.com/news/ai-national-champions-nvidia-openai-anthropic-trump"
+        },
+        {
+          "title": "OrigoTech: WSJ – USA wollen 24+ KI-„Champions“ benennen, noch nicht verkündet",
+          "url": "https://origotech.dev/articles/wsj-reports-the-trump-administration-plans-to-name-more-than-24-us-companies-including-nvidia-amazon-microsoft-openai-and-anthropic-as-ai-national-champions-for-overseas-sales/"
         }
       ]
     },
@@ -117,136 +121,10 @@
       ]
     },
     {
-      "id": "evt-falcon9-ussf317",
-      "title": "SpaceX: Falcon-9-Start USSF-317 für die Space Force (Sa 21.11. 03:32)",
-      "date": "2026-11-21",
-      "time": "03:32",
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "start",
-      "company": "SpaceX",
-      "tickers": [
-        "SPCX"
-      ],
-      "probabilityPct": 70,
-      "impact": "niedrig",
-      "reasoning": "SpaceX zielt jetzt auf Freitag 13.11., Vier-Stunden-Fenster ab 20:09 Uhr Ortszeit Vandenberg (in Berlin Sa 14.11. 05:09), Ersatz Samstag 19:55 Ortszeit. Vorher stand Donnerstag 20:23 Ortszeit. Dritter Space-Force-Start binnen gut einer Woche von derselben Rampe, deshalb Turnaround-Risiko. Kurswirkung gering. Stand Fr 09:55: Erneut verschoben. SpaceX zielt jetzt auf Dienstag 17.11., Vier-Stunden-Fenster ab 19:14 Uhr Ortszeit Vandenberg (in Berlin Mi 18.11. 04:14), Ersatz Mi 18.11. 20:54 Ortszeit. Die Erststufe fliegt zum 11. Mal und soll auf „Of Course I Still Love You“ landen (SpaceX, spacex-news.com). Einen Grund nennt SpaceX nicht. 75 % unverändert für den neuen Termin. Stand So 05:30: SpaceX nennt weiter Dienstag 17.11., Fenster ab 19:14 Uhr Ortszeit (Mi 18.11. 04:14 Berlin), Ersatz Mi 20:54 Ortszeit. Damit ist USSF-317 jetzt der nächste Space-Force-Start, vor USSF-266 (SpaceX). 75 % unverändert. Stand So 06:30: Unverändert, die Startdatenbank führt den Start weiter für 18.11. 03:14 UTC (04:14 Berlin) mit Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 08:30: Unverändert 18.11. 03:14 UTC (04:14 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 09:30: Unverändert 18.11. 03:14 UTC (04:14 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Erneut um einen Tag verschoben. Die Startdatenbank führt seit So 20:00 Berlin den 19.11. 03:00 UTC (Do 04:00 Berlin), Fenster bis 07:00 UTC, Status weiter „Go“; ein Grund wird nicht genannt (Launch Library 2 mit Verweis auf SpaceX). Der 19.11. war schon vorher als Ersatztag genannt. Dazu: Die Konkurrenzrakete Vulcan von ULA ist am So beim ersten Flug nach neun Monaten Pause gescheitert; die Space Force wollte erst die Daten dieses Flugs prüfen, bevor sie Vulcan wieder für ihre Missionen freigibt (Spaceflight Now). 75 % unverändert: eine weitere kurze Verschiebung ist bei diesem Start schon mehrfach passiert. Stand So 22:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin) und Status „Go“ unverändert (Launch Library 2). 75 % unverändert. Stand Mo 05:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin) und Status „Go“ unverändert (Launch Library 2). Am Wochenende keine neuen FAA- oder SpaceX-Meldungen dazu. 75 % unverändert. Stand Mo 06:30: Termin Do 19.11. 03:00 UTC (04:00 Berlin), Fenster bis 07:00 UTC, Status „Go“ unverändert (Launch Library 2). 75 % unverändert. Stand Mo 08:30: Keine neue Meldung zu Termin oder Status seit 06:30. 75 % unverändert. Stand Mo 09:30: Die Startdatenbank führt weiter Do 19.11. 03:00 UTC (04:00 Berlin), „Go“ (Launch Library 2). Die letzte FAA-Mitteilung (vom 13.11.) nennt noch den 18.11. 03:14–07:36 UTC als ersten und den 19.11. 03:00–07:22 UTC als Ersatztag – das passt zum Ersatztermin. 75 % unverändert. Stand Mo 11:30: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Mo 13:00: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Mo 16:00: Weiter Do 19.11. 03:00 UTC (04:00 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand Di 05:00: Termin Do 19.11. 03:00 UTC (04:00 Berlin), Fenster bis 07:00 UTC, Status „Go“ unverändert (Launch Library 2). Das Wetter wird aber zum Risiko: Die Vorhersage für Vandenberg zeigt zum Start 100 % Bewölkung, mögliche Schauer und Wind um 10 m/s; das Wettermodell der Start-App MaxQ schätzt nur rund 40 % Startwetter (Spanne 20–51 %). Eine offizielle Prognose der Space Force liegt noch nicht vor. 65 statt 75 %, weil ein Wetteraufschub um einen Tag wahrscheinlicher geworden ist. Stand Mi 11:50: Erneut verschoben. SpaceX zielt jetzt auf Fr 20.11., vier Stunden Fenster ab 02:46 UTC (03:46 Berlin, Do 19:46 Ortszeit Vandenberg); Status „Go“ (SpaceX, Next Spaceflight). Einen Grund für die neue Verschiebung nennt SpaceX nicht (Orbit Codex). 65 % unverändert: Nach mehreren Verschiebungen bleibt ein weiterer Aufschub gut möglich. Stand Do 12:25: Erneut um gut eine Stunde verschoben: Start jetzt Fr 20.11. 04:28 UTC (05:28 Berlin), Booster B1100 auf seinem 11. Flug, Landung auf der Drohnenschiff „Of Course I Still Love You“ (Next Spaceflight). 65 % unverändert. Stand Do 14:30: Weiter Fr 20.11. 04:28 UTC (05:28 Berlin) laut Next Spaceflight und Orbit Codex. Axios: Nach dem Vulcan-Fehlschlag von ULA am So bleibt SpaceX vorerst der einzige verfügbare Anbieter für Starts der nationalen Sicherheit. 65 % unverändert. Stand Do 16:25: Um vier Minuten auf Fr 04:32 UTC (05:32 Berlin) verschoben, Status jetzt „Go“ (Space Launch Live, Next Spaceflight). 65 → 70 %, weil die Startfreigabe steht; Wetter in Vandenberg bleibt das Restrisiko. Stand Fr 07:50: Der Versuch in der Nacht zu Freitag wurde abgebrochen, SpaceX nannte keinen Grund. Neues Fenster Fr 20.11. ab 18:32 Uhr Ortszeit Vandenberg, in Berlin Sa 21.11. 03:32; Ersatz Sa 20:12 Ortszeit (SpaceX, Spaceflight Now). 70 % unverändert für den neuen Termin. Stand Fr 14:30: Der Versuch am Do wurde ohne genannten Grund abgebrochen. SpaceX nennt jetzt Fr 20.11. 18:32 Uhr Ortszeit Vandenberg (Sa 03:32 Berlin) mit vier Stunden Fenster, Ersatz Sa 21.11. 20:12 Uhr Ortszeit (So 05:12 Berlin); Booster B1100 auf dem 11. Flug (SpaceX, SpaceWireDaily). 70 % unverändert.",
-      "example": false,
-      "sources": [
-        {
-          "title": "SpaceX: USSF-317 Mission",
-          "url": "https://www.spacex.com/launches/ussf317"
-        },
-        {
-          "title": "Next Spaceflight: USSF-317",
-          "url": "https://nextspaceflight.com/launches/details/8335/"
-        },
-        {
-          "title": "spacex-news.com: USSF-317 auf 18.11. 03:14 UTC verschoben (13.11.)",
-          "url": "https://spacex-news.com/launches/falcon-9-block-5-ussf-317/"
-        },
-        {
-          "title": "Launch Library 2: USSF-317 (Stand 15.11.: 18.11. 03:14 UTC, „Go“)",
-          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?search=USSF-317"
-        },
-        {
-          "title": "Launch Library 2: kommende Starts (Stand 15.11. 11:40: USSF-317 18.11. 03:14 UTC, NROL-136 21.11. 12:30 UTC, USSF-266 23.11. 16:04 UTC, NG-25 29.11. 15:47 UTC, alle „Go“)",
-          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?mode=list"
-        },
-        {
-          "title": "Launch Library 2: USSF-317 (Stand 15.11. 20:00: 19.11. 03:00 UTC, „Go“, „Now targeting Nov 19 at 03:00 UTC“)",
-          "url": "https://ll.thespacedevs.com/2.3.0/launches/?search=USSF-317&mode=detailed"
-        },
-        {
-          "title": "Spaceflight Now: ULA verliert Vulcan mit 40 Amazon-Leo-Satelliten – erster Totalverlust der Firmengeschichte (15.11.)",
-          "url": "https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/"
-        },
-        {
-          "title": "FAA-Mitteilung via Space Notices: USSF-317, erster Tag 18.11., Ersatz 19.11. (Stand 13.11.)",
-          "url": "https://space-notices.com/notice/infopage-faa-operations-advisory-spacex-ussf-317"
-        },
-        {
-          "title": "Launch Library 2: anstehende Starts (Stand 16.11., 11:40)",
-          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
-        },
-        {
-          "title": "MaxQ: USSF-317 – Wetter und Startchance (Stand 17.11., 04:55 Berlin)",
-          "url": "https://www.maxq.app/launches/falcon-9-block-5-ussf-317"
-        },
-        {
-          "title": "Launch Library 2: kommende SpaceX-Starts (Stand 17.11., 05:00 Berlin)",
-          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?mode=list&lsp__name=SpaceX"
-        },
-        {
-          "title": "Orbit Codex: USSF-317 – erneut verschoben, jetzt NET 20.11.",
-          "url": "https://orbitcodex.com/operations/ussf-xxx-r-6-falcon-9"
-        },
-        {
-          "title": "Axios: Vulcan-Fehlschlag verschärft US-Startkrise (19.11.)",
-          "url": "https://www.axios.com/2026/11/19/spacex-ula-vulcan-launch-crisis"
-        },
-        {
-          "title": "Space Launch Live: USSF-317 (Status Go)",
-          "url": "https://spacelaunchlive.com/launches/falcon-9-block-5-ussf-317/"
-        },
-        {
-          "title": "Spaceflight Now: SpaceX bricht USSF-317-Versuch ab, neuer Termin Freitag (19.11.)",
-          "url": "https://spaceflightnow.com/2026/11/19/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-2/"
-        },
-        {
-          "title": "SpaceX: USSF-317 Mission",
-          "url": "https://www.spacex.com/launches/ussf317"
-        },
-        {
-          "title": "SpaceWireDaily: SpaceX bricht USSF-317 am Do ab, neuer Versuch Fr (20.11.)",
-          "url": "https://spacewiredaily.com/article/2026-11-20-spacex-scrubs-launch-of-classified-paylo/"
-        }
-      ]
-    },
-    {
-      "id": "evt-tesla-argentina-nov",
-      "title": "Tesla: Marktstart Argentinien (20. November, Unicenter)",
-      "date": "2026-11-20",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "produkt",
-      "company": "Tesla",
-      "tickers": [
-        "TSLA"
-      ],
-      "probabilityPct": 95,
-      "impact": "niedrig",
-      "reasoning": "Tesla LatAm und Berichte (Infobae/TN 7.11.): Ausstellung Unicenter Martínez ab 20.11.; Model 3/Y erwartet, Verkauf/Testfahrten eher 2027. 85 % für sichtbaren Start am/um den 20.11. Kurswirkung gering. Stand Fr 07:50: Tesla hat am 19.11. die Bestellungen für Model 3 und Model Y in Argentinien geöffnet (Tesla North); die Ausstellung im Unicenter ist für heute angekündigt. 85 → 95 %.",
-      "example": false,
-      "sources": [
-        {
-          "title": "@Tesla: Launching in Argentina later this month",
-          "url": "https://x.com/Tesla/status/2118720752379899907"
-        },
-        {
-          "title": "Infobae: Tesla Argentinien 20. November",
-          "url": "https://www.infobae.com/economia/2026/11/06/tesla-confirmo-su-llegada-a-la-argentina-para-los-proximos-dias-los-detalles-del-desembarco-de-los-autos-electricos-de-elon-musk/"
-        },
-        {
-          "title": "LA NACION: Tesla bestätigt 20. November",
-          "url": "https://www.lanacion.com.ar/autos/tesla-confirmo-la-fecha-en-la-que-llegara-a-la-argentina-nid06112026/"
-        },
-        {
-          "title": "TN: Tesla Argentinien 20.11. Unicenter",
-          "url": "https://tn.com.ar/autos/novedades/2026/11/07/tesla-anuncio-la-fecha-de-su-llegada-a-la-argentina-donde-se-podran-ver-y-probar-sus-autos/"
-        },
-        {
-          "title": "Tesla North: Tesla öffnet Bestellungen für Model 3 und Model Y in Argentinien (19.11.)",
-          "url": "https://teslanorth.com/2026/11/19/tesla-argentina-model-3-model-y-prices-orders/"
-        }
-      ]
-    },
-    {
       "id": "evt-falcon9-nrol136",
-      "title": "SpaceX: Falcon-9-Start NROL-136 für den US-Aufklärungsdienst NRO (verschoben auf So 22.11. 13:16)",
+      "title": "SpaceX: Falcon-9-Start NROL-136 für den US-Aufklärungsdienst NRO (erfolgreich, So 22.11. 13:23)",
       "date": "2026-11-22",
-      "time": "13:16",
+      "time": "13:23",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -254,9 +132,9 @@
       "tickers": [
         "SPCX"
       ],
-      "probabilityPct": 80,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "SpaceX zielt auf Samstag 21.11., 30-Minuten-Fenster ab 04:30 Uhr Ortszeit Vandenberg (13:30 Berlin), Ersatz So 22.11. 04:16 Ortszeit (13:16 Berlin). Die Erststufe fliegt zum 14. Mal und soll an Land auf LZ-4 aufsetzen (SpaceX). An Bord sind Satelliten für das Aufklärungsnetz, das SpaceX mit Northrop Grumman für das NRO baut (Next Spaceflight). Routine-Start, aber Vandenberg hat mit USSF-317 am 18.11. und USSF-266 am 23.11. eine dichte Woche; Verschiebungen um einen Tag sind häufig. 80 % für den genannten Termin. Kurswirkung gering, zeigt aber das Militärgeschäft von SpaceX. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Fr 18:20: SpaceX nennt jetzt Sonntag, 22. November, 07:16 bis 07:46 Uhr Ostküstenzeit (13:16 bis 13:46 Berlin) von SLC-4E in Kalifornien, Landung an Land (SpaceX-Startliste). Einen Grund für die Verschiebung um einen Tag nennt SpaceX nicht; vermutlich hängt sie am verschobenen USSF-317-Start vom selben Gelände. 80 % unverändert für den neuen Termin.",
+      "reasoning": "SpaceX zielt auf Samstag 21.11., 30-Minuten-Fenster ab 04:30 Uhr Ortszeit Vandenberg (13:30 Berlin), Ersatz So 22.11. 04:16 Ortszeit (13:16 Berlin). Die Erststufe fliegt zum 14. Mal und soll an Land auf LZ-4 aufsetzen (SpaceX). An Bord sind Satelliten für das Aufklärungsnetz, das SpaceX mit Northrop Grumman für das NRO baut (Next Spaceflight). Routine-Start, aber Vandenberg hat mit USSF-317 am 18.11. und USSF-266 am 23.11. eine dichte Woche; Verschiebungen um einen Tag sind häufig. 80 % für den genannten Termin. Kurswirkung gering, zeigt aber das Militärgeschäft von SpaceX. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Fr 18:20: SpaceX nennt jetzt Sonntag, 22. November, 07:16 bis 07:46 Uhr Ostküstenzeit (13:16 bis 13:46 Berlin) von SLC-4E in Kalifornien, Landung an Land (SpaceX-Startliste). Einen Grund für die Verschiebung um einen Tag nennt SpaceX nicht; vermutlich hängt sie am verschobenen USSF-317-Start vom selben Gelände. 80 % unverändert für den neuen Termin. Stand Mo 08:00: Gestartet So 22.11. um 13:23 Berlin (04:23 Ortszeit) von SLC-4E, Booster auf dem 14. Flug an Land zurück (SpaceX). Nur 32 Stunden nach USSF-317 vom selben Startplatz – laut SpaceX Weltrekord, bisher 45 Stunden (Noozhawk). 80 → 100 % (eingetreten).",
       "example": false,
       "sources": [
         {
@@ -274,14 +152,18 @@
         {
           "title": "SpaceX: Startliste (NROL-136 am 22.11., USSF-380 am 27./28.11.)",
           "url": "https://www.spacex.com/launches/"
+        },
+        {
+          "title": "Noozhawk: Rekord – zwei Falcon-Starts von SLC-4E binnen 32 Stunden (22.11.)",
+          "url": "https://www.noozhawk.com/spacex-west-coast-team-sets-record-with-quick-turnaround-between-falcon-liftoffs/"
         }
       ]
     },
     {
       "id": "evt-falcon9-ussf266",
-      "title": "SpaceX: Falcon-9-Start USSF-266 für die Space Force (verschoben auf Mo 23.11. 17:04)",
-      "date": "2026-11-23",
-      "time": "17:04",
+      "title": "SpaceX: Falcon-9-Start USSF-266 für die Space Force (verschoben auf Di 24.11. 16:55)",
+      "date": "2026-11-24",
+      "time": "16:55",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -291,7 +173,7 @@
       ],
       "probabilityPct": 75,
       "impact": "niedrig",
-      "reasoning": "SpaceX zielt auf Dienstag 17.11., Vier-Stunden-Fenster ab 08:58 Uhr Ortszeit Vandenberg (17:58 Berlin), Ersatz Mittwoch 08:49 Ortszeit. Booster fliegt zum 29. Mal. Vierter Space-Force-Start von SLC-4E in kurzer Folge, deshalb 75 % für den Zieltag. Kurswirkung gering. Stand So 05:30: Verschoben. SpaceX zielt jetzt auf Montag 23.11., Vier-Stunden-Fenster ab 08:04 Uhr Ortszeit Vandenberg (17:04 Berlin), Ersatz Di 24.11. 07:55 Ortszeit (16:55 Berlin). Laut Launch-Library-Verlauf rutschte der Start schon am 13.11. vom 18. auf den 23.11.; einen Grund nennt SpaceX nicht (SpaceX, Space Launch Live). 75 % unverändert für den neuen Termin. Stand So 06:30: Unverändert Mo 23.11. 16:04 UTC (17:04 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert.",
+      "reasoning": "SpaceX zielt auf Dienstag 17.11., Vier-Stunden-Fenster ab 08:58 Uhr Ortszeit Vandenberg (17:58 Berlin), Ersatz Mittwoch 08:49 Ortszeit. Booster fliegt zum 29. Mal. Vierter Space-Force-Start von SLC-4E in kurzer Folge, deshalb 75 % für den Zieltag. Kurswirkung gering. Stand So 05:30: Verschoben. SpaceX zielt jetzt auf Montag 23.11., Vier-Stunden-Fenster ab 08:04 Uhr Ortszeit Vandenberg (17:04 Berlin), Ersatz Di 24.11. 07:55 Ortszeit (16:55 Berlin). Laut Launch-Library-Verlauf rutschte der Start schon am 13.11. vom 18. auf den 23.11.; einen Grund nennt SpaceX nicht (SpaceX, Space Launch Live). 75 % unverändert für den neuen Termin. Stand So 06:30: Unverändert Mo 23.11. 16:04 UTC (17:04 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 08:00: Launch Library 2 nennt jetzt Di 24.11. 15:55 UTC (16:55 Berlin), Status „Go“. 75 % unverändert für den neuen Termin.",
       "example": false,
       "sources": [
         {
@@ -313,6 +195,10 @@
         {
           "title": "Launch Library 2: kommende Starts (Stand 15.11. 11:40: USSF-317 18.11. 03:14 UTC, NROL-136 21.11. 12:30 UTC, USSF-266 23.11. 16:04 UTC, NG-25 29.11. 15:47 UTC, alle „Go“)",
           "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?mode=list"
+        },
+        {
+          "title": "Launch Library 2: Startliste (Stand Mo 23.11., 07:45)",
+          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
         }
       ]
     },
@@ -505,9 +391,9 @@
         "SPCX",
         "TSLA"
       ],
-      "probabilityPct": 70,
+      "probabilityPct": 85,
       "impact": "mittel",
-      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nach dem US-Start lag Nvidia zeitweise bis zu 8 % im Minus, um 18:05 bei ~177,2 $ (−5,0 %), während Broadcom, AMD und die Nasdaq (~+2,5 %) stiegen. Stand 20:05: Nvidia ~176,8 $ (−5,3 %), weiter keine öffentliche Antwort Huangs auf die Briefing-Bitte; Nvidia hatte schon auf frühere Nachfragen nicht gesagt, ob er kommt (CNBC). Der künftige Mehrheitsführer Jeffries erwartet, dass die Affäre am Mo in einem vertraulichen Briefing mit dem Weißen Haus zur Sprache kommt (CNBC); Nvidia: Huang führe „ohne Unterbrechung“ weiter. Mit der neuen demokratischen Mehrheit droht zusätzlich mehr Aufsicht (CNBC). Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen. Stand 22:00: Nvidia schloss bei 178,67 $ (−4,3 %) – einziger Verlierer im Halbleiter-Index, der etwa 7 % stieg (Reuters). Die drei republikanischen Ausschuss-Chefs haben ihre Bitte um ein vertrauliches Briefing am 18.11. am Montagabend erneut öffentlich gemacht (The Verge); eine Zusage Huangs gibt es weiter nicht. Daher bleibt es bei 50 %. Neu Di 10.11.: Trump sagte im Weißen Haus, er habe mit Huang gesprochen, Huang bestreite, von einer Spionin gewusst zu haben – „das FBI schaut sich das an“. Eine Kanzlei in Los Angeles hat in San José eine Sammelklage von Aktionären gegen Nvidia und Huang eingereicht (CNBC). Nvidia vorbörslich etwa +1 %. 50 % unverändert, weil eine Zusage Huangs weiter fehlt. Stand Di 17:58: Nvidia dreht ins Minus, −6,6 % auf 166,83 $. The Information berichtet, über ein mit Alice Huang verbundenes Netzwerk seien seit 2023 mindestens 7,5 Mrd. $ Nvidia-Hardware an chinesische Firmen gegangen; Oppositionsführer Jeffries will mehr Antworten (Yahoo). Die Sammelklage umfasst Käufe vom 9.10.2025 bis 8.11.2026 (Anadolu). 50 % unverändert, eine Zusage Huangs fehlt weiter. Stand Mi 09:00: Nvidias Verwaltungsrat hat eine unabhängige Untersuchung mit Ex-Bundesanwalt Joon H. Kim und der Kanzlei Wachtell Lipton eingesetzt; er sieht bisher keinen Hinweis, dass Geheimnisse abgeflossen sind. Huang bleibt CEO. 50 % unverändert. Stand Mi 12:55: Nvidia-Aktie vorbörslich rund 5 % fester nach 5,5 % Minus am Di und 4,3 % am Mo (CNBC). Am Briefing-Termin ändert das nichts; 50 % unverändert. Stand Mi 20:00: Laut Bloomberg Law sind die Republikaner bereit, Huang vorzuladen, falls er bis Mittwochabend nicht auf die Briefing-Bitte antwortet; eine Vorladung ist noch nicht verschickt. Nvidia steigt trotzdem mit dem Chipsektor (um 20:00 +4,8 %, Yahoo). 50 % unverändert. Stand Mi 22:00: Ausschusschef Moolenaar sagte bei Fox Business, Huang habe bis Mittwochabend Zeit; Mast bereitet die Vorladung vor. Eine Antwort von Nvidia gibt es laut TechCrunch nicht. Nvidia schloss +2,9 % (Yahoo). 50 % unverändert. Stand Do 05:10: Huangs Frist für eine Antwort an den Ausschuss ist am Mittwochabend ohne öffentliche Antwort verstrichen (Techwire); Moolenaar und Mast hatten für diesen Fall eine Vorladung angekündigt. Zugleich berät Nvidias Verwaltungsrat über Huangs Ablösung (eigener Termin). Ob das Briefing am 18.11. stattfindet, bleibt offen: 50 % unverändert. Stand Do 15:00: Huang ist nicht mehr Nvidia-Chef (NVIDIA). Damit fällt der Anlass für ein Briefing durch ihn als Konzernchef weg; der Ausschuss kann ihn zwar weiter vorladen, und Nvidia könnte stattdessen Interimschefin Kress oder Anwälte schicken, öffentlich zugesagt ist aber nichts. 35 statt 50 %. Stand Do 16:00: Keine neue Aussage des Ausschusses nach dem Rücktritt gefunden. 35 % unverändert. Stand Do 18:00: Wende. Der Ausschussvorsitzende Brian Mast sagte am Donnerstag, Huang habe zugesagt, noch vor Thanksgiving (26.11.) vor dem Kongress auszusagen: „Er hat zugestimmt zu kommen, wir verhandeln über den Tag.“ Huangs Team habe sich am Mittwochabend gemeldet; Mast will ihn „in etwa einer Woche“ sehen, die Aussage soll wohl unter Eid und protokolliert vor mehreren Ausschüssen stattfinden, öffentlich oder vertraulich ist offen. Mast droht sonst mit einer Vorladung „für den nächsten Tag“ (CNBC). Zusätzlich fordert der Demokraten-Chef Jeffries ein vertrauliches Briefing für den Kongress, Senatorin Warren verlangt Antworten auch von Nvidias Führung (CNBC). Der Termin 18.11. ist damit nicht mehr fest, das Fenster reicht jetzt von Mo 16.11. bis Mi 25.11. 75 statt 35 %: Zusage und Vorladungsdrohung liegen vor, offen bleiben Tag und Rahmen, ein Rutschen nach Thanksgiving ist möglich. Stand Do 20:00: Keine neue Festlegung; der Tag wird laut TechCrunch weiter verhandelt, Zusage „vor Thanksgiving“ bleibt. 75 % unverändert. Stand Do 22:00: Kein Tag festgelegt; TechCrunch schreibt, Huang solle „in den kommenden Wochen“ vor dem Kongress aussagen. Der Bericht über eine dritte Affäre (Reuters) erhöht eher den Druck aus dem Kongress. 75 % unverändert. Stand Fr 07:00: Neuer Termin. Ausschuss-Chef Mast hat Huang am Donnerstag schriftlich gebeten, am 1.12. zu einem vertraulichen, protokollierten Gespräch zu kommen; bestätigt Huang bis Freitagabend nicht, will Mast ihn vorladen. Zusätzlich bittet Senator Tim Scott (Bankenausschuss) Huang um eine Aussage am 3.12. und Handelsminister Lutnick am 10.12.; Lutnick hat zugesagt (NBC News). Huang hat die Kanzlei Paul Weiss beauftragt (Reuters). Die Aussage „vor Thanksgiving“ ist damit vom Tisch, ich verschiebe den Termin auf 1.–3.12. 70 statt 75 %: Vorladungsdrohung und zwei Ausschüsse sprechen für einen Auftritt, aber Huang ist kein Nvidia-Chef mehr und kann mit Anwälten Zeit gewinnen. Stand Fr 09:10: Die Frist für Huangs schriftliche Zusage läuft heute um 20 Uhr ET ab (Sa 02:00 Berlin), sonst lädt der Auswärtige Ausschuss ihn vor. Zusätzlich soll am 3.12. um 10 Uhr ET Jeffrey Kessler (Handelsministerium, Exportkontrollen) vor Masts Ausschuss aussagen (Edit USA). 70 % unverändert. Stand So 05:30: Die Frist für Huangs schriftliche Zusage (Sa 02:00 Berlin) ist abgelaufen, ohne dass Huang, Nvidia oder die Ausschüsse ein Ergebnis veröffentlicht haben; eine Vorladung ist ebenfalls nicht gemeldet. Der eigene Frist-Termin ist deshalb aus dem Kalender genommen und wird nicht gewertet. 70 % für den Auftritt Anfang Dezember unverändert.",
+      "reasoning": "Nvidias Verwaltungsrat prüft seit So 8.11., ob Chef Jensen Huang Ziel chinesischer Spionage war. Huang gab eine Affäre mit einer Managerin des Kunden Megaspeed zu; laut Board keine Hinweise auf verratene Geheimnisse, Huang bleibt Chef. Trump nannte Huang am So „ehrenhaft“. Drei republikanische Ausschuss-Chefs bitten um ein vertrauliches Briefing am 18.11.; Huang soll bis 11.11. zusagen oder einen anderen Termin nennen — eine Bitte, keine Vorladung, daher 50 %. Nach dem US-Start lag Nvidia zeitweise bis zu 8 % im Minus, um 18:05 bei ~177,2 $ (−5,0 %), während Broadcom, AMD und die Nasdaq (~+2,5 %) stiegen. Stand 20:05: Nvidia ~176,8 $ (−5,3 %), weiter keine öffentliche Antwort Huangs auf die Briefing-Bitte; Nvidia hatte schon auf frühere Nachfragen nicht gesagt, ob er kommt (CNBC). Der künftige Mehrheitsführer Jeffries erwartet, dass die Affäre am Mo in einem vertraulichen Briefing mit dem Weißen Haus zur Sprache kommt (CNBC); Nvidia: Huang führe „ohne Unterbrechung“ weiter. Mit der neuen demokratischen Mehrheit droht zusätzlich mehr Aufsicht (CNBC). Baird erwartet, dass Washington die H200-Lizenz für China zurückzieht; Bernstein spricht von einer länger anhaltenden Belastung. Wichtig für uns: Nvidia ist der Taktgeber des KI-Komplexes, an dem SpaceX (Rechenzentren) und Tesla hängen. Einen Tag vorher (17.11.) kommen Nvidias Zahlen. Stand 22:00: Nvidia schloss bei 178,67 $ (−4,3 %) – einziger Verlierer im Halbleiter-Index, der etwa 7 % stieg (Reuters). Die drei republikanischen Ausschuss-Chefs haben ihre Bitte um ein vertrauliches Briefing am 18.11. am Montagabend erneut öffentlich gemacht (The Verge); eine Zusage Huangs gibt es weiter nicht. Daher bleibt es bei 50 %. Neu Di 10.11.: Trump sagte im Weißen Haus, er habe mit Huang gesprochen, Huang bestreite, von einer Spionin gewusst zu haben – „das FBI schaut sich das an“. Eine Kanzlei in Los Angeles hat in San José eine Sammelklage von Aktionären gegen Nvidia und Huang eingereicht (CNBC). Nvidia vorbörslich etwa +1 %. 50 % unverändert, weil eine Zusage Huangs weiter fehlt. Stand Di 17:58: Nvidia dreht ins Minus, −6,6 % auf 166,83 $. The Information berichtet, über ein mit Alice Huang verbundenes Netzwerk seien seit 2023 mindestens 7,5 Mrd. $ Nvidia-Hardware an chinesische Firmen gegangen; Oppositionsführer Jeffries will mehr Antworten (Yahoo). Die Sammelklage umfasst Käufe vom 9.10.2025 bis 8.11.2026 (Anadolu). 50 % unverändert, eine Zusage Huangs fehlt weiter. Stand Mi 09:00: Nvidias Verwaltungsrat hat eine unabhängige Untersuchung mit Ex-Bundesanwalt Joon H. Kim und der Kanzlei Wachtell Lipton eingesetzt; er sieht bisher keinen Hinweis, dass Geheimnisse abgeflossen sind. Huang bleibt CEO. 50 % unverändert. Stand Mi 12:55: Nvidia-Aktie vorbörslich rund 5 % fester nach 5,5 % Minus am Di und 4,3 % am Mo (CNBC). Am Briefing-Termin ändert das nichts; 50 % unverändert. Stand Mi 20:00: Laut Bloomberg Law sind die Republikaner bereit, Huang vorzuladen, falls er bis Mittwochabend nicht auf die Briefing-Bitte antwortet; eine Vorladung ist noch nicht verschickt. Nvidia steigt trotzdem mit dem Chipsektor (um 20:00 +4,8 %, Yahoo). 50 % unverändert. Stand Mi 22:00: Ausschusschef Moolenaar sagte bei Fox Business, Huang habe bis Mittwochabend Zeit; Mast bereitet die Vorladung vor. Eine Antwort von Nvidia gibt es laut TechCrunch nicht. Nvidia schloss +2,9 % (Yahoo). 50 % unverändert. Stand Do 05:10: Huangs Frist für eine Antwort an den Ausschuss ist am Mittwochabend ohne öffentliche Antwort verstrichen (Techwire); Moolenaar und Mast hatten für diesen Fall eine Vorladung angekündigt. Zugleich berät Nvidias Verwaltungsrat über Huangs Ablösung (eigener Termin). Ob das Briefing am 18.11. stattfindet, bleibt offen: 50 % unverändert. Stand Do 15:00: Huang ist nicht mehr Nvidia-Chef (NVIDIA). Damit fällt der Anlass für ein Briefing durch ihn als Konzernchef weg; der Ausschuss kann ihn zwar weiter vorladen, und Nvidia könnte stattdessen Interimschefin Kress oder Anwälte schicken, öffentlich zugesagt ist aber nichts. 35 statt 50 %. Stand Do 16:00: Keine neue Aussage des Ausschusses nach dem Rücktritt gefunden. 35 % unverändert. Stand Do 18:00: Wende. Der Ausschussvorsitzende Brian Mast sagte am Donnerstag, Huang habe zugesagt, noch vor Thanksgiving (26.11.) vor dem Kongress auszusagen: „Er hat zugestimmt zu kommen, wir verhandeln über den Tag.“ Huangs Team habe sich am Mittwochabend gemeldet; Mast will ihn „in etwa einer Woche“ sehen, die Aussage soll wohl unter Eid und protokolliert vor mehreren Ausschüssen stattfinden, öffentlich oder vertraulich ist offen. Mast droht sonst mit einer Vorladung „für den nächsten Tag“ (CNBC). Zusätzlich fordert der Demokraten-Chef Jeffries ein vertrauliches Briefing für den Kongress, Senatorin Warren verlangt Antworten auch von Nvidias Führung (CNBC). Der Termin 18.11. ist damit nicht mehr fest, das Fenster reicht jetzt von Mo 16.11. bis Mi 25.11. 75 statt 35 %: Zusage und Vorladungsdrohung liegen vor, offen bleiben Tag und Rahmen, ein Rutschen nach Thanksgiving ist möglich. Stand Do 20:00: Keine neue Festlegung; der Tag wird laut TechCrunch weiter verhandelt, Zusage „vor Thanksgiving“ bleibt. 75 % unverändert. Stand Do 22:00: Kein Tag festgelegt; TechCrunch schreibt, Huang solle „in den kommenden Wochen“ vor dem Kongress aussagen. Der Bericht über eine dritte Affäre (Reuters) erhöht eher den Druck aus dem Kongress. 75 % unverändert. Stand Fr 07:00: Neuer Termin. Ausschuss-Chef Mast hat Huang am Donnerstag schriftlich gebeten, am 1.12. zu einem vertraulichen, protokollierten Gespräch zu kommen; bestätigt Huang bis Freitagabend nicht, will Mast ihn vorladen. Zusätzlich bittet Senator Tim Scott (Bankenausschuss) Huang um eine Aussage am 3.12. und Handelsminister Lutnick am 10.12.; Lutnick hat zugesagt (NBC News). Huang hat die Kanzlei Paul Weiss beauftragt (Reuters). Die Aussage „vor Thanksgiving“ ist damit vom Tisch, ich verschiebe den Termin auf 1.–3.12. 70 statt 75 %: Vorladungsdrohung und zwei Ausschüsse sprechen für einen Auftritt, aber Huang ist kein Nvidia-Chef mehr und kann mit Anwälten Zeit gewinnen. Stand Fr 09:10: Die Frist für Huangs schriftliche Zusage läuft heute um 20 Uhr ET ab (Sa 02:00 Berlin), sonst lädt der Auswärtige Ausschuss ihn vor. Zusätzlich soll am 3.12. um 10 Uhr ET Jeffrey Kessler (Handelsministerium, Exportkontrollen) vor Masts Ausschuss aussagen (Edit USA). 70 % unverändert. Stand So 05:30: Die Frist für Huangs schriftliche Zusage (Sa 02:00 Berlin) ist abgelaufen, ohne dass Huang, Nvidia oder die Ausschüsse ein Ergebnis veröffentlicht haben; eine Vorladung ist ebenfalls nicht gemeldet. Der eigene Frist-Termin ist deshalb aus dem Kalender genommen und wird nicht gewertet. 70 % für den Auftritt Anfang Dezember unverändert. Stand Mo 08:00: Huang hat laut einem Mitarbeiter von Senator Tim Scott einer öffentlichen Senatsanhörung zugestimmt, Datum noch offen (angefragt war der 3.12.); die vertrauliche Befragung durch drei Ausschüsse des Repräsentantenhauses am 1.12. ist ebenfalls zugesagt (Korea Times/Reuters, Guardian). 70 → 85 %, weil beide Zusagen vorliegen.",
       "example": false,
       "sources": [
         {
@@ -637,6 +523,14 @@
         {
           "title": "Edit USA: Frist für Huang Fr 20 Uhr ET, Termine 1., 3. und 10.12. (12.11.)",
           "url": "https://www.editusa.com/intelligence/jensen-huang-congress-deadline-december-hearings-lutnick-kessler"
+        },
+        {
+          "title": "Korea Times/Reuters: Huang sagt öffentliche Senatsanhörung zu (21.11.)",
+          "url": "https://www.koreatimes.co.kr/world/20261121/former-nvidia-ceo-huang-agreed-to-testify-at-public-us-senate-hearing-senators-aide-says"
+        },
+        {
+          "title": "The Guardian: Huang sagt am 1. Dezember vor Kongressausschüssen aus (17.11.)",
+          "url": "https://www.theguardian.com/technology/2026/nov/17/jensen-huang-testify-congress-nvidia-affair-spy"
         }
       ],
       "end": "2026-12-03"
@@ -694,9 +588,9 @@
         "SPCX",
         "TSLA"
       ],
-      "probabilityPct": 40,
+      "probabilityPct": 30,
       "impact": "hoch",
-      "reasoning": "Bloomberg berichtete am Do 12.11. (21:22 Berlin) unter Berufung auf Insider: Die Fusionsgespräche kommen voran, eine Bekanntgabe des bisher größten Firmendeals sei schon im Dezember möglich. Besprochen wird auch, dass es Anfang 2027 wird. Verwaltungsräte und Berater verhandeln über die Führungsstruktur, wie viele SpaceX-Aktien Tesla-Aktionäre bekämen und wie Teslas China-Geschäft abgeschirmt würde (Bloomberg, Mint). Musk hatte im Oktober Sonderausschüsse aus unabhängigen Direktoren genannt. Es sei aber zu früh, von einer Fusion auszugehen, die Ausschüsse hätten sich noch nicht auf Bedingungen geeinigt (Reuters/cash). Gegenwind: Spannungen zwischen SpaceX-Regierungsaufträgen und Teslas China-Werk (JPMorgan) und ein Kongress mit demokratischen Mehrheiten, der Musk prüfen will. Jefferies hält die Fusion nach den Wahlen für schwieriger. Die Tesla-Hauptversammlung ist am 3.12. Meine 40 % gelten für eine offizielle Bekanntgabe im Dezember. Der Zeitplan ist laut Bericht ehrgeizig, Musk-Termine rutschen oft, und die Ausschüsse haben noch keine Bedingungen. Nachbörslich am Do um 01:59 Berlin: SPCX 141,96 $ (+1,4 %), TSLA 399,85 $ (+0,6 %) (Yahoo). Stand Fr 07:00: Keine neuen Details. Tesla stieg am Do zeitweise um 1,9 % auf den Bericht (Electrek). Electrek weist darauf hin, dass bei einem Kontrollwechsel Teile von Musks Tesla-Vergütung sofort fällig werden könnten. Reuters hat SpaceX und Tesla nicht erreicht. 40 % unverändert. Stand Fr 09:10: Keine neue Meldung der Firmen. Barclays hatte im Oktober durchgerechnet: Nach einer Übernahme Teslas durch SpaceX hielte Musk rund 37 % des Kapitals, aber 56 % der Stimmen. Laut Musk muss die Hälfte aller ausstehenden Tesla-Aktien zustimmen; auf der Tagesordnung der Hauptversammlung am 3.12. steht die Fusion bisher nicht (Investing.com). 40 % unverändert. Stand Fr 09:55: Keine Stellungnahme der Firmen. Nächster fester Termin bleibt die Tesla-Hauptversammlung am 3.12., auf der Musk und Denholm zur Wiederwahl stehen (finanzen.net). 40 % unverändert. Stand Fr 13:10: Weiter keine Stellungnahme von SpaceX oder Tesla (RTÉ). Bloomberg nennt als größte Hürden die Trennung von Teslas China-Geschäft und SpaceX' Rüstungsaufträgen sowie das Umtauschverhältnis. 40 % unverändert. Stand Sa 11:30: Neuer politischer Gegenwind aus Texas: Der designierte demokratische Generalstaatsanwalt Nathan Johnson, der im Januar antritt, sagte Bloomberg am Do, jede Fusion dieser Größe brauche „enorme Prüfung“; Musk habe von politischer Nachsicht profitiert (Investing.com). Eine Bekanntgabe im Dezember verhindert das nicht, eine spätere Genehmigung könnte es aber erschweren. 40 % unverändert. Stand Sa 18:00: Bloomberg rechnet vor, dass eine Fusion SpaceX über Tesla in den S&P 500 bringen könnte; TD Securities schätzt die Nachfrage der Indexfonds auf rund 100 Mrd. $ (Bloomberg via Livemint). Neue Fakten zu Konditionen oder Termin gibt es nicht; beide Firmen haben nichts bestätigt. 40 % unverändert. Stand So 16:00: Ein Bericht von Merger Monday (So 05:37 New Yorker Zeit) fasst frühere Berichte zusammen: Die Gespräche drehen sich jetzt um Preis und Kontrolle, eine Bekanntgabe sei ab Dezember möglich, ein Zeitplan bis Anfang 2027 sei aber ebenfalls besprochen worden. Bestätigt hat keine der beiden Firmen etwas, neue Zahlen nennt der Bericht nicht. 40 % unverändert. Stand Do 12:25: Musk im NYT-Interview (DealBook): Eine Fusion sei nicht sicher, „beide Wege sind möglich“. Vor fünf Jahren hätte er keinen Grund gesehen, heute verbänden KI, Robotik und eigene Chipteams beide Firmen (druckfin). Keine neue Firmen- oder SEC-Meldung. 40 % unverändert. Stand Fr 12:20: HSBC hebt Tesla von „Reduce“ auf „Hold“ und das Kursziel von 157 auf 359 $. Die Bank rechnet zur Hälfte mit einer Übernahme durch SpaceX (33 % Aufschlag, 507 $ je Aktie) und zur Hälfte mit dem eigenen Wert (212 $), hält die strategische Logik aber für „begrenzt“ (Investing.com, Yahoo/Stocktwits). Das ist eine Analystenrechnung, keine Firmenmeldung. 40 % unverändert.",
+      "reasoning": "Bloomberg berichtete am Do 12.11. (21:22 Berlin) unter Berufung auf Insider: Die Fusionsgespräche kommen voran, eine Bekanntgabe des bisher größten Firmendeals sei schon im Dezember möglich. Besprochen wird auch, dass es Anfang 2027 wird. Verwaltungsräte und Berater verhandeln über die Führungsstruktur, wie viele SpaceX-Aktien Tesla-Aktionäre bekämen und wie Teslas China-Geschäft abgeschirmt würde (Bloomberg, Mint). Musk hatte im Oktober Sonderausschüsse aus unabhängigen Direktoren genannt. Es sei aber zu früh, von einer Fusion auszugehen, die Ausschüsse hätten sich noch nicht auf Bedingungen geeinigt (Reuters/cash). Gegenwind: Spannungen zwischen SpaceX-Regierungsaufträgen und Teslas China-Werk (JPMorgan) und ein Kongress mit demokratischen Mehrheiten, der Musk prüfen will. Jefferies hält die Fusion nach den Wahlen für schwieriger. Die Tesla-Hauptversammlung ist am 3.12. Meine 40 % gelten für eine offizielle Bekanntgabe im Dezember. Der Zeitplan ist laut Bericht ehrgeizig, Musk-Termine rutschen oft, und die Ausschüsse haben noch keine Bedingungen. Nachbörslich am Do um 01:59 Berlin: SPCX 141,96 $ (+1,4 %), TSLA 399,85 $ (+0,6 %) (Yahoo). Stand Fr 07:00: Keine neuen Details. Tesla stieg am Do zeitweise um 1,9 % auf den Bericht (Electrek). Electrek weist darauf hin, dass bei einem Kontrollwechsel Teile von Musks Tesla-Vergütung sofort fällig werden könnten. Reuters hat SpaceX und Tesla nicht erreicht. 40 % unverändert. Stand Fr 09:10: Keine neue Meldung der Firmen. Barclays hatte im Oktober durchgerechnet: Nach einer Übernahme Teslas durch SpaceX hielte Musk rund 37 % des Kapitals, aber 56 % der Stimmen. Laut Musk muss die Hälfte aller ausstehenden Tesla-Aktien zustimmen; auf der Tagesordnung der Hauptversammlung am 3.12. steht die Fusion bisher nicht (Investing.com). 40 % unverändert. Stand Fr 09:55: Keine Stellungnahme der Firmen. Nächster fester Termin bleibt die Tesla-Hauptversammlung am 3.12., auf der Musk und Denholm zur Wiederwahl stehen (finanzen.net). 40 % unverändert. Stand Fr 13:10: Weiter keine Stellungnahme von SpaceX oder Tesla (RTÉ). Bloomberg nennt als größte Hürden die Trennung von Teslas China-Geschäft und SpaceX' Rüstungsaufträgen sowie das Umtauschverhältnis. 40 % unverändert. Stand Sa 11:30: Neuer politischer Gegenwind aus Texas: Der designierte demokratische Generalstaatsanwalt Nathan Johnson, der im Januar antritt, sagte Bloomberg am Do, jede Fusion dieser Größe brauche „enorme Prüfung“; Musk habe von politischer Nachsicht profitiert (Investing.com). Eine Bekanntgabe im Dezember verhindert das nicht, eine spätere Genehmigung könnte es aber erschweren. 40 % unverändert. Stand Sa 18:00: Bloomberg rechnet vor, dass eine Fusion SpaceX über Tesla in den S&P 500 bringen könnte; TD Securities schätzt die Nachfrage der Indexfonds auf rund 100 Mrd. $ (Bloomberg via Livemint). Neue Fakten zu Konditionen oder Termin gibt es nicht; beide Firmen haben nichts bestätigt. 40 % unverändert. Stand So 16:00: Ein Bericht von Merger Monday (So 05:37 New Yorker Zeit) fasst frühere Berichte zusammen: Die Gespräche drehen sich jetzt um Preis und Kontrolle, eine Bekanntgabe sei ab Dezember möglich, ein Zeitplan bis Anfang 2027 sei aber ebenfalls besprochen worden. Bestätigt hat keine der beiden Firmen etwas, neue Zahlen nennt der Bericht nicht. 40 % unverändert. Stand Do 12:25: Musk im NYT-Interview (DealBook): Eine Fusion sei nicht sicher, „beide Wege sind möglich“. Vor fünf Jahren hätte er keinen Grund gesehen, heute verbänden KI, Robotik und eigene Chipteams beide Firmen (druckfin). Keine neue Firmen- oder SEC-Meldung. 40 % unverändert. Stand Fr 12:20: HSBC hebt Tesla von „Reduce“ auf „Hold“ und das Kursziel von 157 auf 359 $. Die Bank rechnet zur Hälfte mit einer Übernahme durch SpaceX (33 % Aufschlag, 507 $ je Aktie) und zur Hälfte mit dem eigenen Wert (212 $), hält die strategische Logik aber für „begrenzt“ (Investing.com, Yahoo/Stocktwits). Das ist eine Analystenrechnung, keine Firmenmeldung. 40 % unverändert. Stand Mo 08:00: Musk sagte am Fr, er solle für eine Fusion mit SpaceX keine Tesla-Vergütung bekommen; die Wettquote für eine Bekanntgabe noch 2026 fiel laut Longbridge auf 16 %. Gary Black warnt vor Verwässerung bei einem Aktientausch (Longbridge, Benzinga). Keine neue SEC-Meldung. 40 → 30 %.",
       "example": false,
       "sources": [
         {
@@ -766,6 +660,14 @@
         {
           "title": "Yahoo/Stocktwits: HSBC-Upgrade, Fusionslogik „begrenzt“ (20.11.)",
           "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-stock-gets-hsbc-upgrade-110242794.html"
+        },
+        {
+          "title": "Longbridge: Wochenbilanz Tesla −11,38 %, HSBC Hold 359 $, Südkorea lehnt FSD ab (21.11.)",
+          "url": "https://longbridge.com/en/news/306361728"
+        },
+        {
+          "title": "Benzinga: Diese Woche bei TSLA – Cybercab, Fusionsgerede, Model Y ohne Lenkrad (22.11.)",
+          "url": "https://www.benzinga.com/markets/tech/26/11/63517090/this-week-in-tsla-cybercabs-deliveries-spacex-tesla-merger-talk-model-y-without-steering-wheel-and-more"
         }
       ]
     },
@@ -1278,9 +1180,9 @@
     },
     {
       "id": "evt-electron-strix14",
-      "title": "Rocket Lab: Electron-Start „Night Owls Never Sleep“ (14. StriX-Satellit für Synspective, frühestens 27.11.)",
+      "title": "Rocket Lab: Electron-Start „Night Owls Never Sleep“ (14. StriX-Satellit, Fr 27.11. 01:05)",
       "date": "2026-11-27",
-      "time": null,
+      "time": "01:05",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -1288,14 +1190,18 @@
       "tickers": [
         "RKLB"
       ],
-      "probabilityPct": 60,
+      "probabilityPct": 70,
       "impact": "niedrig",
-      "reasoning": "Der Start der 14. StriX-Mission wurde in den Startplänen von frühestens 30.11. auf frühestens 27.11. vorgezogen (Kurzia Spaceflight Daily, 20.11.). Uhrzeit noch nicht genannt. 60 %, weil frühe Electron-Termine oft um einige Tage rutschen. Für den Kurs Routine, nach dem 100. Electron-Start eher ein Zeichen der Taktung.",
+      "reasoning": "Der Start der 14. StriX-Mission wurde in den Startplänen von frühestens 30.11. auf frühestens 27.11. vorgezogen (Kurzia Spaceflight Daily, 20.11.). Uhrzeit noch nicht genannt. 60 %, weil frühe Electron-Termine oft um einige Tage rutschen. Für den Kurs Routine, nach dem 100. Electron-Start eher ein Zeichen der Taktung. Stand Mo 08:00: Launch Library 2 nennt Fr 27.11. 00:05 UTC (01:05 Berlin) mit Status „Go“. 60 → 70 %, weil Zeit und Status jetzt stehen; Electron-Termine rutschen trotzdem oft um Tage.",
       "example": false,
       "sources": [
         {
           "title": "Kurzia Spaceflight Daily: Electron „Night Owls Never Sleep“ auf NET 27.11. vorgezogen (20.11.)",
           "url": "https://kurzia.com/n/spaceflight-daily/i/iss_fe5bd497547245a6b87d7b70589dce0c"
+        },
+        {
+          "title": "Launch Library 2: Startliste (Stand Mo 23.11., 07:45)",
+          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
         }
       ]
     },
@@ -1817,272 +1723,10 @@
       ]
     },
     {
-      "id": "evt-dragon-crs35-abdocken",
-      "title": "SpaceX: Frachtkapsel Dragon (CRS-35) hat von der ISS abgelegt (Fr 20.11. 18:05)",
-      "date": "2026-11-20",
-      "time": "18:05",
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "start",
-      "company": "SpaceX",
-      "tickers": [
-        "SPCX"
-      ],
-      "probabilityPct": 100,
-      "impact": "niedrig",
-      "reasoning": "Die Dragon-Frachtkapsel der 35. Versorgungsmission soll am Do 19.11. um 12:05 Uhr US-Ostküstenzeit (18:05 Berlin) von der ISS ablegen und danach vor Kalifornien wassern. Am Mi wurde das Abdocken wegen schlechten Wetters in den Landegebieten abgesagt; die NASA nennt nur das Wetter als Grund, nicht die Kapsel (NASA, SpaceX auf X). 70 %, weil das Wetter vor Kalifornien schon einmal zum Aufschub geführt hat. Für den Kurs ist das Routine. Stand Mi 13:30: Die NASA prüft das Wetter erneut am Mi um 12:00 Uhr US-Ostküstenzeit (18:00 Berlin); die nächste Abdock-Chance bleibt Do 12:05 Ostküstenzeit (NASA). 70 % unverändert. Stand Mi 15:30: Keine neue NASA-Meldung seit der Absage für Mittwoch; die nächste Wetterbesprechung ist heute um 18:00 Berlin, die nächste Gelegenheit Do 18:05 (NASA). 70 % unverändert. Stand Mi 16:15: Weiter keine neue NASA-Meldung; Wetterbesprechung 18:00 Berlin, nächste Gelegenheit Do 18:05 (NASA). 70 % unverändert. Stand Mi 18:15: Das Ergebnis der Wetterbesprechung von 18:00 ist noch nicht veröffentlicht; im NASA-Blog steht weiter nur die Absage für Mittwoch. SpaceX nennt als Termin frühestens Do 12:05 Uhr Ostküstenzeit (18:05 Berlin) (NASA, SpaceX). 70 % unverändert. Stand Mi 20:15: Ergebnis der Wetterbesprechung: Auch Donnerstag fällt aus. NASA und SpaceX nennen jetzt frühestens Fr 20.11. um 12:05 Uhr Ostküstenzeit (18:05 Berlin) fürs Abdocken und frühestens Sa 21.11. um 17:04 Uhr Ostküstenzeit (23:04 Berlin) für die Wasserung vor Kalifornien, je nach Wetter (NASA, SpaceX). Ein technisches Problem wird nicht genannt. Weil das Wetter schon zweimal nicht passte, bleibt es bei 70 % für Freitag. Stand Mi 22:15: Die ISS-Crew packt weiter Experimente und Geräte in die Kapsel (NASA, ISS auf X). Neuer Termin bleibt frühestens Fr 20.11. 18:05 Berlin, Wasserung frühestens Sa 23:04, je nach Wetter (NASA). 70 % unverändert. Stand Do 08:20: SpaceX und NASA nennen weiter frühestens Fr 20.11. 12:05 Uhr Ostküstenzeit (18:05 Berlin) (SpaceX, NASA). 70 % unverändert, Wetter bleibt das Risiko. Stand Do 12:25: NASA bestätigt die Übertragung: Abkoppeln frühestens Fr 12:05 Uhr Ostküstenzeit (18:05 Berlin), Wasserung vor Kalifornien frühestens Sa 17:04 Ostküstenzeit (23:04 Berlin), je nach Wetter (NASA). 70 % unverändert. Stand Do 18:20: Die Seewetter-Vorhersage für Nordkalifornien sieht besser aus (5–15 Knoten Wind, 6–9 Fuß Wellen), weiter draußen bis 25 Knoten (NOAA). Termin bleibt frühestens Fr 18:05 Berlin. 70 % unverändert. Stand Fr 07:50: Die NASA hält am Abdocken heute um 12:05 Uhr Ostküstenzeit (18:05 Berlin) fest, Übertragung ab 17:45 Berlin; Wasserung vor Kalifornien Sa 21.11. gegen 22:55 Berlin, wetterabhängig (NASA, aktualisiert 19.11.). 70 % unverändert, weil das Wetter im Landegebiet schon zweimal zum Aufschub geführt hat. Stand Fr 12:20: NASA und Space.com nennen weiter heute 12:05 Uhr Ostküstenzeit (18:05 Berlin), Übertragung ab 17:45 Berlin, Wasserung Sa gegen 22:55 Berlin; bei schlechtem Seegang bleibt Dragon länger an der ISS (Space.com, NASA). 70 % unverändert. Stand Fr 14:30: SpaceX und NASA halten am Abdocken heute um 12:05 Uhr Ostküstenzeit (18:05 Berlin) fest, NASA überträgt ab 17:45 Berlin; die Wasserung vor Kalifornien ist für Sa 21.11. gegen 22:55 Berlin geplant, bei schlechtem Wetter bleibt die Kapsel länger an der Station (SpaceX, Space.com). An Bord ist auch das defekte Handgelenk des Roboterarms Canadarm2. 70 % unverändert, weil das Wetter weiter der Engpass ist. Stand Fr 16:20: Keine Absage gemeldet. NASA und SpaceX nennen weiter 12:05 Uhr Ostküstenzeit (18:05 Berlin) fürs Abdocken, Übertragung ab 17:45 Berlin, Wasserung Sa gegen 22:55 Berlin, je nach Wetter (NASA, Space.com). 70 % unverändert. Stand Fr 18:20: Keine Absage. NASA hat um 17:47 Berlin die Live-Übertragung zum Abflug gestartet, Abdocken weiter für 18:05 geplant; die Wasserung ist für Sa 21.11. gegen 22:55 Berlin vor Kalifornien angesetzt (NASA, Space.com). Eine Bestätigung des Abdockens im NASA-Blog steht noch aus. Weil das Wetter-Hindernis offenbar weg ist und die Übertragung läuft, 70 → 90 %. Stand Fr 20:30: Eingetreten. Die Dragon legte um 12:05 Uhr Ostküstenzeit (18:05 Berlin) vom Harmony-Modul ab und soll am Sa 21.11. gegen 22:55 Uhr Berliner Zeit vor Kalifornien wassern; die NASA überträgt die Landung nicht (NASA, Space.com). 90 → 100 %.",
-      "example": false,
-      "sources": [
-        {
-          "title": "SpaceX: CRS-35",
-          "url": "https://www.spacex.com/launches/crs35/"
-        },
-        {
-          "title": "NASA: Übertragung des CRS-35-Abdockens",
-          "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/"
-        },
-        {
-          "title": "NASA: Dragon-Abdocken am Mittwoch wegen Wetter abgesagt, nächste Chance Do 19.11. 12:05 EST (18.11.)",
-          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-stand-down-from-dragons-undocking-on-wednesday/"
-        },
-        {
-          "title": "@SpaceX auf X (18.11., 07:28): Dragon-Abdocken frühestens Do 19.11.",
-          "url": "https://x.com/SpaceX/status/2122940097683177721"
-        },
-        {
-          "title": "SpaceAndSky: Wetter verschiebt Dragon-Abflug auf Donnerstag (18.11.)",
-          "url": "https://spaceandsky.com/dragon-undocking-delayed-weather-splashdown-california/"
-        },
-        {
-          "title": "NASA Space Station Blog (Stand 18.11., 18:15)",
-          "url": "https://www.nasa.gov/blogs/spacestation/"
-        },
-        {
-          "title": "SpaceX: CRS-35 – Abdocken frühestens Do 19.11., 12:05 Uhr ET",
-          "url": "https://www.spacex.com/launches/crs35/"
-        },
-        {
-          "title": "NASA: Übertragung der Abreise von CRS-35 (aktualisiert 18.11.: frühestens Fr 20.11., Wasserung frühestens Sa 21.11.)",
-          "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/"
-        },
-        {
-          "title": "NASA-Blog: Crew packt Dragon für die Rückkehr, Abdocken wegen Wetter verschoben (18.11.)",
-          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-prepare-for-dragon-undocking-as-science-packing-continues/"
-        },
-        {
-          "title": "@Space_Station auf X (18.11., 20:23): Expedition 75 packt Dragon für die Rückkehr",
-          "url": "https://x.com/Space_Station/status/2123134950614647283"
-        },
-        {
-          "title": "NOAA: Seewetter-Vorhersage Pazifik (FZPN26)",
-          "url": "https://www.ndbc.noaa.gov/data/Forecasts/FZPN26.KWBC.html"
-        },
-        {
-          "title": "NASA: Abdocken CRS-35 Fr 20.11. 12:05 EST, Wasserung Sa 21.11. (aktualisiert 19.11.)",
-          "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/"
-        },
-        {
-          "title": "Space.com: Dragon-Frachtkapsel kehrt heute von der ISS zurück (20.11.)",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-crs-35-dragon-iss-cargo-mission-return-to-earth"
-        },
-        {
-          "title": "NASA: Dragon Prepares to Depart Station for Earth Return (20.11., 11:47 Ostküstenzeit)",
-          "url": "https://www.nasa.gov/blogs/general-blog/2026/11/20/dragon-prepares-to-depart-station-for-earth-return/"
-        },
-        {
-          "title": "NASA: Dragon Undocks from Station Packed With Science and Cargo (20.11.)",
-          "url": "https://www.nasa.gov/blogs/general-blog/2026/11/20/dragon-undocks-from-station-packed-with-science-and-cargo/"
-        },
-        {
-          "title": "Space.com: SpaceX Dragon cargo capsule heads home to Earth from the ISS (20.11.)",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-crs-35-dragon-iss-cargo-mission-return-to-earth"
-        }
-      ]
-    },
-    {
-      "id": "evt-spcx-chip-anleihe",
-      "title": "SpaceX: Anleihen über 32 Mrd. $ für Nvidia-Chips verkauft (eingetreten)",
-      "date": "2026-11-18",
-      "end": "2026-11-20",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "finanzierung",
-      "company": "SpaceX",
-      "tickers": [
-        "SPCX"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Laut Bloomberg könnten Goldman Sachs und Apollo schon diese Woche rund 4 Mrd. $ Anleihen aus der etwa 40 Mrd. $ schweren Finanzierung für Nvidias Vera-Rubin-Chips verkaufen. Eine Zweckgesellschaft von Atlas SP kauft die Chips und vermietet sie an SpaceX, so bleiben die Schulden außerhalb der SpaceX-Bilanz; ein Preis ist noch nicht festgelegt (Yahoo Finance/Bloomberg, Lianhe Zaobao). Finanzchef Johnsen sagte am Di, ein großer Teil des Ausbaus werde aus dem eigenen Geschäft bezahlt (Stocktwits). 60 %, weil nur ein Medienbericht vorliegt und SpaceX nichts bestätigt hat. Stand Mi 15:30: Semafor bestätigt unabhängig von Bloomberg, dass Teile der siebenteiligen Finanzierung schon diese Woche an Anleger gehen könnten. Apollo gibt zunächst fast 20 Mrd. $ selbst und verkauft das später weiter; der Großteil von 35,5 Mrd. $ soll 8,3 % bzw. 7,75 % Zins tragen, riskantere Teile unter 3 Mrd. $ über 9 %. Das Geld geht in eine Zweckgesellschaft, SpaceX mietet die GPUs (Semafor). 60 → 65 %, weil jetzt zwei Medien unabhängig berichten; SpaceX selbst hat weiter nichts bestätigt. Stand Mi 20:15: Ein Abschluss ist noch nicht gemeldet. Bemerkenswert: Das heute veröffentlichte Fed-Protokoll nennt ausdrücklich Leasing-Verpflichtungen außerhalb der Bilanz bei KI-Firmen als Risiko – genau so ist die SpaceX-Finanzierung gebaut (Zweckgesellschaft kauft die Chips, SpaceX mietet sie) (CNBC, Semafor). Das ändert nichts am Zeitplan; 65 % unverändert. Stand Fr 07:50: Keine neue Meldung zum Abschluss der Anleihe über Nacht; in der EDGAR-Volltextsuche kein neues 8-K. 65 % unverändert. Stand Fr 16:20: Eingetreten. SpaceX hat laut Bloomberg Anleihen über 32 Mrd. $ für den Kauf von Nvidia-Chips platziert, als Teil eines 40-Mrd.-$-Pakets mit Bankkrediten; die Zweckgesellschaft Saturn Funding Trust vermietet die Chips rund fünf Jahre an SpaceX, die Schulden stehen nicht in der SpaceX-Bilanz. Die größte Tranche über 25,2 Mrd. $ rentiert mit 8,259 %, deutlich über dem Schnitt von 5,95 % für US-Anleihen guter Bonität (Yahoo/Bloomberg, Lianhe Zaobao). Die Financial Times berichtet, Geldgeber wollten Musk untersagen, die als Sicherheit dienenden Chips ins All zu bringen, weil sie diese bei einem Ausfall nicht zurückholen könnten; ob das im Vertrag steht, ist offen (24/7 Wall St. nach FT). 65 → 100 %.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Yahoo Finance/Bloomberg: SpaceX-Schulden für KI-Chips kommen schon diese Woche an den Markt",
-          "url": "https://finance.yahoo.com/technology/ai/articles/spacex-debt-ai-chips-hit-145310043.html"
-        },
-        {
-          "title": "Lianhe Zaobao/Bloomberg: SpaceX könnte Teil der 40-Mrd.-$-Chipfinanzierung schon diese Woche starten",
-          "url": "https://www.zaobao.com.sg/en/finance/world/spacex-may-launch-part-us40-billion-ai-chip-debt-financing-early-week-sources"
-        },
-        {
-          "title": "Stocktwits: SpaceX-Finanzchef Johnsen – Rechenleistung großteils aus eigenem Geld, Anleihe für KI-Chips naht (17.11.)",
-          "url": "https://stocktwits.com/news-articles/markets/equity/space-x-to-self-fund-majority-of-compute-expansion-cfo-says-as-bond-sale-for-ai-chips-reportedly-nears/cNbXjL9R9hL"
-        },
-        {
-          "title": "Semafor: SpaceX-Chipfinanzierung über 40 Mrd. $ bleibt außerhalb der Bilanz (18.11.)",
-          "url": "https://www.semafor.com/article/11/18/2026/spacex-40-billion-chip-financing-to-stay-off-balance-sheet"
-        },
-        {
-          "title": "CNBC: Fed-Mitglieder erwarten weitere Zinserhöhungen und sorgen sich um KI-Inflation – Protokoll (18.11.)",
-          "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html"
-        },
-        {
-          "title": "SEC EDGAR Volltextsuche (8-K/Form 4, 19.–20.11.)",
-          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Tesla%22&forms=8-K,4"
-        },
-        {
-          "title": "Yahoo Finance/Bloomberg: SpaceX besorgt 32 Mrd. $ Schulden für Nvidia-Chips (20.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-raises-32-billion-debt-120100540.html"
-        },
-        {
-          "title": "Bloomberg Law: SpaceX schließt 32 Mrd. $ KI-Chip-Schulden mit Renditen über 8 % ab",
-          "url": "https://news.bloomberglaw.com/mergers-and-acquisitions/spacex-wraps-up-32-billion-of-ai-chip-debt-at-yields-topping-8"
-        },
-        {
-          "title": "Lianhe Zaobao: SpaceX gibt Anleihen über 32 Mrd. $ für Nvidia-Chips aus",
-          "url": "https://www.zaobao.com.sg/en/news/world/spacex-issues-us32-billion-bonds-finance-nvidia-ai-chip-purchases"
-        },
-        {
-          "title": "24/7 Wall St.: SpaceX fällt unter den Ausgabepreis, Geldgeber zögern bei Chips im All (FT-Bericht, 20.11., 15:52)",
-          "url": "https://247wallst.com/investing/2026/11/20/spacex-falls-5-breaks-below-ipo-price-as-lenders-reportedly-balk-at-musks-orbital-ai-chip-plans-rocket-lab-drops-3-ast-spacemobile-dips/"
-        }
-      ]
-    },
-    {
-      "id": "evt-ebc-lagarde-nov",
-      "title": "Frankfurt: European Banking Congress mit Reden von EZB-Chefin Lagarde und Deutsche-Bank-Chef Sewing (Lagarde-Rede gehalten)",
-      "date": "2026-11-20",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "zinsen",
-      "company": null,
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Reuters nennt die Reden von Christine Lagarde und Christian Sewing beim European Banking Congress als Hauptpunkte des Tages, dazu Verbrauchervertrauen Euro-Zone und USA sowie deutsche Erzeugerpreise Oktober (Reuters via onvista). Nach dem Kursrutsch zählt jedes Wort zu Zinsen und Finanzstabilität; die EZB entscheidet am 17.12. 95 %, weil der Kongress angekündigt ist, die genaue Uhrzeit nennt die Quelle nicht. Stand Fr 16:20: Lagarde hat ihre letzte Rede als EZB-Präsidentin auf dem Kongress gehalten („Acting in time“). Zu Zinsen und Inflation sagte sie nichts Neues; sie forderte schnelleres Handeln bei Kapitalmarktunion und KI-Rechenleistung, nannte rund 1,3 Billionen € Investitionsbedarf, um Europas Anteil an der weltweiten KI-Rechenleistung bis 2030 von etwa 5 auf 15 % zu heben, und eine erste Ausgabe des digitalen Euro 2029 (EZB, dpa via AD HOC NEWS, AktienCheck). Eine Kurswirkung ist nicht belegt.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Reuters via onvista: Dax tiefer erwartet – Konjunktur und European Banking Congress im Blick (20.11., 06:21)",
-          "url": "https://www.onvista.de/news/2026/11-20-dax-tiefer-erwartet-konjunktur-und-european-banking-congress-im-blick-0-20-26578647"
-        },
-        {
-          "title": "EZB: Lagarde – Acting in time (Rede, 20.11.2026)",
-          "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html"
-        },
-        {
-          "title": "dpa via AD HOC NEWS: Lagarde – Europa handelt bei Krisen oft zu spät (20.11., 11:29)",
-          "url": "https://www.ad-hoc-news.de/wirtschaft/ezb-chefin-lagarde-europa-handelt-bei-krisen-oft-zu-spaet/70539625"
-        }
-      ]
-    },
-    {
-      "id": "evt-us-verbrauchervertrauen-nov",
-      "title": "USA: Verbraucherstimmung November (Uni Michigan, endgültig, veröffentlicht)",
-      "date": "2026-11-20",
-      "time": "16:00",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "makro",
-      "company": null,
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Reuters führt das US-Verbrauchervertrauen November auf der Agenda für Freitag (Reuters via onvista); die Uni Michigan veröffentlicht üblich um 10:00 Uhr Ostküstenzeit, also 16:00 Berlin. Wichtig sind vor allem die Inflationserwartungen, weil die Fed nach dem Protokoll weitere Erhöhungen erwägt. 97 % für Termin und Uhrzeit. Stand Fr 16:20: Veröffentlicht. Der Index stieg auf 51,5 Punkte, nach 51,0 in der ersten Schätzung und 48,0 im Oktober; erwartet waren 51,6. Die Inflationserwartung für ein Jahr fiel deutlich von 4,7 auf 3,7 %, die langfristige von 3,5 auf 3,3 % (Uni Michigan, MarketScreener). Laut Uni Michigan meldeten Haushalte mit vielen Aktien schlechtere Finanzen, passend zur KI-Unruhe an der Börse. Die sinkende Inflationserwartung ist ein kleines Gegengewicht zu den Sorgen vor weiteren Fed-Erhöhungen.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Reuters via onvista: Dax tiefer erwartet – Konjunktur und European Banking Congress im Blick (20.11., 06:21)",
-          "url": "https://www.onvista.de/news/2026/11-20-dax-tiefer-erwartet-konjunktur-und-european-banking-congress-im-blick-0-20-26578647"
-        },
-        {
-          "title": "Uni Michigan: Surveys of Consumers – Endergebnis November 2026",
-          "url": "https://www.sca.isr.umich.edu/"
-        },
-        {
-          "title": "MarketScreener: Michigan-Stimmung endgültig 51,5 (erwartet 51,6, vorläufig 51,0)",
-          "url": "https://au.marketscreener.com/news/november-final-university-of-michigan-consumer-sentiment-51-5-vs-expected-51-6-preliminary-51-0-o-ce785ed3da89fe26"
-        }
-      ]
-    },
-    {
-      "id": "evt-fed-cook-nov",
-      "title": "Fed: Gouverneurin Lisa Cook fordert weitere Zinserhöhungen (Santiago de Chile)",
-      "date": "2026-11-20",
-      "time": "18:15",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "zinsen",
-      "company": null,
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Lisa Cook hält um 12:15 Uhr Ostküstenzeit (18:15 Berlin) eine Rede zur US-Wirtschaft im globalen Umfeld bei der Konferenz der chilenischen Zentralbank; Gouverneur Waller spricht schon um 14:25 Berlin, aber nur zur Begrüßung (Fed-Kalender, MLQ.ai). Nach den harten Worten von Barr und Paulson und 98,4 % Erhöhungswahrscheinlichkeit für Dezember (Reuters) zählt jedes Signal zum Zinspfad, das trifft vor allem teure Wachstumswerte. 95 %, weil der Termin im Fed-Kalender steht. Stand Fr 14:30: Waller hielt um 14:25 Berlin nur ein Grußwort ohne Fragerunde (Fed-Kalender). Der Zinsdruck kommt heute aus Europa: Die deutschen Erzeugerpreise stiegen im Oktober um 8,1 % zum Vorjahr, erwartet waren 7,4 %, das schürt Erwartungen weiterer Zinserhöhungen; die zehnjährige US-Rendite fiel dennoch auf 4,989 %, weil Geld aus Aktien in Anleihen fließt (MarketScreener/Dow Jones, Sharecast). Damit bekommt Cooks Rede um 18:15 mehr Gewicht. 95 % unverändert. Stand Fr 18:20: Die Rede „The U.S. Economy in Global Context“ steht im Fed-Kalender für 12:15 Uhr Ostküstenzeit (18:15 Berlin), mit Text und Fragerunde (Fed). Es ist ihr erster Auftritt, seit ihr Anwalt erklärt hat, dass sie nicht an der Anhörung im Weißen Haus über ihre mögliche Entlassung teilnimmt (Semafor). Inhalte lagen um 18:20 noch nicht vor. 95 % unverändert. Stand Fr 20:30: Gehalten. Cook sagte, der Leitzins von 3,75 bis 4,00 % reiche nicht, um die Inflation zu senken; wer mit Erhöhungen warte, laufe Gefahr, „hinter die Kurve“ zu geraten. Die PCE-Inflation lag im Oktober laut Schätzung bei 3,8 %, ohne Energie und Lebensmittel bei 3,2 % (Fed-Redetext, Reuters). Das stützt eine Erhöhung im Dezember und belastet teure Wachstumswerte. 95 → 100 %.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Federal Reserve: Kalender November 2026",
-          "url": "https://www.federalreserve.gov/newsevents/2026-november.htm"
-        },
-        {
-          "title": "MLQ.ai: Was am Fr 20.11. wichtig ist (Waller, Cook, Uni Michigan, Verfall)",
-          "url": "https://mlq.ai/news/what-to-watch-friday-nov-20-anthropics-second-day-intuits-mailchimp-sale-feds-cook-and-waller-and-japan-cpi/"
-        },
-        {
-          "title": "Reuters via StreetInsider: US-Futures tiefer, Anthropic-Debüt beruhigt KI-Anleger nicht (20.11.)",
-          "url": "https://www.streetinsider.com/Reuters/Wall+St+futures+slip+as+Anthropic+debut+fails+to+reassure+AI+investors/27378280.html"
-        },
-        {
-          "title": "MarketScreener/Dow Jones: DAX fällt unter 25.000 Punkte – Ausverkauf bei Technologie (20.11., 13:44)",
-          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
-        },
-        {
-          "title": "Sharecast: US-Vorbörse – Futures tiefer, KI-Bewertungssorgen (20.11., 13:35)",
-          "url": "https://www.sharecast.com/news/market-report-us-pre-open/us-pre-open-futures-point-lower-as-ai-valuation-jitters-linger--24244234.html"
-        },
-        {
-          "title": "Semafor: Fed’s Lisa Cook speaks ahead of hearing (20.11.)",
-          "url": "https://www.semafor.com/article/11/20/2026/feds-lisa-cook-speaks-ahead-of-hearing"
-        },
-        {
-          "title": "Federal Reserve: Rede von Gouverneurin Cook, The U.S. Economy in Global Context (20.11.)",
-          "url": "https://www.federalreserve.gov/newsevents/speech/cook20261120a.htm"
-        },
-        {
-          "title": "Reuters via Investing.com: Fed’s Cook says rate hikes needed to lower high inflation (20.11.)",
-          "url": "https://www.investing.com/news/economy-news/feds-cook-says-rate-hikes-needed-to-lower-high-inflation-5042321"
-        }
-      ]
-    },
-    {
       "id": "evt-dell-q3",
       "title": "Dell: Zahlen 3. Quartal mit KI-Server-Auftragsbestand",
       "date": "2026-11-24",
-      "time": null,
+      "time": "22:05",
       "timezone": "Europe/Berlin",
       "kind": "external",
       "category": "earnings",
@@ -2093,12 +1737,100 @@
       ],
       "probabilityPct": 95,
       "impact": "mittel",
-      "reasoning": "Dell legt am Di 24.11. Zahlen vor; der Auftragsbestand für KI-Server lag Ende Juli bei 95 Mrd. $ (Blockonomi). Nach dem KI-Kursrutsch dieser Woche gilt der Bericht als Hinweis, ob die Nachfrage nach KI-Servern hält, das betrifft SpaceX mit seinem KI-Rechengeschäft und Chipwerte wie Marvell. 95 %, weil der Termin genannt ist; die Uhrzeit steht noch nicht fest, üblich ist nach US-Börsenschluss.",
+      "reasoning": "Dell legt am Di 24.11. Zahlen vor; der Auftragsbestand für KI-Server lag Ende Juli bei 95 Mrd. $ (Blockonomi). Nach dem KI-Kursrutsch dieser Woche gilt der Bericht als Hinweis, ob die Nachfrage nach KI-Servern hält, das betrifft SpaceX mit seinem KI-Rechengeschäft und Chipwerte wie Marvell. 95 %, weil der Termin genannt ist; die Uhrzeit steht noch nicht fest, üblich ist nach US-Börsenschluss. Stand Mo 08:00: Termin nach US-Börsenschluss am Di bestätigt; die Optionen preisen laut EarningsWatcher eine Bewegung von ±16,2 % ein – nach dem Chip-Einbruch vom Freitag der wichtigste KI-Test der verkürzten Woche. Uhrzeit 22:05 ist die übliche Zeit, nicht offiziell. 95 % unverändert.",
       "example": false,
       "sources": [
         {
           "title": "Blockonomi: SpaceX rutscht vorbörslich unter den Ausgabepreis von 135 $ (20.11., 13:48)",
           "url": "https://blockonomi.com/spacex-spcx-stock-slips-below-135-ipo-price-as-morgan-stanley-and-bernstein-stay-bullish/"
+        },
+        {
+          "title": "EarningsWatcher: Zahlen am 23.11. und erwartete Bewegungen (Dell Di ±16,2 %)",
+          "url": "https://earnings-watcher.com/earnings-today"
+        }
+      ]
+    },
+    {
+      "kind": "external",
+      "company": null,
+      "timezone": "Europe/Berlin",
+      "example": false,
+      "id": "evt-pmi-flash-nov",
+      "title": "Einkaufsmanagerindizes November (Schnellschätzung): Deutschland, Eurozone, USA",
+      "date": "2026-11-23",
+      "time": "09:30",
+      "end": "2026-11-23T15:45:00+01:00",
+      "category": "makro",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB",
+        "MRVL"
+      ],
+      "probabilityPct": 100,
+      "impact": "mittel",
+      "reasoning": "Heute kommen die ersten Einkaufsmanagerindizes für November: Deutschland üblich 09:30, Eurozone 10:00, USA 15:45. FXStreet schreibt, Anleger achten darauf, ob eine starke US-Wirtschaft die Renditen weiter treibt – genau das drückt seit Wochen Wachstumswerte. 100 %, weil der Termin feststeht.",
+      "sources": [
+        {
+          "title": "FXStreet: Bitcoin +9 % zurück über 60.000 $ – was Montag für Aktien heißt (22.11.)",
+          "url": "https://www.fxstreet.com/cryptocurrencies/news/btc-9-how-it-reclaimed-60-000-and-what-to-expect-from-stocks-on-monday-202611221929"
+        }
+      ]
+    },
+    {
+      "kind": "external",
+      "company": null,
+      "timezone": "Europe/Berlin",
+      "example": false,
+      "id": "evt-us-pce-okt",
+      "title": "USA: PCE-Inflation (Fed-Lieblingsmaß)",
+      "date": "2026-11-25",
+      "time": null,
+      "category": "makro",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB",
+        "MRVL"
+      ],
+      "probabilityPct": 95,
+      "impact": "hoch",
+      "reasoning": "Laut FXStreet kommt am Mi 25.11. der PCE-Bericht, der nächste große Inflationstest vor der Fed-Sitzung am 8./9.12.; nach dem heißen CPI preist der Markt eine Zinserhöhung im Dezember zu rund 92 % ein (FXStreet). Uhrzeit üblich 14:30 Berlin, nicht bestätigt. 95 %, weil Termine wegen der Feiertagswoche verschoben werden können.",
+      "sources": [
+        {
+          "title": "FXStreet: Bitcoin +9 % zurück über 60.000 $ – was Montag für Aktien heißt (22.11.)",
+          "url": "https://www.fxstreet.com/cryptocurrencies/news/btc-9-how-it-reclaimed-60-000-and-what-to-expect-from-stocks-on-monday-202611221929"
+        }
+      ]
+    },
+    {
+      "kind": "external",
+      "company": null,
+      "timezone": "Europe/Berlin",
+      "example": false,
+      "id": "evt-us-thanksgiving",
+      "title": "USA: Börsen am Do 26.11. zu (Thanksgiving), Fr 27.11. Schluss schon 19:00",
+      "date": "2026-11-26",
+      "time": null,
+      "end": "2026-11-27T19:00:00+01:00",
+      "category": "markt",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB",
+        "MRVL"
+      ],
+      "probabilityPct": 100,
+      "impact": "niedrig",
+      "reasoning": "Am Thanksgiving-Donnerstag ist die Wall Street geschlossen, am Freitag endet der Handel um 13:00 New Yorker Zeit (19:00 Berlin) (CNBC). Dünner Handel kann Bewegungen verstärken (Fortune).",
+      "sources": [
+        {
+          "title": "CNBC: Futures steigen nach Korrektur-Woche (Live, 22./23.11.)",
+          "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
+        },
+        {
+          "title": "Fortune: Dow-Futures +800 Punkte, Nasdaq-Futures fast +3 % nach der Korrektur (22.11.)",
+          "url": "https://fortune.com/2026/11/22/stock-market-today-dow-futures-sp500-nasdaq-correction-ai-bust/"
         }
       ]
     }

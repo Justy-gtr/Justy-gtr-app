@@ -6844,91 +6844,39 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Do-Schluss 138,43 $ (−3,5 % zu 143,50 $, Yahoo). Das Anthropic-Debüt zog Geld aus anderen KI-Werten ab, der breite Markt fiel über 2 % (Yahoo/Benzinga); dazu kommt die Sorge um die teuren KI-Rechenzentren und die Abhängigkeit vom großen Anthropic-Rechenvertrag (Motley Fool). Am Morgen Nasdaq-100-Future rund −1,1 % (CNBC). Stand Fr 12:20: In der Woche bis Do hielt sich SPCX unter den Raumfahrtwerten am besten (−0,5 %), Rocket Lab −17 %, Firefly −23 % (Yahoo/Stocktwits). Vorbörslich drücken KI-Sorgen weiter: Nasdaq-100-Future −1,6 %, Anthropic −6,8 % (Reuters). Stand Fr 14:25: Vorbörslich 129,26 $ (−6,6 % zum Do-Schluss 138,43 $, Yahoo), damit unter dem Ausgabepreis von 135 $ aus dem Juni (Blockonomi). Treiber ist der weltweite KI-Kursrutsch: Anthropic vorbörslich rund −10 %, AMD −6 %, Micron −4,6 %, Nasdaq-100-Future −1,8 % (Sharecast, Yahoo); in Europa fällt der Technologie-Index um 3,8 %, dazu kommen Zinssorgen nach hohen deutschen Erzeugerpreisen (MarketScreener/Dow Jones). Belastend bleibt die Abhängigkeit vom größten KI-Kunden Anthropic; Morgan Stanley (Ziel 300 $) und Bernstein (268 $) bleiben bei ihrer positiven Einstufung (Blockonomi). Keine neue SEC-Meldung. Stand Fr 16:20: Nach der Eröffnung um 16:19 bei 130,75 $ (−5,5 % zum Do-Schluss 138,43 $), Eröffnung 132,44 $, damit unter dem Ausgabepreis von 135 $ (Exa-Kursdaten). Neu dazu: SpaceX hat die Anleihen über 32 Mrd. $ für Nvidia-Chips platziert, die größte Tranche rentiert mit 8,26 % und damit weit über dem Schnitt guter US-Anleihen (Yahoo/Bloomberg). Laut Financial Times wollten Geldgeber verhindern, dass Musk die als Sicherheit dienenden Chips ins All bringt (24/7 Wall St.). Der hohe Zins zeigt, dass Anleger für die KI-Schulden einen deutlichen Aufschlag verlangen. Dazu fällt der Nasdaq um 1,5 %, Chipwerte noch stärker (Investopedia). Stand Fr 18:20: Um 18:19 bei 128,86 $ (−6,9 % zum Do-Schluss 138,43 $), Tagestief 128,02 $ (Exa-Kursdaten). Der Nasdaq fällt über 3 % und steuert auf ein Minus fürs Gesamtjahr zu, Nvidia −6 % (Yahoo). Laut Financial Times sicherten sich die Käufer der Chip-Anleihen schon Zusagen über mehr als 19 Mrd. $ vorab, Moody’s bewertet die Anleihe mit A3, eine Stufe über SpaceX selbst (Ars Technica/FT). HSBC bleibt bei „Hold“ mit Ziel 150 $ (Invezz). Stand Fr 20:25: 129,22 $ (−6,7 % zum Do-Schluss 138,43 $), Tagestief 127,95 $ (Yahoo). Der Nasdaq fällt inzwischen gut 4 %, der S&P 500 liegt rund 10 % unter seinem Rekord vom 6. Oktober und steuert auf den siebten Verlusttag in Folge zu (Yahoo, AP). Fed-Gouverneurin Cook fordert weitere Zinserhöhungen (Reuters).",
+      "why": "Stand Mo 08:00: SPCX schloss Fr bei 127,79 $, 7,7 % unter dem Donnerstag (138,43 $) und unter dem Ausgabepreis von 135 $ (Yahoo). Der KI-Ausverkauf traf alles mit Rechenzentrums-Fantasie: Nasdaq −5,3 %, Chipindex SOX −10,7 %, Nvidia −14 % (Yahoo, Reuters). Am Wochenende nichts Belastendes von SpaceX selbst: Rekord mit zwei Falcon-Starts binnen 32 Stunden von Vandenberg (NROL-136 am So), Apollo und Goldman bepreisen laut Reuters rund 44 Mrd. $ Kredit für den Kauf von Nvidia-Chips; in Texas und Arizona wächst der Streit, wer Strom und Netz für die Rechenzentren zahlt (SpaceX, Noozhawk, Reuters, Fortune). Nasdaq-100-Future am Morgen rund +2,7 % (Yahoo).",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX (Schluss 19.11.)",
-          "url": "https://finance.yahoo.com/quote/SPCX/"
+          "title": "Yahoo Finance: SPCX (Schluss Fr 20.11. 127,79 $, Do 138,43 $)",
+          "url": "https://finance.yahoo.com/quote/SPCX/history/"
         },
         {
-          "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
+          "title": "Yahoo Finance: Nasdaq Composite, S&P 500, SOX, Nvidia (Schluss Fr 20.11.)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/history/"
         },
         {
-          "title": "Motley Fool: Warum die SpaceX-Aktie heute fällt (19.11.)",
-          "url": "https://www.fool.com/investing/2026/11/19/why-spacex-stock-is-down-today/"
+          "title": "US News/Reuters: Wall Street schließt deutlich tiefer, S&P 500 und Dow in Korrektur (20.11.)",
+          "url": "https://money.usnews.com/investing/news/articles/2026-11-20/wall-st-futures-slip-as-anthropic-debut-fails-to-reassure-ai-investors"
         },
         {
-          "title": "CNBC: Futures tiefer, Dow erstmals seit Juni unter 50.000 (Live, 20.11.)",
-          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
+          "title": "SpaceX: NROL-136 (So 22.11., 04:23 PT)",
+          "url": "https://www.spacex.com/launches/nrol136"
         },
         {
-          "title": "Yahoo/Stocktwits: SpaceX hält sich, Raumfahrtwerte fallen (20.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-holds-orbit-space-stocks-065831911.html"
+          "title": "Noozhawk: Rekord – zwei Falcon-Starts von SLC-4E binnen 32 Stunden (22.11.)",
+          "url": "https://www.noozhawk.com/spacex-west-coast-team-sets-record-with-quick-turnaround-between-falcon-liftoffs/"
         },
         {
-          "title": "Reuters via StreetInsider: US-Futures tiefer, Anthropic-Debüt beruhigt KI-Anleger nicht (20.11.)",
-          "url": "https://www.streetinsider.com/Reuters/Wall+St+futures+slip+as+Anthropic+debut+fails+to+reassure+AI+investors/27378280.html"
+          "title": "Reuters via NewsX: Apollo und Goldman bepreisen rund 44 Mrd. $ Kredit für SpaceX-GPU-Kauf (20.11.)",
+          "url": "https://world.newsx.com/technology/apollo-goldman-lead-44-billion-spacex-gpu-debt-financing-255915/"
         },
         {
-          "title": "Blockonomi: SpaceX rutscht vorbörslich unter den Ausgabepreis von 135 $ (20.11., 13:48)",
-          "url": "https://blockonomi.com/spacex-spcx-stock-slips-below-135-ipo-price-as-morgan-stanley-and-bernstein-stay-bullish/"
+          "title": "Fortune: SpaceX setzt 74 Mrd. $ auf KI-Rechenzentren – Texas und Arizona fragen, wer zahlt (22.11.)",
+          "url": "https://www.fortune.com/2026/11/22/spacex-74-billion-ai-data-centers-texas-arizona-who-pays/"
         },
         {
-          "title": "Sharecast: US-Vorbörse – Futures tiefer, KI-Bewertungssorgen (20.11., 13:35)",
-          "url": "https://www.sharecast.com/news/market-report-us-pre-open/us-pre-open-futures-point-lower-as-ai-valuation-jitters-linger--24244234.html"
-        },
-        {
-          "title": "MarketScreener/Dow Jones: DAX fällt unter 25.000 Punkte – Ausverkauf bei Technologie (20.11., 13:44)",
-          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
-        },
-        {
-          "title": "Exa: SPCX-Kurs 20.11. (16:19 Berlin)",
-          "url": "https://exa.ai/library/markets/stocks/SPCX"
-        },
-        {
-          "title": "Yahoo Finance/Bloomberg: SpaceX besorgt 32 Mrd. $ Schulden für Nvidia-Chips (20.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-raises-32-billion-debt-120100540.html"
-        },
-        {
-          "title": "24/7 Wall St.: SpaceX fällt unter den Ausgabepreis, Geldgeber zögern bei Chips im All (20.11., 15:52)",
-          "url": "https://247wallst.com/investing/2026/11/20/spacex-falls-5-breaks-below-ipo-price-as-lenders-reportedly-balk-at-musks-orbital-ai-chip-plans-rocket-lab-drops-3-ast-spacemobile-dips/"
-        },
-        {
-          "title": "Investopedia: S&P 500 und Nasdaq fallen früh, Anthropic bricht ein (20.11.)",
-          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11202026-12266027"
-        },
-        {
-          "title": "Exa-Kursdaten: SPCX (20.11., 12:19 Ostküstenzeit)",
-          "url": "https://exa.ai/library/markets/stocks/SPCX"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq fällt über 3 %, Anthropic-Börsengang beruhigt KI-Sorgen nicht (20.11., 12:10 Ostküstenzeit)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html"
-        },
-        {
-          "title": "Ars Technica (FT): SpaceX lenders don’t want Elon Musk launching their collateral into space (20.11.)",
-          "url": "https://arstechnica.com/space/2026/11/spacex-lenders-dont-want-elon-musk-launching-their-collateral-into-space/"
-        },
-        {
-          "title": "Invezz: Why is Tesla stock falling over 3% today? (20.11.)",
-          "url": "https://invezz.com/sg/news/2026/11/20/why-is-tesla-stock-falling-over-3percent-today/"
-        },
-        {
-          "title": "Yahoo Finance: SPCX (20.11., 20:24)",
-          "url": "https://finance.yahoo.com/quote/SPCX/"
-        },
-        {
-          "title": "AP: US stocks tumble as the sell-off for AI stocks accelerates (20.11.)",
-          "url": "https://apnews.com/article/stock-markets-anthropic-ai-chips-boom-c4c3f4878b12989347f8a930ed813dad"
-        },
-        {
-          "title": "Reuters via Investing.com: Fed’s Cook says rate hikes needed (20.11.)",
-          "url": "https://www.investing.com/news/economy-news/feds-cook-says-rate-hikes-needed-to-lower-high-inflation-5042321"
-        },
-        {
-          "title": "Yahoo Finance: Stock market today – Nasdaq plunges, Anthropic IPO fails to ease AI worries (20.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html"
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F und S&P-500-Future ES=F (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -20712,79 +20660,27 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Do-Schluss 374,41 $ (−2,4 % zu 383,72 $, Yahoo), mit dem Gesamtmarkt (S&P 500 −2,0 %, Yahoo/Benzinga). Gegen den Trend positiv: Tesla startete am 19.11. das Cybercab in Dallas (InsideEVs via DigitalToday) und öffnete Bestellungen in Argentinien (Tesla North). Futures am Morgen tiefer (CNBC). Stand Fr 12:20: HSBC hebt Tesla von „Reduce“ auf „Hold“, Kursziel 157 → 359 $, wegen einer möglichen Übernahme durch SpaceX; die Fusionslogik nennt die Bank „begrenzt“ (Investing.com, Yahoo/Stocktwits). Vorbörslich trotzdem knapp 2 % tiefer (Yahoo/Stocktwits). Stand Fr 14:25: Vorbörslich 364,15 $ (−2,7 % zum Do-Schluss 374,41 $, Yahoo), auf Xetra 333,55 €. Treiber ist der breite KI- und Tech-Kursrutsch, Nasdaq-100-Future −1,8 % (Sharecast). Gary Black warnt: Bezahlt SpaceX eine Übernahme mit eigenen Aktien, könnte Tesla wie Lumentum nach dem Marvell-Angebot unter Druck geraten (Yahoo). Die HSBC-Hochstufung auf „Hold“ (Ziel 359 $) stützt kaum. Stand Fr 16:20: Nach der Eröffnung um 16:07 bei 371,89 $ (−0,7 % zum Do-Schluss 374,41 $), Tagestief 365,14 $ (Yahoo). Tesla hält sich deutlich besser als Chipwerte und SpaceX; Barclays bestätigt „Overweight“, JPMorgan bleibt „Neutral“ (Investing.com). HSBC sieht Tesla bei einer Übernahme durch SpaceX bei 507 $, allein bei 212 $ (Investing.com). Stand Fr 18:20: Um 18:20 bei 352,20 $ (−5,9 % zum Do-Schluss 374,41 $), Tagestief 352,07 $ (Exa-Kursdaten); damit gibt Tesla den besseren Start ab. Treiber bleibt der KI- und Wachstums-Kursrutsch, der Nasdaq fällt über 3 % (Yahoo). Dazu kommen Zweifel an einer Fusion mit SpaceX: HSBC nennt die strategische Logik „begrenzt“ und warnt vor Verwässerung, falls SpaceX mit eigenen Aktien zahlt (Invezz, 24/7 Wall St.). Auch Rivian (−5 %) und Lucid (−4 %) fallen (24/7 Wall St.). Stand Fr 20:25: 348,46 $ (−6,9 % zum Do-Schluss 374,41 $), Tagestief 348,28 $ (Yahoo). Der Nasdaq fällt inzwischen gut 4 % (Yahoo). Investing.com nennt neben dem Technologie-Ausverkauf die HSBC-Bewertung (Einzelwert ohne Fusion 212 $), Gary Blacks Warnung vor Verwässerung bei einer Zahlung in SpaceX-Aktien und 15 % weniger Tesla-Verkäufe in China im Jahresvergleich.",
+      "why": "Stand Mo 08:00: Tesla schloss Fr bei 345,82 $, 7,6 % unter dem Donnerstag (374,41 $), die Woche −11,4 % (Yahoo, Longbridge). Belastet haben der Tech-Ausverkauf (Nasdaq −5,3 %) und am Freitag Südkoreas Absage an FSD für in China gebaute Autos; HSBC hob die Aktie zugleich auf „Hold“ mit Kursziel 359 $ (Longbridge). Am Samstag kündigte Musk FSD 15 für eine breitere Auslieferung im Dezember an (Seeking Alpha). Nasdaq-100-Future am Morgen rund +2,7 % (Yahoo).",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA (Schluss 19.11.)",
-          "url": "https://finance.yahoo.com/quote/TSLA/"
-        },
-        {
-          "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
-        },
-        {
-          "title": "DigitalToday (nach InsideEVs): Tesla startet Cybercab in Dallas (20.11.)",
-          "url": "https://www.digitaltoday.co.kr/en/view/128508/tesla-cybercab-robotaxi-expands-to-dallas-after-austin"
-        },
-        {
-          "title": "Tesla North: Tesla öffnet Bestellungen für Model 3 und Model Y in Argentinien (19.11.)",
-          "url": "https://teslanorth.com/2026/11/19/tesla-argentina-model-3-model-y-prices-orders/"
-        },
-        {
-          "title": "CNBC: Futures tiefer, Dow erstmals seit Juni unter 50.000 (Live, 20.11.)",
-          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
-        },
-        {
-          "title": "Investing.com: HSBC hebt Tesla auf Hold, Kursziel 359 $ (20.11.)",
-          "url": "https://www.investing.com/news/analyst-ratings/hsbc-upgrades-tesla-stock-rating-on-acquisition-potential-raises-price-target-to-359-93CH-5040834"
-        },
-        {
-          "title": "Yahoo/Stocktwits: HSBC-Upgrade, Fusionslogik „begrenzt“ (20.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-stock-gets-hsbc-upgrade-110242794.html"
-        },
-        {
-          "title": "Sharecast: US-Vorbörse – Futures tiefer, KI-Bewertungssorgen (20.11., 13:35)",
-          "url": "https://www.sharecast.com/news/market-report-us-pre-open/us-pre-open-futures-point-lower-as-ai-valuation-jitters-linger--24244234.html"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq-Futures rutschen, Anthropic gibt IPO-Gewinne ab – LITE, IREN, SNDK, NVDA (20.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-slide-anthropic-shares-122004660.html"
-        },
-        {
-          "title": "Yahoo Finance: TSLA-Historie (20.11., 16:07 Berlin)",
+          "title": "Yahoo Finance: TSLA (Schluss Fr 20.11. 345,82 $, Do 374,41 $)",
           "url": "https://finance.yahoo.com/quote/TSLA/history/"
         },
         {
-          "title": "Investing.com: HSBC hebt Tesla auf Hold, Kursziel 359 $ (20.11.)",
-          "url": "https://www.investing.com/news/analyst-ratings/hsbc-upgrades-tesla-stock-rating-on-acquisition-potential-raises-price-target-to-359-93CH-5040834"
+          "title": "Longbridge: Wochenbilanz Tesla −11,38 %, HSBC Hold 359 $, Südkorea lehnt FSD ab (21.11.)",
+          "url": "https://longbridge.com/en/news/306361728"
         },
         {
-          "title": "Exa-Kursdaten: TSLA (20.11., 12:19 Ostküstenzeit)",
-          "url": "https://exa.ai/library/markets/stocks/TSLA"
+          "title": "Seeking Alpha: Musk – FSD 15 kommt nächsten Monat (21.11.)",
+          "url": "https://seekingalpha.com/news/4675395-tesla-launch-fsd-15-next-month-elon-musk"
         },
         {
-          "title": "Yahoo Finance: Nasdaq fällt über 3 %, Anthropic-Börsengang beruhigt KI-Sorgen nicht (20.11., 12:10 Ostküstenzeit)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html"
+          "title": "Yahoo Finance: Nasdaq Composite, S&P 500, SOX, Nvidia (Schluss Fr 20.11.)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/history/"
         },
         {
-          "title": "24/7 Wall St.: Tesla fällt trotz HSBC-Hochstufung (20.11.)",
-          "url": "https://247wallst.com/investing/2026/11/20/tesla-falls-4-despite-hsbc-upgrade-and-359-target-tied-to-spacex-merger-talk-rivian-drops-5-lucid-slides-4/"
-        },
-        {
-          "title": "Invezz: Why is Tesla stock falling over 3% today? (20.11.)",
-          "url": "https://invezz.com/sg/news/2026/11/20/why-is-tesla-stock-falling-over-3percent-today/"
-        },
-        {
-          "title": "Yahoo Finance: TSLA (20.11., 20:23)",
-          "url": "https://finance.yahoo.com/quote/TSLA/"
-        },
-        {
-          "title": "Investing.com: Why is Tesla stock sliding today? (20.11.)",
-          "url": "https://uk.investing.com/news/stock-market-news/why-is-tesla-stock-sliding-today-93CH-4996493"
-        },
-        {
-          "title": "Yahoo Finance: Stock market today – Nasdaq plunges, Anthropic IPO fails to ease AI worries (20.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html"
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F und S&P-500-Future ES=F (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -32372,75 +32268,31 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Do-Schluss 50,99 $ (−3,9 % zu 53,07 $, Yahoo), sechster Verlusttag in Folge seit 66,15 $. Ein eigener Auslöser fehlt, es gab keine neue Mitteilung und kein neues 8-K (SEC); Raumfahrt- und Wachstumswerte fielen mit dem Markt (MarketBeat, Yahoo/Benzinga). Stand Fr 12:20: Weiter keine eigene Meldung; in der Woche bis Do −17 % (Yahoo/Stocktwits). Vorbörslich belasten KI- und Zinssorgen den Nasdaq-100-Future (−1,6 %, Reuters). Stand Fr 14:25: Vorbörslich 48,91 $ (−4,1 % zum Do-Schluss 50,99 $, Yahoo), damit droht der siebte Verlusttag. Keine eigene Meldung und kein neues 8-K oder Form 4 (SEC); die Stimmung auf Stocktwits kippte auf „bärisch“ (Yahoo/Stocktwits). Der Druck kommt vom KI- und Wachstums-Kursrutsch (Sharecast). Tagesfrage: Schluss über 50,99 $? Auflösung 22:15. Stand Fr 16:20: Nach der Eröffnung um 16:20 bei 48,61 $ (−4,7 % zum Do-Schluss 50,99 $), Eröffnung 49,29 $, Hoch 50,55 $ (Exa-Kursdaten); damit läuft der siebte Verlusttag in Folge (Trefis: sechs Tage −22,9 %). Keine eigene Meldung; Raumfahrtwerte fallen mit SpaceX (24/7 Wall St.). Für die Tagesfrage liegt RKLB unter der Linie von 50,99 $. Stand Fr 18:20: Um 18:12 bei 46,68 $ (−8,5 % zum Do-Schluss 50,99 $), Tagestief 46,43 $ (Exa-Kursdaten). Weiter keine eigene Meldung und kein neues 8-K oder Form 4 (SEC); RKLB fällt mit SpaceX und dem Nasdaq (über −3 %, Yahoo). Für die Tagesfrage liegt RKLB deutlich unter der Linie von 50,99 $. Stand Fr 20:25: 46,26 $ (−9,3 % zum Do-Schluss 50,99 $), Tagestief 46,08 $ (Yahoo). Weiter keine eigene Meldung und kein neues 8-K oder Form 4 (SEC-Volltextsuche); Raumfahrtwerte fallen mit dem Nasdaq (gut −4 %, Yahoo). Für die Tagesfrage liegt RKLB klar unter 50,99 $.",
+      "why": "Stand Mo 08:00: Rocket Lab schloss Fr bei 45,42 $, 10,9 % unter dem Donnerstag (50,99 $) – stärker als Nasdaq (−5,3 %) und S&P 500 (−3,7 %) (Yahoo). Laut Trefis waren es sechs Verlusttage in Folge mit −22,9 %; Startup Fortune nennt neben dem Tech-Ausverkauf den Neutron-Erstflug „frühestens 2027“ als Last (Startup Fortune). Keine neue Pressemitteilung und keine neue SEC-Meldung seit Freitag (Rocket Lab, SEC). Nasdaq-100-Future am Morgen rund +2,7 % (Yahoo).",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB (Schluss 19.11.)",
-          "url": "https://finance.yahoo.com/quote/RKLB/"
+          "title": "Yahoo Finance: RKLB (Schluss Fr 20.11. 45,42 $, Do 50,99 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
         },
         {
-          "title": "MarketBeat: Rocket Lab fällt auf 50,99 $ (19.11.)",
-          "url": "https://www.marketbeat.com/instant-alerts/price-rocket-lab-nasdaq-rklb-shares-down-39-time-to-sell-2026-11-19/"
+          "title": "Yahoo Finance: Nasdaq Composite, S&P 500, SOX, Nvidia (Schluss Fr 20.11.)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/history/"
         },
         {
-          "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
+          "title": "Startup Fortune: Rocket Lab fällt 10,8 % – Neutron-Verzögerung trifft Tech-Ausverkauf (21.11.)",
+          "url": "https://startupfortune.com/rocket-lab-stock-falls-108-to-4544-as-its-neutron-delay-meets-a-tech-rout/"
         },
         {
-          "title": "SEC EDGAR Volltextsuche (8-K/Form 4, 19.–20.11.)",
-          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Tesla%22&forms=8-K,4"
-        },
-        {
-          "title": "Yahoo/Stocktwits: Raumfahrtwerte in schwacher Woche (20.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-holds-orbit-space-stocks-065831911.html"
-        },
-        {
-          "title": "Reuters via StreetInsider: US-Futures tiefer, Anthropic-Debüt beruhigt KI-Anleger nicht (20.11.)",
-          "url": "https://www.streetinsider.com/Reuters/Wall+St+futures+slip+as+Anthropic+debut+fails+to+reassure+AI+investors/27378280.html"
+          "title": "Rocket Lab: Pressemitteilungen (letzte 14.11., 100. Electron)",
+          "url": "https://investors.rocketlabcorp.com/news"
         },
         {
           "title": "SEC EDGAR: Rocket Lab – letzte Meldung Form 4 vom 18.11.",
           "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001819994&type=&dateb=&owner=include&count=40"
         },
         {
-          "title": "Sharecast: US-Vorbörse – Futures tiefer, KI-Bewertungssorgen (20.11., 13:35)",
-          "url": "https://www.sharecast.com/news/market-report-us-pre-open/us-pre-open-futures-point-lower-as-ai-valuation-jitters-linger--24244234.html"
-        },
-        {
-          "title": "Exa: RKLB-Kurs 20.11. (16:20 Berlin)",
-          "url": "https://exa.ai/library/markets/stocks/RKLB"
-        },
-        {
-          "title": "Trefis: Rocket Lab sechs Tage in Folge im Minus, −23 % (20.11.)",
-          "url": "https://www.trefis.com/stock/rklb/articles/627134/a-6-day-losing-streak-has-rocket-lab-stock-down-23/2026-11-20"
-        },
-        {
-          "title": "24/7 Wall St.: SpaceX fällt unter den Ausgabepreis, Rocket Lab −3 % (20.11.)",
-          "url": "https://247wallst.com/investing/2026/11/20/spacex-falls-5-breaks-below-ipo-price-as-lenders-reportedly-balk-at-musks-orbital-ai-chip-plans-rocket-lab-drops-3-ast-spacemobile-dips/"
-        },
-        {
-          "title": "Exa-Kursdaten: RKLB (20.11., 12:19 Ostküstenzeit)",
-          "url": "https://exa.ai/library/markets/stocks/RKLB"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq fällt über 3 %, Anthropic-Börsengang beruhigt KI-Sorgen nicht (20.11., 12:10 Ostküstenzeit)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html"
-        },
-        {
-          "title": "SEC EDGAR: Rocket Lab Meldungen",
-          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001819994&type=&dateb=&owner=include&count=40"
-        },
-        {
-          "title": "Yahoo Finance: RKLB (20.11., 20:23)",
-          "url": "https://finance.yahoo.com/quote/RKLB/"
-        },
-        {
-          "title": "SEC EDGAR Volltextsuche (8-K, Form 4)",
-          "url": "https://efts.sec.gov/LATEST/search-index?q=%22Rocket%20Lab%22&forms=8-K,4"
-        },
-        {
-          "title": "Yahoo Finance: Stock market today – Nasdaq plunges, Anthropic IPO fails to ease AI worries (20.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html"
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F und S&P-500-Future ES=F (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -45132,71 +44984,31 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Do-Schluss 138,47 $ (−4,9 % zu 145,54 $, Yahoo). Chipwerte fielen trotz Nvidias Ausblick weiter, Nvidia sechs Tage in Folge im Minus, AMD unter Druck nach einem Leerverkäufer-Bericht (Yahoo/Benzinga). Asiens Chipwerte am Morgen schwach: SK Hynix −6 %, Samsung −7 % (CNBC). Stand Fr 12:20: Vorbörslich verlieren AMD, Broadcom, Marvell und Micron 3,5 bis 5,5 %, Nvidia −2,6 %; Sorgen um langsameren Rechenzentrumsausbau und höhere Kreditkosten (Reuters). Stand Fr 14:25: Vorbörslich 131,00 $ (−5,4 % zum Do-Schluss 138,47 $, Yahoo). Chipwerte fallen weltweit: AMD −6 %, Micron −4,6 % (Sharecast), Tokyo Electron schloss −7 %, ASML in Europa −5,8 % (CNBC). Der Kursrutsch drückt auch den Wert des Lumentum-Angebots: rund 623 $ je Lumentum-Aktie statt etwa 1.132 $ bei der Ankündigung, Lumentum vorbörslich knapp −6 % (Yahoo). Stand Fr 16:20: Kurz nach der Eröffnung rund −6 %, ebenso Micron; AMD −6 % nach −8 % am Do, Nvidia −4 % (Investopedia), um 16:19 bei 139,32 $ (−4,6 %, Exa). Nvidia hat in zwei Wochen rund ein Viertel verloren, auch wegen des Abgangs von Jensen Huang als Chef (Investopedia). Der Nasdaq steuert auf die schwächste Woche seit April 2025 zu (Investopedia). Stand Fr 18:20: Um 18:19 bei 123,77 $ (−10,6 % zum Do-Schluss 138,47 $), Tagestief 123,50 $ (Exa-Kursdaten). Neu: Stifel senkt das Kursziel auf 280 $ wegen Sorgen um die Lumentum-Übernahme, bezahlt in Aktien (Investing.com); dazu fallen Chipwerte breit, 10 von 19 Halbleitern im S&P 500 verlieren 4 % oder mehr (WiseView). Stand Fr 20:25: 124,35 $ (−10,2 % zum Do-Schluss 138,47 $), Tagestief 123,26 $ (Yahoo). Nvidia jetzt rund −10 %, Broadcom und AMD je über −10 %, Micron −12 % (Yahoo, CNBC). Begründung laut Berichten: Der Anthropic-Börsengang hat die KI-Stimmung nicht gedreht, die Aktie fiel zeitweise bis nahe an den Ausgabepreis von 83 $, und es wachsen Zweifel an der Finanzierung des Rechenzentrumsausbaus (CNBC, Yahoo).",
+      "why": "Stand Mo 08:00: Marvell schloss Fr bei 122,28 $, 11,7 % unter dem Donnerstag (138,47 $) (Yahoo). Chipwerte brachen breit ein: SOX −10,7 %, Nvidia −14 % auf 125,53 $, Broadcom und AMD je über −10 % (Yahoo); Zweifel an der Finanzierung des KI-Rechenzentrumsausbaus und an Neocloud-Kunden nach Huangs Rücktritt bei Nvidia (Fortune). Am Morgen Kospi −3,2 %, aber Nasdaq-100-Future rund +2,7 % (Yahoo). Marvell-Zahlen am Di 1.12.",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL (Schluss 19.11.)",
-          "url": "https://finance.yahoo.com/quote/MRVL/"
+          "title": "Yahoo Finance: MRVL (Schluss Fr 20.11. 122,28 $, Do 138,47 $)",
+          "url": "https://finance.yahoo.com/quote/MRVL/history/"
         },
         {
-          "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
+          "title": "Yahoo Finance: Nasdaq Composite, S&P 500, SOX, Nvidia (Schluss Fr 20.11.)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/history/"
         },
         {
-          "title": "CNBC: Futures tiefer, Dow erstmals seit Juni unter 50.000 (Live, 20.11.)",
-          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
-        },
-        {
-          "title": "Reuters via StreetInsider: US-Futures tiefer, Anthropic-Debüt beruhigt KI-Anleger nicht (20.11.)",
-          "url": "https://www.streetinsider.com/Reuters/Wall+St+futures+slip+as+Anthropic+debut+fails+to+reassure+AI+investors/27378280.html"
-        },
-        {
-          "title": "Sharecast: US-Vorbörse – Futures tiefer, KI-Bewertungssorgen (20.11., 13:35)",
-          "url": "https://www.sharecast.com/news/market-report-us-pre-open/us-pre-open-futures-point-lower-as-ai-valuation-jitters-linger--24244234.html"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq-Futures rutschen, Anthropic gibt IPO-Gewinne ab – LITE, IREN, SNDK, NVDA (20.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-slide-anthropic-shares-122004660.html"
-        },
-        {
-          "title": "Investopedia: S&P 500 und Nasdaq fallen früh, Chipwerte erneut schwach (20.11.)",
-          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11202026-12266027"
-        },
-        {
-          "title": "Exa: NVDA-Kurs 20.11. (16:19 Berlin)",
-          "url": "https://exa.ai/library/markets/stocks/NVDA"
-        },
-        {
-          "title": "Exa-Kursdaten: MRVL (20.11., 12:19 Ostküstenzeit)",
-          "url": "https://exa.ai/library/markets/stocks/MRVL"
-        },
-        {
-          "title": "Investing.com: Stifel cuts Marvell stock price target on deal concerns to $280 (20.11.)",
-          "url": "https://www.investing.com/news/analyst-ratings/stifel-cuts-marvell-stock-price-target-on-deal-concerns-to-280-93CH-5041981"
-        },
-        {
-          "title": "Investing.com: Why is Marvell Technology stock sliding today? (20.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/why-is-marvell-technology-stock-sliding-today-93CH-5042172"
-        },
-        {
-          "title": "WiseView: Chip stocks fall together today (20.11.)",
-          "url": "https://wiseview.ai/news/semiconductors-stocks-today-2026-11-20"
-        },
-        {
-          "title": "Yahoo Finance: MRVL (20.11., 20:24)",
-          "url": "https://finance.yahoo.com/quote/MRVL/"
-        },
-        {
-          "title": "Yahoo Finance: Broadcom sinks 10%, Nvidia and AMD extend declines (20.11.)",
+          "title": "Yahoo Finance: Nvidia −12 %, Broadcom und AMD weiten Verluste aus (20.11.)",
           "url": "https://finance.yahoo.com/markets/article/nvidia-amd-and-broadcom-lead-chip-stocks-lower-133658985.html"
         },
         {
-          "title": "CNBC: Stocks making the biggest moves Friday (20.11.)",
-          "url": "https://www.cnbc.com/2026/11/20/stocks-moving-the-most-today-live-updates.html"
+          "title": "Fortune: Dow-Futures +800 Punkte, Nasdaq-Futures fast +3 % nach der Korrektur (22.11.)",
+          "url": "https://fortune.com/2026/11/22/stock-market-today-dow-futures-sp500-nasdaq-correction-ai-bust/"
         },
         {
-          "title": "Yahoo Finance: Stock market today – Nasdaq plunges, Anthropic IPO fails to ease AI worries (20.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-19-dow-sp-500-nasdaq-anthropic-nvidia-141644188.html"
+          "title": "Yahoo Finance: Kospi ^KS11 (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/%5EKS11/"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F und S&P-500-Future ES=F (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",

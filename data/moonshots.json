@@ -1,197 +1,197 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-20T14:30:00+01:00",
-  "nextRun": "2026-11-23T08:30:00+01:00",
+  "updatedAt": "2026-11-23T08:10:00+01:00",
+  "nextRun": "2026-11-23T14:00:00+01:00",
   "long": [
     {
-      "name": "DataMeds AI",
-      "ticker": "MEDS",
+      "name": "CoreWeave",
+      "ticker": "CRWV",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 0.84,
-      "hint": "Vorbörslich +26 % nach Übernahme einer Krebstest-Plattform",
+      "priceEur": 35.9,
+      "hint": "Nach −12 % am Freitag, Nasdaq-Future am Morgen rund +2,7 %",
       "bullets": [
-        "Tochter Helomics übernimmt Bluttest-Werte aus der Insolvenz von Todos Medical.",
-        "Vorbörslich in der Spitze 1,08 $, zuletzt 0,92 $ nach 0,73 $ Schluss.",
-        "Börsenwert nur rund 4 Mio. $, der Test hat keine FDA-Zulassung."
+        "Schloss am Freitag bei 39,51 $, 12 % unter dem Donnerstag.",
+        "Der Nasdaq-100-Future steht am Morgen rund 2,7 % über dem Freitagsschluss.",
+        "Neocloud-Werte trugen am Freitag die Sorge um die Finanzierung neuer Rechenzentren."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: MEDS (vorbörslich Fr 14:25)",
-          "url": "https://finance.yahoo.com/quote/MEDS/"
+          "title": "Exa/Marktdaten: CoreWeave 39,51 $ (−12,02 %) am 20.11.",
+          "url": "https://exa.ai/library/markets/stocks/CRWV?date=2026-11-20&view=daily"
         },
         {
-          "title": "Benzinga: 12 Gesundheitswerte vorbörslich in Bewegung (20.11.)",
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63467104/12-health-care-stocks-moving-friday-s-pre-market-session"
+          "title": "Yahoo Finance: CRWV",
+          "url": "https://finance.yahoo.com/quote/CRWV/"
         },
         {
-          "title": "Benzinga: DataMeds AI steigt nachbörslich über 55 % (19.11.)",
-          "url": "https://www.benzinga.com/markets/equities/26/11/63463799/datameds-ai-shares-surge-after-hours-todos-medical-cancer-diagnostics-deal"
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F und S&P-500-Future ES=F (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "MarketScreener/Dow Jones: EURUSD 1,0973 (Fr 13:44)",
-          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
+          "title": "Fortune: Dow-Futures +800 Punkte, Nasdaq-Futures fast +3 % nach der Korrektur (22.11.)",
+          "url": "https://fortune.com/2026/11/22/stock-market-today-dow-futures-sp500-nasdaq-correction-ai-bust/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD 1,1005 (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
     },
     {
-      "name": "Akanda",
-      "ticker": "AKAN",
-      "country": "US",
+      "name": "Nebius Group",
+      "ticker": "NBIS",
+      "country": "NL",
       "exchange": "Nasdaq",
-      "priceEur": 4.38,
-      "hint": "Vorbörslich +40 % ohne neue Firmenmeldung",
+      "priceEur": 73.88,
+      "hint": "Nach −16 % am Freitag, stärkster Verlierer unter den großen Neoclouds",
       "bullets": [
-        "Zuletzt 4,81 $ nach 3,43 $ Schluss, Börsenwert rund 9 Mio. $.",
-        "Quiver sieht Momentum-Handel in einem Wert mit sehr kleinem Streubesitz.",
-        "Geplante Vorzugsaktien über 10 Mio. $ könnten den Anteil der Aktionäre stark verwässern."
+        "Schloss am Freitag bei 81,31 $, am Mittwoch waren es noch 106,96 $.",
+        "Der Tagesverlust von 16 % war größer als bei CoreWeave oder Nvidia.",
+        "Futures zeigen zum Wochenstart eine Gegenbewegung, angeführt vom Nasdaq."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: AKAN (vorbörslich Fr 14:25)",
-          "url": "https://finance.yahoo.com/quote/AKAN/"
+          "title": "Exa/Marktdaten: Nebius 81,31 $ (−16,11 %) am 20.11.",
+          "url": "https://exa.ai/library/markets/stocks/NBIS?date=2026-11-20&view=daily"
         },
         {
-          "title": "Benzinga: 12 Gesundheitswerte vorbörslich in Bewegung (20.11.)",
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63467104/12-health-care-stocks-moving-friday-s-pre-market-session"
+          "title": "Yahoo Finance: NBIS",
+          "url": "https://finance.yahoo.com/quote/NBIS/"
         },
         {
-          "title": "Quiver Quantitative: Akanda springt – Händler jagen Momentum in kleinem Streubesitz",
-          "url": "https://www.quiverquant.com/news/Akanda+stock+jumps+as+traders+chase+momentum+in+a+tiny+float+name"
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F und S&P-500-Future ES=F (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         },
         {
-          "title": "Kalkine: Akanda +22 % trotz geplanter Vorzugsaktien über 10 Mio. $",
-          "url": "https://kalkine.com/news/technology/why-is-akanda-nasdaqakan-up-2208-while-planning-a-usd-10-million-preferred-share-sale"
+          "title": "CNBC: Futures steigen nach Korrektur-Woche (Live, 22./23.11.)",
+          "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
         },
         {
-          "title": "MarketScreener/Dow Jones: EURUSD 1,0973 (Fr 13:44)",
-          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
+          "title": "Yahoo Finance: EURUSD 1,1005 (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
     },
     {
-      "name": "Erayak Power Solution",
-      "ticker": "RAYA",
-      "country": "CN",
+      "name": "Strategy",
+      "ticker": "MSTR",
+      "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 0.64,
-      "hint": "Vorbörslich +43 % nach +31 % am Donnerstag",
+      "priceEur": 70.7,
+      "hint": "Bitcoin am Wochenende rund +9 % zurück über 60.000 $",
       "bullets": [
-        "Vorbörslich in der Spitze 0,87 $, zuletzt 0,70 $ nach 0,49 $ Schluss.",
-        "Benzinga nennt keinen Auslöser, die Bewegung folgt dem Sprung vom Vortag.",
-        "Börsenwert unter 1 Mio. $, Kurse sind dünn gehandelt und schwanken stark."
+        "Bitcoin stieg von rund 55.100 $ auf über 60.500 $, getrieben von Eindeckungen.",
+        "MSTR schloss am Freitag bei 77,80 $, 9,7 % unter dem Donnerstag.",
+        "FXStreet warnt, die Gründe des Absturzes bestünden weiter."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: RAYA (vorbörslich Fr 14:25)",
-          "url": "https://finance.yahoo.com/quote/RAYA/"
+          "title": "FXStreet: Bitcoin +9 % zurück über 60.000 $ – was Montag für Aktien heißt (22.11.)",
+          "url": "https://www.fxstreet.com/cryptocurrencies/news/btc-9-how-it-reclaimed-60-000-and-what-to-expect-from-stocks-on-monday-202611221929"
         },
         {
-          "title": "Benzinga: Gap +4 % und 20 weitere Werte vorbörslich (20.11.)",
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63465346/why-gap-shares-are-trading-higher-by-around-4-here-are-20-stocks-moving-premarket"
+          "title": "Yahoo Finance: MSTR (Schluss Fr 77,80 $, Do 86,13 $)",
+          "url": "https://finance.yahoo.com/quote/MSTR/"
         },
         {
-          "title": "MarketScreener/Dow Jones: EURUSD 1,0973 (Fr 13:44)",
-          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
+          "title": "Yahoo Finance: BTC-USD (Mo 23.11., rund 61.400 $)",
+          "url": "https://finance.yahoo.com/quote/BTC-USD/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD 1,1005 (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
     }
   ],
   "short": [
     {
-      "name": "Anthropic",
-      "ticker": "ANT",
+      "name": "Semtech",
+      "ticker": "SMTC",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 79.18,
-      "hint": "Vorbörslich −10,6 % am zweiten Handelstag",
+      "priceEur": 79.63,
+      "hint": "Zahlen nach US-Schluss, Optionen preisen ±16,6 % ein",
       "bullets": [
-        "Do-Schluss 97,17 $ nach Eröffnung bei 111,50 $, Ausgabepreis 83 $.",
-        "Zuletzt 86,88 $, der Abstand zum Ausgabepreis schrumpft auf rund 5 %.",
-        "Der Börsengang wird heute abgeschlossen, Händler schichten Tech-Aktien um."
+        "Semtech legt heute nach US-Börsenschluss Zahlen vor.",
+        "Die Optionen preisen ±16,6 % ein, deutlich mehr als der Zehnjahresschnitt von ±12,2 %.",
+        "Die Aktie fiel am Freitag mit den Chipwerten um 13,9 % auf 87,63 $."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: ANT (vorbörslich Fr 14:25)",
-          "url": "https://finance.yahoo.com/quote/ANT/"
+          "title": "EarningsWatcher: Zahlen am 23.11. und erwartete Bewegungen (Dell Di ±16,2 %)",
+          "url": "https://earnings-watcher.com/earnings-today"
         },
         {
-          "title": "Investing.com: Vorbörse – Anthropic fällt nach Debüt, Intuit nach Mailchimp-Verkauf (20.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/premarket-movers-anthropic-slides-after-debut-intuit-tumbles-on-mailchimp-sale-5041130"
+          "title": "Yahoo Finance: SMTC (Schluss Fr 87,63 $, Do 101,81 $)",
+          "url": "https://finance.yahoo.com/quote/SMTC/"
         },
         {
-          "title": "StockTitan: Börse live 20.11. – Chipwerte weltweit tiefer vor US-Start",
-          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026"
+          "title": "Yahoo Finance: Nasdaq Composite, S&P 500, SOX, Nvidia (Schluss Fr 20.11.)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/history/"
         },
         {
-          "title": "MarketScreener/Dow Jones: DAX fällt unter 25.000 Punkte – Ausverkauf bei Technologie (20.11., 13:44)",
-          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
-        },
-        {
-          "title": "MarketScreener/Dow Jones: EURUSD 1,0973 (Fr 13:44)",
-          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
+          "title": "Yahoo Finance: EURUSD 1,1005 (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
     },
     {
-      "name": "Intuit",
-      "ticker": "INTU",
+      "name": "Symbotic",
+      "ticker": "SYM",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 256.08,
-      "hint": "Vorbörslich −9,4 % nach gesenktem Umsatzziel",
+      "priceEur": 28.26,
+      "hint": "Zahlen nach US-Schluss, historisch im Schnitt ±22,6 %",
       "bullets": [
-        "Umsatzziel fürs Geschäftsjahr auf 23,08–23,37 Mrd. $ gesenkt, vorher 23,28–23,51 Mrd. $.",
-        "Credit Karma soll nur noch 2,72–2,83 Mrd. $ bringen statt 2,92–2,97 Mrd. $.",
-        "Mailchimp geht für rund 3,68 Mrd. $ an Bending Spoons."
+        "Symbotic berichtet heute nach US-Börsenschluss.",
+        "Die Optionen preisen ±15,2 % ein, der Zehnjahresschnitt liegt bei ±22,6 %.",
+        "Die Aktie schloss am Freitag bei 31,10 $."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: INTU (vorbörslich Fr 14:25)",
-          "url": "https://finance.yahoo.com/quote/INTU/"
+          "title": "EarningsWatcher: Zahlen am 23.11. und erwartete Bewegungen (Dell Di ±16,2 %)",
+          "url": "https://earnings-watcher.com/earnings-today"
         },
         {
-          "title": "CNBC: Stocks moving the most today (20.11.)",
-          "url": "https://www.cnbc.com/2026/11/20/stocks-moving-the-most-today-live-updates.html"
+          "title": "Yahoo Finance: SYM (Schluss Fr 31,10 $)",
+          "url": "https://finance.yahoo.com/quote/SYM/"
         },
         {
-          "title": "Investing.com: Vorbörse – Anthropic fällt nach Debüt, Intuit nach Mailchimp-Verkauf (20.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/premarket-movers-anthropic-slides-after-debut-intuit-tumbles-on-mailchimp-sale-5041130"
-        },
-        {
-          "title": "MarketScreener/Dow Jones: EURUSD 1,0973 (Fr 13:44)",
-          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
+          "title": "Yahoo Finance: EURUSD 1,1005 (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
     },
     {
-      "name": "United Microelectronics",
-      "ticker": "UMC",
-      "country": "TW",
+      "name": "Hewlett Packard Enterprise",
+      "ticker": "HPE",
+      "country": "US",
       "exchange": "NYSE",
-      "priceEur": 11.11,
-      "hint": "Vorbörslich −9,0 % im Chip-Kursrutsch",
+      "priceEur": 37.17,
+      "hint": "KI-Server-Zahlen nach US-Schluss, Optionen preisen ±14,1 % ein",
       "bullets": [
-        "Zuletzt 12,19 $ nach 13,40 $ Schluss, schon am Do rund −4 %.",
-        "Taiwan, Südkorea und Japan schlossen über 5 % tiefer, Chipwerte vorne.",
-        "Auch ASE Technology fällt vorbörslich um rund 8 %."
+        "HPE legt heute nach US-Börsenschluss Zahlen vor.",
+        "Die eingepreiste Spanne von ±14,1 % liegt weit über dem Schnitt von ±8,2 %.",
+        "Die Aktie fiel am Freitag um 10,1 % auf 40,91 $, im KI-Server-Sog."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: UMC (vorbörslich Fr 14:25)",
-          "url": "https://finance.yahoo.com/quote/UMC/"
+          "title": "EarningsWatcher: Zahlen am 23.11. und erwartete Bewegungen (Dell Di ±16,2 %)",
+          "url": "https://earnings-watcher.com/earnings-today"
         },
         {
-          "title": "Benzinga: Ross, Intuit, Anthropic und weitere vorbörslich schwächer (20.11.)",
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63468329/ross-stores-intuit-anthropic-and-other-big-stocks-moving-lower-in-fridays-pre-market-session"
+          "title": "Yahoo Finance: HPE (Schluss Fr 40,91 $, Do 45,49 $)",
+          "url": "https://finance.yahoo.com/quote/HPE/"
         },
         {
-          "title": "Barchart: Nasdaq-Futures fallen, KI-Kursrutsch geht weiter (20.11.)",
-          "url": "https://www.barchart.com/story/news/8932837/nasdaq-futures-plunge-as-ai-selloff-rolls-on"
+          "title": "Yahoo Finance: Nasdaq Composite, S&P 500, SOX, Nvidia (Schluss Fr 20.11.)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/history/"
         },
         {
-          "title": "MarketScreener/Dow Jones: EURUSD 1,0973 (Fr 13:44)",
-          "url": "https://de.marketscreener.com/boerse-nachrichten/dax-faellt-unter-25-000-punkte-ausverkauf-bei-technologie-ce785ed3d880f721"
+          "title": "Yahoo Finance: EURUSD 1,1005 (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
     }
@@ -1242,28 +1242,24 @@
     ]
   },
   "rocketLabNews": {
-    "text": "Keine Pressemitteilung, kein Start und keine neue SEC-Meldung heute (letzte: Form 4 vom 18.11.). RKLB steht vorbörslich bei 48,91 $ (−4,1 %) und steuert auf den siebten Verlusttag zu, Stimmung auf Stocktwits „bärisch“. Analysen des Tages: Motley Fool sieht trotz verfehltem Gewinn starke Zeichen (Rekordumsatz 268 Mio. $, Auftragsbestand 3,6 Mrd. $), Trefis betont die 16 vorab gebuchten Neutron-Starts bei Erstflug frühestens 2027. Keine Änderung von Analysten-Einstufungen gefunden.",
-    "updatedAt": "2026-11-20T14:30:00+01:00",
+    "text": "Keine Pressemitteilung (letzte 14.11., 100. Electron) und keine neue SEC-Meldung seit Freitag; RKLB schloss Fr bei 45,42 $ (−10,9 %), nächster Electron-Start „Night Owls Never Sleep“ Fr 27.11. 01:05 mit Status „Go“.",
+    "updatedAt": "2026-11-23T08:10:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: RKLB (vorbörslich Fr 14:25)",
-        "url": "https://finance.yahoo.com/quote/RKLB/"
+        "title": "Rocket Lab: Pressemitteilungen (letzte 14.11., 100. Electron)",
+        "url": "https://investors.rocketlabcorp.com/news"
       },
       {
         "title": "SEC EDGAR: Rocket Lab – letzte Meldung Form 4 vom 18.11.",
         "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001819994&type=&dateb=&owner=include&count=40"
       },
       {
-        "title": "Yahoo/Stocktwits: SpaceX hält sich, Raumfahrtwerte fallen (20.11.)",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-holds-orbit-space-stocks-065831911.html"
+        "title": "Yahoo Finance: RKLB (Schluss Fr 20.11. 45,42 $, Do 50,99 $)",
+        "url": "https://finance.yahoo.com/quote/RKLB/history/"
       },
       {
-        "title": "Motley Fool: Rocket Lab verfehlte beim Gewinn – und das ist gut (20.11.)",
-        "url": "https://www.fool.com/investing/2026/11/20/rocket-lab-missed-on-q3-earnings-and-that-s-great-news/"
-      },
-      {
-        "title": "Trefis: Was könnte die Rocket-Lab-Aktie antreiben? (20.11.)",
-        "url": "https://www.trefis.com/stock/rklb/articles/627244/what-could-send-rocket-lab-stock-higher/2026-11-20"
+        "title": "Launch Library 2: Startliste (Stand Mo 23.11., 07:45)",
+        "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
       }
     ]
   }

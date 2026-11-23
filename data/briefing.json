@@ -1,67 +1,110 @@
 {
   "example": false,
-  "date": "2026-11-20",
+  "date": "2026-11-23",
   "title": "Morgen-Briefing",
   "greeting": "Guten Morgen, Justy.",
-  "summary": "Freitag nach einem schweren Donnerstag. Das Anthropic-Debüt hat den KI-Handel nicht getragen: ANT schloss bei 97,17 $ (+17 % zum Ausgabepreis, Hoch 115,10 $), aber Nasdaq −2,25 %, S&P 500 −2,0 %, Dow −2,2 % und erstmals seit Juni unter 50.000. Asien bricht heute ein (Kospi −5,5 %, Nikkei −4,9 %), Nasdaq-100-Future rund −1,1 %, der Dax soll rund 1,3 % tiefer bei etwa 25.120 starten. Do-Schluss: SPCX 138,43 $ (−3,5 %), TSLA 374,41 $ (−2,4 %), RKLB 50,99 $ (−3,9 %), MRVL 138,47 $ (−4,9 %).",
+  "summary": "Montag nach der schwersten Woche seit Jahren: Am Freitag fielen Nasdaq 5,3 %, S&P 500 3,7 % und der Chipindex SOX 10,7 %, Nvidia 14 %; alle drei großen US-Indizes sind in der Korrektur (Yahoo, CNBC). Fr-Schluss: SPCX 127,79 $ (−7,7 %), TSLA 345,82 $ (−7,6 %), RKLB 45,42 $ (−10,9 %), MRVL 122,28 $ (−11,7 %). Heute früh dreht die Stimmung: Nasdaq-100-Future rund +2,7 %, S&P-Future +2,0 %, Bitcoin wieder über 61.000 $; Kospi aber −3,2 %, der Dax soll leicht höher bei rund 24.890 starten (Yahoo, dpa-AFX).",
   "bullets": [
-    "Anthropic: Schluss 97,17 $, Bewertung rund 1,76 Bio. $, nachbörslich etwa −5 %. Das Geld kam aus anderen KI-Werten, Nvidia fiel den sechsten Tag in Folge (Yahoo/Benzinga, CNBC).",
-    "Dax: Indikation 25.122 (−1,3 %), die 200-Tage-Linie knapp unter 25.000 kommt in Reichweite; IG Metall streikt erstmals seit acht Jahren ganztägig (dpa-AFX, Reuters).",
-    "Heute: Lagarde und Sewing beim European Banking Congress, US-Verbraucherstimmung um 16:00, Bessent am Nachmittag bei CNBC (Reuters, CNBC).",
-    "Nachbörslich: Intuit −10 % (schwacher Ausblick), Ross −5 %, Bending Spoons zeitweise +9,7 % nach Mailchimp-Kauf (Investing.com, Yahoo).",
-    "Tesla: Cybercab fährt jetzt auch in Dallas, Bestellungen in Argentinien offen. Kalender Cybercab Dallas 65 → 100 % (DigitalToday/InsideEVs, Tesla North).",
-    "SpaceX: USSF-317 in der Nacht abgebrochen, neu Sa 03:32 Berlin (70 %). Dragon CRS-35 legt heute um 18:05 ab (70 %, Wetter) (SpaceX, NASA).",
-    "Tagesfrage gestern: RKLB schloss bei 50,99 $ unter 53,07 $, Karl lag mit „nein“ richtig (7 von 13). Heute: RKLB über 50,99 $?"
+    "SpaceX: Weltrekord mit zwei Falcon-Starts in 32 Stunden von Vandenberg (NROL-136 am So); laut Reuters rund 44 Mrd. $ Kredit von Apollo und Goldman für Nvidia-Chips. USSF-266 jetzt Di 16:55 (SpaceX, Noozhawk, Reuters, LL2).",
+    "Tesla: Musk kündigt FSD 15 für Dezember an; Wochenminus 11,4 %, HSBC „Hold“ mit 359 $. Fusion mit SpaceX: Kalender 40 → 30 % (Seeking Alpha, Longbridge).",
+    "Rocket Lab: sechs Verlusttage in Folge, keine eigene Meldung; nächster Electron-Start Fr 01:05 (Go). Tagesfrage aufgelöst: „nein“, Karl richtig.",
+    "Politik/Makro: Bessent spricht von „sehr harten“ Fed-Aussagen und möglichem Fehler bei zu starker Straffung (CBS); Huang sagt öffentliche Senatsanhörung zu (Kalender 70 → 85 %). KI-Champions-Liste noch nicht da (60 → 30 %).",
+    "Heute: Einkaufsmanager 09:30/10:00/15:45, abends Zahlen von HPE, Zoom, Semtech, Symbotic; Di Dell, Mi PCE-Inflation, Do US-Börsen zu (EarningsWatcher, FXStreet, CNBC).",
+    "Moonshots Long: CoreWeave, Nebius (Gegenbewegung nach −12/−16 %), Strategy (Bitcoin +9 %). Short: Semtech, Symbotic, HPE (Zahlen nach US-Schluss, große eingepreiste Spannen)."
   ],
   "audioUrl": null,
   "sources": [
     {
-      "title": "Yahoo Finance/Benzinga: Futures geben nach, Anthropic-Debüt hebt KI-Werte nicht (19.11., 21:48 ET)",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-dow-p-500-futures-024814072.html"
+      "title": "Yahoo Finance: Nasdaq Composite, S&P 500, SOX, Nvidia (Schluss Fr 20.11.)",
+      "url": "https://finance.yahoo.com/quote/%5EIXIC/history/"
     },
     {
-      "title": "CNBC: Futures tiefer, Dow erstmals seit Juni unter 50.000 (Live, 20.11.)",
-      "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
+      "title": "CNBC: Futures steigen nach Korrektur-Woche (Live, 22./23.11.)",
+      "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
     },
     {
-      "title": "CNBC: Friday's big stock stories (19.11.)",
-      "url": "https://www.cnbc.com/2026/11/19/fridays-big-stock-stories-whats-likely-to-move-the-market.html"
+      "title": "Yahoo Finance: SPCX (Schluss Fr 20.11. 127,79 $, Do 138,43 $)",
+      "url": "https://finance.yahoo.com/quote/SPCX/history/"
     },
     {
-      "title": "tagesschau: Dax dürfte trotz Anthropic-Hype weiter fallen (20.11., 07:30)",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-102.html"
+      "title": "Yahoo Finance: TSLA (Schluss Fr 20.11. 345,82 $, Do 374,41 $)",
+      "url": "https://finance.yahoo.com/quote/TSLA/history/"
     },
     {
-      "title": "dpa-AFX via onvista: Dax im Sog der Weltbörsen weiter bergab (20.11., 06:11)",
-      "url": "https://www.onvista.de/news/2026/11-20-dax-flash-dax-im-sog-der-weltboersen-weiter-bergab-25-000-punkte-in-gefahr-0-10-26578641"
+      "title": "Yahoo Finance: RKLB (Schluss Fr 20.11. 45,42 $, Do 50,99 $)",
+      "url": "https://finance.yahoo.com/quote/RKLB/history/"
     },
     {
-      "title": "Reuters via onvista: Dax tiefer erwartet – Konjunktur und European Banking Congress im Blick (20.11., 06:21)",
-      "url": "https://www.onvista.de/news/2026/11-20-dax-tiefer-erwartet-konjunktur-und-european-banking-congress-im-blick-0-20-26578647"
+      "title": "Yahoo Finance: MRVL (Schluss Fr 20.11. 122,28 $, Do 138,47 $)",
+      "url": "https://finance.yahoo.com/quote/MRVL/history/"
     },
     {
-      "title": "Investing.com: Nachbörsliche Bewegungen BSP, INTU, ESTC, GAP, ROST (19.11.)",
-      "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-bsp-intu-estc-gap-rost-432SI-5040092"
+      "title": "Yahoo Finance: Nasdaq-100-Future NQ=F und S&P-500-Future ES=F (Mo 23.11., 07:45)",
+      "url": "https://finance.yahoo.com/quote/NQ%3DF/"
     },
     {
-      "title": "DigitalToday (nach InsideEVs): Tesla startet Cybercab in Dallas (20.11.)",
-      "url": "https://www.digitaltoday.co.kr/en/view/128508/tesla-cybercab-robotaxi-expands-to-dallas-after-austin"
+      "title": "Yahoo Finance: BTC-USD (Mo 23.11., rund 61.400 $)",
+      "url": "https://finance.yahoo.com/quote/BTC-USD/"
     },
     {
-      "title": "Tesla North: Tesla öffnet Bestellungen für Model 3 und Model Y in Argentinien (19.11.)",
-      "url": "https://teslanorth.com/2026/11/19/tesla-argentina-model-3-model-y-prices-orders/"
+      "title": "Yahoo Finance: Kospi ^KS11 (Mo 23.11., 07:45)",
+      "url": "https://finance.yahoo.com/quote/%5EKS11/"
     },
     {
-      "title": "Spaceflight Now: SpaceX bricht USSF-317-Versuch ab, neuer Termin Freitag (19.11.)",
-      "url": "https://spaceflightnow.com/2026/11/19/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-2/"
+      "title": "dpa-AFX via onvista: Dax im globalen Tech-Ausverkauf vor robustem Start (23.11., 06:21)",
+      "url": "https://www.onvista.de/news/2026/11-23-dax-flash-dax-im-globalen-tech-ausverkauf-vor-robustem-start-0-10-26579280"
     },
     {
-      "title": "NASA: Abdocken CRS-35 Fr 20.11. 12:05 EST, Wasserung Sa 21.11. (aktualisiert 19.11.)",
-      "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/"
+      "title": "SpaceX: NROL-136 (So 22.11., 04:23 PT)",
+      "url": "https://www.spacex.com/launches/nrol136"
     },
     {
-      "title": "Yahoo Finance: RKLB-Historie (Schluss 19.11.)",
-      "url": "https://finance.yahoo.com/quote/RKLB-Historie/"
+      "title": "Noozhawk: Rekord – zwei Falcon-Starts von SLC-4E binnen 32 Stunden (22.11.)",
+      "url": "https://www.noozhawk.com/spacex-west-coast-team-sets-record-with-quick-turnaround-between-falcon-liftoffs/"
+    },
+    {
+      "title": "Reuters via NewsX: Apollo und Goldman bepreisen rund 44 Mrd. $ Kredit für SpaceX-GPU-Kauf (20.11.)",
+      "url": "https://world.newsx.com/technology/apollo-goldman-lead-44-billion-spacex-gpu-debt-financing-255915/"
+    },
+    {
+      "title": "Launch Library 2: Startliste (Stand Mo 23.11., 07:45)",
+      "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
+    },
+    {
+      "title": "Seeking Alpha: Musk – FSD 15 kommt nächsten Monat (21.11.)",
+      "url": "https://seekingalpha.com/news/4675395-tesla-launch-fsd-15-next-month-elon-musk"
+    },
+    {
+      "title": "Longbridge: Wochenbilanz Tesla −11,38 %, HSBC Hold 359 $, Südkorea lehnt FSD ab (21.11.)",
+      "url": "https://longbridge.com/en/news/306361728"
+    },
+    {
+      "title": "Startup Fortune: Rocket Lab fällt 10,8 % – Neutron-Verzögerung trifft Tech-Ausverkauf (21.11.)",
+      "url": "https://startupfortune.com/rocket-lab-stock-falls-108-to-4544-as-its-neutron-delay-meets-a-tech-rout/"
+    },
+    {
+      "title": "Cedar Global Markets: Nasdaq-Futures +2,4 %, Bessent bei CBS über „sehr harte“ Fed-Aussagen (22.11.)",
+      "url": "https://cedarglobalmarkets.com/2026/11/22/nasdaq-futures-sunday-open-rebound/"
+    },
+    {
+      "title": "Korea Times/Reuters: Huang sagt öffentliche Senatsanhörung zu (21.11.)",
+      "url": "https://www.koreatimes.co.kr/world/20261121/former-nvidia-ceo-huang-agreed-to-testify-at-public-us-senate-hearing-senators-aide-says"
+    },
+    {
+      "title": "OrigoTech: WSJ – USA wollen 24+ KI-„Champions“ benennen, noch nicht verkündet",
+      "url": "https://origotech.dev/articles/wsj-reports-the-trump-administration-plans-to-name-more-than-24-us-companies-including-nvidia-amazon-microsoft-openai-and-anthropic-as-ai-national-champions-for-overseas-sales/"
+    },
+    {
+      "title": "EarningsWatcher: Zahlen am 23.11. und erwartete Bewegungen (Dell Di ±16,2 %)",
+      "url": "https://earnings-watcher.com/earnings-today"
+    },
+    {
+      "title": "FXStreet: Bitcoin +9 % zurück über 60.000 $ – was Montag für Aktien heißt (22.11.)",
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/btc-9-how-it-reclaimed-60-000-and-what-to-expect-from-stocks-on-monday-202611221929"
+    },
+    {
+      "title": "Fortune: Dow-Futures +800 Punkte, Nasdaq-Futures fast +3 % nach der Korrektur (22.11.)",
+      "url": "https://fortune.com/2026/11/22/stock-market-today-dow-futures-sp500-nasdaq-correction-ai-bust/"
     }
   ]
 }
