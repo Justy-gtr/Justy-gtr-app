@@ -1,33 +1,33 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T19:10:00+01:00",
+  "updatedAt": "2026-11-23T19:45:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 25,
-      "postsCount": 24,
-      "reason": "Der Bericht über einen 40-Mrd.-$-Deal für Nvidia-Chips wird stark geteilt, dazu Lob für den Starship-Fang. Musks KI-Rückstand laut NYT dämpft weiter.",
+      "score": 15,
+      "postsCount": 25,
+      "reason": "Neben dem Nvidia-Chipdeal und Musks KI-Rückstand fällt auf: SpaceX liegt etwa auf IPO-Niveau, rund 40 % unter dem Hoch. Fans feiern den Starship-Fang.",
       "sources": [
         {
-          "title": "@Kalshi_Finance auf X (23.11., 18:14)",
-          "url": "https://x.com/Kalshi_Finance/status/2124914373298704748"
+          "title": "@0xDamien auf X (23.11., 19:41)",
+          "url": "https://x.com/0xDamien/status/2124936333571527050"
         },
         {
-          "title": "@Timboo auf X (23.11., 19:04)",
-          "url": "https://x.com/Timboo/status/2124927125706932389"
+          "title": "@cryptopunk7213 auf X (23.11., 19:26)",
+          "url": "https://x.com/cryptopunk7213/status/2124932725148979481"
         },
         {
-          "title": "@SpaceInvestor_D auf X (23.11., 18:14)",
-          "url": "https://x.com/SpaceInvestor_D/status/2124914575631896676"
+          "title": "@joehansen auf X (23.11., 19:25)",
+          "url": "https://x.com/joehansen/status/2124932241004622010"
         }
       ],
-      "updatedAt": "2026-11-23T19:10:00+01:00"
+      "updatedAt": "2026-11-23T19:45:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 50,
-      "postsCount": 24,
+      "postsCount": 25,
       "reason": "Tesla legt mit der KI-Erholung kräftig zu, dazu wird FSD v15 erwähnt. Viele hoffen, dass 400 $ hält, und spekulieren über einen Deal mit SpaceX.",
       "sources": [
         {
@@ -43,7 +43,7 @@
           "url": "https://x.com/grok/status/2124910251778420804"
         }
       ],
-      "updatedAt": "2026-11-23T19:10:00+01:00"
+      "updatedAt": "2026-11-23T19:45:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/FranciscoSpace5/status/2124923966322327926"
         }
       ],
-      "updatedAt": "2026-11-23T19:10:00+01:00"
+      "updatedAt": "2026-11-23T19:45:00+01:00"
     }
   }
 }
