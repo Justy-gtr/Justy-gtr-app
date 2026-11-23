@@ -1,56 +1,60 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T20:05:00+01:00",
+  "updatedAt": "2026-11-23T20:40:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 15,
+      "score": 20,
       "postsCount": 25,
-      "reason": "Neben dem Nvidia-Chipdeal und Musks KI-Rückstand fällt auf: SpaceX liegt etwa auf IPO-Niveau, rund 40 % unter dem Hoch. Fans feiern den Starship-Fang.",
+      "reason": "Der NYT-Bericht zu Musks KI-Rückstand wird weiter geteilt. Fans halten dagegen: Anthropic und Google mieten teure Rechenleistung bei SpaceX.",
       "sources": [
         {
-          "title": "@0xDamien auf X (23.11., 19:41)",
-          "url": "https://x.com/0xDamien/status/2124936333571527050"
+          "title": "@XFreeze auf X (23.11., 20:26)",
+          "url": "https://x.com/XFreeze/status/2124947792502337626"
         },
         {
-          "title": "@cryptopunk7213 auf X (23.11., 19:26)",
-          "url": "https://x.com/cryptopunk7213/status/2124932725148979481"
+          "title": "@pequityresearch auf X (23.11., 20:10)",
+          "url": "https://x.com/pequityresearch/status/2124943683816501320"
         },
         {
-          "title": "@joehansen auf X (23.11., 19:25)",
-          "url": "https://x.com/joehansen/status/2124932241004622010"
+          "title": "@Kalshi_Finance auf X (23.11., 18:14)",
+          "url": "https://x.com/Kalshi_Finance/status/2124914373298704748"
         }
       ],
-      "updatedAt": "2026-11-23T20:05:00+01:00"
+      "updatedAt": "2026-11-23T20:40:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 50,
+      "score": 55,
       "postsCount": 25,
-      "reason": "Tesla legt mit der KI-Erholung kräftig zu, dazu wird FSD v15 erwähnt. Viele hoffen, dass 400 $ hält, und spekulieren über einen Deal mit SpaceX.",
+      "reason": "Tesla schließt einen starken Tag ab. Viele freuen sich, dass Leerverkäufer überrollt wurden, und spekulieren weiter über ein Zusammengehen mit SpaceX.",
       "sources": [
         {
-          "title": "@NunezAlfred auf X (23.11., 18:34)",
-          "url": "https://x.com/NunezAlfred/status/2124919640568496318"
+          "title": "@brent_e_trader auf X (23.11., 20:37)",
+          "url": "https://x.com/brent_e_trader/status/2124950483093672167"
         },
         {
-          "title": "@strengthPlan auf X (23.11., 17:42)",
-          "url": "https://x.com/strengthPlan/status/2124906369316733292"
+          "title": "@strengthPlan auf X (23.11., 20:10)",
+          "url": "https://x.com/strengthPlan/status/2124943590010806573"
         },
         {
-          "title": "@grok auf X (23.11., 17:57)",
-          "url": "https://x.com/grok/status/2124910251778420804"
+          "title": "@surfranchvibes auf X (23.11., 20:20)",
+          "url": "https://x.com/surfranchvibes/status/2124946316409045153"
         }
       ],
-      "updatedAt": "2026-11-23T20:05:00+01:00"
+      "updatedAt": "2026-11-23T20:40:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 35,
       "postsCount": 25,
-      "reason": "Viel Spam, aber auch Neues: Starcloud hat einen Start für Rechenzentren im All gebucht. Einige sehen Unterstützung im Chart, andere finden die Aktie zu spekulativ.",
+      "reason": "Viel Spam. Rocket Lab zeigt ein Erdbild der eigenen ESCAPADE-Sonde auf dem Weg zum Mars, dazu Starclouds Startbuchung. Einige finden die Aktie zu spekulativ.",
       "sources": [
+        {
+          "title": "@RocketLab auf X (23.11., 20:38)",
+          "url": "https://x.com/RocketLab/status/2124950740032684096"
+        },
         {
           "title": "@BastianelliLore auf X (23.11., 18:45)",
           "url": "https://x.com/BastianelliLore/status/2124922174658216431"
@@ -58,13 +62,9 @@
         {
           "title": "@HKIStrategies auf X (23.11., 18:14)",
           "url": "https://x.com/HKIStrategies/status/2124914503661891758"
-        },
-        {
-          "title": "@FranciscoSpace5 auf X (23.11., 18:52)",
-          "url": "https://x.com/FranciscoSpace5/status/2124923966322327926"
         }
       ],
-      "updatedAt": "2026-11-23T20:05:00+01:00"
+      "updatedAt": "2026-11-23T20:40:00+01:00"
     }
   }
 }
