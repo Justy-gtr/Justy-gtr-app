@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T20:40:00+01:00",
+  "updatedAt": "2026-11-23T21:06:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 20,
+      "score": 10,
       "postsCount": 25,
-      "reason": "Der NYT-Bericht zu Musks KI-Rückstand wird weiter geteilt. Fans halten dagegen: Anthropic und Google mieten teure Rechenleistung bei SpaceX.",
+      "reason": "Der NYT-Bericht, SpaceX hinke bei KI hinterher, macht weiter die Runde. Fans feiern dagegen das Starship-Fangvideo, einige zweifeln am Konzernmix.",
       "sources": [
         {
-          "title": "@XFreeze auf X (23.11., 20:26)",
-          "url": "https://x.com/XFreeze/status/2124947792502337626"
+          "title": "@Investingcom auf X (23.11., 21:03)",
+          "url": "https://x.com/Investingcom/status/2124957034831352182"
         },
         {
-          "title": "@pequityresearch auf X (23.11., 20:10)",
-          "url": "https://x.com/pequityresearch/status/2124943683816501320"
+          "title": "@Erdayastronaut auf X (23.11., 21:03)",
+          "url": "https://x.com/Erdayastronaut/status/2124957031048335553"
         },
         {
-          "title": "@Kalshi_Finance auf X (23.11., 18:14)",
-          "url": "https://x.com/Kalshi_Finance/status/2124914373298704748"
+          "title": "@jawnzilla auf X (23.11., 21:04)",
+          "url": "https://x.com/jawnzilla/status/2124957213110223018"
         }
       ],
-      "updatedAt": "2026-11-23T20:40:00+01:00"
+      "updatedAt": "2026-11-23T21:06:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 55,
+      "score": 45,
       "postsCount": 25,
-      "reason": "Tesla schließt einen starken Tag ab. Viele freuen sich, dass Leerverkäufer überrollt wurden, und spekulieren weiter über ein Zusammengehen mit SpaceX.",
+      "reason": "Ein Video zeigt einen Cybercab, der vor einem Unfall in Austin rechtzeitig stoppt. Dazu Freude über Starlink in jedem Tesla bis 2027 und neue Supercharger.",
       "sources": [
         {
-          "title": "@brent_e_trader auf X (23.11., 20:37)",
-          "url": "https://x.com/brent_e_trader/status/2124950483093672167"
+          "title": "@TodaysNewsco auf X (23.11., 21:04)",
+          "url": "https://x.com/TodaysNewsco/status/2124957279279854004"
         },
         {
-          "title": "@strengthPlan auf X (23.11., 20:10)",
-          "url": "https://x.com/strengthPlan/status/2124943590010806573"
+          "title": "@TeslaIsTheWay auf X (23.11., 21:03)",
+          "url": "https://x.com/TeslaIsTheWay/status/2124956988362891311"
         },
         {
-          "title": "@surfranchvibes auf X (23.11., 20:20)",
-          "url": "https://x.com/surfranchvibes/status/2124946316409045153"
+          "title": "@CyberMikeOG auf X (23.11., 21:04)",
+          "url": "https://x.com/CyberMikeOG/status/2124957349161148840"
         }
       ],
-      "updatedAt": "2026-11-23T20:40:00+01:00"
+      "updatedAt": "2026-11-23T21:06:00+01:00"
     },
     "RKLB": {
-      "mood": "gut",
-      "score": 35,
+      "mood": "gemischt",
+      "score": 15,
       "postsCount": 25,
-      "reason": "Viel Spam. Rocket Lab zeigt ein Erdbild der eigenen ESCAPADE-Sonde auf dem Weg zum Mars, dazu Starclouds Startbuchung. Einige finden die Aktie zu spekulativ.",
+      "reason": "Viel Spam. Fans reden über den ESCAPADE-Vorbeiflug an der Erde, Chartfans sehen dagegen eine Schulter-Kopf-Schulter-Formation im Tageschart.",
       "sources": [
         {
-          "title": "@RocketLab auf X (23.11., 20:38)",
-          "url": "https://x.com/RocketLab/status/2124950740032684096"
+          "title": "@elteslaengineer auf X (23.11., 20:45)",
+          "url": "https://x.com/elteslaengineer/status/2124952574646255988"
         },
         {
-          "title": "@BastianelliLore auf X (23.11., 18:45)",
-          "url": "https://x.com/BastianelliLore/status/2124922174658216431"
+          "title": "@gregpower auf X (23.11., 20:35)",
+          "url": "https://x.com/gregpower/status/2124950026111824112"
         },
         {
-          "title": "@HKIStrategies auf X (23.11., 18:14)",
-          "url": "https://x.com/HKIStrategies/status/2124914503661891758"
+          "title": "@TommasoGritti auf X (23.11., 20:53)",
+          "url": "https://x.com/TommasoGritti/status/2124954551547560193"
         }
       ],
-      "updatedAt": "2026-11-23T20:40:00+01:00"
+      "updatedAt": "2026-11-23T21:06:00+01:00"
     }
   }
 }
