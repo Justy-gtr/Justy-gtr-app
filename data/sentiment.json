@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-20T21:38:00+01:00",
+  "updatedAt": "2026-11-23T14:06:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gemischt",
-      "score": -20,
+      "mood": "gut",
+      "score": 35,
       "postsCount": 25,
-      "reason": "Fans finden, SpaceX werde zu Unrecht wie eine KI-Aktie abgestraft, Starlink werde übersehen. Nvidia fällt heute sogar stärker, rund 13 %.",
+      "reason": "SpaceX steigt vorbörslich gut 2 %, Jefferies startet die Abdeckung, dazu Gerüchte über eine Fusion mit Tesla. Kritik gibt es wegen Starlink-Streit und einer Klage.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (20.11., 21:08)",
-          "url": "https://x.com/spcxGOD/status/2123870999099650454"
+          "title": "@ticker_report auf X (23.11., 13:48)",
+          "url": "https://x.com/ticker_report/status/2124847678089560407"
         },
         {
-          "title": "@spcxGOD auf X (20.11., 21:18)",
-          "url": "https://x.com/spcxGOD/status/2123873531393888653"
+          "title": "@spcxGOD auf X (23.11., 13:40)",
+          "url": "https://x.com/spcxGOD/status/2124845523215544464"
         },
         {
-          "title": "@ElliottWaveSage auf X (20.11., 21:05)",
-          "url": "https://x.com/ElliottWaveSage/status/2123870339771879774"
+          "title": "@BacklogAlpha auf X (23.11., 12:15)",
+          "url": "https://x.com/BacklogAlpha/status/2124824027940442216"
         }
       ],
-      "updatedAt": "2026-11-20T21:38:00+01:00"
+      "updatedAt": "2026-11-23T14:06:00+01:00"
     },
     "TSLA": {
-      "mood": "schlecht",
-      "score": -25,
-      "postsCount": 25,
-      "reason": "Viele sprechen von einem brutalen Tag, Tesla wird mit dem ganzen Tech-Sektor nach unten gezogen. Einige sehen alles im Rabatt, andere erwarten noch rund 300 $.",
+      "mood": "gut",
+      "score": 45,
+      "postsCount": 24,
+      "reason": "Großes Thema ist FSD V15, das jetzt startet. Tesla liegt vorbörslich rund 4 % im Plus, JPMorgan bleibt neutral. Auch eine Fusion mit SpaceX wird diskutiert.",
       "sources": [
         {
-          "title": "@GrindeOptions auf X (20.11., 21:07)",
-          "url": "https://x.com/GrindeOptions/status/2123870846859289005"
+          "title": "@stockoholics auf X (23.11., 13:30)",
+          "url": "https://x.com/stockoholics/status/2124843085666701715"
         },
         {
-          "title": "@ghostlifestyle_ auf X (20.11., 21:04)",
-          "url": "https://x.com/ghostlifestyle_/status/2123870074897596861"
+          "title": "@CatalystPit auf X (23.11., 12:47)",
+          "url": "https://x.com/CatalystPit/status/2124832136104443960"
         },
         {
-          "title": "@MrStealth27 auf X (20.11., 21:23)",
-          "url": "https://x.com/MrStealth27/status/2123874897176973719"
+          "title": "@AnthonyAbbe2 auf X (23.11., 13:29)",
+          "url": "https://x.com/AnthonyAbbe2/status/2124842725099078045"
         }
       ],
-      "updatedAt": "2026-11-20T21:38:00+01:00"
+      "updatedAt": "2026-11-23T14:06:00+01:00"
     },
     "RKLB": {
-      "mood": "schlecht",
-      "score": -45,
-      "postsCount": 23,
-      "reason": "Rocket Lab liegt zum Handelsende über 10 % im Minus, Fans sind ratlos, warum es so stark fällt. Nur wenige sehen schon eine Chance zum Einstieg.",
+      "mood": "gut",
+      "score": 50,
+      "postsCount": 25,
+      "reason": "Rocket Lab springt vorbörslich wieder über 50 $, weil der Finanzchef starke Electron-Nachfrage sieht. Baird bestätigt sein Kursziel von 100 $.",
       "sources": [
         {
-          "title": "@MarkHubbard33 auf X (20.11., 21:04)",
-          "url": "https://x.com/MarkHubbard33/status/2123870170531971245"
+          "title": "@SpacBobby auf X (23.11., 13:49)",
+          "url": "https://x.com/SpacBobby/status/2124847812353679656"
         },
         {
-          "title": "@LizWhistle auf X (20.11., 21:05)",
-          "url": "https://x.com/LizWhistle/status/2123870257484112049"
+          "title": "@MM_Sentinel auf X (23.11., 12:42)",
+          "url": "https://x.com/MM_Sentinel/status/2124830822444196164"
         },
         {
-          "title": "@DrSzky auf X (20.11., 21:25)",
-          "url": "https://x.com/DrSzky/status/2123875408881852719"
+          "title": "@ailatalia auf X (23.11., 12:13)",
+          "url": "https://x.com/ailatalia/status/2124823759869886827"
         }
       ],
-      "updatedAt": "2026-11-20T21:38:00+01:00"
+      "updatedAt": "2026-11-23T14:06:00+01:00"
     }
   }
 }
