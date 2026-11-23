@@ -121,45 +121,6 @@
       ]
     },
     {
-      "id": "evt-falcon9-nrol136",
-      "title": "SpaceX: Falcon-9-Start NROL-136 für den US-Aufklärungsdienst NRO (erfolgreich, So 22.11. 13:23)",
-      "date": "2026-11-22",
-      "time": "13:23",
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "start",
-      "company": "SpaceX",
-      "tickers": [
-        "SPCX"
-      ],
-      "probabilityPct": 100,
-      "impact": "niedrig",
-      "reasoning": "SpaceX zielt auf Samstag 21.11., 30-Minuten-Fenster ab 04:30 Uhr Ortszeit Vandenberg (13:30 Berlin), Ersatz So 22.11. 04:16 Ortszeit (13:16 Berlin). Die Erststufe fliegt zum 14. Mal und soll an Land auf LZ-4 aufsetzen (SpaceX). An Bord sind Satelliten für das Aufklärungsnetz, das SpaceX mit Northrop Grumman für das NRO baut (Next Spaceflight). Routine-Start, aber Vandenberg hat mit USSF-317 am 18.11. und USSF-266 am 23.11. eine dichte Woche; Verschiebungen um einen Tag sind häufig. 80 % für den genannten Termin. Kurswirkung gering, zeigt aber das Militärgeschäft von SpaceX. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Fr 18:20: SpaceX nennt jetzt Sonntag, 22. November, 07:16 bis 07:46 Uhr Ostküstenzeit (13:16 bis 13:46 Berlin) von SLC-4E in Kalifornien, Landung an Land (SpaceX-Startliste). Einen Grund für die Verschiebung um einen Tag nennt SpaceX nicht; vermutlich hängt sie am verschobenen USSF-317-Start vom selben Gelände. 80 % unverändert für den neuen Termin. Stand Mo 08:00: Gestartet So 22.11. um 13:23 Berlin (04:23 Ortszeit) von SLC-4E, Booster auf dem 14. Flug an Land zurück (SpaceX). Nur 32 Stunden nach USSF-317 vom selben Startplatz – laut SpaceX Weltrekord, bisher 45 Stunden (Noozhawk). 80 → 100 % (eingetreten).",
-      "example": false,
-      "sources": [
-        {
-          "title": "SpaceX: NROL-136 Mission (Sa 21.11., Fenster ab 04:30 PT, Ersatz So 04:16 PT)",
-          "url": "https://www.spacex.com/launches/nrol136"
-        },
-        {
-          "title": "Next Spaceflight: NROL-136 (21.11. 12:30 UTC, B1097, 14. Flug)",
-          "url": "https://nextspaceflight.com/launches/details/8468/"
-        },
-        {
-          "title": "Launch Library 2: kommende Starts (Stand 15.11. 11:40: USSF-317 18.11. 03:14 UTC, NROL-136 21.11. 12:30 UTC, USSF-266 23.11. 16:04 UTC, NG-25 29.11. 15:47 UTC, alle „Go“)",
-          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?mode=list"
-        },
-        {
-          "title": "SpaceX: Startliste (NROL-136 am 22.11., USSF-380 am 27./28.11.)",
-          "url": "https://www.spacex.com/launches/"
-        },
-        {
-          "title": "Noozhawk: Rekord – zwei Falcon-Starts von SLC-4E binnen 32 Stunden (22.11.)",
-          "url": "https://www.noozhawk.com/spacex-west-coast-team-sets-record-with-quick-turnaround-between-falcon-liftoffs/"
-        }
-      ]
-    },
-    {
       "id": "evt-falcon9-ussf266",
       "title": "SpaceX: Falcon-9-Start USSF-266 für die Space Force (verschoben auf Di 24.11. 16:55)",
       "date": "2026-11-24",
@@ -173,7 +134,7 @@
       ],
       "probabilityPct": 75,
       "impact": "niedrig",
-      "reasoning": "SpaceX zielt auf Dienstag 17.11., Vier-Stunden-Fenster ab 08:58 Uhr Ortszeit Vandenberg (17:58 Berlin), Ersatz Mittwoch 08:49 Ortszeit. Booster fliegt zum 29. Mal. Vierter Space-Force-Start von SLC-4E in kurzer Folge, deshalb 75 % für den Zieltag. Kurswirkung gering. Stand So 05:30: Verschoben. SpaceX zielt jetzt auf Montag 23.11., Vier-Stunden-Fenster ab 08:04 Uhr Ortszeit Vandenberg (17:04 Berlin), Ersatz Di 24.11. 07:55 Ortszeit (16:55 Berlin). Laut Launch-Library-Verlauf rutschte der Start schon am 13.11. vom 18. auf den 23.11.; einen Grund nennt SpaceX nicht (SpaceX, Space Launch Live). 75 % unverändert für den neuen Termin. Stand So 06:30: Unverändert Mo 23.11. 16:04 UTC (17:04 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 08:00: Launch Library 2 nennt jetzt Di 24.11. 15:55 UTC (16:55 Berlin), Status „Go“. 75 % unverändert für den neuen Termin. Stand Mo 12:00: Unverändert Di 24.11. 16:55 Berlin, Status „Go“ (Launch Library 2). 75 % unverändert.",
+      "reasoning": "SpaceX zielt auf Dienstag 17.11., Vier-Stunden-Fenster ab 08:58 Uhr Ortszeit Vandenberg (17:58 Berlin), Ersatz Mittwoch 08:49 Ortszeit. Booster fliegt zum 29. Mal. Vierter Space-Force-Start von SLC-4E in kurzer Folge, deshalb 75 % für den Zieltag. Kurswirkung gering. Stand So 05:30: Verschoben. SpaceX zielt jetzt auf Montag 23.11., Vier-Stunden-Fenster ab 08:04 Uhr Ortszeit Vandenberg (17:04 Berlin), Ersatz Di 24.11. 07:55 Ortszeit (16:55 Berlin). Laut Launch-Library-Verlauf rutschte der Start schon am 13.11. vom 18. auf den 23.11.; einen Grund nennt SpaceX nicht (SpaceX, Space Launch Live). 75 % unverändert für den neuen Termin. Stand So 06:30: Unverändert Mo 23.11. 16:04 UTC (17:04 Berlin), Status „Go“ (Launch Library 2). 75 % unverändert. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 08:00: Launch Library 2 nennt jetzt Di 24.11. 15:55 UTC (16:55 Berlin), Status „Go“. 75 % unverändert für den neuen Termin. Stand Mo 12:00: Unverändert Di 24.11. 16:55 Berlin, Status „Go“ (Launch Library 2). 75 % unverändert. Stand Mo 14:20: Launch Library 2 nennt weiter Di 24.11. 15:55 UTC (16:55 Berlin), Status „Go“. Wahrscheinlichkeit unverändert.",
       "example": false,
       "sources": [
         {
@@ -199,14 +160,18 @@
         {
           "title": "Launch Library 2: Startliste (Stand Mo 23.11., 07:45)",
           "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
+        },
+        {
+          "title": "Launch Library 2: Startliste (Stand Mo 23.11., 14:20)",
+          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
         }
       ]
     },
     {
       "id": "evt-falcon9-ussf380",
-      "title": "SpaceX: Falcon-9-Start USSF-380 für die Space Force (Sa 28.11. 05:53)",
-      "date": "2026-11-28",
-      "time": "05:53",
+      "title": "SpaceX: Falcon-9-Start USSF-380 für die Space Force (verschoben auf So 29.11. 05:39)",
+      "date": "2026-11-29",
+      "time": "05:39",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -216,20 +181,24 @@
       ],
       "probabilityPct": 65,
       "impact": "niedrig",
-      "reasoning": "SpaceX führt USSF-380 neu in der Startliste: Falcon 9 von SLC-4E in Kalifornien, Fenster 27.11. 23:53 bis 28.11. 03:53 Uhr Ostküstenzeit (Sa 28.11. 05:53 bis 09:53 Berlin), Landung auf dem Drohnenschiff (SpaceX). Vor diesem Start stehen am selben Gelände noch USSF-317, NROL-136 und USSF-266 an, die schon mehrfach rutschten; deshalb nur 65 % für den genannten Tag. Kurswirkung gering.",
+      "reasoning": "SpaceX führt USSF-380 neu in der Startliste: Falcon 9 von SLC-4E in Kalifornien, Fenster 27.11. 23:53 bis 28.11. 03:53 Uhr Ostküstenzeit (Sa 28.11. 05:53 bis 09:53 Berlin), Landung auf dem Drohnenschiff (SpaceX). Vor diesem Start stehen am selben Gelände noch USSF-317, NROL-136 und USSF-266 an, die schon mehrfach rutschten; deshalb nur 65 % für den genannten Tag. Kurswirkung gering. Stand Mo 14:20: Launch Library 2 nennt jetzt So 29.11. 04:39 UTC (05:39 Berlin), Status „Go“ – einen Tag später als bisher; einen Grund nennt die Liste nicht. 65 % bleibt, weil vorher noch USSF-266 am selben Gelände fliegen muss.",
       "example": false,
       "sources": [
         {
           "title": "SpaceX: Startliste (USSF-380 am 27./28.11.)",
           "url": "https://www.spacex.com/launches/"
+        },
+        {
+          "title": "Launch Library 2: Startliste (Stand Mo 23.11., 14:20)",
+          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
         }
       ]
     },
     {
       "id": "evt-falcon9-ng25",
-      "title": "SpaceX: Falcon-9-Start Cygnus NG-25 mit Fracht zur ISS für die NASA (So 29.11. 16:49)",
+      "title": "SpaceX: Falcon-9-Start Cygnus NG-25 mit Fracht zur ISS für die NASA (So 29.11. 16:50)",
       "date": "2026-11-29",
-      "time": "16:47",
+      "time": "16:50",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -239,7 +208,7 @@
       ],
       "probabilityPct": 65,
       "impact": "niedrig",
-      "reasoning": "Die NASA plant den Start des Frachters Cygnus XL von Northrop Grumman (Mission CRS-25) auf einer Falcon 9 frühestens am So 29.11. um 10:49 Uhr Ostküstenzeit (16:49 Berlin) von Startrampe SLC-40 in Cape Canaveral (NASA). Die Startdatenbank führt 15:47 UTC (16:47 Berlin) mit Status „Go“ (Launch Library 2). An Bord: Versorgung und Experimente für die Raumstation, der Frachter bleibt bis Mai 2027 angedockt (NASA, Northrop Grumman). Bis zum Termin sind es zwei Wochen, ISS-Frachtflüge rutschen oft um ein, zwei Tage, etwa wegen Wetter oder Stationsplanung. Deshalb 65 % für genau diesen Tag. Kurswirkung gering, zeigt aber, dass die NASA auch fremde Frachter mit SpaceX fliegt. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 11:50: Laut Launch Library jetzt Fenster 15:47 UTC (16:47 Berlin), Status „Go“. Wahrscheinlichkeit unverändert.",
+      "reasoning": "Die NASA plant den Start des Frachters Cygnus XL von Northrop Grumman (Mission CRS-25) auf einer Falcon 9 frühestens am So 29.11. um 10:49 Uhr Ostküstenzeit (16:49 Berlin) von Startrampe SLC-40 in Cape Canaveral (NASA). Die Startdatenbank führt 15:47 UTC (16:47 Berlin) mit Status „Go“ (Launch Library 2). An Bord: Versorgung und Experimente für die Raumstation, der Frachter bleibt bis Mai 2027 angedockt (NASA, Northrop Grumman). Bis zum Termin sind es zwei Wochen, ISS-Frachtflüge rutschen oft um ein, zwei Tage, etwa wegen Wetter oder Stationsplanung. Deshalb 65 % für genau diesen Tag. Kurswirkung gering, zeigt aber, dass die NASA auch fremde Frachter mit SpaceX fliegt. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 11:50: Laut Launch Library jetzt Fenster 15:47 UTC (16:47 Berlin), Status „Go“. Wahrscheinlichkeit unverändert. Stand Mo 14:20: Launch Library 2 nennt jetzt 15:50 UTC (16:50 Berlin), Status „Go“. Wahrscheinlichkeit unverändert.",
       "example": false,
       "sources": [
         {
@@ -261,6 +230,10 @@
         {
           "title": "Next Spaceflight: Falcon 9 – Cygnus NG-25",
           "url": "https://nextspaceflight.com/launches/"
+        },
+        {
+          "title": "Launch Library 2: Startliste (Stand Mo 23.11., 14:20)",
+          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
         }
       ]
     },
@@ -1793,7 +1766,7 @@
       "id": "evt-fed-williams-2311",
       "title": "Fed: Rede von New-York-Fed-Chef John Williams",
       "date": "2026-11-23",
-      "time": null,
+      "time": "22:00",
       "timezone": "Europe/Berlin",
       "kind": "external",
       "category": "fed",
@@ -1804,14 +1777,22 @@
         "RKLB",
         "MRVL"
       ],
-      "probabilityPct": 95,
+      "probabilityPct": 97,
       "impact": "mittel",
-      "reasoning": "Williams spricht heute laut Reuters; die genaue Uhrzeit ist nicht genannt. Warum das zählt: Laut CME FedWatch rechnen Händler zu rund 96 % mit einer Zinserhöhung um 0,25 Punkte im Dezember (Reuters) – jedes Signal von Williams dazu bewegt Wachstumswerte wie SPCX, TSLA und RKLB. 95 %, weil der Auftritt angekündigt ist, aber keine Uhrzeit vorliegt.",
+      "reasoning": "Williams spricht heute laut Reuters; die genaue Uhrzeit ist nicht genannt. Warum das zählt: Laut CME FedWatch rechnen Händler zu rund 96 % mit einer Zinserhöhung um 0,25 Punkte im Dezember (Reuters) – jedes Signal von Williams dazu bewegt Wachstumswerte wie SPCX, TSLA und RKLB. 95 %, weil der Auftritt angekündigt ist, aber keine Uhrzeit vorliegt. Stand Mo 14:30: Laut New York Fed spricht Williams um 16:00 Uhr Ostküstenzeit (22:00 Berlin) an der University of Mount Saint Vincent über Konjunktur und Geldpolitik, mit Fragerunde. Die Wahrscheinlichkeit für die Zinserhöhung im Dezember stieg seit Freitag von 92 auf 96 % (CNBC). 95 → 97 %, weil Ort und Uhrzeit jetzt feststehen.",
       "example": false,
       "sources": [
         {
           "title": "Reuters via Investing.com: US-Futures erholen sich nach KI-Ausverkauf (23.11.)",
           "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-rebound-after-rough-week-for-ailinked-shares-5044594"
+        },
+        {
+          "title": "New York Fed: Williams spricht am 23.11. um 16:00 Uhr Ostküstenzeit (Mount Saint Vincent)",
+          "url": "https://www.newyorkfed.org/newsevents/mediaadvisory/2026/1113-2026"
+        },
+        {
+          "title": "CNBC: US-Renditen steigen, FedWatch 96 % für Zinserhöhung im Dezember (23.11.)",
+          "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html"
         }
       ]
     },
