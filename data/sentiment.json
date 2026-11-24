@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T16:41:00+01:00",
+  "updatedAt": "2026-11-24T17:06:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 10,
+      "score": -10,
       "postsCount": 20,
-      "reason": "Fans betonen, dass alle Fusionsbanken SpaceX positiv sehen. Chartleute sehen dagegen, dass Erholungen verkauft werden; der Markt startet wegen Nvidia rot.",
+      "reason": "SpaceX fällt auf rund 125 $ und unter die Tiefs der Vorwoche; viele sprechen vom Abwärtstrend. Fans sehen den Rücksetzer gelassen, die Fusion bleibt Thema.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (24.11., 16:14)",
-          "url": "https://x.com/spcxGOD/status/2125246719919083857"
+          "title": "@alphacharts365 auf X (24.11., 16:47)",
+          "url": "https://x.com/alphacharts365/status/2125255074834461080"
         },
         {
-          "title": "@WhiteOakFX auf X (24.11., 16:14)",
-          "url": "https://x.com/WhiteOakFX/status/2125246755885187222"
+          "title": "@SPXtrain auf X (24.11., 16:44)",
+          "url": "https://x.com/SPXtrain/status/2125254259482804413"
         },
         {
-          "title": "@CryptosR_Us auf X (24.11., 16:22)",
-          "url": "https://x.com/CryptosR_Us/status/2125248728596443470"
+          "title": "@Benzinga auf X (24.11., 17:02)",
+          "url": "https://x.com/Benzinga/status/2125258642245177722"
         }
       ],
-      "updatedAt": "2026-11-24T16:41:00+01:00"
+      "updatedAt": "2026-11-24T17:06:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 25,
       "postsCount": 20,
-      "reason": "Fans feiern die FSD-Quote von 77 % bei Neukäufern und erste Semi-Flotten. Kritiker verweisen darauf, dass keine Fusionsbank Tesla positiv einstuft.",
+      "reason": "Tesla meldet laut ACEA 77 % mehr Neuzulassungen in Europa im Oktober. Die Fusion dominiert weiter; Trader beobachten die Zone um 370 bis 377 $.",
       "sources": [
         {
-          "title": "@BryanBeaucham11 auf X (24.11., 16:33)",
-          "url": "https://x.com/BryanBeaucham11/status/2125251557755130060"
+          "title": "@teslainvest_01 auf X (24.11., 16:46)",
+          "url": "https://x.com/teslainvest_01/status/2125254825650872607"
         },
         {
-          "title": "@MDCTrades305 auf X (24.11., 16:14)",
-          "url": "https://x.com/MDCTrades305/status/2125246602470408270"
+          "title": "@ttvresearch auf X (24.11., 16:41)",
+          "url": "https://x.com/ttvresearch/status/2125253357350588614"
         },
         {
-          "title": "@spcxGOD auf X (24.11., 16:14)",
-          "url": "https://x.com/spcxGOD/status/2125246719919083857"
+          "title": "@maxrock2306 auf X (24.11., 17:04)",
+          "url": "https://x.com/maxrock2306/status/2125259225668755609"
         }
       ],
-      "updatedAt": "2026-11-24T16:41:00+01:00"
+      "updatedAt": "2026-11-24T17:06:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": -5,
+      "score": -15,
       "postsCount": 20,
-      "reason": "Nach dem Plus von gestern fällt RKLB auf rund 45 $. Trader warnen vor weiterem Abrutschen, andere spotten über Mizuho; dazu viel Spam.",
+      "reason": "RKLB rutscht unter die Tiefs der Vorwoche, viele sprechen vom Absturz. Die Mars-Sonden ESCAPADE von Rocket Lab bekommen dagegen viel Lob.",
       "sources": [
         {
-          "title": "@bennytrades_ auf X (24.11., 16:24)",
-          "url": "https://x.com/bennytrades_/status/2125249220735287493"
+          "title": "@SPXtrain auf X (24.11., 16:44)",
+          "url": "https://x.com/SPXtrain/status/2125254259482804413"
         },
         {
-          "title": "@PolarizingLit auf X (24.11., 16:12)",
-          "url": "https://x.com/PolarizingLit/status/2125246151263687093"
+          "title": "@MartynInvestor auf X (24.11., 16:52)",
+          "url": "https://x.com/MartynInvestor/status/2125256315861639220"
         },
         {
-          "title": "@EBUYUKARSLAN auf X (24.11., 16:32)",
-          "url": "https://x.com/EBUYUKARSLAN/status/2125251298769404025"
+          "title": "@konstructivizm auf X (24.11., 16:44)",
+          "url": "https://x.com/konstructivizm/status/2125254198614757883"
         }
       ],
-      "updatedAt": "2026-11-24T16:41:00+01:00"
+      "updatedAt": "2026-11-24T17:06:00+01:00"
     }
   }
 }
