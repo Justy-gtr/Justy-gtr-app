@@ -1,45 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T20:10:00+01:00",
+  "updatedAt": "2026-11-24T20:43:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
       "score": -10,
       "postsCount": 25,
-      "reason": "Laut RBC könnte die Fusion mit Tesla Anfang 2027 verkündet werden. Viele fragen, ob 125 $ ein Schnäppchen ist oder SpaceX noch Richtung 100 $ fällt.",
+      "reason": "Die Fusionsgespräche mit Tesla laufen jetzt offiziell über fünf Verwaltungsräte. Mizuho nennt 205 $ als Kursziel, zugleich fallen große Wetten auf weiter fallende Kurse auf.",
       "sources": [
         {
-          "title": "@chachaX72 auf X (24.11., 19:50)",
-          "url": "https://x.com/chachaX72/status/2125301024932200868"
+          "title": "@joehansen auf X (24.11., 20:21)",
+          "url": "https://x.com/joehansen/status/2125308721815290044"
         },
         {
-          "title": "@MarketRebels auf X (24.11., 19:56)",
-          "url": "https://x.com/MarketRebels/status/2125302430153965780"
+          "title": "@McJohnnymac auf X (24.11., 20:22)",
+          "url": "https://x.com/McJohnnymac/status/2125309038594289749"
         },
         {
-          "title": "@MarcosMillaYT auf X (24.11., 19:56)",
-          "url": "https://x.com/MarcosMillaYT/status/2125302508939890949"
+          "title": "@StockTraderHub auf X (24.11., 20:27)",
+          "url": "https://x.com/StockTraderHub/status/2125310301469860198"
         }
       ],
-      "updatedAt": "2026-11-24T20:10:00+01:00"
+      "updatedAt": "2026-11-24T20:43:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 20,
-      "postsCount": 23,
+      "postsCount": 24,
       "reason": "Bei Tesla geht es vor allem um die Fusion: Laut RBC könnte der Deal Anfang 2027 kommen, fünf Verwaltungsräte führen die Gespräche. Sonst eher ruhig.",
       "sources": [
+        {
+          "title": "@JManCapital auf X (24.11., 20:39)",
+          "url": "https://x.com/JManCapital/status/2125313301965947381"
+        },
         {
           "title": "@chachaX72 auf X (24.11., 19:50)",
           "url": "https://x.com/chachaX72/status/2125301024932200868"
         },
         {
-          "title": "@chachaX72 auf X (24.11., 19:49)",
-          "url": "https://x.com/chachaX72/status/2125300808501633532"
+          "title": "@0xDamien auf X (24.11., 20:32)",
+          "url": "https://x.com/0xDamien/status/2125311521542852727"
         }
       ],
-      "updatedAt": "2026-11-24T20:10:00+01:00"
+      "updatedAt": "2026-11-24T20:43:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -47,6 +51,10 @@
       "postsCount": 25,
       "reason": "RKLB prallt von der Marke um 45 $ ab. Josh Brown sagt live auf CNBC, dass er bei Rocket Lab aufgestockt hat; das wird viel geteilt.",
       "sources": [
+        {
+          "title": "@mottbox_ auf X (24.11., 20:37)",
+          "url": "https://x.com/mottbox_/status/2125312978547343366"
+        },
         {
           "title": "@RockyTSTH auf X (24.11., 19:20)",
           "url": "https://x.com/RockyTSTH/status/2125293449914298554"
@@ -56,7 +64,7 @@
           "url": "https://x.com/42traders/status/2125296012789162029"
         }
       ],
-      "updatedAt": "2026-11-24T20:10:00+01:00"
+      "updatedAt": "2026-11-24T20:43:00+01:00"
     }
   }
 }
