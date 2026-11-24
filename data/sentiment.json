@@ -1,70 +1,66 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T17:06:00+01:00",
+  "updatedAt": "2026-11-24T18:14:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gemischt",
-      "score": -10,
-      "postsCount": 20,
-      "reason": "SpaceX fällt auf rund 125 $ und unter die Tiefs der Vorwoche; viele sprechen vom Abwärtstrend. Fans sehen den Rücksetzer gelassen, die Fusion bleibt Thema.",
+      "mood": "schlecht",
+      "score": -30,
+      "postsCount": 24,
+      "reason": "SpaceX fällt rund 6 % auf etwa 125 $, nachdem beide Firmen Verhandler für die Fusion benannt haben. Viele fürchten Verwässerung; der Falcon-9-Start USSF-266 geht unter.",
       "sources": [
         {
-          "title": "@alphacharts365 auf X (24.11., 16:47)",
-          "url": "https://x.com/alphacharts365/status/2125255074834461080"
+          "title": "@garyblack00 auf X (24.11., 17:23)",
+          "url": "https://x.com/garyblack00/status/2125264131510976767"
         },
         {
-          "title": "@SPXtrain auf X (24.11., 16:44)",
-          "url": "https://x.com/SPXtrain/status/2125254259482804413"
+          "title": "@GerberKawasaki auf X (24.11., 17:59)",
+          "url": "https://x.com/GerberKawasaki/status/2125272999838511168"
         },
         {
-          "title": "@Benzinga auf X (24.11., 17:02)",
-          "url": "https://x.com/Benzinga/status/2125258642245177722"
+          "title": "@SpaceInvestor_D auf X (24.11., 18:00)",
+          "url": "https://x.com/SpaceInvestor_D/status/2125273269766885377"
         }
       ],
-      "updatedAt": "2026-11-24T17:06:00+01:00"
+      "updatedAt": "2026-11-24T18:14:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 20,
-      "reason": "Tesla meldet laut ACEA 77 % mehr Neuzulassungen in Europa im Oktober. Die Fusion dominiert weiter; Trader beobachten die Zone um 370 bis 377 $.",
+      "score": 20,
+      "postsCount": 25,
+      "reason": "Bei Tesla dreht sich alles um die Fusion: Viele erwarten einen Aufschlag für Tesla-Aktionäre. Dazu Kursziele der Analysten und ein Cybercab-Fund in New Jersey.",
       "sources": [
         {
-          "title": "@teslainvest_01 auf X (24.11., 16:46)",
-          "url": "https://x.com/teslainvest_01/status/2125254825650872607"
+          "title": "@Cyber_Trailer auf X (24.11., 18:02)",
+          "url": "https://x.com/Cyber_Trailer/status/2125273913290903727"
         },
         {
-          "title": "@ttvresearch auf X (24.11., 16:41)",
-          "url": "https://x.com/ttvresearch/status/2125253357350588614"
+          "title": "@JOBhakdi auf X (24.11., 17:46)",
+          "url": "https://x.com/JOBhakdi/status/2125269784937795586"
         },
         {
-          "title": "@maxrock2306 auf X (24.11., 17:04)",
-          "url": "https://x.com/maxrock2306/status/2125259225668755609"
+          "title": "@WaltLightShed auf X (24.11., 17:57)",
+          "url": "https://x.com/WaltLightShed/status/2125272598561124472"
         }
       ],
-      "updatedAt": "2026-11-24T17:06:00+01:00"
+      "updatedAt": "2026-11-24T18:14:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": -15,
-      "postsCount": 20,
-      "reason": "RKLB rutscht unter die Tiefs der Vorwoche, viele sprechen vom Absturz. Die Mars-Sonden ESCAPADE von Rocket Lab bekommen dagegen viel Lob.",
+      "postsCount": 3,
+      "reason": "Wenig Neues zu Rocket Lab: Anleger fragen sich, ob RKLB einen Boden gefunden hat. Die ESCAPADE-Mars-Sonden bleiben ein Lichtblick.",
       "sources": [
         {
-          "title": "@SPXtrain auf X (24.11., 16:44)",
-          "url": "https://x.com/SPXtrain/status/2125254259482804413"
+          "title": "@TSFX_forex auf X (24.11., 18:08)",
+          "url": "https://x.com/TSFX_forex/status/2125275342390587446"
         },
         {
-          "title": "@MartynInvestor auf X (24.11., 16:52)",
-          "url": "https://x.com/MartynInvestor/status/2125256315861639220"
-        },
-        {
-          "title": "@konstructivizm auf X (24.11., 16:44)",
-          "url": "https://x.com/konstructivizm/status/2125254198614757883"
+          "title": "@Harrison_Cole8 auf X (24.11., 17:14)",
+          "url": "https://x.com/Harrison_Cole8/status/2125261860756975880"
         }
       ],
-      "updatedAt": "2026-11-24T17:06:00+01:00"
+      "updatedAt": "2026-11-24T18:14:00+01:00"
     }
   }
 }
