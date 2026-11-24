@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T18:40:00+01:00",
+  "updatedAt": "2026-11-24T19:12:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "schlecht",
-      "score": -40,
-      "postsCount": 24,
-      "reason": "Großer Ausverkauf bei KI-Aktien zieht SpaceX mit nach unten; manche fragen schon nach 100 $. Dazu: SpaceX verzichtet auf rund 738 Mio. $ Breitband-Förderung.",
+      "mood": "gemischt",
+      "score": -15,
+      "postsCount": 25,
+      "reason": "Nach dem Ausverkauf kippt die Stimmung zu SpaceX etwas: Mizuho startet mit Outperform und lobt Starlink, einige stocken auf. Viele rätseln über den schwachen Kurs.",
       "sources": [
         {
-          "title": "@MsVeilMoney auf X (24.11., 18:32)",
-          "url": "https://x.com/MsVeilMoney/status/2125281382650028119"
+          "title": "@Tickeron auf X (24.11., 19:00)",
+          "url": "https://x.com/Tickeron/status/2125288341348176047"
         },
         {
-          "title": "@Vol888 auf X (24.11., 18:27)",
-          "url": "https://x.com/Vol888/status/2125280113797304599"
+          "title": "@RandyWKirk1 auf X (24.11., 19:06)",
+          "url": "https://x.com/RandyWKirk1/status/2125289847359525159"
         },
         {
-          "title": "@MilkRoadStocks auf X (24.11., 18:30)",
-          "url": "https://x.com/MilkRoadStocks/status/2125280846529868207"
+          "title": "@EthereanVibin auf X (24.11., 18:37)",
+          "url": "https://x.com/EthereanVibin/status/2125282722956652795"
         }
       ],
-      "updatedAt": "2026-11-24T18:40:00+01:00"
+      "updatedAt": "2026-11-24T19:12:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,7 +43,7 @@
           "url": "https://x.com/BestTrader01/status/2125278012065120390"
         }
       ],
-      "updatedAt": "2026-11-24T18:40:00+01:00"
+      "updatedAt": "2026-11-24T19:12:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -60,7 +60,7 @@
           "url": "https://x.com/Harrison_Cole8/status/2125261860756975880"
         }
       ],
-      "updatedAt": "2026-11-24T18:40:00+01:00"
+      "updatedAt": "2026-11-24T19:12:00+01:00"
     }
   }
 }
