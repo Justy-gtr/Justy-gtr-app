@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T15:40:00+01:00",
+  "updatedAt": "2026-11-24T16:08:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 5,
+      "score": 15,
       "postsCount": 20,
-      "reason": "Virginia und Oregon verklagen SpaceX wegen Groks Bildtool. Vorbörslich knapp 2 % im Minus; viele sehen Risiken bei der Tesla-Fusion, Fans bleiben zuversichtlich.",
+      "reason": "Fans freuen sich über Berichte, SpaceX verdiene mit GPU-Vermietung überdurchschnittlich. Andere sehen bei der Tesla-Fusion mehr Hürden als gedacht.",
       "sources": [
         {
-          "title": "@BarnyInvests auf X (24.11., 15:23)",
-          "url": "https://x.com/BarnyInvests/status/2125233786761683323"
+          "title": "@ZeekTyt auf X (24.11., 15:42)",
+          "url": "https://x.com/ZeekTyt/status/2125238509120503957"
         },
         {
-          "title": "@QuantAlphaXXX auf X (24.11., 15:30)",
-          "url": "https://x.com/QuantAlphaXXX/status/2125235492606120104"
+          "title": "@ChiBarbj auf X (24.11., 15:45)",
+          "url": "https://x.com/ChiBarbj/status/2125239327030739201"
         },
         {
-          "title": "@herbertong auf X (24.11., 15:04)",
-          "url": "https://x.com/herbertong/status/2125228947214393729"
+          "title": "@Miaavswpv auf X (24.11., 15:48)",
+          "url": "https://x.com/Miaavswpv/status/2125240155590320615"
         }
       ],
-      "updatedAt": "2026-11-24T15:40:00+01:00"
+      "updatedAt": "2026-11-24T16:08:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 25,
+      "score": 35,
       "postsCount": 20,
-      "reason": "UBS hebt das Kursziel auf 430 $, der neue Roadster glänzt auf der LA Auto Show. Kritiker verweisen auf Robotaxi-Unfälle; vorbörslich leicht im Minus.",
+      "reason": "Tesla hält sich trotz Nvidia-Absturz stark. Viele hoffen bei der Fusion auf einen Aufschlag für Tesla; laut Electrek soll der Deal bis Jahresende stehen.",
       "sources": [
         {
-          "title": "@Ramos_Btc auf X (24.11., 15:30)",
-          "url": "https://x.com/Ramos_Btc/status/2125235632008024119"
+          "title": "@Venu_7_ auf X (24.11., 15:59)",
+          "url": "https://x.com/Venu_7_/status/2125242994769215800"
         },
         {
-          "title": "@teslainvest_01 auf X (24.11., 15:10)",
-          "url": "https://x.com/teslainvest_01/status/2125230600147931252"
+          "title": "@0xDamien auf X (24.11., 15:45)",
+          "url": "https://x.com/0xDamien/status/2125239290154438901"
         },
         {
-          "title": "@BradMunchen auf X (24.11., 15:27)",
-          "url": "https://x.com/BradMunchen/status/2125234818267087017"
+          "title": "@ElectrekCo auf X (24.11., 15:43)",
+          "url": "https://x.com/ElectrekCo/status/2125238971810583032"
         }
       ],
-      "updatedAt": "2026-11-24T15:40:00+01:00"
+      "updatedAt": "2026-11-24T16:08:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 30,
       "postsCount": 20,
-      "reason": "Viel Spam. Echte Posts loben das Overweight von Morgan Stanley und Neutron-Aufträge; Rocket Lab gilt als reiner Raumfahrtwert neben SpaceX.",
+      "reason": "Viel Spam. Echte Posts teilen ein neues Video von Rocket Lab zum kompletten Neutron-Test und loben weiter das Overweight von Morgan Stanley.",
       "sources": [
         {
-          "title": "@Neil_Shares auf X (24.11., 13:43)",
-          "url": "https://x.com/Neil_Shares/status/2125208776961925537"
+          "title": "@ccarlson_chris auf X (24.11., 15:42)",
+          "url": "https://x.com/ccarlson_chris/status/2125238605731831971"
         },
         {
-          "title": "@antiDOKA auf X (24.11., 14:05)",
-          "url": "https://x.com/antiDOKA/status/2125214146283385012"
+          "title": "@Neil_Shares auf X (24.11., 15:21)",
+          "url": "https://x.com/Neil_Shares/status/2125233389049676028"
         },
         {
           "title": "@RCapitalX auf X (24.11., 13:47)",
           "url": "https://x.com/RCapitalX/status/2125209778742030633"
         }
       ],
-      "updatedAt": "2026-11-24T15:40:00+01:00"
+      "updatedAt": "2026-11-24T16:08:00+01:00"
     }
   }
 }
