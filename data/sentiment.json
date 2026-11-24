@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T18:14:00+01:00",
+  "updatedAt": "2026-11-24T18:40:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
-      "score": -30,
+      "score": -40,
       "postsCount": 24,
-      "reason": "SpaceX fällt rund 6 % auf etwa 125 $, nachdem beide Firmen Verhandler für die Fusion benannt haben. Viele fürchten Verwässerung; der Falcon-9-Start USSF-266 geht unter.",
+      "reason": "Großer Ausverkauf bei KI-Aktien zieht SpaceX mit nach unten; manche fragen schon nach 100 $. Dazu: SpaceX verzichtet auf rund 738 Mio. $ Breitband-Förderung.",
       "sources": [
         {
-          "title": "@garyblack00 auf X (24.11., 17:23)",
-          "url": "https://x.com/garyblack00/status/2125264131510976767"
+          "title": "@MsVeilMoney auf X (24.11., 18:32)",
+          "url": "https://x.com/MsVeilMoney/status/2125281382650028119"
         },
         {
-          "title": "@GerberKawasaki auf X (24.11., 17:59)",
-          "url": "https://x.com/GerberKawasaki/status/2125272999838511168"
+          "title": "@Vol888 auf X (24.11., 18:27)",
+          "url": "https://x.com/Vol888/status/2125280113797304599"
         },
         {
-          "title": "@SpaceInvestor_D auf X (24.11., 18:00)",
-          "url": "https://x.com/SpaceInvestor_D/status/2125273269766885377"
+          "title": "@MilkRoadStocks auf X (24.11., 18:30)",
+          "url": "https://x.com/MilkRoadStocks/status/2125280846529868207"
         }
       ],
-      "updatedAt": "2026-11-24T18:14:00+01:00"
+      "updatedAt": "2026-11-24T18:40:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 20,
       "postsCount": 25,
-      "reason": "Bei Tesla dreht sich alles um die Fusion: Viele erwarten einen Aufschlag für Tesla-Aktionäre. Dazu Kursziele der Analysten und ein Cybercab-Fund in New Jersey.",
+      "reason": "Tesla hält sich im KI-Ausverkauf deutlich besser als SpaceX. Trader loben die relative Stärke, die Fusion bleibt das Hauptthema.",
       "sources": [
         {
-          "title": "@Cyber_Trailer auf X (24.11., 18:02)",
-          "url": "https://x.com/Cyber_Trailer/status/2125273913290903727"
+          "title": "@enrichtrades auf X (24.11., 18:31)",
+          "url": "https://x.com/enrichtrades/status/2125281201711681876"
         },
         {
-          "title": "@JOBhakdi auf X (24.11., 17:46)",
-          "url": "https://x.com/JOBhakdi/status/2125269784937795586"
+          "title": "@TeslaPaul1 auf X (24.11., 18:34)",
+          "url": "https://x.com/TeslaPaul1/status/2125281976693535003"
         },
         {
-          "title": "@WaltLightShed auf X (24.11., 17:57)",
-          "url": "https://x.com/WaltLightShed/status/2125272598561124472"
+          "title": "@BestTrader01 auf X (24.11., 18:18)",
+          "url": "https://x.com/BestTrader01/status/2125278012065120390"
         }
       ],
-      "updatedAt": "2026-11-24T18:14:00+01:00"
+      "updatedAt": "2026-11-24T18:40:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -60,7 +60,7 @@
           "url": "https://x.com/Harrison_Cole8/status/2125261860756975880"
         }
       ],
-      "updatedAt": "2026-11-24T18:14:00+01:00"
+      "updatedAt": "2026-11-24T18:40:00+01:00"
     }
   }
 }
