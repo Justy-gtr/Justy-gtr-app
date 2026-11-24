@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-23T21:35:00+01:00",
+  "updatedAt": "2026-11-24T14:10:00+01:00",
   "symbols": {
     "SPCX": {
+      "mood": "gut",
+      "score": 30,
+      "postsCount": 25,
+      "reason": "Mizuho startet SpaceX mit Outperform und Kursziel 205 $. Dazu die FT-Meldung zu Fusionsgesprächen mit Tesla; manche fürchten ein unfaires Tauschverhältnis.",
+      "sources": [
+        {
+          "title": "@DeItaone auf X (24.11., 14:08)",
+          "url": "https://x.com/DeItaone/status/2125214987832406436"
+        },
+        {
+          "title": "@firesidealpha auf X (24.11., 14:08)",
+          "url": "https://x.com/firesidealpha/status/2125215085547377074"
+        },
+        {
+          "title": "@tslaming auf X (24.11., 14:08)",
+          "url": "https://x.com/tslaming/status/2125214928974028998"
+        }
+      ],
+      "updatedAt": "2026-11-24T14:10:00+01:00"
+    },
+    "TSLA": {
       "mood": "gemischt",
       "score": 15,
       "postsCount": 25,
-      "reason": "Der NYT-Bericht bleibt Thema: Laut Times verdient SpaceX seit Mai Milliarden pro Monat mit GPU-Miete an Anthropic und Google. Gerüchte über Klagen gelten als falsch.",
+      "reason": "Die Fusion mit SpaceX dominiert: Viele streiten über Tauschverhältnis und Stimmrechte. Daneben viel Spam und gefälschte Roadster-Werbung.",
       "sources": [
         {
-          "title": "@naumowf auf X (23.11., 21:32)",
-          "url": "https://x.com/naumowf/status/2124964430022943075"
+          "title": "@justinmdd13 auf X (24.11., 14:09)",
+          "url": "https://x.com/justinmdd13/status/2125215200081330445"
         },
         {
-          "title": "@Investingcom auf X (23.11., 21:03)",
-          "url": "https://x.com/Investingcom/status/2124957034831352182"
+          "title": "@lanceq7um auf X (24.11., 14:09)",
+          "url": "https://x.com/lanceq7um/status/2125215128496800030"
         },
         {
-          "title": "@SpaceNotJohn auf X (23.11., 21:33)",
-          "url": "https://x.com/SpaceNotJohn/status/2124964655760064599"
+          "title": "@cjs6942 auf X (24.11., 14:09)",
+          "url": "https://x.com/cjs6942/status/2125215164915982688"
         }
       ],
-      "updatedAt": "2026-11-23T21:35:00+01:00"
-    },
-    "TSLA": {
-      "mood": "gut",
-      "score": 35,
-      "postsCount": 25,
-      "reason": "Fans teilen neue Optimus-Fotos aus der Zellfertigung. Deutsche Kritiker spotten über eine Tesla-Blase, ein Gerücht über Musks Umzug nach Florida gilt als falsch.",
-      "sources": [
-        {
-          "title": "@SERobinsonJr auf X (23.11., 21:33)",
-          "url": "https://x.com/SERobinsonJr/status/2124964482308796607"
-        },
-        {
-          "title": "@Der_Boersianer auf X (23.11., 21:32)",
-          "url": "https://x.com/Der_Boersianer/status/2124964412880564448"
-        },
-        {
-          "title": "@801010athlete auf X (23.11., 21:33)",
-          "url": "https://x.com/801010athlete/status/2124964489502089540"
-        }
-      ],
-      "updatedAt": "2026-11-23T21:35:00+01:00"
+      "updatedAt": "2026-11-24T14:10:00+01:00"
     },
     "RKLB": {
-      "mood": "gemischt",
-      "score": 20,
-      "postsCount": 25,
-      "reason": "Viel Spam. Das ESCAPADE-Erdbild von Rocket Lab kommt gut an, einige fürchten aber, dass RKLB mit fallendem SPCX-Kurs mit nach unten gezogen wird.",
+      "mood": "gut",
+      "score": 30,
+      "postsCount": 45,
+      "reason": "Viel Spam. Echte Posts feiern das Overweight von Morgan Stanley und das Plus von 9 % gestern; Rocket Lab gilt als reiner Raumfahrtwert neben SpaceX.",
       "sources": [
         {
-          "title": "@RocketLab auf X (23.11., 21:13)",
-          "url": "https://x.com/RocketLab/status/2124959481067180245"
+          "title": "@RCapitalX auf X (24.11., 13:47)",
+          "url": "https://x.com/RCapitalX/status/2125209778742030633"
         },
         {
-          "title": "@Mr_Leadfoot97 auf X (23.11., 21:10)",
-          "url": "https://x.com/Mr_Leadfoot97/status/2124958810439635257"
+          "title": "@Neil_Shares auf X (24.11., 13:43)",
+          "url": "https://x.com/Neil_Shares/status/2125208776961925537"
         },
         {
-          "title": "@Universelostcom auf X (23.11., 21:20)",
-          "url": "https://x.com/Universelostcom/status/2124961403131851183"
+          "title": "@stonksfolio auf X (24.11., 12:20)",
+          "url": "https://x.com/stonksfolio/status/2125187861595230397"
         }
       ],
-      "updatedAt": "2026-11-23T21:35:00+01:00"
+      "updatedAt": "2026-11-24T14:10:00+01:00"
     }
   }
 }
