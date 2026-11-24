@@ -1,37 +1,76 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-23-rklb",
-    "date": "2026-11-23",
-    "question": "Schließt RKLB am Montag, 23. November, an der Nasdaq höher als am Freitag (45,42 $)?",
+    "id": "2026-11-24-rklb",
+    "date": "2026-11-24",
+    "question": "Schließt RKLB am Dienstag, 24. November, an der Nasdaq höher als am Montag (49,63 $)?",
     "karlAnswer": "ja",
-    "karlReason": "Knapp „ja“, etwa 55 zu 45. RKLB hat sechs Tage in Folge verloren, zusammen rund −23 % (Trefis via Startup Fortune), und am Morgen steht der Nasdaq-100-Future rund 2,7 % über dem Freitag (Yahoo); auch Bitcoin hat sich am Wochenende um rund 9 % erholt (FXStreet). Dagegen spricht: Goldmans Panikindex steht bei 9 von 10, Trendfolger könnten laut Goldman weiter verkaufen (FXStreet), und der Kospi fällt heute 3,2 % (Yahoo). Eigene Rocket-Lab-Nachrichten gibt es über das Wochenende nicht. Karl lag zuletzt mit „nein“ zweimal in Folge richtig.",
+    "karlReason": "Knapp „ja“, etwa 55 zu 45. Nachbörslich stand RKLB zuletzt bei 50,25 $, gut 1 % über dem Schluss (Kursdaten der App), der Nasdaq-100-Future liegt am Morgen leicht im Plus (+0,2 %), und Asien zieht nach: Kospi +6,2 %, Nikkei +3,8 % (Yahoo). Dagegen spricht: Nach +9,3 % an einem Tag sind Gewinnmitnahmen naheliegend, und um 16:00 Uhr kommt das US-Verbrauchervertrauen, das die Zinssorgen neu anfachen kann (Dow Jones). Die neuen Form-144-Meldungen sind kleine Routineverkäufe. Karl lag gestern mit „ja“ richtig.",
     "outcome": null,
-    "resolvesAt": "2026-11-23T22:15:00+01:00",
+    "resolvesAt": "2026-11-24T22:15:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: RKLB (Schluss Fr 20.11. 45,42 $, Do 50,99 $)",
+        "title": "Yahoo Finance: RKLB historische Kurse (Schluss Mo 23.11.)",
         "url": "https://finance.yahoo.com/quote/RKLB/history/"
       },
       {
-        "title": "Startup Fortune: Rocket Lab fällt 10,8 % – Neutron-Verzögerung trifft Tech-Ausverkauf (21.11.)",
-        "url": "https://startupfortune.com/rocket-lab-stock-falls-108-to-4544-as-its-neutron-delay-meets-a-tech-rout/"
+        "title": "Justy GT-R Kursdaten (prices.json, Nachbörse 24.11., 01:59 Uhr)",
+        "url": "https://github.com/Justy-gtr/Justy-gtr-app/blob/main/data/prices.json"
       },
       {
-        "title": "Yahoo Finance: Nasdaq-100-Future NQ=F und S&P-500-Future ES=F (Mo 23.11., 07:45)",
+        "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (Di 24.11., 07:33)",
         "url": "https://finance.yahoo.com/quote/NQ%3DF/"
       },
       {
-        "title": "FXStreet: Bitcoin +9 % zurück über 60.000 $ – was Montag für Aktien heißt (22.11.)",
-        "url": "https://www.fxstreet.com/cryptocurrencies/news/btc-9-how-it-reclaimed-60-000-and-what-to-expect-from-stocks-on-monday-202611221929"
+        "title": "Yahoo Finance: Kospi ^KS11",
+        "url": "https://finance.yahoo.com/quote/%5EKS11/"
       },
       {
-        "title": "Yahoo Finance: Kospi ^KS11 (Mo 23.11., 07:45)",
-        "url": "https://finance.yahoo.com/quote/%5EKS11/"
+        "title": "Yahoo Finance: Nikkei 225 ^N225",
+        "url": "https://finance.yahoo.com/quote/%5EN225/"
+      },
+      {
+        "title": "Dow Jones via finanznachrichten.de: Tagesvorschau Dienstag, 24. November (06:33 Uhr)",
+        "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70210369-tagesvorschau-dienstag-24-november-015.htm"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-23-rklb",
+      "date": "2026-11-23",
+      "question": "Schließt RKLB am Montag, 23. November, an der Nasdaq höher als am Freitag (45,42 $)?",
+      "karlAnswer": "ja",
+      "karlReason": "Knapp „ja“, etwa 55 zu 45. RKLB hat sechs Tage in Folge verloren, zusammen rund −23 % (Trefis via Startup Fortune), und am Morgen steht der Nasdaq-100-Future rund 2,7 % über dem Freitag (Yahoo); auch Bitcoin hat sich am Wochenende um rund 9 % erholt (FXStreet). Dagegen spricht: Goldmans Panikindex steht bei 9 von 10, Trendfolger könnten laut Goldman weiter verkaufen (FXStreet), und der Kospi fällt heute 3,2 % (Yahoo). Eigene Rocket-Lab-Nachrichten gibt es über das Wochenende nicht. Karl lag zuletzt mit „nein“ zweimal in Folge richtig. Aufgelöst: RKLB schloss Mo bei 49,63 $ (+9,3 %) – „ja“, Karl richtig.",
+      "outcome": "ja",
+      "resolvesAt": "2026-11-23T22:15:00+01:00",
+      "sources": [
+        {
+          "title": "Yahoo Finance: RKLB (Schluss Fr 20.11. 45,42 $, Do 50,99 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        },
+        {
+          "title": "Startup Fortune: Rocket Lab fällt 10,8 % – Neutron-Verzögerung trifft Tech-Ausverkauf (21.11.)",
+          "url": "https://startupfortune.com/rocket-lab-stock-falls-108-to-4544-as-its-neutron-delay-meets-a-tech-rout/"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F und S&P-500-Future ES=F (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
+        },
+        {
+          "title": "FXStreet: Bitcoin +9 % zurück über 60.000 $ – was Montag für Aktien heißt (22.11.)",
+          "url": "https://www.fxstreet.com/cryptocurrencies/news/btc-9-how-it-reclaimed-60-000-and-what-to-expect-from-stocks-on-monday-202611221929"
+        },
+        {
+          "title": "Yahoo Finance: Kospi ^KS11 (Mo 23.11., 07:45)",
+          "url": "https://finance.yahoo.com/quote/%5EKS11/"
+        },
+        {
+          "title": "Yahoo Finance: RKLB historische Kurse (Schluss Mo 23.11.)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        }
+      ]
+    },
     {
       "id": "2026-11-20-rklb",
       "date": "2026-11-20",
