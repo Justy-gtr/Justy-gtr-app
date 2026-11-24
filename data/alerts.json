@@ -4,36 +4,6 @@
   "notes": "Bewegung von mindestens 2 Prozent am Tag in Euro. notified setzt der Assistent auf true, wenn er Bescheid gegeben hat.",
   "alerts": [
     {
-      "id": "TSLA-2026-11-11",
-      "symbol": "TSLA",
-      "name": "Tesla",
-      "changePct": 4.11,
-      "priceEur": 351.9,
-      "thresholdPct": 2,
-      "direction": "up",
-      "timestamp": "2026-11-10T23:10:06.919Z",
-      "notified": true,
-      "example": false,
-      "sources": [
-        {
-          "title": "Alpaca Markets IEX TSLA",
-          "url": "https://data.alpaca.markets/v2/stocks/TSLA/snapshot?feed=iex"
-        },
-        {
-          "title": "Yahoo Finance TL0.F",
-          "url": "https://finance.yahoo.com/quote/TL0.F"
-        },
-        {
-          "title": "Yahoo Finance EURUSD=X",
-          "url": "https://finance.yahoo.com/quote/EURUSD=X"
-        },
-        {
-          "title": "Yahoo Finance TSLA",
-          "url": "https://finance.yahoo.com/quote/TSLA"
-        }
-      ]
-    },
-    {
       "id": "MRVL-2026-11-11",
       "symbol": "MRVL",
       "name": "Marvell Technology",
