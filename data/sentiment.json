@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T21:10:00+01:00",
+  "updatedAt": "2026-11-24T21:39:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -20,
+      "score": -15,
       "postsCount": 25,
-      "reason": "Viele fragen sich, ob SpaceX unter 100 $ rutscht; Zollsorgen und der KI-Ausverkauf drücken. Fans betonen, dass Musk beim Börsengang keine Aktien verkauft hat.",
+      "reason": "Gestritten wird über das Tauschverhältnis: Wie viele SpaceX-Aktien gibt es pro Tesla-Aktie? SpaceX-Fans finden die Aufschlag-Wünsche der Tesla-Seite zu hoch.",
       "sources": [
         {
-          "title": "@MentoviaX auf X (24.11., 21:00)",
-          "url": "https://x.com/MentoviaX/status/2125318745480474914"
+          "title": "@niravp44 auf X (24.11., 21:08)",
+          "url": "https://x.com/niravp44/status/2125320784365207604"
         },
         {
-          "title": "@MainStFrankie auf X (24.11., 21:06)",
-          "url": "https://x.com/MainStFrankie/status/2125320240766791811"
+          "title": "@spcxGOD auf X (24.11., 21:11)",
+          "url": "https://x.com/spcxGOD/status/2125321427767185757"
         },
         {
-          "title": "@JesseOlson auf X (24.11., 20:40)",
-          "url": "https://x.com/JesseOlson/status/2125313503087173780"
+          "title": "@jfineman auf X (24.11., 21:27)",
+          "url": "https://x.com/jfineman/status/2125325548729876870"
         }
       ],
-      "updatedAt": "2026-11-24T21:10:00+01:00"
+      "updatedAt": "2026-11-24T21:39:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 20,
-      "postsCount": 23,
-      "reason": "Tesla hält sich an einem schwachen Tag erstaunlich gut. Fans rechnen vor, wie die Fusion mit SpaceX den Kurs langfristig treiben könnte.",
+      "score": 25,
+      "postsCount": 25,
+      "reason": "Tesla zeigt laut Tradern viel Stehvermögen, der Kurs hält sich über wichtigen Linien. Mehrere Analysten heben ihre Kursziele an, die Fusion bleibt Thema.",
       "sources": [
         {
-          "title": "@strengthPlan auf X (24.11., 20:50)",
-          "url": "https://x.com/strengthPlan/status/2125316075453911085"
+          "title": "@SpartanTrading auf X (24.11., 21:08)",
+          "url": "https://x.com/SpartanTrading/status/2125320738190315548"
         },
         {
-          "title": "@strengthPlan auf X (24.11., 21:05)",
-          "url": "https://x.com/strengthPlan/status/2125319830135886222"
+          "title": "@GrindeOptions auf X (24.11., 21:09)",
+          "url": "https://x.com/GrindeOptions/status/2125320816338624957"
         },
         {
-          "title": "@MainStFrankie auf X (24.11., 21:06)",
-          "url": "https://x.com/MainStFrankie/status/2125320240766791811"
+          "title": "@jfineman auf X (24.11., 21:27)",
+          "url": "https://x.com/jfineman/status/2125325548729876870"
         }
       ],
-      "updatedAt": "2026-11-24T21:10:00+01:00"
+      "updatedAt": "2026-11-24T21:39:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 5,
-      "postsCount": 25,
-      "reason": "RKLB prallt von der Marke um 45 $ ab. Josh Brown sagt live auf CNBC, dass er bei Rocket Lab aufgestockt hat; das wird viel geteilt.",
+      "score": 0,
+      "postsCount": 24,
+      "reason": "RKLB liegt bei rund 46 $ klar unter dem 50-Tage-Schnitt; die Neutron-Verschiebung auf 2027 wird diskutiert. Fans bleiben treu, der CNBC-Auftritt wirkt nach.",
       "sources": [
+        {
+          "title": "@Incite_corp auf X (24.11., 21:11)",
+          "url": "https://x.com/Incite_corp/status/2125321491546042879"
+        },
         {
           "title": "@mottbox_ auf X (24.11., 20:37)",
           "url": "https://x.com/mottbox_/status/2125312978547343366"
         },
         {
-          "title": "@RockyTSTH auf X (24.11., 19:20)",
-          "url": "https://x.com/RockyTSTH/status/2125293449914298554"
-        },
-        {
-          "title": "@42traders auf X (24.11., 19:30)",
-          "url": "https://x.com/42traders/status/2125296012789162029"
+          "title": "@SpaceSector001 auf X (24.11., 21:31)",
+          "url": "https://x.com/SpaceSector001/status/2125326498378961111"
         }
       ],
-      "updatedAt": "2026-11-24T21:10:00+01:00"
+      "updatedAt": "2026-11-24T21:39:00+01:00"
     }
   }
 }
