@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T19:12:00+01:00",
+  "updatedAt": "2026-11-24T19:44:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -15,
+      "score": -10,
       "postsCount": 25,
-      "reason": "Nach dem Ausverkauf kippt die Stimmung zu SpaceX etwas: Mizuho startet mit Outperform und lobt Starlink, einige stocken auf. Viele rätseln über den schwachen Kurs.",
+      "reason": "Amazon soll mehr Satellitenstarts bei SpaceX buchen, nachdem ULA nicht liefern konnte. Trader schauen auf die Marke von 120 $, darunter rechnen manche mit 105 $.",
       "sources": [
         {
-          "title": "@Tickeron auf X (24.11., 19:00)",
-          "url": "https://x.com/Tickeron/status/2125288341348176047"
+          "title": "@ariaradnia auf X (24.11., 19:39)",
+          "url": "https://x.com/ariaradnia/status/2125298371997102492"
         },
         {
-          "title": "@RandyWKirk1 auf X (24.11., 19:06)",
-          "url": "https://x.com/RandyWKirk1/status/2125289847359525159"
+          "title": "@Bitcoin502 auf X (24.11., 19:13)",
+          "url": "https://x.com/Bitcoin502/status/2125291759102234710"
         },
         {
-          "title": "@EthereanVibin auf X (24.11., 18:37)",
-          "url": "https://x.com/EthereanVibin/status/2125282722956652795"
+          "title": "@BoBbyPleWniaK auf X (24.11., 19:12)",
+          "url": "https://x.com/BoBbyPleWniaK/status/2125291565786812763"
         }
       ],
-      "updatedAt": "2026-11-24T19:12:00+01:00"
+      "updatedAt": "2026-11-24T19:44:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
@@ -43,24 +43,24 @@
           "url": "https://x.com/BestTrader01/status/2125278012065120390"
         }
       ],
-      "updatedAt": "2026-11-24T19:12:00+01:00"
+      "updatedAt": "2026-11-24T19:44:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": -15,
-      "postsCount": 3,
-      "reason": "Wenig Neues zu Rocket Lab: Anleger fragen sich, ob RKLB einen Boden gefunden hat. Die ESCAPADE-Mars-Sonden bleiben ein Lichtblick.",
+      "score": 5,
+      "postsCount": 25,
+      "reason": "RKLB prallt von der Marke um 45 $ ab. Josh Brown sagt live auf CNBC, dass er bei Rocket Lab aufgestockt hat; das wird viel geteilt.",
       "sources": [
         {
-          "title": "@TSFX_forex auf X (24.11., 18:08)",
-          "url": "https://x.com/TSFX_forex/status/2125275342390587446"
+          "title": "@RockyTSTH auf X (24.11., 19:20)",
+          "url": "https://x.com/RockyTSTH/status/2125293449914298554"
         },
         {
-          "title": "@Harrison_Cole8 auf X (24.11., 17:14)",
-          "url": "https://x.com/Harrison_Cole8/status/2125261860756975880"
+          "title": "@42traders auf X (24.11., 19:30)",
+          "url": "https://x.com/42traders/status/2125296012789162029"
         }
       ],
-      "updatedAt": "2026-11-24T19:12:00+01:00"
+      "updatedAt": "2026-11-24T19:44:00+01:00"
     }
   }
 }
