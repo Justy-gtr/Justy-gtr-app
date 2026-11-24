@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T14:40:00+01:00",
+  "updatedAt": "2026-11-24T15:10:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gut",
-      "score": 30,
+      "mood": "gemischt",
+      "score": 15,
       "postsCount": 20,
-      "reason": "Nach Jefferies startet auch Mizuho SpaceX positiv. Die Fusionsgespräche mit Tesla bleiben Thema, einige warnen vor einem Veto aus China.",
+      "reason": "Vorbörslich rund 2 % im Minus wegen Nvidia-Katerstimmung. Musk soll intern gesagt haben, SpaceX hinke bei KI hinterher; Mizuho-Lob und Fusion bleiben Thema.",
       "sources": [
         {
-          "title": "@AIStockSavvy auf X (24.11., 14:09)",
-          "url": "https://x.com/AIStockSavvy/status/2125215114324218189"
+          "title": "@RandyWKirk1 auf X (24.11., 14:59)",
+          "url": "https://x.com/RandyWKirk1/status/2125227861095391571"
         },
         {
-          "title": "@GetRichStayRich auf X (24.11., 13:57)",
-          "url": "https://x.com/GetRichStayRich/status/2125212280723759507"
+          "title": "@BradMunchen auf X (24.11., 14:53)",
+          "url": "https://x.com/BradMunchen/status/2125226202961223953"
         },
         {
-          "title": "@BradMunchen auf X (24.11., 14:28)",
-          "url": "https://x.com/BradMunchen/status/2125219965141926207"
+          "title": "@herbertong auf X (24.11., 15:04)",
+          "url": "https://x.com/herbertong/status/2125228947214393729"
         }
       ],
-      "updatedAt": "2026-11-24T14:40:00+01:00"
+      "updatedAt": "2026-11-24T15:10:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 30,
+      "score": 25,
       "postsCount": 20,
-      "reason": "Viele feiern das Plus von 11,5 % gestern nach dem Start von FSD v15. Dazu die Fusion mit SpaceX und Robotaxi-Hoffnungen; daneben viel Spam.",
+      "reason": "Nach dem Plus von 11,5 % gestern vorbörslich leicht schwächer, laut Posts wegen Nvidia. Fusion mit SpaceX und Morningstar-Fair-Value von 475 $ sind Thema.",
       "sources": [
         {
-          "title": "@meddie auf X (24.11., 14:30)",
-          "url": "https://x.com/meddie/status/2125220583642222629"
+          "title": "@RandyWKirk1 auf X (24.11., 14:59)",
+          "url": "https://x.com/RandyWKirk1/status/2125227861095391571"
         },
         {
-          "title": "@a0952251117 auf X (24.11., 14:26)",
-          "url": "https://x.com/a0952251117/status/2125219533090902102"
+          "title": "@GetRichStayRich auf X (24.11., 14:50)",
+          "url": "https://x.com/GetRichStayRich/status/2125225631805735147"
         },
         {
-          "title": "@Ramos_Btc auf X (24.11., 13:51)",
-          "url": "https://x.com/Ramos_Btc/status/2125210804345569519"
+          "title": "@ElectricNews3 auf X (24.11., 14:53)",
+          "url": "https://x.com/ElectricNews3/status/2125226340781584558"
         }
       ],
-      "updatedAt": "2026-11-24T14:40:00+01:00"
+      "updatedAt": "2026-11-24T15:10:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/RCapitalX/status/2125209778742030633"
         }
       ],
-      "updatedAt": "2026-11-24T14:40:00+01:00"
+      "updatedAt": "2026-11-24T15:10:00+01:00"
     }
   }
 }
