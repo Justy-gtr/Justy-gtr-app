@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "example": false,
-  "asOf": "2026-11-24T05:41:46.912Z",
+  "asOf": "2026-11-24T09:32:55.740Z",
   "timezone": "Europe/Berlin",
   "everyMin": 15,
   "window": "Mo–Fr 14:00–22:00",
@@ -9,72 +9,41 @@
   "symbols": {
     "SPCX": {
       "hour": {
-        "hour": 6,
-        "n": 0,
-        "up": 0,
-        "down": 0,
-        "share": null,
-        "avgUp": null,
-        "avgDown": null
+        "hour": 10,
+        "n": 5,
+        "up": 2,
+        "down": 2,
+        "share": 40,
+        "avgUp": 0.13,
+        "avgDown": -0.62
       },
       "ranges": {
         "5 Min": {
-          "patternId": "unklar",
+          "patternId": "fallend",
           "lines": [
             {
-              "kind": "support",
+              "kind": "trend",
               "i0": 0,
-              "i1": 60,
-              "eur0": 122.33,
-              "eur1": 122.33,
+              "i1": 23,
+              "eur0": 123.79256666666673,
+              "eur1": 121.4157666666666,
               "marker": "fest",
-              "n": 3,
-              "bounce": 0
+              "n": null,
+              "bounce": null
             }
           ]
         },
         "15 Min": {
-          "patternId": "kopf-schulter",
-          "lines": [
-            {
-              "kind": "pattern",
-              "i0": 5,
-              "i1": 41,
-              "eur0": 121.28,
-              "eur1": 125.68,
-              "marker": "2×",
-              "n": null,
-              "bounce": null
-            },
-            {
-              "kind": "pattern",
-              "i0": 41,
-              "i1": 58,
-              "eur0": 125.68,
-              "eur1": 122.54,
-              "marker": "2×",
-              "n": null,
-              "bounce": null
-            },
-            {
-              "kind": "pattern",
-              "i0": 17,
-              "i1": 52,
-              "eur0": 119.38,
-              "eur1": 121.26,
-              "marker": "2×",
-              "n": null,
-              "bounce": null
-            }
-          ]
+          "patternId": "unklar",
+          "lines": []
         },
         "4 Std": {
           "patternId": "inverse-kopf-schulter",
           "lines": [
             {
               "kind": "pattern",
-              "i0": 4,
-              "i1": 30,
+              "i0": 3,
+              "i1": 29,
               "eur0": 128.76,
               "eur1": 107.26,
               "marker": "2×",
@@ -83,8 +52,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 30,
-              "i1": 45,
+              "i0": 29,
+              "i1": 44,
               "eur0": 107.26,
               "eur1": 124,
               "marker": "2×",
@@ -93,8 +62,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 10,
-              "i1": 42,
+              "i0": 9,
+              "i1": 41,
               "eur0": 135.86,
               "eur1": 133.12,
               "marker": "2×",
@@ -104,17 +73,17 @@
           ]
         },
         "1T": {
-          "patternId": "unklar",
+          "patternId": "fallend",
           "lines": [
             {
-              "kind": "support",
+              "kind": "trend",
               "i0": 0,
-              "i1": 60,
-              "eur0": 122.33,
-              "eur1": 122.33,
+              "i1": 23,
+              "eur0": 123.79256666666673,
+              "eur1": 121.4157666666666,
               "marker": "fest",
-              "n": 3,
-              "bounce": 0
+              "n": null,
+              "bounce": null
             }
           ]
         },
@@ -123,8 +92,8 @@
           "lines": [
             {
               "kind": "pattern",
-              "i0": 15,
-              "i1": 48,
+              "i0": 6,
+              "i1": 39,
               "eur0": 128.7,
               "eur1": 134.1,
               "marker": "2×",
@@ -133,8 +102,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 48,
-              "i1": 69,
+              "i0": 39,
+              "i1": 60,
               "eur0": 134.1,
               "eur1": 129.5,
               "marker": "2×",
@@ -143,8 +112,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 25,
-              "i1": 59,
+              "i0": 16,
+              "i1": 50,
               "eur0": 123.48,
               "eur1": 116.38,
               "marker": "2×",
@@ -154,22 +123,12 @@
           ]
         },
         "1W": {
-          "patternId": "kopf-schulter",
+          "patternId": "dreieck",
           "lines": [
             {
               "kind": "pattern",
-              "i0": 10,
-              "i1": 21,
-              "eur0": 130.66,
-              "eur1": 134.1,
-              "marker": "2×",
-              "n": null,
-              "bounce": null
-            },
-            {
-              "kind": "pattern",
-              "i0": 21,
-              "i1": 42,
+              "i0": 12,
+              "i1": 33,
               "eur0": 134.1,
               "eur1": 129.5,
               "marker": "2×",
@@ -178,10 +137,10 @@
             },
             {
               "kind": "pattern",
-              "i0": 15,
-              "i1": 32,
-              "eur0": 128.8,
-              "eur1": 116.38,
+              "i0": 23,
+              "i1": 31,
+              "eur0": 116.38,
+              "eur1": 119.38,
               "marker": "2×",
               "n": null,
               "bounce": null
@@ -193,8 +152,8 @@
           "lines": [
             {
               "kind": "pattern",
-              "i0": 19,
-              "i1": 28,
+              "i0": 18,
+              "i1": 27,
               "eur0": 121.46,
               "eur1": 107.26,
               "marker": "2×",
@@ -203,8 +162,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 28,
-              "i1": 43,
+              "i0": 27,
+              "i1": 42,
               "eur0": 107.26,
               "eur1": 124,
               "marker": "2×",
@@ -213,8 +172,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 22,
-              "i1": 40,
+              "i0": 21,
+              "i1": 39,
               "eur0": 127.6,
               "eur1": 133.12,
               "marker": "2×",
@@ -298,9 +257,9 @@
           "lines": [
             {
               "kind": "pattern",
-              "i0": 20,
+              "i0": 26,
               "i1": 38,
-              "eur0": 136.46,
+              "eur0": 137.8,
               "eur1": 156.86,
               "marker": "2×",
               "n": null,
@@ -318,9 +277,9 @@
             },
             {
               "kind": "pattern",
-              "i0": 23,
+              "i0": 32,
               "i1": 56,
-              "eur0": 124.44,
+              "eur0": 127.8,
               "eur1": 121.74,
               "marker": "2×",
               "n": null,
@@ -332,27 +291,27 @@
     },
     "TSLA": {
       "hour": {
-        "hour": 6,
-        "n": 0,
-        "up": 0,
-        "down": 0,
-        "share": null,
-        "avgUp": null,
-        "avgDown": null
+        "hour": 10,
+        "n": 5,
+        "up": 1,
+        "down": 3,
+        "share": 20,
+        "avgUp": 0.16,
+        "avgDown": -0.37
       },
       "ranges": {
         "5 Min": {
-          "patternId": "doppelboden",
+          "patternId": "fallend",
           "lines": [
             {
-              "kind": "support",
+              "kind": "trend",
               "i0": 0,
-              "i1": 67,
-              "eur0": 354.05,
-              "eur1": 354.05,
-              "marker": "2×",
-              "n": 2,
-              "bounce": 1
+              "i1": 29,
+              "eur0": 355.8912688172041,
+              "eur1": 351.6173978494626,
+              "marker": "fest",
+              "n": null,
+              "bounce": null
             }
           ]
         },
@@ -362,22 +321,12 @@
             {
               "kind": "trend",
               "i0": 0,
-              "i1": 67,
-              "eur0": 329.309207161125,
-              "eur1": 361.70108695652186,
+              "i1": 44,
+              "eur0": 322.80227053140055,
+              "eur1": 359.0066183574882,
               "marker": "fest",
               "n": null,
               "bounce": null
-            },
-            {
-              "kind": "resistance",
-              "i0": 0,
-              "i1": 67,
-              "eur0": 356,
-              "eur1": 356,
-              "marker": "2×",
-              "n": 2,
-              "bounce": 2
             }
           ]
         },
@@ -386,8 +335,8 @@
           "lines": [
             {
               "kind": "pattern",
-              "i0": 18,
-              "i1": 30,
+              "i0": 17,
+              "i1": 29,
               "eur0": 347.4,
               "eur1": 303.5,
               "marker": "2×",
@@ -396,8 +345,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 30,
-              "i1": 54,
+              "i0": 29,
+              "i1": 53,
               "eur0": 303.5,
               "eur1": 340,
               "marker": "2×",
@@ -406,8 +355,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 21,
-              "i1": 48,
+              "i0": 20,
+              "i1": 47,
               "eur0": 369.7,
               "eur1": 365.7,
               "marker": "2×",
@@ -417,17 +366,17 @@
           ]
         },
         "1T": {
-          "patternId": "doppelboden",
+          "patternId": "fallend",
           "lines": [
             {
-              "kind": "support",
+              "kind": "trend",
               "i0": 0,
-              "i1": 67,
-              "eur0": 354.05,
-              "eur1": 354.05,
-              "marker": "2×",
-              "n": 2,
-              "bounce": 1
+              "i1": 29,
+              "eur0": 355.8912688172041,
+              "eur1": 351.6173978494626,
+              "marker": "fest",
+              "n": null,
+              "bounce": null
             }
           ]
         },
@@ -436,9 +385,9 @@
           "lines": [
             {
               "kind": "pattern",
-              "i0": 5,
-              "i1": 34,
-              "eur0": 347.05,
+              "i0": 10,
+              "i1": 25,
+              "eur0": 348.25,
               "eur1": 340,
               "marker": "2×",
               "n": null,
@@ -446,8 +395,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 34,
-              "i1": 44,
+              "i0": 25,
+              "i1": 35,
               "eur0": 340,
               "eur1": 345.9,
               "marker": "2×",
@@ -456,9 +405,9 @@
             },
             {
               "kind": "pattern",
-              "i0": 14,
-              "i1": 42,
-              "eur0": 365.7,
+              "i0": 15,
+              "i1": 33,
+              "eur0": 353.75,
               "eur1": 353.3,
               "marker": "2×",
               "n": null,
@@ -467,17 +416,37 @@
           ]
         },
         "1W": {
-          "patternId": "unklar",
+          "patternId": "flagge",
           "lines": [
             {
-              "kind": "support",
-              "i0": 0,
-              "i1": 45,
-              "eur0": 347.25,
-              "eur1": 347.25,
+              "kind": "pattern",
+              "i0": 25,
+              "i1": 35,
+              "eur0": 330.3,
+              "eur1": 358.45,
               "marker": "2×",
-              "n": 2,
-              "bounce": 1
+              "n": null,
+              "bounce": null
+            },
+            {
+              "kind": "pattern",
+              "i0": 35,
+              "i1": 38,
+              "eur0": 360.65,
+              "eur1": 360.65,
+              "marker": "2×",
+              "n": null,
+              "bounce": null
+            },
+            {
+              "kind": "pattern",
+              "i0": 35,
+              "i1": 38,
+              "eur0": 350.4,
+              "eur1": 350.4,
+              "marker": "2×",
+              "n": null,
+              "bounce": null
             }
           ]
         },
@@ -486,8 +455,8 @@
           "lines": [
             {
               "kind": "pattern",
-              "i0": 16,
-              "i1": 28,
+              "i0": 15,
+              "i1": 27,
               "eur0": 347.4,
               "eur1": 303.5,
               "marker": "2×",
@@ -496,8 +465,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 28,
-              "i1": 52,
+              "i0": 27,
+              "i1": 51,
               "eur0": 303.5,
               "eur1": 340,
               "marker": "2×",
@@ -506,8 +475,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 19,
-              "i1": 46,
+              "i0": 18,
+              "i1": 45,
               "eur0": 369.7,
               "eur1": 365.7,
               "marker": "2×",
@@ -592,7 +561,7 @@
             {
               "kind": "support",
               "i0": 0,
-              "i1": 513,
+              "i1": 515,
               "eur0": 340.65,
               "eur1": 340.65,
               "marker": "fest",
@@ -602,12 +571,12 @@
             {
               "kind": "resistance",
               "i0": 0,
-              "i1": 513,
-              "eur0": 378.9,
-              "eur1": 378.9,
+              "i1": 515,
+              "eur0": 354.05,
+              "eur1": 354.05,
               "marker": "fest",
-              "n": 12,
-              "bounce": 9
+              "n": 23,
+              "bounce": 16
             }
           ]
         }
@@ -615,82 +584,61 @@
     },
     "RKLB": {
       "hour": {
-        "hour": 6,
-        "n": 0,
+        "hour": 10,
+        "n": 5,
         "up": 0,
-        "down": 0,
-        "share": null,
+        "down": 1,
+        "share": 0,
         "avgUp": null,
-        "avgDown": null
+        "avgDown": -0.56
       },
       "ranges": {
         "5 Min": {
-          "patternId": "steigend",
+          "patternId": "flagge",
           "lines": [
             {
-              "kind": "trend",
-              "i0": 0,
-              "i1": 56,
-              "eur0": 45.15203266787659,
-              "eur1": 45.81849364791289,
-              "marker": "fest",
+              "kind": "pattern",
+              "i0": 1,
+              "i1": 12,
+              "eur0": 45.6,
+              "eur1": 44.25,
+              "marker": "2×",
               "n": null,
               "bounce": null
             },
             {
-              "kind": "support",
-              "i0": 0,
-              "i1": 56,
-              "eur0": 45.4,
-              "eur1": 45.4,
-              "marker": "fest",
-              "n": 3,
-              "bounce": 3
+              "kind": "pattern",
+              "i0": 12,
+              "i1": 15,
+              "eur0": 44.66,
+              "eur1": 44.66,
+              "marker": "2×",
+              "n": null,
+              "bounce": null
+            },
+            {
+              "kind": "pattern",
+              "i0": 12,
+              "i1": 15,
+              "eur0": 44.25,
+              "eur1": 44.25,
+              "marker": "2×",
+              "n": null,
+              "bounce": null
             }
           ]
         },
         "15 Min": {
-          "patternId": "kopf-schulter",
-          "lines": [
-            {
-              "kind": "pattern",
-              "i0": 6,
-              "i1": 25,
-              "eur0": 45.5,
-              "eur1": 47.75,
-              "marker": "2×",
-              "n": null,
-              "bounce": null
-            },
-            {
-              "kind": "pattern",
-              "i0": 25,
-              "i1": 60,
-              "eur0": 47.75,
-              "eur1": 45.75,
-              "marker": "2×",
-              "n": null,
-              "bounce": null
-            },
-            {
-              "kind": "pattern",
-              "i0": 20,
-              "i1": 27,
-              "eur0": 44.3,
-              "eur1": 44.9,
-              "marker": "2×",
-              "n": null,
-              "bounce": null
-            }
-          ]
+          "patternId": "unklar",
+          "lines": []
         },
         "4 Std": {
           "patternId": "kopf-schulter",
           "lines": [
             {
               "kind": "pattern",
-              "i0": 5,
-              "i1": 42,
+              "i0": 4,
+              "i1": 41,
               "eur0": 50.3,
               "eur1": 60.3,
               "marker": "2×",
@@ -699,8 +647,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 42,
-              "i1": 59,
+              "i0": 41,
+              "i1": 58,
               "eur0": 60.3,
               "eur1": 50.4,
               "marker": "2×",
@@ -709,8 +657,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 18,
-              "i1": 57,
+              "i0": 17,
+              "i1": 56,
               "eur0": 39.25,
               "eur1": 47.75,
               "marker": "2×",
@@ -720,27 +668,37 @@
           ]
         },
         "1T": {
-          "patternId": "steigend",
+          "patternId": "flagge",
           "lines": [
             {
-              "kind": "trend",
-              "i0": 0,
-              "i1": 56,
-              "eur0": 45.15203266787659,
-              "eur1": 45.81849364791289,
-              "marker": "fest",
+              "kind": "pattern",
+              "i0": 1,
+              "i1": 12,
+              "eur0": 45.6,
+              "eur1": 44.25,
+              "marker": "2×",
               "n": null,
               "bounce": null
             },
             {
-              "kind": "support",
-              "i0": 0,
-              "i1": 56,
-              "eur0": 45.4,
-              "eur1": 45.4,
-              "marker": "fest",
-              "n": 3,
-              "bounce": 3
+              "kind": "pattern",
+              "i0": 12,
+              "i1": 15,
+              "eur0": 44.66,
+              "eur1": 44.66,
+              "marker": "2×",
+              "n": null,
+              "bounce": null
+            },
+            {
+              "kind": "pattern",
+              "i0": 12,
+              "i1": 15,
+              "eur0": 44.25,
+              "eur1": 44.25,
+              "marker": "2×",
+              "n": null,
+              "bounce": null
             }
           ]
         },
@@ -750,9 +708,9 @@
             {
               "kind": "trend",
               "i0": 0,
-              "i1": 48,
-              "eur0": 58.58910204081636,
-              "eur1": 43.20069387755099,
+              "i1": 44,
+              "eur0": 56.4200483091787,
+              "eur1": 42.96439613526572,
               "marker": "fest",
               "n": null,
               "bounce": null
@@ -760,7 +718,7 @@
             {
               "kind": "resistance",
               "i0": 0,
-              "i1": 48,
+              "i1": 44,
               "eur0": 52.1,
               "eur1": 52.1,
               "marker": "fest",
@@ -775,22 +733,12 @@
             {
               "kind": "trend",
               "i0": 0,
-              "i1": 31,
-              "eur0": 52.14431818181816,
-              "eur1": 43.85880681818183,
+              "i1": 27,
+              "eur0": 50.561822660098585,
+              "eur1": 43.60603448275858,
               "marker": "fest",
               "n": null,
               "bounce": null
-            },
-            {
-              "kind": "resistance",
-              "i0": 0,
-              "i1": 31,
-              "eur0": 52.1,
-              "eur1": 52.1,
-              "marker": "fest",
-              "n": 3,
-              "bounce": 3
             }
           ]
         },
@@ -799,8 +747,8 @@
           "lines": [
             {
               "kind": "pattern",
-              "i0": 21,
-              "i1": 58,
+              "i0": 19,
+              "i1": 56,
               "eur0": 50.3,
               "eur1": 60.3,
               "marker": "2×",
@@ -809,8 +757,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 58,
-              "i1": 75,
+              "i0": 56,
+              "i1": 73,
               "eur0": 60.3,
               "eur1": 50.4,
               "marker": "2×",
@@ -819,8 +767,8 @@
             },
             {
               "kind": "pattern",
-              "i0": 34,
-              "i1": 73,
+              "i0": 32,
+              "i1": 71,
               "eur0": 39.25,
               "eur1": 47.75,
               "marker": "2×",
@@ -938,38 +886,39 @@
     },
     "MRVL": {
       "hour": {
-        "hour": 6,
-        "n": 0,
-        "up": 0,
-        "down": 0,
-        "share": null,
-        "avgUp": null,
-        "avgDown": null
+        "hour": 10,
+        "n": 5,
+        "up": 2,
+        "down": 2,
+        "share": 40,
+        "avgUp": 0.31,
+        "avgDown": -0.92
       },
       "ranges": {
         "5 Min": {
-          "patternId": "doppelboden",
-          "lines": []
+          "patternId": "fallend",
+          "lines": [
+            {
+              "kind": "trend",
+              "i0": 0,
+              "i1": 16,
+              "eur0": 132.918431372549,
+              "eur1": 126.59333333333333,
+              "marker": "fest",
+              "n": null,
+              "bounce": null
+            }
+          ]
         },
         "15 Min": {
           "patternId": "steigend",
           "lines": [
             {
-              "kind": "support",
-              "i0": 0,
-              "i1": 67,
-              "eur0": 131.18,
-              "eur1": 131.18,
-              "marker": "fest",
-              "n": 6,
-              "bounce": 5
-            },
-            {
               "kind": "trend",
               "i0": 0,
-              "i1": 67,
-              "eur0": 118.5087979539644,
-              "eur1": 137.06237851662388,
+              "i1": 40,
+              "eur0": 116.04578397212555,
+              "eur1": 133.90641114982574,
               "marker": "fest",
               "n": null,
               "bounce": null
@@ -977,12 +926,12 @@
             {
               "kind": "resistance",
               "i0": 0,
-              "i1": 67,
-              "eur0": 133.51,
-              "eur1": 133.51,
-              "marker": "fest",
-              "n": 5,
-              "bounce": 3
+              "i1": 40,
+              "eur0": 134.48,
+              "eur1": 134.48,
+              "marker": "2×",
+              "n": 2,
+              "bounce": 1
             }
           ]
         },
@@ -993,21 +942,11 @@
               "kind": "trend",
               "i0": 0,
               "i1": 67,
-              "eur0": 205.65193094629157,
-              "eur1": 111.10277493606137,
+              "eur0": 203.58382352941166,
+              "eur1": 110.80882352941182,
               "marker": "fest",
               "n": null,
               "bounce": null
-            },
-            {
-              "kind": "support",
-              "i0": 0,
-              "i1": 67,
-              "eur0": 131.2,
-              "eur1": 131.2,
-              "marker": "fest",
-              "n": 5,
-              "bounce": 4
             },
             {
               "kind": "resistance",
@@ -1018,72 +957,72 @@
               "marker": "fest",
               "n": 4,
               "bounce": 3
+            },
+            {
+              "kind": "support",
+              "i0": 0,
+              "i1": 67,
+              "eur0": 123.14,
+              "eur1": 123.14,
+              "marker": "fest",
+              "n": 3,
+              "bounce": 2
             }
           ]
         },
         "1T": {
-          "patternId": "doppelboden",
-          "lines": []
-        },
-        "1 Std": {
           "patternId": "fallend",
           "lines": [
             {
               "kind": "trend",
               "i0": 0,
-              "i1": 72,
-              "eur0": 148.24368011847457,
-              "eur1": 122.13823768974451,
+              "i1": 16,
+              "eur0": 132.918431372549,
+              "eur1": 126.59333333333333,
               "marker": "fest",
+              "n": null,
+              "bounce": null
+            }
+          ]
+        },
+        "1 Std": {
+          "patternId": "kopf-schulter",
+          "lines": [
+            {
+              "kind": "pattern",
+              "i0": 17,
+              "i1": 29,
+              "eur0": 135.36,
+              "eur1": 142.08,
+              "marker": "2×",
               "n": null,
               "bounce": null
             },
             {
-              "kind": "support",
-              "i0": 0,
-              "i1": 72,
-              "eur0": 131.2,
-              "eur1": 131.2,
-              "marker": "fest",
-              "n": 4,
-              "bounce": 4
+              "kind": "pattern",
+              "i0": 29,
+              "i1": 61,
+              "eur0": 142.08,
+              "eur1": 136.96,
+              "marker": "2×",
+              "n": null,
+              "bounce": null
             },
             {
-              "kind": "resistance",
-              "i0": 0,
-              "i1": 72,
-              "eur0": 138.72,
-              "eur1": 138.72,
+              "kind": "pattern",
+              "i0": 25,
+              "i1": 52,
+              "eur0": 128.52,
+              "eur1": 112.96,
               "marker": "2×",
-              "n": 2,
-              "bounce": 2
+              "n": null,
+              "bounce": null
             }
           ]
         },
         "1W": {
-          "patternId": "doppelboden",
-          "lines": [
-            {
-              "kind": "support",
-              "i0": 0,
-              "i1": 45,
-              "eur0": 131.2,
-              "eur1": 131.2,
-              "marker": "fest",
-              "n": 3,
-              "bounce": 3
-            },
-            {
-              "kind": "resistance",
-              "i0": 0,
-              "i1": 45,
-              "eur0": 138.72,
-              "eur1": 138.72,
-              "marker": "2×",
-              "n": 2,
-              "bounce": 2
-            }
-          ]
+          "patternId": "unklar",
+          "lines": []
         },
         "1M": {
           "patternId": "fallend",
@@ -1092,21 +1031,11 @@
               "kind": "trend",
               "i0": 0,
               "i1": 65,
-              "eur0": 202.91361374943457,
-              "eur1": 111.06244685662602,
+              "eur0": 200.96026684758039,
+              "eur1": 110.73367254635907,
               "marker": "fest",
               "n": null,
               "bounce": null
-            },
-            {
-              "kind": "support",
-              "i0": 0,
-              "i1": 65,
-              "eur0": 131.2,
-              "eur1": 131.2,
-              "marker": "fest",
-              "n": 5,
-              "bounce": 4
             },
             {
               "kind": "resistance",
@@ -1117,6 +1046,16 @@
               "marker": "fest",
               "n": 4,
               "bounce": 3
+            },
+            {
+              "kind": "support",
+              "i0": 0,
+              "i1": 65,
+              "eur0": 123.14,
+              "eur1": 123.14,
+              "marker": "fest",
+              "n": 3,
+              "bounce": 2
             }
           ]
         },
