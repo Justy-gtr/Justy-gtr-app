@@ -1,97 +1,85 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-23T14:35:00+01:00",
-  "nextRun": "2026-11-24T08:30:00+01:00",
+  "updatedAt": "2026-11-24T07:25:00+01:00",
+  "nextRun": "2026-11-24T07:55:00+01:00",
   "long": [
     {
-      "name": "Zscaler",
-      "ticker": "ZS",
+      "name": "Alta Equipment Group",
+      "ticker": "ALTG",
       "country": "US",
-      "exchange": "Nasdaq",
-      "priceEur": 214.7,
-      "hint": "CrowdStrike übernimmt Zscaler, vorbörslich rund +20 %",
+      "exchange": "NYSE",
+      "priceEur": 4.89,
+      "hint": "Übernahme von Jackson Group Peterbilt plus Viking-Geld, nachbörslich rund +16 %",
       "bullets": [
-        "CrowdStrike zahlt 1,135 eigene Aktien je Zscaler-Aktie, rechnerisch 260,41 $.",
-        "Vorbörslich steht Zscaler bei 234,90 $, 20,6 % über dem Freitagsschluss von 194,82 $.",
-        "Dazu meldete Zscaler im Quartal 20 % mehr Umsatz, über den Erwartungen."
+        "Alta übernimmt die Lkw-Händlergruppe Jackson Group Peterbilt für 272,5 Mio. $ plus Anpassungen.",
+        "Viking Global steckt 338,4 Mio. $ in neue Vorzugsaktien, umgerechnet 6,33 $ je Aktie.",
+        "Nachbörslich zuletzt 5,34 $ nach 4,61 $ Schluss; der Deal braucht noch die Zustimmung der Aktionäre."
       ],
       "sources": [
         {
-          "title": "CNBC: CrowdStrike übernimmt Zscaler für 43,9 Mrd. $ in Aktien (23.11.)",
-          "url": "https://www.cnbc.com/2026/11/23/crowdstrike-to-buy-zscaler.html"
+          "title": "Alta Equipment: Pressemitteilung zur Übernahme von Jackson Group Peterbilt (23.11.)",
+          "url": "https://investors.altg.com/news/news-details/2026/Alta-Equipment-Group-Agrees-to-Acquire-Jackson-Group-Peterbilt-in-Proposed-Transformative-Deal/default.aspx"
         },
         {
-          "title": "CrowdStrike: Pressemitteilung zur Übernahme von Zscaler (23.11.)",
-          "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-acquire-zscaler-bringing-network-security-and-zero"
+          "title": "Yahoo Finance: ALTG",
+          "url": "https://finance.yahoo.com/quote/ALTG/"
         },
         {
-          "title": "Yahoo Finance: ZS",
-          "url": "https://finance.yahoo.com/quote/ZS/"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD 1,0941 (Mo 23.11., 14:30)",
+          "title": "Yahoo Finance: EURUSD 1,0912 (Di 24.11., 07:12)",
           "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
     },
     {
-      "name": "Applied Digital",
-      "ticker": "APLD",
-      "country": "US",
-      "exchange": "Nasdaq",
-      "priceEur": 11.88,
-      "hint": "Rechenzentrums-Werte erholen sich, vorbörslich rund +13 %",
+      "name": "Murata Manufacturing",
+      "ticker": "6981",
+      "country": "JP",
+      "exchange": "Tokio",
+      "priceEur": 31.09,
+      "hint": "Stop-High in Tokio, umgerechnet knapp 10 % über dem Frankfurter Schluss",
       "bullets": [
-        "Vorbörslich steht Applied Digital bei 13,00 $, 13,1 % über dem Freitagsschluss von 11,49 $.",
-        "Reuters nennt Rechenzentrums- und Neocloud-Werte als Teil der breiten KI-Erholung.",
-        "Nach der schlimmsten Tech-Woche seit Jahren ist die Gegenbewegung bei kleinen Werten am stärksten."
+        "Murata hing in Tokio den ganzen Tag am Tageslimit von 5.400 ¥, das sind +14,9 %.",
+        "Auslöser ist Jensen Huangs Rückkehr an die Nvidia-Spitze, Chip- und Bauteilwerte in Asien sprangen mit.",
+        "In Frankfurt schloss Murata Montag bei 28,33 €; umgerechnet liegt Tokio rund 9,7 % darüber."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: APLD",
-          "url": "https://finance.yahoo.com/quote/APLD/"
+          "title": "Zawakabu: Murata an der Stop-High, Ibiden ohne Eröffnungskurs (24.11.)",
+          "url": "https://zawakabu.com/s/20261124-semis-surge-murata-ibiden-limit-up/"
         },
         {
-          "title": "Reuters via Investing.com: US-Futures erholen sich nach KI-Ausverkauf (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-rebound-after-rough-week-for-ailinked-shares-5044594"
+          "title": "Yahoo Finance: 6981.T",
+          "url": "https://finance.yahoo.com/quote/6981.T/"
         },
         {
-          "title": "Investing.com: Vorbörsliche Bewegungen – Chipwerte führen, CrowdStrike fällt (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/premarket-movers-chip-stocks-lead-ai-rebound-crowdstrike-falls-5045110"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD 1,0941 (Mo 23.11., 14:30)",
-          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
+          "title": "Yahoo Finance: EURJPY 173,66 (Di 24.11., 07:13)",
+          "url": "https://finance.yahoo.com/quote/EURJPY%3DX/"
         }
       ]
     },
     {
-      "name": "Nebius Group",
-      "ticker": "NBIS",
-      "country": "NL",
-      "exchange": "Nasdaq",
-      "priceEur": 80.75,
-      "hint": "Neocloud nach −16 % am Freitag, vorbörslich rund +9 %",
+      "name": "Agilent Technologies",
+      "ticker": "A",
+      "country": "US",
+      "exchange": "NYSE",
+      "priceEur": 172.29,
+      "hint": "Zahlen und Ausblick über den Erwartungen, nachbörslich rund +7 %",
       "bullets": [
-        "Vorbörslich steht Nebius bei 88,35 $, 8,7 % über dem Freitagsschluss von 81,31 $.",
-        "Investing.com sah den Wert gegen 11:20 Uhr sogar 11,1 % im Plus.",
-        "Am Freitag fiel Nebius um 16 %, stärker als CoreWeave oder Nvidia."
+        "Agilent verdiente bereinigt 1,86 $ je Aktie, erwartet waren 1,73 $.",
+        "Der Ausblick für 2027 mit 8,00 bis 8,15 Mrd. $ Umsatz liegt über dem Konsens.",
+        "Nachbörslich zuletzt 188,00 $ nach 176,04 $; für 10 % braucht es zum Start noch etwas mehr."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance: NBIS",
-          "url": "https://finance.yahoo.com/quote/NBIS/"
+          "title": "Investing.com: Agilent schlägt Erwartungen, starker Ausblick (23.11.)",
+          "url": "https://www.investing.com/news/earnings/agilent-beats-estimates-surges-on-strong-guidance-5046437"
         },
         {
-          "title": "Investing.com: Vorbörsliche Bewegungen – Chipwerte führen, CrowdStrike fällt (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/premarket-movers-chip-stocks-lead-ai-rebound-crowdstrike-falls-5045110"
+          "title": "Yahoo Finance: A",
+          "url": "https://finance.yahoo.com/quote/A/"
         },
         {
-          "title": "Reuters via Investing.com: US-Futures erholen sich nach KI-Ausverkauf (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-rebound-after-rough-week-for-ailinked-shares-5044594"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD 1,0941 (Mo 23.11., 14:30)",
+          "title": "Yahoo Finance: EURUSD 1,0912 (Di 24.11., 07:12)",
           "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
@@ -99,59 +87,28 @@
   ],
   "short": [
     {
-      "name": "Capricor Therapeutics",
-      "ticker": "CAPR",
+      "name": "Brand Engagement Network",
+      "ticker": "BNAI",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 1.73,
-      "hint": "Zweite FDA-Ablehnung für Deramiocel, vorbörslich rund −75 %",
+      "priceEur": 6.07,
+      "hint": "Nach +118 % am Montag nachbörslich schon rund −10 %",
       "bullets": [
-        "Die FDA lehnte die Zelltherapie gegen Duchenne-Muskeldystrophie zum zweiten Mal ab.",
-        "Die Behörde nennt schwere Mängel bei der Datenintegrität der HOPE-3-Studie.",
-        "Piper Sandler senkte das Kursziel von 25 $ auf 1 $; vorbörslich 1,89 $ nach 7,59 $."
+        "Die Aktie verdoppelte sich Montag auf 7,32 $, fünf Handelspausen wegen starker Schwankung.",
+        "Die Quartalszahlen erklären den Sprung kaum, das Unternehmen nennt selbst Zweifel am Fortbestand.",
+        "Nachbörslich zuletzt 6,62 $, rund 10 % unter dem Schluss; der Streubesitz ist nur etwa 6,2 Mio. Aktien."
       ],
       "sources": [
         {
-          "title": "Investing.com: Capricor bricht nach zweiter FDA-Ablehnung ein (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/why-is-capricor-therapeutics-stock-collapsing-today-93CH-5044817"
+          "title": "Wall Street Navigator: BNAI verdoppelt sich nach Q3-Zahlen (23.11.)",
+          "url": "https://wallstreetnavigator.com/news/bnai-stock-more-than-doubles-to-7-32-after-q3-report-and-five-volatility-halts"
         },
         {
-          "title": "Yahoo Finance: CAPR",
-          "url": "https://finance.yahoo.com/quote/CAPR/"
+          "title": "Yahoo Finance: BNAI",
+          "url": "https://finance.yahoo.com/quote/BNAI/"
         },
         {
-          "title": "Yahoo Finance: EURUSD 1,0941 (Mo 23.11., 14:30)",
-          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
-        }
-      ]
-    },
-    {
-      "name": "CrowdStrike",
-      "ticker": "CRWD",
-      "country": "US",
-      "exchange": "Nasdaq",
-      "priceEur": 194.86,
-      "hint": "Kauft Zscaler für 43,9 Mrd. $ in Aktien, vorbörslich rund −7 %",
-      "bullets": [
-        "Vorbörslich steht CrowdStrike bei 213,20 $, 7,1 % unter dem Freitagsschluss von 229,44 $.",
-        "Bezahlt wird nur mit Aktien, Zscaler-Aktionäre bekommen 15,9 % der neuen Firma.",
-        "Der Abschluss ist erst für die zweite Hälfte des Geschäftsjahres 2028 geplant."
-      ],
-      "sources": [
-        {
-          "title": "CNBC: CrowdStrike übernimmt Zscaler für 43,9 Mrd. $ in Aktien (23.11.)",
-          "url": "https://www.cnbc.com/2026/11/23/crowdstrike-to-buy-zscaler.html"
-        },
-        {
-          "title": "CrowdStrike: Pressemitteilung zur Übernahme von Zscaler (23.11.)",
-          "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-acquire-zscaler-bringing-network-security-and-zero"
-        },
-        {
-          "title": "Yahoo Finance: CRWD",
-          "url": "https://finance.yahoo.com/quote/CRWD/"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD 1,0941 (Mo 23.11., 14:30)",
+          "title": "Yahoo Finance: EURUSD 1,0912 (Di 24.11., 07:12)",
           "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
@@ -161,24 +118,51 @@
       "ticker": "HPE",
       "country": "US",
       "exchange": "NYSE",
-      "priceEur": 40.19,
-      "hint": "KI-Server-Zahlen nach US-Schluss, Optionen preisen ±14,1 % ein",
+      "priceEur": 40.96,
+      "hint": "Starke Zahlen, aber Gewinnmitnahmen nach +13 % am Montag, nachbörslich rund −7 %",
       "bullets": [
-        "HPE legt heute nach US-Börsenschluss Zahlen vor.",
-        "Die eingepreiste Spanne von ±14,1 % liegt weit über dem Schnitt von ±8,2 %.",
-        "Vorbörslich steht HPE bei 43,97 $, 7,5 % über dem Freitag – das erhöht die Fallhöhe."
+        "HPE schlug die Erwartungen und hob den Ausblick für 2027 auf 59,4 bis 63,1 Mrd. $ Umsatz.",
+        "Trotzdem drücken Sorgen um die Marge im KI-Servergeschäft und knappe Bauteile auf den Kurs.",
+        "Nachbörslich zuletzt 44,70 $ nach 48,02 $ Schluss, das sind rund −6,9 %."
       ],
       "sources": [
         {
-          "title": "EarningsWatcher: Zahlen am 23.11. und erwartete Bewegungen",
-          "url": "https://earnings-watcher.com/earnings-today"
+          "title": "CNBC: HPE fällt nachbörslich trotz besserem Ausblick (23.11.)",
+          "url": "https://www.cnbc.com/2026/11/23/stocks-moving-the-most-today-live-updates.html"
         },
         {
           "title": "Yahoo Finance: HPE",
           "url": "https://finance.yahoo.com/quote/HPE/"
         },
         {
-          "title": "Yahoo Finance: EURUSD 1,0941 (Mo 23.11., 14:30)",
+          "title": "Yahoo Finance: EURUSD 1,0912 (Di 24.11., 07:12)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
+        }
+      ]
+    },
+    {
+      "name": "Semtech",
+      "ticker": "SMTC",
+      "country": "US",
+      "exchange": "Nasdaq",
+      "priceEur": 91.03,
+      "hint": "Zahlen über den Erwartungen, trotzdem nachbörslich zeitweise −8 %",
+      "bullets": [
+        "Semtech meldete 423 Mio. $ Umsatz und 1,17 $ Gewinn je Aktie, beides über den Erwartungen.",
+        "Nach der langen Kursrally fiel die Aktie nachbörslich zeitweise um gut 8 %.",
+        "Zuletzt 99,33 $ nach 104,13 $ Schluss, also rund −4,6 %; für −7,5 % müsste es weiter abwärts gehen."
+      ],
+      "sources": [
+        {
+          "title": "Investing.com: Nachbörsliche Bewegungen HPE, SMTC, ZM, A (23.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-hpe-smtc-zm-a-432SI-5046515"
+        },
+        {
+          "title": "Yahoo Finance: SMTC",
+          "url": "https://finance.yahoo.com/quote/SMTC/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD 1,0912 (Di 24.11., 07:12)",
           "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
