@@ -1,49 +1,45 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T19:44:00+01:00",
+  "updatedAt": "2026-11-24T20:10:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
       "score": -10,
       "postsCount": 25,
-      "reason": "Amazon soll mehr Satellitenstarts bei SpaceX buchen, nachdem ULA nicht liefern konnte. Trader schauen auf die Marke von 120 $, darunter rechnen manche mit 105 $.",
+      "reason": "Laut RBC könnte die Fusion mit Tesla Anfang 2027 verkündet werden. Viele fragen, ob 125 $ ein Schnäppchen ist oder SpaceX noch Richtung 100 $ fällt.",
       "sources": [
         {
-          "title": "@ariaradnia auf X (24.11., 19:39)",
-          "url": "https://x.com/ariaradnia/status/2125298371997102492"
+          "title": "@chachaX72 auf X (24.11., 19:50)",
+          "url": "https://x.com/chachaX72/status/2125301024932200868"
         },
         {
-          "title": "@Bitcoin502 auf X (24.11., 19:13)",
-          "url": "https://x.com/Bitcoin502/status/2125291759102234710"
+          "title": "@MarketRebels auf X (24.11., 19:56)",
+          "url": "https://x.com/MarketRebels/status/2125302430153965780"
         },
         {
-          "title": "@BoBbyPleWniaK auf X (24.11., 19:12)",
-          "url": "https://x.com/BoBbyPleWniaK/status/2125291565786812763"
+          "title": "@MarcosMillaYT auf X (24.11., 19:56)",
+          "url": "https://x.com/MarcosMillaYT/status/2125302508939890949"
         }
       ],
-      "updatedAt": "2026-11-24T19:44:00+01:00"
+      "updatedAt": "2026-11-24T20:10:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 20,
-      "postsCount": 25,
-      "reason": "Tesla hält sich im KI-Ausverkauf deutlich besser als SpaceX. Trader loben die relative Stärke, die Fusion bleibt das Hauptthema.",
+      "postsCount": 23,
+      "reason": "Bei Tesla geht es vor allem um die Fusion: Laut RBC könnte der Deal Anfang 2027 kommen, fünf Verwaltungsräte führen die Gespräche. Sonst eher ruhig.",
       "sources": [
         {
-          "title": "@enrichtrades auf X (24.11., 18:31)",
-          "url": "https://x.com/enrichtrades/status/2125281201711681876"
+          "title": "@chachaX72 auf X (24.11., 19:50)",
+          "url": "https://x.com/chachaX72/status/2125301024932200868"
         },
         {
-          "title": "@TeslaPaul1 auf X (24.11., 18:34)",
-          "url": "https://x.com/TeslaPaul1/status/2125281976693535003"
-        },
-        {
-          "title": "@BestTrader01 auf X (24.11., 18:18)",
-          "url": "https://x.com/BestTrader01/status/2125278012065120390"
+          "title": "@chachaX72 auf X (24.11., 19:49)",
+          "url": "https://x.com/chachaX72/status/2125300808501633532"
         }
       ],
-      "updatedAt": "2026-11-24T19:44:00+01:00"
+      "updatedAt": "2026-11-24T20:10:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -60,7 +56,7 @@
           "url": "https://x.com/42traders/status/2125296012789162029"
         }
       ],
-      "updatedAt": "2026-11-24T19:44:00+01:00"
+      "updatedAt": "2026-11-24T20:10:00+01:00"
     }
   }
 }
