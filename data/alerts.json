@@ -697,8 +697,8 @@
       "id": "MRVL-2026-11-24",
       "symbol": "MRVL",
       "name": "Marvell Technology",
-      "changePct": -3.85,
-      "priceEur": 126.92,
+      "changePct": -5.95,
+      "priceEur": 124.14,
       "thresholdPct": 2,
       "direction": "down",
       "timestamp": "2026-11-24T09:32:46.500Z",
@@ -720,6 +720,66 @@
         {
           "title": "Yahoo Finance MRVL",
           "url": "https://finance.yahoo.com/quote/MRVL"
+        }
+      ]
+    },
+    {
+      "id": "SPCX-2026-11-24",
+      "symbol": "SPCX",
+      "name": "SpaceX",
+      "changePct": -5.21,
+      "priceEur": 119.08,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-24T13:30:24.184Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Alpaca Markets IEX SPCX",
+          "url": "https://data.alpaca.markets/v2/stocks/SPCX/snapshot?feed=iex"
+        },
+        {
+          "title": "Yahoo Finance SPX.DE",
+          "url": "https://finance.yahoo.com/quote/SPX.DE"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance SPCX",
+          "url": "https://finance.yahoo.com/quote/SPCX"
+        }
+      ]
+    },
+    {
+      "id": "TSLA-2026-11-24",
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "changePct": -3.21,
+      "priceEur": 346.65,
+      "thresholdPct": 2,
+      "direction": "down",
+      "timestamp": "2026-11-24T13:30:24.184Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Alpaca Markets IEX TSLA",
+          "url": "https://data.alpaca.markets/v2/stocks/TSLA/snapshot?feed=iex"
+        },
+        {
+          "title": "Yahoo Finance TL0.DE",
+          "url": "https://finance.yahoo.com/quote/TL0.DE"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance TSLA",
+          "url": "https://finance.yahoo.com/quote/TSLA"
         }
       ]
     }

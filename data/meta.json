@@ -1,16 +1,16 @@
 {
   "dataMode": "live",
-  "lastUpdated": "2026-11-24T14:35:00+01:00",
-  "pricesUpdated": "2026-11-24T09:32:46.500Z",
+  "lastUpdated": "2026-11-24T13:30:24.184Z",
+  "pricesUpdated": "2026-11-24T13:30:24.184Z",
   "timezone": "Europe/Berlin",
   "owner": "Justy",
   "researchVoice": "Karl",
   "disclaimer": "Keine Anlageberatung. Nur Recherche und Bildung.",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.0922,
+    "rate": 1.0963,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-24T09:32:46.500Z",
+    "asOf": "2026-11-24T13:30:24.184Z",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -21,8 +21,8 @@
       "ok": true,
       "stale": false,
       "method": "direct_eur",
-      "venue": "Stuttgart",
-      "symbol": "SPX.SG",
+      "venue": "Xetra",
+      "symbol": "SPX.DE",
       "intradayMethod": "direct_eur_plus_us",
       "overnight": "vorboerse",
       "source": "alpaca-iex",
