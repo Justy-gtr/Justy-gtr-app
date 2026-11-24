@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T14:10:00+01:00",
+  "updatedAt": "2026-11-24T14:40:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 30,
-      "postsCount": 25,
-      "reason": "Mizuho startet SpaceX mit Outperform und Kursziel 205 $. Dazu die FT-Meldung zu Fusionsgesprächen mit Tesla; manche fürchten ein unfaires Tauschverhältnis.",
+      "postsCount": 20,
+      "reason": "Nach Jefferies startet auch Mizuho SpaceX positiv. Die Fusionsgespräche mit Tesla bleiben Thema, einige warnen vor einem Veto aus China.",
       "sources": [
         {
-          "title": "@DeItaone auf X (24.11., 14:08)",
-          "url": "https://x.com/DeItaone/status/2125214987832406436"
+          "title": "@AIStockSavvy auf X (24.11., 14:09)",
+          "url": "https://x.com/AIStockSavvy/status/2125215114324218189"
         },
         {
-          "title": "@firesidealpha auf X (24.11., 14:08)",
-          "url": "https://x.com/firesidealpha/status/2125215085547377074"
+          "title": "@GetRichStayRich auf X (24.11., 13:57)",
+          "url": "https://x.com/GetRichStayRich/status/2125212280723759507"
         },
         {
-          "title": "@tslaming auf X (24.11., 14:08)",
-          "url": "https://x.com/tslaming/status/2125214928974028998"
+          "title": "@BradMunchen auf X (24.11., 14:28)",
+          "url": "https://x.com/BradMunchen/status/2125219965141926207"
         }
       ],
-      "updatedAt": "2026-11-24T14:10:00+01:00"
+      "updatedAt": "2026-11-24T14:40:00+01:00"
     },
     "TSLA": {
-      "mood": "gemischt",
-      "score": 15,
-      "postsCount": 25,
-      "reason": "Die Fusion mit SpaceX dominiert: Viele streiten über Tauschverhältnis und Stimmrechte. Daneben viel Spam und gefälschte Roadster-Werbung.",
+      "mood": "gut",
+      "score": 30,
+      "postsCount": 20,
+      "reason": "Viele feiern das Plus von 11,5 % gestern nach dem Start von FSD v15. Dazu die Fusion mit SpaceX und Robotaxi-Hoffnungen; daneben viel Spam.",
       "sources": [
         {
-          "title": "@justinmdd13 auf X (24.11., 14:09)",
-          "url": "https://x.com/justinmdd13/status/2125215200081330445"
+          "title": "@meddie auf X (24.11., 14:30)",
+          "url": "https://x.com/meddie/status/2125220583642222629"
         },
         {
-          "title": "@lanceq7um auf X (24.11., 14:09)",
-          "url": "https://x.com/lanceq7um/status/2125215128496800030"
+          "title": "@a0952251117 auf X (24.11., 14:26)",
+          "url": "https://x.com/a0952251117/status/2125219533090902102"
         },
         {
-          "title": "@cjs6942 auf X (24.11., 14:09)",
-          "url": "https://x.com/cjs6942/status/2125215164915982688"
+          "title": "@Ramos_Btc auf X (24.11., 13:51)",
+          "url": "https://x.com/Ramos_Btc/status/2125210804345569519"
         }
       ],
-      "updatedAt": "2026-11-24T14:10:00+01:00"
+      "updatedAt": "2026-11-24T14:40:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
       "score": 30,
-      "postsCount": 45,
-      "reason": "Viel Spam. Echte Posts feiern das Overweight von Morgan Stanley und das Plus von 9 % gestern; Rocket Lab gilt als reiner Raumfahrtwert neben SpaceX.",
+      "postsCount": 20,
+      "reason": "Viel Spam. Echte Posts loben das Overweight von Morgan Stanley und Neutron-Aufträge; Rocket Lab gilt als reiner Raumfahrtwert neben SpaceX.",
       "sources": [
-        {
-          "title": "@RCapitalX auf X (24.11., 13:47)",
-          "url": "https://x.com/RCapitalX/status/2125209778742030633"
-        },
         {
           "title": "@Neil_Shares auf X (24.11., 13:43)",
           "url": "https://x.com/Neil_Shares/status/2125208776961925537"
         },
         {
-          "title": "@stonksfolio auf X (24.11., 12:20)",
-          "url": "https://x.com/stonksfolio/status/2125187861595230397"
+          "title": "@antiDOKA auf X (24.11., 14:05)",
+          "url": "https://x.com/antiDOKA/status/2125214146283385012"
+        },
+        {
+          "title": "@RCapitalX auf X (24.11., 13:47)",
+          "url": "https://x.com/RCapitalX/status/2125209778742030633"
         }
       ],
-      "updatedAt": "2026-11-24T14:10:00+01:00"
+      "updatedAt": "2026-11-24T14:40:00+01:00"
     }
   }
 }
