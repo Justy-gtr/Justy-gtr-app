@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T15:10:00+01:00",
+  "updatedAt": "2026-11-24T15:40:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 15,
+      "score": 5,
       "postsCount": 20,
-      "reason": "Vorbörslich rund 2 % im Minus wegen Nvidia-Katerstimmung. Musk soll intern gesagt haben, SpaceX hinke bei KI hinterher; Mizuho-Lob und Fusion bleiben Thema.",
+      "reason": "Virginia und Oregon verklagen SpaceX wegen Groks Bildtool. Vorbörslich knapp 2 % im Minus; viele sehen Risiken bei der Tesla-Fusion, Fans bleiben zuversichtlich.",
       "sources": [
         {
-          "title": "@RandyWKirk1 auf X (24.11., 14:59)",
-          "url": "https://x.com/RandyWKirk1/status/2125227861095391571"
+          "title": "@BarnyInvests auf X (24.11., 15:23)",
+          "url": "https://x.com/BarnyInvests/status/2125233786761683323"
         },
         {
-          "title": "@BradMunchen auf X (24.11., 14:53)",
-          "url": "https://x.com/BradMunchen/status/2125226202961223953"
+          "title": "@QuantAlphaXXX auf X (24.11., 15:30)",
+          "url": "https://x.com/QuantAlphaXXX/status/2125235492606120104"
         },
         {
           "title": "@herbertong auf X (24.11., 15:04)",
           "url": "https://x.com/herbertong/status/2125228947214393729"
         }
       ],
-      "updatedAt": "2026-11-24T15:10:00+01:00"
+      "updatedAt": "2026-11-24T15:40:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 25,
       "postsCount": 20,
-      "reason": "Nach dem Plus von 11,5 % gestern vorbörslich leicht schwächer, laut Posts wegen Nvidia. Fusion mit SpaceX und Morningstar-Fair-Value von 475 $ sind Thema.",
+      "reason": "UBS hebt das Kursziel auf 430 $, der neue Roadster glänzt auf der LA Auto Show. Kritiker verweisen auf Robotaxi-Unfälle; vorbörslich leicht im Minus.",
       "sources": [
         {
-          "title": "@RandyWKirk1 auf X (24.11., 14:59)",
-          "url": "https://x.com/RandyWKirk1/status/2125227861095391571"
+          "title": "@Ramos_Btc auf X (24.11., 15:30)",
+          "url": "https://x.com/Ramos_Btc/status/2125235632008024119"
         },
         {
-          "title": "@GetRichStayRich auf X (24.11., 14:50)",
-          "url": "https://x.com/GetRichStayRich/status/2125225631805735147"
+          "title": "@teslainvest_01 auf X (24.11., 15:10)",
+          "url": "https://x.com/teslainvest_01/status/2125230600147931252"
         },
         {
-          "title": "@ElectricNews3 auf X (24.11., 14:53)",
-          "url": "https://x.com/ElectricNews3/status/2125226340781584558"
+          "title": "@BradMunchen auf X (24.11., 15:27)",
+          "url": "https://x.com/BradMunchen/status/2125234818267087017"
         }
       ],
-      "updatedAt": "2026-11-24T15:10:00+01:00"
+      "updatedAt": "2026-11-24T15:40:00+01:00"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/RCapitalX/status/2125209778742030633"
         }
       ],
-      "updatedAt": "2026-11-24T15:10:00+01:00"
+      "updatedAt": "2026-11-24T15:40:00+01:00"
     }
   }
 }
