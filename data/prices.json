@@ -5029,15 +5029,19 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Di 07:50: SPCX schloss Mo an der Nasdaq bei 133,35 $, +4,35 % zum Freitag (127,79 $), nachdem die Aktie am Vormittag bis 141,86 $ gestiegen war (Yahoo). Treiber war die Rekord-Erholung der Tech-Werte nach Jensen Huangs Rückkehr zu Nvidia: Nasdaq +6,51 %, Nvidia +31,48 % (AP); dazu startete Jefferies mit „Buy“ und Ziel 210 $ (CNBC). Über Nacht berichtet die Financial Times, dass Sonderausschüsse beider Firmen mit Morgan Stanley und Goldman Sachs (für SpaceX) und Evercore (für Tesla) an einem reinen Aktientausch rechnen, möglicherweise mit Ziel Jahresende; nah an einer Einigung seien sie noch nicht (Reuters). Gegenwind: Großbritanniens Verteidigungsminister verlangt Aufklärung über Starshield-Ausfälle in der Ukraine (Kyiv Post).",
+      "why": "Stand Di 12:25: SPCX liegt in Stuttgart bei 121,26 €, 1,0 % unter dem Vortag (Kursdaten der App, 10:32 Uhr); Tech-Werte geben nach der Rekord-Erholung vom Montag nach, der Nasdaq-100-Future liegt gut 1 % im Minus (Reuters). Am Montag schloss SPCX bei 133,35 $, +4,35 % (Yahoo), getragen von Huangs Rückkehr zu Nvidia und der Erstbewertung „Buy“ mit Ziel 210 $ durch Jefferies (CNBC). Über Nacht berichtete die Financial Times, dass Sonderausschüsse beider Firmen an einem reinen Aktientausch mit Tesla arbeiten, möglicherweise mit Ziel Jahresende, aber noch nicht nah an einer Einigung (Reuters). Gegenwind: Großbritanniens Verteidigungsminister verlangt Aufklärung über Starshield-Ausfälle in der Ukraine (Kyiv Post). Heute 17:08 Uhr Falcon-9-Start USSF-266, Status „Go“ (Launch Library 2).",
       "whySources": [
+        {
+          "title": "Justy GT-R Kursdaten (prices.json, Stand 24.11., 10:32 Uhr)",
+          "url": "https://github.com/Justy-gtr/Justy-gtr-app/blob/main/data/prices.json"
+        },
+        {
+          "title": "Reuters via StreetInsider: Wall-Street-Futures geben nach, Chipwerte kühlen ab (24.11., 11:52 Uhr)",
+          "url": "https://www.streetinsider.com/Reuters/Wall+St+futures+dip+as+chip+stocks+cool+after+Nvidia-fueled+rally/27390048.html"
+        },
         {
           "title": "Yahoo Finance: SPCX historische Kurse (Schluss Mo 23.11.)",
           "url": "https://finance.yahoo.com/quote/SPCX/history/"
-        },
-        {
-          "title": "AP: So schlossen die US-Indizes am Mo 23.11. (Nasdaq +6,51 %)",
-          "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-fcdf1bad36b4f81c90cbb0f33a2c5704"
         },
         {
           "title": "CNBC: Jefferies startet SpaceX mit „Buy“ und Ziel 210 $ (23.11.)",
@@ -5048,16 +5052,12 @@
           "url": "https://www.streetinsider.com/Reuters/SpaceX%2C+Tesla+appoint+five+directors+to+guide+merger+talks%2C+FT+reports/27389669.html"
         },
         {
-          "title": "Investing.com: Direktoren von SpaceX und Tesla verhandeln mögliche 3,5-Billionen-Fusion, laut FT (24.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/spacex-tesla-directors-negotiate-potential-35-trillion-merger-ft-reports-5047091"
-        },
-        {
           "title": "Kyiv Post: Großbritannien fordert von SpaceX Aufklärung zu Starshield-Ausfällen in der Ukraine (24.11.)",
           "url": "https://www.kyivpost.com/post/90987"
         },
         {
-          "title": "Yahoo Finance: SPCX 23.11., 20:22 Uhr",
-          "url": "https://finance.yahoo.com/quote/SPCX/"
+          "title": "Launch Library 2: anstehende Starts (Stand 24.11., 12:25 Uhr)",
+          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?mode=list"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -17514,23 +17514,19 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Di 07:50: Tesla schloss Mo bei 385,46 $, +11,46 % zum Freitag (345,82 $) (Yahoo), laut Dow Jones das größte Tagesplus seit April 2025 (Morningstar). Gründe waren die Tech-Erholung nach Huangs Rückkehr zu Nvidia (Nasdaq +6,51 %, AP) und das Fahrassistenz-Update FSD v15 (MarketWatch). Über Nacht neu: Laut Financial Times verhandeln Sonderausschüsse über einen Aktientausch mit SpaceX, für Tesla Robyn Denholm, Kathleen Wilson-Thompson und Jack Hartung mit Evercore als Berater; Tesla bräuchte dafür eine außerordentliche Hauptversammlung (Reuters, Investing.com). Außerdem meldet der Herstellerverband ACEA für Oktober 12.116 Tesla-Neuzulassungen in EU, EFTA und Großbritannien, +76,6 % zum Vorjahr (ACEA).",
+      "why": "Stand Di 12:25: Tesla notiert auf Xetra bei 347,15 €, 3,07 % unter dem Montagsschluss (358,15 €) (Traderfox, 11:49 Uhr). Nach dem Tagesplus von 11,46 % am Montag (Schluss 385,46 $, Yahoo) geben Tech-Werte vorbörslich nach, der Nasdaq-100-Future liegt gut 1 % im Minus (Reuters). Über Nacht berichtete die Financial Times, dass Sonderausschüsse mit Morgan Stanley und Goldman Sachs (für SpaceX) sowie Evercore (für Tesla) an einem reinen Aktientausch arbeiten, möglicherweise mit Ziel Jahresende; nah an einer Einigung seien sie noch nicht, und Tesla bräuchte eine außerordentliche Hauptversammlung (Reuters, Investing.com). ACEA meldete für Oktober 12.116 Tesla-Neuzulassungen in EU, EFTA und Großbritannien, +76,6 % (ACEA).",
       "whySources": [
+        {
+          "title": "Traderfox (dpa-AFX): Tesla-Kurs Xetra 24.11., 11:49 Uhr",
+          "url": "https://mobiledpa.traderfox.com/charttool/id-4830340/"
+        },
+        {
+          "title": "Reuters via StreetInsider: Wall-Street-Futures geben nach, Chipwerte kühlen ab (24.11., 11:52 Uhr)",
+          "url": "https://www.streetinsider.com/Reuters/Wall+St+futures+dip+as+chip+stocks+cool+after+Nvidia-fueled+rally/27390048.html"
+        },
         {
           "title": "Yahoo Finance: TSLA historische Kurse (Schluss Mo 23.11.)",
           "url": "https://finance.yahoo.com/quote/TSLA/history/"
-        },
-        {
-          "title": "Morningstar (Dow Jones): Tesla auf Kurs zum größten Tagesplus seit April 2025 (23.11.)",
-          "url": "https://www.morningstar.com/news/dow-jones/202611235900/tesla-up-nearly-13-on-pace-for-largest-percent-increase-since-april-2025-data-talk"
-        },
-        {
-          "title": "MarketWatch: Tesla steigt mit FSD v15 und der Marktrally (23.11.)",
-          "url": "https://www.marketwatch.com/story/tesla-shares-gain-on-new-self-driving-software-amid-broader-market-rally-7abf1176"
-        },
-        {
-          "title": "AP: So schlossen die US-Indizes am Mo 23.11. (Nasdaq +6,51 %)",
-          "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-fcdf1bad36b4f81c90cbb0f33a2c5704"
         },
         {
           "title": "Reuters via StreetInsider: SpaceX und Tesla setzen fünf Direktoren für Fusionsgespräche ein, laut FT (24.11., 06:19 Uhr)",
@@ -28685,35 +28681,31 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Di 07:50: Rocket Lab schloss Mo bei 49,63 $, +9,27 % zum Freitag (45,42 $) (Yahoo). Treiber waren die Aussage von Finanzchef Spice, die Electron-Preise in sechs bis neun Monaten deutlich anzuheben, weil SpaceX kaum noch Mitflug-Plätze vergibt (Stocktwits, 24/7 Wall St.), und die Tech-Erholung nach Huangs Rückkehr zu Nvidia (Nasdaq +6,51 %, AP). Über Nacht gingen bei der SEC fünf Form-144-Meldungen über geplante Verkäufe von Rocket-Lab-Managern ein; die geprüfte betrifft 626 Aktien (rund 31.500 $) aus einer Aktienzuteilung vom 22.11. – üblicher Verkauf nach Vergütung, kein Signal. Nächster Electron-Start Fr 27.11. 01:05 Uhr, Status „Go“ (Launch Library 2).",
+      "why": "Stand Di 12:25: Rocket Lab liegt in Stuttgart bei 44,45 €, 1,98 % unter dem Vortag (Kursdaten der App, 10:32 Uhr) – Teil der Gewinnmitnahmen bei Tech-Werten nach der Montags-Rally, der Nasdaq-100-Future liegt gut 1 % im Minus (Reuters). Am Montag hatte RKLB 9,27 % auf 49,63 $ gewonnen, getragen von der Aussage von Finanzchef Spice, die Electron-Preise in sechs bis neun Monaten deutlich anzuheben, weil SpaceX kaum noch Mitflug-Plätze vergibt (24/7 Wall St.). Die fünf neuen Form-144-Meldungen über Verkäufe von Managern sind kleine Routineverkäufe nach Aktienzuteilungen (SEC). Nächster Electron-Start Fr 27.11. 01:05 Uhr, Status „Go“ (Launch Library 2).",
       "whySources": [
+        {
+          "title": "Justy GT-R Kursdaten (prices.json, Stand 24.11., 10:32 Uhr)",
+          "url": "https://github.com/Justy-gtr/Justy-gtr-app/blob/main/data/prices.json"
+        },
+        {
+          "title": "Reuters via StreetInsider: Wall-Street-Futures geben nach, Chipwerte kühlen ab (24.11., 11:52 Uhr)",
+          "url": "https://www.streetinsider.com/Reuters/Wall+St+futures+dip+as+chip+stocks+cool+after+Nvidia-fueled+rally/27390048.html"
+        },
         {
           "title": "Yahoo Finance: RKLB historische Kurse (Schluss Mo 23.11.)",
           "url": "https://finance.yahoo.com/quote/RKLB/history/"
-        },
-        {
-          "title": "Yahoo Finance (Stocktwits): Rocket-Lab-Finanzchef erwartet deutlich höhere Electron-Preise (23.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/rklb-stock-worst-week-ever-075716928.html"
         },
         {
           "title": "24/7 Wall St.: Rocket Lab erholt sich nach schlechtester Woche, Finanzchef erwartet höhere Electron-Preise (23.11.)",
           "url": "https://247wallst.com/investing/2026/11/23/rocket-lab-rallies-11-after-its-worst-week-ever-as-cfo-eyes-higher-electron-prices-ast-spacemobile-jumps-14-spacex-surges-9/"
         },
         {
-          "title": "AP: So schlossen die US-Indizes am Mo 23.11. (Nasdaq +6,51 %)",
-          "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-fcdf1bad36b4f81c90cbb0f33a2c5704"
-        },
-        {
           "title": "SEC: Rocket Lab, Form 144 vom 23.11.2026 (Agostino Ricupati)",
           "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000152/primary_doc.xml"
         },
         {
-          "title": "SEC EDGAR: Rocket-Lab-Einreichungen",
-          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001819994&type=144&owner=include&count=10"
-        },
-        {
-          "title": "Launch Library 2: anstehende Starts (Stand 24.11., 07:45 Uhr)",
-          "url": "https://ll.thespacedevs.com/2.2.0/launch/upcoming/?mode=list"
+          "title": "Launch Library 2: anstehende Starts (Stand 24.11., 12:25 Uhr)",
+          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?mode=list"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -39997,31 +39989,19 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Mo 20:22: Marvell steht bei 143,69 $, 17,5 % über dem Freitagsschluss (122,28 $), Nvidia bei 165,05 $ (+31,5 %) (Yahoo). Auslöser ist die Rückkehr von Jensen Huang als Nvidia-Chef; Micron, Intel und Sandisk steigen ebenfalls zweistellig (dpa-AFX, Investopedia). S&P 500 und Nasdaq steuern auf den besten Tag seit April 2025 zu (CNBC). BTIG hält eine Gegenbewegung bis 7.250–7.350 Punkte im S&P 500 für möglich, danach eher wieder fallende Kurse (CNBC). Marvell-Zahlen am Di 1.12.",
+      "why": "Stand Di 12:25: Marvell liegt in Stuttgart bei 126,92 €, 3,85 % unter dem Vortag (Kursdaten der App, 10:32 Uhr). Nach der Rekord-Erholung vom Montag (Marvell +17,5 %, Nvidia +31,5 % nach Huangs Rückkehr) nehmen Anleger Gewinne mit: Nvidia vorbörslich zeitweise −5,4 %, Micron, AMD und Marvell zwischen −3,3 % und −4,3 %, der Nasdaq-100-Future gut 1 % tiefer (Reuters, CNBC). Belastend kommen die Zinssorgen dazu: Eine Fed-Zinserhöhung im Dezember ist voll eingepreist, am Mittwoch folgen die PCE-Preisdaten (Reuters). Hewlett Packard Enterprise fiel nach Quartalszahlen vorbörslich um 11,1 % (Reuters). Marvell-Zahlen am Di 1.12.",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL 23.11., 20:22 Uhr",
-          "url": "https://finance.yahoo.com/quote/MRVL/"
+          "title": "Justy GT-R Kursdaten (prices.json, Stand 24.11., 10:32 Uhr)",
+          "url": "https://github.com/Justy-gtr/Justy-gtr-app/blob/main/data/prices.json"
         },
         {
-          "title": "Yahoo Finance: NVDA 23.11., 20:22 Uhr",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Reuters via StreetInsider: Wall-Street-Futures geben nach, Chipwerte kühlen ab (24.11., 11:52 Uhr)",
+          "url": "https://www.streetinsider.com/Reuters/Wall+St+futures+dip+as+chip+stocks+cool+after+Nvidia-fueled+rally/27390048.html"
         },
         {
-          "title": "Nvidia: Verwaltungsrat setzt Jensen Huang wieder als Chef ein (23.11.)",
-          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
-        },
-        {
-          "title": "finanznachrichten.de (dpa-AFX): Huangs Rückkehr als Nvidia-Chef sorgt für starke Börsenerholung (23.11., 20:01 Uhr)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70207944-aktien-new-york-huangs-rueckkehr-als-nvidia-chef-sorgt-fuer-starke-boersenerholung-016.htm"
-        },
-        {
-          "title": "Investopedia: Nvidia +30 %, Micron und Marvell je +18 % (23.11.)",
-          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11232026-12274147"
-        },
-        {
-          "title": "CNBC: Nasdaq +6,7 %, S&P 500 +5 % nach Huangs Rückkehr; Trump: „überzeugt“ (23.11., 20:15 Uhr)",
-          "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
+          "title": "CNBC: Nvidia vorbörslich über 5 % im Minus nach Huang-Rally (24.11.)",
+          "url": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",
