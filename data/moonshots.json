@@ -1,115 +1,103 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-24T07:45:00+01:00",
-  "nextRun": "2026-11-24T14:00:00+01:00",
+  "updatedAt": "2026-11-24T14:35:00+01:00",
+  "nextRun": "2026-11-25T07:00:00+01:00",
   "long": [
     {
-      "name": "Alta Equipment Group",
-      "ticker": "ALTG",
+      "name": "Fluence Energy",
+      "ticker": "FLNC",
       "country": "US",
-      "exchange": "NYSE",
-      "priceEur": 4.89,
-      "hint": "Übernahme von Jackson Group Peterbilt plus Viking-Geld, nachbörslich rund +16 %",
+      "exchange": "Nasdaq",
+      "priceEur": 4.11,
+      "hint": "Rekord-Auftragseingang von 3,5 Mrd. $, vorbörslich rund +19 %",
       "bullets": [
-        "Alta übernimmt die Lkw-Händlergruppe Jackson Group Peterbilt für 272,5 Mio. $ plus Anpassungen.",
-        "Viking Global steckt 338,4 Mio. $ in neue Vorzugsaktien, umgerechnet 6,33 $ je Aktie.",
-        "Nachbörslich zuletzt 5,34 $ nach 4,61 $ Schluss; der Deal braucht noch die Zustimmung der Aktionäre."
+        "Fluence meldete für das vierte Quartal Aufträge von 3,5 Mrd. $, so viel wie nie.",
+        "Der Auftragsbestand stieg auf etwa 8,9 Mrd. $ nach 5,3 Mrd. $ vor einem Jahr.",
+        "Der Quartalsumsatz fiel dagegen auf 0,7 Mrd. $ nach 1,0 Mrd. $."
       ],
       "sources": [
         {
-          "title": "Alta Equipment: Pressemitteilung zur Übernahme von Jackson Group Peterbilt (23.11.)",
-          "url": "https://investors.altg.com/news/news-details/2026/Alta-Equipment-Group-Agrees-to-Acquire-Jackson-Group-Peterbilt-in-Proposed-Transformative-Deal/default.aspx"
+          "title": "Stock Titan: Börse live am 24.11.2026 – größte Bewegungen vor US-Start",
+          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
         },
         {
-          "title": "Yahoo Finance: ALTG",
-          "url": "https://finance.yahoo.com/quote/ALTG/"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD 1,0912 (Di 24.11., 07:12)",
-          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
+          "title": "Yahoo Finance: FLNC vorbörslich (24.11., 14:21 Uhr)",
+          "url": "https://finance.yahoo.com/quote/FLNC/"
         }
       ]
     },
     {
-      "name": "Murata Manufacturing",
-      "ticker": "6981",
-      "country": "JP",
-      "exchange": "Tokio",
-      "priceEur": 31.09,
-      "hint": "Stop-High in Tokio, umgerechnet knapp 10 % über dem Frankfurter Schluss",
+      "name": "Dick's Sporting Goods",
+      "ticker": "DKS",
+      "country": "US",
+      "exchange": "NYSE",
+      "priceEur": 140.92,
+      "hint": "Zahlen klar über den Erwartungen und höherer Jahresausblick, vorbörslich rund +16 %",
       "bullets": [
-        "Murata hing in Tokio den ganzen Tag am Tageslimit von 5.400 ¥, das sind +14,9 %.",
-        "Auslöser ist Jensen Huangs Rückkehr an die Nvidia-Spitze, Chip- und Bauteilwerte in Asien sprangen mit.",
-        "In Frankfurt schloss Murata Montag bei 28,33 €; umgerechnet liegt Tokio rund 9,7 % darüber."
+        "Der bereinigte Gewinn je Aktie lag bei 1,94 $, erwartet waren 1,40 $.",
+        "Dick's hob den Jahresausblick auf 11,40 bis 12,25 $ je Aktie an.",
+        "Eine Lücke dieser Größe kann im Regulärhandel weiterlaufen oder sich schließen."
       ],
       "sources": [
         {
-          "title": "Zawakabu: Murata an der Stop-High, Ibiden ohne Eröffnungskurs (24.11.)",
-          "url": "https://zawakabu.com/s/20261124-semis-surge-murata-ibiden-limit-up/"
+          "title": "CNBC: Größte Kursbewegungen am Dienstag (24.11.)",
+          "url": "https://www.cnbc.com/2026/11/24/stocks-moving-the-most-today-live-updates.html"
         },
         {
-          "title": "Yahoo Finance: 6981.T",
-          "url": "https://finance.yahoo.com/quote/6981.T/"
+          "title": "Stock Titan: Börse live am 24.11.2026 – größte Bewegungen vor US-Start",
+          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
         },
         {
-          "title": "Yahoo Finance: EURJPY 173,66 (Di 24.11., 07:13)",
-          "url": "https://finance.yahoo.com/quote/EURJPY%3DX/"
+          "title": "Yahoo Finance: DKS vorbörslich (24.11., 14:21 Uhr)",
+          "url": "https://finance.yahoo.com/quote/DKS/"
         }
       ]
     },
     {
-      "name": "Agilent Technologies",
-      "ticker": "A",
+      "name": "Abercrombie & Fitch",
+      "ticker": "ANF",
       "country": "US",
       "exchange": "NYSE",
-      "priceEur": 172.29,
-      "hint": "Zahlen und Ausblick über den Erwartungen, nachbörslich rund +7 %",
+      "priceEur": 141.37,
+      "hint": "Rekordumsatz im dritten Quartal und höhere Prognose, vorbörslich rund +10 %",
       "bullets": [
-        "Agilent verdiente bereinigt 1,86 $ je Aktie, erwartet waren 1,73 $.",
-        "Der Ausblick für 2027 mit 8,00 bis 8,15 Mrd. $ Umsatz liegt über dem Konsens.",
-        "Nachbörslich zuletzt 188,00 $ nach 176,04 $; für 10 % braucht es zum Start noch etwas mehr."
+        "Der Umsatz im dritten Quartal stieg um 11 % auf den Rekord von 1,4 Mrd. $.",
+        "Abercrombie hob die Jahresprognose auf 13,70 bis 13,90 $ Gewinn je Aktie an.",
+        "Vorbörslich liegt die Aktie genau an der 10-%-Schwelle."
       ],
       "sources": [
         {
-          "title": "Investing.com: Agilent schlägt Erwartungen, starker Ausblick (23.11.)",
-          "url": "https://www.investing.com/news/earnings/agilent-beats-estimates-surges-on-strong-guidance-5046437"
+          "title": "Stock Titan: Börse live am 24.11.2026 – größte Bewegungen vor US-Start",
+          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
         },
         {
-          "title": "Yahoo Finance: A",
-          "url": "https://finance.yahoo.com/quote/A/"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD 1,0912 (Di 24.11., 07:12)",
-          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
+          "title": "Yahoo Finance: ANF vorbörslich (24.11., 14:21 Uhr)",
+          "url": "https://finance.yahoo.com/quote/ANF/"
         }
       ]
     }
   ],
   "short": [
     {
-      "name": "Brand Engagement Network",
-      "ticker": "BNAI",
+      "name": "Shoe Station Group",
+      "ticker": "SHOE",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 6.07,
-      "hint": "Nach +118 % am Montag nachbörslich schon rund −10 %",
+      "priceEur": 10.49,
+      "hint": "Umsatz gesunken und Prognose gesenkt, vorbörslich rund −19 %",
       "bullets": [
-        "Die Aktie verdoppelte sich Montag auf 7,32 $, fünf Handelspausen wegen starker Schwankung.",
-        "Die Quartalszahlen erklären den Sprung kaum, das Unternehmen nennt selbst Zweifel am Fortbestand.",
-        "Nachbörslich zuletzt 6,62 $, rund 10 % unter dem Schluss; der Streubesitz ist nur etwa 6,2 Mio. Aktien."
+        "Der Quartalsumsatz fiel auf 280,0 Mio. $ nach 297,2 Mio. $ im Vorjahr.",
+        "Shoe Station senkte die Jahresprognose für Umsatz und bereinigten Gewinn.",
+        "Vorbörslich lag die Aktie zeitweise mehr als 20 % im Minus."
       ],
       "sources": [
         {
-          "title": "Wall Street Navigator: BNAI verdoppelt sich nach Q3-Zahlen (23.11.)",
-          "url": "https://wallstreetnavigator.com/news/bnai-stock-more-than-doubles-to-7-32-after-q3-report-and-five-volatility-halts"
+          "title": "Stock Titan: Börse live am 24.11.2026 – größte Bewegungen vor US-Start",
+          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
         },
         {
-          "title": "Yahoo Finance: BNAI",
-          "url": "https://finance.yahoo.com/quote/BNAI/"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD 1,0912 (Di 24.11., 07:12)",
-          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
+          "title": "Yahoo Finance: SHOE vorbörslich (24.11., 14:21 Uhr)",
+          "url": "https://finance.yahoo.com/quote/SHOE/"
         }
       ]
     },
@@ -118,52 +106,52 @@
       "ticker": "HPE",
       "country": "US",
       "exchange": "NYSE",
-      "priceEur": 40.96,
-      "hint": "Starke Zahlen, aber Gewinnmitnahmen nach +13 % am Montag, nachbörslich rund −7 %",
+      "priceEur": 38.4,
+      "hint": "Warnung vor niedrigeren Margen im KI-Geschäft, vorbörslich rund −12 %",
       "bullets": [
-        "HPE schlug die Erwartungen und hob den Ausblick für 2027 auf 59,4 bis 63,1 Mrd. $ Umsatz.",
-        "Trotzdem drücken Sorgen um die Marge im KI-Servergeschäft und knappe Bauteile auf den Kurs.",
-        "Nachbörslich zuletzt 44,70 $ nach 48,02 $ Schluss, das sind rund −6,9 %."
+        "HPE übertraf die Erwartungen im vierten Quartal und hob den Ausblick an.",
+        "Anleger konzentrieren sich auf die Warnung vor niedrigeren Margen bei Cloud & AI.",
+        "Am Montag war die Aktie noch rund 13 % gestiegen, der Rückschlag trifft auf viel Gewinn."
       ],
       "sources": [
         {
-          "title": "CNBC: HPE fällt nachbörslich trotz besserem Ausblick (23.11.)",
-          "url": "https://www.cnbc.com/2026/11/23/stocks-moving-the-most-today-live-updates.html"
+          "title": "Investing.com: Vorbörsliche Bewegungen – HPE und Semtech fallen (24.11.)",
+          "url": "https://ng.investing.com/news/stock-market-news/premarket-movers-nvidia-slips-hpe-semtech-fall-2826435"
         },
         {
-          "title": "Yahoo Finance: HPE",
+          "title": "Stock Titan: Börse live am 24.11.2026 – größte Bewegungen vor US-Start",
+          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
+        },
+        {
+          "title": "Yahoo Finance: HPE vorbörslich (24.11., 14:21 Uhr)",
           "url": "https://finance.yahoo.com/quote/HPE/"
-        },
-        {
-          "title": "Yahoo Finance: EURUSD 1,0912 (Di 24.11., 07:12)",
-          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
     },
     {
-      "name": "Semtech",
-      "ticker": "SMTC",
+      "name": "Analog Devices",
+      "ticker": "ADI",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 91.03,
-      "hint": "Zahlen über den Erwartungen, trotzdem nachbörslich zeitweise −8 %",
+      "priceEur": 310.96,
+      "hint": "Rekordzahlen, aber schwacher Ausblick, vorbörslich rund −10 %",
       "bullets": [
-        "Semtech meldete 423 Mio. $ Umsatz und 1,17 $ Gewinn je Aktie, beides über den Erwartungen.",
-        "Nach der langen Kursrally fiel die Aktie nachbörslich zeitweise um gut 8 %.",
-        "Zuletzt 99,33 $ nach 104,13 $ Schluss, also rund −4,6 %; für −7,5 % müsste es weiter abwärts gehen."
+        "Der Umsatz im vierten Quartal stieg um 42 % auf den Rekord von 4,37 Mrd. $.",
+        "Der Ausblick von 3,82 $ Gewinn je Aktie liegt unter den erwarteten rund 3,89 $.",
+        "Am Montag war die Aktie schon über 10 % gestiegen, die Erwartungen lagen hoch."
       ],
       "sources": [
         {
-          "title": "Investing.com: Nachbörsliche Bewegungen HPE, SMTC, ZM, A (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/afterhours-movers-hpe-smtc-zm-a-432SI-5046515"
+          "title": "Investing.com: Warum Analog Devices heute fällt (24.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-analog-devices-stock-tumbling-today-93CH-5047890"
         },
         {
-          "title": "Yahoo Finance: SMTC",
-          "url": "https://finance.yahoo.com/quote/SMTC/"
+          "title": "Analog Devices: Rekordzahlen 4. Quartal und Ausblick (24.11.)",
+          "url": "https://investor.analog.com/news-releases/news-release-details/analog-devices-reports-record-fourth-quarter-and-fiscal-2026"
         },
         {
-          "title": "Yahoo Finance: EURUSD 1,0912 (Di 24.11., 07:12)",
-          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
+          "title": "Yahoo Finance: ADI vorbörslich (24.11., 14:21 Uhr)",
+          "url": "https://finance.yahoo.com/quote/ADI/"
         }
       ]
     }
@@ -1214,23 +1202,23 @@
     ]
   },
   "rocketLabNews": {
-    "text": "Keine neue Pressemitteilung (letzte 14.11., 100. Electron), aber RKLB steht vorbörslich 8,2 % höher bei 49,16 $, weil Finanzchef Spice deutlich höhere Electron-Preise erwartet, und der nächste Electron-Start „Night Owls Never Sleep“ steht für Fr 27.11. 01:05 auf „Go“.",
-    "updatedAt": "2026-11-23T14:35:00+01:00",
+    "text": "Mizuho startet die Abdeckung von Rocket Lab mit „Underperform“ und Kursziel 40 $, RKLB liegt vorbörslich 3,8 % tiefer bei 47,76 $; eine neue Pressemitteilung fanden wir nicht, und der Electron-Start „Night Owls Never Sleep“ steht weiter für Fr 27.11. 01:05 Uhr auf „Go“.",
+    "updatedAt": "2026-11-24T14:35:00+01:00",
     "sources": [
       {
-        "title": "Rocket Lab: Pressemitteilungen (letzte 14.11., 100. Electron)",
-        "url": "https://investors.rocketlabcorp.com/news"
+        "title": "Benzinga: Mizuho startet Rocket Lab mit „Underperform“, Kursziel 40 $ (24.11.)",
+        "url": "https://www.benzinga.com/quote/RKLB/price-targets"
       },
       {
-        "title": "Yahoo Finance: RKLB vorbörslich 49,16 $ (23.11., 14:30 Uhr, Fr 45,42 $)",
+        "title": "Yahoo Finance: RKLB vorbörslich (24.11., 14:21 Uhr)",
         "url": "https://finance.yahoo.com/quote/RKLB/"
       },
       {
-        "title": "Yahoo Finance (Stocktwits): Rocket-Lab-Finanzchef erwartet deutlich höhere Electron-Preise (23.11.)",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/rklb-stock-worst-week-ever-075716928.html"
+        "title": "Rocket Lab: Pressemitteilungen",
+        "url": "https://investors.rocketlabcorp.com/news"
       },
       {
-        "title": "Launch Library 2: Startliste (Stand Mo 23.11., 14:20)",
+        "title": "Launch Library 2: Startliste (Stand Di 24.11., 14:20)",
         "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
       }
     ]
