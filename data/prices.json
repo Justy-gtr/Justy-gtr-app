@@ -5458,27 +5458,23 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Di 16:20: SPCX fällt an der Nasdaq auf 126,93 $, 4,8 % unter dem Montagsschluss von 133,35 $ (Yahoo). Haupttreiber ist der breite Abverkauf bei KI- und Chipwerten nach der Rekord-Rally vom Montag: Nasdaq rund −1,8 %, Nvidia gut −5 % bis −7 %, eine Fed-Zinserhöhung im Dezember ist zu etwa 95 % eingepreist (Yahoo Finance). Dazu kommt ein WSJ-Bericht, dass die USA schon diese Woche neue Zölle auf China, die EU und weitere Länder verkünden könnten (FXStreet). Das starke US-Verbrauchervertrauen (103,3 statt erwartet 92,2) half nicht (Conference Board). Heute 17:08 Uhr Falcon-9-Start USSF-266, Status „Go“ (Launch Library 2).",
+      "why": "Stand Di 18:20: SPCX liegt an der Nasdaq bei 125,53 $, 5,9 % unter dem Montagsschluss von 133,35 $ (Yahoo). Treiber ist der Rückschlag bei KI- und Chipwerten nach der Rekord-Rally vom Montag: Nasdaq rund −1,6 %, Nvidia rund −8 %, AMD und Micron rund −10 % (Yahoo Finance). Raumfahrtwerte geben die Montagsgewinne breit ab, Rocket Lab und AST SpaceMobile fallen noch stärker (24/7 Wall St.). Zusätzlich drücken der WSJ-Bericht über neue US-Zölle und eine zu 95 % eingepreiste Fed-Zinserhöhung im Dezember (Reuters). Die FT-Berichte über die Tesla-Fusionsgespräche stützen nicht. Der Falcon-9-Start USSF-266 um 17:08 lief planmäßig, ist aber kein Kurstreiber.",
       "whySources": [
         {
-          "title": "Yahoo Finance SPCX",
+          "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "Yahoo Finance Live: Dow, S&P 500, Nasdaq fallen, Chipwerte brechen ein (24.11.)",
+          "title": "Yahoo Finance: Börse am 24.11. – Chipwerte fallen",
           "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
         },
         {
-          "title": "FXStreet: WSJ – USA bereiten neue Zölle auf China, EU und weitere Länder vor (24.11.)",
-          "url": "https://www.fxstreet.com/news/us-prepares-new-tariffs-on-china-and-other-trading-partners-wsj-202611241338"
+          "title": "24/7 Wall St.: Raumfahrtwerte geben Montags-Rally ab (24.11.)",
+          "url": "https://247wallst.com/investing/2026/11/24/ast-spacemobile-plunges-11-rocket-lab-tumbles-9-as-space-stocks-retrace-mondays-rally-spacex-falls-6-amid-reported-tesla-merger-talks/"
         },
         {
-          "title": "Conference Board via PR Newswire: Verbrauchervertrauen November 103,3",
-          "url": "https://www.prnewswire.com/news-releases/us-consumer-confidence-surged-in-november-302949447.html"
-        },
-        {
-          "title": "Launch Library 2: USSF-266",
-          "url": "https://ll.thespacedevs.com/2.3.0/launches/460d9db7-eaf6-4cd9-b095-cff433534c09/"
+          "title": "Reuters via Investing.com: Nasdaq und S&P 500 geben nach (24.11.)",
+          "url": "https://www.investing.com/news/economy-news/wall-st-futures-dip-as-chip-stocks-cool-after-nvidiafueled-rally-5047567"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -18748,27 +18744,23 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Di 16:20: Tesla liegt an der Nasdaq bei 381,30 $, 1,1 % unter dem Montagsschluss von 385,46 $ (Yahoo) und hält sich damit deutlich besser als Chipwerte, die nach der Montags-Rally abverkauft werden (Nasdaq rund −1,8 %, Yahoo Finance). Stützend wirken die FT-Berichte über die Fusionsgespräche mit SpaceX – fünf Direktoren verhandeln, Einigung noch nicht nah (Investing.com/Reuters) – und das stärkste US-Verbrauchervertrauen seit Januar 2025 (103,3 Punkte, Conference Board). Belastend: Laut WSJ könnten diese Woche neue US-Zölle auf China und die EU kommen, Autos sollen aber ausgenommen sein (Anadolu).",
+      "why": "Stand Di 18:20: Tesla liegt an der Nasdaq bei 382,01 $, 0,9 % unter dem Montagsschluss von 385,46 $ (Yahoo) und hält sich damit deutlich besser als Chipwerte (Nasdaq rund −1,6 %, Yahoo Finance). UBS hob das Kursziel von 425 auf 430 $ an, bleibt aber bei „Neutral“; das Robotaxi-Geschäft in den USA könne 22 $ je Aktie wert sein (dpa-AFX). Weltweit ruft Tesla rund 370.000 Model 3, S, X und Y per Software-Update zurück, weil die Rückfahrkamera ausfallen kann (autohaus.de). Die FT-Berichte über die Fusionsgespräche mit SpaceX bleiben Thema (Investing.com).",
       "whySources": [
         {
-          "title": "Yahoo Finance TSLA",
+          "title": "Yahoo Finance: TSLA",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "Yahoo Finance Live: Dow, S&P 500, Nasdaq fallen, Chipwerte brechen ein (24.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
+          "title": "t-online/dpa-AFX: UBS hebt Ziel für Tesla auf 430 Dollar (24.11.)",
+          "url": "https://www.t-online.de/finanzen/boerse/boerse-analysen/us88160r1014/ubs-hebt-ziel-fuer-tesla-auf-430-dollar-neutral-/20261124590473/"
         },
         {
-          "title": "Investing.com/Reuters: SpaceX und Tesla setzen fünf Direktoren für Fusionsgespräche ein (FT, 24.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/spacex-and-tesla-entrusts-five-directors-for-merger-talks-ft-reports-5047055"
+          "title": "autohaus.de: Tesla-Rückruf Rückfahrkamera (24.11.)",
+          "url": "https://www.autohaus.de/nachrichten/autohandel/tesla-rueckruf-kurzschluss-kann-rueckfahrkamera-lahmlegen-3940693"
         },
         {
-          "title": "Conference Board via PR Newswire: Verbrauchervertrauen November 103,3",
-          "url": "https://www.prnewswire.com/news-releases/us-consumer-confidence-surged-in-november-302949447.html"
-        },
-        {
-          "title": "Anadolu: USA planen höhere Zölle wegen Industriesubventionen (24.11.)",
-          "url": "https://www.aa.com.tr/en/americas/us-prepares-higher-tariffs-on-china-dozens-of-nations-for-industrial-subsidies-report/4136043"
+          "title": "Investing.com: SpaceX und Tesla verhandeln laut FT über Fusion (24.11.)",
+          "url": "https://de.investing.com/news/stock-market-news/spacex-und-tesla-verhandeln-laut-ft-uber-megafusion-im-wert-von-35-billionen-dollar-3783429"
         }
       ],
       "longTermOutlook": "Über Jahre entscheiden unbeaufsichtigtes FSD (Ziel: etwa Q2 2027), der Robotaxi-Ausbau, das Speichergeschäft und ob Optimus in Stückzahl kommt. Keine Prognose.",
@@ -29936,23 +29928,23 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Di 16:20: Rocket Lab fällt an der Nasdaq auf 45,55 $, 8,2 % unter dem Montagsschluss von 49,63 $ (Yahoo). Zwei Treiber: die Erstbewertung durch Mizuho mit „Underperform“ und Kursziel 40 $ (Benzinga) und der breite Abverkauf bei Tech- und KI-Werten nach der Montags-Rally – Nasdaq rund −1,8 %, Nvidia gut −5 % (Yahoo Finance). Am Montag hatte RKLB 9,27 % gewonnen. Nächster Electron-Start Fr 27.11. 01:05 Uhr, Status „Go“ (Launch Library 2).",
+      "why": "Stand Di 18:20: Rocket Lab liegt an der Nasdaq bei 45,98 $, 7,4 % unter dem Montagsschluss von 49,63 $ (Yahoo). Eigene Nachrichten gibt es nicht; Raumfahrtwerte geben die Montags-Rally breit ab, AST SpaceMobile fällt rund 11 %, SpaceX rund 6 % (24/7 Wall St.). Dazu kommen der Abverkauf bei Tech- und KI-Werten (Nasdaq rund −1,6 %, Yahoo Finance) und die Erstbewertung durch Mizuho mit „Underperform“ und Kursziel 40 $ (Benzinga).",
       "whySources": [
         {
-          "title": "Yahoo Finance RKLB",
+          "title": "Yahoo Finance: RKLB",
           "url": "https://finance.yahoo.com/quote/RKLB/"
         },
         {
-          "title": "Yahoo Finance Live: Dow, S&P 500, Nasdaq fallen, Chipwerte brechen ein (24.11.)",
+          "title": "24/7 Wall St.: Raumfahrtwerte geben Montags-Rally ab (24.11.)",
+          "url": "https://247wallst.com/investing/2026/11/24/ast-spacemobile-plunges-11-rocket-lab-tumbles-9-as-space-stocks-retrace-mondays-rally-spacex-falls-6-amid-reported-tesla-merger-talks/"
+        },
+        {
+          "title": "Yahoo Finance: Börse am 24.11. – Chipwerte fallen",
           "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
         },
         {
-          "title": "Benzinga: Mizuho startet Rocket Lab mit „Underperform“, Kursziel 40 $ (24.11.)",
+          "title": "Benzinga: RKLB Kursziele",
           "url": "https://www.benzinga.com/quote/RKLB/price-targets"
-        },
-        {
-          "title": "Launch Library 2: Startliste (Stand Di 24.11., 14:20)",
-          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
@@ -41541,27 +41533,19 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Di 16:20: Marvell fällt an der Nasdaq auf 132,23 $, 8,6 % unter dem Montagsschluss von 144,74 $ (Yahoo). Nach der Rekord-Erholung vom Montag (Marvell +17,5 %, Nvidia +31,5 %) trennen sich Anleger breit von Chipwerten: Nvidia liegt rund 7 % im Minus, AMD, Micron und Broadcom fallen ebenfalls deutlich (Yahoo Finance). Zusätzlich belasten eine Goldman-Studie, die für 2028 fallende Speicherpreise erwartet, und der Kurssturz von HPE um gut 10 % trotz besserer Zahlen (Charles Schwab), dazu der WSJ-Bericht über neue US-Zölle schon diese Woche (FXStreet). Marvell-Zahlen am Di 1.12.",
+      "why": "Stand Di 18:20: Marvell liegt an der Nasdaq bei 130,95 $, 9,5 % unter dem Montagsschluss von 144,74 $ (Yahoo). Nach der Rekord-Erholung vom Montag trennen sich Anleger breit von Chipwerten: Der Philadelphia-Halbleiterindex fiel zeitweise 5,8 %, Nvidia rund 8 %, AMD und Micron rund 10 % (Reuters, Yahoo Finance). Belastend sind auch der WSJ-Bericht über neue US-Zölle gegen China und weitere Länder sowie die fest eingepreiste Fed-Zinserhöhung im Dezember (Reuters). Nach Börsenschluss folgen Dell (22:05) und HP (22:00) als nächster KI-Test.",
       "whySources": [
         {
-          "title": "Yahoo Finance MRVL",
+          "title": "Yahoo Finance: MRVL",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "Yahoo Finance NVDA",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
+          "title": "Reuters via Investing.com: Nasdaq und S&P 500 geben nach (24.11.)",
+          "url": "https://www.investing.com/news/economy-news/wall-st-futures-dip-as-chip-stocks-cool-after-nvidiafueled-rally-5047567"
         },
         {
-          "title": "Yahoo Finance Live: Dow, S&P 500, Nasdaq fallen, Chipwerte brechen ein (24.11.)",
+          "title": "Yahoo Finance: Börse am 24.11. – Chipwerte fallen",
           "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-chip-stocks-nvidia-140629923.html"
-        },
-        {
-          "title": "Charles Schwab: Marktupdate zum US-Start (24.11.)",
-          "url": "https://www.schwab.com/learn/story/stock-market-update-open"
-        },
-        {
-          "title": "FXStreet: WSJ – USA bereiten neue Zölle auf China, EU und weitere Länder vor (24.11.)",
-          "url": "https://www.fxstreet.com/news/us-prepares-new-tariffs-on-china-and-other-trading-partners-wsj-202611241338"
         }
       ],
       "longTermOutlook": "Über Jahre zählen Chips für Rechenzentren und schnelle Verbindungen, und ob der Zusammenschluss mit Lumentum abgeschlossen wird. Keine Prognose.",
