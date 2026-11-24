@@ -1,110 +1,61 @@
 {
-  "example": false,
-  "date": "2026-11-23",
-  "title": "Morgen-Briefing",
-  "greeting": "Guten Morgen, Justy.",
-  "summary": "Montag nach der schwersten Woche seit Jahren: Am Freitag fielen Nasdaq 5,3 %, S&P 500 3,7 % und der Chipindex SOX 10,7 %, Nvidia 14 %; alle drei großen US-Indizes sind in der Korrektur (Yahoo, CNBC). Fr-Schluss: SPCX 127,79 $ (−7,7 %), TSLA 345,82 $ (−7,6 %), RKLB 45,42 $ (−10,9 %), MRVL 122,28 $ (−11,7 %). Heute früh dreht die Stimmung: Nasdaq-100-Future rund +2,7 %, S&P-Future +2,0 %, Bitcoin wieder über 61.000 $; Kospi aber −3,2 %, der Dax soll leicht höher bei rund 24.890 starten (Yahoo, dpa-AFX).",
-  "bullets": [
-    "SpaceX: Weltrekord mit zwei Falcon-Starts in 32 Stunden von Vandenberg (NROL-136 am So); laut Reuters rund 44 Mrd. $ Kredit von Apollo und Goldman für Nvidia-Chips. USSF-266 jetzt Di 16:55 (SpaceX, Noozhawk, Reuters, LL2).",
-    "Tesla: Musk kündigt FSD 15 für Dezember an; Wochenminus 11,4 %, HSBC „Hold“ mit 359 $. Fusion mit SpaceX: Kalender 40 → 30 % (Seeking Alpha, Longbridge).",
-    "Rocket Lab: sechs Verlusttage in Folge, keine eigene Meldung; nächster Electron-Start Fr 01:05 (Go). Tagesfrage aufgelöst: „nein“, Karl richtig.",
-    "Politik/Makro: Bessent spricht von „sehr harten“ Fed-Aussagen und möglichem Fehler bei zu starker Straffung (CBS); Huang sagt öffentliche Senatsanhörung zu (Kalender 70 → 85 %). KI-Champions-Liste noch nicht da (60 → 30 %).",
-    "Heute: Einkaufsmanager 09:30/10:00/15:45, abends Zahlen von HPE, Zoom, Semtech, Symbotic; Di Dell, Mi PCE-Inflation, Do US-Börsen zu (EarningsWatcher, FXStreet, CNBC).",
-    "Moonshots Long: CoreWeave, Nebius (Gegenbewegung nach −12/−16 %), Strategy (Bitcoin +9 %). Short: Semtech, Symbotic, HPE (Zahlen nach US-Schluss, große eingepreiste Spannen)."
-  ],
-  "audioUrl": null,
-  "sources": [
-    {
-      "title": "Yahoo Finance: Nasdaq Composite, S&P 500, SOX, Nvidia (Schluss Fr 20.11.)",
-      "url": "https://finance.yahoo.com/quote/%5EIXIC/history/"
-    },
-    {
-      "title": "CNBC: Futures steigen nach Korrektur-Woche (Live, 22./23.11.)",
-      "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
-    },
-    {
-      "title": "Yahoo Finance: SPCX (Schluss Fr 20.11. 127,79 $, Do 138,43 $)",
-      "url": "https://finance.yahoo.com/quote/SPCX/history/"
-    },
-    {
-      "title": "Yahoo Finance: TSLA (Schluss Fr 20.11. 345,82 $, Do 374,41 $)",
-      "url": "https://finance.yahoo.com/quote/TSLA/history/"
-    },
-    {
-      "title": "Yahoo Finance: RKLB (Schluss Fr 20.11. 45,42 $, Do 50,99 $)",
-      "url": "https://finance.yahoo.com/quote/RKLB/history/"
-    },
-    {
-      "title": "Yahoo Finance: MRVL (Schluss Fr 20.11. 122,28 $, Do 138,47 $)",
-      "url": "https://finance.yahoo.com/quote/MRVL/history/"
-    },
-    {
-      "title": "Yahoo Finance: Nasdaq-100-Future NQ=F und S&P-500-Future ES=F (Mo 23.11., 07:45)",
-      "url": "https://finance.yahoo.com/quote/NQ%3DF/"
-    },
-    {
-      "title": "Yahoo Finance: BTC-USD (Mo 23.11., rund 61.400 $)",
-      "url": "https://finance.yahoo.com/quote/BTC-USD/"
-    },
-    {
-      "title": "Yahoo Finance: Kospi ^KS11 (Mo 23.11., 07:45)",
-      "url": "https://finance.yahoo.com/quote/%5EKS11/"
-    },
-    {
-      "title": "dpa-AFX via onvista: Dax im globalen Tech-Ausverkauf vor robustem Start (23.11., 06:21)",
-      "url": "https://www.onvista.de/news/2026/11-23-dax-flash-dax-im-globalen-tech-ausverkauf-vor-robustem-start-0-10-26579280"
-    },
-    {
-      "title": "SpaceX: NROL-136 (So 22.11., 04:23 PT)",
-      "url": "https://www.spacex.com/launches/nrol136"
-    },
-    {
-      "title": "Noozhawk: Rekord – zwei Falcon-Starts von SLC-4E binnen 32 Stunden (22.11.)",
-      "url": "https://www.noozhawk.com/spacex-west-coast-team-sets-record-with-quick-turnaround-between-falcon-liftoffs/"
-    },
-    {
-      "title": "Reuters via NewsX: Apollo und Goldman bepreisen rund 44 Mrd. $ Kredit für SpaceX-GPU-Kauf (20.11.)",
-      "url": "https://world.newsx.com/technology/apollo-goldman-lead-44-billion-spacex-gpu-debt-financing-255915/"
-    },
-    {
-      "title": "Launch Library 2: Startliste (Stand Mo 23.11., 07:45)",
-      "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
-    },
-    {
-      "title": "Seeking Alpha: Musk – FSD 15 kommt nächsten Monat (21.11.)",
-      "url": "https://seekingalpha.com/news/4675395-tesla-launch-fsd-15-next-month-elon-musk"
-    },
-    {
-      "title": "Longbridge: Wochenbilanz Tesla −11,38 %, HSBC Hold 359 $, Südkorea lehnt FSD ab (21.11.)",
-      "url": "https://longbridge.com/en/news/306361728"
-    },
-    {
-      "title": "Startup Fortune: Rocket Lab fällt 10,8 % – Neutron-Verzögerung trifft Tech-Ausverkauf (21.11.)",
-      "url": "https://startupfortune.com/rocket-lab-stock-falls-108-to-4544-as-its-neutron-delay-meets-a-tech-rout/"
-    },
-    {
-      "title": "Cedar Global Markets: Nasdaq-Futures +2,4 %, Bessent bei CBS über „sehr harte“ Fed-Aussagen (22.11.)",
-      "url": "https://cedarglobalmarkets.com/2026/11/22/nasdaq-futures-sunday-open-rebound/"
-    },
-    {
-      "title": "Korea Times/Reuters: Huang sagt öffentliche Senatsanhörung zu (21.11.)",
-      "url": "https://www.koreatimes.co.kr/world/20261121/former-nvidia-ceo-huang-agreed-to-testify-at-public-us-senate-hearing-senators-aide-says"
-    },
-    {
-      "title": "OrigoTech: WSJ – USA wollen 24+ KI-„Champions“ benennen, noch nicht verkündet",
-      "url": "https://origotech.dev/articles/wsj-reports-the-trump-administration-plans-to-name-more-than-24-us-companies-including-nvidia-amazon-microsoft-openai-and-anthropic-as-ai-national-champions-for-overseas-sales/"
-    },
-    {
-      "title": "EarningsWatcher: Zahlen am 23.11. und erwartete Bewegungen (Dell Di ±16,2 %)",
-      "url": "https://earnings-watcher.com/earnings-today"
-    },
-    {
-      "title": "FXStreet: Bitcoin +9 % zurück über 60.000 $ – was Montag für Aktien heißt (22.11.)",
-      "url": "https://www.fxstreet.com/cryptocurrencies/news/btc-9-how-it-reclaimed-60-000-and-what-to-expect-from-stocks-on-monday-202611221929"
-    },
-    {
-      "title": "Fortune: Dow-Futures +800 Punkte, Nasdaq-Futures fast +3 % nach der Korrektur (22.11.)",
-      "url": "https://fortune.com/2026/11/22/stock-market-today-dow-futures-sp500-nasdaq-correction-ai-bust/"
-    }
-  ]
+ "example": false,
+ "date": "2026-11-24",
+ "title": "Morgen-Briefing",
+ "greeting": "Guten Morgen, Justy.",
+ "summary": "Nach dem Rekordtag am Montag (Nasdaq +6,5 %, S&P 500 +4,7 %, Nvidia +31,5 % auf 165,05 $ nach Huangs Rückkehr als Chef) ziehen heute früh Asiens Chipwerte nach: Taiwan über +9 %, Kospi über +7 %, Nikkei +4 %. US-Futures nur leicht im Plus (rund +0,1 bis +0,3 %), der Dax wird bei rund 25.350 bis 25.380 knapp über dem Schluss von 25.337 erwartet (CNBC, Investing.com, dpa-AFX, Der Aktionär).",
+ "bullets": [
+  "SpaceX/Tesla: Laut FT verhandeln je ein Sonderausschuss (Denholm, Wilson-Thompson, Hartung für Tesla; Botha, Glein für SpaceX) über eine mögliche Fusion in Aktien, rund 3,5 Bio. $; Ziel eventuell Jahresende, eine Einigung ist laut Insidern noch nicht nah (Investing.com, Reuters).",
+  "xAI/SpaceX: Laut NYT verdient SpaceX mit der Vermietung von GPUs an Anthropic und Google mehr als mit Grok; Grok Imagine wurde zusammengestrichen (TechTimes).",
+  "Rocket Lab: Finanzchef Spice erwartet deutlich höhere Electron-Preise, Synspective bestellt 20 weitere Electron-Starts; Neutron-Preis um 27 % auf 70 Mio. $ angehoben (Tickline, Motley Fool).",
+  "Heute: 10:00 Ifo-Geschäftsklima (Prognose 90,5 nach 90,2), 16:00 US-Verbrauchervertrauen (Prognose 92,2 nach 91,7); vorbörslich Medtronic, Analog Devices, Best Buy; 22:00 Dell und HP. Mi PCE-Inflation, Do US-Börsen zu (dpa-AFX, Der Aktionär).",
+  "Moonshots Long: Alta Equipment, Murata, Agilent. Short: Brand Engagement Network, HPE, Semtech (nachbörsliche Bewegungen und Zahlen)."
+ ],
+ "audioUrl": null,
+ "sources": [
+  {
+   "title": "CNBC: Futures steigen nach Huang-Rückkehr (Live, 24.11.)",
+   "url": "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html"
+  },
+  {
+   "title": "Investing.com: US-Futures nach Nvidia-Rally (24.11.)",
+   "url": "https://uk.investing.com/news/stock-market-news/us-stock-futures-steady-after-nvidialed-wall-street-rally-5000467"
+  },
+  {
+   "title": "CNBC: Nvidia-Zulieferer in Asien springen (24.11.)",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html"
+  },
+  {
+   "title": "dpa-AFX via onvista: Dax knapp im Plus (24.11., 06:21)",
+   "url": "https://www.onvista.de/news/2026/11-24-dax-flash-knapp-im-plus-im-aufgehelltem-boersenumfeld-0-10-26579769"
+  },
+  {
+   "title": "Der Aktionär: Dax-Prognose und Termine (24.11.)",
+   "url": "https://www.deraktionaer.de/artikel/indizes/dax-prognose-fest-nvidia-rally-siemens-energy-infineon-rheinnetall-bayer-rwe-basf-im-fokus-20449341.html"
+  },
+  {
+   "title": "Investing.com: SpaceX und Tesla verhandeln über Fusion, FT (24.11.)",
+   "url": "https://www.investing.com/news/stock-market-news/spacex-tesla-directors-negotiate-potential-35-trillion-merger-ft-reports-5047091"
+  },
+  {
+   "title": "The Star/Reuters: Fünf Direktoren für Fusionsgespräche (24.11.)",
+   "url": "https://www.thestar.com.my/tech/tech-news/2026/11/24/spacex-and-tesla-entrusts-five-directors-for-merger-talks-ft-reports"
+  },
+  {
+   "title": "TechTimes: SpaceX-GPU-Vermietung bringt mehr als Grok (24.11.)",
+   "url": "https://www.techtimes.com/articles/331389/20261124/spacex-compute-rentals-outearn-grok-musk-ranks-revenue-per-gpu-above-benchmarks-nyt-says.htm"
+  },
+  {
+   "title": "Tickline: Space-Digest (23.11.)",
+   "url": "https://tickline.news/digest/2026-11-23-space.html"
+  },
+  {
+   "title": "Motley Fool: Rocket Lab hebt Neutron-Preis (23.11.)",
+   "url": "https://www.fool.com/investing/2026/11/23/rocket-lab-raised-prices-rocket-launch-what-means-spacex/"
+  },
+  {
+   "title": "Deutsche Börse/dpa-AFX: Termine am 24.11.",
+   "url": "https://live.deutsche-boerse.com/nachrichten/TAGESVORSCHAU-Termine-am-24-November-2026-b763007f-a4e4-4c9e-9cb9-bfd1d3ce4104"
+  }
+ ]
 }
