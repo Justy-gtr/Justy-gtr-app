@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-24T20:43:00+01:00",
+  "updatedAt": "2026-11-24T21:10:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -10,
+      "score": -20,
       "postsCount": 25,
-      "reason": "Die Fusionsgespräche mit Tesla laufen jetzt offiziell über fünf Verwaltungsräte. Mizuho nennt 205 $ als Kursziel, zugleich fallen große Wetten auf weiter fallende Kurse auf.",
+      "reason": "Viele fragen sich, ob SpaceX unter 100 $ rutscht; Zollsorgen und der KI-Ausverkauf drücken. Fans betonen, dass Musk beim Börsengang keine Aktien verkauft hat.",
       "sources": [
         {
-          "title": "@joehansen auf X (24.11., 20:21)",
-          "url": "https://x.com/joehansen/status/2125308721815290044"
+          "title": "@MentoviaX auf X (24.11., 21:00)",
+          "url": "https://x.com/MentoviaX/status/2125318745480474914"
         },
         {
-          "title": "@McJohnnymac auf X (24.11., 20:22)",
-          "url": "https://x.com/McJohnnymac/status/2125309038594289749"
+          "title": "@MainStFrankie auf X (24.11., 21:06)",
+          "url": "https://x.com/MainStFrankie/status/2125320240766791811"
         },
         {
-          "title": "@StockTraderHub auf X (24.11., 20:27)",
-          "url": "https://x.com/StockTraderHub/status/2125310301469860198"
+          "title": "@JesseOlson auf X (24.11., 20:40)",
+          "url": "https://x.com/JesseOlson/status/2125313503087173780"
         }
       ],
-      "updatedAt": "2026-11-24T20:43:00+01:00"
+      "updatedAt": "2026-11-24T21:10:00+01:00"
     },
     "TSLA": {
       "mood": "gut",
       "score": 20,
-      "postsCount": 24,
-      "reason": "Bei Tesla geht es vor allem um die Fusion: Laut RBC könnte der Deal Anfang 2027 kommen, fünf Verwaltungsräte führen die Gespräche. Sonst eher ruhig.",
+      "postsCount": 23,
+      "reason": "Tesla hält sich an einem schwachen Tag erstaunlich gut. Fans rechnen vor, wie die Fusion mit SpaceX den Kurs langfristig treiben könnte.",
       "sources": [
         {
-          "title": "@JManCapital auf X (24.11., 20:39)",
-          "url": "https://x.com/JManCapital/status/2125313301965947381"
+          "title": "@strengthPlan auf X (24.11., 20:50)",
+          "url": "https://x.com/strengthPlan/status/2125316075453911085"
         },
         {
-          "title": "@chachaX72 auf X (24.11., 19:50)",
-          "url": "https://x.com/chachaX72/status/2125301024932200868"
+          "title": "@strengthPlan auf X (24.11., 21:05)",
+          "url": "https://x.com/strengthPlan/status/2125319830135886222"
         },
         {
-          "title": "@0xDamien auf X (24.11., 20:32)",
-          "url": "https://x.com/0xDamien/status/2125311521542852727"
+          "title": "@MainStFrankie auf X (24.11., 21:06)",
+          "url": "https://x.com/MainStFrankie/status/2125320240766791811"
         }
       ],
-      "updatedAt": "2026-11-24T20:43:00+01:00"
+      "updatedAt": "2026-11-24T21:10:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/42traders/status/2125296012789162029"
         }
       ],
-      "updatedAt": "2026-11-24T20:43:00+01:00"
+      "updatedAt": "2026-11-24T21:10:00+01:00"
     }
   }
 }
