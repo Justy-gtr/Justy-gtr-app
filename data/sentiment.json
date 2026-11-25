@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T17:05:00+01:00",
+  "updatedAt": "2026-11-25T17:05:50Z",
   "symbols": {
     "SPCX": {
-      "mood": "schlecht",
-      "score": -50,
+      "mood": "gemischt",
+      "score": -15,
       "postsCount": 25,
-      "reason": "SPCX rund 8 % im Minus, die Nasdaq fällt um 4 %. Gary Black rechnet mit 52 % Verwässerung durch die Tesla-Fusion, RBC erwartet den Deal Anfang 2027.",
+      "reason": "Die FCC erlaubt SpaceX bis zu 1 Mio. Satelliten für Rechenzentren im All, das sorgt für Jubel. Gleichzeitig drücken Fusionssorgen, SPCX liegt unter dem IPO-Preis.",
       "sources": [
         {
-          "title": "@MarcJacksonLA auf X (25.11., 16:56)",
-          "url": "https://x.com/MarcJacksonLA/status/2125619685735686203"
+          "title": "@faststocknewss auf X (25.11., 17:47)",
+          "url": "https://x.com/faststocknewss/status/2125632498503926220"
         },
         {
-          "title": "@Atlantastanian auf X (25.11., 16:57)",
-          "url": "https://x.com/Atlantastanian/status/2125619957471773013"
+          "title": "@Da5Daily auf X (25.11., 17:16)",
+          "url": "https://x.com/Da5Daily/status/2125624599115395555"
         },
         {
-          "title": "@Lance_Edelman auf X (25.11., 16:39)",
-          "url": "https://x.com/Lance_Edelman/status/2125615254054801431"
+          "title": "@Atlantastanian auf X (25.11., 16:55)",
+          "url": "https://x.com/Atlantastanian/status/2125619497868349603"
         }
       ],
-      "updatedAt": "2026-11-25T17:05:00+01:00"
+      "updatedAt": "2026-11-25T17:05:50Z"
     },
     "TSLA": {
       "mood": "schlecht",
       "score": -30,
       "postsCount": 25,
-      "reason": "Tesla sinkt mit SpaceX, der Widerstand gegen die Fusion wächst. Viele Tesla-Aktionäre sind unzufrieden, einige wollen trotzdem langfristig dabeibleiben.",
+      "reason": "Tesla rund 6 % im Minus, die Nasdaq fällt stark. Viele streiten, ob Tesla-Aktionäre bei der SpaceX-Fusion profitieren, dazu verzögert die EU die FSD-Zulassung.",
       "sources": [
         {
-          "title": "@MarcJacksonLA auf X (25.11., 16:56)",
-          "url": "https://x.com/MarcJacksonLA/status/2125619685735686203"
+          "title": "@Da5Daily auf X (25.11., 17:16)",
+          "url": "https://x.com/Da5Daily/status/2125624599115395555"
         },
         {
-          "title": "@shaolung3 auf X (25.11., 16:46)",
-          "url": "https://x.com/shaolung3/status/2125617215668154686"
+          "title": "@MoodSpaceX auf X (25.11., 17:49)",
+          "url": "https://x.com/MoodSpaceX/status/2125633096502624774"
         },
         {
-          "title": "@strengthPlan auf X (25.11., 16:59)",
-          "url": "https://x.com/strengthPlan/status/2125620483177456044"
+          "title": "@jeremyjudkins_ auf X (25.11., 17:50)",
+          "url": "https://x.com/jeremyjudkins_/status/2125633118744777108"
         }
       ],
-      "updatedAt": "2026-11-25T17:05:00+01:00"
+      "updatedAt": "2026-11-25T17:05:50Z"
     },
     "RKLB": {
       "mood": "schlecht",
-      "score": -25,
-      "postsCount": 25,
-      "reason": "RKLB leidet mit dem schwachen Tech-Markt. Einige hoffen auf einen nahen Boden und verweisen auf 4,69 Mrd. $ Netto-Cash, andere setzen weiter auf fallende Kurse.",
+      "score": -20,
+      "postsCount": 24,
+      "reason": "RKLB liegt weit unter dem Hoch, Neutron verschiebt sich auf 2027. Einige Anleger stocken trotzdem auf und verweisen auf Rekordumsatz und vollen Auftragsbestand.",
       "sources": [
         {
-          "title": "@penmarkresearch auf X (25.11., 16:48)",
-          "url": "https://x.com/penmarkresearch/status/2125617740627255560"
+          "title": "@PraktischPS auf X (25.11., 18:03)",
+          "url": "https://x.com/PraktischPS/status/2125636599467667488"
         },
         {
-          "title": "@JW_Anderson23 auf X (25.11., 16:38)",
-          "url": "https://x.com/JW_Anderson23/status/2125615173994000438"
+          "title": "@spcxbro auf X (25.11., 17:15)",
+          "url": "https://x.com/spcxbro/status/2125624521084359104"
         },
         {
-          "title": "@TCcapital_ auf X (25.11., 16:44)",
-          "url": "https://x.com/TCcapital_/status/2125616658903375894"
+          "title": "@DividendSignal auf X (25.11., 17:31)",
+          "url": "https://x.com/DividendSignal/status/2125628528779804684"
         }
       ],
-      "updatedAt": "2026-11-25T17:05:00+01:00"
+      "updatedAt": "2026-11-25T17:05:50Z"
     }
   }
 }
