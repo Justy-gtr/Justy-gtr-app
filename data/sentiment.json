@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T15:05:00+01:00",
+  "updatedAt": "2026-11-25T15:39:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
-      "score": -45,
+      "score": -40,
       "postsCount": 25,
-      "reason": "SPCX rutscht vorbörslich auf rund 116 $. Gary Black warnt vor Verwässerung durch die Tesla-Fusion und nennt 100 $ als Marke. Wenige verweisen auf Mizuhos 205-$-Ziel.",
+      "reason": "SPCX vorbörslich bei 116–120 $, rund 11 % unter dem Ausgabepreis. Viele sorgen sich wegen der Fusion, andere sagen: am Geschäft hat sich nichts geändert.",
       "sources": [
         {
-          "title": "@teamjayday auf X (25.11., 15:00)",
-          "url": "https://x.com/teamjayday/status/2125590523045900313"
+          "title": "@Maximilius31 auf X (25.11., 15:25)",
+          "url": "https://x.com/Maximilius31/status/2125596619462590699"
         },
         {
-          "title": "@garyblack00 auf X (25.11., 14:44)",
-          "url": "https://x.com/garyblack00/status/2125586397469802980"
+          "title": "@mecoone auf X (25.11., 15:03)",
+          "url": "https://x.com/mecoone/status/2125591257976078716"
         },
         {
-          "title": "@Silverfoxxinc auf X (25.11., 14:55)",
-          "url": "https://x.com/Silverfoxxinc/status/2125589214175879213"
+          "title": "@fanvestments auf X (25.11., 15:35)",
+          "url": "https://x.com/fanvestments/status/2125599327422931281"
         }
       ],
-      "updatedAt": "2026-11-25T15:05:00+01:00"
+      "updatedAt": "2026-11-25T15:39:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": -15,
-      "postsCount": 25,
-      "reason": "Tesla fällt mit dem roten Chipsektor, Trader sehen Widerstand bei 375 $. Gestritten wird, ob Tesla-Aktionäre bei der Fusion einen Aufschlag bekommen.",
+      "postsCount": 24,
+      "reason": "Tesla vorbörslich rund 3 % tiefer bei etwa 372 $. Seaport startet mit 475 $ Kursziel, über die Hälfte der Texas-Robotaxis sind Cybercabs. Fusion bleibt Hauptthema.",
       "sources": [
         {
-          "title": "@krspyszn auf X (25.11., 14:57)",
-          "url": "https://x.com/krspyszn/status/2125589798559817898"
+          "title": "@X_Yoda_Papa auf X (25.11., 15:13)",
+          "url": "https://x.com/X_Yoda_Papa/status/2125593617334952221"
         },
         {
-          "title": "@garyblack00 auf X (25.11., 14:44)",
-          "url": "https://x.com/garyblack00/status/2125586397469802980"
+          "title": "@ArkkDaily auf X (25.11., 15:21)",
+          "url": "https://x.com/ArkkDaily/status/2125595752202395924"
         },
         {
-          "title": "@JOBhakdi auf X (25.11., 14:47)",
-          "url": "https://x.com/JOBhakdi/status/2125587076385055036"
+          "title": "@Maximilius31 auf X (25.11., 15:05)",
+          "url": "https://x.com/Maximilius31/status/2125591587073769885"
         }
       ],
-      "updatedAt": "2026-11-25T15:05:00+01:00"
+      "updatedAt": "2026-11-25T15:39:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": -15,
+      "score": -20,
       "postsCount": 25,
-      "reason": "RKLB wird laut vielen vom SpaceX-Kurs mit nach unten gezogen. Fans verweisen auf 8 gebuchte Neutron-Starts und darauf, dass Josh Brown auf CNBC mehr Anteile nimmt.",
+      "reason": "RKLB liegt rund 71 % unter dem Jahreshoch, einige Spötter melden sich. Fans freuen sich auf den nächsten Electron-Start am 27.11. und hoffen auf Neutron.",
       "sources": [
         {
-          "title": "@adukiarohit auf X (25.11., 14:58)",
-          "url": "https://x.com/adukiarohit/status/2125589930114249153"
+          "title": "@t3live auf X (25.11., 15:34)",
+          "url": "https://x.com/t3live/status/2125598985658187907"
         },
         {
-          "title": "@nikogeorge auf X (25.11., 14:53)",
-          "url": "https://x.com/nikogeorge/status/2125588701447065673"
+          "title": "@RCapitalX auf X (25.11., 15:34)",
+          "url": "https://x.com/RCapitalX/status/2125598888065437864"
         },
         {
-          "title": "@Serik1625 auf X (25.11., 15:00)",
-          "url": "https://x.com/Serik1625/status/2125590435183874389"
+          "title": "@MartynInvestor auf X (25.11., 15:31)",
+          "url": "https://x.com/MartynInvestor/status/2125598207715451019"
         }
       ],
-      "updatedAt": "2026-11-25T15:05:00+01:00"
+      "updatedAt": "2026-11-25T15:39:00+01:00"
     }
   }
 }
