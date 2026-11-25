@@ -2095,6 +2095,45 @@
           "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
         }
       ]
+    },
+    {
+      "id": "evt-fcc-starmind",
+      "title": "FCC genehmigt SpaceX bis zu 1 Million „Starmind“-Satelliten für Rechenzentren im All (verkündet Mi 25.11. am Abend)",
+      "date": "2026-11-25",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "regulierung",
+      "company": "SpaceX",
+      "tickers": [
+        "SPCX"
+      ],
+      "probabilityPct": 100,
+      "impact": "hoch",
+      "reasoning": "Die US-Telekombehörde FCC hat am Mittwoch die erste Genehmigung in der US-Geschichte für eine Konstellation von Rechenzentren im All erteilt: SpaceX darf bis zu 1.000.000 „Starmind“-Rechenmodule im Orbit betreiben, mit Funkverbindungen als Reserve für Steuerung und Telemetrie (18,8–19,3 und 28,6–29,1 GHz); die Regeln gegen Weltraumschrott seien eingehalten (FCC-Mitteilung via Light Reading). FCC-Chef Brendan Carr nannte es „eine kühne neue Grenze für die Recheninfrastruktur“ (Communications Daily). Beantragt hatte SpaceX das im Januar (Reuters). Die Genehmigung ist ein Rahmen, kein Startplan – wie viele Satelliten wann fliegen, hängt an Starship. SPCX zog nach der Meldung von etwa 117,7 $ auf 120,6 $ an (Yahoo, 5-Minuten-Kurse). 100 %, weil amtlich verkündet.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Light Reading: FCC genehmigt SpaceX bis zu 1 Mio. KI-Satelliten „Starmind“ (FCC-Mitteilung, Mi 25.11.)",
+          "url": "https://www.lightreading.com/satellite/fcc-greenlights-spacex-plan-to-deploy-up-to-1m-ai-satellites"
+        },
+        {
+          "title": "Reuters via SRN News: USA erlauben SpaceX 1 Mio. Satelliten für Rechenzentren im All (Mi 25.11.)",
+          "url": "https://srnnews.com/us-authorizes-spacex-to-deploy-1-million-satellites-for-data-centers-in-space/"
+        },
+        {
+          "title": "Communications Daily: FCC genehmigt SpaceX-Konstellation für Rechenzentren im Orbit – Carr (Mi 25.11.)",
+          "url": "https://communicationsdaily.com/topic/orbital_data_centers"
+        },
+        {
+          "title": "Reuters: SpaceX beantragt bei der FCC Satelliten-Rechenzentren (31.01.2026)",
+          "url": "https://www.reuters.com/business/aerospace-defense/spacex-seeks-fcc-nod-solar-powered-satellite-data-centers-ai-2026-01-31/"
+        },
+        {
+          "title": "Yahoo Finance: SPCX (Mi 25.11., 18:17)",
+          "url": "https://finance.yahoo.com/quote/SPCX/"
+        }
+      ]
     }
   ]
 }

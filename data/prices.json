@@ -5617,31 +5617,43 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Mi 16:19: SPCX notiert an der Nasdaq bei 115,56 $, 8,2 % unter dem Dienstagsschluss von 125,81 $ und weit unter dem Ausgabepreis von 135 $ (Yahoo). Der ganze Markt steht unter Druck: Die Nasdaq liegt 3,8 % im Minus (Yahoo), Nvidia fällt rund 7 %, der Angstindex VIX steigt über 30, weil Anleger an der Rendite der KI-Milliarden zweifeln (CNBC). Dazu kommen die neuen Section-301-Zölle gegen 14 Handelspartner und die PCE-Inflation: 3,8 % im Oktober, die Kernrate mit 3,3 % etwas über der Prognose; eine Zinserhöhung im Dezember gilt laut CME FedWatch zu 97 % als sicher (BEA, Fox Business). Eigene Belastung: Die Sorge vor Verwässerung bei einer Fusion mit Tesla – Gary Black rechnet bei einem reinen Aktientausch mit gut 50 % mehr SpaceX-Aktien – und der Verzicht auf 738 Mio. $ staatliche Breitband-Förderung (Investing.com, Benzinga).",
+      "why": "Stand Mi 18:17: SPCX notiert an der Nasdaq bei 120,56 $, 4,2 % unter dem Dienstagsschluss von 125,81 $; das Tagestief lag bei 113,93 $ (Yahoo). Seit etwa 17:45 Uhr zieht die Aktie um rund 3 % an: Die US-Behörde FCC hat SpaceX erlaubt, bis zu 1 Million „Starmind“-Satelliten als Rechenzentren im All zu betreiben – die erste solche Genehmigung in den USA (FCC via Light Reading, Reuters). Der ganze Markt bleibt unter Druck, hat sich aber vom Tief erholt: Die Nasdaq liegt 2,3 % im Minus, nachdem sie bis auf den Freitagsschluss gefallen war, Nvidia verliert 6,5 % (Yahoo, Barron's). Gründe sind Zweifel an der Rendite der KI-Milliarden, die neuen Section-301-Zölle gegen 14 Handelspartner und die PCE-Inflation von 3,8 % (Kernrate 3,3 %), nach der eine Zinserhöhung im Dezember zu 98 % eingepreist ist (Reuters, Yahoo, BEA). Eigene Belastung bleibt die Sorge vor Verwässerung bei einer Fusion mit Tesla als reinem Aktientausch (Benzinga).",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX (Mi 25.11., 16:19)",
+          "title": "Yahoo Finance: SPCX (Mi 25.11., 18:17)",
           "url": "https://finance.yahoo.com/quote/SPCX/"
         },
         {
-          "title": "CNBC: Dow −700 Punkte, Nasdaq −3 %, Nvidia führt neuen KI-Abverkauf an (Mi 25.11., 16:04)",
-          "url": "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html"
+          "title": "Light Reading: FCC genehmigt SpaceX bis zu 1 Mio. KI-Satelliten „Starmind“ (FCC-Mitteilung, Mi 25.11.)",
+          "url": "https://www.lightreading.com/satellite/fcc-greenlights-spacex-plan-to-deploy-up-to-1m-ai-satellites"
         },
         {
-          "title": "Fox Business: KI-Abverkauf vertieft sich, PCE steigt, FedWatch 97 % für Zinserhöhung (Mi 25.11., 15:50)",
-          "url": "https://www.foxbusiness.com/markets/stocks-11-25-2026"
+          "title": "Reuters via SRN News: USA erlauben SpaceX 1 Mio. Satelliten für Rechenzentren im All (Mi 25.11.)",
+          "url": "https://srnnews.com/us-authorizes-spacex-to-deploy-1-million-satellites-for-data-centers-in-space/"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq Composite ^IXIC (Mi 25.11., 18:17)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
+        },
+        {
+          "title": "Barron's: Nasdaq prallt am Freitagsschluss ab (Mi 25.11.)",
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today112526/card/the-nasdaq-bounced-right-at-friday-s-closing-level-g5qFK8ER1C62sM46PhXY"
+        },
+        {
+          "title": "Reuters via Investing.com: Nasdaq rund −4 %, KI-Abverkauf und neue Zölle (Mi 25.11., 18:01)",
+          "url": "https://www.investing.com/news/economy-news/nasdaq-futures-slide-over-2-on-fresh-us-tariff-concerns-inflation-data-in-focus-5050138"
+        },
+        {
+          "title": "Yahoo Finance Live: Chip-Abverkauf, heiße Inflation, neue Zölle – Käufer greifen zu (Mi 25.11., 18:10)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
         },
         {
           "title": "BEA: Personal Income and Outlays, Oktober 2026 (Mi 25.11., 14:30)",
           "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026"
         },
         {
-          "title": "Investing.com: Warum die SpaceX-Aktie heute fällt (Mi 25.11., 16:02)",
-          "url": "https://ca.investing.com/news/stock-market-news/why-is-space-exploration-technologies-stock-sliding-today-93CH-4981212"
-        },
-        {
-          "title": "Benzinga: SpaceX verzichtet auf 738 Mio. $ Breitband-Förderung, Gary Black nennt 100 $ (Mi 25.11.)",
-          "url": "https://www.benzinga.com/markets/equities/26/11/63615246/spacex-shares-fall-premarket-gary-black-tesla-merger-valuation"
+          "title": "Benzinga: Warum die SpaceX-Aktie am Mittwoch fällt (Mi 25.11., 16:17)",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63627528/spacex-shares-drop-wednesday-whats-going-on"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -18601,19 +18613,27 @@
         ]
       },
       "recordHighEur": 424.25,
-      "why": "Stand Mi 16:19: Tesla notiert an der Nasdaq bei 363,91 $, 5,4 % unter dem Dienstagsschluss von 384,68 $ (Yahoo). Der ganze Markt steht unter Druck: Die Nasdaq liegt 3,8 % im Minus (Yahoo), Nvidia fällt rund 7 %, der Angstindex VIX steigt über 30, weil Anleger an der Rendite der KI-Milliarden zweifeln (CNBC). Dazu kommen die neuen Section-301-Zölle gegen 14 Handelspartner und die PCE-Inflation: 3,8 % im Oktober, die Kernrate mit 3,3 % etwas über der Prognose; eine Zinserhöhung im Dezember gilt laut CME FedWatch zu 97 % als sicher (BEA, Fox Business). Eigene Belastung: Die EU hat die Sitzung, auf der Teslas Fahrassistenz zur Abstimmung kommen könnte, vom 1. auf den 15. Dezember verschoben (Reuters).",
+      "why": "Stand Mi 18:17: Tesla notiert an der Nasdaq bei 369,35 $, 4,0 % unter dem Dienstagsschluss von 384,68 $; das Tagestief lag bei 357,64 $ (Yahoo). Eine eigene neue Meldung gibt es am Nachmittag nicht. Der ganze Markt bleibt unter Druck, hat sich aber vom Tief erholt: Die Nasdaq liegt 2,3 % im Minus, nachdem sie bis auf den Freitagsschluss gefallen war, Nvidia verliert 6,5 % (Yahoo, Barron's). Gründe sind Zweifel an der Rendite der KI-Milliarden, die neuen Section-301-Zölle gegen 14 Handelspartner und die PCE-Inflation von 3,8 % (Kernrate 3,3 %), nach der eine Zinserhöhung im Dezember zu 98 % eingepreist ist (Reuters, Yahoo, BEA). Dazu hat die EU die Sitzung, auf der Teslas Fahrassistenz zur Abstimmung kommen könnte, vom 1. auf den 15. Dezember verschoben (Reuters).",
       "whySources": [
         {
-          "title": "Yahoo Finance: TSLA (Mi 25.11., 16:19)",
+          "title": "Yahoo Finance: TSLA (Mi 25.11., 18:17)",
           "url": "https://finance.yahoo.com/quote/TSLA/"
         },
         {
-          "title": "CNBC: Dow −700 Punkte, Nasdaq −3 %, Nvidia führt neuen KI-Abverkauf an (Mi 25.11., 16:04)",
-          "url": "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html"
+          "title": "Yahoo Finance: Nasdaq Composite ^IXIC (Mi 25.11., 18:17)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Fox Business: KI-Abverkauf vertieft sich, PCE steigt, FedWatch 97 % für Zinserhöhung (Mi 25.11., 15:50)",
-          "url": "https://www.foxbusiness.com/markets/stocks-11-25-2026"
+          "title": "Barron's: Nasdaq prallt am Freitagsschluss ab (Mi 25.11.)",
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today112526/card/the-nasdaq-bounced-right-at-friday-s-closing-level-g5qFK8ER1C62sM46PhXY"
+        },
+        {
+          "title": "Reuters via Investing.com: Nasdaq rund −4 %, KI-Abverkauf und neue Zölle (Mi 25.11., 18:01)",
+          "url": "https://www.investing.com/news/economy-news/nasdaq-futures-slide-over-2-on-fresh-us-tariff-concerns-inflation-data-in-focus-5050138"
+        },
+        {
+          "title": "Yahoo Finance Live: Chip-Abverkauf, heiße Inflation, neue Zölle – Käufer greifen zu (Mi 25.11., 18:10)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
         },
         {
           "title": "BEA: Personal Income and Outlays, Oktober 2026 (Mi 25.11., 14:30)",
@@ -29855,27 +29875,31 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Mi 16:19: Rocket Lab notiert an der Nasdaq bei 42,26 $, 8,1 % unter dem Dienstagsschluss von 45,98 $ (Yahoo). Eine eigene Firmenmeldung gibt es heute nicht; Raumfahrtwerte fallen gemeinsam mit SpaceX und AST SpaceMobile (24/7 Wall St.). Schon am Dienstag drückte Mizuho mit „Underperform“ und 40 $ Kursziel (Benzinga). Der ganze Markt steht unter Druck: Die Nasdaq liegt 3,8 % im Minus (Yahoo), Nvidia fällt rund 7 %, der Angstindex VIX steigt über 30, weil Anleger an der Rendite der KI-Milliarden zweifeln (CNBC). Dazu kommen die neuen Section-301-Zölle gegen 14 Handelspartner und die PCE-Inflation: 3,8 % im Oktober, die Kernrate mit 3,3 % etwas über der Prognose; eine Zinserhöhung im Dezember gilt laut CME FedWatch zu 97 % als sicher (BEA, Fox Business).",
+      "why": "Stand Mi 18:17: Rocket Lab notiert an der Nasdaq bei 44,62 $, 3,0 % unter dem Dienstagsschluss von 45,98 $; das Tagestief lag bei 42,12 $ (Yahoo). Eine eigene Firmenmeldung gibt es heute nicht, Raumfahrtwerte erholen sich am Nachmittag mit SpaceX. Schon am Dienstag drückte Mizuho mit „Underperform“ und 40 $ Kursziel (Benzinga). Der ganze Markt bleibt unter Druck, hat sich aber vom Tief erholt: Die Nasdaq liegt 2,3 % im Minus, nachdem sie bis auf den Freitagsschluss gefallen war, Nvidia verliert 6,5 % (Yahoo, Barron's). Gründe sind Zweifel an der Rendite der KI-Milliarden, die neuen Section-301-Zölle gegen 14 Handelspartner und die PCE-Inflation von 3,8 % (Kernrate 3,3 %), nach der eine Zinserhöhung im Dezember zu 98 % eingepreist ist (Reuters, Yahoo, BEA).",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB (Mi 25.11., 16:19)",
+          "title": "Yahoo Finance: RKLB (Mi 25.11., 18:17)",
           "url": "https://finance.yahoo.com/quote/RKLB/"
-        },
-        {
-          "title": "24/7 Wall St.: SpaceX −5 %, Rocket Lab und AST SpaceMobile −4 % (Mi 25.11., 15:17)",
-          "url": "https://247wallst.com/investing/2026/11/25/spacex-slides-5-as-gary-black-warns-a-tesla-bid-could-push-it-below-100-rocket-lab-and-ast-spacemobile-drop-4/"
         },
         {
           "title": "Benzinga: Mizuho startet Rocket Lab mit Underperform und 40 $ Kursziel (Di 24.11.)",
           "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63598197/rocket-lab-stock-drops-6-whats-happening"
         },
         {
-          "title": "CNBC: Dow −700 Punkte, Nasdaq −3 %, Nvidia führt neuen KI-Abverkauf an (Mi 25.11., 16:04)",
-          "url": "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html"
+          "title": "Yahoo Finance: Nasdaq Composite ^IXIC (Mi 25.11., 18:17)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "Fox Business: KI-Abverkauf vertieft sich, PCE steigt, FedWatch 97 % für Zinserhöhung (Mi 25.11., 15:50)",
-          "url": "https://www.foxbusiness.com/markets/stocks-11-25-2026"
+          "title": "Barron's: Nasdaq prallt am Freitagsschluss ab (Mi 25.11.)",
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today112526/card/the-nasdaq-bounced-right-at-friday-s-closing-level-g5qFK8ER1C62sM46PhXY"
+        },
+        {
+          "title": "Reuters via Investing.com: Nasdaq rund −4 %, KI-Abverkauf und neue Zölle (Mi 25.11., 18:01)",
+          "url": "https://www.investing.com/news/economy-news/nasdaq-futures-slide-over-2-on-fresh-us-tariff-concerns-inflation-data-in-focus-5050138"
+        },
+        {
+          "title": "Yahoo Finance Live: Chip-Abverkauf, heiße Inflation, neue Zölle – Käufer greifen zu (Mi 25.11., 18:10)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
         },
         {
           "title": "BEA: Personal Income and Outlays, Oktober 2026 (Mi 25.11., 14:30)",
@@ -41411,23 +41435,27 @@
         ]
       },
       "recordHighEur": 282.4,
-      "why": "Stand Mi 16:19: Marvell notiert an der Nasdaq bei 121,20 $, 7,9 % unter dem Dienstagsschluss von 131,57 $ (Yahoo). Chipwerte führen den Abverkauf an, neben Nvidia fallen auch AMD und Micron deutlich (Yahoo, Fox Business). Der ganze Markt steht unter Druck: Die Nasdaq liegt 3,8 % im Minus (Yahoo), Nvidia fällt rund 7 %, der Angstindex VIX steigt über 30, weil Anleger an der Rendite der KI-Milliarden zweifeln (CNBC). Dazu kommen die neuen Section-301-Zölle gegen 14 Handelspartner und die PCE-Inflation: 3,8 % im Oktober, die Kernrate mit 3,3 % etwas über der Prognose; eine Zinserhöhung im Dezember gilt laut CME FedWatch zu 97 % als sicher (BEA, Fox Business). Eigene Zahlen legt Marvell erst am Di 1.12. vor.",
+      "why": "Stand Mi 18:17: Marvell notiert an der Nasdaq bei 123,05 $, 6,5 % unter dem Dienstagsschluss von 131,57 $ (Yahoo). Chipwerte führen den Abverkauf an, der Halbleiterindex lag am Mittag rund 7 % im Minus (Reuters). Der ganze Markt bleibt unter Druck, hat sich aber vom Tief erholt: Die Nasdaq liegt 2,3 % im Minus, nachdem sie bis auf den Freitagsschluss gefallen war, Nvidia verliert 6,5 % (Yahoo, Barron's). Gründe sind Zweifel an der Rendite der KI-Milliarden, die neuen Section-301-Zölle gegen 14 Handelspartner und die PCE-Inflation von 3,8 % (Kernrate 3,3 %), nach der eine Zinserhöhung im Dezember zu 98 % eingepreist ist (Reuters, Yahoo, BEA). Eigene Zahlen legt Marvell erst am Di 1.12. vor.",
       "whySources": [
         {
-          "title": "Yahoo Finance: MRVL (Mi 25.11., 16:19)",
+          "title": "Yahoo Finance: MRVL (Mi 25.11., 18:17)",
           "url": "https://finance.yahoo.com/quote/MRVL/"
         },
         {
-          "title": "Yahoo Finance: Nvidia führt Chipwerte tiefer, Marvell −6 % vorbörslich (Mi 25.11., 14:32)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-plunge-133240343.html"
+          "title": "Yahoo Finance: Nasdaq Composite ^IXIC (Mi 25.11., 18:17)",
+          "url": "https://finance.yahoo.com/quote/%5EIXIC/"
         },
         {
-          "title": "CNBC: Dow −700 Punkte, Nasdaq −3 %, Nvidia führt neuen KI-Abverkauf an (Mi 25.11., 16:04)",
-          "url": "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html"
+          "title": "Barron's: Nasdaq prallt am Freitagsschluss ab (Mi 25.11.)",
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today112526/card/the-nasdaq-bounced-right-at-friday-s-closing-level-g5qFK8ER1C62sM46PhXY"
         },
         {
-          "title": "Fox Business: KI-Abverkauf vertieft sich, PCE steigt, FedWatch 97 % für Zinserhöhung (Mi 25.11., 15:50)",
-          "url": "https://www.foxbusiness.com/markets/stocks-11-25-2026"
+          "title": "Reuters via Investing.com: Nasdaq rund −4 %, KI-Abverkauf und neue Zölle (Mi 25.11., 18:01)",
+          "url": "https://www.investing.com/news/economy-news/nasdaq-futures-slide-over-2-on-fresh-us-tariff-concerns-inflation-data-in-focus-5050138"
+        },
+        {
+          "title": "Yahoo Finance Live: Chip-Abverkauf, heiße Inflation, neue Zölle – Käufer greifen zu (Mi 25.11., 18:10)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
         },
         {
           "title": "BEA: Personal Income and Outlays, Oktober 2026 (Mi 25.11., 14:30)",
