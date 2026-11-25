@@ -1,54 +1,54 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T19:41:53Z",
+  "updatedAt": "2026-11-25T20:11:21Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
       "postsCount": 20,
-      "reason": "SPCX ist wieder im Plus, nachdem es am Mittag 10 % tiefer lag. Neben der FCC-Freigabe freut viele: SpaceX gibt jedem aktiven Trump Account eine neue Aktie.",
+      "reason": "Die Aktie für jedes Trump Account ist das große Thema, viele feiern SpaceX dafür. Dazu FCC-Freigabe und Fusionsgespräche mit Tesla, bei denen der Ton rauer wird.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (25.11., 20:07)",
-          "url": "https://x.com/spcxGOD/status/2125667794058608759"
+          "title": "@Kalshi_Finance auf X (25.11., 21:03)",
+          "url": "https://x.com/Kalshi_Finance/status/2125681679591461102"
         },
         {
-          "title": "@SpaceInvestor_D auf X (25.11., 20:31)",
-          "url": "https://x.com/SpaceInvestor_D/status/2125673628859834430"
+          "title": "@fammetaX auf X (25.11., 20:48)",
+          "url": "https://x.com/fammetaX/status/2125678030706344234"
         },
         {
-          "title": "@theoptionoracle auf X (25.11., 20:35)",
-          "url": "https://x.com/theoptionoracle/status/2125674824018079878"
+          "title": "@pbeisel auf X (25.11., 21:00)",
+          "url": "https://x.com/pbeisel/status/2125681096843210939"
         }
       ],
-      "updatedAt": "2026-11-25T19:41:53Z"
+      "updatedAt": "2026-11-25T20:11:21Z"
     },
     "TSLA": {
-      "mood": "gemischt",
-      "score": 5,
+      "mood": "gut",
+      "score": 20,
       "postsCount": 20,
-      "reason": "Tesla erholt sich und erreicht wieder rund 380 $, dazu fallen große Call-Käufe auf. Die Fusion mit SpaceX bleibt umstritten, viele Tesla-Fans hoffen auf einen Aufschlag.",
+      "reason": "Italien erlaubt als 12. Land in Europa FSD, die Robotaxi-Zone in Dallas wächst um rund 83 %. Tesla erholt sich, beim Fusions-Aufschlag gehen die Meinungen auseinander.",
       "sources": [
         {
-          "title": "@donaldjdean auf X (25.11., 20:29)",
-          "url": "https://x.com/donaldjdean/status/2125673258267926677"
+          "title": "@TeslaOracle_com auf X (25.11., 21:10)",
+          "url": "https://x.com/TeslaOracle_com/status/2125683475462390256"
         },
         {
-          "title": "@Financhle auf X (25.11., 20:19)",
-          "url": "https://x.com/Financhle/status/2125670639776432623"
+          "title": "@jakeisinvestor auf X (25.11., 20:49)",
+          "url": "https://x.com/jakeisinvestor/status/2125678399821590569"
         },
         {
-          "title": "@mZbay_soylevol auf X (25.11., 20:23)",
-          "url": "https://x.com/mZbay_soylevol/status/2125671842627403844"
+          "title": "@rexstocks auf X (25.11., 21:05)",
+          "url": "https://x.com/rexstocks/status/2125682239057068254"
         }
       ],
-      "updatedAt": "2026-11-25T19:41:53Z"
+      "updatedAt": "2026-11-25T20:11:21Z"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": 15,
-      "postsCount": 19,
+      "postsCount": 20,
       "reason": "Raumfahrt-Aktien sind am Abend gefragt, RKLB bleibt im Plus. Viele verweisen auf den Auftragsbestand von 3,6 Mrd. $ und Neutron, einige stocken weiter auf.",
       "sources": [
         {
@@ -64,7 +64,7 @@
           "url": "https://x.com/risenfit/status/2125670804696535425"
         }
       ],
-      "updatedAt": "2026-11-25T19:41:53Z"
+      "updatedAt": "2026-11-25T20:11:21Z"
     }
   }
 }
