@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T16:36:00+01:00",
+  "updatedAt": "2026-11-25T17:05:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
       "score": -50,
-      "postsCount": 24,
-      "reason": "SPCX fällt auf rund 115,60 $ (-8 %), fast 20 % weniger als vor einer Woche. Auf X dreht sich alles um KI-Ausverkauf, Zollsorgen und die Tesla-Fusion.",
+      "postsCount": 25,
+      "reason": "SPCX rund 8 % im Minus, die Nasdaq fällt um 4 %. Gary Black rechnet mit 52 % Verwässerung durch die Tesla-Fusion, RBC erwartet den Deal Anfang 2027.",
       "sources": [
         {
-          "title": "@ticker_report auf X (25.11., 16:27)",
-          "url": "https://x.com/ticker_report/status/2125612420722794564"
+          "title": "@MarcJacksonLA auf X (25.11., 16:56)",
+          "url": "https://x.com/MarcJacksonLA/status/2125619685735686203"
         },
         {
-          "title": "@Bijon_BB auf X (25.11., 16:15)",
-          "url": "https://x.com/Bijon_BB/status/2125609309820314097"
+          "title": "@Atlantastanian auf X (25.11., 16:57)",
+          "url": "https://x.com/Atlantastanian/status/2125619957471773013"
         },
         {
-          "title": "@Maximilius31 auf X (25.11., 16:15)",
-          "url": "https://x.com/Maximilius31/status/2125609211753107821"
+          "title": "@Lance_Edelman auf X (25.11., 16:39)",
+          "url": "https://x.com/Lance_Edelman/status/2125615254054801431"
         }
       ],
-      "updatedAt": "2026-11-25T16:36:00+01:00"
+      "updatedAt": "2026-11-25T17:05:00+01:00"
     },
     "TSLA": {
       "mood": "schlecht",
       "score": -30,
       "postsCount": 25,
-      "reason": "Tesla bei rund 362,60 $ (-5,5 %) im Tech-Ausverkauf. Am Optionsmarkt überwiegen Wetten auf fallende Kurse, viele zweifeln an einem guten Fusionsdeal für Tesla.",
+      "reason": "Tesla sinkt mit SpaceX, der Widerstand gegen die Fusion wächst. Viele Tesla-Aktionäre sind unzufrieden, einige wollen trotzdem langfristig dabeibleiben.",
       "sources": [
         {
-          "title": "@ticker_report auf X (25.11., 16:30)",
-          "url": "https://x.com/ticker_report/status/2125612993387905179"
+          "title": "@MarcJacksonLA auf X (25.11., 16:56)",
+          "url": "https://x.com/MarcJacksonLA/status/2125619685735686203"
         },
         {
-          "title": "@Stop_Loss1 auf X (25.11., 16:23)",
-          "url": "https://x.com/Stop_Loss1/status/2125611356904927289"
+          "title": "@shaolung3 auf X (25.11., 16:46)",
+          "url": "https://x.com/shaolung3/status/2125617215668154686"
         },
         {
-          "title": "@ThomAquinas77 auf X (25.11., 16:20)",
-          "url": "https://x.com/ThomAquinas77/status/2125610508602560813"
+          "title": "@strengthPlan auf X (25.11., 16:59)",
+          "url": "https://x.com/strengthPlan/status/2125620483177456044"
         }
       ],
-      "updatedAt": "2026-11-25T16:36:00+01:00"
+      "updatedAt": "2026-11-25T17:05:00+01:00"
     },
     "RKLB": {
       "mood": "schlecht",
-      "score": -30,
-      "postsCount": 24,
-      "reason": "RKLB startet mit einer Kurslücke nach unten, der ganze Raumfahrtsektor leidet. Einige Trader nennen 37 $ als nächstes Ziel, wenige Fans stocken auf.",
+      "score": -25,
+      "postsCount": 25,
+      "reason": "RKLB leidet mit dem schwachen Tech-Markt. Einige hoffen auf einen nahen Boden und verweisen auf 4,69 Mrd. $ Netto-Cash, andere setzen weiter auf fallende Kurse.",
       "sources": [
         {
-          "title": "@GetIrked auf X (25.11., 16:20)",
-          "url": "https://x.com/GetIrked/status/2125610488252027319"
+          "title": "@penmarkresearch auf X (25.11., 16:48)",
+          "url": "https://x.com/penmarkresearch/status/2125617740627255560"
         },
         {
-          "title": "@carlcashmere auf X (25.11., 16:11)",
-          "url": "https://x.com/carlcashmere/status/2125608388180803979"
+          "title": "@JW_Anderson23 auf X (25.11., 16:38)",
+          "url": "https://x.com/JW_Anderson23/status/2125615173994000438"
         },
         {
-          "title": "@BullandBulk auf X (25.11., 16:31)",
-          "url": "https://x.com/BullandBulk/status/2125613476731388183"
+          "title": "@TCcapital_ auf X (25.11., 16:44)",
+          "url": "https://x.com/TCcapital_/status/2125616658903375894"
         }
       ],
-      "updatedAt": "2026-11-25T16:36:00+01:00"
+      "updatedAt": "2026-11-25T17:05:00+01:00"
     }
   }
 }
