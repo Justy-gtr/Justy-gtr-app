@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T14:15:00+01:00",
+  "updatedAt": "2026-11-25T14:42:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -20,
-      "postsCount": 24,
-      "reason": "SPCX fällt vorbörslich auf rund 122 $, unter den Ausgabepreis. Viele reden über die Tesla-Fusion, Analysten-Kursziele über 200 $ und 77 GW Rechenleistung im All.",
+      "score": -30,
+      "postsCount": 25,
+      "reason": "SPCX vorbörslich bei rund 122 $, Nasdaq-Futures fast 3 % im Minus. Thema sind die Fusion mit Tesla und die Haltefrist, die am 8.12. für fast 800 Mio. Aktien endet.",
       "sources": [
         {
-          "title": "@spcxGOD auf X (25.11., 13:34)",
-          "url": "https://x.com/spcxGOD/status/2125568866633826715"
+          "title": "@seemurfee auf X (25.11., 14:28)",
+          "url": "https://x.com/seemurfee/status/2125582498528706840"
         },
         {
-          "title": "@Kalshi_Finance auf X (25.11., 13:46)",
-          "url": "https://x.com/Kalshi_Finance/status/2125571704638644547"
+          "title": "@BReed186 auf X (25.11., 14:31)",
+          "url": "https://x.com/BReed186/status/2125583030194511921"
         },
         {
-          "title": "@AnthonyAbbe2 auf X (25.11., 13:36)",
-          "url": "https://x.com/AnthonyAbbe2/status/2125569306121642303"
+          "title": "@SpaceInvestor_D auf X (25.11., 14:13)",
+          "url": "https://x.com/SpaceInvestor_D/status/2125578664599302172"
         }
       ],
-      "updatedAt": "2026-11-25T14:15:00+01:00"
+      "updatedAt": "2026-11-25T14:42:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": -5,
+      "score": -10,
       "postsCount": 25,
-      "reason": "Tesla rutscht vorbörslich gut 2 % ab, ETFs haben Montag Aktien abgegeben. Die Fusionsgespräche mit SpaceX gelten vielen als Stütze für den Kurs.",
+      "reason": "Der ganze Markt ist vorbörslich rot, Tesla gibt leicht nach. Viel Gesprächsstoff: Fünf Direktoren verhandeln die Fusion, JPMorgan sieht einen schnellen Weg in den S&P 500.",
       "sources": [
         {
-          "title": "@Johaness212 auf X (25.11., 13:00)",
-          "url": "https://x.com/Johaness212/status/2125560201357267178"
+          "title": "@MosesWang16 auf X (25.11., 14:30)",
+          "url": "https://x.com/MosesWang16/status/2125582874187309377"
         },
         {
-          "title": "@QuantAlphaXXX auf X (25.11., 13:43)",
-          "url": "https://x.com/QuantAlphaXXX/status/2125571021818225032"
+          "title": "@kongbaest auf X (25.11., 14:31)",
+          "url": "https://x.com/kongbaest/status/2125583150357065979"
         },
         {
-          "title": "@tslaming auf X (25.11., 13:40)",
-          "url": "https://x.com/tslaming/status/2125570305452290078"
+          "title": "@wickedstocks auf X (25.11., 14:23)",
+          "url": "https://x.com/wickedstocks/status/2125581154073907251"
         }
       ],
-      "updatedAt": "2026-11-25T14:15:00+01:00"
+      "updatedAt": "2026-11-25T14:42:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
@@ -64,7 +64,7 @@
           "url": "https://x.com/marketsday/status/2125575922837524672"
         }
       ],
-      "updatedAt": "2026-11-25T14:15:00+01:00"
+      "updatedAt": "2026-11-25T14:42:00+01:00"
     }
   }
 }
