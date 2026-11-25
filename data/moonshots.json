@@ -1,157 +1,137 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-24T14:35:00+01:00",
-  "nextRun": "2026-11-25T07:00:00+01:00",
+  "updatedAt": "2026-11-25T07:25:00+01:00",
+  "nextRun": "2026-11-25T07:55:00+01:00",
   "long": [
     {
-      "name": "Fluence Energy",
-      "ticker": "FLNC",
-      "country": "US",
+      "name": "SaverOne 2014",
+      "ticker": "SVRE",
+      "country": "IL",
       "exchange": "Nasdaq",
-      "priceEur": 4.11,
-      "hint": "Rekord-Auftragseingang von 3,5 Mrd. $, vorbörslich rund +19 %",
+      "priceEur": 1.53,
+      "hint": "Nachbörslich rund +48 % nach Übernahme-Absichtserklärung",
       "bullets": [
-        "Fluence meldete für das vierte Quartal Aufträge von 3,5 Mrd. $, so viel wie nie.",
-        "Der Auftragsbestand stieg auf etwa 8,9 Mrd. $ nach 5,3 Mrd. $ vor einem Jahr.",
-        "Der Quartalsumsatz fiel dagegen auf 0,7 Mrd. $ nach 1,0 Mrd. $."
+        "Nachbörslich sprang die Aktie um 47,8 % auf 1,67 $, nach schon +22,8 % im Tageshandel.",
+        "Auslöser ist eine weitgehend unverbindliche Absichtserklärung zur Übernahme von Drew Therapeutics.",
+        "Winziger Nebenwert mit dünnem Handel, solche Sprünge kippen oft zur Eröffnung."
       ],
       "sources": [
         {
-          "title": "Stock Titan: Börse live am 24.11.2026 – größte Bewegungen vor US-Start",
-          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
+          "title": "StockSetups: After-Hours-Movers 24.11.2026 (SVRE)",
+          "url": "https://stocksetups.com/articles/after-hours-stock-movers-2026-11-24"
         },
         {
-          "title": "Yahoo Finance: FLNC vorbörslich (24.11., 14:21 Uhr)",
-          "url": "https://finance.yahoo.com/quote/FLNC/"
+          "title": "Stock Analysis: SVRE nachbörslich (24.11.)",
+          "url": "https://stockanalysis.com/stocks/svre/"
         }
       ]
     },
     {
-      "name": "Dick's Sporting Goods",
-      "ticker": "DKS",
-      "country": "US",
-      "exchange": "NYSE",
-      "priceEur": 140.92,
-      "hint": "Zahlen klar über den Erwartungen und höherer Jahresausblick, vorbörslich rund +16 %",
+      "name": "Thomas Cook (India)",
+      "ticker": "THOMASCOOK",
+      "country": "IN",
+      "exchange": "NSE",
+      "priceEur": 1.43,
+      "hint": "In Mumbai heute bis +12,7 %, Handel läuft bis 11 Uhr",
       "bullets": [
-        "Der bereinigte Gewinn je Aktie lag bei 1,94 $, erwartet waren 1,40 $.",
-        "Dick's hob den Jahresausblick auf 11,40 bis 12,25 $ je Aktie an.",
-        "Eine Lücke dieser Größe kann im Regulärhandel weiterlaufen oder sich schließen."
+        "Die Aktie stieg heute in Mumbai bis auf 145,56 Rupien, 12,7 % über dem Vortag.",
+        "Anlass sind eine neue Filiale in Kolkata und ein ISO-27001-Zertifikat für den Konzern.",
+        "Der Anlass ist eher dünn, das Plus kann bis Handelsschluss wieder schrumpfen."
       ],
       "sources": [
         {
-          "title": "CNBC: Größte Kursbewegungen am Dienstag (24.11.)",
-          "url": "https://www.cnbc.com/2026/11/24/stocks-moving-the-most-today-live-updates.html"
-        },
-        {
-          "title": "Stock Titan: Börse live am 24.11.2026 – größte Bewegungen vor US-Start",
-          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
-        },
-        {
-          "title": "Yahoo Finance: DKS vorbörslich (24.11., 14:21 Uhr)",
-          "url": "https://finance.yahoo.com/quote/DKS/"
+          "title": "Business Today: Thomas Cook shares jump 13% (25.11.2026)",
+          "url": "https://www.businesstoday.in/amp/markets/stocks/story/thomas-cook-shares-jump-13-two-factors-behind-the-rally-today-569302-2026-11-25"
         }
       ]
     },
     {
-      "name": "Abercrombie & Fitch",
-      "ticker": "ANF",
-      "country": "US",
-      "exchange": "NYSE",
-      "priceEur": 141.37,
-      "hint": "Rekordumsatz im dritten Quartal und höhere Prognose, vorbörslich rund +10 %",
+      "name": "Silicon2",
+      "ticker": "257720",
+      "country": "KR",
+      "exchange": "KOSDAQ",
+      "priceEur": 19.94,
+      "hint": "K-Beauty-Rally gegen den Kospi-Absturz, zeitweise +13,6 %",
       "bullets": [
-        "Der Umsatz im dritten Quartal stieg um 11 % auf den Rekord von 1,4 Mrd. $.",
-        "Abercrombie hob die Jahresprognose auf 13,70 bis 13,90 $ Gewinn je Aktie an.",
-        "Vorbörslich liegt die Aktie genau an der 10-%-Schwelle."
+        "Um 10:19 Uhr Seoul lag die Aktie 13,6 % höher bei 29.300 Won.",
+        "K-Beauty-Werte steigen auf Hoffnung auf mehr China-Geschäft nach Fortschritten beim Freihandelsabkommen.",
+        "Hana Securities nennt Silicon2 einen Top-Wert der Branche mit Kursziel 40.000 Won."
       ],
       "sources": [
         {
-          "title": "Stock Titan: Börse live am 24.11.2026 – größte Bewegungen vor US-Start",
-          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
-        },
-        {
-          "title": "Yahoo Finance: ANF vorbörslich (24.11., 14:21 Uhr)",
-          "url": "https://finance.yahoo.com/quote/ANF/"
+          "title": "Financial News Korea: Silicon2 Up 13%, APR Up 10% (25.11.2026)",
+          "url": "https://en.fnnews.com/news/202611251017260650"
         }
       ]
     }
   ],
   "short": [
     {
-      "name": "Shoe Station Group",
-      "ticker": "SHOE",
+      "name": "Ambarella",
+      "ticker": "AMBA",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 10.49,
-      "hint": "Umsatz gesunken und Prognose gesenkt, vorbörslich rund −19 %",
+      "priceEur": 25.37,
+      "hint": "Prognose weit unter Erwartung, nachbörslich rund −38 %",
       "bullets": [
-        "Der Quartalsumsatz fiel auf 280,0 Mio. $ nach 297,2 Mio. $ im Vorjahr.",
-        "Shoe Station senkte die Jahresprognose für Umsatz und bereinigten Gewinn.",
-        "Vorbörslich lag die Aktie zeitweise mehr als 20 % im Minus."
+        "Nachbörslich fiel die Aktie um 37,6 % auf 27,77 $, nach schon −20 % im Tageshandel.",
+        "Für das vierte Quartal erwartet Ambarella nur 70 bis 75 Mio. $ Umsatz statt rund 112 Mio. $.",
+        "Teurer und knapper Speicher lässt Kunden Aufträge verschieben oder streichen."
       ],
       "sources": [
         {
-          "title": "Stock Titan: Börse live am 24.11.2026 – größte Bewegungen vor US-Start",
-          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
+          "title": "MarketWatch: Ambarella Shares Down on 3Q Miss, Underwhelming 4Q Outlook",
+          "url": "https://www.marketwatch.com/story/ambarella-shares-down-on-3q-miss-underwhelming-4q-outlook-da4c5733"
         },
         {
-          "title": "Yahoo Finance: SHOE vorbörslich (24.11., 14:21 Uhr)",
-          "url": "https://finance.yahoo.com/quote/SHOE/"
+          "title": "Stock Analysis: AMBA nachbörslich (24.11.)",
+          "url": "https://stockanalysis.com/stocks/amba/"
         }
       ]
     },
     {
-      "name": "Hewlett Packard Enterprise",
-      "ticker": "HPE",
+      "name": "Urban Outfitters",
+      "ticker": "URBN",
       "country": "US",
-      "exchange": "NYSE",
-      "priceEur": 38.4,
-      "hint": "Warnung vor niedrigeren Margen im KI-Geschäft, vorbörslich rund −12 %",
+      "exchange": "Nasdaq",
+      "priceEur": 68.62,
+      "hint": "Schwache Anthropologie-Zahlen, nachbörslich rund −12 %",
       "bullets": [
-        "HPE übertraf die Erwartungen im vierten Quartal und hob den Ausblick an.",
-        "Anleger konzentrieren sich auf die Warnung vor niedrigeren Margen bei Cloud & AI.",
-        "Am Montag war die Aktie noch rund 13 % gestiegen, der Rückschlag trifft auf viel Gewinn."
+        "Nachbörslich fiel die Aktie um 12,3 % auf 75,10 $.",
+        "Anthropologie wuchs auf vergleichbarer Fläche nur um 1,7 %, die anderen Marken deutlich stärker.",
+        "Rekordumsatz und ein knapp besserer Gewinn je Aktie reichten den Anlegern nicht."
       ],
       "sources": [
         {
-          "title": "Investing.com: Vorbörsliche Bewegungen – HPE und Semtech fallen (24.11.)",
-          "url": "https://ng.investing.com/news/stock-market-news/premarket-movers-nvidia-slips-hpe-semtech-fall-2826435"
+          "title": "Investing.com: Urban Outfitters stock drops 10% as Anthropologie comps disappoint",
+          "url": "https://www.investing.com/news/earnings/urban-outfitters-stock-drops-10-as-anthropologie-comps-disappoint-5049112"
         },
         {
-          "title": "Stock Titan: Börse live am 24.11.2026 – größte Bewegungen vor US-Start",
-          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-24-2026"
-        },
-        {
-          "title": "Yahoo Finance: HPE vorbörslich (24.11., 14:21 Uhr)",
-          "url": "https://finance.yahoo.com/quote/HPE/"
+          "title": "Stock Analysis: URBN nachbörslich (24.11.)",
+          "url": "https://stockanalysis.com/stocks/urbn/"
         }
       ]
     },
     {
-      "name": "Analog Devices",
-      "ticker": "ADI",
+      "name": "Nutanix",
+      "ticker": "NTNX",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 310.96,
-      "hint": "Rekordzahlen, aber schwacher Ausblick, vorbörslich rund −10 %",
+      "priceEur": 45.62,
+      "hint": "Schwacher Jahresausblick und Chefwechsel, nachbörslich rund −8,5 %",
       "bullets": [
-        "Der Umsatz im vierten Quartal stieg um 42 % auf den Rekord von 4,37 Mrd. $.",
-        "Der Ausblick von 3,82 $ Gewinn je Aktie liegt unter den erwarteten rund 3,89 $.",
-        "Am Montag war die Aktie schon über 10 % gestiegen, die Erwartungen lagen hoch."
+        "Nachbörslich fiel die Aktie um 8,5 % auf 49,93 $.",
+        "Der Jahresausblick von 3,18 bis 3,23 Mrd. $ Umsatz liegt in der Mitte unter den erwarteten 3,22 Mrd. $.",
+        "Chef Rajiv Ramaswami geht, ein Nachfolger wird gesucht."
       ],
       "sources": [
         {
-          "title": "Investing.com: Warum Analog Devices heute fällt (24.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/why-is-analog-devices-stock-tumbling-today-93CH-5047890"
+          "title": "Investing.com: Nutanix stock drops 9% on weak FY guidance and CEO exit",
+          "url": "https://ng.investing.com/news/earnings/nutanix-stock-drops-9-on-weak-fy-guidance-and-ceo-exit-2827569"
         },
         {
-          "title": "Analog Devices: Rekordzahlen 4. Quartal und Ausblick (24.11.)",
-          "url": "https://investor.analog.com/news-releases/news-release-details/analog-devices-reports-record-fourth-quarter-and-fiscal-2026"
-        },
-        {
-          "title": "Yahoo Finance: ADI vorbörslich (24.11., 14:21 Uhr)",
-          "url": "https://finance.yahoo.com/quote/ADI/"
+          "title": "Stock Analysis: NTNX nachbörslich (24.11.)",
+          "url": "https://stockanalysis.com/stocks/ntnx/"
         }
       ]
     }
