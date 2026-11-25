@@ -76,58 +76,6 @@
       ]
     },
     {
-      "id": "evt-us-megaspeed-entity-list",
-      "title": "USA: Megaspeed steht jetzt auf der schwarzen Liste (Entity List)",
-      "date": "2026-11-24",
-      "time": "02:56",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "politik",
-      "company": null,
-      "tickers": [
-        "MRVL",
-        "SPCX"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Abgetrennt vom bisherigen Eintrag zur Exportsperre, nachdem die allgemeine Regel gegen die Umleitung über Drittländer am Mo 16.11. verkündet wurde (BIS). Offen bleibt, ob das Handelsministerium bis 30.11. auch Megaspeed aus Singapur – die frühere Firma von Alice Huang – auf die Entity List setzt. Dafür: Finanzminister Bessent fordert das öffentlich und gibt dem Handelsministerium die Schuld (CNBC); die neue Regel wurde laut BIS „von und auf Anweisung von“ Finanzministerium und Sicherheitsrat geschrieben, Bessents Linie setzt sich also durch. Dagegen: Handelsminister Lutnick hat den Schritt laut Axios und FT mehrfach gebremst, und das Treffen Trump–Xi diese Woche spricht gegen eine zusätzliche Eskalation sofort danach. 45 %: Der Druck ist hoch, aber mit der neuen Regel ist das dringendste Loch schon gestopft. Warum das für uns zählt: Strengere China-Regeln drücken Chipwerte wie Marvell; SPCX hängt über die KI-Stimmung mit dran. Stand Do 12:25: Folge der neuen US-Regel: Laut FT haben TSMC und Samsung einige Chiplieferungen an chinesische Kunden gestoppt, bis US-Lizenzen vorliegen; betroffen sein sollen auch KI-Chips etwa für Baidus Kunlun und ByteDance (Newsquawk/FT). Zu Megaspeed selbst nichts Neues. 45 % unverändert. Stand Di 14:20: Eingetreten. Das Handelsministerium hat Megaspeed aus Singapur und sechs weitere Firmen aus Südostasien per Federal-Register-Meldung auf die Entity List gesetzt, Lizenzen werden grundsätzlich abgelehnt (CNBC, Mo 20:56 Uhr Ostküste = Di 02:56 Berlin). Mit auf der Liste steht Apex Enterprise Solutions, eine Alibaba-Tochter in Singapur; Alibaba will rechtlich dagegen vorgehen (CNBC, Reuters). 45 % auf 100 %. Für die App: Das belastet die Chip-Stimmung zusätzlich zu den Gewinnmitnahmen nach der Montags-Rally.",
-      "example": false,
-      "sources": [
-        {
-          "title": "BIS: Regel gegen Fernzugriff auf US-KI-Chips (Pressemitteilung, 16.11.)",
-          "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology"
-        },
-        {
-          "title": "CNBC: Handelsministerium schließt Schlupfloch für China (16.11., 14:47 Berlin)",
-          "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html"
-        },
-        {
-          "title": "CNBC: Bessent fordert „dramatischen Umbau“ bei Nvidia und einen externen Chef (15.11.)",
-          "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html"
-        },
-        {
-          "title": "Axios: Lutnick bremste dreimal Trumps Vorgehen gegen die Umleitung von Nvidia-Chips nach China (11.11.)",
-          "url": "https://www.axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls"
-        },
-        {
-          "title": "FT: Handelsministerium verzögert Megaspeed auf der schwarzen Liste",
-          "url": "https://www.ft.com/content/afb6c960-a910-4d67-9588-73ba3bea5b06"
-        },
-        {
-          "title": "Newsquawk (FT): TSMC und Samsung stoppen einige Chiplieferungen an chinesische Kunden",
-          "url": "https://www.newsquawk.com/headlines/tsmc-2330-tt-and-samsung-electronics-005930-ks-suspend-shipments-of-certain-chips-to-chinese-customers-while-seeking-us-export-licences-under-new-restrictions-ft-reports"
-        },
-        {
-          "title": "CNBC: USA setzen Megaspeed auf die schwarze Liste (23.11., 20:56 Uhr Ostküste)",
-          "url": "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html"
-        },
-        {
-          "title": "Straits Times: Alibaba wehrt sich gegen Listung der Singapur-Tochter",
-          "url": "https://www.straitstimes.com/business/alibaba-disputes-us-blacklisting-of-singapore-subsidiary-over-chip-rerouting-risks"
-        }
-      ]
-    },
-    {
       "id": "evt-falcon9-ussf266",
       "title": "SpaceX: Falcon-9-Start USSF-266 für die Space Force (Di 24.11. 17:08) – gestartet",
       "date": "2026-11-24",
@@ -223,9 +171,9 @@
     },
     {
       "id": "evt-falcon9-ng25",
-      "title": "SpaceX: Falcon-9-Start Cygnus NG-25 mit Fracht zur ISS für die NASA (So 29.11. 16:50)",
+      "title": "SpaceX: Falcon-9-Start Cygnus NG-25 mit Fracht zur ISS für die NASA (So 29.11. 16:47)",
       "date": "2026-11-29",
-      "time": "16:50",
+      "time": "16:47",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -235,7 +183,7 @@
       ],
       "probabilityPct": 65,
       "impact": "niedrig",
-      "reasoning": "Die NASA plant den Start des Frachters Cygnus XL von Northrop Grumman (Mission CRS-25) auf einer Falcon 9 frühestens am So 29.11. um 10:49 Uhr Ostküstenzeit (16:49 Berlin) von Startrampe SLC-40 in Cape Canaveral (NASA). Die Startdatenbank führt 15:47 UTC (16:47 Berlin) mit Status „Go“ (Launch Library 2). An Bord: Versorgung und Experimente für die Raumstation, der Frachter bleibt bis Mai 2027 angedockt (NASA, Northrop Grumman). Bis zum Termin sind es zwei Wochen, ISS-Frachtflüge rutschen oft um ein, zwei Tage, etwa wegen Wetter oder Stationsplanung. Deshalb 65 % für genau diesen Tag. Kurswirkung gering, zeigt aber, dass die NASA auch fremde Frachter mit SpaceX fliegt. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 11:50: Laut Launch Library jetzt Fenster 15:47 UTC (16:47 Berlin), Status „Go“. Wahrscheinlichkeit unverändert. Stand Mo 14:20: Launch Library 2 nennt jetzt 15:50 UTC (16:50 Berlin), Status „Go“. Wahrscheinlichkeit unverändert.",
+      "reasoning": "Die NASA plant den Start des Frachters Cygnus XL von Northrop Grumman (Mission CRS-25) auf einer Falcon 9 frühestens am So 29.11. um 10:49 Uhr Ostküstenzeit (16:49 Berlin) von Startrampe SLC-40 in Cape Canaveral (NASA). Die Startdatenbank führt 15:47 UTC (16:47 Berlin) mit Status „Go“ (Launch Library 2). An Bord: Versorgung und Experimente für die Raumstation, der Frachter bleibt bis Mai 2027 angedockt (NASA, Northrop Grumman). Bis zum Termin sind es zwei Wochen, ISS-Frachtflüge rutschen oft um ein, zwei Tage, etwa wegen Wetter oder Stationsplanung. Deshalb 65 % für genau diesen Tag. Kurswirkung gering, zeigt aber, dass die NASA auch fremde Frachter mit SpaceX fliegt. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 11:50: Laut Launch Library jetzt Fenster 15:47 UTC (16:47 Berlin), Status „Go“. Wahrscheinlichkeit unverändert. Stand Mo 14:20: Launch Library 2 nennt jetzt 15:50 UTC (16:50 Berlin), Status „Go“. Wahrscheinlichkeit unverändert. Stand Mi 07:45: Launch Library 2 nennt wieder 15:47 UTC (16:47 Berlin), Status „Go“. 65 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -260,6 +208,10 @@
         },
         {
           "title": "Launch Library 2: Startliste (Stand Mo 23.11., 14:20)",
+          "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
+        },
+        {
+          "title": "Launch Library 2: kommende Starts",
           "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
         }
       ]
@@ -1776,7 +1728,7 @@
     },
     {
       "id": "evt-dell-q3",
-      "title": "Dell: Zahlen 3. Quartal mit KI-Server-Auftragsbestand",
+      "title": "Dell: Zahlen 3. Quartal mit KI-Server-Auftragsbestand (veröffentlicht)",
       "date": "2026-11-24",
       "time": "22:05",
       "timezone": "Europe/Berlin",
@@ -1787,9 +1739,9 @@
         "SPCX",
         "MRVL"
       ],
-      "probabilityPct": 98,
+      "probabilityPct": 100,
       "impact": "mittel",
-      "reasoning": "Dell legt am Di 24.11. Zahlen vor; der Auftragsbestand für KI-Server lag Ende Juli bei 95 Mrd. $ (Blockonomi). Nach dem KI-Kursrutsch dieser Woche gilt der Bericht als Hinweis, ob die Nachfrage nach KI-Servern hält, das betrifft SpaceX mit seinem KI-Rechengeschäft und Chipwerte wie Marvell. 95 %, weil der Termin genannt ist; die Uhrzeit steht noch nicht fest, üblich ist nach US-Börsenschluss. Stand Mo 08:00: Termin nach US-Börsenschluss am Di bestätigt; die Optionen preisen laut EarningsWatcher eine Bewegung von ±16,2 % ein – nach dem Chip-Einbruch vom Freitag der wichtigste KI-Test der verkürzten Woche. Uhrzeit 22:05 ist die übliche Zeit, nicht offiziell. 95 % unverändert. Stand Di 07:50: Dow Jones bestätigt in der Tagesvorschau 22:05 Uhr für Dells Zahlen zum 3. Quartal; HP Inc folgt schon um 22:00 Uhr (eigener Termin). 95 → 98 %, weil die Uhrzeit jetzt bestätigt ist.",
+      "reasoning": "Dell legt am Di 24.11. Zahlen vor; der Auftragsbestand für KI-Server lag Ende Juli bei 95 Mrd. $ (Blockonomi). Nach dem KI-Kursrutsch dieser Woche gilt der Bericht als Hinweis, ob die Nachfrage nach KI-Servern hält, das betrifft SpaceX mit seinem KI-Rechengeschäft und Chipwerte wie Marvell. 95 %, weil der Termin genannt ist; die Uhrzeit steht noch nicht fest, üblich ist nach US-Börsenschluss. Stand Mo 08:00: Termin nach US-Börsenschluss am Di bestätigt; die Optionen preisen laut EarningsWatcher eine Bewegung von ±16,2 % ein – nach dem Chip-Einbruch vom Freitag der wichtigste KI-Test der verkürzten Woche. Uhrzeit 22:05 ist die übliche Zeit, nicht offiziell. 95 % unverändert. Stand Di 07:50: Dow Jones bestätigt in der Tagesvorschau 22:05 Uhr für Dells Zahlen zum 3. Quartal; HP Inc folgt schon um 22:00 Uhr (eigener Termin). 95 → 98 %, weil die Uhrzeit jetzt bestätigt ist. Ergebnis Di 22:05: Rekordumsatz von 54,94 Mrd. $, bereinigter Gewinn je Aktie 9,45 $, beides klar über den Erwartungen. KI-Server-Umsatz +291 % auf 22 Mrd. $, Auftragsbestand für KI-Server auf Rekord bei 132,3 Mrd. $; Dell hebt die Jahresprognose (Dell, Reuters). Die Aktie stieg nachbörslich um rund 4 bis 5 % (Investing.com).",
       "example": false,
       "sources": [
         {
@@ -1803,91 +1755,18 @@
         {
           "title": "Dow Jones via finanznachrichten.de: Tagesvorschau Dienstag, 24. November (06:33 Uhr)",
           "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70210369-tagesvorschau-dienstag-24-november-015.htm"
-        }
-      ]
-    },
-    {
-      "kind": "external",
-      "company": null,
-      "timezone": "Europe/Berlin",
-      "example": false,
-      "id": "evt-pmi-flash-nov",
-      "title": "Einkaufsmanagerindizes November (Schnellschätzung): Deutschland, Eurozone, USA",
-      "date": "2026-11-23",
-      "time": "09:30",
-      "end": "2026-11-23T15:45:00+01:00",
-      "category": "makro",
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB",
-        "MRVL"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Heute kommen die ersten Einkaufsmanagerindizes für November: Deutschland üblich 09:30, Eurozone 10:00, USA 15:45. FXStreet schreibt, Anleger achten darauf, ob eine starke US-Wirtschaft die Renditen weiter treibt – genau das drückt seit Wochen Wachstumswerte. 100 %, weil der Termin feststeht. Stand Mo 12:00: Deutschland deutlich besser als erwartet – Composite-PMI 55,0 nach 53,4, höchster Wert seit März 2022; erwartet waren 53,2 (S&P Global, XTB). Die Preise steigen aber weiter überdurchschnittlich stark. USA folgt um 15:45. Stand Mo 16:20: USA etwas schwächer – Composite-PMI 54,6 nach 55,9, tiefster Wert seit vier Monaten, aber weiter kräftiges Wachstum; die Preise steigen etwas langsamer, bleiben aber hoch (S&P Global). Zinssorgen nimmt das kaum.",
-      "sources": [
-        {
-          "title": "FXStreet: Bitcoin +9 % zurück über 60.000 $ – was Montag für Aktien heißt (22.11.)",
-          "url": "https://www.fxstreet.com/cryptocurrencies/news/btc-9-how-it-reclaimed-60-000-and-what-to-expect-from-stocks-on-monday-202611221929"
         },
         {
-          "title": "S&P Global: Flash-PMI Deutschland November 55,0 (23.11., 09:30)",
-          "url": "https://www.pmi.spglobal.com/Public/Home/PressRelease/384f4bef4bc54065adf435223d2f15a5"
+          "title": "Dell Technologies: Ergebnisse 3. Quartal Geschäftsjahr 2027 (24.11.)",
+          "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results"
         },
         {
-          "title": "XTB: Deutschland-PMI 55,0, Konsens 53,2 (23.11.)",
-          "url": "https://www.xtb.com/de/Marktanalysen/Trading-News/eilmeldung-deutschland-legt-zu-frankreich-verliert-an-schwung-pmi-daten-zeigen-eine-sich-vergroessernde-kluft"
+          "title": "Reuters via Investing.com: Dell hebt Jahresprognose nach Rekordquartal (24.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024"
         },
         {
-          "title": "S&P Global: Flash-PMI USA November 54,6 (Vormonat 55,9), 23.11. 15:45",
-          "url": "https://www.pmi.spglobal.com/Public/Home/PressRelease/18abd879261e464fbcc1bc22d4ea64eb"
-        }
-      ]
-    },
-    {
-      "id": "evt-fed-williams-2311",
-      "title": "Fed: Rede von New-York-Fed-Chef John Williams",
-      "date": "2026-11-23",
-      "time": "22:00",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "fed",
-      "company": null,
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB",
-        "MRVL"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Williams spricht heute laut Reuters; die genaue Uhrzeit ist nicht genannt. Warum das zählt: Laut CME FedWatch rechnen Händler zu rund 96 % mit einer Zinserhöhung um 0,25 Punkte im Dezember (Reuters) – jedes Signal von Williams dazu bewegt Wachstumswerte wie SPCX, TSLA und RKLB. 95 %, weil der Auftritt angekündigt ist, aber keine Uhrzeit vorliegt. Stand Mo 14:30: Laut New York Fed spricht Williams um 16:00 Uhr Ostküstenzeit (22:00 Berlin) an der University of Mount Saint Vincent über Konjunktur und Geldpolitik, mit Fragerunde. Die Wahrscheinlichkeit für die Zinserhöhung im Dezember stieg seit Freitag von 92 auf 96 % (CNBC). 95 → 97 %, weil Ort und Uhrzeit jetzt feststehen. Stand Di 07:50: Eingetreten. Williams sagte, die Inflation sei noch zu hoch und die Fed habe noch Arbeit vor sich; höhere Zinsen seien mit der Zeit wahrscheinlich (CNBC). Zinsschritte bei aufeinanderfolgenden Sitzungen schließt er nicht aus, die Daten entscheiden (Reuters via Investing.com). Für Wachstumswerte heißt das: Die Zinserhöhung im Dezember bleibt das Hauptszenario. 97 → 100 %.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Reuters via Investing.com: US-Futures erholen sich nach KI-Ausverkauf (23.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-rebound-after-rough-week-for-ailinked-shares-5044594"
-        },
-        {
-          "title": "New York Fed: Williams spricht am 23.11. um 16:00 Uhr Ostküstenzeit (Mount Saint Vincent)",
-          "url": "https://www.newyorkfed.org/newsevents/mediaadvisory/2026/1113-2026"
-        },
-        {
-          "title": "CNBC: US-Renditen steigen, FedWatch 96 % für Zinserhöhung im Dezember (23.11.)",
-          "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html"
-        },
-        {
-          "title": "CNBC: Williams hält höhere Zinsen mit der Zeit für wahrscheinlich (23.11.)",
-          "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html"
-        },
-        {
-          "title": "Reuters via Investing.com: Williams – Inflation noch zu hoch, weitere Zinserhöhungen möglich (23.11.)",
-          "url": "https://www.investing.com/news/economy-news/fed-has-work-to-do-to-lower-inflation-williams-says-5046374"
-        },
-        {
-          "title": "New York Fed: Rede von John Williams (23.11.)",
-          "url": "https://www.newyorkfed.org/newsevents/speeches/2026/wil261123"
+          "title": "Investing.com: Warum die Dell-Aktie steigt (25.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-dell-technologies-stock-surging-today-93CH-5049300"
         }
       ]
     },
@@ -1909,7 +1788,7 @@
       ],
       "probabilityPct": 98,
       "impact": "hoch",
-      "reasoning": "Laut FXStreet kommt am Mi 25.11. der PCE-Bericht, der nächste große Inflationstest vor der Fed-Sitzung am 8./9.12.; nach dem heißen CPI preist der Markt eine Zinserhöhung im Dezember zu rund 92 % ein (FXStreet). Uhrzeit üblich 14:30 Berlin, nicht bestätigt. 95 %, weil Termine wegen der Feiertagswoche verschoben werden können. Stand Di 07:50: Laut Veröffentlichungsplan des BEA kommt der PCE-Bericht für Oktober am Mi 25.11. um 8:30 Uhr Ostküstenzeit (14:30 Berlin), zusammen mit der zweiten Schätzung des US-Wachstums im 3. Quartal; es ist der letzte große Inflationswert vor dem Fed-Entscheid am 9.12. (StockTitan). 95 → 98 %, weil Tag und Uhrzeit jetzt amtlich feststehen. Stand Di 14:20: Händler preisen laut CME FedWatch eine Zinserhöhung um 0,25 Punkte im Dezember zu etwa 95 % ein, eine um 0,5 Punkte zu etwa 5 % (Yahoo Finance). Die PCE-Daten am Mittwoch gelten als letzter großer Test vor der Fed-Sitzung (Reuters). 98 % unverändert.",
+      "reasoning": "Laut FXStreet kommt am Mi 25.11. der PCE-Bericht, der nächste große Inflationstest vor der Fed-Sitzung am 8./9.12.; nach dem heißen CPI preist der Markt eine Zinserhöhung im Dezember zu rund 92 % ein (FXStreet). Uhrzeit üblich 14:30 Berlin, nicht bestätigt. 95 %, weil Termine wegen der Feiertagswoche verschoben werden können. Stand Di 07:50: Laut Veröffentlichungsplan des BEA kommt der PCE-Bericht für Oktober am Mi 25.11. um 8:30 Uhr Ostküstenzeit (14:30 Berlin), zusammen mit der zweiten Schätzung des US-Wachstums im 3. Quartal; es ist der letzte große Inflationswert vor dem Fed-Entscheid am 9.12. (StockTitan). 95 → 98 %, weil Tag und Uhrzeit jetzt amtlich feststehen. Stand Di 14:20: Händler preisen laut CME FedWatch eine Zinserhöhung um 0,25 Punkte im Dezember zu etwa 95 % ein, eine um 0,5 Punkte zu etwa 5 % (Yahoo Finance). Die PCE-Daten am Mittwoch gelten als letzter großer Test vor der Fed-Sitzung (Reuters). 98 % unverändert. Stand Mi 07:45: dpa-AFX bestätigt 14:30 Uhr; gleichzeitig kommen die zweite Schätzung des BIP im 3. Quartal, die Erstanträge auf Arbeitslosenhilfe und die Aufträge für langlebige Güter. Nach dem Tech-Abverkauf achten Anleger laut Bloomberg besonders auf die Inflation, weil sie den Fed-Kurs bestimmt. 98 % unverändert.",
       "sources": [
         {
           "title": "FXStreet: Bitcoin +9 % zurück über 60.000 $ – was Montag für Aktien heißt (22.11.)",
@@ -1926,6 +1805,14 @@
         {
           "title": "Reuters via Investing.com: Nasdaq-Futures fallen, PCE als letzter Test vor der Fed (24.11.)",
           "url": "https://www.investing.com/news/economy-news/wall-st-futures-dip-as-chip-stocks-cool-after-nvidiafueled-rally-5047567"
+        },
+        {
+          "title": "dpa-AFX via finanzen.net: Tagesvorschau Termine am 25. November 2026",
+          "url": "https://www.finanzen.net/nachricht/aktien/tagesvorschau-termine-am-25-november-2026-16085130"
+        },
+        {
+          "title": "Bloomberg via swissinfo: Aktienverluste weiten sich aus, KI-Handel wankt (Mi 25.11., 05:52)",
+          "url": "https://www.swissinfo.ch/eng/stock-losses-build-as-ai-trade-falters%2C-oil-drops%3A-markets-wrap/92432172"
         }
       ]
     },
@@ -1957,33 +1844,6 @@
         {
           "title": "Fortune: Dow-Futures +800 Punkte, Nasdaq-Futures fast +3 % nach der Korrektur (22.11.)",
           "url": "https://fortune.com/2026/11/22/stock-market-today-dow-futures-sp500-nasdaq-correction-ai-bust/"
-        }
-      ]
-    },
-    {
-      "timezone": "Europe/Berlin",
-      "example": false,
-      "id": "evt-acea-okt",
-      "title": "Europa: Pkw-Neuzulassungen Oktober (ACEA) – Tesla +76,6 %",
-      "date": "2026-11-24",
-      "time": "06:00",
-      "kind": "external",
-      "category": "zahlen",
-      "company": null,
-      "tickers": [
-        "TSLA"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Eingetreten. Der Herstellerverband ACEA meldet für Oktober 12.116 Tesla-Neuzulassungen in EU, EFTA und Großbritannien nach 6.859 vor einem Jahr (+76,6 %); allein in der EU 10.166 (+83,5 %), Marktanteil 1,1 % nach 0,6 %. Seit Jahresbeginn sind es 272.846 (+51,1 %). Der gesamte EU-Markt wuchs bis Oktober um 5,4 %, Elektroautos kommen auf 23,4 % Anteil (ACEA). Für Tesla ist das nach dem schwachen Vorjahr eine klare Erholung in Europa.",
-      "sources": [
-        {
-          "title": "ACEA: Pkw-Neuzulassungen Oktober 2026, Pressemitteilung (24.11., 06:00 Uhr)",
-          "url": "https://www.acea.auto/files/Press_release_car_registrations_October_2026.pdf"
-        },
-        {
-          "title": "ACEA: Neuzulassungen bis Oktober +5,4 %, Elektroanteil 23,4 % (24.11.)",
-          "url": "https://www.acea.auto/pc-registrations/new-car-registrations-5-4-in-october-2026-year-to-date-battery-electric-23-4-market-share/"
         }
       ]
     },
@@ -2099,7 +1959,7 @@
       "timezone": "Europe/Berlin",
       "example": false,
       "id": "evt-hp-q4",
-      "title": "HP Inc: Zahlen 4. Quartal",
+      "title": "HP Inc: Zahlen 4. Quartal (veröffentlicht)",
       "date": "2026-11-24",
       "time": "22:00",
       "kind": "external",
@@ -2108,13 +1968,25 @@
       "tickers": [
         "MRVL"
       ],
-      "probabilityPct": 97,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "HP Inc legt um 22:00 Uhr Zahlen zum 4. Quartal vor, fünf Minuten vor Dell (Dow Jones). HP zeigt, ob der PC-Markt durch KI-Rechner anzieht und wie stark höhere Speicherpreise die Marge drücken; für SpaceX und Marvell ist Dell am selben Abend wichtiger. 97 %, weil der Termin angekündigt ist.",
+      "reasoning": "HP Inc legt um 22:00 Uhr Zahlen zum 4. Quartal vor, fünf Minuten vor Dell (Dow Jones). HP zeigt, ob der PC-Markt durch KI-Rechner anzieht und wie stark höhere Speicherpreise die Marge drücken; für SpaceX und Marvell ist Dell am selben Abend wichtiger. 97 %, weil der Termin angekündigt ist. Ergebnis Di 22:00: Umsatz 16,0 Mrd. $ (+9,3 %), bereinigter Gewinn je Aktie 0,83 $, beides über den Erwartungen; höhere Dividende. Der Ausblick für 2027 (Gewinn je Aktie 3,15 bis 3,45 $) fällt wegen steigender Speicherpreise vorsichtig aus, die Aktie drehte nachbörslich ins Minus (HP, Investing.com, MarketWatch).",
       "sources": [
         {
           "title": "Dow Jones via finanznachrichten.de: Tagesvorschau Dienstag, 24. November (06:33 Uhr)",
           "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70210369-tagesvorschau-dienstag-24-november-015.htm"
+        },
+        {
+          "title": "HP Inc: Ergebnisse Geschäftsjahr 2026 und 4. Quartal (24.11.)",
+          "url": "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Reports-Fiscal-2026-Full-Year-and-Fourth-Quarter-Results-Announces-Dividend-Increase/default.aspx"
+        },
+        {
+          "title": "Investing.com: HP dreht nachbörslich trotz Zahlen über den Erwartungen (24.11.)",
+          "url": "https://www.investing.com/news/earnings/hp-soars-after-hours-on-quarterly-results-beat-5049038"
+        },
+        {
+          "title": "MarketWatch: HP gibt „vorsichtigen“ Ausblick wegen steigender Speicherkosten",
+          "url": "https://www.marketwatch.com/story/hp-offers-prudent-guidance-amid-rising-memory-costs-c2356f31"
         }
       ]
     },
@@ -2133,9 +2005,9 @@
         "SPCX",
         "MRVL"
       ],
-      "probabilityPct": 65,
+      "probabilityPct": 55,
       "impact": "hoch",
-      "reasoning": "Laut Wall Street Journal will US-Handelsbeauftragter Jamieson Greer die Ergebnisse seiner Untersuchung zu Industriesubventionen in China, der EU und 14 weiteren Ländern schon diese Woche vorlegen, der Zeitpunkt kann sich aber verschieben. Geplant sind höhere Zölle auf die meisten Waren; Stahl, Aluminium und Autos sollen ausgenommen sein. Für EU, Japan und Südkorea wären bis zu 15 % möglich, China soll stärker getroffen werden – Bloomberg nannte im August zusätzliche 7,5 % auf dann 20 % (Yahoo Finance, Anadolu). 45 %, weil die Quelle selbst von „frühestens diese Woche“ spricht, Thanksgiving die Woche verkürzt und der China-Waffenstillstand bis 10.1. läuft. Für Tesla zählen China-Lieferketten, für Chipwerte die Reaktion Pekings. Stand Di 20:25: Axios berichtet, die Regierung wolle die neuen, gezielten Zölle „womöglich schon heute Abend“ (US-Zeit, also in der Nacht zu Mittwoch deutscher Zeit) verkünden; die Sätze sollen die Obergrenzen der Handelsabkommen einhalten, für EU und Japan also höchstens 15 % (Axios). Auch Bloomberg Law schrieb von einer Erhöhung „schon am Dienstag“, für China sind zusätzliche 7,5 Prozentpunkte auf dann 20 % im Gespräch (Bloomberg Law). Zwei unabhängige Berichte über einen unmittelbar bevorstehenden Termin, der Handelsbeauftragte hatte zudem „sehr bald“ angekündigt: 45 → 65 %. Offen bleibt, ob es nur ein Vorschlag mit Anhörungsfrist wird.",
+      "reasoning": "Laut Wall Street Journal will US-Handelsbeauftragter Jamieson Greer die Ergebnisse seiner Untersuchung zu Industriesubventionen in China, der EU und 14 weiteren Ländern schon diese Woche vorlegen, der Zeitpunkt kann sich aber verschieben. Geplant sind höhere Zölle auf die meisten Waren; Stahl, Aluminium und Autos sollen ausgenommen sein. Für EU, Japan und Südkorea wären bis zu 15 % möglich, China soll stärker getroffen werden – Bloomberg nannte im August zusätzliche 7,5 % auf dann 20 % (Yahoo Finance, Anadolu). 45 %, weil die Quelle selbst von „frühestens diese Woche“ spricht, Thanksgiving die Woche verkürzt und der China-Waffenstillstand bis 10.1. läuft. Für Tesla zählen China-Lieferketten, für Chipwerte die Reaktion Pekings. Stand Di 20:25: Axios berichtet, die Regierung wolle die neuen, gezielten Zölle „womöglich schon heute Abend“ (US-Zeit, also in der Nacht zu Mittwoch deutscher Zeit) verkünden; die Sätze sollen die Obergrenzen der Handelsabkommen einhalten, für EU und Japan also höchstens 15 % (Axios). Auch Bloomberg Law schrieb von einer Erhöhung „schon am Dienstag“, für China sind zusätzliche 7,5 Prozentpunkte auf dann 20 % im Gespräch (Bloomberg Law). Zwei unabhängige Berichte über einen unmittelbar bevorstehenden Termin, der Handelsbeauftragte hatte zudem „sehr bald“ angekündigt: 45 → 65 %. Offen bleibt, ob es nur ein Vorschlag mit Anhörungsfrist wird. Stand Mi 07:45: Am Dienstagabend kam die Verkündung nicht. AP schrieb um 02:17 Uhr Berliner Zeit weiter nur, die Zölle würden „bald“ angekündigt; Bloomberg meldet, die Aufschläge sollen die Obergrenzen der Handelsabkommen nicht überschreiten, HSBC hält sie für weitgehend eingepreist. Eine amtliche Veröffentlichung gibt es noch nicht. Weil Donnerstag Thanksgiving ist und das Fenster bis Freitag kurz wird: 65 → 55 %.",
       "example": false,
       "sources": [
         {
@@ -2157,6 +2029,67 @@
         {
           "title": "Bloomberg Law: USA bereiten Zollerhöhung auf Waren aus China und der EU vor, schon ab Dienstag (24.11.)",
           "url": "https://news.bloomberglaw.com/international-trade/us-readies-tariff-hike-on-china-eu-goods-as-soon-as-tuesday"
+        },
+        {
+          "title": "AP: USA bereiten Zölle auf China, EU und weitere Länder wegen Subventionen vor (24.11., aktualisiert 25.11. 02:17 Berlin)",
+          "url": "https://apnews.com/article/trump-tariffs-china-european-union-d97ed6f4017152ca4c18de5517db6d51"
+        },
+        {
+          "title": "Bloomberg via swissinfo: Aktienverluste weiten sich aus, KI-Handel wankt (Mi 25.11., 05:52)",
+          "url": "https://www.swissinfo.ch/eng/stock-losses-build-as-ai-trade-falters%2C-oil-drops%3A-markets-wrap/92432172"
+        }
+      ]
+    },
+    {
+      "id": "evt-de-bip-q3",
+      "title": "Deutschland: BIP 3. Quartal (zweite Veröffentlichung) mit Privatkonsum",
+      "date": "2026-11-25",
+      "time": "08:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "konjunktur",
+      "company": null,
+      "tickers": [
+        "TSLA"
+      ],
+      "probabilityPct": 98,
+      "impact": "niedrig",
+      "reasoning": "Das Statistische Bundesamt legt um 08:00 Uhr die Details zum Wachstum im 3. Quartal vor, dazu Privatkonsum und Staatsausgaben (dpa-AFX). Für die US-Werte der App ist der Termin Nebensache; er färbt höchstens die Stimmung am deutschen Handelsplatz am Morgen. 98 %, weil der Termin amtlich angekündigt ist.",
+      "example": false,
+      "sources": [
+        {
+          "title": "dpa-AFX via finanzen.net: Tagesvorschau Termine am 25. November 2026",
+          "url": "https://www.finanzen.net/nachricht/aktien/tagesvorschau-termine-am-25-november-2026-16085130"
+        }
+      ]
+    },
+    {
+      "id": "evt-fed-beige-book-nov",
+      "title": "Fed: Konjunkturbericht Beige Book",
+      "date": "2026-11-25",
+      "time": "20:00",
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "fed",
+      "company": null,
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "RKLB",
+        "MRVL"
+      ],
+      "probabilityPct": 97,
+      "impact": "mittel",
+      "reasoning": "Um 20:00 Uhr veröffentlicht die Fed ihr Beige Book, die Sammlung von Berichten aus den zwölf Bezirken (dpa-AFX). Es ist das letzte vor dem Zinsentscheid am 9.12. und zeigt, wie Firmen Preise, Löhne und Nachfrage sehen. Nach dem PCE-Wert am Nachmittag kann es die Zinserwartungen noch einmal verschieben. 97 %, weil der Termin fest im Fed-Kalender steht.",
+      "example": false,
+      "sources": [
+        {
+          "title": "dpa-AFX via finanzen.net: Tagesvorschau Termine am 25. November 2026",
+          "url": "https://www.finanzen.net/nachricht/aktien/tagesvorschau-termine-am-25-november-2026-16085130"
+        },
+        {
+          "title": "Federal Reserve: Beige Book",
+          "url": "https://www.federalreserve.gov/monetarypolicy/beige-book-default.htm"
         }
       ]
     }

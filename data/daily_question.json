@@ -1,41 +1,80 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-24-rklb",
-    "date": "2026-11-24",
-    "question": "Schließt RKLB am Dienstag, 24. November, an der Nasdaq höher als am Montag (49,63 $)?",
-    "karlAnswer": "ja",
-    "karlReason": "Knapp „ja“, etwa 55 zu 45. Nachbörslich stand RKLB zuletzt bei 50,25 $, gut 1 % über dem Schluss (Kursdaten der App), der Nasdaq-100-Future liegt am Morgen leicht im Plus (+0,2 %), und Asien zieht nach: Kospi +6,2 %, Nikkei +3,8 % (Yahoo). Dagegen spricht: Nach +9,3 % an einem Tag sind Gewinnmitnahmen naheliegend, und um 16:00 Uhr kommt das US-Verbrauchervertrauen, das die Zinssorgen neu anfachen kann (Dow Jones). Die neuen Form-144-Meldungen sind kleine Routineverkäufe. Karl lag gestern mit „ja“ richtig.",
+    "id": "2026-11-25-rklb",
+    "date": "2026-11-25",
+    "question": "Schließt RKLB am Mittwoch, 25. November, an der Nasdaq höher als am Dienstag (45,98 $)?",
+    "karlAnswer": "nein",
+    "karlReason": "Knapp „nein“, etwa 55 zu 45. Der Nasdaq-100-Future liegt am Morgen rund 1,4 % unter dem Vortag (Yahoo), in Asien fielen Taiwan um 5 % und Südkorea um 5,7 %, weil Zweifel am KI-Boom wachsen (Bloomberg). Nachbörslich stand RKLB zuletzt bei 45,69 $, leicht unter dem Schluss (Kursdaten der App). Dafür spricht: Nach zwei Tagen mit zusammen über 7 % Minus und vor dem langen Thanksgiving-Wochenende sind Erholungen möglich, und Dell hat mit starken KI-Zahlen überzeugt (Reuters). Um 14:30 Uhr kommen PCE-Inflation und BIP (dpa-AFX). Eigene Rocket-Lab-Nachrichten gibt es über Nacht nicht. Karl lag gestern mit „ja“ daneben.",
     "outcome": null,
-    "resolvesAt": "2026-11-24T22:15:00+01:00",
+    "resolvesAt": "2026-11-25T22:15:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: RKLB historische Kurse (Schluss Mo 23.11.)",
+        "title": "Yahoo Finance: RKLB historische Kurse (Schluss Di 24.11. 45,98 $)",
         "url": "https://finance.yahoo.com/quote/RKLB/history/"
       },
       {
-        "title": "Justy GT-R Kursdaten (prices.json, Nachbörse 24.11., 01:59 Uhr)",
-        "url": "https://github.com/Justy-gtr/Justy-gtr-app/blob/main/data/prices.json"
-      },
-      {
-        "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (Di 24.11., 07:33)",
+        "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (Mi 25.11., 07:24)",
         "url": "https://finance.yahoo.com/quote/NQ%3DF/"
       },
       {
-        "title": "Yahoo Finance: Kospi ^KS11",
-        "url": "https://finance.yahoo.com/quote/%5EKS11/"
+        "title": "Bloomberg via swissinfo: Aktienverluste weiten sich aus, KI-Handel wankt (Mi 25.11., 05:52)",
+        "url": "https://www.swissinfo.ch/eng/stock-losses-build-as-ai-trade-falters%2C-oil-drops%3A-markets-wrap/92432172"
       },
       {
-        "title": "Yahoo Finance: Nikkei 225 ^N225",
-        "url": "https://finance.yahoo.com/quote/%5EN225/"
+        "title": "Justy GT-R Kursdaten (prices.json, Nachbörse 25.11., 01:59 Uhr)",
+        "url": "https://github.com/Justy-gtr/Justy-gtr-app/blob/main/data/prices.json"
       },
       {
-        "title": "Dow Jones via finanznachrichten.de: Tagesvorschau Dienstag, 24. November (06:33 Uhr)",
-        "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70210369-tagesvorschau-dienstag-24-november-015.htm"
+        "title": "Reuters via Investing.com: Dell hebt Jahresprognose nach Rekordquartal mit KI-Servern (24.11.)",
+        "url": "https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024"
+      },
+      {
+        "title": "dpa-AFX via finanzen.net: Tagesvorschau Termine am 25. November 2026",
+        "url": "https://www.finanzen.net/nachricht/aktien/tagesvorschau-termine-am-25-november-2026-16085130"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-24-rklb",
+      "date": "2026-11-24",
+      "question": "Schließt RKLB am Dienstag, 24. November, an der Nasdaq höher als am Montag (49,63 $)?",
+      "karlAnswer": "ja",
+      "karlReason": "Knapp „ja“, etwa 55 zu 45. Nachbörslich stand RKLB zuletzt bei 50,25 $, gut 1 % über dem Schluss (Kursdaten der App), der Nasdaq-100-Future liegt am Morgen leicht im Plus (+0,2 %), und Asien zieht nach: Kospi +6,2 %, Nikkei +3,8 % (Yahoo). Dagegen spricht: Nach +9,3 % an einem Tag sind Gewinnmitnahmen naheliegend, und um 16:00 Uhr kommt das US-Verbrauchervertrauen, das die Zinssorgen neu anfachen kann (Dow Jones). Die neuen Form-144-Meldungen sind kleine Routineverkäufe. Karl lag gestern mit „ja“ richtig. Aufgelöst: RKLB schloss Di bei 45,98 $ (−7,4 %) – „nein“, Karl lag daneben.",
+      "outcome": "nein",
+      "resolvesAt": "2026-11-24T22:15:00+01:00",
+      "sources": [
+        {
+          "title": "Yahoo Finance: RKLB historische Kurse (Schluss Mo 23.11.)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        },
+        {
+          "title": "Justy GT-R Kursdaten (prices.json, Nachbörse 24.11., 01:59 Uhr)",
+          "url": "https://github.com/Justy-gtr/Justy-gtr-app/blob/main/data/prices.json"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (Di 24.11., 07:33)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
+        },
+        {
+          "title": "Yahoo Finance: Kospi ^KS11",
+          "url": "https://finance.yahoo.com/quote/%5EKS11/"
+        },
+        {
+          "title": "Yahoo Finance: Nikkei 225 ^N225",
+          "url": "https://finance.yahoo.com/quote/%5EN225/"
+        },
+        {
+          "title": "Dow Jones via finanznachrichten.de: Tagesvorschau Dienstag, 24. November (06:33 Uhr)",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70210369-tagesvorschau-dienstag-24-november-015.htm"
+        },
+        {
+          "title": "Yahoo Finance: RKLB historische Kurse (Schluss Di 24.11. 45,98 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        }
+      ]
+    },
     {
       "id": "2026-11-23-rklb",
       "date": "2026-11-23",
