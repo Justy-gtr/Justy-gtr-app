@@ -1,66 +1,86 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-25T07:42:00+01:00",
-  "nextRun": "2026-11-25T14:00:00+01:00",
+  "updatedAt": "2026-11-25T14:25:00+01:00",
+  "nextRun": "2026-11-26T07:00:00+01:00",
   "long": [
     {
       "name": "SaverOne 2014",
       "ticker": "SVRE",
       "country": "IL",
       "exchange": "Nasdaq",
-      "priceEur": 1.53,
-      "hint": "Nachbörslich rund +48 % nach Übernahme-Absichtserklärung",
+      "priceEur": 1.38,
+      "hint": "Vorbörslich rund +34 % nach Übernahme-Absichtserklärung",
       "bullets": [
-        "Nachbörslich sprang die Aktie um 47,8 % auf 1,67 $, nach schon +22,8 % im Tageshandel.",
-        "Auslöser ist eine weitgehend unverbindliche Absichtserklärung zur Übernahme von Drew Therapeutics.",
+        "Vorbörslich steht die Aktie bei 1,51 $, 33,7 % über dem Dienstagsschluss von 1,13 $.",
+        "Auslöser ist eine Absichtserklärung zur Übernahme von Drew Therapeutics.",
         "Winziger Nebenwert mit dünnem Handel, solche Sprünge kippen oft zur Eröffnung."
       ],
       "sources": [
         {
-          "title": "StockSetups: After-Hours-Movers 24.11.2026 (SVRE)",
-          "url": "https://stocksetups.com/articles/after-hours-stock-movers-2026-11-24"
+          "title": "Benzinga: 20 Aktien vorbörslich in Bewegung, SVRE +37 % (Mi 25.11.)",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63615426/why-li-auto-shares-are-trading-higher-by-5-here-are-20-stocks-moving-premarket"
         },
         {
-          "title": "Stock Analysis: SVRE nachbörslich (24.11.)",
-          "url": "https://stockanalysis.com/stocks/svre/"
+          "title": "Yahoo Finance: SVRE vorbörslich (Mi 25.11., 14:20)",
+          "url": "https://finance.yahoo.com/quote/SVRE/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD (Mi 25.11., 14:22: 1,0946)",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
     },
     {
-      "name": "Thomas Cook (India)",
-      "ticker": "THOMASCOOK",
-      "country": "IN",
-      "exchange": "NSE",
-      "priceEur": 1.43,
-      "hint": "In Mumbai heute bis +12,7 %, Handel läuft bis 11 Uhr",
+      "name": "DarkIris",
+      "ticker": "DKI",
+      "country": "HK",
+      "exchange": "Nasdaq",
+      "priceEur": 1.03,
+      "hint": "Vorbörslich rund +24 % nach Spiele-Zukauf und Aktienkauf des Chefs",
       "bullets": [
-        "Die Aktie stieg heute in Mumbai bis auf 145,56 Rupien, 12,7 % über dem Vortag.",
-        "Anlass sind eine neue Filiale in Kolkata und ein ISO-27001-Zertifikat für den Konzern.",
-        "Der Anlass ist eher dünn, das Plus kann bis Handelsschluss wieder schrumpfen."
+        "Vorbörslich steht die Aktie bei 1,13 $, 24 % über dem Dienstagsschluss von 0,91 $.",
+        "DarkIris kauft Mobile-Spiele aus China für 30 Mio. $, bezahlt in eigenen Aktien und Optionsscheinen.",
+        "Chef Hong Zhifang kauft selbst 420.000 Aktien zu 1,20 $, also über dem Vortageskurs."
       ],
       "sources": [
         {
-          "title": "Business Today: Thomas Cook shares jump 13% (25.11.2026)",
-          "url": "https://www.businesstoday.in/amp/markets/stocks/story/thomas-cook-shares-jump-13-two-factors-behind-the-rally-today-569302-2026-11-25"
+          "title": "Benzinga: DarkIris nachbörslich über 35 % höher nach 30-Mio.-$-Spiele-Deal (24.11.)",
+          "url": "https://www.benzinga.com/markets/equities/26/11/63614501/darkiris-shares-jump-after-hours-mobile-games-acquisition-ceo-share-purchase"
+        },
+        {
+          "title": "SEC: DarkIris Form 6-K (24.11.)",
+          "url": "https://www.sec.gov/Archives/edgar/data/2058584/000149315226054034/form6-k.htm"
+        },
+        {
+          "title": "Yahoo Finance: DKI vorbörslich (Mi 25.11., 14:20)",
+          "url": "https://finance.yahoo.com/quote/DKI/"
         }
       ]
     },
     {
-      "name": "Silicon2",
-      "ticker": "257720",
-      "country": "KR",
-      "exchange": "KOSDAQ",
-      "priceEur": 19.94,
-      "hint": "K-Beauty-Rally gegen den Kospi-Absturz, zeitweise +13,6 %",
+      "name": "Brand Engagement Network",
+      "ticker": "BNAI",
+      "country": "US",
+      "exchange": "Nasdaq",
+      "priceEur": 7.06,
+      "hint": "Vorbörslich rund +16 % nach Quartalszahlen über Erwartung",
       "bullets": [
-        "Um 10:19 Uhr Seoul lag die Aktie 13,6 % höher bei 29.300 Won.",
-        "K-Beauty-Werte steigen auf Hoffnung auf mehr China-Geschäft nach Fortschritten beim Freihandelsabkommen.",
-        "Hana Securities nennt Silicon2 einen Top-Wert der Branche mit Kursziel 40.000 Won."
+        "Vorbörslich steht die Aktie bei 7,73 $, 16,2 % über dem Dienstagsschluss von 6,65 $.",
+        "Der Verlust je Aktie lag bei 0,17 $ statt erwarteter 0,66 $, der Umsatz stieg auf 1,96 Mio. $.",
+        "Die Firma warnt selbst vor Zweifeln am Fortbestand und hat Probleme mit den Nasdaq-Regeln."
       ],
       "sources": [
         {
-          "title": "Financial News Korea: Silicon2 Up 13%, APR Up 10% (25.11.2026)",
-          "url": "https://en.fnnews.com/news/202611251017260650"
+          "title": "Investing.com: Warum die BNAI-Aktie heute steigt (25.11.)",
+          "url": "https://za.investing.com/news/stock-market-news/why-is-brand-engagement-network-stock-surging-today-93CH-4596534"
+        },
+        {
+          "title": "Benzinga: 3.167 % Umsatzplus kann Finanzprobleme nicht verdecken",
+          "url": "https://www.benzinga.com/markets/earnings/26/11/63576061/a-3167-revenue-surge-cant-hide-this-ai-companys-financial-troubles"
+        },
+        {
+          "title": "Yahoo Finance: BNAI vorbörslich (Mi 25.11., 14:20)",
+          "url": "https://finance.yahoo.com/quote/BNAI/"
         }
       ]
     }
@@ -71,10 +91,10 @@
       "ticker": "AMBA",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 25.37,
-      "hint": "Prognose weit unter Erwartung, nachbörslich rund −38 %",
+      "priceEur": 26.49,
+      "hint": "Prognose weit unter Erwartung, vorbörslich rund −35 %",
       "bullets": [
-        "Nachbörslich fiel die Aktie um 37,6 % auf 27,77 $, nach schon −20 % im Tageshandel.",
+        "Vorbörslich steht die Aktie bei 29,00 $, 34,8 % unter dem Dienstagsschluss von 44,47 $.",
         "Für das vierte Quartal erwartet Ambarella nur 70 bis 75 Mio. $ Umsatz statt rund 112 Mio. $.",
         "Teurer und knapper Speicher lässt Kunden Aufträge verschieben oder streichen."
       ],
@@ -84,31 +104,12 @@
           "url": "https://www.marketwatch.com/story/ambarella-shares-down-on-3q-miss-underwhelming-4q-outlook-da4c5733"
         },
         {
-          "title": "Stock Analysis: AMBA nachbörslich (24.11.)",
-          "url": "https://stockanalysis.com/stocks/amba/"
-        }
-      ]
-    },
-    {
-      "name": "Urban Outfitters",
-      "ticker": "URBN",
-      "country": "US",
-      "exchange": "Nasdaq",
-      "priceEur": 68.62,
-      "hint": "Schwache Anthropologie-Zahlen, nachbörslich rund −12 %",
-      "bullets": [
-        "Nachbörslich fiel die Aktie um 12,3 % auf 75,10 $.",
-        "Anthropologie wuchs auf vergleichbarer Fläche nur um 1,7 %, die anderen Marken deutlich stärker.",
-        "Rekordumsatz und ein knapp besserer Gewinn je Aktie reichten den Anlegern nicht."
-      ],
-      "sources": [
-        {
-          "title": "Investing.com: Urban Outfitters stock drops 10% as Anthropologie comps disappoint",
-          "url": "https://www.investing.com/news/earnings/urban-outfitters-stock-drops-10-as-anthropologie-comps-disappoint-5049112"
+          "title": "Benzinga: AMBA vorbörslich −36,7 % (Mi 25.11.)",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63615426/why-li-auto-shares-are-trading-higher-by-5-here-are-20-stocks-moving-premarket"
         },
         {
-          "title": "Stock Analysis: URBN nachbörslich (24.11.)",
-          "url": "https://stockanalysis.com/stocks/urbn/"
+          "title": "Yahoo Finance: AMBA vorbörslich (Mi 25.11., 14:20)",
+          "url": "https://finance.yahoo.com/quote/AMBA/"
         }
       ]
     },
@@ -117,11 +118,11 @@
       "ticker": "NTNX",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 45.62,
-      "hint": "Schwacher Jahresausblick und Chefwechsel, nachbörslich rund −8,5 %",
+      "priceEur": 43.78,
+      "hint": "Schwacher Jahresausblick und Chefwechsel, vorbörslich rund −12 %",
       "bullets": [
-        "Nachbörslich fiel die Aktie um 8,5 % auf 49,93 $.",
-        "Der Jahresausblick von 3,18 bis 3,23 Mrd. $ Umsatz liegt in der Mitte unter den erwarteten 3,22 Mrd. $.",
+        "Vorbörslich steht die Aktie bei 47,92 $, 12,2 % unter dem Dienstagsschluss von 54,59 $.",
+        "Der Jahresausblick liegt in der Mitte unter den erwarteten 3,22 Mrd. $ Umsatz.",
         "Chef Rajiv Ramaswami geht, ein Nachfolger wird gesucht."
       ],
       "sources": [
@@ -130,8 +131,35 @@
           "url": "https://ng.investing.com/news/earnings/nutanix-stock-drops-9-on-weak-fy-guidance-and-ceo-exit-2827569"
         },
         {
-          "title": "Stock Analysis: NTNX nachbörslich (24.11.)",
-          "url": "https://stockanalysis.com/stocks/ntnx/"
+          "title": "Yahoo Finance: NTNX vorbörslich (Mi 25.11., 14:20)",
+          "url": "https://finance.yahoo.com/quote/NTNX/"
+        }
+      ]
+    },
+    {
+      "name": "Pharming Group",
+      "ticker": "PHARM",
+      "country": "NL",
+      "exchange": "Euronext Amsterdam",
+      "priceEur": 1.02,
+      "hint": "Produktionsstopp beim Hauptmittel Ruconest, in Amsterdam rund −14 %",
+      "bullets": [
+        "In Amsterdam steht die Aktie bei 1,02 €, 13,8 % unter dem Dienstagsschluss von 1,18 €.",
+        "Ein Testlauf beim Abfüll-Dienstleister ist gescheitert, die Ruconest-Produktion ruht ohne Zeitplan.",
+        "Pharming hat die FDA vor einem wahrscheinlichen Lieferengpass in den USA ab Mitte Dezember gewarnt."
+      ],
+      "sources": [
+        {
+          "title": "Pharming: Ruconest-Produktion vorübergehend gestoppt (25.11.)",
+          "url": "https://www.pharming.com/our-news/pharming-temporarily-pauses-ruconest-manufacturing-and-notifies-fda-of-likely-supply"
+        },
+        {
+          "title": "Investing.com: Pharming-Aktie fällt 19 % nach Produktionsstopp",
+          "url": "https://www.investing.com/news/stock-market-news/pharming-shares-sinks-19-on-ruconest-manufacturing-pause-93CH-5049998"
+        },
+        {
+          "title": "Yahoo Finance: PHARM.AS (Mi 25.11., 14:07)",
+          "url": "https://finance.yahoo.com/quote/PHARM.AS/"
         }
       ]
     }
@@ -1182,23 +1210,23 @@
     ]
   },
   "rocketLabNews": {
-    "text": "Mizuho startet die Abdeckung von Rocket Lab mit „Underperform“ und Kursziel 40 $, RKLB liegt vorbörslich 3,8 % tiefer bei 47,76 $; eine neue Pressemitteilung fanden wir nicht, und der Electron-Start „Night Owls Never Sleep“ steht weiter für Fr 27.11. 01:05 Uhr auf „Go“.",
-    "updatedAt": "2026-11-24T14:35:00+01:00",
+    "text": "Eine neue Pressemitteilung gibt es heute nicht; RKLB liegt vorbörslich 4,1 % tiefer bei 44,08 $ im breiten Tech-Abverkauf, nachdem die Aktie schon am Dienstag ohne Firmenmeldung 7,4 % verlor, und der Electron-Start „Night Owls Never Sleep“ steht weiter für Fr 27.11. 01:05 Uhr auf „Go“.",
+    "updatedAt": "2026-11-25T14:25:00+01:00",
     "sources": [
-      {
-        "title": "Benzinga: Mizuho startet Rocket Lab mit „Underperform“, Kursziel 40 $ (24.11.)",
-        "url": "https://www.benzinga.com/quote/RKLB/price-targets"
-      },
-      {
-        "title": "Yahoo Finance: RKLB vorbörslich (24.11., 14:21 Uhr)",
-        "url": "https://finance.yahoo.com/quote/RKLB/"
-      },
       {
         "title": "Rocket Lab: Pressemitteilungen",
         "url": "https://investors.rocketlabcorp.com/news"
       },
       {
-        "title": "Launch Library 2: Startliste (Stand Di 24.11., 14:20)",
+        "title": "Yahoo Finance: RKLB vorbörslich (Mi 25.11., 14:20)",
+        "url": "https://finance.yahoo.com/quote/RKLB/"
+      },
+      {
+        "title": "Trefis: Rocket Lab fiel am 24.11. um 7,4 % ohne eigene Nachricht (25.11.)",
+        "url": "https://www.trefis.com/stock/rklb/articles/628989/did-rocket-lab-stock-fall-on-company-news/2026-11-25"
+      },
+      {
+        "title": "Launch Library 2: Startliste (Stand Mi 25.11., 14:20)",
         "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
       }
     ]

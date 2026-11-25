@@ -1367,8 +1367,8 @@
     },
     {
       "id": "evt-eu-tcmv-fsd",
-      "title": "EU-Fahrzeugausschuss (TCMV): mögliche Abstimmung über Teslas „Assisted Driving“ (Dezember, Datum offen)",
-      "date": "2026-12-31",
+      "title": "EU-Fahrzeugausschuss (TCMV): mögliche Abstimmung über Teslas „Assisted Driving“ (Di 15.12., verschoben vom 1.12.)",
+      "date": "2026-12-15",
       "time": null,
       "timezone": "Europe/Berlin",
       "kind": "external",
@@ -1377,9 +1377,9 @@
       "tickers": [
         "TSLA"
       ],
-      "probabilityPct": 20,
+      "probabilityPct": 15,
       "impact": "mittel",
-      "reasoning": "Die nächste TCMV-Sitzung ist für Dezember angekündigt, ein Datum und eine Abstimmung auf der Tagesordnung gibt es noch nicht. Für eine EU-weite Zulassung braucht es 15 von 27 Staaten mit 65 % der Bevölkerung; Frankreich lehnt bisher ab, Deutschland, Italien und Spanien haben nicht anerkannt. Tesla hat das System umbenannt und den Tempo-Spielraum auf 10 % gesenkt, um Bedenken auszuräumen. Meine 20 % gelten für eine Zustimmung bis Jahresende. Stand Mi 09:00: Finnland erkennt seit 10.11. die niederländische Zulassung an, Tesla darf „Assisted Driving“ dort sofort anbieten. Traficom erwartet die EU-weite Entscheidung „im kommenden Winter“ – das spricht eher für Anfang 2027 als für Dezember. 20 % unverändert.",
+      "reasoning": "Die nächste TCMV-Sitzung ist für Dezember angekündigt, ein Datum und eine Abstimmung auf der Tagesordnung gibt es noch nicht. Für eine EU-weite Zulassung braucht es 15 von 27 Staaten mit 65 % der Bevölkerung; Frankreich lehnt bisher ab, Deutschland, Italien und Spanien haben nicht anerkannt. Tesla hat das System umbenannt und den Tempo-Spielraum auf 10 % gesenkt, um Bedenken auszuräumen. Meine 20 % gelten für eine Zustimmung bis Jahresende. Stand Mi 09:00: Finnland erkennt seit 10.11. die niederländische Zulassung an, Tesla darf „Assisted Driving“ dort sofort anbieten. Traficom erwartet die EU-weite Entscheidung „im kommenden Winter“ – das spricht eher für Anfang 2027 als für Dezember. 20 % unverändert. Stand Mi 14:20: Die EU-Kommission hat die Sitzung vom 1. auf den 15. Dezember verschoben; eine Abstimmung war schon in zwei früheren Sitzungen nicht zustande gekommen. Bisher folgen knapp ein Dutzend Länder der niederländischen Zulassung, nötig sind 15 von 27 mit 65 % der Bevölkerung (Reuters). Weniger Zeit bis Jahresende und erneute Verschiebung: 20 → 15 %.",
       "example": false,
       "sources": [
         {
@@ -1401,6 +1401,10 @@
         {
           "title": "Reuters/Investing.com: Finnland genehmigt Tesla Assisted Driving (11.11.)",
           "url": "https://www.investing.com/news/stock-market-news/finland-approves-teslas-assisted-driving-system-5017838"
+        },
+        {
+          "title": "Reuters via Euronext: EU verschiebt Sitzung zu Teslas Fahrassistenz auf 15. Dezember (Mi 25.11., 11:46)",
+          "url": "https://live.euronext.com/en/financial-news/eu-postpones-discussion-approve-teslas-self-driving-tech"
         }
       ]
     },
@@ -1921,10 +1925,9 @@
     },
     {
       "id": "evt-ustr-subventionszoelle",
-      "title": "USA: Handelsbeauftragter Greer will neue Zölle auf China, EU und 14 weitere Länder verkünden (Subventions-Untersuchung, womöglich schon Di-Abend US-Zeit)",
-      "date": "2026-11-24",
-      "end": "2026-11-27",
-      "time": null,
+      "title": "USA: Handelsbeauftragter Greer schlägt neue Section-301-Zölle auf China (+20 %), EU und 12 weitere Partner vor (verkündet Mi 25.11., 14:11)",
+      "date": "2026-11-25",
+      "time": "14:11",
       "timezone": "Europe/Berlin",
       "kind": "external",
       "category": "zoelle",
@@ -1934,9 +1937,9 @@
         "SPCX",
         "MRVL"
       ],
-      "probabilityPct": 55,
+      "probabilityPct": 100,
       "impact": "hoch",
-      "reasoning": "Laut Wall Street Journal will US-Handelsbeauftragter Jamieson Greer die Ergebnisse seiner Untersuchung zu Industriesubventionen in China, der EU und 14 weiteren Ländern schon diese Woche vorlegen, der Zeitpunkt kann sich aber verschieben. Geplant sind höhere Zölle auf die meisten Waren; Stahl, Aluminium und Autos sollen ausgenommen sein. Für EU, Japan und Südkorea wären bis zu 15 % möglich, China soll stärker getroffen werden – Bloomberg nannte im August zusätzliche 7,5 % auf dann 20 % (Yahoo Finance, Anadolu). 45 %, weil die Quelle selbst von „frühestens diese Woche“ spricht, Thanksgiving die Woche verkürzt und der China-Waffenstillstand bis 10.1. läuft. Für Tesla zählen China-Lieferketten, für Chipwerte die Reaktion Pekings. Stand Di 20:25: Axios berichtet, die Regierung wolle die neuen, gezielten Zölle „womöglich schon heute Abend“ (US-Zeit, also in der Nacht zu Mittwoch deutscher Zeit) verkünden; die Sätze sollen die Obergrenzen der Handelsabkommen einhalten, für EU und Japan also höchstens 15 % (Axios). Auch Bloomberg Law schrieb von einer Erhöhung „schon am Dienstag“, für China sind zusätzliche 7,5 Prozentpunkte auf dann 20 % im Gespräch (Bloomberg Law). Zwei unabhängige Berichte über einen unmittelbar bevorstehenden Termin, der Handelsbeauftragte hatte zudem „sehr bald“ angekündigt: 45 → 65 %. Offen bleibt, ob es nur ein Vorschlag mit Anhörungsfrist wird. Stand Mi 07:45: Am Dienstagabend kam die Verkündung nicht. AP schrieb um 02:17 Uhr Berliner Zeit weiter nur, die Zölle würden „bald“ angekündigt; Bloomberg meldet, die Aufschläge sollen die Obergrenzen der Handelsabkommen nicht überschreiten, HSBC hält sie für weitgehend eingepreist. Eine amtliche Veröffentlichung gibt es noch nicht. Weil Donnerstag Thanksgiving ist und das Fenster bis Freitag kurz wird: 65 → 55 %. Stand Mi 12:20: Noch nicht verkündet. Reuters nannte unter Berufung auf drei Insider Dienstag oder Mittwoch als frühesten Termin, AP spricht von „den kommenden Tagen“, der Zeitpunkt kann sich verschieben (AP, Forwarder News). Die Sorge belastete über Nacht Asien (Kospi −6,2 %, Nikkei −2,8 %, tagesschau). 55 % unverändert.",
+      "reasoning": "Laut Wall Street Journal will US-Handelsbeauftragter Jamieson Greer die Ergebnisse seiner Untersuchung zu Industriesubventionen in China, der EU und 14 weiteren Ländern schon diese Woche vorlegen, der Zeitpunkt kann sich aber verschieben. Geplant sind höhere Zölle auf die meisten Waren; Stahl, Aluminium und Autos sollen ausgenommen sein. Für EU, Japan und Südkorea wären bis zu 15 % möglich, China soll stärker getroffen werden – Bloomberg nannte im August zusätzliche 7,5 % auf dann 20 % (Yahoo Finance, Anadolu). 45 %, weil die Quelle selbst von „frühestens diese Woche“ spricht, Thanksgiving die Woche verkürzt und der China-Waffenstillstand bis 10.1. läuft. Für Tesla zählen China-Lieferketten, für Chipwerte die Reaktion Pekings. Stand Di 20:25: Axios berichtet, die Regierung wolle die neuen, gezielten Zölle „womöglich schon heute Abend“ (US-Zeit, also in der Nacht zu Mittwoch deutscher Zeit) verkünden; die Sätze sollen die Obergrenzen der Handelsabkommen einhalten, für EU und Japan also höchstens 15 % (Axios). Auch Bloomberg Law schrieb von einer Erhöhung „schon am Dienstag“, für China sind zusätzliche 7,5 Prozentpunkte auf dann 20 % im Gespräch (Bloomberg Law). Zwei unabhängige Berichte über einen unmittelbar bevorstehenden Termin, der Handelsbeauftragte hatte zudem „sehr bald“ angekündigt: 45 → 65 %. Offen bleibt, ob es nur ein Vorschlag mit Anhörungsfrist wird. Stand Mi 07:45: Am Dienstagabend kam die Verkündung nicht. AP schrieb um 02:17 Uhr Berliner Zeit weiter nur, die Zölle würden „bald“ angekündigt; Bloomberg meldet, die Aufschläge sollen die Obergrenzen der Handelsabkommen nicht überschreiten, HSBC hält sie für weitgehend eingepreist. Eine amtliche Veröffentlichung gibt es noch nicht. Weil Donnerstag Thanksgiving ist und das Fenster bis Freitag kurz wird: 65 → 55 %. Stand Mi 12:20: Noch nicht verkündet. Reuters nannte unter Berufung auf drei Insider Dienstag oder Mittwoch als frühesten Termin, AP spricht von „den kommenden Tagen“, der Zeitpunkt kann sich verschieben (AP, Forwarder News). Die Sorge belastete über Nacht Asien (Kospi −6,2 %, Nikkei −2,8 %, tagesschau). 55 % unverändert. Stand Mi 14:20: Verkündet. Um 14:11 Uhr Berliner Zeit meldeten CNBC und AP, dass die USA neue Zölle gegen 14 Handelspartner vorschlagen, darunter China, die EU, Japan und Indien. China soll zusätzlich 20 % auf die Zölle von 2018 zahlen, bei Bruch des Busan-Waffenstillstands bis zu 40 %; für alle anderen sollen die Sätze nicht über den Obergrenzen der Handelsabkommen liegen und nicht zusätzlich obendrauf kommen. Es ist ein Vorschlag, die Partner sind informiert, die genauen Sätze je Land und der Starttermin stehen noch nicht fest (CNBC, AP). 55 → 100 %.",
       "example": false,
       "sources": [
         {
@@ -1978,6 +1981,14 @@
         {
           "title": "tagesschau.de: Marktbericht – Neuer Aufreger am Horizont (25.11., 10:22)",
           "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nikkei-dax-nasdaq-100.html"
+        },
+        {
+          "title": "CNBC: USA schlagen neue Section-301-Zölle gegen 14 Partner vor, darunter China und EU (Mi 25.11., 14:11)",
+          "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html"
+        },
+        {
+          "title": "AP: USA wollen Zölle auf China um weitere 20 % und auf EU, Japan, Südkorea, Taiwan erhöhen (Mi 25.11., 14:11)",
+          "url": "https://apnews.com/article/trump-tariffs-china-european-union-367083ea32f71fd7f70029ba7df66bf0"
         }
       ]
     },
