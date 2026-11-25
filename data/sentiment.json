@@ -1,54 +1,54 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T17:05:50Z",
+  "updatedAt": "2026-11-25T17:39:25Z",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": -15,
-      "postsCount": 25,
-      "reason": "Die FCC erlaubt SpaceX bis zu 1 Mio. Satelliten für Rechenzentren im All, das sorgt für Jubel. Gleichzeitig drücken Fusionssorgen, SPCX liegt unter dem IPO-Preis.",
+      "score": 5,
+      "postsCount": 19,
+      "reason": "Die FCC-Freigabe für 1 Mio. Rechenzentrums-Satelliten bringt Erholung, SPCX steigt rund 5 % vom Tagestief. Die Sorge vor Verwässerung durch die Tesla-Fusion bleibt.",
       "sources": [
         {
-          "title": "@faststocknewss auf X (25.11., 17:47)",
-          "url": "https://x.com/faststocknewss/status/2125632498503926220"
+          "title": "@TerraHaberTr auf X (25.11., 18:23)",
+          "url": "https://x.com/TerraHaberTr/status/2125641464214323680"
         },
         {
-          "title": "@Da5Daily auf X (25.11., 17:16)",
-          "url": "https://x.com/Da5Daily/status/2125624599115395555"
+          "title": "@stockplaymaker1 auf X (25.11., 18:12)",
+          "url": "https://x.com/stockplaymaker1/status/2125638799644635337"
         },
         {
-          "title": "@Atlantastanian auf X (25.11., 16:55)",
-          "url": "https://x.com/Atlantastanian/status/2125619497868349603"
+          "title": "@spcxGOD auf X (25.11., 18:18)",
+          "url": "https://x.com/spcxGOD/status/2125640321728156021"
         }
       ],
-      "updatedAt": "2026-11-25T17:05:50Z"
+      "updatedAt": "2026-11-25T17:39:25Z"
     },
     "TSLA": {
       "mood": "schlecht",
       "score": -30,
-      "postsCount": 25,
-      "reason": "Tesla rund 6 % im Minus, die Nasdaq fällt stark. Viele streiten, ob Tesla-Aktionäre bei der SpaceX-Fusion profitieren, dazu verzögert die EU die FSD-Zulassung.",
+      "postsCount": 20,
+      "reason": "Tesla und SpaceX verhandeln über Sonderausschüsse eine Fusion bis Jahresende. Viele fürchten Verwässerung, dazu belastet die verschobene EU-Entscheidung zu FSD.",
       "sources": [
         {
-          "title": "@Da5Daily auf X (25.11., 17:16)",
-          "url": "https://x.com/Da5Daily/status/2125624599115395555"
+          "title": "@M44_1RJ auf X (25.11., 18:07)",
+          "url": "https://x.com/M44_1RJ/status/2125637636434083850"
         },
         {
-          "title": "@MoodSpaceX auf X (25.11., 17:49)",
-          "url": "https://x.com/MoodSpaceX/status/2125633096502624774"
+          "title": "@investuskr auf X (25.11., 18:30)",
+          "url": "https://x.com/investuskr/status/2125643232445169853"
         },
         {
-          "title": "@jeremyjudkins_ auf X (25.11., 17:50)",
-          "url": "https://x.com/jeremyjudkins_/status/2125633118744777108"
+          "title": "@ItsAnnverse auf X (25.11., 18:02)",
+          "url": "https://x.com/ItsAnnverse/status/2125636310043926587"
         }
       ],
-      "updatedAt": "2026-11-25T17:05:50Z"
+      "updatedAt": "2026-11-25T17:39:25Z"
     },
     "RKLB": {
       "mood": "schlecht",
       "score": -20,
-      "postsCount": 24,
+      "postsCount": 20,
       "reason": "RKLB liegt weit unter dem Hoch, Neutron verschiebt sich auf 2027. Einige Anleger stocken trotzdem auf und verweisen auf Rekordumsatz und vollen Auftragsbestand.",
       "sources": [
         {
@@ -64,7 +64,7 @@
           "url": "https://x.com/DividendSignal/status/2125628528779804684"
         }
       ],
-      "updatedAt": "2026-11-25T17:05:50Z"
+      "updatedAt": "2026-11-25T17:39:25Z"
     }
   }
 }
