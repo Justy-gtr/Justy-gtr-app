@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T20:11:21Z",
+  "updatedAt": "2026-11-25T20:40:52Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 40,
       "postsCount": 20,
-      "reason": "Die Aktie für jedes Trump Account ist das große Thema, viele feiern SpaceX dafür. Dazu FCC-Freigabe und Fusionsgespräche mit Tesla, bei denen der Ton rauer wird.",
+      "reason": "SPCX dreht nach über 9 % Minus am Morgen ins Plus, rund 126 $. Die Aktie für jedes Trump Account und die FCC-Freigabe werden von großen Accounts breit gefeiert.",
       "sources": [
         {
-          "title": "@Kalshi_Finance auf X (25.11., 21:03)",
-          "url": "https://x.com/Kalshi_Finance/status/2125681679591461102"
+          "title": "@StockSavvyShay auf X (25.11., 21:17)",
+          "url": "https://x.com/StockSavvyShay/status/2125685417647493496"
         },
         {
-          "title": "@fammetaX auf X (25.11., 20:48)",
-          "url": "https://x.com/fammetaX/status/2125678030706344234"
+          "title": "@financialjuice auf X (25.11., 21:21)",
+          "url": "https://x.com/financialjuice/status/2125686402964951371"
         },
         {
-          "title": "@pbeisel auf X (25.11., 21:00)",
-          "url": "https://x.com/pbeisel/status/2125681096843210939"
+          "title": "@tradewithMGT auf X (25.11., 21:40)",
+          "url": "https://x.com/tradewithMGT/status/2125690990396662242"
         }
       ],
-      "updatedAt": "2026-11-25T20:11:21Z"
+      "updatedAt": "2026-11-25T20:40:52Z"
     },
     "TSLA": {
       "mood": "gut",
       "score": 20,
       "postsCount": 20,
-      "reason": "Italien erlaubt als 12. Land in Europa FSD, die Robotaxi-Zone in Dallas wächst um rund 83 %. Tesla erholt sich, beim Fusions-Aufschlag gehen die Meinungen auseinander.",
+      "reason": "Robotaxi deckt jetzt fünf Städte ab, Dallas wurde stark erweitert. Bei der Fusion mit SpaceX streiten Fans, ob Tesla einen Aufschlag bekommt oder verwässert wird.",
       "sources": [
         {
-          "title": "@TeslaOracle_com auf X (25.11., 21:10)",
-          "url": "https://x.com/TeslaOracle_com/status/2125683475462390256"
+          "title": "@DoctorJack16 auf X (25.11., 21:35)",
+          "url": "https://x.com/DoctorJack16/status/2125689738640208371"
         },
         {
-          "title": "@jakeisinvestor auf X (25.11., 20:49)",
-          "url": "https://x.com/jakeisinvestor/status/2125678399821590569"
+          "title": "@CoinInsiderX auf X (25.11., 21:17)",
+          "url": "https://x.com/CoinInsiderX/status/2125685448286801920"
         },
         {
-          "title": "@rexstocks auf X (25.11., 21:05)",
-          "url": "https://x.com/rexstocks/status/2125682239057068254"
+          "title": "@_LiarsDice_ auf X (25.11., 21:31)",
+          "url": "https://x.com/_LiarsDice_/status/2125688792380256690"
         }
       ],
-      "updatedAt": "2026-11-25T20:11:21Z"
+      "updatedAt": "2026-11-25T20:40:52Z"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 15,
+      "score": 20,
       "postsCount": 20,
-      "reason": "Raumfahrt-Aktien sind am Abend gefragt, RKLB bleibt im Plus. Viele verweisen auf den Auftragsbestand von 3,6 Mrd. $ und Neutron, einige stocken weiter auf.",
+      "reason": "RKLB bleibt im Plus, Anleger freuen sich über die Erholung von rund 42 $. Neue Startbuchungen über Vermittler und ein Auftrag für SB-AMTI werden positiv gesehen.",
       "sources": [
         {
-          "title": "@MegatrendMaster auf X (25.11., 20:34)",
-          "url": "https://x.com/MegatrendMaster/status/2125674409612464212"
+          "title": "@MrsIglesiasRKLB auf X (25.11., 21:19)",
+          "url": "https://x.com/MrsIglesiasRKLB/status/2125685782795190781"
         },
         {
-          "title": "@Khalifa1 auf X (25.11., 20:29)",
-          "url": "https://x.com/Khalifa1/status/2125673236952424742"
+          "title": "@dutch1664 auf X (25.11., 21:32)",
+          "url": "https://x.com/dutch1664/status/2125689173017509954"
         },
         {
-          "title": "@risenfit auf X (25.11., 20:19)",
-          "url": "https://x.com/risenfit/status/2125670804696535425"
+          "title": "@Gykiwi03 auf X (25.11., 21:15)",
+          "url": "https://x.com/Gykiwi03/status/2125684770793525617"
         }
       ],
-      "updatedAt": "2026-11-25T20:11:21Z"
+      "updatedAt": "2026-11-25T20:40:52Z"
     }
   }
 }
