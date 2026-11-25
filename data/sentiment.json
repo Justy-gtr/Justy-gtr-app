@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T15:39:00+01:00",
+  "updatedAt": "2026-11-25T16:10:00+01:00",
   "symbols": {
     "SPCX": {
       "mood": "schlecht",
-      "score": -40,
+      "score": -45,
       "postsCount": 25,
-      "reason": "SPCX vorbörslich bei 116–120 $, rund 11 % unter dem Ausgabepreis. Viele sorgen sich wegen der Fusion, andere sagen: am Geschäft hat sich nichts geändert.",
+      "reason": "SPCX startet rund 8 % tiefer bei 116 $ und fällt zeitweise unter 115 $. Auf X dominieren Sorgen um Verwässerung durch die Tesla-Fusion und der Tech-Ausverkauf.",
       "sources": [
         {
-          "title": "@Maximilius31 auf X (25.11., 15:25)",
-          "url": "https://x.com/Maximilius31/status/2125596619462590699"
+          "title": "@Stop_Loss1 auf X (25.11., 15:55)",
+          "url": "https://x.com/Stop_Loss1/status/2125604221445702018"
         },
         {
-          "title": "@mecoone auf X (25.11., 15:03)",
-          "url": "https://x.com/mecoone/status/2125591257976078716"
+          "title": "@gonta_southwood auf X (25.11., 16:05)",
+          "url": "https://x.com/gonta_southwood/status/2125606904131154397"
         },
         {
-          "title": "@fanvestments auf X (25.11., 15:35)",
-          "url": "https://x.com/fanvestments/status/2125599327422931281"
+          "title": "@LamonteLeo auf X (25.11., 15:54)",
+          "url": "https://x.com/LamonteLeo/status/2125603985575035356"
         }
       ],
-      "updatedAt": "2026-11-25T15:39:00+01:00"
+      "updatedAt": "2026-11-25T16:10:00+01:00"
     },
     "TSLA": {
-      "mood": "gemischt",
-      "score": -15,
-      "postsCount": 24,
-      "reason": "Tesla vorbörslich rund 3 % tiefer bei etwa 372 $. Seaport startet mit 475 $ Kursziel, über die Hälfte der Texas-Robotaxis sind Cybercabs. Fusion bleibt Hauptthema.",
+      "mood": "schlecht",
+      "score": -30,
+      "postsCount": 25,
+      "reason": "Tesla fällt zum Start Richtung 358 $, der ganze Tech-Markt ist rot. Viel Gerede über die Fusionsverhandler, Trader setzen kurzfristig auf weiter fallende Kurse.",
       "sources": [
         {
-          "title": "@X_Yoda_Papa auf X (25.11., 15:13)",
-          "url": "https://x.com/X_Yoda_Papa/status/2125593617334952221"
+          "title": "@LamonteLeo auf X (25.11., 15:54)",
+          "url": "https://x.com/LamonteLeo/status/2125603985575035356"
         },
         {
-          "title": "@ArkkDaily auf X (25.11., 15:21)",
-          "url": "https://x.com/ArkkDaily/status/2125595752202395924"
+          "title": "@Da5Daily auf X (25.11., 16:03)",
+          "url": "https://x.com/Da5Daily/status/2125606208522629439"
         },
         {
-          "title": "@Maximilius31 auf X (25.11., 15:05)",
-          "url": "https://x.com/Maximilius31/status/2125591587073769885"
+          "title": "@jebenatrades auf X (25.11., 15:51)",
+          "url": "https://x.com/jebenatrades/status/2125603216939249949"
         }
       ],
-      "updatedAt": "2026-11-25T15:39:00+01:00"
+      "updatedAt": "2026-11-25T16:10:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
       "score": -20,
       "postsCount": 25,
-      "reason": "RKLB liegt rund 71 % unter dem Jahreshoch, einige Spötter melden sich. Fans freuen sich auf den nächsten Electron-Start am 27.11. und hoffen auf Neutron.",
+      "reason": "RKLB rutscht unter 46 $, einige Trader setzen auf weitere Verluste. Langfrist-Fans sprechen von einem frühen Black-Friday-Rabatt und stocken laut eigener Aussage auf.",
       "sources": [
         {
-          "title": "@t3live auf X (25.11., 15:34)",
-          "url": "https://x.com/t3live/status/2125598985658187907"
+          "title": "@TangoTurtleA auf X (25.11., 15:50)",
+          "url": "https://x.com/TangoTurtleA/status/2125603112539013596"
         },
         {
-          "title": "@RCapitalX auf X (25.11., 15:34)",
-          "url": "https://x.com/RCapitalX/status/2125598888065437864"
+          "title": "@Unstoppable1106 auf X (25.11., 16:05)",
+          "url": "https://x.com/Unstoppable1106/status/2125606860606820407"
         },
         {
-          "title": "@MartynInvestor auf X (25.11., 15:31)",
-          "url": "https://x.com/MartynInvestor/status/2125598207715451019"
+          "title": "@30andawakeup auf X (25.11., 15:54)",
+          "url": "https://x.com/30andawakeup/status/2125604092839887002"
         }
       ],
-      "updatedAt": "2026-11-25T15:39:00+01:00"
+      "updatedAt": "2026-11-25T16:10:00+01:00"
     }
   }
 }
