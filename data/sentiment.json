@@ -1,54 +1,54 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T17:39:25Z",
+  "updatedAt": "2026-11-25T18:11:18Z",
   "symbols": {
     "SPCX": {
       "mood": "gemischt",
-      "score": 5,
+      "score": 10,
       "postsCount": 19,
-      "reason": "Die FCC-Freigabe für 1 Mio. Rechenzentrums-Satelliten bringt Erholung, SPCX steigt rund 5 % vom Tagestief. Die Sorge vor Verwässerung durch die Tesla-Fusion bleibt.",
+      "reason": "SPCX erholt sich von rund 113 $ auf etwa 120 $, getragen von der FCC-Freigabe und Lob von Goldman Sachs. Viele wundern sich, dass die Aktie unter dem IPO-Preis bleibt.",
       "sources": [
         {
-          "title": "@TerraHaberTr auf X (25.11., 18:23)",
-          "url": "https://x.com/TerraHaberTr/status/2125641464214323680"
+          "title": "@growthrapidly auf X (25.11., 18:45)",
+          "url": "https://x.com/growthrapidly/status/2125646957754388767"
         },
         {
-          "title": "@stockplaymaker1 auf X (25.11., 18:12)",
-          "url": "https://x.com/stockplaymaker1/status/2125638799644635337"
+          "title": "@PlainMarketD auf X (25.11., 18:57)",
+          "url": "https://x.com/PlainMarketD/status/2125650159749288091"
         },
         {
-          "title": "@spcxGOD auf X (25.11., 18:18)",
-          "url": "https://x.com/spcxGOD/status/2125640321728156021"
+          "title": "@BNTBriefing auf X (25.11., 19:02)",
+          "url": "https://x.com/BNTBriefing/status/2125651233050603714"
         }
       ],
-      "updatedAt": "2026-11-25T17:39:25Z"
+      "updatedAt": "2026-11-25T18:11:18Z"
     },
     "TSLA": {
       "mood": "schlecht",
       "score": -30,
       "postsCount": 20,
-      "reason": "Tesla und SpaceX verhandeln über Sonderausschüsse eine Fusion bis Jahresende. Viele fürchten Verwässerung, dazu belastet die verschobene EU-Entscheidung zu FSD.",
+      "reason": "Tesla bleibt schwach, Short-ETFs auf Tesla legen zu. Die Fusion mit SpaceX wird hitzig diskutiert. Unbestätigt: Tesla soll beim Maschinenbauer EMAG einsteigen.",
       "sources": [
         {
-          "title": "@M44_1RJ auf X (25.11., 18:07)",
-          "url": "https://x.com/M44_1RJ/status/2125637636434083850"
+          "title": "@ETFLeverageHQ auf X (25.11., 19:01)",
+          "url": "https://x.com/ETFLeverageHQ/status/2125651153895432214"
         },
         {
-          "title": "@investuskr auf X (25.11., 18:30)",
-          "url": "https://x.com/investuskr/status/2125643232445169853"
+          "title": "@mondegara1 auf X (25.11., 18:43)",
+          "url": "https://x.com/mondegara1/status/2125646614090121225"
         },
         {
-          "title": "@ItsAnnverse auf X (25.11., 18:02)",
-          "url": "https://x.com/ItsAnnverse/status/2125636310043926587"
+          "title": "@TeslaDE195932 auf X (25.11., 18:54)",
+          "url": "https://x.com/TeslaDE195932/status/2125649438794453104"
         }
       ],
-      "updatedAt": "2026-11-25T17:39:25Z"
+      "updatedAt": "2026-11-25T18:11:18Z"
     },
     "RKLB": {
       "mood": "schlecht",
       "score": -20,
-      "postsCount": 20,
+      "postsCount": 19,
       "reason": "RKLB liegt weit unter dem Hoch, Neutron verschiebt sich auf 2027. Einige Anleger stocken trotzdem auf und verweisen auf Rekordumsatz und vollen Auftragsbestand.",
       "sources": [
         {
@@ -64,7 +64,7 @@
           "url": "https://x.com/DividendSignal/status/2125628528779804684"
         }
       ],
-      "updatedAt": "2026-11-25T17:39:25Z"
+      "updatedAt": "2026-11-25T18:11:18Z"
     }
   }
 }
