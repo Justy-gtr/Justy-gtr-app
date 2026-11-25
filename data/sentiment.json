@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T18:11:18Z",
+  "updatedAt": "2026-11-25T18:38:31Z",
   "symbols": {
     "SPCX": {
-      "mood": "gemischt",
-      "score": 10,
-      "postsCount": 19,
-      "reason": "SPCX erholt sich von rund 113 $ auf etwa 120 $, getragen von der FCC-Freigabe und Lob von Goldman Sachs. Viele wundern sich, dass die Aktie unter dem IPO-Preis bleibt.",
+      "mood": "gut",
+      "score": 30,
+      "postsCount": 20,
+      "reason": "Nach der FCC-Freigabe für 1 Mio. Rechenzentrums-Satelliten erholt sich SPCX kräftig vom Tagestief bei 113 $. Große Accounts feiern die Nachricht, die Stimmung dreht ins Positive.",
       "sources": [
         {
-          "title": "@growthrapidly auf X (25.11., 18:45)",
-          "url": "https://x.com/growthrapidly/status/2125646957754388767"
+          "title": "@unusual_whales auf X (25.11., 19:27)",
+          "url": "https://x.com/unusual_whales/status/2125657520035570014"
         },
         {
-          "title": "@PlainMarketD auf X (25.11., 18:57)",
-          "url": "https://x.com/PlainMarketD/status/2125650159749288091"
+          "title": "@GTE_News auf X (25.11., 19:32)",
+          "url": "https://x.com/GTE_News/status/2125658938498486276"
         },
         {
-          "title": "@BNTBriefing auf X (25.11., 19:02)",
-          "url": "https://x.com/BNTBriefing/status/2125651233050603714"
+          "title": "@spcxGOD auf X (25.11., 19:31)",
+          "url": "https://x.com/spcxGOD/status/2125658742264062274"
         }
       ],
-      "updatedAt": "2026-11-25T18:11:18Z"
+      "updatedAt": "2026-11-25T18:38:31Z"
     },
     "TSLA": {
-      "mood": "schlecht",
-      "score": -30,
+      "mood": "gemischt",
+      "score": -10,
       "postsCount": 20,
-      "reason": "Tesla bleibt schwach, Short-ETFs auf Tesla legen zu. Die Fusion mit SpaceX wird hitzig diskutiert. Unbestätigt: Tesla soll beim Maschinenbauer EMAG einsteigen.",
+      "reason": "Tesla erweitert das Robotaxi-Gebiet in Dallas und hat in Texas mehr autonome Autos als Waymo. Gleichzeitig ärgern sich viele über das Monatsminus und die Fusionsfrage.",
       "sources": [
         {
-          "title": "@ETFLeverageHQ auf X (25.11., 19:01)",
-          "url": "https://x.com/ETFLeverageHQ/status/2125651153895432214"
+          "title": "@niravp44 auf X (25.11., 19:33)",
+          "url": "https://x.com/niravp44/status/2125659216681808062"
         },
         {
-          "title": "@mondegara1 auf X (25.11., 18:43)",
-          "url": "https://x.com/mondegara1/status/2125646614090121225"
+          "title": "@CyberRobbie auf X (25.11., 19:35)",
+          "url": "https://x.com/CyberRobbie/status/2125659533322395949"
         },
         {
-          "title": "@TeslaDE195932 auf X (25.11., 18:54)",
-          "url": "https://x.com/TeslaDE195932/status/2125649438794453104"
+          "title": "@NevrEnoughX auf X (25.11., 19:34)",
+          "url": "https://x.com/NevrEnoughX/status/2125659344163528986"
         }
       ],
-      "updatedAt": "2026-11-25T18:11:18Z"
+      "updatedAt": "2026-11-25T18:38:31Z"
     },
     "RKLB": {
       "mood": "schlecht",
@@ -64,7 +64,7 @@
           "url": "https://x.com/DividendSignal/status/2125628528779804684"
         }
       ],
-      "updatedAt": "2026-11-25T18:11:18Z"
+      "updatedAt": "2026-11-25T18:38:31Z"
     }
   }
 }
