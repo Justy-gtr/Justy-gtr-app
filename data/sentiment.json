@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T14:42:00+01:00",
+  "updatedAt": "2026-11-25T15:05:00+01:00",
   "symbols": {
     "SPCX": {
-      "mood": "gemischt",
-      "score": -30,
+      "mood": "schlecht",
+      "score": -45,
       "postsCount": 25,
-      "reason": "SPCX vorbörslich bei rund 122 $, Nasdaq-Futures fast 3 % im Minus. Thema sind die Fusion mit Tesla und die Haltefrist, die am 8.12. für fast 800 Mio. Aktien endet.",
+      "reason": "SPCX rutscht vorbörslich auf rund 116 $. Gary Black warnt vor Verwässerung durch die Tesla-Fusion und nennt 100 $ als Marke. Wenige verweisen auf Mizuhos 205-$-Ziel.",
       "sources": [
         {
-          "title": "@seemurfee auf X (25.11., 14:28)",
-          "url": "https://x.com/seemurfee/status/2125582498528706840"
+          "title": "@teamjayday auf X (25.11., 15:00)",
+          "url": "https://x.com/teamjayday/status/2125590523045900313"
         },
         {
-          "title": "@BReed186 auf X (25.11., 14:31)",
-          "url": "https://x.com/BReed186/status/2125583030194511921"
+          "title": "@garyblack00 auf X (25.11., 14:44)",
+          "url": "https://x.com/garyblack00/status/2125586397469802980"
         },
         {
-          "title": "@SpaceInvestor_D auf X (25.11., 14:13)",
-          "url": "https://x.com/SpaceInvestor_D/status/2125578664599302172"
+          "title": "@Silverfoxxinc auf X (25.11., 14:55)",
+          "url": "https://x.com/Silverfoxxinc/status/2125589214175879213"
         }
       ],
-      "updatedAt": "2026-11-25T14:42:00+01:00"
+      "updatedAt": "2026-11-25T15:05:00+01:00"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": -10,
+      "score": -15,
       "postsCount": 25,
-      "reason": "Der ganze Markt ist vorbörslich rot, Tesla gibt leicht nach. Viel Gesprächsstoff: Fünf Direktoren verhandeln die Fusion, JPMorgan sieht einen schnellen Weg in den S&P 500.",
+      "reason": "Tesla fällt mit dem roten Chipsektor, Trader sehen Widerstand bei 375 $. Gestritten wird, ob Tesla-Aktionäre bei der Fusion einen Aufschlag bekommen.",
       "sources": [
         {
-          "title": "@MosesWang16 auf X (25.11., 14:30)",
-          "url": "https://x.com/MosesWang16/status/2125582874187309377"
+          "title": "@krspyszn auf X (25.11., 14:57)",
+          "url": "https://x.com/krspyszn/status/2125589798559817898"
         },
         {
-          "title": "@kongbaest auf X (25.11., 14:31)",
-          "url": "https://x.com/kongbaest/status/2125583150357065979"
+          "title": "@garyblack00 auf X (25.11., 14:44)",
+          "url": "https://x.com/garyblack00/status/2125586397469802980"
         },
         {
-          "title": "@wickedstocks auf X (25.11., 14:23)",
-          "url": "https://x.com/wickedstocks/status/2125581154073907251"
+          "title": "@JOBhakdi auf X (25.11., 14:47)",
+          "url": "https://x.com/JOBhakdi/status/2125587076385055036"
         }
       ],
-      "updatedAt": "2026-11-25T14:42:00+01:00"
+      "updatedAt": "2026-11-25T15:05:00+01:00"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": -20,
+      "score": -15,
       "postsCount": 25,
-      "reason": "RKLB liegt bei rund 46 $, die Neutron-Verschiebung auf 2027 und eine skeptische Analysten-Einstufung drücken. Fans verweisen auf 3,57 Mrd. $ Auftragsbestand.",
+      "reason": "RKLB wird laut vielen vom SpaceX-Kurs mit nach unten gezogen. Fans verweisen auf 8 gebuchte Neutron-Starts und darauf, dass Josh Brown auf CNBC mehr Anteile nimmt.",
       "sources": [
         {
-          "title": "@35_alim auf X (25.11., 13:54)",
-          "url": "https://x.com/35_alim/status/2125573736351109521"
+          "title": "@adukiarohit auf X (25.11., 14:58)",
+          "url": "https://x.com/adukiarohit/status/2125589930114249153"
         },
         {
-          "title": "@MartynInvestor auf X (25.11., 14:06)",
-          "url": "https://x.com/MartynInvestor/status/2125576866467549199"
+          "title": "@nikogeorge auf X (25.11., 14:53)",
+          "url": "https://x.com/nikogeorge/status/2125588701447065673"
         },
         {
-          "title": "@marketsday auf X (25.11., 14:02)",
-          "url": "https://x.com/marketsday/status/2125575922837524672"
+          "title": "@Serik1625 auf X (25.11., 15:00)",
+          "url": "https://x.com/Serik1625/status/2125590435183874389"
         }
       ],
-      "updatedAt": "2026-11-25T14:42:00+01:00"
+      "updatedAt": "2026-11-25T15:05:00+01:00"
     }
   }
 }
