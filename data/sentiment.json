@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T18:38:31Z",
+  "updatedAt": "2026-11-25T19:06:15Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 30,
       "postsCount": 20,
-      "reason": "Nach der FCC-Freigabe für 1 Mio. Rechenzentrums-Satelliten erholt sich SPCX kräftig vom Tagestief bei 113 $. Große Accounts feiern die Nachricht, die Stimmung dreht ins Positive.",
+      "reason": "Die FCC-Freigabe für 1 Mio. Rechenzentrums-Satelliten dominiert, auch Investing.com und Seeking Alpha melden sie. Viele feiern die Erholung, die Fusion bleibt Thema.",
       "sources": [
         {
-          "title": "@unusual_whales auf X (25.11., 19:27)",
-          "url": "https://x.com/unusual_whales/status/2125657520035570014"
+          "title": "@Investingcom auf X (25.11., 20:05)",
+          "url": "https://x.com/Investingcom/status/2125667168226546155"
         },
         {
-          "title": "@GTE_News auf X (25.11., 19:32)",
-          "url": "https://x.com/GTE_News/status/2125658938498486276"
+          "title": "@SeekingAlpha auf X (25.11., 19:50)",
+          "url": "https://x.com/SeekingAlpha/status/2125663317532504295"
         },
         {
-          "title": "@spcxGOD auf X (25.11., 19:31)",
-          "url": "https://x.com/spcxGOD/status/2125658742264062274"
+          "title": "@Stealthct_Storm auf X (25.11., 19:41)",
+          "url": "https://x.com/Stealthct_Storm/status/2125661098841911571"
         }
       ],
-      "updatedAt": "2026-11-25T18:38:31Z"
+      "updatedAt": "2026-11-25T19:06:15Z"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": -10,
       "postsCount": 20,
-      "reason": "Tesla erweitert das Robotaxi-Gebiet in Dallas und hat in Texas mehr autonome Autos als Waymo. Gleichzeitig ärgern sich viele über das Monatsminus und die Fusionsfrage.",
+      "reason": "Tesla verdoppelt fast das Robotaxi-Gebiet in Dallas, das kommt gut an. Dämpfer: Die EU-Sitzung zu FSD ist offiziell auf den 15. Dezember verschoben.",
       "sources": [
         {
-          "title": "@niravp44 auf X (25.11., 19:33)",
-          "url": "https://x.com/niravp44/status/2125659216681808062"
+          "title": "@daltonbrewer auf X (25.11., 20:02)",
+          "url": "https://x.com/daltonbrewer/status/2125666511436091569"
         },
         {
-          "title": "@CyberRobbie auf X (25.11., 19:35)",
-          "url": "https://x.com/CyberRobbie/status/2125659533322395949"
+          "title": "@PatriceSchwab auf X (25.11., 19:52)",
+          "url": "https://x.com/PatriceSchwab/status/2125664018962542838"
         },
         {
-          "title": "@NevrEnoughX auf X (25.11., 19:34)",
-          "url": "https://x.com/NevrEnoughX/status/2125659344163528986"
+          "title": "@hitborg auf X (25.11., 20:04)",
+          "url": "https://x.com/hitborg/status/2125666972889198741"
         }
       ],
-      "updatedAt": "2026-11-25T18:38:31Z"
+      "updatedAt": "2026-11-25T19:06:15Z"
     },
     "RKLB": {
-      "mood": "schlecht",
-      "score": -20,
-      "postsCount": 19,
-      "reason": "RKLB liegt weit unter dem Hoch, Neutron verschiebt sich auf 2027. Einige Anleger stocken trotzdem auf und verweisen auf Rekordumsatz und vollen Auftragsbestand.",
+      "mood": "gemischt",
+      "score": 10,
+      "postsCount": 20,
+      "reason": "RKLB dreht am Nachmittag ins Plus. Viele Anleger freuen sich über die Erholung und sehen Aufholpotenzial, andere bleiben nach dem starken Absturz vorsichtig.",
       "sources": [
         {
-          "title": "@PraktischPS auf X (25.11., 18:03)",
-          "url": "https://x.com/PraktischPS/status/2125636599467667488"
+          "title": "@TCcapital_ auf X (25.11., 19:39)",
+          "url": "https://x.com/TCcapital_/status/2125660569818800223"
         },
         {
-          "title": "@spcxbro auf X (25.11., 17:15)",
-          "url": "https://x.com/spcxbro/status/2125624521084359104"
+          "title": "@paullecoque auf X (25.11., 19:53)",
+          "url": "https://x.com/paullecoque/status/2125664170318434667"
         },
         {
-          "title": "@DividendSignal auf X (25.11., 17:31)",
-          "url": "https://x.com/DividendSignal/status/2125628528779804684"
+          "title": "@SpaceSector001 auf X (25.11., 20:02)",
+          "url": "https://x.com/SpaceSector001/status/2125666392360001805"
         }
       ],
-      "updatedAt": "2026-11-25T18:38:31Z"
+      "updatedAt": "2026-11-25T19:06:15Z"
     }
   }
 }
