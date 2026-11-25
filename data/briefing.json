@@ -1,61 +1,54 @@
 {
  "example": false,
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "title": "Morgen-Briefing",
  "greeting": "Guten Morgen, Justy.",
- "summary": "Nach dem Rekordtag am Montag (Nasdaq +6,5 %, S&P 500 +4,7 %, Nvidia +31,5 % auf 165,05 $ nach Huangs Rückkehr als Chef) ziehen heute früh Asiens Chipwerte nach: Taiwan über +9 %, Kospi über +7 %, Nikkei +4 %. US-Futures nur leicht im Plus (rund +0,1 bis +0,3 %), der Dax wird bei rund 25.350 bis 25.380 knapp über dem Schluss von 25.337 erwartet (CNBC, Investing.com, dpa-AFX, Der Aktionär).",
+ "summary": "Nach dem Rekordtag am Montag kam am Dienstag der Rückschlag bei Tech: Nasdaq −1,5 %, S&P 500 −0,5 %, Dow dagegen +0,9 %, Nvidia gab nach und Anthropic fiel unter den Ausgabepreis. Die US-Futures liegen heute früh im Minus (Nasdaq-100 zeitweise rund −1,5 %, laut Reuters zuletzt rund −0,3 bis −0,4 %). Der Dax-Future steht bei rund 25.160 Punkten leicht im Plus. Heute zählen vor allem die PCE-Inflation für Oktober (Prognose +3,8 % zum Vorjahr) und am Donnerstag sind die US-Börsen wegen Thanksgiving zu (CNBC, Investing.com, Dow Jones).",
  "bullets": [
-  "SpaceX/Tesla: Laut FT verhandeln je ein Sonderausschuss (Denholm, Wilson-Thompson, Hartung für Tesla; Botha, Glein für SpaceX) über eine mögliche Fusion in Aktien, rund 3,5 Bio. $; Ziel eventuell Jahresende, eine Einigung ist laut Insidern noch nicht nah (Investing.com, Reuters).",
-  "xAI/SpaceX: Laut NYT verdient SpaceX mit der Vermietung von GPUs an Anthropic und Google mehr als mit Grok; Grok Imagine wurde zusammengestrichen (TechTimes).",
-  "Rocket Lab: Finanzchef Spice erwartet deutlich höhere Electron-Preise, Synspective bestellt 20 weitere Electron-Starts; Neutron-Preis um 27 % auf 70 Mio. $ angehoben (Tickline, Motley Fool).",
-  "Heute: 10:00 Ifo-Geschäftsklima (Prognose 90,5 nach 90,2), 16:00 US-Verbrauchervertrauen (Prognose 92,2 nach 91,7); vorbörslich Medtronic, Analog Devices, Best Buy; 22:00 Dell und HP. Mi PCE-Inflation, Do US-Börsen zu (dpa-AFX, Der Aktionär).",
-  "Moonshots Long: Alta Equipment, Murata, Agilent. Short: Brand Engagement Network, HPE, Semtech (nachbörsliche Bewegungen und Zahlen)."
+  "SpaceX/Tesla: Laut FT verhandeln fünf unabhängige Direktoren in zwei Sonderausschüssen über eine Fusion in Aktien im Wert von rund 3,5 Bio. $. Angestrebt ist eine Unterschrift bis 31.12., also vor dem neuen Kongress am 3. Januar. Das Umtauschverhältnis steht laut Insidern noch nicht fest (Reuters, Electrek).",
+  "Rocket Lab: Mizuho startet die Abdeckung mit Underperform und Kursziel 40 $, die Aktie fiel am Dienstag rund 6 % auf 46,65 $. Finanzchef Spice erwartet eine deutlich höhere Electron-Nachfrage und höhere Preise (Benzinga, Yahoo Finance).",
+  "Fed: Am Terminmarkt ist eine Zinserhöhung um 0,25 Punkte im Dezember zu rund 96 % eingepreist, für Januar zu rund 64 %. New-York-Fed-Chef Williams sieht weiter Bedarf für straffere Geldpolitik (Investing.com/Reuters).",
+  "Heute in den USA: PCE-Inflation Oktober, vorläufiges BIP Q3, Erstanträge auf Arbeitslosenhilfe (einen Tag früher), Auftragseingänge langlebiger Güter, Einkommen und Ausgaben. Donnerstag Börsenfeiertag (CNBC, Investing.com).",
+  "Zahlen von gestern Abend: Dell mit Rekordquartal (54,9 Mrd. $ Umsatz, KI-Auftragsbestand 132,3 Mrd. $), hebt die Jahresprognose auf 202 Mrd. $, nachbörslich rund +4 bis +5 %. HP schlug die Erwartungen, drehte nachbörslich aber ins Minus (Reuters, Investing.com).",
+  "Moonshots Long: SaverOne, Thomas Cook India, Silicon2. Short: Ambarella, Urban Outfitters, Nutanix."
  ],
  "audioUrl": null,
  "sources": [
   {
-   "title": "CNBC: Futures steigen nach Huang-Rückkehr (Live, 24.11.)",
-   "url": "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html"
+   "title": "CNBC: Futures geben nach vor PCE-Daten (Live, 25.11.)",
+   "url": "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html"
   },
   {
-   "title": "Investing.com: US-Futures nach Nvidia-Rally (24.11.)",
-   "url": "https://uk.investing.com/news/stock-market-news/us-stock-futures-steady-after-nvidialed-wall-street-rally-5000467"
+   "title": "Investing.com/Reuters: Wall-St-Futures im Minus, Fokus Inflation (25.11.)",
+   "url": "https://in.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5724641"
   },
   {
-   "title": "CNBC: Nvidia-Zulieferer in Asien springen (24.11.)",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html"
+   "title": "Dow Jones via finanznachrichten: Dax-Future im Frühhandel fester (25.11., 06:51)",
+   "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70221840-eurex-dax-futures-im-fruehhandel-etwas-fester-015.htm"
   },
   {
-   "title": "dpa-AFX via onvista: Dax knapp im Plus (24.11., 06:21)",
-   "url": "https://www.onvista.de/news/2026/11-24-dax-flash-knapp-im-plus-im-aufgehelltem-boersenumfeld-0-10-26579769"
+   "title": "Investing.com/Reuters: Fünf Direktoren für SpaceX-Tesla-Fusionsgespräche (24.11.)",
+   "url": "https://www.investing.com/news/stock-market-news/spacex-and-tesla-entrusts-five-directors-for-merger-talks-ft-reports-5047055"
   },
   {
-   "title": "Der Aktionär: Dax-Prognose und Termine (24.11.)",
-   "url": "https://www.deraktionaer.de/artikel/indizes/dax-prognose-fest-nvidia-rally-siemens-energy-infineon-rheinnetall-bayer-rwe-basf-im-fokus-20449341.html"
+   "title": "Electrek: Tesla und SpaceX zielen auf Deal bis Jahresende (24.11.)",
+   "url": "https://electrek.co/2026/11/24/tesla-spacex-merger-year-end-deadline-new-congress/"
   },
   {
-   "title": "Investing.com: SpaceX und Tesla verhandeln über Fusion, FT (24.11.)",
-   "url": "https://www.investing.com/news/stock-market-news/spacex-tesla-directors-negotiate-potential-35-trillion-merger-ft-reports-5047091"
+   "title": "Benzinga: Rocket Lab fällt 6 % nach Mizuho (24.11.)",
+   "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63598197/rocket-lab-stock-drops-6-whats-happening"
   },
   {
-   "title": "The Star/Reuters: Fünf Direktoren für Fusionsgespräche (24.11.)",
-   "url": "https://www.thestar.com.my/tech/tech-news/2026/11/24/spacex-and-tesla-entrusts-five-directors-for-merger-talks-ft-reports"
+   "title": "Yahoo Finance: Mizuho sieht 14 % Abwärtspotenzial bei Rocket Lab (24.11.)",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/mizuho-sees-14-downside-rocket-211106504.html"
   },
   {
-   "title": "TechTimes: SpaceX-GPU-Vermietung bringt mehr als Grok (24.11.)",
-   "url": "https://www.techtimes.com/articles/331389/20261124/spacex-compute-rentals-outearn-grok-musk-ranks-revenue-per-gpu-above-benchmarks-nyt-says.htm"
+   "title": "Investing.com/Reuters: Dell hebt Jahresprognose (24.11.)",
+   "url": "https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024"
   },
   {
-   "title": "Tickline: Space-Digest (23.11.)",
-   "url": "https://tickline.news/digest/2026-11-23-space.html"
-  },
-  {
-   "title": "Motley Fool: Rocket Lab hebt Neutron-Preis (23.11.)",
-   "url": "https://www.fool.com/investing/2026/11/23/rocket-lab-raised-prices-rocket-launch-what-means-spacex/"
-  },
-  {
-   "title": "Deutsche Börse/dpa-AFX: Termine am 24.11.",
-   "url": "https://live.deutsche-boerse.com/nachrichten/TAGESVORSCHAU-Termine-am-24-November-2026-b763007f-a4e4-4c9e-9cb9-bfd1d3ce4104"
+   "title": "Investing.com: HP dreht nachbörslich ins Minus (24.11.)",
+   "url": "https://www.investing.com/news/earnings/hp-soars-after-hours-on-quarterly-results-beat-5049038"
   }
  ]
 }
