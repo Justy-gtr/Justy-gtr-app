@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-25T20:40:52Z",
+  "updatedAt": "2026-11-26T13:07:00Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 20,
-      "reason": "SPCX dreht nach über 9 % Minus am Morgen ins Plus, rund 126 $. Die Aktie für jedes Trump Account und die FCC-Freigabe werden von großen Accounts breit gefeiert.",
+      "score": 35,
+      "postsCount": 25,
+      "reason": "Musks Zusage von zwei SpaceX-Aktien für jedes US-Kind dominiert, meist begeistert, teils Kritik. Dazu die FCC-Freigabe für 1 Mio. Starmind-Satelliten.",
       "sources": [
         {
-          "title": "@StockSavvyShay auf X (25.11., 21:17)",
-          "url": "https://x.com/StockSavvyShay/status/2125685417647493496"
+          "title": "@thenextweb auf X (26.11., 13:31)",
+          "url": "https://x.com/thenextweb/status/2125930478624518176"
         },
         {
-          "title": "@financialjuice auf X (25.11., 21:21)",
-          "url": "https://x.com/financialjuice/status/2125686402964951371"
+          "title": "@AGTPinsights auf X (26.11., 13:17)",
+          "url": "https://x.com/AGTPinsights/status/2125926957414015111"
         },
         {
-          "title": "@tradewithMGT auf X (25.11., 21:40)",
-          "url": "https://x.com/tradewithMGT/status/2125690990396662242"
+          "title": "@BoersenDE auf X (26.11., 13:55)",
+          "url": "https://x.com/BoersenDE/status/2125936406178464201"
         }
       ],
-      "updatedAt": "2026-11-25T20:40:52Z"
+      "updatedAt": "2026-11-26T13:07:00Z"
     },
     "TSLA": {
-      "mood": "gut",
-      "score": 20,
-      "postsCount": 20,
-      "reason": "Robotaxi deckt jetzt fünf Städte ab, Dallas wurde stark erweitert. Bei der Fusion mit SpaceX streiten Fans, ob Tesla einen Aufschlag bekommt oder verwässert wird.",
+      "mood": "gemischt",
+      "score": 5,
+      "postsCount": 12,
+      "reason": "Wenig echte Diskussion, viel Spam. Thema ist die mögliche Fusion mit SpaceX und ob Tesla seitwärts läuft. Feiertag in den USA, die Börse ist zu.",
       "sources": [
         {
-          "title": "@DoctorJack16 auf X (25.11., 21:35)",
-          "url": "https://x.com/DoctorJack16/status/2125689738640208371"
+          "title": "@808_38hz auf X (26.11., 12:34)",
+          "url": "https://x.com/808_38hz/status/2125916131622096954"
         },
         {
-          "title": "@CoinInsiderX auf X (25.11., 21:17)",
-          "url": "https://x.com/CoinInsiderX/status/2125685448286801920"
+          "title": "@AllFactsAI auf X (26.11., 13:17)",
+          "url": "https://x.com/AllFactsAI/status/2125926968789201030"
         },
         {
-          "title": "@_LiarsDice_ auf X (25.11., 21:31)",
-          "url": "https://x.com/_LiarsDice_/status/2125688792380256690"
+          "title": "@aipeopleschamp auf X (26.11., 13:11)",
+          "url": "https://x.com/aipeopleschamp/status/2125925499407130880"
         }
       ],
-      "updatedAt": "2026-11-25T20:40:52Z"
+      "updatedAt": "2026-11-26T13:07:00Z"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 20,
-      "postsCount": 20,
-      "reason": "RKLB bleibt im Plus, Anleger freuen sich über die Erholung von rund 42 $. Neue Startbuchungen über Vermittler und ein Auftrag für SB-AMTI werden positiv gesehen.",
+      "score": 10,
+      "postsCount": 10,
+      "reason": "Fans sehen knappe Startkapazität als Chance, trotz Neutron-Verzögerung. Gleichzeitig fallen Aktienverkäufe des COO um 50 $ auf (geplanter 10b5-1-Plan).",
       "sources": [
         {
-          "title": "@MrsIglesiasRKLB auf X (25.11., 21:19)",
-          "url": "https://x.com/MrsIglesiasRKLB/status/2125685782795190781"
+          "title": "@AxiosRose auf X (26.11., 13:03)",
+          "url": "https://x.com/AxiosRose/status/2125923296038322218"
         },
         {
-          "title": "@dutch1664 auf X (25.11., 21:32)",
-          "url": "https://x.com/dutch1664/status/2125689173017509954"
+          "title": "@RCapitalX auf X (26.11., 13:39)",
+          "url": "https://x.com/RCapitalX/status/2125932444629241889"
         },
         {
-          "title": "@Gykiwi03 auf X (25.11., 21:15)",
-          "url": "https://x.com/Gykiwi03/status/2125684770793525617"
+          "title": "@BoggleRiley auf X (26.11., 13:19)",
+          "url": "https://x.com/BoggleRiley/status/2125927455571521663"
         }
       ],
-      "updatedAt": "2026-11-25T20:40:52Z"
+      "updatedAt": "2026-11-26T13:07:00Z"
     }
   }
 }
