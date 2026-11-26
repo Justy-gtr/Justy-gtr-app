@@ -1,165 +1,165 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-25T14:25:00+01:00",
-  "nextRun": "2026-11-26T07:00:00+01:00",
+  "updatedAt": "2026-11-26T07:20:00+01:00",
+  "nextRun": "2026-11-26T07:55:00+01:00",
   "long": [
     {
-      "name": "SaverOne 2014",
-      "ticker": "SVRE",
-      "country": "IL",
-      "exchange": "Nasdaq",
-      "priceEur": 1.38,
-      "hint": "Vorbörslich rund +34 % nach Übernahme-Absichtserklärung",
+      "name": "Kioxia Holdings",
+      "ticker": "285A",
+      "country": "JP",
+      "exchange": "Tokio",
+      "priceEur": 45.25,
+      "hint": "Tokio +14,5 % nach Nvidia-Kooperation, deutsche Plätze (KI5) handeln ab 8 Uhr",
       "bullets": [
-        "Vorbörslich steht die Aktie bei 1,51 $, 33,7 % über dem Dienstagsschluss von 1,13 $.",
-        "Auslöser ist eine Absichtserklärung zur Übernahme von Drew Therapeutics.",
-        "Winziger Nebenwert mit dünnem Handel, solche Sprünge kippen oft zur Eröffnung."
+        "In Tokio schloss die Aktie bei 7.895 Yen, 14,5 % über dem Mittwochsschluss von 6.895 Yen.",
+        "Auslöser ist eine Zusammenarbeit mit Nvidia, bei der SSDs den nutzbaren GPU-Speicher auf Petabyte-Größe erweitern sollen.",
+        "In Frankfurt stand die Aktie zuletzt bei 40,11 €, der Tokio-Schluss entspricht umgerechnet 45,25 €."
       ],
       "sources": [
         {
-          "title": "Benzinga: 20 Aktien vorbörslich in Bewegung, SVRE +37 % (Mi 25.11.)",
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63615426/why-li-auto-shares-are-trading-higher-by-5-here-are-20-stocks-moving-premarket"
+          "title": "Investing.com: Kioxia jumps 14% after Nvidia collaboration (26.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/kioxia-jumps-14-after-nvidia-collaboration-as-chip-stocks-rebound-5052074"
         },
         {
-          "title": "Yahoo Finance: SVRE vorbörslich (Mi 25.11., 14:20)",
-          "url": "https://finance.yahoo.com/quote/SVRE/"
+          "title": "Yahoo Finance: 285A.T (Do 26.11., Schluss Tokio)",
+          "url": "https://finance.yahoo.com/quote/285A.T/"
         },
         {
-          "title": "Yahoo Finance: EURUSD (Mi 25.11., 14:22: 1,0946)",
+          "title": "Yahoo Finance: EURJPY (Do 26.11., 07:18: 174,47)",
+          "url": "https://finance.yahoo.com/quote/EURJPY=X/"
+        }
+      ]
+    },
+    {
+      "name": "Vera Therapeutics",
+      "ticker": "VERA",
+      "country": "US",
+      "exchange": "Nasdaq",
+      "priceEur": 31.4,
+      "hint": "Nachbörslich +16,7 %, weil die FDA das Konkurrenzmittel von Vertex später prüft",
+      "bullets": [
+        "Nachbörslich stand die Aktie bei 34,43 $, 16,7 % über dem Mittwochsschluss von 29,50 $.",
+        "Die FDA entscheidet über das Konkurrenzmittel Povetacicept von Vertex erst bis spätestens 28. Februar 2027.",
+        "Veras eigenes IgAN-Mittel Trutakna ist schon auf dem Markt, die US-Börsen sind heute wegen Thanksgiving zu."
+      ],
+      "sources": [
+        {
+          "title": "Investing.com: Why is Vera Therapeutics stock surging today? (25.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-vera-therapeutics-stock-surging-today-93CH-5051578"
+        },
+        {
+          "title": "Yahoo Finance: VERA nachbörslich (Mi 25.11., 01:59)",
+          "url": "https://finance.yahoo.com/quote/VERA/"
+        },
+        {
+          "title": "Yahoo Finance: EURUSD (Do 26.11., 07:17: 1,0967)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
     },
     {
-      "name": "DarkIris",
-      "ticker": "DKI",
-      "country": "HK",
-      "exchange": "Nasdaq",
-      "priceEur": 1.03,
-      "hint": "Vorbörslich rund +24 % nach Spiele-Zukauf und Aktienkauf des Chefs",
+      "name": "Kanzhun (BOSS Zhipin)",
+      "ticker": "2076",
+      "country": "CN",
+      "exchange": "HKEX",
+      "priceEur": 6.51,
+      "hint": "Hongkong +15,4 % nach Quartalszahlen und neuem 500-Mio.-$-Rückkaufprogramm",
       "bullets": [
-        "Vorbörslich steht die Aktie bei 1,13 $, 24 % über dem Dienstagsschluss von 0,91 $.",
-        "DarkIris kauft Mobile-Spiele aus China für 30 Mio. $, bezahlt in eigenen Aktien und Optionsscheinen.",
-        "Chef Hong Zhifang kauft selbst 420.000 Aktien zu 1,20 $, also über dem Vortageskurs."
+        "In Hongkong steht die Aktie bei 55,90 HK$, 15,4 % über dem Vortagesschluss von 48,42 HK$.",
+        "Im dritten Quartal stieg der Umsatz um 11,7 % auf 2,42 Mrd. Yuan, der Betriebsgewinn um 23 %.",
+        "Dazu kommt ein neues Rückkaufprogramm über bis zu 500 Mio. $, in New York schloss die Aktie am Mittwoch 12,6 % höher."
       ],
       "sources": [
         {
-          "title": "Benzinga: DarkIris nachbörslich über 35 % höher nach 30-Mio.-$-Spiele-Deal (24.11.)",
-          "url": "https://www.benzinga.com/markets/equities/26/11/63614501/darkiris-shares-jump-after-hours-mobile-games-acquisition-ceo-share-purchase"
+          "title": "Sina Finance: BOSS直聘绩后美股收涨超12% (26.11.)",
+          "url": "https://finance.sina.com.cn/stock/t/2026-11-26/doc-inizzsip3777373.shtml"
         },
         {
-          "title": "SEC: DarkIris Form 6-K (24.11.)",
-          "url": "https://www.sec.gov/Archives/edgar/data/2058584/000149315226054034/form6-k.htm"
+          "title": "Yahoo Finance: 2076.HK (Do 26.11., 07:00)",
+          "url": "https://finance.yahoo.com/quote/2076.HK/"
         },
         {
-          "title": "Yahoo Finance: DKI vorbörslich (Mi 25.11., 14:20)",
-          "url": "https://finance.yahoo.com/quote/DKI/"
-        }
-      ]
-    },
-    {
-      "name": "Brand Engagement Network",
-      "ticker": "BNAI",
-      "country": "US",
-      "exchange": "Nasdaq",
-      "priceEur": 7.06,
-      "hint": "Vorbörslich rund +16 % nach Quartalszahlen über Erwartung",
-      "bullets": [
-        "Vorbörslich steht die Aktie bei 7,73 $, 16,2 % über dem Dienstagsschluss von 6,65 $.",
-        "Der Verlust je Aktie lag bei 0,17 $ statt erwarteter 0,66 $, der Umsatz stieg auf 1,96 Mio. $.",
-        "Die Firma warnt selbst vor Zweifeln am Fortbestand und hat Probleme mit den Nasdaq-Regeln."
-      ],
-      "sources": [
-        {
-          "title": "Investing.com: Warum die BNAI-Aktie heute steigt (25.11.)",
-          "url": "https://za.investing.com/news/stock-market-news/why-is-brand-engagement-network-stock-surging-today-93CH-4596534"
-        },
-        {
-          "title": "Benzinga: 3.167 % Umsatzplus kann Finanzprobleme nicht verdecken",
-          "url": "https://www.benzinga.com/markets/earnings/26/11/63576061/a-3167-revenue-surge-cant-hide-this-ai-companys-financial-troubles"
-        },
-        {
-          "title": "Yahoo Finance: BNAI vorbörslich (Mi 25.11., 14:20)",
-          "url": "https://finance.yahoo.com/quote/BNAI/"
+          "title": "Yahoo Finance: EURHKD (Do 26.11., 07:18: 8,592)",
+          "url": "https://finance.yahoo.com/quote/EURHKD=X/"
         }
       ]
     }
   ],
   "short": [
     {
-      "name": "Ambarella",
-      "ticker": "AMBA",
+      "name": "Vertex Pharmaceuticals",
+      "ticker": "VRTX",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 26.49,
-      "hint": "Prognose weit unter Erwartung, vorbörslich rund −35 %",
+      "priceEur": 477.02,
+      "hint": "Nachbörslich −7,3 % nach FDA-Verschiebung, heute handelt nur Deutschland (VX1)",
       "bullets": [
-        "Vorbörslich steht die Aktie bei 29,00 $, 34,8 % unter dem Dienstagsschluss von 44,47 $.",
-        "Für das vierte Quartal erwartet Ambarella nur 70 bis 75 Mio. $ Umsatz statt rund 112 Mio. $.",
-        "Teurer und knapper Speicher lässt Kunden Aufträge verschieben oder streichen."
+        "Nachbörslich stand die Aktie bei 523,14 $, 7,3 % unter dem Mittwochsschluss von 564,12 $.",
+        "Die FDA verlängert die Prüfung von Povetacicept gegen IgA-Nephropathie um bis zu drei Monate bis 28. Februar 2027.",
+        "Grund ist eine späte Nachfrage der Behörde, Vertex' Antwort gilt als große Ergänzung des Antrags."
       ],
       "sources": [
         {
-          "title": "MarketWatch: Ambarella Shares Down on 3Q Miss, Underwhelming 4Q Outlook",
-          "url": "https://www.marketwatch.com/story/ambarella-shares-down-on-3q-miss-underwhelming-4q-outlook-da4c5733"
+          "title": "Investing.com: Vertex shares drop 7.5% as FDA extends review (25.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/vertex-shares-drop-75-as-fda-extends-review-for-kidney-drug-povetacicept-5051552"
         },
         {
-          "title": "Benzinga: AMBA vorbörslich −36,7 % (Mi 25.11.)",
-          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63615426/why-li-auto-shares-are-trading-higher-by-5-here-are-20-stocks-moving-premarket"
+          "title": "Business Wire: Vertex Announces Extension of PDUFA Target Action Date",
+          "url": "https://www.businesswire.com/news/home/20261125185870/en/Vertex-Announces-Extension-of-PDUFA-Target-Action-Date-by-up-to-Three-Months-as-FDA-Completes-Review-of-the-Biologics-License-Application-for-Povetacicept-in-IgA-Nephropathy"
         },
         {
-          "title": "Yahoo Finance: AMBA vorbörslich (Mi 25.11., 14:20)",
-          "url": "https://finance.yahoo.com/quote/AMBA/"
+          "title": "Yahoo Finance: VRTX nachbörslich (Mi 25.11., 01:56)",
+          "url": "https://finance.yahoo.com/quote/VRTX/"
         }
       ]
     },
     {
-      "name": "Nutanix",
-      "ticker": "NTNX",
-      "country": "US",
-      "exchange": "Nasdaq",
-      "priceEur": 43.78,
-      "hint": "Schwacher Jahresausblick und Chefwechsel, vorbörslich rund −12 %",
+      "name": "Sunmi Technology",
+      "ticker": "6810",
+      "country": "CN",
+      "exchange": "HKEX",
+      "priceEur": 15.42,
+      "hint": "Hongkong −30 % nach drei starken Tagen, zeitweise −52,6 %",
       "bullets": [
-        "Vorbörslich steht die Aktie bei 47,92 $, 12,2 % unter dem Dienstagsschluss von 54,59 $.",
-        "Der Jahresausblick liegt in der Mitte unter den erwarteten 3,22 Mrd. $ Umsatz.",
-        "Chef Rajiv Ramaswami geht, ein Nachfolger wird gesucht."
+        "In Hongkong steht die Aktie bei 132,50 HK$, 30,2 % unter dem Vortagesschluss von 189,90 HK$.",
+        "Am Vormittag fiel sie zeitweise um 52,6 % auf 90 HK$, das Tageshoch lag bei 189,50 HK$.",
+        "Zuvor stieg die Aktie drei Tage in Folge kräftig, heute griff fünfmal die Volatilitätsbremse der Börse."
       ],
       "sources": [
         {
-          "title": "Investing.com: Nutanix stock drops 9% on weak FY guidance and CEO exit",
-          "url": "https://ng.investing.com/news/earnings/nutanix-stock-drops-9-on-weak-fy-guidance-and-ceo-exit-2827569"
+          "title": "AASTOCKS: SUNMI TECH-W has significantly dropped 52.607% (26.11.)",
+          "url": "https://www.aastocks.com/en/stocks/news/aamm-content/aad261126411/price-dropped"
         },
         {
-          "title": "Yahoo Finance: NTNX vorbörslich (Mi 25.11., 14:20)",
-          "url": "https://finance.yahoo.com/quote/NTNX/"
+          "title": "Bastille Post: 商米科技炒高3日後早市急回吐 5度觸發市調機制",
+          "url": "https://www.bastillepost.com/hongkong/article/17266930-%e5%95%86%e7%b1%b3%e7%a7%91%e6%8a%80%e7%82%92%e9%ab%983%e6%97%a5%e5%be%8c%e6%97%a9%e5%b8%82%e6%80%a5%e5%9b%9e%e5%90%90-5%e5%ba%a6%e8%a7%b8%e7%99%bc%e5%b8%82%e8%aa%bf%e6%a9%9f%e5%88%b6"
+        },
+        {
+          "title": "Yahoo Finance: 6810.HK (Do 26.11., 07:01)",
+          "url": "https://finance.yahoo.com/quote/6810.HK/"
         }
       ]
     },
     {
-      "name": "Pharming Group",
-      "ticker": "PHARM",
-      "country": "NL",
-      "exchange": "Euronext Amsterdam",
-      "priceEur": 1.02,
-      "hint": "Produktionsstopp beim Hauptmittel Ruconest, in Amsterdam rund −14 %",
+      "name": "DeepZero (深演智能)",
+      "ticker": "2723",
+      "country": "CN",
+      "exchange": "HKEX",
+      "priceEur": 3.05,
+      "hint": "Hongkong −12,7 % nach Streichung aus dem Southbound-Programm",
       "bullets": [
-        "In Amsterdam steht die Aktie bei 1,02 €, 13,8 % unter dem Dienstagsschluss von 1,18 €.",
-        "Ein Testlauf beim Abfüll-Dienstleister ist gescheitert, die Ruconest-Produktion ruht ohne Zeitplan.",
-        "Pharming hat die FDA vor einem wahrscheinlichen Lieferengpass in den USA ab Mitte Dezember gewarnt."
+        "In Hongkong steht die Aktie bei 26,20 HK$, 12,7 % unter dem Vortagesschluss von 30,00 HK$.",
+        "Seit 23. November ist sie nicht mehr im Southbound-Programm, über das Anleger vom Festland in Hongkong handeln.",
+        "Dazu ist die Aktienteilung im Verhältnis 1:10 seit 16. Oktober wirksam."
       ],
       "sources": [
         {
-          "title": "Pharming: Ruconest-Produktion vorübergehend gestoppt (25.11.)",
-          "url": "https://www.pharming.com/our-news/pharming-temporarily-pauses-ruconest-manufacturing-and-notifies-fda-of-likely-supply"
+          "title": "10jqka: 深演智能盘中跌超11%，被调出港股通名单 (26.11.)",
+          "url": "http://stock.10jqka.com.cn/hks/20261126/c682232062.shtml"
         },
         {
-          "title": "Investing.com: Pharming-Aktie fällt 19 % nach Produktionsstopp",
-          "url": "https://www.investing.com/news/stock-market-news/pharming-shares-sinks-19-on-ruconest-manufacturing-pause-93CH-5049998"
-        },
-        {
-          "title": "Yahoo Finance: PHARM.AS (Mi 25.11., 14:07)",
-          "url": "https://finance.yahoo.com/quote/PHARM.AS/"
+          "title": "Yahoo Finance: 2723.HK (Do 26.11., 07:02)",
+          "url": "https://finance.yahoo.com/quote/2723.HK/"
         }
       ]
     }
