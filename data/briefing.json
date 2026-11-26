@@ -1,54 +1,46 @@
 {
- "example": false,
- "date": "2026-11-25",
- "title": "Morgen-Briefing",
- "greeting": "Guten Morgen, Justy.",
- "summary": "Nach dem Rekordtag am Montag kam am Dienstag der Rückschlag bei Tech: Nasdaq −1,5 %, S&P 500 −0,5 %, Dow dagegen +0,9 %, Nvidia gab nach und Anthropic fiel unter den Ausgabepreis. Die US-Futures liegen heute früh im Minus (Nasdaq-100 zeitweise rund −1,5 %, laut Reuters zuletzt rund −0,3 bis −0,4 %). Der Dax-Future steht bei rund 25.160 Punkten leicht im Plus. Heute zählen vor allem die PCE-Inflation für Oktober (Prognose +3,8 % zum Vorjahr) und am Donnerstag sind die US-Börsen wegen Thanksgiving zu (CNBC, Investing.com, Dow Jones).",
- "bullets": [
-  "SpaceX/Tesla: Laut FT verhandeln fünf unabhängige Direktoren in zwei Sonderausschüssen über eine Fusion in Aktien im Wert von rund 3,5 Bio. $. Angestrebt ist eine Unterschrift bis 31.12., also vor dem neuen Kongress am 3. Januar. Das Umtauschverhältnis steht laut Insidern noch nicht fest (Reuters, Electrek).",
-  "Rocket Lab: Mizuho startet die Abdeckung mit Underperform und Kursziel 40 $, die Aktie fiel am Dienstag rund 6 % auf 46,65 $. Finanzchef Spice erwartet eine deutlich höhere Electron-Nachfrage und höhere Preise (Benzinga, Yahoo Finance).",
-  "Fed: Am Terminmarkt ist eine Zinserhöhung um 0,25 Punkte im Dezember zu rund 96 % eingepreist, für Januar zu rund 64 %. New-York-Fed-Chef Williams sieht weiter Bedarf für straffere Geldpolitik (Investing.com/Reuters).",
-  "Heute in den USA: PCE-Inflation Oktober, vorläufiges BIP Q3, Erstanträge auf Arbeitslosenhilfe (einen Tag früher), Auftragseingänge langlebiger Güter, Einkommen und Ausgaben. Donnerstag Börsenfeiertag (CNBC, Investing.com).",
-  "Zahlen von gestern Abend: Dell mit Rekordquartal (54,9 Mrd. $ Umsatz, KI-Auftragsbestand 132,3 Mrd. $), hebt die Jahresprognose auf 202 Mrd. $, nachbörslich rund +4 bis +5 %. HP schlug die Erwartungen, drehte nachbörslich aber ins Minus (Reuters, Investing.com).",
-  "Moonshots Long: SaverOne, Thomas Cook India, Silicon2. Short: Ambarella, Urban Outfitters, Nutanix."
- ],
- "audioUrl": null,
- "sources": [
-  {
-   "title": "CNBC: Futures geben nach vor PCE-Daten (Live, 25.11.)",
-   "url": "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html"
-  },
-  {
-   "title": "Investing.com/Reuters: Wall-St-Futures im Minus, Fokus Inflation (25.11.)",
-   "url": "https://in.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5724641"
-  },
-  {
-   "title": "Dow Jones via finanznachrichten: Dax-Future im Frühhandel fester (25.11., 06:51)",
-   "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70221840-eurex-dax-futures-im-fruehhandel-etwas-fester-015.htm"
-  },
-  {
-   "title": "Investing.com/Reuters: Fünf Direktoren für SpaceX-Tesla-Fusionsgespräche (24.11.)",
-   "url": "https://www.investing.com/news/stock-market-news/spacex-and-tesla-entrusts-five-directors-for-merger-talks-ft-reports-5047055"
-  },
-  {
-   "title": "Electrek: Tesla und SpaceX zielen auf Deal bis Jahresende (24.11.)",
-   "url": "https://electrek.co/2026/11/24/tesla-spacex-merger-year-end-deadline-new-congress/"
-  },
-  {
-   "title": "Benzinga: Rocket Lab fällt 6 % nach Mizuho (24.11.)",
-   "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63598197/rocket-lab-stock-drops-6-whats-happening"
-  },
-  {
-   "title": "Yahoo Finance: Mizuho sieht 14 % Abwärtspotenzial bei Rocket Lab (24.11.)",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/mizuho-sees-14-downside-rocket-211106504.html"
-  },
-  {
-   "title": "Investing.com/Reuters: Dell hebt Jahresprognose (24.11.)",
-   "url": "https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024"
-  },
-  {
-   "title": "Investing.com: HP dreht nachbörslich ins Minus (24.11.)",
-   "url": "https://www.investing.com/news/earnings/hp-soars-after-hours-on-quarterly-results-beat-5049038"
-  }
- ]
+  "example": false,
+  "date": "2026-11-26",
+  "title": "Morgen-Briefing",
+  "greeting": "Guten Morgen, Justy.",
+  "summary": "Nach einem erneuten Tech-Ausverkauf drehte die Wall Street am Mittwoch spät: Der Nasdaq 100 lag zeitweise 4,7 % im Minus und schloss nur 0,6 % tiefer bei 26.047 Punkten, der Dow gewann 0,3 %, der S&P 500 verlor 0,3 %. Der Dax war am Mittwoch 1,3 % auf 24.702 Punkte gefallen, den tiefsten Stand seit Juli, wird heute früh aber rund 2 % höher bei etwa 25.200 bis 25.250 Punkten taxiert. Heute sind die US-Börsen wegen Thanksgiving geschlossen, am Freitag schließen sie schon um 19 Uhr (dpa-AFX, Der Aktionär, Dow Jones).",
+  "bullets": [
+    "Fokus-Werte am Mittwoch (US-Schluss): SpaceX 127,44 $ (+1,3 %), Tesla 380,14 $ (−1,2 %), Rocket Lab 47,02 $ (+2,3 %). Heute handeln sie nur an deutschen Plätzen (Yahoo Finance).",
+    "Nvidia schloss 3,9 % tiefer bei 149,30 $. Die Ratingagentur S&P droht nach den Führungswirren mit einer Herabstufung (Der Aktionär, Handelsblatt).",
+    "Zölle: Die USA kündigten neue Zölle gegen 14 Handelspartner an, für Waren aus der EU sind 15 % geplant, frühestens ab Januar. Mit bestehenden Abgaben auf Autos und Stahl sollen sie sich nicht addieren (Der Aktionär).",
+    "Asien erholt sich, vor allem Chipwerte: Nikkei rund +0,5 %, Kioxia in Tokio rund +12 % nach einer Nvidia-Kooperation. Nasdaq-100-Futures stehen rund +0,6 % (Handelsblatt, Yahoo Finance).",
+    "Heute in Deutschland: GfK-Konsumklima um 8 Uhr, EZB-Protokoll um 13:30 Uhr, Kapitalmarkttage von Rheinmetall. Berenberg stuft Bayer auf Buy hoch (Der Aktionär, dax-d-trading.com).",
+    "Moonshots Long: Kioxia, Vera Therapeutics, Kanzhun. Short: Vertex, Sunmi, DeepZero."
+  ],
+  "audioUrl": null,
+  "sources": [
+    {
+      "title": "dpa-AFX via wallstreet-online: DAX-FLASH Gewinne erwartet (26.11., 07:15)",
+      "url": "https://www.wallstreet-online.de/nachricht/21749863-dax-flash-gewinne-erwartet-tech-erholung-ruecken"
+    },
+    {
+      "title": "Der Aktionär: DAX-Prognose, kein US-Handel (26.11., 06:56)",
+      "url": "https://www.deraktionaer.de/artikel/indizes/dax-prognose-hoeher-kein-us-handel-rheinmetall-bayer-infineon-siemens-energy-nvidia-im-fokus-20452534.html"
+    },
+    {
+      "title": "Dow Jones via finanznachrichten: DAX-Futures im Frühhandel weiter erholt (26.11., 06:04)",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70232690-eurex-dax-futures-im-fruehhandel-weiter-erholt-015.htm"
+    },
+    {
+      "title": "Handelsblatt via Newslocker: Börse am 26. November, S&P droht Nvidia",
+      "url": "https://www.newslocker.com/de-de/branche/buchhaltung/brse-am-26-november-sieben-punkte-die-fr-anleger-heute-wichtig-sind-2/"
+    },
+    {
+      "title": "dax-d-trading.com: DAX-Termine KW 48/2026",
+      "url": "https://dax-d-trading.com/2026/11/21/dax-termine-kw48-2026/"
+    },
+    {
+      "title": "Yahoo Finance: SPCX (Schluss 25.11.)",
+      "url": "https://finance.yahoo.com/quote/SPCX/"
+    },
+    {
+      "title": "Yahoo Finance: NQ=F (26.11., 07:25)",
+      "url": "https://finance.yahoo.com/quote/NQ=F/"
+    }
+  ]
 }

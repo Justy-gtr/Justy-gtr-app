@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-26T07:20:00+01:00",
-  "nextRun": "2026-11-26T07:55:00+01:00",
+  "updatedAt": "2026-11-26T07:40:00+01:00",
+  "nextRun": "2026-11-26T14:00:00+01:00",
   "long": [
     {
       "name": "Kioxia Holdings",
       "ticker": "285A",
       "country": "JP",
       "exchange": "Tokio",
-      "priceEur": 45.25,
-      "hint": "Tokio +14,5 % nach Nvidia-Kooperation, deutsche Plätze (KI5) handeln ab 8 Uhr",
+      "priceEur": 44.36,
+      "hint": "Tokio rund +12 % nach Nvidia-Kooperation, deutsche Plätze (KI5) handeln ab 8 Uhr",
       "bullets": [
-        "In Tokio schloss die Aktie bei 7.895 Yen, 14,5 % über dem Mittwochsschluss von 6.895 Yen.",
+        "In Tokio stand die Aktie zuletzt bei 7.741 Yen, 12,3 % über dem Mittwochsschluss von 6.895 Yen.",
         "Auslöser ist eine Zusammenarbeit mit Nvidia, bei der SSDs den nutzbaren GPU-Speicher auf Petabyte-Größe erweitern sollen.",
-        "In Frankfurt stand die Aktie zuletzt bei 40,11 €, der Tokio-Schluss entspricht umgerechnet 45,25 €."
+        "In Frankfurt stand die Aktie zuletzt bei 40,11 €, der Tokio-Kurs entspricht umgerechnet 44,36 €."
       ],
       "sources": [
         {
@@ -21,11 +21,11 @@
           "url": "https://www.investing.com/news/stock-market-news/kioxia-jumps-14-after-nvidia-collaboration-as-chip-stocks-rebound-5052074"
         },
         {
-          "title": "Yahoo Finance: 285A.T (Do 26.11., Schluss Tokio)",
+          "title": "Yahoo Finance: 285A.T (Do 26.11., 07:22)",
           "url": "https://finance.yahoo.com/quote/285A.T/"
         },
         {
-          "title": "Yahoo Finance: EURJPY (Do 26.11., 07:18: 174,47)",
+          "title": "Yahoo Finance: EURJPY (Do 26.11., 07:35: 174,51)",
           "url": "https://finance.yahoo.com/quote/EURJPY=X/"
         }
       ]
@@ -52,7 +52,7 @@
           "url": "https://finance.yahoo.com/quote/VERA/"
         },
         {
-          "title": "Yahoo Finance: EURUSD (Do 26.11., 07:17: 1,0967)",
+          "title": "Yahoo Finance: EURUSD (Do 26.11., 07:35: 1,0965)",
           "url": "https://finance.yahoo.com/quote/EURUSD=X/"
         }
       ]
@@ -62,10 +62,10 @@
       "ticker": "2076",
       "country": "CN",
       "exchange": "HKEX",
-      "priceEur": 6.51,
-      "hint": "Hongkong +15,4 % nach Quartalszahlen und neuem 500-Mio.-$-Rückkaufprogramm",
+      "priceEur": 6.48,
+      "hint": "Hongkong +15 % nach Quartalszahlen und neuem 500-Mio.-$-Rückkaufprogramm",
       "bullets": [
-        "In Hongkong steht die Aktie bei 55,90 HK$, 15,4 % über dem Vortagesschluss von 48,42 HK$.",
+        "In Hongkong steht die Aktie bei 55,70 HK$, 15,0 % über dem Vortagesschluss von 48,42 HK$.",
         "Im dritten Quartal stieg der Umsatz um 11,7 % auf 2,42 Mrd. Yuan, der Betriebsgewinn um 23 %.",
         "Dazu kommt ein neues Rückkaufprogramm über bis zu 500 Mio. $, in New York schloss die Aktie am Mittwoch 12,6 % höher."
       ],
@@ -75,11 +75,11 @@
           "url": "https://finance.sina.com.cn/stock/t/2026-11-26/doc-inizzsip3777373.shtml"
         },
         {
-          "title": "Yahoo Finance: 2076.HK (Do 26.11., 07:00)",
+          "title": "Yahoo Finance: 2076.HK (Do 26.11., 07:20)",
           "url": "https://finance.yahoo.com/quote/2076.HK/"
         },
         {
-          "title": "Yahoo Finance: EURHKD (Do 26.11., 07:18: 8,592)",
+          "title": "Yahoo Finance: EURHKD (Do 26.11., 07:35: 8,590)",
           "url": "https://finance.yahoo.com/quote/EURHKD=X/"
         }
       ]
@@ -91,7 +91,7 @@
       "ticker": "VRTX",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 477.02,
+      "priceEur": 477.1,
       "hint": "Nachbörslich −7,3 % nach FDA-Verschiebung, heute handelt nur Deutschland (VX1)",
       "bullets": [
         "Nachbörslich stand die Aktie bei 523,14 $, 7,3 % unter dem Mittwochsschluss von 564,12 $.",
@@ -118,10 +118,10 @@
       "ticker": "6810",
       "country": "CN",
       "exchange": "HKEX",
-      "priceEur": 15.42,
-      "hint": "Hongkong −30 % nach drei starken Tagen, zeitweise −52,6 %",
+      "priceEur": 15.13,
+      "hint": "Hongkong rund −32 % nach drei starken Tagen, zeitweise −52,6 %",
       "bullets": [
-        "In Hongkong steht die Aktie bei 132,50 HK$, 30,2 % unter dem Vortagesschluss von 189,90 HK$.",
+        "In Hongkong steht die Aktie bei 130,00 HK$, 31,5 % unter dem Vortagesschluss von 189,90 HK$.",
         "Am Vormittag fiel sie zeitweise um 52,6 % auf 90 HK$, das Tageshoch lag bei 189,50 HK$.",
         "Zuvor stieg die Aktie drei Tage in Folge kräftig, heute griff fünfmal die Volatilitätsbremse der Börse."
       ],
@@ -135,7 +135,7 @@
           "url": "https://www.bastillepost.com/hongkong/article/17266930-%e5%95%86%e7%b1%b3%e7%a7%91%e6%8a%80%e7%82%92%e9%ab%983%e6%97%a5%e5%be%8c%e6%97%a9%e5%b8%82%e6%80%a5%e5%9b%9e%e5%90%90-5%e5%ba%a6%e8%a7%b8%e7%99%bc%e5%b8%82%e8%aa%bf%e6%a9%9f%e5%88%b6"
         },
         {
-          "title": "Yahoo Finance: 6810.HK (Do 26.11., 07:01)",
+          "title": "Yahoo Finance: 6810.HK (Do 26.11., 07:22)",
           "url": "https://finance.yahoo.com/quote/6810.HK/"
         }
       ]
@@ -145,10 +145,10 @@
       "ticker": "2723",
       "country": "CN",
       "exchange": "HKEX",
-      "priceEur": 3.05,
-      "hint": "Hongkong −12,7 % nach Streichung aus dem Southbound-Programm",
+      "priceEur": 3.04,
+      "hint": "Hongkong −12,9 % nach Streichung aus dem Southbound-Programm",
       "bullets": [
-        "In Hongkong steht die Aktie bei 26,20 HK$, 12,7 % unter dem Vortagesschluss von 30,00 HK$.",
+        "In Hongkong steht die Aktie bei 26,12 HK$, 12,9 % unter dem Vortagesschluss von 30,00 HK$.",
         "Seit 23. November ist sie nicht mehr im Southbound-Programm, über das Anleger vom Festland in Hongkong handeln.",
         "Dazu ist die Aktienteilung im Verhältnis 1:10 seit 16. Oktober wirksam."
       ],
@@ -158,7 +158,7 @@
           "url": "http://stock.10jqka.com.cn/hks/20261126/c682232062.shtml"
         },
         {
-          "title": "Yahoo Finance: 2723.HK (Do 26.11., 07:02)",
+          "title": "Yahoo Finance: 2723.HK (Do 26.11., 07:21)",
           "url": "https://finance.yahoo.com/quote/2723.HK/"
         }
       ]
