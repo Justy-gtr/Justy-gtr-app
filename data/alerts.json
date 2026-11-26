@@ -727,8 +727,8 @@
       "id": "SPCX-2026-11-26",
       "symbol": "SPCX",
       "name": "SpaceX",
-      "changePct": 3.9,
-      "priceEur": 118.9,
+      "changePct": 9.5,
+      "priceEur": 117.3,
       "thresholdPct": 2,
       "direction": "up",
       "timestamp": "2026-11-26T07:54:09.157Z",
@@ -740,8 +740,8 @@
           "url": "https://data.alpaca.markets/v2/stocks/SPCX/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance SPX.SG",
-          "url": "https://finance.yahoo.com/quote/SPX.SG"
+          "title": "Yahoo Finance SPX.DE",
+          "url": "https://finance.yahoo.com/quote/SPX.DE"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
@@ -754,32 +754,32 @@
       ]
     },
     {
-      "id": "RKLB-2026-11-26",
-      "symbol": "RKLB",
-      "name": "Rocket Lab",
-      "changePct": 4.18,
-      "priceEur": 43.65,
+      "id": "MRVL-2026-11-26",
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "changePct": 11.63,
+      "priceEur": 120.9,
       "thresholdPct": 2,
       "direction": "up",
-      "timestamp": "2026-11-26T07:54:09.157Z",
+      "timestamp": "2026-11-26T12:11:58.074Z",
       "notified": false,
       "example": false,
       "sources": [
         {
-          "title": "Alpaca Markets IEX RKLB",
-          "url": "https://data.alpaca.markets/v2/stocks/RKLB/snapshot?feed=iex"
+          "title": "Alpaca Markets IEX MRVL",
+          "url": "https://data.alpaca.markets/v2/stocks/MRVL/snapshot?feed=iex"
         },
         {
-          "title": "Yahoo Finance 6RJ0.SG",
-          "url": "https://finance.yahoo.com/quote/6RJ0.SG"
+          "title": "Yahoo Finance 9MW.DE",
+          "url": "https://finance.yahoo.com/quote/9MW.DE"
         },
         {
           "title": "Yahoo Finance EURUSD=X",
           "url": "https://finance.yahoo.com/quote/EURUSD=X"
         },
         {
-          "title": "Yahoo Finance RKLB",
-          "url": "https://finance.yahoo.com/quote/RKLB"
+          "title": "Yahoo Finance MRVL",
+          "url": "https://finance.yahoo.com/quote/MRVL"
         }
       ]
     }
