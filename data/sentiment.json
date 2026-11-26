@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-26T19:37:29Z",
+  "updatedAt": "2026-11-26T20:11:00Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -14,57 +14,57 @@
           "url": "https://x.com/WOLF_Financial/status/2126037272311017970"
         },
         {
-          "title": "@liquidtrading auf X (26.11., 20:29)",
-          "url": "https://x.com/liquidtrading/status/2126035707953041467"
+          "title": "@TedHZhang auf X (26.11., 20:38)",
+          "url": "https://x.com/TedHZhang/status/2126037804245246141"
         },
         {
-          "title": "@spcxGOD auf X (26.11., 20:21)",
-          "url": "https://x.com/spcxGOD/status/2126033688815137009"
+          "title": "@spcxGOD auf X (26.11., 20:39)",
+          "url": "https://x.com/spcxGOD/status/2126038160282947993"
         }
       ],
-      "updatedAt": "2026-11-26T19:37:29Z"
+      "updatedAt": "2026-11-26T20:11:00Z"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 30,
+      "score": 40,
       "postsCount": 25,
-      "reason": "Man spricht über die Fusion mit SpaceX und dass Teslas Börsenwert aufholt (Abstand 15 statt 21 %). Dazu viele neue Optimus-Videos.",
+      "reason": "Rekord: Tesla meldet in Texas 285 neue Cybercabs an, die Robotaxi-Flotte wächst auf 1.841. Dazu 55 % Wettchance auf eine Fusion mit SpaceX.",
       "sources": [
         {
-          "title": "@ChrisDungeon auf X (26.11., 20:31)",
-          "url": "https://x.com/ChrisDungeon/status/2126036074656825835"
+          "title": "@Chansoo auf X (26.11., 20:56)",
+          "url": "https://x.com/Chansoo/status/2126042382336483355"
         },
         {
-          "title": "@KeithTradeSmith auf X (26.11., 20:37)",
-          "url": "https://x.com/KeithTradeSmith/status/2126037524019654743"
+          "title": "@GrindeOptions auf X (26.11., 20:50)",
+          "url": "https://x.com/GrindeOptions/status/2126041029128446436"
         },
         {
-          "title": "@Der_Boersianer auf X (26.11., 20:36)",
-          "url": "https://x.com/Der_Boersianer/status/2126037305794208127"
+          "title": "@gandreou007 auf X (26.11., 20:43)",
+          "url": "https://x.com/gandreou007/status/2126039161186754679"
         }
       ],
-      "updatedAt": "2026-11-26T19:37:29Z"
+      "updatedAt": "2026-11-26T20:11:00Z"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 25,
+      "score": 30,
       "postsCount": 9,
-      "reason": "Fans freuen sich zu Thanksgiving auf den Electron-Start. Andere erinnern daran, wie stark beliebte Aktien wie RKLB dieses Jahr gefallen sind.",
+      "reason": "Vorfreude auf den 101. Electron-Start heute Nacht (ca. 1 Uhr deutscher Zeit) für Synspective. Das Wetter in Neuseeland ist knapp, der Wind lässt nach.",
       "sources": [
         {
-          "title": "@Chimp_Capital auf X (26.11., 20:16)",
-          "url": "https://x.com/Chimp_Capital/status/2126032354385039868"
+          "title": "@JoshSharp auf X (26.11., 21:08)",
+          "url": "https://x.com/JoshSharp/status/2126045362741801394"
         },
         {
-          "title": "@doseycapital auf X (26.11., 20:20)",
-          "url": "https://x.com/doseycapital/status/2126033427996541303"
+          "title": "@Gykiwi03 auf X (26.11., 20:46)",
+          "url": "https://x.com/Gykiwi03/status/2126039853452386636"
         },
         {
-          "title": "@danhinvests auf X (26.11., 20:19)",
-          "url": "https://x.com/danhinvests/status/2126033143266521347"
+          "title": "@Stealthct_Storm auf X (26.11., 20:58)",
+          "url": "https://x.com/Stealthct_Storm/status/2126042889847287869"
         }
       ],
-      "updatedAt": "2026-11-26T19:37:29Z"
+      "updatedAt": "2026-11-26T20:11:00Z"
     }
   }
 }
