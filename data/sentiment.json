@@ -1,28 +1,28 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-26T20:11:00Z",
+  "updatedAt": "2026-11-26T20:41:17Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 50,
       "postsCount": 25,
-      "reason": "Viel Gerede über die Aktien für US-Kinder und Texas, das SpaceX’ 24-Mrd.-$-Rechenzentrum schnell genehmigen will. Wenige halten SpaceX für zu teuer.",
+      "reason": "Texas erteilt die Luftgenehmigung für SpaceX’ 24-Mrd.-$-Projekt. Dazu Freude über den 29. Flug eines Boosters und Debatten um Rechenzentren im All.",
       "sources": [
         {
-          "title": "@WOLF_Financial auf X (26.11., 20:36)",
-          "url": "https://x.com/WOLF_Financial/status/2126037272311017970"
+          "title": "@allday_stocks auf X (26.11., 21:17)",
+          "url": "https://x.com/allday_stocks/status/2126047633932464271"
         },
         {
-          "title": "@TedHZhang auf X (26.11., 20:38)",
-          "url": "https://x.com/TedHZhang/status/2126037804245246141"
+          "title": "@IcyReggie auf X (26.11., 21:28)",
+          "url": "https://x.com/IcyReggie/status/2126050425883566556"
         },
         {
-          "title": "@spcxGOD auf X (26.11., 20:39)",
-          "url": "https://x.com/spcxGOD/status/2126038160282947993"
+          "title": "@reynosismo_ auf X (26.11., 21:28)",
+          "url": "https://x.com/reynosismo_/status/2126050403645260264"
         }
       ],
-      "updatedAt": "2026-11-26T20:11:00Z"
+      "updatedAt": "2026-11-26T20:41:17Z"
     },
     "TSLA": {
       "mood": "gut",
@@ -31,19 +31,19 @@
       "reason": "Rekord: Tesla meldet in Texas 285 neue Cybercabs an, die Robotaxi-Flotte wächst auf 1.841. Dazu 55 % Wettchance auf eine Fusion mit SpaceX.",
       "sources": [
         {
-          "title": "@Chansoo auf X (26.11., 20:56)",
-          "url": "https://x.com/Chansoo/status/2126042382336483355"
+          "title": "@Tslachan auf X (26.11., 21:18)",
+          "url": "https://x.com/Tslachan/status/2126047936132100434"
         },
         {
-          "title": "@GrindeOptions auf X (26.11., 20:50)",
-          "url": "https://x.com/GrindeOptions/status/2126041029128446436"
+          "title": "@daltonbrewer auf X (26.11., 21:31)",
+          "url": "https://x.com/daltonbrewer/status/2126051158775201901"
         },
         {
-          "title": "@gandreou007 auf X (26.11., 20:43)",
-          "url": "https://x.com/gandreou007/status/2126039161186754679"
+          "title": "@CuriousPejjy auf X (26.11., 21:20)",
+          "url": "https://x.com/CuriousPejjy/status/2126048412361724268"
         }
       ],
-      "updatedAt": "2026-11-26T20:11:00Z"
+      "updatedAt": "2026-11-26T20:41:17Z"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/Stealthct_Storm/status/2126042889847287869"
         }
       ],
-      "updatedAt": "2026-11-26T20:11:00Z"
+      "updatedAt": "2026-11-26T20:41:17Z"
     }
   }
 }
