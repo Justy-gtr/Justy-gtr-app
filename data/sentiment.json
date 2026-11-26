@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-26T15:36:41Z",
+  "updatedAt": "2026-11-26T16:06:27Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,12 +22,12 @@
           "url": "https://x.com/johnsaksa/status/2125956346575020149"
         }
       ],
-      "updatedAt": "2026-11-26T15:36:41Z"
+      "updatedAt": "2026-11-26T16:06:27Z"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 15,
-      "postsCount": 6,
+      "postsCount": 7,
       "reason": "Gesprochen wird über die mögliche Fusion mit SpaceX: JPMorgan meint, S&P könnte Regeln dafür lockern. Kritiker sehen darin mehr Kontrolle für Musk.",
       "sources": [
         {
@@ -43,7 +43,7 @@
           "url": "https://x.com/mingcalls/status/2125943101885755856"
         }
       ],
-      "updatedAt": "2026-11-26T15:36:41Z"
+      "updatedAt": "2026-11-26T16:06:27Z"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/thebasemint1/status/2125944946645733783"
         }
       ],
-      "updatedAt": "2026-11-26T15:36:41Z"
+      "updatedAt": "2026-11-26T16:06:27Z"
     }
   }
 }
