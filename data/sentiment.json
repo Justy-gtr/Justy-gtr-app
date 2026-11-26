@@ -1,33 +1,33 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-26T13:39:07Z",
+  "updatedAt": "2026-11-26T14:05:38Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 30,
-      "reason": "Die geschenkten SpaceX-Aktien für US-Kinder werden breit gefeiert, SpaceX legt eine zweite Aktie drauf. Einige sorgen sich um Berichte über Probleme bei xAI.",
+      "score": 35,
+      "postsCount": 20,
+      "reason": "Die geschenkten SpaceX-Aktien für US-Kinder bleiben Thema Nr. 1, große Accounts feiern sie. Kritiker sprechen von Verwässerung für bisherige Aktionäre.",
       "sources": [
         {
-          "title": "@NotATeslaApp auf X (26.11., 14:31)",
-          "url": "https://x.com/NotATeslaApp/status/2125945440222986750"
+          "title": "@KatieMiller auf X (26.11., 14:40)",
+          "url": "https://x.com/KatieMiller/status/2125947725753483705"
         },
         {
-          "title": "@NathanielSami auf X (26.11., 14:13)",
-          "url": "https://x.com/NathanielSami/status/2125940979077361893"
+          "title": "@biggerztrends auf X (26.11., 14:45)",
+          "url": "https://x.com/biggerztrends/status/2125948940797546935"
         },
         {
-          "title": "@WunderwaffeU47 auf X (26.11., 14:24)",
-          "url": "https://x.com/WunderwaffeU47/status/2125943654510682248"
+          "title": "@DanHilt70032640 auf X (26.11., 14:55)",
+          "url": "https://x.com/DanHilt70032640/status/2125951655258857576"
         }
       ],
-      "updatedAt": "2026-11-26T13:39:07Z"
+      "updatedAt": "2026-11-26T14:05:38Z"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 15,
-      "postsCount": 20,
+      "postsCount": 3,
       "reason": "Gesprochen wird über die mögliche Fusion mit SpaceX: JPMorgan meint, S&P könnte Regeln dafür lockern. Kritiker sehen darin mehr Kontrolle für Musk.",
       "sources": [
         {
@@ -43,12 +43,12 @@
           "url": "https://x.com/mingcalls/status/2125943101885755856"
         }
       ],
-      "updatedAt": "2026-11-26T13:39:07Z"
+      "updatedAt": "2026-11-26T14:05:38Z"
     },
     "RKLB": {
       "mood": "gut",
       "score": 25,
-      "postsCount": 15,
+      "postsCount": 8,
       "reason": "Der Rekordumsatz von 268 Mio. $ und 3,57 Mrd. $ Auftragsbestand werden gelobt. Auf Krypto-Plattformen liegt RKLB rund 10 % im Plus, trotz COO-Verkäufen.",
       "sources": [
         {
@@ -64,7 +64,7 @@
           "url": "https://x.com/AxiosRose/status/2125923296038322218"
         }
       ],
-      "updatedAt": "2026-11-26T13:39:07Z"
+      "updatedAt": "2026-11-26T14:05:38Z"
     }
   }
 }
