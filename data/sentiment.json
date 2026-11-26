@@ -1,32 +1,32 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-26T17:42:18Z",
+  "updatedAt": "2026-11-26T18:04:25Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 50,
+      "score": 55,
       "postsCount": 25,
       "reason": "Neues Thema: Die FCC erlaubt SpaceX bis zu 1 Mio. Satelliten für Rechenzentren im All. Dazu weiter Freude über die Aktien für US-Kinder.",
       "sources": [
         {
-          "title": "@ren_stocks auf X (26.11., 17:45)",
-          "url": "https://x.com/ren_stocks/status/2125994396390699176"
+          "title": "@CaschysBlog auf X (26.11., 18:32)",
+          "url": "https://x.com/CaschysBlog/status/2126006226261553200"
         },
         {
           "title": "@Vol888 auf X (26.11., 18:27)",
           "url": "https://x.com/Vol888/status/2126004870641557895"
         },
         {
-          "title": "@DEUSVULTREV68 auf X (26.11., 18:06)",
-          "url": "https://x.com/DEUSVULTREV68/status/2125999658681934165"
+          "title": "@WealthClub10x auf X (26.11., 18:54)",
+          "url": "https://x.com/WealthClub10x/status/2126011794548252848"
         }
       ],
-      "updatedAt": "2026-11-26T17:42:18Z"
+      "updatedAt": "2026-11-26T18:04:25Z"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 15,
+      "score": 20,
       "postsCount": 25,
       "reason": "Fans loben FSD v15, Robotaxi in Dallas und eine mögliche Fusion mit SpaceX. Dämpfer: EU-Abstimmung zum autonomen Fahren erst am 15.12.",
       "sources": [
@@ -43,7 +43,7 @@
           "url": "https://x.com/StocksNews__/status/2125998472063300085"
         }
       ],
-      "updatedAt": "2026-11-26T17:42:18Z"
+      "updatedAt": "2026-11-26T18:04:25Z"
     },
     "RKLB": {
       "mood": "gut",
@@ -60,7 +60,7 @@
           "url": "https://x.com/RendTheVeil/status/2125973302325698855"
         }
       ],
-      "updatedAt": "2026-11-26T17:42:18Z"
+      "updatedAt": "2026-11-26T18:04:25Z"
     }
   }
 }
