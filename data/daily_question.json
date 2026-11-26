@@ -1,41 +1,72 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-25-rklb",
-    "date": "2026-11-25",
-    "question": "Schließt RKLB am Mittwoch, 25. November, an der Nasdaq höher als am Dienstag (45,98 $)?",
-    "karlAnswer": "nein",
-    "karlReason": "Knapp „nein“, etwa 55 zu 45. Der Nasdaq-100-Future liegt am Morgen rund 1,4 % unter dem Vortag (Yahoo), in Asien fielen Taiwan um 5 % und Südkorea um 5,7 %, weil Zweifel am KI-Boom wachsen (Bloomberg). Nachbörslich stand RKLB zuletzt bei 45,69 $, leicht unter dem Schluss (Kursdaten der App). Dafür spricht: Nach zwei Tagen mit zusammen über 7 % Minus und vor dem langen Thanksgiving-Wochenende sind Erholungen möglich, und Dell hat mit starken KI-Zahlen überzeugt (Reuters). Um 14:30 Uhr kommen PCE-Inflation und BIP (dpa-AFX). Eigene Rocket-Lab-Nachrichten gibt es über Nacht nicht. Karl lag gestern mit „ja“ daneben.",
+    "id": "2026-11-27-rklb",
+    "date": "2026-11-27",
+    "question": "Schließt RKLB am Freitag, 27. November, an der Nasdaq höher als am Mittwoch (47,02 $)?",
+    "karlAnswer": "ja",
+    "karlReason": "Knapp „ja“, etwa 55 zu 45. Heute ist die Wall Street wegen Thanksgiving zu, am Freitag wird nur bis 19:00 Uhr gehandelt (dpa-AFX). Der Nasdaq-100-Future steht am Donnerstagmorgen rund 0,6 % im Plus, nachdem der Nasdaq 100 am Mittwoch einen Einbruch von bis zu 4,7 % fast aufgeholt hat (Yahoo, Der Aktionär). In der Nacht auf Freitag um 01:05 Uhr soll Electron zum 101. Mal starten, Rocket Lab meldete dafür einen Rekord-Countdown in der Probe (Stocktwits). Dagegen: Fünf Manager verkauften Aktien für 3,85 Mio. $, laut Meldungen nur zur Steuerzahlung auf zugeteilte Aktien. Karl lag gestern mit „nein“ daneben.",
     "outcome": null,
-    "resolvesAt": "2026-11-25T22:15:00+01:00",
+    "resolvesAt": "2026-11-27T19:15:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: RKLB historische Kurse (Schluss Di 24.11. 45,98 $)",
+        "title": "Yahoo Finance: RKLB historische Kurse (Schluss Mi 25.11. 47,02 $)",
         "url": "https://finance.yahoo.com/quote/RKLB/history/"
       },
       {
-        "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (Mi 25.11., 07:24)",
+        "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (Do 26.11., 07:25)",
         "url": "https://finance.yahoo.com/quote/NQ%3DF/"
       },
       {
-        "title": "Bloomberg via swissinfo: Aktienverluste weiten sich aus, KI-Handel wankt (Mi 25.11., 05:52)",
-        "url": "https://www.swissinfo.ch/eng/stock-losses-build-as-ai-trade-falters%2C-oil-drops%3A-markets-wrap/92432172"
+        "title": "Stocktwits: RKLB-Manager verkaufen vor Electron-Start (25.11.)",
+        "url": "https://stocktwits.com/news-articles/markets/equity/rklb-stock-cfo-coo-other-execs-sell-shares-ahead-of-electron-launch/cNbx33ZR9ZR"
       },
       {
-        "title": "Justy GT-R Kursdaten (prices.json, Nachbörse 25.11., 01:59 Uhr)",
-        "url": "https://github.com/Justy-gtr/Justy-gtr-app/blob/main/data/prices.json"
-      },
-      {
-        "title": "Reuters via Investing.com: Dell hebt Jahresprognose nach Rekordquartal mit KI-Servern (24.11.)",
-        "url": "https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024"
-      },
-      {
-        "title": "dpa-AFX via finanzen.net: Tagesvorschau Termine am 25. November 2026",
-        "url": "https://www.finanzen.net/nachricht/aktien/tagesvorschau-termine-am-25-november-2026-16085130"
+        "title": "dpa-AFX via wallstreet-online: DAX-FLASH (26.11., 07:15)",
+        "url": "https://www.wallstreet-online.de/nachricht/21749863-dax-flash-gewinne-erwartet-tech-erholung-ruecken"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-25-rklb",
+      "date": "2026-11-25",
+      "question": "Schließt RKLB am Mittwoch, 25. November, an der Nasdaq höher als am Dienstag (45,98 $)?",
+      "karlAnswer": "nein",
+      "karlReason": "Knapp „nein“, etwa 55 zu 45. Der Nasdaq-100-Future liegt am Morgen rund 1,4 % unter dem Vortag (Yahoo), in Asien fielen Taiwan um 5 % und Südkorea um 5,7 %, weil Zweifel am KI-Boom wachsen (Bloomberg). Nachbörslich stand RKLB zuletzt bei 45,69 $, leicht unter dem Schluss (Kursdaten der App). Dafür spricht: Nach zwei Tagen mit zusammen über 7 % Minus und vor dem langen Thanksgiving-Wochenende sind Erholungen möglich, und Dell hat mit starken KI-Zahlen überzeugt (Reuters). Um 14:30 Uhr kommen PCE-Inflation und BIP (dpa-AFX). Eigene Rocket-Lab-Nachrichten gibt es über Nacht nicht. Karl lag gestern mit „ja“ daneben.",
+      "outcome": "ja",
+      "resolvesAt": "2026-11-25T22:15:00+01:00",
+      "sources": [
+        {
+          "title": "Yahoo Finance: RKLB historische Kurse (Schluss Di 24.11. 45,98 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (Mi 25.11., 07:24)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
+        },
+        {
+          "title": "Bloomberg via swissinfo: Aktienverluste weiten sich aus, KI-Handel wankt (Mi 25.11., 05:52)",
+          "url": "https://www.swissinfo.ch/eng/stock-losses-build-as-ai-trade-falters%2C-oil-drops%3A-markets-wrap/92432172"
+        },
+        {
+          "title": "Justy GT-R Kursdaten (prices.json, Nachbörse 25.11., 01:59 Uhr)",
+          "url": "https://github.com/Justy-gtr/Justy-gtr-app/blob/main/data/prices.json"
+        },
+        {
+          "title": "Reuters via Investing.com: Dell hebt Jahresprognose nach Rekordquartal mit KI-Servern (24.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024"
+        },
+        {
+          "title": "dpa-AFX via finanzen.net: Tagesvorschau Termine am 25. November 2026",
+          "url": "https://www.finanzen.net/nachricht/aktien/tagesvorschau-termine-am-25-november-2026-16085130"
+        },
+        {
+          "title": "Yahoo Finance: RKLB Schluss Mi 25.11. 47,02 $",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        }
+      ]
+    },
     {
       "id": "2026-11-24-rklb",
       "date": "2026-11-24",

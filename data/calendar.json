@@ -1676,50 +1676,6 @@
       ]
     },
     {
-      "id": "evt-dell-q3",
-      "title": "Dell: Zahlen 3. Quartal mit KI-Server-Auftragsbestand (veröffentlicht)",
-      "date": "2026-11-24",
-      "time": "22:05",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "earnings",
-      "company": null,
-      "tickers": [
-        "SPCX",
-        "MRVL"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Dell legt am Di 24.11. Zahlen vor; der Auftragsbestand für KI-Server lag Ende Juli bei 95 Mrd. $ (Blockonomi). Nach dem KI-Kursrutsch dieser Woche gilt der Bericht als Hinweis, ob die Nachfrage nach KI-Servern hält, das betrifft SpaceX mit seinem KI-Rechengeschäft und Chipwerte wie Marvell. 95 %, weil der Termin genannt ist; die Uhrzeit steht noch nicht fest, üblich ist nach US-Börsenschluss. Stand Mo 08:00: Termin nach US-Börsenschluss am Di bestätigt; die Optionen preisen laut EarningsWatcher eine Bewegung von ±16,2 % ein – nach dem Chip-Einbruch vom Freitag der wichtigste KI-Test der verkürzten Woche. Uhrzeit 22:05 ist die übliche Zeit, nicht offiziell. 95 % unverändert. Stand Di 07:50: Dow Jones bestätigt in der Tagesvorschau 22:05 Uhr für Dells Zahlen zum 3. Quartal; HP Inc folgt schon um 22:00 Uhr (eigener Termin). 95 → 98 %, weil die Uhrzeit jetzt bestätigt ist. Ergebnis Di 22:05: Rekordumsatz von 54,94 Mrd. $, bereinigter Gewinn je Aktie 9,45 $, beides klar über den Erwartungen. KI-Server-Umsatz +291 % auf 22 Mrd. $, Auftragsbestand für KI-Server auf Rekord bei 132,3 Mrd. $; Dell hebt die Jahresprognose (Dell, Reuters). Die Aktie stieg nachbörslich um rund 4 bis 5 % (Investing.com).",
-      "example": false,
-      "sources": [
-        {
-          "title": "Blockonomi: SpaceX rutscht vorbörslich unter den Ausgabepreis von 135 $ (20.11., 13:48)",
-          "url": "https://blockonomi.com/spacex-spcx-stock-slips-below-135-ipo-price-as-morgan-stanley-and-bernstein-stay-bullish/"
-        },
-        {
-          "title": "EarningsWatcher: Zahlen am 23.11. und erwartete Bewegungen (Dell Di ±16,2 %)",
-          "url": "https://earnings-watcher.com/earnings-today"
-        },
-        {
-          "title": "Dow Jones via finanznachrichten.de: Tagesvorschau Dienstag, 24. November (06:33 Uhr)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70210369-tagesvorschau-dienstag-24-november-015.htm"
-        },
-        {
-          "title": "Dell Technologies: Ergebnisse 3. Quartal Geschäftsjahr 2027 (24.11.)",
-          "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results"
-        },
-        {
-          "title": "Reuters via Investing.com: Dell hebt Jahresprognose nach Rekordquartal (24.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024"
-        },
-        {
-          "title": "Investing.com: Warum die Dell-Aktie steigt (25.11.)",
-          "url": "https://www.investing.com/news/stock-market-news/why-is-dell-technologies-stock-surging-today-93CH-5049300"
-        }
-      ]
-    },
-    {
       "kind": "external",
       "company": null,
       "timezone": "Europe/Berlin",
@@ -1809,41 +1765,6 @@
       ]
     },
     {
-      "timezone": "Europe/Berlin",
-      "example": false,
-      "id": "evt-hp-q4",
-      "title": "HP Inc: Zahlen 4. Quartal (veröffentlicht)",
-      "date": "2026-11-24",
-      "time": "22:00",
-      "kind": "external",
-      "category": "earnings",
-      "company": null,
-      "tickers": [
-        "MRVL"
-      ],
-      "probabilityPct": 100,
-      "impact": "niedrig",
-      "reasoning": "HP Inc legt um 22:00 Uhr Zahlen zum 4. Quartal vor, fünf Minuten vor Dell (Dow Jones). HP zeigt, ob der PC-Markt durch KI-Rechner anzieht und wie stark höhere Speicherpreise die Marge drücken; für SpaceX und Marvell ist Dell am selben Abend wichtiger. 97 %, weil der Termin angekündigt ist. Ergebnis Di 22:00: Umsatz 16,0 Mrd. $ (+9,3 %), bereinigter Gewinn je Aktie 0,83 $, beides über den Erwartungen; höhere Dividende. Der Ausblick für 2027 (Gewinn je Aktie 3,15 bis 3,45 $) fällt wegen steigender Speicherpreise vorsichtig aus, die Aktie drehte nachbörslich ins Minus (HP, Investing.com, MarketWatch).",
-      "sources": [
-        {
-          "title": "Dow Jones via finanznachrichten.de: Tagesvorschau Dienstag, 24. November (06:33 Uhr)",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70210369-tagesvorschau-dienstag-24-november-015.htm"
-        },
-        {
-          "title": "HP Inc: Ergebnisse Geschäftsjahr 2026 und 4. Quartal (24.11.)",
-          "url": "https://investor.hp.com/news-events/news/news-details/2026/HP-Inc--Reports-Fiscal-2026-Full-Year-and-Fourth-Quarter-Results-Announces-Dividend-Increase/default.aspx"
-        },
-        {
-          "title": "Investing.com: HP dreht nachbörslich trotz Zahlen über den Erwartungen (24.11.)",
-          "url": "https://www.investing.com/news/earnings/hp-soars-after-hours-on-quarterly-results-beat-5049038"
-        },
-        {
-          "title": "MarketWatch: HP gibt „vorsichtigen“ Ausblick wegen steigender Speicherkosten",
-          "url": "https://www.marketwatch.com/story/hp-offers-prudent-guidance-amid-rising-memory-costs-c2356f31"
-        }
-      ]
-    },
-    {
       "id": "evt-ustr-subventionszoelle",
       "title": "USA: Handelsbeauftragter Greer schlägt neue Section-301-Zölle auf China (+20 %), EU und 12 weitere Partner vor (verkündet Mi 25.11., 14:11)",
       "date": "2026-11-25",
@@ -1909,37 +1830,6 @@
         {
           "title": "AP: USA wollen Zölle auf China um weitere 20 % und auf EU, Japan, Südkorea, Taiwan erhöhen (Mi 25.11., 14:11)",
           "url": "https://apnews.com/article/trump-tariffs-china-european-union-367083ea32f71fd7f70029ba7df66bf0"
-        }
-      ]
-    },
-    {
-      "id": "evt-de-bip-q3",
-      "title": "Deutschland: BIP 3. Quartal (zweite Veröffentlichung) – nur +0,1 %",
-      "date": "2026-11-25",
-      "time": "08:00",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "konjunktur",
-      "company": null,
-      "tickers": [
-        "TSLA"
-      ],
-      "probabilityPct": 100,
-      "impact": "niedrig",
-      "reasoning": "Das Statistische Bundesamt legt um 08:00 Uhr die Details zum Wachstum im 3. Quartal vor, dazu Privatkonsum und Staatsausgaben (dpa-AFX). Für die US-Werte der App ist der Termin Nebensache; er färbt höchstens die Stimmung am deutschen Handelsplatz am Morgen. 98 %, weil der Termin amtlich angekündigt ist. Stand Mi 12:20: Eingetreten. Das Statistische Bundesamt korrigiert das Wachstum im 3. Quartal auf 0,1 % zum Vorquartal herunter, in der ersten Schätzung waren es 0,2 % (tagesschau). Der Dax lag mittags trotzdem leicht im Plus (dpa-AFX).",
-      "example": false,
-      "sources": [
-        {
-          "title": "dpa-AFX via finanzen.net: Tagesvorschau Termine am 25. November 2026",
-          "url": "https://www.finanzen.net/nachricht/aktien/tagesvorschau-termine-am-25-november-2026-16085130"
-        },
-        {
-          "title": "tagesschau.de: Marktbericht – Neuer Aufreger am Horizont (25.11., 10:22)",
-          "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nikkei-dax-nasdaq-100.html"
-        },
-        {
-          "title": "dpa-AFX via wallstreet-online: Dax kaum bewegt – Autowerte stark, Tech schwach (25.11., 12:09)",
-          "url": "https://www.wallstreet-online.de/nachricht/21746620-aktien-frankfurt-dax-bewegt-autowerte-stark-tech-sektor-schwach"
         }
       ]
     },
@@ -2059,6 +1949,39 @@
         {
           "title": "PitchBook: SpaceX prices $44B of GPU financing led by Apollo, Goldman Sachs (25.11.)",
           "url": "https://pitchbook.com/news/articles/spacex-prices-44b-of-gpu-financing-led-by-apollo-goldman-sachs"
+        }
+      ]
+    },
+    {
+      "id": "evt-ustr-301-anhoerung",
+      "title": "USA: Öffentliche Anhörung zu den neuen Section-301-Zöllen gegen 14 Partner (EU 15 %), Stellungnahmen bis 5. Januar",
+      "date": "2027-01-25",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "zoelle",
+      "company": null,
+      "tickers": [
+        "TSLA",
+        "SPCX",
+        "MRVL"
+      ],
+      "probabilityPct": 85,
+      "impact": "hoch",
+      "reasoning": "Der US-Handelsbeauftragte Greer hat am 25.11. Zölle gegen 14 Volkswirtschaften vorgeschlagen, für die EU 15 % abzüglich bestehender Zölle, für China bis 20 % (USTR). Stellungnahmen sind bis 5. Januar möglich, die Anhörungen beginnen am 25. Januar. Vorher sollen die Zölle nicht greifen, Greer sprach von frühestens „in ein paar Monaten“ (Reuters, Anadolu). 85 %, weil der Termin im Federal-Register-Entwurf steht, Anhörungen aber verschoben werden können.",
+      "example": false,
+      "sources": [
+        {
+          "title": "USTR: Determinations in 14 Section 301 Investigations (25.11.)",
+          "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural"
+        },
+        {
+          "title": "Reuters: Trump unveils new tariffs over excess industrial capacity (25.11.)",
+          "url": "https://www.reuters.com/3fec1b0a85a0/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/"
+        },
+        {
+          "title": "Anadolu: US proposes tariffs of up to 35% on 14 economies (25.11.)",
+          "url": "https://m.aa.com.tr/en/economy/us-proposes-tariffs-of-up-to-35-on-14-economies-including-china-eu-citing-excess-manufacturing-capacity/4137597"
         }
       ]
     }
