@@ -1145,7 +1145,7 @@
       ],
       "probabilityPct": 75,
       "impact": "niedrig",
-      "reasoning": "Der Start der 14. StriX-Mission wurde in den Startplänen von frühestens 30.11. auf frühestens 27.11. vorgezogen (Kurzia Spaceflight Daily, 20.11.). Uhrzeit noch nicht genannt. 60 %, weil frühe Electron-Termine oft um einige Tage rutschen. Für den Kurs Routine, nach dem 100. Electron-Start eher ein Zeichen der Taktung. Stand Mo 08:00: Launch Library 2 nennt Fr 27.11. 00:05 UTC (01:05 Berlin) mit Status „Go“. 60 → 70 %, weil Zeit und Status jetzt stehen; Electron-Termine rutschen trotzdem oft um Tage. Stand Mo 20:20: Unverändert Fr 27.11. 00:05 UTC (01:05 Berlin), Status „Go“ (Launch Library 2). 70 % unverändert. Stand Di 14:20: Unverändert Fr 27.11. 00:05 UTC (01:05 Berlin), Status „Go“ (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 12:20: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Do 12:20: Rocket Lab nennt jetzt Fensteröffnung Fr 27.11. 00:00 UTC (01:00 Berlin), Sperrzonen zu Land, See und Luft für den 27.11. sind angekündigt, Ersatztage bis 10.12. (Rocket Lab). 70 → 75 %, weil die Startvorbereitung amtlich festgezurrt ist; Wetter und Technik können trotzdem um Tage schieben. Stand Do 16:25: Weiter Fensteröffnung Fr 27.11. 00:00 UTC (01:00 Berlin), Status „Go“, bisher keine Verschiebung (Launch Library 2 via SpaceNexus, Rocket Lab). 75 % unverändert.",
+      "reasoning": "Der Start der 14. StriX-Mission wurde in den Startplänen von frühestens 30.11. auf frühestens 27.11. vorgezogen (Kurzia Spaceflight Daily, 20.11.). Uhrzeit noch nicht genannt. 60 %, weil frühe Electron-Termine oft um einige Tage rutschen. Für den Kurs Routine, nach dem 100. Electron-Start eher ein Zeichen der Taktung. Stand Mo 08:00: Launch Library 2 nennt Fr 27.11. 00:05 UTC (01:05 Berlin) mit Status „Go“. 60 → 70 %, weil Zeit und Status jetzt stehen; Electron-Termine rutschen trotzdem oft um Tage. Stand Mo 20:20: Unverändert Fr 27.11. 00:05 UTC (01:05 Berlin), Status „Go“ (Launch Library 2). 70 % unverändert. Stand Di 14:20: Unverändert Fr 27.11. 00:05 UTC (01:05 Berlin), Status „Go“ (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 12:20: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Do 12:20: Rocket Lab nennt jetzt Fensteröffnung Fr 27.11. 00:00 UTC (01:00 Berlin), Sperrzonen zu Land, See und Luft für den 27.11. sind angekündigt, Ersatztage bis 10.12. (Rocket Lab). 70 → 75 %, weil die Startvorbereitung amtlich festgezurrt ist; Wetter und Technik können trotzdem um Tage schieben. Stand Do 16:25: Weiter Fensteröffnung Fr 27.11. 00:00 UTC (01:00 Berlin), Status „Go“, bisher keine Verschiebung (Launch Library 2 via SpaceNexus, Rocket Lab). 75 % unverändert. Stand Do 18:20: Weiter Fensteröffnung Fr 27.11. 00:00 UTC (01:00 Berlin), T-0 00:05 UTC, Status „Go“ (Launch Library 2 via SpaceRightNow, Stand 17:52). 75 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -1163,6 +1163,10 @@
         {
           "title": "SpaceNexus/Launch Library 2: Night Owls Never Sleep, Status Go (Stand 26.11., 14:15 UTC)",
           "url": "https://spacenexus.us/launch/cmuf8sc7x06di93pn18s3l5lx"
+        },
+        {
+          "title": "SpaceRightNow/Launch Library 2: Night Owls Never Sleep, Go (Stand 26.11., 17:52)",
+          "url": "https://spacerightnow.com/launches/electron-night-owls-never-sleep-strix-launch-14"
         }
       ]
     },
@@ -1330,9 +1334,9 @@
       "tickers": [
         "TSLA"
       ],
-      "probabilityPct": 15,
+      "probabilityPct": 20,
       "impact": "mittel",
-      "reasoning": "Die nächste TCMV-Sitzung ist für Dezember angekündigt, ein Datum und eine Abstimmung auf der Tagesordnung gibt es noch nicht. Für eine EU-weite Zulassung braucht es 15 von 27 Staaten mit 65 % der Bevölkerung; Frankreich lehnt bisher ab, Deutschland, Italien und Spanien haben nicht anerkannt. Tesla hat das System umbenannt und den Tempo-Spielraum auf 10 % gesenkt, um Bedenken auszuräumen. Meine 20 % gelten für eine Zustimmung bis Jahresende. Stand Mi 09:00: Finnland erkennt seit 10.11. die niederländische Zulassung an, Tesla darf „Assisted Driving“ dort sofort anbieten. Traficom erwartet die EU-weite Entscheidung „im kommenden Winter“ – das spricht eher für Anfang 2027 als für Dezember. 20 % unverändert. Stand Mi 14:20: Die EU-Kommission hat die Sitzung vom 1. auf den 15. Dezember verschoben; eine Abstimmung war schon in zwei früheren Sitzungen nicht zustande gekommen. Bisher folgen knapp ein Dutzend Länder der niederländischen Zulassung, nötig sind 15 von 27 mit 65 % der Bevölkerung (Reuters). Weniger Zeit bis Jahresende und erneute Verschiebung: 20 → 15 %.",
+      "reasoning": "Die nächste TCMV-Sitzung ist für Dezember angekündigt, ein Datum und eine Abstimmung auf der Tagesordnung gibt es noch nicht. Für eine EU-weite Zulassung braucht es 15 von 27 Staaten mit 65 % der Bevölkerung; Frankreich lehnt bisher ab, Deutschland, Italien und Spanien haben nicht anerkannt. Tesla hat das System umbenannt und den Tempo-Spielraum auf 10 % gesenkt, um Bedenken auszuräumen. Meine 20 % gelten für eine Zustimmung bis Jahresende. Stand Mi 09:00: Finnland erkennt seit 10.11. die niederländische Zulassung an, Tesla darf „Assisted Driving“ dort sofort anbieten. Traficom erwartet die EU-weite Entscheidung „im kommenden Winter“ – das spricht eher für Anfang 2027 als für Dezember. 20 % unverändert. Stand Mi 14:20: Die EU-Kommission hat die Sitzung vom 1. auf den 15. Dezember verschoben; eine Abstimmung war schon in zwei früheren Sitzungen nicht zustande gekommen. Bisher folgen knapp ein Dutzend Länder der niederländischen Zulassung, nötig sind 15 von 27 mit 65 % der Bevölkerung (Reuters). Weniger Zeit bis Jahresende und erneute Verschiebung: 20 → 15 %. Stand Do 18:20: Im am Donnerstag veröffentlichten Tagesordnungsentwurf der EU-Kommission für die Sitzung am 15. Dezember steht erstmals ausdrücklich „mit möglicher Abstimmung“ über den niederländischen Antrag; nötig bleiben 15 von 27 Staaten mit 65 % der Bevölkerung (Reuters). Eine Abstimmung wird damit greifbarer, eine Mehrheit ist aber offen: 15 → 20 %.",
       "example": false,
       "sources": [
         {
@@ -1358,6 +1362,10 @@
         {
           "title": "Reuters via Euronext: EU verschiebt Sitzung zu Teslas Fahrassistenz auf 15. Dezember (Mi 25.11., 11:46)",
           "url": "https://live.euronext.com/en/financial-news/eu-postpones-discussion-approve-teslas-self-driving-tech"
+        },
+        {
+          "title": "Reuters via Investing.com: EU könnte am 15.12. über Teslas Fahrassistenz abstimmen (26.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/eu-may-vote-on-authorising-tesla-assisteddriving-system-at-dec-15-meeting-5052607"
         }
       ]
     },
@@ -1706,7 +1714,7 @@
       ],
       "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "Am Thanksgiving-Donnerstag ist die Wall Street geschlossen, am Freitag endet der Handel um 13:00 New Yorker Zeit (19:00 Berlin) (CNBC). Dünner Handel kann Bewegungen verstärken (Fortune). Stand Do 16:25: Bestätigt, die Wall Street ist heute geschlossen, am Black Friday wird verkürzt gehandelt (finanzen.net).",
+      "reasoning": "Am Thanksgiving-Donnerstag ist die Wall Street geschlossen, am Freitag endet der Handel um 13:00 New Yorker Zeit (19:00 Berlin) (CNBC). Dünner Handel kann Bewegungen verstärken (Fortune). Stand Do 16:25: Bestätigt, die Wall Street ist heute geschlossen, am Black Friday wird verkürzt gehandelt (finanzen.net). Stand Do 18:20: Ohne US-Handel schloss der Dax 2,08 % höher bei 25.215 Punkten, getragen von Tech-, Rohstoff- und Autowerten (dpa-AFX).",
       "sources": [
         {
           "title": "CNBC: Futures steigen nach Korrektur-Woche (Live, 22./23.11.)",
@@ -1719,6 +1727,10 @@
         {
           "title": "finanzen.net: Heute im Fokus – Wall Street bleibt zu (26.11.)",
           "url": "https://www.finanzen.net/nachricht/aktien/heute-im-fokus-26-11-2026-16087584"
+        },
+        {
+          "title": "dpa-AFX via finanzen.net: Aktien Frankfurt Schluss – Dax erholt (26.11., 17:43)",
+          "url": "https://www.finanzen.net/nachricht/aktien/aktien-frankfurt-schluss-dax-erholt-zeit-zum-durchatmen-dank-thanksgiving-16088942"
         }
       ]
     },
@@ -1857,7 +1869,7 @@
       ],
       "probabilityPct": 85,
       "impact": "hoch",
-      "reasoning": "Der US-Handelsbeauftragte Greer hat am 25.11. Zölle gegen 14 Volkswirtschaften vorgeschlagen, für die EU 15 % abzüglich bestehender Zölle, für China bis 20 % (USTR). Stellungnahmen sind bis 5. Januar möglich, die Anhörungen beginnen am 25. Januar. Vorher sollen die Zölle nicht greifen, Greer sprach von frühestens „in ein paar Monaten“ (Reuters, Anadolu). 85 %, weil der Termin im Federal-Register-Entwurf steht, Anhörungen aber verschoben werden können.",
+      "reasoning": "Der US-Handelsbeauftragte Greer hat am 25.11. Zölle gegen 14 Volkswirtschaften vorgeschlagen, für die EU 15 % abzüglich bestehender Zölle, für China bis 20 % (USTR). Stellungnahmen sind bis 5. Januar möglich, die Anhörungen beginnen am 25. Januar. Vorher sollen die Zölle nicht greifen, Greer sprach von frühestens „in ein paar Monaten“ (Reuters, Anadolu). 85 %, weil der Termin im Federal-Register-Entwurf steht, Anhörungen aber verschoben werden können. Stand Do 18:20: Die Börsen werten die Pläne als milder als befürchtet, weil die neuen Sätze nicht auf die Zwangsarbeits-Zölle vom Juli addiert werden und die 15-%-Obergrenze für die EU gilt; der Dax schloss am Donnerstag 2,1 % höher (Reuters, dpa-AFX). Die EU-Kommission weist die Begründung mit Überkapazitäten zurück (tagesschau.de). 85 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -1871,6 +1883,14 @@
         {
           "title": "Anadolu: US proposes tariffs of up to 35% on 14 economies (25.11.)",
           "url": "https://m.aa.com.tr/en/economy/us-proposes-tariffs-of-up-to-35-on-14-economies-including-china-eu-citing-excess-manufacturing-capacity/4137597"
+        },
+        {
+          "title": "Reuters via onvista: Zollsorgen lassen nach (26.11.)",
+          "url": "https://www.onvista.de/news/2026/11-26-banken-und-techwerte-treiben-boersen-an-zollsorgen-lassen-nach-0-20-26580852"
+        },
+        {
+          "title": "tagesschau.de: USA kündigen neue Zölle an – auch gegen EU und China (25.11.)",
+          "url": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-124.html"
         }
       ]
     },
