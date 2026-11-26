@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-26T17:04:07Z",
+  "updatedAt": "2026-11-26T17:42:18Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 45,
+      "score": 50,
       "postsCount": 25,
-      "reason": "Weiter viel Jubel über zwei SpaceX-Aktien für jedes US-Kind. Dazu Gerede über eine Fusion mit Tesla und Samsung als möglichen Starlink-Zulieferer.",
+      "reason": "Neues Thema: Die FCC erlaubt SpaceX bis zu 1 Mio. Satelliten für Rechenzentren im All. Dazu weiter Freude über die Aktien für US-Kinder.",
       "sources": [
         {
-          "title": "@daveydefi auf X (26.11., 16:34)",
-          "url": "https://x.com/daveydefi/status/2125976555692097664"
+          "title": "@ren_stocks auf X (26.11., 17:45)",
+          "url": "https://x.com/ren_stocks/status/2125994396390699176"
         },
         {
-          "title": "@Kalshi_Finance auf X (26.11., 16:31)",
-          "url": "https://x.com/Kalshi_Finance/status/2125975660174991429"
+          "title": "@Vol888 auf X (26.11., 18:27)",
+          "url": "https://x.com/Vol888/status/2126004870641557895"
         },
         {
-          "title": "@MelvinInvests auf X (26.11., 16:30)",
-          "url": "https://x.com/MelvinInvests/status/2125975395506049388"
+          "title": "@DEUSVULTREV68 auf X (26.11., 18:06)",
+          "url": "https://x.com/DEUSVULTREV68/status/2125999658681934165"
         }
       ],
-      "updatedAt": "2026-11-26T17:04:07Z"
+      "updatedAt": "2026-11-26T17:42:18Z"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 10,
+      "score": 15,
       "postsCount": 25,
-      "reason": "Fans feiern FSD v15 und die größere Robotaxi-Zone in Dallas. Dämpfer: Die EU-Abstimmung zum autonomen Fahren wurde auf den 15.12. verschoben.",
+      "reason": "Fans loben FSD v15, Robotaxi in Dallas und eine mögliche Fusion mit SpaceX. Dämpfer: EU-Abstimmung zum autonomen Fahren erst am 15.12.",
       "sources": [
+        {
+          "title": "@DoctorJack16 auf X (26.11., 18:05)",
+          "url": "https://x.com/DoctorJack16/status/2125999499889844492"
+        },
         {
           "title": "@Simoncuocuo auf X (26.11., 17:40)",
           "url": "https://x.com/Simoncuocuo/status/2125993127903445385"
-        },
-        {
-          "title": "@teslainvest_01 auf X (26.11., 18:01)",
-          "url": "https://x.com/teslainvest_01/status/2125998470393696577"
         },
         {
           "title": "@StocksNews__ auf X (26.11., 18:01)",
           "url": "https://x.com/StocksNews__/status/2125998472063300085"
         }
       ],
-      "updatedAt": "2026-11-26T17:04:07Z"
+      "updatedAt": "2026-11-26T17:42:18Z"
     },
     "RKLB": {
       "mood": "gut",
@@ -60,7 +60,7 @@
           "url": "https://x.com/RendTheVeil/status/2125973302325698855"
         }
       ],
-      "updatedAt": "2026-11-26T17:04:07Z"
+      "updatedAt": "2026-11-26T17:42:18Z"
     }
   }
 }
