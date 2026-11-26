@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-26T19:11:40Z",
+  "updatedAt": "2026-11-26T19:37:29Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 50,
-      "postsCount": 24,
-      "reason": "Rechenzentren im All bleiben Thema, auch der stern berichtet. Dazu Fusionsgerede mit Tesla; einige diskutieren die Verwässerung durch die Kinder-Aktien.",
+      "postsCount": 25,
+      "reason": "Viel Gerede über die Aktien für US-Kinder und Texas, das SpaceX’ 24-Mrd.-$-Rechenzentrum schnell genehmigen will. Wenige halten SpaceX für zu teuer.",
       "sources": [
         {
-          "title": "@sternde auf X (26.11., 19:19)",
-          "url": "https://x.com/sternde/status/2126017990571274545"
+          "title": "@WOLF_Financial auf X (26.11., 20:36)",
+          "url": "https://x.com/WOLF_Financial/status/2126037272311017970"
         },
         {
-          "title": "@assetdash auf X (26.11., 19:28)",
-          "url": "https://x.com/assetdash/status/2126020167893184710"
+          "title": "@liquidtrading auf X (26.11., 20:29)",
+          "url": "https://x.com/liquidtrading/status/2126035707953041467"
         },
         {
-          "title": "@unusual_whales auf X (26.11., 20:01)",
-          "url": "https://x.com/unusual_whales/status/2126028464499073301"
+          "title": "@spcxGOD auf X (26.11., 20:21)",
+          "url": "https://x.com/spcxGOD/status/2126033688815137009"
         }
       ],
-      "updatedAt": "2026-11-26T19:11:40Z"
+      "updatedAt": "2026-11-26T19:37:29Z"
     },
     "TSLA": {
       "mood": "gut",
       "score": 30,
-      "postsCount": 24,
-      "reason": "Bei Polymarket liegt eine Fusion mit SpaceX bis Ende Januar bei rund 55 %. Deutsche Fans freuen sich, dass Italien Teslas Fahrassistenz TAD anerkennt.",
+      "postsCount": 25,
+      "reason": "Man spricht über die Fusion mit SpaceX und dass Teslas Börsenwert aufholt (Abstand 15 statt 21 %). Dazu viele neue Optimus-Videos.",
       "sources": [
         {
-          "title": "@assetdash auf X (26.11., 19:28)",
-          "url": "https://x.com/assetdash/status/2126020167893184710"
+          "title": "@ChrisDungeon auf X (26.11., 20:31)",
+          "url": "https://x.com/ChrisDungeon/status/2126036074656825835"
         },
         {
-          "title": "@cybergigafacto1 auf X (26.11., 19:14)",
-          "url": "https://x.com/cybergigafacto1/status/2126016655088087368"
+          "title": "@KeithTradeSmith auf X (26.11., 20:37)",
+          "url": "https://x.com/KeithTradeSmith/status/2126037524019654743"
         },
         {
-          "title": "@HelmPeter auf X (26.11., 19:36)",
-          "url": "https://x.com/HelmPeter/status/2126022202680099162"
+          "title": "@Der_Boersianer auf X (26.11., 20:36)",
+          "url": "https://x.com/Der_Boersianer/status/2126037305794208127"
         }
       ],
-      "updatedAt": "2026-11-26T19:11:40Z"
+      "updatedAt": "2026-11-26T19:37:29Z"
     },
     "RKLB": {
       "mood": "gut",
       "score": 25,
-      "postsCount": 7,
-      "reason": "Vorfreude auf den 101. Electron-Start in wenigen Stunden. Chartfans sehen ein positives Signal, andere sorgen sich ums Neutron-Bauteil auf rauer See.",
+      "postsCount": 9,
+      "reason": "Fans freuen sich zu Thanksgiving auf den Electron-Start. Andere erinnern daran, wie stark beliebte Aktien wie RKLB dieses Jahr gefallen sind.",
       "sources": [
         {
-          "title": "@TrendSpider auf X (26.11., 19:30)",
-          "url": "https://x.com/TrendSpider/status/2126020664134115410"
+          "title": "@Chimp_Capital auf X (26.11., 20:16)",
+          "url": "https://x.com/Chimp_Capital/status/2126032354385039868"
         },
         {
-          "title": "@PanVulpesV auf X (26.11., 19:05)",
-          "url": "https://x.com/PanVulpesV/status/2126014544665292895"
+          "title": "@doseycapital auf X (26.11., 20:20)",
+          "url": "https://x.com/doseycapital/status/2126033427996541303"
         },
         {
-          "title": "@SeekingAlpha auf X (26.11., 19:50)",
-          "url": "https://x.com/SeekingAlpha/status/2126025703640695164"
+          "title": "@danhinvests auf X (26.11., 20:19)",
+          "url": "https://x.com/danhinvests/status/2126033143266521347"
         }
       ],
-      "updatedAt": "2026-11-26T19:11:40Z"
+      "updatedAt": "2026-11-26T19:37:29Z"
     }
   }
 }
