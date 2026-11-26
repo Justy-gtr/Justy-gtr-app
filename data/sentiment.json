@@ -1,66 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-26T18:04:25Z",
+  "updatedAt": "2026-11-26T18:39:45Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 55,
-      "postsCount": 25,
-      "reason": "Neues Thema: Die FCC erlaubt SpaceX bis zu 1 Mio. Satelliten für Rechenzentren im All. Dazu weiter Freude über die Aktien für US-Kinder.",
+      "score": 50,
+      "postsCount": 24,
+      "reason": "Rechenzentren im All bleiben Thema, auch der stern berichtet. Dazu Fusionsgerede mit Tesla; einige diskutieren die Verwässerung durch die Kinder-Aktien.",
       "sources": [
         {
-          "title": "@CaschysBlog auf X (26.11., 18:32)",
-          "url": "https://x.com/CaschysBlog/status/2126006226261553200"
+          "title": "@sternde auf X (26.11., 19:19)",
+          "url": "https://x.com/sternde/status/2126017990571274545"
         },
         {
-          "title": "@Vol888 auf X (26.11., 18:27)",
-          "url": "https://x.com/Vol888/status/2126004870641557895"
+          "title": "@assetdash auf X (26.11., 19:28)",
+          "url": "https://x.com/assetdash/status/2126020167893184710"
         },
         {
-          "title": "@WealthClub10x auf X (26.11., 18:54)",
-          "url": "https://x.com/WealthClub10x/status/2126011794548252848"
+          "title": "@deannawata auf X (26.11., 19:18)",
+          "url": "https://x.com/deannawata/status/2126017723654123633"
         }
       ],
-      "updatedAt": "2026-11-26T18:04:25Z"
+      "updatedAt": "2026-11-26T18:39:45Z"
     },
     "TSLA": {
-      "mood": "gemischt",
-      "score": 20,
-      "postsCount": 25,
-      "reason": "Fans loben FSD v15, Robotaxi in Dallas und eine mögliche Fusion mit SpaceX. Dämpfer: EU-Abstimmung zum autonomen Fahren erst am 15.12.",
+      "mood": "gut",
+      "score": 30,
+      "postsCount": 24,
+      "reason": "Bei Polymarket liegt eine Fusion mit SpaceX bis Ende Januar bei rund 55 %. Deutsche Fans freuen sich, dass Italien Teslas Fahrassistenz TAD anerkennt.",
       "sources": [
         {
-          "title": "@DoctorJack16 auf X (26.11., 18:05)",
-          "url": "https://x.com/DoctorJack16/status/2125999499889844492"
+          "title": "@assetdash auf X (26.11., 19:28)",
+          "url": "https://x.com/assetdash/status/2126020167893184710"
         },
         {
-          "title": "@Simoncuocuo auf X (26.11., 17:40)",
-          "url": "https://x.com/Simoncuocuo/status/2125993127903445385"
+          "title": "@cybergigafacto1 auf X (26.11., 19:14)",
+          "url": "https://x.com/cybergigafacto1/status/2126016655088087368"
         },
         {
-          "title": "@StocksNews__ auf X (26.11., 18:01)",
-          "url": "https://x.com/StocksNews__/status/2125998472063300085"
+          "title": "@HelmPeter auf X (26.11., 19:36)",
+          "url": "https://x.com/HelmPeter/status/2126022202680099162"
         }
       ],
-      "updatedAt": "2026-11-26T18:04:25Z"
+      "updatedAt": "2026-11-26T18:39:45Z"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 15,
-      "postsCount": 6,
-      "reason": "Ruhiger Feiertag: Man spricht über den Start eines japanischen Satelliten an Thanksgiving und vergleicht den Auftragsbestand mit Intuitive Machines.",
+      "score": 25,
+      "postsCount": 7,
+      "reason": "Vorfreude auf den 101. Electron-Start in wenigen Stunden. Chartfans sehen ein positives Signal, andere sorgen sich ums Neutron-Bauteil auf rauer See.",
       "sources": [
         {
-          "title": "@species_x auf X (26.11., 17:14)",
-          "url": "https://x.com/species_x/status/2125986489746030919"
+          "title": "@TrendSpider auf X (26.11., 19:30)",
+          "url": "https://x.com/TrendSpider/status/2126020664134115410"
         },
         {
-          "title": "@RendTheVeil auf X (26.11., 16:21)",
-          "url": "https://x.com/RendTheVeil/status/2125973302325698855"
+          "title": "@PanVulpesV auf X (26.11., 19:05)",
+          "url": "https://x.com/PanVulpesV/status/2126014544665292895"
+        },
+        {
+          "title": "@will__hall1 auf X (26.11., 19:33)",
+          "url": "https://x.com/will__hall1/status/2126021667449430479"
         }
       ],
-      "updatedAt": "2026-11-26T18:04:25Z"
+      "updatedAt": "2026-11-26T18:39:45Z"
     }
   }
 }
