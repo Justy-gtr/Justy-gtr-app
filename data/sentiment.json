@@ -1,7 +1,7 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-26T14:41:18Z",
+  "updatedAt": "2026-11-26T15:04:47Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
@@ -22,12 +22,12 @@
           "url": "https://x.com/johnsaksa/status/2125956346575020149"
         }
       ],
-      "updatedAt": "2026-11-26T14:41:18Z"
+      "updatedAt": "2026-11-26T15:04:47Z"
     },
     "TSLA": {
       "mood": "gemischt",
       "score": 15,
-      "postsCount": 8,
+      "postsCount": 6,
       "reason": "Gesprochen wird über die mögliche Fusion mit SpaceX: JPMorgan meint, S&P könnte Regeln dafür lockern. Kritiker sehen darin mehr Kontrolle für Musk.",
       "sources": [
         {
@@ -43,28 +43,28 @@
           "url": "https://x.com/mingcalls/status/2125943101885755856"
         }
       ],
-      "updatedAt": "2026-11-26T14:41:18Z"
+      "updatedAt": "2026-11-26T15:04:47Z"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 25,
-      "postsCount": 7,
-      "reason": "Der Rekordumsatz von 268 Mio. $ und 3,57 Mrd. $ Auftragsbestand werden gelobt. Auf Krypto-Plattformen liegt RKLB rund 10 % im Plus, trotz COO-Verkäufen.",
+      "score": 20,
+      "postsCount": 8,
+      "reason": "Jim Cramer nennt RKLB „zu günstig“, Fans loben Rekordumsatz und Auftragsbestand. Andere erinnern daran, dass die Aktie seit August rund 41 % verloren hat.",
       "sources": [
+        {
+          "title": "@Stocksalute auf X (26.11., 15:42)",
+          "url": "https://x.com/Stocksalute/status/2125963288735584727"
+        },
+        {
+          "title": "@burak_finance auf X (26.11., 15:57)",
+          "url": "https://x.com/burak_finance/status/2125967060047913128"
+        },
         {
           "title": "@thebasemint1 auf X (26.11., 14:29)",
           "url": "https://x.com/thebasemint1/status/2125944946645733783"
-        },
-        {
-          "title": "@0xPascual auf X (26.11., 14:36)",
-          "url": "https://x.com/0xPascual/status/2125946683229933841"
-        },
-        {
-          "title": "@AxiosRose auf X (26.11., 13:03)",
-          "url": "https://x.com/AxiosRose/status/2125923296038322218"
         }
       ],
-      "updatedAt": "2026-11-26T14:41:18Z"
+      "updatedAt": "2026-11-26T15:04:47Z"
     }
   }
 }
