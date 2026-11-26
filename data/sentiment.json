@@ -1,70 +1,66 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-26T16:06:27Z",
+  "updatedAt": "2026-11-26T17:04:07Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 19,
-      "reason": "Die Aktien-Geschenke für US-Kinder werden weiter gefeiert, auch von US-Senator McCormick. Einzelne fragen nach Verwässerung und Musks Vergütung.",
+      "score": 45,
+      "postsCount": 25,
+      "reason": "Weiter viel Jubel über zwei SpaceX-Aktien für jedes US-Kind. Dazu Gerede über eine Fusion mit Tesla und Samsung als möglichen Starlink-Zulieferer.",
       "sources": [
         {
-          "title": "@SenMcCormickPA auf X (26.11., 15:23)",
-          "url": "https://x.com/SenMcCormickPA/status/2125958629354246480"
+          "title": "@daveydefi auf X (26.11., 16:34)",
+          "url": "https://x.com/daveydefi/status/2125976555692097664"
         },
         {
-          "title": "@JeffreyJDavis auf X (26.11., 15:10)",
-          "url": "https://x.com/JeffreyJDavis/status/2125955267225325568"
+          "title": "@Kalshi_Finance auf X (26.11., 16:31)",
+          "url": "https://x.com/Kalshi_Finance/status/2125975660174991429"
         },
         {
-          "title": "@johnsaksa auf X (26.11., 15:14)",
-          "url": "https://x.com/johnsaksa/status/2125956346575020149"
+          "title": "@MelvinInvests auf X (26.11., 16:30)",
+          "url": "https://x.com/MelvinInvests/status/2125975395506049388"
         }
       ],
-      "updatedAt": "2026-11-26T16:06:27Z"
+      "updatedAt": "2026-11-26T17:04:07Z"
     },
     "TSLA": {
       "mood": "gemischt",
-      "score": 15,
-      "postsCount": 7,
-      "reason": "Gesprochen wird über die mögliche Fusion mit SpaceX: JPMorgan meint, S&P könnte Regeln dafür lockern. Kritiker sehen darin mehr Kontrolle für Musk.",
+      "score": 10,
+      "postsCount": 25,
+      "reason": "Fans feiern FSD v15 und die größere Robotaxi-Zone in Dallas. Dämpfer: Die EU-Abstimmung zum autonomen Fahren wurde auf den 15.12. verschoben.",
       "sources": [
         {
-          "title": "@investuskr auf X (26.11., 14:30)",
-          "url": "https://x.com/investuskr/status/2125945221402042575"
+          "title": "@Simoncuocuo auf X (26.11., 17:40)",
+          "url": "https://x.com/Simoncuocuo/status/2125993127903445385"
         },
         {
-          "title": "@FinancePotentia auf X (26.11., 14:37)",
-          "url": "https://x.com/FinancePotentia/status/2125947012357226598"
+          "title": "@teslainvest_01 auf X (26.11., 18:01)",
+          "url": "https://x.com/teslainvest_01/status/2125998470393696577"
         },
         {
-          "title": "@mingcalls auf X (26.11., 14:21)",
-          "url": "https://x.com/mingcalls/status/2125943101885755856"
+          "title": "@StocksNews__ auf X (26.11., 18:01)",
+          "url": "https://x.com/StocksNews__/status/2125998472063300085"
         }
       ],
-      "updatedAt": "2026-11-26T16:06:27Z"
+      "updatedAt": "2026-11-26T17:04:07Z"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 20,
-      "postsCount": 4,
-      "reason": "Jim Cramer nennt RKLB „zu günstig“, Fans loben Rekordumsatz und Auftragsbestand. Andere erinnern daran, dass die Aktie seit August rund 41 % verloren hat.",
+      "score": 15,
+      "postsCount": 6,
+      "reason": "Ruhiger Feiertag: Man spricht über den Start eines japanischen Satelliten an Thanksgiving und vergleicht den Auftragsbestand mit Intuitive Machines.",
       "sources": [
         {
-          "title": "@Stocksalute auf X (26.11., 15:42)",
-          "url": "https://x.com/Stocksalute/status/2125963288735584727"
+          "title": "@species_x auf X (26.11., 17:14)",
+          "url": "https://x.com/species_x/status/2125986489746030919"
         },
         {
-          "title": "@burak_finance auf X (26.11., 15:57)",
-          "url": "https://x.com/burak_finance/status/2125967060047913128"
-        },
-        {
-          "title": "@thebasemint1 auf X (26.11., 14:29)",
-          "url": "https://x.com/thebasemint1/status/2125944946645733783"
+          "title": "@RendTheVeil auf X (26.11., 16:21)",
+          "url": "https://x.com/RendTheVeil/status/2125973302325698855"
         }
       ],
-      "updatedAt": "2026-11-26T16:06:27Z"
+      "updatedAt": "2026-11-26T17:04:07Z"
     }
   }
 }
