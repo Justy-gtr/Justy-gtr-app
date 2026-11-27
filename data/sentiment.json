@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-27T17:04:35Z",
+  "updatedAt": "2026-11-27T17:41:24Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 60,
+      "score": 45,
       "postsCount": 25,
-      "reason": "SpaceX-Aktie zieht mit der Tech-Rally an. Viel Gesprächsstoff: Musks Aktien-Spenden für Trump Accounts und die FCC-Zusage für Starmind-Satelliten.",
+      "reason": "SpaceX hält sich um 132 $. Themen: Fusionsgerüchte mit Tesla und Optionswetten auf steigende Kurse, aber auch Kritik an Gaskraftwerken für Rechenzentren.",
       "sources": [
         {
-          "title": "@PowerLunch auf X (27.11., 18:03)",
-          "url": "https://x.com/PowerLunch/status/2126361202200601049"
+          "title": "@DarkFlowAlert auf X (27.11., 18:40)",
+          "url": "https://x.com/DarkFlowAlert/status/2126370501094154547"
         },
         {
-          "title": "@CyberPlayGround auf X (27.11., 18:03)",
-          "url": "https://x.com/CyberPlayGround/status/2126361219451724207"
+          "title": "@0xtechquity auf X (27.11., 18:38)",
+          "url": "https://x.com/0xtechquity/status/2126369964743409915"
         },
         {
-          "title": "@merikuh auf X (27.11., 18:03)",
-          "url": "https://x.com/merikuh/status/2126361257804730368"
+          "title": "@Tmmills01 auf X (27.11., 18:40)",
+          "url": "https://x.com/Tmmills01/status/2126370541795754094"
         }
       ],
-      "updatedAt": "2026-11-27T17:04:35Z"
+      "updatedAt": "2026-11-27T17:41:24Z"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 70,
+      "score": 60,
       "postsCount": 25,
-      "reason": "Tesla knackt im verkürzten Black-Friday-Handel die 400 $ und liegt über 5 % im Plus. Viele Trader feiern, dazu Fusionsfantasie mit SpaceX.",
+      "reason": "Tesla hält das Tagesplus von rund 5 % um 400 $. Trader zeigen Gewinne, dazu Spekulation über eine Fusion mit SpaceX und Debatten über Autopilot.",
       "sources": [
         {
-          "title": "@WOLF_Financial auf X (27.11., 18:02)",
-          "url": "https://x.com/WOLF_Financial/status/2126361012920275005"
+          "title": "@Vol888 auf X (27.11., 18:40)",
+          "url": "https://x.com/Vol888/status/2126370692002390243"
         },
         {
-          "title": "@MentoviaX auf X (27.11., 18:02)",
-          "url": "https://x.com/MentoviaX/status/2126360905520669112"
+          "title": "@0xtechquity auf X (27.11., 18:38)",
+          "url": "https://x.com/0xtechquity/status/2126369964743409915"
         },
         {
-          "title": "@BullflowIO auf X (27.11., 18:00)",
-          "url": "https://x.com/BullflowIO/status/2126360600066585056"
+          "title": "@M44_1RJ auf X (27.11., 18:38)",
+          "url": "https://x.com/M44_1RJ/status/2126369982263291918"
         }
       ],
-      "updatedAt": "2026-11-27T17:04:35Z"
+      "updatedAt": "2026-11-27T17:41:24Z"
     },
     "RKLB": {
       "mood": "gemischt",
-      "score": 20,
-      "postsCount": 24,
-      "reason": "Ruhiger Tag: Chart-Debatte zwischen Bodenbildung und Schwäche, Lob für 22 Electron-Starts im Jahr. Viele Spam-Posts, kaum echte News.",
+      "score": 25,
+      "postsCount": 25,
+      "reason": "Thema ist der 101. Electron-Start für Synspective und eine FCC-Erwähnung. Chart-Accounts sehen eine Unterstützungszone, manche bleiben skeptisch.",
       "sources": [
         {
-          "title": "@MarketMaestro1 auf X (27.11., 18:01)",
-          "url": "https://x.com/MarketMaestro1/status/2126360759185879239"
+          "title": "@Stellarixorine auf X (27.11., 18:25)",
+          "url": "https://x.com/Stellarixorine/status/2126366813026226473"
         },
         {
-          "title": "@XaviatriX auf X (27.11., 17:56)",
-          "url": "https://x.com/XaviatriX/status/2126359431394848909"
+          "title": "@Fibonacci_TA auf X (27.11., 18:30)",
+          "url": "https://x.com/Fibonacci_TA/status/2126367954803831283"
         },
         {
-          "title": "@SpaceSector001 auf X (27.11., 17:57)",
-          "url": "https://x.com/SpaceSector001/status/2126359820869755263"
+          "title": "@mottbox_ auf X (27.11., 18:33)",
+          "url": "https://x.com/mottbox_/status/2126368893434237359"
         }
       ],
-      "updatedAt": "2026-11-27T17:04:35Z"
+      "updatedAt": "2026-11-27T17:41:24Z"
     }
   }
 }
