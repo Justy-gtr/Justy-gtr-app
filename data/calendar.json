@@ -89,7 +89,7 @@
       ],
       "probabilityPct": 65,
       "impact": "niedrig",
-      "reasoning": "SpaceX führt USSF-380 neu in der Startliste: Falcon 9 von SLC-4E in Kalifornien, Fenster 27.11. 23:53 bis 28.11. 03:53 Uhr Ostküstenzeit (Sa 28.11. 05:53 bis 09:53 Berlin), Landung auf dem Drohnenschiff (SpaceX). Vor diesem Start stehen am selben Gelände noch USSF-317, NROL-136 und USSF-266 an, die schon mehrfach rutschten; deshalb nur 65 % für den genannten Tag. Kurswirkung gering. Stand Mo 14:20: Launch Library 2 nennt jetzt So 29.11. 04:39 UTC (05:39 Berlin), Status „Go“ – einen Tag später als bisher; einen Grund nennt die Liste nicht. 65 % bleibt, weil vorher noch USSF-266 am selben Gelände fliegen muss. Stand Mi 12:20: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert.",
+      "reasoning": "SpaceX führt USSF-380 neu in der Startliste: Falcon 9 von SLC-4E in Kalifornien, Fenster 27.11. 23:53 bis 28.11. 03:53 Uhr Ostküstenzeit (Sa 28.11. 05:53 bis 09:53 Berlin), Landung auf dem Drohnenschiff (SpaceX). Vor diesem Start stehen am selben Gelände noch USSF-317, NROL-136 und USSF-266 an, die schon mehrfach rutschten; deshalb nur 65 % für den genannten Tag. Kurswirkung gering. Stand Mo 14:20: Launch Library 2 nennt jetzt So 29.11. 04:39 UTC (05:39 Berlin), Status „Go“ – einen Tag später als bisher; einen Grund nennt die Liste nicht. 65 % bleibt, weil vorher noch USSF-266 am selben Gelände fliegen muss. Stand Mi 12:20: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Fr 07:35: SpaceX nennt weiter Sa 28.11. 20:39 Uhr Pazifikzeit (So 29.11. 05:39 Berlin), Ersatztermin So 29.11. 18:26 Pazifikzeit; Launch Library 2 Status „Go“. Wahrscheinlichkeit unverändert.",
       "example": false,
       "sources": [
         {
@@ -99,6 +99,10 @@
         {
           "title": "Launch Library 2: Startliste (Stand Mo 23.11., 14:20)",
           "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
+        },
+        {
+          "title": "SpaceX: USSF-380 Mission (Stand 27.11.)",
+          "url": "https://www.spacex.com/launches/ussf380"
         }
       ]
     },
@@ -116,7 +120,7 @@
       ],
       "probabilityPct": 65,
       "impact": "niedrig",
-      "reasoning": "Die NASA plant den Start des Frachters Cygnus XL von Northrop Grumman (Mission CRS-25) auf einer Falcon 9 frühestens am So 29.11. um 10:49 Uhr Ostküstenzeit (16:49 Berlin) von Startrampe SLC-40 in Cape Canaveral (NASA). Die Startdatenbank führt 15:47 UTC (16:47 Berlin) mit Status „Go“ (Launch Library 2). An Bord: Versorgung und Experimente für die Raumstation, der Frachter bleibt bis Mai 2027 angedockt (NASA, Northrop Grumman). Bis zum Termin sind es zwei Wochen, ISS-Frachtflüge rutschen oft um ein, zwei Tage, etwa wegen Wetter oder Stationsplanung. Deshalb 65 % für genau diesen Tag. Kurswirkung gering, zeigt aber, dass die NASA auch fremde Frachter mit SpaceX fliegt. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 11:50: Laut Launch Library jetzt Fenster 15:47 UTC (16:47 Berlin), Status „Go“. Wahrscheinlichkeit unverändert. Stand Mo 14:20: Launch Library 2 nennt jetzt 15:50 UTC (16:50 Berlin), Status „Go“. Wahrscheinlichkeit unverändert. Stand Mi 07:45: Launch Library 2 nennt wieder 15:47 UTC (16:47 Berlin), Status „Go“. 65 % unverändert. Stand Mi 12:20: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert.",
+      "reasoning": "Die NASA plant den Start des Frachters Cygnus XL von Northrop Grumman (Mission CRS-25) auf einer Falcon 9 frühestens am So 29.11. um 10:49 Uhr Ostküstenzeit (16:49 Berlin) von Startrampe SLC-40 in Cape Canaveral (NASA). Die Startdatenbank führt 15:47 UTC (16:47 Berlin) mit Status „Go“ (Launch Library 2). An Bord: Versorgung und Experimente für die Raumstation, der Frachter bleibt bis Mai 2027 angedockt (NASA, Northrop Grumman). Bis zum Termin sind es zwei Wochen, ISS-Frachtflüge rutschen oft um ein, zwei Tage, etwa wegen Wetter oder Stationsplanung. Deshalb 65 % für genau diesen Tag. Kurswirkung gering, zeigt aber, dass die NASA auch fremde Frachter mit SpaceX fliegt. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 11:50: Laut Launch Library jetzt Fenster 15:47 UTC (16:47 Berlin), Status „Go“. Wahrscheinlichkeit unverändert. Stand Mo 14:20: Launch Library 2 nennt jetzt 15:50 UTC (16:50 Berlin), Status „Go“. Wahrscheinlichkeit unverändert. Stand Mi 07:45: Launch Library 2 nennt wieder 15:47 UTC (16:47 Berlin), Status „Go“. 65 % unverändert. Stand Mi 12:20: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Fr 07:35: SpaceX nennt weiter So 29.11. 10:47 Uhr Ostküstenzeit (16:47 Berlin), Ersatztermin Mo 30.11. 10:24 Uhr; Status „Go“. Wahrscheinlichkeit unverändert.",
       "example": false,
       "sources": [
         {
@@ -146,6 +150,10 @@
         {
           "title": "Launch Library 2: kommende Starts",
           "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
+        },
+        {
+          "title": "SpaceX: NG-25 Mission (Stand 27.11.)",
+          "url": "https://www.spacex.com/launches/ng25"
         }
       ]
     },
@@ -1133,9 +1141,9 @@
     },
     {
       "id": "evt-electron-strix14",
-      "title": "Rocket Lab: Electron-Start „Night Owls Never Sleep“ (14. StriX-Satellit, Fr 27.11. 01:05)",
+      "title": "Rocket Lab: Electron-Start „Night Owls Never Sleep“ (14. StriX-Satellit) – gestartet Fr 27.11. 01:15",
       "date": "2026-11-27",
-      "time": "01:00",
+      "time": "01:15",
       "timezone": "Europe/Berlin",
       "kind": "company",
       "category": "start",
@@ -1143,9 +1151,9 @@
       "tickers": [
         "RKLB"
       ],
-      "probabilityPct": 75,
+      "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "Der Start der 14. StriX-Mission wurde in den Startplänen von frühestens 30.11. auf frühestens 27.11. vorgezogen (Kurzia Spaceflight Daily, 20.11.). Uhrzeit noch nicht genannt. 60 %, weil frühe Electron-Termine oft um einige Tage rutschen. Für den Kurs Routine, nach dem 100. Electron-Start eher ein Zeichen der Taktung. Stand Mo 08:00: Launch Library 2 nennt Fr 27.11. 00:05 UTC (01:05 Berlin) mit Status „Go“. 60 → 70 %, weil Zeit und Status jetzt stehen; Electron-Termine rutschen trotzdem oft um Tage. Stand Mo 20:20: Unverändert Fr 27.11. 00:05 UTC (01:05 Berlin), Status „Go“ (Launch Library 2). 70 % unverändert. Stand Di 14:20: Unverändert Fr 27.11. 00:05 UTC (01:05 Berlin), Status „Go“ (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 12:20: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Do 12:20: Rocket Lab nennt jetzt Fensteröffnung Fr 27.11. 00:00 UTC (01:00 Berlin), Sperrzonen zu Land, See und Luft für den 27.11. sind angekündigt, Ersatztage bis 10.12. (Rocket Lab). 70 → 75 %, weil die Startvorbereitung amtlich festgezurrt ist; Wetter und Technik können trotzdem um Tage schieben. Stand Do 16:25: Weiter Fensteröffnung Fr 27.11. 00:00 UTC (01:00 Berlin), Status „Go“, bisher keine Verschiebung (Launch Library 2 via SpaceNexus, Rocket Lab). 75 % unverändert. Stand Do 18:20: Weiter Fensteröffnung Fr 27.11. 00:00 UTC (01:00 Berlin), T-0 00:05 UTC, Status „Go“ (Launch Library 2 via SpaceRightNow, Stand 17:52). 75 % unverändert.",
+      "reasoning": "Der Start der 14. StriX-Mission wurde in den Startplänen von frühestens 30.11. auf frühestens 27.11. vorgezogen (Kurzia Spaceflight Daily, 20.11.). Uhrzeit noch nicht genannt. 60 %, weil frühe Electron-Termine oft um einige Tage rutschen. Für den Kurs Routine, nach dem 100. Electron-Start eher ein Zeichen der Taktung. Stand Mo 08:00: Launch Library 2 nennt Fr 27.11. 00:05 UTC (01:05 Berlin) mit Status „Go“. 60 → 70 %, weil Zeit und Status jetzt stehen; Electron-Termine rutschen trotzdem oft um Tage. Stand Mo 20:20: Unverändert Fr 27.11. 00:05 UTC (01:05 Berlin), Status „Go“ (Launch Library 2). 70 % unverändert. Stand Di 14:20: Unverändert Fr 27.11. 00:05 UTC (01:05 Berlin), Status „Go“ (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 12:20: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Do 12:20: Rocket Lab nennt jetzt Fensteröffnung Fr 27.11. 00:00 UTC (01:00 Berlin), Sperrzonen zu Land, See und Luft für den 27.11. sind angekündigt, Ersatztage bis 10.12. (Rocket Lab). 70 → 75 %, weil die Startvorbereitung amtlich festgezurrt ist; Wetter und Technik können trotzdem um Tage schieben. Stand Do 16:25: Weiter Fensteröffnung Fr 27.11. 00:00 UTC (01:00 Berlin), Status „Go“, bisher keine Verschiebung (Launch Library 2 via SpaceNexus, Rocket Lab). 75 % unverändert. Stand Do 18:20: Weiter Fensteröffnung Fr 27.11. 00:00 UTC (01:00 Berlin), T-0 00:05 UTC, Status „Go“ (Launch Library 2 via SpaceRightNow, Stand 17:52). 75 % unverändert. Stand Fr 07:35: Eingetreten. Electron hob am Fr 27.11. um 00:15 UTC (01:15 Berlin) ab und setzte den StriX-Satelliten auf 569 km aus; 22. Start 2026, 101. insgesamt (Rocket Lab). 75 → 100 %.",
       "example": false,
       "sources": [
         {
@@ -1167,6 +1175,10 @@
         {
           "title": "SpaceRightNow/Launch Library 2: Night Owls Never Sleep, Go (Stand 26.11., 17:52)",
           "url": "https://spacerightnow.com/launches/electron-night-owls-never-sleep-strix-launch-14"
+        },
+        {
+          "title": "Rocket Lab: Mission Success – 101. Electron-Mission (27.11.)",
+          "url": "https://rocketlabcorp.com/updates/mission-success-rocket-lab-launches-101st-electron-mission/"
         }
       ]
     },

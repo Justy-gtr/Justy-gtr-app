@@ -6448,63 +6448,19 @@
         ]
       },
       "recordHighEur": 182.08,
-      "why": "Stand Do 07:40: SPCX schloss am Mittwoch an der Nasdaq bei 127,44 $, 1,3 % über dem Dienstagsschluss von 125,81 $, nach einem Tagestief von 113,93 $ (−9,4 %) (Yahoo). Die Wende brachte die FCC-Genehmigung für bis zu 1 Million „Starmind“-Satelliten als Rechenzentren im All, morgens hatten Sorgen vor Verwässerung bei einer Fusion mit Tesla belastet (CNBC, Yahoo). Heute ist die Wall Street wegen Thanksgiving zu, gehandelt wird nur in Deutschland; Freitag schließt New York schon um 19:00 Uhr. Der Nasdaq-100-Future steht am Morgen rund 0,6 % im Plus, der Dax wird rund 2 % höher erwartet (Yahoo, dpa-AFX). Stand Do 12:20: In Deutschland steht SPCX mittags auf Tradegate rund 1 % im Plus bei etwa 117 € (finanznachrichten.de). Neu seit Mittwochabend: SpaceX gibt jedem aktiven Trump Account eine neu ausgegebene Aktie, Musk legt die gleiche Zahl aus eigenem Bestand drauf; die SpaceX-Aktien sollen laut Musk im Dezember fließen, seine erst nach seiner Haltefrist im Juni 2027 (SpaceX IR, CNBC). Stand Do 16:25: Auf Xetra liegt SPCX rund 9,5 % über dem Mittwochsschluss von 107,12 €. Das ist vor allem Nachholen, denn die Erholung in New York setzte erst kurz nach dem europäischen Handelsschluss ein (finanzen.net); der Nasdaq-Schluss von 127,44 $ entspricht beim Kurs von 1,0985 $ je Euro rund 116 € (tagesschau.de). Rückenwind kommt vom breiten Markt, der Dax steht am Nachmittag rund 2,2 % im Plus, neue Firmenmeldungen gab es seit Mittag nicht. Stand Do 18:20: Xetra-Schluss 117,66 €, 9,8 % über Mittwoch; auf Tradegate am Abend 117,80 €, nur 1,4 % über dem dortigen Mittwochabendkurs – das Plus ist also fast nur das Nachholen der New-Yorker Erholung (finanzen.at).",
+      "why": "Stand Fr 07:35: Über Nacht stieg SpaceX auf der Handelsplattform Blue Ocean ATS um 7,47 %, nachdem Musk auf X ankündigte, jedes Jahr eine weitere SpaceX-Aktie an alle Kinder in den USA zu spenden (CNBC). Am Mittwoch hatte SpaceX schon angekündigt, jedem aktiven „Trump Account“ eine Aktie zu geben. Regulär schloss SPCX am Mittwoch bei 127,44 $ (+1,3 %), an deutschen Plätzen stieg sie am Donnerstag um 2,4 % (Yahoo). Die Gespräche über eine Fusion mit Tesla laufen weiter, eine Einigung gibt es nicht (FT via Investing.com). Heute endet der US-Handel schon um 19 Uhr.",
       "whySources": [
         {
-          "title": "Yahoo Finance: SPCX (Schluss Mi 25.11.)",
+          "title": "CNBC: SpaceX shares jump on alternative trading platform after Musk expands share donations (27.11.)",
+          "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html"
+        },
+        {
+          "title": "Investing.com/FT: SpaceX und Tesla verhandeln über Fusion",
+          "url": "https://www.investing.com/news/stock-market-news/spacex-tesla-directors-negotiate-potential-35-trillion-merger-ft-reports-5047091"
+        },
+        {
+          "title": "Yahoo Finance: SPCX",
           "url": "https://finance.yahoo.com/quote/SPCX/"
-        },
-        {
-          "title": "Yahoo Finance: SpaceX-Aktie dämmt Verluste nach FCC-Genehmigung ein (Mi 25.11.)",
-          "url": "https://finance.yahoo.com/technology/article/spacex-stock-pares-losses-following-fcc-approval-for-data-centers-in-space-183757039.html"
-        },
-        {
-          "title": "CNBC: SpaceX erhält FCC-Genehmigung für 1 Mio. Rechenzentrums-Satelliten (Mi 25.11.)",
-          "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html"
-        },
-        {
-          "title": "Yahoo Finance: Tesla und SpaceX fallen wegen Fusionssorgen (Mi 25.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/article/tesla-and-spacex-stocks-sink-as-merger-concerns-mount-154159372.html"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Schluss Mi 25.11.)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
-        },
-        {
-          "title": "AP: Wall Street dämmt frühen Absturz ein, KI-Abverkauf lässt nach (Mi 25.11.)",
-          "url": "https://apnews.com/article/stock-markets-ai-earnings-oil-10044b4fb55d3ff20fde9ba9e9acaab1"
-        },
-        {
-          "title": "dpa-AFX via wallstreet-online: DAX-FLASH (Do 26.11., 07:15)",
-          "url": "https://www.wallstreet-online.de/nachricht/21749863-dax-flash-gewinne-erwartet-tech-erholung-ruecken"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (Do 26.11., 07:25)",
-          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
-        },
-        {
-          "title": "finanznachrichten.de: SpaceX-Aktienkurs Tradegate (26.11.)",
-          "url": "https://www.finanznachrichten.de/aktienkurse-boersen/space-exploration-technologies-corp.htm"
-        },
-        {
-          "title": "SpaceX IR: SpaceX to Invest in the Next Generation of Americans (25.11.)",
-          "url": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Invest-in-the-Next-Generation-of-Americans-2026-r_LYQ5cH94/default.aspx"
-        },
-        {
-          "title": "CNBC: SpaceX und Musk spenden Aktien an Trump Accounts",
-          "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html"
-        },
-        {
-          "title": "finanzen.net: Heute im Fokus – DAX kräftig erholt, Wall Street bleibt zu (26.11., 15:58)",
-          "url": "https://www.finanzen.net/nachricht/aktien/heute-im-fokus-26-11-2026-16087584"
-        },
-        {
-          "title": "tagesschau.de: DAX und EUR/USD (26.11., 15:21)",
-          "url": "https://www.tagesschau.de/wirtschaft/boersenkurse/de0008467440-57588/"
-        },
-        {
-          "title": "finanzen.at: SpaceX Börsenplätze (Xetra-Schluss, Tradegate 26.11., 18:24)",
-          "url": "https://www.finanzen.at/boersenplaetze/spacex"
         }
       ],
       "longTermOutlook": "Langfristig zählt, ob Starlink weiter so schnell wächst (13,6 Mio. Privatkunden im Q3), ob Starship ab 2027 regelmäßig fliegt und ob sich die riesigen KI-Investitionen auszahlen. Keine Prognose.",
@@ -32070,39 +32026,15 @@
         ]
       },
       "recordHighEur": 125.8,
-      "why": "Stand Do 07:40: Rocket Lab schloss am Mittwoch an der Nasdaq bei 47,02 $, 2,3 % über dem Dienstagsschluss von 45,98 $, nach einem Tagestief von 42,12 $ (Yahoo). Eine eigene Firmenmeldung gab es nicht, Raumfahrtwerte zogen mit SpaceX nach der FCC-Genehmigung für „Starmind“ an (Yahoo). Nachbörslich wurde bekannt, dass fünf Manager Aktien für 3,85 Mio. $ verkauft haben, laut den Meldungen zur Steuerzahlung auf zugeteilte Aktien (Stocktwits). Der 101. Electron-Start ist für Fr 01:05 Uhr geplant. Heute ist die Wall Street wegen Thanksgiving zu, gehandelt wird nur in Deutschland; Freitag schließt New York schon um 19:00 Uhr. Der Nasdaq-100-Future steht am Morgen rund 0,6 % im Plus, der Dax wird rund 2 % höher erwartet (Yahoo, dpa-AFX).",
+      "why": "Stand Fr 07:35: In der Nacht startete Electron zum 101. Mal und setzte den 14. StriX-Radarsatelliten für Synspective aus; es war der 22. Start 2026 (Rocket Lab). An deutschen Plätzen stieg die Aktie am Donnerstag um 3,0 %, getragen von der Erholung der Tech- und Raumfahrtwerte; US-Schluss am Mittwoch 47,02 $ (+2,3 %) (Yahoo).",
       "whySources": [
         {
-          "title": "Yahoo Finance: RKLB (Schluss Mi 25.11.)",
+          "title": "Rocket Lab: Mission Success – 101. Electron-Mission (27.11.)",
+          "url": "https://rocketlabcorp.com/updates/mission-success-rocket-lab-launches-101st-electron-mission/"
+        },
+        {
+          "title": "Yahoo Finance: RKLB",
           "url": "https://finance.yahoo.com/quote/RKLB/"
-        },
-        {
-          "title": "Yahoo Finance: SpaceX-Aktie dämmt Verluste nach FCC-Genehmigung ein (Mi 25.11.)",
-          "url": "https://finance.yahoo.com/technology/article/spacex-stock-pares-losses-following-fcc-approval-for-data-centers-in-space-183757039.html"
-        },
-        {
-          "title": "TIKR: Mizuho startet Rocket Lab mit Underperform, Kursziel 40 $ (25.11.)",
-          "url": "https://www.tikr.com/blog/mizuho-calls-rocket-labs-business-model-among-our-favorites-it-still-sees-6-downside"
-        },
-        {
-          "title": "Yahoo Finance: NVDA (Schluss Mi 25.11.)",
-          "url": "https://finance.yahoo.com/quote/NVDA/"
-        },
-        {
-          "title": "AP: Wall Street dämmt frühen Absturz ein, KI-Abverkauf lässt nach (Mi 25.11.)",
-          "url": "https://apnews.com/article/stock-markets-ai-earnings-oil-10044b4fb55d3ff20fde9ba9e9acaab1"
-        },
-        {
-          "title": "Stocktwits: RKLB-Manager verkaufen Aktien, Electron-Start (25.11.)",
-          "url": "https://stocktwits.com/news-articles/markets/equity/rklb-stock-cfo-coo-other-execs-sell-shares-ahead-of-electron-launch/cNbx33ZR9ZR"
-        },
-        {
-          "title": "dpa-AFX via wallstreet-online: DAX-FLASH (Do 26.11., 07:15)",
-          "url": "https://www.wallstreet-online.de/nachricht/21749863-dax-flash-gewinne-erwartet-tech-erholung-ruecken"
-        },
-        {
-          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (Do 26.11., 07:25)",
-          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
         }
       ],
       "longTermOutlook": "Entscheidend ist, ob Neutron 2027 fliegt und Rocket Lab damit um größere Aufträge mitbieten kann; bis dahin trägt der Satellitenbau. Keine Prognose.",
