@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-27T18:11:19Z",
+  "updatedAt": "2026-11-27T18:32:32Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 45,
+      "score": 40,
       "postsCount": 25,
-      "reason": "Nach Handelsschluss geht es um Musks SpaceX-Aktien für Trump Accounts (auch Spott) und Fusionsgerüchte mit Tesla. Dazwischen viel Spam.",
+      "reason": "Abends ruhig: Debatten über SpaceX-Aktien für Trump Accounts und Vergleiche mit Bitcoin. Wenig echte News, viel Smalltalk und Spam.",
       "sources": [
         {
-          "title": "@CuriousPejjy auf X (27.11., 19:09)",
-          "url": "https://x.com/CuriousPejjy/status/2126377935045366238"
+          "title": "@EpicGrandma333 auf X (27.11., 19:30)",
+          "url": "https://x.com/EpicGrandma333/status/2126383205943300216"
         },
         {
-          "title": "@johnforchione auf X (27.11., 19:09)",
-          "url": "https://x.com/johnforchione/status/2126377970126524576"
+          "title": "@ResethO auf X (27.11., 19:32)",
+          "url": "https://x.com/ResethO/status/2126383567387422769"
         },
         {
-          "title": "@enrichtrades auf X (27.11., 19:01)",
-          "url": "https://x.com/enrichtrades/status/2126375997851488720"
+          "title": "@KTKetoGang auf X (27.11., 19:30)",
+          "url": "https://x.com/KTKetoGang/status/2126383173244526909"
         }
       ],
-      "updatedAt": "2026-11-27T18:11:19Z"
+      "updatedAt": "2026-11-27T18:32:32Z"
     },
     "TSLA": {
       "mood": "gut",
       "score": 65,
-      "postsCount": 22,
-      "reason": "Tesla schließt genau bei 400 $, rund 5 % im Plus. Viele freuen sich, manche spekulieren über eine Fusionsmeldung mit SpaceX am Wochenende.",
+      "postsCount": 25,
+      "reason": "Tesla schließt mit gut 5 % Plus bei 400 $, stärkster der großen Tech-Werte. Dazu Begeisterung über 285 neue Cybercabs im Robotaxi-Netz.",
       "sources": [
         {
-          "title": "@BoBbyPleWniaK auf X (27.11., 19:07)",
-          "url": "https://x.com/BoBbyPleWniaK/status/2126377286161387615"
+          "title": "@CuriousPejjy auf X (27.11., 19:28)",
+          "url": "https://x.com/CuriousPejjy/status/2126382681696948629"
         },
         {
-          "title": "@MentoviaX auf X (27.11., 19:10)",
-          "url": "https://x.com/MentoviaX/status/2126378249085403233"
+          "title": "@moneymaker7723 auf X (27.11., 19:32)",
+          "url": "https://x.com/moneymaker7723/status/2126383562190676099"
         },
         {
-          "title": "@OptionsPro101 auf X (27.11., 19:08)",
-          "url": "https://x.com/OptionsPro101/status/2126377573101806053"
+          "title": "@TeslaStars auf X (27.11., 19:31)",
+          "url": "https://x.com/TeslaStars/status/2126383302278017500"
         }
       ],
-      "updatedAt": "2026-11-27T18:11:19Z"
+      "updatedAt": "2026-11-27T18:32:32Z"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 55,
+      "score": 45,
       "postsCount": 25,
-      "reason": "Rocket Lab steigt rund 7 % wieder über 50 $. Gelobt werden der 101. Electron-Start und die Wochenkerze, die über der Trendlinie schließt.",
+      "reason": "Nach dem Plus von rund 7 % sehen Chart-Accounts Luft bis 60 $, aber noch keine echte Trendwende. Sonst vor allem Werbe-Spam.",
       "sources": [
         {
-          "title": "@ClaudiaGadelha_ auf X (27.11., 19:06)",
-          "url": "https://x.com/ClaudiaGadelha_/status/2126377204271796704"
+          "title": "@Zac_Markovich auf X (27.11., 19:29)",
+          "url": "https://x.com/Zac_Markovich/status/2126383003031253446"
         },
         {
-          "title": "@RockyTSTH auf X (27.11., 19:05)",
-          "url": "https://x.com/RockyTSTH/status/2126376971378856432"
+          "title": "@mortezazedd auf X (27.11., 19:16)",
+          "url": "https://x.com/mortezazedd/status/2126379535298146697"
         },
         {
-          "title": "@xenomecha auf X (27.11., 19:05)",
-          "url": "https://x.com/xenomecha/status/2126376801584967743"
+          "title": "@Stealthct_Storm auf X (27.11., 19:07)",
+          "url": "https://x.com/Stealthct_Storm/status/2126377410035859681"
         }
       ],
-      "updatedAt": "2026-11-27T18:11:19Z"
+      "updatedAt": "2026-11-27T18:32:32Z"
     }
   }
 }
