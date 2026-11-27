@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-27T19:32:33Z",
+  "updatedAt": "2026-11-27T20:09:38Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
-      "postsCount": 25,
-      "reason": "Gesprochen wird über das geplante 50-Mrd.-$-KI-Campus Colossus 3 in Arizona und Musks Aktien für Kinder. Sonst viel Begeisterung über Raketenlandungen.",
+      "postsCount": 24,
+      "reason": "Abends dreht sich viel um SpaceX-Aktien für US-Kinder und Rechnungen zum Tauschverhältnis bei einer Tesla-Fusion. Dazu Lob für die Raketentechnik.",
       "sources": [
         {
-          "title": "@jonathan_f32966 auf X (27.11., 20:31)",
-          "url": "https://x.com/jonathan_f32966/status/2126398508303278258"
+          "title": "@Tina4Humanity auf X (27.11., 21:09)",
+          "url": "https://x.com/Tina4Humanity/status/2126407977896943689"
         },
         {
-          "title": "@StarSpangledDVL auf X (27.11., 20:31)",
-          "url": "https://x.com/StarSpangledDVL/status/2126398627140559224"
+          "title": "@ChrisDungeon auf X (27.11., 21:08)",
+          "url": "https://x.com/ChrisDungeon/status/2126407764973142017"
         },
         {
-          "title": "@JomgThe auf X (27.11., 20:31)",
-          "url": "https://x.com/JomgThe/status/2126398470755885566"
+          "title": "@sureshkapse auf X (27.11., 21:09)",
+          "url": "https://x.com/sureshkapse/status/2126408017205711013"
         }
       ],
-      "updatedAt": "2026-11-27T19:32:33Z"
+      "updatedAt": "2026-11-27T20:09:38Z"
     },
     "TSLA": {
       "mood": "gut",
       "score": 65,
       "postsCount": 25,
-      "reason": "Fans feiern den Schluss bei genau 400 $ und hoffen auf mehr. Neu: Bericht, dass Musk Samsung langfristige Chip-Abnahmen angeboten haben soll.",
+      "reason": "Fans feiern den Schluss bei genau 400 $ und träumen von 500 $. Als Grund für das Plus wird der geplante Kauf von EMAG genannt, dazu Fusionsrechnungen.",
       "sources": [
         {
-          "title": "@Benzinga auf X (27.11., 20:30)",
-          "url": "https://x.com/Benzinga/status/2126398153268375892"
+          "title": "@DoctorJack16 auf X (27.11., 21:07)",
+          "url": "https://x.com/DoctorJack16/status/2126407620214870053"
         },
         {
-          "title": "@strengthPlan auf X (27.11., 20:28)",
-          "url": "https://x.com/strengthPlan/status/2126397809914155263"
+          "title": "@sspencer_smb auf X (27.11., 21:03)",
+          "url": "https://x.com/sspencer_smb/status/2126406544548143596"
         },
         {
-          "title": "@GrindeOptions auf X (27.11., 20:28)",
-          "url": "https://x.com/GrindeOptions/status/2126397676157862180"
+          "title": "@Michael34952 auf X (27.11., 21:07)",
+          "url": "https://x.com/Michael34952/status/2126407511775576482"
         }
       ],
-      "updatedAt": "2026-11-27T19:32:33Z"
+      "updatedAt": "2026-11-27T20:09:38Z"
     },
     "RKLB": {
       "mood": "gut",
       "score": 50,
-      "postsCount": 25,
-      "reason": "Nach dem starken Tag sehen Trader eine Hammer-Kerze im Tageschart und hoffen auf eine Bodenbildung. Einige sichern Gewinne lieber ab.",
+      "postsCount": 24,
+      "reason": "Gerätselt wird, ob der FCC-Chef mit „RL Space“ eine Umbenennung andeutet. Dazu Lob für den 101. Electron-Start und Vergleiche mit SPCX und ASTS.",
       "sources": [
         {
-          "title": "@enrichtrades auf X (27.11., 20:28)",
-          "url": "https://x.com/enrichtrades/status/2126397768071548938"
+          "title": "@FranciscoSpace5 auf X (27.11., 20:55)",
+          "url": "https://x.com/FranciscoSpace5/status/2126404550496317793"
         },
         {
-          "title": "@bennytrades_ auf X (27.11., 19:56)",
-          "url": "https://x.com/bennytrades_/status/2126389811292553499"
+          "title": "@SpaceInvestor_ auf X (27.11., 21:00)",
+          "url": "https://x.com/SpaceInvestor_/status/2126405750285377664"
         },
         {
-          "title": "@johhnyWalkerAZ auf X (27.11., 20:22)",
-          "url": "https://x.com/johhnyWalkerAZ/status/2126396231362748417"
+          "title": "@MsVeilMoney auf X (27.11., 20:41)",
+          "url": "https://x.com/MsVeilMoney/status/2126400918199366021"
         }
       ],
-      "updatedAt": "2026-11-27T19:32:33Z"
+      "updatedAt": "2026-11-27T20:09:38Z"
     }
   }
 }
