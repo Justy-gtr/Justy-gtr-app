@@ -149,9 +149,9 @@
   "asOf": "2026-11-25T06:00:00+01:00",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.0981,
+    "rate": 1.0952,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-27T08:55:48+01:00",
+    "asOf": "2026-11-27T14:21:45+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
