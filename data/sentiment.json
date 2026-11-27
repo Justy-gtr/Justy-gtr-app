@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-26T20:41:17Z",
+  "updatedAt": "2026-11-27T13:06:11Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 50,
+      "score": 45,
       "postsCount": 25,
-      "reason": "Texas erteilt die Luftgenehmigung für SpaceX’ 24-Mrd.-$-Projekt. Dazu Freude über den 29. Flug eines Boosters und Debatten um Rechenzentren im All.",
+      "reason": "Vorbörslich +4,6 %. Viel Gesprächsstoff: Musk will jedes Jahr SpaceX-Aktien an US-Kinder verschenken, FCC-Okay für KI-Satelliten, Fusionsgerüchte mit Tesla.",
       "sources": [
         {
-          "title": "@allday_stocks auf X (26.11., 21:17)",
-          "url": "https://x.com/allday_stocks/status/2126047633932464271"
+          "title": "@TheAnalystDE auf X (27.11., 12:09)",
+          "url": "https://x.com/TheAnalystDE/status/2126272234238922757"
         },
         {
-          "title": "@IcyReggie auf X (26.11., 21:28)",
-          "url": "https://x.com/IcyReggie/status/2126050425883566556"
+          "title": "@Bryantibry1966 auf X (27.11., 13:40)",
+          "url": "https://x.com/Bryantibry1966/status/2126294993186812085"
         },
         {
-          "title": "@reynosismo_ auf X (26.11., 21:28)",
-          "url": "https://x.com/reynosismo_/status/2126050403645260264"
+          "title": "@NedBulls auf X (27.11., 13:04)",
+          "url": "https://x.com/NedBulls/status/2126285911591698506"
         }
       ],
-      "updatedAt": "2026-11-26T20:41:17Z"
+      "updatedAt": "2026-11-27T13:06:11Z"
     },
     "TSLA": {
       "mood": "gut",
       "score": 40,
-      "postsCount": 25,
-      "reason": "Rekord: Tesla meldet in Texas 285 neue Cybercabs an, die Robotaxi-Flotte wächst auf 1.841. Dazu 55 % Wettchance auf eine Fusion mit SpaceX.",
+      "postsCount": 23,
+      "reason": "Erholung vorbörslich um gut 2 %. Thema des Tages: Tesla will Teile des deutschen Maschinenbauers EMAG übernehmen. Dazu Spekulation über eine Fusion mit SpaceX.",
       "sources": [
         {
-          "title": "@Tslachan auf X (26.11., 21:18)",
-          "url": "https://x.com/Tslachan/status/2126047936132100434"
+          "title": "@Maximilius31 auf X (27.11., 12:17)",
+          "url": "https://x.com/Maximilius31/status/2126274326668169260"
         },
         {
-          "title": "@daltonbrewer auf X (26.11., 21:31)",
-          "url": "https://x.com/daltonbrewer/status/2126051158775201901"
+          "title": "@kcarrillo10 auf X (27.11., 12:44)",
+          "url": "https://x.com/kcarrillo10/status/2126280909431456014"
         },
         {
-          "title": "@CuriousPejjy auf X (26.11., 21:20)",
-          "url": "https://x.com/CuriousPejjy/status/2126048412361724268"
+          "title": "@BestTrader01 auf X (27.11., 14:00)",
+          "url": "https://x.com/BestTrader01/status/2126300179087122728"
         }
       ],
-      "updatedAt": "2026-11-26T20:41:17Z"
+      "updatedAt": "2026-11-27T13:06:11Z"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 30,
-      "postsCount": 9,
-      "reason": "Vorfreude auf den 101. Electron-Start heute Nacht (ca. 1 Uhr deutscher Zeit) für Synspective. Das Wetter in Neuseeland ist knapp, der Wind lässt nach.",
+      "score": 40,
+      "postsCount": 25,
+      "reason": "Der 101. Electron-Start für Synspective hat geklappt, schon die 22. Mission des Jahres. Viel Lob, aber auch viele Spam-Posts.",
       "sources": [
         {
-          "title": "@JoshSharp auf X (26.11., 21:08)",
-          "url": "https://x.com/JoshSharp/status/2126045362741801394"
+          "title": "@SpaceNews_Inc auf X (27.11., 13:25)",
+          "url": "https://x.com/SpaceNews_Inc/status/2126291391214911506"
         },
         {
-          "title": "@Gykiwi03 auf X (26.11., 20:46)",
-          "url": "https://x.com/Gykiwi03/status/2126039853452386636"
+          "title": "@starlustorg auf X (27.11., 13:45)",
+          "url": "https://x.com/starlustorg/status/2126296382978019594"
         },
         {
-          "title": "@Stealthct_Storm auf X (26.11., 20:58)",
-          "url": "https://x.com/Stealthct_Storm/status/2126042889847287869"
+          "title": "@antiDOKA auf X (27.11., 13:49)",
+          "url": "https://x.com/antiDOKA/status/2126297410540618198"
         }
       ],
-      "updatedAt": "2026-11-26T20:41:17Z"
+      "updatedAt": "2026-11-27T13:06:11Z"
     }
   }
 }
