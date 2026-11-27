@@ -1,145 +1,181 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-27T07:35:00+01:00",
-  "nextRun": "2026-11-27T14:00:00+01:00",
+  "updatedAt": "2026-11-27T14:20:00+01:00",
+  "nextRun": "2026-11-30T07:00:00+01:00",
   "long": [
+    {
+      "name": "IQM Quantum Computers",
+      "ticker": "IQMX",
+      "country": "FI",
+      "exchange": "Nasdaq",
+      "priceEur": 7.17,
+      "hint": "Vorbörslich rund +19 % nach Quantencomputer-Auftrag aus Südkorea",
+      "bullets": [
+        "Die Aktie des finnischen Quantencomputer-Herstellers steht vorbörslich bei rund 7,85 $, etwa 19 % über dem Mittwochsschluss von 6,60 $, umgerechnet rund 7,17 €.",
+        "Auslöser ist ein Auftrag über 8 bis 10 Mio. € für einen 54-Qubit-Rechner „Radiance R3“, den der südkoreanische Anbieter QAI in Seoul aufstellt; Umsatz fließt erst 2027.",
+        "Seit Jahresbeginn liegt die Aktie rund 49 % im Minus und hatte im letzten Jahr 25 Tagesbewegungen über 5 %; heute wird nur bis 19:00 Uhr gehandelt."
+      ],
+      "sources": [
+        {
+          "title": "StockAnalysis: Premarket Gainers 27.11. (IQMX +18,94 % bei 7,85 $)",
+          "url": "https://stockanalysis.com/markets/premarket/"
+        },
+        {
+          "title": "IQM: Partnerschaft mit QAI für Quantencomputer in Südkorea",
+          "url": "https://iqm.tech/press-releases/iqm-quantum-computers-partners-with-qai-a-south-korean-quantum-ai-company-to-deploy-a-quantum-computer-in-their-private-ai-data-center-in-korea/"
+        },
+        {
+          "title": "StockStory: Why is IQM Quantum Computers stock soaring today (25.11.)",
+          "url": "https://stockstory.org/us/stocks/nasdaq/iqmx/news/why-up-down/why-is-iqm-quantum-computers-stock-soaring-today"
+        },
+        {
+          "title": "Yahoo Finance: EUR/USD 1,0951, GBP/EUR 1,1972 (27.11., 14:10)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
+        }
+      ]
+    },
     {
       "name": "Vera Therapeutics",
       "ticker": "VERA",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 31.35,
-      "hint": "Nachbörslich +16,7 %, weil die FDA das Vertex-Konkurrenzmittel später prüft",
+      "priceEur": 31.87,
+      "hint": "Vorbörslich +18 %, weil die FDA das Vertex-Konkurrenzmittel später prüft",
       "bullets": [
-        "Nach US-Schluss am Mittwoch sprang die Aktie um 16,7 % auf 34,43 $, umgerechnet rund 31,35 €; regulär hatte sie bei 29,50 $ geschlossen.",
-        "Die FDA verschiebt die Entscheidung über das Vertex-Konkurrenzmittel Povetacicept vom 30. November auf spätestens 28. Februar 2027.",
-        "Veras Trutakna bleibt damit länger das einzige zugelassene Mittel dieses Wirkprinzips bei IgA-Nephropathie; heute ist der erste reguläre Handel nach der Meldung."
+        "Vorbörslich steht die Aktie bei 34,90 $, gut 18 % über dem Mittwochsschluss von 29,50 $, umgerechnet rund 31,87 €.",
+        "Die FDA entscheidet über das Vertex-Konkurrenzmittel Povetacicept erst bis spätestens 28. Februar 2027 statt am 30. November.",
+        "Veras Mittel bei IgA-Nephropathie hat damit länger einen Vorsprung; heute ist der erste reguläre Handel nach der Meldung."
       ],
       "sources": [
+        {
+          "title": "StockAnalysis: Premarket Gainers 27.11. (VERA +18,31 % bei 34,90 $)",
+          "url": "https://stockanalysis.com/markets/premarket/"
+        },
         {
           "title": "24/7 Wall St.: Vera Therapeutics soars after hours as FDA delays Vertex's rival drug (26.11.)",
           "url": "https://247wallst.com/investing/2026/11/26/vera-therapeutics-stock-soars-after-hours-as-the-fda-delays-vertexs-rival-kidney-drug/"
         },
         {
-          "title": "Yahoo Finance: EUR-Kurse 27.11., 07:14 (USD/EUR 0,9106, HKD/EUR 0,1163)",
-          "url": "https://finance.yahoo.com/quote/USDEUR%3DX/"
+          "title": "Yahoo Finance: EUR/USD 1,0951, GBP/EUR 1,1972 (27.11., 14:10)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
     },
     {
-      "name": "LiveWire Group",
-      "ticker": "LVWR",
-      "country": "US",
-      "exchange": "NYSE",
-      "priceEur": 2,
-      "hint": "Squeeze-Lauf: +93,9 % am Montag, nachbörslich weitere +12,8 %",
+      "name": "Nebius Group",
+      "ticker": "NBIS",
+      "country": "NL",
+      "exchange": "Nasdaq",
+      "priceEur": 84.99,
+      "hint": "Vorbörslich bis zu +9,5 % in der Erholung der KI-Rechenzentrumswerte",
       "bullets": [
-        "Die E-Motorrad-Tochter von Harley-Davidson hat sich am 24.11. ohne Firmennachricht fast verdoppelt und am Mittwoch weiter zugelegt.",
-        "Nachbörslich ging es um weitere 12,8 % auf 2,20 $, umgerechnet rund 2,00 €.",
-        "Der frei handelbare Anteil liegt laut StockSetups bei nur 4,8 %, der Short-Anteil am Volumen bei 61 %; solche Läufe können aber auch schnell kippen."
+        "Vorbörslich lag die Aktie laut Investing.com zeitweise 9,5 % im Plus, gemessen am Mittwochsschluss von 84,99 $ also bei rund 93 $, umgerechnet rund 85 €.",
+        "Die KI-Cloud-Anbieter erholen sich nach dem Abverkauf: Nebius hatte im letzten Monat rund 50 % verloren, CoreWeave stieg vorbörslich 7,9 %.",
+        "Gegenwind: Laut CNBC drohen Nvidia-Händler den Cloud-Anbietern, keine Chips mehr zu liefern, wenn sie Rechenleistung an chinesische Firmen vermieten."
       ],
       "sources": [
         {
-          "title": "StockSetups: After-Hours Movers 25.11. – POM, NCPL, VERA, LVWR",
-          "url": "https://stocksetups.com/articles/after-hours-stock-movers-2026-11-25"
+          "title": "Investing.com: Premarket movers – AI stocks rebound, Vertex slides on FDA review (27.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/premarket-movers-ai-stocks-rebound-vertex-slides-on-fda-review-5053411"
         },
         {
-          "title": "Yahoo Finance: EUR-Kurse 27.11., 07:14 (USD/EUR 0,9106, HKD/EUR 0,1163)",
-          "url": "https://finance.yahoo.com/quote/USDEUR%3DX/"
-        }
-      ]
-    },
-    {
-      "name": "Ingenic Semiconductor",
-      "ticker": "3223",
-      "country": "CN",
-      "exchange": "Hongkong",
-      "priceEur": 8.87,
-      "hint": "Hongkong +11 % im China-Tech-Rally, A-Aktie in Shenzhen fast +14 %",
-      "bullets": [
-        "Die H-Aktie steht in Hongkong bei 76,25 HK$, 11,2 % im Plus, umgerechnet rund 8,87 €; die A-Aktie in Shenzhen schloss fast 14 % höher.",
-        "Chinas Staatsrat hat neue Stützungsmaßnahmen für den Aktienmarkt angekündigt; der ChiNext-Index stieg über 8 %, der Hang Seng Tech gut 5 %.",
-        "Rückenwind kommt vom Speicherchip-Geschäft: Im dritten Quartal stieg der Nettogewinn auf rund 1,42 Mrd. Yuan, etwa das 26-Fache des Vorjahres."
-      ],
-      "sources": [
-        {
-          "title": "RTHK: Hang Seng +1,8 %, Tech-Index +5,3 %, ChiNext +8,2 % (27.11., 13:19 HKT)",
-          "url": "https://news.rthk.hk/rthk/ch/component/k2/1879482-20261127.htm"
+          "title": "TipRanks: Neocloud-Aktien IREN, Nebius, CoreWeave vorbörslich fester (27.11.)",
+          "url": "https://www.tipranks.com/news/neocloud-stocks-iren-nebius-and-coreweave-rally-premarket-despite-new-nvidia-chip-restrictions"
         },
         {
-          "title": "Longbridge: Ingenic Q3-Gewinn 26-fach (28.10.)",
-          "url": "https://longbridge.com/en/news/303309937"
-        },
-        {
-          "title": "Yahoo Finance: Ingenic 3223.HK",
-          "url": "https://finance.yahoo.com/quote/3223.HK/"
-        },
-        {
-          "title": "Yahoo Finance: EUR-Kurse 27.11., 07:14 (USD/EUR 0,9106, HKD/EUR 0,1163)",
-          "url": "https://finance.yahoo.com/quote/USDEUR%3DX/"
+          "title": "Yahoo Finance: EUR/USD 1,0951, GBP/EUR 1,1972 (27.11., 14:10)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
     }
   ],
   "short": [
     {
+      "name": "Alvotech",
+      "ticker": "ALVO",
+      "country": "IS",
+      "exchange": "Nasdaq",
+      "priceEur": 3.46,
+      "hint": "Gericht stoppt US-Start des Simponi-Biosimilars, vorbörslich −10 %",
+      "bullets": [
+        "Vorbörslich fällt die Aktie um 10 % auf 3,79 $, umgerechnet rund 3,46 €.",
+        "Ein US-Bezirksgericht in Virginia hat Janssen eine einstweilige Verfügung gegen AVT05 gewährt, Alvotechs Nachahmer des Rheumamittels Simponi; Alvotech geht in Berufung.",
+        "Dazu kommen schwache Zahlen: Umsatz im dritten Quartal 111,6 Mio. $ statt erwarteter rund 125 Mio. $, die Kasse schrumpfte auf 61,5 Mio. $."
+      ],
+      "sources": [
+        {
+          "title": "Reuters via Boursorama: Alvotech chute après le blocage de son biosimilaire (27.11., 11:29)",
+          "url": "https://www.boursorama.com/bourse/actualites/alvotech-chute-apres-qu-un-tribunal-a-bloque-son-biosimilaire-aux-etats-unis-40ed0dd9677b007de290cc74d644c574"
+        },
+        {
+          "title": "Alvotech: Berufung gegen die einstweilige Verfügung zu AVT05 (26.11.)",
+          "url": "https://www.alvotech.com/newsroom/alvotech-to-appeal-us-preliminary-injunction-decision-relating-to-avt05"
+        },
+        {
+          "title": "Investing.com: Why is Alvotech stock sliding today? (27.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-alvotech-stock-sliding-today-93CH-5053270"
+        },
+        {
+          "title": "Yahoo Finance: EUR/USD 1,0951, GBP/EUR 1,1972 (27.11., 14:10)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
+        }
+      ]
+    },
+    {
       "name": "Vertex Pharmaceuticals",
       "ticker": "VRTX",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 488.5,
-      "hint": "FDA verschiebt Entscheidung zu Povetacicept, nachbörslich −7,2 %",
+      "priceEur": 477.7,
+      "hint": "FDA verschiebt Entscheidung zu Povetacicept, vorbörslich gut −7 %",
       "bullets": [
-        "Nachbörslich am Mittwoch fiel die Aktie um 7,2 % auf 523,49 $; auf Xetra schloss sie am Donnerstag bei 488,50 €.",
-        "Die FDA wertet eine Nachreichung als wesentliche Änderung und entscheidet über das Nierenmittel Povetacicept erst bis spätestens 28. Februar 2027.",
+        "Vorbörslich liegt die Aktie gut 7 % im Minus bei rund 523 $, umgerechnet rund 477,70 €.",
+        "Die FDA hat die Prüfung des Nierenmittels Povetacicept um bis zu drei Monate verlängert, neue Frist ist der 28. Februar 2027.",
         "Heute ist der erste reguläre US-Handel nach der Meldung, wegen Black Friday nur bis 19:00 Uhr deutscher Zeit."
       ],
       "sources": [
+        {
+          "title": "CNBC: Stocks making the biggest moves premarket (27.11.)",
+          "url": "https://www.cnbc.com/2026/11/27/stocks-moving-the-most-today-live-updates.html"
+        },
         {
           "title": "Vertex: Verlängerung des PDUFA-Termins für Povetacicept",
           "url": "https://investors.vrtx.com/news-releases/news-release-details/vertex-announces-extension-pdufa-target-action-date-three-months"
         },
         {
-          "title": "WiseView: Vertex nachbörslich −7,20 % (25.11.)",
-          "url": "https://wiseview.ai/news/earnings-after-the-bell-2026-11-25"
+          "title": "Yahoo Finance: EUR/USD 1,0951, GBP/EUR 1,1972 (27.11., 14:10)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
     },
     {
-      "name": "Palo Alto Networks",
-      "ticker": "PANW",
-      "country": "US",
-      "exchange": "Nasdaq",
-      "priceEur": 315,
-      "hint": "Klage eines Ex-Managers wegen aufgeblähter Umsätze, nachbörslich −4,4 %",
+      "name": "Power Probe",
+      "ticker": "PWR",
+      "country": "GB",
+      "exchange": "London AIM",
+      "priceEur": 0.63,
+      "hint": "Prognose gesenkt, in London rund −25 %",
       "bullets": [
-        "Nachbörslich am Mittwoch rutschte die Aktie um rund 4,4 % auf 340,50 $; in Frankfurt lag sie am Donnerstagabend bei 315,00 €.",
-        "Ein früherer Regionalchef wirft dem Management in einer Klage vor, Umsätze über vorgezogene Händler-Bestellungen aufgebläht zu haben.",
-        "Palo Alto nennt die Vorwürfe haltlos; nach rund 93 % Plus seit Jahresanfang ist die Fallhöhe aber groß."
+        "Die Aktie des Herstellers von Kfz-Prüfgeräten fiel in London nach einer Geschäftsprognose zeitweise um 26,4 % bis auf 50,6 Pence und lag zuletzt um 52,5 Pence, umgerechnet rund 0,63 €.",
+        "Das US-Geschäft lief im zweiten Halbjahr deutlich schlechter als erwartet; für 2026 nennt die Firma nur noch 34,5 bis 36,0 Mio. $ Umsatz.",
+        "Der Vorstand rechnet damit, dass der Gegenwind ins Jahr 2027 reicht; das Jahrestief liegt bei 42 Pence."
       ],
       "sources": [
         {
-          "title": "Yahoo Finance/Stocktwits: PANW slips after-hours on accounting allegations (25.11.)",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/panw-stock-slips-hours-former-232552463.html"
-        }
-      ]
-    },
-    {
-      "name": "Energiekontor",
-      "ticker": "EKT",
-      "country": "DE",
-      "exchange": "Xetra",
-      "priceEur": 18.12,
-      "hint": "BaFin prüft Bilanzen, Aktie gestern zeitweise −10,4 %",
-      "bullets": [
-        "Die BaFin hat am 26.11. eine anlassbezogene Prüfung des Abschlusses 2025 und des Halbjahres 2026 eingeleitet.",
-        "Im Fokus stehen aktive latente Steuern auf Verlustvorträge; die Aktie fiel zeitweise um 10,4 % und schloss auf Xetra bei 18,12 €.",
-        "Auslöser war die Gewinnwarnung vom August mit 5 bis 10 statt 40 bis 60 Mio. € Vorsteuergewinn wegen verzögerter Netzanschlüsse in Schottland."
-      ],
-      "sources": [
+          "title": "Investing.com: Why is Power Probe stock plummeting today? (27.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-power-probe-stock-plummeting-today-93CH-5053132"
+        },
         {
-          "title": "onvista/Reuters: Energiekontor – BaFin prüft nach Gewinnwarnung Verlustvorträge (26.11.)",
-          "url": "https://www.onvista.de/news/2026/11-26-energiekontor-bafin-prueft-nach-gewinnwarnung-verlustvortraege-0-20-26580955"
+          "title": "London Stock Exchange: Power Probe Trading Update (PWR)",
+          "url": "https://www.londonstockexchange.com/en/news/article/PWR/trading-update/eca5-90-9d-6d-a4-43daab"
+        },
+        {
+          "title": "Morningstar/Alliance News: Winners & Losers – Power Probe und Stelrad (27.11.)",
+          "url": "https://global.morningstar.com/en-gb/news/alliance-news/1795773769850525900/winners-losers-tough-market-conditions-hit-power-probe-and-stelrad"
+        },
+        {
+          "title": "Yahoo Finance: EUR/USD 1,0951, GBP/EUR 1,1972 (27.11., 14:10)",
+          "url": "https://finance.yahoo.com/quote/EURUSD%3DX/"
         }
       ]
     }
@@ -1043,24 +1079,24 @@
     ]
   },
   "rocketLabNews": {
-    "text": "Eine neue Pressemitteilung gibt es heute nicht; laut einer Form-4-Meldung verkaufte Chefbuchhalter Agostino Ricupati am 23.11. Aktien für 31.482 $ zu Kursen um 49 bis 52 $, nur um Steuern auf zugeteilte Aktien zu zahlen, Mizuho hatte die Aktie am Dienstag mit „Underperform“ und Kursziel 40 $ neu aufgenommen, und der 101. Electron-Start „Night Owls Never Sleep“ für Synspective ist für Fr 27.11. ab 01:00 Uhr geplant.",
-    "updatedAt": "2026-11-26T14:40:00+01:00",
+    "text": "Electron ist in der Nacht um 01:15 Uhr zum 101. Mal gestartet und hat den 14. StriX-Radarsatelliten für Synspective auf 569 km gebracht, der 22. Start 2026 und ein Jahresrekord; die Aktie liegt vorbörslich im Plus, und ab 1. Dezember bündelt der neue Zweifach-Hebel-ETF Tradr SPAT Rocket Lab mit AST SpaceMobile und SpaceX, während fünf Manager laut Form-4-Meldungen am 23.11. zusammen gut 76.000 Aktien nur zur Steuerdeckung abgaben.",
+    "updatedAt": "2026-11-27T14:20:00+01:00",
     "sources": [
       {
-        "title": "Rocket Lab: News (keine neue Meldung seit 18.11.)",
-        "url": "https://rocketlabcorp.com/updates/"
+        "title": "Rocket Lab: Mission Success – 101. Electron-Mission (27.11.)",
+        "url": "https://rocketlabcorp.com/updates/mission-success-rocket-lab-launches-101st-electron-mission/"
       },
       {
-        "title": "Investing.com: Rocket Lab CAO sells $31,482 in company stock (26.11.)",
-        "url": "https://www.investing.com/news/insider-trading-news/rocket-lab-cao-sells-31482-in-company-stock-93CH-5052100"
+        "title": "Synspective: 14. StriX-Satellit im Zielorbit (27.11.)",
+        "url": "https://www.synspective.com/news/14th_launch/"
       },
       {
-        "title": "MarketBeat/ABMN: Mizuho Begins Coverage on Rocket Lab (26.11.)",
-        "url": "https://www.americanbankingnews.com/2026/11/26/mizuho-begins-coverage-on-rocket-lab-nasdaqrklb.html"
+        "title": "TipRanks: Warum Rocket Lab und AST SpaceMobile vorbörslich steigen (27.11.)",
+        "url": "https://www.tipranks.com/news/why-rocket-lab-ast-spacemobile-stocks-are-rising-in-premarket-trading-today"
       },
       {
-        "title": "Rocket Lab: Night Owls Never Sleep (Fenster 27.11., 00:00 UTC)",
-        "url": "https://rocketlabcorp.com/missions/launches/night-owls-never-sleep/"
+        "title": "SEC Form 4: Frank Klein (RKLB), Handel am 23.11.2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000153/edgardoc.xml"
       }
     ]
   }

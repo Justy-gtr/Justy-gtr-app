@@ -1,8 +1,98 @@
 {
   "example": false,
-  "asOf": "2026-11-18",
+  "asOf": "2026-11-27",
   "notes": "Alle Einträge aus SEC-Form-4-Meldungen (Code S = Verkauf am Markt). Zusammengefasst je Person und Tag, Preis = gewichteter Durchschnitt. Seit Juni 2026 habe ich bei TSLA, SPCX und RKLB keinen einzigen Insider-Kauf am Markt gefunden. Viele Verkäufe laufen über vorab festgelegte 10b5-1-Pläne oder decken Steuern – das ist weniger aussagekräftig als ein spontaner Verkauf. Nicht aufgeführt: Musks Optionsausübung bei Tesla am 16.06.2026 mit Einbehalt von Aktien für Steuern (kein Marktverkauf).",
   "trades": [
+    {
+      "id": "ins-rklb-klein-2026-11-23",
+      "person": "Frank Klein",
+      "role": "Betriebschef (COO) – Verkauf zur Deckung von Steuern auf Aktienzuteilung (10b5-1-Wahl)",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 44390,
+      "priceUsd": 50.29,
+      "date": "2026-11-23",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Frank Klein (RKLB), Handel am 23.11.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000153/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-clevenger-2026-11-23",
+      "person": "Marvin Bradford Clevenger",
+      "role": "Präsident Rocket Lab USA – Verkauf zur Deckung von Steuern auf Aktienzuteilung (10b5-1-Wahl)",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 14622,
+      "priceUsd": 50.29,
+      "date": "2026-11-23",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Marvin Bradford Clevenger (RKLB), Handel am 23.11.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000200101126000155/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-spice-2026-11-23",
+      "person": "Adam C. Spice",
+      "role": "Finanzchef (CFO) – Verkauf zur Deckung von Steuern auf Aktienzuteilung (10b5-1-Wahl)",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 9401,
+      "priceUsd": 50.29,
+      "date": "2026-11-23",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Adam C. Spice (RKLB), Handel am 23.11.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1509421/000200101126000157/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-kampani-2026-11-23",
+      "person": "Arjun Kampani",
+      "role": "Chefjurist (General Counsel) – Verkauf zur Deckung von Steuern auf Aktienzuteilung (10b5-1-Wahl)",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 7533,
+      "priceUsd": 50.29,
+      "date": "2026-11-23",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Arjun Kampani (RKLB), Handel am 23.11.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1671507/000200101126000154/edgardoc.xml"
+        }
+      ]
+    },
+    {
+      "id": "ins-rklb-ricupati-2026-11-23",
+      "person": "Agostino Ricupati",
+      "role": "Chefbuchhalter (CAO) – Verkauf zur Deckung von Steuern auf Aktienzuteilung (10b5-1-Wahl)",
+      "symbol": "RKLB",
+      "company": "Rocket Lab",
+      "side": "verkauf",
+      "shares": 626,
+      "priceUsd": 50.29,
+      "date": "2026-11-23",
+      "example": false,
+      "sources": [
+        {
+          "title": "SEC Form 4: Agostino Ricupati (RKLB), Handel am 23.11.2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1710066/000200101126000156/edgardoc.xml"
+        }
+      ]
+    },
     {
       "id": "ins-mrvl-murphy-2026-11-16",
       "person": "Matthew J. Murphy",

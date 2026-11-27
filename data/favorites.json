@@ -1,6 +1,6 @@
 {
   "example": false,
-  "asOf": "2026-11-24",
+  "asOf": "2026-11-27",
   "owner": "Karl",
   "title": "Karls Top 10",
   "note": "Zehn Aktien aus dem ganzen Markt, nicht nur aus dem Musk-Umfeld. Kurse in Euro. Tesla und Rocket Lab stehen mit dabei, weil sie schon in der Bilanz sind. Die älteren Themen Starlink und Tesla Energie bleiben im Treffer-Check, sie sind keine eigenen Aktien.",
@@ -132,7 +132,7 @@
       "swarmStance": "kauf",
       "againstCrowd": true,
       "vsSwarm": "skeptischer",
-      "karlTake": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Die Zahlen sind stark, aber Huang kommt nicht zurück und die SEC ermittelt.",
+      "karlTake": "Der Schwarm sieht hier den Kern der KI. Karl bleibt bei 5: Huang ist seit 22.11. zurück, aber die Untersuchung läuft weiter, und neue Exportregeln engen die Kunden ein.",
       "karlCounter": "Die Aufträge können die Politik überholen.",
       "horizon": "langfrist",
       "priceEur": 151.7,
@@ -214,6 +214,14 @@
         {
           "title": "CNBC: Nvidia vorbörslich fast +4 %, Neoclouds steigen; Verwaltungsrat holt Huang nicht zurück (18.11.)",
           "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html"
+        },
+        {
+          "title": "Nvidia: Verwaltungsrat setzt Jensen Huang wieder als CEO ein (23.11.)",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/"
+        },
+        {
+          "title": "TipRanks: Nvidia-Händler warnen Cloud-Anbieter vor Vermietung an China (27.11.)",
+          "url": "https://www.tipranks.com/news/neocloud-stocks-iren-nebius-and-coreweave-rally-premarket-despite-new-nvidia-chip-restrictions"
         }
       ]
     },
