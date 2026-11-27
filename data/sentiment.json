@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-27T18:32:32Z",
+  "updatedAt": "2026-11-27T19:04:51Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 40,
+      "score": 50,
       "postsCount": 25,
-      "reason": "Abends ruhig: Debatten über SpaceX-Aktien für Trump Accounts und Vergleiche mit Bitcoin. Wenig echte News, viel Smalltalk und Spam.",
+      "reason": "Große Accounts feiern die FCC-Zusage für Rechenzentren im All und SpaceX als KI-Plattform. Dazu Gespräche über einen Einstieg von Druckenmiller.",
       "sources": [
         {
-          "title": "@EpicGrandma333 auf X (27.11., 19:30)",
-          "url": "https://x.com/EpicGrandma333/status/2126383205943300216"
+          "title": "@XFreeze auf X (27.11., 20:04)",
+          "url": "https://x.com/XFreeze/status/2126391612133806271"
         },
         {
-          "title": "@ResethO auf X (27.11., 19:32)",
-          "url": "https://x.com/ResethO/status/2126383567387422769"
+          "title": "@joehansen auf X (27.11., 20:04)",
+          "url": "https://x.com/joehansen/status/2126391607658271150"
         },
         {
-          "title": "@KTKetoGang auf X (27.11., 19:30)",
-          "url": "https://x.com/KTKetoGang/status/2126383173244526909"
+          "title": "@hseacpa auf X (27.11., 20:04)",
+          "url": "https://x.com/hseacpa/status/2126391622883561705"
         }
       ],
-      "updatedAt": "2026-11-27T18:32:32Z"
+      "updatedAt": "2026-11-27T19:04:51Z"
     },
     "TSLA": {
       "mood": "gut",
       "score": 65,
       "postsCount": 25,
-      "reason": "Tesla schließt mit gut 5 % Plus bei 400 $, stärkster der großen Tech-Werte. Dazu Begeisterung über 285 neue Cybercabs im Robotaxi-Netz.",
+      "reason": "Tesla beendet die Woche erstmals genau bei 400 $. Chart-Fans sehen ein großes Muster, dazu Rechnungen zu einer möglichen Fusion mit SpaceX.",
       "sources": [
         {
-          "title": "@CuriousPejjy auf X (27.11., 19:28)",
-          "url": "https://x.com/CuriousPejjy/status/2126382681696948629"
+          "title": "@MentoviaX auf X (27.11., 19:57)",
+          "url": "https://x.com/MentoviaX/status/2126390093065666929"
         },
         {
-          "title": "@moneymaker7723 auf X (27.11., 19:32)",
-          "url": "https://x.com/moneymaker7723/status/2126383562190676099"
+          "title": "@ThemesETFs auf X (27.11., 20:00)",
+          "url": "https://x.com/ThemesETFs/status/2126390600920658262"
         },
         {
-          "title": "@TeslaStars auf X (27.11., 19:31)",
-          "url": "https://x.com/TeslaStars/status/2126383302278017500"
+          "title": "@Tesla_Borg auf X (27.11., 19:57)",
+          "url": "https://x.com/Tesla_Borg/status/2126390025730523197"
         }
       ],
-      "updatedAt": "2026-11-27T18:32:32Z"
+      "updatedAt": "2026-11-27T19:04:51Z"
     },
     "RKLB": {
       "mood": "gut",
       "score": 45,
       "postsCount": 25,
-      "reason": "Nach dem Plus von rund 7 % sehen Chart-Accounts Luft bis 60 $, aber noch keine echte Trendwende. Sonst vor allem Werbe-Spam.",
+      "reason": "Ein langer Thread erklärt Rocket Lab: 3,57 Mrd. $ Auftragsbestand, Iridium-Kauf, viel Eigenbau. Frage im Raum: wird es das nächste SpaceX?",
       "sources": [
+        {
+          "title": "@TheRayMyers auf X (27.11., 19:45)",
+          "url": "https://x.com/TheRayMyers/status/2126386881470275599"
+        },
+        {
+          "title": "@TheRayMyers auf X (27.11., 19:45)",
+          "url": "https://x.com/TheRayMyers/status/2126386864642719802"
+        },
         {
           "title": "@Zac_Markovich auf X (27.11., 19:29)",
           "url": "https://x.com/Zac_Markovich/status/2126383003031253446"
-        },
-        {
-          "title": "@mortezazedd auf X (27.11., 19:16)",
-          "url": "https://x.com/mortezazedd/status/2126379535298146697"
-        },
-        {
-          "title": "@Stealthct_Storm auf X (27.11., 19:07)",
-          "url": "https://x.com/Stealthct_Storm/status/2126377410035859681"
         }
       ],
-      "updatedAt": "2026-11-27T18:32:32Z"
+      "updatedAt": "2026-11-27T19:04:51Z"
     }
   }
 }
