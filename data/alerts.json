@@ -692,6 +692,36 @@
           "url": "https://finance.yahoo.com/quote/RKLB"
         }
       ]
+    },
+    {
+      "id": "RKLB-2026-11-27",
+      "symbol": "RKLB",
+      "name": "Rocket Lab",
+      "changePct": 6.2,
+      "priceEur": 45.4,
+      "thresholdPct": 2,
+      "direction": "up",
+      "timestamp": "2026-11-27T07:55:00.963Z",
+      "notified": false,
+      "example": false,
+      "sources": [
+        {
+          "title": "Alpaca Markets IEX RKLB",
+          "url": "https://data.alpaca.markets/v2/stocks/RKLB/snapshot?feed=iex"
+        },
+        {
+          "title": "Yahoo Finance 6RJ0.SG",
+          "url": "https://finance.yahoo.com/quote/6RJ0.SG"
+        },
+        {
+          "title": "Yahoo Finance EURUSD=X",
+          "url": "https://finance.yahoo.com/quote/EURUSD=X"
+        },
+        {
+          "title": "Yahoo Finance RKLB",
+          "url": "https://finance.yahoo.com/quote/RKLB"
+        }
+      ]
     }
   ]
 }

@@ -31,7 +31,7 @@
       "ticker": "LVWR",
       "country": "US",
       "exchange": "NYSE",
-      "priceEur": 2.0,
+      "priceEur": 2,
       "hint": "Squeeze-Lauf: +93,9 % am Montag, nachbörslich weitere +12,8 %",
       "bullets": [
         "Die E-Motorrad-Tochter von Harley-Davidson hat sich am 24.11. ohne Firmennachricht fast verdoppelt und am Mittwoch weiter zugelegt.",
@@ -110,7 +110,7 @@
       "ticker": "PANW",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 315.0,
+      "priceEur": 315,
       "hint": "Klage eines Ex-Managers wegen aufgeblähter Umsätze, nachbörslich −4,4 %",
       "bullets": [
         "Nachbörslich am Mittwoch rutschte die Aktie um rund 4,4 % auf 340,50 $; in Frankfurt lag sie am Donnerstagabend bei 315,00 €.",
@@ -149,9 +149,9 @@
   "asOf": "2026-11-25T06:00:00+01:00",
   "fx": {
     "pair": "EURUSD",
-    "rate": 1.0972,
+    "rate": 1.0981,
     "meaning": "USD je 1 EUR. Umrechnung: Preis_EUR = Preis_USD / rate.",
-    "asOf": "2026-11-26T22:41:46+01:00",
+    "asOf": "2026-11-27T08:55:48+01:00",
     "source": {
       "title": "Yahoo Finance EURUSD=X",
       "url": "https://finance.yahoo.com/quote/EURUSD=X"
@@ -715,19 +715,20 @@
     }
   ],
   "nearTerm": {
-    "pickedOn": "2026-11-26",
+    "pickedOn": "2026-11-27",
     "window": 5,
     "expanded": true,
     "from": "2026-11-27",
-    "to": "2026-12-03",
-    "includesToday": false,
-    "note": "In den nächsten 3 Handelstagen lagen zu wenig Termine. Fenster bis 5 Handelstage, 3. Dezember 2026.",
+    "to": "2026-12-04",
+    "includesToday": true,
+    "note": "In den nächsten 3 Handelstagen lagen zu wenig Termine. Fenster bis 5 Handelstage, 4. Dezember 2026.",
     "tradingDays": [
       "2026-11-27",
       "2026-11-30",
       "2026-12-01",
       "2026-12-02",
-      "2026-12-03"
+      "2026-12-03",
+      "2026-12-04"
     ],
     "asOf": "2026-11-25T06:00:00+01:00",
     "sources": [
