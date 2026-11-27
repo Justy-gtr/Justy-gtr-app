@@ -1,50 +1,33 @@
 {
   "example": false,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "title": "Morgen-Briefing",
   "greeting": "Guten Morgen, Justy.",
-  "summary": "Nach einem erneuten Tech-Ausverkauf drehte die Wall Street am Mittwoch spät: Der Nasdaq 100 lag zeitweise 4,7 % im Minus und schloss nur 0,6 % tiefer bei 26.047 Punkten, der Dow gewann 0,3 %, der S&P 500 verlor 0,3 %. Der Dax war am Mittwoch 1,3 % auf 24.702 Punkte gefallen, den tiefsten Stand seit Juli, wird heute früh aber rund 2 % höher bei etwa 25.200 bis 25.250 Punkten taxiert. Heute sind die US-Börsen wegen Thanksgiving geschlossen, am Freitag schließen sie schon um 19 Uhr (dpa-AFX, Der Aktionär, Dow Jones).",
+  "summary": "Der Dax hat sich am Donnerstag kräftig erholt und schloss 2,1 % höher bei 25.216 Punkten; vorbörslich liegt er heute weiter im Plus. Die Wall Street war wegen Thanksgiving geschlossen, heute ist Black Friday mit verkürztem Handel bis 19 Uhr deutscher Zeit. Am Donnerstag stiegen die Nasdaq-Futures laut Reuters um 2,4 %, Asien legte zu (Handelsblatt, Reuters).",
   "bullets": [
-    "Fokus-Werte am Mittwoch (US-Schluss): SpaceX 127,44 $ (+1,3 %), Tesla 380,14 $ (−1,2 %), Rocket Lab 47,02 $ (+2,3 %). Heute handeln sie nur an deutschen Plätzen (Yahoo Finance).",
-    "Nvidia schloss 3,9 % tiefer bei 149,30 $. Die Ratingagentur S&P droht nach den Führungswirren mit einer Herabstufung (Der Aktionär, Handelsblatt).",
-    "Zölle: Der US-Handelsbeauftragte schlug am Mittwoch neue Zölle gegen 14 Partner vor, für die EU 15 % abzüglich bestehender Zölle, für China bis 20 %. Greifen sollen sie nicht vor der Anhörung am 25. Januar (USTR, Reuters).",
-    "Asien erholt sich, vor allem Chipwerte: Nikkei rund +0,5 %, Kioxia in Tokio rund +12 % nach einer Nvidia-Kooperation. Nasdaq-100-Futures stehen rund +0,6 % (Handelsblatt, Yahoo Finance).",
-    "Heute in Deutschland: GfK-Konsumklima um 8 Uhr, EZB-Protokoll um 13:30 Uhr, Kapitalmarkttage von Rheinmetall. Berenberg stuft Bayer auf Buy hoch (Der Aktionär, dax-d-trading.com).",
-    "Moonshots Long: Kioxia, Vera Therapeutics, Kanzhun. Short: Vertex, Sunmi, DeepZero."
+    "Fokus-Werte an deutschen Plätzen (Donnerstag): SpaceX 118,38 € (+2,4 %), Tesla 347,65 € (+3,6 %), Rocket Lab 44,05 € (+3,0 %). US-Schluss vom Mittwoch: SpaceX 127,44 $, Tesla 380,14 $, Rocket Lab 47,02 $ (Yahoo Finance).",
+    "Asien am Donnerstag: Nikkei +1,9 %, Südkorea +3,9 %, Kioxia rund +12,6 %, SoftBank +7,3 %. Die Bank of Korea hob den Leitzins auf 3,25 % an (Reuters, The Boom Bust).",
+    "Nvidia schloss am Mittwoch bei 149,30 $ (−3,9 %), nachbörslich 151,22 $. Laut Reuters hat Nvidia den Serververkauf an vier südostasiatische Länder gestoppt (Reuters, The Boom Bust).",
+    "Heute: US-Handel nur bis 19 Uhr, dünne Umsätze. Adobe erwartet 12,9 Mrd. $ US-Onlineumsatz am Black Friday (+9,2 %). In Deutschland stehen Arbeitsmarktdaten und Stimmungsdaten aus der Eurozone an, außerdem der Investorentag von Rheinmetall (Handelsblatt, The Boom Bust).",
+    "Moonshots Long: Vera Therapeutics, LiveWire, Ingenic. Short: Vertex, Palo Alto Networks, Energiekontor."
   ],
   "audioUrl": null,
   "sources": [
     {
-      "title": "dpa-AFX via wallstreet-online: DAX-FLASH Gewinne erwartet (26.11., 07:15)",
-      "url": "https://www.wallstreet-online.de/nachricht/21749863-dax-flash-gewinne-erwartet-tech-erholung-ruecken"
+      "title": "Handelsblatt: Dax und Börse aktuell – fünf Punkte (27.11., 06:17)",
+      "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dax-und-boerse-aktuell-fuenf-punkte-die-fuer-anleger-heute-wichtig-sind/100002161.html"
     },
     {
-      "title": "Der Aktionär: DAX-Prognose, kein US-Handel (26.11., 06:56)",
-      "url": "https://www.deraktionaer.de/artikel/indizes/dax-prognose-hoeher-kein-us-handel-rheinmetall-bayer-infineon-siemens-energy-nvidia-im-fokus-20452534.html"
+      "title": "Reuters via Investing.com: Morning Bid – Is this a dead turkey bounce? (27.11.)",
+      "url": "https://www.investing.com/news/economy-news/morning-bid-is-this-a-dead-turkey-bounce-5052930"
     },
     {
-      "title": "Dow Jones via finanznachrichten: DAX-Futures im Frühhandel weiter erholt (26.11., 06:04)",
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70232690-eurex-dax-futures-im-fruehhandel-weiter-erholt-015.htm"
+      "title": "The Boom Bust: Pre-Market Brief, 27.11.2026",
+      "url": "https://www.theboombust.com/post/pre-market-brief-friday-november-27-2026"
     },
     {
-      "title": "Handelsblatt via Newslocker: Börse am 26. November, S&P droht Nvidia",
-      "url": "https://www.newslocker.com/de-de/branche/buchhaltung/brse-am-26-november-sieben-punkte-die-fr-anleger-heute-wichtig-sind-2/"
-    },
-    {
-      "title": "dax-d-trading.com: DAX-Termine KW 48/2026",
-      "url": "https://dax-d-trading.com/2026/11/21/dax-termine-kw48-2026/"
-    },
-    {
-      "title": "Yahoo Finance: SPCX (Schluss 25.11.)",
+      "title": "Yahoo Finance: Kurse SPCX/TSLA/RKLB",
       "url": "https://finance.yahoo.com/quote/SPCX/"
-    },
-    {
-      "title": "Yahoo Finance: NQ=F (26.11., 07:25)",
-      "url": "https://finance.yahoo.com/quote/NQ=F/"
-    },
-    {
-      "title": "Reuters: Trump unveils new tariffs over excess industrial capacity (25.11.)",
-      "url": "https://www.reuters.com/3fec1b0a85a0/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/"
     }
   ]
 }
