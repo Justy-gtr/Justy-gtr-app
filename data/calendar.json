@@ -89,7 +89,7 @@
       ],
       "probabilityPct": 65,
       "impact": "niedrig",
-      "reasoning": "SpaceX führt USSF-380 neu in der Startliste: Falcon 9 von SLC-4E in Kalifornien, Fenster 27.11. 23:53 bis 28.11. 03:53 Uhr Ostküstenzeit (Sa 28.11. 05:53 bis 09:53 Berlin), Landung auf dem Drohnenschiff (SpaceX). Vor diesem Start stehen am selben Gelände noch USSF-317, NROL-136 und USSF-266 an, die schon mehrfach rutschten; deshalb nur 65 % für den genannten Tag. Kurswirkung gering. Stand Mo 14:20: Launch Library 2 nennt jetzt So 29.11. 04:39 UTC (05:39 Berlin), Status „Go“ – einen Tag später als bisher; einen Grund nennt die Liste nicht. 65 % bleibt, weil vorher noch USSF-266 am selben Gelände fliegen muss. Stand Mi 12:20: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Fr 07:35: SpaceX nennt weiter Sa 28.11. 20:39 Uhr Pazifikzeit (So 29.11. 05:39 Berlin), Ersatztermin So 29.11. 18:26 Pazifikzeit; Launch Library 2 Status „Go“. Wahrscheinlichkeit unverändert.",
+      "reasoning": "SpaceX führt USSF-380 neu in der Startliste: Falcon 9 von SLC-4E in Kalifornien, Fenster 27.11. 23:53 bis 28.11. 03:53 Uhr Ostküstenzeit (Sa 28.11. 05:53 bis 09:53 Berlin), Landung auf dem Drohnenschiff (SpaceX). Vor diesem Start stehen am selben Gelände noch USSF-317, NROL-136 und USSF-266 an, die schon mehrfach rutschten; deshalb nur 65 % für den genannten Tag. Kurswirkung gering. Stand Mo 14:20: Launch Library 2 nennt jetzt So 29.11. 04:39 UTC (05:39 Berlin), Status „Go“ – einen Tag später als bisher; einen Grund nennt die Liste nicht. 65 % bleibt, weil vorher noch USSF-266 am selben Gelände fliegen muss. Stand Mi 12:20: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Fr 07:35: SpaceX nennt weiter Sa 28.11. 20:39 Uhr Pazifikzeit (So 29.11. 05:39 Berlin), Ersatztermin So 29.11. 18:26 Pazifikzeit; Launch Library 2 Status „Go“. Wahrscheinlichkeit unverändert. Stand Fr 12:20: Weiter So 29.11. 04:39 UTC (05:39 Berlin), Booster B1082 auf seinem 27. Flug, Status „Go“ (Orbital Radar). Wahrscheinlichkeit unverändert.",
       "example": false,
       "sources": [
         {
@@ -103,6 +103,10 @@
         {
           "title": "SpaceX: USSF-380 Mission (Stand 27.11.)",
           "url": "https://www.spacex.com/launches/ussf380"
+        },
+        {
+          "title": "Orbital Radar: Falcon 9 USSF-380",
+          "url": "https://orbitalradar.com/launch/falcon-9-ussf-380"
         }
       ]
     },
@@ -120,7 +124,7 @@
       ],
       "probabilityPct": 65,
       "impact": "niedrig",
-      "reasoning": "Die NASA plant den Start des Frachters Cygnus XL von Northrop Grumman (Mission CRS-25) auf einer Falcon 9 frühestens am So 29.11. um 10:49 Uhr Ostküstenzeit (16:49 Berlin) von Startrampe SLC-40 in Cape Canaveral (NASA). Die Startdatenbank führt 15:47 UTC (16:47 Berlin) mit Status „Go“ (Launch Library 2). An Bord: Versorgung und Experimente für die Raumstation, der Frachter bleibt bis Mai 2027 angedockt (NASA, Northrop Grumman). Bis zum Termin sind es zwei Wochen, ISS-Frachtflüge rutschen oft um ein, zwei Tage, etwa wegen Wetter oder Stationsplanung. Deshalb 65 % für genau diesen Tag. Kurswirkung gering, zeigt aber, dass die NASA auch fremde Frachter mit SpaceX fliegt. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 11:50: Laut Launch Library jetzt Fenster 15:47 UTC (16:47 Berlin), Status „Go“. Wahrscheinlichkeit unverändert. Stand Mo 14:20: Launch Library 2 nennt jetzt 15:50 UTC (16:50 Berlin), Status „Go“. Wahrscheinlichkeit unverändert. Stand Mi 07:45: Launch Library 2 nennt wieder 15:47 UTC (16:47 Berlin), Status „Go“. 65 % unverändert. Stand Mi 12:20: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Fr 07:35: SpaceX nennt weiter So 29.11. 10:47 Uhr Ostküstenzeit (16:47 Berlin), Ersatztermin Mo 30.11. 10:24 Uhr; Status „Go“. Wahrscheinlichkeit unverändert.",
+      "reasoning": "Die NASA plant den Start des Frachters Cygnus XL von Northrop Grumman (Mission CRS-25) auf einer Falcon 9 frühestens am So 29.11. um 10:49 Uhr Ostküstenzeit (16:49 Berlin) von Startrampe SLC-40 in Cape Canaveral (NASA). Die Startdatenbank führt 15:47 UTC (16:47 Berlin) mit Status „Go“ (Launch Library 2). An Bord: Versorgung und Experimente für die Raumstation, der Frachter bleibt bis Mai 2027 angedockt (NASA, Northrop Grumman). Bis zum Termin sind es zwei Wochen, ISS-Frachtflüge rutschen oft um ein, zwei Tage, etwa wegen Wetter oder Stationsplanung. Deshalb 65 % für genau diesen Tag. Kurswirkung gering, zeigt aber, dass die NASA auch fremde Frachter mit SpaceX fliegt. Stand So 11:30: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 13:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 14:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 15:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 16:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 18:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 20:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand So 22:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mo 05:00: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Mi 11:50: Laut Launch Library jetzt Fenster 15:47 UTC (16:47 Berlin), Status „Go“. Wahrscheinlichkeit unverändert. Stand Mo 14:20: Launch Library 2 nennt jetzt 15:50 UTC (16:50 Berlin), Status „Go“. Wahrscheinlichkeit unverändert. Stand Mi 07:45: Launch Library 2 nennt wieder 15:47 UTC (16:47 Berlin), Status „Go“. 65 % unverändert. Stand Mi 12:20: Termin und Status „Go“ unverändert (Launch Library 2). Wahrscheinlichkeit unverändert. Stand Fr 07:35: SpaceX nennt weiter So 29.11. 10:47 Uhr Ostküstenzeit (16:47 Berlin), Ersatztermin Mo 30.11. 10:24 Uhr; Status „Go“. Wahrscheinlichkeit unverändert. Stand Fr 12:20: SpaceX nennt So 29.11. 10:47 Uhr Ostküstenzeit (16:47 Berlin), Ersatztermin Mo 30.11. 10:24 Uhr Ostküstenzeit (16:24 Berlin); der Booster fliegt zum neunten Mal (SpaceX). Wahrscheinlichkeit unverändert.",
       "example": false,
       "sources": [
         {
@@ -153,6 +157,10 @@
         },
         {
           "title": "SpaceX: NG-25 Mission (Stand 27.11.)",
+          "url": "https://www.spacex.com/launches/ng25"
+        },
+        {
+          "title": "SpaceX: NG-25 Mission",
           "url": "https://www.spacex.com/launches/ng25"
         }
       ]
@@ -511,7 +519,7 @@
       ],
       "probabilityPct": 35,
       "impact": "hoch",
-      "reasoning": "Bloomberg berichtete am Do 12.11. (21:22 Berlin) unter Berufung auf Insider: Die Fusionsgespräche kommen voran, eine Bekanntgabe des bisher größten Firmendeals sei schon im Dezember möglich. Besprochen wird auch, dass es Anfang 2027 wird. Verwaltungsräte und Berater verhandeln über die Führungsstruktur, wie viele SpaceX-Aktien Tesla-Aktionäre bekämen und wie Teslas China-Geschäft abgeschirmt würde (Bloomberg, Mint). Musk hatte im Oktober Sonderausschüsse aus unabhängigen Direktoren genannt. Es sei aber zu früh, von einer Fusion auszugehen, die Ausschüsse hätten sich noch nicht auf Bedingungen geeinigt (Reuters/cash). Gegenwind: Spannungen zwischen SpaceX-Regierungsaufträgen und Teslas China-Werk (JPMorgan) und ein Kongress mit demokratischen Mehrheiten, der Musk prüfen will. Jefferies hält die Fusion nach den Wahlen für schwieriger. Die Tesla-Hauptversammlung ist am 3.12. Meine 40 % gelten für eine offizielle Bekanntgabe im Dezember. Der Zeitplan ist laut Bericht ehrgeizig, Musk-Termine rutschen oft, und die Ausschüsse haben noch keine Bedingungen. Nachbörslich am Do um 01:59 Berlin: SPCX 141,96 $ (+1,4 %), TSLA 399,85 $ (+0,6 %) (Yahoo). Stand Fr 07:00: Keine neuen Details. Tesla stieg am Do zeitweise um 1,9 % auf den Bericht (Electrek). Electrek weist darauf hin, dass bei einem Kontrollwechsel Teile von Musks Tesla-Vergütung sofort fällig werden könnten. Reuters hat SpaceX und Tesla nicht erreicht. 40 % unverändert. Stand Fr 09:10: Keine neue Meldung der Firmen. Barclays hatte im Oktober durchgerechnet: Nach einer Übernahme Teslas durch SpaceX hielte Musk rund 37 % des Kapitals, aber 56 % der Stimmen. Laut Musk muss die Hälfte aller ausstehenden Tesla-Aktien zustimmen; auf der Tagesordnung der Hauptversammlung am 3.12. steht die Fusion bisher nicht (Investing.com). 40 % unverändert. Stand Fr 09:55: Keine Stellungnahme der Firmen. Nächster fester Termin bleibt die Tesla-Hauptversammlung am 3.12., auf der Musk und Denholm zur Wiederwahl stehen (finanzen.net). 40 % unverändert. Stand Fr 13:10: Weiter keine Stellungnahme von SpaceX oder Tesla (RTÉ). Bloomberg nennt als größte Hürden die Trennung von Teslas China-Geschäft und SpaceX' Rüstungsaufträgen sowie das Umtauschverhältnis. 40 % unverändert. Stand Sa 11:30: Neuer politischer Gegenwind aus Texas: Der designierte demokratische Generalstaatsanwalt Nathan Johnson, der im Januar antritt, sagte Bloomberg am Do, jede Fusion dieser Größe brauche „enorme Prüfung“; Musk habe von politischer Nachsicht profitiert (Investing.com). Eine Bekanntgabe im Dezember verhindert das nicht, eine spätere Genehmigung könnte es aber erschweren. 40 % unverändert. Stand Sa 18:00: Bloomberg rechnet vor, dass eine Fusion SpaceX über Tesla in den S&P 500 bringen könnte; TD Securities schätzt die Nachfrage der Indexfonds auf rund 100 Mrd. $ (Bloomberg via Livemint). Neue Fakten zu Konditionen oder Termin gibt es nicht; beide Firmen haben nichts bestätigt. 40 % unverändert. Stand So 16:00: Ein Bericht von Merger Monday (So 05:37 New Yorker Zeit) fasst frühere Berichte zusammen: Die Gespräche drehen sich jetzt um Preis und Kontrolle, eine Bekanntgabe sei ab Dezember möglich, ein Zeitplan bis Anfang 2027 sei aber ebenfalls besprochen worden. Bestätigt hat keine der beiden Firmen etwas, neue Zahlen nennt der Bericht nicht. 40 % unverändert. Stand Do 12:25: Musk im NYT-Interview (DealBook): Eine Fusion sei nicht sicher, „beide Wege sind möglich“. Vor fünf Jahren hätte er keinen Grund gesehen, heute verbänden KI, Robotik und eigene Chipteams beide Firmen (druckfin). Keine neue Firmen- oder SEC-Meldung. 40 % unverändert. Stand Fr 12:20: HSBC hebt Tesla von „Reduce“ auf „Hold“ und das Kursziel von 157 auf 359 $. Die Bank rechnet zur Hälfte mit einer Übernahme durch SpaceX (33 % Aufschlag, 507 $ je Aktie) und zur Hälfte mit dem eigenen Wert (212 $), hält die strategische Logik aber für „begrenzt“ (Investing.com, Yahoo/Stocktwits). Das ist eine Analystenrechnung, keine Firmenmeldung. 40 % unverändert. Stand Mo 08:00: Musk sagte am Fr, er solle für eine Fusion mit SpaceX keine Tesla-Vergütung bekommen; die Wettquote für eine Bekanntgabe noch 2026 fiel laut Longbridge auf 16 %. Gary Black warnt vor Verwässerung bei einem Aktientausch (Longbridge, Benzinga). Keine neue SEC-Meldung. 40 → 30 %. Stand Di 07:50: Die Financial Times berichtet, dass die Sonderausschüsse besetzt sind: Robyn Denholm, Kathleen Wilson-Thompson und Jack Hartung für Tesla, Roelof Botha und Randy Glein für SpaceX. Berater sind Morgan Stanley und Goldman Sachs für SpaceX und Evercore für Tesla; sie rechnen an einem reinen Aktientausch und am Umtauschverhältnis. Die Gespräche laufen laut FT auf ein mögliches Ziel zum Jahresende zu, eine Einigung sei aber noch nicht nah. Tesla bräuchte eine eigene außerordentliche Hauptversammlung mit mehr als 50 % aller möglichen Stimmen, dazu kommen Prüfungen in den USA, China, Europa und Großbritannien (Investing.com). Reuters konnte den Bericht nicht prüfen, beide Firmen haben sich nicht geäußert. Der Prozess ist damit weiter als bisher bekannt, ein Abschluss ist es nicht: Eine Bekanntgabe bis Jahresende wird etwas wahrscheinlicher. 30 → 35 %. Stand Di 14:20: Laut Financial Times führen fünf Direktoren die Gespräche: Roelof Botha und Randy Glein für SpaceX, Robyn Denholm, Kathleen Wilson-Thompson und Jack Hartung für Tesla; die Ausschüsse seien von einer Einigung noch weit entfernt (Reuters, Investing.com). Keine neue Bestätigung der Firmen. 35 % unverändert. Stand Di 20:25: J.P. Morgan schreibt, eine Fusion mit Tesla könnte SpaceX schneller in den S&P 500 bringen und passive Käufe von rund 10 % der frei handelbaren Aktien auslösen; ohne Fusion fehlen SpaceX noch 12 Monate Börsenhandel und ein GAAP-Gewinn (Reuters via Investing.com). Electrek ordnet das Jahresende-Ziel so ein, dass ein Abschluss vor dem neuen Kongress am 3.1. fallen würde. Keine Bestätigung der Firmen, keine SEC-Meldung. 35 % unverändert. Stand Mi 12:20: Laut AFR verhandeln fünf als unbefangen geltende Direktoren – drei von Tesla, zwei von SpaceX – in zwei Sonderausschüssen und wollen den Deal noch vor Jahresende fertig verhandeln. Das stützt den Zeitplan, ist aber ein Insiderbericht ohne offizielle Bestätigung; Wahrscheinlichkeit unverändert.",
+      "reasoning": "Bloomberg berichtete am Do 12.11. (21:22 Berlin) unter Berufung auf Insider: Die Fusionsgespräche kommen voran, eine Bekanntgabe des bisher größten Firmendeals sei schon im Dezember möglich. Besprochen wird auch, dass es Anfang 2027 wird. Verwaltungsräte und Berater verhandeln über die Führungsstruktur, wie viele SpaceX-Aktien Tesla-Aktionäre bekämen und wie Teslas China-Geschäft abgeschirmt würde (Bloomberg, Mint). Musk hatte im Oktober Sonderausschüsse aus unabhängigen Direktoren genannt. Es sei aber zu früh, von einer Fusion auszugehen, die Ausschüsse hätten sich noch nicht auf Bedingungen geeinigt (Reuters/cash). Gegenwind: Spannungen zwischen SpaceX-Regierungsaufträgen und Teslas China-Werk (JPMorgan) und ein Kongress mit demokratischen Mehrheiten, der Musk prüfen will. Jefferies hält die Fusion nach den Wahlen für schwieriger. Die Tesla-Hauptversammlung ist am 3.12. Meine 40 % gelten für eine offizielle Bekanntgabe im Dezember. Der Zeitplan ist laut Bericht ehrgeizig, Musk-Termine rutschen oft, und die Ausschüsse haben noch keine Bedingungen. Nachbörslich am Do um 01:59 Berlin: SPCX 141,96 $ (+1,4 %), TSLA 399,85 $ (+0,6 %) (Yahoo). Stand Fr 07:00: Keine neuen Details. Tesla stieg am Do zeitweise um 1,9 % auf den Bericht (Electrek). Electrek weist darauf hin, dass bei einem Kontrollwechsel Teile von Musks Tesla-Vergütung sofort fällig werden könnten. Reuters hat SpaceX und Tesla nicht erreicht. 40 % unverändert. Stand Fr 09:10: Keine neue Meldung der Firmen. Barclays hatte im Oktober durchgerechnet: Nach einer Übernahme Teslas durch SpaceX hielte Musk rund 37 % des Kapitals, aber 56 % der Stimmen. Laut Musk muss die Hälfte aller ausstehenden Tesla-Aktien zustimmen; auf der Tagesordnung der Hauptversammlung am 3.12. steht die Fusion bisher nicht (Investing.com). 40 % unverändert. Stand Fr 09:55: Keine Stellungnahme der Firmen. Nächster fester Termin bleibt die Tesla-Hauptversammlung am 3.12., auf der Musk und Denholm zur Wiederwahl stehen (finanzen.net). 40 % unverändert. Stand Fr 13:10: Weiter keine Stellungnahme von SpaceX oder Tesla (RTÉ). Bloomberg nennt als größte Hürden die Trennung von Teslas China-Geschäft und SpaceX' Rüstungsaufträgen sowie das Umtauschverhältnis. 40 % unverändert. Stand Sa 11:30: Neuer politischer Gegenwind aus Texas: Der designierte demokratische Generalstaatsanwalt Nathan Johnson, der im Januar antritt, sagte Bloomberg am Do, jede Fusion dieser Größe brauche „enorme Prüfung“; Musk habe von politischer Nachsicht profitiert (Investing.com). Eine Bekanntgabe im Dezember verhindert das nicht, eine spätere Genehmigung könnte es aber erschweren. 40 % unverändert. Stand Sa 18:00: Bloomberg rechnet vor, dass eine Fusion SpaceX über Tesla in den S&P 500 bringen könnte; TD Securities schätzt die Nachfrage der Indexfonds auf rund 100 Mrd. $ (Bloomberg via Livemint). Neue Fakten zu Konditionen oder Termin gibt es nicht; beide Firmen haben nichts bestätigt. 40 % unverändert. Stand So 16:00: Ein Bericht von Merger Monday (So 05:37 New Yorker Zeit) fasst frühere Berichte zusammen: Die Gespräche drehen sich jetzt um Preis und Kontrolle, eine Bekanntgabe sei ab Dezember möglich, ein Zeitplan bis Anfang 2027 sei aber ebenfalls besprochen worden. Bestätigt hat keine der beiden Firmen etwas, neue Zahlen nennt der Bericht nicht. 40 % unverändert. Stand Do 12:25: Musk im NYT-Interview (DealBook): Eine Fusion sei nicht sicher, „beide Wege sind möglich“. Vor fünf Jahren hätte er keinen Grund gesehen, heute verbänden KI, Robotik und eigene Chipteams beide Firmen (druckfin). Keine neue Firmen- oder SEC-Meldung. 40 % unverändert. Stand Fr 12:20: HSBC hebt Tesla von „Reduce“ auf „Hold“ und das Kursziel von 157 auf 359 $. Die Bank rechnet zur Hälfte mit einer Übernahme durch SpaceX (33 % Aufschlag, 507 $ je Aktie) und zur Hälfte mit dem eigenen Wert (212 $), hält die strategische Logik aber für „begrenzt“ (Investing.com, Yahoo/Stocktwits). Das ist eine Analystenrechnung, keine Firmenmeldung. 40 % unverändert. Stand Mo 08:00: Musk sagte am Fr, er solle für eine Fusion mit SpaceX keine Tesla-Vergütung bekommen; die Wettquote für eine Bekanntgabe noch 2026 fiel laut Longbridge auf 16 %. Gary Black warnt vor Verwässerung bei einem Aktientausch (Longbridge, Benzinga). Keine neue SEC-Meldung. 40 → 30 %. Stand Di 07:50: Die Financial Times berichtet, dass die Sonderausschüsse besetzt sind: Robyn Denholm, Kathleen Wilson-Thompson und Jack Hartung für Tesla, Roelof Botha und Randy Glein für SpaceX. Berater sind Morgan Stanley und Goldman Sachs für SpaceX und Evercore für Tesla; sie rechnen an einem reinen Aktientausch und am Umtauschverhältnis. Die Gespräche laufen laut FT auf ein mögliches Ziel zum Jahresende zu, eine Einigung sei aber noch nicht nah. Tesla bräuchte eine eigene außerordentliche Hauptversammlung mit mehr als 50 % aller möglichen Stimmen, dazu kommen Prüfungen in den USA, China, Europa und Großbritannien (Investing.com). Reuters konnte den Bericht nicht prüfen, beide Firmen haben sich nicht geäußert. Der Prozess ist damit weiter als bisher bekannt, ein Abschluss ist es nicht: Eine Bekanntgabe bis Jahresende wird etwas wahrscheinlicher. 30 → 35 %. Stand Di 14:20: Laut Financial Times führen fünf Direktoren die Gespräche: Roelof Botha und Randy Glein für SpaceX, Robyn Denholm, Kathleen Wilson-Thompson und Jack Hartung für Tesla; die Ausschüsse seien von einer Einigung noch weit entfernt (Reuters, Investing.com). Keine neue Bestätigung der Firmen. 35 % unverändert. Stand Di 20:25: J.P. Morgan schreibt, eine Fusion mit Tesla könnte SpaceX schneller in den S&P 500 bringen und passive Käufe von rund 10 % der frei handelbaren Aktien auslösen; ohne Fusion fehlen SpaceX noch 12 Monate Börsenhandel und ein GAAP-Gewinn (Reuters via Investing.com). Electrek ordnet das Jahresende-Ziel so ein, dass ein Abschluss vor dem neuen Kongress am 3.1. fallen würde. Keine Bestätigung der Firmen, keine SEC-Meldung. 35 % unverändert. Stand Mi 12:20: Laut AFR verhandeln fünf als unbefangen geltende Direktoren – drei von Tesla, zwei von SpaceX – in zwei Sonderausschüssen und wollen den Deal noch vor Jahresende fertig verhandeln. Das stützt den Zeitplan, ist aber ein Insiderbericht ohne offizielle Bestätigung; Wahrscheinlichkeit unverändert. Stand Fr 12:20: RBC-Analyst Ken Herbert rechnet mit einer Bekanntgabe Anfang 2027 – früher, als RBC bisher dachte, aber nicht schon im Dezember; Dan Ives (Yorkville Ives) sieht 80 bis 90 % für eine Fusion bis Anfang 2027 (Der Aktionär). Beide Seiten haben laut FT Banken beauftragt: Morgan Stanley und Goldman Sachs für SpaceX, Evercore für Tesla (FX Leaders). Keine Bestätigung der Firmen, keine SEC-Meldung. 35 % unverändert, weil das RBC-Zeitfenster knapp nach dem Kalenderfenster liegt.",
       "example": false,
       "sources": [
         {
@@ -613,6 +621,14 @@
         {
           "title": "AFR: Fünf Direktoren verhandeln die SpaceX-Tesla-Fusion, Ziel vor Jahresende (25.11.)",
           "url": "https://www.afr.com/world/north-america/spacex-tesla-the-directors-negotiating-the-biggest-merger-ever-20261125-p61h5i"
+        },
+        {
+          "title": "Der Aktionär: Tesla-Analyst – Deal mit SpaceX Anfang 2027 (27.11.)",
+          "url": "https://www.deraktionaer.de/artikel/aktien/tesla-analyst-deal-mit-spacex-anfang-2027-20452725.html"
+        },
+        {
+          "title": "FX Leaders: Tesla, EU-Abstimmung und SpaceX-Gespräche (27.11.)",
+          "url": "https://www.fxleaders.com/news/2026/11/27/tesla-stock-forecast-eu-fsd-delay-spacex-merger-talks/"
         }
       ]
     },
@@ -778,7 +794,7 @@
       ],
       "probabilityPct": 98,
       "impact": "hoch",
-      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen. Stand 9.11.: Der Markt preist laut CME FedWatch mit über 80 % eine Zinserhöhung ein (Reuters), gestützt vom starken Oktober-Arbeitsmarkt. Stand 10.11.: Oktober-CPI mit +0,4 % und Kernrate +0,3 % jeweils 0,1 Punkte über Konsens (BLS). Waller ist für eine Erhöhung im Dezember und brachte bei heißen Daten 50 Basispunkte ins Spiel (CNBC). Am Fr 13.11. folgen die Erzeugerpreise. Stand 17:58: Die 10-jährige US-Rendite stieg um mehr als 14 Basispunkte auf 5,004 %, die 2-jährige um über 20 Basispunkte auf 4,755 % (CNBC). Dallas-Fed-Präsidentin Logan fordert mindestens zwei weitere Erhöhungen um je 25 Basispunkte, im Winter womöglich schneller (Investing.com). Goldman Sachs AM: Erhöhung im Dezember ist Basisfall, weitere 2027 möglich (CNBC). Stand 20:00: Laut Handelsblatt ist eine Erhöhung im Dezember nun voll eingepreist, rund 90 % rechnen mit 25 Basispunkten auf 4,0–4,25 %, rund 10 % mit 50 Basispunkten. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 07:00: Fed-Vizechefin Bowman sagte am Abend, bei der Inflation sei „noch Arbeit zu tun“, ohne ausdrücklich eine Erhöhung zu fordern (Fed, Reuters). Trading Economics nennt rund 91 % Wahrscheinlichkeit für eine Erhöhung im Dezember. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 11:40: Laut CME FedWatch liegt die Wahrscheinlichkeit für 25 Basispunkte im Dezember bei 91,9 % (Vortag 84 %), für 50 Basispunkte bei 9,1 %; eine Pause ist ausgepreist (CNBC). 98 % unverändert, das gilt dem Termin selbst. Stand Mi 18:00: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht (+0,4 % zum Vormonat) „grenzwertig beunruhigend“; Sorge machen ihm vor allem die Dienstleistungspreise (CNBC). 98 % unverändert, das gilt dem Termin selbst. Stand Sa 22:00: Boston-Fed-Chefin Susan Collins sprach sich am Sa für einen „stetigen, schrittweisen“ Weg kleiner Erhöhungen aus, gegen ein schnelleres Tempo; die Zinsen könnten im nächsten Jahr aber etwas höher steigen als gedacht. Reuters schreibt, allgemein werde im Dezember eine Erhöhung um 0,25 Punkte auf 4,00–4,25 % erwartet, danach eine weitere im Januar (Reuters). 98 % unverändert, das gilt dem Termin selbst. Stand So 08:30: Am Terminmarkt liegt die Wahrscheinlichkeit einer Erhöhung um 0,25 Punkte laut CME FedWatch bei 89,8 %, für 0,5 Punkte bei 10,2 % (FXBus, Stand 14.11.). 98 % unverändert, das gilt dem Termin selbst. Stand Mi 15:30: Gouverneur Waller wirbt offen für eine Erhöhung um 50 Basispunkte am 9.12. oder ein klares Signal für schnellere Schritte (CNBC, Investing.com). Der Termin selbst bleibt bei 98 %; offen ist nur, ob 25 oder 50 Basispunkte. Stand Mi 20:15: Das Oktober-Protokoll zeigt, dass „fast alle“ Mitglieder weitere Erhöhungen erwarten und „ein paar“ schon im Dezember einen größeren Schritt für möglich halten; auch Gouverneur Barr rechnet mit weiteren Erhöhungen (CNBC, Reuters). Laut Reuters wird für den 9.12. weithin eine Erhöhung um 0,25 Punkte auf 4,00–4,25 % erwartet. Der Termin selbst bleibt bei 98 %. Stand Mi 22:15: New-York-Fed-Chef Williams sprach um 20:30 auf einer Veranstaltung zu Investitionen in Gemeinden (New York Fed); Berichte über neue Aussagen zur Zinspolitik gibt es nicht. Am Di hatte er weitere Erhöhungen für wahrscheinlich, aber „drastische Schritte“ wie 0,5 Punkte für unnötig erklärt (Reuters). Kashkari spricht ab 22:15 auf einer KI-Konferenz; Aussagen dazu liegen noch nicht vor (Newsquawk). Laut CME-FedWatch ist eine Erhöhung um 0,25 Punkte im Dezember voll eingepreist, 0,5 Punkte nur mit kleiner Chance (CNBC). 98 % unverändert. Stand Do 12:25: Heute sprechen Cleveland-Fed-Chefin Hammack (14:50 Berlin, Finanzstabilitätskonferenz) und Vize-Chef Jefferson (15:25 Berlin, IMF-Diskussion); um 14:30 kommen Philly-Fed-Index und Erstanträge (Cleveland Fed, Federal Reserve, Goldesel). Aussagen liegen noch nicht vor. 98 % unverändert. Stand Do 20:25: Vize-Chef Jefferson sagte in Brasília, der Ölpreisschock wegen des Nahost-Konflikts treibe die Inflation und dämpfe zugleich die Nachfrage; bei Gefahr für die Inflationserwartungen sei eine stärkere Reaktion angebracht, einen Zinsschritt kündigte er nicht an (Federal Reserve). Am Markt fallen US-Aktien deutlich, Renditen zweijähriger Anleihen leicht tiefer bei 4,77 % (Reuters). 98 % unverändert. Stand Fr 12:20: Am Terminmarkt liegt die Wahrscheinlichkeit einer Zinserhöhung im Dezember laut CME FedWatch bei 98,4 %; Philadelphia-Fed-Chefin Paulson sagte am Do, die Fed müsse die Zinsen wieder anheben (Reuters). Stand Di 12:25: Laut CME FedWatch ist eine Zinserhöhung um 0,25 Prozentpunkte im Dezember voll eingepreist; eine kleine Wahrscheinlichkeit für 0,50 Punkte kam neu hinzu. New-York-Fed-Chef Williams sagte am Mo, die anhaltend hohe Inflation spreche für eine straffere Geldpolitik (Reuters). 98 % unverändert. Stand Mi 16:15: Nach den PCE-Daten (3,8 %, Kernrate 3,3 %) preisen Händler laut CME FedWatch eine Erhöhung im Dezember zu 97 % ein, eine weitere im Januar zu 63 % (Fox Business). 98 % unverändert, das gilt dem Termin selbst. Stand Do 12:20: CME FedWatch sieht eine Erhöhung um 0,25 Prozentpunkte am 9.12. zu rund 98 % (FXStreet). 98 % unverändert.",
+      "reasoning": "Sitzung am 8./9. Dezember, Entscheidung um 14:00 Uhr ET mit neuen Wirtschaftsprojektionen. Für teure Wachstumswerte zählt vor allem der Ausblick auf 2027. Achtung: Am Tag davor endet die SPCX-Haltefrist – zwei Kurstreiber in zwei Tagen. Stand 9.11.: Der Markt preist laut CME FedWatch mit über 80 % eine Zinserhöhung ein (Reuters), gestützt vom starken Oktober-Arbeitsmarkt. Stand 10.11.: Oktober-CPI mit +0,4 % und Kernrate +0,3 % jeweils 0,1 Punkte über Konsens (BLS). Waller ist für eine Erhöhung im Dezember und brachte bei heißen Daten 50 Basispunkte ins Spiel (CNBC). Am Fr 13.11. folgen die Erzeugerpreise. Stand 17:58: Die 10-jährige US-Rendite stieg um mehr als 14 Basispunkte auf 5,004 %, die 2-jährige um über 20 Basispunkte auf 4,755 % (CNBC). Dallas-Fed-Präsidentin Logan fordert mindestens zwei weitere Erhöhungen um je 25 Basispunkte, im Winter womöglich schneller (Investing.com). Goldman Sachs AM: Erhöhung im Dezember ist Basisfall, weitere 2027 möglich (CNBC). Stand 20:00: Laut Handelsblatt ist eine Erhöhung im Dezember nun voll eingepreist, rund 90 % rechnen mit 25 Basispunkten auf 4,0–4,25 %, rund 10 % mit 50 Basispunkten. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 07:00: Fed-Vizechefin Bowman sagte am Abend, bei der Inflation sei „noch Arbeit zu tun“, ohne ausdrücklich eine Erhöhung zu fordern (Fed, Reuters). Trading Economics nennt rund 91 % Wahrscheinlichkeit für eine Erhöhung im Dezember. 98 % unverändert, das gilt dem Termin selbst. Stand Mi 11:40: Laut CME FedWatch liegt die Wahrscheinlichkeit für 25 Basispunkte im Dezember bei 91,9 % (Vortag 84 %), für 50 Basispunkte bei 9,1 %; eine Pause ist ausgepreist (CNBC). 98 % unverändert, das gilt dem Termin selbst. Stand Mi 18:00: Chicago-Fed-Chef Goolsbee nannte den Oktober-Inflationsbericht (+0,4 % zum Vormonat) „grenzwertig beunruhigend“; Sorge machen ihm vor allem die Dienstleistungspreise (CNBC). 98 % unverändert, das gilt dem Termin selbst. Stand Sa 22:00: Boston-Fed-Chefin Susan Collins sprach sich am Sa für einen „stetigen, schrittweisen“ Weg kleiner Erhöhungen aus, gegen ein schnelleres Tempo; die Zinsen könnten im nächsten Jahr aber etwas höher steigen als gedacht. Reuters schreibt, allgemein werde im Dezember eine Erhöhung um 0,25 Punkte auf 4,00–4,25 % erwartet, danach eine weitere im Januar (Reuters). 98 % unverändert, das gilt dem Termin selbst. Stand So 08:30: Am Terminmarkt liegt die Wahrscheinlichkeit einer Erhöhung um 0,25 Punkte laut CME FedWatch bei 89,8 %, für 0,5 Punkte bei 10,2 % (FXBus, Stand 14.11.). 98 % unverändert, das gilt dem Termin selbst. Stand Mi 15:30: Gouverneur Waller wirbt offen für eine Erhöhung um 50 Basispunkte am 9.12. oder ein klares Signal für schnellere Schritte (CNBC, Investing.com). Der Termin selbst bleibt bei 98 %; offen ist nur, ob 25 oder 50 Basispunkte. Stand Mi 20:15: Das Oktober-Protokoll zeigt, dass „fast alle“ Mitglieder weitere Erhöhungen erwarten und „ein paar“ schon im Dezember einen größeren Schritt für möglich halten; auch Gouverneur Barr rechnet mit weiteren Erhöhungen (CNBC, Reuters). Laut Reuters wird für den 9.12. weithin eine Erhöhung um 0,25 Punkte auf 4,00–4,25 % erwartet. Der Termin selbst bleibt bei 98 %. Stand Mi 22:15: New-York-Fed-Chef Williams sprach um 20:30 auf einer Veranstaltung zu Investitionen in Gemeinden (New York Fed); Berichte über neue Aussagen zur Zinspolitik gibt es nicht. Am Di hatte er weitere Erhöhungen für wahrscheinlich, aber „drastische Schritte“ wie 0,5 Punkte für unnötig erklärt (Reuters). Kashkari spricht ab 22:15 auf einer KI-Konferenz; Aussagen dazu liegen noch nicht vor (Newsquawk). Laut CME-FedWatch ist eine Erhöhung um 0,25 Punkte im Dezember voll eingepreist, 0,5 Punkte nur mit kleiner Chance (CNBC). 98 % unverändert. Stand Do 12:25: Heute sprechen Cleveland-Fed-Chefin Hammack (14:50 Berlin, Finanzstabilitätskonferenz) und Vize-Chef Jefferson (15:25 Berlin, IMF-Diskussion); um 14:30 kommen Philly-Fed-Index und Erstanträge (Cleveland Fed, Federal Reserve, Goldesel). Aussagen liegen noch nicht vor. 98 % unverändert. Stand Do 20:25: Vize-Chef Jefferson sagte in Brasília, der Ölpreisschock wegen des Nahost-Konflikts treibe die Inflation und dämpfe zugleich die Nachfrage; bei Gefahr für die Inflationserwartungen sei eine stärkere Reaktion angebracht, einen Zinsschritt kündigte er nicht an (Federal Reserve). Am Markt fallen US-Aktien deutlich, Renditen zweijähriger Anleihen leicht tiefer bei 4,77 % (Reuters). 98 % unverändert. Stand Fr 12:20: Am Terminmarkt liegt die Wahrscheinlichkeit einer Zinserhöhung im Dezember laut CME FedWatch bei 98,4 %; Philadelphia-Fed-Chefin Paulson sagte am Do, die Fed müsse die Zinsen wieder anheben (Reuters). Stand Di 12:25: Laut CME FedWatch ist eine Zinserhöhung um 0,25 Prozentpunkte im Dezember voll eingepreist; eine kleine Wahrscheinlichkeit für 0,50 Punkte kam neu hinzu. New-York-Fed-Chef Williams sagte am Mo, die anhaltend hohe Inflation spreche für eine straffere Geldpolitik (Reuters). 98 % unverändert. Stand Mi 16:15: Nach den PCE-Daten (3,8 %, Kernrate 3,3 %) preisen Händler laut CME FedWatch eine Erhöhung im Dezember zu 97 % ein, eine weitere im Januar zu 63 % (Fox Business). 98 % unverändert, das gilt dem Termin selbst. Stand Do 12:20: CME FedWatch sieht eine Erhöhung um 0,25 Prozentpunkte am 9.12. zu rund 98 % (FXStreet). 98 % unverändert. Stand Fr 12:20: Laut Reuters preisen Händler eine Zinserhöhung im Dezember fast vollständig ein, nachdem das US-Wachstum im dritten Quartal deutlich höher ausfiel als zuerst gemeldet und die Inflation im Oktober weiter stieg (Reuters). 98 % unverändert.",
       "example": false,
       "sources": [
         {
@@ -904,6 +920,10 @@
         {
           "title": "FXStreet: Märkte preisen Fed-Zinserwartungen nach PCE neu (26.11.)",
           "url": "https://www.fxstreet.com/analysis/global-markets-re-pricing-fed-rate-expectations-amid-pce-inflation-concerns-202611260710"
+        },
+        {
+          "title": "Reuters via Investing.com: Nasdaq-Futures springen, KI-Werte erholen sich (27.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-surge-as-investors-return-from-holiday-5053052"
         }
       ]
     },
@@ -1726,7 +1746,7 @@
       ],
       "probabilityPct": 100,
       "impact": "niedrig",
-      "reasoning": "Am Thanksgiving-Donnerstag ist die Wall Street geschlossen, am Freitag endet der Handel um 13:00 New Yorker Zeit (19:00 Berlin) (CNBC). Dünner Handel kann Bewegungen verstärken (Fortune). Stand Do 16:25: Bestätigt, die Wall Street ist heute geschlossen, am Black Friday wird verkürzt gehandelt (finanzen.net). Stand Do 18:20: Ohne US-Handel schloss der Dax 2,08 % höher bei 25.215 Punkten, getragen von Tech-, Rohstoff- und Autowerten (dpa-AFX).",
+      "reasoning": "Am Thanksgiving-Donnerstag ist die Wall Street geschlossen, am Freitag endet der Handel um 13:00 New Yorker Zeit (19:00 Berlin) (CNBC). Dünner Handel kann Bewegungen verstärken (Fortune). Stand Do 16:25: Bestätigt, die Wall Street ist heute geschlossen, am Black Friday wird verkürzt gehandelt (finanzen.net). Stand Do 18:20: Ohne US-Handel schloss der Dax 2,08 % höher bei 25.215 Punkten, getragen von Tech-, Rohstoff- und Autowerten (dpa-AFX). Stand Fr 12:20: Vor dem verkürzten Handel liegen die Nasdaq-100-Futures rund 2,9 % im Plus, S&P-500-Futures rund 2 %, Dow-Futures 1,3 % (Reuters, 10:23 Berlin). Die Umsätze dürften dünn bleiben.",
       "sources": [
         {
           "title": "CNBC: Futures steigen nach Korrektur-Woche (Live, 22./23.11.)",
@@ -1743,40 +1763,10 @@
         {
           "title": "dpa-AFX via finanzen.net: Aktien Frankfurt Schluss – Dax erholt (26.11., 17:43)",
           "url": "https://www.finanzen.net/nachricht/aktien/aktien-frankfurt-schluss-dax-erholt-zeit-zum-durchatmen-dank-thanksgiving-16088942"
-        }
-      ]
-    },
-    {
-      "id": "evt-fed-beige-book-nov",
-      "title": "Fed: Konjunkturbericht Beige Book (veröffentlicht) – leichtes Wachstum in 8 von 12 Bezirken",
-      "date": "2026-11-25",
-      "time": "20:00",
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "fed",
-      "company": null,
-      "tickers": [
-        "SPCX",
-        "TSLA",
-        "RKLB",
-        "MRVL"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Veröffentlicht Mi 25.11. um 19:00 Uhr: Acht der zwölf Fed-Bezirke melden leichtes bis moderates Wachstum, vier keine Veränderung. Der Konsum ist kaum verändert, die Haushalte achten stark auf Preise; Autoverkäufe schwächer wegen hoher Spritpreise und Zinsen, Wohnimmobilien schwächer. Löhne zogen an, der Kostendruck bleibt hoch, die Beschäftigung stieg nur leicht (Federal Reserve, Forex Factory). Es ist das letzte Beige Book vor dem Zinsentscheid am 9.12.; nach der PCE-Inflation von 3,8 % gilt eine Zinserhöhung als fast sicher eingepreist (Yahoo). Der Bericht änderte daran nichts Sichtbares.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Federal Reserve: Beige Book (25.11.2026)",
-          "url": "https://www.federalreserve.gov/monetarypolicy/publications/beige-book-default.htm"
         },
         {
-          "title": "Forex Factory: US Beige Book – November 2026 (Zusammenfassung)",
-          "url": "https://www.forexfactory.com/news/1438687-us-beige-book-november-2026"
-        },
-        {
-          "title": "Yahoo Finance Live: 98 % Wahrscheinlichkeit für Zinserhöhung im Dezember (Mi 25.11.)",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
+          "title": "Reuters via Investing.com: Nasdaq-Futures springen, KI-Werte erholen sich (27.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-surge-as-investors-return-from-holiday-5053052"
         }
       ]
     },
@@ -1800,68 +1790,6 @@
         {
           "title": "Launch Library 2: kommende Starts (Stand Mi 25.11., 12:20)",
           "url": "https://ll.thespacedevs.com/2.3.0/launches/upcoming/"
-        }
-      ]
-    },
-    {
-      "id": "evt-fcc-starmind",
-      "title": "FCC genehmigt SpaceX bis zu 1 Million „Starmind“-Satelliten für Rechenzentren im All (verkündet Mi 25.11. am Abend)",
-      "date": "2026-11-25",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "external",
-      "category": "regulierung",
-      "company": "SpaceX",
-      "tickers": [
-        "SPCX"
-      ],
-      "probabilityPct": 100,
-      "impact": "hoch",
-      "reasoning": "Die US-Telekombehörde FCC hat am Mittwoch die erste Genehmigung in der US-Geschichte für eine Konstellation von Rechenzentren im All erteilt: SpaceX darf bis zu 1.000.000 „Starmind“-Rechenmodule im Orbit betreiben, mit Funkverbindungen als Reserve für Steuerung und Telemetrie (18,8–19,3 und 28,6–29,1 GHz); die Regeln gegen Weltraumschrott seien eingehalten (FCC-Mitteilung via Light Reading). FCC-Chef Brendan Carr nannte es „eine kühne neue Grenze für die Recheninfrastruktur“ (Communications Daily). Beantragt hatte SpaceX das im Januar (Reuters). Die Genehmigung ist ein Rahmen, kein Startplan – wie viele Satelliten wann fliegen, hängt an Starship. SPCX zog nach der Meldung von etwa 117,7 $ auf 120,6 $ an (Yahoo, 5-Minuten-Kurse). 100 %, weil amtlich verkündet.",
-      "example": false,
-      "sources": [
-        {
-          "title": "Light Reading: FCC genehmigt SpaceX bis zu 1 Mio. KI-Satelliten „Starmind“ (FCC-Mitteilung, Mi 25.11.)",
-          "url": "https://www.lightreading.com/satellite/fcc-greenlights-spacex-plan-to-deploy-up-to-1m-ai-satellites"
-        },
-        {
-          "title": "Reuters via SRN News: USA erlauben SpaceX 1 Mio. Satelliten für Rechenzentren im All (Mi 25.11.)",
-          "url": "https://srnnews.com/us-authorizes-spacex-to-deploy-1-million-satellites-for-data-centers-in-space/"
-        },
-        {
-          "title": "Communications Daily: FCC genehmigt SpaceX-Konstellation für Rechenzentren im Orbit – Carr (Mi 25.11.)",
-          "url": "https://communicationsdaily.com/topic/orbital_data_centers"
-        },
-        {
-          "title": "Reuters: SpaceX beantragt bei der FCC Satelliten-Rechenzentren (31.01.2026)",
-          "url": "https://www.reuters.com/business/aerospace-defense/spacex-seeks-fcc-nod-solar-powered-satellite-data-centers-ai-2026-01-31/"
-        },
-        {
-          "title": "Yahoo Finance: SPCX (Mi 25.11., 18:17)",
-          "url": "https://finance.yahoo.com/quote/SPCX/"
-        }
-      ]
-    },
-    {
-      "id": "evt-spcx-gpu-anleihen",
-      "title": "SpaceX: GPU-Finanzierung über rund 44 Mrd. $ platziert (Apollo, Goldman Sachs)",
-      "date": "2026-11-25",
-      "time": null,
-      "timezone": "Europe/Berlin",
-      "kind": "company",
-      "category": "finanzierung",
-      "company": "SpaceX",
-      "tickers": [
-        "SPCX"
-      ],
-      "probabilityPct": 100,
-      "impact": "mittel",
-      "reasoning": "Laut PitchBook hat SpaceX über die Zweckgesellschaft Saturn Funding Trust Anleihen über rund 44 Mrd. $ platziert, aufgestockt von den im Oktober angekündigten 40 Mrd. $. Apollo kauft damit Nvidia-„Vera-Rubin“-GPUs und vermietet sie über etwa fünf Jahre an SpaceX, für Grok und die Rechenzentren am Boden. Die größte Tranche (25,2 Mrd. $) zahlt 8,259 % Zins, Moody's bewertet mit A3. Das zeigt, wie teuer der Rechenausbau wird: Die Mietkosten belasten künftig den Cashflow.",
-      "example": false,
-      "sources": [
-        {
-          "title": "PitchBook: SpaceX prices $44B of GPU financing led by Apollo, Goldman Sachs (25.11.)",
-          "url": "https://pitchbook.com/news/articles/spacex-prices-44b-of-gpu-financing-led-by-apollo-goldman-sachs"
         }
       ]
     },
@@ -1935,6 +1863,39 @@
         {
           "title": "Benzinga: 142 Mio. SpaceX-Aktien für Trump Accounts (25.11.)",
           "url": "https://www.benzinga.com/markets/tech/26/11/63659561/elon-musk-spacex-18-billion-shares-trump-accounts-heres-who-benefits"
+        }
+      ]
+    },
+    {
+      "id": "evt-china-boersenstuetze",
+      "title": "China: Staatsrat verspricht stärkere Stützung der Börsen – Chip- und KI-Werte springen",
+      "date": "2026-11-27",
+      "time": null,
+      "timezone": "Europe/Berlin",
+      "kind": "external",
+      "category": "politik",
+      "company": "China / Staatsrat",
+      "tickers": [
+        "SPCX",
+        "TSLA",
+        "MRVL"
+      ],
+      "probabilityPct": 100,
+      "impact": "mittel",
+      "reasoning": "Ein Treffen des Staatsrats unter Ministerpräsident Li Qiang verlangte, dass staatliche Investoren wie Central Huijin die gefallenen Börsen stärker stützen und für genug Liquidität sorgen; langfristiges Geld soll mehr in Aktien fließen (Reuters, Xinhua). Der Shanghaier Tech-Index STAR 50 stieg um rund 12 %, die Chip-Indizes um mehr als 16 %, der Hang Seng Tech um 6 % (Reuters). Das stützt heute die weltweite Erholung der Chip- und KI-Werte; die US-Futures liegen deutlich im Plus (Reuters). Ob das hält, hängt laut Everbright auch an Zöllen und US-Chipbeschränkungen. Bereits geschehen, deshalb 100 %.",
+      "example": false,
+      "sources": [
+        {
+          "title": "Reuters via Investing.com: China-Aktien und Yuan steigen nach Stützungszusage (27.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/china-stocks-yuan-rally-after-beijing-vows-stronger-market-support-5053026"
+        },
+        {
+          "title": "CNBC: Chinas Chipwerte mit größtem Tagesgewinn (27.11.)",
+          "url": "https://www.cnbc.com/2026/11/27/china-chip-stocks-beijing-market-support.html"
+        },
+        {
+          "title": "Reuters via Investing.com: Nasdaq-Futures springen, KI-Werte erholen sich (27.11.)",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-surge-as-investors-return-from-holiday-5053052"
         }
       ]
     }
