@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "example": false,
-  "asOf": "2026-11-27T13:22:49.275Z",
+  "asOf": "2026-11-27T20:47:19.130Z",
   "timezone": "Europe/Berlin",
   "everyMin": 15,
   "window": "Mo–Fr 14:00–22:00",
@@ -9,13 +9,13 @@
   "symbols": {
     "SPCX": {
       "hour": {
-        "hour": 14,
-        "n": 5,
-        "up": 2,
-        "down": 2,
-        "share": 40,
-        "avgUp": 1.45,
-        "avgDown": -2.23
+        "hour": 21,
+        "n": 0,
+        "up": 0,
+        "down": 0,
+        "share": null,
+        "avgUp": null,
+        "avgDown": null
       },
       "ranges": {
         "5 Min": {
@@ -332,13 +332,13 @@
     },
     "TSLA": {
       "hour": {
-        "hour": 14,
-        "n": 5,
-        "up": 1,
-        "down": 2,
-        "share": 20,
-        "avgUp": 0.49,
-        "avgDown": -0.72
+        "hour": 21,
+        "n": 0,
+        "up": 0,
+        "down": 0,
+        "share": null,
+        "avgUp": null,
+        "avgDown": null
       },
       "ranges": {
         "5 Min": {
@@ -625,7 +625,7 @@
     },
     "RKLB": {
       "hour": {
-        "hour": 14,
+        "hour": 21,
         "n": 3,
         "up": 0,
         "down": 0,
@@ -866,13 +866,13 @@
     },
     "MRVL": {
       "hour": {
-        "hour": 14,
-        "n": 5,
-        "up": 4,
-        "down": 1,
-        "share": 80,
-        "avgUp": 1.72,
-        "avgDown": -1.04
+        "hour": 21,
+        "n": 0,
+        "up": 0,
+        "down": 0,
+        "share": null,
+        "avgUp": null,
+        "avgDown": null
       },
       "ranges": {
         "5 Min": {
