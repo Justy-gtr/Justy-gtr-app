@@ -1,153 +1,145 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-26T14:40:00+01:00",
-  "nextRun": "2026-11-27T07:00:00+01:00",
+  "updatedAt": "2026-11-27T07:20:00+01:00",
+  "nextRun": "2026-11-27T07:55:00+01:00",
   "long": [
     {
-      "name": "Halfords Group",
-      "ticker": "HFD",
-      "country": "GB",
-      "exchange": "London",
-      "priceEur": 3.42,
-      "hint": "London +17,2 % nach Halbjahreszahlen und angehobener Gewinnprognose",
-      "bullets": [
-        "Die Aktie stand mittags bei 286 Pence, 17,2 % im Plus, umgerechnet rund 3,42 €.",
-        "Der bereinigte Vorsteuergewinn stieg im Halbjahr um 66 % auf 39,0 Mio. Pfund, der Umsatz um 6,7 % auf 953,3 Mio. Pfund.",
-        "Die Jahresprognose liegt jetzt bei 60 bis 65 Mio. Pfund, am oberen Ende der alten Spanne, dazu eine höhere Zwischendividende von 3,5 Pence."
-      ],
-      "sources": [
-        {
-          "title": "MLQ.ai: Halfords +17 %, ams OSRAM +10,8 % – Europas Börsen am Mittag (26.11.)",
-          "url": "https://mlq.ai/news/european-stocks-hold-16-gain-at-midday-as-halfords-jumps-17/"
-        },
-        {
-          "title": "Halfords Group: Investor Relations",
-          "url": "https://www.halfordscompany.com/investors/"
-        },
-        {
-          "title": "EZB: Euro-Referenzkurse (25.11.: USD 1,0935, GBP 0,8373, CHF 0,9085, NOK 10,7778)",
-          "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
-        }
-      ]
-    },
-    {
-      "name": "ams OSRAM",
-      "ticker": "AMS",
-      "country": "AT",
-      "exchange": "SIX Zürich",
-      "priceEur": 15.74,
-      "hint": "Zürich +10,8 % nach Einstieg von Samsung Display mit 9,1 %",
-      "bullets": [
-        "Die Aktie stand mittags bei 14,30 Franken, 10,8 % im Plus, umgerechnet rund 15,74 €.",
-        "Samsung Display übernimmt für rund 210 Mio. € einen Anteil von 9,1 % im Rahmen einer microLED-Partnerschaft.",
-        "Teil der Vereinbarung ist reservierte Kapazität im wenig ausgelasteten Werk Kulim 2 in Malaysia; schon am Mittwoch war die Aktie stark gestiegen."
-      ],
-      "sources": [
-        {
-          "title": "MLQ.ai: Halfords +17 %, ams OSRAM +10,8 % – Europas Börsen am Mittag (26.11.)",
-          "url": "https://mlq.ai/news/european-stocks-hold-16-gain-at-midday-as-halfords-jumps-17/"
-        },
-        {
-          "title": "EZB: Euro-Referenzkurse (25.11.: USD 1,0935, GBP 0,8373, CHF 0,9085, NOK 10,7778)",
-          "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
-        }
-      ]
-    },
-    {
-      "name": "Lumentum",
-      "ticker": "LITE",
+      "name": "Vera Therapeutics",
+      "ticker": "VERA",
       "country": "US",
-      "exchange": "Lang & Schwarz",
-      "priceEur": 450.98,
-      "hint": "Deutschland +13,9 % zum Xetra-Schluss, holt die späte Nasdaq-Erholung nach",
+      "exchange": "Nasdaq",
+      "priceEur": 31.35,
+      "hint": "Nachbörslich +16,7 %, weil die FDA das Vertex-Konkurrenzmittel später prüft",
       "bullets": [
-        "Bei Lang & Schwarz stand die Aktie um 8:35 Uhr bei 450,98 €, 13,91 % über dem Xetra-Schluss vom Mittwoch (395,90 €).",
-        "Der Xetra-Schluss lag vor der späten Erholung der Nasdaq, die ihren Tagesverlust von fast 5 % auf 0,6 % eindämmte.",
-        "Lumentum liefert Laser und optische Module für KI-Rechenzentren; die Wall Street ist heute wegen Thanksgiving zu, gehandelt wird nur in Europa."
+        "Nach US-Schluss am Mittwoch sprang die Aktie um 16,7 % auf 34,43 $, umgerechnet rund 31,35 €; regulär hatte sie bei 29,50 $ geschlossen.",
+        "Die FDA verschiebt die Entscheidung über das Vertex-Konkurrenzmittel Povetacicept vom 30. November auf spätestens 28. Februar 2027.",
+        "Veras Trutakna bleibt damit länger das einzige zugelassene Mittel dieses Wirkprinzips bei IgA-Nephropathie; heute ist der erste reguläre Handel nach der Meldung."
       ],
       "sources": [
         {
-          "title": "AD HOC NEWS: Lumentum-Aktie bei 450,98 Euro, 13,91 % höher (26.11., 08:37)",
-          "url": "https://www.ad-hoc-news.de/boerse/news/vorboerse/lumentum-aktie-bei-450-98-euro-13-91-prozent-hoeher/70556706"
+          "title": "24/7 Wall St.: Vera Therapeutics soars after hours as FDA delays Vertex's rival drug (26.11.)",
+          "url": "https://247wallst.com/investing/2026/11/26/vera-therapeutics-stock-soars-after-hours-as-the-fda-delays-vertexs-rival-kidney-drug/"
         },
         {
-          "title": "onvista: Dax erholt sich kräftig, KI-Profiteure gefragt (26.11.)",
-          "url": "https://www.onvista.de/news/2026/11-26-dax-erholt-sich-kraeftig-ki-profiteure-wieder-gefragt-0-19-26580721"
+          "title": "Yahoo Finance: EUR-Kurse 27.11., 07:14 (USD/EUR 0,9106, HKD/EUR 0,1163)",
+          "url": "https://finance.yahoo.com/quote/USDEUR%3DX/"
+        }
+      ]
+    },
+    {
+      "name": "LiveWire Group",
+      "ticker": "LVWR",
+      "country": "US",
+      "exchange": "NYSE",
+      "priceEur": 2.0,
+      "hint": "Squeeze-Lauf: +93,9 % am Montag, nachbörslich weitere +12,8 %",
+      "bullets": [
+        "Die E-Motorrad-Tochter von Harley-Davidson hat sich am 24.11. ohne Firmennachricht fast verdoppelt und am Mittwoch weiter zugelegt.",
+        "Nachbörslich ging es um weitere 12,8 % auf 2,20 $, umgerechnet rund 2,00 €.",
+        "Der frei handelbare Anteil liegt laut StockSetups bei nur 4,8 %, der Short-Anteil am Volumen bei 61 %; solche Läufe können aber auch schnell kippen."
+      ],
+      "sources": [
+        {
+          "title": "StockSetups: After-Hours Movers 25.11. – POM, NCPL, VERA, LVWR",
+          "url": "https://stocksetups.com/articles/after-hours-stock-movers-2026-11-25"
+        },
+        {
+          "title": "Yahoo Finance: EUR-Kurse 27.11., 07:14 (USD/EUR 0,9106, HKD/EUR 0,1163)",
+          "url": "https://finance.yahoo.com/quote/USDEUR%3DX/"
+        }
+      ]
+    },
+    {
+      "name": "Ingenic Semiconductor",
+      "ticker": "3223",
+      "country": "CN",
+      "exchange": "Hongkong",
+      "priceEur": 8.87,
+      "hint": "Hongkong +11 % im China-Tech-Rally, A-Aktie in Shenzhen fast +14 %",
+      "bullets": [
+        "Die H-Aktie steht in Hongkong bei 76,25 HK$, 11,2 % im Plus, umgerechnet rund 8,87 €; die A-Aktie in Shenzhen schloss fast 14 % höher.",
+        "Chinas Staatsrat hat neue Stützungsmaßnahmen für den Aktienmarkt angekündigt; der ChiNext-Index stieg über 8 %, der Hang Seng Tech gut 5 %.",
+        "Rückenwind kommt vom Speicherchip-Geschäft: Im dritten Quartal stieg der Nettogewinn auf rund 1,42 Mrd. Yuan, etwa das 26-Fache des Vorjahres."
+      ],
+      "sources": [
+        {
+          "title": "RTHK: Hang Seng +1,8 %, Tech-Index +5,3 %, ChiNext +8,2 % (27.11., 13:19 HKT)",
+          "url": "https://news.rthk.hk/rthk/ch/component/k2/1879482-20261127.htm"
+        },
+        {
+          "title": "Longbridge: Ingenic Q3-Gewinn 26-fach (28.10.)",
+          "url": "https://longbridge.com/en/news/303309937"
+        },
+        {
+          "title": "Yahoo Finance: Ingenic 3223.HK",
+          "url": "https://finance.yahoo.com/quote/3223.HK/"
+        },
+        {
+          "title": "Yahoo Finance: EUR-Kurse 27.11., 07:14 (USD/EUR 0,9106, HKD/EUR 0,1163)",
+          "url": "https://finance.yahoo.com/quote/USDEUR%3DX/"
         }
       ]
     }
   ],
   "short": [
     {
-      "name": "Bachem",
-      "ticker": "BANB",
-      "country": "CH",
-      "exchange": "SIX Zürich",
-      "priceEur": 73.31,
-      "hint": "Zürich −10,7 % nach Kapitalmarkttag mit Zielen bis 2031",
-      "bullets": [
-        "Die Aktie fiel auf 66,60 Franken, 10,7 % im Minus, umgerechnet rund 73,31 €; das Tagestief lag bei 65,10 Franken.",
-        "Bachem stellte bis 2031 ein jährliches Umsatzwachstum von 15 bis 18 % und eine EBITDA-Marge von 33 bis 35 % in Aussicht, was dem Markt zu wenig war.",
-        "Zugleich sollen 2027 bis 2031 jährlich 25 bis 30 % des Umsatzes in neue Kapazität fließen, teils über eine mögliche Anleihe."
-      ],
-      "sources": [
-        {
-          "title": "Investing.com: Bachem-Aktie bricht nach Strategie bis 2031 zweistellig ein (26.11., 10:13)",
-          "url": "https://de.investing.com/news/stock-market-news/bachemaktie-bricht-nach-vorstellung-der-strategie-bis-2031-zweistellig-ein-93CH-3787641"
-        },
-        {
-          "title": "EZB: Euro-Referenzkurse (25.11.: USD 1,0935, GBP 0,8373, CHF 0,9085, NOK 10,7778)",
-          "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
-        }
-      ]
-    },
-    {
-      "name": "Norse Atlantic",
-      "ticker": "NORSE",
-      "country": "NO",
-      "exchange": "Oslo",
-      "priceEur": 0.0035,
-      "hint": "Flugbetrieb eingestellt, Insolvenzantrag droht ohne kurzfristige Finanzierung",
-      "bullets": [
-        "Die Airline hat alle Flüge ausgesetzt und will Insolvenz anmelden, falls keine Notfinanzierung zustande kommt.",
-        "Die Aktie fiel früh um bis zu 18,5 % und sprang danach spekulativ auf 0,038 Kronen (+17,1 %), umgerechnet rund 0,0035 €.",
-        "Gespräche über eine Übernahme mit Refinanzierung laufen, laut Management ohne Garantie auf eine Lösung."
-      ],
-      "sources": [
-        {
-          "title": "Investing.com: Norse Atlantic – spekulative Kurserholung trotz drohender Pleite (26.11., 10:54)",
-          "url": "https://de.investing.com/news/stock-market-news/norse-atlantic-spekulative-kurserholung-trotz-drohender-pleite-93CH-3787671"
-        },
-        {
-          "title": "Cision: Norse Atlantic ASA – Update on financial situation, suspension of operations",
-          "url": "https://news.cision.com/norse-atlantic-airways-as/r/norse-atlantic-asa--update-on-financial-situation---suspension-of-operations,c4429581"
-        },
-        {
-          "title": "EZB: Euro-Referenzkurse (25.11.: USD 1,0935, GBP 0,8373, CHF 0,9085, NOK 10,7778)",
-          "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
-        }
-      ]
-    },
-    {
-      "name": "Plug Power",
-      "ticker": "PLUG",
+      "name": "Vertex Pharmaceuticals",
+      "ticker": "VRTX",
       "country": "US",
       "exchange": "Nasdaq",
-      "priceEur": 0.97,
-      "hint": "+14,3 % am Mittwoch ohne Firmenmeldung, UBS senkte das Kursziel auf 1,15 $",
+      "priceEur": 488.5,
+      "hint": "FDA verschiebt Entscheidung zu Povetacicept, nachbörslich −7,2 %",
       "bullets": [
-        "Am Mittwoch schloss die Aktie 14,34 % höher bei 1,065 $, umgerechnet rund 0,97 €, ohne konkrete Unternehmensmeldung.",
-        "Am selben Tag senkte UBS das Kursziel von 4,00 auf 1,15 $, die Einstufung blieb „Neutral“.",
-        "Der Quartalsgewinn kam vor allem aus Bewertungsgewinnen auf Wandelanleihen, die freien Mittel schrumpften bis Ende September auf rund 134 Mio. $."
+        "Nachbörslich am Mittwoch fiel die Aktie um 7,2 % auf 523,49 $; auf Xetra schloss sie am Donnerstag bei 488,50 €.",
+        "Die FDA wertet eine Nachreichung als wesentliche Änderung und entscheidet über das Nierenmittel Povetacicept erst bis spätestens 28. Februar 2027.",
+        "Heute ist der erste reguläre US-Handel nach der Meldung, wegen Black Friday nur bis 19:00 Uhr deutscher Zeit."
       ],
       "sources": [
         {
-          "title": "finanzen.net: Plug Power-Aktie springt an – was gegen einen Befreiungsschlag spricht (26.11., 14:15)",
-          "url": "https://www.finanzen.net/nachricht/aktien/cash-verbrauch-im-fokus-plug-power-aktie-springt-an-was-gegen-einen-echten-befreiungsschlag-spricht-00-16087953"
+          "title": "Vertex: Verlängerung des PDUFA-Termins für Povetacicept",
+          "url": "https://investors.vrtx.com/news-releases/news-release-details/vertex-announces-extension-pdufa-target-action-date-three-months"
         },
         {
-          "title": "EZB: Euro-Referenzkurse (25.11.: USD 1,0935, GBP 0,8373, CHF 0,9085, NOK 10,7778)",
-          "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+          "title": "WiseView: Vertex nachbörslich −7,20 % (25.11.)",
+          "url": "https://wiseview.ai/news/earnings-after-the-bell-2026-11-25"
+        }
+      ]
+    },
+    {
+      "name": "Palo Alto Networks",
+      "ticker": "PANW",
+      "country": "US",
+      "exchange": "Nasdaq",
+      "priceEur": 315.0,
+      "hint": "Klage eines Ex-Managers wegen aufgeblähter Umsätze, nachbörslich −4,4 %",
+      "bullets": [
+        "Nachbörslich am Mittwoch rutschte die Aktie um rund 4,4 % auf 340,50 $; in Frankfurt lag sie am Donnerstagabend bei 315,00 €.",
+        "Ein früherer Regionalchef wirft dem Management in einer Klage vor, Umsätze über vorgezogene Händler-Bestellungen aufgebläht zu haben.",
+        "Palo Alto nennt die Vorwürfe haltlos; nach rund 93 % Plus seit Jahresanfang ist die Fallhöhe aber groß."
+      ],
+      "sources": [
+        {
+          "title": "Yahoo Finance/Stocktwits: PANW slips after-hours on accounting allegations (25.11.)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/panw-stock-slips-hours-former-232552463.html"
+        }
+      ]
+    },
+    {
+      "name": "Energiekontor",
+      "ticker": "EKT",
+      "country": "DE",
+      "exchange": "Xetra",
+      "priceEur": 18.12,
+      "hint": "BaFin prüft Bilanzen, Aktie gestern zeitweise −10,4 %",
+      "bullets": [
+        "Die BaFin hat am 26.11. eine anlassbezogene Prüfung des Abschlusses 2025 und des Halbjahres 2026 eingeleitet.",
+        "Im Fokus stehen aktive latente Steuern auf Verlustvorträge; die Aktie fiel zeitweise um 10,4 % und schloss auf Xetra bei 18,12 €.",
+        "Auslöser war die Gewinnwarnung vom August mit 5 bis 10 statt 40 bis 60 Mio. € Vorsteuergewinn wegen verzögerter Netzanschlüsse in Schottland."
+      ],
+      "sources": [
+        {
+          "title": "onvista/Reuters: Energiekontor – BaFin prüft nach Gewinnwarnung Verlustvorträge (26.11.)",
+          "url": "https://www.onvista.de/news/2026/11-26-energiekontor-bafin-prueft-nach-gewinnwarnung-verlustvortraege-0-20-26580955"
         }
       ]
     }
