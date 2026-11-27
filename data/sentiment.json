@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-27T17:41:24Z",
+  "updatedAt": "2026-11-27T18:11:19Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
       "postsCount": 25,
-      "reason": "SpaceX hält sich um 132 $. Themen: Fusionsgerüchte mit Tesla und Optionswetten auf steigende Kurse, aber auch Kritik an Gaskraftwerken für Rechenzentren.",
+      "reason": "Nach Handelsschluss geht es um Musks SpaceX-Aktien für Trump Accounts (auch Spott) und Fusionsgerüchte mit Tesla. Dazwischen viel Spam.",
       "sources": [
         {
-          "title": "@DarkFlowAlert auf X (27.11., 18:40)",
-          "url": "https://x.com/DarkFlowAlert/status/2126370501094154547"
+          "title": "@CuriousPejjy auf X (27.11., 19:09)",
+          "url": "https://x.com/CuriousPejjy/status/2126377935045366238"
         },
         {
-          "title": "@0xtechquity auf X (27.11., 18:38)",
-          "url": "https://x.com/0xtechquity/status/2126369964743409915"
+          "title": "@johnforchione auf X (27.11., 19:09)",
+          "url": "https://x.com/johnforchione/status/2126377970126524576"
         },
         {
-          "title": "@Tmmills01 auf X (27.11., 18:40)",
-          "url": "https://x.com/Tmmills01/status/2126370541795754094"
+          "title": "@enrichtrades auf X (27.11., 19:01)",
+          "url": "https://x.com/enrichtrades/status/2126375997851488720"
         }
       ],
-      "updatedAt": "2026-11-27T17:41:24Z"
+      "updatedAt": "2026-11-27T18:11:19Z"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 60,
-      "postsCount": 25,
-      "reason": "Tesla hält das Tagesplus von rund 5 % um 400 $. Trader zeigen Gewinne, dazu Spekulation über eine Fusion mit SpaceX und Debatten über Autopilot.",
+      "score": 65,
+      "postsCount": 22,
+      "reason": "Tesla schließt genau bei 400 $, rund 5 % im Plus. Viele freuen sich, manche spekulieren über eine Fusionsmeldung mit SpaceX am Wochenende.",
       "sources": [
         {
-          "title": "@Vol888 auf X (27.11., 18:40)",
-          "url": "https://x.com/Vol888/status/2126370692002390243"
+          "title": "@BoBbyPleWniaK auf X (27.11., 19:07)",
+          "url": "https://x.com/BoBbyPleWniaK/status/2126377286161387615"
         },
         {
-          "title": "@0xtechquity auf X (27.11., 18:38)",
-          "url": "https://x.com/0xtechquity/status/2126369964743409915"
+          "title": "@MentoviaX auf X (27.11., 19:10)",
+          "url": "https://x.com/MentoviaX/status/2126378249085403233"
         },
         {
-          "title": "@M44_1RJ auf X (27.11., 18:38)",
-          "url": "https://x.com/M44_1RJ/status/2126369982263291918"
+          "title": "@OptionsPro101 auf X (27.11., 19:08)",
+          "url": "https://x.com/OptionsPro101/status/2126377573101806053"
         }
       ],
-      "updatedAt": "2026-11-27T17:41:24Z"
+      "updatedAt": "2026-11-27T18:11:19Z"
     },
     "RKLB": {
-      "mood": "gemischt",
-      "score": 25,
+      "mood": "gut",
+      "score": 55,
       "postsCount": 25,
-      "reason": "Thema ist der 101. Electron-Start für Synspective und eine FCC-Erwähnung. Chart-Accounts sehen eine Unterstützungszone, manche bleiben skeptisch.",
+      "reason": "Rocket Lab steigt rund 7 % wieder über 50 $. Gelobt werden der 101. Electron-Start und die Wochenkerze, die über der Trendlinie schließt.",
       "sources": [
         {
-          "title": "@Stellarixorine auf X (27.11., 18:25)",
-          "url": "https://x.com/Stellarixorine/status/2126366813026226473"
+          "title": "@ClaudiaGadelha_ auf X (27.11., 19:06)",
+          "url": "https://x.com/ClaudiaGadelha_/status/2126377204271796704"
         },
         {
-          "title": "@Fibonacci_TA auf X (27.11., 18:30)",
-          "url": "https://x.com/Fibonacci_TA/status/2126367954803831283"
+          "title": "@RockyTSTH auf X (27.11., 19:05)",
+          "url": "https://x.com/RockyTSTH/status/2126376971378856432"
         },
         {
-          "title": "@mottbox_ auf X (27.11., 18:33)",
-          "url": "https://x.com/mottbox_/status/2126368893434237359"
+          "title": "@xenomecha auf X (27.11., 19:05)",
+          "url": "https://x.com/xenomecha/status/2126376801584967743"
         }
       ],
-      "updatedAt": "2026-11-27T17:41:24Z"
+      "updatedAt": "2026-11-27T18:11:19Z"
     }
   }
 }
