@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-27T16:09:05Z",
+  "updatedAt": "2026-11-27T17:04:35Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 50,
+      "score": 60,
       "postsCount": 25,
-      "reason": "Rückenwind vom FCC-Chef für Rechenzentren im All. Neu im Gespräch: geplanter 100-Mrd.-$-Starbase in Louisiana mit 10 Starship-Rampen. Kurs um 131 $.",
+      "reason": "SpaceX-Aktie zieht mit der Tech-Rally an. Viel Gesprächsstoff: Musks Aktien-Spenden für Trump Accounts und die FCC-Zusage für Starmind-Satelliten.",
       "sources": [
         {
-          "title": "@allday_stocks auf X (27.11., 16:37)",
-          "url": "https://x.com/allday_stocks/status/2126339580576112780"
+          "title": "@PowerLunch auf X (27.11., 18:03)",
+          "url": "https://x.com/PowerLunch/status/2126361202200601049"
         },
         {
-          "title": "@TeslaLarry auf X (27.11., 17:02)",
-          "url": "https://x.com/TeslaLarry/status/2126346000084398110"
+          "title": "@CyberPlayGround auf X (27.11., 18:03)",
+          "url": "https://x.com/CyberPlayGround/status/2126361219451724207"
         },
         {
-          "title": "@donaldjdean auf X (27.11., 16:57)",
-          "url": "https://x.com/donaldjdean/status/2126344577871388930"
+          "title": "@merikuh auf X (27.11., 18:03)",
+          "url": "https://x.com/merikuh/status/2126361257804730368"
         }
       ],
-      "updatedAt": "2026-11-27T16:09:05Z"
+      "updatedAt": "2026-11-27T17:04:35Z"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 60,
-      "postsCount": 24,
-      "reason": "Tesla nähert sich 400 $ und gilt als stärkster Wert der Magnificent 7. Große Accounts jubeln, dazu Chart-Posts und Debatten über eine SpaceX-Fusion.",
+      "score": 70,
+      "postsCount": 25,
+      "reason": "Tesla knackt im verkürzten Black-Friday-Handel die 400 $ und liegt über 5 % im Plus. Viele Trader feiern, dazu Fusionsfantasie mit SpaceX.",
       "sources": [
         {
-          "title": "@EvasTeslaSPlaid auf X (27.11., 16:56)",
-          "url": "https://x.com/EvasTeslaSPlaid/status/2126344412150251586"
+          "title": "@WOLF_Financial auf X (27.11., 18:02)",
+          "url": "https://x.com/WOLF_Financial/status/2126361012920275005"
         },
         {
-          "title": "@MentoviaX auf X (27.11., 16:58)",
-          "url": "https://x.com/MentoviaX/status/2126344978863382959"
+          "title": "@MentoviaX auf X (27.11., 18:02)",
+          "url": "https://x.com/MentoviaX/status/2126360905520669112"
         },
         {
-          "title": "@JustinPulitzer auf X (27.11., 16:41)",
-          "url": "https://x.com/JustinPulitzer/status/2126340590639907184"
+          "title": "@BullflowIO auf X (27.11., 18:00)",
+          "url": "https://x.com/BullflowIO/status/2126360600066585056"
         }
       ],
-      "updatedAt": "2026-11-27T16:09:05Z"
+      "updatedAt": "2026-11-27T17:04:35Z"
     },
     "RKLB": {
-      "mood": "gut",
-      "score": 55,
-      "postsCount": 25,
-      "reason": "Weiter Lob für den Rekord-Start Nr. 101. Neu: ein Auftrag von Northrop Grumman über 1,2 Mio. $ und eine Erwähnung durch den FCC-Chef.",
+      "mood": "gemischt",
+      "score": 20,
+      "postsCount": 24,
+      "reason": "Ruhiger Tag: Chart-Debatte zwischen Bodenbildung und Schwäche, Lob für 22 Electron-Starts im Jahr. Viele Spam-Posts, kaum echte News.",
       "sources": [
         {
-          "title": "@mottbox_ auf X (27.11., 17:00)",
-          "url": "https://x.com/mottbox_/status/2126345318463684778"
+          "title": "@MarketMaestro1 auf X (27.11., 18:01)",
+          "url": "https://x.com/MarketMaestro1/status/2126360759185879239"
         },
         {
-          "title": "@FranciscoSpace5 auf X (27.11., 16:48)",
-          "url": "https://x.com/FranciscoSpace5/status/2126342359126565217"
+          "title": "@XaviatriX auf X (27.11., 17:56)",
+          "url": "https://x.com/XaviatriX/status/2126359431394848909"
         },
         {
-          "title": "@Khalifa1 auf X (27.11., 16:17)",
-          "url": "https://x.com/Khalifa1/status/2126334563094061487"
+          "title": "@SpaceSector001 auf X (27.11., 17:57)",
+          "url": "https://x.com/SpaceSector001/status/2126359820869755263"
         }
       ],
-      "updatedAt": "2026-11-27T16:09:05Z"
+      "updatedAt": "2026-11-27T17:04:35Z"
     }
   }
 }
