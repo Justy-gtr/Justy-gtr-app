@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-27T15:04:40Z",
+  "updatedAt": "2026-11-27T15:39:01Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 45,
+      "score": 50,
       "postsCount": 25,
-      "reason": "Hauptthema bleibt das Aktien-Geschenk an US-Kinder, Musk ruft zum Halten auf. Dazu FCC-Okay für Daten-Satelliten. Dämpfer: Mexiko will Flüge regeln.",
+      "reason": "FCC-Chef Carr will, dass SpaceX bei Rechenzentren im All „volle Kraft voraus“ macht. Dazu Aktien-Geschenk an US-Kinder und Lob von Ron Baron und ARK.",
       "sources": [
         {
-          "title": "@tslaming auf X (27.11., 15:42)",
-          "url": "https://x.com/tslaming/status/2126325862870253841"
+          "title": "@allday_stocks auf X (27.11., 16:37)",
+          "url": "https://x.com/allday_stocks/status/2126339580576112780"
         },
         {
-          "title": "@Schulz_Research auf X (27.11., 15:49)",
-          "url": "https://x.com/Schulz_Research/status/2126327620711354671"
+          "title": "@TopStockAlerts1 auf X (27.11., 16:31)",
+          "url": "https://x.com/TopStockAlerts1/status/2126338214185078855"
         },
         {
-          "title": "@MexSolidarity auf X (27.11., 15:13)",
-          "url": "https://x.com/MexSolidarity/status/2126318374900662585"
+          "title": "@growthrapidly auf X (27.11., 16:29)",
+          "url": "https://x.com/growthrapidly/status/2126337526361120835"
         }
       ],
-      "updatedAt": "2026-11-27T15:04:40Z"
+      "updatedAt": "2026-11-27T15:39:01Z"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 40,
+      "score": 50,
       "postsCount": 25,
-      "reason": "Tesla notiert rund 2,5 % im Plus bei etwa 390 $. Gesprochen wird über EMAG-Übernahme, Fundamente für die Optimus-Fertigung in Texas und den AI5-Chip.",
+      "reason": "Tesla gilt heute als stärkster Wert der Magnificent 7 mit V-förmiger Erholung. Dazu Cybercab-Rekord in Texas und Debatten über eine Fusion mit SpaceX.",
       "sources": [
         {
-          "title": "@TheElonomist auf X (27.11., 15:57)",
-          "url": "https://x.com/TheElonomist/status/2126329606273970470"
+          "title": "@MentoviaX auf X (27.11., 16:10)",
+          "url": "https://x.com/MentoviaX/status/2126332933396947035"
         },
         {
-          "title": "@TeslaOracle_com auf X (27.11., 15:51)",
-          "url": "https://x.com/TeslaOracle_com/status/2126328146777804972"
+          "title": "@darkminer auf X (27.11., 16:35)",
+          "url": "https://x.com/darkminer/status/2126339243123630224"
         },
         {
-          "title": "@ttvresearch auf X (27.11., 15:52)",
-          "url": "https://x.com/ttvresearch/status/2126328189387444640"
+          "title": "@sspencer_smb auf X (27.11., 16:24)",
+          "url": "https://x.com/sspencer_smb/status/2126336248029790281"
         }
       ],
-      "updatedAt": "2026-11-27T15:04:40Z"
+      "updatedAt": "2026-11-27T15:39:01Z"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 50,
+      "score": 55,
       "postsCount": 25,
-      "reason": "Große Accounts feiern den 101. Electron-Start: 22 Starts in 2026 sind ein neuer Jahresrekord. Dazu Chart-Posts über eine mögliche Bodenbildung.",
+      "reason": "Nach dem 101. Electron-Start und dem Jahresrekord von 22 Starts stieg RKLB vorbörslich über 5 %. Viel Lob für die verlässliche Startfrequenz.",
       "sources": [
+        {
+          "title": "@Khalifa1 auf X (27.11., 16:17)",
+          "url": "https://x.com/Khalifa1/status/2126334563094061487"
+        },
+        {
+          "title": "@Small_Cap_Gems auf X (27.11., 16:09)",
+          "url": "https://x.com/Small_Cap_Gems/status/2126332645948989499"
+        },
         {
           "title": "@ClaudiaGadelha_ auf X (27.11., 15:24)",
           "url": "https://x.com/ClaudiaGadelha_/status/2126321324826202408"
-        },
-        {
-          "title": "@BelangerTrading auf X (27.11., 15:17)",
-          "url": "https://x.com/BelangerTrading/status/2126319389104353601"
-        },
-        {
-          "title": "@hitborg auf X (27.11., 15:28)",
-          "url": "https://x.com/hitborg/status/2126322374760907027"
         }
       ],
-      "updatedAt": "2026-11-27T15:04:40Z"
+      "updatedAt": "2026-11-27T15:39:01Z"
     }
   }
 }
