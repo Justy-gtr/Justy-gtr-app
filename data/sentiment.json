@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-27T20:09:38Z",
+  "updatedAt": "2026-11-27T20:33:48Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
-      "postsCount": 24,
-      "reason": "Abends dreht sich viel um SpaceX-Aktien für US-Kinder und Rechnungen zum Tauschverhältnis bei einer Tesla-Fusion. Dazu Lob für die Raketentechnik.",
+      "postsCount": 25,
+      "reason": "Viele bedanken sich bei Michael Dell und SpaceX für Aktien in Trump Accounts, andere streiten politisch darüber. Kaum Kurs-News am Abend.",
       "sources": [
         {
-          "title": "@Tina4Humanity auf X (27.11., 21:09)",
-          "url": "https://x.com/Tina4Humanity/status/2126407977896943689"
+          "title": "@s_ubbink auf X (27.11., 21:33)",
+          "url": "https://x.com/s_ubbink/status/2126414080617378071"
         },
         {
-          "title": "@ChrisDungeon auf X (27.11., 21:08)",
-          "url": "https://x.com/ChrisDungeon/status/2126407764973142017"
+          "title": "@zdr_0x auf X (27.11., 21:33)",
+          "url": "https://x.com/zdr_0x/status/2126414105284354262"
         },
         {
-          "title": "@sureshkapse auf X (27.11., 21:09)",
-          "url": "https://x.com/sureshkapse/status/2126408017205711013"
+          "title": "@RWIrobinhood auf X (27.11., 21:32)",
+          "url": "https://x.com/RWIrobinhood/status/2126413896412262515"
         }
       ],
-      "updatedAt": "2026-11-27T20:09:38Z"
+      "updatedAt": "2026-11-27T20:33:48Z"
     },
     "TSLA": {
       "mood": "gut",
       "score": 65,
       "postsCount": 25,
-      "reason": "Fans feiern den Schluss bei genau 400 $ und träumen von 500 $. Als Grund für das Plus wird der geplante Kauf von EMAG genannt, dazu Fusionsrechnungen.",
+      "reason": "Tesla wird mit +5,2 % als Teil der KI-Erholung gesehen. Fans sprechen über Optimus-Roboter und vergleichen das Robotaxi in Texas mit Waymo.",
       "sources": [
         {
-          "title": "@DoctorJack16 auf X (27.11., 21:07)",
-          "url": "https://x.com/DoctorJack16/status/2126407620214870053"
+          "title": "@goodluckmates auf X (27.11., 21:24)",
+          "url": "https://x.com/goodluckmates/status/2126411794872930518"
         },
         {
-          "title": "@sspencer_smb auf X (27.11., 21:03)",
-          "url": "https://x.com/sspencer_smb/status/2126406544548143596"
+          "title": "@GrindeOptions auf X (27.11., 21:29)",
+          "url": "https://x.com/GrindeOptions/status/2126413044536471719"
         },
         {
-          "title": "@Michael34952 auf X (27.11., 21:07)",
-          "url": "https://x.com/Michael34952/status/2126407511775576482"
+          "title": "@NevrEnoughX auf X (27.11., 21:23)",
+          "url": "https://x.com/NevrEnoughX/status/2126411639985725537"
         }
       ],
-      "updatedAt": "2026-11-27T20:09:38Z"
+      "updatedAt": "2026-11-27T20:33:48Z"
     },
     "RKLB": {
-      "mood": "gut",
-      "score": 50,
-      "postsCount": 24,
-      "reason": "Gerätselt wird, ob der FCC-Chef mit „RL Space“ eine Umbenennung andeutet. Dazu Lob für den 101. Electron-Start und Vergleiche mit SPCX und ASTS.",
+      "mood": "gemischt",
+      "score": 30,
+      "postsCount": 25,
+      "reason": "Abends gemischt: Spekulation über eine Umbenennung in „RL Space“, aber auch Erinnerungen an das Hoch über 130 $ und ein fallender Keil im Chart.",
       "sources": [
         {
-          "title": "@FranciscoSpace5 auf X (27.11., 20:55)",
-          "url": "https://x.com/FranciscoSpace5/status/2126404550496317793"
+          "title": "@jrouldz auf X (27.11., 21:29)",
+          "url": "https://x.com/jrouldz/status/2126413227273638053"
         },
         {
           "title": "@SpaceInvestor_ auf X (27.11., 21:00)",
           "url": "https://x.com/SpaceInvestor_/status/2126405750285377664"
         },
         {
-          "title": "@MsVeilMoney auf X (27.11., 20:41)",
-          "url": "https://x.com/MsVeilMoney/status/2126400918199366021"
+          "title": "@iamsohot2020 auf X (27.11., 21:23)",
+          "url": "https://x.com/iamsohot2020/status/2126411677889601730"
         }
       ],
-      "updatedAt": "2026-11-27T20:09:38Z"
+      "updatedAt": "2026-11-27T20:33:48Z"
     }
   }
 }
