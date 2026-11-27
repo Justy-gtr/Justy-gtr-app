@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-27T19:04:51Z",
+  "updatedAt": "2026-11-27T19:32:33Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
-      "score": 50,
+      "score": 45,
       "postsCount": 25,
-      "reason": "Große Accounts feiern die FCC-Zusage für Rechenzentren im All und SpaceX als KI-Plattform. Dazu Gespräche über einen Einstieg von Druckenmiller.",
+      "reason": "Gesprochen wird über das geplante 50-Mrd.-$-KI-Campus Colossus 3 in Arizona und Musks Aktien für Kinder. Sonst viel Begeisterung über Raketenlandungen.",
       "sources": [
         {
-          "title": "@XFreeze auf X (27.11., 20:04)",
-          "url": "https://x.com/XFreeze/status/2126391612133806271"
+          "title": "@jonathan_f32966 auf X (27.11., 20:31)",
+          "url": "https://x.com/jonathan_f32966/status/2126398508303278258"
         },
         {
-          "title": "@joehansen auf X (27.11., 20:04)",
-          "url": "https://x.com/joehansen/status/2126391607658271150"
+          "title": "@StarSpangledDVL auf X (27.11., 20:31)",
+          "url": "https://x.com/StarSpangledDVL/status/2126398627140559224"
         },
         {
-          "title": "@hseacpa auf X (27.11., 20:04)",
-          "url": "https://x.com/hseacpa/status/2126391622883561705"
+          "title": "@JomgThe auf X (27.11., 20:31)",
+          "url": "https://x.com/JomgThe/status/2126398470755885566"
         }
       ],
-      "updatedAt": "2026-11-27T19:04:51Z"
+      "updatedAt": "2026-11-27T19:32:33Z"
     },
     "TSLA": {
       "mood": "gut",
       "score": 65,
       "postsCount": 25,
-      "reason": "Tesla beendet die Woche erstmals genau bei 400 $. Chart-Fans sehen ein großes Muster, dazu Rechnungen zu einer möglichen Fusion mit SpaceX.",
+      "reason": "Fans feiern den Schluss bei genau 400 $ und hoffen auf mehr. Neu: Bericht, dass Musk Samsung langfristige Chip-Abnahmen angeboten haben soll.",
       "sources": [
         {
-          "title": "@MentoviaX auf X (27.11., 19:57)",
-          "url": "https://x.com/MentoviaX/status/2126390093065666929"
+          "title": "@Benzinga auf X (27.11., 20:30)",
+          "url": "https://x.com/Benzinga/status/2126398153268375892"
         },
         {
-          "title": "@ThemesETFs auf X (27.11., 20:00)",
-          "url": "https://x.com/ThemesETFs/status/2126390600920658262"
+          "title": "@strengthPlan auf X (27.11., 20:28)",
+          "url": "https://x.com/strengthPlan/status/2126397809914155263"
         },
         {
-          "title": "@Tesla_Borg auf X (27.11., 19:57)",
-          "url": "https://x.com/Tesla_Borg/status/2126390025730523197"
+          "title": "@GrindeOptions auf X (27.11., 20:28)",
+          "url": "https://x.com/GrindeOptions/status/2126397676157862180"
         }
       ],
-      "updatedAt": "2026-11-27T19:04:51Z"
+      "updatedAt": "2026-11-27T19:32:33Z"
     },
     "RKLB": {
       "mood": "gut",
-      "score": 45,
+      "score": 50,
       "postsCount": 25,
-      "reason": "Ein langer Thread erklärt Rocket Lab: 3,57 Mrd. $ Auftragsbestand, Iridium-Kauf, viel Eigenbau. Frage im Raum: wird es das nächste SpaceX?",
+      "reason": "Nach dem starken Tag sehen Trader eine Hammer-Kerze im Tageschart und hoffen auf eine Bodenbildung. Einige sichern Gewinne lieber ab.",
       "sources": [
         {
-          "title": "@TheRayMyers auf X (27.11., 19:45)",
-          "url": "https://x.com/TheRayMyers/status/2126386881470275599"
+          "title": "@enrichtrades auf X (27.11., 20:28)",
+          "url": "https://x.com/enrichtrades/status/2126397768071548938"
         },
         {
-          "title": "@TheRayMyers auf X (27.11., 19:45)",
-          "url": "https://x.com/TheRayMyers/status/2126386864642719802"
+          "title": "@bennytrades_ auf X (27.11., 19:56)",
+          "url": "https://x.com/bennytrades_/status/2126389811292553499"
         },
         {
-          "title": "@Zac_Markovich auf X (27.11., 19:29)",
-          "url": "https://x.com/Zac_Markovich/status/2126383003031253446"
+          "title": "@johhnyWalkerAZ auf X (27.11., 20:22)",
+          "url": "https://x.com/johhnyWalkerAZ/status/2126396231362748417"
         }
       ],
-      "updatedAt": "2026-11-27T19:04:51Z"
+      "updatedAt": "2026-11-27T19:32:33Z"
     }
   }
 }
