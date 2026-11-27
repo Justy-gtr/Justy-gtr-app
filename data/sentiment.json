@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-27T14:39:38Z",
+  "updatedAt": "2026-11-27T15:04:40Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 45,
       "postsCount": 25,
-      "reason": "Vorbörslich rund 3 % im Plus. Viel Begeisterung über das FCC-Okay für 1 Mio. Rechenzentrum-Satelliten. Dämpfer: Mexiko will Starship-Flüge regeln lassen.",
+      "reason": "Hauptthema bleibt das Aktien-Geschenk an US-Kinder, Musk ruft zum Halten auf. Dazu FCC-Okay für Daten-Satelliten. Dämpfer: Mexiko will Flüge regeln.",
       "sources": [
         {
-          "title": "@TonyNashNerd auf X (27.11., 15:17)",
-          "url": "https://x.com/TonyNashNerd/status/2126319590821056643"
+          "title": "@tslaming auf X (27.11., 15:42)",
+          "url": "https://x.com/tslaming/status/2126325862870253841"
+        },
+        {
+          "title": "@Schulz_Research auf X (27.11., 15:49)",
+          "url": "https://x.com/Schulz_Research/status/2126327620711354671"
         },
         {
           "title": "@MexSolidarity auf X (27.11., 15:13)",
           "url": "https://x.com/MexSolidarity/status/2126318374900662585"
-        },
-        {
-          "title": "@thegexstream auf X (27.11., 15:29)",
-          "url": "https://x.com/thegexstream/status/2126322409292894440"
         }
       ],
-      "updatedAt": "2026-11-27T14:39:38Z"
+      "updatedAt": "2026-11-27T15:04:40Z"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 35,
+      "score": 40,
       "postsCount": 25,
-      "reason": "Tesla startet wie alle Magnificent 7 im Plus, vorbörslich rund 3 %. Gesprochen wird über Cybercab-Rekord, EMAG-Übernahme und den AI5-Chip erst 2028.",
+      "reason": "Tesla notiert rund 2,5 % im Plus bei etwa 390 $. Gesprochen wird über EMAG-Übernahme, Fundamente für die Optimus-Fertigung in Texas und den AI5-Chip.",
       "sources": [
         {
-          "title": "@stocksnipa auf X (27.11., 15:35)",
-          "url": "https://x.com/stocksnipa/status/2126324023642448149"
+          "title": "@TheElonomist auf X (27.11., 15:57)",
+          "url": "https://x.com/TheElonomist/status/2126329606273970470"
         },
         {
-          "title": "@alialagheband auf X (27.11., 15:15)",
-          "url": "https://x.com/alialagheband/status/2126319119599350006"
+          "title": "@TeslaOracle_com auf X (27.11., 15:51)",
+          "url": "https://x.com/TeslaOracle_com/status/2126328146777804972"
         },
         {
-          "title": "@thegexstream auf X (27.11., 15:29)",
-          "url": "https://x.com/thegexstream/status/2126322409292894440"
+          "title": "@ttvresearch auf X (27.11., 15:52)",
+          "url": "https://x.com/ttvresearch/status/2126328189387444640"
         }
       ],
-      "updatedAt": "2026-11-27T14:39:38Z"
+      "updatedAt": "2026-11-27T15:04:40Z"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/hitborg/status/2126322374760907027"
         }
       ],
-      "updatedAt": "2026-11-27T14:39:38Z"
+      "updatedAt": "2026-11-27T15:04:40Z"
     }
   }
 }
