@@ -1,49 +1,49 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-27T13:35:05Z",
+  "updatedAt": "2026-11-27T14:08:37Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 50,
       "postsCount": 25,
-      "reason": "Über Nacht über 7 % im Plus nach Musks Aktien-Geschenk für US-Kinder. ARK stockt auf, dazu FCC-Okay für KI-Satelliten und Fusionsgerüchte mit Tesla.",
+      "reason": "Musks Aktien-Geschenk für US-Kinder dominiert, über Nacht über 7 % im Plus. Offen ist, ob es neue Aktien oder seine eigenen sind. Dazu Starship-V3-Pläne.",
       "sources": [
         {
           "title": "@teslainvest_01 auf X (27.11., 14:21)",
           "url": "https://x.com/teslainvest_01/status/2126305421061161014"
         },
         {
-          "title": "@marketsday auf X (27.11., 14:07)",
-          "url": "https://x.com/marketsday/status/2126301765306069142"
+          "title": "@MegatrendMaster auf X (27.11., 14:34)",
+          "url": "https://x.com/MegatrendMaster/status/2126308586808627437"
         },
         {
-          "title": "@HottestStockNow auf X (27.11., 13:29)",
-          "url": "https://x.com/HottestStockNow/status/2126292251819250018"
+          "title": "@djminkster auf X (27.11., 14:29)",
+          "url": "https://x.com/djminkster/status/2126307301481165005"
         }
       ],
-      "updatedAt": "2026-11-27T13:35:05Z"
+      "updatedAt": "2026-11-27T14:08:37Z"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 40,
-      "postsCount": 24,
-      "reason": "Erholung vorbörslich um gut 2 %. Thema des Tages: Tesla will Teile des deutschen Maschinenbauers EMAG übernehmen. Dazu Spekulation über eine Fusion mit SpaceX.",
+      "score": 30,
+      "postsCount": 25,
+      "reason": "Vorbörslich im Plus, Gesprächsthema bleibt die geplante EMAG-Übernahme. Dämpfer: Bericht, dass der AI5-Chip die meisten Autos erst 2028 erreicht.",
       "sources": [
         {
           "title": "@InvestAlphaPro auf X (27.11., 14:32)",
           "url": "https://x.com/InvestAlphaPro/status/2126308147681714251"
         },
         {
-          "title": "@wickedstocks auf X (27.11., 13:36)",
-          "url": "https://x.com/wickedstocks/status/2126294169232560440"
+          "title": "@Sam_Badawi auf X (27.11., 14:38)",
+          "url": "https://x.com/Sam_Badawi/status/2126309574021927093"
         },
         {
-          "title": "@BestTrader01 auf X (27.11., 14:00)",
-          "url": "https://x.com/BestTrader01/status/2126300179087122728"
+          "title": "@AIRoboticsInt auf X (27.11., 14:09)",
+          "url": "https://x.com/AIRoboticsInt/status/2126302495505104991"
         }
       ],
-      "updatedAt": "2026-11-27T13:35:05Z"
+      "updatedAt": "2026-11-27T14:08:37Z"
     },
     "RKLB": {
       "mood": "gut",
@@ -64,7 +64,7 @@
           "url": "https://x.com/MaisaCorp/status/2126304777529098747"
         }
       ],
-      "updatedAt": "2026-11-27T13:35:05Z"
+      "updatedAt": "2026-11-27T14:08:37Z"
     }
   }
 }
