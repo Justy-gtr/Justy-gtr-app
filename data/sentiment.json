@@ -1,70 +1,70 @@
 {
   "example": false,
   "schema": 1,
-  "updatedAt": "2026-11-27T15:39:01Z",
+  "updatedAt": "2026-11-27T16:09:05Z",
   "symbols": {
     "SPCX": {
       "mood": "gut",
       "score": 50,
       "postsCount": 25,
-      "reason": "FCC-Chef Carr will, dass SpaceX bei Rechenzentren im All „volle Kraft voraus“ macht. Dazu Aktien-Geschenk an US-Kinder und Lob von Ron Baron und ARK.",
+      "reason": "Rückenwind vom FCC-Chef für Rechenzentren im All. Neu im Gespräch: geplanter 100-Mrd.-$-Starbase in Louisiana mit 10 Starship-Rampen. Kurs um 131 $.",
       "sources": [
         {
           "title": "@allday_stocks auf X (27.11., 16:37)",
           "url": "https://x.com/allday_stocks/status/2126339580576112780"
         },
         {
-          "title": "@TopStockAlerts1 auf X (27.11., 16:31)",
-          "url": "https://x.com/TopStockAlerts1/status/2126338214185078855"
+          "title": "@TeslaLarry auf X (27.11., 17:02)",
+          "url": "https://x.com/TeslaLarry/status/2126346000084398110"
         },
         {
-          "title": "@growthrapidly auf X (27.11., 16:29)",
-          "url": "https://x.com/growthrapidly/status/2126337526361120835"
+          "title": "@donaldjdean auf X (27.11., 16:57)",
+          "url": "https://x.com/donaldjdean/status/2126344577871388930"
         }
       ],
-      "updatedAt": "2026-11-27T15:39:01Z"
+      "updatedAt": "2026-11-27T16:09:05Z"
     },
     "TSLA": {
       "mood": "gut",
-      "score": 50,
-      "postsCount": 25,
-      "reason": "Tesla gilt heute als stärkster Wert der Magnificent 7 mit V-förmiger Erholung. Dazu Cybercab-Rekord in Texas und Debatten über eine Fusion mit SpaceX.",
+      "score": 60,
+      "postsCount": 24,
+      "reason": "Tesla nähert sich 400 $ und gilt als stärkster Wert der Magnificent 7. Große Accounts jubeln, dazu Chart-Posts und Debatten über eine SpaceX-Fusion.",
       "sources": [
         {
-          "title": "@MentoviaX auf X (27.11., 16:10)",
-          "url": "https://x.com/MentoviaX/status/2126332933396947035"
+          "title": "@EvasTeslaSPlaid auf X (27.11., 16:56)",
+          "url": "https://x.com/EvasTeslaSPlaid/status/2126344412150251586"
         },
         {
-          "title": "@darkminer auf X (27.11., 16:35)",
-          "url": "https://x.com/darkminer/status/2126339243123630224"
+          "title": "@MentoviaX auf X (27.11., 16:58)",
+          "url": "https://x.com/MentoviaX/status/2126344978863382959"
         },
         {
-          "title": "@sspencer_smb auf X (27.11., 16:24)",
-          "url": "https://x.com/sspencer_smb/status/2126336248029790281"
+          "title": "@JustinPulitzer auf X (27.11., 16:41)",
+          "url": "https://x.com/JustinPulitzer/status/2126340590639907184"
         }
       ],
-      "updatedAt": "2026-11-27T15:39:01Z"
+      "updatedAt": "2026-11-27T16:09:05Z"
     },
     "RKLB": {
       "mood": "gut",
       "score": 55,
       "postsCount": 25,
-      "reason": "Nach dem 101. Electron-Start und dem Jahresrekord von 22 Starts stieg RKLB vorbörslich über 5 %. Viel Lob für die verlässliche Startfrequenz.",
+      "reason": "Weiter Lob für den Rekord-Start Nr. 101. Neu: ein Auftrag von Northrop Grumman über 1,2 Mio. $ und eine Erwähnung durch den FCC-Chef.",
       "sources": [
+        {
+          "title": "@mottbox_ auf X (27.11., 17:00)",
+          "url": "https://x.com/mottbox_/status/2126345318463684778"
+        },
+        {
+          "title": "@FranciscoSpace5 auf X (27.11., 16:48)",
+          "url": "https://x.com/FranciscoSpace5/status/2126342359126565217"
+        },
         {
           "title": "@Khalifa1 auf X (27.11., 16:17)",
           "url": "https://x.com/Khalifa1/status/2126334563094061487"
-        },
-        {
-          "title": "@Small_Cap_Gems auf X (27.11., 16:09)",
-          "url": "https://x.com/Small_Cap_Gems/status/2126332645948989499"
-        },
-        {
-          "title": "@ClaudiaGadelha_ auf X (27.11., 15:24)",
-          "url": "https://x.com/ClaudiaGadelha_/status/2126321324826202408"
         }
       ],
-      "updatedAt": "2026-11-27T15:39:01Z"
+      "updatedAt": "2026-11-27T16:09:05Z"
     }
   }
 }
