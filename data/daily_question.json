@@ -1,33 +1,61 @@
 {
   "example": false,
   "current": {
-    "id": "2026-11-27-rklb",
-    "date": "2026-11-27",
-    "question": "Schließt RKLB am Freitag, 27. November, an der Nasdaq höher als am Mittwoch (47,02 $)?",
-    "karlAnswer": "ja",
-    "karlReason": "Knapp „ja“, etwa 55 zu 45. Heute ist die Wall Street wegen Thanksgiving zu, am Freitag wird nur bis 19:00 Uhr gehandelt (dpa-AFX). Der Nasdaq-100-Future steht am Donnerstagmorgen rund 0,6 % im Plus, nachdem der Nasdaq 100 am Mittwoch einen Einbruch von bis zu 4,7 % fast aufgeholt hat (Yahoo, Der Aktionär). In der Nacht auf Freitag um 01:05 Uhr soll Electron zum 101. Mal starten, Rocket Lab meldete dafür einen Rekord-Countdown in der Probe (Stocktwits). Dagegen: Fünf Manager verkauften Aktien für 3,85 Mio. $, laut Meldungen nur zur Steuerzahlung auf zugeteilte Aktien. Karl lag gestern mit „nein“ daneben.",
+    "id": "2026-11-30-rklb",
+    "date": "2026-11-30",
+    "question": "Schließt RKLB am Montag, 30. November, an der Nasdaq höher als am Freitag (50,88 $)?",
+    "karlAnswer": "nein",
+    "karlReason": "Knapp „nein“, etwa 55 zu 45. Am Freitag sprang RKLB im verkürzten Feiertagshandel um 8,2 % auf 50,88 $ (Yahoo), bei nur gut 10 Mio. gehandelten Aktien statt 20 Mio. am Mittwoch; Handelsblatt weist darauf hin, dass dieser Tag wegen der dünnen Umsätze wenig aussagekräftig ist. Ein Teil des Anstiegs kam vom Gesamtmarkt: Die Nasdaq stieg 2,3 %, die beste Woche seit April (Reuters). Dafür spricht: Laut Morgan Stanley IM könnte die Tech-Erholung nächste Woche weiterlaufen, weil viele Anleger zurückkaufen müssen (Reuters). Eigene Rocket-Lab-Termine gibt es am Wochenende nicht. Karl lag zuletzt mit „ja“ richtig.",
     "outcome": null,
-    "resolvesAt": "2026-11-27T19:15:00+01:00",
+    "resolvesAt": "2026-11-30T22:15:00+01:00",
     "sources": [
       {
-        "title": "Yahoo Finance: RKLB historische Kurse (Schluss Mi 25.11. 47,02 $)",
+        "title": "Yahoo Finance: RKLB historische Kurse (Schluss Fr 27.11. 50,88 $)",
         "url": "https://finance.yahoo.com/quote/RKLB/history/"
       },
       {
-        "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (Do 26.11., 07:25)",
-        "url": "https://finance.yahoo.com/quote/NQ%3DF/"
+        "title": "Reuters via Investing.com: Wall Street schließt höher, KI-Werte erholen sich (27.11.)",
+        "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-surge-as-investors-return-from-holiday-5053052"
       },
       {
-        "title": "Stocktwits: RKLB-Manager verkaufen vor Electron-Start (25.11.)",
-        "url": "https://stocktwits.com/news-articles/markets/equity/rklb-stock-cfo-coo-other-execs-sell-shares-ahead-of-electron-launch/cNbx33ZR9ZR"
-      },
-      {
-        "title": "dpa-AFX via wallstreet-online: DAX-FLASH (26.11., 07:15)",
-        "url": "https://www.wallstreet-online.de/nachricht/21749863-dax-flash-gewinne-erwartet-tech-erholung-ruecken"
+        "title": "Handelsblatt: US-Börsen schließen im Plus (27.11., 19:04)",
+        "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-sp-500-nasdaq-us-boersen-schliessen-im-plus-anthropic-wieder-ueber-ausgabepreis/100273324.html"
       }
     ]
   },
   "history": [
+    {
+      "id": "2026-11-27-rklb",
+      "date": "2026-11-27",
+      "question": "Schließt RKLB am Freitag, 27. November, an der Nasdaq höher als am Mittwoch (47,02 $)?",
+      "karlAnswer": "ja",
+      "karlReason": "Knapp „ja“, etwa 55 zu 45. Heute ist die Wall Street wegen Thanksgiving zu, am Freitag wird nur bis 19:00 Uhr gehandelt (dpa-AFX). Der Nasdaq-100-Future steht am Donnerstagmorgen rund 0,6 % im Plus, nachdem der Nasdaq 100 am Mittwoch einen Einbruch von bis zu 4,7 % fast aufgeholt hat (Yahoo, Der Aktionär). In der Nacht auf Freitag um 01:05 Uhr soll Electron zum 101. Mal starten, Rocket Lab meldete dafür einen Rekord-Countdown in der Probe (Stocktwits). Dagegen: Fünf Manager verkauften Aktien für 3,85 Mio. $, laut Meldungen nur zur Steuerzahlung auf zugeteilte Aktien. Karl lag gestern mit „nein“ daneben.",
+      "outcome": "ja",
+      "resolvesAt": "2026-11-27T19:15:00+01:00",
+      "sources": [
+        {
+          "title": "Yahoo Finance: RKLB historische Kurse (Schluss Mi 25.11. 47,02 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        },
+        {
+          "title": "Yahoo Finance: Nasdaq-100-Future NQ=F (Do 26.11., 07:25)",
+          "url": "https://finance.yahoo.com/quote/NQ%3DF/"
+        },
+        {
+          "title": "Stocktwits: RKLB-Manager verkaufen vor Electron-Start (25.11.)",
+          "url": "https://stocktwits.com/news-articles/markets/equity/rklb-stock-cfo-coo-other-execs-sell-shares-ahead-of-electron-launch/cNbx33ZR9ZR"
+        },
+        {
+          "title": "dpa-AFX via wallstreet-online: DAX-FLASH (26.11., 07:15)",
+          "url": "https://www.wallstreet-online.de/nachricht/21749863-dax-flash-gewinne-erwartet-tech-erholung-ruecken"
+        },
+        {
+          "title": "Yahoo Finance: RKLB historische Kurse (Schluss Fr 27.11. 50,88 $)",
+          "url": "https://finance.yahoo.com/quote/RKLB/history/"
+        }
+      ],
+      "outcomeNote": "RKLB schloss am Freitag, 27. November, im verkürzten Handel bei 50,88 $ (+8,2 %), klar über 47,02 $ (Yahoo). Karl lag richtig."
+    },
     {
       "id": "2026-11-25-rklb",
       "date": "2026-11-25",
